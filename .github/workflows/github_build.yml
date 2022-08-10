@@ -20,14 +20,15 @@ on:
       dev_branches_to_document:
         description: 'Branches of the GAMBIT development repo to document'
         required: true
-        default: "['main', 'ColliderBit_development', 'DarkBit_development']"
+        default: "[]"
       repos_to_document:
         description: 'Standalone repos (GAMBIT releases) to document'
         required: true
-        default: "['https://github.com/RC1242RC/gambit_sphinx.git']"
+        default: "['https://github.com/GambitBSM/gambit_2.2.git', 'https://github.com/GambitBSM/gambit_2.1.git']"
 
 jobs:
   
+  # This job just initialises all the variables so they are accessible via matrices in the other jobs
   setup:
     if: ${{ inputs.rebuild_all }}
     runs-on: ubuntu-latest
@@ -42,6 +43,7 @@ jobs:
           branches_temp: ${{ inputs.dev_branches_to_document }}
           repos_temp: ${{ inputs.repos_to_document }}
 
+  # This job runs doxygen/doxybook2 on the development branches and then uploads the results as artifacts
   document_branches_and_build_menu:
     if: ${{ inputs.rebuild_all }}
     needs: setup
@@ -56,28 +58,33 @@ jobs:
         run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
           && mkdir doxybook2
           && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
-      - name: Install sed
+        # Install sed to edit some file contents
+      - name: Install sed 
         run: sudo apt-get install sed
+        # Remove underscore from branch name
       - name: Set folder variable
         run: str=${{ matrix.branches }}
           && echo "folder2=${str%_*}" >> $GITHUB_ENV
       - name: Shallow clone branch
         run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ env.folder2 }}_source
-      - name: Clone using personal access token if normal clone fails
-        if: ${{ failure() }}
-        run: echo "yes"
+      #- name: Clone using personal access token if normal clone fails
+      #  if: ${{ failure() }}
+      #  run: echo "yes"
       - name: Generate doxygen xml
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
           working-directory: ./${{ env.folder2 }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
+        # Change doxybook2 output url so that internal links in the documentation work
       - name: Change baseURL for md output
         run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder2 }}/+g' ./doxygen_and_doxybook2/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder2 }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder2 }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
+        # Need to insert index files so that menus work in site
       - name: Copy index template into branch folder to act as parent menu
         run: cp version_index_template.md ./${{ env.folder2 }}/_index.md
+        # This is more menu stuff, so that ordering is correct and version type shows up in dropdown menu
       - name: Add gambit version, type, and weights into index files to reference parent menu
         run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ env.folder2 }}+g' *.md
           && sed -i -- 's+VERSION_TYPE_HERE+development+g' _index.md
@@ -88,7 +95,8 @@ jobs:
         with:
           name: ${{ env.folder2 }}
           path: ./${{ env.folder2 }}
-        
+  
+  # This job runs doxygen/doxybook2 on the release repos and then uploads the results as artifacts
   document_repos_and_build_menu:
     if: ${{ inputs.rebuild_all }}
     needs: setup
@@ -103,8 +111,10 @@ jobs:
         run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
           && mkdir doxybook2
           && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+        # Install sed to edit some file contents
       - name: Install sed
         run: sudo apt-get install sed
+        # Remove the first part of the github url and the .git at the end so that folder name is clean
       - name: Set folder variable
         run: str=${{ matrix.repos }}
           && str2=${str##*/}
@@ -116,13 +126,16 @@ jobs:
         with:
           working-directory: ./${{ env.folder }}_source
           doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
+        # Change doxybook2 output url so that internal links in the documentation work
       - name: Change baseURL for md output
         run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder }}/+g' ./doxygen_and_doxybook2/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder }}
           && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
+        # Need to insert index files so that menus work in site
       - name: Copy index template into repo folder to act as parent menu
         run: cp version_index_template.md ./${{ env.folder }}/_index.md
+        # This is more menu stuff, so that ordering is correct and version type shows up in dropdown menu
       - name: Add gambit version, type, and weights into index files to reference parent menu
         run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ env.folder }}+g' *.md
           && sed -i -- 's+VERSION_TYPE_HERE+release+g' _index.md
@@ -134,6 +147,7 @@ jobs:
           name: ${{ env.folder }}
           path: ./${{ env.folder }}
 
+  # This job downloads the artifacts and then builds/deploys site to github pages
   deploy:
     runs-on: ubuntu-latest
     needs: [document_repos_and_build_menu, document_branches_and_build_menu]
