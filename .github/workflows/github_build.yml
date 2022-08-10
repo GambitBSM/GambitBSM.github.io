@@ -189,7 +189,7 @@ jobs:
           && password=`cat ./wiki/password.txt`
           && sed -i -e "s/PASSWORD_HERE/${password}/g" $(find ./wiki/wiki -type f)
           && rm -r ./content/en/wiki
-          && cp ./wiki/wiki ./content/en
+          && cp -r ./wiki/wiki ./content/en
           && rm -r ./wiki
       - name: Install npm dependencies and build site
         run: npm install
