@@ -16,7 +16,7 @@ on:
       dev_repo:
         description: 'Development repo'
         required: true
-        default: ''
+        default: "none"
       dev_branches_to_document:
         description: 'Branches of the GAMBIT development repo to document'
         required: true
@@ -24,7 +24,7 @@ on:
       repos_to_document:
         description: 'Standalone repos (GAMBIT releases) to document'
         required: true
-        default: "['https://github.com/GambitBSM/gambit_2.2.git', 'https://github.com/GambitBSM/gambit_2.1.git']"
+        default: "['https://github.com/GambitBSM/gambit_2.2.git']"
 
 jobs:
   
