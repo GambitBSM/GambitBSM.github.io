@@ -9,19 +9,19 @@
 		{{- $passphrase -}}
 	{{ end }}
 	<div id="hugo-encrypt-encryption-notice">
-		<p>{{ i18n "protectedByPassword" }}</p>
+		<p>"The following content is password protected"</p>
 		<noscript><span id="hugo-encrypt-enable-js">Javascript needs to be enabled to decrypt content</span></noscript>
 
 		<div class='hugo-encrypt-form'>
 			<input
 				class="hugo-encrypt-input"
 				id="hugo-encrypt-password"
-				placeholder='{{ i18n "enterPassword" }}'
+				placeholder="Please enter password"
 			/>
 			<input
 				class="hugo-encrypt-button"
 				type="button"
-				value='{{ i18n "decrypt" }}'
+				value="Go"
 				id="button" onclick="hugoDecrypt(document.getElementById('hugo-encrypt-password').value,'input')"
 			/>
 			<div id="hugo-encrypt-input-response"></div>
@@ -137,8 +137,8 @@
 					});
 				}).catch(function(error) {
 					if (type === "input") {
-						document.getElementById("hugo-encrypt-input-response").innerHTML = "{{ i18n "wrongPassword" }}";
-						console.log('{{ i18n "wrongPassword" }}', error);
+						document.getElementById("hugo-encrypt-input-response").innerHTML = "Password is incorrect";
+						console.log("Password is incorrect", error);
 					} else if (type === "storage") {
 						userStorage.removeItem(location.pathname + "password");
 						console.log("Password changed. Clearing userStorage.", error);
