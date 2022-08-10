@@ -10,4 +10,4 @@ draft: false
 images: []
 ---
 
-The Wiki is only available to members of the GAMBIT community.
+This is a placeholder page for the wiki homepage.
