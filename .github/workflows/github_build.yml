@@ -185,7 +185,7 @@ jobs:
           && git push
         # After committing changes to the public site repo, add wiki contents from the private wiki repo
       - name: Clone private wiki contents, replacing password placeholders
-        run: git clone --depth 1 https://github.com/GambitBSM/wiki.git
+        run: git clone --depth 1 https://${{ secrets.WIKI_CLONE_PAT }}:x-oauth-basic@github.com/GambitBSM/wiki.git
           && password=`cat ./wiki/password.txt`
           && sed -i -e "s/PASSWORD_HERE/${password}/g" $(find ./wiki/wiki -type f)
           && rm -r ./content/en/wiki
