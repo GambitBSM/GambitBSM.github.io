@@ -183,12 +183,28 @@ jobs:
           && git add --all
           && git commit -m "Documentation rebuild"
           && git push
+        # After committing changes to the public site repo, add wiki contents from the private wiki repo
+      - name: Clone private wiki contents, replacing password placeholders
+        run: git clone --depth 1 https://github.com/GambitBSM/wiki.git
+          && password=`cat ./wiki/password.txt`
+          && sed -i -e "s/PASSWORD_HERE/${password}/g" $(find ./wiki/wiki -type f)
+          && rm -r ./content/en/wiki
+          && cp ./wiki/wiki ./content/en
+          && rm -r ./wiki
       - name: Install npm dependencies and build site
         run: npm install
           && npm run build
+      - name: Install and run hugo-encrypt
+        run: git clone --depth 1 https://github.com/Izumiko/hugo-encrypt.git
+          && cd hugo-encrypt
+          && export BINDIR=./install
+          && make
+          && make install
+          && ./install/hugo-encrypt -sitePath ../public
+          && cd ..
+          && rm -r hugo-encrypt
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          keep_files: false
