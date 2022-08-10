@@ -64,14 +64,19 @@ Source:
 (function(){
 
   var index = new FlexSearch.Document({
-    tokenize: "forward",
-    cache: 100,
+    tokenize: "strict",
+    encoder: "extra",
+    optimize: true,
+    resolution: 1,
+    minlength: 3,
+    fastupdate: false,
+    context: false,
     document: {
       id: 'id',
       store: [
         "href", "title", "description", "permalink"
       ],
-      index: ["title", "description", "permalink"]
+      index: ["title", "description", "permalink", "content"]
     }
   });
 
@@ -108,7 +113,8 @@ Source:
         {{ else -}}
           description: "[No description available]",
         {{ end -}}
-        permalink: {{ .RelPermalink |jsonify }}
+        permalink: {{ .RelPermalink |jsonify }},
+        content: {{ .Plain | jsonify }}
       }
     );
   {{ end -}}
