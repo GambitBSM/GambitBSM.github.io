@@ -61,7 +61,7 @@ jobs:
         # Install sed to edit some file contents
       - name: Install sed 
         run: sudo apt-get install sed
-        # Remove underscore from branch name
+        # Remove everything following underscore, usually _development
       - name: Set folder variable
         run: str=${{ matrix.branches }}
           && echo "folder2=${str%_*}" >> $GITHUB_ENV
@@ -115,10 +115,12 @@ jobs:
       - name: Install sed
         run: sudo apt-get install sed
         # Remove the first part of the github url and the .git at the end so that folder name is clean
+        # Then replace . with a -
       - name: Set folder variable
         run: str=${{ matrix.repos }}
           && str2=${str##*/}
-          && echo "folder=${str2%.*}" >> $GITHUB_ENV
+          && str3=${str2%.*}
+          && echo "folder=${str3/./-}" >> $GITHUB_ENV
       - name: Shallow clone repo
         run: git clone --depth 1 ${{ matrix.repos }} ${{ env.folder }}_source
       - name: Generate doxygen xml
