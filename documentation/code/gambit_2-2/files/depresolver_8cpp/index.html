@@ -1,21 +1,21 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.e60a30503f41dfe2a8e849eba3bb572667400d7915356bae7eff31d3e22e4492fc8c0b2ff150168b1139b9c0caad1a20c84c8957336bcc2bba8559379cc39f91.css integrity="sha512-5gowUD9B3+Ko6Enro7tXJmdADXkVNWuufv8x0+IuRJL8jAsv8VAWixE5ucDKrRogyEyJVzNrzCu6hVk3nMOfkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/depresolver.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/depresolver.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/depresolver.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/depresolver.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/","name":"file src\/depresolver.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/","name":"Gambit 2 2"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file src\/depresolver.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
-<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><link rel="preload" as="font" href="https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2" type="font/woff2" crossorigin=""/><link rel="preload" as="font" href="https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2" type="font/woff2" crossorigin=""/><link rel="preload" as="font" href="https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2" type="font/woff2" crossorigin=""/><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel="stylesheet" href="https://gambitbsm.github.io/main.e60a30503f41dfe2a8e849eba3bb572667400d7915356bae7eff31d3e22e4492fc8c0b2ff150168b1139b9c0caad1a20c84c8957336bcc2bba8559379cc39f91.css" integrity="sha512-5gowUD9B3+Ko6Enro7tXJmdADXkVNWuufv8x0+IuRJL8jAsv8VAWixE5ucDKrRogyEyJVzNrzCu6hVk3nMOfkQ==" crossorigin="anonymous"/><noscript><style>img.lazyload{display:none}</style></noscript><meta name="robots" content="index, follow"/><meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><title>file src/depresolver.cpp - GAMBIT</title><meta name="description" content="[No description available]"/><link rel="canonical" href="https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/"/><meta property="og:locale" content="en_US"/><meta property="og:type" content="article"/><meta property="og:title" content="file src/depresolver.cpp"/><meta property="og:description" content="[No description available]"/><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/"/><meta property="og:site_name" content="GAMBIT"/><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"/><meta property="og:image:alt" content="GAMBIT"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content=""/><meta name="twitter:creator" content=""/><meta name="twitter:title" content="file src/depresolver.cpp"/><meta name="twitter:description" content="[No description available]"/><meta name="twitter:image" content="https://gambitbsm.github.io/gambit_logo.png"/><meta name="twitter:image:alt" content="file src/depresolver.cpp"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/","name":"file src\/depresolver.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/","name":"Gambit 2 2"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/depresolver_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file src\/depresolver.cpp"}]}]}</script><meta name="theme-color" content="#fff"/><link rel="icon" href="https://gambitbsm.github.io/favicon.ico" sizes="any"/><link rel="icon" type="image/svg+xml" href="https://gambitbsm.github.io/favicon.svg"/><link rel="apple-touch-icon" sizes="180x180" href="https://gambitbsm.github.io/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="https://gambitbsm.github.io/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="https://gambitbsm.github.io/favicon-16x16.png"/><link rel="manifest" crossorigin="use-credentials" href="https://gambitbsm.github.io/site.webmanifest"/></head><body class="documentation single light"><div class="sticky-top"><div class="header-bar"></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href="https://gambitbsm.github.io/" aria-label="GAMBIT"><img class="logo-light" src="https://gambitbsm.github.io//images/gambit_logo.png" width="50px"/>
+<img class="logo-dark d-none" src="https://gambitbsm.github.io//images/gambit_logo.png" width="50px"/>
 GAMBIT</a>
-<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
-<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_2-2/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
-<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class="dropdown-item active" href=/community/code_of_conduct/ aria-current=true>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li><li class=nav-item><a class="nav-link ps-0 py-1" href=/wiki/homepage/>Wiki</a></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
-<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
-Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
-Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
-Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
-Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_2-2 aria-expanded=true>
-<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit 2-2</button><div class="collapse show" id=section-gambit_2-2><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_2-2/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2-2/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2-2/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2-2/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<button class="btn btn-menu order-2 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel"><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="/">GAMBIT</a></h2><button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentation
+<span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item" href="/documentation/installation/introduction/">Installation</a></li><li><a class="dropdown-item" href="/documentation/examples/colliderbit_example">Examples</a></li><li><a class="dropdown-item" href="/documentation/help/faqs/">Help</a></li><li><a class="dropdown-item" href="/documentation/code/gambit_2-2/index_classes">Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Community
+<span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item" href="/community/publications/">Publications</a></li><li><a class="dropdown-item" href="/community/talks/">Talks</a></li><li><a class="dropdown-item" href="/community/members/">Members</a></li><li><a class="dropdown-item active" href="/community/code_of_conduct/" aria-current="true">Code of Conduct</a></li><li><a class="dropdown-item" href="/community/contact/">Contact</a></li></ul></li><li class="nav-item"><a class="nav-link ps-0 py-1" href="/wiki/homepage/">Wiki</a></li></ul><hr class="text-black-50 my-4 d-lg-none"/><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id="search" class="form-control is-search" type="search" placeholder="Search site..." aria-label="Search site..." autocomplete="off"/><div id="suggestions" class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"/><ul class="nav flex-column flex-lg-row"><li class="nav-item"><a class="nav-link social-link" href="https://github.com/GambitBSM"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"></path></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"/><button id="mode" class="btn btn-link" type="button" aria-label="Toggle user interface mode">
+<span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg></span><span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role="document"><div class="content"><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class="docs-links" aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class="mb-1"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-installation" aria-expanded="false">
+Installation</button><div class="collapse" id="section-installation"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href="/documentation/installation/introduction/">Getting Started</a></li><li><a class="docs-link rounded" href="/documentation/installation/docker_usage/">Docker Usage</a></li><li><a class="docs-link rounded" href="/documentation/installation/installation_for_linux/">Installation for Linux</a></li><li><a class="docs-link rounded" href="/documentation/installation/installation_for_windows/">Installation for Windows</a></li><li><a class="docs-link rounded" href="/documentation/installation/installation_for_macos/">Installation for macOS</a></li></ul></div></li><li class="mb-1"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-examples" aria-expanded="false">
+Examples</button><div class="collapse" id="section-examples"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href="/documentation/examples/colliderbit_example/">ColliderBit Example</a></li><li><a class="docs-link rounded" href="/documentation/examples/anotherbit/">AnotherBit</a></li><li><a class="docs-link rounded" href="/documentation/examples/anotherbit2/">AnotherBit2</a></li></ul></div></li><li class="mb-1"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-help" aria-expanded="false">
+Help</button><div class="collapse" id="section-help"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href="/documentation/help/faqs/">FAQs</a></li><li><a class="docs-link rounded" href="/documentation/help/compiler_matrix/">Compiler Matrix</a></li><li><a class="docs-link rounded" href="/documentation/help/known_issues/">Known Issues</a></li><li><a class="docs-link rounded" href="/documentation/help/configuration_examples/">Configuration Examples</a></li></ul></div></li><li class="mb-1"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-code" aria-expanded="true">
+Code Reference</button><div class="collapse show" id="section-code"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-gambit_2-2" aria-expanded="true">
+<font style="color: #5d2f86;" size="-6">release</font>   gambit 2-2</button><div class="collapse show" id="section-gambit_2-2"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href="/documentation/code/gambit_2-2/index_classes/">Classes</a></li><li><a class="docs-link rounded" href="/documentation/code/gambit_2-2/index_files/">Files</a></li><li><a class="docs-link rounded" href="/documentation/code/gambit_2-2/index_pages/">Pages</a></li><li><a class="docs-link rounded" href="/documentation/code/gambit_2-2/index_namespaces/">Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class="d-xl-none"><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#onThisPage" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-obslike_vertexid>define OBSLIKE_VERTEXID</a></li><li><a href=#define-normal_dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop_manager_dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-obslike_vertexid>define OBSLIKE_VERTEXID</a></li><li><a href=#define-normal_dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop_manager_dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/gambit_2-2/>gambit_2-2</a></li><li class="breadcrumb-item active" aria-current=page>file src/depresolver.cpp</li></ol></nav><h1>file src/depresolver.cpp</h1><p class=lead></p><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/gambit_2-2/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/gambit_2-2/namespaces/namespacegambit_1_1dres/>Gambit::DRes</a></strong></td></tr><tr><td><strong><a href=/documentation/code/gambit_2-2/namespaces/namespacelogtags/>LogTags</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/gambit_2-2/classes/classgambit_1_1dres_1_1edgewriter/>Gambit::DRes::edgeWriter</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/gambit_2-2/classes/classgambit_1_1dres_1_1labelwriter/>Gambit::DRes::labelWriter</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/gambit_2-2/files/depresolver_8cpp/#define-obslike-vertexid>OBSLIKE_VERTEXID</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2-2/files/depresolver_8cpp/#define-normal-dependency>NORMAL_DEPENDENCY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/gambit_2-2/files/depresolver_8cpp/#define-loop-manager-dependency>LOOP_MANAGER_DEPENDENCY</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li><li>Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</li><li>Ben Farmer (<a href=mailto:benjamin.farmer@monash.edu>benjamin.farmer@monash.edu</a>)</li><li>Tomas Gonzalo (<a href=mailto:gonzalo@physik.rwth-aachen.de>gonzalo@physik.rwth-aachen.de</a>)</li><li>Patrick Stoecker (<a href=mailto:stoecker@physik.rwth-aachen.de>stoecker@physik.rwth-aachen.de</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 May, Jun, Jul, Sep</li><li>2014 Feb, Mar, Apr</li><li>2013 May, Jul, Aug, Nov 2014 Jan, Mar, Apr, Dec 2018 Sep, Nov</li><li>2013 Sep</li><li>2017 June 2019 May 2021 Sep</li><li>2020 May</li></ul><p>Dependency resolution with boost graph library</p><pre><code>    unravels the un-unravelable
-</code></pre><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-obslike_vertexid>define OBSLIKE_VERTEXID <a href=#define-obslike_vertexid class=anchor aria-hidden=true>#</a></h3><pre><code>#define OBSLIKE_VERTEXID 58915032
-</code></pre><h3 id=define-normal_dependency>define NORMAL_DEPENDENCY <a href=#define-normal_dependency class=anchor aria-hidden=true>#</a></h3><pre><code>#define NORMAL_DEPENDENCY 1
-</code></pre><h3 id=define-loop_manager_dependency>define LOOP_MANAGER_DEPENDENCY <a href=#define-loop_manager_dependency class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOOP_MANAGER_DEPENDENCY 2
-</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg></span></button><div class="collapse" id="onThisPage"><div class="card card-body mt-3 py-1"><div class="page-links"><nav id="TableOfContents"><ul><li><ul><li><a href="#namespaces">Namespaces</a></li><li><a href="#classes">Classes</a></li><li><a href="#defines">Defines</a></li><li><a href="#detailed-description">Detailed Description</a></li><li><a href="#macros-documentation">Macros Documentation</a><ul><li><a href="#define-obslike_vertexid">define OBSLIKE_VERTEXID</a></li><li><a href="#define-normal_dependency">define NORMAL_DEPENDENCY</a></li><li><a href="#define-loop_manager_dependency">define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href="#source-code">Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id="TableOfContents"><ul><li><ul><li><a href="#namespaces">Namespaces</a></li><li><a href="#classes">Classes</a></li><li><a href="#defines">Defines</a></li><li><a href="#detailed-description">Detailed Description</a></li><li><a href="#macros-documentation">Macros Documentation</a><ul><li><a href="#define-obslike_vertexid">define OBSLIKE_VERTEXID</a></li><li><a href="#define-normal_dependency">define NORMAL_DEPENDENCY</a></li><li><a href="#define-loop_manager_dependency">define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href="#source-code">Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/documentation/">Documentation</a></li><li class="breadcrumb-item"><a href="/documentation/code/">Code Reference</a></li><li class="breadcrumb-item"><a href="/documentation/code/gambit_2-2/">gambit_2-2</a></li><li class="breadcrumb-item active" aria-current="page">file src/depresolver.cpp</li></ol></nav><h1>file src/depresolver.cpp</h1><p class="lead"></p><p>[No description available] <a href="#detailed-description">More…</a></p><h2 id="namespaces">Namespaces <a href="#namespaces" class="anchor" aria-hidden="true">#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href="/documentation/code/gambit_2-2/namespaces/namespacegambit/">Gambit</a></strong><br/>TODO: see if we can use this one:</td></tr><tr><td><strong><a href="/documentation/code/gambit_2-2/namespaces/namespacegambit_1_1dres/">Gambit::DRes</a></strong></td></tr><tr><td><strong><a href="/documentation/code/gambit_2-2/namespaces/namespacelogtags/">LogTags</a></strong></td></tr></tbody></table><h2 id="classes">Classes <a href="#classes" class="anchor" aria-hidden="true">#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href="/documentation/code/gambit_2-2/classes/classgambit_1_1dres_1_1edgewriter/">Gambit::DRes::edgeWriter</a></strong></td></tr><tr><td>class</td><td><strong><a href="/documentation/code/gambit_2-2/classes/classgambit_1_1dres_1_1labelwriter/">Gambit::DRes::labelWriter</a></strong></td></tr></tbody></table><h2 id="defines">Defines <a href="#defines" class="anchor" aria-hidden="true">#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href="/documentation/code/gambit_2-2/files/depresolver_8cpp/#define-obslike-vertexid">OBSLIKE_VERTEXID</a></strong></td></tr><tr><td></td><td><strong><a href="/documentation/code/gambit_2-2/files/depresolver_8cpp/#define-normal-dependency">NORMAL_DEPENDENCY</a></strong></td></tr><tr><td></td><td><strong><a href="/documentation/code/gambit_2-2/files/depresolver_8cpp/#define-loop-manager-dependency">LOOP_MANAGER_DEPENDENCY</a></strong></td></tr></tbody></table><h2 id="detailed-description">Detailed Description <a href="#detailed-description" class="anchor" aria-hidden="true">#</a></h2><p><strong>Author</strong>:</p><ul><li>Christoph Weniger (<a href="mailto:c.weniger@uva.nl">c.weniger@uva.nl</a>)</li><li>Pat Scott (<a href="mailto:patscott@physics.mcgill.ca">patscott@physics.mcgill.ca</a>)</li><li>Ben Farmer (<a href="mailto:benjamin.farmer@monash.edu">benjamin.farmer@monash.edu</a>)</li><li>Tomas Gonzalo (<a href="mailto:gonzalo@physik.rwth-aachen.de">gonzalo@physik.rwth-aachen.de</a>)</li><li>Patrick Stoecker (<a href="mailto:stoecker@physik.rwth-aachen.de">stoecker@physik.rwth-aachen.de</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 May, Jun, Jul, Sep</li><li>2014 Feb, Mar, Apr</li><li>2013 May, Jul, Aug, Nov 2014 Jan, Mar, Apr, Dec 2018 Sep, Nov</li><li>2013 Sep</li><li>2017 June 2019 May 2021 Sep</li><li>2020 May</li></ul><p>Dependency resolution with boost graph library</p><pre><code>    unravels the un-unravelable
+</code></pre><hr/><p>Authors (add name and date if you modify):</p><hr/><h2 id="macros-documentation">Macros Documentation <a href="#macros-documentation" class="anchor" aria-hidden="true">#</a></h2><h3 id="define-obslike_vertexid">define OBSLIKE_VERTEXID <a href="#define-obslike_vertexid" class="anchor" aria-hidden="true">#</a></h3><pre><code>#define OBSLIKE_VERTEXID 58915032
+</code></pre><h3 id="define-normal_dependency">define NORMAL_DEPENDENCY <a href="#define-normal_dependency" class="anchor" aria-hidden="true">#</a></h3><pre><code>#define NORMAL_DEPENDENCY 1
+</code></pre><h3 id="define-loop_manager_dependency">define LOOP_MANAGER_DEPENDENCY <a href="#define-loop_manager_dependency" class="anchor" aria-hidden="true">#</a></h3><pre><code>#define LOOP_MANAGER_DEPENDENCY 2
+</code></pre><h2 id="source-code">Source code <a href="#source-code" class="anchor" aria-hidden="true">#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///  \file
 ///
@@ -54,15 +54,15 @@ Code Reference</button><div class="collapse show" id=section-code><ul class="btn
 ///
 ///  *********************************************
 
-#include &quot;gambit/Core/depresolver.hpp&quot;
-#include &quot;gambit/Models/models.hpp&quot;
-#include &quot;gambit/Utils/stream_overloads.hpp&quot;
-#include &quot;gambit/Utils/util_functions.hpp&quot;
-#include &quot;gambit/Utils/bibtex_functions.hpp&quot;
-#include &quot;gambit/Utils/citation_keys.hpp&quot;
-#include &quot;gambit/Logs/logger.hpp&quot;
-#include &quot;gambit/Backends/backend_singleton.hpp&quot;
-#include &quot;gambit/cmake/cmake_variables.hpp&quot;
+#include &#34;gambit/Core/depresolver.hpp&#34;
+#include &#34;gambit/Models/models.hpp&#34;
+#include &#34;gambit/Utils/stream_overloads.hpp&#34;
+#include &#34;gambit/Utils/util_functions.hpp&#34;
+#include &#34;gambit/Utils/bibtex_functions.hpp&#34;
+#include &#34;gambit/Utils/citation_keys.hpp&#34;
+#include &#34;gambit/Logs/logger.hpp&#34;
+#include &#34;gambit/Backends/backend_singleton.hpp&#34;
+#include &#34;gambit/cmake/cmake_variables.hpp&#34;
 
 #include &lt;sstream&gt;
 #include &lt;fstream&gt;
@@ -173,31 +173,31 @@ namespace Gambit
     // Matches capability, type, function and module name
     bool moduleFuncMatchesIniEntry(functor *f, const IniParser::ObservableType &amp;e, const Utils::type_equivalency &amp; eq)
     {
-      return (e.capability != &quot;&quot; ? stringComp(e.capability, f-&gt;capability()) : true)
-         and (e.type       != &quot;&quot; ? typeComp  (e.type,       f-&gt;type(), eq)   : true)
-         and (e.function   != &quot;&quot; ? stringComp(e.function,   f-&gt;name())       : true)
-         and (e.module     != &quot;&quot; ? stringComp(e.module,     f-&gt;origin())     : true);
+      return (e.capability != &#34;&#34; ? stringComp(e.capability, f-&gt;capability()) : true)
+         and (e.type       != &#34;&#34; ? typeComp  (e.type,       f-&gt;type(), eq)   : true)
+         and (e.function   != &#34;&#34; ? stringComp(e.function,   f-&gt;name())       : true)
+         and (e.module     != &#34;&#34; ? stringComp(e.module,     f-&gt;origin())     : true);
     }
 
     // Check whether functor matches ObservableType
     // Matches capability, type, function and backend name
     bool backendFuncMatchesIniEntry(functor *f, const IniParser::ObservableType &amp;e, const Utils::type_equivalency &amp; eq)
     {
-      return (e.capability != &quot;&quot; ? stringComp(e.capability, f-&gt;capability()) : true)
-         and (e.type       != &quot;&quot; ? typeComp  (e.type,       f-&gt;type(), eq)   : true)
-         and (e.function   != &quot;&quot; ? stringComp(e.function,   f-&gt;name())       : true)
-         and (e.backend    != &quot;&quot; ? stringComp(e.backend,    f-&gt;origin())     : true)
-         and (e.version    != &quot;&quot; ? stringComp(e.version,    f-&gt;version())    : true);
+      return (e.capability != &#34;&#34; ? stringComp(e.capability, f-&gt;capability()) : true)
+         and (e.type       != &#34;&#34; ? typeComp  (e.type,       f-&gt;type(), eq)   : true)
+         and (e.function   != &#34;&#34; ? stringComp(e.function,   f-&gt;name())       : true)
+         and (e.backend    != &#34;&#34; ? stringComp(e.backend,    f-&gt;origin())     : true)
+         and (e.version    != &#34;&#34; ? stringComp(e.version,    f-&gt;version())    : true);
     }
 
     // Get entry level relevant for options
     int getEntryLevelForOptions(const IniParser::ObservableType &amp;e)
     {
       int z = 0;
-      if ( e.module != &quot;&quot; ) z = 1;
-      if ( e.capability != &quot;&quot; ) z = 2;
-      if ( e.type != &quot;&quot; ) z = 3;
-      if ( e.function != &quot;&quot; ) z = 4;
+      if ( e.module != &#34;&#34; ) z = 1;
+      if ( e.capability != &#34;&#34; ) z = 2;
+      if ( e.type != &#34;&#34; ) z = 3;
+      if ( e.function != &#34;&#34; ) z = 4;
       return z;
     }
 
@@ -206,8 +206,8 @@ namespace Gambit
     bool matchesRules( functor *f, const Rule &amp; rule)
     {
       #ifdef DEPRES_DEBUG
-        cout &lt;&lt; (*f).name() &lt;&lt; &quot; vs &quot; &lt;&lt; rule.function &lt;&lt; endl;
-        cout &lt;&lt; (*f).origin() &lt;&lt; &quot; vs &quot; &lt;&lt; rule.module &lt;&lt; endl;
+        cout &lt;&lt; (*f).name() &lt;&lt; &#34; vs &#34; &lt;&lt; rule.function &lt;&lt; endl;
+        cout &lt;&lt; (*f).origin() &lt;&lt; &#34; vs &#34; &lt;&lt; rule.module &lt;&lt; endl;
       #endif
       return ( stringComp( rule.function, (*f).name()) and
                stringComp( rule.module, (*f).origin())
@@ -226,7 +226,7 @@ namespace Gambit
         edgeWriter(const DRes::MasterGraphType*) {};
         void operator()(std::ostream&amp;, const EdgeID&amp;) const
         {
-          //out &lt;&lt; &quot;[style=\&quot;dotted\&quot;]&quot;;
+          //out &lt;&lt; &#34;[style=\&#34;dotted\&#34;]&#34;;
         }
     };
 
@@ -240,16 +240,16 @@ namespace Gambit
         void operator()(std::ostream&amp; out, const VertexID&amp; v) const
         {
           str type = Utils::fix_type((*myGraph)[v]-&gt;type());
-          boost::replace_all(type, str(&quot;&amp;&quot;), str(&quot;&amp;amp;&quot;));
-          boost::replace_all(type, str(&quot;&lt;&quot;), str(&quot;&amp;lt;&quot;));
-          boost::replace_all(type, str(&quot;&gt;&quot;), str(&quot;&amp;gt;&quot;));
-          out &lt;&lt; &quot;[fillcolor=\&quot;#F0F0D0\&quot;, style=\&quot;rounded,filled\&quot;, shape=box,&quot;;
-          out &lt;&lt; &quot;label=&lt; &quot;;
-          out &lt;&lt; &quot;&lt;font point-size=\&quot;20\&quot; color=\&quot;red\&quot;&gt;&quot; &lt;&lt; (*myGraph)[v]-&gt;capability() &lt;&lt; &quot;&lt;/font&gt;&lt;br/&gt;&quot;;
-          out &lt;&lt;  &quot;Type: &quot; &lt;&lt; type &lt;&lt; &quot;&lt;br/&gt;&quot;;
-          out &lt;&lt;  &quot;Function: &quot; &lt;&lt; (*myGraph)[v]-&gt;name() &lt;&lt; &quot;&lt;br/&gt;&quot;;
-          out &lt;&lt;  &quot;Module: &quot; &lt;&lt; (*myGraph)[v]-&gt;origin();
-          out &lt;&lt; &quot;&gt;]&quot;;
+          boost::replace_all(type, str(&#34;&amp;&#34;), str(&#34;&amp;amp;&#34;));
+          boost::replace_all(type, str(&#34;&lt;&#34;), str(&#34;&amp;lt;&#34;));
+          boost::replace_all(type, str(&#34;&gt;&#34;), str(&#34;&amp;gt;&#34;));
+          out &lt;&lt; &#34;[fillcolor=\&#34;#F0F0D0\&#34;, style=\&#34;rounded,filled\&#34;, shape=box,&#34;;
+          out &lt;&lt; &#34;label=&lt; &#34;;
+          out &lt;&lt; &#34;&lt;font point-size=\&#34;20\&#34; color=\&#34;red\&#34;&gt;&#34; &lt;&lt; (*myGraph)[v]-&gt;capability() &lt;&lt; &#34;&lt;/font&gt;&lt;br/&gt;&#34;;
+          out &lt;&lt;  &#34;Type: &#34; &lt;&lt; type &lt;&lt; &#34;&lt;br/&gt;&#34;;
+          out &lt;&lt;  &#34;Function: &#34; &lt;&lt; (*myGraph)[v]-&gt;name() &lt;&lt; &#34;&lt;br/&gt;&#34;;
+          out &lt;&lt;  &#34;Module: &#34; &lt;&lt; (*myGraph)[v]-&gt;origin();
+          out &lt;&lt; &#34;&gt;]&#34;;
         }
     };
 
@@ -276,8 +276,8 @@ namespace Gambit
     bool stringComp(const str &amp; s1, const str &amp; s2, bool with_regex)
     {
       if ( s1 == s2 ) return true;
-      if ( s1 == &quot;&quot; ) return true;
-      if ( s1 == &quot;*&quot; ) return true;
+      if ( s1 == &#34;&#34; ) return true;
+      if ( s1 == &#34;*&#34; ) return true;
       try
       {
         if (with_regex) if (std::regex_match(s2, std::regex(s1))) return true;
@@ -285,9 +285,9 @@ namespace Gambit
       catch (std::regex_error &amp; err)
       {
         std::ostringstream errmsg;
-        errmsg &lt;&lt; &quot;ERROR during regex string comparison.&quot; &lt;&lt; std::endl;
-        errmsg &lt;&lt; &quot;  Comparing regular expression: &quot; &lt;&lt; s1 &lt;&lt; std::endl;
-        errmsg &lt;&lt; &quot;  with test string: &quot; &lt;&lt; s2 &lt;&lt; std::endl;
+        errmsg &lt;&lt; &#34;ERROR during regex string comparison.&#34; &lt;&lt; std::endl;
+        errmsg &lt;&lt; &#34;  Comparing regular expression: &#34; &lt;&lt; s1 &lt;&lt; std::endl;
+        errmsg &lt;&lt; &#34;  with test string: &#34; &lt;&lt; s2 &lt;&lt; std::endl;
         dependency_resolver_error().raise(LOCAL_INFO,errmsg.str());
       }
       return false;
@@ -298,12 +298,12 @@ namespace Gambit
     {
       bool match1, match2;
       // Loop over all the default versions of BOSSed backends and replace any corresponding *_default leading namespace with the explicit version.
-      if ((s1.find(&quot;_default&quot;) != std::string::npos) || (s2.find(&quot;_default&quot;) != std::string::npos))
+      if ((s1.find(&#34;_default&#34;) != std::string::npos) || (s2.find(&#34;_default&#34;) != std::string::npos))
       {
         for (auto it = Backends::backendInfo().default_safe_versions.begin(); it != Backends::backendInfo().default_safe_versions.end(); ++it)
         {
-          s1 = Utils::replace_leading_namespace(s1, it-&gt;first+&quot;_default&quot;, it-&gt;first+&quot;_&quot;+it-&gt;second);
-          s2 = Utils::replace_leading_namespace(s2, it-&gt;first+&quot;_default&quot;, it-&gt;first+&quot;_&quot;+it-&gt;second);
+          s1 = Utils::replace_leading_namespace(s1, it-&gt;first+&#34;_default&#34;, it-&gt;first+&#34;_&#34;+it-&gt;second);
+          s2 = Utils::replace_leading_namespace(s2, it-&gt;first+&#34;_default&#34;, it-&gt;first+&#34;_&#34;+it-&gt;second);
         }
       }
       // Does it just match?
@@ -339,13 +339,13 @@ namespace Gambit
        boundTEs(&amp;equiv_classes),
        boundPrinter(&amp;printer),
        index(get(vertex_index,masterGraph)),
-       activeFunctorGraphFile(Utils::runtime_scratch()+&quot;GAMBIT_active_functor_graph.gv&quot;)
+       activeFunctorGraphFile(Utils::runtime_scratch()+&#34;GAMBIT_active_functor_graph.gv&#34;)
     {
       addFunctors();
       logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#######################################&quot;   &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#  List of Type Equivalency Classes   #&quot;   &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#######################################&quot;;
+      logger() &lt;&lt; &#34;#######################################&#34;   &lt;&lt; endl;
+      logger() &lt;&lt; &#34;#  List of Type Equivalency Classes   #&#34;   &lt;&lt; endl;
+      logger() &lt;&lt; &#34;#######################################&#34;;
       for (std::set&lt;std::set&lt;str&gt; &gt;::const_iterator it = boundTEs-&gt;equivalency_classes.begin(); it != boundTEs-&gt;equivalency_classes.end(); ++it)
       {
         logger() &lt;&lt; endl &lt;&lt; *it;
@@ -368,15 +368,15 @@ namespace Gambit
 
       // Set up list of target ObsLikes
       logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#######################################&quot;   &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#        List of Target ObsLikes      #&quot;   &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#                                     #&quot;   &lt;&lt; endl;
-      logger() &lt;&lt; &quot;# format: Capability (Type) [Purpose] #&quot;   &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#######################################&quot;;
+      logger() &lt;&lt; &#34;#######################################&#34;   &lt;&lt; endl;
+      logger() &lt;&lt; &#34;#        List of Target ObsLikes      #&#34;   &lt;&lt; endl;
+      logger() &lt;&lt; &#34;#                                     #&#34;   &lt;&lt; endl;
+      logger() &lt;&lt; &#34;# format: Capability (Type) [Purpose] #&#34;   &lt;&lt; endl;
+      logger() &lt;&lt; &#34;#######################################&#34;;
       for (auto it = observables.begin(); it != observables.end(); ++it)
       {
         // Format output
-        logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl &lt;&lt; it-&gt;capability &lt;&lt; &quot; (&quot; &lt;&lt; it-&gt;type &lt;&lt; &quot;) [&quot; &lt;&lt; it-&gt;purpose &lt;&lt; &quot;]&quot;;
+        logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl &lt;&lt; it-&gt;capability &lt;&lt; &#34; (&#34; &lt;&lt; it-&gt;type &lt;&lt; &#34;) [&#34; &lt;&lt; it-&gt;purpose &lt;&lt; &#34;]&#34;;
         queueEntry.first.first = it-&gt;capability;
         queueEntry.first.second = it-&gt;type;
         queueEntry.second = OBSLIKE_VERTEXID;
@@ -450,15 +450,15 @@ namespace Gambit
       makeFunctorsModelCompatible();
 
       graph_traits&lt;DRes::MasterGraphType&gt;::vertex_iterator vi, vi_end;
-      const str formatString = &quot;%-20s %-32s %-32s %-32s %-15s %-7i %-5i %-5i\n&quot;;
-      logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl &lt;&lt; &quot;Vertices registered in masterGraph&quot; &lt;&lt; endl;
-      logger() &lt;&lt; &quot;----------------------------------&quot; &lt;&lt; endl;
+      const str formatString = &#34;%-20s %-32s %-32s %-32s %-15s %-7i %-5i %-5i\n&#34;;
+      logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl &lt;&lt; &#34;Vertices registered in masterGraph&#34; &lt;&lt; endl;
+      logger() &lt;&lt; &#34;----------------------------------&#34; &lt;&lt; endl;
       logger() &lt;&lt; boost::format(formatString)%
-       &quot;MODULE (VERSION)&quot;% &quot;FUNCTION&quot;% &quot;CAPABILITY&quot;% &quot;TYPE&quot;% &quot;PURPOSE&quot;% &quot;STATUS&quot;% &quot;#DEPs&quot;% &quot;#BE_REQs&quot;;
+       &#34;MODULE (VERSION)&#34;% &#34;FUNCTION&#34;% &#34;CAPABILITY&#34;% &#34;TYPE&#34;% &#34;PURPOSE&#34;% &#34;STATUS&#34;% &#34;#DEPs&#34;% &#34;#BE_REQs&#34;;
       for (boost::tie(vi, vi_end) = vertices(masterGraph); vi != vi_end; ++vi)
       {
         logger() &lt;&lt; boost::format(formatString)%
-         ((*masterGraph[*vi]).origin() + &quot; (&quot; + (*masterGraph[*vi]).version() + &quot;)&quot;) %
+         ((*masterGraph[*vi]).origin() + &#34; (&#34; + (*masterGraph[*vi]).version() + &#34;)&#34;) %
          (*masterGraph[*vi]).name()%
          (*masterGraph[*vi]).capability()%
          (*masterGraph[*vi]).type()%
@@ -467,8 +467,8 @@ namespace Gambit
          (*masterGraph[*vi]).dependencies().size()%
          (*masterGraph[*vi]).backendreqs().size();
       }
-      logger() &lt;&lt;  &quot;Registered Backend vertices&quot; &lt;&lt; endl;
-      logger() &lt;&lt;  &quot;---------------------------&quot; &lt;&lt; endl;
+      logger() &lt;&lt;  &#34;Registered Backend vertices&#34; &lt;&lt; endl;
+      logger() &lt;&lt;  &#34;---------------------------&#34; &lt;&lt; endl;
       logger() &lt;&lt; printGenericFunctorList(boundCore-&gt;getBackendFunctors());
       logger() &lt;&lt; EOM;
     }
@@ -485,23 +485,23 @@ namespace Gambit
       std::set&lt;VertexID&gt; done; //set of vertices already accounted for
       std::vector&lt;VertexID&gt; order = getObsLikeOrder();
 
-      str formatString  = &quot;%-5s %-25s %-25s %-25s\n&quot;;
+      str formatString  = &#34;%-5s %-25s %-25s %-25s\n&#34;;
       // Might need to check if terminal supports unicode characters...
-      str formatString0 = &quot;%-7s %-23s %-25s %-25s %-25s %-6s\n&quot;;  // header
-      str formatString1a= &quot;%-9s %-21s %-25s %-25s %-25s %-6s\n&quot;;  // target functors
-      str formatString1b= &quot;%-4s \u2514\u2500\u2500&gt; %-21s %-25s %-25s %-25s %-6s\n&quot;;  // target functors
-      str formatString2a= &quot;     \u250C\u2500 %-23s %-25s %-25s %-25s %-6s\n&quot;;  // parents
-      str formatString2b= &quot;     \u251C\u2500 %-23s %-25s %-25s %-25s %-6s\n&quot;;
-      str formatString3a= &quot;     \u250CX %-23s %-25s %-25s %-25s %-6s\n&quot;; // &quot;already done&quot; parents
-      str formatString3b= &quot;     \u251CX %-23s %-25s %-25s %-25s %-6s\n&quot;;
+      str formatString0 = &#34;%-7s %-23s %-25s %-25s %-25s %-6s\n&#34;;  // header
+      str formatString1a= &#34;%-9s %-21s %-25s %-25s %-25s %-6s\n&#34;;  // target functors
+      str formatString1b= &#34;%-4s \u2514\u2500\u2500&gt; %-21s %-25s %-25s %-25s %-6s\n&#34;;  // target functors
+      str formatString2a= &#34;     \u250C\u2500 %-23s %-25s %-25s %-25s %-6s\n&#34;;  // parents
+      str formatString2b= &#34;     \u251C\u2500 %-23s %-25s %-25s %-25s %-6s\n&#34;;
+      str formatString3a= &#34;     \u250CX %-23s %-25s %-25s %-25s %-6s\n&#34;; // &#34;already done&#34; parents
+      str formatString3b= &#34;     \u251CX %-23s %-25s %-25s %-25s %-6s\n&#34;;
 
       int i = 0;
 
       // Show the order in which the target functors will be attacked.
       std::ostringstream ss;
-      ss &lt;&lt; endl &lt;&lt; &quot;Initial target functor evaluation order&quot; &lt;&lt; endl;
-      ss &lt;&lt; &quot;----------------------------------&quot; &lt;&lt; endl;
-      ss &lt;&lt; boost::format(formatString)% &quot;#&quot;% &quot;FUNCTION&quot;% &quot;CAPABILITY&quot;% &quot;ORIGIN&quot;;
+      ss &lt;&lt; endl &lt;&lt; &#34;Initial target functor evaluation order&#34; &lt;&lt; endl;
+      ss &lt;&lt; &#34;----------------------------------&#34; &lt;&lt; endl;
+      ss &lt;&lt; boost::format(formatString)% &#34;#&#34;% &#34;FUNCTION&#34;% &#34;CAPABILITY&#34;% &#34;ORIGIN&#34;;
 
       for (std::vector&lt;VertexID&gt;::const_iterator
                   vi  = order.begin();
@@ -519,10 +519,10 @@ namespace Gambit
 
       i = 0; // Reset counter
       // Do another loop to show the full initial sequence of functor evaluation
-      // This doesn't figure out the sequence within each target functor group; I'm not 100% sure where that is determined. This does, however, show which groups get evaluated first, and which functors are already evaluated.
-      ss &lt;&lt; endl &lt;&lt; &quot;Full initial functor evaluation order&quot; &lt;&lt; endl;
-      ss &lt;&lt; &quot;----------------------------------&quot; &lt;&lt; endl;
-      ss &lt;&lt; boost::format(formatString0)% &quot;#&quot;% &quot;FUNCTION&quot;% &quot;CAPABILITY&quot;% &quot;TYPE&quot;% &quot;ORIGIN&quot;% &quot;PRINT?&quot;;
+      // This doesn&#39;t figure out the sequence within each target functor group; I&#39;m not 100% sure where that is determined. This does, however, show which groups get evaluated first, and which functors are already evaluated.
+      ss &lt;&lt; endl &lt;&lt; &#34;Full initial functor evaluation order&#34; &lt;&lt; endl;
+      ss &lt;&lt; &#34;----------------------------------&#34; &lt;&lt; endl;
+      ss &lt;&lt; boost::format(formatString0)% &#34;#&#34;% &#34;FUNCTION&#34;% &#34;CAPABILITY&#34;% &#34;TYPE&#34;% &#34;ORIGIN&#34;% &#34;PRINT?&#34;;
 
       for (std::vector&lt;VertexID&gt;::const_iterator
                   vi  = order.begin();
@@ -584,7 +584,7 @@ namespace Gambit
         done.insert(*vi); // tick this target functor off the list
 
       }
-      ss &lt;&lt; &quot;(\&quot;X\&quot; indicates that the functor is pre-evaluated before the marked position)&quot; &lt;&lt; endl &lt;&lt; endl;
+      ss &lt;&lt; &#34;(\&#34;X\&#34; indicates that the functor is pre-evaluated before the marked position)&#34; &lt;&lt; endl &lt;&lt; endl;
 
       if (toterminal)
       {
@@ -593,10 +593,10 @@ namespace Gambit
         // the logs, but this feature is more convenient.
         cout &lt;&lt; ss.str();
         #ifdef HAVE_GRAPHVIZ
-          cout &lt;&lt; &quot;To get postscript plot of active functors, please run: &quot; &lt;&lt; endl;
-          cout &lt;&lt; GAMBIT_DIR &lt;&lt; &quot;/Core/scripts/./graphviz.sh &quot; &lt;&lt; activeFunctorGraphFile &lt;&lt; &quot; no-loners&quot; &lt;&lt; endl;
+          cout &lt;&lt; &#34;To get postscript plot of active functors, please run: &#34; &lt;&lt; endl;
+          cout &lt;&lt; GAMBIT_DIR &lt;&lt; &#34;/Core/scripts/./graphviz.sh &#34; &lt;&lt; activeFunctorGraphFile &lt;&lt; &#34; no-loners&#34; &lt;&lt; endl;
         #else
-          cout &lt;&lt; &quot;To get postscript plot of active functors, please install graphviz, rerun cmake and remake GAMBIT.&quot; &lt;&lt; endl &lt;&lt; endl;
+          cout &lt;&lt; &#34;To get postscript plot of active functors, please install graphviz, rerun cmake and remake GAMBIT.&#34; &lt;&lt; endl &lt;&lt; endl;
         #endif
       }
 
@@ -610,15 +610,15 @@ namespace Gambit
       // can fulfil the same requirement
       std::stringstream ss;
 
-      ss &lt;&lt; endl &lt;&lt; &quot;Required backends to run file &quot; &lt;&lt; boundIniFile-&gt;filename() &lt;&lt; std::endl;
-      ss &lt;&lt; &quot;At least one backend candidate per row is required&quot; &lt;&lt; std::endl;
-      ss &lt;&lt; &quot;--------------------------------------------------&quot; &lt;&lt; std::endl &lt;&lt; std::endl;
+      ss &lt;&lt; endl &lt;&lt; &#34;Required backends to run file &#34; &lt;&lt; boundIniFile-&gt;filename() &lt;&lt; std::endl;
+      ss &lt;&lt; &#34;At least one backend candidate per row is required&#34; &lt;&lt; std::endl;
+      ss &lt;&lt; &#34;--------------------------------------------------&#34; &lt;&lt; std::endl &lt;&lt; std::endl;
 
       for(auto reqs : backendsRequired)
       {
         for(auto backend : reqs)
         {
-          ss &lt;&lt; boost::format(&quot;%-25s&quot;)%(&quot;(&quot;+backend.first+&quot;, &quot;+backend.second+&quot;)&quot;);
+          ss &lt;&lt; boost::format(&#34;%-25s&#34;)%(&#34;(&#34;+backend.first+&#34;, &#34;+backend.second+&#34;)&#34;);
         }
         ss &lt;&lt; std::endl;
       }
@@ -641,9 +641,9 @@ namespace Gambit
       std::stringstream ss;
 
       // Location of the bibtex file
-      str bibtex_file_location = boundIniFile-&gt;getValueOrDef&lt;str&gt;(GAMBIT_DIR &quot;/config/bibtex_entries.bib&quot;, &quot;dependency_resolution&quot;, &quot;bibtex_file_location&quot;);
+      str bibtex_file_location = boundIniFile-&gt;getValueOrDef&lt;str&gt;(GAMBIT_DIR &#34;/config/bibtex_entries.bib&#34;, &#34;dependency_resolution&#34;, &#34;bibtex_file_location&#34;);
 
-      ss &lt;&lt; &quot;The scan you are about to run uses backends. Please make sure to cite all of them in your work.&quot; &lt;&lt; std::endl;
+      ss &lt;&lt; &#34;The scan you are about to run uses backends. Please make sure to cite all of them in your work.&#34; &lt;&lt; std::endl;
 
       // Create a list of entries in the bibtex file
       BibTeX bibtex_file(bibtex_file_location);
@@ -656,21 +656,21 @@ namespace Gambit
         if(std::find(entries.begin(), entries.end(), key) == entries.end())
         {
           std::ostringstream errmsg;
-          errmsg &lt;&lt; &quot;The reference with key &quot; &lt;&lt; key &lt;&lt; &quot; cannot be found in the bibtex file &quot; &lt;&lt; bibtex_file_location &lt;&lt; endl;
-          errmsg &lt;&lt; &quot;Please make sure that the bibtex file contains the relevant bibtex entries.&quot; &lt;&lt; endl;
+          errmsg &lt;&lt; &#34;The reference with key &#34; &lt;&lt; key &lt;&lt; &#34; cannot be found in the bibtex file &#34; &lt;&lt; bibtex_file_location &lt;&lt; endl;
+          errmsg &lt;&lt; &#34;Please make sure that the bibtex file contains the relevant bibtex entries.&#34; &lt;&lt; endl;
           dependency_resolver_error().raise(LOCAL_INFO,errmsg.str());
         }
       }
 
       // Drop a bibtex file with the citation entries
-      str bibtex_output_file = boundIniFile-&gt;getValueOrDef&lt;str&gt;(&quot;GAMBIT.bib&quot;, &quot;dependency_resolution&quot;, &quot;bibtex_output_file&quot;);
+      str bibtex_output_file = boundIniFile-&gt;getValueOrDef&lt;str&gt;(&#34;GAMBIT.bib&#34;, &#34;dependency_resolution&#34;, &#34;bibtex_output_file&#34;);
       bibtex_file.dropBibTeXFile(citationKeys, bibtex_output_file);
 
       // Drop a sample TeX file citing all backens
-      str tex_output_file = boundIniFile-&gt;getValueOrDef&lt;str&gt;(&quot;GAMBIT.tex&quot;, &quot;dependency_resolution&quot;, &quot;tex_output_file&quot;);
+      str tex_output_file = boundIniFile-&gt;getValueOrDef&lt;str&gt;(&#34;GAMBIT.tex&#34;, &#34;dependency_resolution&#34;, &#34;tex_output_file&#34;);
       bibtex_file.dropTeXFile(citationKeys, tex_output_file, bibtex_output_file);
 
-      ss &lt;&lt; &quot;You can find the list of references to include in &quot; &lt;&lt; bibtex_output_file &lt;&lt; &quot;. And and example TeX file in &quot; &lt;&lt; tex_output_file &lt;&lt; std::endl &lt;&lt; std::endl;
+      ss &lt;&lt; &#34;You can find the list of references to include in &#34; &lt;&lt; bibtex_output_file &lt;&lt; &#34;. And and example TeX file in &#34; &lt;&lt; tex_output_file &lt;&lt; std::endl &lt;&lt; std::endl;
 
       // Print to terminal
       std::cout &lt;&lt; ss.str();
@@ -725,8 +725,8 @@ namespace Gambit
         // Extent list of calculated vertices
         colleages.insert(colleages_min.begin(), colleages_min.end());
         double prop = masterGraph[*it_min]-&gt;getInvalidationRate();
-        logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &quot;Estimated T [s]: &quot; &lt;&lt; t2p_min*prop &lt;&lt; EOM;
-        logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &quot;Estimated p: &quot; &lt;&lt; prop &lt;&lt; EOM;
+        logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &#34;Estimated T [s]: &#34; &lt;&lt; t2p_min*prop &lt;&lt; EOM;
+        logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &#34;Estimated p: &#34; &lt;&lt; prop &lt;&lt; EOM;
         sorted.push_back(*it_min);
         unsorted.erase(it_min);
       }
@@ -737,21 +737,21 @@ namespace Gambit
     void DependencyResolver::calcObsLike(VertexID vertex)
     {
       if (SortedParentVertices.find(vertex) == SortedParentVertices.end())
-        core_error().raise(LOCAL_INFO, &quot;Tried to calculate a function not in or not at top of dependency graph.&quot;);
+        core_error().raise(LOCAL_INFO, &#34;Tried to calculate a function not in or not at top of dependency graph.&#34;);
       std::vector&lt;VertexID&gt; order = SortedParentVertices.at(vertex);
 
       for (std::vector&lt;VertexID&gt;::iterator it = order.begin(); it != order.end(); ++it)
       {
         std::ostringstream ss;
-        ss &lt;&lt; &quot;Calling &quot; &lt;&lt; masterGraph[*it]-&gt;name() &lt;&lt; &quot; from &quot; &lt;&lt; masterGraph[*it]-&gt;origin() &lt;&lt; &quot;...&quot;;
+        ss &lt;&lt; &#34;Calling &#34; &lt;&lt; masterGraph[*it]-&gt;name() &lt;&lt; &#34; from &#34; &lt;&lt; masterGraph[*it]-&gt;origin() &lt;&lt; &#34;...&#34;;
         logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; LogTags::info &lt;&lt; LogTags::debug &lt;&lt; ss.str() &lt;&lt; EOM;
         masterGraph[*it]-&gt;calculate();
         if (boundIniFile-&gt;getValueOrDef&lt;bool&gt;(
-              false, &quot;dependency_resolution&quot;, &quot;log_runtime&quot;) )
+              false, &#34;dependency_resolution&#34;, &#34;log_runtime&#34;) )
         {
           double T = masterGraph[*it]-&gt;getRuntimeAverage();
           logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; LogTags::info &lt;&lt;
-            &quot;Runtime, averaged over multiple calls [s]: &quot; &lt;&lt; T &lt;&lt; EOM;
+            &#34;Runtime, averaged over multiple calls [s]: &#34; &lt;&lt; T &lt;&lt; EOM;
         }
         invalid_point_exception* e = masterGraph[*it]-&gt;retrieve_invalid_point_exception();
         if (e != NULL) throw(*e);
@@ -767,16 +767,16 @@ namespace Gambit
       // point the results should be associated with.
 
       if (SortedParentVertices.find(vertex) == SortedParentVertices.end())
-        core_error().raise(LOCAL_INFO, &quot;Tried to calculate a function not in or not at top of dependency graph.&quot;);
+        core_error().raise(LOCAL_INFO, &#34;Tried to calculate a function not in or not at top of dependency graph.&#34;);
       std::vector&lt;VertexID&gt; order = SortedParentVertices.at(vertex);
 
       for (std::vector&lt;VertexID&gt;::iterator it = order.begin(); it != order.end(); ++it)
       {
         std::ostringstream ss;
-        ss &lt;&lt; &quot;Printing &quot; &lt;&lt; masterGraph[*it]-&gt;name() &lt;&lt; &quot; from &quot; &lt;&lt; masterGraph[*it]-&gt;origin() &lt;&lt; &quot;...&quot;;
+        ss &lt;&lt; &#34;Printing &#34; &lt;&lt; masterGraph[*it]-&gt;name() &lt;&lt; &#34; from &#34; &lt;&lt; masterGraph[*it]-&gt;origin() &lt;&lt; &#34;...&#34;;
         logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; LogTags::info &lt;&lt; LogTags::debug &lt;&lt; ss.str() &lt;&lt; EOM;
 
-        if (not typeComp(masterGraph[*it]-&gt;type(),  &quot;void&quot;, *boundTEs, false))
+        if (not typeComp(masterGraph[*it]-&gt;type(),  &#34;void&#34;, *boundTEs, false))
         {
           // Note that this prints from thread index 0 only, i.e. results created by
           // threads other than the main one need to be accessed with
@@ -812,14 +812,14 @@ namespace Gambit
         if (typeComp(*it, masterGraph[vertex]-&gt;type(), *boundTEs, false)) return *it;
       }
       std::stringstream msg;
-      msg &lt;&lt; &quot;All quantities with purpose \&quot;&quot; &lt;&lt; purpose &lt;&lt; &quot;\&quot; in your yaml file must have one &quot; &lt;&lt; endl
-          &lt;&lt; &quot;of the following types: &quot; &lt;&lt; endl &lt;&lt; &quot;  &quot; &lt;&lt; types &lt;&lt; endl
-          &lt;&lt; &quot;You have tried to assign this purpose to &quot; &lt;&lt; masterGraph[vertex]-&gt;origin() &lt;&lt; &quot;::&quot;
-          &lt;&lt; masterGraph[vertex]-&gt;name() &lt;&lt; &quot;,&quot; &lt;&lt; endl &lt;&lt; &quot;which has capability: &quot; &lt;&lt; endl
-          &lt;&lt; &quot;  &quot; &lt;&lt; masterGraph[vertex]-&gt;capability() &lt;&lt; endl &lt;&lt; &quot;and result type: &quot; &lt;&lt; endl
-          &lt;&lt; &quot;  [&quot; &lt;&lt; masterGraph[vertex]-&gt;type() &lt;&lt; &quot;]&quot; &lt;&lt; endl &lt;&lt; &quot;Please assign a different purpose to this entry.&quot;;
+      msg &lt;&lt; &#34;All quantities with purpose \&#34;&#34; &lt;&lt; purpose &lt;&lt; &#34;\&#34; in your yaml file must have one &#34; &lt;&lt; endl
+          &lt;&lt; &#34;of the following types: &#34; &lt;&lt; endl &lt;&lt; &#34;  &#34; &lt;&lt; types &lt;&lt; endl
+          &lt;&lt; &#34;You have tried to assign this purpose to &#34; &lt;&lt; masterGraph[vertex]-&gt;origin() &lt;&lt; &#34;::&#34;
+          &lt;&lt; masterGraph[vertex]-&gt;name() &lt;&lt; &#34;,&#34; &lt;&lt; endl &lt;&lt; &#34;which has capability: &#34; &lt;&lt; endl
+          &lt;&lt; &#34;  &#34; &lt;&lt; masterGraph[vertex]-&gt;capability() &lt;&lt; endl &lt;&lt; &#34;and result type: &#34; &lt;&lt; endl
+          &lt;&lt; &#34;  [&#34; &lt;&lt; masterGraph[vertex]-&gt;type() &lt;&lt; &#34;]&#34; &lt;&lt; endl &lt;&lt; &#34;Please assign a different purpose to this entry.&#34;;
       core_error().raise(LOCAL_INFO, msg.str());
-      return &quot;If you make core errors non-fatal you deserve what you get.&quot;;
+      return &#34;If you make core errors non-fatal you deserve what you get.&#34;;
     }
 
     // Tell functor that it invalidated the current point in model space (due to a large or NaN contribution to lnL)
@@ -827,11 +827,11 @@ namespace Gambit
     {
       if (isnan)
       {
-        masterGraph[vertex]-&gt;notifyOfInvalidation(&quot;NaN returned for likelihood value.&quot;);
+        masterGraph[vertex]-&gt;notifyOfInvalidation(&#34;NaN returned for likelihood value.&#34;);
       }
       else
       {
-        masterGraph[vertex]-&gt;notifyOfInvalidation(&quot;Cumulative log-likelihood pushed below threshold.&quot;);
+        masterGraph[vertex]-&gt;notifyOfInvalidation(&#34;Cumulative log-likelihood pushed below threshold.&#34;);
       }
     }
 
@@ -864,17 +864,17 @@ namespace Gambit
 
     str DependencyResolver::printQuantityToBeResolved(const sspair &amp; quantity, const DRes::VertexID &amp; vertex)
     {
-        str s = quantity.first + &quot; (&quot; + quantity.second + &quot;)&quot;;
-        s += &quot;, required by &quot;;
+        str s = quantity.first + &#34; (&#34; + quantity.second + &#34;)&#34;;
+        s += &#34;, required by &#34;;
         if ( vertex != OBSLIKE_VERTEXID )
         {
-            s += (*masterGraph[vertex]).capability() + &quot; (&quot;;
-            s += (*masterGraph[vertex]).type() + &quot;) [&quot;;
-            s += (*masterGraph[vertex]).name() + &quot;, &quot;;
-            s += (*masterGraph[vertex]).origin() + &quot;]&quot;;
+            s += (*masterGraph[vertex]).capability() + &#34; (&#34;;
+            s += (*masterGraph[vertex]).type() + &#34;) [&#34;;
+            s += (*masterGraph[vertex]).name() + &#34;, &#34;;
+            s += (*masterGraph[vertex]).origin() + &#34;]&#34;;
         }
         else
-            s += &quot;Core&quot;;
+            s += &#34;Core&#34;;
         return s;
     }
 
@@ -891,16 +891,16 @@ namespace Gambit
     // Generic printer of the contents of a functor list
     str DependencyResolver::printGenericFunctorList(const std::vector&lt;functor*&gt;&amp; functorList)
     {
-      const str formatString = &quot;%-20s %-32s %-48s %-32s %-7i\n&quot;;
+      const str formatString = &#34;%-20s %-32s %-48s %-32s %-7i\n&#34;;
       std::ostringstream stream;
-      stream &lt;&lt; boost::format(formatString)%&quot;ORIGIN (VERSION)&quot;% &quot;FUNCTION&quot;% &quot;CAPABILITY&quot;% &quot;TYPE&quot;% &quot;STATUS&quot;;
+      stream &lt;&lt; boost::format(formatString)%&#34;ORIGIN (VERSION)&#34;% &#34;FUNCTION&#34;% &#34;CAPABILITY&#34;% &#34;TYPE&#34;% &#34;STATUS&#34;;
       for (std::vector&lt;functor *&gt;::const_iterator
           it  = functorList.begin();
           it != functorList.end();
           ++it)
       {
         stream &lt;&lt; boost::format(formatString)%
-         ((*it)-&gt;origin() + &quot; (&quot; + (*it)-&gt;version() + &quot;)&quot;) %
+         ((*it)-&gt;origin() + &#34; (&#34; + (*it)-&gt;version() + &#34;)&#34;) %
          (*it)-&gt;name()%
          (*it)-&gt;capability()%
          (*it)-&gt;type()%
@@ -980,7 +980,7 @@ namespace Gambit
     // (i.e. give it the list of functors that need printing)
     void DependencyResolver::initialisePrinter()
     {
-      // Send the state of the &quot;print_unitcube&quot; flag to the printer
+      // Send the state of the &#34;print_unitcube&#34; flag to the printer
       boundPrinter-&gt;set_printUnitcube(print_unitcube);
 
       std::vector&lt;int&gt; functors_to_print;
@@ -1001,31 +1001,31 @@ namespace Gambit
         masterGraph[*vi]-&gt;setTimingVertexID(Printers::get_param_id(timing_label));
 
         // Check for non-void type and status==2 (after the dependency resolution) to print only active, printable functors.
-        // TODO: this doesn't currently check for non-void type; that is done at the time of printing in calcObsLike.
+        // TODO: this doesn&#39;t currently check for non-void type; that is done at the time of printing in calcObsLike.
         if( masterGraph[*vi]-&gt;requiresPrinting() and (masterGraph[*vi]-&gt;status()==2) )
         {
           functors_to_print.push_back(index[*vi]); // TODO: Probably obsolete
           boundPrinter-&gt;addToPrintList(label); // Needed mainly by postprocessor.
           // Trigger a dummy print call for all printable functors. This is used by some printers
           // to set up buffers for each of these output streams.
-          //logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &quot;Triggering dummy print for functor '&quot;&lt;&lt;masterGraph[*vi]-&gt;capability()&lt;&lt;&quot;' (&quot;&lt;&lt;masterGraph[*vi]-&gt;type()&lt;&lt;&quot;)...&quot; &lt;&lt; EOM;
+          //logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &#34;Triggering dummy print for functor &#39;&#34;&lt;&lt;masterGraph[*vi]-&gt;capability()&lt;&lt;&#34;&#39; (&#34;&lt;&lt;masterGraph[*vi]-&gt;type()&lt;&lt;&#34;)...&#34; &lt;&lt; EOM;
 
           //masterGraph[*vi]-&gt;print(boundPrinter,-1);
         }
       }
 
       // Force-reset the printer to erase the dummy calls
-      // (but don't do this if we are in resume mode!)
+      // (but don&#39;t do this if we are in resume mode!)
       //if(not boundCore-&gt;resume) boundPrinter-&gt;reset(true);
       //boundPrinter-&gt;reset(true); // Actually *do* do it in resume mode as well. Printers should only reset new data, not destroy old data.
 
-      // sent vector of ID's of functors to be printed to printer.
+      // sent vector of ID&#39;s of functors to be printed to printer.
       // (if we want to only print functor output sometimes, and dynamically
-      // switch this on and off, we'll have to rethink the strategy here a
+      // switch this on and off, we&#39;ll have to rethink the strategy here a
       // little... for now if the print function of a functor does not get
       // called, it is up to the printer how it deals with the missing result.
       // Similarly for extra results, i.e. from any functors not in this
-      // initial list, whose &quot;requiresPrinting&quot; flag later gets set to 'true'
+      // initial list, whose &#34;requiresPrinting&#34; flag later gets set to &#39;true&#39;
       // somehow.)
       boundPrinter-&gt;initialise(functors_to_print); // TODO: Probably obsolete
     }
@@ -1034,8 +1034,8 @@ namespace Gambit
     {
       // In case of doubt (and if not explicitely disabled in the ini-file), prefer functors
       // that are more specifically tailored for the model being scanned. Do not consider functors
-      // that are accessible via INTERPRET_AS_X links, as these are all considered to be equally 'far'
-      // from the model being scanned, with the 'distance' being one step further than the most distant
+      // that are accessible via INTERPRET_AS_X links, as these are all considered to be equally &#39;far&#39;
+      // from the model being scanned, with the &#39;distance&#39; being one step further than the most distant
       // ancestor.
 
       // Work up the model ancestry one step at a time, and stop as soon as one or more valid model-specific functors is
@@ -1055,7 +1055,7 @@ namespace Gambit
           // Step up a level in the model hierarchy for this model.
           *mit = boundClaw-&gt;get_parent(*mit);
         }
-        parentModelList.erase(std::remove(parentModelList.begin(), parentModelList.end(), &quot;none&quot;), parentModelList.end());
+        parentModelList.erase(std::remove(parentModelList.begin(), parentModelList.end(), &#34;none&#34;), parentModelList.end());
       }
       if (newCandidates.size() != 0)
         return newCandidates;
@@ -1070,7 +1070,7 @@ namespace Gambit
       YAML::Node zlevels;
 
       #ifdef DEPRES_DEBUG
-        cout &lt;&lt; &quot;Searching options for &quot; &lt;&lt; masterGraph[vertex]-&gt;capability() &lt;&lt; endl;
+        cout &lt;&lt; &#34;Searching options for &#34; &lt;&lt; masterGraph[vertex]-&gt;capability() &lt;&lt; endl;
       #endif
 
       const IniParser::ObservablesType &amp; entries = boundIniFile-&gt;getRules();
@@ -1080,14 +1080,14 @@ namespace Gambit
         if (moduleFuncMatchesIniEntry(masterGraph[vertex], *it, *boundTEs))
         {
           #ifdef DEPRES_DEBUG
-            cout &lt;&lt; &quot;Getting option from: &quot; &lt;&lt; it-&gt;capability &lt;&lt; &quot; &quot; &lt;&lt; it-&gt;type &lt;&lt; endl;
+            cout &lt;&lt; &#34;Getting option from: &#34; &lt;&lt; it-&gt;capability &lt;&lt; &#34; &#34; &lt;&lt; it-&gt;type &lt;&lt; endl;
           #endif
           for (auto jt = it-&gt;options.begin(); jt != it-&gt;options.end(); ++jt)
           {
             if ( not nodes[jt-&gt;first.as&lt;std::string&gt;()] )
             {
               #ifdef DEPRES_DEBUG
-                cout &lt;&lt; jt-&gt;first.as&lt;std::string&gt;() &lt;&lt; &quot;: &quot; &lt;&lt; jt-&gt;second &lt;&lt; endl;
+                cout &lt;&lt; jt-&gt;first.as&lt;std::string&gt;() &lt;&lt; &#34;: &#34; &lt;&lt; jt-&gt;second &lt;&lt; endl;
               #endif
               nodes[jt-&gt;first.as&lt;std::string&gt;()] = jt-&gt;second;
               zlevels[jt-&gt;first.as&lt;std::string&gt;()] = getEntryLevelForOptions(*it);
@@ -1097,7 +1097,7 @@ namespace Gambit
               if ( zlevels[jt-&gt;first.as&lt;std::string&gt;()].as&lt;int&gt;() &lt; getEntryLevelForOptions(*it) )
               {
                 #ifdef DEPRES_DEBUG
-                  cout &lt;&lt; &quot;Replaced : &quot; &lt;&lt; jt-&gt;first.as&lt;std::string&gt;() &lt;&lt; &quot;: &quot; &lt;&lt; jt-&gt;second &lt;&lt; endl;
+                  cout &lt;&lt; &#34;Replaced : &#34; &lt;&lt; jt-&gt;first.as&lt;std::string&gt;() &lt;&lt; &#34;: &#34; &lt;&lt; jt-&gt;second &lt;&lt; endl;
                 #endif
                 zlevels[jt-&gt;first.as&lt;std::string&gt;()] = getEntryLevelForOptions(*it);
                 nodes[jt-&gt;first.as&lt;std::string&gt;()] = jt-&gt;second;
@@ -1105,7 +1105,7 @@ namespace Gambit
               else if ( zlevels[jt-&gt;first.as&lt;std::string&gt;()].as&lt;int&gt;() == getEntryLevelForOptions(*it) )
               {
                 std::ostringstream errmsg;
-                errmsg &lt;&lt; &quot;ERROR! Multiple option entries with same level for key: &quot; &lt;&lt; jt-&gt;first.as&lt;std::string&gt;();
+                errmsg &lt;&lt; &#34;ERROR! Multiple option entries with same level for key: &#34; &lt;&lt; jt-&gt;first.as&lt;std::string&gt;();
                 dependency_resolver_error().raise(LOCAL_INFO,errmsg.str());
               }
             }
@@ -1119,7 +1119,7 @@ namespace Gambit
     Options DependencyResolver::collectSubCaps(const DRes::VertexID &amp; vertex)
     {
       #ifdef DEPRES_DEBUG
-        cout &lt;&lt; &quot;Searching for subcaps of &quot; &lt;&lt; masterGraph[vertex]-&gt;capability() &lt;&lt; endl;
+        cout &lt;&lt; &#34;Searching for subcaps of &#34; &lt;&lt; masterGraph[vertex]-&gt;capability() &lt;&lt; endl;
       #endif
 
       YAML::Node nodes;
@@ -1132,13 +1132,13 @@ namespace Gambit
         if (moduleFuncMatchesIniEntry(masterGraph[vertex], *it, *boundTEs) and not it-&gt;subcaps.IsNull())
         {
           #ifdef DEPRES_DEBUG
-            cout &lt;&lt; &quot;Found subcaps for &quot; &lt;&lt; it-&gt;capability &lt;&lt; &quot; &quot; &lt;&lt; it-&gt;type &lt;&lt; &quot; &quot; &lt;&lt; it-&gt;module &lt;&lt; &quot;:&quot; &lt;&lt; endl;
+            cout &lt;&lt; &#34;Found subcaps for &#34; &lt;&lt; it-&gt;capability &lt;&lt; &#34; &#34; &lt;&lt; it-&gt;type &lt;&lt; &#34; &#34; &lt;&lt; it-&gt;module &lt;&lt; &#34;:&#34; &lt;&lt; endl;
           #endif
           // The user has given just a single entry as a subcap
           if (it-&gt;subcaps.IsScalar())
           {
             str key = it-&gt;subcaps.as&lt;str&gt;();
-            if (nodes[key]) dependency_resolver_error().raise(LOCAL_INFO,&quot;Duplicate sub-capability for &quot; + key + &quot;.&quot;);
+            if (nodes[key]) dependency_resolver_error().raise(LOCAL_INFO,&#34;Duplicate sub-capability for &#34; + key + &#34;.&#34;);
             nodes[key] = YAML::Node();
           }
           // The user has passed a simple list of subcaps
@@ -1147,9 +1147,9 @@ namespace Gambit
             for (auto jt = it-&gt;subcaps.begin(); jt != it-&gt;subcaps.end(); ++jt)
             {
               if (not jt-&gt;IsScalar())
-               dependency_resolver_error().raise(LOCAL_INFO,&quot;Attempt to pass map using sequence syntax for subcaps of &quot;+it-&gt;capability+&quot;.&quot;);
+               dependency_resolver_error().raise(LOCAL_INFO,&#34;Attempt to pass map using sequence syntax for subcaps of &#34;+it-&gt;capability+&#34;.&#34;);
               str key = jt-&gt;as&lt;str&gt;();
-              if (nodes[key]) dependency_resolver_error().raise(LOCAL_INFO,&quot;Duplicate sub-capability for &quot; + key + &quot;.&quot;);
+              if (nodes[key]) dependency_resolver_error().raise(LOCAL_INFO,&#34;Duplicate sub-capability for &#34; + key + &#34;.&#34;);
               nodes[key] = YAML::Node();
             }
           }
@@ -1159,7 +1159,7 @@ namespace Gambit
             for (auto jt = it-&gt;subcaps.begin(); jt != it-&gt;subcaps.end(); ++jt)
             {
               str key = jt-&gt;first.as&lt;str&gt;();
-              if (nodes[key]) dependency_resolver_error().raise(LOCAL_INFO,&quot;Duplicate sub-capability for &quot; + key + &quot;.&quot;);
+              if (nodes[key]) dependency_resolver_error().raise(LOCAL_INFO,&#34;Duplicate sub-capability for &#34; + key + &#34;.&#34;);
               nodes[key] = jt-&gt;second.as&lt;YAML::Node&gt;();
             }
           }
@@ -1198,7 +1198,7 @@ namespace Gambit
         // given; this can only apply to output nodes or loop managers).
         if ( stringComp(masterGraph[*vi]-&gt;capability(), quantity.first) and
              *vi != toVertex and // No self-resolution
-             ( quantity.second == &quot;&quot; or quantity.second == &quot;*&quot; or quantity.second == &quot;any&quot; or
+             ( quantity.second == &#34;&#34; or quantity.second == &#34;*&#34; or quantity.second == &#34;any&#34; or
                typeComp(masterGraph[*vi]-&gt;type(), quantity.second, *boundTEs, false) ) )
         {
           // Add vertex to appropriate candidate list
@@ -1218,30 +1218,30 @@ namespace Gambit
       if (vertexCandidates.size() == 0)
       {
         std::ostringstream errmsg;
-        errmsg &lt;&lt; &quot;No candidates found while trying to resolve:&quot; &lt;&lt; endl;
+        errmsg &lt;&lt; &#34;No candidates found while trying to resolve:&#34; &lt;&lt; endl;
         errmsg &lt;&lt; printQuantityToBeResolved(quantity, toVertex) &lt;&lt; endl;
         if (disabledVertexCandidates.size() != 0)
         {
-          errmsg &lt;&lt; &quot;\nNote that viable candidates exist but have been disabled:\n&quot;
+          errmsg &lt;&lt; &#34;\nNote that viable candidates exist but have been disabled:\n&#34;
                  &lt;&lt; printGenericFunctorList(disabledVertexCandidates)
                  &lt;&lt; endl
-          &lt;&lt; &quot;Status flags:&quot; &lt;&lt; endl
-          &lt;&lt; &quot; 0: This function is not compatible with any model you are scanning.&quot; &lt;&lt; endl
-          &lt;&lt; &quot;-3: This function requires a BOSSed class that is missing. The &quot; &lt;&lt; endl
-          &lt;&lt; &quot;    backend that provides the class is missing (most likely), the &quot; &lt;&lt; endl
-          &lt;&lt; &quot;    class is missing from the backend, or the factory functions&quot; &lt;&lt; endl
-          &lt;&lt; &quot;    for this class have not been BOSSed and loaded correctly.&quot; &lt;&lt; endl;
+          &lt;&lt; &#34;Status flags:&#34; &lt;&lt; endl
+          &lt;&lt; &#34; 0: This function is not compatible with any model you are scanning.&#34; &lt;&lt; endl
+          &lt;&lt; &#34;-3: This function requires a BOSSed class that is missing. The &#34; &lt;&lt; endl
+          &lt;&lt; &#34;    backend that provides the class is missing (most likely), the &#34; &lt;&lt; endl
+          &lt;&lt; &#34;    class is missing from the backend, or the factory functions&#34; &lt;&lt; endl
+          &lt;&lt; &#34;    for this class have not been BOSSed and loaded correctly.&#34; &lt;&lt; endl;
         }
-        errmsg &lt;&lt; &quot;Please check your yaml file for typos, and make sure that the&quot; &lt;&lt; endl
-        &lt;&lt; &quot;models you are scanning are compatible with at least one function&quot; &lt;&lt; endl
-        &lt;&lt; &quot;that provides this capability (they may all have been deactivated&quot; &lt;&lt; endl
-        &lt;&lt; &quot;due to having ALLOW_MODELS declarations which are&quot; &lt;&lt; endl
-        &lt;&lt; &quot;incompatible with the models selected for scanning).&quot; &lt;&lt; endl;
+        errmsg &lt;&lt; &#34;Please check your yaml file for typos, and make sure that the&#34; &lt;&lt; endl
+        &lt;&lt; &#34;models you are scanning are compatible with at least one function&#34; &lt;&lt; endl
+        &lt;&lt; &#34;that provides this capability (they may all have been deactivated&#34; &lt;&lt; endl
+        &lt;&lt; &#34;due to having ALLOW_MODELS declarations which are&#34; &lt;&lt; endl
+        &lt;&lt; &#34;incompatible with the models selected for scanning).&#34; &lt;&lt; endl;
         dependency_resolver_error().raise(LOCAL_INFO,errmsg.str());
       }
 
       logger() &lt;&lt; LogTags::dependency_resolver;
-      logger() &lt;&lt; &quot;List of candidate vertices:&quot; &lt;&lt; endl;
+      logger() &lt;&lt; &#34;List of candidate vertices:&#34; &lt;&lt; endl;
       logger() &lt;&lt; printGenericFunctorList(vertexCandidates) &lt;&lt; EOM;
 
       if (toVertex != OBSLIKE_VERTEXID)
@@ -1252,18 +1252,18 @@ namespace Gambit
             it = entries.begin(); it != entries.end(); ++it)
         {
           {
-            // Evaluate &quot;dependencies&quot; section
+            // Evaluate &#34;dependencies&#34; section
             if (moduleFuncMatchesIniEntry(masterGraph[toVertex], *it, *boundTEs) and
-                (it-&gt;capability != &quot;&quot; or it-&gt;function != &quot;&quot; or
-                 it-&gt;type != &quot;&quot; or it-&gt;module != &quot;&quot;))
+                (it-&gt;capability != &#34;&#34; or it-&gt;function != &#34;&#34; or
+                 it-&gt;type != &#34;&#34; or it-&gt;module != &#34;&#34;))
             {
               for (IniParser::ObservablesType::const_iterator
                   it2 = (*it).dependencies.begin();
                   it2 != (*it).dependencies.end(); ++it2)
               {
                 if (quantityMatchesIniEntry(quantity, *it2, *boundTEs) and
-                    (it2-&gt;capability != &quot;&quot; or it2-&gt;type != &quot;&quot;) and
-                    (it2-&gt;function != &quot;&quot; or it2-&gt;module != &quot;&quot;))
+                    (it2-&gt;capability != &#34;&#34; or it2-&gt;type != &#34;&#34;) and
+                    (it2-&gt;function != &#34;&#34; or it2-&gt;module != &#34;&#34;))
                 {
                   rules.push_back(Rule(*it2));
                   if (not it-&gt;weakrule and not it2-&gt;weakrule)
@@ -1271,10 +1271,10 @@ namespace Gambit
                 }
               }
             }
-            // Evaluate &quot;functionChain:&quot; section
+            // Evaluate &#34;functionChain:&#34; section
             if (moduleFuncMatchesIniEntry(masterGraph[toVertex], *it, *boundTEs) and
-                it-&gt;capability != &quot;&quot; and
-                it-&gt;function == &quot;&quot; and
+                it-&gt;capability != &#34;&#34; and
+                it-&gt;function == &#34;&#34; and
                 (*it).functionChain.size() &gt; 1)
             {
               for (auto it2 = (*it).functionChain.begin();
@@ -1292,8 +1292,8 @@ namespace Gambit
             // Evaluate second order rules
             if (quantityMatchesIniEntry(quantity, *it, *boundTEs) and
                 it-&gt;dependencies.size()==0 and
-                (it-&gt;capability != &quot;&quot; or it-&gt;type != &quot;&quot;) and
-                (it-&gt;function != &quot;&quot; or it-&gt;module != &quot;&quot;))
+                (it-&gt;capability != &#34;&#34; or it-&gt;type != &#34;&#34;) and
+                (it-&gt;function != &#34;&#34; or it-&gt;module != &#34;&#34;))
             {
               rules.push_back(Rule(*it));
               if (not it-&gt;weakrule)
@@ -1310,8 +1310,8 @@ namespace Gambit
             entries.begin(); it != entries.end(); ++it)
         {
           if (quantityMatchesIniEntry(quantity, *it, *boundTEs) and
-              (it-&gt;capability != &quot;&quot; or it-&gt;type != &quot;&quot;) and
-              (it-&gt;function != &quot;&quot; or it-&gt;module != &quot;&quot;))
+              (it-&gt;capability != &#34;&#34; or it-&gt;type != &#34;&#34;) and
+              (it-&gt;function != &#34;&#34; or it-&gt;module != &#34;&#34;))
           {
             rules.push_back(Rule(*it));
             if (not it-&gt;weakrule)
@@ -1325,8 +1325,8 @@ namespace Gambit
         {
           if (quantityMatchesIniEntry(quantity, *it, *boundTEs) and
               it-&gt;dependencies.size()==0 and
-              (it-&gt;capability != &quot;&quot; or it-&gt;type != &quot;&quot;) and
-              (it-&gt;function != &quot;&quot; or it-&gt;module != &quot;&quot;))
+              (it-&gt;capability != &#34;&#34; or it-&gt;type != &#34;&#34;) and
+              (it-&gt;function != &#34;&#34; or it-&gt;module != &#34;&#34;))
           {
             rules.push_back(Rule(*it));
             if (not it-&gt;weakrule)
@@ -1335,8 +1335,8 @@ namespace Gambit
         }
       }
 
-      logger() &lt;&lt; &quot;Number of identified rules: &quot; &lt;&lt; rules.size() &lt;&lt; endl
-               &lt;&lt; &quot;Number of these rules that are marked as !weak: &quot;
+      logger() &lt;&lt; &#34;Number of identified rules: &#34; &lt;&lt; rules.size() &lt;&lt; endl
+               &lt;&lt; &#34;Number of these rules that are marked as !weak: &#34;
                &lt;&lt; rules.size()-strong_rules.size() &lt;&lt; EOM;
 
       // Make filtered lists
@@ -1370,39 +1370,39 @@ namespace Gambit
 
       if (rules.size() &gt; 0 and filteredVertexCandidates.size() &gt; 0)
       {
-        logger() &lt;&lt; &quot;Candidate vertices that fulfill all rules:&quot; &lt;&lt; endl;
+        logger() &lt;&lt; &#34;Candidate vertices that fulfill all rules:&#34; &lt;&lt; endl;
         logger() &lt;&lt; printGenericFunctorList(filteredVertexCandidates) &lt;&lt; EOM;
       }
 
       if (filteredVertexCandidates.size() == 0)
       {
         filteredVertexCandidates = filteredVertexCandidates2;
-        logger() &lt;&lt; &quot;Ignoring rules declared as '!weak'&quot; &lt;&lt; endl;
-        logger() &lt;&lt; &quot;Candidate vertices that fulfill all non-weak rules:&quot; &lt;&lt; endl;
+        logger() &lt;&lt; &#34;Ignoring rules declared as &#39;!weak&#39;&#34; &lt;&lt; endl;
+        logger() &lt;&lt; &#34;Candidate vertices that fulfill all non-weak rules:&#34; &lt;&lt; endl;
         logger() &lt;&lt; printGenericFunctorList(filteredVertexCandidates) &lt;&lt; EOM;
       }
 
       // Apply tailor-made filter
       if (boundIniFile-&gt;getValueOrDef&lt;bool&gt;(
-            true, &quot;dependency_resolution&quot;, &quot;prefer_model_specific_functions&quot;)
+            true, &#34;dependency_resolution&#34;, &#34;prefer_model_specific_functions&#34;)
           and filteredVertexCandidates.size() &gt; 1)
       {
         filteredVertexCandidates = closestCandidateForModel(filteredVertexCandidates);
-        logger() &lt;&lt; &quot;A subset of vertex candidates is tailor-made for the scanned model.&quot; &lt;&lt; endl;
-        logger() &lt;&lt; &quot;This is used as additional constraint since the YAML rules alone&quot; &lt;&lt; endl;
-        logger() &lt;&lt; &quot;are not constraining enough. These vertices are:&quot; &lt;&lt; endl;
+        logger() &lt;&lt; &#34;A subset of vertex candidates is tailor-made for the scanned model.&#34; &lt;&lt; endl;
+        logger() &lt;&lt; &#34;This is used as additional constraint since the YAML rules alone&#34; &lt;&lt; endl;
+        logger() &lt;&lt; &#34;are not constraining enough. These vertices are:&#34; &lt;&lt; endl;
         logger() &lt;&lt; printGenericFunctorList(filteredVertexCandidates) &lt;&lt; EOM;
       }
 
       // Nothing left?
       if ( filteredVertexCandidates.size() == 0 )
       {
-        str errmsg = &quot;None of the vertex candidates for&quot;;
-        errmsg += &quot;\n&quot; + printQuantityToBeResolved(quantity, toVertex);
-        errmsg += &quot;\nfulfills all rules in the YAML file.&quot;;
-        errmsg += &quot;\nPlease check your YAML file for contradictory rules, and&quot;;
-        errmsg += &quot;\nensure that you have built GAMBIT in the first place with&quot;;
-        errmsg += &quot;\nall of the components that you are trying to use.&quot;;
+        str errmsg = &#34;None of the vertex candidates for&#34;;
+        errmsg += &#34;\n&#34; + printQuantityToBeResolved(quantity, toVertex);
+        errmsg += &#34;\nfulfills all rules in the YAML file.&#34;;
+        errmsg += &#34;\nPlease check your YAML file for contradictory rules, and&#34;;
+        errmsg += &#34;\nensure that you have built GAMBIT in the first place with&#34;;
+        errmsg += &#34;\nall of the components that you are trying to use.&#34;;
         dependency_resolver_error().raise(LOCAL_INFO,errmsg);
       }
 
@@ -1410,32 +1410,32 @@ namespace Gambit
       if ( filteredVertexCandidates.size() == 1 )
         return filteredVertexCandidates[0];  // And done!
 
-      str errmsg = &quot;Unfortunately, the dependency resolution for&quot;;
-      errmsg += &quot;\n&quot; + printQuantityToBeResolved(quantity, toVertex);
-      errmsg += &quot;\nis still ambiguous.\n&quot;;
-      errmsg += &quot;\nThe candidate vertices are:\n&quot;;
-      errmsg += printGenericFunctorList(vertexCandidates) +&quot;\n&quot;;
-      errmsg += &quot;See logger output for details on the attempted (but failed) dependency resolution.\n&quot;;
-      errmsg += &quot;\nAn entry in your YAML file that would e.g. select&quot;;
-      errmsg += &quot;\nthe first of the above candidates could read &quot;;
+      str errmsg = &#34;Unfortunately, the dependency resolution for&#34;;
+      errmsg += &#34;\n&#34; + printQuantityToBeResolved(quantity, toVertex);
+      errmsg += &#34;\nis still ambiguous.\n&#34;;
+      errmsg += &#34;\nThe candidate vertices are:\n&#34;;
+      errmsg += printGenericFunctorList(vertexCandidates) +&#34;\n&#34;;
+      errmsg += &#34;See logger output for details on the attempted (but failed) dependency resolution.\n&#34;;
+      errmsg += &#34;\nAn entry in your YAML file that would e.g. select&#34;;
+      errmsg += &#34;\nthe first of the above candidates could read &#34;;
       if ( toVertex != OBSLIKE_VERTEXID )
       {
-        errmsg += &quot;as a targeted rule (in the Rules section):\n&quot;;
-        errmsg += &quot;\n  - capability: &quot;+masterGraph[toVertex]-&gt;capability();
-        errmsg += &quot;\n    function: &quot;+masterGraph[toVertex]-&gt;name();
-        errmsg += &quot;\n    dependencies:&quot;;
-        errmsg += &quot;\n      - capability: &quot; +masterGraph[vertexCandidates[0]]-&gt;capability();
-        errmsg += &quot;\n        function: &quot; +masterGraph[vertexCandidates[0]]-&gt;name();
-        errmsg += &quot;\n        module: &quot; +masterGraph[vertexCandidates[0]]-&gt;origin() +&quot;\n\nor &quot;;
+        errmsg += &#34;as a targeted rule (in the Rules section):\n&#34;;
+        errmsg += &#34;\n  - capability: &#34;+masterGraph[toVertex]-&gt;capability();
+        errmsg += &#34;\n    function: &#34;+masterGraph[toVertex]-&gt;name();
+        errmsg += &#34;\n    dependencies:&#34;;
+        errmsg += &#34;\n      - capability: &#34; +masterGraph[vertexCandidates[0]]-&gt;capability();
+        errmsg += &#34;\n        function: &#34; +masterGraph[vertexCandidates[0]]-&gt;name();
+        errmsg += &#34;\n        module: &#34; +masterGraph[vertexCandidates[0]]-&gt;origin() +&#34;\n\nor &#34;;
       }
-      errmsg += &quot;as an untargeted rule (in the Rules or ObsLike section):\n&quot;;
-      errmsg += &quot;\n  - capability: &quot;+masterGraph[vertexCandidates[0]]-&gt;capability();
-      errmsg += &quot;\n    type: &quot;+masterGraph[vertexCandidates[0]]-&gt;type();
-      errmsg += &quot;\n    function: &quot;+masterGraph[vertexCandidates[0]]-&gt;name();
-      errmsg += &quot;\n    module: &quot; +masterGraph[vertexCandidates[0]]-&gt;origin() +&quot;\n&quot;;
+      errmsg += &#34;as an untargeted rule (in the Rules or ObsLike section):\n&#34;;
+      errmsg += &#34;\n  - capability: &#34;+masterGraph[vertexCandidates[0]]-&gt;capability();
+      errmsg += &#34;\n    type: &#34;+masterGraph[vertexCandidates[0]]-&gt;type();
+      errmsg += &#34;\n    function: &#34;+masterGraph[vertexCandidates[0]]-&gt;name();
+      errmsg += &#34;\n    module: &#34; +masterGraph[vertexCandidates[0]]-&gt;origin() +&#34;\n&#34;;
       if ( toVertex == OBSLIKE_VERTEXID )
       {
-        errmsg += &quot;\n(Note that 1st class rules are not possible for vertices on which the core depends only.)\n&quot;;
+        errmsg += &#34;\n(Note that 1st class rules are not possible for vertices on which the core depends only.)\n&#34;;
       }
 
       dependency_resolver_error().raise(LOCAL_INFO,errmsg);
@@ -1449,9 +1449,9 @@ namespace Gambit
     {
       graph_traits&lt;DRes::MasterGraphType&gt;::vertex_iterator vi, vi_end;
       const IniParser::ObservableType *auxEntry = NULL;  // Ptr. on ini-file entry of the dependent vertex (if existent)
-      const IniParser::ObservableType *depEntry = NULL;  // Ptr. on ini-file entry that specifies how to resolve 'quantity'
+      const IniParser::ObservableType *depEntry = NULL;  // Ptr. on ini-file entry that specifies how to resolve &#39;quantity&#39;
       std::vector&lt;DRes::VertexID&gt; vertexCandidates;
-      bool entryExists = false;  // Ini-file entry to resolve 'quantity' found?
+      bool entryExists = false;  // Ini-file entry to resolve &#39;quantity&#39; found?
 
       // First, we check whether the dependent vertex has a unique
       // correspondence in the inifile. Final (output) vertices have to be
@@ -1462,15 +1462,15 @@ namespace Gambit
       // is stored in depEntry.
       if ( toVertex == OBSLIKE_VERTEXID )
       {
-        depEntry = findIniEntry(quantity, boundIniFile-&gt;getObservables(), &quot;ObsLike&quot;);
+        depEntry = findIniEntry(quantity, boundIniFile-&gt;getObservables(), &#34;ObsLike&#34;);
         entryExists = true;
       }
       // for all other vertices use the rules entries
       else
       {
-        auxEntry = findIniEntry(toVertex, boundIniFile-&gt;getRules(), &quot;Rules&quot;);
+        auxEntry = findIniEntry(toVertex, boundIniFile-&gt;getRules(), &#34;Rules&#34;);
         if ( auxEntry != NULL )
-          depEntry = findIniEntry(quantity, (*auxEntry).dependencies, &quot;dependency&quot;);
+          depEntry = findIniEntry(quantity, (*auxEntry).dependencies, &#34;dependency&#34;);
         if ( auxEntry != NULL and depEntry != NULL )
         {
           entryExists = true;
@@ -1481,14 +1481,14 @@ namespace Gambit
       // functors that fulfill the dependency requirement.
       for (tie(vi, vi_end) = vertices(masterGraph); vi != vi_end; ++vi)
       {
-        // Don't allow resolution by deactivated functors
+        // Don&#39;t allow resolution by deactivated functors
         if (masterGraph[*vi]-&gt;status() &gt; 0)
         {
           // Without inifile entry, just match capabilities and types (no type
           // comparison when no types are given; this should only happen for
           // output nodes)
           if ( ( stringComp(masterGraph[*vi]-&gt;capability(), quantity.first) and
-                 ( quantity.second == &quot;&quot; or quantity.second == &quot;*&quot; or
+                 ( quantity.second == &#34;&#34; or quantity.second == &#34;*&#34; or
                    typeComp(masterGraph[*vi]-&gt;type(), quantity.second, *boundTEs, false) ) )
           // with inifile entry, we check capability, type, function name and
           // module name.
@@ -1505,27 +1505,27 @@ namespace Gambit
       {
         if ( not entryExists )
         {
-            str errmsg = &quot;I could not find any module function that provides &quot;;
-            errmsg += quantity.first + &quot; (&quot; + quantity.second + &quot;)&quot;
-                +  &quot;\nCheck your inifile for typos, your modules for consistency, etc.&quot;;
+            str errmsg = &#34;I could not find any module function that provides &#34;;
+            errmsg += quantity.first + &#34; (&#34; + quantity.second + &#34;)&#34;
+                +  &#34;\nCheck your inifile for typos, your modules for consistency, etc.&#34;;
             dependency_resolver_error().raise(LOCAL_INFO,errmsg);
         }
         else
         {
-            str errmsg = &quot;I could not find any module function that provides &quot;;
-            errmsg += quantity.first + &quot; (&quot; + quantity.second + &quot;) [&quot;
-                + depEntry-&gt;function + &quot;, &quot; + depEntry-&gt;module + &quot;]&quot;
-                +  &quot;\nCheck your inifile for typos, your modules for consistency, etc.&quot;;
+            str errmsg = &#34;I could not find any module function that provides &#34;;
+            errmsg += quantity.first + &#34; (&#34; + quantity.second + &#34;) [&#34;
+                + depEntry-&gt;function + &#34;, &#34; + depEntry-&gt;module + &#34;]&#34;
+                +  &#34;\nCheck your inifile for typos, your modules for consistency, etc.&#34;;
             dependency_resolver_error().raise(LOCAL_INFO,errmsg);
         }
       }
 
       // In case of doubt (and if not explicitely disabled in the ini-file), prefer functors
       // that are more specifically tailored for the model being scanned. Do not consider functors
-      // that are accessible via INTERPRET_AS_X links, as these are all considered to be equally 'far'
-      // from the model being scanned, with the 'distance' being one step further than the most distant
+      // that are accessible via INTERPRET_AS_X links, as these are all considered to be equally &#39;far&#39;
+      // from the model being scanned, with the &#39;distance&#39; being one step further than the most distant
       // ancestor.
-      if ( vertexCandidates.size() &gt; 1 and boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true, &quot;dependency_resolution&quot;, &quot;prefer_model_specific_functions&quot;) )
+      if ( vertexCandidates.size() &gt; 1 and boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true, &#34;dependency_resolution&#34;, &#34;prefer_model_specific_functions&#34;) )
       {
         // Work up the model ancestry one step at a time, and stop as soon as one or more valid model-specific functors is
         // found at a given level in the hierarchy.
@@ -1544,33 +1544,33 @@ namespace Gambit
             // Step up a level in the model hierarchy for this model.
             *mit = boundClaw-&gt;get_parent(*mit);
           }
-          parentModelList.erase(std::remove(parentModelList.begin(), parentModelList.end(), &quot;none&quot;), parentModelList.end());
+          parentModelList.erase(std::remove(parentModelList.begin(), parentModelList.end(), &#34;none&#34;), parentModelList.end());
         }
         if (newVertexCandidates.size() != 0) vertexCandidates = newVertexCandidates;
       }
 
       if ( vertexCandidates.size() &gt; 1 )
       {
-        str errmsg = &quot;&quot;;
+        str errmsg = &#34;&#34;;
         if ( not entryExists )
         {
-            errmsg += &quot;I found too many module functions that provide &quot;;
-            errmsg += quantity.first + &quot; (&quot; + quantity.second + &quot;)&quot;
-                +  &quot;\nCheck your inifile for typos, your modules for consistency, etc.&quot;;
+            errmsg += &#34;I found too many module functions that provide &#34;;
+            errmsg += quantity.first + &#34; (&#34; + quantity.second + &#34;)&#34;
+                +  &#34;\nCheck your inifile for typos, your modules for consistency, etc.&#34;;
         }
         else
         {
-            errmsg += &quot;I found too many module functions that provide &quot;;
-            errmsg += quantity.first + &quot; (&quot; + quantity.second + &quot;) \n&quot;
-                + &quot;\nneeded by &quot; + depEntry-&gt;module + &quot;::&quot; + depEntry-&gt;function
-                +  &quot;\nCheck your inifile for typos, your modules for consistency, etc.&quot;;
+            errmsg += &#34;I found too many module functions that provide &#34;;
+            errmsg += quantity.first + &#34; (&#34; + quantity.second + &#34;) \n&#34;
+                + &#34;\nneeded by &#34; + depEntry-&gt;module + &#34;::&#34; + depEntry-&gt;function
+                +  &#34;\nCheck your inifile for typos, your modules for consistency, etc.&#34;;
         }
-        if (not boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true, &quot;dependency_resolution&quot;, &quot;prefer_model_specific_functions&quot;))
-         errmsg += &quot;\nAlso consider turning on prefer_model_specific_functions in your inifile.&quot;;
-        errmsg += &quot;\nCandidate module functions are:&quot;;
+        if (not boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true, &#34;dependency_resolution&#34;, &#34;prefer_model_specific_functions&#34;))
+         errmsg += &#34;\nAlso consider turning on prefer_model_specific_functions in your inifile.&#34;;
+        errmsg += &#34;\nCandidate module functions are:&#34;;
         for (std::vector&lt;DRes::VertexID&gt;::iterator it = vertexCandidates.begin(); it != vertexCandidates.end(); ++it)
         {
-            errmsg += &quot;\n   [&quot; + masterGraph[*it]-&gt;name() + &quot;,&quot; + masterGraph[*it]-&gt;origin() + &quot;]&quot;;
+            errmsg += &#34;\n   [&#34; + masterGraph[*it]-&gt;name() + &#34;,&#34; + masterGraph[*it]-&gt;origin() + &#34;]&#34;;
         }
         dependency_resolver_error().raise(LOCAL_INFO,errmsg);
       }
@@ -1592,25 +1592,25 @@ namespace Gambit
       bool printme;
 
       logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl;
-      logger() &lt;&lt; &quot;################################################&quot; &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#         Starting dependency resolution       #&quot; &lt;&lt; endl;
-      logger() &lt;&lt; &quot;#                                              #&quot; &lt;&lt; endl;
-      logger() &lt;&lt; &quot;# format: Capability (Type) [Function, Module] #&quot; &lt;&lt; endl;
-      logger() &lt;&lt; &quot;################################################&quot; &lt;&lt; EOM;
+      logger() &lt;&lt; &#34;################################################&#34; &lt;&lt; endl;
+      logger() &lt;&lt; &#34;#         Starting dependency resolution       #&#34; &lt;&lt; endl;
+      logger() &lt;&lt; &#34;#                                              #&#34; &lt;&lt; endl;
+      logger() &lt;&lt; &#34;# format: Capability (Type) [Function, Module] #&#34; &lt;&lt; endl;
+      logger() &lt;&lt; &#34;################################################&#34; &lt;&lt; EOM;
 
       // Print something to stdout as well
       #ifdef DEPRES_DEBUG
-        std::cout &lt;&lt; &quot;Resolving dependency graph...&quot; &lt;&lt; std::endl;
+        std::cout &lt;&lt; &#34;Resolving dependency graph...&#34; &lt;&lt; std::endl;
       #endif
 
       // Read ini entries
-      use_regex      = boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true,  &quot;dependency_resolution&quot;, &quot;use_regex&quot;);
-      print_timing   = boundIniFile-&gt;getValueOrDef&lt;bool&gt;(false, &quot;print_timing_data&quot;);
-      print_unitcube = boundIniFile-&gt;getValueOrDef&lt;bool&gt;(false, &quot;print_unitcube&quot;);
+      use_regex      = boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true,  &#34;dependency_resolution&#34;, &#34;use_regex&#34;);
+      print_timing   = boundIniFile-&gt;getValueOrDef&lt;bool&gt;(false, &#34;print_timing_data&#34;);
+      print_unitcube = boundIniFile-&gt;getValueOrDef&lt;bool&gt;(false, &#34;print_unitcube&#34;);
 
-      if ( use_regex      ) logger() &lt;&lt; &quot;Using regex for string comparison.&quot; &lt;&lt; endl;
-      if ( print_timing   ) logger() &lt;&lt; &quot;Will output timing information for all functors (via printer system)&quot; &lt;&lt; EOM;
-      if ( print_unitcube ) logger() &lt;&lt; &quot;Printing of unitCubeParameters will be enabled.&quot; &lt;&lt; EOM;
+      if ( use_regex      ) logger() &lt;&lt; &#34;Using regex for string comparison.&#34; &lt;&lt; endl;
+      if ( print_timing   ) logger() &lt;&lt; &#34;Will output timing information for all functors (via printer system)&#34; &lt;&lt; EOM;
+      if ( print_unitcube ) logger() &lt;&lt; &#34;Printing of unitCubeParameters will be enabled.&#34; &lt;&lt; EOM;
 
       //
       // Main loop: repeat until dependency queue is empty
@@ -1627,24 +1627,24 @@ namespace Gambit
 
         // Print information about required quantity and dependent vertex
         logger() &lt;&lt; LogTags::dependency_resolver;
-        logger() &lt;&lt; &quot;Resolving &quot;;
+        logger() &lt;&lt; &#34;Resolving &#34;;
         logger() &lt;&lt; printQuantityToBeResolved(quantity, toVertex) &lt;&lt; endl &lt;&lt; endl;
 
         // Extra verbose output to terminal
         #ifdef VERBOSE_DEP_RES
-        std::cout &lt;&lt; &quot;Resolving dependency &quot;&lt;&lt;printQuantityToBeResolved(quantity, toVertex)&lt;&lt;&quot;...&quot; &lt;&lt;std::endl;
+        std::cout &lt;&lt; &#34;Resolving dependency &#34;&lt;&lt;printQuantityToBeResolved(quantity, toVertex)&lt;&lt;&#34;...&#34; &lt;&lt;std::endl;
         #endif
 
         // Check that ObsLike vertices have non-empty capability
-        if ( toVertex == OBSLIKE_VERTEXID and quantity.first == &quot;&quot; )
+        if ( toVertex == OBSLIKE_VERTEXID and quantity.first == &#34;&#34; )
         {
-          str errmsg = &quot;ObsLike entry without without capability &quot;
-                       &quot;information encountered.\n&quot;;
+          str errmsg = &#34;ObsLike entry without without capability &#34;
+                       &#34;information encountered.\n&#34;;
           dependency_resolver_error().raise(LOCAL_INFO,errmsg);
         }
 
         // Figure out how to resolve dependency
-        if ( boundIniFile-&gt;getValueOrDef&lt;bool&gt;(false, &quot;dependency_resolution&quot;, &quot;use_old_routines&quot;) )
+        if ( boundIniFile-&gt;getValueOrDef&lt;bool&gt;(false, &#34;dependency_resolution&#34;, &#34;use_old_routines&#34;) )
         {
           boost::tie(iniEntry, fromVertex) = resolveDependency(toVertex, quantity);
         }
@@ -1655,13 +1655,13 @@ namespace Gambit
 
         // Print user info.
         logger() &lt;&lt; LogTags::dependency_resolver;
-        logger() &lt;&lt; &quot;Resolved by: [&quot;;
-        logger() &lt;&lt; (*masterGraph[fromVertex]).name() &lt;&lt; &quot;, &quot;;
-        logger() &lt;&lt; (*masterGraph[fromVertex]).origin() &lt;&lt; &quot;]&quot; &lt;&lt; endl;
+        logger() &lt;&lt; &#34;Resolved by: [&#34;;
+        logger() &lt;&lt; (*masterGraph[fromVertex]).name() &lt;&lt; &#34;, &#34;;
+        logger() &lt;&lt; (*masterGraph[fromVertex]).origin() &lt;&lt; &#34;]&#34; &lt;&lt; endl;
 
         // Extra verbose output to terminal
         #ifdef VERBOSE_DEP_RES
-        std::cout &lt;&lt; &quot;   ...resolved by [&quot;&lt;&lt;(*masterGraph[fromVertex]).name()&lt;&lt;&quot;, &quot;&lt;&lt;(*masterGraph[fromVertex]).origin()&lt;&lt;&quot;]&quot;&lt;&lt;std::endl;
+        std::cout &lt;&lt; &#34;   ...resolved by [&#34;&lt;&lt;(*masterGraph[fromVertex]).name()&lt;&lt;&#34;, &#34;&lt;&lt;(*masterGraph[fromVertex]).origin()&lt;&lt;&#34;]&#34;&lt;&lt;std::endl;
         #endif
 
         // Check if we wanted to output this observable to the printer system.
@@ -1681,8 +1681,8 @@ namespace Gambit
             // Check whether fromVertex is allowed to manage loops
             if (not masterGraph[fromVertex]-&gt;canBeLoopManager())
             {
-              str errmsg = &quot;Trying to resolve dependency on loop manager with\n&quot;
-               &quot;module function that is not declared as loop manager.\n&quot;
+              str errmsg = &#34;Trying to resolve dependency on loop manager with\n&#34;
+               &#34;module function that is not declared as loop manager.\n&#34;
                + printGenericFunctorList(initVector&lt;functor*&gt;(masterGraph[fromVertex]));
               dependency_resolver_error().raise(LOCAL_INFO,errmsg);
             }
@@ -1696,15 +1696,15 @@ namespace Gambit
             (*masterGraph[toVertex]).resolveLoopManager(masterGraph[fromVertex]);
 
             // Take any dependencies of loop-managed vertices that have already been resolved,
-            // and add them as &quot;hidden&quot; dependencies to this loop manager.
+            // and add them as &#34;hidden&#34; dependencies to this loop manager.
             if (edges_to_force_on_manager.find(toVertex) != edges_to_force_on_manager.end())
             {
               for (auto it = edges_to_force_on_manager.at(toVertex).begin();
                    it != edges_to_force_on_manager.at(toVertex).end(); ++it)
               {
-                logger() &lt;&lt; &quot;Dynamically adding dependency of &quot; &lt;&lt; (*masterGraph[fromVertex]).origin()
-                         &lt;&lt; &quot;::&quot; &lt;&lt; (*masterGraph[fromVertex]).name() &lt;&lt; &quot; on &quot;
-                         &lt;&lt; (*masterGraph[*it]).origin() &lt;&lt; &quot;::&quot; &lt;&lt; (*masterGraph[*it]).name() &lt;&lt; endl;
+                logger() &lt;&lt; &#34;Dynamically adding dependency of &#34; &lt;&lt; (*masterGraph[fromVertex]).origin()
+                         &lt;&lt; &#34;::&#34; &lt;&lt; (*masterGraph[fromVertex]).name() &lt;&lt; &#34; on &#34;
+                         &lt;&lt; (*masterGraph[*it]).origin() &lt;&lt; &#34;::&#34; &lt;&lt; (*masterGraph[*it]).name() &lt;&lt; endl;
                 boost::tie(edge, ok) = add_edge(*it, fromVertex, masterGraph);
               }
             }
@@ -1718,19 +1718,19 @@ namespace Gambit
           boost::tie(edge, ok) = add_edge(fromVertex, toVertex, masterGraph);
 
           // In the case that toVertex is a nested function, add fromVertex to
-          // the edges of toVertex's loop manager.
+          // the edges of toVertex&#39;s loop manager.
           str to_lmcap = (*masterGraph[toVertex]).loopManagerCapability();
           str to_lmtype = (*masterGraph[toVertex]).loopManagerType();
           str from_lmcap = (*masterGraph[fromVertex]).loopManagerCapability();
           str from_lmtype = (*masterGraph[fromVertex]).loopManagerType();
           bool is_same_lmcap = to_lmcap == from_lmcap;
-          bool is_same_lmtype = to_lmtype == &quot;any&quot; or from_lmtype == &quot;any&quot; or to_lmtype == from_lmtype;
-          if (to_lmcap != &quot;none&quot;)
+          bool is_same_lmtype = to_lmtype == &#34;any&#34; or from_lmtype == &#34;any&#34; or to_lmtype == from_lmtype;
+          if (to_lmcap != &#34;none&#34;)
           {
             // This function runs nested.  Check if its loop manager has been resolved yet.
-            if ((*masterGraph[toVertex]).loopManagerName() == &quot;none&quot;)
+            if ((*masterGraph[toVertex]).loopManagerName() == &#34;none&#34;)
             {
-              // toVertex's loop manager has not yet been determined.
+              // toVertex&#39;s loop manager has not yet been determined.
               // Add the edge to the list to deal with when the loop manager dependency is resolved,
               // as long as toVertex and fromVertex cannot end up inside the same loop.
               if (!is_same_lmcap or !is_same_lmtype)
@@ -1742,7 +1742,7 @@ namespace Gambit
             }
             else
             {
-              // toVertex's loop manager has already been resolved.
+              // toVertex&#39;s loop manager has already been resolved.
               // If fromVertex is not the manager itself, and is not
               // itself a nested function that has the possibility to
               // end up in the same loop as toVertex, then add
@@ -1764,14 +1764,14 @@ namespace Gambit
                     if ((*masterGraph[managerVertex]).name() == name and
                         (*masterGraph[managerVertex]).origin() == origin) break;
                   }
-                  logger() &lt;&lt; &quot;Dynamically adding dependency of &quot; &lt;&lt; (*masterGraph[managerVertex]).origin()
-                           &lt;&lt; &quot;::&quot; &lt;&lt; (*masterGraph[managerVertex]).name() &lt;&lt; &quot; on &quot;
-                           &lt;&lt; (*masterGraph[fromVertex]).origin() &lt;&lt; &quot;::&quot; &lt;&lt; (*masterGraph[fromVertex]).name() &lt;&lt; endl;
+                  logger() &lt;&lt; &#34;Dynamically adding dependency of &#34; &lt;&lt; (*masterGraph[managerVertex]).origin()
+                           &lt;&lt; &#34;::&#34; &lt;&lt; (*masterGraph[managerVertex]).name() &lt;&lt; &#34; on &#34;
+                           &lt;&lt; (*masterGraph[fromVertex]).origin() &lt;&lt; &#34;::&#34; &lt;&lt; (*masterGraph[fromVertex]).name() &lt;&lt; endl;
                   boost::tie(edge, ok) = add_edge(fromVertex, managerVertex, masterGraph);
                 }
                 else
                 {
-                  core_error().raise(LOCAL_INFO, &quot;toVertex has no edges! So its loop manager hasn't been added as a dependency?!&quot;);
+                  core_error().raise(LOCAL_INFO, &#34;toVertex has no edges! So its loop manager hasn&#39;t been added as a dependency?!&#34;);
                 }
               }
             }
@@ -1779,11 +1779,11 @@ namespace Gambit
         }
         else // if output vertex
         {
-          iniEntry = findIniEntry(quantity, boundIniFile-&gt;getObservables(), &quot;ObsLike&quot;);
+          iniEntry = findIniEntry(quantity, boundIniFile-&gt;getObservables(), &#34;ObsLike&#34;);
           outInfo.vertex = fromVertex;
           outInfo.iniEntry = iniEntry;
           outputVertexInfos.push_back(outInfo);
-          // Don't need subcaps during dry-run
+          // Don&#39;t need subcaps during dry-run
           if (not boundCore-&gt;show_runorder)
           {
             Options mySubCaps = collectSubCaps(fromVertex);
@@ -1794,19 +1794,19 @@ namespace Gambit
         // If fromVertex is new, activate it
         if ( (*masterGraph[fromVertex]).status() != 2 )
         {
-          logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &quot;Activate new module function&quot; &lt;&lt; endl;
+          logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &#34;Activate new module function&#34; &lt;&lt; endl;
           masterGraph[fromVertex]-&gt;setStatus(2); // activate node
           resolveVertexBackend(fromVertex);
           resolveVertexClassLoading(fromVertex);
 
-          // Don't need options during dry-run, so skip this (just to simplify terminal output)
+          // Don&#39;t need options during dry-run, so skip this (just to simplify terminal output)
           if(not boundCore-&gt;show_runorder)
           {
-            if ( boundIniFile-&gt;getValueOrDef&lt;bool&gt;( false, &quot;dependency_resolution&quot;, &quot;use_old_routines&quot;) )
+            if ( boundIniFile-&gt;getValueOrDef&lt;bool&gt;( false, &#34;dependency_resolution&#34;, &#34;use_old_routines&#34;) )
             {
               // Generate options object from ini-file entry that corresponds to
               // fromVertex (overwrite iniEntry) and pass it to the fromVertex for later use
-              iniEntry = findIniEntry(fromVertex, boundIniFile-&gt;getRules(), &quot;Rules&quot;);
+              iniEntry = findIniEntry(fromVertex, boundIniFile-&gt;getRules(), &#34;Rules&#34;);
               if ( iniEntry != NULL )
               {
                 Options myOptions(iniEntry-&gt;options);
@@ -1842,29 +1842,29 @@ namespace Gambit
       // Digest capability of loop manager (if defined)
       str lmcap = (*masterGraph[vertex]).loopManagerCapability();
       str lmtype = (*masterGraph[vertex]).loopManagerType();
-      if (lmcap != &quot;none&quot;)
+      if (lmcap != &#34;none&#34;)
       {
-        logger() &lt;&lt; &quot;Adding module function loop manager to resolution queue:&quot; &lt;&lt; endl;
-        logger() &lt;&lt; lmcap &lt;&lt; &quot; ()&quot; &lt;&lt; endl;
+        logger() &lt;&lt; &#34;Adding module function loop manager to resolution queue:&#34; &lt;&lt; endl;
+        logger() &lt;&lt; lmcap &lt;&lt; &#34; ()&#34; &lt;&lt; endl;
         parQueue-&gt;push(QueueEntry(sspair(lmcap, lmtype), vertex, LOOP_MANAGER_DEPENDENCY, printme_default));
       }
 
       // Digest regular dependencies
       std::set&lt;sspair&gt; s = (*masterGraph[vertex]).dependencies();
-      if (s.size() &gt; 0) logger() &lt;&lt; &quot;Add dependencies of new module function to queue&quot; &lt;&lt; endl;
+      if (s.size() &gt; 0) logger() &lt;&lt; &#34;Add dependencies of new module function to queue&#34; &lt;&lt; endl;
       for (std::set&lt;sspair&gt;::iterator it = s.begin(); it != s.end(); ++it)
       {
         // If the loop manager requirement exists and is type-specific, it is a true depencency,
         // and thus appears in the output of functor.dependencies(). So, we need to take care
         // not to double-count it for entry into the parQueue.
-        if (lmcap == &quot;none&quot; or lmtype == &quot;any&quot; or lmcap != it-&gt;first or lmtype != it-&gt;second)
+        if (lmcap == &#34;none&#34; or lmtype == &#34;any&#34; or lmcap != it-&gt;first or lmtype != it-&gt;second)
         {
-          logger() &lt;&lt; it-&gt;first &lt;&lt; &quot; (&quot; &lt;&lt; it-&gt;second &lt;&lt; &quot;)&quot; &lt;&lt; endl;
+          logger() &lt;&lt; it-&gt;first &lt;&lt; &#34; (&#34; &lt;&lt; it-&gt;second &lt;&lt; &#34;)&#34; &lt;&lt; endl;
           parQueue-&gt;push(QueueEntry(*it, vertex, NORMAL_DEPENDENCY, printme_default));
         }
       }
 
-      // Tell the logger we're done here.
+      // Tell the logger we&#39;re done here.
       logger() &lt;&lt; EOM;
     }
 
@@ -1884,7 +1884,7 @@ namespace Gambit
       for (IniParser::ObservablesType::const_iterator it =
           entries.begin(); it != entries.end(); ++it)
       {
-        if ( moduleFuncMatchesIniEntry(masterGraph[toVertex], *it, *boundTEs) and it-&gt;capability != &quot;&quot; )
+        if ( moduleFuncMatchesIniEntry(masterGraph[toVertex], *it, *boundTEs) and it-&gt;capability != &#34;&#34; )
         {
           auxEntryCandidates.push_back(&amp;(*it));
         }
@@ -1892,11 +1892,11 @@ namespace Gambit
       if ( auxEntryCandidates.size() == 0 ) return NULL;
       else if ( auxEntryCandidates.size() != 1 )
       {
-        str errmsg = &quot;Found multiple &quot; + errtag + &quot; entries for &quot;;
-        errmsg += masterGraph[toVertex]-&gt;capability() +&quot; (&quot; +
-            masterGraph[toVertex]-&gt;type() + &quot;) [&quot; +
-            masterGraph[toVertex]-&gt;name() + &quot;, &quot; +
-            masterGraph[toVertex]-&gt;origin() + &quot;]&quot;;
+        str errmsg = &#34;Found multiple &#34; + errtag + &#34; entries for &#34;;
+        errmsg += masterGraph[toVertex]-&gt;capability() +&#34; (&#34; +
+            masterGraph[toVertex]-&gt;type() + &#34;) [&#34; +
+            masterGraph[toVertex]-&gt;name() + &#34;, &#34; +
+            masterGraph[toVertex]-&gt;origin() + &#34;]&#34;;
         dependency_resolver_error().raise(LOCAL_INFO, errmsg);
       }
       return auxEntryCandidates[0]; // auxEntryCandidates.size() == 1
@@ -1918,8 +1918,8 @@ namespace Gambit
       if ( obsEntryCandidates.size() == 0 ) return NULL;
       else if ( obsEntryCandidates.size() != 1 )
       {
-        str errmsg = &quot;Found multiple &quot; + errtag + &quot; entries for &quot;;
-        errmsg += quantity.first + &quot; (&quot; + quantity.second + &quot;)&quot;;
+        str errmsg = &#34;Found multiple &#34; + errtag + &#34; entries for &#34;;
+        errmsg += quantity.first + &#34; (&#34; + quantity.second + &#34;)&#34;;
         dependency_resolver_error().raise(LOCAL_INFO,errmsg);
       }
       return obsEntryCandidates[0]; // obsEntryCandidates.size() == 1
@@ -1938,33 +1938,33 @@ namespace Gambit
       if ((*masterGraph[vertex]).backendreqs().size() == 0) return;
 
       // Get started.
-      logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &quot;Doing backend function resolution...&quot; &lt;&lt; EOM;
+      logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &#34;Doing backend function resolution...&#34; &lt;&lt; EOM;
 
       // Check whether this vertex is mentioned in the inifile.
-      const IniParser::ObservableType * auxEntry = findIniEntry(vertex, boundIniFile-&gt;getRules(), &quot;Rules&quot;);
+      const IniParser::ObservableType * auxEntry = findIniEntry(vertex, boundIniFile-&gt;getRules(), &#34;Rules&#34;);
 
       // Collect the list of groups that the backend requirements of this vertex exist in.
       std::set&lt;str&gt; groups = (*masterGraph[vertex]).backendgroups();
 
       // Collect the list of orphan (i.e. groupless) backend requirements.
-      std::set&lt;sspair&gt; orphan_reqs = (*masterGraph[vertex]).backendreqs(&quot;none&quot;);
+      std::set&lt;sspair&gt; orphan_reqs = (*masterGraph[vertex]).backendreqs(&#34;none&#34;);
 
       // Loop until no further backend resolutions are possible, or no more are required.
       while ( not ( groups.empty() and orphan_reqs.empty() ) )
       {
 
-        // Loop over all groups, including the null group (group=&quot;none&quot;).
+        // Loop over all groups, including the null group (group=&#34;none&#34;).
         for (std::set&lt;str&gt;::iterator it = groups.begin(); it != groups.end(); ++it)
         {
           // Switch depending on whether this is a real group or not.
-          if (*it == &quot;none&quot;)
+          if (*it == &#34;none&#34;)
           {
             // Loop over all the orphan requirements.
             for (std::set&lt;sspair&gt;::iterator req = orphan_reqs.begin(); req != orphan_reqs.end(); ++req)
             {
               logger() &lt;&lt; LogTags::dependency_resolver;
-              logger() &lt;&lt; &quot;Resolving ungrouped requirement &quot; &lt;&lt; req-&gt;first;
-              logger() &lt;&lt; &quot; (&quot; &lt;&lt; req-&gt;second &lt;&lt; &quot;)...&quot; &lt;&lt; EOM;
+              logger() &lt;&lt; &#34;Resolving ungrouped requirement &#34; &lt;&lt; req-&gt;first;
+              logger() &lt;&lt; &#34; (&#34; &lt;&lt; req-&gt;second &lt;&lt; &#34;)...&#34; &lt;&lt; EOM;
 
               // Find a backend function that fulfills the backend requirement.
               std::set&lt;sspair&gt; reqsubset;
@@ -1988,8 +1988,8 @@ namespace Gambit
               {
                 remaining_reqs.insert(*req);
                 logger() &lt;&lt; LogTags::dependency_resolver;
-                logger() &lt;&lt; &quot;Resolution of ungrouped requirement &quot; &lt;&lt; req-&gt;first;
-                logger() &lt;&lt; &quot; (&quot; &lt;&lt; req-&gt;second &lt;&lt; &quot;) deferred until later.&quot; &lt;&lt; EOM;
+                logger() &lt;&lt; &#34;Resolution of ungrouped requirement &#34; &lt;&lt; req-&gt;first;
+                logger() &lt;&lt; &#34; (&#34; &lt;&lt; req-&gt;second &lt;&lt; &#34;) deferred until later.&#34; &lt;&lt; EOM;
               }
             }
             if (not remaining_reqs.empty()) remaining_groups.insert(*it);
@@ -1997,7 +1997,7 @@ namespace Gambit
           else
           {
             logger() &lt;&lt; LogTags::dependency_resolver;
-            logger() &lt;&lt; &quot;Resolving from group &quot; &lt;&lt; *it &lt;&lt; &quot;...&quot; &lt;&lt; EOM;
+            logger() &lt;&lt; &#34;Resolving from group &#34; &lt;&lt; *it &lt;&lt; &#34;...&#34; &lt;&lt; EOM;
 
             // Collect the list of backend requirements in this group.
             std::set&lt;sspair&gt; reqs = (*masterGraph[vertex]).backendreqs(*it);
@@ -2016,8 +2016,8 @@ namespace Gambit
             {
               remaining_groups.insert(*it);
               logger() &lt;&lt; LogTags::dependency_resolver;
-              logger() &lt;&lt; &quot;Resolution from group &quot; &lt;&lt; *it;
-              logger() &lt;&lt; &quot;deferred until later.&quot; &lt;&lt; EOM;
+              logger() &lt;&lt; &#34;Resolution from group &#34; &lt;&lt; *it;
+              logger() &lt;&lt; &#34;deferred until later.&#34; &lt;&lt; EOM;
             }
           }
         }
@@ -2059,7 +2059,7 @@ namespace Gambit
         bool entryExists = false;
 
         // Find relevant iniFile entry from Rules section
-        if ( auxEntry != NULL ) reqEntry = findIniEntry((*itf)-&gt;quantity(), (*auxEntry).backends, &quot;backend&quot;);
+        if ( auxEntry != NULL ) reqEntry = findIniEntry((*itf)-&gt;quantity(), (*auxEntry).backends, &#34;backend&#34;);
         if ( reqEntry != NULL) entryExists = true;
 
         // Look for a match to at least one backend requirement, taking into account type equivalency classes.
@@ -2086,7 +2086,7 @@ namespace Gambit
           // Is it permitted to be used to fill this backend requirement?
           // First we create the backend-version pair for the backend vertex and its semi-generic form (where any version is OK).
           sspair itf_signature((*itf)-&gt;origin(), (*itf)-&gt;version());
-          sspair itf_generic((*itf)-&gt;origin(), &quot;any&quot;);
+          sspair itf_generic((*itf)-&gt;origin(), &#34;any&#34;);
           // Then we find the set of backend-version pairs that are permitted.
           std::set&lt;sspair&gt; permitted_bes = (*masterGraph[vertex]).backendspermitted((*itf)-&gt;quantity());
           // Then we see if any match.  First we test for generic matches, where any version of any backend is allowed.
@@ -2172,7 +2172,7 @@ namespace Gambit
                 // Note that mit (the current backend req that must be filled from the same backend as the current candidate) has indeed been filled, by itf
                 other_filled = true;
                 // Note which backend mit has been filled from (i.e. where does itf come from?)
-                filled_from = (*itf)-&gt;origin() + &quot; v&quot; + (*itf)-&gt;version();
+                filled_from = (*itf)-&gt;origin() + &#34; v&#34; + (*itf)-&gt;version();
                 break;
               }
             }
@@ -2184,19 +2184,19 @@ namespace Gambit
               if (common_backend_and_version.empty()) common_backend_and_version = filled_from; // Save the filling backend
               if (filled_from != common_backend_and_version) // Something buggy has happened and the rule is already broken(!)
               {
-                str errmsg = &quot;A backend-matching rule has been violated!&quot;;
-                errmsg  += &quot;\nFound whilst checking which backends have been used&quot;
-                           &quot;\nto fill requirements with tag &quot; + *tagit + &quot; in function &quot;
-                           &quot;\n&quot; + (*masterGraph[vertex]).name() + &quot; of &quot; + (*masterGraph[vertex]).origin() + &quot;.&quot;
-                           &quot;\nOne requirement was filled from &quot; + common_backend_and_version + &quot;, &quot;
-                           &quot;\nwhereas another was filled from &quot; + filled_from + &quot;.&quot;
-                           &quot;\nThis should not happen and is probably a bug in GAMBIT.&quot;;
+                str errmsg = &#34;A backend-matching rule has been violated!&#34;;
+                errmsg  += &#34;\nFound whilst checking which backends have been used&#34;
+                           &#34;\nto fill requirements with tag &#34; + *tagit + &#34; in function &#34;
+                           &#34;\n&#34; + (*masterGraph[vertex]).name() + &#34; of &#34; + (*masterGraph[vertex]).origin() + &#34;.&#34;
+                           &#34;\nOne requirement was filled from &#34; + common_backend_and_version + &#34;, &#34;
+                           &#34;\nwhereas another was filled from &#34; + filled_from + &#34;.&#34;
+                           &#34;\nThis should not happen and is probably a bug in GAMBIT.&#34;;
                 dependency_resolver_error().raise(LOCAL_INFO,errmsg);
               }
             }
           }
           // Try to keep this candidate if it comes from the same backend as those already filled, or if none of the others are filled yet.
-          keeper = (not others_filled or common_backend_and_version == (*it)-&gt;origin() + &quot; v&quot; + (*it)-&gt;version());
+          keeper = (not others_filled or common_backend_and_version == (*it)-&gt;origin() + &#34; v&#34; + (*it)-&gt;version());
           if (not keeper) break;
         }
         if (keeper) survivingVertexCandidates.push_back(*it); else disabledVertexCandidates.push_back(*it);
@@ -2219,39 +2219,39 @@ namespace Gambit
       {
         std::ostringstream errmsg;
         errmsg
-          &lt;&lt; &quot;Found no candidates for backend requirements of &quot;
-          &lt;&lt; masterGraph[vertex]-&gt;origin() &lt;&lt; &quot;::&quot; &lt;&lt; masterGraph[vertex]-&gt;name() &lt;&lt; &quot;:\n&quot;
-          &lt;&lt; reqs &lt;&lt; &quot;\nfrom group: &quot; &lt;&lt; group;
+          &lt;&lt; &#34;Found no candidates for backend requirements of &#34;
+          &lt;&lt; masterGraph[vertex]-&gt;origin() &lt;&lt; &#34;::&#34; &lt;&lt; masterGraph[vertex]-&gt;name() &lt;&lt; &#34;:\n&#34;
+          &lt;&lt; reqs &lt;&lt; &#34;\nfrom group: &#34; &lt;&lt; group;
         if (disabledVertexCandidates.size() != 0)
         {
-          errmsg &lt;&lt; &quot;\nNote that viable candidates exist but have been disabled:\n&quot;
+          errmsg &lt;&lt; &#34;\nNote that viable candidates exist but have been disabled:\n&#34;
                  &lt;&lt;     printGenericFunctorList(disabledVertexCandidates)
                  &lt;&lt; endl
-                 &lt;&lt; &quot;Status flags:&quot; &lt;&lt; endl
-                 &lt;&lt; &quot; 1: This function is available, but the backend version is not compatible with all your requests.&quot; &lt;&lt; endl
-                 &lt;&lt; &quot; 0: This function is not compatible with any model you are scanning.&quot; &lt;&lt; endl
-                 &lt;&lt; &quot;-1: The backend that provides this function is missing.&quot; &lt;&lt; endl
-                 &lt;&lt; &quot;-2: The backend is present, but function is absent or broken.&quot; &lt;&lt; endl;
+                 &lt;&lt; &#34;Status flags:&#34; &lt;&lt; endl
+                 &lt;&lt; &#34; 1: This function is available, but the backend version is not compatible with all your requests.&#34; &lt;&lt; endl
+                 &lt;&lt; &#34; 0: This function is not compatible with any model you are scanning.&#34; &lt;&lt; endl
+                 &lt;&lt; &#34;-1: The backend that provides this function is missing.&#34; &lt;&lt; endl
+                 &lt;&lt; &#34;-2: The backend is present, but function is absent or broken.&#34; &lt;&lt; endl;
          if(printMathematicaStatus)
-            errmsg &lt;&lt; &quot;-5: The backend requires Mathematica, but Mathematica is absent.&quot; &lt;&lt; endl;
+            errmsg &lt;&lt; &#34;-5: The backend requires Mathematica, but Mathematica is absent.&#34; &lt;&lt; endl;
          if(printPythonStatus)
-            errmsg &lt;&lt; &quot;-6: The backend requires Python, but pybind11 is absent.&quot; &lt;&lt; endl;
+            errmsg &lt;&lt; &#34;-6: The backend requires Python, but pybind11 is absent.&#34; &lt;&lt; endl;
           errmsg &lt;&lt; endl
-                 &lt;&lt; &quot;Make sure to check your YAML file, especially the rules&quot; &lt;&lt; endl
-                 &lt;&lt; &quot;pertaining to backends.&quot;  &lt;&lt; endl
+                 &lt;&lt; &#34;Make sure to check your YAML file, especially the rules&#34; &lt;&lt; endl
+                 &lt;&lt; &#34;pertaining to backends.&#34;  &lt;&lt; endl
                  &lt;&lt; endl
-                 &lt;&lt; &quot;Please also check that all shared objects exist for the&quot;  &lt;&lt; endl
-                 &lt;&lt; &quot;necessary backends, and that they contain all the&quot;  &lt;&lt; endl
-                 &lt;&lt; &quot;necessary functions required for this scan.  You may&quot;  &lt;&lt; endl
-                 &lt;&lt; &quot;check the status of different backends by running&quot;  &lt;&lt; endl
-                 &lt;&lt; &quot;  ./gambit backends&quot;  &lt;&lt; endl
-                 &lt;&lt; &quot;You may also wish to check the specified search paths for each&quot; &lt;&lt; endl
-                 &lt;&lt; &quot;backend shared library in &quot;  &lt;&lt; endl;
+                 &lt;&lt; &#34;Please also check that all shared objects exist for the&#34;  &lt;&lt; endl
+                 &lt;&lt; &#34;necessary backends, and that they contain all the&#34;  &lt;&lt; endl
+                 &lt;&lt; &#34;necessary functions required for this scan.  You may&#34;  &lt;&lt; endl
+                 &lt;&lt; &#34;check the status of different backends by running&#34;  &lt;&lt; endl
+                 &lt;&lt; &#34;  ./gambit backends&#34;  &lt;&lt; endl
+                 &lt;&lt; &#34;You may also wish to check the specified search paths for each&#34; &lt;&lt; endl
+                 &lt;&lt; &#34;backend shared library in &#34;  &lt;&lt; endl;
           if (Backends::backendInfo().custom_locations_exist())
           {
-            errmsg &lt;&lt; &quot;  &quot; &lt;&lt; Backends::backendInfo().backend_locations()  &lt;&lt; endl &lt;&lt; &quot;and&quot;  &lt;&lt; endl;
+            errmsg &lt;&lt; &#34;  &#34; &lt;&lt; Backends::backendInfo().backend_locations()  &lt;&lt; endl &lt;&lt; &#34;and&#34;  &lt;&lt; endl;
           }
-          errmsg &lt;&lt; &quot;  &quot; &lt;&lt; Backends::backendInfo().default_backend_locations()  &lt;&lt; endl;
+          errmsg &lt;&lt; &#34;  &#34; &lt;&lt; Backends::backendInfo().default_backend_locations()  &lt;&lt; endl;
         }
         dependency_resolver_error().raise(LOCAL_INFO,errmsg.str());
       }
@@ -2285,11 +2285,11 @@ namespace Gambit
         }
 
         // If not, we have just one more trick up our sleeves... use the models scanned to narrow things down.
-        if (boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true, &quot;dependency_resolution&quot;, &quot;prefer_model_specific_functions&quot;))
+        if (boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true, &#34;dependency_resolution&#34;, &#34;prefer_model_specific_functions&#34;))
         {
           // Prefer backend functors that are more specifically tailored for the model being scanned. Do not
           // consider backend functors that are accessible via INTERPRET_AS_X links, as these are all considered
-          // to be equally 'far' from the model being scanned, with the 'distance' being one step further than
+          // to be equally &#39;far&#39; from the model being scanned, with the &#39;distance&#39; being one step further than
           // the most distant ancestor.
           std::vector&lt;functor*&gt; newCandidates;
           std::set&lt;str&gt; s = boundClaw-&gt;get_activemodels();
@@ -2306,32 +2306,32 @@ namespace Gambit
               // Step up a level in the model hierarchy for this model.
               *mit = boundClaw-&gt;get_parent(*mit);
             }
-            parentModelList.erase(std::remove(parentModelList.begin(), parentModelList.end(), &quot;none&quot;), parentModelList.end());
+            parentModelList.erase(std::remove(parentModelList.begin(), parentModelList.end(), &#34;none&#34;), parentModelList.end());
           }
           if (newCandidates.size() != 0) vertexCandidates = newCandidates;
         }
 
         // Still more than one candidate, so the game is up.
-        // Don't worry about too many candidates if we only want the list of required backends
+        // Don&#39;t worry about too many candidates if we only want the list of required backends
         if (vertexCandidates.size() &gt; 1 and not boundCore-&gt;show_backends)
         {
-          str errmsg = &quot;Found too many candidates for backend requirement &quot;;
-          if (reqs.size() == 1) errmsg += reqs.begin()-&gt;first + &quot; (&quot; + reqs.begin()-&gt;second + &quot;)&quot;;
-          else errmsg += &quot;group &quot; + group;
-          errmsg += &quot; of module function &quot; + masterGraph[vertex]-&gt;origin() + &quot;::&quot; + masterGraph[vertex]-&gt;name()
-           + &quot;\nViable candidates are:\n&quot; + printGenericFunctorList(vertexCandidates);
-          errmsg += &quot;\nIf you don't need all the above backends, you can resolve the ambiguity simply by&quot;;
-          errmsg += &quot;\nuninstalling the backends you don't use.&quot;;
-          errmsg += &quot;\n\nAlternatively, you can add an entry in your YAML file that selects which backend&quot;;
-          errmsg += &quot;\nthe module function &quot; + masterGraph[vertex]-&gt;origin() + &quot;::&quot; + masterGraph[vertex]-&gt;name() + &quot; should use. A YAML file entry&quot;;
-          errmsg += &quot;\nthat selects e.g. the first candidate above could read\n&quot;;
-          errmsg += &quot;\n  - capability: &quot;+masterGraph[vertex]-&gt;capability();
-          errmsg += &quot;\n    function: &quot;+masterGraph[vertex]-&gt;name();
-          errmsg += &quot;\n    backends:&quot;;
-          errmsg += &quot;\n      - {capability: &quot;+vertexCandidates.at(0)-&gt;capability()+&quot;, type: &quot;
-                                             +vertexCandidates.at(0)-&gt;type()+&quot;, backend: &quot;
-                                             +vertexCandidates.at(0)-&gt;origin()+&quot;, version: &quot;
-                                             +vertexCandidates.at(0)-&gt;version()+&quot;}\n&quot;;
+          str errmsg = &#34;Found too many candidates for backend requirement &#34;;
+          if (reqs.size() == 1) errmsg += reqs.begin()-&gt;first + &#34; (&#34; + reqs.begin()-&gt;second + &#34;)&#34;;
+          else errmsg += &#34;group &#34; + group;
+          errmsg += &#34; of module function &#34; + masterGraph[vertex]-&gt;origin() + &#34;::&#34; + masterGraph[vertex]-&gt;name()
+           + &#34;\nViable candidates are:\n&#34; + printGenericFunctorList(vertexCandidates);
+          errmsg += &#34;\nIf you don&#39;t need all the above backends, you can resolve the ambiguity simply by&#34;;
+          errmsg += &#34;\nuninstalling the backends you don&#39;t use.&#34;;
+          errmsg += &#34;\n\nAlternatively, you can add an entry in your YAML file that selects which backend&#34;;
+          errmsg += &#34;\nthe module function &#34; + masterGraph[vertex]-&gt;origin() + &#34;::&#34; + masterGraph[vertex]-&gt;name() + &#34; should use. A YAML file entry&#34;;
+          errmsg += &#34;\nthat selects e.g. the first candidate above could read\n&#34;;
+          errmsg += &#34;\n  - capability: &#34;+masterGraph[vertex]-&gt;capability();
+          errmsg += &#34;\n    function: &#34;+masterGraph[vertex]-&gt;name();
+          errmsg += &#34;\n    backends:&#34;;
+          errmsg += &#34;\n      - {capability: &#34;+vertexCandidates.at(0)-&gt;capability()+&#34;, type: &#34;
+                                             +vertexCandidates.at(0)-&gt;type()+&#34;, backend: &#34;
+                                             +vertexCandidates.at(0)-&gt;origin()+&#34;, version: &#34;
+                                             +vertexCandidates.at(0)-&gt;version()+&#34;}\n&#34;;
           dependency_resolver_error().raise(LOCAL_INFO,errmsg);
         }
       }
@@ -2369,8 +2369,8 @@ namespace Gambit
     {
       (*masterGraph[vertex]).resolveBackendReq(func);
       logger() &lt;&lt; LogTags::dependency_resolver;
-      logger() &lt;&lt; &quot;Resolved by: [&quot; &lt;&lt; func-&gt;name() &lt;&lt; &quot;, &quot;;
-      logger() &lt;&lt; func-&gt;origin() &lt;&lt; &quot; (&quot; &lt;&lt; func-&gt;version() &lt;&lt; &quot;)]&quot;;
+      logger() &lt;&lt; &#34;Resolved by: [&#34; &lt;&lt; func-&gt;name() &lt;&lt; &#34;, &#34;;
+      logger() &lt;&lt; func-&gt;origin() &lt;&lt; &#34; (&#34; &lt;&lt; func-&gt;version() &lt;&lt; &#34;)]&#34;;
       logger() &lt;&lt; EOM;
     }
 
@@ -2380,11 +2380,11 @@ namespace Gambit
       // If there are no backend class loading requirements, and thus nothing to do, return.
       if ((*masterGraph[vertex]).backendclassloading().size() == 0) return;
 
-      // If the backend is not present, this vertex has already been disabled, so from now just assume it hasn't
-      // Unless the list of required backends is requested, in which case it is enabled, but it won't run a scan, so no worries
+      // If the backend is not present, this vertex has already been disabled, so from now just assume it hasn&#39;t
+      // Unless the list of required backends is requested, in which case it is enabled, but it won&#39;t run a scan, so no worries
 
       // Add to the logger
-      logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &quot;Doing backend class loading resolution...&quot; &lt;&lt; EOM;
+      logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &#34;Doing backend class loading resolution...&#34; &lt;&lt; EOM;
 
       // Add the backends to list of required backends
       std::vector&lt;sspair&gt; resolvedBackends;
@@ -2418,7 +2418,7 @@ namespace Gambit
       // Get the keys for the required backends
       for(auto backend : backendsRequired)
       {
-        str bibkey = &quot;&quot;;
+        str bibkey = &#34;&#34;;
 
         // Run over references of loaded backends
         for(auto beref : boundCore-&gt;getBackendCitationKeys())
@@ -2428,19 +2428,19 @@ namespace Gambit
           if (backend[0].first == origin and backend[0].second == version)
           {
             bibkey = beref.second;
-            if (bibkey != &quot;&quot; and bibkey != &quot;REFERENCE&quot;)
+            if (bibkey != &#34;&#34; and bibkey != &#34;REFERENCE&#34;)
             {
-              logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &quot;Found bibkey for backend &quot; &lt;&lt; origin &lt;&lt; &quot; version &quot; &lt;&lt; version &lt;&lt; &quot;: &quot; &lt;&lt; bibkey &lt;&lt; EOM;
+              logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &#34;Found bibkey for backend &#34; &lt;&lt; origin &lt;&lt; &#34; version &#34; &lt;&lt; version &lt;&lt; &#34;: &#34; &lt;&lt; bibkey &lt;&lt; EOM;
               BibTeX::addCitationKey(citationKeys, bibkey);
             }
           }
         }
-        if (bibkey == &quot;&quot; or bibkey == &quot;REFERENCE&quot;)
+        if (bibkey == &#34;&#34; or bibkey == &#34;REFERENCE&#34;)
         {
           std::ostringstream errmsg;
-          errmsg &lt;&lt; &quot;Missing reference for backend &quot; &lt;&lt; backend[0].first &lt;&lt; &quot;(&quot; &lt;&lt; backend[0].second &lt;&lt; &quot;).&quot; &lt;&lt; endl;
-          errmsg &lt;&lt; &quot;Please add the bibkey to the frontend header, and full bibtex entry to &quot;;
-          errmsg &lt;&lt; boundIniFile-&gt;getValueOrDef&lt;str&gt;(&quot;config/bibtex_entries.bib&quot;, &quot;dependecy_resolution&quot;, &quot;bibtex_file_location&quot;) &lt;&lt; &quot;.&quot; &lt;&lt; endl;
+          errmsg &lt;&lt; &#34;Missing reference for backend &#34; &lt;&lt; backend[0].first &lt;&lt; &#34;(&#34; &lt;&lt; backend[0].second &lt;&lt; &#34;).&#34; &lt;&lt; endl;
+          errmsg &lt;&lt; &#34;Please add the bibkey to the frontend header, and full bibtex entry to &#34;;
+          errmsg &lt;&lt; boundIniFile-&gt;getValueOrDef&lt;str&gt;(&#34;config/bibtex_entries.bib&#34;, &#34;dependecy_resolution&#34;, &#34;bibtex_file_location&#34;) &lt;&lt; &#34;.&#34; &lt;&lt; endl;
           dependency_resolver_error().raise(LOCAL_INFO,errmsg.str());
         }
       }
@@ -2470,7 +2470,7 @@ namespace Gambit
           }
 
           // Add citation key for specific module functions
-          if(masterGraph[*vi2]-&gt;citationKey() != &quot;&quot;)
+          if(masterGraph[*vi2]-&gt;citationKey() != &#34;&#34;)
           {
             BibTeX::addCitationKey(citationKeys, masterGraph[*vi2]-&gt;citationKey());
           }
@@ -2484,7 +2484,7 @@ namespace Gambit
   }
 
 }
-</code></pre><hr><p>Updated on 2022-08-10 at 17:51:36 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://www.netlify.com/>Netlify</a>, <a class=text-muted href=https://gohugo.io/>Hugo</a>, and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin=anonymous defer></script>
-<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
-<script src=/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.github.io/index.min.1e0f859443ac81a8b8c357ddfae5d899d83ab224e24e44c1c9620a99f2a527d70a1676148a868f87f22fb67994386d592e508dafb575df7c2b80d97f143ad1ea.js integrity="sha512-Hg+FlEOsgai4w1fd+uXYmdg6siTiTkTByWIKmfKlJ9cKFnYUioaPh/IvtnmUOG1ZLlCNr7V133wrgNl/FDrR6g==" crossorigin=anonymous defer></script></body></html>
+</code></pre><hr/><p>Updated on 2022-08-10 at 17:51:36 +0000</p></main></div></div></div><footer class="footer text-muted"><div class="container-xxl"><div class="row"><div class="col-lg-8 order-last order-lg-first"><ul class="list-inline"><li class="list-inline-item">Powered by <a class="text-muted" href="https://www.netlify.com/">Netlify</a>, <a class="text-muted" href="https://gohugo.io/">Hugo</a>, and <a class="text-muted" href="https://getdoks.org/">Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class="list-inline"><li class="list-inline-item"><a href="/license/">License</a></li></ul></div></div></div></footer><script src="/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js" integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin="anonymous" defer=""></script>
+<script src="/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js" integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin="anonymous" defer=""></script>
+<script src="/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js" integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin="anonymous" defer=""></script>
+<script src="https://gambitbsm.github.io/index.min.1e0f859443ac81a8b8c357ddfae5d899d83ab224e24e44c1c9620a99f2a527d70a1676148a868f87f22fb67994386d592e508dafb575df7c2b80d97f143ad1ea.js" integrity="sha512-Hg+FlEOsgai4w1fd+uXYmdg6siTiTkTByWIKmfKlJ9cKFnYUioaPh/IvtnmUOG1ZLlCNr7V133wrgNl/FDrR6g==" crossorigin="anonymous" defer=""></script></body></html>
