@@ -1,17 +1,17 @@
-<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><link rel="preload" as="font" href="https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2" type="font/woff2" crossorigin=""/><link rel="preload" as="font" href="https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2" type="font/woff2" crossorigin=""/><link rel="preload" as="font" href="https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2" type="font/woff2" crossorigin=""/><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel="stylesheet" href="https://gambitbsm.github.io/main.e60a30503f41dfe2a8e849eba3bb572667400d7915356bae7eff31d3e22e4492fc8c0b2ff150168b1139b9c0caad1a20c84c8957336bcc2bba8559379cc39f91.css" integrity="sha512-5gowUD9B3+Ko6Enro7tXJmdADXkVNWuufv8x0+IuRJL8jAsv8VAWixE5ucDKrRogyEyJVzNrzCu6hVk3nMOfkQ==" crossorigin="anonymous"/><noscript><style>img.lazyload{display:none}</style></noscript><meta name="robots" content="index, follow"/><meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><title>file modules/BOSS/modules/utils.py - GAMBIT</title><meta name="description" content="[No description available]"/><link rel="canonical" href="https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/"/><meta property="og:locale" content="en_US"/><meta property="og:type" content="article"/><meta property="og:title" content="file modules/BOSS/modules/utils.py"/><meta property="og:description" content="[No description available]"/><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/"/><meta property="og:site_name" content="GAMBIT"/><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"/><meta property="og:image:alt" content="GAMBIT"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content=""/><meta name="twitter:creator" content=""/><meta name="twitter:title" content="file modules/BOSS/modules/utils.py"/><meta name="twitter:description" content="[No description available]"/><meta name="twitter:image" content="https://gambitbsm.github.io/gambit_logo.png"/><meta name="twitter:image:alt" content="file modules/BOSS/modules/utils.py"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/","name":"file modules\/BOSS\/modules\/utils.py","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/","name":"Gambit 2 2"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file modules\/BOSS\/modules\/utils.py"}]}]}</script><meta name="theme-color" content="#fff"/><link rel="icon" href="https://gambitbsm.github.io/favicon.ico" sizes="any"/><link rel="icon" type="image/svg+xml" href="https://gambitbsm.github.io/favicon.svg"/><link rel="apple-touch-icon" sizes="180x180" href="https://gambitbsm.github.io/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="https://gambitbsm.github.io/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="https://gambitbsm.github.io/favicon-16x16.png"/><link rel="manifest" crossorigin="use-credentials" href="https://gambitbsm.github.io/site.webmanifest"/></head><body class="documentation single light"><div class="sticky-top"><div class="header-bar"></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href="https://gambitbsm.github.io/" aria-label="GAMBIT"><img class="logo-light" src="https://gambitbsm.github.io//images/gambit_logo.png" width="50px"/>
-<img class="logo-dark d-none" src="https://gambitbsm.github.io//images/gambit_logo.png" width="50px"/>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.460c2c97222a1414eb6991cee7baaf592765562aa4d30f1a5ceaa4e2346027793a5d1d0bde728c5b9ca87f8d1ebcf085d2dd89802870dce59dc751d9941903ca.css integrity="sha512-RgwslyIqFBTraZHO57qvWSdlViqk0w8aXOqk4jRgJ3k6XR0L3nKMW5yof40evPCF0t2JgChw3OWdx1HZlBkDyg==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file modules/BOSS/modules/utils.py - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file modules/BOSS/modules/utils.py"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file modules/BOSS/modules/utils.py"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file modules/BOSS/modules/utils.py"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/","name":"file modules\/BOSS\/modules\/utils.py","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/","name":"Gambit 2 2"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/","url":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/","name":"Files"}},{"@type":"ListItem","position":6,"item":{"@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/gambit_2-2/files/boss_2modules_2utils_8py/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file modules\/BOSS\/modules\/utils.py"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
 GAMBIT</a>
-<button class="btn btn-menu order-2 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel"><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="/">GAMBIT</a></h2><button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentation
-<span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item" href="/documentation/installation/introduction/">Installation</a></li><li><a class="dropdown-item" href="/documentation/examples/colliderbit_example">Examples</a></li><li><a class="dropdown-item" href="/documentation/help/faqs/">Help</a></li><li><a class="dropdown-item" href="/documentation/code/gambit_2-2/index_classes">Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Community
-<span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item" href="/community/publications/">Publications</a></li><li><a class="dropdown-item" href="/community/talks/">Talks</a></li><li><a class="dropdown-item" href="/community/members/">Members</a></li><li><a class="dropdown-item active" href="/community/code_of_conduct/" aria-current="true">Code of Conduct</a></li><li><a class="dropdown-item" href="/community/contact/">Contact</a></li></ul></li><li class="nav-item"><a class="nav-link ps-0 py-1" href="/wiki/general/homepage/">Wiki</a></li></ul><hr class="text-black-50 my-4 d-lg-none"/><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id="search" class="form-control is-search" type="search" placeholder="Search site..." aria-label="Search site..." autocomplete="off"/><div id="suggestions" class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"/><ul class="nav flex-column flex-lg-row"><li class="nav-item"><a class="nav-link social-link" href="https://github.com/GambitBSM"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"></path></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"/><button id="mode" class="btn btn-link" type="button" aria-label="Toggle user interface mode">
-<span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg></span><span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role="document"><div class="content"><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class="docs-links" aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class="mb-1"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-installation" aria-expanded="false">
-Installation</button><div class="collapse" id="section-installation"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href="/documentation/installation/introduction/">Getting Started</a></li><li><a class="docs-link rounded" href="/documentation/installation/docker_usage/">Docker Usage</a></li><li><a class="docs-link rounded" href="/documentation/installation/installation_for_linux/">Installation for Linux</a></li><li><a class="docs-link rounded" href="/documentation/installation/installation_for_windows/">Installation for Windows</a></li><li><a class="docs-link rounded" href="/documentation/installation/installation_for_macos/">Installation for macOS</a></li></ul></div></li><li class="mb-1"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-examples" aria-expanded="false">
-Examples</button><div class="collapse" id="section-examples"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href="/documentation/examples/colliderbit_example/">ColliderBit Example</a></li><li><a class="docs-link rounded" href="/documentation/examples/anotherbit/">AnotherBit</a></li><li><a class="docs-link rounded" href="/documentation/examples/anotherbit2/">AnotherBit2</a></li></ul></div></li><li class="mb-1"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-help" aria-expanded="false">
-Help</button><div class="collapse" id="section-help"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href="/documentation/help/faqs/">FAQs</a></li><li><a class="docs-link rounded" href="/documentation/help/compiler_matrix/">Compiler Matrix</a></li><li><a class="docs-link rounded" href="/documentation/help/known_issues/">Known Issues</a></li><li><a class="docs-link rounded" href="/documentation/help/configuration_examples/">Configuration Examples</a></li></ul></div></li><li class="mb-1"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-code" aria-expanded="true">
-Code Reference</button><div class="collapse show" id="section-code"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-gambit_2-2" aria-expanded="true">
-<font style="color: #5d2f86;" size="-6">release</font>   gambit 2-2</button><div class="collapse show" id="section-gambit_2-2"><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href="/documentation/code/gambit_2-2/index_classes/">Classes</a></li><li><a class="docs-link rounded" href="/documentation/code/gambit_2-2/index_files/">Files</a></li><li><a class="docs-link rounded" href="/documentation/code/gambit_2-2/index_pages/">Pages</a></li><li><a class="docs-link rounded" href="/documentation/code/gambit_2-2/index_namespaces/">Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class="d-xl-none"><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#onThisPage" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle On this page navigation">
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/faqs/>Help</a></li><li><a class=dropdown-item href=/documentation/code/gambit_2-2/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li><li class=nav-item><a class="nav-link ps-0 py-1" href=/wiki/general/homepage/>Wiki</a></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/faqs/>FAQs</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=true>
+Code Reference</button><div class="collapse show" id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li class="my-1 ms-3"><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-gambit_2-2 aria-expanded=true>
+<font style="color: #5d2f86;" size=-6>release</font> &nbsp; gambit 2-2</button><div class="collapse show" id=section-gambit_2-2><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/gambit_2-2/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2-2/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2-2/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/gambit_2-2/index_namespaces/>Namespaces</a></li></ul></div></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg></span></button><div class="collapse" id="onThisPage"><div class="card card-body mt-3 py-1"><div class="page-links"><nav id="TableOfContents"><ul><li><ul><li><a href="#namespaces">Namespaces</a></li><li><a href="#source-code">Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id="TableOfContents"><ul><li><ul><li><a href="#namespaces">Namespaces</a></li><li><a href="#source-code">Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/documentation/">Documentation</a></li><li class="breadcrumb-item"><a href="/documentation/code/">Code Reference</a></li><li class="breadcrumb-item"><a href="/documentation/code/gambit_2-2/">gambit_2-2</a></li><li class="breadcrumb-item active" aria-current="page">file modules/BOSS/modules/utils.py</li></ol></nav><h1>file modules/BOSS/modules/utils.py</h1><p class="lead"></p><p>[No description available]</p><h2 id="namespaces">Namespaces <a href="#namespaces" class="anchor" aria-hidden="true">#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href="/documentation/code/gambit_2-2/namespaces/namespacemodules/">modules</a></strong></td></tr><tr><td><strong><a href="/documentation/code/gambit_2-2/namespaces/namespacemodules_1_1utils/">modules::utils</a></strong></td></tr></tbody></table><h2 id="source-code">Source code <a href="#source-code" class="anchor" aria-hidden="true">#</a></h2><pre><code>################################
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#source-code>Source code</a></li></ul></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class=breadcrumb-item><a href=/documentation/code/gambit_2-2/>gambit_2-2</a></li><li class="breadcrumb-item active" aria-current=page>file modules/BOSS/modules/utils.py</li></ol></nav><h1>file modules/BOSS/modules/utils.py</h1><p class=lead></p><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/gambit_2-2/namespaces/namespacemodules/>modules</a></strong></td></tr><tr><td><strong><a href=/documentation/code/gambit_2-2/namespaces/namespacemodules_1_1utils/>modules::utils</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>################################
 #                              #
 #  Utility functions for BOSS  #
 #                              #
@@ -25,7 +25,7 @@ import os
 import copy
 
 import modules.active_cfg as active_cfg
-exec(&#34;import configs.&#34; + active_cfg.module_name + &#34; as cfg&#34;)
+exec(&quot;import configs.&quot; + active_cfg.module_name + &quot; as cfg&quot;)
 
 import modules.gb as gb
 import subprocess
@@ -43,7 +43,7 @@ def isComplete(class_el):
     is_complete = True
 
     # Check that class is complete (not only forward declared):
-    if (&#39;incomplete&#39; in class_el.keys()) and (class_el.get(&#39;incomplete&#39;) == &#39;1&#39;):
+    if ('incomplete' in class_el.keys()) and (class_el.get('incomplete') == '1'):
         is_complete = False
 
     return is_complete
@@ -60,8 +60,8 @@ def isLoadable(class_el, print_warning=False, check_pure_virtual_members=True):
 
     is_loadable = True
 
-    # - Any loadable class should have a &#34;name&#34; XML entry
-    if not &#39;name&#39; in class_el.keys():
+    # - Any loadable class should have a &quot;name&quot; XML entry
+    if not 'name' in class_el.keys():
         is_loadable = False
         return is_loadable
 
@@ -69,7 +69,7 @@ def isLoadable(class_el, print_warning=False, check_pure_virtual_members=True):
 
 
     # - Check if class should be ditched. If yes, return right away.
-    if class_name[&#39;long_templ&#39;] in cfg.ditch:
+    if class_name['long_templ'] in cfg.ditch:
         is_loadable = False
         return is_loadable
 
@@ -77,16 +77,16 @@ def isLoadable(class_el, print_warning=False, check_pure_virtual_members=True):
     if isTemplateClass(class_el):
         is_loadable = False
         if print_warning:
-            reason = &#34;This is a template class. BOSS cannot yet handle this.&#34;
-            infomsg.ClassNotLoadable(class_name[&#39;long_templ&#39;], reason).printMessage()
+            reason = &quot;This is a template class. BOSS cannot yet handle this.&quot;
+            infomsg.ClassNotLoadable(class_name['long_templ'], reason).printMessage()
         return is_loadable
 
     # - Check that class is complete (not only forward declared).
     if not isComplete(class_el):
         is_loadable = False
         if print_warning:
-            reason = &#34;Class is incomplete, at least based on XML file %s&#34; % (gb.xml_file_name)
-            infomsg.ClassNotLoadable(class_name[&#39;long_templ&#39;], reason).printMessage()
+            reason = &quot;Class is incomplete, at least based on XML file %s&quot; % (gb.xml_file_name)
+            infomsg.ClassNotLoadable(class_name['long_templ'], reason).printMessage()
         return is_loadable
 
     # - Check that class has at least one public constructor.
@@ -94,15 +94,15 @@ def isLoadable(class_el, print_warning=False, check_pure_virtual_members=True):
     if len(constructor_elements) == 0:
         is_loadable = False
         if print_warning:
-            reason = &#34;No (acceptable) public constructors identified.&#34;
-            infomsg.ClassNotLoadable(class_name[&#39;long_templ&#39;], reason).printMessage()
+            reason = &quot;No (acceptable) public constructors identified.&quot;
+            infomsg.ClassNotLoadable(class_name['long_templ'], reason).printMessage()
         return is_loadable
 
     # - Check for pure virtual members.
     if check_pure_virtual_members:
         pure_virtual_members = classutils.pureVirtualMembers(class_el)
         if len(pure_virtual_members) &gt; 0:
-            gb.contains_pure_virtual_members.append(class_name[&#39;long_templ&#39;])
+            gb.contains_pure_virtual_members.append(class_name['long_templ'])
 
     return is_loadable
 
@@ -116,7 +116,7 @@ def isFundamental(el):
 
     is_fundamental = False
 
-    if el.tag == &#39;FundamentalType&#39;:
+    if el.tag == 'FundamentalType':
         is_fundamental = True
 
     return is_fundamental
@@ -134,10 +134,10 @@ def isKnownClass(el, class_name=None):
     is_known = False
 
     type_dict = findType(el)
-    type_el = type_dict[&#39;el&#39;]
+    type_el = type_dict['el']
 
-    # - Any known class should have a &#34;name&#34; XML entry
-    if not &#39;name&#39; in type_el.keys():
+    # - Any known class should have a &quot;name&quot; XML entry
+    if not 'name' in type_el.keys():
         is_known = False
         return is_known
 
@@ -151,9 +151,9 @@ def isKnownClass(el, class_name=None):
         return is_known
 
     # Check if listed among the user-specified known types
-    if isInList(class_name[&#39;long_templ&#39;], cfg.known_classes.keys(), return_index=False, ignore_whitespace=True):
+    if isInList(class_name['long_templ'], cfg.known_classes.keys(), return_index=False, ignore_whitespace=True):
         is_known = True
-    elif isInList(class_name[&#39;long&#39;], cfg.known_classes.keys(), return_index=False, ignore_whitespace=True):
+    elif isInList(class_name['long'], cfg.known_classes.keys(), return_index=False, ignore_whitespace=True):
         is_known = True
 
     return is_known
@@ -172,7 +172,7 @@ def isTemplateClass(class_el):
 
     class_name = classutils.getClassNameDict(class_el)
 
-    if &#39;&lt;&#39; in class_name[&#39;long_templ&#39;]:
+    if '&lt;' in class_name['long_templ']:
         is_template = True
 
     return is_template
@@ -192,7 +192,7 @@ def isTemplateFunction(func_el):
 
     func_name = funcutils.getFunctionNameDict(func_el)
 
-    if &#39;&lt;&#39; in func_name[&#39;long_templ&#39;]:
+    if '&lt;' in func_name['long_templ']:
         is_template = True
 
     return is_template
@@ -208,7 +208,7 @@ def isEnumeration(el):
 
     is_enumeration = False
 
-    if el.tag == &#39;Enumeration&#39;:
+    if el.tag == 'Enumeration':
         is_enumeration = True
 
     return is_enumeration
@@ -224,23 +224,23 @@ def isNative(el):
     # Makes use of global variables:  base_paths
 
     is_native = False
-    can_check_tags = [&#39;Class&#39;, &#39;Constructor&#39;, &#39;Converter&#39;, &#39;Destructor&#39;, &#39;Enumeration&#39;,
-                      &#39;Field&#39;, &#39;File&#39;, &#39;Function&#39;, &#39;Method&#39;, &#39;OperatorFunction&#39;,
-                      &#39;OperatorMethod&#39;, &#39;Struct&#39;, &#39;Typedef&#39;, &#39;Union&#39;, &#39;Variable&#39;]
+    can_check_tags = ['Class', 'Constructor', 'Converter', 'Destructor', 'Enumeration',
+                      'Field', 'File', 'Function', 'Method', 'OperatorFunction',
+                      'OperatorMethod', 'Struct', 'Typedef', 'Union', 'Variable']
 
-    cannot_check_tags = [&#39;Unimplemented&#39;]
+    cannot_check_tags = ['Unimplemented']
 
-    if el.tag == &#39;FundamentalType&#39;:
+    if el.tag == 'FundamentalType':
         is_native = False
 
     elif el.tag in can_check_tags:
 
-        if el.tag == &#39;File&#39;:
+        if el.tag == 'File':
             file_el = el
         else:
-            file_el = gb.id_dict[el.get(&#39;file&#39;)]
+            file_el = gb.id_dict[el.get('file')]
 
-        check_path = file_el.get(&#39;name&#39;)
+        check_path = file_el.get('name')
 
         is_native = False
         for accepted_path in cfg.base_paths:
@@ -252,7 +252,7 @@ def isNative(el):
         pass
 
     else:
-        raise Exception(&#39;Cannot check whether XML element with id=&#34;%s&#34; and tag &#34;%s&#34; is native.&#39; % (el.get(&#39;id&#39;), el.tag))
+        raise Exception('Cannot check whether XML element with id=&quot;%s&quot; and tag &quot;%s&quot; is native.' % (el.get('id'), el.tag))
 
     return is_native
 
@@ -267,19 +267,19 @@ def isStdType(el, class_name=None):
     # Makes use of global variables:  base_paths
 
     is_std = False
-    can_check_tags = [&#39;Class&#39;, &#39;Struct&#39;, &#39;Union&#39;, &#39;Enumeration&#39;]
+    can_check_tags = ['Class', 'Struct', 'Union', 'Enumeration']
 
     if el.tag in can_check_tags:
 
         # Use the optional class_name dict?
         if class_name is not None:
-            if len(class_name[&#39;long_templ&#39;]) &gt;= 5:
-                if class_name[&#39;long_templ&#39;][0:5] == &#39;std::&#39;:
+            if len(class_name['long_templ']) &gt;= 5:
+                if class_name['long_templ'][0:5] == 'std::':
                     is_std = True
 
-        elif &#39;name&#39; in el.keys():
+        elif 'name' in el.keys():
             namespaces_list = getNamespaces(el, include_self=True)
-            if namespaces_list[0] == &#39;std&#39;:
+            if namespaces_list[0] == 'std':
                 is_std = True
 
     else:
@@ -297,7 +297,7 @@ def isConstFunction(func_el):
 
     is_const_func = False
 
-    if (&#39;const&#39; in func_el.keys()) and (func_el.get(&#39;const&#39;)==&#39;1&#39;):
+    if ('const' in func_el.keys()) and (func_el.get('const')=='1'):
         is_const_func = True
 
     return is_const_func
@@ -310,10 +310,10 @@ def isConstFunction(func_el):
 
 def getTemplateBracket(el):
 
-    src_file_name = gb.id_dict[el.get(&#39;file&#39;)].get(&#39;name&#39;)
-    line_number   = int(el.get(&#39;line&#39;))
+    src_file_name = gb.id_dict[el.get('file')].get('name')
+    line_number   = int(el.get('line'))
 
-    f = open(src_file_name, &#39;r&#39;)
+    f = open(src_file_name, 'r')
     file_content = f.read()
     f.close()
     file_content_nocomments = removeComments(file_content, insert_blanks=True)
@@ -322,11 +322,11 @@ def getTemplateBracket(el):
     count = 0
     prev_pos = 0
     for index,char in enumerate(file_content_nocomments):
-        if char==&#39;\n&#39;:
+        if char=='\n':
             count += 1
         if count == line_number:
             break
-        if char==&#39;\n&#39;:         # STUPID HACK
+        if char=='\n':         # STUPID HACK
             prev_pos = index
 
     newline_pos = index
@@ -336,29 +336,29 @@ def getTemplateBracket(el):
     search_content = file_content_nocomments[:newline_pos]
 
     start_pos = 0
-    end_pos = search_content.rfind(&#39;&gt;&#39;)
+    end_pos = search_content.rfind('&gt;')
     if end_pos != -1:
         balance = -1
         for i in range(end_pos-1, -1, -1):
             char = search_content[i]
-            if char == &#39;&gt;&#39;:
+            if char == '&gt;':
                 balance -= 1
-            elif char == &#39;&lt;&#39;:
+            elif char == '&lt;':
                 balance += 1
             if (balance == 0):
                 start_pos = i
                 break
         template_bracket = search_content[start_pos:end_pos+1]
     else:
-        template_bracket = &#39;&lt;&gt;&#39;
+        template_bracket = '&lt;&gt;'
 
-    # print(&#39;TEMPLATE BRACKET: &#39;, template_bracket)
+    # print('TEMPLATE BRACKET: ', template_bracket)
 
     # Isolate only the template variable names (last word in each entry)
-    if template_bracket == &#39;&lt;&gt;&#39;:
+    if template_bracket == '&lt;&gt;':
         temp_var_list = []
     else:
-        temp_var_list = template_bracket[1:-1].split(&#39;,&#39;)
+        temp_var_list = template_bracket[1:-1].split(',')
         temp_var_list = [ e.strip() for e in temp_var_list]
         temp_var_list = [ e.split()[-1] for e in temp_var_list]
 
@@ -382,33 +382,33 @@ def getSpecTemplateTypes(input_type, byname=False):
         el = input_type
 
         # Classes and functions must be treated differently
-        if el.tag in [&#39;Class&#39;, &#39;Struct&#39;]:
-            input_name = el.get(&#39;name&#39;)
-        elif el.tag in [&#39;Function&#39;, &#39;Method&#39;, &#39;OperatorMethod&#39;, &#39;OperatorFunction&#39;]:
+        if el.tag in ['Class', 'Struct']:
+            input_name = el.get('name')
+        elif el.tag in ['Function', 'Method', 'OperatorMethod', 'OperatorFunction']:
             namespaces_list = getNamespaces(el, include_self=True)
-            input_name = &#39;::&#39;.join(namespaces_list)
+            input_name = '::'.join(namespaces_list)
         else:
-            raise Exception(&#34;Don&#39;t know how to get template types from XML element with tag: %s&#34; % el.tag)
+            raise Exception(&quot;Don't know how to get template types from XML element with tag: %s&quot; % el.tag)
 
     # Standardize the spacing between template brackets to simplify the parsing
-    while &#34;&lt;&lt;&#34; in input_name:
-        input_name = input_name.replace(&#34;&lt;&lt;&#34;, &#34;&lt; &lt;&#34;)
-    while &#34;&gt;&gt;&#34; in input_name:
-        input_name = input_name.replace(&#34;&gt;&gt;&#34;, &#34;&gt; &gt;&#34;)
+    while &quot;&lt;&lt;&quot; in input_name:
+        input_name = input_name.replace(&quot;&lt;&lt;&quot;, &quot;&lt; &lt;&quot;)
+    while &quot;&gt;&gt;&quot; in input_name:
+        input_name = input_name.replace(&quot;&gt;&gt;&quot;, &quot;&gt; &gt;&quot;)
 
     input_name_no_templ, templ_bracket = removeTemplateBracket(input_name, return_bracket=True)
-    spec_types = templ_bracket.strip().lstrip(&#39;&lt;&#39;).rstrip(&#39;&gt;&#39;).strip()
+    spec_types = templ_bracket.strip().lstrip('&lt;').rstrip('&gt;').strip()
 
     # Identify the correct commas
     pos = []
     balance = 0
     for i,c in enumerate(spec_types):
-        if c == &#39;&lt;&#39;:
+        if c == '&lt;':
             balance += 1
-        if c == &#39;&gt;&#39;:
+        if c == '&gt;':
             balance -= 1
 
-        if (balance==0) and (c == &#39;,&#39;):
+        if (balance==0) and (c == ','):
             pos.append(i)
 
     # Construct list of arguments
@@ -420,7 +420,7 @@ def getSpecTemplateTypes(input_type, byname=False):
     spec_types_list.append(spec_types[prev_p:].strip())
 
     # Return result
-    if spec_types_list == [&#39;&#39;]:
+    if spec_types_list == ['']:
         return []
     else:
         return spec_types_list
@@ -434,16 +434,16 @@ def getSpecTemplateTypes(input_type, byname=False):
 def unpackAllSpecTemplateTypes(input_bracket, result_list):
 
     # # Help subsequent parsing by standardizing the spacing between template brackets
-    # while &#34;&lt;&lt;&#34; in input_bracket:
-    #     input_bracket = input_bracket.replace(&#34;&lt;&lt;&#34;, &#34;&lt; &lt;&#34;)
-    # while &#34;&gt;&gt;&#34; in input_bracket:
-    #     input_bracket = input_bracket.replace(&#34;&gt;&gt;&#34;, &#34;&gt; &gt;&#34;)
+    # while &quot;&lt;&lt;&quot; in input_bracket:
+    #     input_bracket = input_bracket.replace(&quot;&lt;&lt;&quot;, &quot;&lt; &lt;&quot;)
+    # while &quot;&gt;&gt;&quot; in input_bracket:
+    #     input_bracket = input_bracket.replace(&quot;&gt;&gt;&quot;, &quot;&gt; &gt;&quot;)
 
     spec_types = getSpecTemplateTypes(input_bracket, byname=True)
 
     for type_name in spec_types:
 
-        if &#39;&lt;&#39; in type_name:
+        if '&lt;' in type_name:
             result_list.append(type_name)
             unpackAllSpecTemplateTypes(type_name, result_list=result_list)
         else:
@@ -463,7 +463,7 @@ def getAllTemplateTypes(type_name):
 
         namespace, short_type_name = removeNamespace(current_type_name, return_namespace=True)
         type_name_parts.append(short_type_name)
-        if namespace == &#34;&#34;:
+        if namespace == &quot;&quot;:
             break
         else:
             current_type_name = namespace
@@ -483,32 +483,32 @@ def getAllTemplateTypes(type_name):
 def getBasicTypeName(type_name):
 
     # If type name contains a template brackets
-    if &#39;&lt;&#39; in type_name:
+    if '&lt;' in type_name:
 
         type_name_notempl, templ_bracket = removeTemplateBracket(type_name, return_bracket=True)
         before_bracket, after_bracket = type_name.rsplit(templ_bracket,1)
 
-        if (len(after_bracket) &gt; 0) and (after_bracket[0] == &#39; &#39;):
+        if (len(after_bracket) &gt; 0) and (after_bracket[0] == ' '):
             space_after_bracket = True
         else:
             space_after_bracket = False
 
         # Remove asterix and/or ampersand
-        before_bracket = before_bracket.replace(&#39;*&#39;, &#39;&#39;).replace(&#39;&amp;&#39;, &#39;&#39;)
-        after_bracket  = after_bracket.replace(&#39;*&#39;, &#39;&#39;).replace(&#39;&amp;&#39;, &#39;&#39;)
+        before_bracket = before_bracket.replace('*', '').replace('&amp;', '')
+        after_bracket  = after_bracket.replace('*', '').replace('&amp;', '')
 
-        # Remove &#39;const&#39; and &#39;volatile&#39;
+        # Remove 'const' and 'volatile'
         before_bracket_list = before_bracket.split()
-        before_bracket_list = [item for item in before_bracket_list if item != &#39;const&#39;]
-        before_bracket_list = [item for item in before_bracket_list if item != &#39;volatile&#39;]
-        before_bracket = &#39; &#39;.join(before_bracket_list)
+        before_bracket_list = [item for item in before_bracket_list if item != 'const']
+        before_bracket_list = [item for item in before_bracket_list if item != 'volatile']
+        before_bracket = ' '.join(before_bracket_list)
 
         after_bracket_list = after_bracket.split()
-        after_bracket_list = [item for item in after_bracket_list if item != &#39;const&#39;]
-        after_bracket_list = [item for item in after_bracket_list if item != &#39;volatile&#39;]
-        after_bracket = &#39; &#39;.join(after_bracket_list)
+        after_bracket_list = [item for item in after_bracket_list if item != 'const']
+        after_bracket_list = [item for item in after_bracket_list if item != 'volatile']
+        after_bracket = ' '.join(after_bracket_list)
 
-        basic_type_name = before_bracket + templ_bracket + &#39; &#39;*space_after_bracket + after_bracket
+        basic_type_name = before_bracket + templ_bracket + ' '*space_after_bracket + after_bracket
 
     # If no template bracket
     else:
@@ -516,13 +516,13 @@ def getBasicTypeName(type_name):
         basic_type_name = type_name
 
         # Remove asterix and/or ampersand
-        basic_type_name = basic_type_name.replace(&#39;*&#39;, &#39;&#39;).replace(&#39;&amp;&#39;, &#39;&#39;)
+        basic_type_name = basic_type_name.replace('*', '').replace('&amp;', '')
 
-        # Remove &#39;const&#39; and &#39;volatile&#39;
+        # Remove 'const' and 'volatile'
         basic_type_name_list = basic_type_name.split()
-        basic_type_name_list = [item for item in basic_type_name_list if item != &#39;const&#39;]
-        basic_type_name_list = [item for item in basic_type_name_list if item != &#39;volatile&#39;]
-        basic_type_name = &#39; &#39;.join(basic_type_name_list)
+        basic_type_name_list = [item for item in basic_type_name_list if item != 'const']
+        basic_type_name_list = [item for item in basic_type_name_list if item != 'volatile']
+        basic_type_name = ' '.join(basic_type_name_list)
 
     # Return result
     return basic_type_name
@@ -547,14 +547,14 @@ def removeComments(content, insert_blanks=False):
     while True:
 
         # Find start of comment
-        search_pos = content[temp_startpos:].find(&#39;//&#39;)
+        search_pos = content[temp_startpos:].find('//')
         if search_pos == -1:
             break
         else:
             comment_start = temp_startpos + search_pos
 
             # Find end of comment
-            search_pos = content[comment_start:].find(&#39;\n&#39;)
+            search_pos = content[comment_start:].find('\n')
             if search_pos == -1:
                 comment_end = content_lenght - 1
             else:
@@ -572,17 +572,17 @@ def removeComments(content, insert_blanks=False):
     while True:
 
         # Find start of comment
-        search_pos = content[temp_startpos:].find(&#39;/*&#39;)
+        search_pos = content[temp_startpos:].find('/*')
 
         # Are we done?
         if search_pos == -1:
             break
-        # Check for the potentially confusing case of comments starting with &#34;//*&#34;
-        elif (search_pos &gt; 0) and (content[search_pos-1] == &#39;/&#39;):
+        # Check for the potentially confusing case of comments starting with &quot;//*&quot;
+        elif (search_pos &gt; 0) and (content[search_pos-1] == '/'):
             # This is really a single-line comment which has been dealt with above,
-            # so we don&#39;t add it to the list of comment positions
+            # so we don't add it to the list of comment positions
             comment_start= temp_startpos + search_pos
-            search_pos = content[comment_start:].find(&#39;\n&#39;)
+            search_pos = content[comment_start:].find('\n')
             if search_pos == -1:
                 comment_end = content_lenght - 1
             else:
@@ -594,7 +594,7 @@ def removeComments(content, insert_blanks=False):
             comment_start = temp_startpos + search_pos
 
             # Find end of comment
-            search_pos = content[comment_start:].find(&#39;*/&#39;)
+            search_pos = content[comment_start:].find('*/')
             if search_pos == -1:
                 comment_end = content_lenght - 1
             else:
@@ -625,12 +625,12 @@ def removeComments(content, insert_blanks=False):
         else:
             # Insert whitespace?
             if insert_blanks == False:
-                content = content.replace( content[start_pos:stop_pos+1], &#39;&#39;)
+                content = content.replace( content[start_pos:stop_pos+1], '')
             else:
                 # Construct string of spaces and newlines to replace comments
-                insert_string = &#39;&#39;
+                insert_string = ''
                 for char in content[start_pos:stop_pos+1]:
-                    insert_string += &#39; &#39;*(char!=&#39;\n&#39;) + &#39;\n&#39;*(char==&#39;\n&#39;)
+                    insert_string += ' '*(char!='\n') + '\n'*(char=='\n')
 
                 # Perform replacement
                 content = content.replace( content[start_pos:stop_pos+1], insert_string )
@@ -649,7 +649,7 @@ def removeComments(content, insert_blanks=False):
 
 def findType(el_input):
 
-    # check_keywords = [&#39;const&#39;]
+    # check_keywords = ['const']
     # additional_keywords = []
 
     cv_qualifiers = []
@@ -661,78 +661,78 @@ def findType(el_input):
 
     el = el_input
 
-    if el.tag in [&#39;FundamentalType&#39;, &#39;Class&#39;, &#39;Struct&#39;, &#39;Enumeration&#39;]:
-        type_id = el.get(&#39;id&#39;)
+    if el.tag in ['FundamentalType', 'Class', 'Struct', 'Enumeration']:
+        type_id = el.get('id')
 
-    elif el.tag in [&#39;Constructor&#39;]:
-        type_id = el.get(&#39;context&#39;)
+    elif el.tag in ['Constructor']:
+        type_id = el.get('context')
         el = gb.id_dict[type_id]
 
     else:
-        type_id = el.get(&#39;type&#39;)
-        prev_tag = &#39;&#39;
-        while (&#39;type&#39; in el.keys()) or (&#39;returns&#39; in el.keys()):
+        type_id = el.get('type')
+        prev_tag = ''
+        while ('type' in el.keys()) or ('returns' in el.keys()):
 
 
             # Get xml id to move further through the xml file
-            if el.tag in [&#39;FunctionType&#39;, &#39;Function&#39;, &#39;Method&#39;, &#39;OperatorMethod&#39;]:
+            if el.tag in ['FunctionType', 'Function', 'Method', 'OperatorMethod']:
 
-                if (el.tag == &#39;FunctionType&#39;) and (prev_tag == &#39;PointerType&#39;):
+                if (el.tag == 'FunctionType') and (prev_tag == 'PointerType'):
                     found_function_pointer = True
-                type_id = el.get(&#39;returns&#39;)
+                type_id = el.get('returns')
             else:
-                type_id = el.get(&#39;type&#39;)
+                type_id = el.get('type')
 
-            # id=&#39;_0&#39; refer to elements not resolved by CastXML. Should be safe to stop here.
-            if type_id == &#39;_0&#39;:
+            # id='_0' refer to elements not resolved by CastXML. Should be safe to stop here.
+            if type_id == '_0':
                 break
 
             # Check for reference or pointer type
-            if el.tag == &#39;ReferenceType&#39;:
+            if el.tag == 'ReferenceType':
                 is_reference = True
-            if el.tag == &#39;PointerType&#39;:
+            if el.tag == 'PointerType':
                 pointerness += 1
 
-            # Pick up any extra keywords (e.g. &#39;const&#39;) from non-function xml elements
-            if el.tag == &#39;CvQualifiedType&#39;:
-                if &#39;const&#39; in el.keys():
-                    if &#39;const&#39; not in cv_qualifiers:
-                        cv_qualifiers.append(&#39;const&#39;)
-                if &#39;volatile&#39; in el.keys():
-                    if &#39;volatile&#39; not in cv_qualifiers:
-                        cv_qualifiers.append(&#39;volatile&#39;)
+            # Pick up any extra keywords (e.g. 'const') from non-function xml elements
+            if el.tag == 'CvQualifiedType':
+                if 'const' in el.keys():
+                    if 'const' not in cv_qualifiers:
+                        cv_qualifiers.append('const')
+                if 'volatile' in el.keys():
+                    if 'volatile' not in cv_qualifiers:
+                        cv_qualifiers.append('volatile')
 
             # Pick up any array indices
-            if el.tag == &#39;ArrayType&#39;:
+            if el.tag == 'ArrayType':
                 is_array = True
-                if el.get(&#39;max&#39;) != &#39;&#39;:
-                    max_index_str = el.get(&#39;max&#39;)
-                    max_index = int(max_index_str.strip(&#39;u&#39;))
+                if el.get('max') != '':
+                    max_index_str = el.get('max')
+                    max_index = int(max_index_str.strip('u'))
                     array_limits.append(max_index + 1)
 
 
             # Store tag (to identify function pointers)
             prev_tag = el.tag
 
-            # change xlm element &#39;el&#39;
+            # change xlm element 'el'
             el = gb.id_dict[type_id]
 
-    # When we exit the loop, &#39;el&#39; is at the final element.
+    # When we exit the loop, 'el' is at the final element.
     # Now get the full name, including any namespaces.
     name_and_namespaces = getNamespaces(el, include_self=True)
-    typename = &#39;::&#39;.join(name_and_namespaces)
+    typename = '::'.join(name_and_namespaces)
 
 
     type_dict = OrderedDict([])
-    type_dict[&#39;name&#39;]                = typename
-    type_dict[&#39;cv_qualifiers&#39;]       = cv_qualifiers
-    type_dict[&#39;is_reference&#39;]        = is_reference
-    type_dict[&#39;pointerness&#39;]         = pointerness
-    type_dict[&#39;id&#39;]                  = type_id
-    type_dict[&#39;el&#39;]                  = el
-    type_dict[&#39;is_function_pointer&#39;] = found_function_pointer
-    type_dict[&#39;is_array&#39;]            = is_array
-    type_dict[&#39;array_limits&#39;]        = tuple(array_limits)
+    type_dict['name']                = typename
+    type_dict['cv_qualifiers']       = cv_qualifiers
+    type_dict['is_reference']        = is_reference
+    type_dict['pointerness']         = pointerness
+    type_dict['id']                  = type_id
+    type_dict['el']                  = el
+    type_dict['is_function_pointer'] = found_function_pointer
+    type_dict['is_array']            = is_array
+    type_dict['array_limits']        = tuple(array_limits)
 
     return type_dict
 
@@ -745,7 +745,7 @@ def findType(el_input):
 def findNewLinePos(content, line_number):
     count = 0
     for index,char in enumerate(content):
-        if char==&#39;\n&#39;:
+        if char=='\n':
             count += 1
         if count == line_number:
             break
@@ -759,7 +759,7 @@ def findNewLinePos(content, line_number):
 
 # ====== getBracketPositions ========
 
-def getBracketPositions(content, delims=[&#39;{&#39;,&#39;}&#39;]):
+def getBracketPositions(content, delims=['{','}']):
 
     # Input:
     # - Content string
@@ -773,7 +773,7 @@ def getBracketPositions(content, delims=[&#39;{&#39;,&#39;}&#39;]):
 
     # Cannot handle identical left and right delimiters
     if l_delim == r_delim:
-        raise Exception(&#39;Left and right delimiters cannot be identical.&#39;)
+        raise Exception('Left and right delimiters cannot be identical.')
 
     # Prepare search
     bracket_count  = 0
@@ -801,7 +801,7 @@ def getBracketPositions(content, delims=[&#39;{&#39;,&#39;}&#39;]):
 
     # If brackets did not balance, raise exception
     if not balance:
-        raise ValueError(&#34;No matching right delimiter for the first left delimiter.&#34;)
+        raise ValueError(&quot;No matching right delimiter for the first left delimiter.&quot;)
     # Else, return the found bracket positions
     else:
         return [l_pos, r_pos]
@@ -818,13 +818,13 @@ def addIndentation(content, indent):
         new_content = content
 
     else:
-        lines = content.split(&#39;\n&#39;)
+        lines = content.split('\n')
 
-        new_content = &#39;\n&#39;.join( [&#39; &#39;*indent + line for line in lines] )
+        new_content = '\n'.join( [' '*indent + line for line in lines] )
 
         # If the last char in content was a newline,
         # remove the indentation that was added after that newline
-        if lines[-1] == &#39;&#39;:
+        if lines[-1] == '':
             new_content = new_content[:-indent]
 
     return new_content
@@ -835,27 +835,27 @@ def addIndentation(content, indent):
 
 # ====== getNamespaces ========
 
-def getNamespaces(xml_el, include_self=False, xml_file_name=&#39;&#39;):
+def getNamespaces(xml_el, include_self=False, xml_file_name=''):
 
     namespaces = []
 
     if include_self:
-        if &#39;name&#39; in xml_el.keys():
-            namespaces.append(xml_el.get(&#39;name&#39;))
+        if 'name' in xml_el.keys():
+            namespaces.append(xml_el.get('name'))
         else:
-            namespaces.append(&#39;&#39;)
+            namespaces.append('')
 
     current_xml_el = xml_el
-    while &#39;context&#39; in current_xml_el.keys():
-        context_id = current_xml_el.get(&#39;context&#39;)
-        if xml_file_name == &#39;&#39;:
+    while 'context' in current_xml_el.keys():
+        context_id = current_xml_el.get('context')
+        if xml_file_name == '':
             context_xml_el = gb.id_dict[context_id]
         else:
             context_xml_el = gb.all_id_dict[xml_file_name][context_id]
 
-        # if &#39;name&#39; in current_xml_el.keys():
-        if &#39;name&#39; in context_xml_el.keys():
-            context_name = context_xml_el.get(&#39;name&#39;)
+        # if 'name' in current_xml_el.keys():
+        if 'name' in context_xml_el.keys():
+            context_name = context_xml_el.get('name')
             namespaces.append(context_name)
         else:
             break
@@ -865,8 +865,8 @@ def getNamespaces(xml_el, include_self=False, xml_file_name=&#39;&#39;):
 
     namespaces.reverse()
 
-    # If present, remove the first, default namespace in the XML file from the list (with name=&#39;::&#39;)
-    if (len(namespaces) &gt; 0) and (namespaces[0] == &#39;::&#39;):
+    # If present, remove the first, default namespace in the XML file from the list (with name='::')
+    if (len(namespaces) &gt; 0) and (namespaces[0] == '::'):
         namespaces = namespaces[1:]
 
     return namespaces
@@ -879,19 +879,19 @@ def getNamespaces(xml_el, include_self=False, xml_file_name=&#39;&#39;):
 
 def removeTemplateBracket(type_name, return_bracket=False):
 
-    if (&#39;&lt;&#39; in type_name) and (&#39;&gt;&#39; in type_name):
+    if ('&lt;' in type_name) and ('&gt;' in type_name):
 
-        r_pos = type_name.rfind(&#39;&gt;&#39;)
+        r_pos = type_name.rfind('&gt;')
 
         if r_pos &lt;= 0:
-            raise Exception(&#34;Unbalanced template brackets in type name &#39;%s&#39;&#34; % type_name)
+            raise Exception(&quot;Unbalanced template brackets in type name '%s'&quot; % type_name)
 
         pos = r_pos-1
         count = 1
         while pos &gt; -1:
-            if type_name[pos] == &#39;&gt;&#39;:
+            if type_name[pos] == '&gt;':
                 count += 1
-            elif type_name[pos] == &#39;&lt;&#39;:
+            elif type_name[pos] == '&lt;':
                 count -= 1
 
             if count == 0:
@@ -900,7 +900,7 @@ def removeTemplateBracket(type_name, return_bracket=False):
             pos -= 1
 
         if count != 0:
-            raise Exception(&#34;Unbalanced template brackets in type name &#39;%s&#39;&#34; % type_name)
+            raise Exception(&quot;Unbalanced template brackets in type name '%s'&quot; % type_name)
 
         l_pos = pos
 
@@ -909,7 +909,7 @@ def removeTemplateBracket(type_name, return_bracket=False):
 
     else:
         type_name_notempl = type_name
-        template_bracket  = &#39;&#39;
+        template_bracket  = ''
 
     if return_bracket:
         return type_name_notempl, template_bracket
@@ -927,12 +927,12 @@ def removeNamespace(type_name, return_namespace=False):
 
     type_name_notempl = removeTemplateBracket(type_name)
 
-    if &#39;::&#39; in type_name_notempl:
-        namespace = type_name_notempl.rsplit(&#39;::&#39;,1)[0]
-        new_type_name = type_name.replace(namespace+&#39;::&#39;,&#39;&#39;,1)
+    if '::' in type_name_notempl:
+        namespace = type_name_notempl.rsplit('::',1)[0]
+        new_type_name = type_name.replace(namespace+'::','',1)
     else:
         new_type_name = type_name
-        namespace = &#39;&#39;
+        namespace = ''
 
     if return_namespace:
         return namespace, new_type_name
@@ -947,7 +947,7 @@ def removeNamespace(type_name, return_namespace=False):
 
 def removeArgumentBracket(func_signature, return_args_bracket=False):
 
-    args_bracket_start = func_signature.rfind(&#39;(&#39;)
+    args_bracket_start = func_signature.rfind('(')
 
     func_signature_noargs = func_signature[:args_bracket_start]
     args_bracket          = func_signature[args_bracket_start:]
@@ -968,50 +968,50 @@ def isAcceptedType(input_el):
     is_accepted_type = False
 
     type_dict = findType(input_el)
-    type_el      = type_dict[&#39;el&#39;]
-    type_name    = type_dict[&#39;name&#39;]
-    pointerness  = type_dict[&#39;pointerness&#39;]
-    is_ref       = type_dict[&#39;is_reference&#39;]
-    is_array     = type_dict[&#39;is_array&#39;]
-    array_limits = type_dict[&#39;array_limits&#39;]
+    type_el      = type_dict['el']
+    type_name    = type_dict['name']
+    pointerness  = type_dict['pointerness']
+    is_ref       = type_dict['is_reference']
+    is_array     = type_dict['is_array']
+    array_limits = type_dict['array_limits']
 
 
     # BOSS cannot yet handle delarations of arrays with unspecified length
     if (is_array) and (len(array_limits) == 0):
-        reason = &#34;BOSS cannot yet handle arrays declared with unspecified length.&#34;
-        infomsg.TypeNotAccepted(input_el.get(&#39;name&#39;), reason).printMessage()
+        reason = &quot;BOSS cannot yet handle arrays declared with unspecified length.&quot;
+        infomsg.TypeNotAccepted(input_el.get('name'), reason).printMessage()
         is_accepted_type = False
         return is_accepted_type
 
     # BOSS cannot yet handle arrays of loaded types
     if isLoadedClass(type_el) and is_array:
-        reason = &#34;BOSS cannot yet handle arrays of a loaded type.&#34;
-        infomsg.TypeNotAccepted(input_el.get(&#39;name&#39;), reason).printMessage()
+        reason = &quot;BOSS cannot yet handle arrays of a loaded type.&quot;
+        infomsg.TypeNotAccepted(input_el.get('name'), reason).printMessage()
         is_accepted_type = False
         return is_accepted_type
 
     # BOSS cannot yet handle function pointers
-    if type_dict[&#39;is_function_pointer&#39;]:
-        reason = &#34;BOSS cannot yet handle function pointers.&#34;
-        infomsg.TypeNotAccepted(input_el.get(&#39;name&#39;), reason).printMessage()
+    if type_dict['is_function_pointer']:
+        reason = &quot;BOSS cannot yet handle function pointers.&quot;
+        infomsg.TypeNotAccepted(input_el.get('name'), reason).printMessage()
         is_accepted_type = False
         return is_accepted_type
 
 
-    if type_el.tag in [&#39;Class&#39;, &#39;Struct&#39;]:
+    if type_el.tag in ['Class', 'Struct']:
         namespaces_list = getNamespaces(type_el, include_self=True)
-        full_name = &#39;::&#39;.join(namespaces_list)
-        if (full_name in gb.accepted_types) or (full_name.replace(&#39; &#39;,&#39;&#39;) in gb.accepted_types):
+        full_name = '::'.join(namespaces_list)
+        if (full_name in gb.accepted_types) or (full_name.replace(' ','') in gb.accepted_types):
             is_accepted_type = True
 
-    elif type_el.tag in [&#39;FundamentalType&#39;, &#39;Enumeration&#39;]:
-        type_name = type_el.get(&#39;name&#39;)
+    elif type_el.tag in ['FundamentalType', 'Enumeration']:
+        type_name = type_el.get('name')
         if type_name in gb.accepted_types:
             is_accepted_type = True
 
     else:
-        reason = &#34;Cannot determine if XML element with id=&#39;%s&#39; and tag &#39;%s&#39; corresponds to an accepted type. Assuming it does not.&#34; % (input_el.get(&#39;id&#39;), input_el.tag)
-        infomsg.TypeNotAccepted(input_el.get(&#39;id&#39;), reason).printMessage()
+        reason = &quot;Cannot determine if XML element with id='%s' and tag '%s' corresponds to an accepted type. Assuming it does not.&quot; % (input_el.get('id'), input_el.tag)
+        infomsg.TypeNotAccepted(input_el.get('id'), reason).printMessage()
         is_accepted_type = False
 
     return is_accepted_type
@@ -1029,7 +1029,7 @@ def isLoadedClass(input_type, byname=False, class_name=None):
     # If the class_name dict is passed as an argument, use it.
     if class_name is not None:
 
-        if class_name[&#39;long_templ&#39;] in cfg.load_classes:
+        if class_name['long_templ'] in cfg.load_classes:
             is_loaded_class = True
 
     else:
@@ -1037,11 +1037,11 @@ def isLoadedClass(input_type, byname=False, class_name=None):
         if byname:
             type_name = input_type
 
-            # Remove &#39;*&#39; and &#39;&amp;&#39;
-            type_name = type_name.replace(&#39;*&#39;,&#39;&#39;).replace(&#39;&amp;&#39;,&#39;&#39;)
+            # Remove '*' and '&amp;'
+            type_name = type_name.replace('*','').replace('&amp;','')
 
             # Remove template bracket
-            type_name = type_name.split(&#39;&lt;&#39;)[0]
+            type_name = type_name.split('&lt;')[0]
 
             # Check against cfg.load_classes
             if type_name in cfg.load_classes:
@@ -1049,11 +1049,11 @@ def isLoadedClass(input_type, byname=False, class_name=None):
 
         else:
             type_dict = findType(input_type)
-            type_el = type_dict[&#39;el&#39;]
+            type_el = type_dict['el']
 
-            if type_el.tag in [&#39;Class&#39;, &#39;Struct&#39;]:
+            if type_el.tag in ['Class', 'Struct']:
 
-                if type_dict[&#39;name&#39;] in cfg.load_classes:
+                if type_dict['name'] in cfg.load_classes:
                     is_loaded_class = True
 
     return is_loaded_class
@@ -1082,42 +1082,42 @@ def constrAbsForwardDeclHeader(file_output_path):
 
     # If this is the first time this function is executed, read initial code from header_templates/ folder
     if file_output_path not in gb.new_code.keys():
-        f = open(gb.boss_dir+&#39;/header_templates/standard_header_template.hpp&#39;)
+        f = open(gb.boss_dir+'/header_templates/standard_header_template.hpp')
         initial_code = f.read()
         f.close()
         initial_code_tuple = (0, initial_code)
-        gb.new_code[file_output_path] = {&#39;code_tuples&#39;:[initial_code_tuple], &#39;add_include_guard&#39;:True}
+        gb.new_code[file_output_path] = {'code_tuples':[initial_code_tuple], 'add_include_guard':True}
 
 
-    current_code = gb.new_code[file_output_path][&#39;code_tuples&#39;][0][1]
+    current_code = gb.new_code[file_output_path]['code_tuples'][0][1]
 
-    insert_code = &#39;&#39;
-    tag_pos = current_code.find(&#39;__INSERT_CODE_HERE__&#39;)
+    insert_code = ''
+    tag_pos = current_code.find('__INSERT_CODE_HERE__')
 
     current_namespaces = []
     for class_name_long, class_el in gb.loaded_classes_in_xml.items():
 
-        # print([class_name_full], [class_name_full.split(&#39;&lt;&#39;,1)[0]], [class_name_full.split(&#39;&lt;&#39;,1)[0].rsplit(&#39;::&#39;,1)[-1]])
+        # print([class_name_full], [class_name_full.split('&lt;',1)[0]], [class_name_full.split('&lt;',1)[0].rsplit('::',1)[-1]])
         namespaces    = getNamespaces(class_el)
         has_namespace = bool(len(namespaces))
-        namespace_str = &#39;::&#39;.join(namespaces) + &#39;::&#39;*has_namespace
+        namespace_str = '::'.join(namespaces) + '::'*has_namespace
 
         # class_name       = classutils.getClassNameDict(class_el)
         abstr_class_name = classutils.getClassNameDict(class_el, abstract=True)
 
         if namespaces != current_namespaces:
             # close current namespace
-            insert_code += constrNamespace(current_namespaces, &#39;close&#39;, indent=cfg.indent)
+            insert_code += constrNamespace(current_namespaces, 'close', indent=cfg.indent)
             # open new namespace
-            insert_code += constrNamespace(namespaces, &#39;open&#39;, indent=cfg.indent)
+            insert_code += constrNamespace(namespaces, 'open', indent=cfg.indent)
             # update current namespace
             current_namespaces = namespaces
 
         # Add forward decls
         n_indents   = len(namespaces)
-        full_indent = &#39; &#39;*n_indents*cfg.indent
+        full_indent = ' '*n_indents*cfg.indent
 
-        if &#39;&lt;&#39; in abstr_class_name[&#39;long_templ&#39;]:
+        if '&lt;' in abstr_class_name['long_templ']:
             is_template = True
         else:
             is_template = False
@@ -1126,15 +1126,15 @@ def constrAbsForwardDeclHeader(file_output_path):
             template_bracket = getTemplateBracket(class_el)[0]
 
         if is_template:
-            insert_code += full_indent + &#39;template &#39; + template_bracket + &#39;\n&#39;
-            insert_code += full_indent + &#39;class &#39; + abstr_class_name[&#39;short&#39;] + &#39;;\n&#39;
-            insert_code += full_indent + &#39;class &#39; + abstr_class_name[&#39;short_templ&#39;] + &#39;;\n&#39;
+            insert_code += full_indent + 'template ' + template_bracket + '\n'
+            insert_code += full_indent + 'class ' + abstr_class_name['short'] + ';\n'
+            insert_code += full_indent + 'class ' + abstr_class_name['short_templ'] + ';\n'
         else:
-            insert_code += full_indent + &#39;class &#39; + abstr_class_name[&#39;short_templ&#39;] + &#39;;\n&#39;
+            insert_code += full_indent + 'class ' + abstr_class_name['short_templ'] + ';\n'
 
     # Close current namespace
-    insert_code += constrNamespace(current_namespaces, &#39;close&#39;, indent=cfg.indent)
-    insert_code += &#39;\n&#39;
+    insert_code += constrNamespace(current_namespaces, 'close', indent=cfg.indent)
+    insert_code += '\n'
 
     new_code = current_code[:tag_pos] + insert_code + current_code[tag_pos:]
 
@@ -1145,7 +1145,7 @@ def constrAbsForwardDeclHeader(file_output_path):
     new_code_tuple = (0,new_code)
 
     # Overwrite existing code tuple
-    gb.new_code[file_output_path][&#39;code_tuples&#39;] = [(new_code_tuple)]
+    gb.new_code[file_output_path]['code_tuples'] = [(new_code_tuple)]
 
 # ====== END: constrAbsForwardDeclHeader ========
 
@@ -1159,37 +1159,37 @@ def constrWrpForwardDeclHeader(file_output_path):
 
     # If this is the first time this function is executed, read initial code from header_templates/ folder
     if file_output_path not in gb.new_code.keys():
-        f = open(gb.boss_dir+&#39;/header_templates/standard_header_template.hpp&#39;)
+        f = open(gb.boss_dir+'/header_templates/standard_header_template.hpp')
         initial_code = f.read()
         f.close()
         initial_code_tuple = (0, initial_code)
-        gb.new_code[file_output_path] = {&#39;code_tuples&#39;:[initial_code_tuple], &#39;add_include_guard&#39;:True}
+        gb.new_code[file_output_path] = {'code_tuples':[initial_code_tuple], 'add_include_guard':True}
 
-    current_code = gb.new_code[file_output_path][&#39;code_tuples&#39;][0][1]
+    current_code = gb.new_code[file_output_path]['code_tuples'][0][1]
 
-    insert_code = &#39;&#39;
-    tag_pos = current_code.find(&#39;__INSERT_CODE_HERE__&#39;)
+    insert_code = ''
+    tag_pos = current_code.find('__INSERT_CODE_HERE__')
 
     for class_name in gb.loaded_classes_in_xml.keys():
 
         namespace, class_name_short = removeNamespace(class_name, return_namespace=True)
 
-        if namespace == &#39;&#39;:
+        if namespace == '':
             namespace_list = []
         else:
-            namespace_list = namespace.split(&#39;::&#39;)
+            namespace_list = namespace.split('::')
 
         n_indents = len(namespace_list)
 
 
         # - Open namespace
-        insert_code += constrNamespace(namespace_list, &#39;open&#39;)
+        insert_code += constrNamespace(namespace_list, 'open')
 
         # - Forward declaration
-        insert_code += &#39; &#39;*n_indents*cfg.indent + &#39;class &#39; + class_name_short + &#39;;\n&#39;
+        insert_code += ' '*n_indents*cfg.indent + 'class ' + class_name_short + ';\n'
 
         # - Close namespace
-        insert_code += constrNamespace(namespace_list, &#39;close&#39;)
+        insert_code += constrNamespace(namespace_list, 'close')
 
 
     new_code = current_code[:tag_pos] + insert_code + current_code[tag_pos:]
@@ -1202,7 +1202,7 @@ def constrWrpForwardDeclHeader(file_output_path):
     new_code_tuple = (0,new_code)
 
     # Overwrite existing code tuple
-    gb.new_code[file_output_path][&#39;code_tuples&#39;] = [(new_code_tuple)]
+    gb.new_code[file_output_path]['code_tuples'] = [(new_code_tuple)]
 
 # ====== END: constrWrpForwardDeclHeader ========
 
@@ -1216,10 +1216,10 @@ def getParentClasses(class_el, only_native_classes=False, only_loaded_classes=Fa
 
     parent_classes = []
 
-    sub_el_list = class_el.findall(&#39;Base&#39;)
+    sub_el_list = class_el.findall('Base')
     for sub_el in sub_el_list:
 
-        base_id = sub_el.get(&#39;type&#39;)
+        base_id = sub_el.get('type')
         base_el = gb.id_dict[base_id]
 
         if (only_loaded_classes) and (not isLoadedClass(base_el)):
@@ -1227,8 +1227,8 @@ def getParentClasses(class_el, only_native_classes=False, only_loaded_classes=Fa
         elif (only_native_classes) and (not isNative(base_el)):
             continue
         else:
-            base_access    = sub_el.get(&#39;access&#39;)
-            base_virtual   = bool( int( sub_el.get(&#39;virtual&#39;) ) )
+            base_access    = sub_el.get('access')
+            base_virtual   = bool( int( sub_el.get('virtual') ) )
 
             base_name_dict       = classutils.getClassNameDict(base_el)
             abstr_base_name_dict = classutils.getClassNameDict(base_el, abstract=True)
@@ -1241,18 +1241,18 @@ def getParentClasses(class_el, only_native_classes=False, only_loaded_classes=Fa
 
 
             temp_dict = OrderedDict([])
-            temp_dict[&#39;class_name&#39;]       = base_name_dict
-            temp_dict[&#39;abstr_class_name&#39;] = abstr_base_name_dict
-            temp_dict[&#39;wrapper_name&#39;]     = classutils.toWrapperType(base_name_dict[&#39;long&#39;])
-            temp_dict[&#39;access&#39;]           = base_access
-            temp_dict[&#39;virtual&#39;]          = base_virtual
-            temp_dict[&#39;id&#39;]               = base_id
+            temp_dict['class_name']       = base_name_dict
+            temp_dict['abstr_class_name'] = abstr_base_name_dict
+            temp_dict['wrapper_name']     = classutils.toWrapperType(base_name_dict['long'])
+            temp_dict['access']           = base_access
+            temp_dict['virtual']          = base_virtual
+            temp_dict['id']               = base_id
 
-            temp_dict[&#39;accepted&#39;]         = is_accepted_type
-            temp_dict[&#39;native&#39;]           = is_native
-            temp_dict[&#39;fundamental&#39;]      = is_fundamental
-            temp_dict[&#39;std&#39;]              = is_std
-            temp_dict[&#39;loaded&#39;]           = is_loaded_class
+            temp_dict['accepted']         = is_accepted_type
+            temp_dict['native']           = is_native
+            temp_dict['fundamental']      = is_fundamental
+            temp_dict['std']              = is_std
+            temp_dict['loaded']           = is_loaded_class
 
             parent_classes.append(temp_dict)
 
@@ -1274,11 +1274,11 @@ def getAllParentClasses(class_el, only_native_classes=True, only_loaded_classes=
     temp_class_list = [class_el]
     while len(temp_class_list) &gt; 0:
         current_class = temp_class_list.pop()
-        if &#39;bases&#39; in current_class.keys():
-            for parent_class_id in current_class.get(&#39;bases&#39;).split():
+        if 'bases' in current_class.keys():
+            for parent_class_id in current_class.get('bases').split():
 
-                # Remove accessor info from id, e.g. &#34;private:_123&#34; --&gt; &#34;_123&#34;
-                parent_class_id = parent_class_id.split(&#39;:&#39;)[-1]
+                # Remove accessor info from id, e.g. &quot;private:_123&quot; --&gt; &quot;_123&quot;
+                parent_class_id = parent_class_id.split(':')[-1]
 
                 parent_class_el = gb.id_dict[parent_class_id]
 
@@ -1300,16 +1300,16 @@ def getAllParentClasses(class_el, only_native_classes=True, only_loaded_classes=
                             is_loaded_class  = isLoadedClass(parent_class_el)
 
                             temp_dict = OrderedDict([])
-                            temp_dict[&#39;class_name&#39;]       = base_name_dict
-                            temp_dict[&#39;abstr_class_name&#39;] = abstr_base_name_dict
-                            temp_dict[&#39;wrapper_name&#39;]     = classutils.toWrapperType(base_name_dict[&#39;long&#39;])
-                            temp_dict[&#39;id&#39;]               = parent_class_id
+                            temp_dict['class_name']       = base_name_dict
+                            temp_dict['abstr_class_name'] = abstr_base_name_dict
+                            temp_dict['wrapper_name']     = classutils.toWrapperType(base_name_dict['long'])
+                            temp_dict['id']               = parent_class_id
 
-                            temp_dict[&#39;accepted&#39;]         = is_accepted_type
-                            temp_dict[&#39;native&#39;]           = is_native
-                            temp_dict[&#39;fundamental&#39;]      = is_fundamental
-                            temp_dict[&#39;std&#39;]              = is_std
-                            temp_dict[&#39;loaded&#39;]           = is_loaded_class
+                            temp_dict['accepted']         = is_accepted_type
+                            temp_dict['native']           = is_native
+                            temp_dict['fundamental']      = is_fundamental
+                            temp_dict['std']              = is_std
+                            temp_dict['loaded']           = is_loaded_class
 
                             parent_classes.append(temp_dict)
                             done_parent_classes.append(parent_class_el)
@@ -1337,32 +1337,32 @@ def getAllTypesInClass(class_el, include_parents=False):
 
     check_member_elements = getMemberElements(class_el)
 
-    class_id = class_el.get(&#39;id&#39;)
+    class_id = class_el.get('id')
     for mem_el in check_member_elements:
 
-        if mem_el.tag in [&#39;Constructor&#39;, &#39;Destructor&#39;, &#39;Method&#39;, &#39;OperatorMethod&#39;]:
+        if mem_el.tag in ['Constructor', 'Destructor', 'Method', 'OperatorMethod']:
             args_list = funcutils.getArgs(mem_el)
             for arg_dict in args_list:
 
-                arg_type_el   = gb.id_dict[arg_dict[&#39;id&#39;]]
+                arg_type_el   = gb.id_dict[arg_dict['id']]
                 arg_type_name = classutils.getClassNameDict(arg_type_el)
 
                 arg_type_dict = OrderedDict([])
-                arg_type_dict[&#39;class_name&#39;] = arg_type_name
-                arg_type_dict[&#39;el&#39;]         = arg_type_el
+                arg_type_dict['class_name'] = arg_type_name
+                arg_type_dict['el']         = arg_type_el
 
                 all_types.append(arg_type_dict)
 
-        if (&#39;type&#39; in mem_el.keys()) or (&#39;returns&#39; in mem_el.keys()):
+        if ('type' in mem_el.keys()) or ('returns' in mem_el.keys()):
 
             mem_type_dict = findType(mem_el)
-            type_el = mem_type_dict[&#39;el&#39;]
+            type_el = mem_type_dict['el']
 
             type_name = classutils.getClassNameDict(type_el)
 
             type_dict = OrderedDict([])
-            type_dict[&#39;class_name&#39;] = type_name
-            type_dict[&#39;el&#39;]         = type_el
+            type_dict['class_name'] = type_name
+            type_dict['el']         = type_el
 
             all_types.append(type_dict)
 
@@ -1373,8 +1373,8 @@ def getAllTypesInClass(class_el, include_parents=False):
         for parent_dict in parent_classes:
 
             small_parent_dict = OrderedDict([])
-            small_parent_dict[&#39;class_name&#39;] = parent_dict[&#39;class_name&#39;]
-            small_parent_dict[&#39;el&#39;]         = gb.id_dict[parent_dict[&#39;id&#39;]]
+            small_parent_dict['class_name'] = parent_dict['class_name']
+            small_parent_dict['el']         = gb.id_dict[parent_dict['id']]
 
             all_types.append(small_parent_dict)
 
@@ -1390,22 +1390,22 @@ def getMemberElements(el, include_artificial=False):
 
     member_elements = []
 
-    if &#39;members&#39; in el.keys():
-        for mem_id in el.get(&#39;members&#39;).split():
+    if 'members' in el.keys():
+        for mem_id in el.get('members').split():
             mem_el = gb.id_dict[mem_id]
 
             # Check if this member element should be ditched
-            if mem_el.tag in [&#39;Method&#39;, &#39;OperatorMethod&#39;, &#39;Field&#39;, &#39;Variable&#39;]:
-                if &#39;name&#39; in mem_el.keys():
+            if mem_el.tag in ['Method', 'OperatorMethod', 'Field', 'Variable']:
+                if 'name' in mem_el.keys():
                     namespaces_list = getNamespaces(mem_el, include_self=True)
-                    full_name = &#39;::&#39;.join(namespaces_list)
+                    full_name = '::'.join(namespaces_list)
                     if full_name in cfg.ditch:
                         continue
 
             if include_artificial:
                 member_elements.append(mem_el)
             else:
-                if not &#39;artificial&#39; in mem_el.keys():
+                if not 'artificial' in mem_el.keys():
                     member_elements.append(mem_el)
 
     return member_elements
@@ -1425,7 +1425,7 @@ def getMemberFunctions(class_el, include_artificial=False, include_inherited=Fal
     all_functions = []
 
     # If include_inherited=True, append all (native) parent classes
-    # the list &#39;all_classes&#39;
+    # the list 'all_classes'
     if include_inherited:
         parent_classes = getAllParentClasses(class_el, only_loaded_classes=True)
         all_classes = all_classes + parent_classes
@@ -1437,14 +1437,14 @@ def getMemberFunctions(class_el, include_artificial=False, include_inherited=Fal
 
     # Extract only regular member functions (no variables, constructors, destructors, ...)
     for mem_el in all_members:
-        if (mem_el.tag == &#39;Method&#39; or (include_operators==True and mem_el.tag==&#39;OperatorMethod&#39;)) and (mem_el.get(&#39;access&#39;) == &#39;public&#39;):
+        if (mem_el.tag == 'Method' or (include_operators==True and mem_el.tag=='OperatorMethod')) and (mem_el.get('access') == 'public'):
 
             if only_accepted and funcutils.ignoreFunction(mem_el, limit_pointerness=limit_pointerness):
-                method_name = mem_el.get(&#39;name&#39;)
-                if mem_el.tag==&#39;OperatorMethod&#39;:
-                    method_name = &#39;operator&#39; + method_name
+                method_name = mem_el.get('name')
+                if mem_el.tag=='OperatorMethod':
+                    method_name = 'operator' + method_name
 
-                reason = &#34;Makes use of a non-accepted type.&#34;
+                reason = &quot;Makes use of a non-accepted type.&quot;
                 infomsg.IgnoredFunction(method_name, reason).printMessage()
                 continue
 
@@ -1466,31 +1466,31 @@ def getAllTypesInFunction(func_el):
 
     all_types = []
 
-    func_id = func_el.get(&#39;id&#39;)
+    func_id = func_el.get('id')
 
-    if func_el.tag in [&#39;Function&#39;, &#39;Constructor&#39;]:
+    if func_el.tag in ['Function', 'Constructor']:
         args_list = funcutils.getArgs(func_el)
         for arg_dict in args_list:
 
-            arg_type_el   = gb.id_dict[arg_dict[&#39;id&#39;]]
+            arg_type_el   = gb.id_dict[arg_dict['id']]
             arg_type_name = classutils.getClassNameDict(arg_type_el)
 
             arg_type_dict = OrderedDict([])
-            arg_type_dict[&#39;class_name&#39;] = arg_type_name
-            arg_type_dict[&#39;el&#39;]         = arg_type_el
+            arg_type_dict['class_name'] = arg_type_name
+            arg_type_dict['el']         = arg_type_el
 
             all_types.append(arg_type_dict)
 
-    if (&#39;type&#39; in func_el.keys()) or (&#39;returns&#39; in func_el.keys()) or (func_el.tag==&#39;Constructor&#39; and &#39;context&#39; in func_el.keys()):
+    if ('type' in func_el.keys()) or ('returns' in func_el.keys()) or (func_el.tag=='Constructor' and 'context' in func_el.keys()):
 
         mem_type_dict = findType(func_el)
-        type_el = mem_type_dict[&#39;el&#39;]
+        type_el = mem_type_dict['el']
 
         type_name = classutils.getClassNameDict(type_el)
 
         type_dict = OrderedDict([])
-        type_dict[&#39;class_name&#39;] = type_name
-        type_dict[&#39;el&#39;]         = type_el
+        type_dict['class_name'] = type_name
+        type_dict['el']         = type_el
 
         all_types.append(type_dict)
 
@@ -1505,26 +1505,26 @@ def getAllTypesInFunction(func_el):
 def constrNamespace(namespaces, open_or_close, indent=cfg.indent):
 
     if len(namespaces) &gt; 0:
-        if namespaces[0] == &#39;::&#39;:
+        if namespaces[0] == '::':
             namespaces = namespaces[1:]
 
-    code = &#39;&#39;
+    code = ''
 
-    if open_or_close == &#39;open&#39;:
+    if open_or_close == 'open':
         n_indents = 0
         for ns in namespaces:
-            code += &#39; &#39;*n_indents*indent + &#39;namespace &#39; + ns + &#39;\n&#39;
-            code += &#39; &#39;*n_indents*indent + &#39;{&#39; + &#39;\n&#39;
+            code += ' '*n_indents*indent + 'namespace ' + ns + '\n'
+            code += ' '*n_indents*indent + '{' + '\n'
             n_indents += 1
 
-    elif open_or_close == &#39;close&#39;:
+    elif open_or_close == 'close':
         n_indents = len(namespaces)
         for ns in namespaces:
             n_indents -= 1
-            code += &#39; &#39;*n_indents*indent + &#39;}&#39; + &#39;\n&#39;
+            code += ' '*n_indents*indent + '}' + '\n'
 
     else:
-        raise ValueError(&#34;Second argument must be either &#39;open&#39; or &#39;close&#39;.&#34;)
+        raise ValueError(&quot;Second argument must be either 'open' or 'close'.&quot;)
 
     return code
 
@@ -1545,19 +1545,19 @@ def pointerAndRefCheck(input_type, byname=False):
         type_name = input_type
 
         # Remove template bracket
-        if &#39;&lt;&#39; in type_name:
-            type_name = type_name.split(&#39;&lt;&#39;,1)[0] + type_name.rsplit(&#39;&gt;&#39;,1)[-1]
+        if '&lt;' in type_name:
+            type_name = type_name.split('&lt;',1)[0] + type_name.rsplit('&gt;',1)[-1]
 
         # Check pointerness
-        pointerness = type_name.count(&#39;*&#39;)
+        pointerness = type_name.count('*')
 
         # Check reference
-        is_reference = bool(&#39;&amp;&#39; in type_name)
+        is_reference = bool('&amp;' in type_name)
 
     else:
         type_dict = findType(input_type)
-        pointerness  = type_dict[&#39;pointerness&#39;]
-        is_reference = type_dict[&#39;is_reference&#39;]
+        pointerness  = type_dict['pointerness']
+        is_reference = type_dict['is_reference']
 
 
     return pointerness, is_reference
@@ -1568,28 +1568,28 @@ def pointerAndRefCheck(input_type, byname=False):
 
 # ====== addIncludeGuard ========
 
-def addIncludeGuard(code, file_name, prefix=&#39;&#39;, suffix=&#39;&#39;, uppercase=False):
+def addIncludeGuard(code, file_name, prefix='', suffix='', uppercase=False):
 
-    file_name = file_name.rstrip(&#39;.FOR_GAMBIT&#39;)
+    file_name = file_name.rstrip('.FOR_GAMBIT')
 
-    if suffix == &#39;&#39;:
-        guard_var = &#39;__&#39; + (prefix + &#39;__&#39;)*bool(len(prefix)) + file_name.replace(&#39;.&#39;,&#39;_&#39;) + &#39;__&#39;
+    if suffix == '':
+        guard_var = '__' + (prefix + '__')*bool(len(prefix)) + file_name.replace('.','_') + '__'
     else:
         file_name_no_ext, file_ext = os.path.splitext(file_name)
-        guard_var = &#39;__&#39; + (prefix + &#39;__&#39;)*bool(len(prefix)) + file_name_no_ext.replace(&#39;.&#39;,&#39;_&#39;) + &#39;_&#39; + suffix + file_ext.replace(&#39;.&#39;,&#39;_&#39;)  + &#39;__&#39;
+        guard_var = '__' + (prefix + '__')*bool(len(prefix)) + file_name_no_ext.replace('.','_') + '_' + suffix + file_ext.replace('.','_')  + '__'
 
     # file_name_no_ext, file_ext = os.path.splitext(os.path.basename(file_name))
-    # guard_var = &#39;__&#39; + (prefix + &#39;__&#39;)*bool(len(prefix)) + file_name_no_ext.replace(&#39;.&#39;,&#39;_&#39;) + (&#39;__&#39; + suffix)*bool(len(suffix)) + &#39;__&#39;
+    # guard_var = '__' + (prefix + '__')*bool(len(prefix)) + file_name_no_ext.replace('.','_') + ('__' + suffix)*bool(len(suffix)) + '__'
 
 
     if uppercase:
         guard_var = guard_var.upper()
 
 
-    guard_code_top    = &#39;#ifndef &#39; + guard_var + &#39;\n&#39; + &#39;#define &#39; + guard_var + &#39;\n&#39;
-    guard_code_bottom = &#39;#endif /* &#39; + guard_var + &#39; */\n&#39;
+    guard_code_top    = '#ifndef ' + guard_var + '\n' + '#define ' + guard_var + '\n'
+    guard_code_bottom = '#endif /* ' + guard_var + ' */\n'
 
-    new_code = guard_code_top + &#39;\n&#39; + code + &#39;\n&#39; + guard_code_bottom
+    new_code = guard_code_top + '\n' + code + '\n' + guard_code_bottom
 
     return new_code
 
@@ -1605,7 +1605,7 @@ def identifyIncludedHeaders(content, only_native=True):
 
     # Remove comments
     content      = removeComments(content, insert_blanks=True)
-    content_list = content.split(&#39;\n&#39;)
+    content_list = content.split('\n')
 
     # Parse content and identify header file names
     headers_in_file = []
@@ -1613,19 +1613,19 @@ def identifyIncludedHeaders(content, only_native=True):
 
         line = line.strip()
 
-        if line[0:8] == &#39;#include&#39;:
+        if line[0:8] == '#include':
 
-            # Make sure there&#39;s a whitespace after &#39;#include&#39; 
-            if line[8] != &#39; &#39;:
-                line = line[0:8] + &#39; &#39; + line[8:]
+            # Make sure there's a whitespace after '#include' 
+            if line[8] != ' ':
+                line = line[0:8] + ' ' + line[8:]
 
             header_file_name = line.split()[1]
 
             # Skip standard headers (of the form: #include &lt;FILENAME&gt;)
-            if header_file_name[0] == &#39;&lt;&#39;:
+            if header_file_name[0] == '&lt;':
                 continue
             else:
-                header_file_name = header_file_name.strip(&#39;&#34;&#39;)
+                header_file_name = header_file_name.strip('&quot;')
                 headers_in_file.append(os.path.basename(header_file_name))
         else:
             continue
@@ -1648,7 +1648,7 @@ def identifyIncludedHeaders(content, only_native=True):
 
         # - Keep XML id if the corresponding file name mathces with an identified header
         if check_file_name in headers_in_file:
-            return_dict[check_file_name] = file_el.get(&#39;id&#39;)
+            return_dict[check_file_name] = file_el.get('id')
 
     return return_dict
 
@@ -1662,11 +1662,11 @@ def isHeader(file_el):
 
     is_header = False
 
-    file_name = file_el.get(&#39;name&#39;)
+    file_name = file_el.get('name')
     extension = os.path.splitext(file_name)[1]
 
-    if extension != &#39;&#39;:
-        if extension.lower() in [&#39;.hpp&#39;, &#39;.h&#39;, &#39;.hh&#39;, &#39;.hxx&#39;, cfg.header_extension.lower()]:
+    if extension != '':
+        if extension.lower() in ['.hpp', '.h', '.hh', '.hxx', cfg.header_extension.lower()]:
             is_header = True
 
     return is_header
@@ -1677,8 +1677,8 @@ def isHeader(file_el):
 
 # ====== getIncludeStatements ========
 
-def getIncludeStatements(input_el, convert_loaded_to=&#39;none&#39;, exclude_types=[],
-                         input_element=&#39;class&#39;, forward_declared=&#39;exclude&#39;,
+def getIncludeStatements(input_el, convert_loaded_to='none', exclude_types=[],
+                         input_element='class', forward_declared='exclude',
                          use_full_path=False, include_parents=False):
 
     include_statements = []
@@ -1687,36 +1687,36 @@ def getIncludeStatements(input_el, convert_loaded_to=&#39;none&#39;, exclude_typ
     convert_loaded_to = convert_loaded_to.lower()
     input_element     = input_element.lower()
     forward_declared  = forward_declared.lower()
-    if convert_loaded_to not in [&#39;none&#39;, &#39;abstract&#39;, &#39;wrapper&#39;, &#39;wrapper_decl&#39;, &#39;wrapper_def&#39;]:
-        raise Exception(&#34;getIncludeStatements: Keyword argument &#39;convert_loaded_to=&#39; must be either &#39;none&#39;, &#39;abstract&#39;, &#39;wrapper&#39;, &#39;wrapper_decl&#39; or &#39;wrapper_def&#39;.&#34;)
-    if input_element not in [&#39;class&#39;, &#39;function&#39;]:
-        raise Exception(&#34;getIncludeStatements: Keyword argument &#39;input_element=&#39; must be either &#39;class&#39; or &#39;function&#39;.&#34;)
-    if forward_declared not in [&#39;include&#39;, &#39;exclude&#39;, &#39;only&#39;]:
-        raise Exception(&#34;getIncludeStatements: Keyword argument &#39;forward_declared=&#39; must be either &#39;include&#39;, &#39;exclude&#39; or &#39;only&#39;.&#34;)
+    if convert_loaded_to not in ['none', 'abstract', 'wrapper', 'wrapper_decl', 'wrapper_def']:
+        raise Exception(&quot;getIncludeStatements: Keyword argument 'convert_loaded_to=' must be either 'none', 'abstract', 'wrapper', 'wrapper_decl' or 'wrapper_def'.&quot;)
+    if input_element not in ['class', 'function']:
+        raise Exception(&quot;getIncludeStatements: Keyword argument 'input_element=' must be either 'class' or 'function'.&quot;)
+    if forward_declared not in ['include', 'exclude', 'only']:
+        raise Exception(&quot;getIncludeStatements: Keyword argument 'forward_declared=' must be either 'include', 'exclude' or 'only'.&quot;)
 
 
     # Get list of all types used in this class/function (each entry is a dict)
-    if input_element == &#39;class&#39;:
+    if input_element == 'class':
         all_types = getAllTypesInClass(input_el, include_parents=include_parents)
-    elif input_element == &#39;function&#39;:
+    elif input_element == 'function':
         all_types = getAllTypesInFunction(input_el)
 
     # Get file name and line number of the current class/function
-    start_line_number = int( input_el.get(&#39;line&#39;) )
-    start_file_el     = gb.id_dict[ input_el.get(&#39;file&#39;) ]
-    start_file_path   = start_file_el.get(&#39;name&#39;)
+    start_line_number = int( input_el.get('line') )
+    start_file_el     = gb.id_dict[ input_el.get('file') ]
+    start_file_path   = start_file_el.get('name')
 
     # Read file from beginning to position of class/function definition
-    start_file         = open(start_file_path, &#39;r&#39;)
+    start_file         = open(start_file_path, 'r')
     start_file_content = start_file.readlines()[0:start_line_number]
-    start_file_content = &#39;&#39;.join(start_file_content)
+    start_file_content = ''.join(start_file_content)
     start_file.close()
 
     # Identify included header files from this file (utils.identifyIncludedHeaders returns a dict of the form {header_file_name: xml_id})
     included_headers_dict = identifyIncludedHeaders(start_file_content, only_native=True)
 
     # Move up the header tree and identify all the relevant (native) included headers
-    header_paths = [ gb.id_dict[file_id].get(&#39;name&#39;) for file_id in included_headers_dict.values() ]
+    header_paths = [ gb.id_dict[file_id].get('name') for file_id in included_headers_dict.values() ]
     header_paths_done = []
 
     while len(header_paths) &gt; 0:
@@ -1724,7 +1724,7 @@ def getIncludeStatements(input_el, convert_loaded_to=&#39;none&#39;, exclude_typ
         header_path = header_paths.pop()
 
         # Read header
-        header         = open(header_path, &#39;r&#39;)
+        header         = open(header_path, 'r')
         header_content = header.read()
         header.close()
 
@@ -1737,12 +1737,12 @@ def getIncludeStatements(input_el, convert_loaded_to=&#39;none&#39;, exclude_typ
                 included_headers_dict[file_name] = file_id
 
         # Add any new headers to the list of header files to check
-        new_header_paths = [ gb.id_dict[header_id].get(&#39;name&#39;) for header_id in new_included_headers.values() ]
+        new_header_paths = [ gb.id_dict[header_id].get('name') for header_id in new_included_headers.values() ]
         for new_path in new_header_paths:
             if (new_path not in header_paths) and (new_path not in header_paths_done):
                 header_paths.append(new_path)
 
-        # Keep track of headers we&#39;ve done
+        # Keep track of headers we've done
         header_paths_done.append(header_path)
 
 
@@ -1750,8 +1750,8 @@ def getIncludeStatements(input_el, convert_loaded_to=&#39;none&#39;, exclude_typ
 
     for type_dict in all_types:
 
-        type_el   = type_dict[&#39;el&#39;]
-        type_name = type_dict[&#39;class_name&#39;]
+        type_el   = type_dict['el']
+        type_name = type_dict['class_name']
 
         if type_name in exclude_types:
             continue
@@ -1770,97 +1770,97 @@ def getIncludeStatements(input_el, convert_loaded_to=&#39;none&#39;, exclude_typ
                 # found in the current file (above current class/function) or among the included headers. If no such class
                 # definition is found, it must be a case of simply using forward declaration.
 
-                # TODO: Why isn&#39;t it enough just to check for the &#39;incomplete&#39; key in the type_el?
+                # TODO: Why isn't it enough just to check for the 'incomplete' key in the type_el?
                 #       Need to check this again...
 
-                type_file_id = type_el.get(&#39;file&#39;)
-                type_line_number = int(type_el.get(&#39;line&#39;))
+                type_file_id = type_el.get('file')
+                type_line_number = int(type_el.get('line'))
 
-                if (&#39;incomplete&#39; in type_el.keys() and type_el.get(&#39;incomplete&#39;)==&#39;1&#39;):
+                if ('incomplete' in type_el.keys() and type_el.get('incomplete')=='1'):
                     is_incomplete = True
                 else:
                     is_incomplete = False
 
                 if (type_file_id in included_headers_dict.values()) :
                     type_definition_found = True
-                elif (type_file_id == input_el.get(&#39;file&#39;)) and (type_line_number &lt; start_line_number):
+                elif (type_file_id == input_el.get('file')) and (type_line_number &lt; start_line_number):
                     type_definition_found = True
                 else:
                     type_definition_found = False
 
-                if (not type_definition_found) and (forward_declared==&#39;exclude&#39;):
-                    # This must be a case of a type that is only forward declared. Don&#39;t include any header (as this will typically lead to a &#39;header loop&#39;).
+                if (not type_definition_found) and (forward_declared=='exclude'):
+                    # This must be a case of a type that is only forward declared. Don't include any header (as this will typically lead to a 'header loop').
                     continue
 
-                elif (type_definition_found) and (forward_declared==&#39;only&#39;):
-                    # This must be a case of a type that *is* fully declared, so we ignore it if forward_declared==&#39;only&#39;.
+                elif (type_definition_found) and (forward_declared=='only'):
+                    # This must be a case of a type that *is* fully declared, so we ignore it if forward_declared=='only'.
                     continue
                 else:
-                    if convert_loaded_to == &#39;none&#39;:
+                    if convert_loaded_to == 'none':
 
                         type_file_el = gb.id_dict[type_file_id]
-                        type_file_full_path = type_file_el.get(&#39;name&#39;)
+                        type_file_full_path = type_file_el.get('name')
 
                         # If the xml element we have for the type is only for a forward declaration
                         # we must search all other xml files for the complete type declaration.
                         if is_incomplete:
                             for xml_file_name in gb.all_name_dict.keys():
                                 try:
-                                    new_type_el = gb.all_name_dict[xml_file_name][type_name[&#39;long_templ&#39;]]
+                                    new_type_el = gb.all_name_dict[xml_file_name][type_name['long_templ']]
                                 except KeyError:
                                     new_type_el = None
 
                                 if new_type_el is not None:
-                                    if &#39;incomplete&#39; not in new_type_el.keys():
-                                        new_type_file_id = new_type_el.get(&#39;file&#39;)
+                                    if 'incomplete' not in new_type_el.keys():
+                                        new_type_file_id = new_type_el.get('file')
                                         new_type_file_el = gb.all_id_dict[xml_file_name][new_type_file_id]
                                         # Set new header path and break the loop
-                                        type_file_full_path = new_type_file_el.get(&#39;name&#39;)
+                                        type_file_full_path = new_type_file_el.get('name')
                                         break
 
                         if isHeader(type_file_el):
                             use_path = shortenHeaderPath(type_file_full_path)
-                            include_statements.append( &#39;#include &#34;&#39; + use_path + &#39;&#34;&#39;)
+                            include_statements.append( '#include &quot;' + use_path + '&quot;')
 
                         else:
-                            reason = &#34;Found declaration of loaded type &#39;%s&#39; in file &#39;%s&#39;, but this file is not recognized as a header file.&#34; % (type_name[&#39;long_templ&#39;], type_file_full_path)
-                            infomsg.NoIncludeStatementGenerated(type_name[&#39;long_templ&#39;], reason).printMessage()
+                            reason = &quot;Found declaration of loaded type '%s' in file '%s', but this file is not recognized as a header file.&quot; % (type_name['long_templ'], type_file_full_path)
+                            infomsg.NoIncludeStatementGenerated(type_name['long_templ'], reason).printMessage()
 
                     else:
                         if use_full_path:
-                            header_key = convert_loaded_to + &#39;_fullpath&#39;
+                            header_key = convert_loaded_to + '_fullpath'
                         else:
                             header_key = convert_loaded_to
 
-                        include_statements.append(&#39;#include &#34;&#39; + gb.new_header_files[type_name[&#39;long&#39;]][header_key] + &#39;&#34;&#39;)
+                        include_statements.append('#include &quot;' + gb.new_header_files[type_name['long']][header_key] + '&quot;')
 
             elif isStdType(type_el):
-                if type_name[&#39;long&#39;] in gb.std_headers:
-                    header_name = gb.std_headers[type_name[&#39;long&#39;]].strip()
-                    if (header_name[0] == &#39;&lt;&#39;) and (header_name[-1] == &#39;&gt;&#39;):
-                        include_statements.append(&#39;#include &#39; + gb.std_headers[type_name[&#39;long&#39;]])
+                if type_name['long'] in gb.std_headers:
+                    header_name = gb.std_headers[type_name['long']].strip()
+                    if (header_name[0] == '&lt;') and (header_name[-1] == '&gt;'):
+                        include_statements.append('#include ' + gb.std_headers[type_name['long']])
                     else:
-                        include_statements.append(&#39;#include &#34;&#39; + gb.std_headers[type_name[&#39;long&#39;]] + &#39;&#34;&#39;)
+                        include_statements.append('#include &quot;' + gb.std_headers[type_name['long']] + '&quot;')
                 else:
-                    reason = &#34;The standard type &#39;%s&#39; has no specified header file. Please update modules/gb.py.&#34; % type_name[&#39;long_templ&#39;]
-                    infomsg.NoIncludeStatementGenerated(type_name[&#39;long_templ&#39;], reason).printMessage()
+                    reason = &quot;The standard type '%s' has no specified header file. Please update modules/gb.py.&quot; % type_name['long_templ']
+                    infomsg.NoIncludeStatementGenerated(type_name['long_templ'], reason).printMessage()
 
             else:
-                is_known, index = isInList(type_name[&#39;long_templ&#39;], cfg.known_classes.keys(), return_index=True, ignore_whitespace=True)
+                is_known, index = isInList(type_name['long_templ'], cfg.known_classes.keys(), return_index=True, ignore_whitespace=True)
                 if not is_known:
-                    is_known, index = isInList(type_name[&#39;long&#39;], cfg.known_classes.keys(), return_index=True, ignore_whitespace=True)
+                    is_known, index = isInList(type_name['long'], cfg.known_classes.keys(), return_index=True, ignore_whitespace=True)
 
                 if is_known:
                     header_name = list(cfg.known_classes.values())[index]
-                    if (header_name[0] == &#39;&lt;&#39;) and (header_name[-1] == &#39;&gt;&#39;):
-                        include_statements.append(&#39;#include &#39; + header_name)
+                    if (header_name[0] == '&lt;') and (header_name[-1] == '&gt;'):
+                        include_statements.append('#include ' + header_name)
                     else:
-                        include_statements.append(&#39;#include &#34;&#39; + header_name + &#39;&#34;&#39;)
+                        include_statements.append('#include &quot;' + header_name + '&quot;')
                 else:
-                    reason = &#34;The type &#39;%s&#39; has no specified header file. Please update the &#39;known_classes&#39; dictionary in the config file.&#34; % type_name[&#39;long_templ&#39;]
-                    infomsg.NoIncludeStatementGenerated(type_name[&#39;long_templ&#39;], reason).printMessage()
+                    reason = &quot;The type '%s' has no specified header file. Please update the 'known_classes' dictionary in the config file.&quot; % type_name['long_templ']
+                    infomsg.NoIncludeStatementGenerated(type_name['long_templ'], reason).printMessage()
         else:
-            infomsg.NoIncludeStatementGenerated( type_name[&#39;long_templ&#39;] ).printMessage()
+            infomsg.NoIncludeStatementGenerated( type_name['long_templ'] ).printMessage()
 
     # Remove duplicates and return list (ordered)
     include_statements = list( OrderedDict.fromkeys(include_statements) )
@@ -1876,10 +1876,10 @@ def getIncludeStatements(input_el, convert_loaded_to=&#39;none&#39;, exclude_typ
 
 def getOriginalHeaderPath(el, full_path=False):
 
-    file_id = el.get(&#39;file&#39;)
+    file_id = el.get('file')
     file_el = gb.id_dict[file_id]
 
-    file_full_path = file_el.get(&#39;name&#39;)
+    file_full_path = file_el.get('name')
 
     if isHeader(file_el):
 
@@ -1889,7 +1889,7 @@ def getOriginalHeaderPath(el, full_path=False):
             header_path = os.path.basename(file_full_path)
 
     else:
-        raise exceptions.ReturnError(&#34;The file %s is not recognized as a header file.&#34; % file_full_path)
+        raise exceptions.ReturnError(&quot;The file %s is not recognized as a header file.&quot; % file_full_path)
 
     return header_path
 
@@ -1926,7 +1926,7 @@ def shortenHeaderPath(full_path):
 
 def constrNamespaceFromTags(content, new_namespace, open_tag, close_tag):
 
-    new_namespace_list = new_namespace.split(&#39;::&#39;)
+    new_namespace_list = new_namespace.split('::')
 
     new_content = content
     while True:
@@ -1942,7 +1942,7 @@ def constrNamespaceFromTags(content, new_namespace, open_tag, close_tag):
             # return content
             break
         elif (open_pos == -1) or (close_pos == -1):
-            raise Exception(&#39;Matching pair of namespace tags %s and %s not found in given content.&#39; % (open_tag, close_tag))
+            raise Exception('Matching pair of namespace tags %s and %s not found in given content.' % (open_tag, close_tag))
         else:
             pass
 
@@ -1952,15 +1952,15 @@ def constrNamespaceFromTags(content, new_namespace, open_tag, close_tag):
         content_after  = prev_content[close_pos:]
 
         # Remove the namespace tags
-        content_within = content_within.replace(open_tag, &#39;&#39;)
-        content_after  = content_after.replace(close_tag, &#39;&#39;, 1)
+        content_within = content_within.replace(open_tag, '')
+        content_after  = content_after.replace(close_tag, '', 1)
 
         # Add indentation to middle part
         content_within = addIndentation(content_within, cfg.indent*len(new_namespace_list))
 
         # Contruct new namespace and combine code
-        open_new_namespace_code  = constrNamespace(new_namespace_list, &#39;open&#39;, indent=cfg.indent)
-        close_new_namespace_code = constrNamespace(new_namespace_list, &#39;close&#39;, indent=cfg.indent)
+        open_new_namespace_code  = constrNamespace(new_namespace_list, 'open', indent=cfg.indent)
+        close_new_namespace_code = constrNamespace(new_namespace_list, 'close', indent=cfg.indent)
 
         new_content = content_before + open_new_namespace_code + content_within + close_new_namespace_code + content_after
 
@@ -1976,27 +1976,27 @@ def replaceCodeTags(input, file_input=False, write_file=False):
 
     # Input is either a file name or a string with content
     if file_input:
-        f = open(input, &#39;r&#39;)
+        f = open(input, 'r')
         new_content = f.read()
         f.close()
     else:
         new_content = input
 
     # Replace various tags in template code with code specific for the current backend
-    new_content = new_content.replace(&#39;__BACKEND_NAME__&#39;         ,  cfg.gambit_backend_name)
-    new_content = new_content.replace(&#39;__BACKEND_VERSION__&#39;      ,  cfg.gambit_backend_version)
-    new_content = new_content.replace(&#39;__BACKEND_SAFE_VERSION__&#39; ,  gb.gambit_backend_safeversion)
-    new_content = new_content.replace(&#39;__BACKEND_REFERENCE__&#39;    ,  cfg.gambit_backend_reference)
-    new_content = new_content.replace(&#39;__CODE_SUFFIX__&#39;          ,  gb.code_suffix)
+    new_content = new_content.replace('__BACKEND_NAME__'         ,  cfg.gambit_backend_name)
+    new_content = new_content.replace('__BACKEND_VERSION__'      ,  cfg.gambit_backend_version)
+    new_content = new_content.replace('__BACKEND_SAFE_VERSION__' ,  gb.gambit_backend_safeversion)
+    new_content = new_content.replace('__BACKEND_REFERENCE__'    ,  cfg.gambit_backend_reference)
+    new_content = new_content.replace('__CODE_SUFFIX__'          ,  gb.code_suffix)
 
-    new_content = new_content.replace(&#39;__PATH_TO_FRWD_DECLS_ABS_CLASSES_HEADER__&#39;, os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, gb.frwd_decls_abs_fname + cfg.header_extension))
-    new_content = new_content.replace(&#39;__PATH_TO_IDENTIFICATION_HEADER__&#39;        , os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, &#39;identification.hpp&#39;))
-    new_content = new_content.replace(&#39;__PATH_TO_BACKEND_UNDEFS_HEADER__&#39;        , os.path.join(gb.gambit_backend_incl_dir, &#34;backend_undefs.hpp&#34;))
+    new_content = new_content.replace('__PATH_TO_FRWD_DECLS_ABS_CLASSES_HEADER__', os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, gb.frwd_decls_abs_fname + cfg.header_extension))
+    new_content = new_content.replace('__PATH_TO_IDENTIFICATION_HEADER__'        , os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, 'identification.hpp'))
+    new_content = new_content.replace('__PATH_TO_BACKEND_UNDEFS_HEADER__'        , os.path.join(gb.gambit_backend_incl_dir, &quot;backend_undefs.hpp&quot;))
 
 
     # Should a new file be written?
     if file_input and write_file:
-        f.open(input,&#39;w&#39;)
+        f.open(input,'w')
         f.write(new_content)
         f.close()
 
@@ -2014,7 +2014,7 @@ def removeCodeTags(content, remove_tags_list):
     new_content = content
     # Remove tags
     for tag in remove_tags_list:
-        new_content = new_content.replace(tag, &#39;&#39;)
+        new_content = new_content.replace(tag, '')
 
     # Return code
     return new_content
@@ -2035,92 +2035,92 @@ def constrLoadedTypesHeaderContent():
     # Loop over all classes
     for class_name in gb.classes_done:
 
-        if not class_name[&#39;long&#39;] in gb.factory_info.keys():
-            reason = &#34;Probably there are no public and accepted constructors.&#34;
-            infomsg.NoLoadedTypesEntry(class_name[&#39;long&#39;], reason).printMessage()
+        if not class_name['long'] in gb.factory_info.keys():
+            reason = &quot;Probably there are no public and accepted constructors.&quot;
+            infomsg.NoLoadedTypesEntry(class_name['long'], reason).printMessage()
 
         else:
 
-            class_line = &#39;  (( /*class*/&#39;
+            class_line = '  (( /*class*/'
 
-            namespace, class_name_short = removeNamespace(class_name[&#39;long&#39;], return_namespace=True)
+            namespace, class_name_short = removeNamespace(class_name['long'], return_namespace=True)
 
-            if namespace == &#39;&#39;:
+            if namespace == '':
                 namespace_list = []
             else:
-                namespace_list = namespace.split(&#39;::&#39;)
+                namespace_list = namespace.split('::')
 
             for ns_part in namespace_list:
-                class_line += &#39;(&#39; + ns_part + &#39;)&#39;
+                class_line += '(' + ns_part + ')'
 
-            class_line += &#39;(&#39; + class_name[&#39;short&#39;] + &#39;),&#39;
+            class_line += '(' + class_name['short'] + '),'
 
 
-            class_line += &#39;    /*constructors*/&#39;
+            class_line += '    /*constructors*/'
 
-            for info_dict in gb.factory_info[ class_name[&#39;long&#39;] ]:
-                class_line += &#39;((&#34;&#39; + info_dict[&#39;name&#39;] + &#39;&#34;,&#39; + info_dict[&#39;args_bracket&#39;].replace(&#39; ::&#39;, &#39; &#39;).replace(&#39;(::&#39;, &#39;(&#39;) + &#39;)) &#39;
+            for info_dict in gb.factory_info[ class_name['long'] ]:
+                class_line += '((&quot;' + info_dict['name'] + '&quot;,' + info_dict['args_bracket'].replace(' ::', ' ').replace('(::', '(') + ')) '
 
-            class_line += &#39;)) \\&#39;
+            class_line += ')) \\'
             class_lines.append(class_line)
 
-    class_lines_code  = &#39;&#39;
-    class_lines_code += &#39;#define &#39; + gb.gambit_backend_name_full + &#39;_all_data \\\n&#39;
-    class_lines_code += &#39;\n&#39;.join(class_lines) + &#39;\n&#39;
+    class_lines_code  = ''
+    class_lines_code += '#define ' + gb.gambit_backend_name_full + '_all_data \\\n'
+    class_lines_code += '\n'.join(class_lines) + '\n'
 
 
     #
-    # Construct include guards with additional  &#39; 1&#39; appended to the line starting with #define
+    # Construct include guards with additional  ' 1' appended to the line starting with #define
     #
-    incl_guard = addIncludeGuard(&#39;&#39;, &#39;loaded_types.hpp&#39;, prefix=&#39;&#39;, suffix=gb.gambit_backend_name_full)
-    incl_guard_lines = incl_guard.split(&#39;\n&#39;)
+    incl_guard = addIncludeGuard('', 'loaded_types.hpp', prefix='', suffix=gb.gambit_backend_name_full)
+    incl_guard_lines = incl_guard.split('\n')
 
-    incl_guard_start = &#39;\n&#39;.join(incl_guard_lines[:2]) + &#39; 1\n&#39;
-    incl_guard_end   = incl_guard_lines[-2] + &#39;\n&#39;
+    incl_guard_start = '\n'.join(incl_guard_lines[:2]) + ' 1\n'
+    incl_guard_end   = incl_guard_lines[-2] + '\n'
 
 
     #
     # Construct include statements, surrounded by pragma directives
     #
-    incl_statements_code = &#39;&#39;
+    incl_statements_code = ''
 
     for pragma_directive in cfg.pragmas_begin:
-        incl_statements_code += pragma_directive.strip() + &#39;\n&#39;
+        incl_statements_code += pragma_directive.strip() + '\n'
 
     for class_name in gb.classes_done:
-        if class_name[&#39;long&#39;] in gb.factory_info.keys():
-            namespace, class_name_short = removeNamespace(class_name[&#39;long&#39;], return_namespace=True)
-            incl_statements_code += &#39;#include &#34;&#39; + gb.wrapper_header_prefix + class_name[&#39;short&#39;] + cfg.header_extension + &#39;&#34;\n&#39;
-    incl_statements_code += &#39;#include &#34;identification.hpp&#34;\n&#39;
+        if class_name['long'] in gb.factory_info.keys():
+            namespace, class_name_short = removeNamespace(class_name['long'], return_namespace=True)
+            incl_statements_code += '#include &quot;' + gb.wrapper_header_prefix + class_name['short'] + cfg.header_extension + '&quot;\n'
+    incl_statements_code += '#include &quot;identification.hpp&quot;\n'
 
     for pragma_directive in cfg.pragmas_end:
-        incl_statements_code += pragma_directive.strip() + &#39;\n&#39;
+        incl_statements_code += pragma_directive.strip() + '\n'
 
 
     #
     # Combine everything to construct header code
     #
-    code  = &#39;&#39;
+    code  = ''
     code += incl_guard_start
 
-    code += &#39;\n&#39;
+    code += '\n'
     code += incl_statements_code
 
-    code += &#39;\n&#39;
-    code += &#39;// Indicate which types are provided by this backend, and what the symbols of their factories are.\n&#39;
+    code += '\n'
+    code += '// Indicate which types are provided by this backend, and what the symbols of their factories are.\n'
     code += class_lines_code
 
-    code += &#39;\n&#39;
-    code += &#39;// If the default version has been loaded, set it as default.\n&#39;
-    code += &#39;#if ALREADY_LOADED(CAT_3(BACKENDNAME,_,CAT(Default_,BACKENDNAME)))\n&#39;
-    code += &#39;  SET_DEFAULT_VERSION_FOR_LOADING_TYPES(BACKENDNAME,SAFE_VERSION,CAT(Default_,BACKENDNAME))\n&#39;
-    code += &#39;#endif\n&#39;
+    code += '\n'
+    code += '// If the default version has been loaded, set it as default.\n'
+    code += '#if ALREADY_LOADED(CAT_3(BACKENDNAME,_,CAT(Default_,BACKENDNAME)))\n'
+    code += '  SET_DEFAULT_VERSION_FOR_LOADING_TYPES(BACKENDNAME,SAFE_VERSION,CAT(Default_,BACKENDNAME))\n'
+    code += '#endif\n'
 
-    code += &#39;\n&#39;
-    code += &#39;// Undefine macros to avoid conflict with other backends.\n&#39;
-    code += &#39;#include &#34;&#39; + os.path.join(gb.gambit_backend_incl_dir, &#34;backend_undefs.hpp&#34;) + &#39;&#34;\n&#39;
+    code += '\n'
+    code += '// Undefine macros to avoid conflict with other backends.\n'
+    code += '#include &quot;' + os.path.join(gb.gambit_backend_incl_dir, &quot;backend_undefs.hpp&quot;) + '&quot;\n'
 
-    code += &#39;\n&#39;
+    code += '\n'
     code += incl_guard_end
 
     return code
@@ -2137,17 +2137,17 @@ def constrEnumDeclHeader(enum_el_list, file_output_path):
 
     # If this is the first time this function is executed, read initial code from header_templates/ folder
     if file_output_path not in gb.new_code.keys():
-        f = open(gb.boss_dir+&#39;/header_templates/standard_header_template.hpp&#39;)
+        f = open(gb.boss_dir+'/header_templates/standard_header_template.hpp')
         initial_code = f.read()
         f.close()
         initial_code_tuple = (0, initial_code)
-        gb.new_code[file_output_path] = {&#39;code_tuples&#39;:[initial_code_tuple], &#39;add_include_guard&#39;:True}
+        gb.new_code[file_output_path] = {'code_tuples':[initial_code_tuple], 'add_include_guard':True}
 
 
-    current_code = gb.new_code[file_output_path][&#39;code_tuples&#39;][0][1]
+    current_code = gb.new_code[file_output_path]['code_tuples'][0][1]
 
-    insert_code = &#39;&#39;
-    tag_pos = current_code.find(&#39;__INSERT_CODE_HERE__&#39;)
+    insert_code = ''
+    tag_pos = current_code.find('__INSERT_CODE_HERE__')
 
     for enum_el in enum_el_list:
 
@@ -2158,10 +2158,10 @@ def constrEnumDeclHeader(enum_el_list, file_output_path):
         # Get enum names and values
         enum_members_list = []
         for sub_el in list(enum_el):
-            if sub_el.tag == &#39;EnumValue&#39;:
-                member_string = sub_el.get(&#39;name&#39;) + &#39;=&#39; + sub_el.get(&#39;init&#39;)
+            if sub_el.tag == 'EnumValue':
+                member_string = sub_el.get('name') + '=' + sub_el.get('init')
                 enum_members_list.append(member_string)
-        all_members_string = &#39;, &#39;.join(enum_members_list)
+        all_members_string = ', '.join(enum_members_list)
 
         # Get namespace list
         namespace_list = getNamespaces(enum_el)
@@ -2169,12 +2169,12 @@ def constrEnumDeclHeader(enum_el_list, file_output_path):
         n_indents = len(namespace_list)
 
         # - Open namespace
-        insert_code += constrNamespace(namespace_list, &#39;open&#39;)
+        insert_code += constrNamespace(namespace_list, 'open')
 
-        insert_code += &#39; &#39;*n_indents*cfg.indent + &#39;typedef enum {&#39; + all_members_string + &#39;} &#39; + enum_el.get(&#39;name&#39;) + &#39;;\n&#39;
+        insert_code += ' '*n_indents*cfg.indent + 'typedef enum {' + all_members_string + '} ' + enum_el.get('name') + ';\n'
 
         # - Close namespace
-        insert_code += constrNamespace(namespace_list, &#39;close&#39;)
+        insert_code += constrNamespace(namespace_list, 'close')
 
     new_code = current_code[:tag_pos] + insert_code + current_code[tag_pos:]
 
@@ -2186,7 +2186,7 @@ def constrEnumDeclHeader(enum_el_list, file_output_path):
     new_code_tuple = (0,new_code)
 
     # Overwrite existing code tuple
-    gb.new_code[file_output_path][&#39;code_tuples&#39;] = [(new_code_tuple)]
+    gb.new_code[file_output_path]['code_tuples'] = [(new_code_tuple)]
 
 # ====== END: constrEnumDeclHeader ========
 
@@ -2198,59 +2198,59 @@ def constrEnumDeclHeader(enum_el_list, file_output_path):
 
 def castxmlRunner(input_file_path, include_paths_list, xml_output_path, use_castxml_path=None):
 
-    # Avoid including intel headers when in &#34;gnu mode&#34; by
+    # Avoid including intel headers when in &quot;gnu mode&quot; by
     # temporarily unsetting some environment variables
-    if &#39;gnu&#39; in cfg.castxml_cc_id:
+    if 'gnu' in cfg.castxml_cc_id:
         temp_env_vars = {}
-        for var_name in [&#39;CPATH&#39;, &#39;C_INCLUDE_PATH&#39;, &#39;CPLUS_INCLUDE_PATH&#39;]:
+        for var_name in ['CPATH', 'C_INCLUDE_PATH', 'CPLUS_INCLUDE_PATH']:
             try:
-                if &#39;intel&#39; in os.environ[var_name].lower():
+                if 'intel' in os.environ[var_name].lower():
                     temp_env_vars[var_name] = str(os.environ[var_name])
-                    os.environ[var_name] = &#39;&#39;
+                    os.environ[var_name] = ''
             except KeyError:
                 pass
 
 
     # Set the use_castxml_path if it is not already set
-    castxml_system_path = &#39;castxml&#39;
-    castxml_local_path = os.path.join(gb.boss_dir,&#34;castxml/bin/castxml&#34;)
+    castxml_system_path = 'castxml'
+    castxml_local_path = os.path.join(gb.boss_dir,&quot;castxml/bin/castxml&quot;)
     if use_castxml_path is None:
         if gb.has_castxml_system:
             use_castxml_path = castxml_system_path
         elif gb.has_castxml_local:
             use_castxml_path = castxml_local_path
         else:
-            raise Exception(&#39;No castxml binary found.&#39;)
+            raise Exception('No castxml binary found.')
 
 
     # Construct castxml command to run
-    castxml_cmd = use_castxml_path + &#39; --castxml-gccxml -x c++&#39;
+    castxml_cmd = use_castxml_path + ' --castxml-gccxml -x c++'
 
     # Add castxml settings from cfg file
-    castxml_cmd += &#39; --castxml-cc-&#39; + cfg.castxml_cc_id + &#39; &#34;(&#34; &#39; + cfg.castxml_cc
-    if cfg.castxml_cc_opt != &#39;&#39;:
-        castxml_cmd += &#39; &#39; + cfg.castxml_cc_opt
-    castxml_cmd += &#39; &#34;)&#34; &#39;
+    castxml_cmd += ' --castxml-cc-' + cfg.castxml_cc_id + ' &quot;(&quot; ' + cfg.castxml_cc
+    if cfg.castxml_cc_opt != '':
+        castxml_cmd += ' ' + cfg.castxml_cc_opt
+    castxml_cmd += ' &quot;)&quot; '
 
     # - Add include paths
     for incl_path in include_paths_list:
-        castxml_cmd += &#39; -I&#39; + incl_path
+        castxml_cmd += ' -I' + incl_path
 
     # - Add standard include paths
     for std_incl_path in gb.std_include_paths:
-        castxml_cmd += &#39; -I&#39; + std_incl_path
+        castxml_cmd += ' -I' + std_incl_path
 
     # - Add the input file path (full path)
-    castxml_cmd += &#39; &#39; + input_file_path
+    castxml_cmd += ' ' + input_file_path
 
     # - Add castxml option that specifies the xml output file: input_file_short_name.xml
-    castxml_cmd += &#39; -o &#39; + xml_output_path
+    castxml_cmd += ' -o ' + xml_output_path
 
     # Run castxml
-    print(&#39;  Running command: &#39; + castxml_cmd)
+    print('  Running command: ' + castxml_cmd)
 
     did_fail = False
-    error_message = &#39;&#39;
+    error_message = ''
     output_tmpfile = tempfile.TemporaryFile()
     try:
         p = subprocess.Popen(shlex.split(castxml_cmd), stdout=output_tmpfile, stderr=output_tmpfile)
@@ -2260,7 +2260,7 @@ def castxmlRunner(input_file_path, include_paths_list, xml_output_path, use_cast
         error_message = e.message
 
     # Reset environment variables
-    if &#39;gnu&#39; in cfg.castxml_cc_id:
+    if 'gnu' in cfg.castxml_cc_id:
         for var_name, value in temp_env_vars.items():
             os.environ[var_name] = value
 
@@ -2274,39 +2274,39 @@ def castxmlRunner(input_file_path, include_paths_list, xml_output_path, use_cast
         did_fail = True
 
     if did_fail:
-        print(&#39;  &#39; + modifyText(&#39;ERROR: CastXML failed.&#39;,&#39;red&#39;))       
+        print('  ' + modifyText('ERROR: CastXML failed.','red'))       
         # Get error message
         print()
-        print(modifyText(&#39;START CASTXML OUTPUT&#39;,&#39;underline&#39;))
+        print(modifyText('START CASTXML OUTPUT','underline'))
         print()
         print(output)
-        print(modifyText(&#39;END CASTXML OUTPUT&#39;,&#39;underline&#39;))
+        print(modifyText('END CASTXML OUTPUT','underline'))
         print()
-        if error_message != &#39;&#39;:
-            print(&#34;CalledProcessError.message:&#34;, error_message)
+        if error_message != '':
+            print(&quot;CalledProcessError.message:&quot;, error_message)
             print()
 
     # If it fails with the syste-wide castxml binary, try again with the local one
     if (did_fail and use_castxml_path==castxml_system_path and gb.has_castxml_local):
-        print(&#39;  &#39; + modifyText(&#39;Will retry with castxml binary in &#39; + castxml_local_path,&#39;yellow&#39;) )
+        print('  ' + modifyText('Will retry with castxml binary in ' + castxml_local_path,'yellow') )
         did_fail = False
         use_castxml_path = castxml_local_path
         castxmlRunner(input_file_path, include_paths_list, xml_output_path, use_castxml_path=use_castxml_path)
 
 
     # If it fails with icpc, try again with g++.
-    if (&#34;gnu&#34; in cfg.castxml_cc_id) and (&#34;icpc&#34; in cfg.castxml_cc) and did_fail:
+    if (&quot;gnu&quot; in cfg.castxml_cc_id) and (&quot;icpc&quot; in cfg.castxml_cc) and did_fail:
         print()
-        print(&#39;  &#39; + modifyText(&#39;Will retry with --castxml-cc=g++&#39;,&#39;yellow&#39;))
+        print('  ' + modifyText('Will retry with --castxml-cc=g++','yellow'))
         print()
-        cfg.castxml_cc = &#39;g++&#39;
+        cfg.castxml_cc = 'g++'
         castxmlRunner(input_file_path, include_paths_list, xml_output_path, use_castxml_path=use_castxml_path)
     # Print error report
     elif did_fail:
-        raise Exception(&#39;castxml failed&#39;)
+        raise Exception('castxml failed')
 
     else:
-        print(&#39;  &#39; + modifyText(&#39;Command finished successfully.&#39;,&#39;green&#39;))
+        print('  ' + modifyText('Command finished successfully.','green'))
     print()
 
 # ====== END: castxmlRunner ========
@@ -2384,12 +2384,12 @@ def fillAcceptedTypesList():
 
 
             # Only consider types
-            if el.tag not in [&#39;Class&#39;, &#39;Struct&#39;, &#39;FundamentalType&#39;, &#39;Enumeration&#39;]:
+            if el.tag not in ['Class', 'Struct', 'FundamentalType', 'Enumeration']:
                 continue
 
             type_counter += 1
             if type_counter%500 == 0:
-                print(&#39;  - %i types classified...&#39; % (type_counter))
+                print('  - %i types classified...' % (type_counter))
 
 
             # To save a bit of time, construct class name dict once and pass to remaining checks
@@ -2409,7 +2409,7 @@ def fillAcceptedTypesList():
 
 
             # Skip incomplete types
-            if (&#39;incomplete&#39; in el.keys()) and (el.get(&#39;incomplete&#39;) == &#39;1&#39;):
+            if ('incomplete' in el.keys()) and (el.get('incomplete') == '1'):
                 continue
 
             #
@@ -2433,7 +2433,7 @@ def fillAcceptedTypesList():
             # #
             # is_enumeration = isEnumeration(el)
             # if is_enumeration:
-            #     new_enumeration_types.append( &#39;::&#39;.join( getNamespaces(el, include_self=True) ) )
+            #     new_enumeration_types.append( '::'.join( getNamespaces(el, include_self=True) ) )
 
 
             #
@@ -2456,7 +2456,7 @@ def fillAcceptedTypesList():
 
 
     # Print final number of types classified
-    print(&#39;  - %i types classified.&#39; % (type_counter))
+    print('  - %i types classified.' % (type_counter))
 
     # Fill global list
     gb.accepted_types = list(loaded_classes) + list(known_classes) + list(fundamental_types) + list(std_types)
@@ -2481,10 +2481,10 @@ def isProblematicType(el):
     # Check: types that use native types as template arguments
     #
 
-    if el.tag in [&#39;Class&#39;, &#39;Struct&#39;, &#39;FundamentalType&#39;]:
+    if el.tag in ['Class', 'Struct', 'FundamentalType']:
 
         # Get list of all template arguments (unpack any nested template arguments)
-        unpacked_template_args = getAllTemplateTypes(el.get(&#39;name&#39;))
+        unpacked_template_args = getAllTemplateTypes(el.get('name'))
 
         # If no template arguments, continue
         if unpacked_template_args == []:
@@ -2534,7 +2534,7 @@ def addParentClasses():
         # Loop over all named elements in the xml file
         for full_name, el in gb.name_dict.items():
 
-            if el.tag in [&#39;Class&#39;, &#39;Struct&#39;]:
+            if el.tag in ['Class', 'Struct']:
 
                 if isLoadedClass(el):
 
@@ -2549,8 +2549,8 @@ def addParentClasses():
                         class_name = classutils.getClassNameDict(parent_el)
 
                         # - Update cfg.load_classes
-                        if class_name[&#39;long_templ&#39;] not in cfg.load_classes:
-                            cfg.load_classes.append(class_name[&#39;long_templ&#39;])
+                        if class_name['long_templ'] not in cfg.load_classes:
+                            cfg.load_classes.append(class_name['long_templ'])
 
 # ====== END: addParentClasses ========
 
@@ -2577,7 +2577,7 @@ def fillParentsOfLoadedClassesList():
         # Loop over all named elements in the xml file
         for full_name, el in gb.name_dict.items():
 
-            if el.tag in [&#39;Class&#39;, &#39;Struct&#39;]:
+            if el.tag in ['Class', 'Struct']:
 
                 if isLoadedClass(el):
 
@@ -2592,11 +2592,11 @@ def fillParentsOfLoadedClassesList():
                         class_name = classutils.getClassNameDict(parent_el)
 
                         # Append to gb.parents_of_loaded_classes
-                        if class_name[&#39;long_templ&#39;] not in gb.parents_of_loaded_classes:
-                            gb.parents_of_loaded_classes.append(class_name[&#39;long_templ&#39;])
+                        if class_name['long_templ'] not in gb.parents_of_loaded_classes:
+                            gb.parents_of_loaded_classes.append(class_name['long_templ'])
 
                         # Print info
-                        msg = &#39;  - %s is parent of %s.&#39; % (class_name[&#39;long_templ&#39;], full_name)
+                        msg = '  - %s is parent of %s.' % (class_name['long_templ'], full_name)
                         if msg not in messages:
                             print(msg)
                             messages.append(msg)
@@ -2628,16 +2628,16 @@ def xmlFilesToDicts(xml_files):
         for el in list(root):
 
             # Fill id-based dict
-            gb.all_id_dict[xml_file][el.get(&#39;id&#39;)] = el
+            gb.all_id_dict[xml_file][el.get('id')] = el
 
         for el in list(root):
 
             # Determine name
-            if &#39;name&#39; in el.keys():
+            if 'name' in el.keys():
                 namespaces_list = getNamespaces(el, include_self=True, xml_file_name=xml_file)
-                full_name = &#39;::&#39;.join(namespaces_list)
+                full_name = '::'.join(namespaces_list)
             else:
-                # Skip elements that don&#39;t have a name
+                # Skip elements that don't have a name
                 continue
 
             # Fill name-based dict
@@ -2693,18 +2693,18 @@ def initGlobalXMLdicts(xml_path, id_and_name_only=False):
 
 
         # Update global dict: file name --&gt; file xml element
-        if el.tag == &#39;File&#39;:
-            gb.file_dict[el.get(&#39;name&#39;)] = el
+        if el.tag == 'File':
+            gb.file_dict[el.get('name')] = el
 
 
         # Update global dict: std type --&gt; type xml element
         if isStdType(el):
             class_name = classutils.getClassNameDict(el)
-            gb.std_types_dict[class_name[&#39;long_templ&#39;]] = el
+            gb.std_types_dict[class_name['long_templ']] = el
 
 
         # Update global dict of loaded classes in this xml file: class name --&gt; class xml element
-        if el.tag in [&#39;Class&#39;, &#39;Struct&#39;]:
+        if el.tag in ['Class', 'Struct']:
 
             try:
                 class_name = classutils.getClassNameDict(el)
@@ -2713,40 +2713,40 @@ def initGlobalXMLdicts(xml_path, id_and_name_only=False):
 
             # Check if we have done this class already
             if class_name in gb.classes_done:
-                infomsg.ClassAlreadyDone( class_name[&#39;long_templ&#39;] ).printMessage()
+                infomsg.ClassAlreadyDone( class_name['long_templ'] ).printMessage()
                 continue
 
             # Check that class is requested
-            if (class_name[&#39;long_templ&#39;] in cfg.load_classes):
+            if (class_name['long_templ'] in cfg.load_classes):
 
                 # Check that class is complete
                 if isComplete(el):
 
                     # Store class xml element
-                    gb.loaded_classes_in_xml[class_name[&#39;long_templ&#39;]] = el
+                    gb.loaded_classes_in_xml[class_name['long_templ']] = el
 
 
         # Update global dict: typedef name --&gt; typedef xml element
-        if el.tag == &#39;Typedef&#39;:
+        if el.tag == 'Typedef':
 
             # Only accept native typedefs:
             if isNative(el):
 
-                typedef_name = el.get(&#39;name&#39;)
+                typedef_name = el.get('name')
 
                 type_dict = findType(el)
-                type_el = type_dict[&#39;el&#39;]
+                type_el = type_dict['el']
 
                 # If underlying type is a fundamental or standard type, accept it right away
                 if isFundamental(type_el) or isStdType(type_el):
                     gb.typedef_dict[typedef_name] = el
 
-                # If underlying type is a class/struct, check if it&#39;s acceptable
-                elif type_el.tag in [&#39;Class&#39;, &#39;Struct&#39;]:
+                # If underlying type is a class/struct, check if it's acceptable
+                elif type_el.tag in ['Class', 'Struct']:
 
                     type_name = classutils.getClassNameDict(type_el)
 
-                    if type_name[&#39;long_templ&#39;] in cfg.load_classes:
+                    if type_name['long_templ'] in cfg.load_classes:
                         gb.typedef_dict[typedef_name] = el
 
                 # If neither fundamental or class/struct, ignore it.
@@ -2755,7 +2755,7 @@ def initGlobalXMLdicts(xml_path, id_and_name_only=False):
 
 
         # Update global dict: function name --&gt; function xml element
-        if el.tag == &#39;Function&#39;:
+        if el.tag == 'Function':
 
             try:
                 func_name = funcutils.getFunctionNameDict(el)
@@ -2764,11 +2764,11 @@ def initGlobalXMLdicts(xml_path, id_and_name_only=False):
 
             # Check if we have done this function already
             if func_name in gb.functions_done:
-                infomsg.FunctionAlreadyDone( func_name[&#39;long_templ_args&#39;] ).printMessage()
+                infomsg.FunctionAlreadyDone( func_name['long_templ_args'] ).printMessage()
                 continue
 
-            if func_name[&#39;long_templ_args&#39;] in cfg.load_functions:
-                gb.func_dict[func_name[&#39;long_templ_args&#39;]] = el
+            if func_name['long_templ_args'] in cfg.load_functions:
+                gb.func_dict[func_name['long_templ_args']] = el
 
 
 
@@ -2777,29 +2777,29 @@ def initGlobalXMLdicts(xml_path, id_and_name_only=False):
 
             class_name = classutils.getClassNameDict(el)
 
-            class_name_short = class_name[&#39;short&#39;]
-            class_name_long  = class_name[&#39;long&#39;]
+            class_name_short = class_name['short']
+            class_name_long  = class_name['long']
 
             if class_name_long not in gb.new_header_files.keys():
 
                 abstract_header_name     = gb.abstr_header_prefix + class_name_short + cfg.header_extension
                 wrapper_header_name      = gb.wrapper_header_prefix + class_name_short + cfg.header_extension
-                wrapper_decl_header_name = gb.wrapper_header_prefix + class_name_short + &#39;_decl&#39; + cfg.header_extension
-                wrapper_def_header_name  = gb.wrapper_header_prefix + class_name_short + &#39;_def&#39;  + cfg.header_extension
+                wrapper_decl_header_name = gb.wrapper_header_prefix + class_name_short + '_decl' + cfg.header_extension
+                wrapper_def_header_name  = gb.wrapper_header_prefix + class_name_short + '_def'  + cfg.header_extension
 
                 abstract_header_fullpath     = os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, gb.abstr_header_prefix + class_name_short + cfg.header_extension )
                 wrapper_header_fullpath      = os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, gb.wrapper_header_prefix + class_name_short + cfg.header_extension )
-                wrapper_decl_header_fullpath = os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, gb.wrapper_header_prefix + class_name_short + &#39;_decl&#39; + cfg.header_extension )
-                wrapper_def_header_fullpath  = os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, gb.wrapper_header_prefix + class_name_short + &#39;_def&#39;  + cfg.header_extension )
+                wrapper_decl_header_fullpath = os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, gb.wrapper_header_prefix + class_name_short + '_decl' + cfg.header_extension )
+                wrapper_def_header_fullpath  = os.path.join(gb.backend_types_basedir, gb.gambit_backend_name_full, gb.wrapper_header_prefix + class_name_short + '_def'  + cfg.header_extension )
 
-                gb.new_header_files[class_name_long] = {    &#39;abstract&#39;: abstract_header_name,
-                                                            &#39;wrapper&#39;: wrapper_header_name,
-                                                            &#39;wrapper_decl&#39;: wrapper_decl_header_name,
-                                                            &#39;wrapper_def&#39;: wrapper_def_header_name,
-                                                            &#39;abstract_fullpath&#39;: abstract_header_fullpath,
-                                                            &#39;wrapper_fullpath&#39;: wrapper_header_fullpath,
-                                                            &#39;wrapper_decl_fullpath&#39;: wrapper_decl_header_fullpath,
-                                                            &#39;wrapper_def_fullpath&#39;: wrapper_def_header_fullpath    }
+                gb.new_header_files[class_name_long] = {    'abstract': abstract_header_name,
+                                                            'wrapper': wrapper_header_name,
+                                                            'wrapper_decl': wrapper_decl_header_name,
+                                                            'wrapper_def': wrapper_def_header_name,
+                                                            'abstract_fullpath': abstract_header_fullpath,
+                                                            'wrapper_fullpath': wrapper_header_fullpath,
+                                                            'wrapper_decl_fullpath': wrapper_decl_header_fullpath,
+                                                            'wrapper_def_fullpath': wrapper_def_header_fullpath    }
 
     #
     # END: Loop over all elements in this xml file
@@ -2817,13 +2817,13 @@ def identifyStdIncludePaths():
 
     # Shell command: Pipe an include statement to the compiler and use
     # verbose mode to print the header search paths.
-    command = &#39;echo &#34;#include &lt;iostream&gt;&#34; | &#39; + cfg.castxml_cc + &#39; -v -x c++ -c -&#39;
+    command = 'echo &quot;#include &lt;iostream&gt;&quot; | ' + cfg.castxml_cc + ' -v -x c++ -c -'
 
     # Run command
-    print(&#39;  Running command: &#39; + command)
+    print('  Running command: ' + command)
 
     did_fail = False
-    error_message = &#39;&#39;
+    error_message = ''
     output_tmpfile = tempfile.TemporaryFile()
     try:
         p = subprocess.Popen(shlex.split(command), stdout=output_tmpfile, stderr=output_tmpfile)
@@ -2833,7 +2833,7 @@ def identifyStdIncludePaths():
         error_message = e.message
 
     # Reset environment variables
-    if &#39;gnu&#39; in cfg.castxml_cc_id:
+    if 'gnu' in cfg.castxml_cc_id:
         for var_name, value in temp_env_vars.items():
             os.environ[var_name] = value
 
@@ -2847,51 +2847,51 @@ def identifyStdIncludePaths():
         did_fail = True
 
     if did_fail:
-        print(&#39;  &#39; + modifyText(&#39;ERROR: Shell command failed.&#39;,&#39;red&#39;))
+        print('  ' + modifyText('ERROR: Shell command failed.','red'))
         # Get error message
         print()
-        print(modifyText(&#39;START SHELL COMMAND OUTPUT&#39;,&#39;underline&#39;))
+        print(modifyText('START SHELL COMMAND OUTPUT','underline'))
         print()
         print(output)
-        print(modifyText(&#39;END SHELL COMMAND OUTPUT&#39;,&#39;red&#39;))
+        print(modifyText('END SHELL COMMAND OUTPUT','red'))
         print()
-        if error_message != &#39;&#39;:
-            print(&#34;CalledProcessError.message:&#34;, error_message)
+        if error_message != '':
+            print(&quot;CalledProcessError.message:&quot;, error_message)
             print()
-        raise Exception(&#39;Shell command failed&#39;)
+        raise Exception('Shell command failed')
 
     else:
-        print(&#39;  &#39; + modifyText(&#39;Command finished successfully.&#39;,&#39;green&#39;))
+        print('  ' + modifyText('Command finished successfully.','green'))
     print()
 
 
     std_include_paths = []
-    output_lines = output.split(&#39;\n&#39;)
+    output_lines = output.split('\n')
 
     try:
-        start_i = output_lines.index(&#34;#include &lt;...&gt; search starts here:&#34;)
-        end_i   = output_lines.index(&#34;End of search list.&#34;)
+        start_i = output_lines.index(&quot;#include &lt;...&gt; search starts here:&quot;)
+        end_i   = output_lines.index(&quot;End of search list.&quot;)
     except ValueError:
-        print(&#39;  &#39; + modifyText(&#39;WARNING: Could not identify standard include paths.\n  Add them manually in the config file if necessary.&#39;,&#39;yellow&#39;))
+        print('  ' + modifyText('WARNING: Could not identify standard include paths.\n  Add them manually in the config file if necessary.','yellow'))
         print()
     else:
         for line in output_lines[start_i+1:end_i]:
             std_include_paths.append( line.strip().split()[0] )
 
         # Filter out Intel-specific paths to avoid conflict with gnu headers
-        if (cfg.castxml_cc_id == &#39;gnu&#39;) or (cfg.castxml_cc_id == &#39;gnu-c&#39;):
+        if (cfg.castxml_cc_id == 'gnu') or (cfg.castxml_cc_id == 'gnu-c'):
 
             len_before_filter = len(std_include_paths)
-            std_include_paths = [path for path in std_include_paths if &#39;intel&#39; not in path]
+            std_include_paths = [path for path in std_include_paths if 'intel' not in path]
             len_after_filter = len(std_include_paths)
 
             if len_after_filter &lt; len_before_filter:
-                print(&#39;  (Filtered out Intel paths to avoid conflicts with gcc headers.)&#39;)
+                print('  (Filtered out Intel paths to avoid conflicts with gcc headers.)')
                 print()
 
-        print(&#39;  Identified %i standard include paths:&#39; % len(std_include_paths))
+        print('  Identified %i standard include paths:' % len(std_include_paths))
         for path in std_include_paths:
-            print(&#39;  - &#39; + path)
+            print('  - ' + path)
         print()
 
     # Set global list
@@ -2922,8 +2922,8 @@ def isInList(search_entry, search_list, return_index=True, ignore_whitespace=Tru
 
     # Search for entry after removing all whitespace
     if ignore_whitespace:
-        search_entry_no_ws = &#34;&#34;.join(search_entry.split())
-        search_list_no_ws = [&#34;&#34;.join(e.split()) for e in search_list]
+        search_entry_no_ws = &quot;&quot;.join(search_entry.split())
+        search_list_no_ws = [&quot;&quot;.join(e.split()) for e in search_list]
         try:
             i = search_list_no_ws.index(search_entry_no_ws)
             if return_index:
@@ -2951,7 +2951,7 @@ def modifyText(msg, mod):
     if mod not in gb.textmods.keys():
         return msg
 
-    msg = gb.textmods[mod] + msg + gb.textmods[&#39;end&#39;]
+    msg = gb.textmods[mod] + msg + gb.textmods['end']
 
     return msg
 
@@ -2969,28 +2969,28 @@ def orderIncludeStatements(include_statements):
 
     # Add standard headers (not Boost headers)
     for s in include_statements:
-        if &#34;&lt;&#34; in s:
-            if &#34;&lt;boost/&#34; not in s:
+        if &quot;&lt;&quot; in s:
+            if &quot;&lt;boost/&quot; not in s:
                 ordered_include_statements.append(s)
 
     # Add BOSS-generated and/or backend-specific headers
     for s in include_statements:
-        if &#34;&lt;&#34; not in s:
+        if &quot;&lt;&quot; not in s:
             ordered_include_statements.append(s)
 
     # Add Boost headers
     for s in include_statements:
-        if &#34;&lt;boost/&#34; in s:
+        if &quot;&lt;boost/&quot; in s:
             ordered_include_statements.append(s)
 
-    # Check that we haven&#39;t missed any include statements
+    # Check that we haven't missed any include statements
     assert len(ordered_include_statements) == len(include_statements)
 
     # Return ordered list of include statements
     return ordered_include_statements
 
 # ====== END: orderIncludeStatements ========
-</code></pre><hr/><p>Updated on 2022-08-10 at 17:51:38 +0000</p></main></div></div></div><footer class="footer text-muted"><div class="container-xxl"><div class="row"><div class="col-lg-8 order-last order-lg-first"><ul class="list-inline"><li class="list-inline-item">Powered by <a class="text-muted" href="https://gohugo.io/">Hugo</a> and <a class="text-muted" href="https://getdoks.org/">Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class="list-inline"><li class="list-inline-item"><a href="/license/">License</a></li></ul></div></div></div></footer><script src="/js/bootstrap.min.54bf0932b8a36d0e152b1635b099a6ef1394d35327e2437550a075c9c8ed1bd8aed5847c21b36fc02ed24014c031d9ca24017b0c78b1639d7e2fa8329898b842.js" integrity="sha512-VL8JMrijbQ4VKxY1sJmm7xOU01Mn4kN1UKB1ycjtG9iu1YR8IbNvwC7SQBTAMdnKJAF7DHixY51+L6gymJi4Qg==" crossorigin="anonymous" defer=""></script>
-<script src="/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js" integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin="anonymous" defer=""></script>
-<script src="/main.min.40265e9a032aeba5eaf67baac3cbbc22667a7533215d326eeb3e9f4d5e4be40f9ff4dcd22949db73ae527ca26a19d7998091a8973c82af760b2c0daa335190ed.js" integrity="sha512-QCZemgMq66Xq9nuqw8u8ImZ6dTMhXTJu6z6fTV5L5A+f9NzSKUnbc65SfKJqGdeZgJGolzyCr3YLLA2qM1GQ7Q==" crossorigin="anonymous" defer=""></script>
-<script src="https://gambitbsm.github.io/index.min.1e0f859443ac81a8b8c357ddfae5d899d83ab224e24e44c1c9620a99f2a527d70a1676148a868f87f22fb67994386d592e508dafb575df7c2b80d97f143ad1ea.js" integrity="sha512-Hg+FlEOsgai4w1fd+uXYmdg6siTiTkTByWIKmfKlJ9cKFnYUioaPh/IvtnmUOG1ZLlCNr7V133wrgNl/FDrR6g==" crossorigin="anonymous" defer=""></script></body></html>
+</code></pre><hr><p>Updated on 2022-08-18 at 12:10:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a class=text-muted href=https://gohugo.io/>Hugo</a> and <a class=text-muted href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.0842a873f32395e7c359233f8a96a68419f7a3f2066065768401008b83c260338bae47bc1f254a87ca30d9152047b3ca18d5b4bad658022639e64566cb5ed282.js integrity="sha512-CEKoc/MjlefDWSM/ipamhBn3o/IGYGV2hAEAi4PCYDOLrke8HyVKh8ow2RUgR7PKGNW0utZYAiY55kVmy17Sgg==" crossorigin=anonymous defer></script></body></html>
