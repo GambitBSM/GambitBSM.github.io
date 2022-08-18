@@ -23,4 +23,4 @@ class Gambit::Scanner::scan_ptr;
 Generic ptr that takes ownership of a [Function_Base](/documentation/code/gambit_2-2/classes/classgambit_1_1scanner_1_1function__base/). This is how a plugin will call a function. 
 -------------------------------
 
-Updated on 2022-08-10 at 17:51:35 +0000
+Updated on 2022-08-18 at 12:10:05 +0000
