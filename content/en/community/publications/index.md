@@ -12,7 +12,7 @@ weight: 10
 ---
 
 {{< alert icon="ⓘ" context="info" >}}
-A full list of GAMBIT publications and proceedings can be found <a href="https://inspirehep.net/literature?sort=mostrecent&amp;size=25&amp;page=1&amp;q=find%20report%20%2Agambit%2A">here</a>.
+**Info**: A full list of GAMBIT publications and proceedings can be found <a href="https://inspirehep.net/literature?sort=mostrecent&amp;size=25&amp;page=1&amp;q=find%20report%20%2Agambit%2A">here</a>.
 {{< /alert >}}
 
 <p>

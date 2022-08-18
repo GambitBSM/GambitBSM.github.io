@@ -10,4 +10,10 @@ draft: false
 images: []
 ---
 
-This is a placeholder page for the wiki homepage.
+The Wiki is only available to members of the GAMBIT community.
+
+{{% hugo-encrypt "PASSWORD_HERE" %}}
+
+Homepage info
+
+{{% /hugo-encrypt %}}

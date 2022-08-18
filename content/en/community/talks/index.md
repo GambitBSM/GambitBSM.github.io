@@ -13,7 +13,9 @@ weight: 20
 
 Here you can find some slides of a few selected talks about GAMBIT.  
   
-{{< alert icon="ⓘ" context="info" text="More can be found on individual members' personal websites." />}}
+{{< alert icon="ⓘ" context="info" >}}
+**Info**: More can be found on individual members' personal websites.
+{{< /alert >}}
 
 <p>
 <table style="width:100%;text-align:left;border: 1px solid black;border-collaps:collapse;">

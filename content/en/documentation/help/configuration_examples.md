@@ -13,12 +13,12 @@ weight: 40
 
 <p>
 {{< alert icon="ⓘ" context="info">}}
-Instructions for configuring and compiling GAMBIT can be found in the original paper describing the code <a href="http://arxiv.org/abs/1705.07908">arXiv:1705.07908</a>.
+**Info**: Instructions for configuring and compiling GAMBIT can be found in the original paper describing the code <a href="http://arxiv.org/abs/1705.07908">arXiv:1705.07908</a>.
 {{< /alert >}}
 </p>
 <p>
-{{< alert icon="⚠" context="danger">}}
-For building the entirety of GAMBIT without optimisation, at least 10 GB of RAM is required. The build can be completed with less RAM than this if enough modules are ditched when running cmake, with e.g. cmake -Ditch="ColliderBit;DarkBit" .., etc. See <a href="http://arxiv.org/abs/1705.07908">arXiv:1705.07908</a> for further details of how to ditch components. For a list of commonly used cmake options, see the file CMAKE_FLAGS.md. Building with optimisation enabled (e.g. using -DCMAKE_BUILD_TYPE=Release) may require more than 20 GB of RAM, depending on the compiler in use and precisely which optimisations it employs. Interprocedural optimisation in particular requires very large amounts of RAM. In general, Release mode is only intended for performance-critical applications, such as when running on supercomputer architectures.  It is not advised for laptops.
+{{< alert icon="ⓘ" context="info">}}
+**Info**: For building the entirety of GAMBIT without optimisation, at least 10 GB of RAM is required. The build can be completed with less RAM than this if enough modules are ditched when running cmake, with e.g. cmake -Ditch="ColliderBit;DarkBit" .., etc. See <a href="http://arxiv.org/abs/1705.07908">arXiv:1705.07908</a> for further details of how to ditch components. For a list of commonly used cmake options, see the file CMAKE_FLAGS.md. Building with optimisation enabled (e.g. using -DCMAKE_BUILD_TYPE=Release) may require more than 20 GB of RAM, depending on the compiler in use and precisely which optimisations it employs. Interprocedural optimisation in particular requires very large amounts of RAM. In general, Release mode is only intended for performance-critical applications, such as when running on supercomputer architectures.  It is not advised for laptops.
 {{< /alert >}}
 </p>
 <p>

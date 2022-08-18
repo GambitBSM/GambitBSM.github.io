@@ -13,12 +13,12 @@ weight: 20
 
 A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally. This is useful for trying out GAMBIT and following the [examples on this site](/documentation/examples/colliderbit/) without the need to build GAMBIT from source.
 
-{{< alert icon="⚠" context="danger">}}
-The current Docker image is based on GAMBIT v1.1.3, which is outdated and will not provide the latest features.
-{{< /alert >}}
-
 {{< alert icon="ⓘ" context="info">}}
-The Docker engine requires administrator privileges in order to be activated. Therefore its use is not recommended on shared clusters.
+
+**Info**:
+- The current Docker image is based on GAMBIT v1.1.3, which is outdated and will not provide the latest features.
+- The Docker engine requires administrator privileges in order to be activated. Therefore its use is not recommended on shared clusters.
+
 {{< /alert >}}
 
 ### Setting up the Docker image
@@ -43,14 +43,12 @@ docker run -it gambitbsm/gambit-pippi
 
 This will give you a `bash` shell with GAMBIT pre-built and ready to run.
 
-{{< alert icon="ⓘ" context="info">}}
-Note that on Linux, it may be necessary to create `docker` group and add users to it in order to use Docker commands. For example:
+{{< alert icon="⚠" context="danger">}}
 
-```
-sudo groupadd docker
-sudo usermod -aG docker $USER
-```
+**Common Problem**: Linux users may have difficulty starting the Docker daemon. See [here](/documentation/help/common_problems_and_questions#docker-not-starting) for more information.
 
 {{< /alert >}}
 
 ### Using the Docker image
+
+You will need to re-run the Docker container each time you wish to use GAMBIT. For basic guidance on how to use GAMBIT, please see the [Examples](/documentation/examples/) section.

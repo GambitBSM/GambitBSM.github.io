@@ -17,8 +17,10 @@ weight: 30
 GAMBIT is developed by a growing community of theorists and experimentalists, including members of the ATLAS, Belle-II, CTA, DARWIN, Fermi-LAT, HESS, IceCube, LHCb, SHiP and XENON experiments, as well as developers of the public theory codes Capt'n General, DarkSUSY, DDCalc, FlexibleSUSY, HEPLike, gamLike, GM2Calc, IsaJet, nulike, SoftSUSY, SuperIso and Vevacious.
 </p>
 <p>
-{{< alert icon="⚠" context="danger">}}
-The GAMBIT Community has a <a href="/community/code_of_conduct/">Code of Conduct</a>.
+{{< alert icon="ⓘ" context="info">}}
+
+**Info**: The GAMBIT Community has a <a href="/community/code_of_conduct/">Code of Conduct</a>.
+
 {{< /alert >}}
 </p>
 
