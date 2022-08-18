@@ -44,6 +44,8 @@ jobs:
           repos_temp: ${{ inputs.repos_to_document }}
 
   # This job runs doxygen/doxybook2 on the development branches and then uploads the results as artifacts
+  # Currently this only works on public development repos, to clone private repos requires a personal access token (PAT)
+  # See the wiki section later on for an example of using a PAT
   document_branches_and_build_menu:
     if: ${{ inputs.rebuild_all }}
     needs: setup
@@ -67,7 +69,7 @@ jobs:
           && echo "folder2=${str%_*}" >> $GITHUB_ENV
       - name: Shallow clone branch
         run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ env.folder2 }}_source
-      #- name: Clone using personal access token if normal clone fails
+      #- name: Clone using personal access token if normal clone fails (this section is not complete as it is not being used)
       #  if: ${{ failure() }}
       #  run: echo "yes"
       - name: Generate doxygen xml
@@ -183,26 +185,27 @@ jobs:
           && git add --all
           && git commit -m "Documentation rebuild"
           && git push
-        # After committing changes to the public site repo, add wiki contents from the private wiki repo
-      - name: Clone private wiki contents, replacing password placeholders
-        run: git clone --depth 1 https://${{ secrets.WIKI_CLONE_PAT }}:x-oauth-basic@github.com/GambitBSM/wiki.git
-          && password=`cat ./wiki/password.txt`
-          && sed -i -e "s/PASSWORD_HERE/${password}/g" $(find ./wiki/wiki -type f)
-          && rm -r ./content/en/wiki
-          && cp -r ./wiki/wiki ./content/en
-          && rm -r ./wiki
+      # After committing changes to the public site repo, add wiki contents from the private wiki repo
+      #- name: Clone private wiki contents, replacing password placeholders
+      #  run: git clone --depth 1 https://${{ secrets.WIKI_CLONE_PAT }}:x-oauth-basic@github.com/GambitBSM/wiki.git
+      #    && password=`cat ./wiki/password.txt`
+      #    && sed -i -e "s/PASSWORD_HERE/${password}/g" $(find ./wiki/wiki -type f)
+      #    && rm -r ./content/en/wiki
+      #    && cp -r ./wiki/wiki ./content/en
+      #    && rm -r ./wiki
       - name: Install npm dependencies and build site
         run: npm install
           && npm run build
-      - name: Install and run hugo-encrypt
-        run: git clone --depth 1 https://github.com/Izumiko/hugo-encrypt.git
-          && cd hugo-encrypt
-          && export BINDIR=./install
-          && make
-          && make install
-          && ./install/hugo-encrypt -sitePath ../public
-          && cd ..
-          && rm -r hugo-encrypt
+      # This section is currently not needed, however it is an example of how to use hugo-encrypt
+      #- name: Install and run hugo-encrypt
+      #  run: git clone --depth 1 https://github.com/Izumiko/hugo-encrypt.git
+      #    && cd hugo-encrypt
+      #    && export BINDIR=./install
+      #    && make
+      #    && make install
+      #    && ./install/hugo-encrypt -sitePath ../public
+      #    && cd ..
+      #    && rm -r hugo-encrypt
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
