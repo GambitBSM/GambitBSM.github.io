@@ -3,7 +3,7 @@ name: Check links
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["pages_build_and_deployment"]
+    workflows: ["pages-build-deployment"]
     types:
       - completed
 
