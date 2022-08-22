@@ -15,6 +15,6 @@ jobs:
       - name: Install lychee
         run: curl -sSf 'https://sh.rustup.rs' | sh
           && apt install gcc pkg-config libc6-dev libssl-dev
-          && cargo -y install lychee
+          && cargo install -y lychee
       - name: Run lychee to test for dead links
         run: lychee --no-progress --format detailed https://gambitbsm.github.io/
