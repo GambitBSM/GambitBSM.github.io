@@ -76,13 +76,13 @@ jobs:
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
           working-directory: ./${{ env.folder2 }}_source
-          doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
+          doxyfile-path: ../doxygen_and_doxybook2_config/Doxyfile
         # Change doxybook2 output url so that internal links in the documentation work
       - name: Change baseURL for md output
-        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder2 }}/+g' ./doxygen_and_doxybook2/config.json
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder2 }}/+g' ./doxygen_and_doxybook2_config/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder2 }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder2 }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder2 }} --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
         # Need to insert index files so that menus work in site
       - name: Copy index template into branch folder to act as parent menu
         run: cp version_index_template.md ./${{ env.folder2 }}/_index.md
@@ -129,13 +129,13 @@ jobs:
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
           working-directory: ./${{ env.folder }}_source
-          doxyfile-path: ../doxygen_and_doxybook2/Doxyfile
+          doxyfile-path: ../doxygen_and_doxybook2_config/Doxyfile
         # Change doxybook2 output url so that internal links in the documentation work
       - name: Change baseURL for md output
-        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder }}/+g' ./doxygen_and_doxybook2/config.json
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder }}/+g' ./doxygen_and_doxybook2_config/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2/config.json --templates ./doxygen_and_doxybook2/doxybook_templates
+          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
         # Need to insert index files so that menus work in site
       - name: Copy index template into repo folder to act as parent menu
         run: cp version_index_template.md ./${{ env.folder }}/_index.md
