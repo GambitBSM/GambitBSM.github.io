@@ -10,9 +10,9 @@ on:
 
 jobs:
   check_links:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Install lychee
-        run: brew install lychee
+        run: go get -u github.com/raviqqe/muffet/v2
       - name: Run lychee to test for dead links
-        run: lychee --no-progress --verbose --format detailed https://gambitbsm.github.io/
+        run: muffet https://gambitbsm.github.io/
