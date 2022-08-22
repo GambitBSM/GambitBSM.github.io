@@ -169,12 +169,12 @@
 {% endif -%}
 
 {% if exists("reimplements") %}
-**Reimplements**: [{{reimplements.fullname}}]({{reimplements.url}})
+**Reimplements**: [{{reimplements.fullname}}]({{reimplements.safeAnchorId}})
 
 {% endif -%}
 
 {% if exists("reimplementedBy") %}
-**Reimplemented by**: {% for impl in reimplementedBy %}[{{impl.fullname}}]({{impl.url}}){% if not loop.is_last %}, {% endif %}{% endfor %}
+**Reimplemented by**: {% for impl in reimplementedBy %}[{{impl.fullname}}]({{impl.safeAnchorId}}){% if not loop.is_last %}, {% endif %}{% endfor %}
 
 {% endif -%}
 
