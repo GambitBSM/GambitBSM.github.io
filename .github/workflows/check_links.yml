@@ -14,4 +14,4 @@ jobs:
       - name: Install muffet
         run: brew install muffet
       - name: Run muffet to test for dead links
-        run: muffet --buffer-size=10000 --max-connections=10000 --max-connections-per-host=10000 --max-redirections=10000 --max-response-body-size=100000000000000000000 --color=always https://gambitbsm.github.io/
+        run: muffet --buffer-size=10000 --max-connections=10000 --max-connections-per-host=10000 --max-redirections=10000 --max-response-body-size=10000000000 --color=always https://gambitbsm.github.io/
