@@ -15,4 +15,5 @@ jobs:
       - name: Install muffet
         run: brew install muffet
       - name: Run muffet to test for dead links
-        run: muffet https://gambitbsm.github.io/
+        # run: muffet https://gambitbsm.github.io/
+        run: muffet --help
