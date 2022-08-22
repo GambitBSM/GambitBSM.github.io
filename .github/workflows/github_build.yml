@@ -56,10 +56,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Install doxybook2
-        run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
-          && mkdir doxybook2
-          && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+        # Doxybook2 is currently already present in the repo
+      #- name: Install doxybook2
+      #  run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
+      #    && mkdir doxybook2
+      #    && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
         # Install sed to edit some file contents
       - name: Install sed 
         run: sudo apt-get install sed
@@ -82,7 +83,7 @@ jobs:
         run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder2 }}/+g' ./doxygen_and_doxybook2_config/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder2 }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder2 }} --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
+          && ./doxybook2/build/src/DoxybookCli/doxybook2 --input ./xml --output ./${{ env.folder2 }} --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
         # Need to insert index files so that menus work in site
       - name: Copy index template into branch folder to act as parent menu
         run: cp version_index_template.md ./${{ env.folder2 }}/_index.md
@@ -109,10 +110,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Install doxybook2
-        run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
-          && mkdir doxybook2
-          && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+        # Doxybook2 is currently already present in the repo
+      #- name: Install doxybook2
+      #  run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
+      #    && mkdir doxybook2
+      #    && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
         # Install sed to edit some file contents
       - name: Install sed
         run: sudo apt-get install sed
@@ -135,7 +137,7 @@ jobs:
         run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder }}/+g' ./doxygen_and_doxybook2_config/config.json
       - name: Convert xml to md using doxybook2
         run: mkdir ${{ env.folder }}
-          && ./doxybook2/bin/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
+          && ./doxybook2/build/src/DoxybookCli/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
         # Need to insert index files so that menus work in site
       - name: Copy index template into repo folder to act as parent menu
         run: cp version_index_template.md ./${{ env.folder }}/_index.md
