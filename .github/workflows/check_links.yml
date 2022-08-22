@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install lychee
-        run: curl -sSf 'https://sh.rustup.rs'
+        run: curl -sSf 'https://sh.rustup.rs' | sh -y
       - name: Run lychee to test for dead links
         run: lychee --no-progress --format detailed https://gambitbsm.github.io/
