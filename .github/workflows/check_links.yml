@@ -10,9 +10,9 @@ on:
 
 jobs:
   check_links:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Install lychee
-        run: curl -sSf 'https://sh.rustup.rs' | sh -y
+        run: brew install lychee
       - name: Run lychee to test for dead links
         run: lychee --no-progress --format detailed https://gambitbsm.github.io/
