@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="L3SleptonLimits_8hpp" kind="file" language="C++">
+    <compoundname>L3SleptonLimits.hpp</compoundname>
+    <includes refid="BaseLimitContainer_8hpp" local="yes">gambit/ColliderBit/limits/BaseLimitContainer.hpp</includes>
+    <includedby refid="ColliderBit__types_8hpp" local="yes">ColliderBit_types.hpp</includedby>
+    <includedby refid="L3SleptonLimits_8cpp" local="yes">L3SleptonLimits.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gambit/ColliderBit/limits/BaseLimitContainer.hpp</label>
+        <link refid="BaseLimitContainer_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>L3SleptonLimits.hpp</label>
+        <link refid="L3SleptonLimits_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>gambit/ColliderBit/limits/PointsAndLines.hpp</label>
+        <link refid="PointsAndLines_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="13">
+        <label>gambit/Elements/shared_types.hpp</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>limits</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>sstream</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>utility</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>ColliderBit_types.hpp</label>
+        <link refid="ColliderBit__types_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>complete_process_PID_pair_multimaps.hpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>L3SleptonLimits.hpp</label>
+        <link refid="L3SleptonLimits_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>complete_process_PID_pair_multimaps.cpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8cpp"/>
+      </node>
+      <node id="5">
+        <label>getxsec.cpp</label>
+        <link refid="getxsec_8cpp"/>
+      </node>
+      <node id="6">
+        <label>process_code_PID_pair_mapping.cpp</label>
+        <link refid="process__code__PID__pair__mapping_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGambit_1_1ColliderBit_1_1L3SelectronLimitAt205GeV" prot="public">Gambit::ColliderBit::L3SelectronLimitAt205GeV</innerclass>
+    <innerclass refid="classGambit_1_1ColliderBit_1_1L3SmuonLimitAt205GeV" prot="public">Gambit::ColliderBit::L3SmuonLimitAt205GeV</innerclass>
+    <innerclass refid="classGambit_1_1ColliderBit_1_1L3StauLimitAt205GeV" prot="public">Gambit::ColliderBit::L3StauLimitAt205GeV</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1ColliderBit">Gambit::ColliderBit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BaseLimitContainer_8hpp" kindref="compound">gambit/ColliderBit/limits/BaseLimitContainer.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ColliderBit<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqrtsGeV<sp/>=<sp/>205;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>A<sp/>class<sp/>to<sp/>contain<sp/>the<sp/>limit<sp/>data<sp/>from<sp/>L3_PLB580_2004_37,<sp/>figure<sp/>2a.</highlight></codeline>
+<codeline lineno="10" refid="classGambit_1_1ColliderBit_1_1L3SelectronLimitAt205GeV" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1ColliderBit_1_1L3SelectronLimitAt205GeV" kindref="compound">L3SelectronLimitAt205GeV</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1BaseLimitContainer" kindref="compound">BaseLimitContainer</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@name<sp/>Point<sp/>interpolation,<sp/>conversion,<sp/>and<sp/>region<sp/>checks</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@{</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Convert<sp/>a<sp/>point<sp/>from<sp/>pixel<sp/>units<sp/>to<sp/>axis<sp/>units</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1P2" kindref="compound">P2</ref><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3SelectronLimitAt205GeV_1aec8964ae46477d16297c247344c0c18d" kindref="member">convertPt</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Check<sp/>to<sp/>see<sp/>if<sp/>the<sp/>point<sp/>is<sp/>within<sp/>the<sp/>exclusion<sp/>region</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3SelectronLimitAt205GeV_1a1245bb693175363f1746d6695a27ae01" kindref="member">isWithinExclusionRegion</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mZ)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@}</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@name<sp/>Construction,<sp/>initializing<sp/>with<sp/>all<sp/>necessary<sp/>data<sp/>from<sp/>the<sp/>plot</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@{</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3SelectronLimitAt205GeV" kindref="compound">L3SelectronLimitAt205GeV</ref>();</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@}</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>A<sp/>class<sp/>to<sp/>contain<sp/>the<sp/>limit<sp/>data<sp/>from<sp/>L3_PLB580_2004_37,<sp/>figure<sp/>2b.</highlight></codeline>
+<codeline lineno="29" refid="classGambit_1_1ColliderBit_1_1L3SmuonLimitAt205GeV" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1ColliderBit_1_1L3SmuonLimitAt205GeV" kindref="compound">L3SmuonLimitAt205GeV</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1BaseLimitContainer" kindref="compound">BaseLimitContainer</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@name<sp/>Point<sp/>interpolation,<sp/>conversion,<sp/>and<sp/>region<sp/>checks</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@{</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Convert<sp/>a<sp/>point<sp/>from<sp/>pixel<sp/>units<sp/>to<sp/>axis<sp/>units</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1P2" kindref="compound">P2</ref><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3SmuonLimitAt205GeV_1a63a04f0548025076773a63097634df96" kindref="member">convertPt</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Check<sp/>to<sp/>see<sp/>if<sp/>the<sp/>point<sp/>is<sp/>within<sp/>the<sp/>exclusion<sp/>region</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3SmuonLimitAt205GeV_1a5e482e8683a97b0a5049075660bd3bb2" kindref="member">isWithinExclusionRegion</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mZ)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@}</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@name<sp/>Construction,<sp/>initializing<sp/>with<sp/>all<sp/>necessary<sp/>data<sp/>from<sp/>the<sp/>plot</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@{</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3SmuonLimitAt205GeV" kindref="compound">L3SmuonLimitAt205GeV</ref>();</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@}</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>A<sp/>class<sp/>to<sp/>contain<sp/>the<sp/>limit<sp/>data<sp/>from<sp/>L3_PLB580_2004_37,<sp/>figure<sp/>2c.</highlight></codeline>
+<codeline lineno="48" refid="classGambit_1_1ColliderBit_1_1L3StauLimitAt205GeV" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1ColliderBit_1_1L3StauLimitAt205GeV" kindref="compound">L3StauLimitAt205GeV</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1BaseLimitContainer" kindref="compound">BaseLimitContainer</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@name<sp/>Point<sp/>interpolation,<sp/>conversion,<sp/>and<sp/>region<sp/>checks</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@{</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Convert<sp/>a<sp/>point<sp/>from<sp/>pixel<sp/>units<sp/>to<sp/>axis<sp/>units</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1P2" kindref="compound">P2</ref><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3StauLimitAt205GeV_1ab164eb07b9f38de0214c1f4b5d498149" kindref="member">convertPt</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Check<sp/>to<sp/>see<sp/>if<sp/>the<sp/>point<sp/>is<sp/>within<sp/>the<sp/>exclusion<sp/>region</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3StauLimitAt205GeV_1ad2adf623f6c5ce89c13552ed88e1e75c" kindref="member">isWithinExclusionRegion</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mZ)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@}</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@name<sp/>Construction,<sp/>initializing<sp/>with<sp/>all<sp/>necessary<sp/>data<sp/>from<sp/>the<sp/>plot</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@{</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1L3StauLimitAt205GeV" kindref="compound">L3StauLimitAt205GeV</ref>();</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@}</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ColliderBit/include/gambit/ColliderBit/limits/L3SleptonLimits.hpp"/>
+  </compounddef>
+</doxygen>

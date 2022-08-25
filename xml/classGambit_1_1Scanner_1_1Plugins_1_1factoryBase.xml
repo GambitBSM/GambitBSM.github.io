@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gambit::Scanner::Plugins::factoryBase</compoundname>
+    <derivedcompoundref refid="classGambit_1_1Scanner_1_1Plugins_1_1classFactory" prot="public" virt="non-virtual">Gambit::Scanner::Plugins::classFactory&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Scanner_1_1Plugins_1_1funcFactory" prot="public" virt="non-virtual">Gambit::Scanner::Plugins::funcFactory&lt; T &gt;</derivedcompoundref>
+    <includes refid="plugin__defs_8hpp" local="no">plugin_defs.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase_1a0f6faa1118b155b8b423ec0f432f2a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void * Gambit::Scanner::Plugins::factoryBase::operator()</definition>
+        <argsstring>()=0</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Gambit::Scanner::Plugins::factoryBase::operator()</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Scanner_1_1Plugins_1_1funcFactory_1a26031931d078e969bb2b1b7747300322">operator()</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Scanner_1_1Plugins_1_1classFactory_1aff3fdbe794ef76e22c33ffa99a31eab1">operator()</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/plugin_defs.hpp" line="121" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase_1aa31c14a7b194db5ae5e7b02de656d1e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gambit::Scanner::Plugins::factoryBase::~factoryBase</definition>
+        <argsstring>()</argsstring>
+        <name>~factoryBase</name>
+        <qualifiedname>Gambit::Scanner::Plugins::factoryBase::~factoryBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/plugin_defs.hpp" line="122" column="25" bodyfile="ScannerBit/include/gambit/ScannerBit/plugin_defs.hpp" bodystart="122" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>These classes are used by the plugins to load and save data </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::Scanner::Plugins::classFactory&lt; T &gt;</label>
+        <link refid="classGambit_1_1Scanner_1_1Plugins_1_1classFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::Scanner::Plugins::factoryBase</label>
+        <link refid="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase"/>
+      </node>
+      <node id="3">
+        <label>Gambit::Scanner::Plugins::funcFactory&lt; T &gt;</label>
+        <link refid="classGambit_1_1Scanner_1_1Plugins_1_1funcFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ScannerBit/include/gambit/ScannerBit/plugin_defs.hpp" line="118" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/plugin_defs.hpp" bodystart="119" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase_1a0f6faa1118b155b8b423ec0f432f2a17" prot="public" virt="pure-virtual"><scope>Gambit::Scanner::Plugins::factoryBase</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase_1aa31c14a7b194db5ae5e7b02de656d1e0" prot="public" virt="virtual"><scope>Gambit::Scanner::Plugins::factoryBase</scope><name>~factoryBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

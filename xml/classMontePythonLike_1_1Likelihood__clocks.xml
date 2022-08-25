@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classMontePythonLike_1_1Likelihood__clocks" kind="class" language="Python" prot="public">
+    <compoundname>MontePythonLike::Likelihood_clocks</compoundname>
+    <basecompoundref refid="classMontePythonLike_1_1Likelihood" prot="public" virt="non-virtual">MontePythonLike.Likelihood</basecompoundref>
+    <basecompoundref refid="classMontePythonLike_1_1Likelihood" prot="public" virt="non-virtual">MontePythonLike.Likelihood</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMontePythonLike_1_1Likelihood__clocks_1aa6a203c16c561f321aa70da8c2e4978d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MontePythonLike.Likelihood_clocks::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>MontePythonLike.Likelihood_clocks.z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" line="2507" column="1" bodyfile="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" bodystart="2507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMontePythonLike_1_1Likelihood__clocks_1ae2e3e2ca7394ee460261343f77d70e29" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MontePythonLike.Likelihood_clocks::Hz</definition>
+        <argsstring></argsstring>
+        <name>Hz</name>
+        <qualifiedname>MontePythonLike.Likelihood_clocks.Hz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" line="2508" column="1" bodyfile="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" bodystart="2508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMontePythonLike_1_1Likelihood__clocks_1a5117f62b88534ba91c200e47667cd8b3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MontePythonLike.Likelihood_clocks::err</definition>
+        <argsstring></argsstring>
+        <name>err</name>
+        <qualifiedname>MontePythonLike.Likelihood_clocks.err</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" line="2509" column="1" bodyfile="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" bodystart="2509" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMontePythonLike_1_1Likelihood__clocks_1a4b547140b3a3d1839380f675ca89172c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def MontePythonLike.Likelihood_clocks.__init__</definition>
+        <argsstring>(self, path, data, command_line)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>MontePythonLike.Likelihood_clocks.__init__</qualifiedname>
+        <reimplements refid="classMontePythonLike_1_1Likelihood_1a9f7492f4aacddc71d387cd98933a20db">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>command_line</type>
+          <defname>command_line</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>It copies the content of self.path from the initialization routine of
+the :class:`Data &lt;data.Data&gt;` class, and defines a handful of useful
+methods, that every likelihood might need.
+
+If the nuisance parameters required to compute this likelihood are not
+defined (either fixed or varying), the code will stop.
+
+Parameters
+----------
+data : class
+    Initialized instance of :class:`Data &lt;data.Data&gt;`
+command_line : NameSpace
+    NameSpace containing the command line arguments</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" line="2498" column="1" bodyfile="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" bodystart="2498" bodyend="2510"/>
+      </memberdef>
+      <memberdef kind="function" id="classMontePythonLike_1_1Likelihood__clocks_1a689ff446e16d03a7d24f97437dd7bc59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def MontePythonLike.Likelihood_clocks.loglkl</definition>
+        <argsstring>(self, cosmo, data)</argsstring>
+        <name>loglkl</name>
+        <qualifiedname>MontePythonLike.Likelihood_clocks.loglkl</qualifiedname>
+        <reimplements refid="classMontePythonLike_1_1Likelihood_1a1bd59854b9f84f9bf89641bf981b3493">loglkl</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>cosmo</type>
+          <defname>cosmo</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Placeholder to remind that this function needs to be defined for a
+new likelihood.
+
+Raises
+------
+NotImplementedError</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" line="2511" column="1" bodyfile="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" bodystart="2511" bodyend="2526"/>
+      </memberdef>
+      <memberdef kind="function" id="classMontePythonLike_1_1Likelihood__clocks_1a4b547140b3a3d1839380f675ca89172c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def MontePythonLike.Likelihood_clocks.__init__</definition>
+        <argsstring>(self, path, data, command_line)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>MontePythonLike.Likelihood_clocks.__init__</qualifiedname>
+        <reimplements refid="classMontePythonLike_1_1Likelihood_1a9f7492f4aacddc71d387cd98933a20db">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>command_line</type>
+          <defname>command_line</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>It copies the content of self.path from the initialization routine of
+the :class:`Data &lt;data.Data&gt;` class, and defines a handful of useful
+methods, that every likelihood might need.
+
+If the nuisance parameters required to compute this likelihood are not
+defined (either fixed or varying), the code will stop.
+
+Parameters
+----------
+data : class
+    Initialized instance of :class:`Data &lt;data.Data&gt;`
+command_line : NameSpace
+    NameSpace containing the command line arguments</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/patches/montepythonlike/3.5.0/MontePythonLike.py" line="2899" column="1" bodyfile="Backends/patches/montepythonlike/3.5.0/MontePythonLike.py" bodystart="2899" bodyend="2911"/>
+      </memberdef>
+      <memberdef kind="function" id="classMontePythonLike_1_1Likelihood__clocks_1a689ff446e16d03a7d24f97437dd7bc59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def MontePythonLike.Likelihood_clocks.loglkl</definition>
+        <argsstring>(self, cosmo, data)</argsstring>
+        <name>loglkl</name>
+        <qualifiedname>MontePythonLike.Likelihood_clocks.loglkl</qualifiedname>
+        <reimplements refid="classMontePythonLike_1_1Likelihood_1a1bd59854b9f84f9bf89641bf981b3493">loglkl</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>cosmo</type>
+          <defname>cosmo</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Placeholder to remind that this function needs to be defined for a
+new likelihood.
+
+Raises
+------
+NotImplementedError</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/patches/montepythonlike/3.5.0/MontePythonLike.py" line="2912" column="1" bodyfile="Backends/patches/montepythonlike/3.5.0/MontePythonLike.py" bodystart="2912" bodyend="2927"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base implementation of H(z) measurements</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MontePythonLike.Likelihood_clocks</label>
+        <link refid="classMontePythonLike_1_1Likelihood__clocks"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MontePythonLike.Likelihood</label>
+        <link refid="classMontePythonLike_1_1Likelihood"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MontePythonLike.Likelihood_clocks</label>
+        <link refid="classMontePythonLike_1_1Likelihood__clocks"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MontePythonLike.Likelihood</label>
+        <link refid="classMontePythonLike_1_1Likelihood"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" line="2495" column="1" bodyfile="Backends/patches/montepythonlike/3.3.0/MontePythonLike.py" bodystart="2495" bodyend="2530"/>
+    <listofallmembers>
+      <member refid="classMontePythonLike_1_1Likelihood__clocks_1a4b547140b3a3d1839380f675ca89172c" prot="public" virt="non-virtual"><scope>MontePythonLike::Likelihood_clocks</scope><name>__init__</name></member>
+      <member refid="classMontePythonLike_1_1Likelihood__clocks_1a4b547140b3a3d1839380f675ca89172c" prot="public" virt="non-virtual"><scope>MontePythonLike::Likelihood_clocks</scope><name>__init__</name></member>
+      <member refid="classMontePythonLike_1_1Likelihood__clocks_1a5117f62b88534ba91c200e47667cd8b3" prot="public" virt="non-virtual"><scope>MontePythonLike::Likelihood_clocks</scope><name>err</name></member>
+      <member refid="classMontePythonLike_1_1Likelihood__clocks_1ae2e3e2ca7394ee460261343f77d70e29" prot="public" virt="non-virtual"><scope>MontePythonLike::Likelihood_clocks</scope><name>Hz</name></member>
+      <member refid="classMontePythonLike_1_1Likelihood__clocks_1a689ff446e16d03a7d24f97437dd7bc59" prot="public" virt="non-virtual"><scope>MontePythonLike::Likelihood_clocks</scope><name>loglkl</name></member>
+      <member refid="classMontePythonLike_1_1Likelihood__clocks_1a689ff446e16d03a7d24f97437dd7bc59" prot="public" virt="non-virtual"><scope>MontePythonLike::Likelihood_clocks</scope><name>loglkl</name></member>
+      <member refid="classMontePythonLike_1_1Likelihood__clocks_1aa6a203c16c561f321aa70da8c2e4978d" prot="public" virt="non-virtual"><scope>MontePythonLike::Likelihood_clocks</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

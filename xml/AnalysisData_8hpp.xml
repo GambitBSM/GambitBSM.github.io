@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="AnalysisData_8hpp" kind="file" language="C++">
+    <compoundname>AnalysisData.hpp</compoundname>
+    <includes local="yes">gambit/Utils/begin_ignore_warnings_eigen.hpp</includes>
+    <includes local="yes">Eigen/Core</includes>
+    <includes local="yes">gambit/Utils/end_ignore_warnings.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">map</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">cfloat</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="EventCounter_8hpp" local="yes">gambit/ColliderBit/analyses/EventCounter.hpp</includes>
+    <includedby refid="Analysis_8hpp" local="yes">Analysis.hpp</includedby>
+    <includedby refid="ColliderBit__types_8hpp" local="yes">ColliderBit_types.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>AnalysisData.hpp</label>
+        <link refid="AnalysisData_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gambit/ColliderBit/analyses/EventCounter.hpp</label>
+        <link refid="EventCounter_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="17">
+        <label>HEPUtils/Event.h</label>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="11">
+        <label>cfloat</label>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>gambit/Utils/begin_ignore_warnings_eigen.hpp</label>
+      </node>
+      <node id="4">
+        <label>gambit/Utils/end_ignore_warnings.hpp</label>
+      </node>
+      <node id="14">
+        <label>iomanip</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>limits</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>ColliderBit_types.hpp</label>
+        <link refid="ColliderBit__types_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Analysis.hpp</label>
+        <link refid="Analysis_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AnalysisData.hpp</label>
+        <link refid="AnalysisData_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>complete_process_PID_pair_multimaps.hpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ColliderBit_InterpolatedYields.cpp</label>
+        <link refid="ColliderBit__InterpolatedYields_8cpp"/>
+      </node>
+      <node id="6">
+        <label>MC_convergence.cpp</label>
+        <link refid="MC__convergence_8cpp"/>
+      </node>
+      <node id="3">
+        <label>Analysis.cpp</label>
+        <link refid="Analysis_8cpp"/>
+      </node>
+      <node id="4">
+        <label>AnalysisContainer.cpp</label>
+        <link refid="AnalysisContainer_8cpp"/>
+      </node>
+      <node id="10">
+        <label>complete_process_PID_pair_multimaps.cpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8cpp"/>
+      </node>
+      <node id="11">
+        <label>getxsec.cpp</label>
+        <link refid="getxsec_8cpp"/>
+      </node>
+      <node id="12">
+        <label>process_code_PID_pair_mapping.cpp</label>
+        <link refid="process__code__PID__pair__mapping_8cpp"/>
+      </node>
+      <node id="7">
+        <label>runAnalyses.cpp</label>
+        <link refid="runAnalyses_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structGambit_1_1ColliderBit_1_1SignalRegionData" prot="public">Gambit::ColliderBit::SignalRegionData</innerclass>
+    <innerclass refid="structGambit_1_1ColliderBit_1_1AnalysisData" prot="public">Gambit::ColliderBit::AnalysisData</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1ColliderBit">Gambit::ColliderBit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>AnalysisData and SignalRegion structures.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Abram Krislock (<ulink url="mailto:a.m.b.krislock@fys.uio.no">a.m.b.krislock@fys.uio.no</ulink>)</para>
+</simplesect>
+<simplesect kind="author"><para>Andy Buckley (<ulink url="mailto:andy.buckley@cern.ch">andy.buckley@cern.ch</ulink>)</para>
+</simplesect>
+<simplesect kind="author"><para>Anders Kvellestad (<ulink url="mailto:anders.kvellestad@fys.uio.no">anders.kvellestad@fys.uio.no</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>often</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2019 Feb</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>AnalysisData<sp/>and<sp/>SignalRegion<sp/>structures.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Abram<sp/>Krislock</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(a.m.b.krislock@fys.uio.no)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\author<sp/>Andy<sp/>Buckley</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(andy.buckley@cern.ch)</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>\author<sp/>Anders<sp/>Kvellestad</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(anders.kvellestad@fys.uio.no)</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/>\date<sp/>often</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///<sp/><sp/>\date<sp/>2019<sp/>Feb</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/begin_ignore_warnings_eigen.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Eigen/Core&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/end_ignore_warnings.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cfloat&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="EventCounter_8hpp" kindref="compound">gambit/ColliderBit/analyses/EventCounter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ColliderBit</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>A<sp/>simple<sp/>container<sp/>for<sp/>the<sp/>result<sp/>of<sp/>one<sp/>signal<sp/>region<sp/>from<sp/>one<sp/>analysis.</highlight></codeline>
+<codeline lineno="53" refid="structGambit_1_1ColliderBit_1_1SignalRegionData" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor<sp/>with<sp/>EventCounter<sp/>arg<sp/>for<sp/>the<sp/>signal<sp/>count<sp/>and<sp/>SR<sp/>name</highlight></codeline>
+<codeline lineno="57" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a9f253958be8b251950e946b38f5b672f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a9f253958be8b251950e946b38f5b672f" kindref="member">SignalRegionData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>&amp;<sp/>scounter,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nobs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;double,double&gt;&amp;<sp/>nbkg,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nsigscaled=0)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(scounter.name(),<sp/>nobs,<sp/>scounter.weight_sum(),<sp/>nbkg.first,<sp/>scounter.weight_sum_err(),<sp/>nbkg.second,<sp/>nsigscaled)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor<sp/>with<sp/>EventCounter<sp/>arg<sp/>for<sp/>the<sp/>signal<sp/>count,<sp/>but<sp/>separate<sp/>name</highlight></codeline>
+<codeline lineno="64" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1aaaaeb00cdc9eeb7be1a3b422b71f442e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1aaaaeb00cdc9eeb7be1a3b422b71f442e" kindref="member">SignalRegionData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>sr,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nobs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>&amp;<sp/>scounter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;double,double&gt;&amp;<sp/>nbkg,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nsigscaled=0)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(sr,<sp/>nobs,<sp/>scounter.weight_sum(),<sp/>nbkg.first,<sp/>scounter.weight_sum_err(),<sp/>nbkg.second,<sp/>nsigscaled)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor<sp/>with<sp/>{n,nsys}<sp/>pair<sp/>args</highlight></codeline>
+<codeline lineno="71" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a6e28b694a27720e4818c301b9cbf1528" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a6e28b694a27720e4818c301b9cbf1528" kindref="member">SignalRegionData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>sr,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nobs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;double,double&gt;&amp;<sp/>nsigMC,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;double,double&gt;&amp;<sp/>nbkg,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nsigscaled=0)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(sr,<sp/>nobs,<sp/>nsigMC.first,<sp/>nbkg.first,<sp/>nsigMC.second,<sp/>nbkg.second,<sp/>nsigscaled)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor<sp/>with<sp/>separate<sp/>n<sp/>&amp;<sp/>nsys<sp/>args</highlight></codeline>
+<codeline lineno="78" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a84c3821d861eaf9332278e0a74ed3dce" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a84c3821d861eaf9332278e0a74ed3dce" kindref="member">SignalRegionData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>sr,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nobs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nsigMC,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nbkg,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nsigMCsys,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nbkgerr,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nsigscaled=0)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a398a8f3147eb9c471547ffb201213f57" kindref="member">sr_label</ref>(sr),</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a4dbd9594096938c904447fb4c2cd2c36" kindref="member">n_obs</ref>(nobs),<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a075e892ddd6acf46379484b133335b92" kindref="member">n_sig_MC</ref>(nsigMC),<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1afd8408153cedd1beb179b582cc632dcc" kindref="member">n_sig_scaled</ref>(nsigscaled),<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c6cd1a69af381ec7e27577a2004ee29" kindref="member">n_bkg</ref>(nbkg),</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c4d2c26b82e89c83f18258ab1562dac" kindref="member">n_sig_MC_sys</ref>(nsigMCsys),<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a6c40cf37895938463cbb45dcd7ac5b86" kindref="member">n_bkg_err</ref>(nbkgerr)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Default<sp/>constructor</highlight></codeline>
+<codeline lineno="87" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a90360f9775c95934485f388d904e50e3" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a90360f9775c95934485f388d904e50e3" kindref="member">SignalRegionData</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Consistency<sp/>check</highlight></codeline>
+<codeline lineno="90" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a80c806d8e0fb934d1463dc44ddd1c14a" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a80c806d8e0fb934d1463dc44ddd1c14a" kindref="member">check</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="91"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>consistent<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@todo<sp/>Add<sp/>SR<sp/>consistency<sp/>checks</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>consistent;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Uncertainty<sp/>calculators</highlight></codeline>
+<codeline lineno="98" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a90aa25b28155a0a2ea7cad1f0e8339d4" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a90aa25b28155a0a2ea7cad1f0e8339d4" kindref="member">scalefactor</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a075e892ddd6acf46379484b133335b92" kindref="member">n_sig_MC</ref><sp/>==<sp/>0<sp/>?<sp/>1<sp/>:<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1afd8408153cedd1beb179b582cc632dcc" kindref="member">n_sig_scaled</ref><sp/>/<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a075e892ddd6acf46379484b133335b92" kindref="member">n_sig_MC</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calc_n_sig_MC_stat()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a075e892ddd6acf46379484b133335b92" kindref="member">n_sig_MC</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calc_n_sig_MC_err()</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>n_sig_MC_stat<sp/>=<sp/>calc_n_sig_MC_stat();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(<sp/>n_sig_MC_stat<sp/>*<sp/>n_sig_MC_stat<sp/>+<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c4d2c26b82e89c83f18258ab1562dac" kindref="member">n_sig_MC_sys</ref><sp/>*<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c4d2c26b82e89c83f18258ab1562dac" kindref="member">n_sig_MC_sys</ref><sp/>);<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calc_n_sig_scaled_stat()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a90aa25b28155a0a2ea7cad1f0e8339d4" kindref="member">scalefactor</ref>()<sp/>*<sp/>calc_n_sig_MC_stat();<sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calc_n_sig_scaled_sys()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a90aa25b28155a0a2ea7cad1f0e8339d4" kindref="member">scalefactor</ref>()<sp/>*<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c4d2c26b82e89c83f18258ab1562dac" kindref="member">n_sig_MC_sys</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calc_n_sig_scaled_err()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a90aa25b28155a0a2ea7cad1f0e8339d4" kindref="member">scalefactor</ref>()<sp/>*<sp/>calc_n_sig_MC_err();<sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calc_n_sigbkg_err()</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>n_sig_scaled_err<sp/>=<sp/>calc_n_sig_scaled_err();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(<sp/>n_sig_scaled_err<sp/>*<sp/>n_sig_scaled_err<sp/>+<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a6c40cf37895938463cbb45dcd7ac5b86" kindref="member">n_bkg_err</ref><sp/>*<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a6c40cf37895938463cbb45dcd7ac5b86" kindref="member">n_bkg_err</ref><sp/>);<sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@todo<sp/>Set<sp/>up<sp/>a<sp/>more<sp/>complete<sp/>system<sp/>of<sp/>getters/setters<sp/>and<sp/>make<sp/>the<sp/>member<sp/>variables<sp/>private</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@name<sp/>Signal<sp/>region<sp/>specification</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@{</highlight></codeline>
+<codeline lineno="124" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a398a8f3147eb9c471547ffb201213f57" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a398a8f3147eb9c471547ffb201213f57" kindref="member">sr_label</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>A<sp/>label<sp/>for<sp/>the<sp/>particular<sp/>signal<sp/>region<sp/>of<sp/>the<sp/>analysis</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@}</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@name<sp/>Signal<sp/>region<sp/>data</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@{</highlight></codeline>
+<codeline lineno="129" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a4dbd9594096938c904447fb4c2cd2c36" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a4dbd9594096938c904447fb4c2cd2c36" kindref="member">n_obs</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">///&lt;<sp/>The<sp/>number<sp/>of<sp/>events<sp/>passing<sp/>selection<sp/>for<sp/>this<sp/>signal<sp/>region<sp/>as<sp/>reported<sp/>by<sp/>the<sp/>experiment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a075e892ddd6acf46379484b133335b92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a075e892ddd6acf46379484b133335b92" kindref="member">n_sig_MC</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">///&lt;<sp/>The<sp/>number<sp/>of<sp/>simulated<sp/>model<sp/>events<sp/>passing<sp/>selection<sp/>for<sp/>this<sp/>signal<sp/>region</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1afd8408153cedd1beb179b582cc632dcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1afd8408153cedd1beb179b582cc632dcc" kindref="member">n_sig_scaled</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">///&lt;<sp/>n_sig_MC,<sp/>scaled<sp/>to<sp/>luminosity<sp/>*<sp/>cross-section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c6cd1a69af381ec7e27577a2004ee29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c6cd1a69af381ec7e27577a2004ee29" kindref="member">n_bkg</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">///&lt;<sp/>The<sp/>number<sp/>of<sp/>standard<sp/>model<sp/>events<sp/>expected<sp/>to<sp/>pass<sp/>the<sp/>selection<sp/>for<sp/>this<sp/>signal<sp/>region,<sp/>as<sp/>reported<sp/>by<sp/>the<sp/>experiment.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c4d2c26b82e89c83f18258ab1562dac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a7c4d2c26b82e89c83f18258ab1562dac" kindref="member">n_sig_MC_sys</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">///&lt;<sp/>The<sp/>absolute<sp/>systematic<sp/>error<sp/>of<sp/>n_sig_MC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a6c40cf37895938463cbb45dcd7ac5b86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a6c40cf37895938463cbb45dcd7ac5b86" kindref="member">n_bkg_err</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">///&lt;<sp/>The<sp/>absolute<sp/>error<sp/>of<sp/>n_bkg</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>//@}</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>A<sp/>container<sp/>for<sp/>the<sp/>result<sp/>of<sp/>an<sp/>analysis,<sp/>potentially<sp/>with<sp/>many<sp/>signal<sp/>regions<sp/>and<sp/>correlations</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/><sp/>///</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@todo<sp/>Access<sp/>by<sp/>name?</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@todo<sp/>Guarantee<sp/>ordering?</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@todo<sp/>How<sp/>to<sp/>combine<sp/>covariance<sp/>matrices<sp/>--<sp/>require?</highlight></codeline>
+<codeline lineno="145" refid="structGambit_1_1ColliderBit_1_1AnalysisData" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData" kindref="compound">AnalysisData</ref></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Default<sp/>constructor</highlight></codeline>
+<codeline lineno="149" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2cd6d85738443c2a5c10d8667785c8c5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2cd6d85738443c2a5c10d8667785c8c5" kindref="member">AnalysisData</ref>()</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a117996f2085894261c7a6d933be3a74c" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor<sp/>with<sp/>analysis<sp/>name</highlight></codeline>
+<codeline lineno="155" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a5d40c727faaf2b8b23bc2331c3a0c109" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a5d40c727faaf2b8b23bc2331c3a0c109" kindref="member">AnalysisData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)<sp/>:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ad3bbb73eef8db0bf21e758f0a03e01aa" kindref="member">analysis_name</ref>(name)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a117996f2085894261c7a6d933be3a74c" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Constructor<sp/>from<sp/>a<sp/>list<sp/>of<sp/>SignalRegionData<sp/>and<sp/>an<sp/>optional<sp/>correlation<sp/>(or<sp/>covariance?)<sp/>matrix</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>If<sp/>corrs<sp/>is<sp/>a<sp/>null<sp/>matrix<sp/>(the<sp/>default),<sp/>this<sp/>AnalysisData<sp/>is<sp/>to<sp/>be<sp/>interpreted<sp/>as<sp/>having<sp/>no<sp/>correlation</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>information,<sp/>and<sp/>hence<sp/>the<sp/>likelihood<sp/>calculation<sp/>should<sp/>use<sp/>the<sp/>single<sp/>best-expected-limit<sp/>SR.</highlight></codeline>
+<codeline lineno="165" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1adabc38b544f447f74a457ba980c512a7" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1adabc38b544f447f74a457ba980c512a7" kindref="member">AnalysisData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;SignalRegionData&gt;&amp;<sp/>srds,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Eigen::MatrixXd&amp;<sp/>cov=Eigen::MatrixXd())</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>(srds),<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1af98c120f3696d51946ecba30e946116a" kindref="member">srcov</ref>(cov)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a13c550ae1f60b246a3eac4fafc47d098" kindref="member">check</ref>();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Clear<sp/>the<sp/>list<sp/>of<sp/>SignalRegionData,<sp/>and<sp/>nullify<sp/>the<sp/>covariance<sp/>matrix</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@todo<sp/>It&apos;d<sp/>be<sp/>good<sp/>to<sp/>*not*<sp/>have<sp/>to<sp/>re-enter<sp/>most<sp/>of<sp/>the<sp/>SRData<sp/>and<sp/>the<sp/>covariance<sp/>on<sp/>every<sp/>point:<sp/>they<sp/>don&apos;t<sp/>change</highlight></codeline>
+<codeline lineno="173" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a117996f2085894261c7a6d933be3a74c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a117996f2085894261c7a6d933be3a74c" kindref="member">clear</ref>()</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>sr<sp/>:<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr.n_sig_MC<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr.n_sig_scaled<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr.n_sig_MC_sys<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1af98c120f3696d51946ecba30e946116a" kindref="member">srcov</ref><sp/>=<sp/>Eigen::MatrixXd();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Number<sp/>of<sp/>analyses</highlight></codeline>
+<codeline lineno="185" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2e008d78f65df55af79ad0749f772e29" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2e008d78f65df55af79ad0749f772e29" kindref="member">size</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="186"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>.size();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Is<sp/>this<sp/>container<sp/>empty<sp/>of<sp/>signal<sp/>regions?</highlight></codeline>
+<codeline lineno="192" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ad79cee1e2cbff75bd7b4c1e3a2db6686" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ad79cee1e2cbff75bd7b4c1e3a2db6686" kindref="member">empty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2e008d78f65df55af79ad0749f772e29" kindref="member">size</ref>()<sp/>==<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Is<sp/>there<sp/>non-null<sp/>correlation<sp/>data?</highlight></codeline>
+<codeline lineno="195" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2cfed82797585dc84beddf1c9451c007" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2cfed82797585dc84beddf1c9451c007" kindref="member">hasCorrs</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="196"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check();<sp/>//<sp/>bjf&gt;<sp/>This<sp/>was<sp/>wrong!<sp/>Needs<sp/>to<sp/>be<sp/>!=,<sp/>not<sp/>==</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1af98c120f3696d51946ecba30e946116a" kindref="member">srcov</ref>.rows()<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Add<sp/>a<sp/>SignalRegionData</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@todo<sp/>Allow<sp/>naming<sp/>the<sp/>SRs?</highlight></codeline>
+<codeline lineno="203" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a8a1c3a6f8d6bfd713619e37ba83095d2" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a8a1c3a6f8d6bfd713619e37ba83095d2" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>&amp;<sp/>srd)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>key<sp/>=<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ad3bbb73eef8db0bf21e758f0a03e01aa" kindref="member">analysis_name</ref><sp/>+<sp/>srd.<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a398a8f3147eb9c471547ffb201213f57" kindref="member">sr_label</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>loc<sp/>=<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a7244bf5e6045b822707f5964eebe9daf" kindref="member">srdata_identifiers</ref>.find(key);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(loc<sp/>==<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a7244bf5e6045b822707f5964eebe9daf" kindref="member">srdata_identifiers</ref>.end())</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>signal<sp/>region<sp/>doesn&apos;t<sp/>exist<sp/>in<sp/>this<sp/>object<sp/>yet,<sp/>add<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>.push_back(srd);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a7244bf5e6045b822707f5964eebe9daf" kindref="member">srdata_identifiers</ref>[key]<sp/>=<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>.size()<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>it<sp/>does,<sp/>just<sp/>update<sp/>the<sp/>signal<sp/>count<sp/>in<sp/>the<sp/>existing<sp/>SignalRegionData<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>[loc-&gt;second].n_sig_MC<sp/>=<sp/>srd.<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData_1a075e892ddd6acf46379484b133335b92" kindref="member">n_sig_MC</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a13c550ae1f60b246a3eac4fafc47d098" kindref="member">check</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>that<sp/>the<sp/>SRData<sp/>list<sp/>and<sp/>the<sp/>covariance<sp/>matrix<sp/>are<sp/>consistent</highlight></codeline>
+<codeline lineno="222" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a13c550ae1f60b246a3eac4fafc47d098" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a13c550ae1f60b246a3eac4fafc47d098" kindref="member">check</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="223"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>&amp;<sp/>srd<sp/>:<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>)<sp/>srd.check();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(<ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1af98c120f3696d51946ecba30e946116a" kindref="member">srcov</ref>.rows()<sp/>==<sp/>0<sp/>||<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1af98c120f3696d51946ecba30e946116a" kindref="member">srcov</ref>.rows()<sp/>==<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>.size());</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>event_gen_BYPASS<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>bjf&gt;<sp/>Experimental!<sp/>But<sp/>already<sp/>useful<sp/>for<sp/>helping<sp/>me<sp/>convert<sp/>the<sp/>key</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>numbers<sp/>from<sp/>these<sp/>analyses<sp/>to<sp/>Python<sp/>for<sp/>the<sp/>p-value<sp/>calculuations.</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ad7fa629210db2601f784b0df3ebbedf8" kindref="member">pythonize_me</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Analysis<sp/>name</highlight></codeline>
+<codeline lineno="237" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ad3bbb73eef8db0bf21e758f0a03e01aa" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ad3bbb73eef8db0bf21e758f0a03e01aa" kindref="member">analysis_name</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Access<sp/>the<sp/>i&apos;th<sp/>signal<sp/>region&apos;s<sp/>data</highlight></codeline>
+<codeline lineno="240" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ac39782193bf4745188364fa00b794a54" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ac39782193bf4745188364fa00b794a54" kindref="member">operator[] </ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>[i];<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Access<sp/>the<sp/>i&apos;th<sp/>signal<sp/>region&apos;s<sp/>data<sp/>(const)</highlight></codeline>
+<codeline lineno="242" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2eb0058d261a030ad0fecedce37c606c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1ac39782193bf4745188364fa00b794a54" kindref="member">operator[] </ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>[i];<sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterators<sp/>(sugar<sp/>for<sp/>direct<sp/>access<sp/>to<sp/>this-&gt;srdata)</highlight></codeline>
+<codeline lineno="245" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1abea174396616d2d159af6872f7f9b24a" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SignalRegionData&gt;::iterator<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1abea174396616d2d159af6872f7f9b24a" kindref="member">begin</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>.begin();<sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SignalRegionData&gt;::const_iterator<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1abea174396616d2d159af6872f7f9b24a" kindref="member">begin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>.begin();<sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SignalRegionData&gt;::iterator<sp/>end()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>.end();<sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SignalRegionData&gt;::const_iterator<sp/>end()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>.end();<sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>List<sp/>of<sp/>signal<sp/>regions&apos;<sp/>data<sp/>summaries</highlight></codeline>
+<codeline lineno="251" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SignalRegionData&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a80a0482d32918b99d77214d26d71b273" kindref="member">srdata</ref>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Map<sp/>of<sp/>names<sp/>and<sp/>indices<sp/>of<sp/>all<sp/>entries<sp/>in<sp/>srdata,<sp/>for<sp/>easy<sp/>lookup</highlight></codeline>
+<codeline lineno="254" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a7244bf5e6045b822707f5964eebe9daf" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>int&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a7244bf5e6045b822707f5964eebe9daf" kindref="member">srdata_identifiers</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Optional<sp/>covariance<sp/>matrix<sp/>between<sp/>SRs<sp/>(0x0<sp/>null<sp/>matrix<sp/>=<sp/>no<sp/>correlation<sp/>info)</highlight></codeline>
+<codeline lineno="257" refid="structGambit_1_1ColliderBit_1_1AnalysisData_1af98c120f3696d51946ecba30e946116a" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::MatrixXd<sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData_1af98c120f3696d51946ecba30e946116a" kindref="member">srcov</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisData.hpp"/>
+  </compounddef>
+</doxygen>
