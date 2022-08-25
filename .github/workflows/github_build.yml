@@ -32,8 +32,7 @@ jobs:
           && mkdir build
           && cmake -B ./build -G "Unix Makefiles" \
                  -DCMAKE_BUILD_TYPE=MinSizeRel \
-                 -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake \
-                 ..
+                 -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake
           && cmake --build ./build --config MinSizeRel
         # Install sed to edit some file contents
       - name: Install sed
