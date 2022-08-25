@@ -31,10 +31,10 @@ description: "[No description available]"
 | Fdouble | **[energy_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-energy-in)**  |
 | Finteger | **[i_error_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-i-error-in)**  |
 | Fstring< 2 > | **[final_state_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-final-state-in)**  |
-| Finteger | **[ipart1_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-ipart-in)**  |
-| Finteger | **[ipart2_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-ipart-in)**  |
-| Finteger | **[isquark1_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-isquark-in)**  |
-| Finteger | **[isquark2_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-isquark-in)**  |
+| Finteger | **[ipart1_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-ipart1-in)**  |
+| Finteger | **[ipart2_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-ipart2-in)**  |
+| Finteger | **[isquark1_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-isquark1-in)**  |
+| Finteger | **[isquark2_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-isquark2-in)**  |
 
 ## Public Functions Documentation
 
@@ -139,4 +139,4 @@ Finteger isquark2_in;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

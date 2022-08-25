@@ -28,7 +28,7 @@ Inherits from [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [Adv
 | double | **[WalkDev](/documentation/code/classes/classrandomplane/#function-walkdev)**(double * ptrOut, double * ptr, double * ptr0) |
 | double | **[TransDev](/documentation/code/classes/classrandomplane/#function-transdev)**(double * ptrOut, double * ptr, double * ptr0) |
 | void | **[Mult](/documentation/code/classes/classrandomplane/#function-mult)**(double * ptrOut, double * ptr, double * ptr0, const double Z) |
-| void | **[Mult2](/documentation/code/classes/classrandomplane/#function-mult)**(double * ptrOut, double * ptr, double * ptr0, const double Z) |
+| void | **[Mult2](/documentation/code/classes/classrandomplane/#function-mult2)**(double * ptrOut, double * ptr, double * ptr0, const double Z) |
 | void | **[RandRot](/documentation/code/classes/classrandomplane/#function-randrot)**(const int start =0) |
 | void | **[RandRot](/documentation/code/classes/classrandomplane/#function-randrot)**(const int start, const int end) |
 | int | **[Dim](/documentation/code/classes/classrandomplane/#function-dim)**() const |
@@ -40,7 +40,7 @@ Inherits from [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [Adv
 | bool | **[KWalkDev](/documentation/code/classes/classrandomplane/#function-kwalkdev)**(double & Z) |
 | double | **[WalkDev](/documentation/code/classes/classrandomplane/#function-walkdev)**(double * ptrOut, double * ptr, double * ptr0) |
 | double | **[TransDev](/documentation/code/classes/classrandomplane/#function-transdev)**(double * ptrOut, double * ptr, double * ptr0) |
-| void | **[Mult2](/documentation/code/classes/classrandomplane/#function-mult)**(double * ptrOut, double * ptr, double * ptr0, const double Z) |
+| void | **[Mult2](/documentation/code/classes/classrandomplane/#function-mult2)**(double * ptrOut, double * ptr, double * ptr0, const double Z) |
 | void | **[Mult](/documentation/code/classes/classrandomplane/#function-mult)**(double * ptrOut, double * ptr, double * ptr0, const double Z) |
 | void | **[HopBlow](/documentation/code/classes/classrandomplane/#function-hopblow)**(double * ptrOut, double * ptrIn, double * ptr, double * ptr0) |
 | void | **[RandRot](/documentation/code/classes/classrandomplane/#function-randrot)**(const int start =0) |
@@ -409,4 +409,4 @@ inline ~RandomPlane()
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

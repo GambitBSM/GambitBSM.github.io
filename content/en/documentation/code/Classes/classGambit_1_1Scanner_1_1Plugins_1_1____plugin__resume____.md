@@ -22,9 +22,9 @@ Inherits from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function--plugin-resume)**(T & data) |
+| | **[__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-plugin-resume)**(T & data) |
 | virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-print)**(std::ofstream & out) |
-| | **[~__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function--plugin-resume)**() |
+| | **[~__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-plugin-resume)**() |
 
 ## Additional inherited members
 
@@ -32,7 +32,7 @@ Inherits from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function--plugin-resume-base)**() |
+| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-plugin-resume-base)**() |
 
 
 ## Detailed Description
@@ -75,4 +75,4 @@ inline ~__plugin_resume__()
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

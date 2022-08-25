@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_FUNCTION_5](/documentation/code/files/backend__macros_8hpp/#define-be-function)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY)  |
-|  | **[BE_FUNCTION_6](/documentation/code/files/backend__macros_8hpp/#define-be-function)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS)  |
-|  | **[BE_FUNCTION_7](/documentation/code/files/backend__macros_8hpp/#define-be-function)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
+|  | **[BE_FUNCTION_5](/documentation/code/files/backend__macros_8hpp/#define-be-function-5)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY)  |
+|  | **[BE_FUNCTION_6](/documentation/code/files/backend__macros_8hpp/#define-be-function-6)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS)  |
+|  | **[BE_FUNCTION_7](/documentation/code/files/backend__macros_8hpp/#define-be-function-7)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
 |  | **[BE_FUNCTION](/documentation/code/files/backend__macros_8hpp/#define-be-function)**(...)  |
 |  | **[BE_FUNCTION_I](/documentation/code/files/backend__macros_8hpp/#define-be-function-i)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
 |  | **[BE_FUNCTION_I_AUX](/documentation/code/files/backend__macros_8hpp/#define-be-function-i-aux)**(NAME, TYPE, ARGLIST, SYMBOLNAMES, CAPABILITY, MODELS)  |
@@ -1237,4 +1237,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

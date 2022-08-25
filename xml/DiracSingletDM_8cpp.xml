@@ -4,14 +4,86 @@
     <compoundname>DiracSingletDM.cpp</compoundname>
     <includes local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
     <includes local="yes">gambit/Elements/virtual_higgs.hpp</includes>
-    <includes local="yes">gambit/DarkBit/DarkBit_rollcall.hpp</includes>
+    <includes refid="DarkBit__rollcall_8hpp" local="yes">gambit/DarkBit/DarkBit_rollcall.hpp</includes>
     <includes local="yes">gambit/Utils/ascii_table_reader.hpp</includes>
     <includes local="yes">boost/make_shared.hpp</includes>
     <includes refid="DarkBit__utils_8hpp" local="yes">gambit/DarkBit/DarkBit_utils.hpp</includes>
     <incdepgraph>
-      <node id="7">
+      <node id="21">
+        <label>gambit/Backends/backend_types/nulike.hpp</label>
+        <link refid="nulike_8hpp"/>
+      </node>
+      <node id="4">
+        <label>gambit/DarkBit/DarkBit_rollcall.hpp</label>
+        <link refid="DarkBit__rollcall_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gambit/DarkBit/DarkBit_types.hpp</label>
+        <link refid="DarkBit__types_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
         <label>gambit/DarkBit/DarkBit_utils.hpp</label>
         <link refid="DarkBit__utils_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit/DarkBit/ProcessCatalog.hpp</label>
+        <link refid="ProcessCatalog_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>gambit/DarkBit/SimpleHist.hpp</label>
+        <link refid="SimpleHist_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gambit/DarkBit/decay_chain.hpp</label>
+        <link refid="decay__chain_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -32,20 +104,20 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="23">
         <label>boost/make_shared.hpp</label>
       </node>
-      <node id="4">
-        <label>gambit/DarkBit/DarkBit_rollcall.hpp</label>
+      <node id="11">
+        <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="12">
+      <node id="17">
         <label>gambit/Elements/daFunk.hpp</label>
       </node>
       <node id="2">
@@ -54,19 +126,37 @@
       <node id="3">
         <label>gambit/Elements/virtual_higgs.hpp</label>
       </node>
-      <node id="5">
+      <node id="19">
+        <label>gambit/Models/safe_param_map.hpp</label>
+      </node>
+      <node id="22">
         <label>gambit/Utils/ascii_table_reader.hpp</label>
       </node>
-      <node id="10">
+      <node id="12">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+      </node>
+      <node id="15">
         <label>gambit/Utils/util_types.hpp</label>
       </node>
-      <node id="11">
+      <node id="20">
+        <label>gambit/Utils/yaml_options.hpp</label>
+      </node>
+      <node id="16">
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="9">
+      <node id="14">
         <label>map</label>
       </node>
+      <node id="10">
+        <label>set</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
       <node id="8">
+        <label>unordered_map</label>
+      </node>
+      <node id="7">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -167,7 +257,7 @@
 <codeline lineno="30"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/gambit_module_headers.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/virtual_higgs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/DarkBit/DarkBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DarkBit__rollcall_8hpp" kindref="compound">gambit/DarkBit/DarkBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/ascii_table_reader.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;boost/make_shared.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DarkBit__utils_8hpp" kindref="compound">gambit/DarkBit/DarkBit_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>

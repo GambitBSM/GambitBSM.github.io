@@ -27,7 +27,7 @@ A container for the mass and spin of a particle.
 |                | Name           |
 | -------------- | -------------- |
 | double | **[mass](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#variable-mass)** <br>Particle mass (GeV)  |
-| unsigned int | **[spin2](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#variable-spin)** <br>Twice the spin of the particle.  |
+| unsigned int | **[spin2](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#variable-spin2)** <br>Twice the spin of the particle.  |
 
 ## Public Functions Documentation
 
@@ -62,4 +62,4 @@ Twice the spin of the particle.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

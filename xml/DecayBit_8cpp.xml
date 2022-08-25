@@ -6,7 +6,7 @@
     <includes local="yes">gambit/Elements/virtual_higgs.hpp</includes>
     <includes local="yes">gambit/Elements/mssm_slhahelp.hpp</includes>
     <includes local="yes">gambit/Elements/smlike_higgs.hpp</includes>
-    <includes local="yes">gambit/DecayBit/DecayBit_rollcall.hpp</includes>
+    <includes refid="DecayBit__rollcall_8hpp" local="yes">gambit/DecayBit/DecayBit_rollcall.hpp</includes>
     <includes refid="decay__utils_8hpp" local="yes">gambit/DecayBit/decay_utils.hpp</includes>
     <includes refid="SM__Z_8hpp" local="yes">gambit/DecayBit/SM_Z.hpp</includes>
     <includes refid="MSSM__H_8hpp" local="yes">gambit/DecayBit/MSSM_H.hpp</includes>
@@ -21,6 +21,10 @@
     <includes local="no">complex</includes>
     <includes local="no">functional</includes>
     <incdepgraph>
+      <node id="6">
+        <label>gambit/DecayBit/DecayBit_rollcall.hpp</label>
+        <link refid="DecayBit__rollcall_8hpp"/>
+      </node>
       <node id="12">
         <label>gambit/DecayBit/MSSM_H.hpp</label>
         <link refid="MSSM__H_8hpp"/>
@@ -104,9 +108,6 @@
       </node>
       <node id="24">
         <label>functional</label>
-      </node>
-      <node id="6">
-        <label>gambit/DecayBit/DecayBit_rollcall.hpp</label>
       </node>
       <node id="8">
         <label>gambit/Elements/decay_table.hpp</label>
@@ -280,7 +281,7 @@
 <codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/virtual_higgs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/mssm_slhahelp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/smlike_higgs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/DecayBit/DecayBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DecayBit__rollcall_8hpp" kindref="compound">gambit/DecayBit/DecayBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="decay__utils_8hpp" kindref="compound">gambit/DecayBit/decay_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SM__Z_8hpp" kindref="compound">gambit/DecayBit/SM_Z.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MSSM__H_8hpp" kindref="compound">gambit/DecayBit/MSSM_H.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>

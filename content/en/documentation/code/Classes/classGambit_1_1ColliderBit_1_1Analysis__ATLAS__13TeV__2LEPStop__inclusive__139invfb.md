@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPStop_139invfb](/doc
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_2LEPStop_inclusive_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__inclusive__139invfb/#function-analysis-atlas-tev-lepstop-inclusive-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_2LEPStop_inclusive_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__inclusive__139invfb/#function-analysis-atlas-13tev-2lepstop-inclusive-139invfb)**() |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__inclusive__139invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
@@ -29,7 +29,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPStop_139invfb](/doc
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_2LEPStop_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/#function-analysis-atlas-tev-lepstop-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_2LEPStop_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/#function-analysis-atlas-13tev-2lepstop-139invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 
@@ -43,7 +43,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPStop_139invfb](/doc
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/#variable--counters)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/#variable-counters)**  |
 | constexpr const char * | **[detector](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/#variable-detector)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
@@ -100,4 +100,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

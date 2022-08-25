@@ -16,15 +16,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_VARIABLE_6](/documentation/code/files/common__macros_8hpp/#define-be-variable)**(_1, _2, _3, _4, _5, _6)  |
-|  | **[BE_VARIABLE_5](/documentation/code/files/common__macros_8hpp/#define-be-variable)**(_1, _2, _3, _4, _5)  |
-|  | **[BE_VARIABLE_4](/documentation/code/files/common__macros_8hpp/#define-be-variable)**(_1, _2, _3, _4)  |
+|  | **[BE_VARIABLE_6](/documentation/code/files/common__macros_8hpp/#define-be-variable-6)**(_1, _2, _3, _4, _5, _6)  |
+|  | **[BE_VARIABLE_5](/documentation/code/files/common__macros_8hpp/#define-be-variable-5)**(_1, _2, _3, _4, _5)  |
+|  | **[BE_VARIABLE_4](/documentation/code/files/common__macros_8hpp/#define-be-variable-4)**(_1, _2, _3, _4)  |
 |  | **[BE_VARIABLE](/documentation/code/files/common__macros_8hpp/#define-be-variable)**(...)  |
-|  | **[BE_CONV_FUNCTION_6](/documentation/code/files/common__macros_8hpp/#define-be-conv-function)**(_1, _2, _3, _4, _5, _6)  |
-|  | **[BE_CONV_FUNCTION_5](/documentation/code/files/common__macros_8hpp/#define-be-conv-function)**(_1, _2, _3, _4, _5)  |
-|  | **[BE_CONV_FUNCTION_4](/documentation/code/files/common__macros_8hpp/#define-be-conv-function)**(_1, _2, _3, _4)  |
+|  | **[BE_CONV_FUNCTION_6](/documentation/code/files/common__macros_8hpp/#define-be-conv-function-6)**(_1, _2, _3, _4, _5, _6)  |
+|  | **[BE_CONV_FUNCTION_5](/documentation/code/files/common__macros_8hpp/#define-be-conv-function-5)**(_1, _2, _3, _4, _5)  |
+|  | **[BE_CONV_FUNCTION_4](/documentation/code/files/common__macros_8hpp/#define-be-conv-function-4)**(_1, _2, _3, _4)  |
 |  | **[BE_CONV_FUNCTION](/documentation/code/files/common__macros_8hpp/#define-be-conv-function)**(...)  |
-|  | **[IF_USING_PYBIND11](/documentation/code/files/common__macros_8hpp/#define-if-using-pybind)**(ARG) <br>Evaluates to ARG if and only if we have pybind11 and USING_PYTHON is true.  |
+|  | **[IF_USING_PYBIND11](/documentation/code/files/common__macros_8hpp/#define-if-using-pybind11)**(ARG) <br>Evaluates to ARG if and only if we have pybind11 and USING_PYTHON is true.  |
 |  | **[DO_CLASSLOADING](/documentation/code/files/common__macros_8hpp/#define-do-classloading)** <br>Turn classloading off by default (this is redefined by BOSSed backends).  |
 |  | **[BE_ALLOW_MODELS](/documentation/code/files/common__macros_8hpp/#define-be-allow-models)**(...) <br>Macro for assigning allowed models to an entire backend.  |
 |  | **[BE_ALLOW_MODEL_INTERMEDIATE](/documentation/code/files/common__macros_8hpp/#define-be-allow-model-intermediate)**(r, data, MODEL) <br>Intermediate macro for expanding BE_ALLOW_MODELS.  |
@@ -367,4 +367,4 @@ namespace Gambit                                                            \
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

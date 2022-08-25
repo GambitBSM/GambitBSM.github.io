@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_1Photon1Lepton_36invfb](/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_1Photon1Lepton_emu_combined_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__emu__combined__36invfb/#function-analysis-cms-tev-photonlepton-emu-combined-invfb)**() |
+| | **[Analysis_CMS_13TeV_1Photon1Lepton_emu_combined_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__emu__combined__36invfb/#function-analysis-cms-13tev-1photon1lepton-emu-combined-36invfb)**() |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__emu__combined__36invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
@@ -29,7 +29,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_1Photon1Lepton_36invfb](/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_1Photon1Lepton_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/#function-analysis-cms-tev-photonlepton-invfb)**() |
+| | **[Analysis_CMS_13TeV_1Photon1Lepton_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/#function-analysis-cms-13tev-1photon1lepton-36invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 
@@ -44,7 +44,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_1Photon1Lepton_36invfb](/
 |                | Name           |
 | -------------- | -------------- |
 | constexpr const char * | **[detector](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/#variable-detector)**  |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/#variable--counters)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/#variable-counters)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
@@ -100,4 +100,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

@@ -6,7 +6,7 @@
     <includes local="yes">gambit/Utils/statistics.hpp</includes>
     <includes local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
     <includes local="yes">gambit/Utils/ascii_table_reader.hpp</includes>
-    <includes local="yes">gambit/CosmoBit/CosmoBit_rollcall.hpp</includes>
+    <includes refid="CosmoBit__rollcall_8hpp" local="yes">gambit/CosmoBit/CosmoBit_rollcall.hpp</includes>
     <includes refid="CosmoBit__types_8hpp" local="yes">gambit/CosmoBit/CosmoBit_types.hpp</includes>
     <incdepgraph>
       <node id="15">
@@ -20,6 +20,12 @@
       <node id="17">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
+      </node>
+      <node id="6">
+        <label>gambit/CosmoBit/CosmoBit_rollcall.hpp</label>
+        <link refid="CosmoBit__rollcall_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
       <node id="7">
         <label>gambit/CosmoBit/CosmoBit_types.hpp</label>
@@ -61,9 +67,6 @@
       </node>
       <node id="9">
         <label>cmath</label>
-      </node>
-      <node id="6">
-        <label>gambit/CosmoBit/CosmoBit_rollcall.hpp</label>
       </node>
       <node id="4">
         <label>gambit/Elements/gambit_module_headers.hpp</label>
@@ -207,7 +210,7 @@
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/gambit_module_headers.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/ascii_table_reader.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/CosmoBit/CosmoBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CosmoBit__rollcall_8hpp" kindref="compound">gambit/CosmoBit/CosmoBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CosmoBit__types_8hpp" kindref="compound">gambit/CosmoBit/CosmoBit_types.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>

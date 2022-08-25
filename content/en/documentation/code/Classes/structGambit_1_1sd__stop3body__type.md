@@ -29,14 +29,14 @@ description: "[No description available]"
 | Farray< Fdouble, 1, 2, 1, 2 > | **[brstelsbnu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstelsbnu)**  |
 | Farray< Fdouble, 1, 2, 1, 2 > | **[brstupsbdow](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstupsbdow)**  |
 | Farray< Fdouble, 1, 2 > | **[brstsnel](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstsnel)**  |
-| Fdouble | **[brst2st1tt](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brststtt)**  |
-| Fdouble | **[brst2st1startt](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brstststartt)**  |
-| Fdouble | **[brst2st1bb](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brststbb)**  |
-| Fdouble | **[brst2st1uu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brststuu)**  |
-| Fdouble | **[brst2st1dd](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brststdd)**  |
-| Fdouble | **[brst2st1ee](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brststee)**  |
-| Fdouble | **[brst2st1nunu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brststnunu)**  |
-| Fdouble | **[brst2st1tautau](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brststtautau)**  |
+| Fdouble | **[brst2st1tt](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1tt)**  |
+| Fdouble | **[brst2st1startt](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1startt)**  |
+| Fdouble | **[brst2st1bb](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1bb)**  |
+| Fdouble | **[brst2st1uu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1uu)**  |
+| Fdouble | **[brst2st1dd](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1dd)**  |
+| Fdouble | **[brst2st1ee](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1ee)**  |
+| Fdouble | **[brst2st1nunu](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1nunu)**  |
+| Fdouble | **[brst2st1tautau](/documentation/code/classes/structgambit_1_1sd__stop3body__type/#variable-brst2st1tautau)**  |
 
 ## Public Attributes Documentation
 
@@ -175,4 +175,4 @@ Fdouble brst2st1tautau;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

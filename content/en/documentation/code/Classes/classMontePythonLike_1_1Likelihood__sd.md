@@ -20,7 +20,7 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[eval_spinning_dust](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#function-eval-spinning-dust)**(self self, lognu lognu, lognu_p lognu_p) |
 | def | **[eval_co_integrated](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#function-eval-co-integrated)**(self self, lognu lognu) |
 | def | **[loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#function-loglkl)**(self self, cosmo cosmo, data data) |
@@ -41,8 +41,8 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 | | **[fid_values_exist](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-fid-values-exist)**  |
 | | **[spinning_dust_file](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-file)**  |
 | | **[spinning_dust_lognup_data](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-lognup-data)**  |
-| | **[spinning_dust_lognup_0](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-lognup)**  |
-| | **[spinning_dust_lognu_0](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-lognu)**  |
+| | **[spinning_dust_lognup_0](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-lognup-0)**  |
+| | **[spinning_dust_lognu_0](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-lognu-0)**  |
 | | **[spinning_dust_lognumin](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-lognumin)**  |
 | | **[spinning_dust_lognumax](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-lognumax)**  |
 | | **[spinning_dust_logT_brightness](/documentation/code/classes/classmontepythonlike_1_1likelihood__sd/#variable-spinning-dust-logt-brightness)**  |
@@ -105,7 +105,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)
 
 
 
@@ -329,4 +329,4 @@ co_integrated_logInu;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

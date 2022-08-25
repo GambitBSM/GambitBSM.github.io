@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_7TeV_2LEPStop_4_7invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__2lepstop__4__7invfb/#function-analysis-atlas-tev-lepstop-invfb)**() |
+| | **[Analysis_ATLAS_7TeV_2LEPStop_4_7invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__2lepstop__4__7invfb/#function-analysis-atlas-7tev-2lepstop-4-7invfb)**() |
 | void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__2lepstop__4__7invfb/#function-run)**(const Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__2lepstop__4__7invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Add the analysis-specific variables of another analysis to this one.  |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__2lepstop__4__7invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
@@ -158,4 +158,4 @@ double numEU =0;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

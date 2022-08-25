@@ -29,8 +29,8 @@ Inherits from [Gambit::ColliderBit::BaseCollider](/documentation/code/classes/cl
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Py8Collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-pycollider)**() |
-| | **[~Py8Collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-pycollider)**() |
+| | **[Py8Collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-py8collider)**() |
+| | **[~Py8Collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-py8collider)**() |
 | virtual void | **[clear](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-clear)**()<br>Reset this instance for reuse, avoiding the need for "new" or "delete".  |
 | void | **[addToSettings](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-addtosettings)**(const std::string & command)<br>Add a command to the list of settings used by "init".  |
 | void | **[banner](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-banner)**(const std::string pythiaDocPath)<br>Create a useless Pythia instance just to print the banner.  |
@@ -58,9 +58,9 @@ Inherits from [Gambit::ColliderBit::BaseCollider](/documentation/code/classes/cl
 
 |                | Name           |
 | -------------- | -------------- |
-| PythiaT * | **[_pythiaInstance](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#variable--pythiainstance)**  |
-| PythiaT * | **[_pythiaBase](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#variable--pythiabase)**  |
-| std::vector< std::string > | **[_pythiaSettings](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#variable--pythiasettings)**  |
+| PythiaT * | **[_pythiaInstance](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#variable-pythiainstance)**  |
+| PythiaT * | **[_pythiaBase](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#variable-pythiabase)**  |
+| std::vector< std::string > | **[_pythiaSettings](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#variable-pythiasettings)**  |
 
 ## Additional inherited members
 
@@ -386,4 +386,4 @@ std::vector< std::string > _pythiaSettings;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

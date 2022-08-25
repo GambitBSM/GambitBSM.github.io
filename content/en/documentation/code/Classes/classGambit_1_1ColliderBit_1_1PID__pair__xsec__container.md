@@ -65,10 +65,10 @@ Inherits from [Gambit::ColliderBit::xsec_container](/documentation/code/classes/
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable--xsec)**  |
-| double | **[_xsecerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable--xsecerr)**  |
-| std::string | **[_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable--info-string)**  |
-| int | **[_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable--trust-level)**  |
+| double | **[_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-xsec)**  |
+| double | **[_xsecerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-xsecerr)**  |
+| std::string | **[_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-info-string)**  |
+| int | **[_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-trust-level)**  |
 
 
 ## Public Functions Documentation
@@ -200,4 +200,4 @@ Add a process code to the list of processes related to this cross-section.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

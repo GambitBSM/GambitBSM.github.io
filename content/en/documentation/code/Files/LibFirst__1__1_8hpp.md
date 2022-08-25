@@ -28,7 +28,7 @@ description: "[No description available]"
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/files/libfirst__1__1_8hpp/#variable-double)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[int](/documentation/code/files/libfirst__1__1_8hpp/#variable-int)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[awesomeness](/documentation/code/files/libfirst__1__1_8hpp/#variable-awesomeness)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[NUHM1](/documentation/code/files/libfirst__1__1_8hpp/#variable-nuhm)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d | **[NUHM1](/documentation/code/files/libfirst__1__1_8hpp/#variable-nuhm1)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double _Z11arrayarg_2DPA10_d ScalarSingletDM_Z3 | **[BE_INI_FUNCTION](/documentation/code/files/libfirst__1__1_8hpp/#variable-be-ini-function)**  |
 | | **[scan_level](/documentation/code/files/libfirst__1__1_8hpp/#variable-scan-level)**  |
 
@@ -321,4 +321,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

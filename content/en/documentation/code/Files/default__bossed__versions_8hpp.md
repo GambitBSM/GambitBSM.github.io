@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[Default_gm2calc](/documentation/code/files/default__bossed__versions_8hpp/#define-default-gmcalc)**  |
+|  | **[Default_gm2calc](/documentation/code/files/default__bossed__versions_8hpp/#define-default-gm2calc)**  |
 |  | **[Default_Pythia](/documentation/code/files/default__bossed__versions_8hpp/#define-default-pythia)**  |
 |  | **[Default_HepLike](/documentation/code/files/default__bossed__versions_8hpp/#define-default-heplike)**  |
 |  | **[Default_vevacious](/documentation/code/files/default__bossed__versions_8hpp/#define-default-vevacious)**  |
@@ -111,4 +111,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

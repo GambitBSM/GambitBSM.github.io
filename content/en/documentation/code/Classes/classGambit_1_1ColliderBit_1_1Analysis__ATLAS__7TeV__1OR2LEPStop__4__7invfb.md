@@ -32,7 +32,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 | double | **[calcMt](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#function-calcmt)**(P4 metVec, P4 lepVec) |
 | double | **[calcSqrtSSubMin](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#function-calcsqrtssubmin)**(P4 visibleSubsystem, P4 invisbleSubsystem) |
 | void | **[getBJets](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#function-getbjets)**(std::vector< const Jet * > & jets, std::vector< const Jet * > * bJets, std::vector< const Jet * > * lightJets) |
-| | **[Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#function-analysis-atlas-tev-orlepstop-invfb)**() |
+| | **[Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#function-analysis-atlas-7tev-1or2lepstop-4-7invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
@@ -54,9 +54,9 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 | const std::vector< std::string > | **[varNames](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-varnames)**  |
 | std::map< std::string, std::vector< double > > | **[varResults](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-varresults)**  |
 | std::map< std::string, int > | **[cutflows](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-cutflows)**  |
-| double | **[num1LSR](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-numlsr)**  |
-| double | **[num2LSR1](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-numlsr)**  |
-| double | **[num2LSR2](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-numlsr)**  |
+| double | **[num1LSR](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-num1lsr)**  |
+| double | **[num2LSR1](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-num2lsr1)**  |
+| double | **[num2LSR2](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/#variable-num2lsr2)**  |
 
 ## Additional inherited members
 
@@ -321,4 +321,4 @@ double num2LSR2 =0;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

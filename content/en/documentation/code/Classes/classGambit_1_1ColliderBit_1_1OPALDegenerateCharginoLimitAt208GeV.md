@@ -22,7 +22,7 @@ Inherits from [Gambit::ColliderBit::BaseLimitContainer](/documentation/code/clas
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[OPALDegenerateCharginoLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opaldegeneratecharginolimitat208gev/#function-opaldegeneratecharginolimitatgev)**() |
+| | **[OPALDegenerateCharginoLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opaldegeneratecharginolimitat208gev/#function-opaldegeneratecharginolimitat208gev)**() |
 | virtual [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[convertPt](/documentation/code/classes/classgambit_1_1colliderbit_1_1opaldegeneratecharginolimitat208gev/#function-convertpt)**(double x, double y) const<br>Convert a point from pixel units to axis units, creating a [P2]().  |
 | std::vector< [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) > | **[dataFromLimit](/documentation/code/classes/classgambit_1_1colliderbit_1_1opaldegeneratecharginolimitat208gev/#function-datafromlimit)**(double limit)<br>@read off the csv file containting the data  |
 | virtual bool | **[isWithinExclusionRegion](/documentation/code/classes/classgambit_1_1colliderbit_1_1opaldegeneratecharginolimitat208gev/#function-iswithinexclusionregion)**(double x, double y, double ) const<br>Check to see if the point is within the exclusion region.  |
@@ -54,9 +54,9 @@ Inherits from [Gambit::ColliderBit::BaseLimitContainer](/documentation/code/clas
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< double > | **[_limitValuesSorted](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable--limitvaluessorted)**  |
-| LimitContours | **[_limitContours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable--limitcontours)**  |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[_externalPoint](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable--externalpoint)**  |
+| std::vector< double > | **[_limitValuesSorted](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-limitvaluessorted)**  |
+| LimitContours | **[_limitContours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-limitcontours)**  |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[_externalPoint](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-externalpoint)**  |
 
 
 ## Public Functions Documentation
@@ -112,4 +112,4 @@ Plots only go down to 45 GeV
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

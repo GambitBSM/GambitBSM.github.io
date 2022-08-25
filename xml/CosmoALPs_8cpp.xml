@@ -4,7 +4,7 @@
     <compoundname>CosmoALPs.cpp</compoundname>
     <includes local="no">gsl/gsl_odeiv2.h</includes>
     <includes local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
-    <includes local="yes">gambit/CosmoBit/CosmoBit_rollcall.hpp</includes>
+    <includes refid="CosmoBit__rollcall_8hpp" local="yes">gambit/CosmoBit/CosmoBit_rollcall.hpp</includes>
     <includes refid="CosmoBit__types_8hpp" local="yes">gambit/CosmoBit/CosmoBit_types.hpp</includes>
     <includes refid="CosmoBit__utils_8hpp" local="yes">gambit/CosmoBit/CosmoBit_utils.hpp</includes>
     <includes local="yes">gambit/Utils/numerical_constants.hpp</includes>
@@ -21,6 +21,12 @@
       <node id="15">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
+      </node>
+      <node id="4">
+        <label>gambit/CosmoBit/CosmoBit_rollcall.hpp</label>
+        <link refid="CosmoBit__rollcall_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="5">
         <label>gambit/CosmoBit/CosmoBit_types.hpp</label>
@@ -68,9 +74,6 @@
       </node>
       <node id="7">
         <label>cmath</label>
-      </node>
-      <node id="4">
-        <label>gambit/CosmoBit/CosmoBit_rollcall.hpp</label>
       </node>
       <node id="3">
         <label>gambit/Elements/gambit_module_headers.hpp</label>
@@ -261,7 +264,7 @@
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_odeiv2.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/gambit_module_headers.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/CosmoBit/CosmoBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CosmoBit__rollcall_8hpp" kindref="compound">gambit/CosmoBit/CosmoBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CosmoBit__types_8hpp" kindref="compound">gambit/CosmoBit/CosmoBit_types.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CosmoBit__utils_8hpp" kindref="compound">gambit/CosmoBit/CosmoBit_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/numerical_constants.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>

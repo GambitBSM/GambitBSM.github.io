@@ -27,8 +27,8 @@ description: "[No description available]"
 | Farray< Fdouble, 1, 2 > | **[brgoud](/documentation/code/classes/structgambit_1_1sd__glui3body__type/#variable-brgoud)**  |
 | Farray< Fdouble, 1, 2 > | **[brgocs](/documentation/code/classes/structgambit_1_1sd__glui3body__type/#variable-brgocs)**  |
 | Farray< Fdouble, 1, 2 > | **[brgotb](/documentation/code/classes/structgambit_1_1sd__glui3body__type/#variable-brgotb)**  |
-| Fdouble | **[brhcst1b](/documentation/code/classes/structgambit_1_1sd__glui3body__type/#variable-brhcstb)**  |
-| Fdouble | **[brwst1b](/documentation/code/classes/structgambit_1_1sd__glui3body__type/#variable-brwstb)**  |
+| Fdouble | **[brhcst1b](/documentation/code/classes/structgambit_1_1sd__glui3body__type/#variable-brhcst1b)**  |
+| Fdouble | **[brwst1b](/documentation/code/classes/structgambit_1_1sd__glui3body__type/#variable-brwst1b)**  |
 
 ## Public Attributes Documentation
 
@@ -111,4 +111,4 @@ Fdouble brwst1b;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

@@ -23,7 +23,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[na0](/documentation/code/files/cosmoalps_8cpp/#variable-na)**  |
+| double | **[na0](/documentation/code/files/cosmoalps_8cpp/#variable-na0)**  |
 | double | **[mass](/documentation/code/files/cosmoalps_8cpp/#variable-mass)**  |
 | double | **[tau](/documentation/code/files/cosmoalps_8cpp/#variable-tau)**  |
 | SM_time_evo * | **[SM_quantities](/documentation/code/files/cosmoalps_8cpp/#variable-sm-quantities)**  |
@@ -542,4 +542,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:29 +0000
+Updated on 2022-08-25 at 17:16:27 +0000

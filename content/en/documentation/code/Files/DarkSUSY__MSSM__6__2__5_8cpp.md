@@ -31,8 +31,8 @@ description: "[No description available]"
 | std::vector< double > | **[GAMBITparticle_mass](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-gambitparticle-mass)**  |
 | std::vector< double > | **[DSanbr](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-dsanbr)**  |
 | double | **[anmwimp](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-anmwimp)**  |
-| std::vector< int > | **[DSanpdg1](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-dsanpdg)**  |
-| std::vector< int > | **[DSanpdg2](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-dsanpdg)**  |
+| std::vector< int > | **[DSanpdg1](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-dsanpdg1)**  |
+| std::vector< int > | **[DSanpdg2](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-dsanpdg2)**  |
 | [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-be-ini-function)**  |
 | bool | **[mssm_result](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#variable-mssm-result)**  |
 
@@ -53,7 +53,7 @@ description: "[No description available]"
   * 2020 September
 
 
-Frontend for DarkSUSY_MSSM_6.2.5 backend (adapted from [DarkSUSY_MSSM_6_2_2.cpp](/documentation/code/files/darksusy__mssm__6__2__2_8cpp/#file-darksusy-mssm--cpp))
+Frontend for DarkSUSY_MSSM_6.2.5 backend (adapted from [DarkSUSY_MSSM_6_2_2.cpp](/documentation/code/files/darksusy__mssm__6__2__2_8cpp/#file-darksusy-mssm-6-2-2cpp))
 
 
 
@@ -1377,4 +1377,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:32 +0000
+Updated on 2022-08-25 at 17:16:29 +0000

@@ -19,8 +19,8 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | | **[AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/#function-axioninterpolator)**() |
-| | **[AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/#function-axioninterpolator)**(const std::vector< double > x, const std::vector< double > y, [InterpolationOptions1D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptionsd) type =InterpolationOptions1D::linear) |
-| | **[AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/#function-axioninterpolator)**(std::string file, [InterpolationOptions1D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptionsd) type =InterpolationOptions1D::linear) |
+| | **[AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/#function-axioninterpolator)**(const std::vector< double > x, const std::vector< double > y, [InterpolationOptions1D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptions1d) type =InterpolationOptions1D::linear) |
+| | **[AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/#function-axioninterpolator)**(std::string file, [InterpolationOptions1D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptions1d) type =InterpolationOptions1D::linear) |
 | [AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/) & | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/#function-operator)**([AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/) && interp) |
 | | **[~AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/#function-axioninterpolator)**() |
 | | **[AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/#function-axioninterpolator)**(const [AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/) & ) =delete |
@@ -118,4 +118,4 @@ double upper()
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

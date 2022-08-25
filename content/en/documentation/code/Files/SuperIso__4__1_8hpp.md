@@ -25,11 +25,11 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/files/superiso__4__1_8hpp/#variable-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[BRBXstautau_highq2](/documentation/code/files/superiso__4__1_8hpp/#variable-brbxstautau-highq)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[MSSM63atQ](/documentation/code/files/superiso__4__1_8hpp/#variable-mssmatq)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[MSSM63atMGUT](/documentation/code/files/superiso__4__1_8hpp/#variable-mssmatmgut)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[BRBXstautau_highq2](/documentation/code/files/superiso__4__1_8hpp/#variable-brbxstautau-highq2)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[MSSM63atQ](/documentation/code/files/superiso__4__1_8hpp/#variable-mssm63atq)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[MSSM63atMGUT](/documentation/code/files/superiso__4__1_8hpp/#variable-mssm63atmgut)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters | **[modified_AI_BKstarmumu](/documentation/code/files/superiso__4__1_8hpp/#variable-modified-ai-bkstarmumu)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters WC const parameters | **[modified_delta0](/documentation/code/files/superiso__4__1_8hpp/#variable-modified-delta)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters WC const parameters | **[modified_delta0](/documentation/code/files/superiso__4__1_8hpp/#variable-modified-delta0)**  |
 
 ## Defines
 
@@ -304,4 +304,4 @@ BE_CONV_FUNCTION(modified_delta0, double, (const parameters*), "modified_delta0"
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

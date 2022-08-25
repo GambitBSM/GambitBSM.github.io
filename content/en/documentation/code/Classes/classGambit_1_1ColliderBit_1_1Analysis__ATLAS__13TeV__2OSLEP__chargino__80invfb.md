@@ -28,7 +28,7 @@ Inherited by [Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_binned_8
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#function-analysis-atlas-tev-oslep-chargino-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#function-analysis-atlas-13tev-2oslep-chargino-80invfb)**() |
 | void | **[JetLeptonOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#function-jetleptonoverlapremoval)**(vector< const HEPUtils::Jet * > & jetvec, vector< const HEPUtils::Particle * > & lepvec, double DeltaRMax) |
 | void | **[LeptonJetOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#function-leptonjetoverlapremoval)**(vector< const HEPUtils::Particle * > & lepvec, vector< const HEPUtils::Jet * > & jetvec) |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#function-run)**(const HEPUtils::Event * event) |
@@ -52,9 +52,9 @@ Inherited by [Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_binned_8
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#variable--counters)**  |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters_bin](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#variable--counters-bin)**  |
-| [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) | **[_cutflow](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#variable--cutflow)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#variable-counters)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters_bin](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#variable-counters-bin)**  |
+| [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) | **[_cutflow](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/#variable-cutflow)**  |
 
 ## Additional inherited members
 
@@ -227,4 +227,4 @@ Cutflow _cutflow;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="SpecBit__SuperRenormHP__rollcall_8hpp" kind="file" language="C++">
+    <compoundname>SpecBit_SuperRenormHP_rollcall.hpp</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Rollcall declarations for module functions contained in SpecBit_SingletDM.cpp</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Inigo Saez Casares (<ulink url="mailto:inigo.saez_casares@ens-paris-saclay.fr">inigo.saez_casares@ens-paris-saclay.fr</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2020 March</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Rollcall<sp/>declarations<sp/>for<sp/>module<sp/>functions</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>contained<sp/>in<sp/>SpecBit_SingletDM.cpp</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>\author<sp/>Inigo<sp/>Saez<sp/>Casares</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(inigo.saez_casares@ens-paris-saclay.fr)</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/><sp/><sp/>\date<sp/>2020<sp/>March</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>Temporarily<sp/>disabled<sp/>until<sp/>project<sp/>is<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">#ifndef<sp/>__SpecBit_SuperRenormHP_hpp__</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">#define<sp/>__SpecBit_SuperRenormHP_hpp__</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>//<sp/>Spectrum<sp/>object<sp/>for<sp/>SuperRenormHP<sp/>model</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>#define<sp/>CAPABILITY<sp/>SuperRenormHP_spectrum</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>Create<sp/>Spectrum<sp/>object<sp/>from<sp/>SMInputs<sp/>structs,<sp/>SM<sp/>Higgs<sp/>parameters,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>and<sp/>the<sp/>SuperRenormHP<sp/>parameters</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>get_SuperRenormHP_spectrum</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>START_FUNCTION(Spectrum)</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>DEPENDENCY(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>ALLOW_MODEL_DEPENDENCE(StandardModel_Higgs,<sp/>SuperRenormHP)</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>MODEL_GROUP(higgs,<sp/><sp/><sp/>(StandardModel_Higgs))</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>MODEL_GROUP(singlet,<sp/>(SuperRenormHP))</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>ALLOW_MODEL_COMBINATION(higgs,<sp/>singlet)</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>#undef<sp/>FUNCTION</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>//<sp/>Convert<sp/>spectrum<sp/>into<sp/>a<sp/>standard<sp/>map<sp/>so<sp/>that<sp/>it<sp/>can<sp/>be<sp/>printed</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>#define<sp/>FUNCTION<sp/>get_ScalarSingletDM_Z2_spectrum_as_map</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>START_FUNCTION(map_str_dbl)<sp/>//<sp/>Just<sp/>a<sp/>string<sp/>to<sp/>double<sp/>map.<sp/>Can&apos;t<sp/>have<sp/>commas<sp/>in<sp/>macro<sp/>input</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>DEPENDENCY(ScalarSingletDM_Z2_spectrum,<sp/>Spectrum)</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>#undef<sp/>FUNCTION</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/>#undef<sp/>CAPABILITY</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"></highlight></codeline>
+<codeline lineno="46"><highlight class="comment">#endif</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="SpecBit/include/gambit/SpecBit/SpecBit_SuperRenormHP_rollcall.hpp"/>
+  </compounddef>
+</doxygen>

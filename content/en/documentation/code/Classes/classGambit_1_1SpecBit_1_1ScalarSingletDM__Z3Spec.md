@@ -38,9 +38,9 @@ Inherits from Spec< ScalarSingletDM_Z3Spec< MI > >
 | virtual double | **[GetScale](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-getscale)**() const |
 | virtual void | **[SetScale](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-setscale)**(double scale) |
 | virtual void | **[RunToScaleOverride](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-runtoscaleoverride)**(double scale) |
-| | **[ScalarSingletDM_Z3Spec](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-zspec)**() |
-| | **[ScalarSingletDM_Z3Spec](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-zspec)**(MI mi, str backend_name, str backend_version) |
-| virtual | **[~ScalarSingletDM_Z3Spec](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-zspec)**() |
+| | **[ScalarSingletDM_Z3Spec](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-z3spec)**() |
+| | **[ScalarSingletDM_Z3Spec](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-z3spec)**(MI mi, str backend_name, str backend_version) |
+| virtual | **[~ScalarSingletDM_Z3Spec](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-scalarsingletdm-z3spec)**() |
 | Model & | **[get_Model](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-model)**() |
 | Input & | **[get_Input](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-input)**() |
 | const Model & | **[get_Model](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/#function-get-model)**() const |
@@ -269,4 +269,4 @@ DummyInput dummyinput;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

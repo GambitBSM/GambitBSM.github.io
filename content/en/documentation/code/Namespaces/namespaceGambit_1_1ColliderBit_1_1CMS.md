@@ -24,20 +24,20 @@ CMS-specific efficiency and smearing functions for super fast detector simulatio
 | void | **[smearMuonMomentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-smearmuonmomentum)**(std::vector< HEPUtils::Particle * > & muons)<br>Randomly smear the supplied muons' momenta by parameterised resolutions.  |
 | void | **[smearJets](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-smearjets)**(std::vector< HEPUtils::Jet * > & jets)<br>Randomly smear the supplied jets' momenta by parameterised resolutions.  |
 | void | **[smearTaus](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-smeartaus)**(std::vector< HEPUtils::Particle * > & taus)<br>Randomly smear the supplied hadronic taus' momenta by parameterised resolutions.  |
-| void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvmediumbtageff)**(std::vector< const HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvmediumbtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvloosebtageff)**(std::vector< const HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvloosebtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtageff)**(std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtageff)**(std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
 | void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applybtagmisid)**(double mis_id_prob, std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply user-specified b-tag misidentification rate (flat)  |
 | void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applybtagmisid)**(double mis_id_prob, std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvloosebtagmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvloosebtagmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvloosebtageffandmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 loose WP.  |
-| void | **[applyCSVv2LooseBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvloosebtageffandmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvmediumbtagmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvmediumbtagmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvmediumbtageffandmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 medium WP.  |
-| void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvvmediumbtageffandmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtagmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtagmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtageffandmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 loose WP.  |
+| void | **[applyCSVv2LooseBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtageffandmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtagmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtagmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtageffandmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 medium WP.  |
+| void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtageffandmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
 
 
 ## Functions Documentation
@@ -335,4 +335,4 @@ inline void applyCSVv2MediumBtagEffAndMisId(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

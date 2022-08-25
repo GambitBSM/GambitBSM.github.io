@@ -36,9 +36,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | **[Gambit::MultiNest](/documentation/code/namespaces/namespacegambit_1_1multinest/)**  |
 | **[Gambit::NeutrinoBit](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**  |
 | **[Gambit::ObjectivesBit](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**  |
-| **[Gambit::PolyChord_1_17_1](/documentation/code/namespaces/namespacegambit_1_1polychord__1__17__1/)**  |
-| **[Gambit::PolyChord_1_18_2](/documentation/code/namespaces/namespacegambit_1_1polychord__1__18__2/)**  |
-| **[Gambit::PolyChord_1_20_1](/documentation/code/namespaces/namespacegambit_1_1polychord__1__20__1/)**  |
+| **[Gambit::PolyChord](/documentation/code/namespaces/namespacegambit_1_1polychord/)**  |
 | **[Gambit::PostProcessor](/documentation/code/namespaces/namespacegambit_1_1postprocessor/)**  |
 | **[Gambit::PrecisionBit](/documentation/code/namespaces/namespacegambit_1_1precisionbit/)**  |
 | **[Gambit::Printers](/documentation/code/namespaces/namespacegambit_1_1printers/)** <br>Forward declaration.  |
@@ -212,50 +210,50 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | typedef double[10] | **[dblarr](/documentation/code/namespaces/namespacegambit/#typedef-dblarr)**  |
 | typedef double(*)(const double &, const int &, void *&) | **[nuyield_function_pointer](/documentation/code/namespaces/namespacegambit/#typedef-nuyield-function-pointer)**  |
 | typedef struct [Gambit::_err](/documentation/code/classes/structgambit_1_1__err/) | **[clik_error](/documentation/code/namespaces/namespacegambit/#typedef-clik-error)**  |
-| typedef Farray< Finteger, 1, 3 > | **[Farray_Finteger_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-finteger)**  |
-| typedef Farray< Freal8, 1, 2 > | **[Farray_Freal8_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 3 > | **[Farray_Freal8_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 4 > | **[Farray_Freal8_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 5 > | **[Farray_Freal8_1_5](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 6 > | **[Farray_Freal8_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 2, 1, 2 > | **[Farray_Freal8_1_2_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 3, 1, 3 > | **[Farray_Freal8_1_3_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 4, 1, 4 > | **[Farray_Freal8_1_4_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 6, 1, 6 > | **[Farray_Freal8_1_6_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 2, 1, 3 > | **[Farray_Freal8_1_2_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Fcomplex16, 1, 2 > | **[Farray_Fcomplex16_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex)**  |
-| typedef Farray< Fcomplex16, 1, 3 > | **[Farray_Fcomplex16_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex)**  |
-| typedef Farray< Fcomplex16, 1, 2, 1, 2 > | **[Farray_Fcomplex16_1_2_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex)**  |
-| typedef Farray< Fcomplex16, 1, 3, 1, 3 > | **[Farray_Fcomplex16_1_3_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex)**  |
-| typedef Farray< Fcomplex16, 1, 4, 1, 4 > | **[Farray_Fcomplex16_1_4_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex)**  |
-| typedef Farray< Fcomplex16, 1, 5, 1, 5 > | **[Farray_Fcomplex16_1_5_1_5](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex)**  |
-| typedef Farray< Fcomplex16, 1, 6, 1, 6 > | **[Farray_Fcomplex16_1_6_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex)**  |
-| typedef Farray< Flogical, 1, 100 > | **[Farray_Flogical_1_100](/documentation/code/namespaces/namespacegambit/#typedef-farray-flogical)**  |
-| typedef Farray< Freal8, 1, 100 > | **[Farray_Freal8_1_100](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 2 > | **[Farray_Freal8_1_100_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 5 > | **[Farray_Freal8_1_100_1_5](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 2, 1, 2 > | **[Farray_Freal8_1_100_1_2_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 3, 1, 3 > | **[Farray_Freal8_1_100_1_3_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 4, 1, 4 > | **[Farray_Freal8_1_100_1_4_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 5, 1, 4 > | **[Farray_Freal8_1_100_1_5_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 5, 1, 5 > | **[Farray_Freal8_1_100_1_5_1_5](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 6, 1, 6 > | **[Farray_Freal8_1_100_1_6_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Freal8, 1, 100, 1, 7, 1, 7 > | **[Farray_Freal8_1_100_1_7_1_7](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal)**  |
-| typedef Farray< Fstring< 60 >, 1, 31 > | **[Farray_Fstring60_1_31](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring)**  |
-| typedef Farray< Fstring< 60 >, 1, 10 > | **[Farray_Fstring60_1_10](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring)**  |
-| typedef Farray< Fstring< 60 >, 1, 2 > | **[Farray_Fstring60_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring)**  |
-| typedef Farray< Fstring< 60 >, 1, 33 > | **[Farray_Fstring60_1_33](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring)**  |
-| typedef Farray< Fstring< 60 >, 1, 15 > | **[Farray_Fstring60_1_15](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring)**  |
-| typedef Farray< Fstring< 60 >, 1, 22 > | **[Farray_Fstring60_1_22](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring)**  |
-| typedef Farray< Fstring< 60 >, 1, 25 > | **[Farray_Fstring60_1_25](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring)**  |
-| typedef Farray< Fstring< 60 >, 1, 9 > | **[Farray_Fstring60_1_9](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring)**  |
-| typedef Fstring< 20 > | **[Fstring20](/documentation/code/namespaces/namespacegambit/#typedef-fstring)**  |
-| typedef Farray< [particle2](/documentation/code/classes/structgambit_1_1particle2/), 1, 2 > | **[Farray_particle2_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle)**  |
-| typedef Farray< [particle2](/documentation/code/classes/structgambit_1_1particle2/), 1, 6 > | **[Farray_particle2_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle)**  |
-| typedef Farray< [particle23](/documentation/code/classes/structgambit_1_1particle23/), 1, 2 > | **[Farray_particle23_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle)**  |
-| typedef Farray< [particle23](/documentation/code/classes/structgambit_1_1particle23/), 1, 3 > | **[Farray_particle23_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle)**  |
-| typedef Farray< [particle23](/documentation/code/classes/structgambit_1_1particle23/), 1, 4 > | **[Farray_particle23_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle)**  |
-| typedef Farray< [particle23](/documentation/code/classes/structgambit_1_1particle23/), 1, 6 > | **[Farray_particle23_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle)**  |
+| typedef Farray< Finteger, 1, 3 > | **[Farray_Finteger_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-finteger-1-3)**  |
+| typedef Farray< Freal8, 1, 2 > | **[Farray_Freal8_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-2)**  |
+| typedef Farray< Freal8, 1, 3 > | **[Farray_Freal8_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-3)**  |
+| typedef Farray< Freal8, 1, 4 > | **[Farray_Freal8_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-4)**  |
+| typedef Farray< Freal8, 1, 5 > | **[Farray_Freal8_1_5](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-5)**  |
+| typedef Farray< Freal8, 1, 6 > | **[Farray_Freal8_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-6)**  |
+| typedef Farray< Freal8, 1, 2, 1, 2 > | **[Farray_Freal8_1_2_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-2-1-2)**  |
+| typedef Farray< Freal8, 1, 3, 1, 3 > | **[Farray_Freal8_1_3_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-3-1-3)**  |
+| typedef Farray< Freal8, 1, 4, 1, 4 > | **[Farray_Freal8_1_4_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-4-1-4)**  |
+| typedef Farray< Freal8, 1, 6, 1, 6 > | **[Farray_Freal8_1_6_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-6-1-6)**  |
+| typedef Farray< Freal8, 1, 2, 1, 3 > | **[Farray_Freal8_1_2_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-2-1-3)**  |
+| typedef Farray< Fcomplex16, 1, 2 > | **[Farray_Fcomplex16_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex16-1-2)**  |
+| typedef Farray< Fcomplex16, 1, 3 > | **[Farray_Fcomplex16_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex16-1-3)**  |
+| typedef Farray< Fcomplex16, 1, 2, 1, 2 > | **[Farray_Fcomplex16_1_2_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex16-1-2-1-2)**  |
+| typedef Farray< Fcomplex16, 1, 3, 1, 3 > | **[Farray_Fcomplex16_1_3_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex16-1-3-1-3)**  |
+| typedef Farray< Fcomplex16, 1, 4, 1, 4 > | **[Farray_Fcomplex16_1_4_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex16-1-4-1-4)**  |
+| typedef Farray< Fcomplex16, 1, 5, 1, 5 > | **[Farray_Fcomplex16_1_5_1_5](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex16-1-5-1-5)**  |
+| typedef Farray< Fcomplex16, 1, 6, 1, 6 > | **[Farray_Fcomplex16_1_6_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-fcomplex16-1-6-1-6)**  |
+| typedef Farray< Flogical, 1, 100 > | **[Farray_Flogical_1_100](/documentation/code/namespaces/namespacegambit/#typedef-farray-flogical-1-100)**  |
+| typedef Farray< Freal8, 1, 100 > | **[Farray_Freal8_1_100](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100)**  |
+| typedef Farray< Freal8, 1, 100, 1, 2 > | **[Farray_Freal8_1_100_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-2)**  |
+| typedef Farray< Freal8, 1, 100, 1, 5 > | **[Farray_Freal8_1_100_1_5](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-5)**  |
+| typedef Farray< Freal8, 1, 100, 1, 2, 1, 2 > | **[Farray_Freal8_1_100_1_2_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-2-1-2)**  |
+| typedef Farray< Freal8, 1, 100, 1, 3, 1, 3 > | **[Farray_Freal8_1_100_1_3_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-3-1-3)**  |
+| typedef Farray< Freal8, 1, 100, 1, 4, 1, 4 > | **[Farray_Freal8_1_100_1_4_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-4-1-4)**  |
+| typedef Farray< Freal8, 1, 100, 1, 5, 1, 4 > | **[Farray_Freal8_1_100_1_5_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-5-1-4)**  |
+| typedef Farray< Freal8, 1, 100, 1, 5, 1, 5 > | **[Farray_Freal8_1_100_1_5_1_5](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-5-1-5)**  |
+| typedef Farray< Freal8, 1, 100, 1, 6, 1, 6 > | **[Farray_Freal8_1_100_1_6_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-6-1-6)**  |
+| typedef Farray< Freal8, 1, 100, 1, 7, 1, 7 > | **[Farray_Freal8_1_100_1_7_1_7](/documentation/code/namespaces/namespacegambit/#typedef-farray-freal8-1-100-1-7-1-7)**  |
+| typedef Farray< Fstring< 60 >, 1, 31 > | **[Farray_Fstring60_1_31](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring60-1-31)**  |
+| typedef Farray< Fstring< 60 >, 1, 10 > | **[Farray_Fstring60_1_10](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring60-1-10)**  |
+| typedef Farray< Fstring< 60 >, 1, 2 > | **[Farray_Fstring60_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring60-1-2)**  |
+| typedef Farray< Fstring< 60 >, 1, 33 > | **[Farray_Fstring60_1_33](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring60-1-33)**  |
+| typedef Farray< Fstring< 60 >, 1, 15 > | **[Farray_Fstring60_1_15](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring60-1-15)**  |
+| typedef Farray< Fstring< 60 >, 1, 22 > | **[Farray_Fstring60_1_22](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring60-1-22)**  |
+| typedef Farray< Fstring< 60 >, 1, 25 > | **[Farray_Fstring60_1_25](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring60-1-25)**  |
+| typedef Farray< Fstring< 60 >, 1, 9 > | **[Farray_Fstring60_1_9](/documentation/code/namespaces/namespacegambit/#typedef-farray-fstring60-1-9)**  |
+| typedef Fstring< 20 > | **[Fstring20](/documentation/code/namespaces/namespacegambit/#typedef-fstring20)**  |
+| typedef Farray< [particle2](/documentation/code/classes/structgambit_1_1particle2/), 1, 2 > | **[Farray_particle2_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle2-1-2)**  |
+| typedef Farray< [particle2](/documentation/code/classes/structgambit_1_1particle2/), 1, 6 > | **[Farray_particle2_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle2-1-6)**  |
+| typedef Farray< [particle23](/documentation/code/classes/structgambit_1_1particle23/), 1, 2 > | **[Farray_particle23_1_2](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle23-1-2)**  |
+| typedef Farray< [particle23](/documentation/code/classes/structgambit_1_1particle23/), 1, 3 > | **[Farray_particle23_1_3](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle23-1-3)**  |
+| typedef Farray< [particle23](/documentation/code/classes/structgambit_1_1particle23/), 1, 4 > | **[Farray_particle23_1_4](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle23-1-4)**  |
+| typedef Farray< [particle23](/documentation/code/classes/structgambit_1_1particle23/), 1, 6 > | **[Farray_particle23_1_6](/documentation/code/namespaces/namespacegambit/#typedef-farray-particle23-1-6)**  |
 
 ## Functions
 
@@ -290,7 +288,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 |                | Name           |
 | -------------- | -------------- |
 | | **[gambit_registry](/documentation/code/namespaces/namespacegambit/#variable-gambit-registry)**  |
-| reg_elem< factory_type > | **[__scanner_factories__](/documentation/code/namespaces/namespacegambit/#variable--scanner-factories)**  |
+| reg_elem< factory_type > | **[__scanner_factories__](/documentation/code/namespaces/namespacegambit/#variable-scanner-factories)**  |
 
 ## Detailed Description
 
@@ -423,10 +421,6 @@ Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-a
 
 May 2020
 
-Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
-
-June 2022
-
 
 
 ------------------
@@ -449,35 +443,6 @@ Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-a
 May 2020 
 
 Jan 2021
-
-Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
-
-June 2022
-
-
-
-------------------
-
-================================================= 
-
-
-# Function definitions
-
-Ben Farmer ([ben.farmer@gmail.com](mailto:ben.farmer@gmail.com)) 
-
-October 2013 - Aug 2016
-
-Will Handley ([wh260@cam.ac.uk](mailto:wh260@cam.ac.uk)) 
-
-May 2018, June 2021, Mar 2022
-
-Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
-
-May 2020
-
-Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
-
-June 2022
 
 
 
@@ -1138,4 +1103,4 @@ reg_elem< factory_type > __scanner_factories__;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[g2weak](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-gweak)**  |
+| Fdouble | **[g2weak](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-g2weak)**  |
 | Fdouble | **[gyweak](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-gyweak)**  |
-| Fdouble | **[g3stro](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-gstro)**  |
-| Fdouble | **[alph3](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-alph)**  |
+| Fdouble | **[g3stro](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-g3stro)**  |
+| Fdouble | **[alph3](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-alph3)**  |
 | Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-yukawa)**  |
-| Fdouble | **[g2wmz](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-gwmz)**  |
+| Fdouble | **[g2wmz](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-g2wmz)**  |
 | Fdouble | **[gywmz](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-gywmz)**  |
 
 ## Public Attributes Documentation
@@ -79,4 +79,4 @@ Fdouble gywmz;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

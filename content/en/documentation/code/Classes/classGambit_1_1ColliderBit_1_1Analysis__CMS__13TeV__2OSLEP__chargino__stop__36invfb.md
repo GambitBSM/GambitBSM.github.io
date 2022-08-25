@@ -28,7 +28,7 @@ Inherited by [Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_for_chargino_36invf
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#function-analysis-cms-tev-oslep-chargino-stop-invfb)**() |
+| | **[Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#function-analysis-cms-13tev-2oslep-chargino-stop-36invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
@@ -50,8 +50,8 @@ Inherited by [Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_for_chargino_36invf
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#variable--counters)**  |
-| [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) | **[_cutflow](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#variable--cutflow)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#variable-counters)**  |
+| [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) | **[_cutflow](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#variable-cutflow)**  |
 | const size_t | **[NUMSR_stop](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#variable-numsr-stop)**  |
 | const size_t | **[NUMSR_chargino](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/#variable-numsr-chargino)**  |
 
@@ -195,4 +195,4 @@ static const size_t NUMSR_chargino = 70;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

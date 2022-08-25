@@ -5,11 +5,15 @@
     <includes local="no">iostream</includes>
     <includes local="no">fstream</includes>
     <includes local="yes">gambit/Elements/standalone_module.hpp</includes>
-    <includes local="yes">gambit/DarkBit/DarkBit_rollcall.hpp</includes>
+    <includes refid="DarkBit__rollcall_8hpp" local="yes">gambit/DarkBit/DarkBit_rollcall.hpp</includes>
     <includes local="yes">gambit/Elements/spectrum_factories.hpp</includes>
     <includes local="yes">gambit/Utils/util_functions.hpp</includes>
     <includes local="no">boost/multi_array.hpp</includes>
     <incdepgraph>
+      <node id="22">
+        <label>gambit/Backends/backend_types/nulike.hpp</label>
+        <link refid="nulike_8hpp"/>
+      </node>
       <node id="1">
         <label>DarkBit_standalone_WIMP.cpp</label>
         <link refid="DarkBit__standalone__WIMP_8cpp"/>
@@ -21,33 +25,134 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="5">
+        <label>gambit/DarkBit/DarkBit_rollcall.hpp</label>
+        <link refid="DarkBit__rollcall_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gambit/DarkBit/DarkBit_types.hpp</label>
+        <link refid="DarkBit__types_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gambit/DarkBit/ProcessCatalog.hpp</label>
+        <link refid="ProcessCatalog_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>gambit/DarkBit/SimpleHist.hpp</label>
+        <link refid="SimpleHist_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gambit/DarkBit/decay_chain.hpp</label>
+        <link refid="decay__chain_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
         <label>boost/multi_array.hpp</label>
+      </node>
+      <node id="12">
+        <label>boost/shared_ptr.hpp</label>
       </node>
       <node id="3">
         <label>fstream</label>
       </node>
-      <node id="5">
-        <label>gambit/DarkBit/DarkBit_rollcall.hpp</label>
+      <node id="18">
+        <label>gambit/Elements/daFunk.hpp</label>
       </node>
-      <node id="6">
+      <node id="23">
         <label>gambit/Elements/spectrum_factories.hpp</label>
       </node>
       <node id="4">
         <label>gambit/Elements/standalone_module.hpp</label>
       </node>
-      <node id="7">
+      <node id="20">
+        <label>gambit/Models/safe_param_map.hpp</label>
+      </node>
+      <node id="13">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+      </node>
+      <node id="24">
         <label>gambit/Utils/util_functions.hpp</label>
+      </node>
+      <node id="16">
+        <label>gambit/Utils/util_types.hpp</label>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/yaml_options.hpp</label>
+      </node>
+      <node id="17">
+        <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
       <node id="2">
         <label>iostream</label>
+      </node>
+      <node id="15">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>set</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>unordered_map</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceGambit">Gambit</innernamespace>
@@ -83,9 +188,9 @@
         </inbodydescription>
         <location file="DarkBit/examples/DarkBit_standalone_WIMP.cpp" line="42" column="2" bodyfile="DarkBit/examples/DarkBit_standalone_WIMP.cpp" bodystart="42" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="DarkBit__standalone__WIMP_8cpp_1ac0c062e000d954af06bffea2affbf726" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="DarkBit__standalone__WIMP_8cpp_1aec51804c88a6ccfa15bdef55bd96338c" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>OLD_CAPABILITY</definition>
+        <definition>libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum OLD_CAPABILITY</definition>
         <argsstring></argsstring>
         <name>OLD_CAPABILITY</name>
         <briefdescription>
@@ -323,7 +428,7 @@
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/standalone_module.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/DarkBit/DarkBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DarkBit__rollcall_8hpp" kindref="compound">gambit/DarkBit/DarkBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/spectrum_factories.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/util_functions.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
@@ -334,11 +439,11 @@
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">DarkBit::Functown;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>wrapping<sp/>the<sp/>module&apos;s<sp/>actual<sp/>module<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">BackendIniBit::Functown;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>wrapping<sp/>the<sp/>backend<sp/>initialisation<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(DarkBit,<sp/>TH_ProcessCatalog,<sp/>OLD_CAPABILITY,<sp/>TH_ProcessCatalog_WIMP,<sp/>TH_ProcessCatalog,<sp/>(),<sp/>(mwimp,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(DarkBit,<sp/>DarkMatter_ID,<sp/>OLD_CAPABILITY,<sp/>DarkMatter_ID_WIMP,<sp/>std::string,<sp/>())</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(DarkBit,<sp/>DarkMatterConj_ID,<sp/>OLD_CAPABILITY,<sp/>DarkMatterConj_ID_WIMP,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/>())</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(DarkBit,<sp/>DD_couplings,<sp/>OLD_CAPABILITY,<sp/>DD_couplings_WIMP,<sp/>DM_nucleon_couplings,<sp/>())</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(DarkBit,<sp/>WIMP_properties,<sp/>OLD_CAPABILITY,<sp/>WIMP_properties_WIMP,<sp/>WIMPprops,<sp/>(),<sp/>(DarkMatter_ID,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>(DarkMatterConj_ID,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">QUICK_FUNCTION(DarkBit,<sp/>TH_ProcessCatalog,<sp/>OLD_CAPABILITY,<sp/>TH_ProcessCatalog_WIMP,<sp/>TH_ProcessCatalog,<sp/>(),<sp/>(mwimp,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">QUICK_FUNCTION(DarkBit,<sp/>DarkMatter_ID,<sp/>OLD_CAPABILITY,<sp/>DarkMatter_ID_WIMP,<sp/>std::string,<sp/>())</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">QUICK_FUNCTION(DarkBit,<sp/>DarkMatterConj_ID,<sp/>OLD_CAPABILITY,<sp/>DarkMatterConj_ID_WIMP,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/>())</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">QUICK_FUNCTION(DarkBit,<sp/>DD_couplings,<sp/>OLD_CAPABILITY,<sp/>DD_couplings_WIMP,<sp/>DM_nucleon_couplings,<sp/>())</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">QUICK_FUNCTION(DarkBit,<sp/>WIMP_properties,<sp/>OLD_CAPABILITY,<sp/>WIMP_properties_WIMP,<sp/>WIMPprops,<sp/>(),<sp/>(DarkMatter_ID,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>(DarkMatterConj_ID,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">))</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump_array_to_file(const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>filename,<sp/>const</highlight></codeline>
@@ -898,8 +1003,8 @@
 <codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/>WIMP_properties_WIMP.resolveDependency(&amp;DarkMatterConj_ID_WIMP);</highlight></codeline>
 <codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DarkBit_8cpp_1a1a65ac2306dd60d61fff98af4701275b" kindref="member">mwimp_generic</ref>.resolveDependency(&amp;WIMP_properties_WIMP);</highlight></codeline>
 <codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DarkBit__standalone__WIMP_8cpp_1ab4c644a68bb891552af54f49ac6c5ca6" kindref="member">TH_ProcessCatalog_WIMP</ref>.resolveDependency(&amp;mwimp_generic);</highlight></codeline>
-<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>.resolveDependency(&amp;DD_couplings_WIMP);</highlight></codeline>
-<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>.resolveDependency(&amp;mwimp_generic);</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_simple.resolveDependency(&amp;DD_couplings_WIMP);</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_simple.resolveDependency(&amp;mwimp_generic);</highlight></codeline>
 <codeline lineno="604"><highlight class="normal"></highlight></codeline>
 <codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generate<sp/>gamma-ray<sp/>spectra<sp/>for<sp/>various<sp/>final<sp/>states</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(mode<sp/>&gt;=<sp/>0)<sp/>and<sp/>(mode<sp/>&lt;<sp/>6)<sp/>)</highlight></codeline>

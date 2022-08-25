@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fstring< 100 > | **[spinfo1](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-spinfo)**  |
-| Fstring< 100 > | **[spinfo2](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-spinfo)**  |
+| Fstring< 100 > | **[spinfo1](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-spinfo1)**  |
+| Fstring< 100 > | **[spinfo2](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-spinfo2)**  |
 | Fstring< 100 > | **[modselval](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-modselval)**  |
 | Fstring< 20 > | **[mincom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-mincom)**  |
 | Fstring< 20 > | **[extcom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-extcom)**  |
@@ -79,4 +79,4 @@ Fstring< 20 > hmixcom;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

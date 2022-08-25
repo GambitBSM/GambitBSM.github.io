@@ -20,33 +20,33 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function--init)**(self self, path path, data data, command_line command_line, common common =False, common_dict common_dict ={}) |
-| def | **[a2maxpos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxpos)**(self self, a1val a1val) |
-| def | **[a2min1pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminpos)**(self self, a1val a1val) |
-| def | **[a2min2pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminpos)**(self self, a1val a1val) |
-| def | **[a2min3pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminpos)**(self self, a1val a1val) |
-| def | **[a2minfinalpos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminfinalpos)**(self self, a1val a1val) |
-| def | **[a2minneg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminneg)**(self self, a1val a1val) |
-| def | **[a2max1neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxneg)**(self self, a1val a1val) |
-| def | **[a2max2neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxneg)**(self self, a1val a1val) |
-| def | **[a2max3neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxneg)**(self self, a1val a1val) |
-| def | **[a2maxfinalneg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxfinalneg)**(self self, a1val a1val) |
-| def | **[testa1a2](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-testaa)**(self self, a1val a1val, a2val a2val) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-init)**(self self, path path, data data, command_line command_line, common common =False, common_dict common_dict ={}) |
+| def | **[a2maxpos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2maxpos)**(self self, a1val a1val) |
+| def | **[a2min1pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min1pos)**(self self, a1val a1val) |
+| def | **[a2min2pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min2pos)**(self self, a1val a1val) |
+| def | **[a2min3pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min3pos)**(self self, a1val a1val) |
+| def | **[a2minfinalpos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2minfinalpos)**(self self, a1val a1val) |
+| def | **[a2minneg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2minneg)**(self self, a1val a1val) |
+| def | **[a2max1neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max1neg)**(self self, a1val a1val) |
+| def | **[a2max2neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max2neg)**(self self, a1val a1val) |
+| def | **[a2max3neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max3neg)**(self self, a1val a1val) |
+| def | **[a2maxfinalneg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2maxfinalneg)**(self self, a1val a1val) |
+| def | **[testa1a2](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-testa1a2)**(self self, a1val a1val, a2val a2val) |
 | def | **[add_common_knowledge](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-add-common-knowledge)**(self self, common_dictionary common_dictionary) |
 | def | **[loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-loglkl)**(self self, cosmo cosmo, data data) |
 | def | **[remove_bao](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-remove-bao)**(self self, k_in k_in, pk_in pk_in) |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function--init)**(self self, path path, data data, command_line command_line, common common =False, common_dict common_dict ={}) |
-| def | **[a2maxpos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxpos)**(self self, a1val a1val) |
-| def | **[a2min1pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminpos)**(self self, a1val a1val) |
-| def | **[a2min2pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminpos)**(self self, a1val a1val) |
-| def | **[a2min3pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminpos)**(self self, a1val a1val) |
-| def | **[a2minfinalpos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminfinalpos)**(self self, a1val a1val) |
-| def | **[a2minneg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-aminneg)**(self self, a1val a1val) |
-| def | **[a2max1neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxneg)**(self self, a1val a1val) |
-| def | **[a2max2neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxneg)**(self self, a1val a1val) |
-| def | **[a2max3neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxneg)**(self self, a1val a1val) |
-| def | **[a2maxfinalneg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-amaxfinalneg)**(self self, a1val a1val) |
-| def | **[testa1a2](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-testaa)**(self self, a1val a1val, a2val a2val) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-init)**(self self, path path, data data, command_line command_line, common common =False, common_dict common_dict ={}) |
+| def | **[a2maxpos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2maxpos)**(self self, a1val a1val) |
+| def | **[a2min1pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min1pos)**(self self, a1val a1val) |
+| def | **[a2min2pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min2pos)**(self self, a1val a1val) |
+| def | **[a2min3pos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2min3pos)**(self self, a1val a1val) |
+| def | **[a2minfinalpos](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2minfinalpos)**(self self, a1val a1val) |
+| def | **[a2minneg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2minneg)**(self self, a1val a1val) |
+| def | **[a2max1neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max1neg)**(self self, a1val a1val) |
+| def | **[a2max2neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max2neg)**(self self, a1val a1val) |
+| def | **[a2max3neg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2max3neg)**(self self, a1val a1val) |
+| def | **[a2maxfinalneg](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-a2maxfinalneg)**(self self, a1val a1val) |
+| def | **[testa1a2](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-testa1a2)**(self self, a1val a1val, a2val a2val) |
 | def | **[add_common_knowledge](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-add-common-knowledge)**(self self, common_dictionary common_dictionary) |
 | def | **[loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-loglkl)**(self self, cosmo cosmo, data data) |
 | def | **[remove_bao](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#function-remove-bao)**(self self, k_in k_in, pk_in pk_in) |
@@ -56,15 +56,15 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 |                | Name           |
 | -------------- | -------------- |
 | | **[use_halofit](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-halofit)**  |
-| | **[use_sdssDR7](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-sdssdr)**  |
+| | **[use_sdssDR7](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-sdssdr7)**  |
 | | **[k_size](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-k-size)**  |
 | | **[mu_size](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-mu-size)**  |
 | | **[k](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-k)**  |
 | | **[kh](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-kh)**  |
 | | **[use_giggleZ](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-gigglez)**  |
-| | **[use_giggleZPP0](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-gigglezpp)**  |
+| | **[use_giggleZPP0](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-use-gigglezpp0)**  |
 | | **[k_fid_size](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-k-fid-size)**  |
-| | **[fiducial_SDSSDR7_nlratio](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-fiducial-sdssdr-nlratio)**  |
+| | **[fiducial_SDSSDR7_nlratio](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-fiducial-sdssdr7-nlratio)**  |
 | | **[has_regions](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-has-regions)**  |
 | | **[num_regions](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-num-regions)**  |
 | | **[num_regions_used](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-num-regions-used)**  |
@@ -81,9 +81,9 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 | | **[zerowindowfxn](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxn)**  |
 | | **[zerowindowfxnsubtractdat](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxnsubtractdat)**  |
 | | **[zerowindowfxnsubtractdatnorm](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-zerowindowfxnsubtractdatnorm)**  |
-| | **[a1list](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-alist)**  |
-| | **[a2list](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-alist)**  |
-| | **[fiducial_SDSSDR7](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-fiducial-sdssdr)**  |
+| | **[a1list](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-a1list)**  |
+| | **[a2list](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-a2list)**  |
+| | **[fiducial_SDSSDR7](/documentation/code/classes/classmontepythonlike_1_1likelihood__mpk/#variable-fiducial-sdssdr7)**  |
 
 ## Additional inherited members
 
@@ -178,7 +178,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)
 
 
 
@@ -381,7 +381,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)
 
 
 
@@ -777,4 +777,4 @@ fiducial_SDSSDR7;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

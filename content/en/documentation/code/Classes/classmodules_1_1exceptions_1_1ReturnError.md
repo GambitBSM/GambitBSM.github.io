@@ -20,7 +20,7 @@ Inherits from [modules.exceptions.Error](/documentation/code/classes/classmodule
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/#function--init)**(self self, msg msg) |
+| def | **[__init__](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/#function-init)**(self self, msg msg) |
 
 ## Public Attributes
 
@@ -67,4 +67,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

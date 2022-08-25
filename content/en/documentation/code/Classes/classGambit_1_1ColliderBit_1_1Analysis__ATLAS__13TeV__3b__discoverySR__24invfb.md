@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_24invfb](/documentat
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_3b_discoverySR_24invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__24invfb/#function-analysis-atlas-tev-b-discoverysr-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_3b_discoverySR_24invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__24invfb/#function-analysis-atlas-13tev-3b-discoverysr-24invfb)**() |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__24invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
@@ -29,7 +29,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_24invfb](/documentat
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_3b_24invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/#function-analysis-atlas-tev-b-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_3b_24invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/#function-analysis-atlas-13tev-3b-24invfb)**() |
 | void | **[JetLeptonOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/#function-jetleptonoverlapremoval)**(vector< const HEPUtils::Jet * > & jetvec, vector< const HEPUtils::Particle * > & lepvec, double DeltaRMax) |
 | void | **[LeptonJetOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/#function-leptonjetoverlapremoval)**(vector< const HEPUtils::Particle * > & lepvec, vector< const HEPUtils::Jet * > & jetvec) |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/#function-run)**(const HEPUtils::Event * event) |
@@ -46,7 +46,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_24invfb](/documentat
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/#variable--counters)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/#variable-counters)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
@@ -102,4 +102,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

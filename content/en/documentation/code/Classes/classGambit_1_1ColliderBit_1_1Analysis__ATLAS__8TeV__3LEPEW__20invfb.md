@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_8TeV_3LEPEW_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__3lepew__20invfb/#function-analysis-atlas-tev-lepew-invfb)**() |
+| | **[Analysis_ATLAS_8TeV_3LEPEW_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__3lepew__20invfb/#function-analysis-atlas-8tev-3lepew-20invfb)**() |
 | void | **[EleEleOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__3lepew__20invfb/#function-eleeleoverlapremoval)**(vector< const HEPUtils::Particle * > & vec1, vector< const HEPUtils::Particle * > & vec2, double DeltaRMax) |
 | void | **[LepLepOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__3lepew__20invfb/#function-leplepoverlapremoval)**(vector< const HEPUtils::Particle * > & vec1, vector< const HEPUtils::Particle * > & vec2, double DeltaRMax) |
 | void | **[JetLeptonOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__3lepew__20invfb/#function-jetleptonoverlapremoval)**(vector< const HEPUtils::Jet * > & jetvec, vector< const HEPUtils::Particle * > & lepvec, double DeltaRMax) |
@@ -185,4 +185,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

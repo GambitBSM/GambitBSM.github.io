@@ -19,20 +19,20 @@ description: "[No description available]"
 | void | **[FeynHiggs_precision_edm_e](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-edm-e)**(double & result) |
 | void | **[FeynHiggs_precision_edm_n](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-edm-n)**(double & result) |
 | void | **[FeynHiggs_precision_edm_hg](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-edm-hg)**(double & result) |
-| void | **[FeynHiggs_precision_gm2](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-gm)**(triplet< double > & result) |
+| void | **[FeynHiggs_precision_gm2](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-gm2)**(triplet< double > & result) |
 | void | **[FeynHiggs_precision_deltarho](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-deltarho)**(triplet< double > & result) |
 | void | **[FeynHiggs_precision_mw](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-mw)**(triplet< double > & result) |
-| void | **[FeynHiggs_precision_sinW2](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-sinw)**(triplet< double > & result) |
+| void | **[FeynHiggs_precision_sinW2](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precision-sinw2)**(triplet< double > & result) |
 | void | **[mw_from_SM_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-sm-spectrum)**(triplet< double > & result) |
-| void | **[mw_from_ScalarSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-scalarsingletdm-z-spectrum)**(triplet< double > & result) |
-| void | **[mw_from_ScalarSingletDM_Z3_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-scalarsingletdm-z-spectrum)**(triplet< double > & result) |
-| void | **[mw_from_VectorSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-vectorsingletdm-z-spectrum)**(triplet< double > & result) |
-| void | **[mw_from_MajoranaSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-majoranasingletdm-z-spectrum)**(triplet< double > & result) |
-| void | **[mw_from_DiracSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-diracsingletdm-z-spectrum)**(triplet< double > & result) |
+| void | **[mw_from_ScalarSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-scalarsingletdm-z2-spectrum)**(triplet< double > & result) |
+| void | **[mw_from_ScalarSingletDM_Z3_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-scalarsingletdm-z3-spectrum)**(triplet< double > & result) |
+| void | **[mw_from_VectorSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-vectorsingletdm-z2-spectrum)**(triplet< double > & result) |
+| void | **[mw_from_MajoranaSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-majoranasingletdm-z2-spectrum)**(triplet< double > & result) |
+| void | **[mw_from_DiracSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-diracsingletdm-z2-spectrum)**(triplet< double > & result) |
 | void | **[mw_from_MSSM_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mw-from-mssm-spectrum)**(triplet< double > & result) |
 | void | **[mh_from_SM_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mh-from-sm-spectrum)**(triplet< double > & result) |
-| void | **[mh_from_ScalarSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mh-from-scalarsingletdm-z-spectrum)**(triplet< double > & result) |
-| void | **[mh_from_ScalarSingletDM_Z3_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mh-from-scalarsingletdm-z-spectrum)**(triplet< double > & result) |
+| void | **[mh_from_ScalarSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mh-from-scalarsingletdm-z2-spectrum)**(triplet< double > & result) |
+| void | **[mh_from_ScalarSingletDM_Z3_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mh-from-scalarsingletdm-z3-spectrum)**(triplet< double > & result) |
 | void | **[mh_from_MSSM_spectrum](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-mh-from-mssm-spectrum)**(triplet< double > & result) |
 | void | **[FeynHiggs_PrecisionObs](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-feynhiggs-precisionobs)**([fh_PrecisionObs_container](/documentation/code/classes/structgambit_1_1fh__precisionobs__container/) & result) |
 | void | **[update_W_masses](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-update-w-masses)**(SubSpectrum & HE, SubSpectrum & LE, const triplet< double > & prec_mw, bool allow_fallback)<br>Helper function to set W masses.  |
@@ -41,7 +41,7 @@ description: "[No description available]"
 | void | **[make_MSSM_precision_spectrum_W](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-make-mssm-precision-spectrum-w)**(Spectrum & improved_spec)<br>Precision MSSM spectrum manufacturer with precision W mass only.  |
 | void | **[make_MSSM_precision_spectrum_H](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-make-mssm-precision-spectrum-h)**(Spectrum & improved_spec)<br>Precision MSSM spectrum manufacturer with precision SM-like Higgs mass.  |
 | void | **[make_MSSM_precision_spectrum_H_W](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-make-mssm-precision-spectrum-h-w)**(Spectrum & improved_spec)<br>Precision MSSM spectrum manufacturer with precision W and SM-like Higgs masses.  |
-| void | **[make_MSSM_precision_spectrum_4H_W](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-make-mssm-precision-spectrum-h-w)**(Spectrum & improved_spec)<br>Precision MSSM spectrum manufacturer with precision W and 2HDM (4x) Higgs masses.  |
+| void | **[make_MSSM_precision_spectrum_4H_W](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-make-mssm-precision-spectrum-4h-w)**(Spectrum & improved_spec)<br>Precision MSSM spectrum manufacturer with precision W and 2HDM (4x) Higgs masses.  |
 | void | **[lnL_Z_mass](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-z-mass)**(double & result) |
 | void | **[lnL_t_mass](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-t-mass)**(double & result) |
 | void | **[lnL_mtrun](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-mtrun)**(double & result)<br>Running top mass MS-bar likelihood.  |
@@ -53,18 +53,18 @@ description: "[No description available]"
 | void | **[lnL_GF](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-gf)**(double & result) |
 | void | **[lnL_W_mass](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-w-mass)**(double & result)<br>W boson mass likelihood.  |
 | void | **[lnL_h_mass](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-h-mass)**(double & result) |
-| void | **[lnL_sinW2_eff](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-sinw-eff)**(double & result)<br>Reference: [http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf](http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf) = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).  |
+| void | **[lnL_sinW2_eff](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-sinw2-eff)**(double & result)<br>Reference: [http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf](http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf) = C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016).  |
 | void | **[lnL_deltarho](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-deltarho)**(double & result) |
-| void | **[gm2_SM_ee](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-gm-sm-ee)**(triplet< double > & result)<br>g-2 in SM from e+e- data  |
-| void | **[gm2_SM_tautau](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-gm-sm-tautau)**(triplet< double > & result)<br>g-2 in SM from tau+tau- data  |
-| void | **[lnL_gm2](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-gm)**(double & result)<br>g-2 likelihood  |
-| void | **[GM2C_SUSY](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-gmc-susy)**(triplet< double > & result)<br>Calculate a_mu_SUSY using the gm2calc backend.  |
-| void | **[SuperIso_muon_gm2](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-superiso-muon-gm)**(triplet< double > & result)<br>Calculation of g-2 with SuperIso.  |
+| void | **[gm2_SM_ee](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-gm2-sm-ee)**(triplet< double > & result)<br>g-2 in SM from e+e- data  |
+| void | **[gm2_SM_tautau](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-gm2-sm-tautau)**(triplet< double > & result)<br>g-2 in SM from tau+tau- data  |
+| void | **[lnL_gm2](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-gm2)**(double & result)<br>g-2 likelihood  |
+| void | **[GM2C_SUSY](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-gm2c-susy)**(triplet< double > & result)<br>Calculate a_mu_SUSY using the gm2calc backend.  |
+| void | **[SuperIso_muon_gm2](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-superiso-muon-gm2)**(triplet< double > & result)<br>Calculation of g-2 with SuperIso.  |
 | void | **[SP_PrecisionObs](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-sp-precisionobs)**(double & result) |
-| void | **[RHN_sinW2_eff](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-rhn-sinw-eff)**(triplet< double > & result) |
+| void | **[RHN_sinW2_eff](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-rhn-sinw2-eff)**(triplet< double > & result) |
 | void | **[RHN_mw](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-rhn-mw)**(triplet< double > & result) |
 | void | **[lnL_neutron_lifetime_beam_Yue](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-neutron-lifetime-beam-yue)**(double & result)<br>Beam method: Phys. Rev. Lett. 111, 222501 (2013) [https://arxiv.org/abs/1309.2623](https://arxiv.org/abs/1309.2623).  |
-| void | **[lnL_neutron_lifetime_bottle_PDG19](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-neutron-lifetime-bottle-pdg)**(double & result)<br>Bottle method: average recommended by PDG 2019 [http://pdg.lbl.gov/2019/listings/rpp2019-list-n.pdf](http://pdg.lbl.gov/2019/listings/rpp2019-list-n.pdf).  |
+| void | **[lnL_neutron_lifetime_bottle_PDG19](/documentation/code/namespaces/namespacegambit_1_1precisionbit/#function-lnl-neutron-lifetime-bottle-pdg19)**(double & result)<br>Bottle method: average recommended by PDG 2019 [http://pdg.lbl.gov/2019/listings/rpp2019-list-n.pdf](http://pdg.lbl.gov/2019/listings/rpp2019-list-n.pdf).  |
 
 
 ## Functions Documentation
@@ -649,4 +649,4 @@ Option profile_systematics<bool>: Use likelihood version that has been profiled 
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

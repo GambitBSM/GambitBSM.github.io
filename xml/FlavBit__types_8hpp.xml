@@ -6,6 +6,7 @@
     <includes local="no">vector</includes>
     <includes local="no">boost/numeric/ublas/matrix.hpp</includes>
     <includedby refid="FlavBit_8cpp" local="yes">FlavBit.cpp</includedby>
+    <includedby refid="FlavBit__rollcall_8hpp" local="yes">FlavBit_rollcall.hpp</includedby>
     <includedby refid="Flav__reader_8hpp" local="yes">Flav_reader.hpp</includedby>
     <incdepgraph>
       <node id="1">
@@ -29,6 +30,14 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="3">
+        <label>FlavBit_rollcall.hpp</label>
+        <link refid="FlavBit__rollcall_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>FlavBit_types.hpp</label>
         <link refid="FlavBit__types_8hpp"/>
@@ -36,8 +45,10 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
-      <node id="3">
+      <node id="5">
         <label>Flav_reader.hpp</label>
         <link refid="Flav__reader_8hpp"/>
         <childnode refid="2" relation="include">

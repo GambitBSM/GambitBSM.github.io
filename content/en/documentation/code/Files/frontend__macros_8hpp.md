@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_FUNCTION_5](/documentation/code/files/frontend__macros_8hpp/#define-be-function)**(NAME, TYPE, ARGSLIST, SYMBOLNAME, CAPABILITY)  |
-|  | **[BE_FUNCTION_6](/documentation/code/files/frontend__macros_8hpp/#define-be-function)**(NAME, TYPE, ARGSLIST, SYMBOLNAME, CAPABILITY, MODELS)  |
-|  | **[BE_FUNCTION_7](/documentation/code/files/frontend__macros_8hpp/#define-be-function)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
+|  | **[BE_FUNCTION_5](/documentation/code/files/frontend__macros_8hpp/#define-be-function-5)**(NAME, TYPE, ARGSLIST, SYMBOLNAME, CAPABILITY)  |
+|  | **[BE_FUNCTION_6](/documentation/code/files/frontend__macros_8hpp/#define-be-function-6)**(NAME, TYPE, ARGSLIST, SYMBOLNAME, CAPABILITY, MODELS)  |
+|  | **[BE_FUNCTION_7](/documentation/code/files/frontend__macros_8hpp/#define-be-function-7)**(NAME, TYPE, ARGSLIST, SYMBOLNAMES, CAPABILITY, MODELS, REF)  |
 |  | **[BE_FUNCTION](/documentation/code/files/frontend__macros_8hpp/#define-be-function)**(...)  |
 |  | **[BE_FUNCTION_I](/documentation/code/files/frontend__macros_8hpp/#define-be-function-i)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS, REF) <br>Main actual backend function macro.  |
 |  | **[BE_CONV_FUNCTION_FULL](/documentation/code/files/frontend__macros_8hpp/#define-be-conv-function-full)**(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)  |
@@ -484,4 +484,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

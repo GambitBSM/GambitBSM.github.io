@@ -45,12 +45,12 @@ description: "[No description available]"
 | [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) | **[operator-](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator)**(const [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) & x, const [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) & y) |
 | ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator)**(ostream & os, const [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) & v) |
 | double | **[dot](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-dot)**(const [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) & a, const [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) & b) |
-| [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) | **[Ep4vec](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-epvec)**(const [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) p, double m) |
+| [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) | **[Ep4vec](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-ep4vec)**(const [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) p, double m) |
 | [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) | **[operator*](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator)**(const [mat4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) & m, const [vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/) & v) |
 | [mat4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) | **[operator*](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator)**(const [mat4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) & m1, const [mat4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) & m2) |
 | ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-operator)**(ostream & os, const [mat4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) & m) |
-| double | **[rand_m1_1](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-rand-m)**() |
-| double | **[rand_0_1](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-rand)**() |
+| double | **[rand_m1_1](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-rand-m1-1)**() |
+| double | **[rand_0_1](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-rand-0-1)**() |
 | [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) | **[randOnSphere](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-randonsphere)**() |
 | void | **[lorentzMatrix](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-lorentzmatrix)**(const [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) & beta_xyz, [mat4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) & mat) |
 | void | **[lorentzMatrix](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1decaychain/#function-lorentzmatrix)**(const [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) & beta_xyz, [mat4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1mat4/) & mat, double gamma) |
@@ -354,4 +354,4 @@ void boostMatrixParentFrame(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

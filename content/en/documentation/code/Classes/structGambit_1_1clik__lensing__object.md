@@ -22,7 +22,7 @@ description: "[No description available]"
 | int[7] | **[lmax](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-lmax)**  |
 | int | **[type](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-type)**  |
 | int | **[renorm](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-renorm)**  |
-| int | **[ren1](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-ren)**  |
+| int | **[ren1](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-ren1)**  |
 | double | **[check](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-check)**  |
 | int | **[has_check](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-has-check)**  |
 | double * | **[cl_fid](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-cl-fid)**  |
@@ -87,4 +87,4 @@ double * cl_fid;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

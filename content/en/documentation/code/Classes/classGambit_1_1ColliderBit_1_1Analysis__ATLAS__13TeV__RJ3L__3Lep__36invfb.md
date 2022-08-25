@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb](/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_RJ3L_3Lep_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__3lep__36invfb/#function-analysis-atlas-tev-rjl-lep-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_RJ3L_3Lep_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__3lep__36invfb/#function-analysis-atlas-13tev-rj3l-3lep-36invfb)**() |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__3lep__36invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
@@ -29,7 +29,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb](/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__lowmass__36invfb/#function-analysis-atlas-tev-rjl-lowmass-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__lowmass__36invfb/#function-analysis-atlas-13tev-rj3l-lowmass-36invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__lowmass__36invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__lowmass__36invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 
@@ -49,7 +49,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb](/
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__lowmass__36invfb/#variable--counters)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__lowmass__36invfb/#variable-counters)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
@@ -105,4 +105,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

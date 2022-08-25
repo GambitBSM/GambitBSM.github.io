@@ -104,7 +104,7 @@ Member [Gambit::ColliderBit::AnalysisData::clear](/documentation/code/classes/st
 
 * It'd be good to _not_ have to re-enter most of the SRData and the covariance on every point: they don't change  
 
-Member [Gambit::ColliderBit::ATLAS::applyLooseIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applylooseidelectronselectionr)  (std::vector< const HEPUtils::Particle * > &electrons)
+Member [Gambit::ColliderBit::ATLAS::applyLooseIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applylooseidelectronselectionr2)  (std::vector< const HEPUtils::Particle * > &electrons)
 
 * What about faking by jets or non-electrons?  
 
@@ -112,7 +112,7 @@ Member [Gambit::ColliderBit::ATLAS::applyMediumIDElectronSelection](/documentati
 
 * This is an exact duplication of the below filtering code &ndash; split into a single util fn (in unnamed namespace?) when binned fns are static  
 
-Member [Gambit::ColliderBit::ATLAS::applyTauEfficiencyR1](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytauefficiencyr)  (std::vector< const HEPUtils::Particle * > &taus)
+Member [Gambit::ColliderBit::ATLAS::applyTauEfficiencyR1](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytauefficiencyr1)  (std::vector< const HEPUtils::Particle * > &taus)
 
 * Use [https://cds.cern.ch/record/1233743/files/ATL-PHYS-PUB-2010-001.pdf](https://cds.cern.ch/record/1233743/files/ATL-PHYS-PUB-2010-001.pdf)&ndash; it is more accurate and has pT-dependence  
 
@@ -239,4 +239,4 @@ Member [Gambit::SpecBit::get_MSSM_spectrum_from_SLHAstruct](/documentation/code/
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:32 +0000
+Updated on 2022-08-25 at 17:16:29 +0000

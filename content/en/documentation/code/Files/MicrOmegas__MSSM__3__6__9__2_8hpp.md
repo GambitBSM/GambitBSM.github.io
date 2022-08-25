@@ -30,7 +30,7 @@ description: "[No description available]"
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char | **[double](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-double)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char | **[assignVal](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-assignval)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[darkOmega](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-darkomega)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[oh2](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-oh)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[oh2](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-oh2)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char | **[lesHinput](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-leshinput)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[void](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-void)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[cleanDecayTable](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-cleandecaytable)**  |
@@ -317,4 +317,4 @@ BE_INI_DEPENDENCY(decay_rates, DecayTable)
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

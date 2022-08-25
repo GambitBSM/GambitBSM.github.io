@@ -35,7 +35,7 @@ description: "[No description available]"
 |  | **[SI_SINGLE_PREDICTION_FUNCTION_BINS](/documentation/code/files/flavbit_8cpp/#define-si-single-prediction-function-bins)**(name, bins)  |
 |  | **[SI_MULTI_PREDICTION_FUNCTION](/documentation/code/files/flavbit_8cpp/#define-si-multi-prediction-function)**(name)  |
 |  | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/files/flavbit_8cpp/#define-si-multi-prediction-function-bins)**(name, bins, exp)  |
-|  | **[HEPLIKE_GAUSSIAN_1D_LIKELIHOOD](/documentation/code/files/flavbit_8cpp/#define-heplike-gaussian-d-likelihood)**(name, file) <br>HEPLike single-observable likelihood.  |
+|  | **[HEPLIKE_GAUSSIAN_1D_LIKELIHOOD](/documentation/code/files/flavbit_8cpp/#define-heplike-gaussian-1d-likelihood)**(name, file) <br>HEPLike single-observable likelihood.  |
 
 ## Detailed Description
 
@@ -3305,4 +3305,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:29 +0000
+Updated on 2022-08-25 at 17:16:26 +0000

@@ -29,7 +29,7 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[raise_fiducial_model_err](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
 | def | **[read_from_file](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
 | def | **[get_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
@@ -39,7 +39,7 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 | def | **[add_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
 | def | **[add_nuisance_prior](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
 | def | **[computeLikelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[raise_fiducial_model_err](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
 | def | **[read_from_file](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
 | def | **[get_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
@@ -68,7 +68,7 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[raise_fiducial_model_err](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
 | def | **[read_from_file](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
 | def | **[get_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
@@ -78,7 +78,7 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 | def | **[add_contamination_spectra](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-contamination-spectra)**(self self, cl cl, data data) |
 | def | **[add_nuisance_prior](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-add-nuisance-prior)**(self self, lkl lkl, data data) |
 | def | **[computeLikelihood](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-computelikelihood)**(self self, ctx ctx) |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[raise_fiducial_model_err](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-raise-fiducial-model-err)**(self self) |
 | def | **[read_from_file](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-read-from-file)**(self self, path path, data data, command_line command_line) |
 | def | **[get_cl](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-get-cl)**(self self, cosmo cosmo, l_max l_max =-1) |
@@ -154,4 +154,4 @@ NotImplementedError```
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

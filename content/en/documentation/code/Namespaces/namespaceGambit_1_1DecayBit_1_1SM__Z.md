@@ -33,8 +33,8 @@ description: "[No description available]"
 | constexpr struct Gambit::DecayBit::SM_Z::@1 | **[hat](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-hat)** <br>The central values of nuisances from eq. 13.  |
 | constexpr int | **[kRows](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-krows)**  |
 | constexpr int | **[kCols](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-kcols)**  |
-| constexpr double[kRows][kCols] | **[table_5](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-table)** <br>Coefficient data in Table 5 with MeV converted to GeV.  |
-| constexpr double[kRows] | **[table_6](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-table)** <br>Data in Table 6, though re-arranged to match columns in Table 5 with MeV converted to GeV.  |
+| constexpr double[kRows][kCols] | **[table_5](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-table-5)** <br>Coefficient data in Table 5 with MeV converted to GeV.  |
+| constexpr double[kRows] | **[table_6](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1sm__z/#variable-table-6)** <br>Data in Table 6, though re-arranged to match columns in Table 5 with MeV converted to GeV.  |
 
 
 
@@ -157,4 +157,4 @@ The final entry isn't in the table and instead comes from the text below eq. 16.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

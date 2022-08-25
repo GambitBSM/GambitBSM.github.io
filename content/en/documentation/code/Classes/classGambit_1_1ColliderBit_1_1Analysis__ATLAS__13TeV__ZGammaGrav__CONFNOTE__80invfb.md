@@ -19,7 +19,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__zgammagrav__confnote__80invfb/#function-analysis-atlas-tev-zgammagrav-confnote-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__zgammagrav__confnote__80invfb/#function-analysis-atlas-13tev-zgammagrav-confnote-80invfb)**() |
 | void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__zgammagrav__confnote__80invfb/#function-run)**(const Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__zgammagrav__confnote__80invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__zgammagrav__confnote__80invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
@@ -143,4 +143,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

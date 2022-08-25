@@ -377,12 +377,8 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator/>NeutrinoInterpolator<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1neutrinobit_1_1neutrinointerpolator2d/>NeutrinoInterpolator2D<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1objectivesbit/>ObjectivesBit<a></b><br>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1polychord__1__17__1/>PolyChord_1_17_1<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1polychord__1__17__1_1_1loglikewrapper/>LogLikeWrapper<a></b><br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function. <br></details>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1polychord__1__18__2/>PolyChord_1_18_2<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1polychord__1__18__2_1_1loglikewrapper/>LogLikeWrapper<a></b><br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function. <br></details>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1polychord__1__20__1/>PolyChord_1_20_1<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/>LogLikeWrapper<a></b><br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function. <br></details>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1polychord/>PolyChord<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/>LogLikeWrapper<a></b><br>Class to connect PolyChord log-likelihood function and ScannerBit likelihood function. <br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1postprocessor/>PostProcessor<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/>PPDriver<a></b><br>Driver class to handle the actual postprocessing tasks. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/>PPOptions<a></b><br></details>
@@ -582,10 +578,10 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1widthhl__hdec__type/>widthhl_hdec_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1wisfer__hdec__type/>wisfer_hdec_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1wisusy__hdec__type/>wisusy_hdec_type<a></b><br></details>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d640/>@640<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d645/>@645<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d652/>@652<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d665/>@665<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d650/>@650<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d657/>@657<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d671/>@671<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceheputils/>HEPUtils<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacelhef/>LHEF<a></b><br>Forward declaration to cut down on includes. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacelester/>Lester<a></b></summary>
@@ -703,4 +699,4 @@ weight: 20
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:32 +0000
+Updated on 2022-08-25 at 17:16:29 +0000

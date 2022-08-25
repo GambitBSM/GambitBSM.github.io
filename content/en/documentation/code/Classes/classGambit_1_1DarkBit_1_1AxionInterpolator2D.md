@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-axioninterpolatord)**() |
-| | **[AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-axioninterpolatord)**(std::string file, [InterpolationOptions2D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptionsd) type =InterpolationOptions2D::bilinear) |
+| | **[AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-axioninterpolator2d)**() |
+| | **[AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-axioninterpolator2d)**(std::string file, [InterpolationOptions2D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptions2d) type =InterpolationOptions2D::bilinear) |
 | [AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/) & | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-operator)**([AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/) && interp) |
-| | **[~AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-axioninterpolatord)**() |
-| | **[AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-axioninterpolatord)**(const [AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/) & ) =delete |
+| | **[~AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-axioninterpolator2d)**() |
+| | **[AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-axioninterpolator2d)**(const [AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/) & ) =delete |
 | [AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/) | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-operator)**(const [AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/) & ) =delete |
 | double | **[interpolate](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-interpolate)**(double x, double y) |
 | bool | **[is_inside_box](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/#function-is-inside-box)**(double x, double y) |
@@ -102,4 +102,4 @@ bool is_inside_box(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

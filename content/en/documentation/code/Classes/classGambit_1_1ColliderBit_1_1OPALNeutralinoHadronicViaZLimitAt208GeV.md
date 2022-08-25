@@ -24,7 +24,7 @@ Inherits from [Gambit::ColliderBit::BaseLimitContainer](/documentation/code/clas
 | -------------- | -------------- |
 | virtual [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[convertPt](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalneutralinohadronicviazlimitat208gev/#function-convertpt)**(double x, double y) const<br>Convert a point from pixel units to axis units.  |
 | virtual bool | **[isWithinExclusionRegion](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalneutralinohadronicviazlimitat208gev/#function-iswithinexclusionregion)**(double x, double y, double ) const<br>Check to see if the point is within the exclusion region.  |
-| | **[OPALNeutralinoHadronicViaZLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalneutralinohadronicviazlimitat208gev/#function-opalneutralinohadronicviazlimitatgev)**() |
+| | **[OPALNeutralinoHadronicViaZLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalneutralinohadronicviazlimitat208gev/#function-opalneutralinohadronicviazlimitat208gev)**() |
 
 ## Additional inherited members
 
@@ -53,9 +53,9 @@ Inherits from [Gambit::ColliderBit::BaseLimitContainer](/documentation/code/clas
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< double > | **[_limitValuesSorted](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable--limitvaluessorted)**  |
-| LimitContours | **[_limitContours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable--limitcontours)**  |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[_externalPoint](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable--externalpoint)**  |
+| std::vector< double > | **[_limitValuesSorted](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-limitvaluessorted)**  |
+| LimitContours | **[_limitContours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-limitcontours)**  |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[_externalPoint](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-externalpoint)**  |
 
 
 ## Public Functions Documentation
@@ -101,4 +101,4 @@ OPALNeutralinoHadronicViaZLimitAt208GeV()
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

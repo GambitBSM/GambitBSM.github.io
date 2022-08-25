@@ -32,8 +32,8 @@ description: "[No description available]"
 | subroutine | **[fillarrays](/documentation/code/files/libfarraytest_8f90/#function-fillarrays)**() |
 | subroutine | **[fptrroutine](/documentation/code/files/libfarraytest_8f90/#function-fptrroutine)**(i i, j j, func func) |
 | double precision function | **[doublefuncarray](/documentation/code/files/libfarraytest_8f90/#function-doublefuncarray)**(i i) |
-| double precision function | **[doublefuncarray2](/documentation/code/files/libfarraytest_8f90/#function-doublefuncarray)**(i i) |
-| double precision function | **[doublefuncarray3](/documentation/code/files/libfarraytest_8f90/#function-doublefuncarray)**(i i) |
+| double precision function | **[doublefuncarray2](/documentation/code/files/libfarraytest_8f90/#function-doublefuncarray2)**(i i) |
+| double precision function | **[doublefuncarray3](/documentation/code/files/libfarraytest_8f90/#function-doublefuncarray3)**(i i) |
 | subroutine | **[testcomplex](/documentation/code/files/libfarraytest_8f90/#function-testcomplex)**(z z, re re, im im) |
 
 
@@ -257,4 +257,4 @@ end module testmodule
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

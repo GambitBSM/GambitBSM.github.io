@@ -20,8 +20,8 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_8TeV_1LEPStop_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__1lepstop__20invfb/#function-analysis-atlas-tev-lepstop-invfb)**() |
-| [MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/) | **[MT2helper](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__1lepstop__20invfb/#function-mthelper)**(vector< const HEPUtils::Jet * > jets, vector< const HEPUtils::Particle * > electrons, vector< const HEPUtils::Particle * > muons, HEPUtils::P4 metVec) |
+| | **[Analysis_ATLAS_8TeV_1LEPStop_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__1lepstop__20invfb/#function-analysis-atlas-8tev-1lepstop-20invfb)**() |
+| [MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/) | **[MT2helper](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__1lepstop__20invfb/#function-mt2helper)**(vector< const HEPUtils::Jet * > jets, vector< const HEPUtils::Particle * > electrons, vector< const HEPUtils::Particle * > muons, HEPUtils::P4 metVec) |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__1lepstop__20invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__1lepstop__20invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__1lepstop__20invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
@@ -150,4 +150,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

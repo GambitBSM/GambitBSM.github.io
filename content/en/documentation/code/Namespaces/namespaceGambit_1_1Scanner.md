@@ -96,11 +96,11 @@ description: "[No description available]"
 | template <typename ret \> <br>std::enable_if<!std::is_floating_point< ret >::value, ret >::type | **[scanner_plugin_def_ret](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-scanner-plugin-def-ret)**() |
 | template <typename ret \> <br>std::enable_if< std::is_floating_point< ret >::value, ret >::type | **[scanner_plugin_def_ret](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-scanner-plugin-def-ret)**() |
 | template <int i\> <br>double | **[pow](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow)**(const double & a) |
-| double | **[pow< 0 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow)**(const double & ) |
-| double | **[pow< 1 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow)**(const double & a) |
+| double | **[pow< 0 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow-0)**(const double & ) |
+| double | **[pow< 1 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow-1)**(const double & a) |
 | template <int i\> <br>int | **[pow](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow)**(const int & a) |
-| int | **[pow< 0 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow)**(const int & ) |
-| int | **[pow< 1 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow)**(const int & a) |
+| int | **[pow< 0 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow-0)**(const int & ) |
+| int | **[pow< 1 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow-1)**(const int & a) |
 | template <typename T \> <br>std::enable_if< is_container< T >::value, std::ostream & >::type | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-operator)**(std::ostream & out, const T & in) |
 | template <typename T \> <br>std::enable_if< is_pair< T >::value, std::ostream & >::type | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-operator)**(std::ostream & out, const T & in) |
 | template <typename T \> <br>std::enable_if<!is_container< T >::value &&!is_pair< T >::value, void >::type | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, T & param) |
@@ -143,8 +143,8 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | | **[gambit_registry](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-gambit-registry)**  |
-| std::unordered_map< type_index, func_type *, Gambit::type_hasher, Gambit::type_equal_to > | **[__functions__](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable--functions)**  |
-| std::unordered_map< type_index, multi_func_type * > | **[__multi_functions__](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable--multi-functions)**  |
+| std::unordered_map< type_index, func_type *, Gambit::type_hasher, Gambit::type_equal_to > | **[__functions__](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-functions)**  |
+| std::unordered_map< type_index, multi_func_type * > | **[__multi_functions__](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-multi-functions)**  |
 | int | **[ScannerBit_handlers](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-scannerbit-handlers)**  |
 
 ## Types Documentation
@@ -699,4 +699,4 @@ int ScannerBit_handlers = register_ScannerBit_handlers();
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

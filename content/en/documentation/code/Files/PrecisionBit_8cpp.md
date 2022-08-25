@@ -24,7 +24,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | const double | **[abserr_mw](/documentation/code/files/precisionbit_8cpp/#variable-abserr-mw)**  |
-| const double | **[abserr_sinW2eff](/documentation/code/files/precisionbit_8cpp/#variable-abserr-sinweff)**  |
+| const double | **[abserr_sinW2eff](/documentation/code/files/precisionbit_8cpp/#variable-abserr-sinw2eff)**  |
 
 ## Detailed Description
 
@@ -1303,4 +1303,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:29 +0000
+Updated on 2022-08-25 at 17:16:26 +0000

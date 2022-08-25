@@ -23,7 +23,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | bool | **[ellipsesAreDisjoint](/documentation/code/namespaces/namespacelester/#function-ellipsesaredisjoint)**(const [EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/) & e1, const [EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/) & e2) |
-| bool | **[__private_ellipsesAreDisjoint](/documentation/code/namespaces/namespacelester/#function--private-ellipsesaredisjoint)**(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0) |
+| bool | **[__private_ellipsesAreDisjoint](/documentation/code/namespaces/namespacelester/#function-private-ellipsesaredisjoint)**(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0) |
 
 
 ## Functions Documentation
@@ -56,4 +56,4 @@ bool __private_ellipsesAreDisjoint(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

@@ -17,15 +17,15 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | (*) ::Package(*) ::Section(*) Dummy(*) author(*) t dat)[var_] | **[CalculateSquare](/documentation/code/files/libmathematicatest_8m/#variable-calculatesquare)**  |
-| CalculateSum[var1_, var2_] | **[__pad0__](/documentation/code/files/libmathematicatest_8m/#variable--pad)**  |
-| | **[Var2](/documentation/code/files/libmathematicatest_8m/#variable-var)**  |
-| PrintVar[] | **[__pad1__](/documentation/code/files/libmathematicatest_8m/#variable--pad)**  |
-| PrintVarorVar2[check_] | **[__pad2__](/documentation/code/files/libmathematicatest_8m/#variable--pad)**  |
+| CalculateSum[var1_, var2_] | **[__pad0__](/documentation/code/files/libmathematicatest_8m/#variable-pad0)**  |
+| | **[Var2](/documentation/code/files/libmathematicatest_8m/#variable-var2)**  |
+| PrintVar[] | **[__pad1__](/documentation/code/files/libmathematicatest_8m/#variable-pad1)**  |
+| PrintVarorVar2[check_] | **[__pad2__](/documentation/code/files/libmathematicatest_8m/#variable-pad2)**  |
 | PrintVarorVar2[check_] | **[Var](/documentation/code/files/libmathematicatest_8m/#variable-var)**  |
-| VarEqualVar2[] | **[__pad3__](/documentation/code/files/libmathematicatest_8m/#variable--pad)**  |
+| VarEqualVar2[] | **[__pad3__](/documentation/code/files/libmathematicatest_8m/#variable-pad3)**  |
 | VarEqualVar2[]<>[var] | **[ToString](/documentation/code/files/libmathematicatest_8m/#variable-tostring)**  |
-| VoidTest[] | **[__pad4__](/documentation/code/files/libmathematicatest_8m/#variable--pad)**  |
-| ExtractElement[list_, i_] | **[__pad5__](/documentation/code/files/libmathematicatest_8m/#variable--pad)**  |
+| VoidTest[] | **[__pad4__](/documentation/code/files/libmathematicatest_8m/#variable-pad4)**  |
+| ExtractElement[list_, i_] | **[__pad5__](/documentation/code/files/libmathematicatest_8m/#variable-pad5)**  |
 | ExtractElement[list_, i_][var_] | **[func](/documentation/code/files/libmathematicatest_8m/#variable-func)**  |
 
 
@@ -170,4 +170,4 @@ SquareList[list_]:=Table[list[[i]]^2,{i,Length[list]}]
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

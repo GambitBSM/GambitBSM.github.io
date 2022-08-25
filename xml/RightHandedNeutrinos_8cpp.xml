@@ -12,15 +12,27 @@
     <includes local="yes">gambit/Utils/integration.hpp</includes>
     <includes local="no">unsupported/Eigen/MatrixFunctions</includes>
     <includes local="yes">gambit/Utils/statistics.hpp</includes>
-    <includes local="yes">gambit/NeutrinoBit/NeutrinoBit_rollcall.hpp</includes>
+    <includes refid="NeutrinoBit__rollcall_8hpp" local="yes">gambit/NeutrinoBit/NeutrinoBit_rollcall.hpp</includes>
     <includes refid="NeutrinoInterpolator_8hpp" local="yes">gambit/NeutrinoBit/NeutrinoInterpolator.hpp</includes>
     <incdepgraph>
-      <node id="13">
-        <label>gambit/NeutrinoBit/NeutrinoInterpolator.hpp</label>
-        <link refid="NeutrinoInterpolator_8hpp"/>
+      <node id="12">
+        <label>gambit/NeutrinoBit/NeutrinoBit_rollcall.hpp</label>
+        <link refid="NeutrinoBit__rollcall_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gambit/NeutrinoBit/NeutrinoInterpolator.hpp</label>
+        <link refid="NeutrinoInterpolator_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -48,8 +60,14 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
+      </node>
+      <node id="15">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="14">
+        <label>Eigen/Sparse</label>
       </node>
       <node id="2">
         <label>cmath</label>
@@ -60,8 +78,11 @@
       <node id="7">
         <label>gambit/Elements/gambit_module_headers.hpp</label>
       </node>
-      <node id="12">
-        <label>gambit/NeutrinoBit/NeutrinoBit_rollcall.hpp</label>
+      <node id="13">
+        <label>gambit/Utils/begin_ignore_warnings_eigen.hpp</label>
+      </node>
+      <node id="16">
+        <label>gambit/Utils/end_ignore_warnings.hpp</label>
       </node>
       <node id="9">
         <label>gambit/Utils/integration.hpp</label>
@@ -72,10 +93,10 @@
       <node id="11">
         <label>gambit/Utils/statistics.hpp</label>
       </node>
-      <node id="14">
+      <node id="18">
         <label>gsl/gsl_spline.h</label>
       </node>
-      <node id="15">
+      <node id="19">
         <label>gsl/gsl_spline2d.h</label>
       </node>
       <node id="3">
@@ -170,7 +191,7 @@
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/integration.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unsupported/Eigen/MatrixFunctions&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/statistics.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/NeutrinoBit/NeutrinoBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="NeutrinoBit__rollcall_8hpp" kindref="compound">gambit/NeutrinoBit/NeutrinoBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="NeutrinoInterpolator_8hpp" kindref="compound">gambit/NeutrinoBit/NeutrinoInterpolator.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>NEUTRINOBIT_DEBUG</highlight><highlight class="normal"></highlight></codeline>

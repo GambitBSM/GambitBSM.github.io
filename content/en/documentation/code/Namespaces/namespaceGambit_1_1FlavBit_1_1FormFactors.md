@@ -16,9 +16,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| complex< double > | **[K1R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-kr)**(int alpha, int beta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[K2L](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-kl)**(int alpha, int beta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[K2R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-kr)**(int alpha, int beta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
+| complex< double > | **[K1R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k1r)**(int alpha, int beta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[K2L](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k2l)**(int alpha, int beta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
+| complex< double > | **[K2R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k2r)**(int alpha, int beta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
 | complex< double > | **[AVLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
 | complex< double > | **[AVLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avlr)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
 | complex< double > | **[AVRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avrl)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
@@ -490,4 +490,4 @@ complex< double > CSRR(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

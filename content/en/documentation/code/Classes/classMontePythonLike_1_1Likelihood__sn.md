@@ -20,11 +20,11 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[read_configuration_file](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function-read-configuration-file)**(self self) |
 | def | **[read_matrix](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function-read-matrix)**(self self, path path) |
 | def | **[read_light_curve_parameters](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function-read-light-curve-parameters)**(self self) |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[read_configuration_file](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function-read-configuration-file)**(self self) |
 | def | **[read_matrix](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function-read-matrix)**(self self, path path) |
 | def | **[read_light_curve_parameters](/documentation/code/classes/classmontepythonlike_1_1likelihood__sn/#function-read-light-curve-parameters)**(self self) |
@@ -124,7 +124,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)
 
 
 
@@ -223,7 +223,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)
 
 
 
@@ -312,4 +312,4 @@ Read the file jla_lcparams.txt containing the SN data
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

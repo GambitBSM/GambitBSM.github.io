@@ -28,10 +28,10 @@ description: "[No description available]"
 |  | **[GET_MIX_MATRIX](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-mix-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
 |  | **[GET_MATRIX_EL](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-matrix-el)**(r, PRODUCT)  |
 |  | **[GET_MATRIX](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
-|  | **[GET_M1_MATRIX_EL](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-m-matrix-el)**(r, PRODUCT)  |
-|  | **[GET_M1_MATRIX](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-m-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
-|  | **[GET_M2_MATRIX_EL](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-m-matrix-el)**(r, PRODUCT)  |
-|  | **[GET_M2_MATRIX](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-m-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
+|  | **[GET_M1_MATRIX_EL](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-m1-matrix-el)**(r, PRODUCT)  |
+|  | **[GET_M1_MATRIX](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-m1-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
+|  | **[GET_M2_MATRIX_EL](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-m2-matrix-el)**(r, PRODUCT)  |
+|  | **[GET_M2_MATRIX](/documentation/code/files/src_2specbit__tests_8cpp/#define-get-m2-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
 
 ## Detailed Description
 
@@ -1084,4 +1084,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:26 +0000

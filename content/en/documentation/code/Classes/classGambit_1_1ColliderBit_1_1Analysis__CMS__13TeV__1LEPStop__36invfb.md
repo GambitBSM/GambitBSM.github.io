@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_1LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepstop__36invfb/#function-analysis-cms-tev-lepstop-invfb)**() |
+| | **[Analysis_CMS_13TeV_1LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepstop__36invfb/#function-analysis-cms-13tev-1lepstop-36invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepstop__36invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepstop__36invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepstop__36invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
@@ -137,4 +137,4 @@ static constexpr const char * detector = "CMS";
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

@@ -54,7 +54,7 @@ description: "[No description available]"
 | void | **[f_eff_at_z](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-f-eff-at-z)**(double & result) |
 | void | **[f_eff_constant](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-f-eff-constant)**(double & result)<br>Manually set the effective energy injection efficiency.  |
 | void | **[p_ann](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-p-ann)**(double & result) |
-| void | **[lnL_p_ann_P18_TTTEEE_lowE_lensing_BAO](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-lnl-p-ann-p-ttteee-lowe-lensing-bao)**(double & result) |
+| void | **[lnL_p_ann_P18_TTTEEE_lowE_lensing_BAO](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-lnl-p-ann-p18-ttteee-lowe-lensing-bao)**(double & result) |
 | void | **[energy_injection_spectrum_AnnihilatingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-energy-injection-spectrum-annihilatingdm-mixture)**([DarkAges::Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & spectrum)<br>The energy injection spectrum from the AnnihilatingDM model hierarchy.  |
 | void | **[energy_injection_spectrum_DecayingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-energy-injection-spectrum-decayingdm-mixture)**([DarkAges::Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & spectrum)<br>The energy injection spectrum from the DecayingDM model hierarchy.  |
 | void | **[lifetime_ALP_agg](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-lifetime-alp-agg)**(double & result)<br>Lifetime (in s) of an ALP if only the decay a -> g g is open.  |
@@ -72,21 +72,21 @@ description: "[No description available]"
 | void | **[get_N_ur](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-n-ur)**(double & result) |
 | void | **[T_ncdm_SM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-t-ncdm-sm)**(double & result)<br>Temperature of non-CDM in the (cosmological) SM.  |
 | void | **[T_ncdm](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-t-ncdm)**(double & result)<br>Temperature of non-CDM in non-standard theories.  |
-| void | **[eta0_LCDM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-eta-lcdm)**(double & result)<br>Baryon-to-photon ratio (today) in LCDM.  |
-| void | **[compute_Omega0_b](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega-b)**(double & result)<br>The total baryon content today.  |
-| void | **[compute_Omega0_cdm](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega-cdm)**(double & result)<br>The total cold dark matter content today.  |
-| void | **[compute_Omega0_g](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega-g)**(double & result)<br>The total photon content today.  |
-| void | **[compute_n0_g](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-n-g)**(double & result)<br>Number density of photons today.  |
-| void | **[compute_Omega0_ur](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega-ur)**(double & result)<br>The total ultrarelativistic content today.  |
-| void | **[get_H0_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-h-classy)**(double & result)<br>Hubble.  |
+| void | **[eta0_LCDM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-eta0-lcdm)**(double & result)<br>Baryon-to-photon ratio (today) in LCDM.  |
+| void | **[compute_Omega0_b](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-b)**(double & result)<br>The total baryon content today.  |
+| void | **[compute_Omega0_cdm](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-cdm)**(double & result)<br>The total cold dark matter content today.  |
+| void | **[compute_Omega0_g](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-g)**(double & result)<br>The total photon content today.  |
+| void | **[compute_n0_g](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-n0-g)**(double & result)<br>Number density of photons today.  |
+| void | **[compute_Omega0_ur](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-omega0-ur)**(double & result)<br>The total ultrarelativistic content today.  |
+| void | **[get_H0_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-h0-classy)**(double & result)<br>Hubble.  |
 | void | **[get_H_at_z_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-h-at-z-classy)**(daFunk::Funk & result)<br>Functor that calculates Hubble rate at redshift z [km/s/Mpc].  |
 | void | **[get_time_at_z_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-time-at-z-classy)**(daFunk::Funk & result)<br>Functor that calculates time since big bang at redshift z [s].  |
 | void | **[get_age_universe_from_time_at_z](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-age-universe-from-time-at-z)**(double & result)<br>Age of the universe (time since big bang at z=0) [s].  |
-| void | **[get_Omega0_m_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-omega-m-classy)**(double & result)<br>Energy densities _today_ (Omega0)  |
-| void | **[get_Omega0_r_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-omega-r-classy)**(double & result)<br>Radiation.  |
-| void | **[get_Omega0_ur_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-omega-ur-classy)**(double & result)<br>Ultra-relativistic.  |
-| void | **[get_Omega0_ncdm_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-omega-ncdm-classy)**(double & result)<br>Non-cold dark matter.  |
-| void | **[get_S8_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-s-classy)**(double & result) |
+| void | **[get_Omega0_m_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-omega0-m-classy)**(double & result)<br>Energy densities _today_ (Omega0)  |
+| void | **[get_Omega0_r_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-omega0-r-classy)**(double & result)<br>Radiation.  |
+| void | **[get_Omega0_ur_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-omega0-ur-classy)**(double & result)<br>Ultra-relativistic.  |
+| void | **[get_Omega0_ncdm_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-omega0-ncdm-classy)**(double & result)<br>Non-cold dark matter.  |
+| void | **[get_S8_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-s8-classy)**(double & result) |
 | void | **[get_Neff_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-neff-classy)**(double & result) |
 | void | **[get_tau_reio_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-tau-reio-classy)**(double & result)<br>Optical depth at reionisation.  |
 | void | **[get_z_reio_classy](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-z-reio-classy)**(double & result)<br>redshift of reionisation  |
@@ -97,22 +97,22 @@ description: "[No description available]"
 | void | **[get_multimode_parametrised_ps](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-multimode-parametrised-ps)**(ModelParameters & result) |
 | void | **[compute_Planck_nuisance_prior_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-planck-nuisance-prior-loglike)**(double & result) |
 | void | **[compute_Planck_sz_prior](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-planck-sz-prior)**(double & result) |
-| void | **[function_Planck_lowl_TT_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-loglike)**(double & result)<br>Low-l TT likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lowl_EE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ee-loglike)**(double & result)<br>Low-l E-mode polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lowl_TTEE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ttee-loglike)**(double & result)<br>Combined low-l TT and and E-mode polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_highl_TT_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-loglike)**(double & result)<br>High-l TT likelihood (PR3 - 2018)  |
-| void | **[function_Planck_highl_TT_lite_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-loglike)**(double & result)<br>Marginalised version of the high-l TT likelihood (PR3 - 2018)  |
-| void | **[function_Planck_highl_TTTEEE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_highl_TTTEEE_lite_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-lite-loglike)**(double & result)<br>Marginalised version of the high-l TT and polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lensing_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-loglike)**(double & result)<br>Lensing likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lensing_marged_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-marged-loglike)**(double & result)<br>Lensing Likelihood (marginalised over reference spectra for TT,EE, etc.) (PR3 - 2018)  |
-| void | **[function_Planck_lowl_TT_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-loglike)**(double & result)<br>Low-l TT likelihood (PR2 - 2015)  |
-| void | **[function_Planck_lowl_TEB_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-teb-loglike)**(double & result)<br>Low-l polarisation likelihood (PR2 - 2015)  |
-| void | **[function_Planck_highl_TT_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-loglike)**(double & result)<br>High-l TT likelihood (PR2 - 2015)  |
-| void | **[function_Planck_highl_TT_lite_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-loglike)**(double & result)<br>Marginalised version of high-l TT likelihood (PR2 - 2015)  |
-| void | **[function_Planck_highl_TTTEEE_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR2 - 2015)  |
-| void | **[function_Planck_highl_TTTEEE_lite_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-lite-loglike)**(double & result)<br>Marginalised version of high-l TT and polarisation likelihood (PR2 - 2015)  |
-| void | **[function_Planck_lensing_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-loglike)**(double & result)<br>Lensing likelihood (PR2 - 2015)  |
+| void | **[function_Planck_lowl_TT_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-2018-loglike)**(double & result)<br>Low-l TT likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lowl_EE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ee-2018-loglike)**(double & result)<br>Low-l E-mode polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lowl_TTEE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ttee-2018-loglike)**(double & result)<br>Combined low-l TT and and E-mode polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_highl_TT_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-2018-loglike)**(double & result)<br>High-l TT likelihood (PR3 - 2018)  |
+| void | **[function_Planck_highl_TT_lite_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-2018-loglike)**(double & result)<br>Marginalised version of the high-l TT likelihood (PR3 - 2018)  |
+| void | **[function_Planck_highl_TTTEEE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-2018-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_highl_TTTEEE_lite_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-lite-2018-loglike)**(double & result)<br>Marginalised version of the high-l TT and polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lensing_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-2018-loglike)**(double & result)<br>Lensing likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lensing_marged_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-marged-2018-loglike)**(double & result)<br>Lensing Likelihood (marginalised over reference spectra for TT,EE, etc.) (PR3 - 2018)  |
+| void | **[function_Planck_lowl_TT_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-2015-loglike)**(double & result)<br>Low-l TT likelihood (PR2 - 2015)  |
+| void | **[function_Planck_lowl_TEB_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-teb-2015-loglike)**(double & result)<br>Low-l polarisation likelihood (PR2 - 2015)  |
+| void | **[function_Planck_highl_TT_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-2015-loglike)**(double & result)<br>High-l TT likelihood (PR2 - 2015)  |
+| void | **[function_Planck_highl_TT_lite_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-2015-loglike)**(double & result)<br>Marginalised version of high-l TT likelihood (PR2 - 2015)  |
+| void | **[function_Planck_highl_TTTEEE_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-2015-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR2 - 2015)  |
+| void | **[function_Planck_highl_TTTEEE_lite_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-lite-2015-loglike)**(double & result)<br>Marginalised version of high-l TT and polarisation likelihood (PR2 - 2015)  |
+| void | **[function_Planck_lensing_2015_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lensing-2015-loglike)**(double & result)<br>Lensing likelihood (PR2 - 2015)  |
 
 
 ## Functions Documentation
@@ -990,4 +990,4 @@ Lensing likelihood (PR2 - 2015)
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

@@ -17,13 +17,13 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 |  | **[CAT](/documentation/code/files/cats_8hpp/#define-cat)**(X, Y)  |
-|  | **[CAT2](/documentation/code/files/cats_8hpp/#define-cat)**(X, Y)  |
-|  | **[CAT_2](/documentation/code/files/cats_8hpp/#define-cat)**  |
-|  | **[CAT_3](/documentation/code/files/cats_8hpp/#define-cat)**(X, Y, Z)  |
-|  | **[CAT_4](/documentation/code/files/cats_8hpp/#define-cat)**(A, X, Y, Z)  |
-|  | **[CAT_5](/documentation/code/files/cats_8hpp/#define-cat)**(A, B, X, Y, Z)  |
-|  | **[CAT_6](/documentation/code/files/cats_8hpp/#define-cat)**(A, B, C, X, Y, Z)  |
-|  | **[CAT_7](/documentation/code/files/cats_8hpp/#define-cat)**(A, B, C, D, X, Y, Z)  |
+|  | **[CAT2](/documentation/code/files/cats_8hpp/#define-cat2)**(X, Y)  |
+|  | **[CAT_2](/documentation/code/files/cats_8hpp/#define-cat-2)**  |
+|  | **[CAT_3](/documentation/code/files/cats_8hpp/#define-cat-3)**(X, Y, Z)  |
+|  | **[CAT_4](/documentation/code/files/cats_8hpp/#define-cat-4)**(A, X, Y, Z)  |
+|  | **[CAT_5](/documentation/code/files/cats_8hpp/#define-cat-5)**(A, B, X, Y, Z)  |
+|  | **[CAT_6](/documentation/code/files/cats_8hpp/#define-cat-6)**(A, B, C, X, Y, Z)  |
+|  | **[CAT_7](/documentation/code/files/cats_8hpp/#define-cat-7)**(A, B, C, D, X, Y, Z)  |
 
 ## Detailed Description
 
@@ -193,4 +193,4 @@ CAT(A,CAT_6(B,C,D,X,Y,Z))
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:32 +0000
+Updated on 2022-08-25 at 17:16:29 +0000

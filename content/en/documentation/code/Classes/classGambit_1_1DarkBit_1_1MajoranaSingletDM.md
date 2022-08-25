@@ -20,7 +20,7 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[MajoranaSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/#function-majoranasingletdm)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) *const catalog, double gammaH, double vev, double alpha_strong)<br>Initialize [MajoranaSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/) object (branching ratios etc)  |
 | | **[~MajoranaSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/#function-majoranasingletdm)**() |
-| double | **[Dh2](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/#function-dh)**(double s)<br>Helper function (Breit-Wigner)  |
+| double | **[Dh2](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/#function-dh2)**(double s)<br>Helper function (Breit-Wigner)  |
 | double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/#function-sv)**(std::string channel, double lambda, double mass, double cosXi, double v)<br>Returns <sigma v> in cm3/s for given channel, velocity and model parameters.  |
 | double | **[sv_WW](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/#function-sv-ww)**(double lambda, double mass, double v, double cosXi) |
 | double | **[sv_ZZ](/documentation/code/classes/classgambit_1_1darkbit_1_1majoranasingletdm/#function-sv-zz)**(double lambda, double mass, double v, double cosXi) |
@@ -129,4 +129,4 @@ Annihilation into hh.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

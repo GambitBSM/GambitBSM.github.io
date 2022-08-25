@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[sdowltot2](/documentation/code/classes/structgambit_1_1sd__sdownwidth__type/#variable-sdowltot)**  |
-| Fdouble | **[sdowrtot2](/documentation/code/classes/structgambit_1_1sd__sdownwidth__type/#variable-sdowrtot)**  |
+| Fdouble | **[sdowltot2](/documentation/code/classes/structgambit_1_1sd__sdownwidth__type/#variable-sdowltot2)**  |
+| Fdouble | **[sdowrtot2](/documentation/code/classes/structgambit_1_1sd__sdownwidth__type/#variable-sdowrtot2)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Fdouble sdowrtot2;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

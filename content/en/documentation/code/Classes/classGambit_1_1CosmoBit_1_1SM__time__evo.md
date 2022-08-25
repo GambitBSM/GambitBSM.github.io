@@ -29,7 +29,7 @@ description: "[No description available]"
 | double | **[Tnu_at_t](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/#function-tnu-at-t)**(double t) const |
 | double | **[H_at_t](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/#function-h-at-t)**(double t) const |
 | double | **[lnR_at_t](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/#function-lnr-at-t)**(double t) const |
-| double | **[t0](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/#function-t)**() const |
+| double | **[t0](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/#function-t0)**() const |
 | double | **[tf](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/#function-tf)**() const |
 | size_t | **[size](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/#function-size)**() const |
 | void | **[update_grid](/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/#function-update-grid)**(const std::vector< double > & T_grid_new, const std::vector< double > & Tnu_grid_new, const bool & unchecked =true) |
@@ -162,4 +162,4 @@ void update_grid(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

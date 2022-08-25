@@ -26,7 +26,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_1LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb/#function-analysis-atlas-tev-lepstop-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_1LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb/#function-analysis-atlas-13tev-1lepstop-36invfb)**() |
 | [ClusteringHistory](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) & | **[GetHistory](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb/#function-gethistory)**(const FJNS::PseudoJet & jet) |
 | double | **[optimalRadius](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb/#function-optimalradius)**(const double pT, const double m) |
 | double | **[minRadius](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb/#function-minradius)**(const double pT, const double m) |
@@ -228,4 +228,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

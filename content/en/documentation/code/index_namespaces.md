@@ -65,9 +65,7 @@ weight: 50
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1multinest/>MultiNest<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1neutrinobit/>NeutrinoBit<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1objectivesbit/>ObjectivesBit<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1polychord__1__17__1/>PolyChord_1_17_1<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1polychord__1__18__2/>PolyChord_1_18_2<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1polychord__1__20__1/>PolyChord_1_20_1<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1polychord/>PolyChord<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1postprocessor/>PostProcessor<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1precisionbit/>PrecisionBit<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1printers/>Printers<a></b><br>Forward declaration. <br>
@@ -76,10 +74,10 @@ weight: 50
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1errors/>Errors<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/>Plugins<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1specbit/>SpecBit<a></b><br></details>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d640/>@640<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d645/>@645<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d652/>@652<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d665/>@665<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d650/>@650<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d657/>@657<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d671/>@671<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceheputils/>HEPUtils<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacelhef/>LHEF<a></b><br>Forward declaration to cut down on includes. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacelester/>Lester<a></b><br>
@@ -150,4 +148,4 @@ weight: 50
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:32 +0000
+Updated on 2022-08-25 at 17:16:29 +0000

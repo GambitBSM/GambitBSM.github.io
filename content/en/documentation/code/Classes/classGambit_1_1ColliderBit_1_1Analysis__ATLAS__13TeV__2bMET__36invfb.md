@@ -21,11 +21,11 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 |                | Name           |
 | -------------- | -------------- |
 | bool | **[sortByPT](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-sortbypt)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
-| | **[Analysis_ATLAS_13TeV_2bMET_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-analysis-atlas-tev-bmet-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_2bMET_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-analysis-atlas-13tev-2bmet-36invfb)**() |
 | void | **[JetLeptonOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-jetleptonoverlapremoval)**(vector< const HEPUtils::Jet * > & jetvec, vector< const HEPUtils::Particle * > & lepvec, double DeltaRMax) |
 | void | **[LeptonJetOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-leptonjetoverlapremoval)**(vector< const HEPUtils::Particle * > & lepvec, vector< const HEPUtils::Jet * > & jetvec) |
 | void | **[SpecialLeptonJetOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-specialleptonjetoverlapremoval)**(vector< const HEPUtils::Particle * > & lepvec, vector< const HEPUtils::Jet * > & jetvec) |
-| [MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/) | **[MT2helper](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-mthelper)**(vector< const HEPUtils::Jet * > jets, vector< const HEPUtils::Particle * > electrons, vector< const HEPUtils::Particle * > muons, HEPUtils::P4 metVec) |
+| [MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/) | **[MT2helper](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-mt2helper)**(vector< const HEPUtils::Jet * > jets, vector< const HEPUtils::Particle * > electrons, vector< const HEPUtils::Particle * > muons, HEPUtils::P4 metVec) |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
@@ -191,4 +191,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

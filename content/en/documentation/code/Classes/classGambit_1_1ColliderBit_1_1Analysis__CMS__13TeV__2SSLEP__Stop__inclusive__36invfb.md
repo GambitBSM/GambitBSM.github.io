@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_36invfb](/doc
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_2SSLEP_Stop_inclusive_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__inclusive__36invfb/#function-analysis-cms-tev-sslep-stop-inclusive-invfb)**() |
+| | **[Analysis_CMS_13TeV_2SSLEP_Stop_inclusive_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__inclusive__36invfb/#function-analysis-cms-13tev-2sslep-stop-inclusive-36invfb)**() |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__inclusive__36invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
@@ -35,7 +35,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_36invfb](/doc
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_2SSLEP_Stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__36invfb/#function-analysis-cms-tev-sslep-stop-invfb)**() |
+| | **[Analysis_CMS_13TeV_2SSLEP_Stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__36invfb/#function-analysis-cms-13tev-2sslep-stop-36invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__36invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__36invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 
@@ -58,8 +58,8 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_36invfb](/doc
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__36invfb/#variable--counters)**  |
-| [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) | **[_cutflow](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__36invfb/#variable--cutflow)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__36invfb/#variable-counters)**  |
+| [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) | **[_cutflow](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2sslep__stop__36invfb/#variable-cutflow)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
@@ -115,4 +115,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

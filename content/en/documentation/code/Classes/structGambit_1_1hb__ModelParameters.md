@@ -41,10 +41,10 @@ description: "[No description available]"
 | double[3] | **[CS_bb_hjZ_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-bb-hjz-ratio)**  |
 | double[3] | **[CS_tev_vbf_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-tev-vbf-ratio)**  |
 | double[3] | **[CS_tev_tthj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-tev-tthj-ratio)**  |
-| double[3] | **[CS_lhc7_vbf_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc-vbf-ratio)**  |
-| double[3] | **[CS_lhc7_tthj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc-tthj-ratio)**  |
-| double[3] | **[CS_lhc8_vbf_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc-vbf-ratio)**  |
-| double[3] | **[CS_lhc8_tthj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc-tthj-ratio)**  |
+| double[3] | **[CS_lhc7_vbf_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc7-vbf-ratio)**  |
+| double[3] | **[CS_lhc7_tthj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc7-tthj-ratio)**  |
+| double[3] | **[CS_lhc8_vbf_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc8-vbf-ratio)**  |
+| double[3] | **[CS_lhc8_tthj_ratio](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-cs-lhc8-tthj-ratio)**  |
 | double[3] | **[BR_hjss](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjss)**  |
 | double[3] | **[BR_hjcc](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjcc)**  |
 | double[3] | **[BR_hjbb](/documentation/code/classes/structgambit_1_1hb__modelparameters/#variable-br-hjbb)**  |
@@ -407,4 +407,4 @@ double[1] BR_Hptaunu;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

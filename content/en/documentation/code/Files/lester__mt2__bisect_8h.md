@@ -37,7 +37,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ASYMM_MT2_BISECT_H](/documentation/code/files/lester__mt2__bisect_8h/#define-asymm-mt-bisect-h)**  |
+|  | **[ASYMM_MT2_BISECT_H](/documentation/code/files/lester__mt2__bisect_8h/#define-asymm-mt2-bisect-h)**  |
 
 
 ## Functions Documentation
@@ -725,4 +725,4 @@ std::pair <double,double>  ben_findsols(double MT2, double px, double py, double
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:30 +0000
+Updated on 2022-08-25 at 17:16:27 +0000

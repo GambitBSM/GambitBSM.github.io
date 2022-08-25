@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[stau1tot2](/documentation/code/classes/structgambit_1_1sd__stauwidth__type/#variable-stautot)**  |
-| Fdouble | **[stau2tot2](/documentation/code/classes/structgambit_1_1sd__stauwidth__type/#variable-stautot)**  |
+| Fdouble | **[stau1tot2](/documentation/code/classes/structgambit_1_1sd__stauwidth__type/#variable-stau1tot2)**  |
+| Fdouble | **[stau2tot2](/documentation/code/classes/structgambit_1_1sd__stauwidth__type/#variable-stau2tot2)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +39,4 @@ Fdouble stau2tot2;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

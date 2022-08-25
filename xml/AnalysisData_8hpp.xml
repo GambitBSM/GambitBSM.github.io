@@ -109,10 +109,60 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="13">
+        <label>ColliderBit_eventloop.hpp</label>
+        <link refid="ColliderBit__eventloop_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ColliderBit_rollcall.hpp</label>
+        <link refid="ColliderBit__rollcall_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
       <node id="8">
         <label>ColliderBit_types.hpp</label>
         <link refid="ColliderBit__types_8hpp"/>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -137,19 +187,55 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="30">
         <label>complete_process_PID_pair_multimaps.hpp</label>
         <link refid="complete__process__PID__pair__multimaps_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
+      </node>
+      <node id="16">
+        <label>generateEventPy8Collider.hpp</label>
+        <link refid="generateEventPy8Collider_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>getPy8Collider.hpp</label>
+        <link refid="getPy8Collider_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ColliderBit_Higgs.cpp</label>
+        <link refid="ColliderBit__Higgs_8cpp"/>
       </node>
       <node id="5">
         <label>ColliderBit_InterpolatedYields.cpp</label>
         <link refid="ColliderBit__InterpolatedYields_8cpp"/>
+      </node>
+      <node id="11">
+        <label>ColliderBit_LEP.cpp</label>
+        <link refid="ColliderBit__LEP_8cpp"/>
+      </node>
+      <node id="12">
+        <label>ColliderBit_dummy.cpp</label>
+        <link refid="ColliderBit__dummy_8cpp"/>
+      </node>
+      <node id="14">
+        <label>ColliderBit_eventloop.cpp</label>
+        <link refid="ColliderBit__eventloop_8cpp"/>
+      </node>
+      <node id="28">
+        <label>LHC_likelihoods.cpp</label>
+        <link refid="LHC__likelihoods_8cpp"/>
       </node>
       <node id="6">
         <label>MC_convergence.cpp</label>
@@ -163,21 +249,61 @@
         <label>AnalysisContainer.cpp</label>
         <link refid="AnalysisContainer_8cpp"/>
       </node>
-      <node id="10">
+      <node id="15">
+        <label>collider_event_weights.cpp</label>
+        <link refid="collider__event__weights_8cpp"/>
+      </node>
+      <node id="31">
         <label>complete_process_PID_pair_multimaps.cpp</label>
         <link refid="complete__process__PID__pair__multimaps_8cpp"/>
       </node>
-      <node id="11">
+      <node id="19">
+        <label>getActiveProcessCodes.cpp</label>
+        <link refid="getActiveProcessCodes_8cpp"/>
+      </node>
+      <node id="20">
+        <label>getAnalysisContainer.cpp</label>
+        <link refid="getAnalysisContainer_8cpp"/>
+      </node>
+      <node id="21">
+        <label>getBuckFast.cpp</label>
+        <link refid="getBuckFast_8cpp"/>
+      </node>
+      <node id="22">
+        <label>getHepMCEvent.cpp</label>
+        <link refid="getHepMCEvent_8cpp"/>
+      </node>
+      <node id="23">
+        <label>getLHEvent.cpp</label>
+        <link refid="getLHEvent_8cpp"/>
+      </node>
+      <node id="25">
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="12">
+      <node id="29">
+        <label>lep_mssm_xsecs.cpp</label>
+        <link refid="lep__mssm__xsecs_8cpp"/>
+      </node>
+      <node id="17">
+        <label>SUSY.cpp</label>
+        <link refid="SUSY_8cpp"/>
+      </node>
+      <node id="18">
+        <label>SUSY_extras.cpp</label>
+        <link refid="SUSY__extras_8cpp"/>
+      </node>
+      <node id="26">
         <label>process_code_PID_pair_mapping.cpp</label>
         <link refid="process__code__PID__pair__mapping_8cpp"/>
       </node>
       <node id="7">
         <label>runAnalyses.cpp</label>
         <link refid="runAnalyses_8cpp"/>
+      </node>
+      <node id="27">
+        <label>smearEvent.cpp</label>
+        <link refid="smearEvent_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structGambit_1_1ColliderBit_1_1SignalRegionData" prot="public">Gambit::ColliderBit::SignalRegionData</innerclass>

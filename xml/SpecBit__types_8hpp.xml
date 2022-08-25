@@ -6,6 +6,8 @@
     <includes local="no">vector</includes>
     <includes local="yes">gambit/Utils/util_types.hpp</includes>
     <includedby refid="SpecBit__VS_8cpp" local="yes">SpecBit_VS.cpp</includedby>
+    <includedby refid="SpecBit__VS__rollcall_8hpp" local="yes">SpecBit_VS_rollcall.hpp</includedby>
+    <includedby refid="SpecBit__rollcall_8hpp" local="yes">SpecBit_rollcall.hpp</includedby>
     <includedby refid="SpecBit__types_8cpp" local="yes">SpecBit_types.cpp</includedby>
     <incdepgraph>
       <node id="1">
@@ -29,6 +31,56 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="5">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="15">
+        <label>SpecBit_examples.cpp</label>
+        <link refid="SpecBit__examples_8cpp"/>
+      </node>
+      <node id="16">
+        <label>SpecBit_tests.cpp</label>
+        <link refid="examples_2SpecBit__tests_8cpp"/>
+      </node>
+      <node id="3">
+        <label>SpecBit_VS_rollcall.hpp</label>
+        <link refid="SpecBit__VS__rollcall_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SpecBit_rollcall.hpp</label>
+        <link refid="SpecBit__rollcall_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>SpecBit_types.hpp</label>
         <link refid="SpecBit__types_8hpp"/>
@@ -36,12 +88,56 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SpecBit.cpp</label>
+        <link refid="SpecBit_8cpp"/>
+      </node>
+      <node id="7">
+        <label>SpecBit_DMEFT.cpp</label>
+        <link refid="SpecBit__DMEFT_8cpp"/>
+      </node>
+      <node id="8">
+        <label>SpecBit_DiracSingletDM.cpp</label>
+        <link refid="SpecBit__DiracSingletDM_8cpp"/>
+      </node>
+      <node id="9">
+        <label>SpecBit_MDM.cpp</label>
+        <link refid="SpecBit__MDM_8cpp"/>
+      </node>
+      <node id="10">
+        <label>SpecBit_MSSM.cpp</label>
+        <link refid="SpecBit__MSSM_8cpp"/>
+      </node>
+      <node id="11">
+        <label>SpecBit_MajoranaSingletDM.cpp</label>
+        <link refid="SpecBit__MajoranaSingletDM_8cpp"/>
+      </node>
+      <node id="12">
+        <label>SpecBit_SM.cpp</label>
+        <link refid="SpecBit__SM_8cpp"/>
+      </node>
+      <node id="13">
+        <label>SpecBit_ScalarSingletDM.cpp</label>
+        <link refid="SpecBit__ScalarSingletDM_8cpp"/>
       </node>
       <node id="2">
         <label>SpecBit_VS.cpp</label>
         <link refid="SpecBit__VS_8cpp"/>
       </node>
-      <node id="3">
+      <node id="14">
+        <label>SpecBit_VectorSingletDM.cpp</label>
+        <link refid="SpecBit__VectorSingletDM_8cpp"/>
+      </node>
+      <node id="17">
+        <label>SpecBit_tests.cpp</label>
+        <link refid="src_2SpecBit__tests_8cpp"/>
+      </node>
+      <node id="18">
         <label>SpecBit_types.cpp</label>
         <link refid="SpecBit__types_8cpp"/>
       </node>

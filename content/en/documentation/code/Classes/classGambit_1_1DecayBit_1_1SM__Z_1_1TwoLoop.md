@@ -78,8 +78,8 @@ description: "[No description available]"
 | double | **[error_Rl](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-error-rl)**() const |
 | double | **[error_Rc](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-error-rc)**() const |
 | double | **[error_Rb](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-error-rb)**() const |
-| double | **[sigma_0_had](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-sigma-had)**() const |
-| double | **[error_sigma_0_had](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-error-sigma-had)**() const |
+| double | **[sigma_0_had](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-sigma-0-had)**() const |
+| double | **[error_sigma_0_had](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-error-sigma-0-had)**() const |
 | bool | **[nuisances_outside_ranges](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-nuisances-outside-ranges)**() |
 | | **[TwoLoop](/documentation/code/classes/classgambit_1_1decaybit_1_1sm__z_1_1twoloop/#function-twoloop)**(double mh_OS =hat.mh_OS, double mt_OS =hat.mt_OS, double MZ_OS =hat.MZ_OS, double alpha_s_MSbar_MZ =hat.alpha_s_MSbar_MZ, double delta_alpha_OS =hat.delta_alpha_OS) |
 
@@ -605,4 +605,4 @@ double delta_alpha_OS;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

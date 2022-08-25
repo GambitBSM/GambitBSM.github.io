@@ -19,7 +19,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_0LEP_13invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#function-analysis-atlas-tev-lep-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_0LEP_13invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#function-analysis-atlas-13tev-0lep-13invfb)**() |
 | void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#function-run)**(const Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#function-collect-results)**()<br>Register results objects with the results for each SR; obs & bkg numbers from the CONF note.  |
@@ -35,8 +35,8 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 |                | Name           |
 | -------------- | -------------- |
 | constexpr const char * | **[detector](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#variable-detector)**  |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#variable--counters)**  |
-| [Cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/) | **[_flows](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#variable--flows)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#variable-counters)**  |
+| [Cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/) | **[_flows](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#variable-flows)**  |
 
 ## Additional inherited members
 
@@ -186,4 +186,4 @@ Cutflows _flows;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

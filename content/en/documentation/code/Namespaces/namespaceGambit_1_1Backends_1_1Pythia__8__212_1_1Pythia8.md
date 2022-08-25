@@ -46,7 +46,7 @@ description: "[No description available]"
 | typedef ::Pythia_8_212::Pythia8::Settings | **[Settings](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/#typedef-settings)**  |
 | typedef ::Pythia_8_212::Pythia8::Info | **[Info](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/#typedef-info)**  |
 | typedef ::Pythia_8_212::Pythia8::Rndm | **[Rndm](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/#typedef-rndm)**  |
-| typedef ::Pythia_8_212::Pythia8::Vec4 | **[Vec4](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/#typedef-vec)**  |
+| typedef ::Pythia_8_212::Pythia8::Vec4 | **[Vec4](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/#typedef-vec4)**  |
 | typedef ::Pythia_8_212::Pythia8::Hist | **[Hist](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/#typedef-hist)**  |
 
 ## Types Documentation
@@ -282,4 +282,4 @@ typedef ::Pythia_8_212::Pythia8::Hist Gambit::Backends::Pythia_8_212::Pythia8::H
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

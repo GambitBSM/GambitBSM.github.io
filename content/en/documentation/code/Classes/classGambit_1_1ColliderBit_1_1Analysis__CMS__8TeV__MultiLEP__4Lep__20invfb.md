@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_20invfb](/documen
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__4lep__20invfb/#function-analysis-cms-tev-multilep-lep-invfb)**() |
+| | **[Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__4lep__20invfb/#function-analysis-cms-8tev-multilep-4lep-20invfb)**() |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__4lep__20invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
@@ -29,7 +29,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_20invfb](/documen
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_8TeV_MultiLEP_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb/#function-analysis-cms-tev-multilep-invfb)**() |
+| | **[Analysis_CMS_8TeV_MultiLEP_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb/#function-analysis-cms-8tev-multilep-20invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 
@@ -49,7 +49,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_20invfb](/documen
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, double > | **[_numSR](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb/#variable--numsr)**  |
+| std::map< string, double > | **[_numSR](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb/#variable-numsr)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
@@ -105,4 +105,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

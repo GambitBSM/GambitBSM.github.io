@@ -25,10 +25,10 @@ description: "[No description available]"
 |  | **[Mathematica_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-mathematica-lang)**  |
 |  | **[PYTHON_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
 |  | **[Python_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
-|  | **[PYTHON2_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
-|  | **[Python2_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
-|  | **[PYTHON3_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
-|  | **[Python3_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
+|  | **[PYTHON2_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python2-lang)**  |
+|  | **[Python2_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python2-lang)**  |
+|  | **[PYTHON3_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python3-lang)**  |
+|  | **[Python3_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python3-lang)**  |
 |  | **[DATA_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-data-lang)**  |
 |  | **[Data_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-data-lang)**  |
 |  | **[DEFINED_BACKENDLANG](/documentation/code/files/interoperability__macros_8hpp/#define-defined-backendlang)** <br>Macro to help identifying the language of the backend.  |
@@ -368,4 +368,4 @@ Macro that determines whether the the backend is purely data.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

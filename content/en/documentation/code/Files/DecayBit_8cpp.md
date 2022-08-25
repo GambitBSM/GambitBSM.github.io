@@ -23,9 +23,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[pow2](/documentation/code/files/decaybit_8cpp/#define-pow)**(a)  |
-|  | **[pow3](/documentation/code/files/decaybit_8cpp/#define-pow)**(a)  |
-|  | **[pow4](/documentation/code/files/decaybit_8cpp/#define-pow)**(a)  |
+|  | **[pow2](/documentation/code/files/decaybit_8cpp/#define-pow2)**(a)  |
+|  | **[pow3](/documentation/code/files/decaybit_8cpp/#define-pow3)**(a)  |
+|  | **[pow4](/documentation/code/files/decaybit_8cpp/#define-pow4)**(a)  |
 
 ## Detailed Description
 
@@ -3861,4 +3861,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:29 +0000
+Updated on 2022-08-25 at 17:16:26 +0000

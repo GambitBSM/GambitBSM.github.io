@@ -62,7 +62,7 @@ description: "[No description available]"
 | template <typename T \> <br>int | **[WSPutVariables](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariables)**(WSLINK WSlink, T last) |
 | template <typename T1 ,typename T2 ,typename... Others\> <br>int | **[WSPutVariables](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariables)**(WSLINK WSlink, T1 first, T2 second, Others... args) |
 | [backend_info](/documentation/code/classes/structgambit_1_1backends_1_1backend__info/) & | **[backendInfo](/documentation/code/namespaces/namespacegambit_1_1backends/#function-backendinfo)**()<br>Backend info accessor function.  |
-| namespace | **[CAT_3](/documentation/code/namespaces/namespacegambit_1_1backends/#function-cat)**(BACKENDNAME , _ , SAFE_VERSION ) |
+| namespace | **[CAT_3](/documentation/code/namespaces/namespacegambit_1_1backends/#function-cat-3)**(BACKENDNAME , _ , SAFE_VERSION ) |
 | template <typename T \> <br>T | **[load_backend_symbol](/documentation/code/namespaces/namespacegambit_1_1backends/#function-load-backend-symbol)**(const std::vector< str > & symbol_names, str be, str ver)<br>Get the pointer to the backend function.  |
 | template <typename T \> <br>T | **[handover_factory_pointer](/documentation/code/namespaces/namespacegambit_1_1backends/#function-handover-factory-pointer)**(str be, str ver, str name, str barename, str args, const std::vector< str > & symbol_names, T factory, T missing_backend, T missing_factory)<br>Provide the factory pointer to a BOSSed type's wrapper constructor.  |
 | void | **[math_error](/documentation/code/namespaces/namespacegambit_1_1backends/#function-math-error)**(WSLINK , const str & , const str & )<br>Helper function to raise an appropriate warning or error in case of problems.  |
@@ -342,4 +342,4 @@ Helper function that indicates if a type is numerical or not.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

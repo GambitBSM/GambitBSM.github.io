@@ -8,7 +8,7 @@
     <includes local="yes">gambit/Elements/spectrum.hpp</includes>
     <includes local="yes">gambit/Utils/stream_overloads.hpp</includes>
     <includes local="yes">gambit/Utils/util_macros.hpp</includes>
-    <includes local="yes">gambit/SpecBit/SpecBit_rollcall.hpp</includes>
+    <includes refid="SpecBit__rollcall_8hpp" local="yes">gambit/SpecBit/SpecBit_rollcall.hpp</includes>
     <includes refid="SpecBit__helpers_8hpp" local="yes">gambit/SpecBit/SpecBit_helpers.hpp</includes>
     <includes refid="QedQcdWrapper_8hpp" local="yes">gambit/SpecBit/QedQcdWrapper.hpp</includes>
     <includes local="yes">gambit/Models/SimpleSpectra/SMHiggsSimpleSpec.hpp</includes>
@@ -21,98 +21,178 @@
     <includes local="yes">flexiblesusy/src/numerics2.hpp</includes>
     <includes local="yes">flexiblesusy/src/spectrum_generator_settings.hpp</includes>
     <incdepgraph>
-      <node id="12">
+      <node id="26">
         <label>gambit/SpecBit/QedQcdWrapper.hpp</label>
         <link refid="QedQcdWrapper_8hpp"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>gambit/SpecBit/ScalarSingletDM_Z2Spec.hpp</label>
-        <link refid="ScalarSingletDM__Z2Spec_8hpp"/>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
         <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
       </node>
-      <node id="27">
+      <node id="35">
+        <label>gambit/SpecBit/ScalarSingletDM_Z2Spec.hpp</label>
+        <link refid="ScalarSingletDM__Z2Spec_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
         <label>gambit/SpecBit/ScalarSingletDM_Z2Spec_head.hpp</label>
         <link refid="ScalarSingletDM__Z2Spec__head_8hpp"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
       </node>
-      <node id="29">
+      <node id="43">
         <label>gambit/SpecBit/ScalarSingletDM_Z3Spec.hpp</label>
         <link refid="ScalarSingletDM__Z3Spec_8hpp"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>gambit/SpecBit/ScalarSingletDM_Z3Spec_head.hpp</label>
+        <link refid="ScalarSingletDM__Z3Spec__head_8hpp"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gambit/SpecBit/SpecBit_DMEFT_rollcall.hpp</label>
+        <link refid="SpecBit__DMEFT__rollcall_8hpp"/>
+      </node>
+      <node id="19">
+        <label>gambit/SpecBit/SpecBit_DiracSingletDM_rollcall.hpp</label>
+        <link refid="SpecBit__DiracSingletDM__rollcall_8hpp"/>
+      </node>
+      <node id="20">
+        <label>gambit/SpecBit/SpecBit_MDM_rollcall.hpp</label>
+        <link refid="SpecBit__MDM__rollcall_8hpp"/>
+      </node>
+      <node id="13">
+        <label>gambit/SpecBit/SpecBit_MSSM_rollcall.hpp</label>
+        <link refid="SpecBit__MSSM__rollcall_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit/SpecBit/SpecBit_MajoranaSingletDM_rollcall.hpp</label>
+        <link refid="SpecBit__MajoranaSingletDM__rollcall_8hpp"/>
+      </node>
+      <node id="12">
+        <label>gambit/SpecBit/SpecBit_SM_rollcall.hpp</label>
+        <link refid="SpecBit__SM__rollcall_8hpp"/>
+      </node>
+      <node id="16">
+        <label>gambit/SpecBit/SpecBit_ScalarSingletDM_rollcall.hpp</label>
+        <link refid="SpecBit__ScalarSingletDM__rollcall_8hpp"/>
+      </node>
+      <node id="15">
+        <label>gambit/SpecBit/SpecBit_VS_rollcall.hpp</label>
+        <link refid="SpecBit__VS__rollcall_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gambit/SpecBit/SpecBit_VectorSingletDM_rollcall.hpp</label>
+        <link refid="SpecBit__VectorSingletDM__rollcall_8hpp"/>
+      </node>
+      <node id="23">
+        <label>gambit/SpecBit/SpecBit_helpers.hpp</label>
+        <link refid="SpecBit__helpers_8hpp"/>
         <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
       </node>
-      <node id="30">
-        <label>gambit/SpecBit/ScalarSingletDM_Z3Spec_head.hpp</label>
-        <link refid="ScalarSingletDM__Z3Spec__head_8hpp"/>
+      <node id="8">
+        <label>gambit/SpecBit/SpecBit_rollcall.hpp</label>
+        <link refid="SpecBit__rollcall_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
+      <node id="21">
+        <label>gambit/SpecBit/SpecBit_tests_rollcall.hpp</label>
+        <link refid="SpecBit__tests__rollcall_8hpp"/>
+      </node>
       <node id="9">
-        <label>gambit/SpecBit/SpecBit_helpers.hpp</label>
-        <link refid="SpecBit__helpers_8hpp"/>
+        <label>gambit/SpecBit/SpecBit_types.hpp</label>
+        <link refid="SpecBit__types_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="34">
         <label>gambit/SpecBit/flexiblesusy_include_automater.hpp</label>
         <link refid="flexiblesusy__include__automater_8hpp"/>
       </node>
-      <node id="18">
+      <node id="32">
         <label>gambit/SpecBit/model_files_and_boxes.hpp</label>
         <link refid="model__files__and__boxes_8hpp"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -132,93 +212,96 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
         <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="33">
         <label>SLHAea/slhaea.h</label>
       </node>
-      <node id="28">
+      <node id="42">
         <label>flexiblesusy/config/config.h</label>
       </node>
-      <node id="31">
+      <node id="45">
         <label>flexiblesusy/src/ew_input.hpp</label>
       </node>
-      <node id="11">
+      <node id="25">
         <label>flexiblesusy/src/lowe.h</label>
       </node>
-      <node id="32">
+      <node id="46">
         <label>flexiblesusy/src/numerics2.hpp</label>
       </node>
-      <node id="33">
+      <node id="47">
         <label>flexiblesusy/src/spectrum_generator_settings.hpp</label>
       </node>
       <node id="4">
         <label>gambit/Elements/gambit_module_headers.hpp</label>
       </node>
-      <node id="25">
+      <node id="39">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
       </node>
-      <node id="10">
+      <node id="24">
         <label>gambit/Elements/sminputs.hpp</label>
       </node>
-      <node id="13">
+      <node id="27">
         <label>gambit/Elements/spec.hpp</label>
       </node>
       <node id="5">
         <label>gambit/Elements/spectrum.hpp</label>
       </node>
-      <node id="24">
+      <node id="38">
         <label>gambit/Elements/subspectrum.hpp</label>
       </node>
-      <node id="16">
+      <node id="30">
         <label>gambit/Models/SimpleSpectra/SMHiggsSimpleSpec.hpp</label>
       </node>
-      <node id="17">
+      <node id="31">
         <label>gambit/Models/SimpleSpectra/ScalarSingletDMSimpleSpec.hpp</label>
       </node>
-      <node id="14">
+      <node id="28">
         <label>gambit/Models/SpectrumContents/RegisteredSpectra.hpp</label>
       </node>
-      <node id="8">
-        <label>gambit/SpecBit/SpecBit_rollcall.hpp</label>
+      <node id="14">
+        <label>gambit/Utils/slhaea_helpers.hpp</label>
       </node>
       <node id="6">
         <label>gambit/Utils/stream_overloads.hpp</label>
       </node>
-      <node id="26">
+      <node id="40">
         <label>gambit/Utils/util_functions.hpp</label>
       </node>
       <node id="7">
         <label>gambit/Utils/util_macros.hpp</label>
       </node>
-      <node id="23">
+      <node id="11">
+        <label>gambit/Utils/util_types.hpp</label>
+      </node>
+      <node id="37">
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="15">
+      <node id="29">
         <label>lowe.h</label>
       </node>
-      <node id="22">
+      <node id="36">
         <label>memory</label>
       </node>
       <node id="3">
@@ -226,6 +309,9 @@
       </node>
       <node id="2">
         <label>string</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceGambit">Gambit</innernamespace>
@@ -274,7 +360,7 @@
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/stream_overloads.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/util_macros.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/SpecBit/SpecBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SpecBit__rollcall_8hpp" kindref="compound">gambit/SpecBit/SpecBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SpecBit__helpers_8hpp" kindref="compound">gambit/SpecBit/SpecBit_helpers.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="QedQcdWrapper_8hpp" kindref="compound">gambit/SpecBit/QedQcdWrapper.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Models/SimpleSpectra/SMHiggsSimpleSpec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>

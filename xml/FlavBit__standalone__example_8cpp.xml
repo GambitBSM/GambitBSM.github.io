@@ -3,7 +3,7 @@
   <compounddef id="FlavBit__standalone__example_8cpp" kind="file" language="C++">
     <compoundname>FlavBit_standalone_example.cpp</compoundname>
     <includes local="yes">gambit/Elements/standalone_module.hpp</includes>
-    <includes local="yes">gambit/FlavBit/FlavBit_rollcall.hpp</includes>
+    <includes refid="FlavBit__rollcall_8hpp" local="yes">gambit/FlavBit/FlavBit_rollcall.hpp</includes>
     <includes local="yes">gambit/Elements/spectrum_factories.hpp</includes>
     <includes local="yes">gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</includes>
     <incdepgraph>
@@ -14,22 +14,44 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/FlavBit/FlavBit_rollcall.hpp</label>
+        <link refid="FlavBit__rollcall_8hpp"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="4">
+        <label>gambit/FlavBit/FlavBit_types.hpp</label>
+        <link refid="FlavBit__types_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>boost/numeric/ublas/matrix.hpp</label>
+      </node>
+      <node id="8">
         <label>gambit/Elements/spectrum_factories.hpp</label>
       </node>
       <node id="2">
         <label>gambit/Elements/standalone_module.hpp</label>
       </node>
-      <node id="3">
-        <label>gambit/FlavBit/FlavBit_rollcall.hpp</label>
+      <node id="9">
+        <label>gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</label>
       </node>
       <node id="5">
-        <label>gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</label>
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceFlavBit_1_1Functown">FlavBit::Functown</innernamespace>
@@ -145,7 +167,7 @@
 <codeline lineno="28"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Always<sp/>required<sp/>in<sp/>any<sp/>standalone<sp/>module<sp/>main<sp/>file</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/standalone_module.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/FlavBit/FlavBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FlavBit__rollcall_8hpp" kindref="compound">gambit/FlavBit/FlavBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Just<sp/>required<sp/>in<sp/>this<sp/>one</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/spectrum_factories.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -157,10 +179,10 @@
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Default<sp/>SLHA<sp/>file<sp/>for<sp/>input,<sp/>if<sp/>not<sp/>given<sp/>on<sp/>the<sp/>command<sp/>line.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal">std::string<sp/>infile(</highlight><highlight class="stringliteral">&quot;FlavBit/data/example.slha&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(FlavBit,<sp/>unimproved_MSSM_spectrum,<sp/>NEW_CAPABILITY,<sp/>createSpectrum,<sp/>Spectrum,<sp/>(MSSM30atQ,MSSM30atMGUT))</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(FlavBit,<sp/>MSSM_spectrum,<sp/>NEW_CAPABILITY,<sp/>relabelSpectrum,<sp/>Spectrum,<sp/>(MSSM30atQ,MSSM30atMGUT),<sp/>(unimproved_MSSM_spectrum,<sp/>Spectrum))</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(FlavBit,<sp/>Z_decay_rates,<sp/>NEW_CAPABILITY,<sp/>GammaZ,<sp/>DecayTable::Entry)</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(FlavBit,<sp/>W_plus_decay_rates,<sp/>NEW_CAPABILITY,<sp/>GammaW,<sp/>DecayTable::Entry)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">QUICK_FUNCTION(FlavBit,<sp/>unimproved_MSSM_spectrum,<sp/>NEW_CAPABILITY,<sp/>createSpectrum,<sp/>Spectrum,<sp/>(MSSM30atQ,MSSM30atMGUT))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">QUICK_FUNCTION(FlavBit,<sp/>MSSM_spectrum,<sp/>NEW_CAPABILITY,<sp/>relabelSpectrum,<sp/>Spectrum,<sp/>(MSSM30atQ,MSSM30atMGUT),<sp/>(unimproved_MSSM_spectrum,<sp/>Spectrum))</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">QUICK_FUNCTION(FlavBit,<sp/>Z_decay_rates,<sp/>NEW_CAPABILITY,<sp/>GammaZ,<sp/>DecayTable::Entry)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">QUICK_FUNCTION(FlavBit,<sp/>W_plus_decay_rates,<sp/>NEW_CAPABILITY,<sp/>GammaW,<sp/>DecayTable::Entry)</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
 <codeline lineno="49"><highlight class="normal">{</highlight></codeline>

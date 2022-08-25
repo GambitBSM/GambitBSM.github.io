@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb](/document
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb__nocovar/#function-analysis-cms-tev-oslep-invfb-nocovar)**() |
+| | **[Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb__nocovar/#function-analysis-cms-13tev-2oslep-36invfb-nocovar)**() |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb__nocovar/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
@@ -36,11 +36,11 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb](/document
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_2OSLEP_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#function-analysis-cms-tev-oslep-invfb)**() |
+| | **[Analysis_CMS_13TeV_2OSLEP_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#function-analysis-cms-13tev-2oslep-36invfb)**() |
 | virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#function-run)**(const HEPUtils::Event * event) |
 | virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#function-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 | double | **[get_mjj](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#function-get-mjj)**(vector< const HEPUtils::Jet * > jets) |
-| double | **[get_mT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#function-get-mt)**(vector< const HEPUtils::Particle * > leptons, vector< const HEPUtils::Jet * > bjets, HEPUtils::P4 met) |
+| double | **[get_mT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#function-get-mt2)**(vector< const HEPUtils::Particle * > leptons, vector< const HEPUtils::Jet * > bjets, HEPUtils::P4 met) |
 
 **Protected Functions inherited from [Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/)**
 
@@ -60,7 +60,7 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb](/document
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#variable--counters)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb/#variable-counters)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
@@ -116,4 +116,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

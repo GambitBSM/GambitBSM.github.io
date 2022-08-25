@@ -37,10 +37,10 @@ description: "[No description available]"
 | void | **[shells](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-shells)**(double & loglike)<br>Test problem 1 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
 | void | **[styblinski_tang](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-styblinski-tang)**(double & loglike) |
 | void | **[easom](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-easom)**(double & loglike) |
-| void | **[tf1](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf)**(double & loglike)<br>Analytic function 1 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf2](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf)**(double & loglike)<br>Analytic function 2 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf3](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf)**(double & loglike)<br>Analytic function 3 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf4](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf)**(double & loglike)<br>Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf1](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf1)**(double & loglike)<br>Analytic function 1 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf2](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf2)**(double & loglike)<br>Analytic function 2 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf3](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf3)**(double & loglike)<br>Analytic function 3 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf4](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-tf4)**(double & loglike)<br>Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
 
 ## Types Documentation
 
@@ -243,4 +243,4 @@ Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/ab
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

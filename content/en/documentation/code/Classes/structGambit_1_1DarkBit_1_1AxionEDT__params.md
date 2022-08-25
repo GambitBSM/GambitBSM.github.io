@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[ma0](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-ma)**  |
+| double | **[ma0](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-ma0)**  |
 | double | **[beta](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-beta)**  |
 | double | **[Tchi](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-tchi)**  |
 | double | **[thetai](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-thetai)**  |
@@ -63,4 +63,4 @@ double Tosc;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

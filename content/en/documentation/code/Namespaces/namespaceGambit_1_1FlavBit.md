@@ -44,8 +44,8 @@ description: "[No description available]"
 | Utils::translator | **[translate_flav_obs](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-translate-flav-obs)**(GAMBIT_DIR "/FlavBit/data/observables_key.yaml" )<br>FlavBit observable name translator.  |
 | const [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)(& | **[nuiscorr_help](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-nuiscorr-help)**([nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)(&) arr[ncorrnuis], const std::vector< [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) > & v) |
 | void | **[print](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-print)**(flav_prediction prediction, vector< std::string > names)<br>Print function for FlavBit predictions.  |
-| void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theoryexperiment-translation)**(flav_observable_map & prediction, int generation)<br>Translate B->K*ll observables from theory to LHCb convention.  |
-| void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theoryexperiment-translation)**(flav_covariance_map & prediction, int generation)<br>Translate B->K*ll covariances from theory to LHCb convention.  |
+| void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theory2experiment-translation)**(flav_observable_map & prediction, int generation)<br>Translate B->K*ll observables from theory to LHCb convention.  |
+| void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theory2experiment-translation)**(flav_covariance_map & prediction, int generation)<br>Translate B->K*ll covariances from theory to LHCb convention.  |
 | str | **[path_to_latest_heplike_data](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-path-to-latest-heplike-data)**()<br>Find the path to the latest installed version of the HepLike data.  |
 | void | **[SuperIso_fill](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-fill)**([parameters](/documentation/code/classes/structgambit_1_1parameters/) & result)<br>Fill SuperIso model info structure.  |
 | void | **[SuperIso_nuisance_fill](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-nuisance-fill)**([nuisance](/documentation/code/classes/structgambit_1_1nuisance/) & nuislist)<br>Fill SuperIso nuisance structure.  |
@@ -75,13 +75,13 @@ description: "[No description available]"
 | void | **[SuperIso_prediction_RD](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-rd)**(double & result)<br>B-> D tau nu / B-> D e nu decays.  |
 | void | **[SuperIso_prediction_RDstar](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-rdstar)**(double & result)<br>B->D* tau nu / B-> D* e nu decays.  |
 | void | **[SuperIso_prediction_Rmu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-rmu)**(double & result)<br>B->K mu nu / B-> pi mu nu.  |
-| void | **[SuperIso_prediction_Rmu23](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-rmu)**(double & result)<br>2-to-3-body decay ratio for semileptonic K and pi decays  |
-| void | **[SuperIso_prediction_delta0](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-delta)**(double & result)<br>Delta_0 (CP-averaged isospin asymmetry of B -> K* gamma)  |
+| void | **[SuperIso_prediction_Rmu23](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-rmu23)**(double & result)<br>2-to-3-body decay ratio for semileptonic K and pi decays  |
+| void | **[SuperIso_prediction_delta0](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-delta0)**(double & result)<br>Delta_0 (CP-averaged isospin asymmetry of B -> K* gamma)  |
 | void | **[SuperIso_prediction_A_BXsmumu_zero](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-a-bxsmumu-zero)**(double & result)<br>Zero crossing of the forward-backward asymmetry of B -> X_s mu mu.  |
-| void | **[SuperIso_prediction_BRBXstautau_highq2](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-brbxstautau-highq)**(double & result)<br>Inclusive branching fraction B -> X_s tau tau at high q^2.  |
-| void | **[SuperIso_prediction_A_BXstautau_highq2](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-a-bxstautau-highq)**(double & result)<br>Forward-backward asymmetry of B -> X_s tau tau at high q^2.  |
-| void | **[RHN_RKstar_0045_11](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-rkstar)**(double & result) |
-| void | **[RHN_RKstar_11_60](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-rkstar)**(double & result) |
+| void | **[SuperIso_prediction_BRBXstautau_highq2](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-brbxstautau-highq2)**(double & result)<br>Inclusive branching fraction B -> X_s tau tau at high q^2.  |
+| void | **[SuperIso_prediction_A_BXstautau_highq2](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-a-bxstautau-highq2)**(double & result)<br>Forward-backward asymmetry of B -> X_s tau tau at high q^2.  |
+| void | **[RHN_RKstar_0045_11](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-rkstar-0045-11)**(double & result) |
+| void | **[RHN_RKstar_11_60](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-rkstar-11-60)**(double & result) |
 | void | **[RHN_RK](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-rk)**(double & result)<br>RK for RHN.  |
 | void | **[SuperIso_prediction_AI_BKstarmumu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-ai-bkstarmumu)**(double & result)<br>Isospin asymmetry of B-> K* mu mu.  |
 | void | **[SuperIso_prediction_AI_BKstarmumu_zero](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-ai-bkstarmumu-zero)**(double & result)<br>Zero crossing of isospin asymmetry of B-> K* mu mu.  |
@@ -93,7 +93,7 @@ description: "[No description available]"
 | void | **[RHN_muegamma](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-muegamma)**(double & result) |
 | void | **[RHN_tauegamma](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-tauegamma)**(double & result) |
 | void | **[RHN_taumugamma](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taumugamma)**(double & result) |
-| double | **[RHN_l2lll](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-llll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix3cd Vnu, Eigen::Matrix3cd Theta, Eigen::Matrix3cd m_nu, double M1, double M2, double M3, double mH) |
+| double | **[RHN_l2lll](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-l2lll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix3cd Vnu, Eigen::Matrix3cd Theta, Eigen::Matrix3cd m_nu, double M1, double M2, double M3, double mH) |
 | void | **[RHN_mueee](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mueee)**(double & result) |
 | void | **[RHN_taueee](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taueee)**(double & result) |
 | void | **[RHN_taumumumu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taumumumu)**(double & result) |
@@ -105,24 +105,24 @@ description: "[No description available]"
 | void | **[RHN_mueTi](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mueti)**(double & result) |
 | void | **[RHN_mueAu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mueau)**(double & result) |
 | void | **[RHN_muePb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-muepb)**(double & result) |
-| void | **[l2lgamma_likelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-llgamma-likelihood)**(double & result)<br>Likelihood for l -> l gamma processes.  |
-| void | **[l2lll_likelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-llll-likelihood)**(double & result)<br>Likelihood for l -> l l l processes.  |
-| void | **[mu2e_likelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-mue-likelihood)**(double & result)<br>Likelihood for mu - e conversion in nuclei.  |
+| void | **[l2lgamma_likelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-l2lgamma-likelihood)**(double & result)<br>Likelihood for l -> l gamma processes.  |
+| void | **[l2lll_likelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-l2lll-likelihood)**(double & result)<br>Likelihood for l -> l l l processes.  |
+| void | **[mu2e_likelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-mu2e-likelihood)**(double & result)<br>Likelihood for mu - e conversion in nuclei.  |
 | void | **[HEPLike_RDRDstar_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-rdrdstar-loglikelihood)**(double & result)<br>HEPLike LogLikelihood RD RDstar.  |
-| void | **[HEPLike_B2mumu_LogLikelihood_CMS](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bmumu-loglikelihood-cms)**(double & result) |
-| void | **[HEPLike_B2mumu_LogLikelihood_Atlas](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bmumu-loglikelihood-atlas)**(double & result) |
-| void | **[HEPLike_B2mumu_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bmumu-loglikelihood-lhcb)**(double & result) |
-| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_Atlas](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkstarmumuang-loglikelihood-atlas)**(double & result) |
-| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_CMS](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkstarmumuang-loglikelihood-cms)**(double & result) |
-| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_Belle](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkstarmumuang-loglikelihood-belle)**(double & result) |
-| void | **[HEPLike_B2KstarellellAng_LogLikelihood_Belle](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkstarellellang-loglikelihood-belle)**(double & result) |
-| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkstarmumuang-loglikelihood-lhcb)**(double & result) |
-| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_LHCb_2020](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkstarmumuang-loglikelihood-lhcb)**(double & result) |
-| void | **[HEPLike_B2KstareeAng_Lowq2_LogLikelihood_LHCb_2020](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkstareeang-lowq-loglikelihood-lhcb)**(double & result) |
-| void | **[HEPLike_Bu2KstarmumuAng_LogLikelihood_LHCb_2020](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bukstarmumuang-loglikelihood-lhcb)**(double & result) |
-| void | **[HEPLike_B2KstarmumuBr_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkstarmumubr-loglikelihood-lhcb)**(double & result)<br>HEPLike LogLikelihood B -> K* mu mu Br (LHCb)  |
-| void | **[HEPLike_B2KmumuBr_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bkmumubr-loglikelihood-lhcb)**(double & result)<br>HEPLike LogLikelihood B -> K+ mu mu Br (LHCb)  |
-| void | **[HEPLike_Bs2phimumuBr_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bsphimumubr-loglikelihood)**(double & result) |
+| void | **[HEPLike_B2mumu_LogLikelihood_CMS](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2mumu-loglikelihood-cms)**(double & result) |
+| void | **[HEPLike_B2mumu_LogLikelihood_Atlas](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2mumu-loglikelihood-atlas)**(double & result) |
+| void | **[HEPLike_B2mumu_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2mumu-loglikelihood-lhcb)**(double & result) |
+| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_Atlas](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstarmumuang-loglikelihood-atlas)**(double & result) |
+| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_CMS](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstarmumuang-loglikelihood-cms)**(double & result) |
+| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_Belle](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstarmumuang-loglikelihood-belle)**(double & result) |
+| void | **[HEPLike_B2KstarellellAng_LogLikelihood_Belle](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstarellellang-loglikelihood-belle)**(double & result) |
+| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstarmumuang-loglikelihood-lhcb)**(double & result) |
+| void | **[HEPLike_B2KstarmumuAng_LogLikelihood_LHCb_2020](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstarmumuang-loglikelihood-lhcb-2020)**(double & result) |
+| void | **[HEPLike_B2KstareeAng_Lowq2_LogLikelihood_LHCb_2020](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstareeang-lowq2-loglikelihood-lhcb-2020)**(double & result) |
+| void | **[HEPLike_Bu2KstarmumuAng_LogLikelihood_LHCb_2020](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bu2kstarmumuang-loglikelihood-lhcb-2020)**(double & result) |
+| void | **[HEPLike_B2KstarmumuBr_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstarmumubr-loglikelihood-lhcb)**(double & result)<br>HEPLike LogLikelihood B -> K* mu mu Br (LHCb)  |
+| void | **[HEPLike_B2KmumuBr_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kmumubr-loglikelihood-lhcb)**(double & result)<br>HEPLike LogLikelihood B -> K+ mu mu Br (LHCb)  |
+| void | **[HEPLike_Bs2phimumuBr_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bs2phimumubr-loglikelihood)**(double & result) |
 | void | **[HEPLike_RK_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-rk-loglikelihood)**(double & result) |
 | void | **[HEPLike_RKstar_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-rkstar-loglikelihood-lhcb)**(double & result) |
 
@@ -135,17 +135,17 @@ description: "[No description available]"
 | const int | **[ncorrnuis](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-ncorrnuis)** <br>Some constants used in SuperIso likelihoods.  |
 | [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)[ncorrnuis] | **[arr](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-arr)**  |
 | const [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)(&)[ncorrnuis] | **[corrnuis](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-corrnuis)**  |
-| | **[_0p1_2](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p)**  |
-| _Atlas | **[_4_8](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-)**  |
-| _Atlas _Atlas | **[_2_4p3](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p)**  |
-| _Atlas _Atlas _CMS | **[_6_8p68](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p)**  |
-| _Atlas _Atlas _CMS _CMS | **[_14p18_16](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p)**  |
-| _Atlas _Atlas _CMS _CMS _CMS | **[_0p1_4](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p)**  |
-| _Atlas _Atlas _CMS _CMS _CMS _Belle | **[_10p9_12p9](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p-p)**  |
-| _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle | **[_0p1_0p98](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p-p)**  |
-| _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb | **[_2p5_4](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p)**  |
-| _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb _LHCb | **[_6_8](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-)**  |
-| _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb _LHCb _LHCb | **[_0p0008_0p257](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable--p-p)**  |
+| | **[_0p1_2](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-0p1-2)**  |
+| _Atlas | **[_4_8](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-4-8)**  |
+| _Atlas _Atlas | **[_2_4p3](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-2-4p3)**  |
+| _Atlas _Atlas _CMS | **[_6_8p68](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-6-8p68)**  |
+| _Atlas _Atlas _CMS _CMS | **[_14p18_16](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-14p18-16)**  |
+| _Atlas _Atlas _CMS _CMS _CMS | **[_0p1_4](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-0p1-4)**  |
+| _Atlas _Atlas _CMS _CMS _CMS _Belle | **[_10p9_12p9](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-10p9-12p9)**  |
+| _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle | **[_0p1_0p98](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-0p1-0p98)**  |
+| _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb | **[_2p5_4](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-2p5-4)**  |
+| _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb _LHCb | **[_6_8](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-6-8)**  |
+| _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb _LHCb _LHCb | **[_0p0008_0p257](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-0p0008-0p257)**  |
 
 
 ## Functions Documentation
@@ -1232,4 +1232,4 @@ _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb _LHCb _LHCb _0p0008_0p257;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

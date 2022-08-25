@@ -41,16 +41,16 @@ description: "[No description available]"
 |  | **[BRoffset](/documentation/code/files/feynhiggs_8hpp/#define-broffset)**  |
 |  | **[ngammasms](/documentation/code/files/feynhiggs_8hpp/#define-ngammasms)**  |
 |  | **[BRSMoffset](/documentation/code/files/feynhiggs_8hpp/#define-brsmoffset)**  |
-|  | **[H0VV](/documentation/code/files/feynhiggs_8hpp/#define-hvv)**(h, vv)  |
-|  | **[H0FF](/documentation/code/files/feynhiggs_8hpp/#define-hff)**(h, t, g1, g2)  |
+|  | **[H0VV](/documentation/code/files/feynhiggs_8hpp/#define-h0vv)**(h, vv)  |
+|  | **[H0FF](/documentation/code/files/feynhiggs_8hpp/#define-h0ff)**(h, t, g1, g2)  |
 |  | **[HpFF](/documentation/code/files/feynhiggs_8hpp/#define-hpff)**(p, g1, g2)  |
-|  | **[H0ChaCha](/documentation/code/files/feynhiggs_8hpp/#define-hchacha)**(h, c1, c2)  |
-|  | **[H0NeuNeu](/documentation/code/files/feynhiggs_8hpp/#define-hneuneu)**(h, n1, n2)  |
+|  | **[H0ChaCha](/documentation/code/files/feynhiggs_8hpp/#define-h0chacha)**(h, c1, c2)  |
+|  | **[H0NeuNeu](/documentation/code/files/feynhiggs_8hpp/#define-h0neuneu)**(h, n1, n2)  |
 |  | **[HpNeuCha](/documentation/code/files/feynhiggs_8hpp/#define-hpneucha)**(n1, c2)  |
-|  | **[H0HV](/documentation/code/files/feynhiggs_8hpp/#define-hhv)**(h, hv)  |
+|  | **[H0HV](/documentation/code/files/feynhiggs_8hpp/#define-h0hv)**(h, hv)  |
 |  | **[HpHV](/documentation/code/files/feynhiggs_8hpp/#define-hphv)**(hv)  |
-|  | **[H0HH](/documentation/code/files/feynhiggs_8hpp/#define-hhh)**(h, h1, h2)  |
-|  | **[H0SfSf](/documentation/code/files/feynhiggs_8hpp/#define-hsfsf)**(h, s1, s2, t, g)  |
+|  | **[H0HH](/documentation/code/files/feynhiggs_8hpp/#define-h0hh)**(h, h1, h2)  |
+|  | **[H0SfSf](/documentation/code/files/feynhiggs_8hpp/#define-h0sfsf)**(h, s1, s2, t, g)  |
 |  | **[HpSfSf](/documentation/code/files/feynhiggs_8hpp/#define-hpsfsf)**(s1, s2, p, g1, g2)  |
 |  | **[tBF](/documentation/code/files/feynhiggs_8hpp/#define-tbf)**(bf)  |
 |  | **[nprodxs](/documentation/code/files/feynhiggs_8hpp/#define-nprodxs)**  |
@@ -59,7 +59,7 @@ description: "[No description available]"
 |  | **[btagbh](/documentation/code/files/feynhiggs_8hpp/#define-btagbh)**(h)  |
 |  | **[btagbhSM](/documentation/code/files/feynhiggs_8hpp/#define-btagbhsm)**(h)  |
 |  | **[ggh](/documentation/code/files/feynhiggs_8hpp/#define-ggh)**(h)  |
-|  | **[ggh2](/documentation/code/files/feynhiggs_8hpp/#define-ggh)**(h)  |
+|  | **[ggh2](/documentation/code/files/feynhiggs_8hpp/#define-ggh2)**(h)  |
 |  | **[gghSM](/documentation/code/files/feynhiggs_8hpp/#define-gghsm)**(h)  |
 |  | **[qqh](/documentation/code/files/feynhiggs_8hpp/#define-qqh)**(h)  |
 |  | **[qqhSM](/documentation/code/files/feynhiggs_8hpp/#define-qqhsm)**(h)  |
@@ -71,9 +71,9 @@ description: "[No description available]"
 |  | **[ZhSM](/documentation/code/files/feynhiggs_8hpp/#define-zhsm)**(h)  |
 |  | **[StSth](/documentation/code/files/feynhiggs_8hpp/#define-ststh)**(h)  |
 |  | **[tHm](/documentation/code/files/feynhiggs_8hpp/#define-thm)**  |
-|  | **[tHm2](/documentation/code/files/feynhiggs_8hpp/#define-thm)**  |
-|  | **[tHm2lo](/documentation/code/files/feynhiggs_8hpp/#define-thmlo)**  |
-|  | **[tHm2hi](/documentation/code/files/feynhiggs_8hpp/#define-thmhi)**  |
+|  | **[tHm2](/documentation/code/files/feynhiggs_8hpp/#define-thm2)**  |
+|  | **[tHm2lo](/documentation/code/files/feynhiggs_8hpp/#define-thm2lo)**  |
+|  | **[tHm2hi](/documentation/code/files/feynhiggs_8hpp/#define-thm2hi)**  |
 
 ## Detailed Description
 
@@ -795,4 +795,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

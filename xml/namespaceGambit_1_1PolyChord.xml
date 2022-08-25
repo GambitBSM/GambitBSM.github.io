@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1PolyChord" kind="namespace" language="C++">
+    <compoundname>Gambit::PolyChord</compoundname>
+    <innerclass refid="classGambit_1_1PolyChord_1_1LogLikeWrapper" prot="public">Gambit::PolyChord::LogLikeWrapper</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="polychord_8hpp_1a0a8ac0d55cb182f69ab5f0d7e9be11ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::PolyChord::callback_loglike</definition>
+        <argsstring>(double *, int, double *, int)</argsstring>
+        <name>callback_loglike</name>
+        <qualifiedname>Gambit::PolyChord::callback_loglike</qualifiedname>
+        <param>
+          <type>double *</type>
+          <defname>Cube</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ndim</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>phi</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nderived</defname>
+        </param>
+        <briefdescription>
+<para>C-functions to pass to PolyChord for the callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Plain-vanilla functions to pass to PolyChord for the callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/src/scanners/polychord_1.17.1/polychord.cpp" line="255" column="14" bodyfile="ScannerBit/src/scanners/polychord_1.17.1/polychord.cpp" bodystart="255" bodyend="261" declfile="ScannerBit/include/gambit/ScannerBit/scanners/polychord/polychord.hpp" declline="126" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="polychord_8hpp_1a27e226c271b04f022c4b5f152a72c240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::PolyChord::callback_dumper</definition>
+        <argsstring>(int, int, int, double *, double *, double *, double, double)</argsstring>
+        <name>callback_dumper</name>
+        <qualifiedname>Gambit::PolyChord::callback_dumper</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>ndead</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nlive</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>npars</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>live</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>dead</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>logweights</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>logZ</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>logZerr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/src/scanners/polychord_1.17.1/polychord.cpp" line="263" column="12" bodyfile="ScannerBit/src/scanners/polychord_1.17.1/polychord.cpp" bodystart="263" bodyend="269" declfile="ScannerBit/include/gambit/ScannerBit/scanners/polychord/polychord.hpp" declline="127" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="polychord_8hpp_1a1d5ec988fdb20f8807d66b9a69dc8fe0" prot="public" static="no">
+        <type><ref refid="classGambit_1_1Scanner_1_1like__ptr" kindref="compound">Gambit::Scanner::like_ptr</ref></type>
+        <definition>typedef Gambit::Scanner::like_ptr Gambit::PolyChord::scanPtr</definition>
+        <argsstring></argsstring>
+        <name>scanPtr</name>
+        <qualifiedname>Gambit::PolyChord::scanPtr</qualifiedname>
+        <briefdescription>
+<para>Typedef for the ScannerBit pointer to the external loglikelihood function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/polychord/polychord.hpp" line="84" column="41" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/polychord/polychord.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="polychord__1_817_81_2polychord_8cpp_1a136bac5162654cc9d9475d886b551657" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1PolyChord_1_1LogLikeWrapper" kindref="compound">LogLikeWrapper</ref> *</type>
+        <definition>LogLikeWrapper * Gambit::PolyChord::global_loglike_object</definition>
+        <argsstring></argsstring>
+        <name>global_loglike_object</name>
+        <qualifiedname>Gambit::PolyChord::global_loglike_object</qualifiedname>
+        <briefdescription>
+<para>Global pointer to loglikelihood wrapper object, for use in the PolyChord callback functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/src/scanners/polychord_1.17.1/polychord.cpp" line="47" column="22" bodyfile="ScannerBit/src/scanners/polychord_1.17.1/polychord.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ScannerBit/include/gambit/ScannerBit/scanners/polychord/polychord.hpp" line="80" column="4"/>
+  </compounddef>
+</doxygen>

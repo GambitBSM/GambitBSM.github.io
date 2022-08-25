@@ -20,9 +20,9 @@ A simple container for a point on an xy plane.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p)**()<br>Default constructor.  |
-| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p)**(double x, double y)<br>Coordinate constructor.  |
-| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other)<br>Copy constructor.  |
+| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p2)**()<br>Default constructor.  |
+| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p2)**(double x, double y)<br>Coordinate constructor.  |
+| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p2)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other)<br>Copy constructor.  |
 | [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-operator)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other)<br>Copy assignment operator.  |
 | [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[setx](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-setx)**(double x) |
 | [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[sety](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-sety)**(double y) |
@@ -185,4 +185,4 @@ inline P2 & operator/=(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

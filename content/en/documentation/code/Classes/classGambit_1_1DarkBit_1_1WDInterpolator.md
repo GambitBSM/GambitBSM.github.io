@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[WDInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1wdinterpolator/#function-wdinterpolator)**(const std::vector< double > x, const std::vector< double > y, std::string correction_file, [InterpolationOptions1D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptionsd) type =InterpolationOptions1D::linear) |
+| | **[WDInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1wdinterpolator/#function-wdinterpolator)**(const std::vector< double > x, const std::vector< double > y, std::string correction_file, [InterpolationOptions1D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptions1d) type =InterpolationOptions1D::linear) |
 | double | **[evaluate](/documentation/code/classes/classgambit_1_1darkbit_1_1wdinterpolator/#function-evaluate)**(double mrel, double x2) |
 
 ## Public Functions Documentation
@@ -47,4 +47,4 @@ inline double evaluate(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

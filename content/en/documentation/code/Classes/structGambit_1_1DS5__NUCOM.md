@@ -19,9 +19,9 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | Farray< Fdouble, 1, 29 > | **[wabr](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wabr)**  |
-| Farray< Fdouble, 1, 29, 1, 3 > | **[was0br](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wasbr)**  |
+| Farray< Fdouble, 1, 29, 1, 3 > | **[was0br](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-was0br)**  |
 | Farray< Fdouble, 1, 15 > | **[wascbr](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wascbr)**  |
-| Farray< Fdouble, 1, 3 > | **[was0m](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wasm)**  |
+| Farray< Fdouble, 1, 3 > | **[was0m](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-was0m)**  |
 | Fdouble | **[wascm](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wascm)**  |
 | Fdouble | **[wamwimp](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wamwimp)**  |
 | Fdouble | **[wasv](/documentation/code/classes/structgambit_1_1ds5__nucom/#variable-wasv)**  |
@@ -103,4 +103,4 @@ Flogical dswasetupcalled;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

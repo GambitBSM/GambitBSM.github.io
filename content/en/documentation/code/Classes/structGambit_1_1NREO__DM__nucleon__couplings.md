@@ -30,8 +30,8 @@ Container for effective non-relativistic DM-nucleon Wilson coefficients.
 |                | Name           |
 | -------------- | -------------- |
 | int | **[CPTbasis](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#variable-cptbasis)**  |
-| std::map< int, double > | **[c0](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#variable-c)** <br>Store couplings in map for easier iteration.  |
-| std::map< int, double > | **[c1](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#variable-c)**  |
+| std::map< int, double > | **[c0](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#variable-c0)** <br>Store couplings in map for easier iteration.  |
+| std::map< int, double > | **[c1](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#variable-c1)**  |
 
 ## Public Functions Documentation
 
@@ -99,4 +99,4 @@ std::map< int, double > c1;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

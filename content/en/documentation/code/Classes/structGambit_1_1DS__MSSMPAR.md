@@ -20,15 +20,15 @@ description: "[No description available]"
 | -------------- | -------------- |
 | Fdouble | **[tanbe](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-tanbe)**  |
 | Fdouble | **[mu](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-mu)**  |
-| Fdouble | **[m2](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-m)**  |
-| Fdouble | **[m1](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-m)**  |
-| Fdouble | **[m3](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-m)**  |
+| Fdouble | **[m2](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-m2)**  |
+| Fdouble | **[m1](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-m1)**  |
+| Fdouble | **[m3](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-m3)**  |
 | Fdouble | **[ma](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-ma)**  |
-| Farray< Fdouble, 1, 3 > | **[mass2u](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-massu)**  |
-| Farray< Fdouble, 1, 3 > | **[mass2q](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-massq)**  |
-| Farray< Fdouble, 1, 3 > | **[mass2d](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-massd)**  |
-| Farray< Fdouble, 1, 3 > | **[mass2l](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-massl)**  |
-| Farray< Fdouble, 1, 3 > | **[mass2e](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-masse)**  |
+| Farray< Fdouble, 1, 3 > | **[mass2u](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-mass2u)**  |
+| Farray< Fdouble, 1, 3 > | **[mass2q](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-mass2q)**  |
+| Farray< Fdouble, 1, 3 > | **[mass2d](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-mass2d)**  |
+| Farray< Fdouble, 1, 3 > | **[mass2l](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-mass2l)**  |
+| Farray< Fdouble, 1, 3 > | **[mass2e](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-mass2e)**  |
 | Farray< Fdouble, 1, 3 > | **[asoftu](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-asoftu)**  |
 | Farray< Fdouble, 1, 3 > | **[asoftd](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-asoftd)**  |
 | Farray< Fdouble, 1, 3 > | **[asofte](/documentation/code/classes/structgambit_1_1ds__mssmpar/#variable-asofte)**  |
@@ -135,4 +135,4 @@ Farray< Fdouble, 1, 3 > asofte;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

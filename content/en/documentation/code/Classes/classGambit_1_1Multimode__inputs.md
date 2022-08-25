@@ -37,8 +37,8 @@ Class containing the inputs used for inputs to MultiModeCode.
 | int | **[potential_choice](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-potential-choice)**  |
 | int | **[vparam_rows](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-vparam-rows)**  |
 | std::vector< double > | **[vparams](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-vparams)**  |
-| std::vector< double > | **[phi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-phi-init)**  |
-| std::vector< double > | **[dphi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-dphi-init)**  |
+| std::vector< double > | **[phi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-phi-init0)**  |
+| std::vector< double > | **[dphi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-dphi-init0)**  |
 | int | **[slowroll_infl_end](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-slowroll-infl-end)**  |
 | int | **[instreheat](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-instreheat)**  |
 | int | **[use_deltaN_SR](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-use-deltan-sr)**  |
@@ -192,4 +192,4 @@ int get_runningofrunning;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

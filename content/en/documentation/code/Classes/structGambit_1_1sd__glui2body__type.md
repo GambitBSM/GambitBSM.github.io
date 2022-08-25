@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[brgst1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgst)**  |
-| Fdouble | **[brgst2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgst)**  |
-| Fdouble | **[brgsb1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsb)**  |
-| Fdouble | **[brgsb2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsb)**  |
+| Fdouble | **[brgst1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgst1)**  |
+| Fdouble | **[brgst2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgst2)**  |
+| Fdouble | **[brgsb1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsb1)**  |
+| Fdouble | **[brgsb2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsb2)**  |
 | Fdouble | **[brgsupl](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsupl)**  |
 | Fdouble | **[brgsupr](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsupr)**  |
 | Fdouble | **[brgsdownl](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-brgsdownl)**  |
@@ -87,4 +87,4 @@ Fdouble brgsdownr;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

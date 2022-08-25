@@ -16,7 +16,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| namespace | **[CAT_3](/documentation/code/files/wrapper__coupsm__decl_8h/#function-cat)**(BACKENDNAME , _ , SAFE_VERSION ) |
+| namespace | **[CAT_3](/documentation/code/files/wrapper__coupsm__decl_8h/#function-cat-3)**(BACKENDNAME , _ , SAFE_VERSION ) |
 
 
 ## Functions Documentation
@@ -160,4 +160,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

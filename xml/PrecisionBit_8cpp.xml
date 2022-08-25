@@ -5,11 +5,15 @@
     <includes local="no">algorithm</includes>
     <includes local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
     <includes local="yes">gambit/Elements/smlike_higgs.hpp</includes>
-    <includes local="yes">gambit/PrecisionBit/PrecisionBit_rollcall.hpp</includes>
+    <includes refid="PrecisionBit__rollcall_8hpp" local="yes">gambit/PrecisionBit/PrecisionBit_rollcall.hpp</includes>
     <includes local="yes">gambit/Utils/statistics.hpp</includes>
     <includes local="yes">gambit/Elements/mssm_slhahelp.hpp</includes>
     <includes local="yes">gambit/Utils/util_functions.hpp</includes>
     <incdepgraph>
+      <node id="5">
+        <label>gambit/PrecisionBit/PrecisionBit_rollcall.hpp</label>
+        <link refid="PrecisionBit__rollcall_8hpp"/>
+      </node>
       <node id="1">
         <label>PrecisionBit.cpp</label>
         <link refid="PrecisionBit_8cpp"/>
@@ -39,9 +43,6 @@
       </node>
       <node id="4">
         <label>gambit/Elements/smlike_higgs.hpp</label>
-      </node>
-      <node id="5">
-        <label>gambit/PrecisionBit/PrecisionBit_rollcall.hpp</label>
       </node>
       <node id="6">
         <label>gambit/Utils/statistics.hpp</label>
@@ -167,7 +168,7 @@
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/gambit_module_headers.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/smlike_higgs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/PrecisionBit/PrecisionBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="PrecisionBit__rollcall_8hpp" kindref="compound">gambit/PrecisionBit/PrecisionBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/statistics.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/mssm_slhahelp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/util_functions.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -770,7 +771,7 @@
 <codeline lineno="644"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="645"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Basic<sp/>mass<sp/>extractors<sp/>for<sp/>different<sp/>types<sp/>of<sp/>spectra,<sp/>for<sp/>use<sp/>with<sp/>precision<sp/>likelihoods<sp/>and<sp/>other<sp/>things<sp/>not<sp/>needing<sp/>a<sp/>whole<sp/>spectrum<sp/>object.</highlight></codeline>
 <codeline lineno="646"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@{</highlight></codeline>
-<codeline lineno="647"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="PrecisionBit_8cpp_1a3c5422a37282540a3590a9392b10e9d6" kindref="member">mw_from_SM_spectrum</ref>(triplet&lt;double&gt;<sp/>&amp;result)</highlight></codeline>
+<codeline lineno="647"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mw_from_SM_spectrum(triplet&lt;double&gt;<sp/>&amp;result)</highlight></codeline>
 <codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mw_from_SM_spectrum;</highlight></codeline>
 <codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>LE<sp/>=<sp/>Dep::SM_spectrum-&gt;get_LE();</highlight></codeline>
@@ -875,7 +876,7 @@
 <codeline lineno="749"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>t<sp/>quark<sp/>mass<sp/>likelihood</highlight></codeline>
 <codeline lineno="750"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>m_t<sp/>(pole)<sp/>=<sp/>173.34<sp/>+/-<sp/>0.76<sp/>GeV<sp/>(1<sp/>sigma),<sp/>Gaussian.</highlight></codeline>
 <codeline lineno="751"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Reference:<sp/>http://arxiv.org/abs/1403.4427</highlight></codeline>
-<codeline lineno="752"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="PrecisionBit_8cpp_1a77c5f0f8488a64d6515046ec82964279" kindref="member">lnL_t_mass</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
+<codeline lineno="752"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lnL_t_mass(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
 <codeline lineno="753"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::lnL_t_mass;</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="755"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Option<sp/>profile_systematics&lt;bool&gt;:<sp/>Use<sp/>likelihood<sp/>version<sp/>that<sp/>has<sp/>been<sp/>profiled<sp/>over<sp/>systematic<sp/>errors<sp/>(default<sp/>false)</highlight></codeline>
@@ -917,7 +918,7 @@
 <codeline lineno="791"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>c<sp/>quark<sp/>mass<sp/>likelihood</highlight></codeline>
 <codeline lineno="792"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>m_c<sp/>(mc)^MSbar<sp/>=<sp/>1.28<sp/>+/-<sp/>0.03<sp/>GeV<sp/>(1<sp/>sigma),<sp/>Gaussian.</highlight></codeline>
 <codeline lineno="793"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/><sp/>Reference:<sp/>http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf<sp/>=<sp/>C.<sp/>Patrignani<sp/>et<sp/>al.<sp/>(Particle<sp/>Data<sp/>Group),<sp/>Chin.<sp/>Phys.<sp/>C,<sp/>40,<sp/>100001<sp/>(2016).</highlight></codeline>
-<codeline lineno="794"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="PrecisionBit_8cpp_1ae15aed0ddae505647078242cf79f202f" kindref="member">lnL_mcmc</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
+<codeline lineno="794"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lnL_mcmc(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
 <codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::lnL_mcmc;</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="797"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Option<sp/>profile_systematics&lt;bool&gt;:<sp/>Use<sp/>likelihood<sp/>version<sp/>that<sp/>has<sp/>been<sp/>profiled<sp/>over<sp/>systematic<sp/>errors<sp/>(default<sp/>false)</highlight></codeline>
@@ -931,7 +932,7 @@
 <codeline lineno="805"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>m_u/m_d<sp/>=<sp/>0.38-0.58</highlight></codeline>
 <codeline lineno="806"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>m_s<sp/>/<sp/>((m_u<sp/>+<sp/>m_d)/2)<sp/>=<sp/>27.3<sp/>+/-<sp/>0.7</highlight></codeline>
 <codeline lineno="807"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>m_s<sp/>=<sp/>(96<sp/>+/-<sp/>4)<sp/>MeV</highlight></codeline>
-<codeline lineno="808"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="PrecisionBit_8cpp_1af680a75294d6239e8b769b99aef1eff0" kindref="member">lnL_light_quark_masses</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
+<codeline lineno="808"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lnL_light_quark_masses<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
 <codeline lineno="809"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::lnL_light_quark_masses;</highlight></codeline>
 <codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SMInputs&amp;<sp/>SM<sp/>=<sp/>*Dep::SMINPUTS;</highlight></codeline>
@@ -966,7 +967,7 @@
 <codeline lineno="840"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>alpha_s(mZ)^MSbar<sp/>likelihood</highlight></codeline>
 <codeline lineno="841"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>alpha_s(mZ)^MSbar<sp/>=<sp/>0.1181<sp/>+/-<sp/>0.0011<sp/>(1<sp/>sigma),<sp/>Gaussian.</highlight></codeline>
 <codeline lineno="842"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Reference:<sp/>http://pdg.lbl.gov/2016/reviews/rpp2016-rev-qcd.pdf<sp/>=<sp/>C.<sp/>Patrignani<sp/>et<sp/>al.<sp/>(Particle<sp/>Data<sp/>Group),<sp/>Chin.<sp/>Phys.<sp/>C,<sp/>40,<sp/>100001<sp/>(2016).</highlight></codeline>
-<codeline lineno="843"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="PrecisionBit_8cpp_1a7707cfe067871ef4cdbe64ced102bc4e" kindref="member">lnL_alpha_s</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
+<codeline lineno="843"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lnL_alpha_s(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
 <codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::lnL_alpha_s;</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="846"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Option<sp/>profile_systematics&lt;bool&gt;:<sp/>Use<sp/>likelihood<sp/>version<sp/>that<sp/>has<sp/>been<sp/>profiled<sp/>over<sp/>systematic<sp/>errors<sp/>(default<sp/>false)</highlight></codeline>

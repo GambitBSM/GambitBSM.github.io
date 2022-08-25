@@ -25,7 +25,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | | **[BE_INI_FUNCTION](/documentation/code/files/captngeneral__2__1_8cpp/#variable-be-ini-function)**  |
-| double | **[v0](/documentation/code/files/captngeneral__2__1_8cpp/#variable-v)**  |
+| double | **[v0](/documentation/code/files/captngeneral__2__1_8cpp/#variable-v0)**  |
 | double | **[vsun](/documentation/code/files/captngeneral__2__1_8cpp/#variable-vsun)**  |
 | double | **[vesc](/documentation/code/files/captngeneral__2__1_8cpp/#variable-vesc)**  |
 | const int | **[clen](/documentation/code/files/captngeneral__2__1_8cpp/#variable-clen)**  |
@@ -180,4 +180,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:32 +0000
+Updated on 2022-08-25 at 17:16:29 +0000

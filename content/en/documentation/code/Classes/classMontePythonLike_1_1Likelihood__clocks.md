@@ -20,9 +20,9 @@ Inherits from [MontePythonLike.Likelihood](/documentation/code/classes/classmont
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__clocks/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__clocks/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__clocks/#function-loglkl)**(self self, cosmo cosmo, data data) |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__clocks/#function--init)**(self self, path path, data data, command_line command_line) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood__clocks/#function-init)**(self self, path path, data data, command_line command_line) |
 | def | **[loglkl](/documentation/code/classes/classmontepythonlike_1_1likelihood__clocks/#function-loglkl)**(self self, cosmo cosmo, data data) |
 
 ## Public Attributes
@@ -136,7 +136,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)
 
 
 
@@ -194,7 +194,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function--init)
+**Reimplements**: [MontePythonLike::Likelihood::__init__](/documentation/code/classes/classmontepythonlike_1_1likelihood/#function-init)
 
 
 
@@ -265,4 +265,4 @@ err;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

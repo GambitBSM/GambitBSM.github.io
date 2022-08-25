@@ -19,7 +19,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | double | **[rs](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-rs)**  |
-| double | **[ma0](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-ma)**  |
+| double | **[ma0](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-ma0)**  |
 | [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) * | **[sol](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-sol)**  |
 | [AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/) * | **[eff_exp](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params3/#variable-eff-exp)**  |
 
@@ -55,4 +55,4 @@ AxionInterpolator * eff_exp;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

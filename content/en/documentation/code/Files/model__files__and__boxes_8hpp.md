@@ -16,8 +16,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ALGORITHM1](/documentation/code/files/model__files__and__boxes_8hpp/#define-algorithm)**  |
-|  | **[ALGORITHM1l](/documentation/code/files/model__files__and__boxes_8hpp/#define-algorithml)**  |
+|  | **[ALGORITHM1](/documentation/code/files/model__files__and__boxes_8hpp/#define-algorithm1)**  |
+|  | **[ALGORITHM1l](/documentation/code/files/model__files__and__boxes_8hpp/#define-algorithm1l)**  |
 |  | **[MAKE_INTERFACE](/documentation/code/files/model__files__and__boxes_8hpp/#define-make-interface)**  |
 |  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
 |  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
@@ -456,4 +456,4 @@ All the includes and Model_interface definitions Have now moved the MAKE_INTERFA
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

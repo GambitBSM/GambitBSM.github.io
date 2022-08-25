@@ -25,7 +25,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double[4] | **[pb1](/documentation/code/classes/structmy__func/#variable-pb)**  |
+| double[4] | **[pb1](/documentation/code/classes/structmy__func/#variable-pb1)**  |
 | double[4] | **[pl](/documentation/code/classes/structmy__func/#variable-pl)**  |
 | double[4] | **[pMET](/documentation/code/classes/structmy__func/#variable-pmet)**  |
 | double | **[sigmat](/documentation/code/classes/structmy__func/#variable-sigmat)**  |
@@ -104,4 +104,4 @@ double sign;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

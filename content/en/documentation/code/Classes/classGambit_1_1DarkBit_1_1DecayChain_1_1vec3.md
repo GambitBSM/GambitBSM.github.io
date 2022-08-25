@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec)**() |
-| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec)**(double v0, double v1, double v2) |
-| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec)**(double v0) |
+| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**() |
+| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**(double v0, double v1, double v2) |
+| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-vec3)**(double v0) |
 | double | **[length](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-length)**() const |
 | void | **[normalize](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-normalize)**() |
 | void | **[normalize](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-normalize)**(const double len) |
@@ -122,4 +122,4 @@ double[3] vals;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

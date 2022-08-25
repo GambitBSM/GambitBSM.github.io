@@ -24,8 +24,8 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[BE_NAMESPACE](/documentation/code/files/darksusy__generic__wimp__6__2__5_8cpp/#variable-be-namespace)**  |
 | double | **[anmwimp](/documentation/code/files/darksusy__generic__wimp__6__2__5_8cpp/#variable-anmwimp)**  |
-| std::vector< int > | **[DSanpdg1](/documentation/code/files/darksusy__generic__wimp__6__2__5_8cpp/#variable-dsanpdg)**  |
-| std::vector< int > | **[DSanpdg2](/documentation/code/files/darksusy__generic__wimp__6__2__5_8cpp/#variable-dsanpdg)**  |
+| std::vector< int > | **[DSanpdg1](/documentation/code/files/darksusy__generic__wimp__6__2__5_8cpp/#variable-dsanpdg1)**  |
+| std::vector< int > | **[DSanpdg2](/documentation/code/files/darksusy__generic__wimp__6__2__5_8cpp/#variable-dsanpdg2)**  |
 | [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/darksusy__generic__wimp__6__2__5_8cpp/#variable-be-ini-function)**  |
 
 ## Detailed Description
@@ -441,4 +441,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:32 +0000
+Updated on 2022-08-25 at 17:16:29 +0000

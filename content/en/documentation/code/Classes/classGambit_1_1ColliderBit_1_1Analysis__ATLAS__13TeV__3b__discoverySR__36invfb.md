@@ -20,7 +20,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_36invfb](/documentat
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_ATLAS_13TeV_3b_discoverySR_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__36invfb/#function-analysis-atlas-tev-b-discoverysr-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_3b_discoverySR_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__36invfb/#function-analysis-atlas-13tev-3b-discoverysr-36invfb)**() |
 | virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__36invfb/#function-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
@@ -30,7 +30,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_36invfb](/documentat
 |                | Name           |
 | -------------- | -------------- |
 | bool | **[sortByPT](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/#function-sortbypt)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
-| | **[Analysis_ATLAS_13TeV_3b_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/#function-analysis-atlas-tev-b-invfb)**() |
+| | **[Analysis_ATLAS_13TeV_3b_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/#function-analysis-atlas-13tev-3b-36invfb)**() |
 | void | **[JetLeptonOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/#function-jetleptonoverlapremoval)**(vector< const HEPUtils::Jet * > & jetvec, vector< const HEPUtils::Particle * > & lepvec, double DeltaRMax) |
 | void | **[LeptonJetOverlapRemoval](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/#function-leptonjetoverlapremoval)**(vector< const HEPUtils::Particle * > & lepvec, vector< const HEPUtils::Jet * > & jetvec) |
 | double | **[mTrans](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/#function-mtrans)**(HEPUtils::P4 pmiss, HEPUtils::P4 jet) |
@@ -48,7 +48,7 @@ Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_36invfb](/documentat
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/#variable--counters)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/#variable-counters)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
@@ -104,4 +104,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

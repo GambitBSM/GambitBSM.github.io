@@ -18,12 +18,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt)**() |
-| void | **[mt2_bisect](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt-bisect)**() |
-| void | **[mt2_massless](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt-massless)**() |
+| | **[mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2)**() |
+| void | **[mt2_bisect](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisect)**() |
+| void | **[mt2_massless](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-massless)**() |
 | void | **[set_momenta](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-set-momenta)**(double * pa0, double * pb0, double * pmiss0) |
 | void | **[set_mn](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-set-mn)**(double mn) |
-| double | **[get_mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-get-mt)**() |
+| double | **[get_mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-get-mt2)**() |
 | void | **[print](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-print)**() |
 
 ## Public Attributes
@@ -100,4 +100,4 @@ int nevt;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

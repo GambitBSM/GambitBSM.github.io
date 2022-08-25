@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-vec)**() |
-| | **[vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-vec)**(double v0, double v1, double v2, double v3) |
-| | **[vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-vec)**(double v0) |
-| | **[vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-vec)**(double v0, [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) v) |
+| | **[vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-vec4)**() |
+| | **[vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-vec4)**(double v0, double v1, double v2, double v3) |
+| | **[vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-vec4)**(double v0) |
+| | **[vec4](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-vec4)**(double v0, [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) v) |
 | [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) | **[xyz](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-xyz)**() const |
 | double & | **[operator[]](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-operator)**(int i) |
 | double | **[operator[]](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec4/#function-operator)**(int i) const |
@@ -116,4 +116,4 @@ double[4] vals;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

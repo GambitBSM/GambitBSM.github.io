@@ -337,7 +337,7 @@
         <param><defname>ARGSLIST</defname></param>
         <param><defname>SYMBOLNAMES</defname></param>
         <param><defname>CAPABILITY</defname></param>
-        <initializer>  <ref refid="frontend__macros_8hpp_1abc123472094052f9bdb66b0740e383de" kindref="member">BE_FUNCTION_I</ref>(NAME, TYPE, ARGSLIST, SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, (), &quot;&quot;)</initializer>
+        <initializer>  <ref refid="frontend__macros_8hpp_1abc123472094052f9bdb66b0740e383de" kindref="member">BE_FUNCTION_I</ref>(NAME, TYPE, ARGSLIST, SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, (), &quot;&quot;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -354,7 +354,7 @@
         <param><defname>SYMBOLNAMES</defname></param>
         <param><defname>CAPABILITY</defname></param>
         <param><defname>MODELS</defname></param>
-        <initializer>  <ref refid="frontend__macros_8hpp_1abc123472094052f9bdb66b0740e383de" kindref="member">BE_FUNCTION_I</ref>(NAME, TYPE, ARGSLIST, SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS, &quot;&quot;)</initializer>
+        <initializer>  <ref refid="frontend__macros_8hpp_1abc123472094052f9bdb66b0740e383de" kindref="member">BE_FUNCTION_I</ref>(NAME, TYPE, ARGSLIST, SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS, &quot;&quot;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -372,7 +372,7 @@
         <param><defname>CAPABILITY</defname></param>
         <param><defname>MODELS</defname></param>
         <param><defname>REF</defname></param>
-        <initializer>  <ref refid="frontend__macros_8hpp_1abc123472094052f9bdb66b0740e383de" kindref="member">BE_FUNCTION_I</ref>(NAME, TYPE, ARGSLIST, SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS, REF)</initializer>
+        <initializer>  <ref refid="frontend__macros_8hpp_1abc123472094052f9bdb66b0740e383de" kindref="member">BE_FUNCTION_I</ref>(NAME, TYPE, ARGSLIST, SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS, REF)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -402,8 +402,8 @@
         <param><defname>CAPABILITY</defname></param>
         <param><defname>MODELS</defname></param>
         <param><defname>REF</defname></param>
-        <initializer>          BE_FUNCTION_I_AUX(NAME, TYPE, ARGLIST, SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS)               \
-          <ref refid="backend__macros_8hpp_1a4f20fee77afefda31e68127847130e35" kindref="member">BE_FUNCTION_I_MAIN</ref>(NAME, TYPE, ARGLIST, SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS, REF)         \
+        <initializer>          BE_FUNCTION_I_AUX(NAME, TYPE, ARGLIST, SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS)               \
+          <ref refid="backend__macros_8hpp_1a4f20fee77afefda31e68127847130e35" kindref="member">BE_FUNCTION_I_MAIN</ref>(NAME, TYPE, ARGLIST, SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS, REF)         \
           <ref refid="backend__macros_8hpp_1ae9f3e7504db39144b7232bb431eb3dd3" kindref="member">BE_FUNCTION_I_SUPP</ref>(NAME)</initializer>
         <briefdescription>
         </briefdescription>
@@ -423,7 +423,7 @@
         <param><defname>MODELS</defname></param>
         <initializer>        IF_ELSEIF(<ref refid="interoperability__macros_8hpp_1a77b751a2596846a64566f4986414e15c" kindref="member">USING_MATHEMATICA</ref>, <ref refid="mathematica__macros_8hpp_1a677967d6e9836e861c14043831503c9f" kindref="member">BE_FUNCTION_I_MATH</ref>,                                        \
                   <ref refid="interoperability__macros_8hpp_1a5ff84cb58bc88d89cecaf8be63db75ab" kindref="member">USING_PYTHON</ref>, <ref refid="python__macros_8hpp_1a7f4530a850d12732acc5c1416fce0a6d" kindref="member">BE_FUNCTION_I_PY</ref>,                                               \
-                  <ref refid="backend__macros_8hpp_1ab9f763e4e150b3326faae68cdf501535" kindref="member">BE_FUNCTION_I_OTHER</ref>)(NAME, TYPE, ARGLIST, SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS)</initializer>
+                  <ref refid="backend__macros_8hpp_1ab9f763e4e150b3326faae68cdf501535" kindref="member">BE_FUNCTION_I_OTHER</ref>)(NAME, TYPE, ARGLIST, SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -512,7 +512,7 @@
         <param><defname>CAPABILITY</defname></param>
         <param><defname>MODELS</defname></param>
         <param><defname>REF</defname></param>
-        <initializer>          BE_CONV_FUNCTION_MAIN(NAME, TYPE, ARGSLIST, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS, REF)                  \
+        <initializer>          BE_CONV_FUNCTION_MAIN(NAME, TYPE, ARGSLIST, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS, REF)                  \
           BE_CONV_FUNCTION_SUPP(NAME)</initializer>
         <briefdescription>
         </briefdescription>
@@ -853,8 +853,8 @@ CORE_ALLOWED_MODEL(BackendIniBit,CAT_4(BACKENDNAME,_,SAFE_VERSION,_init),   \
         <param><defname>CAPABILITY</defname></param>
         <param><defname>MODELS</defname></param>
         <param><defname>REF</defname></param>
-        <initializer>          BE_VARIABLE_I_AUX(NAME, TYPE, SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS)            \
-          <ref refid="backend__macros_8hpp_1a6e2f9df8500446877e1fe3b772de3bf9" kindref="member">BE_VARIABLE_I_MAIN</ref>(NAME, <ref refid="interoperability__macros_8hpp_1ad95df955e008534495bb6c96f0b99567" kindref="member">MATH_TYPE</ref>(TYPE), SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>,        \
+        <initializer>          BE_VARIABLE_I_AUX(NAME, TYPE, SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS)            \
+          <ref refid="backend__macros_8hpp_1a6e2f9df8500446877e1fe3b772de3bf9" kindref="member">BE_VARIABLE_I_MAIN</ref>(NAME, <ref refid="interoperability__macros_8hpp_1ad95df955e008534495bb6c96f0b99567" kindref="member">MATH_TYPE</ref>(TYPE), SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>,        \
                              MODELS, REF)                                           \
           <ref refid="backend__macros_8hpp_1aa3a39d8f4e705fa90fda268ef3d56a60" kindref="member">BE_VARIABLE_I_SUPP</ref>(NAME)</initializer>
         <briefdescription>
@@ -874,7 +874,7 @@ CORE_ALLOWED_MODEL(BackendIniBit,CAT_4(BACKENDNAME,_,SAFE_VERSION,_init),   \
         <param><defname>MODELS</defname></param>
         <initializer>        IF_ELSEIF(<ref refid="interoperability__macros_8hpp_1a77b751a2596846a64566f4986414e15c" kindref="member">USING_MATHEMATICA</ref>, <ref refid="mathematica__macros_8hpp_1aaf1f615a28a5f8b6d9d0167be33f22fa" kindref="member">BE_VARIABLE_I_MATH</ref>,                            \
                   <ref refid="interoperability__macros_8hpp_1a5ff84cb58bc88d89cecaf8be63db75ab" kindref="member">USING_PYTHON</ref>, <ref refid="python__macros_8hpp_1a6206ca293b990a30791776fb080b3f5b" kindref="member">BE_VARIABLE_I_PY</ref>,                                   \
-                  <ref refid="backend__macros_8hpp_1a3516fdf97958454360bf17b81745fb5b" kindref="member">BE_VARIABLE_I_OTHER</ref>)(NAME, TYPE, SYMBOLNAMES, <ref refid="SUSY__extras_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS)</initializer>
+                  <ref refid="backend__macros_8hpp_1a3516fdf97958454360bf17b81745fb5b" kindref="member">BE_VARIABLE_I_OTHER</ref>)(NAME, TYPE, SYMBOLNAMES, <ref refid="SpecBit__VS__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, MODELS)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

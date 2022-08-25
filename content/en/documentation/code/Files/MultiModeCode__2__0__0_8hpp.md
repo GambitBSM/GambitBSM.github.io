@@ -23,7 +23,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[gambit_inflation_observables](/documentation/code/files/multimodecode__2__0__0_8hpp/#variable-gambit-inflation-observables)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) int int int int double double double double double double int int int int int | **[__multimodecode_gambit_MOD_multimodecode_parametrised_ps](/documentation/code/files/multimodecode__2__0__0_8hpp/#variable--multimodecode-gambit-mod-multimodecode-parametrised-ps)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) int int int int double double double double double double int int int int int | **[__multimodecode_gambit_MOD_multimodecode_parametrised_ps](/documentation/code/files/multimodecode__2__0__0_8hpp/#variable-multimodecode-gambit-mod-multimodecode-parametrised-ps)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) int int int int double double double double double double int int int int int | **[multimodecode_gambit_mp_multimodecode_parametrised_ps_](/documentation/code/files/multimodecode__2__0__0_8hpp/#variable-multimodecode-gambit-mp-multimodecode-parametrised-ps)**  |
 
 ## Defines
@@ -200,4 +200,4 @@ BE_VARIABLE(SilenceOutput, Flogical, ("__multimodecode_gambit_MOD_silenceoutput"
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:31 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

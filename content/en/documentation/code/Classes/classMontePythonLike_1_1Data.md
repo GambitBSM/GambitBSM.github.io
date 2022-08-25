@@ -20,14 +20,14 @@ Inherits from object, object
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1data/#function--init)**(self self, command_line command_line, path path, experiments experiments) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1data/#function-init)**(self self, command_line command_line, path path, experiments experiments) |
 | def | **[set_class_version](/documentation/code/classes/classmontepythonlike_1_1data/#function-set-class-version)**(self self, class_path class_path) |
 | def | **[read_file](/documentation/code/classes/classmontepythonlike_1_1data/#function-read-file)**(self self, param param, structure structure, field field ='', separate separate =False) |
 | def | **[read_version](/documentation/code/classes/classmontepythonlike_1_1data/#function-read-version)**(self self, param_file param_file) |
 | def | **[get_mcmc_parameters](/documentation/code/classes/classmontepythonlike_1_1data/#function-get-mcmc-parameters)**(self self, table_of_strings table_of_strings) |
 | def | **[add_experiment](/documentation/code/classes/classmontepythonlike_1_1data/#function-add-experiment)**(self self, experiment_name experiment_name, experiment_object experiment_object) |
 | def | **[check_nuisance_params](/documentation/code/classes/classmontepythonlike_1_1data/#function-check-nuisance-params)**(self self) |
-| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1data/#function--init)**(self self, command_line command_line, path path, experiments experiments) |
+| def | **[__init__](/documentation/code/classes/classmontepythonlike_1_1data/#function-init)**(self self, command_line command_line, path path, experiments experiments) |
 | def | **[set_class_version](/documentation/code/classes/classmontepythonlike_1_1data/#function-set-class-version)**(self self, class_path class_path) |
 | def | **[read_file](/documentation/code/classes/classmontepythonlike_1_1data/#function-read-file)**(self self, param param, structure structure, field field ='', separate separate =False) |
 | def | **[read_version](/documentation/code/classes/classmontepythonlike_1_1data/#function-read-version)**(self self, param_file param_file) |
@@ -719,4 +719,4 @@ need_cosmo_update;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

@@ -3,12 +3,16 @@
   <compounddef id="DarkBit__standalone__ScalarSingletDM__Z2_8cpp" kind="file" language="C++">
     <compoundname>DarkBit_standalone_ScalarSingletDM_Z2.cpp</compoundname>
     <includes local="yes">gambit/Elements/standalone_module.hpp</includes>
-    <includes local="yes">gambit/DarkBit/DarkBit_rollcall.hpp</includes>
+    <includes refid="DarkBit__rollcall_8hpp" local="yes">gambit/DarkBit/DarkBit_rollcall.hpp</includes>
     <includes local="yes">gambit/Elements/spectrum_factories.hpp</includes>
     <includes local="yes">gambit/Elements/mssm_slhahelp.hpp</includes>
     <includes local="yes">gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</includes>
     <includes local="yes">gambit/Utils/util_functions.hpp</includes>
     <incdepgraph>
+      <node id="20">
+        <label>gambit/Backends/backend_types/nulike.hpp</label>
+        <link refid="nulike_8hpp"/>
+      </node>
       <node id="1">
         <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
         <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
@@ -16,32 +20,133 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="3">
         <label>gambit/DarkBit/DarkBit_rollcall.hpp</label>
-      </node>
-      <node id="5">
-        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+        <link refid="DarkBit__rollcall_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="4">
+        <label>gambit/DarkBit/DarkBit_types.hpp</label>
+        <link refid="DarkBit__types_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gambit/DarkBit/ProcessCatalog.hpp</label>
+        <link refid="ProcessCatalog_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gambit/DarkBit/SimpleHist.hpp</label>
+        <link refid="SimpleHist_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gambit/DarkBit/decay_chain.hpp</label>
+        <link refid="decay__chain_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="16">
+        <label>gambit/Elements/daFunk.hpp</label>
+      </node>
+      <node id="22">
+        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+      </node>
+      <node id="21">
         <label>gambit/Elements/spectrum_factories.hpp</label>
       </node>
       <node id="2">
         <label>gambit/Elements/standalone_module.hpp</label>
       </node>
-      <node id="6">
+      <node id="23">
         <label>gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</label>
       </node>
-      <node id="7">
+      <node id="18">
+        <label>gambit/Models/safe_param_map.hpp</label>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+      </node>
+      <node id="24">
         <label>gambit/Utils/util_functions.hpp</label>
+      </node>
+      <node id="14">
+        <label>gambit/Utils/util_types.hpp</label>
+      </node>
+      <node id="19">
+        <label>gambit/Utils/yaml_options.hpp</label>
+      </node>
+      <node id="15">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="13">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>set</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>unordered_map</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceGambit">Gambit</innernamespace>
@@ -105,7 +210,7 @@
 <codeline lineno="19"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
 <codeline lineno="20"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/standalone_module.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/DarkBit/DarkBit_rollcall.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DarkBit__rollcall_8hpp" kindref="compound">gambit/DarkBit/DarkBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/spectrum_factories.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/mssm_slhahelp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -114,9 +219,9 @@
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">DarkBit::Functown;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>wrapping<sp/>the<sp/>module&apos;s<sp/>actual<sp/>module<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">BackendIniBit::Functown;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>wrapping<sp/>the<sp/>backend<sp/>initialisation<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(DarkBit,<sp/>decay_rates,<sp/>NEW_CAPABILITY,<sp/>createDecays,<sp/>DecayTable,<sp/>())</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(DarkBit,<sp/>ScalarSingletDM_Z2_spectrum,<sp/>OLD_CAPABILITY,<sp/>createSpectrum,<sp/>Spectrum,<sp/>ScalarSingletDM_Z2)</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="DarkBit__standalone__MSSM_8cpp_1a01c72e2595b3c5b9003b5dc52a4dbd6f" kindref="member">QUICK_FUNCTION</ref>(DarkBit,<sp/>cascadeMC_gammaSpectra,<sp/>OLD_CAPABILITY,<sp/>CMC_dummy,<sp/>DarkBit::stringFunkMap,<sp/>())</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">QUICK_FUNCTION(DarkBit,<sp/>decay_rates,<sp/>NEW_CAPABILITY,<sp/>createDecays,<sp/>DecayTable,<sp/>())</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">QUICK_FUNCTION(DarkBit,<sp/>ScalarSingletDM_Z2_spectrum,<sp/>OLD_CAPABILITY,<sp/>createSpectrum,<sp/>Spectrum,<sp/>ScalarSingletDM_Z2)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">QUICK_FUNCTION(DarkBit,<sp/>cascadeMC_gammaSpectra,<sp/>OLD_CAPABILITY,<sp/>CMC_dummy,<sp/>DarkBit::stringFunkMap,<sp/>())</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal">namespace<sp/><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
@@ -379,26 +484,26 @@
 <codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>generic<sp/>scattering<sp/>cross-sections<sp/>for<sp/>later<sp/>use</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sigma_SI_p_GB,<sp/>sigma_SI_p_MO;</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"></highlight></codeline>
-<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>.resolveDependency(&amp;DD_couplings_MicrOmegas);</highlight></codeline>
-<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>.resolveDependency(&amp;mwimp_generic);</highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>.reset_and_calculate();</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_MO<sp/>=<sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>(0);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_simple.resolveDependency(&amp;DD_couplings_MicrOmegas);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_simple.resolveDependency(&amp;mwimp_generic);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_simple.reset_and_calculate();</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_MO<sp/>=<sp/>sigma_SI_p_simple(0);</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"></highlight></codeline>
-<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a8d966262752d4f572ced693c6778d80e" kindref="member">sigma_SD_p_simple</ref>.resolveDependency(&amp;DD_couplings_MicrOmegas);</highlight></codeline>
-<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a8d966262752d4f572ced693c6778d80e" kindref="member">sigma_SD_p_simple</ref>.resolveDependency(&amp;mwimp_generic);</highlight></codeline>
-<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a8d966262752d4f572ced693c6778d80e" kindref="member">sigma_SD_p_simple</ref>.reset_and_calculate();</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SD_p_simple.resolveDependency(&amp;DD_couplings_MicrOmegas);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SD_p_simple.resolveDependency(&amp;mwimp_generic);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SD_p_simple.reset_and_calculate();</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"></highlight></codeline>
-<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;sigma_SI,p<sp/>with<sp/>MicrOmegas:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>(0)<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;sigma_SI,p<sp/>with<sp/>MicrOmegas:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sigma_SI_p_simple(0)<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
 <codeline lineno="306"><highlight class="normal"></highlight></codeline>
 <codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>generic<sp/>scattering<sp/>cross-sections<sp/>for<sp/>later<sp/>use</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>.resolveDependency(&amp;DD_couplings_ScalarSingletDM_Z2);</highlight></codeline>
-<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>.reset_and_calculate();</highlight></codeline>
-<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_GB<sp/>=<sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>(0);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_simple.resolveDependency(&amp;DD_couplings_ScalarSingletDM_Z2);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_simple.reset_and_calculate();</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SI_p_GB<sp/>=<sp/>sigma_SI_p_simple(0);</highlight></codeline>
 <codeline lineno="311"><highlight class="normal"></highlight></codeline>
-<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a8d966262752d4f572ced693c6778d80e" kindref="member">sigma_SD_p_simple</ref>.resolveDependency(&amp;DD_couplings_ScalarSingletDM_Z2);</highlight></codeline>
-<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DirectDetection_8cpp_1a8d966262752d4f572ced693c6778d80e" kindref="member">sigma_SD_p_simple</ref>.reset_and_calculate();</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SD_p_simple.resolveDependency(&amp;DD_couplings_ScalarSingletDM_Z2);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>sigma_SD_p_simple.reset_and_calculate();</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"></highlight></codeline>
-<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;sigma_SI,p<sp/>with<sp/>GAMBIT:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="DirectDetection_8cpp_1a6c8dc089f01db4a962bc86c02aa041c9" kindref="member">sigma_SI_p_simple</ref>(0)<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;sigma_SI,p<sp/>with<sp/>GAMBIT:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sigma_SI_p_simple(0)<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
 <codeline lineno="316"><highlight class="normal"></highlight></codeline>
 <codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>DDCalc<sp/>backend</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>Backends::DDCalc_2_2_0::Functown::DDCalc_CalcRates_simple.setStatus(2);</highlight></codeline>

@@ -28,8 +28,8 @@ Annihilation/decay channel.
 | -------------- | -------------- |
 | daFunk::Funk | **[dNdE](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-dnde)**  |
 | daFunk::BoundFunk | **[dNdE_bound](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-dnde-bound)**  |
-| std::string | **[p1](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-p)**  |
-| std::string | **[p2](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-p)**  |
+| std::string | **[p1](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-p1)**  |
+| std::string | **[p2](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-p2)**  |
 | std::string | **[finalState](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-finalstate)**  |
 | double | **[finalStateMass](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-finalstatemass)**  |
 | double | **[Ecm_min](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#variable-ecm-min)**  |
@@ -113,4 +113,4 @@ double Ecm_max;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

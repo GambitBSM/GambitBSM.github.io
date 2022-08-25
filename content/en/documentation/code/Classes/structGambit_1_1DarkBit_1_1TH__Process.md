@@ -30,8 +30,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| str | **[particle1ID](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/#variable-particleid)**  |
-| str | **[particle2ID](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/#variable-particleid)**  |
+| str | **[particle1ID](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/#variable-particle1id)**  |
+| str | **[particle2ID](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/#variable-particle2id)**  |
 | bool | **[isAnnihilation](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/#variable-isannihilation)** <br>Annihilation or decay?  |
 | bool | **[isSelfConj](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/#variable-isselfconj)** <br>Does the process contain self-conjugate DM? (accounting for correct factors of 1/2 in annihilation spectra)  |
 | std::vector< [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) > | **[channelList](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/#variable-channellist)** <br>List of channels.  |
@@ -152,4 +152,4 @@ Additional decay rate or sigmav (in addition to above channels)
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

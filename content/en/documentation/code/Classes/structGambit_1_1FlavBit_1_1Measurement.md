@@ -26,8 +26,8 @@ Representation of a single entry in the FlavBit YAML database.
 | double | **[exp_stat_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-stat-error)**  |
 | double | **[exp_sys_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-sys-error)**  |
 | double | **[exp_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-error)**  |
-| double | **[exp_90_CL](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-cl)**  |
-| double | **[exp_95_CL](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-cl)**  |
+| double | **[exp_90_CL](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-90-cl)**  |
+| double | **[exp_95_CL](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-95-cl)**  |
 | double | **[th_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-th-error)**  |
 | std::string | **[name](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-name)**  |
 | std::string | **[exp_source](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-exp-source)**  |
@@ -137,4 +137,4 @@ std::vector< Correlation > corr;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

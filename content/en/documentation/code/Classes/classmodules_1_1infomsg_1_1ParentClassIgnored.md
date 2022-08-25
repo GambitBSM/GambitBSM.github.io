@@ -20,7 +20,7 @@ Inherits from [modules.infomsg.InfoMessage](/documentation/code/classes/classmod
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1parentclassignored/#function--init)**(self self, tag tag, parent_class parent_class, reason reason ='') |
+| def | **[__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1parentclassignored/#function-init)**(self self, tag tag, parent_class parent_class, reason reason ='') |
 
 ## Public Attributes
 
@@ -54,7 +54,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [modules::infomsg::InfoMessage::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/#function--init)
+**Reimplements**: [modules::infomsg::InfoMessage::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/#function-init)
 
 
 ## Public Attributes Documentation
@@ -89,4 +89,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

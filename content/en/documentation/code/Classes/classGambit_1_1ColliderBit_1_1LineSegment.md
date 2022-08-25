@@ -27,8 +27,8 @@ A simple container for a line segment on an xy plane.  [More...](#detailed-descr
 | | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =0.)<br>Point constructor.  |
 | | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-linesegment)**(const [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy constructor.  |
 | [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & | **[operator=](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-operator)**(const [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy assignment operator.  |
-| const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp1](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-getp)**() const |
-| const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp2](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-getp)**() const |
+| const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp1](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-getp1)**() const |
+| const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp2](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-getp2)**() const |
 | double | **[slope](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-slope)**() const<br>Get the slope of the line segment.  |
 | double | **[m](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-m)**() const<br>Alias for slope.  |
 | double | **[intercept](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-intercept)**() const<br>Get the y-intercept of the full line which contains this segment.  |
@@ -203,4 +203,4 @@ Determine if this intersects with other and where.
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

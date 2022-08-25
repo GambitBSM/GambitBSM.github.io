@@ -27,9 +27,9 @@ description: "[No description available]"
 | bool | **[isSingleParticleTriggered](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-issingleparticletriggered)**(std::vector< const HEPUtils::Particle * > particles, double pTrequirement) |
 | bool | **[isMultipleParticleTriggered](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-ismultipleparticletriggered)**(std::vector< const HEPUtils::Particle * > particles, std::vector< double > pTrequirements) |
 | std::vector< const HEPUtils::Particle * > | **[getSortedLeptons](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-getsortedleptons)**(const std::vector< std::vector< const HEPUtils::Particle * > > allLeptons) |
-| double | **[dot2D](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-dotd)**(HEPUtils::P4 mom1, HEPUtils::P4 mom2) |
+| double | **[dot2D](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-dot2d)**(HEPUtils::P4 mom1, HEPUtils::P4 mom2) |
 | std::vector< const HEPUtils::Jet * > | **[filterMaxEta](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-filtermaxeta)**(const std::vector< const HEPUtils::Jet * > & jets, double maxAbsEta) |
-| bool | **[muonFilter7TeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-muonfiltertev)**(const std::vector< const HEPUtils::Particle * > & muons) |
+| bool | **[muonFilter7TeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-muonfilter7tev)**(const std::vector< const HEPUtils::Particle * > & muons) |
 | bool | **[oppositeSign](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/#function-oppositesign)**(const HEPUtils::Particle * a, const HEPUtils::Particle * b) |
 
 ## Public Functions Documentation
@@ -168,4 +168,4 @@ static inline bool oppositeSign(
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:27 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

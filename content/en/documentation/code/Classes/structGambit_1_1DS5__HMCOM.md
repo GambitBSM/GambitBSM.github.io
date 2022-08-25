@@ -18,10 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[rho0](/documentation/code/classes/structgambit_1_1ds5__hmcom/#variable-rho)**  |
+| Fdouble | **[rho0](/documentation/code/classes/structgambit_1_1ds5__hmcom/#variable-rho0)**  |
 | Fdouble | **[rhox](/documentation/code/classes/structgambit_1_1ds5__hmcom/#variable-rhox)**  |
 | Fdouble | **[v_sun](/documentation/code/classes/structgambit_1_1ds5__hmcom/#variable-v-sun)**  |
-| Fdouble | **[r_0](/documentation/code/classes/structgambit_1_1ds5__hmcom/#variable-r)**  |
+| Fdouble | **[r_0](/documentation/code/classes/structgambit_1_1ds5__hmcom/#variable-r-0)**  |
 | Fdouble | **[v_earth](/documentation/code/classes/structgambit_1_1ds5__hmcom/#variable-v-earth)**  |
 | Finteger | **[hclumpy](/documentation/code/classes/structgambit_1_1ds5__hmcom/#variable-hclumpy)**  |
 
@@ -71,4 +71,4 @@ Finteger hclumpy;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

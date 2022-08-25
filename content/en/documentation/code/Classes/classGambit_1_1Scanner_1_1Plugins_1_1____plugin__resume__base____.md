@@ -23,7 +23,7 @@ Inherited by [Gambit::Scanner::Plugins::__plugin_resume__< T >](/documentation/c
 |                | Name           |
 | -------------- | -------------- |
 | virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-print)**(std::ofstream & ) =0 |
-| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function--plugin-resume-base)**() |
+| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-plugin-resume-base)**() |
 
 ## Public Functions Documentation
 
@@ -48,4 +48,4 @@ inline virtual ~__plugin_resume_base__()
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:28 +0000
+Updated on 2022-08-25 at 17:16:25 +0000

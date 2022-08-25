@@ -29,9 +29,9 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | int | **[prepareWorkPlace](/documentation/code/files/main_8c/#function-prepareworkplace)**(void ) |
-| char * | **[pdg2name](/documentation/code/files/main_8c/#function-pdgname)**(int pdg) |
-| char * | **[pdg2mass](/documentation/code/files/main_8c/#function-pdgmass)**(int pdg) |
-| char * | **[pdg2width](/documentation/code/files/main_8c/#function-pdgwidth)**(int pdg) |
+| char * | **[pdg2name](/documentation/code/files/main_8c/#function-pdg2name)**(int pdg) |
+| char * | **[pdg2mass](/documentation/code/files/main_8c/#function-pdg2mass)**(int pdg) |
+| char * | **[pdg2width](/documentation/code/files/main_8c/#function-pdg2width)**(int pdg) |
 | int | **[checkWorkPlace](/documentation/code/files/main_8c/#function-checkworkplace)**(void ) |
 | int | **[checkMtime](/documentation/code/files/main_8c/#function-checkmtime)**(char * fname) |
 | void * | **[newSymbol](/documentation/code/files/main_8c/#function-newsymbol)**(void * handle, char * name) |
@@ -50,7 +50,7 @@ description: "[No description available]"
 | numout * | **[getMEcode](/documentation/code/files/main_8c/#function-getmecode)**(int twidth, int Gauge, char * Process, char * excludeVirtual, char * excludeOut, char * lib) |
 | int | **[findVal](/documentation/code/files/main_8c/#function-findval)**(char * name, double * val) |
 | double | **[findValW](/documentation/code/files/main_8c/#function-findvalw)**(char * name) |
-| int | **[procInfo2](/documentation/code/files/main_8c/#function-procinfo)**(numout * cc, int nsub, char ** name, REAL * mass) |
+| int | **[procInfo2](/documentation/code/files/main_8c/#function-procinfo2)**(numout * cc, int nsub, char ** name, REAL * mass) |
 
 ## Attributes
 
@@ -954,4 +954,4 @@ int procInfo2(numout*cc,int nsub,char**name,REAL*mass)
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:32 +0000
+Updated on 2022-08-25 at 17:16:28 +0000

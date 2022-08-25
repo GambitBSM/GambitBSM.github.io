@@ -20,25 +20,25 @@ description: "[No description available]"
 | -------------- | -------------- |
 | double[3] | **[Mh](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-mh)**  |
 | double[3] | **[hGammaTot](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-hgammatot)**  |
-| double[3] | **[g2hjss_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjss-s)**  |
-| double[3] | **[g2hjss_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjss-p)**  |
-| double[3] | **[g2hjcc_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjcc-s)**  |
-| double[3] | **[g2hjcc_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjcc-p)**  |
-| double[3] | **[g2hjbb_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjbb-s)**  |
-| double[3] | **[g2hjbb_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjbb-p)**  |
-| double[3] | **[g2hjtt_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjtt-s)**  |
-| double[3] | **[g2hjtt_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjtt-p)**  |
-| double[3] | **[g2hjmumu_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjmumu-s)**  |
-| double[3] | **[g2hjmumu_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjmumu-p)**  |
-| double[3] | **[g2hjtautau_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjtautau-s)**  |
-| double[3] | **[g2hjtautau_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjtautau-p)**  |
-| double[3] | **[g2hjWW](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjww)**  |
-| double[3] | **[g2hjZZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjzz)**  |
-| double[3] | **[g2hjZga](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjzga)**  |
-| double[3] | **[g2hjgaga](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjgaga)**  |
-| double[3] | **[g2hjgg](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjgg)**  |
-| double[3] | **[g2hjggZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjggz)**  |
-| double[3] | **[g2hjhiZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-ghjhiz)**  |
+| double[3] | **[g2hjss_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjss-s)**  |
+| double[3] | **[g2hjss_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjss-p)**  |
+| double[3] | **[g2hjcc_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjcc-s)**  |
+| double[3] | **[g2hjcc_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjcc-p)**  |
+| double[3] | **[g2hjbb_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjbb-s)**  |
+| double[3] | **[g2hjbb_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjbb-p)**  |
+| double[3] | **[g2hjtt_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtt-s)**  |
+| double[3] | **[g2hjtt_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtt-p)**  |
+| double[3] | **[g2hjmumu_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjmumu-s)**  |
+| double[3] | **[g2hjmumu_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjmumu-p)**  |
+| double[3] | **[g2hjtautau_s](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtautau-s)**  |
+| double[3] | **[g2hjtautau_p](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjtautau-p)**  |
+| double[3] | **[g2hjWW](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjww)**  |
+| double[3] | **[g2hjZZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjzz)**  |
+| double[3] | **[g2hjZga](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjzga)**  |
+| double[3] | **[g2hjgaga](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjgaga)**  |
+| double[3] | **[g2hjgg](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjgg)**  |
+| double[3] | **[g2hjggZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjggz)**  |
+| double[3] | **[g2hjhiZ](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-g2hjhiz)**  |
 | double[3] | **[BR_hjinvisible](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-br-hjinvisible)**  |
 | double[3][3] | **[BR_hjhihi](/documentation/code/classes/structgambit_1_1hb__modelparameters__effc/#variable-br-hjhihi)**  |
 
@@ -207,4 +207,4 @@ double[3][3] BR_hjhihi;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000

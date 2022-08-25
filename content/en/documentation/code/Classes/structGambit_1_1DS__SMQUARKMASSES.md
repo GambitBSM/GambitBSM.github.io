@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[mu2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mugev)**  |
-| Fdouble | **[md2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mdgev)**  |
-| Fdouble | **[ms2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-msgev)**  |
+| Fdouble | **[mu2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mu2gev)**  |
+| Fdouble | **[md2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-md2gev)**  |
+| Fdouble | **[ms2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-ms2gev)**  |
 | Fdouble | **[mcmc](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mcmc)**  |
 | Fdouble | **[mbmb](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mbmb)**  |
 | Fdouble | **[mtmt](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mtmt)**  |
@@ -79,4 +79,4 @@ Fstring< 5 > roption;
 
 -------------------------------
 
-Updated on 2022-08-25 at 14:57:26 +0000
+Updated on 2022-08-25 at 17:16:24 +0000
