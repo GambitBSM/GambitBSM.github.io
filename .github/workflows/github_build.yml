@@ -78,7 +78,6 @@ jobs:
         with:
           node-version: '16'
           # cache: 'npm'
-        working-directory: ./content/en/documentation
       - name: Install npm dependencies and build site
         run: npm install
           && npm run build
