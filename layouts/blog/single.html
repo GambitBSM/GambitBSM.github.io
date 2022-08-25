@@ -4,6 +4,8 @@
     <article>
       <div class="blog-header">
         <h1>{{ .Title }}</h1>
+
+
         {{ partial "main/blog-meta.html" . }}
       </div>
       <p class="lead">{{ .Params.lead | safeHTML }}</p>

@@ -32,11 +32,6 @@ jobs:
           && mkdir build
           && cmake -B ./build -G "Unix Makefiles" --debug-find -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/ -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/
           && cmake --build ./build --config MinSizeRel
-        # Install sed to edit some file contents
-      - name: Install sed
-        run: sudo apt-get install sed
-        # Remove the first part of the github url and the .git at the end so that folder name is clean
-        # Then replace . with a -
       - name: Shallow clone repo
         run: git clone --depth 1 ${{ inputs.repo_to_document }} gambit_source
       - name: Generate doxygen xml
@@ -49,9 +44,6 @@ jobs:
         # Need to insert index file so that menus work in site
       - name: Copy index template into repo folder to act as parent menu
         run: cp code_index_template.md ./content/en/documentation/code/_index.md
-      - name: Add gambit version number to index
-        run: sed -i -- 's+VERSION_NUMBER_HERE+${{ inputs.version_number }}+g' _index.md
-        working-directory: ./content/en/documentation/code
       - name: Remove cloned directory
         run: rm -r gambit_source
       - name: Commit changes

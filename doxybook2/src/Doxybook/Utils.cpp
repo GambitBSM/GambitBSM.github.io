@@ -66,12 +66,14 @@ std::string Doxybook2::Utils::safeAnchorId(std::string str) {
     str = replaceAll(toLower(std::move(str)), "::", "");
     str = replaceAll(str, "_", " ");
     str.erase(remove_if(str.begin(), str.end(),
-    [](char c) { return (c!=' ') && (!isalpha(c)); } ),
+    [](char c) { return (c!=' ') && (!isalnum(c)); } ),
     str.end());
     str.erase(str.find_last_not_of(" \n\r\t")+1);
+    str.erase(0, str.find_first_not_of(" \n\r\t"));
     str = replaceAll(str, " ", "-");
-    str = replaceAll(str, "--", "-");
+    str = replaceAll(str, "----", "-");
     str = replaceAll(str, "---", "-");
+    str = replaceAll(str, "--", "-");
     return str;
 }
 
