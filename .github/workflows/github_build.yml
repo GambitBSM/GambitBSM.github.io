@@ -30,10 +30,7 @@ jobs:
         run: cd doxybook2
           && vcpkg install --triplet x64-linux $(cat vcpkg.txt)
           && mkdir build
-          && cmake -B ./build -G "Unix Makefiles" \
-                 -DCMAKE_BUILD_TYPE=MinSizeRel \
-                 -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake \
-                 --debug-find
+          && cmake -B ./build -G "Unix Makefiles" --debug-find -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/ -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/
           && cmake --build ./build --config MinSizeRel
         # Install sed to edit some file contents
       - name: Install sed
