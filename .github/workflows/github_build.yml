@@ -16,10 +16,11 @@ on:
         description: 'Version number of GAMBIT release repo'
         required: true
         default: '2.2'
+
+jobs:
   
   document_repo:
     if: ${{ inputs.rebuild_all }}
-    needs: setup
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
