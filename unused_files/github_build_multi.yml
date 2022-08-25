@@ -1,0 +1,215 @@
+name: Deploy Gambit Site
+
+on:
+  workflow_dispatch:
+    inputs:
+      rebuild_all:
+        description: 'Rebuild all doxygen documentation in addition to deploying site'
+        type: boolean
+        required: true
+        default: false
+      clear_code_dir:
+        description: 'While rebuilding, remove previously built doxygen documentation'
+        type: boolean
+        required: true
+        default: true
+      dev_repo:
+        description: 'Development repo'
+        required: true
+        default: "none"
+      dev_branches_to_document:
+        description: 'Branches of the GAMBIT development repo to document'
+        required: true
+        default: "[]"
+      repos_to_document:
+        description: 'Standalone repos (GAMBIT releases) to document'
+        required: true
+        default: "['https://github.com/GambitBSM/gambit_2.2.git']"
+
+jobs:
+  
+  # This job just initialises all the variables so they are accessible via matrices in the other jobs
+  setup:
+    if: ${{ inputs.rebuild_all }}
+    runs-on: ubuntu-latest
+    outputs:
+      branches: ${{ steps.setVariables.outputs.branches }}
+      repos: ${{ steps.setVariables.outputs.repos }}
+    steps:
+      - id: setVariables
+        run: echo "::set-output name=branches::$branches_temp"
+          && echo "::set-output name=repos::$repos_temp"
+        env:
+          branches_temp: ${{ inputs.dev_branches_to_document }}
+          repos_temp: ${{ inputs.repos_to_document }}
+
+  # This job runs doxygen/doxybook2 on the development branches and then uploads the results as artifacts
+  # Currently this only works on public development repos, to clone private repos requires a personal access token (PAT)
+  # See the wiki section later on for an example of using a PAT
+  document_branches_and_build_menu:
+    if: ${{ inputs.rebuild_all }}
+    needs: setup
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branches: ${{ fromJson(needs.setup.outputs.branches )}}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        # Doxybook2 is currently already present in the repo
+      #- name: Install doxybook2
+      #  run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
+      #    && mkdir doxybook2
+      #    && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+        # Install sed to edit some file contents
+      - name: Install sed 
+        run: sudo apt-get install sed
+        # Remove everything following underscore, usually _development
+      - name: Set folder variable
+        run: str=${{ matrix.branches }}
+          && echo "folder2=${str%_*}" >> $GITHUB_ENV
+      - name: Shallow clone branch
+        run: git clone --depth 1 ${{ inputs.dev_repo }} --branch ${{ matrix.branches }} ${{ env.folder2 }}_source
+      #- name: Clone using personal access token if normal clone fails (this section is not complete as it is not being used)
+      #  if: ${{ failure() }}
+      #  run: echo "yes"
+      - name: Generate doxygen xml
+        uses: mattnotmitt/doxygen-action@v1.9.4
+        with:
+          working-directory: ./${{ env.folder2 }}_source
+          doxyfile-path: ../doxygen_and_doxybook2_config/Doxyfile
+        # Change doxybook2 output url so that internal links in the documentation work
+      - name: Change baseURL for md output
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder2 }}/+g' ./doxygen_and_doxybook2_config/config.json
+      - name: Convert xml to md using doxybook2
+        run: mkdir ${{ env.folder2 }}
+          && ./doxybook2/build/src/DoxybookCli/doxybook2 --input ./xml --output ./${{ env.folder2 }} --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
+        # Need to insert index files so that menus work in site
+      - name: Copy index template into branch folder to act as parent menu
+        run: cp version_index_template.md ./${{ env.folder2 }}/_index.md
+        # This is more menu stuff, so that ordering is correct and version type shows up in dropdown menu
+      - name: Add gambit version, type, and weights into index files to reference parent menu
+        run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ env.folder2 }}+g' *.md
+          && sed -i -- 's+VERSION_TYPE_HERE+development+g' _index.md
+          && sed -i -- 's+WEIGHT_HERE+20+g' _index.md
+        working-directory: ./${{ env.folder2 }}
+      - name: Upload branch code md as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.folder2 }}
+          path: ./${{ env.folder2 }}
+  
+  # This job runs doxygen/doxybook2 on the release repos and then uploads the results as artifacts
+  document_repos_and_build_menu:
+    if: ${{ inputs.rebuild_all }}
+    needs: setup
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repos: ${{ fromJson(needs.setup.outputs.repos )}}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        # Doxybook2 is currently already present in the repo
+      #- name: Install doxybook2
+      #  run:  wget https://github.com/matusnovak/doxybook2/releases/download/v1.4.0/doxybook2-linux-amd64-v1.4.0.zip
+      #    && mkdir doxybook2
+      #    && unzip doxybook2-linux-amd64-v1.4.0.zip -d ./doxybook2
+        # Install sed to edit some file contents
+      - name: Install sed
+        run: sudo apt-get install sed
+        # Remove the first part of the github url and the .git at the end so that folder name is clean
+        # Then replace . with a -
+      - name: Set folder variable
+        run: str=${{ matrix.repos }}
+          && str2=${str##*/}
+          && str3=${str2%.*}
+          && echo "folder=${str3/./-}" >> $GITHUB_ENV
+      - name: Shallow clone repo
+        run: git clone --depth 1 ${{ matrix.repos }} ${{ env.folder }}_source
+      - name: Generate doxygen xml
+        uses: mattnotmitt/doxygen-action@v1.9.4
+        with:
+          working-directory: ./${{ env.folder }}_source
+          doxyfile-path: ../doxygen_and_doxybook2_config/Doxyfile
+        # Change doxybook2 output url so that internal links in the documentation work
+      - name: Change baseURL for md output
+        run: sed -i -e 's+/documentation/code/+/documentation/code/${{ env.folder }}/+g' ./doxygen_and_doxybook2_config/config.json
+      - name: Convert xml to md using doxybook2
+        run: mkdir ${{ env.folder }}
+          && ./doxybook2/build/src/DoxybookCli/doxybook2 --input ./xml --output ./${{ env.folder }} --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
+        # Need to insert index files so that menus work in site
+      - name: Copy index template into repo folder to act as parent menu
+        run: cp version_index_template.md ./${{ env.folder }}/_index.md
+        # This is more menu stuff, so that ordering is correct and version type shows up in dropdown menu
+      - name: Add gambit version, type, and weights into index files to reference parent menu
+        run: sed -i -- 's+GAMBIT_VERSION_HERE+${{ env.folder }}+g' *.md
+          && sed -i -- 's+VERSION_TYPE_HERE+release+g' _index.md
+          && sed -i -- 's+WEIGHT_HERE+10+g' _index.md
+        working-directory: ./${{ env.folder }}
+      - name: Upload repo code md as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.folder }}
+          path: ./${{ env.folder }}
+
+  # This job downloads the artifacts and then builds/deploys site to github pages
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [document_repos_and_build_menu, document_branches_and_build_menu]
+    if: ${{ always() }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Cache npm packages
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          # cache: 'npm'
+      - name: Wipe code dir
+        if: ${{ inputs.clear_code_dir && inputs.rebuild_all }}
+        run: ls -a -l
+          && rm -r code
+          && mkdir code
+        working-directory: ./content/en/documentation
+      - name: Download docs artifacts into code dir
+        if: ${{ inputs.rebuild_all }}
+        uses: actions/download-artifact@v3
+        with:
+          path: ./content/en/documentation/code
+      - name: Move and rename _index file to act as code menu
+        if: ${{ inputs.rebuild_all }}
+        run: cp code_index_template.md ./content/en/documentation/code/_index.md
+      - name: Commit changes
+        if: ${{ inputs.rebuild_all }}
+        run: git config --local user.email "test@github.com"
+          && git config --local user.name "GitHub Action test"
+          && git add --all
+          && git commit -m "Documentation rebuild"
+          && git push
+      # After committing changes to the public site repo, add wiki contents from the private wiki repo
+      #- name: Clone private wiki contents, replacing password placeholders
+      #  run: git clone --depth 1 https://${{ secrets.WIKI_CLONE_PAT }}:x-oauth-basic@github.com/GambitBSM/wiki.git
+      #    && password=`cat ./wiki/password.txt`
+      #    && sed -i -e "s/PASSWORD_HERE/${password}/g" $(find ./wiki/wiki -type f)
+      #    && rm -r ./content/en/wiki
+      #    && cp -r ./wiki/wiki ./content/en
+      #    && rm -r ./wiki
+      - name: Install npm dependencies and build site
+        run: npm install
+          && npm run build
+      # This section is currently not needed, however it is an example of how to use hugo-encrypt
+      #- name: Install and run hugo-encrypt
+      #  run: git clone --depth 1 https://github.com/Izumiko/hugo-encrypt.git
+      #    && cd hugo-encrypt
+      #    && export BINDIR=./install
+      #    && make
+      #    && make install
+      #    && ./install/hugo-encrypt -sitePath ../public
+      #    && cd ..
+      #    && rm -r hugo-encrypt
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
