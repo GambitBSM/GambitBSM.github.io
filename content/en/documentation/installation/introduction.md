@@ -30,11 +30,11 @@ modules or `Bits`, along with various Core components and utilities. GAMBIT's `B
 | `ScannerBit` | The sampling module for Gambit. Implements various scanners which are programmed as plugins. |
 
 {{< alert icon="ⓘ" context="info">}}
-**Info**: A detailed discussion of the motivation, philosophy, and design of GAMBIT can be found in [the original paper](https://arxiv.org/abs/1705.07908)
+**Info**: A detailed discussion of the motivation, philosophy, and design of GAMBIT can be found in [the original paper ⧉](https://arxiv.org/abs/1705.07908)
 {{< /alert >}}
 
 ### How do I run GAMBIT?
 
 **To run a limited version of GAMBIT quickly and easily, use the Docker image.** A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally. For detailed instructions please see the [Docker Usage](/documentation/installation/docker_usage/) page.
 
-**To access and use all features of GAMBIT, build from source.** GAMBIT builds and runs under Linux and macOS. For detailed instructions please see the [Installation for Linux](/documentation/installation/installation_for_linux/) or [Installation for macOS](/documentation/installation/installation_for_macos/) pages. Although Windows is not directly supported, it is possible to run 
+**To access and use all features of GAMBIT, build from source.** GAMBIT builds and runs under Linux and macOS. For detailed instructions please see the [Installation for Linux](/documentation/installation/installation_for_linux/) or [Installation for macOS](/documentation/installation/installation_for_macos/) pages. Although Windows is not directly supported, it is possible to install Linux on Windows using WSL. See [Installation for Windows](/documentation/installation/installation_for_windows/) for more information.

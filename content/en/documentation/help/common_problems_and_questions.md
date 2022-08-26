@@ -29,5 +29,5 @@ sudo usermod -aG docker $USER
 | Question | Answer |
 | --- | --- |
 | I get `undefined symbol: run` or `undefined symbol: cdiver` or similar when I try to run a scan.  What gives? | You probably forgot to re-run cmake (followed by make) after building the scanner you're trying to run with. |
-| Is the detector parameterisation BuckFast in ColliderBit named after Andy Buckley? | [No](http://www.theguardian.com/lifeandstyle/2015/feb/27/buckfast-drink-with-supernatural-powers-destruction). |
+| Is the detector parameterisation BuckFast in ColliderBit named after Andy Buckley? | [No ⧉](http://www.theguardian.com/lifeandstyle/2015/feb/27/buckfast-drink-with-supernatural-powers-destruction). |
 | Is Are Raklev's first name really Åre? | No, that's a ski resort. |

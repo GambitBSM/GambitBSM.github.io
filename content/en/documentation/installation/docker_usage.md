@@ -25,7 +25,7 @@ A pre-built version of GAMBIT is available as a Docker image which can be downlo
 
 ##### Install the Docker Engine
 
-The Docker Engine is available for Windows, macOS and Linux. Follow [Docker's installation guide](https://docs.docker.com/engine/install/) to install it on your system.
+The Docker Engine is available for Windows, macOS and Linux. Follow [Docker's installation guide ⧉](https://docs.docker.com/engine/install/) to install it on your system.
 
 ##### Download the Docker image
 

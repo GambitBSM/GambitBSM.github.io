@@ -12,7 +12,7 @@ weight: 30
 ---
 
 {{< alert icon="ⓘ" context="info">}}
-**Info**: Please report any new unresolved issues [here](https://github.com/GambitBSM/gambit_1.2/issues/new).
+**Info**: Please report any new unresolved issues [here ⧉](https://github.com/GambitBSM/gambit_1.2/issues/new).
 {{< /alert >}}
 
 | Issue | Description
