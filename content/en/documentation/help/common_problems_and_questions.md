@@ -13,14 +13,39 @@ weight: 10
 
 ### Installation
 
-##### Docker not starting
+##### I Cannot start or run Docker on Linux
 
-It may be necessary to create `docker` group and add users to it in order to use Docker commands. For example:
+On Linux, non-`sudo` users may encounter `permission denied` or `Cannot connect to the Docker daemon. Is the docker daemon running on this host?` errors. By default, only `sudo` users may run `docker` commands on Linux (by adding `sudo` to the start of the command). To allow other users to run commands, a `sudo` user must created a new group called `docker` and add users to it: 
 
 ```
-sudo groupadd docker
-sudo usermod -aG docker $USER
+sudo groupadd docker             # Create new group
+sudo usermod -aG docker $USER    # Add USER to group
 ```
+
+Exercise caution with the `usermod` command; incorrect use may result in privileges being removed from users. Users may need to log out and then log back in for changes to take effect. Users belonging to the `docker` group should now be able to run `docker` without the `sudo` command.
+
+In addition, `sudo` users can control the Docker daemon using the following commands:
+
+```
+sudo systemctl start docker      # Start daemon
+sudo systemctl stop docker       # Stop daemon
+sudo systemctl restart docker    # Restart daemon
+sudo systemctl status docker     # Check status of daemon
+```
+
+More information can be found on the [Docker Linux post-install page ⧉](https://docs.docker.com/engine/install/linux-postinstall/).
+
+##### I don't want to install dependencies system-wide
+
+<!--- ROSSTODO: instructions on building to specific folders and python venv -->
+
+##### My system cannot find an installed package
+
+<!--- ROSSTODO: Instructions on adding to path, using full executable paths, and aliases -->
+
+##### GAMBIT builds extremely slowly
+
+<!--- ROSSTODO: Instructions on ditching parts of gambit -->
 
 ### Running GAMBIT
 
