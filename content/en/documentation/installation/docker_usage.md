@@ -45,7 +45,7 @@ This will give you a `bash` shell with GAMBIT pre-built and ready to run. To qui
 
 {{< alert icon="⚠" context="danger">}}
 
-**Common Problem**: On Linux, non-`sudo` users may have difficulty starting or running Docker. See [here](/documentation/help/common_problems_and_questions#i-cannot-start-or-run-docker-on-linux) for more information.
+**Common Problem**: [I cannot start or run Docker on Linux](/documentation/help/common_problems_and_questions#i-cannot-start-or-run-docker-on-linux).
 
 {{< /alert >}}
 
