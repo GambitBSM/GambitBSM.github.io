@@ -13,106 +13,247 @@ weight: 30
 
 {{< alert icon="ⓘ" context="info">}}
 
-**Info**: If you intend to build the entirety of GAMBIT without optimisation, at least 10GB of RAM is required. Building with optimisation (for performance-critical applications) may require more than 20GB of RAM. If your system does not meet these requirements then consider [only partially building GAMBIT](/documentation/help/common_problems_and_questions#gambit-builds-extremely-slowly), or using the [Docker image](/documentation/installation/docker_usage).
+**Info**: 
+
+- If you intend to build the entirety of GAMBIT without optimisation, at least 10GB of RAM is required. Building with optimisation (for performance-critical applications) may require more than 20GB of RAM. If your system does not meet these requirements then consider [only partially building GAMBIT](/documentation/help/common_problems_and_questions#gambit-builds-extremely-slowly), or using the [Docker image](/documentation/installation/docker_usage).
+- This guide assumes some knowledge of `bash` and the Linux command line. See the [Linux command line tutorial ⧉](https://www.linux.com/training-tutorials/how-use-linux-command-line-basics-cli/) for a basic introduction.
+- If you encounter issues while following this guide then please refer to the "Common Problem" boxes or the [Common Problems and Questions](/documentation/help/common_problems_and_questions/) page.
 
 {{< /alert >}}
 
-### Installing dependencies
+### Installing compulsory dependencies
 
-GAMBIT is built using Cmake, and has a number of compulsory dependencies. Provided for each dependency is some basic information and installation instructions.
-
-Before installing a dependency make sure to check if it is already present on your system, as multiple different installs of dependencies can cause issues during the build process. This can be done using the `whereis $PACKAGE_NAME` command which searches your system for the package's binary, source, or manual files. Additionally, the version number of many packages can be checked using `$PACKAGE_NAME --version`. 
+GAMBIT has a number of compulsory dependencies, which must be installed for GAMBIT to be built and run. Provided for each dependency is some basic information and installation instructions.
 
 {{< alert icon="⚠" context="danger">}}
 
-**Common Problem**: [I don't know how to install a package](/documentation/help/common_problems_and_questions#i-don-t-know-how-to-install-a-package).
+**Common Problems**: 
 
-{{< /alert >}}
-
-{{< alert icon="⚠" context="danger">}}
-
-**Common Problem**: [I can't or don't want to install dependencies system-wide](/documentation/help/common_problems_and_questions#i-can-t-or-don-t-want-to-install-dependencies-system-wide).
-
-{{< /alert >}}
-
-{{< alert icon="⚠" context="danger">}}
-
-**Common Problem**: [My system cannot find an installed package](/documentation/help/common_problems_and_questions#my-system-cannot-find-an-installed-package).
+- [I don't know how to check if a package is already installed](/documentation/help/common_problems_and_questions#i-don-t-know-how-to-check-if-a-package-is-already-installed)
+- [I don't know how to install packages](/documentation/help/common_problems_and_questions#i-don-t-know-how-to-install-packages)
+- [I can't or don't want to install dependencies system-wide](/documentation/help/common_problems_and_questions#i-can-t-or-don-t-want-to-install-dependencies-system-wide)
+- [My system cannot find an installed package](/documentation/help/common_problems_and_questions#my-system-cannot-find-an-installed-package)
 
 {{< /alert >}}
 
 ##### C++ compiler
 
-GAMBIT requires one of `gcc` (GNU Compiler Collection) `>= 5.1`, `llvm clang >= 10`, or `icc` (Intel C/C++ Compiler) `>= 15.0.2`. It is likely that one of these is already present on your system. 
+One of:
+- GCC (GNU Compiler Collection) ≥ 5.1, 
+- LLVM Clang ≥ 10 
+- ICC (Intel C/C++ Compiler) ≥ 15.0.2
 
-| Package name | Available via major Linux package managers | Can be build from source | Notes |
-| --- | --- | --- | --- |
-| `gcc` | Yes | [Yes ⧉](https://gcc.gnu.org/install/index.html) | - |
-| `clang` | Yes | [Yes ⧉](https://clang.llvm.org/get_started.html) | - |
-| `icc` | No | [Yes ⧉](http://registrationcenter-download.intel.com/akdlm/irc_nas/1855/l_cc_p_10.1.026_INSTALL.htm) | Can be downloaded as part of the [Intel oneAPI Base Toolkit ⧉](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html#gs.a3697a), which also includes the `ifort` Fortran compiler (see next section). |
+<details>
+  <summary>More info</summary>
+  Gambit is written mainly in C++. It is likely that one of these compilers is already present on your system. 
+
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `gcc` | Yes | [Yes ⧉](https://gcc.gnu.org/install/binaries.html) | [Yes ⧉](https://gcc.gnu.org/install/) | - |
+  | `clang` | Yes | [Yes ⧉](https://releases.llvm.org/download.html) | [Yes ⧉](https://clang.llvm.org/get_started.html) | - |
+  | `icc` | No | Yes | No | Binaries can be downloaded as part of the [Intel oneAPI Base Toolkit ⧉](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html#gs.a3697a) (which also includes the Ifort Fortran compiler) or from the [standalone component page ⧉](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html). |
+</details>
 
 ##### Fortran compiler
 
-GAMBIT requires either `gfortran` (GNU Fortran Compiler) `>= 5.1` or `ifort` (Intel Fortran Compiler) `>= 15.0.2`. `gfortran` is associated with `gcc` and `ifort` is associated with `icc`, so depending on your C++ compiler you may already have a Fortran compiler installed.
+One of: 
+- GFortran (GNU Fortran Compiler) ≥ 5.1 
+- ifort (Intel Fortran Compiler) ≥ 15.0.2
 
-*Installation*: `gfortran` is available via all major Linux package managers, see the [GFortran installation page ⧉](https://fortran-lang.org/learn/os_setup/install_gfortran#linux) for more information. `ifort` has been superceded by Intel oneAPI (see previous section), however it can still be downloaded from [Intel's standalone component page ⧉](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#fortran).
+<details>
+  <summary>More info</summary>
 
-| Package name | Available via major Linux package managers | Can be build from source | Notes |
-| --- | --- | --- | --- |
-| `gfortran` | Yes | [Yes ⧉](https://gcc.gnu.org/install/index.html) | - |
-| `clang` | Yes | [Yes ⧉](https://clang.llvm.org/get_started.html) | - |
-| `icc` | No | [Yes ⧉](http://registrationcenter-download.intel.com/akdlm/irc_nas/1855/l_cc_p_10.1.026_INSTALL.htm) | Can be downloaded as part of the [Intel oneAPI Base Toolkit ⧉](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html#gs.a3697a), which also includes the `ifort` Fortran compiler (see next section). |
+  Some parts of GAMBIT are written in Fortran. GFortran is associated with GCC and ifort is associated with ICC, so depending on your C++ compiler you may already have a Fortran compiler installed.
 
-##### Cmake
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `gfortran` | [Yes ⧉](https://fortran-lang.org/learn/os_setup/install_gfortran#linux) | [Yes ⧉](https://gcc.gnu.org/wiki/GFortranBinaries) | [Yes ⧉](https://gcc.gnu.org/install/) as part of GCC | - |
+  | `ifort` | No | Yes | No | Binaries can be downloaded as part of the [Intel oneAPI Base Toolkit ⧉](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html#gs.a3697a) (which also includes the ICC C++ compiler) or from the [standalone component page ⧉](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html). |
+</details>
 
-*Info*: GAMBIT requires `cmake >= 2.8.12`.
+##### Cmake ≥ 2.8.12
 
----
+<details>
+  <summary>More info</summary>
 
-*Installation*: Cmake source code or pre-built binaries can be downloaded from the [Cmake installation page ⧉](https://cmake.org/install/).
+  GAMBIT uses the Cmake build system.
 
-##### Python
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `cmake` | Yes | [Yes ⧉](https://cmake.org/download/) | [Yes ⧉](https://cmake.org/install/) | - |
+</details>
 
-*Info*: GAMBIT requires `python >= 2.7`. Python 2 and Python 3 are developed separately, but both are supported.
+##### Python + modules
 
----
+Python ≥ 2.7, and Python modules `future`, `datetime`, `pyyaml`, `os`, `re`, `sys`, `getopt`, `shutil`, and `itertools`
 
-*Installation*: `python3` is available via all major Linux package managers. Alternatively, source code for both Python 3 and Python 2 can be downloaded from the [Python source releases page ⧉](https://www.python.org/downloads/source/). You might consider installing [Anaconda ⧉](https://www.anaconda.com/) instead, which packages Python along with various libraries and tools designed for scientific computing.
+<details>
+  <summary>More info</summary>
 
-##### Python modules
+  Python 2 and Python 3 are developed separately, but both are supported. You might consider installing [Anaconda ⧉](https://www.anaconda.com/) instead, which packages Python along with various libraries and tools designed for scientific computing.
 
-*Info*: GAMBIT requires the Python modules `future`, `datetime`, `pyyaml`, `os`, `re`, `sys`, `getopt`, `shutil`, and `itertools`. It is good practice to install these within a virtual environment rather than system-wide; see [I can't or don't want to install dependencies system-wide](/documentation/help/common_problems_and_questions#i-can-t-or-don-t-want-to-install-dependencies-system-wide). 
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `python3` | Yes | [Yes ⧉](http://www.aixtools.net/index.php/python3) | [Yes ⧉](https://www.python.org/downloads/source/) | - |
+  | `python2` | No | [Yes ⧉](http://www.aixtools.net/index.php/python2) | [Yes ⧉](https://www.python.org/downloads/source/) | - |
 
----
+  It is good practice to install Python modules within a virtual environment rather than system-wide; see [I can't or don't want to install dependencies system-wide](/documentation/help/common_problems_and_questions#i-can-t-or-don-t-want-to-install-dependencies-system-wide). 
 
-*Installation*: There are a number of Python package managers, however `pip` is the most common. If you have an up-to-date installation of Python then this should already be installed, otherwise refer to the [Pip installation page ⧉](https://pip.pypa.io/en/stable/installation/). If you have Python 3 installed then you can optionally use the command `pip3` in place of `pip`. The individual modules can be installed using `pip install $MODULE_NAME`, and a list of installed modules can be viewed using `pip list`. Note that `os`, `sys`, `getopt`, `shutil`, and `itertools` are part of the Python Standard Library and should already be packaged with Python (attempting to install them with `pip` will result in `ERROR: No matching distribution found for $MODULE_NAME`).
+  There are a number of Python package managers, however `pip` is the most common. If you have an up-to-date installation of Python then this should already be installed, otherwise refer to the [Pip installation page ⧉](https://pip.pypa.io/en/stable/installation/). If you have Python 3 installed then you can optionally use the command `pip3` in place of `pip`. The individual modules can be installed using `pip install $MODULE_NAME`, and a list of installed modules can be viewed using `pip list`. Note that `os`, `sys`, `getopt`, `shutil`, and `itertools` are part of the Python Standard Library and should already be packaged with Python (attempting to install them with `pip` will result in `ERROR: No matching distribution found for $MODULE_NAME`).
 
-{{< alert icon="ⓘ" context="info">}}
+  {{< alert icon="ⓘ" context="info">}}
 
-**Info**: Other package managers for Python modules are available, such as [Pipenv ⧉](https://pipenv.pypa.io/en/latest/) and [Poetry ⧉](https://python-poetry.org/). However, to avoid errors in the build process you should make sure to install all the Python modules using the same method.
+  **Info**: Other package managers for Python modules are available, such as [Pipenv ⧉](https://pipenv.pypa.io/en/latest/) and [Poetry ⧉](https://python-poetry.org/). However, to avoid errors in the build process you should make sure to install all the Python modules using the same method.
 
-{{< /alert >}}
+  {{< /alert >}}
+  </details>
 
 ##### Git
 
-*Info*: GAMBIT requires the Git source control software.
+<details>
+  <summary>More info</summary>
+  Git is used for version control.
 
----
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `git` | [Yes ⧉](https://git-scm.com/download/linux) | No | [Yes ⧉](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) | - |
+</details>
 
-*Installation*: `git` is available via all major Linux package managers. Alternatively, instructions for installing Git from source can be found on the [Git installation page ⧉](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+##### Boost ≥ 1.48
 
-##### Boost
+<details>
+  <summary>More info</summary>
+  Boost is a set of commonly-used C++ libraries.
 
-*Info*: GAMBIT requires `boost >= 1.48`. Boost is a set of commonly-used C++ libraries.
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `boost` | Yes | No | [Yes ⧉](https://www.boost.org/doc/libs/1_80_0/tools/build/doc/html/index.html#bbv2.installation) | - |
+</details>
 
----
+##### GSL (GNU Scientific Library) ≥ 2.1
 
-*Installation*: Boost needs to be installed from source. Refer to the [Boost user manual ⧉](https://www.boost.org/doc/libs/1_80_0/tools/build/doc/html/index.html#bbv2.installation) for installation instructions.
+<details>
+  <summary>More info</summary>
+  GSL is a C software library written for scientific applications.
 
-##### GNU Scientific Library (GSL)
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `gsl` | Yes | No | [Yes ⧉](https://www.gnu.org/software/gsl/) | - |
+</details>
 
-*Info*: GAMBIT requires `gsl >= 2.1`. GSL is a C software library written for scientific applications.
+##### Eigen ≥ 3.1.0
 
----
+<details>
+  <summary>More info</summary>
+  Eigen is a header-only C++ library for linear algebra.
 
-*Installation*: 
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `eigen` | No | No | [Yes ⧉](http://eigen.tuxfamily.org/index.php?title=Main_Page#Download) | Eigen is a header-only library, so does not need to built. Installation involves simply downloading the folder of header files. |
+</details>
+
+##### LAPACK (Linear Algebra Package)
+
+<details>
+  <summary>More info</summary>
+  LAPACK is a Fortran library for numerical linear algebra.
+
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `lapack` | Yes | [Yes ⧉](https://netlib.org/lapack/archives/) | [Yes ⧉](https://netlib.org/clapack/CLAPACK-3.1.1/INSTALL/lawn81.pdf) | - |
+</details>
+
+##### pkg-config
+
+<details>
+  <summary>More info</summary>
+  pkg-config is a tool which makes sure correct compiler options are used on the command line.
+
+  | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
+  | --- | --- | --- | --- | --- |
+  | `pkg-config` | No | No | [Yes ⧉](https://pkgconfig.freedesktop.org/releases/) | - |
+</details>
+
+### Installing optional dependencies
+
+GAMBIT has a number of optional dependencies which you may wish to install depending on how you plan to use GAMBIT.
+
+<details>
+  <summary>Show optional dependencies</summary>
+  
+
+  - HDF5 (for use of the hdf5 printer)
+  - MPI (required for parallel sampling)
+  - axel (speeds up downloads of backends and scanners)
+  - graphviz (required for model hierarchy and dependency tree plots)
+  - ROOT (required for RestFrames support in ColliderBit, or the GreAT scanner from ScannerBit)
+  - Mathematica 7.0 or greater (required for the use of Mathematica backends and GUM)
+  - UUID (required for the use of the WSTP interface for Mathematica backends and GUM)
+  - X11 development libraries (required for the use of GUM)
+  - Boost compiled libraries (required for the use of GUM):
+      - Boost.Python
+      - Boost.Filesystem
+      - Boost.System
+  - Python modules:
+      - `cython` (required for using the classy backend)
+      - `scipy` (required for using the MontePython or DarkAges backends)
+      - `numpy` ≥ 1.12 (required for using the classy or DarkAges backends)
+      - `dill` (required for using the DarkAges backend)
+      - `pandas`, `numexpr` (required for using the MontePython backend)
+      - `h5py` (required to use hdf5 utilities located in gambit/Printers/scripts)
+
+</details>
+
+### Downloading GAMBIT
+
+GAMBIT source code can be obtained either by cloning the GitHub repository from the [GitHub page ⧉](https://github.com/GambitBSM) or by downloading a compressed `.zip` or `.tar.gz` file. In both cases you should download the most recent version available.
+
+##### Cloning the repository
+
+To clone the repository of version `*.*` into a specified `$FOLDER`, use the command:
+
+```
+git clone https://github.com/GambitBSM/gambit_*.*.git $FOLDER
+```
+
+##### Downloading compressed folders
+
+To instead download a `.zip` or `.tar.gz` file, visit the [releases page ⧉](https://github.com/GambitBSM/gambit_2.2/tags) or run one of the following commands:
+
+```
+wget https://github.com/GambitBSM/gambit_2.2/archive/refs/tags/v*.*.*.zip       # Download .zip file
+wget https://github.com/GambitBSM/gambit_2.2/archive/refs/tags/v*.*.*.tar.gz    # Download .tar.gz file
+```
+
+Note that these files have versions of the form `*.*.*`. Once downloaded, the files can be extracted via either:
+
+```bash
+tar -xvf v*.*.*.tar.gz    # Extract .tar.gz file
+unzip v*.*.*.zip          # Extract .zip file
+```
+
+### Building GAMBIT
+
+Navigate to the folder containing GAMBIT source code. Create a `build` directory and run Cmake:
+
+```
+mkdir build
+cd build
+cmake ..
+```
+
+{{< alert icon="ⓘ" context="info">}}
+
+**Info**: If you need to re-run Cmake, make sure to remove the `build` directory via `rm -r build` and start over. Otherwise Cmake will use the cached settings from the previous run.
+
+{{< /alert >}}
+
+{{< alert icon="⚠" context="danger">}}
+
+**Common Problems**: 
+
+- [Cmake can't find installed packages](/documentation/help/common_problems_and_questions#i-don-t-know-how-to-check-if-a-package-is-already-installed)
+- [GAMBIT builds extremely slowly](/documentation/help/common_problems_and_questions#gambit-builds-extremely-slowly)
+
+{{< /alert >}}
+

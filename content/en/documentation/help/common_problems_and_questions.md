@@ -35,7 +35,11 @@ sudo systemctl status docker     # Check status of daemon
 
 More information can be found on the [Docker Linux post-install page ⧉](https://docs.docker.com/engine/install/linux-postinstall/).
 
-##### I don't know how to install a package
+##### I don't know how to check if a package is already installed
+
+Before installing a dependency it is important to check if it is already present on your system, as multiple different installs of dependencies can cause issues during the build process. This can be done using the `whereis $PACKAGE_NAME` command which searches your system for the package's binary, source, or manual files. Additionally, the version number of many packages can be checked using `$PACKAGE_NAME --version`. 
+
+##### I don't know how to install packages
 
 <!--- ROSSTODO: instructions on building from source, binaries, header only, package managers, un taring etc -->
 
