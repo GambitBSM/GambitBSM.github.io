@@ -33,7 +33,11 @@ sudo systemctl restart docker    # Restart daemon
 sudo systemctl status docker     # Check status of daemon
 ```
 
-More information can be found on the [Docker Linux post-install page ⧉](https://docs.docker.com/engine/install/linux-postinstall/).
+{{< alert icon="ⓘ" context="info">}}
+
+**Info**: More information can be found on the [Docker Linux post-install page ⧉](https://docs.docker.com/engine/install/linux-postinstall/).
+
+{{< /alert >}}
 
 ##### I don't know how to check if a package is already installed
 
@@ -84,18 +88,46 @@ In general, package managers do not support installing packages to arbitrary dir
 See [I don't know how to install packages](/documentation/help/common_problems_and_questions#i-don-t-know-how-to-install-packages) for an example of building GSL from source. The `make install` command will attempt to install the package system-wide in the `/usr` or `/usr/local` directories, and if you do not have `sudo` privileges this will result in a `permission denied` error. To change the install directory, change the `prefix` flag of the `./configure` command:
 
 ```
-./configure -prefix=$INSTALL_DIRECTORY
+./configure --prefix=$INSTALL_DIRECTORY
 ```
 
-When installing Python packages using `pip`, it is good practice to use a virtual environment 
+When installing Python packages using `pip`, it is good practice to use a virtual environment. Python virtual environments allow Python packages to be installed in a specific folder, separate from the other packages already installed on the system. Provided that you already have Python installed, a folder containing virtual environments can be created like so:
 
-<!--- ROSSTODO: instructions on building to specific folders and python venv -->
+```
+python -m venv $FOLDER_PATH    # Create virtual environment
+cd $FOLDER_PATH                # Navigate to folder
+source bin/activate            # Run activation script
+pip install $PACKAGE           # Install package in virtual environment
+```
+
+Note that every terminal session you will need to re-run the activation script to work in the virtual environment.
+
+{{< alert icon="ⓘ" context="info">}}
+
+**Info**: A good tutorial on virtual environments can be found [here](https://realpython.com/python-virtual-environments-a-primer/).
+
+{{< /alert >}}
+
 
 ##### My system cannot find an installed package
 
 If you have installed a package but `$PACKAGE_NAME --version` or similar cannot detect any installed versions, then you may need to take extra steps so that your system can find the package. 
 
-<!--- ROSSTODO: Instructions on adding to path, using full executable paths, and aliases, whereis list -->
+The `PATH` variable contains a list of directories which are searched when the system is trying to find a package. This list can be viewed with the command `echo $PATH`. If a package is not in any of these directories then it will not be found by the system; this can be fixed by adding the folder containing the package to the `PATH` variable using:
+
+```
+export PATH=$PATH:$FOLDER_PATH
+```
+
+This will temporarily add a folder to the `PATH` variable. To make it permanent, you must add this command to your `.bashrc` file located in the `/home` directory.
+
+Alternatively, if you do not want to change the `PATH` variable then you can use full paths. For example, Docker commands can be run by replacing `docker` with the full path `/usr/bin/docker`. If you are using full paths frequently, you may wish to create a shortcut using the `alias` command, for example:
+
+```
+alias $SHORT_COMMAND=$LONG_COMMAND
+```
+
+This allows long commands (possible including full paths) to be invoked using a short, user-defined command. This effect only lasts until the end of the terminal session; to make it permanent it will also need to be added to the `.bashrc` file.
 
 ##### GAMBIT builds extremely slowly
 

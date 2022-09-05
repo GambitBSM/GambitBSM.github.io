@@ -23,7 +23,7 @@ weight: 30
 
 ### Installing compulsory dependencies
 
-GAMBIT has a number of compulsory dependencies, which must be installed for GAMBIT to be built and run. Provided for each dependency is some basic information and installation instructions.
+GAMBIT has a number of compulsory dependencies, which must be installed for GAMBIT to be built and run. Some basic information is provided for each dependency.
 
 {{< alert icon="⚠" context="danger">}}
 
@@ -67,7 +67,7 @@ One of:
 
   | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
   | --- | --- | --- | --- | --- |
-  | `gfortran` | [Yes ⧉](https://fortran-lang.org/learn/os_setup/install_gfortran#linux) | [Yes ⧉](https://gcc.gnu.org/wiki/GFortranBinaries) | [Yes ⧉](https://gcc.gnu.org/install/) as part of GCC | - |
+  | `gcc-gfortran` | [Yes ⧉](https://fortran-lang.org/learn/os_setup/install_gfortran#linux) | [Yes ⧉](https://gcc.gnu.org/wiki/GFortranBinaries) | [Yes ⧉](https://gcc.gnu.org/install/) as part of GCC | - |
   | `ifort` | No | Yes | No | Binaries can be downloaded as part of the [Intel oneAPI Base Toolkit ⧉](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html#gs.a3697a) (which also includes the ICC C++ compiler) or from the [standalone component page ⧉](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html). |
 </details>
 
@@ -85,7 +85,7 @@ One of:
 
 ##### Python + modules
 
-Python ≥ 2.7, and Python modules `future`, `datetime`, `pyyaml`, `os`, `re`, `sys`, `getopt`, `shutil`, and `itertools`
+Python ≥ 2.7, and Python modules `future`, `datetime`, `pyyaml`, `re`, `os`, `sys`, `getopt`, `shutil`, and `itertools`
 
 <details>
   <summary>More info</summary>
@@ -99,7 +99,7 @@ Python ≥ 2.7, and Python modules `future`, `datetime`, `pyyaml`, `os`, `re`, `
 
   It is good practice to install Python modules within a virtual environment rather than system-wide; see [I can't or don't want to install dependencies system-wide](/documentation/help/common_problems_and_questions#i-can-t-or-don-t-want-to-install-dependencies-system-wide). 
 
-  There are a number of Python package managers, however `pip` is the most common. If you have an up-to-date installation of Python then this should already be installed, otherwise refer to the [Pip installation page ⧉](https://pip.pypa.io/en/stable/installation/). If you have Python 3 installed then you can optionally use the command `pip3` in place of `pip`. The individual modules can be installed using `pip install $MODULE_NAME`, and a list of installed modules can be viewed using `pip list`. Note that `os`, `sys`, `getopt`, `shutil`, and `itertools` are part of the Python Standard Library and should already be packaged with Python (attempting to install them with `pip` will result in `ERROR: No matching distribution found for $MODULE_NAME`).
+  There are a number of Python package managers, however `pip` is the most common. If you have an up-to-date installation of Python then this should already be installed, otherwise refer to the [Pip installation page ⧉](https://pip.pypa.io/en/stable/installation/). If you have Python 3 installed then you can optionally use the command `pip3` in place of `pip`. The individual modules can be installed using `pip install $MODULE_NAME`, and a list of installed modules can be viewed using `pip list`. Note that `re`, `os`, `sys`, `getopt`, `shutil`, and `itertools` are part of the Python Standard Library and should already be packaged with Python (attempting to install them with `pip` will result in `ERROR: No matching distribution found for $MODULE_NAME`).
 
   {{< alert icon="ⓘ" context="info">}}
 
@@ -127,7 +127,7 @@ Python ≥ 2.7, and Python modules `future`, `datetime`, `pyyaml`, `os`, `re`, `
 
   | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
   | --- | --- | --- | --- | --- |
-  | `boost` | Yes | No | [Yes ⧉](https://www.boost.org/doc/libs/1_80_0/tools/build/doc/html/index.html#bbv2.installation) | - |
+  | `boost` | Yes | No | [Yes ⧉](https://www.boost.org/doc/libs/1_80_0/more/getting_started/unix-variants.html) | Most of the components of Boost are header-only. |
 </details>
 
 ##### GSL (GNU Scientific Library) ≥ 2.1
@@ -244,16 +244,49 @@ cmake ..
 
 {{< alert icon="ⓘ" context="info">}}
 
-**Info**: If you need to re-run Cmake, make sure to remove the `build` directory via `rm -r build` and start over. Otherwise Cmake will use the cached settings from the previous run.
+**Info**: 
+
+- If you need to re-run Cmake, make sure to remove the `build` directory via `rm -r build` and start over. Otherwise Cmake will use the cached settings from the previous run.
+- Every time you run CMake, a detailed log file is generated at `/build/CMakeFiles/CMakeOutput.log`. This is useful for debugging.
 
 {{< /alert >}}
 
+The `cmake` command will automatically try to find the packages it needs to build GAMBIT. However, it will probably need some help via optional flags. Commonly used flags are listed below; You can add these to the `cmake` command using the syntax `FLAG=VALUE`.
+  
+  | Flag | Value | Description |
+  | --- | --- | --- |
+  | `-DCMAKE_BUILD_TYPE` | `Release`, `Debug` or `None` | Sets the build type |
+  | `-Ditch` | Semi-colon separated list of `Bits` and other components | Ditches parts of GAMBIT that you don't intend to use |
+  | `-DBoost_INCLUDE_DIR` | Path | Shows CMake where to find the Boost `include` directory |
+  | `-DEIGEN3_INCLUDE_DIR` | Path | Shows CMake where to find the Eigen `include` directory |
+  | `-DPYTHON_EXECUTABLE` | Path | Shows CMake where to find the Python executable. If working from a virtual environment, this will default to the executable in the environment's directory |
+  | `-DPYTHON_INCLUDE_DIR` | Path | Shows CMake where to find the Python `include` directory |
+  | `-DPYTHON_LIBRARY` | Path | Shows CMake where to find the Python library folder |
+  | `-DGSL_INCLUDE_DIR` | Path | Shows CMake where to find the GSL `include` directory |
+  | `-DGSL_LIBRARY` | Path | Shows CMake where to find the GSL library folder |
+  | `-DBUILD_FS_MODELS` | Semi-colon separated list of models | Defines which FlexibleSUSY models to build (model names must correspond to directories in `/contrib/MassSpectra/flexiblesusy/models`) |
+  | `-DCMAKE_C_COMPILER` | Path | Sets the C compiler |
+  | `-DCMAKE_C_flags` | C compiler flags | Adds additional C compiler flags |
+  | `-DCMAKE_CXX_COMPILER` | Path | Sets the C++ compiler |
+  | `-DCMAKE_CXX_FLAGS` | C++ compiler flags | Adds additional C++ compiler flags |
+  | `-DCMAKE_Fortran_COMPILER` | Path | Sets the Fortran compiler |
+  | `-DCMAKE_Fortran_FLAGS` | Fortran compiler flags | Adds additional Fortran compiler flags |
+  | `-DWITH_HEPMC` | `On` or `Off` | Switches HepMC on or off |
+  | `-DWITH_RESTFRAMES` | `On` or `Off` | Switches RestFrames on or off |
+  | `-DWITH_ROOT` | `On` or `Off` | Switches ROOT on or off |
+  | `-DPYTHIA_OPT` | `On` or `Off` | Switches Intel's multi-file interprocedural optimisation on or off (for use with Pythia) |
+  | `-DCMAKE_VERBOSE_MAKEFILE` | `On` or `Off` | Switches verbose build output on or off, useful for debugging |
+  | `-DWITH_MPI` | `On` or `Off` | Switches MPI on or off |
+  | `-DSUPPRESS_LIBRARY_WARNINGS` | `On` or `Off` | Enables or disables suppression of some common compiler warnings that are due to external library headers |
+  | `-DHAVE_GRAPHVIZ` | `On` or `Off` | Enables or disables the creation of Graphviz files |
+
+A full list of flags and their values can be found at `/build/CMakeCache.txt` after every run.
+
+Examples of `cmake` commands can be found on the [Configuration Examples](/documentation/help/configuration_examples) page.
+
 {{< alert icon="⚠" context="danger">}}
 
-**Common Problems**: 
-
-- [Cmake can't find installed packages](/documentation/help/common_problems_and_questions#i-don-t-know-how-to-check-if-a-package-is-already-installed)
-- [GAMBIT builds extremely slowly](/documentation/help/common_problems_and_questions#gambit-builds-extremely-slowly)
+**Common Problem**: [GAMBIT builds extremely slowly](/documentation/help/common_problems_and_questions#gambit-builds-extremely-slowly)
 
 {{< /alert >}}
 
