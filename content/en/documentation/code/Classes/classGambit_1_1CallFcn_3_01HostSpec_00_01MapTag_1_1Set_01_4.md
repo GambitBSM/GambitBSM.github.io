@@ -1,6 +1,6 @@
 ---
 title: 'class Gambit::CallFcn< HostSpec, MapTag::Set >'
-description: 'Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling 'setter' functions. '
+description: 'Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling setter functions. '
 
 ---
 
