@@ -21,14 +21,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        # Modified doxybook2 source code is present in the repo, so it must be built 
-      - name: Build doxybook2
-        run: cd doxybook2
-          && vcpkg install --triplet x64-linux $(cat vcpkg.txt)
-          && rm -r build
-          && mkdir build
-          && cmake -B ./build -G "Unix Makefiles" --debug-find -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/ -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/
-          && cmake --build ./build --config MinSizeRel
+        # Modified doxybook2 source code is present in the repo, so it must be built (uncomment if this is necessary)
+      #- name: Build doxybook2
+      #  run: cd doxybook2
+      #    && vcpkg install --triplet x64-linux $(cat vcpkg.txt)
+      #    && rm -r build
+      #    && mkdir build
+      #    && cmake -B ./build -G "Unix Makefiles" --debug-find -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/ -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/
+      #    && cmake --build ./build --config MinSizeRel
       - name: Shallow clone repo
         run: git clone --depth 1 ${{ inputs.repo_to_document }} gambit_source
       - name: Generate doxygen xml
