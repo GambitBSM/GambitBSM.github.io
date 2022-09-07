@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Utils_1_1FileLock" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Utils::FileLock</compoundname>
+    <derivedcompoundref refid="classGambit_1_1Utils_1_1ProcessLock" prot="public" virt="non-virtual">Gambit::Utils::ProcessLock</derivedcompoundref>
+    <includes refid="file__lock_8hpp" local="no">file_lock.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1FileLock_1a8bcce9a6c8168d1cf20ce1dfd751c48a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Utils::FileLock::FileLock</definition>
+        <argsstring>(const std::string &amp;fname, const bool harderrs=false)</argsstring>
+        <name>FileLock</name>
+        <qualifiedname>Gambit::Utils::FileLock::FileLock</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>harderrs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Should check for errors opening the file. List of error codes is kind of long though, let people look it up themselves for now...</para>
+<para>Error opening file!</para>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="66" column="11" bodyfile="Utils/src/file_lock.cpp" bodystart="77" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1FileLock_1a4f030db82976cb88db9737456dfb4c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Utils::FileLock::~FileLock</definition>
+        <argsstring>()</argsstring>
+        <name>~FileLock</name>
+        <qualifiedname>Gambit::Utils::FileLock::~FileLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor Closing the file descriptor will automatically release any lock we might have </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Error closing file!</para>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="70" column="11" bodyfile="Utils/src/file_lock.cpp" bodystart="96" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1FileLock_1a40dc7048003861d5e543f4bf6876f0dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Utils::FileLock::get_lock</definition>
+        <argsstring>()</argsstring>
+        <name>get_lock</name>
+        <qualifiedname>Gambit::Utils::FileLock::get_lock</qualifiedname>
+        <briefdescription>
+<para>Obtain lock (or wait if lock cannot be obtained, and then obtain lock) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Already have the lock!</para>
+<para>Ok it seems there are some errors that we should handle, and then just try again to obtain the lock.</para>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="73" column="16" bodyfile="Utils/src/file_lock.cpp" bodystart="111" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1FileLock_1a69e8e2574575749e13d78b30af04e2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Utils::FileLock::release_lock</definition>
+        <argsstring>()</argsstring>
+        <name>release_lock</name>
+        <qualifiedname>Gambit::Utils::FileLock::release_lock</qualifiedname>
+        <briefdescription>
+<para>Release a lock (error if no lock held) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Don&apos;t have the lock!</para>
+<para>Release the lock</para>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="76" column="16" bodyfile="Utils/src/file_lock.cpp" bodystart="164" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1FileLock_1a8a6da1bd087bec267f997d71ba24cb0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; Gambit::Utils::FileLock::get_filename</definition>
+        <argsstring>() const</argsstring>
+        <name>get_filename</name>
+        <qualifiedname>Gambit::Utils::FileLock::get_filename</qualifiedname>
+        <briefdescription>
+<para>Getter for lockfile name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="79" column="29" bodyfile="Utils/src/file_lock.cpp" bodystart="198" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1FileLock_1a8b59a8f7f94d2d2270f7dd47accc4afa" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Gambit::Utils::FileLock::my_lock_fname</definition>
+        <argsstring></argsstring>
+        <name>my_lock_fname</name>
+        <qualifiedname>Gambit::Utils::FileLock::my_lock_fname</qualifiedname>
+        <briefdescription>
+<para>Name for the managed lock file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="53" column="29" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1FileLock_1a19458d090033f69ce6211d474a5d2616" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Gambit::Utils::FileLock::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <qualifiedname>Gambit::Utils::FileLock::fd</qualifiedname>
+        <briefdescription>
+<para>C file descriptor for the lock file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="56" column="21" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1FileLock_1ad33147a353e9fef6afd4e611c5f7006d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Utils::FileLock::have_lock</definition>
+        <argsstring></argsstring>
+        <name>have_lock</name>
+        <qualifiedname>Gambit::Utils::FileLock::have_lock</qualifiedname>
+        <briefdescription>
+<para>Bool to indicate if we already have the lock. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="59" column="16" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1FileLock_1acd52d0616883073de848ac43cf7acc42" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Utils::FileLock::hard_errors</definition>
+        <argsstring></argsstring>
+        <name>hard_errors</name>
+        <qualifiedname>Gambit::Utils::FileLock::hard_errors</qualifiedname>
+        <briefdescription>
+<para>Bool to indicate that hard errors should be thrown rather than gambit errors (e.g. for use in loggers) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="62" column="16" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to manage a file lock Lock will be automatically released if this object is destructed </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::Utils::FileLock</label>
+        <link refid="classGambit_1_1Utils_1_1FileLock"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Utils::ProcessLock</label>
+        <link refid="classGambit_1_1Utils_1_1ProcessLock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Utils/include/gambit/Utils/file_lock.hpp" line="49" column="7" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="50" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a19458d090033f69ce6211d474a5d2616" prot="private" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>fd</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a8bcce9a6c8168d1cf20ce1dfd751c48a" prot="public" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>FileLock</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a8a6da1bd087bec267f997d71ba24cb0f" prot="public" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>get_filename</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a40dc7048003861d5e543f4bf6876f0dd" prot="public" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>get_lock</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1acd52d0616883073de848ac43cf7acc42" prot="private" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>hard_errors</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1ad33147a353e9fef6afd4e611c5f7006d" prot="private" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>have_lock</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a8b59a8f7f94d2d2270f7dd47accc4afa" prot="private" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>my_lock_fname</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a69e8e2574575749e13d78b30af04e2fc" prot="public" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>release_lock</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a4f030db82976cb88db9737456dfb4c42" prot="public" virt="non-virtual"><scope>Gambit::Utils::FileLock</scope><name>~FileLock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

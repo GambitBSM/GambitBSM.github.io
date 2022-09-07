@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Scanner::__find_variadic_type_convert__< b, Tc, T1, T... >
 
 
 
@@ -64,4 +63,4 @@ static const bool value = find_variadic_type_convert<Tc, T...>::value;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

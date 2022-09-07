@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="Models_2src_2models_2SuperRenormHP_8cpp" kind="file" language="C++">
+    <compoundname>Models/src/models/SuperRenormHP.cpp</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Super Renormalizable Higgs Portal DM</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Iñigo Saez Casares (<ulink url="mailto:inigo.saez_casares@ens-paris-saclay.fr">inigo.saez_casares@ens-paris-saclay.fr</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2019 December</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Super<sp/>Renormalizable<sp/>Higgs<sp/>Portal<sp/>DM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Iñigo<sp/>Saez<sp/>Casares</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(inigo.saez_casares@ens-paris-saclay.fr)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2019<sp/>December</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>Temporarily<sp/>disabled<sp/>until<sp/>project<sp/>is<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">#include<sp/>&lt;cmath&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment">#include<sp/>&quot;gambit/Models/model_macros.hpp&quot;</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">#include<sp/>&quot;gambit/Models/model_helpers.hpp&quot;</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">#include<sp/>&quot;gambit/Logs/logger.hpp&quot;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">#include<sp/>&quot;gambit/Utils/numerical_constants.hpp&quot;</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">#include<sp/>&quot;gambit/Models/models/SuperRenormHP.hpp&quot;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">#define<sp/>MODEL<sp/>SuperRenormHP</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">#define<sp/>FRIEND<sp/>ModifiedGravityYukawa</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment">void<sp/>MODEL_NAMESPACE::SuperRenormHP_to_ModifiedGravityYukawa<sp/>(const<sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;friendparams)</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/>USE_MODEL_PIPE(FRIEND)<sp/>//<sp/>get<sp/>pipe<sp/>for<sp/>&quot;interpret<sp/>as<sp/>friend&quot;<sp/>function</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>logger()&lt;&lt;&quot;Running<sp/>interpret_as_friend<sp/>calculations<sp/>for<sp/>SuperRenormHP<sp/>-&gt;<sp/>ModifiedGravityYukawa<sp/>...&quot;&lt;&lt;EOM;</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"></highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/>const<sp/>Higgs_Nucleon_coupling_fN<sp/>couplings<sp/>=<sp/>*Dep::get_Higgs_Nucleon_coupling_fN;</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/>const<sp/>double<sp/>fN<sp/>=<sp/>(couplings.proton+couplings.neutron)/2.;</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/>const<sp/>double<sp/>v<sp/>=<sp/>246;<sp/>//<sp/>electroweak<sp/>vev<sp/>[GeV]</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/>const<sp/>double<sp/>mS<sp/>=<sp/>myparams[&quot;mS&quot;],<sp/>theta<sp/>=<sp/>myparams[&quot;theta&quot;];</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/>const<sp/>double<sp/>f<sp/>=<sp/>v/theta/fN;</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/>const<sp/>double<sp/>Mp<sp/>=<sp/>Gambit::m_planck;<sp/>//<sp/>Planck<sp/>mass<sp/>[GeV]</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/>const<sp/>double<sp/>hbar<sp/>=<sp/>Gambit::hbar;<sp/><sp/>//<sp/>reduced<sp/>Planck<sp/>constant<sp/>[GeV.s]</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/>const<sp/>double<sp/>cs<sp/>=<sp/>Gambit::s2cm*1e-2;<sp/>//<sp/>speed<sp/>of<sp/>light<sp/>[m/s]</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/>friendparams.setValue(&quot;alpha&quot;,<sp/>pow(Mp/f,<sp/>2)/4./Gambit::pi);</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/>friendparams.setValue(&quot;lambda&quot;,<sp/>hbar*cs/mS);</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">#undef<sp/>FRIEND</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment">#define<sp/>FRIEND<sp/>DecayingDM_mixture</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">void<sp/>MODEL_NAMESPACE::SuperRenormHP_to_DecayingDM_mixture<sp/>(const<sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;friendparams)</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/>USE_MODEL_PIPE(FRIEND)<sp/>//<sp/>get<sp/>pipe<sp/>for<sp/>&quot;interpret<sp/>as<sp/>friend&quot;<sp/>function</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/>logger()&lt;&lt;&quot;Running<sp/>interpret_as_friend<sp/>calculations<sp/>for<sp/>SuperRenormHP<sp/>-&gt;<sp/>DecayingDM_mixture<sp/>...&quot;&lt;&lt;EOM;</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/>friendparams.setValue(&quot;mass&quot;,<sp/>myparams[&quot;mS&quot;]);</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/>friendparams.setValue(&quot;lifetime&quot;,<sp/>*Dep::DM_lifetime);</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/>friendparams.setValue(&quot;fraction&quot;,<sp/>*Dep::RD_fraction);</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/>friendparams.setValue(&quot;BR_ph&quot;,<sp/>*Dep::DecDM_branching_ph);</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/>friendparams.setValue(&quot;BR_el&quot;,<sp/>*Dep::DecDM_branching_el);</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">#undef<sp/>FRIEND</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">#undef<sp/>MODEL</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Models/src/models/SuperRenormHP.cpp"/>
+  </compounddef>
+</doxygen>

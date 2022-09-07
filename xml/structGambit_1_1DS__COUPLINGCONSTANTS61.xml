@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="215" column="15" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="215" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__COUPLINGCONSTANTS61_1a8fc4626d98a7a66958a083713de473fc" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 12 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 12 &gt;</type>
         <definition>Farray&lt; Fdouble,1,12 &gt; Gambit::DS_COUPLINGCONSTANTS61::yukawa</definition>
         <argsstring></argsstring>
         <name>yukawa</name>
@@ -106,6 +106,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 12 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_COUPLINGCONSTANTS61</label>
+        <link refid="structGambit_1_1DS__COUPLINGCONSTANTS61"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>yukawa</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="210" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="211" bodyend="219"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__COUPLINGCONSTANTS61_1aada7c51ca25607081c8042ecaa5a4f7c" prot="public" virt="non-virtual"><scope>Gambit::DS_COUPLINGCONSTANTS61</scope><name>alph3</name></member>

@@ -26,7 +26,7 @@
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>likelihood_types<sp/>=<sp/>[get_data_from_yaml(path)[</highlight><highlight class="stringliteral">&apos;HL_Type&apos;</highlight><highlight class="normal">]<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>path<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>path_to_yaml]</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>likelihood_variable_names<sp/>=<sp/>[</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>likelihood_type[3].lower()<sp/>+<sp/>likelihood_type[4:]<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;_&apos;</highlight><highlight class="normal"><sp/>+<sp/>str(i)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>likelihood_type[3].lower()<sp/>+<sp/>likelihood_type[4:]<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;_&apos;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>(i)</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>likelihood_type<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(likelihood_types)</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
@@ -122,7 +122,7 @@
 <codeline lineno="112"><highlight class="stringliteral"><sp/><sp/></highlight><highlight class="comment">#define<sp/>FUNCTION<sp/>%s</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/>START_FUNCTION(double);</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/>//<sp/>TODO:<sp/>add<sp/>dependencies</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/>NEEDS_CLASSES_FROM(HepLike);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="module__macros__common_8hpp_1a92dcf77fe1f3656a90aa0ef9eef4a06f" kindref="member">NEEDS_CLASSES_FROM</ref>(HepLike);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>%<sp/>(capability_name,<sp/>capability_name)</highlight></codeline>

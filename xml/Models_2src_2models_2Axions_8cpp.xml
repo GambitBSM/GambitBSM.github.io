@@ -1,0 +1,971 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="Models_2src_2models_2Axions_8cpp" kind="file" language="C++">
+    <compoundname>Models/src/models/Axions.cpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes refid="model__macros_8hpp" local="yes">gambit/Models/model_macros.hpp</includes>
+    <includes refid="model__helpers_8hpp" local="yes">gambit/Models/model_helpers.hpp</includes>
+    <includes refid="logger_8hpp" local="yes">gambit/Logs/logger.hpp</includes>
+    <includes refid="numerical__constants_8hpp" local="yes">gambit/Utils/numerical_constants.hpp</includes>
+    <includes refid="Axions_8hpp" local="yes">gambit/Models/models/Axions.hpp</includes>
+    <incdepgraph>
+      <node id="55">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>gambit/Elements/ini_functions.hpp</label>
+        <link refid="Elements_2include_2gambit_2Elements_2ini__functions_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>gambit/Elements/module_macros_common.hpp</label>
+        <link refid="module__macros__common_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>gambit/Elements/module_macros_inmodule_defs.hpp</label>
+        <link refid="module__macros__inmodule__defs_8hpp"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>gambit/Elements/safety_bucket.hpp</label>
+        <link refid="safety__bucket_8hpp"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="69">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gambit/Models/claw_singleton.hpp</label>
+        <link refid="claw__singleton_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>gambit/Models/model_helpers.hpp</label>
+        <link refid="model__helpers_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/Models/model_macros.hpp</label>
+        <link refid="model__macros_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gambit/Models/models.hpp</label>
+        <link refid="models_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>gambit/Models/models/Axions.hpp</label>
+        <link refid="Axions_8hpp"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>gambit/Models/models/CosmoEnergyInjection.hpp</label>
+        <link refid="CosmoEnergyInjection_8hpp"/>
+      </node>
+      <node id="4">
+        <label>gambit/Models/orphan.hpp</label>
+        <link refid="orphan_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>gambit/Models/safe_param_map.hpp</label>
+        <link refid="safe__param__map_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Axions.cpp</label>
+        <link refid="Models_2src_2models_2Axions_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="37">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>gambit/Utils/numerical_constants.hpp</label>
+        <link refid="numerical__constants_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="58">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>algorithm</label>
+      </node>
+      <node id="51">
+        <label>array</label>
+      </node>
+      <node id="61">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="60">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="21">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="74">
+        <label>boost/preprocessor/comparison/greater.hpp</label>
+      </node>
+      <node id="15">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="75">
+        <label>boost/preprocessor/control/iif.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="76">
+        <label>boost/preprocessor/repetition/enum.hpp</label>
+      </node>
+      <node id="52">
+        <label>boost/preprocessor/seq/for_each.hpp</label>
+      </node>
+      <node id="77">
+        <label>boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="23">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="24">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="78">
+        <label>boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="14">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="45">
+        <label>cassert</label>
+      </node>
+      <node id="56">
+        <label>chrono</label>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="35">
+        <label>complex</label>
+      </node>
+      <node id="34">
+        <label>cstring</label>
+      </node>
+      <node id="50">
+        <label>deque</label>
+      </node>
+      <node id="38">
+        <label>exception</label>
+      </node>
+      <node id="49">
+        <label>forward_list</label>
+      </node>
+      <node id="43">
+        <label>fstream</label>
+      </node>
+      <node id="79">
+        <label>gambit/Elements/elements_extras.hpp</label>
+      </node>
+      <node id="59">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="42">
+        <label>iostream</label>
+      </node>
+      <node id="67">
+        <label>limits</label>
+      </node>
+      <node id="48">
+        <label>list</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="62">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="33">
+        <label>omp.h</label>
+      </node>
+      <node id="71">
+        <label>ostream</label>
+      </node>
+      <node id="9">
+        <label>set</label>
+      </node>
+      <node id="32">
+        <label>sstream</label>
+      </node>
+      <node id="81">
+        <label>stdexcept</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="44">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>unistd.h</label>
+      </node>
+      <node id="46">
+        <label>unordered_map</label>
+      </node>
+      <node id="47">
+        <label>unordered_set</label>
+      </node>
+      <node id="39">
+        <label>utility</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="65">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>GeneralCosmoALP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="27" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a97f6d7228a04ec71206c66e5cfe4cd57" prot="public" static="no">
+        <name>FRIEND</name>
+        <initializer>DecayingDM_photon</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="28" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>CosmoALP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="41" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>GeneralALP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="62" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>CosmoALP_gg_tau</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="82" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>QCDAxion</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="102" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>KSVZAxion</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="124" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>DFSZAxion_I</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="148" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>DFSZAxion_II</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="169" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Models_2src_2models_2Axions_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>ConstantMassALP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models/Axions.cpp" line="190" column="9" bodyfile="Models/src/models/Axions.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Models for QCD axions and axion-like particles.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Sebastian Hoof (<ulink url="mailto:hoof@uni-goettingen.de">hoof@uni-goettingen.de</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2019 Feb </para>
+</simplesect>
+<simplesect kind="date"><para>2020 June-July, Oct</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Models<sp/>for<sp/>QCD<sp/>axions<sp/>and<sp/>axion-like<sp/>particles.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Sebastian<sp/>Hoof</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(hoof@uni-goettingen.de)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2019<sp/>Feb</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\date<sp/>2020<sp/>June-July,<sp/>Oct</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="model__macros_8hpp" kindref="compound">gambit/Models/model_macros.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Models/model_helpers.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logger_8hpp" kindref="compound">gambit/Logs/logger.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="numerical__constants_8hpp" kindref="compound">gambit/Utils/numerical_constants.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Axions_8hpp" kindref="compound">gambit/Models/models/Axions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>GeneralCosmoALP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FRIEND<sp/>DecayingDM_photon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::GeneralCosmoALP_to_DecayingDM_photon<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;friendparams)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="model__macros_8hpp_1ad262c8c133ca0bd54115adabb5cd7eb4" kindref="member">USE_MODEL_PIPE</ref>(FRIEND)<sp/></highlight><highlight class="comment">//<sp/>get<sp/>pipe<sp/>for<sp/>&quot;interpret<sp/>as<sp/>friend&quot;<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_friend<sp/>calculations<sp/>for<sp/>GeneralCosmoALP<sp/>-&gt;<sp/>DecayingDM_photon<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>friendparams.setValue(</highlight><highlight class="stringliteral">&quot;lifetime&quot;</highlight><highlight class="normal">,<sp/>*Dep::lifetime);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>friendparams.setValue(</highlight><highlight class="stringliteral">&quot;mass&quot;</highlight><highlight class="normal">,<sp/>1e-9*myparams[</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">]);<sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>units<sp/>from<sp/>eV<sp/>(GeneralCosmoALP)<sp/>to<sp/>GeV<sp/>(DecayingDM_photon)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>friendparams.setValue(</highlight><highlight class="stringliteral">&quot;fraction&quot;</highlight><highlight class="normal">,<sp/>*Dep::DM_fraction);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>FRIEND</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>CosmoALP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::CosmoALP_to_GeneralCosmoALP<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;parentparams)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_parent<sp/>calculations<sp/>for<sp/>CosmoALP<sp/>-&gt;<sp/>GeneralCosmoALP<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha_red<sp/>=<sp/>alpha_EM/(2.0*pi);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fa<sp/><sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gagg&quot;</highlight><highlight class="normal">,<sp/>alpha_red*myparams[</highlight><highlight class="stringliteral">&quot;Cagg&quot;</highlight><highlight class="normal">]/fa);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaee&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaN&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">,<sp/>fa);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">,<sp/>1E99);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;f0_thermal&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;f0_thermal&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;T_R&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;T_R&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>GeneralALP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::GeneralALP_to_GeneralCosmoALP<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;parentparams)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_parent<sp/>calculations<sp/>for<sp/>GeneralALP<sp/>-&gt;<sp/>GeneralCosmoALP<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gagg&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;gagg&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaee&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;gaee&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaN&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;gaN&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>f0_thermal<sp/>=<sp/>0,<sp/>i.e.<sp/>no<sp/>thermal<sp/>component.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;f0_thermal&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>extremely<sp/>high<sp/>reheating<sp/>temperature<sp/>to<sp/>guarantee<sp/>that<sp/>Tosc<sp/>&lt;<sp/>T_R</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;T_R&quot;</highlight><highlight class="normal">,<sp/>1.0E99);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>CosmoALP_gg_tau</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::CosmoALP_gg_tau_to_GeneralCosmoALP<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;parentparams)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_parent<sp/>calculations<sp/>for<sp/>CosmoALP_gg_tau<sp/>-&gt;<sp/>GeneralCosmoALP<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>coupling<sp/>out<sp/>of<sp/>the<sp/>lifetime<sp/>and<sp/>mass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gagg&quot;</highlight><highlight class="normal">,<sp/>sqrt(64e27<sp/>*<sp/>pi<sp/>*<sp/>hbar/myparams[</highlight><highlight class="stringliteral">&quot;tau&quot;</highlight><highlight class="normal">]<sp/>/<sp/><ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(myparams[</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">],3))<sp/>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>matter<sp/>couplings<sp/>to<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaee&quot;</highlight><highlight class="normal">,<sp/>0.0);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaN&quot;</highlight><highlight class="normal">,<sp/>0.0);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;f0_thermal&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;f0_thermal&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;T_R&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;T_R&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>QCDAxion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::QCDAxion_to_GeneralALP<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;parentparams)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_parent<sp/>calculations<sp/>for<sp/>QCDAxion<sp/>-&gt;<sp/>GeneralALP<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha_red<sp/>=<sp/>alpha_EM/(2.0*pi);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fa<sp/><sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>L2<sp/><sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;LambdaChi&quot;</highlight><highlight class="normal">]*myparams[</highlight><highlight class="stringliteral">&quot;LambdaChi&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>EoN<sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;EoverN&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>CG<sp/><sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaggQCD&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gagg&quot;</highlight><highlight class="normal">,<sp/>alpha_red*std::fabs(EoN-CG)/fa);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaee&quot;</highlight><highlight class="normal">,<sp/>m_electron*myparams[</highlight><highlight class="stringliteral">&quot;Caee&quot;</highlight><highlight class="normal">]/fa);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaN&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaN&quot;</highlight><highlight class="normal">]/fa);<sp/></highlight><highlight class="comment">//<sp/>N.B.<sp/>the<sp/>energy<sp/>scale<sp/>of<sp/>the<sp/>&apos;nucleon<sp/>mass&apos;<sp/>is<sp/>~<sp/>1<sp/>GeV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">,<sp/>fa);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">,<sp/>1E+3*L2/fa);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>KSVZAxion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::KSVZAxion_to_QCDAxion<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;parentparams)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_parent<sp/>calculations<sp/>for<sp/>KSVZAxion<sp/>-&gt;<sp/>QCDAxion<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>prefactor<sp/>=<sp/>3.0*alpha_EM*alpha_EM/(2.0*pi);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale<sp/><sp/><sp/><sp/><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>EoN<sp/><sp/><sp/><sp/><sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;EoverN&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>CaggQCD<sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaggQCD&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fa<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;EoverN&quot;</highlight><highlight class="normal">,<sp/>EoN);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;CaggQCD&quot;</highlight><highlight class="normal">,<sp/>CaggQCD);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Caee&quot;</highlight><highlight class="normal">,<sp/>prefactor*(EoN*std::log(fa/m_electron)<sp/>-<sp/>CaggQCD*std::log(scale/m_electron)));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;CaN&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaN&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">,<sp/>fa);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;LambdaChi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;LambdaChi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>DFSZAxion_I</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::DFSZAxion_I_to_QCDAxion<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;parentparams)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_parent<sp/>calculations<sp/>for<sp/>DFSZAxion<sp/>I<sp/>-&gt;<sp/>QCDAxion<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>angle<sp/>=<sp/>std::atan(myparams[</highlight><highlight class="stringliteral">&quot;tanbeta&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s2<sp/><sp/><sp/><sp/>=<sp/>std::sin(angle);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s2<sp/><sp/><sp/><sp/>=<sp/>s2*s2;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;EoverN&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;EoverN&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;CaggQCD&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaggQCD&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Caee&quot;</highlight><highlight class="normal">,<sp/>s2/3.0);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;CaN&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaN&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;LambdaChi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;LambdaChi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>DFSZAxion_II</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::DFSZAxion_II_to_QCDAxion<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;parentparams)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_parent<sp/>calculations<sp/>for<sp/>DFSZAxion<sp/>II<sp/>-&gt;<sp/>QCDAxion<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>angle<sp/>=<sp/>std::atan(myparams[</highlight><highlight class="stringliteral">&quot;tanbeta&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s2<sp/><sp/><sp/><sp/>=<sp/>std::sin(angle);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s2<sp/><sp/><sp/><sp/>=<sp/>s2*s2;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;EoverN&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;EoverN&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;CaggQCD&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaggQCD&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Caee&quot;</highlight><highlight class="normal">,<sp/>(1.0-s2)/3.0);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;CaN&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaN&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;LambdaChi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;LambdaChi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>ConstantMassALP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODEL_NAMESPACE::ConstantMassALP_to_GeneralALP<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myparams,<sp/>ModelParameters<sp/>&amp;parentparams)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>interpret_as_parent<sp/>calculations<sp/>for<sp/>ConstantMassALP<sp/>-&gt;<sp/>GeneralALP<sp/>...&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha_red<sp/>=<sp/>alpha_EM/(2.0*pi);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>L2<sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;Lambda&quot;</highlight><highlight class="normal">]*myparams[</highlight><highlight class="stringliteral">&quot;Lambda&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fa<sp/>=<sp/>myparams[</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gagg&quot;</highlight><highlight class="normal">,<sp/>alpha_red*myparams[</highlight><highlight class="stringliteral">&quot;Cagg&quot;</highlight><highlight class="normal">]/fa);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaee&quot;</highlight><highlight class="normal">,<sp/>m_electron*myparams[</highlight><highlight class="stringliteral">&quot;Caee&quot;</highlight><highlight class="normal">]/fa);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;gaN&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;CaN&quot;</highlight><highlight class="normal">]/fa);<sp/></highlight><highlight class="comment">//<sp/>N.B.<sp/>the<sp/>energy<sp/>scale<sp/>of<sp/>the<sp/>&apos;nucleon<sp/>mass&apos;<sp/>is<sp/>~<sp/>1<sp/>GeV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;fa&quot;</highlight><highlight class="normal">,<sp/>fa);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;ma0&quot;</highlight><highlight class="normal">,<sp/>1E+3*L2/fa);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;Tchi&quot;</highlight><highlight class="normal">,<sp/>1.0E99);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;beta&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>parentparams.setValue(</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">,<sp/>myparams[</highlight><highlight class="stringliteral">&quot;thetai&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight></codeline>
+    </programlisting>
+    <location file="Models/src/models/Axions.cpp"/>
+  </compounddef>
+</doxygen>

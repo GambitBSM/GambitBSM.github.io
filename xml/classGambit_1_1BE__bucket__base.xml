@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1BE__bucket__base" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::BE_bucket_base</compoundname>
+    <basecompoundref refid="classGambit_1_1safety__bucket__base" prot="public" virt="non-virtual">Gambit::safety_bucket_base</basecompoundref>
+    <derivedcompoundref refid="classGambit_1_1BEfunction__bucket__common" prot="public" virt="non-virtual">Gambit::BEfunction_bucket_common&lt; TYPE(*)(ARGS...), TYPE, ARGS... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1BEfunction__bucket__common" prot="public" virt="non-virtual">Gambit::BEfunction_bucket_common&lt; variadic_ptr&lt; TYPE, ARGS... &gt;::type, TYPE, ARGS... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1BEfunction__bucket__common" prot="public" virt="non-virtual">Gambit::BEfunction_bucket_common&lt; PTR_TYPE, TYPE, ARGS &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1BEvariable__bucket" prot="public" virt="non-virtual">Gambit::BEvariable_bucket&lt; TYPE &gt;</derivedcompoundref>
+    <includes refid="safety__bucket_8hpp" local="no">safety_bucket.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1BE__bucket__base_1ae5c449322eb28abe66d42d511d9287a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::BE_bucket_base::BE_bucket_base</definition>
+        <argsstring>(str mym, str myf, str me)</argsstring>
+        <name>BE_bucket_base</name>
+        <qualifiedname>Gambit::BE_bucket_base::BE_bucket_base</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>mym</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>myf</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classGambit_1_1BE__bucket__base" kindref="compound">BE_bucket_base</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="186" column="7" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="186" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1BE__bucket__base_1ac17b7f1b876919f76ac40682fe92761f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::BE_bucket_base::backend</definition>
+        <argsstring>()</argsstring>
+        <name>backend</name>
+        <qualifiedname>Gambit::BE_bucket_base::backend</qualifiedname>
+        <briefdescription>
+<para>Get backend name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="190" column="11" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1BE__bucket__base_1a3a49b809dc642941b82b8cd55e9c8d6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::BE_bucket_base::version</definition>
+        <argsstring>()</argsstring>
+        <name>version</name>
+        <qualifiedname>Gambit::BE_bucket_base::version</qualifiedname>
+        <briefdescription>
+<para>Get version information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="196" column="11" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="196" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A base class for <ref refid="classGambit_1_1BEvariable__bucket" kindref="compound">BEvariable_bucket</ref> and <ref refid="classGambit_1_1BEfunction__bucket" kindref="compound">BEfunction_bucket</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Gambit::BEfunction_bucket_common&lt; TYPE(*)(ARGS...), TYPE, ARGS... &gt;</label>
+        <link refid="classGambit_1_1BEfunction__bucket__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gambit::BEfunction_bucket_common&lt; variadic_ptr&lt; TYPE, ARGS... &gt;::type, TYPE, ARGS... &gt;</label>
+        <link refid="classGambit_1_1BEfunction__bucket__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::BE_bucket_base</label>
+        <link refid="classGambit_1_1BE__bucket__base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gambit::BEfunction_bucket&lt; TYPE(*)(ARGS...), TYPE, ARGS... &gt;</label>
+        <link refid="classGambit_1_1BEfunction__bucket_3_01TYPE_07_5_08_07ARGS_8_8_8_08_00_01TYPE_00_01ARGS_8_8_8_01_4"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gambit::BEfunction_bucket&lt; typename variadic_ptr&lt; TYPE, ARGS... &gt;::type, TYPE, ARGS... &gt;</label>
+        <link refid="classGambit_1_1BEfunction__bucket_3_01typename_01variadic__ptr_3_01TYPE_00_01ARGS_8_8_8_01_4_1_15dd60a923b4ad82c804e05a59e6e7510"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gambit::BEfunction_bucket_common&lt; PTR_TYPE, TYPE, ARGS &gt;</label>
+        <link refid="classGambit_1_1BEfunction__bucket__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gambit::BEvariable_bucket&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1BEvariable__bucket"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::safety_bucket_base</label>
+        <link refid="classGambit_1_1safety__bucket__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::BE_bucket_base</label>
+        <link refid="classGambit_1_1BE__bucket__base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gambit::Models::ModelFunctorClaw</label>
+        <link refid="classGambit_1_1Models_1_1ModelFunctorClaw"/>
+      </node>
+      <node id="6">
+        <label>Gambit::Options</label>
+        <link refid="classGambit_1_1Options"/>
+      </node>
+      <node id="3">
+        <label>Gambit::functor</label>
+        <link refid="classGambit_1_1functor"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>myCapability</edgelabel>
+          <edgelabel>myCitationKey</edgelabel>
+          <edgelabel>myName</edgelabel>
+          <edgelabel>myOrigin</edgelabel>
+          <edgelabel>myPurpose</edgelabel>
+          <edgelabel>myType</edgelabel>
+          <edgelabel>myVersion</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>myClaw</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>myOptions</edgelabel>
+          <edgelabel>mySubCaps</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::safety_bucket_base</label>
+        <link refid="classGambit_1_1safety__bucket__base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_functor_base_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="180" column="3" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="181" bodyend="202"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1safety__bucket__base_1a437700e3d63a182b7d2863ec23412572" prot="protected" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>_functor_base_ptr</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a4ec2713749315efd99ff8b0258a8f863" prot="protected" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>_initialized</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a391db0375fdca56212ce8765fc5933f5" prot="public" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>active</name></member>
+      <member refid="classGambit_1_1BE__bucket__base_1ac17b7f1b876919f76ac40682fe92761f" prot="public" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>backend</name></member>
+      <member refid="classGambit_1_1BE__bucket__base_1ae5c449322eb28abe66d42d511d9287a6" prot="public" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>BE_bucket_base</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a08ce9d70583e365c920016eccbdf3907" prot="protected" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>dieGracefully</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a3c3dd07a07bc5c00768896b901ebb1a4" prot="public" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>name</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a0253ead5136b8744bc6428ed97a56c20" prot="public" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>origin</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a14204f6ad821ddb5b2c90af16de45eab" prot="public" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>safety_bucket_base</name></member>
+      <member refid="classGambit_1_1BE__bucket__base_1a3a49b809dc642941b82b8cd55e9c8d6b" prot="public" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>version</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a537b8fe482b5b1be32ed5d0421a46c19" prot="protected" virt="non-virtual"><scope>Gambit::BE_bucket_base</scope><name>whoami</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

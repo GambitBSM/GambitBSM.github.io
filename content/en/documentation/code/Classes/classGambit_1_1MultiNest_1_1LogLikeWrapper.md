@@ -4,8 +4,7 @@ description: 'Class to connect multinest log-likelihood function and ScannerBit 
 
 ---
 
-
-
+# Gambit::MultiNest::LogLikeWrapper
 
 
 
@@ -88,4 +87,4 @@ nSamples = total number of samples in posterior distribution nlive = total numbe
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

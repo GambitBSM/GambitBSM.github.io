@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# 1.0.4/1.0.4/diver.hpp
 
 
 
@@ -160,4 +159,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:52 +0000

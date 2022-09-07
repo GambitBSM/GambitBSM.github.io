@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1H5P__LocalBufferManager" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Printers::H5P_LocalBufferManager</compoundname>
+    <includes refid="hdf5printer_8hpp" local="no">hdf5printer.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class BuffType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1aaccbeb63140b24b32ef15e0307327ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::init</definition>
+        <argsstring>(HDF5Printer *p, bool synchronised)</argsstring>
+        <name>init</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::init</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1HDF5Printer" kindref="compound">HDF5Printer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>synchronised</declname>
+        </param>
+        <briefdescription>
+<para>Initialise the buffer (attach it to a printer and set its behaviour) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Templated <ref refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager" kindref="compound">H5P_LocalBufferManager</ref> member functions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="124" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="448" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a06b9ff008567f63eee21c439f47a5e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BuffType &amp;</type>
+        <definition>BuffType &amp; Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::get_buffer</definition>
+        <argsstring>(const int vID, const unsigned int i, const std::string &amp;label)</argsstring>
+        <name>get_buffer</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::get_buffer</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve a buffer for an IDcode/auxilliary-index pair. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="130" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="470" bodyend="550"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a11111e8e7d89888aa97777200bd7ec68" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref>, BuffType &gt;</type>
+        <definition>std::map&lt;VBIDpair, BuffType&gt; Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::local_buffers</definition>
+        <argsstring></argsstring>
+        <name>local_buffers</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::local_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="96" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a67a98f970a33e04cf6eaabd595ce8f3e" prot="private" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Printers_1_1HDF5Printer" kindref="compound">HDF5Printer</ref> *</type>
+        <definition>HDF5Printer* Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::printer</definition>
+        <argsstring></argsstring>
+        <name>printer</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::printer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="102" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a8b9b99cc7311fafa652a48bd012a67b3" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref>, bool &gt;</type>
+        <definition>std::map&lt;VBIDpair,bool&gt; Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::first_print</definition>
+        <argsstring></argsstring>
+        <name>first_print</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::first_print</qualifiedname>
+        <briefdescription>
+<para>Flag to check if a print function has been run before. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="106" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1ac01aab4627ce5d8153e9372cd69b0c79" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::synchronised</definition>
+        <argsstring></argsstring>
+        <name>synchronised</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::synchronised</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag to trigger treatment of buffers as synchronised or not i.e. couples buffers to the scanner iteration synchronisation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="110" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a5d5ff918917e0944ff0be6117052907e" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::access</definition>
+        <argsstring></argsstring>
+        <name>access</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::access</qualifiedname>
+        <briefdescription>
+<para>Buffer access mode (&apos;r&apos;/&apos;w&apos;) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="113" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a2e9be43662976a7a4605b3cc9cb130dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::H5P_LocalBufferManager</definition>
+        <argsstring>()</argsstring>
+        <name>H5P_LocalBufferManager</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::H5P_LocalBufferManager</qualifiedname>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="117" column="9" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="117" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a537a5d302812468432037de655b1cad5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::H5P_LocalBufferManager&lt; BuffType &gt;::ready</definition>
+        <argsstring>()</argsstring>
+        <name>ready</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalBufferManager::ready</qualifiedname>
+        <briefdescription>
+<para>Signal whether initialisation has occured. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="127" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="127" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Keeps track of vertex buffers local to a print function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="92" column="5" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="93" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a5d5ff918917e0944ff0be6117052907e" prot="private" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>access</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a8b9b99cc7311fafa652a48bd012a67b3" prot="private" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>first_print</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a06b9ff008567f63eee21c439f47a5e84" prot="public" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>get_buffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a2e9be43662976a7a4605b3cc9cb130dd" prot="public" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>H5P_LocalBufferManager</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1aaccbeb63140b24b32ef15e0307327ed1" prot="public" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>init</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a11111e8e7d89888aa97777200bd7ec68" prot="private" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>local_buffers</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a67a98f970a33e04cf6eaabd595ce8f3e" prot="private" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>printer</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a537a5d302812468432037de655b1cad5" prot="public" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>ready</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1ac01aab4627ce5d8153e9372cd69b0c79" prot="private" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalBufferManager</scope><name>synchronised</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

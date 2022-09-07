@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1error" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::error</compoundname>
+    <basecompoundref refid="classGambit_1_1exception" prot="public" virt="non-virtual">Gambit::exception</basecompoundref>
+    <includes refid="exceptions_8hpp" local="no">exceptions.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1error_1a431ea867129b6efd167dbbc48067c360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::error::error</definition>
+        <argsstring>(const char *, const char *)</argsstring>
+        <name>error</name>
+        <qualifiedname>Gambit::error::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <briefdescription>
+<para>GAMBIT error class constructors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructors</para>
+<para>Constructor without log tags</para>
+<para>Constructor without log tags </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="144" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="300" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1error_1a067916bb468149e21cd0ee0c8c5f3572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::error::error</definition>
+        <argsstring>(const char *, const char *, LogTag)</argsstring>
+        <name>error</name>
+        <qualifiedname>Gambit::error::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 1 log tag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="146" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="303" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1error_1a6886193b3fadae0be458fe8d4ae9aaad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::error::error</definition>
+        <argsstring>(const char *, const char *, LogTag, LogTag)</argsstring>
+        <name>error</name>
+        <qualifiedname>Gambit::error::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 2 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="148" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="306" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1error_1a2692f22bc92d7ce6f51b2ddad4c8d548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::error::error</definition>
+        <argsstring>(const char *, const char *, LogTag, LogTag, LogTag)</argsstring>
+        <name>error</name>
+        <qualifiedname>Gambit::error::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 3 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="150" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="309" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1error_1a54d9e3fc84931c9e95aae1033064fd78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::error::error</definition>
+        <argsstring>(const char *, const char *, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>error</name>
+        <qualifiedname>Gambit::error::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t4</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 4 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="152" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="312" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1error_1a5a5fe115494a3704c3f74b2843eb2796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::error::error</definition>
+        <argsstring>(const char *, const char *, LogTag, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>error</name>
+        <qualifiedname>Gambit::error::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t4</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t5</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 5 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="154" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="315" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1error_1ab08429fdc070b2d270a69b6b2d461e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::error::error</definition>
+        <argsstring>(const char *, const char *, LogTag, LogTag, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>error</name>
+        <qualifiedname>Gambit::error::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t4</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t5</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t6</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 6 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="156" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="318" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1error_1a20a02e86784f6b1f710ad518296b88b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::error::error</definition>
+        <argsstring>(const char *, const char *, std::set&lt; LogTag &gt;)</argsstring>
+        <name>error</name>
+        <qualifiedname>Gambit::error::error</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>std::set&lt; LogTag &gt;</type>
+          <defname>tags</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with log tags as a set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="158" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="321" bodyend="326"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GAMBIT error class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::error</label>
+        <link refid="classGambit_1_1error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::exception</label>
+        <link refid="classGambit_1_1exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::error</label>
+        <link refid="classGambit_1_1error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::exception</label>
+        <link refid="classGambit_1_1exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="Utils/include/gambit/Utils/exceptions.hpp" line="136" column="3" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="137" bodyend="161"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1exception_1afdeba740554a6b5f9e8d5d58360288b9" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>all_exceptions</name></member>
+      <member refid="classGambit_1_1error_1a431ea867129b6efd167dbbc48067c360" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>error</name></member>
+      <member refid="classGambit_1_1error_1a067916bb468149e21cd0ee0c8c5f3572" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>error</name></member>
+      <member refid="classGambit_1_1error_1a6886193b3fadae0be458fe8d4ae9aaad" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>error</name></member>
+      <member refid="classGambit_1_1error_1a2692f22bc92d7ce6f51b2ddad4c8d548" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>error</name></member>
+      <member refid="classGambit_1_1error_1a54d9e3fc84931c9e95aae1033064fd78" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>error</name></member>
+      <member refid="classGambit_1_1error_1a5a5fe115494a3704c3f74b2843eb2796" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>error</name></member>
+      <member refid="classGambit_1_1error_1ab08429fdc070b2d270a69b6b2d461e61" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>error</name></member>
+      <member refid="classGambit_1_1error_1a20a02e86784f6b1f710ad518296b88b5" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>error</name></member>
+      <member refid="classGambit_1_1exception_1a4a214a1cb5e000a7d3929c8687b53840" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1afb063454e527a02d231aa2af655ed39d" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1a5f80b3aac966def88b8eed3c932a32da" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1aa6d5980159caf412cfcdd2000ec74403" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1aafaaae226f077156f6d2a01d5204cfde" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1a2fb5a471f9a02e49fda33f292a632cab" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1ad8589c99bff7400a32598700f986619f" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1a4e51651703d319f33b045ce5ad60ec6a" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1ab2ff401c3327349e349a439eb2167f63" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1a951243172dadeb373e6c2a838650ab29" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>forced_throw</name></member>
+      <member refid="classGambit_1_1exception_1a76ad44681c2de198b67b48cb292aa15a" prot="protected" virt="non-virtual"><scope>Gambit::error</scope><name>myLogTags</name></member>
+      <member refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>raise</name></member>
+      <member refid="classGambit_1_1exception_1aef6993b6bc5a151c7abc381b51ef29f7" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>set_fatal</name></member>
+      <member refid="classGambit_1_1exception_1a53c521623bc511511c48661f3f69d946" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>set_parameters</name></member>
+      <member refid="classGambit_1_1exception_1a879fecc384bffc64d00d251241e6d9c3" prot="public" virt="non-virtual"><scope>Gambit::error</scope><name>silent_forced_throw</name></member>
+      <member refid="classGambit_1_1exception_1ac976ac5fe9cec65520388dae8e4cc792" prot="public" virt="virtual"><scope>Gambit::error</scope><name>what</name></member>
+      <member refid="classGambit_1_1exception_1aa801189a0bf468b6bb30ad2486bd1755" prot="public" virt="virtual"><scope>Gambit::error</scope><name>~exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

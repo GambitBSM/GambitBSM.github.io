@@ -5,7 +5,7 @@
     <includes refid="core_8hpp" local="no">core.hpp</includes>
       <sectiondef kind="user-defined">
       <memberdef kind="typedef" id="classGambit_1_1gambit__core_1a08c569a1cb0fe1936c7a460cb410fbcf" prot="private" static="no">
-        <type>std::vector&lt; functor * &gt;</type>
+        <type>std::vector&lt; <ref refid="classGambit_1_1functor" kindref="compound">functor</ref> * &gt;</type>
         <definition>typedef std::vector&lt;functor *&gt; Gambit::gambit_core::fVec</definition>
         <argsstring></argsstring>
         <name>fVec</name>
@@ -20,7 +20,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="45" column="25" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classGambit_1_1gambit__core_1a7fe5b76c0d2e1a284ea683e3bac4694c" prot="private" static="no">
-        <type>std::vector&lt; primary_model_functor * &gt;</type>
+        <type>std::vector&lt; <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt;</type>
         <definition>typedef std::vector&lt;primary_model_functor *&gt; Gambit::gambit_core::pmfVec</definition>
         <argsstring></argsstring>
         <name>pmfVec</name>
@@ -34,7 +34,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="46" column="25" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classGambit_1_1gambit__core_1a733e0826c0f5b22eeb87a281fd1f792d" prot="private" static="no">
-        <type>std::map&lt; str, primary_model_functor * &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt;</type>
         <definition>typedef std::map&lt;str, primary_model_functor *&gt; Gambit::gambit_core::pmfMap</definition>
         <argsstring></argsstring>
         <name>pmfMap</name>
@@ -161,7 +161,7 @@
         <name>ff_module_diagnostic</name>
         <qualifiedname>Gambit::gambit_core::ff_module_diagnostic</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>command</defname>
         </param>
         <briefdescription>
@@ -181,7 +181,7 @@
         <name>ff_backend_diagnostic</name>
         <qualifiedname>Gambit::gambit_core::ff_backend_diagnostic</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>command</defname>
         </param>
         <briefdescription>
@@ -200,7 +200,7 @@
         <name>ff_capability_diagnostic</name>
         <qualifiedname>Gambit::gambit_core::ff_capability_diagnostic</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>command</defname>
         </param>
         <briefdescription>
@@ -219,7 +219,7 @@
         <name>ff_model_diagnostic</name>
         <qualifiedname>Gambit::gambit_core::ff_model_diagnostic</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>command</defname>
         </param>
         <briefdescription>
@@ -238,7 +238,7 @@
         <name>ff_scanner_diagnostic</name>
         <qualifiedname>Gambit::gambit_core::ff_scanner_diagnostic</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>command</defname>
         </param>
         <briefdescription>
@@ -257,7 +257,7 @@
         <name>ff_test_function_diagnostic</name>
         <qualifiedname>Gambit::gambit_core::ff_test_function_diagnostic</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>command</defname>
         </param>
         <briefdescription>
@@ -276,7 +276,7 @@
         <name>ff_prior_diagnostic</name>
         <qualifiedname>Gambit::gambit_core::ff_prior_diagnostic</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>command</defname>
         </param>
         <briefdescription>
@@ -290,7 +290,7 @@
       </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1a7e1de363db70a975e8456945c069d9d7" prot="private" static="no" mutable="no">
-        <type>const Models::ModelFunctorClaw *</type>
+        <type>const <ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> *</type>
         <definition>const Models::ModelFunctorClaw* Gambit::gambit_core::modelInfo</definition>
         <argsstring></argsstring>
         <name>modelInfo</name>
@@ -320,7 +320,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="54" column="34" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1ae4bd9f72435bb04cdb0f553634a8f321" prot="private" static="no" mutable="no">
-        <type>std::set&lt; str &gt;</type>
+        <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
         <definition>std::set&lt;str&gt; Gambit::gambit_core::modules</definition>
         <argsstring></argsstring>
         <name>modules</name>
@@ -335,7 +335,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="57" column="14" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1a078741f9531525b7a445424ef1871dbc" prot="private" static="no" mutable="no">
-        <type>std::map&lt; str, str &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
         <definition>std::map&lt;str, str&gt; Gambit::gambit_core::module_citation_keys</definition>
         <argsstring></argsstring>
         <name>module_citation_keys</name>
@@ -350,7 +350,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="60" column="14" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1a61aeb650a830cfbe822be2acc19c1330" prot="private" static="no" mutable="no">
-        <type>std::map&lt; str, std::set&lt; str &gt; &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
         <definition>std::map&lt;str, std::set&lt;str&gt; &gt; Gambit::gambit_core::backend_versions</definition>
         <argsstring></argsstring>
         <name>backend_versions</name>
@@ -365,7 +365,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="63" column="14" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1a0ebf6d13a6c6c0d1abf0594a9ca192ec" prot="private" static="no" mutable="no">
-        <type>std::map&lt; sspair, str &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
         <definition>std::map&lt;sspair, str&gt; Gambit::gambit_core::backend_citation_keys</definition>
         <argsstring></argsstring>
         <name>backend_citation_keys</name>
@@ -380,7 +380,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="66" column="14" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1a26c16bc574021044ae48d548b3284320" prot="private" static="no" mutable="no">
-        <type>std::set&lt; str &gt;</type>
+        <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
         <definition>std::set&lt;str&gt; Gambit::gambit_core::capabilities</definition>
         <argsstring></argsstring>
         <name>capabilities</name>
@@ -395,7 +395,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="69" column="14" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1aea9152437cf9254df8e25ea226df5a11" prot="private" static="no" mutable="no">
-        <type>std::set&lt; str &gt;</type>
+        <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
         <definition>std::set&lt;str&gt; Gambit::gambit_core::models</definition>
         <argsstring></argsstring>
         <name>models</name>
@@ -485,7 +485,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="87" column="12" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1a871d43f94c04e972b3d7c0f45e120d79" prot="private" static="no" mutable="no">
-        <type>const str</type>
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>const str Gambit::gambit_core::input_capability_descriptions</definition>
         <argsstring></argsstring>
         <name>input_capability_descriptions</name>
@@ -500,7 +500,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="90" column="15" bodyfile="Core/include/gambit/Core/core.hpp" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1gambit__core_1a7a5cfdcbdace07f7ce2d5a516043a336" prot="private" static="no" mutable="no">
-        <type>const str</type>
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>const str Gambit::gambit_core::input_model_descriptions</definition>
         <argsstring></argsstring>
         <name>input_model_descriptions</name>
@@ -669,17 +669,17 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classGambit_1_1gambit__core_1a6c3dc34c917e6003a8fab249edc75824" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::gambit_core::backend_status</definition>
         <argsstring>(const str &amp;, const str &amp;, bool &amp;)</argsstring>
         <name>backend_status</name>
         <qualifiedname>Gambit::gambit_core::backend_status</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>be</defname>
         </param>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>version</defname>
         </param>
         <param>
@@ -734,7 +734,7 @@
         <name>gambit_core</name>
         <qualifiedname>Gambit::gambit_core::gambit_core</qualifiedname>
         <param>
-          <type>const Models::ModelFunctorClaw &amp;</type>
+          <type>const <ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> &amp;</type>
           <defname>claw</defname>
         </param>
         <param>
@@ -789,7 +789,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="155" column="10" bodyfile="Core/src/core.cpp" bodystart="77" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1gambit__core_1a997b7c040387c5f58d0e65be82070ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::gambit_core::process_primary_options</definition>
         <argsstring>(int, char **)</argsstring>
         <name>process_primary_options</name>
@@ -814,7 +814,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="158" column="9" bodyfile="Core/src/core.cpp" bodystart="126" bodyend="201"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1gambit__core_1a9defd7437a39d3648b6ba68e5ee75734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::gambit_core::run_diagnostic</definition>
         <argsstring>(int, char **)</argsstring>
         <name>run_diagnostic</name>
@@ -844,11 +844,11 @@
         <name>registerModule</name>
         <qualifiedname>Gambit::gambit_core::registerModule</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>module</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>ref</defname>
         </param>
         <briefdescription>
@@ -867,15 +867,15 @@
         <name>registerBackend</name>
         <qualifiedname>Gambit::gambit_core::registerBackend</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>be</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>version</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>ref</defname>
         </param>
         <briefdescription>
@@ -894,7 +894,7 @@
         <name>registerModuleFunctor</name>
         <qualifiedname>Gambit::gambit_core::registerModuleFunctor</qualifiedname>
         <param>
-          <type>functor &amp;</type>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> &amp;</type>
           <defname>f</defname>
         </param>
         <briefdescription>
@@ -913,7 +913,7 @@
         <name>registerNestedModuleFunctor</name>
         <qualifiedname>Gambit::gambit_core::registerNestedModuleFunctor</qualifiedname>
         <param>
-          <type>functor &amp;</type>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> &amp;</type>
           <defname>f</defname>
         </param>
         <briefdescription>
@@ -932,7 +932,7 @@
         <name>registerBackendFunctor</name>
         <qualifiedname>Gambit::gambit_core::registerBackendFunctor</qualifiedname>
         <param>
-          <type>functor &amp;</type>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> &amp;</type>
           <defname>f</defname>
         </param>
         <briefdescription>
@@ -951,7 +951,7 @@
         <name>registerPrimaryModelFunctor</name>
         <qualifiedname>Gambit::gambit_core::registerPrimaryModelFunctor</qualifiedname>
         <param>
-          <type>primary_model_functor &amp;</type>
+          <type><ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> &amp;</type>
           <defname>f</defname>
         </param>
         <briefdescription>
@@ -1059,7 +1059,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="197" column="18" bodyfile="Core/src/core.cpp" bodystart="266" bodyend="266"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1gambit__core_1acbe81988bf09d2f67864e32d802130d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::map&lt; str, str &gt; &amp;</type>
+        <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
         <definition>const std::map&lt; str, str &gt; &amp; Gambit::gambit_core::getModuleCitationKeys</definition>
         <argsstring>() const</argsstring>
         <name>getModuleCitationKeys</name>
@@ -1075,7 +1075,7 @@
         <location file="Core/include/gambit/Core/core.hpp" line="200" column="20" bodyfile="Core/src/core.cpp" bodystart="269" bodyend="269"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1gambit__core_1a3305d158d4e63a41c88585d2dd3e0b50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::map&lt; sspair, str &gt; &amp;</type>
+        <type>const std::map&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
         <definition>const std::map&lt; sspair, str &gt; &amp; Gambit::gambit_core::getBackendCitationKeys</definition>
         <argsstring>() const</argsstring>
         <name>getBackendCitationKeys</name>
@@ -1112,7 +1112,7 @@
         <name>get_capability_info</name>
         <qualifiedname>Gambit::gambit_core::get_capability_info</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>name</defname>
         </param>
         <briefdescription>
@@ -1132,7 +1132,7 @@
         <name>get_model_info</name>
         <qualifiedname>Gambit::gambit_core::get_model_info</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>name</defname>
         </param>
         <briefdescription>

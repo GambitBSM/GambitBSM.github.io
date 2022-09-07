@@ -1,0 +1,834 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="models_8cpp" kind="file" language="C++">
+    <compoundname>models.cpp</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes refid="functors_8hpp" local="yes">gambit/Elements/functors.hpp</includes>
+    <includes refid="models_8hpp" local="yes">gambit/Models/models.hpp</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="61">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>gambit/Models/models.hpp</label>
+        <link refid="models_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>models.cpp</label>
+        <link refid="models_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="34">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="49">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>algorithm</label>
+      </node>
+      <node id="48">
+        <label>array</label>
+      </node>
+      <node id="53">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="52">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="20">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="21">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="32">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="33">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="42">
+        <label>cassert</label>
+      </node>
+      <node id="7">
+        <label>chrono</label>
+      </node>
+      <node id="50">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>complex</label>
+      </node>
+      <node id="12">
+        <label>cstring</label>
+      </node>
+      <node id="47">
+        <label>deque</label>
+      </node>
+      <node id="35">
+        <label>exception</label>
+      </node>
+      <node id="46">
+        <label>forward_list</label>
+      </node>
+      <node id="40">
+        <label>fstream</label>
+      </node>
+      <node id="51">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="39">
+        <label>iostream</label>
+      </node>
+      <node id="59">
+        <label>limits</label>
+      </node>
+      <node id="45">
+        <label>list</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="54">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="9">
+        <label>omp.h</label>
+      </node>
+      <node id="63">
+        <label>ostream</label>
+      </node>
+      <node id="5">
+        <label>set</label>
+      </node>
+      <node id="8">
+        <label>sstream</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="41">
+        <label>type_traits</label>
+      </node>
+      <node id="16">
+        <label>unistd.h</label>
+      </node>
+      <node id="43">
+        <label>unordered_map</label>
+      </node>
+      <node id="44">
+        <label>unordered_set</label>
+      </node>
+      <node id="36">
+        <label>utility</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="57">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Models">Gambit::Models</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Library of Models methods.</para>
+<para>Duties:<itemizedlist>
+<listitem><para>Activate primary_model_functors according to the model(s) being scanned</para>
+</listitem><listitem><para>Check whether all active primary_model_functors are actually used</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+<sect1 id="models_8cpp_1autotoc_md55">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@monash.edu.au">benjamin.farmer@monash.edu.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2013 July 17</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:patscott@physics.mcgill.ca">patscott@physics.mcgill.ca</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2013 Aug, Sep </para>
+</simplesect>
+<simplesect kind="date"><para>2014 Mar</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Library<sp/>of<sp/>Models<sp/>methods.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>Duties:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>*<sp/>Activate<sp/>primary_model_functors<sp/>according<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/><sp/><sp/>the<sp/>model(s)<sp/>being<sp/>scanned</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>*<sp/>Check<sp/>whether<sp/>all<sp/>active<sp/>primary_model_functors</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/><sp/><sp/>are<sp/>actually<sp/>used</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>Authors</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>=======</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify)</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(benjamin.farmer@monash.edu.au)</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/>\date<sp/>2013<sp/>July<sp/>17</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(patscott@physics.mcgill.ca)</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">///<sp/><sp/>\date<sp/>2013<sp/>Aug,<sp/>Sep</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">///<sp/><sp/>\date<sp/>2014<sp/>Mar</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="functors_8hpp" kindref="compound">gambit/Elements/functors.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="models_8hpp" kindref="compound">gambit/Models/models.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Models</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>primary_model_functor<sp/>*&gt;::const_iterator<sp/>activemodel_it;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>ModelFunctorClaw<sp/>function<sp/>definitions</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Models<sp/>object<sp/>the<sp/>performs<sp/>initialisation<sp/>and<sp/>checking<sp/>operations</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>on<sp/>a<sp/>primary_model_functor<sp/>list.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@{</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Public<sp/>functions<sp/>and<sp/>data<sp/>members</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Model<sp/>activation<sp/>function</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Returns<sp/>a<sp/>vector<sp/>of<sp/>primary_model_functors<sp/>to<sp/>be<sp/>activated,<sp/>according<sp/>to<sp/>the<sp/>model(s)<sp/>being<sp/>scanned</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>primodel_vec<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a12ed3f851424da8ac6d2ad634fccb1ea" kindref="member">ModelFunctorClaw::getPrimaryModelFunctorsToActivate</ref><sp/>(std::set&lt;str&gt;<sp/>selectedmodels,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>primodel_vec&amp;<sp/>primaryModelFunctors)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Holder<sp/>for<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>primodel_vec<sp/>result;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterator<sp/>to<sp/>elements<sp/>of<sp/>&apos;selectedmodels&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;str&gt;::iterator<sp/>el;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>through<sp/>functor<sp/>list<sp/>and<sp/>activate<sp/>functor<sp/>if<sp/>it<sp/>matches<sp/>a<sp/>member<sp/>of<sp/>&apos;selectedmodels&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(primodel_vec::const_iterator</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/><sp/>=<sp/>primaryModelFunctors.begin();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/>primaryModelFunctors.end();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>this<sp/>functor<sp/>originates<sp/>from<sp/>one<sp/>of<sp/>the<sp/>selected<sp/>models</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>el<sp/>=<sp/>std::find(selectedmodels.begin(),<sp/>selectedmodels.end(),<sp/>(*it)-&gt;origin());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(el<sp/>!=<sp/>selectedmodels.end())</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>yes,<sp/>activate<sp/>this<sp/>functor.<sp/><sp/>Default<sp/>is<sp/>inactivated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;setStatus(1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>means<sp/>&quot;available&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;setPrintRequirement(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>Tell<sp/>printer<sp/>to<sp/>output<sp/>this<sp/>functor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialise<sp/>ModelParameters<sp/>object<sp/>it<sp/>contains</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)-&gt;calculate();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>it<sp/>to<sp/>the<sp/>vector<sp/>of<sp/>primary<sp/>model<sp/>functors<sp/>to<sp/>make<sp/>active<sp/>(to<sp/>be<sp/>returned)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.push_back(*it);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>it<sp/>to<sp/>the<sp/>internal<sp/>list<sp/>of<sp/>active<sp/>models</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>activemodels.insert(*el);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>it<sp/>from<sp/>the<sp/>input<sp/>&apos;selectedmodels&apos;<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selectedmodels.erase(el);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>that<sp/>all<sp/>requested<sp/>models<sp/>have<sp/>been<sp/>activated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>selectedmodels.size()<sp/>!=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Report<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>errmsg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Error!<sp/>Some<sp/>of<sp/>the<sp/>requested<sp/>models<sp/>could<sp/>not<sp/>be<sp/>activated<sp/>for<sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/><sp/><sp/><sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;scanning!<sp/>Probably<sp/>they<sp/>have<sp/>not<sp/>been<sp/>defined,<sp/>or<sp/>you<sp/>spelled<sp/><sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/><sp/><sp/><sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;their<sp/>name<sp/>wrong<sp/>in<sp/>the<sp/>ini<sp/>file.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/><sp/><sp/><sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;Models<sp/>that<sp/>cannot<sp/>be<sp/>activated:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::set&lt;str&gt;::iterator<sp/>m<sp/>=<sp/>selectedmodels.begin();<sp/>m<sp/>!=<sp/>selectedmodels.end();<sp/>++m)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/><sp/><sp/><sp/>+=<sp/>(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>*m<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a9be3518a06d0f57d9cefa017aa706854" kindref="member">model_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,errmsg);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Searches<sp/>primary<sp/>model<sp/>functor<sp/>list<sp/>for<sp/>specificed<sp/>model</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>primary_model_functor*<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3b4c737a525ed211782b082429c64522" kindref="member">ModelFunctorClaw::getPrimaryModelFunctor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>modelname,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>primodel_vec&amp;<sp/>primaryModelFunctors)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="104"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>primary_model_functor*<sp/>result<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>primary<sp/>model<sp/>functor<sp/>with<sp/>matching<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>std::find_if(std::begin(primaryModelFunctors),<sp/>std::end(primaryModelFunctors),<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;]<sp/>(primary_model_functor*<sp/>f)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f-&gt;getcontentsPtr()-&gt;getModelName()<sp/>==<sp/>modelname;});</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(it<sp/>!=<sp/>primaryModelFunctors.end())</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>*it;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>err;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err&lt;&lt;</highlight><highlight class="stringliteral">&quot;No<sp/>primary<sp/>model<sp/>functor<sp/>with<sp/>model<sp/>name<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;modelname&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>was<sp/>found!<sp/>Please<sp/>check<sp/>the<sp/>input<sp/>name<sp/>for<sp/>typos!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a9be3518a06d0f57d9cefa017aa706854" kindref="member">model_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,err.str());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Return<sp/>set<sp/>of<sp/>all<sp/>models<sp/>recognised<sp/>by<sp/>GAMBIT</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;str&gt;&amp;<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a5ee671655f46c9a41138c988fc444196" kindref="member">ModelFunctorClaw::get_allmodels</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>allmodelnames;<sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>the<sp/>internally<sp/>stored<sp/>vector<sp/>of<sp/>activated<sp/>models</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;str&gt;<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a592fda5859d7d55f03c616c80698da9e" kindref="member">ModelFunctorClaw::get_activemodels</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>activemodels;<sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Active<sp/>model<sp/>functor<sp/>&quot;usefulness&quot;<sp/>checker</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/>///</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Checks<sp/>that<sp/>all<sp/>the<sp/>active<sp/>primary<sp/>model<sp/>functors<sp/>are<sp/>actually<sp/>used<sp/>for</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>something<sp/>in<sp/>the<sp/>dependency<sp/>tree.<sp/>If<sp/>not<sp/>throws<sp/>an<sp/>error<sp/>to<sp/>warn<sp/>the</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>user.</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a7bf91022647c009786970ae39e5ffcae" kindref="member">ModelFunctorClaw::checkPrimaryModelFunctorUsage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>activemodel_map&amp;<sp/>activeModelFunctors)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="136"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>unusedmodels;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>modelname;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>primary_model_functor*<sp/>functorPtr;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>through<sp/>functor<sp/>list<sp/>and<sp/>check<sp/>that<sp/>their<sp/>statuses<sp/>have<sp/>all<sp/>been</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>to<sp/>2<sp/>(&quot;active&quot;).<sp/>If<sp/>not,<sp/>it<sp/>means<sp/>that<sp/>some<sp/>of<sp/>them<sp/>were<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>activated<sp/>by<sp/>the<sp/>dependency<sp/>resolver<sp/>and<sp/>thus<sp/>are<sp/>not<sp/>used<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>computing<sp/>anything.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(activemodel_it<sp/>it<sp/><sp/>=<sp/>activeModelFunctors.begin();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/>activeModelFunctors.end();<sp/>it++)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>modelname<sp/><sp/>=<sp/>it-&gt;first;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>functorPtr<sp/>=<sp/>it-&gt;second;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>functorPtr-&gt;status()!=2<sp/>)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unusedmodels.push_back(<sp/>modelname<sp/>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>found<sp/>unused<sp/>models<sp/>throw<sp/>an<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>unusedmodels.size()<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>errmsg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Some<sp/>models<sp/>selected<sp/>for<sp/>scanning<sp/>are<sp/>not<sp/>required<sp/>by<sp/>any<sp/>of\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/><sp/><sp/><sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;the<sp/>requested<sp/>observables/likelihoods!<sp/>Please<sp/>switch<sp/>these<sp/><sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/><sp/><sp/><sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;off<sp/>in<sp/>the<sp/>inifile<sp/>or<sp/>add<sp/>a<sp/>target<sp/>that<sp/>actually<sp/>uses<sp/>them.<sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/><sp/><sp/><sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;List<sp/>of<sp/>unused<sp/>models:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;std::string&gt;::iterator<sp/>it<sp/>=<sp/>unusedmodels.begin();<sp/>it<sp/>!=<sp/>unusedmodels.end();<sp/>++it)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/><sp/>+=<sp/>(*it<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a9be3518a06d0f57d9cefa017aa706854" kindref="member">model_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,errmsg);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Add<sp/>a<sp/>new<sp/>model<sp/>to<sp/>the<sp/>model<sp/>database.</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a71125c5db2fc189bd2522680cd7c9418" kindref="member">ModelFunctorClaw::declare_model</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;parent)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Register<sp/>the<sp/>new<sp/>model.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>allmodelnames.insert(model);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parent<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;PARENT&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>parent<sp/>actually<sp/>doesn&apos;t<sp/>exist<sp/>yet,<sp/>die.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1af160ffd276255f9434e73ab7968fa81a" kindref="member">model_exists</ref>(parent))</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>errmsg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Requested<sp/>parent<sp/>model<sp/>\&quot;&quot;</highlight><highlight class="normal">+parent+<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>for<sp/>model<sp/>\&quot;&quot;</highlight><highlight class="normal">+model;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nis<sp/>not<sp/>in<sp/>the<sp/>GAMBIT<sp/>database.<sp/>Recognised<sp/>models<sp/>are:\n&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3feed0fc7aea039f651fa1e813c27f05" kindref="member">list_models</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a9be3518a06d0f57d9cefa017aa706854" kindref="member">model_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,errmsg);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>parent<sp/>to<sp/>the<sp/>parents<sp/>database.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myParentsDB[model]<sp/>=<sp/>parent;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inherit<sp/>friends<sp/>from<sp/>the<sp/>model&apos;s<sp/>parent.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myFriendsDB[model]<sp/>=<sp/>myFriendsDB[parent];</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inherit<sp/>lineage<sp/>from<sp/>the<sp/>model&apos;s<sp/>parent.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myLineageDB[model]<sp/>=<sp/>myLineageDB[parent];</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Seed<sp/>empty<sp/>friend<sp/>sets<sp/>and<sp/>inheritance<sp/>vector.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myFriendsDB[model]<sp/>=<sp/>std::set&lt;str&gt;();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myBestFriendsDB[model]<sp/>=<sp/>std::set&lt;str&gt;();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myLineageDB[model]<sp/>=<sp/>std::vector&lt;str&gt;();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>new<sp/>model<sp/>to<sp/>its<sp/>own<sp/>lineage<sp/>vector.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>myLineageDB[model].push_back(model);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Register<sp/>the<sp/>model<sp/>in<sp/>each<sp/>of<sp/>its<sp/>parents&apos;<sp/>descendents<sp/>vectors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::set&lt;str&gt;::iterator<sp/>parent<sp/>=<sp/>allmodelnames.begin();<sp/>parent<sp/>!=<sp/>allmodelnames.end();<sp/>++parent)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>this<sp/>model<sp/>descends<sp/>from<sp/>parent,<sp/>add<sp/>it<sp/>to<sp/>the<sp/>parent&apos;s<sp/>descendents<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a660bf7ad7f550d4ee309261069c3bea4" kindref="member">descended_from</ref>(model,*parent))<sp/>myDescendantsDB[*parent].push_back(model);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Add<sp/>a<sp/>friend,<sp/>and<sp/>all<sp/>its<sp/>friends<sp/>and<sp/>ancestors,<sp/>to<sp/>a<sp/>model&apos;s<sp/>list<sp/>of<sp/>friends</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1ab2d501255fc89da00a24d9818b9ede38" kindref="member">ModelFunctorClaw::add_friend</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;newfriend)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>new<sp/>friend<sp/>actually<sp/>doesn&apos;t<sp/>exist<sp/>yet,<sp/>die.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1af160ffd276255f9434e73ab7968fa81a" kindref="member">model_exists</ref>(newfriend))</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>errmsg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Requested<sp/>friend<sp/>model<sp/>\&quot;&quot;</highlight><highlight class="normal">+newfriend<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>for<sp/>model<sp/>\&quot;&quot;</highlight><highlight class="normal">+model;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nis<sp/>not<sp/>in<sp/>the<sp/>GAMBIT<sp/>database.<sp/>Recognised<sp/>models<sp/>are:\n&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3feed0fc7aea039f651fa1e813c27f05" kindref="member">list_models</ref>();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a9be3518a06d0f57d9cefa017aa706854" kindref="member">model_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,errmsg);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>new<sp/>friend<sp/>as<sp/>a<sp/>best<sp/>friend.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>myBestFriendsDB[model].insert(newfriend);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>new<sp/>friend&apos;s<sp/>whole<sp/>lineage<sp/>vector<sp/>as<sp/>regular<sp/>friends.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;str&gt;<sp/>temp1,<sp/>temp2,<sp/>lineage(myLineageDB[newfriend].begin(),<sp/>myLineageDB[newfriend].end());</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>set_union(myFriendsDB[model].begin(),<sp/>myFriendsDB[model].end(),<sp/>lineage.begin(),<sp/>lineage.end(),<sp/>inserter(temp1,<sp/>temp1.begin()));</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Also<sp/>inherit<sp/>the<sp/>new<sp/>friend&apos;s<sp/>friends<sp/>as<sp/>regular<sp/>friends.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>set_union(temp1.begin(),<sp/>temp1.end(),<sp/>myFriendsDB[newfriend].begin(),<sp/>myFriendsDB[newfriend].end(),<sp/>inserter(temp2,<sp/>temp2.begin()));</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>myFriendsDB[model]<sp/>=<sp/>temp2;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Indicate<sp/>whether<sp/>a<sp/>model<sp/>is<sp/>recognised<sp/>by<sp/>GAMBIT<sp/>or<sp/>not</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1af160ffd276255f9434e73ab7968fa81a" kindref="member">ModelFunctorClaw::model_exists</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="232"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>allmodelnames.find(model)<sp/>!=<sp/>allmodelnames.end();</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>List<sp/>all<sp/>the<sp/>models<sp/>recognised<sp/>by<sp/>GAMBIT</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3feed0fc7aea039f651fa1e813c27f05" kindref="member">ModelFunctorClaw::list_models</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="238"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>temp<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::set&lt;str&gt;::iterator<sp/>it<sp/>=<sp/>allmodelnames.begin();<sp/>it<sp/>!=<sp/>allmodelnames.end();<sp/>++it)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>+<sp/>*it;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Verify<sp/>that<sp/>a<sp/>string<sp/>matches<sp/>a<sp/>model<sp/>recognised<sp/>by<sp/>GAMBIT,<sp/>crash<sp/>otherwise</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a798fe50ffec28635cd1e5b13d5baff1c" kindref="member">ModelFunctorClaw::verify_model</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="249"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1af160ffd276255f9434e73ab7968fa81a" kindref="member">model_exists</ref>(model))</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>errmsg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Model<sp/>\&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/>+=<sp/>model<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>is<sp/>not<sp/>in<sp/>the<sp/>GAMBIT<sp/>database.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nRecognised<sp/>models<sp/>are:&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3feed0fc7aea039f651fa1e813c27f05" kindref="member">list_models</ref>();</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a9be3518a06d0f57d9cefa017aa706854" kindref="member">model_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,errmsg);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>the<sp/>descendants<sp/>for<sp/>a<sp/>given<sp/>model</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;str&gt;<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a68208adcdaacf84da4e09bdb3d15b0cb" kindref="member">ModelFunctorClaw::get_descendants</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="261"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myDescendantsDB.find(model)<sp/>==<sp/>myDescendantsDB.end()<sp/>?<sp/>std::vector&lt;str&gt;()<sp/>:<sp/>myDescendantsDB.at(model);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>the<sp/>parents<sp/>for<sp/>a<sp/>given<sp/>model</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3c3cb5e32dce67e0330fb239ce35f744" kindref="member">ModelFunctorClaw::get_parent</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="267"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myParentsDB.find(model)<sp/>==<sp/>myParentsDB.end()<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal"><sp/>:<sp/>myParentsDB.at(model);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>the<sp/>lineage<sp/>for<sp/>a<sp/>given<sp/>model</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;str&gt;<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a22c05d5f4cbb1179efd3e3e41fec4e35" kindref="member">ModelFunctorClaw::get_lineage</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="273"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myLineageDB.find(model)<sp/>==<sp/>myLineageDB.end()<sp/>?<sp/>std::vector&lt;str&gt;()<sp/>:<sp/>myLineageDB.at(model);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="277"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>the<sp/>friends<sp/>for<sp/>a<sp/>given<sp/>model</highlight></codeline>
+<codeline lineno="278"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;str&gt;<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a271550f94af7bc44e757a5aaf951b7b4" kindref="member">ModelFunctorClaw::get_friends</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="279"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myFriendsDB.find(model)<sp/>==<sp/>myFriendsDB.end()<sp/>?<sp/>std::set&lt;str&gt;()<sp/>:<sp/>myFriendsDB.at(model);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="283"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>the<sp/>best<sp/>friends<sp/>for<sp/>a<sp/>given<sp/>model</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;str&gt;<sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a091f5e8199e892c6aac53a35b29248f0" kindref="member">ModelFunctorClaw::get_best_friends</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="285"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myBestFriendsDB.find(model)<sp/>==<sp/>myBestFriendsDB.end()<sp/>?<sp/>std::set&lt;str&gt;()<sp/>:<sp/>myBestFriendsDB.at(model);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>model<sp/>1<sp/>is<sp/>descended<sp/>from<sp/>model<sp/>2</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a660bf7ad7f550d4ee309261069c3bea4" kindref="member">ModelFunctorClaw::descended_from</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model2)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="291"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a798fe50ffec28635cd1e5b13d5baff1c" kindref="member">verify_model</ref>(model1);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lineage<sp/>=<sp/>myLineageDB.at(model1);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;str&gt;::const_iterator<sp/>it<sp/>=<sp/>lineage.begin();<sp/>it<sp/>!=<sp/>lineage.end();<sp/>++it)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(model2==*it)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="301"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>model<sp/>1<sp/>is<sp/>an<sp/>ancestor<sp/>of<sp/>model<sp/>2</highlight></codeline>
+<codeline lineno="302"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3d4c5648fe1e52f0ce520fd66a7e233d" kindref="member">ModelFunctorClaw::ancestor_of</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model2)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="303"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a660bf7ad7f550d4ee309261069c3bea4" kindref="member">descended_from</ref>(model2,<sp/>model1);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="307"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>model<sp/>1<sp/>exists<sp/>somewhere<sp/>downstream<sp/>of<sp/>(and<sp/>can<sp/>be<sp/>therefore<sp/>be<sp/>interpreted<sp/>as<sp/>a)<sp/>model<sp/>2</highlight></codeline>
+<codeline lineno="308"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a8fe55c0a7ee8444ce6efd7b5e122051a" kindref="member">ModelFunctorClaw::downstream_of</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model2)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="309"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a660bf7ad7f550d4ee309261069c3bea4" kindref="member">descended_from</ref>(model1,<sp/>model2))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(myFriendsDB.find(model1)<sp/>!=<sp/>myFriendsDB.end())</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;str&gt;<sp/>friends<sp/>=<sp/>myFriendsDB.at(model1);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>friends.find(model2)<sp/>!=<sp/>friends.end();</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="319"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>model<sp/>1<sp/>exists<sp/>somewhere<sp/>upstream<sp/>of<sp/>model<sp/>2,<sp/>allowing<sp/>model<sp/>2<sp/>to<sp/>be<sp/>interpreted<sp/>as<sp/>model<sp/>1</highlight></codeline>
+<codeline lineno="320"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a8e3b6a61f3209245c7a24ea96ca0603c" kindref="member">ModelFunctorClaw::upstream_of</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;model2)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="321"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a8fe55c0a7ee8444ce6efd7b5e122051a" kindref="member">downstream_of</ref>(model2,<sp/>model1);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="325"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
+<codeline lineno="326"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Models/src/models.cpp"/>
+  </compounddef>
+</doxygen>

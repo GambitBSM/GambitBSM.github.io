@@ -4,8 +4,7 @@ description: 'Information in parameter queue. '
 
 ---
 
-
-
+# Gambit::DRes::QueueEntry
 
 
 
@@ -21,13 +20,13 @@ Information in parameter queue.
 |                | Name           |
 | -------------- | -------------- |
 | | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**() |
-| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**(sspair a, DRes::VertexID b, int c, bool d) |
+| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**([sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) a, DRes::VertexID b, int c, bool d) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| sspair | **[first](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-first)**  |
+| [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) | **[first](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-first)**  |
 | DRes::VertexID | **[second](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-second)**  |
 | int | **[third](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-third)**  |
 | bool | **[printme](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-printme)**  |
@@ -85,4 +84,4 @@ bool printme;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

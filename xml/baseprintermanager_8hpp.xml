@@ -1,0 +1,1081 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="baseprintermanager_8hpp" kind="file" language="C++">
+    <compoundname>baseprintermanager.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="mpiwrapper_8hpp" local="yes">gambit/Utils/mpiwrapper.hpp</includes>
+    <includes refid="yaml__options_8hpp" local="yes">gambit/Utils/yaml_options.hpp</includes>
+    <includedby refid="printer__id__tools_8hpp" local="yes">printer_id_tools.hpp</includedby>
+    <includedby refid="printer__interface_8hpp" local="yes">printer_interface.hpp</includedby>
+    <includedby refid="printermanager_8hpp" local="yes">printermanager.hpp</includedby>
+    <incdepgraph>
+      <node id="36">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="1">
+        <label>baseprintermanager.hpp</label>
+        <link refid="baseprintermanager_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="32">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/Utils/mpiwrapper.hpp</label>
+        <link refid="mpiwrapper_8hpp"/>
+      </node>
+      <node id="12">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="13">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>array</label>
+      </node>
+      <node id="23">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="41">
+        <label>cassert</label>
+      </node>
+      <node id="52">
+        <label>cmath</label>
+      </node>
+      <node id="11">
+        <label>complex</label>
+      </node>
+      <node id="10">
+        <label>cstring</label>
+      </node>
+      <node id="46">
+        <label>deque</label>
+      </node>
+      <node id="34">
+        <label>exception</label>
+      </node>
+      <node id="45">
+        <label>forward_list</label>
+      </node>
+      <node id="39">
+        <label>fstream</label>
+      </node>
+      <node id="38">
+        <label>iostream</label>
+      </node>
+      <node id="51">
+        <label>limits</label>
+      </node>
+      <node id="44">
+        <label>list</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>omp.h</label>
+      </node>
+      <node id="33">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="40">
+        <label>type_traits</label>
+      </node>
+      <node id="14">
+        <label>unistd.h</label>
+      </node>
+      <node id="42">
+        <label>unordered_map</label>
+      </node>
+      <node id="43">
+        <label>unordered_set</label>
+      </node>
+      <node id="35">
+        <label>utility</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="49">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="28">
+        <label>backend_macros.hpp</label>
+        <link refid="backend__macros_8hpp"/>
+      </node>
+      <node id="17">
+        <label>container_factory.hpp</label>
+        <link refid="container__factory_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>depresolver.hpp</label>
+        <link refid="depresolver_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit.hpp</label>
+        <link refid="gambit_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>modelgraph.hpp</label>
+        <link refid="modelgraph_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>container_factory.cpp</label>
+        <link refid="container__factory_8cpp"/>
+      </node>
+      <node id="90">
+        <label>core.cpp</label>
+        <link refid="core_8cpp"/>
+      </node>
+      <node id="23">
+        <label>depresolver.cpp</label>
+        <link refid="depresolver_8cpp"/>
+      </node>
+      <node id="25">
+        <label>diagnostics.cpp</label>
+        <link refid="diagnostics_8cpp"/>
+      </node>
+      <node id="21">
+        <label>gambit.cpp</label>
+        <link refid="gambit_8cpp"/>
+      </node>
+      <node id="22">
+        <label>likelihood_container.cpp</label>
+        <link refid="likelihood__container_8cpp"/>
+      </node>
+      <node id="26">
+        <label>modelgraph.cpp</label>
+        <link refid="modelgraph_8cpp"/>
+      </node>
+      <node id="27">
+        <label>functor_definitions.hpp</label>
+        <link refid="functor__definitions_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>functors.cpp</label>
+        <link refid="Elements_2src_2functors_8cpp"/>
+      </node>
+      <node id="3">
+        <label>basebaseprinter.hpp</label>
+        <link refid="basebaseprinter_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>baseprinter.hpp</label>
+        <link refid="baseprinter_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>baseprintermanager.hpp</label>
+        <link refid="baseprintermanager_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>printer_id_tools.hpp</label>
+        <link refid="printer__id__tools_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>printermanager.hpp</label>
+        <link refid="printermanager_8hpp"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>asciiprinter.hpp</label>
+        <link refid="asciiprinter_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>asciireader.hpp</label>
+        <link refid="asciireader_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>coutprinter.hpp</label>
+        <link refid="coutprinter_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>hdf5printer.hpp</label>
+        <link refid="hdf5printer_8hpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>hdf5printer_v2.hpp</label>
+        <link refid="hdf5printer__v2_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>hdf5reader.hpp</label>
+        <link refid="hdf5reader_8hpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>noneprinter.hpp</label>
+        <link refid="noneprinter_8hpp"/>
+      </node>
+      <node id="41">
+        <label>sqliteprinter.hpp</label>
+        <link refid="sqliteprinter_8hpp"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>sqlitereader.hpp</label>
+        <link refid="sqlitereader_8hpp"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>baseprinter.cpp</label>
+        <link refid="baseprinter_8cpp"/>
+      </node>
+      <node id="40">
+        <label>printermanager.cpp</label>
+        <link refid="printermanager_8cpp"/>
+      </node>
+      <node id="7">
+        <label>asciiprinter.cpp</label>
+        <link refid="asciiprinter_8cpp"/>
+      </node>
+      <node id="10">
+        <label>asciireader.cpp</label>
+        <link refid="asciireader_8cpp"/>
+      </node>
+      <node id="8">
+        <label>print_overloads.cpp</label>
+        <link refid="asciiprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="11">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="asciiprinter_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="14">
+        <label>coutprinter.cpp</label>
+        <link refid="coutprinter_8cpp"/>
+      </node>
+      <node id="15">
+        <label>print_overloads.cpp</label>
+        <link refid="coutprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="31">
+        <label>hdf5printer.cpp</label>
+        <link refid="hdf5printer_8cpp"/>
+      </node>
+      <node id="32">
+        <label>hdf5reader.cpp</label>
+        <link refid="hdf5reader_8cpp"/>
+      </node>
+      <node id="33">
+        <label>print_overloads.cpp</label>
+        <link refid="hdf5printer_2print__overloads_8cpp"/>
+      </node>
+      <node id="34">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="hdf5printer_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="36">
+        <label>hdf5printer_v2.cpp</label>
+        <link refid="hdf5printer__v2_8cpp"/>
+      </node>
+      <node id="37">
+        <label>print_overloads.cpp</label>
+        <link refid="hdf5printer__v2_2print__overloads_8cpp"/>
+      </node>
+      <node id="42">
+        <label>print_overloads.cpp</label>
+        <link refid="sqliteprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="45">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="sqliteprinter_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="43">
+        <label>sqliteprinter.cpp</label>
+        <link refid="sqliteprinter_8cpp"/>
+      </node>
+      <node id="46">
+        <label>sqlitereader.cpp</label>
+        <link refid="sqlitereader_8cpp"/>
+      </node>
+      <node id="52">
+        <label>ScannerBit_standalone.cpp</label>
+        <link refid="ScannerBit__standalone_8cpp"/>
+      </node>
+      <node id="48">
+        <label>factory_defs.hpp</label>
+        <link refid="factory__defs_8hpp"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>objective_plugin.hpp</label>
+        <link refid="objective__plugin_8hpp"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>plugin_defs.hpp</label>
+        <link refid="plugin__defs_8hpp"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>plugin_factory.hpp</label>
+        <link refid="plugin__factory_8hpp"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>plugin_interface.hpp</label>
+        <link refid="plugin__interface_8hpp"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>plugin_loader.hpp</label>
+        <link refid="plugin__loader_8hpp"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>plugin_macros.hpp</label>
+        <link refid="plugin__macros_8hpp"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>printer_interface.hpp</label>
+        <link refid="printer__interface_8hpp"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>plugin.hpp</label>
+        <link refid="plugin_8hpp"/>
+      </node>
+      <node id="51">
+        <label>scan.hpp</label>
+        <link refid="scan_8hpp"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>scanner_plugin.hpp</label>
+        <link refid="scanner__plugin_8hpp"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>scannerbit.hpp</label>
+        <link refid="scannerbit_8hpp"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>diver.hpp</label>
+        <link refid="1_80_80_2diver_8hpp"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>diver.hpp</label>
+        <link refid="1_80_82_2diver_8hpp"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>diver.hpp</label>
+        <link refid="1_80_84_2diver_8hpp"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>great.hpp</label>
+        <link refid="great_8hpp"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>minuit2.hpp</label>
+        <link refid="minuit2_8hpp"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>multinest.hpp</label>
+        <link refid="multinest_8hpp"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>polychord.hpp</label>
+        <link refid="polychord_8hpp"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor_8hpp"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>twalk.hpp</label>
+        <link refid="twalk_8hpp"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>examples.cpp</label>
+        <link refid="examples_8cpp"/>
+      </node>
+      <node id="91">
+        <label>plugin_loader.cpp</label>
+        <link refid="plugin__loader_8cpp"/>
+      </node>
+      <node id="50">
+        <label>scan.cpp</label>
+        <link refid="scan_8cpp"/>
+      </node>
+      <node id="60">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_80_2diver_8cpp"/>
+      </node>
+      <node id="56">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_82_2diver_8cpp"/>
+      </node>
+      <node id="58">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_84_2diver_8cpp"/>
+      </node>
+      <node id="62">
+        <label>great.cpp</label>
+        <link refid="great_8cpp"/>
+      </node>
+      <node id="64">
+        <label>minuit2.cpp</label>
+        <link refid="minuit2_8cpp"/>
+      </node>
+      <node id="66">
+        <label>multinest.cpp</label>
+        <link refid="multinest__3_810_2multinest_8cpp"/>
+      </node>
+      <node id="67">
+        <label>multinest.cpp</label>
+        <link refid="multinest__3_811_2multinest_8cpp"/>
+      </node>
+      <node id="69">
+        <label>polychord.cpp</label>
+        <link refid="polychord__1_817_81_2polychord_8cpp"/>
+      </node>
+      <node id="70">
+        <label>polychord.cpp</label>
+        <link refid="polychord__1_818_82_2polychord_8cpp"/>
+      </node>
+      <node id="72">
+        <label>postprocessor.cpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8cpp"/>
+      </node>
+      <node id="77">
+        <label>postprocessor_object.cpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor__object_8cpp"/>
+      </node>
+      <node id="73">
+        <label>postprocessor.cpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor_8cpp"/>
+      </node>
+      <node id="75">
+        <label>postprocessor_object.cpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor__object_8cpp"/>
+      </node>
+      <node id="63">
+        <label>grid.cpp</label>
+        <link refid="grid_8cpp"/>
+      </node>
+      <node id="78">
+        <label>random.cpp</label>
+        <link refid="random_8cpp"/>
+      </node>
+      <node id="79">
+        <label>raster.cpp</label>
+        <link refid="raster_8cpp"/>
+      </node>
+      <node id="80">
+        <label>square_grid.cpp</label>
+        <link refid="square__grid_8cpp"/>
+      </node>
+      <node id="81">
+        <label>toy_mcmc.cpp</label>
+        <link refid="toy__mcmc_8cpp"/>
+      </node>
+      <node id="82">
+        <label>twalk.cpp</label>
+        <link refid="twalk_8cpp"/>
+      </node>
+      <node id="5">
+        <label>SpecBit_MSSM.cpp</label>
+        <link refid="SpecBit__MSSM_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGambit_1_1Printers_1_1BasePrinterManager" prot="public">Gambit::Printers::BasePrinterManager</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Printers">Gambit::Printers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Pure virtual base class for PrinterManager This provides a minimal interface to the PrinterManager class for use in ScannerBit i.e. from here we do not manage the printer streams (much), we merely provide access to them.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Feb</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Pure<sp/>virtual<sp/>base<sp/>class<sp/>for<sp/>PrinterManager</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>This<sp/>provides<sp/>a<sp/>minimal<sp/>interface<sp/>to<sp/>the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>PrinterManager<sp/>class<sp/>for<sp/>use<sp/>in<sp/>ScannerBit</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>i.e.<sp/>from<sp/>here<sp/>we<sp/>do<sp/>not<sp/>manage<sp/>the<sp/>printer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>streams<sp/>(much),<sp/>we<sp/>merely<sp/>provide<sp/>access<sp/>to<sp/>them.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(benjamin.farmer@fysik.su.se)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Feb</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__baseprintermanager_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__baseprintermanager_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mpiwrapper_8hpp" kindref="compound">gambit/Utils/mpiwrapper.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="yaml__options_8hpp" kindref="compound">gambit/Utils/yaml_options.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Printers<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Forward<sp/>declarationa</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BaseBasePrinter;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BaseBaseReader;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Manager<sp/>class<sp/>for<sp/>creating<sp/>printer<sp/>objects<sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="classGambit_1_1Printers_1_1BasePrinterManager" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1BasePrinterManager" kindref="compound">BasePrinterManager</ref><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Flag<sp/>for<sp/>&quot;resume&quot;<sp/>mode</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resume;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager" kindref="compound">BasePrinterManager</ref>()<sp/>:<sp/>resume(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager" kindref="compound">BasePrinterManager</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>r)<sp/>:<sp/>resume(r)<sp/>{}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Getter<sp/>for<sp/>&quot;resume&quot;<sp/>mode<sp/>flag</highlight></codeline>
+<codeline lineno="48" refid="classGambit_1_1Printers_1_1BasePrinterManager_1af088d15880482f31233ea03d98a3a0ec" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1af088d15880482f31233ea03d98a3a0ec" kindref="member">resume_mode</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resume;<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Setter<sp/>for<sp/>&quot;resume&quot;<sp/>mode<sp/>flag</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>(printer<sp/>may<sp/>override<sp/>user<sp/>choice<sp/>if<sp/>no<sp/>previous<sp/>output<sp/>exists)</highlight></codeline>
+<codeline lineno="52" refid="classGambit_1_1Printers_1_1BasePrinterManager_1a63795ad130e6e0c88ca6780886f4a8e5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1a63795ad130e6e0c88ca6780886f4a8e5" kindref="member">set_resume_mode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rflag)<sp/>{<sp/>resume<sp/>=<sp/>rflag;<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Create<sp/>auxiliary<sp/>printer<sp/>object</highlight></codeline>
+<codeline lineno="55" refid="classGambit_1_1Printers_1_1BasePrinterManager_1a829371014603c1e98635222b735b3bed" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1a829371014603c1e98635222b735b3bed" kindref="member">new_stream</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Create<sp/>reader<sp/>object</highlight></codeline>
+<codeline lineno="58" refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa7a7a4a9b090820fa1c3bb57ee83a0a9" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa7a7a4a9b090820fa1c3bb57ee83a0a9" kindref="member">new_reader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Create<sp/>for<sp/>reader<sp/>object<sp/>for<sp/>previous<sp/>print<sp/>output<sp/>(&quot;resume<sp/>reader&quot;)</highlight></codeline>
+<codeline lineno="61" refid="classGambit_1_1Printers_1_1BasePrinterManager_1af7add450ae11e22cf624b3867d8a559e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1af7add450ae11e22cf624b3867d8a559e" kindref="member">create_resume_reader</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Getter<sp/>for<sp/>auxiliary<sp/>printer<sp/>objects</highlight></codeline>
+<codeline lineno="64" refid="classGambit_1_1Printers_1_1BasePrinterManager_1ab4eb9bb6ce046a6319a211c9698f2e34" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">BaseBasePrinter</ref>*<sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1ab4eb9bb6ce046a6319a211c9698f2e34" kindref="member">get_stream</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Getter<sp/>for<sp/>readers</highlight></codeline>
+<codeline lineno="67" refid="classGambit_1_1Printers_1_1BasePrinterManager_1a8897de7bafb3ec0692d8981dd1c6af55" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseBaseReader" kindref="compound">BaseBaseReader</ref>*<sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1a8897de7bafb3ec0692d8981dd1c6af55" kindref="member">get_reader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Checker<sp/>for<sp/>reader<sp/>existence</highlight></codeline>
+<codeline lineno="70" refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa3ce0e8bb60345d7319e9fb4148e5d51" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa3ce0e8bb60345d7319e9fb4148e5d51" kindref="member">reader_exists</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Delete<sp/>reader<sp/>and<sp/>printer<sp/>objects<sp/>(does<sp/>not<sp/>harm<sp/>output,<sp/>just<sp/>deletes<sp/>the<sp/>objects)</highlight></codeline>
+<codeline lineno="73" refid="classGambit_1_1Printers_1_1BasePrinterManager_1a430493762c79d45b7494955414dd8ca9" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1a430493762c79d45b7494955414dd8ca9" kindref="member">delete_stream</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>delete_reader(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Instruct<sp/>printers<sp/>that<sp/>scan<sp/>has<sp/>finished<sp/>and<sp/>to<sp/>perform<sp/>cleanup</highlight></codeline>
+<codeline lineno="77" refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa3cb9794473509f077f4055ad733eb68" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa3cb9794473509f077f4055ad733eb68" kindref="member">finalise</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>abnormal=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>For<sp/>debugging:<sp/>check<sp/>up<sp/>on<sp/>mpi</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>For<sp/>debugging:<sp/>check<sp/>up<sp/>on<sp/>MPI</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#ifdef<sp/>WITH_MPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//bool<sp/>Is_MPI_initialized()<sp/><sp/>{<sp/>return<sp/>GMPI::Is_initialized();<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>getRank()<sp/><sp/>{<sp/>GMPI::Comm<sp/>comm;<sp/>return<sp/>comm.Get_rank();<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Printers/include/gambit/Printers/baseprintermanager.hpp"/>
+  </compounddef>
+</doxygen>

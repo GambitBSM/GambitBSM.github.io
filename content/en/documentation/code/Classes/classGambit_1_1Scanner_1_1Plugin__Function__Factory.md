@@ -4,8 +4,7 @@ description: 'Factory class to make objectives using objective plugins. '
 
 ---
 
-
-
+# Gambit::Scanner::Plugin_Function_Factory
 
 
 
@@ -68,4 +67,4 @@ inline ~Plugin_Function_Factory()
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Utils_1_1specialised__threadsafe__rng" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Utils::specialised_threadsafe_rng</compoundname>
+    <basecompoundref refid="classGambit_1_1Utils_1_1threadsafe__rng" prot="public" virt="non-virtual">Gambit::Utils::threadsafe_rng</basecompoundref>
+    <includes refid="threadsafe__rng_8hpp" local="no">threadsafe_rng.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Engine</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1ae77ec89d81f8d33e0c2ebebf2bab39fe" prot="private" static="no" mutable="no">
+        <type>std::independent_bits_engine&lt; Engine, 64, <ref refid="classGambit_1_1Utils_1_1threadsafe__rng_1a3969142a42be91a5f3bdf6b34a88c3d6" kindref="member">result_type</ref> &gt; *</type>
+        <definition>std::independent_bits_engine&lt;Engine,64,result_type&gt;* Gambit::Utils::specialised_threadsafe_rng&lt; Engine &gt;::rngs</definition>
+        <argsstring></argsstring>
+        <name>rngs</name>
+        <qualifiedname>Gambit::Utils::specialised_threadsafe_rng::rngs</qualifiedname>
+        <briefdescription>
+<para>Pointer to array of RNGs, one each for each thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="121" column="38" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1a1f0cf9298a9e3fb736183119f63ce8f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Utils::specialised_threadsafe_rng&lt; Engine &gt;::specialised_threadsafe_rng</definition>
+        <argsstring>(int &amp;seed)</argsstring>
+        <name>specialised_threadsafe_rng</name>
+        <qualifiedname>Gambit::Utils::specialised_threadsafe_rng::specialised_threadsafe_rng</qualifiedname>
+        <param>
+          <type>int &amp;</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+<para>Create RNG engines, one for each thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="95" column="9" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="95" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1a77aeca160018185e6ccd9a1803d1352a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gambit::Utils::specialised_threadsafe_rng&lt; Engine &gt;::~specialised_threadsafe_rng</definition>
+        <argsstring>()</argsstring>
+        <name>~specialised_threadsafe_rng</name>
+        <qualifiedname>Gambit::Utils::specialised_threadsafe_rng::~specialised_threadsafe_rng</qualifiedname>
+        <briefdescription>
+<para>Destroy RNG engines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="107" column="17" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1a070535c72cfb125a28fcbe68167a85da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classGambit_1_1Utils_1_1threadsafe__rng_1a3969142a42be91a5f3bdf6b34a88c3d6" kindref="member">result_type</ref></type>
+        <definition>virtual result_type Gambit::Utils::specialised_threadsafe_rng&lt; Engine &gt;::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Gambit::Utils::specialised_threadsafe_rng::operator()</qualifiedname>
+        <reimplements refid="classGambit_1_1Utils_1_1threadsafe__rng_1af52e5f3a36335854cd36a5218cc3d0bc">operator()</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate a random integer using the chosen engine Selected uniformly from range (min,max). To be used as an entropy source for stdlib distributions. If you want (0,1) random doubles then please use <ref refid="classGambit_1_1Random_1a2e1bf1e5c2dc85b07a80e06968080817" kindref="member">Random::draw()</ref>, NOT this function! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="113" column="29" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Derived thread-safe random number generator class, templated on the RNG engine type. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::Utils::specialised_threadsafe_rng&lt; Engine &gt;</label>
+        <link refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::Utils::threadsafe_rng</label>
+        <link refid="classGambit_1_1Utils_1_1threadsafe__rng"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::Utils::specialised_threadsafe_rng&lt; Engine &gt;</label>
+        <link refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::Utils::threadsafe_rng</label>
+        <link refid="classGambit_1_1Utils_1_1threadsafe__rng"/>
+      </node>
+    </collaborationgraph>
+    <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="91" column="5" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="92" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1ae4ffaef33f6bde9289278b27a3971192" prot="public" virt="non-virtual"><scope>Gambit::Utils::specialised_threadsafe_rng</scope><name>max</name></member>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1af1b871d525494224e01f4f8fb7957cef" prot="public" virt="non-virtual"><scope>Gambit::Utils::specialised_threadsafe_rng</scope><name>min</name></member>
+      <member refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1a070535c72cfb125a28fcbe68167a85da" prot="public" virt="virtual"><scope>Gambit::Utils::specialised_threadsafe_rng</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1a3969142a42be91a5f3bdf6b34a88c3d6" prot="public" virt="non-virtual"><scope>Gambit::Utils::specialised_threadsafe_rng</scope><name>result_type</name></member>
+      <member refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1ae77ec89d81f8d33e0c2ebebf2bab39fe" prot="private" virt="non-virtual"><scope>Gambit::Utils::specialised_threadsafe_rng</scope><name>rngs</name></member>
+      <member refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1a1f0cf9298a9e3fb736183119f63ce8f7" prot="public" virt="non-virtual"><scope>Gambit::Utils::specialised_threadsafe_rng</scope><name>specialised_threadsafe_rng</name></member>
+      <member refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1a77aeca160018185e6ccd9a1803d1352a" prot="public" virt="virtual"><scope>Gambit::Utils::specialised_threadsafe_rng</scope><name>~specialised_threadsafe_rng</name></member>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1a0fae69a3ec5f5b3667582994cc18a960" prot="public" virt="pure-virtual"><scope>Gambit::Utils::specialised_threadsafe_rng</scope><name>~threadsafe_rng</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="512" column="17" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="512" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__stopwidth__type_1a2ce432315affff088feb24d89e5e7d6e" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_stopwidth_type::stoptot</definition>
         <argsstring></argsstring>
         <name>stoptot</name>
@@ -36,6 +36,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_stopwidth_type</label>
+        <link refid="structGambit_1_1sd__stopwidth__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>stoptot</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="510" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="511" bodyend="514"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__stopwidth__type_1a2ce432315affff088feb24d89e5e7d6e" prot="public" virt="non-virtual"><scope>Gambit::sd_stopwidth_type</scope><name>stoptot</name></member>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Likelihood_Container_Factory
 
 
 
@@ -20,9 +19,9 @@ Inherits from [Gambit::Scanner::Factory_Base](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Likelihood_Container_Factory](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-likelihood-container-factory)**(const [gambit_core](/documentation/code/classes/classgambit_1_1gambit__core/) & core, [DRes::DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/) & dependencyResolver, [IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/) & iniFile, Printers::BaseBasePrinter & printer) |
+| | **[Likelihood_Container_Factory](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-likelihood-container-factory)**(const [gambit_core](/documentation/code/classes/classgambit_1_1gambit__core/) & core, [DRes::DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/) & dependencyResolver, [IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/) & iniFile, [Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer) |
 | | **[~Likelihood_Container_Factory](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-likelihood-container-factory)**() |
-| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-operator)**(const str & purpose) const |
+| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-operator)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & purpose) const |
 
 ## Additional inherited members
 
@@ -68,4 +67,4 @@ virtual void * operator()(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

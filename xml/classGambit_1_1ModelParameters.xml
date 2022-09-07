@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1ModelParameters" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::ModelParameters</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1ModelParameters_1a0c30d65b0e5d276958ef364543d88f01" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string,double&gt; Gambit::ModelParameters::_values</definition>
+        <argsstring></argsstring>
+        <name>_values</name>
+        <qualifiedname>Gambit::ModelParameters::_values</qualifiedname>
+        <briefdescription>
+<para>Internal map representation of parameters and their values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="141" column="16" bodyfile="Utils/include/gambit/Utils/model_parameters.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ModelParameters_1a66e498f574496b3b37e74ef309e19d3d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::ModelParameters::modelname</definition>
+        <argsstring></argsstring>
+        <name>modelname</name>
+        <qualifiedname>Gambit::ModelParameters::modelname</qualifiedname>
+        <briefdescription>
+<para>Name of the model; intended mainly for more helpful error messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="144" column="19" bodyfile="Utils/include/gambit/Utils/model_parameters.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ModelParameters_1a81a1ae9f34c3e6328815cd1fe60b202a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::ModelParameters::outputname</definition>
+        <argsstring></argsstring>
+        <name>outputname</name>
+        <qualifiedname>Gambit::ModelParameters::outputname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output name (string used for labelling in output, related to the <ref refid="classGambit_1_1model__functor" kindref="compound">model_functor</ref> which produced these parameters) Currently used only by the postprocessor ScannerBit plugin and reader plugins. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="148" column="19" bodyfile="Utils/include/gambit/Utils/model_parameters.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1ad4fa648ce0c2e34f676c2f85ea5e19d5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::assert_contains</definition>
+        <argsstring>(std::string) const</argsstring>
+        <name>assert_contains</name>
+        <qualifiedname>Gambit::ModelParameters::assert_contains</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <defname>inkey</defname>
+        </param>
+        <briefdescription>
+<para>Checks if this model container holds a parameter match the supplied name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> class member function definitions.</para>
+<para>Checks if this model container holds a parameter matching the supplied name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="60" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="46" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1abc06d5387fdf4055f9c6134a57bf136b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ModelParameters::ModelParameters</definition>
+        <argsstring>()</argsstring>
+        <name>ModelParameters</name>
+        <qualifiedname>Gambit::ModelParameters::ModelParameters</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="65" column="7" bodyfile="Utils/src/model_parameters.cpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1abbd6b684700df6b5d0a92ad19273dfa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ModelParameters::ModelParameters</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;)</argsstring>
+        <name>ModelParameters</name>
+        <qualifiedname>Gambit::ModelParameters::ModelParameters</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <defname>paramlist</defname>
+        </param>
+        <briefdescription>
+<para>Constructor using vector of strings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="68" column="7" bodyfile="Utils/src/model_parameters.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a0347d0063c4ec54385ce19b0a6f8ea8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ModelParameters::ModelParameters</definition>
+        <argsstring>(const char **)</argsstring>
+        <name>ModelParameters</name>
+        <qualifiedname>Gambit::ModelParameters::ModelParameters</qualifiedname>
+        <param>
+          <type>const char **</type>
+          <defname>paramlist</defname>
+        </param>
+        <briefdescription>
+<para>Constructor using array of char arrays. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="71" column="7" bodyfile="Utils/src/model_parameters.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a375ffaba704c09b3308ae88e81c76d2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::ModelParameters::getValue</definition>
+        <argsstring>(std::string const &amp;inkey) const</argsstring>
+        <name>getValue</name>
+        <qualifiedname>Gambit::ModelParameters::getValue</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>inkey</declname>
+        </param>
+        <briefdescription>
+<para>Get value of named parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="74" column="14" bodyfile="Utils/src/model_parameters.cpp" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a0e6d7356e45131b1744936676976e151" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::ModelParameters::has</definition>
+        <argsstring>(const std::string &amp;) const</argsstring>
+        <name>has</name>
+        <qualifiedname>Gambit::ModelParameters::has</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>inkey</defname>
+        </param>
+        <briefdescription>
+<para>Check if a parameter exists in this object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="77" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a3b6a0627e50c2f376a02065f0252a293" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; std::string, double &gt; &amp;</type>
+        <definition>const std::map&lt; std::string, double &gt; &amp; Gambit::ModelParameters::getValues</definition>
+        <argsstring>() const</argsstring>
+        <name>getValues</name>
+        <qualifiedname>Gambit::ModelParameters::getValues</qualifiedname>
+        <briefdescription>
+<para>Get values of all parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="80" column="22" bodyfile="Utils/src/model_parameters.cpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a45d7f5963e35cfaf86b454964f5396c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, double &gt;::const_iterator</type>
+        <definition>std::map&lt; std::string, double &gt;::const_iterator Gambit::ModelParameters::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>Gambit::ModelParameters::begin</qualifiedname>
+        <briefdescription>
+<para>Get a const iterator to the first parameter map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="83" column="33" bodyfile="Utils/src/model_parameters.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a0e30a75c507557faebb1bb4274acf2d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, double &gt;::const_iterator</type>
+        <definition>std::map&lt; std::string, double &gt;::const_iterator Gambit::ModelParameters::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>Gambit::ModelParameters::end</qualifiedname>
+        <briefdescription>
+<para>Get a const iterator to the last parameter map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="86" column="33" bodyfile="Utils/src/model_parameters.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1af3d49bb7c28248f9b5e4b892d17610c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::ModelParameters::getNumberOfPars</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfPars</name>
+        <qualifiedname>Gambit::ModelParameters::getNumberOfPars</qualifiedname>
+        <briefdescription>
+<para>Get number of parameters stored in this object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="89" column="11" bodyfile="Utils/src/model_parameters.cpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a2e8a4c4c5265a443795e28b07fddca7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double &amp; Gambit::ModelParameters::operator[]</definition>
+        <argsstring>(std::string const &amp;inkey) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>Gambit::ModelParameters::operator[]</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>inkey</declname>
+        </param>
+        <briefdescription>
+<para>Get parameter value using bracket operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="92" column="21" bodyfile="Utils/src/model_parameters.cpp" bodystart="108" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1abaa13c09602c9c585834b4c4b1fc5b22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double &amp; Gambit::ModelParameters::at</definition>
+        <argsstring>(std::string const &amp;inkey) const</argsstring>
+        <name>at</name>
+        <qualifiedname>Gambit::ModelParameters::at</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>inkey</declname>
+        </param>
+        <briefdescription>
+<para>Get parameter value using &apos;at&apos; syntax. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get parameter value using &apos;at&apos; operator This is no different to the bracket operator method, since keys cannot be added with the bracket method anyhow, but for people who are used to maps it is nice to have. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="95" column="21" bodyfile="Utils/src/model_parameters.cpp" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a3cbb2a22eb9a5c872674672fe62006d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::setValue</definition>
+        <argsstring>(std::string const &amp;inkey, double const &amp;value)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>Gambit::ModelParameters::setValue</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>inkey</declname>
+        </param>
+        <param>
+          <type>double const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set single parameter value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="98" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a549bd29c15516f5bb9a5ddd2d1eaed30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::setValues</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; const &amp;params_map, bool missing_is_error=true)</argsstring>
+        <name>setValues</name>
+        <qualifiedname>Gambit::ModelParameters::setValues</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; const &amp;</type>
+          <declname>params_map</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>missing_is_error</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Set many parameter values using a map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="101" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="139" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a07d968e260e28643370ab3a9938a1eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::setValues</definition>
+        <argsstring>(ModelParameters const &amp;donor, bool missing_is_error=true)</argsstring>
+        <name>setValues</name>
+        <qualifiedname>Gambit::ModelParameters::setValues</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> const &amp;</type>
+          <declname>donor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>missing_is_error</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Set many parameter values using another <ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="104" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a83cf07be2b75d3f106c1facea22a40ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; Gambit::ModelParameters::getKeys</definition>
+        <argsstring>() const</argsstring>
+        <name>getKeys</name>
+        <qualifiedname>Gambit::ModelParameters::getKeys</qualifiedname>
+        <briefdescription>
+<para>Get parameter keys (names), probably for external iteration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="107" column="19" bodyfile="Utils/src/model_parameters.cpp" bodystart="154" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a2a75a0544a3a91261ba73d9d5429d35d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <qualifiedname>Gambit::ModelParameters::print</qualifiedname>
+        <briefdescription>
+<para>Dump parameter names and values to stdout (should be for debugging only) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="110" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="165" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a7fc2ed2a7925bbcb560cbb8a918d4044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::_definePar</definition>
+        <argsstring>(const std::string &amp;newkey)</argsstring>
+        <name>_definePar</name>
+        <qualifiedname>Gambit::ModelParameters::_definePar</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newkey</declname>
+        </param>
+        <briefdescription>
+<para>Define a parameter with name, value (i.e. add to internal map). Value is initialised to zero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="124" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a13f4e6838dadcf3b054cf81e37f8bf24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::_definePars</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;v)</argsstring>
+        <name>_definePars</name>
+        <qualifiedname>Gambit::ModelParameters::_definePars</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Define many new parameters at once via a vector of names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="127" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="181" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a043fc3d66ff97c28acf0ad178e763445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::_definePars</definition>
+        <argsstring>(const char **array)</argsstring>
+        <name>_definePars</name>
+        <qualifiedname>Gambit::ModelParameters::_definePars</qualifiedname>
+        <param>
+          <type>const char **</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+<para>Define many new parameters at once via an array of char arrays. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="130" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="190" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1ad2ef9ba9cfb44ae037a5d992d6248c73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::ModelParameters::getModelName</definition>
+        <argsstring>() const</argsstring>
+        <name>getModelName</name>
+        <qualifiedname>Gambit::ModelParameters::getModelName</qualifiedname>
+        <briefdescription>
+<para>Getters/setters for model and output names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="133" column="19" bodyfile="Utils/src/model_parameters.cpp" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a9131cc680afe80e4cc287428768e33c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::ModelParameters::getOutputName</definition>
+        <argsstring>() const</argsstring>
+        <name>getOutputName</name>
+        <qualifiedname>Gambit::ModelParameters::getOutputName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="134" column="19" bodyfile="Utils/src/model_parameters.cpp" bodystart="202" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1ae4fe9724eaf29011c725a58254bb55fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::setModelName</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setModelName</name>
+        <qualifiedname>Gambit::ModelParameters::setModelName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="135" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelParameters_1a39e60bdc73411c22a57f37bd677ebdbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelParameters::setOutputName</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setOutputName</name>
+        <qualifiedname>Gambit::ModelParameters::setOutputName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="136" column="12" bodyfile="Utils/src/model_parameters.cpp" bodystart="204" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classGambit_1_1ModelParameters_1a8c2345f3cce22382ec91069aa9f2ff9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;strm, const ModelParameters &amp;me)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::ModelParameters::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> &amp;</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+<para>Dump parameter names and values to stream (again for debugging only I think) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="113" column="14" bodyfile="Utils/include/gambit/Utils/model_parameters.hpp" bodystart="113" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/model_parameters.hpp" line="54" column="3" bodyfile="Utils/include/gambit/Utils/model_parameters.hpp" bodystart="55" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1ModelParameters_1a7fc2ed2a7925bbcb560cbb8a918d4044" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>_definePar</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a13f4e6838dadcf3b054cf81e37f8bf24" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>_definePars</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a043fc3d66ff97c28acf0ad178e763445" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>_definePars</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a0c30d65b0e5d276958ef364543d88f01" prot="private" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>_values</name></member>
+      <member refid="classGambit_1_1ModelParameters_1ad4fa648ce0c2e34f676c2f85ea5e19d5" prot="protected" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>assert_contains</name></member>
+      <member refid="classGambit_1_1ModelParameters_1abaa13c09602c9c585834b4c4b1fc5b22" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>at</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a45d7f5963e35cfaf86b454964f5396c4" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>begin</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a0e30a75c507557faebb1bb4274acf2d3" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>end</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a83cf07be2b75d3f106c1facea22a40ec" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>getKeys</name></member>
+      <member refid="classGambit_1_1ModelParameters_1ad2ef9ba9cfb44ae037a5d992d6248c73" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>getModelName</name></member>
+      <member refid="classGambit_1_1ModelParameters_1af3d49bb7c28248f9b5e4b892d17610c9" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>getNumberOfPars</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a9131cc680afe80e4cc287428768e33c7" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>getOutputName</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a375ffaba704c09b3308ae88e81c76d2b" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>getValue</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a3b6a0627e50c2f376a02065f0252a293" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>getValues</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a0e6d7356e45131b1744936676976e151" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>has</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a66e498f574496b3b37e74ef309e19d3d" prot="private" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>modelname</name></member>
+      <member refid="classGambit_1_1ModelParameters_1abc06d5387fdf4055f9c6134a57bf136b" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>ModelParameters</name></member>
+      <member refid="classGambit_1_1ModelParameters_1abbd6b684700df6b5d0a92ad19273dfa7" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>ModelParameters</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a0347d0063c4ec54385ce19b0a6f8ea8d" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>ModelParameters</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a8c2345f3cce22382ec91069aa9f2ff9c" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a2e8a4c4c5265a443795e28b07fddca7a" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>operator[]</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a81a1ae9f34c3e6328815cd1fe60b202a" prot="private" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>outputname</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a2a75a0544a3a91261ba73d9d5429d35d" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>print</name></member>
+      <member refid="classGambit_1_1ModelParameters_1ae4fe9724eaf29011c725a58254bb55fa" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>setModelName</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a39e60bdc73411c22a57f37bd677ebdbe" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>setOutputName</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a3cbb2a22eb9a5c872674672fe62006d0" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>setValue</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a549bd29c15516f5bb9a5ddd2d1eaed30" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>setValues</name></member>
+      <member refid="classGambit_1_1ModelParameters_1a07d968e260e28643370ab3a9938a1eaa" prot="public" virt="non-virtual"><scope>Gambit::ModelParameters</scope><name>setValues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

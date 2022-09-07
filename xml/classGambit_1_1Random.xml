@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Random" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Random</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Random_1af94a5890e3c54183c361e320c5652191" prot="private" static="yes" mutable="no">
+        <type><ref refid="classGambit_1_1Utils_1_1threadsafe__rng" kindref="compound">Utils::threadsafe_rng</ref> *</type>
+        <definition>Utils::threadsafe_rng * Gambit::Random::local_rng</definition>
+        <argsstring></argsstring>
+        <name>local_rng</name>
+        <qualifiedname>Gambit::Random::local_rng</qualifiedname>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+<para>Pointer to the actual RNG. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to chosen random number generation engine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="148" column="36" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGambit_1_1Random_1a8afcb55de716a73570bcee1ab4144f22" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Random::create_rng_engine</definition>
+        <argsstring>(str, int=-1)</argsstring>
+        <name>create_rng_engine</name>
+        <qualifiedname>Gambit::Random::create_rng_engine</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>engine</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>seed</defname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Choose the engine to use for random number generation, based on the contents of the ini file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="133" column="19" bodyfile="Utils/src/threadsafe_rng.cpp" bodystart="63" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Random_1a2e1bf1e5c2dc85b07a80e06968080817" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Random::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>Gambit::Random::draw</qualifiedname>
+        <briefdescription>
+<para>Draw a single uniform random deviate from the interval (0,1) using the chosen RNG engine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw a single uniform random deviate in the range (0,1) using the chosen RNG engine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="136" column="21" bodyfile="Utils/src/threadsafe_rng.cpp" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Random_1a557b2f3745549bdc44166b0516c17ed5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Utils_1_1threadsafe__rng" kindref="compound">Utils::threadsafe_rng</ref> &amp;</type>
+        <definition>static Utils::threadsafe_rng &amp; Gambit::Random::rng</definition>
+        <argsstring>()</argsstring>
+        <name>rng</name>
+        <qualifiedname>Gambit::Random::rng</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a threadsafe wrapper for the chosen RNG engine (to be passed to e.g. std library distribution function objects) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="140" column="36" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="140" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1Random_1a142019e839ef99cd652164d656a1066e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Random::Random</definition>
+        <argsstring>()</argsstring>
+        <name>Random</name>
+        <qualifiedname>Gambit::Random::Random</qualifiedname>
+        <briefdescription>
+<para>Private constructor makes this a purely managerial class, i.e. unable to be instantiated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="145" column="7" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="145" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="127" column="3" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="128" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Random_1a8afcb55de716a73570bcee1ab4144f22" prot="public" virt="non-virtual"><scope>Gambit::Random</scope><name>create_rng_engine</name></member>
+      <member refid="classGambit_1_1Random_1a2e1bf1e5c2dc85b07a80e06968080817" prot="public" virt="non-virtual"><scope>Gambit::Random</scope><name>draw</name></member>
+      <member refid="classGambit_1_1Random_1af94a5890e3c54183c361e320c5652191" prot="private" virt="non-virtual"><scope>Gambit::Random</scope><name>local_rng</name></member>
+      <member refid="classGambit_1_1Random_1a142019e839ef99cd652164d656a1066e" prot="private" virt="non-virtual"><scope>Gambit::Random</scope><name>Random</name></member>
+      <member refid="classGambit_1_1Random_1a557b2f3745549bdc44166b0516c17ed5" prot="public" virt="non-virtual"><scope>Gambit::Random</scope><name>rng</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

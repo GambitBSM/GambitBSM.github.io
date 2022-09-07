@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="threadsafe__rng_8cpp" kind="file" language="C++">
+    <compoundname>threadsafe_rng.cpp</compoundname>
+    <includes refid="threadsafe__rng_8hpp" local="yes">gambit/Utils/threadsafe_rng.hpp</includes>
+    <includes refid="util__macros_8hpp" local="yes">gambit/Utils/util_macros.hpp</includes>
+    <includes refid="standalone__error__handlers_8hpp" local="yes">gambit/Utils/standalone_error_handlers.hpp</includes>
+    <includes refid="logger_8hpp" local="yes">gambit/Logs/logger.hpp</includes>
+    <includes local="no">boost/preprocessor/seq/for_each.hpp</includes>
+    <includes local="no">boost/preprocessor/tuple/to_seq.hpp</includes>
+    <incdepgraph>
+      <node id="36">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="48">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="31">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="13">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="2">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+        <link refid="threadsafe__rng_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>threadsafe_rng.cpp</label>
+        <link refid="threadsafe__rng_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>array</label>
+      </node>
+      <node id="15">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="9">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="21">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="10">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="20">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="8">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="22">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="23">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="51">
+        <label>boost/preprocessor/seq/for_each.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="52">
+        <label>boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="7">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="41">
+        <label>cassert</label>
+      </node>
+      <node id="29">
+        <label>complex</label>
+      </node>
+      <node id="28">
+        <label>cstring</label>
+      </node>
+      <node id="46">
+        <label>deque</label>
+      </node>
+      <node id="33">
+        <label>exception</label>
+      </node>
+      <node id="45">
+        <label>forward_list</label>
+      </node>
+      <node id="39">
+        <label>fstream</label>
+      </node>
+      <node id="38">
+        <label>iostream</label>
+      </node>
+      <node id="44">
+        <label>list</label>
+      </node>
+      <node id="25">
+        <label>map</label>
+      </node>
+      <node id="27">
+        <label>omp.h</label>
+      </node>
+      <node id="50">
+        <label>ostream</label>
+      </node>
+      <node id="3">
+        <label>random</label>
+      </node>
+      <node id="32">
+        <label>set</label>
+      </node>
+      <node id="26">
+        <label>sstream</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="40">
+        <label>type_traits</label>
+      </node>
+      <node id="5">
+        <label>unistd.h</label>
+      </node>
+      <node id="42">
+        <label>unordered_map</label>
+      </node>
+      <node id="43">
+        <label>unordered_set</label>
+      </node>
+      <node id="35">
+        <label>utility</label>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="threadsafe__rng_8cpp_1ac21dfc326d7c2fade0beebd4bd7d240c" prot="public" static="no">
+        <name>ALL_RNGS</name>
+        <initializer>(default_random_engine, minstd_rand, minstd_rand0, mt19937, mt19937_64, ranlux24_base, ranlux48_base, ranlux24, ranlux48, knuth_b)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/threadsafe_rng.cpp" line="50" column="9" bodyfile="Utils/src/threadsafe_rng.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="threadsafe__rng_8cpp_1a4ad9e725e154a7930be77f9ceeb07271" prot="public" static="no">
+        <name>MAKE_SPECIALISED_RNG</name>
+        <param><defname>r</defname></param>
+        <param><defname>data</defname></param>
+        <param><defname>elem</defname></param>
+        <initializer>        else <ref refid="DarkSUSY__MSSM__6__2__5_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref> (engine == STRINGIFY(elem))                                    \
+        {                                                                      \
+          static Utils::specialised_threadsafe_rng&lt;elem&gt; ultralocal_rng(seed); \
+          local_rng = &amp;ultralocal_rng;                                         \
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/threadsafe_rng.cpp" line="51" column="9" bodyfile="Utils/src/threadsafe_rng.cpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="threadsafe__rng_8cpp_1af3a10b95ca5007de3cd2be3e03b22b45" prot="public" static="no">
+        <name>ENABLE_ALL_RNGS</name>
+        <initializer>BOOST_PP_SEQ_FOR_EACH(MAKE_SPECIALISED_RNG, , BOOST_PP_TUPLE_TO_SEQ(ALL_RNGS))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/threadsafe_rng.cpp" line="57" column="9" bodyfile="Utils/src/threadsafe_rng.cpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A threadsafe interface to the STL random number generators. The generator to use can be chosen in the ini/yaml file with option rng: name where name is one of the following: default_random_engine Default random engine minstd_rand Minimal Standard minstd_rand generator minstd_rand0 Minimal Standard minstd_rand0 generator mt19937 Mersenne Twister 19937 generator mt19937_64 Mersene Twister 19937 generator (64 bit) ranlux24_base Ranlux 24 base generator ranlux48_base Ranlux 48 base generator ranlux24 Ranlux 24 generator ranlux48 Ranlux 48 generator knuth_b Knuth-B generator</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2014 Dec</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>A<sp/>threadsafe<sp/>interface<sp/>to<sp/>the<sp/>STL<sp/>random</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>number<sp/>generators.<sp/><sp/>The<sp/>generator<sp/>to<sp/>use<sp/>can</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>be<sp/>chosen<sp/>in<sp/>the<sp/>ini/yaml<sp/>file<sp/>with<sp/>option</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/><sp/><sp/>rng:<sp/>name</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>where<sp/>name<sp/>is<sp/>one<sp/>of<sp/>the<sp/>following:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/><sp/><sp/>default_random_engine</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Default<sp/>random<sp/>engine</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/>minstd_rand</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Minimal<sp/>Standard<sp/>minstd_rand<sp/>generator</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/><sp/><sp/>minstd_rand0</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Minimal<sp/>Standard<sp/>minstd_rand0<sp/>generator</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/><sp/><sp/>mt19937</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Mersenne<sp/>Twister<sp/>19937<sp/>generator</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/><sp/><sp/>mt19937_64</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Mersene<sp/>Twister<sp/>19937<sp/>generator<sp/>(64<sp/>bit)</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///<sp/><sp/><sp/><sp/>ranlux24_base</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Ranlux<sp/>24<sp/>base<sp/>generator</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/><sp/><sp/>ranlux48_base</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Ranlux<sp/>48<sp/>base<sp/>generator</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///<sp/><sp/><sp/><sp/>ranlux24</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Ranlux<sp/>24<sp/>generator</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">///<sp/><sp/><sp/><sp/>ranlux48</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Ranlux<sp/>48<sp/>generator</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">///<sp/><sp/><sp/><sp/>knuth_b</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/>Knuth-B<sp/>generator</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">///<sp/><sp/>\date<sp/>2014<sp/>Dec</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="threadsafe__rng_8hpp" kindref="compound">gambit/Utils/threadsafe_rng.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__macros_8hpp" kindref="compound">gambit/Utils/util_macros.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="standalone__error__handlers_8hpp" kindref="compound">gambit/Utils/standalone_error_handlers.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logger_8hpp" kindref="compound">gambit/Logs/logger.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/preprocessor/seq/for_each.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/preprocessor/tuple/to_seq.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALL_RNGS<sp/>(default_random_engine,<sp/>minstd_rand,<sp/>minstd_rand0,<sp/>mt19937,<sp/>mt19937_64,<sp/>ranlux24_base,<sp/>ranlux48_base,<sp/>ranlux24,<sp/>ranlux48,<sp/>knuth_b)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAKE_SPECIALISED_RNG(r,<sp/>data,<sp/>elem)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(engine<sp/>==<sp/>STRINGIFY(elem))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>Utils::specialised_threadsafe_rng&lt;elem&gt;<sp/>ultralocal_rng(seed);<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_rng<sp/>=<sp/>&amp;ultralocal_rng;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENABLE_ALL_RNGS<sp/>BOOST_PP_SEQ_FOR_EACH(MAKE_SPECIALISED_RNG,<sp/>,<sp/>BOOST_PP_TUPLE_TO_SEQ(ALL_RNGS))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/>///<sp/>Choose<sp/>the<sp/>engine<sp/>to<sp/>use<sp/>for<sp/>random<sp/>number<sp/>generation,<sp/>based<sp/>on<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>ini<sp/>file.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Random_1a8afcb55de716a73570bcee1ab4144f22" kindref="member">Random::create_rng_engine</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>engine,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(engine<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>engine<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;mt19937_64<sp/>(default)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Utils::specialised_threadsafe_rng&lt;mt19937_64&gt;<sp/>ultralocal_rng(seed);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>local_rng<sp/>=<sp/>&amp;ultralocal_rng;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>ENABLE_ALL_RNGS</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1ab8f36a16d614ad49a62f810ef8ce8c84" kindref="member">utils_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>random<sp/>number<sp/>generation<sp/>engine:<sp/>&quot;</highlight><highlight class="normal">+engine+</highlight><highlight class="stringliteral">&quot;.<sp/><sp/>Please<sp/>check<sp/>your<sp/>yaml<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>LogTags::utils<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Random<sp/>number<sp/>engine<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>engine<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>selected<sp/>with<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(seed<sp/>==<sp/>-1)<sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;hardware<sp/>random<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;seed<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>seed<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/>///<sp/>Draw<sp/>a<sp/>single<sp/>uniform<sp/>random<sp/>deviate<sp/>in<sp/>the<sp/>range<sp/>(0,1)<sp/>using<sp/>the<sp/>chosen<sp/>RNG<sp/>engine</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Random_1a2e1bf1e5c2dc85b07a80e06968080817" kindref="member">Random::draw</ref>()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(local_rng<sp/>==<sp/>NULL)<sp/><ref refid="classGambit_1_1Random_1a8afcb55de716a73570bcee1ab4144f22" kindref="member">create_rng_engine</ref>(</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::generate_canonical&lt;double,<sp/>32&gt;(<ref refid="classGambit_1_1Random_1a557b2f3745549bdc44166b0516c17ed5" kindref="member">rng</ref>());</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Utils/src/threadsafe_rng.cpp"/>
+  </compounddef>
+</doxygen>

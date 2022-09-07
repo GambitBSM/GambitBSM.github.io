@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS5_RDMGEV</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS5__RDMGEV_1aed5cc893dc14e27bba83c811e5ebd5cf" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 1000 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 1000 &gt;</type>
         <definition>Farray&lt;Fdouble,1,1000&gt; Gambit::DS5_RDMGEV::mco</definition>
         <argsstring></argsstring>
         <name>mco</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="316" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__RDMGEV_1a5d7119479241c19d94b274897c738be9" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 1000 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 1000 &gt;</type>
         <definition>Farray&lt;Fdouble,1,1000&gt; Gambit::DS5_RDMGEV::mdof</definition>
         <argsstring></argsstring>
         <name>mdof</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="316" column="18" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__RDMGEV_1a93bd0eb0445cf7fc1294a2f157757857" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 1000 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 1000 &gt;</type>
         <definition>Farray&lt;Fdouble,1,1000&gt; Gambit::DS5_RDMGEV::rgev</definition>
         <argsstring></argsstring>
         <name>rgev</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="316" column="23" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__RDMGEV_1abb16fdc64f2e91d968efdeb55ff14d12" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 1000 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 1000 &gt;</type>
         <definition>Farray&lt;Fdouble,1,1000&gt; Gambit::DS5_RDMGEV::rwid</definition>
         <argsstring></argsstring>
         <name>rwid</name>
@@ -88,7 +88,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="317" column="20" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="317" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__RDMGEV_1ae6f7ce9ea91fada099e7bfba2e4371e1" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Finteger, 1, 1000 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Finteger, 1, 1000 &gt;</type>
         <definition>Farray&lt;Finteger,1,1000&gt; Gambit::DS5_RDMGEV::kcoann</definition>
         <argsstring></argsstring>
         <name>kcoann</name>
@@ -106,6 +106,29 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 1000 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="3">
+        <label>Gambit::Farray&lt; Finteger, 1, 1000 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS5_RDMGEV</label>
+        <link refid="structGambit_1_1DS5__RDMGEV"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mco</edgelabel>
+          <edgelabel>mdof</edgelabel>
+          <edgelabel>rgev</edgelabel>
+          <edgelabel>rwid</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>kcoann</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="314" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="315" bodyend="319"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS5__RDMGEV_1ae6f7ce9ea91fada099e7bfba2e4371e1" prot="public" virt="non-virtual"><scope>Gambit::DS5_RDMGEV</scope><name>kcoann</name></member>

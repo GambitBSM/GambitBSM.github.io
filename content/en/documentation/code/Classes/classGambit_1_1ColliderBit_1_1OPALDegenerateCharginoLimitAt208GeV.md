@@ -4,8 +4,7 @@ description: 'A class to contain the limit data from OPAL, hep-ex/0210043, figur
 
 ---
 
-
-
+# Gambit::ColliderBit::OPALDegenerateCharginoLimitAt208GeV
 
 
 
@@ -112,4 +111,4 @@ Plots only go down to 45 GeV
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

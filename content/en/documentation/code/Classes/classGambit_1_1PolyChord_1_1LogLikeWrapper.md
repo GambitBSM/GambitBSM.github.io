@@ -4,8 +4,7 @@ description: 'Class to connect PolyChord log-likelihood function and ScannerBit 
 
 ---
 
-
-
+# Gambit::PolyChord::LogLikeWrapper
 
 
 
@@ -121,4 +120,4 @@ Disable printing for speeds greater and equal than Speeds start at 0 A value of 
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

@@ -88,7 +88,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="58" column="41" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__SMQUARKMASSES_1a862f9fbfc5e17ed003d74249016fe3ec" prot="public" static="no" mutable="no">
-        <type>Fstring&lt; 5 &gt;</type>
+        <type><ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref>&lt; 5 &gt;</type>
         <definition>Fstring&lt;5&gt; Gambit::DS_SMQUARKMASSES::roption</definition>
         <argsstring></argsstring>
         <name>roption</name>
@@ -106,6 +106,25 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; char, 1, len &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Fstring&lt; 5 &gt;</label>
+        <link refid="classGambit_1_1Fstring"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_SMQUARKMASSES</label>
+        <link refid="structGambit_1_1DS__SMQUARKMASSES"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>roption</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="56" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="57" bodyend="60"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__SMQUARKMASSES_1ad201169cf8d66e2b9e0b858a50c79e96" prot="public" virt="non-virtual"><scope>Gambit::DS_SMQUARKMASSES</scope><name>mbmb</name></member>

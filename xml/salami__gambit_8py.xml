@@ -92,7 +92,7 @@
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Load/cache<sp/>predictor<sp/>for<sp/>this<sp/>process</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>energy<sp/>=<sp/>str(int(energy))</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>energy<sp/>=<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>(int(energy))</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>pidkey<sp/>=<sp/>tuple(sorted(proc,<sp/>key=</highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>x<sp/>:<sp/>[abs(x),<sp/>x<sp/>&lt;<sp/>0]))</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>proskey<sp/>=<sp/>pids_to_prosids[pidkey]</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;{}_{}&quot;</highlight><highlight class="normal">.format(energy,<sp/>proskey)</highlight></codeline>

@@ -4,8 +4,7 @@ description: 'Objective functor made up of multiple plugins. '
 
 ---
 
-
-
+# Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>
 
 
 
@@ -97,4 +96,4 @@ inline ret main(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# src/Flav_reader.cpp
 
 
 
@@ -38,7 +37,7 @@ description: "[No description available]"
   * 2017 Oct
 
 
-Implementation of reader class for FlavBit YAML database.
+Implementation of reader class for FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database.
 
 
 
@@ -344,4 +343,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:53 +0000

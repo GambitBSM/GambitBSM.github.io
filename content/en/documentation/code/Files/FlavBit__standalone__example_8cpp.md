@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# examples/FlavBit_standalone_example.cpp
 
 
 
@@ -23,7 +22,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | std::string | **[infile](/documentation/code/files/flavbit__standalone__example_8cpp/#function-infile)**("FlavBit/data/example.slha" ) |
-| | **[QUICK_FUNCTION](/documentation/code/files/flavbit__standalone__example_8cpp/#function-quick-function)**(FlavBit , MSSM_spectrum , NEW_CAPABILITY , relabelSpectrum , Spectrum , (MSSM30atQ, MSSM30atMGUT) , (unimproved_MSSM_spectrum, Spectrum) ) |
+| | **[QUICK_FUNCTION](/documentation/code/files/flavbit__standalone__example_8cpp/#function-quick-function)**(FlavBit , MSSM_spectrum , NEW_CAPABILITY , relabelSpectrum , [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) , (MSSM30atQ, MSSM30atMGUT) , (unimproved_MSSM_spectrum, [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/)) ) |
 | int | **[main](/documentation/code/files/flavbit__standalone__example_8cpp/#function-main)**(int argc, char ** argv) |
 
 
@@ -469,4 +468,4 @@ int main(int argc, char** argv)
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:53 +0000

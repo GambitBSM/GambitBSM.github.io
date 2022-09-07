@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# FlavBit/Flav_reader.hpp
 
 
 
@@ -23,7 +22,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Gambit::FlavBit::Flav_reader](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/)** <br>Reader class for FlavBit YAML database.  |
+| class | **[Gambit::FlavBit::Flav_reader](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/)** <br>Reader class for FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database.  |
 
 ## Detailed Description
 
@@ -40,7 +39,7 @@ description: "[No description available]"
   * 2017 Mar
 
 
-Declaration of reader class for FlavBit YAML database.
+Declaration of reader class for FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database.
 
 
 
@@ -170,4 +169,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:53 +0000

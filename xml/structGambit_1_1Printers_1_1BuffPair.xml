@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structGambit_1_1Printers_1_1BuffPair" kind="struct" language="C++" prot="public">
+    <compoundname>Gambit::Printers::BuffPair</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structGambit_1_1Printers_1_1BuffPair_1a01e1b82b02cd6760731758a92044ce41" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar" kindref="compound">DataSetInterfaceScalar</ref>&lt; T, CHUNKLENGTH &gt;</type>
+        <definition>DataSetInterfaceScalar&lt;T, CHUNKLENGTH&gt; Gambit::Printers::BuffPair&lt; T &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Gambit::Printers::BuffPair::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="50" column="31" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1Printers_1_1BuffPair_1a35e88bd86bd9a1b8330f56d0892fed3e" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar" kindref="compound">DataSetInterfaceScalar</ref>&lt; int, CHUNKLENGTH &gt;</type>
+        <definition>DataSetInterfaceScalar&lt;int, CHUNKLENGTH&gt; Gambit::Printers::BuffPair&lt; T &gt;::isvalid</definition>
+        <argsstring></argsstring>
+        <name>isvalid</name>
+        <qualifiedname>Gambit::Printers::BuffPair::isvalid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="51" column="31" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structGambit_1_1Printers_1_1BuffPair_1a3e26e0284e216f986b9883432850731f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::BuffPair&lt; T &gt;::BuffPair</definition>
+        <argsstring>(DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt; &amp;d, DataSetInterfaceScalar&lt; int, CHUNKLENGTH &gt; &amp;v)</argsstring>
+        <name>BuffPair</name>
+        <qualifiedname>Gambit::Printers::BuffPair::BuffPair</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar" kindref="compound">DataSetInterfaceScalar</ref>&lt; T, CHUNKLENGTH &gt; &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar" kindref="compound">DataSetInterfaceScalar</ref>&lt; int, CHUNKLENGTH &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="52" column="8" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1Printers_1_1BuffPair_1aff8efd7f6671885efecbd6524db13bd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::BuffPair&lt; T &gt;::BuffPair</definition>
+        <argsstring>(hid_t location_id, const std::string &amp;name)</argsstring>
+        <name>BuffPair</name>
+        <qualifiedname>Gambit::Printers::BuffPair::BuffPair</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="58" column="8" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1Printers_1_1BuffPair_1ab02ae2ea3c1c60f41ca387d729f7f141" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::BuffPair&lt; T &gt;::BuffPair</definition>
+        <argsstring>()</argsstring>
+        <name>BuffPair</name>
+        <qualifiedname>Gambit::Printers::BuffPair::BuffPair</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="63" column="8" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Printers::DataSetInterfaceBase&lt; int, 0, CHUNKLENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1DataSetInterfaceBase"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Printers::DataSetInterfaceScalar&lt; int, CHUNKLENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::Printers::BuffPair&lt; T &gt;</label>
+        <link refid="structGambit_1_1Printers_1_1BuffPair"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>isvalid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="48" column="5" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="49" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structGambit_1_1Printers_1_1BuffPair_1a3e26e0284e216f986b9883432850731f" prot="public" virt="non-virtual"><scope>Gambit::Printers::BuffPair</scope><name>BuffPair</name></member>
+      <member refid="structGambit_1_1Printers_1_1BuffPair_1aff8efd7f6671885efecbd6524db13bd8" prot="public" virt="non-virtual"><scope>Gambit::Printers::BuffPair</scope><name>BuffPair</name></member>
+      <member refid="structGambit_1_1Printers_1_1BuffPair_1ab02ae2ea3c1c60f41ca387d729f7f141" prot="public" virt="non-virtual"><scope>Gambit::Printers::BuffPair</scope><name>BuffPair</name></member>
+      <member refid="structGambit_1_1Printers_1_1BuffPair_1a01e1b82b02cd6760731758a92044ce41" prot="public" virt="non-virtual"><scope>Gambit::Printers::BuffPair</scope><name>data</name></member>
+      <member refid="structGambit_1_1Printers_1_1BuffPair_1a35e88bd86bd9a1b8330f56d0892fed3e" prot="public" virt="non-virtual"><scope>Gambit::Printers::BuffPair</scope><name>isvalid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# frontends/LibSecond_1_2.hpp
 
 
 
@@ -180,4 +179,4 @@ BE_CONV_FUNCTION(awesomenessNotByAnders, double, (int), "awesomeness")
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:28 +0000
+Updated on 2022-09-07 at 13:49:56 +0000

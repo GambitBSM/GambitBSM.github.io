@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# src/python_helpers.cpp
 
 
 
@@ -98,4 +97,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:29 +0000
+Updated on 2022-09-07 at 13:49:57 +0000

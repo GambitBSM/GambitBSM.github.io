@@ -4,8 +4,7 @@ description: 'A class to contain the limit data from L3PLB_482_2000_31, figure 5
 
 ---
 
-
-
+# Gambit::ColliderBit::L3ChargedGauginoSmallDeltaMAnySneutrinoLimitAt188pt6GeV
 
 
 
@@ -98,4 +97,4 @@ L3ChargedGauginoSmallDeltaMAnySneutrinoLimitAt188pt6GeV()
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1DataSetInterfaceScalar" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Printers::DataSetInterfaceScalar</compoundname>
+    <basecompoundref refid="classGambit_1_1Printers_1_1DataSetInterfaceBase" prot="public" virt="non-virtual">Gambit::Printers::DataSetInterfaceBase&lt; T, 0, CHUNKLENGTH &gt;</basecompoundref>
+    <includes refid="DataSetInterfaceScalar_8hpp" local="no">DataSetInterfaceScalar.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>CHUNKLENGTH</declname>
+        <defname>CHUNKLENGTH</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a3cbeb00c688f316d7024187d5de59d04" prot="private" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t Gambit::Printers::DataSetInterfaceScalar&lt; T, CL &gt;::empty_rdims</definition>
+        <argsstring>[1]</argsstring>
+        <name>empty_rdims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::empty_rdims</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para><ref refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar" kindref="compound">DataSetInterfaceScalar</ref> member definitions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="47" column="36" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a94387e6c737b91935398fc48dcdf282d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::DataSetInterfaceScalar&lt; T, CL &gt;::DataSetInterfaceScalar</definition>
+        <argsstring>()</argsstring>
+        <name>DataSetInterfaceScalar</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::DataSetInterfaceScalar</qualifiedname>
+        <briefdescription>
+<para>Constructors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="55" column="11" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a47be98a6cb82ef96e95661eee19e61c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::DataSetInterfaceScalar&lt; T, CL &gt;::DataSetInterfaceScalar</definition>
+        <argsstring>(hid_t location_id, const std::string &amp;name, const bool resume, const char access)</argsstring>
+        <name>DataSetInterfaceScalar</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::DataSetInterfaceScalar</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>resume</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>access</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="56" column="11" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a78cc46b13c2eaabcf393aba8c2e62f9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; hid_t, hid_t &gt;</type>
+        <definition>std::pair&lt; hid_t, hid_t &gt; Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::select_chunk</definition>
+        <argsstring>(std::size_t offset, std::size_t length) const</argsstring>
+        <name>select_chunk</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::select_chunk</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Select a hyperslab chunk in the hosted dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To facilitate code factorisation, the hyperslab selection is now contained here Only selects whole chunks at the moment. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="59" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="312" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a1279ecd6165e2518e74a9bf4f37e91fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::writenewchunk</definition>
+        <argsstring>(const T(&amp;chunkdata)[CHUNKLENGTH])</argsstring>
+        <name>writenewchunk</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::writenewchunk</qualifiedname>
+        <param>
+          <type>const T(&amp;)</type>
+          <declname>chunkdata</declname>
+          <array>[CHUNKLENGTH]</array>
+        </param>
+        <briefdescription>
+<para>Write data to a new chunk in the hosted dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="62" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="101" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a05d4ee4007565709840e416e44252329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::RA_write</definition>
+        <argsstring>(const T(&amp;values)[CHUNKLENGTH], const hsize_t(&amp;coords)[CHUNKLENGTH], std::size_t npoints)</argsstring>
+        <name>RA_write</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::RA_write</qualifiedname>
+        <param>
+          <type>const T(&amp;)</type>
+          <declname>values</declname>
+          <array>[CHUNKLENGTH]</array>
+        </param>
+        <param>
+          <type>const hsize_t(&amp;)</type>
+          <declname>coords</declname>
+          <array>[CHUNKLENGTH]</array>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>npoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform desynchronised (&quot;random access&quot;) dataset writes to previous scan iterations from a queue. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="66" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="173" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a60fc5e368ba906ab9818a8cf30f52665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::zero</qualifiedname>
+        <briefdescription>
+<para>Set all elements of the dataset to zero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Easiest way to do this is to simply point the &quot;nextemptyslab&quot; index back to the beginning of the dataset, and then rewrite all the chunks with zero values.</para>
+<para>Figure out how many chunks to overwrite</para>
+<para>Point hyperslab selector back to beginning of dataset (might already point there if this is a random-access dataset, which actually it should be since we shouldn&apos;t be resetting the sync datasets. Well anyway it should be ok, just means we cannot use it to compute how many chunks there are)</para>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="69" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="135" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1ac9ffd9c0dbc1ea08fb1f810e7e62002d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::get_chunk</definition>
+        <argsstring>(std::size_t i, std::size_t length) const</argsstring>
+        <name>get_chunk</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::get_chunk</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+          <defname>offset</defname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>READ methods (perhaps can generalise to non-scalar case, but this doesn&apos;t exist yet for writing anyway so not bothering yet) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>{@ READ methods</para>
+<para>Extract a data slice from the linked dataset </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="74" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="375" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1affbd574d9312b605a7d2facefdebad82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::get_entry</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>get_entry</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::get_entry</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Extract a single entry from a linked dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="77" column="12" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="408" bodyend="438"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a0e671f4f9e4844e97c38467bab4e0619" prot="private" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::DSETRANK</definition>
+        <argsstring></argsstring>
+        <name>DSETRANK</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::DSETRANK</qualifiedname>
+        <initializer>=1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="48" column="36" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a5e025981556ac118fb37e617bbb834d8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::read_buffer</definition>
+        <argsstring></argsstring>
+        <name>read_buffer</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::read_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="50" column="23" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a2d2c8ecb596a13f8fb3511417586c61c" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;::read_buffer_start</definition>
+        <argsstring></argsstring>
+        <name>read_buffer_start</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceScalar::read_buffer_start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="51" column="26" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Derived dataset interface, with methods for writing scalar records (i.e. single ints, doubles, etc.) i.e. RANK=0 case </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::Printers::DataSetInterfaceBase&lt; T, 0, CHUNKLENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1DataSetInterfaceBase"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Printers::DataSetInterfaceBase&lt; T, 0, CHUNKLENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1DataSetInterfaceBase"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Printers::DataSetInterfaceScalar&lt; T, CHUNKLENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" line="44" column="7" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceScalar.hpp" bodystart="45" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1af07154ea22cb65dab0d6323022916ebd" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>access_mode</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7caaa9c292fb46cf698effa52098d9e4" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>closeDataSet</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a952eb22e0c483c5e47e69c2f67f40b99" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>createDataSet</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7c14a9a4da6c66e61635a49c6fd9bd7d" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>DataSetInterfaceBase</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ae8a979981c37e28b42209918754520ca" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>DataSetInterfaceBase</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a94387e6c737b91935398fc48dcdf282d" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>DataSetInterfaceScalar</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a47be98a6cb82ef96e95661eee19e61c4" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>DataSetInterfaceScalar</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a8edf6e77bf4ef25bee1b12a1579c1273" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>dset_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1afd8a1e8bdcfdaa0a6e349ede9029ba23" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>dset_length</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a912aaab0c770c98137664f0d62f8503e" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>dsetdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aa3fd50e5271606e0d4e27000296b83e1" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>dsetnextemptyslab</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a0e671f4f9e4844e97c38467bab4e0619" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>DSETRANK</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a3cbeb00c688f316d7024187d5de59d04" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>empty_rdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a5508ec19fbc11ff63e69489771c8d43e" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>extend_dset</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1ac9ffd9c0dbc1ea08fb1f810e7e62002d" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_chunk</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a526b893cc22f912fc86f61143785129c" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_chunkdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a8599be283a05c2a672b79d6316b3c97f" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_chunklength</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab53b3a4c2c3dff9d5791b82a85bbc890" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_dset_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab6dca2f149ebf5e01d02ec7e70d56d66" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_dsetrank</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1affbd574d9312b605a7d2facefdebad82" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_entry</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1af0ba1e2ae49ea4e2525330a5afa3713e" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_maxdsetdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a605b961933457edeacfc4b1a77f53a56" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_myname</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a89055fa9d360eb6478deec608a447af1" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_nextemptyslab</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aa2f2372dde5d6531471b8cc9d3e8008b" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>get_slicedims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a3a65b3cc2d51a08bcf8622351e4bab8f" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>hdftype_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a69c9b798cc85022d85a3993c18381560" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>openDataSet</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a05d4ee4007565709840e416e44252329" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>RA_write</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a5e025981556ac118fb37e617bbb834d8" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>read_buffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a2d2c8ecb596a13f8fb3511417586c61c" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>read_buffer_start</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1add998d0dcbb61945b4279e081cb7307a" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>reset_nextemptyslab</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a78cc46b13c2eaabcf393aba8c2e62f9a" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>select_chunk</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab0c8435c80f6b562b2dd176a13da065f" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>virtualwriteposition</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a1279ecd6165e2518e74a9bf4f37e91fb" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>writenewchunk</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar_1a60fc5e368ba906ab9818a8cf30f52665" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>zero</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aad2e7ce3fe12e87e26cb0c44c046fe69" prot="public" virt="virtual"><scope>Gambit::Printers::DataSetInterfaceScalar</scope><name>~DataSetInterfaceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS_COUPLINGCONSTANTS
 
 
 
@@ -19,7 +18,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | Fdouble | **[alph3](/documentation/code/classes/structgambit_1_1ds__couplingconstants/#variable-alph3)**  |
-| Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/classes/structgambit_1_1ds__couplingconstants/#variable-yukawa)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 12 > | **[yukawa](/documentation/code/classes/structgambit_1_1ds__couplingconstants/#variable-yukawa)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +38,4 @@ Farray< Fdouble, 1, 12 > yukawa;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

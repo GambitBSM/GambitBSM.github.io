@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS_VRTXS</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS__VRTXS_1a70d6f38dd42074e8a3cc68dbe39e23ed" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble_complex, 1, 50, 1, 50, 1, 50 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; <ref refid="classGambit_1_1FcomplexT" kindref="compound">Fdouble_complex</ref>, 1, 50, 1, 50, 1, 50 &gt;</type>
         <definition>Farray&lt; Fdouble_complex,1,50,1,50,1,50 &gt; Gambit::DS_VRTXS::gl</definition>
         <argsstring></argsstring>
         <name>gl</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="132" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__VRTXS_1ac0ef37d8d022311554083aef925761c7" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble_complex, 1, 50, 1, 50, 1, 50 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; <ref refid="classGambit_1_1FcomplexT" kindref="compound">Fdouble_complex</ref>, 1, 50, 1, 50, 1, 50 &gt;</type>
         <definition>Farray&lt; Fdouble_complex,1,50,1,50,1,50 &gt; Gambit::DS_VRTXS::gr</definition>
         <argsstring></argsstring>
         <name>gr</name>
@@ -36,6 +36,27 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Gambit::FcomplexT, 1, 50, 1, 50, 1, 50 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>array</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_VRTXS</label>
+        <link refid="structGambit_1_1DS__VRTXS"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gl</edgelabel>
+          <edgelabel>gr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::FcomplexT&lt; T &gt;</label>
+        <link refid="classGambit_1_1FcomplexT"/>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="130" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="131" bodyend="134"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__VRTXS_1a70d6f38dd42074e8a3cc68dbe39e23ed" prot="public" virt="non-virtual"><scope>Gambit::DS_VRTXS</scope><name>gl</name></member>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS_SMQUARKMASSES
 
 
 
@@ -24,7 +23,7 @@ description: "[No description available]"
 | Fdouble | **[mcmc](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mcmc)**  |
 | Fdouble | **[mbmb](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mbmb)**  |
 | Fdouble | **[mtmt](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mtmt)**  |
-| Fstring< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-roption)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-roption)**  |
 
 ## Public Attributes Documentation
 
@@ -79,4 +78,4 @@ Fstring< 5 > roption;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

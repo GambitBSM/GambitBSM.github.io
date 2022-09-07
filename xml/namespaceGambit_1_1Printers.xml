@@ -2,10 +2,2444 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="namespaceGambit_1_1Printers" kind="namespace" language="C++">
     <compoundname>Gambit::Printers</compoundname>
+    <innerclass refid="classGambit_1_1Printers_1_1asciiPrinter" prot="public">Gambit::Printers::asciiPrinter</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1asciiReader" prot="public">Gambit::Printers::asciiReader</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1BaseBasePrinter" prot="public">Gambit::Printers::BaseBasePrinter</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1BaseBaseReader" prot="public">Gambit::Printers::BaseBaseReader</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1BasePrinter" prot="public">Gambit::Printers::BasePrinter</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1BasePrinterManager" prot="public">Gambit::Printers::BasePrinterManager</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1BaseReader" prot="public">Gambit::Printers::BaseReader</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1BuffPair" prot="public">Gambit::Printers::BuffPair</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1BuffTags" prot="public">Gambit::Printers::BuffTags</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1coutPrinter" prot="public">Gambit::Printers::coutPrinter</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1DataSetInterfaceBase" prot="public">Gambit::Printers::DataSetInterfaceBase</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar" prot="public">Gambit::Printers::DataSetInterfaceScalar</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1DSetData" prot="public">Gambit::Printers::DSetData</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type" prot="public">Gambit::Printers::get_hdf5_data_type</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01bool_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; bool &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01char_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; char &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01double_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; double &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01float_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; float &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01int_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; int &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01long_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; long &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01long_01double_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; long double &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01long_01long_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; long long &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01short_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; short &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01unsigned_01char_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; unsigned char &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01unsigned_01int_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; unsigned int &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01unsigned_01long_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; unsigned long &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01unsigned_01long_01long_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; unsigned long long &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1get__hdf5__data__type_3_01unsigned_01short_01_4" prot="public">Gambit::Printers::get_hdf5_data_type&lt; unsigned short &gt;</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager" prot="public">Gambit::Printers::H5P_LocalBufferManager</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager" prot="public">Gambit::Printers::H5P_LocalReadBufferManager</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5Buffer" prot="public">Gambit::Printers::HDF5Buffer</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5BufferBase" prot="public">Gambit::Printers::HDF5BufferBase</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1HDF5bufferchunk" prot="public">Gambit::Printers::HDF5bufferchunk</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5DataSet" prot="public">Gambit::Printers::HDF5DataSet</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5DataSetBase" prot="public">Gambit::Printers::HDF5DataSetBase</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5DataSetBasic" prot="public">Gambit::Printers::HDF5DataSetBasic</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5File" prot="public">Gambit::Printers::HDF5File</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5MasterBuffer" prot="public">Gambit::Printers::HDF5MasterBuffer</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5MasterBufferT" prot="public">Gambit::Printers::HDF5MasterBufferT</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5Printer" prot="public">Gambit::Printers::HDF5Printer</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5Printer2" prot="public">Gambit::Printers::HDF5Printer2</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5Reader" prot="public">Gambit::Printers::HDF5Reader</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1nonePrinter" prot="public">Gambit::Printers::nonePrinter</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1PPIDEqual" prot="public">Gambit::Printers::PPIDEqual</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1PPIDHash" prot="public">Gambit::Printers::PPIDHash</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1PPIDpair" prot="public">Gambit::Printers::PPIDpair</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1PrinterManager" prot="public">Gambit::Printers::PrinterManager</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1Record" prot="public">Gambit::Printers::Record</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1SLHAcombo" prot="public">Gambit::Printers::SLHAcombo</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1SQLiteBase" prot="public">Gambit::Printers::SQLiteBase</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1SQLitePrinter" prot="public">Gambit::Printers::SQLitePrinter</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1SQLiteReader" prot="public">Gambit::Printers::SQLiteReader</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1VBIDpair" prot="public">Gambit::Printers::VBIDpair</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1VBIDtrip" prot="public">Gambit::Printers::VBIDtrip</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1VertexBufferBase" prot="public">Gambit::Printers::VertexBufferBase</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D" prot="public">Gambit::Printers::VertexBufferNumeric1D</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5" prot="public">Gambit::Printers::VertexBufferNumeric1D_HDF5</innerclass>
+    <innernamespace refid="namespaceGambit_1_1Printers_1_1HDF5">Gambit::Printers::HDF5</innernamespace>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1a19d26e29eabb434b05e434343aadba6b" prot="public" static="no">
+        <type>std::map&lt; <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref>, <ref refid="classGambit_1_1Printers_1_1VertexBufferBase" kindref="compound">VertexBufferBase</ref> * &gt;</type>
+        <definition>typedef std::map&lt;VBIDpair, VertexBufferBase*&gt; Gambit::Printers::BaseBufferMap</definition>
+        <argsstring></argsstring>
+        <name>BaseBufferMap</name>
+        <qualifiedname>Gambit::Printers::BaseBufferMap</qualifiedname>
+        <briefdescription>
+<para>Helpful typedefs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the global buffer map </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="70" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1af767fa1930017427eed70f5dc4da60ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::error_if_key_exists</definition>
+        <argsstring>(const std::map&lt; T, U &gt; &amp;m, const T &amp;key, const std::string &amp;tag)</argsstring>
+        <name>error_if_key_exists</name>
+        <qualifiedname>Gambit::Printers::error_if_key_exists</qualifiedname>
+        <param>
+          <type>const std::map&lt; T, U &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to check if a VertexBuffer key already exists in a map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="74" column="10" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="74" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1a156a49099218b62e0424f1b8a06ac8f2" prot="public" static="no">
+        <type>unsigned short int</type>
+        <definition>typedef unsigned short int Gambit::Printers::ushort</definition>
+        <argsstring></argsstring>
+        <name>ushort</name>
+        <qualifiedname>Gambit::Printers::ushort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PRINT FUNCTIONS Need to define one of these for every type we want to print! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/coutprinter/print_overloads.cpp" line="31" column="32" bodyfile="Printers/src/printers/coutprinter/print_overloads.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1aafad32618cedacf143e092844f867a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::printAllH5Types</definition>
+        <argsstring>(void)</argsstring>
+        <name>printAllH5Types</name>
+        <qualifiedname>Gambit::Printers::printAllH5Types</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>DEBUG: print to stdout all HDF5 type IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="834" column="10" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="834" bodyend="841" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="261" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ae5bb1c45e5b0ea9921ce411e4c63ef4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::SQLiteReader::get_sql_col&lt; std::string &gt;</definition>
+        <argsstring>(const std::string &amp;col_name)</argsstring>
+        <name>SQLiteReader::get_sql_col&lt; std::string &gt;</name>
+        <qualifiedname>Gambit::Printers::get_sql_col&lt; std::string &gt;</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>col_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitereader.cpp" line="79" column="6" bodyfile="Printers/src/printers/sqliteprinter/sqlitereader.cpp" bodystart="79" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Tags</name>
+        <qualifiedname>Gambit::Printers::Tags</qualifiedname>
+        <enumvalue id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4ab0a223b6ef8d9e29848f2def05570f05" prot="public">
+          <name>TAG_REQ</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4a203b0251f216dbd087b74575eaf64690" prot="public">
+          <name>INIT_PASS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4a51b1e4fcfdb529b9f04d4977cb558652" prot="public">
+          <name>PPFILES_PASS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4af65140f1b6bc5f50292a0496e5d0313b" prot="public">
+          <name>FINAL_PASS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4a728be3463c4f87e6fd5ab9bcaddaefbe" prot="public">
+          <name>PPID_SEND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4aeba597a6b2801de0af16c90101883cd9" prot="public">
+          <name>N_BUFFERS_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4a757b784323aec1561a612fb6b1d5b093" prot="public">
+          <name>RA_BUFFERS_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4ab751359d381a76a8d5910a5e99224ab7" prot="public">
+          <name>FINAL_SYNC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved tags for MPI messages TAG_REQ - for messages registering/requesting a new tags INIT_PASS - for messages registering completion of initialisation PPFILES_PASS - for messages registering completion of preprocessing of existing files (combination/deletion) FINAL_PASS - for messages registering passing of checkpoint during finalise PPID_SEND - for messages transferring point ID information N_BUFFERS_SENT - for messages counting the number of buffer transfer messages being sent in one &apos;package&apos; RA_BUFFERS_SENT - Contains no data, just indicates that RA buffer messages from some process are waiting to send. FINAL_SYNC - Contains no data, used to trigger final buffer sends and receives. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBuffer_mpitags.hpp" line="35" column="5" bodyfile="Printers/include/gambit/Printers/VertexBuffer_mpitags.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1ad4e2182ac792eef237684a9b3acb0bcf" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int Gambit::Printers::uint</definition>
+        <argsstring></argsstring>
+        <name>uint</name>
+        <qualifiedname>Gambit::Printers::uint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/basebaseprinter.hpp" line="59" column="31" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1a9b9fc36c99e5b5d289c61a0e5c6b88ad" prot="public" static="no">
+        <type>unsigned long int</type>
+        <definition>typedef unsigned long Gambit::Printers::ulong</definition>
+        <argsstring></argsstring>
+        <name>ulong</name>
+        <qualifiedname>Gambit::Printers::ulong</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/basebaseprinter.hpp" line="60" column="31" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1a829f65a28e09850e1ec717d3041ace25" prot="public" static="no">
+        <type>long long int</type>
+        <definition>typedef long long Gambit::Printers::longlong</definition>
+        <argsstring></argsstring>
+        <name>longlong</name>
+        <qualifiedname>Gambit::Printers::longlong</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/basebaseprinter.hpp" line="61" column="36" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1a5e6cb5273f794291758bb79a179cfe5c" prot="public" static="no">
+        <type>unsigned long long int</type>
+        <definition>typedef unsigned long long Gambit::Printers::ulonglong</definition>
+        <argsstring></argsstring>
+        <name>ulonglong</name>
+        <qualifiedname>Gambit::Printers::ulonglong</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/basebaseprinter.hpp" line="62" column="36" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1ad1d39c2c6fde249a2898fc002eaac0ea" prot="public" static="no">
+        <type><ref refid="classGambit_1_1Printers_1_1BaseReader" kindref="compound">BaseReader</ref> *</type>
+        <definition>typedef BaseReader * Gambit::Printers::create_reader_function(const Options &amp;)</definition>
+        <argsstring>(const Options &amp;)</argsstring>
+        <name>create_reader_function</name>
+        <qualifiedname>Gambit::Printers::create_reader_function</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="237" column="32" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1a497684b4edf5541baadaab259a824969" prot="public" static="no">
+        <type>std::map&lt; int, std::vector&lt; double &gt; &gt;</type>
+        <definition>typedef std::map&lt;int, std::vector&lt;double&gt; &gt; Gambit::Printers::LineBuf</definition>
+        <argsstring></argsstring>
+        <name>LineBuf</name>
+        <qualifiedname>Gambit::Printers::LineBuf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="51" column="22" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1af23b38d35c4758243e6b4d5447a178e0" prot="public" static="no">
+        <type>std::map&lt; std::pair&lt; int, int &gt;, <ref refid="structGambit_1_1Printers_1_1Record" kindref="compound">Record</ref> &gt;</type>
+        <definition>typedef std::map&lt;std::pair&lt;int,int&gt;,Record&gt; Gambit::Printers::Buffer</definition>
+        <argsstring></argsstring>
+        <name>Buffer</name>
+        <qualifiedname>Gambit::Printers::Buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="68" column="22" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1a9fc2d3b0eda05b7c8f6573d5b8abe4a9" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Gambit::Printers::sql_callback_fptr(void *, int, char **, char **)</definition>
+        <argsstring>(void *, int, char **, char **)</argsstring>
+        <name>sql_callback_fptr</name>
+        <qualifiedname>Gambit::Printers::sql_callback_fptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="45" column="17" bodyfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1ab81ce3c1ebb7d228153469ee5ffa9124" prot="public" static="no">
+        <type>long long int</type>
+        <definition>typedef long long int Gambit::Printers::llint</definition>
+        <argsstring></argsstring>
+        <name>llint</name>
+        <qualifiedname>Gambit::Printers::llint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="51" column="27" bodyfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Printers_1a47f5f03d047bdae6e3627e1b4a7284ce" prot="public" static="no">
+        <type>std::string</type>
+        <definition>typedef std::string Gambit::Printers::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <qualifiedname>Gambit::Printers::str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="52" column="25" bodyfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1ad5e1c8f33e593669d8bdc363453d976d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Gambit::Printers::gambit_registry</definition>
+        <argsstring></argsstring>
+        <name>gambit_registry</name>
+        <qualifiedname>Gambit::Printers::gambit_registry</qualifiedname>
+        <initializer>{
+            typedef <ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>* create_printer_function(const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;, <ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>* const&amp;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maps in which to keep factory functions for the printers (printer_creators) and readers (reader_creators) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="232" column="5" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1ada796e8664e79d18bb7fef3520ef4d18" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1reg__elem" kindref="compound">reg_elem</ref>&lt; create_printer_function &gt;</type>
+        <definition>reg_elem&lt;create_printer_function&gt; Gambit::Printers::printer_creators</definition>
+        <argsstring></argsstring>
+        <name>printer_creators</name>
+        <qualifiedname>Gambit::Printers::printer_creators</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="235" column="23" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1a54c90dfec271ee0af5bc8dc82699d2fc" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1reg__elem" kindref="compound">reg_elem</ref>&lt; create_reader_function &gt;</type>
+        <definition>reg_elem&lt;create_reader_function&gt; Gambit::Printers::reader_creators</definition>
+        <argsstring></argsstring>
+        <name>reader_creators</name>
+        <qualifiedname>Gambit::Printers::reader_creators</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="238" column="23" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1a703d5957efd67fbe0be9e2fc6047b9a0" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t Gambit::Printers::BUFFERLENGTH</definition>
+        <argsstring></argsstring>
+        <name>BUFFERLENGTH</name>
+        <qualifiedname>Gambit::Printers::BUFFERLENGTH</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="60" column="30" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1af6a73aaf93a88291647e5db8a8ecc9cd" prot="public" static="yes" mutable="no">
+        <type>const unsigned long</type>
+        <definition>const unsigned long Gambit::Printers::MAX_PPIDPAIRS</definition>
+        <argsstring></argsstring>
+        <name>MAX_PPIDPAIRS</name>
+        <qualifiedname>Gambit::Printers::MAX_PPIDPAIRS</qualifiedname>
+        <initializer>= 10*BUFFERLENGTH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max number of PPIDpairs to be tracked i.e. chunks of RA output longer than this can potentially contain multiple writes to the same point. It is up to the combine script to apply the last scheduled write preferentially. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer.hpp" line="65" column="32" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1a782160fb43e7a31f6cdd7d4146fcdf29" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t Gambit::Printers::HDF5_CHUNKLENGTH</definition>
+        <argsstring></argsstring>
+        <name>HDF5_CHUNKLENGTH</name>
+        <qualifiedname>Gambit::Printers::HDF5_CHUNKLENGTH</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Length of chunks in chunked HDF5 dataset. Affects write/retrieval performance for blocks of data of various sizes. It is set to an &quot;intermediate&quot; sort of size since that seems to work well enough. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="73" column="30" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1af6db8f32c00e9ec981f5d475bc340390" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t Gambit::Printers::DSETRANK</definition>
+        <argsstring></argsstring>
+        <name>DSETRANK</name>
+        <qualifiedname>Gambit::Printers::DSETRANK</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Dimension of output dataset. We are only using 1D datasets for simplicity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="76" column="30" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1a1290f4bcbccfa10e39e8a2a75795e896" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t Gambit::Printers::MAX_BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MAX_BUFFER_SIZE</name>
+        <qualifiedname>Gambit::Printers::MAX_BUFFER_SIZE</qualifiedname>
+        <initializer>= 100000</initializer>
+        <briefdescription>
+<para>Largest allowed size of buffers. Size can be dynamically set from 1 to this number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="79" column="30" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1a0afb05940aea8b62a522a103eda32f29" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t Gambit::Printers::CHUNKLENGTH</definition>
+        <argsstring></argsstring>
+        <name>CHUNKLENGTH</name>
+        <qualifiedname>Gambit::Printers::CHUNKLENGTH</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Length of dataset chunks read into memory during certain search operations. For maximum efficiency this should probably match the chunking length used to write the files in the first place. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="45" column="30" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1a97aaa20f2636357cf4bcd03ba6a0de98" prot="public" static="no" mutable="no">
+        <type>const std::map&lt; unsigned int, std::string &gt;</type>
+        <definition>const std::map&lt;unsigned int,std::string&gt; Gambit::Printers::typecode2sql</definition>
+        <argsstring></argsstring>
+        <name>typecode2sql</name>
+        <qualifiedname>Gambit::Printers::typecode2sql</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="62" column="27" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="62" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1a79f67902525cf88b36a9fc2908130ffb" prot="public" static="no" mutable="no">
+        <type>const std::map&lt; std::string, std::string, <ref refid="structGambit_1_1Utils_1_1ci__less" kindref="compound">Utils::ci_less</ref> &gt;</type>
+        <definition>const std::map&lt;std::string,std::string, Utils::ci_less&gt; Gambit::Printers::SQLtype_to_basic</definition>
+        <argsstring></argsstring>
+        <name>SQLtype_to_basic</name>
+        <qualifiedname>Gambit::Printers::SQLtype_to_basic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="67" column="27" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="67" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1a01cbfb5232c791e5df93f6db5ef87568" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::FIRST_EMPTY_TAG</definition>
+        <argsstring></argsstring>
+        <name>FIRST_EMPTY_TAG</name>
+        <qualifiedname>Gambit::Printers::FIRST_EMPTY_TAG</qualifiedname>
+        <initializer>= FINAL_SYNC+1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBuffer_mpitags.hpp" line="36" column="15" bodyfile="Printers/include/gambit/Printers/VertexBuffer_mpitags.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1_1Printers_1af94e925a7aa0adf1a713b15944a3a269" prot="public" static="no" mutable="no">
+        <type>EXPORT_SYMBOLS const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref></type>
+        <definition>const PPIDpair Gambit::Printers::nullpoint</definition>
+        <argsstring></argsstring>
+        <name>nullpoint</name>
+        <qualifiedname>Gambit::Printers::nullpoint</qualifiedname>
+        <initializer>= <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref>()</initializer>
+        <briefdescription>
+<para>Define &apos;nullpoint&apos; const. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="185" column="21" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="185" bodyend="-1" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="128" declcolumn="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a6b99cd9fcb27ff6c181833031be19e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::size_t</type>
+        <definition>template std::size_t Gambit::Printers::getTypeID&lt; double &gt;</definition>
+        <argsstring>(void)</argsstring>
+        <name>getTypeID</name>
+        <qualifiedname>Gambit::Printers::getTypeID</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper template functions to retrieve type IDs for a type. ID is just a unique integer for each printable type</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2016 Mar, 2017 Jan, Feb, Mar</para>
+</simplesect>
+<hruler/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/basebaseprinter.hpp" line="67" column="17" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a6f3c9fd5b21e27c128b993b8852db46f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::parse_label_for_ModelParameters</definition>
+        <argsstring>(const std::string &amp;fulllabel, const std::string &amp;modelname, std::string &amp;out, std::string &amp;rest, bool case_sensitive=true)</argsstring>
+        <name>parse_label_for_ModelParameters</name>
+        <qualifiedname>Gambit::Printers::parse_label_for_ModelParameters</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fulllabel</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>modelname</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>rest</declname>
+          <defname>labelroot</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>case_sensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function for the <ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> &apos;_retrieve&apos; functions Parses a printer label and checks if it contains a single model parameter. &quot;out&quot; is a memory location to store the parameter name, if found. &quot;labelroot&quot; is a memory location to store the rest of the label (i.e. minus the parameter name) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/baseprinter.cpp" line="81" column="11" bodyfile="Printers/src/baseprinter.cpp" bodystart="81" bodyend="121" declfile="Printers/include/gambit/Printers/baseprinter.hpp" declline="66" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a57a68e235f22234cc870f2356ddf0262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::parse_label_for_spectrum_entry</definition>
+        <argsstring>(const std::string &amp;fulllabel, const std::string &amp;req_capability, const std::string &amp;req_module, const std::string &amp;req_function, std::string &amp;outname, std::string &amp;outtag, std::string &amp;labelroot, bool case_sensitive=true)</argsstring>
+        <name>parse_label_for_spectrum_entry</name>
+        <qualifiedname>Gambit::Printers::parse_label_for_spectrum_entry</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fulllabel</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>req_capability</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>req_module</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>req_function</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>outname</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>outtag</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>labelroot</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>case_sensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Helper function for parsing <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> label strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function for the <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &apos;_retrieve&apos; functions Parses a printer label and checks if it contains a single <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> entry. &quot;out&quot; is a memory location to store the spectrum entry name, if found. &quot;labelroot&quot; is a memory location to store the rest of the label (i.e. minus the entry name) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/baseprinter.cpp" line="129" column="11" bodyfile="Printers/src/baseprinter.cpp" bodystart="129" bodyend="168" declfile="Printers/include/gambit/Printers/baseprinter.hpp" declline="69" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ab8bb9ae3c70688f1afa5d4dec2d972f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::printAllTypeIDs</definition>
+        <argsstring>(void)</argsstring>
+        <name>printAllTypeIDs</name>
+        <qualifiedname>Gambit::Printers::printAllTypeIDs</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>For debugging; print to stdout all the typeIDs for all types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/baseprinter.cpp" line="40" column="11" bodyfile="Printers/src/baseprinter.cpp" bodystart="40" bodyend="47" declfile="Printers/include/gambit/Printers/baseprinter.hpp" declline="72" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a7d62358fa781bdd546a94f57c30ed086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS bool &amp;</type>
+        <definition>bool &amp; Gambit::Printers::auto_increment</definition>
+        <argsstring>()</argsstring>
+        <name>auto_increment</name>
+        <qualifiedname>Gambit::Printers::auto_increment</qualifiedname>
+        <briefdescription>
+<para>Global flag to indicate if auto-incrementing of the PointID by the likelihood container is allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="20" column="14" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="20" bodyend="24" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="32" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a88e476c2035c63ea9635977764db3c2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS unsigned long long int &amp;</type>
+        <definition>unsigned long long int &amp; Gambit::Printers::get_point_id</definition>
+        <argsstring>()</argsstring>
+        <name>get_point_id</name>
+        <qualifiedname>Gambit::Printers::get_point_id</qualifiedname>
+        <briefdescription>
+<para>Returns unigue pointid;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Global scan point ID number. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="13" column="32" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="13" bodyend="18" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="35" declcolumn="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a8b38ae862204caf75682d04fabdaf2cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS int</type>
+        <definition>int Gambit::Printers::get_param_id</definition>
+        <argsstring>(const std::string &amp;name, bool &amp;is_new)</argsstring>
+        <name>get_param_id</name>
+        <qualifiedname>Gambit::Printers::get_param_id</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>is_new</declname>
+        </param>
+        <briefdescription>
+<para>Consolidated &apos;get id&apos; function, for both main and aux. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>bjf&gt; I think that there is actually no need or reason to maintain two separate lists of IDs. I am changing this to now use only one list, although both old ways of accessing the IDs (main vs aux) will still exist for backwards compatibility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="54" column="13" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="54" bodyend="72" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="38" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a1fa5f8377c6f073e48771e14ebf6a2bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS int</type>
+        <definition>int Gambit::Printers::get_param_id</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>get_param_id</name>
+        <qualifiedname>Gambit::Printers::get_param_id</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="74" column="13" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="74" bodyend="78" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="39" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ac37bc7abbd41754acb24cab0274e4dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; Gambit::Printers::get_all_params</definition>
+        <argsstring>()</argsstring>
+        <name>get_all_params</name>
+        <qualifiedname>Gambit::Printers::get_all_params</qualifiedname>
+        <briefdescription>
+<para>Get names of all parameters known to printer system (vector index corresponds to ID number) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get names of all parameters known to printer system (vector index corresponds to ID number) Assumes IDs were assigned starting at zero and incrementing upwards! This should be what is happening, but just keep note of this in case of future changes! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="37" column="21" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="37" bodyend="47" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="41" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ac86b6f80a02d42cef6f8f287755300f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS int</type>
+        <definition>int Gambit::Printers::get_main_param_id</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>get_main_param_id</name>
+        <qualifiedname>Gambit::Printers::get_main_param_id</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Returns unique positive parameter id; just a thin wrapper for get_param_id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="85" column="13" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="85" bodyend="89" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="44" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1af52bf7a921f703c8d4c9135f13982f18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS int</type>
+        <definition>int Gambit::Printers::get_main_param_id</definition>
+        <argsstring>(const std::string &amp;, bool &amp;is_new)</argsstring>
+        <name>get_main_param_id</name>
+        <qualifiedname>Gambit::Printers::get_main_param_id</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>is_new</declname>
+        </param>
+        <briefdescription>
+<para>Extra argument returns true if new ID was assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="80" column="13" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="80" bodyend="83" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="46" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a17eee3512487d1aa46dfe3863ed22cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS int</type>
+        <definition>int Gambit::Printers::get_aux_param_id</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>get_aux_param_id</name>
+        <qualifiedname>Gambit::Printers::get_aux_param_id</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Returns unique negative parameter id; just a thin wrapper for get_param_id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="96" column="13" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="96" bodyend="100" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="49" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1afb31f7333d7578807592a157cc33ec14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS int</type>
+        <definition>int Gambit::Printers::get_aux_param_id</definition>
+        <argsstring>(const std::string &amp;, bool &amp;is_new)</argsstring>
+        <name>get_aux_param_id</name>
+        <qualifiedname>Gambit::Printers::get_aux_param_id</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>is_new</declname>
+        </param>
+        <briefdescription>
+<para>Extra argument returns true if new ID was assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="91" column="13" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="91" bodyend="94" declfile="Printers/include/gambit/Printers/printer_id_tools.hpp" declline="51" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ac9b300007dfa1a84684c6de80ae1cfb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;, T const &amp;, const std::string &amp;, const int, const unsigned int, const unsigned long)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const int</type>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+        </param>
+        <briefdescription>
+<para>Common print overload template. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="40" column="10" declfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" declline="40" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ac7b84bd06b9c04a77e083c935ff171e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, std::vector&lt; double &gt; const &amp;value, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>Vector-of-doubles print overload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="44" column="10" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="44" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a4f26f22b1c1b1f7072162b0c599b79c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, const map_const_str_dbl &amp;map, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceGambit_1a55029f6c6c6f6ab07a979608d79d5a0b" kindref="member">map_const_str_dbl</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>String-to-double map print overload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="56" column="10" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1afcb78c5aa94f801af7498da6b075c009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, const map_str_dbl &amp;map, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceGambit_1a98f19afeabdc4fcaa456c944cc19a50c" kindref="member">map_str_dbl</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="67" column="10" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="67" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a7dd13b061d8eca52656319aed36e0272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, const map_const_str_map_const_str_dbl &amp;map, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceGambit_1ab73aeae729acb498a53c7cff54636e84" kindref="member">map_const_str_map_const_str_dbl</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>String-to-map print overload (where map is string-to-double) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="80" column="10" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="80" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ab9a022f804eb6d9ceb734d3df04f215f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, const map_str_map_str_dbl &amp;map, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceGambit_1a89325f4443e809eee69d8f00d882c52f" kindref="member">map_str_map_str_dbl</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="91" column="10" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="91" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a86a63f8f6c2377d5d5c3d7ef443177b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, map_intpair_dbl const &amp;map, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1a1ff4cae18c1ff210e4f214a673d90d49" kindref="member">map_intpair_dbl</ref> const &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>Integer pair-to-double map print overload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="104" column="10" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1af8142d0d26bbaf917654af59115da1a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, ModelParameters const &amp;value, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> print overload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="116" column="10" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="116" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a2352fc7aa94895873f8ae7a765ec317d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, triplet&lt; double &gt; const &amp;value, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type><ref refid="structGambit_1_1triplet" kindref="compound">triplet</ref>&lt; double &gt; const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>Triplet print overload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="124" column="10" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a975b7e270e8dfb8b3a19f2dd3edfaf87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, DM_nucleon_couplings const &amp;value, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type><ref refid="structGambit_1_1DM__nucleon__couplings" kindref="compound">DM_nucleon_couplings</ref> const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>DM-nucleon coupling print overload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="137" column="12" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="137" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a901e6ec2d4b8389ccdde949be43aa91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, flav_prediction const &amp;value, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type><ref refid="structGambit_1_1flav__prediction" kindref="compound">flav_prediction</ref> const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>Generic flavour prediction print overload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="149" column="12" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="149" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a97018bfe62f8ab4bba0d5fcb04a0002a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::_common_print</definition>
+        <argsstring>(P &amp;printer, BBN_container const &amp;value, const std::string &amp;label, const int vID, const unsigned int mpirank, const unsigned long pointID)</argsstring>
+        <name>_common_print</name>
+        <qualifiedname>Gambit::Printers::_common_print</qualifiedname>
+        <param>
+          <type>P &amp;</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1BBN__container" kindref="compound">BBN_container</ref> const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>mpirank</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>BBN observables print overload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" line="157" column="12" bodyfile="Printers/include/gambit/Printers/printers/common_print_overloads.hpp" bodystart="157" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ac7a6295d90204292db1aad2166748b25" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type</name>
+        <qualifiedname>Gambit::Printers::h5v2_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedef&apos;d types; enabled only where they differ from the true types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="278" column="32" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1aaee0d26b707ccc6b80ca56da4223ad80" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type&lt; int &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type&lt; int &gt;</name>
+        <qualifiedname>Gambit::Printers::h5v2_type&lt; int &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="279" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="279" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a52e3c5c34236277c5f2522c97a1701a4" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type&lt; unsigned int &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type&lt; unsigned int &gt;</name>
+        <qualifiedname>Gambit::Printers::h5v2_type&lt; unsigned int &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="280" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="280" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a5a8ca7def93a95075d0a812d310ddb32" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type&lt; long &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type&lt; long &gt;</name>
+        <qualifiedname>Gambit::Printers::h5v2_type&lt; long &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="281" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="281" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a5263f0e918f90c5a6f66c13981a1dd5c" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type&lt; unsigned long &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type&lt; unsigned long &gt;</name>
+        <qualifiedname>Gambit::Printers::h5v2_type&lt; unsigned long &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="282" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a88d3b1cf68717d5d347dd817e1c1a451" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type&lt; long long &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type&lt; long long &gt;</name>
+        <qualifiedname>Gambit::Printers::h5v2_type&lt; long long &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="283" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="283" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a5535b705b3408b1598e68e0d78b8793f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type&lt; unsigned long long &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type&lt; unsigned long long &gt;</name>
+        <qualifiedname>Gambit::Printers::h5v2_type&lt; unsigned long long &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="284" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="284" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a772c0367faa57d4da5789f76d82bb1c7" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type&lt; float &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type&lt; float &gt;</name>
+        <qualifiedname>Gambit::Printers::h5v2_type&lt; float &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="285" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="285" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a0436579babc0ed881af7544f4bf46e14" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int Gambit::Printers::h5v2_type&lt; double &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>h5v2_type&lt; double &gt;</name>
+        <qualifiedname>Gambit::Printers::h5v2_type&lt; double &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="286" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="286" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1abab156987b45cd674e5b6818e01dc510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::h5v2_bufname</definition>
+        <argsstring>(10)</argsstring>
+        <name>h5v2_bufname</name>
+        <qualifiedname>Gambit::Printers::h5v2_bufname</qualifiedname>
+        <param>
+          <type>10</type>
+        </param>
+        <briefdescription>
+<para>MPI tags for HDF5 printer v2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="82" column="15" declfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" declline="82" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a52c645ac3d5c427219f391397bab3d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::h5v2_bufdata_points</definition>
+        <argsstring>(11)</argsstring>
+        <name>h5v2_bufdata_points</name>
+        <qualifiedname>Gambit::Printers::h5v2_bufdata_points</qualifiedname>
+        <param>
+          <type>11</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="83" column="15" declfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" declline="83" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ad7cf99de057c01d11aa6c5c3e4cf9f2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::h5v2_bufdata_ranks</definition>
+        <argsstring>(12)</argsstring>
+        <name>h5v2_bufdata_ranks</name>
+        <qualifiedname>Gambit::Printers::h5v2_bufdata_ranks</qualifiedname>
+        <param>
+          <type>12</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="84" column="15" declfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" declline="84" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a86ab4ae8aee534f7cc23837c5712bc88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::h5v2_bufdata_valid</definition>
+        <argsstring>(13)</argsstring>
+        <name>h5v2_bufdata_valid</name>
+        <qualifiedname>Gambit::Printers::h5v2_bufdata_valid</qualifiedname>
+        <param>
+          <type>13</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="85" column="15" declfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" declline="85" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1aac2bfcb07b5bfc776566ca664002a45e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::h5v2_bufdata_type</definition>
+        <argsstring>(14)</argsstring>
+        <name>h5v2_bufdata_type</name>
+        <qualifiedname>Gambit::Printers::h5v2_bufdata_type</qualifiedname>
+        <param>
+          <type>14</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="86" column="15" declfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" declline="86" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a14d9510aea7fd9a0c2e5ea58c2ed46ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::h5v2_bufdata_values</definition>
+        <argsstring>(15)</argsstring>
+        <name>h5v2_bufdata_values</name>
+        <qualifiedname>Gambit::Printers::h5v2_bufdata_values</qualifiedname>
+        <param>
+          <type>15</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="87" column="15" declfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" declline="87" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ab76badf7fafb7170e776789c81dd1d59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::h5v2_BLOCK</definition>
+        <argsstring>(30)</argsstring>
+        <name>h5v2_BLOCK</name>
+        <qualifiedname>Gambit::Printers::h5v2_BLOCK</qualifiedname>
+        <param>
+          <type>30</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="91" column="15" declfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" declline="91" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a7ead4beeaf87210fef0481300d514393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Gambit::Printers::h5v2_BEGIN</definition>
+        <argsstring>(31)</argsstring>
+        <name>h5v2_BEGIN</name>
+        <qualifiedname>Gambit::Printers::h5v2_BEGIN</qualifiedname>
+        <param>
+          <type>31</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="93" column="15" declfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" declline="93" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a0d688848594335cae7af0da7125422dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::set&lt; T &gt;</type>
+        <definition>std::set&lt; T &gt; Gambit::Printers::set_diff</definition>
+        <argsstring>(const std::set&lt; T &gt; &amp;set1, const std::set&lt; T &gt; &amp;set2)</argsstring>
+        <name>set_diff</name>
+        <qualifiedname>Gambit::Printers::set_diff</qualifiedname>
+        <param>
+          <type>const std::set&lt; T &gt; &amp;</type>
+          <declname>set1</declname>
+        </param>
+        <param>
+          <type>const std::set&lt; T &gt; &amp;</type>
+          <declname>set2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="101" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="101" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a3c327767bf2818faaee944c1c69ae685" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t Gambit::Printers::pairfunc</definition>
+        <argsstring>(const std::size_t i, const std::size_t j)</argsstring>
+        <name>pairfunc</name>
+        <qualifiedname>Gambit::Printers::pairfunc</qualifiedname>
+        <param>
+          <type>const std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="36" column="24" bodyfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1af1520d5990d9c2596a037e5fb3be6b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Printers::col_name_callback</definition>
+        <argsstring>(void *colmap_in, int, char **data, char **)</argsstring>
+        <name>col_name_callback</name>
+        <qualifiedname>Gambit::Printers::col_name_callback</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>colmap_in</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="43" column="9" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="43" bodyend="59" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="48" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1acd49a3e5fdb29c6bfe1cbb5fb0a37760" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::cpp2sql</definition>
+        <argsstring>()</argsstring>
+        <name>cpp2sql</name>
+        <qualifiedname>Gambit::Printers::cpp2sql</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="54" column="28" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="54" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a69f2be276cad282edc89c557c84592cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::cpp2sql&lt; long long int &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>cpp2sql&lt; long long int &gt;</name>
+        <qualifiedname>Gambit::Printers::cpp2sql&lt; long long int &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="55" column="15" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="62" bodyend="62" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="55" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ad6d88d1153bb25e25c84154eade68758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::cpp2sql&lt; double &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>cpp2sql&lt; double &gt;</name>
+        <qualifiedname>Gambit::Printers::cpp2sql&lt; double &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="56" column="15" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="63" bodyend="63" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="56" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a40f3dc9496dc1df0498a3ca6e8907dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::cpp2sql&lt; std::string &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>cpp2sql&lt; std::string &gt;</name>
+        <qualifiedname>Gambit::Printers::cpp2sql&lt; std::string &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="57" column="15" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="64" bodyend="64" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="57" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a95b59fdfabc575625618be7b329e7f71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; unsigned int, std::string &gt;</type>
+        <definition>std::map&lt; unsigned int, std::string &gt; Gambit::Printers::define_typecodes</definition>
+        <argsstring>()</argsstring>
+        <name>define_typecodes</name>
+        <qualifiedname>Gambit::Printers::define_typecodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="69" column="14" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="69" bodyend="78" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="61" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1af550374fc71cfc0665f179cd8e804700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, std::string, <ref refid="structGambit_1_1Utils_1_1ci__less" kindref="compound">Utils::ci_less</ref> &gt;</type>
+        <definition>std::map&lt; std::string, std::string, Utils::ci_less &gt; Gambit::Printers::fill_SQLtype_to_basic</definition>
+        <argsstring>()</argsstring>
+        <name>fill_SQLtype_to_basic</name>
+        <qualifiedname>Gambit::Printers::fill_SQLtype_to_basic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="83" column="14" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="83" bodyend="121" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="66" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a575d6a8a4ad8b6debd1f66936554366b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::SQLite_equaltypes</definition>
+        <argsstring>(const std::string &amp;type1, const std::string &amp;type2)</argsstring>
+        <name>SQLite_equaltypes</name>
+        <qualifiedname>Gambit::Printers::SQLite_equaltypes</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type1</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="125" column="10" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="125" bodyend="146" declfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" declline="70" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ac4d74865835e6330c2b447a9fcfef449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iter</type>
+          </param>
+        </templateparamlist>
+        <type>Iter</type>
+        <definition>Iter Gambit::Printers::next_el</definition>
+        <argsstring>(Iter iter)</argsstring>
+        <name>next_el</name>
+        <qualifiedname>Gambit::Printers::next_el</qualifiedname>
+        <param>
+          <type>Iter</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="74" column="10" bodyfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a3bee0a98c6dec83c29ba3342b2df4a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iter</type>
+          </param>
+          <param>
+            <type>typename Cont</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::comma_unless_last</definition>
+        <argsstring>(Iter it, const Cont &amp;c)</argsstring>
+        <name>comma_unless_last</name>
+        <qualifiedname>Gambit::Printers::comma_unless_last</qualifiedname>
+        <param>
+          <type>Iter</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const Cont &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitebase.hpp" line="82" column="17" bodyfile="Printers/include/gambit/Printers/printers/sqlitebase.hpp" bodystart="82" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a4f9008f29a26894c0f4383bed1c0067f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::SQLiteReader::get_sql_col&lt; std::string &gt;</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>SQLiteReader::get_sql_col&lt; std::string &gt;</name>
+        <qualifiedname>Gambit::Printers::get_sql_col&lt; std::string &gt;</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>col_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitereader.hpp" line="156" column="15" bodyfile="Printers/src/printers/sqliteprinter/sqlitereader.cpp" bodystart="79" bodyend="89" declfile="Printers/include/gambit/Printers/printers/sqlitereader.hpp" declline="156" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a2824a890bca6e637ffb8fcfe387aacae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_map&lt; std::string, long long int &gt; &amp;</type>
+        <definition>std::unordered_map&lt; std::string, long long int &gt; &amp; Gambit::Printers::get_param_id_map</definition>
+        <argsstring>()</argsstring>
+        <name>get_param_id_map</name>
+        <qualifiedname>Gambit::Printers::get_param_id_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printer_id_tools.cpp" line="28" column="28" bodyfile="Printers/src/printer_id_tools.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1afca6ca7d4ec7fb8ec7ae19c16512dc06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::open_output_file</definition>
+        <argsstring>(std::ofstream &amp;output, std::string filename, std::ios_base::openmode mode)</argsstring>
+        <name>open_output_file</name>
+        <qualifiedname>Gambit::Printers::open_output_file</qualifiedname>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::ios_base::openmode</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Open file stream with error checking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/asciiprinter/asciiprinter.cpp" line="61" column="10" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="61" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a6c6a531d7c57f70a85bfb0cefc199960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint Gambit::Printers::safe_col_lookup</definition>
+        <argsstring>(const std::string &amp;key, const std::map&lt; std::string, uint &gt; &amp;colmap, std::string fname)</argsstring>
+        <name>safe_col_lookup</name>
+        <qualifiedname>Gambit::Printers::safe_col_lookup</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; std::string, uint &gt; &amp;</type>
+          <declname>colmap</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+<para>Helper function for map lookup. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/asciiprinter/asciireader.cpp" line="28" column="10" bodyfile="Printers/src/printers/asciiprinter/asciireader.cpp" bodystart="28" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a60af90091862cce06f1ac6a8ba567ee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::check_for_error_messages</definition>
+        <argsstring>()</argsstring>
+        <name>check_for_error_messages</name>
+        <qualifiedname>Gambit::Printers::check_for_error_messages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5printer.cpp" line="160" column="10" bodyfile="Printers/src/printers/hdf5printer/hdf5printer.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ab7a743e5739ea0ffb64b56e71a74d6f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::openfile_read</definition>
+        <argsstring>(std::string file)</argsstring>
+        <name>openfile_read</name>
+        <qualifiedname>Gambit::Printers::openfile_read</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5reader.cpp" line="36" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5reader.cpp" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1aa246afc7b87f072f00866578a75d62ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; Gambit::Printers::lsGroup_process</definition>
+        <argsstring>(hid_t location_id)</argsstring>
+        <name>lsGroup_process</name>
+        <qualifiedname>Gambit::Printers::lsGroup_process</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5reader.cpp" line="49" column="18" bodyfile="Printers/src/printers/hdf5printer/hdf5reader.cpp" bodystart="49" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a69f2be276cad282edc89c557c84592cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::cpp2sql&lt; long long int &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>cpp2sql&lt; long long int &gt;</name>
+        <qualifiedname>Gambit::Printers::cpp2sql&lt; long long int &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="62" column="15" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ad6d88d1153bb25e25c84154eade68758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::cpp2sql&lt; double &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>cpp2sql&lt; double &gt;</name>
+        <qualifiedname>Gambit::Printers::cpp2sql&lt; double &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="63" column="15" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a40f3dc9496dc1df0498a3ca6e8907dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::cpp2sql&lt; std::string &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>cpp2sql&lt; std::string &gt;</name>
+        <qualifiedname>Gambit::Printers::cpp2sql&lt; std::string &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="64" column="15" bodyfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a37f0d1c83aa7049a1905c010cb3a0802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, std::string &gt;</type>
+        <definition>const std::map&lt; unsigned int, std::string &gt; Gambit::Printers::typecode2sql</definition>
+        <argsstring>(define_typecodes())</argsstring>
+        <name>typecode2sql</name>
+        <qualifiedname>Gambit::Printers::typecode2sql</qualifiedname>
+        <param>
+          <type>define_typecodes()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="79" column="20" declfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" declline="79" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a62df1b9559152e08950d513a7983ab8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; std::string, std::string, <ref refid="structGambit_1_1Utils_1_1ci__less" kindref="compound">Utils::ci_less</ref> &gt;</type>
+        <definition>const std::map&lt; std::string, std::string, Utils::ci_less &gt; Gambit::Printers::SQLtype_to_basic</definition>
+        <argsstring>(fill_SQLtype_to_basic())</argsstring>
+        <name>SQLtype_to_basic</name>
+        <qualifiedname>Gambit::Printers::SQLtype_to_basic</qualifiedname>
+        <param>
+          <type>fill_SQLtype_to_basic()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/sqliteprinter/sqlitebase.cpp" line="122" column="20" declfile="Printers/src/printers/sqliteprinter/sqlitebase.cpp" declline="122" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ab9466ce75a38e2cdfe5314c3b2ea1fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::operator&lt;</definition>
+        <argsstring>(const VBIDpair &amp;l, const VBIDpair &amp;r)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>Gambit::Printers::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="37" column="6" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="37" bodyend="39" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="56" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a3b2a55f31fe6552f17e26b6e6cf64bcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::operator==</definition>
+        <argsstring>(const VBIDpair &amp;l, const VBIDpair &amp;r)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Gambit::Printers::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="40" column="11" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="40" bodyend="42" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="57" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a3f27d05387889b1c18716228fd5139a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::operator!=</definition>
+        <argsstring>(const VBIDpair &amp;l, const VBIDpair &amp;r)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>Gambit::Printers::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="43" column="11" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="43" bodyend="45" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="58" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ac1e1d55333ff6b8ca34363c6c03b6031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::operator&lt;</definition>
+        <argsstring>(const VBIDtrip &amp;l, const VBIDtrip &amp;r)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>Gambit::Printers::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDtrip" kindref="compound">VBIDtrip</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDtrip" kindref="compound">VBIDtrip</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="47" column="6" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="47" bodyend="49" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="83" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1adebb2eb5bb4e7b1cda01c8d856898395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::operator==</definition>
+        <argsstring>(const VBIDtrip &amp;l, const VBIDtrip &amp;r)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Gambit::Printers::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDtrip" kindref="compound">VBIDtrip</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDtrip" kindref="compound">VBIDtrip</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="50" column="11" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="50" bodyend="52" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="84" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ad25d475b06930500e725588cf56b5869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::operator!=</definition>
+        <argsstring>(const VBIDtrip &amp;l, const VBIDtrip &amp;r)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>Gambit::Printers::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDtrip" kindref="compound">VBIDtrip</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1VBIDtrip" kindref="compound">VBIDtrip</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="53" column="11" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="53" bodyend="55" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="85" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ad608146d684845d6f87d29ebd08fe976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS bool</type>
+        <definition>bool Gambit::Printers::operator&lt;</definition>
+        <argsstring>(const PPIDpair &amp;l, const PPIDpair &amp;r)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>Gambit::Printers::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="57" column="6" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="57" bodyend="72" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="109" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1ab4143adb3311295062125eaa7a53c400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS bool</type>
+        <definition>bool Gambit::Printers::operator==</definition>
+        <argsstring>(const PPIDpair &amp;l, const PPIDpair &amp;r)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Gambit::Printers::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="73" column="11" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="73" bodyend="75" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="110" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1abab56b281d9bf271e19ed5a9824ea89c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS bool</type>
+        <definition>bool Gambit::Printers::operator!=</definition>
+        <argsstring>(const PPIDpair &amp;l, const PPIDpair &amp;r)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>Gambit::Printers::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="76" column="11" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="76" bodyend="78" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="111" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a48739b5c40f29f7591e99e2007e0f15a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::define_mpiHDF5bufferchunk</definition>
+        <argsstring>()</argsstring>
+        <name>define_mpiHDF5bufferchunk</name>
+        <qualifiedname>Gambit::Printers::define_mpiHDF5bufferchunk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" line="146" column="10" declfile="Utils/include/gambit/Utils/new_mpi_datatypes.hpp" declline="146" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1aea6c68cb3e134435f26742b0eff32b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1error" kindref="compound">error</ref> &amp;</type>
+        <definition>error &amp; Gambit::Printers::printer_error</definition>
+        <argsstring>()</argsstring>
+        <name>printer_error</name>
+        <qualifiedname>Gambit::Printers::printer_error</qualifiedname>
+        <briefdescription>
+<para>Printer errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/standalone_error_handlers.cpp" line="93" column="11" bodyfile="Utils/src/standalone_error_handlers.cpp" bodystart="93" bodyend="97" declfile="Utils/include/gambit/Utils/standalone_error_handlers.hpp" declline="53" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a6fb1cfdedb362af5f372894f9ffcd0f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1warning" kindref="compound">warning</ref> &amp;</type>
+        <definition>warning &amp; Gambit::Printers::printer_warning</definition>
+        <argsstring>()</argsstring>
+        <name>printer_warning</name>
+        <qualifiedname>Gambit::Printers::printer_warning</qualifiedname>
+        <briefdescription>
+<para>Printer warnings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/standalone_error_handlers.cpp" line="100" column="13" bodyfile="Utils/src/standalone_error_handlers.cpp" bodystart="100" bodyend="104" declfile="Utils/include/gambit/Utils/standalone_error_handlers.hpp" declline="55" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Printers_1a39e66258d9110ed39ce05748a209abc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; Gambit::Printers::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const PPIDpair &amp;ppid)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Printers::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &amp;</type>
+          <declname>ppid</declname>
+        </param>
+        <briefdescription>
+<para>Stream operator overloads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/new_mpi_datatypes.cpp" line="178" column="6" bodyfile="Utils/src/new_mpi_datatypes.cpp" bodystart="178" bodyend="182"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
 <para>Forward declaration. </para>
     </briefdescription>
     <detaileddescription>
+<para>Forward declaration of <ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">Printers::BasePrinter</ref> class for use in print functions. </para>
     </detaileddescription>
     <location file="ScannerBit/include/gambit/ScannerBit/scanners/postprocessor_2.0.0/postprocessor.hpp" line="30" column="3"/>
   </compounddef>

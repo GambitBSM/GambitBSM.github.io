@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Todo List
 
 
 
@@ -233,10 +232,10 @@ Member [Gambit::ColliderBit::SignalRegionData::check](/documentation/code/classe
 
 * Add SR consistency checks  
 
-Member [Gambit::SpecBit::get_MSSM_spectrum_from_SLHAstruct](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-slhastruct)  (Spectrum &result)
+Member [Gambit::SpecBit::get_MSSM_spectrum_from_SLHAstruct](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-slhastruct)  ([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) &result)
 
 * FIXME this needs to be fixed &ndash; is it needed any more? Where is this GAMBIT block supposed to be written? 
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:29 +0000
+Updated on 2022-09-07 at 13:49:57 +0000

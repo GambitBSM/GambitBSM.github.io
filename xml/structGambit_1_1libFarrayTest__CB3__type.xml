@@ -4,7 +4,7 @@
     <compoundname>Gambit::libFarrayTest_CB3_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1libFarrayTest__CB3__type_1aca301bdde161d6361161a6e9051079b4" prot="public" static="no" mutable="no">
-        <type>Fcomplex</type>
+        <type><ref refid="namespaceGambit_1ae1c485eb27f0a0cbeba4e764604efa45" kindref="member">Fcomplex</ref></type>
         <definition>Fcomplex Gambit::libFarrayTest_CB3_type::cpa</definition>
         <argsstring></argsstring>
         <name>cpa</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" line="49" column="18" bodyfile="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1libFarrayTest__CB3__type_1a7fa80dbd14b35b62535415d38a5aac95" prot="public" static="no" mutable="no">
-        <type>Fcomplex16</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">Fcomplex16</ref></type>
         <definition>Fcomplex16 Gambit::libFarrayTest_CB3_type::cpb</definition>
         <argsstring></argsstring>
         <name>cpb</name>
@@ -50,6 +50,26 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::FcomplexT&lt; double &gt;</label>
+        <link refid="classGambit_1_1FcomplexT"/>
+      </node>
+      <node id="2">
+        <label>Gambit::FcomplexT&lt; float &gt;</label>
+        <link refid="classGambit_1_1FcomplexT"/>
+      </node>
+      <node id="1">
+        <label>Gambit::libFarrayTest_CB3_type</label>
+        <link refid="structGambit_1_1libFarrayTest__CB3__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cpa</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cpb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" line="47" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" bodystart="48" bodyend="52"/>
     <listofallmembers>
       <member refid="structGambit_1_1libFarrayTest__CB3__type_1aca301bdde161d6361161a6e9051079b4" prot="public" virt="non-virtual"><scope>Gambit::libFarrayTest_CB3_type</scope><name>cpa</name></member>

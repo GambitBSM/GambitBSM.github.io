@@ -4,8 +4,7 @@ description: 'Base function for the object that is upputed by "set_purpose". '
 
 ---
 
-
-
+# Gambit::Scanner::Function_Base< ret(args...)>
 
 
 
@@ -302,4 +301,4 @@ friend class scan_ptr< ret(args...)>(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

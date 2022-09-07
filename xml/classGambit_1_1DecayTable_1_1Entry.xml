@@ -1,0 +1,1073 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1DecayTable_1_1Entry" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::DecayTable::Entry</compoundname>
+    <includes refid="decay__table_8hpp" local="no">decay_table.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a2154997a010163329c39e1ff6bfb1c6b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Gambit::DecayTable::Entry::construct_key</definition>
+        <argsstring>(std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;)</argsstring>
+        <name>construct_key</name>
+        <qualifiedname>Gambit::DecayTable::Entry::construct_key</qualifiedname>
+        <param>
+          <type>std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a set of particles from a variadic list of full names or short names and indices</para>
+<para>Base function version </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="112" column="23" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a3d30ece01173a244e281a412b71b7bc6" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Gambit::DecayTable::Entry::construct_key</definition>
+        <argsstring>(std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;key, str p1, Args... args)</argsstring>
+        <name>construct_key</name>
+        <qualifiedname>Gambit::DecayTable::Entry::construct_key</qualifiedname>
+        <param>
+          <type>std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Templated version for long names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="115" column="23" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a99ec0e9035e7fe07174a351cd7a0dbce" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Gambit::DecayTable::Entry::construct_key</definition>
+        <argsstring>(std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;key, str p1, int i1, Args... args)</argsstring>
+        <name>construct_key</name>
+        <qualifiedname>Gambit::DecayTable::Entry::construct_key</qualifiedname>
+        <param>
+          <type>std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Templated version for short names and indices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="122" column="23" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="122" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a6eb6fd0bdd55c7ac5f68d641dc414bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayTable::Entry::set_BF</definition>
+        <argsstring>(double, double, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;)</argsstring>
+        <name>set_BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::set_BF</qualifiedname>
+        <param>
+          <type>double</type>
+          <defname>BF</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>error</defname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+          <defname>daughters</defname>
+        </param>
+        <briefdescription>
+<para>Set branching fraction for decay to a given final state. 1. PDG-context integer pairs (vector) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set branching fraction for decay to a given final state. Supports arbitrarily many final state particles. Five ways to specify final states:<orderedlist>
+<listitem><para>PDG-context integer pairs (vector)</para>
+</listitem><listitem><para>full particle names (vector)</para>
+</listitem><listitem><para>PDG-context integer pairs (arguments)</para>
+</listitem><listitem><para>full particle names (arguments)</para>
+</listitem><listitem><para>short particle names + index integers (arguments) </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="150" column="16" bodyfile="Elements/src/decay_table.cpp" bodystart="323" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a2e8f39a168311163cdbe8b192d476d53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayTable::Entry::set_BF</definition>
+        <argsstring>(double, double, const std::vector&lt; str &gt; &amp;)</argsstring>
+        <name>set_BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::set_BF</qualifiedname>
+        <param>
+          <type>double</type>
+          <defname>BF</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>error</defname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
+          <defname>daughters</defname>
+        </param>
+        <briefdescription>
+<para>Set branching fraction for decay to a given final state. 2. full particle names (vector) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="151" column="16" bodyfile="Elements/src/decay_table.cpp" bodystart="332" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1adc7bc571dda0ce1f902b5139ebb8fe40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::DecayTable::Entry::set_BF</definition>
+        <argsstring>(double BF, double error, std::pair&lt; int, int &gt; p1, Args... args)</argsstring>
+        <name>set_BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::set_BF</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>BF</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="154" column="16" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="154" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a01487d426e044c3063075aadccd8a251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::DecayTable::Entry::set_BF</definition>
+        <argsstring>(double BF, double error, str p1, Args... args)</argsstring>
+        <name>set_BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::set_BF</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>BF</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="164" column="16" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="164" bodyend="170"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a755cc4214c13b548566d5dca8088018a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::DecayTable::Entry::has_channel</definition>
+        <argsstring>(const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;) const</argsstring>
+        <name>has_channel</name>
+        <qualifiedname>Gambit::DecayTable::Entry::has_channel</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+          <defname>daughters</defname>
+        </param>
+        <briefdescription>
+<para>Check if a given final state exists in this <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref>. 1. PDG-context integer pairs (vector) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a given final state exists in this <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref>. Supports arbitrarily many final state particles. Five ways to specify final states:<orderedlist>
+<listitem><para>PDG-context integer pairs (vector)</para>
+</listitem><listitem><para>full particle names (vector)</para>
+</listitem><listitem><para>PDG-context integer pairs (arguments)</para>
+</listitem><listitem><para>full particle names (arguments)</para>
+</listitem><listitem><para>short particle names + index integers (arguments) </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="182" column="16" bodyfile="Elements/src/decay_table.cpp" bodystart="342" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1ad7a9630ec0ba76bf7faa0739b1fb1ab8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::DecayTable::Entry::has_channel</definition>
+        <argsstring>(const std::vector&lt; str &gt; &amp;) const</argsstring>
+        <name>has_channel</name>
+        <qualifiedname>Gambit::DecayTable::Entry::has_channel</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
+          <defname>daughters</defname>
+        </param>
+        <briefdescription>
+<para>Check if a given final state exists in this <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref>. 2. full particle names (vector) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="183" column="16" bodyfile="Elements/src/decay_table.cpp" bodystart="350" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a9c6007ac7d4e5685128b0889a4415eb2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Gambit::DecayTable::Entry::has_channel</definition>
+        <argsstring>(std::pair&lt; int, int &gt; p1, Args... args) const</argsstring>
+        <name>has_channel</name>
+        <qualifiedname>Gambit::DecayTable::Entry::has_channel</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="186" column="16" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="186" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a41e5afc0ecefd3968704be54ee1cd5d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Gambit::DecayTable::Entry::has_channel</definition>
+        <argsstring>(str p1, Args... args) const</argsstring>
+        <name>has_channel</name>
+        <qualifiedname>Gambit::DecayTable::Entry::has_channel</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="195" column="16" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="195" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1abc5146d961b9f7a7b9e496ff1ab51529" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::BF</definition>
+        <argsstring>(const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;) const</argsstring>
+        <name>BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::BF</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+          <defname>daughters</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve branching fraction for decay to a given final state. 1. PDG-context integer pairs (vector) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve branching fraction for decay to a given final state. Five ways to specify final states:<orderedlist>
+<listitem><para>PDG-context integer pairs (vector)</para>
+</listitem><listitem><para>full particle names (vector)</para>
+</listitem><listitem><para>PDG-context integer pairs (arguments)</para>
+</listitem><listitem><para>full particle names (arguments)</para>
+</listitem><listitem><para>short particle names + index integers (arguments) Supports arbitrarily many final state particles. </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="212" column="18" bodyfile="Elements/src/decay_table.cpp" bodystart="359" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a1e837b67150494192ff99567961fb21a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::BF</definition>
+        <argsstring>(const std::vector&lt; str &gt; &amp;) const</argsstring>
+        <name>BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::BF</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
+          <defname>daughters</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve branching fraction for decay to a given final state. 2. full particle names (vector) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="213" column="18" bodyfile="Elements/src/decay_table.cpp" bodystart="367" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a8a342bc3d241d6e9d7a9ba1a153f5da0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::BF</definition>
+        <argsstring>(std::pair&lt; int, int &gt; p1, Args... args) const</argsstring>
+        <name>BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::BF</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="216" column="18" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="216" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1aa4c18190171d834c2510cfa235f3f13d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::BF</definition>
+        <argsstring>(str p1, Args... args) const</argsstring>
+        <name>BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::BF</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="234" column="18" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="234" bodyend="249"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a66f31ea28e49186b09b4a3e5543b7e9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::BF_error</definition>
+        <argsstring>(std::pair&lt; int, int &gt; p1, Args... args) const</argsstring>
+        <name>BF_error</name>
+        <qualifiedname>Gambit::DecayTable::Entry::BF_error</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve branching fraction error for decay to a given final state. Three ways to specify final states: PDG-context integer pairs, full particle names, short particle names + index integers. Supports arbitrarily many final state particles. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="257" column="18" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="257" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a959d1b22f494f1aa13210cf527c70aa4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::BF_error</definition>
+        <argsstring>(str p1, Args... args) const</argsstring>
+        <name>BF_error</name>
+        <qualifiedname>Gambit::DecayTable::Entry::BF_error</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="275" column="18" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="275" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a453c20f02517da2721f2fb61ddac9413" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt; double, double &gt; Gambit::DecayTable::Entry::BF_with_error</definition>
+        <argsstring>(std::pair&lt; int, int &gt; p1, Args... args) const</argsstring>
+        <name>BF_with_error</name>
+        <qualifiedname>Gambit::DecayTable::Entry::BF_with_error</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve branching fraction and error for decay to a given final state. Three ways to specify final states: PDG-context integer pairs, full particle names, short particle names + index integers. Supports arbitrarily many final state particles. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="298" column="21" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="298" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1adbb1d891797772bf46cbabea2e7f9b36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt; double, double &gt; Gambit::DecayTable::Entry::BF_with_error</definition>
+        <argsstring>(str p1, Args... args) const</argsstring>
+        <name>BF_with_error</name>
+        <qualifiedname>Gambit::DecayTable::Entry::BF_with_error</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="316" column="21" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="316" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1ad25a441b1aeb66f4dd1e3a2e36d7849b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SLHAea::Block</type>
+        <definition>SLHAea::Block Gambit::DecayTable::Entry::getSLHAea_block</definition>
+        <argsstring>(int, str, bool include_zero_bfs=false, const mass_es_pseudonyms &amp;psn=mass_es_pseudonyms()) const</argsstring>
+        <name>getSLHAea_block</name>
+        <qualifiedname>Gambit::DecayTable::Entry::getSLHAea_block</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>include_zero_bfs</declname>
+          <defname>z</defname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1mass__es__pseudonyms" kindref="compound">mass_es_pseudonyms</ref> &amp;</type>
+          <declname>psn</declname>
+          <defval><ref refid="structGambit_1_1mass__es__pseudonyms" kindref="compound">mass_es_pseudonyms</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output this entry as an SLHAea DECAY block, using input parameter to identify the mother particle.</para>
+<para>Output a decay table entry as an SLHAea DECAY block </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="336" column="25" bodyfile="Elements/src/decay_table.cpp" bodystart="378" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a802f6ffd18145eb7bf67326920bc00ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SLHAea::Block</type>
+        <definition>SLHAea::Block Gambit::DecayTable::Entry::getSLHAea_block</definition>
+        <argsstring>(int, str, int, bool include_zero_bfs=false, const mass_es_pseudonyms &amp;psn=mass_es_pseudonyms()) const</argsstring>
+        <name>getSLHAea_block</name>
+        <qualifiedname>Gambit::DecayTable::Entry::getSLHAea_block</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>include_zero_bfs</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1mass__es__pseudonyms" kindref="compound">mass_es_pseudonyms</ref> &amp;</type>
+          <declname>psn</declname>
+          <defval><ref refid="structGambit_1_1mass__es__pseudonyms" kindref="compound">mass_es_pseudonyms</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="337" column="25" bodyfile="Elements/src/decay_table.cpp" bodystart="380" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a54751d1153f8f113a493cd5b79e85223" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SLHAea::Block</type>
+        <definition>SLHAea::Block Gambit::DecayTable::Entry::getSLHAea_block</definition>
+        <argsstring>(int, std::pair&lt; int, int &gt;, bool include_zero_bfs=false, const mass_es_pseudonyms &amp;psn=mass_es_pseudonyms()) const</argsstring>
+        <name>getSLHAea_block</name>
+        <qualifiedname>Gambit::DecayTable::Entry::getSLHAea_block</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>include_zero_bfs</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1mass__es__pseudonyms" kindref="compound">mass_es_pseudonyms</ref> &amp;</type>
+          <declname>psn</declname>
+          <defval><ref refid="structGambit_1_1mass__es__pseudonyms" kindref="compound">mass_es_pseudonyms</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="338" column="25" bodyfile="Elements/src/decay_table.cpp" bodystart="382" bodyend="496"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1DecayTable_1_1Entry_1ac560b171c91f109bfea0b8369374628a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::width_in_GeV</definition>
+        <argsstring></argsstring>
+        <name>width_in_GeV</name>
+        <qualifiedname>Gambit::DecayTable::Entry::width_in_GeV</qualifiedname>
+        <briefdescription>
+<para>Total particle width (in GeV) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="345" column="18" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1DecayTable_1_1Entry_1ac6dfe14c41ccc52b284f0ef80bac1486" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::positive_error</definition>
+        <argsstring></argsstring>
+        <name>positive_error</name>
+        <qualifiedname>Gambit::DecayTable::Entry::positive_error</qualifiedname>
+        <briefdescription>
+<para>Positive error on width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="348" column="18" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1DecayTable_1_1Entry_1a738c63ad7ec92e2131422f4cffb19cb6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::negative_error</definition>
+        <argsstring></argsstring>
+        <name>negative_error</name>
+        <qualifiedname>Gambit::DecayTable::Entry::negative_error</qualifiedname>
+        <briefdescription>
+<para>Negative error on width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="351" column="18" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1DecayTable_1_1Entry_1af650779f0a7ca6cc1f4157dbfd9a936a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::DecayTable::Entry::calculator</definition>
+        <argsstring></argsstring>
+        <name>calculator</name>
+        <qualifiedname>Gambit::DecayTable::Entry::calculator</qualifiedname>
+        <briefdescription>
+<para>Name of the code (backend or otherwise) used for calculating this entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="354" column="15" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1DecayTable_1_1Entry_1ad29cba8f0a0d1afbad0b37927d540855" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::DecayTable::Entry::calculator_version</definition>
+        <argsstring></argsstring>
+        <name>calculator_version</name>
+        <qualifiedname>Gambit::DecayTable::Entry::calculator_version</qualifiedname>
+        <briefdescription>
+<para>Version of the code used for calculating this entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="356" column="15" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1DecayTable_1_1Entry_1a731572db4d755af8cf74e61ea039cbea" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::DecayTable::Entry::warnings</definition>
+        <argsstring></argsstring>
+        <name>warnings</name>
+        <qualifiedname>Gambit::DecayTable::Entry::warnings</qualifiedname>
+        <briefdescription>
+<para>Warnings from the calculator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="358" column="15" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1DecayTable_1_1Entry_1ac378b940309a431198baf950098d9098" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::DecayTable::Entry::errors</definition>
+        <argsstring></argsstring>
+        <name>errors</name>
+        <qualifiedname>Gambit::DecayTable::Entry::errors</qualifiedname>
+        <briefdescription>
+<para>Errors from the calculator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="360" column="15" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1DecayTable_1_1Entry_1a403b1292121289ff9355e5bba5c5e8e2" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::multiset&lt; std::pair&lt; int, int &gt; &gt;, std::pair&lt; double, double &gt; &gt;</type>
+        <definition>std::map&lt; std::multiset&lt; std::pair&lt;int,int&gt; &gt;, std::pair&lt;double, double&gt; &gt; Gambit::DecayTable::Entry::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <qualifiedname>Gambit::DecayTable::Entry::channels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual underlying map of channels to their BFs. Just iterate over this directly if you need to iterate over all decays of this particle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="364" column="20" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a828369f4bd767a9709b3d5f8c4542734" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayTable::Entry::init</definition>
+        <argsstring>(const SLHAea::Block &amp;, int, bool force_SM_fermion_gauge_eigenstates=false)</argsstring>
+        <name>init</name>
+        <qualifiedname>Gambit::DecayTable::Entry::init</qualifiedname>
+        <param>
+          <type>const SLHAea::Block &amp;</type>
+          <defname>block</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force_SM_fermion_gauge_eigenstates</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Initialise a <ref refid="classGambit_1_1DecayTable" kindref="compound">DecayTable</ref> <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">Entry</ref> using an SLHAea DECAY block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="101" column="16" bodyfile="Elements/src/decay_table.cpp" bodystart="258" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a528cb352bfd351f54fce71da822b2e81" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayTable::Entry::check_particles_exist</definition>
+        <argsstring>(std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;) const</argsstring>
+        <name>check_particles_exist</name>
+        <qualifiedname>Gambit::DecayTable::Entry::check_particles_exist</qualifiedname>
+        <param>
+          <type>std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+          <defname>particles</defname>
+        </param>
+        <briefdescription>
+<para>Make sure all particles listed in a set are actually known to the GAMBIT particle database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="104" column="16" bodyfile="Elements/src/decay_table.cpp" bodystart="288" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1abfa190a67d79b48963c0d95a15b4f70c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayTable::Entry::check_BF_validity</definition>
+        <argsstring>(double, double, std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;) const</argsstring>
+        <name>check_BF_validity</name>
+        <qualifiedname>Gambit::DecayTable::Entry::check_BF_validity</qualifiedname>
+        <param>
+          <type>double</type>
+          <defname>BF</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>error</defname>
+        </param>
+        <param>
+          <type>std::multiset&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+          <defname>key</defname>
+        </param>
+        <briefdescription>
+<para>Make sure no NaNs have been passed to the <ref refid="classGambit_1_1DecayTable" kindref="compound">DecayTable</ref> by nefarious backends. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="107" column="16" bodyfile="Elements/src/decay_table.cpp" bodystart="304" bodyend="320"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a81edd48b339c61122d2cd6c7ad836125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::DecayTable::Entry::Entry</definition>
+        <argsstring>()</argsstring>
+        <name>Entry</name>
+        <qualifiedname>Gambit::DecayTable::Entry::Entry</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="132" column="11" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1aaf2e97fcb136231c346fe32e581ad80e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::DecayTable::Entry::Entry</definition>
+        <argsstring>(double width)</argsstring>
+        <name>Entry</name>
+        <qualifiedname>Gambit::DecayTable::Entry::Entry</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Constructor taking total width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="134" column="11" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1aa220d2953a1e62c8bf9b97f7c121a3bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::DecayTable::Entry::Entry</definition>
+        <argsstring>(const SLHAea::Block &amp;, int context=0, bool force_SM_fermion_gauge_eigenstates=false, str calculator=&quot;&quot;, str calculator_version=&quot;&quot;)</argsstring>
+        <name>Entry</name>
+        <qualifiedname>Gambit::DecayTable::Entry::Entry</qualifiedname>
+        <param>
+          <type>const SLHAea::Block &amp;</type>
+          <defname>block</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>context</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force_SM_fermion_gauge_eigenstates</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>calculator</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>calculator_version</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor creating a <ref refid="classGambit_1_1DecayTable" kindref="compound">DecayTable</ref> <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">Entry</ref> from an SLHAea DECAY block; full version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="136" column="11" bodyfile="Elements/src/decay_table.cpp" bodystart="226" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a0a445d13ab57c5b3259923e66443e657" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::DecayTable::Entry::Entry</definition>
+        <argsstring>(const SLHAea::Block &amp;, SLHAea::Block::const_iterator, int context=0, bool force_SM_fermion_gauge_eigenstates=false, str calculator=&quot;&quot;, str calculator_version=&quot;&quot;)</argsstring>
+        <name>Entry</name>
+        <qualifiedname>Gambit::DecayTable::Entry::Entry</qualifiedname>
+        <param>
+          <type>const SLHAea::Block &amp;</type>
+          <defname>block</defname>
+        </param>
+        <param>
+          <type>SLHAea::Block::const_iterator</type>
+          <defname>block_def</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>context</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force_SM_fermion_gauge_eigenstates</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>calculator</declname>
+          <defname>calc</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>calculator_version</declname>
+          <defname>calc_ver</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor creating a <ref refid="classGambit_1_1DecayTable" kindref="compound">DecayTable</ref> <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">Entry</ref> from an SLHAea DECAY block; full version; version assuming block def is already known. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor creating a <ref refid="classGambit_1_1DecayTable" kindref="compound">DecayTable</ref> <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">Entry</ref> from an SLHAea DECAY block; full version; version assuming block def is already known </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="138" column="11" bodyfile="Elements/src/decay_table.cpp" bodystart="244" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1DecayTable_1_1Entry_1a1270f65feb00954f78e103d9f2002531" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::DecayTable::Entry::sum_BF</definition>
+        <argsstring>() const</argsstring>
+        <name>sum_BF</name>
+        <qualifiedname>Gambit::DecayTable::Entry::sum_BF</qualifiedname>
+        <briefdescription>
+<para>Sum up the partial widths and return the result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sum up the branching fractions for a single particle&apos;s entry and return the result. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/decay_table.hpp" line="342" column="18" bodyfile="Elements/src/decay_table.cpp" bodystart="523" bodyend="531"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classGambit_1_1DecayTable" kindref="compound">DecayTable</ref> entry class. Holds the info on all decays of a given particle. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::DecayTable::Entry</label>
+        <link refid="classGambit_1_1DecayTable_1_1Entry"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>calculator</edgelabel>
+          <edgelabel>calculator_version</edgelabel>
+          <edgelabel>errors</edgelabel>
+          <edgelabel>warnings</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="Elements/include/gambit/Elements/decay_table.hpp" line="96" column="7" bodyfile="Elements/include/gambit/Elements/decay_table.hpp" bodystart="97" bodyend="366"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1abc5146d961b9f7a7b9e496ff1ab51529" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a1e837b67150494192ff99567961fb21a" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a8a342bc3d241d6e9d7a9ba1a153f5da0" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1aa4c18190171d834c2510cfa235f3f13d" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a66f31ea28e49186b09b4a3e5543b7e9e" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>BF_error</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a959d1b22f494f1aa13210cf527c70aa4" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>BF_error</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a453c20f02517da2721f2fb61ddac9413" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>BF_with_error</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1adbb1d891797772bf46cbabea2e7f9b36" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>BF_with_error</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1af650779f0a7ca6cc1f4157dbfd9a936a" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>calculator</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1ad29cba8f0a0d1afbad0b37927d540855" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>calculator_version</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a403b1292121289ff9355e5bba5c5e8e2" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>channels</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1abfa190a67d79b48963c0d95a15b4f70c" prot="private" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>check_BF_validity</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a528cb352bfd351f54fce71da822b2e81" prot="private" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>check_particles_exist</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a2154997a010163329c39e1ff6bfb1c6b" prot="private" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>construct_key</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a3d30ece01173a244e281a412b71b7bc6" prot="private" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>construct_key</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a99ec0e9035e7fe07174a351cd7a0dbce" prot="private" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>construct_key</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a81edd48b339c61122d2cd6c7ad836125" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>Entry</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1aaf2e97fcb136231c346fe32e581ad80e" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>Entry</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1aa220d2953a1e62c8bf9b97f7c121a3bb" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>Entry</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a0a445d13ab57c5b3259923e66443e657" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>Entry</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1ac378b940309a431198baf950098d9098" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>errors</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1ad25a441b1aeb66f4dd1e3a2e36d7849b" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>getSLHAea_block</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a802f6ffd18145eb7bf67326920bc00ea" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>getSLHAea_block</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a54751d1153f8f113a493cd5b79e85223" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>getSLHAea_block</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a755cc4214c13b548566d5dca8088018a" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>has_channel</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1ad7a9630ec0ba76bf7faa0739b1fb1ab8" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>has_channel</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a9c6007ac7d4e5685128b0889a4415eb2" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>has_channel</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a41e5afc0ecefd3968704be54ee1cd5d7" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>has_channel</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a828369f4bd767a9709b3d5f8c4542734" prot="private" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>init</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a738c63ad7ec92e2131422f4cffb19cb6" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>negative_error</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1ac6dfe14c41ccc52b284f0ef80bac1486" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>positive_error</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a6eb6fd0bdd55c7ac5f68d641dc414bdd" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>set_BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a2e8f39a168311163cdbe8b192d476d53" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>set_BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1adc7bc571dda0ce1f902b5139ebb8fe40" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>set_BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a01487d426e044c3063075aadccd8a251" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>set_BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a1270f65feb00954f78e103d9f2002531" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>sum_BF</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1a731572db4d755af8cf74e61ea039cbea" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>warnings</name></member>
+      <member refid="classGambit_1_1DecayTable_1_1Entry_1ac560b171c91f109bfea0b8369374628a" prot="public" virt="non-virtual"><scope>Gambit::DecayTable::Entry</scope><name>width_in_GeV</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

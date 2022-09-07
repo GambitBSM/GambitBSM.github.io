@@ -5,49 +5,95 @@
     <includes local="no">cmath</includes>
     <includes local="no">iostream</includes>
     <includes local="no">string</includes>
-    <includes local="yes">gambit/Utils/statistics.hpp</includes>
-    <includes local="yes">gambit/Utils/ascii_dict_reader.hpp</includes>
-    <includes local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
+    <includes refid="statistics_8hpp" local="yes">gambit/Utils/statistics.hpp</includes>
+    <includes refid="ascii__dict__reader_8hpp" local="yes">gambit/Utils/ascii_dict_reader.hpp</includes>
+    <includes refid="gambit__module__headers_8hpp" local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
     <includes refid="CosmoBit__rollcall_8hpp" local="yes">gambit/CosmoBit/CosmoBit_rollcall.hpp</includes>
     <incdepgraph>
-      <node id="16">
-        <label>gambit/Backends/backend_types/MontePythonLike.hpp</label>
-        <link refid="MontePythonLike_8hpp"/>
-        <childnode refid="17" relation="include">
+      <node id="113">
+        <label>gambit/Backends/backend_info.hpp</label>
+        <link refid="backend__info_8hpp"/>
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="112">
+        <label>gambit/Backends/backend_singleton.hpp</label>
+        <link refid="backend__singleton_8hpp"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>gambit/Backends/backend_types/MontePythonLike.hpp</label>
+        <link refid="MontePythonLike_8hpp"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>gambit/Backends/default_bossed_versions.hpp</label>
+        <link refid="default__bossed__versions_8hpp"/>
+      </node>
+      <node id="110">
+        <label>gambit/Backends/mathematica_variable.hpp</label>
+        <link refid="mathematica__variable_8hpp"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="8">
-        <label>gambit/CosmoBit/CosmoBit_rollcall.hpp</label>
-        <link refid="CosmoBit__rollcall_8hpp"/>
-        <childnode refid="9" relation="include">
+      <node id="115">
+        <label>gambit/Backends/python_variable.hpp</label>
+        <link refid="python__variable_8hpp"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="120">
+        <label>gambit/CosmoBit/CosmoBit_rollcall.hpp</label>
+        <link refid="CosmoBit__rollcall_8hpp"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
         <label>gambit/CosmoBit/CosmoBit_types.hpp</label>
         <link refid="CosmoBit__types_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="122" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="124" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -61,54 +107,924 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>gambit/Elements/daFunk.hpp</label>
+        <link refid="daFunk_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>gambit/Elements/decay_table.hpp</label>
+        <link refid="decay__table_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>gambit/Elements/flav_prediction.hpp</label>
+        <link refid="flav__prediction_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>gambit/Elements/gambit_module_headers.hpp</label>
+        <link refid="gambit__module__headers_8hpp"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>gambit/Elements/halo_types.hpp</label>
+        <link refid="halo__types_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>gambit/Elements/higgs_couplings_table.hpp</label>
+        <link refid="higgs__couplings__table_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>gambit/Elements/ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>gambit/Elements/module_macros_common.hpp</label>
+        <link refid="module__macros__common_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>gambit/Elements/module_macros_inmodule.hpp</label>
+        <link refid="module__macros__inmodule_8hpp"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>gambit/Elements/module_macros_inmodule_defs.hpp</label>
+        <link refid="module__macros__inmodule__defs_8hpp"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+        <link refid="mssm__slhahelp_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>gambit/Elements/safety_bucket.hpp</label>
+        <link refid="safety__bucket_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>gambit/Elements/shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
+        <link refid="slhaea__spec__helpers_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>gambit/Elements/sminputs.hpp</label>
+        <link refid="sminputs_8hpp"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>gambit/Elements/spectrum.hpp</label>
+        <link refid="spectrum_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>gambit/Elements/spectrum_helpers.hpp</label>
+        <link refid="spectrum__helpers_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>gambit/Elements/subspectrum.hpp</label>
+        <link refid="subspectrum_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>gambit/Elements/wimp_types.hpp</label>
+        <link refid="wimp__types_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="68">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>gambit/Models/partmap.hpp</label>
+        <link refid="partmap_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>gambit/Models/safe_param_map.hpp</label>
+        <link refid="safe__param__map_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>gambit/Utils/ascii_dict_reader.hpp</label>
+        <link refid="ascii__dict__reader_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="32">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>gambit/Utils/numerical_constants.hpp</label>
+        <link refid="numerical__constants_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>gambit/Utils/safebool.hpp</label>
+        <link refid="safebool_8hpp"/>
+      </node>
+      <node id="84">
+        <label>gambit/Utils/slhaea_helpers.hpp</label>
+        <link refid="slhaea__helpers_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gambit/Utils/statistics.hpp</label>
+        <link refid="statistics_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="118">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+        <link refid="threadsafe__rng_8hpp"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>SLHAea/slhaea.h</label>
+      </node>
+      <node id="50">
+        <label>algorithm</label>
+      </node>
+      <node id="47">
+        <label>array</label>
+      </node>
+      <node id="102">
+        <label>assert.h</label>
+      </node>
+      <node id="60">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="114">
+        <label>boost/algorithm/string/replace.hpp</label>
+      </node>
+      <node id="59">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="23">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="104">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="73">
+        <label>boost/preprocessor/comparison/greater.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="74">
+        <label>boost/preprocessor/control/iif.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="75">
+        <label>boost/preprocessor/repetition/enum.hpp</label>
+      </node>
+      <node id="76">
+        <label>boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="77">
+        <label>boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="86">
+        <label>boost/serialization/strong_typedef.hpp</label>
+      </node>
+      <node id="103">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="41">
+        <label>cassert</label>
+      </node>
+      <node id="89">
+        <label>cfloat</label>
+      </node>
+      <node id="56">
+        <label>chrono</label>
       </node>
       <node id="2">
         <label>cmath</label>
       </node>
-      <node id="7">
-        <label>gambit/Elements/gambit_module_headers.hpp</label>
+      <node id="11">
+        <label>complex</label>
       </node>
-      <node id="6">
-        <label>gambit/Utils/ascii_dict_reader.hpp</label>
+      <node id="49">
+        <label>cstdlib</label>
       </node>
-      <node id="15">
-        <label>gambit/Utils/numerical_constants.hpp</label>
+      <node id="10">
+        <label>cstring</label>
       </node>
-      <node id="5">
-        <label>gambit/Utils/statistics.hpp</label>
+      <node id="46">
+        <label>deque</label>
       </node>
-      <node id="14">
-        <label>gambit/Utils/util_types.hpp</label>
+      <node id="34">
+        <label>exception</label>
       </node>
-      <node id="17">
+      <node id="45">
+        <label>forward_list</label>
+      </node>
+      <node id="39">
+        <label>fstream</label>
+      </node>
+      <node id="117">
+        <label>gambit/Backends/backend_types_rollcall.hpp</label>
+      </node>
+      <node id="78">
+        <label>gambit/Elements/elements_extras.hpp</label>
+      </node>
+      <node id="58">
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="19">
+      <node id="106">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+      <node id="105">
+        <label>gsl/gsl_integration.h</label>
+      </node>
+      <node id="124">
         <label>gsl/gsl_spline.h</label>
       </node>
       <node id="3">
         <label>iostream</label>
       </node>
-      <node id="13">
+      <node id="66">
         <label>limits</label>
       </node>
-      <node id="12">
+      <node id="44">
+        <label>list</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="61">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="9">
+        <label>omp.h</label>
+      </node>
+      <node id="70">
+        <label>ostream</label>
+      </node>
+      <node id="119">
+        <label>random</label>
+      </node>
+      <node id="33">
+        <label>set</label>
+      </node>
+      <node id="8">
         <label>sstream</label>
+      </node>
+      <node id="80">
+        <label>stdexcept</label>
+      </node>
+      <node id="97">
+        <label>stdio.h</label>
+      </node>
+      <node id="98">
+        <label>stdlib.h</label>
       </node>
       <node id="4">
         <label>string</label>
       </node>
-      <node id="10">
+      <node id="122">
         <label>tuple</label>
       </node>
-      <node id="11">
+      <node id="40">
+        <label>type_traits</label>
+      </node>
+      <node id="14">
+        <label>unistd.h</label>
+      </node>
+      <node id="42">
+        <label>unordered_map</label>
+      </node>
+      <node id="43">
+        <label>unordered_set</label>
+      </node>
+      <node id="36">
+        <label>utility</label>
+      </node>
+      <node id="35">
         <label>vector</label>
+      </node>
+      <node id="64">
+        <label>yaml-cpp/yaml.h</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceGambit">Gambit</innernamespace>
@@ -186,9 +1102,9 @@
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/statistics.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/ascii_dict_reader.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/gambit_module_headers.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="statistics_8hpp" kindref="compound">gambit/Utils/statistics.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ascii__dict__reader_8hpp" kindref="compound">gambit/Utils/ascii_dict_reader.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gambit__module__headers_8hpp" kindref="compound">gambit/Elements/gambit_module_headers.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CosmoBit__rollcall_8hpp" kindref="compound">gambit/CosmoBit/CosmoBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
@@ -238,11 +1154,11 @@
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filename<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;priors_&quot;</highlight><highlight class="normal"><sp/>+<sp/>version<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.dat&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASCIIdictReader<sp/>reader(filename);</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Read<sp/>priors<sp/>for<sp/>Planck<sp/>nuisance<sp/>parameters<sp/>from<sp/>file<sp/>&apos;&quot;</highlight><highlight class="normal">&lt;&lt;filename&lt;&lt;</highlight><highlight class="stringliteral">&quot;&apos;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Read<sp/>priors<sp/>for<sp/>Planck<sp/>nuisance<sp/>parameters<sp/>from<sp/>file<sp/>&apos;&quot;</highlight><highlight class="normal">&lt;&lt;filename&lt;&lt;</highlight><highlight class="stringliteral">&quot;&apos;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::vector&lt;double&gt;<sp/>&gt;<sp/>tmp<sp/>=<sp/>reader.get_dict();</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Found<sp/>the<sp/>follwing<sp/>prior<sp/>for<sp/>planck<sp/>parameters<sp/>(<sp/>name<sp/>--<sp/>[modelcode,<sp/>mean,<sp/>sig]<sp/>)\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/>tmp<sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Found<sp/>the<sp/>follwing<sp/>prior<sp/>for<sp/>planck<sp/>parameters<sp/>(<sp/>name<sp/>--<sp/>[modelcode,<sp/>mean,<sp/>sig]<sp/>)\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/>tmp<sp/>&lt;&lt;<sp/><ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>modelcode<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ModelInUse(</highlight><highlight class="stringliteral">&quot;cosmo_nuisance_Planck_lite&quot;</highlight><highlight class="normal">))</highlight></codeline>
@@ -266,13 +1182,13 @@
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Caught<sp/>an<sp/>undefined<sp/>model<sp/>parameter.<sp/>The<sp/>planck<sp/>nuisance<sp/>parameter<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>key<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>is<sp/>not<sp/>known.\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Original<sp/>error<sp/>was:\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.what();</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,err.str());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,err.str());</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[iter-&gt;first]<sp/>=<sp/>std::vector&lt;double&gt;({iter-&gt;second[1],<sp/>iter-&gt;second[2]});</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Gaussian<sp/>prior<sp/>an<sp/>Planck<sp/>parameters<sp/>used<sp/>in<sp/>this<sp/>scan<sp/>(name<sp/>--<sp/>[mean,<sp/>sig]):\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>data<sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Data<sp/>for<sp/>Planck<sp/>nuisance<sp/>priors<sp/>read.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Gaussian<sp/>prior<sp/>an<sp/>Planck<sp/>parameters<sp/>used<sp/>in<sp/>this<sp/>scan<sp/>(name<sp/>--<sp/>[mean,<sp/>sig]):\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>data<sp/>&lt;&lt;<sp/><ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>LogTags::info<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Data<sp/>for<sp/>Planck<sp/>nuisance<sp/>priors<sp/>read.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Loop<sp/>over<sp/>all<sp/>parameters<sp/>and<sp/>apply<sp/>the<sp/>prior</highlight></codeline>
@@ -324,7 +1240,7 @@
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_lowl_TT_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>29.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>29)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"></highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -381,7 +1297,7 @@
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_lowl_EE_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>29.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>29)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"></highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -448,7 +1364,7 @@
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_lowl_TTEE_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>29.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>29)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"></highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -489,8 +1405,8 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;EE<sp/>lowl<sp/>Planck<sp/>likelihood<sp/>is<sp/>problematic,<sp/>with<sp/>value<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>EE;</highlight></codeline>
-<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/>err.str()<sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
-<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(err.str());</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>err.str()<sp/>&lt;&lt;<sp/><ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(err.str());</highlight></codeline>
 <codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tmp_result<sp/>+=<sp/>EE;</highlight></codeline>
 <codeline lineno="344"><highlight class="normal"></highlight></codeline>
@@ -526,7 +1442,7 @@
 <codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_highl_TT_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2508.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2508)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="379"><highlight class="normal"></highlight></codeline>
 <codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -603,7 +1519,7 @@
 <codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_highl_TT_lite_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2508.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2508)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="456"><highlight class="normal"></highlight></codeline>
 <codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -664,7 +1580,7 @@
 <codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_highl_TTTEEE_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2508.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2508)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="517"><highlight class="normal"></highlight></codeline>
 <codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -767,7 +1683,7 @@
 <codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_highl_TTTEEE_lite_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2508.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2508)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="620"><highlight class="normal"></highlight></codeline>
 <codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -836,7 +1752,7 @@
 <codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_lensing_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2500.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2500)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="689"><highlight class="normal"></highlight></codeline>
 <codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -898,7 +1814,7 @@
 <codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_lensing_marged_2018_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2500.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="747"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2500)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="751"><highlight class="normal"></highlight></codeline>
 <codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -957,7 +1873,7 @@
 <codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_lowl_TT_2015_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>29.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>29)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="809"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="810"><highlight class="normal"></highlight></codeline>
 <codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -1021,7 +1937,7 @@
 <codeline lineno="869"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_lowl_TEB_2015_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>29.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="871"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>29)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="872"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="873"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="874"><highlight class="normal"></highlight></codeline>
 <codeline lineno="875"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -1088,7 +2004,7 @@
 <codeline lineno="936"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_highl_TT_2015_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2508.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="937"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2508)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="939"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="939"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="940"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="941"><highlight class="normal"></highlight></codeline>
 <codeline lineno="942"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -1163,7 +2079,7 @@
 <codeline lineno="1011"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_highl_TT_lite_2015_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2508.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1012"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1013"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2508)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1014"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="1014"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="1015"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1016"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1017"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -1224,7 +2140,7 @@
 <codeline lineno="1072"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_highl_TTTEEE_2015_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2508.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1073"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1074"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2508)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1075"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="1075"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="1076"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1077"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1078"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -1327,7 +2243,7 @@
 <codeline lineno="1175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_highl_TTTEEE_lite_2015_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2508.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2508)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="1178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="1179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1180"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -1396,7 +2312,7 @@
 <codeline lineno="1244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>\&quot;function_Planck_lensing_2015_loglike\&quot;<sp/>the<sp/>Cl<sp/>need<sp/>to<sp/>be<sp/>calculated<sp/>for<sp/>l<sp/>up<sp/>to<sp/>2048.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>given<sp/>Cl<sp/>spectra<sp/>do<sp/>not<sp/>provide<sp/>this<sp/>range.<sp/>Please<sp/>adjust<sp/>the<sp/>input<sp/>for<sp/>CLASS.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(\&quot;l_max_scalars\&quot;<sp/>should<sp/>be<sp/>at<sp/>least<sp/>2048)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="1247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CosmoBit_error().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
 <codeline lineno="1248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1249"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>

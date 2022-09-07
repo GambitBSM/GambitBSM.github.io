@@ -467,7 +467,7 @@
 <para>Rollcall header for module ObjectivesBit.</para>
 <para>Compile-time registration of available observables and likelihoods, as well as their dependencies.</para>
 <para>Add to this if you want to add an observable or likelihood to this module.</para>
-<para>Don&apos;t put typedefs or other type definitions in this file; see Elements/include/gambit/Elements/types_rollcall.hpp for further instructions on how to add new types.</para>
+<para>Don&apos;t put typedefs or other type definitions in this file; see <ref refid="types__rollcall_8hpp" kindref="compound">Elements/include/gambit/Elements/types_rollcall.hpp</ref> for further instructions on how to add new types.</para>
 <para><hruler/>
 </para>
 <para>Authors (add name and date if you modify):</para>
@@ -513,10 +513,10 @@
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ObjectivesBit_rollcall_hpp__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODULE<sp/>ObjectivesBit</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal">START_MODULE</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="module__macros__incore_8hpp_1af4bd70b6b79b5dbc96eb177423fd8781" kindref="member">START_MODULE</ref></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>gaussian</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>gaussian</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -530,7 +530,7 @@
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>rosenbrock</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>rosenbrock</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -544,7 +544,7 @@
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>himmelblau</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>himmelblau</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_2d)</highlight></codeline>
@@ -552,7 +552,7 @@
 <codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>mccormick</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>mccormick</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_2d)</highlight></codeline>
@@ -560,7 +560,7 @@
 <codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>ackley</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>ackley</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -574,7 +574,7 @@
 <codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>eggbox</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>eggbox</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -588,7 +588,7 @@
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>rastrigin</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>rastrigin</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -602,7 +602,7 @@
 <codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>beale</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>beale</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_2d)</highlight></codeline>
@@ -610,7 +610,7 @@
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>shells</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>shells</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -624,7 +624,7 @@
 <codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>styblinski_tang</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>styblinski_tang</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -638,7 +638,7 @@
 <codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>easom</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>easom</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_2d)</highlight></codeline>
@@ -646,7 +646,7 @@
 <codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>tf1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>tf1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -660,7 +660,7 @@
 <codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>tf2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>tf2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -674,7 +674,7 @@
 <codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
 <codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>tf3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>tf3</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>
@@ -688,7 +688,7 @@
 <codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>tf4</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>tf4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(trivial_1d,</highlight></codeline>

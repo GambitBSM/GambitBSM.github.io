@@ -4,8 +4,7 @@ description: 'A class for holding the production cross-section for final state i
 
 ---
 
-
-
+# Gambit::ColliderBit::PID_pair_xsec_container
 
 
 
@@ -29,10 +28,10 @@ Inherits from [Gambit::ColliderBit::xsec_container](/documentation/code/classes/
 | void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-average-xsec)**(const [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) & other) |
 | void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-sum-xsecs)**(double other_xsec, double other_xsecerr)<br>Sum cross-sections and add errors in quadrature.  |
 | void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-sum-xsecs)**(const [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) & other) |
-| const PID_pair & | **[pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-pid-pair)**() const<br>Return the PID pair.  |
-| void | **[set_pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-set-pid-pair)**(const PID_pair & pid_pair_in)<br>Set the PID pair.  |
-| const std::vector< PID_pair > & | **[pid_pairs_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-pid-pairs-sharing-xsec)**() const |
-| void | **[register_pid_pair_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-register-pid-pair-sharing-xsec)**(PID_pair pid_pair_in)<br>Add a PID pair to the list of PID pairs sharing this cross-section.  |
+| const [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) & | **[pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-pid-pair)**() const<br>Return the PID pair.  |
+| void | **[set_pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-set-pid-pair)**(const [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) & pid_pair_in)<br>Set the PID pair.  |
+| const std::vector< [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) > & | **[pid_pairs_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-pid-pairs-sharing-xsec)**() const |
+| void | **[register_pid_pair_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-register-pid-pair-sharing-xsec)**([PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) pid_pair_in)<br>Add a PID pair to the list of PID pairs sharing this cross-section.  |
 | const std::vector< int > & | **[related_processes](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-related-processes)**() const<br>Return the list of process codes related to this cross-section.  |
 | void | **[register_related_process](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-register-related-process)**(int process_code_in)<br>Add a process code to the list of processes related to this cross-section.  |
 
@@ -200,4 +199,4 @@ Add a process code to the list of processes related to this cross-section.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

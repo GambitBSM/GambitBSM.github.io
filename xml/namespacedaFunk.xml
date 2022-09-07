@@ -1,0 +1,1065 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespacedaFunk" kind="namespace" language="C++">
+    <compoundname>daFunk</compoundname>
+    <innerclass refid="classdaFunk_1_1Bottle" prot="public">daFunk::Bottle</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkBase" prot="public">daFunk::FunkBase</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkBound" prot="public">daFunk::FunkBound</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkConst" prot="public">daFunk::FunkConst</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkDelta" prot="public">daFunk::FunkDelta</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkDerived" prot="public">daFunk::FunkDerived</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkFunc" prot="public">daFunk::FunkFunc</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkFuncM" prot="public">daFunk::FunkFuncM</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkIfElse" prot="public">daFunk::FunkIfElse</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkIntegrate__gsl1d" prot="public">daFunk::FunkIntegrate_gsl1d</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkInterp" prot="public">daFunk::FunkInterp</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkMath__umin" prot="public">daFunk::FunkMath_umin</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkPlain" prot="public">daFunk::FunkPlain</innerclass>
+    <innerclass refid="classdaFunk_1_1FunkVar" prot="public">daFunk::FunkVar</innerclass>
+    <innerclass refid="structdaFunk_1_1index__list" prot="public">daFunk::index_list</innerclass>
+    <innerclass refid="classdaFunk_1_1livingVector" prot="public">daFunk::livingVector</innerclass>
+    <innerclass refid="classdaFunk_1_1ThrowError" prot="public">daFunk::ThrowError</innerclass>
+    <innernamespace refid="namespacedaFunk_1_1detail">daFunk::detail</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="daFunk_8hpp_1a40a9dc885c207a30bcd1491997fd463c" prot="public" static="no">
+        <type>shared_ptr&lt; <ref refid="classdaFunk_1_1FunkBase" kindref="compound">FunkBase</ref> &gt;</type>
+        <definition>typedef shared_ptr&lt;FunkBase&gt; daFunk::Funk</definition>
+        <argsstring></argsstring>
+        <name>Funk</name>
+        <qualifiedname>daFunk::Funk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="115" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1a1694fcbf0a15a923f6eb40ed89ab164d" prot="public" static="no">
+        <type>shared_ptr&lt; <ref refid="classdaFunk_1_1FunkBound" kindref="compound">FunkBound</ref> &gt;</type>
+        <definition>typedef shared_ptr&lt;FunkBound&gt; daFunk::BoundFunk</definition>
+        <argsstring></argsstring>
+        <name>BoundFunk</name>
+        <qualifiedname>daFunk::BoundFunk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="116" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1a6f3536b6730893349a1c73061b0b84f2" prot="public" static="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>typedef std::vector&lt;std::string&gt; daFunk::ArgsType</definition>
+        <argsstring></argsstring>
+        <name>ArgsType</name>
+        <qualifiedname>daFunk::ArgsType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="117" column="25" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1ab393958b3a83cb7d69e0f3944c4589a8" prot="public" static="no">
+        <type>std::map&lt; std::string, std::vector&lt; std::pair&lt; Funk, Funk &gt; &gt; &gt;</type>
+        <definition>typedef std::map&lt;std::string, std::vector&lt;std::pair&lt;Funk, Funk&gt; &gt; &gt; daFunk::Singularities</definition>
+        <argsstring></argsstring>
+        <name>Singularities</name>
+        <qualifiedname>daFunk::Singularities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="118" column="22" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1ab3340c5cc3a12d48186af964eb4cacdc" prot="public" static="no">
+        <type>double(*</type>
+        <definition>typedef double(* daFunk::PlainPtr1) (double &amp;)</definition>
+        <argsstring>)(double &amp;)</argsstring>
+        <name>PlainPtr1</name>
+        <qualifiedname>daFunk::PlainPtr1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="122" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1acfa5d971c0b09d2eb144d814ecbac10d" prot="public" static="no">
+        <type>double(*</type>
+        <definition>typedef double(* daFunk::PlainPtr2) (double &amp;, double &amp;)</definition>
+        <argsstring>)(double &amp;, double &amp;)</argsstring>
+        <name>PlainPtr2</name>
+        <qualifiedname>daFunk::PlainPtr2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="123" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1abff3388c429ec8095774a56abb19468b" prot="public" static="no">
+        <type>double(*</type>
+        <definition>typedef double(* daFunk::PlainPtr3) (double &amp;, double &amp;, double &amp;)</definition>
+        <argsstring>)(double &amp;, double &amp;, double &amp;)</argsstring>
+        <name>PlainPtr3</name>
+        <qualifiedname>daFunk::PlainPtr3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="124" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1af26eaa39171845b7c0eb081962319098" prot="public" static="no">
+        <type>double(*</type>
+        <definition>typedef double(* daFunk::PlainPtr4) (double &amp;, double &amp;, double &amp;, double &amp;)</definition>
+        <argsstring>)(double &amp;, double &amp;, double &amp;, double &amp;)</argsstring>
+        <name>PlainPtr4</name>
+        <qualifiedname>daFunk::PlainPtr4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="125" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1a5b8694f3e20b210b05b5f93fa929eb39" prot="public" static="no">
+        <type>std::pair&lt; double(*)(double, void *), void * &gt;</type>
+        <definition>typedef std::pair&lt;double(*)(double,void*), void*&gt; daFunk::PlainPtrs1</definition>
+        <argsstring></argsstring>
+        <name>PlainPtrs1</name>
+        <qualifiedname>daFunk::PlainPtrs1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="129" column="23" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1aef54a22775dd4b4fe65ff25b971d767f" prot="public" static="no">
+        <type>std::pair&lt; double(*)(double, double, void *), void * &gt;</type>
+        <definition>typedef std::pair&lt;double(*)(double,double,void*), void*&gt; daFunk::PlainPtrs2</definition>
+        <argsstring></argsstring>
+        <name>PlainPtrs2</name>
+        <qualifiedname>daFunk::PlainPtrs2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="130" column="23" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1a3617402e675ec6853f1fb0c724a6f24a" prot="public" static="no">
+        <type>std::pair&lt; double(*)(double, double, double, void *), void * &gt;</type>
+        <definition>typedef std::pair&lt;double(*)(double,double,double,void*), void*&gt; daFunk::PlainPtrs3</definition>
+        <argsstring></argsstring>
+        <name>PlainPtrs3</name>
+        <qualifiedname>daFunk::PlainPtrs3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="131" column="23" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="daFunk_8hpp_1ab54f71f0d006111ddd90af9c237b30c8" prot="public" static="no">
+        <type>std::pair&lt; double(*)(double, double, double, double, void *), void * &gt;</type>
+        <definition>typedef std::pair&lt;double(*)(double,double,double,double,void*), void*&gt; daFunk::PlainPtrs4</definition>
+        <argsstring></argsstring>
+        <name>PlainPtrs4</name>
+        <qualifiedname>daFunk::PlainPtrs4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="132" column="23" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="daFunk_8hpp_1a716dce810ac0c78d99e08a482e12f662" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; daFunk::vec</definition>
+        <argsstring>(std::vector&lt; T &gt; vector)</argsstring>
+        <name>vec</name>
+        <qualifiedname>daFunk::vec</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="142" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a241e1525168fdd86ef3290c082ff4b12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; daFunk::vec</definition>
+        <argsstring>(std::vector&lt; T &gt; vector, T value, Args... args)</argsstring>
+        <name>vec</name>
+        <qualifiedname>daFunk::vec</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt;</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="147" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1ab2a2fdb9f250ae6c4812cb086da58f21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; daFunk::vec</definition>
+        <argsstring>(T value, Args... args)</argsstring>
+        <name>vec</name>
+        <qualifiedname>daFunk::vec</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="153" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="153" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a444a28eb3ceeaaeba488bc8332026d38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; daFunk::vec</definition>
+        <argsstring>()</argsstring>
+        <name>vec</name>
+        <qualifiedname>daFunk::vec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="161" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a77727d5aaae67c78aebc5183d0352dd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; daFunk::linspace</definition>
+        <argsstring>(double x0, double x1, unsigned int n)</argsstring>
+        <name>linspace</name>
+        <qualifiedname>daFunk::linspace</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="172" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="172" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a6e3bcaa01d5b80d026fc9d58693310c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; daFunk::logspace</definition>
+        <argsstring>(double x0, double x1, unsigned int n)</argsstring>
+        <name>logspace</name>
+        <qualifiedname>daFunk::logspace</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="186" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="186" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1ae39c6dd52ec35762666c4f5764fd662a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool daFunk::args_match</definition>
+        <argsstring>(ArgsType args1, ArgsType args2)</argsstring>
+        <name>args_match</name>
+        <qualifiedname>daFunk::args_match</qualifiedname>
+        <param>
+          <type>ArgsType</type>
+          <declname>args1</declname>
+        </param>
+        <param>
+          <type>ArgsType</type>
+          <declname>args2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="204" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="204" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a7dec4022f6084b28b978671cd4644f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string daFunk::args_string</definition>
+        <argsstring>(ArgsType args)</argsstring>
+        <name>args_string</name>
+        <qualifiedname>daFunk::args_string</qualifiedname>
+        <param>
+          <type>ArgsType</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="216" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="216" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a6977c25f019965ceed5686534f504189" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArgsType</type>
+        <definition>ArgsType daFunk::joinArgs</definition>
+        <argsstring>(ArgsType args1, ArgsType args2)</argsstring>
+        <name>joinArgs</name>
+        <qualifiedname>daFunk::joinArgs</qualifiedname>
+        <param>
+          <type>ArgsType</type>
+          <declname>args1</declname>
+        </param>
+        <param>
+          <type>ArgsType</type>
+          <declname>args2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="228" column="21" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="228" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a9778dd9a81ad099120228030c896a41d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArgsType</type>
+        <definition>ArgsType daFunk::eraseArg</definition>
+        <argsstring>(ArgsType args, std::string arg)</argsstring>
+        <name>eraseArg</name>
+        <qualifiedname>daFunk::eraseArg</qualifiedname>
+        <param>
+          <type>ArgsType</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="236" column="21" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="236" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1abb1dad2d155fb2b8f507de2e444f8b21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Singularities</type>
+        <definition>Singularities daFunk::joinSingl</definition>
+        <argsstring>(Singularities s1, Singularities s2)</argsstring>
+        <name>joinSingl</name>
+        <qualifiedname>daFunk::joinSingl</qualifiedname>
+        <param>
+          <type>Singularities</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>Singularities</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="243" column="26" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="243" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1afa5cbde66081b24ae91317f1658d78f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::one</definition>
+        <argsstring>(Args... argss)</argsstring>
+        <name>one</name>
+        <qualifiedname>daFunk::one</qualifiedname>
+        <param>
+          <type>Args...</type>
+          <declname>argss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="602" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="602" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a8bb2d507705c05f68015e730dcaa8799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::zero</definition>
+        <argsstring>(Args... argss)</argsstring>
+        <name>zero</name>
+        <qualifiedname>daFunk::zero</qualifiedname>
+        <param>
+          <type>Args...</type>
+          <declname>argss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="604" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="604" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1af50239cd745e4cba06fa0fc3ba24f58f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::cnst</definition>
+        <argsstring>(double x, Args... argss)</argsstring>
+        <name>cnst</name>
+        <qualifiedname>daFunk::cnst</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>argss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="606" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="606" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1ad4eb63a7e532db58d2506e84c6e72e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>funcargs</declname>
+            <defname>funcargs</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::func</definition>
+        <argsstring>(double(*f)(funcargs...), Args... args)</argsstring>
+        <name>func</name>
+        <qualifiedname>daFunk::func</qualifiedname>
+        <param>
+          <type>double(*)(funcargs...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="768" column="10" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="768" bodyend="770"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1ae40c3a873cd81296e60b2d0ae149cf59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>funcargs</declname>
+            <defname>funcargs</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::func_fromThreadsafe</definition>
+        <argsstring>(double(*f)(funcargs...), Args... args)</argsstring>
+        <name>func_fromThreadsafe</name>
+        <qualifiedname>daFunk::func_fromThreadsafe</qualifiedname>
+        <param>
+          <type>double(*)(funcargs...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="773" column="10" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="773" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a9d0cbd95ba23559cb62ad62030f6a56d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename O</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>funcargs</declname>
+            <defname>funcargs</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::funcM</definition>
+        <argsstring>(O *obj, double(O::*f)(funcargs...), Args... args)</argsstring>
+        <name>funcM</name>
+        <qualifiedname>daFunk::funcM</qualifiedname>
+        <param>
+          <type>O *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>double(O::*)(funcargs...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="861" column="10" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="861" bodyend="863"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a5b581a3244af2e1499e2f2674294cd05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename O</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>funcargs</declname>
+            <defname>funcargs</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::funcM</definition>
+        <argsstring>(shared_ptr&lt; O &gt; obj, double(O::*f)(funcargs...), Args... args)</argsstring>
+        <name>funcM</name>
+        <qualifiedname>daFunk::funcM</qualifiedname>
+        <param>
+          <type>shared_ptr&lt; O &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>double(O::*)(funcargs...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="865" column="10" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="865" bodyend="867"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a40f7f299d73ed5788423f5c1b83c9367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename O</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>funcargs</declname>
+            <defname>funcargs</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::funcM_fromThreadsafe</definition>
+        <argsstring>(O *obj, double(O::*f)(funcargs...), Args... args)</argsstring>
+        <name>funcM_fromThreadsafe</name>
+        <qualifiedname>daFunk::funcM_fromThreadsafe</qualifiedname>
+        <param>
+          <type>O *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>double(O::*)(funcargs...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="871" column="10" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="871" bodyend="873"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1af5148a9b8943f4410becd13a84329e99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename O</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>funcargs</declname>
+            <defname>funcargs</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Funk</type>
+        <definition>Funk daFunk::funcM_fromThreadsafe</definition>
+        <argsstring>(shared_ptr&lt; O &gt; obj, double(O::*f)(funcargs...), Args... args)</argsstring>
+        <name>funcM_fromThreadsafe</name>
+        <qualifiedname>daFunk::funcM_fromThreadsafe</qualifiedname>
+        <param>
+          <type>shared_ptr&lt; O &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>double(O::*)(funcargs...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="875" column="10" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="875" bodyend="877"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a1580bc4cbfdd755b37f5752897e3a235" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Funk</type>
+        <definition>Funk daFunk::delta</definition>
+        <argsstring>(std::string arg, double pos, double width)</argsstring>
+        <name>delta</name>
+        <qualifiedname>daFunk::delta</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="901" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="901" bodyend="901"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a16ef9ff4d6938827b2ce212a9e0a1301" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Funk</type>
+        <definition>Funk daFunk::var</definition>
+        <argsstring>(std::string arg)</argsstring>
+        <name>var</name>
+        <qualifiedname>daFunk::var</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="920" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="920" bodyend="920"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a9242161bae1d20ab5e9af4e042491c66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Funk</type>
+        <definition>Funk daFunk::operator-</definition>
+        <argsstring>(Funk f)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>daFunk::operator-</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1152" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1152" bodyend="1152"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a7903caec8d55705543cad9520baa16ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>shared_ptr&lt; <ref refid="classdaFunk_1_1FunkInterp" kindref="compound">FunkInterp</ref> &gt;</type>
+        <definition>shared_ptr&lt; FunkInterp &gt; daFunk::interp</definition>
+        <argsstring>(T f, std::vector&lt; double &gt; x, std::vector&lt; double &gt; y)</argsstring>
+        <name>interp</name>
+        <qualifiedname>daFunk::interp</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1348" column="35" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1348" bodyend="1348"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1ac18b21f33a33a80cb7306cfaf10714d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Funk</type>
+        <definition>Funk daFunk::ifelse</definition>
+        <argsstring>(Funk f, Funk g, Funk h)</argsstring>
+        <name>ifelse</name>
+        <qualifiedname>daFunk::ifelse</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Funk</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>Funk</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1372" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1372" bodyend="1372"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a100c5c53758890a18a6e0d41661fe5c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Funk</type>
+        <definition>Funk daFunk::ifelse</definition>
+        <argsstring>(Funk f, double g, Funk h)</argsstring>
+        <name>ifelse</name>
+        <qualifiedname>daFunk::ifelse</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>Funk</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1373" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1373" bodyend="1373"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a62032385bfe26a8ca853e0eec84f5011" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Funk</type>
+        <definition>Funk daFunk::ifelse</definition>
+        <argsstring>(Funk f, double g, double h)</argsstring>
+        <name>ifelse</name>
+        <qualifiedname>daFunk::ifelse</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1374" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1374" bodyend="1374"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1ac0d2aeee1bd569998036365ba1cafeb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Funk</type>
+        <definition>Funk daFunk::ifelse</definition>
+        <argsstring>(Funk f, Funk g, double h)</argsstring>
+        <name>ifelse</name>
+        <qualifiedname>daFunk::ifelse</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Funk</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1375" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1375" bodyend="1375"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a66c6385eb2d72288e644988a8fb4e56c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Funk</type>
+        <definition>Funk daFunk::throwError</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>throwError</name>
+        <qualifiedname>daFunk::throwError</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1410" column="17" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1410" bodyend="1410"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1ac586976b992c3279823e0d7dfbc337dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type>shared_ptr&lt; <ref refid="classdaFunk_1_1FunkIntegrate__gsl1d" kindref="compound">FunkIntegrate_gsl1d</ref> &gt;</type>
+        <definition>shared_ptr&lt; FunkIntegrate_gsl1d &gt; daFunk::getIntegrate_gsl1d</definition>
+        <argsstring>(Funk fptr, std::string arg, T1 x1, T2 x2)</argsstring>
+        <name>getIntegrate_gsl1d</name>
+        <qualifiedname>daFunk::getIntegrate_gsl1d</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>fptr</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>T1</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>T2</type>
+          <declname>x2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1707" column="23" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1707" bodyend="1707"/>
+      </memberdef>
+      <memberdef kind="function" id="daFunk_8hpp_1a31f6ab25ccb810382baa6ff093327377" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; daFunk::augmentSingl</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;xgrid, Funk f, int N=100, double sigma=3)</argsstring>
+        <name>augmentSingl</name>
+        <qualifiedname>daFunk::augmentSingl</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>xgrid</declname>
+        </param>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+          <defval>100</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1713" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1713" bodyend="1751"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Elements/include/gambit/Elements/daFunk.hpp" line="82" column="1"/>
+  </compounddef>
+</doxygen>

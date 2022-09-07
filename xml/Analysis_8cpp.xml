@@ -21,21 +21,19 @@
         <link refid="AnalysisData_8hpp"/>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
         <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
@@ -49,8 +47,10 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>gambit/ColliderBit/analyses/EventCounter.hpp</label>
         <link refid="EventCounter_8hpp"/>
         <childnode refid="5" relation="include">
@@ -68,43 +68,50 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="7">
+        <label>gambit/Utils/begin_ignore_warnings_eigen.hpp</label>
+        <link refid="begin__ignore__warnings__eigen_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gambit/Utils/end_ignore_warnings.hpp</label>
+        <link refid="end__ignore__warnings_8hpp"/>
+      </node>
+      <node id="9">
         <label>Eigen/Core</label>
       </node>
       <node id="3">
         <label>HEPUtils/Event.h</label>
       </node>
-      <node id="18">
+      <node id="19">
         <label>algorithm</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>cfloat</label>
       </node>
-      <node id="13">
+      <node id="14">
         <label>cmath</label>
       </node>
-      <node id="7">
-        <label>gambit/Utils/begin_ignore_warnings_eigen.hpp</label>
+      <node id="8">
+        <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="9">
-        <label>gambit/Utils/end_ignore_warnings.hpp</label>
-      </node>
-      <node id="17">
+      <node id="18">
         <label>iomanip</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>iostream</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>limits</label>
       </node>
-      <node id="10">
+      <node id="11">
         <label>map</label>
       </node>
-      <node id="16">
+      <node id="17">
         <label>memory</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>sstream</label>
       </node>
       <node id="5">
@@ -206,14 +213,14 @@
 <codeline lineno="65"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Analysis::set_luminosity(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lumi)<sp/>{<sp/>_luminosity_is_set<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>_luminosity<sp/>=<sp/>lumi;<sp/>}</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>the<sp/>analysis<sp/>name</highlight></codeline>
-<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Analysis::set_analysis_name(str<sp/>aname)</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Analysis::set_analysis_name(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>aname)</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_analysis_name<sp/>=<sp/>aname;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_results.analysis_name<sp/>=<sp/>_analysis_name;</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>analysis<sp/>name</highlight></codeline>
-<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>Analysis::analysis_name()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_analysis_name;<sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>Analysis::analysis_name()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_analysis_name;<sp/>}</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>collection<sp/>of<sp/>SignalRegionData<sp/>for<sp/>likelihood<sp/>computation.</highlight></codeline>
 <codeline lineno="78"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AnalysisData&amp;<sp/>Analysis::get_results()</highlight></codeline>
@@ -227,7 +234,7 @@
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>An<sp/>overload<sp/>of<sp/>get_results()<sp/>with<sp/>some<sp/>additional<sp/>consistency<sp/>checks.</highlight></codeline>
-<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AnalysisData&amp;<sp/>Analysis::get_results(str&amp;<sp/>warning)</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AnalysisData&amp;<sp/>Analysis::get_results(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>warning)</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>warning<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/>_luminosity_is_set)</highlight></codeline>
@@ -248,7 +255,7 @@
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>An<sp/>overload<sp/>of<sp/>get_results_ptr()<sp/>with<sp/>some<sp/>additional<sp/>consistency<sp/>checks.</highlight></codeline>
-<codeline lineno="110"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>AnalysisData*<sp/>Analysis::get_results_ptr(str&amp;<sp/>warning)</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>AnalysisData*<sp/>Analysis::get_results_ptr(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>warning)</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>get_results()<sp/>to<sp/>make<sp/>sure<sp/>everything<sp/>has<sp/>been<sp/>collected<sp/>properly,<sp/>but<sp/>ignore<sp/>the<sp/>return<sp/>value</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>get_results(warning);</highlight></codeline>

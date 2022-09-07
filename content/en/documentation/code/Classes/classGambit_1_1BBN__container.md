@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::BBN_container
 
 
 
@@ -23,21 +22,21 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/#function-bbn-container)**()<br>Constructor.  |
 | void | **[init_arr_size](/documentation/code/classes/classgambit_1_1bbn__container/#function-init-arr-size)**(size_t nnuc)<br>Initialize sizes of vectors (get NNUC, number of computed element abundances, from AlterBBN)  |
-| void | **[set_abund_map](/documentation/code/classes/classgambit_1_1bbn__container/#function-set-abund-map)**(map_str_int map_in)<br>Initialise the translation map from element name to position in abundance vector.  |
+| void | **[set_abund_map](/documentation/code/classes/classgambit_1_1bbn__container/#function-set-abund-map)**([map_str_int](/documentation/code/namespaces/namespacegambit/#typedef-map-str-int) map_in)<br>Initialise the translation map from element name to position in abundance vector.  |
 | void | **[set_BBN_abund](/documentation/code/classes/classgambit_1_1bbn__container/#function-set-bbn-abund)**(int pos, double val)<br>Setter functions for abundance vector.  |
-| void | **[set_BBN_abund](/documentation/code/classes/classgambit_1_1bbn__container/#function-set-bbn-abund)**(int pos, triplet< double > val) |
+| void | **[set_BBN_abund](/documentation/code/classes/classgambit_1_1bbn__container/#function-set-bbn-abund)**(int pos, [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > val) |
 | void | **[set_BBN_covmat](/documentation/code/classes/classgambit_1_1bbn__container/#function-set-bbn-covmat)**(int row, int col, double val)<br>Setter function for covariance matrix.  |
 | size_t | **[get_NNUC](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-nnuc)**() const<br>Global parameter in AlterBBN; holds number of computed element abundances.  |
 | const std::map< std::string, int > & | **[get_abund_map](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-abund-map)**() const<br>Getter for map from isotope names to position in BBN_abundance vector.  |
 | double | **[get_BBN_abund](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund)**(int pos) const<br>Getter for abundance.  |
 | double | **[get_BBN_abund_upper](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund-upper)**(int pos) const |
 | double | **[get_BBN_abund_lower](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund-lower)**(int pos) const |
-| double | **[get_BBN_abund](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund)**(str iso) const<br>Getter for abundance.  |
-| double | **[get_BBN_abund_upper](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund-upper)**(str iso) const |
-| double | **[get_BBN_abund_lower](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund-lower)**(str iso) const |
+| double | **[get_BBN_abund](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) iso) const<br>Getter for abundance.  |
+| double | **[get_BBN_abund_upper](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund-upper)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) iso) const |
+| double | **[get_BBN_abund_lower](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-abund-lower)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) iso) const |
 | double | **[get_BBN_covmat](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-bbn-covmat)**(int row, int col) const<br>Getter for covariance matrix.  |
-| void | **[set_active_isotopes](/documentation/code/classes/classgambit_1_1bbn__container/#function-set-active-isotopes)**(std::set< str > isos)<br>Setter for active isotopes.  |
-| const std::set< str > & | **[get_active_isotopes](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-active-isotopes)**() const<br>Getter for active isotopes.  |
+| void | **[set_active_isotopes](/documentation/code/classes/classgambit_1_1bbn__container/#function-set-active-isotopes)**(std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > isos)<br>Setter for active isotopes.  |
+| const std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & | **[get_active_isotopes](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-active-isotopes)**() const<br>Getter for active isotopes.  |
 | const std::set< int > & | **[get_active_isotope_indices](/documentation/code/classes/classgambit_1_1bbn__container/#function-get-active-isotope-indices)**() const<br>Getter for indices of active isotopes in BBN_abundance vector.  |
 | bool | **[has_BBN_abund_upper](/documentation/code/classes/classgambit_1_1bbn__container/#function-has-bbn-abund-upper)**() const<br>Check whether there is any non-zero upper or lower abundance.  |
 | bool | **[has_BBN_abund_lower](/documentation/code/classes/classgambit_1_1bbn__container/#function-has-bbn-abund-lower)**() const |
@@ -240,4 +239,4 @@ inline bool has_BBN_abund_lower() const
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

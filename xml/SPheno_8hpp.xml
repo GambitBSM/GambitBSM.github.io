@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="SPheno_8hpp" kind="file" language="C++">
     <compoundname>SPheno.hpp</compoundname>
-    <includes local="yes">gambit/Utils/util_types.hpp</includes>
+    <includes refid="util__types_8hpp" local="yes">gambit/Utils/util_types.hpp</includes>
     <incdepgraph>
       <node id="1">
         <label>SPheno.hpp</label>
@@ -10,8 +10,254 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
+      <node id="34">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="12">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="29">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="19">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="10">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
       <node id="2">
         <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>array</label>
+      </node>
+      <node id="20">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="15">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="14">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="24">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="22">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="23">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="13">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="39">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>complex</label>
+      </node>
+      <node id="7">
+        <label>cstring</label>
+      </node>
+      <node id="44">
+        <label>deque</label>
+      </node>
+      <node id="31">
+        <label>exception</label>
+      </node>
+      <node id="43">
+        <label>forward_list</label>
+      </node>
+      <node id="37">
+        <label>fstream</label>
+      </node>
+      <node id="36">
+        <label>iostream</label>
+      </node>
+      <node id="42">
+        <label>list</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>omp.h</label>
+      </node>
+      <node id="30">
+        <label>set</label>
+      </node>
+      <node id="5">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="38">
+        <label>type_traits</label>
+      </node>
+      <node id="11">
+        <label>unistd.h</label>
+      </node>
+      <node id="40">
+        <label>unordered_map</label>
+      </node>
+      <node id="41">
+        <label>unordered_set</label>
+      </node>
+      <node id="33">
+        <label>utility</label>
+      </node>
+      <node id="32">
+        <label>vector</label>
       </node>
     </incdepgraph>
     <innerclass refid="structGambit_1_1particle2" prot="public">Gambit::particle2</innerclass>
@@ -61,7 +307,7 @@
 <codeline lineno="20"><highlight class="comment">///</highlight></codeline>
 <codeline lineno="21"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
 <codeline lineno="22"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/util_types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__types_8hpp" kindref="compound">gambit/Utils/util_types.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__SPHENO_types_hpp__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SPHENO_types_hpp__</highlight><highlight class="normal"></highlight></codeline>
@@ -113,13 +359,13 @@
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Freal8<sp/>m2;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Freal8<sp/>g;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Finteger<sp/>id;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Finteger,1,200,1,2&gt;<sp/>id2;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Freal8,1,200&gt;<sp/>gi2;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Freal8,1,200&gt;<sp/>bi2;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Finteger,1,200,1,2&gt;</ref><sp/>id2;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Freal8,1,200&gt;</ref><sp/>gi2;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Freal8,1,200&gt;</ref><sp/>bi2;</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Farray&lt;particle2,1,2&gt;<sp/>Farray_particle2_1_2;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Farray&lt;particle2,1,6&gt;<sp/>Farray_particle2_1_6;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;particle2,1,2&gt;</ref><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray_particle2_1_2</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;particle2,1,6&gt;</ref><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray_particle2_1_6</ref>;</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
 <codeline lineno="83" refid="structGambit_1_1particle23" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1particle23" kindref="compound">particle23</ref></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -127,22 +373,22 @@
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Freal8<sp/>m2;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Freal8<sp/>g;</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Finteger<sp/>id;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Finteger,1,200,1,2&gt;<sp/>id2;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Finteger,1,600,1,3&gt;<sp/>id3;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Freal8,1,200&gt;<sp/>gi2;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Freal8,1,600&gt;<sp/>gi3;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Freal8,1,200&gt;<sp/>bi2;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Farray&lt;Freal8,1,600&gt;<sp/>bi3;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Finteger,1,200,1,2&gt;</ref><sp/>id2;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Finteger,1,600,1,3&gt;</ref><sp/>id3;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Freal8,1,200&gt;</ref><sp/>gi2;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Freal8,1,600&gt;</ref><sp/>gi3;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Freal8,1,200&gt;</ref><sp/>bi2;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;Freal8,1,600&gt;</ref><sp/>bi3;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Farray&lt;particle23,1,2&gt;<sp/>Farray_particle23_1_2;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Farray&lt;particle23,1,3&gt;<sp/>Farray_particle23_1_3;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Farray&lt;particle23,1,4&gt;<sp/>Farray_particle23_1_4;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Farray&lt;particle23,1,6&gt;<sp/>Farray_particle23_1_6;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;particle23,1,2&gt;</ref><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray_particle23_1_2</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;particle23,1,3&gt;</ref><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray_particle23_1_3</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;particle23,1,4&gt;</ref><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray_particle23_1_4</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray&lt;particle23,1,6&gt;</ref><sp/><ref refid="classGambit_1_1Farray" kindref="compound">Farray_particle23_1_6</ref>;</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102" refid="structGambit_1_1Finputs" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1Finputs" kindref="compound">Finputs</ref></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SMInputs<sp/>sminputs;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref><sp/>sminputs;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,<sp/>safe_ptr&lt;const<sp/>double&gt;<sp/>&gt;<sp/>param;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr&lt;Options&gt;</ref><sp/>options;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>

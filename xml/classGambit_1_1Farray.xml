@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Farray" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Farray</compoundname>
+    <includes refid="util__types_8hpp" local="no">util_types.hpp</includes>
+    <innerclass refid="structGambit_1_1Farray_1_1calc__nElem" prot="protected">Gambit::Farray::calc_nElem</innerclass>
+    <innerclass refid="structGambit_1_1Farray_1_1calc__nElem_3_01limL_00_01limU_01_4" prot="protected">Gambit::Farray::calc_nElem&lt; limL, limU &gt;</innerclass>
+    <innerclass refid="structGambit_1_1Farray_1_1calc__nElem_3_01limL_00_01limU_00_01__lims_8_8_8_01_4" prot="protected">Gambit::Farray::calc_nElem&lt; limL, limU, _lims... &gt;</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>int...</type>
+        <declname>lims</declname>
+        <defname>lims</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classGambit_1_1Farray_1a46d9df4eb54d188790013fecc938ac3f" prot="protected" static="no">
+        <type><ref refid="structGambit_1_1mult__types" kindref="compound">mult_types</ref>&lt; short, const short, short &amp;, const short &amp;, unsigned short, const unsigned short, unsigned short &amp;, const unsigned short &amp;, int, const int, int &amp;, const int &amp;, unsigned, const unsigned, unsigned &amp;, const unsigned &amp;, long, const long, long &amp;, const long &amp;, unsigned long, const unsigned long, unsigned long &amp;, const unsigned long &amp;, long long, const long long, long long &amp;, const long long &amp;, unsigned long long, const unsigned long long, unsigned long long &amp;, const unsigned long long &amp; &gt;</type>
+        <definition>typedef mult_types&lt; short, const short, short&amp;, const short&amp;, unsigned short, const unsigned short, unsigned short&amp;, const unsigned short&amp;, int, const int, int&amp;, const int&amp;, unsigned, const unsigned, unsigned&amp;, const unsigned&amp;, long, const long, long&amp;, const long&amp;, unsigned long, const unsigned long, unsigned long&amp;, const unsigned long&amp;, long long , const long long, long long&amp;, const long long&amp;, unsigned long long, const unsigned long long, unsigned long long&amp;, const unsigned long long&amp;&gt; Gambit::Farray&lt; T, lims &gt;::allowed_types</definition>
+        <argsstring></argsstring>
+        <name>allowed_types</name>
+        <qualifiedname>Gambit::Farray::allowed_types</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="342" column="2" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classGambit_1_1Farray_1a34166dfe9dffd8946a28109f95bbfc43" prot="public" static="no">
+        <type><ref refid="structGambit_1_1Farray_1_1calc__nElem" kindref="compound">calc_nElem</ref>&lt; lims... &gt;</type>
+        <definition>typedef calc_nElem&lt;lims... &gt; Gambit::Farray&lt; T, lims &gt;::nElem</definition>
+        <argsstring></argsstring>
+        <name>nElem</name>
+        <qualifiedname>Gambit::Farray::nElem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="359" column="26" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Farray_1a849324b7f9fa29ce47974de49681bb2b" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Gambit::Farray&lt; T, lims &gt;::array[nElem::val]</definition>
+        <argsstring>[nElem::val]</argsstring>
+        <name>array</name>
+        <qualifiedname>Gambit::Farray::array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="360" column="9" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Farray_1a0ae42c7391346ef7f7564ca166bdba3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Farray&lt; T, lims &gt;::Farray</definition>
+        <argsstring>()</argsstring>
+        <name>Farray</name>
+        <qualifiedname>Gambit::Farray::Farray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="361" column="7" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="361" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Farray_1aa8b51a65396a6217a5d44ddf639114b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Farray&lt; T, lims &gt;::Farray</definition>
+        <argsstring>(Farray&lt; T, lims... &gt; &amp;in)</argsstring>
+        <name>Farray</name>
+        <qualifiedname>Gambit::Farray::Farray</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; T, lims... &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="362" column="7" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="362" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Farray_1a7054759b2be393aa5b9ef33f03fe0aec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structGambit_1_1enable__if__all__member" kindref="compound">enable_if_all_member</ref>&lt; <ref refid="structGambit_1_1mult__types" kindref="compound">allowed_types</ref>, T &amp;, Args... &gt;::type::type</type>
+        <definition>enable_if_all_member&lt; allowed_types, T &amp;, Args... &gt;::type::type Gambit::Farray&lt; T, lims &gt;::operator()</definition>
+        <argsstring>(Args ... a)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Gambit::Farray::operator()</qualifiedname>
+        <param>
+          <type>Args ...</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="365" column="7" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="365" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Farray_1a84ea5c4d720addfc615195f6525c8413" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structGambit_1_1enable__if__all__member" kindref="compound">enable_if_all_member</ref>&lt; <ref refid="structGambit_1_1mult__types" kindref="compound">allowed_types</ref>, constT &amp;, Args... &gt;::type::type</type>
+        <definition>enable_if_all_member&lt; allowed_types, constT &amp;, Args... &gt;::type::type Gambit::Farray&lt; T, lims &gt;::operator()</definition>
+        <argsstring>(Args ... a) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Gambit::Farray::operator()</qualifiedname>
+        <param>
+          <type>Args ...</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="388" column="7" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="388" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Farray_1a140ae55c4ca03140a2db78b68fef3b9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; T, lims... &gt; &amp;</type>
+        <definition>Farray&lt; T, lims... &gt; &amp; Gambit::Farray&lt; T, lims &gt;::operator=</definition>
+        <argsstring>(const Farray&lt; T, lims... &gt; &amp;orig)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Gambit::Farray::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; T, lims... &gt; &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="409" column="14" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="409" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Farray_1a16c9195a47a77383de807fcae5028cd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Farray&lt; T, lims &gt;::Farray</definition>
+        <argsstring>(const T val)</argsstring>
+        <name>Farray</name>
+        <qualifiedname>Gambit::Farray::Farray</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="418" column="7" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="418" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Farray_1ac6d17402c6a2b9a5ea3afee0b23ca81b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; T, lims... &gt; &amp;</type>
+        <definition>Farray&lt; T, lims... &gt; &amp; Gambit::Farray&lt; T, lims &gt;::operator=</definition>
+        <argsstring>(const T val)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Gambit::Farray::operator=</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="425" column="14" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="425" bodyend="432"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Array class that matches the memory structure and functionality of arrays in Fortran codes Syntax: <ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt;[type], [lower index, dim 1], [upper index, dim 1], [alternating lower/upper indices for subsequent dimensions]&gt; DO NOT UNDER ANY CIRCUMSTANCE add new member variables to this class! This would break the crucial memory structure. </para>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/util_types.hpp" line="329" column="3" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="330" bodyend="433"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Farray_1a46d9df4eb54d188790013fecc938ac3f" prot="protected" virt="non-virtual"><scope>Gambit::Farray</scope><name>allowed_types</name></member>
+      <member refid="classGambit_1_1Farray_1a849324b7f9fa29ce47974de49681bb2b" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>array</name></member>
+      <member refid="classGambit_1_1Farray_1a0ae42c7391346ef7f7564ca166bdba3b" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>Farray</name></member>
+      <member refid="classGambit_1_1Farray_1aa8b51a65396a6217a5d44ddf639114b1" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>Farray</name></member>
+      <member refid="classGambit_1_1Farray_1a16c9195a47a77383de807fcae5028cd2" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>Farray</name></member>
+      <member refid="classGambit_1_1Farray_1a34166dfe9dffd8946a28109f95bbfc43" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>nElem</name></member>
+      <member refid="classGambit_1_1Farray_1a7054759b2be393aa5b9ef33f03fe0aec" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Farray_1a84ea5c4d720addfc615195f6525c8413" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Farray_1a140ae55c4ca03140a2db78b68fef3b9b" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>operator=</name></member>
+      <member refid="classGambit_1_1Farray_1ac6d17402c6a2b9a5ea3afee0b23ca81b" prot="public" virt="non-virtual"><scope>Gambit::Farray</scope><name>operator=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

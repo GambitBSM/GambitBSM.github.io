@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Piped__exceptions" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Piped_exceptions</compoundname>
+    <includes refid="exceptions_8hpp" local="no">exceptions.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classGambit_1_1Piped__exceptions_1aee74386050838a91a393e12fedd3cc2f" prot="public" static="no">
+        <type>std::pair&lt; std::string, std::string &gt;</type>
+        <definition>typedef std::pair&lt;std::string,std::string&gt; Gambit::Piped_exceptions::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>Gambit::Piped_exceptions::description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="306" column="25" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Piped__exceptions_1ae1a118b42074aa7a2fd25a9dcf721b52" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Piped_exceptions::flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <qualifiedname>Gambit::Piped_exceptions::flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="324" column="12" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Piped__exceptions_1a815dc7896415cd493a28da7c2ab452c6" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Gambit::Piped_exceptions::maxExceptions</definition>
+        <argsstring></argsstring>
+        <name>maxExceptions</name>
+        <qualifiedname>Gambit::Piped_exceptions::maxExceptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="325" column="14" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Piped__exceptions_1a3ee118a6bd43dd3181ef6b92e404789d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; description &gt;</type>
+        <definition>std::vector&lt;description&gt; Gambit::Piped_exceptions::exceptions</definition>
+        <argsstring></argsstring>
+        <name>exceptions</name>
+        <qualifiedname>Gambit::Piped_exceptions::exceptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="326" column="19" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Piped__exceptions_1a4c621bcebe04078d12f716a8814d64a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Piped_exceptions::Piped_exceptions</definition>
+        <argsstring>(size_t maxExceptions)</argsstring>
+        <name>Piped_exceptions</name>
+        <qualifiedname>Gambit::Piped_exceptions::Piped_exceptions</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>maxExceptions</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="308" column="7" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="308" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Piped__exceptions_1a922a00d873947b56fc70d86fcd252960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Piped_exceptions::request</definition>
+        <argsstring>(std::string origin, std::string message)</argsstring>
+        <name>request</name>
+        <qualifiedname>Gambit::Piped_exceptions::request</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Request an exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Request a piped exception. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="311" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="547" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Piped__exceptions_1aa73e62f6638b304699fcd2cd80f1d57a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Piped_exceptions::request</definition>
+        <argsstring>(description desc)</argsstring>
+        <name>request</name>
+        <qualifiedname>Gambit::Piped_exceptions::request</qualifiedname>
+        <param>
+          <type>description</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Request a piped exception. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="312" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="558" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Piped__exceptions_1acdf840c4ecb3f9492954365cea384db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Piped_exceptions::check</definition>
+        <argsstring>(exception &amp;excep)</argsstring>
+        <name>check</name>
+        <qualifiedname>Gambit::Piped_exceptions::check</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1exception" kindref="compound">exception</ref> &amp;</type>
+          <declname>excep</declname>
+        </param>
+        <briefdescription>
+<para>Check whether any exceptions were requested, and raise them. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="315" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="564" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Piped__exceptions_1ab700a6df1d12715af6e53bd406459916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Piped_exceptions::inquire</definition>
+        <argsstring>()</argsstring>
+        <name>inquire</name>
+        <qualifiedname>Gambit::Piped_exceptions::inquire</qualifiedname>
+        <briefdescription>
+<para>Check whether any exceptions were requested without handling them. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="318" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="607" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Piped__exceptions_1a4b28341333428984760d4b59d5fde164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Piped_exceptions::inquire</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>inquire</name>
+        <qualifiedname>Gambit::Piped_exceptions::inquire</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <defname>message</defname>
+        </param>
+        <briefdescription>
+<para>Check whether any exceptions with a specific message were requested, without handling them. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="321" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="613" bodyend="619"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceGambit" kindref="compound">Gambit</ref> piped error class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/exceptions.hpp" line="303" column="3" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="304" bodyend="327"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Piped__exceptions_1acdf840c4ecb3f9492954365cea384db0" prot="public" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>check</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1aee74386050838a91a393e12fedd3cc2f" prot="public" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>description</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1a3ee118a6bd43dd3181ef6b92e404789d" prot="private" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>exceptions</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1ae1a118b42074aa7a2fd25a9dcf721b52" prot="private" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>flag</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1ab700a6df1d12715af6e53bd406459916" prot="public" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>inquire</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1a4b28341333428984760d4b59d5fde164" prot="public" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>inquire</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1a815dc7896415cd493a28da7c2ab452c6" prot="private" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>maxExceptions</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1a4c621bcebe04078d12f716a8814d64a8" prot="public" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>Piped_exceptions</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1a922a00d873947b56fc70d86fcd252960" prot="public" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>request</name></member>
+      <member refid="classGambit_1_1Piped__exceptions_1aa73e62f6638b304699fcd2cd80f1d57a" prot="public" virt="non-virtual"><scope>Gambit::Piped_exceptions</scope><name>request</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

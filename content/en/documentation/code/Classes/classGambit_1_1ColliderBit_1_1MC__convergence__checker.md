@@ -4,8 +4,7 @@ description: 'Helper class for testing for convergence of analyses. '
 
 ---
 
-
-
+# Gambit::ColliderBit::MC_convergence_checker
 
 
 
@@ -99,4 +98,4 @@ Check if convergence has been achieved across threads, and across all instances 
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

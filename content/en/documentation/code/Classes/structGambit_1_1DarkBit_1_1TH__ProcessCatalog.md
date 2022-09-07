@@ -4,8 +4,7 @@ description: 'A container holding all annihilation and decay initial states rele
 
 ---
 
-
-
+# Gambit::DarkBit::TH_ProcessCatalog
 
 
 
@@ -20,10 +19,10 @@ A container holding all annihilation and decay initial states relevant for DarkB
 
 |                | Name           |
 | -------------- | -------------- |
-| [TH_Process](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/) | **[getProcess](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-getprocess)**(str id1, str id2 ="") const<br>Retrieve a specific process from the catalog.  |
-| const [TH_Process](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/) * | **[find](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-find)**(str id1, str id2 ="") const<br>Check for a specific process in the catalog.  |
-| [TH_ParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/) | **[getParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-getparticleproperty)**(str id) const<br>Retrieve properties of a given particle involved in one or more processes in this catalog.  |
-| bool | **[hasParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-hasparticleproperty)**(str id) const<br>Check whether particle is in particle properties catalog.  |
+| [TH_Process](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/) | **[getProcess](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-getprocess)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) id1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) id2 ="") const<br>Retrieve a specific process from the catalog.  |
+| const [TH_Process](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/) * | **[find](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-find)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) id1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) id2 ="") const<br>Check for a specific process in the catalog.  |
+| [TH_ParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/) | **[getParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-getparticleproperty)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) id) const<br>Retrieve properties of a given particle involved in one or more processes in this catalog.  |
+| bool | **[hasParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-hasparticleproperty)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) id) const<br>Check whether particle is in particle properties catalog.  |
 | void | **[validate](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/#function-validate)**()<br>Validate kinematics and entries.  |
 
 ## Public Attributes
@@ -105,4 +104,4 @@ Map from particles involved in the processes of this catalog, to their propertie
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

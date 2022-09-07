@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS5_RDMGEV
 
 
 
@@ -18,13 +17,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 1000 > | **[mco](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-mco)**  |
-| Farray< Fdouble, 1, 1000 > | **[mdof](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-mdof)**  |
-| Farray< Fdouble, 1, 1000 > | **[rgev](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-rgev)**  |
-| Farray< Fdouble, 1, 1000 > | **[rwid](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-rwid)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[mco](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-mco)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[mdof](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-mdof)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[rgev](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-rgev)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[rwid](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-rwid)**  |
 | Finteger | **[nco](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-nco)**  |
 | Finteger | **[nres](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-nres)**  |
-| Farray< Finteger, 1, 1000 > | **[kcoann](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-kcoann)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 1000 > | **[kcoann](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-kcoann)**  |
 
 ## Public Attributes Documentation
 
@@ -79,4 +78,4 @@ Farray< Finteger, 1, 1000 > kcoann;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

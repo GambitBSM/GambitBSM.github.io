@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# simple/raster.cpp
 
 
 
@@ -159,4 +158,4 @@ scanner_plugin(raster, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:52 +0000

@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS_MSSMWIDTHS</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS__MSSMWIDTHS_1ae56f28301387efdb2948f5b08b040de6" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 32, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 32, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,32,1,4 &gt; Gambit::DS_MSSMWIDTHS::hdwidth</definition>
         <argsstring></argsstring>
         <name>hdwidth</name>
@@ -22,6 +22,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 32, 1, 4 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_MSSMWIDTHS</label>
+        <link refid="structGambit_1_1DS__MSSMWIDTHS"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hdwidth</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="290" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="291" bodyend="293"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__MSSMWIDTHS_1ae56f28301387efdb2948f5b08b040de6" prot="public" virt="non-virtual"><scope>Gambit::DS_MSSMWIDTHS</scope><name>hdwidth</name></member>

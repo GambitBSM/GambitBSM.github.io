@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="scripts_2BOSS_2common__headers_2identification_8hpp" kind="file" language="C++">
     <compoundname>scripts/BOSS/common_headers/identification.hpp</compoundname>
-    <includes local="yes">gambit/Utils/cats.hpp</includes>
+    <includes refid="Utils_2include_2gambit_2Utils_2cats_8hpp" local="yes">gambit/Utils/cats.hpp</includes>
     <incdepgraph>
       <node id="1">
         <label>identification.hpp</label>
@@ -12,6 +12,7 @@
       </node>
       <node id="2">
         <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
       </node>
     </incdepgraph>
       <sectiondef kind="define">
@@ -89,7 +90,7 @@
     <programlisting>
 <codeline lineno="1"><highlight class="comment">//<sp/>Identify<sp/>backend<sp/>and<sp/>set<sp/>macro<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/cats.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utils_2include_2gambit_2Utils_2cats_8hpp" kindref="compound">gambit/Utils/cats.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKENDNAME<sp/>__BACKEND_NAME__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKENDLANG<sp/>CXX</highlight><highlight class="normal"></highlight></codeline>

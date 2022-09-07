@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="30" column="18" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1checkfavvio__type_1a669a8530af820784565bc5f8f82d2d8d" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Finteger, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Finteger, 1, 2 &gt;</type>
         <definition>Farray&lt; Finteger,1,2 &gt; Gambit::checkfavvio_type::imodfav</definition>
         <argsstring></argsstring>
         <name>imodfav</name>
@@ -36,6 +36,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Finteger, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::checkfavvio_type</label>
+        <link refid="structGambit_1_1checkfavvio__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>imodfav</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="28" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="29" bodyend="32"/>
     <listofallmembers>
       <member refid="structGambit_1_1checkfavvio__type_1a919e0a1f252ef89fe86a7b5bac93a8c8" prot="public" virt="non-virtual"><scope>Gambit::checkfavvio_type</scope><name>icheckfav</name></member>

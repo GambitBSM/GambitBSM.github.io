@@ -81,13 +81,11 @@
         <link refid="AnalysisData_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
         <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
@@ -109,8 +107,10 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>gambit/ColliderBit/analyses/EventCounter.hpp</label>
         <link refid="EventCounter_8hpp"/>
         <childnode refid="2" relation="include">
@@ -118,49 +118,56 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="5">
+        <label>gambit/Utils/begin_ignore_warnings_eigen.hpp</label>
+        <link refid="begin__ignore__warnings__eigen_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gambit/Utils/end_ignore_warnings.hpp</label>
+        <link refid="end__ignore__warnings_8hpp"/>
+      </node>
+      <node id="7">
         <label>Eigen/Core</label>
       </node>
       <node id="3">
         <label>HEPUtils/Event.h</label>
       </node>
-      <node id="17">
+      <node id="18">
         <label>algorithm</label>
       </node>
-      <node id="13">
+      <node id="14">
         <label>cfloat</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>cmath</label>
       </node>
-      <node id="5">
-        <label>gambit/Utils/begin_ignore_warnings_eigen.hpp</label>
+      <node id="6">
+        <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="7">
-        <label>gambit/Utils/end_ignore_warnings.hpp</label>
-      </node>
-      <node id="16">
+      <node id="17">
         <label>iomanip</label>
       </node>
-      <node id="9">
+      <node id="10">
         <label>iostream</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>limits</label>
       </node>
-      <node id="8">
+      <node id="9">
         <label>map</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>memory</label>
       </node>
-      <node id="10">
+      <node id="11">
         <label>sstream</label>
       </node>
       <node id="2">
         <label>string</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -282,7 +289,7 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33" refid="namespaceGambit" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
 <codeline lineno="34"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::string<sp/>str;</highlight></codeline>
+<codeline lineno="35" refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ColliderBit</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
@@ -314,18 +321,18 @@
 <codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>the<sp/>integrated<sp/>luminosity.</highlight></codeline>
 <codeline lineno="65"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1affc00d6a3606fda2e214b99dba9598c6" kindref="member">set_luminosity</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>the<sp/>analysis<sp/>name</highlight></codeline>
-<codeline lineno="67"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a4998785e3f5ebd96a148af8b4fbf575d" kindref="member">set_analysis_name</ref>(str);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="67"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a4998785e3f5ebd96a148af8b4fbf575d" kindref="member">set_analysis_name</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>analysis<sp/>name</highlight></codeline>
-<codeline lineno="69"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1af499cb63caf6576d6ad837424b0616ac" kindref="member">analysis_name</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1af499cb63caf6576d6ad837424b0616ac" kindref="member">analysis_name</ref>();</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>collection<sp/>of<sp/>SignalRegionData<sp/>for<sp/>likelihood<sp/>computation.</highlight></codeline>
 <codeline lineno="72"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData" kindref="compound">AnalysisData</ref>&amp;<sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a1ec44b31958a10cdaa92c618e77b5461" kindref="member">get_results</ref>();</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>An<sp/>overload<sp/>of<sp/>get_results()<sp/>with<sp/>some<sp/>additional<sp/>consistency<sp/>checks.</highlight></codeline>
-<codeline lineno="74"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData" kindref="compound">AnalysisData</ref>&amp;<sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a1ec44b31958a10cdaa92c618e77b5461" kindref="member">get_results</ref>(str&amp;);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData" kindref="compound">AnalysisData</ref>&amp;<sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a1ec44b31958a10cdaa92c618e77b5461" kindref="member">get_results</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>a<sp/>(non-const!)<sp/>pointer<sp/>to<sp/>_results.</highlight></codeline>
 <codeline lineno="76"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData" kindref="compound">AnalysisData</ref>*<sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a90730956c35e8ab0538f296612361fbf" kindref="member">get_results_ptr</ref>();</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>An<sp/>overload<sp/>of<sp/>get_results_ptr()<sp/>with<sp/>some<sp/>additional<sp/>consistency<sp/>checks.</highlight></codeline>
-<codeline lineno="78"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData" kindref="compound">AnalysisData</ref>*<sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a90730956c35e8ab0538f296612361fbf" kindref="member">get_results_ptr</ref>(str&amp;);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="78"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1AnalysisData" kindref="compound">AnalysisData</ref>*<sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a90730956c35e8ab0538f296612361fbf" kindref="member">get_results_ptr</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///@}</highlight></codeline>
 <codeline lineno="80"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Scale<sp/>by<sp/>xsec<sp/>per<sp/>event.</highlight></codeline>

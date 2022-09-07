@@ -4,8 +4,7 @@ description: 'container class for the actual plugins detected by ScannerBit '
 
 ---
 
-
-
+# Gambit::Scanner::Plugins::Plugin_Loader
 
 
 
@@ -173,4 +172,4 @@ Plugin_Details & find(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

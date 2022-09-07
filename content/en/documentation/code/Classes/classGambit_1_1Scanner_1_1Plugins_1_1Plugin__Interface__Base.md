@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Scanner::Plugins::Plugin_Interface_Base
 
 
 
@@ -28,7 +27,7 @@ Inherited by [Gambit::Scanner::Plugins::Plugin_Interface< T >](/documentation/co
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... plug_args\> <br>const std::map< type_index, void * > & | **[initPlugin](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
+| template <typename... plug_args\> <br>const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[initPlugin](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
 
 ## Public Functions Documentation
 
@@ -71,4 +70,4 @@ inline const std::map< type_index, void * > & initPlugin(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

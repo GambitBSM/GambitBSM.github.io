@@ -5,28 +5,28 @@
     <includes local="no">vector</includes>
     <includes local="no">exception</includes>
     <includes local="no">dlfcn.h</includes>
-    <includes local="yes">gambit/Utils/util_types.hpp</includes>
+    <includes refid="util__types_8hpp" local="yes">gambit/Utils/util_types.hpp</includes>
     <includes refid="backend__singleton_8hpp" local="yes">gambit/Backends/backend_singleton.hpp</includes>
-    <includes local="yes">gambit/Elements/ini_catch.hpp</includes>
+    <includes refid="ini__catch_8hpp" local="yes">gambit/Elements/ini_catch.hpp</includes>
     <includedby refid="backend__macros_8hpp" local="yes">backend_macros.hpp</includedby>
     <includedby refid="Backends_2src_2ini__functions_8cpp" local="yes">ini_functions.cpp</includedby>
     <incdepgraph>
-      <node id="7">
+      <node id="48">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="50" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="47">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -40,10 +40,217 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>gambit/Elements/ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="32">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="13">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>array</label>
+      </node>
+      <node id="23">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="40">
+        <label>cassert</label>
+      </node>
+      <node id="11">
+        <label>complex</label>
+      </node>
+      <node id="10">
+        <label>cstring</label>
+      </node>
+      <node id="45">
+        <label>deque</label>
       </node>
       <node id="4">
         <label>dlfcn.h</label>
@@ -51,22 +258,55 @@
       <node id="3">
         <label>exception</label>
       </node>
-      <node id="11">
-        <label>gambit/Elements/ini_catch.hpp</label>
+      <node id="44">
+        <label>forward_list</label>
       </node>
-      <node id="5">
-        <label>gambit/Utils/util_types.hpp</label>
+      <node id="38">
+        <label>fstream</label>
       </node>
-      <node id="9">
+      <node id="49">
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="8">
+      <node id="37">
+        <label>iostream</label>
+      </node>
+      <node id="43">
+        <label>list</label>
+      </node>
+      <node id="6">
         <label>map</label>
+      </node>
+      <node id="9">
+        <label>omp.h</label>
+      </node>
+      <node id="33">
+        <label>set</label>
+      </node>
+      <node id="8">
+        <label>sstream</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="39">
+        <label>type_traits</label>
+      </node>
+      <node id="14">
+        <label>unistd.h</label>
+      </node>
+      <node id="41">
+        <label>unordered_map</label>
+      </node>
+      <node id="42">
+        <label>unordered_set</label>
+      </node>
+      <node id="34">
+        <label>utility</label>
       </node>
       <node id="2">
         <label>vector</label>
       </node>
-      <node id="10">
+      <node id="50">
         <label>yaml-cpp/yaml.h</label>
       </node>
     </incdepgraph>
@@ -150,9 +390,9 @@
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dlfcn.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/util_types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__types_8hpp" kindref="compound">gambit/Utils/util_types.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="backend__singleton_8hpp" kindref="compound">gambit/Backends/backend_singleton.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/ini_catch.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ini__catch_8hpp" kindref="compound">gambit/Elements/ini_catch.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="32"><highlight class="comment">///<sp/>Define<sp/>the<sp/>separator<sp/>to<sp/>use<sp/>instead<sp/>of<sp/>&quot;::&quot;<sp/>when<sp/>macros<sp/>get<sp/>gnarly.</highlight></codeline>
 <codeline lineno="33" refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1a8423d5dcc60a29148ab0b18edfba4487" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>NS_SEP<sp/>___no_apologies_for_rocking_macros___</highlight><highlight class="normal"></highlight></codeline>
@@ -165,34 +405,34 @@
 <codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">module_functor_common;</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="42"><highlight class="comment"><sp/><sp/>///<sp/>Get<sp/>back<sp/>the<sp/>&quot;::&quot;<sp/>from<sp/>things<sp/>that<sp/>use<sp/>NS_SEP<sp/>instead</highlight></codeline>
-<codeline lineno="43"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>str<sp/><ref refid="namespaceGambit_1a6f42d1a3433816f3bd4ea5f4eca0f1d6" kindref="member">fixns</ref>(str);</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="namespaceGambit_1a6f42d1a3433816f3bd4ea5f4eca0f1d6" kindref="member">fixns</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="45"><highlight class="comment"><sp/><sp/>///<sp/>Call<sp/>push<sp/>back<sp/>on<sp/>a<sp/>vector<sp/>of<sp/>strings</highlight></codeline>
-<codeline lineno="46"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1afb7737f8e62cb2b4506c45e8bc482f69" kindref="member">vectorstr_push_back</ref>(std::vector&lt;str&gt;&amp;,<sp/>str);</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1afb7737f8e62cb2b4506c45e8bc482f69" kindref="member">vectorstr_push_back</ref>(std::vector&lt;str&gt;&amp;,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="48"><highlight class="comment"><sp/><sp/>///<sp/>Notify<sp/>a<sp/>backend<sp/>functor<sp/>of<sp/>which<sp/>models<sp/>it<sp/>can<sp/>be<sp/>used<sp/>with</highlight></codeline>
-<codeline lineno="49"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1ad55d40a914779bca0bff3420e1c2f65b" kindref="member">set_allowed_models</ref>(functor&amp;,<sp/>std::vector&lt;str&gt;&amp;,<sp/>str);</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1ad55d40a914779bca0bff3420e1c2f65b" kindref="member">set_allowed_models</ref>(functor&amp;,<sp/>std::vector&lt;str&gt;&amp;,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="51"><highlight class="comment"><sp/><sp/>///<sp/>Register<sp/>a<sp/>backend<sp/>with<sp/>the<sp/>logging<sp/>system</highlight></codeline>
-<codeline lineno="52"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a0e8dac62916d6eb153c36e2d55e6ea7b" kindref="member">register_backend_with_log</ref>(str);</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a0e8dac62916d6eb153c36e2d55e6ea7b" kindref="member">register_backend_with_log</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="54"><highlight class="comment"><sp/><sp/>///<sp/>Register<sp/>a<sp/>BOSSed<sp/>type<sp/>with<sp/>the<sp/>rollcall<sp/>system</highlight></codeline>
-<codeline lineno="55"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1ac69f2d4e09cbf69a7e7b0348c9fd7dc6" kindref="member">register_type</ref>(str<sp/>bever,<sp/>str<sp/>classname);</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1ac69f2d4e09cbf69a7e7b0348c9fd7dc6" kindref="member">register_type</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>bever,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>classname);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="57"><highlight class="comment"><sp/><sp/>///<sp/>Disable<sp/>a<sp/>backend<sp/>functor<sp/>if<sp/>its<sp/>library<sp/>is<sp/>missing<sp/>or<sp/>the<sp/>symbol<sp/>cannot<sp/>be<sp/>found.</highlight></codeline>
 <codeline lineno="58"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1ad25344246a2b148067e6b372a6c6e426" kindref="member">set_backend_functor_status</ref>(functor&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="60"><highlight class="comment"><sp/><sp/>///<sp/>Disable<sp/>a<sp/>backend<sp/>initialisation<sp/>function<sp/>if<sp/>the<sp/>backend<sp/>is<sp/>missing.</highlight></codeline>
-<codeline lineno="61"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a77169abaa240815026a334b3063049ac" kindref="member">set_BackendIniBit_functor_status</ref>(functor&amp;,<sp/>str,<sp/>str);</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a77169abaa240815026a334b3063049ac" kindref="member">set_BackendIniBit_functor_status</ref>(functor&amp;,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="63"><highlight class="comment"><sp/><sp/>///<sp/>Get<sp/>the<sp/>status<sp/>of<sp/>a<sp/>factory<sp/>pointer<sp/>to<sp/>a<sp/>BOSSed<sp/>type&apos;s<sp/>wrapper<sp/>constructor.</highlight></codeline>
-<codeline lineno="64"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a65b29deadc55ebfd33fe18db7e5fda89" kindref="member">get_ctor_status</ref>(str,<sp/>str,<sp/>str,<sp/>str,<sp/>str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;);</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a65b29deadc55ebfd33fe18db7e5fda89" kindref="member">get_ctor_status</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;);</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="66"><highlight class="comment"><sp/><sp/>///<sp/>Set<sp/>a<sp/>backend<sp/>rule<sp/>for<sp/>one<sp/>or<sp/>more<sp/>models.</highlight></codeline>
-<codeline lineno="67"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a35400a7e8b3b2c240b47973d8cee6fb8" kindref="member">set_backend_rule_for_model</ref>(module_functor_common&amp;,<sp/>str,<sp/>str);</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a35400a7e8b3b2c240b47973d8cee6fb8" kindref="member">set_backend_rule_for_model</ref>(module_functor_common&amp;,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="69"><highlight class="comment"><sp/><sp/>///<sp/>Set<sp/>the<sp/>classloading<sp/>requirements<sp/>of<sp/>a<sp/>given<sp/>functor.</highlight></codeline>
-<codeline lineno="70"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1af1123f2311e870d536364ed95bfe0c1b" kindref="member">set_classload_requirements</ref>(module_functor_common&amp;,<sp/>str,<sp/>str,<sp/>str);</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1af1123f2311e870d536364ed95bfe0c1b" kindref="member">set_classload_requirements</ref>(module_functor_common&amp;,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Backends</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
@@ -210,7 +450,7 @@
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>pointer<sp/>to<sp/>the<sp/>backend<sp/>function.</highlight></codeline>
 <codeline lineno="87"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="88" refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1a11945281f174483ba738408298b0b118" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1a11945281f174483ba738408298b0b118" kindref="member">load_backend_symbol</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;<sp/>symbol_names,<sp/>str<sp/>be,<sp/>str<sp/>ver)</highlight></codeline>
+<codeline lineno="88" refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1a11945281f174483ba738408298b0b118" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1a11945281f174483ba738408298b0b118" kindref="member">load_backend_symbol</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;<sp/>symbol_names,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>be,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ver)</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>result<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
@@ -245,14 +485,14 @@
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Hand<sp/>over<sp/>the<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">T</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(pSym.fptr);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::exception&amp;<sp/>e)<sp/>{<sp/>ini_catch(e);<sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::exception&amp;<sp/>e)<sp/>{<sp/><ref refid="namespaceGambit_1a4ae203c31e880f8dc24caba978956555" kindref="member">ini_catch</ref>(e);<sp/>}</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Provide<sp/>the<sp/>factory<sp/>pointer<sp/>to<sp/>a<sp/>BOSSed<sp/>type&apos;s<sp/>wrapper<sp/>constructor.</highlight></codeline>
 <codeline lineno="128"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="129" refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1ada838fa2cf54b45a2355c69b7084a580" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1ada838fa2cf54b45a2355c69b7084a580" kindref="member">handover_factory_pointer</ref>(str<sp/>be,<sp/>str<sp/>ver,<sp/>str<sp/>name,<sp/>str<sp/>barename,</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>args,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;<sp/>symbol_names,<sp/>T<sp/>factory,</highlight></codeline>
+<codeline lineno="129" refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1ada838fa2cf54b45a2355c69b7084a580" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp_1ada838fa2cf54b45a2355c69b7084a580" kindref="member">handover_factory_pointer</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>be,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ver,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>name,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>barename,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>args,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;<sp/>symbol_names,<sp/>T<sp/>factory,</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>missing_backend,<sp/>T<sp/>missing_factory)</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
@@ -265,7 +505,7 @@
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>-2:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>missing_factory;</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::exception&amp;<sp/>e)<sp/>{<sp/>ini_catch(e);<sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::exception&amp;<sp/>e)<sp/>{<sp/><ref refid="namespaceGambit_1a4ae203c31e880f8dc24caba978956555" kindref="member">ini_catch</ref>(e);<sp/>}</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>missing_factory;</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>

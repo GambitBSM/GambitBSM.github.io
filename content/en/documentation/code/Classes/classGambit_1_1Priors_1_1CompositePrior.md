@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Priors::CompositePrior
 
 
 
@@ -23,8 +22,8 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-compositeprior)**(const Options & model_options, const Options & prior_options)<br>Special "build-a-prior" classi.  |
-| | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-compositeprior)**(const std::vector< std::string > & params, const Options & options) |
+| | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-compositeprior)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & model_options, const [Options](/documentation/code/classes/classgambit_1_1options/) & prior_options)<br>Special "build-a-prior" classi.  |
+| | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-compositeprior)**(const std::vector< std::string > & params, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
 | virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-getshownparameters)**() const override |
 | virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-transform)**(const std::vector< double > & , std::unordered_map< std::string, double > & ) const override<br>Transform from unit hypercube to parameter.  |
 | virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
@@ -132,4 +131,4 @@ inline ~CompositePrior()
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

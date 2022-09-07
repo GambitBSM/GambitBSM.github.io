@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# frontends/xsecBE_1_0_2.hpp
 
 
 
@@ -160,4 +159,4 @@ BE_FUNCTION(get_xsection, PyDict, (iipair&), "get_xsection", "xsecBE_get_xsectio
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:28 +0000
+Updated on 2022-09-07 at 13:49:56 +0000

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1HardShutdownException" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::HardShutdownException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <includes refid="exceptions_8hpp" local="no">exceptions.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1HardShutdownException_1af48e7292f566991fbe2fab9a7551ac57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::HardShutdownException::HardShutdownException</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>HardShutdownException</name>
+        <qualifiedname>Gambit::HardShutdownException::HardShutdownException</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classGambit_1_1HardShutdownException" kindref="compound">HardShutdownException</ref> member functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="358" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="534" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1HardShutdownException_1a2e73903e05f90ab32ddf605046e882f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * Gambit::HardShutdownException::what</definition>
+        <argsstring>() const</argsstring>
+        <name>what</name>
+        <qualifiedname>Gambit::HardShutdownException::what</qualifiedname>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="359" column="26" bodyfile="Utils/src/exceptions.cpp" bodystart="535" bodyend="535"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1HardShutdownException_1acf1f4a587fef131643dc1c87bf87a19c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::HardShutdownException::myWhat</definition>
+        <argsstring></argsstring>
+        <name>myWhat</name>
+        <qualifiedname>Gambit::HardShutdownException::myWhat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="361" column="19" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Special exception used during emergency early shutdown. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::HardShutdownException</label>
+        <link refid="classGambit_1_1HardShutdownException"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::HardShutdownException</label>
+        <link refid="classGambit_1_1HardShutdownException"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="Utils/include/gambit/Utils/exceptions.hpp" line="355" column="3" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="356" bodyend="362"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1HardShutdownException_1af48e7292f566991fbe2fab9a7551ac57" prot="public" virt="non-virtual"><scope>Gambit::HardShutdownException</scope><name>HardShutdownException</name></member>
+      <member refid="classGambit_1_1HardShutdownException_1acf1f4a587fef131643dc1c87bf87a19c" prot="private" virt="non-virtual"><scope>Gambit::HardShutdownException</scope><name>myWhat</name></member>
+      <member refid="classGambit_1_1HardShutdownException_1a2e73903e05f90ab32ddf605046e882f0" prot="public" virt="virtual"><scope>Gambit::HardShutdownException</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

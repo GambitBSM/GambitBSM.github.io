@@ -1,0 +1,789 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="signal__handling_8hpp" kind="file" language="C++">
+    <compoundname>signal_handling.hpp</compoundname>
+    <includes local="no">signal.h</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">setjmp.h</includes>
+    <includes local="yes">yaml-cpp/yaml.h</includes>
+    <includes refid="exceptions_8hpp" local="yes">exceptions.hpp</includes>
+    <includes refid="local__info_8hpp" local="yes">local_info.hpp</includes>
+    <includes refid="mpiwrapper_8hpp" local="yes">gambit/Utils/mpiwrapper.hpp</includes>
+    <includedby refid="factory__defs_8hpp" local="yes">factory_defs.hpp</includedby>
+    <includedby refid="functors__with__signals_8cpp" local="yes">functors_with_signals.cpp</includedby>
+    <includedby refid="gambit_8hpp" local="yes">gambit.hpp</includedby>
+    <includedby refid="hdf5printer_8cpp" local="yes">hdf5printer.cpp</includedby>
+    <includedby refid="likelihood__container_8cpp" local="yes">likelihood_container.cpp</includedby>
+    <includedby refid="plugin__factory_8hpp" local="yes">plugin_factory.hpp</includedby>
+    <includedby refid="postprocessor__2_80_80_2postprocessor__object_8cpp" local="yes">postprocessor_object.cpp</includedby>
+    <includedby refid="signal__handling_8cpp" local="yes">signal_handling.cpp</includedby>
+    <incdepgraph>
+      <node id="32">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="6">
+        <label>exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>gambit/Utils/mpiwrapper.hpp</label>
+        <link refid="mpiwrapper_8hpp"/>
+      </node>
+      <node id="1">
+        <label>signal_handling.hpp</label>
+        <link refid="signal__handling_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="13">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="10">
+        <label>exception</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>set</label>
+      </node>
+      <node id="4">
+        <label>setjmp.h</label>
+      </node>
+      <node id="2">
+        <label>signal.h</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>unistd.h</label>
+      </node>
+      <node id="12">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>container_factory.hpp</label>
+        <link refid="container__factory_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gambit.hpp</label>
+        <link refid="gambit_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>container_factory.cpp</label>
+        <link refid="container__factory_8cpp"/>
+      </node>
+      <node id="44">
+        <label>functors_with_signals.cpp</label>
+        <link refid="functors__with__signals_8cpp"/>
+      </node>
+      <node id="11">
+        <label>gambit.cpp</label>
+        <link refid="gambit_8cpp"/>
+      </node>
+      <node id="12">
+        <label>likelihood_container.cpp</label>
+        <link refid="likelihood__container_8cpp"/>
+      </node>
+      <node id="45">
+        <label>hdf5printer.cpp</label>
+        <link refid="hdf5printer_8cpp"/>
+      </node>
+      <node id="6">
+        <label>ScannerBit_standalone.cpp</label>
+        <link refid="ScannerBit__standalone_8cpp"/>
+      </node>
+      <node id="2">
+        <label>factory_defs.hpp</label>
+        <link refid="factory__defs_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>plugin_factory.hpp</label>
+        <link refid="plugin__factory_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>scan.hpp</label>
+        <link refid="scan_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>scanner_plugin.hpp</label>
+        <link refid="scanner__plugin_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>scannerbit.hpp</label>
+        <link refid="scannerbit_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>diver.hpp</label>
+        <link refid="1_80_80_2diver_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>diver.hpp</label>
+        <link refid="1_80_82_2diver_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>diver.hpp</label>
+        <link refid="1_80_84_2diver_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>great.hpp</label>
+        <link refid="great_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>minuit2.hpp</label>
+        <link refid="minuit2_8hpp"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>multinest.hpp</label>
+        <link refid="multinest_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>polychord.hpp</label>
+        <link refid="polychord_8hpp"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor_8hpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>twalk.hpp</label>
+        <link refid="twalk_8hpp"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>scan.cpp</label>
+        <link refid="scan_8cpp"/>
+      </node>
+      <node id="20">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_80_2diver_8cpp"/>
+      </node>
+      <node id="16">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_82_2diver_8cpp"/>
+      </node>
+      <node id="18">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_84_2diver_8cpp"/>
+      </node>
+      <node id="22">
+        <label>great.cpp</label>
+        <link refid="great_8cpp"/>
+      </node>
+      <node id="24">
+        <label>minuit2.cpp</label>
+        <link refid="minuit2_8cpp"/>
+      </node>
+      <node id="26">
+        <label>multinest.cpp</label>
+        <link refid="multinest__3_810_2multinest_8cpp"/>
+      </node>
+      <node id="27">
+        <label>multinest.cpp</label>
+        <link refid="multinest__3_811_2multinest_8cpp"/>
+      </node>
+      <node id="29">
+        <label>polychord.cpp</label>
+        <link refid="polychord__1_817_81_2polychord_8cpp"/>
+      </node>
+      <node id="30">
+        <label>polychord.cpp</label>
+        <link refid="polychord__1_818_82_2polychord_8cpp"/>
+      </node>
+      <node id="32">
+        <label>postprocessor.cpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8cpp"/>
+      </node>
+      <node id="37">
+        <label>postprocessor_object.cpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor__object_8cpp"/>
+      </node>
+      <node id="33">
+        <label>postprocessor.cpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor_8cpp"/>
+      </node>
+      <node id="35">
+        <label>postprocessor_object.cpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor__object_8cpp"/>
+      </node>
+      <node id="23">
+        <label>grid.cpp</label>
+        <link refid="grid_8cpp"/>
+      </node>
+      <node id="38">
+        <label>random.cpp</label>
+        <link refid="random_8cpp"/>
+      </node>
+      <node id="39">
+        <label>raster.cpp</label>
+        <link refid="raster_8cpp"/>
+      </node>
+      <node id="40">
+        <label>square_grid.cpp</label>
+        <link refid="square__grid_8cpp"/>
+      </node>
+      <node id="41">
+        <label>toy_mcmc.cpp</label>
+        <link refid="toy__mcmc_8cpp"/>
+      </node>
+      <node id="42">
+        <label>twalk.cpp</label>
+        <link refid="twalk_8cpp"/>
+      </node>
+      <node id="1">
+        <label>signal_handling.hpp</label>
+        <link refid="signal__handling_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>signal_handling.cpp</label>
+        <link refid="signal__handling_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGambit_1_1SignalData" prot="public">Gambit::SignalData</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>GAMBIT signal handling functions</para>
+<para>I have tried to make these standards conformant, however I suspect that they are not, and the emergency signal handlers definitely are not. Nevertheless, they seem to work well, and the emergency shutdown handlers are intended for emergencies only (when a clean shutdown is not possible), so non-conformance is the least of our problems in that situation. The &quot;soft&quot; shutdown handler should be at least very close to conformant I think, though there are some more steps that could be taken to improve this if it turns out to be an issue.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Oct</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>GAMBIT<sp/>signal<sp/>handling<sp/>functions</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>I<sp/>have<sp/>tried<sp/>to<sp/>make<sp/>these<sp/>standards</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>conformant,<sp/>however<sp/>I<sp/>suspect<sp/>that<sp/>they<sp/>are</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>not,<sp/>and<sp/>the<sp/>emergency<sp/>signal<sp/>handlers</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>definitely<sp/>are<sp/>not.<sp/>Nevertheless,<sp/>they<sp/>seem</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>to<sp/>work<sp/>well,<sp/>and<sp/>the<sp/>emergency<sp/>shutdown</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>handlers<sp/>are<sp/>intended<sp/>for<sp/>emergencies<sp/>only</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>(when<sp/>a<sp/>clean<sp/>shutdown<sp/>is<sp/>not<sp/>possible),<sp/>so</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>non-conformance<sp/>is<sp/>the<sp/>least<sp/>of<sp/>our<sp/>problems</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>in<sp/>that<sp/>situation.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>The<sp/>&quot;soft&quot;<sp/>shutdown<sp/>handler<sp/>should<sp/>be<sp/>at</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>least<sp/>very<sp/>close<sp/>to<sp/>conformant<sp/>I<sp/>think,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>though<sp/>there<sp/>are<sp/>some<sp/>more<sp/>steps<sp/>that<sp/>could</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/>be<sp/>taken<sp/>to<sp/>improve<sp/>this<sp/>if<sp/>it<sp/>turns<sp/>out<sp/>to</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///<sp/><sp/>be<sp/>an<sp/>issue.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ben.farmer@gmail.com)</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Oct</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__signal_handling_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__signal_handling_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;setjmp.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>jmp_buf,<sp/>setjmp,<sp/>longjmp<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;yaml-cpp/yaml.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exceptions_8hpp" kindref="compound">exceptions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="local__info_8hpp" kindref="compound">local_info.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mpiwrapper_8hpp" kindref="compound">gambit/Utils/mpiwrapper.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Translate<sp/>signal<sp/>codes<sp/>to<sp/>strings</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/>std::string<sp/><ref refid="namespaceGambit_1a5e5901d91b250789f6fcd40d5682b437" kindref="member">signal_name</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sig);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>WITH_MPI</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Forward<sp/>declare<sp/>MPI<sp/>class</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">GMPI<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Comm;<sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Class<sp/>for<sp/>keeping<sp/>track<sp/>of<sp/>shutdown<sp/>message<sp/>buffers<sp/>and<sp/>status<sp/>for<sp/>a<sp/>certain<sp/>shutdown<sp/>code<sp/>type</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ShutdownMsg</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ShutdownMsg();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ShutdownMsg(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mycode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ISendToAll();<sp/></highlight><highlight class="comment">//<sp/>Send<sp/>this<sp/>code<sp/>to<sp/>all<sp/>processes<sp/>(non-blocking)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Wait();<sp/></highlight><highlight class="comment">//<sp/>Ensure<sp/>all<sp/>processes<sp/>have<sp/>received<sp/>this<sp/>message<sp/>(completes<sp/>the<sp/>send;<sp/>must<sp/>follow<sp/>ISendToAll<sp/>at<sp/>some<sp/>point)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setComm(GMPI::Comm*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Set<sp/>MPI<sp/>communicator<sp/>to<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mpisize;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>myrank;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mycode;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>buffers;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;bool&gt;<sp/>buffer_status;<sp/></highlight><highlight class="comment">//1<sp/>means<sp/>&quot;in<sp/>use&quot;,<sp/>0<sp/>means<sp/>&quot;free&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;MPI_Request&gt;<sp/>req;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GMPI::Comm*<sp/>comm;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Variables<sp/>for<sp/>use<sp/>in<sp/>signal<sp/>handlers</highlight></codeline>
+<codeline lineno="74" refid="classGambit_1_1SignalData" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1SignalData" kindref="compound">SignalData</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SignalData_1a891bc8921c31792ab6ba3ee8bf8e6e2b" kindref="member">SignalData</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classGambit_1_1SignalData_1a7cbe24e16edd27b919d73e9c75182c65" kindref="member">myrank</ref>();<sp/></highlight><highlight class="comment">//<sp/>MPI<sp/>rank<sp/>as<sp/>a<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Saved<sp/>information<sp/>on<sp/>calling<sp/>environment<sp/>for<sp/>longjmp</highlight></codeline>
+<codeline lineno="82" refid="classGambit_1_1SignalData_1ae2a073ff789741fdfcb7dea49512673d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jmp_buf<sp/><ref refid="classGambit_1_1SignalData_1ae2a073ff789741fdfcb7dea49512673d" kindref="member">env</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jumppoint_set;<sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>jump<sp/>point<sp/>has<sp/>been<sp/>set<sp/>yet.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>havejumped;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Store<sp/>result<sp/>of<sp/>setjmp<sp/>here<sp/>so<sp/>we<sp/>can<sp/>use<sp/>it<sp/>to<sp/>test<sp/>if<sp/>a<sp/>jump<sp/>point<sp/>has<sp/>been<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Value<sp/>will<sp/>be<sp/>zero<sp/>on<sp/>first<sp/>invocation<sp/>of<sp/>setjmp.<sp/>Will<sp/>be<sp/>set<sp/>to<sp/>the<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>of<sp/>longjmp<sp/>when<sp/>the<sp/>jump<sp/>executes<sp/>and<sp/>returns<sp/>to<sp/>the<sp/>setjmp<sp/>point.</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>jump<sp/>point;</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a880d59b3d4d303133bbc8901eb6868a3" kindref="member">setjump</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>cleanup<sp/>function<sp/>to<sp/>run<sp/>during<sp/>emergency<sp/>shutdown</highlight></codeline>
+<codeline lineno="91" refid="classGambit_1_1SignalData_1a3c8342fc7eb6856639a564efc94cb3a3" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="classGambit_1_1SignalData_1a3c8342fc7eb6856639a564efc94cb3a3" kindref="member">void_func</ref>)();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SignalData_1a3c8342fc7eb6856639a564efc94cb3a3" kindref="member">void_func</ref><sp/>cleanup;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cleanup_function_set;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a1e7758016fc89406d235b94e595f0cf6" kindref="member">set_cleanup</ref>(<ref refid="classGambit_1_1SignalData_1a3c8342fc7eb6856639a564efc94cb3a3" kindref="member">void_func</ref><sp/>f);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a40906f920ca0c7ec8351fd168083bb17" kindref="member">call_cleanup</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Register<sp/>that<sp/>shutdown<sp/>has<sp/>begun</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a49c94cbca4acf67bac4353eaf7c6f24c" kindref="member">set_shutdown_begun</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sig_atomic_t<sp/>emergnc=0);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>(any<sp/>kind<sp/>of)<sp/>shutdown<sp/>is<sp/>in<sp/>progress</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a3193046de6388b99819f5bef94bcd3bb" kindref="member">shutdown_begun</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>for<sp/>signals<sp/>that<sp/>early<sp/>shutdown<sp/>is<sp/>required</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>If<sp/>an<sp/>MPI<sp/>message<sp/>telling<sp/>us<sp/>to<sp/>perform<sp/>an<sp/>emergency<sp/>shutdown<sp/>is<sp/>received</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>(which<sp/>should<sp/>only<sp/>happen<sp/>in<sp/>the<sp/>case<sp/>of<sp/>an<sp/>error<sp/>on<sp/>some<sp/>other<sp/>process)<sp/>then</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>a<sp/>shutdown<sp/>exception<sp/>is<sp/>raised.<sp/>Otherwise,<sp/>we<sp/>just<sp/>return<sp/>a<sp/>bool<sp/>indicating</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>the<sp/>shutdown<sp/>status</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a9139ad5f3313fcec5ab13b6c69fde8ad" kindref="member">check_if_shutdown_begun</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>emergency<sp/>shutdown<sp/>is<sp/>in<sp/>progress</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//bool<sp/>emergency_shutdown_begun();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Add<sp/>signal<sp/>to<sp/>record</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1ae5b3c96aa958d1285d1c3a09ed4a06ab" kindref="member">add_signal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sig);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Print<sp/>to<sp/>string<sp/>a<sp/>list<sp/>of<sp/>the<sp/>signals<sp/>received<sp/>so<sp/>far<sp/>by<sp/>this<sp/>process</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classGambit_1_1SignalData_1a40ab68fd89e88bd8cbc55868c3516295" kindref="member">display_received_signals</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>shutdown<sp/>is<sp/>in<sp/>progress<sp/>and<sp/>raise<sp/>appropriate<sp/>termination</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>exception<sp/>if<sp/>so.</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>(to<sp/>be<sp/>called<sp/>by<sp/>Gambit<sp/>once<sp/>it<sp/>is<sp/>safe<sp/>to<sp/>trigger<sp/>termination)</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>check_for_shutdown_signal();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Only<sp/>check<sp/>for<sp/>emergency<sp/>shutdown<sp/>signals<sp/>(i.e.<sp/>do<sp/>not<sp/>attempt<sp/>synchronisation)</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>check_for_emergency_shutdown_signal();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>shutdown<sp/>signals<sp/>after<sp/>the<sp/>first<sp/>one</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Override<sp/>via<sp/>inifile<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//volatile<sp/>sig_atomic_t<sp/>ignore_signals_during_shutdown;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Switch<sp/>to<sp/>threadsafe<sp/>signal<sp/>handling<sp/>mode</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a8a188f1ee51d1b06cf49af766a4ab3d6" kindref="member">entering_multithreaded_region</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Exit<sp/>threadsafe<sp/>signal<sp/>handling<sp/>mode</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a3b5024edb432e96e28a5ebf2400e3441" kindref="member">leaving_multithreaded_region</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Report<sp/>&apos;true&apos;<sp/>if<sp/>inside<sp/>a<sp/>multithreaded<sp/>region<sp/>(according<sp/>to<sp/>our<sp/>own<sp/>flag)</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a48cc306f36b64b3fc89e2dcc64b308a5" kindref="member">inside_multithreaded_region</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Extra<sp/>functions<sp/>needed<sp/>in<sp/>MPI<sp/>mode</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>WITH_MPI</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>the<sp/>MPI<sp/>communicator</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_MPI_comm(GMPI::Comm*);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>that<sp/>the<sp/>communicator<sp/>has<sp/>been<sp/>set</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>comm_ready();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Broadcast<sp/>emergency<sp/>shutdown<sp/>command<sp/>to<sp/>all<sp/>processes,<sp/>or<sp/>abort<sp/>if<sp/>set<sp/>to<sp/>do<sp/>so</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>(calls<sp/>broadcast_shutdown_signal,<sp/>just<sp/>does<sp/>extra<sp/>things<sp/>as<sp/>well)</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>do_emergency_MPI_shutdown(bool<sp/>use_mpi_abort=true);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Shutdown<sp/>codes<sp/>receivable<sp/>via<sp/>MPI<sp/>(not<sp/>MPI<sp/>tags)</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//static<sp/>const<sp/>int<sp/>ERROR<sp/>=<sp/>0;<sp/>//<sp/>Not<sp/>in<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SOFT_SHUTDOWN<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>EMERGENCY_SHUTDOWN<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NO_MORE_MESSAGES<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Broadcast<sp/>signal<sp/>to<sp/>shutdown<sp/>all<sp/>processes</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>By<sp/>default<sp/>sends<sp/>emergency<sp/>shutdown<sp/>code.</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>broadcast_shutdown_signal(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>shutdown_code=EMERGENCY_SHUTDOWN);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Absorb<sp/>any<sp/>extra<sp/>shutdown<sp/>messages<sp/>that<sp/>may<sp/>be<sp/>unreceived<sp/>(for<sp/>cleanup<sp/>before<sp/>MPI_Finalize)</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>(DEPRECATED!<sp/>Delete<sp/>once<sp/>&apos;ensure_no_more_shutdown_messages&apos;<sp/>method<sp/>is<sp/>fully<sp/>adopted)</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discard_excess_shutdown_messages();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Recv<sp/>shutdown<sp/>messages<sp/>until<sp/>&apos;no<sp/>more<sp/>messages&apos;<sp/>code<sp/>is<sp/>received,<sp/>from<sp/>every<sp/>process.</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ensure_no_more_shutdown_messages();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Add<sp/>a<sp/>new<sp/>loop<sp/>time<sp/>to<sp/>internal<sp/>array<sp/>used<sp/>to<sp/>decide<sp/>barrier<sp/>timeout</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a4e2651863d9fb95cb4788445b3df1c31" kindref="member">update_looptime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newtime);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Perform<sp/>soft<sp/>shutdown<sp/>if<sp/>processes<sp/>can<sp/>be<sp/>synchronised</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SignalData_1a11ad28c611fe9bbbc7501dee762598bf" kindref="member">attempt_soft_shutdown</ref>();</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Flag<sp/>to<sp/>warn<sp/>if<sp/>early<sp/>shutdown<sp/>is<sp/>already<sp/>in<sp/>process</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>sig_atomic_t<sp/>shutdownBegun;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Flag<sp/>to<sp/>warn<sp/>if<sp/>the<sp/>shutdown<sp/>that<sp/>is<sp/>in<sp/>progress<sp/>is<sp/>an<sp/>emergency<sp/>shutdown</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>(use<sp/>to<sp/>decided<sp/>whether<sp/>to<sp/>attempt<sp/>MPI<sp/>synchronisation)</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>sig_atomic_t<sp/>emergency;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Flag<sp/>to<sp/>indicate<sp/>if<sp/>POSIX<sp/>shutdown<sp/>signal<sp/>has<sp/>been<sp/>noticed.</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>POSIX_signal_noticed;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flag<sp/>to<sp/>indicate<sp/>if<sp/>we<sp/>are<sp/>shutting<sp/>down<sp/>because<sp/>of<sp/>communication<sp/>from<sp/>another<sp/>processes,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rather<sp/>than<sp/>because<sp/>of<sp/>a<sp/>local<sp/>event.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shutdown_due_to_MPI_message;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Number<sp/>of<sp/>times<sp/>synchronisation<sp/>for<sp/>soft<sp/>shutdown<sp/>has<sp/>been<sp/>attempted;</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>shutdown_attempts;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attempts_since_ff;<sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>shutdown<sp/>attempts<sp/>since<sp/>last<sp/>&quot;fast-forward&quot;<sp/>period</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ff_loop_count;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ff_on;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ff_count;<sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>fast-forward<sp/>periods<sp/>performed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="197"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Flag<sp/>to<sp/>switch<sp/>signal<sp/>handling<sp/>behavior<sp/>to<sp/>multithreaded<sp/>mode</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>(i.e.<sp/>triggers<sp/>switch<sp/>to<sp/>threadsafe<sp/>emergency<sp/>shutdown<sp/>behaviour)</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside_omp_block;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Array<sp/>to<sp/>record<sp/>received<sp/>signals<sp/>(up<sp/>to<sp/>max_signals)</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MAX_SIGNALS<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>received_signals[MAX_SIGNALS];</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N_signals;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Attempt<sp/>to<sp/>synchronise<sp/>all<sp/>processes,<sp/>but<sp/>abort<sp/>if<sp/>it<sp/>takes<sp/>too<sp/>long</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>all_processes_ready();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="209"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Extra<sp/>data<sp/>needed<sp/>in<sp/>MPI<sp/>mode</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>WITH_MPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MPIsize;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GMPI::Comm*<sp/>signalComm;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_comm_rdy;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>shutdown_name(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>shutdown_code);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Flag<sp/>to<sp/>check<sp/>if<sp/>shutdown<sp/>message<sp/>has<sp/>already<sp/>been<sp/>broadcast</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shutdown_broadcast_done;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Variables<sp/>needed<sp/>to<sp/>compute<sp/>sensible<sp/>shutdown<sp/>timeout<sp/>length</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>looptimes;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>int<sp/>next;<sp/>//<sp/>next<sp/>slot<sp/>to<sp/>be<sp/>overwritten.<sp/>(Currently<sp/>not<sp/>used.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bool<sp/>listfull;<sp/>//<sp/>looptime<sp/>vector<sp/>is<sp/>full.<sp/>(Currently<sp/>not<sp/>used.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeout;<sp/></highlight><highlight class="comment">//<sp/>Computed<sp/>timeout<sp/>value<sp/>for<sp/>shutdowns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Variables<sp/>for<sp/>keeping<sp/>track<sp/>of<sp/>shutdown<sp/>message<sp/>buffers<sp/>and<sp/>whether</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>they<sp/>have<sp/>been<sp/>received<sp/>by<sp/>other<sp/>processes.</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;int,ShutdownMsg&gt;<sp/>msgs;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Retrieve<sp/>global<sp/>instance<sp/>of<sp/>signal<sp/>handler<sp/>options<sp/>struct</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="classGambit_1_1SignalData" kindref="compound">SignalData</ref>&amp;<sp/><ref refid="namespaceGambit_1a75e921ef024de52dc7497aa65d44320e" kindref="member">signaldata</ref>();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/><sp/><sp/>///<sp/>@{<sp/>Signal<sp/>handler<sp/>functions</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Helpers</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>sub_sighandler_emergency(int<sp/>sig);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>sub_sighandler_emergency_longjmp(int<sp/>sig);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>sub_sighandler_emergency_omp(int<sp/>sig);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>///<sp/>Primary<sp/>signal<sp/>handlers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>sighandler_emergency(int<sp/>sig);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>sighandler_emergency_longjmp(int<sp/>sig);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a486087b73676e0277ff3cde21d3bd230" kindref="member">sighandler_soft</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sig);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>sighandler_hard(int<sp/>sig);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>sighandler_hard_quiet(int<sp/>sig);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>sighandler_null(int<sp/>sig);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Choose<sp/>signal<sp/>handler<sp/>for<sp/>a<sp/>given<sp/>signal<sp/>via<sp/>yaml<sp/>file<sp/>option</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a155518850e2843f1868a65356698766c" kindref="member">set_signal_handler</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>YAML::Node&amp;<sp/>keyvalnode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sig,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>def_mode);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Utils/include/gambit/Utils/signal_handling.hpp"/>
+  </compounddef>
+</doxygen>

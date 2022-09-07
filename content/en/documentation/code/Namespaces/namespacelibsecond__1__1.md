@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# libsecond_1_1
 
 
 
@@ -117,4 +116,4 @@ string prefix =  "libsecond 1.1: ";
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

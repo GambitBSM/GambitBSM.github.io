@@ -4,7 +4,7 @@
     <compoundname>Gambit::libFarrayTest_CB2_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1libFarrayTest__CB2__type_1a1e68d7290cb90b338af3aa19baa41b38" prot="public" static="no" mutable="no">
-        <type>Fstring&lt; 5 &gt;</type>
+        <type><ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref>&lt; 5 &gt;</type>
         <definition>Fstring&lt;5&gt; Gambit::libFarrayTest_CB2_type::chara</definition>
         <argsstring></argsstring>
         <name>chara</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" line="42" column="17" bodyfile="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1libFarrayTest__CB2__type_1a8fc4fcaf2ca91342a0d38a0979d2b741" prot="public" static="no" mutable="no">
-        <type>FstringArray&lt; 5, 1, 3 &gt;</type>
+        <type><ref refid="classGambit_1_1FstringArray" kindref="compound">FstringArray</ref>&lt; 5, 1, 3 &gt;</type>
         <definition>FstringArray&lt;5, 1,3&gt; Gambit::libFarrayTest_CB2_type::charb</definition>
         <argsstring></argsstring>
         <name>charb</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" line="43" column="23" bodyfile="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1libFarrayTest__CB2__type_1a4f63ff99acc964a0f7010bf6d8b6e272" prot="public" static="no" mutable="no">
-        <type>FstringArray&lt; 6, 1, 2, -1, 0 &gt;</type>
+        <type><ref refid="classGambit_1_1FstringArray" kindref="compound">FstringArray</ref>&lt; 6, 1, 2, -1, 0 &gt;</type>
         <definition>FstringArray&lt;6, 1,2, -1,0&gt; Gambit::libFarrayTest_CB2_type::charc</definition>
         <argsstring></argsstring>
         <name>charc</name>
@@ -64,6 +64,47 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; char, 1, len &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="5">
+        <label>Gambit::Farray&lt; char, 1, len, lims... &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Fstring&lt; 5 &gt;</label>
+        <link refid="classGambit_1_1Fstring"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gambit::FstringArray&lt; 5, 1, 3 &gt;</label>
+        <link refid="classGambit_1_1FstringArray"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gambit::FstringArray&lt; 6, 1, 2, -1, 0 &gt;</label>
+        <link refid="classGambit_1_1FstringArray"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::libFarrayTest_CB2_type</label>
+        <link refid="structGambit_1_1libFarrayTest__CB2__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>chara</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>charb</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>charc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" line="40" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/libFarrayTest.hpp" bodystart="41" bodyend="46"/>
     <listofallmembers>
       <member refid="structGambit_1_1libFarrayTest__CB2__type_1a1e68d7290cb90b338af3aa19baa41b38" prot="public" virt="non-virtual"><scope>Gambit::libFarrayTest_CB2_type</scope><name>chara</name></member>

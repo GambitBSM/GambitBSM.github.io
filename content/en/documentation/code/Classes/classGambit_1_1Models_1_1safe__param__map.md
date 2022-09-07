@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Models::safe_param_map
 
 
 
@@ -14,13 +13,32 @@ description: "[No description available]"
 
 [No description available] [More...](#detailed-description)
 
+Inherits from std::map< std::string, T >
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| T | **[operator[]](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/#function-operator)**(std::string key) const |
+
 ## Detailed Description
 
 ```
-template <class T >
+template <typename T >
 class Gambit::Models::safe_param_map;
 ```
 
+## Public Functions Documentation
+
+### function operator[]
+
+```
+inline T operator[](
+    std::string key
+) const
+```
+
+
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

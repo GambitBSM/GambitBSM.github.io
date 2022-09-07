@@ -4,8 +4,7 @@ description: 'A base class for [BuckFast]() simple smearing simulations within C
 
 ---
 
-
-
+# Gambit::ColliderBit::BuckFast
 
 
 
@@ -22,7 +21,7 @@ Inherits from [Gambit::ColliderBit::BaseDetector](/documentation/code/classes/cl
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-init)**(const std::vector< std::string > & )<br>[Settings]() parsing and initialization for any sub-class.  |
+| virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-init)**(const std::vector< std::string > & )<br>[Settings](/documentation/code/classes/structsettings/) parsing and initialization for any sub-class.  |
 | virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-init)**()<br>General init for any collider of this type.  |
 | virtual void | **[processEvent](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-processevent)**(HEPUtils::Event & event) const<br>Process an event with [BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/).  |
 | | **[BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-buckfast)**()<br>Constructor.  |
@@ -58,7 +57,7 @@ inline virtual void init(
 )
 ```
 
-[Settings]() parsing and initialization for any sub-class. 
+[Settings](/documentation/code/classes/structsettings/) parsing and initialization for any sub-class. 
 
 **Reimplements**: [Gambit::ColliderBit::BaseDetector::init](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-init)
 
@@ -143,4 +142,4 @@ void(*)(std::vector< HEPUtils::Jet * > &) smearJets;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

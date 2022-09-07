@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="terminator_8hpp" kind="file" language="C++">
+    <compoundname>terminator.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="module__macros__incore__defs_8hpp" local="yes">module_macros_incore_defs.hpp</includedby>
+    <includedby refid="terminator_8cpp" local="yes">terminator.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>terminator.hpp</label>
+        <link refid="terminator_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>backend_macros.hpp</label>
+        <link refid="backend__macros_8hpp"/>
+      </node>
+      <node id="7">
+        <label>DarkBit_standalone_MSSM.cpp</label>
+        <link refid="DarkBit__standalone__MSSM_8cpp"/>
+      </node>
+      <node id="8">
+        <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
+        <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
+      </node>
+      <node id="9">
+        <label>DarkBit_standalone_WIMP.cpp</label>
+        <link refid="DarkBit__standalone__WIMP_8cpp"/>
+      </node>
+      <node id="6">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="3">
+        <label>module_macros_incore.hpp</label>
+        <link refid="module__macros__incore_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>module_macros_incore_defs.hpp</label>
+        <link refid="module__macros__incore__defs_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>terminator.hpp</label>
+        <link refid="terminator_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>terminator.cpp</label>
+        <link refid="terminator_8cpp"/>
+      </node>
+      <node id="10">
+        <label>ExampleBit_A_standalone_example.cpp</label>
+        <link refid="ExampleBit__A__standalone__example_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Garbage collection of last resort.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Pat Scott </para>
+</simplesect>
+<simplesect kind="date"><para>2014 Apr</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Garbage<sp/>collection<sp/>of<sp/>last<sp/>resort.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>\date<sp/>2014<sp/>Apr</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__terminator_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__terminator_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a1449a1c44cb5ae22f731c560a9d9f37f" kindref="member">terminator</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//#def<sp/>__terminator_hpp__</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Elements/include/gambit/Elements/terminator.hpp"/>
+  </compounddef>
+</doxygen>

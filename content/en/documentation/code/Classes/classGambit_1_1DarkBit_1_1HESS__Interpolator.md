@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DarkBit::HESS_Interpolator
 
 
 
@@ -28,7 +27,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| ASCIItableReader | **[interp_lnL](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/#variable-interp-lnl)**  |
+| [ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/) | **[interp_lnL](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/#variable-interp-lnl)**  |
 
 ## Public Functions Documentation
 
@@ -87,4 +86,4 @@ ASCIItableReader interp_lnL;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

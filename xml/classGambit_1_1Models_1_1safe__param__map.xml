@@ -2,17 +2,61 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="classGambit_1_1Models_1_1safe__param__map" kind="class" language="C++" prot="public">
     <compoundname>Gambit::Models::safe_param_map</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::map&lt; std::string, T &gt;</basecompoundref>
     <templateparamlist>
       <param>
-        <type>class T</type>
+        <type>typename T</type>
       </param>
     </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1safe__param__map_1afe32409e5b0e0ad3b83806f157aa53c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Gambit::Models::safe_param_map&lt; T &gt;::operator[]</definition>
+        <argsstring>(std::string key) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>Gambit::Models::safe_param_map::operator[]</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/safe_param_map.hpp" line="43" column="11" bodyfile="Models/include/gambit/Models/safe_param_map.hpp" bodystart="43" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Backends/include/gambit/Backends/backend_types/DDCalc.hpp" line="36" column="28" bodyfile="Backends/include/gambit/Backends/backend_types/DDCalc.hpp" bodystart="36" bodyend="-1"/>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::Models::safe_param_map&lt; T &gt;</label>
+        <link refid="classGambit_1_1Models_1_1safe__param__map"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::map&lt; std::string, T &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::Models::safe_param_map&lt; T &gt;</label>
+        <link refid="classGambit_1_1Models_1_1safe__param__map"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::map&lt; std::string, T &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Models/include/gambit/Models/safe_param_map.hpp" line="40" column="5" bodyfile="Models/include/gambit/Models/safe_param_map.hpp" bodystart="41" bodyend="61"/>
     <listofallmembers>
+      <member refid="classGambit_1_1Models_1_1safe__param__map_1afe32409e5b0e0ad3b83806f157aa53c0" prot="public" virt="non-virtual"><scope>Gambit::Models::safe_param_map</scope><name>operator[]</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# SpecBit/SpecBit_VS_rollcall.hpp
 
 
 
@@ -97,7 +96,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -131,7 +130,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -165,7 +164,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -213,7 +212,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -247,7 +246,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -281,7 +280,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -315,7 +314,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -349,7 +348,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -383,7 +382,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -417,7 +416,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -451,7 +450,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -485,7 +484,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -519,7 +518,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -553,7 +552,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -587,7 +586,7 @@ Tunnelling likelihood (including contributions set by panic_vacua)
 
 Model dependent capabilities.
 
-Initialize vevacious with a set of YAML runOptions.
+Initialize vevacious with a set of [YAML](/documentation/code/namespaces/namespaceyaml/) runOptions.
 
 Get all vevacious results from a vevacious run as str to dbl map to print them.
 
@@ -848,4 +847,4 @@ Function to create an object of type SpectrumEntriesForVevacious, holding all sp
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:52 +0000

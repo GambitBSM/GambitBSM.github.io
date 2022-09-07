@@ -11,7 +11,7 @@
         <name>findIniEntry</name>
         <qualifiedname>Gambit::DRes::DependencyResolver::findIniEntry</qualifiedname>
         <param>
-          <type>sspair</type>
+          <type><ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref></type>
           <declname>quantity</declname>
         </param>
         <param>
@@ -19,7 +19,7 @@
           <defname>entries</defname>
         </param>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>errtag</defname>
         </param>
         <briefdescription>
@@ -47,7 +47,7 @@
           <defname>entries</defname>
         </param>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>errtag</defname>
         </param>
         <briefdescription>
@@ -77,7 +77,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="255" column="27" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1DRes_1_1DependencyResolver_1aa2a23c1bf69c44d4e78cb2df80c330d5" prot="private" static="no" mutable="no">
-        <type>const Models::ModelFunctorClaw *</type>
+        <type>const <ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> *</type>
         <definition>const Models::ModelFunctorClaw* Gambit::DRes::DependencyResolver::boundClaw</definition>
         <argsstring></argsstring>
         <name>boundClaw</name>
@@ -107,7 +107,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="261" column="34" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="261" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1DRes_1_1DependencyResolver_1a1d3b191db63a8871a9c463a103c74eaa" prot="private" static="no" mutable="no">
-        <type>const Utils::type_equivalency *</type>
+        <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> *</type>
         <definition>const Utils::type_equivalency* Gambit::DRes::DependencyResolver::boundTEs</definition>
         <argsstring></argsstring>
         <name>boundTEs</name>
@@ -122,7 +122,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="264" column="39" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="264" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1DRes_1_1DependencyResolver_1abe449d5a9ac88a379fe77e64b41417f9" prot="private" static="no" mutable="no">
-        <type>Printers::BasePrinter *</type>
+        <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">Printers::BasePrinter</ref> *</type>
         <definition>Printers::BasePrinter* Gambit::DRes::DependencyResolver::boundPrinter</definition>
         <argsstring></argsstring>
         <name>boundPrinter</name>
@@ -227,7 +227,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="286" column="18" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="286" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1DRes_1_1DependencyResolver_1aa7d98bbbfbea0b3c0025982a81eaae2b" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; std::vector&lt; sspair &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt; &gt;</type>
         <definition>std::vector&lt;std::vector&lt;sspair&gt; &gt; Gambit::DRes::DependencyResolver::backendsRequired</definition>
         <argsstring></argsstring>
         <name>backendsRequired</name>
@@ -241,7 +241,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="289" column="21" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="289" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1DRes_1_1DependencyResolver_1acec5a611ed5bc88af0d10d835deacefb" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; str &gt;</type>
+        <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
         <definition>std::vector&lt;str&gt; Gambit::DRes::DependencyResolver::citationKeys</definition>
         <argsstring></argsstring>
         <name>citationKeys</name>
@@ -270,7 +270,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="295" column="18" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="295" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1DRes_1_1DependencyResolver_1ab14e76b4b77ed47c635dc648c441be30" prot="private" static="no" mutable="no">
-        <type>const str</type>
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>const str Gambit::DRes::DependencyResolver::activeFunctorGraphFile</definition>
         <argsstring></argsstring>
         <name>activeFunctorGraphFile</name>
@@ -329,7 +329,7 @@
           <defname>core</defname>
         </param>
         <param>
-          <type>const Models::ModelFunctorClaw &amp;</type>
+          <type>const <ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> &amp;</type>
           <defname>claw</defname>
         </param>
         <param>
@@ -337,11 +337,11 @@
           <defname>iniFile</defname>
         </param>
         <param>
-          <type>const Utils::type_equivalency &amp;</type>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
           <defname>equiv_classes</defname>
         </param>
         <param>
-          <type>Printers::BasePrinter &amp;</type>
+          <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">Printers::BasePrinter</ref> &amp;</type>
           <defname>printer</defname>
         </param>
         <briefdescription>
@@ -521,7 +521,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="155" column="14" bodyfile="Core/src/depresolver.cpp" bodystart="777" bodyend="777"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1DependencyResolver_1ae7e850a58e8b7f522d4cccb17b65b464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>functor *</type>
+        <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
         <definition>functor * Gambit::DRes::DependencyResolver::get_functor</definition>
         <argsstring>(VertexID)</argsstring>
         <name>get_functor</name>
@@ -540,7 +540,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="158" column="17" bodyfile="Core/src/depresolver.cpp" bodystart="780" bodyend="788"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1DependencyResolver_1aba8e0e814c0d219e5cd54ca70e0a276a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::DRes::DependencyResolver::checkTypeMatch</definition>
         <argsstring>(VertexID, const str &amp;, const std::vector&lt; str &gt; &amp;)</argsstring>
         <name>checkTypeMatch</name>
@@ -550,11 +550,11 @@
           <defname>vertex</defname>
         </param>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>purpose</defname>
         </param>
         <param>
-          <type>const std::vector&lt; str &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
           <defname>types</defname>
         </param>
         <briefdescription>
@@ -682,13 +682,13 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="188" column="14" bodyfile="Core/src/depresolver.cpp" bodystart="897" bodyend="920"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1DependencyResolver_1af947ffccf7867cfcf448a202e0f80e99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::DRes::DependencyResolver::printGenericFunctorList</definition>
         <argsstring>(const std::vector&lt; functor * &gt; &amp;)</argsstring>
         <name>printGenericFunctorList</name>
         <qualifiedname>Gambit::DRes::DependencyResolver::printGenericFunctorList</qualifiedname>
         <param>
-          <type>const std::vector&lt; functor * &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="classGambit_1_1functor" kindref="compound">functor</ref> * &gt; &amp;</type>
           <defname>functorList</defname>
         </param>
         <briefdescription>
@@ -701,7 +701,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="191" column="13" bodyfile="Core/src/depresolver.cpp" bodystart="875" bodyend="893"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1DependencyResolver_1a1c73e6ed7adcc4417560ed1b834a6fce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::DRes::DependencyResolver::printGenericFunctorList</definition>
         <argsstring>(const std::vector&lt; VertexID &gt; &amp;)</argsstring>
         <name>printGenericFunctorList</name>
@@ -719,13 +719,13 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="192" column="13" bodyfile="Core/src/depresolver.cpp" bodystart="864" bodyend="872"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1DependencyResolver_1a3c2232d55bb71eee9be4b00cd4e7c0eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::DRes::DependencyResolver::printQuantityToBeResolved</definition>
         <argsstring>(const sspair &amp;quantity, const DRes::VertexID &amp;vertex)</argsstring>
         <name>printQuantityToBeResolved</name>
         <qualifiedname>Gambit::DRes::DependencyResolver::printQuantityToBeResolved</qualifiedname>
         <param>
-          <type>const sspair &amp;</type>
+          <type>const <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &amp;</type>
           <declname>quantity</declname>
         </param>
         <param>
@@ -784,7 +784,7 @@
           <declname>toVertex</declname>
         </param>
         <param>
-          <type>sspair</type>
+          <type><ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref></type>
           <declname>quantity</declname>
         </param>
         <briefdescription>
@@ -808,7 +808,7 @@
           <declname>toVertex</declname>
         </param>
         <param>
-          <type>const sspair &amp;</type>
+          <type>const <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &amp;</type>
           <declname>quantity</declname>
         </param>
         <briefdescription>
@@ -822,7 +822,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="208" column="24" bodyfile="Core/src/depresolver.cpp" bodystart="1162" bodyend="1427"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1DependencyResolver_1a53dd7d179c108a39039d656b0f27f7ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>Options</type>
+        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
         <definition>Options Gambit::DRes::DependencyResolver::collectIniOptions</definition>
         <argsstring>(const DRes::VertexID &amp;vertex)</argsstring>
         <name>collectIniOptions</name>
@@ -842,7 +842,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="211" column="17" bodyfile="Core/src/depresolver.cpp" bodystart="1050" bodyend="1099"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1DependencyResolver_1aeadabf61177baaf3bbb77e339d3da58d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>Options</type>
+        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
         <definition>Options Gambit::DRes::DependencyResolver::collectSubCaps</definition>
         <argsstring>(const DRes::VertexID &amp;vertex)</argsstring>
         <name>collectSubCaps</name>
@@ -960,13 +960,13 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="238" column="14" bodyfile="Core/src/depresolver.cpp" bodystart="2361" bodyend="2393"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1DependencyResolver_1ac0cf4103180dd87aa6d4a8051a91c8b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>functor *</type>
+        <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
         <definition>functor * Gambit::DRes::DependencyResolver::solveRequirement</definition>
         <argsstring>(std::set&lt; sspair &gt;, const IniParser::ObservableType *, VertexID, std::vector&lt; functor * &gt;, bool, str group=&quot;none&quot;)</argsstring>
         <name>solveRequirement</name>
         <qualifiedname>Gambit::DRes::DependencyResolver::solveRequirement</qualifiedname>
         <param>
-          <type>std::set&lt; sspair &gt;</type>
+          <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
           <defname>reqs</defname>
         </param>
         <param>
@@ -978,7 +978,7 @@
           <defname>vertex</defname>
         </param>
         <param>
-          <type>std::vector&lt; functor * &gt;</type>
+          <type>std::vector&lt; <ref refid="classGambit_1_1functor" kindref="compound">functor</ref> * &gt;</type>
           <defname>previous_successes</defname>
         </param>
         <param>
@@ -986,7 +986,7 @@
           <defname>allow_deferral</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>group</declname>
           <defval>&quot;none&quot;</defval>
         </param>
@@ -1007,7 +1007,7 @@
         <name>resolveRequirement</name>
         <qualifiedname>Gambit::DRes::DependencyResolver::resolveRequirement</qualifiedname>
         <param>
-          <type>functor *</type>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
           <defname>func</defname>
         </param>
         <param>

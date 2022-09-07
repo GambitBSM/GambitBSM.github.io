@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="particle__macros_8hpp" kind="file" language="C++">
+    <compoundname>particle_macros.hpp</compoundname>
+    <includes refid="boost__fallbacks_8hpp" local="yes">gambit/Utils/boost_fallbacks.hpp</includes>
+    <includes local="no">boost/preprocessor/tuple/to_seq.hpp</includes>
+    <includes local="no">boost/preprocessor/seq/for_each_i.hpp</includes>
+    <includes local="no">boost/preprocessor/arithmetic/add.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>particle_macros.hpp</label>
+        <link refid="particle__macros_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="9">
+        <label>boost/preprocessor/arithmetic/add.hpp</label>
+      </node>
+      <node id="6">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="4">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="8">
+        <label>boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="7">
+        <label>boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="3">
+        <label>boost/version.hpp</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="particle__macros_8hpp_1ac24265c88ab3deadae6dc926b096b2fa" prot="public" static="no">
+        <name>add_particle</name>
+        <param><defname>LONGNAME</defname></param>
+        <param><defname>INTPAIR</defname></param>
+        <param><defname>SPINX2</defname></param>
+        <param><defname>CHARGEX3</defname></param>
+        <param><defname>COLOR</defname></param>
+        <initializer>particles-&gt;add(LONGNAME, std::pair&lt;int, int&gt; INTPAIR, SPINX2, CHARGEX3, COLOR);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/particle_macros.hpp" line="26" column="9" bodyfile="Models/include/gambit/Models/particle_macros.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="particle__macros_8hpp_1ad4a8d951258e0d2fdff71a467e053e22" prot="public" static="no">
+        <name>add_SM_particle</name>
+        <param><defname>LONGNAME</defname></param>
+        <param><defname>INTPAIR</defname></param>
+        <param><defname>SPINX2</defname></param>
+        <param><defname>CHARGEX3</defname></param>
+        <param><defname>COLOR</defname></param>
+        <initializer>particles-&gt;add_SM(LONGNAME, std::pair&lt;int, int&gt; INTPAIR, SPINX2, CHARGEX3, COLOR );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/particle_macros.hpp" line="27" column="9" bodyfile="Models/include/gambit/Models/particle_macros.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="particle__macros_8hpp_1a83deaf8bceef073275b6ab31bd0b4ee6" prot="public" static="no">
+        <name>add_generic_particle</name>
+        <param><defname>LONGNAME</defname></param>
+        <param><defname>INTPAIR</defname></param>
+        <param><defname>SPINX2</defname></param>
+        <param><defname>CHARGEX3</defname></param>
+        <param><defname>COLOR</defname></param>
+        <initializer>particles-&gt;add_generic(LONGNAME, std::pair&lt;int, int&gt; INTPAIR, SPINX2, CHARGEX3, COLOR);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/particle_macros.hpp" line="28" column="9" bodyfile="Models/include/gambit/Models/particle_macros.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="particle__macros_8hpp_1a7f9a2409f647328a69f939304a9058aa" prot="public" static="no">
+        <name>ADD_PARTICLE_I</name>
+        <param><defname>r</defname></param>
+        <param><defname>DATA</defname></param>
+        <param><defname>I</defname></param>
+        <param><defname>ELEM</defname></param>
+        <initializer>particles-&gt;add_with_short_pair(BOOST_PP_TUPLE_ELEM(4, 0, DATA) &quot;_&quot; STRINGIFY(BOOST_PP_ADD(I,1)), std::pair&lt;int, int&gt; ELEM, std::pair&lt;str, int&gt; (BOOST_PP_TUPLE_ELEM(4, 0, DATA),BOOST_PP_ADD(I,1)), BOOST_PP_TUPLE_ELEM(4, 1, DATA), BOOST_PP_TUPLE_ELEM(4, 2, DATA), BOOST_PP_TUPLE_ELEM(4, 3, DATA));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/particle_macros.hpp" line="29" column="9" bodyfile="Models/include/gambit/Models/particle_macros.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="particle__macros_8hpp_1a90ee5baf3882c012d72dda7dd5296a8b" prot="public" static="no">
+        <name>ADD_SM_PARTICLE_I</name>
+        <param><defname>r</defname></param>
+        <param><defname>DATA</defname></param>
+        <param><defname>I</defname></param>
+        <param><defname>ELEM</defname></param>
+        <initializer>particles-&gt;add_SM_with_short_pair(BOOST_PP_TUPLE_ELEM(4, 0, DATA) &quot;_&quot; STRINGIFY(BOOST_PP_ADD(I,1)), std::pair&lt;int, int&gt; ELEM, std::pair&lt;str, int&gt; (BOOST_PP_TUPLE_ELEM(4, 0, DATA),BOOST_PP_ADD(I,1)), BOOST_PP_TUPLE_ELEM(4, 1, DATA), BOOST_PP_TUPLE_ELEM(4, 2, DATA), BOOST_PP_TUPLE_ELEM(4, 3, DATA));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/particle_macros.hpp" line="30" column="9" bodyfile="Models/include/gambit/Models/particle_macros.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="particle__macros_8hpp_1aa6951d647b2103a4f6e6ccb225688de6" prot="public" static="no">
+        <name>add_particle_set</name>
+        <param><defname>SHORTNAME</defname></param>
+        <param><defname>__TUP</defname></param>
+        <param><defname>SPINX2</defname></param>
+        <param><defname>CHARGEX3</defname></param>
+        <param><defname>COLOR</defname></param>
+        <initializer>BOOST_PP_SEQ_FOR_EACH_I(ADD_PARTICLE_I, (SHORTNAME, SPINX2, CHARGEX3, COLOR), BOOST_PP_TUPLE_TO_SEQ(__TUP))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/particle_macros.hpp" line="31" column="9" bodyfile="Models/include/gambit/Models/particle_macros.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="particle__macros_8hpp_1aef2db49bea6e235b6fec86defee8a346" prot="public" static="no">
+        <name>add_SM_particle_set</name>
+        <param><defname>SHORTNAME</defname></param>
+        <param><defname>__TUP</defname></param>
+        <param><defname>SPINX2</defname></param>
+        <param><defname>CHARGEX3</defname></param>
+        <param><defname>COLOR</defname></param>
+        <initializer>BOOST_PP_SEQ_FOR_EACH_I(ADD_SM_PARTICLE_I, (SHORTNAME, SPINX2, CHARGEX3, COLOR), BOOST_PP_TUPLE_TO_SEQ(__TUP))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/particle_macros.hpp" line="32" column="9" bodyfile="Models/include/gambit/Models/particle_macros.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Macros for defining new particles.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Pat Scott <linebreak/>
+ (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Macros<sp/>for<sp/>defining<sp/>new<sp/>particles.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott<sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Jan</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__particle_macros_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__particle_macros_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="boost__fallbacks_8hpp" kindref="compound">gambit/Utils/boost_fallbacks.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/preprocessor/tuple/to_seq.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/preprocessor/seq/for_each_i.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/preprocessor/arithmetic/add.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>add_particle(LONGNAME,<sp/>INTPAIR,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR)<sp/>particles-&gt;add(LONGNAME,<sp/>std::pair&lt;int,<sp/>int&gt;<sp/>INTPAIR,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>add_SM_particle(LONGNAME,<sp/>INTPAIR,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR)<sp/>particles-&gt;add_SM(LONGNAME,<sp/>std::pair&lt;int,<sp/>int&gt;<sp/>INTPAIR,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>add_generic_particle(LONGNAME,<sp/>INTPAIR,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR)<sp/>particles-&gt;add_generic(LONGNAME,<sp/>std::pair&lt;int,<sp/>int&gt;<sp/>INTPAIR,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADD_PARTICLE_I(r,<sp/>DATA,<sp/>I,<sp/>ELEM)<sp/>particles-&gt;add_with_short_pair(BOOST_PP_TUPLE_ELEM(4,<sp/>0,<sp/>DATA)<sp/>&quot;_&quot;</highlight><highlight class="normal"><sp/>STRINGIFY(BOOST_PP_ADD(I,1)),<sp/>std::pair&lt;int,<sp/>int&gt;<sp/>ELEM,<sp/>std::pair&lt;str,<sp/>int&gt;<sp/>(BOOST_PP_TUPLE_ELEM(4,<sp/>0,<sp/>DATA),BOOST_PP_ADD(I,1)),<sp/>BOOST_PP_TUPLE_ELEM(4,<sp/>1,<sp/>DATA),<sp/>BOOST_PP_TUPLE_ELEM(4,<sp/>2,<sp/>DATA),<sp/>BOOST_PP_TUPLE_ELEM(4,<sp/>3,<sp/>DATA));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADD_SM_PARTICLE_I(r,<sp/>DATA,<sp/>I,<sp/>ELEM)<sp/>particles-&gt;add_SM_with_short_pair(BOOST_PP_TUPLE_ELEM(4,<sp/>0,<sp/>DATA)<sp/>&quot;_&quot;</highlight><highlight class="normal"><sp/>STRINGIFY(BOOST_PP_ADD(I,1)),<sp/>std::pair&lt;int,<sp/>int&gt;<sp/>ELEM,<sp/>std::pair&lt;str,<sp/>int&gt;<sp/>(BOOST_PP_TUPLE_ELEM(4,<sp/>0,<sp/>DATA),BOOST_PP_ADD(I,1)),<sp/>BOOST_PP_TUPLE_ELEM(4,<sp/>1,<sp/>DATA),<sp/>BOOST_PP_TUPLE_ELEM(4,<sp/>2,<sp/>DATA),<sp/>BOOST_PP_TUPLE_ELEM(4,<sp/>3,<sp/>DATA));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>add_particle_set(SHORTNAME,<sp/>__TUP,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR)<sp/>BOOST_PP_SEQ_FOR_EACH_I(ADD_PARTICLE_I,<sp/>(SHORTNAME,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR),<sp/>BOOST_PP_TUPLE_TO_SEQ(__TUP))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>add_SM_particle_set(SHORTNAME,<sp/>__TUP,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR)<sp/>BOOST_PP_SEQ_FOR_EACH_I(ADD_SM_PARTICLE_I,<sp/>(SHORTNAME,<sp/>SPINX2,<sp/>CHARGEX3,<sp/>COLOR),<sp/>BOOST_PP_TUPLE_TO_SEQ(__TUP))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__particle_macros_hpp__</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Models/include/gambit/Models/particle_macros.hpp"/>
+  </compounddef>
+</doxygen>

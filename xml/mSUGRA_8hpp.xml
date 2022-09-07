@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="mSUGRA_8hpp" kind="file" language="C++">
+    <compoundname>mSUGRA.hpp</compoundname>
+    <includes refid="CMSSM_8hpp" local="yes">gambit/Models/models/CMSSM.hpp</includes>
+    <includedby refid="mSUGRA_8cpp" local="yes">mSUGRA.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gambit/Models/models/CMSSM.hpp</label>
+        <link refid="CMSSM_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gambit/Models/models/MSSM30atMGUT.hpp</label>
+        <link refid="MSSM30atMGUT_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gambit/Models/models/MSSM30atQ.hpp</label>
+        <link refid="MSSM30atQ_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gambit/Models/models/MSSM63atMGUT.hpp</label>
+        <link refid="MSSM63atMGUT_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gambit/Models/models/MSSM63atQ.hpp</label>
+        <link refid="MSSM63atQ_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>gambit/Models/models/NUHM1.hpp</label>
+        <link refid="NUHM1_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gambit/Models/models/NUHM2.hpp</label>
+        <link refid="NUHM2_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mSUGRA.hpp</label>
+        <link refid="mSUGRA_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>mSUGRA.hpp</label>
+        <link refid="mSUGRA_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mSUGRA.cpp</label>
+        <link refid="mSUGRA_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mSUGRA_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>mSUGRA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/mSUGRA.hpp" line="27" column="9" bodyfile="Models/include/gambit/Models/models/mSUGRA.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mSUGRA_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>CMSSM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/mSUGRA.hpp" line="28" column="9" bodyfile="Models/include/gambit/Models/models/mSUGRA.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>mSUGRA model declaration. Basically just an alias for the CMSSM. See mSUGRA_nonstandard for a more constrained definition that some people prefer.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Pat Scott <linebreak/>
+ (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>mSUGRA<sp/>model<sp/>declaration.<sp/><sp/>Basically<sp/>just<sp/>an</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>alias<sp/>for<sp/>the<sp/>CMSSM.<sp/><sp/>See<sp/>mSUGRA_nonstandard</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>for<sp/>a<sp/>more<sp/>constrained<sp/>definition<sp/>that<sp/>some</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>people<sp/>prefer.<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott<sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Sep</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__mSUGRA_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__mSUGRA_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Must<sp/>include<sp/>models<sp/>which<sp/>are<sp/>targets<sp/>of<sp/>translation<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CMSSM_8hpp" kindref="compound">gambit/Models/models/CMSSM.hpp</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>mSUGRA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>CMSSM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>DEFINEPARS(M0,M12,A0,TanBeta,SignMu)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(mSUGRA_to_CMSSM)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Translation<sp/>functions<sp/>defined<sp/>in<sp/>mSUGRA.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Models/include/gambit/Models/models/mSUGRA.hpp"/>
+  </compounddef>
+</doxygen>

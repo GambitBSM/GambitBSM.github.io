@@ -1,0 +1,2159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1functor" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::functor</compoundname>
+    <derivedcompoundref refid="classGambit_1_1backend__functor__common" prot="public" virt="non-virtual">Gambit::backend_functor_common&lt; TYPE(*)(ARGS...), TYPE, ARGS... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1backend__functor__common" prot="public" virt="non-virtual">Gambit::backend_functor_common&lt; variadic_ptr&lt; TYPE, ARGS... &gt;::type, TYPE, ARGS... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1backend__functor__common" prot="public" virt="non-virtual">Gambit::backend_functor_common&lt; variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1backend__functor__common" prot="public" virt="non-virtual">Gambit::backend_functor_common&lt; void(*)(ARGS...), void, ARGS... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1backend__functor__common" prot="public" virt="non-virtual">Gambit::backend_functor_common&lt; PTR_TYPE, TYPE, ARGS &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1module__functor__common" prot="public" virt="non-virtual">Gambit::module_functor_common</derivedcompoundref>
+    <includes refid="functors_8hpp" local="no">functors.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1functor_1ac79cd5e35a61931feee5c00e5eafec3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Gambit::functor::getRuntimeAverage</definition>
+        <argsstring>()</argsstring>
+        <name>getRuntimeAverage</name>
+        <qualifiedname>Gambit::functor::getRuntimeAverage</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a7f4ecc772af822e6bddf9edf95ab2a5f">getRuntimeAverage</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interfaces for runtime optimization Need to be implemented by daughters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="113" column="22" bodyfile="Elements/src/functors.cpp" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a16e487c93d71375ad93223f836493dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Gambit::functor::getInvalidationRate</definition>
+        <argsstring>()</argsstring>
+        <name>getInvalidationRate</name>
+        <qualifiedname>Gambit::functor::getInvalidationRate</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1abfa224375716da6b911f18e8cbe72ce7">getInvalidationRate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="114" column="22" bodyfile="Elements/src/functors.cpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a25ceb7a5540a94d11695f55c08a35fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setFadeRate</definition>
+        <argsstring>(double)</argsstring>
+        <name>setFadeRate</name>
+        <qualifiedname>Gambit::functor::setFadeRate</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a80654414bb5bb5ae82f6fc37080dc858">setFadeRate</reimplementedby>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="115" column="20" bodyfile="Elements/src/functors.cpp" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a109636f48b8cb43ea184fb676cbedf39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::notifyOfInvalidation</definition>
+        <argsstring>(const str &amp;)</argsstring>
+        <name>notifyOfInvalidation</name>
+        <qualifiedname>Gambit::functor::notifyOfInvalidation</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a946e0a1ad997d417dd40160a3bba603b">notifyOfInvalidation</reimplementedby>
+        <param>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="116" column="20" bodyfile="Elements/src/functors.cpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aef1a95ee87c3be96dbe515cc3105df1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>Gambit::functor::reset</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a4e34fc2cf2c9932a6794eb9baf554e28">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="117" column="20" bodyfile="Elements/src/functors.cpp" bodystart="89" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1functor_1ac0a433e94cc5725e0d8f48d4cad897c5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::reset</definition>
+        <argsstring>(int)</argsstring>
+        <name>reset</name>
+        <qualifiedname>Gambit::functor::reset</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a716ce66eb5f12e39e9d38c0d5949fe9a">reset</reimplementedby>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Reset functor for one thread only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="404" column="20" bodyfile="Elements/src/functors.cpp" bodystart="90" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1functor_1ad9345bebb312d0352f8576d57b326759" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::myName</definition>
+        <argsstring></argsstring>
+        <name>myName</name>
+        <qualifiedname>Gambit::functor::myName</qualifiedname>
+        <briefdescription>
+<para>Internal storage of the function name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="331" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1ab8e599294e315beb4df8154b6e7ba499" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::myCapability</definition>
+        <argsstring></argsstring>
+        <name>myCapability</name>
+        <qualifiedname>Gambit::functor::myCapability</qualifiedname>
+        <briefdescription>
+<para>Internal storage of exactly what the function calculates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="333" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a799a78be10d270a75bf1c3881178daab" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::myType</definition>
+        <argsstring></argsstring>
+        <name>myType</name>
+        <qualifiedname>Gambit::functor::myType</qualifiedname>
+        <briefdescription>
+<para>Internal storage of the type of what the function calculates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="335" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a0a323ed83c7025b6d789e7fac64addc7" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::myOrigin</definition>
+        <argsstring></argsstring>
+        <name>myOrigin</name>
+        <qualifiedname>Gambit::functor::myOrigin</qualifiedname>
+        <briefdescription>
+<para>Internal storage of the name of the module or backend to which the function belongs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="337" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a4de522a9d806a77959580b9a21c922d4" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::myVersion</definition>
+        <argsstring></argsstring>
+        <name>myVersion</name>
+        <qualifiedname>Gambit::functor::myVersion</qualifiedname>
+        <briefdescription>
+<para>Internal storage of the version of the module or backend to which the function belongs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="339" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1ac061cc96139bf564778406ecc67cc0a9" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::myPurpose</definition>
+        <argsstring></argsstring>
+        <name>myPurpose</name>
+        <qualifiedname>Gambit::functor::myPurpose</qualifiedname>
+        <briefdescription>
+<para>Purpose of the function (relevant for output and next-to-output functors) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="341" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1af7284750b2816b9c1601a5e4637a503c" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::myCitationKey</definition>
+        <argsstring></argsstring>
+        <name>myCitationKey</name>
+        <qualifiedname>Gambit::functor::myCitationKey</qualifiedname>
+        <briefdescription>
+<para>Citation key: BibTex key of the reference. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="343" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a7f185782b166c86c8c1488e3e28966d2" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> *</type>
+        <definition>const Models::ModelFunctorClaw* Gambit::functor::myClaw</definition>
+        <argsstring></argsstring>
+        <name>myClaw</name>
+        <qualifiedname>Gambit::functor::myClaw</qualifiedname>
+        <briefdescription>
+<para>Bound model functor claw, for checking relationships between models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="345" column="38" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a55aa9ef92692ece18544675da08ef49e" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>const str Gambit::functor::myLabel</definition>
+        <argsstring></argsstring>
+        <name>myLabel</name>
+        <qualifiedname>Gambit::functor::myLabel</qualifiedname>
+        <briefdescription>
+<para>String label, used to label functor results for printer system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="348" column="17" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a8ce50c7d7fcf5afa751b258895dd6dad" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>const str Gambit::functor::myTimingLabel</definition>
+        <argsstring></argsstring>
+        <name>myTimingLabel</name>
+        <qualifiedname>Gambit::functor::myTimingLabel</qualifiedname>
+        <briefdescription>
+<para>String label, used to label functor timing data for printer system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="350" column="17" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a41bf64d7ddcd9ee48ef849344a803b55" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::functor::myStatus</definition>
+        <argsstring></argsstring>
+        <name>myStatus</name>
+        <qualifiedname>Gambit::functor::myStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="359" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a004751aadc8af70cdb28fa25ba661f76" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::functor::myVertexID</definition>
+        <argsstring></argsstring>
+        <name>myVertexID</name>
+        <qualifiedname>Gambit::functor::myVertexID</qualifiedname>
+        <briefdescription>
+<para>Internal storage of the vertex ID number used by the printer system to identify functors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="361" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a9501f612101222191ac4eb41c5ef91af" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::functor::myTimingVertexID</definition>
+        <argsstring></argsstring>
+        <name>myTimingVertexID</name>
+        <qualifiedname>Gambit::functor::myTimingVertexID</qualifiedname>
+        <briefdescription>
+<para>ID assigned by printers to the timing data output stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="363" column="11" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a3d9cf03cce51e7e134bbe1d7dcf37541" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::functor::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <qualifiedname>Gambit::functor::verbose</qualifiedname>
+        <briefdescription>
+<para>Debug flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="365" column="12" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a7cc789adf4e03cd04865f3c85d0ec42b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
+        <definition>Options Gambit::functor::myOptions</definition>
+        <argsstring></argsstring>
+        <name>myOptions</name>
+        <qualifiedname>Gambit::functor::myOptions</qualifiedname>
+        <briefdescription>
+<para>Internal storage of function options, as a <ref refid="namespaceYAML" kindref="compound">YAML</ref> node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="368" column="15" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a91801bf8dad62e88dcd1c0d677543d03" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
+        <definition>Options Gambit::functor::mySubCaps</definition>
+        <argsstring></argsstring>
+        <name>mySubCaps</name>
+        <qualifiedname>Gambit::functor::mySubCaps</qualifiedname>
+        <briefdescription>
+<para>Internal storage of function sub-capabilities, as a <ref refid="namespaceYAML" kindref="compound">YAML</ref> node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="371" column="15" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a22acc6454f7896c3d4dcb497e62f2e65" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt;sspair&gt; Gambit::functor::myDependees</definition>
+        <argsstring></argsstring>
+        <name>myDependees</name>
+        <qualifiedname>Gambit::functor::myDependees</qualifiedname>
+        <briefdescription>
+<para>List of all capability,type pairs of functors downstream of this one in the dependency tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="374" column="16" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1ac70ec922e8a3f04f6878ffafc231e379" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+        <definition>std::set&lt;str&gt; Gambit::functor::allowedModels</definition>
+        <argsstring></argsstring>
+        <name>allowedModels</name>
+        <qualifiedname>Gambit::functor::allowedModels</qualifiedname>
+        <briefdescription>
+<para>List of allowed models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="377" column="16" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a4f73fb1475364081fa23944b7c95c7b3" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
+        <definition>std::set&lt;std::set&lt;str&gt; &gt; Gambit::functor::allowedGroupCombos</definition>
+        <argsstring></argsstring>
+        <name>allowedGroupCombos</name>
+        <qualifiedname>Gambit::functor::allowedGroupCombos</qualifiedname>
+        <briefdescription>
+<para>List of allowed model group combinations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="380" column="16" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1functor_1a6149708cf859ce1290dd447f16291e8b" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
+        <definition>std::map&lt;str, std::set&lt;str&gt; &gt; Gambit::functor::modelGroups</definition>
+        <argsstring></argsstring>
+        <name>modelGroups</name>
+        <qualifiedname>Gambit::functor::modelGroups</qualifiedname>
+        <briefdescription>
+<para>Map from model group names to group contents. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="383" column="16" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1functor_1a970d23b026a50dd8b029795a004b4183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::functor::functor</definition>
+        <argsstring>(str, str, str, str, Models::ModelFunctorClaw &amp;)</argsstring>
+        <name>functor</name>
+        <qualifiedname>Gambit::functor::functor</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>func_name</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>func_capability</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>result_type</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>origin_name</defname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> &amp;</type>
+          <defname>claw</defname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="97" column="7" bodyfile="Elements/src/functors.cpp" bodystart="61" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a107e83b861fcc192e776352b6fe3719f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gambit::functor::~functor</definition>
+        <argsstring>()</argsstring>
+        <name>~functor</name>
+        <qualifiedname>Gambit::functor::~functor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="100" column="15" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ad4511b7324e416ec8a881bc2d3d7870e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::calculate</definition>
+        <argsstring>()</argsstring>
+        <name>calculate</name>
+        <qualifiedname>Gambit::functor::calculate</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor_1a8b95bea55acc882c4ec06636016e4429">calculate</reimplementedby>
+        <reimplementedby refid="classGambit_1_1module__functor_1a8b95bea55acc882c4ec06636016e4429">calculate</reimplementedby>
+        <reimplementedby refid="classGambit_1_1module__functor_3_01void_01_4_1adb480d3b335b32ea7ae82ba660f08906">calculate</reimplementedby>
+        <briefdescription>
+<para>Virtual <ref refid="classGambit_1_1functor_1ad4511b7324e416ec8a881bc2d3d7870e" kindref="member">calculate()</ref>; needs to be redefined in daughters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="103" column="20" bodyfile="Elements/src/functors.cpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a3fa95b5cde845f17d17fc40fa8e205e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::reset_and_calculate</definition>
+        <argsstring>()</argsstring>
+        <name>reset_and_calculate</name>
+        <qualifiedname>Gambit::functor::reset_and_calculate</qualifiedname>
+        <briefdescription>
+<para>Reset-then-recalculate method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="121" column="20" bodyfile="Elements/src/functors.cpp" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aa5b8e133948384570684245abcd0a137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setStatus</definition>
+        <argsstring>(int)</argsstring>
+        <name>setStatus</name>
+        <qualifiedname>Gambit::functor::setStatus</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>stat</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for status: -6 = required external tool absent (pybind11) -5 = required external tool absent (Mathematica) -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active</para>
+<para>Setter for status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="132" column="12" bodyfile="Elements/src/functors.cpp" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1af005b2c5a8673df8402c10b7cdf78082" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::functor::setInUse</definition>
+        <argsstring>(bool)</argsstring>
+        <name>setInUse</name>
+        <qualifiedname>Gambit::functor::setInUse</qualifiedname>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1a89d7ab912fc7b66ca49726eb7b412a00">setInUse</reimplementedby>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1a89d7ab912fc7b66ca49726eb7b412a00">setInUse</reimplementedby>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1a89d7ab912fc7b66ca49726eb7b412a00">setInUse</reimplementedby>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1a89d7ab912fc7b66ca49726eb7b412a00">setInUse</reimplementedby>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1a89d7ab912fc7b66ca49726eb7b412a00">setInUse</reimplementedby>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+<para>Set the inUse flag (must be overridden in derived class to have any effect). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="134" column="20" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a505e1eec8cb10fab9a310cd07ddaa7b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setPurpose</definition>
+        <argsstring>(str)</argsstring>
+        <name>setPurpose</name>
+        <qualifiedname>Gambit::functor::setPurpose</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>purpose</defname>
+        </param>
+        <briefdescription>
+<para>Setter for purpose (relevant only for next-to-output functors) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="136" column="12" bodyfile="Elements/src/functors.cpp" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a662c46ed6b31a1525a983c9cf7ebdf2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setVertexID</definition>
+        <argsstring>(int)</argsstring>
+        <name>setVertexID</name>
+        <qualifiedname>Gambit::functor::setVertexID</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>ID</defname>
+        </param>
+        <briefdescription>
+<para>Setter for vertex ID (used in printer system) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="138" column="12" bodyfile="Elements/src/functors.cpp" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aa3672cd13d12ba53572d7b40bb74121e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setTimingVertexID</definition>
+        <argsstring>(int)</argsstring>
+        <name>setTimingVertexID</name>
+        <qualifiedname>Gambit::functor::setTimingVertexID</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>ID</defname>
+        </param>
+        <briefdescription>
+<para>Set ID for timing &apos;vertex&apos; (used in printer system) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire ID for timing &apos;vertex&apos; (used in printer system) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="140" column="12" bodyfile="Elements/src/functors.cpp" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aaea7be169ef23d9221b4f85bc52eacb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>Gambit::functor::name</qualifiedname>
+        <briefdescription>
+<para>Getter for the wrapped function&apos;s name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="142" column="11" bodyfile="Elements/src/functors.cpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1abbad0238d51adf088d97fe4376586890" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::capability</definition>
+        <argsstring>() const</argsstring>
+        <name>capability</name>
+        <qualifiedname>Gambit::functor::capability</qualifiedname>
+        <briefdescription>
+<para>Getter for the wrapped function&apos;s reported capability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="144" column="11" bodyfile="Elements/src/functors.cpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a913d44680b347e3e9261601b3bdb6f80" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::type</definition>
+        <argsstring>() const</argsstring>
+        <name>type</name>
+        <qualifiedname>Gambit::functor::type</qualifiedname>
+        <briefdescription>
+<para>Getter for the wrapped function&apos;s reported return type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="146" column="11" bodyfile="Elements/src/functors.cpp" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a150f27ecb8a2eb9c3739a809dc5b7c83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::origin</definition>
+        <argsstring>() const</argsstring>
+        <name>origin</name>
+        <qualifiedname>Gambit::functor::origin</qualifiedname>
+        <briefdescription>
+<para>Getter for the wrapped function&apos;s origin (module or backend name) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="148" column="11" bodyfile="Elements/src/functors.cpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a876de7e3fb4b6611e0a90a24ec889aed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::version</definition>
+        <argsstring>() const</argsstring>
+        <name>version</name>
+        <qualifiedname>Gambit::functor::version</qualifiedname>
+        <briefdescription>
+<para>Getter for the version of the wrapped function&apos;s origin (module or backend) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="150" column="11" bodyfile="Elements/src/functors.cpp" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a973dd85d7e1f3b57c3eb98030a8cf237" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::safe_version</definition>
+        <argsstring>() const</argsstring>
+        <name>safe_version</name>
+        <qualifiedname>Gambit::functor::safe_version</qualifiedname>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1af9bcd2e979961e755476c41b611ddc40">safe_version</reimplementedby>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1af9bcd2e979961e755476c41b611ddc40">safe_version</reimplementedby>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1af9bcd2e979961e755476c41b611ddc40">safe_version</reimplementedby>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1af9bcd2e979961e755476c41b611ddc40">safe_version</reimplementedby>
+        <reimplementedby refid="classGambit_1_1backend__functor__common_1af9bcd2e979961e755476c41b611ddc40">safe_version</reimplementedby>
+        <briefdescription>
+<para>Getter for the &apos;safe&apos; incarnation of the version of the wrapped function&apos;s origin (module or backend) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="152" column="19" bodyfile="Elements/src/functors.cpp" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a2ba190773faaf6e644d74ab24c709d2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::functor::status</definition>
+        <argsstring>() const</argsstring>
+        <name>status</name>
+        <qualifiedname>Gambit::functor::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for the wrapped function current status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="161" column="11" bodyfile="Elements/src/functors.cpp" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a7be700dee4f9d9cc5a9efaa0ff2cbab0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref></type>
+        <definition>sspair Gambit::functor::quantity</definition>
+        <argsstring>() const</argsstring>
+        <name>quantity</name>
+        <qualifiedname>Gambit::functor::quantity</qualifiedname>
+        <briefdescription>
+<para>Getter for the overall quantity provided by the wrapped function (capability-type pair) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="163" column="14" bodyfile="Elements/src/functors.cpp" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aec5300fbdb253cd9a09edffbfdafb526" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::purpose</definition>
+        <argsstring>() const</argsstring>
+        <name>purpose</name>
+        <qualifiedname>Gambit::functor::purpose</qualifiedname>
+        <briefdescription>
+<para>Getter for purpose (relevant for output nodes, aka helper structures for the dep. resolution) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="165" column="11" bodyfile="Elements/src/functors.cpp" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ad1763580d476b082690ddebfd877e98b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::citationKey</definition>
+        <argsstring>() const</argsstring>
+        <name>citationKey</name>
+        <qualifiedname>Gambit::functor::citationKey</qualifiedname>
+        <briefdescription>
+<para>Getter for the citation key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for citation key. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="167" column="11" bodyfile="Elements/src/functors.cpp" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a94892ac8fa2e37f15cab798bbd189bcb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::functor::vertexID</definition>
+        <argsstring>() const</argsstring>
+        <name>vertexID</name>
+        <qualifiedname>Gambit::functor::vertexID</qualifiedname>
+        <briefdescription>
+<para>Getter for vertex ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="169" column="11" bodyfile="Elements/src/functors.cpp" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ad33185ce2c0ff77e0e14e4606d8efa1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::functor::timingVertexID</definition>
+        <argsstring>() const</argsstring>
+        <name>timingVertexID</name>
+        <qualifiedname>Gambit::functor::timingVertexID</qualifiedname>
+        <briefdescription>
+<para>Getter for timing vertex ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="171" column="11" bodyfile="Elements/src/functors.cpp" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ad058829b78226cf3b0dcb310a4668256" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::label</definition>
+        <argsstring>() const</argsstring>
+        <name>label</name>
+        <qualifiedname>Gambit::functor::label</qualifiedname>
+        <briefdescription>
+<para>Getter for string label. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for the printer label. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="173" column="11" bodyfile="Elements/src/functors.cpp" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1afec52bd9d7b3fb3a83cece403d48626b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::timingLabel</definition>
+        <argsstring>() const</argsstring>
+        <name>timingLabel</name>
+        <qualifiedname>Gambit::functor::timingLabel</qualifiedname>
+        <briefdescription>
+<para>Getter for the printer timing label. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="175" column="11" bodyfile="Elements/src/functors.cpp" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a9c2a14819589380ff81cc3b1b2a9d78a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::requiresPrinting</definition>
+        <argsstring>() const</argsstring>
+        <name>requiresPrinting</name>
+        <qualifiedname>Gambit::functor::requiresPrinting</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor_1ad4f4ce209987e753b78e5d47fafe5d11">requiresPrinting</reimplementedby>
+        <reimplementedby refid="classGambit_1_1module__functor_1ad4f4ce209987e753b78e5d47fafe5d11">requiresPrinting</reimplementedby>
+        <briefdescription>
+<para>Getter indicating if the wrapped function&apos;s result should to be printed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="177" column="20" bodyfile="Elements/src/functors.cpp" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a5d1ae4ff6f5e0be7e16fb15938d9387f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::requiresTimingPrinting</definition>
+        <argsstring>() const</argsstring>
+        <name>requiresTimingPrinting</name>
+        <qualifiedname>Gambit::functor::requiresTimingPrinting</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a834e0932dcd86d0ad0a19d30a83e74cd">requiresTimingPrinting</reimplementedby>
+        <briefdescription>
+<para>Getter indicating if the timing data for this function&apos;s execution should be printed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="180" column="20" bodyfile="Elements/src/functors.cpp" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ae47ce614bb3ebb36fb24a60a115de3d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setPrintRequirement</definition>
+        <argsstring>(bool)</argsstring>
+        <name>setPrintRequirement</name>
+        <qualifiedname>Gambit::functor::setPrintRequirement</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor_1ab1a3b51ffb937f26f9d109811410fb62">setPrintRequirement</reimplementedby>
+        <reimplementedby refid="classGambit_1_1module__functor_1ab1a3b51ffb937f26f9d109811410fb62">setPrintRequirement</reimplementedby>
+        <param>
+          <type>bool</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+<para>Setter for indicating if the wrapped function&apos;s result should to be printed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="183" column="20" bodyfile="Elements/src/functors.cpp" bodystart="159" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ade7117c926fd3e16594a8a38aa41479f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setTimingPrintRequirement</definition>
+        <argsstring>(bool)</argsstring>
+        <name>setTimingPrintRequirement</name>
+        <qualifiedname>Gambit::functor::setTimingPrintRequirement</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1ac689bbfda7429204bc0e07a547116e11">setTimingPrintRequirement</reimplementedby>
+        <param>
+          <type>bool</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+<para>Setter for indicating if the timing data for this function&apos;s execution should be printed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for indicating if the timing data for this functor should be printed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="186" column="20" bodyfile="Elements/src/functors.cpp" bodystart="168" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ab3dbaa4eb0d598e0990ff8e6ac959dc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setNestedList</definition>
+        <argsstring>(std::vector&lt; functor * &gt; &amp;)</argsstring>
+        <name>setNestedList</name>
+        <qualifiedname>Gambit::functor::setNestedList</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1aa87dfaf3619b21da4e00637e6e8c7d8d">setNestedList</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="classGambit_1_1functor" kindref="compound">functor</ref> * &gt; &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set the ordered list of pointers to other functors that should run nested in a loop managed by this one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="189" column="20" bodyfile="Elements/src/functors.cpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a80c9104d6d5d7a7b8af078f50b06c5f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setIteration</definition>
+        <argsstring>(long long)</argsstring>
+        <name>setIteration</name>
+        <qualifiedname>Gambit::functor::setIteration</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1aea40fae672492b12ab0fe2cd3e270146">setIteration</reimplementedby>
+        <param>
+          <type>long long</type>
+        </param>
+        <briefdescription>
+<para>Set the iteration number in a loop in which this functor runs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="192" column="20" bodyfile="Elements/src/functors.cpp" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ac271e5cc6323f96fbd9aeb3ba8ba3bab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::canBeLoopManager</definition>
+        <argsstring>()</argsstring>
+        <name>canBeLoopManager</name>
+        <qualifiedname>Gambit::functor::canBeLoopManager</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a45ee081397264cff4fae5d90a468e15c">canBeLoopManager</reimplementedby>
+        <briefdescription>
+<para>Getter for revealing whether this is permitted to be a manager functor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="195" column="20" bodyfile="Elements/src/functors.cpp" bodystart="189" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a8605c698d5d7e55b8a2bd47af9c466cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::loopManagerCapability</definition>
+        <argsstring>()</argsstring>
+        <name>loopManagerCapability</name>
+        <qualifiedname>Gambit::functor::loopManagerCapability</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a76068bbae795db5b319da3b6445b9e0b">loopManagerCapability</reimplementedby>
+        <briefdescription>
+<para>Getter for revealing the required capability of the wrapped function&apos;s loop manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="198" column="19" bodyfile="Elements/src/functors.cpp" bodystart="196" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ac9ce89a8ae79c6307e29596549d8ee41" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::loopManagerType</definition>
+        <argsstring>()</argsstring>
+        <name>loopManagerType</name>
+        <qualifiedname>Gambit::functor::loopManagerType</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1af67a261a00be448fabac30d9c0c0011b">loopManagerType</reimplementedby>
+        <briefdescription>
+<para>Getter for revealing the required type of the wrapped function&apos;s loop manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="200" column="19" bodyfile="Elements/src/functors.cpp" bodystart="203" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a259892482655c006e7f278bbdcb837a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::loopManagerName</definition>
+        <argsstring>()</argsstring>
+        <name>loopManagerName</name>
+        <qualifiedname>Gambit::functor::loopManagerName</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a744fa740688d36d4e460b09f189b8a1c">loopManagerName</reimplementedby>
+        <briefdescription>
+<para>Getter for revealing the name of the wrapped function&apos;s assigned loop manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="202" column="19" bodyfile="Elements/src/functors.cpp" bodystart="210" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a3cc77fbfc1442a29d6453da3add9acf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::loopManagerOrigin</definition>
+        <argsstring>()</argsstring>
+        <name>loopManagerOrigin</name>
+        <qualifiedname>Gambit::functor::loopManagerOrigin</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a1b0a360cfb0cd36dbcc2999c55a39537">loopManagerOrigin</reimplementedby>
+        <briefdescription>
+<para>Getter for revealing the module of the wrapped function&apos;s assigned loop manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="204" column="19" bodyfile="Elements/src/functors.cpp" bodystart="217" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a0d6a72d8be5c5225840ca3aee362cf15" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::breakLoop</definition>
+        <argsstring>()</argsstring>
+        <name>breakLoop</name>
+        <qualifiedname>Gambit::functor::breakLoop</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a5a6b4098cba80ad8277d6d1a362e702b">breakLoop</reimplementedby>
+        <briefdescription>
+<para>Tell the functor that the loop it manages should break now. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="207" column="20" bodyfile="Elements/src/functors.cpp" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ac518c00bed9dd3d570e0026439b2dfc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::dependencies</definition>
+        <argsstring>()</argsstring>
+        <name>dependencies</name>
+        <qualifiedname>Gambit::functor::dependencies</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1af4fc9e121a27ea7caf88113de68e2ed2">dependencies</reimplementedby>
+        <briefdescription>
+<para>Getter for listing currently activated dependencies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="210" column="24" bodyfile="Elements/src/functors.cpp" bodystart="224" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ab4b98ae7da7e5e1e0c1548de23c8d34c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::backendclassloading</definition>
+        <argsstring>()</argsstring>
+        <name>backendclassloading</name>
+        <qualifiedname>Gambit::functor::backendclassloading</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a4b17692c78ddabf74400feeed3db0855">backendclassloading</reimplementedby>
+        <briefdescription>
+<para>Getter for listing backends that require class loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="212" column="24" bodyfile="Elements/src/functors.cpp" bodystart="231" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a4b4ee671e729c3cf346d32c152e09451" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+        <definition>std::set&lt; str &gt; Gambit::functor::backendgroups</definition>
+        <argsstring>()</argsstring>
+        <name>backendgroups</name>
+        <qualifiedname>Gambit::functor::backendgroups</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a341556c2227a848fcbb0a80df970e53f">backendgroups</reimplementedby>
+        <briefdescription>
+<para>Getter for listing backend requirement groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="214" column="24" bodyfile="Elements/src/functors.cpp" bodystart="238" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1afe9c4e74bd8b8a44d155a6e40a972d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::backendreqs</definition>
+        <argsstring>()</argsstring>
+        <name>backendreqs</name>
+        <qualifiedname>Gambit::functor::backendreqs</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a367ffcfd016f5bd30123add599fdb0f7">backendreqs</reimplementedby>
+        <briefdescription>
+<para>Getter for listing all backend requirements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="216" column="24" bodyfile="Elements/src/functors.cpp" bodystart="245" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1af420350fc2c964e8ecedb39cad40ebae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::backendreqs</definition>
+        <argsstring>(str)</argsstring>
+        <name>backendreqs</name>
+        <qualifiedname>Gambit::functor::backendreqs</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a30f6ba1e10e57506ee8432019ba35b79">backendreqs</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <briefdescription>
+<para>Getter for listing backend requirements from a specific group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="218" column="24" bodyfile="Elements/src/functors.cpp" bodystart="252" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a1554bbdfe8007dc433aa15a4c6ba866a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::backendspermitted</definition>
+        <argsstring>(sspair)</argsstring>
+        <name>backendspermitted</name>
+        <qualifiedname>Gambit::functor::backendspermitted</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a81378addb3df54c89586340bd2e86187">backendspermitted</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref></type>
+        </param>
+        <briefdescription>
+<para>Getter for listing permitted backends. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="220" column="24" bodyfile="Elements/src/functors.cpp" bodystart="259" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a835e69ea8a95282d6381c2a5730b7d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+        <definition>std::set&lt; str &gt; Gambit::functor::backendreq_tags</definition>
+        <argsstring>(sspair)</argsstring>
+        <name>backendreq_tags</name>
+        <qualifiedname>Gambit::functor::backendreq_tags</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a3ee7d48e8177ba02bbeb96c13f513853">backendreq_tags</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref></type>
+        </param>
+        <briefdescription>
+<para>Getter for listing tags associated with backend requirements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="222" column="24" bodyfile="Elements/src/functors.cpp" bodystart="266" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a9b780439992b245c1942c01151052942" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::forcematchingbackend</definition>
+        <argsstring>(str)</argsstring>
+        <name>forcematchingbackend</name>
+        <qualifiedname>Gambit::functor::forcematchingbackend</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1ab1b1a8313374971f97ed8a6fde351f56">forcematchingbackend</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <briefdescription>
+<para>Getter for listing backend requirements that must be resolved from the same backend. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="224" column="24" bodyfile="Elements/src/functors.cpp" bodystart="273" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a05f0d4edd01eedd5b66d344977ec11d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::backend_conditional_dependencies</definition>
+        <argsstring>(str, str, str, str)</argsstring>
+        <name>backend_conditional_dependencies</name>
+        <qualifiedname>Gambit::functor::backend_conditional_dependencies</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a15351dd24c1f2efd8d0556dd06741c73">backend_conditional_dependencies</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <briefdescription>
+<para>Getter for listing backend-specific conditional dependencies (4-string version) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="227" column="24" bodyfile="Elements/src/functors.cpp" bodystart="281" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a58b95cb38cbdb73acec3dd3bd76c3242" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::backend_conditional_dependencies</definition>
+        <argsstring>(str req, str type, str be)</argsstring>
+        <name>backend_conditional_dependencies</name>
+        <qualifiedname>Gambit::functor::backend_conditional_dependencies</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a84713c26691d950b2aaff19bff556763">backend_conditional_dependencies</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>be</declname>
+        </param>
+        <briefdescription>
+<para>Getter for backend-specific conditional dependencies (3-string version) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="230" column="24" bodyfile="Elements/src/functors.cpp" bodystart="295" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a5b0966dbd47cdaf1dde6caea70701db4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::backend_conditional_dependencies</definition>
+        <argsstring>(functor *)</argsstring>
+        <name>backend_conditional_dependencies</name>
+        <qualifiedname>Gambit::functor::backend_conditional_dependencies</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a9789247dfe146dda5fdcf7c0fe642dab">backend_conditional_dependencies</reimplementedby>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+          <defname>be_functor</defname>
+        </param>
+        <briefdescription>
+<para>Getter for backend-specific conditional dependencies (backend functor pointer version) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="233" column="24" bodyfile="Elements/src/functors.cpp" bodystart="301" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aca3ff18371ef2f272aa011207a2015a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::model_conditional_dependencies</definition>
+        <argsstring>(str)</argsstring>
+        <name>model_conditional_dependencies</name>
+        <qualifiedname>Gambit::functor::model_conditional_dependencies</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a27f21017f968237acd5f5ca39521e78a">model_conditional_dependencies</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <briefdescription>
+<para>Getter for listing model-specific conditional dependencies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="236" column="24" bodyfile="Elements/src/functors.cpp" bodystart="308" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a54676e855d38746e897ac7bfcf713310" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt;</type>
+        <definition>std::set&lt; sspair &gt; Gambit::functor::model_conditional_backend_reqs</definition>
+        <argsstring>(str)</argsstring>
+        <name>model_conditional_backend_reqs</name>
+        <qualifiedname>Gambit::functor::model_conditional_backend_reqs</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1acba215f7ede05170a577c2c89302c2db">model_conditional_backend_reqs</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <briefdescription>
+<para>Getter for listing model-specific conditional backend requirements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="239" column="24" bodyfile="Elements/src/functors.cpp" bodystart="316" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aec1193154572515f633a20dbeb404482" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::resolveDependency</definition>
+        <argsstring>(functor *)</argsstring>
+        <name>resolveDependency</name>
+        <qualifiedname>Gambit::functor::resolveDependency</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1ab4e47058c7c0f72906ece2924d952882">resolveDependency</reimplementedby>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Resolve a dependency using a pointer to another functor object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="242" column="20" bodyfile="Elements/src/functors.cpp" bodystart="324" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1acd3f9e9d487ab066a0741a12d2e91b08" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::resolveLoopManager</definition>
+        <argsstring>(functor *)</argsstring>
+        <name>resolveLoopManager</name>
+        <qualifiedname>Gambit::functor::resolveLoopManager</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1ab5056f4b47a2c3a79bc44e4293532f07">resolveLoopManager</reimplementedby>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Set this functor&apos;s loop manager (if it has one) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="245" column="20" bodyfile="Elements/src/functors.cpp" bodystart="330" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a122745e3d3c9d9521b95e7a665d43abf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::resolveBackendReq</definition>
+        <argsstring>(functor *)</argsstring>
+        <name>resolveBackendReq</name>
+        <qualifiedname>Gambit::functor::resolveBackendReq</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1ae67ace8c39a2c53cb2a158d5bac0ddb4">resolveBackendReq</reimplementedby>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Resolve a backend requirement using a pointer to another functor object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="248" column="20" bodyfile="Elements/src/functors.cpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a92362795019e710f079b9613be971e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::notifyOfModel</definition>
+        <argsstring>(str)</argsstring>
+        <name>notifyOfModel</name>
+        <qualifiedname>Gambit::functor::notifyOfModel</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a9effd8a4100f67c39c4cd300a027ae22">notifyOfModel</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        </param>
+        <briefdescription>
+<para>Notify the functor that a certain model is being scanned, so that it can activate itself accordingly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify the functor that a certain model is being scanned, so that it can activate its dependencies accordingly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="251" column="20" bodyfile="Elements/src/functors.cpp" bodystart="342" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ae93379f2a736243cff0cdf79d0c2cb8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::notifyOfDependee</definition>
+        <argsstring>(functor *)</argsstring>
+        <name>notifyOfDependee</name>
+        <qualifiedname>Gambit::functor::notifyOfDependee</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a18664919c7999ac674d59f27d4d40a46">notifyOfDependee</reimplementedby>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Notify the functor that it is being used to fill a dependency of another functor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="254" column="20" bodyfile="Elements/src/functors.cpp" bodystart="348" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a55331421e9520337170079c18eaa88c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::notifyOfBackends</definition>
+        <argsstring>(std::map&lt; str, std::set&lt; str &gt; &gt;)</argsstring>
+        <name>notifyOfBackends</name>
+        <qualifiedname>Gambit::functor::notifyOfBackends</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a39ebf33238e29052273bfb688100bad4">notifyOfBackends</reimplementedby>
+        <param>
+          <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
+        </param>
+        <briefdescription>
+<para>Indicate to the functor which backends are actually loaded and working. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="257" column="20" bodyfile="Elements/src/functors.cpp" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a9ad7a0b7c132a040c5801b85c139f241" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::print</definition>
+        <argsstring>(Printers::BasePrinter *printer, const int pointID, int thread_num)</argsstring>
+        <name>print</name>
+        <qualifiedname>Gambit::functor::print</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor_3_01void_01_4_1ae82fbc7568ae4b0a382db9d5fde9b7dc">print</reimplementedby>
+        <reimplementedby refid="classGambit_1_1module__functor_1aa51b6fc974adb298ff6b2feeab91e1f8">print</reimplementedby>
+        <reimplementedby refid="classGambit_1_1module__functor_1aa51b6fc974adb298ff6b2feeab91e1f8">print</reimplementedby>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">Printers::BasePrinter</ref> *</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pointID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>thread_num</declname>
+        </param>
+        <briefdescription>
+<para>Printer function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Print function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="261" column="22" bodyfile="Elements/src/functors.cpp" bodystart="361" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1abe4ec31bb94bcdb0b9ab876ae6187e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::print</definition>
+        <argsstring>(Printers::BasePrinter *printer, const int pointID)</argsstring>
+        <name>print</name>
+        <qualifiedname>Gambit::functor::print</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor_3_01void_01_4_1ae6daf3683e8aa952884839ece07b441e">print</reimplementedby>
+        <reimplementedby refid="classGambit_1_1module__functor_1a3be3261712c311f7a9bd0be812d64a56">print</reimplementedby>
+        <reimplementedby refid="classGambit_1_1module__functor_1a3be3261712c311f7a9bd0be812d64a56">print</reimplementedby>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">Printers::BasePrinter</ref> *</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>Printer function (no-thread-index short-circuit) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="264" column="22" bodyfile="Elements/src/functors.cpp" bodystart="373" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1af8cb02a4a7aba6a4563bb5c358059f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classGambit_1_1invalid__point__exception" kindref="compound">invalid_point_exception</ref> *</type>
+        <definition>invalid_point_exception * Gambit::functor::retrieve_invalid_point_exception</definition>
+        <argsstring>()</argsstring>
+        <name>retrieve_invalid_point_exception</name>
+        <qualifiedname>Gambit::functor::retrieve_invalid_point_exception</qualifiedname>
+        <reimplementedby refid="classGambit_1_1module__functor__common_1a6dc067a3fa5774ca0f9eb1dfb67d2d53">retrieve_invalid_point_exception</reimplementedby>
+        <briefdescription>
+<para>Retrieve the previously saved exception generated when this functor invalidated the current point in model space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="268" column="39" bodyfile="Elements/src/functors.cpp" bodystart="653" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a52331ed1165075f4f5c8060cf4d95f03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::notifyOfIniOptions</definition>
+        <argsstring>(const Options &amp;)</argsstring>
+        <name>notifyOfIniOptions</name>
+        <qualifiedname>Gambit::functor::notifyOfIniOptions</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <defname>opt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify the functor about an instance of the options class that contains information from its corresponding ini-file entry in the auxiliaries or observables section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="273" column="12" bodyfile="Elements/src/functors.cpp" bodystart="382" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ab42c0faae1334f0e4aec38fa6dc2c3b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::functor::setOption</definition>
+        <argsstring>(const str &amp;key, const TYPE val)</argsstring>
+        <name>setOption</name>
+        <qualifiedname>Gambit::functor::setOption</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const TYPE</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set an option for the functor directly (for use in standalone executables). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="277" column="12" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aec86679016ed6a9a1ad2f20c1e3383e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &gt;</type>
+        <definition>safe_ptr&lt; Options &gt; Gambit::functor::getOptions</definition>
+        <argsstring>()</argsstring>
+        <name>getOptions</name>
+        <qualifiedname>Gambit::functor::getOptions</qualifiedname>
+        <briefdescription>
+<para>Return a safe pointer to the options that this functor is supposed to run with (e.g. from the ini file). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="283" column="16" bodyfile="Elements/src/functors.cpp" bodystart="388" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a3ed1caba9a4a281ff20d72e4e8354002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::notifyOfSubCaps</definition>
+        <argsstring>(const str &amp;)</argsstring>
+        <name>notifyOfSubCaps</name>
+        <qualifiedname>Gambit::functor::notifyOfSubCaps</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
+          <defname>subcap_string</defname>
+        </param>
+        <briefdescription>
+<para>Notify the functor about a string in <ref refid="namespaceYAML" kindref="compound">YAML</ref> that contains the sub-capability information (for use in standalones) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="286" column="12" bodyfile="Elements/src/functors.cpp" bodystart="394" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a3a9af0d5af87bd2210fb3e877b2e7c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::notifyOfSubCaps</definition>
+        <argsstring>(const Options &amp;)</argsstring>
+        <name>notifyOfSubCaps</name>
+        <qualifiedname>Gambit::functor::notifyOfSubCaps</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <defname>subcaps</defname>
+        </param>
+        <briefdescription>
+<para>Notify the functor about an instance of the options class that contains sub-capability information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="289" column="12" bodyfile="Elements/src/functors.cpp" bodystart="403" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a0372aeee11961e5b97ff9d0370375826" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::functor::setSubCap</definition>
+        <argsstring>(const str &amp;key, const TYPE val)</argsstring>
+        <name>setSubCap</name>
+        <qualifiedname>Gambit::functor::setSubCap</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const TYPE</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set a sub-capability (subcap)for the functor directly (for use in standalone executables). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="293" column="12" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="293" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a6842998c58e68c84b6dcc54fb5094c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &gt;</type>
+        <definition>safe_ptr&lt; Options &gt; Gambit::functor::getSubCaps</definition>
+        <argsstring>()</argsstring>
+        <name>getSubCaps</name>
+        <qualifiedname>Gambit::functor::getSubCaps</qualifiedname>
+        <briefdescription>
+<para>Return a safe pointer to the subcaps that this functor realises it is supposed to facilitate downstream calculation of. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="299" column="16" bodyfile="Elements/src/functors.cpp" bodystart="429" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aee7a9c98be2845c50e6953fdaf1195ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt; &gt;</type>
+        <definition>safe_ptr&lt; std::set&lt; sspair &gt; &gt; Gambit::functor::getDependees</definition>
+        <argsstring>()</argsstring>
+        <name>getDependees</name>
+        <qualifiedname>Gambit::functor::getDependees</qualifiedname>
+        <briefdescription>
+<para>Return a safe pointer to the vector of all capability,type pairs of functors arranged downstream of this one in the dependency tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="302" column="16" bodyfile="Elements/src/functors.cpp" bodystart="435" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a5f45ff02d2e4209dfb81bcb9ace3fb74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::allModelsAllowed</definition>
+        <argsstring>()</argsstring>
+        <name>allModelsAllowed</name>
+        <qualifiedname>Gambit::functor::allModelsAllowed</qualifiedname>
+        <briefdescription>
+<para>Test whether the functor is allowed to be used with all models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="305" column="12" bodyfile="Elements/src/functors.cpp" bodystart="466" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a961f601d1b7072be456f16a74a973a59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::modelAllowed</definition>
+        <argsstring>(str model)</argsstring>
+        <name>modelAllowed</name>
+        <qualifiedname>Gambit::functor::modelAllowed</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Test whether the functor is always allowed (either explicitly or implicitly) to be used with a given model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Test whether the functor is allowed (either explicitly or implicitly) to be used with a given model. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="308" column="12" bodyfile="Elements/src/functors.cpp" bodystart="441" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1ac089db4d75e7394e11530727bbade14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::modelExplicitlyAllowed</definition>
+        <argsstring>(str model)</argsstring>
+        <name>modelExplicitlyAllowed</name>
+        <qualifiedname>Gambit::functor::modelExplicitlyAllowed</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Test whether the functor is explictly always allowed to be used with a given model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Test whether the functor has been explictly allowed to be used with a given model. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="311" column="12" bodyfile="Elements/src/functors.cpp" bodystart="459" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1aa913b1602127b1115d211ad4dcafadfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setAllowedModel</definition>
+        <argsstring>(str model)</argsstring>
+        <name>setAllowedModel</name>
+        <qualifiedname>Gambit::functor::setAllowedModel</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Add a model to the internal list of models for which this functor is allowed to be used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="314" column="12" bodyfile="Elements/src/functors.cpp" bodystart="472" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1acfa856966c8346437fb99a746970336e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::modelComboAllowed</definition>
+        <argsstring>(std::set&lt; str &gt; combo)</argsstring>
+        <name>modelComboAllowed</name>
+        <qualifiedname>Gambit::functor::modelComboAllowed</qualifiedname>
+        <param>
+          <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+          <declname>combo</declname>
+        </param>
+        <briefdescription>
+<para>Test whether the functor is allowed (either explicitly or implicitly) to be used with a given combination of models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="317" column="12" bodyfile="Elements/src/functors.cpp" bodystart="475" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a828031c874c79018d35b710379cd32d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::modelComboExplicitlyAllowed</definition>
+        <argsstring>(std::set&lt; str &gt; combo)</argsstring>
+        <name>modelComboExplicitlyAllowed</name>
+        <qualifiedname>Gambit::functor::modelComboExplicitlyAllowed</qualifiedname>
+        <param>
+          <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+          <declname>combo</declname>
+        </param>
+        <briefdescription>
+<para>Test whether the functor has been explictly allowed to be used with a given combination of models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="320" column="12" bodyfile="Elements/src/functors.cpp" bodystart="499" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a36db93b4e79612e57f32fb807d427773" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setModelGroup</definition>
+        <argsstring>(str group, str contents)</argsstring>
+        <name>setModelGroup</name>
+        <qualifiedname>Gambit::functor::setModelGroup</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>group</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>contents</declname>
+        </param>
+        <briefdescription>
+<para>Add a model group definition to the internal list of model groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="323" column="12" bodyfile="Elements/src/functors.cpp" bodystart="523" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1abd0c5a0c01fe6b8188c4c12c136b3ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::setAllowedModelGroupCombo</definition>
+        <argsstring>(str groups)</argsstring>
+        <name>setAllowedModelGroupCombo</name>
+        <qualifiedname>Gambit::functor::setAllowedModelGroupCombo</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+<para>Add a combination of model groups to the internal list of combinations for which this functor is allowed to be used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a model group combination to the internal list of combinations for which this functor is allowed to be used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="326" column="12" bodyfile="Elements/src/functors.cpp" bodystart="533" bodyend="541"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classGambit_1_1functor_1a399d73c9f799c78274ad8715eec84d7b" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::functor::failBigTime</definition>
+        <argsstring>(str method)</argsstring>
+        <name>failBigTime</name>
+        <qualifiedname>Gambit::functor::failBigTime</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+<para>Attempt to retrieve a dependency or model parameter that has not been resolved. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="386" column="19" bodyfile="Elements/src/functors.cpp" bodystart="544" bodyend="553"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGambit_1_1functor_1a782b9e5700d5cb8035abd400447c656c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::allowed_parent_or_friend_exists</definition>
+        <argsstring>(str model)</argsstring>
+        <name>allowed_parent_or_friend_exists</name>
+        <qualifiedname>Gambit::functor::allowed_parent_or_friend_exists</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Test if there is a model in the functor&apos;s allowedModels list as which this model can be interpreted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="389" column="19" bodyfile="Elements/src/functors.cpp" bodystart="556" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a1f13657a8b3235a6645f9f5f65096972" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::in_allowed_combo</definition>
+        <argsstring>(str model)</argsstring>
+        <name>in_allowed_combo</name>
+        <qualifiedname>Gambit::functor::in_allowed_combo</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Check that a model is actually part of a combination that is allowed to be used with this functor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="392" column="19" bodyfile="Elements/src/functors.cpp" bodystart="569" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a86a00771d51c2f47765de71a8eb47de9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::contains_anything_interpretable_as_member_of</definition>
+        <argsstring>(std::set&lt; str &gt; combo, str group)</argsstring>
+        <name>contains_anything_interpretable_as_member_of</name>
+        <qualifiedname>Gambit::functor::contains_anything_interpretable_as_member_of</qualifiedname>
+        <param>
+          <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+          <declname>combo</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+<para>Test whether any of the entries in a given model group is a valid interpretation of any members in a given combination. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="395" column="19" bodyfile="Elements/src/functors.cpp" bodystart="594" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a160a2a34aa257a5683bd9d236d05499e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::functor::has_common_elements</definition>
+        <argsstring>(std::set&lt; str &gt; combo, str group)</argsstring>
+        <name>has_common_elements</name>
+        <qualifiedname>Gambit::functor::has_common_elements</qualifiedname>
+        <param>
+          <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+          <declname>combo</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+<para>Work out whether a given combination of models and a model group have any elements in common. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="398" column="19" bodyfile="Elements/src/functors.cpp" bodystart="616" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1functor_1a1102b665dfdd1e1c199bdf617ab43176" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::functor::find_friend_or_parent_model_in_map</definition>
+        <argsstring>(str model, std::map&lt; str, std::set&lt; sspair &gt; &gt; karta)</argsstring>
+        <name>find_friend_or_parent_model_in_map</name>
+        <qualifiedname>Gambit::functor::find_friend_or_parent_model_in_map</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::set&lt; <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &gt; &gt;</type>
+          <declname>karta</declname>
+        </param>
+        <briefdescription>
+<para>Try to find a parent or friend model in some user-supplied map from models to sspair vectors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Try to find a parent or friend model in some user-supplied map from models to sspair vectors Preferentially returns the &apos;least removed&apos; parent or friend, i.e. less steps back in the model lineage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="401" column="11" bodyfile="Elements/src/functors.cpp" bodystart="629" bodyend="650"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Function wrapper (functor) base class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Gambit::backend_functor&lt; TYPE(*)(ARGS...), TYPE, ARGS... &gt;</label>
+        <link refid="classGambit_1_1backend__functor_3_01TYPE_07_5_08_07ARGS_8_8_8_08_00_01TYPE_00_01ARGS_8_8_8_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gambit::backend_functor&lt; typename variadic_ptr&lt; TYPE, ARGS... &gt;::type, TYPE, ARGS... &gt;</label>
+        <link refid="classGambit_1_1backend__functor_3_01typename_01variadic__ptr_3_01TYPE_00_01ARGS_8_8_8_01_4_1_1ty72d3974d93bcbccd5afc933e90698111"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</label>
+        <link refid="classGambit_1_1backend__functor_3_01typename_01variadic__ptr_3_01void_00_01ARGS_8_8_8_01_4_1_1tyf70fe5b8dacf530fb4e50c81f52a10d6"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gambit::backend_functor&lt; void(*)(ARGS...), void, ARGS... &gt;</label>
+        <link refid="classGambit_1_1backend__functor_3_01void_07_5_08_07ARGS_8_8_8_08_00_01void_00_01ARGS_8_8_8_01_4"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Gambit::backend_functor_common&lt; PTR_TYPE, TYPE, ARGS &gt;</label>
+        <link refid="classGambit_1_1backend__functor__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::functor</label>
+        <link refid="classGambit_1_1functor"/>
+      </node>
+      <node id="13">
+        <label>Gambit::model_functor</label>
+        <link refid="classGambit_1_1model__functor"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Gambit::module_functor&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1module__functor"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Gambit::module_functor&lt; void &gt;</label>
+        <link refid="classGambit_1_1module__functor_3_01void_01_4"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gambit::module_functor_common</label>
+        <link refid="classGambit_1_1module__functor__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Gambit::primary_model_functor</label>
+        <link refid="classGambit_1_1primary__model__functor"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::backend_functor_common&lt; TYPE(*)(ARGS...), TYPE, ARGS... &gt;</label>
+        <link refid="classGambit_1_1backend__functor__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gambit::backend_functor_common&lt; variadic_ptr&lt; TYPE, ARGS... &gt;::type, TYPE, ARGS... &gt;</label>
+        <link refid="classGambit_1_1backend__functor__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gambit::backend_functor_common&lt; variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</label>
+        <link refid="classGambit_1_1backend__functor__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gambit::backend_functor_common&lt; void(*)(ARGS...), void, ARGS... &gt;</label>
+        <link refid="classGambit_1_1backend__functor__common"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Gambit::module_functor&lt; ModelParameters &gt;</label>
+        <link refid="classGambit_1_1module__functor"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Models::ModelFunctorClaw</label>
+        <link refid="classGambit_1_1Models_1_1ModelFunctorClaw"/>
+      </node>
+      <node id="4">
+        <label>Gambit::Options</label>
+        <link refid="classGambit_1_1Options"/>
+      </node>
+      <node id="1">
+        <label>Gambit::functor</label>
+        <link refid="classGambit_1_1functor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>myCapability</edgelabel>
+          <edgelabel>myCitationKey</edgelabel>
+          <edgelabel>myName</edgelabel>
+          <edgelabel>myOrigin</edgelabel>
+          <edgelabel>myPurpose</edgelabel>
+          <edgelabel>myType</edgelabel>
+          <edgelabel>myVersion</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>myClaw</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>myOptions</edgelabel>
+          <edgelabel>mySubCaps</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="Elements/include/gambit/Elements/functors.hpp" line="91" column="3" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="92" bodyend="406"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1functor_1a5f45ff02d2e4209dfb81bcb9ace3fb74" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>allModelsAllowed</name></member>
+      <member refid="classGambit_1_1functor_1a782b9e5700d5cb8035abd400447c656c" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>allowed_parent_or_friend_exists</name></member>
+      <member refid="classGambit_1_1functor_1a4f73fb1475364081fa23944b7c95c7b3" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>allowedGroupCombos</name></member>
+      <member refid="classGambit_1_1functor_1ac70ec922e8a3f04f6878ffafc231e379" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>allowedModels</name></member>
+      <member refid="classGambit_1_1functor_1a05f0d4edd01eedd5b66d344977ec11d9" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backend_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1functor_1a58b95cb38cbdb73acec3dd3bd76c3242" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backend_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1functor_1a5b0966dbd47cdaf1dde6caea70701db4" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backend_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1functor_1ab4b98ae7da7e5e1e0c1548de23c8d34c" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backendclassloading</name></member>
+      <member refid="classGambit_1_1functor_1a4b4ee671e729c3cf346d32c152e09451" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backendgroups</name></member>
+      <member refid="classGambit_1_1functor_1a835e69ea8a95282d6381c2a5730b7d2d" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backendreq_tags</name></member>
+      <member refid="classGambit_1_1functor_1afe9c4e74bd8b8a44d155a6e40a972d4c" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backendreqs</name></member>
+      <member refid="classGambit_1_1functor_1af420350fc2c964e8ecedb39cad40ebae" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backendreqs</name></member>
+      <member refid="classGambit_1_1functor_1a1554bbdfe8007dc433aa15a4c6ba866a" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>backendspermitted</name></member>
+      <member refid="classGambit_1_1functor_1a0d6a72d8be5c5225840ca3aee362cf15" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>breakLoop</name></member>
+      <member refid="classGambit_1_1functor_1ad4511b7324e416ec8a881bc2d3d7870e" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>calculate</name></member>
+      <member refid="classGambit_1_1functor_1ac271e5cc6323f96fbd9aeb3ba8ba3bab" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>canBeLoopManager</name></member>
+      <member refid="classGambit_1_1functor_1abbad0238d51adf088d97fe4376586890" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>capability</name></member>
+      <member refid="classGambit_1_1functor_1ad1763580d476b082690ddebfd877e98b" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>citationKey</name></member>
+      <member refid="classGambit_1_1functor_1a86a00771d51c2f47765de71a8eb47de9" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>contains_anything_interpretable_as_member_of</name></member>
+      <member refid="classGambit_1_1functor_1ac518c00bed9dd3d570e0026439b2dfc2" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>dependencies</name></member>
+      <member refid="classGambit_1_1functor_1a399d73c9f799c78274ad8715eec84d7b" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>failBigTime</name></member>
+      <member refid="classGambit_1_1functor_1a1102b665dfdd1e1c199bdf617ab43176" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>find_friend_or_parent_model_in_map</name></member>
+      <member refid="classGambit_1_1functor_1a9b780439992b245c1942c01151052942" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>forcematchingbackend</name></member>
+      <member refid="classGambit_1_1functor_1a970d23b026a50dd8b029795a004b4183" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>functor</name></member>
+      <member refid="classGambit_1_1functor_1aee7a9c98be2845c50e6953fdaf1195ff" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>getDependees</name></member>
+      <member refid="classGambit_1_1functor_1a16e487c93d71375ad93223f836493dd3" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>getInvalidationRate</name></member>
+      <member refid="classGambit_1_1functor_1aec86679016ed6a9a1ad2f20c1e3383e9" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>getOptions</name></member>
+      <member refid="classGambit_1_1functor_1ac79cd5e35a61931feee5c00e5eafec3b" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>getRuntimeAverage</name></member>
+      <member refid="classGambit_1_1functor_1a6842998c58e68c84b6dcc54fb5094c5c" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>getSubCaps</name></member>
+      <member refid="classGambit_1_1functor_1a160a2a34aa257a5683bd9d236d05499e" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>has_common_elements</name></member>
+      <member refid="classGambit_1_1functor_1a1f13657a8b3235a6645f9f5f65096972" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>in_allowed_combo</name></member>
+      <member refid="classGambit_1_1functor_1ad058829b78226cf3b0dcb310a4668256" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>label</name></member>
+      <member refid="classGambit_1_1functor_1a8605c698d5d7e55b8a2bd47af9c466cb" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>loopManagerCapability</name></member>
+      <member refid="classGambit_1_1functor_1a259892482655c006e7f278bbdcb837a1" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>loopManagerName</name></member>
+      <member refid="classGambit_1_1functor_1a3cc77fbfc1442a29d6453da3add9acf3" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>loopManagerOrigin</name></member>
+      <member refid="classGambit_1_1functor_1ac9ce89a8ae79c6307e29596549d8ee41" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>loopManagerType</name></member>
+      <member refid="classGambit_1_1functor_1a54676e855d38746e897ac7bfcf713310" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>model_conditional_backend_reqs</name></member>
+      <member refid="classGambit_1_1functor_1aca3ff18371ef2f272aa011207a2015a0" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>model_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1functor_1a961f601d1b7072be456f16a74a973a59" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>modelAllowed</name></member>
+      <member refid="classGambit_1_1functor_1acfa856966c8346437fb99a746970336e" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>modelComboAllowed</name></member>
+      <member refid="classGambit_1_1functor_1a828031c874c79018d35b710379cd32d2" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>modelComboExplicitlyAllowed</name></member>
+      <member refid="classGambit_1_1functor_1ac089db4d75e7394e11530727bbade14e" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>modelExplicitlyAllowed</name></member>
+      <member refid="classGambit_1_1functor_1a6149708cf859ce1290dd447f16291e8b" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>modelGroups</name></member>
+      <member refid="classGambit_1_1functor_1ab8e599294e315beb4df8154b6e7ba499" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myCapability</name></member>
+      <member refid="classGambit_1_1functor_1af7284750b2816b9c1601a5e4637a503c" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myCitationKey</name></member>
+      <member refid="classGambit_1_1functor_1a7f185782b166c86c8c1488e3e28966d2" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myClaw</name></member>
+      <member refid="classGambit_1_1functor_1a22acc6454f7896c3d4dcb497e62f2e65" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myDependees</name></member>
+      <member refid="classGambit_1_1functor_1a55aa9ef92692ece18544675da08ef49e" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myLabel</name></member>
+      <member refid="classGambit_1_1functor_1ad9345bebb312d0352f8576d57b326759" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myName</name></member>
+      <member refid="classGambit_1_1functor_1a7cc789adf4e03cd04865f3c85d0ec42b" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myOptions</name></member>
+      <member refid="classGambit_1_1functor_1a0a323ed83c7025b6d789e7fac64addc7" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myOrigin</name></member>
+      <member refid="classGambit_1_1functor_1ac061cc96139bf564778406ecc67cc0a9" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myPurpose</name></member>
+      <member refid="classGambit_1_1functor_1a41bf64d7ddcd9ee48ef849344a803b55" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myStatus</name></member>
+      <member refid="classGambit_1_1functor_1a91801bf8dad62e88dcd1c0d677543d03" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>mySubCaps</name></member>
+      <member refid="classGambit_1_1functor_1a8ce50c7d7fcf5afa751b258895dd6dad" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myTimingLabel</name></member>
+      <member refid="classGambit_1_1functor_1a9501f612101222191ac4eb41c5ef91af" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myTimingVertexID</name></member>
+      <member refid="classGambit_1_1functor_1a799a78be10d270a75bf1c3881178daab" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myType</name></member>
+      <member refid="classGambit_1_1functor_1a4de522a9d806a77959580b9a21c922d4" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myVersion</name></member>
+      <member refid="classGambit_1_1functor_1a004751aadc8af70cdb28fa25ba661f76" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>myVertexID</name></member>
+      <member refid="classGambit_1_1functor_1aaea7be169ef23d9221b4f85bc52eacb4" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>name</name></member>
+      <member refid="classGambit_1_1functor_1a55331421e9520337170079c18eaa88c7" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>notifyOfBackends</name></member>
+      <member refid="classGambit_1_1functor_1ae93379f2a736243cff0cdf79d0c2cb8c" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>notifyOfDependee</name></member>
+      <member refid="classGambit_1_1functor_1a52331ed1165075f4f5c8060cf4d95f03" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>notifyOfIniOptions</name></member>
+      <member refid="classGambit_1_1functor_1a109636f48b8cb43ea184fb676cbedf39" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>notifyOfInvalidation</name></member>
+      <member refid="classGambit_1_1functor_1a92362795019e710f079b9613be971e4f" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>notifyOfModel</name></member>
+      <member refid="classGambit_1_1functor_1a3ed1caba9a4a281ff20d72e4e8354002" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>notifyOfSubCaps</name></member>
+      <member refid="classGambit_1_1functor_1a3a9af0d5af87bd2210fb3e877b2e7c9a" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>notifyOfSubCaps</name></member>
+      <member refid="classGambit_1_1functor_1a150f27ecb8a2eb9c3739a809dc5b7c83" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>origin</name></member>
+      <member refid="classGambit_1_1functor_1a9ad7a0b7c132a040c5801b85c139f241" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>print</name></member>
+      <member refid="classGambit_1_1functor_1abe4ec31bb94bcdb0b9ab876ae6187e8a" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>print</name></member>
+      <member refid="classGambit_1_1functor_1aec5300fbdb253cd9a09edffbfdafb526" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>purpose</name></member>
+      <member refid="classGambit_1_1functor_1a7be700dee4f9d9cc5a9efaa0ff2cbab0" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>quantity</name></member>
+      <member refid="classGambit_1_1functor_1a9c2a14819589380ff81cc3b1b2a9d78a" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>requiresPrinting</name></member>
+      <member refid="classGambit_1_1functor_1a5d1ae4ff6f5e0be7e16fb15938d9387f" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>requiresTimingPrinting</name></member>
+      <member refid="classGambit_1_1functor_1aef1a95ee87c3be96dbe515cc3105df1f" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>reset</name></member>
+      <member refid="classGambit_1_1functor_1ac0a433e94cc5725e0d8f48d4cad897c5" prot="protected" virt="virtual"><scope>Gambit::functor</scope><name>reset</name></member>
+      <member refid="classGambit_1_1functor_1a3fa95b5cde845f17d17fc40fa8e205e5" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>reset_and_calculate</name></member>
+      <member refid="classGambit_1_1functor_1a122745e3d3c9d9521b95e7a665d43abf" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>resolveBackendReq</name></member>
+      <member refid="classGambit_1_1functor_1aec1193154572515f633a20dbeb404482" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>resolveDependency</name></member>
+      <member refid="classGambit_1_1functor_1acd3f9e9d487ab066a0741a12d2e91b08" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>resolveLoopManager</name></member>
+      <member refid="classGambit_1_1functor_1af8cb02a4a7aba6a4563bb5c358059f6a" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>retrieve_invalid_point_exception</name></member>
+      <member refid="classGambit_1_1functor_1a973dd85d7e1f3b57c3eb98030a8cf237" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>safe_version</name></member>
+      <member refid="classGambit_1_1functor_1aa913b1602127b1115d211ad4dcafadfb" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setAllowedModel</name></member>
+      <member refid="classGambit_1_1functor_1abd0c5a0c01fe6b8188c4c12c136b3ebb" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setAllowedModelGroupCombo</name></member>
+      <member refid="classGambit_1_1functor_1a25ceb7a5540a94d11695f55c08a35fa3" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>setFadeRate</name></member>
+      <member refid="classGambit_1_1functor_1af005b2c5a8673df8402c10b7cdf78082" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>setInUse</name></member>
+      <member refid="classGambit_1_1functor_1a80c9104d6d5d7a7b8af078f50b06c5f4" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>setIteration</name></member>
+      <member refid="classGambit_1_1functor_1a36db93b4e79612e57f32fb807d427773" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setModelGroup</name></member>
+      <member refid="classGambit_1_1functor_1ab3dbaa4eb0d598e0990ff8e6ac959dc7" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>setNestedList</name></member>
+      <member refid="classGambit_1_1functor_1ab42c0faae1334f0e4aec38fa6dc2c3b2" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setOption</name></member>
+      <member refid="classGambit_1_1functor_1ae47ce614bb3ebb36fb24a60a115de3d2" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>setPrintRequirement</name></member>
+      <member refid="classGambit_1_1functor_1a505e1eec8cb10fab9a310cd07ddaa7b2" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setPurpose</name></member>
+      <member refid="classGambit_1_1functor_1aa5b8e133948384570684245abcd0a137" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setStatus</name></member>
+      <member refid="classGambit_1_1functor_1a0372aeee11961e5b97ff9d0370375826" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setSubCap</name></member>
+      <member refid="classGambit_1_1functor_1ade7117c926fd3e16594a8a38aa41479f" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>setTimingPrintRequirement</name></member>
+      <member refid="classGambit_1_1functor_1aa3672cd13d12ba53572d7b40bb74121e" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setTimingVertexID</name></member>
+      <member refid="classGambit_1_1functor_1a662c46ed6b31a1525a983c9cf7ebdf2b" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>setVertexID</name></member>
+      <member refid="classGambit_1_1functor_1a2ba190773faaf6e644d74ab24c709d2a" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>status</name></member>
+      <member refid="classGambit_1_1functor_1afec52bd9d7b3fb3a83cece403d48626b" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>timingLabel</name></member>
+      <member refid="classGambit_1_1functor_1ad33185ce2c0ff77e0e14e4606d8efa1a" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>timingVertexID</name></member>
+      <member refid="classGambit_1_1functor_1a913d44680b347e3e9261601b3bdb6f80" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>type</name></member>
+      <member refid="classGambit_1_1functor_1a3d9cf03cce51e7e134bbe1d7dcf37541" prot="protected" virt="non-virtual"><scope>Gambit::functor</scope><name>verbose</name></member>
+      <member refid="classGambit_1_1functor_1a876de7e3fb4b6611e0a90a24ec889aed" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>version</name></member>
+      <member refid="classGambit_1_1functor_1a94892ac8fa2e37f15cab798bbd189bcb" prot="public" virt="non-virtual"><scope>Gambit::functor</scope><name>vertexID</name></member>
+      <member refid="classGambit_1_1functor_1a107e83b861fcc192e776352b6fe3719f" prot="public" virt="virtual"><scope>Gambit::functor</scope><name>~functor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

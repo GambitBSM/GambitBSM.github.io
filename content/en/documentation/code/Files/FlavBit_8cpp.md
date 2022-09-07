@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# src/FlavBit.cpp
 
 
 
@@ -16,7 +15,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[YAML](/documentation/code/namespaces/namespaceyaml/)**  |
+| **[YAML](/documentation/code/namespaces/namespaceyaml/)** <br>[YAML]() overloads for mass cut and mass cut ratio constituents.  |
 | **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 | **[Gambit::FlavBit](/documentation/code/namespaces/namespacegambit_1_1flavbit/)**  |
 
@@ -24,7 +23,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[YAML::convert< Gambit::nuiscorr >](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/)** <br>YAML conversion structure for SuperIso SM nuisance data.  |
+| struct | **[YAML::convert< Gambit::nuiscorr >](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/)** <br>[YAML](/documentation/code/namespaces/namespaceyaml/) conversion structure for SuperIso SM nuisance data.  |
 
 ## Defines
 
@@ -3305,4 +3304,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:53 +0000

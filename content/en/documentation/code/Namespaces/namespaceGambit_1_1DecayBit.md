@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DecayBit
 
 
 
@@ -26,108 +25,108 @@ description: "[No description available]"
 | -------------- | -------------- |
 | double | **[sqrt_lambda](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sqrt-lambda)**(double a, double b, double c)<br>Square root of the standard kinematic function lambda(a,b,c)  |
 | std::complex< double > | **[BW](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-bw)**(double q2, double m2, double imag_term)<br>Breit-Wigner pole (complex)  |
-| void | **[check_width](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-check-width)**(const str & info, double & w, bool raise_invalid_pt_negative_width =false, bool raise_invalid_pt_large_width =false)<br>Check if a width is negative or suspiciously large and raise an error.  |
-| void | **[compute_SM_higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-compute-sm-higgs-decays)**(DecayTable::Entry & result, double mh)<br>Populate SM Higgs decay channels for a higgs mass of m_h.  |
-| void | **[set_FH_neutral_h_decay](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-set-fh-neutral-h-decay)**(DecayTable::Entry & result, int iH, const [fh_Couplings_container](/documentation/code/classes/structgambit_1_1fh__couplings__container/) & FH_input, const mass_es_pseudonyms & psn, bool invalidate, bool SM)<br>Set neutral h decays computed by FeynHiggs.  |
-| void | **[W_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-w-plus-decays)**(DecayTable::Entry & result) |
-| void | **[Z_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-z-decays)**(DecayTable::Entry & result) |
-| void | **[t_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-t-decays)**(DecayTable::Entry & result) |
-| void | **[mu_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-mu-plus-decays)**(DecayTable::Entry & result) |
-| void | **[tau_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-tau-plus-decays)**(DecayTable::Entry & result) |
-| void | **[pi_0_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-pi-0-decays)**(DecayTable::Entry & result) |
-| void | **[pi_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-pi-plus-decays)**(DecayTable::Entry & result) |
-| void | **[eta_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-eta-decays)**(DecayTable::Entry & result) |
-| void | **[rho_0_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rho-0-decays)**(DecayTable::Entry & result) |
-| void | **[rho_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rho-plus-decays)**(DecayTable::Entry & result) |
-| void | **[omega_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-omega-decays)**(DecayTable::Entry & result) |
-| void | **[rho1450_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rho1450-decays)**(DecayTable::Entry & result) |
-| void | **[W_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-w-minus-decays)**(DecayTable::Entry & result) |
-| void | **[tbar_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-tbar-decays)**(DecayTable::Entry & result) |
-| void | **[mu_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-mu-minus-decays)**(DecayTable::Entry & result) |
-| void | **[tau_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-tau-minus-decays)**(DecayTable::Entry & result) |
-| void | **[pi_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-pi-minus-decays)**(DecayTable::Entry & result) |
-| void | **[rho_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rho-minus-decays)**(DecayTable::Entry & result) |
-| void | **[Ref_SM_Higgs_decays_table](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-higgs-decays-table)**(DecayTable::Entry & result)<br>Reference SM Higgs decays.  |
-| void | **[Ref_SM_other_Higgs_decays_table](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-other-higgs-decays-table)**(DecayTable::Entry & result)<br>Reference SM Higgs decays from LHCHiggsXSWG: least SM-like Higgs.  |
-| void | **[Ref_SM_A0_decays_table](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-a0-decays-table)**(DecayTable::Entry & result)<br>Reference SM Higgs decays from LHCHiggsXSWG: A0.  |
-| void | **[Ref_SM_Higgs_decays_FeynHiggs](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-higgs-decays-feynhiggs)**(DecayTable::Entry & result)<br>Reference SM Higgs decays from FeynHiggs: h0_1.  |
-| void | **[Ref_SM_other_Higgs_decays_FH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-other-higgs-decays-fh)**(DecayTable::Entry & result)<br>Reference SM Higgs decays from FeynHiggs: h0_2.  |
-| void | **[Ref_SM_A0_decays_FH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-a0-decays-fh)**(DecayTable::Entry & result)<br>Reference SM Higgs decays from FeynHiggs: A0.  |
-| void | **[H_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-h-minus-decays)**(DecayTable::Entry & result) |
-| void | **[stopbar_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stopbar-1-decays)**(DecayTable::Entry & result) |
-| void | **[stopbar_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stopbar-2-decays)**(DecayTable::Entry & result) |
-| void | **[sbottombar_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sbottombar-1-decays)**(DecayTable::Entry & result) |
-| void | **[sbottombar_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sbottombar-2-decays)**(DecayTable::Entry & result) |
-| void | **[supbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-supbar-l-decays)**(DecayTable::Entry & result) |
-| void | **[supbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-supbar-r-decays)**(DecayTable::Entry & result) |
-| void | **[sdownbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sdownbar-l-decays)**(DecayTable::Entry & result) |
-| void | **[sdownbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sdownbar-r-decays)**(DecayTable::Entry & result) |
-| void | **[scharmbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scharmbar-l-decays)**(DecayTable::Entry & result) |
-| void | **[scharmbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scharmbar-r-decays)**(DecayTable::Entry & result) |
-| void | **[sstrangebar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sstrangebar-l-decays)**(DecayTable::Entry & result) |
-| void | **[sstrangebar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sstrangebar-r-decays)**(DecayTable::Entry & result) |
-| void | **[selectronbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-selectronbar-l-decays)**(DecayTable::Entry & result) |
-| void | **[selectronbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-selectronbar-r-decays)**(DecayTable::Entry & result) |
-| void | **[smuonbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-smuonbar-l-decays)**(DecayTable::Entry & result) |
-| void | **[smuonbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-smuonbar-r-decays)**(DecayTable::Entry & result) |
-| void | **[staubar_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-staubar-1-decays)**(DecayTable::Entry & result) |
-| void | **[staubar_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-staubar-2-decays)**(DecayTable::Entry & result) |
-| void | **[snubar_electronl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snubar-electronl-decays)**(DecayTable::Entry & result) |
-| void | **[snubar_muonl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snubar-muonl-decays)**(DecayTable::Entry & result) |
-| void | **[snubar_taul_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snubar-taul-decays)**(DecayTable::Entry & result) |
-| void | **[chargino_minus_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-minus-1-decays)**(DecayTable::Entry & result) |
-| void | **[chargino_minus_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-minus-2-decays)**(DecayTable::Entry & result) |
-| DecayTable::Entry | **[CP_conjugate](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-cp-conjugate)**(const DecayTable::Entry & in)<br>Construct a decay table entry for a particle from the entry for its antiparticle.  |
-| void | **[SM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sm-higgs-decays)**(DecayTable::Entry & result)<br>SM decays: Higgs.  |
-| void | **[FeynHiggs_t_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-t-decays)**(DecayTable::Entry & result) |
-| void | **[FeynHiggs_MSSM_h0_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-mssm-h0-1-decays)**(DecayTable::Entry & result)<br>FeynHiggs MSSM decays: h0_1.  |
-| void | **[FeynHiggs_h0_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-h0-2-decays)**(DecayTable::Entry & result)<br>FeynHiggs MSSM decays: h0_2.  |
-| void | **[FeynHiggs_A0_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-a0-decays)**(DecayTable::Entry & result)<br>FeynHiggs MSSM decays: A0.  |
-| void | **[FeynHiggs_H_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-h-plus-decays)**(DecayTable::Entry & result)<br>FeynHiggs MSSM decays: H+.  |
-| void | **[MSSM_h0_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-mssm-h0-1-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: h0_1.  |
-| void | **[h0_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-h0-2-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: h0_2.  |
-| void | **[A0_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-a0-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: A0.  |
-| void | **[H_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-h-plus-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: H_plus.  |
-| void | **[gluino_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-gluino-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: gluino.  |
-| void | **[stop_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stop-1-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: stop_1.  |
-| void | **[stop_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stop-2-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: stop_2.  |
-| void | **[sbottom_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sbottom-1-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: sbottom_1.  |
-| void | **[sbottom_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sbottom-2-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: sbottom_2.  |
-| void | **[sup_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sup-l-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: sup_l.  |
-| void | **[sup_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sup-r-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: sup_r.  |
-| void | **[sdown_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sdown-l-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: sdown_l.  |
-| void | **[sdown_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sdown-r-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: sdown_r.  |
-| void | **[scharm_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scharm-l-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: scharm_l.  |
-| void | **[scharm_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scharm-r-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: scharm_r.  |
-| void | **[sstrange_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sstrange-l-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: sstrange_l.  |
-| void | **[sstrange_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sstrange-r-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: sstrange_r.  |
-| void | **[selectron_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-selectron-l-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: selectron_l.  |
-| void | **[selectron_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-selectron-r-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: selectron_r.  |
-| void | **[smuon_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-smuon-l-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: smuon_l.  |
-| void | **[smuon_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-smuon-r-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: smuon_r.  |
-| void | **[stau_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-1-decays)**(DecayTable::Entry & result)<br>MSSM decays: stau_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings)  |
-| void | **[stau_1_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-1-decays-sh)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: stau_1.  |
-| void | **[stau_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-2-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: stau_2.  |
-| void | **[snu_electronl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-electronl-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: snu_electronl.  |
-| void | **[snu_muonl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-muonl-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: snu_muonl.  |
-| void | **[snu_taul_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-taul-decays)**(DecayTable::Entry & result) |
-| void | **[chargino_plus_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays)**(DecayTable::Entry & result)<br>MSSM decays: chargino_plus_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings)  |
-| void | **[chargino_plus_1_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-sh)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: chargino_plus_1.  |
-| void | **[chargino_plus_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-2-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: chargino_plus_2.  |
-| void | **[neutralino_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-1-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: neutralino_1.  |
-| void | **[neutralino_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-2-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: neutralino_2.  |
-| void | **[neutralino_3_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-3-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: neutralino_3.  |
-| void | **[neutralino_4_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-4-decays)**(DecayTable::Entry & result)<br>SUSY-HIT MSSM decays: neutralino_4.  |
-| void | **[chargino_plus_1_decays_smallsplit](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-smallsplit)**(DecayTable::Entry & result) |
-| void | **[stau_1_decays_smallsplit](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-1-decays-smallsplit)**(DecayTable::Entry & result) |
-| void | **[ScalarSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scalarsingletdm-higgs-decays)**(DecayTable::Entry & result)<br>Add the decay of Higgs to singlets for the ScalarSingletDM models.  |
-| void | **[VectorSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-vectorsingletdm-higgs-decays)**(DecayTable::Entry & result)<br>Add the decay of Higgs to vectors for the VectorSingletDM models (see arXiv:1512.06458v4)  |
-| void | **[MajoranaSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-majoranasingletdm-higgs-decays)**(DecayTable::Entry & result)<br>Add the decay of Higgs to Majorana fermions for the MajoranaSingletDM models (see arXiv:1512.06458v4)  |
-| void | **[DiracSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-diracsingletdm-higgs-decays)**(DecayTable::Entry & result)<br>Add the decay of Higgs to Dirac fermions for the DiracSingletDM models (see arXiv:1512.06458v4)  |
-| void | **[all_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-all-decays)**(DecayTable & decays)<br>Collect all the DecayTable entries into an actual DecayTable.  |
-| void | **[all_decays_from_SLHA](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-all-decays-from-slha)**(DecayTable & decays) |
-| void | **[get_decaytable_as_map](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-decaytable-as-map)**(map_str_dbl & map)<br>Convert the DecayTable to a format where we can print each individual channel's BF.  |
-| void | **[get_mass_es_pseudonyms](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-mass-es-pseudonyms)**(mass_es_pseudonyms & result)<br>Get MSSM mass eigenstate pseudonyms for the gauge eigenstates.  |
+| void | **[check_width](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-check-width)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & info, double & w, bool raise_invalid_pt_negative_width =false, bool raise_invalid_pt_large_width =false)<br>Check if a width is negative or suspiciously large and raise an error.  |
+| void | **[compute_SM_higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-compute-sm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result, double mh)<br>Populate SM Higgs decay channels for a higgs mass of m_h.  |
+| void | **[set_FH_neutral_h_decay](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-set-fh-neutral-h-decay)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result, int iH, const [fh_Couplings_container](/documentation/code/classes/structgambit_1_1fh__couplings__container/) & FH_input, const [mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/) & psn, bool invalidate, bool SM)<br>Set neutral h decays computed by FeynHiggs.  |
+| void | **[W_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-w-plus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[Z_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-z-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[t_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-t-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[mu_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-mu-plus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[tau_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-tau-plus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[pi_0_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-pi-0-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[pi_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-pi-plus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[eta_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-eta-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[rho_0_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rho-0-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[rho_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rho-plus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[omega_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-omega-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[rho1450_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rho1450-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[W_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-w-minus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[tbar_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-tbar-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[mu_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-mu-minus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[tau_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-tau-minus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[pi_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-pi-minus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[rho_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rho-minus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[Ref_SM_Higgs_decays_table](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-higgs-decays-table)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Reference SM Higgs decays.  |
+| void | **[Ref_SM_other_Higgs_decays_table](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-other-higgs-decays-table)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Reference SM Higgs decays from LHCHiggsXSWG: least SM-like Higgs.  |
+| void | **[Ref_SM_A0_decays_table](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-a0-decays-table)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Reference SM Higgs decays from LHCHiggsXSWG: A0.  |
+| void | **[Ref_SM_Higgs_decays_FeynHiggs](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-higgs-decays-feynhiggs)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Reference SM Higgs decays from FeynHiggs: h0_1.  |
+| void | **[Ref_SM_other_Higgs_decays_FH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-other-higgs-decays-fh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Reference SM Higgs decays from FeynHiggs: h0_2.  |
+| void | **[Ref_SM_A0_decays_FH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ref-sm-a0-decays-fh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Reference SM Higgs decays from FeynHiggs: A0.  |
+| void | **[H_minus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-h-minus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[stopbar_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stopbar-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[stopbar_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stopbar-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[sbottombar_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sbottombar-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[sbottombar_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sbottombar-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[supbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-supbar-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[supbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-supbar-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[sdownbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sdownbar-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[sdownbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sdownbar-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[scharmbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scharmbar-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[scharmbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scharmbar-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[sstrangebar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sstrangebar-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[sstrangebar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sstrangebar-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[selectronbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-selectronbar-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[selectronbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-selectronbar-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[smuonbar_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-smuonbar-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[smuonbar_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-smuonbar-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[staubar_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-staubar-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[staubar_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-staubar-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[snubar_electronl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snubar-electronl-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[snubar_muonl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snubar-muonl-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[snubar_taul_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snubar-taul-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[chargino_minus_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-minus-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[chargino_minus_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-minus-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| [DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) | **[CP_conjugate](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-cp-conjugate)**(const [DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & in)<br>Construct a decay table entry for a particle from the entry for its antiparticle.  |
+| void | **[SM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SM decays: Higgs.  |
+| void | **[FeynHiggs_t_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-t-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[FeynHiggs_MSSM_h0_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-mssm-h0-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>FeynHiggs MSSM decays: h0_1.  |
+| void | **[FeynHiggs_h0_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-h0-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>FeynHiggs MSSM decays: h0_2.  |
+| void | **[FeynHiggs_A0_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-a0-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>FeynHiggs MSSM decays: A0.  |
+| void | **[FeynHiggs_H_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-feynhiggs-h-plus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>FeynHiggs MSSM decays: H+.  |
+| void | **[MSSM_h0_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-mssm-h0-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: h0_1.  |
+| void | **[h0_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-h0-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: h0_2.  |
+| void | **[A0_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-a0-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: A0.  |
+| void | **[H_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-h-plus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: H_plus.  |
+| void | **[gluino_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-gluino-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: gluino.  |
+| void | **[stop_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stop-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: stop_1.  |
+| void | **[stop_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stop-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: stop_2.  |
+| void | **[sbottom_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sbottom-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: sbottom_1.  |
+| void | **[sbottom_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sbottom-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: sbottom_2.  |
+| void | **[sup_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sup-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: sup_l.  |
+| void | **[sup_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sup-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: sup_r.  |
+| void | **[sdown_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sdown-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: sdown_l.  |
+| void | **[sdown_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sdown-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: sdown_r.  |
+| void | **[scharm_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scharm-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: scharm_l.  |
+| void | **[scharm_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scharm-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: scharm_r.  |
+| void | **[sstrange_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sstrange-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: sstrange_l.  |
+| void | **[sstrange_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-sstrange-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: sstrange_r.  |
+| void | **[selectron_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-selectron-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: selectron_l.  |
+| void | **[selectron_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-selectron-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: selectron_r.  |
+| void | **[smuon_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-smuon-l-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: smuon_l.  |
+| void | **[smuon_r_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-smuon-r-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: smuon_r.  |
+| void | **[stau_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: stau_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings)  |
+| void | **[stau_1_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-1-decays-sh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: stau_1.  |
+| void | **[stau_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: stau_2.  |
+| void | **[snu_electronl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-electronl-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: snu_electronl.  |
+| void | **[snu_muonl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-muonl-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: snu_muonl.  |
+| void | **[snu_taul_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-taul-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[chargino_plus_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: chargino_plus_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings)  |
+| void | **[chargino_plus_1_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-sh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: chargino_plus_1.  |
+| void | **[chargino_plus_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: chargino_plus_2.  |
+| void | **[neutralino_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_1.  |
+| void | **[neutralino_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_2.  |
+| void | **[neutralino_3_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-3-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_3.  |
+| void | **[neutralino_4_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-4-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_4.  |
+| void | **[chargino_plus_1_decays_smallsplit](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-smallsplit)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[stau_1_decays_smallsplit](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-1-decays-smallsplit)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[ScalarSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scalarsingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to singlets for the ScalarSingletDM models.  |
+| void | **[VectorSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-vectorsingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to vectors for the VectorSingletDM models (see arXiv:1512.06458v4)  |
+| void | **[MajoranaSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-majoranasingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to Majorana fermions for the MajoranaSingletDM models (see arXiv:1512.06458v4)  |
+| void | **[DiracSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-diracsingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to Dirac fermions for the DiracSingletDM models (see arXiv:1512.06458v4)  |
+| void | **[all_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-all-decays)**([DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & decays)<br>Collect all the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) entries into an actual [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/).  |
+| void | **[all_decays_from_SLHA](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-all-decays-from-slha)**([DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & decays) |
+| void | **[get_decaytable_as_map](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-decaytable-as-map)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & map)<br>Convert the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) to a format where we can print each individual channel's BF.  |
+| void | **[get_mass_es_pseudonyms](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-mass-es-pseudonyms)**([mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/) & result)<br>Get MSSM mass eigenstate pseudonyms for the gauge eigenstates.  |
 | void | **[check_first_sec_gen_mixing](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-check-first-sec-gen-mixing)**(int & result) |
 | daFunk::Funk | **[get_Higgs_invWidth_chi2](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-higgs-invwidth-chi2)**(std::string filename) |
 | void | **[MSSM_inv_Higgs_BF](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-mssm-inv-higgs-bf)**(double & BF) |
@@ -137,8 +136,8 @@ description: "[No description available]"
 | void | **[DiracSingletDM_inv_Higgs_BF](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-diracsingletdm-inv-higgs-bf)**(double & BF) |
 | void | **[lnL_Higgs_invWidth_SMlike](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-lnl-higgs-invwidth-smlike)**(double & lnL) |
 | void | **[lnL_Z_inv](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-lnl-z-inv)**(double & lnL) |
-| void | **[Z_gamma_nu_2l](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-z-gamma-nu-2l)**(triplet< double > & gamma) |
-| void | **[Z_gamma_chi_0_MSSM_tree](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-z-gamma-chi-0-mssm-tree)**(triplet< double > & gamma) |
+| void | **[Z_gamma_nu_2l](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-z-gamma-nu-2l)**([triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & gamma) |
+| void | **[Z_gamma_chi_0_MSSM_tree](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-z-gamma-chi-0-mssm-tree)**([triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & gamma) |
 | void | **[RHN_W_to_l_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-rhn-w-to-l-decays)**(std::vector< double > & result) |
 | void | **[lnL_W_decays_chi2](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-lnl-w-decays-chi2)**(double & result) |
 
@@ -1180,7 +1179,7 @@ void all_decays(
 )
 ```
 
-Collect all the DecayTable entries into an actual DecayTable. 
+Collect all the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) entries into an actual [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/). 
 
 Spit out the full decay table as SLHA1 and SLHA2 files.
 
@@ -1200,7 +1199,7 @@ void all_decays_from_SLHA(
 ```
 
 
-Read an SLHA2 file in and use it to create a GAMBIT DecayTable. Note that creating a DecayTable from an SLHA1 file is not possible at present. 
+Read an SLHA2 file in and use it to create a GAMBIT [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/). Note that creating a [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) from an SLHA1 file is not possible at present. 
 
 
 ### function get_decaytable_as_map
@@ -1211,7 +1210,7 @@ void get_decaytable_as_map(
 )
 ```
 
-Convert the DecayTable to a format where we can print each individual channel's BF. 
+Convert the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) to a format where we can print each individual channel's BF. 
 
 Otherwise just print the specific, named channels
 
@@ -1354,7 +1353,7 @@ There are a few data files, e.g.,
 ./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b_10_profiled.dat
 ```
 
- The first one is the default. The third and fourth ones include a 10% theory uncertainty in the branching fraction by convolving it and profiling it, respectively. The data file is specified in the YAML by the `BR_h_inv_chi2_data_file` option. The path is relative to the GAMBIT directory, `GAMBIT_DIR`.
+ The first one is the default. The third and fourth ones include a 10% theory uncertainty in the branching fraction by convolving it and profiling it, respectively. The data file is specified in the [YAML](/documentation/code/namespaces/namespaceyaml/) by the `BR_h_inv_chi2_data_file` option. The path is relative to the GAMBIT directory, `GAMBIT_DIR`.
 
 This typically assumes that the Higgs is otherwise SM-like, i.e., no changes to production cross sections or any other decays.
 
@@ -1433,4 +1432,4 @@ void lnL_W_decays_chi2(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

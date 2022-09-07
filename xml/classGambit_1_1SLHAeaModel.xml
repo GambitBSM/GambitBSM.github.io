@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1SLHAeaModel" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::SLHAeaModel</compoundname>
+    <derivedcompoundref refid="classGambit_1_1MSSMea" prot="public" virt="non-virtual">Gambit::MSSMea</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1SMea" prot="public" virt="non-virtual">Gambit::SMea</derivedcompoundref>
+    <includes refid="SLHASimpleSpec_8hpp" local="no">SLHASimpleSpec.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1SLHAeaModel_1ab9e5626476dd8ced7f1d4761e013eed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::SLHAeaModel::SLHAeaModel</definition>
+        <argsstring>()</argsstring>
+        <name>SLHAeaModel</name>
+        <qualifiedname>Gambit::SLHAeaModel::SLHAeaModel</qualifiedname>
+        <briefdescription>
+<para>Constructors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Member functions for <ref refid="classGambit_1_1SLHAeaModel" kindref="compound">SLHAeaModel</ref> class.</para>
+<para>Default Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="44" column="12" bodyfile="Models/src/SimpleSpectra/SLHASimpleSpec.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SLHAeaModel_1a5c4c217993ff7f64abe91b787d45ed2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::SLHAeaModel::SLHAeaModel</definition>
+        <argsstring>(const SLHAea::Coll &amp;input)</argsstring>
+        <name>SLHAeaModel</name>
+        <qualifiedname>Gambit::SLHAeaModel::SLHAeaModel</qualifiedname>
+        <param>
+          <type>const SLHAea::Coll &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Constructor via SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="45" column="12" bodyfile="Models/src/SimpleSpectra/SLHASimpleSpec.cpp" bodystart="55" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1SLHAeaModel_1a44596fe182c61ecffd749827b78f74d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::SLHAeaModel::slha_version</definition>
+        <argsstring>() const</argsstring>
+        <name>slha_version</name>
+        <qualifiedname>Gambit::SLHAeaModel::slha_version</qualifiedname>
+        <briefdescription>
+<para>Get the SLHA version of the internal SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="49" column="16" bodyfile="Models/src/SimpleSpectra/SLHASimpleSpec.cpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SLHAeaModel_1a2895274ac7c78786488cd9975d853064" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const SLHAea::Coll &amp;</type>
+        <definition>const SLHAea::Coll &amp; Gambit::SLHAeaModel::get_slhaea</definition>
+        <argsstring>() const</argsstring>
+        <name>get_slhaea</name>
+        <qualifiedname>Gambit::SLHAeaModel::get_slhaea</qualifiedname>
+        <briefdescription>
+<para>Get the internal SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get reference to internal SLHAea object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="52" column="31" bodyfile="Models/src/SimpleSpectra/SLHASimpleSpec.cpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SLHAeaModel_1a82da4bab3116d664d0ec4670d6653cd7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; int, int &gt; &amp;</type>
+        <definition>const std::map&lt; int, int &gt; &amp; Gambit::SLHAeaModel::PDG_translator</definition>
+        <argsstring>() const</argsstring>
+        <name>PDG_translator</name>
+        <qualifiedname>Gambit::SLHAeaModel::PDG_translator</qualifiedname>
+        <briefdescription>
+<para>PDG code translation map, for special cases where an SLHA file has been read in and the PDG codes changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="55" column="27" bodyfile="Models/src/SimpleSpectra/SLHASimpleSpec.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SLHAeaModel_1a3718c7cd45bcf7719bd30b730271084b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::SLHAeaModel::getdata</definition>
+        <argsstring>(const std::string &amp;block, int index) const</argsstring>
+        <name>getdata</name>
+        <qualifiedname>Gambit::SLHAeaModel::getdata</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Helper functions to do error checking for SLHAea object contents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>One index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="58" column="19" bodyfile="Models/src/SimpleSpectra/SLHASimpleSpec.cpp" bodystart="79" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SLHAeaModel_1aa1d27d5a68d75aa15a4c6e827c3e9ea0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::SLHAeaModel::getdata</definition>
+        <argsstring>(const std::string &amp;block, int i, int j) const</argsstring>
+        <name>getdata</name>
+        <qualifiedname>Gambit::SLHAeaModel::getdata</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Two indices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="59" column="19" bodyfile="Models/src/SimpleSpectra/SLHASimpleSpec.cpp" bodystart="97" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SLHAeaModel_1afa562c1962de38efbfadc9db3b9450d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::SLHAeaModel::checkdata</definition>
+        <argsstring>(const std::string &amp;block, int index) const</argsstring>
+        <name>checkdata</name>
+        <qualifiedname>Gambit::SLHAeaModel::checkdata</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="60" column="17" bodyfile="Models/src/SimpleSpectra/SLHASimpleSpec.cpp" bodystart="115" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1SLHAeaModel_1ad92225e677bbb1355da004cab4647175" prot="protected" static="no" mutable="no">
+        <type>SLHAea::Coll</type>
+        <definition>SLHAea::Coll Gambit::SLHAeaModel::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Gambit::SLHAeaModel::data</qualifiedname>
+        <briefdescription>
+<para>SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="36" column="25" bodyfile="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SLHAeaModel_1a45046321377d3c209ecaddbef0d8a747" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SLHAeaModel::wrapped_slha_version</definition>
+        <argsstring></argsstring>
+        <name>wrapped_slha_version</name>
+        <qualifiedname>Gambit::SLHAeaModel::wrapped_slha_version</qualifiedname>
+        <briefdescription>
+<para>SLHA version of SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="38" column="16" bodyfile="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SLHAeaModel_1adb4978147f85098395997ab2ffd9885e" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; Gambit::SLHAeaModel::PDG_translation_map</definition>
+        <argsstring></argsstring>
+        <name>PDG_translation_map</name>
+        <qualifiedname>Gambit::SLHAeaModel::PDG_translation_map</qualifiedname>
+        <briefdescription>
+<para>PDG translation map (e.g. from SLHA1 to SLHA2 for MSSMskeleton) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="40" column="21" bodyfile="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Skeleton &quot;model&quot; class which interacts with an SLHAea object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::MSSMea</label>
+        <link refid="classGambit_1_1MSSMea"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::SLHAeaModel</label>
+        <link refid="classGambit_1_1SLHAeaModel"/>
+      </node>
+      <node id="3">
+        <label>Gambit::SMea</label>
+        <link refid="classGambit_1_1SMea"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" line="32" column="7" bodyfile="Models/include/gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp" bodystart="33" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1SLHAeaModel_1afa562c1962de38efbfadc9db3b9450d1" prot="public" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>checkdata</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1ad92225e677bbb1355da004cab4647175" prot="protected" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>data</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a2895274ac7c78786488cd9975d853064" prot="public" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>get_slhaea</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a3718c7cd45bcf7719bd30b730271084b" prot="public" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>getdata</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1aa1d27d5a68d75aa15a4c6e827c3e9ea0" prot="public" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>getdata</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1adb4978147f85098395997ab2ffd9885e" prot="protected" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>PDG_translation_map</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a82da4bab3116d664d0ec4670d6653cd7" prot="public" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>PDG_translator</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a44596fe182c61ecffd749827b78f74d3" prot="public" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>slha_version</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1ab9e5626476dd8ced7f1d4761e013eed0" prot="public" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>SLHAeaModel</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a5c4c217993ff7f64abe91b787d45ed2c" prot="public" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>SLHAeaModel</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a45046321377d3c209ecaddbef0d8a747" prot="protected" virt="non-virtual"><scope>Gambit::SLHAeaModel</scope><name>wrapped_slha_version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

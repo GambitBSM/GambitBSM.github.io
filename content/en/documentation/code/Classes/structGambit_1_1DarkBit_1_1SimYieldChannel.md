@@ -4,8 +4,7 @@ description: 'Annihilation/decay channel. '
 
 ---
 
-
-
+# Gambit::DarkBit::SimYieldChannel
 
 
 
@@ -20,7 +19,7 @@ Annihilation/decay channel.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SimYieldChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#function-simyieldchannel)**(daFunk::Funk dNdE, const std::string & p1, const std::string & p2, const std::string & finalState, double Ecm_min, double Ecm_max, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< Options > runOptions)<br>General annihilation/decay channel for sim yield tables.  |
+| | **[SimYieldChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/#function-simyieldchannel)**(daFunk::Funk dNdE, const std::string & p1, const std::string & p2, const std::string & finalState, double Ecm_min, double Ecm_max, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > runOptions)<br>General annihilation/decay channel for sim yield tables.  |
 
 ## Public Attributes
 
@@ -113,4 +112,4 @@ double Ecm_max;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

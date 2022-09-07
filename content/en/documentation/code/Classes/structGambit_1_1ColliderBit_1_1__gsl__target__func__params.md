@@ -4,8 +4,7 @@ description: 'A struct to contain parameters for the GSL optimiser target functi
 
 ---
 
-
-
+# Gambit::ColliderBit::_gsl_target_func_params
 
 
 
@@ -19,7 +18,7 @@ A struct to contain parameters for the GSL optimiser target function.
 | -------------- | -------------- |
 | double | **[lambda](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-lambda)**  |
 | AnalysisDataPointers | **[adata_ptrs_original](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-adata-ptrs-original)**  |
-| std::vector< str > | **[skip_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-skip-analyses)**  |
+| std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[skip_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-skip-analyses)**  |
 | bool | **[use_covar](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-covar)**  |
 | bool | **[use_marg](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-marg)**  |
 | bool | **[combine_nocovar_SRs](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-combine-nocovar-srs)**  |
@@ -70,4 +69,4 @@ bool combine_nocovar_SRs;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

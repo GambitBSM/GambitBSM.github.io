@@ -107,6 +107,21 @@
         </inbodydescription>
         <location file="FlavBit/src/FlavBit.cpp" line="127" column="16" bodyfile="FlavBit/src/FlavBit.cpp" bodystart="127" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="FlavBit_8cpp_1a45f202b9792a089220fa681eef2c033f" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Utils_1_1translator" kindref="compound">Utils::translator</ref></type>
+        <definition>Utils::translator Gambit::FlavBit::translate_flav_obs(GAMBIT_DIR &quot;/FlavBit/data/observables_key.yaml&quot;)</definition>
+        <argsstring>(GAMBIT_DIR &quot;/FlavBit/data/observables_key.yaml&quot;)</argsstring>
+        <name>translate_flav_obs</name>
+        <qualifiedname>Gambit::FlavBit::translate_flav_obs</qualifiedname>
+        <briefdescription>
+<para>FlavBit observable name translator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FlavBit/src/FlavBit.cpp" line="135" column="23"/>
+      </memberdef>
       <memberdef kind="variable" id="FlavBit_8cpp_1ad0c7ee63f28640f10838933aaa88c943" prot="public" static="no" mutable="no">
         <type>const int</type>
         <definition>const int Gambit::FlavBit::ncorrnuis</definition>
@@ -382,24 +397,6 @@
         </inbodydescription>
         <location file="FlavBit/src/Flav_reader.cpp" line="52" column="10" bodyfile="FlavBit/src/Flav_reader.cpp" bodystart="52" bodyend="80"/>
       </memberdef>
-      <memberdef kind="function" id="FlavBit_8cpp_1ab1adbedd60304b6743bdd3a4eb2771d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>Utils::translator</type>
-        <definition>Utils::translator Gambit::FlavBit::translate_flav_obs</definition>
-        <argsstring>(GAMBIT_DIR &quot;/FlavBit/data/observables_key.yaml&quot;)</argsstring>
-        <name>translate_flav_obs</name>
-        <qualifiedname>Gambit::FlavBit::translate_flav_obs</qualifiedname>
-        <param>
-          <type>GAMBIT_DIR &quot;/FlavBit/data/observables_key.yaml&quot;</type>
-        </param>
-        <briefdescription>
-<para>FlavBit observable name translator. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="FlavBit/src/FlavBit.cpp" line="135" column="23" declfile="FlavBit/src/FlavBit.cpp" declline="135" declcolumn="23"/>
-      </memberdef>
       <memberdef kind="function" id="FlavBit_8cpp_1a7187c8078b84b4d87b19f22b268d6749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="structGambit_1_1nuiscorr" kindref="compound">nuiscorr</ref>(&amp;</type>
         <definition>const nuiscorr(&amp; Gambit::FlavBit::nuiscorr_help</definition>
@@ -430,7 +427,7 @@
         <name>print</name>
         <qualifiedname>Gambit::FlavBit::print</qualifiedname>
         <param>
-          <type>flav_prediction</type>
+          <type><ref refid="structGambit_1_1flav__prediction" kindref="compound">flav_prediction</ref></type>
           <declname>prediction</declname>
         </param>
         <param>
@@ -453,7 +450,7 @@
         <name>Kstarll_Theory2Experiment_translation</name>
         <qualifiedname>Gambit::FlavBit::Kstarll_Theory2Experiment_translation</qualifiedname>
         <param>
-          <type>flav_observable_map &amp;</type>
+          <type><ref refid="namespaceGambit_1a6ba4e14443038319652a0c5e0980074a" kindref="member">flav_observable_map</ref> &amp;</type>
           <declname>prediction</declname>
         </param>
         <param>
@@ -493,7 +490,7 @@
         <location file="FlavBit/src/FlavBit.cpp" line="181" column="10" bodyfile="FlavBit/src/FlavBit.cpp" bodystart="181" bodyend="215"/>
       </memberdef>
       <memberdef kind="function" id="FlavBit_8cpp_1a8312cda0f84ac464adf15fc3e52f140a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::FlavBit::path_to_latest_heplike_data</definition>
         <argsstring>()</argsstring>
         <name>path_to_latest_heplike_data</name>
@@ -552,11 +549,11 @@
         <name>update_obs_list</name>
         <qualifiedname>Gambit::FlavBit::update_obs_list</qualifiedname>
         <param>
-          <type>std::vector&lt; str &gt; &amp;</type>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
           <declname>obs_list</declname>
         </param>
         <param>
-          <type>const std::vector&lt; str &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
           <declname>HL_obs_list</declname>
         </param>
         <briefdescription>
@@ -575,7 +572,7 @@
         <name>get_obs_theory</name>
         <qualifiedname>Gambit::FlavBit::get_obs_theory</qualifiedname>
         <param>
-          <type>const flav_prediction &amp;</type>
+          <type>const <ref refid="structGambit_1_1flav__prediction" kindref="compound">flav_prediction</ref> &amp;</type>
           <declname>prediction</declname>
         </param>
         <param>
@@ -598,7 +595,7 @@
         <name>get_obs_covariance</name>
         <qualifiedname>Gambit::FlavBit::get_obs_covariance</qualifiedname>
         <param>
-          <type>const flav_prediction &amp;</type>
+          <type>const <ref refid="structGambit_1_1flav__prediction" kindref="compound">flav_prediction</ref> &amp;</type>
           <declname>prediction</declname>
         </param>
         <param>
@@ -629,7 +626,7 @@
           <declname>SI_obslist</declname>
         </param>
         <param>
-          <type>flav_prediction &amp;</type>
+          <type><ref refid="structGambit_1_1flav__prediction" kindref="compound">flav_prediction</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <param>
@@ -1489,7 +1486,7 @@
           <declname>delta</declname>
         </param>
         <param>
-          <type>SMInputs</type>
+          <type><ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref></type>
           <declname>sminputs</declname>
         </param>
         <param>
@@ -1661,7 +1658,7 @@
         <name>RHN_mue_FF</name>
         <qualifiedname>Gambit::FlavBit::RHN_mue_FF</qualifiedname>
         <param>
-          <type>const SMInputs</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref></type>
           <declname>sminputs</declname>
         </param>
         <param>

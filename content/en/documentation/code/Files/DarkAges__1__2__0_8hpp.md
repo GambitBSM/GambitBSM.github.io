@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# frontends/DarkAges_1_2_0.hpp
 
 
 
@@ -152,4 +151,4 @@ BE_ALLOW_MODELS(AnnihilatingDM_general, DecayingDM_general)
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:28 +0000
+Updated on 2022-09-07 at 13:49:56 +0000

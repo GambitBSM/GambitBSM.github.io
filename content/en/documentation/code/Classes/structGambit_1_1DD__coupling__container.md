@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DD_coupling_container
 
 
 
@@ -47,4 +46,4 @@ NREO_DM_nucleon_couplings DD_nonrel_WCs;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

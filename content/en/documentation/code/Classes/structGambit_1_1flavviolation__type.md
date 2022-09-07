@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::flavviolation_type
 
 
 
@@ -18,15 +17,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[vckm](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-vckm)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[msq2](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-msq2)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[msd2](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-msd2)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[msu2](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-msu2)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[td](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-td)**  |
-| Farray< Fdouble, 1, 3, 1, 3 > | **[tu](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-tu)**  |
-| Farray< Fdouble, 1, 6, 1, 6 > | **[usqmix](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-usqmix)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3, 1, 3 > | **[vckm](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-vckm)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3, 1, 3 > | **[msq2](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-msq2)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3, 1, 3 > | **[msd2](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-msd2)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3, 1, 3 > | **[msu2](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-msu2)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3, 1, 3 > | **[td](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-td)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3, 1, 3 > | **[tu](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-tu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 6, 1, 6 > | **[usqmix](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-usqmix)**  |
 | Finteger | **[ifavvio](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-ifavvio)**  |
-| Farray< Fdouble, 1, 6, 1, 6 > | **[dsqmix](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-dsqmix)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 6, 1, 6 > | **[dsqmix](/documentation/code/classes/structgambit_1_1flavviolation__type/#variable-dsqmix)**  |
 
 ## Public Attributes Documentation
 
@@ -95,4 +94,4 @@ Farray< Fdouble, 1, 6, 1, 6 > dsqmix;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

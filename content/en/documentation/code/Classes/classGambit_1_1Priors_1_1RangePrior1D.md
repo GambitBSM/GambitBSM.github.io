@@ -4,8 +4,7 @@ description: 'Template class for 1d priors which need only a "range" option in t
 
 ---
 
-
-
+# Gambit::Priors::RangePrior1D
 
 
 
@@ -22,7 +21,7 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[RangePrior1D](/documentation/code/classes/classgambit_1_1priors_1_1rangeprior1d/#function-rangeprior1d)**(const std::vector< std::string > & param, const Options & options) |
+| | **[RangePrior1D](/documentation/code/classes/classgambit_1_1priors_1_1rangeprior1d/#function-rangeprior1d)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
 | virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1rangeprior1d/#function-transform)**(const std::vector< double > & , std::unordered_map< std::string, double > & ) const override<br>Transform from unit hypercube to parameter.  |
 | virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1rangeprior1d/#function-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
 | virtual double | **[operator()](/documentation/code/classes/classgambit_1_1priors_1_1rangeprior1d/#function-operator)**(const std::vector< double > & ) const override<br>Log of PDF density.  |
@@ -113,4 +112,4 @@ Log of PDF density.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

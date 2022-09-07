@@ -4,8 +4,7 @@ description: 'ATLAS-specific efficiency and smearing functions for super fast de
 
 ---
 
-
-
+# Gambit::ColliderBit::ATLAS
 
 
 
@@ -34,8 +33,8 @@ ATLAS-specific efficiency and smearing functions for super fast detector simulat
 | void | **[applyMediumIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymediumidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
 | void | **[applyTightIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytightidelectronselection)**(std::vector< const HEPUtils::Particle * > & electrons) |
 | void | **[applyTightIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytightidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyElectronIDEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronidefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, str operating_point) |
-| void | **[applyElectronIsolationEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronisolationefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, str operating_point) |
+| void | **[applyElectronIDEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronidefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
+| void | **[applyElectronIsolationEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronisolationefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
 
 
 ## Functions Documentation
@@ -318,4 +317,4 @@ Electron 2019 Isolation efficiency functions from [https://arxiv.org/pdf/1902.04
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

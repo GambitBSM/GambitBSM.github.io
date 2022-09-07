@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS_RDPTH</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS__RDPTH_1abd8fee9abfbfffc3c1d361f4f785d45a" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 0, 1001 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 0, 1001 &gt;</type>
         <definition>Farray&lt;Fdouble,0,1001&gt; Gambit::DS_RDPTH::pth</definition>
         <argsstring></argsstring>
         <name>pth</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="331" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="331" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__RDPTH_1a951f5758d6f20f29403021afb1440f86" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Finteger, 0, 1001 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Finteger, 0, 1001 &gt;</type>
         <definition>Farray&lt;Finteger,0,1001&gt; Gambit::DS_RDPTH::incth</definition>
         <argsstring></argsstring>
         <name>incth</name>
@@ -50,6 +50,26 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 0, 1001 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="3">
+        <label>Gambit::Farray&lt; Finteger, 0, 1001 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_RDPTH</label>
+        <link refid="structGambit_1_1DS__RDPTH"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pth</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>incth</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="329" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="330" bodyend="334"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__RDPTH_1a951f5758d6f20f29403021afb1440f86" prot="public" virt="non-virtual"><scope>Gambit::DS_RDPTH</scope><name>incth</name></member>

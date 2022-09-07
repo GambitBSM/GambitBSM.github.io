@@ -4,7 +4,7 @@
     <compoundname>Gambit::sd_sntau2body_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1sd__sntau2body__type_1a1617714d08537e9151cda2c57fb6e968" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_sntau2body_type::brsntauneut</definition>
         <argsstring></argsstring>
         <name>brsntauneut</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="614" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="614" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sntau2body__type_1a6ac1e164348332b2e5744644408b7693" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sntau2body_type::brsntauchar</definition>
         <argsstring></argsstring>
         <name>brsntauchar</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="615" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="615" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sntau2body__type_1ae86ebe72f88219f00cbcd277f1d20c47" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sntau2body_type::brsntau1wstau</definition>
         <argsstring></argsstring>
         <name>brsntau1wstau</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="616" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="616" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sntau2body__type_1a30fa46d777ac68e634d7d9dfb406ddad" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sntau2body_type::brsntau1hcstau</definition>
         <argsstring></argsstring>
         <name>brsntau1hcstau</name>
@@ -64,6 +64,28 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; Fdouble, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 4 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_sntau2body_type</label>
+        <link refid="structGambit_1_1sd__sntau2body__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brsntauneut</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>brsntau1hcstau</edgelabel>
+          <edgelabel>brsntau1wstau</edgelabel>
+          <edgelabel>brsntauchar</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="612" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="613" bodyend="618"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__sntau2body__type_1a30fa46d777ac68e634d7d9dfb406ddad" prot="public" virt="non-virtual"><scope>Gambit::sd_sntau2body_type</scope><name>brsntau1hcstau</name></member>

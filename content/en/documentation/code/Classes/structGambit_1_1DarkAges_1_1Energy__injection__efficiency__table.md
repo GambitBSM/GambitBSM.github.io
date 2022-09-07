@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DarkAges::Energy_injection_efficiency_table
 
 
 
@@ -87,4 +86,4 @@ std::vector< double > f_eff;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

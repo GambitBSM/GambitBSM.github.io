@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structGambit_1_1Printers_1_1Record" kind="struct" language="C++" prot="public">
+    <compoundname>Gambit::Printers::Record</compoundname>
+    <includes refid="asciiprinter_8hpp" local="no">asciiprinter.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structGambit_1_1Printers_1_1Record_1abb3862aeb533190b9565e38b98bfa937" prot="public" static="no" mutable="no">
+        <type>LineBuf</type>
+        <definition>LineBuf Gambit::Printers::Record::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Gambit::Printers::Record::data</qualifiedname>
+        <briefdescription>
+<para>The data; each functor outputs a vector of doubles. We index these by vertexID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="58" column="16" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1Printers_1_1Record_1a506ce91181afe8b10741d4a808b18a04" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::Record::readyToPrint</definition>
+        <argsstring></argsstring>
+        <name>readyToPrint</name>
+        <qualifiedname>Gambit::Printers::Record::readyToPrint</qualifiedname>
+        <briefdescription>
+<para>Flag to indicate if record is available to send for output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="62" column="13" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structGambit_1_1Printers_1_1Record_1a5436d145814a9d5897738c551b08b3f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::Record::Record</definition>
+        <argsstring>()</argsstring>
+        <name>Record</name>
+        <qualifiedname>Gambit::Printers::Record::Record</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="64" column="8" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1Printers_1_1Record_1ae56b328990daac923b2a5431976b5156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::Record::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>Gambit::Printers::Record::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="65" column="13" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="76" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to hold data for a single model point. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="54" column="5" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="55" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structGambit_1_1Printers_1_1Record_1abb3862aeb533190b9565e38b98bfa937" prot="public" virt="non-virtual"><scope>Gambit::Printers::Record</scope><name>data</name></member>
+      <member refid="structGambit_1_1Printers_1_1Record_1a506ce91181afe8b10741d4a808b18a04" prot="public" virt="non-virtual"><scope>Gambit::Printers::Record</scope><name>readyToPrint</name></member>
+      <member refid="structGambit_1_1Printers_1_1Record_1a5436d145814a9d5897738c551b08b3f8" prot="public" virt="non-virtual"><scope>Gambit::Printers::Record</scope><name>Record</name></member>
+      <member refid="structGambit_1_1Printers_1_1Record_1ae56b328990daac923b2a5431976b5156" prot="public" virt="non-virtual"><scope>Gambit::Printers::Record</scope><name>reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

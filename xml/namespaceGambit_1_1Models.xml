@@ -2,8 +2,158 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="namespaceGambit_1_1Models" kind="namespace" language="C++">
     <compoundname>Gambit::Models</compoundname>
+    <innerclass refid="structGambit_1_1Models_1_1DiracSingletDM__Z2Model" prot="public">Gambit::Models::DiracSingletDM_Z2Model</innerclass>
+    <innerclass refid="classGambit_1_1Models_1_1DiracSingletDM__Z2SimpleSpec" prot="public">Gambit::Models::DiracSingletDM_Z2SimpleSpec</innerclass>
+    <innerclass refid="structGambit_1_1Models_1_1DMEFTModel" prot="public">Gambit::Models::DMEFTModel</innerclass>
+    <innerclass refid="classGambit_1_1Models_1_1DMEFTSimpleSpec" prot="public">Gambit::Models::DMEFTSimpleSpec</innerclass>
+    <innerclass refid="structGambit_1_1Models_1_1MajoranaSingletDM__Z2Model" prot="public">Gambit::Models::MajoranaSingletDM_Z2Model</innerclass>
+    <innerclass refid="classGambit_1_1Models_1_1MajoranaSingletDM__Z2SimpleSpec" prot="public">Gambit::Models::MajoranaSingletDM_Z2SimpleSpec</innerclass>
+    <innerclass refid="classGambit_1_1Models_1_1ModelFunctorClaw" prot="public">Gambit::Models::ModelFunctorClaw</innerclass>
+    <innerclass refid="classGambit_1_1Models_1_1partmap" prot="public">Gambit::Models::partmap</innerclass>
     <innerclass refid="classGambit_1_1Models_1_1safe__param__map" prot="public">Gambit::Models::safe_param_map</innerclass>
+    <innerclass refid="structGambit_1_1Models_1_1ScalarSingletDM__Z2Model" prot="public">Gambit::Models::ScalarSingletDM_Z2Model</innerclass>
+    <innerclass refid="classGambit_1_1Models_1_1ScalarSingletDM__Z2SimpleSpec" prot="public">Gambit::Models::ScalarSingletDM_Z2SimpleSpec</innerclass>
+    <innerclass refid="structGambit_1_1Models_1_1ScalarSingletDM__Z3Model" prot="public">Gambit::Models::ScalarSingletDM_Z3Model</innerclass>
+    <innerclass refid="classGambit_1_1Models_1_1ScalarSingletDM__Z3SimpleSpec" prot="public">Gambit::Models::ScalarSingletDM_Z3SimpleSpec</innerclass>
+    <innerclass refid="structGambit_1_1Models_1_1VectorSingletDM__Z2Model" prot="public">Gambit::Models::VectorSingletDM_Z2Model</innerclass>
+    <innerclass refid="classGambit_1_1Models_1_1VectorSingletDM__Z2SimpleSpec" prot="public">Gambit::Models::VectorSingletDM_Z2SimpleSpec</innerclass>
+    <innernamespace refid="namespaceGambit_1_1Models_1_1PARENT">Gambit::Models::PARENT</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceGambit_1_1Models_1a2d0ac79c26319dea528c6600d9490513" prot="public" static="no">
+        <type>std::string</type>
+        <definition>typedef std::string Gambit::Models::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <qualifiedname>Gambit::Models::str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="49" column="25" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Models_1aefdc68a4b4516f9df47d9a166bfb56b0" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt;</type>
+        <definition>typedef std::vector&lt;primary_model_functor*&gt; Gambit::Models::primodel_vec</definition>
+        <argsstring></argsstring>
+        <name>primodel_vec</name>
+        <qualifiedname>Gambit::Models::primodel_vec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="50" column="25" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Models_1a6c6cd03271f52367e2b45b7898f085c7" prot="public" static="no">
+        <type>std::map&lt; str, <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt;</type>
+        <definition>typedef std::map&lt;str, primary_model_functor *&gt; Gambit::Models::activemodel_map</definition>
+        <argsstring></argsstring>
+        <name>activemodel_map</name>
+        <qualifiedname>Gambit::Models::activemodel_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="51" column="22" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Models_1a0b64cf755d1acd401b542d94c01d91fc" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt;::const_iterator</type>
+        <definition>typedef std::map&lt;std::string,primary_model_functor*&gt;::const_iterator Gambit::Models::activemodel_it</definition>
+        <argsstring></argsstring>
+        <name>activemodel_it</name>
+        <qualifiedname>Gambit::Models::activemodel_it</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/models.cpp" line="41" column="39" bodyfile="Models/src/models.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceGambit_1_1Models_1a698b0d82296ea8426bef5995c5a40989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">ModelFunctorClaw</ref> &amp;</type>
+        <definition>ModelFunctorClaw &amp; Gambit::Models::ModelDB</definition>
+        <argsstring>()</argsstring>
+        <name>ModelDB</name>
+        <qualifiedname>Gambit::Models::ModelDB</qualifiedname>
+        <briefdescription>
+<para>Claw accessor function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/claw_singleton.cpp" line="26" column="22" bodyfile="Models/src/claw_singleton.cpp" bodystart="26" bodyend="30" declfile="Models/include/gambit/Models/claw_singleton.hpp" declline="29" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Models_1a0b15ebb94e604ce676d52df29f992c6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::set_many_to_one</definition>
+        <argsstring>(ModelParameters &amp;myP, const std::vector&lt; std::string &gt; &amp;v, const double value)</argsstring>
+        <name>set_many_to_one</name>
+        <qualifiedname>Gambit::Models::set_many_to_one</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> &amp;</type>
+          <declname>myP</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/model_helpers.hpp" line="32" column="17" bodyfile="Models/include/gambit/Models/model_helpers.hpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Models_1ac9dc2c9287420eaa1e348f6ff70e6cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Models_1_1partmap" kindref="compound">partmap</ref> &amp;</type>
+        <definition>partmap &amp; Gambit::Models::ParticleDB</definition>
+        <argsstring>()</argsstring>
+        <name>ParticleDB</name>
+        <qualifiedname>Gambit::Models::ParticleDB</qualifiedname>
+        <briefdescription>
+<para>Database accessor function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/partmap.cpp" line="36" column="13" bodyfile="Models/src/partmap.cpp" bodystart="36" bodyend="40" declfile="Models/include/gambit/Models/partmap.hpp" declline="254" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Models_1a664cda6c7861e17cec41cbb595c3ba98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::define_particles</definition>
+        <argsstring>(partmap *)</argsstring>
+        <name>define_particles</name>
+        <qualifiedname>Gambit::Models::define_particles</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Models_1_1partmap" kindref="compound">partmap</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Declare redirected constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/src/partmap.cpp" line="43" column="17" declfile="Models/src/partmap.cpp" declline="43" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
+<para>Forward declaration of <ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> class for use in constructors. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

@@ -1,0 +1,601 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Models_1_1ModelFunctorClaw" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Models::ModelFunctorClaw</compoundname>
+    <includes refid="models_8hpp" local="no">models.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>Private lineage/ancestry/friends databases</header>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1ModelFunctorClaw_1ad72fdfa1fad0c4695d13c36b56cdd164" prot="private" static="no" mutable="no">
+        <type>std::set&lt; str &gt;</type>
+        <definition>std::set&lt;str&gt; Gambit::Models::ModelFunctorClaw::allmodelnames</definition>
+        <argsstring></argsstring>
+        <name>allmodelnames</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::allmodelnames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="68" column="18" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a1320a44f1ba028036ea4ec6b4537df02" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, str &gt;</type>
+        <definition>std::map&lt;str, str&gt; Gambit::Models::ModelFunctorClaw::myParentsDB</definition>
+        <argsstring></argsstring>
+        <name>myParentsDB</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::myParentsDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="69" column="18" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1ModelFunctorClaw_1af3cdae1b5c3de05fad75e830d3cc43be" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, std::vector&lt; str &gt; &gt;</type>
+        <definition>std::map&lt;str, std::vector&lt;str&gt; &gt; Gambit::Models::ModelFunctorClaw::myLineageDB</definition>
+        <argsstring></argsstring>
+        <name>myLineageDB</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::myLineageDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="70" column="18" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1ModelFunctorClaw_1ab33f0764414abdbefc641be8ae1179f1" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, std::vector&lt; str &gt; &gt;</type>
+        <definition>std::map&lt;str, std::vector&lt;str&gt; &gt; Gambit::Models::ModelFunctorClaw::myDescendantsDB</definition>
+        <argsstring></argsstring>
+        <name>myDescendantsDB</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::myDescendantsDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="71" column="18" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a7e4d661ca16b9ae770ae1bae66dc0123" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, LineageFunction &gt;</type>
+        <definition>std::map&lt;str, LineageFunction &gt; Gambit::Models::ModelFunctorClaw::myIsDescendantOfDB</definition>
+        <argsstring></argsstring>
+        <name>myIsDescendantOfDB</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::myIsDescendantOfDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="72" column="18" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a20bc99016f9441c8c2411365c594e326" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, std::set&lt; str &gt; &gt;</type>
+        <definition>std::map&lt;str, std::set&lt;str&gt; &gt; Gambit::Models::ModelFunctorClaw::myFriendsDB</definition>
+        <argsstring></argsstring>
+        <name>myFriendsDB</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::myFriendsDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="73" column="18" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a0dfbb272f1286557f50c435498558e05" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, std::set&lt; str &gt; &gt;</type>
+        <definition>std::map&lt;str, std::set&lt;str&gt; &gt; Gambit::Models::ModelFunctorClaw::myBestFriendsDB</definition>
+        <argsstring></argsstring>
+        <name>myBestFriendsDB</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::myBestFriendsDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="74" column="18" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a12ed3f851424da8ac6d2ad634fccb1ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>primodel_vec</type>
+        <definition>primodel_vec Gambit::Models::ModelFunctorClaw::getPrimaryModelFunctorsToActivate</definition>
+        <argsstring>(std::set&lt; str &gt;, const primodel_vec &amp;)</argsstring>
+        <name>getPrimaryModelFunctorsToActivate</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::getPrimaryModelFunctorsToActivate</qualifiedname>
+        <param>
+          <type>std::set&lt; str &gt;</type>
+          <defname>selectedmodels</defname>
+        </param>
+        <param>
+          <type>const primodel_vec &amp;</type>
+          <defname>primaryModelFunctors</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Model activation function</para>
+<para>Returns a vector of primary_model_functors to be activated, according to the model(s) being scanned</para>
+<para><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">ModelFunctorClaw</ref> function definitions <ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> object the performs initialisation and checking operations on a <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> list. Model activation function Returns a vector of primary_model_functors to be activated, according to the model(s) being scanned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="87" column="22" bodyfile="Models/src/models.cpp" bodystart="52" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a3b4c737a525ed211782b082429c64522" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> *</type>
+        <definition>primary_model_functor * Gambit::Models::ModelFunctorClaw::getPrimaryModelFunctor</definition>
+        <argsstring>(const std::string modelname, const primodel_vec &amp;) const</argsstring>
+        <name>getPrimaryModelFunctor</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::getPrimaryModelFunctor</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>modelname</declname>
+        </param>
+        <param>
+          <type>const primodel_vec &amp;</type>
+          <defname>primaryModelFunctors</defname>
+        </param>
+        <briefdescription>
+<para>Searches primary model functor list for specified model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Searches primary model functor list for specificed model. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="90" column="31" bodyfile="Models/src/models.cpp" bodystart="103" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a7bf91022647c009786970ae39e5ffcae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::ModelFunctorClaw::checkPrimaryModelFunctorUsage</definition>
+        <argsstring>(const activemodel_map &amp;) const</argsstring>
+        <name>checkPrimaryModelFunctorUsage</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::checkPrimaryModelFunctorUsage</qualifiedname>
+        <param>
+          <type>const activemodel_map &amp;</type>
+          <defname>activeModelFunctors</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Active model functor &quot;usefulness&quot; checker</para>
+<para>Checks that all the active primary model functors are actually used for something in the dependency tree. If not throws an error to warn the user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="97" column="14" bodyfile="Models/src/models.cpp" bodystart="135" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a71125c5db2fc189bd2522680cd7c9418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::ModelFunctorClaw::declare_model</definition>
+        <argsstring>(const str &amp;, const str &amp;)</argsstring>
+        <name>declare_model</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::declare_model</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>const str &amp;</type>
+          <defname>parent</defname>
+        </param>
+        <briefdescription>
+<para>Add a new model to the model database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="100" column="14" bodyfile="Models/src/models.cpp" bodystart="173" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1ab2d501255fc89da00a24d9818b9ede38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::ModelFunctorClaw::add_friend</definition>
+        <argsstring>(const str &amp;model, const str &amp;newfriend)</argsstring>
+        <name>add_friend</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::add_friend</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>const str &amp;</type>
+          <declname>newfriend</declname>
+        </param>
+        <briefdescription>
+<para>Add a friend, and all its friends and ancestors, to a model&apos;s list of friends. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="103" column="14" bodyfile="Models/src/models.cpp" bodystart="211" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1af160ffd276255f9434e73ab7968fa81a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::ModelFunctorClaw::model_exists</definition>
+        <argsstring>(const str &amp;) const</argsstring>
+        <name>model_exists</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::model_exists</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+<para>Indicate whether a model is recognised by GAMBIT or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="106" column="14" bodyfile="Models/src/models.cpp" bodystart="231" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a3feed0fc7aea039f651fa1e813c27f05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition>str Gambit::Models::ModelFunctorClaw::list_models</definition>
+        <argsstring>() const</argsstring>
+        <name>list_models</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::list_models</qualifiedname>
+        <briefdescription>
+<para>List all the models recognised by GAMBIT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="109" column="13" bodyfile="Models/src/models.cpp" bodystart="237" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a798fe50ffec28635cd1e5b13d5baff1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::ModelFunctorClaw::verify_model</definition>
+        <argsstring>(const str &amp;) const</argsstring>
+        <name>verify_model</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::verify_model</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+<para>Verify that a string matches a model recognised by GAMBIT, crash otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="112" column="14" bodyfile="Models/src/models.cpp" bodystart="248" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a5ee671655f46c9a41138c988fc444196" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::set&lt; str &gt; &amp;</type>
+        <definition>const std::set&lt; str &gt; &amp; Gambit::Models::ModelFunctorClaw::get_allmodels</definition>
+        <argsstring>() const</argsstring>
+        <name>get_allmodels</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::get_allmodels</qualifiedname>
+        <briefdescription>
+<para>Return set of all models recognised by GAMBIT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="115" column="24" bodyfile="Models/src/models.cpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a592fda5859d7d55f03c616c80698da9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; str &gt;</type>
+        <definition>std::set&lt; str &gt; Gambit::Models::ModelFunctorClaw::get_activemodels</definition>
+        <argsstring>() const</argsstring>
+        <name>get_activemodels</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::get_activemodels</qualifiedname>
+        <briefdescription>
+<para>Return the set of active models;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the internally stored vector of activated models. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="118" column="18" bodyfile="Models/src/models.cpp" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a22c05d5f4cbb1179efd3e3e41fec4e35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; str &gt;</type>
+        <definition>std::vector&lt; str &gt; Gambit::Models::ModelFunctorClaw::get_lineage</definition>
+        <argsstring>(const str &amp;) const</argsstring>
+        <name>get_lineage</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::get_lineage</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the lineage for a given model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="121" column="21" bodyfile="Models/src/models.cpp" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a271550f94af7bc44e757a5aaf951b7b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; str &gt;</type>
+        <definition>std::set&lt; str &gt; Gambit::Models::ModelFunctorClaw::get_friends</definition>
+        <argsstring>(const str &amp;model) const</argsstring>
+        <name>get_friends</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::get_friends</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the friends for a given model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="124" column="18" bodyfile="Models/src/models.cpp" bodystart="278" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a091f5e8199e892c6aac53a35b29248f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; str &gt;</type>
+        <definition>std::set&lt; str &gt; Gambit::Models::ModelFunctorClaw::get_best_friends</definition>
+        <argsstring>(const str &amp;model) const</argsstring>
+        <name>get_best_friends</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::get_best_friends</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the best friends for a given model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="127" column="18" bodyfile="Models/src/models.cpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a68208adcdaacf84da4e09bdb3d15b0cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; str &gt;</type>
+        <definition>std::vector&lt; str &gt; Gambit::Models::ModelFunctorClaw::get_descendants</definition>
+        <argsstring>(const str &amp;) const</argsstring>
+        <name>get_descendants</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::get_descendants</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the descendants for a given model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="130" column="21" bodyfile="Models/src/models.cpp" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a3c3cb5e32dce67e0330fb239ce35f744" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition>str Gambit::Models::ModelFunctorClaw::get_parent</definition>
+        <argsstring>(const str &amp;) const</argsstring>
+        <name>get_parent</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::get_parent</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the parent model for a given model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the parents for a given model. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="133" column="13" bodyfile="Models/src/models.cpp" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a660bf7ad7f550d4ee309261069c3bea4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::ModelFunctorClaw::descended_from</definition>
+        <argsstring>(const str &amp;, const str &amp;) const</argsstring>
+        <name>descended_from</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::descended_from</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model1</defname>
+        </param>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model2</defname>
+        </param>
+        <briefdescription>
+<para>Check if model 1 is descended from model 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="136" column="14" bodyfile="Models/src/models.cpp" bodystart="290" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a3d4c5648fe1e52f0ce520fd66a7e233d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::ModelFunctorClaw::ancestor_of</definition>
+        <argsstring>(const str &amp;, const str &amp;) const</argsstring>
+        <name>ancestor_of</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::ancestor_of</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model1</defname>
+        </param>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model2</defname>
+        </param>
+        <briefdescription>
+<para>Check if model 1 is an ancestor of model 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="139" column="14" bodyfile="Models/src/models.cpp" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a8fe55c0a7ee8444ce6efd7b5e122051a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::ModelFunctorClaw::downstream_of</definition>
+        <argsstring>(const str &amp;, const str &amp;) const</argsstring>
+        <name>downstream_of</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::downstream_of</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model1</defname>
+        </param>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model2</defname>
+        </param>
+        <briefdescription>
+<para>Check if model 1 exists somewhere downstream of (and can be therefore be interpreted as a) model 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="142" column="14" bodyfile="Models/src/models.cpp" bodystart="308" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a8e3b6a61f3209245c7a24ea96ca0603c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::ModelFunctorClaw::upstream_of</definition>
+        <argsstring>(const str &amp;, const str &amp;) const</argsstring>
+        <name>upstream_of</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::upstream_of</qualifiedname>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model1</defname>
+        </param>
+        <param>
+          <type>const str &amp;</type>
+          <defname>model2</defname>
+        </param>
+        <briefdescription>
+<para>Check if model 1 exists somewhere upstream of model 2, allowing model 2 to be interpreted as model 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="145" column="14" bodyfile="Models/src/models.cpp" bodystart="320" bodyend="323"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classGambit_1_1Models_1_1ModelFunctorClaw_1addb626819fc5ce2ac952358c5d49613b" prot="private" static="no">
+        <type>bool(*</type>
+        <definition>typedef bool(* Gambit::Models::ModelFunctorClaw::LineageFunction) (const str, const ModelFunctorClaw *)</definition>
+        <argsstring>)(const str, const ModelFunctorClaw *)</argsstring>
+        <name>LineageFunction</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::LineageFunction</qualifiedname>
+        <briefdescription>
+<para>Function pointer type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="61" column="17" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a12d6c97c6a9426521ca5f841b0396d7f" prot="private" static="no" mutable="no">
+        <type>std::set&lt; str &gt;</type>
+        <definition>std::set&lt;str&gt; Gambit::Models::ModelFunctorClaw::activemodels</definition>
+        <argsstring></argsstring>
+        <name>activemodels</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::activemodels</qualifiedname>
+        <briefdescription>
+<para>Internal record of the active models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="64" column="18" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1a8e8014a0da52e176c62950150356413b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Models::ModelFunctorClaw::ModelFunctorClaw</definition>
+        <argsstring>()</argsstring>
+        <name>ModelFunctorClaw</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::ModelFunctorClaw</qualifiedname>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="80" column="9" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1ModelFunctorClaw_1ad25a2b1644975109b711f4184d8d7a42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Models::ModelFunctorClaw::~ModelFunctorClaw</definition>
+        <argsstring>()</argsstring>
+        <name>~ModelFunctorClaw</name>
+        <qualifiedname>Gambit::Models::ModelFunctorClaw::~ModelFunctorClaw</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models.hpp" line="82" column="9" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> object that performs initialisation and checking operations on a <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> list. </para>
+    </detaileddescription>
+    <location file="Models/include/gambit/Models/models.hpp" line="55" column="5" bodyfile="Models/include/gambit/Models/models.hpp" bodystart="56" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a12d6c97c6a9426521ca5f841b0396d7f" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>activemodels</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1ab2d501255fc89da00a24d9818b9ede38" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>add_friend</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1ad72fdfa1fad0c4695d13c36b56cdd164" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>allmodelnames</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3d4c5648fe1e52f0ce520fd66a7e233d" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>ancestor_of</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a7bf91022647c009786970ae39e5ffcae" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>checkPrimaryModelFunctorUsage</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a71125c5db2fc189bd2522680cd7c9418" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>declare_model</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a660bf7ad7f550d4ee309261069c3bea4" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>descended_from</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a8fe55c0a7ee8444ce6efd7b5e122051a" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>downstream_of</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a592fda5859d7d55f03c616c80698da9e" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>get_activemodels</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a5ee671655f46c9a41138c988fc444196" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>get_allmodels</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a091f5e8199e892c6aac53a35b29248f0" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>get_best_friends</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a68208adcdaacf84da4e09bdb3d15b0cb" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>get_descendants</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a271550f94af7bc44e757a5aaf951b7b4" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>get_friends</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a22c05d5f4cbb1179efd3e3e41fec4e35" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>get_lineage</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3c3cb5e32dce67e0330fb239ce35f744" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>get_parent</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3b4c737a525ed211782b082429c64522" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>getPrimaryModelFunctor</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a12ed3f851424da8ac6d2ad634fccb1ea" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>getPrimaryModelFunctorsToActivate</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1addb626819fc5ce2ac952358c5d49613b" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>LineageFunction</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a3feed0fc7aea039f651fa1e813c27f05" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>list_models</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1af160ffd276255f9434e73ab7968fa81a" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>model_exists</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a8e8014a0da52e176c62950150356413b" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>ModelFunctorClaw</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a0dfbb272f1286557f50c435498558e05" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>myBestFriendsDB</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1ab33f0764414abdbefc641be8ae1179f1" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>myDescendantsDB</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a20bc99016f9441c8c2411365c594e326" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>myFriendsDB</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a7e4d661ca16b9ae770ae1bae66dc0123" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>myIsDescendantOfDB</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1af3cdae1b5c3de05fad75e830d3cc43be" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>myLineageDB</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a1320a44f1ba028036ea4ec6b4537df02" prot="private" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>myParentsDB</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a8e3b6a61f3209245c7a24ea96ca0603c" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>upstream_of</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1a798fe50ffec28635cd1e5b13d5baff1c" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>verify_model</name></member>
+      <member refid="classGambit_1_1Models_1_1ModelFunctorClaw_1ad25a2b1644975109b711f4184d8d7a42" prot="public" virt="non-virtual"><scope>Gambit::Models::ModelFunctorClaw</scope><name>~ModelFunctorClaw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

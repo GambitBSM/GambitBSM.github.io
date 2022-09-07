@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1Logging" kind="namespace" language="C++">
+    <compoundname>Gambit::Logging</compoundname>
+    <innerclass refid="classGambit_1_1Logging_1_1BaseLogger" prot="public">Gambit::Logging::BaseLogger</innerclass>
+    <innerclass refid="structGambit_1_1Logging_1_1endofmessage" prot="public">Gambit::Logging::endofmessage</innerclass>
+    <innerclass refid="structGambit_1_1Logging_1_1ensure__construction__order" prot="public">Gambit::Logging::ensure_construction_order</innerclass>
+    <innerclass refid="classGambit_1_1Logging_1_1LogMaster" prot="public">Gambit::Logging::LogMaster</innerclass>
+    <innerclass refid="structGambit_1_1Logging_1_1Message" prot="public">Gambit::Logging::Message</innerclass>
+    <innerclass refid="structGambit_1_1Logging_1_1SortedMessage" prot="public">Gambit::Logging::SortedMessage</innerclass>
+    <innerclass refid="classGambit_1_1Logging_1_1StdLogger" prot="public">Gambit::Logging::StdLogger</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a632defe67238e42eb8d3be8e5e05e2a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+        <definition>LogMaster &amp; Gambit::Logging::operator&lt;&lt;</definition>
+        <argsstring>(LogMaster &amp;, const std::string &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Logging::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+          <defname>logobj</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>in</defname>
+        </param>
+        <briefdescription>
+<para>Stream functions for use with <ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>{@ Stream functions overloads for working with the logger</para>
+<para>Stream functions for use with <ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logger.cpp" line="52" column="6" bodyfile="Logs/src/logger.cpp" bodystart="52" bodyend="56" declfile="Logs/include/gambit/Logs/logger.hpp" declline="63" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a885bea9753a8f669026766a7dd1af021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+        <definition>LogMaster &amp; Gambit::Logging::operator&lt;&lt;</definition>
+        <argsstring>(LogMaster &amp;logobj, const LogTag &amp;tag)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Logging::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+          <defname>logobj</defname>
+        </param>
+        <param>
+          <type>const LogTag &amp;</type>
+          <defname>tag</defname>
+        </param>
+        <briefdescription>
+<para>Handle LogTag input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logger.cpp" line="59" column="6" bodyfile="Logs/src/logger.cpp" bodystart="59" bodyend="63" declfile="Logs/include/gambit/Logs/logger.hpp" declline="64" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a306299d9fb61f1bd068318ba8c1c139b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+        <definition>LogMaster &amp; Gambit::Logging::operator&lt;&lt;</definition>
+        <argsstring>(LogMaster &amp;logobj, const endofmessage &amp;eom)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Logging::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+          <defname>logobj</defname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Logging_1_1endofmessage" kindref="compound">endofmessage</ref> &amp;</type>
+          <defname>eom</defname>
+        </param>
+        <briefdescription>
+<para>Handle end of message character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logger.cpp" line="66" column="6" bodyfile="Logs/src/logger.cpp" bodystart="66" bodyend="70" declfile="Logs/include/gambit/Logs/logger.hpp" declline="65" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a9045caf071aed1a7aaf43d0899b55b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+        <definition>LogMaster &amp; Gambit::Logging::operator&lt;&lt;</definition>
+        <argsstring>(LogMaster &amp;logobj, const manip1 fp)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Logging::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+          <defname>logobj</defname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>manip1</declname>
+          <defname>fp</defname>
+        </param>
+        <briefdescription>
+<para>Handle various stream manipulators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logger.cpp" line="73" column="6" bodyfile="Logs/src/logger.cpp" bodystart="73" bodyend="77" declfile="Logs/include/gambit/Logs/logger.hpp" declline="67" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1aab5ad8017e23856891369ad004861734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+        <definition>LogMaster &amp; Gambit::Logging::operator&lt;&lt;</definition>
+        <argsstring>(LogMaster &amp;, const manip2)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Logging::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+          <defname>logobj</defname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>manip2</declname>
+          <defname>fp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logger.cpp" line="79" column="6" bodyfile="Logs/src/logger.cpp" bodystart="79" bodyend="83" declfile="Logs/include/gambit/Logs/logger.hpp" declline="68" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1ac7d4d6ef78c7c07bcc1086136c0f98e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+        <definition>LogMaster &amp; Gambit::Logging::operator&lt;&lt;</definition>
+        <argsstring>(LogMaster &amp;, const manip3)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Logging::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+          <defname>logobj</defname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>manip3</declname>
+          <defname>fp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logger.cpp" line="85" column="6" bodyfile="Logs/src/logger.cpp" bodystart="85" bodyend="89" declfile="Logs/include/gambit/Logs/logger.hpp" declline="69" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1acf7bd0095845bca19e0b124f7058c651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+        <definition>LogMaster &amp; Gambit::Logging::operator&lt;&lt;</definition>
+        <argsstring>(LogMaster &amp;logobj, const TYPE &amp;input)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Logging::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+          <declname>logobj</declname>
+        </param>
+        <param>
+          <type>const TYPE &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logger.hpp" line="78" column="6" bodyfile="Logs/include/gambit/Logs/logger.hpp" bodystart="78" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1aea6d9e73883bd08e6a1d5f0011d1c93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+        <definition>LogMaster &amp; Gambit::Logging::operator&lt;&lt;</definition>
+        <argsstring>(LogMaster &amp;logobj, TYPE &amp;input)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::Logging::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref> &amp;</type>
+          <declname>logobj</declname>
+        </param>
+        <param>
+          <type>TYPE &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logger.hpp" line="88" column="6" bodyfile="Logs/include/gambit/Logs/logger.hpp" bodystart="88" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceGambit_1_1Logging_1acbce0c5168e3e8a4398f48c738b743ff" prot="public" static="no">
+        <type>std::ostream &amp;(*</type>
+        <definition>typedef std::ostream &amp;(* Gambit::Logging::manip1) (std::ostream &amp;)</definition>
+        <argsstring>)(std::ostream &amp;)</argsstring>
+        <name>manip1</name>
+        <qualifiedname>Gambit::Logging::manip1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logger.hpp" line="57" column="14" bodyfile="Logs/include/gambit/Logs/logger.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Logging_1adf60be6743cd11790631615f1667f13c" prot="public" static="no">
+        <type>std::basic_ios&lt; std::ostream::char_type, std::ostream::traits_type &gt;</type>
+        <definition>typedef std::basic_ios&lt; std::ostream::char_type, std::ostream::traits_type &gt; Gambit::Logging::ios_type</definition>
+        <argsstring></argsstring>
+        <name>ios_type</name>
+        <qualifiedname>Gambit::Logging::ios_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logger.hpp" line="58" column="29" bodyfile="Logs/include/gambit/Logs/logger.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Logging_1a779ce2578a3ae99de1fdb06a72370802" prot="public" static="no">
+        <type>ios_type &amp;(*</type>
+        <definition>typedef ios_type &amp;(* Gambit::Logging::manip2) (ios_type &amp;)</definition>
+        <argsstring>)(ios_type &amp;)</argsstring>
+        <name>manip2</name>
+        <qualifiedname>Gambit::Logging::manip2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logger.hpp" line="59" column="14" bodyfile="Logs/include/gambit/Logs/logger.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1_1Logging_1af9eb57199489ae0d1f2758b76e7ae917" prot="public" static="no">
+        <type>std::ios_base &amp;(*</type>
+        <definition>typedef std::ios_base &amp;(* Gambit::Logging::manip3) (std::ios_base &amp;)</definition>
+        <argsstring>)(std::ios_base &amp;)</argsstring>
+        <name>manip3</name>
+        <qualifiedname>Gambit::Logging::manip3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logger.hpp" line="60" column="14" bodyfile="Logs/include/gambit/Logs/logger.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceGambit_1_1Logging_1a5f3e9933868a71700f36b19c6d580cfe" prot="public" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool Gambit::Logging::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <qualifiedname>Gambit::Logging::verbose</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="52" column="16" bodyfile="Logs/src/logging.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a6aca122094bfcb8356d1c88ec68789f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Logging::str2tag</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>str2tag</name>
+        <qualifiedname>Gambit::Logging::str2tag</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>tagname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="152" column="9" bodyfile="Logs/src/logging.cpp" bodystart="152" bodyend="160" declfile="Logs/include/gambit/Logs/logger.hpp" declline="47" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a51e4bdaf5d3e4de96e7b5e94ce6297e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; int, std::string &gt; &amp;</type>
+        <definition>std::map&lt; int, std::string &gt; &amp; Gambit::Logging::tag2str</definition>
+        <argsstring>()</argsstring>
+        <name>tag2str</name>
+        <qualifiedname>Gambit::Logging::tag2str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="130" column="14" bodyfile="Logs/src/logging.cpp" bodystart="130" bodyend="135" declfile="Logs/include/gambit/Logs/logger.hpp" declline="51" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1ab3de4b26f6e0ffedaf8504f9808c56f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; int &gt; &amp;</type>
+        <definition>std::set&lt; int &gt; &amp; Gambit::Logging::components</definition>
+        <argsstring>()</argsstring>
+        <name>components</name>
+        <qualifiedname>Gambit::Logging::components</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="81" column="14" bodyfile="Logs/src/logging.cpp" bodystart="81" bodyend="87" declfile="Logs/include/gambit/Logs/logger.hpp" declline="54" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1af9a3f82e85f053d9269cb34760f8bea5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const Utils::time_point</type>
+        <definition>static const Utils::time_point Gambit::Logging::start_time</definition>
+        <argsstring>(Utils::get_clock_now())</argsstring>
+        <name>start_time</name>
+        <qualifiedname>Gambit::Logging::start_time</qualifiedname>
+        <param>
+          <type>Utils::get_clock_now()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="55" column="36" declfile="Logs/include/gambit/Logs/logging.hpp" declline="55" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1ad5851d2cbbed19a6586e53d986039a32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::set&lt; LogTag &gt; &amp;</type>
+        <definition>const std::set&lt; LogTag &gt; &amp; Gambit::Logging::msgtypes</definition>
+        <argsstring>()</argsstring>
+        <name>msgtypes</name>
+        <qualifiedname>Gambit::Logging::msgtypes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="57" column="20" bodyfile="Logs/src/logging.cpp" bodystart="57" bodyend="62" declfile="Logs/include/gambit/Logs/logging.hpp" declline="58" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a67dbaf21b2c94e04f8cdb734261273c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::set&lt; LogTag &gt; &amp;</type>
+        <definition>const std::set&lt; LogTag &gt; &amp; Gambit::Logging::flags</definition>
+        <argsstring>()</argsstring>
+        <name>flags</name>
+        <qualifiedname>Gambit::Logging::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="65" column="20" bodyfile="Logs/src/logging.cpp" bodystart="65" bodyend="70" declfile="Logs/include/gambit/Logs/logging.hpp" declline="61" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a77da7bce4339fb4a93b777dee84ca1d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::set&lt; LogTag &gt; &amp;</type>
+        <definition>const std::set&lt; LogTag &gt; &amp; Gambit::Logging::echoes</definition>
+        <argsstring>()</argsstring>
+        <name>echoes</name>
+        <qualifiedname>Gambit::Logging::echoes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="73" column="20" bodyfile="Logs/src/logging.cpp" bodystart="73" bodyend="78" declfile="Logs/include/gambit/Logs/logging.hpp" declline="64" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a11d6ab577a2c57aa47e00558036f3f72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Logging::getfreetag</definition>
+        <argsstring>()</argsstring>
+        <name>getfreetag</name>
+        <qualifiedname>Gambit::Logging::getfreetag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="138" column="9" bodyfile="Logs/src/logging.cpp" bodystart="138" bodyend="149" declfile="Logs/include/gambit/Logs/logging.hpp" declline="68" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a4d628b4f80413deb7ffb9a898e6b5772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::checktags</definition>
+        <argsstring>()</argsstring>
+        <name>checktags</name>
+        <qualifiedname>Gambit::Logging::checktags</qualifiedname>
+        <briefdescription>
+<para>Function to inspect tags and their associated strings. For testing purposes only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="163" column="10" bodyfile="Logs/src/logging.cpp" bodystart="163" bodyend="186" declfile="Logs/include/gambit/Logs/logging.hpp" declline="71" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Logging_1a45b46c86969980a0782c42fd98736fc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; int, std::string &gt;</type>
+        <definition>static std::map&lt; int, std::string &gt; Gambit::Logging::create_tag_names</definition>
+        <argsstring>()</argsstring>
+        <name>create_tag_names</name>
+        <qualifiedname>Gambit::Logging::create_tag_names</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/src/logging.cpp" line="90" column="21" bodyfile="Logs/src/logging.cpp" bodystart="90" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Forward declare minimial logging components needed to use logger. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Logs/include/gambit/Logs/logger.hpp" line="40" column="3"/>
+  </compounddef>
+</doxygen>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::sd_stau2body_type
 
 
 
@@ -18,14 +17,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brstau1neut](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau1neut)**  |
-| Farray< Fdouble, 1, 4 > | **[brstau2neut](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2neut)**  |
-| Farray< Fdouble, 1, 2 > | **[brstau1char](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau1char)**  |
-| Farray< Fdouble, 1, 2 > | **[brstau1hcsn](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau1hcsn)**  |
-| Farray< Fdouble, 1, 2 > | **[brstau1wsn](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau1wsn)**  |
-| Farray< Fdouble, 1, 2 > | **[brstau2char](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2char)**  |
-| Farray< Fdouble, 1, 2 > | **[brstau2hcsn](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2hcsn)**  |
-| Farray< Fdouble, 1, 2 > | **[brstau2wsn](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2wsn)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brstau1neut](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau1neut)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brstau2neut](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2neut)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brstau1char](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau1char)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brstau1hcsn](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau1hcsn)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brstau1wsn](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau1wsn)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brstau2char](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2char)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brstau2hcsn](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2hcsn)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brstau2wsn](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2wsn)**  |
 | Fdouble | **[brstau2hl](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2hl)**  |
 | Fdouble | **[brstau2hh](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2hh)**  |
 | Fdouble | **[brstau2ha](/documentation/code/classes/structgambit_1_1sd__stau2body__type/#variable-brstau2ha)**  |
@@ -119,4 +118,4 @@ Fdouble brstau2ztau;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

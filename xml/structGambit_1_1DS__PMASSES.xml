@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS_PMASSES</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS__PMASSES_1a71c80088b544cba99c7db7f009a60759" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 0, 255 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 0, 255 &gt;</type>
         <definition>Farray&lt;Fdouble,0,255&gt; Gambit::DS_PMASSES::mass</definition>
         <argsstring></argsstring>
         <name>mass</name>
@@ -22,6 +22,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 0, 255 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_PMASSES</label>
+        <link refid="structGambit_1_1DS__PMASSES"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mass</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="63" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="64" bodyend="66"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__PMASSES_1a71c80088b544cba99c7db7f009a60759" prot="public" virt="non-virtual"><scope>Gambit::DS_PMASSES</scope><name>mass</name></member>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# examples/ScannerBit_standalone.cpp
 
 
 
@@ -32,7 +31,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Printers::PrinterManager * | **[printerInterface](/documentation/code/files/scannerbit__standalone_8cpp/#variable-printerinterface)**  |
+| [Printers::PrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1printermanager/) * | **[printerInterface](/documentation/code/files/scannerbit__standalone_8cpp/#variable-printerinterface)**  |
 
 ## Detailed Description
 
@@ -535,4 +534,4 @@ int main(int argc, char **argv)
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:52 +0000

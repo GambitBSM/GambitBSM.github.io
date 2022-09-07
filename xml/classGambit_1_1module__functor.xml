@@ -1,0 +1,566 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1module__functor" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::module_functor</compoundname>
+    <basecompoundref refid="classGambit_1_1module__functor__common" prot="public" virt="non-virtual">Gambit::module_functor_common</basecompoundref>
+    <includes refid="functors_8hpp" local="no">functors.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TYPE</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1module__functor_1ab110e74bdaf76e18320eabff2345a5fd" prot="protected" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* Gambit::module_functor&lt; TYPE &gt;::myFunction) (TYPE &amp;)</definition>
+        <argsstring>)(TYPE &amp;)</argsstring>
+        <name>myFunction</name>
+        <qualifiedname>Gambit::module_functor::myFunction</qualifiedname>
+        <briefdescription>
+<para>Internal storage of function pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="798" column="7" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1module__functor_1a331a6e74f3ec94ad8d10565a4435676b" prot="protected" static="no" mutable="no">
+        <type>TYPE *</type>
+        <definition>TYPE* Gambit::module_functor&lt; TYPE &gt;::myValue</definition>
+        <argsstring></argsstring>
+        <name>myValue</name>
+        <qualifiedname>Gambit::module_functor::myValue</qualifiedname>
+        <briefdescription>
+<para>Internal pointer to storage location of function value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="801" column="12" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1module__functor_1abed80008cf026b213d695a9c6322572c" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::module_functor&lt; TYPE &gt;::myPrintFlag</definition>
+        <argsstring></argsstring>
+        <name>myPrintFlag</name>
+        <qualifiedname>Gambit::module_functor::myPrintFlag</qualifiedname>
+        <briefdescription>
+<para>Flag to select whether or not the results of this functor should be sent to the printer object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="804" column="12" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="804" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1module__functor_1a2b6d5d20d90906aa4b2ccf9b6e820f89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::module_functor&lt; TYPE &gt;::module_functor</definition>
+        <argsstring>(void(*)(TYPE &amp;), str, str, str, str, Models::ModelFunctorClaw &amp;)</argsstring>
+        <name>module_functor</name>
+        <qualifiedname>Gambit::module_functor::module_functor</qualifiedname>
+        <param>
+          <type>void(*)(TYPE &amp;)</type>
+          <defname>inputFunction</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>func_name</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>func_capability</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>result_type</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>origin_name</defname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> &amp;</type>
+          <defname>claw</defname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Class methods for actual module functors for TYPE != void. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="766" column="7" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="64" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1module__functor_1a302a7e36f414924e2fea0bc38deeba83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Gambit::module_functor&lt; TYPE &gt;::~module_functor</definition>
+        <argsstring>()</argsstring>
+        <name>~module_functor</name>
+        <qualifiedname>Gambit::module_functor::~module_functor</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="769" column="15" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1module__functor_1ab1a3b51ffb937f26f9d109811410fb62" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::module_functor&lt; TYPE &gt;::setPrintRequirement</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>setPrintRequirement</name>
+        <qualifiedname>Gambit::module_functor::setPrintRequirement</qualifiedname>
+        <reimplements refid="classGambit_1_1functor_1ae47ce614bb3ebb36fb24a60a115de3d2">setPrintRequirement</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Setter for indicating if the wrapped function&apos;s result should to be printed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for indicating if the wrapped function&apos;s result should be printed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="772" column="20" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1module__functor_1ad4f4ce209987e753b78e5d47fafe5d11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Gambit::module_functor&lt; TYPE &gt;::requiresPrinting</definition>
+        <argsstring>() const</argsstring>
+        <name>requiresPrinting</name>
+        <qualifiedname>Gambit::module_functor::requiresPrinting</qualifiedname>
+        <reimplements refid="classGambit_1_1functor_1a9c2a14819589380ff81cc3b1b2a9d78a">requiresPrinting</reimplements>
+        <briefdescription>
+<para>Getter indicating if the wrapped function&apos;s result should to be printed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter indicating if the wrapped function&apos;s result should be printed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="775" column="20" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1module__functor_1a8b95bea55acc882c4ec06636016e4429" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::module_functor&lt; TYPE &gt;::calculate</definition>
+        <argsstring>()</argsstring>
+        <name>calculate</name>
+        <qualifiedname>Gambit::module_functor::calculate</qualifiedname>
+        <reimplements refid="classGambit_1_1functor_1ad4511b7324e416ec8a881bc2d3d7870e">calculate</reimplements>
+        <briefdescription>
+<para>Calculate method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate method (no loop-manager stuff here because only void specialisation can manage loops) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="778" column="12" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="94" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1module__functor_1a768d06bf12431023fe0cebf862edc670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const TYPE &amp;</type>
+        <definition>const TYPE &amp; Gambit::module_functor&lt; TYPE &gt;::operator()</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Gambit::module_functor::operator()</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Operation (return value) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="781" column="18" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1module__functor_1a30c323a1171f5415b9ffce90cf0e43bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; TYPE &gt;</type>
+        <definition>safe_ptr&lt; TYPE &gt; Gambit::module_functor&lt; TYPE &gt;::valuePtr</definition>
+        <argsstring>()</argsstring>
+        <name>valuePtr</name>
+        <qualifiedname>Gambit::module_functor::valuePtr</qualifiedname>
+        <briefdescription>
+<para>Alternative to operation (returns a safe pointer to value) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="784" column="16" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="155" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1module__functor_1aa51b6fc974adb298ff6b2feeab91e1f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::module_functor&lt; TYPE &gt;::print</definition>
+        <argsstring>(Printers::BasePrinter *printer, const int pointID, int index)</argsstring>
+        <name>print</name>
+        <qualifiedname>Gambit::module_functor::print</qualifiedname>
+        <reimplements refid="classGambit_1_1functor_1a9ad7a0b7c132a040c5801b85c139f241">print</reimplements>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">Printers::BasePrinter</ref> *</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pointID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Printer function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="788" column="22" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="164" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1module__functor_1a3be3261712c311f7a9bd0be812d64a56" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::module_functor&lt; TYPE &gt;::print</definition>
+        <argsstring>(Printers::BasePrinter *printer, const int pointID)</argsstring>
+        <name>print</name>
+        <qualifiedname>Gambit::module_functor::print</qualifiedname>
+        <reimplements refid="classGambit_1_1functor_1abe4ec31bb94bcdb0b9ab876ae6187e8a">print</reimplements>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">Printers::BasePrinter</ref> *</type>
+          <declname>printer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>Printer function (no-thread-index short-circuit) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="791" column="22" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="196" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGambit_1_1module__functor_1a5132c201b17e8935e0810f66f2ecce80" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::module_functor&lt; TYPE &gt;::init_memory</definition>
+        <argsstring>()</argsstring>
+        <name>init_memory</name>
+        <qualifiedname>Gambit::module_functor::init_memory</qualifiedname>
+        <reimplements refid="classGambit_1_1module__functor__common_1a90d617ce75a8ade1c843c3bdaa20c231">init_memory</reimplements>
+        <briefdescription>
+<para>Initialise the memory of this functor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="807" column="20" bodyfile="Elements/include/gambit/Elements/functor_definitions.hpp" bodystart="132" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Actual module functor type for all but TYPE=void. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Gambit::functor</label>
+        <link refid="classGambit_1_1functor"/>
+      </node>
+      <node id="1">
+        <label>Gambit::module_functor&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1module__functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::module_functor_common</label>
+        <link refid="classGambit_1_1module__functor__common"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Gambit::Models::ModelFunctorClaw</label>
+        <link refid="classGambit_1_1Models_1_1ModelFunctorClaw"/>
+      </node>
+      <node id="6">
+        <label>Gambit::Options</label>
+        <link refid="classGambit_1_1Options"/>
+      </node>
+      <node id="3">
+        <label>Gambit::functor</label>
+        <link refid="classGambit_1_1functor"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>myCapability</edgelabel>
+          <edgelabel>myCitationKey</edgelabel>
+          <edgelabel>myName</edgelabel>
+          <edgelabel>myOrigin</edgelabel>
+          <edgelabel>myPurpose</edgelabel>
+          <edgelabel>myType</edgelabel>
+          <edgelabel>myVersion</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>myClaw</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>myOptions</edgelabel>
+          <edgelabel>mySubCaps</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gambit::invalid_point_exception</label>
+        <link refid="classGambit_1_1invalid__point__exception"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::module_functor&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1module__functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::module_functor_common</label>
+        <link refid="classGambit_1_1module__functor__common"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>raised_point_exception</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>myLoopManagerCapability</edgelabel>
+          <edgelabel>myLoopManagerType</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>myLoopManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gambit::special_exception</label>
+        <link refid="classGambit_1_1special__exception"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>myMessage</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>std::exception</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="Elements/include/gambit/Elements/functors.hpp" line="760" column="3" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="761" bodyend="809"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1module__functor__common_1a60681b7ecb89f42c1114132f044f4246" prot="protected" virt="virtual"><scope>Gambit::module_functor</scope><name>acknowledgeInvalidation</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aeb3b1f7a66c83d117342496b6ad0229f" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>activeModelFlags</name></member>
+      <member refid="classGambit_1_1functor_1a5f45ff02d2e4209dfb81bcb9ace3fb74" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>allModelsAllowed</name></member>
+      <member refid="classGambit_1_1functor_1a782b9e5700d5cb8035abd400447c656c" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>allowed_parent_or_friend_exists</name></member>
+      <member refid="classGambit_1_1functor_1a4f73fb1475364081fa23944b7c95c7b3" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>allowedGroupCombos</name></member>
+      <member refid="classGambit_1_1functor_1ac70ec922e8a3f04f6878ffafc231e379" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>allowedModels</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a11a55f0dee712fd09143749711bf345d" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>already_printed</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ac41e86a381b4cd922e4125e3572c5174" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>already_printed_timing</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a15351dd24c1f2efd8d0556dd06741c73" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backend_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a84713c26691d950b2aaff19bff556763" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backend_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a9789247dfe146dda5fdcf7c0fe642dab" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backend_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a4b17692c78ddabf74400feeed3db0855" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backendclassloading</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a341556c2227a848fcbb0a80df970e53f" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backendgroups</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ae23abdb30edf89228b296b707bc4321f" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>backendreq_groups</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ae7f6eb5b0b45de63ae3db562420126ed" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>backendreq_map</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ad99f3dba2e2045dfddd88a6d9b60e540" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>backendreq_tagmap</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a3ee7d48e8177ba02bbeb96c13f513853" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backendreq_tags</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a786bc4ed0cca65e2c916836740337f17" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>backendreq_types</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a367ffcfd016f5bd30123add599fdb0f7" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backendreqs</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a30f6ba1e10e57506ee8432019ba35b79" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backendreqs</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a81378addb3df54c89586340bd2e86187" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>backendspermitted</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a5a6b4098cba80ad8277d6d1a362e702b" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>breakLoop</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a407bb29ab75b62c67df4f9ad8f54c6ac" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>breakLoopFromManagedFunctor</name></member>
+      <member refid="classGambit_1_1module__functor_1a8b95bea55acc882c4ec06636016e4429" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>calculate</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a45ee081397264cff4fae5d90a468e15c" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>canBeLoopManager</name></member>
+      <member refid="classGambit_1_1functor_1abbad0238d51adf088d97fe4376586890" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>capability</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ae3a82d20da9f6340c9e00c35d7254b0c" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>check_missing_LogTag</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a093c06a4cad21400d4f46c89b6d302b1" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>chosenReqsFromGroups</name></member>
+      <member refid="classGambit_1_1functor_1ad1763580d476b082690ddebfd877e98b" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>citationKey</name></member>
+      <member refid="classGambit_1_1functor_1a86a00771d51c2f47765de71a8eb47de9" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>contains_anything_interpretable_as_member_of</name></member>
+      <member refid="classGambit_1_1module__functor__common_1af4fc9e121a27ea7caf88113de68e2ed2" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>dependencies</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a2bae29be67acbe6831b991e0f3b8f183" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>dependency_functor_map</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a65b4f950efdaca6b360b131b5b8a0ebf" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>dependency_map</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aba38e9d289eb88fd6b584fde30b1984e" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>end</name></member>
+      <member refid="classGambit_1_1module__functor__common_1add2d5838af88871fc5ccc3016b500116" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>entering_multithreaded_region</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a77c216bbfeb9d09928b3ada8973447c7" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>fadeRate</name></member>
+      <member refid="classGambit_1_1functor_1a399d73c9f799c78274ad8715eec84d7b" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>failBigTime</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a736a0964bc8a8b518eacc37e4619f3cf" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>fill_activeModelFlags</name></member>
+      <member refid="classGambit_1_1functor_1a1102b665dfdd1e1c199bdf617ab43176" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>find_friend_or_parent_model_in_map</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a26c95890c3df7e87602e2de30b6d0f6f" prot="protected" virt="virtual"><scope>Gambit::module_functor</scope><name>finishTiming</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ab1b1a8313374971f97ed8a6fde351f56" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>forcematchingbackend</name></member>
+      <member refid="classGambit_1_1functor_1a970d23b026a50dd8b029795a004b4183" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>functor</name></member>
+      <member refid="classGambit_1_1module__functor__common_1af6cabe1d2f178ed6560ae1c87802a82f" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>getActiveModelFlag</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ae25199af41de21dcb3e20b76233156ec" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>getChosenReqFromGroup</name></member>
+      <member refid="classGambit_1_1functor_1aee7a9c98be2845c50e6953fdaf1195ff" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>getDependees</name></member>
+      <member refid="classGambit_1_1module__functor__common_1abfa224375716da6b911f18e8cbe72ce7" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>getInvalidationRate</name></member>
+      <member refid="classGambit_1_1functor_1aec86679016ed6a9a1ad2f20c1e3383e9" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>getOptions</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a7f4ecc772af822e6bddf9edf95ab2a5f" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>getRuntimeAverage</name></member>
+      <member refid="classGambit_1_1functor_1a6842998c58e68c84b6dcc54fb5094c5c" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>getSubCaps</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a9ab2ee1a2b0d96d437a4c5e6d2cec739" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>globlMaxThreads</name></member>
+      <member refid="classGambit_1_1functor_1a160a2a34aa257a5683bd9d236d05499e" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>has_common_elements</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ac211d5483ebf9d71dcf2bed1cae9781e" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>iCanManageLoops</name></member>
+      <member refid="classGambit_1_1functor_1a1f13657a8b3235a6645f9f5f65096972" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>in_allowed_combo</name></member>
+      <member refid="classGambit_1_1module__functor_1a5132c201b17e8935e0810f66f2ecce80" prot="protected" virt="virtual"><scope>Gambit::module_functor</scope><name>init_memory</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a1c814da54654e19370708d98bbe07f28" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>init_myCurrentIteration_if_NULL</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a0c61f250c2879b7a80e3fbb2b6c6dcff" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>iRunNested</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a34e131eb232d93687583788c49295a9a" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>iterate</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a8015da108de37fd11580dbde2537a5b9" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>iterationPtr</name></member>
+      <member refid="classGambit_1_1functor_1ad058829b78226cf3b0dcb310a4668256" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>label</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a69db10aa494090c239d6cb796ffc1d54" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>leaving_multithreaded_region</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a426ba14422f4ec0437347df714aecc81" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>loopIsDone</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a76068bbae795db5b319da3b6445b9e0b" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>loopManagerCapability</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a744fa740688d36d4e460b09f189b8a1c" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>loopManagerName</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a1b0a360cfb0cd36dbcc2999c55a39537" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>loopManagerOrigin</name></member>
+      <member refid="classGambit_1_1module__functor__common_1af67a261a00be448fabac30d9c0c0011b" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>loopManagerType</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a30700cc6d137ec1773cd9a9359f7f1d0" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>makeBackendMatchingRule</name></member>
+      <member refid="classGambit_1_1module__functor__common_1abda9ce1c6a4f3ec4af244d907bffa30a" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>makeBackendOptionRule</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a2cd39cd54c4fedb6b5062c62ac9b3885" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>makeBackendRuleForModel</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a0fd8feffa79f12d89097f5c45fc9eb18" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>missing_backends</name></member>
+      <member refid="classGambit_1_1module__functor__common_1acba215f7ede05170a577c2c89302c2db" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>model_conditional_backend_reqs</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a27f21017f968237acd5f5ca39521e78a" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>model_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1functor_1a961f601d1b7072be456f16a74a973a59" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>modelAllowed</name></member>
+      <member refid="classGambit_1_1functor_1acfa856966c8346437fb99a746970336e" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>modelComboAllowed</name></member>
+      <member refid="classGambit_1_1functor_1a828031c874c79018d35b710379cd32d2" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>modelComboExplicitlyAllowed</name></member>
+      <member refid="classGambit_1_1functor_1ac089db4d75e7394e11530727bbade14e" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>modelExplicitlyAllowed</name></member>
+      <member refid="classGambit_1_1functor_1a6149708cf859ce1290dd447f16291e8b" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>modelGroups</name></member>
+      <member refid="classGambit_1_1module__functor_1a2b6d5d20d90906aa4b2ccf9b6e820f89" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>module_functor</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a3f6b2f655ca81171249e9f3655825a34" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>module_functor_common</name></member>
+      <member refid="classGambit_1_1module__functor__common_1adc22bfb0f06cf58e6f4469d793d88583" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myBackendConditionalDependencies</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a1e9bed0318723d34f73afc954c0d7d05" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myBackendReqs</name></member>
+      <member refid="classGambit_1_1functor_1ab8e599294e315beb4df8154b6e7ba499" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myCapability</name></member>
+      <member refid="classGambit_1_1functor_1af7284750b2816b9c1601a5e4637a503c" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myCitationKey</name></member>
+      <member refid="classGambit_1_1functor_1a7f185782b166c86c8c1488e3e28966d2" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myClaw</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aa11aee2c3fd4fe472034df285aadbef6" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myConditionalDependencies</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a47a97cb3505484092de8e06cd397ba49" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myCurrentIteration</name></member>
+      <member refid="classGambit_1_1functor_1a22acc6454f7896c3d4dcb497e62f2e65" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myDependees</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a1d2b89105961ad780787a688bd468432" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myDependencies</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a67831f6f58d5b081b2a08a5f7e7c557c" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myForcedMatches</name></member>
+      <member refid="classGambit_1_1module__functor_1ab110e74bdaf76e18320eabff2345a5fd" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myFunction</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a0b571e85b889da6d7173bae0473b2018" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myGroupedBackendReqs</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ad34c2ea06524530739b1753e7d06423a" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myGroups</name></member>
+      <member refid="classGambit_1_1functor_1a55aa9ef92692ece18544675da08ef49e" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myLabel</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a9362538d0fec38166b8baabd51272621" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myLogTag</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a2fc9ca343ed1c197b4c246779bbd52df" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myLoopIsDone</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a8aa8ac184455c66978aba66b88de3344" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myLoopManager</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ae737ea2b40a195003e3eafa08a2e24ac" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myLoopManagerCapability</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a5a1e44605d6bfc9d43cbe16ac980fdcb" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myLoopManagerType</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a24327d20eeb4e07722e81856e5c613d8" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myModelConditionalBackendReqs</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a70be0fd7b2530e87a26e1caac4b400c9" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myModelConditionalDependencies</name></member>
+      <member refid="classGambit_1_1functor_1ad9345bebb312d0352f8576d57b326759" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myName</name></member>
+      <member refid="classGambit_1_1module__functor__common_1afa8e12fe2b00861c82adcb174328589a" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myNestedFunctorList</name></member>
+      <member refid="classGambit_1_1functor_1a7cc789adf4e03cd04865f3c85d0ec42b" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myOptions</name></member>
+      <member refid="classGambit_1_1functor_1a0a323ed83c7025b6d789e7fac64addc7" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myOrigin</name></member>
+      <member refid="classGambit_1_1module__functor_1abed80008cf026b213d695a9c6322572c" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myPrintFlag</name></member>
+      <member refid="classGambit_1_1functor_1ac061cc96139bf564778406ecc67cc0a9" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myPurpose</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a591c7ce963c69d51b331eb69fbe5a4ba" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myResolvableBackendReqs</name></member>
+      <member refid="classGambit_1_1functor_1a41bf64d7ddcd9ee48ef849344a803b55" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myStatus</name></member>
+      <member refid="classGambit_1_1functor_1a91801bf8dad62e88dcd1c0d677543d03" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>mySubCaps</name></member>
+      <member refid="classGambit_1_1functor_1a8ce50c7d7fcf5afa751b258895dd6dad" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myTimingLabel</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a7a1adb7a3d6c6868d06025ba45264593" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myTimingPrintFlag</name></member>
+      <member refid="classGambit_1_1functor_1a9501f612101222191ac4eb41c5ef91af" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myTimingVertexID</name></member>
+      <member refid="classGambit_1_1functor_1a799a78be10d270a75bf1c3881178daab" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myType</name></member>
+      <member refid="classGambit_1_1module__functor_1a331a6e74f3ec94ad8d10565a4435676b" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myValue</name></member>
+      <member refid="classGambit_1_1functor_1a4de522a9d806a77959580b9a21c922d4" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myVersion</name></member>
+      <member refid="classGambit_1_1functor_1a004751aadc8af70cdb28fa25ba661f76" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>myVertexID</name></member>
+      <member refid="classGambit_1_1functor_1aaea7be169ef23d9221b4f85bc52eacb4" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>name</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aa948b2e50700e9c0d414090064cbaf35" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>needs_recalculating</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a39ebf33238e29052273bfb688100bad4" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>notifyOfBackends</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a18664919c7999ac674d59f27d4d40a46" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>notifyOfDependee</name></member>
+      <member refid="classGambit_1_1functor_1a52331ed1165075f4f5c8060cf4d95f03" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>notifyOfIniOptions</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a946e0a1ad997d417dd40160a3bba603b" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>notifyOfInvalidation</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a9effd8a4100f67c39c4cd300a027ae22" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>notifyOfModel</name></member>
+      <member refid="classGambit_1_1functor_1a3ed1caba9a4a281ff20d72e4e8354002" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>notifyOfSubCaps</name></member>
+      <member refid="classGambit_1_1functor_1a3a9af0d5af87bd2210fb3e877b2e7c9a" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>notifyOfSubCaps</name></member>
+      <member refid="classGambit_1_1module__functor_1a768d06bf12431023fe0cebf862edc670" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1functor_1a150f27ecb8a2eb9c3739a809dc5b7c83" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>origin</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a15ba740d630d04935b9e9e1376bf0b8a" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>permitted_map</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a586f59a87b95b5cc43bfa8939d51e71f" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>pInvalidation</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a366392aa6096192a76ee894d68aa85da" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>point_exception_raised</name></member>
+      <member refid="classGambit_1_1module__functor_1aa51b6fc974adb298ff6b2feeab91e1f8" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>print</name></member>
+      <member refid="classGambit_1_1module__functor_1a3be3261712c311f7a9bd0be812d64a56" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>print</name></member>
+      <member refid="classGambit_1_1functor_1aec5300fbdb253cd9a09edffbfdafb526" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>purpose</name></member>
+      <member refid="classGambit_1_1functor_1a7be700dee4f9d9cc5a9efaa0ff2cbab0" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>quantity</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a85d73ca93af7755cdfc053f015a8cf98" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>raised_point_exception</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a2897f00892b6a5470246d1557f251e6b" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>required_classloading_backends</name></member>
+      <member refid="classGambit_1_1module__functor_1ad4f4ce209987e753b78e5d47fafe5d11" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>requiresPrinting</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a834e0932dcd86d0ad0a19d30a83e74cd" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>requiresTimingPrinting</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a4e34fc2cf2c9932a6794eb9baf554e28" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>reset</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a716ce66eb5f12e39e9d38c0d5949fe9a" prot="protected" virt="virtual"><scope>Gambit::module_functor</scope><name>reset</name></member>
+      <member refid="classGambit_1_1functor_1a3fa95b5cde845f17d17fc40fa8e205e5" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>reset_and_calculate</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a305b0c7b7932b2bad7439e535263126e" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>resetLoop</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ae67ace8c39a2c53cb2a158d5bac0ddb4" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>resolveBackendReq</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ab4e47058c7c0f72906ece2924d952882" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>resolveDependency</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ab5056f4b47a2c3a79bc44e4293532f07" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>resolveLoopManager</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a8b70a7e3b4dbad4da1fc927144295adf" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>retrieve_conditional_dep_type_pair</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a6dc067a3fa5774ca0f9eb1dfb67d2d53" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>retrieve_invalid_point_exception</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a73113fff7fbc6a32a1c871dc3e688eeb" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>runtime_average</name></member>
+      <member refid="classGambit_1_1functor_1a973dd85d7e1f3b57c3eb98030a8cf237" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>safe_version</name></member>
+      <member refid="classGambit_1_1functor_1aa913b1602127b1115d211ad4dcafadfb" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setAllowedModel</name></member>
+      <member refid="classGambit_1_1functor_1abd0c5a0c01fe6b8188c4c12c136b3ebb" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setAllowedModelGroupCombo</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a6f74b02a3d580cb9797d766e3ca6b81a" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setBackendConditionalDependency</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ac28b31c7a4ddb7491c9240486b8e8232" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setBackendConditionalDependencySingular</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a8d5518135253c1ed1065809ce8251778" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setBackendReq</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a3ea59e1326629dfbc1f31a8b2921d6d8" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>setCanBeLoopManager</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a915f72fd748fc54ce4efaddbe38c8a8f" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setConditionalDependency</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a43a7ee806e18f22a2de7ed7f012932a4" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setDependency</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a80654414bb5bb5ae82f6fc37080dc858" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>setFadeRate</name></member>
+      <member refid="classGambit_1_1functor_1af005b2c5a8673df8402c10b7cdf78082" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>setInUse</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aea40fae672492b12ab0fe2cd3e270146" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>setIteration</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aad1288bedc0ae2a3080d66e9ac58c80e" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>setLoopManagerCapType</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ad648bbad10815d3b346c2e51462c5f0c" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setModelConditionalBackendReq</name></member>
+      <member refid="classGambit_1_1module__functor__common_1abab01071027dc0b194bc3e76b33a25b3" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setModelConditionalBackendReqSingular</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a5507c3fa278180358649ef2bc2475f83" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setModelConditionalDependency</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a533b326fe958f21986dbe5cdc27270f3" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setModelConditionalDependencySingular</name></member>
+      <member refid="classGambit_1_1functor_1a36db93b4e79612e57f32fb807d427773" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setModelGroup</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aa87dfaf3619b21da4e00637e6e8c7d8d" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>setNestedList</name></member>
+      <member refid="classGambit_1_1functor_1ab42c0faae1334f0e4aec38fa6dc2c3b2" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setOption</name></member>
+      <member refid="classGambit_1_1module__functor__common_1af3e16680e5820efb26df1c3328190acd" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setPermittedBackend</name></member>
+      <member refid="classGambit_1_1module__functor_1ab1a3b51ffb937f26f9d109811410fb62" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>setPrintRequirement</name></member>
+      <member refid="classGambit_1_1functor_1a505e1eec8cb10fab9a310cd07ddaa7b2" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setPurpose</name></member>
+      <member refid="classGambit_1_1module__functor__common_1a3d41b15872c55bb8d903b011408dc589" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setRequiredClassloader</name></member>
+      <member refid="classGambit_1_1functor_1aa5b8e133948384570684245abcd0a137" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setStatus</name></member>
+      <member refid="classGambit_1_1functor_1a0372aeee11961e5b97ff9d0370375826" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setSubCap</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ac689bbfda7429204bc0e07a547116e11" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>setTimingPrintRequirement</name></member>
+      <member refid="classGambit_1_1functor_1aa3672cd13d12ba53572d7b40bb74121e" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setTimingVertexID</name></member>
+      <member refid="classGambit_1_1functor_1a662c46ed6b31a1525a983c9cf7ebdf2b" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>setVertexID</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ab3d4cb6d21dd67b058af4e70bc4a4c45" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>signal_mode_locked</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aa47b3d140ceec21755b3cf50cffece49" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>start</name></member>
+      <member refid="classGambit_1_1module__functor__common_1aa5b20d0bd820325c61ab0bcfea479a48" prot="protected" virt="virtual"><scope>Gambit::module_functor</scope><name>startTiming</name></member>
+      <member refid="classGambit_1_1functor_1a2ba190773faaf6e644d74ab24c709d2a" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>status</name></member>
+      <member refid="classGambit_1_1functor_1afec52bd9d7b3fb3a83cece403d48626b" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>timingLabel</name></member>
+      <member refid="classGambit_1_1functor_1ad33185ce2c0ff77e0e14e4606d8efa1a" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>timingVertexID</name></member>
+      <member refid="classGambit_1_1module__functor__common_1ae819618cc7c2ad5eb32d18464235d40b" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>tp</name></member>
+      <member refid="classGambit_1_1functor_1a913d44680b347e3e9261601b3bdb6f80" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>type</name></member>
+      <member refid="classGambit_1_1module__functor_1a30c323a1171f5415b9ffce90cf0e43bd" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>valuePtr</name></member>
+      <member refid="classGambit_1_1functor_1a3d9cf03cce51e7e134bbe1d7dcf37541" prot="protected" virt="non-virtual"><scope>Gambit::module_functor</scope><name>verbose</name></member>
+      <member refid="classGambit_1_1functor_1a876de7e3fb4b6611e0a90a24ec889aed" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>version</name></member>
+      <member refid="classGambit_1_1functor_1a94892ac8fa2e37f15cab798bbd189bcb" prot="public" virt="non-virtual"><scope>Gambit::module_functor</scope><name>vertexID</name></member>
+      <member refid="classGambit_1_1functor_1a107e83b861fcc192e776352b6fe3719f" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>~functor</name></member>
+      <member refid="classGambit_1_1module__functor_1a302a7e36f414924e2fea0bc38deeba83" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>~module_functor</name></member>
+      <member refid="classGambit_1_1module__functor__common_1af7b89032cf7c7392bb9566609b699f4f" prot="public" virt="virtual"><scope>Gambit::module_functor</scope><name>~module_functor_common</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

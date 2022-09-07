@@ -33,7 +33,7 @@
         <location file="Core/include/gambit/Core/container_factory.hpp" line="60" column="26" bodyfile="Core/include/gambit/Core/container_factory.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container__Factory_1afa414747bd69169fd0d118beb8af16c4" prot="private" static="no" mutable="no">
-        <type>std::map&lt; str, primary_model_functor * &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt;</type>
         <definition>std::map&lt;str, primary_model_functor *&gt; Gambit::Likelihood_Container_Factory::functorMap</definition>
         <argsstring></argsstring>
         <name>functorMap</name>
@@ -47,7 +47,7 @@
         <location file="Core/include/gambit/Core/container_factory.hpp" line="61" column="16" bodyfile="Core/include/gambit/Core/container_factory.hpp" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container__Factory_1a45c482ddbed686e619e7c7a469c77d5b" prot="private" static="no" mutable="no">
-        <type>Printers::BaseBasePrinter &amp;</type>
+        <type><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">Printers::BaseBasePrinter</ref> &amp;</type>
         <definition>Printers::BaseBasePrinter&amp; Gambit::Likelihood_Container_Factory::printer</definition>
         <argsstring></argsstring>
         <name>printer</name>
@@ -81,7 +81,7 @@
           <declname>iniFile</declname>
         </param>
         <param>
-          <type>Printers::BaseBasePrinter &amp;</type>
+          <type><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">Printers::BaseBasePrinter</ref> &amp;</type>
           <declname>printer</declname>
         </param>
         <briefdescription>
@@ -114,7 +114,7 @@
         <qualifiedname>Gambit::Likelihood_Container_Factory::operator()</qualifiedname>
         <reimplements refid="classGambit_1_1Scanner_1_1Factory__Base_1ae98201a869e733076999bbdd16d6fece">operator()</reimplements>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <declname>purpose</declname>
         </param>
         <briefdescription>

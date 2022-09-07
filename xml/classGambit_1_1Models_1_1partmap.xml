@@ -1,0 +1,1679 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Models_1_1partmap" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Models::partmap</compoundname>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ad5b5a63753f82d2318cb04e5d76be36f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; str, int &gt;</type>
+        <definition>std::pair&lt; str, int &gt; Gambit::Models::partmap::get_antiparticle</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>get_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::get_antiparticle</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the matching anti-particle short name and index for a particle in the database, using the short name and index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="108" column="19" bodyfile="Models/src/partmap.cpp" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ad53a7f4e2496ac3dbffecc218de2e1a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; str, int &gt;</type>
+        <definition>std::pair&lt; str, int &gt; Gambit::Models::partmap::get_antiparticle</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>get_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::get_antiparticle</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="109" column="19" bodyfile="Models/src/partmap.cpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a8d984c6f6aab395595902e0c92cc88c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt; int, int &gt; Gambit::Models::partmap::get_antiparticle</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>get_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::get_antiparticle</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the matching anti-particle PDG code and index for a particle in the database, using the PDG code and index </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Antiparticles are identified by having the opposite sign PDG code to a particle</para>
+<para>Else assume particle is its own antiparticle (if this may not be true, use has_anti_particle to check explicitly for match)</para>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="114" column="19" bodyfile="Models/src/partmap.cpp" bodystart="258" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a608450cc2b695b34e3cccbfa850b41b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt; int, int &gt; Gambit::Models::partmap::get_antiparticle</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>get_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::get_antiparticle</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdgcode</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="115" column="19" bodyfile="Models/src/partmap.cpp" bodystart="269" bodyend="272"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1af25d1ff547cbeec6e6c1a456c0b9c849" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_antiparticle</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>has_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::has_antiparticle</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has a matching anti-particle in the database, using the short name and index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="123" column="14" bodyfile="Models/src/partmap.cpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ad852de2c5c119866c5b0322f0f4258da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_antiparticle</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>has_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::has_antiparticle</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="124" column="14" bodyfile="Models/src/partmap.cpp" bodystart="288" bodyend="291"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ac961a0eb083c981aab9dc2407cbffaaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_antiparticle</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>has_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::has_antiparticle</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has a matching anti-particle in the database, using the PDG code and context integer </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Antiparticles are identified by having the opposite sign PDG code to a particle</para>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="129" column="14" bodyfile="Models/src/partmap.cpp" bodystart="296" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a6efe214b317fad4a3875398331b1da78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_antiparticle</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>has_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::has_antiparticle</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdgcode</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="130" column="14" bodyfile="Models/src/partmap.cpp" bodystart="302" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1abd0ee8e88acd3ad973d0d63b5b3c447f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_spinx2</definition>
+        <argsstring>(str) const</argsstring>
+        <name>has_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::has_spinx2</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a spin (x2) entry, using the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><hruler/>
+ Check if a particle has the spin (x2), using the long name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="140" column="14" bodyfile="Models/src/partmap.cpp" bodystart="312" bodyend="319"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a25936f459536466ba6f27e0b6ee915f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_spinx2</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>has_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::has_spinx2</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a spin (x2) entry, using the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has the spin (x2), using the PDG code and context integer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="143" column="14" bodyfile="Models/src/partmap.cpp" bodystart="324" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a4c491dbef5939032de7dd70e99ae6a2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_spinx2</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>has_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::has_spinx2</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdg_code</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="144" column="14" bodyfile="Models/src/partmap.cpp" bodystart="328" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a41e84bd9ff54dae8aeada542752dd9c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_spinx2</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>has_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::has_spinx2</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a spin (x2) entry, using the short name and index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has the spin (x2), using short name and index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="147" column="14" bodyfile="Models/src/partmap.cpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a6ae24fef41f565ba2ee846bb6b82629d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_spinx2</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>has_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::has_spinx2</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="148" column="14" bodyfile="Models/src/partmap.cpp" bodystart="340" bodyend="343"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a1908c53c2d1d4d417a0e578a1fe52703" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_spinx2</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>get_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::get_spinx2</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get spin (x2) of a given particle, using the PDG code and context integer</para>
+<para>Get spin of a given particle, using the PDG code and context integer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="152" column="13" bodyfile="Models/src/partmap.cpp" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a59c96a16de85ec3fc034c088b226e8a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_spinx2</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>get_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::get_spinx2</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdg_code</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="153" column="13" bodyfile="Models/src/partmap.cpp" bodystart="364" bodyend="367"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a8bff5ad7b07764424c81517d107261b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_spinx2</definition>
+        <argsstring>(str) const</argsstring>
+        <name>get_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::get_spinx2</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get spin (x2) of a given particle, using the long name</para>
+<para>Get spin of a given particle, using the long name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="158" column="13" bodyfile="Models/src/partmap.cpp" bodystart="348" bodyend="355"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ae285b81bf881afe0ebd76ceb88fae864" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_spinx2</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>get_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::get_spinx2</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get spin (x2) of a given particle, using the short name and index</para>
+<para>Get spin of a given particle, using short name and index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="163" column="13" bodyfile="Models/src/partmap.cpp" bodystart="372" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ab7e4c11c6749c5f9d60fade2d398b6fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_spinx2</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>get_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::get_spinx2</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="164" column="13" bodyfile="Models/src/partmap.cpp" bodystart="376" bodyend="379"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ad883d0018ef646ec5cd586ff0eecf847" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_chargex3</definition>
+        <argsstring>(str) const</argsstring>
+        <name>has_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::has_chargex3</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a charge (x3) entry, using the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has the charge (x3), using the long name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="168" column="14" bodyfile="Models/src/partmap.cpp" bodystart="384" bodyend="391"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a26a54dea2e12452b93f6c2762af3be55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_chargex3</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>has_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::has_chargex3</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a charge (x3) entry, using the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has the charge (x3), using the PDG code and context integer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="171" column="14" bodyfile="Models/src/partmap.cpp" bodystart="396" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a00b92cdeca4ff540db893d0fdc0042e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_chargex3</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>has_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::has_chargex3</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdg_code</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="172" column="14" bodyfile="Models/src/partmap.cpp" bodystart="400" bodyend="403"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a4c4a4c9c206efd6e87f325c1ca17ffa0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_chargex3</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>has_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::has_chargex3</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a charge (x3) entry, using the short name and index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has the charge (x3), using short name and index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="175" column="14" bodyfile="Models/src/partmap.cpp" bodystart="408" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a1ab902e3a69cc9d6192cdf7f6e5e404e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_chargex3</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>has_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::has_chargex3</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="176" column="14" bodyfile="Models/src/partmap.cpp" bodystart="412" bodyend="415"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a5d04c28642374298ac4ea97582e5fb4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_chargex3</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>get_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::get_chargex3</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get charge (x3) of a given particle, using the PDG code and context integer</para>
+<para>Get charge of a given particle, using the PDG code and context integer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="180" column="13" bodyfile="Models/src/partmap.cpp" bodystart="432" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a1d2d5a1b72cb5a4e2453b8b4dbc3574a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_chargex3</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>get_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::get_chargex3</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdg_code</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="181" column="13" bodyfile="Models/src/partmap.cpp" bodystart="436" bodyend="439"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a508fb6e3e5ff773e5c7db10a0798b421" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_chargex3</definition>
+        <argsstring>(str) const</argsstring>
+        <name>get_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::get_chargex3</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get charge (x3) of a given particle, using the long name</para>
+<para>Get charge of a given particle, using the long name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="186" column="13" bodyfile="Models/src/partmap.cpp" bodystart="420" bodyend="427"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a04ab02a42d20cbc77d1b6f3a2e43a392" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_chargex3</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>get_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::get_chargex3</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get charge (x3) of a given particle, using the short name and index</para>
+<para>Get charge of a given particle, using short name and index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="191" column="13" bodyfile="Models/src/partmap.cpp" bodystart="444" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a07a8c799552bdeed28c21fa306b549f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_chargex3</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>get_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::get_chargex3</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="192" column="13" bodyfile="Models/src/partmap.cpp" bodystart="448" bodyend="451"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a9c225eab1b8a9bd7ad71acffc901d1a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_color</definition>
+        <argsstring>(str) const</argsstring>
+        <name>has_color</name>
+        <qualifiedname>Gambit::Models::partmap::has_color</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a color entry, using the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has color information, using the long name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="196" column="14" bodyfile="Models/src/partmap.cpp" bodystart="456" bodyend="463"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ac4cec3eb9f32bccc4e52c7271735ecc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_color</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>has_color</name>
+        <qualifiedname>Gambit::Models::partmap::has_color</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a color entry, using the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has color information, using the PDG code and context integer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="199" column="14" bodyfile="Models/src/partmap.cpp" bodystart="468" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a298e97d69951524c73394d91a6c29b68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_color</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>has_color</name>
+        <qualifiedname>Gambit::Models::partmap::has_color</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdg_code</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="200" column="14" bodyfile="Models/src/partmap.cpp" bodystart="472" bodyend="475"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a6dd13d26c740880eaad501475365a4f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_color</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>has_color</name>
+        <qualifiedname>Gambit::Models::partmap::has_color</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a color entry, using the short name and index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has color information, using short name and index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="203" column="14" bodyfile="Models/src/partmap.cpp" bodystart="480" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ae9d19e8605ab04f6fcc540b4bdfce53a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_color</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>has_color</name>
+        <qualifiedname>Gambit::Models::partmap::has_color</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="204" column="14" bodyfile="Models/src/partmap.cpp" bodystart="484" bodyend="487"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a47b6ac3e52be525be0611149f5649d02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_color</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>get_color</name>
+        <qualifiedname>Gambit::Models::partmap::get_color</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get color of a given particle, using the PDG code and context integer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="208" column="13" bodyfile="Models/src/partmap.cpp" bodystart="504" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a4d479a380103b72eb9e30f365a5fdada" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_color</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>get_color</name>
+        <qualifiedname>Gambit::Models::partmap::get_color</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdg_code</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="209" column="13" bodyfile="Models/src/partmap.cpp" bodystart="508" bodyend="511"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a04c0809eb11f72dfe69702b2c26f4fdf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_color</definition>
+        <argsstring>(str) const</argsstring>
+        <name>get_color</name>
+        <qualifiedname>Gambit::Models::partmap::get_color</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get color of a given particle, using the long name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="214" column="13" bodyfile="Models/src/partmap.cpp" bodystart="492" bodyend="499"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a1c840bda295c6bdd967d1734f0065a80" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_color</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>get_color</name>
+        <qualifiedname>Gambit::Models::partmap::get_color</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get color of a given particle, using the short name and index</para>
+<para>Get color of a given particle, using short name and index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="219" column="13" bodyfile="Models/src/partmap.cpp" bodystart="516" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a23e324d97fb814aa7c8b9203cf4fd9ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Models::partmap::get_color</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>get_color</name>
+        <qualifiedname>Gambit::Models::partmap::get_color</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="220" column="13" bodyfile="Models/src/partmap.cpp" bodystart="520" bodyend="523"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1a21509aed582f22f350267c5c1d1e7d34" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;int, int&gt; &gt; Gambit::Models::partmap::SM</definition>
+        <argsstring></argsstring>
+        <name>SM</name>
+        <qualifiedname>Gambit::Models::partmap::SM</qualifiedname>
+        <briefdescription>
+<para>All SM particles in the database, by PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="229" column="21" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1a32970eefb60fec1724fb4af18dc2a31d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;int, int&gt; &gt; Gambit::Models::partmap::generic</definition>
+        <argsstring></argsstring>
+        <name>generic</name>
+        <qualifiedname>Gambit::Models::partmap::generic</qualifiedname>
+        <briefdescription>
+<para>All generic particle classes in the database, by PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="231" column="21" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1ac9c9d317020e351ab9dbc67de2b4bcd9" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::map&lt;str, std::pair&lt;int, int&gt; &gt; Gambit::Models::partmap::long_name_to_pdg_pair</definition>
+        <argsstring></argsstring>
+        <name>long_name_to_pdg_pair</name>
+        <qualifiedname>Gambit::Models::partmap::long_name_to_pdg_pair</qualifiedname>
+        <briefdescription>
+<para>Map from long name to PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="233" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1a7a9322138204e5cc4f605da4c1aafe2f" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; int, int &gt;, str &gt;</type>
+        <definition>std::map&lt;std::pair&lt;int, int&gt;, str&gt; Gambit::Models::partmap::pdg_pair_to_long_name</definition>
+        <argsstring></argsstring>
+        <name>pdg_pair_to_long_name</name>
+        <qualifiedname>Gambit::Models::partmap::pdg_pair_to_long_name</qualifiedname>
+        <briefdescription>
+<para>Map from PDG code and context integer to long name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="235" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1a52e8aacedcf27ad659d588282699fa6e" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; str, int &gt;, std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::map&lt;std::pair&lt;str, int&gt;, std::pair&lt;int, int&gt; &gt; Gambit::Models::partmap::short_name_pair_to_pdg_pair</definition>
+        <argsstring></argsstring>
+        <name>short_name_pair_to_pdg_pair</name>
+        <qualifiedname>Gambit::Models::partmap::short_name_pair_to_pdg_pair</qualifiedname>
+        <briefdescription>
+<para>Map from short name and index to PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="237" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1ab901555fb7360702fb935e6659954b6c" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; int, int &gt;, std::pair&lt; str, int &gt; &gt;</type>
+        <definition>std::map&lt;std::pair&lt;int, int&gt;, std::pair&lt;str, int&gt; &gt; Gambit::Models::partmap::pdg_pair_to_short_name_pair</definition>
+        <argsstring></argsstring>
+        <name>pdg_pair_to_short_name_pair</name>
+        <qualifiedname>Gambit::Models::partmap::pdg_pair_to_short_name_pair</qualifiedname>
+        <briefdescription>
+<para>Map from PDG code and context integer to short name and index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="239" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1ab025ce44ea39ac388c3911fc5714acf6" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, std::pair&lt; str, int &gt; &gt;</type>
+        <definition>std::map&lt;str, std::pair&lt;str, int&gt; &gt; Gambit::Models::partmap::long_name_to_short_name_pair</definition>
+        <argsstring></argsstring>
+        <name>long_name_to_short_name_pair</name>
+        <qualifiedname>Gambit::Models::partmap::long_name_to_short_name_pair</qualifiedname>
+        <briefdescription>
+<para>Map from long name to short name and index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="241" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1a3c4ad2e06cd935f2fcce821271c8fc52" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; str, int &gt;, str &gt;</type>
+        <definition>std::map&lt;std::pair&lt;str, int&gt;, str&gt; Gambit::Models::partmap::short_name_pair_to_long_name</definition>
+        <argsstring></argsstring>
+        <name>short_name_pair_to_long_name</name>
+        <qualifiedname>Gambit::Models::partmap::short_name_pair_to_long_name</qualifiedname>
+        <briefdescription>
+<para>Map from short name and index to long name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="243" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1aa8be1b76dc44246c748596432515fb69" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, int &gt;</type>
+        <definition>std::map&lt;str, int&gt; Gambit::Models::partmap::long_name_to_spinx2</definition>
+        <argsstring></argsstring>
+        <name>long_name_to_spinx2</name>
+        <qualifiedname>Gambit::Models::partmap::long_name_to_spinx2</qualifiedname>
+        <briefdescription>
+<para>Map from long name to twice the spin of particle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="245" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1a0fef9f0ac00912aa08ffd95112097352" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, int &gt;</type>
+        <definition>std::map&lt;str, int&gt; Gambit::Models::partmap::long_name_to_chargex3</definition>
+        <argsstring></argsstring>
+        <name>long_name_to_chargex3</name>
+        <qualifiedname>Gambit::Models::partmap::long_name_to_chargex3</qualifiedname>
+        <briefdescription>
+<para>Map from long name to three times the charge of particle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="247" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1partmap_1a5d87b6e11c2063afe4593791aa018d9d" prot="private" static="no" mutable="no">
+        <type>std::map&lt; str, int &gt;</type>
+        <definition>std::map&lt;str, int&gt; Gambit::Models::partmap::long_name_to_color</definition>
+        <argsstring></argsstring>
+        <name>long_name_to_color</name>
+        <qualifiedname>Gambit::Models::partmap::long_name_to_color</qualifiedname>
+        <briefdescription>
+<para>Map from long name to color representation of particle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="249" column="18" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1afe8f8d4a86b265cf8d8a797e4cefa7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Models::partmap::partmap</definition>
+        <argsstring>()</argsstring>
+        <name>partmap</name>
+        <qualifiedname>Gambit::Models::partmap::partmap</qualifiedname>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="43" column="9" bodyfile="Models/src/partmap.cpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ac7baa26ebfbf96b7e639b832b67cf60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::partmap::add</definition>
+        <argsstring>(str, std::pair&lt; int, int &gt;, int, int, int)</argsstring>
+        <name>add</name>
+        <qualifiedname>Gambit::Models::partmap::add</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>spinx2</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>chargex3</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+<para>Add a new particle to the database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="46" column="14" bodyfile="Models/src/partmap.cpp" bodystart="49" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a0a56983c70cff75a6fd56952f4d10f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::partmap::add_SM</definition>
+        <argsstring>(str, std::pair&lt; int, int &gt;, int, int, int)</argsstring>
+        <name>add_SM</name>
+        <qualifiedname>Gambit::Models::partmap::add_SM</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>spinx2</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>chargex3</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+<para>Add a new Standard Model particle to the database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="49" column="14" bodyfile="Models/src/partmap.cpp" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a2996a2784a572ca762d3c59027aa12c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::partmap::add_generic</definition>
+        <argsstring>(str, std::pair&lt; int, int &gt;, int, int, int)</argsstring>
+        <name>add_generic</name>
+        <qualifiedname>Gambit::Models::partmap::add_generic</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>spinx2</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>chargex3</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+<para>Add a new generic particle class to the database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="52" column="14" bodyfile="Models/src/partmap.cpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a99ba686deff07a73f006b1edc6eff0c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::partmap::add_with_short_pair</definition>
+        <argsstring>(str, std::pair&lt; int, int &gt;, std::pair&lt; str, int &gt;, int, int, int)</argsstring>
+        <name>add_with_short_pair</name>
+        <qualifiedname>Gambit::Models::partmap::add_with_short_pair</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>spinx2</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>chargex3</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+<para>Add a new particle to the database with a short name and an index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="55" column="14" bodyfile="Models/src/partmap.cpp" bodystart="78" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a23598ee827a1c7b16d561dff15423b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::partmap::add_SM_with_short_pair</definition>
+        <argsstring>(str, std::pair&lt; int, int &gt;, std::pair&lt; str, int &gt;, int, int, int)</argsstring>
+        <name>add_SM_with_short_pair</name>
+        <qualifiedname>Gambit::Models::partmap::add_SM_with_short_pair</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>spinx2</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>chargex3</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+<para>Add a new Standard Model particle to the database with a short name and an index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="58" column="14" bodyfile="Models/src/partmap.cpp" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1abbd3fba183feb23a6729e8d4ab9b3c66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt; int, int &gt; Gambit::Models::partmap::pdg_pair</definition>
+        <argsstring>(str) const</argsstring>
+        <name>pdg_pair</name>
+        <qualifiedname>Gambit::Models::partmap::pdg_pair</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the PDG code and context integer, from the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="61" column="19" bodyfile="Models/src/partmap.cpp" bodystart="95" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a7e3c3c4fafccede6275e61006a02aa0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt; int, int &gt; Gambit::Models::partmap::pdg_pair</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>pdg_pair</name>
+        <qualifiedname>Gambit::Models::partmap::pdg_pair</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>short_name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the PDG code and context integer, from the short name and index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="64" column="19" bodyfile="Models/src/partmap.cpp" bodystart="111" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a4076d778235426d1c84c015347c2da58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt; int, int &gt; Gambit::Models::partmap::pdg_pair</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>pdg_pair</name>
+        <qualifiedname>Gambit::Models::partmap::pdg_pair</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the PDG code and context integer, from the short name and index pair. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="67" column="19" bodyfile="Models/src/partmap.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1af6c66f10b424cb55f26662552d4c6f54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition>str Gambit::Models::partmap::long_name</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>long_name</name>
+        <qualifiedname>Gambit::Models::partmap::long_name</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>short_name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the long name, from the short name and index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="70" column="13" bodyfile="Models/src/partmap.cpp" bodystart="124" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ab65772563bce1cce1d1f693cbef4e0eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition>str Gambit::Models::partmap::long_name</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>long_name</name>
+        <qualifiedname>Gambit::Models::partmap::long_name</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the long name, from the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="73" column="13" bodyfile="Models/src/partmap.cpp" bodystart="137" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a0760722d00c58b1f48590054ef973b0e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition>str Gambit::Models::partmap::long_name</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>long_name</name>
+        <qualifiedname>Gambit::Models::partmap::long_name</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdg_code</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the long name, from the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="76" column="13" bodyfile="Models/src/partmap.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1aadd1799d0101a9f74379f0c70aaa5c99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; str, int &gt;</type>
+        <definition>std::pair&lt; str, int &gt; Gambit::Models::partmap::short_name_pair</definition>
+        <argsstring>(str) const</argsstring>
+        <name>short_name_pair</name>
+        <qualifiedname>Gambit::Models::partmap::short_name_pair</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the short name and index, from the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="79" column="19" bodyfile="Models/src/partmap.cpp" bodystart="155" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a9b60df050698c481776c380f3979e534" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; str, int &gt;</type>
+        <definition>std::pair&lt; str, int &gt; Gambit::Models::partmap::short_name_pair</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>short_name_pair</name>
+        <qualifiedname>Gambit::Models::partmap::short_name_pair</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the short name and index, from the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="82" column="19" bodyfile="Models/src/partmap.cpp" bodystart="169" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a55f3c3a7e541d234e0539fb2226c89ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; str, int &gt;</type>
+        <definition>std::pair&lt; str, int &gt; Gambit::Models::partmap::short_name_pair</definition>
+        <argsstring>(int, int) const</argsstring>
+        <name>short_name_pair</name>
+        <qualifiedname>Gambit::Models::partmap::short_name_pair</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>pdg_code</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve the short name and index, from the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="85" column="19" bodyfile="Models/src/partmap.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a173955eb82d405e6fce619696226ae0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+        <definition>const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp; Gambit::Models::partmap::get_SM_particles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_SM_particles</name>
+        <qualifiedname>Gambit::Models::partmap::get_SM_particles</qualifiedname>
+        <briefdescription>
+<para>Get a vector PDG codes and context integers of Standard Model particles in the database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a vector of PDG codes and context integers of Standard Model particles in the database. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="88" column="27" bodyfile="Models/src/partmap.cpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a6620a0be37beccd41427644e49b0f5f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+        <definition>const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp; Gambit::Models::partmap::get_generic_particles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_generic_particles</name>
+        <qualifiedname>Gambit::Models::partmap::get_generic_particles</qualifiedname>
+        <briefdescription>
+<para>Get a vector PDG codes and context integers of generic particle classes in the database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a vector of PDG codes and context integers of generic particle classes in the database. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="91" column="27" bodyfile="Models/src/partmap.cpp" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1aea980a6ea640ce0ca261b605dfd3d728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_particle</definition>
+        <argsstring>(str) const</argsstring>
+        <name>has_particle</name>
+        <qualifiedname>Gambit::Models::partmap::has_particle</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle is in the database, using the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="94" column="14" bodyfile="Models/src/partmap.cpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a832640f324682bd7d95ebd0f535d4cce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_particle</definition>
+        <argsstring>(str, int) const</argsstring>
+        <name>has_particle</name>
+        <qualifiedname>Gambit::Models::partmap::has_particle</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>short_name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle is in the database, using the short name and index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="97" column="14" bodyfile="Models/src/partmap.cpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a0c9732a0dcdb9eecc2727f92bb4aa01b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_particle</definition>
+        <argsstring>(std::pair&lt; str, int &gt;) const</argsstring>
+        <name>has_particle</name>
+        <qualifiedname>Gambit::Models::partmap::has_particle</qualifiedname>
+        <param>
+          <type>std::pair&lt; str, int &gt;</type>
+          <defname>shortpr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="98" column="14" bodyfile="Models/src/partmap.cpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a319a39dfb8dd4f82fb8a9e5316aa7ca0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_particle</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>has_particle</name>
+        <qualifiedname>Gambit::Models::partmap::has_particle</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle is in the database, using the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="101" column="14" bodyfile="Models/src/partmap.cpp" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1ad219d8b29a6e6b3ba4a4e30c10adb215" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition>str Gambit::Models::partmap::get_antiparticle</definition>
+        <argsstring>(str) const</argsstring>
+        <name>get_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::get_antiparticle</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>lname</defname>
+        </param>
+        <briefdescription>
+<para>Get the matching anti-particle long name for a particle in the database, using the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="104" column="13" bodyfile="Models/src/partmap.cpp" bodystart="239" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1af5bc10378abdda7c184ee9c56ea1bd09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_antiparticle</definition>
+        <argsstring>(str) const</argsstring>
+        <name>has_antiparticle</name>
+        <qualifiedname>Gambit::Models::partmap::has_antiparticle</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a matching anti-particle in the database, using the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a particle has a matching anti-particle in the database, using the long name Note: will throw an error if the particle itself is not in the database! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="119" column="14" bodyfile="Models/src/partmap.cpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1a85c3a5bac570659329d5256fde38df87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_short_name</definition>
+        <argsstring>(str) const</argsstring>
+        <name>has_short_name</name>
+        <qualifiedname>Gambit::Models::partmap::has_short_name</qualifiedname>
+        <param>
+          <type>str</type>
+          <defname>long_name</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a short name, using the long name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="134" column="14" bodyfile="Models/src/partmap.cpp" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1afeaa70d644743cac99fdc41524e16427" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Models::partmap::has_short_name</definition>
+        <argsstring>(std::pair&lt; int, int &gt;) const</argsstring>
+        <name>has_short_name</name>
+        <qualifiedname>Gambit::Models::partmap::has_short_name</qualifiedname>
+        <param>
+          <type>std::pair&lt; int, int &gt;</type>
+          <defname>pdgpr</defname>
+        </param>
+        <briefdescription>
+<para>Check if a particle has a short name, using the PDG code and context integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="137" column="14" bodyfile="Models/src/partmap.cpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1partmap_1aee2bb1ddac5ba3a8e04c45cbf48b71b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::partmap::check_contents</definition>
+        <argsstring>() const</argsstring>
+        <name>check_contents</name>
+        <qualifiedname>Gambit::Models::partmap::check_contents</qualifiedname>
+        <briefdescription>
+<para>For debugging: use to check the contents of the particle database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/partmap.hpp" line="224" column="14" bodyfile="Models/src/partmap.cpp" bodystart="527" bodyend="558"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Models/include/gambit/Models/partmap.hpp" line="37" column="5" bodyfile="Models/include/gambit/Models/partmap.hpp" bodystart="38" bodyend="251"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Models_1_1partmap_1ac7baa26ebfbf96b7e639b832b67cf60f" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>add</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a2996a2784a572ca762d3c59027aa12c9" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>add_generic</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a0a56983c70cff75a6fd56952f4d10f28" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>add_SM</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a23598ee827a1c7b16d561dff15423b21" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>add_SM_with_short_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a99ba686deff07a73f006b1edc6eff0c2" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>add_with_short_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1aee2bb1ddac5ba3a8e04c45cbf48b71b2" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>check_contents</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a32970eefb60fec1724fb4af18dc2a31d" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>generic</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ad219d8b29a6e6b3ba4a4e30c10adb215" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ad5b5a63753f82d2318cb04e5d76be36f" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ad53a7f4e2496ac3dbffecc218de2e1a3" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a8d984c6f6aab395595902e0c92cc88c4" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a608450cc2b695b34e3cccbfa850b41b2" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a5d04c28642374298ac4ea97582e5fb4a" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a1d2d5a1b72cb5a4e2453b8b4dbc3574a" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a508fb6e3e5ff773e5c7db10a0798b421" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a04ab02a42d20cbc77d1b6f3a2e43a392" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a07a8c799552bdeed28c21fa306b549f5" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a47b6ac3e52be525be0611149f5649d02" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a4d479a380103b72eb9e30f365a5fdada" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a04c0809eb11f72dfe69702b2c26f4fdf" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a1c840bda295c6bdd967d1734f0065a80" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a23e324d97fb814aa7c8b9203cf4fd9ea" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a6620a0be37beccd41427644e49b0f5f5" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_generic_particles</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a173955eb82d405e6fce619696226ae0f" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_SM_particles</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a1908c53c2d1d4d417a0e578a1fe52703" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a59c96a16de85ec3fc034c088b226e8a9" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a8bff5ad7b07764424c81517d107261b5" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ae285b81bf881afe0ebd76ceb88fae864" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ab7e4c11c6749c5f9d60fade2d398b6fb" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>get_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1af5bc10378abdda7c184ee9c56ea1bd09" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1af25d1ff547cbeec6e6c1a456c0b9c849" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ad852de2c5c119866c5b0322f0f4258da" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ac961a0eb083c981aab9dc2407cbffaaf" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a6efe214b317fad4a3875398331b1da78" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_antiparticle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ad883d0018ef646ec5cd586ff0eecf847" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a26a54dea2e12452b93f6c2762af3be55" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a00b92cdeca4ff540db893d0fdc0042e9" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a4c4a4c9c206efd6e87f325c1ca17ffa0" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a1ab902e3a69cc9d6192cdf7f6e5e404e" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a9c225eab1b8a9bd7ad71acffc901d1a8" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ac4cec3eb9f32bccc4e52c7271735ecc7" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a298e97d69951524c73394d91a6c29b68" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a6dd13d26c740880eaad501475365a4f5" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ae9d19e8605ab04f6fcc540b4bdfce53a" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1aea980a6ea640ce0ca261b605dfd3d728" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_particle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a832640f324682bd7d95ebd0f535d4cce" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_particle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a0c9732a0dcdb9eecc2727f92bb4aa01b" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_particle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a319a39dfb8dd4f82fb8a9e5316aa7ca0" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_particle</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a85c3a5bac570659329d5256fde38df87" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_short_name</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1afeaa70d644743cac99fdc41524e16427" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_short_name</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1abd0ee8e88acd3ad973d0d63b5b3c447f" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a25936f459536466ba6f27e0b6ee915f6" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a4c491dbef5939032de7dd70e99ae6a2e" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a41e84bd9ff54dae8aeada542752dd9c8" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a6ae24fef41f565ba2ee846bb6b82629d" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>has_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1af6c66f10b424cb55f26662552d4c6f54" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>long_name</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ab65772563bce1cce1d1f693cbef4e0eb" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>long_name</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a0760722d00c58b1f48590054ef973b0e" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>long_name</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a0fef9f0ac00912aa08ffd95112097352" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>long_name_to_chargex3</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a5d87b6e11c2063afe4593791aa018d9d" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>long_name_to_color</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ac9c9d317020e351ab9dbc67de2b4bcd9" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>long_name_to_pdg_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ab025ce44ea39ac388c3911fc5714acf6" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>long_name_to_short_name_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1aa8be1b76dc44246c748596432515fb69" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>long_name_to_spinx2</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1afe8f8d4a86b265cf8d8a797e4cefa7d0" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>partmap</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1abbd3fba183feb23a6729e8d4ab9b3c66" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>pdg_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a7e3c3c4fafccede6275e61006a02aa0d" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>pdg_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a4076d778235426d1c84c015347c2da58" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>pdg_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a7a9322138204e5cc4f605da4c1aafe2f" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>pdg_pair_to_long_name</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1ab901555fb7360702fb935e6659954b6c" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>pdg_pair_to_short_name_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1aadd1799d0101a9f74379f0c70aaa5c99" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>short_name_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a9b60df050698c481776c380f3979e534" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>short_name_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a55f3c3a7e541d234e0539fb2226c89ae" prot="public" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>short_name_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a3c4ad2e06cd935f2fcce821271c8fc52" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>short_name_pair_to_long_name</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a52e8aacedcf27ad659d588282699fa6e" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>short_name_pair_to_pdg_pair</name></member>
+      <member refid="classGambit_1_1Models_1_1partmap_1a21509aed582f22f350267c5c1d1e7d34" prot="private" virt="non-virtual"><scope>Gambit::Models::partmap</scope><name>SM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

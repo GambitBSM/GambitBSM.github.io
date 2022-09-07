@@ -130,7 +130,7 @@
         <location file="Core/include/gambit/Core/yaml_parser.hpp" line="58" column="14" bodyfile="Core/include/gambit/Core/yaml_parser.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1IniParser_1_1Types_1_1Observable_1a77d2bdbbf683ede091c0a600d4169659" prot="public" static="no" mutable="no">
-        <type>Options</type>
+        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
         <definition>Options Gambit::IniParser::Types::Observable::options</definition>
         <argsstring></argsstring>
         <name>options</name>
@@ -234,6 +234,13 @@
           <edgelabel>type</edgelabel>
           <edgelabel>version</edgelabel>
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>options</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::Options</label>
+        <link refid="classGambit_1_1Options"/>
       </node>
       <node id="2">
         <label>string</label>

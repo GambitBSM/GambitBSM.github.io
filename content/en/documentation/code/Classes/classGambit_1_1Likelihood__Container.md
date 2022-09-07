@@ -4,8 +4,7 @@ description: 'Class for collecting pointers to all the likelihood components, th
 
 ---
 
-
-
+# Gambit::Likelihood_Container
 
 
 
@@ -22,7 +21,7 @@ Inherits from [Gambit::Scanner::Function_Base< double(std::unordered_map< std::s
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Likelihood_Container](/documentation/code/classes/classgambit_1_1likelihood__container/#function-likelihood-container)**(const std::map< str, primary_model_functor * > & functorMap, [DRes::DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/) & dependencyResolver, [IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/) & iniFile, const str & purpose, Printers::BaseBasePrinter & printer)<br>Constructor.  |
+| | **[Likelihood_Container](/documentation/code/classes/classgambit_1_1likelihood__container/#function-likelihood-container)**(const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * > & functorMap, [DRes::DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/) & dependencyResolver, [IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/) & iniFile, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & purpose, [Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer)<br>Constructor.  |
 | void | **[setParameters](/documentation/code/classes/classgambit_1_1likelihood__container/#function-setparameters)**(const std::unordered_map< std::string, double > & parameterMap)<br>Do the prior transformation and populate the parameter map.  |
 | double | **[main](/documentation/code/classes/classgambit_1_1likelihood__container/#function-main)**(std::unordered_map< std::string, double > & in)<br>Evaluate total likelihood function.  |
 | double | **[purposeModifier](/documentation/code/classes/classgambit_1_1likelihood__container/#function-purposemodifier)**(double lnlike)<br>Use this to modify the total likelihood function before passing it to the scanner.  |
@@ -75,4 +74,4 @@ Use this to modify the total likelihood function before passing it to the scanne
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

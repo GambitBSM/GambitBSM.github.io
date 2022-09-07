@@ -1,0 +1,1651 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1FptrFinder" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::FptrFinder</compoundname>
+    <includes refid="spec__fptrfinder_8hpp" local="no">spec_fptrfinder.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class HostSpec</type>
+      </param>
+      <param>
+        <type>class MTag</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1ada1a16a88a784f920a5e161668b7663b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::FptrFinder&lt; HostSpec, MTag &gt;::get_error_code</definition>
+        <argsstring>()</argsstring>
+        <name>get_error_code</name>
+        <qualifiedname>Gambit::FptrFinder::get_error_code</qualifiedname>
+        <briefdescription>
+<para>Error reporting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="322" column="23" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="322" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a494a4bf6ca70328f5a94f7452b634502" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::FptrFinder&lt; HostSpec, MTag &gt;::get_error_message</definition>
+        <argsstring>()</argsstring>
+        <name>get_error_message</name>
+        <qualifiedname>Gambit::FptrFinder::get_error_message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="323" column="23" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="323" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a6d99e5fe34341668acbf0d2fd7b3f3aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::FptrFinder&lt; HostSpec, MTag &gt;::raise_error</definition>
+        <argsstring>(const std::string &amp;origin)</argsstring>
+        <name>raise_error</name>
+        <qualifiedname>Gambit::FptrFinder::raise_error</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="339" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="339" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1aa405a47c5986850c7d4d0839cdbf2ed6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::FptrFinder&lt; HostSpec, MTag &gt;::check_index_initd</definition>
+        <argsstring>(const std::string &amp;origin, const int index, const std::string &amp;label)</argsstring>
+        <name>check_index_initd</name>
+        <qualifiedname>Gambit::FptrFinder::check_index_initd</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="350" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="350" bodyend="360"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1acf57f1ae31f30a8c6cc8d22d04358b5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find_override_0index</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>find_override_0index</name>
+        <qualifiedname>Gambit::FptrFinder::find_override_0index</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Search 0-index override map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Functions to search for specific entries with no translation (to factorise the various pieces of the complicated search functions) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="455" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="455" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a56d1ae3e6206157a964a1e611ed34217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find_override_1index</definition>
+        <argsstring>(const std::string &amp;name, const int i)</argsstring>
+        <name>find_override_1index</name>
+        <qualifiedname>Gambit::FptrFinder::find_override_1index</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Search 1-index override map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="473" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="473" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1aeb1b2bc24b07bf90b5a426925f836e9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find_override_2index</definition>
+        <argsstring>(const std::string &amp;name, const int i, const int j)</argsstring>
+        <name>find_override_2index</name>
+        <qualifiedname>Gambit::FptrFinder::find_override_2index</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Search 2-index override map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="497" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="497" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a130617fe718d69bb4be8d788d107f75e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find_0index</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>find_0index</name>
+        <qualifiedname>Gambit::FptrFinder::find_0index</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Search 0-index wrapper maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="524" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="524" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a59e324211d81b371cd04e51bbb096e4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find_1index</definition>
+        <argsstring>(const std::string &amp;name, const int i)</argsstring>
+        <name>find_1index</name>
+        <qualifiedname>Gambit::FptrFinder::find_1index</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Search 1-index wrapper maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="554" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="554" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1aa2ad48b757ca746efcaa08f7b81eeb42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find_2index</definition>
+        <argsstring>(const std::string &amp;name, const int i, const int j)</argsstring>
+        <name>find_2index</name>
+        <qualifiedname>Gambit::FptrFinder::find_2index</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Search 2-index wrapper maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="574" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="574" bodyend="591"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classGambit_1_1FptrFinder_1a7fcd042d3bef387903f2fb771f1a6459" prot="private" static="no">
+        <type>HostSpec::D</type>
+        <definition>typedef HostSpec::D Gambit::FptrFinder&lt; HostSpec, MTag &gt;::D</definition>
+        <argsstring></argsstring>
+        <name>D</name>
+        <qualifiedname>Gambit::FptrFinder::D</qualifiedname>
+        <briefdescription>
+<para>Get type of the derived spectrum wrapper from HostSpec. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="169" column="39" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classGambit_1_1FptrFinder_1a769b07100560818291c29107003881a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class CallFcn&lt; HostSpec, MTag &gt;</definition>
+        <argsstring></argsstring>
+        <name>CallFcn&lt; HostSpec, MTag &gt;</name>
+        <qualifiedname>Gambit::FptrFinder::CallFcn&lt; HostSpec, MTag &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1CallFcn" kindref="compound">CallFcn</ref>&lt; HostSpec, MTag &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="142" column="25" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a7004325a9c19bc06d249b358171a3d98" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Gambit::FptrFinder&lt; HostSpec, MTag &gt;::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>Gambit::FptrFinder::label</qualifiedname>
+        <briefdescription>
+<para>Label to help track down errors if they occur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="159" column="28" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a7d4f3528da6a41316261da0e6af5c720" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::FptrFinder&lt; HostSpec, MTag &gt;::lastname</definition>
+        <argsstring></argsstring>
+        <name>lastname</name>
+        <qualifiedname>Gambit::FptrFinder::lastname</qualifiedname>
+        <briefdescription>
+<para>Last used search string (only set if there was a problem, for error messages) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="162" column="22" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ae745178753a7d2da97ac2c91d9e5b8b4" prot="private" static="no" mutable="no">
+        <type>HostSpec *const</type>
+        <definition>HostSpec* const Gambit::FptrFinder&lt; HostSpec, MTag &gt;::fakethis</definition>
+        <argsstring></argsstring>
+        <name>fakethis</name>
+        <qualifiedname>Gambit::FptrFinder::fakethis</qualifiedname>
+        <briefdescription>
+<para>HostSpec class pretending to be an extra set of class functions, so need the &quot;this&quot; pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="165" column="25" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a32c0cf561db16ae6fc2205732860347d" prot="private" static="no" mutable="no">
+        <type>const HostSpec *const</type>
+        <definition>const HostSpec* const Gambit::FptrFinder&lt; HostSpec, MTag &gt;::const_fakethis</definition>
+        <argsstring></argsstring>
+        <name>const_fakethis</name>
+        <qualifiedname>Gambit::FptrFinder::const_fakethis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="166" column="31" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1afcf15d5e773e899ad1912a3113084248" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::no_overrides_</definition>
+        <argsstring></argsstring>
+        <name>no_overrides_</name>
+        <qualifiedname>Gambit::FptrFinder::no_overrides_</qualifiedname>
+        <briefdescription>
+<para>Flag to disable searching of override maps (for retrieving original, unoverriden values) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="172" column="21" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1aa538c57c9c94029da75120e68adcf178" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::override_only_</definition>
+        <argsstring></argsstring>
+        <name>override_only_</name>
+        <qualifiedname>Gambit::FptrFinder::override_only_</qualifiedname>
+        <briefdescription>
+<para>Flag to permit searching only override maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="175" column="21" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1af51140bb8c307a50564754c20294759a" prot="private" static="no" mutable="no">
+        <type>const std::map&lt; std::string, double &gt; *</type>
+        <definition>const std::map&lt;std::string,double&gt;* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::omap0_</definition>
+        <argsstring></argsstring>
+        <name>omap0_</name>
+        <qualifiedname>Gambit::FptrFinder::omap0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointers to const maps to use for search Maps from base class (override maps, should only be used in getter case) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="179" column="53" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ac3f76776ef5452808c2b6d008b82c1e0" prot="private" static="no" mutable="no">
+        <type>const std::map&lt; std::string, std::map&lt; int, double &gt; &gt; *</type>
+        <definition>const std::map&lt;std::string,std::map&lt;int,double&gt; &gt;* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::omap1_</definition>
+        <argsstring></argsstring>
+        <name>omap1_</name>
+        <qualifiedname>Gambit::FptrFinder::omap1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="180" column="39" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1aa52e59e6896347201f9fa80c8f97b396" prot="private" static="no" mutable="no">
+        <type>const std::map&lt; std::string, std::map&lt; int, std::map&lt; int, double &gt; &gt; &gt; *</type>
+        <definition>const std::map&lt;std::string,std::map&lt;int,std::map&lt;int,double&gt; &gt; &gt;* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::omap2_</definition>
+        <argsstring></argsstring>
+        <name>omap2_</name>
+        <qualifiedname>Gambit::FptrFinder::omap2_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="181" column="25" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a1ac1916e6d4da1c88c472251beaadf02" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0 *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap0* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map0_</definition>
+        <argsstring></argsstring>
+        <name>map0_</name>
+        <qualifiedname>Gambit::FptrFinder::map0_</qualifiedname>
+        <briefdescription>
+<para>Maps filled by derived (wrapper) classes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="183" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a4f4f930fe9cee9e58ac35d71175f750b" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1 *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap1* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map1_</definition>
+        <argsstring></argsstring>
+        <name>map1_</name>
+        <qualifiedname>Gambit::FptrFinder::map1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="184" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ad18d58a1982592fa1f0ef3702ba87cfb" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2 *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap2* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map2_</definition>
+        <argsstring></argsstring>
+        <name>map2_</name>
+        <qualifiedname>Gambit::FptrFinder::map2_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="185" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a59a5a57270c3d05ea48dcaa39a48b1a5" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0W *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap0W* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map0W_</definition>
+        <argsstring></argsstring>
+        <name>map0W_</name>
+        <qualifiedname>Gambit::FptrFinder::map0W_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="186" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a3d9de792596a3e9692bdda46d2a13418" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1W *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap1W* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map1W_</definition>
+        <argsstring></argsstring>
+        <name>map1W_</name>
+        <qualifiedname>Gambit::FptrFinder::map1W_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="187" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ab60970be0bb7bb43680cadab6ce89493" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2W *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap2W* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map2W_</definition>
+        <argsstring></argsstring>
+        <name>map2W_</name>
+        <qualifiedname>Gambit::FptrFinder::map2W_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="188" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ae7a44fc9f92f7085cf37bb09414162d9" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0_extraM *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap0_extraM* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map0M_</definition>
+        <argsstring></argsstring>
+        <name>map0M_</name>
+        <qualifiedname>Gambit::FptrFinder::map0M_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="189" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a3d34befe28ae326756ac82306afd0031" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1_extraM *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap1_extraM* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map1M_</definition>
+        <argsstring></argsstring>
+        <name>map1M_</name>
+        <qualifiedname>Gambit::FptrFinder::map1M_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="190" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1acfb97c334f39fed19805ad66147f5281" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2_extraM *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap2_extraM* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map2M_</definition>
+        <argsstring></argsstring>
+        <name>map2M_</name>
+        <qualifiedname>Gambit::FptrFinder::map2M_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="191" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ade7253226e5d3f984335c4fff32981bf" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0_extraI *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap0_extraI* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map0I_</definition>
+        <argsstring></argsstring>
+        <name>map0I_</name>
+        <qualifiedname>Gambit::FptrFinder::map0I_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="192" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a801d3099e69eca5c5b45838dc006ed8f" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1_extraI *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap1_extraI* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map1I_</definition>
+        <argsstring></argsstring>
+        <name>map1I_</name>
+        <qualifiedname>Gambit::FptrFinder::map1I_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="193" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a3421ace9ac66757a566cf9937e8c4e35" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2_extraI *</type>
+        <definition>const MapTypes&lt;D,MTag&gt;::fmap2_extraI* Gambit::FptrFinder&lt; HostSpec, MTag &gt;::map2I_</definition>
+        <argsstring></argsstring>
+        <name>map2I_</name>
+        <qualifiedname>Gambit::FptrFinder::map2I_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="194" column="49" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1af9c9279f86aac0da1596ce5602e803b7" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;::const_iterator</type>
+        <definition>std::map&lt;std::string,double&gt;::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::ito0</definition>
+        <argsstring></argsstring>
+        <name>ito0</name>
+        <qualifiedname>Gambit::FptrFinder::ito0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterators needed for storing locatation of search result ...for override values </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="198" column="51" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a382dc786853b3357dc55eb81efd284be" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::map&lt; int, double &gt; &gt;::const_iterator</type>
+        <definition>std::map&lt;std::string,std::map&lt;int,double&gt;&gt;::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::ito1</definition>
+        <argsstring></argsstring>
+        <name>ito1</name>
+        <qualifiedname>Gambit::FptrFinder::ito1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="199" column="37" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a22cacdd87a9287182c6120a5e47e8ddb" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::map&lt; int, std::map&lt; int, double &gt; &gt; &gt;::const_iterator</type>
+        <definition>std::map&lt;std::string,std::map&lt;int,std::map&lt;int,double&gt;&gt;&gt;::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::ito2</definition>
+        <argsstring></argsstring>
+        <name>ito2</name>
+        <qualifiedname>Gambit::FptrFinder::ito2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="200" column="36" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a44dad16946cd2541fbbd6f90e50c2b65" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap0::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it0</definition>
+        <argsstring></argsstring>
+        <name>it0</name>
+        <qualifiedname>Gambit::FptrFinder::it0</qualifiedname>
+        <briefdescription>
+<para>...for derived class values </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="202" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a82c3488c183b581fc303f4eaa7b782ae" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap1::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it1</definition>
+        <argsstring></argsstring>
+        <name>it1</name>
+        <qualifiedname>Gambit::FptrFinder::it1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="203" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a69ce71aa3e137fd263fa3c5edfb475ab" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap2::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it2</definition>
+        <argsstring></argsstring>
+        <name>it2</name>
+        <qualifiedname>Gambit::FptrFinder::it2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="204" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a295e50382450bd9b38fa86d91e705e8f" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0W::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap0W::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it0W</definition>
+        <argsstring></argsstring>
+        <name>it0W</name>
+        <qualifiedname>Gambit::FptrFinder::it0W</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="205" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1aa2f44b72c426f2319094cd7523bcf5c0" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1W::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap1W::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it1W</definition>
+        <argsstring></argsstring>
+        <name>it1W</name>
+        <qualifiedname>Gambit::FptrFinder::it1W</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="206" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ab1130591f521fee9fa2dbb6e4d10a817" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2W::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap2W::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it2W</definition>
+        <argsstring></argsstring>
+        <name>it2W</name>
+        <qualifiedname>Gambit::FptrFinder::it2W</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="207" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a59aa15d55ddd6ab07dc4f6604a13dbfb" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0_extraM::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap0_extraM::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it0M</definition>
+        <argsstring></argsstring>
+        <name>it0M</name>
+        <qualifiedname>Gambit::FptrFinder::it0M</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="208" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1aef4c6a61105280fd330d28f865d2ac65" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1_extraM::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap1_extraM::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it1M</definition>
+        <argsstring></argsstring>
+        <name>it1M</name>
+        <qualifiedname>Gambit::FptrFinder::it1M</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="209" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a3b756bf8a7b0faf1cb908780f70f1eff" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2_extraM::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap2_extraM::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it2M</definition>
+        <argsstring></argsstring>
+        <name>it2M</name>
+        <qualifiedname>Gambit::FptrFinder::it2M</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="210" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1acd3c818cf628a8b4aff80299dd405f23" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0_extraI::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap0_extraI::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it0I</definition>
+        <argsstring></argsstring>
+        <name>it0I</name>
+        <qualifiedname>Gambit::FptrFinder::it0I</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="211" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a282242857614e9a986662d9bac89e47e" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1_extraI::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap1_extraI::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it1I</definition>
+        <argsstring></argsstring>
+        <name>it1I</name>
+        <qualifiedname>Gambit::FptrFinder::it1I</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="212" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ae8866854d2c056150eaf399877cee3dc" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2_extraI::const_iterator</type>
+        <definition>MapTypes&lt;D,MTag&gt;::fmap2_extraI::const_iterator Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it2I</definition>
+        <argsstring></argsstring>
+        <name>it2I</name>
+        <qualifiedname>Gambit::FptrFinder::it2I</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="213" column="59" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a45645cddc1e9e5c5688911e9ee80c994" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::FptrFinder&lt; HostSpec, MTag &gt;::whichiter</definition>
+        <argsstring></argsstring>
+        <name>whichiter</name>
+        <qualifiedname>Gambit::FptrFinder::whichiter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="250" column="14" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1afa61251b64894ff078c0bb0b838cd92a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::FptrFinder&lt; HostSpec, MTag &gt;::index1</definition>
+        <argsstring></argsstring>
+        <name>index1</name>
+        <qualifiedname>Gambit::FptrFinder::index1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="253" column="14" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1af9c85a09916cdfff38a9517bbfde511e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::FptrFinder&lt; HostSpec, MTag &gt;::index2</definition>
+        <argsstring></argsstring>
+        <name>index2</name>
+        <qualifiedname>Gambit::FptrFinder::index2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="254" column="14" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a96e9356f7c40c56665b7b8fb8d447bb7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::FptrFinder&lt; HostSpec, MTag &gt;::error_code</definition>
+        <argsstring></argsstring>
+        <name>error_code</name>
+        <qualifiedname>Gambit::FptrFinder::error_code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="262" column="14" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a407d30a1432cf9e8977cdce5e4224b0f" prot="private" static="yes" mutable="no">
+        <type>const std::map&lt; std::string, double &gt;</type>
+        <definition>const std::map&lt; std::string, double &gt; Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_ito0</definition>
+        <argsstring></argsstring>
+        <name>nullmap_ito0</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_ito0</qualifiedname>
+        <initializer>= std::map&lt;std::string,double&gt;              ()</initializer>
+        <briefdescription>
+<para>empty maps used to initialise the above iterators </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialise static members of <ref refid="classGambit_1_1FptrFinder" kindref="compound">FptrFinder</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="216" column="47" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a0853fe88fa760adeac27e72b467b6866" prot="private" static="yes" mutable="no">
+        <type>const std::map&lt; std::string, std::map&lt; int, double &gt; &gt;</type>
+        <definition>const std::map&lt; std::string, std::map&lt; int, double &gt; &gt; Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_ito1</definition>
+        <argsstring></argsstring>
+        <name>nullmap_ito1</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_ito1</qualifiedname>
+        <initializer>= std::map&lt;std::string,std::map&lt;int,double&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="217" column="33" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a525c4099768d005467b4e8ee8f745585" prot="private" static="yes" mutable="no">
+        <type>const std::map&lt; std::string, std::map&lt; int, std::map&lt; int, double &gt; &gt; &gt;</type>
+        <definition>const std::map&lt; std::string, std::map&lt; int, std::map&lt; int, double &gt; &gt; &gt; Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_ito2</definition>
+        <argsstring></argsstring>
+        <name>nullmap_ito2</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_ito2</qualifiedname>
+        <initializer>= std::map&lt;std::string,std::map&lt;int,std::map&lt;int,double&gt;&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="218" column="32" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a829cbca49f474c363e3af2ca8c48883a" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap0 Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it0</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it0</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it0</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap0       ()</initializer>
+        <briefdescription>
+<para>...for derived class values </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="219" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a0d05e89835a9ec0a90809df98e31de40" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap1 Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it1</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it1</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it1</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap1       ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="220" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a84f00ad1988cabb5f733507611bd2979" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap2 Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it2</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it2</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it2</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap2       ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="221" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1ae3e87174d275e0efaec3836fffd3dae1" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0W</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap0W Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it0W</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it0W</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it0W</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap0W      ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="222" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1aa5f48951e5bc81a5176862efb0dd0a69" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1W</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap1W Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it1W</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it1W</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it1W</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap1W      ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="223" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a1e7afb171558058e8e15a24d15ced8a0" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2W</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap2W Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it2W</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it2W</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it2W</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap2W      ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="224" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1aa99c17ab1ad7473957a5e4ac238ceaa7" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0_extraM</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap0_extraM Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it0M</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it0M</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it0M</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap0_extraM()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="225" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1acec2f4ca23ea9d1ef3b4a2ad7a85920b" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1_extraM</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap1_extraM Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it1M</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it1M</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it1M</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap1_extraM()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="226" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a448f9c6d3367a4dd694d128a5fe1f2d1" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2_extraM</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap2_extraM Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it2M</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it2M</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it2M</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap2_extraM()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="227" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a1e7b55e8e50144cd8ad2087f0852c247" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap0_extraI</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap0_extraI Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it0I</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it0I</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it0I</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap0_extraI()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="228" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a8e7557d75249effcb4661f3753ef7948" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap1_extraI</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap1_extraI Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it1I</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it1I</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it1I</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap1_extraI()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="229" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1aae3c70f5acb8c3d1bc8a202ddb50c350" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt; D, MTag &gt;::fmap2_extraI</type>
+        <definition>const MapTypes&lt; typenameHS::D, MT &gt;::fmap2_extraI Gambit::FptrFinder&lt; HS, MT &gt;::nullmap_it2I</definition>
+        <argsstring></argsstring>
+        <name>nullmap_it2I</name>
+        <qualifiedname>Gambit::FptrFinder::nullmap_it2I</qualifiedname>
+        <initializer>= typename <ref refid="structGambit_1_1MapTypes" kindref="compound">MapTypes</ref>&lt;typename HS::D,MT&gt;::fmap2_extraI()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="230" column="56" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1acaedf58188d8780e8774e7fe0a4b8b33" prot="private" static="yes" mutable="no">
+        <type>const std::map&lt; int, const std::string &gt;</type>
+        <definition>const std::map&lt;int, const std::string&gt; Gambit::FptrFinder&lt; HostSpec, MTag &gt;::error_msg</definition>
+        <argsstring></argsstring>
+        <name>error_msg</name>
+        <qualifiedname>Gambit::FptrFinder::error_msg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="265" column="32" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1FptrFinder_1a14480a4f3cd15dedd559242a2f0f8552" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1CallFcn" kindref="compound">CallFcn</ref>&lt; HostSpec, MTag &gt;</type>
+        <definition>CallFcn&lt;HostSpec,MTag&gt; Gambit::FptrFinder&lt; HostSpec, MTag &gt;::callfcn</definition>
+        <argsstring></argsstring>
+        <name>callfcn</name>
+        <qualifiedname>Gambit::FptrFinder::callfcn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Caller for whatever function was found HostSpec has to work slightly differently depending on whether <ref refid="classGambit_1_1FptrFinder" kindref="compound">FptrFinder</ref> is specialised for <ref refid="structGambit_1_1MapTag_1_1Get" kindref="compound">MapTag::Get</ref> or <ref refid="structGambit_1_1MapTag_1_1Set" kindref="compound">MapTag::Set</ref>, so we just declare it here and do the specialisation after the class declaration. HostSpec has to be a struct, since we partial specialisation of functions is not allowed in C++, but it is treated like a member function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="274" column="18" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a740552bb39bd97eb3f9f2607afa794d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::ito0_safe</definition>
+        <argsstring>()</argsstring>
+        <name>ito0_safe</name>
+        <qualifiedname>Gambit::FptrFinder::ito0_safe</qualifiedname>
+        <briefdescription>
+<para>Functions to check whether or not it is safe to dereference the above iterators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="233" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a6744b3ef02c48b18509846484c892ef5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::ito1_safe</definition>
+        <argsstring>()</argsstring>
+        <name>ito1_safe</name>
+        <qualifiedname>Gambit::FptrFinder::ito1_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="234" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="234" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a113a0778e50d5076734c3bbe2c70a184" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::ito2_safe</definition>
+        <argsstring>()</argsstring>
+        <name>ito2_safe</name>
+        <qualifiedname>Gambit::FptrFinder::ito2_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="235" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a207583cbfbbf2e3c751177c5be9f65d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it0_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it0_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it0_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="236" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="236" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1ada1fb4001fea000c852a4d32fa0ef068" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it1_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it1_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it1_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="237" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="237" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a3eb3cc19308dd0bcc1d5c3caf6a4a187" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it2_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it2_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it2_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="238" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="238" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a88250c67e7023a3444596da30d02fde2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it0W_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it0W_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it0W_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="239" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="239" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1af3e9832ed37b64ac90152ee81dc4de5f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it1W_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it1W_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it1W_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="240" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="240" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1ac6bdbc2d1217da08e25315c2b3ff60a6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it2W_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it2W_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it2W_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="241" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="241" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1ae55d8828a6412e0e60e0c5cf0cce5926" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it0M_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it0M_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it0M_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="242" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="242" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1ae9425b65f5389d14575fd630133f0e18" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it1M_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it1M_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it1M_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="243" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="243" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a127ab92a7de63448471239265c317089" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it2M_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it2M_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it2M_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="244" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="244" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a0f8c6678472483c58fe7e8a02795c2d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it0I_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it0I_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it0I_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="245" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="245" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a1741eb4fbf4c72b13f43413fae2f365b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it1I_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it1I_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it1I_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="246" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="246" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a7fb0b8394c417812c823d266c2844d2c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::it2I_safe</definition>
+        <argsstring>()</argsstring>
+        <name>it2I_safe</name>
+        <qualifiedname>Gambit::FptrFinder::it2I_safe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="247" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="247" bodyend="247"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a5eddb6288a80edf4a28a92b8300c803b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::FptrFinder&lt; HostSpec, MTag &gt;::FptrFinder</definition>
+        <argsstring>(const SetMaps&lt; HostSpec, MTag &gt; &amp;params)</argsstring>
+        <name>FptrFinder</name>
+        <qualifiedname>Gambit::FptrFinder::FptrFinder</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1SetMaps" kindref="compound">SetMaps</ref>&lt; HostSpec, MTag &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="277" column="10" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="277" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a2c9f4c7ce16bdeee940dc0e60d23cae9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Map</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::search_map</definition>
+        <argsstring>(const std::string &amp;name, const Map *const map, typename Map::const_iterator &amp;it)</argsstring>
+        <name>search_map</name>
+        <qualifiedname>Gambit::FptrFinder::search_map</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const Map *const</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>typename Map::const_iterator &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>helper functions for searching individual maps </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="365" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="365" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a8f222ee00ffd3d40354ba595e129cd3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::FptrFinder&lt; HostSpec, MTag &gt;::check</definition>
+        <argsstring>(bool safe)</argsstring>
+        <name>check</name>
+        <qualifiedname>Gambit::FptrFinder::check</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>safe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if it is (supposed to be) safe to dereference a map iterator Throw an error if it isn&apos;t </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="381" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="381" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a238887604724d13284b9605d882a98c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ITER</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::check_indices_1</definition>
+        <argsstring>(const std::string &amp;name, const ITER &amp;it, const int i, const int whichit, const bool debug)</argsstring>
+        <name>check_indices_1</name>
+        <qualifiedname>Gambit::FptrFinder::check_indices_1</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const ITER &amp;</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>whichit</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Methods for setting parameters (named parameter idiom) E.g. call constructor like this to use named &quot;parameters&quot; FptrFinder().map(x).map2(z).mapM(y) Could protect parameters from being reset by putting these setters in a friend class, which can only set the <ref refid="classGambit_1_1FptrFinder" kindref="compound">FptrFinder</ref> parameters via the <ref refid="classGambit_1_1FptrFinder" kindref="compound">FptrFinder</ref> constructor, but this is good enough for the use here I think. NOTE: I think this comment refers to moved/removed functionality... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="400" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="400" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1a52dda97eaa72e79129fa6d0167cbac9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ITER</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::check_indices_2</definition>
+        <argsstring>(const std::string &amp;, const ITER &amp;it, const int i, const int j, const int whichit)</argsstring>
+        <name>check_indices_2</name>
+        <qualifiedname>Gambit::FptrFinder::check_indices_2</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const ITER &amp;</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>whichit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="423" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="423" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1aabfc5c65234bd4bebc43ab3569a6bfd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find</definition>
+        <argsstring>(const std::string &amp;name, bool=true, SafeBool check_antiparticle=SafeBool(true))</argsstring>
+        <name>find</name>
+        <qualifiedname>Gambit::FptrFinder::find</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1SafeBool" kindref="compound">SafeBool</ref></type>
+          <declname>check_antiparticle</declname>
+          <defval><ref refid="classGambit_1_1SafeBool" kindref="compound">SafeBool</ref>(true)</defval>
+        </param>
+        <briefdescription>
+<para>Search function for 0-index maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Get antiparticle name if it exists Slightly wasteful to do this all the time if not needed, but makes the code simpler and realistically won&apos;t make any difference.</para>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="596" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="596" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1ae9d4c311328ffe3a00663a41b36b7c51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find</definition>
+        <argsstring>(const std::string &amp;name, int i, bool=true, SafeBool check_antiparticle=SafeBool(true))</argsstring>
+        <name>find</name>
+        <qualifiedname>Gambit::FptrFinder::find</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1SafeBool" kindref="compound">SafeBool</ref></type>
+          <declname>check_antiparticle</declname>
+          <defval><ref refid="classGambit_1_1SafeBool" kindref="compound">SafeBool</ref>(true)</defval>
+        </param>
+        <briefdescription>
+<para>Search function for 1-index maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Get antiparticle name if it exists</para>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="663" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="663" bodyend="715"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1FptrFinder_1aadd17273de8dbbe0ce80a92da5f86b3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::FptrFinder&lt; HostSpec, MTag &gt;::find</definition>
+        <argsstring>(const std::string &amp;name, int i, int j)</argsstring>
+        <name>find</name>
+        <qualifiedname>Gambit::FptrFinder::find</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Search function for 2-index maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="718" column="15" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="718" bodyend="749"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Forward declaration of <ref refid="classGambit_1_1FptrFinder" kindref="compound">FptrFinder</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Helper class for locating the function pointer corresponding to a requested string, from amongst the various different maps in which it could be located. </para>
+    </detaileddescription>
+    <location file="Elements/include/gambit/Elements/spec_fptrfinder.hpp" line="153" column="4" bodyfile="Elements/include/gambit/Elements/spec_fptrfinder.hpp" bodystart="154" bodyend="751"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1FptrFinder_1a14480a4f3cd15dedd559242a2f0f8552" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>callfcn</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a769b07100560818291c29107003881a7" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>CallFcn&lt; HostSpec, MTag &gt;</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a8f222ee00ffd3d40354ba595e129cd3f" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>check</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aa405a47c5986850c7d4d0839cdbf2ed6" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>check_index_initd</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a238887604724d13284b9605d882a98c8" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>check_indices_1</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a52dda97eaa72e79129fa6d0167cbac9e" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>check_indices_2</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a32c0cf561db16ae6fc2205732860347d" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>const_fakethis</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a7fcd042d3bef387903f2fb771f1a6459" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>D</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a96e9356f7c40c56665b7b8fb8d447bb7" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>error_code</name></member>
+      <member refid="classGambit_1_1FptrFinder_1acaedf58188d8780e8774e7fe0a4b8b33" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>error_msg</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ae745178753a7d2da97ac2c91d9e5b8b4" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>fakethis</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aabfc5c65234bd4bebc43ab3569a6bfd7" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ae9d4c311328ffe3a00663a41b36b7c51" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aadd17273de8dbbe0ce80a92da5f86b3e" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a130617fe718d69bb4be8d788d107f75e" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find_0index</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a59e324211d81b371cd04e51bbb096e4f" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find_1index</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aa2ad48b757ca746efcaa08f7b81eeb42" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find_2index</name></member>
+      <member refid="classGambit_1_1FptrFinder_1acf57f1ae31f30a8c6cc8d22d04358b5f" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find_override_0index</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a56d1ae3e6206157a964a1e611ed34217" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find_override_1index</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aeb1b2bc24b07bf90b5a426925f836e9b" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>find_override_2index</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a5eddb6288a80edf4a28a92b8300c803b" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>FptrFinder</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ada1a16a88a784f920a5e161668b7663b" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>get_error_code</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a494a4bf6ca70328f5a94f7452b634502" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>get_error_message</name></member>
+      <member refid="classGambit_1_1FptrFinder_1afa61251b64894ff078c0bb0b838cd92a" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>index1</name></member>
+      <member refid="classGambit_1_1FptrFinder_1af9c85a09916cdfff38a9517bbfde511e" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>index2</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a44dad16946cd2541fbbd6f90e50c2b65" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it0</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a207583cbfbbf2e3c751177c5be9f65d3" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it0_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1acd3c818cf628a8b4aff80299dd405f23" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it0I</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a0f8c6678472483c58fe7e8a02795c2d8" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it0I_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a59aa15d55ddd6ab07dc4f6604a13dbfb" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it0M</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ae55d8828a6412e0e60e0c5cf0cce5926" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it0M_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a295e50382450bd9b38fa86d91e705e8f" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it0W</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a88250c67e7023a3444596da30d02fde2" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it0W_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a82c3488c183b581fc303f4eaa7b782ae" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it1</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ada1fb4001fea000c852a4d32fa0ef068" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it1_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a282242857614e9a986662d9bac89e47e" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it1I</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a1741eb4fbf4c72b13f43413fae2f365b" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it1I_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aef4c6a61105280fd330d28f865d2ac65" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it1M</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ae9425b65f5389d14575fd630133f0e18" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it1M_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aa2f44b72c426f2319094cd7523bcf5c0" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it1W</name></member>
+      <member refid="classGambit_1_1FptrFinder_1af3e9832ed37b64ac90152ee81dc4de5f" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it1W_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a69ce71aa3e137fd263fa3c5edfb475ab" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it2</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a3eb3cc19308dd0bcc1d5c3caf6a4a187" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it2_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ae8866854d2c056150eaf399877cee3dc" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it2I</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a7fb0b8394c417812c823d266c2844d2c" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it2I_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a3b756bf8a7b0faf1cb908780f70f1eff" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it2M</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a127ab92a7de63448471239265c317089" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it2M_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ab1130591f521fee9fa2dbb6e4d10a817" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it2W</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ac6bdbc2d1217da08e25315c2b3ff60a6" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>it2W_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1af9c9279f86aac0da1596ce5602e803b7" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>ito0</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a740552bb39bd97eb3f9f2607afa794d5" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>ito0_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a382dc786853b3357dc55eb81efd284be" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>ito1</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a6744b3ef02c48b18509846484c892ef5" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>ito1_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a22cacdd87a9287182c6120a5e47e8ddb" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>ito2</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a113a0778e50d5076734c3bbe2c70a184" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>ito2_safe</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a7004325a9c19bc06d249b358171a3d98" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>label</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a7d4f3528da6a41316261da0e6af5c720" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>lastname</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a1ac1916e6d4da1c88c472251beaadf02" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map0_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ade7253226e5d3f984335c4fff32981bf" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map0I_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ae7a44fc9f92f7085cf37bb09414162d9" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map0M_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a59a5a57270c3d05ea48dcaa39a48b1a5" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map0W_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a4f4f930fe9cee9e58ac35d71175f750b" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map1_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a801d3099e69eca5c5b45838dc006ed8f" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map1I_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a3d34befe28ae326756ac82306afd0031" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map1M_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a3d9de792596a3e9692bdda46d2a13418" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map1W_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ad18d58a1982592fa1f0ef3702ba87cfb" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map2_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a3421ace9ac66757a566cf9937e8c4e35" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map2I_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1acfb97c334f39fed19805ad66147f5281" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map2M_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ab60970be0bb7bb43680cadab6ce89493" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>map2W_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1afcf15d5e773e899ad1912a3113084248" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>no_overrides_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a829cbca49f474c363e3af2ca8c48883a" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it0</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a1e7b55e8e50144cd8ad2087f0852c247" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it0I</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aa99c17ab1ad7473957a5e4ac238ceaa7" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it0M</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ae3e87174d275e0efaec3836fffd3dae1" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it0W</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a0d05e89835a9ec0a90809df98e31de40" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it1</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a8e7557d75249effcb4661f3753ef7948" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it1I</name></member>
+      <member refid="classGambit_1_1FptrFinder_1acec2f4ca23ea9d1ef3b4a2ad7a85920b" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it1M</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aa5f48951e5bc81a5176862efb0dd0a69" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it1W</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a84f00ad1988cabb5f733507611bd2979" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it2</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aae3c70f5acb8c3d1bc8a202ddb50c350" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it2I</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a448f9c6d3367a4dd694d128a5fe1f2d1" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it2M</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a1e7afb171558058e8e15a24d15ced8a0" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_it2W</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a407d30a1432cf9e8977cdce5e4224b0f" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_ito0</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a0853fe88fa760adeac27e72b467b6866" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_ito1</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a525c4099768d005467b4e8ee8f745585" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>nullmap_ito2</name></member>
+      <member refid="classGambit_1_1FptrFinder_1af51140bb8c307a50564754c20294759a" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>omap0_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1ac3f76776ef5452808c2b6d008b82c1e0" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>omap1_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aa52e59e6896347201f9fa80c8f97b396" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>omap2_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1aa538c57c9c94029da75120e68adcf178" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>override_only_</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a6d99e5fe34341668acbf0d2fd7b3f3aa" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>raise_error</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a2c9f4c7ce16bdeee940dc0e60d23cae9" prot="public" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>search_map</name></member>
+      <member refid="classGambit_1_1FptrFinder_1a45645cddc1e9e5c5688911e9ee80c994" prot="private" virt="non-virtual"><scope>Gambit::FptrFinder</scope><name>whichiter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

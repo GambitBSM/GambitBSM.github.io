@@ -4,7 +4,7 @@
     <compoundname>Gambit::sd_gluiloop_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1sd__gluiloop__type_1abe13fa8e9ba1b8d8ef5b032fb3987c22" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_gluiloop_type::brglnjgluon</definition>
         <argsstring></argsstring>
         <name>brglnjgluon</name>
@@ -22,6 +22,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 4 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_gluiloop_type</label>
+        <link refid="structGambit_1_1sd__gluiloop__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brglnjgluon</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="412" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="413" bodyend="415"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__gluiloop__type_1abe13fa8e9ba1b8d8ef5b032fb3987c22" prot="public" virt="non-virtual"><scope>Gambit::sd_gluiloop_type</scope><name>brglnjgluon</name></member>

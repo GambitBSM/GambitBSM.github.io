@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1BibTeX" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::BibTeX</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1BibTeX_1a6d65b2b434cd1a72df018842b908be2a" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::BibTeX::_filename</definition>
+        <argsstring></argsstring>
+        <name>_filename</name>
+        <qualifiedname>Gambit::BibTeX::_filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="33" column="12" bodyfile="Utils/include/gambit/Utils/bibtex_functions.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1BibTeX_1acba2604a032ee1cdc40618c3585aef40" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+        <definition>std::vector&lt;str&gt; Gambit::BibTeX::_bibtex_entries</definition>
+        <argsstring></argsstring>
+        <name>_bibtex_entries</name>
+        <qualifiedname>Gambit::BibTeX::_bibtex_entries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="34" column="20" bodyfile="Utils/include/gambit/Utils/bibtex_functions.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1BibTeX_1a9d0f6df48f37af687372b9ff9e8d3307" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
+        <definition>std::map&lt;str,std::map&lt;str,str&gt; &gt; Gambit::BibTeX::_bibtex_data</definition>
+        <argsstring></argsstring>
+        <name>_bibtex_data</name>
+        <qualifiedname>Gambit::BibTeX::_bibtex_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="35" column="17" bodyfile="Utils/include/gambit/Utils/bibtex_functions.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1BibTeX_1a49205f0780ad2646643da0bb49cd8c93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::BibTeX::BibTeX</definition>
+        <argsstring>(str)</argsstring>
+        <name>BibTeX</name>
+        <qualifiedname>Gambit::BibTeX::BibTeX</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>bibtex_file</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="40" column="8" bodyfile="Utils/src/bibtex_functions.cpp" bodystart="31" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1BibTeX_1a67bbb7719b463700ffa9d32392883766" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>const str Gambit::BibTeX::filename</definition>
+        <argsstring>() const</argsstring>
+        <name>filename</name>
+        <qualifiedname>Gambit::BibTeX::filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="43" column="18" bodyfile="Utils/src/bibtex_functions.cpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1BibTeX_1a71ed37b4263baec5afa7b008020dbe6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+        <definition>const std::vector&lt; str &gt; Gambit::BibTeX::getBibTeXEntries</definition>
+        <argsstring>() const</argsstring>
+        <name>getBibTeXEntries</name>
+        <qualifiedname>Gambit::BibTeX::getBibTeXEntries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="46" column="26" bodyfile="Utils/src/bibtex_functions.cpp" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1BibTeX_1a4fec61af1187bc24fbda69704b41641c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
+        <definition>const std::map&lt; str, std::map&lt; str, str &gt; &gt; Gambit::BibTeX::getBibTeXData</definition>
+        <argsstring>() const</argsstring>
+        <name>getBibTeXData</name>
+        <qualifiedname>Gambit::BibTeX::getBibTeXData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="49" column="23" bodyfile="Utils/src/bibtex_functions.cpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1BibTeX_1a25797a746d30c272890b8fb7e3085bba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::BibTeX::dropBibTeXFile</definition>
+        <argsstring>(str) const</argsstring>
+        <name>dropBibTeXFile</name>
+        <qualifiedname>Gambit::BibTeX::dropBibTeXFile</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>output_filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="52" column="13" bodyfile="Utils/src/bibtex_functions.cpp" bodystart="91" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1BibTeX_1a1d33f0c6a734be06ba5aa516b5ca3135" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::BibTeX::dropBibTeXFile</definition>
+        <argsstring>(std::vector&lt; str &gt; &amp;, str) const</argsstring>
+        <name>dropBibTeXFile</name>
+        <qualifiedname>Gambit::BibTeX::dropBibTeXFile</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
+          <defname>citation_keys</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>output_filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="55" column="13" bodyfile="Utils/src/bibtex_functions.cpp" bodystart="110" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1BibTeX_1a742257135abfda1032d639013f383e88" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::BibTeX::dropTeXFile</definition>
+        <argsstring>(std::vector&lt; str &gt; &amp;, str, str) const</argsstring>
+        <name>dropTeXFile</name>
+        <qualifiedname>Gambit::BibTeX::dropTeXFile</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
+          <defname>citation_keys</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>tex_filename</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>bibtex_filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="58" column="13" bodyfile="Utils/src/bibtex_functions.cpp" bodystart="136" bodyend="170"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGambit_1_1BibTeX_1a9ed67ba1e120482c4401fdbb6187d295" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::BibTeX::addCitationKey</definition>
+        <argsstring>(std::vector&lt; str &gt; &amp;, str)</argsstring>
+        <name>addCitationKey</name>
+        <qualifiedname>Gambit::BibTeX::addCitationKey</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
+          <defname>citationKeys</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <defname>bibkey</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="61" column="20" bodyfile="Utils/src/bibtex_functions.cpp" bodystart="173" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/bibtex_functions.hpp" line="29" column="3" bodyfile="Utils/include/gambit/Utils/bibtex_functions.hpp" bodystart="30" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1BibTeX_1a9d0f6df48f37af687372b9ff9e8d3307" prot="private" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>_bibtex_data</name></member>
+      <member refid="classGambit_1_1BibTeX_1acba2604a032ee1cdc40618c3585aef40" prot="private" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>_bibtex_entries</name></member>
+      <member refid="classGambit_1_1BibTeX_1a6d65b2b434cd1a72df018842b908be2a" prot="private" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>_filename</name></member>
+      <member refid="classGambit_1_1BibTeX_1a9ed67ba1e120482c4401fdbb6187d295" prot="public" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>addCitationKey</name></member>
+      <member refid="classGambit_1_1BibTeX_1a49205f0780ad2646643da0bb49cd8c93" prot="public" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>BibTeX</name></member>
+      <member refid="classGambit_1_1BibTeX_1a25797a746d30c272890b8fb7e3085bba" prot="public" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>dropBibTeXFile</name></member>
+      <member refid="classGambit_1_1BibTeX_1a1d33f0c6a734be06ba5aa516b5ca3135" prot="public" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>dropBibTeXFile</name></member>
+      <member refid="classGambit_1_1BibTeX_1a742257135abfda1032d639013f383e88" prot="public" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>dropTeXFile</name></member>
+      <member refid="classGambit_1_1BibTeX_1a67bbb7719b463700ffa9d32392883766" prot="public" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>filename</name></member>
+      <member refid="classGambit_1_1BibTeX_1a4fec61af1187bc24fbda69704b41641c" prot="public" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>getBibTeXData</name></member>
+      <member refid="classGambit_1_1BibTeX_1a71ed37b4263baec5afa7b008020dbe6e" prot="public" virt="non-virtual"><scope>Gambit::BibTeX</scope><name>getBibTeXEntries</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

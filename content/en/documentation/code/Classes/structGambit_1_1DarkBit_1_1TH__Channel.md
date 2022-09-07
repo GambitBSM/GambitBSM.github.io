@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DarkBit::TH_Channel
 
 
 
@@ -21,11 +20,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-th-channel)**(std::vector< str > finalStateIDs, daFunk::Funk genRate)<br>Constructor.  |
+| | **[TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-th-channel)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > finalStateIDs, daFunk::Funk genRate)<br>Constructor.  |
 | void | **[printChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-printchannel)**() const<br>Print information about this channel.  |
-| bool | **[channelContains](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-channelcontains)**(str p) const<br>Indicate whether or not the final states of this channel contain a specific particle.  |
-| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**(str p0, str p1, str p2 ="", str p3 ="") const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle name version.  |
-| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**(std::vector< str > particles) const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle vector version.  |
+| bool | **[channelContains](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-channelcontains)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) p) const<br>Indicate whether or not the final states of this channel contain a specific particle.  |
+| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) p0, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) p1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) p2 ="", [str](/documentation/code/namespaces/namespacegambit/#typedef-str) p3 ="") const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle name version.  |
+| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > particles) const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle vector version.  |
 
 ## Public Attributes
 
@@ -126,4 +125,4 @@ Energy dependence of final state particles. Includes v_rel ("v") as last argumen
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="StandardModel__Higgs__running_8hpp" kind="file" language="C++">
+    <compoundname>StandardModel_Higgs_running.hpp</compoundname>
+    <includedby refid="StandardModel__Higgs_8cpp" local="yes">StandardModel_Higgs.cpp</includedby>
+    <includedby refid="StandardModel__Higgs_8hpp" local="yes">StandardModel_Higgs.hpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>StandardModel_Higgs.hpp</label>
+        <link refid="StandardModel__Higgs_8hpp"/>
+      </node>
+      <node id="1">
+        <label>StandardModel_Higgs_running.hpp</label>
+        <link refid="StandardModel__Higgs__running_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="StandardModel__Higgs__running_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>StandardModel_Higgs_running</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard Model Higgs sector parameters with running Lagrangian Higgs mass parameter</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) 2015 May</para>
+<para>James McKay 2015 September <hruler/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/StandardModel_Higgs_running.hpp" line="24" column="9" bodyfile="Models/include/gambit/Models/models/StandardModel_Higgs_running.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Standard<sp/>Model<sp/>Higgs<sp/>sector<sp/>parameters</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>with<sp/>running<sp/>Lagrangian<sp/>Higgs<sp/>mass<sp/>parameter</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(benjamin.farmer@fysik.su.se)</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/><sp/><sp/>2015<sp/>May</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/><sp/><sp/>James<sp/>McKay</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/><sp/><sp/>2015<sp/>September</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__StandardModel_Higgs_running_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__StandardModel_Higgs_running_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>StandardModel_Higgs_running</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>DEFINEPARS(mH,Qin,QEWSB)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Models/include/gambit/Models/models/StandardModel_Higgs_running.hpp"/>
+  </compounddef>
+</doxygen>

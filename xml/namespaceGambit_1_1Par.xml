@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1Par" kind="namespace" language="C++">
+    <compoundname>Gambit::Par</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Tags</name>
+        <qualifiedname>Gambit::Par::Tags</qualifiedname>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" prot="public">
+          <name>Pole_Mass</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Ex-&quot;Phys&quot; tags. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a931b6e26e79ce1338162697cff7d96f0" prot="public">
+          <name>Pole_Mass_1srd_high</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a6b3722696247c6ce1797dabd816d1471" prot="public">
+          <name>Pole_Mass_1srd_low</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4aef99196cdb0e9a8dd40994fc4b8b4953" prot="public">
+          <name>Pole_Mixing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a1a5aa5c530314cba5c774b8796070f01" prot="public">
+          <name>mass4</name>
+          <initializer>= Pole_Mixing+1</initializer>
+          <briefdescription>
+<para>Ex-&quot;Running&quot; tags. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a4f1fa73b1d520fe433875cd830a205d9" prot="public">
+          <name>mass3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4ab6cca5f2ff470e3f270ffe0a8922f805" prot="public">
+          <name>mass2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a575016e5c664833ea8476db3406038e6" prot="public">
+          <name>mass1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a4bd2b9736b0821992fe823d48c0675ac" prot="public">
+          <name>dimensionless</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a136702a81e347d1486b04df9df138b21" prot="public">
+          <name>mass_eigenstate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spectrum_helpers.hpp" line="44" column="7" bodyfile="Elements/include/gambit/Elements/spectrum_helpers.hpp" bodystart="45" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceGambit_1_1Par_1af2ab8c0b8f97788568b0f0db5df54ea8" prot="public" static="yes" mutable="no">
+        <type>const std::map&lt; <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Tags</ref>, std::string &gt;</type>
+        <definition>const std::map&lt;Tags,std::string&gt; Gambit::Par::toString</definition>
+        <argsstring></argsstring>
+        <name>toString</name>
+        <qualifiedname>Gambit::Par::toString</qualifiedname>
+        <initializer>= fill_map()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spectrum_helpers.hpp" line="93" column="29" bodyfile="Elements/include/gambit/Elements/spectrum_helpers.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceGambit_1_1Par_1af70b1dbaa9c0340112ede02afca5bfd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Tags</ref> &gt;</type>
+        <definition>std::vector&lt; Tags &gt; Gambit::Par::get_all</definition>
+        <argsstring>()</argsstring>
+        <name>get_all</name>
+        <qualifiedname>Gambit::Par::get_all</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spectrum_helpers.hpp" line="61" column="26" bodyfile="Elements/include/gambit/Elements/spectrum_helpers.hpp" bodystart="61" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1_1Par_1ab02ead244d3558ef4d63e4421f2d76db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Tags</ref>, std::string &gt;</type>
+        <definition>static std::map&lt; Tags, std::string &gt; Gambit::Par::fill_map</definition>
+        <argsstring>()</argsstring>
+        <name>fill_map</name>
+        <qualifiedname>Gambit::Par::fill_map</qualifiedname>
+        <briefdescription>
+<para>Map from enum value to string, for error messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/spectrum_helpers.hpp" line="78" column="23" bodyfile="Elements/include/gambit/Elements/spectrum_helpers.hpp" bodystart="78" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of parameter types used to classify spectrum contents. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Elements/include/gambit/Elements/spectrum_helpers.hpp" line="42" column="4"/>
+  </compounddef>
+</doxygen>

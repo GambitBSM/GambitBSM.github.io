@@ -4,8 +4,7 @@ description: 'A parameter that is fixed to a different parameter. '
 
 ---
 
-
-
+# Gambit::Priors::MultiPriors
 
 
 
@@ -22,7 +21,7 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[MultiPriors](/documentation/code/classes/classgambit_1_1priors_1_1multipriors/#function-multipriors)**(const std::vector< std::string > & param, const Options & options) |
+| | **[MultiPriors](/documentation/code/classes/classgambit_1_1priors_1_1multipriors/#function-multipriors)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
 | | **[MultiPriors](/documentation/code/classes/classgambit_1_1priors_1_1multipriors/#function-multipriors)**(std::string name_in, std::unordered_map< std::string, std::pair< double, double > > & map_in) |
 | virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1multipriors/#function-getshownparameters)**() const override |
 | virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1multipriors/#function-transform)**(const std::vector< double > & , std::unordered_map< std::string, double > & ) const override<br>Transform from unit hypercube to parameter.  |
@@ -113,4 +112,4 @@ Transform from parameter back to unit hypercube.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

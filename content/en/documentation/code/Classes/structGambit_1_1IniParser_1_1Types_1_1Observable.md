@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::IniParser::Types::Observable
 
 
 
@@ -33,7 +32,7 @@ description: "[No description available]"
 | std::string | **[version](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-version)**  |
 | bool | **[printme](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-printme)**  |
 | bool | **[weakrule](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-weakrule)**  |
-| Options | **[options](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-options)**  |
+| [Options](/documentation/code/classes/classgambit_1_1options/) | **[options](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-options)**  |
 | YAML::Node | **[subcaps](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-subcaps)**  |
 | std::vector< [Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[dependencies](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-dependencies)**  |
 | std::vector< [Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[backends](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-backends)**  |
@@ -151,4 +150,4 @@ std::vector< std::string > functionChain;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

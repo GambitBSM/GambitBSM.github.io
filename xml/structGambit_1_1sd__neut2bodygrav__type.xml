@@ -4,7 +4,7 @@
     <compoundname>Gambit::sd_neut2bodygrav_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1sd__neut2bodygrav__type_1a1cb7b58b74934b981072e82c931f7699" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_neut2bodygrav_type::brneutgamgrav</definition>
         <argsstring></argsstring>
         <name>brneutgamgrav</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="340" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="340" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__neut2bodygrav__type_1a4a1a5be867dc446354bbeaf2a6d1e891" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_neut2bodygrav_type::brneutzgrav</definition>
         <argsstring></argsstring>
         <name>brneutzgrav</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="341" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="341" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__neut2bodygrav__type_1ac067073a3bd30de7e0e432036ae0525c" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_neut2bodygrav_type::brneuthlgrav</definition>
         <argsstring></argsstring>
         <name>brneuthlgrav</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="342" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="342" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__neut2bodygrav__type_1a6d84a54e38cee7ca611beef7ecd2ef7f" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_neut2bodygrav_type::brneuthhgrav</definition>
         <argsstring></argsstring>
         <name>brneuthhgrav</name>
@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="343" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="343" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__neut2bodygrav__type_1adad24a2f6e520a283343b81591984629" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_neut2bodygrav_type::brneuthagrav</definition>
         <argsstring></argsstring>
         <name>brneuthagrav</name>
@@ -78,6 +78,23 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 4 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_neut2bodygrav_type</label>
+        <link refid="structGambit_1_1sd__neut2bodygrav__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brneutgamgrav</edgelabel>
+          <edgelabel>brneuthagrav</edgelabel>
+          <edgelabel>brneuthhgrav</edgelabel>
+          <edgelabel>brneuthlgrav</edgelabel>
+          <edgelabel>brneutzgrav</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="338" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="339" bodyend="345"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__neut2bodygrav__type_1a1cb7b58b74934b981072e82c931f7699" prot="public" virt="non-virtual"><scope>Gambit::sd_neut2bodygrav_type</scope><name>brneutgamgrav</name></member>

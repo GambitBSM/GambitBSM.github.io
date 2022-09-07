@@ -4,7 +4,7 @@
     <compoundname>Gambit::sd_sdown2body_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1sd__sdown2body__type_1a0a1a6e2a5ca06f4db194e27520bea26e" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_sdown2body_type::brsdowlndow</definition>
         <argsstring></argsstring>
         <name>brsdowlndow</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="440" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="440" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sdown2body__type_1a69114d377c2aa66f4aaec5efb6484ffe" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sdown2body_type::brsdowlchup</definition>
         <argsstring></argsstring>
         <name>brsdowlchup</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="442" column="17" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="442" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sdown2body__type_1ad979ba88c234378a87f5bfbdd1db9833" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_sdown2body_type::brsdowrndow</definition>
         <argsstring></argsstring>
         <name>brsdowrndow</name>
@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="443" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="443" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sdown2body__type_1a23a0f8da87ccaa4fb22f54f79f6fb521" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sdown2body_type::brsdowrchup</definition>
         <argsstring></argsstring>
         <name>brsdowrchup</name>
@@ -92,6 +92,28 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; Fdouble, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 4 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_sdown2body_type</label>
+        <link refid="structGambit_1_1sd__sdown2body__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brsdowlndow</edgelabel>
+          <edgelabel>brsdowrndow</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>brsdowlchup</edgelabel>
+          <edgelabel>brsdowrchup</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="438" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="439" bodyend="446"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__sdown2body__type_1a69114d377c2aa66f4aaec5efb6484ffe" prot="public" virt="non-virtual"><scope>Gambit::sd_sdown2body_type</scope><name>brsdowlchup</name></member>

@@ -4,8 +4,7 @@ description: 'Channel container Object containing tabularized yields for particl
 
 ---
 
-
-
+# Gambit::DarkBit::SimYieldTable
 
 
 
@@ -21,8 +20,8 @@ Channel container Object containing tabularized yields for particle decay and tw
 |                | Name           |
 | -------------- | -------------- |
 | | **[SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/#function-simyieldtable)**()<br>Sim yield table dummy constructor.  |
-| void | **[addChannel](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/#function-addchannel)**(daFunk::Funk dNdE, const std::string & p1, const std::string & p2, const std::string & finalState, double Ecm_min, double Ecm_max, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< Options > runOptions) |
-| void | **[addChannel](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/#function-addchannel)**(daFunk::Funk dNdE, const std::string & p1, const std::string & finalState, double Ecm_min, double Ecm_max, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< Options > runOptions) |
+| void | **[addChannel](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/#function-addchannel)**(daFunk::Funk dNdE, const std::string & p1, const std::string & p2, const std::string & finalState, double Ecm_min, double Ecm_max, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > runOptions) |
+| void | **[addChannel](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/#function-addchannel)**(daFunk::Funk dNdE, const std::string & p1, const std::string & finalState, double Ecm_min, double Ecm_max, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > runOptions) |
 | void | **[addChannel](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/#function-addchannel)**([SimYieldChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1simyieldchannel/) channel) |
 | void | **[replaceFinalState](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/#function-replacefinalstate)**(const std::string & oldFinalState, const std::string & newFinalState) |
 | void | **[donateChannels](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/#function-donatechannels)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & receiver) const |
@@ -203,4 +202,4 @@ daFunk::Funk operator()(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

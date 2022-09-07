@@ -4,8 +4,7 @@ description: 'Struct to describe start and end indices for a chunk of data. '
 
 ---
 
-
-
+# Chunk
 
 
 
@@ -168,4 +167,4 @@ std::size_t eff_length;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

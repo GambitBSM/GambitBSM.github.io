@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::PostProcessor
 
 
 
@@ -23,7 +22,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| ChunkSet | **[get_done_points](/documentation/code/namespaces/namespacegambit_1_1postprocessor/#function-get-done-points)**(Gambit::Printers::BaseBaseReader & filebase)<br>Read through resume data files and reconstruct which chunks of points have already been processed.  |
+| ChunkSet | **[get_done_points](/documentation/code/namespaces/namespacegambit_1_1postprocessor/#function-get-done-points)**([Gambit::Printers::BaseBaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/) & filebase)<br>Read through resume data files and reconstruct which chunks of points have already been processed.  |
 | bool | **[point_done](/documentation/code/namespaces/namespacegambit_1_1postprocessor/#function-point-done)**(const ChunkSet done_chunks, size_t index)<br>Helper functions for performing resume related tasks.  |
 | [Chunk](/documentation/code/classes/structchunk/) | **[get_effective_chunk](/documentation/code/namespaces/namespacegambit_1_1postprocessor/#function-get-effective-chunk)**(const std::size_t total_length, const unsigned int rank, const unsigned int numtasks) |
 | [Chunk](/documentation/code/classes/structchunk/) | **[get_my_chunk](/documentation/code/namespaces/namespacegambit_1_1postprocessor/#function-get-my-chunk)**(const std::size_t dset_length, const ChunkSet & done_chunks, const int rank, const int numtasks)<br>Compute start/end indices for a given rank process, given previous "done_chunk" data.  |
@@ -153,4 +152,4 @@ const Chunk stopchunk = Chunk(0,0);
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

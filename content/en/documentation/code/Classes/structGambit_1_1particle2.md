@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::particle2
 
 
 
@@ -22,9 +21,9 @@ description: "[No description available]"
 | Freal8 | **[m2](/documentation/code/classes/structgambit_1_1particle2/#variable-m2)**  |
 | Freal8 | **[g](/documentation/code/classes/structgambit_1_1particle2/#variable-g)**  |
 | Finteger | **[id](/documentation/code/classes/structgambit_1_1particle2/#variable-id)**  |
-| Farray< Finteger, 1, 200, 1, 2 > | **[id2](/documentation/code/classes/structgambit_1_1particle2/#variable-id2)**  |
-| Farray< Freal8, 1, 200 > | **[gi2](/documentation/code/classes/structgambit_1_1particle2/#variable-gi2)**  |
-| Farray< Freal8, 1, 200 > | **[bi2](/documentation/code/classes/structgambit_1_1particle2/#variable-bi2)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 200, 1, 2 > | **[id2](/documentation/code/classes/structgambit_1_1particle2/#variable-id2)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Freal8, 1, 200 > | **[gi2](/documentation/code/classes/structgambit_1_1particle2/#variable-gi2)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Freal8, 1, 200 > | **[bi2](/documentation/code/classes/structgambit_1_1particle2/#variable-bi2)**  |
 
 ## Public Attributes Documentation
 
@@ -79,4 +78,4 @@ Farray< Freal8, 1, 200 > bi2;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

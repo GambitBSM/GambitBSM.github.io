@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::FlavBit
 
 
 
@@ -27,8 +26,8 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | struct | **[Gambit::FlavBit::Correlation](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/)** <br>Simple structure for holding a correlation value and name of the correlated observable.  |
-| class | **[Gambit::FlavBit::Flav_reader](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/)** <br>Reader class for FlavBit YAML database.  |
-| struct | **[Gambit::FlavBit::Measurement](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)** <br>Representation of a single entry in the FlavBit YAML database.  |
+| class | **[Gambit::FlavBit::Flav_reader](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/)** <br>Reader class for FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database.  |
+| struct | **[Gambit::FlavBit::Measurement](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)** <br>Representation of a single entry in the FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database.  |
 | struct | **[Gambit::FlavBit::predictions_measurements_covariances](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
 
 ## Functions
@@ -41,18 +40,17 @@ description: "[No description available]"
 | template <class T \> <br>bool | **[InvertMatrix](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-invertmatrix)**(const ublas::matrix< T > & input, ublas::matrix< T > & inverse)<br>Matrix inversion routine using Boost.  |
 | void | **[operator>>](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-operator)**(const YAML::Node & node, [Correlation](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/) & c)<br>Extraction operator for correlation.  |
 | void | **[operator>>](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-operator)**(const YAML::Node & node, [Measurement](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/) & v)<br>Extraction operator for measurement.  |
-| Utils::translator | **[translate_flav_obs](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-translate-flav-obs)**(GAMBIT_DIR "/FlavBit/data/observables_key.yaml" )<br>FlavBit observable name translator.  |
 | const [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)(& | **[nuiscorr_help](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-nuiscorr-help)**([nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)(&) arr[ncorrnuis], const std::vector< [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) > & v) |
-| void | **[print](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-print)**(flav_prediction prediction, vector< std::string > names)<br>Print function for FlavBit predictions.  |
-| void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theory2experiment-translation)**(flav_observable_map & prediction, int generation)<br>Translate B->K*ll observables from theory to LHCb convention.  |
+| void | **[print](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-print)**([flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) prediction, vector< std::string > names)<br>Print function for FlavBit predictions.  |
+| void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theory2experiment-translation)**([flav_observable_map](/documentation/code/namespaces/namespacegambit/#typedef-flav-observable-map) & prediction, int generation)<br>Translate B->K*ll observables from theory to LHCb convention.  |
 | void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theory2experiment-translation)**(flav_covariance_map & prediction, int generation)<br>Translate B->K*ll covariances from theory to LHCb convention.  |
-| str | **[path_to_latest_heplike_data](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-path-to-latest-heplike-data)**()<br>Find the path to the latest installed version of the HepLike data.  |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[path_to_latest_heplike_data](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-path-to-latest-heplike-data)**()<br>Find the path to the latest installed version of the HepLike data.  |
 | void | **[SuperIso_fill](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-fill)**([parameters](/documentation/code/classes/structgambit_1_1parameters/) & result)<br>Fill SuperIso model info structure.  |
 | void | **[SuperIso_nuisance_fill](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-nuisance-fill)**([nuisance](/documentation/code/classes/structgambit_1_1nuisance/) & nuislist)<br>Fill SuperIso nuisance structure.  |
-| void | **[update_obs_list](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-update-obs-list)**(std::vector< str > & obs_list, const std::vector< str > & HL_obs_list)<br>Reorder a FlavBit observables list to match ordering expected by HEPLike.  |
-| std::vector< double > | **[get_obs_theory](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-get-obs-theory)**(const flav_prediction & prediction, const std::vector< std::string > & observables)<br>Extract central values of the given observables from the central value map.  |
-| boost::numeric::ublas::matrix< double > | **[get_obs_covariance](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-get-obs-covariance)**(const flav_prediction & prediction, const std::vector< std::string > & observables)<br>Extract covariance matrix of the given observables from the covariance map.  |
-| void | **[SuperIso_prediction_helper](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-helper)**(const std::vector< std::string > & FB_obslist, const std::vector< std::string > & SI_obslist, flav_prediction & result, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) & param, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) & nuislist, void(*)(char **, int *, double **, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *) get_predictions_nuisance, void(*)(int, [obsname](/documentation/code/classes/structgambit_1_1obsname/) *, int, double *, double *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *, char **, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *) observables, void(*)([nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) *, int, double **, char **, int) convert_correlation, void(*)(double ***, char **, int *, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *, double **) get_th_covariance_nuisance, bool useSMCovariance, bool SMCovarianceCached)<br>Helper function to avoid code duplication.  |
+| void | **[update_obs_list](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-update-obs-list)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & obs_list, const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & HL_obs_list)<br>Reorder a FlavBit observables list to match ordering expected by HEPLike.  |
+| std::vector< double > | **[get_obs_theory](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-get-obs-theory)**(const [flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) & prediction, const std::vector< std::string > & observables)<br>Extract central values of the given observables from the central value map.  |
+| boost::numeric::ublas::matrix< double > | **[get_obs_covariance](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-get-obs-covariance)**(const [flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) & prediction, const std::vector< std::string > & observables)<br>Extract covariance matrix of the given observables from the covariance map.  |
+| void | **[SuperIso_prediction_helper](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-helper)**(const std::vector< std::string > & FB_obslist, const std::vector< std::string > & SI_obslist, [flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) & result, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) & param, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) & nuislist, void(*)(char **, int *, double **, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *) get_predictions_nuisance, void(*)(int, [obsname](/documentation/code/classes/structgambit_1_1obsname/) *, int, double *, double *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *, char **, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *) observables, void(*)([nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) *, int, double **, char **, int) convert_correlation, void(*)(double ***, char **, int *, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *, double **) get_th_covariance_nuisance, bool useSMCovariance, bool SMCovarianceCached)<br>Helper function to avoid code duplication.  |
 | | **[SI_MULTI_PREDICTION_FUNCTION](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-si-multi-prediction-function)**(B2mumu ) |
 | _Atlas | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-si-multi-prediction-function-bins)**(B2KstarmumuAng , _2_4 , _Atlas ) |
 | _Atlas _Atlas | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-si-multi-prediction-function-bins)**(B2KstarmumuAng , _1_2 , _CMS ) |
@@ -93,7 +91,7 @@ description: "[No description available]"
 | void | **[RHN_muegamma](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-muegamma)**(double & result) |
 | void | **[RHN_tauegamma](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-tauegamma)**(double & result) |
 | void | **[RHN_taumugamma](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taumugamma)**(double & result) |
-| double | **[RHN_l2lll](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-l2lll)**(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix3cd Vnu, Eigen::Matrix3cd Theta, Eigen::Matrix3cd m_nu, double M1, double M2, double M3, double mH) |
+| double | **[RHN_l2lll](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-l2lll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix3cd Vnu, Eigen::Matrix3cd Theta, Eigen::Matrix3cd m_nu, double M1, double M2, double M3, double mH) |
 | void | **[RHN_mueee](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mueee)**(double & result) |
 | void | **[RHN_taueee](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taueee)**(double & result) |
 | void | **[RHN_taumumumu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taumumumu)**(double & result) |
@@ -101,7 +99,7 @@ description: "[No description available]"
 | void | **[RHN_taueemu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taueemu)**(double & result) |
 | void | **[RHN_tauemumu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-tauemumu)**(double & result) |
 | void | **[RHN_taumumue](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taumumue)**(double & result) |
-| void | **[RHN_mue_FF](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mue-ff)**(const SMInputs sminputs, std::vector< double > & mnu, Eigen::Matrix< complex< double >, 3, 6 > & U, const double mH, complex< double > & g0SL, complex< double > & g0SR, complex< double > & g0VL, complex< double > & g0VR, complex< double > & g1SL, complex< double > & g1SR, complex< double > & g1VL, complex< double > & g1VR) |
+| void | **[RHN_mue_FF](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mue-ff)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, std::vector< double > & mnu, Eigen::Matrix< complex< double >, 3, 6 > & U, const double mH, complex< double > & g0SL, complex< double > & g0SR, complex< double > & g0VL, complex< double > & g0VR, complex< double > & g1SL, complex< double > & g1SR, complex< double > & g1VL, complex< double > & g1VR) |
 | void | **[RHN_mueTi](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mueti)**(double & result) |
 | void | **[RHN_mueAu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mueau)**(double & result) |
 | void | **[RHN_muePb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-muepb)**(double & result) |
@@ -132,6 +130,7 @@ description: "[No description available]"
 | -------------- | -------------- |
 | const bool | **[flav_debug](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-flav-debug)**  |
 | const bool | **[flav_debug_LL](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-flav-debug-ll)**  |
+| [Utils::translator](/documentation/code/classes/classgambit_1_1utils_1_1translator/)(GAMBIT_DIR "/FlavBit/data/observables_key.yaml") | **[translate_flav_obs](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-translate-flav-obs)** <br>FlavBit observable name translator.  |
 | const int | **[ncorrnuis](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-ncorrnuis)** <br>Some constants used in SuperIso likelihoods.  |
 | [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)[ncorrnuis] | **[arr](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-arr)**  |
 | const [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)(&)[ncorrnuis] | **[corrnuis](/documentation/code/namespaces/namespacegambit_1_1flavbit/#variable-corrnuis)**  |
@@ -213,16 +212,6 @@ void operator>>(
 ```
 
 Extraction operator for measurement. 
-
-### function translate_flav_obs
-
-```
-Utils::translator translate_flav_obs(
-    GAMBIT_DIR "/FlavBit/data/observables_key.yaml" 
-)
-```
-
-FlavBit observable name translator. 
 
 ### function nuiscorr_help
 
@@ -1128,6 +1117,14 @@ const bool flav_debug_LL =
 ```
 
 
+### variable translate_flav_obs
+
+```
+Utils::translator(GAMBIT_DIR "/FlavBit/data/observables_key.yaml") translate_flav_obs;
+```
+
+FlavBit observable name translator. 
+
 ### variable ncorrnuis
 
 ```
@@ -1232,4 +1229,4 @@ _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb _LHCb _LHCb _0p0008_0p257;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

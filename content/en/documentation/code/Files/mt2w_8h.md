@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# ColliderBit/mt2w.h
 
 
 
@@ -68,4 +67,4 @@ double mt2wWrapperHepUtils(HEPUtils::P4& lep, HEPUtils::P4& jet_o, HEPUtils::P4&
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:27 +0000
+Updated on 2022-09-07 at 13:49:55 +0000

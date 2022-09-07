@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1SubSpectrumContents" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::SubSpectrumContents</compoundname>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1DMEFT" prot="public" virt="non-virtual">Gambit::SpectrumContents::DMEFT</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1DiracSingletDM__Z2" prot="public" virt="non-virtual">Gambit::SpectrumContents::DiracSingletDM_Z2</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1MDM" prot="public" virt="non-virtual">Gambit::SpectrumContents::MDM</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1MSSM" prot="public" virt="non-virtual">Gambit::SpectrumContents::MSSM</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1MajoranaSingletDM__Z2" prot="public" virt="non-virtual">Gambit::SpectrumContents::MajoranaSingletDM_Z2</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1SM" prot="public" virt="non-virtual">Gambit::SpectrumContents::SM</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1SMHiggs" prot="public" virt="non-virtual">Gambit::SpectrumContents::SMHiggs</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1SM__slha" prot="public" virt="non-virtual">Gambit::SpectrumContents::SM_slha</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1ScalarSingletDM__Z2" prot="public" virt="non-virtual">Gambit::SpectrumContents::ScalarSingletDM_Z2</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1ScalarSingletDM__Z3" prot="public" virt="non-virtual">Gambit::SpectrumContents::ScalarSingletDM_Z3</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1SpectrumContents_1_1VectorSingletDM__Z2" prot="public" virt="non-virtual">Gambit::SpectrumContents::VectorSingletDM_Z2</derivedcompoundref>
+    <includes refid="subspectrum__contents_8hpp" local="no">subspectrum_contents.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1SubSpectrumContents_1a1505fc5cd362c8ef5f73d88c0ea68bb4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt;</type>
+        <definition>std::vector&lt;SpectrumParameter&gt; Gambit::SubSpectrumContents::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <qualifiedname>Gambit::SubSpectrumContents::parameters</qualifiedname>
+        <briefdescription>
+<para>Vector defining what parameters a wrapper must contain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="62" column="21" bodyfile="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SubSpectrumContents_1aba386a7272c127f33505ff5ec108d75b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::SubSpectrumContents::my_name</definition>
+        <argsstring></argsstring>
+        <name>my_name</name>
+        <qualifiedname>Gambit::SubSpectrumContents::my_name</qualifiedname>
+        <briefdescription>
+<para>Name of <ref refid="classGambit_1_1SubSpectrumContents" kindref="compound">SubSpectrumContents</ref> class (for more helpful error messages) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="65" column="21" bodyfile="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SubSpectrumContents::addParameter</definition>
+        <argsstring>(const Par::Tags tag, const std::string &amp;name, const std::vector&lt; int &gt; &amp;shape=initVector(1), const std::string &amp;blockname=&quot;&quot;, const int index=0)</argsstring>
+        <name>addParameter</name>
+        <qualifiedname>Gambit::SubSpectrumContents::addParameter</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref></type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>shape</declname>
+          <defval>initVector(1)</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>blockname</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Add a parameter to the Contents object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="68" column="14" bodyfile="Models/src/subspectrum_contents.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SubSpectrumContents_1abe5d5573e9b7f30931e84a8c3c308123" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SubSpectrumContents::setName</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>Gambit::SubSpectrumContents::setName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Set the name of this Contents object (i.e. the name of the model to which this spectrum data applies) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="69" column="14" bodyfile="Models/src/subspectrum_contents.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1SubSpectrumContents_1abdc034bd00c3e349c0537d6f6277ee8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::SubSpectrumContents::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>Gambit::SubSpectrumContents::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="72" column="21" bodyfile="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SubSpectrumContents_1ad78dbbf35f85377231b38292614f1586" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt;</type>
+        <definition>std::vector&lt; SpectrumParameter &gt; Gambit::SubSpectrumContents::all_parameters</definition>
+        <argsstring>() const</argsstring>
+        <name>all_parameters</name>
+        <qualifiedname>Gambit::SubSpectrumContents::all_parameters</qualifiedname>
+        <briefdescription>
+<para>Function to retreive all parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="75" column="21" bodyfile="Models/src/subspectrum_contents.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SubSpectrumContents_1af07012c2cd315ff3fcb562273a5c5e70" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt;</type>
+        <definition>std::vector&lt; SpectrumParameter &gt; Gambit::SubSpectrumContents::all_parameters_with_tag</definition>
+        <argsstring>(Par::Tags tag) const</argsstring>
+        <name>all_parameters_with_tag</name>
+        <qualifiedname>Gambit::SubSpectrumContents::all_parameters_with_tag</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref></type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Function to retreive all parameters matching a certain tag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="78" column="21" bodyfile="Models/src/subspectrum_contents.cpp" bodystart="45" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SubSpectrumContents_1a6fbb7b1844444462a439be9ad6051df5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt;</type>
+        <definition>std::vector&lt; SpectrumParameter &gt; Gambit::SubSpectrumContents::all_parameters_with_tag_and_shape</definition>
+        <argsstring>(Par::Tags tag, std::vector&lt; int &gt; &amp;shape) const</argsstring>
+        <name>all_parameters_with_tag_and_shape</name>
+        <qualifiedname>Gambit::SubSpectrumContents::all_parameters_with_tag_and_shape</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref></type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+<para>Function to retrieve all parameters matching a certain tag and shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="81" column="21" bodyfile="Models/src/subspectrum_contents.cpp" bodystart="56" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SubSpectrumContents_1abeb0607ce070a719fb7e6790b7ddb2c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt;</type>
+        <definition>std::vector&lt; SpectrumParameter &gt; Gambit::SubSpectrumContents::all_BSM_parameters</definition>
+        <argsstring>() const</argsstring>
+        <name>all_BSM_parameters</name>
+        <qualifiedname>Gambit::SubSpectrumContents::all_BSM_parameters</qualifiedname>
+        <briefdescription>
+<para>Function to retrieve all parameters whose blockName is not SMINPUTS, YUKAWA, CKMBLOCK, or empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to retrieve all parameters whose blockname is not SMINPUTS, YUKAWA, CKMBLOCK, or empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="84" column="21" bodyfile="Models/src/subspectrum_contents.cpp" bodystart="67" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SubSpectrumContents_1a19de081ec822c16db275556be3c3808a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SubSpectrumContents::verify_contents</definition>
+        <argsstring>(const SubSpectrum &amp;spec) const</argsstring>
+        <name>verify_contents</name>
+        <qualifiedname>Gambit::SubSpectrumContents::verify_contents</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+<para>Function to verify that a <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> wrapper contains everything that this class says it should. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Verify that the supplied <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> object conforms to the requirements specified by the Contents class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="87" column="14" bodyfile="Models/src/subspectrum_contents.cpp" bodystart="82" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for defining the required contents of a <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::SpectrumContents::DMEFT</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1DMEFT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::SpectrumContents::DiracSingletDM_Z2</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1DiracSingletDM__Z2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gambit::SpectrumContents::MDM</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1MDM"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gambit::SpectrumContents::MSSM</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1MSSM"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gambit::SpectrumContents::MajoranaSingletDM_Z2</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1MajoranaSingletDM__Z2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gambit::SpectrumContents::SM</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1SM"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gambit::SpectrumContents::SMHiggs</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1SMHiggs"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gambit::SpectrumContents::SM_slha</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1SM__slha"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Gambit::SpectrumContents::ScalarSingletDM_Z2</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1ScalarSingletDM__Z2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gambit::SpectrumContents::ScalarSingletDM_Z3</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1ScalarSingletDM__Z3"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Gambit::SpectrumContents::VectorSingletDM_Z2</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1VectorSingletDM__Z2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::SubSpectrumContents</label>
+        <link refid="classGambit_1_1SubSpectrumContents"/>
+      </node>
+    </inheritancegraph>
+    <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" line="58" column="4" bodyfile="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp" bodystart="59" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" prot="protected" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>addParameter</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1abeb0607ce070a719fb7e6790b7ddb2c6" prot="public" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>all_BSM_parameters</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1ad78dbbf35f85377231b38292614f1586" prot="public" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>all_parameters</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1af07012c2cd315ff3fcb562273a5c5e70" prot="public" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>all_parameters_with_tag</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1a6fbb7b1844444462a439be9ad6051df5" prot="public" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>all_parameters_with_tag_and_shape</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1abdc034bd00c3e349c0537d6f6277ee8a" prot="public" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>getName</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1aba386a7272c127f33505ff5ec108d75b" prot="private" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>my_name</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1a1505fc5cd362c8ef5f73d88c0ea68bb4" prot="private" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>parameters</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1abe5d5573e9b7f30931e84a8c3c308123" prot="protected" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>setName</name></member>
+      <member refid="classGambit_1_1SubSpectrumContents_1a19de081ec822c16db275556be3c3808a" prot="public" virt="non-virtual"><scope>Gambit::SubSpectrumContents</scope><name>verify_contents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

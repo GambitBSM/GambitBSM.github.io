@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# backend_types/DDCalc.hpp
 
 
 
@@ -17,7 +16,7 @@ description: "[No description available]"
 | Name           |
 | -------------- |
 | **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::Models](/documentation/code/namespaces/namespacegambit_1_1models/)**  |
+| **[Gambit::Models](/documentation/code/namespaces/namespacegambit_1_1models/)** <br>Forward declaration of [Models::ModelFunctorClaw]() class for use in constructors.  |
 
 ## Classes
 
@@ -144,4 +143,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:28 +0000
+Updated on 2022-09-07 at 13:49:56 +0000

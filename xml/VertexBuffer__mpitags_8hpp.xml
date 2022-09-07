@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="VertexBuffer__mpitags_8hpp" kind="file" language="C++">
+    <compoundname>VertexBuffer_mpitags.hpp</compoundname>
+    <includedby refid="VertexBufferNumeric1D_8hpp" local="yes">VertexBufferNumeric1D.hpp</includedby>
+    <includedby refid="hdf5printer_8hpp" local="yes">hdf5printer.hpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>VertexBufferNumeric1D.hpp</label>
+        <link refid="VertexBufferNumeric1D_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>VertexBuffer_mpitags.hpp</label>
+        <link refid="VertexBuffer__mpitags_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>hdf5printer.hpp</label>
+        <link refid="hdf5printer_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>VertexBufferNumeric1D_HDF5.hpp</label>
+        <link refid="VertexBufferNumeric1D__HDF5_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>hdf5printer.cpp</label>
+        <link refid="hdf5printer_8cpp"/>
+      </node>
+      <node id="6">
+        <label>hdf5reader.cpp</label>
+        <link refid="hdf5reader_8cpp"/>
+      </node>
+      <node id="7">
+        <label>print_overloads.cpp</label>
+        <link refid="hdf5printer_2print__overloads_8cpp"/>
+      </node>
+      <node id="8">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="hdf5printer_2retrieve__overloads_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Printers">Gambit::Printers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>MPI tag definitions for the VertexBuffer classes.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 May</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>MPI<sp/>tag<sp/>definitions<sp/>for<sp/>the<sp/>VertexBuffer<sp/>classes.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(benjamin.farmer@fysik.su.se)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>May</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__vertexbuffer_mpitags_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__vertexbuffer_mpitags_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Printers<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Reserved<sp/>tags<sp/>for<sp/>MPI<sp/>messages</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>TAG_REQ<sp/><sp/><sp/>-<sp/>for<sp/>messages<sp/>registering/requesting<sp/>a<sp/>new<sp/>tags</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>INIT_PASS<sp/>-<sp/>for<sp/>messages<sp/>registering<sp/>completion<sp/>of<sp/>initialisation</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>PPFILES_PASS<sp/>-<sp/>for<sp/>messages<sp/>registering<sp/>completion<sp/>of<sp/>preprocessing<sp/>of<sp/>existing<sp/>files<sp/>(combination/deletion)</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>FINAL_PASS<sp/>-<sp/>for<sp/>messages<sp/>registering<sp/>passing<sp/>of<sp/>checkpoint<sp/>during<sp/>finalise</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>PPID_SEND<sp/>-<sp/>for<sp/>messages<sp/>transferring<sp/>point<sp/>ID<sp/>information</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>N_BUFFERS_SENT<sp/>-<sp/>for<sp/>messages<sp/>counting<sp/>the<sp/>number<sp/>of<sp/>buffer<sp/>transfer<sp/>messages<sp/>being<sp/>sent<sp/>in<sp/>one<sp/>&apos;package&apos;<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>RA_BUFFERS_SENT<sp/>-<sp/>Contains<sp/>no<sp/>data,<sp/>just<sp/>indicates<sp/>that<sp/>RA<sp/>buffer<sp/>messages<sp/>from<sp/>some<sp/>process<sp/>are<sp/>waiting<sp/>to<sp/>send.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>FINAL_SYNC<sp/>-<sp/>Contains<sp/>no<sp/>data,<sp/>used<sp/>to<sp/>trigger<sp/>final<sp/>buffer<sp/>sends<sp/>and<sp/>receives.</highlight></codeline>
+<codeline lineno="35" refid="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1_1Printers_1a884aab51a4510a898af4566877d349e4" kindref="member">Tags</ref><sp/>{<sp/>TAG_REQ=0,<sp/>INIT_PASS,<sp/>PPFILES_PASS,<sp/>FINAL_PASS,<sp/>PPID_SEND,<sp/>N_BUFFERS_SENT,<sp/>RA_BUFFERS_SENT,<sp/>FINAL_SYNC<sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FIRST_EMPTY_TAG<sp/>=<sp/>FINAL_SYNC+1;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Printers/include/gambit/Printers/VertexBuffer_mpitags.hpp"/>
+  </compounddef>
+</doxygen>

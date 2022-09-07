@@ -5,12 +5,18 @@ description: "[No description available]"
 
 ---
 
-
-
+# std
 
 
 
 [No description available]
+
+## Classes
+
+|                | Name           |
+| -------------- | -------------- |
+| struct | **[std::equal_to< Gambit::type_index >](/documentation/code/classes/structstd_1_1equal__to_3_01gambit_1_1type__index_01_4/)**  |
+| struct | **[std::hash< Gambit::type_index >](/documentation/code/classes/structstd_1_1hash_3_01gambit_1_1type__index_01_4/)**  |
 
 
 
@@ -19,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

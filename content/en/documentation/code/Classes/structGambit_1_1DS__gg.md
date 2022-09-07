@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS_gg
 
 
 
@@ -18,7 +17,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble_complex, 1, 27, 1, 2 > | **[gg](/documentation/code/classes/structgambit_1_1ds__gg/#variable-gg)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< [Fdouble_complex](/documentation/code/classes/classgambit_1_1fcomplext/), 1, 27, 1, 2 > | **[gg](/documentation/code/classes/structgambit_1_1ds__gg/#variable-gg)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +30,4 @@ Farray< Fdouble_complex, 1, 27, 1, 2 > gg;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1BasePrinter" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gambit::Printers::BasePrinter</compoundname>
+    <basecompoundref refid="classGambit_1_1Printers_1_1BaseBasePrinter" prot="public" virt="non-virtual">Gambit::Printers::BaseBasePrinter</basecompoundref>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1HDF5Printer" prot="public" virt="non-virtual">Gambit::Printers::HDF5Printer</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1HDF5Printer2" prot="public" virt="non-virtual">Gambit::Printers::HDF5Printer2</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1SQLitePrinter" prot="public" virt="non-virtual">Gambit::Printers::SQLitePrinter</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1asciiPrinter" prot="public" virt="non-virtual">Gambit::Printers::asciiPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1coutPrinter" prot="public" virt="non-virtual">Gambit::Printers::coutPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1nonePrinter" prot="public" virt="non-virtual">Gambit::Printers::nonePrinter</derivedcompoundref>
+    <includes refid="baseprinter_8hpp" local="no">baseprinter.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1BasePrinter_1acee0e7501541a0e7d6e432443b946a93" prot="private" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref> *</type>
+        <definition>BasePrinter* Gambit::Printers::BasePrinter::primary_printer</definition>
+        <argsstring></argsstring>
+        <name>primary_printer</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::primary_printer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="89" column="21" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1BasePrinter_1a0dcac255d5ee58fe19052bf0be6c08b0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::BasePrinter::is_aux</definition>
+        <argsstring></argsstring>
+        <name>is_aux</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::is_aux</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="90" column="14" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a303cab0f271b974f290434243a65de1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::BasePrinter::BasePrinter</definition>
+        <argsstring>()</argsstring>
+        <name>BasePrinter</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::BasePrinter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="93" column="9" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a19ec58e978725c2725c0bdbac6c5558d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::BasePrinter::BasePrinter</definition>
+        <argsstring>(BasePrinter *const primary, bool is_aux_IN)</argsstring>
+        <name>BasePrinter</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::BasePrinter</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref> *const</type>
+          <declname>primary</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_aux_IN</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="98" column="9" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a4d7f0232eec2f4a884e22b82a8111f51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gambit::Printers::BasePrinter::~BasePrinter</definition>
+        <argsstring>()</argsstring>
+        <name>~BasePrinter</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::~BasePrinter</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="104" column="17" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1afb115e9770b0b87a65e727554c7d899c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinter::initialise</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;)=0</argsstring>
+        <name>initialise</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::initialise</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1asciiPrinter_1a2dd6a3485a0a283477cf90d20a25f296">initialise</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1coutPrinter_1a80ebefb84196a20f4571f97d1e13571f">initialise</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Printer_1a5fc68fd41e63749711758ede8b25ce21">initialise</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Printer2_1a92af2ae43ef53bdbef8d47246817db97">initialise</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1nonePrinter_1a0c95ff6f56a34e8d3382274649ea3739">initialise</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1SQLitePrinter_1a353b69096e6b5c5c7039586848856d4e">initialise</reimplementedby>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+        </param>
+        <briefdescription>
+<para>Initialisation function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="108" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1aeb68299b8d3c7c2c796751884d7241ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinter::flush</definition>
+        <argsstring>()=0</argsstring>
+        <name>flush</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::flush</qualifiedname>
+        <reimplements refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a41923d7c00b8f9c92cbff1ab00e8d7e6">flush</reimplements>
+        <reimplementedby refid="classGambit_1_1Printers_1_1asciiPrinter_1a06ff2df3bfca72eb85ac67ecd7d1a1a8">flush</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1coutPrinter_1ab8005ec35ef3bed5d51875165cbebbdf">flush</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Printer_1af4e33f85ace326238c5137b75438a850">flush</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Printer2_1a7a0a1ad4153fa88cbfc94a06194b2414">flush</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1nonePrinter_1a20760ebec48fc3dd16ebd9aeab4e8ff4">flush</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1SQLitePrinter_1a6f177aac286cb6e751bf26ef5d816f74">flush</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signal printer to flush data in buffers to disk <ref refid="namespaceGambit_1_1Printers" kindref="compound">Printers</ref> should do this automatically as needed, but this is useful if a scanner is printing a bunch of data as a batch, to make sure it is all on disk after the batch is done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="113" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a90408a18507c3c27ae5fc774765fcba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
+        <definition>virtual Options Gambit::Printers::BasePrinter::resume_reader_options</definition>
+        <argsstring>()=0</argsstring>
+        <name>resume_reader_options</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::resume_reader_options</qualifiedname>
+        <reimplements refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a725ae2d17e90f62fb994cdc4bc7cd4cc">resume_reader_options</reimplements>
+        <reimplementedby refid="classGambit_1_1Printers_1_1asciiPrinter_1a23f1aec913af95440e41d48bfdfeb5eb">resume_reader_options</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1coutPrinter_1a09d537c454b823ee4155ab92322dde23">resume_reader_options</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Printer_1aa2596b9ec27932edf20115f82aed98ab">resume_reader_options</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Printer2_1ae6558a82569b19d6cfa395ef78da502e">resume_reader_options</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1nonePrinter_1a90c02f23be120b35ea26b9e645afcb33">resume_reader_options</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1SQLitePrinter_1aa3dada0b2da39deb5e609e674c1332b2">resume_reader_options</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="117" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1afee2494a6631283d92afbb05df5f6eb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::BasePrinter::set_as_aux</definition>
+        <argsstring>()</argsstring>
+        <name>set_as_aux</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::set_as_aux</qualifiedname>
+        <briefdescription>
+<para>Set this as an auxilliary printer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="120" column="14" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1abbb4a0a52992af14c237ab78f5542eff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinter::auxilliary_init</definition>
+        <argsstring>()</argsstring>
+        <name>auxilliary_init</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::auxilliary_init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper initialisation for auxilliary printers Will be run when the auxilliary printer is created by a <ref refid="classGambit_1_1Printers_1_1PrinterManager" kindref="compound">PrinterManager</ref>. Define override of this if two-stage initialisation is needed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="126" column="22" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a3c21c16334ad0912a2443439bdbbf790" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref> *</type>
+        <definition>BasePrinter * Gambit::Printers::BasePrinter::get_primary_printer</definition>
+        <argsstring>()</argsstring>
+        <name>get_primary_printer</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::get_primary_printer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="128" column="21" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="128" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a85233c1edaf646bcdf14a18d7bd90179" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::BasePrinter::is_auxilliary_printer</definition>
+        <argsstring>()</argsstring>
+        <name>is_auxilliary_printer</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::is_auxilliary_printer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="147" column="14" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a4ba4d6be89e5d91a2cc1a14e75acb6ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::BasePrinter::print</definition>
+        <argsstring>(T const &amp;in, const std::string &amp;label, const int vertexID, const uint rank, const ulong pointID)</argsstring>
+        <name>print</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::print</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vertexID</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>rank</declname>
+        </param>
+        <param>
+          <type>const ulong</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="156" column="14" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="156" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a1dfc2af5fc27c500b751bb7b57cbe0d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::BasePrinter::print</definition>
+        <argsstring>(T const &amp;in, const std::string &amp;label, const uint rank, const ulong pointID)</argsstring>
+        <name>print</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::print</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>rank</declname>
+        </param>
+        <param>
+          <type>const ulong</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="166" column="14" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="166" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1acec290abd094f645c538be69aa1928cd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::BaseBasePrinter::_print</definition>
+        <argsstring>(T const &amp;, const std::string &amp;label, const int vertexID, const uint, const ulong)</argsstring>
+        <name>_print</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::_print</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vertexID</declname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>uint</declname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>ulong</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default _print function. Throws an error if no matching virtual function for the type of the attempted print is found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="175" column="9" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="171" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BASE PRINTER CLASS. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::Printers::BaseBasePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1BaseBasePrinter"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Printers::BasePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1BasePrinter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::Printers::HDF5Printer</label>
+        <link refid="classGambit_1_1Printers_1_1HDF5Printer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gambit::Printers::HDF5Printer2</label>
+        <link refid="classGambit_1_1Printers_1_1HDF5Printer2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gambit::Printers::SQLitePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1SQLitePrinter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gambit::Printers::asciiPrinter</label>
+        <link refid="classGambit_1_1Printers_1_1asciiPrinter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gambit::Printers::coutPrinter</label>
+        <link refid="classGambit_1_1Printers_1_1coutPrinter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gambit::Printers::nonePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1nonePrinter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Printers::BaseBasePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1BaseBasePrinter"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Printers::BasePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1BasePrinter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="86" column="5" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="87" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1acec290abd094f645c538be69aa1928cd" prot="protected" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>_print</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1afd407cfc481a665be9f397ae5a129ca2" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>addToPrintList</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1abbb4a0a52992af14c237ab78f5542eff" prot="public" virt="virtual"><scope>Gambit::Printers::BasePrinter</scope><name>auxilliary_init</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a2d9abf4185ec718116c88fc0bebaff59" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>BaseBasePrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a303cab0f271b974f290434243a65de1f" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>BasePrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a19ec58e978725c2725c0bdbac6c5558d" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>BasePrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ab7d07ee8005b51b9bdefa1a05d1f3c64" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>disable</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ac855bf2aff788f01f4eb182e722fc3e4" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>enable</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1abf3164e5e5d9a7de6a7df11c0f419ae7" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>finalise</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1aeb68299b8d3c7c2c796751884d7241ba" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>flush</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a3c21c16334ad0912a2443439bdbbf790" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>get_primary_printer</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a98dc6998a27123d8ee29f3cd16d6d3fe" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>get_printUnitcube</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ada3792f8bf867bae00819ed58e98a244" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>get_resume</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ac18745eebd15f76851a7573601359312" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>getPrintList</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a8f7e69489c1a83b4208c3ca0237bf823" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>getRank</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1afb115e9770b0b87a65e727554c7d899c" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>initialise</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a0dcac255d5ee58fe19052bf0be6c08b0" prot="private" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>is_aux</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a85233c1edaf646bcdf14a18d7bd90179" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>is_auxilliary_printer</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1acee0e7501541a0e7d6e432443b946a93" prot="private" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>primary_printer</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a4ba4d6be89e5d91a2cc1a14e75acb6ce" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>print</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a1dfc2af5fc27c500b751bb7b57cbe0d9" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>print</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1af405d35cb40f9d88543b1376f18d7643" prot="protected" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>printer_cooldown</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a38cea919f04f4c6b544b4a71aeca79db" prot="protected" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>printer_enabled</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1aa0e06c38d025f5825b11572766387018" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>reset</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a90408a18507c3c27ae5fc774765fcba8" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>resume_reader_options</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1afee2494a6631283d92afbb05df5f6eb8" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>set_as_aux</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ac4f9bfbde0b4d732e84d8048d8218e38" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>set_printUnitcube</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a960832ce5b23a9857bf7f9a0422ca5e5" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>set_resume</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a4f76c50756bb1c2587475c5dd0e9fa4b" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>setPrintList</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a77a5a48ab7dcaeb974031792ae9bc7bc" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>setRank</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a83d0212117486681e069d53ed1368405" prot="public" virt="virtual"><scope>Gambit::Printers::BasePrinter</scope><name>~BaseBasePrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a4d7f0232eec2f4a884e22b82a8111f51" prot="public" virt="virtual"><scope>Gambit::Printers::BasePrinter</scope><name>~BasePrinter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

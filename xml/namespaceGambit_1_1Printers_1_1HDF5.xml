@@ -1,0 +1,1151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1Printers_1_1HDF5" kind="namespace" language="C++">
+    <compoundname>Gambit::Printers::HDF5</compoundname>
+    <innerclass refid="structGambit_1_1Printers_1_1HDF5_1_1copy__hdf5" prot="public">Gambit::Printers::HDF5::copy_hdf5</innerclass>
+    <innerclass refid="classGambit_1_1Printers_1_1HDF5_1_1hdf5__stuff" prot="public">Gambit::Printers::HDF5::hdf5_stuff</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1HDF5_1_1ra__copy__hdf5" prot="public">Gambit::Printers::HDF5::ra_copy_hdf5</innerclass>
+    <innerclass refid="structGambit_1_1Printers_1_1HDF5_1_1read__hdf5" prot="public">Gambit::Printers::HDF5::read_hdf5</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="hdf5tools_8hpp_1af48bd09a5696b1df4ceea7c6b7cb33e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::openFile</definition>
+        <argsstring>(const std::string &amp;fname, bool overwrite, bool &amp;oldfile, const char access_type=&apos;r&apos;)</argsstring>
+        <name>openFile</name>
+        <qualifiedname>Gambit::Printers::HDF5::openFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>oldfile</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>access_type</declname>
+          <defval>&apos;r&apos;</defval>
+        </param>
+        <briefdescription>
+<para>File and group manipulation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create or open hdf5 file</para>
+<para>Create or open hdf5 file third argument &quot;oldfile&quot; is used to report whether an existing file was opened (true if yes) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="182" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="182" bodyend="265" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="87" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a9305ffa0da20b9bf004edfdb21af23cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::openFile</definition>
+        <argsstring>(const std::string &amp;fname, bool overwrite, const char access_type)</argsstring>
+        <name>openFile</name>
+        <qualifiedname>Gambit::Printers::HDF5::openFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>access_type</declname>
+          <defval>&apos;r&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Create or open hdf5 file (ignoring feedback regarding whether file already existed) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="174" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="174" bodyend="178" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="88" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1acb03c278cf7d049d55de0dcf25333290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::closeFile</definition>
+        <argsstring>(hid_t file)</argsstring>
+        <name>closeFile</name>
+        <qualifiedname>Gambit::Printers::HDF5::closeFile</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Close hdf5 file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="92" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="92" bodyend="132" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="91" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a2a45689cd37ec65db48020efcc5cc202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::HDF5::checkFileReadable</definition>
+        <argsstring>(const std::string &amp;fname, std::string &amp;msg)</argsstring>
+        <name>checkFileReadable</name>
+        <qualifiedname>Gambit::Printers::HDF5::checkFileReadable</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Check if hdf5 file exists and can be opened in read/write mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if hdf5 file exists and can be opened in read mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="268" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="268" bodyend="299" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="94" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1aa65f4633a5ed9075461ca4826333c07f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::HDF5::checkFileReadable</definition>
+        <argsstring>(const std::string &amp;fname)</argsstring>
+        <name>checkFileReadable</name>
+        <qualifiedname>Gambit::Printers::HDF5::checkFileReadable</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+<para>Thin wrapper for the above to discard failure message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="96" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="96" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a403afdca4ce9ea9114f8d1d7779875ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::HDF5::checkGroupReadable</definition>
+        <argsstring>(hid_t location, const std::string &amp;groupname, std::string &amp;msg)</argsstring>
+        <name>checkGroupReadable</name>
+        <qualifiedname>Gambit::Printers::HDF5::checkGroupReadable</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>groupname</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Check if a group exists and can be accessed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="302" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="302" bodyend="330" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="100" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a661c29c36a43cdafa49c3f0f289e0e94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::HDF5::checkGroupReadable</definition>
+        <argsstring>(hid_t location, const std::string &amp;groupname)</argsstring>
+        <name>checkGroupReadable</name>
+        <qualifiedname>Gambit::Printers::HDF5::checkGroupReadable</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+<para>Thin wrapper for the above to discard failure message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="102" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="102" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a3a2049f270a96f501900d5306340482d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; bool, std::size_t &gt;</type>
+        <definition>std::pair&lt; bool, std::size_t &gt; Gambit::Printers::HDF5::checkDatasetReadable</definition>
+        <argsstring>(hid_t location, const std::string &amp;dsetname)</argsstring>
+        <name>checkDatasetReadable</name>
+        <qualifiedname>Gambit::Printers::HDF5::checkDatasetReadable</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dsetname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a dataset exists and can be read from fully (Reads through entire dataset to make sure! May take some time) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="432" column="17" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="432" bodyend="468" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="107" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a6b1b94e1231483456621620e1cbc9cfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::createFile</definition>
+        <argsstring>(const std::string &amp;fname)</argsstring>
+        <name>createFile</name>
+        <qualifiedname>Gambit::Printers::HDF5::createFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+<para>Create hdf5 file (always overwrite existing files) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="471" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="471" bodyend="482" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="110" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a7553bda20286f0425bc44071194069bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::createGroup</definition>
+        <argsstring>(hid_t location, const std::string &amp;name)</argsstring>
+        <name>createGroup</name>
+        <qualifiedname>Gambit::Printers::HDF5::createGroup</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a group inside the specified location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="486" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="486" bodyend="498" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="114" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1aa151d9c2ea70cfce495d6c31640c2351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::HDF5::errorsOff</definition>
+        <argsstring>()</argsstring>
+        <name>errorsOff</name>
+        <qualifiedname>Gambit::Printers::HDF5::errorsOff</qualifiedname>
+        <briefdescription>
+<para>Silence error report (e.g. while probing for file existence) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Silence error report (e.g. while probing for file existence) Just silences default error stack, since we aren&apos;t using anything else TESTING! I changed from using H5Eget_auto to H5Eget_auto2 If that still causes errors, try switching to H5Eget_auto1 and let me know if it works :) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="671" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="671" bodyend="678" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="117" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a00b8a9a9b35a8b374362834b39cbc28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::HDF5::errorsOn</definition>
+        <argsstring>()</argsstring>
+        <name>errorsOn</name>
+        <qualifiedname>Gambit::Printers::HDF5::errorsOn</qualifiedname>
+        <briefdescription>
+<para>Restore error report. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="681" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="681" bodyend="685" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="120" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a4a28a77b6dbe3e3d0d1a9da49f8504dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::openGroup</definition>
+        <argsstring>(hid_t file_id, const std::string &amp;name, bool nocreate=false)</argsstring>
+        <name>openGroup</name>
+        <qualifiedname>Gambit::Printers::HDF5::openGroup</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>file_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>nocreate</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="512" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="512" bodyend="575" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="134" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1ab1874c1d1489ed4d2865669f0d7a2648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::closeGroup</definition>
+        <argsstring>(hid_t group)</argsstring>
+        <name>closeGroup</name>
+        <qualifiedname>Gambit::Printers::HDF5::closeGroup</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+<para>Close group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="137" column="16" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="137" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a09bb76c8a3793cba06d40f6e379d59ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; Gambit::Printers::HDF5::lsGroup</definition>
+        <argsstring>(hid_t group_id)</argsstring>
+        <name>lsGroup</name>
+        <qualifiedname>Gambit::Printers::HDF5::lsGroup</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+<para>List object names in a group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="593" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="593" bodyend="613" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="140" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1aece2076b406c21490c641952824fa800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::getH5DatasetType</definition>
+        <argsstring>(hid_t group_id, const std::string &amp;dset_name)</argsstring>
+        <name>getH5DatasetType</name>
+        <qualifiedname>Gambit::Printers::HDF5::getH5DatasetType</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dset_name</declname>
+        </param>
+        <briefdescription>
+<para>Get type of an object in a group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type of a dataset in a group NOTE: Make sure to call closeType when the ID is no longer needed! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="631" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="631" bodyend="649" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="143" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a44da0cf5bcf2392967fa9675033d57ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::closeType</definition>
+        <argsstring>(hid_t type_id)</argsstring>
+        <name>closeType</name>
+        <qualifiedname>Gambit::Printers::HDF5::closeType</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>type_id</declname>
+        </param>
+        <briefdescription>
+<para>Release datatype identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="146" column="16" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="146" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="hdf5tools_8hpp_1a5a35aa2dea07b8bd548803f1be27dc9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::openDataset</definition>
+        <argsstring>(hid_t dset_id, const std::string &amp;name, bool error_off=false)</argsstring>
+        <name>openDataset</name>
+        <qualifiedname>Gambit::Printers::HDF5::openDataset</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>dset_id</declname>
+          <defname>group_id</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>error_off</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Dataset and dataspace manipulation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Dataset manipulations.</para>
+<para>Open dataset </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="691" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="691" bodyend="710" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="153" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a2e95f5e32712addd7db876d87b239b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::closeDataset</definition>
+        <argsstring>(hid_t dset_id)</argsstring>
+        <name>closeDataset</name>
+        <qualifiedname>Gambit::Printers::HDF5::closeDataset</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <briefdescription>
+<para>Close dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="156" column="16" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="156" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1abda955745e920e5039774cbbe79359d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::getSpace</definition>
+        <argsstring>(hid_t dset_id)</argsstring>
+        <name>getSpace</name>
+        <qualifiedname>Gambit::Printers::HDF5::getSpace</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <briefdescription>
+<para>Get dataspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="159" column="16" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="159" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1ac99d127f74df7a9cdeaa1f301fe4f97c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::closeSpace</definition>
+        <argsstring>(hid_t space_id)</argsstring>
+        <name>closeSpace</name>
+        <qualifiedname>Gambit::Printers::HDF5::closeSpace</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>space_id</declname>
+        </param>
+        <briefdescription>
+<para>Close dataspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="162" column="16" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="162" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a3aae4048cacb50049b235e66d869df6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hssize_t</type>
+        <definition>hssize_t Gambit::Printers::HDF5::getSimpleExtentNpoints</definition>
+        <argsstring>(hid_t dset_id)</argsstring>
+        <name>getSimpleExtentNpoints</name>
+        <qualifiedname>Gambit::Printers::HDF5::getSimpleExtentNpoints</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <briefdescription>
+<para>Get simple dataspace extent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="165" column="19" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="165" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1addae07ab6041965424b1d9684a95af63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::HDF5::getName</definition>
+        <argsstring>(hid_t dset_id)</argsstring>
+        <name>getName</name>
+        <qualifiedname>Gambit::Printers::HDF5::getName</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <briefdescription>
+<para>Get name of dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Close dataset.</para>
+<para>Open/close dataspace; input dataset, output dataspace Get simple dataspace extent (number of points); input dataspace, output data extent (size) Get dataset name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="723" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="723" bodyend="730" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="168" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1aa183487983cd8a7e15d681cc0f22f92e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; hid_t, hid_t &gt;</type>
+        <definition>std::pair&lt; hid_t, hid_t &gt; Gambit::Printers::HDF5::selectChunk</definition>
+        <argsstring>(const hid_t dset_id, std::size_t offset, std::size_t length)</argsstring>
+        <name>selectChunk</name>
+        <qualifiedname>Gambit::Printers::HDF5::selectChunk</qualifiedname>
+        <param>
+          <type>const hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Select a simple hyperslab in a 1D dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="733" column="17" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="733" bodyend="778" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="171" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a1ae11ab53d31f2bee387b2182be3f329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::HDF5::isDataSet</definition>
+        <argsstring>(hid_t group_id, const std::string &amp;name)</argsstring>
+        <name>isDataSet</name>
+        <qualifiedname>Gambit::Printers::HDF5::isDataSet</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Check if an object in a group is a dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if an object in a file or group is a dataset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="616" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="616" bodyend="627" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="174" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1aa54ecc5c2dddc703833c91b6ab2a06c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; Gambit::Printers::HDF5::getChunk</definition>
+        <argsstring>(const hid_t dset_id, std::size_t offset, std::size_t length)</argsstring>
+        <name>getChunk</name>
+        <qualifiedname>Gambit::Printers::HDF5::getChunk</qualifiedname>
+        <param>
+          <type>const hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a chunk of data from a simple dataset NOTE! Doesn&apos;t work for T=bool! Have a custom specialisation in the source file for that. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="179" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" bodystart="179" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1af1be4e8a0e1295596b56255e63c3da2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt; bool &gt; Gambit::Printers::HDF5::getChunk</definition>
+        <argsstring>(const hid_t dset_id, std::size_t offset, std::size_t length)</argsstring>
+        <name>getChunk</name>
+        <qualifiedname>Gambit::Printers::HDF5::getChunk</qualifiedname>
+        <param>
+          <type>const hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" line="212" column="22" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="136" bodyend="171" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="212" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a6c6ab717ef9b400c8cd7c935618354ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Printers::HDF5::inttype_from_h5type</definition>
+        <argsstring>(hid_t h5type)</argsstring>
+        <name>inttype_from_h5type</name>
+        <qualifiedname>Gambit::Printers::HDF5::inttype_from_h5type</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>h5type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="783" column="11" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="783" bodyend="807" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="215" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8hpp_1a5f08dfbe02bdd0d77206b1df86217e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::HDF5::is_float_type</definition>
+        <argsstring>(int inttype)</argsstring>
+        <name>is_float_type</name>
+        <qualifiedname>Gambit::Printers::HDF5::is_float_type</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inttype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="810" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="810" bodyend="829" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="218" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="hdf5tools_8cpp_1ab982ce1ee77e6b8bb7dc77262041c44c" prot="public" static="no" mutable="no">
+        <type>H5E_auto2_t</type>
+        <definition>H5E_auto2_t Gambit::Printers::HDF5::old_func</definition>
+        <argsstring></argsstring>
+        <name>old_func</name>
+        <qualifiedname>Gambit::Printers::HDF5::old_func</qualifiedname>
+        <briefdescription>
+<para>Close hdf5 type ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Close hdf5 group global error variables (handler) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="658" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="hdf5tools_8cpp_1aa31189747322062039ed6ba4ffc51a50" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Gambit::Printers::HDF5::old_client_data</definition>
+        <argsstring></argsstring>
+        <name>old_client_data</name>
+        <qualifiedname>Gambit::Printers::HDF5::old_client_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="659" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="659" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="hdf5__combine__tools_8hpp_1a5e50e4c741d6d7122c59d62e4a77e68e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Gambit::Printers::HDF5::type_ret</definition>
+        <argsstring>()</argsstring>
+        <name>type_ret</name>
+        <qualifiedname>Gambit::Printers::HDF5::type_ret</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" line="42" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8hpp_1a28be9c498bbc320450d8322df057828c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::HDF5::Enter_HDF5</definition>
+        <argsstring>(hid_t dataset, T &amp;... params)</argsstring>
+        <name>Enter_HDF5</name>
+        <qualifiedname>Gambit::Printers::HDF5::Enter_HDF5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type>T &amp;...</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" line="341" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" bodystart="341" bodyend="427" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="45" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8hpp_1a396b88fc9c18c7f5c3547e19d0c24a0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::HDF5::combine_hdf5_files</definition>
+        <argsstring>(const std::string output_file, const std::string &amp;base_file_name, const std::string &amp;group, const size_t num, const bool resume, const bool cleanup, const bool skip, const std::vector&lt; std::string &gt; input_files=std::vector&lt; std::string &gt;())</argsstring>
+        <name>combine_hdf5_files</name>
+        <qualifiedname>Gambit::Printers::HDF5::combine_hdf5_files</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>output_file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>base_file_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>group</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>resume</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>cleanup</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>skip</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt;</type>
+          <declname>input_files</declname>
+          <defval>std::vector&lt; std::string &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" line="455" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" bodystart="455" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8hpp_1ad09238f3525d342816e3ba41f12b1285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_map&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref>, unsigned long long, <ref refid="structGambit_1_1Printers_1_1PPIDHash" kindref="compound">PPIDHash</ref>, <ref refid="structGambit_1_1Printers_1_1PPIDEqual" kindref="compound">PPIDEqual</ref> &gt;</type>
+        <definition>std::unordered_map&lt; PPIDpair, unsigned long long, PPIDHash, PPIDEqual &gt; Gambit::Printers::HDF5::get_RA_write_hash</definition>
+        <argsstring>(hid_t, std::unordered_set&lt; PPIDpair, PPIDHash, PPIDEqual &gt; &amp;)</argsstring>
+        <name>get_RA_write_hash</name>
+        <qualifiedname>Gambit::Printers::HDF5::get_RA_write_hash</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <defname>group_id</defname>
+        </param>
+        <param>
+          <type>std::unordered_set&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref>, <ref refid="structGambit_1_1Printers_1_1PPIDHash" kindref="compound">PPIDHash</ref>, <ref refid="structGambit_1_1Printers_1_1PPIDEqual" kindref="compound">PPIDEqual</ref> &gt; &amp;</type>
+          <defname>left_to_match</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function to create output hash map for RA points note: left_to_match points will be erased as we go, and are passed by reference, so will be erased in calling context also. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1078" column="32" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1078" bodyend="1216" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="463" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8hpp_1af5d90bb4e4d4ea7baea508017eb719c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::vector&lt; std::string &gt;, std::vector&lt; size_t &gt; &gt;</type>
+        <definition>std::pair&lt; std::vector&lt; std::string &gt;, std::vector&lt; size_t &gt; &gt; Gambit::Printers::HDF5::find_temporary_files</definition>
+        <argsstring>(const std::string &amp;finalfile)</argsstring>
+        <name>find_temporary_files</name>
+        <qualifiedname>Gambit::Printers::HDF5::find_temporary_files</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>finalfile</declname>
+        </param>
+        <briefdescription>
+<para>Search for temporary files to be combined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1218" column="23" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1218" bodyend="1222" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="466" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8hpp_1aec6cb1004f0ef05c46dd4701a819f5d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::vector&lt; std::string &gt;, std::vector&lt; size_t &gt; &gt;</type>
+        <definition>std::pair&lt; std::vector&lt; std::string &gt;, std::vector&lt; size_t &gt; &gt; Gambit::Printers::HDF5::find_temporary_files</definition>
+        <argsstring>(const std::string &amp;finalfile, size_t &amp;max_i)</argsstring>
+        <name>find_temporary_files</name>
+        <qualifiedname>Gambit::Printers::HDF5::find_temporary_files</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>finalfile</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>max_i</declname>
+        </param>
+        <briefdescription>
+<para>Search for temporary files to be combined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1225" column="23" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1225" bodyend="1267" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="467" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8cpp_1a81497d424d265b92cd822a373860bec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>hsize_t</type>
+        <definition>hsize_t Gambit::Printers::HDF5::getGroupNum</definition>
+        <argsstring>(hid_t group_id)</argsstring>
+        <name>getGroupNum</name>
+        <qualifiedname>Gambit::Printers::HDF5::getGroupNum</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="42" column="28" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8cpp_1af6823d0eff409464b4cfd363526b8e8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::getType</definition>
+        <argsstring>(hid_t dataset)</argsstring>
+        <name>getType</name>
+        <qualifiedname>Gambit::Printers::HDF5::getType</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="49" column="26" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8cpp_1aa64bd8ad5aff1593b4ee57d1e43b4087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; Gambit::Printers::HDF5::get_dset_names</definition>
+        <argsstring>(hid_t group_id)</argsstring>
+        <name>get_dset_names</name>
+        <qualifiedname>Gambit::Printers::HDF5::get_dset_names</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="73" column="25" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="73" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8cpp_1acd1418ef6af3f3275fb20b91a27daa94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>herr_t</type>
+        <definition>herr_t Gambit::Printers::HDF5::op_func</definition>
+        <argsstring>(hid_t loc_id, const char *name_in, const H5L_info_t *, void *operator_data)</argsstring>
+        <name>op_func</name>
+        <qualifiedname>Gambit::Printers::HDF5::op_func</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>loc_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name_in</declname>
+        </param>
+        <param>
+          <type>const H5L_info_t *</type>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>operator_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="102" column="27" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="102" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8cpp_1aec4f852d1a7f993ca4d51244da823abf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>herr_t</type>
+        <definition>herr_t Gambit::Printers::HDF5::op_func_aux</definition>
+        <argsstring>(hid_t loc_id, const char *name_in, const H5L_info_t *, void *operator_data)</argsstring>
+        <name>op_func_aux</name>
+        <qualifiedname>Gambit::Printers::HDF5::op_func_aux</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>loc_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name_in</declname>
+        </param>
+        <param>
+          <type>const H5L_info_t *</type>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>operator_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="142" column="27" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="142" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8cpp_1a43c563458f78e63b6212be26cb2b98dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::HDF5::setup_hdf5_points</definition>
+        <argsstring>(hid_t new_group, hid_t type, hid_t type2, unsigned long long size_tot, const std::string &amp;name)</argsstring>
+        <name>setup_hdf5_points</name>
+        <qualifiedname>Gambit::Printers::HDF5::setup_hdf5_points</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>new_group</declname>
+        </param>
+        <param>
+          <type>hid_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>hid_t</type>
+          <declname>type2</declname>
+        </param>
+        <param>
+          <type>unsigned long long</type>
+          <declname>size_tot</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="182" column="25" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="182" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5__combine__tools_8cpp_1a8c4ef020891b355562e96e6103a56162" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; Gambit::Printers::HDF5::getGroups</definition>
+        <argsstring>(std::string groups)</argsstring>
+        <name>getGroups</name>
+        <qualifiedname>Gambit::Printers::HDF5::getGroups</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="226" column="32" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="226" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8cpp_1a6f3010e82880355b3197223822ba1697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5::create_GAMBIT_fapl</definition>
+        <argsstring>()</argsstring>
+        <name>create_GAMBIT_fapl</name>
+        <qualifiedname>Gambit::Printers::HDF5::create_GAMBIT_fapl</qualifiedname>
+        <briefdescription>
+<para>GAMBIT default file access property list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="43" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="43" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8cpp_1a06d2a1106a53957a18312fc95a4c698b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const hid_t</type>
+        <definition>const hid_t Gambit::Printers::HDF5::H5P_GAMBIT</definition>
+        <argsstring>(create_GAMBIT_fapl())</argsstring>
+        <name>H5P_GAMBIT</name>
+        <qualifiedname>Gambit::Printers::HDF5::H5P_GAMBIT</qualifiedname>
+        <param>
+          <type>create_GAMBIT_fapl()</type>
+        </param>
+        <briefdescription>
+<para>Const global for the GAMBIT fapl. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="70" column="19" declfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" declline="70" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8cpp_1af1be4e8a0e1295596b56255e63c3da2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt; bool &gt; Gambit::Printers::HDF5::getChunk</definition>
+        <argsstring>(const hid_t dset_id, std::size_t offset, std::size_t length)</argsstring>
+        <name>getChunk</name>
+        <qualifiedname>Gambit::Printers::HDF5::getChunk</qualifiedname>
+        <param>
+          <type>const hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="136" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="136" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8cpp_1af87f4b295d64339eb867f860f50e7c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::pair&lt; bool, std::size_t &gt;</type>
+        <definition>std::pair&lt; bool, std::size_t &gt; Gambit::Printers::HDF5::_checkDatasetReadable_helper</definition>
+        <argsstring>(hid_t dset_id, const std::string dset_name)</argsstring>
+        <name>_checkDatasetReadable_helper</name>
+        <qualifiedname>Gambit::Printers::HDF5::_checkDatasetReadable_helper</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>dset_id</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>dset_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="333" column="17" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="333" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="hdf5tools_8cpp_1abe0c8ea034c609cb3bab06dfe70b7152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>herr_t</type>
+        <definition>herr_t Gambit::Printers::HDF5::group_ls</definition>
+        <argsstring>(hid_t g_id, const char *name, const H5L_info_t *, void *op_data)</argsstring>
+        <name>group_ls</name>
+        <qualifiedname>Gambit::Printers::HDF5::group_ls</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>g_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const H5L_info_t *</type>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>op_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="578" column="14" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="578" bodyend="590"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" line="39" column="9"/>
+  </compounddef>
+</doxygen>

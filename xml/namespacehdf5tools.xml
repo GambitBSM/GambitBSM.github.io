@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespacehdf5tools" kind="namespace" language="Python">
+    <compoundname>hdf5tools</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacehdf5tools_1a50e56176b4a52556f9888a52f102e8c1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hdf5tools.chunksize</definition>
+        <argsstring></argsstring>
+        <name>chunksize</name>
+        <qualifiedname>hdf5tools.chunksize</qualifiedname>
+        <initializer>=  1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="10" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehdf5tools_1a690c89e9c31265927db3ae0f6a5154d6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hdf5tools.bufferlength</definition>
+        <argsstring></argsstring>
+        <name>bufferlength</name>
+        <qualifiedname>hdf5tools.bufferlength</qualifiedname>
+        <initializer>=  100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="11" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehdf5tools_1a7524f1a745e7dcd7413cbd948041594b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hdf5tools.max_ppidpairs</definition>
+        <argsstring></argsstring>
+        <name>max_ppidpairs</name>
+        <qualifiedname>hdf5tools.max_ppidpairs</qualifiedname>
+        <initializer>=  10*bufferlength</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="12" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacehdf5tools_1ae9bda8b18c1f8dcd364832ac20481a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def hdf5tools.get_dset_lengths</definition>
+        <argsstring>(d, group, dsets)</argsstring>
+        <name>get_dset_lengths</name>
+        <qualifiedname>hdf5tools.get_dset_lengths</qualifiedname>
+        <param>
+          <type>d</type>
+          <defname>d</defname>
+        </param>
+        <param>
+          <type>group</type>
+          <defname>group</defname>
+        </param>
+        <param>
+          <type>dsets</type>
+          <defname>dsets</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="14" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="14" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehdf5tools_1a342786f7e10f532ccaf1dab9e810a4e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def hdf5tools.check_lengths</definition>
+        <argsstring>(d)</argsstring>
+        <name>check_lengths</name>
+        <qualifiedname>hdf5tools.check_lengths</qualifiedname>
+        <param>
+          <type>d</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="28" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="28" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehdf5tools_1a0c7f16fc8bcf8e7f0332416465690c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def hdf5tools.copy_dset</definition>
+        <argsstring>(indset, outdset, nextempty, basemsg=&quot;&quot;)</argsstring>
+        <name>copy_dset</name>
+        <qualifiedname>hdf5tools.copy_dset</qualifiedname>
+        <param>
+          <type>indset</type>
+          <defname>indset</defname>
+        </param>
+        <param>
+          <type>outdset</type>
+          <defname>outdset</defname>
+        </param>
+        <param>
+          <type>nextempty</type>
+          <defname>nextempty</defname>
+        </param>
+        <param>
+          <type>basemsg</type>
+          <defname>basemsg</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="40" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="40" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehdf5tools_1af78e4344fb65a801be4ea486feba105b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def hdf5tools.copy_dset_whole</definition>
+        <argsstring>(indset, outdset, nextempty, basemsg=&quot;&quot;)</argsstring>
+        <name>copy_dset_whole</name>
+        <qualifiedname>hdf5tools.copy_dset_whole</qualifiedname>
+        <param>
+          <type>indset</type>
+          <defname>indset</defname>
+        </param>
+        <param>
+          <type>outdset</type>
+          <defname>outdset</defname>
+        </param>
+        <param>
+          <type>nextempty</type>
+          <defname>nextempty</defname>
+        </param>
+        <param>
+          <type>basemsg</type>
+          <defname>basemsg</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="59" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehdf5tools_1afe0c24d08566c34a280d04ecfec6c0ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def hdf5tools.cantor_pairing</definition>
+        <argsstring>(x, y)</argsstring>
+        <name>cantor_pairing</name>
+        <qualifiedname>hdf5tools.cantor_pairing</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="67" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehdf5tools_1a470867c50f0f661d56c6426a38870f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def hdf5tools.check_for_duplicates</definition>
+        <argsstring>(fout, group)</argsstring>
+        <name>check_for_duplicates</name>
+        <qualifiedname>hdf5tools.check_for_duplicates</qualifiedname>
+        <param>
+          <type>fout</type>
+          <defname>fout</defname>
+        </param>
+        <param>
+          <type>group</type>
+          <defname>group</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/hdf5tools.py" line="71" column="1" bodyfile="Printers/scripts/hdf5tools.py" bodystart="71" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tools for reading/writing data from HDF5 files</verbatim> </para>
+    </detaileddescription>
+    <location file="Printers/scripts/hdf5tools.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

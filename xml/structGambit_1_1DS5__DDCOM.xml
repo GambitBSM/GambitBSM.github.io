@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS5_DDCOM</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS5__DDCOM_1a8aed1cc5ea5db4b06a74e6883b7faab1" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 7, 12 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 7, 12 &gt;</type>
         <definition>Farray&lt;Fdouble, 7, 12&gt; Gambit::DS5_DDCOM::ftp</definition>
         <argsstring></argsstring>
         <name>ftp</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="377" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="377" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__DDCOM_1ab7ec76a19121be05a84f3c422e21f6eb" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 7, 12 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 7, 12 &gt;</type>
         <definition>Farray&lt;Fdouble, 7, 12&gt; Gambit::DS5_DDCOM::ftn</definition>
         <argsstring></argsstring>
         <name>ftn</name>
@@ -102,7 +102,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="383" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="383" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__DDCOM_1a3b29eb5f8f8ec94b1f5c8906d4952eb5" prot="public" static="no" mutable="no">
-        <type>Fstring&lt; 10 &gt;</type>
+        <type><ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref>&lt; 10 &gt;</type>
         <definition>Fstring&lt;10&gt; Gambit::DS5_DDCOM::ddfsi</definition>
         <argsstring></argsstring>
         <name>ddfsi</name>
@@ -116,7 +116,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="384" column="15" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="384" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__DDCOM_1aeebd993e57bba7e28de88a2e82f8d2a0" prot="public" static="no" mutable="no">
-        <type>Fstring&lt; 10 &gt;</type>
+        <type><ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref>&lt; 10 &gt;</type>
         <definition>Fstring&lt;10&gt; Gambit::DS5_DDCOM::ddfsd</definition>
         <argsstring></argsstring>
         <name>ddfsd</name>
@@ -134,6 +134,34 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 7, 12 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="4">
+        <label>Gambit::Farray&lt; char, 1, len &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="3">
+        <label>Gambit::Fstring&lt; 10 &gt;</label>
+        <link refid="classGambit_1_1Fstring"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::DS5_DDCOM</label>
+        <link refid="structGambit_1_1DS5__DDCOM"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ftn</edgelabel>
+          <edgelabel>ftp</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ddfsd</edgelabel>
+          <edgelabel>ddfsi</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="375" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="376" bodyend="386"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS5__DDCOM_1a88282ac7e7c07170297f0b6cc2f8a16a" prot="public" virt="non-virtual"><scope>Gambit::DS5_DDCOM</scope><name>dddn</name></member>

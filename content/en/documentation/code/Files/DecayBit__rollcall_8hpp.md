@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# DecayBit/DecayBit_rollcall.hpp
 
 
 
@@ -2656,4 +2655,4 @@ QUICK_FUNCTION(DecayBit, chargino_minus_2_decay_rates, NEW_CAPABILITY, chargino_
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:54 +0000

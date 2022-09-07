@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# configs/gm2calc_1_2_0.py
 
 
 
@@ -150,4 +149,4 @@ pragmas_end = [
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:29 +0000
+Updated on 2022-09-07 at 13:49:57 +0000

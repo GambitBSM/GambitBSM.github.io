@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1HDF5BufferBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gambit::Printers::HDF5BufferBase</compoundname>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1HDF5Buffer" prot="public" virt="non-virtual">Gambit::Printers::HDF5Buffer&lt; T &gt;</derivedcompoundref>
+    <includes refid="hdf5printer__v2_8hpp" local="no">hdf5printer_v2.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1aac6694eab66e34b34f5c24cafcdbac71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::HDF5BufferBase::HDF5BufferBase</definition>
+        <argsstring>(const std::string &amp;name, const bool sync)</argsstring>
+        <name>HDF5BufferBase</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::HDF5BufferBase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>sync</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classGambit_1_1Printers_1_1HDF5BufferBase" kindref="compound">HDF5BufferBase</ref> member functions.</para>
+<para>Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="595" column="9" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1ae6e4e8ca6066b1200d7624c8dfc7ea0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::HDF5BufferBase::dset_name</definition>
+        <argsstring>() const</argsstring>
+        <name>dset_name</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::dset_name</qualifiedname>
+        <briefdescription>
+<para>Report name of dataset for which we are the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="601" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="366" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1a8ffc75e411c3b020bb568d824696f0f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::HDF5BufferBase::is_synchronised</definition>
+        <argsstring>() const</argsstring>
+        <name>is_synchronised</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::is_synchronised</qualifiedname>
+        <briefdescription>
+<para>Report whether this buffer is synchronised. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="634" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="372" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1a409af81a0b7f27cdc7297efdeab72b81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &gt;</type>
+        <definition>std::set&lt; PPIDpair &gt; Gambit::Printers::HDF5BufferBase::get_points_set</definition>
+        <argsstring>() const</argsstring>
+        <name>get_points_set</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::get_points_set</qualifiedname>
+        <briefdescription>
+<para>Report all the points in this buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="640" column="18" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="378" bodyend="381"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5BufferBase_1afa1e025170f4c30c445d92919332a26b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::HDF5BufferBase::_dset_name</definition>
+        <argsstring></argsstring>
+        <name>_dset_name</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::_dset_name</qualifiedname>
+        <briefdescription>
+<para>Name of dataset for which this object is the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="648" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5BufferBase_1ad73092648bf585ff40f8d33a0a108eeb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::HDF5BufferBase::synchronised</definition>
+        <argsstring></argsstring>
+        <name>synchronised</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::synchronised</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag to tell us whether this buffer should perform block writes to the output dataset, or look up and overwrite existing points. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="652" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5BufferBase_1a78db701f4a8b9d71867a2d522102bc78" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &gt;</type>
+        <definition>std::set&lt;PPIDpair&gt; Gambit::Printers::HDF5BufferBase::buffer_set</definition>
+        <argsstring></argsstring>
+        <name>buffer_set</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::buffer_set</qualifiedname>
+        <briefdescription>
+<para>Set detailing what points are in the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="657" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5BufferBase_1a7f8fd59c403459bc79eff1670e74398d" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref>, int &gt;</type>
+        <definition>std::map&lt;PPIDpair,int&gt; Gambit::Printers::HDF5BufferBase::buffer_valid</definition>
+        <argsstring></argsstring>
+        <name>buffer_valid</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::buffer_valid</qualifiedname>
+        <briefdescription>
+<para>Buffer specifying whether the data in the primary buffer is &quot;valid&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="660" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="660" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1a2457678fd688fff9129c78977235821f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gambit::Printers::HDF5BufferBase::~HDF5BufferBase</definition>
+        <argsstring>()</argsstring>
+        <name>~HDF5BufferBase</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::~HDF5BufferBase</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="598" column="17" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="598" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1ab46bdd9afeb557535ff35d371fa9d70c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Gambit::Printers::HDF5BufferBase::exists_on_disk</definition>
+        <argsstring>() const =0</argsstring>
+        <name>exists_on_disk</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::exists_on_disk</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1a062765fae9065b3d6591a895b3924318">exists_on_disk</reimplementedby>
+        <briefdescription>
+<para>Report whether the dataset for which we are the buffer is known to exist on disk yet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="604" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1ad4c42172af7ad3c82069dec7a52cbfcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::HDF5BufferBase::update</definition>
+        <argsstring>(const PPIDpair &amp;ppid)=0</argsstring>
+        <name>update</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::update</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1ae43abc3ea0b528c1dcbb622285ac2beb">update</reimplementedby>
+        <param>
+          <type>const <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &amp;</type>
+          <declname>ppid</declname>
+        </param>
+        <briefdescription>
+<para>Make sure buffer includes the input point (data will be set as &apos;invalid&apos; unless given elsewhere) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="607" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1ac84c8c4c0b4c5b4d5195281ad50167c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::HDF5BufferBase::block_flush</definition>
+        <argsstring>(const hid_t loc_id, const std::vector&lt; PPIDpair &gt; &amp;order, const std::size_t target_pos)=0</argsstring>
+        <name>block_flush</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::block_flush</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1a74beba496bfdc2142a5856c51d3d878a">block_flush</reimplementedby>
+        <param>
+          <type>const hid_t</type>
+          <declname>loc_id</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &gt; &amp;</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>target_pos</declname>
+        </param>
+        <briefdescription>
+<para>Empty buffer to disk as a block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="610" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1a843f8f9af239425f903d1d07a7dd0a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::HDF5BufferBase::random_flush</definition>
+        <argsstring>(const hid_t loc_id, const std::map&lt; PPIDpair, std::size_t &gt; &amp;position_map)=0</argsstring>
+        <name>random_flush</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::random_flush</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1ad83e12d7d6b91c378fb7a5dc35da2225">random_flush</reimplementedby>
+        <param>
+          <type>const hid_t</type>
+          <declname>loc_id</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref>, std::size_t &gt; &amp;</type>
+          <declname>position_map</declname>
+        </param>
+        <briefdescription>
+<para>Empty buffer to disk as arbitrarily positioned data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="613" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1ac158fc85c678b77ec90d85bd2c02e169" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; std::vector&lt; double &gt;, std::vector&lt; int &gt; &gt;</type>
+        <definition>virtual std::pair&lt; std::vector&lt; double &gt;, std::vector&lt; int &gt; &gt; Gambit::Printers::HDF5BufferBase::flush_to_vector_dbl</definition>
+        <argsstring>(const std::vector&lt; PPIDpair &gt; &amp;order)=0</argsstring>
+        <name>flush_to_vector_dbl</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::flush_to_vector_dbl</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1adba2e2d3685b338a227fd5e8bc249049">flush_to_vector_dbl</reimplementedby>
+        <param>
+          <type>const std::vector&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &gt; &amp;</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="617" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1ae64b22e289eb696ba9fe0a813da4bf86" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; std::vector&lt; long &gt;, std::vector&lt; int &gt; &gt;</type>
+        <definition>virtual std::pair&lt; std::vector&lt; long &gt;, std::vector&lt; int &gt; &gt; Gambit::Printers::HDF5BufferBase::flush_to_vector_int</definition>
+        <argsstring>(const std::vector&lt; PPIDpair &gt; &amp;order)=0</argsstring>
+        <name>flush_to_vector_int</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::flush_to_vector_int</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1a3842a4e0714c4f619c620522fdb867ab">flush_to_vector_int</reimplementedby>
+        <param>
+          <type>const std::vector&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &gt; &amp;</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="619" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1acf85037a2ca51ee45bad1a2029976192" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::HDF5BufferBase::ensure_dataset_exists</definition>
+        <argsstring>(const hid_t loc_id, const std::size_t length)=0</argsstring>
+        <name>ensure_dataset_exists</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::ensure_dataset_exists</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1a2e0f2ca346a1439945bcd58cf2c25d57">ensure_dataset_exists</reimplementedby>
+        <param>
+          <type>const hid_t</type>
+          <declname>loc_id</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Make sure datasets exist on disk with the correct name and size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="628" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1a1efae39027f737f9e64cd30d93fc11b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::HDF5BufferBase::reset</definition>
+        <argsstring>(hid_t loc_id)=0</argsstring>
+        <name>reset</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::reset</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1afe1cf607cb01eab0eaab0ffe48373fd1">reset</reimplementedby>
+        <param>
+          <type>hid_t</type>
+          <declname>loc_id</declname>
+        </param>
+        <briefdescription>
+<para>Clear all data in memory <emphasis><bold>and on disk</bold></emphasis> for this buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="631" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1ac46b5c28eed3c428ebf5ce888af8a52e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t Gambit::Printers::HDF5BufferBase::N_items_in_buffer</definition>
+        <argsstring>()=0</argsstring>
+        <name>N_items_in_buffer</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::N_items_in_buffer</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1a6118774017573626790bc7330fafa56c">N_items_in_buffer</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="637" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5BufferBase_1a8f10621c2be81e02849ff70b615e9c58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Gambit::Printers::HDF5BufferBase::get_type_id</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_type_id</name>
+        <qualifiedname>Gambit::Printers::HDF5BufferBase::get_type_id</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1HDF5Buffer_1af6c1a05ebe2b6ad899a944185d7c5e46">get_type_id</reimplementedby>
+        <briefdescription>
+<para>Retrieve the integer type ID for this dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="643" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for buffers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::Printers::HDF5Buffer&lt; T &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1HDF5Buffer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::Printers::HDF5BufferBase</label>
+        <link refid="classGambit_1_1Printers_1_1HDF5BufferBase"/>
+      </node>
+    </inheritancegraph>
+    <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="590" column="5" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="591" bodyend="661"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1afa1e025170f4c30c445d92919332a26b" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>_dset_name</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1ac84c8c4c0b4c5b4d5195281ad50167c6" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>block_flush</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1a78db701f4a8b9d71867a2d522102bc78" prot="protected" virt="non-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>buffer_set</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1a7f8fd59c403459bc79eff1670e74398d" prot="protected" virt="non-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>buffer_valid</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1ae6e4e8ca6066b1200d7624c8dfc7ea0c" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>dset_name</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1acf85037a2ca51ee45bad1a2029976192" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>ensure_dataset_exists</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1ab46bdd9afeb557535ff35d371fa9d70c" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>exists_on_disk</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1ac158fc85c678b77ec90d85bd2c02e169" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>flush_to_vector_dbl</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1ae64b22e289eb696ba9fe0a813da4bf86" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>flush_to_vector_int</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1a409af81a0b7f27cdc7297efdeab72b81" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>get_points_set</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1a8f10621c2be81e02849ff70b615e9c58" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>get_type_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1aac6694eab66e34b34f5c24cafcdbac71" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>HDF5BufferBase</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1a8ffc75e411c3b020bb568d824696f0f3" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>is_synchronised</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1ac46b5c28eed3c428ebf5ce888af8a52e" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>N_items_in_buffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1a843f8f9af239425f903d1d07a7dd0a2f" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>random_flush</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1a1efae39027f737f9e64cd30d93fc11b2" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>reset</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1ad73092648bf585ff40f8d33a0a108eeb" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>synchronised</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1ad4c42172af7ad3c82069dec7a52cbfcd" prot="public" virt="pure-virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>update</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5BufferBase_1a2457678fd688fff9129c78977235821f" prot="public" virt="virtual"><scope>Gambit::Printers::HDF5BufferBase</scope><name>~HDF5BufferBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Utils_1_1ProcessLock" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Utils::ProcessLock</compoundname>
+    <basecompoundref refid="classGambit_1_1Utils_1_1FileLock" prot="public" virt="non-virtual">Gambit::Utils::FileLock</basecompoundref>
+    <includes refid="file__lock_8hpp" local="no">file_lock.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1ProcessLock_1a5e8187dd499f7ea7c7195a4135a9468b" prot="private" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Gambit::Utils::ProcessLock::lock_prefix</definition>
+        <argsstring></argsstring>
+        <name>lock_prefix</name>
+        <qualifiedname>Gambit::Utils::ProcessLock::lock_prefix</qualifiedname>
+        <briefdescription>
+<para>Static variable for the lock-file prefix path, i.e. where to store the lock file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Members of <ref refid="classGambit_1_1Utils_1_1ProcessLock" kindref="compound">ProcessLock</ref> class.</para>
+<para>Initialise prefix path name to lock files, and extension </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="88" column="36" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1ProcessLock_1a1816e16bf0add4d44a9cc9131f7f4ac0" prot="private" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Gambit::Utils::ProcessLock::lock_suffix</definition>
+        <argsstring></argsstring>
+        <name>lock_suffix</name>
+        <qualifiedname>Gambit::Utils::ProcessLock::lock_suffix</qualifiedname>
+        <briefdescription>
+<para>Static variable for the lock-file extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="91" column="36" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1ProcessLock_1a7751fcf9d1b1090eef095d5d7b1cb447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Utils::ProcessLock::ProcessLock</definition>
+        <argsstring>(const std::string &amp;fname, const bool harderrs=false)</argsstring>
+        <name>ProcessLock</name>
+        <qualifiedname>Gambit::Utils::ProcessLock::ProcessLock</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>harderrs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="95" column="11" bodyfile="Utils/src/file_lock.cpp" bodystart="210" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to manage a process lock, using a file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::Utils::FileLock</label>
+        <link refid="classGambit_1_1Utils_1_1FileLock"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Utils::ProcessLock</label>
+        <link refid="classGambit_1_1Utils_1_1ProcessLock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Utils::FileLock</label>
+        <link refid="classGambit_1_1Utils_1_1FileLock"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Utils::ProcessLock</label>
+        <link refid="classGambit_1_1Utils_1_1ProcessLock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Utils/include/gambit/Utils/file_lock.hpp" line="84" column="7" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="85" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a8bcce9a6c8168d1cf20ce1dfd751c48a" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>FileLock</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a8a6da1bd087bec267f997d71ba24cb0f" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>get_filename</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a40dc7048003861d5e543f4bf6876f0dd" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>get_lock</name></member>
+      <member refid="classGambit_1_1Utils_1_1ProcessLock_1a5e8187dd499f7ea7c7195a4135a9468b" prot="private" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>lock_prefix</name></member>
+      <member refid="classGambit_1_1Utils_1_1ProcessLock_1a1816e16bf0add4d44a9cc9131f7f4ac0" prot="private" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>lock_suffix</name></member>
+      <member refid="classGambit_1_1Utils_1_1ProcessLock_1a7751fcf9d1b1090eef095d5d7b1cb447" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>ProcessLock</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a69e8e2574575749e13d78b30af04e2fc" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>release_lock</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a4f030db82976cb88db9737456dfb4c42" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>~FileLock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

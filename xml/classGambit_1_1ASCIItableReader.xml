@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1ASCIItableReader" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::ASCIItableReader</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1ASCIItableReader_1a3466667b44979475e97b4437ca9f9a8d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; Gambit::ASCIItableReader::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Gambit::ASCIItableReader::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="74" column="19" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ASCIItableReader_1a68b1d58fe6003874154e5b5799975e11" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, int &gt;</type>
+        <definition>std::map&lt;std::string, int&gt; Gambit::ASCIItableReader::colnames</definition>
+        <argsstring></argsstring>
+        <name>colnames</name>
+        <qualifiedname>Gambit::ASCIItableReader::colnames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="75" column="16" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ASCIItableReader_1a01b6593f9c697b77d19958cc68505743" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::ASCIItableReader::ncol</definition>
+        <argsstring></argsstring>
+        <name>ncol</name>
+        <qualifiedname>Gambit::ASCIItableReader::ncol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="76" column="11" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ASCIItableReader_1ab847ea810c78d45575d90b750a7ca360" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::ASCIItableReader::nrow</definition>
+        <argsstring></argsstring>
+        <name>nrow</name>
+        <qualifiedname>Gambit::ASCIItableReader::nrow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="77" column="11" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1afd615a81aede18f80268c10949ccff2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ASCIItableReader::ASCIItableReader</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>ASCIItableReader</name>
+        <qualifiedname>Gambit::ASCIItableReader::ASCIItableReader</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="42" column="7" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1ac8891f44a72e3e5421d875e3f4393120" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ASCIItableReader::ASCIItableReader</definition>
+        <argsstring>()</argsstring>
+        <name>ASCIItableReader</name>
+        <qualifiedname>Gambit::ASCIItableReader::ASCIItableReader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="48" column="7" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1a2e90d13b656df7ab04ecebcb5e63fa01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ASCIItableReader::~ASCIItableReader</definition>
+        <argsstring>()</argsstring>
+        <name>~ASCIItableReader</name>
+        <qualifiedname>Gambit::ASCIItableReader::~ASCIItableReader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="49" column="7" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1a14ae55c19b85d2c2f0dc4875b259b5fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::ASCIItableReader::read</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>read</name>
+        <qualifiedname>Gambit::ASCIItableReader::read</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="51" column="11" bodyfile="Utils/src/ascii_table_reader.cpp" bodystart="23" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1abde97114ba8afcdbc1f2ccf9a54fd0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ASCIItableReader::setcolnames</definition>
+        <argsstring>(std::vector&lt; std::string &gt; names)</argsstring>
+        <name>setcolnames</name>
+        <qualifiedname>Gambit::ASCIItableReader::setcolnames</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="52" column="12" bodyfile="Utils/src/ascii_table_reader.cpp" bodystart="52" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1a285a88c4269d43d663e19bac093d2d48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::ASCIItableReader::setcolnames</definition>
+        <argsstring>(std::string name, Args... args)</argsstring>
+        <name>setcolnames</name>
+        <qualifiedname>Gambit::ASCIItableReader::setcolnames</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="55" column="12" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="55" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1aa2bf05a1ba0b1311f342c6bf6097d088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::ASCIItableReader::setcolnames</definition>
+        <argsstring>(std::vector&lt; std::string &gt; vec, std::string name, Args... args)</argsstring>
+        <name>setcolnames</name>
+        <qualifiedname>Gambit::ASCIItableReader::setcolnames</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="62" column="12" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="62" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1a6691c6622356ae40e57a81324217fbd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; double &gt; &amp;</type>
+        <definition>const std::vector&lt; double &gt; &amp; Gambit::ASCIItableReader::operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>Gambit::ASCIItableReader::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="68" column="26" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1a5218d34c70359cdf50ddf0c8c745e13c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; double &gt; &amp;</type>
+        <definition>const std::vector&lt; double &gt; &amp; Gambit::ASCIItableReader::operator[]</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>Gambit::ASCIItableReader::operator[]</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="69" column="26" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1a96e9497e65f5d8927d93e5c5e229a663" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::ASCIItableReader::getncol</definition>
+        <argsstring>()</argsstring>
+        <name>getncol</name>
+        <qualifiedname>Gambit::ASCIItableReader::getncol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="70" column="11" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ASCIItableReader_1ae754f90997d51ff41fc6c8581f9a73cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::ASCIItableReader::getnrow</definition>
+        <argsstring>()</argsstring>
+        <name>getnrow</name>
+        <qualifiedname>Gambit::ASCIItableReader::getnrow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="71" column="11" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/ascii_table_reader.hpp" line="39" column="3" bodyfile="Utils/include/gambit/Utils/ascii_table_reader.hpp" bodystart="40" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1ASCIItableReader_1afd615a81aede18f80268c10949ccff2c" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>ASCIItableReader</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1ac8891f44a72e3e5421d875e3f4393120" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>ASCIItableReader</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a68b1d58fe6003874154e5b5799975e11" prot="private" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>colnames</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a3466667b44979475e97b4437ca9f9a8d" prot="private" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>data</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a96e9497e65f5d8927d93e5c5e229a663" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>getncol</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1ae754f90997d51ff41fc6c8581f9a73cd" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>getnrow</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a01b6593f9c697b77d19958cc68505743" prot="private" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>ncol</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1ab847ea810c78d45575d90b750a7ca360" prot="private" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>nrow</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a6691c6622356ae40e57a81324217fbd4" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>operator[]</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a5218d34c70359cdf50ddf0c8c745e13c" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>operator[]</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a14ae55c19b85d2c2f0dc4875b259b5fc" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>read</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1abde97114ba8afcdbc1f2ccf9a54fd0e4" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>setcolnames</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a285a88c4269d43d663e19bac093d2d48" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>setcolnames</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1aa2bf05a1ba0b1311f342c6bf6097d088" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>setcolnames</name></member>
+      <member refid="classGambit_1_1ASCIItableReader_1a2e90d13b656df7ab04ecebcb5e63fa01" prot="public" virt="non-virtual"><scope>Gambit::ASCIItableReader</scope><name>~ASCIItableReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

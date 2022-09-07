@@ -1,0 +1,1095 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1MSSMea" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::MSSMea</compoundname>
+    <basecompoundref refid="classGambit_1_1SLHAeaModel" prot="public" virt="non-virtual">Gambit::SLHAeaModel</basecompoundref>
+    <includes refid="MSSMSimpleSpec_8hpp" local="no">MSSMSimpleSpec.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1aa7e080b89ea16f8d7823d83d5e71ceb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::MSSMea::MSSMea</definition>
+        <argsstring>()</argsstring>
+        <name>MSSMea</name>
+        <qualifiedname>Gambit::MSSMea::MSSMea</qualifiedname>
+        <briefdescription>
+<para>Constructors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Member functions for <ref refid="classGambit_1_1SLHAeaModel" kindref="compound">SLHAeaModel</ref> class.</para>
+<para>Default Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="37" column="12" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ad39b3a336c075d375a8fd39af2a2c342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::MSSMea::MSSMea</definition>
+        <argsstring>(const SLHAstruct &amp;input)</argsstring>
+        <name>MSSMea</name>
+        <qualifiedname>Gambit::MSSMea::MSSMea</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceGambit_1a4df3d966ed9733910719e3497cb886c6" kindref="member">SLHAstruct</ref> &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Constructor via SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>TODO: Currently assumes all blocks at same scale. Should check if this is true.</para>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="38" column="12" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="46" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a76ce5180d55db8a9af8f355a81b3fe2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_Mu</definition>
+        <argsstring>() const</argsstring>
+        <name>get_Mu</name>
+        <qualifiedname>Gambit::MSSMea::get_Mu</qualifiedname>
+        <briefdescription>
+<para>Getters for MSSM information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="42" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a89045ea2fb36564e27eb262395d95d85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_v</definition>
+        <argsstring>() const</argsstring>
+        <name>get_v</name>
+        <qualifiedname>Gambit::MSSMea::get_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="43" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="236" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1aa1cb8843bf9fa22b4416afa3c9519b7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_mA2</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mA2</name>
+        <qualifiedname>Gambit::MSSMea::get_mA2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="44" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="237" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ab4bca2fddfed34d4781dbaee6e120af9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_BMu</definition>
+        <argsstring>() const</argsstring>
+        <name>get_BMu</name>
+        <qualifiedname>Gambit::MSSMea::get_BMu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="45" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="244" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a7022eb9ff0adcdeb1b775a4faefe5691" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_vd</definition>
+        <argsstring>() const</argsstring>
+        <name>get_vd</name>
+        <qualifiedname>Gambit::MSSMea::get_vd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="46" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="251" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a638347a870f1dc80dbfde59237be9429" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_vu</definition>
+        <argsstring>() const</argsstring>
+        <name>get_vu</name>
+        <qualifiedname>Gambit::MSSMea::get_vu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="47" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="257" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ac29b5fd85fb4c995236e96a948314195" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_tanbeta</definition>
+        <argsstring>() const</argsstring>
+        <name>get_tanbeta</name>
+        <qualifiedname>Gambit::MSSMea::get_tanbeta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="48" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="234" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1af6f8e1effa2ff67c2f459913503a37dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_tanbeta_mZ</definition>
+        <argsstring>() const</argsstring>
+        <name>get_tanbeta_mZ</name>
+        <qualifiedname>Gambit::MSSMea::get_tanbeta_mZ</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="49" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a1024610b3830ce3e4d63813e2bcf580d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MassB</definition>
+        <argsstring>() const</argsstring>
+        <name>get_MassB</name>
+        <qualifiedname>Gambit::MSSMea::get_MassB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="51" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="264" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a97313861cac3b9ea4540cf2a37f80ca8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MassWB</definition>
+        <argsstring>() const</argsstring>
+        <name>get_MassWB</name>
+        <qualifiedname>Gambit::MSSMea::get_MassWB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="52" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="265" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a82403cc09fbd92cf563e87a5606f30fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MassG</definition>
+        <argsstring>() const</argsstring>
+        <name>get_MassG</name>
+        <qualifiedname>Gambit::MSSMea::get_MassG</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="53" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="266" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a4b78d19dc85217f7e374fa6e764f98e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_mHd2</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mHd2</name>
+        <qualifiedname>Gambit::MSSMea::get_mHd2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="54" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="267" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a8a7346db3ad8f5b65a82b2bca405153d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_mHu2</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mHu2</name>
+        <qualifiedname>Gambit::MSSMea::get_mHu2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="55" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="268" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1aabd52237205fc7bbbfd5d554cd09e384" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_mq2</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_mq2</name>
+        <qualifiedname>Gambit::MSSMea::get_mq2</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="57" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ab707df93d284b613361414667a48f0f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ml2</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ml2</name>
+        <qualifiedname>Gambit::MSSMea::get_ml2</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="58" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="271" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a5e42a2ee52af1086c8b1ebf90dc9ac5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_md2</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_md2</name>
+        <qualifiedname>Gambit::MSSMea::get_md2</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="59" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="272" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a5c608be2d31042e6b29610e9b4f45a1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_mu2</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_mu2</name>
+        <qualifiedname>Gambit::MSSMea::get_mu2</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="60" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="273" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1aea72f0eea7a0d9563d0ee15597d9f4ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_me2</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_me2</name>
+        <qualifiedname>Gambit::MSSMea::get_me2</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="61" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a8f5e628a3952eff729163d18d12181bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_TYd</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_TYd</name>
+        <qualifiedname>Gambit::MSSMea::get_TYd</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="63" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="276" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a37ff66a64f69f057b1d36c1fcfc31016" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_TYu</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_TYu</name>
+        <qualifiedname>Gambit::MSSMea::get_TYu</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="64" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="277" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ac96413ef048310c2cf69f49e42e57d21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_TYe</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_TYe</name>
+        <qualifiedname>Gambit::MSSMea::get_TYe</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="65" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a056610ccf3f1ae7044b567b9bc7099a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ad</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ad</name>
+        <qualifiedname>Gambit::MSSMea::get_ad</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="67" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="280" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a9243fb508deaa42511a77eb0f8f04f34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_au</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_au</name>
+        <qualifiedname>Gambit::MSSMea::get_au</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="68" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="281" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a2709b017241dab4e0970b46cba58af4e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ae</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ae</name>
+        <qualifiedname>Gambit::MSSMea::get_ae</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="69" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ac32bc7832ae787075013c99023b2f4be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_Yd</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_Yd</name>
+        <qualifiedname>Gambit::MSSMea::get_Yd</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="71" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="284" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a1f86e7b9c21e76b02899a862f47fa672" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_Yu</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_Yu</name>
+        <qualifiedname>Gambit::MSSMea::get_Yu</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="72" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="285" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a1e7666c0fa9abf2943cd39652eeab98d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_Ye</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_Ye</name>
+        <qualifiedname>Gambit::MSSMea::get_Ye</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="73" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="286" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a645c76d4628f6e6ad71a92cc8c764282" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_g1</definition>
+        <argsstring>() const</argsstring>
+        <name>get_g1</name>
+        <qualifiedname>Gambit::MSSMea::get_g1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="75" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="288" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a038a6f804cf557a7bf7366af8b467a6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_g2</definition>
+        <argsstring>() const</argsstring>
+        <name>get_g2</name>
+        <qualifiedname>Gambit::MSSMea::get_g2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="76" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="289" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ac21190cdd1e1c451ed8ad1a4f5270976" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_g3</definition>
+        <argsstring>() const</argsstring>
+        <name>get_g3</name>
+        <qualifiedname>Gambit::MSSMea::get_g3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="77" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="290" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a820b5a56ef31573e89e965a6db2ab7a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_sinthW2_DRbar</definition>
+        <argsstring>() const</argsstring>
+        <name>get_sinthW2_DRbar</name>
+        <qualifiedname>Gambit::MSSMea::get_sinthW2_DRbar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="78" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="291" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a3cbaccdb619bb9085c7e50d444a1197f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MGlu_pole</definition>
+        <argsstring>() const</argsstring>
+        <name>get_MGlu_pole</name>
+        <qualifiedname>Gambit::MSSMea::get_MGlu_pole</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="80" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="297" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ab8777d82fafdc414b49287523f188db4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_Mhh_pole_slha</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>get_Mhh_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_Mhh_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="82" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="299" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1aaf1ddefc1e02ee9a30f534da0d96680a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MAh_pole</definition>
+        <argsstring>() const</argsstring>
+        <name>get_MAh_pole</name>
+        <qualifiedname>Gambit::MSSMea::get_MAh_pole</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="83" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="305" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ad41ac4c19bb696de3be6817c8358a0b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MHpm_pole</definition>
+        <argsstring>() const</argsstring>
+        <name>get_MHpm_pole</name>
+        <qualifiedname>Gambit::MSSMea::get_MHpm_pole</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="84" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="306" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ac413373cfbcd7be15fd3a4ca40fb50e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MW_pole</definition>
+        <argsstring>() const</argsstring>
+        <name>get_MW_pole</name>
+        <qualifiedname>Gambit::MSSMea::get_MW_pole</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="85" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="307" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a154214e5c98a8ddd197e239427343a62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MCha_pole_slha</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>get_MCha_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_MCha_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="87" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="309" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a0dee0b9de1bd405aafbb5d7d486dc670" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MSd_pole_slha</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>get_MSd_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_MSd_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="88" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="315" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a261227282af335b484023dad97d18697" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MSu_pole_slha</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>get_MSu_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_MSu_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="89" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="327" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a26459889298b14e12e4503dc745dc974" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MSe_pole_slha</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>get_MSe_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_MSe_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="90" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="337" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a0e37744b1991b3c76a5ebfe15faf16d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MSv_pole_slha</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>get_MSv_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_MSv_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="91" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="347" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a7e24c2834bf6a011161e710752b64480" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_MChi_pole_slha</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>get_MChi_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_MChi_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="92" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="354" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a9801dd6eb8cfee565ce077c6942d84af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ZD_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ZD_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_ZD_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="95" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="364" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a761987287998034eb6fb5a0254659522" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ZU_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ZU_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_ZU_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="96" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="365" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a29aa6a38beff0d81e23e98303ae8eda4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ZV_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ZV_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_ZV_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="97" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="367" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a56920e48fe99fc428ccdfd4679b89219" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ZE_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ZE_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_ZE_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="98" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="368" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1aecde3b53b403fb95590eef186693a169" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ZH_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ZH_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_ZH_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="99" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="370" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a2356e0fb13991a4acf6196da73aab93c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ZA_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ZA_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_ZA_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="100" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="371" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ac10fa50fd66413218071eb9bf30c6108" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ZP_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ZP_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_ZP_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="101" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="373" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a88a61693c970471a4a19c8d48cc42db7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_ZN_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_ZN_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_ZN_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="102" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="374" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1a73a5632f95be9b5f187279424ba48686" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_UM_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_UM_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_UM_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="103" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="376" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMea_1ac20332a84769041ddfb279c071d3ecca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MSSMea::get_UP_pole_slha</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_UP_pole_slha</name>
+        <qualifiedname>Gambit::MSSMea::get_UP_pole_slha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="104" column="19" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="377" bodyend="377"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Skeleton &quot;model&quot; class which interacts with an SLHAea object Some common functions defined in base class </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::MSSMea</label>
+        <link refid="classGambit_1_1MSSMea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::SLHAeaModel</label>
+        <link refid="classGambit_1_1SLHAeaModel"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::MSSMea</label>
+        <link refid="classGambit_1_1MSSMea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::SLHAeaModel</label>
+        <link refid="classGambit_1_1SLHAeaModel"/>
+      </node>
+    </collaborationgraph>
+    <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="33" column="7" bodyfile="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" bodystart="34" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1SLHAeaModel_1afa562c1962de38efbfadc9db3b9450d1" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>checkdata</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1ad92225e677bbb1355da004cab4647175" prot="protected" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>data</name></member>
+      <member refid="classGambit_1_1MSSMea_1a056610ccf3f1ae7044b567b9bc7099a9" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ad</name></member>
+      <member refid="classGambit_1_1MSSMea_1a2709b017241dab4e0970b46cba58af4e" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ae</name></member>
+      <member refid="classGambit_1_1MSSMea_1a9243fb508deaa42511a77eb0f8f04f34" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_au</name></member>
+      <member refid="classGambit_1_1MSSMea_1ab4bca2fddfed34d4781dbaee6e120af9" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_BMu</name></member>
+      <member refid="classGambit_1_1MSSMea_1a645c76d4628f6e6ad71a92cc8c764282" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_g1</name></member>
+      <member refid="classGambit_1_1MSSMea_1a038a6f804cf557a7bf7366af8b467a6c" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_g2</name></member>
+      <member refid="classGambit_1_1MSSMea_1ac21190cdd1e1c451ed8ad1a4f5270976" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_g3</name></member>
+      <member refid="classGambit_1_1MSSMea_1aa1cb8843bf9fa22b4416afa3c9519b7f" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_mA2</name></member>
+      <member refid="classGambit_1_1MSSMea_1aaf1ddefc1e02ee9a30f534da0d96680a" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MAh_pole</name></member>
+      <member refid="classGambit_1_1MSSMea_1a1024610b3830ce3e4d63813e2bcf580d" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MassB</name></member>
+      <member refid="classGambit_1_1MSSMea_1a82403cc09fbd92cf563e87a5606f30fb" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MassG</name></member>
+      <member refid="classGambit_1_1MSSMea_1a97313861cac3b9ea4540cf2a37f80ca8" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MassWB</name></member>
+      <member refid="classGambit_1_1MSSMea_1a154214e5c98a8ddd197e239427343a62" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MCha_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a7e24c2834bf6a011161e710752b64480" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MChi_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a5e42a2ee52af1086c8b1ebf90dc9ac5f" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_md2</name></member>
+      <member refid="classGambit_1_1MSSMea_1aea72f0eea7a0d9563d0ee15597d9f4ca" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_me2</name></member>
+      <member refid="classGambit_1_1MSSMea_1a3cbaccdb619bb9085c7e50d444a1197f" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MGlu_pole</name></member>
+      <member refid="classGambit_1_1MSSMea_1a4b78d19dc85217f7e374fa6e764f98e4" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_mHd2</name></member>
+      <member refid="classGambit_1_1MSSMea_1ab8777d82fafdc414b49287523f188db4" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_Mhh_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1ad41ac4c19bb696de3be6817c8358a0b4" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MHpm_pole</name></member>
+      <member refid="classGambit_1_1MSSMea_1a8a7346db3ad8f5b65a82b2bca405153d" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_mHu2</name></member>
+      <member refid="classGambit_1_1MSSMea_1ab707df93d284b613361414667a48f0f3" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ml2</name></member>
+      <member refid="classGambit_1_1MSSMea_1aabd52237205fc7bbbfd5d554cd09e384" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_mq2</name></member>
+      <member refid="classGambit_1_1MSSMea_1a0dee0b9de1bd405aafbb5d7d486dc670" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MSd_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a26459889298b14e12e4503dc745dc974" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MSe_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a261227282af335b484023dad97d18697" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MSu_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a0e37744b1991b3c76a5ebfe15faf16d4" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MSv_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a76ce5180d55db8a9af8f355a81b3fe2d" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_Mu</name></member>
+      <member refid="classGambit_1_1MSSMea_1a5c608be2d31042e6b29610e9b4f45a1e" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_mu2</name></member>
+      <member refid="classGambit_1_1MSSMea_1ac413373cfbcd7be15fd3a4ca40fb50e0" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_MW_pole</name></member>
+      <member refid="classGambit_1_1MSSMea_1a820b5a56ef31573e89e965a6db2ab7a8" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_sinthW2_DRbar</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a2895274ac7c78786488cd9975d853064" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_slhaea</name></member>
+      <member refid="classGambit_1_1MSSMea_1ac29b5fd85fb4c995236e96a948314195" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_tanbeta</name></member>
+      <member refid="classGambit_1_1MSSMea_1af6f8e1effa2ff67c2f459913503a37dd" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_tanbeta_mZ</name></member>
+      <member refid="classGambit_1_1MSSMea_1a8f5e628a3952eff729163d18d12181bd" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_TYd</name></member>
+      <member refid="classGambit_1_1MSSMea_1ac96413ef048310c2cf69f49e42e57d21" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_TYe</name></member>
+      <member refid="classGambit_1_1MSSMea_1a37ff66a64f69f057b1d36c1fcfc31016" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_TYu</name></member>
+      <member refid="classGambit_1_1MSSMea_1a73a5632f95be9b5f187279424ba48686" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_UM_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1ac20332a84769041ddfb279c071d3ecca" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_UP_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a89045ea2fb36564e27eb262395d95d85" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_v</name></member>
+      <member refid="classGambit_1_1MSSMea_1a7022eb9ff0adcdeb1b775a4faefe5691" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_vd</name></member>
+      <member refid="classGambit_1_1MSSMea_1a638347a870f1dc80dbfde59237be9429" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_vu</name></member>
+      <member refid="classGambit_1_1MSSMea_1ac32bc7832ae787075013c99023b2f4be" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_Yd</name></member>
+      <member refid="classGambit_1_1MSSMea_1a1e7666c0fa9abf2943cd39652eeab98d" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_Ye</name></member>
+      <member refid="classGambit_1_1MSSMea_1a1f86e7b9c21e76b02899a862f47fa672" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_Yu</name></member>
+      <member refid="classGambit_1_1MSSMea_1a2356e0fb13991a4acf6196da73aab93c" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ZA_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a9801dd6eb8cfee565ce077c6942d84af" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ZD_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a56920e48fe99fc428ccdfd4679b89219" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ZE_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1aecde3b53b403fb95590eef186693a169" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ZH_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a88a61693c970471a4a19c8d48cc42db7" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ZN_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1ac10fa50fd66413218071eb9bf30c6108" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ZP_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a761987287998034eb6fb5a0254659522" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ZU_pole_slha</name></member>
+      <member refid="classGambit_1_1MSSMea_1a29aa6a38beff0d81e23e98303ae8eda4" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>get_ZV_pole_slha</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a3718c7cd45bcf7719bd30b730271084b" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>getdata</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1aa1d27d5a68d75aa15a4c6e827c3e9ea0" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>getdata</name></member>
+      <member refid="classGambit_1_1MSSMea_1aa7e080b89ea16f8d7823d83d5e71ceb8" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>MSSMea</name></member>
+      <member refid="classGambit_1_1MSSMea_1ad39b3a336c075d375a8fd39af2a2c342" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>MSSMea</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1adb4978147f85098395997ab2ffd9885e" prot="protected" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>PDG_translation_map</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a82da4bab3116d664d0ec4670d6653cd7" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>PDG_translator</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a44596fe182c61ecffd749827b78f74d3" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>slha_version</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1ab9e5626476dd8ced7f1d4761e013eed0" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>SLHAeaModel</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a5c4c217993ff7f64abe91b787d45ed2c" prot="public" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>SLHAeaModel</name></member>
+      <member refid="classGambit_1_1SLHAeaModel_1a45046321377d3c209ecaddbef0d8a747" prot="protected" virt="non-virtual"><scope>Gambit::MSSMea</scope><name>wrapped_slha_version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1BasePrinterManager" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gambit::Printers::BasePrinterManager</compoundname>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1PrinterManager" prot="public" virt="non-virtual">Gambit::Printers::PrinterManager</derivedcompoundref>
+    <includes refid="baseprintermanager_8hpp" local="no">baseprintermanager.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1BasePrinterManager_1a1982b7ea545d91e9ed839f075d84589d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::BasePrinterManager::resume</definition>
+        <argsstring></argsstring>
+        <name>resume</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::resume</qualifiedname>
+        <briefdescription>
+<para>Flag for &quot;resume&quot; mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="41" column="14" bodyfile="Printers/include/gambit/Printers/baseprintermanager.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1a4572a1da5e2a2fddb1789b7c97366e24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::BasePrinterManager::BasePrinterManager</definition>
+        <argsstring>()</argsstring>
+        <name>BasePrinterManager</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::BasePrinterManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="44" column="9" bodyfile="Printers/include/gambit/Printers/baseprintermanager.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1a366b97a0e8ddb308f3ca1aa5c472d752" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::BasePrinterManager::BasePrinterManager</definition>
+        <argsstring>(bool r)</argsstring>
+        <name>BasePrinterManager</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::BasePrinterManager</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="45" column="9" bodyfile="Printers/include/gambit/Printers/baseprintermanager.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1af088d15880482f31233ea03d98a3a0ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::BasePrinterManager::resume_mode</definition>
+        <argsstring>()</argsstring>
+        <name>resume_mode</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::resume_mode</qualifiedname>
+        <briefdescription>
+<para>Getter for &quot;resume&quot; mode flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="48" column="14" bodyfile="Printers/include/gambit/Printers/baseprintermanager.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1a63795ad130e6e0c88ca6780886f4a8e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::BasePrinterManager::set_resume_mode</definition>
+        <argsstring>(bool rflag)</argsstring>
+        <name>set_resume_mode</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::set_resume_mode</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>rflag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for &quot;resume&quot; mode flag (printer may override user choice if no previous output exists) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="52" column="14" bodyfile="Printers/include/gambit/Printers/baseprintermanager.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1a829371014603c1e98635222b735b3bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinterManager::new_stream</definition>
+        <argsstring>(const std::string &amp;, const Options &amp;)=0</argsstring>
+        <name>new_stream</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::new_stream</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1a659699b17c899ae4cf322e941728cca6">new_stream</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Create auxiliary printer object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="55" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1aa7a7a4a9b090820fa1c3bb57ee83a0a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinterManager::new_reader</definition>
+        <argsstring>(const std::string &amp;, const Options &amp;)=0</argsstring>
+        <name>new_reader</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::new_reader</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1a2039fb58edd33bf0e2131c93461d9f12">new_reader</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Create reader object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="58" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1af7add450ae11e22cf624b3867d8a559e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinterManager::create_resume_reader</definition>
+        <argsstring>()=0</argsstring>
+        <name>create_resume_reader</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::create_resume_reader</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1aeb4bc901ce22c488498ff68ea260e105">create_resume_reader</reimplementedby>
+        <briefdescription>
+<para>Create for reader object for previous print output (&quot;resume reader&quot;) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="61" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1ab4eb9bb6ce046a6319a211c9698f2e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">BaseBasePrinter</ref> *</type>
+        <definition>virtual BaseBasePrinter * Gambit::Printers::BasePrinterManager::get_stream</definition>
+        <argsstring>(const std::string &amp;=&quot;&quot;)=0</argsstring>
+        <name>get_stream</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::get_stream</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1aa09036d2677b189fbd02b730c3a6a2ab">get_stream</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Getter for auxiliary printer objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="64" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1a8897de7bafb3ec0692d8981dd1c6af55" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classGambit_1_1Printers_1_1BaseBaseReader" kindref="compound">BaseBaseReader</ref> *</type>
+        <definition>virtual BaseBaseReader * Gambit::Printers::BasePrinterManager::get_reader</definition>
+        <argsstring>(const std::string &amp;)=0</argsstring>
+        <name>get_reader</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::get_reader</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1ad97cfc210c1afb7f95dec953de96f8b4">get_reader</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Getter for readers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="67" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1aa3ce0e8bb60345d7319e9fb4148e5d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Gambit::Printers::BasePrinterManager::reader_exists</definition>
+        <argsstring>(const std::string &amp;)=0</argsstring>
+        <name>reader_exists</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::reader_exists</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1a47d75f6e6034ab62ac6a0519a0f67118">reader_exists</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Checker for reader existence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="70" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1a430493762c79d45b7494955414dd8ca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinterManager::delete_stream</definition>
+        <argsstring>(const std::string &amp;=&quot;&quot;)=0</argsstring>
+        <name>delete_stream</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::delete_stream</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1a9504ade778cfbcc0da194cda000154d8">delete_stream</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Delete reader and printer objects (does not harm output, just deletes the objects) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="73" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1a0ae8035076fd88a7ae013b5748ac6b43" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinterManager::delete_reader</definition>
+        <argsstring>(const std::string &amp;)=0</argsstring>
+        <name>delete_reader</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::delete_reader</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1a61e933b6ed3df86cb84de7c566f34b86">delete_reader</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="74" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinterManager_1aa3cb9794473509f077f4055ad733eb68" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::BasePrinterManager::finalise</definition>
+        <argsstring>(bool abnormal=false)=0</argsstring>
+        <name>finalise</name>
+        <qualifiedname>Gambit::Printers::BasePrinterManager::finalise</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1PrinterManager_1a636e1baba947dc105f4417136029369a">finalise</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>abnormal</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Instruct printers that scan has finished and to perform cleanup. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="77" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manager class for creating printer objects <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::Printers::BasePrinterManager</label>
+        <link refid="classGambit_1_1Printers_1_1BasePrinterManager"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Printers::PrinterManager</label>
+        <link refid="classGambit_1_1Printers_1_1PrinterManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Printers/include/gambit/Printers/baseprintermanager.hpp" line="37" column="5" bodyfile="Printers/include/gambit/Printers/baseprintermanager.hpp" bodystart="38" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1a4572a1da5e2a2fddb1789b7c97366e24" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>BasePrinterManager</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1a366b97a0e8ddb308f3ca1aa5c472d752" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>BasePrinterManager</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1af7add450ae11e22cf624b3867d8a559e" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>create_resume_reader</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1a0ae8035076fd88a7ae013b5748ac6b43" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>delete_reader</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1a430493762c79d45b7494955414dd8ca9" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>delete_stream</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa3cb9794473509f077f4055ad733eb68" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>finalise</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1a8897de7bafb3ec0692d8981dd1c6af55" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>get_reader</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1ab4eb9bb6ce046a6319a211c9698f2e34" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>get_stream</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa7a7a4a9b090820fa1c3bb57ee83a0a9" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>new_reader</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1a829371014603c1e98635222b735b3bed" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>new_stream</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1aa3ce0e8bb60345d7319e9fb4148e5d51" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>reader_exists</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1a1982b7ea545d91e9ed839f075d84589d" prot="private" virt="non-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>resume</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1af088d15880482f31233ea03d98a3a0ec" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>resume_mode</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinterManager_1a63795ad130e6e0c88ca6780886f4a8e5" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinterManager</scope><name>set_resume_mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

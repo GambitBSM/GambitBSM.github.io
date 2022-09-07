@@ -29,7 +29,7 @@
         <name>gambit_registry</name>
         <qualifiedname>Gambit::Priors::gambit_registry</qualifiedname>
         <initializer>{ 
-            typedef <ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref>* create_prior_function(const std::vector&lt;std::string&gt; &amp;, const Options &amp;)</initializer>
+            typedef <ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref>* create_prior_function(const std::vector&lt;std::string&gt; &amp;, const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -39,7 +39,7 @@
         <location file="ScannerBit/include/gambit/ScannerBit/priors.hpp" line="40" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/priors.hpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="priors_8hpp_1ada5f519033776e4479010d9cbeb7dd3e" prot="public" static="no" mutable="no">
-        <type>reg_elem&lt; create_prior_function &gt;</type>
+        <type><ref refid="classGambit_1_1reg__elem" kindref="compound">reg_elem</ref>&lt; create_prior_function &gt;</type>
         <definition>reg_elem&lt;create_prior_function&gt; Gambit::Priors::prior_creators</definition>
         <argsstring></argsstring>
         <name>prior_creators</name>

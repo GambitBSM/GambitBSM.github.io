@@ -4,8 +4,7 @@ description: 'A class to contain the limit data from ALEPH_PLB526_2002_206, figu
 
 ---
 
-
-
+# Gambit::ColliderBit::ALEPHSmuonLimitAt208GeV
 
 
 
@@ -98,4 +97,4 @@ ALEPHSmuonLimitAt208GeV()
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

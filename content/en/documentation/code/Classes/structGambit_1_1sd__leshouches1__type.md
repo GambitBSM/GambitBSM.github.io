@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::sd_leshouches1_type
 
 
 
@@ -18,13 +17,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fstring< 100 > | **[spinfo1](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-spinfo1)**  |
-| Fstring< 100 > | **[spinfo2](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-spinfo2)**  |
-| Fstring< 100 > | **[modselval](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-modselval)**  |
-| Fstring< 20 > | **[mincom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-mincom)**  |
-| Fstring< 20 > | **[extcom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-extcom)**  |
-| Fstring< 20 > | **[softcom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-softcom)**  |
-| Fstring< 20 > | **[hmixcom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-hmixcom)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 100 > | **[spinfo1](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-spinfo1)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 100 > | **[spinfo2](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-spinfo2)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 100 > | **[modselval](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-modselval)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 20 > | **[mincom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-mincom)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 20 > | **[extcom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-extcom)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 20 > | **[softcom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-softcom)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 20 > | **[hmixcom](/documentation/code/classes/structgambit_1_1sd__leshouches1__type/#variable-hmixcom)**  |
 
 ## Public Attributes Documentation
 
@@ -79,4 +78,4 @@ Fstring< 20 > hmixcom;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

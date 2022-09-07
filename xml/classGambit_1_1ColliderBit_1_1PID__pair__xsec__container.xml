@@ -6,7 +6,7 @@
     <includes refid="xsec_8hpp" local="no">xsec.hpp</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1PID__pair__xsec__container_1af63cb7f858ae0386375dd8694780fcda" prot="private" static="no" mutable="no">
-        <type>PID_pair</type>
+        <type><ref refid="classGambit_1_1PID__pair" kindref="compound">PID_pair</ref></type>
         <definition>PID_pair Gambit::ColliderBit::PID_pair_xsec_container::_pid_pair</definition>
         <argsstring></argsstring>
         <name>_pid_pair</name>
@@ -20,7 +20,7 @@
         <location file="ColliderBit/include/gambit/ColliderBit/xsec.hpp" line="234" column="18" bodyfile="ColliderBit/include/gambit/ColliderBit/xsec.hpp" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1PID__pair__xsec__container_1af9e99ece1811387005717ee7e625592e" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; PID_pair &gt;</type>
+        <type>std::vector&lt; <ref refid="classGambit_1_1PID__pair" kindref="compound">PID_pair</ref> &gt;</type>
         <definition>std::vector&lt;PID_pair&gt; Gambit::ColliderBit::PID_pair_xsec_container::_pid_pairs_sharing_xsec</definition>
         <argsstring></argsstring>
         <name>_pid_pairs_sharing_xsec</name>
@@ -178,7 +178,7 @@
         <location file="ColliderBit/include/gambit/ColliderBit/xsec.hpp" line="211" column="14" bodyfile="ColliderBit/src/xsec.cpp" bodystart="421" bodyend="430"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1PID__pair__xsec__container_1a9dd72c1a57b1b43bc28d34ef0ef34363" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const PID_pair &amp;</type>
+        <type>const <ref refid="classGambit_1_1PID__pair" kindref="compound">PID_pair</ref> &amp;</type>
         <definition>const PID_pair &amp; Gambit::ColliderBit::PID_pair_xsec_container::pid_pair</definition>
         <argsstring>() const</argsstring>
         <name>pid_pair</name>
@@ -199,7 +199,7 @@
         <name>set_pid_pair</name>
         <qualifiedname>Gambit::ColliderBit::PID_pair_xsec_container::set_pid_pair</qualifiedname>
         <param>
-          <type>const PID_pair &amp;</type>
+          <type>const <ref refid="classGambit_1_1PID__pair" kindref="compound">PID_pair</ref> &amp;</type>
           <defname>pid_pair_in</defname>
         </param>
         <briefdescription>
@@ -212,7 +212,7 @@
         <location file="ColliderBit/include/gambit/ColliderBit/xsec.hpp" line="217" column="14" bodyfile="ColliderBit/src/xsec.cpp" bodystart="437" bodyend="438"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1PID__pair__xsec__container_1ac0ed549c71a76ea05b9c82cced8eba3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::vector&lt; PID_pair &gt; &amp;</type>
+        <type>const std::vector&lt; <ref refid="classGambit_1_1PID__pair" kindref="compound">PID_pair</ref> &gt; &amp;</type>
         <definition>const std::vector&lt; PID_pair &gt; &amp; Gambit::ColliderBit::PID_pair_xsec_container::pid_pairs_sharing_xsec</definition>
         <argsstring>() const</argsstring>
         <name>pid_pairs_sharing_xsec</name>
@@ -233,7 +233,7 @@
         <name>register_pid_pair_sharing_xsec</name>
         <qualifiedname>Gambit::ColliderBit::PID_pair_xsec_container::register_pid_pair_sharing_xsec</qualifiedname>
         <param>
-          <type>PID_pair</type>
+          <type><ref refid="classGambit_1_1PID__pair" kindref="compound">PID_pair</ref></type>
           <defname>pid_pair_in</defname>
         </param>
         <briefdescription>

@@ -4,8 +4,7 @@ description: 'Specialisation of traits class needed to inform base spectrum clas
 
 ---
 
-
-
+# Gambit::SpecTraits< SpecBit::QedQcdWrapper >
 
 
 
@@ -20,9 +19,9 @@ Specialisation of traits class needed to inform base spectrum class of the Model
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef SpectrumContents::SM | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-contents)**  |
+| typedef [SpectrumContents::SM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1sm/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-contents)**  |
 | typedef softsusy::QedQcd | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-model)**  |
-| typedef SMInputs | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-input)**  |
+| typedef [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1qedqcdwrapper_01_4/#typedef-input)**  |
 
 ## Public Functions
 
@@ -64,4 +63,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

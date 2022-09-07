@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::CosmoBit::Parametrised_ps
 
 
 
@@ -31,7 +30,7 @@ description: "[No description available]"
 | double | **[get_n_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-n-s)**() |
 | double | **[get_ln10A_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-ln10a-s)**() |
 | double | **[get_r](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-r)**() |
-| map_str_dbl | **[get_parametrised_ps_map](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-parametrised-ps-map)**()<br>return members as str to double map for printing  |
+| [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) | **[get_parametrised_ps_map](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-parametrised-ps-map)**()<br>return members as str to double map for printing  |
 
 ## Detailed Description
 
@@ -136,4 +135,4 @@ return members as str to double map for printing
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

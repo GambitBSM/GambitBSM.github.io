@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::sd_snel2body_type
 
 
 
@@ -18,8 +17,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brsnellneut](/documentation/code/classes/structgambit_1_1sd__snel2body__type/#variable-brsnellneut)**  |
-| Farray< Fdouble, 1, 4 > | **[brsnellchar](/documentation/code/classes/structgambit_1_1sd__snel2body__type/#variable-brsnellchar)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsnellneut](/documentation/code/classes/structgambit_1_1sd__snel2body__type/#variable-brsnellneut)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsnellchar](/documentation/code/classes/structgambit_1_1sd__snel2body__type/#variable-brsnellchar)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +38,4 @@ Farray< Fdouble, 1, 4 > brsnellchar;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

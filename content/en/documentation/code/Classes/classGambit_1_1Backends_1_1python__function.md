@@ -4,8 +4,7 @@ description: 'Holds the info about a python backend function, and defines conver
 
 ---
 
-
-
+# Gambit::Backends::python_function
 
 
 
@@ -20,7 +19,7 @@ Holds the info about a python backend function, and defines conversion functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[python_function](/documentation/code/classes/classgambit_1_1backends_1_1python__function/#function-python-function)**(const str & , const str & , const str & )<br>Constructor.  |
+| | **[python_function](/documentation/code/classes/classgambit_1_1backends_1_1python__function/#function-python-function)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & , const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & , const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & )<br>Constructor.  |
 | TYPE | **[operator()](/documentation/code/classes/classgambit_1_1backends_1_1python__function/#function-operator)**(ARGS && ...)<br>Operation (execute function and return value)  |
 
 ## Detailed Description
@@ -58,4 +57,4 @@ Operation (execute function and return value)
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

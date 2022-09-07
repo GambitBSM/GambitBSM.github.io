@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::NeutrinoBit
 
 
 
@@ -105,7 +104,7 @@ description: "[No description available]"
 | void | **[lnL_mbb_0nubb_KamLAND_Zen](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-lnl-mbb-0nubb-kamland-zen)**(double & result) |
 | void | **[lnL_mbb_0nubb_GERDA](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-lnl-mbb-0nubb-gerda)**(double & result) |
 | void | **[lnL_mbb_0nubb](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-lnl-mbb-0nubb)**(double & result) |
-| void | **[fill_ckm_exp](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-fill-ckm-exp)**(Matrix3cd & Theta, double GF, triplet< double >(&) Vus_exp[8], triplet< double > & Vud_exp, double(&) f[8]) |
+| void | **[fill_ckm_exp](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-fill-ckm-exp)**(Matrix3cd & Theta, double GF, [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double >(&) Vus_exp[8], [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & Vud_exp, double(&) f[8]) |
 | void | **[calc_Vus](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-calc-vus)**(double & result_Vus) |
 | void | **[lnL_ckm_Vusmin](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-lnl-ckm-vusmin)**(double & result_ckm) |
 | void | **[lnL_ckm_Vus](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-lnl-ckm-vus)**(double & result_ckm) |
@@ -1266,4 +1265,4 @@ void coupling_slide(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

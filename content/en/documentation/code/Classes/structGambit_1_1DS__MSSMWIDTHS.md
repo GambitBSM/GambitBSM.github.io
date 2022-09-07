@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS_MSSMWIDTHS
 
 
 
@@ -18,7 +17,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 32, 1, 4 > | **[hdwidth](/documentation/code/classes/structgambit_1_1ds__mssmwidths/#variable-hdwidth)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 32, 1, 4 > | **[hdwidth](/documentation/code/classes/structgambit_1_1ds__mssmwidths/#variable-hdwidth)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +30,4 @@ Farray< Fdouble, 1, 32, 1, 4 > hdwidth;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

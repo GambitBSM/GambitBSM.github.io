@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1WIMP__annihilation" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::WIMP_annihilation</compoundname>
+    <includes refid="wimp__types_8hpp" local="no">wimp_types.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1WIMP__annihilation_1acae84acf629f789db799498e49bbf5c4" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string,double&gt; Gambit::WIMP_annihilation::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>Gambit::WIMP_annihilation::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/wimp_types.hpp" line="52" column="22" bodyfile="Elements/include/gambit/Elements/wimp_types.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1WIMP__annihilation_1a415ea670d36ad096e5d5ad49a1b9eae4" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string,double&gt; Gambit::WIMP_annihilation::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>Gambit::WIMP_annihilation::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/wimp_types.hpp" line="53" column="22" bodyfile="Elements/include/gambit/Elements/wimp_types.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1WIMP__annihilation_1af71084ce4972fc1631d2bb09b52bb7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::WIMP_annihilation::WIMP_annihilation</definition>
+        <argsstring>()</argsstring>
+        <name>WIMP_annihilation</name>
+        <qualifiedname>Gambit::WIMP_annihilation::WIMP_annihilation</qualifiedname>
+        <briefdescription>
+<para>Set up generic parameterisation of WIMP self-annihilation cross-section (A + Bv^2) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/wimp_types.hpp" line="45" column="13" bodyfile="Elements/src/wimp_types.cpp" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1WIMP__annihilation_1ae584187323e0d19291d7abe73b201794" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::WIMP_annihilation::A</definition>
+        <argsstring>(const std::string &amp;channel) const</argsstring>
+        <name>A</name>
+        <qualifiedname>Gambit::WIMP_annihilation::A</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/wimp_types.hpp" line="46" column="20" bodyfile="Elements/src/wimp_types.cpp" bodystart="27" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1WIMP__annihilation_1a0d4f73d9592d8f4e0d875c2fbda78ec3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::WIMP_annihilation::B</definition>
+        <argsstring>(const std::string &amp;channel) const</argsstring>
+        <name>B</name>
+        <qualifiedname>Gambit::WIMP_annihilation::B</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/wimp_types.hpp" line="47" column="20" bodyfile="Elements/src/wimp_types.cpp" bodystart="42" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1WIMP__annihilation_1a5079b1f225321491a71395db433f3f2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::WIMP_annihilation::setA</definition>
+        <argsstring>(const std::string &amp;channel, double val)</argsstring>
+        <name>setA</name>
+        <qualifiedname>Gambit::WIMP_annihilation::setA</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/wimp_types.hpp" line="49" column="18" bodyfile="Elements/src/wimp_types.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1WIMP__annihilation_1aa3a9aace8494d3f6e994beff974f1249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::WIMP_annihilation::setB</definition>
+        <argsstring>(const std::string &amp;channel, double val)</argsstring>
+        <name>setB</name>
+        <qualifiedname>Gambit::WIMP_annihilation::setB</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/wimp_types.hpp" line="50" column="18" bodyfile="Elements/src/wimp_types.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contain for generic parameterisation of WIMP annihilation to various two-body final states, with &lt;sigma v&gt; expanded as a simple power series in v^2 </para>
+    </detaileddescription>
+    <location file="Elements/include/gambit/Elements/wimp_types.hpp" line="42" column="5" bodyfile="Elements/include/gambit/Elements/wimp_types.hpp" bodystart="43" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1WIMP__annihilation_1acae84acf629f789db799498e49bbf5c4" prot="private" virt="non-virtual"><scope>Gambit::WIMP_annihilation</scope><name>a</name></member>
+      <member refid="classGambit_1_1WIMP__annihilation_1ae584187323e0d19291d7abe73b201794" prot="public" virt="non-virtual"><scope>Gambit::WIMP_annihilation</scope><name>A</name></member>
+      <member refid="classGambit_1_1WIMP__annihilation_1a415ea670d36ad096e5d5ad49a1b9eae4" prot="private" virt="non-virtual"><scope>Gambit::WIMP_annihilation</scope><name>b</name></member>
+      <member refid="classGambit_1_1WIMP__annihilation_1a0d4f73d9592d8f4e0d875c2fbda78ec3" prot="public" virt="non-virtual"><scope>Gambit::WIMP_annihilation</scope><name>B</name></member>
+      <member refid="classGambit_1_1WIMP__annihilation_1a5079b1f225321491a71395db433f3f2f" prot="public" virt="non-virtual"><scope>Gambit::WIMP_annihilation</scope><name>setA</name></member>
+      <member refid="classGambit_1_1WIMP__annihilation_1aa3a9aace8494d3f6e994beff974f1249" prot="public" virt="non-virtual"><scope>Gambit::WIMP_annihilation</scope><name>setB</name></member>
+      <member refid="classGambit_1_1WIMP__annihilation_1af71084ce4972fc1631d2bb09b52bb7ca" prot="public" virt="non-virtual"><scope>Gambit::WIMP_annihilation</scope><name>WIMP_annihilation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

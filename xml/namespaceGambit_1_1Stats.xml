@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1Stats" kind="namespace" language="C++">
+    <compoundname>Gambit::Stats</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="statistics_8cpp_1a1d8c4519274adbe830be05269455e390" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Gambit::Stats::logmin</definition>
+        <argsstring></argsstring>
+        <name>logmin</name>
+        <qualifiedname>Gambit::Stats::logmin</qualifiedname>
+        <initializer>= log(std::numeric_limits&lt;double&gt;::min())</initializer>
+        <briefdescription>
+<para>Minimum finite result returnable from log(double x);. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/statistics.cpp" line="37" column="18" bodyfile="Utils/src/statistics.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="statistics_8hpp_1a7d34b3a9820b36e2af9df6d0db6ec036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Stats::gaussian_loglikelihood</definition>
+        <argsstring>(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)</argsstring>
+        <name>gaussian_loglikelihood</name>
+        <qualifiedname>Gambit::Stats::gaussian_loglikelihood</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>theory</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>theoryerr</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obserr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>profile_systematics</declname>
+        </param>
+        <briefdescription>
+<para>Use a detection to compute a simple chi-square-like log likelihood, for the case when obs is Gaussian distributed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/statistics.cpp" line="133" column="12" bodyfile="Utils/src/statistics.cpp" bodystart="133" bodyend="150" declfile="Utils/include/gambit/Utils/statistics.hpp" declline="27" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="statistics_8hpp_1ab5fa9e98b654544279e223dc9de13151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Stats::lognormal_loglikelihood</definition>
+        <argsstring>(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)</argsstring>
+        <name>lognormal_loglikelihood</name>
+        <qualifiedname>Gambit::Stats::lognormal_loglikelihood</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>theory</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>theoryerr</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obserr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>profile_systematics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use a detection to compute a simple chi-square-like log likelihood, for the case when obs is log-normal distributed. Version that takes absolute errors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/statistics.cpp" line="154" column="12" bodyfile="Utils/src/statistics.cpp" bodystart="154" bodyend="157" declfile="Utils/include/gambit/Utils/statistics.hpp" declline="31" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="statistics_8hpp_1aafb7b4367bb68f2ebf908ad35fbbbefa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Stats::lognormal_loglikelihood_relerror</definition>
+        <argsstring>(double theory, double obs, double reltheoryerr, double relobserr, bool profile_systematics)</argsstring>
+        <name>lognormal_loglikelihood_relerror</name>
+        <qualifiedname>Gambit::Stats::lognormal_loglikelihood_relerror</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>theory</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>reltheoryerr</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>relobserr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>profile_systematics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use a detection to compute a simple chi-square-like log likelihood, for the case when obs is log-normal distributed. Version that takes fractional (relative) errors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/statistics.cpp" line="161" column="12" bodyfile="Utils/src/statistics.cpp" bodystart="161" bodyend="181" declfile="Utils/include/gambit/Utils/statistics.hpp" declline="35" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="statistics_8hpp_1adc81232209fc202af5b27415da78e5a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Stats::gaussian_upper_limit</definition>
+        <argsstring>(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)</argsstring>
+        <name>gaussian_upper_limit</name>
+        <qualifiedname>Gambit::Stats::gaussian_upper_limit</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>theory</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>theoryerr</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obserr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>profile_systematics</declname>
+        </param>
+        <briefdescription>
+<para>Use a detection to compute a gaussian log-likelihood for an upper limit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/statistics.cpp" line="184" column="12" bodyfile="Utils/src/statistics.cpp" bodystart="184" bodyend="218" declfile="Utils/include/gambit/Utils/statistics.hpp" declline="38" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="statistics_8hpp_1a6315d72884dc84324cb1a17f8191f08e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Stats::gaussian_lower_limit</definition>
+        <argsstring>(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)</argsstring>
+        <name>gaussian_lower_limit</name>
+        <qualifiedname>Gambit::Stats::gaussian_lower_limit</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>theory</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>theoryerr</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>obserr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>profile_systematics</declname>
+        </param>
+        <briefdescription>
+<para>Use a detection to compute a gaussian log-likelihood for a lower limit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/statistics.cpp" line="221" column="12" bodyfile="Utils/src/statistics.cpp" bodystart="221" bodyend="224" declfile="Utils/include/gambit/Utils/statistics.hpp" declline="41" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="statistics_8cpp_1a5e32f0afe24f39ef82bf970bea6635da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Stats::test_likelihoods</definition>
+        <argsstring>()</argsstring>
+        <name>test_likelihoods</name>
+        <qualifiedname>Gambit::Stats::test_likelihoods</qualifiedname>
+        <briefdescription>
+<para>A simple tester routine for the likelihood functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/statistics.cpp" line="40" column="10" bodyfile="Utils/src/statistics.cpp" bodystart="40" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/statistics.hpp" line="23" column="3"/>
+  </compounddef>
+</doxygen>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS5_MSPCTM
 
 
 
@@ -18,8 +17,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 0, 50 > | **[mass](/documentation/code/classes/structgambit_1_1ds5__mspctm/#variable-mass)**  |
-| Farray< Fdouble, 0, 50 > | **[runnmann](/documentation/code/classes/structgambit_1_1ds5__mspctm/#variable-runnmann)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 0, 50 > | **[mass](/documentation/code/classes/structgambit_1_1ds5__mspctm/#variable-mass)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 0, 50 > | **[runnmann](/documentation/code/classes/structgambit_1_1ds5__mspctm/#variable-runnmann)**  |
 | Fdouble | **[mu2gev](/documentation/code/classes/structgambit_1_1ds5__mspctm/#variable-mu2gev)**  |
 | Fdouble | **[md2gev](/documentation/code/classes/structgambit_1_1ds5__mspctm/#variable-md2gev)**  |
 | Fdouble | **[ms2gev](/documentation/code/classes/structgambit_1_1ds5__mspctm/#variable-ms2gev)**  |
@@ -87,4 +86,4 @@ Fdouble mtmt;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

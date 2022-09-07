@@ -1,0 +1,1218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1table__formatter" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::table_formatter</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1accea8fb8591fc5faff3fc8f4eee22f9c" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Gambit::table_formatter::col_num</definition>
+        <argsstring></argsstring>
+        <name>col_num</name>
+        <qualifiedname>Gambit::table_formatter::col_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="118" column="19" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a68af5ac1409e7e12e7d64359a24ac783" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::table_formatter::col</definition>
+        <argsstring></argsstring>
+        <name>col</name>
+        <qualifiedname>Gambit::table_formatter::col</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="119" column="13" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a790f828a1884686ad3a63c46c8f1e4c9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::table_formatter::row</definition>
+        <argsstring></argsstring>
+        <name>row</name>
+        <qualifiedname>Gambit::table_formatter::row</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="120" column="13" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a762ec06bde8c892f939583150f936b05" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::table_formatter::pad</definition>
+        <argsstring></argsstring>
+        <name>pad</name>
+        <qualifiedname>Gambit::table_formatter::pad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="121" column="13" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a5e345fcfe1bb02a2ba514bc1865ddf0b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::table_formatter::wrap</definition>
+        <argsstring></argsstring>
+        <name>wrap</name>
+        <qualifiedname>Gambit::table_formatter::wrap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="122" column="14" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a098ec90a588b0dc8792ed580abf70ecb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::table_formatter::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <qualifiedname>Gambit::table_formatter::top</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="123" column="14" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1ad08bcdb458d5bec295961ca8c3a105d1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::table_formatter::bottom</definition>
+        <argsstring></argsstring>
+        <name>bottom</name>
+        <qualifiedname>Gambit::table_formatter::bottom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="124" column="14" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a372b14d3da711d1596b72b98d3aabf05" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Gambit::table_formatter::defaultWidths</definition>
+        <argsstring></argsstring>
+        <name>defaultWidths</name>
+        <qualifiedname>Gambit::table_formatter::defaultWidths</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="125" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1ac8ede43ca1d2ff6c4b18cfdd8f0dda68" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Gambit::table_formatter::minWidths</definition>
+        <argsstring></argsstring>
+        <name>minWidths</name>
+        <qualifiedname>Gambit::table_formatter::minWidths</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="126" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a13247b4885b23da6964b44b983001101" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::string&gt; &gt; Gambit::table_formatter::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Gambit::table_formatter::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="127" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a0d2943f8aec079802dd4060b31b7826a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::string&gt; &gt; Gambit::table_formatter::titles</definition>
+        <argsstring></argsstring>
+        <name>titles</name>
+        <qualifiedname>Gambit::table_formatter::titles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="128" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1ae4c791351af76b083beffafee1987b60" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; int, int &gt;, unsigned char &gt;</type>
+        <definition>std::map&lt;std::pair&lt;int, int&gt;, unsigned char&gt; Gambit::table_formatter::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>Gambit::table_formatter::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="129" column="18" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a2b54d2b2e66e40a55c616ebbff5f51f7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; Gambit::table_formatter::row_flags</definition>
+        <argsstring></argsstring>
+        <name>row_flags</name>
+        <qualifiedname>Gambit::table_formatter::row_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="130" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a29ca83247aecdc8b9c145acaa3bf8806" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; Gambit::table_formatter::col_flags</definition>
+        <argsstring></argsstring>
+        <name>col_flags</name>
+        <qualifiedname>Gambit::table_formatter::col_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="131" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a4b2343473b4d7ad2a560c57fe78223f8" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::RESET</definition>
+        <argsstring></argsstring>
+        <name>RESET</name>
+        <qualifiedname>Gambit::table_formatter::RESET</qualifiedname>
+        <initializer>= 0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="144" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1aacb67d711149f763f1da14d6e25760cf" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::RED</definition>
+        <argsstring></argsstring>
+        <name>RED</name>
+        <qualifiedname>Gambit::table_formatter::RED</qualifiedname>
+        <initializer>= 0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="145" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1ab966d8f699bbccfe3c8d789f22882697" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::GREEN</definition>
+        <argsstring></argsstring>
+        <name>GREEN</name>
+        <qualifiedname>Gambit::table_formatter::GREEN</qualifiedname>
+        <initializer>= 0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="146" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1ae3c1324570ce726d112727ab46eb5ea1" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::YELLOW</definition>
+        <argsstring></argsstring>
+        <name>YELLOW</name>
+        <qualifiedname>Gambit::table_formatter::YELLOW</qualifiedname>
+        <initializer>= 0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="147" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a491da07938c9525d9ddcc945167910bf" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::COLOR</definition>
+        <argsstring></argsstring>
+        <name>COLOR</name>
+        <qualifiedname>Gambit::table_formatter::COLOR</qualifiedname>
+        <initializer>= 0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="148" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1ae36551c5c02428323bbe3ed563ede37e" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::BOLD</definition>
+        <argsstring></argsstring>
+        <name>BOLD</name>
+        <qualifiedname>Gambit::table_formatter::BOLD</qualifiedname>
+        <initializer>= 0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="149" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a56851f8294eedaae2b4a8c4ede9a51ff" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::JUST_RIGHT</definition>
+        <argsstring></argsstring>
+        <name>JUST_RIGHT</name>
+        <qualifiedname>Gambit::table_formatter::JUST_RIGHT</qualifiedname>
+        <initializer>= 0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="150" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1aced8d5ca586f5dba4a9174d4f12efb29" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::JUST_CENTER</definition>
+        <argsstring></argsstring>
+        <name>JUST_CENTER</name>
+        <qualifiedname>Gambit::table_formatter::JUST_CENTER</qualifiedname>
+        <initializer>= 0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="151" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a3468f898eee05fd9e5dce70a1ac1e97d" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::JUST</definition>
+        <argsstring></argsstring>
+        <name>JUST</name>
+        <qualifiedname>Gambit::table_formatter::JUST</qualifiedname>
+        <initializer>= 0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="152" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a1c653643929ce17bba9f4648e2cf8b8d" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::UNDERLINE</definition>
+        <argsstring></argsstring>
+        <name>UNDERLINE</name>
+        <qualifiedname>Gambit::table_formatter::UNDERLINE</qualifiedname>
+        <initializer>= 0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="153" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1table__formatter_1a4929ec236acabc5187e32b350f1d9a68" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char Gambit::table_formatter::WRAP</definition>
+        <argsstring></argsstring>
+        <name>WRAP</name>
+        <qualifiedname>Gambit::table_formatter::WRAP</qualifiedname>
+        <initializer>= 0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="154" column="36" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a40ca288f2c5937e5a8ffd3d1063956dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::table_formatter::enter_vec</definition>
+        <argsstring>(std::vector&lt; U &gt; &amp;)</argsstring>
+        <name>enter_vec</name>
+        <qualifiedname>Gambit::table_formatter::enter_vec</qualifiedname>
+        <param>
+          <type>std::vector&lt; U &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="134" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a1a3b5ae5cd568f8fe7ccc02bc3627d4e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename V</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::table_formatter::enter_vec</definition>
+        <argsstring>(std::vector&lt; U &gt; &amp;vec, const V &amp;str, const T &amp;... params)</argsstring>
+        <name>enter_vec</name>
+        <qualifiedname>Gambit::table_formatter::enter_vec</qualifiedname>
+        <param>
+          <type>std::vector&lt; U &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>const V &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const T &amp;...</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="137" column="14" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="137" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a341080e26bda5978766ff700205869aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Gambit::table_formatter::table_formatter</definition>
+        <argsstring>(const T &amp;...params)</argsstring>
+        <name>table_formatter</name>
+        <qualifiedname>Gambit::table_formatter::table_formatter</qualifiedname>
+        <param>
+          <type>const T &amp;...</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="157" column="9" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a9ea914959ce2ef3fa5d8fe120af9893e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::table_formatter::new_titles</definition>
+        <argsstring>(const T &amp;... in)</argsstring>
+        <name>new_titles</name>
+        <qualifiedname>Gambit::table_formatter::new_titles</qualifiedname>
+        <param>
+          <type>const T &amp;...</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="163" column="14" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="163" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a60e5a2faded4109aeed024bf5842b443" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::table_formatter::default_widths</definition>
+        <argsstring>(const T &amp;... in)</argsstring>
+        <name>default_widths</name>
+        <qualifiedname>Gambit::table_formatter::default_widths</qualifiedname>
+        <param>
+          <type>const T &amp;...</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="174" column="14" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="174" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a364bdb78385e8ccf23394bb1e6b92f0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::table_formatter::min_widths</definition>
+        <argsstring>(const T &amp;... in)</argsstring>
+        <name>min_widths</name>
+        <qualifiedname>Gambit::table_formatter::min_widths</qualifiedname>
+        <param>
+          <type>const T &amp;...</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="185" column="14" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="185" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1afd60c847adf87844f96aa41237c956f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::table_formatter::padding</definition>
+        <argsstring>(int p)</argsstring>
+        <name>padding</name>
+        <qualifiedname>Gambit::table_formatter::padding</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="196" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="196" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a48f472722cc4e9fcb2c8f7fa6cbfe940" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::table_formatter::wrap_around</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>wrap_around</name>
+        <qualifiedname>Gambit::table_formatter::wrap_around</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="197" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a9fcd1122e52b07299ae8bc1d292c99b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::table_formatter::top_line</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>top_line</name>
+        <qualifiedname>Gambit::table_formatter::top_line</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="198" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a379ba436a9955e7b0dd4a8bfc6479ca8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::table_formatter::bottom_line</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>bottom_line</name>
+        <qualifiedname>Gambit::table_formatter::bottom_line</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="199" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1ad8d21fa399a09a6677eaf78c5aa77830" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::table_formatter::capitalize_title</definition>
+        <argsstring>(int i)</argsstring>
+        <name>capitalize_title</name>
+        <qualifiedname>Gambit::table_formatter::capitalize_title</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="201" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="201" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1adfad3ba8b0e4bfd0a0d79e97779718b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::table_formatter::capitalize_title</definition>
+        <argsstring>()</argsstring>
+        <name>capitalize_title</name>
+        <qualifiedname>Gambit::table_formatter::capitalize_title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="212" column="21" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="212" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1acdd56a1c2e7b9b0f55461b683c25f3d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::table_formatter::rows</definition>
+        <argsstring>() const</argsstring>
+        <name>rows</name>
+        <qualifiedname>Gambit::table_formatter::rows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="226" column="20" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a348014d7c9f0de69bd3e33ab2038357d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::table_formatter::cols</definition>
+        <argsstring>() const</argsstring>
+        <name>cols</name>
+        <qualifiedname>Gambit::table_formatter::cols</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="227" column="20" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a18df6f9ef814a0308270917942341442" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::table_formatter::row_pos</definition>
+        <argsstring>() const</argsstring>
+        <name>row_pos</name>
+        <qualifiedname>Gambit::table_formatter::row_pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="228" column="20" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1acdf4f9b6f291396ebe2a69dd794db3ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::table_formatter::col_pos</definition>
+        <argsstring>() const</argsstring>
+        <name>col_pos</name>
+        <qualifiedname>Gambit::table_formatter::col_pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="229" column="20" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a1bfe2d4335e2bf04d30d8b3b72076dab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::new_row</definition>
+        <argsstring>(int n=1)</argsstring>
+        <name>new_row</name>
+        <qualifiedname>Gambit::table_formatter::new_row</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="231" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="231" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a2fd7290c9c120b821e11c68ccccce535" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;in)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::table_formatter::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="246" column="16" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="246" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1aa73e08e154392e3269e6ad7b72954739" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::reset_pt_flag</definition>
+        <argsstring>(const unsigned char flag, int i, int j)</argsstring>
+        <name>reset_pt_flag</name>
+        <qualifiedname>Gambit::table_formatter::reset_pt_flag</qualifiedname>
+        <param>
+          <type>const unsigned char</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="266" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="266" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a5910c7a9f8abc0b6ef21f81784aff755" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::reset_row_flag</definition>
+        <argsstring>(const unsigned char flag, int i)</argsstring>
+        <name>reset_row_flag</name>
+        <qualifiedname>Gambit::table_formatter::reset_row_flag</qualifiedname>
+        <param>
+          <type>const unsigned char</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="274" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="274" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a6193e064d30da8c290e292866e6b86d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::reset_col_flag</definition>
+        <argsstring>(const unsigned char flag, int i)</argsstring>
+        <name>reset_col_flag</name>
+        <qualifiedname>Gambit::table_formatter::reset_col_flag</qualifiedname>
+        <param>
+          <type>const unsigned char</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="282" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="282" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1af8679a5d97db809f72004dc6544514a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::set_pt_flag</definition>
+        <argsstring>(const unsigned char flag, int i, int j)</argsstring>
+        <name>set_pt_flag</name>
+        <qualifiedname>Gambit::table_formatter::set_pt_flag</qualifiedname>
+        <param>
+          <type>const unsigned char</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="291" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="291" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a8ed5a874f7330d05669f6f30c464deca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::set_row_flag</definition>
+        <argsstring>(const unsigned char flag, int i)</argsstring>
+        <name>set_row_flag</name>
+        <qualifiedname>Gambit::table_formatter::set_row_flag</qualifiedname>
+        <param>
+          <type>const unsigned char</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="314" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="314" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1ac4a896253995c49c9bcb40bbd5524d3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::set_col_flag</definition>
+        <argsstring>(const unsigned char flag, int i)</argsstring>
+        <name>set_col_flag</name>
+        <qualifiedname>Gambit::table_formatter::set_col_flag</qualifiedname>
+        <param>
+          <type>const unsigned char</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="322" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="322" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a762eb8b71cf9b30f50b2fc42459d54a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::reset</definition>
+        <argsstring>(int i=-1, int j=-1)</argsstring>
+        <name>reset</name>
+        <qualifiedname>Gambit::table_formatter::reset</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="337" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="337" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a7a776f6818349211bf0d39ab67cbea5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::red</definition>
+        <argsstring>(int i=-1, int j=-1)</argsstring>
+        <name>red</name>
+        <qualifiedname>Gambit::table_formatter::red</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="342" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="342" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1ad3e5256e3ca05c3b001bcacacb12f6f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::green</definition>
+        <argsstring>(int i=-1, int j=-1)</argsstring>
+        <name>green</name>
+        <qualifiedname>Gambit::table_formatter::green</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="347" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="347" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a366b7e2d530b2ec0e4894bacef6dd3d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::yellow</definition>
+        <argsstring>(int i=-1, int j=-1)</argsstring>
+        <name>yellow</name>
+        <qualifiedname>Gambit::table_formatter::yellow</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="352" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="352" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1ab796add2ce04204f8627e20a452db0cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::bold</definition>
+        <argsstring>(int i=-1, int j=-1)</argsstring>
+        <name>bold</name>
+        <qualifiedname>Gambit::table_formatter::bold</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="357" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="357" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1afbf19eee817b801f37a6ab105132fb74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::underline</definition>
+        <argsstring>(int i=-1, int j=-1)</argsstring>
+        <name>underline</name>
+        <qualifiedname>Gambit::table_formatter::underline</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="362" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="362" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1aad854fae053b8e0278118a34b0edb835" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::right_justify</definition>
+        <argsstring>(int j=-1)</argsstring>
+        <name>right_justify</name>
+        <qualifiedname>Gambit::table_formatter::right_justify</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="367" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="367" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a177064328b6de592c07c7871b5510795" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::center_justify</definition>
+        <argsstring>(int j=-1)</argsstring>
+        <name>center_justify</name>
+        <qualifiedname>Gambit::table_formatter::center_justify</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="372" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="372" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a25bd6d6008d89cbdc01d8d1626723f53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::left_justify</definition>
+        <argsstring>(int j=-1)</argsstring>
+        <name>left_justify</name>
+        <qualifiedname>Gambit::table_formatter::left_justify</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="377" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="377" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1a15d8c9e8150801d7efa7699ac3e5d9b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::no_newline</definition>
+        <argsstring>(int j=-1)</argsstring>
+        <name>no_newline</name>
+        <qualifiedname>Gambit::table_formatter::no_newline</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="382" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="382" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1adf91d779889a54ac2e02b2886dfc785b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1table__formatter" kindref="compound">table_formatter</ref> &amp;</type>
+        <definition>table_formatter &amp; Gambit::table_formatter::newline</definition>
+        <argsstring>(int j=-1)</argsstring>
+        <name>newline</name>
+        <qualifiedname>Gambit::table_formatter::newline</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="387" column="32" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="387" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1aef9bc11d335e54ffbaae48940f0566ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt; &amp;</type>
+        <definition>std::vector&lt; std::string &gt; &amp; Gambit::table_formatter::operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>Gambit::table_formatter::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="392" column="28" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="392" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1table__formatter_1abf9d1e3a96267a60725161e47fb6080a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::table_formatter::str</definition>
+        <argsstring>()</argsstring>
+        <name>str</name>
+        <qualifiedname>Gambit::table_formatter::str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="397" column="21" bodyfile="Utils/src/table_formatter.cpp" bodystart="90" bodyend="327"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/table_formatter.hpp" line="115" column="5" bodyfile="Utils/include/gambit/Utils/table_formatter.hpp" bodystart="116" bodyend="398"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1table__formatter_1ae36551c5c02428323bbe3ed563ede37e" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>BOLD</name></member>
+      <member refid="classGambit_1_1table__formatter_1ab796add2ce04204f8627e20a452db0cc" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>bold</name></member>
+      <member refid="classGambit_1_1table__formatter_1ad08bcdb458d5bec295961ca8c3a105d1" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>bottom</name></member>
+      <member refid="classGambit_1_1table__formatter_1a379ba436a9955e7b0dd4a8bfc6479ca8" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>bottom_line</name></member>
+      <member refid="classGambit_1_1table__formatter_1ad8d21fa399a09a6677eaf78c5aa77830" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>capitalize_title</name></member>
+      <member refid="classGambit_1_1table__formatter_1adfad3ba8b0e4bfd0a0d79e97779718b5" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>capitalize_title</name></member>
+      <member refid="classGambit_1_1table__formatter_1a177064328b6de592c07c7871b5510795" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>center_justify</name></member>
+      <member refid="classGambit_1_1table__formatter_1a68af5ac1409e7e12e7d64359a24ac783" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>col</name></member>
+      <member refid="classGambit_1_1table__formatter_1a29ca83247aecdc8b9c145acaa3bf8806" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>col_flags</name></member>
+      <member refid="classGambit_1_1table__formatter_1accea8fb8591fc5faff3fc8f4eee22f9c" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>col_num</name></member>
+      <member refid="classGambit_1_1table__formatter_1acdf4f9b6f291396ebe2a69dd794db3ac" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>col_pos</name></member>
+      <member refid="classGambit_1_1table__formatter_1a491da07938c9525d9ddcc945167910bf" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>COLOR</name></member>
+      <member refid="classGambit_1_1table__formatter_1a348014d7c9f0de69bd3e33ab2038357d" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>cols</name></member>
+      <member refid="classGambit_1_1table__formatter_1a13247b4885b23da6964b44b983001101" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>data</name></member>
+      <member refid="classGambit_1_1table__formatter_1a60e5a2faded4109aeed024bf5842b443" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>default_widths</name></member>
+      <member refid="classGambit_1_1table__formatter_1a372b14d3da711d1596b72b98d3aabf05" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>defaultWidths</name></member>
+      <member refid="classGambit_1_1table__formatter_1a40ca288f2c5937e5a8ffd3d1063956dd" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>enter_vec</name></member>
+      <member refid="classGambit_1_1table__formatter_1a1a3b5ae5cd568f8fe7ccc02bc3627d4e" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>enter_vec</name></member>
+      <member refid="classGambit_1_1table__formatter_1ae4c791351af76b083beffafee1987b60" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>flags</name></member>
+      <member refid="classGambit_1_1table__formatter_1ad3e5256e3ca05c3b001bcacacb12f6f6" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>green</name></member>
+      <member refid="classGambit_1_1table__formatter_1ab966d8f699bbccfe3c8d789f22882697" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>GREEN</name></member>
+      <member refid="classGambit_1_1table__formatter_1a3468f898eee05fd9e5dce70a1ac1e97d" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>JUST</name></member>
+      <member refid="classGambit_1_1table__formatter_1aced8d5ca586f5dba4a9174d4f12efb29" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>JUST_CENTER</name></member>
+      <member refid="classGambit_1_1table__formatter_1a56851f8294eedaae2b4a8c4ede9a51ff" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>JUST_RIGHT</name></member>
+      <member refid="classGambit_1_1table__formatter_1a25bd6d6008d89cbdc01d8d1626723f53" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>left_justify</name></member>
+      <member refid="classGambit_1_1table__formatter_1a364bdb78385e8ccf23394bb1e6b92f0a" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>min_widths</name></member>
+      <member refid="classGambit_1_1table__formatter_1ac8ede43ca1d2ff6c4b18cfdd8f0dda68" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>minWidths</name></member>
+      <member refid="classGambit_1_1table__formatter_1a1bfe2d4335e2bf04d30d8b3b72076dab" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>new_row</name></member>
+      <member refid="classGambit_1_1table__formatter_1a9ea914959ce2ef3fa5d8fe120af9893e" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>new_titles</name></member>
+      <member refid="classGambit_1_1table__formatter_1adf91d779889a54ac2e02b2886dfc785b" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>newline</name></member>
+      <member refid="classGambit_1_1table__formatter_1a15d8c9e8150801d7efa7699ac3e5d9b4" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>no_newline</name></member>
+      <member refid="classGambit_1_1table__formatter_1a2fd7290c9c120b821e11c68ccccce535" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classGambit_1_1table__formatter_1aef9bc11d335e54ffbaae48940f0566ef" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>operator[]</name></member>
+      <member refid="classGambit_1_1table__formatter_1a762ec06bde8c892f939583150f936b05" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>pad</name></member>
+      <member refid="classGambit_1_1table__formatter_1afd60c847adf87844f96aa41237c956f3" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>padding</name></member>
+      <member refid="classGambit_1_1table__formatter_1aacb67d711149f763f1da14d6e25760cf" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>RED</name></member>
+      <member refid="classGambit_1_1table__formatter_1a7a776f6818349211bf0d39ab67cbea5e" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>red</name></member>
+      <member refid="classGambit_1_1table__formatter_1a4b2343473b4d7ad2a560c57fe78223f8" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>RESET</name></member>
+      <member refid="classGambit_1_1table__formatter_1a762eb8b71cf9b30f50b2fc42459d54a7" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>reset</name></member>
+      <member refid="classGambit_1_1table__formatter_1a6193e064d30da8c290e292866e6b86d7" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>reset_col_flag</name></member>
+      <member refid="classGambit_1_1table__formatter_1aa73e08e154392e3269e6ad7b72954739" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>reset_pt_flag</name></member>
+      <member refid="classGambit_1_1table__formatter_1a5910c7a9f8abc0b6ef21f81784aff755" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>reset_row_flag</name></member>
+      <member refid="classGambit_1_1table__formatter_1aad854fae053b8e0278118a34b0edb835" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>right_justify</name></member>
+      <member refid="classGambit_1_1table__formatter_1a790f828a1884686ad3a63c46c8f1e4c9" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>row</name></member>
+      <member refid="classGambit_1_1table__formatter_1a2b54d2b2e66e40a55c616ebbff5f51f7" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>row_flags</name></member>
+      <member refid="classGambit_1_1table__formatter_1a18df6f9ef814a0308270917942341442" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>row_pos</name></member>
+      <member refid="classGambit_1_1table__formatter_1acdd56a1c2e7b9b0f55461b683c25f3d5" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>rows</name></member>
+      <member refid="classGambit_1_1table__formatter_1ac4a896253995c49c9bcb40bbd5524d3e" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>set_col_flag</name></member>
+      <member refid="classGambit_1_1table__formatter_1af8679a5d97db809f72004dc6544514a7" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>set_pt_flag</name></member>
+      <member refid="classGambit_1_1table__formatter_1a8ed5a874f7330d05669f6f30c464deca" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>set_row_flag</name></member>
+      <member refid="classGambit_1_1table__formatter_1abf9d1e3a96267a60725161e47fb6080a" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>str</name></member>
+      <member refid="classGambit_1_1table__formatter_1a341080e26bda5978766ff700205869aa" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>table_formatter</name></member>
+      <member refid="classGambit_1_1table__formatter_1a0d2943f8aec079802dd4060b31b7826a" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>titles</name></member>
+      <member refid="classGambit_1_1table__formatter_1a098ec90a588b0dc8792ed580abf70ecb" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>top</name></member>
+      <member refid="classGambit_1_1table__formatter_1a9fcd1122e52b07299ae8bc1d292c99b9" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>top_line</name></member>
+      <member refid="classGambit_1_1table__formatter_1a1c653643929ce17bba9f4648e2cf8b8d" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>UNDERLINE</name></member>
+      <member refid="classGambit_1_1table__formatter_1afbf19eee817b801f37a6ab105132fb74" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>underline</name></member>
+      <member refid="classGambit_1_1table__formatter_1a4929ec236acabc5187e32b350f1d9a68" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>WRAP</name></member>
+      <member refid="classGambit_1_1table__formatter_1a5e345fcfe1bb02a2ba514bc1865ddf0b" prot="private" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>wrap</name></member>
+      <member refid="classGambit_1_1table__formatter_1a48f472722cc4e9fcb2c8f7fa6cbfe940" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>wrap_around</name></member>
+      <member refid="classGambit_1_1table__formatter_1ae3c1324570ce726d112727ab46eb5ea1" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>YELLOW</name></member>
+      <member refid="classGambit_1_1table__formatter_1a366b7e2d530b2ec0e4894bacef6dd3d7" prot="public" virt="non-virtual"><scope>Gambit::table_formatter</scope><name>yellow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

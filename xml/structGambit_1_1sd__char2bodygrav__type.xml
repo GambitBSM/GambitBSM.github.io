@@ -4,7 +4,7 @@
     <compoundname>Gambit::sd_char2bodygrav_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1sd__char2bodygrav__type_1ac0aa9d136ef2d0a8ee6c4223b5a78abc" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_char2bodygrav_type::brcharwgravitino</definition>
         <argsstring></argsstring>
         <name>brcharwgravitino</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="279" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__char2bodygrav__type_1a800efed633da08abdc3080d2b9572e89" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_char2bodygrav_type::brcharhcgravitino</definition>
         <argsstring></argsstring>
         <name>brcharhcgravitino</name>
@@ -36,6 +36,20 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_char2bodygrav_type</label>
+        <link refid="structGambit_1_1sd__char2bodygrav__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brcharhcgravitino</edgelabel>
+          <edgelabel>brcharwgravitino</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="277" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="278" bodyend="281"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__char2bodygrav__type_1a800efed633da08abdc3080d2b9572e89" prot="public" virt="non-virtual"><scope>Gambit::sd_char2bodygrav_type</scope><name>brcharhcgravitino</name></member>

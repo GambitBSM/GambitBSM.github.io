@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1DataSetInterfaceBase" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Printers::DataSetInterfaceBase</compoundname>
+    <includes refid="DataSetInterfaceBase_8hpp" local="no">DataSetInterfaceBase.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>RECORDRANK</declname>
+        <defname>RECORDRANK</defname>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>CHUNKLENGTH</declname>
+        <defname>CHUNKLENGTH</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a3a65b3cc2d51a08bcf8622351e4bab8f" prot="protected" static="yes" mutable="no">
+        <type>const hid_t</type>
+        <definition>const hid_t Gambit::Printers::DataSetInterfaceBase&lt; T, RR, CL &gt;::hdftype_id</definition>
+        <argsstring></argsstring>
+        <name>hdftype_id</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::hdftype_id</qualifiedname>
+        <initializer>= <ref refid="structGambit_1_1Printers_1_1get__hdf5__data__type" kindref="compound">get_hdf5_data_type</ref>&lt;T&gt;::type()</initializer>
+        <briefdescription>
+<para><ref refid="classGambit_1_1Printers_1_1DataSetInterfaceBase" kindref="compound">DataSetInterfaceBase</ref> class member definitions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="74" column="29" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7c14a9a4da6c66e61635a49c6fd9bd7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::DataSetInterfaceBase&lt; T, RR, CL &gt;::DataSetInterfaceBase</definition>
+        <argsstring>()</argsstring>
+        <name>DataSetInterfaceBase</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::DataSetInterfaceBase</qualifiedname>
+        <briefdescription>
+<para>Constructors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="122" column="10" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="149" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ae8a979981c37e28b42209918754520ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::DataSetInterfaceBase&lt; T, RR, CL &gt;::DataSetInterfaceBase</definition>
+        <argsstring>(hid_t location_id, const std::string &amp;name, const std::size_t rdims[DSETRANK], const bool resume, const char access)</argsstring>
+        <name>DataSetInterfaceBase</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::DataSetInterfaceBase</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>rdims</declname>
+          <array>[DSETRANK]</array>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>resume</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>access</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="123" column="10" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="160" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aad2e7ce3fe12e87e26cb0c44c046fe69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Gambit::Printers::DataSetInterfaceBase&lt; T, RR, CL &gt;::~DataSetInterfaceBase</definition>
+        <argsstring>()</argsstring>
+        <name>~DataSetInterfaceBase</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::~DataSetInterfaceBase</qualifiedname>
+        <briefdescription>
+<para>Do cleanup (close dataset) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="124" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="189" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a952eb22e0c483c5e47e69c2f67f40b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::createDataSet</definition>
+        <argsstring>(hid_t location_id, const std::string &amp;name, const std::size_t rdims[DSETRANK])</argsstring>
+        <name>createDataSet</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::createDataSet</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>rdims</declname>
+          <array>[DSETRANK]</array>
+        </param>
+        <briefdescription>
+<para>Create a (chunked) dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="127" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="224" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a69c9b798cc85022d85a3993c18381560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::openDataSet</definition>
+        <argsstring>(hid_t location_id, const std::string &amp;name, const std::size_t rdims[DSETRANK])</argsstring>
+        <name>openDataSet</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::openDataSet</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>location_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>rdims</declname>
+          <array>[DSETRANK]</array>
+        </param>
+        <briefdescription>
+<para>Open an existing dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Open an existing dataset It is assumed that we are resuming a run and therefore know what format this dataset should have </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="130" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="297" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7caaa9c292fb46cf698effa52098d9e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::DataSetInterfaceBase&lt; T, RR, CL &gt;::closeDataSet</definition>
+        <argsstring>()</argsstring>
+        <name>closeDataSet</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::closeDataSet</qualifiedname>
+        <briefdescription>
+<para>Close an open dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Release resources associated with the underlying dataset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="133" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="208" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a5508ec19fbc11ff63e69489771c8d43e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::DataSetInterfaceBase&lt; T, RR, CHUNKLENGTH &gt;::extend_dset</definition>
+        <argsstring>(const unsigned long i)</argsstring>
+        <name>extend_dset</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::extend_dset</qualifiedname>
+        <param>
+          <type>const unsigned long</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Extend dataset to nearest multiple of CHUNKLENGTH above supplied length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="136" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="382" bodyend="408"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a50524af45c08329844a3fd49f066291c" prot="private" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::DSETRANK</definition>
+        <argsstring></argsstring>
+        <name>DSETRANK</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::DSETRANK</qualifiedname>
+        <initializer>= RECORDRANK+1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="48" column="35" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a5663272879c8423176b99c21982dd763" prot="private" static="no" mutable="no">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::mylocation_id</definition>
+        <argsstring></argsstring>
+        <name>mylocation_id</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::mylocation_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="49" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a95b6e26300c9e7de762cdddc487aa4aa" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::myname</definition>
+        <argsstring></argsstring>
+        <name>myname</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::myname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="50" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1abc1011d37f2cd95efa39dbaf73baf6bf" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::record_dims[DSETRANK]</definition>
+        <argsstring>[DSETRANK]</argsstring>
+        <name>record_dims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::record_dims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="56" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a831af4e21023867c5ca8c6475966915f" prot="private" static="no" mutable="no">
+        <type>hsize_t</type>
+        <definition>hsize_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::dims[DSETRANK]</definition>
+        <argsstring>[DSETRANK]</argsstring>
+        <name>dims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::dims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="59" column="19" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7d99bf85fc6e746168da50ad5d2bc92a" prot="private" static="no" mutable="no">
+        <type>hsize_t</type>
+        <definition>hsize_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::maxdims[DSETRANK]</definition>
+        <argsstring>[DSETRANK]</argsstring>
+        <name>maxdims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::maxdims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="60" column="19" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1adfa9ef8d04e6138a2c842fc4362f148d" prot="private" static="no" mutable="no">
+        <type>hsize_t</type>
+        <definition>hsize_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::chunkdims[DSETRANK]</definition>
+        <argsstring>[DSETRANK]</argsstring>
+        <name>chunkdims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::chunkdims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="61" column="19" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a2a0c829e7dd85c68a19152132434deda" prot="private" static="no" mutable="no">
+        <type>hsize_t</type>
+        <definition>hsize_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::slicedims[DSETRANK]</definition>
+        <argsstring>[DSETRANK]</argsstring>
+        <name>slicedims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::slicedims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="62" column="19" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a5882e2c36929c6bf80c6c6a4800525ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::resume</definition>
+        <argsstring></argsstring>
+        <name>resume</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::resume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="65" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aeb1816151c3c960412363432f2d86bae" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::access</definition>
+        <argsstring></argsstring>
+        <name>access</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::access</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="68" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a8edf6e77bf4ef25bee1b12a1579c1273" prot="protected" static="no" mutable="no">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::dset_id</definition>
+        <argsstring></argsstring>
+        <name>dset_id</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::dset_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="77" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aa3fd50e5271606e0d4e27000296b83e1" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::dsetnextemptyslab</definition>
+        <argsstring></argsstring>
+        <name>dsetnextemptyslab</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::dsetnextemptyslab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="94" column="24" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab0c8435c80f6b562b2dd176a13da065f" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::virtualwriteposition</definition>
+        <argsstring></argsstring>
+        <name>virtualwriteposition</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::virtualwriteposition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="100" column="24" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab53b3a4c2c3dff9d5791b82a85bbc890" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::get_dset_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_dset_id</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::get_dset_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="80" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="80" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a605b961933457edeacfc4b1a77f53a56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::get_myname</definition>
+        <argsstring>() const</argsstring>
+        <name>get_myname</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::get_myname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="104" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab6dca2f149ebf5e01d02ec7e70d56d66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::get_dsetrank</definition>
+        <argsstring>() const</argsstring>
+        <name>get_dsetrank</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::get_dsetrank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="105" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a8599be283a05c2a672b79d6316b3c97f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::get_chunklength</definition>
+        <argsstring>() const</argsstring>
+        <name>get_chunklength</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::get_chunklength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="106" column="22" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1af0ba1e2ae49ea4e2525330a5afa3713e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const hsize_t *</type>
+        <definition>const hsize_t * Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::get_maxdsetdims</definition>
+        <argsstring>() const</argsstring>
+        <name>get_maxdsetdims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::get_maxdsetdims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="107" column="24" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a526b893cc22f912fc86f61143785129c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const hsize_t *</type>
+        <definition>const hsize_t * Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::get_chunkdims</definition>
+        <argsstring>() const</argsstring>
+        <name>get_chunkdims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::get_chunkdims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="108" column="24" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aa2f2372dde5d6531471b8cc9d3e8008b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const hsize_t *</type>
+        <definition>const hsize_t * Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::get_slicedims</definition>
+        <argsstring>() const</argsstring>
+        <name>get_slicedims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::get_slicedims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="109" column="24" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a89055fa9d360eb6478deec608a447af1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::get_nextemptyslab</definition>
+        <argsstring>() const</argsstring>
+        <name>get_nextemptyslab</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::get_nextemptyslab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="110" column="24" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1afd8a1e8bdcfdaa0a6e349ede9029ba23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::dset_length</definition>
+        <argsstring>() const</argsstring>
+        <name>dset_length</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::dset_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="111" column="24" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1af07154ea22cb65dab0d6323022916ebd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::access_mode</definition>
+        <argsstring>() const</argsstring>
+        <name>access_mode</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::access_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="112" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1add998d0dcbb61945b4279e081cb7307a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::reset_nextemptyslab</definition>
+        <argsstring>()</argsstring>
+        <name>reset_nextemptyslab</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::reset_nextemptyslab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="115" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a912aaab0c770c98137664f0d62f8503e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>hsize_t *</type>
+        <definition>hsize_t * Gambit::Printers::DataSetInterfaceBase&lt; T, RECORDRANK, CHUNKLENGTH &gt;::dsetdims</definition>
+        <argsstring>()</argsstring>
+        <name>dsetdims</name>
+        <qualifiedname>Gambit::Printers::DataSetInterfaceBase::dsetdims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="119" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wrapper object to manage a single dataset. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="45" column="7" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="46" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aeb1816151c3c960412363432f2d86bae" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>access</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1af07154ea22cb65dab0d6323022916ebd" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>access_mode</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1adfa9ef8d04e6138a2c842fc4362f148d" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>chunkdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7caaa9c292fb46cf698effa52098d9e4" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>closeDataSet</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a952eb22e0c483c5e47e69c2f67f40b99" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>createDataSet</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7c14a9a4da6c66e61635a49c6fd9bd7d" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>DataSetInterfaceBase</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ae8a979981c37e28b42209918754520ca" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>DataSetInterfaceBase</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a831af4e21023867c5ca8c6475966915f" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>dims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a8edf6e77bf4ef25bee1b12a1579c1273" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>dset_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1afd8a1e8bdcfdaa0a6e349ede9029ba23" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>dset_length</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a912aaab0c770c98137664f0d62f8503e" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>dsetdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aa3fd50e5271606e0d4e27000296b83e1" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>dsetnextemptyslab</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a50524af45c08329844a3fd49f066291c" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>DSETRANK</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a5508ec19fbc11ff63e69489771c8d43e" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>extend_dset</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a526b893cc22f912fc86f61143785129c" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>get_chunkdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a8599be283a05c2a672b79d6316b3c97f" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>get_chunklength</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab53b3a4c2c3dff9d5791b82a85bbc890" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>get_dset_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab6dca2f149ebf5e01d02ec7e70d56d66" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>get_dsetrank</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1af0ba1e2ae49ea4e2525330a5afa3713e" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>get_maxdsetdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a605b961933457edeacfc4b1a77f53a56" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>get_myname</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a89055fa9d360eb6478deec608a447af1" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>get_nextemptyslab</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aa2f2372dde5d6531471b8cc9d3e8008b" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>get_slicedims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a3a65b3cc2d51a08bcf8622351e4bab8f" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>hdftype_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7d99bf85fc6e746168da50ad5d2bc92a" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>maxdims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a5663272879c8423176b99c21982dd763" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>mylocation_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a95b6e26300c9e7de762cdddc487aa4aa" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>myname</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a69c9b798cc85022d85a3993c18381560" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>openDataSet</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1abc1011d37f2cd95efa39dbaf73baf6bf" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>record_dims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1add998d0dcbb61945b4279e081cb7307a" prot="public" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>reset_nextemptyslab</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a5882e2c36929c6bf80c6c6a4800525ab" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>resume</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a2a0c829e7dd85c68a19152132434deda" prot="private" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>slicedims</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1ab0c8435c80f6b562b2dd176a13da065f" prot="protected" virt="non-virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>virtualwriteposition</name></member>
+      <member refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1aad2e7ce3fe12e87e26cb0c44c046fe69" prot="public" virt="virtual"><scope>Gambit::Printers::DataSetInterfaceBase</scope><name>~DataSetInterfaceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

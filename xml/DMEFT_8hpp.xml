@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="DMEFT_8hpp" kind="file" language="C++">
+    <compoundname>DMEFT.hpp</compoundname>
+    <includes refid="CosmoEnergyInjection_8hpp" local="yes">gambit/Models/models/CosmoEnergyInjection.hpp</includes>
+    <includedby refid="Models_2src_2models_2DMEFT_8cpp" local="yes">DMEFT.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gambit/Models/models/CosmoEnergyInjection.hpp</label>
+        <link refid="CosmoEnergyInjection_8hpp"/>
+      </node>
+      <node id="1">
+        <label>DMEFT.hpp</label>
+        <link refid="DMEFT_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="DMEFT_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>DMEFT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/DMEFT.hpp" line="33" column="9" bodyfile="Models/include/gambit/Models/models/DMEFT.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Header file for DMEFT</para>
+<para>Authors (add name and date if you modify): <linebreak/>
+ *** Automatically created by GUM *** <linebreak/>
+</para>
+<para><simplesect kind="author"><para>The GAMBIT Collaboration <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="date"><para>12:32PM on October 15, 2019</para>
+</simplesect>
+<simplesect kind="author"><para>Sanjay Bloor (<ulink url="mailto:sanjay.bloor12@imperial.ac.uk">sanjay.bloor12@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2019 Oct</para>
+</simplesect>
+<simplesect kind="author"><para>Patrick Stöcker (<ulink url="mailto:stoecker@physik.rwth-aachen.de">stoecker@physik.rwth-aachen.de</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2021 Mar, Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:gonzalo@physik.rwth-aachen.de">gonzalo@physik.rwth-aachen.de</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2021 Sep</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/>Header<sp/>file<sp/>for<sp/>DMEFT</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/>***<sp/>Automatically<sp/>created<sp/>by<sp/>GUM<sp/>***<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>\author<sp/>The<sp/>GAMBIT<sp/>Collaboration<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\date<sp/>12:32PM<sp/>on<sp/>October<sp/>15,<sp/>2019</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\author<sp/>Sanjay<sp/>Bloor</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(sanjay.bloor12@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>\date<sp/>2019<sp/>Oct</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>\author<sp/>Patrick<sp/>Stöcker</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(stoecker@physik.rwth-aachen.de)</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/>\date<sp/>2021<sp/>Mar,<sp/>Sep</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///<sp/><sp/>\author<sp/>Tomas<sp/>Gonzalo</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(gonzalo@physik.rwth-aachen.de)</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///<sp/><sp/>\date<sp/>2021<sp/>Sep</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///<sp/><sp/>*********************************************<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__DMEFT_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__DMEFT_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Make<sp/>sure<sp/>that<sp/>AnnihilatingDM_general<sp/>is<sp/>declared<sp/>first</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CosmoEnergyInjection_8hpp" kindref="compound">gambit/Models/models/CosmoEnergyInjection.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>DMEFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>DEFINEPARS(Lambda,<sp/>C51,<sp/>C52,<sp/>C61,<sp/>C62,<sp/>C63,<sp/>C64,<sp/>C71,<sp/>C72)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>DEFINEPARS(C73,<sp/>C74,<sp/>C75,<sp/>C76,<sp/>C77,<sp/>C78,<sp/>C79,<sp/>C710,<sp/>mchi)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>DEFINEPARS(mtrunIN)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>order<sp/>to<sp/>enable<sp/>CMB<sp/>constraints<sp/>create<sp/>a<sp/>friendship<sp/>relation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>the<sp/>s-wave<sp/>annihilation<sp/>&quot;marker&quot;<sp/>model<sp/>AnnihilatingDM_general</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>INTERPRET_AS_X_FUNCTION(AnnihilatingDM_general,DMEFT_to_AnnihilatingDM_general)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>INTERPRET_AS_X_DEPENDENCY(AnnihilatingDM_general,mwimp,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>INTERPRET_AS_X_DEPENDENCY(AnnihilatingDM_general,wimp_sc,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>INTERPRET_AS_X_DEPENDENCY(AnnihilatingDM_general,sigmav,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>INTERPRET_AS_X_DEPENDENCY(AnnihilatingDM_general,RD_fraction,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Models/include/gambit/Models/models/DMEFT.hpp"/>
+  </compounddef>
+</doxygen>

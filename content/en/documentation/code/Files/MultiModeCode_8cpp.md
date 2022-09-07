@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# backend_types/MultiModeCode.cpp
 
 
 
@@ -111,4 +110,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:29 +0000
+Updated on 2022-09-07 at 13:49:57 +0000

@@ -4,7 +4,7 @@
     <compoundname>Gambit::Finputs</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1Finputs_1ab08f38a24f3fbe1bf85c76b1a098f90f" prot="public" static="no" mutable="no">
-        <type>SMInputs</type>
+        <type><ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref></type>
         <definition>SMInputs Gambit::Finputs::sminputs</definition>
         <argsstring></argsstring>
         <name>sminputs</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SPheno.hpp" line="104" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SPheno.hpp" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1Finputs_1ac1ea52aade4cb6dad19eff95546a7e88" prot="public" static="no" mutable="no">
-        <type>std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt;</type>
         <definition>std::map&lt;str, safe_ptr&lt;const double&gt; &gt; Gambit::Finputs::param</definition>
         <argsstring></argsstring>
         <name>param</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SPheno.hpp" line="105" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SPheno.hpp" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1Finputs_1a1f1e76050a166168b51daaf0f9bf9acf" prot="public" static="no" mutable="no">
-        <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; Options &gt;</type>
+        <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &gt;</type>
         <definition>safe_ptr&lt;Options&gt; Gambit::Finputs::options</definition>
         <argsstring></argsstring>
         <name>options</name>
@@ -55,12 +55,40 @@
         <label>Gambit::Finputs</label>
         <link refid="structGambit_1_1Finputs"/>
         <childnode refid="2" relation="usage">
+          <edgelabel>sminputs</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
           <edgelabel>options</edgelabel>
         </childnode>
       </node>
+      <node id="6">
+        <label>Gambit::Options</label>
+        <link refid="classGambit_1_1Options"/>
+      </node>
       <node id="2">
-        <label>Gambit::safe_ptr&lt; Options &gt;</label>
+        <label>Gambit::SMInputs</label>
+        <link refid="structGambit_1_1SMInputs"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CKM</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>PMNS</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::SMInputs::CKMdef</label>
+        <link refid="structGambit_1_1SMInputs_1_1CKMdef"/>
+      </node>
+      <node id="4">
+        <label>Gambit::SMInputs::PMNSdef</label>
+        <link refid="structGambit_1_1SMInputs_1_1PMNSdef"/>
+      </node>
+      <node id="5">
+        <label>Gambit::safe_ptr&lt; Gambit::Options &gt;</label>
         <link refid="classGambit_1_1safe__ptr"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SPheno.hpp" line="102" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SPheno.hpp" bodystart="103" bodyend="107"/>

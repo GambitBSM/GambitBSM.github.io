@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="elements__extras_8py" kind="file" language="Python">
+    <compoundname>elements_extras.py</compoundname>
+    <innernamespace refid="namespaceelements__extras">elements_extras</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">#!/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#*********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>\file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>Script<sp/>to<sp/>create<sp/>files<sp/>containing<sp/>extra<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>that<sp/>should<sp/>be<sp/>generated<sp/>at<sp/>build<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>Usually<sp/>to<sp/>make<sp/>sure<sp/>the<sp/>Printers<sp/>are<sp/>not<sp/>used<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>in<sp/>the<sp/>standalones.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>Generated<sp/>files:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/>Elements/elements_extras.hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#*********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>\author<sp/>Christopher<sp/>Chang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(christopher.chang@uqconnect.edu.au)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>\date<sp/>2021<sp/>Feb</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>\author<sp/>Tomas<sp/>Gonzalo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(gonzalo@physik.rwth-aachen.de)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>\date<sp/>2021<sp/>Mar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">#*********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pickle,sys</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">toolsfile=</highlight><highlight class="stringliteral">&quot;./Utils/scripts/harvesting_tools.py&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">exec(compile(open(toolsfile,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">).read(),<sp/>toolsfile,<sp/></highlight><highlight class="stringliteral">&apos;exec&apos;</highlight><highlight class="normal">))<sp/></highlight><highlight class="comment">#<sp/>Python<sp/>2/3<sp/>compatible<sp/>version<sp/>of<sp/>&apos;execfile&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Suspicious<sp/>point<sp/>exception,<sp/>only<sp/>using<sp/>printers<sp/>outside<sp/>of<sp/>standalones</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Suspicious_Points(isStandalone):</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>contents<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/>///<sp/>Gambit<sp/>suspicious<sp/>point<sp/>exception<sp/>class.\n\</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/>class<sp/>Suspicious_point_exception\n\</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/>{\n\</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>public:\n\</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor\n\</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>Suspicious_point_exception()<sp/>{}\n\</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Raise<sp/>the<sp/>suspicious<sp/>point<sp/>exception.<sp/>Print<sp/>it<sp/>with<sp/>a<sp/>message<sp/>and<sp/>a<sp/>code.<sp/>The<sp/>default<sp/>code<sp/>is<sp/>1.\n\</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>raise(const<sp/>std::string<sp/>&amp;msg,<sp/>int<sp/>code=1,<sp/>bool<sp/>debug=false)\n\</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>{\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>isStandalone:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>contents<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>get<sp/>the<sp/>printer<sp/>pointer\n\</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Printers::BaseBasePrinter&amp;<sp/>printer<sp/>=<sp/>*(get_global_printer_manager()-&gt;printerptr);\n\</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printer.print(code,<sp/>\&quot;Suspicious<sp/>Point<sp/>Code\&quot;,<sp/>Printers::get_main_param_id(\&quot;Suspicious<sp/>Point<sp/>Code\&quot;),<sp/>printer.getRank(),<sp/>Printers::get_point_id());\n\</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral">\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>contents<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(debug)<sp/>std::cout<sp/>&lt;&lt;<sp/>\&quot;Point<sp/>Suspicious<sp/>(\&quot;<sp/>&lt;&lt;<sp/>code<sp/>&lt;&lt;<sp/>\&quot;):<sp/>\&quot;<sp/>&lt;&lt;<sp/>msg<sp/>&lt;&lt;<sp/>std::endl;\n\</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>}\n\</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/>};\n\</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral">\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>return(contents)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Main<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="gambit_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(argv):</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Handle<sp/>command<sp/>line<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>verbose<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>opts,<sp/>args<sp/>=<sp/>getopt.getopt(argv,</highlight><highlight class="stringliteral">&quot;v:&quot;</highlight><highlight class="normal">,[</highlight><highlight class="stringliteral">&quot;verbose&quot;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Extract<sp/>flag<sp/>for<sp/>standalone</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target<sp/>=<sp/>args[0]</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isStandalone<sp/>=<sp/>1<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;standalone&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>target<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;CBS&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>target<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>0</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;Usage:<sp/>elements_extras.py<sp/>[flags]<sp/>&lt;isStandalone&gt;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;<sp/>flags:&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-v<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>More<sp/>verbose<sp/>output&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys.exit(2)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>opt,<sp/>arg<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>opts:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>opt<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&apos;-v&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;--verbose&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verbose<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;elements_extras.py:<sp/>verbose=True&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>contents<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\</highlight></codeline>
+<codeline lineno="91"><highlight class="stringliteral">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool\n\</highlight></codeline>
+<codeline lineno="92"><highlight class="stringliteral">//<sp/><sp/><sp/>*********************************************\n\</highlight></codeline>
+<codeline lineno="93"><highlight class="stringliteral">///<sp/><sp/>\\file\n\</highlight></codeline>
+<codeline lineno="94"><highlight class="stringliteral">///\n\</highlight></codeline>
+<codeline lineno="95"><highlight class="stringliteral">///<sp/><sp/>Compile-time<sp/>generation<sp/>of<sp/>extra<sp/>code<sp/>in<sp/>Elements\n\</highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral">///<sp/><sp/>that<sp/>uses<sp/>the<sp/>Printers.<sp/>Required<sp/>to<sp/>avoid<sp/>the<sp/>use\n\</highlight></codeline>
+<codeline lineno="97"><highlight class="stringliteral">///<sp/><sp/>of<sp/>printers<sp/>in<sp/>the<sp/>standalones.\n\</highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral">///\n\</highlight></codeline>
+<codeline lineno="99"><highlight class="stringliteral">///<sp/><sp/>Classes<sp/>added:\n\</highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral">///<sp/><sp/>-<sp/>Suspicious<sp/>point<sp/>exception<sp/>class.\n\</highlight></codeline>
+<codeline lineno="101"><highlight class="stringliteral">///\n\</highlight></codeline>
+<codeline lineno="102"><highlight class="stringliteral">///<sp/><sp/>This<sp/>file<sp/>was<sp/>automatically<sp/>generated<sp/>by<sp/><sp/><sp/><sp/><sp/>\n\</highlight></codeline>
+<codeline lineno="103"><highlight class="stringliteral">///<sp/><sp/>elements_extras.py.<sp/>Do<sp/>not<sp/>modify.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\</highlight></codeline>
+<codeline lineno="104"><highlight class="stringliteral">///\n\</highlight></codeline>
+<codeline lineno="105"><highlight class="stringliteral">///<sp/><sp/>*********************************************\n\</highlight></codeline>
+<codeline lineno="106"><highlight class="stringliteral">///\n\</highlight></codeline>
+<codeline lineno="107"><highlight class="stringliteral">///<sp/><sp/>Authors:\n\</highlight></codeline>
+<codeline lineno="108"><highlight class="stringliteral">///\n\</highlight></codeline>
+<codeline lineno="109"><highlight class="stringliteral">///<sp/><sp/>\\author<sp/>The<sp/>GAMBIT<sp/>Collaboration<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\</highlight></codeline>
+<codeline lineno="110"><highlight class="stringliteral">///<sp/><sp/>\date<sp/>&quot;</highlight><highlight class="normal">+datetime.datetime.now().strftime(</highlight><highlight class="stringliteral">&quot;%I:%M%p<sp/>on<sp/>%B<sp/>%d,<sp/>%Y&quot;</highlight><highlight class="normal">)+</highlight><highlight class="stringliteral">&quot;\n\</highlight></codeline>
+<codeline lineno="111"><highlight class="stringliteral">///\n\</highlight></codeline>
+<codeline lineno="112"><highlight class="stringliteral">///<sp/><sp/>*********************************************\n\</highlight></codeline>
+<codeline lineno="113"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="114"><highlight class="stringliteral">#ifndef<sp/>__elements_extras_hpp__\n\</highlight></codeline>
+<codeline lineno="115"><highlight class="stringliteral">#define<sp/>__elements_extras_hpp__\n\</highlight></codeline>
+<codeline lineno="116"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="117"><highlight class="stringliteral">#include<sp/>&lt;map&gt;\n\</highlight></codeline>
+<codeline lineno="118"><highlight class="stringliteral">#include<sp/>&lt;set&gt;\n\</highlight></codeline>
+<codeline lineno="119"><highlight class="stringliteral">#include<sp/>&lt;string&gt;\n\</highlight></codeline>
+<codeline lineno="120"><highlight class="stringliteral">#include<sp/>&lt;exception&gt;\n\</highlight></codeline>
+<codeline lineno="121"><highlight class="stringliteral">#include<sp/>&lt;vector&gt;\n\</highlight></codeline>
+<codeline lineno="122"><highlight class="stringliteral">#include<sp/>&lt;utility&gt;\n\</highlight></codeline>
+<codeline lineno="123"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="124"><highlight class="stringliteral">#include<sp/>\&quot;gambit/Utils/util_macros.hpp\&quot;\n\</highlight></codeline>
+<codeline lineno="125"><highlight class="stringliteral">#include<sp/>\&quot;gambit/Logs/log_tags.hpp\&quot;\n\</highlight></codeline>
+<codeline lineno="126"><highlight class="stringliteral">\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>isStandalone:</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>contents<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\</highlight></codeline>
+<codeline lineno="130"><highlight class="stringliteral">#include<sp/>\&quot;gambit/Printers/printermanager.hpp\&quot;\n\</highlight></codeline>
+<codeline lineno="131"><highlight class="stringliteral">#include<sp/>\&quot;gambit/Printers/baseprinter.hpp\&quot;\n\</highlight></codeline>
+<codeline lineno="132"><highlight class="stringliteral">\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>contents<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\</highlight></codeline>
+<codeline lineno="135"><highlight class="stringliteral">namespace<sp/>Gambit\n\</highlight></codeline>
+<codeline lineno="136"><highlight class="stringliteral">{\n\</highlight></codeline>
+<codeline lineno="137"><highlight class="stringliteral">\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Here<sp/>add<sp/>calls<sp/>for<sp/>all<sp/>functions<sp/>that<sp/>generate<sp/>code<sp/>#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">########################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Suspicious<sp/>points,<sp/>avoid<sp/>using<sp/>the<sp/>printers<sp/>when<sp/>building<sp/>standalones</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>verbose:<sp/>print(</highlight><highlight class="stringliteral">&quot;Writing<sp/>suspicious<sp/>points<sp/>code&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>contents<sp/>+=<sp/>Suspicious_Points(isStandalone)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>contents<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\</highlight></codeline>
+<codeline lineno="147"><highlight class="stringliteral">}\n\</highlight></codeline>
+<codeline lineno="148"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="149"><highlight class="stringliteral">#endif\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Don&apos;t<sp/>touch<sp/>any<sp/>existing<sp/>file<sp/>unless<sp/>it<sp/>is<sp/>actually<sp/>different<sp/>from<sp/>what<sp/>we<sp/>will<sp/>create</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>header<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;./Elements/include/gambit/Elements/elements_extras.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>candidate<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;./scratch/build_time/&quot;</highlight><highlight class="normal"><sp/>+<sp/>target<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.hpp.candidate&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>open(candidate,</highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>f:<sp/>f.write(contents)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>update_only_if_different(header,<sp/>candidate,<sp/>verbose=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><ref refid="gambit_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(sys.argv[1:])</highlight></codeline>
+    </programlisting>
+    <location file="Elements/scripts/elements_extras.py"/>
+  </compounddef>
+</doxygen>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::sd_top2body_type
 
 
 
@@ -20,7 +19,7 @@ description: "[No description available]"
 | -------------- | -------------- |
 | Fdouble | **[brtopbw](/documentation/code/classes/structgambit_1_1sd__top2body__type/#variable-brtopbw)**  |
 | Fdouble | **[brtopbh](/documentation/code/classes/structgambit_1_1sd__top2body__type/#variable-brtopbh)**  |
-| Farray< Fdouble, 1, 4, 1, 2 > | **[brtopneutrstop](/documentation/code/classes/structgambit_1_1sd__top2body__type/#variable-brtopneutrstop)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brtopneutrstop](/documentation/code/classes/structgambit_1_1sd__top2body__type/#variable-brtopneutrstop)**  |
 
 ## Public Attributes Documentation
 
@@ -47,4 +46,4 @@ Farray< Fdouble, 1, 4, 1, 2 > brtopneutrstop;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

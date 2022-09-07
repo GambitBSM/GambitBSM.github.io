@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# ColliderBit/ColliderBit_MC_rollcall.hpp
 
 
 
@@ -4696,4 +4695,4 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:27 +0000
+Updated on 2022-09-07 at 13:49:55 +0000

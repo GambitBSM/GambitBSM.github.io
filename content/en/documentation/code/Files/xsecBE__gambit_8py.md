@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# 1.0.2/xsecBE_gambit.py
 
 
 
@@ -115,4 +114,4 @@ def get_xsection(proc):
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:28 +0000
+Updated on 2022-09-07 at 13:49:56 +0000

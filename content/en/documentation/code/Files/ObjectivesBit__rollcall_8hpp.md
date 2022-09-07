@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# ObjectivesBit/ObjectivesBit_rollcall.hpp
 
 
 
@@ -77,7 +76,7 @@ Compile-time registration of available observables and likelihoods, as well as t
 
 Add to this if you want to add an observable or likelihood to this module.
 
-Don't put typedefs or other type definitions in this file; see Elements/include/gambit/Elements/types_rollcall.hpp for further instructions on how to add new types.
+Don't put typedefs or other type definitions in this file; see [Elements/include/gambit/Elements/types_rollcall.hpp](/documentation/code/files/types__rollcall_8hpp/#file-types-rollcallhpp) for further instructions on how to add new types.
 
 
 
@@ -598,4 +597,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:53 +0000

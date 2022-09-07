@@ -23,7 +23,7 @@
         <location file="Core/include/gambit/Core/modelgraph.hpp" line="43" column="29" bodyfile="Core/include/gambit/Core/modelgraph.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classGambit_1_1ModelHierarchy_1a99da25e57428151a2f4aa4f25981b664" prot="private" static="no">
-        <type>boost::adjacency_list&lt; boost::vecS, boost::vecS, boost::bidirectionalS, functor *, EdgeColor &gt;</type>
+        <type>boost::adjacency_list&lt; boost::vecS, boost::vecS, boost::bidirectionalS, <ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *, EdgeColor &gt;</type>
         <definition>typedef boost::adjacency_list&lt;boost::vecS, boost::vecS, boost::bidirectionalS, functor*, EdgeColor&gt; Gambit::ModelHierarchy::ModelGraphType</definition>
         <argsstring></argsstring>
         <name>ModelGraphType</name>
@@ -128,7 +128,7 @@
         <name>ModelHierarchy</name>
         <qualifiedname>Gambit::ModelHierarchy::ModelHierarchy</qualifiedname>
         <param>
-          <type>const Models::ModelFunctorClaw &amp;</type>
+          <type>const <ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> &amp;</type>
           <defname>claw</defname>
         </param>
         <param>
@@ -136,7 +136,7 @@
           <defname>pmv</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>file</defname>
         </param>
         <param>
@@ -156,7 +156,7 @@
       </sectiondef>
       <sectiondef kind="private-type">
       <memberdef kind="typedef" id="classGambit_1_1ModelHierarchy_1ad39c0017e4a762855df005ea1c1d47d3" prot="private" static="no">
-        <type>std::vector&lt; primary_model_functor * &gt;</type>
+        <type>std::vector&lt; <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt;</type>
         <definition>typedef std::vector&lt;primary_model_functor*&gt; Gambit::ModelHierarchy::primodel_vec</definition>
         <argsstring></argsstring>
         <name>primodel_vec</name>
@@ -173,7 +173,7 @@
       </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classGambit_1_1ModelHierarchy_1a15b8ac3a15ca4a037cdbef8a7e54be27" prot="private" static="no" mutable="no">
-        <type>const Models::ModelFunctorClaw *</type>
+        <type>const <ref refid="classGambit_1_1Models_1_1ModelFunctorClaw" kindref="compound">Models::ModelFunctorClaw</ref> *</type>
         <definition>const Models::ModelFunctorClaw* Gambit::ModelHierarchy::boundClaw</definition>
         <argsstring></argsstring>
         <name>boundClaw</name>
@@ -188,7 +188,7 @@
         <location file="Core/include/gambit/Core/modelgraph.hpp" line="89" column="38" bodyfile="Core/include/gambit/Core/modelgraph.hpp" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1ModelHierarchy_1a3912068de97d2a20c4200953ce1737d6" prot="private" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::ModelHierarchy::filename</definition>
         <argsstring></argsstring>
         <name>filename</name>

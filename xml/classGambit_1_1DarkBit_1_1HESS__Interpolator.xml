@@ -4,7 +4,7 @@
     <compoundname>Gambit::DarkBit::HESS_Interpolator</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classGambit_1_1DarkBit_1_1HESS__Interpolator_1a40382d4423f7758482739904aa83b8b8" prot="public" static="no" mutable="no">
-        <type>ASCIItableReader</type>
+        <type><ref refid="classGambit_1_1ASCIItableReader" kindref="compound">ASCIItableReader</ref></type>
         <definition>ASCIItableReader Gambit::DarkBit::HESS_Interpolator::interp_lnL</definition>
         <argsstring></argsstring>
         <name>interp_lnL</name>
@@ -142,6 +142,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::ASCIItableReader</label>
+        <link refid="classGambit_1_1ASCIItableReader"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DarkBit::HESS_Interpolator</label>
+        <link refid="classGambit_1_1DarkBit_1_1HESS__Interpolator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>interp_lnL</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="DarkBit/src/Axions.cpp" line="370" column="5" bodyfile="DarkBit/src/Axions.cpp" bodystart="371" bodyend="387"/>
     <listofallmembers>
       <member refid="classGambit_1_1DarkBit_1_1HESS__Interpolator_1afe4c5606d80a3931a103af192689c9f0" prot="private" virt="non-virtual"><scope>Gambit::DarkBit::HESS_Interpolator</scope><name>acc</name></member>

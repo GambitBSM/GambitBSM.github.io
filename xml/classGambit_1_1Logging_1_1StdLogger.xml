@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Logging_1_1StdLogger" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Logging::StdLogger</compoundname>
+    <basecompoundref refid="classGambit_1_1Logging_1_1BaseLogger" prot="public" virt="non-virtual">Gambit::Logging::BaseLogger</basecompoundref>
+    <includes refid="logging_8hpp" local="no">logging.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1StdLogger_1abfd5380f35ee90466bbd47856d1113b5" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Gambit::Logging::StdLogger::my_own_fstream</definition>
+        <argsstring></argsstring>
+        <name>my_own_fstream</name>
+        <qualifiedname>Gambit::Logging::StdLogger::my_own_fstream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="148" column="23" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1StdLogger_1a9d0882610f0a86c2a8c65e45e648ad63" prot="private" static="no" mutable="no">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Gambit::Logging::StdLogger::my_stream</definition>
+        <argsstring></argsstring>
+        <name>my_stream</name>
+        <qualifiedname>Gambit::Logging::StdLogger::my_stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="149" column="22" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1StdLogger_1aeceaab434d1be8a5882f2d2246e66a9d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::Logging::StdLogger::MPIrank</definition>
+        <argsstring></argsstring>
+        <name>MPIrank</name>
+        <qualifiedname>Gambit::Logging::StdLogger::MPIrank</qualifiedname>
+        <briefdescription>
+<para>MPI variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="152" column="13" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1StdLogger_1a911a05015a64332326c4c23aaf347e1f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::Logging::StdLogger::MPIsize</definition>
+        <argsstring></argsstring>
+        <name>MPIsize</name>
+        <qualifiedname>Gambit::Logging::StdLogger::MPIsize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="153" column="13" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1StdLogger_1adb94be4b626eb97eb89e7d153ab8240d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Logging::StdLogger::StdLogger</definition>
+        <argsstring>(std::ostream &amp;)</argsstring>
+        <name>StdLogger</name>
+        <qualifiedname>Gambit::Logging::StdLogger::StdLogger</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>logstream</defname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;Standard&quot; logger class</para>
+<para>Constructor Attach logger object to an existing stream </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="128" column="9" bodyfile="Logs/src/logging.cpp" bodystart="263" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1StdLogger_1a334b2f79f79ca407597a41c30e1b8eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Logging::StdLogger::StdLogger</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>StdLogger</name>
+        <qualifiedname>Gambit::Logging::StdLogger::StdLogger</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+<para>Alternate constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Open new file stream and manage it internally. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="132" column="9" bodyfile="Logs/src/logging.cpp" bodystart="286" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1StdLogger_1ab77031c2b4d6214351531626805d18b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Gambit::Logging::StdLogger::~StdLogger</definition>
+        <argsstring>()</argsstring>
+        <name>~StdLogger</name>
+        <qualifiedname>Gambit::Logging::StdLogger::~StdLogger</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="135" column="17" bodyfile="Logs/src/logging.cpp" bodystart="312" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1StdLogger_1a4adbc87432352811842534b62bd201cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::StdLogger::write</definition>
+        <argsstring>(const SortedMessage &amp;)</argsstring>
+        <name>write</name>
+        <qualifiedname>Gambit::Logging::StdLogger::write</qualifiedname>
+        <reimplements refid="classGambit_1_1Logging_1_1BaseLogger_1ae9e09212ec5334fd2507df786e635491">write</reimplements>
+        <param>
+          <type>const <ref refid="structGambit_1_1Logging_1_1SortedMessage" kindref="compound">SortedMessage</ref> &amp;</type>
+          <defname>mail</defname>
+        </param>
+        <briefdescription>
+<para>Write message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Write message to log file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="138" column="22" bodyfile="Logs/src/logging.cpp" bodystart="315" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1StdLogger_1ae19a4acbccd67fd92c7961952f32e754" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::StdLogger::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>Gambit::Logging::StdLogger::flush</qualifiedname>
+        <reimplements refid="classGambit_1_1Logging_1_1BaseLogger_1aa81e0b120d1172e7e28f760acada1fd9">flush</reimplements>
+        <briefdescription>
+<para>Flush stream buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="141" column="22" bodyfile="Logs/src/logging.cpp" bodystart="372" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1StdLogger_1a0cf9771819a14f41804d6b269ffc6f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::StdLogger::writetags</definition>
+        <argsstring>(const std::set&lt; LogTag &gt; &amp;)</argsstring>
+        <name>writetags</name>
+        <qualifiedname>Gambit::Logging::StdLogger::writetags</qualifiedname>
+        <param>
+          <type>const std::set&lt; LogTag &gt; &amp;</type>
+          <defname>tags</defname>
+        </param>
+        <briefdescription>
+<para>Look up names corresponding to tags and write them out to the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="144" column="14" bodyfile="Logs/src/logging.cpp" bodystart="339" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1StdLogger_1aedfe7b7fbd64e1333b48e91235dc22a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::StdLogger::writetags</definition>
+        <argsstring>(const std::set&lt; int &gt; &amp;)</argsstring>
+        <name>writetags</name>
+        <qualifiedname>Gambit::Logging::StdLogger::writetags</qualifiedname>
+        <param>
+          <type>const std::set&lt; int &gt; &amp;</type>
+          <defname>tags</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="145" column="14" bodyfile="Logs/src/logging.cpp" bodystart="350" bodyend="368"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Logger for &apos;standard&apos; messages. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::Logging::BaseLogger</label>
+        <link refid="classGambit_1_1Logging_1_1BaseLogger"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Logging::StdLogger</label>
+        <link refid="classGambit_1_1Logging_1_1StdLogger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Logging::BaseLogger</label>
+        <link refid="classGambit_1_1Logging_1_1BaseLogger"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Logging::StdLogger</label>
+        <link refid="classGambit_1_1Logging_1_1StdLogger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Logs/include/gambit/Logs/logging.hpp" line="123" column="5" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="124" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1ae19a4acbccd67fd92c7961952f32e754" prot="public" virt="virtual"><scope>Gambit::Logging::StdLogger</scope><name>flush</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1aeceaab434d1be8a5882f2d2246e66a9d" prot="private" virt="non-virtual"><scope>Gambit::Logging::StdLogger</scope><name>MPIrank</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1a911a05015a64332326c4c23aaf347e1f" prot="private" virt="non-virtual"><scope>Gambit::Logging::StdLogger</scope><name>MPIsize</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1abfd5380f35ee90466bbd47856d1113b5" prot="private" virt="non-virtual"><scope>Gambit::Logging::StdLogger</scope><name>my_own_fstream</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1a9d0882610f0a86c2a8c65e45e648ad63" prot="private" virt="non-virtual"><scope>Gambit::Logging::StdLogger</scope><name>my_stream</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1adb94be4b626eb97eb89e7d153ab8240d" prot="public" virt="non-virtual"><scope>Gambit::Logging::StdLogger</scope><name>StdLogger</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1a334b2f79f79ca407597a41c30e1b8eb8" prot="public" virt="non-virtual"><scope>Gambit::Logging::StdLogger</scope><name>StdLogger</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1a4adbc87432352811842534b62bd201cc" prot="public" virt="virtual"><scope>Gambit::Logging::StdLogger</scope><name>write</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1a0cf9771819a14f41804d6b269ffc6f28" prot="public" virt="non-virtual"><scope>Gambit::Logging::StdLogger</scope><name>writetags</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1aedfe7b7fbd64e1333b48e91235dc22a3" prot="public" virt="non-virtual"><scope>Gambit::Logging::StdLogger</scope><name>writetags</name></member>
+      <member refid="classGambit_1_1Logging_1_1BaseLogger_1aaf889cd4745c416eef6949ce09f942d1" prot="public" virt="virtual"><scope>Gambit::Logging::StdLogger</scope><name>~BaseLogger</name></member>
+      <member refid="classGambit_1_1Logging_1_1StdLogger_1ab77031c2b4d6214351531626805d18b8" prot="public" virt="virtual"><scope>Gambit::Logging::StdLogger</scope><name>~StdLogger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="175" column="13" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__HiggsMassObs__container_1a363e60f4613993836f1bb8c0ecf0f827" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_HiggsMassObs_container::SinAlphaEff</definition>
         <argsstring></argsstring>
         <name>SinAlphaEff</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="178" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__HiggsMassObs__container_1af0809e9866f017ee10a599fce70b20ef" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_HiggsMassObs_container::deltaSinAlphaEff</definition>
         <argsstring></argsstring>
         <name>deltaSinAlphaEff</name>
@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="179" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__HiggsMassObs__container_1a7447aba23dba26a29df8c9adb0a1f6a7" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_HiggsMassObs_container::UH[3][3]</definition>
         <argsstring>[3][3]</argsstring>
         <name>UH</name>
@@ -74,7 +74,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="183" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__HiggsMassObs__container_1a626f3e3bdb117d3c9764c67ba044dd09" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_HiggsMassObs_container::deltaUH[3][3]</definition>
         <argsstring>[3][3]</argsstring>
         <name>deltaUH</name>
@@ -88,7 +88,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="184" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__HiggsMassObs__container_1a4c1ac6301d0153be94cc4a07669a7d1f" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_HiggsMassObs_container::ZH[3][3]</definition>
         <argsstring>[3][3]</argsstring>
         <name>ZH</name>
@@ -102,7 +102,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="188" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__HiggsMassObs__container_1ad16f2154a24afa46687f35c685628ff6" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_HiggsMassObs_container::deltaZH[3][3]</definition>
         <argsstring>[3][3]</argsstring>
         <name>deltaZH</name>
@@ -120,6 +120,24 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::FcomplexT&lt; T &gt;</label>
+        <link refid="classGambit_1_1FcomplexT"/>
+      </node>
+      <node id="1">
+        <label>Gambit::fh_HiggsMassObs_container</label>
+        <link refid="structGambit_1_1fh__HiggsMassObs__container"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>SinAlphaEff</edgelabel>
+          <edgelabel>UH</edgelabel>
+          <edgelabel>ZH</edgelabel>
+          <edgelabel>deltaSinAlphaEff</edgelabel>
+          <edgelabel>deltaUH</edgelabel>
+          <edgelabel>deltaZH</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="167" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="168" bodyend="190"/>
     <listofallmembers>
       <member refid="structGambit_1_1fh__HiggsMassObs__container_1aeb2f07f4bc063fd1c3b130da1932dbda" prot="public" virt="non-virtual"><scope>Gambit::fh_HiggsMassObs_container</scope><name>deltaMH</name></member>

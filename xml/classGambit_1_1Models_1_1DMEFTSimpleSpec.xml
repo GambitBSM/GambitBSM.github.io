@@ -1,0 +1,1294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Models_1_1DMEFTSimpleSpec" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Models::DMEFTSimpleSpec</compoundname>
+    <basecompoundref refid="classGambit_1_1Spec" prot="public" virt="non-virtual">Gambit::Spec&lt; DMEFTSimpleSpec &gt;</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a85c6c0163d0b3c51b606b2fe2cd68946" prot="private" static="no">
+        <type><ref refid="classGambit_1_1Models_1_1DMEFTSimpleSpec" kindref="compound">DMEFTSimpleSpec</ref></type>
+        <definition>typedef DMEFTSimpleSpec Gambit::Models::DMEFTSimpleSpec::Self</definition>
+        <argsstring></argsstring>
+        <name>Self</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::Self</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="78" column="31" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a56107f790b1be45432446057e5ce7f5d" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1Models_1_1DMEFTModel" kindref="compound">DMEFTModel</ref></type>
+        <definition>DMEFTModel Gambit::Models::DMEFTSimpleSpec::params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="77" column="20" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa10b407f6b17095be7044892de07ce4c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structGambit_1_1SpectrumContents_1_1DMEFT" kindref="compound">SpectrumContents::DMEFT</ref></type>
+        <definition>const SpectrumContents::DMEFT Gambit::Models::DMEFTSimpleSpec::contents</definition>
+        <argsstring></argsstring>
+        <name>contents</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::contents</qualifiedname>
+        <briefdescription>
+<para>Construct the <ref refid="classGambit_1_1SubSpectrumContents" kindref="compound">SubSpectrumContents</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="89" column="37" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ac927c0bea1b069d2df9095c11588def7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Models::DMEFTSimpleSpec::DMEFTSimpleSpec</definition>
+        <argsstring>(const DMEFTModel &amp;p)</argsstring>
+        <name>DMEFTSimpleSpec</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::DMEFTSimpleSpec</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Models_1_1DMEFTModel" kindref="compound">DMEFTModel</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Constructors &amp; destructors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="82" column="7" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a25eb46fa76d55e2d8f59f15423aafc6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::add_to_SLHAea</definition>
+        <argsstring>(int, SLHAea::Coll &amp;slha) const</argsstring>
+        <name>add_to_SLHAea</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::add_to_SLHAea</qualifiedname>
+        <reimplements refid="classGambit_1_1SubSpectrum_1acdbd6db5cc3b473b7e6445bfcf686f64">add_to_SLHAea</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>SLHAea::Coll &amp;</type>
+          <declname>slha</declname>
+        </param>
+        <briefdescription>
+<para>Add SLHAea object using the SimpleSpec_to_SLHAea routine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="92" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="92" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a5da14ed2c4ea393b2cd43a80c2dce3ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_Lambda</definition>
+        <argsstring>() const</argsstring>
+        <name>get_Lambda</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_Lambda</qualifiedname>
+        <briefdescription>
+<para>Wrapper functions to parameter object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="103" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a86bbdce098f5ee9671be612646f24d35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C51</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C51</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C51</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="104" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a3d370905859fae94dca4ac1f6d0abfc0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C52</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C52</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C52</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="105" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1acc7e343ebe460fcc2c75c9ad29e649b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C61</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C61</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C61</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="106" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aedf17021f1abe4b0905ed479a654e4a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C62</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C62</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C62</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="107" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ad945efd7b95766fb8f40b1b616abfa49" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C63</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C63</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C63</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="108" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ad7f3dfbd3584e7cde07bb1b9794750d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C64</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C64</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C64</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="109" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ac98452ee45fc2ce3452d542444b70a5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C71</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C71</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C71</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="110" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a6f1782f96ccf12a1a3eb4db7c3fba2af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C72</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C72</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C72</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="111" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ab7bc1a38ab9de6b1f1207489debbb12f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C73</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C73</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C73</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="112" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa99aa70f25df4325d393d15d149d8bd5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C74</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C74</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C74</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="113" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1abe71bc14b950b526d8f23698de62b723" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C75</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C75</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C75</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="114" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1acfefac4af3223afda4d4cb4a81df9680" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C76</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C76</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C76</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="115" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1af5e6cfb5dfb5e42644b2cb3042f5adf4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C77</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C77</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C77</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="116" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a9773d60cf57387e97cff84332a775abe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C78</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C78</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C78</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="117" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1af6cf4247b19605f15938dcf7f092abd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C79</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C79</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C79</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="118" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a254ebeec4e4c737b3d9c1b20caaceebe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_C710</definition>
+        <argsstring>() const</argsstring>
+        <name>get_C710</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_C710</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="119" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a484b76281d479879668b4b06c6c8d0fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_vev</definition>
+        <argsstring>() const</argsstring>
+        <name>get_vev</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_vev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="120" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1af6d6a8a59f09ce77f4ff665c4020adae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_g1</definition>
+        <argsstring>() const</argsstring>
+        <name>get_g1</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_g1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="121" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a0b41b4f6e335f59a7880b9015d213dbc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_g2</definition>
+        <argsstring>() const</argsstring>
+        <name>get_g2</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_g2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="122" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a08839a14942c1c1db212b3a4cf5fdf87" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_g3</definition>
+        <argsstring>() const</argsstring>
+        <name>get_g3</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_g3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="123" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a234346ede774675d1f30f4eb39906a7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_sinW2</definition>
+        <argsstring>() const</argsstring>
+        <name>get_sinW2</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_sinW2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="124" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a9e52efcd7be9fb473858034ddf284f09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_Yd</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_Yd</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_Yd</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="125" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ae48adaac5a38e81fb05458d501b295bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_Yu</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_Yu</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_Yu</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="126" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a966579526f84c00d3e0eb471bafc4fd8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_Ye</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>get_Ye</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_Ye</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="127" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a337ce7c36c69a33d07a505c7c035acbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_chiPoleMass</definition>
+        <argsstring>() const</argsstring>
+        <name>get_chiPoleMass</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_chiPoleMass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="128" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a54b1343f81626b8d6687673b3c11fd9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_h0_1PoleMass</definition>
+        <argsstring>() const</argsstring>
+        <name>get_h0_1PoleMass</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_h0_1PoleMass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="129" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ae925a42b6ec9db1aff54f63b0c986e2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Models::DMEFTSimpleSpec::get_mtrun</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mtrun</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::get_mtrun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="130" column="14" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1afbbe131f8052190e61fd2e87e3c1e951" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_Lambda</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_Lambda</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_Lambda</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="132" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a2aad962cf4d85b3c23b96a59b6cfa3cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C51</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C51</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C51</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="133" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1afd013123631d698e4ee77af1d4f27c61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C52</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C52</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C52</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="134" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a69f5c6bed0c2e4436823f127029ebcc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C61</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C61</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C61</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="135" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a4195175dd979f10c589f852f2a08bcd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C62</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C62</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C62</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="136" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a5996f2724b28a44663f632d851125308" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C63</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C63</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C63</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="137" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1acff0d57dec529f18697f6fd09413c690" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C64</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C64</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C64</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="138" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a83d33ad8fecc4f59f0901f5e29c88ea2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C71</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C71</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C71</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="139" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a86aa74906a63f5bfade38e039004c4d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C72</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C72</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C72</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="140" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a5f4097b0cdaa79fac06d5a3615805749" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C73</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C73</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C73</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="141" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a3180449eef6d511d4a31b3e5b652246f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C74</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C74</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C74</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="142" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a6dd1bbea48f3200e0c51dde09bbe5308" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C75</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C75</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C75</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="143" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a47c47805ab317be9db7cce41b0450bda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C76</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C76</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C76</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="144" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa816f6b7c06ef34473d0620de235dfa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C77</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C77</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C77</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="145" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a0e06b5a978c2b6b505f967d6970868e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C78</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C78</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C78</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="146" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a31a5b79fd871f4b25c8d0a4aab0e2466" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C79</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C79</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C79</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="147" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa81b29f87480ceaf160f9fb9e647b233" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_C710</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_C710</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_C710</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="148" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a73ffef0ae04c2e2771bab771693bed60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_vev</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_vev</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_vev</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="149" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a3dfae3ee6b44a88fc87a11748699deec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_g1</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_g1</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_g1</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="150" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a600dd670b7453eb1c1800f02685adc2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_g2</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_g2</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_g2</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="151" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a9b3bd1a55fdf533e9d3e348546c202d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_g3</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_g3</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_g3</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="152" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1affb6cc503da160074d085b7c4930015b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_sinW2</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_sinW2</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_sinW2</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="153" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a4182c823dae8e5f305aa2469c7fbbbd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_Yd</definition>
+        <argsstring>(double in, int i, int j)</argsstring>
+        <name>set_Yd</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_Yd</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="154" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aaabf387c47cd21e25e4a2e8c2bb62407" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_Yu</definition>
+        <argsstring>(double in, int i, int j)</argsstring>
+        <name>set_Yu</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_Yu</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="155" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a826e4a50fc13ffe24ec915ef4c966113" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_Ye</definition>
+        <argsstring>(double in, int i, int j)</argsstring>
+        <name>set_Ye</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_Ye</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="156" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a71df4bc6bd167808e999f1e9a9ea93b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_chiPoleMass</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_chiPoleMass</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_chiPoleMass</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="157" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a020e69ed919cdb80758324bbf7a11482" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_h0_1PoleMass</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_h0_1PoleMass</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_h0_1PoleMass</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="158" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a090e566ab41e0c86b23a1e068913dca8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Models::DMEFTSimpleSpec::set_mtrun</definition>
+        <argsstring>(double in)</argsstring>
+        <name>set_mtrun</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::set_mtrun</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="159" column="12" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="159" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a6efe80aa05096ce6e1702009db2cb96f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Gambit::Models::DMEFTSimpleSpec::index_offset</definition>
+        <argsstring>()</argsstring>
+        <name>index_offset</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::index_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="86" column="18" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a7ab09fbb23ba8472801746db2759f407" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Spec_1a46858e18ee3cb4193dbaee50b698e0b4" kindref="member">GetterMaps</ref></type>
+        <definition>static GetterMaps Gambit::Models::DMEFTSimpleSpec::fill_getter_maps</definition>
+        <argsstring>()</argsstring>
+        <name>fill_getter_maps</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::fill_getter_maps</qualifiedname>
+        <briefdescription>
+<para>Map fillers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="161" column="25" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="161" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa20f37f59fc2037f301d73d8090a0fcf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SetterMaps</type>
+        <definition>static SetterMaps Gambit::Models::DMEFTSimpleSpec::fill_setter_maps</definition>
+        <argsstring>()</argsstring>
+        <name>fill_setter_maps</name>
+        <qualifiedname>Gambit::Models::DMEFTSimpleSpec::fill_setter_maps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="202" column="25" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="202" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::Models::DMEFTSimpleSpec</label>
+        <link refid="classGambit_1_1Models_1_1DMEFTSimpleSpec"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::SubSpectrum</label>
+        <link refid="classGambit_1_1SubSpectrum"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Spec&lt; DMEFTSimpleSpec &gt;</label>
+        <link refid="classGambit_1_1Spec"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Gambit::DummyInput</label>
+        <link refid="classGambit_1_1DummyInput"/>
+      </node>
+      <node id="4">
+        <label>Gambit::DummyModel</label>
+        <link refid="classGambit_1_1DummyModel"/>
+      </node>
+      <node id="1">
+        <label>Gambit::Models::DMEFTSimpleSpec</label>
+        <link refid="classGambit_1_1Models_1_1DMEFTSimpleSpec"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>contents</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gambit::SpectrumContents::DMEFT</label>
+        <link refid="structGambit_1_1SpectrumContents_1_1DMEFT"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::SubSpectrum</label>
+        <link refid="classGambit_1_1SubSpectrum"/>
+      </node>
+      <node id="7">
+        <label>Gambit::SubSpectrumContents</label>
+        <link refid="classGambit_1_1SubSpectrumContents"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Spec&lt; DMEFTSimpleSpec &gt;</label>
+        <link refid="classGambit_1_1Spec"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>dummymodel</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>dummyinput</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" line="74" column="5" bodyfile="Models/include/gambit/Models/SimpleSpectra/DMEFTSimpleSpec.hpp" bodystart="75" bodyend="242"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a25eb46fa76d55e2d8f59f15423aafc6e" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>add_to_SLHAea</name></member>
+      <member refid="classGambit_1_1Spec_1a55f346d5bd5a3246a47a5db8404949fb" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>clone</name></member>
+      <member refid="classGambit_1_1Spec_1a80dddcba2892f90ccef373a0f51c3710" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>Contents</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa10b407f6b17095be7044892de07ce4c" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>contents</name></member>
+      <member refid="classGambit_1_1Spec_1a7ecd550a7de5305518b34181187c3544" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>D</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ac927c0bea1b069d2df9095c11588def7" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>DMEFTSimpleSpec</name></member>
+      <member refid="classGambit_1_1Spec_1a67132916b8ea14758e0e222f9948075a" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>dummyinput</name></member>
+      <member refid="classGambit_1_1Spec_1a52e6395fb74217ac8421fbb8beeed75c" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>dummymodel</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a7ab09fbb23ba8472801746db2759f407" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>fill_getter_maps</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa20f37f59fc2037f301d73d8090a0fcf" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>fill_setter_maps</name></member>
+      <member refid="classGambit_1_1Spec_1a32039cdccf1c944121203d2eec5e6294" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1Spec_1a48c24aae484150638d00063f4f3784ef" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1Spec_1a45d36489185d33a2d32ac94a95e61e04" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a4aa3c288df9625876aa5dc1271450a4f" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ad777663700297fc43301c2a71288e56c" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a785b082b5f58bd249dc1a6f6321db435" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a86bbdce098f5ee9671be612646f24d35" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C51</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a3d370905859fae94dca4ac1f6d0abfc0" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C52</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1acc7e343ebe460fcc2c75c9ad29e649b0" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C61</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aedf17021f1abe4b0905ed479a654e4a3" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C62</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ad945efd7b95766fb8f40b1b616abfa49" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C63</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ad7f3dfbd3584e7cde07bb1b9794750d3" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C64</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ac98452ee45fc2ce3452d542444b70a5b" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C71</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a254ebeec4e4c737b3d9c1b20caaceebe" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C710</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a6f1782f96ccf12a1a3eb4db7c3fba2af" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C72</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ab7bc1a38ab9de6b1f1207489debbb12f" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C73</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa99aa70f25df4325d393d15d149d8bd5" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C74</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1abe71bc14b950b526d8f23698de62b723" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C75</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1acfefac4af3223afda4d4cb4a81df9680" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C76</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1af5e6cfb5dfb5e42644b2cb3042f5adf4" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C77</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a9773d60cf57387e97cff84332a775abe" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C78</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1af6cf4247b19605f15938dcf7f092abd1" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_C79</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a337ce7c36c69a33d07a505c7c035acbf" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_chiPoleMass</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1af6d6a8a59f09ce77f4ff665c4020adae" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_g1</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a0b41b4f6e335f59a7880b9015d213dbc" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_g2</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a08839a14942c1c1db212b3a4cf5fdf87" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_g3</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a54b1343f81626b8d6687673b3c11fd9b" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_h0_1PoleMass</name></member>
+      <member refid="classGambit_1_1Spec_1a6497115a3da1e3be0bae8dbf09597a82" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_Input</name></member>
+      <member refid="classGambit_1_1Spec_1a0728e2404207643cef8af76fa9b557be" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_Input</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a5da14ed2c4ea393b2cd43a80c2dce3ae" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_Lambda</name></member>
+      <member refid="classGambit_1_1Spec_1a15563086ec03ac87244c56c3d918b051" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_Model</name></member>
+      <member refid="classGambit_1_1Spec_1ac08988f76e5ecd58841101ffa576fba7" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_Model</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ae925a42b6ec9db1aff54f63b0c986e2d" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_mtrun</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a5e9acc22b9d462e531c50b5727c870c1" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_numbers_stable_particles</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a234346ede774675d1f30f4eb39906a7f" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_sinW2</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a484b76281d479879668b4b06c6c8d0fd" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_vev</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a9e52efcd7be9fb473858034ddf284f09" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_Yd</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a966579526f84c00d3e0eb471bafc4fd8" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_Ye</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1ae48adaac5a38e81fb05458d501b295bd" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>get_Yu</name></member>
+      <member refid="classGambit_1_1Spec_1ac2f5dcb72ade4248d48a08316cb2a5ce" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>getName</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a7bd448d64af954e4b596f4a6eebea0e9" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>GetScale</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a5a6fd9949ec1ffe5d0b1d6b64f568b01" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>getSLHAea</name></member>
+      <member refid="classGambit_1_1Spec_1a471ed98efd9bb9072a1b83db0e8ce89b" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>getter_maps</name></member>
+      <member refid="classGambit_1_1Spec_1a46858e18ee3cb4193dbaee50b698e0b4" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>GetterMaps</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1aa4b3a1ca4b864081a054b323a1c2f90f" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>hard_lower</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a7f39428653fa985b340c1df498d6ec42" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>hard_upper</name></member>
+      <member refid="classGambit_1_1Spec_1a1a03962018f5cf85f34261eeca2106a6" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1Spec_1aad9ca06fbc280f69a1f7be1bd49c571b" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1Spec_1a848841a535a7e421544bfaae913c96b9" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a4828fe7699db6cd695871eac0e944f90" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ab8004e0a7ca69f1a0fffa7b18a3f7182" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a1ce6d110547e72c5db901dd92c40444b" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a6efe80aa05096ce6e1702009db2cb96f" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>index_offset</name></member>
+      <member refid="classGambit_1_1Spec_1a11885c8d86ed99101f08a3967f63061b" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>input</name></member>
+      <member refid="classGambit_1_1Spec_1a887a14df9f65f1180a6293d376a332a5" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>input</name></member>
+      <member refid="classGambit_1_1Spec_1afba2b674ca82b08cb9da7efe9b748f87" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>Input</name></member>
+      <member refid="classGambit_1_1Spec_1a8d1d5df6f8e2acca6f370732a8e13304" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>model</name></member>
+      <member refid="classGambit_1_1Spec_1ab3ebfb60469691d2e534fd61edb2f321" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>model</name></member>
+      <member refid="classGambit_1_1Spec_1ac9221898f513865a71aa960ad6b98066" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>Model</name></member>
+      <member refid="classGambit_1_1Spec_1a6422cde16683cddf868ef3ab2086d091" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>MTget</name></member>
+      <member refid="classGambit_1_1Spec_1ae001321f0ef3e004af15e3d7cc2d8dee" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>MTset</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ae733c2e2d247f846a957dd880d165144" prot="protected" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>override_maps</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a56107f790b1be45432446057e5ce7f5d" prot="private" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>params</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a6f23c9146e2d9eab8a3db88f5a5232b6" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>PDG_translator</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a123082cb4740033d2ae243c1d27cea28" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>RunToScale</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a64445baba3f7a8bf116bea7caba1a52c" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>RunToScaleOverride</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a12bb8ae854bdbf402adcd3eeab3387e2" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1aaeff9db607b0a8118fdcd380ee6a0eba" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a69d2743c3bc07fd881cc83fd5bbe216a" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a8271aef7ca1cca4c7da767e5cade9c59" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1adf70c0de7818c1d85c0d0fcd8013aa76" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a622717528952171fa114ae152c7ae340" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a85c6c0163d0b3c51b606b2fe2cd68946" prot="private" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>Self</name></member>
+      <member refid="classGambit_1_1Spec_1a3c8274c5d829777b70f0b76a2288fd60" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set</name></member>
+      <member refid="classGambit_1_1Spec_1a24d8166cfb2158151a17af9aa692100e" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set</name></member>
+      <member refid="classGambit_1_1Spec_1a16af53e2c8878cf0432b99cf63e3161b" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a2aad962cf4d85b3c23b96a59b6cfa3cc" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C51</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1afd013123631d698e4ee77af1d4f27c61" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C52</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a69f5c6bed0c2e4436823f127029ebcc6" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C61</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a4195175dd979f10c589f852f2a08bcd9" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C62</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a5996f2724b28a44663f632d851125308" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C63</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1acff0d57dec529f18697f6fd09413c690" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C64</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a83d33ad8fecc4f59f0901f5e29c88ea2" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C71</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa81b29f87480ceaf160f9fb9e647b233" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C710</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a86aa74906a63f5bfade38e039004c4d4" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C72</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a5f4097b0cdaa79fac06d5a3615805749" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C73</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a3180449eef6d511d4a31b3e5b652246f" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C74</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a6dd1bbea48f3200e0c51dde09bbe5308" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C75</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a47c47805ab317be9db7cce41b0450bda" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C76</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aa816f6b7c06ef34473d0620de235dfa6" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C77</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a0e06b5a978c2b6b505f967d6970868e3" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C78</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a31a5b79fd871f4b25c8d0a4aab0e2466" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_C79</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a71df4bc6bd167808e999f1e9a9ea93b9" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_chiPoleMass</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a3dfae3ee6b44a88fc87a11748699deec" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_g1</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a600dd670b7453eb1c1800f02685adc2e" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_g2</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a9b3bd1a55fdf533e9d3e348546c202d3" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_g3</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a020e69ed919cdb80758324bbf7a11482" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_h0_1PoleMass</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1afbbe131f8052190e61fd2e87e3c1e951" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_Lambda</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a090e566ab41e0c86b23a1e068913dca8" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_mtrun</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a723f6a66f3875abd2c6a6e8d8e03266d" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ad272d296f35e6ad0168b4e092eb53943" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1abc80e335179d3633c2f537325673e0ab" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a456eeb816ef8539eaa8bd85e04d6f1c8" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1adef6cacf9f63fcd1cbba22629399ad18" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a8f4bd036dd357d53e34e28615842a803" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ae0c6a2e9b63648b48911b76d6fabf63d" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override_vector</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a53c514918a7a32dce21697dbc9af95d7" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override_vector</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1af1551952a18488ce3793e062bf933a7a" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override_vector</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a21cab80b6c51bfb5801fb5e31896e164" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_override_vector</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1affb6cc503da160074d085b7c4930015b" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_sinW2</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a73ffef0ae04c2e2771bab771693bed60" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_vev</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a4182c823dae8e5f305aa2469c7fbbbd3" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_Yd</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1a826e4a50fc13ffe24ec915ef4c966113" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_Ye</name></member>
+      <member refid="classGambit_1_1Models_1_1DMEFTSimpleSpec_1aaabf387c47cd21e25e4a2e8c2bb62407" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>set_Yu</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1aa6014ef072831d0117332e3df719ebf3" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>SetScale</name></member>
+      <member refid="classGambit_1_1Spec_1a0ce21458302cf6f6e7597408ca8cd068" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>setter_maps</name></member>
+      <member refid="classGambit_1_1Spec_1a72b345be00d45ee6413b1d6a7e281124" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>SetterMaps</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a86e81042c8a0c13821a9c45d616c5b9b" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>soft_lower</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a3fa1af32eea87011aa4c6dce006878c7" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>soft_upper</name></member>
+      <member refid="classGambit_1_1Spec_1a42196ab2958c64ec51fdfbc175808dad" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>Spec</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a56f353d2be541104f324b2e449a0e682" prot="public" virt="non-virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>SubSpectrum</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a7f86c4329e031f37ec2faffa5b1a48f4" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>writeSLHAfile</name></member>
+      <member refid="classGambit_1_1Spec_1ac619e173f59a1f523001981952ed30ef" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>~Spec</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a52ae9f8b079817bb6a26b53779fd1df9" prot="public" virt="virtual"><scope>Gambit::Models::DMEFTSimpleSpec</scope><name>~SubSpectrum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

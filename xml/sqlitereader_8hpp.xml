@@ -1,0 +1,1208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="sqlitereader_8hpp" kind="file" language="C++">
+    <compoundname>sqlitereader.hpp</compoundname>
+    <includes local="no">sqlite3.h</includes>
+    <includes refid="baseprinter_8hpp" local="yes">gambit/Printers/baseprinter.hpp</includes>
+    <includes refid="sqlitebase_8hpp" local="yes">gambit/Printers/printers/sqlitebase.hpp</includes>
+    <includes refid="sqlitetypes_8hpp" local="yes">gambit/Printers/printers/sqlitetypes.hpp</includes>
+    <includes local="no">boost/preprocessor/seq/for_each_i.hpp</includes>
+    <includedby refid="sqliteprinter_2retrieve__overloads_8cpp" local="yes">retrieve_overloads.cpp</includedby>
+    <includedby refid="sqlitereader_8cpp" local="yes">sqlitereader.cpp</includedby>
+    <incdepgraph>
+      <node id="111">
+        <label>gambit/Backends/backend_info.hpp</label>
+        <link refid="backend__info_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>gambit/Backends/backend_singleton.hpp</label>
+        <link refid="backend__singleton_8hpp"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>gambit/Backends/default_bossed_versions.hpp</label>
+        <link refid="default__bossed__versions_8hpp"/>
+      </node>
+      <node id="108">
+        <label>gambit/Backends/mathematica_variable.hpp</label>
+        <link refid="mathematica__variable_8hpp"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>gambit/Backends/python_helpers.hpp</label>
+        <link refid="python__helpers_8hpp"/>
+      </node>
+      <node id="113">
+        <label>gambit/Backends/python_variable.hpp</label>
+        <link refid="python__variable_8hpp"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>gambit/Elements/daFunk.hpp</label>
+        <link refid="daFunk_8hpp_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>gambit/Elements/decay_table.hpp</label>
+        <link refid="decay__table_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>gambit/Elements/flav_prediction.hpp</label>
+        <link refid="flav__prediction_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>gambit/Elements/halo_types.hpp</label>
+        <link refid="halo__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>gambit/Elements/higgs_couplings_table.hpp</label>
+        <link refid="higgs__couplings__table_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>gambit/Elements/ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+        <link refid="mssm__slhahelp_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>gambit/Elements/printable_types.hpp</label>
+        <link refid="Elements_2include_2gambit_2Elements_2printable__types_8hpp"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>gambit/Elements/shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
+        <link refid="slhaea__spec__helpers_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>gambit/Elements/sminputs.hpp</label>
+        <link refid="sminputs_8hpp"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>gambit/Elements/spectrum.hpp</label>
+        <link refid="spectrum_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>gambit/Elements/spectrum_helpers.hpp</label>
+        <link refid="spectrum__helpers_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>gambit/Elements/subspectrum.hpp</label>
+        <link refid="subspectrum_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>gambit/Elements/types_rollcall.hpp</label>
+        <link refid="types__rollcall_8hpp"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>gambit/Elements/wimp_types.hpp</label>
+        <link refid="wimp__types_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="67">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>gambit/Models/partmap.hpp</label>
+        <link refid="partmap_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>gambit/Models/safe_param_map.hpp</label>
+        <link refid="safe__param__map_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gambit/Printers/basebaseprinter.hpp</label>
+        <link refid="basebaseprinter_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/Printers/baseprinter.hpp</label>
+        <link refid="baseprinter_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>gambit/Printers/baseprintermanager.hpp</label>
+        <link refid="baseprintermanager_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>gambit/Printers/printer_id_tools.hpp</label>
+        <link refid="printer__id__tools_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>gambit/Printers/printers/sqlitebase.hpp</label>
+        <link refid="sqlitebase_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sqlitereader.hpp</label>
+        <link refid="sqlitereader_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>gambit/Printers/printers/sqlitetypes.hpp</label>
+        <link refid="sqlitetypes_8hpp"/>
+      </node>
+      <node id="9">
+        <label>gambit/ScannerBit/printable_types.hpp</label>
+        <link refid="ScannerBit_2include_2gambit_2ScannerBit_2printable__types_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="35">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="63">
+        <label>gambit/Utils/factory_registry.hpp</label>
+        <link refid="factory__registry_8hpp"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>gambit/Utils/mpiwrapper.hpp</label>
+        <link refid="mpiwrapper_8hpp"/>
+      </node>
+      <node id="61">
+        <label>gambit/Utils/new_mpi_datatypes.hpp</label>
+        <link refid="new__mpi__datatypes_8hpp"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>gambit/Utils/numerical_constants.hpp</label>
+        <link refid="numerical__constants_8hpp"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>gambit/Utils/safebool.hpp</label>
+        <link refid="safebool_8hpp"/>
+      </node>
+      <node id="75">
+        <label>gambit/Utils/slhaea_helpers.hpp</label>
+        <link refid="slhaea__helpers_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="79">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>SLHAea/slhaea.h</label>
+      </node>
+      <node id="64">
+        <label>algorithm</label>
+      </node>
+      <node id="50">
+        <label>array</label>
+      </node>
+      <node id="100">
+        <label>assert.h</label>
+      </node>
+      <node id="82">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="112">
+        <label>boost/algorithm/string/replace.hpp</label>
+      </node>
+      <node id="81">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="21">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="102">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="32">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="22">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="20">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="33">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="34">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="8">
+        <label>boost/preprocessor/seq/for_each.hpp</label>
+      </node>
+      <node id="69">
+        <label>boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="77">
+        <label>boost/serialization/strong_typedef.hpp</label>
+      </node>
+      <node id="101">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="44">
+        <label>cassert</label>
+      </node>
+      <node id="85">
+        <label>cfloat</label>
+      </node>
+      <node id="66">
+        <label>chrono</label>
+      </node>
+      <node id="60">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>complex</label>
+      </node>
+      <node id="13">
+        <label>cstring</label>
+      </node>
+      <node id="49">
+        <label>deque</label>
+      </node>
+      <node id="37">
+        <label>exception</label>
+      </node>
+      <node id="48">
+        <label>forward_list</label>
+      </node>
+      <node id="42">
+        <label>fstream</label>
+      </node>
+      <node id="115">
+        <label>gambit/Backends/backend_types_rollcall.hpp</label>
+      </node>
+      <node id="116">
+        <label>gambit/Elements/module_types_rollcall.hpp</label>
+      </node>
+      <node id="117">
+        <label>gambit/Models/model_types_rollcall.hpp</label>
+      </node>
+      <node id="80">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="104">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+      <node id="103">
+        <label>gsl/gsl_integration.h</label>
+      </node>
+      <node id="41">
+        <label>iostream</label>
+      </node>
+      <node id="59">
+        <label>limits</label>
+      </node>
+      <node id="47">
+        <label>list</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="83">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="12">
+        <label>omp.h</label>
+      </node>
+      <node id="62">
+        <label>ostream</label>
+      </node>
+      <node id="36">
+        <label>set</label>
+      </node>
+      <node id="2">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="92">
+        <label>stdexcept</label>
+      </node>
+      <node id="95">
+        <label>stdio.h</label>
+      </node>
+      <node id="96">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="43">
+        <label>type_traits</label>
+      </node>
+      <node id="17">
+        <label>unistd.h</label>
+      </node>
+      <node id="45">
+        <label>unordered_map</label>
+      </node>
+      <node id="46">
+        <label>unordered_set</label>
+      </node>
+      <node id="38">
+        <label>utility</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="57">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>sqlitereader.hpp</label>
+        <link refid="sqlitereader_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="sqliteprinter_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="3">
+        <label>sqlitereader.cpp</label>
+        <link refid="sqlitereader_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGambit_1_1Printers_1_1SQLiteReader" prot="public">Gambit::Printers::SQLiteReader</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Printers">Gambit::Printers</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sqlitereader_8hpp_1a4789768a651de02d2471cb077fd1ec85" prot="public" static="no">
+        <name>__sqlite_reader_hpp__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitereader.hpp" line="29" column="9" bodyfile="Printers/include/gambit/Printers/printers/sqlitereader.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sqlitereader_8hpp_1aa834f38199291c22b55fcb3f03cccec2" prot="public" static="no">
+        <name>DECLARE_RETRIEVE</name>
+        <param><defname>r</defname></param>
+        <param><defname>data</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>elem</defname></param>
+        <initializer>bool _retrieve(elem&amp;, const std::string&amp;, const uint, const ulong);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/sqlitereader.hpp" line="57" column="17" bodyfile="Printers/include/gambit/Printers/printers/sqlitereader.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SQLite printer retriever class definitions This is a class accompanying the SQLitePrinter which takes care of <emphasis>reading</emphasis> from output created by the SQLitePrinter.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:b.farmer@imperial.ac.uk">b.farmer@imperial.ac.uk</ulink>)) </para>
+</simplesect>
+<simplesect kind="date"><para>2018 Dec</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>SQLite<sp/>printer<sp/>retriever<sp/>class<sp/>definitions</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>This<sp/>is<sp/>a<sp/>class<sp/>accompanying<sp/>the<sp/>SQLitePrinter</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>which<sp/>takes<sp/>care<sp/>of<sp/>*reading*<sp/>from<sp/>output</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>created<sp/>by<sp/>the<sp/>SQLitePrinter.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(b.farmer@imperial.ac.uk))</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>\date<sp/>2018<sp/>Dec</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>SQLite3<sp/>C<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="baseprinter_8hpp" kindref="compound">gambit/Printers/baseprinter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sqlitebase_8hpp" kindref="compound">gambit/Printers/printers/sqlitebase.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sqlitetypes_8hpp" kindref="compound">gambit/Printers/printers/sqlitetypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/preprocessor/seq/for_each_i.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__sqlite_reader_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__sqlite_reader_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Printers</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classGambit_1_1Printers_1_1SQLiteReader" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1SQLiteReader" kindref="compound">SQLiteReader</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader" kindref="compound">BaseReader</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1SQLiteBase" kindref="compound">SQLiteBase</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader" kindref="compound">SQLiteReader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;<sp/>options);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader" kindref="compound">~SQLiteReader</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@{<sp/>Base<sp/>class<sp/>virtual<sp/>interface<sp/>functions</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader_1a5fd56f91026a30f0fad4c3eb031391de" kindref="member">reset</ref>();<sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>&apos;read<sp/>head&apos;<sp/>position<sp/>to<sp/>first<sp/>entry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ulong<sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader_1a0a527ba9fedcb097fe598784f3421718" kindref="member">get_dataset_length</ref>();<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>length<sp/>of<sp/>input<sp/>dataset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref><sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader_1ace84b9935bc7195ff0550e145cebd08f" kindref="member">get_next_point</ref>();<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>next<sp/>rank/ptID<sp/>pair<sp/>in<sp/>data<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref><sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader_1a649abedabaed07c9bb20aaacf75885bf" kindref="member">get_current_point</ref>();<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>current<sp/>rank/ptID<sp/>pair<sp/>in<sp/>data<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ulong<sp/><sp/><sp/><sp/>get_current_index();<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>a<sp/>linear<sp/>index<sp/>which<sp/>corresponds<sp/>to<sp/>the<sp/>current<sp/>rank/ptID<sp/>pair<sp/>in<sp/>the<sp/>iterative<sp/>sense</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader_1a85fe7d934621dd01ba42fafa0576ce18" kindref="member">eoi</ref>();<sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>&apos;current<sp/>point&apos;<sp/>is<sp/>past<sp/>the<sp/>end<sp/>of<sp/>the<sp/>data<sp/>file<sp/>(and<sp/>thus<sp/>invalid!)</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>type<sp/>information<sp/>for<sp/>a<sp/>data<sp/>entry,<sp/>i.e.<sp/>defines<sp/>the<sp/>C++<sp/>type<sp/>which<sp/>this<sp/>should<sp/>be</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>retrieved<sp/>as,<sp/>not<sp/>what<sp/>it<sp/>is<sp/>necessarily<sp/>literally<sp/>stored<sp/>as<sp/>in<sp/>the<sp/>output.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader_1ae0c789142d2f4849e4b9407830cfd4e9" kindref="member">get_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::set&lt;std::string&gt;<sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader_1aa2b4a6305760ac199d968b8f7dad91c9" kindref="member">get_all_labels</ref>();<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>all<sp/>dataset<sp/>labels</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>functions</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1BaseReader_1a080c5bf796d9bb764c3abe7037957570" kindref="member">BaseReader::_retrieve</ref>;<sp/></highlight><highlight class="comment">//<sp/>Tell<sp/>compiler<sp/>we<sp/>are<sp/>using<sp/>some<sp/>of<sp/>the<sp/>base<sp/>class<sp/>overloads<sp/>of<sp/>this<sp/>on<sp/>purpose.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>DECLARE_RETRIEVE(r,data,i,elem)<sp/>bool<sp/>_retrieve(elem&amp;,<sp/>const<sp/>std::string&amp;,<sp/>const<sp/>uint,<sp/>const<sp/>ulong);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_PP_SEQ_FOR_EACH_I(DECLARE_RETRIEVE,<sp/>,<sp/>SQL_TYPES)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#ifndef<sp/>SCANNER_STANDALONE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_PP_SEQ_FOR_EACH_I(DECLARE_RETRIEVE,<sp/>,<sp/>SQL_BACKEND_TYPES)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#undef<sp/>DECLARE_RETRIEVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flag<sp/>that<sp/>will<sp/>be<sp/>set<sp/>to<sp/>false<sp/>when<sp/>the<sp/>end<sp/>of<sp/>the<sp/>input<sp/>table<sp/>selection<sp/>is<sp/>reached</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>eoi_flag;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SQL<sp/>statement<sp/>variable<sp/>used<sp/>to<sp/>access<sp/>current<sp/>row<sp/>of<sp/>table<sp/>iteration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sqlite3_stmt<sp/>*stmt;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Variables<sp/>needed<sp/>by<sp/>e.g.<sp/>postprocessor<sp/>to<sp/>track<sp/>where<sp/>we<sp/>are<sp/>in<sp/>the<sp/>database</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ulong<sp/>current_dataset_index;<sp/></highlight><highlight class="comment">//<sp/>index<sp/>in<sp/>input<sp/>dataset<sp/>of<sp/>the<sp/>current<sp/>read-head<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref><sp/>current_point;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PPID<sp/>of<sp/>the<sp/>point<sp/>at<sp/>the<sp/>current<sp/>read-head<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Map<sp/>from<sp/>column<sp/>name<sp/>to<sp/>column<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::size_t,<sp/>Utils::ci_less&gt;<sp/>column_map;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Map<sp/>from<sp/>column<sp/>name<sp/>to<sp/>column<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::string,<sp/>Utils::ci_less&gt;<sp/>column_types;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Move<sp/>the<sp/>SQL<sp/>loop<sp/>ahead<sp/>one<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>move_to_next_point();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Build<sp/>map<sp/>from<sp/>column<sp/>name<sp/>to<sp/>column<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>build_column_map();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Safely<sp/>access<sp/>the<sp/>column_map<sp/>and<sp/>throw<sp/>informative<sp/>error<sp/>when<sp/>column<sp/>is<sp/>missing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>get_col_i(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>col_name);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Template<sp/>function<sp/>for<sp/>retrieving<sp/>SQLite<sp/>column<sp/>data<sp/>as<sp/>various<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Need<sp/>specialisations<sp/>for<sp/>each<sp/>type<sp/>in<sp/>SQLITE_CPP_TYPES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/>T<sp/>get_sql_col(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>col_name);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>&quot;Master&quot;<sp/>templated<sp/>retrieve<sp/>function.</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>All<sp/>other<sp/>retrieve<sp/>functions<sp/>should<sp/>ultimately<sp/>call<sp/>this<sp/>one</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_retrieve_template(T&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*aux_id*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>valid(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>assumption<sp/>made<sp/>here<sp/>is<sp/>that<sp/>we<sp/>are<sp/>iterating<sp/>through<sp/>the<sp/>database,<sp/>rather</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>than<sp/>attempting<sp/>to<sp/>access<sp/>various<sp/>random<sp/>table<sp/>entries<sp/>constantly.<sp/>So<sp/>this<sp/>reader<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>steps<sp/>through<sp/>the<sp/>database.<sp/>This<sp/>means<sp/>that<sp/>most<sp/>of<sp/>the<sp/>time,<sp/>our<sp/>sql<sp/>cursor<sp/>will<sp/>already</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>pointing<sp/>at<sp/>the<sp/>correct<sp/>rank/pointID<sp/>pair.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>fact,<sp/>for<sp/>now<sp/>at<sp/>least,<sp/>I<sp/>think<sp/>I<sp/>will<sp/>make<sp/>it<sp/>an<sp/>ERROR<sp/>if<sp/>the<sp/>correct<sp/>rank/pointID<sp/>is<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>at<sp/>this<sp/>cursor<sp/>location.<sp/>TODO:<sp/>Consider<sp/>whether<sp/>more<sp/>general<sp/>access<sp/>will<sp/>be<sp/>useful<sp/>in<sp/>the<sp/>future.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(not<sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader_1a85fe7d934621dd01ba42fafa0576ce18" kindref="member">eoi</ref>())</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(current_point<sp/>!=<sp/><ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref>(pointID,rank))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>err;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err&lt;&lt;</highlight><highlight class="stringliteral">&quot;Attempted<sp/>to<sp/>retrieve<sp/>&apos;&quot;</highlight><highlight class="normal">&lt;&lt;label&lt;&lt;</highlight><highlight class="stringliteral">&quot;&apos;<sp/>from<sp/>point<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;rank&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;pointID&lt;&lt;</highlight><highlight class="stringliteral">&quot;),<sp/>however<sp/>the<sp/>SQLiteReader<sp/>object<sp/>is<sp/>not<sp/>presently<sp/>accessing<sp/>this<sp/>point<sp/>(the<sp/>&apos;current_point&apos;<sp/>is<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;current_point.rank&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;current_point.pointID&lt;&lt;</highlight><highlight class="stringliteral">&quot;)).<sp/>At<sp/>present<sp/>this<sp/>object<sp/>is<sp/>only<sp/>really<sp/>designed<sp/>for<sp/>use<sp/>by<sp/>the<sp/>postprocessor<sp/>scanner,<sp/>if<sp/>you<sp/>have<sp/>created<sp/>another<sp/>scanner<sp/>that<sp/>requires<sp/>more<sp/>general<sp/>reader<sp/>access<sp/>then<sp/>please<sp/>make<sp/>a<sp/>feature<sp/>request.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1aea6c68cb3e134435f26742b0eff32b1a" kindref="member">printer_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Otherwise<sp/>we<sp/>are<sp/>good<sp/>to<sp/>go!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>need<sp/>to<sp/>check<sp/>if<sp/>the<sp/>result<sp/>is<sp/>&apos;null&apos;<sp/>for<sp/>this<sp/>entry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>typecode<sp/>=<sp/>sqlite3_column_type(stmt,<sp/>get_col_i(label));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>typecode2sql.find(typecode);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>it<sp/>==<sp/>typecode2sql.end()<sp/>)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>err;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err&lt;&lt;</highlight><highlight class="stringliteral">&quot;Received<sp/>unrecognised<sp/>type<sp/>code<sp/>from<sp/>sqlite_column_type!<sp/>(typecode=&quot;</highlight><highlight class="normal">&lt;&lt;typecode&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1aea6c68cb3e134435f26742b0eff32b1a" kindref="member">printer_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>it-&gt;second==</highlight><highlight class="stringliteral">&quot;NULL&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>data<sp/>in<sp/>this<sp/>column.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valid<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(not<sp/>SQLite_equaltypes(cpp2sql&lt;T&gt;(),it-&gt;second)<sp/>)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Seems<sp/>to<sp/>be<sp/>data<sp/>in<sp/>the<sp/>column,<sp/>but<sp/>type<sp/>is<sp/>not<sp/>correct!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Retrieve<sp/>could<sp/>still<sp/>work<sp/>since<sp/>SQLite<sp/>can<sp/>do<sp/>conversions,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>but<sp/>this<sp/>probably<sp/>indicates<sp/>a<sp/>bug<sp/>somewhere<sp/>in<sp/>this<sp/>printer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>err;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err&lt;&lt;</highlight><highlight class="stringliteral">&quot;Attempted<sp/>to<sp/>retrieve<sp/>data<sp/>from<sp/>table<sp/>column<sp/>&apos;&quot;</highlight><highlight class="normal">&lt;&lt;label&lt;&lt;</highlight><highlight class="stringliteral">&quot;&apos;<sp/>as<sp/>type<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;cpp2sql&lt;T&gt;()&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>but<sp/>SQLite<sp/>says<sp/>that<sp/>the<sp/>data<sp/>has<sp/>type<sp/>&apos;&quot;</highlight><highlight class="normal">&lt;&lt;it-&gt;second&lt;&lt;</highlight><highlight class="stringliteral">&quot;&apos;.<sp/>These<sp/>must<sp/>map<sp/>to<sp/>the<sp/>same<sp/>basic<sp/>column<sp/>affinity<sp/>(these<sp/>were<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;SQLtype_to_basic.at(cpp2sql&lt;T&gt;())&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>and<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;SQLtype_to_basic.at(it-&gt;second)&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>respectively)!<sp/>This<sp/>is<sp/>probably<sp/>a<sp/>bug<sp/>in<sp/>the<sp/>SQLiteReader<sp/>&apos;retrieve&apos;<sp/>routines,<sp/>please<sp/>report<sp/>it.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1aea6c68cb3e134435f26742b0eff32b1a" kindref="member">printer_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>err.str());</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>the<sp/>retrieval!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>=<sp/>get_sql_col&lt;T&gt;(label);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valid<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>valid;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Template<sp/>function<sp/>specialisations<sp/>for<sp/>retrieving<sp/>SQLite<sp/>column<sp/>data<sp/>as<sp/>various<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Need<sp/>one<sp/>for<sp/>each<sp/>type<sp/>in<sp/>SQLITE_CPP_TYPES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SQLiteReader::get_sql_col&lt;long<sp/>long<sp/>int&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SQLiteReader::get_sql_col&lt;double&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/>std::string<sp/><sp/><sp/>SQLiteReader::get_sql_col&lt;std::string&gt;<sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Register<sp/>reader<sp/>so<sp/>it<sp/>can<sp/>be<sp/>constructed<sp/>via<sp/>inifile<sp/>instructions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>argument<sp/>is<sp/>string<sp/>label<sp/>for<sp/>inifile<sp/>access,<sp/>second<sp/>is<sp/>class<sp/>from<sp/>which<sp/>to<sp/>construct<sp/>printer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>LOAD_READER(sqlite,<sp/><ref refid="classGambit_1_1Printers_1_1SQLiteReader" kindref="compound">SQLiteReader</ref>)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Printers/include/gambit/Printers/printers/sqlitereader.hpp"/>
+  </compounddef>
+</doxygen>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS5_SMCUSEFUL
 
 
 
@@ -18,7 +17,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fstring< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds5__smcuseful/#variable-roption)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds5__smcuseful/#variable-roption)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +30,4 @@ Fstring< 5 > roption;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

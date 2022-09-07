@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::CosmoBit
 
 
 
@@ -30,10 +29,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| error & | **[CosmoBit_error](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-cosmobit-error)**() |
-| warning & | **[CosmoBit_warning](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-cosmobit-warning)**() |
-| void | **[AlterBBN_Input](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-alterbbn-input)**(map_str_dbl & result) |
-| void | **[populate_correlation_matrix](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-populate-correlation-matrix)**(const std::map< std::string, int > & abund_map, std::vector< std::vector< double > > & corr, std::vector< double > & errors, bool has_errors, const Options & runOptions)<br>Check the validity of a correlation matrix for AlterBBN likelihood calculations given in the YAML file, and use it to populate a correlation matrix object.  |
+| [error](/documentation/code/classes/classgambit_1_1error/) & | **[CosmoBit_error](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-cosmobit-error)**() |
+| [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[CosmoBit_warning](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-cosmobit-warning)**() |
+| void | **[AlterBBN_Input](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-alterbbn-input)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
+| void | **[populate_correlation_matrix](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-populate-correlation-matrix)**(const std::map< std::string, int > & abund_map, std::vector< std::vector< double > > & corr, std::vector< double > & errors, bool has_errors, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions)<br>Check the validity of a correlation matrix for AlterBBN likelihood calculations given in the [YAML](/documentation/code/namespaces/namespaceyaml/) file, and use it to populate a correlation matrix object.  |
 | void | **[compute_primordial_abundances_BBN](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-primordial-abundances-bbn)**([BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/) & result)<br>Compute elemental abundances from BBN.  |
 | void | **[primordial_abundances](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-primordial-abundances)**([BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/) & result) |
 | void | **[primordial_abundances_decayingDM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-primordial-abundances-decayingdm)**([BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/) & result) |
@@ -63,9 +62,9 @@ description: "[No description available]"
 | void | **[minimum_fraction_ALP](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-minimum-fraction-alp)**(double & result)<br>Compute the minimal fraction of dark matter in ALPs expected from thermal production via Primakoff processes.  |
 | void | **[DM_fraction_ALP](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-dm-fraction-alp)**(double & result)<br>The fraction of dark matter in decaying ALPs at the time of production.  |
 | void | **[total_DM_abundance_ALP](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-total-dm-abundance-alp)**(double & result) |
-| void | **[compute_dNeff_etaBBN_ALP](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-dneff-etabbn-alp)**(map_str_dbl & result)<br>@TODO function definition needed  |
+| void | **[compute_dNeff_etaBBN_ALP](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-dneff-etabbn-alp)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>@TODO function definition needed  |
 | void | **[eta_ratio_ALP](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-eta-ratio-alp)**(double & result) |
-| void | **[Neff_evolution_ALP](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-neff-evolution-alp)**(map_str_dbl & result) |
+| void | **[Neff_evolution_ALP](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-neff-evolution-alp)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
 | void | **[set_k_pivot](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-set-k-pivot)**(double & result) |
 | void | **[get_Neff_SM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-neff-sm)**(double & result) |
 | void | **[get_mNu_tot](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-mnu-tot)**(double & result) |
@@ -94,7 +93,7 @@ description: "[No description available]"
 | std::string | **[multimode_error_handling](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-multimode-error-handling)**(int & err)<br>Helper function for diagnosing MultiModeCode errors.  |
 | void | **[set_multimode_inputs](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-set-multimode-inputs)**([Multimode_inputs](/documentation/code/classes/classgambit_1_1multimode__inputs/) & result) |
 | void | **[get_multimode_primordial_ps](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-multimode-primordial-ps)**([Primordial_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/) & result) |
-| void | **[get_multimode_parametrised_ps](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-multimode-parametrised-ps)**(ModelParameters & result) |
+| void | **[get_multimode_parametrised_ps](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-multimode-parametrised-ps)**([ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & result) |
 | void | **[compute_Planck_nuisance_prior_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-planck-nuisance-prior-loglike)**(double & result) |
 | void | **[compute_Planck_sz_prior](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-planck-sz-prior)**(double & result) |
 | void | **[function_Planck_lowl_TT_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-2018-loglike)**(double & result)<br>Low-l TT likelihood (PR3 - 2018)  |
@@ -155,7 +154,7 @@ void populate_correlation_matrix(
 )
 ```
 
-Check the validity of a correlation matrix for AlterBBN likelihood calculations given in the YAML file, and use it to populate a correlation matrix object. 
+Check the validity of a correlation matrix for AlterBBN likelihood calculations given in the [YAML](/documentation/code/namespaces/namespaceyaml/) file, and use it to populate a correlation matrix object. 
 
 ### function compute_primordial_abundances_BBN
 
@@ -990,4 +989,4 @@ Lensing likelihood (PR2 - 2015)
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

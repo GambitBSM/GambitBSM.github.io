@@ -1,0 +1,699 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1asciiPrinter" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Printers::asciiPrinter</compoundname>
+    <basecompoundref refid="classGambit_1_1Printers_1_1BasePrinter" prot="public" virt="non-virtual">Gambit::Printers::BasePrinter</basecompoundref>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a2dd6a3485a0a283477cf90d20a25f296" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::initialise</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;)</argsstring>
+        <name>initialise</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::initialise</qualifiedname>
+        <reimplements refid="classGambit_1_1Printers_1_1BasePrinter_1afb115e9770b0b87a65e727554c7d899c">initialise</reimplements>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+        </param>
+        <briefdescription>
+<para>Initialisation function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual function overloads: </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="106" column="14" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a02e3a79f5142eb34d5f9a1ef1d20806c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::reset</definition>
+        <argsstring>(bool force=false)</argsstring>
+        <name>reset</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::reset</qualifiedname>
+        <reimplements refid="classGambit_1_1Printers_1_1BaseBasePrinter_1aa0e06c38d025f5825b11572766387018">reset</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Delete contents of output file (to be replaced/updated) and erase everything in the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="107" column="14" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="209" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a19b928a5b1559fa7ab03af3089b73971" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::finalise</definition>
+        <argsstring>(bool abnormal=false)</argsstring>
+        <name>finalise</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::finalise</qualifiedname>
+        <reimplements refid="classGambit_1_1Printers_1_1BaseBasePrinter_1abf3164e5e5d9a7de6a7df11c0f419ae7">finalise</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>abnormal</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Do final buffer dumps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="108" column="14" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="197" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a06ff2df3bfca72eb85ac67ecd7d1a1a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::flush</qualifiedname>
+        <reimplements refid="classGambit_1_1Printers_1_1BasePrinter_1aeb68299b8d3c7c2c796751884d7241ba">flush</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signal printer to flush data in buffers to disk <ref refid="namespaceGambit_1_1Printers" kindref="compound">Printers</ref> should do this automatically as needed, but this is useful if a scanner is printing a bunch of data as a batch, to make sure it is all on disk after the batch is done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="109" column="14" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a23f1aec913af95440e41d48bfdfeb5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
+        <definition>Options Gambit::Printers::asciiPrinter::resume_reader_options</definition>
+        <argsstring>()</argsstring>
+        <name>resume_reader_options</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::resume_reader_options</qualifiedname>
+        <reimplements refid="classGambit_1_1Printers_1_1BasePrinter_1a90408a18507c3c27ae5fc774765fcba8">resume_reader_options</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="113" column="17" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="188" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a2ad8cc15bd58cac053fe182e1e2bb358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::template_print</definition>
+        <argsstring>(T const &amp;, const std::string &amp;, const int, const uint, const ulong)</argsstring>
+        <name>template_print</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::template_print</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>label</defname>
+        </param>
+        <param>
+          <type>const int</type>
+          <defname>IDcode</defname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>uint</declname>
+          <defname>thread</defname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>ulong</declname>
+          <defname>pointID</defname>
+        </param>
+        <briefdescription>
+<para>Helper print functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Template for print functions of &quot;simple&quot; types.</para>
+<para>PRINT FUNCTIONS Need to define one of these for every type we want to print! Could use macros again to generate identical print functions for all types that have a &lt;&lt; operator already defined. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="164" column="14" bodyfile="Printers/src/printers/asciiprinter/print_overloads.cpp" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a670645b441544d66858bd140b74d708e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::template_print_vec</definition>
+        <argsstring>(std::vector&lt; T &gt; const &amp;, const std::string &amp;, const int, const uint, const ulong)</argsstring>
+        <name>template_print_vec</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::template_print_vec</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt; const &amp;</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>label</defname>
+        </param>
+        <param>
+          <type>const int</type>
+          <defname>IDcode</defname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>uint</declname>
+          <defname>thread</defname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>ulong</declname>
+          <defname>pointID</defname>
+        </param>
+        <briefdescription>
+<para>Template for print functions of vectors of &quot;simple&quot; types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="166" column="14" bodyfile="Printers/src/printers/asciiprinter/print_overloads.cpp" bodystart="50" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1acec290abd094f645c538be69aa1928cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::BaseBasePrinter::_print</definition>
+        <argsstring>(T const &amp;, const std::string &amp;label, const int vertexID, const uint, const ulong)</argsstring>
+        <name>_print</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::_print</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vertexID</declname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>uint</declname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>ulong</declname>
+        </param>
+        <briefdescription>
+<para>Print functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="151" column="9" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="171" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a34c57c7ffee5948a815435374dda1e3f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::asciiPrinter::output_file</definition>
+        <argsstring></argsstring>
+        <name>output_file</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::output_file</qualifiedname>
+        <briefdescription>
+<para>Output file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="170" column="21" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1ad59d02f3d8dff04c4401db40d8990416" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::asciiPrinter::info_file</definition>
+        <argsstring></argsstring>
+        <name>info_file</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::info_file</qualifiedname>
+        <briefdescription>
+<para>Info file (describes contents of output file, i.e. contents of columns) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="173" column="21" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1ad21559a35baf567abd177578faad6565" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Gambit::Printers::asciiPrinter::my_fstream</definition>
+        <argsstring></argsstring>
+        <name>my_fstream</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::my_fstream</qualifiedname>
+        <briefdescription>
+<para>Main output file stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="176" column="23" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1afb74271781ed8fba6297c25f2a22c6d5" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Gambit::Printers::asciiPrinter::info_fstream</definition>
+        <argsstring></argsstring>
+        <name>info_fstream</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::info_fstream</qualifiedname>
+        <briefdescription>
+<para>&quot;Info file&quot; output stream </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="178" column="23" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a5daf762004c8a2010a6932c6c6073593" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Gambit::Printers::asciiPrinter::bufferlength</definition>
+        <argsstring></argsstring>
+        <name>bufferlength</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::bufferlength</qualifiedname>
+        <briefdescription>
+<para>Number of lines to store in buffer before printing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="181" column="22" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a5d079ef986a76a112f8095202b8a56b3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::asciiPrinter::global</definition>
+        <argsstring></argsstring>
+        <name>global</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::global</qualifiedname>
+        <briefdescription>
+<para>Flag to trigger &quot;global&quot; print mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="187" column="14" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1acc18a047246bf5b7a953408302ea4fc3" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::asciiPrinter::printer_name</definition>
+        <argsstring></argsstring>
+        <name>printer_name</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::printer_name</qualifiedname>
+        <briefdescription>
+<para>Label for printer, mostly for more helpful error messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="190" column="21" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a4daf9fde6dca1fc7380be0734bc66a5b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::Printers::asciiPrinter::precision</definition>
+        <argsstring></argsstring>
+        <name>precision</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::precision</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+<para>MPI rank. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of digits of precision to use in output columns </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="201" column="13" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a826525679fa1c795cb24b958cb4ffede" prot="private" static="no" mutable="no">
+        <type>Buffer</type>
+        <definition>Buffer Gambit::Printers::asciiPrinter::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::buffer</qualifiedname>
+        <briefdescription>
+<para>Full buffer of output to be printed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="206" column="16" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a1599238a641e5463f63c2453c43ea3e6" prot="private" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref></type>
+        <definition>PPIDpair Gambit::Printers::asciiPrinter::lastPointID</definition>
+        <argsstring></argsstring>
+        <name>lastPointID</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::lastPointID</qualifiedname>
+        <briefdescription>
+<para>Recording of which model point each process is working on. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="210" column="18" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a2cf3b32fe5da11744447cd0ee35cbdd3" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int,int&gt; Gambit::Printers::asciiPrinter::lineindexrecord</definition>
+        <argsstring></argsstring>
+        <name>lineindexrecord</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::lineindexrecord</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="214" column="18" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a1712f57f2c6259e85632d86f95b3c2b0" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;int,std::vector&lt;std::string&gt; &gt; Gambit::Printers::asciiPrinter::label_record</definition>
+        <argsstring></argsstring>
+        <name>label_record</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::label_record</qualifiedname>
+        <briefdescription>
+<para><ref refid="structGambit_1_1Printers_1_1Record" kindref="compound">Record</ref> a set of labels for each printer item: used to write &quot;info&quot; file explain what is in each column. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="217" column="18" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1asciiPrinter_1a65a4966445d121cadd13f3483de5c823" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::asciiPrinter::info_file_written</definition>
+        <argsstring></argsstring>
+        <name>info_file_written</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::info_file_written</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="218" column="14" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1ab819f2a0beafbae624993949a426b20c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::asciiPrinter::asciiPrinter</definition>
+        <argsstring>(const Options &amp;, BasePrinter *const primary=NULL)</argsstring>
+        <name>asciiPrinter</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::asciiPrinter</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <defname>options</defname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref> *const</type>
+          <declname>primary</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>TODO: proper gambit error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor (for construction via inifile options) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="89" column="9" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="153" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1af3165b0a761c87272a145c3a1357edc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::common_constructor</definition>
+        <argsstring>(const Options &amp;)</argsstring>
+        <name>common_constructor</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::common_constructor</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+<para>Tasks common to the various constructors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="95" column="14" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="85" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a4f380a84a00167782abaa4aa283f7be0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::asciiPrinter::~asciiPrinter</definition>
+        <argsstring>()</argsstring>
+        <name>~asciiPrinter</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::~asciiPrinter</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="99" column="9" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="172" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1adc4bf100981facc286ee254a614175cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::erase_buffer</definition>
+        <argsstring>()</argsstring>
+        <name>erase_buffer</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::erase_buffer</qualifiedname>
+        <briefdescription>
+<para>Asciiprinter-specific functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear buffer.</para>
+<para>Ask the printer for the highest ID number known for a given rank process (needed for resuming, so the scanner can resume assigning point ID from this value. TODO: This does not work yet! Needed for resuming, which is not yet implemented in the asciiprinter DEPRECATED! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="127" column="14" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="219" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1aa65da2f9f256d994ba8818d68322285b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::endline</definition>
+        <argsstring>()</argsstring>
+        <name>endline</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::endline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="130" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a15c1b4e2feb0e4d4f92cbe4f3e49f07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::addtobuffer</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;, const std::vector&lt; std::string &gt; &amp;, const int, const int, const int)</argsstring>
+        <name>addtobuffer</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::addtobuffer</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <defname>functor_data</defname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <defname>functor_labels</defname>
+        </param>
+        <param>
+          <type>const int</type>
+          <defname>vID</defname>
+        </param>
+        <param>
+          <type>const int</type>
+          <defname>rank</defname>
+        </param>
+        <param>
+          <type>const int</type>
+          <defname>pointID</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="133" column="14" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="231" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1ac37fcd42b35d0e269d2fb1f375acec45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::asciiPrinter::dump_buffer</definition>
+        <argsstring>(bool force=false)</argsstring>
+        <name>dump_buffer</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::dump_buffer</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="136" column="14" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="316" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1abf29b64068a734aaa8e08fa4ef194336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::asciiPrinter::get_output_filename</definition>
+        <argsstring>()</argsstring>
+        <name>get_output_filename</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::get_output_filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="139" column="21" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1asciiPrinter_1a90b4f96ccf38c5b9cc6b0a10a83e2595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Printers::asciiPrinter::get_bufferlength</definition>
+        <argsstring>()</argsstring>
+        <name>get_bufferlength</name>
+        <qualifiedname>Gambit::Printers::asciiPrinter::get_bufferlength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="142" column="13" bodyfile="Printers/src/printers/asciiprinter/asciiprinter.cpp" bodystart="228" bodyend="228"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Gambit::Printers::BaseBasePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1BaseBasePrinter"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Printers::BasePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1BasePrinter"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::Printers::asciiPrinter</label>
+        <link refid="classGambit_1_1Printers_1_1asciiPrinter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Printers::BaseBasePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1BaseBasePrinter"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Printers::BasePrinter</label>
+        <link refid="classGambit_1_1Printers_1_1BasePrinter"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::Printers::asciiPrinter</label>
+        <link refid="classGambit_1_1Printers_1_1asciiPrinter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Printers/include/gambit/Printers/printers/asciiprinter.hpp" line="71" column="5" bodyfile="Printers/include/gambit/Printers/printers/asciiprinter.hpp" bodystart="72" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1acec290abd094f645c538be69aa1928cd" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>_print</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a15c1b4e2feb0e4d4f92cbe4f3e49f07d" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>addtobuffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1afd407cfc481a665be9f397ae5a129ca2" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>addToPrintList</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1ab819f2a0beafbae624993949a426b20c" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>asciiPrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1abbb4a0a52992af14c237ab78f5542eff" prot="public" virt="virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>auxilliary_init</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a2d9abf4185ec718116c88fc0bebaff59" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>BaseBasePrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a303cab0f271b974f290434243a65de1f" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>BasePrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a19ec58e978725c2725c0bdbac6c5558d" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>BasePrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a826525679fa1c795cb24b958cb4ffede" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>buffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a5daf762004c8a2010a6932c6c6073593" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>bufferlength</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1af3165b0a761c87272a145c3a1357edc3" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>common_constructor</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ab7d07ee8005b51b9bdefa1a05d1f3c64" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>disable</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1ac37fcd42b35d0e269d2fb1f375acec45" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>dump_buffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ac855bf2aff788f01f4eb182e722fc3e4" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>enable</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1aa65da2f9f256d994ba8818d68322285b" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>endline</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1adc4bf100981facc286ee254a614175cd" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>erase_buffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a19b928a5b1559fa7ab03af3089b73971" prot="public" virt="virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>finalise</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a06ff2df3bfca72eb85ac67ecd7d1a1a8" prot="public" virt="virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>flush</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a90b4f96ccf38c5b9cc6b0a10a83e2595" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>get_bufferlength</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1abf29b64068a734aaa8e08fa4ef194336" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>get_output_filename</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a3c21c16334ad0912a2443439bdbbf790" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>get_primary_printer</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a98dc6998a27123d8ee29f3cd16d6d3fe" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>get_printUnitcube</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ada3792f8bf867bae00819ed58e98a244" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>get_resume</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ac18745eebd15f76851a7573601359312" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>getPrintList</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a8f7e69489c1a83b4208c3ca0237bf823" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>getRank</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a5d079ef986a76a112f8095202b8a56b3" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>global</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1ad59d02f3d8dff04c4401db40d8990416" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>info_file</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a65a4966445d121cadd13f3483de5c823" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>info_file_written</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1afb74271781ed8fba6297c25f2a22c6d5" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>info_fstream</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a2dd6a3485a0a283477cf90d20a25f296" prot="public" virt="virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>initialise</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a85233c1edaf646bcdf14a18d7bd90179" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>is_auxilliary_printer</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a1712f57f2c6259e85632d86f95b3c2b0" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>label_record</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a1599238a641e5463f63c2453c43ea3e6" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>lastPointID</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a2cf3b32fe5da11744447cd0ee35cbdd3" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>lineindexrecord</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1ad21559a35baf567abd177578faad6565" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>my_fstream</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a34c57c7ffee5948a815435374dda1e3f" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>output_file</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a4daf9fde6dca1fc7380be0734bc66a5b" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>precision</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a4ba4d6be89e5d91a2cc1a14e75acb6ce" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>print</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a1dfc2af5fc27c500b751bb7b57cbe0d9" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>print</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1af405d35cb40f9d88543b1376f18d7643" prot="protected" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>printer_cooldown</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a38cea919f04f4c6b544b4a71aeca79db" prot="protected" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>printer_enabled</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1acc18a047246bf5b7a953408302ea4fc3" prot="private" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>printer_name</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a02e3a79f5142eb34d5f9a1ef1d20806c" prot="public" virt="virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>reset</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a23f1aec913af95440e41d48bfdfeb5eb" prot="public" virt="virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>resume_reader_options</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1afee2494a6631283d92afbb05df5f6eb8" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>set_as_aux</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1ac4f9bfbde0b4d732e84d8048d8218e38" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>set_printUnitcube</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a960832ce5b23a9857bf7f9a0422ca5e5" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>set_resume</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a4f76c50756bb1c2587475c5dd0e9fa4b" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>setPrintList</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a77a5a48ab7dcaeb974031792ae9bc7bc" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>setRank</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a2ad8cc15bd58cac053fe182e1e2bb358" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>template_print</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a670645b441544d66858bd140b74d708e" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>template_print_vec</name></member>
+      <member refid="classGambit_1_1Printers_1_1asciiPrinter_1a4f380a84a00167782abaa4aa283f7be0" prot="public" virt="non-virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>~asciiPrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a83d0212117486681e069d53ed1368405" prot="public" virt="virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>~BaseBasePrinter</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a4d7f0232eec2f4a884e22b82a8111f51" prot="public" virt="virtual"><scope>Gambit::Printers::asciiPrinter</scope><name>~BasePrinter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

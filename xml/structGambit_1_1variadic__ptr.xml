@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structGambit_1_1variadic__ptr" kind="struct" language="C++" prot="public">
+    <compoundname>Gambit::variadic_ptr</compoundname>
+    <includes refid="functors_8hpp" local="no">functors.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TYPE</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>ARGS</declname>
+        <defname>ARGS</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structGambit_1_1variadic__ptr_1a9c0bb26cdd23408ba824650e16eed5d3" prot="public" static="no">
+        <type>TYPE(*</type>
+        <definition>typedef TYPE(* Gambit::variadic_ptr&lt; TYPE, ARGS &gt;::type) (ARGS...,...)</definition>
+        <argsstring>)(ARGS...,...)</argsstring>
+        <name>type</name>
+        <qualifiedname>Gambit::variadic_ptr::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="77" column="29" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type redefinition to get around icc compiler bugs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Elements/include/gambit/Elements/functors.hpp" line="77" column="3" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="77" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structGambit_1_1variadic__ptr_1a9c0bb26cdd23408ba824650e16eed5d3" prot="public" virt="non-virtual"><scope>Gambit::variadic_ptr</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -4,8 +4,7 @@ description: 'A simple container for the result of one signal region from one an
 
 ---
 
-
-
+# Gambit::ColliderBit::SignalRegionData
 
 
 
@@ -234,4 +233,4 @@ The absolute error of n_bkg.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

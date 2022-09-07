@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="628" column="17" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="628" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__top2body__type_1a453a4fddeb44793db33cfe82f88479d1" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4,1,2 &gt; Gambit::sd_top2body_type::brtopneutrstop</definition>
         <argsstring></argsstring>
         <name>brtopneutrstop</name>
@@ -50,6 +50,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 4, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_top2body_type</label>
+        <link refid="structGambit_1_1sd__top2body__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brtopneutrstop</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="625" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="626" bodyend="630"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__top2body__type_1a34a762f4966764c6725a06bcbdca4892" prot="public" virt="non-virtual"><scope>Gambit::sd_top2body_type</scope><name>brtopbh</name></member>

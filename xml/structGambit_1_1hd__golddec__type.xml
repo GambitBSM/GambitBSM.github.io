@@ -4,7 +4,7 @@
     <compoundname>Gambit::hd_golddec_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1hd__golddec__type_1a5dba24f461d8712dfe00c93b542f8828" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::hd_golddec_type::whlgd</definition>
         <argsstring></argsstring>
         <name>whlgd</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="246" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="246" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1hd__golddec__type_1acf369bb1d57656ea91099c8e5ada874d" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::hd_golddec_type::whhgd</definition>
         <argsstring></argsstring>
         <name>whhgd</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="247" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="247" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1hd__golddec__type_1a16a2022043e15a5670827a28390a3ff1" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::hd_golddec_type::whagd</definition>
         <argsstring></argsstring>
         <name>whagd</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="248" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1hd__golddec__type_1ae4660e4fa9fe1ee9bc77ce04ba96235c" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::hd_golddec_type::whcgd</definition>
         <argsstring></argsstring>
         <name>whcgd</name>
@@ -64,6 +64,28 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; Fdouble, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 4 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::hd_golddec_type</label>
+        <link refid="structGambit_1_1hd__golddec__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>whagd</edgelabel>
+          <edgelabel>whhgd</edgelabel>
+          <edgelabel>whlgd</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>whcgd</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="244" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="245" bodyend="250"/>
     <listofallmembers>
       <member refid="structGambit_1_1hd__golddec__type_1a16a2022043e15a5670827a28390a3ff1" prot="public" virt="non-virtual"><scope>Gambit::hd_golddec_type</scope><name>whagd</name></member>

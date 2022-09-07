@@ -4,8 +4,7 @@ description: 'Definitions of friend functions from above. '
 
 ---
 
-
-
+# Gambit::FunctorHelp
 
 
 
@@ -15,8 +14,8 @@ Definitions of friend functions from above.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[entering_multithreaded_region](/documentation/code/namespaces/namespacegambit_1_1functorhelp/#function-entering-multithreaded-region)**(module_functor_common & functor) |
-| void | **[leaving_multithreaded_region](/documentation/code/namespaces/namespacegambit_1_1functorhelp/#function-leaving-multithreaded-region)**(module_functor_common & functor) |
+| void | **[entering_multithreaded_region](/documentation/code/namespaces/namespacegambit_1_1functorhelp/#function-entering-multithreaded-region)**([module_functor_common](/documentation/code/classes/classgambit_1_1module__functor__common/) & functor) |
+| void | **[leaving_multithreaded_region](/documentation/code/namespaces/namespacegambit_1_1functorhelp/#function-leaving-multithreaded-region)**([module_functor_common](/documentation/code/classes/classgambit_1_1module__functor__common/) & functor) |
 
 ## Detailed Description
 
@@ -51,4 +50,4 @@ void leaving_multithreaded_region(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

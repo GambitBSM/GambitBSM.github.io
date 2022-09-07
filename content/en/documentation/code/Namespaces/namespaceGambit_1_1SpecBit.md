@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::SpecBit
 
 
 
@@ -22,6 +21,8 @@ description: "[No description available]"
 | class | **[Gambit::SpecBit::QedQcdWrapper](/documentation/code/classes/classgambit_1_1specbit_1_1qedqcdwrapper/)**  |
 | class | **[Gambit::SpecBit::ScalarSingletDM_Z2Spec](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z2spec/)**  |
 | class | **[Gambit::SpecBit::ScalarSingletDM_Z3Spec](/documentation/code/classes/classgambit_1_1specbit_1_1scalarsingletdm__z3spec/)**  |
+| struct | **[Gambit::SpecBit::SMHiggsModel](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/)**  |
+| class | **[Gambit::SpecBit::SMHiggsSimpleSpec](/documentation/code/classes/classgambit_1_1specbit_1_1smhiggssimplespec/)** <br>[SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) wrapper class for the SM Higgs sector.  |
 | class | **[Gambit::SpecBit::SpectrumEntriesForVevacious](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**  |
 | struct | **[Gambit::SpecBit::SpectrumEntry](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/)**  |
 | class | **[Gambit::SpecBit::VevaciousResultContainer](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/)**  |
@@ -38,32 +39,32 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[setup_QedQcd](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-setup-qedqcd)**(softsusy::QedQcd & oneset, const SMInputs & sminputs)<br>Non-Gambit helper functions.  |
-| bool | **[has_neutralino_LSP](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-has-neutralino-lsp)**(const Spectrum & result)<br>Check that the spectrum has a neutralino LSP.  |
-| bool | **[has_neutralino_LSP](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-has-neutralino-lsp)**(const Spectrum * result)<br>Helper to work with pointer.  |
-| void | **[get_SMINPUTS](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sminputs)**(SMInputs & result)<br>[Gambit](/documentation/code/namespaces/namespacegambit/) module functions.  |
-| template <class MI \> <br>Spectrum | **[run_FS_spectrum_generator](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-run-fs-spectrum-generator)**(const typename MI::InputParameters & input, const SMInputs & sminputs, const Options & runOptions, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & input_Param)<br>Non-Gambit convenience functions.  |
-| Eigen::Matrix< double, 3, 3 > | **[fill_3x3_parameter_matrix](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-3x3-parameter-matrix)**(const std::string & rootname, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>Helper function for setting 3x3 matrix-valued parameters.  |
-| Eigen::Matrix< double, 3, 3 > | **[fill_3x3_symmetric_parameter_matrix](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-3x3-symmetric-parameter-matrix)**(const std::string & rootname, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>As above, but for symmetric input (i.e. 6 entries, assumed to be the upper triangle)  |
-| template <class T \> <br>void | **[fill_MSSM63_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-mssm63-input)**(T & input, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param) |
-| template <class T \> <br>void | **[fill_MSSM63_input_altnames](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-mssm63-input-altnames)**(T & input, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param) |
-| void | **[convert_MSSM_to_SM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-convert-mssm-to-sm)**(Spectrum & result)<br>[Gambit](/documentation/code/namespaces/namespacegambit/) module functions.  |
-| void | **[convert_NMSSM_to_SM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-convert-nmssm-to-sm)**(Spectrum & result) |
-| void | **[convert_E6MSSM_to_SM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-convert-e6mssm-to-sm)**(Spectrum & result) |
-| void | **[get_MSSM_spectrum_SPheno](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-spheno)**(Spectrum & spectrum) |
-| void | **[get_GUTMSSMB_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-gutmssmb-spectrum)**(Spectrum & ) |
-| template <class Contents \> <br>void | **[fill_map_from_subspectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-subspectrum)**(std::map< std::string, double > & specmap, const SubSpectrum & subspec)<br>Convert MSSM type Spectrum object into a map, so it can be printed.  |
-| void | **[add_extra_MSSM_parameter_combinations](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-add-extra-mssm-parameter-combinations)**(std::map< std::string, double > & specmap, const SubSpectrum & mssm)<br>Adds additional information from interesting combinations of MSSM parameters.  |
+| void | **[setup_QedQcd](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-setup-qedqcd)**(softsusy::QedQcd & oneset, const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & sminputs)<br>Non-Gambit helper functions.  |
+| bool | **[has_neutralino_LSP](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-has-neutralino-lsp)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Check that the spectrum has a neutralino LSP.  |
+| bool | **[has_neutralino_LSP](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-has-neutralino-lsp)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) * result)<br>Helper to work with pointer.  |
+| void | **[get_SMINPUTS](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sminputs)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & result)<br>[Gambit](/documentation/code/namespaces/namespacegambit/) module functions.  |
+| template <class MI \> <br>[Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) | **[run_FS_spectrum_generator](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-run-fs-spectrum-generator)**(const typename MI::InputParameters & input, const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & sminputs, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & input_Param)<br>Non-Gambit convenience functions.  |
+| Eigen::Matrix< double, 3, 3 > | **[fill_3x3_parameter_matrix](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-3x3-parameter-matrix)**(const std::string & rootname, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>Helper function for setting 3x3 matrix-valued parameters.  |
+| Eigen::Matrix< double, 3, 3 > | **[fill_3x3_symmetric_parameter_matrix](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-3x3-symmetric-parameter-matrix)**(const std::string & rootname, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>As above, but for symmetric input (i.e. 6 entries, assumed to be the upper triangle)  |
+| template <class T \> <br>void | **[fill_MSSM63_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-mssm63-input)**(T & input, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param) |
+| template <class T \> <br>void | **[fill_MSSM63_input_altnames](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-mssm63-input-altnames)**(T & input, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param) |
+| void | **[convert_MSSM_to_SM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-convert-mssm-to-sm)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>[Gambit](/documentation/code/namespaces/namespacegambit/) module functions.  |
+| void | **[convert_NMSSM_to_SM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-convert-nmssm-to-sm)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result) |
+| void | **[convert_E6MSSM_to_SM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-convert-e6mssm-to-sm)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result) |
+| void | **[get_MSSM_spectrum_SPheno](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-spheno)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spectrum) |
+| void | **[get_GUTMSSMB_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-gutmssmb-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & ) |
+| template <class Contents \> <br>void | **[fill_map_from_subspectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-subspectrum)**(std::map< std::string, double > & specmap, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & subspec)<br>Convert MSSM type [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object into a map, so it can be printed.  |
+| void | **[add_extra_MSSM_parameter_combinations](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-add-extra-mssm-parameter-combinations)**(std::map< std::string, double > & specmap, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm)<br>Adds additional information from interesting combinations of MSSM parameters.  |
 | void | **[get_MSSM_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-as-map)**(std::map< std::string, double > & specmap) |
 | void | **[get_unimproved_MSSM_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-unimproved-mssm-spectrum-as-map)**(std::map< std::string, double > & specmap) |
 | void | **[add_error](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-add-error)**(std::ostringstream & out, const std::exception & e, const std::string & msg) |
 | void | **[exampleRead](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-exampleread)**(bool & result) |
-| void | **[make_test_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-make-test-spectrum)**(SubSpectrum *& result)<br>Create a spectrum object for testing purposes.  |
+| void | **[make_test_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-make-test-spectrum)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) *& result)<br>Create a spectrum object for testing purposes.  |
 | void | **[specbit_test_func1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-specbit-test-func1)**(double & result)<br>Function to test out SpecBit features.  |
 | void | **[specbit_test_func2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-specbit-test-func2)**(double & result)<br>Function to test out SpecBit features.  |
 | void | **[specbit_test_func3](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-specbit-test-func3)**(double & result)<br>Function to test out SpecBit features.  |
-| void | **[specbit_test_Spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-specbit-test-spectrum)**(double & result)<br>Test out consistency of Spectrum object (and pre-extracted SM SubSpectrum*)  |
-| void | **[specbit_test_show_SMInputs](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-specbit-test-show-sminputs)**(double & result)<br>Display SMInputs values.  |
+| void | **[specbit_test_Spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-specbit-test-spectrum)**(double & result)<br>Test out consistency of [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object (and pre-extracted SM SubSpectrum*)  |
+| void | **[specbit_test_show_SMInputs](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-specbit-test-show-sminputs)**(double & result)<br>Display [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) values.  |
 | void | **[test_Singlet_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-test-singlet-spectrum)**(bool & result)<br>Check that the SingletDM spectrum object is working.  |
 | template <class Model \> <br>double | **[get_sinthW2_MSbar](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sinthw2-msbar)**(const Model & model) |
 | template <class Model \> <br>double | **[get_tanbeta](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-tanbeta)**(const Model & model) |
@@ -103,35 +104,35 @@ description: "[No description available]"
 | bool | **[print_error](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-print-error)**(bool pass, std::string get_type, std::string data, double sting_get_out, double data_member, int i =-1, int j =-1) |
 | void | **[print_error](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-print-error)**(std::string get_type, std::string name, double sting_get_out, double data_member, int i =-1, int j =-1) |
 | bool | **[test_getters](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-test-getters)**(std::string get_type, std::string name, double getter_output, double data_member, int i =-1, int j =-1) |
-| template <class M \> <br>bool | **[TestMssmParMass2_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass2-0)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true)<br>Module convenience functions.  |
+| template <class M \> <br>bool | **[TestMssmParMass2_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass2-0)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true)<br>Module convenience functions.  |
 | template <class MI \> <br>bool | **[TestMssmParMass2_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass2-0)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmParMass2_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass2-2)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true) |
+| template <class M \> <br>bool | **[TestMssmParMass2_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass2-2)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true) |
 | template <class MI \> <br>bool | **[TestMssmParMass2_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass2-2)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmParMass1_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass1-0)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true) |
+| template <class M \> <br>bool | **[TestMssmParMass1_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass1-0)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true) |
 | template <class MI \> <br>bool | **[TestMssmParMass1_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass1-0)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmParMass1_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass1-2)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true) |
+| template <class M \> <br>bool | **[TestMssmParMass1_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass1-2)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true) |
 | template <class MI \> <br>bool | **[TestMssmParMass1_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass1-2)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmParMass0_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass0-0)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true) |
+| template <class M \> <br>bool | **[TestMssmParMass0_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass0-0)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true) |
 | template <class MI \> <br>bool | **[TestMssmParMass0_0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass0-0)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmParMass0_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass0-2)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true) |
+| template <class M \> <br>bool | **[TestMssmParMass0_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass0-2)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true) |
 | template <class MI \> <br>bool | **[TestMssmParMass0_2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmparmass0-2)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmPoleGets0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets0)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true) |
+| template <class M \> <br>bool | **[TestMssmPoleGets0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets0)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true) |
 | template <class MI \> <br>bool | **[TestMssmPoleGets0](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets0)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmPoleGets1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets1)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true) |
+| template <class M \> <br>bool | **[TestMssmPoleGets1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets1)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true) |
 | template <class MI \> <br>bool | **[TestMssmPoleGets1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets1)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmPoleMixingGets2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolemixinggets2)**(SubSpectrum * spec, M FSmssm, bool immediate_exit =true) |
+| template <class M \> <br>bool | **[TestMssmPoleMixingGets2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolemixinggets2)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm, bool immediate_exit =true) |
 | template <class MI \> <br>bool | **[TestMssmPoleMixingGets2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolemixinggets2)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm, bool immediate_exit =true) |
-| template <class M \> <br>bool | **[TestMssmPoleGets](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets)**(SubSpectrum * spec, M FSmssm) |
+| template <class M \> <br>bool | **[TestMssmPoleGets](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm) |
 | template <class MI \> <br>bool | **[TestMssmPoleGets](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpolegets)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm) |
-| template <class M \> <br>bool | **[TestMssmParGets](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpargets)**(SubSpectrum * spec, M FSmssm) |
+| template <class M \> <br>bool | **[TestMssmParGets](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpargets)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FSmssm) |
 | template <class MI \> <br>bool | **[TestMssmParGets](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-testmssmpargets)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FSmssm) |
 | template <class Model \> <br>void | **[setup](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-setup)**(Model & mssm) |
 | template <class MI \> <br>bool | **[test_exact](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-test-exact)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FS_model_slha) |
-| template <class M \> <br>double | **[test_exact](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-test-exact)**(SubSpectrum * spec, M FS_model_slha) |
+| template <class M \> <br>double | **[test_exact](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-test-exact)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, M FS_model_slha) |
 | template <class MI \> <br>bool | **[running_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-running-test)**([MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< MI > & mssm, typename MI::Model & FS_model_slha, double tol) |
-| template <class Model \> <br>bool | **[running_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-running-test)**(SubSpectrum * spec, Model & FS_model_slha, double tol) |
+| template <class Model \> <br>bool | **[running_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-running-test)**([SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * spec, Model & FS_model_slha, double tol) |
 | bool | **[test_within_tol](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-test-within-tol)**(double a, double b, double tol, std::string label) |
-| void | **[Spectrum_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-spectrum-test)**(Spectrum matched_spectra, const SubSpectrum * smin, bool SLHAonly =0) |
+| void | **[Spectrum_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-spectrum-test)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) matched_spectra, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) * smin, bool SLHAonly =0) |
 | double | **[get_mUp](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mup)**(const softsusy::QedQcd & model)<br>Plain C-function wrappers for QedQcd running mass getters.  |
 | double | **[get_mCharm](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mcharm)**(const softsusy::QedQcd & model) |
 | double | **[get_mTop](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mtop)**(const softsusy::QedQcd & model) |
@@ -146,89 +147,89 @@ description: "[No description available]"
 | double | **[get_alpha](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-alpha)**(const softsusy::QedQcd & model)<br>Plain C-function wrappers for QedQcd running coupling getters.  |
 | double | **[get_alphaS](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-alphas)**(const softsusy::QedQcd & model) |
 | double | **[get_a1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-a1)**(const softsusy::QedQcd & ) |
-| double | **[get_Pole_mElectron](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-melectron)**(const SMInputs & inputs)<br>Plain C-function wrappers for extra pole mass getters (manually specified masses)  |
-| double | **[get_Pole_mMuon](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mmuon)**(const SMInputs & inputs) |
-| double | **[get_Pole_mNu1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mnu1)**(const SMInputs & inputs) |
-| double | **[get_Pole_mNu2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mnu2)**(const SMInputs & inputs) |
-| double | **[get_Pole_mNu3](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mnu3)**(const SMInputs & inputs) |
-| double | **[get_Pole_mPhoton](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mphoton)**(const SMInputs & ) |
-| double | **[get_Pole_mGluon](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mgluon)**(const SMInputs & ) |
+| double | **[get_Pole_mElectron](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-melectron)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & inputs)<br>Plain C-function wrappers for extra pole mass getters (manually specified masses)  |
+| double | **[get_Pole_mMuon](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mmuon)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & inputs) |
+| double | **[get_Pole_mNu1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mnu1)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & inputs) |
+| double | **[get_Pole_mNu2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mnu2)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & inputs) |
+| double | **[get_Pole_mNu3](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mnu3)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & inputs) |
+| double | **[get_Pole_mPhoton](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mphoton)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & ) |
+| double | **[get_Pole_mGluon](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-pole-mgluon)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & ) |
 | double | **[get_sinthW2_pole](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sinthw2-pole)**(const softsusy::QedQcd & qedqcd) |
-| void | **[set_Pole_mElectron](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-set-pole-melectron)**(SMInputs & inputs, double set_value)<br>Plain C-function wrappers for extra pole mass setters (manually specified masses)  |
-| void | **[get_DiracSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-diracsingletdm-z2-spectrum)**(Spectrum & result)<br>Get a (simple) Spectrum object wrapper for the DiracSingletDM_Z2 model.  |
-| void | **[fill_map_from_DiracSingletDM_Z2spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-diracsingletdm-z2spectrum)**(std::map< std::string, double > & specmap, const Spectrum & diracdmspec) |
+| void | **[set_Pole_mElectron](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-set-pole-melectron)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & inputs, double set_value)<br>Plain C-function wrappers for extra pole mass setters (manually specified masses)  |
+| void | **[get_DiracSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-diracsingletdm-z2-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the DiracSingletDM_Z2 model.  |
+| void | **[fill_map_from_DiracSingletDM_Z2spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-diracsingletdm-z2spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & diracdmspec) |
 | void | **[get_DiracSingletDM_Z2_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-diracsingletdm-z2-spectrum-as-map)**(std::map< std::string, double > & specmap) |
-| void | **[get_DMEFT_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmeft-spectrum)**(Spectrum & result)<br>Get a simple wrapper for Spectrum object.  |
-| void | **[fill_map_from_DMEFT_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-dmeft-spectrum)**(std::map< std::string, double > & specmap, const Spectrum & spec) |
+| void | **[get_DMEFT_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmeft-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a simple wrapper for [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object.  |
+| void | **[fill_map_from_DMEFT_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-dmeft-spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec) |
 | void | **[get_DMEFT_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmeft-spectrum-as-map)**(std::map< std::string, double > & specmap) |
-| void | **[get_MajoranaSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-majoranasingletdm-z2-spectrum)**(Spectrum & result)<br>Get a (simple) Spectrum object wrapper for the MajoranaSingletDM_Z2 model.  |
-| void | **[fill_map_from_MajoranaSingletDM_Z2spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-majoranasingletdm-z2spectrum)**(std::map< std::string, double > & specmap, const Spectrum & majoranadmspec) |
+| void | **[get_MajoranaSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-majoranasingletdm-z2-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the MajoranaSingletDM_Z2 model.  |
+| void | **[fill_map_from_MajoranaSingletDM_Z2spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-majoranasingletdm-z2spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & majoranadmspec) |
 | void | **[get_MajoranaSingletDM_Z2_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-majoranasingletdm-z2-spectrum-as-map)**(std::map< std::string, double > & specmap) |
-| template <class MI ,class SI \> <br>Spectrum | **[run_FS_spectrum_generator](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-run-fs-spectrum-generator)**(const typename MI::InputParameters & input, const SMInputs & sminputs, const Options & runOptions, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & input_Param) |
-| template <class T \> <br>void | **[fill_MDM_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-mdm-input)**(T & input, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param, SMInputs sminputs) |
-| bool | **[check_perturb_MDM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-perturb-mdm)**(const Spectrum & spec, double scale, int pts) |
+| template <class MI ,class SI \> <br>[Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) | **[run_FS_spectrum_generator](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-run-fs-spectrum-generator)**(const typename MI::InputParameters & input, const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & sminputs, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & input_Param) |
+| template <class T \> <br>void | **[fill_MDM_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-mdm-input)**(T & input, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| bool | **[check_perturb_MDM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-perturb-mdm)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, double scale, int pts) |
 | void | **[find_non_perturb_scale_MDM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-non-perturb-scale-mdm)**(double & result) |
-| void | **[fill_map_from_MDMspectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-mdmspectrum)**(std::map< std::string, double > & specmap, const Spectrum & mdmspec)<br>Print MDM spectrum out. Stripped down copy from MSSM version with variable names changed.  |
+| void | **[fill_map_from_MDMspectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-mdmspectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & mdmspec)<br>Print MDM spectrum out. Stripped down copy from MSSM version with variable names changed.  |
 | void | **[get_MDM_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mdm-spectrum-as-map)**(std::map< std::string, double > & specmap) |
-| void | **[get_SM_SubSpectrum_from_MSSM_Spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sm-subspectrum-from-mssm-spectrum)**(const SubSpectrum *& result) |
-| void | **[get_MSSM_spectrum_as_SLHAea_SLHA1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-as-slhaea-slha1)**(SLHAstruct & result)<br>Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA1 format.  |
-| void | **[get_MSSM_spectrum_as_SLHAea_SLHA2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-as-slhaea-slha2)**(SLHAstruct & result)<br>Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA2 format.  |
-| void | **[get_MSSM_spectrum_from_SLHAfile](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-slhafile)**(Spectrum & result) |
-| void | **[get_MSSM_spectrum_from_SLHAstruct](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-slhastruct)**(Spectrum & result) |
-| void | **[get_MSSM_spectrum_from_postprocessor](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-postprocessor)**(Spectrum & result) |
+| void | **[get_SM_SubSpectrum_from_MSSM_Spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sm-subspectrum-from-mssm-spectrum)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) *& result) |
+| void | **[get_MSSM_spectrum_as_SLHAea_SLHA1](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-as-slhaea-slha1)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & result)<br>Extract an SLHAea version of the spectrum contained in a [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object, in SLHA1 format.  |
+| void | **[get_MSSM_spectrum_as_SLHAea_SLHA2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-as-slhaea-slha2)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & result)<br>Extract an SLHAea version of the spectrum contained in a [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object, in SLHA2 format.  |
+| void | **[get_MSSM_spectrum_from_SLHAfile](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-slhafile)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result) |
+| void | **[get_MSSM_spectrum_from_SLHAstruct](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-slhastruct)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result) |
+| void | **[get_MSSM_spectrum_from_postprocessor](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-postprocessor)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result) |
 | void | **[FeynHiggs_MSSMMasses](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-feynhiggs-mssmmasses)**([fh_MSSMMassObs_container](/documentation/code/classes/structgambit_1_1fh__mssmmassobs__container/) & result)<br>FeynHiggs SUSY masses and mixings.  |
 | void | **[FeynHiggs_AllHiggsMasses](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-feynhiggs-allhiggsmasses)**([fh_HiggsMassObs_container](/documentation/code/classes/structgambit_1_1fh__higgsmassobs__container/) & result)<br>Higgs masses and mixings with theoretical uncertainties.  |
 | void | **[FeynHiggs_Couplings](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-feynhiggs-couplings)**([fh_Couplings_container](/documentation/code/classes/structgambit_1_1fh__couplings__container/) & result)<br>Call FHCouplings from FeynHiggs and collect the output.  |
-| std::vector< std::pair< str, str > > | **[get_invisibles](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-invisibles)**(const SubSpectrum & spec)<br>Helper function to work out if the LSP is invisible, and if so, which particle it is.  |
-| void | **[MSSM_higgs_couplings_pwid](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-mssm-higgs-couplings-pwid)**(HiggsCouplingsTable & result)<br>Put together the Higgs couplings for the MSSM, from partial widths only.  |
-| void | **[MSSM_higgs_couplings_FeynHiggs](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-mssm-higgs-couplings-feynhiggs)**(HiggsCouplingsTable & result)<br>Put together the Higgs couplings for the MSSM, using FeynHiggs.  |
-| void | **[FeynHiggs_HiggsMass](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-feynhiggs-higgsmass)**(triplet< double > & result) |
-| void | **[FeynHiggs_HeavyHiggsMasses](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-feynhiggs-heavyhiggsmasses)**(map_int_triplet_dbl & result) |
-| void | **[SUSYHD_HiggsMass](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-susyhd-higgsmass)**(triplet< double > & result) |
-| void | **[get_ScalarSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-scalarsingletdm-z2-spectrum)**(Spectrum & result)<br>Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z2 model.  |
-| void | **[get_ScalarSingletDM_Z3_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-scalarsingletdm-z3-spectrum)**(Spectrum & result)<br>Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z3 model.  |
-| template <class T \> <br>void | **[fill_ScalarSingletDM_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-scalarsingletdm-input)**(T & input, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param, SMInputs sminputs) |
-| template <class T \> <br>void | **[fill_extra_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-extra-input)**(T & input, const std::map< str, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param) |
-| bool | **[check_perturb](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-perturb)**(const Spectrum & spec, const std::vector< SpectrumParameter > & required_parameters, double scale, int pts) |
-| void | **[ScalarSingletDM_higgs_couplings_pwid](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-scalarsingletdm-higgs-couplings-pwid)**(HiggsCouplingsTable & result)<br>Put together the Higgs couplings for the ScalarSingletDM models, from partial widths only.  |
-| void | **[fill_map_from_ScalarSingletDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-scalarsingletdm-spectrum)**(std::map< std::string, double > & specmap, const Spectrum & singletdmspec, const std::vector< SpectrumParameter > & required_parameters)<br>Print ScalarSingletDM spectra out. Stripped down copy of MSSM version with variable names changed.  |
+| std::vector< std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > | **[get_invisibles](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-invisibles)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & spec)<br>Helper function to work out if the LSP is invisible, and if so, which particle it is.  |
+| void | **[MSSM_higgs_couplings_pwid](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-mssm-higgs-couplings-pwid)**([HiggsCouplingsTable](/documentation/code/classes/classgambit_1_1higgscouplingstable/) & result)<br>Put together the Higgs couplings for the MSSM, from partial widths only.  |
+| void | **[MSSM_higgs_couplings_FeynHiggs](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-mssm-higgs-couplings-feynhiggs)**([HiggsCouplingsTable](/documentation/code/classes/classgambit_1_1higgscouplingstable/) & result)<br>Put together the Higgs couplings for the MSSM, using FeynHiggs.  |
+| void | **[FeynHiggs_HiggsMass](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-feynhiggs-higgsmass)**([triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & result) |
+| void | **[FeynHiggs_HeavyHiggsMasses](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-feynhiggs-heavyhiggsmasses)**([map_int_triplet_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-int-triplet-dbl) & result) |
+| void | **[SUSYHD_HiggsMass](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-susyhd-higgsmass)**([triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & result) |
+| void | **[get_ScalarSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-scalarsingletdm-z2-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the ScalarSingletDM_Z2 model.  |
+| void | **[get_ScalarSingletDM_Z3_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-scalarsingletdm-z3-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the ScalarSingletDM_Z3 model.  |
+| template <class T \> <br>void | **[fill_ScalarSingletDM_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-scalarsingletdm-input)**(T & input, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| template <class T \> <br>void | **[fill_extra_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-extra-input)**(T & input, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param) |
+| bool | **[check_perturb](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-perturb)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, const std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > & required_parameters, double scale, int pts) |
+| void | **[ScalarSingletDM_higgs_couplings_pwid](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-scalarsingletdm-higgs-couplings-pwid)**([HiggsCouplingsTable](/documentation/code/classes/classgambit_1_1higgscouplingstable/) & result)<br>Put together the Higgs couplings for the ScalarSingletDM models, from partial widths only.  |
+| void | **[fill_map_from_ScalarSingletDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-scalarsingletdm-spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & singletdmspec, const std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > & required_parameters)<br>Print ScalarSingletDM spectra out. Stripped down copy of MSSM version with variable names changed.  |
 | void | **[get_ScalarSingletDM_Z2_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-scalarsingletdm-z2-spectrum-as-map)**(std::map< std::string, double > & specmap) |
 | void | **[get_ScalarSingletDM_Z3_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-scalarsingletdm-z3-spectrum-as-map)**(std::map< std::string, double > & specmap) |
-| void | **[get_QedQcd_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-qedqcd-spectrum)**(const SubSpectrum *& result)<br>Construct a SubSpectrum object from SMInputs using [QedQcdWrapper]().  |
-| void | **[get_SM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sm-spectrum)**(Spectrum & result)<br>Get a Spectrum object wrapper for Standard-Model-only information.  |
-| void | **[SM_higgs_couplings](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-sm-higgs-couplings)**(HiggsCouplingsTable & result)<br>Put together the SM Higgs couplings.  |
+| void | **[get_QedQcd_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-qedqcd-spectrum)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) *& result)<br>Construct a [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object from [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) using [QedQcdWrapper]().  |
+| void | **[get_SM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sm-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for Standard-Model-only information.  |
+| void | **[SM_higgs_couplings](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-sm-higgs-couplings)**([HiggsCouplingsTable](/documentation/code/classes/classgambit_1_1higgscouplingstable/) & result)<br>Put together the SM Higgs couplings.  |
 | void | **[Math_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-math-test)**(bool & result) |
 | void | **[SUSYHD_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-susyhd-test)**(bool & result) |
 | void | **[SPheno_MSSM_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-spheno-mssm-test)**(bool & result) |
 | void | **[MSSMspectrum_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-mssmspectrum-test)**(bool & result) |
 | void | **[light_quark_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-light-quark-test)**(bool & ) |
-| void | **[get_VectorSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-vectorsingletdm-z2-spectrum)**(Spectrum & result)<br>Get a (simple) Spectrum object wrapper for the VectorSingletDM_Z2 model.  |
-| void | **[fill_map_from_VectorSingletDM_Z2spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-vectorsingletdm-z2spectrum)**(std::map< std::string, double > & specmap, const Spectrum & vectordmspec) |
+| void | **[get_VectorSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-vectorsingletdm-z2-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the VectorSingletDM_Z2 model.  |
+| void | **[fill_map_from_VectorSingletDM_Z2spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-vectorsingletdm-z2spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & vectordmspec) |
 | void | **[get_VectorSingletDM_Z2_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-vectorsingletdm-z2-spectrum-as-map)**(std::map< std::string, double > & specmap) |
 | void | **[check_EW_stability_ScalarSingletDM_Z3](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-ew-stability-scalarsingletdm-z3)**(double & result) |
-| bool | **[check_perturb_to_min_lambda](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-perturb-to-min-lambda)**(const Spectrum & spec, double scale, int pts, const std::vector< SpectrumParameter > required_parameters) |
+| bool | **[check_perturb_to_min_lambda](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-perturb-to-min-lambda)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, double scale, int pts, const std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > required_parameters) |
 | double | **[run_lambda](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-run-lambda)**(double scale, void * params) |
-| void | **[find_min_lambda_Helper](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-min-lambda-helper)**(dbl_dbl_bool & vs_tuple, const Spectrum & fullspectrum, double high_energy_limit, int check_perturb_pts, const std::vector< SpectrumParameter > required_parameters) |
-| void | **[find_min_lambda_ScalarSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-min-lambda-scalarsingletdm-z2)**(dbl_dbl_bool & vs_tuple) |
-| void | **[find_min_lambda_ScalarSingletDM_Z3](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-min-lambda-scalarsingletdm-z3)**(dbl_dbl_bool & vs_tuple) |
-| void | **[find_min_lambda_MDM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-min-lambda-mdm)**(dbl_dbl_bool & vs_tuple) |
+| void | **[find_min_lambda_Helper](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-min-lambda-helper)**([dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & vs_tuple, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & fullspectrum, double high_energy_limit, int check_perturb_pts, const std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > required_parameters) |
+| void | **[find_min_lambda_ScalarSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-min-lambda-scalarsingletdm-z2)**([dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & vs_tuple) |
+| void | **[find_min_lambda_ScalarSingletDM_Z3](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-min-lambda-scalarsingletdm-z3)**([dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & vs_tuple) |
+| void | **[find_min_lambda_MDM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-find-min-lambda-mdm)**([dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & vs_tuple) |
 | void | **[get_expected_vacuum_lifetime](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-expected-vacuum-lifetime)**(double & lifetime) |
 | void | **[lnL_highscale_vacuum_decay_single_field](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-lnl-highscale-vacuum-decay-single-field)**(double & result) |
 | void | **[get_lambdaB](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-lambdab)**(double & result) |
 | void | **[check_perturb_min_lambda](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-perturb-min-lambda)**(double & result) |
 | void | **[get_likelihood_VS](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-likelihood-vs)**(double & result) |
-| void | **[get_VS_results](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-vs-results)**(map_str_dbl & result)<br>get all results from VS as str to dbl map to easily print them  |
-| void | **[make_vpp_inputs](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-make-vpp-inputs)**(map_str_str & opts) |
+| void | **[get_VS_results](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-vs-results)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>get all results from VS as str to dbl map to easily print them  |
+| void | **[make_vpp_inputs](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-make-vpp-inputs)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) & opts) |
 | void | **[set_panic_vacua](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-set-panic-vacua)**(std::set< std::string > & result) |
 | void | **[set_tunnelling_strategy](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-set-tunnelling-strategy)**(std::set< std::string > & result) |
-| str | **[helper_set_tunnelingStrategy](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-helper-set-tunnelingstrategy)**(std::set< std::string > tunnelling_strategy) |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[helper_set_tunnelingStrategy](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-helper-set-tunnelingstrategy)**(std::set< std::string > tunnelling_strategy) |
 | void | **[initialize_vevacious](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-initialize-vevacious)**(std::string & inputspath) |
 | vevacious_1_0::VevaciousPlusPlus::VevaciousPlusPlus | **[exec_pass_spectrum_to_vevacious](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-exec-pass-spectrum-to-vevacious)**([SpectrumEntriesForVevacious](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/) & pass_spectrum) |
 | void | **[helper_run_vevacious](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-helper-run-vevacious)**(vevacious_1_0::VevaciousPlusPlus::VevaciousPlusPlus & vevaciousPlusPlus, [VevaciousResultContainer](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/) & result, std::string panic_vacuum, std::string inputPath) |
 | void | **[helper_catch_vevacious](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-helper-catch-vevacious)**([VevaciousResultContainer](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/) & result, std::string panic_vacuum) |
-| void | **[compare_panic_vacua](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-compare-panic-vacua)**(map_str_str & result) |
+| void | **[compare_panic_vacua](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-compare-panic-vacua)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) & result) |
 | void | **[check_vacuum_stability_vevacious](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-vacuum-stability-vevacious)**([VevaciousResultContainer](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/) & result)<br>Check stability of global vacuum of the potential with vevacious.  |
-| void | **[vevacious_file_location_MSSM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-vevacious-file-location-mssm)**(map_str_str & result)<br>Tell GAMBIT which files to work with for the MSSM.  |
+| void | **[vevacious_file_location_MSSM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-vevacious-file-location-mssm)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) & result)<br>Tell GAMBIT which files to work with for the MSSM.  |
 | void | **[prepare_pass_MSSM_spectrum_to_vevacious](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-prepare-pass-mssm-spectrum-to-vevacious)**([SpectrumEntriesForVevacious](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/) & result) |
 
 ## Types Documentation
@@ -271,7 +272,7 @@ void setup_QedQcd(
 
 Non-Gambit helper functions. 
 
-Initialise QedQcd object from SMInputs data 
+Initialise QedQcd object from [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) data 
 
 
 set running quark masses
@@ -449,7 +450,7 @@ void fill_map_from_subspectrum(
 )
 ```
 
-Convert MSSM type Spectrum object into a map, so it can be printed. 
+Convert MSSM type [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object into a map, so it can be printed. 
 
 Extract all parameters from a subspectrum and put them into a map. 
 
@@ -574,7 +575,7 @@ void specbit_test_Spectrum(
 )
 ```
 
-Test out consistency of Spectrum object (and pre-extracted SM SubSpectrum*) 
+Test out consistency of [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object (and pre-extracted SM SubSpectrum*) 
 
 ### function specbit_test_show_SMInputs
 
@@ -584,7 +585,7 @@ void specbit_test_show_SMInputs(
 )
 ```
 
-Display SMInputs values. 
+Display [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) values. 
 
 ### function test_Singlet_spectrum
 
@@ -1384,7 +1385,7 @@ void Spectrum_test(
 
 Generate data for a plot of quark mass
 
-Testing copyability of Spectrum;
+Testing copyability of [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/);
 
 
 ### function get_mUp
@@ -1610,7 +1611,7 @@ void get_DiracSingletDM_Z2_spectrum(
 )
 ```
 
-Get a (simple) Spectrum object wrapper for the DiracSingletDM_Z2 model. 
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the DiracSingletDM_Z2 model. 
 
 ### function fill_map_from_DiracSingletDM_Z2spectrum
 
@@ -1648,7 +1649,7 @@ void get_DMEFT_spectrum(
 )
 ```
 
-Get a simple wrapper for Spectrum object. 
+Get a simple wrapper for [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object. 
 
 ### function fill_map_from_DMEFT_spectrum
 
@@ -1682,7 +1683,7 @@ void get_MajoranaSingletDM_Z2_spectrum(
 )
 ```
 
-Get a (simple) Spectrum object wrapper for the MajoranaSingletDM_Z2 model. 
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the MajoranaSingletDM_Z2 model. 
 
 ### function fill_map_from_MajoranaSingletDM_Z2spectrum
 
@@ -1796,7 +1797,7 @@ void get_SM_SubSpectrum_from_MSSM_Spectrum(
 ```
 
 
-Retrieve SubSpectrum* to SM LE model from Spectrum object DEPENDENCY(MSSM_spectrum, Spectrum) 
+Retrieve SubSpectrum* to SM LE model from [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object [DEPENDENCY(MSSM_spectrum, Spectrum)](/documentation/code/files/module__macros__incore_8hpp/#define-dependency)
 
 
 ### function get_MSSM_spectrum_as_SLHAea_SLHA1
@@ -1807,7 +1808,7 @@ void get_MSSM_spectrum_as_SLHAea_SLHA1(
 )
 ```
 
-Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA1 format. 
+Extract an SLHAea version of the spectrum contained in a [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object, in SLHA1 format. 
 
 ### function get_MSSM_spectrum_as_SLHAea_SLHA2
 
@@ -1817,7 +1818,7 @@ void get_MSSM_spectrum_as_SLHAea_SLHA2(
 )
 ```
 
-Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA2 format. 
+Extract an SLHAea version of the spectrum contained in a [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object, in SLHA2 format. 
 
 ### function get_MSSM_spectrum_from_SLHAfile
 
@@ -1828,7 +1829,7 @@ void get_MSSM_spectrum_from_SLHAfile(
 ```
 
 
-Get an MSSMSpectrum object from an SLHA file Wraps it up in MSSMSimpleSpec; i.e. no RGE running possible. This is mainly for testing against benchmark points, but may be a useful last resort for interacting with "difficult" spectrum generators. 
+Get an MSSMSpectrum object from an SLHA file Wraps it up in [MSSMSimpleSpec](/documentation/code/classes/classgambit_1_1mssmsimplespec/); i.e. no RGE running possible. This is mainly for testing against benchmark points, but may be a useful last resort for interacting with "difficult" spectrum generators. 
 
 
 ### function get_MSSM_spectrum_from_SLHAstruct
@@ -1840,7 +1841,7 @@ void get_MSSM_spectrum_from_SLHAstruct(
 ```
 
 
-Get an MSSMSpectrum object from an SLHAstruct Wraps it up in MSSMSimpleSpec; i.e. no RGE running possible. This can be used as a poor-man's interface to backend spectrum generators 
+Get an MSSMSpectrum object from an SLHAstruct Wraps it up in [MSSMSimpleSpec](/documentation/code/classes/classgambit_1_1mssmsimplespec/); i.e. no RGE running possible. This can be used as a poor-man's interface to backend spectrum generators 
 
 
 TodoFIXME this needs to be fixed &ndash; is it needed any more? Where is this GAMBIT block supposed to be written? 
@@ -1953,7 +1954,7 @@ void get_ScalarSingletDM_Z2_spectrum(
 )
 ```
 
-Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z2 model. 
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the ScalarSingletDM_Z2 model. 
 
 ### function get_ScalarSingletDM_Z3_spectrum
 
@@ -1963,7 +1964,7 @@ void get_ScalarSingletDM_Z3_spectrum(
 )
 ```
 
-Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z3 model. 
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the ScalarSingletDM_Z3 model. 
 
 ### function fill_ScalarSingletDM_input
 
@@ -2051,7 +2052,7 @@ void get_QedQcd_spectrum(
 )
 ```
 
-Construct a SubSpectrum object from SMInputs using [QedQcdWrapper](). 
+Construct a [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object from [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) using [QedQcdWrapper](). 
 
 ### function get_SM_spectrum
 
@@ -2061,7 +2062,7 @@ void get_SM_spectrum(
 )
 ```
 
-Get a Spectrum object wrapper for Standard-Model-only information. 
+Get a [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for Standard-Model-only information. 
 
 ### function SM_higgs_couplings
 
@@ -2109,7 +2110,7 @@ void MSSMspectrum_test(
 ```
 
 
-Verify consistency of the contents of a Spectrum object of capability MSSMspectrum. (derived from old 'exampleRead' function) 
+Verify consistency of the contents of a [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object of capability MSSMspectrum. (derived from old 'exampleRead' function) 
 
 
 NEW! Tests of override setters These cannot be run on a const spectrum object, so we need to clone it first
@@ -2145,7 +2146,7 @@ void get_VectorSingletDM_Z2_spectrum(
 )
 ```
 
-Get a (simple) Spectrum object wrapper for the VectorSingletDM_Z2 model. 
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the VectorSingletDM_Z2 model. 
 
 ### function fill_map_from_VectorSingletDM_Z2spectrum
 
@@ -2313,7 +2314,7 @@ void make_vpp_inputs(
 ```
 
 
-Helper function that takes any YAML options and makes the vevacious input, in the form of .xml files. 
+Helper function that takes any [YAML](/documentation/code/namespaces/namespaceyaml/) options and makes the vevacious input, in the form of .xml files. 
 
 
 ### function set_panic_vacua
@@ -2371,7 +2372,7 @@ void initialize_vevacious(
 ```
 
 
-Parses the YAML file for any settings, then passes to make_vpp_inputs to create .xml files for vevacious to run with. 
+Parses the [YAML](/documentation/code/namespaces/namespaceyaml/) file for any settings, then passes to make_vpp_inputs to create .xml files for vevacious to run with. 
 
 
 ### function exec_pass_spectrum_to_vevacious
@@ -2464,4 +2465,4 @@ This function adds all entries of the spectrum object (as SLHAea) that need to b
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

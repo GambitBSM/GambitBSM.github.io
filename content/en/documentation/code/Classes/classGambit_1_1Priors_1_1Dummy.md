@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Priors::Dummy
 
 
 
@@ -20,7 +19,7 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Dummy](/documentation/code/classes/classgambit_1_1priors_1_1dummy/#function-dummy)**(const std::vector< std::string > & param, const Options & ) |
+| | **[Dummy](/documentation/code/classes/classgambit_1_1priors_1_1dummy/#function-dummy)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & ) |
 | virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1dummy/#function-transform)**(const std::vector< double > & , std::unordered_map< std::string, double > & ) const override<br>Transform from unit hypercube to parameter.  |
 | virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1dummy/#function-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
 
@@ -90,4 +89,4 @@ Transform from parameter back to unit hypercube.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DarkBit::DMEFT
 
 
 
@@ -20,7 +19,7 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-dmeft)**()<br>Initialize [DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/) object (branching ratios etc)  |
 | | **[~DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-dmeft)**() |
-| double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-sv)**(str channel, DecayTable & tbl, double(*)(str &, std::vector< str > &, std::vector< str > &, double &, const DecayTable &) sigmav, double v_rel) |
+| double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-sv)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) channel, [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & tbl, double(*)([str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > &, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > &, double &, const [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) &) sigmav, double v_rel) |
 
 ## Public Functions Documentation
 
@@ -56,4 +55,4 @@ Returns sigma*v for a given channel.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

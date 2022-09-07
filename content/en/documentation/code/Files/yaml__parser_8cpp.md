@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# src/yaml_parser.cpp
 
 
 
@@ -18,7 +17,7 @@ description: "[No description available]"
 | -------------- |
 | **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 | **[Gambit::IniParser](/documentation/code/namespaces/namespacegambit_1_1iniparser/)**  |
-| **[YAML](/documentation/code/namespaces/namespaceyaml/)**  |
+| **[YAML](/documentation/code/namespaces/namespaceyaml/)** <br>[YAML]() overloads for mass cut and mass cut ratio constituents.  |
 
 ## Defines
 
@@ -210,4 +209,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:27 +0000
+Updated on 2022-09-07 at 13:49:54 +0000

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Priors
 
 
 
@@ -47,7 +46,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | | **[gambit_registry](/documentation/code/namespaces/namespacegambit_1_1priors/#variable-gambit-registry)**  |
-| reg_elem< create_prior_function > | **[prior_creators](/documentation/code/namespaces/namespacegambit_1_1priors/#variable-prior-creators)**  |
+| [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< create_prior_function > | **[prior_creators](/documentation/code/namespaces/namespacegambit_1_1priors/#variable-prior-creators)**  |
 
 
 ## Functions Documentation
@@ -84,4 +83,4 @@ reg_elem< create_prior_function > prior_creators;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

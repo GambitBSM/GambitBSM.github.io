@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS_VRTXS
 
 
 
@@ -18,8 +17,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > | **[gl](/documentation/code/classes/structgambit_1_1ds__vrtxs/#variable-gl)**  |
-| Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > | **[gr](/documentation/code/classes/structgambit_1_1ds__vrtxs/#variable-gr)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< [Fdouble_complex](/documentation/code/classes/classgambit_1_1fcomplext/), 1, 50, 1, 50, 1, 50 > | **[gl](/documentation/code/classes/structgambit_1_1ds__vrtxs/#variable-gl)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< [Fdouble_complex](/documentation/code/classes/classgambit_1_1fcomplext/), 1, 50, 1, 50, 1, 50 > | **[gr](/documentation/code/classes/structgambit_1_1ds__vrtxs/#variable-gr)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +38,4 @@ Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > gr;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

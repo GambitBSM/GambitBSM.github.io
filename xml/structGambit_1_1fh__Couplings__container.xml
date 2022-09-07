@@ -4,7 +4,7 @@
     <compoundname>Gambit::fh_Couplings_container</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1fh__Couplings__container_1ac5fd1d6ed77713e7902757f2966fbd0c" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_Couplings_container::couplings[ncouplings]</definition>
         <argsstring>[ncouplings]</argsstring>
         <name>couplings</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="277" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="277" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__Couplings__container_1ab4112bb599740d002091a50eccbd6d56" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_Couplings_container::couplings_sm[ncouplingsms]</definition>
         <argsstring>[ncouplingsms]</argsstring>
         <name>couplings_sm</name>
@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="280" column="13" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="280" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__Couplings__container_1ab4b0265098b7203fc602df7dcc489ef5" prot="public" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::fh_Couplings_container::calculator</definition>
         <argsstring></argsstring>
         <name>calculator</name>
@@ -74,7 +74,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="281" column="9" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="281" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__Couplings__container_1a889caf8a93b184e80525b03e105c8e3b" prot="public" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::fh_Couplings_container::calculator_version</definition>
         <argsstring></argsstring>
         <name>calculator_version</name>
@@ -93,15 +93,23 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="2">
+        <label>Gambit::FcomplexT&lt; T &gt;</label>
+        <link refid="classGambit_1_1FcomplexT"/>
+      </node>
       <node id="1">
         <label>Gambit::fh_Couplings_container</label>
         <link refid="structGambit_1_1fh__Couplings__container"/>
         <childnode refid="2" relation="usage">
+          <edgelabel>couplings</edgelabel>
+          <edgelabel>couplings_sm</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
           <edgelabel>calculator</edgelabel>
           <edgelabel>calculator_version</edgelabel>
         </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>string</label>
       </node>
     </collaborationgraph>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# ColliderBit/lester_mt2_bisect.h
 
 
 
@@ -725,4 +724,4 @@ std::pair <double,double>  ben_findsols(double MT2, double px, double py, double
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:27 +0000
+Updated on 2022-09-07 at 13:49:55 +0000

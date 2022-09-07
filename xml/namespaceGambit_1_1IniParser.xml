@@ -3,6 +3,7 @@
   <compounddef id="namespaceGambit_1_1IniParser" kind="namespace" language="C++">
     <compoundname>Gambit::IniParser</compoundname>
     <innerclass refid="classGambit_1_1IniParser_1_1IniFile" prot="public">Gambit::IniParser::IniFile</innerclass>
+    <innerclass refid="classGambit_1_1IniParser_1_1Parser" prot="public">Gambit::IniParser::Parser</innerclass>
     <innernamespace refid="namespaceGambit_1_1IniParser_1_1Types">Gambit::IniParser::Types</innernamespace>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="yaml__parser_8hpp_1a9af67c0a12600376faa21dbf5ea56b8b" prot="public" static="no">
@@ -32,6 +33,83 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Core/include/gambit/Core/yaml_parser.hpp" line="86" column="25" bodyfile="Core/include/gambit/Core/yaml_parser.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="standalone__error__handlers_8hpp_1a8697beeb28af3253e25a9a2c08b47ced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1error" kindref="compound">error</ref> &amp;</type>
+        <definition>error &amp; Gambit::IniParser::inifile_error</definition>
+        <argsstring>()</argsstring>
+        <name>inifile_error</name>
+        <qualifiedname>Gambit::IniParser::inifile_error</qualifiedname>
+        <briefdescription>
+<para><ref refid="classGambit_1_1IniParser_1_1IniFile" kindref="compound">IniFile</ref> errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/standalone_error_handlers.cpp" line="112" column="11" bodyfile="Utils/src/standalone_error_handlers.cpp" bodystart="112" bodyend="116" declfile="Utils/include/gambit/Utils/standalone_error_handlers.hpp" declline="61" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="standalone__error__handlers_8hpp_1aaf4cbacee34ef2bacd6fd95f33a361db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1warning" kindref="compound">warning</ref> &amp;</type>
+        <definition>warning &amp; Gambit::IniParser::inifile_warning</definition>
+        <argsstring>()</argsstring>
+        <name>inifile_warning</name>
+        <qualifiedname>Gambit::IniParser::inifile_warning</qualifiedname>
+        <briefdescription>
+<para><ref refid="classGambit_1_1IniParser_1_1IniFile" kindref="compound">IniFile</ref> warnings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/standalone_error_handlers.cpp" line="119" column="13" bodyfile="Utils/src/standalone_error_handlers.cpp" bodystart="119" bodyend="123" declfile="Utils/include/gambit/Utils/standalone_error_handlers.hpp" declline="63" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__parser__base_8cpp_1afa7ee32d6cb7c2af953e8245807d0bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::IniParser::importRound</definition>
+        <argsstring>(YAML::Node node, const std::string &amp;filename)</argsstring>
+        <name>importRound</name>
+        <qualifiedname>Gambit::IniParser::importRound</qualifiedname>
+        <param>
+          <type>YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Recursive import. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/yaml_parser_base.cpp" line="37" column="9" bodyfile="Utils/src/yaml_parser_base.cpp" bodystart="37" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__parser__base_8cpp_1ab8b06f0ad21b895eb47543972756665b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::IniParser::recursiveImport</definition>
+        <argsstring>(const YAML::Node &amp;node, const std::string &amp;filename)</argsstring>
+        <name>recursiveImport</name>
+        <qualifiedname>Gambit::IniParser::recursiveImport</qualifiedname>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/yaml_parser_base.cpp" line="102" column="10" bodyfile="Utils/src/yaml_parser_base.cpp" bodystart="102" bodyend="122"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

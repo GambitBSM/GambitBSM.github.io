@@ -51,7 +51,7 @@
         <location file="Core/include/gambit/Core/likelihood_container.hpp" line="57" column="32" bodyfile="Core/include/gambit/Core/likelihood_container.hpp" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container_1a23eeb385392ba87588e4f92b99f3e908" prot="private" static="no" mutable="no">
-        <type>Printers::BaseBasePrinter &amp;</type>
+        <type><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">Printers::BaseBasePrinter</ref> &amp;</type>
         <definition>Printers::BaseBasePrinter&amp; Gambit::Likelihood_Container::printer</definition>
         <argsstring></argsstring>
         <name>printer</name>
@@ -66,7 +66,7 @@
         <location file="Core/include/gambit/Core/likelihood_container.hpp" line="60" column="33" bodyfile="Core/include/gambit/Core/likelihood_container.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container_1a34452261bf459b4b0161f8ac06f964ca" prot="private" static="no" mutable="no">
-        <type>std::map&lt; str, primary_model_functor * &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt;</type>
         <definition>std::map&lt;str, primary_model_functor *&gt; Gambit::Likelihood_Container::functorMap</definition>
         <argsstring></argsstring>
         <name>functorMap</name>
@@ -157,7 +157,7 @@
         <location file="Core/include/gambit/Core/likelihood_container.hpp" line="81" column="14" bodyfile="Core/include/gambit/Core/likelihood_container.hpp" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container_1aa1f18e5f4a48c957a203a04b3a42205e" prot="private" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::Likelihood_Container::lnlike_modifier_name</definition>
         <argsstring></argsstring>
         <name>lnlike_modifier_name</name>
@@ -172,7 +172,7 @@
         <location file="Core/include/gambit/Core/likelihood_container.hpp" line="84" column="11" bodyfile="Core/include/gambit/Core/likelihood_container.hpp" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container_1ac125877b7bb45af80f421d44c54518d8" prot="private" static="no" mutable="no">
-        <type>Options</type>
+        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
         <definition>Options Gambit::Likelihood_Container::lnlike_modifier_params</definition>
         <argsstring></argsstring>
         <name>lnlike_modifier_params</name>
@@ -186,7 +186,7 @@
         <location file="Core/include/gambit/Core/likelihood_container.hpp" line="85" column="15" bodyfile="Core/include/gambit/Core/likelihood_container.hpp" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container_1aa8f762b3a8420cc2045440e6e34d01f1" prot="private" static="no" mutable="no">
-        <type>std::map&lt; DRes::VertexID, str &gt;</type>
+        <type>std::map&lt; DRes::VertexID, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
         <definition>std::map&lt;DRes::VertexID,str&gt; Gambit::Likelihood_Container::return_types</definition>
         <argsstring></argsstring>
         <name>return_types</name>
@@ -231,7 +231,7 @@
         <location file="Core/include/gambit/Core/likelihood_container.hpp" line="93" column="31" bodyfile="Core/include/gambit/Core/likelihood_container.hpp" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container_1ab8837ec0b09b738ba0af6adb0ea663fb" prot="private" static="no" mutable="no">
-        <type>const str</type>
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>const str Gambit::Likelihood_Container::intralooptime_label</definition>
         <argsstring></argsstring>
         <name>intralooptime_label</name>
@@ -246,7 +246,7 @@
         <location file="Core/include/gambit/Core/likelihood_container.hpp" line="96" column="17" bodyfile="Core/include/gambit/Core/likelihood_container.hpp" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container_1aa9abe0f1a2fe234b9f75b4883f2333a8" prot="private" static="no" mutable="no">
-        <type>const str</type>
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>const str Gambit::Likelihood_Container::interlooptime_label</definition>
         <argsstring></argsstring>
         <name>interlooptime_label</name>
@@ -260,7 +260,7 @@
         <location file="Core/include/gambit/Core/likelihood_container.hpp" line="97" column="17" bodyfile="Core/include/gambit/Core/likelihood_container.hpp" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Likelihood__Container_1a9a02cef9b9edaef97a112c0bf8c439a0" prot="private" static="no" mutable="no">
-        <type>const str</type>
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>const str Gambit::Likelihood_Container::totallooptime_label</definition>
         <argsstring></argsstring>
         <name>totallooptime_label</name>
@@ -355,7 +355,7 @@
         <name>Likelihood_Container</name>
         <qualifiedname>Gambit::Likelihood_Container::Likelihood_Container</qualifiedname>
         <param>
-          <type>const std::map&lt; str, primary_model_functor * &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1primary__model__functor" kindref="compound">primary_model_functor</ref> * &gt; &amp;</type>
           <declname>functorMap</declname>
         </param>
         <param>
@@ -367,11 +367,11 @@
           <declname>iniFile</declname>
         </param>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <declname>purpose</declname>
         </param>
         <param>
-          <type>Printers::BaseBasePrinter &amp;</type>
+          <type><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">Printers::BaseBasePrinter</ref> &amp;</type>
           <declname>printer</declname>
         </param>
         <briefdescription>

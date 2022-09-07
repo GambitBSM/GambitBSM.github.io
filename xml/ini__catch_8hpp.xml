@@ -1,0 +1,1427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="ini__catch_8hpp" kind="file" language="C++">
+    <compoundname>ini_catch.hpp</compoundname>
+    <includes local="no">exception</includes>
+    <includedby refid="ini__catch_8cpp" local="yes">ini_catch.cpp</includedby>
+    <includedby refid="Backends_2src_2ini__functions_8cpp" local="yes">ini_functions.cpp</includedby>
+    <includedby refid="Core_2src_2ini__functions_8cpp" local="yes">ini_functions.cpp</includedby>
+    <includedby refid="Elements_2src_2ini__functions_8cpp" local="yes">ini_functions.cpp</includedby>
+    <includedby refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp" local="yes">ini_functions.hpp</includedby>
+    <includedby refid="mathematica__function_8hpp" local="yes">mathematica_function.hpp</includedby>
+    <includedby refid="mathematica__variable_8hpp" local="yes">mathematica_variable.hpp</includedby>
+    <includedby refid="python__function_8hpp" local="yes">python_function.hpp</includedby>
+    <includedby refid="python__variable_8hpp" local="yes">python_variable.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>exception</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>backend_macros.hpp</label>
+        <link refid="backend__macros_8hpp"/>
+      </node>
+      <node id="160">
+        <label>common_macros.hpp</label>
+        <link refid="common__macros_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>frontend_macros.hpp</label>
+        <link refid="frontend__macros_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ini_functions.hpp</label>
+        <link refid="Backends_2include_2gambit_2Backends_2ini__functions_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>interoperability.hpp</label>
+        <link refid="interoperability_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mathematica_function.hpp</label>
+        <link refid="mathematica__function_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mathematica_macros.hpp</label>
+        <link refid="mathematica__macros_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>mathematica_variable.hpp</label>
+        <link refid="mathematica__variable_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>python_function.hpp</label>
+        <link refid="python__function_8hpp"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>python_macros.hpp</label>
+        <link refid="python__macros_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>python_variable.hpp</label>
+        <link refid="python__variable_8hpp"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Acropolis_1_2_1.cpp</label>
+        <link refid="Acropolis__1__2__1_8cpp"/>
+      </node>
+      <node id="13">
+        <label>AlterBBN_2_2.cpp</label>
+        <link refid="AlterBBN__2__2_8cpp"/>
+      </node>
+      <node id="14">
+        <label>CalcHEP_3_6_27.cpp</label>
+        <link refid="CalcHEP__3__6__27_8cpp"/>
+      </node>
+      <node id="15">
+        <label>CaptnGeneral_2_1.cpp</label>
+        <link refid="CaptnGeneral__2__1_8cpp"/>
+      </node>
+      <node id="16">
+        <label>DDCalc_1_0_0.cpp</label>
+        <link refid="DDCalc__1__0__0_8cpp"/>
+      </node>
+      <node id="17">
+        <label>DDCalc_1_1_0.cpp</label>
+        <link refid="DDCalc__1__1__0_8cpp"/>
+      </node>
+      <node id="18">
+        <label>DDCalc_1_2_0.cpp</label>
+        <link refid="DDCalc__1__2__0_8cpp"/>
+      </node>
+      <node id="19">
+        <label>DDCalc_2_0_0.cpp</label>
+        <link refid="DDCalc__2__0__0_8cpp"/>
+      </node>
+      <node id="20">
+        <label>DDCalc_2_1_0.cpp</label>
+        <link refid="DDCalc__2__1__0_8cpp"/>
+      </node>
+      <node id="21">
+        <label>DDCalc_2_2_0.cpp</label>
+        <link refid="DDCalc__2__2__0_8cpp"/>
+      </node>
+      <node id="22">
+        <label>DarkAges_1_2_0.cpp</label>
+        <link refid="DarkAges__1__2__0_8cpp"/>
+      </node>
+      <node id="23">
+        <label>DarkSUSY_5_1_3.cpp</label>
+        <link refid="DarkSUSY__5__1__3_8cpp"/>
+      </node>
+      <node id="24">
+        <label>DarkSUSY_MSSM_6_1_1.cpp</label>
+        <link refid="DarkSUSY__MSSM__6__1__1_8cpp"/>
+      </node>
+      <node id="25">
+        <label>DarkSUSY_MSSM_6_2_2.cpp</label>
+        <link refid="DarkSUSY__MSSM__6__2__2_8cpp"/>
+      </node>
+      <node id="26">
+        <label>DarkSUSY_MSSM_6_2_5.cpp</label>
+        <link refid="DarkSUSY__MSSM__6__2__5_8cpp"/>
+      </node>
+      <node id="27">
+        <label>DarkSUSY_generic_wimp_6_1_1.cpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__1__1_8cpp"/>
+      </node>
+      <node id="28">
+        <label>DarkSUSY_generic_wimp_6_2_2.cpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__2__2_8cpp"/>
+      </node>
+      <node id="29">
+        <label>DarkSUSY_generic_wimp_6_2_5.cpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__2__5_8cpp"/>
+      </node>
+      <node id="30">
+        <label>DirectDM_2_2_0.cpp</label>
+        <link refid="DirectDM__2__2__0_8cpp"/>
+      </node>
+      <node id="31">
+        <label>LibMathematicaTest.cpp</label>
+        <link refid="LibMathematicaTest_8cpp"/>
+      </node>
+      <node id="32">
+        <label>LibSecond_1_1.cpp</label>
+        <link refid="LibSecond__1__1_8cpp"/>
+      </node>
+      <node id="33">
+        <label>LibSecond_1_2.cpp</label>
+        <link refid="LibSecond__1__2_8cpp"/>
+      </node>
+      <node id="34">
+        <label>LibThird_1_0.cpp</label>
+        <link refid="LibThird__1__0_8cpp"/>
+      </node>
+      <node id="35">
+        <label>LibThird_1_1.cpp</label>
+        <link refid="LibThird__1__1_8cpp"/>
+      </node>
+      <node id="36">
+        <label>LibThird_1_2.cpp</label>
+        <link refid="LibThird__1__2_8cpp"/>
+      </node>
+      <node id="37">
+        <label>MicrOmegas_DiracSingletDM_Z2_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__DiracSingletDM__Z2__3__6__9__2_8cpp"/>
+      </node>
+      <node id="38">
+        <label>MicrOmegas_MSSM_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__MSSM__3__6__9__2_8cpp"/>
+      </node>
+      <node id="39">
+        <label>MicrOmegas_MajoranaSingletDM_Z2_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__MajoranaSingletDM__Z2__3__6__9__2_8cpp"/>
+      </node>
+      <node id="40">
+        <label>MicrOmegas_ScalarSingletDM_Z2_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__ScalarSingletDM__Z2__3__6__9__2_8cpp"/>
+      </node>
+      <node id="41">
+        <label>MicrOmegas_ScalarSingletDM_Z3_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__ScalarSingletDM__Z3__3__6__9__2_8cpp"/>
+      </node>
+      <node id="42">
+        <label>MicrOmegas_VectorSingletDM_Z2_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__VectorSingletDM__Z2__3__6__9__2_8cpp"/>
+      </node>
+      <node id="43">
+        <label>MontePythonLike_3_3_0.cpp</label>
+        <link refid="MontePythonLike__3__3__0_8cpp"/>
+      </node>
+      <node id="44">
+        <label>MontePythonLike_3_5_0.cpp</label>
+        <link refid="MontePythonLike__3__5__0_8cpp"/>
+      </node>
+      <node id="45">
+        <label>MultiModeCode_2_0_0.cpp</label>
+        <link refid="MultiModeCode__2__0__0_8cpp"/>
+      </node>
+      <node id="46">
+        <label>Prospino_2_1.cpp</label>
+        <link refid="Prospino__2__1_8cpp"/>
+      </node>
+      <node id="47">
+        <label>SPheno_3_3_8.cpp</label>
+        <link refid="SPheno__3__3__8_8cpp"/>
+      </node>
+      <node id="48">
+        <label>SPheno_4_0_3.cpp</label>
+        <link refid="SPheno__4__0__3_8cpp"/>
+      </node>
+      <node id="49">
+        <label>SUSY-HIT_1_5.cpp</label>
+        <link refid="SUSY-HIT__1__5_8cpp"/>
+      </node>
+      <node id="50">
+        <label>SUSYHD_1_0_2.cpp</label>
+        <link refid="SUSYHD__1__0__2_8cpp"/>
+      </node>
+      <node id="51">
+        <label>SuperIso_4_1.cpp</label>
+        <link refid="SuperIso__4__1_8cpp"/>
+      </node>
+      <node id="52">
+        <label>classy_2_6_3.cpp</label>
+        <link refid="classy__2__6__3_8cpp"/>
+      </node>
+      <node id="53">
+        <label>classy_2_9_3.cpp</label>
+        <link refid="classy__2__9__3_8cpp"/>
+      </node>
+      <node id="54">
+        <label>classy_2_9_4.cpp</label>
+        <link refid="classy__2__9__4_8cpp"/>
+      </node>
+      <node id="55">
+        <label>classy_3_1_0.cpp</label>
+        <link refid="classy__3__1__0_8cpp"/>
+      </node>
+      <node id="56">
+        <label>classy_exo_2_7_2.cpp</label>
+        <link refid="classy__exo__2__7__2_8cpp"/>
+      </node>
+      <node id="57">
+        <label>gamLike_1_0_0.cpp</label>
+        <link refid="gamLike__1__0__0_8cpp"/>
+      </node>
+      <node id="58">
+        <label>gamLike_1_0_1.cpp</label>
+        <link refid="gamLike__1__0__1_8cpp"/>
+      </node>
+      <node id="59">
+        <label>nulike_1_0_4.cpp</label>
+        <link refid="nulike__1__0__4_8cpp"/>
+      </node>
+      <node id="60">
+        <label>nulike_1_0_5.cpp</label>
+        <link refid="nulike__1__0__5_8cpp"/>
+      </node>
+      <node id="61">
+        <label>nulike_1_0_6.cpp</label>
+        <link refid="nulike__1__0__6_8cpp"/>
+      </node>
+      <node id="62">
+        <label>nulike_1_0_7.cpp</label>
+        <link refid="nulike__1__0__7_8cpp"/>
+      </node>
+      <node id="63">
+        <label>nulike_1_0_8.cpp</label>
+        <link refid="nulike__1__0__8_8cpp"/>
+      </node>
+      <node id="64">
+        <label>nulike_1_0_9.cpp</label>
+        <link refid="nulike__1__0__9_8cpp"/>
+      </node>
+      <node id="65">
+        <label>plc_3_0.cpp</label>
+        <link refid="plc__3__0_8cpp"/>
+      </node>
+      <node id="66">
+        <label>salami_0_1_0.cpp</label>
+        <link refid="salami__0__1__0_8cpp"/>
+      </node>
+      <node id="67">
+        <label>xsecBE_1_0_2.cpp</label>
+        <link refid="xsecBE__1__0__2_8cpp"/>
+      </node>
+      <node id="3">
+        <label>ini_functions.cpp</label>
+        <link refid="Backends_2src_2ini__functions_8cpp"/>
+      </node>
+      <node id="79">
+        <label>ColliderBit_eventloop.hpp</label>
+        <link refid="ColliderBit__eventloop_8hpp"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>ColliderBit_rollcall.hpp</label>
+        <link refid="ColliderBit__rollcall_8hpp"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>ColliderBit_types.hpp</label>
+        <link refid="ColliderBit__types_8hpp"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>Py8Collider.hpp</label>
+        <link refid="Py8Collider_8hpp"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>SetHooksClass.hpp</label>
+        <link refid="SetHooksClass_8hpp"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>complete_process_PID_pair_multimaps.hpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8hpp"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>BaseDetector.hpp</label>
+        <link refid="BaseDetector_8hpp"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>BuckFast.hpp</label>
+        <link refid="BuckFast_8hpp"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>generateEventPy8Collider.hpp</label>
+        <link refid="generateEventPy8Collider_8hpp"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>getPy8Collider.hpp</label>
+        <link refid="getPy8Collider_8hpp"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>ALEPHSleptonLimits.hpp</label>
+        <link refid="ALEPHSleptonLimits_8hpp_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>BaseLimitContainer.hpp</label>
+        <link refid="BaseLimitContainer_8hpp"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>L3GauginoLimits.hpp</label>
+        <link refid="L3GauginoLimits_8hpp_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>L3SleptonLimits.hpp</label>
+        <link refid="L3SleptonLimits_8hpp_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>L3SmallDeltaMGauginoLimits.hpp</label>
+        <link refid="L3SmallDeltaMGauginoLimits_8hpp_source"/>
+      </node>
+      <node id="105">
+        <label>OPALDegenerateCharginoLimits.hpp</label>
+        <link refid="OPALDegenerateCharginoLimits_8hpp_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>OPALGauginoLimits.hpp</label>
+        <link refid="OPALGauginoLimits_8hpp_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>ColliderBit_Higgs.cpp</label>
+        <link refid="ColliderBit__Higgs_8cpp"/>
+      </node>
+      <node id="76">
+        <label>ColliderBit_InterpolatedYields.cpp</label>
+        <link refid="ColliderBit__InterpolatedYields_8cpp"/>
+      </node>
+      <node id="77">
+        <label>ColliderBit_LEP.cpp</label>
+        <link refid="ColliderBit__LEP_8cpp"/>
+      </node>
+      <node id="78">
+        <label>ColliderBit_dummy.cpp</label>
+        <link refid="ColliderBit__dummy_8cpp"/>
+      </node>
+      <node id="80">
+        <label>ColliderBit_eventloop.cpp</label>
+        <link refid="ColliderBit__eventloop_8cpp"/>
+      </node>
+      <node id="95">
+        <label>LHC_likelihoods.cpp</label>
+        <link refid="LHC__likelihoods_8cpp"/>
+      </node>
+      <node id="81">
+        <label>collider_event_weights.cpp</label>
+        <link refid="collider__event__weights_8cpp"/>
+      </node>
+      <node id="98">
+        <label>complete_process_PID_pair_multimaps.cpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8cpp"/>
+      </node>
+      <node id="72">
+        <label>BuckFast.cpp</label>
+        <link refid="BuckFast_8cpp"/>
+      </node>
+      <node id="85">
+        <label>getActiveProcessCodes.cpp</label>
+        <link refid="getActiveProcessCodes_8cpp"/>
+      </node>
+      <node id="86">
+        <label>getAnalysisContainer.cpp</label>
+        <link refid="getAnalysisContainer_8cpp"/>
+      </node>
+      <node id="87">
+        <label>getBuckFast.cpp</label>
+        <link refid="getBuckFast_8cpp"/>
+      </node>
+      <node id="88">
+        <label>getHepMCEvent.cpp</label>
+        <link refid="getHepMCEvent_8cpp"/>
+      </node>
+      <node id="89">
+        <label>getLHEvent.cpp</label>
+        <link refid="getLHEvent_8cpp"/>
+      </node>
+      <node id="91">
+        <label>getxsec.cpp</label>
+        <link refid="getxsec_8cpp"/>
+      </node>
+      <node id="96">
+        <label>lep_mssm_xsecs.cpp</label>
+        <link refid="lep__mssm__xsecs_8cpp"/>
+      </node>
+      <node id="101">
+        <label>BaseLimitContainer.cpp</label>
+        <link refid="BaseLimitContainer_8cpp"/>
+      </node>
+      <node id="83">
+        <label>SUSY.cpp</label>
+        <link refid="SUSY_8cpp"/>
+      </node>
+      <node id="84">
+        <label>SUSY_extras.cpp</label>
+        <link refid="SUSY__extras_8cpp"/>
+      </node>
+      <node id="92">
+        <label>process_code_PID_pair_mapping.cpp</label>
+        <link refid="process__code__PID__pair__mapping_8cpp"/>
+      </node>
+      <node id="93">
+        <label>runAnalyses.cpp</label>
+        <link refid="runAnalyses_8cpp"/>
+      </node>
+      <node id="94">
+        <label>smearEvent.cpp</label>
+        <link refid="smearEvent_8cpp"/>
+      </node>
+      <node id="182">
+        <label>container_factory.hpp</label>
+        <link refid="container__factory_8hpp"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>depresolver.hpp</label>
+        <link refid="depresolver_8hpp"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>gambit.hpp</label>
+        <link refid="gambit_8hpp"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>modelgraph.hpp</label>
+        <link refid="modelgraph_8hpp"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>container_factory.cpp</label>
+        <link refid="container__factory_8cpp"/>
+      </node>
+      <node id="188">
+        <label>depresolver.cpp</label>
+        <link refid="depresolver_8cpp"/>
+      </node>
+      <node id="190">
+        <label>diagnostics.cpp</label>
+        <link refid="diagnostics_8cpp"/>
+      </node>
+      <node id="186">
+        <label>gambit.cpp</label>
+        <link refid="gambit_8cpp"/>
+      </node>
+      <node id="4">
+        <label>ini_functions.cpp</label>
+        <link refid="Core_2src_2ini__functions_8cpp"/>
+      </node>
+      <node id="187">
+        <label>likelihood_container.cpp</label>
+        <link refid="likelihood__container_8cpp"/>
+      </node>
+      <node id="191">
+        <label>modelgraph.cpp</label>
+        <link refid="modelgraph_8cpp"/>
+      </node>
+      <node id="111">
+        <label>BBN.cpp</label>
+        <link refid="BBN_8cpp"/>
+      </node>
+      <node id="112">
+        <label>Boltzmann.cpp</label>
+        <link refid="Boltzmann_8cpp"/>
+      </node>
+      <node id="113">
+        <label>CMB.cpp</label>
+        <link refid="CMB_8cpp"/>
+      </node>
+      <node id="115">
+        <label>CosmoALPs.cpp</label>
+        <link refid="CosmoALPs_8cpp"/>
+      </node>
+      <node id="116">
+        <label>CosmoBit.cpp</label>
+        <link refid="CosmoBit_8cpp"/>
+      </node>
+      <node id="129">
+        <label>Inflation.cpp</label>
+        <link refid="Inflation_8cpp"/>
+      </node>
+      <node id="132">
+        <label>MontePython.cpp</label>
+        <link refid="MontePython_8cpp"/>
+      </node>
+      <node id="136">
+        <label>Planck.cpp</label>
+        <link refid="Planck_8cpp"/>
+      </node>
+      <node id="165">
+        <label>DarkBit_standalone_MSSM.cpp</label>
+        <link refid="DarkBit__standalone__MSSM_8cpp"/>
+      </node>
+      <node id="166">
+        <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
+        <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
+      </node>
+      <node id="167">
+        <label>DarkBit_standalone_WIMP.cpp</label>
+        <link refid="DarkBit__standalone__WIMP_8cpp"/>
+      </node>
+      <node id="110">
+        <label>Axions.cpp</label>
+        <link refid="DarkBit_2src_2Axions_8cpp"/>
+      </node>
+      <node id="114">
+        <label>Cascades.cpp</label>
+        <link refid="Cascades_8cpp"/>
+      </node>
+      <node id="117">
+        <label>DMEFT.cpp</label>
+        <link refid="DarkBit_2src_2DMEFT_8cpp"/>
+      </node>
+      <node id="118">
+        <label>DarkBit.cpp</label>
+        <link refid="DarkBit_8cpp"/>
+      </node>
+      <node id="119">
+        <label>DarkBit_utils.cpp</label>
+        <link refid="DarkBit__utils_8cpp"/>
+      </node>
+      <node id="121">
+        <label>DiracSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2DiracSingletDM_8cpp"/>
+      </node>
+      <node id="122">
+        <label>DirectDetection.cpp</label>
+        <link refid="DirectDetection_8cpp"/>
+      </node>
+      <node id="123">
+        <label>EnergyInjection.cpp</label>
+        <link refid="EnergyInjection_8cpp"/>
+      </node>
+      <node id="128">
+        <label>IndirectDetectionYields.cpp</label>
+        <link refid="IndirectDetectionYields_8cpp"/>
+      </node>
+      <node id="130">
+        <label>MSSM.cpp</label>
+        <link refid="DarkBit_2src_2MSSM_8cpp"/>
+      </node>
+      <node id="131">
+        <label>MajoranaSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2MajoranaSingletDM_8cpp"/>
+      </node>
+      <node id="135">
+        <label>PPPC.cpp</label>
+        <link refid="PPPC_8cpp"/>
+      </node>
+      <node id="138">
+        <label>ProcessCatalog.cpp</label>
+        <link refid="ProcessCatalog_8cpp"/>
+      </node>
+      <node id="139">
+        <label>RelicDensity.cpp</label>
+        <link refid="RelicDensity_8cpp"/>
+      </node>
+      <node id="141">
+        <label>ScalarSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
+      </node>
+      <node id="142">
+        <label>SimpleHist.cpp</label>
+        <link refid="SimpleHist_8cpp"/>
+      </node>
+      <node id="143">
+        <label>SimpleLikelihoods.cpp</label>
+        <link refid="SimpleLikelihoods_8cpp"/>
+      </node>
+      <node id="155">
+        <label>SunNeutrinos.cpp</label>
+        <link refid="SunNeutrinos_8cpp"/>
+      </node>
+      <node id="156">
+        <label>VectorSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
+      </node>
+      <node id="157">
+        <label>WIMP_EFT.cpp</label>
+        <link refid="WIMP__EFT_8cpp"/>
+      </node>
+      <node id="158">
+        <label>decay_chain.cpp</label>
+        <link refid="decay__chain_8cpp"/>
+      </node>
+      <node id="164">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="120">
+        <label>DecayBit.cpp</label>
+        <link refid="DecayBit_8cpp"/>
+      </node>
+      <node id="192">
+        <label>functor_definitions.hpp</label>
+        <link refid="functor__definitions_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>gambit_module_headers.hpp</label>
+        <link refid="gambit__module__headers_8hpp"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>module_macros_incore.hpp</label>
+        <link refid="module__macros__incore_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>module_macros_incore_defs.hpp</label>
+        <link refid="module__macros__incore__defs_8hpp"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>printable_types.hpp</label>
+        <link refid="Elements_2include_2gambit_2Elements_2printable__types_8hpp"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>types_rollcall.hpp</label>
+        <link refid="types__rollcall_8hpp"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>functors.cpp</label>
+        <link refid="Elements_2src_2functors_8cpp"/>
+      </node>
+      <node id="2">
+        <label>ini_catch.cpp</label>
+        <link refid="ini__catch_8cpp"/>
+      </node>
+      <node id="5">
+        <label>ini_functions.cpp</label>
+        <link refid="Elements_2src_2ini__functions_8cpp"/>
+      </node>
+      <node id="168">
+        <label>ExampleBit_A_standalone_example.cpp</label>
+        <link refid="ExampleBit__A__standalone__example_8cpp"/>
+      </node>
+      <node id="124">
+        <label>ExampleBit_A.cpp</label>
+        <link refid="ExampleBit__A_8cpp"/>
+      </node>
+      <node id="125">
+        <label>ExampleBit_B.cpp</label>
+        <link refid="ExampleBit__B_8cpp"/>
+      </node>
+      <node id="126">
+        <label>FlavBit.cpp</label>
+        <link refid="FlavBit_8cpp"/>
+      </node>
+      <node id="127">
+        <label>Flav_reader.cpp</label>
+        <link refid="Flav__reader_8cpp"/>
+      </node>
+      <node id="133">
+        <label>NeutrinoBit.cpp</label>
+        <link refid="NeutrinoBit_8cpp"/>
+      </node>
+      <node id="140">
+        <label>RightHandedNeutrinos.cpp</label>
+        <link refid="RightHandedNeutrinos_8cpp"/>
+      </node>
+      <node id="134">
+        <label>ObjectivesBit.cpp</label>
+        <link refid="ObjectivesBit_8cpp"/>
+      </node>
+      <node id="137">
+        <label>PrecisionBit.cpp</label>
+        <link refid="PrecisionBit_8cpp"/>
+      </node>
+      <node id="170">
+        <label>baseprinter.hpp</label>
+        <link refid="baseprinter_8hpp"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>asciiprinter.hpp</label>
+        <link refid="asciiprinter_8hpp"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>asciireader.hpp</label>
+        <link refid="asciireader_8hpp"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>coutprinter.hpp</label>
+        <link refid="coutprinter_8hpp"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>hdf5printer.hpp</label>
+        <link refid="hdf5printer_8hpp"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>hdf5printer_v2.hpp</label>
+        <link refid="hdf5printer__v2_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>hdf5reader.hpp</label>
+        <link refid="hdf5reader_8hpp"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>noneprinter.hpp</label>
+        <link refid="noneprinter_8hpp"/>
+      </node>
+      <node id="205">
+        <label>sqliteprinter.hpp</label>
+        <link refid="sqliteprinter_8hpp"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>sqlitereader.hpp</label>
+        <link refid="sqlitereader_8hpp"/>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>baseprinter.cpp</label>
+        <link refid="baseprinter_8cpp"/>
+      </node>
+      <node id="204">
+        <label>printermanager.cpp</label>
+        <link refid="printermanager_8cpp"/>
+      </node>
+      <node id="172">
+        <label>asciiprinter.cpp</label>
+        <link refid="asciiprinter_8cpp"/>
+      </node>
+      <node id="175">
+        <label>asciireader.cpp</label>
+        <link refid="asciireader_8cpp"/>
+      </node>
+      <node id="173">
+        <label>print_overloads.cpp</label>
+        <link refid="asciiprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="176">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="asciiprinter_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="179">
+        <label>coutprinter.cpp</label>
+        <link refid="coutprinter_8cpp"/>
+      </node>
+      <node id="180">
+        <label>print_overloads.cpp</label>
+        <link refid="coutprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="195">
+        <label>hdf5printer.cpp</label>
+        <link refid="hdf5printer_8cpp"/>
+      </node>
+      <node id="196">
+        <label>hdf5reader.cpp</label>
+        <link refid="hdf5reader_8cpp"/>
+      </node>
+      <node id="197">
+        <label>print_overloads.cpp</label>
+        <link refid="hdf5printer_2print__overloads_8cpp"/>
+      </node>
+      <node id="198">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="hdf5printer_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="200">
+        <label>hdf5printer_v2.cpp</label>
+        <link refid="hdf5printer__v2_8cpp"/>
+      </node>
+      <node id="201">
+        <label>print_overloads.cpp</label>
+        <link refid="hdf5printer__v2_2print__overloads_8cpp"/>
+      </node>
+      <node id="206">
+        <label>print_overloads.cpp</label>
+        <link refid="sqliteprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="209">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="sqliteprinter_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="207">
+        <label>sqliteprinter.cpp</label>
+        <link refid="sqliteprinter_8cpp"/>
+      </node>
+      <node id="210">
+        <label>sqlitereader.cpp</label>
+        <link refid="sqlitereader_8cpp"/>
+      </node>
+      <node id="144">
+        <label>SpecBit.cpp</label>
+        <link refid="SpecBit_8cpp"/>
+      </node>
+      <node id="145">
+        <label>SpecBit_DMEFT.cpp</label>
+        <link refid="SpecBit__DMEFT_8cpp"/>
+      </node>
+      <node id="146">
+        <label>SpecBit_DiracSingletDM.cpp</label>
+        <link refid="SpecBit__DiracSingletDM_8cpp"/>
+      </node>
+      <node id="147">
+        <label>SpecBit_MDM.cpp</label>
+        <link refid="SpecBit__MDM_8cpp"/>
+      </node>
+      <node id="148">
+        <label>SpecBit_MSSM.cpp</label>
+        <link refid="SpecBit__MSSM_8cpp"/>
+      </node>
+      <node id="149">
+        <label>SpecBit_MajoranaSingletDM.cpp</label>
+        <link refid="SpecBit__MajoranaSingletDM_8cpp"/>
+      </node>
+      <node id="150">
+        <label>SpecBit_SM.cpp</label>
+        <link refid="SpecBit__SM_8cpp"/>
+      </node>
+      <node id="151">
+        <label>SpecBit_ScalarSingletDM.cpp</label>
+        <link refid="SpecBit__ScalarSingletDM_8cpp"/>
+      </node>
+      <node id="152">
+        <label>SpecBit_VS.cpp</label>
+        <link refid="SpecBit__VS_8cpp"/>
+      </node>
+      <node id="153">
+        <label>SpecBit_VectorSingletDM.cpp</label>
+        <link refid="SpecBit__VectorSingletDM_8cpp"/>
+      </node>
+      <node id="154">
+        <label>SpecBit_tests.cpp</label>
+        <link refid="src_2SpecBit__tests_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Micro function useful from all sorts of other initialisation codes.</para>
+<para><hruler/>
+</para>
+<sect1 id="ini__catch_8hpp_1autotoc_md26">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Feb</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Micro<sp/>function<sp/>useful<sp/>from<sp/>all<sp/>sorts<sp/>of<sp/>other</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>initialisation<sp/>codes.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>Authors</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>=======</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify)</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Feb</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>///<sp/>Catch<sp/>initialisation<sp/>exceptions</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a4ae203c31e880f8dc24caba978956555" kindref="member">ini_catch</ref>(std::exception&amp;);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Elements/include/gambit/Elements/ini_catch.hpp"/>
+  </compounddef>
+</doxygen>

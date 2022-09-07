@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS_RDDOF</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS__RDDOF_1a30096e804de60f968f8d8145301e7cc5" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 300 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 300 &gt;</type>
         <definition>Farray&lt;Fdouble,1,300&gt; Gambit::DS_RDDOF::tgev</definition>
         <argsstring></argsstring>
         <name>tgev</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="354" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__RDDOF_1a515824ed46e5d159f7700d63c4f0fa7e" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 300 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 300 &gt;</type>
         <definition>Farray&lt;Fdouble,1,300&gt; Gambit::DS_RDDOF::fh</definition>
         <argsstring></argsstring>
         <name>fh</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="354" column="18" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__RDDOF_1a2e9266f9a1bcecd5f0d68e194b9b0b6f" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 300 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 300 &gt;</type>
         <definition>Farray&lt;Fdouble,1,300&gt; Gambit::DS_RDDOF::fg</definition>
         <argsstring></argsstring>
         <name>fg</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="354" column="20" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__RDDOF_1ac43188606fcc0f67d946e8d60289798b" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 300 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 300 &gt;</type>
         <definition>Farray&lt;Fdouble,1,300&gt; Gambit::DS_RDDOF::fe</definition>
         <argsstring></argsstring>
         <name>fe</name>
@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="354" column="22" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__RDDOF_1abdd1328c89f34e5ca958f5261b4f3c35" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 300 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 300 &gt;</type>
         <definition>Farray&lt;Fdouble,1,300&gt; Gambit::DS_RDDOF::fp</definition>
         <argsstring></argsstring>
         <name>fp</name>
@@ -134,6 +134,23 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 300 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_RDDOF</label>
+        <link refid="structGambit_1_1DS__RDDOF"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fe</edgelabel>
+          <edgelabel>fg</edgelabel>
+          <edgelabel>fh</edgelabel>
+          <edgelabel>fp</edgelabel>
+          <edgelabel>tgev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="352" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="353" bodyend="356"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__RDDOF_1acecdfc90849c7d7678d5912d1a608798" prot="public" virt="non-virtual"><scope>Gambit::DS_RDDOF</scope><name>dofcode</name></member>

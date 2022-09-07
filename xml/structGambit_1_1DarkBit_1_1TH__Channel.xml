@@ -59,7 +59,7 @@
         <name>TH_Channel</name>
         <qualifiedname>Gambit::DarkBit::TH_Channel::TH_Channel</qualifiedname>
         <param>
-          <type>std::vector&lt; str &gt;</type>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
           <declname>finalStateIDs</declname>
         </param>
         <param>
@@ -97,7 +97,7 @@
         <name>channelContains</name>
         <qualifiedname>Gambit::DarkBit::TH_Channel::channelContains</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>p</declname>
         </param>
         <briefdescription>
@@ -116,20 +116,20 @@
         <name>isChannel</name>
         <qualifiedname>Gambit::DarkBit::TH_Channel::isChannel</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>p0</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>p1</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>p2</defname>
           <defval>&quot;&quot;</defval>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>p3</defname>
           <defval>&quot;&quot;</defval>
         </param>
@@ -149,7 +149,7 @@
         <name>isChannel</name>
         <qualifiedname>Gambit::DarkBit::TH_Channel::isChannel</qualifiedname>
         <param>
-          <type>std::vector&lt; str &gt;</type>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
           <defname>particles</defname>
         </param>
         <briefdescription>
@@ -167,6 +167,18 @@
     <detaileddescription>
 <para>All data on a single annihilation or decay channel, e.g. chi --&gt; gamma gamma, chi chi --&gt; mu+ mu- </para>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::DarkBit::TH_Channel</label>
+        <link refid="structGambit_1_1DarkBit_1_1TH__Channel"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>genRate</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>shared_ptr&lt; FunkBase &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="DarkBit/include/gambit/DarkBit/ProcessCatalog.hpp" line="86" column="5" bodyfile="DarkBit/include/gambit/DarkBit/ProcessCatalog.hpp" bodystart="87" bodyend="116"/>
     <listofallmembers>
       <member refid="structGambit_1_1DarkBit_1_1TH__Channel_1a97c78c051dd780d07a818afce7da5af7" prot="public" virt="non-virtual"><scope>Gambit::DarkBit::TH_Channel</scope><name>channelContains</name></member>

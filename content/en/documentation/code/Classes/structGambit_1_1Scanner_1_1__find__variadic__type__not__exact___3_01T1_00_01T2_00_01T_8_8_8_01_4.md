@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Scanner::_find_variadic_type_not_exact_< T1, T2, T... >
 
 
 
@@ -63,4 +62,4 @@ static const bool value = __find_variadic_type_not_exact__ <typename remove_all_
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

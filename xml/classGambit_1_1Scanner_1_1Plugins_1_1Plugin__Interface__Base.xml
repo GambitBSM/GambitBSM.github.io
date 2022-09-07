@@ -6,7 +6,7 @@
     <derivedcompoundref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Interface_3_01ret_07args_8_8_8_08_4" prot="public" virt="non-virtual">Gambit::Scanner::Plugins::Plugin_Interface&lt; ret(args...)&gt;</derivedcompoundref>
       <sectiondef kind="private-type">
       <memberdef kind="typedef" id="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Interface__Base_1a5b5df49d69b262e3e2dbc3452bf65872" prot="private" static="no">
-        <type>const std::map&lt; type_index, void * &gt; &amp;(*</type>
+        <type>const std::map&lt; <ref refid="structGambit_1_1type__index" kindref="compound">type_index</ref>, void * &gt; &amp;(*</type>
         <definition>typedef const std::map&lt; type_index, void * &gt; &amp;(* Gambit::Scanner::Plugins::Plugin_Interface_Base::initFuncType) (const std::string &amp;, const YAML::Node &amp;, const printer_interface &amp;, Priors::BasePrior &amp;, std::vector&lt; void * &gt; &amp;)</definition>
         <argsstring>)(const std::string &amp;, const YAML::Node &amp;, const printer_interface &amp;, Priors::BasePrior &amp;, std::vector&lt; void * &gt; &amp;)</argsstring>
         <name>initFuncType</name>
@@ -129,7 +129,7 @@
             <defname>plug_args</defname>
           </param>
         </templateparamlist>
-        <type>const std::map&lt; type_index, void * &gt; &amp;</type>
+        <type>const std::map&lt; <ref refid="structGambit_1_1type__index" kindref="compound">type_index</ref>, void * &gt; &amp;</type>
         <definition>const std::map&lt; type_index, void * &gt; &amp; Gambit::Scanner::Plugins::Plugin_Interface_Base::initPlugin</definition>
         <argsstring>(const std::string &amp;type, const std::string &amp;name, const plug_args &amp;... inputs)</argsstring>
         <name>initPlugin</name>

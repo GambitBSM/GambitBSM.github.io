@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structGambit_1_1Logging_1_1Message" kind="struct" language="C++" prot="public">
+    <compoundname>Gambit::Logging::Message</compoundname>
+    <includes refid="logging_8hpp" local="no">logging.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structGambit_1_1Logging_1_1Message_1a2d4558019534041c40cd35dce070a13c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Logging::Message::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <qualifiedname>Gambit::Logging::Message::message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="76" column="21" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1Logging_1_1Message_1abfaa83b729218aa1dd80cad53ace2d71" prot="public" static="no" mutable="no">
+        <type>std::set&lt; int &gt;</type>
+        <definition>std::set&lt;int&gt; Gambit::Logging::Message::tags</definition>
+        <argsstring></argsstring>
+        <name>tags</name>
+        <qualifiedname>Gambit::Logging::Message::tags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="77" column="18" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1Logging_1_1Message_1ad73458cee8850a8e33a35e8a21eedc1e" prot="public" static="no" mutable="no">
+        <type>Utils::time_point</type>
+        <definition>Utils::time_point Gambit::Logging::Message::received_at</definition>
+        <argsstring></argsstring>
+        <name>received_at</name>
+        <qualifiedname>Gambit::Logging::Message::received_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="78" column="27" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structGambit_1_1Logging_1_1Message_1ad3c2a32ffbfb3df9c4f2b3c3e33d12c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Logging::Message::Message</definition>
+        <argsstring>(const std::string &amp;msgIN, const std::set&lt; int &gt; &amp;tagsIN)</argsstring>
+        <name>Message</name>
+        <qualifiedname>Gambit::Logging::Message::Message</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msgIN</declname>
+        </param>
+        <param>
+          <type>const std::set&lt; int &gt; &amp;</type>
+          <declname>tagsIN</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="80" column="9" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="80" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>structure for storing log messages and metadata </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::Logging::Message</label>
+        <link refid="structGambit_1_1Logging_1_1Message"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>message</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="Logs/include/gambit/Logs/logging.hpp" line="74" column="5" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="75" bodyend="86"/>
+    <listofallmembers>
+      <member refid="structGambit_1_1Logging_1_1Message_1a2d4558019534041c40cd35dce070a13c" prot="public" virt="non-virtual"><scope>Gambit::Logging::Message</scope><name>message</name></member>
+      <member refid="structGambit_1_1Logging_1_1Message_1ad3c2a32ffbfb3df9c4f2b3c3e33d12c6" prot="public" virt="non-virtual"><scope>Gambit::Logging::Message</scope><name>Message</name></member>
+      <member refid="structGambit_1_1Logging_1_1Message_1ad73458cee8850a8e33a35e8a21eedc1e" prot="public" virt="non-virtual"><scope>Gambit::Logging::Message</scope><name>received_at</name></member>
+      <member refid="structGambit_1_1Logging_1_1Message_1abfaa83b729218aa1dd80cad53ace2d71" prot="public" virt="non-virtual"><scope>Gambit::Logging::Message</scope><name>tags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

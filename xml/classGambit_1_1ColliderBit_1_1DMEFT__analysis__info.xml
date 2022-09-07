@@ -4,7 +4,7 @@
     <compoundname>Gambit::ColliderBit::DMEFT_analysis_info</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1DMEFT__analysis__info_1a5f4d8375c5a4689de10d1df16db3bfd2" prot="public" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::ColliderBit::DMEFT_analysis_info::name</definition>
         <argsstring></argsstring>
         <name>name</name>
@@ -102,7 +102,7 @@
         <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="82" column="25" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1DMEFT__analysis__info_1a68e764c3621e6ae360ecfd527feafc3a" prot="public" static="no" mutable="no">
-        <type>std::map&lt; str, std::vector&lt; double &gt; &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::vector&lt; double &gt; &gt;</type>
         <definition>std::map&lt;str, std::vector&lt;double&gt; &gt; Gambit::ColliderBit::DMEFT_analysis_info::extra_info</definition>
         <argsstring></argsstring>
         <name>extra_info</name>
@@ -116,7 +116,7 @@
         <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="86" column="18" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1DMEFT__analysis__info_1a14d2e08787b50d849ef9a15e301dad55" prot="public" static="no" mutable="no">
-        <type>std::map&lt; str, std::unique_ptr&lt; Utils::interp1d_collection &gt; &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::unique_ptr&lt; <ref refid="classGambit_1_1Utils_1_1interp1d__collection" kindref="compound">Utils::interp1d_collection</ref> &gt; &gt;</type>
         <definition>std::map&lt;str,std::unique_ptr&lt;Utils::interp1d_collection&gt; &gt; Gambit::ColliderBit::DMEFT_analysis_info::interp1d</definition>
         <argsstring></argsstring>
         <name>interp1d</name>
@@ -130,7 +130,7 @@
         <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="89" column="18" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1DMEFT__analysis__info_1a54ebb087c0caca1ed60c43bd747f84e5" prot="public" static="no" mutable="no">
-        <type>std::map&lt; str, std::unique_ptr&lt; Utils::interp2d_collection &gt; &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::unique_ptr&lt; <ref refid="classGambit_1_1Utils_1_1interp2d__collection" kindref="compound">Utils::interp2d_collection</ref> &gt; &gt;</type>
         <definition>std::map&lt;str,std::unique_ptr&lt;Utils::interp2d_collection&gt; &gt; Gambit::ColliderBit::DMEFT_analysis_info::interp2d</definition>
         <argsstring></argsstring>
         <name>interp2d</name>
@@ -170,15 +170,15 @@
         <name>add_interp1d</name>
         <qualifiedname>Gambit::ColliderBit::DMEFT_analysis_info::add_interp1d</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>name</declname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>filename</declname>
         </param>
         <param>
-          <type>std::vector&lt; str &gt;</type>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
           <declname>colnames</declname>
         </param>
         <briefdescription>
@@ -196,15 +196,15 @@
         <name>add_interp2d</name>
         <qualifiedname>Gambit::ColliderBit::DMEFT_analysis_info::add_interp2d</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>name</declname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>filename</declname>
         </param>
         <param>
-          <type>std::vector&lt; str &gt;</type>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
           <declname>colnames</declname>
         </param>
         <briefdescription>
@@ -216,13 +216,13 @@
         <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="113" column="14" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="113" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1DMEFT__analysis__info_1a82cf604247dca7e316425aaadb16a726" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const Utils::interp1d_collection &amp;</type>
+        <type>const <ref refid="classGambit_1_1Utils_1_1interp1d__collection" kindref="compound">Utils::interp1d_collection</ref> &amp;</type>
         <definition>const Utils::interp1d_collection &amp; Gambit::ColliderBit::DMEFT_analysis_info::get_interp1d</definition>
         <argsstring>(str name) const</argsstring>
         <name>get_interp1d</name>
         <qualifiedname>Gambit::ColliderBit::DMEFT_analysis_info::get_interp1d</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>name</declname>
         </param>
         <briefdescription>
@@ -234,13 +234,13 @@
         <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="119" column="42" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="119" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1DMEFT__analysis__info_1a569bec9b037d7df4418e65dfcdc3918a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const Utils::interp2d_collection &amp;</type>
+        <type>const <ref refid="classGambit_1_1Utils_1_1interp2d__collection" kindref="compound">Utils::interp2d_collection</ref> &amp;</type>
         <definition>const Utils::interp2d_collection &amp; Gambit::ColliderBit::DMEFT_analysis_info::get_interp2d</definition>
         <argsstring>(str name) const</argsstring>
         <name>get_interp2d</name>
         <qualifiedname>Gambit::ColliderBit::DMEFT_analysis_info::get_interp2d</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>name</declname>
         </param>
         <briefdescription>

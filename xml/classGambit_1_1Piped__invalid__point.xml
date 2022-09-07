@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Piped__invalid__point" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Piped_invalid_point</compoundname>
+    <includes refid="exceptions_8hpp" local="no">exceptions.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Piped__invalid__point_1a5bd59ae903d246be2f3de256f0f4f588" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Piped_invalid_point::flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <qualifiedname>Gambit::Piped_invalid_point::flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="295" column="12" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Piped__invalid__point_1acf2c14146aef3aea5648ab2ed65f5fe0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Piped_invalid_point::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <qualifiedname>Gambit::Piped_invalid_point::message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="296" column="19" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Piped__invalid__point_1a87431d51eeda5f73eb604b579136f642" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Piped_invalid_point::Piped_invalid_point</definition>
+        <argsstring>()</argsstring>
+        <name>Piped_invalid_point</name>
+        <qualifiedname>Gambit::Piped_invalid_point::Piped_invalid_point</qualifiedname>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="286" column="7" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="286" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Piped__invalid__point_1a543dd74b04db76541ceb8b5507c6facc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Piped_invalid_point::request</definition>
+        <argsstring>(std::string message)</argsstring>
+        <name>request</name>
+        <qualifiedname>Gambit::Piped_invalid_point::request</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Request an exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Request a piped invalid point exception. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="289" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="471" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Piped__invalid__point_1ac07fb788b879481833dbfed4ca1c985e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Piped_invalid_point::check</definition>
+        <argsstring>()</argsstring>
+        <name>check</name>
+        <qualifiedname>Gambit::Piped_invalid_point::check</qualifiedname>
+        <briefdescription>
+<para>Check whether an exception was requested, and throw it if necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether a piped invalid point exception was requested, and throw if necessary. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="292" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="481" bodyend="508"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceGambit" kindref="compound">Gambit</ref> piped invalid point exception class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/exceptions.hpp" line="282" column="3" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="283" bodyend="297"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Piped__invalid__point_1ac07fb788b879481833dbfed4ca1c985e" prot="public" virt="non-virtual"><scope>Gambit::Piped_invalid_point</scope><name>check</name></member>
+      <member refid="classGambit_1_1Piped__invalid__point_1a5bd59ae903d246be2f3de256f0f4f588" prot="private" virt="non-virtual"><scope>Gambit::Piped_invalid_point</scope><name>flag</name></member>
+      <member refid="classGambit_1_1Piped__invalid__point_1acf2c14146aef3aea5648ab2ed65f5fe0" prot="private" virt="non-virtual"><scope>Gambit::Piped_invalid_point</scope><name>message</name></member>
+      <member refid="classGambit_1_1Piped__invalid__point_1a87431d51eeda5f73eb604b579136f642" prot="public" virt="non-virtual"><scope>Gambit::Piped_invalid_point</scope><name>Piped_invalid_point</name></member>
+      <member refid="classGambit_1_1Piped__invalid__point_1a543dd74b04db76541ceb8b5507c6facc" prot="public" virt="non-virtual"><scope>Gambit::Piped_invalid_point</scope><name>request</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

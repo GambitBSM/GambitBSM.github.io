@@ -4,8 +4,7 @@ description: 'An exception for when Pythia fails to initialize. '
 
 ---
 
-
-
+# Gambit::ColliderBit::Py8Collider::InitializationError
 
 
 
@@ -20,4 +19,4 @@ Inherits from std::exception
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

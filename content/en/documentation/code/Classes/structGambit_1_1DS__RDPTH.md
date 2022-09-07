@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS_RDPTH
 
 
 
@@ -18,8 +17,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 0, 1001 > | **[pth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-pth)**  |
-| Farray< Finteger, 0, 1001 > | **[incth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-incth)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 0, 1001 > | **[pth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-pth)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 0, 1001 > | **[incth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-incth)**  |
 | Finteger | **[nth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-nth)**  |
 
 ## Public Attributes Documentation
@@ -47,4 +46,4 @@ Finteger nth;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

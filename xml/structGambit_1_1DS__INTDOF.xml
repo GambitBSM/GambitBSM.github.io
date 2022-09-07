@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS_INTDOF</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS__INTDOF_1a7126e2d27bfe269ca0b40ed0370a97a3" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Finteger, 0, 50 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Finteger, 0, 50 &gt;</type>
         <definition>Farray&lt;Finteger,0,50&gt; Gambit::DS_INTDOF::kdof</definition>
         <argsstring></argsstring>
         <name>kdof</name>
@@ -22,6 +22,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Finteger, 0, 50 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_INTDOF</label>
+        <link refid="structGambit_1_1DS__INTDOF"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>kdof</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="86" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="87" bodyend="89"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__INTDOF_1a7126e2d27bfe269ca0b40ed0370a97a3" prot="public" virt="non-virtual"><scope>Gambit::DS_INTDOF</scope><name>kdof</name></member>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# models/SUSY_extras.hpp
 
 
 
@@ -515,4 +514,4 @@ Read single SLHA file and replace some entries for use with model ColliderBit_SL
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:27 +0000
+Updated on 2022-09-07 at 13:49:55 +0000

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Scanner
 
 
 
@@ -84,8 +83,8 @@ description: "[No description available]"
 | -------------- | -------------- |
 | typedef [Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/) | **[prior_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-prior-interface)**  |
 | typedef void *(const std::map< std::string, std::vector< std::string > > &, const std::vector< std::pair< std::string, std::string > > &) | **[multi_func_type](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-multi-func-type)**  |
-| typedef Printers::BasePrinterManager | **[printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface)** <br>typedef printer_interface_temp printer_interface;  |
-| typedef Printers::BaseBasePrinter | **[printer](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer)** <br>Type of the printer objects.  |
+| typedef [Printers::BasePrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1baseprintermanager/) | **[printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface)** <br>typedef printer_interface_temp printer_interface;  |
+| typedef [Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) | **[printer](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer)** <br>Type of the printer objects.  |
 
 ## Functions
 
@@ -101,17 +100,17 @@ description: "[No description available]"
 | template <int i\> <br>int | **[pow](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow)**(const int & a) |
 | int | **[pow< 0 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow-0)**(const int & ) |
 | int | **[pow< 1 >](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pow-1)**(const int & a) |
-| template <typename T \> <br>std::enable_if< is_container< T >::value, std::ostream & >::type | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-operator)**(std::ostream & out, const T & in) |
-| template <typename T \> <br>std::enable_if< is_pair< T >::value, std::ostream & >::type | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-operator)**(std::ostream & out, const T & in) |
-| template <typename T \> <br>std::enable_if<!is_container< T >::value &&!is_pair< T >::value, void >::type | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, T & param) |
-| template <typename T \> <br>std::enable_if< is_container< T >::value, void >::type | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, T & param) |
-| template <typename T \> <br>std::enable_if< is_pair< T >::value, void >::type | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, T & param) |
-| template <typename T \> <br>std::enable_if<!is_container< T >::value &&!is_pair< T >::value, void >::type | **[resume_file_input](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-input)**(std::ifstream & in, T & param) |
-| template <typename T \> <br>std::enable_if< is_container< T >::value, void >::type | **[resume_file_input](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-input)**(std::ifstream & in, T & param) |
-| template <typename T \> <br>std::enable_if< is_pair< T >::value, void >::type | **[resume_file_input](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-input)**(std::ifstream & in, T & param) |
-| template <typename T \> <br>std::enable_if<!is_container< T >::value &&!is_pair< T >::value, size_t >::type | **[resume_size_of](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-size-of)**(T & ) |
-| template <typename T \> <br>std::enable_if< is_container< T >::value, size_t >::type | **[resume_size_of](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-size-of)**(T & param) |
-| template <typename T \> <br>std::enable_if< is_pair< T >::value, size_t >::type | **[resume_size_of](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-size-of)**(T & ) |
+| template <typename T \> <br>std::enable_if< [is_container](/documentation/code/classes/structgambit_1_1is__container/)< T >::value, std::ostream & >::type | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-operator)**(std::ostream & out, const T & in) |
+| template <typename T \> <br>std::enable_if< [is_pair](/documentation/code/classes/structgambit_1_1is__pair/)< T >::value, std::ostream & >::type | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-operator)**(std::ostream & out, const T & in) |
+| template <typename T \> <br>std::enable_if<![is_container](/documentation/code/classes/structgambit_1_1is__container/)< T >::value &&![is_pair](/documentation/code/classes/structgambit_1_1is__pair/)< T >::value, void >::type | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, T & param) |
+| template <typename T \> <br>std::enable_if< [is_container](/documentation/code/classes/structgambit_1_1is__container/)< T >::value, void >::type | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, T & param) |
+| template <typename T \> <br>std::enable_if< [is_pair](/documentation/code/classes/structgambit_1_1is__pair/)< T >::value, void >::type | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, T & param) |
+| template <typename T \> <br>std::enable_if<![is_container](/documentation/code/classes/structgambit_1_1is__container/)< T >::value &&![is_pair](/documentation/code/classes/structgambit_1_1is__pair/)< T >::value, void >::type | **[resume_file_input](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-input)**(std::ifstream & in, T & param) |
+| template <typename T \> <br>std::enable_if< [is_container](/documentation/code/classes/structgambit_1_1is__container/)< T >::value, void >::type | **[resume_file_input](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-input)**(std::ifstream & in, T & param) |
+| template <typename T \> <br>std::enable_if< [is_pair](/documentation/code/classes/structgambit_1_1is__pair/)< T >::value, void >::type | **[resume_file_input](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-input)**(std::ifstream & in, T & param) |
+| template <typename T \> <br>std::enable_if<![is_container](/documentation/code/classes/structgambit_1_1is__container/)< T >::value &&![is_pair](/documentation/code/classes/structgambit_1_1is__pair/)< T >::value, size_t >::type | **[resume_size_of](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-size-of)**(T & ) |
+| template <typename T \> <br>std::enable_if< [is_container](/documentation/code/classes/structgambit_1_1is__container/)< T >::value, size_t >::type | **[resume_size_of](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-size-of)**(T & param) |
+| template <typename T \> <br>std::enable_if< [is_pair](/documentation/code/classes/structgambit_1_1is__pair/)< T >::value, size_t >::type | **[resume_size_of](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-size-of)**(T & ) |
 | void | **[resume_file_input](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-input)**(std::ifstream & in, std::string & param) |
 | void | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, std::string & param) |
 | size_t | **[resume_size_of](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-size-of)**(std::string & param) |
@@ -121,8 +120,8 @@ description: "[No description available]"
 | | **[LOAD_MULTI_FUNC_TEMPLATE](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-load-multi-func-template)**([Multi_Scanner_Plugin_Function](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function/) , double(std::unordered_map< std::string, double > &) ) |
 | void | **[assign_aux_numbers](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-assign-aux-numbers)**() |
 | template <typename... T\> <br>void | **[assign_aux_numbers](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-assign-aux-numbers)**(const std::string & tag, const T &... params) |
-| EXPORT_SYMBOLS error & | **[scan_error](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-scan-error)**()<br>Scanner errors.  |
-| EXPORT_SYMBOLS warning & | **[scan_warning](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-scan-warning)**()<br>Scanner warnings.  |
+| EXPORT_SYMBOLS [error](/documentation/code/classes/classgambit_1_1error/) & | **[scan_error](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-scan-error)**()<br>Scanner errors.  |
+| EXPORT_SYMBOLS [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[scan_warning](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-scan-warning)**()<br>Scanner warnings.  |
 | template <typename... T\> <br>auto | **[zip](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-zip)**(const T &... containers)<br>Use for combine container in a range loop: for (auto &&x : zip(a, b)){...}.  |
 | std::string | **[demangle](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-demangle)**(const std::string & in)<br>Demangles gnu c++ name.  |
 | template <typename T \> <br>std::vector< T > | **[get_yaml_vector](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-get-yaml-vector)**(const YAML::Node & node) |
@@ -143,8 +142,8 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | | **[gambit_registry](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-gambit-registry)**  |
-| std::unordered_map< type_index, func_type *, Gambit::type_hasher, Gambit::type_equal_to > | **[__functions__](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-functions)**  |
-| std::unordered_map< type_index, multi_func_type * > | **[__multi_functions__](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-multi-functions)**  |
+| std::unordered_map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), func_type *, [Gambit::type_hasher](/documentation/code/classes/structgambit_1_1type__hasher/), [Gambit::type_equal_to](/documentation/code/classes/structgambit_1_1type__equal__to/) > | **[__functions__](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-functions)**  |
+| std::unordered_map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), multi_func_type * > | **[__multi_functions__](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-multi-functions)**  |
 | int | **[ScannerBit_handlers](/documentation/code/namespaces/namespacegambit_1_1scanner/#variable-scannerbit-handlers)**  |
 
 ## Types Documentation
@@ -699,4 +698,4 @@ int ScannerBit_handlers = register_ScannerBit_handlers();
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

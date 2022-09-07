@@ -4,8 +4,7 @@ description: 'A class for holding the cross-section of a single Pythia process (
 
 ---
 
-
-
+# Gambit::ColliderBit::process_xsec_container
 
 
 
@@ -33,8 +32,8 @@ Inherits from [Gambit::ColliderBit::xsec_container](/documentation/code/classes/
 | void | **[set_process_code](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/#function-set-process-code)**(int process_code_in)<br>Set the process code.  |
 | const std::vector< int > & | **[processes_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/#function-processes-sharing-xsec)**() const |
 | void | **[register_process_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/#function-register-process-sharing-xsec)**(int process_code_in)<br>Add a process code to the list of processes sharing this cross-section.  |
-| const std::vector< PID_pair > & | **[related_pid_pairs](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/#function-related-pid-pairs)**() const<br>Return the list of PID pairs related to this cross-section.  |
-| void | **[register_related_pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/#function-register-related-pid-pair)**(PID_pair pid_pair_in)<br>Add a PID pair to the list of processes related to this cross-section.  |
+| const std::vector< [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) > & | **[related_pid_pairs](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/#function-related-pid-pairs)**() const<br>Return the list of PID pairs related to this cross-section.  |
+| void | **[register_related_pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/#function-register-related-pid-pair)**([PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) pid_pair_in)<br>Add a PID pair to the list of processes related to this cross-section.  |
 
 ## Additional inherited members
 
@@ -206,4 +205,4 @@ Add a PID pair to the list of PID pairs related to this cross-section.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

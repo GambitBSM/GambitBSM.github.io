@@ -1,0 +1,2061 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="subspectrum__contents_8hpp" kind="file" language="C++">
+    <compoundname>subspectrum_contents.hpp</compoundname>
+    <includes refid="spectrum__helpers_8hpp" local="yes">gambit/Elements/spectrum_helpers.hpp</includes>
+    <includes refid="variadic__functions_8hpp" local="yes">gambit/Utils/variadic_functions.hpp</includes>
+    <includedby refid="RegisteredSpectra_8hpp" local="yes">RegisteredSpectra.hpp</includedby>
+    <includedby refid="shared__types_8hpp" local="yes">shared_types.hpp</includedby>
+    <includedby refid="slhaea__spec__helpers_8hpp" local="yes">slhaea_spec_helpers.hpp</includedby>
+    <includedby refid="spec__head_8hpp" local="yes">spec_head.hpp</includedby>
+    <includedby refid="subspectrum__contents_8cpp" local="yes">subspectrum_contents.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gambit/Elements/spectrum_helpers.hpp</label>
+        <link refid="spectrum__helpers_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>array</label>
+      </node>
+      <node id="11">
+        <label>cassert</label>
+      </node>
+      <node id="16">
+        <label>deque</label>
+      </node>
+      <node id="15">
+        <label>forward_list</label>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>list</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>set</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>unordered_map</label>
+      </node>
+      <node id="13">
+        <label>unordered_set</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="137">
+        <label>backend_macros.hpp</label>
+        <link refid="backend__macros_8hpp"/>
+      </node>
+      <node id="136">
+        <label>common_macros.hpp</label>
+        <link refid="common__macros_8hpp"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>frontend_macros.hpp</label>
+        <link refid="frontend__macros_8hpp"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>Acropolis_1_2_1.cpp</label>
+        <link refid="Acropolis__1__2__1_8cpp"/>
+      </node>
+      <node id="140">
+        <label>AlterBBN_2_2.cpp</label>
+        <link refid="AlterBBN__2__2_8cpp"/>
+      </node>
+      <node id="3">
+        <label>CalcHEP_3_6_27.cpp</label>
+        <link refid="CalcHEP__3__6__27_8cpp"/>
+      </node>
+      <node id="141">
+        <label>CaptnGeneral_2_1.cpp</label>
+        <link refid="CaptnGeneral__2__1_8cpp"/>
+      </node>
+      <node id="142">
+        <label>DDCalc_1_0_0.cpp</label>
+        <link refid="DDCalc__1__0__0_8cpp"/>
+      </node>
+      <node id="143">
+        <label>DDCalc_1_1_0.cpp</label>
+        <link refid="DDCalc__1__1__0_8cpp"/>
+      </node>
+      <node id="144">
+        <label>DDCalc_1_2_0.cpp</label>
+        <link refid="DDCalc__1__2__0_8cpp"/>
+      </node>
+      <node id="145">
+        <label>DDCalc_2_0_0.cpp</label>
+        <link refid="DDCalc__2__0__0_8cpp"/>
+      </node>
+      <node id="146">
+        <label>DDCalc_2_1_0.cpp</label>
+        <link refid="DDCalc__2__1__0_8cpp"/>
+      </node>
+      <node id="147">
+        <label>DDCalc_2_2_0.cpp</label>
+        <link refid="DDCalc__2__2__0_8cpp"/>
+      </node>
+      <node id="148">
+        <label>DarkAges_1_2_0.cpp</label>
+        <link refid="DarkAges__1__2__0_8cpp"/>
+      </node>
+      <node id="149">
+        <label>DarkSUSY_5_1_3.cpp</label>
+        <link refid="DarkSUSY__5__1__3_8cpp"/>
+      </node>
+      <node id="150">
+        <label>DarkSUSY_MSSM_6_1_1.cpp</label>
+        <link refid="DarkSUSY__MSSM__6__1__1_8cpp"/>
+      </node>
+      <node id="151">
+        <label>DarkSUSY_MSSM_6_2_2.cpp</label>
+        <link refid="DarkSUSY__MSSM__6__2__2_8cpp"/>
+      </node>
+      <node id="152">
+        <label>DarkSUSY_MSSM_6_2_5.cpp</label>
+        <link refid="DarkSUSY__MSSM__6__2__5_8cpp"/>
+      </node>
+      <node id="153">
+        <label>DarkSUSY_generic_wimp_6_1_1.cpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__1__1_8cpp"/>
+      </node>
+      <node id="154">
+        <label>DarkSUSY_generic_wimp_6_2_2.cpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__2__2_8cpp"/>
+      </node>
+      <node id="155">
+        <label>DarkSUSY_generic_wimp_6_2_5.cpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__2__5_8cpp"/>
+      </node>
+      <node id="156">
+        <label>DirectDM_2_2_0.cpp</label>
+        <link refid="DirectDM__2__2__0_8cpp"/>
+      </node>
+      <node id="157">
+        <label>LibMathematicaTest.cpp</label>
+        <link refid="LibMathematicaTest_8cpp"/>
+      </node>
+      <node id="158">
+        <label>LibSecond_1_1.cpp</label>
+        <link refid="LibSecond__1__1_8cpp"/>
+      </node>
+      <node id="159">
+        <label>LibSecond_1_2.cpp</label>
+        <link refid="LibSecond__1__2_8cpp"/>
+      </node>
+      <node id="160">
+        <label>LibThird_1_0.cpp</label>
+        <link refid="LibThird__1__0_8cpp"/>
+      </node>
+      <node id="161">
+        <label>LibThird_1_1.cpp</label>
+        <link refid="LibThird__1__1_8cpp"/>
+      </node>
+      <node id="162">
+        <label>LibThird_1_2.cpp</label>
+        <link refid="LibThird__1__2_8cpp"/>
+      </node>
+      <node id="163">
+        <label>MicrOmegas_DiracSingletDM_Z2_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__DiracSingletDM__Z2__3__6__9__2_8cpp"/>
+      </node>
+      <node id="164">
+        <label>MicrOmegas_MSSM_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__MSSM__3__6__9__2_8cpp"/>
+      </node>
+      <node id="165">
+        <label>MicrOmegas_MajoranaSingletDM_Z2_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__MajoranaSingletDM__Z2__3__6__9__2_8cpp"/>
+      </node>
+      <node id="166">
+        <label>MicrOmegas_ScalarSingletDM_Z2_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__ScalarSingletDM__Z2__3__6__9__2_8cpp"/>
+      </node>
+      <node id="167">
+        <label>MicrOmegas_ScalarSingletDM_Z3_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__ScalarSingletDM__Z3__3__6__9__2_8cpp"/>
+      </node>
+      <node id="168">
+        <label>MicrOmegas_VectorSingletDM_Z2_3_6_9_2.cpp</label>
+        <link refid="MicrOmegas__VectorSingletDM__Z2__3__6__9__2_8cpp"/>
+      </node>
+      <node id="169">
+        <label>MontePythonLike_3_3_0.cpp</label>
+        <link refid="MontePythonLike__3__3__0_8cpp"/>
+      </node>
+      <node id="170">
+        <label>MontePythonLike_3_5_0.cpp</label>
+        <link refid="MontePythonLike__3__5__0_8cpp"/>
+      </node>
+      <node id="171">
+        <label>MultiModeCode_2_0_0.cpp</label>
+        <link refid="MultiModeCode__2__0__0_8cpp"/>
+      </node>
+      <node id="172">
+        <label>Prospino_2_1.cpp</label>
+        <link refid="Prospino__2__1_8cpp"/>
+      </node>
+      <node id="19">
+        <label>SPheno_3_3_8.cpp</label>
+        <link refid="SPheno__3__3__8_8cpp"/>
+      </node>
+      <node id="20">
+        <label>SPheno_4_0_3.cpp</label>
+        <link refid="SPheno__4__0__3_8cpp"/>
+      </node>
+      <node id="173">
+        <label>SUSY-HIT_1_5.cpp</label>
+        <link refid="SUSY-HIT__1__5_8cpp"/>
+      </node>
+      <node id="174">
+        <label>SUSYHD_1_0_2.cpp</label>
+        <link refid="SUSYHD__1__0__2_8cpp"/>
+      </node>
+      <node id="175">
+        <label>SuperIso_4_1.cpp</label>
+        <link refid="SuperIso__4__1_8cpp"/>
+      </node>
+      <node id="176">
+        <label>classy_2_6_3.cpp</label>
+        <link refid="classy__2__6__3_8cpp"/>
+      </node>
+      <node id="177">
+        <label>classy_2_9_3.cpp</label>
+        <link refid="classy__2__9__3_8cpp"/>
+      </node>
+      <node id="178">
+        <label>classy_2_9_4.cpp</label>
+        <link refid="classy__2__9__4_8cpp"/>
+      </node>
+      <node id="179">
+        <label>classy_3_1_0.cpp</label>
+        <link refid="classy__3__1__0_8cpp"/>
+      </node>
+      <node id="180">
+        <label>classy_exo_2_7_2.cpp</label>
+        <link refid="classy__exo__2__7__2_8cpp"/>
+      </node>
+      <node id="181">
+        <label>gamLike_1_0_0.cpp</label>
+        <link refid="gamLike__1__0__0_8cpp"/>
+      </node>
+      <node id="182">
+        <label>gamLike_1_0_1.cpp</label>
+        <link refid="gamLike__1__0__1_8cpp"/>
+      </node>
+      <node id="183">
+        <label>nulike_1_0_4.cpp</label>
+        <link refid="nulike__1__0__4_8cpp"/>
+      </node>
+      <node id="184">
+        <label>nulike_1_0_5.cpp</label>
+        <link refid="nulike__1__0__5_8cpp"/>
+      </node>
+      <node id="185">
+        <label>nulike_1_0_6.cpp</label>
+        <link refid="nulike__1__0__6_8cpp"/>
+      </node>
+      <node id="186">
+        <label>nulike_1_0_7.cpp</label>
+        <link refid="nulike__1__0__7_8cpp"/>
+      </node>
+      <node id="187">
+        <label>nulike_1_0_8.cpp</label>
+        <link refid="nulike__1__0__8_8cpp"/>
+      </node>
+      <node id="188">
+        <label>nulike_1_0_9.cpp</label>
+        <link refid="nulike__1__0__9_8cpp"/>
+      </node>
+      <node id="189">
+        <label>plc_3_0.cpp</label>
+        <link refid="plc__3__0_8cpp"/>
+      </node>
+      <node id="190">
+        <label>salami_0_1_0.cpp</label>
+        <link refid="salami__0__1__0_8cpp"/>
+      </node>
+      <node id="191">
+        <label>xsecBE_1_0_2.cpp</label>
+        <link refid="xsecBE__1__0__2_8cpp"/>
+      </node>
+      <node id="64">
+        <label>ColliderBit_eventloop.hpp</label>
+        <link refid="ColliderBit__eventloop_8hpp"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>ColliderBit_rollcall.hpp</label>
+        <link refid="ColliderBit__rollcall_8hpp"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>ColliderBit_types.hpp</label>
+        <link refid="ColliderBit__types_8hpp"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>Py8Collider.hpp</label>
+        <link refid="Py8Collider_8hpp"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>SetHooksClass.hpp</label>
+        <link refid="SetHooksClass_8hpp"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>complete_process_PID_pair_multimaps.hpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8hpp"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>BaseDetector.hpp</label>
+        <link refid="BaseDetector_8hpp"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>BuckFast.hpp</label>
+        <link refid="BuckFast_8hpp"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>generateEventPy8Collider.hpp</label>
+        <link refid="generateEventPy8Collider_8hpp"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>getPy8Collider.hpp</label>
+        <link refid="getPy8Collider_8hpp"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>ALEPHSleptonLimits.hpp</label>
+        <link refid="ALEPHSleptonLimits_8hpp_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>BaseLimitContainer.hpp</label>
+        <link refid="BaseLimitContainer_8hpp"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>L3GauginoLimits.hpp</label>
+        <link refid="L3GauginoLimits_8hpp_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>L3SleptonLimits.hpp</label>
+        <link refid="L3SleptonLimits_8hpp_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>L3SmallDeltaMGauginoLimits.hpp</label>
+        <link refid="L3SmallDeltaMGauginoLimits_8hpp_source"/>
+      </node>
+      <node id="90">
+        <label>OPALDegenerateCharginoLimits.hpp</label>
+        <link refid="OPALDegenerateCharginoLimits_8hpp_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>OPALGauginoLimits.hpp</label>
+        <link refid="OPALGauginoLimits_8hpp_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>ColliderBit_Higgs.cpp</label>
+        <link refid="ColliderBit__Higgs_8cpp"/>
+      </node>
+      <node id="61">
+        <label>ColliderBit_InterpolatedYields.cpp</label>
+        <link refid="ColliderBit__InterpolatedYields_8cpp"/>
+      </node>
+      <node id="62">
+        <label>ColliderBit_LEP.cpp</label>
+        <link refid="ColliderBit__LEP_8cpp"/>
+      </node>
+      <node id="63">
+        <label>ColliderBit_dummy.cpp</label>
+        <link refid="ColliderBit__dummy_8cpp"/>
+      </node>
+      <node id="65">
+        <label>ColliderBit_eventloop.cpp</label>
+        <link refid="ColliderBit__eventloop_8cpp"/>
+      </node>
+      <node id="80">
+        <label>LHC_likelihoods.cpp</label>
+        <link refid="LHC__likelihoods_8cpp"/>
+      </node>
+      <node id="66">
+        <label>collider_event_weights.cpp</label>
+        <link refid="collider__event__weights_8cpp"/>
+      </node>
+      <node id="83">
+        <label>complete_process_PID_pair_multimaps.cpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8cpp"/>
+      </node>
+      <node id="57">
+        <label>BuckFast.cpp</label>
+        <link refid="BuckFast_8cpp"/>
+      </node>
+      <node id="70">
+        <label>getActiveProcessCodes.cpp</label>
+        <link refid="getActiveProcessCodes_8cpp"/>
+      </node>
+      <node id="71">
+        <label>getAnalysisContainer.cpp</label>
+        <link refid="getAnalysisContainer_8cpp"/>
+      </node>
+      <node id="72">
+        <label>getBuckFast.cpp</label>
+        <link refid="getBuckFast_8cpp"/>
+      </node>
+      <node id="73">
+        <label>getHepMCEvent.cpp</label>
+        <link refid="getHepMCEvent_8cpp"/>
+      </node>
+      <node id="74">
+        <label>getLHEvent.cpp</label>
+        <link refid="getLHEvent_8cpp"/>
+      </node>
+      <node id="76">
+        <label>getxsec.cpp</label>
+        <link refid="getxsec_8cpp"/>
+      </node>
+      <node id="81">
+        <label>lep_mssm_xsecs.cpp</label>
+        <link refid="lep__mssm__xsecs_8cpp"/>
+      </node>
+      <node id="86">
+        <label>BaseLimitContainer.cpp</label>
+        <link refid="BaseLimitContainer_8cpp"/>
+      </node>
+      <node id="68">
+        <label>SUSY.cpp</label>
+        <link refid="SUSY_8cpp"/>
+      </node>
+      <node id="69">
+        <label>SUSY_extras.cpp</label>
+        <link refid="SUSY__extras_8cpp"/>
+      </node>
+      <node id="77">
+        <label>process_code_PID_pair_mapping.cpp</label>
+        <link refid="process__code__PID__pair__mapping_8cpp"/>
+      </node>
+      <node id="78">
+        <label>runAnalyses.cpp</label>
+        <link refid="runAnalyses_8cpp"/>
+      </node>
+      <node id="79">
+        <label>smearEvent.cpp</label>
+        <link refid="smearEvent_8cpp"/>
+      </node>
+      <node id="210">
+        <label>container_factory.hpp</label>
+        <link refid="container__factory_8hpp"/>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>depresolver.hpp</label>
+        <link refid="depresolver_8hpp"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>gambit.hpp</label>
+        <link refid="gambit_8hpp"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>modelgraph.hpp</label>
+        <link refid="modelgraph_8hpp"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>container_factory.cpp</label>
+        <link refid="container__factory_8cpp"/>
+      </node>
+      <node id="216">
+        <label>depresolver.cpp</label>
+        <link refid="depresolver_8cpp"/>
+      </node>
+      <node id="218">
+        <label>diagnostics.cpp</label>
+        <link refid="diagnostics_8cpp"/>
+      </node>
+      <node id="214">
+        <label>gambit.cpp</label>
+        <link refid="gambit_8cpp"/>
+      </node>
+      <node id="215">
+        <label>likelihood_container.cpp</label>
+        <link refid="likelihood__container_8cpp"/>
+      </node>
+      <node id="219">
+        <label>modelgraph.cpp</label>
+        <link refid="modelgraph_8cpp"/>
+      </node>
+      <node id="96">
+        <label>BBN.cpp</label>
+        <link refid="BBN_8cpp"/>
+      </node>
+      <node id="97">
+        <label>Boltzmann.cpp</label>
+        <link refid="Boltzmann_8cpp"/>
+      </node>
+      <node id="98">
+        <label>CMB.cpp</label>
+        <link refid="CMB_8cpp"/>
+      </node>
+      <node id="100">
+        <label>CosmoALPs.cpp</label>
+        <link refid="CosmoALPs_8cpp"/>
+      </node>
+      <node id="101">
+        <label>CosmoBit.cpp</label>
+        <link refid="CosmoBit_8cpp"/>
+      </node>
+      <node id="114">
+        <label>Inflation.cpp</label>
+        <link refid="Inflation_8cpp"/>
+      </node>
+      <node id="117">
+        <label>MontePython.cpp</label>
+        <link refid="MontePython_8cpp"/>
+      </node>
+      <node id="121">
+        <label>Planck.cpp</label>
+        <link refid="Planck_8cpp"/>
+      </node>
+      <node id="16">
+        <label>DarkBit_standalone_MSSM.cpp</label>
+        <link refid="DarkBit__standalone__MSSM_8cpp"/>
+      </node>
+      <node id="17">
+        <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
+        <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
+      </node>
+      <node id="44">
+        <label>DarkBit_standalone_WIMP.cpp</label>
+        <link refid="DarkBit__standalone__WIMP_8cpp"/>
+      </node>
+      <node id="95">
+        <label>Axions.cpp</label>
+        <link refid="DarkBit_2src_2Axions_8cpp"/>
+      </node>
+      <node id="99">
+        <label>Cascades.cpp</label>
+        <link refid="Cascades_8cpp"/>
+      </node>
+      <node id="102">
+        <label>DMEFT.cpp</label>
+        <link refid="DarkBit_2src_2DMEFT_8cpp"/>
+      </node>
+      <node id="103">
+        <label>DarkBit.cpp</label>
+        <link refid="DarkBit_8cpp"/>
+      </node>
+      <node id="104">
+        <label>DarkBit_utils.cpp</label>
+        <link refid="DarkBit__utils_8cpp"/>
+      </node>
+      <node id="106">
+        <label>DiracSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2DiracSingletDM_8cpp"/>
+      </node>
+      <node id="107">
+        <label>DirectDetection.cpp</label>
+        <link refid="DirectDetection_8cpp"/>
+      </node>
+      <node id="108">
+        <label>EnergyInjection.cpp</label>
+        <link refid="EnergyInjection_8cpp"/>
+      </node>
+      <node id="113">
+        <label>IndirectDetectionYields.cpp</label>
+        <link refid="IndirectDetectionYields_8cpp"/>
+      </node>
+      <node id="115">
+        <label>MSSM.cpp</label>
+        <link refid="DarkBit_2src_2MSSM_8cpp"/>
+      </node>
+      <node id="116">
+        <label>MajoranaSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2MajoranaSingletDM_8cpp"/>
+      </node>
+      <node id="120">
+        <label>PPPC.cpp</label>
+        <link refid="PPPC_8cpp"/>
+      </node>
+      <node id="123">
+        <label>ProcessCatalog.cpp</label>
+        <link refid="ProcessCatalog_8cpp"/>
+      </node>
+      <node id="124">
+        <label>RelicDensity.cpp</label>
+        <link refid="RelicDensity_8cpp"/>
+      </node>
+      <node id="126">
+        <label>ScalarSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
+      </node>
+      <node id="127">
+        <label>SimpleHist.cpp</label>
+        <link refid="SimpleHist_8cpp"/>
+      </node>
+      <node id="128">
+        <label>SimpleLikelihoods.cpp</label>
+        <link refid="SimpleLikelihoods_8cpp"/>
+      </node>
+      <node id="131">
+        <label>SunNeutrinos.cpp</label>
+        <link refid="SunNeutrinos_8cpp"/>
+      </node>
+      <node id="132">
+        <label>VectorSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
+      </node>
+      <node id="133">
+        <label>WIMP_EFT.cpp</label>
+        <link refid="WIMP__EFT_8cpp"/>
+      </node>
+      <node id="134">
+        <label>decay_chain.cpp</label>
+        <link refid="decay__chain_8cpp"/>
+      </node>
+      <node id="195">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="242">
+        <label>decay_utils.hpp</label>
+        <link refid="decay__utils_8hpp"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>DecayBit.cpp</label>
+        <link refid="DecayBit_8cpp"/>
+      </node>
+      <node id="243">
+        <label>decay_utils.cpp</label>
+        <link refid="decay__utils_8cpp"/>
+      </node>
+      <node id="240">
+        <label>decay_table.hpp</label>
+        <link refid="decay__table_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>functor_definitions.hpp</label>
+        <link refid="functor__definitions_8hpp"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>gambit_module_headers.hpp</label>
+        <link refid="gambit__module__headers_8hpp"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>higgs_couplings_table.hpp</label>
+        <link refid="higgs__couplings__table_8hpp"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>module_macros_incore.hpp</label>
+        <link refid="module__macros__incore_8hpp"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>module_macros_incore_defs.hpp</label>
+        <link refid="module__macros__incore__defs_8hpp"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>mssm_slhahelp.hpp</label>
+        <link refid="mssm__slhahelp_8hpp"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>printable_types.hpp</label>
+        <link refid="Elements_2include_2gambit_2Elements_2printable__types_8hpp"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>slhaea_spec_helpers.hpp</label>
+        <link refid="slhaea__spec__helpers_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>smlike_higgs.hpp</label>
+        <link refid="smlike__higgs_8hpp"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>spec.hpp</label>
+        <link refid="spec_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>spec_fptrfinder.hpp</label>
+        <link refid="spec__fptrfinder_8hpp"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>spec_head.hpp</label>
+        <link refid="spec__head_8hpp"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>spectrum.hpp</label>
+        <link refid="spectrum_8hpp"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>spectrum_factories.hpp</label>
+        <link refid="spectrum__factories_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>subspectrum.hpp</label>
+        <link refid="subspectrum_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>types_rollcall.hpp</label>
+        <link refid="types__rollcall_8hpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>decay_table.cpp</label>
+        <link refid="decay__table_8cpp"/>
+      </node>
+      <node id="221">
+        <label>functors.cpp</label>
+        <link refid="Elements_2src_2functors_8cpp"/>
+      </node>
+      <node id="245">
+        <label>higgs_couplings_table.cpp</label>
+        <link refid="higgs__couplings__table_8cpp"/>
+      </node>
+      <node id="251">
+        <label>mssm_slhahelp.cpp</label>
+        <link refid="mssm__slhahelp_8cpp"/>
+      </node>
+      <node id="246">
+        <label>slhaea_spec_helpers.cpp</label>
+        <link refid="slhaea__spec__helpers_8cpp"/>
+      </node>
+      <node id="252">
+        <label>sminputs.cpp</label>
+        <link refid="sminputs_8cpp"/>
+      </node>
+      <node id="256">
+        <label>smlike_higgs.cpp</label>
+        <link refid="smlike__higgs_8cpp"/>
+      </node>
+      <node id="42">
+        <label>spectrum.cpp</label>
+        <link refid="spectrum_8cpp"/>
+      </node>
+      <node id="253">
+        <label>subspectrum.cpp</label>
+        <link refid="subspectrum_8cpp"/>
+      </node>
+      <node id="196">
+        <label>ExampleBit_A_standalone_example.cpp</label>
+        <link refid="ExampleBit__A__standalone__example_8cpp"/>
+      </node>
+      <node id="109">
+        <label>ExampleBit_A.cpp</label>
+        <link refid="ExampleBit__A_8cpp"/>
+      </node>
+      <node id="110">
+        <label>ExampleBit_B.cpp</label>
+        <link refid="ExampleBit__B_8cpp"/>
+      </node>
+      <node id="111">
+        <label>FlavBit.cpp</label>
+        <link refid="FlavBit_8cpp"/>
+      </node>
+      <node id="112">
+        <label>Flav_reader.cpp</label>
+        <link refid="Flav__reader_8cpp"/>
+      </node>
+      <node id="5">
+        <label>DMEFTSimpleSpec.hpp</label>
+        <link refid="DMEFTSimpleSpec_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>DiracSingletDM_Z2SimpleSpec.hpp</label>
+        <link refid="DiracSingletDM__Z2SimpleSpec_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>MSSMSimpleSpec.hpp</label>
+        <link refid="MSSMSimpleSpec_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>MajoranaSingletDM_Z2SimpleSpec.hpp</label>
+        <link refid="MajoranaSingletDM__Z2SimpleSpec_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>SLHASimpleSpec.hpp</label>
+        <link refid="SLHASimpleSpec_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>SMHiggsSimpleSpec.hpp</label>
+        <link refid="SMHiggsSimpleSpec_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>SMSimpleSpec.hpp</label>
+        <link refid="SMSimpleSpec_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>ScalarSingletDMSimpleSpec.hpp</label>
+        <link refid="ScalarSingletDMSimpleSpec_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>VectorSingletDM_Z2SimpleSpec.hpp</label>
+        <link refid="VectorSingletDM__Z2SimpleSpec_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RegisteredSpectra.hpp</label>
+        <link refid="RegisteredSpectra_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>MSSMSimpleSpec.cpp</label>
+        <link refid="MSSMSimpleSpec_8cpp"/>
+      </node>
+      <node id="260">
+        <label>SLHASimpleSpec.cpp</label>
+        <link refid="SLHASimpleSpec_8cpp"/>
+      </node>
+      <node id="41">
+        <label>SMSimpleSpec.cpp</label>
+        <link refid="SMSimpleSpec_8cpp"/>
+      </node>
+      <node id="4">
+        <label>DMEFT.cpp</label>
+        <link refid="Models_2src_2SpectrumContents_2DMEFT_8cpp"/>
+      </node>
+      <node id="7">
+        <label>DiracSingletDM.cpp</label>
+        <link refid="Models_2src_2SpectrumContents_2DiracSingletDM_8cpp"/>
+      </node>
+      <node id="10">
+        <label>MDM.cpp</label>
+        <link refid="MDM_8cpp"/>
+      </node>
+      <node id="14">
+        <label>MSSM.cpp</label>
+        <link refid="Models_2src_2SpectrumContents_2MSSM_8cpp"/>
+      </node>
+      <node id="28">
+        <label>MajoranaSingletDM.cpp</label>
+        <link refid="Models_2src_2SpectrumContents_2MajoranaSingletDM_8cpp"/>
+      </node>
+      <node id="37">
+        <label>SM.cpp</label>
+        <link refid="SM_8cpp"/>
+      </node>
+      <node id="38">
+        <label>SMHiggs.cpp</label>
+        <link refid="SMHiggs_8cpp"/>
+      </node>
+      <node id="45">
+        <label>SM_slha.cpp</label>
+        <link refid="SM__slha_8cpp"/>
+      </node>
+      <node id="46">
+        <label>ScalarSingletDM.cpp</label>
+        <link refid="Models_2src_2SpectrumContents_2ScalarSingletDM_8cpp"/>
+      </node>
+      <node id="52">
+        <label>VectorSingletDM.cpp</label>
+        <link refid="Models_2src_2SpectrumContents_2VectorSingletDM_8cpp"/>
+      </node>
+      <node id="248">
+        <label>MSSM20atX.cpp</label>
+        <link refid="MSSM20atX_8cpp"/>
+      </node>
+      <node id="262">
+        <label>subspectrum_contents.cpp</label>
+        <link refid="subspectrum__contents_8cpp"/>
+      </node>
+      <node id="118">
+        <label>NeutrinoBit.cpp</label>
+        <link refid="NeutrinoBit_8cpp"/>
+      </node>
+      <node id="125">
+        <label>RightHandedNeutrinos.cpp</label>
+        <link refid="RightHandedNeutrinos_8cpp"/>
+      </node>
+      <node id="119">
+        <label>ObjectivesBit.cpp</label>
+        <link refid="ObjectivesBit_8cpp"/>
+      </node>
+      <node id="122">
+        <label>PrecisionBit.cpp</label>
+        <link refid="PrecisionBit_8cpp"/>
+      </node>
+      <node id="198">
+        <label>baseprinter.hpp</label>
+        <link refid="baseprinter_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>asciiprinter.hpp</label>
+        <link refid="asciiprinter_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>asciireader.hpp</label>
+        <link refid="asciireader_8hpp"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>coutprinter.hpp</label>
+        <link refid="coutprinter_8hpp"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>hdf5printer.hpp</label>
+        <link refid="hdf5printer_8hpp"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>hdf5printer_v2.hpp</label>
+        <link refid="hdf5printer__v2_8hpp"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>hdf5reader.hpp</label>
+        <link refid="hdf5reader_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>noneprinter.hpp</label>
+        <link refid="noneprinter_8hpp"/>
+      </node>
+      <node id="233">
+        <label>sqliteprinter.hpp</label>
+        <link refid="sqliteprinter_8hpp"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>sqlitereader.hpp</label>
+        <link refid="sqlitereader_8hpp"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>baseprinter.cpp</label>
+        <link refid="baseprinter_8cpp"/>
+      </node>
+      <node id="232">
+        <label>printermanager.cpp</label>
+        <link refid="printermanager_8cpp"/>
+      </node>
+      <node id="200">
+        <label>asciiprinter.cpp</label>
+        <link refid="asciiprinter_8cpp"/>
+      </node>
+      <node id="203">
+        <label>asciireader.cpp</label>
+        <link refid="asciireader_8cpp"/>
+      </node>
+      <node id="201">
+        <label>print_overloads.cpp</label>
+        <link refid="asciiprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="204">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="asciiprinter_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="207">
+        <label>coutprinter.cpp</label>
+        <link refid="coutprinter_8cpp"/>
+      </node>
+      <node id="208">
+        <label>print_overloads.cpp</label>
+        <link refid="coutprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="223">
+        <label>hdf5printer.cpp</label>
+        <link refid="hdf5printer_8cpp"/>
+      </node>
+      <node id="224">
+        <label>hdf5reader.cpp</label>
+        <link refid="hdf5reader_8cpp"/>
+      </node>
+      <node id="225">
+        <label>print_overloads.cpp</label>
+        <link refid="hdf5printer_2print__overloads_8cpp"/>
+      </node>
+      <node id="226">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="hdf5printer_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="228">
+        <label>hdf5printer_v2.cpp</label>
+        <link refid="hdf5printer__v2_8cpp"/>
+      </node>
+      <node id="229">
+        <label>print_overloads.cpp</label>
+        <link refid="hdf5printer__v2_2print__overloads_8cpp"/>
+      </node>
+      <node id="234">
+        <label>print_overloads.cpp</label>
+        <link refid="sqliteprinter_2print__overloads_8cpp"/>
+      </node>
+      <node id="237">
+        <label>retrieve_overloads.cpp</label>
+        <link refid="sqliteprinter_2retrieve__overloads_8cpp"/>
+      </node>
+      <node id="235">
+        <label>sqliteprinter.cpp</label>
+        <link refid="sqliteprinter_8cpp"/>
+      </node>
+      <node id="238">
+        <label>sqlitereader.cpp</label>
+        <link refid="sqlitereader_8cpp"/>
+      </node>
+      <node id="249">
+        <label>SpecBit_examples.cpp</label>
+        <link refid="SpecBit__examples_8cpp"/>
+      </node>
+      <node id="25">
+        <label>SpecBit_tests.cpp</label>
+        <link refid="examples_2SpecBit__tests_8cpp"/>
+      </node>
+      <node id="12">
+        <label>MDMSpec.hpp</label>
+        <link refid="MDMSpec_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MDMSpec_head.hpp</label>
+        <link refid="MDMSpec__head_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>MSSMSpec.hpp</label>
+        <link refid="MSSMSpec_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>MSSMSpec_head.hpp</label>
+        <link refid="MSSMSpec__head_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>QedQcdWrapper.hpp</label>
+        <link refid="QedQcdWrapper_8hpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>ScalarSingletDM_Z2Spec.hpp</label>
+        <link refid="ScalarSingletDM__Z2Spec_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>ScalarSingletDM_Z2Spec_head.hpp</label>
+        <link refid="ScalarSingletDM__Z2Spec__head_8hpp"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>ScalarSingletDM_Z3Spec.hpp</label>
+        <link refid="ScalarSingletDM__Z3Spec_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>ScalarSingletDM_Z3Spec_head.hpp</label>
+        <link refid="ScalarSingletDM__Z3Spec__head_8hpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>SpecBit_externaltests.hpp</label>
+        <link refid="SpecBit__externaltests_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>external_examples.hpp</label>
+        <link refid="external__examples_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>MSSMspec.cpp</label>
+        <link refid="MSSMspec_8cpp"/>
+      </node>
+      <node id="32">
+        <label>QedQcdWrapper.cpp</label>
+        <link refid="QedQcdWrapper_8cpp"/>
+      </node>
+      <node id="129">
+        <label>SpecBit.cpp</label>
+        <link refid="SpecBit_8cpp"/>
+      </node>
+      <node id="6">
+        <label>SpecBit_DMEFT.cpp</label>
+        <link refid="SpecBit__DMEFT_8cpp"/>
+      </node>
+      <node id="9">
+        <label>SpecBit_DiracSingletDM.cpp</label>
+        <link refid="SpecBit__DiracSingletDM_8cpp"/>
+      </node>
+      <node id="13">
+        <label>SpecBit_MDM.cpp</label>
+        <link refid="SpecBit__MDM_8cpp"/>
+      </node>
+      <node id="21">
+        <label>SpecBit_MSSM.cpp</label>
+        <link refid="SpecBit__MSSM_8cpp"/>
+      </node>
+      <node id="30">
+        <label>SpecBit_MajoranaSingletDM.cpp</label>
+        <link refid="SpecBit__MajoranaSingletDM_8cpp"/>
+      </node>
+      <node id="33">
+        <label>SpecBit_SM.cpp</label>
+        <link refid="SpecBit__SM_8cpp"/>
+      </node>
+      <node id="34">
+        <label>SpecBit_ScalarSingletDM.cpp</label>
+        <link refid="SpecBit__ScalarSingletDM_8cpp"/>
+      </node>
+      <node id="35">
+        <label>SpecBit_VS.cpp</label>
+        <link refid="SpecBit__VS_8cpp"/>
+      </node>
+      <node id="36">
+        <label>SpecBit_VectorSingletDM.cpp</label>
+        <link refid="SpecBit__VectorSingletDM_8cpp"/>
+      </node>
+      <node id="130">
+        <label>SpecBit_tests.cpp</label>
+        <link refid="src_2SpecBit__tests_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGambit_1_1SpectrumParameter" prot="public">Gambit::SpectrumParameter</innerclass>
+    <innerclass refid="classGambit_1_1SubSpectrumContents" prot="public">Gambit::SubSpectrumContents</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for definining the required contents of SubSpectrum wrapper objects</para>
+<para><hruler/>
+</para>
+<para>Authors:</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2016 Feb</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Base<sp/>class<sp/>for<sp/>definining<sp/>the<sp/>required</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>contents<sp/>of<sp/>SubSpectrum<sp/>wrapper<sp/>objects</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>Authors:<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>&lt;!--<sp/>add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify<sp/>--&gt;</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(benjamin.farmer@fysik.su.se)</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>\date<sp/>2016<sp/>Feb<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__subspectrum_contents_hpp__<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__subspectrum_contents_hpp__<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spectrum__helpers_8hpp" kindref="compound">gambit/Elements/spectrum_helpers.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="variadic__functions_8hpp" kindref="compound">gambit/Utils/variadic_functions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref><sp/>{<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SubSpectrum;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Simple<sp/>class<sp/>to<sp/>contain<sp/>information<sp/>defining<sp/>how<sp/>some<sp/>parameter<sp/>in<sp/>a<sp/>SubSpectrum<sp/>object<sp/>can<sp/>be<sp/>accessed</highlight></codeline>
+<codeline lineno="30" refid="classGambit_1_1SpectrumParameter" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref><sp/>my_tag;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>my_name;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>my_shape;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>my_blockname;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>my_blockname_index;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref><sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>shape,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>blockname,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>blockindex)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>my_tag(tag)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>my_name(label)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>my_shape(shape)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>my_blockname(blockname)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>my_blockname_index(blockindex)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tag()</highlight><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_tag;<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><sp/><sp/>name()</highlight><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_name;<sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>shape()</highlight><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_shape;<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><sp/><sp/>blockname()</highlight><highlight class="keyword"><sp/><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_blockname;<sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blockindex()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_blockname_index;<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Base<sp/>class<sp/>for<sp/>defining<sp/>the<sp/>required<sp/>contents<sp/>of<sp/>a<sp/>SubSpectrum<sp/>object</highlight></codeline>
+<codeline lineno="58" refid="classGambit_1_1SubSpectrumContents" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1SubSpectrumContents" kindref="compound">SubSpectrumContents</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Vector<sp/>defining<sp/>what<sp/>parameters<sp/>a<sp/>wrapper<sp/>must<sp/>contain</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SpectrumParameter&gt;<sp/><ref refid="structGambit_1_1parameters" kindref="compound">parameters</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Name<sp/>of<sp/>SubSpectrumContents<sp/>class<sp/>(for<sp/>more<sp/>helpful<sp/>error<sp/>messages)</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>my_name;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref><sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;&amp;<sp/>shape<sp/>=<sp/>initVector(1),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>blockname=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index=0);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SubSpectrumContents_1abe5d5573e9b7f30931e84a8c3c308123" kindref="member">setName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>getName()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_name;}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Function<sp/>to<sp/>retreive<sp/>all<sp/>parameters</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SpectrumParameter&gt;<sp/><ref refid="classGambit_1_1SubSpectrumContents_1ad78dbbf35f85377231b38292614f1586" kindref="member">all_parameters</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Function<sp/>to<sp/>retreive<sp/>all<sp/>parameters<sp/>matching<sp/>a<sp/>certain<sp/>tag</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SpectrumParameter&gt;<sp/><ref refid="classGambit_1_1SubSpectrumContents_1af07012c2cd315ff3fcb562273a5c5e70" kindref="member">all_parameters_with_tag</ref>(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref><sp/>tag)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Function<sp/>to<sp/>retrieve<sp/>all<sp/>parameters<sp/>matching<sp/>a<sp/>certain<sp/>tag<sp/>and<sp/>shape</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SpectrumParameter&gt;<sp/><ref refid="classGambit_1_1SubSpectrumContents_1a6fbb7b1844444462a439be9ad6051df5" kindref="member">all_parameters_with_tag_and_shape</ref>(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref><sp/>tag,<sp/>std::vector&lt;int&gt;&amp;<sp/>shape)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Function<sp/>to<sp/>retrieve<sp/>all<sp/>parameters<sp/>whose<sp/>blockName<sp/>is<sp/>not<sp/>SMINPUTS,<sp/>YUKAWA,<sp/>CKMBLOCK,<sp/>or<sp/>empty.</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SpectrumParameter&gt;<sp/><ref refid="classGambit_1_1SubSpectrumContents_1abeb0607ce070a719fb7e6790b7ddb2c6" kindref="member">all_BSM_parameters</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Function<sp/>to<sp/>verify<sp/>that<sp/>a<sp/>SubSpectrum<sp/>wrapper<sp/>contains<sp/>everything<sp/>that<sp/>this<sp/>class<sp/>says<sp/>it<sp/>should</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a19de081ec822c16db275556be3c3808a" kindref="member">verify_contents</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref>&amp;<sp/>spec)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Models/include/gambit/Models/SpectrumContents/subspectrum_contents.hpp"/>
+  </compounddef>
+</doxygen>

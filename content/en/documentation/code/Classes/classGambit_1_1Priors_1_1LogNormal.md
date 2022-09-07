@@ -4,8 +4,7 @@ description: 'Multi-dimensional Log-Normal prior. '
 
 ---
 
-
-
+# Gambit::Priors::LogNormal
 
 
 
@@ -22,7 +21,7 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[LogNormal](/documentation/code/classes/classgambit_1_1priors_1_1lognormal/#function-lognormal)**(const std::vector< std::string > & param, const Options & options) |
+| | **[LogNormal](/documentation/code/classes/classgambit_1_1priors_1_1lognormal/#function-lognormal)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
 | virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1lognormal/#function-transform)**(const std::vector< double > & , std::unordered_map< std::string, double > & ) const override<br>Transform from unit hypercube to parameter.  |
 | virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1lognormal/#function-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
 | virtual double | **[operator()](/documentation/code/classes/classgambit_1_1priors_1_1lognormal/#function-operator)**(const std::vector< double > & ) const override<br>Log of PDF density.  |
@@ -119,4 +118,4 @@ Log of PDF density.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

@@ -4,8 +4,7 @@ description: 'Holds the info about a Mathematica backend function, and defines c
 
 ---
 
-
-
+# Gambit::Backends::mathematica_function
 
 
 
@@ -20,7 +19,7 @@ Holds the info about a Mathematica backend function, and defines conversion func
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mathematica_function](/documentation/code/classes/classgambit_1_1backends_1_1mathematica__function/#function-mathematica-function)**(const str & be, const str & ver, const str & symbol)<br>Constructor.  |
+| | **[mathematica_function](/documentation/code/classes/classgambit_1_1backends_1_1mathematica__function/#function-mathematica-function)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & be, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & ver, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & symbol)<br>Constructor.  |
 | TYPE | **[operator()](/documentation/code/classes/classgambit_1_1backends_1_1mathematica__function/#function-operator)**(ARGS &&... args)<br>Operation (execute function and return value)  |
 
 ## Detailed Description
@@ -58,4 +57,4 @@ Operation (execute function and return value)
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

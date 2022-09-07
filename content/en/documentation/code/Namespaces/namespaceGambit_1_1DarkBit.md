@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DarkBit
 
 
 
@@ -66,9 +65,9 @@ description: "[No description available]"
 | enum class| **[InterpolationOptions1D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptions1d)** { linear, cspline}<br>Generic one-dimensional integration container for linear interpolation and cubic splines.  |
 | enum class| **[InterpolationOptions2D](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-interpolationoptions2d)** { bilinear, bicubic}<br>Two-dimensional integration container for bilinear interpolation and bicubic splines.  |
 | enum| **[cascadeMC_SpecialEvents](/documentation/code/namespaces/namespacegambit_1_1darkbit/#enum-cascademc-specialevents)** { MC_INIT =-1, MC_NEXT_STATE =-2, MC_FINALIZE =-3}<br>Special events for event loop.  |
-| typedef std::map< str, std::map< str, [Gambit::DarkBit::SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/) > > | **[simpleHistContainter](/documentation/code/namespaces/namespacegambit_1_1darkbit/#typedef-simplehistcontainter)**  |
-| typedef std::map< str, int > | **[stringIntMap](/documentation/code/namespaces/namespacegambit_1_1darkbit/#typedef-stringintmap)**  |
-| typedef std::map< str, daFunk::Funk > | **[stringFunkMap](/documentation/code/namespaces/namespacegambit_1_1darkbit/#typedef-stringfunkmap)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [Gambit::DarkBit::SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/) > > | **[simpleHistContainter](/documentation/code/namespaces/namespacegambit_1_1darkbit/#typedef-simplehistcontainter)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), int > | **[stringIntMap](/documentation/code/namespaces/namespacegambit_1_1darkbit/#typedef-stringintmap)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), daFunk::Funk > | **[stringFunkMap](/documentation/code/namespaces/namespacegambit_1_1darkbit/#typedef-stringfunkmap)**  |
 
 ## Functions
 
@@ -103,15 +102,15 @@ description: "[No description available]"
 | void | **[IC79SL_bgloglike](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ic79sl-bgloglike)**(double & result) |
 | void | **[IC79SL_pvalue](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ic79sl-pvalue)**(double & result) |
 | void | **[CMC_dummy](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cmc-dummy)**(DarkBit::stringFunkMap & result) |
-| void | **[createSpectrum](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-createspectrum)**(Spectrum & outSpec) |
-| void | **[createDecays](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-createdecays)**(DecayTable & outDecays) |
+| void | **[createSpectrum](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-createspectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & outSpec) |
+| void | **[createDecays](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-createdecays)**([DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & outDecays) |
 | void | **[TH_ProcessCatalog_WIMP](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-wimp)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
 | void | **[DarkMatter_ID_WIMP](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-wimp)**(std::string & result) |
 | void | **[DarkMatterConj_ID_WIMP](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-wimp)**(std::string & result) |
-| void | **[WIMP_properties_WIMP](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-wimp-properties-wimp)**(WIMPprops & props) |
+| void | **[WIMP_properties_WIMP](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-wimp-properties-wimp)**([WIMPprops](/documentation/code/classes/structgambit_1_1wimpprops/) & props) |
 | void | **[DD_couplings_WIMP](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-couplings-wimp)**([DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result) |
-| error & | **[DarkBit_error](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkbit-error)**() |
-| warning & | **[DarkBit_warning](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkbit-warning)**() |
+| [error](/documentation/code/classes/classgambit_1_1error/) & | **[DarkBit_error](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkbit-error)**() |
+| [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[DarkBit_warning](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkbit-warning)**() |
 | double | **[parabola](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-parabola)**(double x, const double params[])<br>H.E.S.S.-likelihood-related interpolation routines.  |
 | double | **[intersect_parabola_line](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-intersect-parabola-line)**(double a, double b, double sign, const double pparams[]) |
 | double | **[rho_integrand](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rho-integrand)**(double rho, void * params) |
@@ -172,13 +171,13 @@ description: "[No description available]"
 | void | **[cascadeMC_sampleSimYield](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cascademc-samplesimyield)**(const [SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & table, const [DarkBit::DecayChain::ChainParticle](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1chainparticle/) * endpoint, std::string finalState, const [TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & catalog, std::map< std::string, std::map< std::string, [SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/) > > & histList, std::string initialState, double weight, int cMC_numSpecSamples) |
 | void | **[cascadeMC_Histograms](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cascademc-histograms)**(std::map< std::string, std::map< std::string, [SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/) > > & result)<br>Function responsible for histogramming, and evaluating end conditions for event loop.  |
 | void | **[cascadeMC_fetchSpectra](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cascademc-fetchspectra)**(std::map< std::string, daFunk::Funk > & spectra, std::string finalState, const std::set< std::string > & ini, const std::set< std::string > & fin, const std::map< std::string, std::map< std::string, [SimpleHist](/documentation/code/classes/structgambit_1_1darkbit_1_1simplehist/) > > & h, const std::map< std::string, int > & eventCounts) |
-| void | **[print_spectrum_debug_info](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-print-spectrum-debug-info)**(const str & fs, const std::map< std::string, daFunk::Funk > & spectra)<br>Debug print function for cascase spectra.  |
+| void | **[print_spectrum_debug_info](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-print-spectrum-debug-info)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & fs, const std::map< std::string, daFunk::Funk > & spectra)<br>Debug print function for cascase spectra.  |
 | void | **[cascadeMC_gammaSpectra](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cascademc-gammaspectra)**(std::map< std::string, daFunk::Funk > & spectra)<br>Function requesting and returning gamma ray spectra from cascade decays.  |
 | void | **[cascadeMC_electronSpectra](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cascademc-electronspectra)**(std::map< std::string, daFunk::Funk > & spectra)<br>Function requesting and returning electron spectra from cascade decays.  |
 | void | **[cascadeMC_positronSpectra](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cascademc-positronspectra)**(std::map< std::string, daFunk::Funk > & spectra)<br>Function requesting and returning positron spectra from cascade decays.  |
 | void | **[cascadeMC_antiprotonSpectra](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cascademc-antiprotonspectra)**(std::map< std::string, daFunk::Funk > & spectra)<br>Function requesting and returning pbar spectra from cascade decays.  |
 | void | **[cascadeMC_antideuteronSpectra](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-cascademc-antideuteronspectra)**(std::map< std::string, daFunk::Funk > & spectra)<br>Function requesting and returning Dbar spectra from cascade decays.  |
-| void | **[WIMP_properties](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-wimp-properties)**(WIMPprops & props)<br>Retrieve the struct of WIMP properties.  |
+| void | **[WIMP_properties](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-wimp-properties)**([WIMPprops](/documentation/code/classes/structgambit_1_1wimpprops/) & props)<br>Retrieve the struct of WIMP properties.  |
 | void | **[mwimp_generic](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-mwimp-generic)**(double & result)<br>Retrieve the DM mass in GeV for generic models (GeV)  |
 | void | **[spinwimpx2_generic](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-spinwimpx2-generic)**(unsigned int & result)<br>Retrieve the DM spin (times two) generic models.  |
 | void | **[wimp_sc_generic](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-wimp-sc-generic)**(bool & result)<br>Retrieve whether or not the DM is self conjugate or not.  |
@@ -187,15 +186,15 @@ description: "[No description available]"
 | void | **[DM_process_from_ProcessCatalog](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dm-process-from-processcatalog)**(std::string & result) |
 | double | **[profile_gNFW](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-profile-gnfw)**(double rhos, double rs, double alpha, double beta, double gamma, double r)<br>Generalized NFW dark matter halo profile function.  |
 | double | **[profile_Einasto](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-profile-einasto)**(double rhos, double rs, double alpha, double r)<br>Einasto dark matter halo profile function.  |
-| void | **[GalacticHalo_gNFW](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-galactichalo-gnfw)**(GalacticHaloProperties & result)<br>Module function to generate GalacticHaloProperties for gNFW profile.  |
-| void | **[GalacticHalo_Einasto](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-galactichalo-einasto)**(GalacticHaloProperties & result)<br>Module function to generate GalacticHaloProperties for Einasto profile.  |
-| void | **[ExtractLocalMaxwellianHalo](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-extractlocalmaxwellianhalo)**(LocalMaxwellianHalo & result)<br>Module function providing local density and velocity dispersion parameters.  |
+| void | **[GalacticHalo_gNFW](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-galactichalo-gnfw)**([GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) & result)<br>Module function to generate [GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) for gNFW profile.  |
+| void | **[GalacticHalo_Einasto](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-galactichalo-einasto)**([GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) & result)<br>Module function to generate [GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) for Einasto profile.  |
+| void | **[ExtractLocalMaxwellianHalo](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-extractlocalmaxwellianhalo)**([LocalMaxwellianHalo](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/) & result)<br>Module function providing local density and velocity dispersion parameters.  |
 | void | **[UnitTest_DarkBit](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-unittest-darkbit)**(int & result)<br>Central unit test routine.  |
 | double | **[get_finalState_mass](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-get-finalstate-mass)**(const std::string & finalState)<br>Helper function to get the mass of a given final state particle.  |
 | void | **[DarkMatter_ID_DiracSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-diracsingletdm)**(std::string & result) |
 | void | **[DarkMatterConj_ID_DiracSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-diracsingletdm)**(std::string & result) |
 | void | **[DD_nonrel_WCs_DiracSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-nonrel-wcs-diracsingletdm-z2)**([NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) & result)<br>Direct detection couplings for the DiracSingletDM_Z2 model.  |
-| void | **[DD_rel_WCs_flavscheme_DiracSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-diracsingletdm-z2)**(map_str_dbl & result) |
+| void | **[DD_rel_WCs_flavscheme_DiracSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-diracsingletdm-z2)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
 | void | **[TH_ProcessCatalog_DiracSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-diracsingletdm-z2)**([DarkBit::TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result)<br>Set up process catalog for the DiracSingletDM_Z2 model.  |
 | void | **[DD_couplings_DarkSUSY_DS5](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-couplings-darksusy-ds5)**([DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result)<br>Get direct detection couplings from initialized DarkSUSY 5.  |
 | void | **[DD_couplings_DarkSUSY_MSSM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-couplings-darksusy-mssm)**([DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result)<br>Get direct detection couplings from DarkSUSY 6 initialized with MSSM module.  |
@@ -204,14 +203,14 @@ description: "[No description available]"
 | void | **[sigma_SI_n_simple](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-si-n-simple)**(double & result)<br>Simple calculator of the spin-independent WIMP-neutron cross-section.  |
 | void | **[sigma_SD_p_simple](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-sd-p-simple)**(double & result)<br>Simple calculator of the spin-dependent WIMP-proton cross-section.  |
 | void | **[sigma_SD_n_simple](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-sd-n-simple)**(double & result)<br>Simple calculator of the spin-dependent WIMP-neutron cross-section.  |
-| void | **[sigma_SI_vnqn_FermionicHiggsPortal](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-si-vnqn-fermionichiggsportal)**(map_intpair_dbl & result) |
-| void | **[sigma_SD_vnqn_FermionicHiggsPortal](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-sd-vnqn-fermionichiggsportal)**(map_intpair_dbl & result) |
+| void | **[sigma_SI_vnqn_FermionicHiggsPortal](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-si-vnqn-fermionichiggsportal)**([map_intpair_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-intpair-dbl) & result) |
+| void | **[sigma_SD_vnqn_FermionicHiggsPortal](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-sd-vnqn-fermionichiggsportal)**([map_intpair_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-intpair-dbl) & result) |
 | void | **[DDCalc_Couplings_WIMP_nucleon](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ddcalc-couplings-wimp-nucleon)**([DD_coupling_container](/documentation/code/classes/structgambit_1_1dd__coupling__container/) & result)<br>DDCalc initialisation.  |
 | void | **[DDCalc_Couplings_NR_WCs](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ddcalc-couplings-nr-wcs)**([DD_coupling_container](/documentation/code/classes/structgambit_1_1dd__coupling__container/) & result) |
 | void | **[TH_ProcessCatalog_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-dmeft)**([DarkBit::TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
 | void | **[DarkMatter_ID_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-dmeft)**(std::string & result) |
 | void | **[DarkMatterConj_ID_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-dmeft)**(std::string & result) |
-| void | **[DD_rel_WCs_flavscheme_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-dmeft)**(map_str_dbl & result) |
+| void | **[DD_rel_WCs_flavscheme_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-dmeft)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
 | void | **[DarkMatter_ID_AnnihilatingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-annihilatingdm-mixture)**(std::string & result) |
 | void | **[DarkMatterConj_ID_AnnihilatingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-annihilatingdm-mixture)**(std::string & result) |
 | void | **[DarkMatter_ID_DecayingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-decayingdm-mixture)**(std::string & result) |
@@ -219,8 +218,8 @@ description: "[No description available]"
 | void | **[energy_injection_spectrum_ProcessCatalog](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-energy-injection-spectrum-processcatalog)**([DarkAges::Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & spectrum)<br>The energy injection spectrum from the ProcessCatalog and FCMC.  |
 | void | **[TH_ProcessCatalog_AnnihilatingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-annihilatingdm-mixture)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result)<br>Set up process catalog for AnnihilatingDM_mixture.  |
 | void | **[TH_ProcessCatalog_DecayingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-decayingdm-mixture)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result)<br>Set up process catalog for DecayingDM_mixture.  |
-| daFunk::Funk | **[boost_dNdE](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-boost-dnde)**(daFunk::Funk dNdE, double gamma, double mass)<br>Boosts an energy spectrum of isotropic particles into another frame (and isotropizes again). Parameters: gamma: Lorentz boost factor dNdE: Spectrum mass: mass of particle.  |
-| daFunk::Funk | **[getYield](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-getyield)**(const str & yield, const bool is_annihilation, const str & DMid, const str & DMbarid, [TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) catalog, [SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) table, double line_width, stringFunkMap cascadeMC_spectra)<br>Helper function returning yield from a given DM process.  |
+| daFunk::Funk | **[boost_dNdE](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-boost-dnde)**(daFunk::Funk dNdE, double gamma, double mass)<br>Boosts an energy spectrum of isotropic particles into another frame (and isotropizes again). Parameters: gamma: Lorentz boost factor dNdE: [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) mass: mass of particle.  |
+| daFunk::Funk | **[getYield](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-getyield)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & yield, const bool is_annihilation, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & DMid, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & DMbarid, [TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) catalog, [SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) table, double line_width, stringFunkMap cascadeMC_spectra)<br>Helper function returning yield from a given DM process.  |
 | void | **[GA_AnnYield_General](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ga-annyield-general)**(daFunk::Funk & result)<br>General routine to derive gamma-ray annihilation yield. This function returns k*dN/dE*(sv)/mDM**2 (E, v) [cm^3/s/GeV^3] the energy spectrum of photons times sigma*v/m^2, as function of energy (in GeV) and velocity (as a fraction of c), multiplied by k=1 for self-conjugate DM or k=1/2 for non-self conjugate. By default, only the v=0 component is calculated.  |
 | void | **[GA_DecayYield_General](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ga-decayyield-general)**(daFunk::Funk & result)<br>General routine to derive gamma-ray decay yield. This function returns dN/dE*(Gamma)/mDM (E) [1/s/GeV^2] the energy spectrum of photons times Gamma/m, as function of energy (in GeV).  |
 | void | **[electron_AnnYield_General](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-electron-annyield-general)**(daFunk::Funk & result)<br>General routine to derive electron annihilation yield. This function returns k*dN/dE*(sv)/mDM**2 (E, v) [cm^3/s/GeV^3] the energy spectrum of electrons times sigma*v/m^2, as function of energy (in GeV) and velocity (as a fraction of c), multiplied by k=1 for self-conjugate DM or k=1/2 for non-self conjugate. By default, only the v=0 component is calculated.  |
@@ -233,14 +232,14 @@ description: "[No description available]"
 | void | **[antideuteron_DecayYield_General](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-antideuteron-decayyield-general)**(daFunk::Funk & result)<br>General routine to derive antideuteron decay yield. This function returns dN/dE*(Gamma)/mDM (E) [1/s/GeV^2] the energy spectrum of antideuterons times Gamma/m, as function of energy (in GeV).  |
 | void | **[Combine_SimYields](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-combine-simyields)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Combined [SimYieldTable]() containing final yields of all stable particles.  |
 | void | **[GA_SimYieldTable_DS5](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ga-simyieldtable-ds5)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Gamma-ray [SimYieldTable]() based on DarkSUSY5 tabulated results. (DS6 below)  |
-| [SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) | **[SimYieldTable_DarkSUSY](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-simyieldtable-darksusy)**(const str & yield, const bool allow_yield_extrapolation, double(*)(double &, double &, int &, char *, int &, int &, int &) dsanyield, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< Options > runOptions)<br>Construct a [SimYieldTable]() based on DarkSUSY6 tabulated results.  |
+| [SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) | **[SimYieldTable_DarkSUSY](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-simyieldtable-darksusy)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & yield, const bool allow_yield_extrapolation, double(*)(double &, double &, int &, char *, int &, int &, int &) dsanyield, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > runOptions)<br>Construct a [SimYieldTable]() based on DarkSUSY6 tabulated results.  |
 | void | **[GA_SimYieldTable_DarkSUSY](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ga-simyieldtable-darksusy)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Gamma-ray [SimYieldTable]() based on DarkSUSY6 tabulated results.  |
 | void | **[positron_SimYieldTable_DarkSUSY](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-positron-simyieldtable-darksusy)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Positron [SimYieldTable]() based on DarkSUSY6 tabulated results.  |
 | void | **[antiproton_SimYieldTable_DarkSUSY](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-antiproton-simyieldtable-darksusy)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Anti-proton [SimYieldTable]() based on DarkSUSY6 tabulated results.  |
 | void | **[antideuteron_SimYieldTable_DarkSUSY](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-antideuteron-simyieldtable-darksusy)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Anti-deuteron [SimYieldTable]() based on DarkSUSY6 tabulated results.  |
 | void | **[GA_SimYieldTable_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ga-simyieldtable-micromegas)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Gamma-ray [SimYieldTable]() based on MicrOmegas tabulated results.  |
 | void | **[positron_SimYieldTable_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-positron-simyieldtable-micromegas)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & )<br>Positron [SimYieldTable]() based on MicrOmegas tabulated results.  |
-| [SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) | **[SimYieldTable_PPPC](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-simyieldtable-pppc)**(const str & yield, bool allow_yield_extrapolation, double(*)(double, double, std::string) PPPC_yield, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< Options > runOptions) |
+| [SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) | **[SimYieldTable_PPPC](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-simyieldtable-pppc)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & yield, bool allow_yield_extrapolation, double(*)(double, double, std::string) PPPC_yield, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > runOptions) |
 | double | **[PPPC_dNdE_gamma](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-pppc-dnde-gamma)**(double m, double x, std::string channel)<br>Conveninence function to get the gamma yield from the interpolated PPPC tables.  |
 | double | **[PPPC_dNdE_positron](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-pppc-dnde-positron)**(double m, double x, std::string channel)<br>Conveninence function to get the positiron yield from the interpolated PPPC tables.  |
 | void | **[GA_SimYieldTable_PPPC](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ga-simyieldtable-pppc)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Gamma-ray [SimYieldTable]() based on PPPC4DMID Cirelli et al. 2010.  |
@@ -250,7 +249,7 @@ description: "[No description available]"
 | void | **[antiproton_SimYieldTable_empty](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-antiproton-simyieldtable-empty)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result) |
 | void | **[antideuteron_SimYieldTable_empty](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-antideuteron-simyieldtable-empty)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result) |
 | void | **[electron_SimYieldTable_from_positron_SimYieldTable](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-electron-simyieldtable-from-positron-simyieldtable)**([SimYieldTable](/documentation/code/classes/classgambit_1_1darkbit_1_1simyieldtable/) & result)<br>Electron [SimYieldTable]() based on positron table.  |
-| int | **[dump](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dump)**(const str & filename, const daFunk::Funk & spectrum)<br>Helper function to dump any spectra.  |
+| int | **[dump](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dump)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & filename, const daFunk::Funk & spectrum)<br>Helper function to dump any spectra.  |
 | void | **[dump_gammaSpectrum](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dump-gammaspectrum)**(int & result)<br>Helper function to dump gamma-ray spectra.  |
 | void | **[dump_electronSpectrum](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dump-electronspectrum)**(int & result)<br>Helper function to dump electron spectra.  |
 | void | **[dump_positronSpectrum](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dump-positronspectrum)**(int & result)<br>Helper function to dump positron spectra.  |
@@ -259,7 +258,7 @@ description: "[No description available]"
 | void | **[DarkMatter_ID_MajoranaSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-majoranasingletdm)**(std::string & result) |
 | void | **[DarkMatterConj_ID_MajoranaSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-majoranasingletdm)**(std::string & result) |
 | void | **[DD_nonrel_WCs_MajoranaSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-nonrel-wcs-majoranasingletdm-z2)**([NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) & result) |
-| void | **[DD_rel_WCs_flavscheme_MajoranaSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-majoranasingletdm-z2)**(map_str_dbl & result) |
+| void | **[DD_rel_WCs_flavscheme_MajoranaSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-majoranasingletdm-z2)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
 | void | **[TH_ProcessCatalog_MajoranaSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-majoranasingletdm-z2)**([DarkBit::TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result)<br>Set up process catalog for the MajoranaSingletDM_Z2 model.  |
 | double | **[DSgamma3bdy](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dsgamma3bdy)**(double(*)(int &, double &, double &) IBfunc, int IBch, double Eg, double E1, double M_DM, double m_1, double m_2)<br>Fully initialize DarkSUSY to the current model point.  |
 | void | **[TH_ProcessCatalog_DS5_MSSM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-ds5-mssm)**([DarkBit::TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result)<br>Initialization of Process Catalog based on DarkSUSY 5 calculations.  |
@@ -277,7 +276,7 @@ description: "[No description available]"
 | void | **[RD_eff_annrate_from_ProcessCatalog](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-eff-annrate-from-processcatalog)**(double(*&)(double &) result)<br>Infer Weff from process catalog.  |
 | void | **[RD_oh2_DS_general](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds-general)**(double & result)<br>General routine for calculation of relic density, using DarkSUSY 6+ Boltzmann solver.  |
 | void | **[RD_oh2_DS5_general](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds5-general)**(double & result)<br>General routine for calculation of relic density, using DarkSUSY 5 Boltzmann solver.  |
-| void | **[RD_oh2_Xf_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-xf-micromegas)**(ddpair & result)<br>Relic density directly from a call of initialized MicrOmegas.  |
+| void | **[RD_oh2_Xf_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-xf-micromegas)**([ddpair](/documentation/code/namespaces/namespacegambit/#typedef-ddpair) & result)<br>Relic density directly from a call of initialized MicrOmegas.  |
 | void | **[RD_oh2_DarkSUSY_DS5](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-darksusy-ds5)**(double & result)<br>Relic density directly from a call of initialized DarkSUSY 5.  |
 | void | **[RD_oh2_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-micromegas)**(double & result) |
 | void | **[Xf_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-xf-micromegas)**(double & result) |
@@ -290,7 +289,7 @@ description: "[No description available]"
 | void | **[RD_fraction_rescaled_LCDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-fraction-rescaled-lcdm)**(double & result) |
 | void | **[DarkMatter_ID_ScalarSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-scalarsingletdm)**(std::string & result) |
 | void | **[DarkMatterConj_ID_ScalarSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-scalarsingletdm)**(std::string & result) |
-| void | **[get_ScalarSingletDM_DD_couplings](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-get-scalarsingletdm-dd-couplings)**(const Spectrum & spec, [DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result, [Models::safe_param_map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/)< [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>Common code for different scalar singlet direct detection coupling routines.  |
+| void | **[get_ScalarSingletDM_DD_couplings](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-get-scalarsingletdm-dd-couplings)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, [DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result, [Models::safe_param_map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/)< [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>Common code for different scalar singlet direct detection coupling routines.  |
 | void | **[DD_couplings_ScalarSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-couplings-scalarsingletdm-z2)**([DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result)<br>Direct detection couplings for Z2 scalar singlet DM.  |
 | void | **[DD_couplings_ScalarSingletDM_Z3](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-couplings-scalarsingletdm-z3)**([DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result)<br>Direct detection couplings for Z3 scalar singlet DM.  |
 | void | **[TH_ProcessCatalog_ScalarSingletDM_Z2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-scalarsingletdm-z2)**([DarkBit::TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result)<br>Set up process catalog for Z2 scalar singlet DM.  |
@@ -329,7 +328,7 @@ description: "[No description available]"
 | void | **[NREO_couplings_from_parameters](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-nreo-couplings-from-parameters)**([NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) & NREO_couplings) |
 | void | **[NREO_from_DD_couplings](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-nreo-from-dd-couplings)**([NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) & NREO_couplings) |
 | void | **[DD_nonrel_WCs_flavscheme](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-nonrel-wcs-flavscheme)**([NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) & result) |
-| void | **[ExtractDirectDMNuisanceParameters](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-extractdirectdmnuisanceparameters)**(map_str_dbl & result) |
+| void | **[ExtractDirectDMNuisanceParameters](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-extractdirectdmnuisanceparameters)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
 | void | **[TH_ProcessCatalog_WIMP_EFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-wimp-eft)**([DarkBit::TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result)<br>Set up process catalog for a generic parameterisation of (two body) WIMP dark matter decays and annihilations.  |
 
 ## Attributes
@@ -1634,7 +1633,7 @@ void GalacticHalo_gNFW(
 )
 ```
 
-Module function to generate GalacticHaloProperties for gNFW profile. 
+Module function to generate [GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) for gNFW profile. 
 
 ### function GalacticHalo_Einasto
 
@@ -1644,7 +1643,7 @@ void GalacticHalo_Einasto(
 )
 ```
 
-Module function to generate GalacticHaloProperties for Einasto profile. 
+Module function to generate [GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) for Einasto profile. 
 
 ### function ExtractLocalMaxwellianHalo
 
@@ -1975,7 +1974,7 @@ daFunk::Funk boost_dNdE(
 )
 ```
 
-Boosts an energy spectrum of isotropic particles into another frame (and isotropizes again). Parameters: gamma: Lorentz boost factor dNdE: Spectrum mass: mass of particle. 
+Boosts an energy spectrum of isotropic particles into another frame (and isotropizes again). Parameters: gamma: Lorentz boost factor dNdE: [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) mass: mass of particle. 
 
 ### function getYield
 
@@ -2861,11 +2860,11 @@ Fermi LAT dwarf likelihoods, based on arXiv:1108.2914. / void lnL_FermiLATdwarfs
 
 double fraction = *Dep::RD_fraction;
 
-// Integate spectrum // (the zero velocity limit of the differential annihilation // cross-section as function of individual final state photons) double AnnYieldint = (*Dep::GA_Yield)-> set("v", 0.)->gsl_integration("E", 1, 100)->set_epsabs(0)->set_epsrel(1e-3)->bind()->eval(); logger() << "AnnYieldInt (1-100 GeV): " << AnnYieldint << EOM;
+// Integate spectrum // (the zero velocity limit of the differential annihilation // cross-section as function of individual final state photons) double AnnYieldint = (*Dep::GA_Yield)-> set("v", 0.)->gsl_integration("E", 1, 100)->set_epsabs(0)->set_epsrel(1e-3)->bind()->eval(); [logger()](/documentation/code/namespaces/namespacegambit/#function-logger) << "AnnYieldInt (1-100 GeV): " << AnnYieldint << EOM;
 
 // Calculate phi-value double phi = AnnYieldint / 8. / M_PI * 1e26 * fraction * fraction;
 
-// And return final likelihood result = 0.5*dwarf_likelihood->bind("phi")->eval(phi); logger() << "dwarf_likelihood: " << result << EOM; logger() << "phi: " << phi << EOM; }
+// And return final likelihood result = 0.5*dwarf_likelihood->bind("phi")->eval(phi); [logger()](/documentation/code/namespaces/namespacegambit/#function-logger) << "dwarf_likelihood: " << result << EOM; [logger()](/documentation/code/namespaces/namespacegambit/#function-logger) << "phi: " << phi << EOM; }
 
 module function which sets the Milky Way halo profile for the gamlike backend void set_gamLike_GC_halo(bool &result) { using namespace Pipes::set_gamLike_GC_halo;
 
@@ -3419,4 +3418,4 @@ static std::vector< std::string > channels {"e", "mu", "tau",
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

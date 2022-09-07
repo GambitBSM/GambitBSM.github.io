@@ -2,17 +2,179 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="classGambit_1_1safe__ptr" kind="class" language="C++" prot="public">
     <compoundname>Gambit::safe_ptr</compoundname>
+    <derivedcompoundref refid="classGambit_1_1omp__safe__ptr" prot="public" virt="non-virtual">Gambit::omp_safe_ptr&lt; TYPE &gt;</derivedcompoundref>
+    <includes refid="util__types_8hpp" local="no">util_types.hpp</includes>
     <templateparamlist>
       <param>
-        <type>class T</type>
+        <type>typename TYPE</type>
       </param>
     </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1safe__ptr_1a5206ba6f959e57ab88b157f295ea2184" prot="protected" static="no" mutable="no">
+        <type>const TYPE *</type>
+        <definition>const TYPE* Gambit::safe_ptr&lt; TYPE &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <qualifiedname>Gambit::safe_ptr::ptr</qualifiedname>
+        <briefdescription>
+<para>The actual underlying pointer, interpreted as a pointer to constant value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="221" column="18" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1safe__ptr_1a8eadc385961b2ee48eec335aa3815ed9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::safe_ptr&lt; TYPE &gt;::safe_ptr</definition>
+        <argsstring>(TYPE *in_ptr=NULL)</argsstring>
+        <name>safe_ptr</name>
+        <qualifiedname>Gambit::safe_ptr::safe_ptr</qualifiedname>
+        <param>
+          <type>TYPE *</type>
+          <declname>in_ptr</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Construct-o-safe_ptr. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="189" column="7" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1safe__ptr_1a40fa3c27d2b16b5fe355979dd750c48a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::safe_ptr&lt; TYPE &gt;::set</definition>
+        <argsstring>(TYPE *in_ptr)</argsstring>
+        <name>set</name>
+        <qualifiedname>Gambit::safe_ptr::set</qualifiedname>
+        <param>
+          <type>TYPE *</type>
+          <declname>in_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Set pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="192" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="192" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1safe__ptr_1abde2dba42cd05bdc65478da8b4da6abb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const TYPE &amp;</type>
+        <definition>virtual const TYPE &amp; Gambit::safe_ptr&lt; TYPE &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>Gambit::safe_ptr::operator*</qualifiedname>
+        <reimplementedby refid="classGambit_1_1omp__safe__ptr_1a1d2f081408780b880d19d53bfee5ca5d">operator*</reimplementedby>
+        <briefdescription>
+<para>Dereference pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="195" column="26" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="195" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1safe__ptr_1aff0eee7c1b6166b9e056bd752b8e9e58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const TYPE &amp;</type>
+        <definition>virtual const TYPE &amp; Gambit::safe_ptr&lt; TYPE &gt;::operator[]</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>Gambit::safe_ptr::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Dereference pointer as if it is an array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="202" column="26" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="202" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1safe__ptr_1a2349ff1d6609f8ab2d087a5786017838" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const TYPE *</type>
+        <definition>virtual const TYPE * Gambit::safe_ptr&lt; TYPE &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>Gambit::safe_ptr::operator-&gt;</qualifiedname>
+        <briefdescription>
+<para>Access is allowed to const member functions only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="209" column="26" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="209" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1safe__ptr_1a790cd609016f9e132e469e6d6051e3c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Gambit::safe_ptr&lt; TYPE &gt;::isNull</definition>
+        <argsstring>() const</argsstring>
+        <name>isNull</name>
+        <qualifiedname>Gambit::safe_ptr::isNull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="216" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="216" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classGambit_1_1safe__ptr_1afc36ff493f4fd45b60ca161307bb4be6" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Gambit::safe_ptr&lt; TYPE &gt;::dieGracefully</definition>
+        <argsstring>()</argsstring>
+        <name>dieGracefully</name>
+        <qualifiedname>Gambit::safe_ptr::dieGracefully</qualifiedname>
+        <briefdescription>
+<para>Failure message invoked when the user tries to dereference a null <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="224" column="19" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="224" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para>A safe pointer that throws an informative error if you try to dereference it when nullified, and cannot be used to overwrite the thing it points to. </para>
     </detaileddescription>
-    <location file="Backends/include/gambit/Backends/backend_types/DDCalc.hpp" line="35" column="13" bodyfile="Backends/include/gambit/Backends/backend_types/DDCalc.hpp" bodystart="35" bodyend="-1"/>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::omp_safe_ptr&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1omp__safe__ptr"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::safe_ptr&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1safe__ptr"/>
+      </node>
+    </inheritancegraph>
+    <location file="Utils/include/gambit/Utils/util_types.hpp" line="183" column="3" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="184" bodyend="235"/>
     <listofallmembers>
+      <member refid="classGambit_1_1safe__ptr_1afc36ff493f4fd45b60ca161307bb4be6" prot="protected" virt="non-virtual"><scope>Gambit::safe_ptr</scope><name>dieGracefully</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a790cd609016f9e132e469e6d6051e3c5" prot="public" virt="virtual"><scope>Gambit::safe_ptr</scope><name>isNull</name></member>
+      <member refid="classGambit_1_1safe__ptr_1abde2dba42cd05bdc65478da8b4da6abb" prot="public" virt="virtual"><scope>Gambit::safe_ptr</scope><name>operator*</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a2349ff1d6609f8ab2d087a5786017838" prot="public" virt="virtual"><scope>Gambit::safe_ptr</scope><name>operator-&gt;</name></member>
+      <member refid="classGambit_1_1safe__ptr_1aff0eee7c1b6166b9e056bd752b8e9e58" prot="public" virt="virtual"><scope>Gambit::safe_ptr</scope><name>operator[]</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a5206ba6f959e57ab88b157f295ea2184" prot="protected" virt="non-virtual"><scope>Gambit::safe_ptr</scope><name>ptr</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a8eadc385961b2ee48eec335aa3815ed9" prot="public" virt="non-virtual"><scope>Gambit::safe_ptr</scope><name>safe_ptr</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a40fa3c27d2b16b5fe355979dd750c48a" prot="public" virt="virtual"><scope>Gambit::safe_ptr</scope><name>set</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

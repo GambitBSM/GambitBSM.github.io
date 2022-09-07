@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="hdf5tools_8py" kind="file" language="Python">
+    <compoundname>hdf5tools.py</compoundname>
+    <innernamespace refid="namespacehdf5tools">hdf5tools</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacehdf5tools" refkind="compound"><highlight class="comment">#!/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;Tools<sp/>for<sp/>reading/writing<sp/>data<sp/>from<sp/>HDF5<sp/>files&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>h5py</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>math</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Buffer<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">chunksize<sp/>=<sp/>1000</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">bufferlength<sp/>=<sp/>100<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Must<sp/>match<sp/>setting<sp/>in<sp/>hdf5printer.hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">max_ppidpairs<sp/>=<sp/>10*bufferlength<sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/>&quot;<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_dset_lengths(d,group,dsets):</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>itemname<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>group:<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/>group[itemname]</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinstance(item,h5py.Dataset):</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#print<sp/>itemname,&quot;is<sp/>a<sp/>Dataset&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dsets.add((itemname,item.dtype))</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>itemname<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>d:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[itemname]<sp/>+=<sp/>item.shape[0]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[itemname]<sp/>=<sp/>item.shape[0]</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinstance(item,h5py.Group):</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#print<sp/>itemname,&quot;is<sp/>a<sp/>Group&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">check_lengths(d):</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/>length<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>key,value<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>d.items():</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length==</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>length=value</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>length!=value:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight><highlight class="stringliteral">&quot;Length<sp/>of<sp/>dataset<sp/>&apos;{0}&apos;<sp/>is<sp/>inconsistent<sp/>with<sp/>the<sp/>others<sp/>in<sp/>the<sp/>target<sp/>group!<sp/>(length<sp/>was<sp/>{1};<sp/>previous<sp/>dataset<sp/>had<sp/>length={2})&quot;</highlight><highlight class="normal">.format(key,value,length))<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length==</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>No<sp/>datasets<sp/>found;<sp/>manually<sp/>set<sp/>length<sp/>to<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>length<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>length<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">copy_dset(indset,outdset,nextempty,basemsg=&quot;&quot;):</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/>lengthtocopy<sp/>=<sp/>indset.shape[0]</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/>chunksleft<sp/>=<sp/>math.ceil(lengthtocopy/float(chunksize))</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/>remainder<sp/>=<sp/>lengthtocopy<sp/>%<sp/>chunksize</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/>start<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/>stride<sp/>=<sp/>chunksize</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/>Nchunks=chunksleft</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/>while(chunksleft!=0):</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if(chunksleft<sp/>%<sp/>1<sp/>==<sp/>0):<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys.stdout.write(</highlight><highlight class="stringliteral">&quot;{0}:<sp/>{1}%<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\r&quot;</highlight><highlight class="normal">.format(basemsg,int(100*(Nchunks-chunksleft)/Nchunks)))</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys.stdout.flush()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if(remainder!=0<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>chunksleft==1):</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stride=remainder</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>outdset[nextempty+start:nextempty+start+stride]<sp/>=<sp/>indset[start:start+stride]</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>start+=stride</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>chunksleft-=1</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">#<sp/>As<sp/>above,<sp/>but<sp/>copied<sp/>the<sp/>whole<sp/>input<sp/>dataset<sp/>into<sp/>memory<sp/>before<sp/>writing<sp/>it<sp/>out</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>is<sp/>mainly<sp/>for<sp/>performance<sp/>comparison<sp/>purposes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">copy_dset_whole(indset,outdset,nextempty,basemsg=&quot;&quot;):</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/>lengthtocopy<sp/>=<sp/>indset.shape[0]</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/>start<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/>sys.stdout.write(</highlight><highlight class="stringliteral">&quot;{0}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\r&quot;</highlight><highlight class="normal">.format(basemsg))</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/>sys.stdout.flush()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/>outdset[nextempty:nextempty+lengthtocopy]<sp/>=<sp/>indset</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Combine<sp/>two<sp/>integers<sp/>into<sp/>one<sp/>integer<sp/>with<sp/>unique<sp/>mapping</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">cantor_pairing(x,y):</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(x+y)*(x+y+1)//2<sp/>+<sp/>y</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Check<sp/>for<sp/>duplicate<sp/>entries<sp/>in<sp/>datasets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">check_for_duplicates(fout,group):</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/>pointIDs_out<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>fout[group][</highlight><highlight class="stringliteral">&quot;pointID&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/>mpiranks_out<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>fout[group][</highlight><highlight class="stringliteral">&quot;MPIrank&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/>pointIDs_isvalid_out<sp/>=<sp/>np.array(fout[group][</highlight><highlight class="stringliteral">&quot;pointID_isvalid&quot;</highlight><highlight class="normal">][:],dtype=np.bool)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/>mpiranks_isvalid_out<sp/>=<sp/>np.array(fout[group][</highlight><highlight class="stringliteral">&quot;MPIrank_isvalid&quot;</highlight><highlight class="normal">][:],dtype=np.bool)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/>mask_out<sp/>=<sp/>(pointIDs_isvalid_out<sp/>&amp;<sp/>mpiranks_isvalid_out)<sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>convert<sp/>entries<sp/>to<sp/>single<sp/>values<sp/>to<sp/>facilitate<sp/>fast<sp/>comparison</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/>IDs_out<sp/>=<sp/>cantor_pairing(<sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>np.array(pointIDs_out[mask_out],dtype=np.longlong),</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>np.array(mpiranks_out[mask_out],dtype=np.longlong)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/>ids<sp/><sp/>=<sp/>IDs_out</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/>pid<sp/><sp/>=<sp/>pointIDs_out[mask_out]</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/>rank<sp/>=<sp/>mpiranks_out[mask_out]</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/>error<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ID,p,r<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>zip(ids,pid,rank):</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if(p==1<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>r==0):</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>Spotted<sp/>first<sp/>entry<sp/>({0},{1})&quot;</highlight><highlight class="normal">.format(r,p))</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Nmatches<sp/>=<sp/>np.sum(ID==ids)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>Nmatches&gt;1:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>Error!<sp/>ID&quot;</highlight><highlight class="normal">,<sp/>ID,<sp/></highlight><highlight class="stringliteral">&quot;is<sp/>duplicated<sp/>{0}<sp/>times!&quot;</highlight><highlight class="normal">.format(Nmatches))</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matches<sp/>=<sp/>(p==pid)<sp/>&amp;<sp/>(r==rank)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Nmatches2<sp/>=<sp/>np.sum(matches)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>Nmatches2&gt;1:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>...MPIrank/pointID<sp/>({0},{1})<sp/>duplicate<sp/>count:<sp/>{2}&quot;</highlight><highlight class="normal">.format(r,p,Nmatches2))</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dup_locs<sp/>=<sp/>np.where(matches)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>Indices<sp/>of<sp/>duplicates<sp/>are:&quot;</highlight><highlight class="normal">,<sp/>dup_locs)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>...No<sp/>duplicate<sp/>pid<sp/>and<sp/>rank<sp/>pairs<sp/>detected!<sp/>This<sp/>seems<sp/>to<sp/>indicate<sp/>that<sp/>something<sp/>is<sp/>screwed<sp/>up<sp/>in<sp/>the<sp/>Cantor<sp/>pairing&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>error==</highlight><highlight class="keyword">True</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight><highlight class="stringliteral">&quot;Duplicates<sp/>detected<sp/>in<sp/>output<sp/>dataset!&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Printers/scripts/hdf5tools.py"/>
+  </compounddef>
+</doxygen>

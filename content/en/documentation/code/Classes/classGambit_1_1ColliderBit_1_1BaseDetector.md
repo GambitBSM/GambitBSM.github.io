@@ -4,8 +4,7 @@ description: 'An abstract base class for detector simulators within ColliderBit.
 
 ---
 
-
-
+# Gambit::ColliderBit::BaseDetector
 
 
 
@@ -93,4 +92,4 @@ Perform the actual simulation on the next collider event.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

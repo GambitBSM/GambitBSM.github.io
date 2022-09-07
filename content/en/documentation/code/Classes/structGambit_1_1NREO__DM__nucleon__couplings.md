@@ -4,8 +4,7 @@ description: 'Container for effective non-relativistic DM-nucleon Wilson coeffic
 
 ---
 
-
-
+# Gambit::NREO_DM_nucleon_couplings
 
 
 
@@ -22,7 +21,7 @@ Container for effective non-relativistic DM-nucleon Wilson coefficients.
 | -------------- | -------------- |
 | | **[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#function-nreo-dm-nucleon-couplings)**()<br>Default [NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) constructor.  |
 | | **[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#function-nreo-dm-nucleon-couplings)**(int CPT)<br>Default [NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) constructor.  |
-| | **[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#function-nreo-dm-nucleon-couplings)**(const ModelParameters & pars)<br>[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) constuctor from ModelParameters object.  |
+| | **[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#function-nreo-dm-nucleon-couplings)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & pars)<br>[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) constuctor from [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) object.  |
 | | **[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/#function-nreo-dm-nucleon-couplings)**(const [Models::safe_param_map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/)< [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & pars)<br>[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) constuctor from functor 'Params', i.e. 'safe_param_map' used to hold collected model parameters.  |
 
 ## Public Attributes
@@ -61,7 +60,7 @@ NREO_DM_nucleon_couplings(
 )
 ```
 
-[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) constuctor from ModelParameters object. 
+[NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) constuctor from [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) object. 
 
 ### function NREO_DM_nucleon_couplings
 
@@ -99,4 +98,4 @@ std::map< int, double > c1;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

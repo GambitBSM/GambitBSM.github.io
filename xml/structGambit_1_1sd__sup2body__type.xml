@@ -4,7 +4,7 @@
     <compoundname>Gambit::sd_sup2body_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1sd__sup2body__type_1ad0d013f84f14466ca55ea97c9f50e503" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_sup2body_type::brsuplnup</definition>
         <argsstring></argsstring>
         <name>brsuplnup</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="424" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="424" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sup2body__type_1a57ee6ecb059e7e93196ccbb7bb10534d" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sup2body_type::brsuplcdow</definition>
         <argsstring></argsstring>
         <name>brsuplcdow</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="426" column="17" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="426" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sup2body__type_1a1c03ae3c8cdab95f0d5605acc1102f87" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_sup2body_type::brsuprnup</definition>
         <argsstring></argsstring>
         <name>brsuprnup</name>
@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="427" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="427" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sup2body__type_1ae1ab5cd82f8890971acdc8566d92235a" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sup2body_type::brsuprcdow</definition>
         <argsstring></argsstring>
         <name>brsuprcdow</name>
@@ -92,6 +92,28 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; Fdouble, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 4 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_sup2body_type</label>
+        <link refid="structGambit_1_1sd__sup2body__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brsuplnup</edgelabel>
+          <edgelabel>brsuprnup</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>brsuplcdow</edgelabel>
+          <edgelabel>brsuprcdow</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="422" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="423" bodyend="430"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__sup2body__type_1a57ee6ecb059e7e93196ccbb7bb10534d" prot="public" virt="non-virtual"><scope>Gambit::sd_sup2body_type</scope><name>brsuplcdow</name></member>

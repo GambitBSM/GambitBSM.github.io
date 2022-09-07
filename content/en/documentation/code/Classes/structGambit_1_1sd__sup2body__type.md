@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::sd_sup2body_type
 
 
 
@@ -18,11 +17,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 4 > | **[brsuplnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplnup)**  |
-| Farray< Fdouble, 1, 2 > | **[brsuplcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplcdow)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsuplnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplnup)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsuplcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplcdow)**  |
 | Fdouble | **[brsuplglui](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplglui)**  |
-| Farray< Fdouble, 1, 4 > | **[brsuprnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprnup)**  |
-| Farray< Fdouble, 1, 2 > | **[brsuprcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprcdow)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsuprnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprnup)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsuprcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprcdow)**  |
 | Fdouble | **[brsuprglui](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprglui)**  |
 
 ## Public Attributes Documentation
@@ -71,4 +70,4 @@ Fdouble brsuprglui;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

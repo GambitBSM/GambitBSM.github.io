@@ -5,7 +5,7 @@
     <includes refid="AnalysisContainer_8hpp" local="no">AnalysisContainer.hpp</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a004407c9e910847391ef49cb95f64b4d" prot="private" static="no" mutable="no">
-        <type>std::map&lt; str, std::map&lt; str, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &gt;</type>
         <definition>std::map&lt;str,std::map&lt;str,Analysis*&gt; &gt; Gambit::ColliderBit::AnalysisContainer::analyses_map</definition>
         <argsstring></argsstring>
         <name>analyses_map</name>
@@ -20,7 +20,7 @@
         <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="63" column="18" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a560f5a91a1d9f076ca42ce499028ccbd" prot="private" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::ColliderBit::AnalysisContainer::current_collider</definition>
         <argsstring></argsstring>
         <name>current_collider</name>
@@ -65,7 +65,7 @@
         <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="72" column="13" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a64dd9c7c9371ade021d9524717085af2" prot="private" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::ColliderBit::AnalysisContainer::base_key</definition>
         <argsstring></argsstring>
         <name>base_key</name>
@@ -82,7 +82,7 @@
       </sectiondef>
       <sectiondef kind="private-static-attrib">
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a13184532a38cb7ccb224df408a2c2e45" prot="private" static="yes" mutable="no">
-        <type>std::map&lt; str, std::map&lt; int, <ref refid="classGambit_1_1ColliderBit_1_1AnalysisContainer" kindref="compound">AnalysisContainer</ref> * &gt; &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::map&lt; int, <ref refid="classGambit_1_1ColliderBit_1_1AnalysisContainer" kindref="compound">AnalysisContainer</ref> * &gt; &gt;</type>
         <definition>std::map&lt; str, std::map&lt; int, AnalysisContainer * &gt; &gt; Gambit::ColliderBit::AnalysisContainer::instances_map</definition>
         <argsstring></argsstring>
         <name>instances_map</name>
@@ -136,7 +136,7 @@
         <name>register_thread</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::register_thread</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>base_key_in</defname>
         </param>
         <briefdescription>
@@ -172,7 +172,7 @@
         <name>set_current_collider</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::set_current_collider</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <briefdescription>
@@ -186,7 +186,7 @@
         <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="97" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="267" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a45dc9ed85147d9eb4d4e4cf0f1a31d27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::ColliderBit::AnalysisContainer::get_current_collider</definition>
         <argsstring>() const</argsstring>
         <name>get_current_collider</name>
@@ -208,7 +208,7 @@
         <name>has_analyses</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::has_analyses</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <briefdescription>
@@ -242,11 +242,11 @@
         <name>init</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::init</qualifiedname>
         <param>
-          <type>const std::vector&lt; str &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
           <defname>analysis_names</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <briefdescription>
@@ -265,7 +265,7 @@
         <name>init</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::init</qualifiedname>
         <param>
-          <type>const std::vector&lt; str &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
           <defname>analysis_names</defname>
         </param>
         <briefdescription>
@@ -284,11 +284,11 @@
         <name>reset</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::reset</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>analysis_name</defname>
         </param>
         <briefdescription>
@@ -307,7 +307,7 @@
         <name>reset</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::reset</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <briefdescription>
@@ -356,11 +356,11 @@
         <name>get_analysis_pointer</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::get_analysis_pointer</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>analysis_name</defname>
         </param>
         <briefdescription>
@@ -373,13 +373,13 @@
         <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="122" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="358" bodyend="361"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a5c50e503e4640ce8eae408e167e53cb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::map&lt; str, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &amp;</type>
+        <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &amp;</type>
         <definition>const std::map&lt; str, Analysis * &gt; &amp; Gambit::ColliderBit::AnalysisContainer::get_collider_analyses_map</definition>
         <argsstring>(str) const</argsstring>
         <name>get_collider_analyses_map</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::get_collider_analyses_map</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <briefdescription>
@@ -392,7 +392,7 @@
         <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="124" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="364" bodyend="367"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1ae918282166ace09e2491f4f529962350" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::map&lt; str, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &amp;</type>
+        <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &amp;</type>
         <definition>const std::map&lt; str, Analysis * &gt; &amp; Gambit::ColliderBit::AnalysisContainer::get_current_analyses_map</definition>
         <argsstring>() const</argsstring>
         <name>get_current_analyses_map</name>
@@ -407,7 +407,7 @@
         <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="126" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="370" bodyend="373"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1afc01bb6f68a4b87e59e0fbc0e082f0c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::map&lt; str, std::map&lt; str, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &gt; &amp;</type>
+        <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &gt; &amp;</type>
         <definition>const std::map&lt; str, std::map&lt; str, Analysis * &gt; &gt; &amp; Gambit::ColliderBit::AnalysisContainer::get_full_analyses_map</definition>
         <argsstring>() const</argsstring>
         <name>get_full_analyses_map</name>
@@ -432,11 +432,11 @@
           <defname>event</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>analysis_name</defname>
         </param>
         <briefdescription>
@@ -459,7 +459,7 @@
           <defname>event</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <briefdescription>
@@ -498,11 +498,11 @@
         <name>collect_and_add_signal</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::collect_and_add_signal</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>analysis_name</defname>
         </param>
         <briefdescription>
@@ -522,7 +522,7 @@
         <name>collect_and_add_signal</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::collect_and_add_signal</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <briefdescription>
@@ -556,11 +556,11 @@
         <name>scale</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::scale</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>analysis_name</defname>
         </param>
         <param>
@@ -583,7 +583,7 @@
         <name>scale</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisContainer::scale</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>collider_name</defname>
         </param>
         <param>

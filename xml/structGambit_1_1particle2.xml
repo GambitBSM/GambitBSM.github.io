@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SPheno.hpp" line="74" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SPheno.hpp" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1particle2_1a0b8e67ae833f99ccd979ddc555baaf84" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Finteger, 1, 200, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Finteger, 1, 200, 1, 2 &gt;</type>
         <definition>Farray&lt;Finteger,1,200,1,2&gt; Gambit::particle2::id2</definition>
         <argsstring></argsstring>
         <name>id2</name>
@@ -74,7 +74,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SPheno.hpp" line="75" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/SPheno.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1particle2_1a31bc2efb3844120fa19ca3c4b8e4cca1" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Freal8, 1, 200 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Freal8, 1, 200 &gt;</type>
         <definition>Farray&lt;Freal8,1,200&gt; Gambit::particle2::gi2</definition>
         <argsstring></argsstring>
         <name>gi2</name>
@@ -88,7 +88,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SPheno.hpp" line="76" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/SPheno.hpp" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1particle2_1ac00ead477eb101d9e2ee7c7fd701686f" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Freal8, 1, 200 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Freal8, 1, 200 &gt;</type>
         <definition>Farray&lt;Freal8,1,200&gt; Gambit::particle2::bi2</definition>
         <argsstring></argsstring>
         <name>bi2</name>
@@ -106,6 +106,27 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Finteger, 1, 200, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="3">
+        <label>Gambit::Farray&lt; Freal8, 1, 200 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::particle2</label>
+        <link refid="structGambit_1_1particle2"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>id2</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>bi2</edgelabel>
+          <edgelabel>gi2</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SPheno.hpp" line="69" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SPheno.hpp" bodystart="70" bodyend="78"/>
     <listofallmembers>
       <member refid="structGambit_1_1particle2_1ac00ead477eb101d9e2ee7c7fd701686f" prot="public" virt="non-virtual"><scope>Gambit::particle2</scope><name>bi2</name></member>

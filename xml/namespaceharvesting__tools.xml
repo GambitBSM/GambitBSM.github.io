@@ -1,0 +1,693 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceharvesting__tools" kind="namespace" language="Python">
+    <compoundname>harvesting_tools</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="harvesting__tools_8py_1aae813c59197a606570f91ef1ddcb2b61" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string harvesting_tools.default_bossed_versions</definition>
+        <argsstring></argsstring>
+        <name>default_bossed_versions</name>
+        <qualifiedname>harvesting_tools.default_bossed_versions</qualifiedname>
+        <initializer>=  &quot;./Backends/include/gambit/Backends/default_bossed_versions.hpp&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="49" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="harvesting__tools_8py_1a3ebae05e20d4612704b51e6ae754bdfb" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string harvesting_tools.equiv_config</definition>
+        <argsstring></argsstring>
+        <name>equiv_config</name>
+        <qualifiedname>harvesting_tools.equiv_config</qualifiedname>
+        <initializer>=  &quot;./config/resolution_type_equivalency_classes.yaml&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="50" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="harvesting__tools_8py_1a83e8765a2331e28e53b6894c04e7d231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.get_default_boss_namespaces</definition>
+        <argsstring>()</argsstring>
+        <name>get_default_boss_namespaces</name>
+        <qualifiedname>harvesting_tools.get_default_boss_namespaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="53" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="53" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a429319e43fdba8706a378519e9467780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.get_type_equivalencies</definition>
+        <argsstring>(nses)</argsstring>
+        <name>get_type_equivalencies</name>
+        <qualifiedname>harvesting_tools.get_type_equivalencies</qualifiedname>
+        <param>
+          <type>nses</type>
+          <defname>nses</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="68" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="68" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a5e02c182aa4a9135df8a4401e0ef18b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.comment_remover</definition>
+        <argsstring>(text)</argsstring>
+        <name>comment_remover</name>
+        <qualifiedname>harvesting_tools.comment_remover</qualifiedname>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="102" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="102" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a2857eedbce8e4062db0d4d5d31ee7489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.readlines_nocomments</definition>
+        <argsstring>(f)</argsstring>
+        <name>readlines_nocomments</name>
+        <qualifiedname>harvesting_tools.readlines_nocomments</qualifiedname>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="116" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="116" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1acd97663980b79270665cb1b1bfa38bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.neatsplit</definition>
+        <argsstring>(regex, string)</argsstring>
+        <name>neatsplit</name>
+        <qualifiedname>harvesting_tools.neatsplit</qualifiedname>
+        <param>
+          <type>regex</type>
+          <defname>regex</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>string</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="121" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1acd848d2022bf6e7d6909e4c24e1fd5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.excluded</definition>
+        <argsstring>(string, st)</argsstring>
+        <name>excluded</name>
+        <qualifiedname>harvesting_tools.excluded</qualifiedname>
+        <param>
+          <type>string</type>
+          <defname>string</defname>
+        </param>
+        <param>
+          <type>st</type>
+          <defname>st</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="125" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1af849108b400bd8f19a3dc6c5e9bdbb7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.sorted_nicely</definition>
+        <argsstring>(l)</argsstring>
+        <name>sorted_nicely</name>
+        <qualifiedname>harvesting_tools.sorted_nicely</qualifiedname>
+        <param>
+          <type>l</type>
+          <defname>l</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Sort the given iterable in the way that humans expect.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="131" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="131" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1ae885ac3d262f9b465480b6f984b45701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.check_for_declaration</definition>
+        <argsstring>(input_snippet, module, all_modules, local_namespace, candidate_type)</argsstring>
+        <name>check_for_declaration</name>
+        <qualifiedname>harvesting_tools.check_for_declaration</qualifiedname>
+        <param>
+          <type>input_snippet</type>
+          <defname>input_snippet</defname>
+        </param>
+        <param>
+          <type>module</type>
+          <defname>module</defname>
+        </param>
+        <param>
+          <type>all_modules</type>
+          <defname>all_modules</defname>
+        </param>
+        <param>
+          <type>local_namespace</type>
+          <defname>local_namespace</defname>
+        </param>
+        <param>
+          <type>candidate_type</type>
+          <defname>candidate_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="138" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="138" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a410e063be4502a3d5527b069f744a5f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.check_for_namespace</definition>
+        <argsstring>(input_snippet, local_namespace)</argsstring>
+        <name>check_for_namespace</name>
+        <qualifiedname>harvesting_tools.check_for_namespace</qualifiedname>
+        <param>
+          <type>input_snippet</type>
+          <defname>input_snippet</defname>
+        </param>
+        <param>
+          <type>local_namespace</type>
+          <defname>local_namespace</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="188" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="188" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a8ba87e2de31ca7d07be1d36378779640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.addifheader</definition>
+        <argsstring>(line, headerset, exclude_set, verbose=False)</argsstring>
+        <name>addifheader</name>
+        <qualifiedname>harvesting_tools.addifheader</qualifiedname>
+        <param>
+          <type>line</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>headerset</type>
+          <defname>headerset</defname>
+        </param>
+        <param>
+          <type>exclude_set</type>
+          <defname>exclude_set</defname>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="205" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="205" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a1f4867425f69a28697ec1bf8d1d7c804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.update_module</definition>
+        <argsstring>(line, module)</argsstring>
+        <name>update_module</name>
+        <qualifiedname>harvesting_tools.update_module</qualifiedname>
+        <param>
+          <type>line</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>module</type>
+          <defname>module</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="216" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="216" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1ab830b0a3fa215628d780cc5e213395b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.first_simple_type_equivalent</definition>
+        <argsstring>(candidate_in, equivs, nses, existing)</argsstring>
+        <name>first_simple_type_equivalent</name>
+        <qualifiedname>harvesting_tools.first_simple_type_equivalent</qualifiedname>
+        <param>
+          <type>candidate_in</type>
+          <defname>candidate_in</defname>
+        </param>
+        <param>
+          <type>equivs</type>
+          <defname>equivs</defname>
+        </param>
+        <param>
+          <type>nses</type>
+          <defname>nses</defname>
+        </param>
+        <param>
+          <type>existing</type>
+          <defname>existing</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="228" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="228" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a4c697685a95d3ce1ae3a7431cd26d7e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.strip_ws</definition>
+        <argsstring>(s, qualifiers)</argsstring>
+        <name>strip_ws</name>
+        <qualifiedname>harvesting_tools.strip_ws</qualifiedname>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type>qualifiers</type>
+          <defname>qualifiers</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="263" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="263" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a9ab871629703019129fbea37cf1e33e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.addiffunctormacro</definition>
+        <argsstring>(line, module, all_modules, typedict, typeheaders, intrinsic_types, exclude_types, equiv_classes, equiv_ns, verbose=False)</argsstring>
+        <name>addiffunctormacro</name>
+        <qualifiedname>harvesting_tools.addiffunctormacro</qualifiedname>
+        <param>
+          <type>line</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>module</type>
+          <defname>module</defname>
+        </param>
+        <param>
+          <type>all_modules</type>
+          <defname>all_modules</defname>
+        </param>
+        <param>
+          <type>typedict</type>
+          <defname>typedict</defname>
+        </param>
+        <param>
+          <type>typeheaders</type>
+          <defname>typeheaders</defname>
+        </param>
+        <param>
+          <type>intrinsic_types</type>
+          <defname>intrinsic_types</defname>
+        </param>
+        <param>
+          <type>exclude_types</type>
+          <defname>exclude_types</defname>
+        </param>
+        <param>
+          <type>equiv_classes</type>
+          <defname>equiv_classes</defname>
+        </param>
+        <param>
+          <type>equiv_ns</type>
+          <defname>equiv_ns</defname>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="271" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="271" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1aa480cc5bff7c9e7c6a5c0262083e42ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.addifbefunctormacro</definition>
+        <argsstring>(line, be_typeset, type_pack_set, equiv_classes, equiv_ns, verbose=False)</argsstring>
+        <name>addifbefunctormacro</name>
+        <qualifiedname>harvesting_tools.addifbefunctormacro</qualifiedname>
+        <param>
+          <type>line</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>be_typeset</type>
+          <defname>be_typeset</defname>
+        </param>
+        <param>
+          <type>type_pack_set</type>
+          <defname>type_pack_set</defname>
+        </param>
+        <param>
+          <type>equiv_classes</type>
+          <defname>equiv_classes</defname>
+        </param>
+        <param>
+          <type>equiv_ns</type>
+          <defname>equiv_ns</defname>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="352" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="352" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a5f2cbdbb99510a0ea64ad8ce9d5c3aa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.get_headers</definition>
+        <argsstring>(path, header_set, exclude_set, verbose=False)</argsstring>
+        <name>get_headers</name>
+        <qualifiedname>harvesting_tools.get_headers</qualifiedname>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <param>
+          <type>header_set</type>
+          <defname>header_set</defname>
+        </param>
+        <param>
+          <type>exclude_set</type>
+          <defname>exclude_set</defname>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Parse the file at &apos;path&apos; and add any headers that are &quot;include&quot;ed therin to the set &apos;header_set&apos;</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="444" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="444" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a6bf92d1b4ff35b6dcb6b0b1f648637a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.find_and_harvest_headers</definition>
+        <argsstring>(header_set, fullheadlist, exclude_set, dir_exclude_set, verbose=False)</argsstring>
+        <name>find_and_harvest_headers</name>
+        <qualifiedname>harvesting_tools.find_and_harvest_headers</qualifiedname>
+        <param>
+          <type>header_set</type>
+          <defname>header_set</defname>
+        </param>
+        <param>
+          <type>fullheadlist</type>
+          <defname>fullheadlist</defname>
+        </param>
+        <param>
+          <type>exclude_set</type>
+          <defname>exclude_set</defname>
+        </param>
+        <param>
+          <type>dir_exclude_set</type>
+          <defname>dir_exclude_set</defname>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Locate &apos;init_headers&apos; in gambit source tree, then read through them and add any headers that are &quot;include&quot;ed in them to headlist
+Args:
+header_set - set of file names of headers to parse
+fullheadlist - list to which full paths of both init_headers, and any subsequently found headers, should be added.
+exclude_set - set of names of headers to ignore if we find them.
+dir_exclude_set - set of directory names to skip over during the os.walk
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="451" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="451" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1af37366de901bc041b49fb48105e28d0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.retrieve_rollcall_headers</definition>
+        <argsstring>(verbose, install_dir, excludes)</argsstring>
+        <name>retrieve_rollcall_headers</name>
+        <qualifiedname>harvesting_tools.retrieve_rollcall_headers</qualifiedname>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+        </param>
+        <param>
+          <type>install_dir</type>
+          <defname>install_dir</defname>
+        </param>
+        <param>
+          <type>excludes</type>
+          <defname>excludes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="495" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="495" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a33d87b3966c08137e3d1a39fbc99e410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.retrieve_module_type_headers</definition>
+        <argsstring>(verbose, install_dir, excludes)</argsstring>
+        <name>retrieve_module_type_headers</name>
+        <qualifiedname>harvesting_tools.retrieve_module_type_headers</qualifiedname>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+        </param>
+        <param>
+          <type>install_dir</type>
+          <defname>install_dir</defname>
+        </param>
+        <param>
+          <type>excludes</type>
+          <defname>excludes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="518" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="518" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a703604d69af94886b66fffd5a68d5932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.get_all_files_with_ext</definition>
+        <argsstring>(verbose, starting_dir, ext_set, kind)</argsstring>
+        <name>get_all_files_with_ext</name>
+        <qualifiedname>harvesting_tools.get_all_files_with_ext</qualifiedname>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+        </param>
+        <param>
+          <type>starting_dir</type>
+          <defname>starting_dir</defname>
+        </param>
+        <param>
+          <type>ext_set</type>
+          <defname>ext_set</defname>
+        </param>
+        <param>
+          <type>kind</type>
+          <defname>kind</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="538" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="538" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1aa57c6fbabc9b919300f6e769faba5b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.retrieve_generic_headers</definition>
+        <argsstring>(verbose, starting_dir, kind, excludes, exclude_list=[])</argsstring>
+        <name>retrieve_generic_headers</name>
+        <qualifiedname>harvesting_tools.retrieve_generic_headers</qualifiedname>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+        </param>
+        <param>
+          <type>starting_dir</type>
+          <defname>starting_dir</defname>
+        </param>
+        <param>
+          <type>kind</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>excludes</type>
+          <defname>excludes</defname>
+        </param>
+        <param>
+          <type>exclude_list</type>
+          <defname>exclude_list</defname>
+          <defval>[]</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="549" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="549" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a93f0ba3e54509bc86c819ff01fbb6353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.same</definition>
+        <argsstring>(f1, f2)</argsstring>
+        <name>same</name>
+        <qualifiedname>harvesting_tools.same</qualifiedname>
+        <param>
+          <type>f1</type>
+          <defname>f1</defname>
+        </param>
+        <param>
+          <type>f2</type>
+          <defname>f2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="566" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="566" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1af8256be7ad079e7eca6e5958a8400934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.update_only_if_different</definition>
+        <argsstring>(existing, candidate, verbose=True)</argsstring>
+        <name>update_only_if_different</name>
+        <qualifiedname>harvesting_tools.update_only_if_different</qualifiedname>
+        <param>
+          <type>existing</type>
+          <defname>existing</defname>
+        </param>
+        <param>
+          <type>candidate</type>
+          <defname>candidate</defname>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="587" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="587" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="harvesting__tools_8py_1a50d71f7b664d62bd8b34c7c304b958d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def harvesting_tools.make_module_rollcall</definition>
+        <argsstring>(rollcall_headers, verbose)</argsstring>
+        <name>make_module_rollcall</name>
+        <qualifiedname>harvesting_tools.make_module_rollcall</qualifiedname>
+        <param>
+          <type>rollcall_headers</type>
+          <defname>rollcall_headers</defname>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/harvesting_tools.py" line="599" column="1" bodyfile="Utils/scripts/harvesting_tools.py" bodystart="599" bodyend="644"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/scripts/harvesting_tools.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

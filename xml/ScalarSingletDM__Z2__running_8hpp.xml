@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="ScalarSingletDM__Z2__running_8hpp" kind="file" language="C++">
+    <compoundname>ScalarSingletDM_Z2_running.hpp</compoundname>
+    <includedby refid="Models_2src_2models_2ScalarSingletDM_8cpp" local="yes">ScalarSingletDM.cpp</includedby>
+    <includedby refid="ScalarSingletDM__Z2_8hpp" local="yes">ScalarSingletDM_Z2.hpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>ScalarSingletDM_Z2.hpp</label>
+        <link refid="ScalarSingletDM__Z2_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>ScalarSingletDM_Z2_running.hpp</label>
+        <link refid="ScalarSingletDM__Z2__running_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ScalarSingletDM__Z2__running_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>ScalarSingletDM_Z2_running</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scalar singlet dark matter with running mass and quartic coupling <hruler/>
+</para>
+<sect1 id="ScalarSingletDM__Z2__running_8hpp_1autotoc_md51">
+<title>Authors</title>
+<para>(add name and date if you modify) <simplesect kind="author"><para>Christoph Weniger </para>
+</simplesect>
+<simplesect kind="date"><para>2014 January</para>
+</simplesect>
+<simplesect kind="author"><para>James McKay </para>
+</simplesect>
+<simplesect kind="date"><para>2015 September</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2018 Sep</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/ScalarSingletDM_Z2_running.hpp" line="27" column="9" bodyfile="Models/include/gambit/Models/models/ScalarSingletDM_Z2_running.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///<sp/><sp/>Scalar<sp/>singlet<sp/>dark<sp/>matter<sp/>with<sp/>running<sp/>mass</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>and<sp/>quartic<sp/>coupling</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>Authors</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>=======</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify)</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>\author<sp/>Christoph<sp/>Weniger</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2014<sp/>January</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>\author<sp/>James<sp/>McKay</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>September</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///<sp/><sp/>\date<sp/>2018<sp/>Sep</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__ScalarSingletDM_Z2_running_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ScalarSingletDM_Z2_running_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>ScalarSingletDM_Z2_running</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>DEFINEPARS(mS,<sp/>lambda_hS,<sp/>lambda_S)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Models/include/gambit/Models/models/ScalarSingletDM_Z2_running.hpp"/>
+  </compounddef>
+</doxygen>

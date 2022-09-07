@@ -4,12 +4,16 @@
     <compoundname>SpecBit_types.hpp</compoundname>
     <includes local="no">string</includes>
     <includes local="no">vector</includes>
-    <includes local="yes">gambit/Utils/util_types.hpp</includes>
+    <includes refid="util__types_8hpp" local="yes">gambit/Utils/util_types.hpp</includes>
     <includedby refid="SpecBit__VS_8cpp" local="yes">SpecBit_VS.cpp</includedby>
     <includedby refid="SpecBit__VS__rollcall_8hpp" local="yes">SpecBit_VS_rollcall.hpp</includedby>
     <includedby refid="SpecBit__rollcall_8hpp" local="yes">SpecBit_rollcall.hpp</includedby>
     <includedby refid="SpecBit__types_8cpp" local="yes">SpecBit_types.cpp</includedby>
     <incdepgraph>
+      <node id="34">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
       <node id="1">
         <label>SpecBit_types.hpp</label>
         <link refid="SpecBit__types_8hpp"/>
@@ -20,11 +24,247 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
+      <node id="13">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="30">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
       <node id="4">
         <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>array</label>
+      </node>
+      <node id="21">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="15">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="23">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="24">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="14">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="39">
+        <label>cassert</label>
+      </node>
+      <node id="9">
+        <label>complex</label>
+      </node>
+      <node id="8">
+        <label>cstring</label>
+      </node>
+      <node id="44">
+        <label>deque</label>
+      </node>
+      <node id="32">
+        <label>exception</label>
+      </node>
+      <node id="43">
+        <label>forward_list</label>
+      </node>
+      <node id="37">
+        <label>fstream</label>
+      </node>
+      <node id="36">
+        <label>iostream</label>
+      </node>
+      <node id="42">
+        <label>list</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>omp.h</label>
+      </node>
+      <node id="31">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
       </node>
       <node id="2">
         <label>string</label>
+      </node>
+      <node id="38">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>unistd.h</label>
+      </node>
+      <node id="40">
+        <label>unordered_map</label>
+      </node>
+      <node id="41">
+        <label>unordered_set</label>
+      </node>
+      <node id="33">
+        <label>utility</label>
       </node>
       <node id="3">
         <label>vector</label>
@@ -195,7 +435,7 @@
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/util_types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__types_8hpp" kindref="compound">gambit/Utils/util_types.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
 <codeline lineno="35"><highlight class="normal">{</highlight></codeline>
@@ -271,28 +511,28 @@
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SpecBit_1_1VevaciousResultContainer" kindref="compound">VevaciousResultContainer</ref>(){};</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clear<sp/>all<sp/>maps<sp/>and<sp/>set<sp/>value<sp/>of<sp/>lifetime<sp/>and<sp/>thermalProbability<sp/>to<sp/>-1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SpecBit_1_1VevaciousResultContainer_1a6164e63e6ffd634a33c8d0a94425e74d" kindref="member">clear_results</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>panic_vaccum,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pathFinder_number);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SpecBit_1_1VevaciousResultContainer_1a6164e63e6ffd634a33c8d0a94425e74d" kindref="member">clear_results</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>panic_vaccum,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pathFinder_number);</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setter<sp/>functions<sp/>for<sp/>results<sp/>lifetime,<sp/>thermal<sp/>probability<sp/>&amp;<sp/>bounce<sp/>action<sp/>vectors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>straightPathGoodEnough<sp/>checks<sp/>wethere<sp/>the<sp/>action<sp/>of<sp/>drawing<sp/>a<sp/>straigh<sp/>path<sp/>between<sp/>the</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>physical<sp/>&amp;<sp/>panic<sp/>vacuum<sp/>is<sp/>already<sp/>below<sp/>the<sp/>action<sp/>threshold.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SpecBit_1_1VevaciousResultContainer_1a4bf0e0095555de41a785868ffaeba24d" kindref="member">set_results</ref><sp/>(str<sp/>panic_vaccum,<sp/>str<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SpecBit_1_1VevaciousResultContainer_1a4da3859b3801d98e20dde7ef98f3d52a" kindref="member">add_straightPathGoodEnough</ref>(str<sp/>panic_vacuum);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SpecBit_1_1VevaciousResultContainer_1a4bf0e0095555de41a785868ffaeba24d" kindref="member">set_results</ref><sp/>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>panic_vaccum,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1SpecBit_1_1VevaciousResultContainer_1a4da3859b3801d98e20dde7ef98f3d52a" kindref="member">add_straightPathGoodEnough</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>panic_vacuum);</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>map<sp/>containing<sp/>results<sp/>for<sp/>nearest/global<sp/>run</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_str_dbl<sp/>get_nearest_results()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[</highlight><highlight class="stringliteral">&quot;nearest&quot;</highlight><highlight class="normal">];}</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_str_dbl<sp/>get_global_results()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[</highlight><highlight class="stringliteral">&quot;global&quot;</highlight><highlight class="normal">];}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a98f19afeabdc4fcaa456c944cc19a50c" kindref="member">map_str_dbl</ref><sp/>get_nearest_results()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[</highlight><highlight class="stringliteral">&quot;nearest&quot;</highlight><highlight class="normal">];}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a98f19afeabdc4fcaa456c944cc19a50c" kindref="member">map_str_dbl</ref><sp/>get_global_results()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[</highlight><highlight class="stringliteral">&quot;global&quot;</highlight><highlight class="normal">];}</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>width,<sp/>lifetime<sp/>for<sp/>nearest/global<sp/>minimum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_width(str<sp/>panic_vacuum)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[panic_vacuum][</highlight><highlight class="stringliteral">&quot;width&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_lifetime(str<sp/>panic_vaccum)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[panic_vaccum][</highlight><highlight class="stringliteral">&quot;lifetime&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_width(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>panic_vacuum)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[panic_vacuum][</highlight><highlight class="stringliteral">&quot;width&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_lifetime(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>panic_vaccum)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[panic_vaccum][</highlight><highlight class="stringliteral">&quot;lifetime&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>thermal<sp/>probability<sp/>and<sp/>width<sp/>for<sp/>nearest/global<sp/>minimum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_thermalProbability(str<sp/>panic_vaccum)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[panic_vaccum][</highlight><highlight class="stringliteral">&quot;thermalProbability&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_thermalWidth(str<sp/>panic_vacuum)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[panic_vacuum][</highlight><highlight class="stringliteral">&quot;thermalWidth&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_thermalProbability(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>panic_vaccum)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[panic_vaccum][</highlight><highlight class="stringliteral">&quot;thermalProbability&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_thermalWidth(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>panic_vacuum)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_map[panic_vacuum][</highlight><highlight class="stringliteral">&quot;thermalWidth&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_str_map_str_dbl<sp/>result_map;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a89325f4443e809eee69d8f00d882c52f" kindref="member">map_str_map_str_dbl</ref><sp/>result_map;</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="132"><highlight class="normal">}</highlight></codeline>

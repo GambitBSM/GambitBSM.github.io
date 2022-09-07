@@ -74,7 +74,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/Prospino.hpp" line="33" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/Prospino.hpp" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1prospino__settings_1a8c2f2bbab6bf7fee6aa0b323e6f0ff0b" prot="public" static="no" mutable="no">
-        <type>Fstring&lt; 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref>&lt; 2 &gt;</type>
         <definition>Fstring&lt;2&gt; Gambit::prospino_settings::final_state_in</definition>
         <argsstring></argsstring>
         <name>final_state_in</name>
@@ -172,7 +172,7 @@
           <declname>i_error_in_input</declname>
         </param>
         <param>
-          <type>Fstring&lt; 2 &gt;</type>
+          <type><ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref>&lt; 2 &gt;</type>
           <declname>final_state_in_input</declname>
         </param>
         <param>
@@ -222,6 +222,25 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; char, 1, len &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Fstring&lt; 2 &gt;</label>
+        <link refid="classGambit_1_1Fstring"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::prospino_settings</label>
+        <link refid="classGambit_1_1prospino__settings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>final_state_in</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/Prospino.hpp" line="26" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/Prospino.hpp" bodystart="27" bodyend="61"/>
     <listofallmembers>
       <member refid="classGambit_1_1prospino__settings_1a2757bcfdd19b619b6520f9d3c7d628f1" prot="public" virt="non-virtual"><scope>Gambit::prospino_settings</scope><name>energy_in</name></member>

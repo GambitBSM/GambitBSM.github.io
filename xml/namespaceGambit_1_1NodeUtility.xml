@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1NodeUtility" kind="namespace" language="C++">
+    <compoundname>Gambit::NodeUtility</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1a28265ffea34e195f5fe796c8b4878186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>TYPE</type>
+        <definition>TYPE Gambit::NodeUtility::safeIntegerTypeCast</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>safeIntegerTypeCast</name>
+        <qualifiedname>Gambit::NodeUtility::safeIntegerTypeCast</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapper for integer type casts from a double in string representation. It does first try to safely convert the string to a double and then performs checks before casting to an integer type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="42" column="12" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="42" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1aa060f1db607442cf26d08b6895534da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::NodeUtility::autoExpandEnvironmentVariables</definition>
+        <argsstring>(std::string &amp;text)</argsstring>
+        <name>autoExpandEnvironmentVariables</name>
+        <qualifiedname>Gambit::NodeUtility::autoExpandEnvironmentVariables</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Expand environment variables in the given string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="79" column="12" bodyfile="Utils/src/yaml_node_utility.cpp" bodystart="28" bodyend="59" declfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" declline="79" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1a9bfffa60924c8a497e06977c2971edbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::NodeUtility::removeCharsFromString</definition>
+        <argsstring>(std::string &amp;text, const char *charsToRemove)</argsstring>
+        <name>removeCharsFromString</name>
+        <qualifiedname>Gambit::NodeUtility::removeCharsFromString</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>charsToRemove</declname>
+        </param>
+        <briefdescription>
+<para>Remove characters in the given string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="82" column="12" bodyfile="Utils/src/yaml_node_utility.cpp" bodystart="62" bodyend="68" declfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" declline="82" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1a2a6d9c333118207a3245495624993d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::NodeUtility::expandEnvironmentVariables</definition>
+        <argsstring>(const std::string &amp;input)</argsstring>
+        <name>expandEnvironmentVariables</name>
+        <qualifiedname>Gambit::NodeUtility::expandEnvironmentVariables</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Leave input alone and return new string, which has environment variables substituted and escpae characters removed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="86" column="19" bodyfile="Utils/src/yaml_node_utility.cpp" bodystart="72" bodyend="79" declfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" declline="86" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1afcbf6d3597c354d2cacd829a4115d019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>TYPE</type>
+        <definition>TYPE Gambit::NodeUtility::getNode</definition>
+        <argsstring>(const YAML::Node node)</argsstring>
+        <name>getNode</name>
+        <qualifiedname>Gambit::NodeUtility::getNode</qualifiedname>
+        <param>
+          <type>const YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapper for reading the node for a given type. Default case does nothing. However in some instances we want to catch the yamlcpp exception and try to interpret it, e.g. scientific notation numbers as integers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="92" column="12" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1afac5e2591bc053c9913ccd7a673ffa6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int Gambit::NodeUtility::getNode&lt; int &gt;</definition>
+        <argsstring>(const YAML::Node node)</argsstring>
+        <name>getNode&lt; int &gt;</name>
+        <qualifiedname>Gambit::NodeUtility::getNode&lt; int &gt;</qualifiedname>
+        <param>
+          <type>const YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows to read scientific notation integer numbers. If the number does not fit into the given type (here int) or is not an integer, this function will raise. This exception is then caught by getValue and handled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="98" column="14" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1ae2a82a616362df7f6c413cd8c52f8848" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>unsigned int</type>
+        <definition>unsigned int Gambit::NodeUtility::getNode&lt; unsigned int &gt;</definition>
+        <argsstring>(const YAML::Node node)</argsstring>
+        <name>getNode&lt; unsigned int &gt;</name>
+        <qualifiedname>Gambit::NodeUtility::getNode&lt; unsigned int &gt;</qualifiedname>
+        <param>
+          <type>const YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>See int specialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="106" column="23" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1ad07b46de1a076683d847be2d4c839d6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>long</type>
+        <definition>long Gambit::NodeUtility::getNode&lt; long &gt;</definition>
+        <argsstring>(const YAML::Node node)</argsstring>
+        <name>getNode&lt; long &gt;</name>
+        <qualifiedname>Gambit::NodeUtility::getNode&lt; long &gt;</qualifiedname>
+        <param>
+          <type>const YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>See int specialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="114" column="14" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1a548592efec10ea96465094d9a62af065" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>unsigned long</type>
+        <definition>unsigned long Gambit::NodeUtility::getNode&lt; unsigned long &gt;</definition>
+        <argsstring>(const YAML::Node node)</argsstring>
+        <name>getNode&lt; unsigned long &gt;</name>
+        <qualifiedname>Gambit::NodeUtility::getNode&lt; unsigned long &gt;</qualifiedname>
+        <param>
+          <type>const YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>See int specialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="122" column="23" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="122" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1aede44ee17be5db6bd4a89d2c6dd4c627" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>long long</type>
+        <definition>long long Gambit::NodeUtility::getNode&lt; long long &gt;</definition>
+        <argsstring>(const YAML::Node node)</argsstring>
+        <name>getNode&lt; long long &gt;</name>
+        <qualifiedname>Gambit::NodeUtility::getNode&lt; long long &gt;</qualifiedname>
+        <param>
+          <type>const YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>See int specialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="130" column="19" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1ab7b21f4950a28a4693de28302dd64422" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>unsigned long long</type>
+        <definition>unsigned long long Gambit::NodeUtility::getNode&lt; unsigned long long &gt;</definition>
+        <argsstring>(const YAML::Node node)</argsstring>
+        <name>getNode&lt; unsigned long long &gt;</name>
+        <qualifiedname>Gambit::NodeUtility::getNode&lt; unsigned long long &gt;</qualifiedname>
+        <param>
+          <type>const YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>See int specialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="138" column="28" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="yaml__node__utility_8hpp_1a8506e59f9a901064a86e9f361e6a8829" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Gambit::NodeUtility::getNode&lt; std::string &gt;</definition>
+        <argsstring>(const YAML::Node node)</argsstring>
+        <name>getNode&lt; std::string &gt;</name>
+        <qualifiedname>Gambit::NodeUtility::getNode&lt; std::string &gt;</qualifiedname>
+        <param>
+          <type>const YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read string and expand environment variables of the type ${MYVAR}. Expansion of environment variables is not performed if given as $MYVAR and ${MYVAR}. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="148" column="14" bodyfile="Utils/include/gambit/Utils/yaml_node_utility.hpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/yaml_node_utility.hpp" line="35" column="3"/>
+  </compounddef>
+</doxygen>

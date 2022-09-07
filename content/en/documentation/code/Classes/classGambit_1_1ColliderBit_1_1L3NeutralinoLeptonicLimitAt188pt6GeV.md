@@ -4,8 +4,7 @@ description: 'A class to contain the limit data from L3PLB_472_2000_420, figure 
 
 ---
 
-
-
+# Gambit::ColliderBit::L3NeutralinoLeptonicLimitAt188pt6GeV
 
 
 
@@ -98,4 +97,4 @@ L3NeutralinoLeptonicLimitAt188pt6GeV()
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

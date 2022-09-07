@@ -4,8 +4,7 @@ description: 'Holds the info about a python backend variable, and defines conver
 
 ---
 
-
-
+# Gambit::python_variable
 
 
 
@@ -20,7 +19,7 @@ Holds the info about a python backend variable, and defines conversion functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[python_variable](/documentation/code/classes/classgambit_1_1python__variable/#function-python-variable)**(const str & , const str & , const str & )<br>Constructor.  |
+| | **[python_variable](/documentation/code/classes/classgambit_1_1python__variable/#function-python-variable)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & , const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & , const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & )<br>Constructor.  |
 | [python_variable](/documentation/code/classes/classgambit_1_1python__variable/) & | **[operator=](/documentation/code/classes/classgambit_1_1python__variable/#function-operator)**(const TYPE & )<br>Assignment operator for [python_variable](/documentation/code/classes/classgambit_1_1python__variable/) from equivalent C++ type.  |
 | | **[operator TYPE const](/documentation/code/classes/classgambit_1_1python__variable/#function-operator-type-const)**()<br>Cast operator from [python_variable](/documentation/code/classes/classgambit_1_1python__variable/) to equivalent C++ type.  |
 
@@ -66,4 +65,4 @@ Cast operator from [python_variable](/documentation/code/classes/classgambit_1_1
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS5_SMCUSEFUL</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS5__SMCUSEFUL_1a07c1090cccb29d3ed8f24c52b6dac398" prot="public" static="no" mutable="no">
-        <type>Fstring&lt; 5 &gt;</type>
+        <type><ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref>&lt; 5 &gt;</type>
         <definition>Fstring&lt;5&gt; Gambit::DS5_SMCUSEFUL::roption</definition>
         <argsstring></argsstring>
         <name>roption</name>
@@ -22,6 +22,25 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; char, 1, len &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Fstring&lt; 5 &gt;</label>
+        <link refid="classGambit_1_1Fstring"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::DS5_SMCUSEFUL</label>
+        <link refid="structGambit_1_1DS5__SMCUSEFUL"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>roption</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="184" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="185" bodyend="187"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS5__SMCUSEFUL_1a07c1090cccb29d3ed8f24c52b6dac398" prot="public" virt="non-virtual"><scope>Gambit::DS5_SMCUSEFUL</scope><name>roption</name></member>

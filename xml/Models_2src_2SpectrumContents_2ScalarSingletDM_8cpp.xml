@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="Models_2src_2SpectrumContents_2ScalarSingletDM_8cpp" kind="file" language="C++">
+    <compoundname>Models/src/SpectrumContents/ScalarSingletDM.cpp</compoundname>
+    <includes refid="RegisteredSpectra_8hpp" local="yes">gambit/Models/SpectrumContents/RegisteredSpectra.hpp</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>gambit/Elements/spectrum_helpers.hpp</label>
+        <link refid="spectrum__helpers_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gambit/Models/SpectrumContents/RegisteredSpectra.hpp</label>
+        <link refid="RegisteredSpectra_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ScalarSingletDM.cpp</label>
+        <link refid="Models_2src_2SpectrumContents_2ScalarSingletDM_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>array</label>
+      </node>
+      <node id="13">
+        <label>cassert</label>
+      </node>
+      <node id="18">
+        <label>deque</label>
+      </node>
+      <node id="17">
+        <label>forward_list</label>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>list</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>set</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>type_traits</label>
+      </node>
+      <node id="14">
+        <label>unordered_map</label>
+      </node>
+      <node id="15">
+        <label>unordered_set</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class defining the parameters that SubSpectrum objects providing Scalar Singlet Dark Matter spectrum data must provide</para>
+<para><hruler/>
+</para>
+<para>Authors:</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2016 Feb</para>
+</simplesect>
+<simplesect kind="author"><para>James McKay (<ulink url="mailto:j.mckay14@imperial.ac.uk">j.mckay14@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2016 Mar</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2018 Sep</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Class<sp/>defining<sp/>the<sp/>parameters<sp/>that<sp/>SubSpectrum</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>objects<sp/>providing<sp/>Scalar<sp/>Singlet<sp/>Dark<sp/>Matter</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>spectrum<sp/>data<sp/>must<sp/>provide</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>Authors:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>&lt;!--<sp/>add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify<sp/>--&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(benjamin.farmer@fysik.su.se)</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>\date<sp/>2016<sp/>Feb</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>\author<sp/>James<sp/>McKay</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(j.mckay14@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///<sp/><sp/>\date<sp/>2016<sp/>Mar</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///<sp/><sp/>\date<sp/>2018<sp/>Sep</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="RegisteredSpectra_8hpp" kindref="compound">gambit/Models/SpectrumContents/RegisteredSpectra.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/>///////<sp/>Z2<sp/>model<sp/>///////</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>SpectrumContents::ScalarSingletDM_Z2::ScalarSingletDM_Z2()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1abe5d5573e9b7f30931e84a8c3c308123" kindref="member">setName</ref>(</highlight><highlight class="stringliteral">&quot;ScalarSingletDM_Z2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>shape<sp/>prototypes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>m3x3<sp/>=<sp/>initVector(3,3);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::mass1,<sp/></highlight><highlight class="stringliteral">&quot;vev&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;lambda_hS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;lambda_S&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;lambda_h&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;h0_1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;S&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;g1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;g2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;g3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;sinW2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;Yd&quot;</highlight><highlight class="normal">,<sp/>m3x3);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;Yu&quot;</highlight><highlight class="normal">,<sp/>m3x3);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1SubSpectrumContents_1a367c7a4ec826a8275bba85a78af7743a" kindref="member">addParameter</ref>(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;Ye&quot;</highlight><highlight class="normal">,<sp/>m3x3);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/>///////<sp/>Z3<sp/>model<sp/>///////</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>SpectrumContents::ScalarSingletDM_Z3::ScalarSingletDM_Z3()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>setName(</highlight><highlight class="stringliteral">&quot;ScalarSingletDM_Z3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>shape<sp/>prototypes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>m3x3<sp/>=<sp/>initVector(3,3);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::mass1,<sp/></highlight><highlight class="stringliteral">&quot;vev&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;lambda_hS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;lambda_S&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;lambda_h&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::mass1,<sp/></highlight><highlight class="stringliteral">&quot;mu3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;h0_1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;S&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;g1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;g2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;g3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;sinW2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;Yd&quot;</highlight><highlight class="normal">,<sp/>m3x3);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;Yu&quot;</highlight><highlight class="normal">,<sp/>m3x3);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>addParameter(Par::dimensionless,<sp/></highlight><highlight class="stringliteral">&quot;Ye&quot;</highlight><highlight class="normal">,<sp/>m3x3);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Models/src/SpectrumContents/ScalarSingletDM.cpp"/>
+  </compounddef>
+</doxygen>

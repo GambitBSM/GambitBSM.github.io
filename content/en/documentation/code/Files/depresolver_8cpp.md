@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# src/depresolver.cpp
 
 
 
@@ -18,7 +17,6 @@ description: "[No description available]"
 | -------------- |
 | **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 | **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)**  |
-| **[LogTags](/documentation/code/namespaces/namespacelogtags/)**  |
 
 ## Classes
 
@@ -2576,4 +2574,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:27 +0000
+Updated on 2022-09-07 at 13:49:54 +0000

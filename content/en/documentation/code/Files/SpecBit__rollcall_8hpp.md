@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# SpecBit/SpecBit_rollcall.hpp
 
 
 
@@ -16,18 +15,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| START_CAPABILITY | **[QUICK_FUNCTION](/documentation/code/files/specbit__rollcall_8hpp/#function-quick-function)**([MODULE](/documentation/code/files/backend__macros_8hpp/#define-module) , SM_spectrum , OLD_CAPABILITY , convert_MSSM_to_SM , Spectrum , (MSSM63atQ, MSSM63atMGUT) , (MSSM_spectrum, Spectrum) )<br>Module function declarations for [SpecBit_SM.cpp]().  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[QUICK_FUNCTION](/documentation/code/files/specbit__rollcall_8hpp/#function-quick-function)**([MODULE](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-module) , SM_spectrum , OLD_CAPABILITY , convert_MSSM_to_SM , Spectrum , (MSSM63atQ, MSSM63atMGUT) , (MSSM_spectrum, Spectrum) )<br>Module function declarations for [SpecBit_SM.cpp]().  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| START_CAPABILITY | **[SM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-sm-spectrum)**  |
-| START_CAPABILITY | **[OLD_CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/#variable-old-capability)**  |
-| START_CAPABILITY | **[convert_NMSSM_to_SM](/documentation/code/files/specbit__rollcall_8hpp/#variable-convert-nmssm-to-sm)**  |
-| START_CAPABILITY | **[Spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-spectrum)**  |
-| START_CAPABILITY | **[NMSSM_does_not_exist_yet](/documentation/code/files/specbit__rollcall_8hpp/#variable-nmssm-does-not-exist-yet)**  |
-| START_CAPABILITY | **[NMSSM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-nmssm-spectrum)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[SM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-sm-spectrum)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[OLD_CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/#variable-old-capability)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[convert_NMSSM_to_SM](/documentation/code/files/specbit__rollcall_8hpp/#variable-convert-nmssm-to-sm)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[Spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-spectrum)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[NMSSM_does_not_exist_yet](/documentation/code/files/specbit__rollcall_8hpp/#variable-nmssm-does-not-exist-yet)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[NMSSM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-nmssm-spectrum)**  |
 
 ## Defines
 
@@ -267,4 +266,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:52 +0000

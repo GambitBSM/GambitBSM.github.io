@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS5_NUCOM</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS5__NUCOM_1a543ddfba2c6f3d45a0ffd0ab7d2a7f6a" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 29 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 29 &gt;</type>
         <definition>Farray&lt;Fdouble, 1, 29&gt; Gambit::DS5_NUCOM::wabr</definition>
         <argsstring></argsstring>
         <name>wabr</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="391" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="391" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__NUCOM_1a562cc7c88868619e142ee78093ae3eea" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 29, 1, 3 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 29, 1, 3 &gt;</type>
         <definition>Farray&lt;Fdouble, 1, 29, 1, 3&gt; Gambit::DS5_NUCOM::was0br</definition>
         <argsstring></argsstring>
         <name>was0br</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="392" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="392" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__NUCOM_1ae7094927c4bf0c540f6698d8e2cf2980" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 15 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 15 &gt;</type>
         <definition>Farray&lt;Fdouble, 1, 15&gt; Gambit::DS5_NUCOM::wascbr</definition>
         <argsstring></argsstring>
         <name>wascbr</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="393" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS5__NUCOM_1a7b98ee695cd8553bb0dd7d86d29aec70" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 3 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 3 &gt;</type>
         <definition>Farray&lt;Fdouble, 1, 3&gt; Gambit::DS5_NUCOM::was0m</definition>
         <argsstring></argsstring>
         <name>was0m</name>
@@ -148,6 +148,40 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>Gambit::Farray&lt; Fdouble, 1, 15 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 29 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="3">
+        <label>Gambit::Farray&lt; Fdouble, 1, 29, 1, 3 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="5">
+        <label>Gambit::Farray&lt; Fdouble, 1, 3 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS5_NUCOM</label>
+        <link refid="structGambit_1_1DS5__NUCOM"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>wabr</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>was0br</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>wascbr</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>was0m</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="389" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="390" bodyend="401"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS5__NUCOM_1af4be2157c1062f429bd8b92eb95a5e32" prot="public" virt="non-virtual"><scope>Gambit::DS5_NUCOM</scope><name>dswasetupcalled</name></member>

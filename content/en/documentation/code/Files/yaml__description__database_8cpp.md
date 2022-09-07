@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# src/yaml_description_database.cpp
 
 
 
@@ -27,7 +26,7 @@ description: "[No description available]"
 
 Small wrapper object for parsing and emitting capability/model etc. database information using yaml-cpp
 
-Also in this file are the definitions of structs for carrying around capability/model information, as well as YAML emitters/decoders for these structs.
+Also in this file are the definitions of structs for carrying around capability/model information, as well as [YAML](/documentation/code/namespaces/namespaceyaml/) emitters/decoders for these structs.
 
 
 
@@ -198,4 +197,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:27 +0000
+Updated on 2022-09-07 at 13:49:54 +0000

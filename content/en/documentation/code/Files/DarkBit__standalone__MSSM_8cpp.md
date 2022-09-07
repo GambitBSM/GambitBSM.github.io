@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# examples/DarkBit_standalone_MSSM.cpp
 
 
 
@@ -22,7 +21,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__standalone__mssm_8cpp/#function-quick-function)**(DarkBit , SLHA_pseudonyms , NEW_CAPABILITY , createSLHA1Names , mass_es_pseudonyms , () , (MSSM_spectrum, Spectrum) ) |
+| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__standalone__mssm_8cpp/#function-quick-function)**(DarkBit , SLHA_pseudonyms , NEW_CAPABILITY , createSLHA1Names , [mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/) , () , (MSSM_spectrum, [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/)) ) |
 | int | **[main](/documentation/code/files/darkbit__standalone__mssm_8cpp/#function-main)**(int argc, char * argv[]) |
 
 ## Detailed Description
@@ -1871,4 +1870,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:54 +0000

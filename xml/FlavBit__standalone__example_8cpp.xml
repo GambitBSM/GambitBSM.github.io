@@ -2,56 +2,1152 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="FlavBit__standalone__example_8cpp" kind="file" language="C++">
     <compoundname>FlavBit_standalone_example.cpp</compoundname>
-    <includes local="yes">gambit/Elements/standalone_module.hpp</includes>
+    <includes refid="standalone__module_8hpp" local="yes">gambit/Elements/standalone_module.hpp</includes>
     <includes refid="FlavBit__rollcall_8hpp" local="yes">gambit/FlavBit/FlavBit_rollcall.hpp</includes>
-    <includes local="yes">gambit/Elements/spectrum_factories.hpp</includes>
-    <includes local="yes">gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</includes>
+    <includes refid="spectrum__factories_8hpp" local="yes">gambit/Elements/spectrum_factories.hpp</includes>
+    <includes refid="MSSMSimpleSpec_8hpp" local="yes">gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</includes>
     <incdepgraph>
+      <node id="109">
+        <label>gambit/Backends/backend_info.hpp</label>
+        <link refid="backend__info_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>gambit/Backends/backend_singleton.hpp</label>
+        <link refid="backend__singleton_8hpp"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>gambit/Backends/default_bossed_versions.hpp</label>
+        <link refid="default__bossed__versions_8hpp"/>
+      </node>
+      <node id="106">
+        <label>gambit/Backends/mathematica_variable.hpp</label>
+        <link refid="mathematica__variable_8hpp"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>gambit/Backends/python_helpers.hpp</label>
+        <link refid="python__helpers_8hpp"/>
+      </node>
+      <node id="111">
+        <label>gambit/Backends/python_variable.hpp</label>
+        <link refid="python__variable_8hpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>gambit/Core/ini_functions.hpp</label>
+        <link refid="Core_2include_2gambit_2Core_2ini__functions_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>gambit/Elements/daFunk.hpp</label>
+        <link refid="daFunk_8hpp_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>gambit/Elements/decay_table.hpp</label>
+        <link refid="decay__table_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>gambit/Elements/flav_prediction.hpp</label>
+        <link refid="flav__prediction_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>gambit/Elements/halo_types.hpp</label>
+        <link refid="halo__types_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>gambit/Elements/higgs_couplings_table.hpp</label>
+        <link refid="higgs__couplings__table_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>gambit/Elements/ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>gambit/Elements/ini_functions.hpp</label>
+        <link refid="Elements_2include_2gambit_2Elements_2ini__functions_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>gambit/Elements/module_macros_common.hpp</label>
+        <link refid="module__macros__common_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>gambit/Elements/module_macros_incore.hpp</label>
+        <link refid="module__macros__incore_8hpp"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>gambit/Elements/module_macros_incore_defs.hpp</label>
+        <link refid="module__macros__incore__defs_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+        <link refid="mssm__slhahelp_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>gambit/Elements/safety_bucket.hpp</label>
+        <link refid="safety__bucket_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>gambit/Elements/shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
+        <link refid="slhaea__spec__helpers_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>gambit/Elements/sminputs.hpp</label>
+        <link refid="sminputs_8hpp"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>gambit/Elements/spec.hpp</label>
+        <link refid="spec_8hpp"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>gambit/Elements/spec_fptrfinder.hpp</label>
+        <link refid="spec__fptrfinder_8hpp"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>gambit/Elements/spec_head.hpp</label>
+        <link refid="spec__head_8hpp"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>gambit/Elements/spectrum.hpp</label>
+        <link refid="spectrum_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>gambit/Elements/spectrum_factories.hpp</label>
+        <link refid="spectrum__factories_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>gambit/Elements/spectrum_helpers.hpp</label>
+        <link refid="spectrum__helpers_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gambit/Elements/standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>gambit/Elements/subspectrum.hpp</label>
+        <link refid="subspectrum_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>gambit/Elements/terminator.hpp</label>
+        <link refid="terminator_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>gambit/Elements/types_rollcall.hpp</label>
+        <link refid="types__rollcall_8hpp"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>gambit/Elements/wimp_types.hpp</label>
+        <link refid="wimp__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>FlavBit_standalone_example.cpp</label>
         <link refid="FlavBit__standalone__example_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
+        <childnode refid="131" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>gambit/FlavBit/FlavBit_rollcall.hpp</label>
+        <link refid="FlavBit__rollcall_8hpp"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>gambit/FlavBit/FlavBit_types.hpp</label>
+        <link refid="FlavBit__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="55">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</label>
+        <link refid="MSSMSimpleSpec_8hpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>gambit/Models/SimpleSpectra/SLHASimpleSpec.hpp</label>
+        <link refid="SLHASimpleSpec_8hpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>gambit/Models/SimpleSpectra/SMSimpleSpec.hpp</label>
+        <link refid="SMSimpleSpec_8hpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>gambit/Models/SimpleSpectra/ScalarSingletDMSimpleSpec.hpp</label>
+        <link refid="ScalarSingletDMSimpleSpec_8hpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>gambit/Models/SpectrumContents/RegisteredSpectra.hpp</label>
+        <link refid="RegisteredSpectra_8hpp"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>gambit/Models/claw_singleton.hpp</label>
+        <link refid="claw__singleton_8hpp"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>gambit/Models/models.hpp</label>
+        <link refid="models_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="88">
+        <label>gambit/Models/partmap.hpp</label>
+        <link refid="partmap_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>gambit/Models/safe_param_map.hpp</label>
+        <link refid="safe__param__map_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="35">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="25">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>gambit/Utils/numerical_constants.hpp</label>
+        <link refid="numerical__constants_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>gambit/Utils/safebool.hpp</label>
+        <link refid="safebool_8hpp"/>
+      </node>
+      <node id="78">
+        <label>gambit/Utils/slhaea_helpers.hpp</label>
+        <link refid="slhaea__helpers_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
       <node id="3">
-        <label>gambit/FlavBit/FlavBit_rollcall.hpp</label>
-        <link refid="FlavBit__rollcall_8hpp"/>
+        <label>gambit/Utils/standalone_utils.hpp</label>
+        <link refid="standalone__utils_8hpp"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
+      <node id="60">
+        <label>gambit/Utils/static_members.hpp</label>
+        <link refid="static__members_8hpp"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="61">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+        <link refid="threadsafe__rng_8hpp"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
       <node id="4">
-        <label>gambit/FlavBit/FlavBit_types.hpp</label>
-        <link refid="FlavBit__types_8hpp"/>
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
       </node>
-      <node id="7">
-        <label>boost/numeric/ublas/matrix.hpp</label>
+      <node id="16">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
       </node>
       <node id="8">
-        <label>gambit/Elements/spectrum_factories.hpp</label>
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
       </node>
-      <node id="2">
-        <label>gambit/Elements/standalone_module.hpp</label>
+      <node id="40">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
       </node>
-      <node id="9">
-        <label>gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</label>
+      <node id="70">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="5">
-        <label>string</label>
+      <node id="67">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>SLHAea/slhaea.h</label>
+      </node>
+      <node id="66">
+        <label>algorithm</label>
+      </node>
+      <node id="50">
+        <label>array</label>
+      </node>
+      <node id="98">
+        <label>assert.h</label>
+      </node>
+      <node id="53">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="110">
+        <label>boost/algorithm/string/replace.hpp</label>
+      </node>
+      <node id="52">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="21">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="100">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="133">
+        <label>boost/numeric/ublas/matrix.hpp</label>
+      </node>
+      <node id="32">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="22">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="117">
+        <label>boost/preprocessor/comparison/greater.hpp</label>
+      </node>
+      <node id="20">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="118">
+        <label>boost/preprocessor/control/iif.hpp</label>
+      </node>
+      <node id="129">
+        <label>boost/preprocessor/logical/bitand.hpp</label>
+      </node>
+      <node id="33">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="34">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="119">
+        <label>boost/preprocessor/repetition/enum.hpp</label>
+      </node>
+      <node id="130">
+        <label>boost/preprocessor/seq/cat.hpp</label>
+      </node>
+      <node id="120">
+        <label>boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="121">
+        <label>boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="80">
+        <label>boost/serialization/strong_typedef.hpp</label>
+      </node>
+      <node id="99">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="44">
+        <label>cassert</label>
+      </node>
+      <node id="83">
+        <label>cfloat</label>
       </node>
       <node id="6">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>complex</label>
+      </node>
+      <node id="13">
+        <label>cstring</label>
+      </node>
+      <node id="49">
+        <label>deque</label>
+      </node>
+      <node id="37">
+        <label>exception</label>
+      </node>
+      <node id="48">
+        <label>forward_list</label>
+      </node>
+      <node id="42">
+        <label>fstream</label>
+      </node>
+      <node id="59">
+        <label>gambit/Backends/backend_rollcall.hpp</label>
+      </node>
+      <node id="113">
+        <label>gambit/Backends/backend_types_rollcall.hpp</label>
+      </node>
+      <node id="124">
+        <label>gambit/Elements/elements_extras.hpp</label>
+      </node>
+      <node id="114">
+        <label>gambit/Elements/module_types_rollcall.hpp</label>
+      </node>
+      <node id="58">
+        <label>gambit/Models/model_rollcall.hpp</label>
+      </node>
+      <node id="115">
+        <label>gambit/Models/model_types_rollcall.hpp</label>
+      </node>
+      <node id="51">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="102">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+      <node id="101">
+        <label>gsl/gsl_integration.h</label>
+      </node>
+      <node id="41">
+        <label>iostream</label>
+      </node>
+      <node id="71">
+        <label>limits</label>
+      </node>
+      <node id="47">
+        <label>list</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="54">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="12">
+        <label>omp.h</label>
+      </node>
+      <node id="57">
+        <label>ostream</label>
+      </node>
+      <node id="62">
+        <label>random</label>
+      </node>
+      <node id="36">
+        <label>set</label>
+      </node>
+      <node id="11">
+        <label>sstream</label>
+      </node>
+      <node id="90">
+        <label>stdexcept</label>
+      </node>
+      <node id="93">
+        <label>stdio.h</label>
+      </node>
+      <node id="94">
+        <label>stdlib.h</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="43">
+        <label>type_traits</label>
+      </node>
+      <node id="17">
+        <label>unistd.h</label>
+      </node>
+      <node id="45">
+        <label>unordered_map</label>
+      </node>
+      <node id="46">
+        <label>unordered_set</label>
+      </node>
+      <node id="38">
+        <label>utility</label>
+      </node>
+      <node id="5">
         <label>vector</label>
+      </node>
+      <node id="69">
+        <label>yaml-cpp/yaml.h</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceFlavBit_1_1Functown">FlavBit::Functown</innernamespace>
@@ -90,13 +1186,13 @@
           <type>relabelSpectrum</type>
         </param>
         <param>
-          <type>Spectrum</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref></type>
         </param>
         <param>
           <type>(MSSM30atQ, MSSM30atMGUT)</type>
         </param>
         <param>
-          <type>(unimproved_MSSM_spectrum, Spectrum)</type>
+          <type>(unimproved_MSSM_spectrum, <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref>)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -166,12 +1262,12 @@
 <codeline lineno="27"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
 <codeline lineno="28"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Always<sp/>required<sp/>in<sp/>any<sp/>standalone<sp/>module<sp/>main<sp/>file</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/standalone_module.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="standalone__module_8hpp" kindref="compound">gambit/Elements/standalone_module.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FlavBit__rollcall_8hpp" kindref="compound">gambit/FlavBit/FlavBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Just<sp/>required<sp/>in<sp/>this<sp/>one</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/spectrum_factories.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spectrum__factories_8hpp" kindref="compound">gambit/Elements/spectrum_factories.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MSSMSimpleSpec_8hpp" kindref="compound">gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">FlavBit::Functown;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>wrapping<sp/>the<sp/>module&apos;s<sp/>actual<sp/>module<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">BackendIniBit::Functown;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>wrapping<sp/>the<sp/>backend<sp/>initialisation<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
@@ -179,10 +1275,10 @@
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Default<sp/>SLHA<sp/>file<sp/>for<sp/>input,<sp/>if<sp/>not<sp/>given<sp/>on<sp/>the<sp/>command<sp/>line.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal">std::string<sp/>infile(</highlight><highlight class="stringliteral">&quot;FlavBit/data/example.slha&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal">QUICK_FUNCTION(FlavBit,<sp/>unimproved_MSSM_spectrum,<sp/>NEW_CAPABILITY,<sp/>createSpectrum,<sp/>Spectrum,<sp/>(MSSM30atQ,MSSM30atMGUT))</highlight></codeline>
-<codeline lineno="44"><highlight class="normal">QUICK_FUNCTION(FlavBit,<sp/>MSSM_spectrum,<sp/>NEW_CAPABILITY,<sp/>relabelSpectrum,<sp/>Spectrum,<sp/>(MSSM30atQ,MSSM30atMGUT),<sp/>(unimproved_MSSM_spectrum,<sp/>Spectrum))</highlight></codeline>
-<codeline lineno="45"><highlight class="normal">QUICK_FUNCTION(FlavBit,<sp/>Z_decay_rates,<sp/>NEW_CAPABILITY,<sp/>GammaZ,<sp/>DecayTable::Entry)</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">QUICK_FUNCTION(FlavBit,<sp/>W_plus_decay_rates,<sp/>NEW_CAPABILITY,<sp/>GammaW,<sp/>DecayTable::Entry)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="module__macros__common_8hpp_1ac77ad20f4772076dbba037d8fbc20591" kindref="member">QUICK_FUNCTION</ref>(FlavBit,<sp/>unimproved_MSSM_spectrum,<sp/>NEW_CAPABILITY,<sp/>createSpectrum,<sp/><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref>,<sp/>(MSSM30atQ,MSSM30atMGUT))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="module__macros__common_8hpp_1ac77ad20f4772076dbba037d8fbc20591" kindref="member">QUICK_FUNCTION</ref>(FlavBit,<sp/>MSSM_spectrum,<sp/>NEW_CAPABILITY,<sp/>relabelSpectrum,<sp/><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref>,<sp/>(MSSM30atQ,MSSM30atMGUT),<sp/>(unimproved_MSSM_spectrum,<sp/><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref>))</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="module__macros__common_8hpp_1ac77ad20f4772076dbba037d8fbc20591" kindref="member">QUICK_FUNCTION</ref>(FlavBit,<sp/>Z_decay_rates,<sp/>NEW_CAPABILITY,<sp/>GammaZ,<sp/><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="module__macros__common_8hpp_1ac77ad20f4772076dbba037d8fbc20591" kindref="member">QUICK_FUNCTION</ref>(FlavBit,<sp/>W_plus_decay_rates,<sp/>NEW_CAPABILITY,<sp/>GammaW,<sp/><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref>)</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
 <codeline lineno="49"><highlight class="normal">{</highlight></codeline>
@@ -190,27 +1286,27 @@
 <codeline lineno="51"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Make<sp/>an<sp/>unimproved<sp/>GAMBIT<sp/>spectrum<sp/>object<sp/>from<sp/>an<sp/>SLHA<sp/>file</highlight></codeline>
-<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createSpectrum(Spectrum&amp;<sp/>outSpec)</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createSpectrum(<ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref>&amp;<sp/>outSpec)</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>outSpec<sp/>=<sp/>spectrum_from_SLHA&lt;MSSMSimpleSpec&gt;(infile,<sp/>Spectrum::mc_info(),<sp/>Spectrum::mr_info());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>outSpec<sp/>=<sp/>spectrum_from_SLHA&lt;MSSMSimpleSpec&gt;(infile,<sp/><ref refid="classGambit_1_1Spectrum_1ac2c38b124941a26ba37eed9447c51e71" kindref="member">Spectrum::mc_info</ref>(),<sp/>Spectrum::mr_info());</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Relabel<sp/>it<sp/>as<sp/>a<sp/>complete<sp/>spectrum</highlight></codeline>
-<codeline lineno="60"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>relabelSpectrum(Spectrum&amp;<sp/>outSpec)</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>relabelSpectrum(<ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref>&amp;<sp/>outSpec)</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>outSpec<sp/>=<sp/>*Pipes::relabelSpectrum::Dep::unimproved_MSSM_spectrum;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>W<sp/>decays<sp/>--<sp/>only<sp/>need<sp/>the<sp/>total<sp/>width<sp/>for<sp/>SuperIso</highlight></codeline>
-<codeline lineno="66"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GammaW(DecayTable::Entry&amp;<sp/>result)</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GammaW(<ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref>&amp;<sp/>result)</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.width_in_GeV<sp/>=<sp/>2.085;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="classGambit_1_1DecayTable_1_1Entry_1ac560b171c91f109bfea0b8369374628a" kindref="member">width_in_GeV</ref><sp/>=<sp/>2.085;</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Z<sp/>decays<sp/>--<sp/>only<sp/>need<sp/>the<sp/>total<sp/>width<sp/>for<sp/>SuperIso</highlight></codeline>
-<codeline lineno="72"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GammaZ(DecayTable::Entry&amp;<sp/>result)</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GammaZ(<ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref>&amp;<sp/>result)</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.width_in_GeV<sp/>=<sp/>2.4952;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="classGambit_1_1DecayTable_1_1Entry_1ac560b171c91f109bfea0b8369374628a" kindref="member">width_in_GeV</ref><sp/>=<sp/>2.4952;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
@@ -245,7 +1341,7 @@
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialise<sp/>global<sp/>LogMaster<sp/>object</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>logger().initialise(loggerinfo);</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>FlavBit<sp/>standalone<sp/>example&quot;</highlight><highlight class="normal">&lt;&lt;LogTags::info&lt;&lt;EOM;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>logger()&lt;&lt;</highlight><highlight class="stringliteral">&quot;Running<sp/>FlavBit<sp/>standalone<sp/>example&quot;</highlight><highlight class="normal">&lt;&lt;LogTags::info&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Notify<sp/>all<sp/>module<sp/>functions<sp/>that<sp/>care<sp/>of<sp/>the<sp/>model<sp/>being<sp/>scanned.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>createSpectrum.notifyOfModel(</highlight><highlight class="stringliteral">&quot;MSSM30atQ&quot;</highlight><highlight class="normal">);</highlight></codeline>

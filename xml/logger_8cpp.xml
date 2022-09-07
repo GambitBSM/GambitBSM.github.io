@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="logger_8cpp" kind="file" language="C++">
+    <compoundname>logger.cpp</compoundname>
+    <includes refid="logger_8hpp" local="yes">gambit/Logs/logger.hpp</includes>
+    <includes refid="logmaster_8hpp" local="yes">gambit/Logs/logmaster.hpp</includes>
+    <includes refid="logging_8hpp" local="yes">gambit/Logs/logging.hpp</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="2">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gambit/Logs/logging.hpp</label>
+        <link refid="logging_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>logger.cpp</label>
+        <link refid="logger_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="18">
+        <label>gambit/Utils/file_lock.hpp</label>
+        <link refid="file__lock_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>chrono</label>
+      </node>
+      <node id="13">
+        <label>deque</label>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="16">
+        <label>omp.h</label>
+      </node>
+      <node id="10">
+        <label>ostream</label>
+      </node>
+      <node id="6">
+        <label>set</label>
+      </node>
+      <node id="3">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structGambit_1_1Logging_1_1ensure__construction__order" prot="public">Gambit::Logging::ensure_construction_order</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Logging">Gambit::Logging</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Master source file for <ref refid="namespaceGambit" kindref="compound">Gambit</ref> logging</para>
+<para>The LogMaster object is statically declared here, so this should be in its own compilation unit. The function defined here lets you retrieve this static log object in the other compilation units. To use this function, include the header &quot;log.hpp&quot; in your file.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@monash.edu.au">benjamin.farmer@monash.edu.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2014 Mar</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:patscott@physics.mcgill.ca">patscott@physics.mcgill.ca</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2014 Mar</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Master<sp/>source<sp/>file<sp/>for<sp/>Gambit<sp/>logging</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>The<sp/>LogMaster<sp/>object<sp/>is<sp/>statically<sp/>declared</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>here,<sp/>so<sp/>this<sp/>should<sp/>be<sp/>in<sp/>its<sp/>own<sp/>compilation</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>unit.<sp/>The<sp/>function<sp/>defined<sp/>here<sp/>lets<sp/>you</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>retrieve<sp/>this<sp/>static<sp/>log<sp/>object<sp/>in<sp/>the<sp/>other</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>compilation<sp/>units.<sp/>To<sp/>use<sp/>this<sp/>function,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>include<sp/>the<sp/>header<sp/>&quot;log.hpp&quot;<sp/>in<sp/>your<sp/>file.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(benjamin.farmer@monash.edu.au)</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///<sp/><sp/>\date<sp/>2014<sp/>Mar</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(patscott@physics.mcgill.ca)</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///<sp/><sp/>\date<sp/>2014<sp/>Mar</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logger_8hpp" kindref="compound">gambit/Logs/logger.hpp</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration<sp/>of<sp/>retriever<sp/>function<sp/>&apos;logger()&apos;<sp/>and<sp/>helper<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logmaster_8hpp" kindref="compound">gambit/Logs/logmaster.hpp</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Full<sp/>declaration<sp/>of<sp/>LogMaster<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logging_8hpp" kindref="compound">gambit/Logs/logging.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Logging</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>an<sp/>empty<sp/>struct<sp/>that<sp/>I<sp/>use<sp/>simple<sp/>to<sp/>ensure<sp/>that<sp/>the<sp/>logger<sp/>LogTag<sp/>&quot;catalogues&quot;<sp/>are<sp/>constructed<sp/>before<sp/>the<sp/>logger<sp/>itself.<sp/>This<sp/>ensures<sp/>that<sp/>they<sp/>are<sp/>destructed<sp/>*after*<sp/>the<sp/>logger,<sp/>which<sp/>is<sp/>important<sp/>because<sp/>we<sp/>need<sp/>them<sp/>to<sp/>exist<sp/>during<sp/>destruction<sp/>of<sp/>the<sp/>logger.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structGambit_1_1Logging_1_1ensure__construction__order" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1Logging_1_1ensure__construction__order" kindref="compound">ensure_construction_order</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1Logging_1_1ensure__construction__order" kindref="compound">ensure_construction_order</ref>()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>the<sp/>functions<sp/>which<sp/>retrieve<sp/>the<sp/>catalogues/maps,<sp/>thus<sp/>ensuring<sp/>those<sp/>objects<sp/>are<sp/>constructed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msgtypes();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flags();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>components();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tag2str();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>///<sp/>{@<sp/>Stream<sp/>functions<sp/>overloads<sp/>for<sp/>working<sp/>with<sp/>the<sp/>logger</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>///<sp/>@{<sp/>Stream<sp/>functions<sp/>for<sp/>use<sp/>with<sp/>LogMaster</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref>&amp;<sp/><ref refid="namespaceGambit_1_1Logging_1a632defe67238e42eb8d3be8e5e05e2a9" kindref="member">operator&lt;&lt;</ref>(<ref refid="classGambit_1_1Logging_1_1LogMaster" kindref="compound">LogMaster</ref>&amp;<sp/>logobj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>in)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logobj.<ref refid="classGambit_1_1Logging_1_1LogMaster_1a1513c104b241af134c50b16d7dde18f1" kindref="member">input</ref>(in);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>logobj;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>LogTag<sp/>input</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>LogMaster&amp;<sp/><ref refid="namespaceGambit_1_1Logging_1a632defe67238e42eb8d3be8e5e05e2a9" kindref="member">operator&lt;&lt;</ref>(LogMaster&amp;<sp/>logobj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LogTag&amp;<sp/>tag)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logobj.<ref refid="classGambit_1_1Logging_1_1LogMaster_1a1513c104b241af134c50b16d7dde18f1" kindref="member">input</ref>(tag);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>logobj;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>end<sp/>of<sp/>message<sp/>character</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>LogMaster&amp;<sp/><ref refid="namespaceGambit_1_1Logging_1a632defe67238e42eb8d3be8e5e05e2a9" kindref="member">operator&lt;&lt;</ref>(LogMaster&amp;<sp/>logobj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>endofmessage&amp;<sp/>eom)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logobj.<ref refid="classGambit_1_1Logging_1_1LogMaster_1a1513c104b241af134c50b16d7dde18f1" kindref="member">input</ref>(eom);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>logobj;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>various<sp/>stream<sp/>manipulators</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>LogMaster&amp;<sp/><ref refid="namespaceGambit_1_1Logging_1a632defe67238e42eb8d3be8e5e05e2a9" kindref="member">operator&lt;&lt;</ref>(LogMaster&amp;<sp/>logobj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip1<sp/>fp)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logobj.<ref refid="classGambit_1_1Logging_1_1LogMaster_1a1513c104b241af134c50b16d7dde18f1" kindref="member">input</ref>(fp);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>logobj;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>LogMaster&amp;<sp/><ref refid="namespaceGambit_1_1Logging_1a632defe67238e42eb8d3be8e5e05e2a9" kindref="member">operator&lt;&lt;</ref>(LogMaster&amp;<sp/>logobj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip2<sp/>fp)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logobj.<ref refid="classGambit_1_1Logging_1_1LogMaster_1a1513c104b241af134c50b16d7dde18f1" kindref="member">input</ref>(fp);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>logobj;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>LogMaster&amp;<sp/><ref refid="namespaceGambit_1_1Logging_1a632defe67238e42eb8d3be8e5e05e2a9" kindref="member">operator&lt;&lt;</ref>(LogMaster&amp;<sp/>logobj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip3<sp/>fp)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logobj.<ref refid="classGambit_1_1Logging_1_1LogMaster_1a1513c104b241af134c50b16d7dde18f1" kindref="member">input</ref>(fp);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>logobj;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Log<sp/>retriever<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>Logging::LogMaster&amp;<sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>I<sp/>assume<sp/>that<sp/>these<sp/>being<sp/>static,<sp/>the<sp/>constructor<sp/>for<sp/>x<sp/>will<sp/>only<sp/>get<sp/>called<sp/>once.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>With<sp/>the<sp/>LogMaster<sp/>constructed<sp/>last<sp/>out<sp/>of<sp/>these<sp/>object,<sp/>it<sp/>should<sp/>be<sp/>destructed<sp/>first,<sp/>thus<sp/>the<sp/>other<sp/>objects<sp/>should<sp/>be<sp/>available<sp/>for<sp/>use<sp/>in<sp/>the<sp/>LogMaster<sp/>destructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Logging::ensure_construction_order<sp/>x;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Logging::LogMaster<sp/>global_log;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>global_log;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Gambit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Logs/src/logger.cpp"/>
+  </compounddef>
+</doxygen>

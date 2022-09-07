@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1MSSMSimpleSpec" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::MSSMSimpleSpec</compoundname>
+    <basecompoundref refid="classGambit_1_1SLHASimpleSpec" prot="public" virt="non-virtual">Gambit::SLHASimpleSpec&lt; MSSMSimpleSpec &gt;</basecompoundref>
+    <includes refid="MSSMSimpleSpec_8hpp" local="no">MSSMSimpleSpec.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1a5ec612a94478e9a454d489ecf247476a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::MSSMSimpleSpec::MSSMSimpleSpec</definition>
+        <argsstring>(double uncert=0.03)</argsstring>
+        <name>MSSMSimpleSpec</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::MSSMSimpleSpec</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>uncert</declname>
+          <defval>0.03</defval>
+        </param>
+        <briefdescription>
+<para>Member functions for <ref refid="classGambit_1_1MSSMSimpleSpec" kindref="compound">MSSMSimpleSpec</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructors. The optional double uncert is the uncertainty to assign to pole masses (default is 3%).</para>
+<para>Constructors Default Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="131" column="13" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="387" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1ae76ec454d453d9f9378c7a16cbe1bd1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::MSSMSimpleSpec::MSSMSimpleSpec</definition>
+        <argsstring>(const SLHAstruct &amp;, double uncert=0.03)</argsstring>
+        <name>MSSMSimpleSpec</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::MSSMSimpleSpec</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceGambit_1a4df3d966ed9733910719e3497cb886c6" kindref="member">SLHAstruct</ref> &amp;</type>
+          <defname>input</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>uncert</declname>
+          <defval>0.03</defval>
+        </param>
+        <briefdescription>
+<para>Constructor via SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="132" column="13" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="393" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1a142ef9f3740740596fc62eddf1a81579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::MSSMSimpleSpec::MSSMSimpleSpec</definition>
+        <argsstring>(const MSSMSimpleSpec &amp;, double uncert=0.03)</argsstring>
+        <name>MSSMSimpleSpec</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::MSSMSimpleSpec</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1MSSMSimpleSpec" kindref="compound">MSSMSimpleSpec</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>uncert</declname>
+          <defval>0.03</defval>
+        </param>
+        <briefdescription>
+<para>Copy constructor: needed by clone function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="133" column="13" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="400" bodyend="404"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1aa2d5592f33bdff29729776438940dbb8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::MSSMSimpleSpec::set_pole_mass_uncertainties</definition>
+        <argsstring>(double)</argsstring>
+        <name>set_pole_mass_uncertainties</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::set_pole_mass_uncertainties</qualifiedname>
+        <param>
+          <type>double</type>
+          <defname>uncert</defname>
+        </param>
+        <briefdescription>
+<para>Set pole mass uncertainties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="125" column="18" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="431" bodyend="451"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1a4705127ef5d41de2152e5754bc0a6833" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gambit::MSSMSimpleSpec::~MSSMSimpleSpec</definition>
+        <argsstring>()</argsstring>
+        <name>~MSSMSimpleSpec</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::~MSSMSimpleSpec</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="137" column="21" bodyfile="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1acc39477dd8d56d413b23066ca05d8c90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Gambit::MSSMSimpleSpec::get_index_offset</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index_offset</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::get_index_offset</qualifiedname>
+        <briefdescription>
+<para>Ofset from user-input indices (user assumes 1,2,3 indexed, e.g. use offset=-1 for zero-indexing) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="139" column="25" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="409" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1ae75b8c12da46422fa576238b9b67dc6d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::MSSMSimpleSpec::add_to_SLHAea</definition>
+        <argsstring>(int, SLHAea::Coll &amp;) const</argsstring>
+        <name>add_to_SLHAea</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::add_to_SLHAea</qualifiedname>
+        <reimplements refid="classGambit_1_1SubSpectrum_1acdbd6db5cc3b473b7e6445bfcf686f64">add_to_SLHAea</reimplements>
+        <param>
+          <type>int</type>
+          <defname>slha_version</defname>
+        </param>
+        <param>
+          <type>SLHAea::Coll &amp;</type>
+          <defname>slha</defname>
+        </param>
+        <briefdescription>
+<para>Retrieve SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add SLHAea object to another </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="141" column="26" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="416" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1a831ad353f519697c28917a1cd03a8a8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const std::map&lt; int, int &gt; &amp;</type>
+        <definition>const std::map&lt; int, int &gt; &amp; Gambit::MSSMSimpleSpec::PDG_translator</definition>
+        <argsstring>() const</argsstring>
+        <name>PDG_translator</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::PDG_translator</qualifiedname>
+        <reimplements refid="classGambit_1_1SubSpectrum_1a6f23c9146e2d9eab8a3db88f5a5232b6">PDG_translator</reimplements>
+        <briefdescription>
+<para>Retrieve the PDG translation map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="142" column="36" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="428" bodyend="428"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGambit_1_1MSSMSimpleSpec_1ac322ef6fe61c4c711d01228358f79e4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Spec_1a46858e18ee3cb4193dbaee50b698e0b4" kindref="member">GetterMaps</ref></type>
+        <definition>MSSMSimpleSpec::GetterMaps Gambit::MSSMSimpleSpec::fill_getter_maps</definition>
+        <argsstring>()</argsstring>
+        <name>fill_getter_maps</name>
+        <qualifiedname>Gambit::MSSMSimpleSpec::fill_getter_maps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map fillers Used to initialise maps in <ref refid="classGambit_1_1Spec" kindref="compound">Spec</ref> class, accessed via <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> interface class (specialisations created and stored automatically by <ref refid="classGambit_1_1Spec" kindref="compound">Spec&lt;QedQcdWrapper&gt;</ref>) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="148" column="31" bodyfile="Models/src/SimpleSpectra/MSSMSimpleSpec.cpp" bodystart="455" bodyend="576"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MSSM specialisation of SLHAea object wrapper version of <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::MSSMSimpleSpec</label>
+        <link refid="classGambit_1_1MSSMSimpleSpec"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gambit::SubSpectrum</label>
+        <link refid="classGambit_1_1SubSpectrum"/>
+      </node>
+      <node id="2">
+        <label>Gambit::SLHASimpleSpec&lt; MSSMSimpleSpec &gt;</label>
+        <link refid="classGambit_1_1SLHASimpleSpec"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::Spec&lt; MSSMSimpleSpec &gt;</label>
+        <link refid="classGambit_1_1Spec"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>Gambit::DummyInput</label>
+        <link refid="classGambit_1_1DummyInput"/>
+      </node>
+      <node id="5">
+        <label>Gambit::DummyModel</label>
+        <link refid="classGambit_1_1DummyModel"/>
+      </node>
+      <node id="1">
+        <label>Gambit::MSSMSimpleSpec</label>
+        <link refid="classGambit_1_1MSSMSimpleSpec"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gambit::SpecTraits&lt; MSSMSimpleSpec &gt;</label>
+        <link refid="structGambit_1_1SpecTraits_3_01MSSMSimpleSpec_01_4"/>
+      </node>
+      <node id="4">
+        <label>Gambit::SubSpectrum</label>
+        <link refid="classGambit_1_1SubSpectrum"/>
+      </node>
+      <node id="2">
+        <label>Gambit::SLHASimpleSpec&lt; MSSMSimpleSpec &gt;</label>
+        <link refid="classGambit_1_1SLHASimpleSpec"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>dummyinput</edgelabel>
+          <edgelabel>slhawrap</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::Spec&lt; MSSMSimpleSpec &gt;</label>
+        <link refid="classGambit_1_1Spec"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>dummymodel</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>dummyinput</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" line="121" column="7" bodyfile="Models/include/gambit/Models/SimpleSpectra/MSSMSimpleSpec.hpp" bodystart="122" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1ae75b8c12da46422fa576238b9b67dc6d" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>add_to_SLHAea</name></member>
+      <member refid="classGambit_1_1Spec_1a55f346d5bd5a3246a47a5db8404949fb" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>clone</name></member>
+      <member refid="classGambit_1_1Spec_1a80dddcba2892f90ccef373a0f51c3710" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>Contents</name></member>
+      <member refid="classGambit_1_1Spec_1a7ecd550a7de5305518b34181187c3544" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>D</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a2ff64d7b3c662d37cba4eb9d8a9c419f" prot="protected" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>dummyinput</name></member>
+      <member refid="classGambit_1_1Spec_1a52e6395fb74217ac8421fbb8beeed75c" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>dummymodel</name></member>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1ac322ef6fe61c4c711d01228358f79e4f" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>fill_getter_maps</name></member>
+      <member refid="classGambit_1_1Spec_1a11ccd60a2b06fc6e91c56f0c7045b54d" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>fill_setter_maps</name></member>
+      <member refid="classGambit_1_1Spec_1a32039cdccf1c944121203d2eec5e6294" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1Spec_1a48c24aae484150638d00063f4f3784ef" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1Spec_1a45d36489185d33a2d32ac94a95e61e04" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a4aa3c288df9625876aa5dc1271450a4f" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::MSSMSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ad777663700297fc43301c2a71288e56c" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::MSSMSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a785b082b5f58bd249dc1a6f6321db435" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::MSSMSimpleSpec</scope><name>get</name></member>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1acc39477dd8d56d413b23066ca05d8c90" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get_index_offset</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a425f2c842cb3c0eb1d21a36051100dff" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get_Input</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a3482d20f12f826fe8b898fd1a38b8cb9" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get_Input</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a9c245625e372f1a2c4ba6ee2430acd56" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get_Model</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a72fcf7ab33c4edade474c3591e45ff4c" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get_Model</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a5e9acc22b9d462e531c50b5727c870c1" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>get_numbers_stable_particles</name></member>
+      <member refid="classGambit_1_1Spec_1ac2f5dcb72ade4248d48a08316cb2a5ce" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>getName</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a508a7dd259a814114719094075205aae" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>GetScale</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a5a6fd9949ec1ffe5d0b1d6b64f568b01" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>getSLHAea</name></member>
+      <member refid="classGambit_1_1Spec_1a471ed98efd9bb9072a1b83db0e8ce89b" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>getter_maps</name></member>
+      <member refid="classGambit_1_1Spec_1a46858e18ee3cb4193dbaee50b698e0b4" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>GetterMaps</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1aa4b3a1ca4b864081a054b323a1c2f90f" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>hard_lower</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a7f39428653fa985b340c1df498d6ec42" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>hard_upper</name></member>
+      <member refid="classGambit_1_1Spec_1a1a03962018f5cf85f34261eeca2106a6" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1Spec_1aad9ca06fbc280f69a1f7be1bd49c571b" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1Spec_1a848841a535a7e421544bfaae913c96b9" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a4828fe7699db6cd695871eac0e944f90" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::MSSMSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ab8004e0a7ca69f1a0fffa7b18a3f7182" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::MSSMSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a1ce6d110547e72c5db901dd92c40444b" prot="public" virt="non-virtual" ambiguityscope="Gambit::SubSpectrum::"><scope>Gambit::MSSMSimpleSpec</scope><name>has</name></member>
+      <member refid="classGambit_1_1Spec_1a21cfe3f6587fc2c37247524a48e0291a" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>index_offset</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a262fafb31ca1ef4e6b929a1de946ef68" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>Input</name></member>
+      <member refid="classGambit_1_1Spec_1a11885c8d86ed99101f08a3967f63061b" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>input</name></member>
+      <member refid="classGambit_1_1Spec_1a887a14df9f65f1180a6293d376a332a5" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>input</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a461828db3e7eb952174410f57d04b0cf" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>Model</name></member>
+      <member refid="classGambit_1_1Spec_1a8d1d5df6f8e2acca6f370732a8e13304" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>model</name></member>
+      <member refid="classGambit_1_1Spec_1ab3ebfb60469691d2e534fd61edb2f321" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>model</name></member>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1a5ec612a94478e9a454d489ecf247476a" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>MSSMSimpleSpec</name></member>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1ae76ec454d453d9f9378c7a16cbe1bd1a" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>MSSMSimpleSpec</name></member>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1a142ef9f3740740596fc62eddf1a81579" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>MSSMSimpleSpec</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a3ac9a7e0149ef7333a097462ba07690a" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>MTget</name></member>
+      <member refid="classGambit_1_1Spec_1ae001321f0ef3e004af15e3d7cc2d8dee" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>MTset</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ae733c2e2d247f846a957dd880d165144" prot="protected" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>override_maps</name></member>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1a831ad353f519697c28917a1cd03a8a8d" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>PDG_translator</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a123082cb4740033d2ae243c1d27cea28" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>RunToScale</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a2f4b1f8700e79592c3823f7f31d4ebeb" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>RunToScaleOverride</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a12bb8ae854bdbf402adcd3eeab3387e2" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1aaeff9db607b0a8118fdcd380ee6a0eba" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a69d2743c3bc07fd881cc83fd5bbe216a" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a8271aef7ca1cca4c7da767e5cade9c59" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1adf70c0de7818c1d85c0d0fcd8013aa76" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a622717528952171fa114ae152c7ae340" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>safeget</name></member>
+      <member refid="classGambit_1_1Spec_1a4808e831769abfce89d2adee3aadc5f7" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>Self</name></member>
+      <member refid="classGambit_1_1Spec_1a3c8274c5d829777b70f0b76a2288fd60" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set</name></member>
+      <member refid="classGambit_1_1Spec_1a24d8166cfb2158151a17af9aa692100e" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set</name></member>
+      <member refid="classGambit_1_1Spec_1a16af53e2c8878cf0432b99cf63e3161b" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a723f6a66f3875abd2c6a6e8d8e03266d" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ad272d296f35e6ad0168b4e092eb53943" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1abc80e335179d3633c2f537325673e0ab" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a456eeb816ef8539eaa8bd85e04d6f1c8" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1adef6cacf9f63fcd1cbba22629399ad18" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a8f4bd036dd357d53e34e28615842a803" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1ae0c6a2e9b63648b48911b76d6fabf63d" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override_vector</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a53c514918a7a32dce21697dbc9af95d7" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override_vector</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1af1551952a18488ce3793e062bf933a7a" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override_vector</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a21cab80b6c51bfb5801fb5e31896e164" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_override_vector</name></member>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1aa2d5592f33bdff29729776438940dbb8" prot="private" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>set_pole_mass_uncertainties</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1aa76069404bc7b1277019f7a879d7ff42" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>SetScale</name></member>
+      <member refid="classGambit_1_1Spec_1a0ce21458302cf6f6e7597408ca8cd068" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>setter_maps</name></member>
+      <member refid="classGambit_1_1Spec_1a72b345be00d45ee6413b1d6a7e281124" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>SetterMaps</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a033d950f622a16f74a1aab119cd2796a" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>SLHASimpleSpec</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1aff0811b68274cc7481c2670d823c5878" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>SLHASimpleSpec</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a1196729a5d130a7a92a0b12dc6316564" prot="protected" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>slhawrap</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a86e81042c8a0c13821a9c45d616c5b9b" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>soft_lower</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a3fa1af32eea87011aa4c6dce006878c7" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>soft_upper</name></member>
+      <member refid="classGambit_1_1Spec_1a42196ab2958c64ec51fdfbc175808dad" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>Spec</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a56f353d2be541104f324b2e449a0e682" prot="public" virt="non-virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>SubSpectrum</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a7f86c4329e031f37ec2faffa5b1a48f4" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>writeSLHAfile</name></member>
+      <member refid="classGambit_1_1MSSMSimpleSpec_1a4705127ef5d41de2152e5754bc0a6833" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>~MSSMSimpleSpec</name></member>
+      <member refid="classGambit_1_1SLHASimpleSpec_1a47256750fa5ed4978df930d61e7c5022" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>~SLHASimpleSpec</name></member>
+      <member refid="classGambit_1_1Spec_1ac619e173f59a1f523001981952ed30ef" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>~Spec</name></member>
+      <member refid="classGambit_1_1SubSpectrum_1a52ae9f8b079817bb6a26b53779fd1df9" prot="public" virt="virtual"><scope>Gambit::MSSMSimpleSpec</scope><name>~SubSpectrum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

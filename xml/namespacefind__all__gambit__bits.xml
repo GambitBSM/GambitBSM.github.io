@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespacefind__all__gambit__bits" kind="namespace" language="Python">
+    <compoundname>find_all_gambit_bits</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="find__all__gambit__bits_8py_1a3a3636d00f3bded4f01d1c040655c01d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>find_all_gambit_bits.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <qualifiedname>find_all_gambit_bits.parser</qualifiedname>
+        <initializer>=  argparse.ArgumentParser(description=)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/find_all_gambit_bits.py" line="38" column="1" bodyfile="Utils/scripts/find_all_gambit_bits.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="find__all__gambit__bits_8py_1a063910ca9bea22506980d837d7bca5bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>find_all_gambit_bits.required</definition>
+        <argsstring></argsstring>
+        <name>required</name>
+        <qualifiedname>find_all_gambit_bits.required</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/find_all_gambit_bits.py" line="39" column="1" bodyfile="Utils/scripts/find_all_gambit_bits.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="find__all__gambit__bits_8py_1a6faaaa5f6ac9adceb4aa10d51f0da04a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>find_all_gambit_bits.True</definition>
+        <argsstring></argsstring>
+        <name>True</name>
+        <qualifiedname>find_all_gambit_bits.True</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/find_all_gambit_bits.py" line="39" column="1" bodyfile="Utils/scripts/find_all_gambit_bits.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="find__all__gambit__bits_8py_1ab836f6360911429dae65d59079bb6c3d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>find_all_gambit_bits.help</definition>
+        <argsstring></argsstring>
+        <name>help</name>
+        <qualifiedname>find_all_gambit_bits.help</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/find_all_gambit_bits.py" line="39" column="1" bodyfile="Utils/scripts/find_all_gambit_bits.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="find__all__gambit__bits_8py_1a82afdc3ef6fde71eefabd487f89100ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>find_all_gambit_bits.args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <qualifiedname>find_all_gambit_bits.args</qualifiedname>
+        <initializer>=  parser.parse_args()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/find_all_gambit_bits.py" line="41" column="1" bodyfile="Utils/scripts/find_all_gambit_bits.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="find__all__gambit__bits_8py_1a46cbd70e8b90f53ea11e5516b1d0d79f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def find_all_gambit_bits.get_bits_from_directory_list</definition>
+        <argsstring>(gambit_directory)</argsstring>
+        <name>get_bits_from_directory_list</name>
+        <qualifiedname>find_all_gambit_bits.get_bits_from_directory_list</qualifiedname>
+        <param>
+          <type>gambit_directory</type>
+          <defname>gambit_directory</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get Gambit Bits.
+
+Return a sorted list of directory names with &quot;Bit&quot; in the name. 
+This effectively generates a list of all available Bits in Gambit based on the established nameing scheme inside the Gambit repository.
+
+Args:
+    gambit_directory (str): Directory to search in. To work properly this has to be the Gambit source directory.
+
+Returns:
+    list: sorted list of Gambit Bits, except ScannerBit
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/find_all_gambit_bits.py" line="8" column="1" bodyfile="Utils/scripts/find_all_gambit_bits.py" bodystart="8" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="find__all__gambit__bits_8py_1a4de2009616257c8e64273b5b88fad619" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def find_all_gambit_bits.write_list_to_yaml</definition>
+        <argsstring>(list_of_bits, output_file, yaml_key=&quot;gambit_bits&quot;)</argsstring>
+        <name>write_list_to_yaml</name>
+        <qualifiedname>find_all_gambit_bits.write_list_to_yaml</qualifiedname>
+        <param>
+          <type>list_of_bits</type>
+          <defname>list_of_bits</defname>
+        </param>
+        <param>
+          <type>output_file</type>
+          <defname>output_file</defname>
+        </param>
+        <param>
+          <type>yaml_key</type>
+          <defname>yaml_key</defname>
+          <defval>&quot;gambit_bits&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Write given list to a yaml file.
+
+Args:
+    list_of_bits list(str): List of Gambit Bits.
+    output_file (str): Path/name for the output file.
+    yaml_key (str): Key which is used to write the yaml file.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/scripts/find_all_gambit_bits.py" line="23" column="1" bodyfile="Utils/scripts/find_all_gambit_bits.py" bodystart="23" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/scripts/find_all_gambit_bits.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

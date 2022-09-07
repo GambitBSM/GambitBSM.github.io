@@ -4,8 +4,7 @@ description: 'A class for managing collections of [Analysis](/documentation/code
 
 ---
 
-
-
+# Gambit::ColliderBit::AnalysisContainer
 
 
 
@@ -22,30 +21,30 @@ A class for managing collections of [Analysis](/documentation/code/classes/class
 | -------------- | -------------- |
 | | **[AnalysisContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analysiscontainer)**()<br>Constructor.  |
 | | **[~AnalysisContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analysiscontainer)**()<br>Destructor.  |
-| void | **[register_thread](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-register-thread)**(str base_key_in)<br>Add container to instances map.  |
+| void | **[register_thread](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-register-thread)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) base_key_in)<br>Add container to instances map.  |
 | void | **[clear](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-clear)**()<br>Delete and clear the analyses contained within this instance.  |
-| void | **[set_current_collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-set-current-collider)**(str collider_name)<br>Set name of current collider.  |
-| str | **[get_current_collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-collider)**() const<br>Get name of current collider.  |
-| bool | **[has_analyses](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-has-analyses)**(str collider_name) const<br>Does this instance contain analyses for the given collider.  |
+| void | **[set_current_collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-set-current-collider)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name)<br>Set name of current collider.  |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[get_current_collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-collider)**() const<br>Get name of current collider.  |
+| bool | **[has_analyses](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-has-analyses)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name) const<br>Does this instance contain analyses for the given collider.  |
 | bool | **[has_analyses](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-has-analyses)**() const<br>Does this instance contain analyses for the current collider.  |
-| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-init)**(const std::vector< str > & analysis_names, str collider_name)<br>Initialize analyses (by names) for a specified collider.  |
-| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-init)**(const std::vector< str > & analysis_names)<br>Initialize analyses (by names) for the current collider.  |
-| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**(str collider_name, str analysis_name)<br>Reset specific analysis.  |
-| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**(str collider_name)<br>Reset all analyses for given collider.  |
+| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-init)**(const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & analysis_names, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name)<br>Initialize analyses (by names) for a specified collider.  |
+| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-init)**(const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & analysis_names)<br>Initialize analyses (by names) for the current collider.  |
+| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) analysis_name)<br>Reset specific analysis.  |
+| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name)<br>Reset all analyses for given collider.  |
 | void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset)**()<br>Reset all analyses for the current collider.  |
 | void | **[reset_all](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-reset-all)**()<br>Reset all analyses for all colliders.  |
-| const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * | **[get_analysis_pointer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-analysis-pointer)**(str collider_name, str analysis_name) const<br>Get pointer to specific analysis.  |
-| const std::map< str, [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_collider_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-collider-analyses-map)**(str collider_name) const<br>Get analyses map for a specific collider.  |
-| const std::map< str, [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_current_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-analyses-map)**() const<br>Get analyses map for the current collider.  |
-| const std::map< str, std::map< str, [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > > & | **[get_full_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-full-analyses-map)**() const<br>Get the full analyses map.  |
-| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, str collider_name, str analysis_name) const<br>Pass event through specific analysis.  |
-| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, str collider_name) const<br>Pass event through all analysis for a specific collider.  |
+| const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * | **[get_analysis_pointer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-analysis-pointer)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) analysis_name) const<br>Get pointer to specific analysis.  |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_collider_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-collider-analyses-map)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name) const<br>Get analyses map for a specific collider.  |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_current_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-analyses-map)**() const<br>Get analyses map for the current collider.  |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > > & | **[get_full_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-full-analyses-map)**() const<br>Get the full analyses map.  |
+| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) analysis_name) const<br>Pass event through specific analysis.  |
+| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name) const<br>Pass event through all analysis for a specific collider.  |
 | void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event) const<br>Pass event through all analysis for the current collider.  |
-| void | **[collect_and_add_signal](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**(str collider_name, str analysis_name) |
-| void | **[collect_and_add_signal](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**(str collider_name) |
+| void | **[collect_and_add_signal](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) analysis_name) |
+| void | **[collect_and_add_signal](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name) |
 | void | **[collect_and_add_signal](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**() |
-| void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(str collider_name, str analysis_name, double xsec_per_event)<br>Scale results for specific analysis.  |
-| void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(str collider_name, double xsec_per_event)<br>Scale results for all analyses for given collider.  |
+| void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) analysis_name, double xsec_per_event)<br>Scale results for specific analysis.  |
+| void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, double xsec_per_event)<br>Scale results for all analyses for given collider.  |
 | void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(double xsec_per_event)<br>Scale results for all analyses for the current collider.  |
 | void | **[scale_all](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale-all)**(double xsec_per_event)<br>Scale results for all analyses across all colliders.  |
 
@@ -343,4 +342,4 @@ Scale results for all analyses across all colliders.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

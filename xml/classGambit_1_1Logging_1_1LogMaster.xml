@@ -1,0 +1,1131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Logging_1_1LogMaster" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Logging::LogMaster</compoundname>
+    <includes refid="logmaster_8hpp" local="no">logmaster.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a70434feb80911a4ebd57f7dc20c654a7" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* Gambit::Logging::LogMaster::current_module</definition>
+        <argsstring></argsstring>
+        <name>current_module</name>
+        <qualifiedname>Gambit::Logging::LogMaster::current_module</qualifiedname>
+        <briefdescription>
+<para>Variables that need to be threadsafe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>int current_function; Can generalise to this if we discover that we really want to... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="174" column="13" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a1b98625fe7eb1cb936a2ba1fbe90b4b0" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* Gambit::Logging::LogMaster::current_backend</definition>
+        <argsstring></argsstring>
+        <name>current_backend</name>
+        <qualifiedname>Gambit::Logging::LogMaster::current_backend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="175" column="13" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a98146b4d252e03a99e70f9a9601f8afd" prot="private" static="no" mutable="no">
+        <type>std::ostringstream *</type>
+        <definition>std::ostringstream* Gambit::Logging::LogMaster::stream</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <qualifiedname>Gambit::Logging::LogMaster::stream</qualifiedname>
+        <briefdescription>
+<para>Buffer variables needed for stream logging. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="178" column="28" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1ae0e50cf264ec05a524632d3d9dd9f7cb" prot="private" static="no" mutable="no">
+        <type>std::set&lt; int &gt; *</type>
+        <definition>std::set&lt;int&gt;* Gambit::Logging::LogMaster::streamtags</definition>
+        <argsstring></argsstring>
+        <name>streamtags</name>
+        <qualifiedname>Gambit::Logging::LogMaster::streamtags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="179" column="18" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a96e29f47314039ae2c0e5affeaa47f0d" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structGambit_1_1Logging_1_1Message" kindref="compound">Message</ref> &gt; *</type>
+        <definition>std::deque&lt;Message&gt;* Gambit::Logging::LogMaster::backlog</definition>
+        <argsstring></argsstring>
+        <name>backlog</name>
+        <qualifiedname>Gambit::Logging::LogMaster::backlog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Messages sent before logger objects are created will be buffered Same for messages sent while inside omp parallel blocks </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="183" column="20" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a42acff166e5df3e5c99efef58b82ab60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Logging::LogMaster::LogMaster</definition>
+        <argsstring>()</argsstring>
+        <name>LogMaster</name>
+        <qualifiedname>Gambit::Logging::LogMaster::LogMaster</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Logger class member function definitions.</para>
+<para><ref refid="namespaceGambit_1_1Logging" kindref="compound">Logging</ref> &quot;controller&quot; object Keeps track of the individual logging objects. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="53" column="9" bodyfile="Logs/src/logmaster.cpp" bodystart="55" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1ac9a8963f346be04d9fcc708461f70238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Logging::LogMaster::LogMaster</definition>
+        <argsstring>(std::map&lt; std::set&lt; int &gt;, BaseLogger * &gt; &amp;)</argsstring>
+        <name>LogMaster</name>
+        <qualifiedname>Gambit::Logging::LogMaster::LogMaster</qualifiedname>
+        <param>
+          <type>std::map&lt; std::set&lt; int &gt;, <ref refid="classGambit_1_1Logging_1_1BaseLogger" kindref="compound">BaseLogger</ref> * &gt; &amp;</type>
+          <defname>loggersIN</defname>
+        </param>
+        <briefdescription>
+<para>Alternate constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Alternate constructor Mainly for testing; lets you pass in pre-built loggers and their tags </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="57" column="9" bodyfile="Logs/src/logmaster.cpp" bodystart="74" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a8840f417b787abc2a8e80a64fe85ff40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Logging::LogMaster::~LogMaster</definition>
+        <argsstring>()</argsstring>
+        <name>~LogMaster</name>
+        <qualifiedname>Gambit::Logging::LogMaster::~LogMaster</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor If errors happen before the inifile is loaded, we need to dump the log messages (that have been buffered) into a default log file. These will be log messages coming from initialisation code and so on. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="62" column="9" bodyfile="Logs/src/logmaster.cpp" bodystart="171" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a941f17cc49e789a69a65b91b43b435d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::init_memory</definition>
+        <argsstring>()</argsstring>
+        <name>init_memory</name>
+        <qualifiedname>Gambit::Logging::LogMaster::init_memory</qualifiedname>
+        <briefdescription>
+<para>Initialise dynamic memory required for thread safety. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="65" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="93" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a3073358f11ac268a9ebc942c6400c6fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::initialise</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; std::set&lt; std::string &gt;, std::string &gt; &gt; &amp;)</argsstring>
+        <name>initialise</name>
+        <qualifiedname>Gambit::Logging::LogMaster::initialise</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::pair&lt; std::set&lt; std::string &gt;, std::string &gt; &gt; &amp;</type>
+          <defname>loggerinfo</defname>
+        </param>
+        <briefdescription>
+<para>Function to construct loggers according to blueprint. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="70" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="227" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1abdc20d486ce7166363cb613661fd36a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::initialise</definition>
+        <argsstring>(std::map&lt; std::set&lt; std::string &gt;, std::string &gt; &amp;)</argsstring>
+        <name>initialise</name>
+        <qualifiedname>Gambit::Logging::LogMaster::initialise</qualifiedname>
+        <param>
+          <type>std::map&lt; std::set&lt; std::string &gt;, std::string &gt; &amp;</type>
+          <defname>loggerinfo</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="73" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="333" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1aab4431bdc941e5009da8db5aaf2224a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::initialise</definition>
+        <argsstring>(std::map&lt; std::string, std::string &gt; &amp;)</argsstring>
+        <name>initialise</name>
+        <qualifiedname>Gambit::Logging::LogMaster::initialise</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, std::string &gt; &amp;</type>
+          <defname>loggerinfo</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="76" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="347" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a27e4e7c4e83522d4e6c1189b7a8aba21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::disable</definition>
+        <argsstring>()</argsstring>
+        <name>disable</name>
+        <qualifiedname>Gambit::Logging::LogMaster::disable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="79" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="363" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a782db63a25b9d9b9a149bf9610df25d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Logging::LogMaster::disabled</definition>
+        <argsstring>()</argsstring>
+        <name>disabled</name>
+        <qualifiedname>Gambit::Logging::LogMaster::disabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="81" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="376" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a128873c723e1ef28d38839560c77fb04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::enable</definition>
+        <argsstring>()</argsstring>
+        <name>enable</name>
+        <qualifiedname>Gambit::Logging::LogMaster::enable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="83" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="370" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1aa7d94b983cc43137ec8390f5c9d9ff6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::emit_backlog</definition>
+        <argsstring>(bool verbose)</argsstring>
+        <name>emit_backlog</name>
+        <qualifiedname>Gambit::Logging::LogMaster::emit_backlog</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>verbose</declname>
+        </param>
+        <briefdescription>
+<para>Print the backlogs to the default log file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="86" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="137" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a1513c104b241af134c50b16d7dde18f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::input</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>input</name>
+        <qualifiedname>Gambit::Logging::LogMaster::input</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>in</defname>
+        </param>
+        <briefdescription>
+<para>Functions for stream input (actual stream operators which use these are defined in <ref refid="logger_8cpp" kindref="compound">logger.cpp</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle strings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="89" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="671" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1acfe96ea078bbf78e0cc67fedbb510406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::input</definition>
+        <argsstring>(const LogTag &amp;)</argsstring>
+        <name>input</name>
+        <qualifiedname>Gambit::Logging::LogMaster::input</qualifiedname>
+        <param>
+          <type>const LogTag &amp;</type>
+          <defname>tag</defname>
+        </param>
+        <briefdescription>
+<para>Handle LogTag input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="90" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="652" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1aa031e25e71c05b6df89a524f758c34e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::input</definition>
+        <argsstring>(const endofmessage &amp;)</argsstring>
+        <name>input</name>
+        <qualifiedname>Gambit::Logging::LogMaster::input</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Logging_1_1endofmessage" kindref="compound">endofmessage</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Handle end of message character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="91" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="659" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a79cab2dc3c05d5ee7f81e12523d626f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::input</definition>
+        <argsstring>(const manip1)</argsstring>
+        <name>input</name>
+        <qualifiedname>Gambit::Logging::LogMaster::input</qualifiedname>
+        <param>
+          <type>const</type>
+          <declname>manip1</declname>
+          <defname>fp</defname>
+        </param>
+        <briefdescription>
+<para>Handle various stream manipulators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="93" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="678" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a96c6248c07ac877222d7a279dec0da86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::input</definition>
+        <argsstring>(const manip2)</argsstring>
+        <name>input</name>
+        <qualifiedname>Gambit::Logging::LogMaster::input</qualifiedname>
+        <param>
+          <type>const</type>
+          <declname>manip2</declname>
+          <defname>fp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="94" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="684" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1ae9934af4246ada483a7de673a0b226fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::input</definition>
+        <argsstring>(const manip3)</argsstring>
+        <name>input</name>
+        <qualifiedname>Gambit::Logging::LogMaster::input</qualifiedname>
+        <param>
+          <type>const</type>
+          <declname>manip3</declname>
+          <defname>fp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="95" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="690" bodyend="694"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1af1bcea2c360901c4afba182460541a26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>message</defname>
+        </param>
+        <briefdescription>
+<para>Main logging function (user-friendly overloaded version) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="99" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="407" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a4837a19210140703dabac5ce8d07f5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::string &amp;, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="100" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="413" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a2ef81c1f527cb84962b1d859c7677ace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::string &amp;, LogTag, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="101" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="420" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a5b364814fdb7f9a37cb5d30dccd8f2cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::string &amp;, LogTag, LogTag, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag3</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="102" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="428" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1ad5281c8e8ef98af7b3c4dba24dd49621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::string &amp;, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag4</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="103" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="437" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1af82807608da933fb279438a4d3cd826f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::string &amp;, LogTag, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag4</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag5</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="104" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="447" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1aaaab877f12bdb1c87f53b72a0d99a2ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::ostringstream &amp;)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::ostringstream &amp;</type>
+          <defname>message</defname>
+        </param>
+        <briefdescription>
+<para>stringstream versions.... </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="108" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="461" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a401e6b7b422b128c5717b249484eaea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::ostringstream &amp;, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::ostringstream &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="109" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="467" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a8c40e56c2025b3e6ae4ec0f64f03e277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::ostringstream &amp;, LogTag, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::ostringstream &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="110" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="474" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a2645c480d17af81bbb5281f6309b8ce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::ostringstream &amp;, LogTag, LogTag, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::ostringstream &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag3</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="111" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="482" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a3f4d1f3226f8e6f9d069371d49e6ecce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::ostringstream &amp;, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::ostringstream &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag4</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="112" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="491" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a4f599a0f1142a07ca2a6afb443b68853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::ostringstream &amp;, LogTag, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::ostringstream &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag4</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>tag5</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="113" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="501" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a536c5d09160f5144bc2add7ecfb33cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::string &amp;, std::set&lt; LogTag &gt; &amp;)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>std::set&lt; LogTag &gt; &amp;</type>
+          <defname>tags</defname>
+        </param>
+        <briefdescription>
+<para>Internal version of main logging function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="117" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="516" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a2ed5bbc0afe37b3cb004cc65c8ba358d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::string &amp;, std::set&lt; int &gt; &amp;)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>std::set&lt; int &gt; &amp;</type>
+          <defname>tags</defname>
+        </param>
+        <briefdescription>
+<para>Serious version of main logging function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="118" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="533" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1acf46c38900ee96f7512fe9aadab94208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::finalsend</definition>
+        <argsstring>(const Message &amp;)</argsstring>
+        <name>finalsend</name>
+        <qualifiedname>Gambit::Logging::LogMaster::finalsend</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1Logging_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <defname>mail</defname>
+        </param>
+        <briefdescription>
+<para>Version of send function used by buffer dump; skips all the tag modification stuff. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="119" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="574" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a61527e2e33420f8d1ccb2e6622072ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::ostringstream &amp;, std::set&lt; LogTag &gt; &amp;)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::ostringstream &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>std::set&lt; LogTag &gt; &amp;</type>
+          <defname>tags</defname>
+        </param>
+        <briefdescription>
+<para>stringstream overloads... </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="122" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="610" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a14b714faeeec861748f3cf7a8d305488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::send</definition>
+        <argsstring>(const std::ostringstream &amp;, std::set&lt; int &gt; &amp;)</argsstring>
+        <name>send</name>
+        <qualifiedname>Gambit::Logging::LogMaster::send</qualifiedname>
+        <param>
+          <type>const std::ostringstream &amp;</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>std::set&lt; int &gt; &amp;</type>
+          <defname>tags</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="123" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="615" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a719aff569b1e2a72069b5d575b4c6855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::entering_module</definition>
+        <argsstring>(int)</argsstring>
+        <name>entering_module</name>
+        <qualifiedname>Gambit::Logging::LogMaster::entering_module</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+<para>Set the internal variables tracking which module and/or backend is currently running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="126" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="620" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1ab3fc89a118152a8a7fb96497c42c524b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::leaving_module</definition>
+        <argsstring>()</argsstring>
+        <name>leaving_module</name>
+        <qualifiedname>Gambit::Logging::LogMaster::leaving_module</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="127" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="626" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1adf3b1654b08638f10228b244c699fde7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::entering_backend</definition>
+        <argsstring>(int)</argsstring>
+        <name>entering_backend</name>
+        <qualifiedname>Gambit::Logging::LogMaster::entering_backend</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="128" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="633" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1acd6fb1680da53682d6d74ab3c4301122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::leaving_backend</definition>
+        <argsstring>()</argsstring>
+        <name>leaving_backend</name>
+        <qualifiedname>Gambit::Logging::LogMaster::leaving_backend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="129" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="640" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a5b6a3848e135dee6dcfe50670603639e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::empty_backlog</definition>
+        <argsstring>()</argsstring>
+        <name>empty_backlog</name>
+        <qualifiedname>Gambit::Logging::LogMaster::empty_backlog</qualifiedname>
+        <briefdescription>
+<para>Empty the backlog buffer to the &apos;send&apos; function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="144" column="14" bodyfile="Logs/src/logmaster.cpp" bodystart="382" bodyend="403"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1LogMaster_1a3dc7072704d49c58143613dfc0268bb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Logging::LogMaster::set_log_debug_messages</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>set_log_debug_messages</name>
+        <qualifiedname>Gambit::Logging::LogMaster::set_log_debug_messages</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Choose whether &quot;Debug&quot; tagged log messages will be ignored (i.e. not logged) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setters for behaviour options Must be used before &quot;initialise&quot; in order to have any effect Choose whether a separate log file for each MPI process is used NOW FORBIDDEN! Always must be true to avoid concurrent write access issues void set_separate_file_per_process(bool flag) {separate_file_per_process=flag;} </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="138" column="14" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="138" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a06f2bba3000cb7a21283b47debfa06ee" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::set&lt; int &gt;, <ref refid="classGambit_1_1Logging_1_1BaseLogger" kindref="compound">BaseLogger</ref> * &gt;</type>
+        <definition>std::map&lt;std::set&lt;int&gt;,BaseLogger*&gt; Gambit::Logging::LogMaster::loggers</definition>
+        <argsstring></argsstring>
+        <name>loggers</name>
+        <qualifiedname>Gambit::Logging::LogMaster::loggers</qualifiedname>
+        <briefdescription>
+<para>Map to identify loggers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="147" column="18" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1af6aa850962e123177100a9456ff12e54" prot="private" static="no" mutable="no">
+        <type>std::set&lt; int &gt;</type>
+        <definition>std::set&lt;int&gt; Gambit::Logging::LogMaster::ignore</definition>
+        <argsstring></argsstring>
+        <name>ignore</name>
+        <qualifiedname>Gambit::Logging::LogMaster::ignore</qualifiedname>
+        <briefdescription>
+<para>Global ignore set; if these tags/integers are seen, ignore messages containing them. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="150" column="18" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1aab083a584ed07ba76421d92004f6ec9d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Logging::LogMaster::loggers_readyQ</definition>
+        <argsstring></argsstring>
+        <name>loggers_readyQ</name>
+        <qualifiedname>Gambit::Logging::LogMaster::loggers_readyQ</qualifiedname>
+        <briefdescription>
+<para>Flag to set whether loggers have been initialised not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="153" column="14" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a648bc5bb804ee2d6c60f054fb074ef82" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Logging::LogMaster::silenced</definition>
+        <argsstring></argsstring>
+        <name>silenced</name>
+        <qualifiedname>Gambit::Logging::LogMaster::silenced</qualifiedname>
+        <briefdescription>
+<para>Flag to silence logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="156" column="14" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a55e2ab7009f5972ee3ffd7529c243ce2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Logging::LogMaster::separate_file_per_process</definition>
+        <argsstring></argsstring>
+        <name>separate_file_per_process</name>
+        <qualifiedname>Gambit::Logging::LogMaster::separate_file_per_process</qualifiedname>
+        <briefdescription>
+<para>Flag to store log messages for different processes in separate files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="159" column="14" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a3a98978ba1c0b88cfcca88f3ff3a154b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Logging::LogMaster::log_debug_messages</definition>
+        <argsstring></argsstring>
+        <name>log_debug_messages</name>
+        <qualifiedname>Gambit::Logging::LogMaster::log_debug_messages</qualifiedname>
+        <briefdescription>
+<para>Flag to ignore Debug tagged messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="162" column="14" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a6cfb1c3bd5a5f580a44bde1b1e19a4fd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::Logging::LogMaster::MPIrank</definition>
+        <argsstring></argsstring>
+        <name>MPIrank</name>
+        <qualifiedname>Gambit::Logging::LogMaster::MPIrank</qualifiedname>
+        <briefdescription>
+<para>MPI variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="165" column="13" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1a5378d57d1d2d5cbee768f2e9e12f6df8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::Logging::LogMaster::MPIsize</definition>
+        <argsstring></argsstring>
+        <name>MPIsize</name>
+        <qualifiedname>Gambit::Logging::LogMaster::MPIsize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="166" column="13" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Logging_1_1LogMaster_1adba2edd26e7dd6ebd75e8fa20abb837e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::Logging::LogMaster::globlMaxThreads</definition>
+        <argsstring></argsstring>
+        <name>globlMaxThreads</name>
+        <qualifiedname>Gambit::Logging::LogMaster::globlMaxThreads</qualifiedname>
+        <briefdescription>
+<para>Max number of threads that could potentially be running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logmaster.hpp" line="169" column="13" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="namespaceGambit_1_1Logging" kindref="compound">Logging</ref> &quot;controller&quot; object Keeps track of the various &quot;Logger&quot; objects </para>
+    </detaileddescription>
+    <location file="Logs/include/gambit/Logs/logmaster.hpp" line="49" column="5" bodyfile="Logs/include/gambit/Logs/logmaster.hpp" bodystart="50" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a96e29f47314039ae2c0e5affeaa47f0d" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>backlog</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a1b98625fe7eb1cb936a2ba1fbe90b4b0" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>current_backend</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a70434feb80911a4ebd57f7dc20c654a7" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>current_module</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a27e4e7c4e83522d4e6c1189b7a8aba21" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>disable</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a782db63a25b9d9b9a149bf9610df25d5" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>disabled</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1aa7d94b983cc43137ec8390f5c9d9ff6c" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>emit_backlog</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a5b6a3848e135dee6dcfe50670603639e" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>empty_backlog</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a128873c723e1ef28d38839560c77fb04" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>enable</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1adf3b1654b08638f10228b244c699fde7" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>entering_backend</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a719aff569b1e2a72069b5d575b4c6855" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>entering_module</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1acf46c38900ee96f7512fe9aadab94208" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>finalsend</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1adba2edd26e7dd6ebd75e8fa20abb837e" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>globlMaxThreads</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1af6aa850962e123177100a9456ff12e54" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>ignore</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a941f17cc49e789a69a65b91b43b435d5" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>init_memory</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a3073358f11ac268a9ebc942c6400c6fd" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>initialise</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1abdc20d486ce7166363cb613661fd36a1" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>initialise</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1aab4431bdc941e5009da8db5aaf2224a4" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>initialise</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a1513c104b241af134c50b16d7dde18f1" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>input</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1acfe96ea078bbf78e0cc67fedbb510406" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>input</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1aa031e25e71c05b6df89a524f758c34e9" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>input</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a79cab2dc3c05d5ee7f81e12523d626f7" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>input</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a96c6248c07ac877222d7a279dec0da86" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>input</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1ae9934af4246ada483a7de673a0b226fd" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>input</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1acd6fb1680da53682d6d74ab3c4301122" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>leaving_backend</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1ab3fc89a118152a8a7fb96497c42c524b" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>leaving_module</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a3a98978ba1c0b88cfcca88f3ff3a154b" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>log_debug_messages</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a06f2bba3000cb7a21283b47debfa06ee" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>loggers</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1aab083a584ed07ba76421d92004f6ec9d" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>loggers_readyQ</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a42acff166e5df3e5c99efef58b82ab60" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>LogMaster</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1ac9a8963f346be04d9fcc708461f70238" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>LogMaster</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a6cfb1c3bd5a5f580a44bde1b1e19a4fd" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>MPIrank</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a5378d57d1d2d5cbee768f2e9e12f6df8" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>MPIsize</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1af1bcea2c360901c4afba182460541a26" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a4837a19210140703dabac5ce8d07f5eb" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a2ef81c1f527cb84962b1d859c7677ace" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a5b364814fdb7f9a37cb5d30dccd8f2cd" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1ad5281c8e8ef98af7b3c4dba24dd49621" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1af82807608da933fb279438a4d3cd826f" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1aaaab877f12bdb1c87f53b72a0d99a2ce" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a401e6b7b422b128c5717b249484eaea4" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a8c40e56c2025b3e6ae4ec0f64f03e277" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a2645c480d17af81bbb5281f6309b8ce6" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a3f4d1f3226f8e6f9d069371d49e6ecce" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a4f599a0f1142a07ca2a6afb443b68853" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a536c5d09160f5144bc2add7ecfb33cdc" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a2ed5bbc0afe37b3cb004cc65c8ba358d" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a61527e2e33420f8d1ccb2e6622072ea2" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a14b714faeeec861748f3cf7a8d305488" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>send</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a55e2ab7009f5972ee3ffd7529c243ce2" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>separate_file_per_process</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a3dc7072704d49c58143613dfc0268bb8" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>set_log_debug_messages</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a648bc5bb804ee2d6c60f054fb074ef82" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>silenced</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a98146b4d252e03a99e70f9a9601f8afd" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>stream</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1ae0e50cf264ec05a524632d3d9dd9f7cb" prot="private" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>streamtags</name></member>
+      <member refid="classGambit_1_1Logging_1_1LogMaster_1a8840f417b787abc2a8e80a64fe85ff40" prot="public" virt="non-virtual"><scope>Gambit::Logging::LogMaster</scope><name>~LogMaster</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

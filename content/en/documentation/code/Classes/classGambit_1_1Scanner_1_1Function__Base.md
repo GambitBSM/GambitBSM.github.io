@@ -4,8 +4,7 @@ description: 'Generic function base used by the scanner. Can be Likelihood, obse
 
 ---
 
-
-
+# Gambit::Scanner::Function_Base
 
 
 
@@ -23,4 +22,4 @@ class Gambit::Scanner::Function_Base;
 Generic function base used by the scanner. Can be Likelihood, observables, etc. 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structGambit_1_1enable__if__not__all__member__vector" kind="struct" language="C++" prot="public">
+    <compoundname>Gambit::enable_if_not_all_member_vector</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename ret</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>args</declname>
+        <defname>args</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structGambit_1_1enable__if__not__all__member__vector_1abefd56542e040db665db17bfd07d60e7" prot="public" static="no">
+        <type>std::enable_if&lt;!<ref refid="structGambit_1_1is__all__member__vector" kindref="compound">is_all_member_vector</ref>&lt; args... &gt;::value, ret &gt;</type>
+        <definition>typedef std::enable_if&lt;!is_all_member_vector&lt;args...&gt;::value, ret&gt; Gambit::enable_if_not_all_member_vector&lt; ret, args &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>Gambit::enable_if_not_all_member_vector::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/variadic_functions.hpp" line="565" column="41" bodyfile="Utils/include/gambit/Utils/variadic_functions.hpp" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/variadic_functions.hpp" line="563" column="9" bodyfile="Utils/include/gambit/Utils/variadic_functions.hpp" bodystart="564" bodyend="566"/>
+    <listofallmembers>
+      <member refid="structGambit_1_1enable__if__not__all__member__vector_1abefd56542e040db665db17bfd07d60e7" prot="public" virt="non-virtual"><scope>Gambit::enable_if_not_all_member_vector</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

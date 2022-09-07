@@ -10,7 +10,7 @@
     <innerclass refid="structGambit_1_1DRes_1_1Rule" prot="public">Gambit::DRes::Rule</innerclass>
       <sectiondef kind="user-defined">
       <memberdef kind="typedef" id="depresolver_8hpp_1ab3908c48a2c52ebf5d116d230ac62499" prot="public" static="no">
-        <type>adjacency_list&lt; vecS, vecS, bidirectionalS, functor *, vecS &gt;</type>
+        <type>adjacency_list&lt; vecS, vecS, bidirectionalS, <ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *, vecS &gt;</type>
         <definition>typedef adjacency_list&lt;vecS, vecS, bidirectionalS, functor*, vecS&gt; Gambit::DRes::MasterGraphType</definition>
         <argsstring></argsstring>
         <name>MasterGraphType</name>
@@ -84,7 +84,7 @@
         <location file="Core/include/gambit/Core/depresolver.hpp" line="69" column="22" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="depresolver_8hpp_1af5db49b50d75b4dd70c8b57acf8672f7" prot="public" static="no">
-        <type>std::map&lt; std::string, std::vector&lt; functor * &gt; &gt;</type>
+        <type>std::map&lt; std::string, std::vector&lt; <ref refid="classGambit_1_1functor" kindref="compound">functor</ref> * &gt; &gt;</type>
         <definition>typedef std::map&lt;std::string, std::vector&lt;functor*&gt; &gt; Gambit::DRes::outputMapType</definition>
         <argsstring></argsstring>
         <name>outputMapType</name>
@@ -123,11 +123,11 @@
         <name>stringComp</name>
         <qualifiedname>Gambit::DRes::stringComp</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <declname>s1</declname>
         </param>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <declname>s2</declname>
         </param>
         <param>
@@ -151,15 +151,15 @@
         <name>typeComp</name>
         <qualifiedname>Gambit::DRes::typeComp</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>s1</defname>
         </param>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>s2</defname>
         </param>
         <param>
-          <type>const Utils::type_equivalency &amp;</type>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
           <defname>eq</defname>
         </param>
         <param>
@@ -177,7 +177,7 @@
         <location file="Core/src/depresolver.cpp" line="280" column="10" bodyfile="Core/src/depresolver.cpp" bodystart="280" bodyend="306" declfile="Core/include/gambit/Core/depresolver.hpp" declline="115" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="error__handlers_8hpp_1abda0801bcf720c49927e2b62e0678648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>error &amp;</type>
+        <type><ref refid="classGambit_1_1error" kindref="compound">error</ref> &amp;</type>
         <definition>error &amp; Gambit::DRes::dependency_resolver_error</definition>
         <argsstring>()</argsstring>
         <name>dependency_resolver_error</name>
@@ -192,7 +192,7 @@
         <location file="Core/src/error_handlers.cpp" line="42" column="11" bodyfile="Core/src/error_handlers.cpp" bodystart="42" bodyend="46" declfile="Core/include/gambit/Core/error_handlers.hpp" declline="34" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="error__handlers_8hpp_1aef6f186a60427ce462d26acb91a8c9d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>warning &amp;</type>
+        <type><ref refid="classGambit_1_1warning" kindref="compound">warning</ref> &amp;</type>
         <definition>warning &amp; Gambit::DRes::dependency_resolver_warning</definition>
         <argsstring>()</argsstring>
         <name>dependency_resolver_warning</name>
@@ -287,7 +287,7 @@
         <name>quantityMatchesIniEntry</name>
         <qualifiedname>Gambit::DRes::quantityMatchesIniEntry</qualifiedname>
         <param>
-          <type>const sspair &amp;</type>
+          <type>const <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &amp;</type>
           <declname>quantity</declname>
         </param>
         <param>
@@ -295,7 +295,7 @@
           <declname>observable</declname>
         </param>
         <param>
-          <type>const Utils::type_equivalency &amp;</type>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
           <declname>eq</declname>
         </param>
         <briefdescription>
@@ -313,7 +313,7 @@
         <name>capabilityMatchesIniEntry</name>
         <qualifiedname>Gambit::DRes::capabilityMatchesIniEntry</qualifiedname>
         <param>
-          <type>const sspair &amp;</type>
+          <type>const <ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref> &amp;</type>
           <declname>quantity</declname>
         </param>
         <param>
@@ -335,7 +335,7 @@
         <name>moduleFuncMatchesIniEntry</name>
         <qualifiedname>Gambit::DRes::moduleFuncMatchesIniEntry</qualifiedname>
         <param>
-          <type>functor *</type>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
           <declname>f</declname>
         </param>
         <param>
@@ -343,7 +343,7 @@
           <declname>e</declname>
         </param>
         <param>
-          <type>const Utils::type_equivalency &amp;</type>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
           <declname>eq</declname>
         </param>
         <briefdescription>
@@ -361,7 +361,7 @@
         <name>backendFuncMatchesIniEntry</name>
         <qualifiedname>Gambit::DRes::backendFuncMatchesIniEntry</qualifiedname>
         <param>
-          <type>functor *</type>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
           <declname>f</declname>
         </param>
         <param>
@@ -369,7 +369,7 @@
           <declname>e</declname>
         </param>
         <param>
-          <type>const Utils::type_equivalency &amp;</type>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
           <declname>eq</declname>
         </param>
         <briefdescription>
@@ -405,7 +405,7 @@
         <name>matchesRules</name>
         <qualifiedname>Gambit::DRes::matchesRules</qualifiedname>
         <param>
-          <type>functor *</type>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
           <declname>f</declname>
         </param>
         <param>

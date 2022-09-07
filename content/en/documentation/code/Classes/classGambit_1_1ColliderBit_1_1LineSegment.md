@@ -4,8 +4,7 @@ description: 'A simple container for a line segment on an xy plane. '
 
 ---
 
-
-
+# Gambit::ColliderBit::LineSegment
 
 
 
@@ -203,4 +202,4 @@ Determine if this intersects with other and where.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

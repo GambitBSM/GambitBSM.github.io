@@ -4,8 +4,7 @@ description: 'Container for all the plugin info from the inifile and Scannerbit.
 
 ---
 
-
-
+# Gambit::Scanner::Plugins::pluginInfo
 
 
 
@@ -21,7 +20,7 @@ Container for all the plugin info from the inifile and Scannerbit.
 |                | Name           |
 | -------------- | -------------- |
 | | **[pluginInfo](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-plugininfo)**() |
-| void | **[iniFile](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-inifile)**(const Options & options_in)<br>Enter plugin inifile.  |
+| void | **[iniFile](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-inifile)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & options_in)<br>Enter plugin inifile.  |
 | void | **[printer_prior](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-printer-prior)**([printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface) & printerIn, [Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/) & prior_in) |
 | bool | **[keep_running](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-keep-running)**() const |
 | void | **[set_running](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/#function-set-running)**(bool b) |
@@ -220,4 +219,4 @@ Get plugin data for single plugin.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

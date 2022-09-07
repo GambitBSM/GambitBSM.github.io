@@ -1,0 +1,1173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespacecombine__hdf5" kind="namespace" language="Python">
+    <compoundname>combine_hdf5</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aa45dc56df16a25f7d251e25dc1b3ae97" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int combine_hdf5.chunksize</definition>
+        <argsstring></argsstring>
+        <name>chunksize</name>
+        <qualifiedname>combine_hdf5.chunksize</qualifiedname>
+        <initializer>=  1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="16" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a11c00d2fe0fd4a638516cab275c27bee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int combine_hdf5.bufferlength</definition>
+        <argsstring></argsstring>
+        <name>bufferlength</name>
+        <qualifiedname>combine_hdf5.bufferlength</qualifiedname>
+        <initializer>=  100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="18" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aa73f1917845807da60e22bd0da3e3636" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int combine_hdf5.max_ppidpairs</definition>
+        <argsstring></argsstring>
+        <name>max_ppidpairs</name>
+        <qualifiedname>combine_hdf5.max_ppidpairs</qualifiedname>
+        <initializer>=  10*bufferlength</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="19" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a5642ff898523a493ee575eac1820bfab" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool combine_hdf5::runchecks</definition>
+        <argsstring></argsstring>
+        <name>runchecks</name>
+        <qualifiedname>combine_hdf5.runchecks</qualifiedname>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="33" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a367042b8d773bfe2092d467185808bdb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool combine_hdf5::delete_tmp</definition>
+        <argsstring></argsstring>
+        <name>delete_tmp</name>
+        <qualifiedname>combine_hdf5.delete_tmp</qualifiedname>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="34" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aef433e542f09a30c471e49bdd4d0a92e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.outfname</definition>
+        <argsstring></argsstring>
+        <name>outfname</name>
+        <qualifiedname>combine_hdf5.outfname</qualifiedname>
+        <initializer>=  sys.argv[1]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="47" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a7835dad3c5d4cd7b13e0f50e27275dce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <qualifiedname>combine_hdf5.group</qualifiedname>
+        <initializer>=  sys.argv[2]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="48" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a9c6b4fc649120cc9c02c6a06529bdba6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.tmp_files</definition>
+        <argsstring></argsstring>
+        <name>tmp_files</name>
+        <qualifiedname>combine_hdf5.tmp_files</qualifiedname>
+        <initializer>=  sys.argv[3:]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="49" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aa6bff104263b744aa51f78604e2da302" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>combine_hdf5.N</qualifiedname>
+        <initializer>=  len(tmp_files)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="50" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a541fdb80c14dffedb8990bfb61f88b1b" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string combine_hdf5.RA_group</definition>
+        <argsstring></argsstring>
+        <name>RA_group</name>
+        <qualifiedname>combine_hdf5.RA_group</qualifiedname>
+        <initializer>=  group + &quot;/RA&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="51" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a1946745c863b03108b05655f437fc89f" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.files</definition>
+        <argsstring></argsstring>
+        <name>files</name>
+        <qualifiedname>combine_hdf5.files</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="61" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a7f0210aeae194a740224fc1224bf5339" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list combine_hdf5.sync_dsets</definition>
+        <argsstring></argsstring>
+        <name>sync_dsets</name>
+        <qualifiedname>combine_hdf5.sync_dsets</qualifiedname>
+        <initializer>=  [set([]) for i in range(N)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="63" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a510b7b1366fa41072f94f5b6d1eb6a77" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list combine_hdf5.RA_dsets</definition>
+        <argsstring></argsstring>
+        <name>RA_dsets</name>
+        <qualifiedname>combine_hdf5.RA_dsets</qualifiedname>
+        <initializer>=  [set([]) for i in range(N)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="64" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a2d8b5f3a5e59d63b405bab8adc5536eb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.RA_dsets_exclude</definition>
+        <argsstring></argsstring>
+        <name>RA_dsets_exclude</name>
+        <qualifiedname>combine_hdf5.RA_dsets_exclude</qualifiedname>
+        <initializer>=  set([&quot;RA_pointID&quot;,&quot;RA_pointID_isvalid&quot;,&quot;RA_MPIrank&quot;,&quot;RA_MPIrank_isvalid&quot;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="65" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a4f2d46489dcee350f950abb264e24b73" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list combine_hdf5.sync_lengths</definition>
+        <argsstring></argsstring>
+        <name>sync_lengths</name>
+        <qualifiedname>combine_hdf5.sync_lengths</qualifiedname>
+        <initializer>=  [0 for i in range(N)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="66" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aa9eb060787caabaf8706a26403308fdf" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list combine_hdf5.RA_lengths</definition>
+        <argsstring></argsstring>
+        <name>RA_lengths</name>
+        <qualifiedname>combine_hdf5.RA_lengths</qualifiedname>
+        <initializer>=  [0 for i in range(N)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="67" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a1ccf58cb2e86709e5dc32aa82529108c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.fnames</definition>
+        <argsstring></argsstring>
+        <name>fnames</name>
+        <qualifiedname>combine_hdf5.fnames</qualifiedname>
+        <initializer>=  tmp_files</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="68" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a9d4440dfee53487953409c346502fc81" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>combine_hdf5.f</qualifiedname>
+        <initializer>=  h5py.File(fname,&apos;r&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="72" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a631d2a40aaa8284c4236cc7236a0e38c" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list combine_hdf5.datasets</definition>
+        <argsstring></argsstring>
+        <name>datasets</name>
+        <qualifiedname>combine_hdf5.datasets</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="78" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a77161272adff5cc4b7b0d3c2c094d31d" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.tmp_dset_metadata</definition>
+        <argsstring></argsstring>
+        <name>tmp_dset_metadata</name>
+        <qualifiedname>combine_hdf5.tmp_dset_metadata</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="79" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a5909d3419f1f3aa9d5101af2b7d6799d" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.tmp_RA_dset_metadata</definition>
+        <argsstring></argsstring>
+        <name>tmp_RA_dset_metadata</name>
+        <qualifiedname>combine_hdf5.tmp_RA_dset_metadata</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="80" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a835e8b1c87a6b1b7591417e5d529a1f7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.total_sync_length</definition>
+        <argsstring></argsstring>
+        <name>total_sync_length</name>
+        <qualifiedname>combine_hdf5.total_sync_length</qualifiedname>
+        <initializer>=  sum(sync_lengths)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="98" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a0ba52cc4b464de64cb10059f9cae5436" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.fout</definition>
+        <argsstring></argsstring>
+        <name>fout</name>
+        <qualifiedname>combine_hdf5.fout</qualifiedname>
+        <initializer>=  h5py.File(outfname,&apos;a&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="126" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1ad7b8522e71d8905f95f577676a504b7a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.gout</definition>
+        <argsstring></argsstring>
+        <name>gout</name>
+        <qualifiedname>combine_hdf5.gout</qualifiedname>
+        <initializer>=  fout.create_group(group)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="129" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a1cb0531e79dfb2cb154fa2adccd8d39c" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.existing_dsets</definition>
+        <argsstring></argsstring>
+        <name>existing_dsets</name>
+        <qualifiedname>combine_hdf5.existing_dsets</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="137" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a1e577317ad1a7ffe84297fc7d92176d6" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.dsetlengths</definition>
+        <argsstring></argsstring>
+        <name>dsetlengths</name>
+        <qualifiedname>combine_hdf5.dsetlengths</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="138" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1ad381ac8a40ce2e584fe71645c16ce5a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>int combine_hdf5::init_output_length</definition>
+        <argsstring></argsstring>
+        <name>init_output_length</name>
+        <qualifiedname>combine_hdf5.init_output_length</qualifiedname>
+        <initializer>=  check_lengths(dsetlengths)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="147" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1ad23f2abab3fb5ef2aebc5d4a4d48d980" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.target_dsets</definition>
+        <argsstring></argsstring>
+        <name>target_dsets</name>
+        <qualifiedname>combine_hdf5.target_dsets</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="159" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a6b22c2b1399c75c334b892e8a5e1a316" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.all_sync_dsets</definition>
+        <argsstring></argsstring>
+        <name>all_sync_dsets</name>
+        <qualifiedname>combine_hdf5.all_sync_dsets</qualifiedname>
+        <initializer>=  set([]).union(*sync_dsets)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="160" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aa54ae8672fc584a030c399708804459a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.all_RA_dsets</definition>
+        <argsstring></argsstring>
+        <name>all_RA_dsets</name>
+        <qualifiedname>combine_hdf5.all_RA_dsets</qualifiedname>
+        <initializer>=  set([]).union(*RA_dsets)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="161" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aec06ffa28b3c934fa10f00eaea1b43fa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.chunks</definition>
+        <argsstring></argsstring>
+        <name>chunks</name>
+        <qualifiedname>combine_hdf5.chunks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="165" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a1ce7e0f0fc97f4df40a5f945dac8ae7e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <qualifiedname>combine_hdf5.dtype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="165" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aeb79aadde256c159ff315280c33f4317" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.dt</definition>
+        <argsstring></argsstring>
+        <name>dt</name>
+        <qualifiedname>combine_hdf5.dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="165" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a556da7ffe85e66b0fdb9a5f76b1d8fcd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.maxshape</definition>
+        <argsstring></argsstring>
+        <name>maxshape</name>
+        <qualifiedname>combine_hdf5.maxshape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="165" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1ae1b479f86f5ae45806ee97de6973832c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.nextempty</definition>
+        <argsstring></argsstring>
+        <name>nextempty</name>
+        <qualifiedname>combine_hdf5.nextempty</qualifiedname>
+        <initializer>= init_output_length</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="177" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a4619366d8f786d7bc703870afad45296" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5::fin</definition>
+        <argsstring></argsstring>
+        <name>fin</name>
+        <qualifiedname>combine_hdf5.fin</qualifiedname>
+        <initializer>=  files[fname]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="183" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a478034e77576706ee8a0b542e1f22259" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dictionary combine_hdf5::dset_length</definition>
+        <argsstring></argsstring>
+        <name>dset_length</name>
+        <qualifiedname>combine_hdf5.dset_length</qualifiedname>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="190" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1ad44f1fdec0ddc68bcda796cf846c3dbd" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5::item</definition>
+        <argsstring></argsstring>
+        <name>item</name>
+        <qualifiedname>combine_hdf5.item</qualifiedname>
+        <initializer>=  fin[group][itemname]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="192" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a6c4104bf7f876106d6ec1d859e4dca02" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.nchunks</definition>
+        <argsstring></argsstring>
+        <name>nchunks</name>
+        <qualifiedname>combine_hdf5.nchunks</qualifiedname>
+        <initializer>=  np.ceil(dset_length / (1.*max_ppidpairs))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="220" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1acdab18b45466dfb17665166739cdd9af" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int combine_hdf5.imin</definition>
+        <argsstring></argsstring>
+        <name>imin</name>
+        <qualifiedname>combine_hdf5.imin</qualifiedname>
+        <initializer>=  i*max_ppidpairs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="222" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a9c8558d21a101dcd0c47aaa2ba7f549a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.imax</definition>
+        <argsstring></argsstring>
+        <name>imax</name>
+        <qualifiedname>combine_hdf5.imax</qualifiedname>
+        <initializer>=  np.min([(i+1)*max_ppidpairs, dset_length])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="223" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a07a4c26755079e3b95359053228bd493" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.pointIDs_in</definition>
+        <argsstring></argsstring>
+        <name>pointIDs_in</name>
+        <qualifiedname>combine_hdf5.pointIDs_in</qualifiedname>
+        <initializer>=  fin[RA_group][&quot;RA_pointID&quot;][imin:imax]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="225" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a87d5fae7d60b17a8ea134d0010682f9b" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.mpiranks_in</definition>
+        <argsstring></argsstring>
+        <name>mpiranks_in</name>
+        <qualifiedname>combine_hdf5.mpiranks_in</qualifiedname>
+        <initializer>=  fin[RA_group][&quot;RA_MPIrank&quot;][imin:imax]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="226" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a4f0bc28997a08807042e866d327eb2b6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.pointIDs_isvalid_in</definition>
+        <argsstring></argsstring>
+        <name>pointIDs_isvalid_in</name>
+        <qualifiedname>combine_hdf5.pointIDs_isvalid_in</qualifiedname>
+        <initializer>=  np.array(fin[RA_group][&quot;RA_pointID_isvalid&quot;][imin:imax],dtype=np.bool)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="227" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a5bc78e0f3ca231cc5321be9e8dd5b0df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.mpiranks_isvalid_in</definition>
+        <argsstring></argsstring>
+        <name>mpiranks_isvalid_in</name>
+        <qualifiedname>combine_hdf5.mpiranks_isvalid_in</qualifiedname>
+        <initializer>=  np.array(fin[RA_group][&quot;RA_MPIrank_isvalid&quot;][imin:imax],dtype=np.bool)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="228" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a166cec3733d58c27fd63e6fa20a1e3b2" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple combine_hdf5.mask_in</definition>
+        <argsstring></argsstring>
+        <name>mask_in</name>
+        <qualifiedname>combine_hdf5.mask_in</qualifiedname>
+        <initializer>=  (pointIDs_isvalid_in &amp; mpiranks_isvalid_in)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="230" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a50569b756125888e9b75aeecf45eb563" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.IDs_in</definition>
+        <argsstring></argsstring>
+        <name>IDs_in</name>
+        <qualifiedname>combine_hdf5.IDs_in</qualifiedname>
+        <initializer>=  cantor_pairing(pointIDs_in[mask_in],mpiranks_in[mask_in])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="234" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a243a71c0f470e2b20bd2bc20cf04166e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.pointIDs_out</definition>
+        <argsstring></argsstring>
+        <name>pointIDs_out</name>
+        <qualifiedname>combine_hdf5.pointIDs_out</qualifiedname>
+        <initializer>=  fout[group][&quot;pointID&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="253" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aeb7baf7eaa5a444729907903c8b65ccd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.mpiranks_out</definition>
+        <argsstring></argsstring>
+        <name>mpiranks_out</name>
+        <qualifiedname>combine_hdf5.mpiranks_out</qualifiedname>
+        <initializer>=  fout[group][&quot;MPIrank&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="254" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a158b8c118e6a92c1c15f7657fb5010ec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.pointIDs_isvalid_out</definition>
+        <argsstring></argsstring>
+        <name>pointIDs_isvalid_out</name>
+        <qualifiedname>combine_hdf5.pointIDs_isvalid_out</qualifiedname>
+        <initializer>=  np.array(fout[group][&quot;pointID_isvalid&quot;][:],dtype=np.bool)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="255" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a26be01398c6ec5cf869acea46a260034" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.mpiranks_isvalid_out</definition>
+        <argsstring></argsstring>
+        <name>mpiranks_isvalid_out</name>
+        <qualifiedname>combine_hdf5.mpiranks_isvalid_out</qualifiedname>
+        <initializer>=  np.array(fout[group][&quot;MPIrank_isvalid&quot;][:],dtype=np.bool)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="256" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a7cd9706551ed54ba68fbd914e9d8cb04" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple combine_hdf5.mask_out</definition>
+        <argsstring></argsstring>
+        <name>mask_out</name>
+        <qualifiedname>combine_hdf5.mask_out</qualifiedname>
+        <initializer>=  (pointIDs_isvalid_out &amp; mpiranks_isvalid_out)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="258" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a90ebd34dd807486fceeeca3f8fa74791" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.IDs_out</definition>
+        <argsstring></argsstring>
+        <name>IDs_out</name>
+        <qualifiedname>combine_hdf5.IDs_out</qualifiedname>
+        <initializer>=  cantor_pairing(
+                     np.array(pointIDs_out[mask_out],dtype=np.longlong),
+                     np.array(mpiranks_out[mask_out],dtype=np.longlong)
+                     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="262" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aa7a714bb085c7748e6087eeda62ee72c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.ids</definition>
+        <argsstring></argsstring>
+        <name>ids</name>
+        <qualifiedname>combine_hdf5.ids</qualifiedname>
+        <initializer>=  IDs_out</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="272" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1ad9f0abaa1985c63b40018510615594ce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <qualifiedname>combine_hdf5.pid</qualifiedname>
+        <initializer>=  pointIDs_out[mask_out]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="273" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a054f0f8d526c5d0e5569f1bddcceaa8a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.rank</definition>
+        <argsstring></argsstring>
+        <name>rank</name>
+        <qualifiedname>combine_hdf5.rank</qualifiedname>
+        <initializer>=  mpiranks_out[mask_out]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="274" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a7d89f9589092f6457f8fbf4977a523a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.Nmatches</definition>
+        <argsstring></argsstring>
+        <name>Nmatches</name>
+        <qualifiedname>combine_hdf5.Nmatches</qualifiedname>
+        <initializer>=  np.sum(ID==ids)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="276" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a85adbdc2cd1298e7b8dafbe26e122de5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.Match</definition>
+        <argsstring></argsstring>
+        <name>Match</name>
+        <qualifiedname>combine_hdf5.Match</qualifiedname>
+        <initializer>=  np.sum((p==pid) &amp; (r==rank))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="279" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a539a7a87f664d25637f5254ca15cc8da" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.target_mask_small</definition>
+        <argsstring></argsstring>
+        <name>target_mask_small</name>
+        <qualifiedname>combine_hdf5.target_mask_small</qualifiedname>
+        <initializer>=  np.in1d(IDs_out,IDs_in)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="284" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aa03149db603041b2d03c779d466c2c1e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.target_length</definition>
+        <argsstring></argsstring>
+        <name>target_length</name>
+        <qualifiedname>combine_hdf5.target_length</qualifiedname>
+        <initializer>=  fout[group][&quot;pointID&quot;].shape[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="288" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a68e6bd732d6b8e94d8024d7b089700b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.alltargetindices</definition>
+        <argsstring></argsstring>
+        <name>alltargetindices</name>
+        <qualifiedname>combine_hdf5.alltargetindices</qualifiedname>
+        <initializer>=  np.arange(target_length)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="289" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1ab36ff3a876d3af2c3a25f02503e0c317" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.maskindices</definition>
+        <argsstring></argsstring>
+        <name>maskindices</name>
+        <qualifiedname>combine_hdf5.maskindices</qualifiedname>
+        <initializer>=  alltargetindices[mask_out][target_mask_small]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="290" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a89d2f3d4f6997ea9b036b4e5ad935238" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.target_mask</definition>
+        <argsstring></argsstring>
+        <name>target_mask</name>
+        <qualifiedname>combine_hdf5.target_mask</qualifiedname>
+        <initializer>=  np.zeros(target_length, dtype=bool)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="292" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1ac2fca04312503a04058ea3fbda3a5137" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.indexid</definition>
+        <argsstring></argsstring>
+        <name>indexid</name>
+        <qualifiedname>combine_hdf5.indexid</qualifiedname>
+        <initializer>=  np.where( (np.array(IDs_out)==ID) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="300" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1aab731ca8f3c12a33e054fa626c8727fe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>combine_hdf5.index</qualifiedname>
+        <initializer>=  np.where( (np.array(pointIDs_out[mask_out])==pid) &amp;
+                                      (np.array(mpiranks_out[mask_out])==rank) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="301" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a3e8e096e0291d68ca531b86b262d9d49" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.ntargets</definition>
+        <argsstring></argsstring>
+        <name>ntargets</name>
+        <qualifiedname>combine_hdf5.ntargets</qualifiedname>
+        <initializer>=  np.sum(target_mask)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="316" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a4c14d96264d589eb6b973705bbe79ee4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.nsources</definition>
+        <argsstring></argsstring>
+        <name>nsources</name>
+        <qualifiedname>combine_hdf5.nsources</qualifiedname>
+        <initializer>=  np.sum(mask_in)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="317" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a60d1e99196442c78ba7a51ac9309d65c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.xsort</definition>
+        <argsstring></argsstring>
+        <name>xsort</name>
+        <qualifiedname>combine_hdf5.xsort</qualifiedname>
+        <initializer>=  np.argsort(IDs_in)</initializer>
+        <briefdescription>
+<para>Just some test code which I decided to keep around since it is helpful for understand how the rearrangment of the input data to match the output selection works. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="comment">#<sp/>Compute<sp/>sorting<sp/>index<sp/>array<sp/>for<sp/>rearranging<sp/>the<sp/>source<sp/>entries<sp/>to<sp/>match<sp/>the<sp/>target<sp/>locations</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>The<sp/>way<sp/>this<sp/>works<sp/>is<sp/>a<sp/>bit<sp/>trippy,<sp/>but<sp/>it<sp/>is<sp/>fast.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#y<sp/>=<sp/>target<sp/>(IDs_out)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#x<sp/>=<sp/>sources<sp/>(IDs_in)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#result<sp/>=<sp/>array<sp/>of<sp/>length(y),<sp/>containing<sp/>positions<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#e.g.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#x<sp/>=<sp/>np.array([3,5,7,1<sp/>,9<sp/><sp/>,8,6,6])</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#y<sp/>=<sp/>np.array([2,1,5,10,100,6])</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>out<sp/>=<sp/>[<sp/>-<sp/>3<sp/>1<sp/>-<sp/>-<sp/>6<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>i.e.<sp/>&quot;1&quot;<sp/>in<sp/>y,<sp/>is<sp/>in<sp/>position<sp/>index<sp/>3<sp/>of<sp/>x.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">x1<sp/>=<sp/>np.array([0,1,2,3,4,5,6,7,8])</highlight></codeline>
+<codeline><highlight class="normal">y1<sp/>=<sp/>np.array([4,3,5,0,1,2,6,8,7])</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>where<sp/>in<sp/>x<sp/>is<sp/>each<sp/>element<sp/>of<sp/>y?</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>should<sp/>give<sp/>back<sp/>y,<sp/>since<sp/>e.g.<sp/>4<sp/>is<sp/>at<sp/>index<sp/>4<sp/>in<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>then<sp/>using<sp/>ypos<sp/>as<sp/>indices<sp/>on<sp/>x[sort1],<sp/>should<sp/>again<sp/>return<sp/>y.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">xsort1<sp/>=<sp/>np.argsort(x1)</highlight></codeline>
+<codeline><highlight class="normal">ypos1<sp/>=<sp/>np.searchsorted(x1[xsort1],<sp/>y1)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;verifying...&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>y1</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>ypos1</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>xsort1[ypos1]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>less<sp/>trivial<sp/>test:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">x2<sp/>=<sp/>np.array([0,1,7,2,7,8,6,4])</highlight></codeline>
+<codeline><highlight class="normal">y2<sp/>=<sp/>np.array([4,0,1,2,6,8,7])</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>indices<sp/>array<sp/>should<sp/>be:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[8,1,2,3,7,5,2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>(but<sp/>in<sp/>our<sp/>case<sp/>we<sp/>don&apos;t<sp/>want<sp/>duplicates<sp/>in<sp/>either<sp/>the<sp/>target<sp/>or<sp/>input<sp/>arrays!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">xsort2<sp/>=<sp/>np.argsort(x2)</highlight></codeline>
+<codeline><highlight class="normal">ypos2<sp/>=<sp/>np.searchsorted(x2[xsort2],<sp/>y2)</highlight></codeline>
+<codeline><highlight class="normal">indices<sp/>=<sp/>xsort2[ypos2]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;verifying...&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>x2</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>xsort2</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>x2[xsort2]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;y2&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>y2</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>ypos2</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>indices</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>x2[indices]</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="368" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a25363dac46fd90df6b38894bb9328eeb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.yindex</definition>
+        <argsstring></argsstring>
+        <name>yindex</name>
+        <qualifiedname>combine_hdf5.yindex</qualifiedname>
+        <initializer>=  np.searchsorted(IDs_in[<ref refid="namespacecombine__hdf5_1a60d1e99196442c78ba7a51ac9309d65c" kindref="member">xsort</ref>], IDs_out[target_mask_small])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="369" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a1bfae81c75c1e5484db35682617956cc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.fancyindices</definition>
+        <argsstring></argsstring>
+        <name>fancyindices</name>
+        <qualifiedname>combine_hdf5.fancyindices</qualifiedname>
+        <initializer>=  <ref refid="namespacecombine__hdf5_1a60d1e99196442c78ba7a51ac9309d65c" kindref="member">xsort</ref>[yindex]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="370" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1a8bfde2d8563d813a33b6beb03b3df943" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary combine_hdf5.indset</definition>
+        <argsstring></argsstring>
+        <name>indset</name>
+        <qualifiedname>combine_hdf5.indset</qualifiedname>
+        <initializer>=  item[imin:imax]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="391" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecombine__hdf5_1af481614adfa8b29421497de53afd95bc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>combine_hdf5.outdset</definition>
+        <argsstring></argsstring>
+        <name>outdset</name>
+        <qualifiedname>combine_hdf5.outdset</qualifiedname>
+        <initializer>=  fout[group][itemname]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="393" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecombine__hdf5_1a23191fa0a6f30ca418a5aa36959eda13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def combine_hdf5.sigint_handler</definition>
+        <argsstring>(signum, frame)</argsstring>
+        <name>sigint_handler</name>
+        <qualifiedname>combine_hdf5.sigint_handler</qualifiedname>
+        <param>
+          <type>signum</type>
+          <defname>signum</defname>
+        </param>
+        <param>
+          <type>frame</type>
+          <defname>frame</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="5" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="5" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecombine__hdf5_1af14dc72c2a7e9d803b4f44e65b3a0375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def combine_hdf5.usage</definition>
+        <argsstring>()</argsstring>
+        <name>usage</name>
+        <qualifiedname>combine_hdf5.usage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/scripts/combine_hdf5.py" line="21" column="1" bodyfile="Printers/scripts/combine_hdf5.py" bodystart="21" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Combine data from several hdf5 files created by HDF5Printer into a single file</verbatim> </para>
+    </detaileddescription>
+    <location file="Printers/scripts/combine_hdf5.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# FlavBit/FlavBit_types.hpp
 
 
 
@@ -24,7 +23,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | struct | **[Gambit::FlavBit::Correlation](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/)** <br>Simple structure for holding a correlation value and name of the correlated observable.  |
-| struct | **[Gambit::FlavBit::Measurement](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)** <br>Representation of a single entry in the FlavBit YAML database.  |
+| struct | **[Gambit::FlavBit::Measurement](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)** <br>Representation of a single entry in the FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database.  |
 | struct | **[Gambit::FlavBit::predictions_measurements_covariances](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
 
 ## Detailed Description
@@ -166,4 +165,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:53 +0000

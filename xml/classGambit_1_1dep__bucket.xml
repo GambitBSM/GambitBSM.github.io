@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1dep__bucket" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::dep_bucket</compoundname>
+    <basecompoundref refid="classGambit_1_1safety__bucket__base" prot="public" virt="non-virtual">Gambit::safety_bucket_base</basecompoundref>
+    <includes refid="safety__bucket_8hpp" local="no">safety_bucket.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TYPE</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1dep__bucket_1a1028339f64e30a25176f9910d9a9494a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1module__functor" kindref="compound">module_functor</ref>&lt; TYPE &gt; *</type>
+        <definition>module_functor&lt;TYPE&gt;* Gambit::dep_bucket&lt; TYPE &gt;::_functor_ptr</definition>
+        <argsstring></argsstring>
+        <name>_functor_ptr</name>
+        <qualifiedname>Gambit::dep_bucket::_functor_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="171" column="23" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1dep__bucket_1ac1a90b80c282aa929fda9cc099963ce3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; TYPE &gt;</type>
+        <definition>safe_ptr&lt;TYPE&gt; Gambit::dep_bucket&lt; TYPE &gt;::_sptr</definition>
+        <argsstring></argsstring>
+        <name>_sptr</name>
+        <qualifiedname>Gambit::dep_bucket::_sptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="172" column="16" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1dep__bucket_1aedc495ee176e50aeaf2246a12de82f13" prot="protected" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1module__functor__common" kindref="compound">module_functor_common</ref> *</type>
+        <definition>module_functor_common* Gambit::dep_bucket&lt; TYPE &gt;::_dependent_functor_ptr</definition>
+        <argsstring></argsstring>
+        <name>_dependent_functor_ptr</name>
+        <qualifiedname>Gambit::dep_bucket::_dependent_functor_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="173" column="30" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1dep__bucket_1a6b73ea1027488ab347c657a86115fe70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::dep_bucket&lt; TYPE &gt;::dep_bucket</definition>
+        <argsstring>(str mym, str myf, str me, module_functor&lt; TYPE &gt; *functor_ptr_in=NULL, module_functor_common *dependent_functor_ptr_in=NULL)</argsstring>
+        <name>dep_bucket</name>
+        <qualifiedname>Gambit::dep_bucket::dep_bucket</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>mym</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>myf</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>me</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1module__functor" kindref="compound">module_functor</ref>&lt; TYPE &gt; *</type>
+          <declname>functor_ptr_in</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1module__functor__common" kindref="compound">module_functor_common</ref> *</type>
+          <declname>dependent_functor_ptr_in</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classGambit_1_1dep__bucket" kindref="compound">dep_bucket</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="102" column="7" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1dep__bucket_1aaf945b5822e623bc31978d8a17c179a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::dep_bucket&lt; TYPE &gt;::initialize</definition>
+        <argsstring>(module_functor&lt; TYPE &gt; *functor_ptr_in, module_functor_common *dependent_functor_ptr_in)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>Gambit::dep_bucket::initialize</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1module__functor" kindref="compound">module_functor</ref>&lt; TYPE &gt; *</type>
+          <declname>functor_ptr_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1module__functor__common" kindref="compound">module_functor_common</ref> *</type>
+          <declname>dependent_functor_ptr_in</declname>
+        </param>
+        <briefdescription>
+<para>Initialize this bucket with a depedency functor pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="109" column="12" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="109" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1dep__bucket_1a84dbec5c50a298457f2d7773cbc88866" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::dep_bucket&lt; TYPE &gt;::module</definition>
+        <argsstring>()</argsstring>
+        <name>module</name>
+        <qualifiedname>Gambit::dep_bucket::module</qualifiedname>
+        <briefdescription>
+<para>Get module name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="129" column="11" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1dep__bucket_1a026ab976f766e45573bc12b7211e9111" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const TYPE &amp;</type>
+        <definition>const TYPE &amp; Gambit::dep_bucket&lt; TYPE &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>Gambit::dep_bucket::operator*</qualifiedname>
+        <briefdescription>
+<para>Dereference the dependency pointer stored as a <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="144" column="18" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="144" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1dep__bucket_1a72d733779ac27241b68bbbfab7059c28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const TYPE *</type>
+        <definition>const TYPE * Gambit::dep_bucket&lt; TYPE &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>Gambit::dep_bucket::operator-&gt;</qualifiedname>
+        <briefdescription>
+<para>Access is allowed to const member functions only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="153" column="18" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="153" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1dep__bucket_1a102c48ff2c94510f801b3bcc6e6c2cc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; TYPE &gt; &amp;</type>
+        <definition>safe_ptr&lt; TYPE &gt; &amp; Gambit::dep_bucket&lt; TYPE &gt;::safe_pointer</definition>
+        <argsstring>()</argsstring>
+        <name>safe_pointer</name>
+        <qualifiedname>Gambit::dep_bucket::safe_pointer</qualifiedname>
+        <briefdescription>
+<para>Get the <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="162" column="16" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="162" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGambit_1_1dep__bucket_1aab2da43cebc23027188e8ec082ae18c5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Gambit::dep_bucket&lt; TYPE &gt;::use_thread_index</definition>
+        <argsstring>(module_functor&lt; TYPE &gt; *f1, module_functor_common *f2)</argsstring>
+        <name>use_thread_index</name>
+        <qualifiedname>Gambit::dep_bucket::use_thread_index</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1module__functor" kindref="compound">module_functor</ref>&lt; TYPE &gt; *</type>
+          <declname>f1</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1module__functor__common" kindref="compound">module_functor_common</ref> *</type>
+          <declname>f2</declname>
+        </param>
+        <briefdescription>
+<para>Check if the thread index needs to be used to access the functor&apos;s result. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="135" column="19" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="135" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An interface class for module dependencies. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::dep_bucket&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1dep__bucket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::safety_bucket_base</label>
+        <link refid="classGambit_1_1safety__bucket__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Gambit::Models::ModelFunctorClaw</label>
+        <link refid="classGambit_1_1Models_1_1ModelFunctorClaw"/>
+      </node>
+      <node id="6">
+        <label>Gambit::Options</label>
+        <link refid="classGambit_1_1Options"/>
+      </node>
+      <node id="1">
+        <label>Gambit::dep_bucket&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1dep__bucket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>_dependent_functor_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::functor</label>
+        <link refid="classGambit_1_1functor"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>myCapability</edgelabel>
+          <edgelabel>myCitationKey</edgelabel>
+          <edgelabel>myName</edgelabel>
+          <edgelabel>myOrigin</edgelabel>
+          <edgelabel>myPurpose</edgelabel>
+          <edgelabel>myType</edgelabel>
+          <edgelabel>myVersion</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>myClaw</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>myOptions</edgelabel>
+          <edgelabel>mySubCaps</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gambit::invalid_point_exception</label>
+        <link refid="classGambit_1_1invalid__point__exception"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gambit::module_functor_common</label>
+        <link refid="classGambit_1_1module__functor__common"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>raised_point_exception</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>myLoopManagerCapability</edgelabel>
+          <edgelabel>myLoopManagerType</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>myLoopManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::safety_bucket_base</label>
+        <link refid="classGambit_1_1safety__bucket__base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_functor_base_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gambit::special_exception</label>
+        <link refid="classGambit_1_1special__exception"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>myMessage</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>std::exception</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="Elements/include/gambit/Elements/safety_bucket.hpp" line="96" column="3" bodyfile="Elements/include/gambit/Elements/safety_bucket.hpp" bodystart="97" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1dep__bucket_1aedc495ee176e50aeaf2246a12de82f13" prot="protected" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>_dependent_functor_ptr</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a437700e3d63a182b7d2863ec23412572" prot="protected" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>_functor_base_ptr</name></member>
+      <member refid="classGambit_1_1dep__bucket_1a1028339f64e30a25176f9910d9a9494a" prot="protected" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>_functor_ptr</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a4ec2713749315efd99ff8b0258a8f863" prot="protected" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>_initialized</name></member>
+      <member refid="classGambit_1_1dep__bucket_1ac1a90b80c282aa929fda9cc099963ce3" prot="protected" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>_sptr</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a391db0375fdca56212ce8765fc5933f5" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>active</name></member>
+      <member refid="classGambit_1_1dep__bucket_1a6b73ea1027488ab347c657a86115fe70" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>dep_bucket</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a08ce9d70583e365c920016eccbdf3907" prot="protected" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>dieGracefully</name></member>
+      <member refid="classGambit_1_1dep__bucket_1aaf945b5822e623bc31978d8a17c179a4" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>initialize</name></member>
+      <member refid="classGambit_1_1dep__bucket_1a84dbec5c50a298457f2d7773cbc88866" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>module</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a3c3dd07a07bc5c00768896b901ebb1a4" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>name</name></member>
+      <member refid="classGambit_1_1dep__bucket_1a026ab976f766e45573bc12b7211e9111" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>operator*</name></member>
+      <member refid="classGambit_1_1dep__bucket_1a72d733779ac27241b68bbbfab7059c28" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>operator-&gt;</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a0253ead5136b8744bc6428ed97a56c20" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>origin</name></member>
+      <member refid="classGambit_1_1dep__bucket_1a102c48ff2c94510f801b3bcc6e6c2cc5" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>safe_pointer</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a14204f6ad821ddb5b2c90af16de45eab" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>safety_bucket_base</name></member>
+      <member refid="classGambit_1_1dep__bucket_1aab2da43cebc23027188e8ec082ae18c5" prot="public" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>use_thread_index</name></member>
+      <member refid="classGambit_1_1safety__bucket__base_1a537b8fe482b5b1be32ed5d0421a46c19" prot="protected" virt="non-virtual"><scope>Gambit::dep_bucket</scope><name>whoami</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

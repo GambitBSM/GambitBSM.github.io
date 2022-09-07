@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classdaFunk_1_1FunkInterp" kind="class" language="C++" prot="public">
+    <compoundname>daFunk::FunkInterp</compoundname>
+    <basecompoundref refid="classdaFunk_1_1FunkBase" prot="public" virt="non-virtual">daFunk::FunkBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdaFunk_1_1FunkInterp_1a13e574d0cad2a98a752817e2089dcfc2" prot="private" static="no" mutable="no">
+        <type>double(FunkInterp::*</type>
+        <definition>double(FunkInterp::* daFunk::FunkInterp::ptr) (double)</definition>
+        <argsstring>)(double)</argsstring>
+        <name>ptr</name>
+        <qualifiedname>daFunk::FunkInterp::ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1343" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdaFunk_1_1FunkInterp_1a3a4d8e6ed28f144cab62cac31702c869" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; daFunk::FunkInterp::Xgrid</definition>
+        <argsstring></argsstring>
+        <name>Xgrid</name>
+        <qualifiedname>daFunk::FunkInterp::Xgrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1344" column="25" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdaFunk_1_1FunkInterp_1afeec4b03b2938934cb5e9cb985ad196e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; daFunk::FunkInterp::Ygrid</definition>
+        <argsstring></argsstring>
+        <name>Ygrid</name>
+        <qualifiedname>daFunk::FunkInterp::Ygrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1345" column="25" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdaFunk_1_1FunkInterp_1aed4f4e3db604fd5eb4a3d2545266e20a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string daFunk::FunkInterp::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>daFunk::FunkInterp::mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1346" column="25" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1346" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdaFunk_1_1FunkInterp_1a1c32d446b9e4b13e4be45c7044d5a45e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>daFunk::FunkInterp::FunkInterp</definition>
+        <argsstring>(Funk f, std::vector&lt; double &gt; &amp;Xgrid, std::vector&lt; double &gt; &amp;Ygrid, std::string mode=&quot;lin&quot;)</argsstring>
+        <name>FunkInterp</name>
+        <qualifiedname>daFunk::FunkInterp::FunkInterp</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>Xgrid</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>Ygrid</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+          <defval>&quot;lin&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1285" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1285" bodyend="1288"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkInterp_1af496c76ca5f877486ec3dcd6740024d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>daFunk::FunkInterp::FunkInterp</definition>
+        <argsstring>(std::string arg, std::vector&lt; double &gt; &amp;Xgrid, std::vector&lt; double &gt; &amp;Ygrid, std::string mode=&quot;lin&quot;)</argsstring>
+        <name>FunkInterp</name>
+        <qualifiedname>daFunk::FunkInterp::FunkInterp</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>Xgrid</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>Ygrid</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+          <defval>&quot;lin&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1289" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1289" bodyend="1292"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkInterp_1ad9ddf5760c20375be63c08b7ed94e0ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>daFunk::FunkInterp::FunkInterp</definition>
+        <argsstring>(double x, std::vector&lt; double &gt; &amp;Xgrid, std::vector&lt; double &gt; &amp;Ygrid, std::string mode=&quot;lin&quot;)</argsstring>
+        <name>FunkInterp</name>
+        <qualifiedname>daFunk::FunkInterp::FunkInterp</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>Xgrid</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>Ygrid</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+          <defval>&quot;lin&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1293" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1293" bodyend="1296"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkInterp_1a4b52cd1daa35cf7a2a2a0af7b07ad154" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double daFunk::FunkInterp::value</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;data, size_t bindID)</argsstring>
+        <name>value</name>
+        <qualifiedname>daFunk::FunkInterp::value</qualifiedname>
+        <reimplements refid="classdaFunk_1_1FunkBase_1a8646477e9ad3843343f86466b8a34f14">value</reimplements>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bindID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1298" column="20" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1298" bodyend="1302"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdaFunk_1_1FunkInterp_1a5c2525228d32f22d2fba343eef5e873a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void daFunk::FunkInterp::setup</definition>
+        <argsstring>(Funk f, std::vector&lt; double &gt; &amp;Xgrid, std::vector&lt; double &gt; &amp;Ygrid, std::string mode)</argsstring>
+        <name>setup</name>
+        <qualifiedname>daFunk::FunkInterp::setup</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>Xgrid</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>Ygrid</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1305" column="18" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1305" bodyend="1315"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkInterp_1a0c9e452deeb5ec47052c4bb37c972087" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double daFunk::FunkInterp::logInterp</definition>
+        <argsstring>(double x)</argsstring>
+        <name>logInterp</name>
+        <qualifiedname>daFunk::FunkInterp::logInterp</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1317" column="20" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1317" bodyend="1328"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkInterp_1a3b1d42f0ed24c4d29d95ecf86d7280e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double daFunk::FunkInterp::linearInterp</definition>
+        <argsstring>(double x)</argsstring>
+        <name>linearInterp</name>
+        <qualifiedname>daFunk::FunkInterp::linearInterp</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1330" column="20" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1330" bodyend="1341"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>enable_shared_from_this&lt; FunkBase &gt;</label>
+      </node>
+      <node id="2">
+        <label>daFunk::FunkBase</label>
+        <link refid="classdaFunk_1_1FunkBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>daFunk::FunkInterp</label>
+        <link refid="classdaFunk_1_1FunkInterp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>enable_shared_from_this&lt; FunkBase &gt;</label>
+      </node>
+      <node id="2">
+        <label>daFunk::FunkBase</label>
+        <link refid="classdaFunk_1_1FunkBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>daFunk::FunkInterp</label>
+        <link refid="classdaFunk_1_1FunkInterp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Elements/include/gambit/Elements/daFunk.hpp" line="1282" column="5" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="1283" bodyend="1347"/>
+    <listofallmembers>
+      <member refid="classdaFunk_1_1FunkBase_1a73ec0ca81fe7249e7ee09b67a59e471b" prot="protected" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>arguments</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a679402022fce75370ad30477b92f502d" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>assert_args</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ad7ab386a6519b1ef6cba6ac0b391e431" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>bind</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ab80524b8e5c7a60570f18df12af05ae8" prot="protected" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>datalen</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a020c9ed50ea915133590d9dd8a8731be" prot="protected" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>functions</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a7a657dce4094e02dbc3d8b135a260181" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>FunkBase</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1a1c32d446b9e4b13e4be45c7044d5a45e" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>FunkInterp</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1af496c76ca5f877486ec3dcd6740024d4" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>FunkInterp</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1ad9ddf5760c20375be63c08b7ed94e0ee" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>FunkInterp</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a0d349a5a4c0bedb82e59e884d06cd605" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>getArgs</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a674bc7d66557067d147143f0d33f4c96" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>getNArgs</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a37d346d0ce8455da5181eac03b1ec086" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>getSingl</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a696c3b38624a384adb3964bc46b6daab" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>gsl_integration</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a11d7ff51370a518e5ce71973084ee762" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>hasArg</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ac95b8e5d3310cca11d0ac66b0f3bd3c2" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>hasArgs</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ab858b68aa634343727b8937f40975b1f" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>help</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a310cde28ae9265ee10ff7a971483a71f" prot="protected" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>indices</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1a3b1d42f0ed24c4d29d95ecf86d7280e6" prot="private" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>linearInterp</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1a0c9e452deeb5ec47052c4bb37c972087" prot="private" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>logInterp</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1aed4f4e3db604fd5eb4a3d2545266e20a" prot="private" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>mode</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1abd4786ace406ae301e73c792576d46e4" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a1a35ec40bfe8cacc5db1bf1702b26b23" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a014b761207f78de72402ffe2ac9574b7" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1acb8abf10f25053ecd960cca112d62079" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a9a13d87e37788d771820668138e510d8" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1acd7b36586f8c1d403ab328d3f45bcdb2" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ae740382c4e301e4b263848036d8878d5" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a8765d42b92b146d43005f5768ddc2d4e" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a8b0a5b7c978dfa79238cb6f4632c5ff4" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>print</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1a13e574d0cad2a98a752817e2089dcfc2" prot="private" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>ptr</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a7bcba52829e2cd811df21971a8fcae0b" prot="public" virt="virtual"><scope>daFunk::FunkInterp</scope><name>resolve</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a59ef787d56af732ab2249a94f07bb52b" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1aae15a3e1d861fef9e58201d90290a833" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a91ad28e40caf2b14207f6b52481a08fe" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a0aa7469b732ce5e6770bad99613d4dd2" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ac626df236aa4854e90958246de82305a" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a4a1d787379bf836b29d2d0c6e4a4cad6" prot="public" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>set_singularity</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1a5c2525228d32f22d2fba343eef5e873a" prot="private" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>setup</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a004962513ef67993ce7e66870073fab7" prot="protected" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>singularities</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1a4b52cd1daa35cf7a2a2a0af7b07ad154" prot="public" virt="virtual"><scope>daFunk::FunkInterp</scope><name>value</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1a3a4d8e6ed28f144cab62cac31702c869" prot="private" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>Xgrid</name></member>
+      <member refid="classdaFunk_1_1FunkInterp_1afeec4b03b2938934cb5e9cb985ad196e" prot="private" virt="non-virtual"><scope>daFunk::FunkInterp</scope><name>Ygrid</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a874043a27bdbd03c118c22c179f58b32" prot="public" virt="virtual"><scope>daFunk::FunkInterp</scope><name>~FunkBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

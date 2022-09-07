@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="228" column="13" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__MSSMMassObs__container_1a7c5f6760c229cf0181ed4e21a965fb9d" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_MSSMMassObs_container::USf[2][2][5][3]</definition>
         <argsstring>[2][2][5][3]</argsstring>
         <name>USf</name>
@@ -60,7 +60,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="240" column="13" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__MSSMMassObs__container_1adbb74a62e917195c529366a72e88b9e9" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_MSSMMassObs_container::UASf[36][5]</definition>
         <argsstring>[36][5]</argsstring>
         <name>UASf</name>
@@ -88,7 +88,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="249" column="13" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__MSSMMassObs__container_1a00c4f9573d4c67286fe156bf323a1708" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_MSSMMassObs_container::UCha[4]</definition>
         <argsstring>[4]</argsstring>
         <name>UCha</name>
@@ -102,7 +102,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="252" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="252" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__MSSMMassObs__container_1a253fdcb832801b5e385f83d015507875" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_MSSMMassObs_container::VCha[4]</definition>
         <argsstring>[4]</argsstring>
         <name>VCha</name>
@@ -130,7 +130,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="256" column="13" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="256" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__MSSMMassObs__container_1ad7441bc6d5a44d01a3975ba0db8be58f" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_MSSMMassObs_container::ZNeu[16]</definition>
         <argsstring>[16]</argsstring>
         <name>ZNeu</name>
@@ -144,7 +144,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="259" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1fh__MSSMMassObs__container_1a7240d3c4721f7cdae5474a405bcbfea6" prot="public" static="no" mutable="no">
-        <type>fh_complex</type>
+        <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">fh_complex</ref></type>
         <definition>fh_complex Gambit::fh_MSSMMassObs_container::deltaMB</definition>
         <argsstring></argsstring>
         <name>deltaMB</name>
@@ -204,6 +204,24 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::FcomplexT&lt; T &gt;</label>
+        <link refid="classGambit_1_1FcomplexT"/>
+      </node>
+      <node id="1">
+        <label>Gambit::fh_MSSMMassObs_container</label>
+        <link refid="structGambit_1_1fh__MSSMMassObs__container"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>UASf</edgelabel>
+          <edgelabel>UCha</edgelabel>
+          <edgelabel>USf</edgelabel>
+          <edgelabel>VCha</edgelabel>
+          <edgelabel>ZNeu</edgelabel>
+          <edgelabel>deltaMB</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" line="219" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/FeynHiggs.hpp" bodystart="220" bodyend="272"/>
     <listofallmembers>
       <member refid="structGambit_1_1fh__MSSMMassObs__container_1a7240d3c4721f7cdae5474a405bcbfea6" prot="public" virt="non-virtual"><scope>Gambit::fh_MSSMMassObs_container</scope><name>deltaMB</name></member>

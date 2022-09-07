@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS_gg</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS__gg_1abe6d15ede530b2a76043baa67a9aa550" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble_complex, 1, 27, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; <ref refid="classGambit_1_1FcomplexT" kindref="compound">Fdouble_complex</ref>, 1, 27, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble_complex,1,27,1,2 &gt; Gambit::DS_gg::gg</definition>
         <argsstring></argsstring>
         <name>gg</name>
@@ -22,6 +22,26 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Gambit::FcomplexT, 1, 27, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>array</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_gg</label>
+        <link refid="structGambit_1_1DS__gg"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gg</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::FcomplexT&lt; T &gt;</label>
+        <link refid="classGambit_1_1FcomplexT"/>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="81" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="82" bodyend="84"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__gg_1abe6d15ede530b2a76043baa67a9aa550" prot="public" virt="non-virtual"><scope>Gambit::DS_gg</scope><name>gg</name></member>

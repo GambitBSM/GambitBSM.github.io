@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Utils_1_1threadsafe__rng" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gambit::Utils::threadsafe_rng</compoundname>
+    <derivedcompoundref refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng" prot="public" virt="non-virtual">Gambit::Utils::specialised_threadsafe_rng&lt; Engine &gt;</derivedcompoundref>
+    <includes refid="threadsafe__rng_8hpp" local="no">threadsafe_rng.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classGambit_1_1Utils_1_1threadsafe__rng_1a3969142a42be91a5f3bdf6b34a88c3d6" prot="public" static="no">
+        <type>std::uint64_t</type>
+        <definition>typedef std::uint64_t Gambit::Utils::threadsafe_rng::result_type</definition>
+        <argsstring></argsstring>
+        <name>result_type</name>
+        <qualifiedname>Gambit::Utils::threadsafe_rng::result_type</qualifiedname>
+        <briefdescription>
+<para>Return type (will convert underlying RNG type to this) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="73" column="31" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1threadsafe__rng_1a0fae69a3ec5f5b3667582994cc18a960" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type></type>
+        <definition>Gambit::Utils::threadsafe_rng::~threadsafe_rng</definition>
+        <argsstring>()=0</argsstring>
+        <name>~threadsafe_rng</name>
+        <qualifiedname>Gambit::Utils::threadsafe_rng::~threadsafe_rng</qualifiedname>
+        <briefdescription>
+<para>Pure virtual destructor to force overriding in derived class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Give an inline implementation of the destructor, to prevent link errors but keep base class pure virtual. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="76" column="17" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1threadsafe__rng_1af52e5f3a36335854cd36a5218cc3d0bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classGambit_1_1Utils_1_1threadsafe__rng_1a3969142a42be91a5f3bdf6b34a88c3d6" kindref="member">result_type</ref></type>
+        <definition>virtual result_type Gambit::Utils::threadsafe_rng::operator()</definition>
+        <argsstring>()=0</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Gambit::Utils::threadsafe_rng::operator()</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng_1a070535c72cfb125a28fcbe68167a85da">operator()</reimplementedby>
+        <briefdescription>
+<para>Operator used for getting random deviates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="79" column="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1threadsafe__rng_1af1b871d525494224e01f4f8fb7957cef" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="classGambit_1_1Utils_1_1threadsafe__rng_1a3969142a42be91a5f3bdf6b34a88c3d6" kindref="member">result_type</ref></type>
+        <definition>static constexpr result_type Gambit::Utils::threadsafe_rng::min</definition>
+        <argsstring>()</argsstring>
+        <name>min</name>
+        <qualifiedname>Gambit::Utils::threadsafe_rng::min</qualifiedname>
+        <briefdescription>
+<para>Operators for compliance with RandomNumberEngine interface -&gt; random distribution sampling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="82" column="38" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1threadsafe__rng_1ae4ffaef33f6bde9289278b27a3971192" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="classGambit_1_1Utils_1_1threadsafe__rng_1a3969142a42be91a5f3bdf6b34a88c3d6" kindref="member">result_type</ref></type>
+        <definition>static constexpr result_type Gambit::Utils::threadsafe_rng::max</definition>
+        <argsstring>()</argsstring>
+        <name>max</name>
+        <qualifiedname>Gambit::Utils::threadsafe_rng::max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="83" column="38" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for thread-safe random number generators. Must conform to the requirements of UniformRandomBitGenerator, see e.g. <ulink url="https://en.cppreference.com/w/cpp/named_req/UniformRandomBitGenerator">https://en.cppreference.com/w/cpp/named_req/UniformRandomBitGenerator</ulink> Importantly, operator() must return UNSIGNED INTEGERS! </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::Utils::specialised_threadsafe_rng&lt; Engine &gt;</label>
+        <link refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::Utils::threadsafe_rng</label>
+        <link refid="classGambit_1_1Utils_1_1threadsafe__rng"/>
+      </node>
+    </inheritancegraph>
+    <location file="Utils/include/gambit/Utils/threadsafe_rng.hpp" line="69" column="5" bodyfile="Utils/include/gambit/Utils/threadsafe_rng.hpp" bodystart="70" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1ae4ffaef33f6bde9289278b27a3971192" prot="public" virt="non-virtual"><scope>Gambit::Utils::threadsafe_rng</scope><name>max</name></member>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1af1b871d525494224e01f4f8fb7957cef" prot="public" virt="non-virtual"><scope>Gambit::Utils::threadsafe_rng</scope><name>min</name></member>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1af52e5f3a36335854cd36a5218cc3d0bc" prot="public" virt="pure-virtual"><scope>Gambit::Utils::threadsafe_rng</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1a3969142a42be91a5f3bdf6b34a88c3d6" prot="public" virt="non-virtual"><scope>Gambit::Utils::threadsafe_rng</scope><name>result_type</name></member>
+      <member refid="classGambit_1_1Utils_1_1threadsafe__rng_1a0fae69a3ec5f5b3667582994cc18a960" prot="public" virt="pure-virtual"><scope>Gambit::Utils::threadsafe_rng</scope><name>~threadsafe_rng</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

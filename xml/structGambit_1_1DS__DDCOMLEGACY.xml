@@ -4,7 +4,7 @@
     <compoundname>Gambit::DS_DDCOMLEGACY</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1DS__DDCOMLEGACY_1a22afc5347c6990237d3f27d49aff9dbb" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 7, 12 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 7, 12 &gt;</type>
         <definition>Farray&lt;Fdouble, 7, 12&gt; Gambit::DS_DDCOMLEGACY::ftp</definition>
         <argsstring></argsstring>
         <name>ftp</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="437" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="437" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DS__DDCOMLEGACY_1a32dd33b0b61f9666de19b5f7a1b43123" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 7, 12 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 7, 12 &gt;</type>
         <definition>Farray&lt;Fdouble, 7, 12&gt; Gambit::DS_DDCOMLEGACY::ftn</definition>
         <argsstring></argsstring>
         <name>ftn</name>
@@ -78,6 +78,20 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 7, 12 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::DS_DDCOMLEGACY</label>
+        <link refid="structGambit_1_1DS__DDCOMLEGACY"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ftn</edgelabel>
+          <edgelabel>ftp</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" line="435" column="3" bodyfile="Backends/include/gambit/Backends/backend_types/DarkSUSY.hpp" bodystart="436" bodyend="442"/>
     <listofallmembers>
       <member refid="structGambit_1_1DS__DDCOMLEGACY_1ae0894ee7ed0d20956553db694e8c439a" prot="public" virt="non-virtual"><scope>Gambit::DS_DDCOMLEGACY</scope><name>deld</name></member>

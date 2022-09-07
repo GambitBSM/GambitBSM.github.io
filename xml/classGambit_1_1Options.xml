@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Options" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Options</compoundname>
+    <includes refid="yaml__options_8hpp" local="no">yaml_options.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Options_1a2a05334b7abcabecbf1f6c59daa02471" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>args</declname>
+            <defname>args</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Gambit::Options::hasKey</definition>
+        <argsstring>(const args &amp;... keys) const</argsstring>
+        <name>hasKey</name>
+        <qualifiedname>Gambit::Options::hasKey</qualifiedname>
+        <param>
+          <type>const args &amp;...</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getters for key/value pairs (which is all the options node should contain) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="67" column="12" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1a04b08071e38d7fbc10a4bef0d981dcef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>args</declname>
+            <defname>args</defname>
+          </param>
+        </templateparamlist>
+        <type>TYPE</type>
+        <definition>TYPE Gambit::Options::getValue</definition>
+        <argsstring>(const args &amp;... keys) const</argsstring>
+        <name>getValue</name>
+        <qualifiedname>Gambit::Options::getValue</qualifiedname>
+        <param>
+          <type>const args &amp;...</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="73" column="12" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="73" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1a34a93e18a7a7883e3a237e244a36d8d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>args</declname>
+            <defname>args</defname>
+          </param>
+        </templateparamlist>
+        <type>TYPE</type>
+        <definition>TYPE Gambit::Options::getValueOrDef</definition>
+        <argsstring>(TYPE def, const args &amp;... keys) const</argsstring>
+        <name>getValueOrDef</name>
+        <qualifiedname>Gambit::Options::getValueOrDef</qualifiedname>
+        <param>
+          <type>TYPE</type>
+          <declname>def</declname>
+        </param>
+        <param>
+          <type>const args &amp;...</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="115" column="12" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="115" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Options_1a3f999f2ed0b5fb0a6f2ed008dd01865a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KEYTYPE</type>
+          </param>
+          <param>
+            <type>typename VALTYPE</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Options::setValue</definition>
+        <argsstring>(const KEYTYPE &amp;key, const VALTYPE &amp;val)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>Gambit::Options::setValue</qualifiedname>
+        <param>
+          <type>const KEYTYPE &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const VALTYPE &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic setter, for adding extra options </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="135" column="12" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="135" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Options_1a9e227717819eea614a89e5e78c1e1cf4" prot="private" static="no" mutable="no">
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::Options::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <qualifiedname>Gambit::Options::options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="244" column="18" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Options_1a5c66ef08c048416ca4d6afc12a32a9b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Options::Options</definition>
+        <argsstring>()</argsstring>
+        <name>Options</name>
+        <qualifiedname>Gambit::Options::Options</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="56" column="7" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1ae40cf6c9cb94f6974d9189f1f445bc2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Options::Options</definition>
+        <argsstring>(const YAML::Node &amp;options)</argsstring>
+        <name>Options</name>
+        <qualifiedname>Gambit::Options::Options</qualifiedname>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="59" column="7" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1abbaa953744e2cbd8ece43a6157d50ecc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Options::Options</definition>
+        <argsstring>(YAML::Node &amp;&amp;options)</argsstring>
+        <name>Options</name>
+        <qualifiedname>Gambit::Options::Options</qualifiedname>
+        <param>
+          <type>YAML::Node &amp;&amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="62" column="7" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1adf8852e06e5d0e8948cab3b3f11c16e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; TYPE &gt;</type>
+        <definition>std::vector&lt; TYPE &gt; Gambit::Options::getVector</definition>
+        <argsstring>(std::string key) const</argsstring>
+        <name>getVector</name>
+        <qualifiedname>Gambit::Options::getVector</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get a <computeroutput>std::vector</computeroutput> of a particular type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the entry is a scalar rather than a vector, try to convert it to a size one <computeroutput>std::vector</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="149" column="19" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="149" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1a677bcec31f68d8479180537007aba81f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>args</declname>
+            <defname>args</defname>
+          </param>
+        </templateparamlist>
+        <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+        <definition>const std::vector&lt; str &gt; Gambit::Options::getNames</definition>
+        <argsstring>(const args &amp;... keys) const</argsstring>
+        <name>getNames</name>
+        <qualifiedname>Gambit::Options::getNames</qualifiedname>
+        <param>
+          <type>const args &amp;...</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve values from key-value pairs in options node. Works for an arbitrary set of input keys (of any type), and returns all values as strings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="165" column="25" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="165" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1acba39c7ad27bc1f8e3f9f6ee97582788" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+        <definition>const std::vector&lt; str &gt; Gambit::Options::getNames</definition>
+        <argsstring>() const</argsstring>
+        <name>getNames</name>
+        <qualifiedname>Gambit::Options::getNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve values from all key-value pairs in options node. Returns all keys as strings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="183" column="25" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="183" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1ad6797b7e86b04534cba1153ee1884233" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>args</declname>
+            <defname>args</defname>
+          </param>
+        </templateparamlist>
+        <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
+        <definition>const Options Gambit::Options::getOptions</definition>
+        <argsstring>(const args &amp;... keys) const</argsstring>
+        <name>getOptions</name>
+        <qualifiedname>Gambit::Options::getOptions</qualifiedname>
+        <param>
+          <type>const args &amp;...</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+<para>Recursive options retrieval. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="197" column="21" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="197" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1a0215dd5fe3b2abfa1b911de5fb70ce6f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>args</declname>
+            <defname>args</defname>
+          </param>
+        </templateparamlist>
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::Options::getNode</definition>
+        <argsstring>(const args &amp;... keys) const</argsstring>
+        <name>getNode</name>
+        <qualifiedname>Gambit::Options::getNode</qualifiedname>
+        <param>
+          <type>const args &amp;...</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve raw <ref refid="namespaceYAML" kindref="compound">YAML</ref> node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="212" column="18" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="212" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1a3bc4d8fe131a4b2321cd8c4da5cc1e77" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>args</declname>
+            <defname>args</defname>
+          </param>
+        </templateparamlist>
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::Options::loadFromFile</definition>
+        <argsstring>(const args &amp;... keys) const</argsstring>
+        <name>loadFromFile</name>
+        <qualifiedname>Gambit::Options::loadFromFile</qualifiedname>
+        <param>
+          <type>const args &amp;...</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="namespaceYAML" kindref="compound">YAML</ref> node from file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="226" column="18" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="226" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1a1998429cc26e279afb7eb758d482dea7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>YAML::const_iterator</type>
+        <definition>YAML::const_iterator Gambit::Options::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>Gambit::Options::begin</qualifiedname>
+        <briefdescription>
+<para>Return begin and end of options. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="239" column="28" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="239" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Options_1a3aae66dcc2a3047d2813eb6f5341c149" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>YAML::const_iterator</type>
+        <definition>YAML::const_iterator Gambit::Options::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>Gambit::Options::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="240" column="28" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="240" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A small wrapper object for &apos;options&apos; nodes. These can be extracted from the prior, observable/likelihood and rules sections of the inifile, or set by hand in module standalone mode. </para>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/yaml_options.hpp" line="50" column="3" bodyfile="Utils/include/gambit/Utils/yaml_options.hpp" bodystart="51" bodyend="245"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Options_1a1998429cc26e279afb7eb758d482dea7" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>begin</name></member>
+      <member refid="classGambit_1_1Options_1a3aae66dcc2a3047d2813eb6f5341c149" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>end</name></member>
+      <member refid="classGambit_1_1Options_1a677bcec31f68d8479180537007aba81f" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>getNames</name></member>
+      <member refid="classGambit_1_1Options_1acba39c7ad27bc1f8e3f9f6ee97582788" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>getNames</name></member>
+      <member refid="classGambit_1_1Options_1a0215dd5fe3b2abfa1b911de5fb70ce6f" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>getNode</name></member>
+      <member refid="classGambit_1_1Options_1ad6797b7e86b04534cba1153ee1884233" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>getOptions</name></member>
+      <member refid="classGambit_1_1Options_1a04b08071e38d7fbc10a4bef0d981dcef" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>getValue</name></member>
+      <member refid="classGambit_1_1Options_1a34a93e18a7a7883e3a237e244a36d8d1" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>getValueOrDef</name></member>
+      <member refid="classGambit_1_1Options_1adf8852e06e5d0e8948cab3b3f11c16e2" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>getVector</name></member>
+      <member refid="classGambit_1_1Options_1a2a05334b7abcabecbf1f6c59daa02471" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>hasKey</name></member>
+      <member refid="classGambit_1_1Options_1a3bc4d8fe131a4b2321cd8c4da5cc1e77" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>loadFromFile</name></member>
+      <member refid="classGambit_1_1Options_1a9e227717819eea614a89e5e78c1e1cf4" prot="private" virt="non-virtual"><scope>Gambit::Options</scope><name>options</name></member>
+      <member refid="classGambit_1_1Options_1a5c66ef08c048416ca4d6afc12a32a9b0" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>Options</name></member>
+      <member refid="classGambit_1_1Options_1ae40cf6c9cb94f6974d9189f1f445bc2c" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>Options</name></member>
+      <member refid="classGambit_1_1Options_1abbaa953744e2cbd8ece43a6157d50ecc" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>Options</name></member>
+      <member refid="classGambit_1_1Options_1a3f999f2ed0b5fb0a6f2ed008dd01865a" prot="public" virt="non-virtual"><scope>Gambit::Options</scope><name>setValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

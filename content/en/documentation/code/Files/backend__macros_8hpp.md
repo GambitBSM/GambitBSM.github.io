@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Backends/backend_macros.hpp
 
 
 
@@ -400,7 +399,7 @@ Dependency macro for point-level backend initialisation functions (in BackendIni
     TYPE,
     ...
 )
-  CORE_START_CONDITIONAL_DEPENDENCY(BackendIniBit, CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), DEP, TYPE, NOT_MODEL) \
+CORE_START_CONDITIONAL_DEPENDENCY(BackendIniBit, CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), DEP, TYPE, NOT_MODEL) \
   ACTIVATE_DEP_MODEL(BackendIniBit, CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), CAT_5(BACKENDNAME,_,SAFE_VERSION,_,init), DEP, NOT_MODEL, #__VA_ARGS__)
 ```
 
@@ -416,7 +415,7 @@ BE_NAMESPACE                                                                \
 {                                                                           \
   namespace                                                                 \
   {                                                                         \
-    const int UNUSED_OK CAT(MODEL,_OK) =                                    \
+    const int UNUSED_OKCAT(MODEL,_OK) =                                    \
      vectorstr_push_back(allowed_models,STRINGIFY(MODEL));                  \
   }                                                                         \
 }                                                                           \
@@ -1237,4 +1236,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:28 +0000
+Updated on 2022-09-07 at 13:49:57 +0000

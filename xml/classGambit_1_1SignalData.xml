@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1SignalData" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::SignalData</compoundname>
+    <includes refid="signal__handling_8hpp" local="no">signal_handling.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a891bc8921c31792ab6ba3ee8bf8e6e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::SignalData::SignalData</definition>
+        <argsstring>()</argsstring>
+        <name>SignalData</name>
+        <qualifiedname>Gambit::SignalData::SignalData</qualifiedname>
+        <briefdescription>
+<para><ref refid="classGambit_1_1SignalData" kindref="compound">SignalData</ref> member functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor (initialise member variables) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="77" column="8" bodyfile="Utils/src/signal_handling.cpp" bodystart="142" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a7cbe24e16edd27b919d73e9c75182c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::SignalData::myrank</definition>
+        <argsstring>()</argsstring>
+        <name>myrank</name>
+        <qualifiedname>Gambit::SignalData::myrank</qualifiedname>
+        <briefdescription>
+<para>Retrieve MPI rank as a string (for log messages etc.) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="79" column="20" bodyfile="Utils/src/signal_handling.cpp" bodystart="175" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a880d59b3d4d303133bbc8901eb6868a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::setjump</definition>
+        <argsstring>()</argsstring>
+        <name>setjump</name>
+        <qualifiedname>Gambit::SignalData::setjump</qualifiedname>
+        <briefdescription>
+<para>Set jump point;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="88" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="188" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a1e7758016fc89406d235b94e595f0cf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::set_cleanup</definition>
+        <argsstring>(void_func f)</argsstring>
+        <name>set_cleanup</name>
+        <qualifiedname>Gambit::SignalData::set_cleanup</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1SignalData_1a3c8342fc7eb6856639a564efc94cb3a3" kindref="member">void_func</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Set cleanup function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="94" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="195" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a40906f920ca0c7ec8351fd168083bb17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::call_cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>call_cleanup</name>
+        <qualifiedname>Gambit::SignalData::call_cleanup</qualifiedname>
+        <briefdescription>
+<para>Call cleanup function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="95" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="202" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a49c94cbca4acf67bac4353eaf7c6f24c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::set_shutdown_begun</definition>
+        <argsstring>(const sig_atomic_t emergnc=0)</argsstring>
+        <name>set_shutdown_begun</name>
+        <qualifiedname>Gambit::SignalData::set_shutdown_begun</qualifiedname>
+        <param>
+          <type>const sig_atomic_t</type>
+          <declname>emergnc</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Register that shutdown has begun. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="98" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="246" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a3193046de6388b99819f5bef94bcd3bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::shutdown_begun</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown_begun</name>
+        <qualifiedname>Gambit::SignalData::shutdown_begun</qualifiedname>
+        <briefdescription>
+<para>Check if (any kind of) shutdown is in progress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if shutdown is in progress. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="101" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="261" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a9139ad5f3313fcec5ab13b6c69fde8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS bool</type>
+        <definition>bool Gambit::SignalData::check_if_shutdown_begun</definition>
+        <argsstring>()</argsstring>
+        <name>check_if_shutdown_begun</name>
+        <qualifiedname>Gambit::SignalData::check_if_shutdown_begun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check for signals that early shutdown is required If an MPI message telling us to perform an emergency shutdown is received (which should only happen in the case of an error on some other process) then a shutdown exception is raised. Otherwise, we just return a bool indicating the shutdown status </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="108" column="28" bodyfile="Utils/src/signal_handling.cpp" bodystart="379" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1ae5b3c96aa958d1285d1c3a09ed4a06ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::add_signal</definition>
+        <argsstring>(int sig)</argsstring>
+        <name>add_signal</name>
+        <qualifiedname>Gambit::SignalData::add_signal</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+<para>Check if emergency shutdown is in progress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add signal to record.</para>
+<para>Add signal to record </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="114" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="209" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a40ab68fd89e88bd8cbc55868c3516295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::SignalData::display_received_signals</definition>
+        <argsstring>()</argsstring>
+        <name>display_received_signals</name>
+        <qualifiedname>Gambit::SignalData::display_received_signals</qualifiedname>
+        <briefdescription>
+<para>Print to string a list of the signals received so far by this process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="117" column="20" bodyfile="Utils/src/signal_handling.cpp" bodystart="224" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a8a188f1ee51d1b06cf49af766a4ab3d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::entering_multithreaded_region</definition>
+        <argsstring>()</argsstring>
+        <name>entering_multithreaded_region</name>
+        <qualifiedname>Gambit::SignalData::entering_multithreaded_region</qualifiedname>
+        <briefdescription>
+<para>Only check for emergency shutdown signals (i.e. do not attempt synchronisation) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: Thread checking routines are no longer needed due to simplified shutdown method. Can be deleted when functors are updated to no longer call these routines.</para>
+<para>Check if shutdown is in progress and raise appropriate termination exception if so. (to be called by <ref refid="namespaceGambit" kindref="compound">Gambit</ref> once it is safe to trigger termination) Switch to threadsafe signal handling mode</para>
+<para>Absorb any extra shutdown messages that may be unreceived (since every process broadcasts to every other process that it should shut down, so with lots of processess there will be lots of unreceived messages floating around) Switch to threadsafe signal handling mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="132" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="550" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a3b5024edb432e96e28a5ebf2400e3441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::leaving_multithreaded_region</definition>
+        <argsstring>()</argsstring>
+        <name>leaving_multithreaded_region</name>
+        <qualifiedname>Gambit::SignalData::leaving_multithreaded_region</qualifiedname>
+        <briefdescription>
+<para>Exit threadsafe signal handling mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="135" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="559" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a48cc306f36b64b3fc89e2dcc64b308a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::inside_multithreaded_region</definition>
+        <argsstring>()</argsstring>
+        <name>inside_multithreaded_region</name>
+        <qualifiedname>Gambit::SignalData::inside_multithreaded_region</qualifiedname>
+        <briefdescription>
+<para>Report &apos;true&apos; if inside a multithreaded region (according to our own flag) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="138" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="568" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a4e2651863d9fb95cb4788445b3df1c31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::update_looptime</definition>
+        <argsstring>(double newtime)</argsstring>
+        <name>update_looptime</name>
+        <qualifiedname>Gambit::SignalData::update_looptime</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>newtime</declname>
+        </param>
+        <briefdescription>
+<para>Extra functions needed in MPI mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new loop time to internal array used to decide barrier timeout.</para>
+<para>Add a new loop time to internal array used to decide barrier timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="171" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="474" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1a11ad28c611fe9bbbc7501dee762598bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SignalData::attempt_soft_shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>attempt_soft_shutdown</name>
+        <qualifiedname>Gambit::SignalData::attempt_soft_shutdown</qualifiedname>
+        <briefdescription>
+<para>Perform soft shutdown if processes can be synchronised. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Start counting...</para>
+<para>First time we see the shutdown signal, we will allow control to return to the scanner at least once, so that it can get its own affairs in order.</para>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="174" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="284" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1SignalData_1adb638f50868b4c2061b504d1d9e60579" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::all_processes_ready</definition>
+        <argsstring>()</argsstring>
+        <name>all_processes_ready</name>
+        <qualifiedname>Gambit::SignalData::all_processes_ready</qualifiedname>
+        <briefdescription>
+<para>Attempt to synchronise all processes, but abort if it takes too long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="207" column="13" bodyfile="Utils/src/signal_handling.cpp" bodystart="265" bodyend="282"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classGambit_1_1SignalData_1a3c8342fc7eb6856639a564efc94cb3a3" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* Gambit::SignalData::void_func) ()</definition>
+        <argsstring>)()</argsstring>
+        <name>void_func</name>
+        <qualifiedname>Gambit::SignalData::void_func</qualifiedname>
+        <briefdescription>
+<para>Set cleanup function to run during emergency shutdown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="91" column="16" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1ae2a073ff789741fdfcb7dea49512673d" prot="public" static="no" mutable="no">
+        <type>jmp_buf</type>
+        <definition>jmp_buf Gambit::SignalData::env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>Gambit::SignalData::env</qualifiedname>
+        <briefdescription>
+<para>Saved information on calling environment for longjmp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="82" column="16" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a89d129ec4326955b8e2186f891e6bc9e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::jumppoint_set</definition>
+        <argsstring></argsstring>
+        <name>jumppoint_set</name>
+        <qualifiedname>Gambit::SignalData::jumppoint_set</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="83" column="13" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a1c23abd66a6bd96ae837cef204a54cd5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SignalData::havejumped</definition>
+        <argsstring></argsstring>
+        <name>havejumped</name>
+        <qualifiedname>Gambit::SignalData::havejumped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="84" column="12" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a6e319949038baf98fea4fe70eb7b7997" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1SignalData_1a3c8342fc7eb6856639a564efc94cb3a3" kindref="member">void_func</ref></type>
+        <definition>void_func Gambit::SignalData::cleanup</definition>
+        <argsstring></argsstring>
+        <name>cleanup</name>
+        <qualifiedname>Gambit::SignalData::cleanup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="92" column="18" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a7ed99354704ff9dcdfe30dd8fb4b8dfd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::cleanup_function_set</definition>
+        <argsstring></argsstring>
+        <name>cleanup_function_set</name>
+        <qualifiedname>Gambit::SignalData::cleanup_function_set</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="93" column="13" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1adfa87541da833858cfa0403b806b72d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SignalData::rank</definition>
+        <argsstring></argsstring>
+        <name>rank</name>
+        <qualifiedname>Gambit::SignalData::rank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="177" column="12" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a763d04c64ff883c8020b5b4e3991932a" prot="private" static="no" mutable="no">
+        <type>volatile sig_atomic_t</type>
+        <definition>volatile sig_atomic_t Gambit::SignalData::shutdownBegun</definition>
+        <argsstring></argsstring>
+        <name>shutdownBegun</name>
+        <qualifiedname>Gambit::SignalData::shutdownBegun</qualifiedname>
+        <briefdescription>
+<para>Flag to warn if early shutdown is already in process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="180" column="30" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1af9930cbde9d9a2388d2a2460cdae5a66" prot="private" static="no" mutable="no">
+        <type>volatile sig_atomic_t</type>
+        <definition>volatile sig_atomic_t Gambit::SignalData::emergency</definition>
+        <argsstring></argsstring>
+        <name>emergency</name>
+        <qualifiedname>Gambit::SignalData::emergency</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag to warn if the shutdown that is in progress is an emergency shutdown (use to decided whether to attempt MPI synchronisation) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="183" column="30" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1aeec35682dbe775cac8e20ae29d331621" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::POSIX_signal_noticed</definition>
+        <argsstring></argsstring>
+        <name>POSIX_signal_noticed</name>
+        <qualifiedname>Gambit::SignalData::POSIX_signal_noticed</qualifiedname>
+        <briefdescription>
+<para>Flag to indicate if POSIX shutdown signal has been noticed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="185" column="13" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1aa4138b92ad3defb83a8bf70fa3193f09" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::shutdown_due_to_MPI_message</definition>
+        <argsstring></argsstring>
+        <name>shutdown_due_to_MPI_message</name>
+        <qualifiedname>Gambit::SignalData::shutdown_due_to_MPI_message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="188" column="13" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a8fe3346442aa2bcd114834cea8eb493b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SignalData::shutdown_attempts</definition>
+        <argsstring></argsstring>
+        <name>shutdown_attempts</name>
+        <qualifiedname>Gambit::SignalData::shutdown_attempts</qualifiedname>
+        <briefdescription>
+<para>Number of times synchronisation for soft shutdown has been attempted;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="191" column="12" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a0baf96d23cdae388c85005b8f8360a63" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SignalData::attempts_since_ff</definition>
+        <argsstring></argsstring>
+        <name>attempts_since_ff</name>
+        <qualifiedname>Gambit::SignalData::attempts_since_ff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="192" column="12" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a09d472072760ddf2de400126c64f302a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SignalData::ff_loop_count</definition>
+        <argsstring></argsstring>
+        <name>ff_loop_count</name>
+        <qualifiedname>Gambit::SignalData::ff_loop_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="193" column="12" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1ad63745436cd63c59764b20c384f08c43" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::ff_on</definition>
+        <argsstring></argsstring>
+        <name>ff_on</name>
+        <qualifiedname>Gambit::SignalData::ff_on</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="194" column="13" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a6dd8e1529758611faf8872cc640f1ff5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SignalData::ff_count</definition>
+        <argsstring></argsstring>
+        <name>ff_count</name>
+        <qualifiedname>Gambit::SignalData::ff_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="195" column="12" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1ab67b57322424c97c3aad61d9508b12ce" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::SignalData::inside_omp_block</definition>
+        <argsstring></argsstring>
+        <name>inside_omp_block</name>
+        <qualifiedname>Gambit::SignalData::inside_omp_block</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag to switch signal handling behavior to multithreaded mode (i.e. triggers switch to threadsafe emergency shutdown behaviour) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="199" column="13" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a7914ae8cb782d0b25e7ee7af88a49ad7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SignalData::received_signals[MAX_SIGNALS]</definition>
+        <argsstring>[MAX_SIGNALS]</argsstring>
+        <name>received_signals</name>
+        <qualifiedname>Gambit::SignalData::received_signals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="203" column="12" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1ab739d55ef8e53434f09b110e7b90b633" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::SignalData::N_signals</definition>
+        <argsstring></argsstring>
+        <name>N_signals</name>
+        <qualifiedname>Gambit::SignalData::N_signals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="204" column="12" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1SignalData_1a0f32c884324b8c3f7cf2a513e15fd437" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Gambit::SignalData::MAX_SIGNALS</definition>
+        <argsstring></argsstring>
+        <name>MAX_SIGNALS</name>
+        <qualifiedname>Gambit::SignalData::MAX_SIGNALS</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+<para>Array to record received signals (up to max_signals) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="202" column="25" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Variables for use in signal handlers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/signal_handling.hpp" line="74" column="4" bodyfile="Utils/include/gambit/Utils/signal_handling.hpp" bodystart="75" bodyend="231"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1SignalData_1ae5b3c96aa958d1285d1c3a09ed4a06ab" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>add_signal</name></member>
+      <member refid="classGambit_1_1SignalData_1adb638f50868b4c2061b504d1d9e60579" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>all_processes_ready</name></member>
+      <member refid="classGambit_1_1SignalData_1a11ad28c611fe9bbbc7501dee762598bf" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>attempt_soft_shutdown</name></member>
+      <member refid="classGambit_1_1SignalData_1a0baf96d23cdae388c85005b8f8360a63" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>attempts_since_ff</name></member>
+      <member refid="classGambit_1_1SignalData_1a40906f920ca0c7ec8351fd168083bb17" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>call_cleanup</name></member>
+      <member refid="classGambit_1_1SignalData_1a9139ad5f3313fcec5ab13b6c69fde8ad" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>check_if_shutdown_begun</name></member>
+      <member refid="classGambit_1_1SignalData_1a6e319949038baf98fea4fe70eb7b7997" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>cleanup</name></member>
+      <member refid="classGambit_1_1SignalData_1a7ed99354704ff9dcdfe30dd8fb4b8dfd" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>cleanup_function_set</name></member>
+      <member refid="classGambit_1_1SignalData_1a40ab68fd89e88bd8cbc55868c3516295" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>display_received_signals</name></member>
+      <member refid="classGambit_1_1SignalData_1af9930cbde9d9a2388d2a2460cdae5a66" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>emergency</name></member>
+      <member refid="classGambit_1_1SignalData_1a8a188f1ee51d1b06cf49af766a4ab3d6" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>entering_multithreaded_region</name></member>
+      <member refid="classGambit_1_1SignalData_1ae2a073ff789741fdfcb7dea49512673d" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>env</name></member>
+      <member refid="classGambit_1_1SignalData_1a6dd8e1529758611faf8872cc640f1ff5" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>ff_count</name></member>
+      <member refid="classGambit_1_1SignalData_1a09d472072760ddf2de400126c64f302a" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>ff_loop_count</name></member>
+      <member refid="classGambit_1_1SignalData_1ad63745436cd63c59764b20c384f08c43" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>ff_on</name></member>
+      <member refid="classGambit_1_1SignalData_1a1c23abd66a6bd96ae837cef204a54cd5" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>havejumped</name></member>
+      <member refid="classGambit_1_1SignalData_1a48cc306f36b64b3fc89e2dcc64b308a5" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>inside_multithreaded_region</name></member>
+      <member refid="classGambit_1_1SignalData_1ab67b57322424c97c3aad61d9508b12ce" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>inside_omp_block</name></member>
+      <member refid="classGambit_1_1SignalData_1a89d129ec4326955b8e2186f891e6bc9e" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>jumppoint_set</name></member>
+      <member refid="classGambit_1_1SignalData_1a3b5024edb432e96e28a5ebf2400e3441" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>leaving_multithreaded_region</name></member>
+      <member refid="classGambit_1_1SignalData_1a0f32c884324b8c3f7cf2a513e15fd437" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>MAX_SIGNALS</name></member>
+      <member refid="classGambit_1_1SignalData_1a7cbe24e16edd27b919d73e9c75182c65" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>myrank</name></member>
+      <member refid="classGambit_1_1SignalData_1ab739d55ef8e53434f09b110e7b90b633" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>N_signals</name></member>
+      <member refid="classGambit_1_1SignalData_1aeec35682dbe775cac8e20ae29d331621" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>POSIX_signal_noticed</name></member>
+      <member refid="classGambit_1_1SignalData_1adfa87541da833858cfa0403b806b72d3" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>rank</name></member>
+      <member refid="classGambit_1_1SignalData_1a7914ae8cb782d0b25e7ee7af88a49ad7" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>received_signals</name></member>
+      <member refid="classGambit_1_1SignalData_1a1e7758016fc89406d235b94e595f0cf6" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>set_cleanup</name></member>
+      <member refid="classGambit_1_1SignalData_1a49c94cbca4acf67bac4353eaf7c6f24c" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>set_shutdown_begun</name></member>
+      <member refid="classGambit_1_1SignalData_1a880d59b3d4d303133bbc8901eb6868a3" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>setjump</name></member>
+      <member refid="classGambit_1_1SignalData_1a8fe3346442aa2bcd114834cea8eb493b" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>shutdown_attempts</name></member>
+      <member refid="classGambit_1_1SignalData_1a3193046de6388b99819f5bef94bcd3bb" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>shutdown_begun</name></member>
+      <member refid="classGambit_1_1SignalData_1aa4138b92ad3defb83a8bf70fa3193f09" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>shutdown_due_to_MPI_message</name></member>
+      <member refid="classGambit_1_1SignalData_1a763d04c64ff883c8020b5b4e3991932a" prot="private" virt="non-virtual"><scope>Gambit::SignalData</scope><name>shutdownBegun</name></member>
+      <member refid="classGambit_1_1SignalData_1a891bc8921c31792ab6ba3ee8bf8e6e2b" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>SignalData</name></member>
+      <member refid="classGambit_1_1SignalData_1a4e2651863d9fb95cb4788445b3df1c31" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>update_looptime</name></member>
+      <member refid="classGambit_1_1SignalData_1a3c8342fc7eb6856639a564efc94cb3a3" prot="public" virt="non-virtual"><scope>Gambit::SignalData</scope><name>void_func</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

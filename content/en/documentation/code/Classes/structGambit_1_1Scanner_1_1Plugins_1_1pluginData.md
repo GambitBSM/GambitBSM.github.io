@@ -4,8 +4,7 @@ description: 'Structure that holds all the data provided by plugins about themse
 
 ---
 
-
-
+# Gambit::Scanner::Plugins::pluginData
 
 
 
@@ -38,7 +37,7 @@ Structure that holds all the data provided by plugins about themselves.
 | std::vector< void * > | **[inputData](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-inputdata)**  |
 | std::vector< void(*)([pluginData](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/) &)> | **[inits](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-inits)**  |
 | std::map< std::string, [factoryBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/) * > | **[outputFuncs](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-outputfuncs)**  |
-| std::map< type_index, void * > | **[plugin_mains](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-plugin-mains)**  |
+| std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > | **[plugin_mains](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-plugin-mains)**  |
 | void(*)() | **[deconstructor](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-deconstructor)**  |
 | bool | **[loaded](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/#variable-loaded)**  |
 
@@ -164,4 +163,4 @@ bool loaded;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

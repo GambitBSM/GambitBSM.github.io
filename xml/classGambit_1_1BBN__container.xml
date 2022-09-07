@@ -19,7 +19,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/AlterBBN.hpp" line="120" column="14" bodyfile="Backends/include/gambit/Backends/backend_types/AlterBBN.hpp" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1BBN__container_1a237636c839f3e4ded0e9be235821987f" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; triplet&lt; double &gt; &gt;</type>
+        <type>std::vector&lt; <ref refid="structGambit_1_1triplet" kindref="compound">triplet</ref>&lt; double &gt; &gt;</type>
         <definition>std::vector&lt;triplet&lt;double&gt; &gt; Gambit::BBN_container::BBN_abund</definition>
         <argsstring></argsstring>
         <name>BBN_abund</name>
@@ -47,7 +47,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/AlterBBN.hpp" line="122" column="19" bodyfile="Backends/include/gambit/Backends/backend_types/AlterBBN.hpp" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1BBN__container_1ace5aaab542ad2cf51141175851197550" prot="private" static="no" mutable="no">
-        <type>std::map&lt; str, int &gt;</type>
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, int &gt;</type>
         <definition>std::map&lt;str,int&gt; Gambit::BBN_container::abund_map</definition>
         <argsstring></argsstring>
         <name>abund_map</name>
@@ -61,7 +61,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/AlterBBN.hpp" line="123" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/AlterBBN.hpp" bodystart="123" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1BBN__container_1a7878de4f3b0a9fa0399029d688344b61" prot="private" static="no" mutable="no">
-        <type>std::set&lt; str &gt;</type>
+        <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
         <definition>std::set&lt;str&gt; Gambit::BBN_container::active_isotopes</definition>
         <argsstring></argsstring>
         <name>active_isotopes</name>
@@ -131,7 +131,7 @@
         <name>set_abund_map</name>
         <qualifiedname>Gambit::BBN_container::set_abund_map</qualifiedname>
         <param>
-          <type>map_str_int</type>
+          <type><ref refid="namespaceGambit_1a5d7d3e157918b1a536f394671e12a328" kindref="member">map_str_int</ref></type>
           <declname>map_in</declname>
         </param>
         <briefdescription>
@@ -177,7 +177,7 @@
           <declname>pos</declname>
         </param>
         <param>
-          <type>triplet&lt; double &gt;</type>
+          <type><ref refid="structGambit_1_1triplet" kindref="compound">triplet</ref>&lt; double &gt;</type>
           <declname>val</declname>
         </param>
         <briefdescription>
@@ -307,7 +307,7 @@
         <name>get_BBN_abund</name>
         <qualifiedname>Gambit::BBN_container::get_BBN_abund</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>iso</declname>
         </param>
         <briefdescription>
@@ -326,7 +326,7 @@
         <name>get_BBN_abund_upper</name>
         <qualifiedname>Gambit::BBN_container::get_BBN_abund_upper</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>iso</declname>
         </param>
         <briefdescription>
@@ -344,7 +344,7 @@
         <name>get_BBN_abund_lower</name>
         <qualifiedname>Gambit::BBN_container::get_BBN_abund_lower</qualifiedname>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <declname>iso</declname>
         </param>
         <briefdescription>
@@ -385,7 +385,7 @@
         <name>set_active_isotopes</name>
         <qualifiedname>Gambit::BBN_container::set_active_isotopes</qualifiedname>
         <param>
-          <type>std::set&lt; str &gt;</type>
+          <type>std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
           <declname>isos</declname>
         </param>
         <briefdescription>
@@ -398,7 +398,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/AlterBBN.hpp" line="95" column="12" bodyfile="Backends/include/gambit/Backends/backend_types/AlterBBN.hpp" bodystart="95" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1BBN__container_1a1d5703eb66b6e98804b4fb1194976b58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const std::set&lt; str &gt; &amp;</type>
+        <type>const std::set&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
         <definition>const std::set&lt; str &gt; &amp; Gambit::BBN_container::get_active_isotopes</definition>
         <argsstring>() const</argsstring>
         <name>get_active_isotopes</name>

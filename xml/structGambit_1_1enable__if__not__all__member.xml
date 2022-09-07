@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structGambit_1_1enable__if__not__all__member" kind="struct" language="C++" prot="public">
+    <compoundname>Gambit::enable_if_not_all_member</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename ret</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>args</declname>
+        <defname>args</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structGambit_1_1enable__if__not__all__member_1ae5e718a5d72620bc68027939d1b08fe3" prot="public" static="no">
+        <type>std::enable_if&lt;!<ref refid="structGambit_1_1is__all__member" kindref="compound">is_all_member</ref>&lt; T, args... &gt;::value, ret &gt;</type>
+        <definition>typedef std::enable_if&lt;!is_all_member&lt;T, args...&gt;::value, ret&gt; Gambit::enable_if_not_all_member&lt; T, ret, args &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>Gambit::enable_if_not_all_member::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/variadic_functions.hpp" line="553" column="41" bodyfile="Utils/include/gambit/Utils/variadic_functions.hpp" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/variadic_functions.hpp" line="551" column="9" bodyfile="Utils/include/gambit/Utils/variadic_functions.hpp" bodystart="552" bodyend="554"/>
+    <listofallmembers>
+      <member refid="structGambit_1_1enable__if__not__all__member_1ae5e718a5d72620bc68027939d1b08fe3" prot="public" virt="non-virtual"><scope>Gambit::enable_if_not_all_member</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

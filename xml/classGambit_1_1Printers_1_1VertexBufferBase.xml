@@ -1,0 +1,816 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1VertexBufferBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gambit::Printers::VertexBufferBase</compoundname>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D" prot="public" virt="non-virtual">Gambit::Printers::VertexBufferNumeric1D&lt; T, CHUNKLENGTH &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D" prot="public" virt="non-virtual">Gambit::Printers::VertexBufferNumeric1D&lt; T, LENGTH &gt;</derivedcompoundref>
+    <includes refid="VertexBufferBase_8hpp" local="no">VertexBufferBase.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1ad083101b23acabf8024a6a0697bf0fe7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char Gambit::Printers::VertexBufferBase::access_mode</definition>
+        <argsstring>() const</argsstring>
+        <name>access_mode</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::access_mode</qualifiedname>
+        <briefdescription>
+<para>Buffer status getters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="113" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a8135d16a78063daaa7967b1e34a88ab4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::sync_buffer_is_full</definition>
+        <argsstring>() const</argsstring>
+        <name>sync_buffer_is_full</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::sync_buffer_is_full</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="114" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a2485f1f5fd7e31e8bc873bf54bbf891f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::sync_buffer_is_empty</definition>
+        <argsstring>() const</argsstring>
+        <name>sync_buffer_is_empty</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::sync_buffer_is_empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="115" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a5dc76613405b066c7efddee2c236ff0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::is_synchronised</definition>
+        <argsstring>() const</argsstring>
+        <name>is_synchronised</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::is_synchronised</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="116" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1adc71de68b2a4c7e345b693f7e0c0a5b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::is_silenced</definition>
+        <argsstring>() const</argsstring>
+        <name>is_silenced</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::is_silenced</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="117" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a0ed70906bdd4b9c4f6953a0ad17e7785" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::resume_mode</definition>
+        <argsstring>() const</argsstring>
+        <name>resume_mode</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::resume_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="118" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a64b7aea2062bf584feb936310956fcd9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::MPI_mode</definition>
+        <argsstring>() const</argsstring>
+        <name>MPI_mode</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::MPI_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="119" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1aa071bb482a23fbbd578aea729ca534cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Gambit::Printers::VertexBufferBase::get_head_position</definition>
+        <argsstring>() const</argsstring>
+        <name>get_head_position</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::get_head_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="120" column="26" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="120" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1ab1e27f61955bc265ddaa0524a2cd099f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::donethispoint</definition>
+        <argsstring></argsstring>
+        <name>donethispoint</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::donethispoint</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="37" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1a68205e9de9dce9121c1caa2a16842a52" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::VertexBufferBase::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="40" column="25" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1a0fa91794a84538c5d832c7eaa8e4cf79" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::Printers::VertexBufferBase::vertexID</definition>
+        <argsstring></argsstring>
+        <name>vertexID</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::vertexID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="41" column="17" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1aa844e8cf6feaabcd78b9f1babf250a23" prot="private" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Gambit::Printers::VertexBufferBase::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="42" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1ac76d5fc88d01e1415d3cc75b9c71ea89" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Gambit::Printers::VertexBufferBase::head_position</definition>
+        <argsstring></argsstring>
+        <name>head_position</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::head_position</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="45" column="26" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1a76f4f9b53d65a3c8eb50f8f2bed1c527" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::synchronised</definition>
+        <argsstring></argsstring>
+        <name>synchronised</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::synchronised</qualifiedname>
+        <briefdescription>
+<para>flag to trigger synchronised buffer writing </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="48" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1a523db2a276dd627b84dfe18d84c9cfb4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::silenced</definition>
+        <argsstring></argsstring>
+        <name>silenced</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::silenced</qualifiedname>
+        <briefdescription>
+<para>flag to disable any writing (turns this into a null buffer) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="51" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1ab2fc8bd144839d0689411b54032f7b0e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::resume</definition>
+        <argsstring></argsstring>
+        <name>resume</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::resume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag to indicate that GAMBIT is attempting to resume a run, so we need to hook into existing output streams rather than create new ones </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="55" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1a82e01e39aa70591be5752dc91121e983" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::MPImode</definition>
+        <argsstring></argsstring>
+        <name>MPImode</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::MPImode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag to indicate whether full buffers should be written to disk, or whether they should be send to the master node via MPI. Different printers can use different modes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="60" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1a21721eb0ed72c19790e1530989c75c31" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Gambit::Printers::VertexBufferBase::access</definition>
+        <argsstring></argsstring>
+        <name>access</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::access</qualifiedname>
+        <briefdescription>
+<para>flag to indicate the buffer access mode (i.e. read/write) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="63" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1a9554bb9968e6bd57e4679522d70643f2" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::sync_buffer_full</definition>
+        <argsstring></argsstring>
+        <name>sync_buffer_full</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::sync_buffer_full</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>flag to indicate if the sync buffer is full (and ready for sending/dumping) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="67" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1VertexBufferBase_1ab1e4920d3c89f3e417c8c69167824d90" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::sync_buffer_empty</definition>
+        <argsstring></argsstring>
+        <name>sync_buffer_empty</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::sync_buffer_empty</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="68" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a7c0bbe2362a37e8d5d94ecaa20577ace" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::VertexBufferBase::VertexBufferBase</definition>
+        <argsstring>()</argsstring>
+        <name>VertexBufferBase</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::VertexBufferBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="71" column="13" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="71" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1aa8502dbfb99028ac2a6f31efc234a66e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::VertexBufferBase::VertexBufferBase</definition>
+        <argsstring>(const std::string &amp;l, const int vID, const uint i, const bool sync, const bool sil, const bool r, const bool mode, const char a)</argsstring>
+        <name>VertexBufferBase</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::VertexBufferBase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>sync</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>sil</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="85" column="13" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="85" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a2f373ced831612fced6beb148cc87ca5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gambit::Printers::VertexBufferBase::~VertexBufferBase</definition>
+        <argsstring>()</argsstring>
+        <name>~VertexBufferBase</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::~VertexBufferBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="100" column="21" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a44c7bab538791a4206adbadf24bcf7c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Printers::VertexBufferBase::get_vertexID</definition>
+        <argsstring>() const</argsstring>
+        <name>get_vertexID</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::get_vertexID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="108" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a3bae7cd827f00466a3eb6b3b1bfd2227" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint Gambit::Printers::VertexBufferBase::get_index</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::get_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="109" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a4dd2b063cf8456113c687a838d94ed91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::VertexBufferBase::get_label</definition>
+        <argsstring>() const</argsstring>
+        <name>get_label</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::get_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="110" column="25" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a453e34e4328999e42d46cc03a9d1d7b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::VertexBufferBase::MPImode_only</definition>
+        <argsstring>(std::string local_info)</argsstring>
+        <name>MPImode_only</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::MPImode_only</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>local_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MPI mode error Put in functions which should not run if MPImode=false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="125" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="125" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a9ce2a5fe047877b59815c0eb1b40c29c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned long</type>
+        <definition>virtual unsigned long Gambit::Printers::VertexBufferBase::dset_head_pos</definition>
+        <argsstring>()=0</argsstring>
+        <name>dset_head_pos</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::dset_head_pos</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a9f0ed357d9498d373dce883e25b17285">dset_head_pos</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1a1d8b05c9ec23ae54d00a1bb46d4cf61c">dset_head_pos</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1a1d8b05c9ec23ae54d00a1bb46d4cf61c">dset_head_pos</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="136" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a0670c2e8db291fe9da626ef7bbd5756e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::VertexBufferBase::sync_report</definition>
+        <argsstring>()=0</argsstring>
+        <name>sync_report</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::sync_report</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1acc901c1ee4c7f460ed3fbff8c39d6846">sync_report</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="139" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a61f5716deb3f5ae1d967d168b9a60315" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::VertexBufferBase::flush</definition>
+        <argsstring>()=0</argsstring>
+        <name>flush</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::flush</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1ad88a686c9b2f6f0489b8f8542350499f">flush</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1ad88a686c9b2f6f0489b8f8542350499f">flush</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="142" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a072c1b13e70b57299b67a4fb478aab50" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::VertexBufferBase::RA_flush</definition>
+        <argsstring>(const std::map&lt; PPIDpair, ulong &gt; &amp;PPID_to_dsetindex)=0</argsstring>
+        <name>RA_flush</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::RA_flush</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1afd26e1c5dc2dc687e3e0a6292db49c4b">RA_flush</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1afd26e1c5dc2dc687e3e0a6292db49c4b">RA_flush</reimplementedby>
+        <param>
+          <type>const std::map&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref>, ulong &gt; &amp;</type>
+          <declname>PPID_to_dsetindex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="147" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a11ac3feb6814a7e4f0edd1cf59b6f8ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::VertexBufferBase::finalise</definition>
+        <argsstring>()=0</argsstring>
+        <name>finalise</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::finalise</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1abcc1f3cc458f073f5daca06f9d1f7847">finalise</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="150" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a40dd8b5d9a56b2af02d5271079375e91" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t Gambit::Printers::VertexBufferBase::postponed_RA_queue_length</definition>
+        <argsstring>()=0</argsstring>
+        <name>postponed_RA_queue_length</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::postponed_RA_queue_length</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a8ed7fd2fa4ab92e0b04828bccbad7074">postponed_RA_queue_length</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="153" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1ab97a7a19588f02c2e6c91c373034105f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint</type>
+        <definition>virtual uint Gambit::Printers::VertexBufferBase::get_RA_queue_length</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_RA_queue_length</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::get_RA_queue_length</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1a43f0da822195f49f0ed510a182b4dbb4">get_RA_queue_length</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1a43f0da822195f49f0ed510a182b4dbb4">get_RA_queue_length</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="154" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a5894374258753ecbda91765638a4791e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::VertexBufferBase::reset</definition>
+        <argsstring>(bool force=false)=0</argsstring>
+        <name>reset</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::reset</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a9e97f504488392f88a511eaccc745fc5">reset</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="164" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1abaca845ed3d53775a6cc201045f33a27" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::VertexBufferBase::skip_append</definition>
+        <argsstring>()=0</argsstring>
+        <name>skip_append</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::skip_append</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1ababb397a0ed95d0211b3e5b4e0766689">skip_append</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1ababb397a0ed95d0211b3e5b4e0766689">skip_append</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="167" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a83a121e88581d68207012dfd40007551" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::VertexBufferBase::N_skip_append</definition>
+        <argsstring>(ulong N)=0</argsstring>
+        <name>N_skip_append</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::N_skip_append</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1ab2442b4be363dee6e46c9fdf1f7f061c">N_skip_append</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D_1ab2442b4be363dee6e46c9fdf1f7f061c">N_skip_append</reimplementedby>
+        <param>
+          <type>ulong</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Skip several/many positions NOTE! This is meant for initialising new buffers to the correct position. If buffer overflows it may get cleared without data being written, so don&apos;t use this in other contexts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="173" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1ad8a7e7367b221c913631c8746b3edf11" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>ulong</type>
+        <definition>virtual ulong Gambit::Printers::VertexBufferBase::get_dataset_length</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_dataset_length</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::get_dataset_length</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a397dee596a3a254646738e2f1dca35e0">get_dataset_length</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="176" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a6079ced4f6f510c1fe3d85264934359f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::Printers::VertexBufferBase::donepoint</definition>
+        <argsstring>()</argsstring>
+        <name>donepoint</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::donepoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="198" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a46920ecbf759313e5b79ad4d9e7ddb99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::VertexBufferBase::set_donepoint</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>set_donepoint</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::set_donepoint</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="201" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a78795bef154761551d37dcc0092d1b63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::VertexBufferBase::move_head_to_next_slot</definition>
+        <argsstring>()</argsstring>
+        <name>move_head_to_next_slot</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::move_head_to_next_slot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="204" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="204" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a4c15d88d883284ad97cbefa62778c575" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::VertexBufferBase::fast_forward</definition>
+        <argsstring>(long target_pos)</argsstring>
+        <name>fast_forward</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::fast_forward</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>target_pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="212" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="212" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a840488230e66ea0075cc2fba4687733e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::VertexBufferBase::reset_head</definition>
+        <argsstring>()</argsstring>
+        <name>reset_head</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::reset_head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="229" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1adde5bfc46955ed177c81ea7022e0515a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::VertexBufferBase::error_if_done</definition>
+        <argsstring>()</argsstring>
+        <name>error_if_done</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::error_if_done</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="232" column="18" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="232" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferBase_1a218c6e9ad5aaffc188b8de54a2ca1f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Printers::VertexBufferBase::synchronise_output_to_position</definition>
+        <argsstring>(const unsigned long i)=0</argsstring>
+        <name>synchronise_output_to_position</name>
+        <qualifiedname>Gambit::Printers::VertexBufferBase::synchronise_output_to_position</qualifiedname>
+        <param>
+          <type>const unsigned long</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="248" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>VertexBuffer abstract interface base class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::Printers::VertexBufferBase</label>
+        <link refid="classGambit_1_1Printers_1_1VertexBufferBase"/>
+      </node>
+      <node id="4">
+        <label>Gambit::Printers::VertexBufferNumeric1D&lt; T, LENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::Printers::VertexBufferNumeric1D_HDF5&lt; T, CHUNKLENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::Printers::VertexBufferNumeric1D&lt; T, CHUNKLENGTH &gt;</label>
+        <link refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Printers/include/gambit/Printers/VertexBufferBase.hpp" line="33" column="7" bodyfile="Printers/include/gambit/Printers/VertexBufferBase.hpp" bodystart="34" bodyend="249"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a21721eb0ed72c19790e1530989c75c31" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>access</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1ad083101b23acabf8024a6a0697bf0fe7" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>access_mode</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a6079ced4f6f510c1fe3d85264934359f" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>donepoint</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1ab1e27f61955bc265ddaa0524a2cd099f" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>donethispoint</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a9ce2a5fe047877b59815c0eb1b40c29c" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>dset_head_pos</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1adde5bfc46955ed177c81ea7022e0515a" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>error_if_done</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a4c15d88d883284ad97cbefa62778c575" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>fast_forward</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a11ac3feb6814a7e4f0edd1cf59b6f8ae" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>finalise</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a61f5716deb3f5ae1d967d168b9a60315" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>flush</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1ad8a7e7367b221c913631c8746b3edf11" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>get_dataset_length</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1aa071bb482a23fbbd578aea729ca534cb" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>get_head_position</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a3bae7cd827f00466a3eb6b3b1bfd2227" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>get_index</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a4dd2b063cf8456113c687a838d94ed91" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>get_label</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1ab97a7a19588f02c2e6c91c373034105f" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>get_RA_queue_length</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a44c7bab538791a4206adbadf24bcf7c5" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>get_vertexID</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1ac76d5fc88d01e1415d3cc75b9c71ea89" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>head_position</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1aa844e8cf6feaabcd78b9f1babf250a23" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>index</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1adc71de68b2a4c7e345b693f7e0c0a5b8" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>is_silenced</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a5dc76613405b066c7efddee2c236ff0a" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>is_synchronised</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a68205e9de9dce9121c1caa2a16842a52" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>label</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a78795bef154761551d37dcc0092d1b63" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>move_head_to_next_slot</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a64b7aea2062bf584feb936310956fcd9" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>MPI_mode</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a82e01e39aa70591be5752dc91121e983" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>MPImode</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a453e34e4328999e42d46cc03a9d1d7b9" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>MPImode_only</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a83a121e88581d68207012dfd40007551" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>N_skip_append</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a40dd8b5d9a56b2af02d5271079375e91" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>postponed_RA_queue_length</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a072c1b13e70b57299b67a4fb478aab50" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>RA_flush</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a5894374258753ecbda91765638a4791e" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>reset</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a840488230e66ea0075cc2fba4687733e" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>reset_head</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1ab2fc8bd144839d0689411b54032f7b0e" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>resume</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a0ed70906bdd4b9c4f6953a0ad17e7785" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>resume_mode</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a46920ecbf759313e5b79ad4d9e7ddb99" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>set_donepoint</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a523db2a276dd627b84dfe18d84c9cfb4" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>silenced</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1abaca845ed3d53775a6cc201045f33a27" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>skip_append</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1ab1e4920d3c89f3e417c8c69167824d90" prot="protected" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>sync_buffer_empty</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a9554bb9968e6bd57e4679522d70643f2" prot="protected" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>sync_buffer_full</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a2485f1f5fd7e31e8bc873bf54bbf891f" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>sync_buffer_is_empty</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a8135d16a78063daaa7967b1e34a88ab4" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>sync_buffer_is_full</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a0670c2e8db291fe9da626ef7bbd5756e" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>sync_report</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a218c6e9ad5aaffc188b8de54a2ca1f16" prot="public" virt="pure-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>synchronise_output_to_position</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a76f4f9b53d65a3c8eb50f8f2bed1c527" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>synchronised</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a7c0bbe2362a37e8d5d94ecaa20577ace" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>VertexBufferBase</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1aa8502dbfb99028ac2a6f31efc234a66e" prot="public" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>VertexBufferBase</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a0fa91794a84538c5d832c7eaa8e4cf79" prot="private" virt="non-virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>vertexID</name></member>
+      <member refid="classGambit_1_1Printers_1_1VertexBufferBase_1a2f373ced831612fced6beb148cc87ca5" prot="public" virt="virtual"><scope>Gambit::Printers::VertexBufferBase</scope><name>~VertexBufferBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

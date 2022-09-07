@@ -293,7 +293,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt; is_container&lt; T &gt;::value, std::ostream &amp; &gt;::type</type>
+        <type>std::enable_if&lt; <ref refid="structGambit_1_1is__container" kindref="compound">is_container</ref>&lt; T &gt;::value, std::ostream &amp; &gt;::type</type>
         <definition>std::enable_if&lt; is_container&lt; T &gt;::value, std::ostream &amp; &gt;::type Gambit::Scanner::operator&lt;&lt;</definition>
         <argsstring>(std::ostream &amp;out, const T &amp;in)</argsstring>
         <name>operator&lt;&lt;</name>
@@ -321,7 +321,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt; is_pair&lt; T &gt;::value, std::ostream &amp; &gt;::type</type>
+        <type>std::enable_if&lt; <ref refid="structGambit_1_1is__pair" kindref="compound">is_pair</ref>&lt; T &gt;::value, std::ostream &amp; &gt;::type</type>
         <definition>std::enable_if&lt; is_pair&lt; T &gt;::value, std::ostream &amp; &gt;::type Gambit::Scanner::operator&lt;&lt;</definition>
         <argsstring>(std::ostream &amp;out, const T &amp;in)</argsstring>
         <name>operator&lt;&lt;</name>
@@ -350,7 +350,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt;!is_container&lt; T &gt;::value &amp;&amp;!is_pair&lt; T &gt;::value, void &gt;::type</type>
+        <type>std::enable_if&lt;!<ref refid="structGambit_1_1is__container" kindref="compound">is_container</ref>&lt; T &gt;::value &amp;&amp;!<ref refid="structGambit_1_1is__pair" kindref="compound">is_pair</ref>&lt; T &gt;::value, void &gt;::type</type>
         <definition>std::enable_if&lt;!is_container&lt; T &gt;::value &amp;&amp;!is_pair&lt; T &gt;::value, void &gt;::type Gambit::Scanner::resume_file_output</definition>
         <argsstring>(std::ofstream &amp;out, T &amp;param)</argsstring>
         <name>resume_file_output</name>
@@ -378,7 +378,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt; is_container&lt; T &gt;::value, void &gt;::type</type>
+        <type>std::enable_if&lt; <ref refid="structGambit_1_1is__container" kindref="compound">is_container</ref>&lt; T &gt;::value, void &gt;::type</type>
         <definition>std::enable_if&lt; is_container&lt; T &gt;::value, void &gt;::type Gambit::Scanner::resume_file_output</definition>
         <argsstring>(std::ofstream &amp;out, T &amp;param)</argsstring>
         <name>resume_file_output</name>
@@ -405,7 +405,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt; is_pair&lt; T &gt;::value, void &gt;::type</type>
+        <type>std::enable_if&lt; <ref refid="structGambit_1_1is__pair" kindref="compound">is_pair</ref>&lt; T &gt;::value, void &gt;::type</type>
         <definition>std::enable_if&lt; is_pair&lt; T &gt;::value, void &gt;::type Gambit::Scanner::resume_file_output</definition>
         <argsstring>(std::ofstream &amp;out, T &amp;param)</argsstring>
         <name>resume_file_output</name>
@@ -432,7 +432,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt;!is_container&lt; T &gt;::value &amp;&amp;!is_pair&lt; T &gt;::value, void &gt;::type</type>
+        <type>std::enable_if&lt;!<ref refid="structGambit_1_1is__container" kindref="compound">is_container</ref>&lt; T &gt;::value &amp;&amp;!<ref refid="structGambit_1_1is__pair" kindref="compound">is_pair</ref>&lt; T &gt;::value, void &gt;::type</type>
         <definition>std::enable_if&lt;!is_container&lt; T &gt;::value &amp;&amp;!is_pair&lt; T &gt;::value, void &gt;::type Gambit::Scanner::resume_file_input</definition>
         <argsstring>(std::ifstream &amp;in, T &amp;param)</argsstring>
         <name>resume_file_input</name>
@@ -459,7 +459,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt; is_container&lt; T &gt;::value, void &gt;::type</type>
+        <type>std::enable_if&lt; <ref refid="structGambit_1_1is__container" kindref="compound">is_container</ref>&lt; T &gt;::value, void &gt;::type</type>
         <definition>std::enable_if&lt; is_container&lt; T &gt;::value, void &gt;::type Gambit::Scanner::resume_file_input</definition>
         <argsstring>(std::ifstream &amp;in, T &amp;param)</argsstring>
         <name>resume_file_input</name>
@@ -486,7 +486,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt; is_pair&lt; T &gt;::value, void &gt;::type</type>
+        <type>std::enable_if&lt; <ref refid="structGambit_1_1is__pair" kindref="compound">is_pair</ref>&lt; T &gt;::value, void &gt;::type</type>
         <definition>std::enable_if&lt; is_pair&lt; T &gt;::value, void &gt;::type Gambit::Scanner::resume_file_input</definition>
         <argsstring>(std::ifstream &amp;in, T &amp;param)</argsstring>
         <name>resume_file_input</name>
@@ -513,7 +513,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt;!is_container&lt; T &gt;::value &amp;&amp;!is_pair&lt; T &gt;::value, size_t &gt;::type</type>
+        <type>std::enable_if&lt;!<ref refid="structGambit_1_1is__container" kindref="compound">is_container</ref>&lt; T &gt;::value &amp;&amp;!<ref refid="structGambit_1_1is__pair" kindref="compound">is_pair</ref>&lt; T &gt;::value, size_t &gt;::type</type>
         <definition>std::enable_if&lt;!is_container&lt; T &gt;::value &amp;&amp;!is_pair&lt; T &gt;::value, size_t &gt;::type Gambit::Scanner::resume_size_of</definition>
         <argsstring>(T &amp;)</argsstring>
         <name>resume_size_of</name>
@@ -535,7 +535,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt; is_container&lt; T &gt;::value, size_t &gt;::type</type>
+        <type>std::enable_if&lt; <ref refid="structGambit_1_1is__container" kindref="compound">is_container</ref>&lt; T &gt;::value, size_t &gt;::type</type>
         <definition>std::enable_if&lt; is_container&lt; T &gt;::value, size_t &gt;::type Gambit::Scanner::resume_size_of</definition>
         <argsstring>(T &amp;param)</argsstring>
         <name>resume_size_of</name>
@@ -558,7 +558,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt; is_pair&lt; T &gt;::value, size_t &gt;::type</type>
+        <type>std::enable_if&lt; <ref refid="structGambit_1_1is__pair" kindref="compound">is_pair</ref>&lt; T &gt;::value, size_t &gt;::type</type>
         <definition>std::enable_if&lt; is_pair&lt; T &gt;::value, size_t &gt;::type Gambit::Scanner::resume_size_of</definition>
         <argsstring>(T &amp;)</argsstring>
         <name>resume_size_of</name>
@@ -667,7 +667,7 @@
         <location file="ScannerBit/include/gambit/ScannerBit/plugin_factory.hpp" line="52" column="26" bodyfile="ScannerBit/include/gambit/ScannerBit/plugin_factory.hpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="printer__interface_8hpp_1ae767584d510b4dcaa3b82278ab1ecbd7" prot="public" static="no">
-        <type>Printers::BasePrinterManager</type>
+        <type><ref refid="classGambit_1_1Printers_1_1BasePrinterManager" kindref="compound">Printers::BasePrinterManager</ref></type>
         <definition>typedef Printers::BasePrinterManager Gambit::Scanner::printer_interface</definition>
         <argsstring></argsstring>
         <name>printer_interface</name>
@@ -682,7 +682,7 @@
         <location file="ScannerBit/include/gambit/ScannerBit/printer_interface.hpp" line="31" column="46" bodyfile="ScannerBit/include/gambit/ScannerBit/printer_interface.hpp" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="printer__interface_8hpp_1a3c6ca4999cbe5a04947a903788d93ee7" prot="public" static="no">
-        <type>Printers::BaseBasePrinter</type>
+        <type><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">Printers::BaseBasePrinter</ref></type>
         <definition>typedef Printers::BaseBasePrinter Gambit::Scanner::printer</definition>
         <argsstring></argsstring>
         <name>printer</name>
@@ -715,7 +715,7 @@
         <location file="ScannerBit/include/gambit/ScannerBit/plugin_factory.hpp" line="49" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/plugin_factory.hpp" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="plugin__factory_8hpp_1a35332e4b80ae4f79e69a09764599f330" prot="public" static="no" mutable="no">
-        <type>std::unordered_map&lt; type_index, func_type *, Gambit::type_hasher, Gambit::type_equal_to &gt;</type>
+        <type>std::unordered_map&lt; <ref refid="structGambit_1_1type__index" kindref="compound">type_index</ref>, func_type *, <ref refid="structGambit_1_1type__hasher" kindref="compound">Gambit::type_hasher</ref>, <ref refid="structGambit_1_1type__equal__to" kindref="compound">Gambit::type_equal_to</ref> &gt;</type>
         <definition>std::unordered_map&lt;type_index, func_type *, Gambit::type_hasher, Gambit::type_equal_to&gt; Gambit::Scanner::__functions__</definition>
         <argsstring></argsstring>
         <name>__functions__</name>
@@ -729,7 +729,7 @@
         <location file="ScannerBit/include/gambit/ScannerBit/plugin_factory.hpp" line="53" column="32" bodyfile="ScannerBit/include/gambit/ScannerBit/plugin_factory.hpp" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="plugin__factory_8hpp_1a48f8d79a6ccd4a325fca64c3fe8d6f33" prot="public" static="no" mutable="no">
-        <type>std::unordered_map&lt; type_index, multi_func_type * &gt;</type>
+        <type>std::unordered_map&lt; <ref refid="structGambit_1_1type__index" kindref="compound">type_index</ref>, multi_func_type * &gt;</type>
         <definition>std::unordered_map&lt;type_index, multi_func_type *&gt; Gambit::Scanner::__multi_functions__</definition>
         <argsstring></argsstring>
         <name>__multi_functions__</name>
@@ -884,7 +884,7 @@
         <location file="ScannerBit/include/gambit/ScannerBit/printer_interface.hpp" line="39" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/printer_interface.hpp" bodystart="39" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="scanner__utils_8hpp_1a160719ba0cc1b31c4e65eaeb50285745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>EXPORT_SYMBOLS error &amp;</type>
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1error" kindref="compound">error</ref> &amp;</type>
         <definition>error &amp; Gambit::Scanner::scan_error</definition>
         <argsstring>()</argsstring>
         <name>scan_error</name>
@@ -899,7 +899,7 @@
         <location file="ScannerBit/src/scanner_utils.cpp" line="28" column="23" bodyfile="ScannerBit/src/scanner_utils.cpp" bodystart="28" bodyend="32" declfile="ScannerBit/include/gambit/ScannerBit/scanner_utils.hpp" declline="115" declcolumn="30"/>
       </memberdef>
       <memberdef kind="function" id="scanner__utils_8hpp_1abbfed36d504a6f5b297acc30bde615b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>EXPORT_SYMBOLS warning &amp;</type>
+        <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1warning" kindref="compound">warning</ref> &amp;</type>
         <definition>warning &amp; Gambit::Scanner::scan_warning</definition>
         <argsstring>()</argsstring>
         <name>scan_warning</name>

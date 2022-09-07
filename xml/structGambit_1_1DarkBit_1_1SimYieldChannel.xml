@@ -149,7 +149,7 @@
           <declname>Ecm_max</declname>
         </param>
         <param>
-          <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; Options &gt;</type>
+          <type><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &gt;</type>
           <declname>runOptions</declname>
         </param>
         <briefdescription>
@@ -172,12 +172,24 @@
         <label>Gambit::DarkBit::SimYieldChannel</label>
         <link refid="structGambit_1_1DarkBit_1_1SimYieldChannel"/>
         <childnode refid="2" relation="usage">
+          <edgelabel>dNdE</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dNdE_bound</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
           <edgelabel>finalState</edgelabel>
           <edgelabel>p1</edgelabel>
           <edgelabel>p2</edgelabel>
         </childnode>
       </node>
       <node id="2">
+        <label>shared_ptr&lt; FunkBase &gt;</label>
+      </node>
+      <node id="3">
+        <label>shared_ptr&lt; FunkBound &gt;</label>
+      </node>
+      <node id="4">
         <label>string</label>
       </node>
     </collaborationgraph>

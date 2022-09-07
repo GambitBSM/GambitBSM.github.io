@@ -4,8 +4,7 @@ description: 'A fixed parameter. '
 
 ---
 
-
-
+# Gambit::Priors::FixedPrior
 
 
 
@@ -22,8 +21,8 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FixedPrior](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-fixedprior)**(const std::vector< std::string > & param, const Options & options) |
-| | **[FixedPrior](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-fixedprior)**(const std::string & param, const Options & options) |
+| | **[FixedPrior](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-fixedprior)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
+| | **[FixedPrior](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-fixedprior)**(const std::string & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
 | | **[FixedPrior](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-fixedprior)**(const std::string & name, double value) |
 | virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-getshownparameters)**() const override |
 | virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-transform)**(const std::vector< double > & , std::unordered_map< std::string, double > & ) const override<br>Transform from unit hypercube to parameter.  |
@@ -124,4 +123,4 @@ Transform from parameter back to unit hypercube.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

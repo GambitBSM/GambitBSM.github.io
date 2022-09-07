@@ -1,0 +1,854 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1exception" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::exception</compoundname>
+    <basecompoundref prot="public" virt="virtual">std::exception</basecompoundref>
+    <derivedcompoundref refid="classGambit_1_1error" prot="public" virt="non-virtual">Gambit::error</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1warning" prot="public" virt="non-virtual">Gambit::warning</derivedcompoundref>
+    <includes refid="exceptions_8hpp" local="no">exceptions.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1exception_1a4a214a1cb5e000a7d3929c8687b53840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <briefdescription>
+<para>Constructor without log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructors</para>
+<para>Constructor without log tags </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="47" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="40" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1afb063454e527a02d231aa2af655ed39d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool, LogTag)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 1 log tag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="49" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="51" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1a5f80b3aac966def88b8eed3c932a32da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool, LogTag, LogTag)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 2 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="51" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="64" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1aa6d5980159caf412cfcdd2000ec74403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool, LogTag, LogTag, LogTag)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 3 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="53" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="78" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1aafaaae226f077156f6d2a01d5204cfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t4</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 4 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="55" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="93" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1a2fb5a471f9a02e49fda33f292a632cab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool, LogTag, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t4</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t5</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 5 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="57" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="109" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1ad8589c99bff7400a32598700f986619f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool, LogTag, LogTag, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t4</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t5</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t6</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 6 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="59" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="126" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1a4e51651703d319f33b045ce5ad60ec6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool, LogTag, LogTag, LogTag, LogTag, LogTag, LogTag, LogTag)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t3</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t4</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t5</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t6</defname>
+        </param>
+        <param>
+          <type>LogTag</type>
+          <defname>t7</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with 7 log tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="61" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="144" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1ab2ff401c3327349e349a439eb2167f63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::exception::exception</definition>
+        <argsstring>(const char *, const char *, const char *, const char *, bool, std::set&lt; LogTag &gt;)</argsstring>
+        <name>exception</name>
+        <qualifiedname>Gambit::exception::exception</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>kind</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>what</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>inikey</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <param>
+          <type>std::set&lt; LogTag &gt;</type>
+          <defname>tags</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with log tags as a set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="63" column="7" bodyfile="Utils/src/exceptions.cpp" bodystart="163" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classGambit_1_1exception_1a951243172dadeb373e6c2a838650ab29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::exception::forced_throw</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;)</argsstring>
+        <name>forced_throw</name>
+        <qualifiedname>Gambit::exception::forced_throw</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>origin</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>specific_message</defname>
+        </param>
+        <briefdescription>
+<para>Log the exception and throw it regardless of whether is is fatal or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Force a throw of the exception. These should only be used inside a try block, i.e. if you plan to catch the exception.</para>
+<para>Log the exception and throw it regardless of whether is is fatal or not. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="84" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="203" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1a879fecc384bffc64d00d251241e6d9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::exception::silent_forced_throw</definition>
+        <argsstring>()</argsstring>
+        <name>silent_forced_throw</name>
+        <qualifiedname>Gambit::exception::silent_forced_throw</qualifiedname>
+        <briefdescription>
+<para>As per forced_throw but without logging. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="86" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="213" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGambit_1_1exception_1a76ad44681c2de198b67b48cb292aa15a" prot="protected" static="no" mutable="no">
+        <type>std::set&lt; LogTag &gt;</type>
+        <definition>std::set&lt;LogTag&gt; Gambit::exception::myLogTags</definition>
+        <argsstring></argsstring>
+        <name>myLogTags</name>
+        <qualifiedname>Gambit::exception::myLogTags</qualifiedname>
+        <briefdescription>
+<para>The set of tags to be passed to the logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="98" column="16" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1exception_1a54a6e3d0d141f08b66dfa53ab3e20163" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Gambit::exception::myKind</definition>
+        <argsstring></argsstring>
+        <name>myKind</name>
+        <qualifiedname>Gambit::exception::myKind</qualifiedname>
+        <briefdescription>
+<para>The kind of exception (error, warning, etc; for logging). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="115" column="18" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1exception_1a7c97d054da7a299c0ef2538d76b51ef8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::exception::myWhat</definition>
+        <argsstring></argsstring>
+        <name>myWhat</name>
+        <qualifiedname>Gambit::exception::myWhat</qualifiedname>
+        <briefdescription>
+<para>What sort of exception this is (for returning with what method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="118" column="19" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1exception_1a461e41f66bc88198d86848b2402122ab" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Gambit::exception::myShortWhat</definition>
+        <argsstring></argsstring>
+        <name>myShortWhat</name>
+        <qualifiedname>Gambit::exception::myShortWhat</qualifiedname>
+        <briefdescription>
+<para>Initial value of myWhat. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="121" column="25" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1exception_1a416cb3d29174dbcfbf4487c1c06e7fa1" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Gambit::exception::myMessage</definition>
+        <argsstring></argsstring>
+        <name>myMessage</name>
+        <qualifiedname>Gambit::exception::myMessage</qualifiedname>
+        <briefdescription>
+<para>The message to be logged when this exception is raised. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="124" column="18" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1exception_1a42bf8c79a6868e87c68c39791910606b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::exception::isFatal</definition>
+        <argsstring></argsstring>
+        <name>isFatal</name>
+        <qualifiedname>Gambit::exception::isFatal</qualifiedname>
+        <briefdescription>
+<para>Flag indicating if this exception should be considered fatal or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="127" column="12" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1exception_1ae6b1998733cbb0d5a449f11911dab14b" prot="private" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>str Gambit::exception::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <qualifiedname>Gambit::exception::parameters</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+<para>Shared string indicating the current values of the paramters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="130" column="26" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1exception_1aa801189a0bf468b6bb30ad2486bd1755" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gambit::exception::~exception</definition>
+        <argsstring>()</argsstring>
+        <name>~exception</name>
+        <qualifiedname>Gambit::exception::~exception</qualifiedname>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="67" column="15" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1aef6993b6bc5a151c7abc381b51ef29f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::exception::set_fatal</definition>
+        <argsstring>(bool)</argsstring>
+        <name>set_fatal</name>
+        <qualifiedname>Gambit::exception::set_fatal</qualifiedname>
+        <param>
+          <type>bool</type>
+          <defname>fatal</defname>
+        </param>
+        <briefdescription>
+<para>Setter for the fatal flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="70" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="175" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1ac976ac5fe9cec65520388dae8e4cc792" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * Gambit::exception::what</definition>
+        <argsstring>() const</argsstring>
+        <name>what</name>
+        <qualifiedname>Gambit::exception::what</qualifiedname>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+<para>Retrieve the identity of the exception. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="73" column="26" bodyfile="Utils/src/exceptions.cpp" bodystart="184" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::exception::raise</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;)</argsstring>
+        <name>raise</name>
+        <qualifiedname>Gambit::exception::raise</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>origin</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>specific_message</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raise the exception. Log the exception and, if it is considered fatal, actually throw it. This is the canonical way to trigger a GAMBIT error or warning.</para>
+<para>Raise the exception. Log the exception and, if it is considered fatal, actually throw it. This is the regular way to trigger a GAMBIT error or warning. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="78" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="192" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGambit_1_1exception_1afdeba740554a6b5f9e8d5d58360288b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; const char *, <ref refid="classGambit_1_1exception" kindref="compound">exception</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; const char *, exception * &gt; &amp; Gambit::exception::all_exceptions</definition>
+        <argsstring>()</argsstring>
+        <name>all_exceptions</name>
+        <qualifiedname>Gambit::exception::all_exceptions</qualifiedname>
+        <briefdescription>
+<para>Get a read-only map of pointers to all instances of this class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="90" column="29" bodyfile="Utils/src/exceptions.cpp" bodystart="219" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1a53c521623bc511511c48661f3f69d946" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::exception::set_parameters</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>set_parameters</name>
+        <qualifiedname>Gambit::exception::set_parameters</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <defname>params</defname>
+        </param>
+        <briefdescription>
+<para>Set the parameter point string to append if a fatal exception is thrown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="93" column="19" bodyfile="Utils/src/exceptions.cpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classGambit_1_1exception_1a0feb63a96711909c1867c8fdbb97bdf8" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; const char *, <ref refid="classGambit_1_1exception" kindref="compound">exception</ref> * &gt; &amp;</type>
+        <definition>std::map&lt; const char *, exception * &gt; &amp; Gambit::exception::exception_map</definition>
+        <argsstring>()</argsstring>
+        <name>exception_map</name>
+        <qualifiedname>Gambit::exception::exception_map</qualifiedname>
+        <briefdescription>
+<para>Get a map of pointers to all instances of this class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="103" column="23" bodyfile="Utils/src/exceptions.cpp" bodystart="233" bodyend="237"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1exception_1a36a4a105ff05e01b65ae61bad5a4dc18" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::exception::log_exception</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;)</argsstring>
+        <name>log_exception</name>
+        <qualifiedname>Gambit::exception::log_exception</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>origin</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>specific_message</defname>
+        </param>
+        <briefdescription>
+<para>Log the details of the exception. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="106" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="240" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1acb021231902903c820101624bd9faab4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::exception::throw_iff_outside_parallel</definition>
+        <argsstring>()</argsstring>
+        <name>throw_iff_outside_parallel</name>
+        <qualifiedname>Gambit::exception::throw_iff_outside_parallel</qualifiedname>
+        <briefdescription>
+<para>Throw the exception onward if running serially, abort if not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="109" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="263" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1exception_1a9f9942dbb171de21d4ee975b62afa19c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::exception::abort_here_and_now</definition>
+        <argsstring>()</argsstring>
+        <name>abort_here_and_now</name>
+        <qualifiedname>Gambit::exception::abort_here_and_now</qualifiedname>
+        <briefdescription>
+<para>Cause the code to print the exception and abort. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/exceptions.hpp" line="112" column="12" bodyfile="Utils/src/exceptions.cpp" bodystart="276" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GAMBIT exception base class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Gambit::error</label>
+        <link refid="classGambit_1_1error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::exception</label>
+        <link refid="classGambit_1_1exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gambit::warning</label>
+        <link refid="classGambit_1_1warning"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::exception</label>
+        <link refid="classGambit_1_1exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="Utils/include/gambit/Utils/exceptions.hpp" line="40" column="3" bodyfile="Utils/include/gambit/Utils/exceptions.hpp" bodystart="41" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1exception_1a9f9942dbb171de21d4ee975b62afa19c" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>abort_here_and_now</name></member>
+      <member refid="classGambit_1_1exception_1afdeba740554a6b5f9e8d5d58360288b9" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>all_exceptions</name></member>
+      <member refid="classGambit_1_1exception_1a4a214a1cb5e000a7d3929c8687b53840" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1afb063454e527a02d231aa2af655ed39d" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1a5f80b3aac966def88b8eed3c932a32da" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1aa6d5980159caf412cfcdd2000ec74403" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1aafaaae226f077156f6d2a01d5204cfde" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1a2fb5a471f9a02e49fda33f292a632cab" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1ad8589c99bff7400a32598700f986619f" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1a4e51651703d319f33b045ce5ad60ec6a" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1ab2ff401c3327349e349a439eb2167f63" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>exception</name></member>
+      <member refid="classGambit_1_1exception_1a0feb63a96711909c1867c8fdbb97bdf8" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>exception_map</name></member>
+      <member refid="classGambit_1_1exception_1a951243172dadeb373e6c2a838650ab29" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>forced_throw</name></member>
+      <member refid="classGambit_1_1exception_1a42bf8c79a6868e87c68c39791910606b" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>isFatal</name></member>
+      <member refid="classGambit_1_1exception_1a36a4a105ff05e01b65ae61bad5a4dc18" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>log_exception</name></member>
+      <member refid="classGambit_1_1exception_1a54a6e3d0d141f08b66dfa53ab3e20163" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>myKind</name></member>
+      <member refid="classGambit_1_1exception_1a76ad44681c2de198b67b48cb292aa15a" prot="protected" virt="non-virtual"><scope>Gambit::exception</scope><name>myLogTags</name></member>
+      <member refid="classGambit_1_1exception_1a416cb3d29174dbcfbf4487c1c06e7fa1" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>myMessage</name></member>
+      <member refid="classGambit_1_1exception_1a461e41f66bc88198d86848b2402122ab" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>myShortWhat</name></member>
+      <member refid="classGambit_1_1exception_1a7c97d054da7a299c0ef2538d76b51ef8" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>myWhat</name></member>
+      <member refid="classGambit_1_1exception_1ae6b1998733cbb0d5a449f11911dab14b" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>parameters</name></member>
+      <member refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>raise</name></member>
+      <member refid="classGambit_1_1exception_1aef6993b6bc5a151c7abc381b51ef29f7" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>set_fatal</name></member>
+      <member refid="classGambit_1_1exception_1a53c521623bc511511c48661f3f69d946" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>set_parameters</name></member>
+      <member refid="classGambit_1_1exception_1a879fecc384bffc64d00d251241e6d9c3" prot="public" virt="non-virtual"><scope>Gambit::exception</scope><name>silent_forced_throw</name></member>
+      <member refid="classGambit_1_1exception_1acb021231902903c820101624bd9faab4" prot="private" virt="non-virtual"><scope>Gambit::exception</scope><name>throw_iff_outside_parallel</name></member>
+      <member refid="classGambit_1_1exception_1ac976ac5fe9cec65520388dae8e4cc792" prot="public" virt="virtual"><scope>Gambit::exception</scope><name>what</name></member>
+      <member refid="classGambit_1_1exception_1aa801189a0bf468b6bb30ad2486bd1755" prot="public" virt="virtual"><scope>Gambit::exception</scope><name>~exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

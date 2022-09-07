@@ -4,7 +4,7 @@
     <compoundname>Gambit::sd_sel2body_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1sd__sel2body__type_1a2832d2d97cfb884be2fa7ac2d54d6d0c" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_sel2body_type::brsellneute</definition>
         <argsstring></argsstring>
         <name>brsellneute</name>
@@ -18,7 +18,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="562" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="562" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sel2body__type_1aa0c05b86fb61e67ad63cb112d15c0ade" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sel2body_type::brsellcharnue</definition>
         <argsstring></argsstring>
         <name>brsellcharnue</name>
@@ -32,7 +32,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="563" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="563" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sel2body__type_1a8afeebbdb25c0db21584f27cea9852fc" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 4 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 4 &gt;</type>
         <definition>Farray&lt; Fdouble,1,4 &gt; Gambit::sd_sel2body_type::brselrneute</definition>
         <argsstring></argsstring>
         <name>brselrneute</name>
@@ -46,7 +46,7 @@
         <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="564" column="16" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="564" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1sd__sel2body__type_1af6b92f9501d9f774e3017d807d40e6fb" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 2 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 2 &gt;</type>
         <definition>Farray&lt; Fdouble,1,2 &gt; Gambit::sd_sel2body_type::brselrcharnue</definition>
         <argsstring></argsstring>
         <name>brselrcharnue</name>
@@ -64,6 +64,28 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Gambit::Farray&lt; Fdouble, 1, 2 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 4 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_sel2body_type</label>
+        <link refid="structGambit_1_1sd__sel2body__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brsellneute</edgelabel>
+          <edgelabel>brselrneute</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>brsellcharnue</edgelabel>
+          <edgelabel>brselrcharnue</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="560" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="561" bodyend="566"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__sel2body__type_1aa0c05b86fb61e67ad63cb112d15c0ade" prot="public" virt="non-virtual"><scope>Gambit::sd_sel2body_type</scope><name>brsellcharnue</name></member>

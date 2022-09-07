@@ -4,8 +4,7 @@ description: 'A simple container for a point on an xy plane. '
 
 ---
 
-
-
+# Gambit::ColliderBit::P2
 
 
 
@@ -185,4 +184,4 @@ inline P2 & operator/=(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

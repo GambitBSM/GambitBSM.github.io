@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::PostProcessor::PPOptions
 
 
 
@@ -47,7 +46,7 @@ struct Gambit::PostProcessor::PPOptions;
 ```
 
 
-Options object for [PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/) See matching options in [PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/) class for description 
+[Options](/documentation/code/classes/classgambit_1_1options/) object for [PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/) See matching options in [PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/) class for description 
 
 ## Public Attributes Documentation
 
@@ -179,4 +178,4 @@ bool verbose;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

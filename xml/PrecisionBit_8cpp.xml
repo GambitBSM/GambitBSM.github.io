@@ -3,14 +3,490 @@
   <compounddef id="PrecisionBit_8cpp" kind="file" language="C++">
     <compoundname>PrecisionBit.cpp</compoundname>
     <includes local="no">algorithm</includes>
-    <includes local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
-    <includes local="yes">gambit/Elements/smlike_higgs.hpp</includes>
+    <includes refid="gambit__module__headers_8hpp" local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
+    <includes refid="smlike__higgs_8hpp" local="yes">gambit/Elements/smlike_higgs.hpp</includes>
     <includes refid="PrecisionBit__rollcall_8hpp" local="yes">gambit/PrecisionBit/PrecisionBit_rollcall.hpp</includes>
-    <includes local="yes">gambit/Utils/statistics.hpp</includes>
-    <includes local="yes">gambit/Elements/mssm_slhahelp.hpp</includes>
-    <includes local="yes">gambit/Utils/util_functions.hpp</includes>
+    <includes refid="statistics_8hpp" local="yes">gambit/Utils/statistics.hpp</includes>
+    <includes refid="mssm__slhahelp_8hpp" local="yes">gambit/Elements/mssm_slhahelp.hpp</includes>
+    <includes refid="util__functions_8hpp" local="yes">gambit/Utils/util_functions.hpp</includes>
     <incdepgraph>
+      <node id="110">
+        <label>gambit/Backends/backend_info.hpp</label>
+        <link refid="backend__info_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>gambit/Backends/backend_singleton.hpp</label>
+        <link refid="backend__singleton_8hpp"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>gambit/Backends/default_bossed_versions.hpp</label>
+        <link refid="default__bossed__versions_8hpp"/>
+      </node>
+      <node id="107">
+        <label>gambit/Backends/mathematica_variable.hpp</label>
+        <link refid="mathematica__variable_8hpp"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>gambit/Backends/python_helpers.hpp</label>
+        <link refid="python__helpers_8hpp"/>
+      </node>
+      <node id="112">
+        <label>gambit/Backends/python_variable.hpp</label>
+        <link refid="python__variable_8hpp"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>gambit/Elements/daFunk.hpp</label>
+        <link refid="daFunk_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>gambit/Elements/decay_table.hpp</label>
+        <link refid="decay__table_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>gambit/Elements/flav_prediction.hpp</label>
+        <link refid="flav__prediction_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/Elements/gambit_module_headers.hpp</label>
+        <link refid="gambit__module__headers_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>gambit/Elements/halo_types.hpp</label>
+        <link refid="halo__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>gambit/Elements/higgs_couplings_table.hpp</label>
+        <link refid="higgs__couplings__table_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>gambit/Elements/ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>gambit/Elements/module_macros_common.hpp</label>
+        <link refid="module__macros__common_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gambit/Elements/module_macros_inmodule.hpp</label>
+        <link refid="module__macros__inmodule_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
       <node id="5">
+        <label>gambit/Elements/module_macros_inmodule_defs.hpp</label>
+        <link refid="module__macros__inmodule__defs_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+        <link refid="mssm__slhahelp_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gambit/Elements/safety_bucket.hpp</label>
+        <link refid="safety__bucket_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>gambit/Elements/shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
+        <link refid="slhaea__spec__helpers_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>gambit/Elements/sminputs.hpp</label>
+        <link refid="sminputs_8hpp"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>gambit/Elements/smlike_higgs.hpp</label>
+        <link refid="smlike__higgs_8hpp"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>gambit/Elements/spectrum.hpp</label>
+        <link refid="spectrum_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>gambit/Elements/spectrum_helpers.hpp</label>
+        <link refid="spectrum__helpers_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>gambit/Elements/subspectrum.hpp</label>
+        <link refid="subspectrum_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>gambit/Elements/wimp_types.hpp</label>
+        <link refid="wimp__types_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="65">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>gambit/Models/partmap.hpp</label>
+        <link refid="partmap_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>gambit/Models/safe_param_map.hpp</label>
+        <link refid="safe__param__map_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
         <label>gambit/PrecisionBit/PrecisionBit_rollcall.hpp</label>
         <link refid="PrecisionBit__rollcall_8hpp"/>
       </node>
@@ -21,34 +497,477 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="39">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="29">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>gambit/Utils/numerical_constants.hpp</label>
+        <link refid="numerical__constants_8hpp"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>gambit/Utils/safebool.hpp</label>
+        <link refid="safebool_8hpp"/>
+      </node>
+      <node id="81">
+        <label>gambit/Utils/slhaea_helpers.hpp</label>
+        <link refid="slhaea__helpers_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>gambit/Utils/statistics.hpp</label>
+        <link refid="statistics_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="115">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+        <link refid="threadsafe__rng_8hpp"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>SLHAea/slhaea.h</label>
       </node>
       <node id="2">
         <label>algorithm</label>
       </node>
-      <node id="3">
-        <label>gambit/Elements/gambit_module_headers.hpp</label>
+      <node id="52">
+        <label>array</label>
+      </node>
+      <node id="99">
+        <label>assert.h</label>
+      </node>
+      <node id="57">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="111">
+        <label>boost/algorithm/string/replace.hpp</label>
+      </node>
+      <node id="56">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="101">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="36">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="35">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="70">
+        <label>boost/preprocessor/comparison/greater.hpp</label>
+      </node>
+      <node id="24">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="34">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="71">
+        <label>boost/preprocessor/control/iif.hpp</label>
+      </node>
+      <node id="37">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="38">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="72">
+        <label>boost/preprocessor/repetition/enum.hpp</label>
+      </node>
+      <node id="73">
+        <label>boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="32">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="33">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="74">
+        <label>boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="83">
+        <label>boost/serialization/strong_typedef.hpp</label>
+      </node>
+      <node id="100">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="23">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="46">
+        <label>cassert</label>
+      </node>
+      <node id="86">
+        <label>cfloat</label>
+      </node>
+      <node id="13">
+        <label>chrono</label>
+      </node>
+      <node id="54">
+        <label>cmath</label>
+      </node>
+      <node id="18">
+        <label>complex</label>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+      <node id="51">
+        <label>deque</label>
+      </node>
+      <node id="40">
+        <label>exception</label>
+      </node>
+      <node id="50">
+        <label>forward_list</label>
+      </node>
+      <node id="44">
+        <label>fstream</label>
+      </node>
+      <node id="114">
+        <label>gambit/Backends/backend_types_rollcall.hpp</label>
+      </node>
+      <node id="75">
+        <label>gambit/Elements/elements_extras.hpp</label>
+      </node>
+      <node id="55">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="103">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+      <node id="102">
+        <label>gsl/gsl_integration.h</label>
       </node>
       <node id="7">
-        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+        <label>iostream</label>
       </node>
-      <node id="4">
-        <label>gambit/Elements/smlike_higgs.hpp</label>
+      <node id="63">
+        <label>limits</label>
       </node>
-      <node id="6">
-        <label>gambit/Utils/statistics.hpp</label>
+      <node id="49">
+        <label>list</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="58">
+        <label>mkpath/mkpath.h</label>
       </node>
       <node id="8">
-        <label>gambit/Utils/util_functions.hpp</label>
+        <label>omp.h</label>
+      </node>
+      <node id="67">
+        <label>ostream</label>
+      </node>
+      <node id="116">
+        <label>random</label>
+      </node>
+      <node id="11">
+        <label>set</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
+      </node>
+      <node id="77">
+        <label>stdexcept</label>
+      </node>
+      <node id="94">
+        <label>stdio.h</label>
+      </node>
+      <node id="95">
+        <label>stdlib.h</label>
+      </node>
+      <node id="16">
+        <label>string</label>
+      </node>
+      <node id="45">
+        <label>type_traits</label>
+      </node>
+      <node id="21">
+        <label>unistd.h</label>
+      </node>
+      <node id="47">
+        <label>unordered_map</label>
+      </node>
+      <node id="48">
+        <label>unordered_set</label>
+      </node>
+      <node id="41">
+        <label>utility</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="61">
+        <label>yaml-cpp/yaml.h</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceGambit">Gambit</innernamespace>
@@ -166,12 +1085,12 @@
 <codeline lineno="39"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/gambit_module_headers.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/smlike_higgs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gambit__module__headers_8hpp" kindref="compound">gambit/Elements/gambit_module_headers.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="smlike__higgs_8hpp" kindref="compound">gambit/Elements/smlike_higgs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="PrecisionBit__rollcall_8hpp" kindref="compound">gambit/PrecisionBit/PrecisionBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/statistics.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Elements/mssm_slhahelp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/util_functions.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="statistics_8hpp" kindref="compound">gambit/Utils/statistics.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mssm__slhahelp_8hpp" kindref="compound">gambit/Elements/mssm_slhahelp.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__functions_8hpp" kindref="compound">gambit/Utils/util_functions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>PRECISIONBIT_DEBUG</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
@@ -214,21 +1133,21 @@
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;BEreq::FHConstraints<sp/>raised<sp/>error<sp/>flag:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>error<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(err.str());</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(err.str());</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Just<sp/>scrub<sp/>this<sp/>point<sp/>now<sp/>if<sp/>it&apos;s<sp/>more<sp/>than<sp/>7<sp/>sigma<sp/>off<sp/>in<sp/>mW,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>extreme<sp/>values<sp/>of<sp/>mW<sp/>can<sp/>cause<sp/>instability<sp/>in<sp/>other<sp/>routines.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>obserrsq<sp/>=<sp/>mw_err_observed*mw_err_observed;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theoryerrsq<sp/>=<sp/><ref refid="PrecisionBit_8cpp_1a0d2c2f8f0d0f63f9835ddf6b98f9c0d5" kindref="member">abserr_mw</ref>*<ref refid="PrecisionBit_8cpp_1a0d2c2f8f0d0f63f9835ddf6b98f9c0d5" kindref="member">abserr_mw</ref>;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(mw_central_observed<sp/>-<sp/>MWMSSM)<sp/>&gt;<sp/>7.0*sqrt(obserrsq<sp/>+<sp/>theoryerrsq))</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(<ref refid="namespaceGambit_1a905d504ecbc60fe4e6f52b477432a44c" kindref="member">mw_central_observed</ref><sp/>-<sp/>MWMSSM)<sp/>&gt;<sp/>7.0*sqrt(obserrsq<sp/>+<sp/>theoryerrsq))</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;W<sp/>mass<sp/>too<sp/>extreme.<sp/>More<sp/>than<sp/>7<sp/>sigma<sp/>off<sp/>observed<sp/>value.<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Deviation<sp/>from<sp/>observed<sp/>value:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::abs(mw_central_observed<sp/>-<sp/>MWMSSM)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Deviation<sp/>from<sp/>observed<sp/>value:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::abs(<ref refid="namespaceGambit_1a905d504ecbc60fe4e6f52b477432a44c" kindref="member">mw_central_observed</ref><sp/>-<sp/>MWMSSM)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;1<sp/>sigma<sp/>uncertainty<sp/>on<sp/>observed<sp/>value:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sqrt(obserrsq<sp/>+<sp/>theoryerrsq)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Invalidating<sp/>immediately<sp/>to<sp/>prevent<sp/>downstream<sp/>instability.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(err.str());</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(err.str());</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//PrecisionBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
@@ -242,13 +1161,13 @@
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Sin^2<sp/>thetaW_effective<sp/>is<sp/>less<sp/>than<sp/>zero.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Value<sp/>computed<sp/>by<sp/>FeynHiggs:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>SW2MSSM<sp/>&lt;&lt;<sp/>endl</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Invalidating<sp/>immediately<sp/>to<sp/>prevent<sp/>downstream<sp/>instability.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(err.str());</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(err.str());</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//PrecisionBit_error().raise(LOCAL_INFO,<sp/>err.str());</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>PRECISIONBIT_DEBUG</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Just<sp/>die<sp/>if<sp/>any<sp/>of<sp/>the<sp/>other<sp/>observables<sp/>look<sp/>really<sp/>suspicious.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>nans;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>nans;</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Utils::isnan(gm2))<sp/>nans<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;g-2<sp/>|<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Utils::isnan(Deltarho))<sp/>nans<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;Delta<sp/>rho<sp/>|<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Utils::isnan(MWMSSM))<sp/>nans<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;MW<sp/>in<sp/>MSSM<sp/>|<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -316,19 +1235,19 @@
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(prec_mw.central<sp/>&lt;=<sp/>0.0<sp/>or<sp/>Utils::isnan(prec_mw.central))</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allow_fallback)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(</highlight><highlight class="stringliteral">&quot;Precison<sp/>W<sp/>mass<sp/>NaN<sp/>or<sp/>&lt;=<sp/>0.<sp/><sp/>To<sp/>allow<sp/>fallback<sp/>to<sp/>the<sp/>unimproved<sp/>value,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(</highlight><highlight class="stringliteral">&quot;Precison<sp/>W<sp/>mass<sp/>NaN<sp/>or<sp/>&lt;=<sp/>0.<sp/><sp/>To<sp/>allow<sp/>fallback<sp/>to<sp/>the<sp/>unimproved<sp/>value,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;set<sp/>option<sp/>allow_fallback_to_unimproved_masses=true<sp/>in<sp/>your<sp/>YAML<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HE.set_override(Par::Pole_Mass,<sp/>prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>&quot;true&quot;<sp/>flag<sp/>causes<sp/>overrides<sp/>to<sp/>be<sp/>written<sp/>even<sp/>if<sp/>no<sp/>native<sp/>quantity<sp/>exists<sp/>to<sp/>override.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HE.set_override(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>&quot;true&quot;<sp/>flag<sp/>causes<sp/>overrides<sp/>to<sp/>be<sp/>written<sp/>even<sp/>if<sp/>no<sp/>native<sp/>quantity<sp/>exists<sp/>to<sp/>override.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HE.set_override(Par::Pole_Mass_1srd_high,<sp/>prec_mw.upper/prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HE.set_override(Par::Pole_Mass_1srd_low,<sp/>prec_mw.lower/prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LE.set_override(Par::Pole_Mass,<sp/>prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>flag;<sp/>W<sp/>mass<sp/>should<sp/>definitely<sp/>already<sp/>exist<sp/>in<sp/>the<sp/>LE<sp/>spectrum.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LE.set_override(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>flag;<sp/>W<sp/>mass<sp/>should<sp/>definitely<sp/>already<sp/>exist<sp/>in<sp/>the<sp/>LE<sp/>spectrum.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LE.set_override(Par::Pole_Mass_1srd_high,<sp/>prec_mw.upper/prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LE.set_override(Par::Pole_Mass_1srd_low,<sp/>prec_mw.lower/prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="203"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Helper<sp/>function<sp/>to<sp/>set<sp/>arbitrary<sp/>number<sp/>of<sp/>H<sp/>masses</highlight></codeline>
-<codeline lineno="204"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="PrecisionBit_8cpp_1a613296ddd40ace3e6016051186b03a7d" kindref="member">update_H_masses</ref>(SubSpectrum&amp;<sp/>HE,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_higgs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str*<sp/>higgses,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>central,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>error,<sp/>std::vector&lt;triplet&lt;double&gt;<sp/>&gt;&amp;<sp/>MH,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allow_fallback)</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="PrecisionBit_8cpp_1a613296ddd40ace3e6016051186b03a7d" kindref="member">update_H_masses</ref>(SubSpectrum&amp;<sp/>HE,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_higgs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>*<sp/>higgses,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>central,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>error,<sp/>std::vector&lt;triplet&lt;double&gt;<sp/>&gt;&amp;<sp/>MH,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allow_fallback)</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"></highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>++i)</highlight></codeline>
@@ -336,7 +1255,7 @@
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(MH[i].central<sp/>&lt;=<sp/>0.0<sp/>or<sp/>Utils::isnan(MH[i].central))</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allow_fallback)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(</highlight><highlight class="stringliteral">&quot;Precison<sp/>&quot;</highlight><highlight class="normal">+higgses[i]+</highlight><highlight class="stringliteral">&quot;<sp/>mass<sp/>NaN<sp/>or<sp/>&lt;=<sp/>0.<sp/><sp/>To<sp/>allow<sp/>fallback<sp/>to<sp/>the<sp/>unimproved<sp/>value,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(</highlight><highlight class="stringliteral">&quot;Precison<sp/>&quot;</highlight><highlight class="normal">+higgses[i]+</highlight><highlight class="stringliteral">&quot;<sp/>mass<sp/>NaN<sp/>or<sp/>&lt;=<sp/>0.<sp/><sp/>To<sp/>allow<sp/>fallback<sp/>to<sp/>the<sp/>unimproved<sp/>value,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;set<sp/>option<sp/>allow_fallback_to_unimproved_masses=true<sp/>in<sp/>your<sp/>YAML<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -346,7 +1265,7 @@
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>2<sp/>=<sp/>from<sp/>spectrum<sp/>calculator</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>3<sp/>=<sp/>mean<sp/>of<sp/>precision<sp/>mass<sp/>and<sp/>mass<sp/>from<sp/>spectrum<sp/>calculator</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>mh_s;</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>++i)<sp/>mh_s.push_back(HE.get(Par::Pole_Mass,<sp/>higgses[i]));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>++i)<sp/>mh_s.push_back(HE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>higgses[i]));</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mh[n_higgs];</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>PRECISIONBIT_DEBUG</highlight><highlight class="normal"></highlight></codeline>
@@ -378,7 +1297,7 @@
 <codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>!=<sp/>2)</highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>i++)<sp/>HE.set_override(Par::Pole_Mass,<sp/>mh[i],<sp/>higgses[i]);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>i++)<sp/>HE.set_override(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>mh[i],<sp/>higgses[i]);</highlight></codeline>
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"></highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Uncertainties:</highlight><highlight class="normal"></highlight></codeline>
@@ -609,7 +1528,7 @@
 <codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>i++)<sp/>HE.set_override(Par::Pole_Mass_1srd_high,<sp/>mh_high[i]/mh[i],<sp/>higgses[i],<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="483"><highlight class="normal"></highlight></codeline>
 <codeline lineno="484"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>PRECISIONBIT_DEBUG</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>i++)<sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>masses,<sp/>central:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>HE.get(Par::Pole_Mass,<sp/>higgses[i])&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>i++)<sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>masses,<sp/>central:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>HE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>higgses[i])&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>i++)<sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>masses,<sp/>fractional<sp/>low:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>HE.get(Par::Pole_Mass_1srd_low,<sp/>higgses[i])&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n_higgs;<sp/>i++)<sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>masses,<sp/>fractional<sp/>high:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>HE.get(Par::Pole_Mass_1srd_high,<sp/>higgses[i])&lt;&lt;endl;</highlight></codeline>
 <codeline lineno="488"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
@@ -647,9 +1566,9 @@
 <codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(35,0),</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(36,0),</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(37,0)};</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>higgses[1];</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>higgses[1];</highlight></codeline>
 <codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>triplet&lt;double&gt;<sp/>&gt;<sp/>MH<sp/>=<sp/>{*Dep::prec_mh};</highlight></codeline>
-<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smlike_pdg<sp/>=<sp/>SMlike_higgs_PDG_code(HE);</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smlike_pdg<sp/>=<sp/><ref refid="namespaceGambit_1a2c35d744ef2374d5daf02f20d9fc3921" kindref="member">SMlike_higgs_PDG_code</ref>(HE);</highlight></codeline>
 <codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(smlike_pdg<sp/>==<sp/>25)<sp/>higgses[0]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;h0_1&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(smlike_pdg<sp/>==<sp/>35)<sp/>higgses[0]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;h0_2&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>PrecisionBit_error().raise(LOCAL_INFO,<sp/></highlight><highlight class="stringliteral">&quot;Urecognised<sp/>SM-like<sp/>Higgs<sp/>PDG<sp/>code!&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -658,10 +1577,10 @@
 <codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PrecisionBit_8cpp_1a613296ddd40ace3e6016051186b03a7d" kindref="member">update_H_masses</ref>(HE,<sp/>1,<sp/>higgses,<sp/>central,<sp/>error,<sp/>MH,<sp/>allow_fallback);</highlight></codeline>
 <codeline lineno="532"><highlight class="normal"></highlight></codeline>
 <codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>the<sp/>identity/identities<sp/>of<sp/>the<sp/>calculator(s)<sp/>used<sp/>for<sp/>the<sp/>central<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>p_calc<sp/>=<sp/>Dep::prec_mh.name();</highlight></codeline>
-<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>p_orig<sp/>=<sp/>Dep::prec_mh.origin();</highlight></codeline>
-<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>s_calc<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.name();</highlight></codeline>
-<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>s_orig<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.origin();</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>p_calc<sp/>=<sp/>Dep::prec_mh.name();</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>p_orig<sp/>=<sp/>Dep::prec_mh.origin();</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s_calc<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.name();</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s_orig<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.origin();</highlight></codeline>
 <codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>1)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+p_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+p_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>2)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+s_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+s_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>3)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+p_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+p_calc+</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">+s_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+s_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
@@ -689,9 +1608,9 @@
 <codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(35,0),</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(36,0),</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(37,0)};</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>higgses[1];</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>higgses[1];</highlight></codeline>
 <codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>triplet&lt;double&gt;<sp/>&gt;<sp/>MH<sp/>=<sp/>{*Dep::prec_mh};</highlight></codeline>
-<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smlike_pdg<sp/>=<sp/>SMlike_higgs_PDG_code(HE);</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smlike_pdg<sp/>=<sp/><ref refid="namespaceGambit_1a2c35d744ef2374d5daf02f20d9fc3921" kindref="member">SMlike_higgs_PDG_code</ref>(HE);</highlight></codeline>
 <codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(smlike_pdg<sp/>==<sp/>25)<sp/>higgses[0]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;h0_1&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(smlike_pdg<sp/>==<sp/>35)<sp/>higgses[0]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;h0_2&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>PrecisionBit_error().raise(LOCAL_INFO,<sp/></highlight><highlight class="stringliteral">&quot;Urecognised<sp/>SM-like<sp/>Higgs<sp/>PDG<sp/>code!&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -700,10 +1619,10 @@
 <codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PrecisionBit_8cpp_1a613296ddd40ace3e6016051186b03a7d" kindref="member">update_H_masses</ref>(HE,<sp/>1,<sp/>higgses,<sp/>central,<sp/>error,<sp/>MH,<sp/>allow_fallback);</highlight></codeline>
 <codeline lineno="574"><highlight class="normal"></highlight></codeline>
 <codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>the<sp/>identity/identities<sp/>of<sp/>the<sp/>calculator(s)<sp/>used<sp/>for<sp/>the<sp/>central<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>p_calc<sp/>=<sp/>Dep::prec_mh.name();</highlight></codeline>
-<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>p_orig<sp/>=<sp/>Dep::prec_mh.origin();</highlight></codeline>
-<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>s_calc<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.name();</highlight></codeline>
-<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>s_orig<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.origin();</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>p_calc<sp/>=<sp/>Dep::prec_mh.name();</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>p_orig<sp/>=<sp/>Dep::prec_mh.origin();</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s_calc<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.name();</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s_orig<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.origin();</highlight></codeline>
 <codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>1)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+p_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+p_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>2)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+s_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+s_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>3)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+p_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+p_calc+</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">+s_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+s_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
@@ -731,9 +1650,9 @@
 <codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(35,0),</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(36,0),</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int,int&gt;(37,0)};</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>higgses[4]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;h0_1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;h0_2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;A0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;H+&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>higgses[4]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;h0_1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;h0_2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;A0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;H+&quot;</highlight><highlight class="normal">};</highlight></codeline>
 <codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>triplet&lt;double&gt;<sp/>&gt;<sp/>MH;</highlight></codeline>
-<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smlike_pdg<sp/>=<sp/>SMlike_higgs_PDG_code(HE);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smlike_pdg<sp/>=<sp/><ref refid="namespaceGambit_1a2c35d744ef2374d5daf02f20d9fc3921" kindref="member">SMlike_higgs_PDG_code</ref>(HE);</highlight></codeline>
 <codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(smlike_pdg<sp/>==<sp/>25)</highlight></codeline>
 <codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//h0_1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MH.push_back(*Dep::prec_mh);</highlight></codeline>
@@ -753,12 +1672,12 @@
 <codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="PrecisionBit_8cpp_1a613296ddd40ace3e6016051186b03a7d" kindref="member">update_H_masses</ref>(HE,<sp/>4,<sp/>higgses,<sp/>central,<sp/>error,<sp/>MH,<sp/>allow_fallback);</highlight></codeline>
 <codeline lineno="627"><highlight class="normal"></highlight></codeline>
 <codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>the<sp/>identity/identities<sp/>of<sp/>the<sp/>calculator(s)<sp/>used<sp/>for<sp/>the<sp/>central<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>p1_calc<sp/>=<sp/>Dep::prec_mh.name();</highlight></codeline>
-<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>p1_orig<sp/>=<sp/>Dep::prec_mh.origin();</highlight></codeline>
-<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>p2_calc<sp/>=<sp/>Dep::prec_HeavyHiggsMasses.name();</highlight></codeline>
-<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>p2_orig<sp/>=<sp/>Dep::prec_HeavyHiggsMasses.origin();</highlight></codeline>
-<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>s_calc<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.name();</highlight></codeline>
-<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str&amp;<sp/>s_orig<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.origin();</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>p1_calc<sp/>=<sp/>Dep::prec_mh.name();</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>p1_orig<sp/>=<sp/>Dep::prec_mh.origin();</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>p2_calc<sp/>=<sp/>Dep::prec_HeavyHiggsMasses.name();</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>p2_orig<sp/>=<sp/>Dep::prec_HeavyHiggsMasses.origin();</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s_calc<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.name();</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s_orig<sp/>=<sp/>Dep::unimproved_MSSM_spectrum.origin();</highlight></codeline>
 <codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>1)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+p1_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+p1_calc+</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">+p2_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+p2_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>2)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+s_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+s_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(central<sp/>==<sp/>3)<sp/>HE.set_override(Par::dimensionless,<sp/>1.0,<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>mass<sp/>from:<sp/>&quot;</highlight><highlight class="normal">+p1_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+p1_calc+</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">+p2_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+p2_calc+</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">+s_orig+</highlight><highlight class="stringliteral">&quot;::&quot;</highlight><highlight class="normal">+s_calc,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
@@ -775,7 +1694,7 @@
 <codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mw_from_SM_spectrum;</highlight></codeline>
 <codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>LE<sp/>=<sp/>Dep::SM_spectrum-&gt;get_LE();</highlight></codeline>
-<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);;</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);;</highlight></codeline>
 <codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_high,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_low,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -783,7 +1702,7 @@
 <codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mw_from_ScalarSingletDM_Z2_spectrum;</highlight></codeline>
 <codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>LE<sp/>=<sp/>Dep::ScalarSingletDM_Z2_spectrum-&gt;get_LE();</highlight></codeline>
-<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);;</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);;</highlight></codeline>
 <codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_high,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_low,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -791,7 +1710,7 @@
 <codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mw_from_ScalarSingletDM_Z3_spectrum;</highlight></codeline>
 <codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>LE<sp/>=<sp/>Dep::ScalarSingletDM_Z3_spectrum-&gt;get_LE();</highlight></codeline>
-<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);;</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);;</highlight></codeline>
 <codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_high,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_low,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -799,7 +1718,7 @@
 <codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mw_from_VectorSingletDM_Z2_spectrum;</highlight></codeline>
 <codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>LE<sp/>=<sp/>Dep::VectorSingletDM_Z2_spectrum-&gt;get_LE();</highlight></codeline>
-<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_high,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_low,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -807,7 +1726,7 @@
 <codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mw_from_MajoranaSingletDM_Z2_spectrum;</highlight></codeline>
 <codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>LE<sp/>=<sp/>Dep::MajoranaSingletDM_Z2_spectrum-&gt;get_LE();</highlight></codeline>
-<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_high,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_low,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -815,7 +1734,7 @@
 <codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mw_from_DiracSingletDM_Z2_spectrum;</highlight></codeline>
 <codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>LE<sp/>=<sp/>Dep::DiracSingletDM_Z2_spectrum-&gt;get_LE();</highlight></codeline>
-<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>LE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_high,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>LE.get(Par::Pole_Mass_1srd_low,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -823,7 +1742,7 @@
 <codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mw_from_MSSM_spectrum;</highlight></codeline>
 <codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>HE<sp/>=<sp/>Dep::MSSM_spectrum-&gt;get_HE();</highlight></codeline>
-<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_high,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_low,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -831,7 +1750,7 @@
 <codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mh_from_SM_spectrum;</highlight></codeline>
 <codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>HE<sp/>=<sp/>Dep::SM_spectrum-&gt;get_HE();</highlight></codeline>
-<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(Par::Pole_Mass,<sp/>25,<sp/>0);</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="708"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_high,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="709"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_low,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -839,7 +1758,7 @@
 <codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mh_from_ScalarSingletDM_Z2_spectrum;</highlight></codeline>
 <codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>HE<sp/>=<sp/>Dep::ScalarSingletDM_Z2_spectrum-&gt;get_HE();</highlight></codeline>
-<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(Par::Pole_Mass,<sp/>25,<sp/>0);</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_high,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_low,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -847,7 +1766,7 @@
 <codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mh_from_ScalarSingletDM_Z3_spectrum;</highlight></codeline>
 <codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>HE<sp/>=<sp/>Dep::ScalarSingletDM_Z3_spectrum-&gt;get_HE();</highlight></codeline>
-<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(Par::Pole_Mass,<sp/>25,<sp/>0);</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_high,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_low,<sp/>25,<sp/>0);</highlight></codeline>
 <codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -855,8 +1774,8 @@
 <codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::mh_from_MSSM_spectrum;</highlight></codeline>
 <codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>HE<sp/>=<sp/>Dep::MSSM_spectrum-&gt;get_HE();</highlight></codeline>
-<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smlike_pdg<sp/>=<sp/>SMlike_higgs_PDG_code(HE);</highlight></codeline>
-<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(Par::Pole_Mass,<sp/>smlike_pdg,<sp/>0);</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smlike_pdg<sp/>=<sp/><ref refid="namespaceGambit_1a2c35d744ef2374d5daf02f20d9fc3921" kindref="member">SMlike_higgs_PDG_code</ref>(HE);</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.central<sp/>=<sp/>HE.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>smlike_pdg,<sp/>0);</highlight></codeline>
 <codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.upper<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_high,<sp/>smlike_pdg,<sp/>0);</highlight></codeline>
 <codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.lower<sp/>=<sp/>result.central<sp/>*<sp/>HE.get(Par::Pole_Mass_1srd_low,<sp/>smlike_pdg,<sp/>0);</highlight></codeline>
 <codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment"></highlight></codeline>
@@ -950,7 +1869,7 @@
 <codeline lineno="823"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>Stats::gaussian_loglikelihood(SM.mU/SM.mD,<sp/>mud_obs,<sp/>0.,<sp/>mud_obserror,<sp/>profile)</highlight></codeline>
 <codeline lineno="824"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>Stats::gaussian_loglikelihood((2*SM.mS)/(SM.mU<sp/>+<sp/>SM.mD),<sp/>msud_obs,<sp/>0.,<sp/>msud_obserror,<sp/>profile)</highlight></codeline>
 <codeline lineno="825"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>Stats::gaussian_loglikelihood(SM.mS,<sp/>ms_obs,<sp/>0.,<sp/>ms_obserror,<sp/>profile);</highlight></codeline>
-<codeline lineno="826"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger()<sp/>&lt;&lt;<sp/>LogTags::debug<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Combined<sp/>lnL<sp/>for<sp/>light<sp/>quark<sp/>mass<sp/>ratios<sp/>and<sp/>s-quark<sp/>mass<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>result<sp/>&lt;&lt;<sp/>EOM;</highlight></codeline>
+<codeline lineno="826"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>LogTags::debug<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Combined<sp/>lnL<sp/>for<sp/>light<sp/>quark<sp/>mass<sp/>ratios<sp/>and<sp/>s-quark<sp/>mass<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>result<sp/>&lt;&lt;<sp/><ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
 <codeline lineno="827"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="828"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="829"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>alpha^{-1}(mZ)^MSbar<sp/>likelihood</highlight></codeline>
@@ -993,7 +1912,7 @@
 <codeline lineno="866"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theory_uncert<sp/>=<sp/>std::max(Dep::mw-&gt;upper,<sp/>Dep::mw-&gt;lower);</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="867"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Option<sp/>profile_systematics&lt;bool&gt;:<sp/>Use<sp/>likelihood<sp/>version<sp/>that<sp/>has<sp/>been<sp/>profiled<sp/>over<sp/>systematic<sp/>errors<sp/>(default<sp/>false)</highlight></codeline>
 <codeline lineno="868"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceprofile__theory_1a1b1d68c7bf06466d112ca4d48f4467ac" kindref="member">profile</ref><sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;profile_systematics&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="869"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>Stats::gaussian_loglikelihood(Dep::mw-&gt;central,<sp/>mw_central_observed,<sp/>theory_uncert,<sp/>mw_err_observed,<sp/>profile);</highlight></codeline>
+<codeline lineno="869"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>Stats::gaussian_loglikelihood(Dep::mw-&gt;central,<sp/><ref refid="namespaceGambit_1a905d504ecbc60fe4e6f52b477432a44c" kindref="member">mw_central_observed</ref>,<sp/>theory_uncert,<sp/>mw_err_observed,<sp/>profile);</highlight></codeline>
 <codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="871"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="872"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Simple,<sp/>naive<sp/>h<sp/>boson<sp/>mass<sp/>likelihood</highlight></codeline>
@@ -1082,24 +2001,24 @@
 <codeline lineno="955"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>fill<sp/>pole<sp/>masses.</highlight></codeline>
 <codeline lineno="956"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>note:<sp/>that<sp/>the<sp/>indices<sp/>start<sp/>from<sp/>0<sp/>in<sp/>gm2calc,</highlight></codeline>
 <codeline lineno="957"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>gambit<sp/>indices<sp/>start<sp/>from<sp/>1,<sp/>hence<sp/>the<sp/>offsets<sp/>here</highlight></codeline>
-<codeline lineno="958"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MSvmL<sp/>=<sp/>mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;~nu&quot;</highlight><highlight class="normal">,<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="959"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>msm1,<sp/>msm2;</highlight></codeline>
+<codeline lineno="958"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MSvmL<sp/>=<sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;~nu&quot;</highlight><highlight class="normal">,<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="959"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>msm1,<sp/>msm2;</highlight></codeline>
 <codeline lineno="960"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PA:<sp/>todo:<sp/>I<sp/>think<sp/>we<sp/>shouldn&apos;t<sp/>be<sp/>too<sp/>sensitive<sp/>to<sp/>mixing<sp/>in<sp/>this<sp/>case.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="961"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>get<sp/>a<sp/>successful<sp/>convergence<sp/>to<sp/>the<sp/>pole<sp/>mass<sp/>scheme<sp/>in<sp/>the<sp/>end<sp/>it&apos;s<sp/>OK</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="962"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tol<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(1e-1,<sp/></highlight><highlight class="stringliteral">&quot;family_mixing_tolerance&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="963"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pt_error<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;family_mixing_tolerance_invalidates_point_only&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="964"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slhahelp::family_state_mix_matrix(</highlight><highlight class="stringliteral">&quot;~e-&quot;</highlight><highlight class="normal">,<sp/>2,<sp/>msm1,<sp/>msm2,<sp/>mssm,<sp/>tol,<sp/>LOCAL_INFO,<sp/>pt_error);</highlight></codeline>
-<codeline lineno="965"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MSm(0)<sp/><sp/>=<sp/><sp/>mssm.get(Par::Pole_Mass,<sp/>msm1);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="966"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MSm(1)<sp/><sp/>=<sp/><sp/>mssm.get(Par::Pole_Mass,<sp/>msm2);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="965"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MSm(0)<sp/><sp/>=<sp/><sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>msm1);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="966"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MSm(1)<sp/><sp/>=<sp/><sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>msm2);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="967"><highlight class="normal"></highlight></codeline>
-<codeline lineno="968"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MChi(0)<sp/>=<sp/>mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;~chi0&quot;</highlight><highlight class="normal">,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="969"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MChi(1)<sp/>=<sp/><sp/>mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;~chi0&quot;</highlight><highlight class="normal">,<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="970"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MChi(2)<sp/>=<sp/>mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;~chi0&quot;</highlight><highlight class="normal">,<sp/>3);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="971"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MChi(3)<sp/>=<sp/>mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;~chi0&quot;</highlight><highlight class="normal">,<sp/>4);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="968"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MChi(0)<sp/>=<sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;~chi0&quot;</highlight><highlight class="normal">,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="969"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MChi(1)<sp/>=<sp/><sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;~chi0&quot;</highlight><highlight class="normal">,<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="970"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MChi(2)<sp/>=<sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;~chi0&quot;</highlight><highlight class="normal">,<sp/>3);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="971"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MChi(3)<sp/>=<sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;~chi0&quot;</highlight><highlight class="normal">,<sp/>4);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="972"><highlight class="normal"></highlight></codeline>
-<codeline lineno="973"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MCha(0)<sp/>=<sp/><sp/>mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;~chi+&quot;</highlight><highlight class="normal">,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="974"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MCha(1)<sp/>=<sp/><sp/>mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;~chi+&quot;</highlight><highlight class="normal">,<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="975"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MAh(1)<sp/><sp/>=<sp/>mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;A0&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>2L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="973"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MCha(0)<sp/>=<sp/><sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;~chi+&quot;</highlight><highlight class="normal">,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="974"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MCha(1)<sp/>=<sp/><sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;~chi+&quot;</highlight><highlight class="normal">,<sp/>2);<sp/></highlight><highlight class="comment">//<sp/>1L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="975"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MAh(1)<sp/><sp/>=<sp/>mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;A0&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>2L</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="976"><highlight class="normal"></highlight></codeline>
 <codeline lineno="977"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.set_TB(mssm.get(Par::dimensionless,</highlight><highlight class="stringliteral">&quot;tanbeta&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="978"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.set_Mu(mssm.get(Par::mass1,<sp/></highlight><highlight class="stringliteral">&quot;Mu&quot;</highlight><highlight class="normal">));</highlight></codeline>
@@ -1141,7 +2060,7 @@
 <codeline lineno="1014"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MFb<sp/>=smin.mBmB;</highlight></codeline>
 <codeline lineno="1015"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MFt<sp/>=smin.mT;</highlight></codeline>
 <codeline lineno="1016"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MFtau<sp/>=smin.mTau;</highlight></codeline>
-<codeline lineno="1017"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MVWm<sp/>=mssm.get(Par::Pole_Mass,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//GAMBIT<sp/>can<sp/>get<sp/>the<sp/>pole<sp/>mas<sp/>but<sp/>it<sp/>may<sp/>have<sp/>been<sp/>improved<sp/>by<sp/>FeynHiggs<sp/>calcualtion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MVWm<sp/>=mssm.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//GAMBIT<sp/>can<sp/>get<sp/>the<sp/>pole<sp/>mas<sp/>but<sp/>it<sp/>may<sp/>have<sp/>been<sp/>improved<sp/>by<sp/>FeynHiggs<sp/>calcualtion</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1018"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.get_physical().MFm<sp/>=smin.mMu;</highlight></codeline>
 <codeline lineno="1019"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//use<sp/>SM<sp/>alphaS(MZ)<sp/>instead<sp/>of<sp/>MSSM<sp/>g3(MSUSY)<sp/>--<sp/>appears<sp/>at<sp/>two-loop<sp/>so<sp/>difference<sp/>should<sp/>be<sp/>three-loop</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1020"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(it<sp/>is<sp/>used<sp/>for<sp/>correctuions<sp/>to<sp/>yb<sp/>and<sp/>DRbar<sp/>--&gt;<sp/>MS<sp/>bar<sp/>conversion)</highlight><highlight class="normal"></highlight></codeline>
@@ -1158,9 +2077,9 @@
 <codeline lineno="1031"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on-shell<sp/>renormalized<sp/>photon<sp/>vacuum<sp/>polarization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1032"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>value<sp/>recommended<sp/>by<sp/>GM2calc<sp/>from<sp/>arxiv:1105.3149</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1033"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha_MZ<sp/>=<sp/>runOptions-&gt;getValueOrDef</highlight></codeline>
-<codeline lineno="1034"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(alpha_e_OS_MZ,<sp/></highlight><highlight class="stringliteral">&quot;GM2Calc_extra_alpha_e_MZ&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1034"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(<ref refid="namespaceGambit_1aebc3ed21de9d109dc2d6d37ce5a2d321" kindref="member">alpha_e_OS_MZ</ref>,<sp/></highlight><highlight class="stringliteral">&quot;GM2Calc_extra_alpha_e_MZ&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="1035"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha_thomson<sp/>=<sp/>runOptions-&gt;getValueOrDef</highlight></codeline>
-<codeline lineno="1036"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(alpha_e_OS_thomson_limit,<sp/></highlight><highlight class="stringliteral">&quot;GM2Calc_extra_alpha_e_thomson_limit&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1036"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(<ref refid="namespaceGambit_1aacba88d84337f85102bda83082ae2c4c" kindref="member">alpha_e_OS_thomson_limit</ref>,<sp/></highlight><highlight class="stringliteral">&quot;GM2Calc_extra_alpha_e_thomson_limit&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="1037"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1038"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(alpha_MZ<sp/>&gt;<sp/>std::numeric_limits&lt;double&gt;::epsilon())</highlight></codeline>
 <codeline lineno="1039"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.set_alpha_MZ(alpha_MZ);</highlight></codeline>
@@ -1179,7 +2098,7 @@
 <codeline lineno="1052"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
 <codeline lineno="1053"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;gm2calc<sp/>routine<sp/>convert_to_onshell<sp/>raised<sp/>error:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1054"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>model.get_problems().get_problems()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1055"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(err.str());</highlight></codeline>
+<codeline lineno="1055"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(err.str());</highlight></codeline>
 <codeline lineno="1056"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="1057"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>check<sp/>for<sp/>warnings</highlight></codeline>
 <codeline lineno="1058"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>model.get_problems().have_warning()<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -1197,13 +2116,13 @@
 <codeline lineno="1070"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
 <codeline lineno="1071"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;gm2calc<sp/>routine<sp/>convert_to_onshell<sp/>raised<sp/>error:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1072"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e.what()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1073"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(err.str());</highlight></codeline>
+<codeline lineno="1073"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(err.str());</highlight></codeline>
 <codeline lineno="1074"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1075"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(...)</highlight></codeline>
 <codeline lineno="1076"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1077"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
 <codeline lineno="1078"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;gm2calc<sp/>routine<sp/>convert_to_onshell<sp/>raised<sp/>unspecified<sp/>error.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1079"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalid_point().raise(err.str());</highlight></codeline>
+<codeline lineno="1079"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(err.str());</highlight></codeline>
 <codeline lineno="1080"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1081"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1082"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>error<sp/>=<sp/>BEreq::calculate_uncertainty_amu_2loop(model);</highlight></codeline>

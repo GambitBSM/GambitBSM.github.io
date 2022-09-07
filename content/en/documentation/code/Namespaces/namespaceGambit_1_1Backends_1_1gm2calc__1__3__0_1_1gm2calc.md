@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Backends::gm2calc_1_3_0::gm2calc
 
 
 
@@ -114,4 +113,4 @@ typedef ::gm2calc_1_3_0::gm2calc::EReadError Gambit::Backends::gm2calc_1_3_0::gm
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

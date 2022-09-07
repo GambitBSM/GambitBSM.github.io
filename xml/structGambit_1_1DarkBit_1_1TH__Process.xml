@@ -5,7 +5,7 @@
     <includes refid="ProcessCatalog_8hpp" local="no">ProcessCatalog.hpp</includes>
       <sectiondef kind="user-defined">
       <memberdef kind="variable" id="structGambit_1_1DarkBit_1_1TH__Process_1aef6641901338d975966554940c29bfe9" prot="public" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::DarkBit::TH_Process::particle1ID</definition>
         <argsstring></argsstring>
         <name>particle1ID</name>
@@ -20,7 +20,7 @@
         <location file="DarkBit/include/gambit/DarkBit/ProcessCatalog.hpp" line="147" column="13" bodyfile="DarkBit/include/gambit/DarkBit/ProcessCatalog.hpp" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DarkBit_1_1TH__Process_1a493f58a69045b45f4aa074703636e32f" prot="public" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::DarkBit::TH_Process::particle2ID</definition>
         <argsstring></argsstring>
         <name>particle2ID</name>
@@ -119,7 +119,7 @@
         <name>TH_Process</name>
         <qualifiedname>Gambit::DarkBit::TH_Process::TH_Process</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <declname>particle1ID</declname>
         </param>
         <briefdescription>
@@ -138,11 +138,11 @@
         <name>TH_Process</name>
         <qualifiedname>Gambit::DarkBit::TH_Process::TH_Process</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <declname>particle1ID</declname>
         </param>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <declname>particle2ID</declname>
         </param>
         <briefdescription>
@@ -161,11 +161,11 @@
         <name>isProcess</name>
         <qualifiedname>Gambit::DarkBit::TH_Process::isProcess</qualifiedname>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>p1</defname>
         </param>
         <param>
-          <type>const str &amp;</type>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
           <defname>p2</defname>
           <defval>std::string()</defval>
         </param>
@@ -185,7 +185,7 @@
         <name>find</name>
         <qualifiedname>Gambit::DarkBit::TH_Process::find</qualifiedname>
         <param>
-          <type>std::vector&lt; str &gt;</type>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
           <defname>final_states</defname>
         </param>
         <briefdescription>
@@ -214,10 +214,16 @@
         <childnode refid="3" relation="usage">
           <edgelabel>resonances_thresholds</edgelabel>
         </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>genRateMisc</edgelabel>
+        </childnode>
       </node>
       <node id="3">
         <label>Gambit::DarkBit::TH_resonances_thresholds</label>
         <link refid="structGambit_1_1DarkBit_1_1TH__resonances__thresholds"/>
+      </node>
+      <node id="4">
+        <label>shared_ptr&lt; FunkBase &gt;</label>
       </node>
       <node id="2">
         <label>string</label>

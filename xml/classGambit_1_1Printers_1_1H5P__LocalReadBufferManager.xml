@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Printers::H5P_LocalReadBufferManager</compoundname>
+    <includes refid="hdf5reader_8hpp" local="no">hdf5reader.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager_1ad623ced4a27d5373202cfa521b340a38" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="structGambit_1_1Printers_1_1VBIDpair" kindref="compound">VBIDpair</ref>, <ref refid="structGambit_1_1Printers_1_1BuffPair" kindref="compound">BuffPair</ref>&lt; T &gt; &gt;</type>
+        <definition>std::map&lt;VBIDpair, BuffPair&lt;T&gt; &gt; Gambit::Printers::H5P_LocalReadBufferManager&lt; T &gt;::local_buffers</definition>
+        <argsstring></argsstring>
+        <name>local_buffers</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalReadBufferManager::local_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="78" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager_1a6017b57032276547833a95c331f9f390" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::H5P_LocalReadBufferManager&lt; T &gt;::H5P_LocalReadBufferManager</definition>
+        <argsstring>()</argsstring>
+        <name>H5P_LocalReadBufferManager</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalReadBufferManager::H5P_LocalReadBufferManager</qualifiedname>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="82" column="9" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager_1a11e7a2b667b544b48b85923ed1e7fc4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Printers::H5P_LocalReadBufferManager&lt; T &gt;::~H5P_LocalReadBufferManager</definition>
+        <argsstring>()</argsstring>
+        <name>~H5P_LocalReadBufferManager</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalReadBufferManager::~H5P_LocalReadBufferManager</qualifiedname>
+        <briefdescription>
+<para>Destructor. Close all datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="87" column="9" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="87" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager_1aaf1f00e1872044e75a5160840d17b05e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structGambit_1_1Printers_1_1BuffPair" kindref="compound">BuffPair</ref>&lt; T &gt; &amp;</type>
+        <definition>BuffPair&lt; T &gt; &amp; Gambit::Printers::H5P_LocalReadBufferManager&lt; T &gt;::get_buffer</definition>
+        <argsstring>(const int vID, const unsigned int i, const std::string &amp;label, hid_t location_id)</argsstring>
+        <name>get_buffer</name>
+        <qualifiedname>Gambit::Printers::H5P_LocalReadBufferManager::get_buffer</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>vID</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>hid_t</type>
+          <declname>location_id</declname>
+        </param>
+        <briefdescription>
+<para>Buffer retrieve function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a buffer for an IDcode/auxilliary-index pair location_id used to access dataset if it has not yet been opened. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="99" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="214" bodyend="249"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Keeps track of vertex buffers local to a retrieve function Similar to the buffer manager for <ref refid="classGambit_1_1Printers_1_1HDF5Printer" kindref="compound">HDF5Printer</ref>. I considered trying to re-use that, but it is too integrated with the printer. </para>
+    </detaileddescription>
+    <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="74" column="5" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="75" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager_1aaf1f00e1872044e75a5160840d17b05e" prot="public" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalReadBufferManager</scope><name>get_buffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager_1a6017b57032276547833a95c331f9f390" prot="public" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalReadBufferManager</scope><name>H5P_LocalReadBufferManager</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager_1ad623ced4a27d5373202cfa521b340a38" prot="private" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalReadBufferManager</scope><name>local_buffers</name></member>
+      <member refid="classGambit_1_1Printers_1_1H5P__LocalReadBufferManager_1a11e7a2b667b544b48b85923ed1e7fc4b" prot="public" virt="non-virtual"><scope>Gambit::Printers::H5P_LocalReadBufferManager</scope><name>~H5P_LocalReadBufferManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

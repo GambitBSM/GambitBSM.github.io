@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# DarkBit/DarkBit_rollcall.hpp
 
 
 
@@ -6075,7 +6074,7 @@ Routine for cross checking relic density results, using DarkSUSY5.
     TYPE,
     NAME
 )
-  LONG_START_CAPABILITY(MODULE, CAT_3(EXPERIMENT,_,NAME))                           \
+LONG_START_CAPABILITY(MODULE, CAT_3(EXPERIMENT,_,NAME))                           \
   LONG_DECLARE_FUNCTION(MODULE, CAT_3(EXPERIMENT,_,NAME),                           \
    CAT_3(EXPERIMENT,_Get,NAME), TYPE, 0)                                            \
   LONG_DEPENDENCY(MODULE, CAT_3(EXPERIMENT,_Get,NAME),                              \
@@ -6095,7 +6094,7 @@ Routine for cross checking relic density results, using DarkSUSY5.
     TYPE,
     NAME
 )
-  LONG_START_CAPABILITY(MODULE, CAT_3(EXPERIMENT,_,NAME))                           \
+LONG_START_CAPABILITY(MODULE, CAT_3(EXPERIMENT,_,NAME))                           \
   LONG_DECLARE_FUNCTION(MODULE, CAT_3(EXPERIMENT,_,NAME),                           \
    CAT_3(EXPERIMENT,_Get,NAME), std::vector<double>, 0)                             \
   LONG_DEPENDENCY(MODULE, CAT_3(EXPERIMENT,_Get,NAME),                              \
@@ -6116,7 +6115,7 @@ Routine for cross checking relic density results, using DarkSUSY5.
 #define DD_DECLARE_EXPERIMENT(
     EXPERIMENT
 )
-  LONG_START_CAPABILITY(MODULE, CAT(EXPERIMENT,_Calculate))                         \
+LONG_START_CAPABILITY(MODULE, CAT(EXPERIMENT,_Calculate))                         \
   LONG_DECLARE_FUNCTION(MODULE, CAT(EXPERIMENT,_Calculate),                         \
    CAT(EXPERIMENT,_Calc), bool, 0)                                                  \
   LONG_BACKEND_REQ(MODULE, CAT(EXPERIMENT,_Calculate),                              \
@@ -12519,4 +12518,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:54 +0000

@@ -1,0 +1,1682 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="module__macros__incore_8hpp" kind="file" language="C++">
+    <compoundname>module_macros_incore.hpp</compoundname>
+    <includes refid="module__macros__incore__defs_8hpp" local="yes">gambit/Elements/module_macros_incore_defs.hpp</includes>
+    <includedby refid="backend__macros_8hpp" local="yes">backend_macros.hpp</includedby>
+    <includedby refid="standalone__module_8hpp" local="yes">standalone_module.hpp</includedby>
+    <incdepgraph>
+      <node id="101">
+        <label>gambit/Backends/backend_info.hpp</label>
+        <link refid="backend__info_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>gambit/Backends/backend_singleton.hpp</label>
+        <link refid="backend__singleton_8hpp"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>gambit/Backends/default_bossed_versions.hpp</label>
+        <link refid="default__bossed__versions_8hpp"/>
+      </node>
+      <node id="98">
+        <label>gambit/Backends/mathematica_variable.hpp</label>
+        <link refid="mathematica__variable_8hpp"/>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>gambit/Backends/python_helpers.hpp</label>
+        <link refid="python__helpers_8hpp"/>
+      </node>
+      <node id="103">
+        <label>gambit/Backends/python_variable.hpp</label>
+        <link refid="python__variable_8hpp"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>gambit/Core/ini_functions.hpp</label>
+        <link refid="Core_2include_2gambit_2Core_2ini__functions_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>gambit/Elements/daFunk.hpp</label>
+        <link refid="daFunk_8hpp_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>gambit/Elements/decay_table.hpp</label>
+        <link refid="decay__table_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>gambit/Elements/flav_prediction.hpp</label>
+        <link refid="flav__prediction_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>gambit/Elements/halo_types.hpp</label>
+        <link refid="halo__types_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>gambit/Elements/higgs_couplings_table.hpp</label>
+        <link refid="higgs__couplings__table_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>gambit/Elements/ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>gambit/Elements/ini_functions.hpp</label>
+        <link refid="Elements_2include_2gambit_2Elements_2ini__functions_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>gambit/Elements/module_macros_common.hpp</label>
+        <link refid="module__macros__common_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>module_macros_incore.hpp</label>
+        <link refid="module__macros__incore_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gambit/Elements/module_macros_incore_defs.hpp</label>
+        <link refid="module__macros__incore__defs_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+        <link refid="mssm__slhahelp_8hpp"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>gambit/Elements/safety_bucket.hpp</label>
+        <link refid="safety__bucket_8hpp"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>gambit/Elements/shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
+        <link refid="slhaea__spec__helpers_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>gambit/Elements/sminputs.hpp</label>
+        <link refid="sminputs_8hpp"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>gambit/Elements/spectrum.hpp</label>
+        <link refid="spectrum_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>gambit/Elements/spectrum_helpers.hpp</label>
+        <link refid="spectrum__helpers_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>gambit/Elements/subspectrum.hpp</label>
+        <link refid="subspectrum_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>gambit/Elements/terminator.hpp</label>
+        <link refid="terminator_8hpp"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>gambit/Elements/types_rollcall.hpp</label>
+        <link refid="types__rollcall_8hpp"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>gambit/Elements/wimp_types.hpp</label>
+        <link refid="wimp__types_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="62">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>gambit/Models/claw_singleton.hpp</label>
+        <link refid="claw__singleton_8hpp"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>gambit/Models/models.hpp</label>
+        <link refid="models_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>gambit/Models/partmap.hpp</label>
+        <link refid="partmap_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>gambit/Models/safe_param_map.hpp</label>
+        <link refid="safe__param__map_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="35">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="25">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>gambit/Utils/numerical_constants.hpp</label>
+        <link refid="numerical__constants_8hpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>gambit/Utils/safebool.hpp</label>
+        <link refid="safebool_8hpp"/>
+      </node>
+      <node id="70">
+        <label>gambit/Utils/slhaea_helpers.hpp</label>
+        <link refid="slhaea__helpers_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>gambit/Utils/static_members.hpp</label>
+        <link refid="static__members_8hpp"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="119">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+        <link refid="threadsafe__rng_8hpp"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>SLHAea/slhaea.h</label>
+      </node>
+      <node id="9">
+        <label>algorithm</label>
+      </node>
+      <node id="49">
+        <label>array</label>
+      </node>
+      <node id="90">
+        <label>assert.h</label>
+      </node>
+      <node id="54">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="102">
+        <label>boost/algorithm/string/replace.hpp</label>
+      </node>
+      <node id="53">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="21">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="92">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="32">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="22">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="109">
+        <label>boost/preprocessor/comparison/greater.hpp</label>
+      </node>
+      <node id="20">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="110">
+        <label>boost/preprocessor/control/iif.hpp</label>
+      </node>
+      <node id="124">
+        <label>boost/preprocessor/logical/bitand.hpp</label>
+      </node>
+      <node id="33">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="34">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="111">
+        <label>boost/preprocessor/repetition/enum.hpp</label>
+      </node>
+      <node id="125">
+        <label>boost/preprocessor/seq/cat.hpp</label>
+      </node>
+      <node id="112">
+        <label>boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="113">
+        <label>boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="72">
+        <label>boost/serialization/strong_typedef.hpp</label>
+      </node>
+      <node id="91">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="43">
+        <label>cassert</label>
+      </node>
+      <node id="75">
+        <label>cfloat</label>
+      </node>
+      <node id="7">
+        <label>chrono</label>
+      </node>
+      <node id="51">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>complex</label>
+      </node>
+      <node id="13">
+        <label>cstring</label>
+      </node>
+      <node id="48">
+        <label>deque</label>
+      </node>
+      <node id="36">
+        <label>exception</label>
+      </node>
+      <node id="47">
+        <label>forward_list</label>
+      </node>
+      <node id="41">
+        <label>fstream</label>
+      </node>
+      <node id="105">
+        <label>gambit/Backends/backend_types_rollcall.hpp</label>
+      </node>
+      <node id="116">
+        <label>gambit/Elements/elements_extras.hpp</label>
+      </node>
+      <node id="106">
+        <label>gambit/Elements/module_types_rollcall.hpp</label>
+      </node>
+      <node id="107">
+        <label>gambit/Models/model_types_rollcall.hpp</label>
+      </node>
+      <node id="52">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="94">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+      <node id="93">
+        <label>gsl/gsl_integration.h</label>
+      </node>
+      <node id="40">
+        <label>iostream</label>
+      </node>
+      <node id="60">
+        <label>limits</label>
+      </node>
+      <node id="46">
+        <label>list</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="55">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="10">
+        <label>omp.h</label>
+      </node>
+      <node id="64">
+        <label>ostream</label>
+      </node>
+      <node id="120">
+        <label>random</label>
+      </node>
+      <node id="5">
+        <label>set</label>
+      </node>
+      <node id="8">
+        <label>sstream</label>
+      </node>
+      <node id="82">
+        <label>stdexcept</label>
+      </node>
+      <node id="85">
+        <label>stdio.h</label>
+      </node>
+      <node id="86">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="42">
+        <label>type_traits</label>
+      </node>
+      <node id="17">
+        <label>unistd.h</label>
+      </node>
+      <node id="44">
+        <label>unordered_map</label>
+      </node>
+      <node id="45">
+        <label>unordered_set</label>
+      </node>
+      <node id="37">
+        <label>utility</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="58">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>backend_macros.hpp</label>
+        <link refid="backend__macros_8hpp"/>
+      </node>
+      <node id="5">
+        <label>DarkBit_standalone_MSSM.cpp</label>
+        <link refid="DarkBit__standalone__MSSM_8cpp"/>
+      </node>
+      <node id="6">
+        <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
+        <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
+      </node>
+      <node id="7">
+        <label>DarkBit_standalone_WIMP.cpp</label>
+        <link refid="DarkBit__standalone__WIMP_8cpp"/>
+      </node>
+      <node id="4">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="1">
+        <label>module_macros_incore.hpp</label>
+        <link refid="module__macros__incore_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ExampleBit_A_standalone_example.cpp</label>
+        <link refid="ExampleBit__A__standalone__example_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>Rollcall macros (redirection within the Core).</header>
+      <description><para>Models and Modules define different versions of these redirections macros. So we need to undef them in case they have already been defined. (by the time this header is included they should have done their job) We could just overwrite them, but this way avoids compiler warnings.</para>
+<para>These are called from within rollcall headers in each module to register module functions, their capabilities, return types, dependencies, and backend requirements. </para>
+</description>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1af4bd70b6b79b5dbc96eb177423fd8781" prot="public" static="no">
+        <name>START_MODULE</name>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a59bd16c690bf74d78f025324952fa98c" kindref="member">CORE_START_MODULE</ref></initializer>
+        <briefdescription>
+<para>Registers the current <ref refid="_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="94" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" prot="public" static="no">
+        <name>START_CAPABILITY</name>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1ab2e30f2ce170052eaba445fbecf9bef3" kindref="member">CORE_START_CAPABILITY</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Registers the current <ref refid="_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref> of the current <ref refid="_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="98" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1aa3ba0cbcfb6565420068a7778ddf9c56" prot="public" static="no">
+        <name>LONG_START_CAPABILITY</name>
+        <param><defname>MODULE</defname></param>
+        <param><defname>CAPABILITY</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1ab2e30f2ce170052eaba445fbecf9bef3" kindref="member">CORE_START_CAPABILITY</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, NOT_MODEL)</initializer>
+        <briefdescription>
+<para>Long (all argument) version of <ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="100" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1ab1c7cb2e83b1e012e891651f11e2a1fe" prot="public" static="no">
+        <name>DECLARE_FUNCTION</name>
+        <param><defname>TYPE</defname></param>
+        <param><defname>FLAG</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1aaca7d1ad24d22f15dac9794c69896f3b" kindref="member">CORE_DECLARE_FUNCTION</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, TYPE, FLAG, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Registers the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> of the current <ref refid="_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref> as a provider of the current <ref refid="_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, returning a result of type <emphasis>TYPE</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="106" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1ab2c240a21c08ae1046d6ec53d06cc0c0" prot="public" static="no">
+        <name>LONG_DECLARE_FUNCTION</name>
+        <param><defname>MODULE</defname></param>
+        <param><defname>CAPABILITY</defname></param>
+        <param><defname>FUNCTION</defname></param>
+        <param><defname>TYPE</defname></param>
+        <param><defname>FLAG</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1aaca7d1ad24d22f15dac9794c69896f3b" kindref="member">CORE_DECLARE_FUNCTION</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, TYPE, FLAG, NOT_MODEL)</initializer>
+        <briefdescription>
+<para>Long (all argument) version of <ref refid="module__macros__incore_8hpp_1ab1c7cb2e83b1e012e891651f11e2a1fe" kindref="member">DECLARE_FUNCTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="108" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a61bd23bef8de86ec3973508d5498577d" prot="public" static="no">
+        <name>NEEDS_MANAGER</name>
+        <param><defname>...</defname></param>
+        <initializer>CORE_NEEDS_MANAGER(__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates that the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> of the current <ref refid="_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref> must be managed by another function (in the same module or another) that calls it from within a loop. May be called with one or two arguments: <emphasis>LOOPMAN</emphasis> (capability of the required manager; required) and <emphasis>TYPE</emphasis> (type of the required manager; not required). Will provide a dependency pipe within the function if and only if <emphasis>TYPE</emphasis> is present and non-void. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="116" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" prot="public" static="no">
+        <name>DEPENDENCY</name>
+        <param><defname>DEP</defname></param>
+        <param><defname>TYPE</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a29b8cc78ac9728a69fa0baa14be7eed9" kindref="member">CORE_DEPENDENCY</ref>(DEP, TYPE, <ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> depends on the presence of another module function that can supply capability <emphasis>DEP</emphasis>, with return type <emphasis>TYPE</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="121" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a9e505d3b3e6c5154a73609325111b16a" prot="public" static="no">
+        <name>LONG_DEPENDENCY</name>
+        <param><defname>MODULE</defname></param>
+        <param><defname>FUNCTION</defname></param>
+        <param><defname>DEP</defname></param>
+        <param><defname>TYPE</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a29b8cc78ac9728a69fa0baa14be7eed9" kindref="member">CORE_DEPENDENCY</ref>(DEP, TYPE, <ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, NOT_MODEL)</initializer>
+        <briefdescription>
+<para>Long (all argument) version of <ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="123" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a50098a2b0e7a47d501fc79a96d8cb07f" prot="public" static="no">
+        <name>ALLOW_MODELS</name>
+        <param><defname>...</defname></param>
+        <initializer>ALLOW_MODELS_AB(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="125" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a47fe1cd82282c103a9ebfcd2a57dde2f" prot="public" static="no">
+        <name>ALLOWED_MODEL</name>
+        <param><defname>MODULE</defname></param>
+        <param><defname>FUNCTION</defname></param>
+        <param><defname>MODEL</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a834390ac10546227d2b0f5b28f19b9a9" kindref="member">CORE_ALLOWED_MODEL</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>,<ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>,<ref refid="MSSM20atX_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" kindref="member">MODEL</ref>,NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> may only be used with specific model <emphasis>MODEL</emphasis>, or combinations given via ALLOW_MODEL_COMBINATION. If both this and ALLOW_MODEL_COMBINATION are absent, all models are allowed, but model parameters will not generally be accessible from within the module funtion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="131" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1ab6323bc703efad7274bde914b0b265b5" prot="public" static="no">
+        <name>ALLOWED_MODEL_DEPENDENCE</name>
+        <param><defname>MODULE</defname></param>
+        <param><defname>FUNCTION</defname></param>
+        <param><defname>MODEL</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a005c193ccbc650dacacad5e98caeedeb" kindref="member">CORE_ALLOW_MODEL_DEPENDENCE</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>,<ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>,<ref refid="MSSM20atX_8cpp_1a7c60e913478d07a44ac15c6fb2c5937f" kindref="member">MODEL</ref>,NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> may be used with a specific model <emphasis>MODEL</emphasis>, but only in combination with others given via ALLOW_MODEL_COMBINATION. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="135" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a7e1390bea9543ff21187afe1e55c4112" prot="public" static="no">
+        <name>ALLOW_MODEL_COMBINATION</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a685e1b3bd5bee3393cf46bfc0478f4f1" kindref="member">CORE_ALLOW_MODEL_COMBINATION</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>,<ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>,NOT_MODEL,(__VA_ARGS__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> may only be used with the specific model combination given, with other combinations passed in the same way, or with individual models speficied via <ref refid="module__macros__common_8hpp_1ad58e7a70670e9d0d4b44e430e119910a" kindref="member">ALLOW_MODEL(S)</ref>. If both this and <ref refid="module__macros__common_8hpp_1ad58e7a70670e9d0d4b44e430e119910a" kindref="member">ALLOW_MODEL(s)</ref> are absent, all models are allowed but no model parameters will be accessible from within the module funtion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="142" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" prot="public" static="no">
+        <name>MODEL_GROUP</name>
+        <param><defname>GROUPNAME</defname></param>
+        <param><defname>GROUP</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a5222dd30f46a1795ee7816dff4e32f2f" kindref="member">CORE_MODEL_GROUP</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>,<ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>,GROUPNAME,GROUP,NOT_MODEL)</initializer>
+        <briefdescription>
+<para>Define a model GROUP of name GROUPNAME for use with ALLOW_MODEL_COMBINATION. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="145" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1aeb2066fa37d90d01f2d407017e941cb6" prot="public" static="no">
+        <name>DECLARE_BACKEND_REQ</name>
+        <param><defname>GROUP</defname></param>
+        <param><defname>REQUIREMENT</defname></param>
+        <param><defname>TAGS</defname></param>
+        <param><defname>TYPE</defname></param>
+        <param><defname>ARGS</defname></param>
+        <param><defname>IS_VARIABLE</defname></param>
+        <initializer>                                                          <ref refid="module__macros__incore__defs_8hpp_1acef0d0c904414e38cd8df7dfd54a8be3" kindref="member">CORE_BACKEND_REQ</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BACKEND_REQ indicates that the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> requires one backend variable or function to be available from a capability group <emphasis>GROUP</emphasis>, and then declares a viable member of that group, with capability <emphasis>REQUIREMENT</emphasis>, type <emphasis>TYPE</emphasis> and (in the case of functions) arguments <emphasis>ARGS</emphasis>. BACKEND_REQ also allows the user to specify a list of <emphasis>TAGS</emphasis> that apply to this specific group member, which can then be used for easily implementing rules for choosing between different members of the same <emphasis>GROUP</emphasis>. Note that <emphasis>GROUPs</emphasis> are automatically declared the first time that they are mentioned in a BACKEND_REQ statement. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="155" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1ae9b82684d8c86e25c8d70cb5ddbb6afa" prot="public" static="no">
+        <name>LONG_DECLARE_BACKEND_REQ</name>
+        <param><defname>MODULE</defname></param>
+        <param><defname>CAPABILITY</defname></param>
+        <param><defname>FUNCTION</defname></param>
+        <param><defname>GROUP</defname></param>
+        <param><defname>REQUIREMENT</defname></param>
+        <param><defname>TAGS</defname></param>
+        <param><defname>TYPE</defname></param>
+        <param><defname>ARGS</defname></param>
+        <param><defname>IS_VARIABLE</defname></param>
+        <initializer>                                                          <ref refid="module__macros__incore__defs_8hpp_1acef0d0c904414e38cd8df7dfd54a8be3" kindref="member">CORE_BACKEND_REQ</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="157" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a1f4a4516729918a92bf901e865e78008" prot="public" static="no">
+        <name>BE_GROUP</name>
+        <param><defname>GROUP</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a2b4c35ccc84f72effd32a34fbf5b6af6" kindref="member">CORE_BE_GROUP</ref>(GROUP,NOT_MODEL)</initializer>
+        <briefdescription>
+<para>Declare a backend group, from which one backend requirement must be activated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="161" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a1080475379afb4e5fcc08b2f5c091753" prot="public" static="no">
+        <name>ACTIVATE_BACKEND_REQ_FOR_MODELS</name>
+        <param><defname>MODELS</defname></param>
+        <param><defname>TAGS</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a5c3bbb1af35cd8c9568b7ab7e8ff8daf" kindref="member">CORE_BE_MODEL_RULE</ref>(MODELS,TAGS,NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define a rule that uses TAGS to determine which backend requirements of the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> are explicitly activated when one or more models from the set MODELS are being scanned. Declaring this rule makes backend requirements that match one or more TAGS conditional on the model being scanned. Backend requirements that do not match any such rule are considered unconditional, and are activated regardless of the model(s) being scanned. Note that all rules have <emphasis>immediate</emphasis> effect, so only apply to BACKEND_REQs of the current FUNCTION that have already been declared! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="171" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a0761ba4d29c692ada0716491c66d57cb" prot="public" static="no">
+        <name>BACKEND_OPTION</name>
+        <param><defname>BACKEND_AND_VERSIONS</defname></param>
+        <param><defname>TAGS</defname></param>
+        <initializer>LONG_BACKEND_OPTION(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, BACKEND_AND_VERSIONS,TAGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define a rule that uses TAGS to determine a set of backend requirements of the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> that are permitted to be fulfilled by the indicated BACKEND_AND_VERSIONS. If no versions are given, all versions of the stated backend are considered allowed. Declaring this rule makes all backend requirements that match the rule resolvable <emphasis>only</emphasis> by the backend-version pairs passed into <ref refid="module__macros__incore_8hpp_1a0761ba4d29c692ada0716491c66d57cb" kindref="member">BACKEND_OPTION</ref>. Additional options provided by subsequent calls to <ref refid="module__macros__incore_8hpp_1a0761ba4d29c692ada0716491c66d57cb" kindref="member">BACKEND_OPTION</ref> are added to the options provided by each previous declaration. In the case of multiple contradictory calls to <ref refid="module__macros__incore_8hpp_1a0761ba4d29c692ada0716491c66d57cb" kindref="member">BACKEND_OPTION</ref>, the rule defined by the latest call takes precedence. Note that all rules have <emphasis>immediate</emphasis> effect, so only apply to BACKEND_REQs of the current FUNCTION that have already been declared! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="184" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a4456a4444b5fbb2ab432fc6366b1f610" prot="public" static="no">
+        <name>LONG_BACKEND_OPTION</name>
+        <param><defname>MODULE</defname></param>
+        <param><defname>CAPABILITY</defname></param>
+        <param><defname>FUNCTION</defname></param>
+        <param><defname>BACKEND_AND_VERSIONS</defname></param>
+        <param><defname>TAGS</defname></param>
+        <initializer>                                                          <ref refid="module__macros__incore__defs_8hpp_1afedb5ad8169a8c4c3df4b76b53d9b682" kindref="member">CORE_BACKEND_OPTION</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, BACKEND_AND_VERSIONS,TAGS, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="185" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1adaa80ad5963ab34fa59056f4d97ffe34" prot="public" static="no">
+        <name>FORCE_SAME_BACKEND</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1aed74c996beca30dd138d5671c87132c7" kindref="member">CORE_FORCE_SAME_BACKEND</ref>(NOT_MODEL,__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define a rule that certain sets of backend requirements need to be resolved by the same backend. The sets are identified by tags, any number of which can be passed to FORCE_SAME_BACKEND. All backend requirements with a given tag passed into FORCE_SAME_BACKEND will be forced by the dependency resolver to use functions from the same backend. Note that all rules have <emphasis>immediate</emphasis> effect, so only apply to BACKEND_REQs of the current FUNCTION that have already been declared! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="194" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1af75783a13f0eca324c064867de3c846b" prot="public" static="no">
+        <name>START_CONDITIONAL_DEPENDENCY</name>
+        <param><defname>TYPE</defname></param>
+        <initializer>                                                           <ref refid="module__macros__incore__defs_8hpp_1a55ca128f474b5a5909bd9230d8cbad50" kindref="member">CORE_START_CONDITIONAL_DEPENDENCY</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, \
+                                                           <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a0a2c1c9dc69b1048ddca06fb58542b86" kindref="member">CONDITIONAL_DEPENDENCY</ref>, TYPE, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> may depend on the presence of another module function that can supply capability <ref refid="ExampleBit__B__rollcall_8hpp_1a0a2c1c9dc69b1048ddca06fb58542b86" kindref="member">CONDITIONAL_DEPENDENCY</ref>, with return type <emphasis>TYPE</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="200" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1aaf830909478fef89b333a806e67fe84e" prot="public" static="no">
+        <name>ACTIVATE_DEP_BE</name>
+        <param><defname>BACKEND_REQ</defname></param>
+        <param><defname>BACKEND</defname></param>
+        <param><defname>VERSTRING</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1acf70a8d17a5edb76f5c5b4f46c4992ed" kindref="member">CORE_ACTIVATE_DEP_BE</ref>(<ref refid="DarkBit__rollcall_8hpp_1af6174b8fea3848301f1b44e7f5e3e211" kindref="member">BACKEND_REQ</ref>, BACKEND, VERSTRING, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the current <ref refid="ExampleBit__B__rollcall_8hpp_1a0a2c1c9dc69b1048ddca06fb58542b86" kindref="member">CONDITIONAL_DEPENDENCY</ref> should be activated if the backend requirement <emphasis>BACKEND_REQ</emphasis> of the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> is filled by a backend function from <emphasis>BACKEND</emphasis>. The versions of <emphasis>BACKEND</emphasis> that this applies to are passed in <emphasis>VERSTRING</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="207" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1acc4ee7ea690ed3dfa9ddb7ac02cd5df3" prot="public" static="no">
+        <name>ACTIVATE_FOR_MODELS</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1a6feb208aba6f7404546c142a6c7294d3" kindref="member">ACTIVATE_DEP_MODEL</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a0a2c1c9dc69b1048ddca06fb58542b86" kindref="member">CONDITIONAL_DEPENDENCY</ref>, NOT_MODEL, #__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the current <ref refid="ExampleBit__B__rollcall_8hpp_1a0a2c1c9dc69b1048ddca06fb58542b86" kindref="member">CONDITIONAL_DEPENDENCY</ref> should be activated if the model being scanned matches one of the models passed as an argument. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="211" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" prot="public" static="no">
+        <name>MODEL_CONDITIONAL_DEPENDENCY</name>
+        <param><defname>DEP</defname></param>
+        <param><defname>TYPE</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>                                                          <ref refid="module__macros__incore__defs_8hpp_1a55ca128f474b5a5909bd9230d8cbad50" kindref="member">CORE_START_CONDITIONAL_DEPENDENCY</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, DEP, TYPE, NOT_MODEL) \
+                                                          <ref refid="module__macros__incore__defs_8hpp_1a6feb208aba6f7404546c142a6c7294d3" kindref="member">ACTIVATE_DEP_MODEL</ref>(<ref refid="ExampleBit__B__rollcall_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kindref="member">MODULE</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>, <ref refid="ExampleBit__B__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>, DEP, NOT_MODEL, #__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>Quick, one-line declaration of model-conditional dependencies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="214" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__macros__incore_8hpp_1af6b17c8bd11dd66f95191ea06a514e76" prot="public" static="no">
+        <name>CLASSLOAD_NEEDED</name>
+        <param><defname>BACKEND</defname></param>
+        <param><defname>VERSION</defname></param>
+        <initializer><ref refid="module__macros__incore__defs_8hpp_1ac17955f4fbd08cd99b09bd6a0d4fb451" kindref="member">CORE_CLASSLOAD_NEEDED</ref>(BACKEND, VERSION, NOT_MODEL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the current <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref> requires classes that must be loaded from <emphasis>BACKEND</emphasis>, version <emphasis>VERSION</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/module_macros_incore.hpp" line="219" column="9" bodyfile="Elements/include/gambit/Elements/module_macros_incore.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Redirection macros for generic observable and likelihood function macro definitions, for inclusion from the Core.</para>
+<para>Note here that <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION </ref> is the actual module function name, whereas both <ref refid="_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY </ref> and all <emphasis>DEPs</emphasis> refer to the abstract physical quantities that functions may provide or require. Thus, the provides() methods expect a quantity input (i.e. corresponding to a <ref refid="_1a99414bf65bb722f6204c37c7a507b92f" kindref="member">CAPABILITY</ref>), the requires() methods expect a quantity input for the dependency but a function name input (i.e. corresponding to a <ref refid="_1aee0cf83ee6d754df700e396da8987f1f" kindref="member">FUNCTION</ref>) for the actual dependent function, and all other things operate on the basis of the function name, not the quantity that is calculated.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:patscott@physics.mcgill.ca">patscott@physics.mcgill.ca</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2012 Nov </para>
+</simplesect>
+<simplesect kind="date"><para>2013,14 Foreverrrrr</para>
+</simplesect>
+<simplesect kind="author"><para>Abram Krislock (<ulink url="mailto:abram.krislock@fysik.su.se">abram.krislock@fysik.su.se</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2013 Jan, Feb</para>
+</simplesect>
+<simplesect kind="author"><para>Christoph Weniger (<ulink url="mailto:c.weniger@uva.nl">c.weniger@uva.nl</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2013 Jan, Feb, 2014 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Anders Kvellestad (<ulink url="mailto:anders.kvellestad@fys.uio.no">anders.kvellestad@fys.uio.no</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2013 Nov</para>
+</simplesect>
+<simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:b.farmer@imperial.ac.uk">b.farmer@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2019 Jul</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Redirection<sp/>macros<sp/>for<sp/>generic<sp/>observable<sp/>and<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>likelihood<sp/>function<sp/>macro<sp/>definitions,<sp/>for<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>inclusion<sp/>from<sp/>the<sp/>Core.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>Note<sp/>here<sp/>that<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\endlink<sp/>is<sp/>the<sp/>actual<sp/>module<sp/>function<sp/>name,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>whereas<sp/>both<sp/>\link<sp/>CAPABILITY()<sp/>CAPABILITY</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\endlink<sp/>and<sp/>all<sp/>\em<sp/>DEPs<sp/>refer<sp/>to<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>abstract<sp/>physical<sp/>quantities<sp/>that<sp/>functions</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>may<sp/>provide<sp/>or<sp/>require.<sp/><sp/>Thus,<sp/>the<sp/>provides()</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>methods<sp/>expect<sp/>a<sp/>quantity<sp/>input<sp/>(i.e.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>corresponding<sp/>to<sp/>a<sp/>\link<sp/>CAPABILITY()</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>CAPABILITY\endlink),<sp/>the<sp/>requires()<sp/>methods</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/>expect<sp/>a<sp/>quantity<sp/>input<sp/>for<sp/>the<sp/>dependency<sp/>but<sp/>a</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///<sp/><sp/>function<sp/>name<sp/>input<sp/>(i.e.<sp/>corresponding<sp/>to<sp/>a</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///<sp/><sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink)<sp/>for</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///<sp/><sp/>the<sp/>actual<sp/>dependent<sp/>function,<sp/>and<sp/>all<sp/>other</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///<sp/><sp/>things<sp/>operate<sp/>on<sp/>the<sp/>basis<sp/>of<sp/>the<sp/>function</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///<sp/><sp/>name,<sp/>not<sp/>the<sp/>quantity<sp/>that<sp/>is<sp/>calculated.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(patscott@physics.mcgill.ca)</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">///<sp/><sp/>\date<sp/>2012<sp/>Nov</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">///<sp/><sp/>\date<sp/>2013,14<sp/>Foreverrrrr</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">///<sp/><sp/>\author<sp/>Abram<sp/>Krislock</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(abram.krislock@fysik.su.se)</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">///<sp/><sp/>\date<sp/>2013<sp/>Jan,<sp/>Feb</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">///<sp/><sp/>\author<sp/>Christoph<sp/>Weniger</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(c.weniger@uva.nl)</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">///<sp/><sp/>\date<sp/>2013<sp/>Jan,<sp/>Feb,<sp/>2014<sp/>Jan</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">///<sp/><sp/>\author<sp/>Anders<sp/>Kvellestad</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(anders.kvellestad@fys.uio.no)</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">///<sp/><sp/>\date<sp/>2013<sp/>Nov</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(b.farmer@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">///<sp/><sp/>\date<sp/>2019<sp/>Jul</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__module_macros_incore_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__module_macros_incore_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="module__macros__incore__defs_8hpp" kindref="compound">gambit/Elements/module_macros_incore_defs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment">///<sp/>Models<sp/>and<sp/>Modules<sp/>define<sp/>different<sp/>versions<sp/>of<sp/>these<sp/>redirections<sp/>macros.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">///<sp/>So<sp/>we<sp/>need<sp/>to<sp/>undef<sp/>them<sp/>in<sp/>case<sp/>they<sp/>have<sp/>already<sp/>been<sp/>defined.</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">///<sp/>(by<sp/>the<sp/>time<sp/>this<sp/>header<sp/>is<sp/>included<sp/>they<sp/>should<sp/>have<sp/>done<sp/>their<sp/>job)</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">///<sp/>We<sp/>could<sp/>just<sp/>overwrite<sp/>them,<sp/>but<sp/>this<sp/>way<sp/>avoids<sp/>compiler<sp/>warnings.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"></highlight><highlight class="preprocessor">#undef<sp/>START_CAPABILITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LONG_START_CAPABILITY<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DECLARE_FUNCTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LONG_DECLARE_FUNCTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DEPENDENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LONG_DEPENDENCY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>NEEDS_MANAGER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ALLOW_MODELS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ALLOWED_MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ALLOWED_MODEL_DEPENDENCE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ALLOW_MODEL_COMBINATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL_GROUP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>BE_GROUP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DECLARE_BACKEND_REQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LONG_DECLARE_BACKEND_REQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ACTIVATE_BACKEND_REQ_FOR_MODELS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>START_CONDITIONAL_DEPENDENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ACTIVATE_DEP_BE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ACTIVATE_FOR_MODELS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL_CONDITIONAL_DEPENDENCY<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>BACKEND_OPTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LONG_BACKEND_OPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>FORCE_SAME_BACKEND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>CLASSLOAD_NEEDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="87"><highlight class="comment">///<sp/>\name<sp/>Rollcall<sp/>macros<sp/>(redirection<sp/>within<sp/>the<sp/>Core).</highlight></codeline>
+<codeline lineno="88"><highlight class="comment">///<sp/>These<sp/>are<sp/>called<sp/>from<sp/>within<sp/>rollcall<sp/>headers<sp/>in<sp/>each<sp/>module<sp/>to</highlight></codeline>
+<codeline lineno="89"><highlight class="comment">///<sp/>register<sp/>module<sp/>functions,<sp/>their<sp/>capabilities,<sp/>return<sp/>types,<sp/>dependencies,</highlight></codeline>
+<codeline lineno="90"><highlight class="comment">///<sp/>and<sp/>backend<sp/>requirements.</highlight></codeline>
+<codeline lineno="91"><highlight class="comment">///<sp/>@{</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="93"><highlight class="comment">///<sp/>Registers<sp/>the<sp/>current<sp/>\link<sp/>MODULE()<sp/>MODULE\endlink.</highlight></codeline>
+<codeline lineno="94" refid="module__macros__incore_8hpp_1af4bd70b6b79b5dbc96eb177423fd8781" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>START_MODULE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_START_MODULE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="96"><highlight class="comment">///<sp/>Registers<sp/>the<sp/>current<sp/>\link<sp/>CAPABILITY()<sp/>CAPABILITY\endlink<sp/>of<sp/>the<sp/>current</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">///<sp/>\link<sp/>MODULE()<sp/>MODULE\endlink.</highlight></codeline>
+<codeline lineno="98" refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>START_CAPABILITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_START_CAPABILITY(MODULE,<sp/>CAPABILITY,<sp/>NOT_MODEL)</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="99"><highlight class="comment">///<sp/>Long<sp/>(all<sp/>argument)<sp/>version<sp/>of<sp/>\link<sp/>START_CAPABILITY()<sp/>START_CAPABILITY\endlink.</highlight></codeline>
+<codeline lineno="100" refid="module__macros__incore_8hpp_1aa3ba0cbcfb6565420068a7778ddf9c56" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>LONG_START_CAPABILITY(MODULE,<sp/>CAPABILITY)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_START_CAPABILITY(MODULE,<sp/>CAPABILITY,<sp/>NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="102"><highlight class="comment">///<sp/>Registers<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>of<sp/>the<sp/>current</highlight></codeline>
+<codeline lineno="103"><highlight class="comment">///<sp/>\link<sp/>MODULE()<sp/>MODULE\endlink<sp/>as<sp/>a<sp/>provider</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">///<sp/>of<sp/>the<sp/>current<sp/>\link<sp/>CAPABILITY()<sp/>CAPABILITY\endlink,<sp/>returning<sp/>a<sp/>result<sp/>of</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">///<sp/>type<sp/>\em<sp/>TYPE.</highlight></codeline>
+<codeline lineno="106" refid="module__macros__incore_8hpp_1ab1c7cb2e83b1e012e891651f11e2a1fe" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>DECLARE_FUNCTION(TYPE,<sp/>FLAG)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_DECLARE_FUNCTION(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>TYPE,<sp/>FLAG,<sp/>NOT_MODEL)</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="107"><highlight class="comment">///<sp/>Long<sp/>(all<sp/>argument)<sp/>version<sp/>of<sp/>\link<sp/>DECLARE_FUNCTION()<sp/>DECLARE_FUNCTION\endlink.</highlight></codeline>
+<codeline lineno="108" refid="module__macros__incore_8hpp_1ab2c240a21c08ae1046d6ec53d06cc0c0" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>LONG_DECLARE_FUNCTION(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>TYPE,<sp/>FLAG)<sp/>CORE_DECLARE_FUNCTION(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>TYPE,<sp/>FLAG,<sp/>NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment">///<sp/>Indicates<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>of<sp/>the<sp/>current</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">///<sp/>\link<sp/>MODULE()<sp/>MODULE\endlink<sp/>must<sp/>be<sp/>managed<sp/>by<sp/>another<sp/>function<sp/>(in<sp/>the<sp/>same</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">///<sp/>module<sp/>or<sp/>another)<sp/>that<sp/>calls<sp/>it<sp/>from<sp/>within<sp/>a<sp/>loop.<sp/><sp/>May<sp/>be<sp/>called<sp/>with<sp/>one<sp/>or</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">///<sp/>two<sp/>arguments:<sp/>\em<sp/>LOOPMAN<sp/>(capability<sp/>of<sp/>the<sp/>required<sp/>manager;<sp/>required)<sp/>and</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">///<sp/>\em<sp/>TYPE<sp/>(type<sp/>of<sp/>the<sp/>required<sp/>manager;<sp/>not<sp/>required).<sp/><sp/>Will<sp/>provide<sp/>a<sp/>dependency</highlight></codeline>
+<codeline lineno="115"><highlight class="comment">///<sp/>pipe<sp/>within<sp/>the<sp/>function<sp/>if<sp/>and<sp/>only<sp/>if<sp/>\em<sp/>TYPE<sp/>is<sp/>present<sp/>and<sp/>non-void.</highlight></codeline>
+<codeline lineno="116" refid="module__macros__incore_8hpp_1a61bd23bef8de86ec3973508d5498577d" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>NEEDS_MANAGER(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_NEEDS_MANAGER(__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="118"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>depends<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="119"><highlight class="comment">///<sp/>presence<sp/>of<sp/>another<sp/>module<sp/>function<sp/>that<sp/>can<sp/>supply<sp/>capability<sp/>\em<sp/>DEP,<sp/>with</highlight></codeline>
+<codeline lineno="120"><highlight class="comment">///<sp/>return<sp/>type<sp/>\em<sp/>TYPE.</highlight></codeline>
+<codeline lineno="121" refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>DEPENDENCY(DEP,<sp/>TYPE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_DEPENDENCY(DEP,<sp/>TYPE,<sp/>MODULE,<sp/>FUNCTION,<sp/>NOT_MODEL)</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment">///<sp/>Long<sp/>(all<sp/>argument)<sp/>version<sp/>of<sp/>\link<sp/>DEPENDENCY()<sp/>DEPENDENCY\endlink.</highlight></codeline>
+<codeline lineno="123" refid="module__macros__incore_8hpp_1a9e505d3b3e6c5154a73609325111b16a" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>LONG_DEPENDENCY(MODULE,<sp/>FUNCTION,<sp/>DEP,<sp/>TYPE)<sp/><sp/><sp/><sp/><sp/><sp/>CORE_DEPENDENCY(DEP,<sp/>TYPE,<sp/>MODULE,<sp/>FUNCTION,<sp/>NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALLOW_MODELS(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALLOW_MODELS_AB(MODULE,<sp/>FUNCTION,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="127"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>may<sp/>only<sp/>be<sp/>used<sp/>with</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">///<sp/>specific<sp/>model<sp/>\em<sp/>MODEL,<sp/>or<sp/>combinations<sp/>given<sp/>via<sp/>ALLOW_MODEL_COMBINATION.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">///<sp/>If<sp/>both<sp/>this<sp/>and<sp/>ALLOW_MODEL_COMBINATION<sp/>are<sp/>absent,<sp/>all<sp/>models<sp/>are<sp/>allowed,<sp/>but</highlight></codeline>
+<codeline lineno="130"><highlight class="comment">///<sp/>model<sp/>parameters<sp/>will<sp/>not<sp/>generally<sp/>be<sp/>accessible<sp/>from<sp/>within<sp/>the<sp/>module<sp/>funtion.</highlight></codeline>
+<codeline lineno="131" refid="module__macros__incore_8hpp_1a47fe1cd82282c103a9ebfcd2a57dde2f" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>ALLOWED_MODEL(MODULE,FUNCTION,MODEL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_ALLOWED_MODEL(MODULE,FUNCTION,MODEL,NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="133"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>may<sp/>be<sp/>used<sp/>with<sp/>a</highlight></codeline>
+<codeline lineno="134"><highlight class="comment">///<sp/>specific<sp/>model<sp/>\em<sp/>MODEL,<sp/>but<sp/>only<sp/>in<sp/>combination<sp/>with<sp/>others<sp/>given<sp/>via<sp/>ALLOW_MODEL_COMBINATION.</highlight></codeline>
+<codeline lineno="135" refid="module__macros__incore_8hpp_1ab6323bc703efad7274bde914b0b265b5" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>ALLOWED_MODEL_DEPENDENCE(MODULE,FUNCTION,MODEL)<sp/><sp/><sp/>CORE_ALLOW_MODEL_DEPENDENCE(MODULE,FUNCTION,MODEL,NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="137"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>may<sp/>only<sp/>be<sp/>used<sp/>with</highlight></codeline>
+<codeline lineno="138"><highlight class="comment">///<sp/>the<sp/>specific<sp/>model<sp/>combination<sp/>given,<sp/>with<sp/>other<sp/>combinations<sp/>passed<sp/>in<sp/>the<sp/>same</highlight></codeline>
+<codeline lineno="139"><highlight class="comment">///<sp/>way,<sp/>or<sp/>with<sp/>individual<sp/>models<sp/>speficied<sp/>via<sp/>ALLOW_MODEL(S).<sp/><sp/>If<sp/>both<sp/>this<sp/>and</highlight></codeline>
+<codeline lineno="140"><highlight class="comment">///<sp/>ALLOW_MODEL(s)<sp/>are<sp/>absent,<sp/>all<sp/>models<sp/>are<sp/>allowed<sp/>but<sp/>no<sp/>model<sp/>parameters<sp/>will<sp/>be</highlight></codeline>
+<codeline lineno="141"><highlight class="comment">///<sp/>accessible<sp/>from<sp/>within<sp/>the<sp/>module<sp/>funtion.</highlight></codeline>
+<codeline lineno="142" refid="module__macros__incore_8hpp_1a7e1390bea9543ff21187afe1e55c4112" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>ALLOW_MODEL_COMBINATION(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_ALLOW_MODEL_COMBINATION(MODULE,FUNCTION,NOT_MODEL,(__VA_ARGS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="144"><highlight class="comment">///<sp/>Define<sp/>a<sp/>model<sp/>GROUP<sp/>of<sp/>name<sp/>GROUPNAME<sp/>for<sp/>use<sp/>with<sp/>ALLOW_MODEL_COMBINATION.</highlight></codeline>
+<codeline lineno="145" refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>MODEL_GROUP(GROUPNAME,GROUP)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_MODEL_GROUP(MODULE,FUNCTION,GROUPNAME,GROUP,NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="147"><highlight class="comment">///<sp/>BACKEND_REQ<sp/>indicates<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>requires<sp/>one</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">///<sp/>backend<sp/>variable<sp/>or<sp/>function<sp/>to<sp/>be<sp/>available<sp/>from<sp/>a<sp/>capability<sp/>group<sp/>\em<sp/>GROUP,</highlight></codeline>
+<codeline lineno="149"><highlight class="comment">///<sp/>and<sp/>then<sp/>declares<sp/>a<sp/>viable<sp/>member<sp/>of<sp/>that<sp/>group,<sp/>with<sp/>capability<sp/>\em<sp/>REQUIREMENT,</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">///<sp/>type<sp/>\em<sp/>TYPE<sp/>and<sp/>(in<sp/>the<sp/>case<sp/>of<sp/>functions)<sp/>arguments<sp/>\em<sp/>ARGS.<sp/><sp/>BACKEND_REQ<sp/>also</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">///<sp/>allows<sp/>the<sp/>user<sp/>to<sp/>specify<sp/>a<sp/>list<sp/>of<sp/>\em<sp/>TAGS<sp/>that<sp/>apply<sp/>to<sp/>this<sp/>specific<sp/>group<sp/>member,</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">///<sp/>which<sp/>can<sp/>then<sp/>be<sp/>used<sp/>for<sp/>easily<sp/>implementing<sp/>rules<sp/>for<sp/>choosing<sp/>between<sp/>different</highlight></codeline>
+<codeline lineno="153"><highlight class="comment">///<sp/>members<sp/>of<sp/>the<sp/>same<sp/>\em<sp/>GROUP.<sp/><sp/>Note<sp/>that<sp/>\em<sp/>GROUPs<sp/>are<sp/>automatically<sp/>declared<sp/>the</highlight></codeline>
+<codeline lineno="154"><highlight class="comment">///<sp/>first<sp/>time<sp/>that<sp/>they<sp/>are<sp/>mentioned<sp/>in<sp/>a<sp/>BACKEND_REQ<sp/>statement.</highlight></codeline>
+<codeline lineno="155" refid="module__macros__incore_8hpp_1aeb2066fa37d90d01f2d407017e941cb6" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>DECLARE_BACKEND_REQ(GROUP,<sp/>REQUIREMENT,<sp/>TAGS,<sp/>TYPE,<sp/>ARGS,<sp/>IS_VARIABLE)<sp/>\</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_BACKEND_REQ(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>GROUP,<sp/>REQUIREMENT,<sp/>TAGS,<sp/>TYPE,<sp/>ARGS,<sp/>IS_VARIABLE,<sp/>NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LONG_DECLARE_BACKEND_REQ(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>GROUP,<sp/>REQUIREMENT,<sp/>TAGS,<sp/>TYPE,<sp/>ARGS,<sp/>IS_VARIABLE)<sp/>\</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_BACKEND_REQ(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>GROUP,<sp/>REQUIREMENT,<sp/>TAGS,<sp/>TYPE,<sp/>ARGS,<sp/>IS_VARIABLE,<sp/>NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="160"><highlight class="comment">///<sp/>Declare<sp/>a<sp/>backend<sp/>group,<sp/>from<sp/>which<sp/>one<sp/>backend<sp/>requirement<sp/>must<sp/>be<sp/>activated.</highlight></codeline>
+<codeline lineno="161" refid="module__macros__incore_8hpp_1a1f4a4516729918a92bf901e865e78008" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>BE_GROUP(GROUP)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_BE_GROUP(GROUP,NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="163"><highlight class="comment">///<sp/>Define<sp/>a<sp/>rule<sp/>that<sp/>uses<sp/>TAGS<sp/>to<sp/>determine<sp/>which<sp/>backend<sp/>requirements<sp/>of<sp/>the<sp/>current</highlight></codeline>
+<codeline lineno="164"><highlight class="comment">///<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>are<sp/>explicitly<sp/>activated<sp/>when<sp/>one<sp/>or<sp/>more<sp/>models</highlight></codeline>
+<codeline lineno="165"><highlight class="comment">///<sp/>from<sp/>the<sp/>set<sp/>MODELS<sp/>are<sp/>being<sp/>scanned.<sp/><sp/>Declaring<sp/>this<sp/>rule<sp/>makes<sp/>backend<sp/>requirements</highlight></codeline>
+<codeline lineno="166"><highlight class="comment">///<sp/>that<sp/>match<sp/>one<sp/>or<sp/>more<sp/>TAGS<sp/>conditional<sp/>on<sp/>the<sp/>model<sp/>being<sp/>scanned.<sp/><sp/>Backend</highlight></codeline>
+<codeline lineno="167"><highlight class="comment">///<sp/>requirements<sp/>that<sp/>do<sp/>not<sp/>match<sp/>any<sp/>such<sp/>rule<sp/>are<sp/>considered<sp/>unconditional,<sp/>and<sp/>are</highlight></codeline>
+<codeline lineno="168"><highlight class="comment">///<sp/>activated<sp/>regardless<sp/>of<sp/>the<sp/>model(s)<sp/>being<sp/>scanned.<sp/><sp/>Note<sp/>that<sp/>all<sp/>rules<sp/>have</highlight></codeline>
+<codeline lineno="169"><highlight class="comment">///<sp/>_immediate_<sp/>effect,<sp/>so<sp/>only<sp/>apply<sp/>to<sp/>BACKEND_REQs<sp/>of<sp/>the<sp/>current<sp/>FUNCTION<sp/>that<sp/>have</highlight></codeline>
+<codeline lineno="170"><highlight class="comment">///<sp/>already<sp/>been<sp/>declared!</highlight></codeline>
+<codeline lineno="171" refid="module__macros__incore_8hpp_1a1080475379afb4e5fcc08b2f5c091753" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>ACTIVATE_BACKEND_REQ_FOR_MODELS(MODELS,TAGS)<sp/><sp/><sp/><sp/><sp/><sp/>CORE_BE_MODEL_RULE(MODELS,TAGS,NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="173"><highlight class="comment">///<sp/>Define<sp/>a<sp/>rule<sp/>that<sp/>uses<sp/>TAGS<sp/>to<sp/>determine<sp/>a<sp/>set<sp/>of<sp/>backend<sp/>requirements<sp/>of<sp/>the<sp/>current</highlight></codeline>
+<codeline lineno="174"><highlight class="comment">///<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>that<sp/>are<sp/>permitted<sp/>to<sp/>be<sp/>fulfilled<sp/>by<sp/>the<sp/>indicated</highlight></codeline>
+<codeline lineno="175"><highlight class="comment">///<sp/>BACKEND_AND_VERSIONS.<sp/><sp/>If<sp/>no<sp/>versions<sp/>are<sp/>given,<sp/>all<sp/>versions<sp/>of<sp/>the<sp/>stated<sp/>backend<sp/>are</highlight></codeline>
+<codeline lineno="176"><highlight class="comment">///<sp/>considered<sp/>allowed.<sp/><sp/>Declaring<sp/>this<sp/>rule<sp/>makes<sp/>all<sp/>backend<sp/>requirements<sp/>that<sp/>match</highlight></codeline>
+<codeline lineno="177"><highlight class="comment">///<sp/>the<sp/>rule<sp/>resolvable<sp/>_only_<sp/>by<sp/>the<sp/>backend-version<sp/>pairs<sp/>passed<sp/>into</highlight></codeline>
+<codeline lineno="178"><highlight class="comment">///<sp/>\link<sp/>BACKEND_OPTION()<sp/>BACKEND_OPTION\endlink.<sp/>Additional<sp/>options<sp/>provided<sp/>by<sp/>subsequent</highlight></codeline>
+<codeline lineno="179"><highlight class="comment">///<sp/>calls<sp/>to<sp/>\link<sp/>BACKEND_OPTION()<sp/>BACKEND_OPTION\endlink<sp/>are<sp/>added<sp/>to<sp/>the<sp/>options<sp/>provided</highlight></codeline>
+<codeline lineno="180"><highlight class="comment">///<sp/>by<sp/>each<sp/>previous<sp/>declaration.<sp/>In<sp/>the<sp/>case<sp/>of<sp/>multiple<sp/>contradictory<sp/>calls<sp/>to</highlight></codeline>
+<codeline lineno="181"><highlight class="comment">///<sp/>\link<sp/>BACKEND_OPTION()<sp/>BACKEND_OPTION\endlink,<sp/>the<sp/>rule<sp/>defined<sp/>by<sp/>the<sp/>latest<sp/>call<sp/>takes</highlight></codeline>
+<codeline lineno="182"><highlight class="comment">///<sp/>precedence.<sp/><sp/>Note<sp/>that<sp/>all<sp/>rules<sp/>have<sp/>_immediate_<sp/>effect,<sp/>so<sp/>only<sp/>apply<sp/>to<sp/>BACKEND_REQs</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">///<sp/>of<sp/>the<sp/>current<sp/>FUNCTION<sp/>that<sp/>have<sp/>already<sp/>been<sp/>declared!</highlight></codeline>
+<codeline lineno="184" refid="module__macros__incore_8hpp_1a0761ba4d29c692ada0716491c66d57cb" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>BACKEND_OPTION(BACKEND_AND_VERSIONS,TAGS)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LONG_BACKEND_OPTION(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>BACKEND_AND_VERSIONS,TAGS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LONG_BACKEND_OPTION(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>BACKEND_AND_VERSIONS,TAGS)<sp/>\</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_BACKEND_OPTION(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>BACKEND_AND_VERSIONS,TAGS,<sp/>NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="188"><highlight class="comment">///<sp/>Define<sp/>a<sp/>rule<sp/>that<sp/>certain<sp/>sets<sp/>of<sp/>backend<sp/>requirements<sp/>need<sp/>to<sp/>be<sp/>resolved<sp/>by<sp/>the<sp/>same<sp/>backend.</highlight></codeline>
+<codeline lineno="189"><highlight class="comment">///<sp/>The<sp/>sets<sp/>are<sp/>identified<sp/>by<sp/>tags,<sp/>any<sp/>number<sp/>of<sp/>which<sp/>can<sp/>be<sp/>passed<sp/>to<sp/>FORCE_SAME_BACKEND.</highlight></codeline>
+<codeline lineno="190"><highlight class="comment">///<sp/>All<sp/>backend<sp/>requirements<sp/>with<sp/>a<sp/>given<sp/>tag<sp/>passed<sp/>into<sp/>FORCE_SAME_BACKEND<sp/>will<sp/>be<sp/>forced</highlight></codeline>
+<codeline lineno="191"><highlight class="comment">///<sp/>by<sp/>the<sp/>dependency<sp/>resolver<sp/>to<sp/>use<sp/>functions<sp/>from<sp/>the<sp/>same<sp/>backend.<sp/><sp/>Note<sp/>that<sp/>all<sp/>rules<sp/>have</highlight></codeline>
+<codeline lineno="192"><highlight class="comment">///<sp/>_immediate_<sp/>effect,<sp/>so<sp/>only<sp/>apply<sp/>to<sp/>BACKEND_REQs<sp/>of<sp/>the<sp/>current<sp/>FUNCTION<sp/>that<sp/>have</highlight></codeline>
+<codeline lineno="193"><highlight class="comment">///<sp/>already<sp/>been<sp/>declared!</highlight></codeline>
+<codeline lineno="194" refid="module__macros__incore_8hpp_1adaa80ad5963ab34fa59056f4d97ffe34" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>FORCE_SAME_BACKEND(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_FORCE_SAME_BACKEND(NOT_MODEL,__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="196"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>may<sp/>depend<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="197"><highlight class="comment">///<sp/>presence<sp/>of<sp/>another<sp/>module<sp/>function<sp/>that<sp/>can<sp/>supply<sp/>capability</highlight></codeline>
+<codeline lineno="198"><highlight class="comment">///<sp/>\link<sp/>CONDITIONAL_DEPENDENCY()<sp/>CONDITIONAL_DEPENDENCY\endlink,<sp/>with<sp/>return<sp/>type</highlight></codeline>
+<codeline lineno="199"><highlight class="comment">///<sp/>\em<sp/>TYPE.</highlight></codeline>
+<codeline lineno="200" refid="module__macros__incore_8hpp_1af75783a13f0eca324c064867de3c846b" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>START_CONDITIONAL_DEPENDENCY(TYPE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_START_CONDITIONAL_DEPENDENCY(MODULE,<sp/>CAPABILITY,<sp/>\</highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FUNCTION,<sp/>CONDITIONAL_DEPENDENCY,<sp/>TYPE,<sp/>NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="203"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>CONDITIONAL_DEPENDENCY()<sp/>CONDITIONAL_DEPENDENCY\endlink</highlight></codeline>
+<codeline lineno="204"><highlight class="comment">///<sp/>should<sp/>be<sp/>activated<sp/>if<sp/>the<sp/>backend<sp/>requirement<sp/>\em<sp/>BACKEND_REQ<sp/>of<sp/>the<sp/>current</highlight></codeline>
+<codeline lineno="205"><highlight class="comment">///<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>is<sp/>filled<sp/>by<sp/>a<sp/>backend<sp/>function<sp/>from<sp/>\em<sp/>BACKEND.</highlight></codeline>
+<codeline lineno="206"><highlight class="comment">///<sp/>The<sp/>versions<sp/>of<sp/>\em<sp/>BACKEND<sp/>that<sp/>this<sp/>applies<sp/>to<sp/>are<sp/>passed<sp/>in<sp/>\em<sp/>VERSTRING.</highlight></codeline>
+<codeline lineno="207" refid="module__macros__incore_8hpp_1aaf830909478fef89b333a806e67fe84e" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>ACTIVATE_DEP_BE(BACKEND_REQ,<sp/>BACKEND,<sp/>VERSTRING)<sp/><sp/>CORE_ACTIVATE_DEP_BE(BACKEND_REQ,<sp/>BACKEND,<sp/>VERSTRING,<sp/>NOT_MODEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="209"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>CONDITIONAL_DEPENDENCY()<sp/>CONDITIONAL_DEPENDENCY\endlink</highlight></codeline>
+<codeline lineno="210"><highlight class="comment">///<sp/>should<sp/>be<sp/>activated<sp/>if<sp/>the<sp/>model<sp/>being<sp/>scanned<sp/>matches<sp/>one<sp/>of<sp/>the<sp/>models<sp/>passed<sp/>as<sp/>an<sp/>argument.</highlight></codeline>
+<codeline lineno="211" refid="module__macros__incore_8hpp_1acc4ee7ea690ed3dfa9ddb7ac02cd5df3" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>ACTIVATE_FOR_MODELS(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ACTIVATE_DEP_MODEL(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>CONDITIONAL_DEPENDENCY,<sp/>NOT_MODEL,<sp/>#__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="213"><highlight class="comment">///<sp/>Quick,<sp/>one-line<sp/>declaration<sp/>of<sp/>model-conditional<sp/>dependencies</highlight></codeline>
+<codeline lineno="214" refid="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>MODEL_CONDITIONAL_DEPENDENCY(DEP,<sp/>TYPE,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/>CORE_START_CONDITIONAL_DEPENDENCY(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>DEP,<sp/>TYPE,<sp/>NOT_MODEL)<sp/>\</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ACTIVATE_DEP_MODEL(MODULE,<sp/>CAPABILITY,<sp/>FUNCTION,<sp/>DEP,<sp/>NOT_MODEL,<sp/>#__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="217"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>the<sp/>current<sp/>\link<sp/>FUNCTION()<sp/>FUNCTION\endlink<sp/>requires<sp/>classes<sp/>that</highlight></codeline>
+<codeline lineno="218"><highlight class="comment">///<sp/>must<sp/>be<sp/>loaded<sp/>from<sp/>\em<sp/>BACKEND,<sp/>version<sp/>\em<sp/>VERSION.</highlight></codeline>
+<codeline lineno="219" refid="module__macros__incore_8hpp_1af6b17c8bd11dd66f95191ea06a514e76" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>CLASSLOAD_NEEDED(BACKEND,<sp/>VERSION)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_CLASSLOAD_NEEDED(BACKEND,<sp/>VERSION,<sp/>NOT_MODEL)</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="220"><highlight class="comment">///<sp/>@}</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>defined<sp/>__core_module_macros_incore_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Elements/include/gambit/Elements/module_macros_incore.hpp"/>
+  </compounddef>
+</doxygen>

@@ -4,8 +4,7 @@ description: 'Driver class to handle the actual postprocessing tasks. '
 
 ---
 
-
-
+# Gambit::PostProcessor::PPDriver
 
 
 
@@ -21,7 +20,7 @@ Driver class to handle the actual postprocessing tasks.
 |                | Name           |
 | -------------- | -------------- |
 | | **[PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-ppdriver)**()<br>[PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/) member function definitions.  |
-| | **[PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-ppdriver)**(Printers::BaseBaseReader * const r, Printers::BaseBasePrinter * const p, [Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) const l, const [PPOptions](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/) & o)<br>Real constructor.  |
+| | **[PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-ppdriver)**([Printers::BaseBaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/) * const r, [Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) * const p, [Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) const l, const [PPOptions](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/) & o)<br>Real constructor.  |
 | int | **[run_main_loop](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-run-main-loop)**(const ChunkSet & done_chunks)<br>The main run loop.  |
 | bool | **[get_ModelParameters](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-get-modelparameters)**(std::unordered_map< std::string, double > & outputMap) |
 | int | **[run_main_loop](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-run-main-loop)**(const [Chunk](/documentation/code/classes/structchunk/) & mychunks)<br>The main run loop.  |
@@ -30,7 +29,7 @@ Driver class to handle the actual postprocessing tasks.
 | void | **[send_redistribution_request](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-send-redistribution-request)**() |
 | void | **[clear_redistribution_requests](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-clear-redistribution-requests)**() |
 | | **[PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-ppdriver)**() |
-| | **[PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-ppdriver)**(Printers::BaseBaseReader * const r, Printers::BaseBasePrinter * const p, [Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) const l, const [PPOptions](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/) & o) |
+| | **[PPDriver](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-ppdriver)**([Printers::BaseBaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/) * const r, [Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) * const p, [Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) const l, const [PPOptions](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/) & o) |
 | void | **[check_settings](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-check-settings)**() |
 | bool | **[get_ModelParameters](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-get-modelparameters)**(std::unordered_map< std::string, double > & outputMap) |
 | [Chunk](/documentation/code/classes/structchunk/) | **[get_new_chunk](/documentation/code/classes/classgambit_1_1postprocessor_1_1ppdriver/#function-get-new-chunk)**()<br>Compute start/end indices for a given rank process, given previous "done_chunk" data.  |
@@ -236,4 +235,4 @@ static const int REDIST_REQ = 0;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

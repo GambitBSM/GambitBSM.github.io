@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Logging_1_1BaseLogger" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gambit::Logging::BaseLogger</compoundname>
+    <derivedcompoundref refid="classGambit_1_1Logging_1_1StdLogger" prot="public" virt="non-virtual">Gambit::Logging::StdLogger</derivedcompoundref>
+    <includes refid="logging_8hpp" local="no">logging.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1BaseLogger_1aaf889cd4745c416eef6949ce09f942d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Gambit::Logging::BaseLogger::~BaseLogger</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseLogger</name>
+        <qualifiedname>Gambit::Logging::BaseLogger::~BaseLogger</qualifiedname>
+        <briefdescription>
+<para>Virtual destructor so we can delete the loggers by pointer to base. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>%%%% Logger classes %%% </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="113" column="17" bodyfile="Logs/src/logging.cpp" bodystart="257" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1BaseLogger_1ae9e09212ec5334fd2507df786e635491" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Logging::BaseLogger::write</definition>
+        <argsstring>(const SortedMessage &amp;)=0</argsstring>
+        <name>write</name>
+        <qualifiedname>Gambit::Logging::BaseLogger::write</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Logging_1_1StdLogger_1a4adbc87432352811842534b62bd201cc">write</reimplementedby>
+        <param>
+          <type>const <ref refid="structGambit_1_1Logging_1_1SortedMessage" kindref="compound">SortedMessage</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Write message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="116" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Logging_1_1BaseLogger_1aa81e0b120d1172e7e28f760acada1fd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Logging::BaseLogger::flush</definition>
+        <argsstring>()=0</argsstring>
+        <name>flush</name>
+        <qualifiedname>Gambit::Logging::BaseLogger::flush</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Logging_1_1StdLogger_1ae19a4acbccd67fd92c7961952f32e754">flush</reimplementedby>
+        <briefdescription>
+<para>Flush stream buffer;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logs/include/gambit/Logs/logging.hpp" line="119" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Logger virtual base class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::Logging::BaseLogger</label>
+        <link refid="classGambit_1_1Logging_1_1BaseLogger"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Logging::StdLogger</label>
+        <link refid="classGambit_1_1Logging_1_1StdLogger"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Logs/include/gambit/Logs/logging.hpp" line="109" column="5" bodyfile="Logs/include/gambit/Logs/logging.hpp" bodystart="110" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Logging_1_1BaseLogger_1aa81e0b120d1172e7e28f760acada1fd9" prot="public" virt="pure-virtual"><scope>Gambit::Logging::BaseLogger</scope><name>flush</name></member>
+      <member refid="classGambit_1_1Logging_1_1BaseLogger_1ae9e09212ec5334fd2507df786e635491" prot="public" virt="pure-virtual"><scope>Gambit::Logging::BaseLogger</scope><name>write</name></member>
+      <member refid="classGambit_1_1Logging_1_1BaseLogger_1aaf889cd4745c416eef6949ce09f942d1" prot="public" virt="virtual"><scope>Gambit::Logging::BaseLogger</scope><name>~BaseLogger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

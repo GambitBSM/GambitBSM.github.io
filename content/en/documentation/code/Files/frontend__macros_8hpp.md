@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Backends/frontend_macros.hpp
 
 
 
@@ -217,7 +216,7 @@ Model-conditional dependency macro for point-level backend initialisation functi
 #define BE_ALLOW_MODEL(
     MODEL
 )
- MODULE_ALLOWED_MODEL(BackendIniBit,           \
+MODULE_ALLOWED_MODEL(BackendIniBit,           \
  CAT_4(BACKENDNAME,_,SAFE_VERSION,_init), MODEL, NOT_MODEL)                 \
 ```
 
@@ -484,4 +483,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:28 +0000
+Updated on 2022-09-07 at 13:49:57 +0000

@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS_COUPLINGCONSTANTS61
 
 
 
@@ -22,7 +21,7 @@ description: "[No description available]"
 | Fdouble | **[gyweak](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-gyweak)**  |
 | Fdouble | **[g3stro](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-g3stro)**  |
 | Fdouble | **[alph3](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-alph3)**  |
-| Farray< Fdouble, 1, 12 > | **[yukawa](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-yukawa)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 12 > | **[yukawa](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-yukawa)**  |
 | Fdouble | **[g2wmz](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-g2wmz)**  |
 | Fdouble | **[gywmz](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/#variable-gywmz)**  |
 
@@ -79,4 +78,4 @@ Fdouble gywmz;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

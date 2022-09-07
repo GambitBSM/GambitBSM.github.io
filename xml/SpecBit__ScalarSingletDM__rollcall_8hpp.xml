@@ -246,67 +246,67 @@
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Spectrum<sp/>object<sp/>for<sp/>ScalarSingletDM_Z2<sp/>model<sp/><sp/>(tree-level<sp/>masses)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>ScalarSingletDM_Z2_spectrum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>Spectrum<sp/>object<sp/>from<sp/>SMInputs<sp/>structs,<sp/>SM<sp/>Higgs<sp/>parameters,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>the<sp/>ScalarSingletDM_Z2<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>get_ScalarSingletDM_Z2_spectrum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(Spectrum)</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODEL_DEPENDENCE(StandardModel_Higgs,<sp/>ScalarSingletDM_Z2)</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_GROUP(higgs,<sp/><sp/><sp/>(StandardModel_Higgs))</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_GROUP(singlet,<sp/>(ScalarSingletDM_Z2))</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODEL_COMBINATION(higgs,<sp/>singlet)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" kindref="member">MODEL_GROUP</ref>(higgs,<sp/><sp/><sp/>(StandardModel_Higgs))</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" kindref="member">MODEL_GROUP</ref>(singlet,<sp/>(ScalarSingletDM_Z2))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a7e1390bea9543ff21187afe1e55c4112" kindref="member">ALLOW_MODEL_COMBINATION</ref>(higgs,<sp/>singlet)</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if(FS_MODEL_ScalarSingletDM_Z2_IS_BUILT)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>get_ScalarSingletDM_Z2_spectrum_pole</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(Spectrum)</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODEL_DEPENDENCE(StandardModel_Higgs_running,<sp/>ScalarSingletDM_Z2_running)</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_GROUP(higgs_running,<sp/><sp/><sp/>(StandardModel_Higgs_running))</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_GROUP(singlet_running,<sp/>(ScalarSingletDM_Z2_running))</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODEL_COMBINATION(higgs_running,<sp/>singlet_running)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" kindref="member">MODEL_GROUP</ref>(higgs_running,<sp/><sp/><sp/>(StandardModel_Higgs_running))</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" kindref="member">MODEL_GROUP</ref>(singlet_running,<sp/>(ScalarSingletDM_Z2_running))</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a7e1390bea9543ff21187afe1e55c4112" kindref="member">ALLOW_MODEL_COMBINATION</ref>(higgs_running,<sp/>singlet_running)</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>spectrum<sp/>into<sp/>a<sp/>standard<sp/>map<sp/>so<sp/>that<sp/>it<sp/>can<sp/>be<sp/>printed</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>get_ScalarSingletDM_Z2_spectrum_as_map</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(map_str_dbl)<sp/></highlight><highlight class="comment">//<sp/>Just<sp/>a<sp/>string<sp/>to<sp/>double<sp/>map.<sp/>Can&apos;t<sp/>have<sp/>commas<sp/>in<sp/>macro<sp/>input</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(ScalarSingletDM_Z2_spectrum,<sp/>Spectrum)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(<ref refid="namespaceGambit_1a98f19afeabdc4fcaa456c944cc19a50c" kindref="member">map_str_dbl</ref>)<sp/></highlight><highlight class="comment">//<sp/>Just<sp/>a<sp/>string<sp/>to<sp/>double<sp/>map.<sp/>Can&apos;t<sp/>have<sp/>commas<sp/>in<sp/>macro<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(ScalarSingletDM_Z2_spectrum,<sp/>Spectrum)</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>ScalarSingletDM_Z3_spectrum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if(FS_MODEL_ScalarSingletDM_Z3_IS_BUILT)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>get_ScalarSingletDM_Z3_spectrum_pole</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(Spectrum)</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODEL_DEPENDENCE(StandardModel_Higgs_running,<sp/>ScalarSingletDM_Z3_running)</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_GROUP(higgs,<sp/><sp/><sp/>(StandardModel_Higgs_running))</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_GROUP(singlet,<sp/>(ScalarSingletDM_Z3_running))</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODEL_COMBINATION(higgs,<sp/>singlet)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" kindref="member">MODEL_GROUP</ref>(higgs,<sp/><sp/><sp/>(StandardModel_Higgs_running))</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" kindref="member">MODEL_GROUP</ref>(singlet,<sp/>(ScalarSingletDM_Z3_running))</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a7e1390bea9543ff21187afe1e55c4112" kindref="member">ALLOW_MODEL_COMBINATION</ref>(higgs,<sp/>singlet)</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>get_ScalarSingletDM_Z3_spectrum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(Spectrum)</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODEL_DEPENDENCE(StandardModel_Higgs,<sp/>ScalarSingletDM_Z3)</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_GROUP(higgs,<sp/><sp/><sp/>(StandardModel_Higgs))</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_GROUP(singlet,<sp/>(ScalarSingletDM_Z3))</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODEL_COMBINATION(higgs,<sp/>singlet)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" kindref="member">MODEL_GROUP</ref>(higgs,<sp/><sp/><sp/>(StandardModel_Higgs))</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a744649941b5289338bd6e58bec67873e" kindref="member">MODEL_GROUP</ref>(singlet,<sp/>(ScalarSingletDM_Z3))</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a7e1390bea9543ff21187afe1e55c4112" kindref="member">ALLOW_MODEL_COMBINATION</ref>(higgs,<sp/>singlet)</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>spectrum<sp/>into<sp/>a<sp/>standard<sp/>map<sp/>so<sp/>that<sp/>it<sp/>can<sp/>be<sp/>printed</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>get_ScalarSingletDM_Z3_spectrum_as_map</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(map_str_dbl)<sp/></highlight><highlight class="comment">//<sp/>Just<sp/>a<sp/>string<sp/>to<sp/>double<sp/>map.<sp/>Can&apos;t<sp/>have<sp/>commas<sp/>in<sp/>macro<sp/>input</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(ScalarSingletDM_Z3_spectrum,<sp/>Spectrum)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(<ref refid="namespaceGambit_1a98f19afeabdc4fcaa456c944cc19a50c" kindref="member">map_str_dbl</ref>)<sp/></highlight><highlight class="comment">//<sp/>Just<sp/>a<sp/>string<sp/>to<sp/>double<sp/>map.<sp/>Can&apos;t<sp/>have<sp/>commas<sp/>in<sp/>macro<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(ScalarSingletDM_Z3_spectrum,<sp/>Spectrum)</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/>CAPABILITY</highlight><highlight class="normal"></highlight></codeline>
@@ -317,10 +317,10 @@
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>ScalarSingletDM_higgs_couplings_pwid</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(HiggsCouplingsTable)</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(Reference_SM_Higgs_decay_rates,<sp/>DecayTable::Entry)</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(Higgs_decay_rates,<sp/>DecayTable::Entry)</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_CONDITIONAL_DEPENDENCY(ScalarSingletDM_Z2_spectrum,<sp/>Spectrum,<sp/>ScalarSingletDM_Z2,<sp/>ScalarSingletDM_Z2_running)</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>MODEL_CONDITIONAL_DEPENDENCY(ScalarSingletDM_Z3_spectrum,<sp/>Spectrum,<sp/>ScalarSingletDM_Z3,<sp/>ScalarSingletDM_Z3_running)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(Reference_SM_Higgs_decay_rates,<sp/>DecayTable::Entry)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(Higgs_decay_rates,<sp/>DecayTable::Entry)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" kindref="member">MODEL_CONDITIONAL_DEPENDENCY</ref>(ScalarSingletDM_Z2_spectrum,<sp/>Spectrum,<sp/>ScalarSingletDM_Z2,<sp/>ScalarSingletDM_Z2_running)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" kindref="member">MODEL_CONDITIONAL_DEPENDENCY</ref>(ScalarSingletDM_Z3_spectrum,<sp/>Spectrum,<sp/>ScalarSingletDM_Z3,<sp/>ScalarSingletDM_Z3_running)</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(ScalarSingletDM_Z2,<sp/>ScalarSingletDM_Z2_running,<sp/>ScalarSingletDM_Z3,<sp/>ScalarSingletDM_Z3_running)</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
@@ -328,11 +328,11 @@
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>scale<sp/>at<sp/>which<sp/>spectrum<sp/>becomes<sp/>non-perturbative</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>CAPABILITY<sp/>scale_of_nonperturbativity</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/>START_CAPABILITY</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="module__macros__incore_8hpp_1a8171a83100431546898e4c5b8216b414" kindref="member">START_CAPABILITY</ref></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#if(FS_MODEL_ScalarSingletDM_Z3_IS_BUILT)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>find_non_perturb_scale_ScalarSingletDM_Z3</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(ScalarSingletDM_Z3_spectrum,<sp/>Spectrum)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(ScalarSingletDM_Z3_spectrum,<sp/>Spectrum)</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(ScalarSingletDM_Z3_running)</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
@@ -340,7 +340,7 @@
 <codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#if(FS_MODEL_ScalarSingletDM_Z2_IS_BUILT)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>find_non_perturb_scale_ScalarSingletDM_Z2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>DEPENDENCY(ScalarSingletDM_Z2_spectrum,<sp/>Spectrum)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(ScalarSingletDM_Z2_spectrum,<sp/>Spectrum)</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(ScalarSingletDM_Z2,ScalarSingletDM_Z2_running)</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>

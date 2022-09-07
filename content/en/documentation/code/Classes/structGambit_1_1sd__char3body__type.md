@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::sd_char3body_type
 
 
 
@@ -18,15 +17,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brntaunut](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brntaunut)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brnelnue](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnelnue)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brnmunumu](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnmunumu)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brnupdb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnupdb)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brnchsb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnchsb)**  |
-| Farray< Fdouble, 1, 2, 1, 4 > | **[brntopbb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brntopbb)**  |
-| Farray< Fdouble, 1, 2 > | **[brglupdb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brglupdb)**  |
-| Farray< Fdouble, 1, 2 > | **[brglchsb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brglchsb)**  |
-| Farray< Fdouble, 1, 2 > | **[brgltopbb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brgltopbb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brntaunut](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brntaunut)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnelnue](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnelnue)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnmunumu](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnmunumu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnupdb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnupdb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnchsb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnchsb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brntopbb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brntopbb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brglupdb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brglupdb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brglchsb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brglchsb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brgltopbb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brgltopbb)**  |
 | Fdouble | **[brchee](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchee)**  |
 | Fdouble | **[brchmumu](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchmumu)**  |
 | Fdouble | **[brchtautau](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchtautau)**  |
@@ -191,4 +190,4 @@ Fdouble brchbotbot;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

@@ -8,6 +8,8 @@
     <innerclass refid="classGambit_1_1SpecBit_1_1QedQcdWrapper" prot="public">Gambit::SpecBit::QedQcdWrapper</innerclass>
     <innerclass refid="classGambit_1_1SpecBit_1_1ScalarSingletDM__Z2Spec" prot="public">Gambit::SpecBit::ScalarSingletDM_Z2Spec</innerclass>
     <innerclass refid="classGambit_1_1SpecBit_1_1ScalarSingletDM__Z3Spec" prot="public">Gambit::SpecBit::ScalarSingletDM_Z3Spec</innerclass>
+    <innerclass refid="structGambit_1_1SpecBit_1_1SMHiggsModel" prot="public">Gambit::SpecBit::SMHiggsModel</innerclass>
+    <innerclass refid="classGambit_1_1SpecBit_1_1SMHiggsSimpleSpec" prot="public">Gambit::SpecBit::SMHiggsSimpleSpec</innerclass>
     <innerclass refid="classGambit_1_1SpecBit_1_1SpectrumEntriesForVevacious" prot="public">Gambit::SpecBit::SpectrumEntriesForVevacious</innerclass>
     <innerclass refid="structGambit_1_1SpecBit_1_1SpectrumEntry" prot="public">Gambit::SpecBit::SpectrumEntry</innerclass>
     <innerclass refid="classGambit_1_1SpecBit_1_1VevaciousResultContainer" prot="public">Gambit::SpecBit::VevaciousResultContainer</innerclass>
@@ -23,14 +25,14 @@
           <declname>oneset</declname>
         </param>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>sminputs</declname>
         </param>
         <briefdescription>
 <para>Non-Gambit helper functions. </para>
         </briefdescription>
         <detaileddescription>
-<para>Initialise QedQcd object from SMInputs data </para>
+<para>Initialise QedQcd object from <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> data </para>
         </detaileddescription>
         <inbodydescription>
 <para>set running quark masses</para>
@@ -51,7 +53,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>has_neutralino_LSP</name>
         <qualifiedname>Gambit::SpecBit::has_neutralino_LSP</qualifiedname>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -70,7 +72,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>has_neutralino_LSP</name>
         <qualifiedname>Gambit::SpecBit::has_neutralino_LSP</qualifiedname>
         <param>
-          <type>const Spectrum *</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> *</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -91,7 +93,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_SMINPUTS</name>
         <qualifiedname>Gambit::SpecBit::get_SMINPUTS</qualifiedname>
         <param>
-          <type>SMInputs &amp;</type>
+          <type><ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -112,7 +114,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
             <type>class MI</type>
           </param>
         </templateparamlist>
-        <type>Spectrum</type>
+        <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref></type>
         <definition>Spectrum Gambit::SpecBit::run_FS_spectrum_generator</definition>
         <argsstring>(const typename MI::InputParameters &amp;input, const SMInputs &amp;sminputs, const Options &amp;runOptions, const std::map&lt; str, safe_ptr&lt; const double &gt; &gt; &amp;input_Param)</argsstring>
         <name>run_FS_spectrum_generator</name>
@@ -122,15 +124,15 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>input</declname>
         </param>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>sminputs</declname>
         </param>
         <param>
-          <type>const Options &amp;</type>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
           <declname>runOptions</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>input_Param</declname>
         </param>
         <briefdescription>
@@ -157,7 +159,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>rootname</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>Param</declname>
         </param>
         <briefdescription>
@@ -180,7 +182,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>rootname</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>Param</declname>
         </param>
         <briefdescription>
@@ -208,7 +210,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>input</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>Param</declname>
         </param>
         <briefdescription>
@@ -236,7 +238,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>input</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>Param</declname>
         </param>
         <briefdescription>
@@ -256,7 +258,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>convert_MSSM_to_SM</name>
         <qualifiedname>Gambit::SpecBit::convert_MSSM_to_SM</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -275,7 +277,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>convert_NMSSM_to_SM</name>
         <qualifiedname>Gambit::SpecBit::convert_NMSSM_to_SM</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -293,7 +295,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>convert_E6MSSM_to_SM</name>
         <qualifiedname>Gambit::SpecBit::convert_E6MSSM_to_SM</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -311,7 +313,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_MSSM_spectrum_SPheno</name>
         <qualifiedname>Gambit::SpecBit::get_MSSM_spectrum_SPheno</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>spectrum</declname>
         </param>
         <briefdescription>
@@ -329,7 +331,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_GUTMSSMB_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_GUTMSSMB_spectrum</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -357,11 +359,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <defname>specmap</defname>
         </param>
         <param>
-          <type>const SubSpectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> &amp;</type>
           <defname>subspec</defname>
         </param>
         <briefdescription>
-<para>Convert MSSM type Spectrum object into a map, so it can be printed. </para>
+<para>Convert MSSM type <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object into a map, so it can be printed. </para>
         </briefdescription>
         <detaileddescription>
 <para>Extract all parameters from a subspectrum and put them into a map. </para>
@@ -385,7 +387,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>specmap</declname>
         </param>
         <param>
-          <type>const SubSpectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> &amp;</type>
           <declname>mssm</declname>
         </param>
         <briefdescription>
@@ -537,7 +539,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>make_test_spectrum</name>
         <qualifiedname>Gambit::SpecBit::make_test_spectrum</qualifiedname>
         <param>
-          <type>SubSpectrum *&amp;</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *&amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -617,7 +619,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Test out consistency of Spectrum object (and pre-extracted SM SubSpectrum*) </para>
+<para>Test out consistency of <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object (and pre-extracted SM SubSpectrum*) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -636,7 +638,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Display SMInputs values. </para>
+<para>Display <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> values. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1816,7 +1818,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmParMass2_0</name>
         <qualifiedname>Gambit::SpecBit::TestMssmParMass2_0</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -1881,7 +1883,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmParMass2_2</name>
         <qualifiedname>Gambit::SpecBit::TestMssmParMass2_2</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -1945,7 +1947,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmParMass1_0</name>
         <qualifiedname>Gambit::SpecBit::TestMssmParMass1_0</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2009,7 +2011,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmParMass1_2</name>
         <qualifiedname>Gambit::SpecBit::TestMssmParMass1_2</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2073,7 +2075,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmParMass0_0</name>
         <qualifiedname>Gambit::SpecBit::TestMssmParMass0_0</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2137,7 +2139,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmParMass0_2</name>
         <qualifiedname>Gambit::SpecBit::TestMssmParMass0_2</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2201,7 +2203,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmPoleGets0</name>
         <qualifiedname>Gambit::SpecBit::TestMssmPoleGets0</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2265,7 +2267,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmPoleGets1</name>
         <qualifiedname>Gambit::SpecBit::TestMssmPoleGets1</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2329,7 +2331,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmPoleMixingGets2</name>
         <qualifiedname>Gambit::SpecBit::TestMssmPoleMixingGets2</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2393,7 +2395,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmPoleGets</name>
         <qualifiedname>Gambit::SpecBit::TestMssmPoleGets</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2447,7 +2449,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>TestMssmParGets</name>
         <qualifiedname>Gambit::SpecBit::TestMssmParGets</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2551,7 +2553,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>test_exact</name>
         <qualifiedname>Gambit::SpecBit::test_exact</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2609,7 +2611,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>running_test</name>
         <qualifiedname>Gambit::SpecBit::running_test</qualifiedname>
         <param>
-          <type>SubSpectrum *</type>
+          <type><ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -2665,11 +2667,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>Spectrum_test</name>
         <qualifiedname>Gambit::SpecBit::Spectrum_test</qualifiedname>
         <param>
-          <type>Spectrum</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref></type>
           <declname>matched_spectra</declname>
         </param>
         <param>
-          <type>const SubSpectrum *</type>
+          <type>const <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *</type>
           <declname>smin</declname>
         </param>
         <param>
@@ -2683,7 +2685,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
 <para>Generate data for a plot of quark mass</para>
-<para>Testing copyability of Spectrum;</para>
+<para>Testing copyability of <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref>;</para>
         </inbodydescription>
         <location file="SpecBit/include/gambit/SpecBit/SpecBit_externaltests.hpp" line="1082" column="12" bodyfile="SpecBit/include/gambit/SpecBit/SpecBit_externaltests.hpp" bodystart="1082" bodyend="1329"/>
       </memberdef>
@@ -2946,7 +2948,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_Pole_mElectron</name>
         <qualifiedname>Gambit::SpecBit::get_Pole_mElectron</qualifiedname>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>inputs</declname>
         </param>
         <briefdescription>
@@ -2965,7 +2967,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_Pole_mMuon</name>
         <qualifiedname>Gambit::SpecBit::get_Pole_mMuon</qualifiedname>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>inputs</declname>
         </param>
         <briefdescription>
@@ -2983,7 +2985,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_Pole_mNu1</name>
         <qualifiedname>Gambit::SpecBit::get_Pole_mNu1</qualifiedname>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>inputs</declname>
         </param>
         <briefdescription>
@@ -3001,7 +3003,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_Pole_mNu2</name>
         <qualifiedname>Gambit::SpecBit::get_Pole_mNu2</qualifiedname>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>inputs</declname>
         </param>
         <briefdescription>
@@ -3019,7 +3021,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_Pole_mNu3</name>
         <qualifiedname>Gambit::SpecBit::get_Pole_mNu3</qualifiedname>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>inputs</declname>
         </param>
         <briefdescription>
@@ -3037,7 +3039,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_Pole_mPhoton</name>
         <qualifiedname>Gambit::SpecBit::get_Pole_mPhoton</qualifiedname>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -3054,7 +3056,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_Pole_mGluon</name>
         <qualifiedname>Gambit::SpecBit::get_Pole_mGluon</qualifiedname>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -3089,7 +3091,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>set_Pole_mElectron</name>
         <qualifiedname>Gambit::SpecBit::set_Pole_mElectron</qualifiedname>
         <param>
-          <type>SMInputs &amp;</type>
+          <type><ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>inputs</declname>
         </param>
         <param>
@@ -3112,11 +3114,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_DiracSingletDM_Z2_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_DiracSingletDM_Z2_spectrum</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Get a (simple) Spectrum object wrapper for the DiracSingletDM_Z2 model. </para>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for the DiracSingletDM_Z2 model. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3135,7 +3137,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <defname>specmap</defname>
         </param>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <defname>diracdmspec</defname>
         </param>
         <briefdescription>
@@ -3175,11 +3177,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_DMEFT_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_DMEFT_spectrum</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Get a simple wrapper for Spectrum object. </para>
+<para>Get a simple wrapper for <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3198,7 +3200,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <defname>specmap</defname>
         </param>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <defname>spec</defname>
         </param>
         <briefdescription>
@@ -3236,11 +3238,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_MajoranaSingletDM_Z2_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_MajoranaSingletDM_Z2_spectrum</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Get a (simple) Spectrum object wrapper for the MajoranaSingletDM_Z2 model. </para>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for the MajoranaSingletDM_Z2 model. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3259,7 +3261,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <defname>specmap</defname>
         </param>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <defname>majoranadmspec</defname>
         </param>
         <briefdescription>
@@ -3301,7 +3303,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
             <type>class SI</type>
           </param>
         </templateparamlist>
-        <type>Spectrum</type>
+        <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref></type>
         <definition>Spectrum Gambit::SpecBit::run_FS_spectrum_generator</definition>
         <argsstring>(const typename MI::InputParameters &amp;input, const SMInputs &amp;sminputs, const Options &amp;runOptions, const std::map&lt; str, safe_ptr&lt; const double &gt; &gt; &amp;input_Param)</argsstring>
         <name>run_FS_spectrum_generator</name>
@@ -3311,15 +3313,15 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>input</declname>
         </param>
         <param>
-          <type>const SMInputs &amp;</type>
+          <type>const <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> &amp;</type>
           <declname>sminputs</declname>
         </param>
         <param>
-          <type>const Options &amp;</type>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
           <declname>runOptions</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>input_Param</declname>
         </param>
         <briefdescription>
@@ -3346,11 +3348,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>input</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>Param</declname>
         </param>
         <param>
-          <type>SMInputs</type>
+          <type><ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref></type>
           <declname>sminputs</declname>
         </param>
         <briefdescription>
@@ -3368,7 +3370,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>check_perturb_MDM</name>
         <qualifiedname>Gambit::SpecBit::check_perturb_MDM</qualifiedname>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -3416,7 +3418,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <defname>specmap</defname>
         </param>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <defname>mdmspec</defname>
         </param>
         <briefdescription>
@@ -3457,13 +3459,13 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_SM_SubSpectrum_from_MSSM_Spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_SM_SubSpectrum_from_MSSM_Spectrum</qualifiedname>
         <param>
-          <type>const SubSpectrum *&amp;</type>
+          <type>const <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *&amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Retrieve SubSpectrum* to SM LE model from Spectrum object DEPENDENCY(MSSM_spectrum, Spectrum) </para>
+<para>Retrieve SubSpectrum* to SM LE model from <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object <ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY(MSSM_spectrum, Spectrum)</ref> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -3476,11 +3478,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_MSSM_spectrum_as_SLHAea_SLHA1</name>
         <qualifiedname>Gambit::SpecBit::get_MSSM_spectrum_as_SLHAea_SLHA1</qualifiedname>
         <param>
-          <type>SLHAstruct &amp;</type>
+          <type><ref refid="namespaceGambit_1a4df3d966ed9733910719e3497cb886c6" kindref="member">SLHAstruct</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA1 format. </para>
+<para>Extract an SLHAea version of the spectrum contained in a <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object, in SLHA1 format. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3495,11 +3497,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_MSSM_spectrum_as_SLHAea_SLHA2</name>
         <qualifiedname>Gambit::SpecBit::get_MSSM_spectrum_as_SLHAea_SLHA2</qualifiedname>
         <param>
-          <type>SLHAstruct &amp;</type>
+          <type><ref refid="namespaceGambit_1a4df3d966ed9733910719e3497cb886c6" kindref="member">SLHAstruct</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Extract an SLHAea version of the spectrum contained in a Spectrum object, in SLHA2 format. </para>
+<para>Extract an SLHAea version of the spectrum contained in a <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object, in SLHA2 format. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3514,13 +3516,13 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_MSSM_spectrum_from_SLHAfile</name>
         <qualifiedname>Gambit::SpecBit::get_MSSM_spectrum_from_SLHAfile</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Get an MSSMSpectrum object from an SLHA file Wraps it up in MSSMSimpleSpec; i.e. no RGE running possible. This is mainly for testing against benchmark points, but may be a useful last resort for interacting with &quot;difficult&quot; spectrum generators. </para>
+<para>Get an MSSMSpectrum object from an SLHA file Wraps it up in <ref refid="classGambit_1_1MSSMSimpleSpec" kindref="compound">MSSMSimpleSpec</ref>; i.e. no RGE running possible. This is mainly for testing against benchmark points, but may be a useful last resort for interacting with &quot;difficult&quot; spectrum generators. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -3533,13 +3535,13 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_MSSM_spectrum_from_SLHAstruct</name>
         <qualifiedname>Gambit::SpecBit::get_MSSM_spectrum_from_SLHAstruct</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Get an MSSMSpectrum object from an SLHAstruct Wraps it up in MSSMSimpleSpec; i.e. no RGE running possible. This can be used as a poor-man&apos;s interface to backend spectrum generators </para>
+<para>Get an MSSMSpectrum object from an SLHAstruct Wraps it up in <ref refid="classGambit_1_1MSSMSimpleSpec" kindref="compound">MSSMSimpleSpec</ref>; i.e. no RGE running possible. This can be used as a poor-man&apos;s interface to backend spectrum generators </para>
         </detaileddescription>
         <inbodydescription>
 <para><xrefsect id="todo_1_todo000099"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME this needs to be fixed <ndash/> is it needed any more? Where is this GAMBIT block supposed to be written? </para>
@@ -3554,7 +3556,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_MSSM_spectrum_from_postprocessor</name>
         <qualifiedname>Gambit::SpecBit::get_MSSM_spectrum_from_postprocessor</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -3624,13 +3626,13 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1414" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1414" bodyend="1481"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1abafff724b0e03f6e186781baacd69584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; std::pair&lt; str, str &gt; &gt;</type>
+        <type>std::vector&lt; std::pair&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
         <definition>std::vector&lt; std::pair&lt; str, str &gt; &gt; Gambit::SpecBit::get_invisibles</definition>
         <argsstring>(const SubSpectrum &amp;spec)</argsstring>
         <name>get_invisibles</name>
         <qualifiedname>Gambit::SpecBit::get_invisibles</qualifiedname>
         <param>
-          <type>const SubSpectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> &amp;</type>
           <declname>spec</declname>
         </param>
         <briefdescription>
@@ -3649,7 +3651,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>MSSM_higgs_couplings_pwid</name>
         <qualifiedname>Gambit::SpecBit::MSSM_higgs_couplings_pwid</qualifiedname>
         <param>
-          <type>HiggsCouplingsTable &amp;</type>
+          <type><ref refid="classGambit_1_1HiggsCouplingsTable" kindref="compound">HiggsCouplingsTable</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -3668,7 +3670,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>MSSM_higgs_couplings_FeynHiggs</name>
         <qualifiedname>Gambit::SpecBit::MSSM_higgs_couplings_FeynHiggs</qualifiedname>
         <param>
-          <type>HiggsCouplingsTable &amp;</type>
+          <type><ref refid="classGambit_1_1HiggsCouplingsTable" kindref="compound">HiggsCouplingsTable</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -3687,7 +3689,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>FeynHiggs_HiggsMass</name>
         <qualifiedname>Gambit::SpecBit::FeynHiggs_HiggsMass</qualifiedname>
         <param>
-          <type>triplet&lt; double &gt; &amp;</type>
+          <type><ref refid="structGambit_1_1triplet" kindref="compound">triplet</ref>&lt; double &gt; &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -3705,7 +3707,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>FeynHiggs_HeavyHiggsMasses</name>
         <qualifiedname>Gambit::SpecBit::FeynHiggs_HeavyHiggsMasses</qualifiedname>
         <param>
-          <type>map_int_triplet_dbl &amp;</type>
+          <type><ref refid="namespaceGambit_1abd933db4e41415a5f75eac3fb0d03178" kindref="member">map_int_triplet_dbl</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -3723,7 +3725,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>SUSYHD_HiggsMass</name>
         <qualifiedname>Gambit::SpecBit::SUSYHD_HiggsMass</qualifiedname>
         <param>
-          <type>triplet&lt; double &gt; &amp;</type>
+          <type><ref refid="structGambit_1_1triplet" kindref="compound">triplet</ref>&lt; double &gt; &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -3741,11 +3743,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_ScalarSingletDM_Z2_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_ScalarSingletDM_Z2_spectrum</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z2 model. </para>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for the ScalarSingletDM_Z2 model. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3760,11 +3762,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_ScalarSingletDM_Z3_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_ScalarSingletDM_Z3_spectrum</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z3 model. </para>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for the ScalarSingletDM_Z3 model. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3788,11 +3790,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>input</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>Param</declname>
         </param>
         <param>
-          <type>SMInputs</type>
+          <type><ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref></type>
           <declname>sminputs</declname>
         </param>
         <briefdescription>
@@ -3819,7 +3821,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>input</declname>
         </param>
         <param>
-          <type>const std::map&lt; str, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>Param</declname>
         </param>
         <briefdescription>
@@ -3837,11 +3839,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>check_perturb</name>
         <qualifiedname>Gambit::SpecBit::check_perturb</qualifiedname>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>spec</declname>
         </param>
         <param>
-          <type>const std::vector&lt; SpectrumParameter &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt; &amp;</type>
           <declname>required_parameters</declname>
         </param>
         <param>
@@ -3867,7 +3869,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>ScalarSingletDM_higgs_couplings_pwid</name>
         <qualifiedname>Gambit::SpecBit::ScalarSingletDM_higgs_couplings_pwid</qualifiedname>
         <param>
-          <type>HiggsCouplingsTable &amp;</type>
+          <type><ref refid="classGambit_1_1HiggsCouplingsTable" kindref="compound">HiggsCouplingsTable</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -3890,11 +3892,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>specmap</declname>
         </param>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>singletdmspec</declname>
         </param>
         <param>
-          <type>const std::vector&lt; SpectrumParameter &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt; &amp;</type>
           <declname>required_parameters</declname>
         </param>
         <briefdescription>
@@ -3950,11 +3952,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_QedQcd_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_QedQcd_spectrum</qualifiedname>
         <param>
-          <type>const SubSpectrum *&amp;</type>
+          <type>const <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> *&amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Construct a SubSpectrum object from SMInputs using <ref refid="classGambit_1_1SpecBit_1_1QedQcdWrapper" kindref="compound">QedQcdWrapper</ref>. </para>
+<para>Construct a <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> object from <ref refid="structGambit_1_1SMInputs" kindref="compound">SMInputs</ref> using <ref refid="classGambit_1_1SpecBit_1_1QedQcdWrapper" kindref="compound">QedQcdWrapper</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3969,11 +3971,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_SM_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_SM_spectrum</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Get a Spectrum object wrapper for Standard-Model-only information. </para>
+<para>Get a <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for Standard-Model-only information. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -3988,7 +3990,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>SM_higgs_couplings</name>
         <qualifiedname>Gambit::SpecBit::SM_higgs_couplings</qualifiedname>
         <param>
-          <type>HiggsCouplingsTable &amp;</type>
+          <type><ref refid="classGambit_1_1HiggsCouplingsTable" kindref="compound">HiggsCouplingsTable</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -4067,7 +4069,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Verify consistency of the contents of a Spectrum object of capability MSSMspectrum. (derived from old &apos;exampleRead&apos; function) </para>
+<para>Verify consistency of the contents of a <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object of capability MSSMspectrum. (derived from old &apos;exampleRead&apos; function) </para>
         </detaileddescription>
         <inbodydescription>
 <para>NEW! Tests of override setters These cannot be run on a const spectrum object, so we need to clone it first</para>
@@ -4104,11 +4106,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_VectorSingletDM_Z2_spectrum</name>
         <qualifiedname>Gambit::SpecBit::get_VectorSingletDM_Z2_spectrum</qualifiedname>
         <param>
-          <type>Spectrum &amp;</type>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>Get a (simple) Spectrum object wrapper for the VectorSingletDM_Z2 model. </para>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for the VectorSingletDM_Z2 model. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -4127,7 +4129,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <defname>specmap</defname>
         </param>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <defname>vectordmspec</defname>
         </param>
         <briefdescription>
@@ -4185,7 +4187,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>check_perturb_to_min_lambda</name>
         <qualifiedname>Gambit::SpecBit::check_perturb_to_min_lambda</qualifiedname>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>spec</declname>
         </param>
         <param>
@@ -4197,7 +4199,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>pts</declname>
         </param>
         <param>
-          <type>const std::vector&lt; SpectrumParameter &gt;</type>
+          <type>const std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt;</type>
           <declname>required_parameters</declname>
         </param>
         <briefdescription>
@@ -4237,11 +4239,11 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>find_min_lambda_Helper</name>
         <qualifiedname>Gambit::SpecBit::find_min_lambda_Helper</qualifiedname>
         <param>
-          <type>dbl_dbl_bool &amp;</type>
+          <type><ref refid="structGambit_1_1dbl__dbl__bool" kindref="compound">dbl_dbl_bool</ref> &amp;</type>
           <declname>vs_tuple</declname>
         </param>
         <param>
-          <type>const Spectrum &amp;</type>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
           <declname>fullspectrum</declname>
         </param>
         <param>
@@ -4253,7 +4255,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <declname>check_perturb_pts</declname>
         </param>
         <param>
-          <type>const std::vector&lt; SpectrumParameter &gt;</type>
+          <type>const std::vector&lt; <ref refid="classGambit_1_1SpectrumParameter" kindref="compound">SpectrumParameter</ref> &gt;</type>
           <declname>required_parameters</declname>
         </param>
         <briefdescription>
@@ -4271,7 +4273,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>find_min_lambda_ScalarSingletDM_Z2</name>
         <qualifiedname>Gambit::SpecBit::find_min_lambda_ScalarSingletDM_Z2</qualifiedname>
         <param>
-          <type>dbl_dbl_bool &amp;</type>
+          <type><ref refid="structGambit_1_1dbl__dbl__bool" kindref="compound">dbl_dbl_bool</ref> &amp;</type>
           <declname>vs_tuple</declname>
         </param>
         <briefdescription>
@@ -4289,7 +4291,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>find_min_lambda_ScalarSingletDM_Z3</name>
         <qualifiedname>Gambit::SpecBit::find_min_lambda_ScalarSingletDM_Z3</qualifiedname>
         <param>
-          <type>dbl_dbl_bool &amp;</type>
+          <type><ref refid="structGambit_1_1dbl__dbl__bool" kindref="compound">dbl_dbl_bool</ref> &amp;</type>
           <declname>vs_tuple</declname>
         </param>
         <briefdescription>
@@ -4307,7 +4309,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>find_min_lambda_MDM</name>
         <qualifiedname>Gambit::SpecBit::find_min_lambda_MDM</qualifiedname>
         <param>
-          <type>dbl_dbl_bool &amp;</type>
+          <type><ref refid="structGambit_1_1dbl__dbl__bool" kindref="compound">dbl_dbl_bool</ref> &amp;</type>
           <declname>vs_tuple</declname>
         </param>
         <briefdescription>
@@ -4416,7 +4418,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>get_VS_results</name>
         <qualifiedname>Gambit::SpecBit::get_VS_results</qualifiedname>
         <param>
-          <type>map_str_dbl &amp;</type>
+          <type><ref refid="namespaceGambit_1a98f19afeabdc4fcaa456c944cc19a50c" kindref="member">map_str_dbl</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -4435,13 +4437,13 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>make_vpp_inputs</name>
         <qualifiedname>Gambit::SpecBit::make_vpp_inputs</qualifiedname>
         <param>
-          <type>map_str_str &amp;</type>
+          <type><ref refid="namespaceGambit_1a51de803e5143010226b0a7c7e7e05b88" kindref="member">map_str_str</ref> &amp;</type>
           <declname>opts</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Helper function that takes any YAML options and makes the vevacious input, in the form of .xml files. </para>
+<para>Helper function that takes any <ref refid="namespaceYAML" kindref="compound">YAML</ref> options and makes the vevacious input, in the form of .xml files. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -4494,7 +4496,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <location file="SpecBit/src/SpecBit_VS.cpp" line="958" column="10" bodyfile="SpecBit/src/SpecBit_VS.cpp" bodystart="958" bodyend="1002"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__VS_8cpp_1aa48f96bbbd0104b2515718351433bdd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::SpecBit::helper_set_tunnelingStrategy</definition>
         <argsstring>(std::set&lt; std::string &gt; tunnelling_strategy)</argsstring>
         <name>helper_set_tunnelingStrategy</name>
@@ -4530,7 +4532,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Parses the YAML file for any settings, then passes to make_vpp_inputs to create .xml files for vevacious to run with. </para>
+<para>Parses the <ref refid="namespaceYAML" kindref="compound">YAML</ref> file for any settings, then passes to make_vpp_inputs to create .xml files for vevacious to run with. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -4616,7 +4618,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>compare_panic_vacua</name>
         <qualifiedname>Gambit::SpecBit::compare_panic_vacua</qualifiedname>
         <param>
-          <type>map_str_str &amp;</type>
+          <type><ref refid="namespaceGambit_1a51de803e5143010226b0a7c7e7e05b88" kindref="member">map_str_str</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -4654,7 +4656,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>vevacious_file_location_MSSM</name>
         <qualifiedname>Gambit::SpecBit::vevacious_file_location_MSSM</qualifiedname>
         <param>
-          <type>map_str_str &amp;</type>
+          <type><ref refid="namespaceGambit_1a51de803e5143010226b0a7c7e7e05b88" kindref="member">map_str_str</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>

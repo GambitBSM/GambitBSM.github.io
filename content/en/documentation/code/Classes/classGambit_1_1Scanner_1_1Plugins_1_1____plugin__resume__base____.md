@@ -4,8 +4,7 @@ description: 'Virtual container base class to store plugin values for resume fun
 
 ---
 
-
-
+# Gambit::Scanner::Plugins::__plugin_resume_base__
 
 
 
@@ -48,4 +47,4 @@ inline virtual ~__plugin_resume_base__()
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

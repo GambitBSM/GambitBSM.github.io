@@ -4,8 +4,7 @@ description: 'Structure for passing likelihood and printer data through GreAT to
 
 ---
 
-
-
+# Gambit::GreAT::greatScanData
 
 
 
@@ -49,4 +48,4 @@ double min_logLike;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

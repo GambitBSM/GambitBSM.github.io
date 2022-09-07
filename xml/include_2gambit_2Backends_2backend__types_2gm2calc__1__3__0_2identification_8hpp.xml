@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="include_2gambit_2Backends_2backend__types_2gm2calc__1__3__0_2identification_8hpp" kind="file" language="C++">
     <compoundname>include/gambit/Backends/backend_types/gm2calc_1_3_0/identification.hpp</compoundname>
-    <includes local="yes">gambit/Utils/cats.hpp</includes>
+    <includes refid="Utils_2include_2gambit_2Utils_2cats_8hpp" local="yes">gambit/Utils/cats.hpp</includes>
     <includedby refid="gm2calc__1__3__0_2abstract__EInvalidInput_8hpp" local="yes">abstract_EInvalidInput.hpp</includedby>
     <includedby refid="gm2calc__1__3__0_2abstract__EPhysicalProblem_8hpp" local="yes">abstract_EPhysicalProblem.hpp</includedby>
     <includedby refid="gm2calc__1__3__0_2abstract__EReadError_8hpp" local="yes">abstract_EReadError.hpp</includedby>
@@ -49,6 +49,7 @@
       </node>
       <node id="2">
         <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -596,7 +597,7 @@
     <programlisting>
 <codeline lineno="1"><highlight class="comment">//<sp/>Identify<sp/>backend<sp/>and<sp/>set<sp/>macro<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/cats.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utils_2include_2gambit_2Utils_2cats_8hpp" kindref="compound">gambit/Utils/cats.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKENDNAME<sp/>gm2calc</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKENDLANG<sp/>CXX</highlight><highlight class="normal"></highlight></codeline>

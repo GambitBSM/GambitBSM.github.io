@@ -4,8 +4,7 @@ description: 'Generic ptr that takes ownership of a [Function_Base](/documentati
 
 ---
 
-
-
+# Gambit::Scanner::scan_ptr
 
 
 
@@ -23,4 +22,4 @@ class Gambit::Scanner::scan_ptr;
 Generic ptr that takes ownership of a [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/). This is how a plugin will call a function. 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:51 +0000

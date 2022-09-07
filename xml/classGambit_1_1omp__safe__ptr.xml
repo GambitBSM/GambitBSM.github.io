@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1omp__safe__ptr" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::omp_safe_ptr</compoundname>
+    <basecompoundref refid="classGambit_1_1safe__ptr" prot="public" virt="non-virtual">Gambit::safe_ptr&lt; TYPE &gt;</basecompoundref>
+    <includes refid="util__types_8hpp" local="no">util_types.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TYPE</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1omp__safe__ptr_1a0db37cbb7a65da46824c15c0a89a91ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::omp_safe_ptr&lt; TYPE &gt;::omp_safe_ptr</definition>
+        <argsstring>(TYPE *in_ptr=NULL)</argsstring>
+        <name>omp_safe_ptr</name>
+        <qualifiedname>Gambit::omp_safe_ptr::omp_safe_ptr</qualifiedname>
+        <param>
+          <type>TYPE *</type>
+          <declname>in_ptr</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="247" column="7" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="247" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1omp__safe__ptr_1a1d2f081408780b880d19d53bfee5ca5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const TYPE &amp;</type>
+        <definition>virtual const TYPE &amp; Gambit::omp_safe_ptr&lt; TYPE &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>Gambit::omp_safe_ptr::operator*</qualifiedname>
+        <reimplements refid="classGambit_1_1safe__ptr_1abde2dba42cd05bdc65478da8b4da6abb">operator*</reimplements>
+        <briefdescription>
+<para>Dereference pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="250" column="26" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="250" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A safe pointer designed to point at an array, and return the entry in that array corresponding to the current OpenMP thread. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gambit::omp_safe_ptr&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1omp__safe__ptr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::safe_ptr&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1safe__ptr"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::omp_safe_ptr&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1omp__safe__ptr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gambit::safe_ptr&lt; TYPE &gt;</label>
+        <link refid="classGambit_1_1safe__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="Utils/include/gambit/Utils/util_types.hpp" line="241" column="3" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="242" bodyend="256"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1safe__ptr_1afc36ff493f4fd45b60ca161307bb4be6" prot="protected" virt="non-virtual"><scope>Gambit::omp_safe_ptr</scope><name>dieGracefully</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a790cd609016f9e132e469e6d6051e3c5" prot="public" virt="virtual"><scope>Gambit::omp_safe_ptr</scope><name>isNull</name></member>
+      <member refid="classGambit_1_1omp__safe__ptr_1a0db37cbb7a65da46824c15c0a89a91ad" prot="public" virt="non-virtual"><scope>Gambit::omp_safe_ptr</scope><name>omp_safe_ptr</name></member>
+      <member refid="classGambit_1_1omp__safe__ptr_1a1d2f081408780b880d19d53bfee5ca5d" prot="public" virt="virtual"><scope>Gambit::omp_safe_ptr</scope><name>operator*</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a2349ff1d6609f8ab2d087a5786017838" prot="public" virt="virtual"><scope>Gambit::omp_safe_ptr</scope><name>operator-&gt;</name></member>
+      <member refid="classGambit_1_1safe__ptr_1aff0eee7c1b6166b9e056bd752b8e9e58" prot="public" virt="virtual"><scope>Gambit::omp_safe_ptr</scope><name>operator[]</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a5206ba6f959e57ab88b157f295ea2184" prot="protected" virt="non-virtual"><scope>Gambit::omp_safe_ptr</scope><name>ptr</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a8eadc385961b2ee48eec335aa3815ed9" prot="public" virt="non-virtual"><scope>Gambit::omp_safe_ptr</scope><name>safe_ptr</name></member>
+      <member refid="classGambit_1_1safe__ptr_1a40fa3c27d2b16b5fe355979dd750c48a" prot="public" virt="virtual"><scope>Gambit::omp_safe_ptr</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

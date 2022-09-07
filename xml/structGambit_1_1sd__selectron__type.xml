@@ -4,7 +4,7 @@
     <compoundname>Gambit::sd_selectron_type</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structGambit_1_1sd__selectron__type_1ab01bfb0ec007dbbb62f92df532ae8abf" prot="public" static="no" mutable="no">
-        <type>Farray&lt; Fdouble, 1, 6, 1, 6 &gt;</type>
+        <type><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref>&lt; Fdouble, 1, 6, 1, 6 &gt;</type>
         <definition>Farray&lt; Fdouble,1,6,1,6 &gt; Gambit::sd_selectron_type::selmix</definition>
         <argsstring></argsstring>
         <name>selmix</name>
@@ -22,6 +22,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; Fdouble, 1, 6, 1, 6 &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::sd_selectron_type</label>
+        <link refid="structGambit_1_1sd__selectron__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>selmix</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" line="656" column="5" bodyfile="Backends/include/gambit/Backends/backend_types/SUSY-HIT.hpp" bodystart="657" bodyend="659"/>
     <listofallmembers>
       <member refid="structGambit_1_1sd__selectron__type_1ab01bfb0ec007dbbb62f92df532ae8abf" prot="public" virt="non-virtual"><scope>Gambit::sd_selectron_type</scope><name>selmix</name></member>

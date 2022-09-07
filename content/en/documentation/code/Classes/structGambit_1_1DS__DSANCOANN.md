@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS_DSANCOANN
 
 
 
@@ -18,9 +17,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 1, 50 > | **[mco](/documentation/code/classes/structgambit_1_1ds__dsancoann/#variable-mco)**  |
-| Farray< Fdouble, 1, 50 > | **[mdof](/documentation/code/classes/structgambit_1_1ds__dsancoann/#variable-mdof)**  |
-| Farray< Finteger, 1, 50 > | **[kco](/documentation/code/classes/structgambit_1_1ds__dsancoann/#variable-kco)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 50 > | **[mco](/documentation/code/classes/structgambit_1_1ds__dsancoann/#variable-mco)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 50 > | **[mdof](/documentation/code/classes/structgambit_1_1ds__dsancoann/#variable-mdof)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 50 > | **[kco](/documentation/code/classes/structgambit_1_1ds__dsancoann/#variable-kco)**  |
 | Finteger | **[nco](/documentation/code/classes/structgambit_1_1ds__dsancoann/#variable-nco)**  |
 
 ## Public Attributes Documentation
@@ -55,4 +54,4 @@ Finteger nco;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

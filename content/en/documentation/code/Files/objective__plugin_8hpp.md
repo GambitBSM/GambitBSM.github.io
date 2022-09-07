@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# ScannerBit/objective_plugin.hpp
 
 
 
@@ -157,4 +156,4 @@ inline void print_parameters(std::unordered_map<std::string, double> &key_map)  
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:26 +0000
+Updated on 2022-09-07 at 13:49:52 +0000

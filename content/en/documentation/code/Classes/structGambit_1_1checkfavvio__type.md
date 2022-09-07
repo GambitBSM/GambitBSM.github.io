@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::checkfavvio_type
 
 
 
@@ -19,7 +18,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | Finteger | **[icheckfav](/documentation/code/classes/structgambit_1_1checkfavvio__type/#variable-icheckfav)**  |
-| Farray< Finteger, 1, 2 > | **[imodfav](/documentation/code/classes/structgambit_1_1checkfavvio__type/#variable-imodfav)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[imodfav](/documentation/code/classes/structgambit_1_1checkfavvio__type/#variable-imodfav)**  |
 
 ## Public Attributes Documentation
 
@@ -39,4 +38,4 @@ Farray< Finteger, 1, 2 > imodfav;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

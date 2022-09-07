@@ -1,17 +1,16 @@
 ---
 title: 'struct YAML::convert< Gambit::nuiscorr >'
-description: 'YAML conversion structure for SuperIso SM nuisance data. '
+description: '[YAML](/documentation/code/namespaces/namespaceyaml/) conversion structure for SuperIso SM nuisance data. '
 
 ---
 
+# YAML::convert< Gambit::nuiscorr >
 
 
 
 
 
-
-
-YAML conversion structure for SuperIso SM nuisance data. 
+[YAML](/documentation/code/namespaces/namespaceyaml/) conversion structure for SuperIso SM nuisance data. 
 
 ## Public Functions
 
@@ -43,4 +42,4 @@ static inline bool decode(
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

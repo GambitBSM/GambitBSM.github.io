@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classdaFunk_1_1FunkFuncM" kind="class" language="C++" prot="public">
+    <compoundname>daFunk::FunkFuncM</compoundname>
+    <basecompoundref refid="classdaFunk_1_1FunkBase" prot="public" virt="non-virtual">daFunk::FunkBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>threadsafe</declname>
+        <defname>threadsafe</defname>
+      </param>
+      <param>
+        <type>typename O</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>funcargs</declname>
+        <defname>funcargs</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdaFunk_1_1FunkFuncM_1acf5f2b77bf08ed5c4b1bfe5407bfbeab" prot="private" static="no" mutable="no">
+        <type>std::tuple&lt; typename std::remove_reference&lt; funcargs &gt;::type... &gt;</type>
+        <definition>std::tuple&lt;typename std::remove_reference&lt;funcargs&gt;::type...&gt; daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <qualifiedname>daFunk::FunkFuncM::input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="830" column="25" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="830" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdaFunk_1_1FunkFuncM_1aba87ee8d25601e6caec7488dc2602c91" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double * &gt;</type>
+        <definition>std::vector&lt;double*&gt; daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <qualifiedname>daFunk::FunkFuncM::map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="831" column="25" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdaFunk_1_1FunkFuncM_1a59364849677ddd5cd1587759e31f6b0e" prot="private" static="no" mutable="no">
+        <type>double(O::*</type>
+        <definition>double(O::* daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::ptr) (funcargs...)</definition>
+        <argsstring>)(funcargs...)</argsstring>
+        <name>ptr</name>
+        <qualifiedname>daFunk::FunkFuncM::ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="832" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="832" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdaFunk_1_1FunkFuncM_1ac755298d682817aff787cd5d25f3f91a" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; O &gt;</type>
+        <definition>shared_ptr&lt;O&gt; daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::shared_obj</definition>
+        <argsstring></argsstring>
+        <name>shared_obj</name>
+        <qualifiedname>daFunk::FunkFuncM::shared_obj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="833" column="24" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdaFunk_1_1FunkFuncM_1ad3280f01a4561eaf8ffab5551901abae" prot="private" static="no" mutable="no">
+        <type>O *</type>
+        <definition>O* daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <qualifiedname>daFunk::FunkFuncM::obj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="834" column="15" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdaFunk_1_1FunkFuncM_1a0df3ee26f195e588c7502aa2a1ab6d3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::FunkFuncM</definition>
+        <argsstring>(O *obj, double(O::*f)(funcargs...), Args... argss)</argsstring>
+        <name>FunkFuncM</name>
+        <qualifiedname>daFunk::FunkFuncM::FunkFuncM</qualifiedname>
+        <param>
+          <type>O *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>double(O::*)(funcargs...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>argss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="783" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="783" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkFuncM_1a4b33a7de7bcdab5a72a46199cc9a0e10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::FunkFuncM</definition>
+        <argsstring>(shared_ptr&lt; O &gt; obj, double(O::*f)(funcargs...), Args... argss)</argsstring>
+        <name>FunkFuncM</name>
+        <qualifiedname>daFunk::FunkFuncM::FunkFuncM</qualifiedname>
+        <param>
+          <type>shared_ptr&lt; O &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>double(O::*)(funcargs...)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>argss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="790" column="13" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="790" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkFuncM_1aef427b8e138ec29ddff584c8af849640" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::value</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;data, size_t bindID)</argsstring>
+        <name>value</name>
+        <qualifiedname>daFunk::FunkFuncM::value</qualifiedname>
+        <reimplements refid="classdaFunk_1_1FunkBase_1a8646477e9ad3843343f86466b8a34f14">value</reimplements>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bindID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="796" column="20" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="796" bodyend="821"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkFuncM_1adf3752d0339a22b716a4a0eac3e177fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::ppp</definition>
+        <argsstring>(index_list&lt; Args... &gt;, std::tuple&lt; typename std::remove_reference&lt; funcargs &gt;::type... &gt; &amp;my_input)</argsstring>
+        <name>ppp</name>
+        <qualifiedname>daFunk::FunkFuncM::ppp</qualifiedname>
+        <param>
+          <type><ref refid="structdaFunk_1_1index__list" kindref="compound">index_list</ref>&lt; Args... &gt;</type>
+        </param>
+        <param>
+          <type>std::tuple&lt; typename std::remove_reference&lt; funcargs &gt;::type... &gt; &amp;</type>
+          <declname>my_input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="824" column="20" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="824" bodyend="827"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdaFunk_1_1FunkFuncM_1af45b324f777274e1a82a3f2a03d6bcf3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::digest_input</definition>
+        <argsstring>(T x, Args... argss)</argsstring>
+        <name>digest_input</name>
+        <qualifiedname>daFunk::FunkFuncM::digest_input</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>argss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="840" column="18" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="840" bodyend="845"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkFuncM_1ab20a713d6c53efddc6635d515fb76cc3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::digest_input</definition>
+        <argsstring>(Funk f, Args... argss)</argsstring>
+        <name>digest_input</name>
+        <qualifiedname>daFunk::FunkFuncM::digest_input</qualifiedname>
+        <param>
+          <type>Funk</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>argss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="847" column="18" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="847" bodyend="855"/>
+      </memberdef>
+      <memberdef kind="function" id="classdaFunk_1_1FunkFuncM_1aea94f8f60dfb514b26acb12111610f93" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;::digest_input</definition>
+        <argsstring>()</argsstring>
+        <name>digest_input</name>
+        <qualifiedname>daFunk::FunkFuncM::digest_input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Elements/include/gambit/Elements/daFunk.hpp" line="856" column="18" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="856" bodyend="856"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>enable_shared_from_this&lt; FunkBase &gt;</label>
+      </node>
+      <node id="2">
+        <label>daFunk::FunkBase</label>
+        <link refid="classdaFunk_1_1FunkBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;</label>
+        <link refid="classdaFunk_1_1FunkFuncM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>enable_shared_from_this&lt; FunkBase &gt;</label>
+      </node>
+      <node id="2">
+        <label>daFunk::FunkBase</label>
+        <link refid="classdaFunk_1_1FunkBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>daFunk::FunkFuncM&lt; threadsafe, O, funcargs &gt;</label>
+        <link refid="classdaFunk_1_1FunkFuncM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Elements/include/gambit/Elements/daFunk.hpp" line="779" column="5" bodyfile="Elements/include/gambit/Elements/daFunk.hpp" bodystart="780" bodyend="857"/>
+    <listofallmembers>
+      <member refid="classdaFunk_1_1FunkBase_1a73ec0ca81fe7249e7ee09b67a59e471b" prot="protected" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>arguments</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a679402022fce75370ad30477b92f502d" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>assert_args</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ad7ab386a6519b1ef6cba6ac0b391e431" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>bind</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ab80524b8e5c7a60570f18df12af05ae8" prot="protected" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>datalen</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1af45b324f777274e1a82a3f2a03d6bcf3" prot="private" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>digest_input</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1ab20a713d6c53efddc6635d515fb76cc3" prot="private" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>digest_input</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1aea94f8f60dfb514b26acb12111610f93" prot="private" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>digest_input</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a020c9ed50ea915133590d9dd8a8731be" prot="protected" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>functions</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a7a657dce4094e02dbc3d8b135a260181" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>FunkBase</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1a0df3ee26f195e588c7502aa2a1ab6d3b" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>FunkFuncM</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1a4b33a7de7bcdab5a72a46199cc9a0e10" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>FunkFuncM</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a0d349a5a4c0bedb82e59e884d06cd605" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>getArgs</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a674bc7d66557067d147143f0d33f4c96" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>getNArgs</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a37d346d0ce8455da5181eac03b1ec086" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>getSingl</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a696c3b38624a384adb3964bc46b6daab" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>gsl_integration</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a11d7ff51370a518e5ce71973084ee762" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>hasArg</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ac95b8e5d3310cca11d0ac66b0f3bd3c2" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>hasArgs</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ab858b68aa634343727b8937f40975b1f" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>help</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a310cde28ae9265ee10ff7a971483a71f" prot="protected" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>indices</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1acf5f2b77bf08ed5c4b1bfe5407bfbeab" prot="private" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>input</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1aba87ee8d25601e6caec7488dc2602c91" prot="private" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>map</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1ad3280f01a4561eaf8ffab5551901abae" prot="private" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>obj</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1abd4786ace406ae301e73c792576d46e4" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a1a35ec40bfe8cacc5db1bf1702b26b23" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a014b761207f78de72402ffe2ac9574b7" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1acb8abf10f25053ecd960cca112d62079" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a9a13d87e37788d771820668138e510d8" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1acd7b36586f8c1d403ab328d3f45bcdb2" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ae740382c4e301e4b263848036d8878d5" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a8765d42b92b146d43005f5768ddc2d4e" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>plain</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1adf3752d0339a22b716a4a0eac3e177fb" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>ppp</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a8b0a5b7c978dfa79238cb6f4632c5ff4" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>print</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1a59364849677ddd5cd1587759e31f6b0e" prot="private" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>ptr</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a7bcba52829e2cd811df21971a8fcae0b" prot="public" virt="virtual"><scope>daFunk::FunkFuncM</scope><name>resolve</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a59ef787d56af732ab2249a94f07bb52b" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1aae15a3e1d861fef9e58201d90290a833" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a91ad28e40caf2b14207f6b52481a08fe" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a0aa7469b732ce5e6770bad99613d4dd2" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1ac626df236aa4854e90958246de82305a" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>set</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a4a1d787379bf836b29d2d0c6e4a4cad6" prot="public" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>set_singularity</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1ac755298d682817aff787cd5d25f3f91a" prot="private" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>shared_obj</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a004962513ef67993ce7e66870073fab7" prot="protected" virt="non-virtual"><scope>daFunk::FunkFuncM</scope><name>singularities</name></member>
+      <member refid="classdaFunk_1_1FunkFuncM_1aef427b8e138ec29ddff584c8af849640" prot="public" virt="virtual"><scope>daFunk::FunkFuncM</scope><name>value</name></member>
+      <member refid="classdaFunk_1_1FunkBase_1a874043a27bdbd03c118c22c179f58b32" prot="public" virt="virtual"><scope>daFunk::FunkFuncM</scope><name>~FunkBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

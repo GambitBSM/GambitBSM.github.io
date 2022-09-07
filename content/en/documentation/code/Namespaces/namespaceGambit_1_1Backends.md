@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::Backends
 
 
 
@@ -49,23 +48,23 @@ description: "[No description available]"
 | int | **[WSGetVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsgetvariable)**(WSLINK WSlink, double * val) |
 | int | **[WSGetVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsgetvariable)**(WSLINK WSlink, bool * val) |
 | int | **[WSGetVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsgetvariable)**(WSLINK WSlink, char * val) |
-| int | **[WSGetVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsgetvariable)**(WSLINK WSlink, str * val) |
+| int | **[WSGetVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsgetvariable)**(WSLINK WSlink, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) * val) |
 | template <typename T \> <br>int | **[WSGetVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsgetvariable)**(WSLINK WSlink, std::vector< T > * val) |
 | int | **[WSPutVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariable)**(WSLINK WSlink, int val) |
 | int | **[WSPutVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariable)**(WSLINK WSlink, float val) |
 | int | **[WSPutVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariable)**(WSLINK WSlink, double val) |
 | int | **[WSPutVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariable)**(WSLINK WSlink, bool val) |
 | int | **[WSPutVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariable)**(WSLINK WSlink, char val) |
-| int | **[WSPutVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariable)**(WSLINK WSlink, str val) |
+| int | **[WSPutVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariable)**(WSLINK WSlink, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) val) |
 | template <typename T \> <br>int | **[WSPutVariable](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariable)**(WSLINK WSlink, std::vector< T > val) |
 | int | **[WSPutVariables](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariables)**(WSLINK ) |
 | template <typename T \> <br>int | **[WSPutVariables](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariables)**(WSLINK WSlink, T last) |
 | template <typename T1 ,typename T2 ,typename... Others\> <br>int | **[WSPutVariables](/documentation/code/namespaces/namespacegambit_1_1backends/#function-wsputvariables)**(WSLINK WSlink, T1 first, T2 second, Others... args) |
 | [backend_info](/documentation/code/classes/structgambit_1_1backends_1_1backend__info/) & | **[backendInfo](/documentation/code/namespaces/namespacegambit_1_1backends/#function-backendinfo)**()<br>Backend info accessor function.  |
 | namespace | **[CAT_3](/documentation/code/namespaces/namespacegambit_1_1backends/#function-cat-3)**(BACKENDNAME , _ , SAFE_VERSION ) |
-| template <typename T \> <br>T | **[load_backend_symbol](/documentation/code/namespaces/namespacegambit_1_1backends/#function-load-backend-symbol)**(const std::vector< str > & symbol_names, str be, str ver)<br>Get the pointer to the backend function.  |
-| template <typename T \> <br>T | **[handover_factory_pointer](/documentation/code/namespaces/namespacegambit_1_1backends/#function-handover-factory-pointer)**(str be, str ver, str name, str barename, str args, const std::vector< str > & symbol_names, T factory, T missing_backend, T missing_factory)<br>Provide the factory pointer to a BOSSed type's wrapper constructor.  |
-| void | **[math_error](/documentation/code/namespaces/namespacegambit_1_1backends/#function-math-error)**(WSLINK , const str & , const str & )<br>Helper function to raise an appropriate warning or error in case of problems.  |
+| template <typename T \> <br>T | **[load_backend_symbol](/documentation/code/namespaces/namespacegambit_1_1backends/#function-load-backend-symbol)**(const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & symbol_names, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) be, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) ver)<br>Get the pointer to the backend function.  |
+| template <typename T \> <br>T | **[handover_factory_pointer](/documentation/code/namespaces/namespacegambit_1_1backends/#function-handover-factory-pointer)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) be, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) ver, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) barename, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) args, const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & symbol_names, T factory, T missing_backend, T missing_factory)<br>Provide the factory pointer to a BOSSed type's wrapper constructor.  |
+| void | **[math_error](/documentation/code/namespaces/namespacegambit_1_1backends/#function-math-error)**(WSLINK , const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & , const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & )<br>Helper function to raise an appropriate warning or error in case of problems.  |
 | template <typename T \> <br>bool | **[is_numeric](/documentation/code/namespaces/namespacegambit_1_1backends/#function-is-numeric)**()<br>Helper function that indicates if a type is numerical or not.  |
 
 ## Types Documentation
@@ -342,4 +341,4 @@ Helper function that indicates if a type is numerical or not.
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:49 +0000

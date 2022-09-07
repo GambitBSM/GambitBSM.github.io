@@ -1,17 +1,16 @@
 ---
 title: 'struct Gambit::FlavBit::Measurement'
-description: 'Representation of a single entry in the FlavBit YAML database. '
+description: 'Representation of a single entry in the FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database. '
 
 ---
 
+# Gambit::FlavBit::Measurement
 
 
 
 
 
-
-
-Representation of a single entry in the FlavBit YAML database. 
+Representation of a single entry in the FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database. 
 
 
 `#include <FlavBit_types.hpp>`
@@ -137,4 +136,4 @@ std::vector< Correlation > corr;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:25 +0000
+Updated on 2022-09-07 at 13:49:50 +0000

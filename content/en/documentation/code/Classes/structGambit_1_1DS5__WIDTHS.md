@@ -5,8 +5,7 @@ description: "[No description available]"
 
 ---
 
-
-
+# Gambit::DS5_WIDTHS
 
 
 
@@ -18,7 +17,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Farray< Fdouble, 0, 50 > | **[width](/documentation/code/classes/structgambit_1_1ds5__widths/#variable-width)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 0, 50 > | **[width](/documentation/code/classes/structgambit_1_1ds5__widths/#variable-width)**  |
 
 ## Public Attributes Documentation
 
@@ -31,4 +30,4 @@ Farray< Fdouble, 0, 50 > width;
 
 -------------------------------
 
-Updated on 2022-08-25 at 17:16:24 +0000
+Updated on 2022-09-07 at 13:49:48 +0000

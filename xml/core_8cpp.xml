@@ -13,9 +13,9 @@
     <includes refid="error__handlers_8hpp" local="yes">gambit/Core/error_handlers.hpp</includes>
     <includes refid="yaml__description__database_8hpp" local="yes">gambit/Core/yaml_description_database.hpp</includes>
     <includes refid="plugin__loader_8hpp" local="yes">gambit/ScannerBit/plugin_loader.hpp</includes>
-    <includes local="yes">gambit/Utils/stream_overloads.hpp</includes>
-    <includes local="yes">gambit/Utils/util_functions.hpp</includes>
-    <includes local="yes">gambit/Utils/version.hpp</includes>
+    <includes refid="stream__overloads_8hpp" local="yes">gambit/Utils/stream_overloads.hpp</includes>
+    <includes refid="util__functions_8hpp" local="yes">gambit/Utils/util_functions.hpp</includes>
+    <includes refid="version_8hpp" local="yes">gambit/Utils/version.hpp</includes>
     <includes local="yes">gambit/cmake/cmake_variables.hpp</includes>
     <includes local="no">boost/algorithm/string/replace.hpp</includes>
     <incdepgraph>
@@ -26,9 +26,9 @@
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="51" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
       </node>
       <node id="9">
@@ -40,43 +40,43 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="70" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="71">
         <label>gambit/Core/error_handlers.hpp</label>
         <link refid="error__handlers_8hpp"/>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="53">
         <label>gambit/Core/yaml_description_database.hpp</label>
         <link refid="yaml__description__database_8hpp"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="54" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -98,53 +98,409 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="66">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="41">
-        <label>gambit/ScannerBit/base_prior.hpp</label>
-        <link refid="base__prior_8hpp"/>
-        <childnode refid="25" relation="include">
+      <node id="69">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>gambit/Models/models.hpp</label>
+        <link refid="models_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>gambit/Printers/basebaseprinter.hpp</label>
+        <link refid="basebaseprinter_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>gambit/Printers/baseprintermanager.hpp</label>
+        <link refid="baseprintermanager_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>gambit/Printers/printer_id_tools.hpp</label>
+        <link refid="printer__id__tools_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="87">
+        <label>gambit/ScannerBit/base_prior.hpp</label>
+        <link refid="base__prior_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
         <label>gambit/ScannerBit/plugin_details.hpp</label>
         <link refid="plugin__details_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="72">
         <label>gambit/ScannerBit/plugin_loader.hpp</label>
         <link refid="plugin__loader_8hpp"/>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>gambit/ScannerBit/printable_types.hpp</label>
+        <link refid="ScannerBit_2include_2gambit_2ScannerBit_2printable__types_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>gambit/ScannerBit/printer_interface.hpp</label>
+        <link refid="printer__interface_8hpp"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>gambit/ScannerBit/scanner_utils.hpp</label>
+        <link refid="scanner__utils_8hpp"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="36">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="86">
+        <label>gambit/Utils/factory_registry.hpp</label>
+        <link refid="factory__registry_8hpp"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>gambit/Utils/mpiwrapper.hpp</label>
+        <link refid="mpiwrapper_8hpp"/>
+      </node>
+      <node id="81">
+        <label>gambit/Utils/new_mpi_datatypes.hpp</label>
+        <link refid="new__mpi__datatypes_8hpp"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="57">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
@@ -152,138 +508,240 @@
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-      </node>
-      <node id="30">
-        <label>gambit/ScannerBit/printer_interface.hpp</label>
-        <link refid="printer__interface_8hpp"/>
         <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="33">
-        <label>gambit/ScannerBit/scanner_utils.hpp</label>
-        <link refid="scanner__utils_8hpp"/>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
         <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+      </node>
+      <node id="11">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>gambit/Utils/version.hpp</label>
+        <link refid="version_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
         </childnode>
       </node>
       <node id="2">
         <label>algorithm</label>
       </node>
-      <node id="44">
+      <node id="50">
+        <label>array</label>
+      </node>
+      <node id="60">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="89">
         <label>boost/algorithm/string/replace.hpp</label>
       </node>
-      <node id="36">
+      <node id="59">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="22">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="84">
         <label>boost/iterator/zip_iterator.hpp</label>
       </node>
-      <node id="37">
-        <label>boost/range.hpp</label>
+      <node id="33">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="23">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="32">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="21">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="31">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="34">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
       </node>
       <node id="35">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="78">
+        <label>boost/preprocessor/seq/for_each.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="85">
+        <label>boost/range.hpp</label>
+      </node>
+      <node id="20">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="44">
+        <label>cassert</label>
+      </node>
+      <node id="83">
         <label>cctype</label>
+      </node>
+      <node id="56">
+        <label>chrono</label>
+      </node>
+      <node id="58">
+        <label>cmath</label>
+      </node>
+      <node id="15">
+        <label>complex</label>
+      </node>
+      <node id="14">
+        <label>cstring</label>
+      </node>
+      <node id="49">
+        <label>deque</label>
+      </node>
+      <node id="38">
+        <label>exception</label>
+      </node>
+      <node id="48">
+        <label>forward_list</label>
       </node>
       <node id="3">
         <label>fstream</label>
       </node>
-      <node id="19">
-        <label>gambit/Elements/functors.hpp</label>
-      </node>
-      <node id="20">
-        <label>gambit/Models/models.hpp</label>
-      </node>
-      <node id="32">
-        <label>gambit/Printers/basebaseprinter.hpp</label>
-      </node>
-      <node id="31">
-        <label>gambit/Printers/baseprintermanager.hpp</label>
-      </node>
-      <node id="38">
-        <label>gambit/Utils/exceptions.hpp</label>
-      </node>
-      <node id="39">
-        <label>gambit/Utils/factory_registry.hpp</label>
-      </node>
-      <node id="22">
-        <label>gambit/Utils/local_info.hpp</label>
-      </node>
-      <node id="16">
-        <label>gambit/Utils/standalone_error_handlers.hpp</label>
-      </node>
-      <node id="42">
-        <label>gambit/Utils/stream_overloads.hpp</label>
-      </node>
-      <node id="40">
-        <label>gambit/Utils/util_functions.hpp</label>
-      </node>
-      <node id="29">
-        <label>gambit/Utils/util_macros.hpp</label>
-      </node>
-      <node id="11">
-        <label>gambit/Utils/util_types.hpp</label>
-      </node>
-      <node id="17">
-        <label>gambit/Utils/variadic_functions.hpp</label>
-      </node>
-      <node id="43">
-        <label>gambit/Utils/version.hpp</label>
-      </node>
-      <node id="28">
-        <label>gambit/Utils/yaml_options.hpp</label>
-      </node>
-      <node id="18">
-        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
-      </node>
-      <node id="12">
+      <node id="51">
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
       <node id="7">
         <label>getopt.h</label>
       </node>
+      <node id="42">
+        <label>iostream</label>
+      </node>
+      <node id="64">
+        <label>limits</label>
+      </node>
+      <node id="47">
+        <label>list</label>
+      </node>
       <node id="4">
         <label>map</label>
       </node>
-      <node id="34">
+      <node id="61">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="13">
+        <label>omp.h</label>
+      </node>
+      <node id="68">
         <label>ostream</label>
+      </node>
+      <node id="37">
+        <label>set</label>
       </node>
       <node id="5">
         <label>sstream</label>
@@ -291,22 +749,28 @@
       <node id="8">
         <label>stdlib.h</label>
       </node>
-      <node id="25">
+      <node id="12">
         <label>string</label>
       </node>
-      <node id="26">
+      <node id="43">
         <label>type_traits</label>
       </node>
-      <node id="24">
+      <node id="18">
+        <label>unistd.h</label>
+      </node>
+      <node id="45">
         <label>unordered_map</label>
       </node>
-      <node id="15">
+      <node id="46">
+        <label>unordered_set</label>
+      </node>
+      <node id="39">
         <label>utility</label>
       </node>
       <node id="6">
         <label>vector</label>
       </node>
-      <node id="13">
+      <node id="52">
         <label>yaml-cpp/yaml.h</label>
       </node>
     </incdepgraph>
@@ -402,9 +866,9 @@
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="error__handlers_8hpp" kindref="compound">gambit/Core/error_handlers.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="yaml__description__database_8hpp" kindref="compound">gambit/Core/yaml_description_database.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="plugin__loader_8hpp" kindref="compound">gambit/ScannerBit/plugin_loader.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/stream_overloads.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/util_functions.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/version.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stream__overloads_8hpp" kindref="compound">gambit/Utils/stream_overloads.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__functions_8hpp" kindref="compound">gambit/Utils/util_functions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="version_8hpp" kindref="compound">gambit/Utils/version.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/cmake/cmake_variables.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Boost</highlight><highlight class="normal"></highlight></codeline>
@@ -412,7 +876,7 @@
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MPI</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_MPI</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Utils/mpiwrapper.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mpiwrapper_8hpp" kindref="compound">gambit/Utils/mpiwrapper.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_RANK<sp/>GMPI::Comm().Get_rank()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_SIZE<sp/>GMPI::Comm().Get_size()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
@@ -487,11 +951,11 @@
 <codeline lineno="123"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="125"><highlight class="comment"><sp/><sp/>///<sp/>Process<sp/>default<sp/>mode<sp/>command<sp/>line<sp/>options<sp/>and<sp/>return<sp/>filename</highlight></codeline>
-<codeline lineno="126"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>str<sp/>gambit_core::process_primary_options(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>gambit_core::process_primary_options(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index;</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iarg<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>filename;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>filename;</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Gambit<sp/>&apos;standard<sp/>mode&apos;<sp/>command<sp/>line<sp/>option<sp/>definitions<sp/>(needed<sp/>by<sp/>getopt)</highlight></codeline>
 <codeline lineno="133"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Basically<sp/>this<sp/>is<sp/>a<sp/>clone<sp/>of<sp/>the<sp/>example<sp/>in<sp/>the<sp/>getopt_long<sp/>documentation</highlight><highlight class="normal"></highlight></codeline>
@@ -565,7 +1029,7 @@
 <codeline lineno="201"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="203"><highlight class="comment"><sp/><sp/>///<sp/>Add<sp/>a<sp/>new<sp/>module<sp/>to<sp/>modules<sp/>list</highlight></codeline>
-<codeline lineno="204"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gambit_core::registerModule(str<sp/>module,<sp/>str<sp/>ref)</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gambit_core::registerModule(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>module,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ref)</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>modules.insert(module);</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ref<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;REFERENCE&quot;</highlight><highlight class="normal">)</highlight></codeline>
@@ -592,13 +1056,13 @@
 <codeline lineno="228"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="230"><highlight class="comment"><sp/><sp/>///<sp/>Register<sp/>a<sp/>new<sp/>backend</highlight></codeline>
-<codeline lineno="231"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gambit_core::registerBackend(str<sp/>be,<sp/>str<sp/>version,<sp/>str<sp/>ref)</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gambit_core::registerBackend(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>be,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>version,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ref)</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>backend_versions[be].insert(version);</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ref<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;REFERENCE&quot;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backend_citation_keys[sspair(be,version)]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backend_citation_keys[<ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref>(be,version)]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backend_citation_keys[sspair(be,version)]<sp/>=<sp/>ref;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backend_citation_keys[<ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref>(be,version)]<sp/>=<sp/>ref;</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="240"><highlight class="comment"><sp/><sp/>///<sp/>Add<sp/>a<sp/>new<sp/>primary<sp/>model<sp/>functor<sp/>to<sp/>primaryModelFunctorList</highlight></codeline>
@@ -648,7 +1112,7 @@
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Then<sp/>loop<sp/>over<sp/>all<sp/>registered<sp/>versions<sp/>of<sp/>this<sp/>backend</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;version<sp/>:<sp/>backend.second)</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>be_ver<sp/>=<sp/>backend.first<sp/>+<sp/>version;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>be_ver<sp/>=<sp/>backend.first<sp/>+<sp/>version;</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(backendData-&gt;works.at(be_ver))</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(backendData-&gt;classloader.at(be_ver))</highlight></codeline>
@@ -688,7 +1152,7 @@
 <codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(functor-&gt;capability()<sp/>==<sp/>capability)</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>origin(functor-&gt;origin());</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>origin(functor-&gt;origin());</highlight></codeline>
 <codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;str,<sp/>str&gt;<sp/>name_type(functor-&gt;name(),<sp/>functor-&gt;type());</highlight></codeline>
 <codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(capinfo.modset.find(origin)<sp/>==<sp/>capinfo.modset.end())<sp/>capinfo.modset[origin]<sp/>=<sp/>std::set&lt;std::pair&lt;str,<sp/>str&gt;&gt;();</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>capinfo.modset[origin].insert(name_type);</highlight></codeline>
@@ -698,7 +1162,7 @@
 <codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(functor-&gt;capability()<sp/>==<sp/>capability)</highlight></codeline>
 <codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>origin(functor-&gt;origin()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>v&quot;</highlight><highlight class="normal"><sp/>+<sp/>functor-&gt;version());</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>origin(functor-&gt;origin()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>v&quot;</highlight><highlight class="normal"><sp/>+<sp/>functor-&gt;version());</highlight></codeline>
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;str,<sp/>str&gt;<sp/>name_type(functor-&gt;name(),<sp/>functor-&gt;type());</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(capinfo.beset.find(origin)<sp/>==<sp/>capinfo.beset.end())<sp/>capinfo.beset[origin]<sp/>=<sp/>std::set&lt;std::pair&lt;str,<sp/>str&gt;&gt;();</highlight></codeline>
 <codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>capinfo.beset[origin].insert(name_type);</highlight></codeline>
@@ -727,11 +1191,11 @@
 <codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;----------------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dup_num++;</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1abbe80443e7044737d5d4658b968ff7f4" kindref="member">core_error</ref>().raise(LOCAL_INFO,<sp/>errmsg.str());</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1abbe80443e7044737d5d4658b968ff7f4" kindref="member">core_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>errmsg.str());</highlight></codeline>
 <codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>capinfo.description<sp/>=<sp/>description_file.getValue&lt;str&gt;(capability);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>capinfo.description<sp/>=<sp/>description_file.getValue&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;(capability);</highlight></codeline>
 <codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>capinfo.has_description<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -809,11 +1273,11 @@
 <codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;----------------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dup_num++;</highlight></codeline>
 <codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1abbe80443e7044737d5d4658b968ff7f4" kindref="member">core_error</ref>().raise(LOCAL_INFO,<sp/>errmsg.str());</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1abbe80443e7044737d5d4658b968ff7f4" kindref="member">core_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>errmsg.str());</highlight></codeline>
 <codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.description<sp/>=<sp/>model_description_file.getValue&lt;str&gt;(model.name);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.description<sp/>=<sp/>model_description_file.getValue&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;(model.name);</highlight></codeline>
 <codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.has_description<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -880,7 +1344,7 @@
 <codeline lineno="516"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="517"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="518"><highlight class="comment"><sp/><sp/>///<sp/>Get<sp/>the<sp/>description<sp/>of<sp/>the<sp/>named<sp/>capability<sp/>from<sp/>the<sp/>description<sp/>database</highlight></codeline>
-<codeline lineno="519"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>capability_info<sp/>gambit_core::get_capability_info(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="519"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>capability_info<sp/>gambit_core::get_capability_info(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>&amp;name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="520"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;capability<sp/>:<sp/>capability_dbase)</highlight></codeline>
 <codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -895,11 +1359,11 @@
 <codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>could<sp/>be<sp/>found<sp/>in<sp/>the<sp/>capability<sp/>database.<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;This<sp/>function<sp/>should<sp/>not<sp/>run<sp/>when<sp/>we<sp/>don&apos;t<sp/>know<sp/>if<sp/>the<sp/>capability<sp/>exists!<sp/>Either<sp/>there<sp/>is<sp/>a<sp/>bug<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;in<sp/>the<sp/>calling<sp/>code,<sp/>or<sp/>something<sp/>went<sp/>wrong<sp/>creating<sp/>the<sp/>capability<sp/>database.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1abbe80443e7044737d5d4658b968ff7f4" kindref="member">core_error</ref>().raise(LOCAL_INFO,<sp/>errmsg.str());</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1abbe80443e7044737d5d4658b968ff7f4" kindref="member">core_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>errmsg.str());</highlight></codeline>
 <codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>capability_info();</highlight></codeline>
 <codeline lineno="536"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="537"><highlight class="normal"></highlight></codeline>
-<codeline lineno="538"><highlight class="normal"><sp/><sp/>model_info<sp/>gambit_core::get_model_info(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/>model_info<sp/>gambit_core::get_model_info(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>&amp;name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="539"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;model<sp/>:<sp/>model_dbase)</highlight></codeline>
 <codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -914,18 +1378,18 @@
 <codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>could<sp/>be<sp/>found<sp/>in<sp/>the<sp/>model<sp/>database.<sp/>This<sp/>function<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;should<sp/>not<sp/>run<sp/>when<sp/>we<sp/>don&apos;t<sp/>know<sp/>if<sp/>the<sp/>model<sp/>exists!<sp/>Either<sp/>there<sp/>is<sp/>a<sp/>bug<sp/>in<sp/>the<sp/>calling<sp/>code,<sp/>or<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;something<sp/>went<sp/>wrong<sp/>creating<sp/>the<sp/>model<sp/>database.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1abbe80443e7044737d5d4658b968ff7f4" kindref="member">core_error</ref>().raise(LOCAL_INFO,<sp/>errmsg.str());</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1abbe80443e7044737d5d4658b968ff7f4" kindref="member">core_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,<sp/>errmsg.str());</highlight></codeline>
 <codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>model_info();</highlight></codeline>
 <codeline lineno="555"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="556"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="557"><highlight class="comment"><sp/><sp/>///<sp/>Compute<sp/>the<sp/>status<sp/>of<sp/>a<sp/>given<sp/>backend</highlight></codeline>
-<codeline lineno="558"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>str<sp/>gambit_core::backend_status(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;be,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>&amp;version,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;no_failures)</highlight></codeline>
+<codeline lineno="558"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>gambit_core::backend_status(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>&amp;be,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>&amp;version,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;no_failures)</highlight></codeline>
 <codeline lineno="559"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>OK<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;OK&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>bad<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;absent/broken&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>badclass<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;bad<sp/>types&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>missingMath<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mathematica<sp/>absent&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>status;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>OK<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;OK&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>bad<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;absent/broken&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>badclass<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;bad<sp/>types&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>missingMath<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mathematica<sp/>absent&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>status;</highlight></codeline>
 <codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(backendData-&gt;works.at(be<sp/>+<sp/>version))</highlight></codeline>
 <codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(backendData-&gt;classloader.at(be<sp/>+<sp/>version))<sp/>{<sp/>status<sp/>=<sp/>(backendData-&gt;classes_OK.at(be<sp/>+<sp/>version)<sp/>?<sp/>OK<sp/>:<sp/>badclass);<sp/>}</highlight></codeline>
@@ -957,11 +1421,11 @@
 <codeline lineno="593"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="594"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="595"><highlight class="comment"><sp/><sp/>///<sp/>Launch<sp/>non-interactive<sp/>command-line<sp/>diagnostic<sp/>mode,<sp/>for<sp/>printing<sp/>info<sp/>about<sp/>current<sp/>GAMBIT<sp/>configuration.</highlight></codeline>
-<codeline lineno="596"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>str<sp/>gambit_core::run_diagnostic(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)</highlight></codeline>
+<codeline lineno="596"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>gambit_core::run_diagnostic(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)</highlight></codeline>
 <codeline lineno="597"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mpirank<sp/>=<sp/>GET_RANK;<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>MPI<sp/>rank<sp/>(assume<sp/>MPI<sp/>already<sp/>initialised)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>filename;</highlight></codeline>
-<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>command<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>filename;</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>command<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>didyoumean;</highlight></codeline>
 <codeline lineno="602"><highlight class="normal"></highlight></codeline>
 <codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>arguments,<sp/>ignoring<sp/>everything<sp/>before<sp/>gambit<sp/>executable</highlight><highlight class="normal"></highlight></codeline>
@@ -969,8 +1433,8 @@
 <codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>argc<sp/>-<sp/>1;<sp/>i++)</highlight></codeline>
 <codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>arg<sp/>=<sp/>argv[i];</highlight></codeline>
-<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str<sp/>x(GAMBIT_EXECUTABLE);</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>arg<sp/>=<sp/>argv[i];</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>x(GAMBIT_EXECUTABLE);</highlight></codeline>
 <codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>arg.length();</highlight></codeline>
 <codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xlen<sp/>=<sp/>x.length();</highlight></codeline>
 <codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&gt;=<sp/>xlen<sp/>and<sp/>arg.substr(len<sp/>-<sp/>xlen,<sp/>xlen)<sp/>==<sp/>x)</highlight></codeline>

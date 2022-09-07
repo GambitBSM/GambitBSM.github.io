@@ -2713,6 +2713,10 @@
         <label>gambit/Backends/wrapperbase.hpp</label>
         <link refid="include_2gambit_2Backends_2wrapperbase_8hpp_source"/>
       </node>
+      <node id="8">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
       <node id="63">
         <label>SLHAea/slhaea.h</label>
       </node>
@@ -2721,9 +2725,6 @@
       </node>
       <node id="4">
         <label>cstddef</label>
-      </node>
-      <node id="8">
-        <label>gambit/Utils/cats.hpp</label>
       </node>
       <node id="12">
         <label>iostream</label>
@@ -2841,7 +2842,7 @@
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>default<sp/>version<sp/>has<sp/>been<sp/>loaded,<sp/>set<sp/>it<sp/>as<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ALREADY_LOADED(CAT_3(BACKENDNAME,_,CAT(Default_,BACKENDNAME)))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/>SET_DEFAULT_VERSION_FOR_LOADING_TYPES(BACKENDNAME,SAFE_VERSION,<ref refid="cats_8hpp_1aa7c74d1cd12eae89a2d03f84ea2b8598" kindref="member">CAT</ref>(Default_,BACKENDNAME))</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="type__macros_8hpp_1adbecbe8c70fc556044b57ae1503952c4" kindref="member">SET_DEFAULT_VERSION_FOR_LOADING_TYPES</ref>(BACKENDNAME,SAFE_VERSION,<ref refid="Backends_2scripts_2BOSS_2common__headers_2cats_8hpp_1aa7c74d1cd12eae89a2d03f84ea2b8598" kindref="member">CAT</ref>(Default_,BACKENDNAME))</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Undefine<sp/>macros<sp/>to<sp/>avoid<sp/>conflict<sp/>with<sp/>other<sp/>backends.</highlight><highlight class="normal"></highlight></codeline>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1FstringArray" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::FstringArray</compoundname>
+    <basecompoundref refid="classGambit_1_1Farray" prot="public" virt="non-virtual">Gambit::Farray&lt; char, 1, len, lims... &gt;</basecompoundref>
+    <includes refid="util__types_8hpp" local="no">util_types.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>len</declname>
+        <defname>len</defname>
+      </param>
+      <param>
+        <type>int...</type>
+        <declname>lims</declname>
+        <defname>lims</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1FstringArray_1ad9990f37dc3abb1eabf3d712cbb20f19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structGambit_1_1enable__if__all__member" kindref="compound">enable_if_all_member</ref>&lt; typenameFarray&lt; char, 1, len, lims... &gt;::allowed_types, <ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref>&lt; len &gt; *, Args... &gt;::type::type</type>
+        <definition>enable_if_all_member&lt; typenameFarray&lt; char, 1, len, lims... &gt;::allowed_types, Fstring&lt; len &gt; *, Args... &gt;::type::type Gambit::FstringArray&lt; len, lims &gt;::operator()</definition>
+        <argsstring>(Args ... a)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Gambit::FstringArray::operator()</qualifiedname>
+        <param>
+          <type>Args ...</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="521" column="7" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="521" bodyend="541"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref> specialization for Fortran arrays of strings. This is an N+1-dimensional char array, where N is the number of dimensions specified by the user (1/2 * the number of array index limits). The special () operator is intended to be used instead of the operators of the <ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref> base class, and takes 1 argument less than the <ref refid="classGambit_1_1Farray" kindref="compound">Farray</ref> class operators (the array index for the letters in the strings should not be passed). This operator returns pointers to <ref refid="classGambit_1_1Fstring" kindref="compound">Fstring</ref> objects that can be assigned to and read from. Syntax: <ref refid="classGambit_1_1FstringArray" kindref="compound">FstringArray</ref>&lt;[string length], [lower index, dim 1], [upper index, dim 1], [alternating lower/upper indices for subsequent dimensions]&gt; DO NOT UNDER ANY CIRCUMSTANCE add new member variables to this class! </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; char, 1, len, lims... &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::FstringArray&lt; len, lims &gt;</label>
+        <link refid="classGambit_1_1FstringArray"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::Farray&lt; char, 1, len, lims... &gt;</label>
+        <link refid="classGambit_1_1Farray"/>
+      </node>
+      <node id="1">
+        <label>Gambit::FstringArray&lt; len, lims &gt;</label>
+        <link refid="classGambit_1_1FstringArray"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Utils/include/gambit/Utils/util_types.hpp" line="516" column="3" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="517" bodyend="542"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Farray_1a46d9df4eb54d188790013fecc938ac3f" prot="protected" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>allowed_types</name></member>
+      <member refid="classGambit_1_1Farray_1a849324b7f9fa29ce47974de49681bb2b" prot="public" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>array</name></member>
+      <member refid="classGambit_1_1Farray_1a0ae42c7391346ef7f7564ca166bdba3b" prot="public" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>Farray</name></member>
+      <member refid="classGambit_1_1Farray_1aa8b51a65396a6217a5d44ddf639114b1" prot="public" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>Farray</name></member>
+      <member refid="classGambit_1_1Farray_1a16c9195a47a77383de807fcae5028cd2" prot="public" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>Farray</name></member>
+      <member refid="classGambit_1_1Farray_1a34166dfe9dffd8946a28109f95bbfc43" prot="public" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>nElem</name></member>
+      <member refid="classGambit_1_1FstringArray_1ad9990f37dc3abb1eabf3d712cbb20f19" prot="public" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Farray_1a84ea5c4d720addfc615195f6525c8413" prot="public" virt="non-virtual" ambiguityscope="Farray&lt; char, 1, len, lims... &gt;::"><scope>Gambit::FstringArray</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Farray_1a140ae55c4ca03140a2db78b68fef3b9b" prot="public" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>operator=</name></member>
+      <member refid="classGambit_1_1Farray_1ac6d17402c6a2b9a5ea3afee0b23ca81b" prot="public" virt="non-virtual"><scope>Gambit::FstringArray</scope><name>operator=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

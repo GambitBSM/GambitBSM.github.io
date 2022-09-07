@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="classGambit_1_1IniParser_1_1IniFile" kind="class" language="C++" prot="public">
     <compoundname>Gambit::IniParser::IniFile</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">Parser</basecompoundref>
+    <basecompoundref refid="classGambit_1_1IniParser_1_1Parser" prot="public" virt="non-virtual">Gambit::IniParser::Parser</basecompoundref>
     <includes refid="yaml__parser_8hpp" local="no">yaml_parser.hpp</includes>
       <sectiondef kind="user-defined">
       <memberdef kind="function" id="classGambit_1_1IniParser_1_1IniFile_1a3a2f7f26b954799fa694807a70e7bac7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
@@ -37,7 +37,7 @@
       </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classGambit_1_1IniParser_1_1IniFile_1ad8276a161a7834557a4821c84cd5aef7" prot="private" static="no" mutable="no">
-        <type>str</type>
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>str Gambit::IniParser::IniFile::_filename</definition>
         <argsstring></argsstring>
         <name>_filename</name>
@@ -81,7 +81,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classGambit_1_1IniParser_1_1IniFile_1a0eb359cee3a4b5ca2e8ea03f8e203a50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const str</type>
+        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
         <definition>const str Gambit::IniParser::IniFile::filename</definition>
         <argsstring>() const</argsstring>
         <name>filename</name>
@@ -100,12 +100,13 @@
         <argsstring>(str)</argsstring>
         <name>readFile</name>
         <qualifiedname>Gambit::IniParser::IniFile::readFile</qualifiedname>
+        <reimplements refid="classGambit_1_1IniParser_1_1Parser_1abe32bdad941dbad558d9392ad77bab5e">readFile</reimplements>
         <param>
-          <type>str</type>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
           <defname>name</defname>
         </param>
         <briefdescription>
-<para>Read in the YAML file. </para>
+<para>Read in the <ref refid="namespaceYAML" kindref="compound">YAML</ref> file. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -127,7 +128,8 @@
         </childnode>
       </node>
       <node id="2">
-        <label>Parser</label>
+        <label>Gambit::IniParser::Parser</label>
+        <link refid="classGambit_1_1IniParser_1_1Parser"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
@@ -138,15 +140,32 @@
         </childnode>
       </node>
       <node id="2">
-        <label>Parser</label>
+        <label>Gambit::IniParser::Parser</label>
+        <link refid="classGambit_1_1IniParser_1_1Parser"/>
       </node>
     </collaborationgraph>
     <location file="Core/include/gambit/Core/yaml_parser.hpp" line="89" column="5" bodyfile="Core/include/gambit/Core/yaml_parser.hpp" bodystart="90" bodyend="113"/>
     <listofallmembers>
       <member refid="classGambit_1_1IniParser_1_1IniFile_1ad8276a161a7834557a4821c84cd5aef7" prot="private" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>_filename</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a7b39009da65e598cf8088b9df7d796af" prot="protected" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>basicParse</name></member>
       <member refid="classGambit_1_1IniParser_1_1IniFile_1a0eb359cee3a4b5ca2e8ea03f8e203a50" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>filename</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a0f1f6729e14c8ab6bd95617205aba302" prot="protected" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>filename_to_node</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1ad42f48e3d452c8ab187676ab0d35977f" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getKeyValuePairNode</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a8761858ac4e73c2c16f753241cf6246c" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getLoggerNode</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1ae400f6717fa1dea33924cfea99969ed5" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getModelNames</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a20884deba7d28da6fbf0ce9c45e8c2bc" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getModelParameterEntry</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a554904012981008277e342ab4d1d5ab3" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getModelParameters</name></member>
       <member refid="classGambit_1_1IniParser_1_1IniFile_1a3a2f7f26b954799fa694807a70e7bac7" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getObservables</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a8aa170c23c45fb03c30e856738a90df9" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getOptions</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a8133d5d017f596dae39bf601e51210dd" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getParametersNode</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a9c45536a311962b7244ab78fb93bc01b" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getPrinterNode</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1abba4de9c5b11cfd1d667b0ce21c77c1f" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getPriorsNode</name></member>
       <member refid="classGambit_1_1IniParser_1_1IniFile_1a67070b3eefee25154938cd13838bac94" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getRules</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1ae51d62871cf65f8bf3d0a39083a38d4b" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getScannerNode</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1aecca6d32bb3061477af9fcaa62b613c2" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getValue</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a9eac5c46e73b708f3eb825848c24ab23" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>getValueOrDef</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1ae5b6c816c6a277f62ae96dca7e4aa9b1" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>hasKey</name></member>
+      <member refid="classGambit_1_1IniParser_1_1Parser_1a161fde41548f6655800eacbb4574df87" prot="public" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>hasModelParameterEntry</name></member>
       <member refid="classGambit_1_1IniParser_1_1IniFile_1a74c928b454078a949b71e6e6aa5a2338" prot="private" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>observables</name></member>
       <member refid="classGambit_1_1IniParser_1_1IniFile_1a84f7b652e87357cfa3362511398d4753" prot="public" virt="virtual"><scope>Gambit::IniParser::IniFile</scope><name>readFile</name></member>
       <member refid="classGambit_1_1IniParser_1_1IniFile_1a7e343afa18d471f774748582c134119d" prot="private" virt="non-virtual"><scope>Gambit::IniParser::IniFile</scope><name>rules</name></member>
