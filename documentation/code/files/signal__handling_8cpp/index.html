@@ -1,0 +1,727 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/signal_handling.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/signal_handling.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/signal_handling.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/signal_handling.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/","url":"https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/","name":"file src\/signal_handling.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/signal__handling_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file src\/signal_handling.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/signal_handling.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-signal-handling-cpp>file src/signal_handling.cpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Ben Farmer (<a href=mailto:ben.farmer@gmail.com>ben.farmer@gmail.com</a>)</li><li>José Eliel Camargo-Molina (<a href=mailto:Elielcamargomolina@gmail.com>Elielcamargomolina@gmail.com</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2015 Oct - 2016 Jul</li><li>2018 Aug</li></ul><hr><p>GAMBIT signal handling functions</p><hr><p>Authors (add name and date if you modify):</p><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  GAMBIT signal handling functions
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (ben.farmer@gmail.com)
+///  \date 2015 Oct - 2016 Jul
+///
+///  \author José Eliel Camargo-Molina
+///         (Elielcamargomolina@gmail.com)
+///   \date 2018 Aug
+///  *********************************************
+
+#include &lt;iostream&gt;
+#include &lt;signal.h&gt;
+#include &lt;omp.h&gt;
+#include &lt;time.h&gt; // For nanosleep (posix only)
+#include &lt;cmath&gt;
+#include &quot;gambit/Utils/signal_handling.hpp&quot;
+#include &quot;gambit/Utils/mpiwrapper.hpp&quot;
+#include &quot;gambit/Logs/logger.hpp&quot;
+#include &quot;yaml-cpp/yaml.h&quot;
+
+//#define SIGNAL_DEBUG // comment out when not debugging.
+
+namespace Gambit
+{
+   /// Translate signal codes to strings
+   std::string signal_name(int sig)
+   {
+     std::string name;
+     switch(sig){
+         case SIGINT:  name=&quot;SIGINT&quot;;  break;
+         case SIGTERM: name=&quot;SIGTERM&quot;; break;
+         case SIGUSR1: name=&quot;SIGUSR1&quot;; break;
+         case SIGUSR2: name=&quot;SIGUSR2&quot;; break;
+         default: name=&quot;&lt;unlisted&gt;&quot;;
+     }
+     return name;
+   }
+
+   #ifdef WITH_MPI
+   /// Class for keeping track of shutdown message buffers and status for a certain shutdown code type
+   ShutdownMsg::ShutdownMsg(const int code, const std::string&amp; name)
+    : mpisize(0)
+    , myrank(0)
+    , mycode(code)
+    , name(name)
+    , buffers()
+    , buffer_status()
+    , req()
+    , comm(NULL)
+   {}
+
+   // Default constructor
+   ShutdownMsg::ShutdownMsg()
+    : mpisize(0)
+    , myrank(0)
+    , mycode(0)
+    , name()
+    , buffers()
+    , buffer_status()
+    , req()
+    , comm(NULL)
+   {}
+
+   void ShutdownMsg::setComm(GMPI::Comm* const c)
+   {
+       comm = c;
+       mpisize = comm-&gt;Get_size();
+       myrank = comm-&gt;Get_rank();
+       for(int i=0; i&lt;mpisize; i++)
+       {
+           buffers.push_back(mycode);
+           buffer_status.push_back(0);
+           req.push_back(MPI_Request());
+       }
+   }
+
+   // Send this code to all processes (non-blocking)
+   void ShutdownMsg::ISendToAll()
+   {
+       for(int i=0; i&lt;mpisize; i++)
+       {
+          if(i!=myrank)
+          {
+             if(buffer_status[i]!=0)
+             {
+                // Buffer already in use! Error!
+                std::ostringstream errmsg;
+                errmsg&lt;&lt;&quot;Tried to broadcast code &quot;&lt;&lt;name&lt;&lt;&quot; to all processes, but the send buffer for process &quot;&lt;&lt;i&lt;&lt;&quot; was already in use! This is a bug in the message send logic of the code using this object, please file a bug report.&quot;&lt;&lt;std::endl;
+                utils_error().raise(LOCAL_INFO, errmsg.str());
+             }
+             comm-&gt;Isend(&amp;buffers[i], 1, i, comm-&gt;mytag, &amp;req[i]);
+             buffer_status[i] = 1;
+          }
+       }
+   }
+
+   // Ensure all processes have received this message (completes the send; must follow ISendToAll at some point)
+   void ShutdownMsg::Wait()
+   {
+       for(int i=0; i&lt;mpisize; i++)
+       {
+          if(i!=myrank and buffer_status[i]==1)
+          {
+              comm-&gt;Wait(&amp;req[i]);
+              buffer_status[i] = 0;
+          }
+       }
+   }
+
+   /// Translate shutdown codes to strings
+   std::string SignalData::shutdown_name(int code)
+   {
+     std::string name;
+     switch(code){
+         case SOFT_SHUTDOWN:      name=&quot;SOFT_SHUTDOWN&quot;;      break;
+         case EMERGENCY_SHUTDOWN: name=&quot;EMERGENCY_SHUTDOWN&quot;; break;
+         case NO_MORE_MESSAGES:   name=&quot;NO_MORE_MESSAGES&quot;; break;
+         default: name=&quot;&lt;invalid shutdown code&gt;&quot;; break;
+     }
+     return name;
+   }
+
+   /// Shutdown code values. It is a stupid vagary of C++11 that these have external linkage.
+   constexpr int SignalData::SOFT_SHUTDOWN;
+   constexpr int SignalData::EMERGENCY_SHUTDOWN;
+   constexpr int SignalData::NO_MORE_MESSAGES;
+
+   #endif
+
+   /// @{ SignalData member functions
+
+   /// Constructor (initialise member variables)
+   SignalData::SignalData()
+     : jumppoint_set(false)
+     , havejumped(1) // set to zero after jump point set
+     , cleanup_function_set(false)
+     , rank(-1)
+     , shutdownBegun(0)
+     , emergency(0)
+     , POSIX_signal_noticed(false)
+     , shutdown_due_to_MPI_message(false)
+     , shutdown_attempts(0)
+     , attempts_since_ff(0)
+     , ff_loop_count(0)
+     , ff_on(false)
+     , ff_count(0)
+     , inside_omp_block(false)
+     , N_signals(0)
+     #ifdef WITH_MPI
+     , MPIsize(1)
+     , _comm_rdy(false)
+     , shutdown_broadcast_done(false)
+     , looptimes(1000)
+     , timeout(500)
+     , msgs()
+     #endif
+   {
+     #ifdef WITH_MPI
+     msgs[SOFT_SHUTDOWN]      = ShutdownMsg(SOFT_SHUTDOWN,shutdown_name(SOFT_SHUTDOWN));
+     msgs[EMERGENCY_SHUTDOWN] = ShutdownMsg(EMERGENCY_SHUTDOWN,shutdown_name(EMERGENCY_SHUTDOWN));
+     msgs[NO_MORE_MESSAGES]   = ShutdownMsg(NO_MORE_MESSAGES,shutdown_name(NO_MORE_MESSAGES));
+     #endif
+   }
+
+   /// Retrieve MPI rank as a string (for log messages etc.)
+   std::string SignalData::myrank()
+   {
+     std::ostringstream tmp;
+     #ifdef WITH_MPI
+     if(rank==-1) { tmp &lt;&lt; &quot;UNKNOWN&quot;; }
+     else         { tmp &lt;&lt; rank; }
+     #else
+     tmp &lt;&lt; &quot;(MPI DISABLED)&quot;;
+     #endif
+     return tmp.str();
+   }
+
+   /// Set jump point;
+   void SignalData::setjump()
+   {
+      havejumped = setjmp(env);
+      jumppoint_set = true;
+   }
+
+   /// Set cleanup function
+   void SignalData::set_cleanup(void_func f)
+   {
+      cleanup = f;
+      cleanup_function_set = true;
+   }
+
+   /// Call cleanup function
+   void SignalData::call_cleanup()
+   {
+      if(cleanup_function_set) cleanup();
+      // Do nothing if no function has been set;
+   }
+
+   /// Add signal to record
+   void SignalData::add_signal(int sig)
+   {
+     //std::cerr &lt;&lt; &quot; Adding signal &quot; &lt;&lt; sig &lt;&lt; std::endl; // debugging
+     if(N_signals&lt;MAX_SIGNALS) {
+        received_signals[N_signals] = sig;
+        N_signals+=1;
+     }
+     else
+     {
+        // no more space to record signals.
+        N_signals+=1;
+     }
+   }
+
+   /// Print to string a list of the signals received so far by this process
+   std::string SignalData::display_received_signals()
+   {
+     std::ostringstream myout;
+     if(N_signals &gt; 0 )
+     {
+       myout &lt;&lt; &quot;Caught the following signals (in order):&quot; &lt;&lt; std::endl;
+       for(int i=0; i&lt;N_signals; i++)
+       {
+         if(i&lt;MAX_SIGNALS)
+         {
+           myout &lt;&lt;&quot;#&quot;&lt;&lt;i+1&lt;&lt;&quot;: Signal &quot;&lt;&lt;received_signals[i]&lt;&lt;&quot; (&quot;&lt;&lt;signal_name(received_signals[i])&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+         }
+       }
+       if( (N_signals - MAX_SIGNALS) &gt; 0)
+       {
+         myout &lt;&lt; &quot;Another &quot; &lt;&lt; (N_signals - MAX_SIGNALS) &lt;&lt;&quot; signals were caught but their values were not recorded (buffer exceeded)&quot;&lt;&lt;std::endl;
+       }
+     }
+     return myout.str();
+   }
+
+   /// Register that shutdown has begun
+   void SignalData::set_shutdown_begun(const sig_atomic_t emergnc)
+   {
+     shutdownBegun = 1;
+     emergency = emergnc;
+     // // if(ignore_signals_during_shutdown)
+     // {
+     //    /// Redirect all future signals (except of course kill etc.) to the null handlers
+     //    signal(SIGTERM, sighandler_null);
+     //    signal(SIGINT,  sighandler_null);
+     //    signal(SIGUSR1, sighandler_null);
+     //    signal(SIGUSR2, sighandler_null);
+     // }
+   }
+
+   /// Check if shutdown is in progress
+   bool SignalData::shutdown_begun() { return shutdownBegun; }
+   //bool SignalData::emergency_shutdown_begun() { return shutdownBegun &amp; emergency; }
+
+   /// Attempt to synchronise all processes, but abort if it takes too long
+   bool SignalData::all_processes_ready()
+   {
+     #ifdef WITH_MPI
+       logger() &lt;&lt; &quot;Waiting up to &quot;&lt;&lt;timeout/1000&lt;&lt;&quot; seconds for all processes to sync...&quot; &lt;&lt; EOM;
+       // sleep setup
+       bool timedout = false;
+       std::chrono::milliseconds bar_timeout(std::lround(timeout));
+       if( signalComm-&gt;BarrierWithTimeout(bar_timeout, 9999) )
+       {
+         timedout = true; // Barrier timed out waiting for some process to enter
+       }
+       // else the barrier succeed in synchronising all processes
+       logger() &lt;&lt; &quot;Synchronised? &quot; &lt;&lt; !timedout &lt;&lt; EOM;
+       return !timedout;
+     #else
+       return true; // Always ready if no MPI
+     #endif
+   }
+
+   void SignalData::attempt_soft_shutdown()
+   {
+     const int max_attempts=-1; // Number of extra likelihood evaluations allowed for sync attempts before we declare failure. -1 means &quot;unlimited&quot;
+     const int attempts_before_ff=10; // Number of times to attempt synchronisation before entering a &quot;fast forward&quot; period
+     const int ff_loops=1000; // Number of &quot;fast-forward&quot; loops to perform in a fast-forward period
+
+     /// Start counting...
+     static std::chrono::time_point&lt;std::chrono::system_clock&gt; start(std::chrono::system_clock::now());
+
+     if(shutdown_attempts==0)
+     {
+        /// First time we see the shutdown signal, we will allow control to return to the scanner at least once,
+        /// so that it can get its own affairs in order.
+        logger() &lt;&lt; &quot;Beginning GAMBIT soft shutdown procedure. Control will be returned to the scanner plugin so &quot;
+                 &lt;&lt; &quot;that it can get its affairs in order in preparation for shutdown (it may cease iterating if &quot;
+                 &lt;&lt; &quot;it has that capability), and next iteration we will attempt to synchronise all processes and &quot;
+                 &lt;&lt; &quot;shut them down. If sync fails, we will loop up to &quot;&lt;&lt;max_attempts&lt;&lt;&quot; times (-1 means infinite), attempting to &quot;
+                 &lt;&lt; &quot;synchronise each time. If sync fails, an emergency shutdown will be attempted.&quot; &lt;&lt; EOM;
+        ++shutdown_attempts;
+     }
+     else if(ff_on)
+     {
+        logger() &lt;&lt; &quot;Fast-forward active (loop &quot;&lt;&lt;ff_loop_count&lt;&lt;&quot;); no synchronisation attempted.&quot; &lt;&lt; EOM;
+        // Fast-forward active; just increment counters and return
+        ++ff_loop_count;
+        if(ff_loop_count&gt;=ff_loops)
+        {
+          logger() &lt;&lt; &quot;Fast-forward period finished (performed &quot;&lt;&lt;ff_loop_count&lt;&lt;&quot; fast loops).&quot; &lt;&lt; EOM;
+          ff_on = false;
+          ff_loop_count=0;
+        }
+     }
+     else if(attempts_since_ff&gt;=attempts_before_ff)
+     {
+        // Enter &quot;fast-forward&quot; period
+        ff_on = true;
+        ++ff_count;
+        std::ostringstream msg;
+        msg &lt;&lt; &quot;rank &quot;&lt;&lt;myrank()&lt;&lt;&quot;: Tried to synchronise for shutdown (attempt &quot;&lt;&lt;shutdown_attempts&lt;&lt;&quot;) but failed. Will now fast-forward through &quot;&lt;&lt;ff_loops&lt;&lt;&quot; iterations in an attempt to 'unlock' possible MPI deadlocks with the scanner.&quot;;
+        std::cerr &lt;&lt; msg.str() &lt;&lt; std::endl;
+        logger() &lt;&lt; msg.str() &lt;&lt; EOM;
+        // Reset counters
+        attempts_since_ff=0;
+     }
+     else
+     {
+        // Normal sync attempt (no fast forward)
+        if(shutdown_attempts==1)
+        {
+           logger() &lt;&lt; &quot;Scanner did not shut down when given the chance; we will therefore assume responsibility for terminating the scan.&quot; &lt;&lt; EOM;
+        }
+        logger() &lt;&lt; &quot;Attempting to synchronise for soft shutdown (attempt &quot;&lt;&lt;shutdown_attempts&lt;&lt;&quot;)&quot; &lt;&lt; EOM;
+        if (all_processes_ready())
+        {
+          logger() &lt;&lt; &quot;Calling cleanup routines&quot; &lt;&lt; EOM;
+          call_cleanup();
+          std::ostringstream msg;
+          logger() &lt;&lt; &quot;Throwing soft shutdown exception&quot; &lt;&lt; EOM;
+          throw SoftShutdownException(msg.str());
+        }
+
+        // Compute elapsed time since shutdown began
+        std::chrono::time_point&lt;std::chrono::system_clock&gt; current = std::chrono::system_clock::now();
+        std::chrono::duration&lt;double&gt; time_waited = current - start;
+
+        if(max_attempts!=-1 and shutdown_attempts&gt;=max_attempts)
+        {
+          logger() &lt;&lt; &quot;Failed to synchronise for soft shutdown! Attempting cleanup anyway, but cannot guarantee safety of the scan output.&quot; &lt;&lt; EOM;
+          call_cleanup();
+          std::ostringstream msg;
+          #ifdef WITH_MPI
+          msg &lt;&lt; &quot;rank &quot;&lt;&lt;myrank()&lt;&lt;&quot;: &quot;;
+          #endif
+          msg &lt;&lt; &quot;Soft shutdown failed, emergency shutdown performed instead! (could not synchronise all processes after &quot;&lt;&lt;shutdown_attempts
+              &lt;&lt;&quot; attempts, and after waiting &quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::seconds&gt;(time_waited).count()
+              &lt;&lt;&quot; seconds; fast-forward periods of &quot;&lt;&lt;ff_loops&lt;&lt;&quot; iterations were performed &quot;&lt;&lt;ff_count
+              &lt;&lt;&quot; times). Data handled by external scanner codes may have been left in an inconsistent state.&quot; &lt;&lt; std::endl;
+          throw HardShutdownException(msg.str());
+        }
+        else
+        {
+          logger() &lt;&lt; &quot;Attempt to sync for soft shutdown failed (this was attempt &quot;&lt;&lt;shutdown_attempts&lt;&lt;&quot; of &quot;&lt;&lt;max_attempts&lt;&lt;&quot; (-1 means infinite)); &quot;
+                   &lt;&lt;std::chrono::duration_cast&lt;std::chrono::seconds&gt;(time_waited).count() &lt;&lt;&quot; seconds have elapsed since &quot;
+                   &lt;&lt;&quot;shutdown attempts began). Will allow evaluation to continue and attempt to sync again next iteration.&quot; &lt;&lt; EOM;
+        }
+        ++shutdown_attempts;
+        ++attempts_since_ff;
+     }
+   }
+
+   /// Check for signals that early shutdown is required
+   /// If an MPI message telling us to perform an emergency shutdown is received
+   /// (which should only happen in the case of an error on some other process) then
+   /// a shutdown exception is raised. Otherwise, we just return a bool indicating
+   /// the shutdown status
+   bool SignalData::check_if_shutdown_begun()
+   {
+     if(not shutdown_begun())
+     {
+        // If shutdown is not known to be in progress, check for MPI messages telling us to initiate shutdown
+        #ifdef WITH_MPI
+        /// Check for shutdown signals from other processes
+        #ifdef SIGNAL_DEBUG
+        logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Doing Iprobe to check for shutdown messages from other processes (with MPI tag &quot;&lt;&lt;signalComm-&gt;mytag&lt;&lt;&quot;)&quot; &lt;&lt; EOM;
+        #endif
+        if(signalComm-&gt;Iprobe(MPI_ANY_SOURCE, signalComm-&gt;mytag))
+        {
+          #ifdef SIGNAL_DEBUG
+          logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Shutdown message detected; doing Recv&quot; &lt;&lt; EOM;
+          #endif
+          int code;
+          MPI_Status msg_status;
+          signalComm-&gt;Recv(&amp;code, 1, MPI_ANY_SOURCE, signalComm-&gt;mytag, &amp;msg_status);
+
+          // Check what code was received and use it to determined what kind of shutdown to do
+          if(code==SOFT_SHUTDOWN)
+          {
+            set_shutdown_begun();
+            logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Received SOFT shutdown message from process with rank &quot; &lt;&lt; msg_status.MPI_SOURCE &lt;&lt; EOM;
+          }
+          else if(code==EMERGENCY_SHUTDOWN)
+          {
+            set_shutdown_begun(1); // '1' argument means emergency set also.
+            logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Received EMERGENCY shutdown message from process with rank &quot; &lt;&lt; msg_status.MPI_SOURCE &lt;&lt; EOM;
+          }
+          else
+          {
+            std::ostringstream ss;
+            ss &lt;&lt; &quot;Received UNRECOGNISED shutdown message from process with rank &quot; &lt;&lt; msg_status.MPI_SOURCE&lt;&lt;&quot;. Performing emergency shutdown, but please note that this indicates a ***BUG*** somewhere in the signal handling code!!!&quot;;
+            std::cout &lt;&lt; ss.str() &lt;&lt; std::endl;
+            logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; ss.str() &lt;&lt; EOM;
+            set_shutdown_begun(1); // '1' argument means emergency set also.
+          }
+
+          shutdown_due_to_MPI_message = true;
+        }
+        #ifdef SIGNAL_DEBUG
+        else
+        {
+           logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;No shutdown message detected; continuing as normal&quot; &lt;&lt; EOM;
+        }
+        #endif
+        #endif
+     }
+
+     // Check shutdown status again (might have changed due to MPI message receipt)
+     if(shutdown_begun())
+     {
+       if(not POSIX_signal_noticed and not shutdown_due_to_MPI_message)
+       {
+         std::ostringstream ss;
+         ss &lt;&lt; &quot;Process &quot;&lt;&lt;rank&lt;&lt;&quot;: Shutdown signal detected!&quot;&lt;&lt; std::endl;
+         // std::cerr &lt;&lt; ss.str();
+         logger() &lt;&lt; ss.str() &lt;&lt; display_received_signals() &lt;&lt; EOM;
+         POSIX_signal_noticed = true;
+       }
+
+       std::ostringstream ss;
+       static int loopi(0);
+       logger() &lt;&lt; &quot;Shutdown is in progress; emergency=&quot;&lt;&lt; emergency &lt;&lt;&quot; (loop=&quot;&lt;&lt;loopi&lt;&lt;&quot;)&quot;&lt;&lt; EOM;
+       ++loopi;
+       logger() &lt;&lt; ss.str() &lt;&lt; EOM;
+
+       #ifdef WITH_MPI
+       if(not shutdown_due_to_MPI_message) // Don't broadcast another shutdown message if we are shutting down due to an MPI message we received. Assume that all processes will get the first message (otherwise for 1000 process job we will end up with 1000*1000 shutdown messages clogging up the network)
+       {
+         // Broadcast shutdown message to all processes
+         int shutdown_code;
+         if(emergency)
+         {
+           shutdown_code = EMERGENCY_SHUTDOWN;
+         }
+         else
+         {
+           shutdown_code = SOFT_SHUTDOWN;
+         }
+         broadcast_shutdown_signal(shutdown_code);
+       }
+       else if(emergency)
+       {
+         throw MPIShutdownException(&quot;Received emergency shutdown command via MPI! Terminating run.&quot;);
+       }
+       #endif
+
+     }
+     return shutdown_begun();
+   }
+
+
+   /// Add a new loop time to internal array used to decide barrier timeout
+   void SignalData::update_looptime(double /*newtime*/)
+   {
+     // Leave this as 1 second now that likelihood calculation is disabled during shutdown
+   }
+
+   /// Absorb any extra shutdown messages that may be unreceived
+   /// (since every process broadcasts to every other process that it should shut down,
+   /// so with lots of processess there will be lots of unreceived messages floating
+   /// around)
+   #ifdef WITH_MPI
+   void SignalData::discard_excess_shutdown_messages()
+   {
+     /// Check for shutdown signals from other processes
+     #ifdef SIGNAL_DEBUG
+     logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Doing Iprobe to check for shutdown signals from other processes (with MPI tag &quot;
+              &lt;&lt;signalComm-&gt;mytag&lt;&lt;&quot;). These will be discarded (since we are inside the 'discard_excess_shutdown_messages' routine)&quot; &lt;&lt; EOM;
+     #endif
+     int max_loops = 2*signalComm-&gt;Get_size(); // At most should be one message from every process (minus one), so we will check twice as many times as this before deciding that something has gone horribly wrong.
+
+     int code;
+     signalComm-&gt;Recv_all(&amp;code, 1, MPI_ANY_SOURCE, signalComm-&gt;mytag, max_loops);
+   }
+
+   /// This function makes absolutely sure that there are no more shutdown messages
+   /// to recv from any processes. It does this by making sure that every process
+   /// has sent a message to confirm that it isn't going to send any more shutdown
+   /// messages
+   void SignalData::ensure_no_more_shutdown_messages()
+   {
+     int mpiSize = signalComm-&gt;Get_size();
+     int myRank = signalComm-&gt;Get_rank();
+
+     // Recv all shutdown messages from other processes
+     logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::debug &lt;&lt; &quot;Receiving all shutdown messages&quot; &lt;&lt; EOM;
+     for(int rank=0; rank&lt;mpiSize; rank++)
+     {
+        if(rank!=myRank)
+        {
+           //std::cerr&lt;&lt;&quot;Rank &quot;&lt;&lt;myRank&lt;&lt;&quot; attempting to cleanup shutdown messages from rank &quot;&lt;&lt;rank&lt;&lt;std::endl;
+           int loop = 0;
+           bool more_messages = true;
+           while(more_messages)
+           {
+              int code;
+              //std::cerr&lt;&lt;&quot;Rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Messages waiting from rank &quot;&lt;&lt;rank&lt;&lt;&quot;? &quot;&lt;&lt;signalComm-&gt;Iprobe(rank, signalComm-&gt;mytag)&lt;&lt;std::endl;
+              signalComm-&gt;Recv(&amp;code, 1, rank, signalComm-&gt;mytag);
+              //std::cerr&lt;&lt;&quot;Rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: received code &quot;&lt;&lt;shutdown_name(code)&lt;&lt;&quot; from rank &quot;&lt;&lt;rank&lt;&lt;std::endl;
+              if(code==NO_MORE_MESSAGES) more_messages = false;
+              loop++;
+              if(loop&gt;2*mpiSize)
+              {
+                 // I think there should only be one shutdown message from each process, so this
+                 // condition is extreme and definitely indicates a problem.
+                 std::ostringstream errmsg;
+                 errmsg&lt;&lt;&quot;ensure_no_more_shutdown_messages function has been looping on rank &quot;&lt;&lt;myRank&lt;&lt;&quot; for &quot;&lt;&lt;loop&lt;&lt;&quot; iterations (receiving messages from rank &quot;&lt;&lt;rank&lt;&lt;&quot; process), but there are only &quot;&lt;&lt;mpiSize&lt;&lt;&quot; processes in this job. There should not be anywhere near this many shutdown messages to receive, so something has gone horribly wrong. Please report this as a bug.&quot;;
+                 utils_error().raise(LOCAL_INFO, errmsg.str());
+              }
+           }
+        }
+     }
+
+     // Ensure all shutdown messages from this process have been fully sent
+     // (not necessary for the corresponding Recv's to complete, so no deadlock problem,
+     // but needed to confirm that the messages were sent and allow MPI to clean them up
+     // properly).
+     logger()&lt;&lt;LogTags::core &lt;&lt; LogTags::info&lt;&lt;&quot;Cleaning up shutdown message send buffers&quot;&lt;&lt;EOM;
+     for(auto it=msgs.begin(); it!=msgs.end(); ++it)
+     {
+        it-&gt;second.Wait();
+     }
+   }
+   #endif
+
+   /// @{ TODO: Thread checking routines are no longer needed due to simplified shutdown method. Can be deleted when functors are updated to no longer call these routines.
+
+   /// Switch to threadsafe signal handling mode
+   void SignalData::entering_multithreaded_region()
+   {
+      inside_omp_block = 1;
+      // Debugging
+      //std::cerr &lt;&lt; &quot;rank &quot; &lt;&lt; rank &lt;&lt;&quot;: ENTERING_MULTITHREADED_REGION&quot; &lt;&lt; std::endl;
+      //std::cerr &lt;&lt; &quot;rank &quot; &lt;&lt; rank &lt;&lt;&quot;: signaldata().inside_omp_block=1 &quot; &lt;&lt; std::endl;
+   }
+
+   /// Exit threadsafe signal handling mode
+   void SignalData::leaving_multithreaded_region()
+   {
+      inside_omp_block = 0;
+      // Debugging
+      //std::cerr &lt;&lt; &quot;rank &quot; &lt;&lt; rank &lt;&lt;&quot;: LEAVING_MULTITHREADED_REGION&quot; &lt;&lt; std::endl;
+      //std::cerr &lt;&lt; &quot;rank &quot; &lt;&lt; rank &lt;&lt;&quot;: signaldata().inside_omp_block=0 &quot; &lt;&lt; std::endl;
+   }
+
+   /// Report 'true' if inside a multithreaded region (according to our own flag)
+   bool SignalData::inside_multithreaded_region()
+   {
+      return inside_omp_block;
+   }
+
+   /// @}
+
+   #ifdef WITH_MPI
+   /// Report if MPI communicator object is prepared
+   bool SignalData::comm_ready() { return (GMPI::Is_initialized() and _comm_rdy); }
+
+   /// Set the MPI communicator object for the session
+   /// Can be run multiple times, but I would not advise doing that.
+   void SignalData::set_MPI_comm(GMPI::Comm* comm)
+   {
+       signalComm = comm;
+       _comm_rdy = true;
+       rank = comm-&gt;Get_rank();
+       MPIsize = comm-&gt;Get_size();
+       // Set communicator for shutdown message objects
+       for(auto it=msgs.begin(); it!=msgs.end(); ++it)
+       {
+          it-&gt;second.setComm(comm);
+       }
+   }
+
+   /// Broadcast signal to shutdown all processes
+   void SignalData::broadcast_shutdown_signal(int shutdown_code)
+   {
+     if(MPIsize&gt;1)
+     {
+       if(shutdown_code==NO_MORE_MESSAGES or not shutdown_broadcast_done)
+       {
+         if(comm_ready())
+         {
+           // Broadcast signal to all processes (might not work if something errornous is occuring)
+           #ifdef SIGNAL_DEBUG
+           logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Broadcasting shutcode code &quot; &lt;&lt;shutdown_name(shutdown_code)&lt;&lt; &quot; with MPI tag &quot;&lt;&lt;signalComm-&gt;mytag&lt;&lt; EOM;
+           #endif
+           msgs[shutdown_code].ISendToAll();
+           logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; shutdown_name(shutdown_code) &lt;&lt;&quot; code broadcast to all processes&quot; &lt;&lt; EOM;
+          }
+         else
+         {
+           /// Should not be broadcasting
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Tried to broadcast_shutdown_signal (&quot;&lt;&lt;shutdown_name(shutdown_code)&lt;&lt;&quot;), but MPI communicator is not ready! (either MPI is uninitialised or a communicator has not been set). This is a bug, please report it.&quot;;
+           utils_error().raise(LOCAL_INFO, errmsg.str());
+         }
+         shutdown_broadcast_done = true;
+       } // Don't need to broadcast twice (NOTE: might need to trigger change from soft to emergency shutdown?)
+       #ifdef SIGNAL_DEBUG
+       else
+       {
+         logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Received instruction to broadcast code &quot; &lt;&lt;shutdown_name(shutdown_code)
+                  &lt;&lt;&quot;, however shutdown_broadcast_done=true is already set, so skipping the broadcast!&quot;&lt;&lt; EOM;
+       }
+       #endif
+     }
+   }
+   #endif
+
+   /// @}
+
+   /// Retrieve global instance of signal handler options struct
+   SignalData&amp; signaldata()
+   {
+     static SignalData data;
+     #ifdef WITH_MPI
+     // If we are using MPI, it is required that the signaldata object be initialised with a communicator object
+     // This 'ifdef' block ensures that this happens, or else throws an error.
+     static int access_count = 0;
+     if(access_count==0){ access_count += 1; }
+     else if(access_count==1)
+     {
+       // Check that communicator object has been initialised
+       if(not data.comm_ready())
+       {
+          std::ostringstream errmsg;
+          errmsg &lt;&lt; &quot;Error retrieving global SignalData object! An MPI communicator has not been provided to this object! Please provide one via the 'set_MPI_comm' the first time that 'signaldata()' is called.&quot;;
+          utils_error().raise(LOCAL_INFO, errmsg.str());
+       }
+     }
+     #endif
+     return data;
+   }
+
+   /// ========================================================================
+   /// ========================================================================
+
+   /// @{ Signal handler functions
+
+   /// We used to have more of these, but now we only use the &quot;soft shutdown&quot; signal handler.
+
+   /// Sets a &quot;shutdown_begun&quot; flag, which is checked each likelihood loop,
+   /// after which MPI synchronisation followed by clean shutdown is attempted.
+   void sighandler_soft(int sig)
+   {
+     // We will avoid touching streams in this &quot;clean&quot; shutdown mode since technically it is undefined behaviour, so no messages here.
+     signaldata().set_shutdown_begun();
+     signaldata().add_signal(sig); // I think this should be ok... but can delete it if there are any problems
+   }
+
+   /// @}
+
+   /// TODO: Mostly obsolete
+   /// Choose signal handler for a given signal via yaml file option
+   void set_signal_handler(const YAML::Node&amp; keyvalnode, const int sig, const std::string&amp; def_mode)
+   {
+       std::string shutdown_mode;
+       if(keyvalnode[&quot;signal_handling&quot;]) {
+          YAML::Node signal_options = keyvalnode[&quot;signal_handling&quot;];
+          if(signal_options[signal_name(sig)]) {
+             shutdown_mode = signal_options[signal_name(sig)].as&lt;std::string&gt;();
+          }else{
+             shutdown_mode = def_mode;
+          }
+       }else{
+          shutdown_mode = def_mode;
+       }
+       logger()&lt;&lt; &quot;Setting action on &quot;&lt;&lt;signal_name(sig)&lt;&lt;&quot; to '&quot;&lt;&lt;shutdown_mode&lt;&lt;&quot;'&quot;&lt;&lt;EOM;
+       // if      (shutdown_mode==&quot;hard_shutdown&quot;){      signal(sig, sighandler_hard);      }
+       // else if (shutdown_mode==&quot;emergency_shutdown&quot;){ signal(sig, sighandler_emergency); }
+       // else if (shutdown_mode==&quot;emergency_shutdown_longjmp&quot;){ signal(sig, sighandler_emergency_longjmp); }
+       //else
+       if (shutdown_mode==&quot;soft_shutdown&quot;){      signal(sig, sighandler_soft);      }
+       //else if (shutdown_mode==&quot;null&quot;){               signal(sig, sighandler_null);      }
+       else {
+           std::ostringstream msg;
+           msg &lt;&lt; &quot;Invalid shutdown mode requested for signal &quot;&lt;&lt;signal_name(sig)&lt;&lt;&quot; (&quot;&lt;&lt;sig&lt;&lt;&quot;)&quot;&lt;&lt;&quot; (via YAML file option '&quot;&lt;&lt;signal_name(sig)&lt;&lt;&quot;' in KeyValue section under 'signal_handling'). Value received was '&quot;&lt;&lt;shutdown_mode&lt;&lt;&quot;'. Valid shutdown modes are:&quot; &lt;&lt;std::endl;
+           msg &lt;&lt; &quot;   'hard_shutdown'              -- Exit immediately.&quot; &lt;&lt;std::endl;
+           msg &lt;&lt; &quot;   'emergency_shutdown'         -- Attempt to save printer/resume data and then immediately exit.&quot; &lt;&lt;std::endl;
+           msg &lt;&lt; &quot;   'emergency_shutdown_longjmp' -- Longjmp to outside of likelihood loop, then attempt to save printer/resume data and exit&quot;&lt;&lt;std::endl;
+           msg &lt;&lt; &quot;   'soft_shutdown'              -- Safest: attempt to synchronise processes at safe location, then save printer/resume data and exit.&quot; &lt;&lt;std::endl;
+           msg &lt;&lt; &quot;   'null'                       -- Ignore signal. Use at own risk!&quot; &lt;&lt;std::endl;
+           msg &lt;&lt; &quot;The default shutdown mode on signal &quot;&lt;&lt;signal_name(sig)&lt;&lt;&quot; is '&quot;&lt;&lt;def_mode&lt;&lt;&quot;'.&quot; &lt;&lt;std::endl;
+           std::cerr &lt;&lt; msg.str();
+           std::cerr &lt;&lt; std::endl;
+           exit(EXIT_FAILURE);
+       }
+   }
+
+}
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

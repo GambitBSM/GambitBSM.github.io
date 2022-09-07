@@ -1,0 +1,454 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/util_functions.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/util_functions.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/util_functions.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/util_functions.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/","url":"https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/","name":"file src\/util_functions.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/util__functions_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file src\/util_functions.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/util_functions.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-util-functions-cpp>file src/util_functions.cpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1utils/>Gambit::Utils</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</li><li>Ben Farmer (<a href=mailto:benjamin.farmer@monash.edu.au>benjamin.farmer@monash.edu.au</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 Apr, July, Aug, Sep</li><li>2014 Mar</li><li>2013 May, June, July</li></ul><p>General small utility functions.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  General small utility functions.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 Apr, July, Aug, Sep
+///  \date 2014 Mar
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2013 May, June, July
+///
+///  *********************************************
+
+/// Standard libraries
+#include &lt;cstring&gt;
+#include &lt;chrono&gt;  // chrono::system_clock
+#include &lt;ctime&gt;   // localtime
+#include &lt;cctype&gt;  // ::tolower function
+#include &lt;sstream&gt; // stringstream
+#include &lt;string&gt;  // string
+#include &lt;regex&gt;   // regular expressions
+
+/// POSIX filesystem libraries
+#include &lt;stdio.h&gt;
+#include &lt;sys/types.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;dirent.h&gt;
+#include &lt;libgen.h&gt;
+#include &lt;unistd.h&gt;
+
+/// Gambit
+#include &quot;gambit/Utils/util_functions.hpp&quot;
+#include &quot;gambit/cmake/cmake_variables.hpp&quot;
+#include &quot;gambit/Utils/mpiwrapper.hpp&quot;
+
+/// Boost
+#include &lt;boost/algorithm/string/iter_find.hpp&gt;
+#include &lt;boost/algorithm/string/finder.hpp&gt;
+#include &lt;boost/algorithm/string/replace.hpp&gt;
+
+namespace Gambit
+{
+
+  namespace Utils
+  {
+
+    const char* whitespaces[] = {&quot; &quot;, &quot;\t&quot;, &quot;\n&quot;, &quot;\f&quot;, &quot;\r&quot;};
+
+    /// Return the path to the run-specific scratch directory
+    /// Don't call this from a destructor, as the internal static str may have already been destroyed.
+    const str&amp; runtime_scratch()
+    {
+      static const str path = construct_runtime_scratch();
+      return path;
+    }
+
+    /// Construct the path to the run-specific scratch directory
+    /// This version is safe to call from a destructor.
+    str construct_runtime_scratch(bool
+    #ifdef WITH_MPI
+      fail_on_mpi_uninitialised
+    #endif
+    )
+    {
+      str master_procID;
+      #ifdef WITH_MPI
+        if (GMPI::Is_initialized() and not GMPI::Is_finalized())
+        {
+          master_procID = &quot;/master_process_&quot; + std::to_string(GMPI::Comm().MasterPID());
+        }
+        else
+        {
+          if (fail_on_mpi_uninitialised)
+            utils_error().raise(LOCAL_INFO, &quot;Tried to call construct_runtime_scratch without MPI initialised!&quot;);
+          master_procID = &quot;/unattached_MPI_process_&quot; + std::to_string(getpid());
+        }
+      #else
+        master_procID = &quot;/master_process_&quot; + std::to_string(getpid());
+      #endif
+      return ensure_path_exists(GAMBIT_DIR &quot;/scratch/run_time/machine_&quot; + std::to_string(gethostid()) + master_procID + &quot;/&quot;);
+    }
+
+    /// Convert all instances of &quot;p&quot; in a string to &quot;.&quot;
+    str p2dot(str s)
+    {
+      boost::replace_all(s, &quot;p&quot;, &quot;.&quot;);
+      return s;
+    }
+
+    /// Split a string into a vector of strings using a delimiter,
+    /// and remove any whitespace around the delimiters.
+    std::vector&lt;str&gt; delimiterSplit(str s, str delim)
+    {
+      std::vector&lt;str&gt; vec;
+      // Get rid of any whitespace around the delimiters
+      std::regex rgx1(&quot;\\s+&quot;+delim), rgx2(delim+&quot;\\s+&quot;);
+      s = std::regex_replace(s, rgx1, delim);
+      s = std::regex_replace(s, rgx2, delim);
+      if (s == &quot;&quot;) return vec;
+      // Split up the list of versions by the delimiters
+      boost::split(vec, s, boost::is_any_of(delim), boost::token_compress_on);
+      return vec;
+    }
+
+    /// Strips namespace from the start of a string, or after &quot;const&quot;.
+    str strip_leading_namespace(str s, str ns)
+    {
+      std::regex expression(&quot;(^|[\\s\\*\\&amp;\\(\\,\\[])&quot;+ns+&quot;::&quot;);
+      s = std::regex_replace(s, expression, str(&quot;$1&quot;));
+      return s;
+    }
+
+    /// Replaces a namespace at the start of a string, or after &quot;const&quot;.
+    str replace_leading_namespace(str s, str ns, str ns_new)
+    {
+      std::regex expression(&quot;(^|[\\s\\*\\&amp;\\(\\,\\[])&quot;+ns+&quot;::&quot;);
+      s = std::regex_replace(s, expression, str(&quot;$1&quot;)+ns_new+&quot;::&quot;);
+      return s;
+    }
+
+    /// Strips all whitespaces from a string, but re-inserts a single regular space after &quot;const&quot;.
+    void strip_whitespace_except_after_const(str &amp;s)
+    {
+      str tempstr(&quot;__TEMP__&quot;), empty(&quot;&quot;), constdec2(&quot;const &quot;);
+      std::regex constdec1(&quot;const\\s+&quot;), temp(tempstr), whitespace(&quot;\\s+&quot;);
+      s = std::regex_replace(s, constdec1, tempstr);
+      s = std::regex_replace(s, whitespace, empty);
+      s = std::regex_replace(s, temp, constdec2);
+    }
+
+    /// Strips leading and/or trailing parentheses from a string.
+    void strip_parentheses(str &amp;s)
+    {
+      if (s.at(0) == '(')       s = s.substr(1, s.size());
+      if (*s.rbegin() == ')')   s = s.substr(0, s.size()-1);
+    }
+
+    /// Test if a set of str,str pairs contains any entry with first element matching a given string
+    bool sspairset_contains(const str&amp; el, const std::set&lt;std::pair&lt;str,str&gt;&gt;&amp; set)
+    {
+      for (std::pair&lt;str,str&gt; x : set) { if (x.first == el) return true; }
+      return false;
+    }
+
+    /// Tests if a set of str,str pairs contains an entry matching two given strings
+    bool sspairset_contains(const str&amp; el1, const str&amp; el2, const std::set&lt;std::pair&lt;str,str&gt;&gt;&amp; set)
+    {
+      return sspairset_contains(std::pair&lt;str,str&gt;(el1, el2), set);
+    }
+
+    /// Tests if a set of str,str pairs contains an entry matching a given pair
+    bool sspairset_contains(const sspair&amp; quantity, const std::set&lt;sspair&gt;&amp; set)
+    {
+      return std::find(set.begin(), set.end(), quantity) != set.end();
+    }
+
+    /// Created a std::string of a specified length.
+    str str_fixed_len(str s, int len)
+    {
+      int oldlen = s.length();
+      if (oldlen &gt; len)
+      {
+        return s.substr(0,len-1);
+      }
+      else if (oldlen &lt; len)
+      {
+        s.append(len-oldlen,' ');
+      }
+      return s;
+    }
+
+    /// Check if a string represents an integer
+    /// From: http://stackoverflow.com/a/2845275/1447953
+    bool isInteger(const std::string &amp; s)
+    {
+       if(s.empty() || ((!isdigit(s[0])) &amp;&amp; (s[0] != '-') &amp;&amp; (s[0] != '+'))) return false ;
+
+       char * p ;
+       strtol(s.c_str(), &amp;p, 10) ;
+
+       return (*p == 0) ;
+    }
+
+    /// Copy a std::string to a character array, stripping the null termination character.  Good for sending to Fortran.
+    void strcpy2f(char* arr, int len, str s)
+    {
+      s = str_fixed_len(s, len-1);
+      strcpy(arr, s.c_str());
+      arr[len-1] = ' ';
+    }
+
+    /// Perform a simple case-insensitive string comparison
+    /// From: https://stackoverflow.com/a/4119881/1447953
+    bool iequals(const std::string&amp; a, const std::string&amp; b, bool case_sensitive)
+    {
+        if(case_sensitive)
+            return a==b;
+        unsigned int sz = a.size();
+        if (b.size() != sz)
+            return false;
+        for (unsigned int i = 0; i &lt; sz; ++i)
+            if (tolower(a[i]) != tolower(b[i]))
+                return false;
+        return true;
+    }
+
+    /// Split string into vector of strings, using a delimiter string
+    std::vector&lt;std::string&gt; split(const std::string&amp; input, const std::string&amp; delimiter)
+    {
+        std::vector&lt;std::string&gt; result;
+        boost::iter_split(result, input, boost::algorithm::first_finder(delimiter));
+        return result;
+    }
+
+    /// Convert a whole string to lowercase
+    std::string strtolower(const std::string&amp; a)
+    {
+        unsigned int sz = a.size();
+        std::string b = a;
+        for (unsigned int i = 0; i &lt; sz; ++i)
+        { b[i] = tolower(a[i]); }
+        return b;
+    }
+
+    /// Ensure that a path exists (and then return the path, for chaining purposes)
+    const std::string&amp; ensure_path_exists(const std::string&amp; path)
+    {
+       // Split off potential filename
+       // If only path is provided, it must end in a slash!!!
+       size_t found = path.find_last_of(&quot;/\\&quot;);
+       if (found != std::string::npos)
+       {
+         std::string prefix = path.substr(0,found);
+         recursive_mkdir( prefix.c_str() );
+       }
+       return path;
+    }
+
+    /// Check if a file exists
+    bool file_exists(const std::string&amp; filename)
+    {
+        //std::ifstream file(filename);
+        //return not file.fail();
+        struct stat buffer;
+        return (stat(filename.c_str(), &amp;buffer) == 0);
+    }
+
+    /// Return a vector of strings listing the contents of a directory (POSIX)
+    /// Based on http://www.gnu.org/software/libtool/manual/libc/Simple-Directory-Lister.html
+    std::vector&lt;std::string&gt; ls_dir(const std::string&amp; dir)
+    {
+      std::vector&lt;std::string&gt; dir_contents;
+      DIR *dp;
+      struct dirent *ep;
+      dp = opendir(dir.c_str());
+
+      if( dp != NULL )
+      {
+        while( (ep = readdir(dp)) )
+        {
+          dir_contents.push_back(ep-&gt;d_name);
+        }
+        (void) closedir(dp);
+      }
+      else
+      {
+        std::string msg = &quot;Utils::ls_dir function failed to open the directory '&quot;+dir+&quot;'!&quot;;
+        std::cerr &lt;&lt; msg &lt;&lt; std::endl;
+        abort();
+      }
+      return dir_contents;
+    }
+
+    /// Get directory name from full path+filename (POSIX)
+    std::string dir_name(const std::string&amp; path)
+    {
+       char buffer[1000]; // temporary buffer for dirname to work with (it is a C function)
+       path.copy(buffer, path.size()); //TODO: error if path.size()&gt;1000
+       buffer[path.size()] = '\0';
+       std::string result = dirname(&amp;buffer[0]); // should use the C function...
+       return result;
+    }
+
+    /// Get file name from full path+filename (POSIX)
+    std::string base_name(const std::string&amp; path)
+    {
+       char buffer[1000]; // temporary buffer for basename to work with (it is a C function)
+       path.copy(buffer, path.size()); //TODO: error if path.size()&gt;1000
+       buffer[path.size()] = '\0';
+       std::string result = basename(&amp;buffer[0]); // should use the C function...
+       return result;
+    }
+
+    /// Delete all files in a directory (does not act recursively)
+    int remove_all_files_in(const str&amp; dirname, bool error_if_absent)
+    {
+      struct dirent *pDirent;
+      DIR *pDir;
+      pDir = opendir(dirname.c_str());
+      if (pDir == NULL)
+      {
+        if (error_if_absent)
+        {
+          utils_error().raise(LOCAL_INFO, &quot;Directory &quot;+dirname+&quot; not found.&quot;);
+        }
+        else
+        {
+          return 1;
+        }
+      }
+      while ( (pDirent = readdir(pDir)) != NULL )
+      {
+        // Delete the contents
+        if ( strcmp(pDirent-&gt;d_name, &quot;.&quot;) and strcmp(pDirent-&gt;d_name, &quot;..&quot;) )
+        {
+          std::ostringstream ss;
+          ss &lt;&lt; dirname &lt;&lt; pDirent-&gt;d_name;
+          cout &lt;&lt; &quot;Deleting &quot; &lt;&lt; ss.str() &lt;&lt; endl;
+          remove(ss.str().c_str());
+        }
+      }
+      closedir (pDir);
+      return 0;
+    }
+
+    /// Get current system clock time
+    time_point get_clock_now()
+    {
+        return std::chrono::system_clock::now();
+    }
+
+    /// Return (locally defined) date and time corresponding to time_point
+    std::string return_time_and_date(const time_point&amp; in)
+    {
+        std::time_t t = std::chrono::system_clock::to_time_t(in);
+
+        std::string ts = std::ctime(&amp;t); // for example : Tue Sep 27 14:21:13 2011\n
+        ts.resize(ts.size()-1); // Remove the annoying trailing newline
+        return ts;
+    }
+
+    /// Check if two strings are a &quot;close&quot; match
+    /// Used for &quot;did you mean?&quot; type checking during command line argument processing
+    bool are_similar(const std::string&amp; s1, const std::string&amp; s2)
+    {
+      if(check1(s1,s2) or check1(s2,s1)){ return true; }
+      else if(check2(s1,s2)){ return true; } // symmetric
+      else{ return false; }
+      //TODO: Add more checks? These ones are pretty minimal. Maybe something that computes percentage match between strings...
+    }
+
+    /// true if s1 can be obtained by deleting one character from s2
+    bool check1(const std::string&amp; s1, const std::string&amp; s2)
+    {
+      if(s2.length() - s1.length() != 1){ return false; }
+      unsigned int i,j;
+      for(i=0,j=0; i&lt;s2.length(); i++,j++)
+      {
+          if(s2[i] == s1[j])
+          {/*do  nothing*/}
+          else if(i == j)
+          { j++;}
+          else
+          {return false;}
+      }
+      return true;
+    }
+
+    /// true if s1 can be obtained from s2 by changing no more than X characters (X=2 for now)
+    bool check2(const std::string&amp; s1, const std::string&amp; s2)
+    {
+      unsigned int error_limit = 2;
+      unsigned int number_of_errors = 0;
+
+      if(s2.length() != s1.length()){ return false; }
+      unsigned int i,j;
+      for(i=0,j=0; i&lt;s2.length(); i++,j++)
+      {
+          if(s2[i] == s1[j])
+          {/*do  nothing*/}
+          else if(number_of_errors &lt;= error_limit)
+          { number_of_errors++;}
+          else
+          {return false;}
+      }
+      return true;
+    }
+
+    /// returns square of double - saves tedious repetition
+    double sqr(double a)
+    {
+      return a * a;
+    }
+
+    /// Checks whether `str' ends with `suffix'
+    // credit: http://stackoverflow.com/a/41041484/1447953
+    bool endsWith(const std::string&amp; str, const std::string&amp; suffix)
+    {
+      if (&amp;suffix == &amp;str) return true; // str and suffix are the same string
+      if (suffix.length() &gt; str.length()) return false;
+      size_t delta = str.length() - suffix.length();
+      for (size_t i = 0; i &lt; suffix.length(); ++i) {
+          if (suffix[i] != str[delta + i]) return false;
+      }
+      return true;
+    }
+
+    // Inspired by the above. Checks whether 'str' begins with 'prefix'
+    bool startsWith(const std::string&amp; str, const std::string&amp; prefix, bool case_sensitive)
+    {
+      if (&amp;prefix == &amp;str) return true; // str and prefix are the same string
+      if (prefix.length() &gt; str.length()) return false;
+      for (size_t i = 0; i &lt; prefix.length(); ++i) {
+          if(case_sensitive)
+          {
+             if (prefix[i] != str[i]) return false;
+          }
+          else
+          {
+             if (tolower(prefix[i]) != tolower(str[i])) return false;
+          }
+      }
+      return true;
+    }
+
+
+  }
+
+}
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

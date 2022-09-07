@@ -1,0 +1,658 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file scripts/harvesting_tools.py - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file scripts/harvesting_tools.py"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file scripts/harvesting_tools.py"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file scripts/harvesting_tools.py"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/","url":"https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/","name":"file scripts\/harvesting_tools.py","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/harvesting__tools_8py/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file scripts\/harvesting_tools.py"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file scripts/harvesting_tools.py</li></ol></nav><p class=lead></p><h1 id=file-scripts-harvesting-tools-py>file scripts/harvesting_tools.py</h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespaceharvesting__tools/>harvesting_tools</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>#!/usr/bin/env python
+#
+# GAMBIT: Global and Modular BSM Inference Tool
+#*********************************************
+# \file
+#
+#  Tools for harvester scripts.
+#
+#*********************************************
+#
+#  Authors (add name and date if you modify):
+#
+#  \author Ben Farmer
+#          (b.farmer@imperial.ac.uk)
+#    \date 2013 Sep
+#          2014 Jan
+#          2015 Jul
+#          2018 Oct
+#
+#  \author Pat Scott
+#          (patscott@physics.mcgill.ca)
+#    \date 2013 Oct, Nov
+#    \date 2014 Jan, Nov
+#    \date 2015 Feb
+#
+#  \author Tomas Gonzalo
+#          (tomas.gonzalo@monash.edu)
+#    \date 2018 Oct
+#    \date 2021 Mar
+#
+#*********************************************
+import os
+import re
+import datetime
+import sys
+import getopt
+import itertools
+import shutil
+import ctypes
+import io
+
+# Python 2/3 compatibility
+# izip_longest renamed to zip_longest in Python 3
+try:
+    from itertools import izip_longest as zip_longest
+except ImportError:
+    from itertools import zip_longest
+
+default_bossed_versions = &quot;./Backends/include/gambit/Backends/default_bossed_versions.hpp&quot;
+equiv_config = &quot;./config/resolution_type_equivalency_classes.yaml&quot;
+
+# Load the default_bossed_versions.hpp header, and work out the namespace aliases.
+def get_default_boss_namespaces():
+    result = dict()
+    # Load the default_bossed_version header.
+    with (io.open(default_bossed_versions, encoding='utf-8')) as f:
+        for newline in readlines_nocomments(f):
+            newline = newline.strip()
+            if not newline.startswith(&quot;#define&quot;): continue
+            line = neatsplit('\s',newline)
+            if not line[1].startswith(&quot;Default_&quot;): continue
+            key = line[1][len(&quot;Default_&quot;):]
+            result[key] = line[2]
+    return result
+
+# Load type equivalencies yaml file and return a dictionary containing all the equivalency classes.
+# Just use regex rather than pyYAML, as the latter chokes on :: in scalar entries &gt;:-/
+def get_type_equivalencies(nses):
+    from collections import defaultdict
+    result = defaultdict(list)
+    # Load the equivalencies yaml file
+    with io.open(equiv_config, encoding='utf-8') as f:
+        for newline in readlines_nocomments(f):
+            newline = newline.strip()
+            if newline == &quot;&quot; or newline.startswith(&quot;#&quot;): continue
+            newline = re.sub(&quot;^\[\s*|\s*\]&quot;, &quot;&quot;, newline)
+            equivalency_class = list()
+            for member in re.findall(&quot;[^,]*?\(.*?\)[^,]*?\(.*?\).*?,|[^,]*?&lt;.*?&gt;.*?,|[^,]*?\(.*?\).*?,|[^&gt;\)]*?,&quot;, newline+&quot;,&quot;):
+              member = re.sub(&quot;\&quot;&quot;,&quot;&quot;,member[:-1].strip())
+              # Convert the leading BOSSed namespace for the default version to the explicit namespace of the actual version
+              for key in nses:
+                ns_default = key+&quot;_default&quot;+&quot;::&quot;
+                ns_true = key+&quot;_&quot;+nses[key]+&quot;::&quot;
+                if member.startswith(ns_default): member = ns_true+member[len(ns_default):]
+                member = re.sub(&quot;\s&quot;+ns_default,&quot; &quot;+ns_true,member)
+
+              # If the type is an alias of a native int then add int to the equivalency class
+              if re.match(&quot;int[0-9]+_t&quot;, member):
+                if ( ctypes.sizeof(ctypes.c_int) == 4 and re.search(&quot;32&quot;, member) ) or ( ctypes.sizeof(ctypes.c_int) == 2 and re.search(&quot;16&quot;, member) ) :
+                  if 'int' not in equivalency_class:
+                    equivalency_class+=['int']
+              if member not in equivalency_class:
+                equivalency_class += [member]
+            for member in equivalency_class: result[member] = equivalency_class
+
+    # Debug output
+    # print('Type equivalencies:')
+    # print(result)
+    return result
+
+# Remove C/C++ comments from 'text' (From http://stackoverflow.com/questions/241327/python-snippet-to-remove-c-and-c-comments)
+def comment_remover(text):
+    def replacer(match):
+        s = match.group(0)
+        if s.startswith('/'):
+            return &quot;&quot;
+        else:
+            return s
+    pattern = re.compile(
+        r'//.*?$|/\*.*?\*/|\'(?:\\.|[^\\\'])*\'|&quot;(?:\\.|[^\\&quot;])*&quot;',
+        re.DOTALL | re.MULTILINE
+    )
+    return re.sub(pattern, replacer, text[:])
+
+# Replacement for f.readlines(), which removes all C/C++ comments from the text before returning a list of all the lines (as f.readlines() does)
+def readlines_nocomments(f):
+    processed_text = comment_remover(f.read())
+    return processed_text.splitlines()
+
+# No empties from re.split
+def neatsplit(regex,string):
+    return [x for x in re.split(regex,string) if x != '']
+
+# Check if a string matches the start of any entry in a set
+def excluded(string,st):
+    for x in st:
+        if string.startswith(x): return True
+    return False
+
+# Nice sorting function (from http://stackoverflow.com/a/2669120/1447953)
+def sorted_nicely( l ):
+    &quot;&quot;&quot; Sort the given iterable in the way that humans expect.&quot;&quot;&quot;
+    convert = lambda text: int(text) if text.isdigit() else text
+    alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ]
+    return sorted(l, key = alphanum_key)
+
+# Parse a string to see if it has a class, struct or typedef declaration
+def check_for_declaration(input_snippet,module,all_modules,local_namespace,candidate_type):
+    splitline = neatsplit('\s|\(|\)|\*|\&amp;|\;',input_snippet)
+    candidate_type = re.sub(&quot;^\s*|\s*$&quot;, &quot;&quot;, candidate_type)
+    candidate_parts = neatsplit('::',re.sub(&quot;^.*\s&quot;, &quot;&quot;, re.sub(&quot;&lt;.*&gt;&quot;, &quot;&quot;, candidate_type)))
+    namespace_parts = neatsplit('::',local_namespace)
+    right_class = False
+    # Work out if we are in the module namespace, and if any sub-namespace matches the candidate type.
+    in_module_and_namespace_matches = False
+    if local_namespace and namespace_parts[0] == module:
+      if candidate_type.startswith(local_namespace): in_module_and_namespace_matches = True
+      if len(namespace_parts) == 1:
+        in_module_and_namespace_matches = True
+      else:
+        addon = 0
+        if candidate_parts[0] == module: addon = 1
+        if candidate_parts[0] == &quot;Gambit&quot;: addon = 2
+        if len(candidate_parts) == len(namespace_parts) + addon: in_module_and_namespace_matches = True
+    # Continue only if the input snippet is long enough to contain a declaration and there are no namespace issues
+    if len(splitline) &gt; 1 and (not local_namespace or namespace_parts[0] not in all_modules or in_module_and_namespace_matches):
+        # Look for class/struct declarations
+        if splitline[0] in [&quot;class&quot;, &quot;struct&quot;]:
+            allowed_matches = (splitline[1], splitline[1]+&quot;*&quot;)
+            if candidate_type in allowed_matches or candidate_parts[0] in allowed_matches:
+                right_class = True
+            elif len(candidate_parts) &gt; 1 and candidate_parts[-1] in allowed_matches:
+                if (candidate_parts[:-1] == namespace_parts[1-len(candidate_parts):]): right_class = True
+        # Look for typedefs
+        if len(splitline)&gt;2 and splitline[0]==&quot;typedef&quot;:
+            if (candidate_type in splitline[2:]):
+                right_class = True
+            elif len(candidate_parts) &gt; 1 and candidate_parts[-1] in splitline[2:]:
+                if (candidate_parts[:-1] == namespace_parts[1-len(candidate_parts):]): right_class = True
+        # The class declared at this line matches the candidate class
+        if right_class and local_namespace and local_namespace != &quot;Gambit&quot;:
+          main_class = candidate_parts[-1]
+          template_args = re.findall(&quot;&lt;.*&gt;\*?&quot;, candidate_type)
+          if template_args == []:
+            template_args = &quot;&quot;
+          else:
+            template_args = template_args[0]
+            main_class = re.sub(&quot;\*$&quot;, &quot;&quot;, candidate_parts[-1])
+          qualifiers = re.findall(&quot;^.*\s&quot;, re.sub(&quot;&lt;.*&gt;\*?&quot;, &quot;&quot;, candidate_type))
+          qualifiers = &quot;&quot; if qualifiers == [] else qualifiers[0]
+          candidate_type = qualifiers + local_namespace + &quot;::&quot; + main_class + template_args
+    return (right_class, candidate_type)
+
+# Parse a string to see if it has a namespace declaration
+# TODO: This is really limited. E.g. a forward declaration in a small, temporary namespace will get appended to local_namespace,
+# and this function has no way to notice when that namespace ends, so all subsequent types in some different namespace will be
+# screwed up.
+def check_for_namespace(input_snippet,local_namespace):
+    # Exit if the line just defines a namespace alias
+    if &quot;=&quot; in input_snippet:
+        return local_namespace
+    splitline = neatsplit('\s',input_snippet)
+    if len(splitline)&gt;1:
+        # If the line starts by declaring a namespace, return it appended to the current namespace
+        if splitline[0]==&quot;namespace&quot;:
+            if local_namespace.endswith(splitline[1]):
+                return local_namespace
+            elif local_namespace and local_namespace != &quot;Gambit&quot; and splitline[1] not in local_namespace:
+                return local_namespace+&quot;::&quot;+splitline[1]
+            else:
+                return splitline[1]
+    return local_namespace
+
+# Harvest header filename from an include statement
+def addifheader(line,headerset,exclude_set,verbose=False):
+    splitline = line.split()
+    if len(splitline)&gt;1 and splitline[0]==&quot;#include&quot;:
+        #dig the file name out of the enclosing &lt;&gt; or &quot;&quot;
+        split2 = neatsplit('&quot;|&lt;|&gt;',splitline[1])
+        split3 = neatsplit('/',split2[0])
+        if split2[0] not in exclude_set and split3[-1] not in exclude_set:
+            headerset.add(split2[0])
+            if verbose: print(&quot;  Added header '{0}' to set&quot;.format(split2[0]))
+
+# Harvest module names from rollcall headers
+def update_module(line,module):
+    splitline = neatsplit('\(|\)|,|\s',line)
+    if len(splitline)&gt;2:
+        if splitline[0]==&quot;#define&quot; and splitline[1]==&quot;MODULE&quot;:
+            #This line defines a module, return its name instead of bothering to look for a START_FUNCTION
+            return splitline[2]
+    return module
+
+# Check for an existing or type equivalent entry. Preferentially return
+#  1. the existing equivalent entry
+#  2. the first equivalent entry that does not contain a comma
+#  3. the original type
+def first_simple_type_equivalent(candidate_in, equivs, nses, existing):
+    if candidate_in in existing: return candidate_in
+    candidate = candidate_in
+    candidate.strip()
+    # Convert the leading BOSSed namespace for the default version to the explicit namespace of the actual version
+    for key in nses:
+      ns_default = key+&quot;_default&quot;+&quot;::&quot;
+      ns_true = key+&quot;_&quot;+nses[key]+&quot;::&quot;
+      if candidate.startswith(ns_default): candidate = ns_true+candidate[len(ns_default):]
+      candidate = re.sub(&quot;\s&quot;+ns_default,&quot; &quot;+ns_true,candidate)
+    # Exists in the equivalency classes
+    if candidate in equivs:
+        candidate_suffix = &quot;&quot;
+    # Pointer or reference to something that exists in the equivalency classes
+    elif candidate[:-1] in equivs:
+        candidate_suffix = candidate[-1:]
+        candidate = candidate[:-1]
+    # Just not there
+    else:
+        return candidate
+    equivalency_class = equivs[candidate]
+    common_elements = set.intersection(set(equivalency_class), existing)
+    if not common_elements:
+      for index in range(len(equivalency_class)):
+        equivalent = equivalency_class[index]
+        if &quot;,&quot; not in equivalent: return equivalent+candidate_suffix
+      print( &quot;Error: all equivalent types found have commas in them!  Please typedef one without a comma.&quot; )
+      print( &quot;Types are: &quot;, equivalency_class )
+      sys.exit(1)
+    if len(common_elements) != 1:
+        print( &quot;Error: existing types and equivalency class have more than one element in common!&quot; )
+        sys.exit(1)
+    return common_elements.pop()+candidate_suffix
+
+# Strips all whitespaces from a string, but re-inserts a single regular space after &quot;const&quot; or &quot;struct&quot;.
+def strip_ws(s, qualifiers):
+    for q in qualifiers:
+        s = re.sub(q+&quot;\s*&quot;, q+&quot;__TEMP_SPACE__&quot;, s)
+        s = re.sub(&quot;\s*&quot;, &quot;&quot;, s)
+    return re.sub(&quot;__TEMP_SPACE__&quot;, &quot; &quot;, s)
+
+
+# Harvest type from a START_FUNCTION or QUICK_FUNCTION macro call
+def addiffunctormacro(line,module,all_modules,typedict,typeheaders,intrinsic_types,exclude_types,equiv_classes,equiv_ns,verbose=False):
+
+    command_index = {&quot;START_FUNCTION&quot;:1,
+                     &quot;QUICK_FUNCTION&quot;:5,
+                     &quot;DEPENDENCY&quot;:2,
+                     &quot;MODEL_CONDITIONAL_DEPENDENCY&quot;:2,
+                     &quot;INTERPRET_AS_PARENT_DEPENDENCY&quot;:2,
+                     &quot;INTERPRET_AS_X_DEPENDENCY&quot;:3,
+                     &quot;START_CONDITIONAL_DEPENDENCY&quot;:1,
+                     &quot;BE_INI_DEPENDENCY&quot;:2,
+                     &quot;BE_INI_CONDITIONAL_DEPENDENCY&quot;:2}
+
+    line = re.sub(&quot;;&quot;, &quot;&quot;, line)
+    splitline = neatsplit('\(|\)|,|\s',line)
+
+    qualifier_list = [&quot;const&quot;, &quot;struct&quot;]
+    typeset = typedict[&quot;all&quot;]
+
+    if len(splitline)&gt;1 and splitline[0] in command_index.keys():
+        #This line defines a function and one or more of the arguments defines a candidate type
+        index = command_index[splitline[0]]
+        if splitline[index] in qualifier_list:
+            candidate_types = set([splitline[index]+&quot; &quot;+strip_ws(splitline[index+1], qualifier_list)])
+        else:
+            candidate_types = set([strip_ws(splitline[index], qualifier_list)])
+        if splitline[0]==&quot;QUICK_FUNCTION&quot; and len(splitline)&gt;6:
+            #Get the dep types out of a QUICK_FUNCTION command
+            splitline = re.findall(&quot;\(.*?\)&quot;,re.sub(&quot;QUICK_FUNCTION\(&quot;, &quot;&quot;, re.sub(&quot;\)\)\s*$&quot;,&quot;)&quot;,line) ) )
+            for dep in splitline[1:]:
+              splitdep = neatsplit('\(|\)|,',dep)
+              candidate_types.add(splitdep[1].strip())
+        # Remove excluded types from the set
+        candidate_types.difference_update(exclude_types)
+
+        #Iterate over all the candidate types and remove any leading Gambit namespace
+        new_candidate_types = []
+        for candidate_type in candidate_types:
+          new_candidate_types.append(re.sub(&quot;^Gambit::&quot;, &quot;&quot;, candidate_type))
+
+        #Iterate over all the candidate types and check if they are defined.
+        for candidate_type in new_candidate_types:
+            candidate_type = first_simple_type_equivalent(candidate_type,equiv_classes,equiv_ns,typeset)
+            #Skip out now if the type is already found.
+            if (candidate_type in typeset or
+                module+&quot;::&quot;+candidate_type in typeset or
+                &quot;Gambit::&quot;+module+&quot;::&quot;+candidate_type in typeset): continue
+            #If the type is not an intrinsic, check if it is declared in any of the module type headers
+            if (candidate_type not in intrinsic_types):
+                if verbose: print( &quot;    {0} located, searching for declaration of {1}...&quot;.format(line.strip(),candidate_type) )
+                for header in typeheaders:
+                    local_namespace = &quot;&quot;
+                    found_declaration = False
+                    with io.open(header, encoding='utf-8') as f:
+                        for newline in readlines_nocomments(f):
+                            splitline = neatsplit('\{|\}|:|;',newline)
+                            # Determine the local namespace and look for a class or struct matching the candidate type
+                            for i in range(5):
+                                if len(splitline)&gt;i:
+                                    local_namespace = check_for_namespace(splitline[i],local_namespace)
+                                    if not found_declaration:
+                                        (found_declaration, candidate_type) = check_for_declaration(splitline[i],module,all_modules,local_namespace,candidate_type)
+                            # The loop above misses some of the typedefs, so we need to re-parse the whole line for these.
+                            if not found_declaration:
+                                (found_declaration, candidate_type) = check_for_declaration(newline,module,all_modules,local_namespace,candidate_type)
+                            if found_declaration: break
+                    # If the type was declared in this header, and this is a module header, save the type into the list of types for this module.
+                    if found_declaration and re.sub(&quot;.*?/include/gambit/&quot;, &quot;&quot;,header).startswith(module):
+                        if module not in typedict: typedict[module] = set([])
+                        typedict[module].add(candidate_type)
+                        break
+                # If the type was not identified with any module, save it as a non-module type.
+                if module not in typedict or candidate_type not in typedict[module]:
+                    typedict[&quot;non_module&quot;].add(candidate_type)
+            else:
+                # Type is intrinsic, so must be a non-module type.
+                typedict[&quot;non_module&quot;].add(candidate_type)
+            # Add the type to the list of all types from everywhere.
+            typeset.add(candidate_type)
+
+
+# Harvest type from a BE_VARIABLE, BE_FUNCTION or BE_CONV_FUNCTION macro call
+def addifbefunctormacro(line,be_typeset,type_pack_set,equiv_classes,equiv_ns,verbose=False):
+
+    command_index = {&quot;BE_VARIABLE&quot;:2,
+                     &quot;BE_FUNCTION&quot;:2,
+                     &quot;BE_CONV_FUNCTION&quot;:2,
+                     &quot;BACKEND_REQ&quot;:0,
+                     &quot;BACKEND_REQ_FROM_GROUP&quot;:0}
+
+    line = re.sub(&quot;;&quot;, &quot;&quot;, line)
+    splitline = neatsplit('\(|\)|,|\s',line)
+
+    qualifier_list = [&quot;const&quot;, &quot;struct&quot;]
+
+    if len(splitline)&gt;1 and splitline[0] in command_index.keys():
+        #This line defines a backend functor and one or more of the arguments defines a candidate type
+
+        if splitline[0].startswith(&quot;BACKEND_REQ&quot;):
+            args = re.sub(&quot;\s*BACKEND_REQ(_FROM_GROUP)?\s*\(.*?,\s*\(.*?\)\s*,\s*&quot;, &quot;&quot;, re.sub(&quot;\s*\)\s*$&quot;, &quot;&quot;, line) )
+            args = args.strip()
+            if re.search(&quot;\)\s*\)\s*$&quot;, line):
+                #This is a backend function requirement
+                leading_type = strip_ws(re.sub(&quot;\s*,\s*\(.*?\)\s*$&quot;, &quot;&quot;, args), qualifier_list)
+                leading_type = first_simple_type_equivalent(leading_type,equiv_classes,equiv_ns,be_typeset)
+                functor_template_types = list([leading_type])
+                args = re.sub(&quot;.*?,\s*\(\s*&quot;, &quot;&quot;, re.sub(&quot;\s*\)\s*$&quot;, &quot;&quot;, args) )
+                for arg in re.findall(&quot;[^,]*?\(.*?\)[^,]*?\(.*?\).*?,|[^,]*?&lt;.*?&gt;.*?,|[^,]*?\(.*?\).*?,|[^&gt;\)]*?,&quot;, args+&quot;,&quot;):
+                    arg = arg[:-1].strip()
+                    if arg != &quot;&quot;:
+                        if arg == &quot;etc&quot;: arg = &quot;...&quot;
+                        arg_list = neatsplit('\s',arg)
+                        if arg_list[0] in (&quot;class&quot;, &quot;struct&quot;, &quot;typename&quot;): arg = arg_list[1]
+                        arg = first_simple_type_equivalent(strip_ws(arg, qualifier_list),equiv_classes,equiv_ns,be_typeset)
+                        functor_template_types.append(arg)
+            else:
+                #This is a backend variable requirement
+                args = first_simple_type_equivalent(strip_ws(args, qualifier_list),equiv_classes,equiv_ns,be_typeset)
+                functor_template_types = list([args+&quot;*&quot;])
+
+        else:
+            #If function/variable type has qualifier, combine elements in splitline
+            cmd_i = command_index[splitline[0]]
+            if splitline[cmd_i].strip() in qualifier_list:
+                splitline[cmd_i:cmd_i+2] = [&quot; &quot;.join(splitline[cmd_i:cmd_i+2])]
+
+            functor_template_types = list([strip_ws(splitline[command_index[splitline[0]]], qualifier_list)])
+            functor_template_types[0] = first_simple_type_equivalent(functor_template_types[0],equiv_classes,equiv_ns,be_typeset)
+            if splitline[0].endswith(&quot;FUNCTION&quot;):
+                #Get the argument types out of a BE_FUNCTION or BE_CONV_FUNCTION command
+                args = re.sub(&quot;\s*BE_(CONV_)?FUNCTION\s*\(.*?,.*?,\s*?\(&quot;, &quot;&quot;, line)
+                args = re.sub(&quot;\([^\(]*?\)\s*\)\s*$&quot;, &quot;\)&quot;, args)
+                if splitline[0] == &quot;BE_FUNCTION&quot;:
+                    args = re.sub(&quot;\)\s*,[^\)]*?,[^\)]*?\)\s*$&quot;, &quot;&quot;, args)
+                else:
+                    args = re.sub(&quot;\)\s*,[^\)]*?\)\s*$&quot;, &quot;&quot;, args)
+                for arg in re.findall(&quot;[^,]*?\(.*?\)[^,]*?\(.*?\).*?,|[^,]*?&lt;.*?&gt;.*?,|[^,]*?\(.*?\).*?,|[^&gt;\)]*?,&quot;, args+&quot;,&quot;):
+                    arg = arg[:-1].strip()
+                    if arg != &quot;&quot; and not arg.startswith(&quot;\&quot;&quot;) and not arg.startswith(&quot;(&quot;):
+                        if arg == &quot;etc&quot;: arg = &quot;...&quot;
+                        arg_list = neatsplit('\s',arg)
+                        if arg_list[0] in (&quot;class&quot;, &quot;struct&quot;, &quot;typename&quot;): arg = arg_list[1]
+                        arg = first_simple_type_equivalent(strip_ws(arg, qualifier_list),equiv_classes,equiv_ns,be_typeset)
+                        functor_template_types.append(arg)
+            else:
+                #Convert the type to a pointer if this is a backend variable functor rather than a backend function functor
+                functor_template_types[0] += &quot;*&quot;
+
+        #Iterate over all the candidate types and remove any leading Gambit namespace
+        candidate_types = set(functor_template_types)
+        new_candidate_types = []
+        for candidate_type in candidate_types:
+          new_candidate_types.append(re.sub(&quot;^Gambit::&quot;, &quot;&quot;, candidate_type))
+
+        #Iterate over all the candidate types and check if they are defined.
+        for candidate_type in new_candidate_types:
+            candidate_type = first_simple_type_equivalent(strip_ws(candidate_type, qualifier_list),equiv_classes,equiv_ns,be_typeset)
+            initial_candidate = candidate_type
+            #Skip to the end if the type is already found.
+            if (&quot;Gambit::&quot;+candidate_type in be_typeset):
+                candidate_type = &quot;Gambit::&quot;+candidate_type
+            elif (candidate_type not in be_typeset):
+                be_typeset.add(candidate_type)
+            # Replace the argument types in the functor_template_types with the fully-qualified versions if required.
+            functor_template_types = [candidate_type if entry == initial_candidate else entry for entry in functor_template_types]
+
+        ptr_args = &quot;,&quot;.join(functor_template_types[1:])
+        arg_list = &quot;,&quot;.join([x for x in functor_template_types[1:] if x != &quot;...&quot;])
+        type_pack = functor_template_types[0] + &quot;(*)(&quot; + ptr_args + &quot;),&quot; + functor_template_types[0]
+        if arg_list != &quot;&quot;: type_pack += &quot;,&quot; + arg_list
+        type_pack_set.add(type_pack)
+
+
+# Harvest the list of rollcall headers to be searched, and the list of type headers to be searched.
+def get_headers(path,header_set,exclude_set,verbose=False):
+    &quot;&quot;&quot;Parse the file at 'path' and add any headers that are &quot;include&quot;ed therin to the set 'header_set'&quot;&quot;&quot;
+    with io.open(path, encoding='utf-8') as f:
+        #print( &quot;  Parsing header '{0}' for further includes...&quot;.format(path) )
+        for line in readlines_nocomments(f):
+            addifheader(line,header_set,exclude_set,verbose=verbose)
+
+def find_and_harvest_headers(header_set,fullheadlist,exclude_set,dir_exclude_set,verbose=False):
+    &quot;&quot;&quot;Locate 'init_headers' in gambit source tree, then read through them and add any headers that are &quot;include&quot;ed in them to headlist
+    Args:
+    header_set - set of file names of headers to parse
+    fullheadlist - list to which full paths of both init_headers, and any subsequently found headers, should be added.
+    exclude_set - set of names of headers to ignore if we find them.
+    dir_exclude_set - set of directory names to skip over during the os.walk
+    &quot;&quot;&quot;
+    full_header_paths=[]
+    # Locate the header in the GAMBIT directory structure...
+    # (we should technically search all the include paths in the make file; could pass these in to this script)
+    # Ignores any headers that cannot be found (assumed to be external libraries, etc.)
+    for root,dirs,files in os.walk(&quot;.&quot;,topdown=True):
+       # Delete any directories from the traverse list if they are in the exclude list
+       [dirs.remove(d) for d in list(dirs) if d in dir_exclude_set]
+       for name in files:
+          for header in header_set:
+                if os.path.join(root,name).endswith(header):
+                    if verbose: print( &quot;  Located header '{0}' at path '{1}'&quot;.format(name,os.path.join(root,name)) )
+                    full_header_paths+=[os.path.join(root,name)]
+
+    # Add newly found paths to output list
+    fullheadlist+=full_header_paths
+
+    new_headers=set()
+    for path in full_header_paths:
+        get_headers(path,new_headers,exclude_set,verbose=verbose)
+
+    # Add headers that we started with to the 'exclude_set' so that we don't search them again.
+    new_exclude_set=set()
+    new_exclude_set.update(exclude_set)
+    new_exclude_set.update(header_set)
+
+    # Delete elements of 'new_exclude_set' from 'new_headers'
+    new_headers.difference_update(new_exclude_set)
+
+    # Do this again for all the headers we just found, if we found any
+    if len(new_headers) &gt; 0:
+        if verbose: print( &quot;  Harvested the following new headers:&quot; )
+        for header in new_headers:
+            if verbose: print( &quot;    &quot;+header )
+        find_and_harvest_headers(new_headers,fullheadlist,new_exclude_set,dir_exclude_set,verbose=verbose)
+
+#Search the source tree to determine which modules are present, and write a module_rollcall header if the GAMBIT Core exists.
+def retrieve_rollcall_headers(verbose,install_dir,excludes):
+    rollcall_headers=[]
+    core_exists = False
+    exclude_dirs=[&quot;build&quot;,&quot;.git&quot;,&quot;runs&quot;,&quot;scratch&quot;,&quot;contrib&quot;,&quot;Backends&quot;]
+    for root,dirs,files in os.walk(install_dir,topdown=True):
+        [dirs.remove(d) for d in list(dirs) if d in exclude_dirs] # bit confusing, but avoids descending into excluded directories
+        if (not core_exists and root == install_dir+&quot;/Core/include/gambit/Core&quot;): core_exists = True
+        for name in files:
+            prefix = re.sub(&quot;_rollcall\.h.*&quot;, &quot;&quot;, name)
+            if ( (name.lower().endswith(&quot;_rollcall.hpp&quot;) or
+                  name.lower().endswith(&quot;_rollcall.h&quot;)   or
+                  name.lower().endswith(&quot;_rollcall.hh&quot;)     ) and name.lower().find(&quot;bit&quot;) != -1 and root.endswith(prefix) ):
+                exclude = False
+                for x in excludes:
+                    if name.startswith(x): exclude = True
+                if (not exclude):
+                    if verbose: print( &quot;  Located module rollcall header '{0}' at path '{1}'&quot;.format(name,os.path.join(root,name)) )
+                    rel_name = re.sub(&quot;.*?/include/&quot;, &quot;&quot;, os.path.relpath(os.path.join(root,name),install_dir))
+                    rollcall_headers+=[rel_name]
+    if core_exists: make_module_rollcall(rollcall_headers,verbose)
+    return rollcall_headers
+
+#Search the source tree to determine which modules type headers are present.
+def retrieve_module_type_headers(verbose,install_dir,excludes):
+    type_headers=[]
+    exclude_dirs=[&quot;build&quot;,&quot;.git&quot;,&quot;runs&quot;,&quot;scratch&quot;,&quot;contrib&quot;,&quot;Backends&quot;]
+    for root,dirs,files in os.walk(install_dir,topdown=True):
+        [dirs.remove(d) for d in list(dirs) if d in exclude_dirs] # bit confusing, but avoids descending into excluded directories
+        for name in files:
+            if ( (name.lower().endswith(&quot;_types.hpp&quot;) or
+                  name.lower().endswith(&quot;_types.h&quot;)   or
+                  name.lower().endswith(&quot;_types.hh&quot;)     ) and name.lower().find(&quot;bit&quot;) != -1):
+                exclude = False
+                bare_name = re.sub(&quot;.*_types\\.[h|hpp|hh]$&quot;,&quot;&quot;,name)
+                for x in excludes:
+                    if bare_name.startswith(x): exclude = True
+                if (not exclude):
+                    if verbose: print( &quot;  Located module type header '{0}' at path '{1}'&quot;.format(name,os.path.join(root,name)) )
+                    rel_name = re.sub(&quot;.*?/include/&quot;, &quot;&quot;, os.path.relpath(os.path.join(root,name),install_dir))
+                    type_headers+=[rel_name]
+    return type_headers
+
+#Get all files in a directory tree with one of a given set of extensions
+def get_all_files_with_ext(verbose,starting_dir,ext_set,kind):
+    results=[]
+    for root,dirs,files in os.walk(starting_dir):
+        for name in files:
+            for ext in ext_set:
+                if name.endswith(ext):
+                    if verbose: print( &quot;  Located &quot;+kind+&quot; file '{0}' at path '{1}'&quot;.format(name,os.path.join(root,name)) )
+                    results+=[os.path.join(root, name)]
+    return results
+
+#Search a directory for headers that are not excluded.
+def retrieve_generic_headers(verbose,starting_dir,kind,excludes,exclude_list=[]):
+    headers=[]
+    for root,dirs,files in os.walk(starting_dir):
+        if root.endswith(&quot;shared_includes&quot;): continue
+        for name in files:
+            exclude = False
+            for x in excludes:
+                if name.startswith(x): exclude = True
+            if kind == &quot;BOSSed type&quot; and not name.startswith(&quot;loaded_types&quot;): exclude = True
+            if not exclude and (name.endswith(&quot;.hpp&quot;) or name.endswith(&quot;.h&quot;) or name.endswith(&quot;.hh&quot;)):
+                if verbose: print( &quot;  Located &quot;+kind+&quot; header '{0}' at path '{1}'&quot;.format(name,os.path.join(root,name)) )
+                rel_name = re.sub(&quot;.*?/include/&quot;, &quot;&quot;, os.path.relpath(os.path.join(root,name),starting_dir))
+                headers+=[rel_name]
+        if kind != &quot;BOSSed type&quot;: break
+    return headers
+
+# Check whether or not two files differ in their contents except for the date line
+def same(f1,f2):
+    file1 = open(f1,&quot;r&quot;)
+    file2 = open(f2,&quot;r&quot;)
+    for l1,l2 in zip_longest(file1,file2,fillvalue=''):
+        if l1 != l2:
+              l1nospace = ''.join(l1.split()).lower() #remove spaces and make lowercase
+              #print l1
+              #print l2
+              #print l1nospace
+              if      not l1nospace.startswith(&quot;#\date&quot;) \
+                  and not l1nospace.startswith(&quot;#\\date&quot;) \
+                  and not l1nospace.startswith(&quot;//\date&quot;) \
+                  and not l1nospace.startswith(&quot;//\\date&quot;) \
+                  and not l1nospace.startswith(&quot;///\date&quot;) \
+                  and not l1nospace.startswith(&quot;///\\date&quot;):
+                 #print &quot;Doesn't match!&quot;, file1, file2
+                 #quit()
+                 return False
+    return True
+
+# Compare a candidate file to an existing file, replacing only if they differ.
+def update_only_if_different(existing, candidate, verbose=True):
+    if not os.path.isfile(existing):
+         shutil.move(candidate,existing)
+         if verbose: print( &quot;\033[1;33m   Created &quot;+re.sub(&quot;\\.\\/&quot;,&quot;&quot;,existing)+&quot;\033[0m&quot; )
+    elif same(existing, candidate):
+         os.remove(candidate)
+         if verbose: print( &quot;\033[1;33m   Existing &quot;+re.sub(&quot;\\.\\/&quot;,&quot;&quot;,existing)+&quot; is identical to candidate; leaving it untouched\033[0m&quot; )
+    else:
+         shutil.move(candidate,existing)
+         if verbose: print( &quot;\033[1;33m   Updated &quot;+re.sub(&quot;\\.\\/&quot;,&quot;&quot;,existing)+&quot;\033[0m&quot; )
+
+#Create the module_rollcall header in the Core directory
+def make_module_rollcall(rollcall_headers,verbose):
+    towrite = &quot;\
+//   GAMBIT: Global and Modular BSM Inference Tool\n\
+//   *********************************************\n\
+///  \\file                                       \n\
+///                                               \n\
+///  Compile-time registration of GAMBIT modules. \n\
+///                                               \n\
+///  This file was automatically generated by     \n\
+///  module_harvester.py. Do not modify.          \n\
+///  The content is harvested from your local     \n\
+///  installation.  If you want to add a new      \n\
+///  module, just create it and make sure it      \n\
+///  contains a rollcall header, and the          \n\
+///  module_harvester.py script will make         \n\
+///  sure it turns up here.                       \n\
+///                                               \n\
+///  By 'rollcall header', we mean a file         \n\
+///  myBit/include/gambit/myBit/myBit_rollcall.hpp,\n\
+///  where myBit is the name of your module.      \n\
+///                                               \n\
+///  *********************************************\n\
+///                                               \n\
+///  Authors:                                     \n\
+///                                               \n\
+///  \\author The GAMBIT Collaboration            \n\
+///  \date &quot;+datetime.datetime.now().strftime(&quot;%I:%M%p on %B %d, %Y&quot;)+&quot;\n\
+///                                               \n\
+///  *********************************************\n\
+                                                  \n\
+#ifndef __module_rollcall_hpp__                   \n\
+#define __module_rollcall_hpp__                   \n\
+                                                  \n\
+#include \&quot;gambit/Elements/module_macros_incore.hpp\&quot;\n\n&quot;
+
+    for h in rollcall_headers:
+        towrite+='#include \&quot;{0}\&quot;\n'.format(h)
+    towrite+=&quot;\n#endif // defined __module_rollcall_hpp__\n&quot;
+
+    with open(&quot;./Core/include/gambit/Core/module_rollcall.hpp&quot;,&quot;w&quot;) as f:
+        f.write(towrite)
+
+    if verbose: print( &quot;Found GAMBIT Core.  Generated module_rollcall.hpp.\n&quot; )
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

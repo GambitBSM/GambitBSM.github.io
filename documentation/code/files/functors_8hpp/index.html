@@ -1,0 +1,1057 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file Elements/functors.hpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/functors_8hpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file Elements/functors.hpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/functors_8hpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file Elements/functors.hpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file Elements/functors.hpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/functors_8hpp/","url":"https://gambitbsm.github.io/documentation/code/files/functors_8hpp/","name":"file Elements\/functors.hpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/functors_8hpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/functors_8hpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/functors_8hpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/functors_8hpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/functors_8hpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/functors_8hpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file Elements\/functors.hpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-functors-fade-rate>define FUNCTORS_FADE_RATE</a></li><li><a href=#define-functors-base-invalidation-rate>define FUNCTORS_BASE_INVALIDATION_RATE</a></li><li><a href=#define-functors-runtime-init>define FUNCTORS_RUNTIME_INIT</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-functors-fade-rate>define FUNCTORS_FADE_RATE</a></li><li><a href=#define-functors-base-invalidation-rate>define FUNCTORS_BASE_INVALIDATION_RATE</a></li><li><a href=#define-functors-runtime-init>define FUNCTORS_RUNTIME_INIT</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file Elements/functors.hpp</li></ol></nav><p class=lead></p><h1 id=file-elements-functors-hpp>file Elements/functors.hpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers/>Gambit::Printers</a></strong><br>Forward declaration.</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1models/>Gambit::Models</a></strong><br>Forward declaration of <a href>Models::ModelFunctorClaw</a> class for use in constructors.</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1functorhelp/>Gambit::FunctorHelp</a></strong><br>Definitions of friend functions from above.</td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1variadic__ptr/>Gambit::variadic_ptr</a></strong><br>Type redefinition to get around icc compiler bugs.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1functor/>Gambit::functor</a></strong><br>Function wrapper (functor) base class.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1module__functor__common/>Gambit::module_functor_common</a></strong><br>Functor derived class for module functions.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1module__functor/>Gambit::module_functor</a></strong><br>Actual module functor type for all but TYPE=void.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1module__functor_3_01void_01_4/>Gambit::module_functor&lt; void ></a></strong><br>Actual module functor type for TYPE=void.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1backend__functor__common/>Gambit::backend_functor_common</a></strong><br>Backend functor class for functions with result type TYPE and argumentlist ARGS.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1backend__functor_3_01type_07_5_08_07args_8_8_8_08_00_01type_00_01args_8_8_8_01_4/>Gambit::backend_functor&lt; TYPE(*)(ARGS&mldr;), TYPE, ARGS&mldr; ></a></strong><br>Template specialisation for non-variadic, non-void backend functions.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1backend__functor_3_01void_07_5_08_07args_8_8_8_08_00_01void_00_01args_8_8_8_01_4/>Gambit::backend_functor&lt; void(*)(ARGS&mldr;), void, ARGS&mldr; ></a></strong><br>Template specialisation for non-variadic, void backend functions.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1backend__functor_3_01typename_01variadic__ptr_3_01type_00_01args_8_8_8_01_4_1/>Gambit::backend_functor&lt; typename variadic_ptr&lt; TYPE, ARGS&mldr; >::type, TYPE, ARGS&mldr; ></a></strong><br>Template specialisation for variadic, non-void backend functions.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1backend__functor_3_01typename_01variadic__ptr_3_01void_00_01args_8_8_8_01_4_1/>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS&mldr; >::type, void, ARGS&mldr; ></a></strong><br>Template specialisation for variadic void backend functions.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1model__functor/>Gambit::model_functor</a></strong><br>Functors specific to <a href>ModelParameters</a> objects.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1primary__model__functor/>Gambit::primary_model_functor</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/functors_8hpp/#define-functors-fade-rate>FUNCTORS_FADE_RATE</a></strong><br>Decay rate of average runtime estimate [(number of functor evaluations)^-1].</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/functors_8hpp/#define-functors-base-invalidation-rate>FUNCTORS_BASE_INVALIDATION_RATE</a></strong><br>Minimum invaldiation rate (should be 0&lt;&mldr;&#171;1)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/functors_8hpp/#define-functors-runtime-init>FUNCTORS_RUNTIME_INIT</a></strong><br>Initial runtime estimate (s)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li><li>Ben Farmer (<a href=mailto:benjamin.farmer@monash.edu.au>benjamin.farmer@monash.edu.au</a>)</li><li>Lars A. Dal (<a href=mailto:l.a.dal@fys.uio.no>l.a.dal@fys.uio.no</a>)</li><li>Tomas Gonzalo (<a href=mailto:gonzalo@physik.rwth-aachen.de>gonzalo@physik.rwth-aachen.de</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 Apr-July, Dec</li><li>2014 Jan, Mar-May, Sep</li><li>2015 Jan</li><li>2013 Apr, Nov</li><li>2013 May, June, July</li><li>2013 July, Sep</li><li>2014 Jan</li><li>2015 Jan</li><li>2021 Sep</li></ul><p>Functor class definitions.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-functors-fade-rate>define FUNCTORS_FADE_RATE <a href=#define-functors-fade-rate class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTORS_FADE_RATE 0.01
+</code></pre><p>Decay rate of average runtime estimate [(number of functor evaluations)^-1].</p><h3 id=define-functors-base-invalidation-rate>define FUNCTORS_BASE_INVALIDATION_RATE <a href=#define-functors-base-invalidation-rate class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTORS_BASE_INVALIDATION_RATE 0.01
+</code></pre><p>Minimum invaldiation rate (should be 0&lt;&mldr;&#171;1)</p><h3 id=define-functors-runtime-init>define FUNCTORS_RUNTIME_INIT <a href=#define-functors-runtime-init class=anchor aria-hidden=true>#</a></h3><pre><code>#define FUNCTORS_RUNTIME_INIT 0.000001
+</code></pre><p>Initial runtime estimate (s)</p><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  Functor class definitions.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 Apr-July, Dec
+///  \date 2014 Jan, Mar-May, Sep
+///  \date 2015 Jan
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///   \date 2013 Apr, Nov
+///
+///  \author Christoph Weniger
+///          (c.weniger@uva.nl)
+///  \date 2013 May, June, July
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2013 July, Sep
+///  \date 2014 Jan
+///
+///  \author Lars A. Dal
+///          (l.a.dal@fys.uio.no)
+///  \date 2015 Jan
+///
+///  \author Tomas Gonzalo
+///          (gonzalo@physik.rwth-aachen.de)
+///  \date 2021 Sep
+///
+///  *********************************************
+
+
+#ifndef __functors_hpp__
+#define __functors_hpp__
+
+#include &lt;map&gt;
+#include &lt;set&gt;
+#include &lt;vector&gt;
+#include &lt;chrono&gt;
+#include &lt;sstream&gt;
+#include &lt;algorithm&gt;
+#include &lt;omp.h&gt;
+
+#include &quot;gambit/Utils/util_types.hpp&quot;
+#include &quot;gambit/Utils/util_functions.hpp&quot;
+#include &quot;gambit/Utils/yaml_options.hpp&quot;
+#include &quot;gambit/Utils/model_parameters.hpp&quot;
+#include &quot;gambit/Logs/logger.hpp&quot;
+#include &quot;gambit/Logs/logmaster.hpp&quot; // Need full declaration of LogMaster class
+
+/// Decay rate of average runtime estimate [(number of functor evaluations)^-1]
+#define FUNCTORS_FADE_RATE 0.01
+/// Minimum invaldiation rate (should be 0&lt;...&lt;&lt;1)
+#define FUNCTORS_BASE_INVALIDATION_RATE 0.01
+/// Initial runtime estimate (s)
+#define FUNCTORS_RUNTIME_INIT 0.000001
+
+namespace Gambit
+{
+
+  /// Forward declaration of Printers::BasePrinter class for use in print functions.
+  namespace Printers { class BasePrinter; }
+
+  /// Forward declaration of Models::ModelFunctorClaw class for use in constructors.
+  namespace Models { class ModelFunctorClaw; }
+
+  /// Type redefinition to get around icc compiler bugs.
+  template &lt;typename TYPE, typename... ARGS&gt;
+  struct variadic_ptr { typedef TYPE(*type)(ARGS..., ...); };
+
+  /// Forward declare helper friend functions
+  class module_functor_common;
+  namespace FunctorHelp {
+    // void check_for_shutdown_signal(module_functor_common&amp;);
+    // bool emergency_shutdown_begun();
+    void entering_multithreaded_region(module_functor_common&amp;);
+    void leaving_multithreaded_region(module_functor_common&amp;);
+  }
+
+  // ======================== Base Functor =====================================
+
+  /// Function wrapper (functor) base class
+  class functor
+  {
+
+    public:
+
+      /// Constructor
+      functor(str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      //// Destructor
+      virtual ~functor() {}
+
+      /// Virtual calculate(); needs to be redefined in daughters.
+      virtual void calculate();
+
+
+      // It may be safer to have some of the following things accessible
+      // only to the likelihood wrapper class and/or dependency resolver, i.e. so they cannot be used
+      // from within module functions
+
+      /// Interfaces for runtime optimization
+      /// Need to be implemented by daughters
+      /// @{
+      virtual double getRuntimeAverage();
+      virtual double getInvalidationRate();
+      virtual void setFadeRate(double);
+      virtual void notifyOfInvalidation(const str&amp;);
+      virtual void reset();
+      /// @}
+
+      /// Reset-then-recalculate method
+      virtual void reset_and_calculate();
+
+      /// Setter for status: -6 = required external tool absent (pybind11)
+      ///                    -5 = required external tool absent (Mathematica)
+      ///                    -4 = required backend absent (backend ini functions)
+      ///                    -3 = required classes absent
+      ///                    -2 = function absent
+      ///                    -1 = origin absent
+      ///                     0 = model incompatibility (default)
+      ///                     1 = available
+      ///                     2 = active
+      void setStatus(int);
+      /// Set the inUse flag (must be overridden in derived class to have any effect).
+      virtual void setInUse(bool){};
+      /// Setter for purpose (relevant only for next-to-output functors)
+      void setPurpose(str);
+      /// Setter for vertex ID (used in printer system)
+      void setVertexID(int);
+      /// Set ID for timing 'vertex' (used in printer system)
+      void setTimingVertexID(int);
+      /// Getter for the wrapped function's name
+      str name() const;
+      /// Getter for the wrapped function's reported capability
+      str capability() const;
+      /// Getter for the wrapped function's reported return type
+      str type() const;
+      /// Getter for the wrapped function's origin (module or backend name)
+      str origin() const;
+      /// Getter for the version of the wrapped function's origin (module or backend)
+      str version() const;
+      /// Getter for the 'safe' incarnation of the version of the wrapped function's origin (module or backend)
+      virtual str safe_version() const;
+      /// Getter for the wrapped function current status:
+      ///                    -4 = required backend absent (backend ini functions)
+      ///                    -3 = required classes absent
+      ///                    -2 = function absent
+      ///                    -1 = origin absent
+      ///                     0 = model incompatibility (default)
+      ///                     1 = available
+      ///                     2 = active
+      int status() const;
+      /// Getter for the  overall quantity provided by the wrapped function (capability-type pair)
+      sspair quantity() const;
+      /// Getter for purpose (relevant for output nodes, aka helper structures for the dep. resolution)
+      str purpose() const;
+      /// Getter for the citation key
+      str citationKey() const;
+      /// Getter for vertex ID
+      int vertexID() const;
+      /// Getter for timing vertex ID
+      int timingVertexID() const;
+      /// Getter for string label
+      str label() const;
+      /// Getter for the printer timing label
+      str timingLabel() const;
+      /// Getter indicating if the wrapped function's result should to be printed
+      virtual bool requiresPrinting() const;
+
+      /// Getter indicating if the timing data for this function's execution should be printed
+      virtual bool requiresTimingPrinting() const;
+
+      /// Setter for indicating if the wrapped function's result should to be printed
+      virtual void setPrintRequirement(bool);
+
+      /// Setter for indicating if the timing data for this function's execution should be printed
+      virtual void setTimingPrintRequirement(bool);
+
+      /// Set the ordered list of pointers to other functors that should run nested in a loop managed by this one
+      virtual void setNestedList (std::vector&lt;functor*&gt;&amp;);
+
+      /// Set the iteration number in a loop in which this functor runs
+      virtual void setIteration (long long);
+
+      /// Getter for revealing whether this is permitted to be a manager functor
+      virtual bool canBeLoopManager();
+
+      /// Getter for revealing the required capability of the wrapped function's loop manager
+      virtual str loopManagerCapability();
+      /// Getter for revealing the required type of the wrapped function's loop manager
+      virtual str loopManagerType();
+      /// Getter for revealing the name of the wrapped function's assigned loop manager
+      virtual str loopManagerName();
+      /// Getter for revealing the module of the wrapped function's assigned loop manager
+      virtual str loopManagerOrigin();
+
+      /// Tell the functor that the loop it manages should break now.
+      virtual void breakLoop();
+
+      /// Getter for listing currently activated dependencies
+      virtual std::set&lt;sspair&gt; dependencies();
+      /// Getter for listing backends that require class loading
+      virtual std::set&lt;sspair&gt; backendclassloading();
+      /// Getter for listing backend requirement groups
+      virtual std::set&lt;str&gt; backendgroups();
+      /// Getter for listing all backend requirements
+      virtual std::set&lt;sspair&gt; backendreqs();
+      /// Getter for listing backend requirements from a specific group
+      virtual std::set&lt;sspair&gt; backendreqs(str);
+      /// Getter for listing permitted backends
+      virtual std::set&lt;sspair&gt; backendspermitted(sspair);
+      /// Getter for listing tags associated with backend requirements
+      virtual std::set&lt;str&gt; backendreq_tags(sspair);
+      /// Getter for listing backend requirements that must be resolved from the same backend
+      virtual std::set&lt;sspair&gt; forcematchingbackend(str);
+
+      /// Getter for listing backend-specific conditional dependencies (4-string version)
+      virtual std::set&lt;sspair&gt; backend_conditional_dependencies (str, str, str, str);
+
+      /// Getter for backend-specific conditional dependencies (3-string version)
+      virtual std::set&lt;sspair&gt; backend_conditional_dependencies (str req, str type, str be);
+
+      /// Getter for backend-specific conditional dependencies (backend functor pointer version)
+      virtual std::set&lt;sspair&gt; backend_conditional_dependencies (functor*);
+
+      /// Getter for listing model-specific conditional dependencies
+      virtual std::set&lt;sspair&gt; model_conditional_dependencies (str);
+
+      /// Getter for listing model-specific conditional backend requirements
+      virtual std::set&lt;sspair&gt; model_conditional_backend_reqs (str);
+
+      /// Resolve a dependency using a pointer to another functor object
+      virtual void resolveDependency (functor*);
+
+      /// Set this functor's loop manager (if it has one)
+      virtual void resolveLoopManager (functor*);
+
+      /// Resolve a backend requirement using a pointer to another functor object
+      virtual void resolveBackendReq (functor*);
+
+      /// Notify the functor that a certain model is being scanned, so that it can activate itself accordingly.
+      virtual void notifyOfModel(str);
+
+      /// Notify the functor that it is being used to fill a dependency of another functor
+      virtual void notifyOfDependee(functor*);
+
+      /// Indicate to the functor which backends are actually loaded and working
+      virtual void notifyOfBackends(std::map&lt;str, std::set&lt;str&gt; &gt;);
+
+      #ifndef NO_PRINTERS
+        /// Printer function
+        virtual void print(Printers::BasePrinter* printer, const int pointID, int thread_num);
+
+        /// Printer function (no-thread-index short-circuit)
+        virtual void print(Printers::BasePrinter* printer, const int pointID);
+      #endif
+
+      /// Retrieve the previously saved exception generated when this functor invalidated the current point in model space.
+      virtual invalid_point_exception* retrieve_invalid_point_exception();
+
+      /// Notify the functor about an instance of the options class that contains
+      /// information from its corresponding ini-file entry in the auxiliaries or
+      /// observables section.
+      void notifyOfIniOptions(const Options&amp;);
+
+      /// Set an option for the functor directly (for use in standalone executables).
+      template&lt;typename TYPE&gt;
+      void setOption(const str&amp; key, const TYPE val)
+      {
+        myOptions.setValue&lt;str,TYPE&gt;(key, val);
+      }
+
+      /// Return a safe pointer to the options that this functor is supposed to run with (e.g. from the ini file).
+      safe_ptr&lt;Options&gt; getOptions();
+
+      /// Notify the functor about a string in YAML that contains the sub-capability information (for use in standalones)
+      void notifyOfSubCaps(const str&amp;);
+
+      /// Notify the functor about an instance of the options class that contains sub-capability information
+      void notifyOfSubCaps(const Options&amp;);
+
+      /// Set a sub-capability (subcap)for the functor directly (for use in standalone executables).
+      template&lt;typename TYPE&gt;
+      void setSubCap(const str&amp; key, const TYPE val)
+      {
+        mySubCaps.setValue&lt;str,TYPE&gt;(key, val);
+      }
+
+      /// Return a safe pointer to the subcaps that this functor realises it is supposed to facilitate downstream calculation of.
+      safe_ptr&lt;Options&gt; getSubCaps();
+
+      /// Return a safe pointer to the vector of all capability,type pairs of functors arranged downstream of this one in the dependency tree.
+      safe_ptr&lt;std::set&lt;sspair&gt;&gt; getDependees();
+
+      /// Test whether the functor is allowed to be used with all models
+      bool allModelsAllowed();
+
+      /// Test whether the functor is always allowed (either explicitly or implicitly) to be used with a given model
+      bool modelAllowed(str model);
+
+      /// Test whether the functor is explictly always allowed to be used with a given model
+      bool modelExplicitlyAllowed(str model);
+
+      /// Add a model to the internal list of models for which this functor is allowed to be used.
+      void setAllowedModel(str model);
+
+      /// Test whether the functor is allowed (either explicitly or implicitly) to be used with a given combination of models
+      bool modelComboAllowed(std::set&lt;str&gt; combo);
+
+      /// Test whether the functor has been explictly allowed to be used with a given combination of models
+      bool modelComboExplicitlyAllowed(std::set&lt;str&gt; combo);
+
+      /// Add a model group definition to the internal list of model groups.
+      void setModelGroup(str group, str contents);
+
+      /// Add a combination of model groups to the internal list of combinations for which this functor is allowed to be used.
+      void setAllowedModelGroupCombo(str groups);
+
+    protected:
+
+      /// Internal storage of the function name.
+      str myName;
+      /// Internal storage of exactly what the function calculates.
+      str myCapability;
+      /// Internal storage of the type of what the function calculates.
+      str myType;
+      /// Internal storage of the name of the module or backend to which the function belongs.
+      str myOrigin;
+      /// Internal storage of the version of the module or backend to which the function belongs.
+      str myVersion;
+      /// Purpose of the function (relevant for output and next-to-output functors)
+      str myPurpose;
+      /// Citation key: BibTex key of the reference.
+      str myCitationKey;
+      /// Bound model functor claw, for checking relationships between models
+      const Models::ModelFunctorClaw* myClaw;
+
+      /// String label, used to label functor results for printer system
+      const str myLabel;
+      /// String label, used to label functor timing data for printer system
+      const str myTimingLabel;
+      /// Status:
+      ///                    -4 = required backend absent (backend ini functions)
+      ///                    -3 = required classes absent
+      ///                    -2 = function absent
+      ///                    -1 = origin absent
+      ///                     0 = model incompatibility (default)
+      ///                     1 = available
+      ///                     2 = active
+      int myStatus;
+      /// Internal storage of the vertex ID number used by the printer system to identify functors
+      int myVertexID;
+      /// ID assigned by printers to the timing data output stream
+      int myTimingVertexID;
+      /// Debug flag
+      bool verbose;
+
+      /// Internal storage of function options, as a YAML node
+      Options myOptions;
+
+      /// Internal storage of function sub-capabilities, as a YAML node
+      Options mySubCaps;
+
+      /// List of all capability,type pairs of functors downstream of this one in the dependency tree
+      std::set&lt;sspair&gt; myDependees;
+
+      /// List of allowed models
+      std::set&lt;str&gt; allowedModels;
+
+      /// List of allowed model group combinations
+      std::set&lt;std::set&lt;str&gt; &gt; allowedGroupCombos;
+
+      /// Map from model group names to group contents
+      std::map&lt;str, std::set&lt;str&gt; &gt; modelGroups;
+
+      /// Attempt to retrieve a dependency or model parameter that has not been resolved
+      static void failBigTime(str method);
+
+      /// Test if there is a model in the functor's allowedModels list as which this model can be interpreted
+      inline bool allowed_parent_or_friend_exists(str model);
+
+      /// Check that a model is actually part of a combination that is allowed to be used with this functor.
+      inline bool in_allowed_combo(str model);
+
+      /// Test whether any of the entries in a given model group is a valid interpretation of any members in a given combination
+      inline bool contains_anything_interpretable_as_member_of(std::set&lt;str&gt; combo, str group);
+
+      /// Work out whether a given combination of models and a model group have any elements in common
+      inline bool has_common_elements(std::set&lt;str&gt; combo, str group);
+
+      /// Try to find a parent or friend model in some user-supplied map from models to sspair vectors
+      str find_friend_or_parent_model_in_map(str model, std::map&lt; str, std::set&lt;sspair&gt; &gt; karta);
+
+      /// Reset functor for one thread only
+      virtual void reset(int);
+
+  };
+
+
+  // ======================== Module Functors =====================================
+
+  /// Functor derived class for module functions
+  class module_functor_common : public functor
+  {
+
+    public:
+
+      /// Constructor
+      module_functor_common(str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~module_functor_common();
+
+      /// Getter for averaged runtime
+      double getRuntimeAverage();
+
+      /// Reset functor
+      void reset();
+
+      /// Tell the functor that it invalidated the current point in model space, pass a message explaining why, and throw an exception.
+      void notifyOfInvalidation(const str&amp;);
+
+      /// Getter for invalidation rate
+      double getInvalidationRate();
+
+      /// Setter for the fade rate
+      void setFadeRate(double);
+
+      /// Setter for indicating if the timing data for this function's execution should be printed
+      void setTimingPrintRequirement(bool);
+
+      /// Getter indicating if the timing data for this function's execution should be printed
+      bool requiresTimingPrinting() const;
+
+      /// Indicate whether or not a known model is activated or not.
+      bool getActiveModelFlag(str);
+
+      /// Return a safe pointer to a string indicating which backend requirement has been activated for a given backend group.
+      safe_ptr&lt;str&gt; getChosenReqFromGroup(str);
+
+      /// Execute a single iteration in the loop managed by this functor.
+      virtual void iterate(long long iteration);
+
+      /// Initialise the array holding the current iteration(s) of this functor.
+      virtual void init_myCurrentIteration_if_NULL();
+      /// Setter for setting the iteration number in the loop in which this functor runs
+      virtual void setIteration (long long iteration);
+      /// Return a safe pointer to the iteration number in the loop in which this functor runs.
+      virtual omp_safe_ptr&lt;long long&gt; iterationPtr();
+
+      /// Setter for specifying whether this is permitted to be a manager functor, which runs other functors nested in a loop.
+      virtual void setCanBeLoopManager (bool canManage);
+      /// Getter for revealing whether this is permitted to be a manager functor
+      virtual bool canBeLoopManager();
+
+      /// Setter for specifying the capability required of a manager functor, if it is to run this functor nested in a loop.
+      virtual void setLoopManagerCapType (str cap, str t);
+      /// Getter for revealing the required capability of the wrapped function's loop manager
+      virtual str loopManagerCapability();
+      /// Getter for revealing the required type of the wrapped function's loop manager
+      virtual str loopManagerType();
+      /// Getter for revealing the name of the wrapped function's assigned loop manager
+      virtual str loopManagerName();
+      /// Getter for revealing the module of the wrapped function's assigned loop manager
+      virtual str loopManagerOrigin();
+
+      /// Tell the manager of the loop in which this functor runs that it is time to break the loop.
+      virtual void breakLoopFromManagedFunctor();
+      /// Return a safe pointer to the flag indicating that a loop managed by this functor should break now.
+      virtual safe_ptr&lt;bool&gt; loopIsDone();
+      /// Provide a way to reset the flag indicating that a loop managed by this functor should break.
+      virtual void resetLoop();
+      /// Tell the functor that the loop it manages should break now.
+      virtual void breakLoop();
+
+      /// Getter for listing currently activated dependencies
+      virtual std::set&lt;sspair&gt; dependencies();
+      /// Getter for listing backends that require class loading
+      virtual std::set&lt;sspair&gt; backendclassloading();
+      /// Getter for listing backend requirement groups
+      virtual std::set&lt;str&gt; backendgroups();
+      /// Getter for listing all backend requirements
+      virtual std::set&lt;sspair&gt; backendreqs();
+      /// Getter for listing backend requirements from a specific group
+      virtual std::set&lt;sspair&gt; backendreqs(str);
+      /// Getter for listing permitted backends
+      virtual std::set&lt;sspair&gt; backendspermitted(sspair quant);
+      /// Getter for listing tags associated with backend requirements
+      virtual std::set&lt;str&gt; backendreq_tags(sspair);
+      /// Getter for listing backend requirements that must be resolved from the same backend
+      virtual std::set&lt;sspair&gt; forcematchingbackend(str);
+
+      /// Getter for listing backend-specific conditional dependencies (4-string version)
+      virtual std::set&lt;sspair&gt; backend_conditional_dependencies (str req, str type, str be, str ver);
+
+      /// Getter for backend-specific conditional dependencies (3-string version)
+      virtual std::set&lt;sspair&gt; backend_conditional_dependencies (str req, str type, str be);
+
+      /// Getter for backend-specific conditional dependencies (backend functor pointer version)
+      virtual std::set&lt;sspair&gt; backend_conditional_dependencies (functor* be_functor);
+
+      /// Getter for listing model-specific conditional dependencies
+      virtual std::set&lt;sspair&gt; model_conditional_dependencies (str model);
+
+      /// Getter for listing model-specific conditional backend requirements
+      virtual std::set&lt;sspair&gt; model_conditional_backend_reqs (str model);
+
+      /// Add and activate unconditional dependencies.
+      void setDependency(str, str, void(*)(functor*, module_functor_common*), str purpose= &quot;&quot;);
+
+      /// Add conditional dependency-type pairs in advance of later conditions.
+      void setConditionalDependency(str, str);
+
+      /// Add a backend conditional dependency for multiple backend versions
+      void setBackendConditionalDependency(str, str, str, str, void(*)(functor*, module_functor_common*));
+
+      /// Add a backend conditional dependency for a single backend version
+      void setBackendConditionalDependencySingular(str, str, str, str, void(*)(functor*, module_functor_common*));
+
+      /// Add a model conditional dependency for multiple models
+      void setModelConditionalDependency(str, str, void(*)(functor*, module_functor_common*));
+
+      /// Add a model conditional dependency for a single model
+      void setModelConditionalDependencySingular(str, str, void(*)(functor*, module_functor_common*));
+
+      /// Add a rule for activating backend requirements according to the model being scanned.
+      void makeBackendRuleForModel(str, str);
+
+      /// Add an unconditional backend requirement
+      /// The info gets updated later if this turns out to be contitional on a model.
+      void setBackendReq(str, str, str, str, void(*)(functor*));
+
+      /// Add a model conditional backend requirement for multiple models
+      void setModelConditionalBackendReq(str model, str req, str type);
+
+      /// Add a model conditional backend requirement for a single model
+      void setModelConditionalBackendReqSingular(str model, str req, str type);
+
+      /// Add a rule for dictating which backends can be used to fulfill which backend requirements.
+      void makeBackendOptionRule(str, str);
+
+      /// Add a single permitted backend version
+      void setPermittedBackend(str req, str be, str ver);
+
+      /// Add one or more rules for forcing backends reqs with the same tags to always be resolved from the same backend.
+      void makeBackendMatchingRule(str tag);
+
+      /// Add a rule indicating that classes from a given backend must be available
+      void setRequiredClassloader(str, str, str);
+
+      /// Indicate to the functor which backends are actually loaded and working
+      void notifyOfBackends(std::map&lt;str, std::set&lt;str&gt; &gt;);
+
+      /// Set the ordered list of pointers to other functors that should run nested in a loop managed by this one
+      virtual void setNestedList (std::vector&lt;functor*&gt; &amp;newNestedList);
+
+      /// Resolve a dependency using a pointer to another functor object
+      virtual void resolveDependency (functor* dep_functor);
+
+      /// Set this functor's loop manager (if it has one)
+      virtual void resolveLoopManager (functor*);
+
+      /// Resolve a backend requirement using a pointer to another functor object
+      virtual void resolveBackendReq (functor* be_functor);
+
+      /// Notify the functor that a certain model is being scanned, so that it can activate its dependencies and backend reqs accordingly.
+      virtual void notifyOfModel(str model);
+
+      /// Notify the functor that another functor depends on it
+      virtual void notifyOfDependee (functor*);
+
+      /// Retrieve the previously saved exception generated when this functor invalidated the current point in model space.
+      virtual invalid_point_exception* retrieve_invalid_point_exception();
+
+
+    protected:
+
+      /// Reset functor for one thread only
+      void reset(int);
+
+      /// Acknowledge that this functor invalidated the current point in model space.
+      virtual void acknowledgeInvalidation(invalid_point_exception&amp;, functor* f = NULL);
+
+      /// Do pre-calculate timing things
+      virtual void startTiming(int);
+
+      /// Do post-calculate timing things
+      virtual void finishTiming(int);
+
+      /// Flag to select whether or not the timing data for this function's execution should be printed;
+      bool myTimingPrintFlag;
+
+      /// Initialise the memory of this functor.
+      virtual void init_memory();
+
+      /// Construct the list of known models only if it doesn't yet exist
+      void fill_activeModelFlags();
+
+      /// Retrieve full conditional dependency-type pair from conditional dependency only
+      sspair retrieve_conditional_dep_type_pair(str);
+
+      /// Beginning and end timing points
+      std::chrono::time_point&lt;std::chrono::system_clock&gt; *start, *end;
+
+      /// A flag indicating whether or not this functor has invalidated the current point
+      bool point_exception_raised;
+
+      /// An exception raised because this functor has invalidated the current point
+      invalid_point_exception raised_point_exception;
+
+      /// Averaged runtime in ns
+      double runtime_average;
+
+      /// Fade rate for average runtime
+      double fadeRate;
+
+      /// Probability that functors invalidates point in model parameter space
+      double pInvalidation;
+
+      /// Needs recalculating or not?
+      bool* needs_recalculating;
+
+      /// Has result already been sent to the printer?
+      bool* already_printed;
+
+      /// Has timing data already been sent to the printer?
+      bool* already_printed_timing;
+
+      /// Flag indicating whether this function can manage a loop over other functions
+      bool iCanManageLoops;
+
+      /// Flag indicating whether this function is ready to finish its loop (only relevant if iCanManageLoops = true)
+      bool myLoopIsDone;
+
+      /// Flag indicating whether this function can run nested in a loop over functions
+      bool iRunNested;
+
+      /// Capability of a function that mangages a loop that this function can run inside of.
+      str myLoopManagerCapability;
+      /// Capability of a function that mangages a loop that this function can run inside of.
+      str myLoopManagerType;
+      /// Pointer to the functor that mangages the loop that this function runs inside of.
+      functor* myLoopManager;
+
+      /// Vector of functors that have been set up to run nested within this one.
+      std::vector&lt;functor*&gt; myNestedFunctorList;
+
+      /// Pointer to counters for iterations of nested functor loop.
+      long long* myCurrentIteration;
+
+      /// Maximum number of OpenMP threads this MPI process is permitted to launch in total.
+      const int globlMaxThreads;
+
+      /// Internal list of backend groups that this functor's requirements fall into.
+      std::set&lt;str&gt; myGroups;
+
+      /// Map from groups to backend reqs, indicating which backend req has been activated for which backend group.
+      std::map&lt;str,str&gt; chosenReqsFromGroups;
+
+      /// Set of all backend requirement-type string pairs.
+      std::set&lt;sspair&gt; myBackendReqs;
+
+      /// Set of all backend requirement-type string pairs currently available for resolution.
+      std::set&lt;sspair&gt; myResolvableBackendReqs;
+
+      /// Set of backend requirement-type string pairs for specific backend groups
+      std::map&lt;str,std::set&lt;sspair&gt; &gt; myGroupedBackendReqs;
+
+      /// Vector of dependency-type string pairs
+      std::set&lt;sspair&gt; myDependencies;
+
+      /// Map of conditional dependencies to their types
+      std::map&lt;str,str&gt; myConditionalDependencies;
+
+      /// Map from (vector with 4 strings: backend req, type, backend, version) to (set of {conditional dependency-type} pairs)
+      std::map&lt; std::vector&lt;str&gt;, std::set&lt;sspair&gt; &gt; myBackendConditionalDependencies;
+
+      /// Map from models to (set of {conditional dependency-type} pairs)
+      std::map&lt; str, std::set&lt;sspair&gt; &gt; myModelConditionalDependencies;
+
+      /// Map from models to (set of {conditional backend requirement-type} pairs)
+      std::map&lt; str, std::set&lt;sspair&gt; &gt; myModelConditionalBackendReqs;
+
+      /// Map from known models to flags indicating if they are activated or not (known = allowed, in allowed groups or conditions for conditional dependencies)
+      std::map&lt;str, bool&gt; activeModelFlags;
+
+      /// Map from (dependency-type pairs) to (pointers to templated void functions
+      /// that set dependency functor pointers)
+      std::map&lt;sspair, void(*)(functor*, module_functor_common*)&gt; dependency_map;
+
+      /// Map from (dependency-type pairs) to pointers to functors used to resolve them
+      /// that set dependency functor pointers)
+      std::map&lt;sspair, functor*&gt; dependency_functor_map;
+
+      /// Map from backend requirements to their required types
+      std::map&lt;str, str&gt; backendreq_types;
+
+      /// Map from backend requirements to their designated groups
+      std::map&lt;sspair, str&gt; backendreq_groups;
+
+      /// Map from backend requirements to their rule tags
+      std::map&lt;sspair, std::set&lt;str&gt; &gt; backendreq_tagmap;
+
+      /// Map from (backend requirement-type pairs) to (pointers to templated void functions
+      /// that set backend requirement functor pointers)
+      std::map&lt;sspair, void(*)(functor*)&gt; backendreq_map;
+
+      /// Map from (backend requirement-type pairs) to (set of permitted {backend-version} pairs)
+      std::map&lt; sspair, std::set&lt;sspair&gt; &gt; permitted_map;
+
+      /// Map from tags to sets of matching (backend requirement-type pairs) that are forced to use the same backend
+      std::map&lt; str, std::set&lt;sspair&gt; &gt; myForcedMatches;
+
+      /// Map from required classloading backends to their versions
+      std::map&lt; str, std::set&lt;str&gt; &gt; required_classloading_backends;
+
+      /// Vector of required backends currently missing
+      std::vector&lt;str&gt; missing_backends;
+
+      /// Internal timespec object
+      timespec tp;
+
+      /// Integer LogTag, for tagging log messages
+      int myLogTag;
+
+      /// Check if an appropriate LogTag for this functor is missing from the logging system.
+      void check_missing_LogTag();
+
+      /// While locked, prevent this function switching off threadsafe* emergency signal handling.
+      /// *The emergency signal handling cannot be made completely threadsafe; it can still cause
+      /// lockups and memory corruption if it occurs at an inopportune time. &quot;soft&quot; shutdown is
+      /// always preferable.
+      bool signal_mode_locked = true;
+      /// @}
+
+      /// Connectors to external helper functions (to decouple signal handling from this class)
+      // friend void FunctorHelp::check_for_shutdown_signal(module_functor_common&amp;);
+      // friend bool FunctorHelp::emergency_shutdown_begun();
+      friend void FunctorHelp::entering_multithreaded_region(module_functor_common&amp;);
+      friend void FunctorHelp::leaving_multithreaded_region(module_functor_common&amp;);
+      // void check_for_shutdown_signal(){ FunctorHelp::check_for_shutdown_signal(*this); }
+      // bool emergency_shutdown_begun(){ return FunctorHelp::emergency_shutdown_begun(); }
+      void entering_multithreaded_region(){ FunctorHelp::entering_multithreaded_region(*this); }
+      void leaving_multithreaded_region(){ FunctorHelp::leaving_multithreaded_region(*this); }
+
+  };
+
+
+  /// Actual module functor type for all but TYPE=void
+  template &lt;typename TYPE&gt;
+  class module_functor : public module_functor_common
+  {
+
+    public:
+
+      /// Constructor
+      module_functor(void(*)(TYPE &amp;), str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~module_functor();
+
+      /// Setter for indicating if the wrapped function's result should to be printed
+      virtual void setPrintRequirement(bool flag);
+
+      /// Getter indicating if the wrapped function's result should to be printed
+      virtual bool requiresPrinting() const;
+
+      /// Calculate method
+      void calculate();
+
+      /// Operation (return value)
+      const TYPE&amp; operator()(int index);
+
+      /// Alternative to operation (returns a safe pointer to value)
+      safe_ptr&lt;TYPE&gt; valuePtr();
+
+      #ifndef NO_PRINTERS
+        /// Printer function
+        virtual void print(Printers::BasePrinter* printer, const int pointID, int index);
+
+        /// Printer function (no-thread-index short-circuit)
+        virtual void print(Printers::BasePrinter* printer, const int pointID);
+      #endif
+
+
+    protected:
+
+      /// Internal storage of function pointer
+      void (*myFunction)(TYPE &amp;);
+
+      /// Internal pointer to storage location of function value
+      TYPE* myValue;
+
+      /// Flag to select whether or not the results of this functor should be sent to the printer object.
+      bool myPrintFlag;
+
+      /// Initialise the memory of this functor.
+      virtual void init_memory();
+
+  };
+
+
+  /// Actual module functor type for TYPE=void
+  template &lt;&gt;
+  class module_functor&lt;void&gt; : public module_functor_common
+  {
+
+    public:
+
+      /// Constructor
+      module_functor(void (*)(), str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~module_functor() {}
+
+      /// Calculate method
+      void calculate();
+
+      #ifndef NO_PRINTERS
+        /// Blank print method
+        virtual void print(Printers::BasePrinter*, const int, int);
+
+        /// Blank print method
+        virtual void print(Printers::BasePrinter*, const int);
+      #endif
+
+    protected:
+
+      /// Internal storage of function pointer
+      void (*myFunction)();
+
+  };
+
+
+  // ======================== Backend Functors =====================================
+
+  /// Backend functor class for functions with result type TYPE and argumentlist ARGS
+  template &lt;typename PTR_TYPE, typename TYPE, typename... ARGS&gt;
+  class backend_functor_common : public functor
+  {
+
+    protected:
+
+      /// Set the inUse flag.
+      virtual void setInUse(bool);
+
+      /// Type of the function pointer being encapsulated
+      typedef PTR_TYPE funcPtrType;
+
+      /// Internal storage of function pointer
+      funcPtrType myFunction;
+
+      /// Integer LogTag, for tagging log messages
+      int myLogTag;
+
+      /// Internal storage of the 'safe' version of the version (for use in namespaces, variable names, etc).
+      str mySafeVersion;
+
+      /// Flag indicating if this backend functor is actually in use in a given scan
+      bool inUse;
+
+    public:
+
+      /// Constructor
+      backend_functor_common (funcPtrType, str, str, str, str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~backend_functor_common() {}
+
+      /// Update the internal function pointer wrapped by the functor
+      void updatePointer(funcPtrType);
+
+      /// Hand out the internal function pointer wrapped by the functor
+      funcPtrType handoutFunctionPointer();
+
+      /// Hand out a safe pointer to this backend functor's inUse flag.
+      safe_ptr&lt;bool&gt; inUsePtr();
+
+      /// Getter for the 'safe' incarnation of the version of the wrapped function's origin (module or backend)
+      virtual str safe_version() const;
+
+  };
+
+
+  /// Actual backend functor type
+  template &lt;typename PTR_TYPE, typename TYPE, typename... ARGS&gt; class backend_functor;
+
+  /// Template specialisation for non-variadic, non-void backend functions
+  template &lt;typename TYPE, typename... ARGS&gt;
+  class backend_functor&lt;TYPE(*)(ARGS...), TYPE, ARGS...&gt; : public backend_functor_common&lt;TYPE(*)(ARGS...), TYPE, ARGS...&gt;
+  {
+
+    public:
+
+      /// Constructor
+      backend_functor (TYPE(*)(ARGS...), str, str, str, str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~backend_functor() {}
+
+      /// Operation (execute function and return value)
+      TYPE operator()(ARGS&amp;&amp;... args);
+
+  };
+
+
+  /// Template specialisation for non-variadic, void backend functions
+  template &lt;typename... ARGS&gt;
+  class backend_functor&lt;void(*)(ARGS...), void, ARGS...&gt; : public backend_functor_common&lt;void(*)(ARGS...), void, ARGS...&gt;
+  {
+
+    public:
+
+      /// Constructor
+      backend_functor (void (*)(ARGS...), str, str, str, str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~backend_functor() {}
+
+      /// Operation (execute function)
+      void operator()(ARGS&amp;&amp;... args);
+
+  };
+
+  /// Template specialisation for variadic, non-void backend functions
+  template &lt;typename TYPE, typename... ARGS&gt;
+  class backend_functor&lt;typename variadic_ptr&lt;TYPE,ARGS...&gt;::type, TYPE, ARGS...&gt;
+   : public backend_functor_common&lt;typename variadic_ptr&lt;TYPE,ARGS...&gt;::type, TYPE, ARGS...&gt;
+  {
+
+    public:
+
+      /// Constructor
+      backend_functor(typename variadic_ptr&lt;TYPE,ARGS...&gt;::type, str, str, str, str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~backend_functor() {}
+
+      /// Operation (execute function and return value)
+      template &lt;typename... VARARGS&gt;
+      TYPE operator()(VARARGS&amp;&amp;... varargs)
+      {
+        logger().entering_backend(this-&gt;myLogTag);
+        TYPE tmp = this-&gt;myFunction(std::forward&lt;VARARGS&gt;(varargs)...);
+        logger().leaving_backend();
+        return tmp;
+      }
+
+  };
+
+  /// Template specialisation for variadic void backend functions
+  template &lt;typename... ARGS&gt;
+  class backend_functor&lt;typename variadic_ptr&lt;void,ARGS...&gt;::type, void, ARGS...&gt;
+   : public backend_functor_common&lt;typename variadic_ptr&lt;void,ARGS...&gt;::type, void, ARGS...&gt;
+  {
+
+    public:
+
+      /// Constructor
+      backend_functor(typename variadic_ptr&lt;void,ARGS...&gt;::type, str, str, str, str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~backend_functor() {}
+
+      /// Operation (execute function)
+      template &lt;typename... VARARGS&gt;
+      void operator()(VARARGS&amp;&amp;... varargs)
+      {
+        logger().entering_backend(this-&gt;myLogTag);
+        this-&gt;myFunction(std::forward&lt;VARARGS&gt;(varargs)...);
+        logger().leaving_backend();
+      }
+
+  };
+
+
+  // ======================== Model Functors =====================================
+
+  /// Functors specific to ModelParameters objects
+  class model_functor : public module_functor&lt;ModelParameters&gt;
+  {
+
+    public:
+
+      /// Constructor
+      model_functor(void (*)(ModelParameters &amp;), str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~model_functor() {}
+
+      /// Function for setting the model name for a ModelParameters object. Mainly for better error messages.
+      void setModelName(str model_name);
+
+      /// Function for adding a new parameter to the map inside the ModelParameters object
+      void addParameter(str parname);
+
+      /// Function for handing over parameter identities to another model_functor
+      void donateParameters(model_functor &amp;receiver);
+
+  };
+
+
+  /// Functors specific to primary ModelParameters objects
+  ///
+  /// These allow direct access to the functor contents via a raw pointer, so
+  /// that the parameter values can be set (not allowed via safe pointers).
+  class primary_model_functor : public model_functor
+  {
+
+    public:
+
+      /// Constructor
+      primary_model_functor(void (*)(ModelParameters &amp;), str, str, str, str, Models::ModelFunctorClaw&amp;);
+
+      /// Destructor
+      virtual ~primary_model_functor() {}
+
+      /// Functor contents raw pointer &quot;get&quot; function
+      /// Returns a raw pointer to myValue, so that the contents may be
+      /// modified (intended for setting parameter values in primary
+      /// ModelParameters objects)
+      ModelParameters* getcontentsPtr();
+
+  };
+
+}
+
+#endif /* defined(__functors_hpp__) */
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:09 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

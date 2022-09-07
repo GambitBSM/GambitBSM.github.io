@@ -1,0 +1,524 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file asciiprinter/asciiprinter.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file asciiprinter/asciiprinter.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file asciiprinter/asciiprinter.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file asciiprinter/asciiprinter.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/","url":"https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/","name":"file asciiprinter\/asciiprinter.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/asciiprinter_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file asciiprinter\/asciiprinter.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-ap-dbug>define AP_DBUG</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-ap-dbug>define AP_DBUG</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file asciiprinter/asciiprinter.cpp</li></ol></nav><p class=lead></p><h1 id=file-asciiprinter-asciiprinter-cpp>file asciiprinter/asciiprinter.cpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers/>Gambit::Printers</a></strong><br>Forward declaration.</td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/asciiprinter_8cpp/#define-ap-dbug>AP_DBUG</a></strong>(x)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Ben Farmer (<a href=mailto:benjamin.farmer@monash.edu.au>benjamin.farmer@monash.edu.au</a>)</li><li>Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 Jul, Sep, 2014 Jan</li><li>2014 Jan</li></ul><p>ASCII printer class member function definitions</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-ap-dbug>define AP_DBUG <a href=#define-ap-dbug class=anchor aria-hidden=true>#</a></h3><pre><code>#define AP_DBUG(
+    x
+)
+
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  ASCII printer class member function definitions
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@monash.edu.au)
+///  \date 2013 Jul, Sep, 2014 Jan
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2014 Jan
+///
+///  *********************************************
+
+
+// Standard libraries
+#include &lt;map&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+#include &lt;ios&gt;
+#include &lt;sstream&gt;
+#include &lt;fstream&gt;
+#include &lt;iomanip&gt;
+
+// Gambit
+#include &quot;gambit/Printers/printers/asciiprinter.hpp&quot;
+#include &quot;gambit/Utils/standalone_error_handlers.hpp&quot;
+#include &quot;gambit/Utils/stream_overloads.hpp&quot;
+#include &quot;gambit/Utils/util_functions.hpp&quot;
+
+// MPI bindings
+#include &quot;gambit/Utils/mpiwrapper.hpp&quot;
+
+// Switch for debugging output (manual at the moment)
+
+//#define AP_DEBUG_MODE
+
+#ifdef AP_DEBUG_MODE
+  #define AP_DBUG(x) x
+#else
+  #define AP_DBUG(x)
+#endif
+
+
+// Code!
+namespace Gambit
+{
+
+  namespace Printers
+  {
+
+    /// Open file stream with error checking
+    //TODO: It would be good to add something like this to the Gambit Utils to use as a standard I think.
+
+    void open_output_file(std::ofstream&amp; output, std::string filename, std::ios_base::openmode mode)
+    {
+      // Pass in reference to externally created ofstream &quot;output&quot;
+      output.open(filename, std::ofstream::out | mode);
+
+      if( output.fail() || output.bad() )
+      {
+         std::ostringstream ss;
+         ss &lt;&lt; &quot;IO error while opening file for writing! Tried to open ofstream to file \&quot;&quot;&lt;&lt;filename&lt;&lt;&quot;\&quot;, but encountered error bit in the created ostream.&quot;;
+         throw std::runtime_error( ss.str() );
+      }
+    }
+
+    Record::Record() : readyToPrint(false) {};
+
+    void Record::reset()
+    {
+       data.clear();
+       readyToPrint = false;
+    }
+
+    // Printer to ascii file (i.e. table of doubles)
+
+    // Common constructor tasks
+    void asciiPrinter::common_constructor(const Options&amp; options)
+    {
+      if( this-&gt;is_auxilliary_printer() ) // check if this is an auxilliary printer
+      {
+
+         // Get stream name from printermanager
+         printer_name = options.getValue&lt;std::string&gt;(&quot;name&quot;);
+
+         // Get primary printer (need to cast from BasePrinter type to asciiPrinter)
+         asciiPrinter* primary = dynamic_cast&lt;asciiPrinter*&gt;(this-&gt;get_primary_printer());
+
+         // Name files based on the primary printer filenames
+         std::ostringstream f;
+         f &lt;&lt; primary-&gt;get_output_filename() &lt;&lt; &quot;_&quot; &lt;&lt; printer_name;
+         output_file = Utils::ensure_path_exists(options.getValueOrDef&lt;std::string&gt;(f.str(),&quot;output_file&quot;));
+
+         // Match the buffer length to the primary printer, or use a user-supplied option
+         bufferlength = options.getValueOrDef&lt;uint&gt;(primary-&gt;get_bufferlength(),&quot;buffer_length&quot;);
+      }
+      else
+      {
+         printer_name = &quot;Primary&quot;;
+
+         std::ostringstream f;
+         if(options.hasKey(&quot;output_path&quot;))
+         {
+           f &lt;&lt; options.getValue&lt;std::string&gt;(&quot;output_path&quot;) &lt;&lt; &quot;/&quot;;
+         }
+         else
+         {
+           f &lt;&lt; options.getValue&lt;std::string&gt;(&quot;default_output_path&quot;) &lt;&lt; &quot;/&quot;;
+         }
+         f &lt;&lt; options.getValue&lt;std::string&gt;(&quot;output_file&quot;);
+         output_file = Utils::ensure_path_exists(f.str());
+
+         bufferlength = options.getValueOrDef&lt;uint&gt;(100,&quot;buffer_length&quot;);
+      }
+
+      // Name &quot;info&quot; file to match &quot;output&quot; file
+      std::ostringstream finfo;
+      finfo&lt;&lt; output_file &lt;&lt;&quot;_info&quot;;
+      info_file = finfo.str();
+
+      #ifdef WITH_MPI
+      myRealRank = myComm.Get_rank();
+      this-&gt;setRank(myRealRank);
+      mpiSize = myComm.Get_size();
+
+      // Append mpi rank to file names to avoid collisions between processes
+      std::ostringstream fout;
+      std::ostringstream finfo2;
+      fout &lt;&lt; output_file &lt;&lt;&quot;_&quot;&lt;&lt;myRealRank;
+      finfo2&lt;&lt; info_file  &lt;&lt;&quot;_&quot;&lt;&lt;myRealRank;
+      output_file = fout.str();
+      info_file = finfo2.str();
+      #endif
+
+      // Erase contents of output_file and info_file if they already exist
+      std::ofstream output;
+      open_output_file(output, output_file, std::ofstream::trunc);
+      output.close();
+
+      std::ofstream info;
+      open_output_file(info, info_file, std::ofstream::trunc);
+      info.close();
+    }
+
+    // Constructor
+    asciiPrinter::asciiPrinter(const Options&amp; options, BasePrinter* const primary)
+      : BasePrinter(primary,options.getValueOrDef&lt;bool&gt;(false,&quot;auxilliary&quot;))
+      , output_file(&quot;&quot;)
+      , info_file(&quot;&quot;)
+      , bufferlength(100)
+      , global(false)
+      , printer_name(&quot;&quot;)
+     #ifdef WITH_MPI
+      , myComm() // attaches to MPI_COMM_WORLD, beware collisions with e.g. scanning algorithms.
+      , mpiSize(1)
+     #endif
+      , lastPointID(nullpoint)
+    {
+      common_constructor(options);
+    }
+
+
+    /// Destructor
+    // Overload the base class virtual destructor
+    asciiPrinter::~asciiPrinter()
+    {
+      // Make sure buffer is completely written to disk (MOVED TO FINALISE)
+      AP_DBUG( std::cout &lt;&lt; &quot;Destructing asciiPrinter object (with name=\&quot;&quot;&lt;&lt;printer_name&lt;&lt;&quot;\&quot;)...&quot; &lt;&lt; std::endl; )
+    }
+
+    /// Initialisation function
+    // Run by dependency resolver, which supplies the functors with a vector of VertexIDs whose requiresPrinting flags are set to true.
+    void asciiPrinter::initialise(const std::vector&lt;int&gt;&amp; /*printmevec*/)
+    {
+      // Currently don't seem to need this... could use it to check if all VertexID's have submitted print requests.
+    }
+
+    // Get options required to construct a reader object that can read
+    // the previous output of this printer.
+    // TODO: Currently unavailable
+    Options asciiPrinter::resume_reader_options()
+    {
+      std::ostringstream err;
+      err &lt;&lt; &quot;Sorry, the asciiPrinter is currently in a state of neglect, and lacks features necessary for constructing reader objects for resume data. If you really want these features then please file a bug to make your desires known :).&quot; &lt;&lt; std::endl;
+      printer_error().raise(LOCAL_INFO, err.str());
+      return Options();
+    }
+ 
+    /// Do final buffer dumps
+    void asciiPrinter::finalise(bool /*abnormal*/)
+    {
+      dump_buffer(true);
+      AP_DBUG( std::cout &lt;&lt; &quot;Buffer (of asciiPrinter with name=\&quot;&quot;&lt;&lt;printer_name&lt;&lt;&quot;\&quot;) successfully dumped...&quot; &lt;&lt; std::endl; )
+    }
+
+    void asciiPrinter::flush()
+    {
+      dump_buffer(true); 
+    }
+
+    /// Delete contents of output file (to be replaced/updated) and erase everything in the buffer
+    void asciiPrinter::reset(bool)
+    {
+      std::ofstream my_fstream;
+      open_output_file(my_fstream, output_file, std::ofstream::trunc);
+      my_fstream.close();
+      erase_buffer();
+      lastPointID = nullpoint;
+    }
+
+    /// Clear buffer
+    void asciiPrinter::erase_buffer()
+    {
+      // Used to just erase the records, but preserve vertex IDs. Not sure this is necessary, so for now just
+      // emptying the map.
+      buffer.clear();
+    }
+
+    // getters for internal variables
+    std::string asciiPrinter::get_output_filename() { return output_file; }
+    int         asciiPrinter::get_bufferlength()    { return bufferlength; }
+
+    // add results to printer buffer
+    void asciiPrinter::addtobuffer(const std::vector&lt;double&gt;&amp; functor_data, const std::vector&lt;std::string&gt;&amp; functor_labels, const int vID, const int rank, const int pointID)
+    {
+      //TODO: If a functor gets called twice without the printer advancing the data will currently just be overwritten. Should generate an error or something.
+
+      // Key for accessing buffer
+      std::pair&lt;int,int&gt; bkey = std::make_pair(rank,pointID);
+      PPIDpair ppid(pointID,rank); // This is a bit clunky because I added PPIDpairs later, so not all asciiprinter internals have been updated to use these instead of simple pairs.
+
+      // Register &lt;pointID&gt; as coming from process &lt;rank&gt;.
+      AP_DBUG( std::cout &lt;&lt; &quot;Rank &quot;&lt;&lt;myRealRank&lt;&lt;&quot;: adding data from (ptID,rank) &quot;&lt;&lt;ppid&lt;&lt;&quot;; labels=&quot;&lt;&lt;functor_labels&lt;&lt;std::endl; )
+      AP_DBUG( std::cout &lt;&lt; &quot;Rank &quot;&lt;&lt;myRealRank&lt;&lt;&quot;: last point was from (ptID,rank) &quot;&lt;&lt;lastPointID&lt;&lt;std::endl; )
+      //AP_DBUG( std::cout &lt;&lt; &quot;Rank &quot;&lt;&lt;this-&gt;getRank()&lt;&lt;&quot;: Note: nullpoint is (ptID,rank) &quot;&lt;&lt;nullpoint&lt;&lt;std::endl; )
+
+      // Do not write invalid or suspicious points to buffer as this will require extending the dataset, which is not possible in ascii
+      if (functor_labels[0] == &quot;Suspicious Point Code&quot;)
+        return;
+      if (functor_labels[0] == &quot;Invalidation Code&quot;)
+        return;
+        
+      if(lastPointID == nullpoint)
+      {
+        // No previous point; add current point
+        lastPointID = ppid;
+      }
+      else if(lastPointID == ppid)
+      {
+        // Don't need to do anything; staying on same point
+      }
+      else
+      {
+        // Moving to new point; set previous point data as &quot;ready to print&quot;.
+        std::pair&lt;int,int&gt; prevbkey = std::make_pair(lastPointID.rank,lastPointID.pointID);
+        if(buffer.find(prevbkey)==buffer.end())
+        {
+           std::ostringstream err;
+           err &lt;&lt; &quot;Tried to move asciiPrinter buffer to new point '&quot; &lt;&lt; ppid &lt;&lt; &quot;', however the *previous* point '&quot; &lt;&lt; endl
+               &lt;&lt; lastPointID &lt;&lt; &quot;' could not be found in the buffer (we need to set it as 'finished'). This &quot; &lt;&lt; endl
+               &lt;&lt; &quot;probably means that the old point was never actually entered into the buffer, which must &quot; &lt;&lt; endl
+               &lt;&lt; &quot;mean there is a bug in the asciiPrinter. Please report this.&quot;  &lt;&lt; endl
+               &lt;&lt; &quot;Debug data:&quot; &lt;&lt; endl
+               &lt;&lt; &quot;     functor label: &quot;&lt;&lt; functor_labels &lt;&lt; endl
+               &lt;&lt; &quot;     slot (rank,pointID): &quot;&lt;&lt; rank &lt;&lt;&quot;, &quot;&lt;&lt; pointID &lt;&lt; endl;
+           printer_error().raise(LOCAL_INFO, err.str());
+        }
+
+        buffer.at(prevbkey).readyToPrint = true;
+        lastPointID = ppid;
+
+        // Check whether it is time to dump the (completed) buffer points to disk
+        if(buffer.size()&gt;=bufferlength) {
+          AP_DBUG( std::cout &lt;&lt; &quot;asciiPrinter: Buffer full (&quot;&lt;&lt; buffer.size() &lt;&lt;&quot; records), running buffer dump&quot;&lt;&lt;std::endl; )
+          dump_buffer();
+        }
+      }
+
+      if( buffer.find(bkey)!=buffer.end() and buffer.at(bkey).readyToPrint==true )
+      {
+         std::ostringstream err;
+         err &lt;&lt; &quot;Error! Attempted to write to \&quot;old\&quot; model point &quot; &lt;&lt; endl
+             &lt;&lt; &quot;buffer! Bug in asciiprinter.cpp somewhere. Buffer &quot; &lt;&lt; endl
+             &lt;&lt; &quot;records are initialised with readyToPrint=false, and &quot; &lt;&lt; endl
+             &lt;&lt; &quot;should not be written to again after this flag is set &quot; &lt;&lt; endl
+             &lt;&lt; &quot;to true. The records are destroyed upon writing their &quot; &lt;&lt; endl
+             &lt;&lt; &quot;contents to disk, and there is a unique record for &quot; &lt;&lt; endl
+             &lt;&lt; &quot;every rank/pointID pair.&quot; &lt;&lt; endl
+             &lt;&lt; &quot;Debug info:&quot; &lt;&lt; endl
+             &lt;&lt; &quot;   functor label: &quot;&lt;&lt; functor_labels &lt;&lt; endl
+             &lt;&lt; &quot;   slot (rank,pointID): &quot;&lt;&lt; rank &lt;&lt;&quot;, &quot;&lt;&lt; pointID &lt;&lt; endl;
+         printer_error().raise(LOCAL_INFO, err.str());
+      }
+ 
+      // Assign to buffer, adding keys if needed
+      buffer[bkey].data[vID] = functor_data;
+
+      //if ( info_file_written == false )
+      //{
+      if ( label_record.find(vID)==label_record.end() or functor_labels.size()&gt;label_record.at(vID).size() )
+      {
+         // Assume the new, longer label list is better to use. This variation of functor_data length from point to point is kind of dangerous for an ascii output file though and we might want to forbid it. There is some probability that my method of allocating the columns according to the longest used by each functor in the first buffer dump will fail.
+         label_record[vID] = functor_labels;
+      }
+      //}
+    }
+
+    // write the printer buffer to file
+    void asciiPrinter::dump_buffer(bool force)
+    {
+      // Write record of what is in each column if we haven't done so yet
+      // Note the downside of using a map as the buffer; the order of stuff in the output file is going
+      // to be kind of haphazard due to the sorted order used by map. Will have to do more work to achieve
+      // an ordering that reflects the order of stuff in, say, the inifile.
+      //  force=true -- dumps all records regardless if they are &quot;readyToPrint&quot;
+      AP_DBUG( std::cout &lt;&lt; &quot;dumping asciiprinter buffer&quot; &lt;&lt; std::endl; )
+      AP_DBUG( std::cout &lt;&lt; &quot;lfpvfc 1&quot; &lt;&lt; std::endl; )
+
+      // Open output file in append mode
+      std::ofstream my_fstream;
+      open_output_file(my_fstream, output_file, std::ofstream::app);
+      my_fstream.precision(precision);
+
+      std::map&lt;int,int&gt; newlineindexrecord(lineindexrecord);
+      // Work out how to organise the output file
+      // To do this we need to go through the buffer and find the maximum length of vector associated with each VertexID.
+
+      for (Buffer::iterator
+        bufentry = buffer.begin(); bufentry != buffer.end(); ++bufentry)
+      {
+        Record&amp; record = bufentry-&gt;second;
+        for (LineBuf::iterator
+          item = record.data.begin(); item != record.data.end(); ++item)
+        {
+          //item-&gt;first  - VertexID
+          //item-&gt;second - std::vector&lt;double&gt; (result values)
+          int oldlen = newlineindexrecord[item-&gt;first];
+          int newlen = (item-&gt;second).size();
+          newlineindexrecord[item-&gt;first] = std::max(oldlen, newlen);
+        }
+      }
+      AP_DBUG( std::cout &lt;&lt; &quot;lfpvfc 2&quot; &lt;&lt; std::endl; )
+
+      // Check if the output format has changed, and raise an error if so
+      if (lineindexrecord.size()==0)
+      {
+        // initialise if empty
+        lineindexrecord = newlineindexrecord;
+      }
+      else if (lineindexrecord!=newlineindexrecord)
+      {
+        std::ostringstream errmsg;
+        errmsg &lt;&lt; &quot;Error! Output format has changed since last buffer dump! The asciiPrinter cannot handle this!&quot;
+               &lt;&lt; &quot;Details:&quot; &lt;&lt; std::endl;
+        // First check if a new vertexID has appeared
+        std::vector&lt;int&gt; new_vIDs;
+        std::vector&lt;int&gt; increased_lengths;
+        for (std::map&lt;int,int&gt;::iterator
+          it = newlineindexrecord.begin(); it != newlineindexrecord.end(); ++it)
+        {
+          // try to find each key in the old lineindexrecord
+          if(lineindexrecord.find(it-&gt;first)==lineindexrecord.end())
+          {
+            new_vIDs.push_back(it-&gt;first);
+          } // otherwise see if its data increased in length
+          else if(it-&gt;second &gt; lineindexrecord.at(it-&gt;first))
+          {
+            increased_lengths.push_back(it-&gt;first);
+          }
+        }
+
+        if(new_vIDs.size()!=0)
+        {
+          errmsg &lt;&lt; &quot;   The following vertexIDs are new since the last buffer dump &quot; &lt;&lt; endl
+                 &lt;&lt; &quot;   (i.e. they did not try to print themselves during filling &quot; &lt;&lt; endl
+                 &lt;&lt; &quot;   of any previous buffer):&quot; &lt;&lt; endl;
+          for(std::vector&lt;int&gt;::iterator it = new_vIDs.begin(); it!=new_vIDs.end(); ++it)
+          {
+            errmsg&lt;&lt;&quot;      - vID=&quot;&lt;&lt;(*it)&lt;&lt;&quot;, label=&quot;&lt;&lt;label_record.at(*it)&lt;&lt;std::endl;
+          }
+        }
+
+        if(increased_lengths.size()!=0)
+        {
+          errmsg &lt;&lt; &quot;   The following vertexIDs tried to print longer data vectors &quot; &lt;&lt; endl
+                 &lt;&lt; &quot;   than were seen during filling of the first (and any other) previous buffer:&quot; &lt;&lt;std::endl;
+          for(std::vector&lt;int&gt;::iterator it = increased_lengths.begin(); it!=increased_lengths.end(); ++it)
+          {
+            errmsg&lt;&lt;&quot;      - vID=&quot;&lt;&lt;(*it)&lt;&lt;&quot;, label=&quot;&lt;&lt;label_record.at(*it)&lt;&lt;std::endl;
+            errmsg&lt;&lt;&quot;          orig length=&quot;&lt;&lt;lineindexrecord.at(*it)&lt;&lt;&quot;, new length=&quot;&lt;&lt;newlineindexrecord.at(*it)&lt;&lt;std::endl;
+          }
+        }
+        printer_error().raise(LOCAL_INFO,errmsg.str());
+      }
+      AP_DBUG( std::cout &lt;&lt; &quot;lfpvfc 3&quot; &lt;&lt; std::endl; )
+
+      // Write the file explaining what is in each column of the output file
+      if (info_file_written==false)
+      {
+        AP_DBUG( std::cout &lt;&lt; &quot;asciiPrinter: Writing info file...&quot; &lt;&lt; std::endl; )
+
+        std::ofstream info_fstream;
+        open_output_file(info_fstream, info_file, std::ofstream::trunc); // trunc mode overwrites old content
+
+        int column_index = 1;
+        for (std::map&lt;int,int&gt;::iterator
+          it = lineindexrecord.begin(); it != lineindexrecord.end(); it++)
+        {
+          int vID        = it-&gt;first;
+          int length     = it-&gt;second;     // slots reserved in output file for these results
+          for (int i=0; i&lt;length; i++)
+          {
+            AP_DBUG( std::cout&lt;&lt;&quot;Column &quot;&lt;&lt;column_index&lt;&lt;&quot;: &quot;&lt;&lt;label_record.at(vID)[i]&lt;&lt;std::endl; )
+            info_fstream&lt;&lt;&quot;Column &quot;&lt;&lt;column_index&lt;&lt;&quot;: &quot;&lt;&lt;label_record.at(vID)[i]&lt;&lt;std::endl;
+            column_index++;
+          }
+        }
+        AP_DBUG( std::cout &lt;&lt; &quot;lfpvfc 3.1&quot; &lt;&lt; std::endl; )
+        info_fstream.close();
+        info_file_written=true;
+      }
+
+      AP_DBUG( std::cout &lt;&lt; &quot;lfpvfc 4&quot; &lt;&lt; std::endl; )
+
+      // Actual dump of buffer to file
+      for (Buffer::iterator
+        bufentry = buffer.begin(); bufentry != buffer.end(); /* Will increment in loop */ )
+      {
+        Record&amp; record = bufentry-&gt;second;
+        AP_DBUG( std::cout &lt;&lt; &quot;asciiPrinter: Examining record with key &lt;rank=&quot;&lt;&lt;bufentry-&gt;first.first&lt;&lt;&quot;, pointID=&quot;&lt;&lt;bufentry-&gt;first.second&lt;&lt;&quot;&gt;&quot;&lt;&lt; std::endl; )
+        if(force or record.readyToPrint)
+        {
+          AP_DBUG( std::cout &lt;&lt; &quot;asciiPrinter: readyToPrint -- writing output...&quot; &lt;&lt; std::endl; )
+          for (std::map&lt;int,int&gt;::iterator
+            it = lineindexrecord.begin(); it != lineindexrecord.end(); ++it)
+          {
+            // it-&gt;first  - int VertexID
+            // it-&gt;second - int length
+
+            std::vector&lt;double&gt; empty;             // Empty vector
+            std::vector&lt;double&gt;* results = &amp;empty; // Pointer to results vector
+
+            LineBuf::iterator itdata = record.data.find(it-&gt;first);
+            if( itdata != record.data.end())
+            {
+              results = &amp;(itdata-&gt;second);
+            }
+            else
+            {
+              // Not an error. This can happen if evaluation of a point is abandoned midway for some reason.
+              AP_DBUG( std::cout &lt;&lt; &quot;asciiPrinter: No data for vertex ID \&quot;&quot; &lt;&lt; it-&gt;first.
+                                 &lt;&lt; &quot;\&quot; found in record &lt;rank=&quot; &lt;&lt; bkey.first
+                                 &lt;&lt; &quot;, pointID=&quot; &lt;&lt; bkey.second &lt;&lt; &quot;&gt;, printer will output 'null'&quot; &lt;&lt; std::endl; )
+            }
+            uint length = it-&gt;second;      // slots reserved in output file for these results
+
+            // Print to the fstream!
+            int colwidth = precision + 8;  // Just kind of guessing here; tweak as needed
+            for (uint j=0;j&lt;length;j++)
+            {
+              if(j&gt;=results-&gt;size())
+              {
+                // Finished parsing results vector; fill remaining empty slots with 'none'
+                my_fstream&lt;&lt;std::setw(colwidth)&lt;&lt;&quot;none&quot;;
+              }
+              else
+              {
+                // print an entry from the results vector
+                my_fstream&lt;&lt;std::setw(colwidth+5)&lt;&lt;std::scientific&lt;&lt;(*results)[j];
+              }
+            }
+          }
+          // Delete the record from the buffer and move to next one
+          // Post-increment:  Increment the iterator first, THEN delete old one.
+          AP_DBUG( std::cout &lt;&lt; &quot;asciiPrinter: Erasing record &lt;rank=&quot;&lt;&lt;bkey.first&lt;&lt;&quot;, pointID=&quot;&lt;&lt;bkey.second&lt;&lt;&quot;&gt;&quot;&lt;&lt; std::endl; )
+          buffer.erase(bufentry++);
+        }
+        else
+        {
+          AP_DBUG( std::cout &lt;&lt; &quot;asciiPrinter: Not readyToPrint -- leaving in buffer&quot; &lt;&lt; std::endl; )
+          ++bufentry;
+        }
+        // line printed, print endline character and go to next line
+        my_fstream&lt;&lt;std::endl;
+      }
+      AP_DBUG( std::cout &lt;&lt; &quot;lfpvfc 5&quot; &lt;&lt; std::endl; )
+
+      // buffer dump complete! Flush the fstream to ensure write to file happens.
+      //my_fstream.flush();
+      my_fstream.close();
+
+      AP_DBUG( std::cout &lt;&lt; &quot;lfpvfc 6&quot; &lt;&lt; std::endl; )
+    }
+
+  } // end namespace printers
+} // end namespace Gambit
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:09 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

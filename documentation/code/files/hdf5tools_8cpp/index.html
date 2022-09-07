@@ -1,0 +1,912 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file hdf5printer/hdf5tools.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file hdf5printer/hdf5tools.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file hdf5printer/hdf5tools.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file hdf5printer/hdf5tools.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/","url":"https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/","name":"file hdf5printer\/hdf5tools.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5tools_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file hdf5printer\/hdf5tools.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-simple-call>define SIMPLE_CALL</a></li><li><a href=#define-run-type-dependent-check>define RUN_TYPE_DEPENDENT_CHECK</a></li><li><a href=#define-elseif>define ELSEIF</a></li><li><a href=#define-printtypeid>define PRINTTYPEID</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-simple-call>define SIMPLE_CALL</a></li><li><a href=#define-run-type-dependent-check>define RUN_TYPE_DEPENDENT_CHECK</a></li><li><a href=#define-elseif>define ELSEIF</a></li><li><a href=#define-printtypeid>define PRINTTYPEID</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file hdf5printer/hdf5tools.cpp</li></ol></nav><p class=lead></p><h1 id=file-hdf5printer-hdf5tools-cpp>file hdf5printer/hdf5tools.cpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers/>Gambit::Printers</a></strong><br>Forward declaration.</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/>Gambit::Printers::HDF5</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/hdf5tools_8cpp/#define-simple-call>SIMPLE_CALL</a></strong>(IDTYPE_OUT, FNAME, IDTYPE_IN, H5FUNCTION, VERB, OUTPUTNAME, INPUTNAME)<br>Macro to define simple wrappers with error checking for basic HDF5 tasks.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/hdf5tools_8cpp/#define-run-type-dependent-check>RUN_TYPE_DEPENDENT_CHECK</a></strong>(r, data, elem)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/hdf5tools_8cpp/#define-elseif>ELSEIF</a></strong>(r, data, elem)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/hdf5tools_8cpp/#define-printtypeid>PRINTTYPEID</a></strong>(r, data, elem)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Ben Farmer (<a href=mailto:benjamin.farmer@fysik.su.se>benjamin.farmer@fysik.su.se</a>)</p><p><strong>Date</strong>: 2015 May</p><p>A collection of tools for interacting with HDF5 databases.</p><p>Currently I am using the C++ bindings for HDF5, however they are a bit crap and it may be better to just write our own.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-simple-call>define SIMPLE_CALL <a href=#define-simple-call class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIMPLE_CALL(
+    IDTYPE_OUT,
+    FNAME,
+    IDTYPE_IN,
+    H5FUNCTION,
+    VERB,
+    OUTPUTNAME,
+    INPUTNAME
+)
+      IDTYPE_OUT FNAME(IDTYPE_IN id) \
+      { \
+         if(id &lt; 0) \
+         { \
+            std::ostringstream errmsg; \
+            errmsg &lt;&lt; &quot;Failed to &quot;&lt;&lt;VERB&lt;&lt;&quot; &quot;&lt;&lt;OUTPUTNAME&lt;&lt;&quot; for HDF5 dataset! The supplied id does not point to a successfully opened &quot;&lt;&lt;INPUTNAME&lt;&lt;&quot;!&quot;; \
+            printer_error().raise(LOCAL_INFO, errmsg.str()); \
+         } \
+         IDTYPE_OUT out_id = H5FUNCTION(id); \
+         if(out_id &lt; 0) \
+         { \
+            std::ostringstream errmsg; \
+            errmsg &lt;&lt; &quot;Failed to &quot;&lt;&lt;VERB&lt;&lt;&quot; &quot;&lt;&lt;OUTPUTNAME&lt;&lt;&quot; for HDF5 dataset! See HDF5 error output for more details.&quot;; \
+            printer_error().raise(LOCAL_INFO, errmsg.str()); \
+         } \
+         return out_id; \
+      }
+</code></pre><p>Macro to define simple wrappers with error checking for basic HDF5 tasks.</p><h3 id=define-run-type-dependent-check>define RUN_TYPE_DEPENDENT_CHECK <a href=#define-run-type-dependent-check class=anchor aria-hidden=true>#</a></h3><pre><code>#define RUN_TYPE_DEPENDENT_CHECK(
+    r,
+    data,
+    elem
+)
+if( H5Tequal(datatype_id, get_hdf5_data_type&lt;elem&gt;::type()) )\
+                  {\
+                      readable_info = _checkDatasetReadable_helper&lt;elem&gt;(dataset_id,dsetname);\
+                  }\
+                  else
+</code></pre><h3 id=define-elseif>define ELSEIF <a href=#define-elseif class=anchor aria-hidden=true>#</a></h3><pre><code>#define ELSEIF(
+    r,
+    data,
+    elem
+)
+            else if(H5Tequal(h5type,get_hdf5_data_type&lt;elem&gt;::type())) \
+            { \
+               out = h5v2_type&lt;elem&gt;(); \
+            }
+</code></pre><h3 id=define-printtypeid>define PRINTTYPEID <a href=#define-printtypeid class=anchor aria-hidden=true>#</a></h3><pre><code>#define PRINTTYPEID(
+    r,
+    data,
+    elem
+)
+         std::cout &lt;&lt; &quot;  Type: &quot; &lt;&lt; STRINGIFY(elem) &lt;&lt; &quot;, H5 type code: &quot; &lt;&lt; get_hdf5_data_type&lt;elem&gt;::type() &lt;&lt; std::endl;
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  A collection of tools for interacting with
+///  HDF5 databases.
+///
+///  Currently I am using the C++ bindings for
+///  HDF5, however they are a bit crap and it may
+///  be better to just write our own.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (benjamin.farmer@fysik.su.se)
+///  \date 2015 May
+///
+///  *********************************************
+
+#include &quot;gambit/Printers/printers/hdf5printer/hdf5tools.hpp&quot;
+#include &quot;gambit/Utils/local_info.hpp&quot;
+#include &quot;gambit/Logs/logger.hpp&quot;
+
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;iostream&gt;
+
+// Boost
+#include &lt;boost/preprocessor/seq/for_each.hpp&gt;
+
+namespace Gambit {
+  namespace Printers {
+
+    namespace HDF5 {
+
+      /// GAMBIT default file access property list
+      //  Sets some HDF5 properties to associate with open objects
+      //  Here we set objects to be 'evicted' from the metadata cache
+      //  when they are closed, which apparantly is not the default
+      //  which leads to massive RAM usage if we don't set this.
+      hid_t create_GAMBIT_fapl()
+      {
+         hid_t fapl(H5Pcreate(H5P_FILE_ACCESS)); // Copy defaults
+         #ifdef HDF5_DEBUG
+           std::cout&lt;&lt;&quot;HDF5 version:&quot;&lt;&lt;H5_VERS_MAJOR&lt;&lt;&quot;.&quot;&lt;&lt;H5_VERS_MINOR&lt;&lt;&quot;.&quot;&lt;&lt;H5_VERS_RELEASE&lt;&lt;std::endl;
+         #endif
+         #if (H5_VERS_MAJOR &gt; 1) || \
+             (H5_VERS_MAJOR == 1) &amp;&amp; H5_VERS_MINOR &gt; 10 || \
+             (H5_VERS_MAJOR == 1) &amp;&amp; H5_VERS_MINOR == 10 &amp;&amp; H5_VERS_RELEASE &gt;= 1
+         hbool_t value = 1; // true?
+         // This function does not appear before v 1.10.1, however it is
+         // pretty crucial, at least in my version of HDF5, for keeping the
+         // metadata cache from consuming all my RAM. However, Anders commented
+         // it out with his older HDF5 version and still had no RAM problem.
+         // So it might be ok to just remove it for older versions.
+         // However, if you see RAM blowouts and your HDF5 version is old,
+         // then this is probably the reason.
+         H5Pset_evict_on_close(fapl, value); // Set evict_on_close = true
+         #ifdef HDF5_DEBUG
+           std::cout &lt;&lt;&quot;GAMBIT fapl used!&quot;&lt;&lt;std::endl; // Check that this code is built...
+         #endif
+         #endif
+
+        return fapl;
+      }
+
+      /// Const global for the GAMBIT fapl
+      const hid_t H5P_GAMBIT(create_GAMBIT_fapl());
+
+      /// Macro to define simple wrappers with error checking for basic HDF5 tasks
+      #define SIMPLE_CALL(IDTYPE_OUT, FNAME, IDTYPE_IN, H5FUNCTION, VERB, OUTPUTNAME, INPUTNAME) \
+      IDTYPE_OUT FNAME(IDTYPE_IN id) \
+      { \
+         if(id &lt; 0) \
+         { \
+            std::ostringstream errmsg; \
+            errmsg &lt;&lt; &quot;Failed to &quot;&lt;&lt;VERB&lt;&lt;&quot; &quot;&lt;&lt;OUTPUTNAME&lt;&lt;&quot; for HDF5 dataset! The supplied id does not point to a successfully opened &quot;&lt;&lt;INPUTNAME&lt;&lt;&quot;!&quot;; \
+            printer_error().raise(LOCAL_INFO, errmsg.str()); \
+         } \
+         IDTYPE_OUT out_id = H5FUNCTION(id); \
+         if(out_id &lt; 0) \
+         { \
+            std::ostringstream errmsg; \
+            errmsg &lt;&lt; &quot;Failed to &quot;&lt;&lt;VERB&lt;&lt;&quot; &quot;&lt;&lt;OUTPUTNAME&lt;&lt;&quot; for HDF5 dataset! See HDF5 error output for more details.&quot;; \
+            printer_error().raise(LOCAL_INFO, errmsg.str()); \
+         } \
+         return out_id; \
+      }
+
+      hid_t closeFile(hid_t id)
+      {
+         if(id &lt; 0)
+         {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Failed to close HDF5 file with ID &quot;&lt;&lt;id&lt;&lt;&quot;! The supplied id does not point to a successfully opened file.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+         }
+  
+         // Check for any open objects! These should all be closed before the file is closed for maximum safety
+         ssize_t count = H5Fget_obj_count(id, H5F_OBJ_ALL);
+         if(count &gt; 1)
+         {
+            logger()&lt;&lt;LogTags::warn&lt;&lt;LogTags::repeat_to_cerr;
+            logger() &lt;&lt; &quot;Warning! &quot;&lt;&lt;count&lt;&lt;&quot; open objects detected when closing HDF5 file with ID &quot;&lt;&lt;id&lt;&lt;&quot;! Please check your code and ensure that all datasets, groups, selections, etc. are closed before closing the files they belong to.&quot;&lt;&lt;std::endl;
+            logger() &lt;&lt; &quot;Beginning analysis of open objects...&quot;&lt;&lt;std::endl;
+            count = H5Fget_obj_count(id, H5F_OBJ_FILE);
+            if(count&gt;1) logger() &lt;&lt; &quot;   &quot;&lt;&lt;count&lt;&lt;&quot; H5F_OBJ_FILE detected (should only be 1, for the open file itself)&quot;&lt;&lt;std::endl;
+            count = H5Fget_obj_count(id, H5F_OBJ_GROUP);
+            if(count&gt;0) logger() &lt;&lt; &quot;   &quot;&lt;&lt;count&lt;&lt;&quot; H5F_OBJ_GROUP detected&quot;&lt;&lt;std::endl;
+            count = H5Fget_obj_count(id, H5F_OBJ_DATASET);
+            if(count&gt;0) logger() &lt;&lt; &quot;   &quot;&lt;&lt;count&lt;&lt;&quot; H5F_OBJ_DATASET detected&quot;&lt;&lt;std::endl;
+            count = H5Fget_obj_count(id, H5F_OBJ_DATATYPE);
+            if(count&gt;0) logger() &lt;&lt; &quot;   &quot;&lt;&lt;count&lt;&lt;&quot; H5F_OBJ_DATATYPE detected&quot;&lt;&lt;std::endl;
+            count = H5Fget_obj_count(id, H5F_OBJ_ATTR);
+            if(count&gt;0) logger() &lt;&lt; &quot;   &quot;&lt;&lt;count&lt;&lt;&quot; H5F_OBJ_ATTR detected&quot;&lt;&lt;std::endl;
+            logger()&lt;&lt;EOM;
+         }
+
+         hid_t out_id = H5Fclose(id);
+         if(out_id &lt; 0)
+         {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Failed to close HDF5 file with ID &quot;&lt;&lt;id&lt;&lt;&quot;! See HDF5 error output for more details.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+         }
+         #ifdef HDF5_DEBUG
+           std::cout&lt;&lt;&quot;Called H5Fclose on file with ID &quot;&lt;&lt;id&lt;&lt;std::endl;
+         #endif
+         return out_id;
+      }
+
+
+      template&lt;&gt;
+      std::vector&lt;bool&gt; getChunk(const hid_t dset_id, std::size_t offset, std::size_t length)
+      {
+          // Buffer to receive data (and return from function)
+          std::vector&lt;uint8_t&gt; chunkdata(length);
+ 
+          // Select hyperslab
+          std::pair&lt;hid_t,hid_t&gt; selection_ids = selectChunk(dset_id,offset,length);
+          hid_t memspace_id = selection_ids.first;
+          hid_t dspace_id   = selection_ids.second;
+
+          // Buffer to receive data
+          void* buffer = chunkdata.data(); // pointer to contiguous memory within the buffer vector
+
+          // Get the data from the hyperslab.
+          hid_t hdftype_id = get_hdf5_data_type&lt;bool&gt;::type(); // It is assumed that you already know this is the right type for the dataset!
+          herr_t err_read = H5Dread(dset_id, hdftype_id, memspace_id, dspace_id, H5P_DEFAULT, buffer);
+
+          if(err_read&lt;0)
+          {
+              std::ostringstream errmsg;
+              errmsg &lt;&lt; &quot;Error retrieving chunk (offset=&quot;&lt;&lt;offset&lt;&lt;&quot;, length=&quot;&lt;&lt;length&lt;&lt;&quot;) from dataset in HDF5 file. H5Dread failed.&quot; &lt;&lt; std::endl;
+              errmsg &lt;&lt; &quot;  offset+length = &quot;&lt;&lt; offset+length &lt;&lt; std::endl;
+              printer_error().raise(LOCAL_INFO, errmsg.str());
+          }
+
+          H5Sclose(dspace_id);
+          H5Sclose(memspace_id);
+ 
+          std::vector&lt;bool&gt; chunkdata_bool;
+          for(auto it=chunkdata.begin(); it!=chunkdata.end(); ++it)
+          {
+              chunkdata_bool.push_back(*it);
+          }
+
+          return chunkdata_bool;
+      }
+ 
+      /// Create or open hdf5 file (ignoring feedback regarding whether file already existed)
+      hid_t openFile(const std::string&amp; fname, bool overwrite, const char access_type)
+      {
+         bool tmp;
+         return openFile(fname,overwrite,tmp,access_type);
+      }
+
+      /// Create or open hdf5 file
+      /// third argument &quot;oldfile&quot; is used to report whether an existing file was opened (true if yes)
+      hid_t openFile(const std::string&amp; fname, bool overwrite, bool&amp; oldfile, const char access_type)
+      {
+          //Debug
+          //std::cerr&lt;&lt;&quot;Attempting to open file &quot;&lt;&lt;fname&lt;&lt;&quot; in mode &quot;&lt;&lt;access_type&lt;&lt;&quot; (overwrite=&quot;&lt;&lt;overwrite&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+
+          hid_t file_id;  // file handle
+
+          unsigned int atype=0;
+          switch(access_type)
+          {
+            case 'r':
+              atype = H5F_ACC_RDONLY;
+              break;
+            case 'w':
+              // We let 'w' mean read/write here
+              atype = H5F_ACC_RDWR;
+              break;
+            default:
+              std::ostringstream errmsg;
+              errmsg &lt;&lt; &quot;Unrecognised access mode requested while trying to open HDF5 file! Saw '&quot;&lt;&lt;access_type&lt;&lt;&quot;'; only 'r' (read-only) and 'w' (read/wrtie) are valid. File was (&quot;&lt;&lt;fname&lt;&lt;&quot;)&quot;;
+              printer_error().raise(LOCAL_INFO, errmsg.str());
+              break;
+          }
+
+          if(overwrite)
+          {
+            // DANGER! Deletes existing file
+            if( remove(fname.c_str()) != 0 )
+            {
+              // Error deleting file, but probably it just didn't exist to delete
+              logger()&lt;&lt;LogTags::utils&lt;&lt;LogTags::warn&lt;&lt;&quot;Failed to delete file '&quot;&lt;&lt;fname&lt;&lt;&quot;'! Maybe it didn't exist in the first place.&quot;&lt;&lt;EOM;
+            }
+            else// else deleted file with no problem
+            {
+              logger()&lt;&lt;LogTags::utils&lt;&lt;LogTags::info&lt;&lt;&quot;Deleted pre-existing file &quot;&lt;&lt;fname&lt;&lt;&quot; (because overwrite=true)&quot;&lt;&lt;EOM;
+            }
+          }
+
+          errorsOff();
+          file_id = H5Fopen(fname.c_str(), atype, H5P_GAMBIT);
+          errorsOn();
+          if(file_id &lt; 0)
+          {
+             if(access_type=='w')
+             {
+                /* Ok maybe file doesn't exist yet, try creating it */
+                errorsOff();
+                file_id = H5Fcreate(fname.c_str(), H5F_ACC_EXCL, H5P_DEFAULT, H5P_GAMBIT);
+                errorsOn();
+                if(file_id &lt; 0)
+                {
+                   /* Still no good; error */
+                   std::ostringstream errmsg;
+                   errmsg &lt;&lt; &quot;Failed to open existing HDF5 file, then failed to create new one! (&quot;&lt;&lt;fname&lt;&lt;&quot;). The file may exist but be unreadable. You can check this by trying to inspect it with the 'h5ls' command line tool.&quot;;
+                   printer_error().raise(LOCAL_INFO, errmsg.str());
+                }
+                else
+                {
+                   /* successfully created new file */
+                   oldfile = false;
+                }
+             }
+             else
+             {
+               // Doesn't make sense to create new file if we wanted read-only mode. Error.
+               std::ostringstream errmsg;
+               errmsg &lt;&lt; &quot;Failed to open existing HDF5 file, and did not create new one since read-only access was specified. (&quot;&lt;&lt;fname&lt;&lt;&quot;)&quot;;
+               printer_error().raise(LOCAL_INFO, errmsg.str());
+             }
+          }
+          else
+          {
+             /* successfully opened existing file */
+             oldfile = true;
+          }
+
+          // DEBUG
+          #ifdef HDF5_DEBUG
+            std::cout&lt;&lt;&quot;Opened file &quot;&lt;&lt;fname&lt;&lt;&quot; in mode &quot;&lt;&lt;access_type&lt;&lt;&quot;, and assigned it ID &quot;&lt;&lt;file_id&lt;&lt;std::endl;
+          #endif
+
+          /* Return the file handle */
+          return file_id;
+      }
+
+      /// Check if hdf5 file exists and can be opened in read mode
+      bool checkFileReadable(const std::string&amp; fname, std::string&amp; msg)
+      {
+          bool readable(false);
+
+          errorsOff();
+          hid_t file_id = H5Fopen(fname.c_str(), H5F_ACC_RDONLY, H5P_GAMBIT);
+          errorsOn();
+          if(file_id &lt; 0)
+          {
+            readable=false;
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;H5Fopen failed (tried to open '&quot;&lt;&lt;fname&lt;&lt;&quot;')&quot;;
+            msg = errmsg.str();
+          }
+          else
+          {
+            /* everything fine, close the file */
+            herr_t status = H5Fclose(file_id);
+            if(status&lt;0)
+            {
+                std::ostringstream errmsg;
+                errmsg &lt;&lt; &quot;Failed to properly close HDF5 file after successfully checking that it was readable! (&quot;&lt;&lt;fname&lt;&lt;&quot;)&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+            readable=true;
+          }
+          // DEBUG
+          #ifdef HDF5_DEBUG
+            std::cout&lt;&lt;&quot;Checked that file &quot;&lt;&lt;fname&lt;&lt;&quot; was readable (had RDONLY access and ID &quot;&lt;&lt;file_id&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+          #endif
+          return readable;
+      }
+
+      /// Check if a group exists and can be accessed
+      bool checkGroupReadable(hid_t location, const std::string&amp; groupname, std::string&amp; msg)
+      {
+          hid_t group_id;
+          bool readable(false);
+
+          errorsOff();
+          group_id = H5Gopen2(location, groupname.c_str(), H5P_DEFAULT);
+          errorsOn();
+          if(group_id &lt; 0)
+          {
+            readable=false;
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;H5Gopen failed (tried to open '&quot;&lt;&lt;groupname&lt;&lt;&quot;' from location with id &quot;&lt;&lt;location&lt;&lt;&quot;)&quot;;
+            msg = errmsg.str();
+          }
+          else
+          {
+            /* everything fine, close the group */
+            herr_t status = H5Gclose(group_id);
+            if(status&lt;0)
+            {
+                std::ostringstream errmsg;
+                errmsg &lt;&lt; &quot;Failed to properly close HDF5 group after successfully checking that it was readable! (&quot;&lt;&lt;groupname&lt;&lt;&quot;)&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+            readable=true;
+          }
+          return readable;
+      }
+
+      template&lt;class T&gt;
+      std::pair&lt;bool,std::size_t&gt; _checkDatasetReadable_helper(hid_t dset_id, const std::string dset_name)
+      {
+          static const std::size_t CHUNK(1000);
+          std::vector&lt;T&gt; buffer(CHUNK);
+          bool fully_readable(true);
+          std::size_t largest_readable_index(0);
+
+          // Get dataset length
+          hid_t dspace_id = getSpace(dset_id);
+          if(dspace_id&lt;0)
+          {
+              fully_readable = false;
+          }
+          else
+          {
+              size_t dset_length(0);
+              bool length_error(false);
+              try
+              {
+                  dset_length = getSimpleExtentNpoints(dspace_id);
+              }
+              catch(const Gambit::exception&amp; e)
+              {
+                  fully_readable = false;
+                  length_error = true;
+              }
+              closeSpace(dspace_id);
+
+              if(not length_error)
+              {
+                  // Begin trying to read data
+                  std::size_t Nchunks   = dset_length / CHUNK;
+                  std::size_t remainder = dset_length % CHUNK;
+                  if(remainder!=0) Nchunks+=1;
+                  std::size_t offset(0);
+                  std::size_t length(0);
+                  errorsOff();
+                  for(std::size_t i=0; i&lt;Nchunks; i++)  
+                  {
+                      offset = i * CHUNK;
+                      length = CHUNK;
+                      if(remainder!=0 and (i+1)==Nchunks) length = remainder;
+                      try
+                      {
+                          errorsOff();
+                          buffer = getChunk&lt;T&gt;(dset_id, offset, length);
+                      }
+                      catch(const Gambit::exception&amp; e)
+                      {
+                          fully_readable = false;
+                      }
+                      if(not fully_readable) break;
+                  }
+                  errorsOn();
+
+                  if(not fully_readable)
+                  {
+                      // Try to find highest readable index in the dataset
+                      // We know it is somewhere in the last chunk we were reading.
+                      // Could do a more efficient search, but we will just look
+                      // sequentially from the beginning of the chunk
+
+                      errorsOff();
+                      for(std::size_t j=offset; j&lt;offset+length; j++)
+                      {
+                          try
+                          {
+                              std::vector&lt;T&gt; jbuffer = getChunk&lt;T&gt;(dset_id, j, 1);
+                              largest_readable_index = j;
+                          }
+                          catch(const Gambit::exception&amp; e)
+                          {
+                              break;
+                          }
+                      }
+                      errorsOn();
+
+                      if(largest_readable_index==dset_length)
+                      {
+                          // Chunked read failed, but individual reads succeeded? Weird.
+                          // Will have to abandon our efforts and make the user investigate
+                          // manually
+                          std::ostringstream err;
+                          err&lt;&lt;&quot;Dataset &quot;&lt;&lt;dset_name&lt;&lt;&quot; was determined to be partially unreadable (corrupted), however we were unable to determine the largest readable index. You will have to investigate the HDF5 file manually.&quot;;
+                          printer_error().raise(LOCAL_INFO,err.str());
+                      }
+                  }
+                  else
+                  {
+                      // Everything seems fine with this dataset
+                      largest_readable_index = dset_length;
+                  }
+              }
+          }
+          return std::make_pair(fully_readable,largest_readable_index);
+      }
+ 
+      /// Check if a dataset exists and can be read from fully
+      /// (Reads through entire dataset to make sure! May take some time)
+      std::pair&lt;bool,std::size_t&gt; checkDatasetReadable(hid_t location, const std::string&amp; dsetname)
+      {
+          std::pair&lt;bool,std::size_t&gt; readable_info(false,0);
+          hid_t dataset_id = openDataset(location, dsetname);
+          if(dataset_id&lt;0)
+          {
+              //msg += &quot;Failed to open dataset&quot;;
+          }
+          else
+          {
+              hid_t datatype_id = H5Dget_type(dataset_id);
+              if(datatype_id&lt;0)
+              {
+                  //msg += &quot;Failed to obtain type of dataset&quot;;
+              }
+              else
+              { 
+                  // Need buffers of various types depending of type of dataset.
+                  // Can achieve this with some macros and a templated helper function
+                  #define RUN_TYPE_DEPENDENT_CHECK(r,data,elem) \
+                  if( H5Tequal(datatype_id, get_hdf5_data_type&lt;elem&gt;::type()) )\
+                  {\
+                      readable_info = _checkDatasetReadable_helper&lt;elem&gt;(dataset_id,dsetname);\
+                  }\
+                  else
+                  BOOST_PP_SEQ_FOR_EACH(RUN_TYPE_DEPENDENT_CHECK, _, H5_OUTPUT_TYPES)
+                  #undef RUN_TYPE_DEPENDENT_CHECK
+                  {
+                      std::ostringstream err;
+                      err &lt;&lt; &quot;Did not recognise retrieved HDF5 type for dataset '&quot;&lt;&lt;dsetname&lt;&lt;&quot;'! This may indicate a bug in the GAMBIT HDF5 tools library, please report it.&quot;;
+                      printer_error().raise(LOCAL_INFO,err.str());
+                  }
+              }
+          }
+          closeDataset(dataset_id);
+          return readable_info;
+      }
+
+      /// Create hdf5 file (always overwrite existing files)
+      hid_t createFile(const std::string&amp; fname)
+      {
+          hid_t file_id = H5Fcreate(fname.c_str(), H5F_ACC_TRUNC, H5P_DEFAULT, H5P_GAMBIT);
+          if(file_id &lt; 0)
+          {
+             /* Still no good; error */
+             std::ostringstream errmsg;
+             errmsg &lt;&lt; &quot;Failed to create HDF5 file '&quot;&lt;&lt;fname&lt;&lt;&quot;'!&quot;;
+             printer_error().raise(LOCAL_INFO, errmsg.str());
+          }
+          return file_id;
+      }
+
+      /// Create a group inside the specified location
+      // Argument &quot;location&quot; can be a handle for either a file or another group
+      hid_t createGroup(hid_t location, const std::string&amp; name)
+      {
+          hid_t group_id;
+
+          group_id = H5Gcreate2(location, name.c_str(), H5P_DEFAULT, H5P_DEFAULT, H5P_DEFAULT);
+          if(group_id&lt;0)
+          {
+              std::ostringstream errmsg;
+              errmsg &lt;&lt; &quot;Error creating HDF5 group '&quot;&lt;&lt;name&lt;&lt;&quot;'&quot;;
+              printer_error().raise(LOCAL_INFO, errmsg.str());
+          }
+          return group_id;
+      }
+
+      // Modified minimally from https://github.com/gregreen/h5utils/blob/master/src/h5utils.cpp#L92
+      // Credit: Gregory Green 2012
+      /*
+       * Opens a group, creating it if it does not exist. Nonexistent parent groups are also
+       * created. This works similarly to the Unix/Linux command
+       * mkdir -p /parent/subgroup/group
+       * in that if /parent and /parent/subgroup do not exist, they will be created.
+       *
+       * If no accessmode has H5Utils::DONOTCREATE flag set, then returns NULL if group
+       * does not yet exist.
+       *
+       */
+      hid_t openGroup(hid_t file_id, const std::string&amp; name, bool nocreate) //, int accessmode)
+      {
+         hid_t group_id;
+
+         if(file_id &lt; 0)
+         {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error opening HDF5 group '&quot;&lt;&lt;name&lt;&lt;&quot;'. The supplied file_id does not point to a successfully opened file!&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+         }
+
+         // User does not want to create group
+         if(nocreate) //accessmode &amp; H5Utils::DONOTCREATE)
+         {
+            group_id = H5Gopen2(file_id, name.c_str(), H5P_DEFAULT);
+            if(group_id&lt;0)
+            {
+              std::ostringstream errmsg;
+              errmsg &lt;&lt; &quot;Error opening HDF5 group '&quot;&lt;&lt;name&lt;&lt;&quot;'. Group (probably) does not exist, and 'nocreate' flag is set to 'true', so we will not attempt to create one&quot;;
+              printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+         }
+         else
+         {
+            // Possibly create group and parent groups
+            std::stringstream ss(name);
+            std::stringstream path;
+            std::string gp_name;
+            while(std::getline(ss, gp_name, '/'))
+            {
+               path &lt;&lt; &quot;/&quot; &lt;&lt; gp_name;
+               errorsOff();
+               group_id = H5Gopen2(file_id, path.str().c_str(), H5P_DEFAULT);
+               errorsOn();
+               if(group_id&lt;0)
+               {
+                  /* doesn't exist; try to create it */
+                  group_id = H5Gcreate2(file_id, path.str().c_str(), H5P_DEFAULT, H5P_DEFAULT, H5P_DEFAULT);
+                  if(group_id&lt;0)
+                  {
+                    std::ostringstream errmsg;
+                    errmsg &lt;&lt; &quot;Error while recursively creating/opening group '&quot;&lt;&lt;name&lt;&lt;&quot;'. Failed to create group '&quot;&lt;&lt;path.str()&lt;&lt;&quot;'&quot;;
+                    printer_error().raise(LOCAL_INFO, errmsg.str());
+                  }
+               }
+               herr_t err = H5Gclose(group_id);
+               if(err&lt;0)
+               {
+                  std::ostringstream errmsg;
+                  errmsg &lt;&lt; &quot;Error closing group '&quot;&lt;&lt;name&lt;&lt;&quot;'!&quot;;
+                  printer_error().raise(LOCAL_INFO, errmsg.str());
+               }
+            }
+            // Should exist now; open the group and return the handle
+            group_id = H5Gopen2(file_id, name.c_str(), H5P_DEFAULT);
+            if(group_id&lt;0)
+            {
+              std::ostringstream errmsg;
+              errmsg &lt;&lt; &quot;Error opening HDF5 group '&quot;&lt;&lt;name&lt;&lt;&quot;' after recursive creation supposedly succeeded! There must be a bug in this routine, please fix.&quot;;
+              printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+        }
+        return group_id;
+      }
+
+      // Iterator function for listing datasets in a group
+      herr_t group_ls(hid_t g_id, const char *name, const H5L_info_t* /*info*/, void *op_data)
+      {
+          #ifdef HDF5_DEBUG
+            //std::cout&lt;&lt;&quot;group_ls: &quot;&lt;&lt;name&lt;&lt;std::endl;
+            //std::cout&lt;&lt;info-&gt;type&lt;&lt;&quot; &quot;&lt;&lt;H5G_DATASET&lt;&lt;std::endl;
+          #endif
+          std::vector&lt;std::string&gt;* out = static_cast&lt;std::vector&lt;std::string&gt;*&gt;(op_data);
+          // Only add names that correspond to datasets
+          H5G_stat_t statbuf;
+          H5Gget_objinfo(g_id, name, false, &amp;statbuf);
+          if(statbuf.type == H5G_DATASET) out-&gt;push_back(name);
+          return 0;
+      }
+
+      /// List object names in a group
+      std::vector&lt;std::string&gt; lsGroup(hid_t group_id)
+      {
+         if(group_id&lt;0)
+         {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error inspecting HDF5 group. The supplied group_id does not point to an open group object!&quot;;
+           printer_error().raise(LOCAL_INFO, errmsg.str());
+         }
+
+         std::vector&lt;std::string&gt; out;
+         herr_t err = H5Literate(group_id, H5_INDEX_NAME, H5_ITER_NATIVE, NULL, group_ls, &amp;out);
+
+         if(err&lt;0)
+         {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error encountering while iterating through HDF5 group! See HDF5 error for more details (stderr).&quot;;
+           printer_error().raise(LOCAL_INFO, errmsg.str());
+         }
+
+         return out;
+      }
+
+      /// Check if an object in a file or group is a dataset
+      bool isDataSet(hid_t loc_id, const std::string&amp; name)
+      {
+          H5O_info_t object_info;
+          herr_t err = H5Oget_info_by_name(loc_id, name.c_str(), &amp;object_info, H5P_DEFAULT);
+          if(err&lt;0)
+          {
+              std::ostringstream errmsg;
+              errmsg &lt;&lt; &quot;Attempt to check if object named '&quot;&lt;&lt;name&lt;&lt;&quot;' is a dataset failed! See HDF5 error for more details (stderr).&quot;;
+              printer_error().raise(LOCAL_INFO, errmsg.str()); 
+          }
+          return object_info.type == H5O_TYPE_DATASET;
+      }
+
+      /// Get type of a dataset in a group
+      /// NOTE: Make sure to call closeType when the ID is no longer needed!
+      hid_t getH5DatasetType(hid_t group_id, const std::string&amp; dset_name)
+      {
+          hid_t dataset_id = openDataset(group_id, dset_name);
+          if(dataset_id&lt;0)
+          {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Failed to open dataset '&quot;&lt;&lt;dset_name&lt;&lt;&quot;' while attempting to check its HDF5 data type! See stderr output for more details.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+          }
+          hid_t type_id = H5Dget_type(dataset_id);
+          if(type_id&lt;0)
+          {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Failed to get HDF5 type of dataset '&quot;&lt;&lt;dset_name&lt;&lt;&quot;'. See stderr output for more details.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+          }
+          closeDataset(dataset_id);
+          return type_id;
+      }
+
+      /// Close hdf5 type ID
+      SIMPLE_CALL(hid_t, closeType,  hid_t, H5Tclose, &quot;close&quot;, &quot;type ID&quot;, &quot;type ID&quot;)
+
+      /// Close hdf5 group
+      SIMPLE_CALL(hid_t, closeGroup,  hid_t, H5Gclose, &quot;close&quot;, &quot;group&quot;, &quot;group&quot;)
+
+      /// global error variables (handler)
+      H5E_auto2_t old_func;
+      void *old_client_data;
+
+      // FIXME: This caused compile problems on LISA cluster (CW)
+      /// Silence error report (e.g. while probing for file existence)
+      /// Just silences default error stack, since we aren't using anything else
+      /// TESTING! I changed from using
+      ///   H5Eget_auto
+      /// to
+      ///   H5Eget_auto2
+      /// If that still causes errors, try switching to
+      ///   H5Eget_auto1
+      /// and let me know if it works :)
+      void errorsOff()
+      {
+         /* Save old error handler */
+         H5Eget_auto2(H5E_DEFAULT, &amp;old_func, &amp;old_client_data);
+
+         /* Turn off error handling */
+         H5Eset_auto2(H5E_DEFAULT, NULL, NULL);
+      }
+
+      /// Restore error report
+      void errorsOn()
+      {
+         /* Restore previous error handler */
+         H5Eset_auto2(H5E_DEFAULT, old_func, old_client_data);
+      }
+
+      /// @{ Dataset manipulations
+
+      /// Open dataset
+      // Set error_off=true to manually check for successful dataset opening.
+      hid_t openDataset(hid_t group_id, const std::string&amp; name, bool error_off)
+      {
+         hid_t dset_id;
+
+         if(group_id &lt; 0)
+         {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error opening HDF5 dataset '&quot;&lt;&lt;name&lt;&lt;&quot;'. The supplied group_id in which the dataset should be located does not point to a successfully opened group!&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+         }
+
+         dset_id = H5Dopen2(group_id, name.c_str(), H5P_DEFAULT);
+         if(dset_id&lt;0 and not error_off)
+         {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error opening HDF5 dataset '&quot;&lt;&lt;name&lt;&lt;&quot;'. Dataset may not exist at the specified location.&quot;;
+           printer_error().raise(LOCAL_INFO, errmsg.str());
+         }
+         return dset_id;
+      }
+
+      /// Close dataset
+      SIMPLE_CALL(hid_t, closeDataset,  hid_t, H5Dclose, &quot;close&quot;, &quot;dataset&quot;, &quot;dataset&quot;)
+
+      /// Open/close dataspace; input dataset, output dataspace
+      SIMPLE_CALL(hid_t, getSpace,  hid_t, H5Dget_space, &quot;get&quot;, &quot;dataspace&quot;, &quot;dataset&quot;)
+      SIMPLE_CALL(hid_t, closeSpace, hid_t, H5Sclose, &quot;close&quot;, &quot;dataspace&quot;, &quot;dataspace&quot;)
+
+      /// Get simple dataspace extent (number of points); input dataspace, output data extent (size)
+      SIMPLE_CALL(hssize_t, getSimpleExtentNpoints,  hid_t, H5Sget_simple_extent_npoints, &quot;get&quot;, &quot;simple_extent_npoints&quot;, &quot;dataspace&quot;)
+
+      /// Get dataset name
+      std::string getName(hid_t dset_id)
+      {
+          size_t len = H5Iget_name(dset_id,NULL,0);
+          char buffer[len];
+          H5Iget_name(dset_id,buffer,len+1);
+          std::string n = buffer;
+          return n;
+      }
+
+      /// Select a simple hyperslab in a 1D dataset
+      std::pair&lt;hid_t,hid_t&gt; selectChunk(const hid_t dset_id, std::size_t offset, std::size_t length)
+      {
+          // Open dataspace
+          hid_t dspace_id = getSpace(dset_id);
+
+          // Make sure that the requested chunk lies within the dataset extents
+          size_t dset_length = getSimpleExtentNpoints(dspace_id);
+
+          if(offset + length &gt; dset_length)
+          {
+             std::ostringstream errmsg;
+             errmsg &lt;&lt; &quot;Error selecting chunk from dataset in HDF5 file. Tried to select a hyperslab which extends beyond the dataset extents:&quot; &lt;&lt; std::endl;
+             errmsg &lt;&lt; &quot;  offset = &quot; &lt;&lt; offset &lt;&lt; std::endl;
+             errmsg &lt;&lt; &quot;  offset+length = &quot; &lt;&lt; length &lt;&lt; std::endl;
+             errmsg &lt;&lt; &quot;  dset_length  = &quot;&lt;&lt; dset_length &lt;&lt; std::endl;
+             printer_error().raise(LOCAL_INFO, errmsg.str());
+          }
+
+          // Select a hyperslab.
+          static const size_t DSETRANK(1); // assuming 1D dataset
+          hsize_t offsets[DSETRANK];
+          offsets[0] = offset;
+          hsize_t selection_dims[DSETRANK]; // Set same as output chunks, but may have a different length
+          selection_dims[0] = length; // Adjust chunk length to input specification
+
+          herr_t err_hs = H5Sselect_hyperslab(dspace_id, H5S_SELECT_SET, offsets, NULL, selection_dims, NULL);
+          if(err_hs&lt;0)
+          {
+             std::ostringstream errmsg;
+             errmsg &lt;&lt; &quot;Error selecting chunk from dataset (offset=&quot;&lt;&lt;offset&lt;&lt;&quot;, length=&quot;&lt;&lt;selection_dims[0]&lt;&lt;&quot;) in HDF5 file. H5Sselect_hyperslab failed.&quot; &lt;&lt; std::endl;
+             printer_error().raise(LOCAL_INFO, errmsg.str());
+          }
+
+          // Define memory space
+          hid_t memspace_id = H5Screate_simple(DSETRANK, selection_dims, NULL);
+
+          #ifdef HDF5_DEBUG
+          std::cout &lt;&lt; &quot;Debug variables:&quot; &lt;&lt; std::endl
+                    &lt;&lt; &quot;  dsetdims()[0]      = &quot; &lt;&lt; this-&gt;dsetdims()[0] &lt;&lt; std::endl
+                    &lt;&lt; &quot;  offsets[0]         = &quot; &lt;&lt; offsets[0] &lt;&lt; std::endl
+                    &lt;&lt; &quot;  CHUNKLENGTH        = &quot; &lt;&lt; CHUNKLENGTH &lt;&lt; std::endl
+                    &lt;&lt; &quot;  selection_dims[0] = &quot; &lt;&lt; selection_dims[0] &lt;&lt; std::endl;
+          #endif
+
+          return std::make_pair(memspace_id, dspace_id); // Be sure to close these identifiers after using them!
+      }
+
+      /// @}
+ 
+      // Match fixed integers to HDF5 types
+      int inttype_from_h5type(hid_t h5type)
+      {
+          #define ELSEIF(r,data,elem) \
+            else if(H5Tequal(h5type,get_hdf5_data_type&lt;elem&gt;::type())) \
+            { \
+               out = h5v2_type&lt;elem&gt;(); \
+            }
+
+          int out = -1;
+          if(h5type==-1)
+          {
+              std::ostringstream errmsg;
+              errmsg&lt;&lt;&quot;No fixed ID assigned for this type! (h5type = &quot;&lt;&lt;h5type&lt;&lt;&quot;)!&quot;;
+              printer_error().raise(LOCAL_INFO, errmsg.str());        
+          }
+          BOOST_PP_SEQ_FOR_EACH(ELSEIF, _, H5_OUTPUT_TYPES)
+          #undef ELSEIF
+          else
+          {
+              std::ostringstream errmsg;
+              errmsg&lt;&lt;&quot;Unrecognised HDF5 type (h5type = &quot;&lt;&lt;h5type&lt;&lt;&quot;)!&quot;;
+              printer_error().raise(LOCAL_INFO, errmsg.str());       
+          }
+          return out;
+      }
+
+      // Query whether type integer indicates general 'float' or 'int'
+      bool is_float_type(int inttype)
+      {
+          bool out(false);
+          switch(inttype)
+          {
+              case h5v2_type&lt;int               &gt;():
+              case h5v2_type&lt;unsigned int      &gt;():
+              case h5v2_type&lt;long              &gt;():
+              case h5v2_type&lt;unsigned long     &gt;():
+              case h5v2_type&lt;long long         &gt;():
+              case h5v2_type&lt;unsigned long long&gt;():
+                  out = false;
+                  break;
+              case h5v2_type&lt;float             &gt;():
+              case h5v2_type&lt;double            &gt;():
+                  out = true;
+                  break;
+          }
+          return out;
+      }
+
+    }
+
+    /// DEBUG: print to stdout all HDF5 type IDs
+    void printAllH5Types(void)
+    {
+       std::cout &lt;&lt; &quot;Types known to get_hdf5_data_type&lt;T&gt;::type() function:&quot; &lt;&lt; std::endl;
+       #define PRINTTYPEID(r,data,elem) \
+         std::cout &lt;&lt; &quot;  Type: &quot; &lt;&lt; STRINGIFY(elem) &lt;&lt; &quot;, H5 type code: &quot; &lt;&lt; get_hdf5_data_type&lt;elem&gt;::type() &lt;&lt; std::endl;
+       BOOST_PP_SEQ_FOR_EACH(PRINTTYPEID, _, H5_OUTPUT_TYPES)
+       #undef PRINTTYPEID
+    }
+
+  }
+}
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:09 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

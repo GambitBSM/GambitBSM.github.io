@@ -1,0 +1,1312 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/mssm_slhahelp.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/mssm_slhahelp.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/mssm_slhahelp.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/mssm_slhahelp.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/","url":"https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/","name":"file src\/mssm_slhahelp.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/mssm__slhahelp_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file src\/mssm_slhahelp.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/mssm_slhahelp.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-mssm-slhahelp-cpp>file src/mssm_slhahelp.cpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1slhahelp/>Gambit::slhahelp</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Peter Athron (<a href=mailto:peter.athron@coepp.org.au>peter.athron@coepp.org.au</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2015</li><li>2015 Jul</li></ul><p>Definitions of routines to help users / Bits translate between SLHA2 sfermions and SLHA1 (or similar) sfermions</p><hr><p>Authors:</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  Definitions of routines to help users / Bits
+///  translate between SLHA2 sfermions
+///  and SLHA1 (or similar) sfermions
+///
+///  *********************************************
+///
+///  Authors:
+///  &lt;!-- add name and date if you modify --&gt;
+///
+///  \author Peter Athron
+///          (peter.athron@coepp.org.au)
+///  \date 2015
+///
+///  \author Pat Scott
+///          (p.scott@imperial.ac.uk)
+///  \date 2015 Jul
+///
+///  *********************************************
+
+#include &quot;gambit/Elements/mssm_slhahelp.hpp&quot;
+#include &quot;gambit/Elements/ini_functions.hpp&quot;
+#include &quot;gambit/Utils/util_functions.hpp&quot;
+
+namespace Gambit
+{
+
+   namespace slhahelp
+   {
+
+      /// Known maps filled at initialisation
+      /// @{
+      const std::map&lt;str, p_int_string&gt; gauge_label_to_index_type = init_gauge_label_to_index_type();
+      const std::map&lt;str, p_int_string&gt; mass_label_to_index_type = init_mass_label_to_index_type();
+      const std::map&lt;str, pair_string_ints&gt; familystate_label = init_familystate_label();
+      const std::map&lt;p_int_string, std::vector&lt;str&gt; &gt; type_family_to_gauge_states = init_type_family_to_gauge_states();
+      const std::map&lt;str,std::vector&lt;str&gt; &gt; family_state_to_gauge_state = init_family_state_to_gauge_state();
+      const std::map&lt;str,std::vector&lt;str&gt; &gt; gauge_es_to_family_states = init_gauge_es_to_family_states() ;
+      const std::map&lt;str,std::vector&lt;str&gt; &gt; type_to_vec_of_mass_es = init_type_to_vec_of_mass_es();
+      const std::map&lt;str,std::vector&lt;str&gt; &gt; type_to_vec_of_gauge_es = init_type_to_vec_of_gauge_es();
+      /// @}
+
+      // FIXME: these two should be made members of the spectrum object itself
+      std::vector&lt;double&gt; get_Pole_Mixing_col(str type, int gauge_index, const SubSpectrum&amp; mssm)
+      {
+         //extract info about indices for type using map
+         std::vector&lt;str&gt; mass_es_strs = type_to_vec_of_mass_es.at(type);
+         double col_length = mass_es_strs.size();
+         std::vector&lt;double&gt; mass_state_content(col_length);
+         //iterate over column in some way, e..g
+         for(std::vector&lt;int&gt;::size_type i = 1; i &lt;= col_length; i++)
+         {
+            //Mix_{row, col}. Iterate through row index with column index fixed
+            mass_state_content[i - 1] = mssm.get(Par::Pole_Mixing,type, i, gauge_index);
+         }
+         return mass_state_content;
+      }
+      std::vector&lt;double&gt; get_Pole_Mixing_row(str type, int mass_index, const SubSpectrum&amp; mssm)
+      {
+         std::vector&lt;str&gt; gauge_es_strs = type_to_vec_of_gauge_es.at(type);
+         double row_length = gauge_es_strs.size();
+         std::vector&lt;double&gt; gauge_state_content(row_length);
+         for(std::vector&lt;int&gt;::size_type i = 1; i &lt;= row_length; i++)
+         {
+            /// Mix_{row, col}. Iterate through column index with row index fixed
+            gauge_state_content.at(i - 1) = mssm.get(Par::Pole_Mixing,type, mass_index, i);
+         }
+         return gauge_state_content;
+      }
+
+      /// Add a disclaimer about the absence of a MODSEL block in a generated SLHAea object
+      void add_MODSEL_disclaimer(SLHAstruct&amp; slha, const str&amp; object)
+      {
+        slha.push_front(&quot;# depend on which calculator you intend this object or file to be used with.&quot;);
+        slha.push_front(&quot;# Note that block MODSEL is not automatically emitted, as its contents&quot;);
+        slha.push_front(&quot;# This SLHA(ea) object was created from a GAMBIT &quot;+object+&quot; object.&quot;);
+      }
+
+      /// Simple helper function for for adding missing SLHA1 2x2 family mixing matrices to an SLHAea object.
+      void attempt_to_add_SLHA1_mixing(const str&amp; block, SLHAstruct&amp; slha, const str&amp; type,
+                                       const SubSpectrum&amp; spec, double tol, str&amp; s1, str&amp; s2, bool pterror)
+      {
+        if (slha.find(block) == slha.end())
+        {
+          std::vector&lt;double&gt; matmix = slhahelp::family_state_mix_matrix(type, 3, s1, s2, spec, tol, LOCAL_INFO, pterror);
+          SLHAea_add_matrix(slha, block, matmix, 2, 2);
+        }
+        else
+        {
+          std::map&lt;str,str&gt; family_to_3gen; // TODO: make const or something
+          family_to_3gen[&quot;~u&quot;] = &quot;~t&quot;;
+          family_to_3gen[&quot;~d&quot;] = &quot;~b&quot;;
+          family_to_3gen[&quot;~e-&quot;] = &quot;~tau&quot;;
+          s1 = slhahelp::mass_es_closest_to_family(family_to_3gen.at(type)+&quot;_1&quot;, spec, tol, LOCAL_INFO, pterror);
+          s2 = slhahelp::mass_es_closest_to_family(family_to_3gen.at(type)+&quot;_2&quot;, spec, tol, LOCAL_INFO, pterror);
+        }
+      }
+
+      /// returns vector representing composition of requested gauge state
+      /// in terms of the slha2 mass eigenstates (~u_1 ...~u_6 etc)
+      /// which is just a column in the mixing matrix
+      std::vector&lt;double&gt; get_mass_comp_for_gauge(str gauge_es,
+                                                  const SubSpectrum&amp; mssm)
+      {
+         /// extract info from string via map
+         p_int_string index_type = gauge_label_to_index_type.at(gauge_es);
+         str type = index_type.second;
+         int gauge_index  = index_type.first;
+
+         std::vector&lt;double&gt; mass_state_content =
+            get_Pole_Mixing_col(type, gauge_index, mssm);
+
+         return mass_state_content;
+      }
+
+      ///routine to return mass state admixure for given gauge state
+      /// in the end this is a trival routine but may help
+      double get_mixing_element(str gauge_es, str mass_es, const SubSpectrum&amp; mssm)
+      {
+         ///extract info from maps
+         p_int_string mass_es_index_type = mass_label_to_index_type.at(mass_es);
+         p_int_string gauge_es_index_type = gauge_label_to_index_type.at(gauge_es);
+         int gauge_index = gauge_es_index_type.first;
+         int mass_index = mass_es_index_type.first;
+         /// types should match but getting both allows us to throw error
+         str type = mass_es_index_type.second;
+         str type_gauge = gauge_es_index_type.second;
+         if(type!=type_gauge)
+            {
+               /// throw exception in gambit
+               utils_error().raise(LOCAL_INFO, &quot;function get_mixing_element &quot;
+               &quot;called with types for the gauge eigenstate and mass eigenstate that don't match.&quot;);
+            }
+         /// will need to add mssm object to cal method in gambit
+         double admix = mssm.get(Par::Pole_Mixing,type, mass_index,
+                                                   gauge_index);
+         return admix;
+      }
+
+      /// returns vector representing composition of requested mass eigenstate
+      /// in terms of the slha2 gauge eigenstates (~u_L,~c_L,...~t_R etc)
+      /// which is just a row in the mixing matrix
+      /// just wraps get_Pole_Mixing_row after extracting info from string
+      std::vector&lt;double&gt; get_gauge_comp_for_mass(str mass_es, const SubSpectrum&amp; mssm)
+      {
+         /// extract info using map
+         p_int_string index_type = mass_label_to_index_type.at(mass_es);
+         int mass_index = index_type.first;
+         str type = index_type.second;
+         //fill vector with mixings
+         std::vector&lt;double&gt; mass_state_content =
+            get_Pole_Mixing_row(type, mass_index, mssm);
+
+         return mass_state_content;
+      }
+
+      /// indentifies the state with largest gauge_es content
+      /// also fills largest max_mixing and full gauge_composition
+      str mass_es_from_gauge_es(str gauge_es, double &amp; max_mixing,
+                                std::vector&lt;double&gt; &amp; gauge_composition,
+                                const SubSpectrum&amp; mssm)
+      {
+         /// passed in massstate to be set
+         double temp_admix = 0.0;
+         /// make sure this is zero to start
+         max_mixing = 0;
+         /// retrive type from the gauge_es string
+         str type = (gauge_label_to_index_type.at(gauge_es)).second;
+         str mass_es, temp_mass_es;
+         /// iterate over vector of strings for mass states
+         std::vector&lt;str&gt; mass_es_set = type_to_vec_of_mass_es.at(type);
+         typedef std::vector&lt;str&gt;::iterator iter;
+         for(iter it = mass_es_set.begin(); it != mass_es_set.end(); ++it){
+            temp_mass_es = *it;
+            temp_admix = get_mixing_element(gauge_es, temp_mass_es,
+                                                    mssm);
+            gauge_composition.push_back(temp_admix);
+            //select largest
+            if(fabs(temp_admix) &gt; fabs(max_mixing))
+               {
+               max_mixing = temp_admix;
+               mass_es = temp_mass_es;
+            }
+         } //end iteration over temp_mass_es
+
+         return mass_es;
+      }
+
+      /// as above but doesn't fill a gauge_composition vector
+      /// would have a slight efficiency saving if we didn't use wrapper and
+      /// avoided skipped gauge_composition entirely but at the cost of a lot of
+      /// code duplication
+      str mass_es_from_gauge_es(str gauge_es, double &amp; max_mixing,
+                                const SubSpectrum&amp; mssm)
+      {
+         std::vector&lt;double&gt; gauge_composition;
+         str mass_es = mass_es_from_gauge_es(gauge_es, max_mixing,
+                                             gauge_composition, mssm);
+         return mass_es;
+
+      }
+
+      /// as above but doesn't fill max_mixing
+      /// would have a slight efficiency saving if we didn't use wrapper and
+      /// avoided skipped max_mixing entirely but at the cost of a lot of
+      /// code duplication
+      str mass_es_from_gauge_es(str gauge_es,
+                                std::vector&lt;double&gt; &amp; gauge_composition,
+                                const SubSpectrum&amp; mssm)
+      {
+         double max_mixing = 0;
+         str mass_es =  mass_es_from_gauge_es(gauge_es, max_mixing,
+                                              gauge_composition, mssm);
+
+         return mass_es;
+      }
+
+      /// as above but doesn't fill max_mixing or gauge_composition
+      /// would have a slight efficiency saving if we didn't use wrapper and
+      /// avoided skipped max_mixing entirely but at the cost of a lot of
+      /// code duplication
+      str mass_es_from_gauge_es(str gauge_es,
+                                const SubSpectrum&amp; mssm)
+      {
+         double max_mixing = 0;
+         std::vector&lt;double&gt; gauge_composition;
+         str mass_es =  mass_es_from_gauge_es(gauge_es, max_mixing,
+                                              gauge_composition, mssm);
+         return mass_es;
+      }
+
+      /// as above but do test against tol internally
+      str mass_es_from_gauge_es(str gauge_es, const SubSpectrum&amp; mssm,
+                                double tol, str context, bool pterror)
+      {
+         double max_mixing = 0;
+         std::vector&lt;double&gt; gauge_composition;
+         str mass_es = mass_es_from_gauge_es(gauge_es, max_mixing,
+                                             gauge_composition, mssm);
+         if((max_mixing*max_mixing) &lt;= 1-tol)
+         {
+           const str errmsg = &quot;Mass_es_from_gauge_es requested when mixing &quot;
+                              &quot;away from closest gauge_es is greater than tol.&quot;;
+           str full_context = LOCAL_INFO + &quot; called from &quot; + context;
+           if (pterror)
+           {
+             invalid_point().raise(errmsg+&quot;  Raised at: &quot;+full_context);
+           }
+           else
+           {
+             utils_error().raise(full_context, errmsg);
+           }
+         }
+         return mass_es;
+      }
+
+      /// identifies gauge_es with largest mass_es content
+      /// also fills largest max_mixing and full mass_composition
+      str gauge_es_from_mass_es(str mass_es, double &amp; max_mixing,
+                                std::vector&lt;double&gt; &amp; mass_composition,
+                                const SubSpectrum&amp; mssm)
+      {
+         /// passed in massstate to be set
+         double temp_admix = 0.0;
+         /// start with zero
+         max_mixing = 0;
+         /// retrive type from the gauge_es string
+         str type = (mass_label_to_index_type.at(mass_es)).second;
+         str gauge_es, temp_gauge_es;
+         /// iterate over vector of strings for mass states
+         std::vector&lt;str&gt; gauge_es_vec = type_to_vec_of_gauge_es.at(type);
+         typedef std::vector&lt;str&gt;::iterator iter;
+         for(iter it = gauge_es_vec.begin(); it != gauge_es_vec.end(); ++it)
+            {
+            temp_gauge_es = *it;
+            temp_admix = get_mixing_element(temp_gauge_es, mass_es,  mssm);
+            mass_composition.push_back(temp_admix);
+            //select largest
+            if(fabs(temp_admix) &gt; fabs(max_mixing))
+               {
+               max_mixing = temp_admix;
+               gauge_es = temp_gauge_es;
+               }
+         } //end iteration over temp_mass_es
+
+         //return string for closest gauge_es
+         return gauge_es;
+      }
+
+      /// as above but doesn't fill a gauge_composition vector
+      /// would have a slight efficiency saving if we didn't use wrapper and
+      /// avoided skipped gauge_composition entirely but at the cost of a lot of
+      /// code duplication
+      str gauge_es_from_mass_es(str mass_es, double &amp; max_mixing,
+                                const SubSpectrum&amp; mssm)
+      {
+         std::vector&lt;double&gt; mass_composition;
+         str gauge_es = gauge_es_from_mass_es(mass_es, max_mixing,
+                                              mass_composition, mssm);
+         return gauge_es;
+
+      }
+
+      /// as above but doesn't fill max_mixing
+      /// would have a slight efficiency saving if we didn't use wrapper and
+      /// avoided skipped max_mixing entirely but at the cost of a lot of
+      /// code duplication
+      str gauge_es_from_mass_es(str mass_es,
+                                std::vector&lt;double&gt; &amp; mass_composition,
+                                const SubSpectrum&amp; mssm)
+      {
+         double max_mixing;
+         str gauge_es =  gauge_es_from_mass_es(mass_es, max_mixing,
+                                           mass_composition, mssm);
+
+         return gauge_es;
+      }
+
+      /// as above but doesn't fill max_mixing or gauge_composition
+      /// would have a slight efficiency saving if we didn't use wrapper and
+      /// avoided skipped max_mixing entirely but at the cost of a lot of
+      /// code duplication
+      str gauge_es_from_mass_es(str mass_es,
+                                const SubSpectrum&amp; mssm)
+      {
+         double max_mixing;
+         std::vector&lt;double&gt; mass_composition;
+         str gauge_es =  gauge_es_from_mass_es(mass_es, max_mixing,
+                                               mass_composition, mssm);
+
+         return gauge_es;
+      }
+
+      /// as above but do test against tol internally
+      str gauge_es_from_mass_es(str mass_es, const SubSpectrum&amp; mssm,
+                                double tol, str context, bool pterror)
+      {
+         double max_mixing;
+         std::vector&lt;double&gt; mass_composition;
+         str gauge_es = gauge_es_from_mass_es(mass_es, max_mixing,
+                                              mass_composition, mssm);
+         if((max_mixing*max_mixing) &lt;= 1-tol)
+         {
+           const str errmsg = &quot;Gauge_es from mass_es requested when mxing away &quot;
+                              &quot;from closest mass_es is greater than tol&quot;;
+           str full_context = LOCAL_INFO + &quot; called from &quot; + context;
+           if (pterror)
+           {
+             invalid_point().raise(errmsg+&quot;  Raised at: &quot;+full_context);
+           }
+           else
+           {
+             utils_error().raise(full_context, errmsg);
+           }
+         }
+         return gauge_es;
+      }
+
+      /// identify the two mass eigenstate corresponding to the approximate
+      /// family states, e.g. stops (&quot;~u&quot;,3), smuons (&quot;~mu&quot;, 2) etc
+      /// Note: when there is family mixing there's no good definition ~t_1,
+      /// ~t_2 etc if defined as the states you get from diagonalising a 2by2
+      /// mass (sub)matrix then extensive manipulations would be required
+      /// So here we identify the mass eigenstates closest to the family ones
+      /// which is a better defined question when there is family mixing prsesent
+      /// and more useful here anyway
+      /// returns a pair of strings labling the lighter one first
+      sspair identify_mass_ess_for_family(str type,
+                                          int family,
+                                          const SubSpectrum&amp; mssm)
+      {
+         /// need to turn type and family into a string
+         /// need to simplify the number of translations we do.
+         p_int_string gen_type(family,type);
+         std::vector&lt;str&gt; gauge_states;
+         try { gauge_states = type_family_to_gauge_states.at(gen_type); }
+         catch (std::out_of_range&amp;) { utils_error().raise(LOCAL_INFO, &quot;Sfermion type or generation index not recognised; use type=~u,~d,~e-, gen=1,2,3.&quot;); }
+         str gauge_esL=gauge_states[0];
+         str gauge_esR=gauge_states[1];
+
+         /// finds the mass_es with the largets mixing to
+         /// passed gauge_es
+         str mass_esL = mass_es_from_gauge_es(gauge_esL, mssm);
+         str mass_esR = mass_es_from_gauge_es(gauge_esR, mssm);
+
+         sspair answer;
+         int mass_index_L = (mass_label_to_index_type.at(mass_esL)).first;
+         int mass_index_R = (mass_label_to_index_type.at(mass_esR)).first;
+         // order pair by mass
+         if(mass_index_L &lt; mass_index_R)
+            answer = std::make_pair(mass_esL,mass_esR);
+         else answer = std::make_pair(mass_esR,mass_esL);
+
+         return answer;
+      }
+
+      /// identify the mass eigenstate corresponding to family state
+      /// takes string and returns only requested state
+      /// I suspect this is the more useful one
+      str mass_es_closest_to_family(str familystate,
+                                    const SubSpectrum&amp; mssm)
+      {
+         std::vector&lt;str&gt; family_gauge_states;
+         try { family_gauge_states = family_state_to_gauge_state.at(familystate); }
+         catch (std::out_of_range&amp;) { utils_error().raise(LOCAL_INFO, &quot;Unrecognised family state. ('&quot;+familystate+&quot;' was requested)&quot;); }
+         str gauge_esL = family_gauge_states[0];
+         str gauge_esR = family_gauge_states[1];
+
+         // finds the mass_es with the largets mixing to
+         // passed gauge_es
+         str mass_esL = mass_es_from_gauge_es(gauge_esL, mssm);
+         str mass_esR = mass_es_from_gauge_es(gauge_esR, mssm);
+
+         // extract mass order (1 or 2) from string via map
+         pair_string_ints type_family_massorder =
+            familystate_label.at(familystate);
+         pair_ints family_massorder = type_family_massorder.second;
+         int mass_order = family_massorder.second;
+         // if massorder is 1 choose select from masstateL and mass_esR the one
+         // with the lowest index else take highest
+         int massorderL = (mass_label_to_index_type.at(mass_esL)).first;
+         int massorderR = (mass_label_to_index_type.at(mass_esR)).first;
+         str answer;
+         if( (mass_order == 1 &amp;&amp; massorderL &lt; massorderR) ||
+             (mass_order == 2 &amp;&amp; massorderL &gt; massorderR) ) answer = mass_esL;
+         else answer = mass_esR;
+
+         return answer;
+      }
+
+      /// returns vector with composition of closest the mass eigenstate
+      /// to give family state in terms of gauge eigenstates and stores
+      /// mass eigenstate in mass_es
+      std::vector&lt;double&gt; get_gauge_comp_for_family_state(str familystate,
+                                                          str &amp; mass_es,
+                                                          const SubSpectrum&amp; mssm)
+      {
+         //get mass_es using one of our routines
+         mass_es = mass_es_closest_to_family(familystate, mssm);
+         /// extract info from strings via maps
+         int mass_index = (mass_label_to_index_type.at(mass_es)).first;
+         pair_string_ints state_info = familystate_label.at(familystate);
+         str type = state_info.first;
+         std::vector&lt;double&gt; gauge_es_content =
+            get_Pole_Mixing_row(type, mass_index,mssm);
+
+         return gauge_es_content;
+
+      }
+
+      /// identifies the mass_es that is closest match to specified family state
+      /// and fills mixture of the two gauge states with same family into
+      /// std::vector gauge_composition
+      /// also fills remaining off-family mixings into a second vector
+      str mass_es_closest_to_family(str familystate,
+                                    std::vector&lt;double&gt; &amp; gauge_composition,
+                                    std::vector&lt;double&gt; &amp; off_family_mixing,
+                                    const SubSpectrum&amp; mssm)
+      {
+         //get mass_es using one of our routines
+         str mass_es = mass_es_closest_to_family(familystate, mssm);
+         /// extract info from strings via maps
+         std::vector&lt;str&gt; gauge_states;
+         try { gauge_states = family_state_to_gauge_state.at(familystate); }
+         catch (std::out_of_range&amp;) { utils_error().raise(LOCAL_INFO, &quot;Unrecognised family state. ('&quot;+familystate+&quot;' was requested)&quot;); }
+         str gauge_state_L = gauge_states[0];
+         str gauge_state_R = gauge_states[1];
+
+         p_int_string gauge_Lindex_type =
+            gauge_label_to_index_type.at(gauge_state_L);
+         unsigned int gauge_L_index = gauge_Lindex_type.first;
+         str type = gauge_Lindex_type.second;
+         unsigned int gauge_R_index
+            = (gauge_label_to_index_type.at(gauge_state_R)).first;
+         int mass_index = (mass_label_to_index_type.at(mass_es)).first;
+         std::vector&lt;str&gt; gauge_es_strs = type_to_vec_of_gauge_es.at(type);
+         double row_length = gauge_es_strs.size();
+         for(std::vector&lt;int&gt;::size_type i = 1; i &lt;= row_length; i++)
+            {
+               double temp = mssm.get(Par::Pole_Mixing,type, mass_index, i);
+               if(i == gauge_L_index || i == gauge_R_index)
+                  gauge_composition.push_back(temp);
+               else off_family_mixing.push_back(temp);
+            }
+
+         return mass_es;
+
+      }
+
+      /// identifies the mass_es that is closest match to specified family state
+      /// and fills mixture of the two gauge states with same family into
+      /// std::vector gauge_composition
+      str mass_es_closest_to_family(str familystate,
+                                    std::vector&lt;double&gt; &amp; gauge_composition,
+                                    const SubSpectrum&amp; mssm)
+      {
+         std::vector&lt;double&gt; off_family_mixing;
+         str mass_es = mass_es_closest_to_family(familystate, gauge_composition,
+                                                 off_family_mixing, mssm);
+         return mass_es;
+
+      }
+
+      /// identifies the mass_es that is closest match to specified family state
+      /// and fills sqr_sum_mix with the square sum of each of the two mixings
+      /// into gauge_es of that family
+      str mass_es_closest_to_family(str familystate,
+                                    double &amp; sqr_sum_mix,
+                                    const SubSpectrum&amp; mssm)
+      {
+         std::vector&lt;double&gt; off_family_mixing;
+         std::vector&lt;double&gt;  gauge_composition;
+         str mass_es = mass_es_closest_to_family(familystate, gauge_composition,
+                                                 off_family_mixing, mssm);
+         sqr_sum_mix = gauge_composition[0] * gauge_composition[0];
+         sqr_sum_mix += gauge_composition[1] * gauge_composition[1];
+         return mass_es;
+
+      }
+
+      /// identifies the mass_es that is closest match to specified family
+      /// does tol-test internally to check correctness of assumptions
+      str mass_es_closest_to_family(str familystate, const SubSpectrum&amp; mssm,
+                                    double tol, str context, bool pterror)
+      {
+        std::vector&lt;double&gt; off_family_mixing;
+        std::vector&lt;double&gt;  gauge_composition;
+        str mass_es = mass_es_closest_to_family(familystate, gauge_composition,
+                                                off_family_mixing, mssm);
+        double sqr_sum_mix = gauge_composition[0] * gauge_composition[0];
+        sqr_sum_mix += gauge_composition[1] * gauge_composition[1];
+        if(sqr_sum_mix &lt;= 1-tol)
+        {
+          const str errmsg = &quot;Mass_es_closest_to_family requested when family &quot;
+                              &quot;mixing away from closest mass_es is greater than tol&quot;;
+          str full_context = LOCAL_INFO + &quot; called from &quot; + context;
+          if (pterror)
+          {
+            invalid_point().raise(errmsg+&quot;  Raised at: &quot;+full_context);
+          }
+          else
+          {
+            utils_error().raise(full_context, errmsg);
+          }
+        }
+
+        return mass_es;
+
+      }
+
+      /// Get the family mixing matrix and corresponding mass eigenstates, then check for interfamily mixing.
+      std::vector&lt;double&gt; family_state_mix_matrix(str type /*&quot;~u&quot;, &quot;~d&quot; or &quot;~e-&quot;*/, int generation,
+                                                  str &amp; mass_es1, str &amp; mass_es2, const SubSpectrum&amp; mssm,
+                                                  double tol, str context, bool pterror)
+      {
+        std::vector&lt;double&gt; m = family_state_mix_matrix(type, generation, mass_es1, mass_es2, mssm);
+        if (m[0]*m[0] + m[1]*m[1] &lt; 1-tol || m[2]*m[2] + m[3]*m[3] &lt; 1-tol)
+        {
+          const str errmsg = &quot;Too much interfamily mixing to safely determine &quot;
+                             &quot;intrafamily mixing matrix.&quot;;
+          str full_context = LOCAL_INFO + &quot; called from &quot; + context;
+          if (pterror)
+          {
+            invalid_point().raise(errmsg+&quot;  Raised at: &quot;+full_context);
+          }
+          else
+          {
+            utils_error().raise(full_context, errmsg);
+          }
+        }
+        return m;
+      }
+
+      /// identifies the two mass_es which best matches specified family state
+      /// storing them in strings and then returns
+      /// the 2by2 mixing matrix for that family state in the form
+      /// (Mix_{11}, Mix_{12}, Mix_{21}, Mix_{22})
+      /// It also  stores the mixing elements for the gauge states that don't
+      /// belong to the correct family for this state in a std::vector
+      /// The latter should have entries which are zero in absense of
+      /// family mixing
+      std::vector&lt;double&gt; family_state_mix_matrix(str type,
+                                                  int family,
+                                                  str &amp; mass_es1,
+                                                  str &amp; mass_es2,
+                                                  const SubSpectrum&amp; mssm)
+      {
+         /// get mass_es using one of our routines
+         sspair mass_ess = identify_mass_ess_for_family(type, family, mssm);
+         mass_es1 = mass_ess.first;
+         mass_es2 = mass_ess.second;
+
+         /// need to turn type and family into a string
+         /// should simplify the number of translations we do!
+         p_int_string gen_type(family,type);
+         std::vector&lt;str&gt; gauge_states;
+         try { gauge_states = type_family_to_gauge_states.at(gen_type); }
+         catch (std::out_of_range&amp;) { utils_error().raise(LOCAL_INFO, &quot;Sfermion type or generation index not recognised; use type=~u,~d,~e-, gen=1,2,3.&quot;); }
+         str gauge_es_L=gauge_states[0];
+         str gauge_es_R=gauge_states[1];
+         /// get index of right family states (ie gauge states with
+         ///same family as requested family state
+         p_int_string gauge_Lindex_type =
+            gauge_label_to_index_type.at(gauge_es_L);
+         unsigned int gauge_L_index = gauge_Lindex_type.first;
+         unsigned int gauge_R_index
+            = (gauge_label_to_index_type.at(gauge_es_R)).first;
+
+         str type_L = gauge_Lindex_type.second;
+         int mass_index1 = (mass_label_to_index_type.at(mass_es1)).first;
+         int mass_index2 = (mass_label_to_index_type.at(mass_es2)).first;
+         std::vector&lt;double&gt; mix_row_1;
+         std::vector&lt;double&gt; mix_row_2;
+         std::vector&lt;str&gt; gauge_es_strs = type_to_vec_of_gauge_es.at(type);
+         double row_length = gauge_es_strs.size();
+         for(std::vector&lt;int&gt;::size_type i = 1; i &lt;= row_length; i++)
+            {
+               double temp1 = mssm.get(Par::Pole_Mixing,type, mass_index1, i);
+               double temp2 = mssm.get(Par::Pole_Mixing,type, mass_index2, i);
+               if(i == gauge_L_index || i == gauge_R_index)
+                  {
+                     mix_row_1.push_back(temp1);
+                     mix_row_2.push_back(temp2);
+                  }
+            }
+
+         ///Put row 1 and row 2 into the same vector to return
+         mix_row_1.insert(mix_row_1.end(), mix_row_2.begin(), mix_row_2.end());
+
+         return mix_row_1;
+      }
+
+      /// returns admix of gauge eigenstate in the mass eigenstate
+      /// closest to the given family state and stores
+      /// mass eigenstate in mass_es
+      double get_gauge_admix_for_family_state(str familystate,
+                                              str gauge_es,
+                                              str &amp; mass_es,
+                                              const SubSpectrum&amp; mssm)
+      {
+         pair_string_ints type_family_massorder;
+         try { type_family_massorder = familystate_label.at(familystate); }
+         catch (std::out_of_range&amp;) { utils_error().raise(LOCAL_INFO, &quot;Unrecognised family state.&quot;); }
+         str family_type = type_family_massorder.first;
+         p_int_string gauge_es_index_type = gauge_label_to_index_type.at(gauge_es);
+         int gauge_index = gauge_es_index_type.first;
+         /// types should match but getting both allows us to throw error
+         str type_gauge = gauge_es_index_type.second;
+         if(family_type!=type_gauge)
+            { /// throw error in gambit
+               utils_error().raise(LOCAL_INFO, &quot;function get_gauge_admix_for_family_state &quot;
+                &quot;called with types for the family state and mass eigenstate that don't match.&quot;);
+            }
+         ///get mass_es using one of our routines
+         mass_es = mass_es_closest_to_family(familystate, mssm);
+         /// extract info from strings via maps
+         int mass_index = (mass_label_to_index_type.at(mass_es)).first;
+         double admix = mssm.get(Par::Pole_Mixing,type_gauge, mass_index,
+                                                   gauge_index);
+         return admix;
+      }
+
+      /// returns family state that best matches the given mass_es
+      /// fills a double with the sum of the square mixings to gauge_es
+      /// of the matching family
+      /// and fills the mixing of the matching gauge_es into mass eigenstates
+      str family_state_closest_to_mass_es(str mass_es, double &amp; sum_sq_mix,
+                                          std::vector&lt;double&gt; &amp; mass_comp,
+                                          const SubSpectrum&amp; mssm)
+      {
+         /// get gauge_es with largest mixing to this mass_es
+         str gauge_es = gauge_es_from_mass_es(mass_es, mass_comp, mssm);
+         /// get family states for the same generation as this gauge_es
+         std::vector&lt;str&gt; family_states = gauge_es_to_family_states.at(gauge_es);
+         str family_state1 = family_states[0];
+         str family_state2 = family_states[1];
+         std::vector&lt;str&gt; gauge_states = family_state_to_gauge_state.at(family_state1);
+         str gauge_es_L = gauge_states[0];
+         str gauge_es_R = gauge_states[1];
+         str mass_es_other;
+         if(gauge_es == gauge_es_L)
+            mass_es_other = mass_es_from_gauge_es(gauge_es_R, mssm);
+         else mass_es_other = mass_es_from_gauge_es(gauge_es_L, mssm);
+         /// extractindex of mass-es and mass_ess_other from strings
+         int mass_index = (mass_label_to_index_type.at(mass_es)).first;
+         int mass_index_other = (mass_label_to_index_type.at(mass_es_other)).first;
+         str fam_state;
+         /// choose mass ordering for family state which matches
+         /// mass ordering of mass_es
+         if(mass_index &lt; mass_index_other) fam_state = family_state1;
+         else fam_state = family_state2;
+
+         //get gauge_indices to sum correct mixing elements
+         int gauge_index_L = (gauge_label_to_index_type.at(gauge_es_L)).first;
+         int gauge_index_R = (gauge_label_to_index_type.at(gauge_es_R)).first;
+         /// subrtact 1 fgrom indices to deal with different indexing
+         sum_sq_mix = mass_comp.at(gauge_index_L-1) * mass_comp.at(gauge_index_L-1);
+         sum_sq_mix += mass_comp.at(gauge_index_R-1) * mass_comp.at(gauge_index_R-1);
+
+         return fam_state;
+      }
+
+      /// wrapper for overloaded version
+      /// returns family state that best matches the given mass_es
+      /// fills a double with the sum of the square mixings to gauge_es
+      /// of the matching family
+      str family_state_closest_to_mass_es(str mass_es, double &amp; sum_sq_mix,
+                                           const SubSpectrum&amp; mssm)
+      {
+         std::vector&lt;double&gt; mass_comp;
+         str fs = family_state_closest_to_mass_es(mass_es, sum_sq_mix,
+                                                  mass_comp, mssm);
+         return fs;
+      }
+
+      /// wrapper for overloaded version
+      /// returns family state that best matches the given mass_es
+      /// and fills the mixing of the matching mass_es into gauge eigenstates
+      str family_state_closest_to_mass_es(str mass_es,
+                                           std::vector&lt;double&gt; &amp; mass_comp,
+                                           const SubSpectrum&amp; mssm)
+      {
+         double sum_sq_mix;
+         str fs = family_state_closest_to_mass_es(mass_es, sum_sq_mix, mass_comp,
+                                                  mssm);
+         return fs;
+      }
+
+      /// wrapper for overloaded version
+      /// returns family state that best matches the given mass_es
+      /// and fills the mixing of the matching mass_es into gauge eigenstates
+      str family_state_closest_to_mass_es(str mass_es, const SubSpectrum&amp; mssm,
+                                          double tol, str context, bool pterror)
+      {
+         double sum_sq_mix;
+         std::vector&lt;double&gt; mass_comp;
+         str fs = family_state_closest_to_mass_es(mass_es, sum_sq_mix,
+                                                  mass_comp, mssm);
+         if(sum_sq_mix &lt;= 1-tol)
+         {
+           const str errmsg = &quot;Family_state_closest_to_mass_es called when family &quot;
+                              &quot;mixing away from closest mass_es is greater than tol.&quot;;
+           str full_context = LOCAL_INFO + &quot; called from &quot; + context;
+           if (pterror)
+           {
+             invalid_point().raise(errmsg+&quot;  Raised at: &quot;+full_context);
+           }
+           else
+           {
+             utils_error().raise(full_context, errmsg);
+           }
+         }
+         return fs;
+      }
+
+      /// Add an entire MSSM spectrum to an SLHAea object
+      // Here we assume that all SM input info comes from the SMINPUT object,
+      // and all low-E stuff (quark pole masses and the like) come from the LE subspectrum.
+      // In other words all those things should be added to the SLHAea object via
+      // different functions to this one. Here we add only MSSM information
+      // NOTE: check the below statement:
+       // Note that the SMINPUT object's dump-to-SLHAea function does not know how to discriminate
+       // between SLHA1 and SLHA2, but that doesn't matter, as the SM parameters defined in SLHA2
+       // just constitute additional blocks/block entries, not replacements for SLHA1 blocks.  In the
+       // MSSM sector, this is not true, and we take care to write version-specific blocks here.
+      //
+      // slha_version - should be 1 or 2. Specifies whether to output closest-matching SLHA1 format
+      // entries, or to maintain SLHA2 as is used internally.
+      void add_MSSM_spectrum_to_SLHAea(const SubSpectrum&amp; mssmspec, SLHAstruct&amp; slha, int slha_version)
+      {
+         std::ostringstream comment;
+
+         // Make sure to overwrite all entries if they exist already (from say a &quot;hurriedly&quot; copied SM subspectrum + unknown extra MSSM junk)
+
+         //SPINFO block should be added separately.
+         // MINPAR block; some programs need tanbeta(mZ), so we should output it here if possible
+         SLHAea_check_block(slha, &quot;MINPAR&quot;);
+         if(mssmspec.has(Par::dimensionless,&quot;tanbeta(mZ)&quot;))
+         {
+            SLHAea_add_from_subspec(slha,LOCAL_INFO,mssmspec,Par::dimensionless,&quot;tanbeta(mZ)&quot;,&quot;MINPAR&quot;,3,&quot;# tanbeta(mZ)^DRbar&quot;);
+         }
+         int sgnmu = sgn(mssmspec.get(Par::mass1,&quot;Mu&quot;)); // Mu isn't at the input scale anymore, but sign(mu) doesn't change with running.
+         SLHAea_add(slha,&quot;MINPAR&quot;,4,sgnmu,&quot;# sign(mu)&quot;, true);
+
+         // HMIX block
+         SLHAea_delete_block(slha, &quot;HMIX&quot;);
+         SLHAea_add_block   (slha, &quot;HMIX&quot;, mssmspec.GetScale());
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::mass1,&quot;Mu&quot;,&quot;HMIX&quot;,1,&quot;mu DRbar&quot;);
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::dimensionless,&quot;tanbeta&quot;,&quot;HMIX&quot;,2,&quot;tan(beta) = vu/vd DRbar&quot;);
+         if (not mssmspec.has(Par::mass1,&quot;vu&quot;)) utils_error().raise(LOCAL_INFO, &quot;MSSM subspectrum does not contain vu!&quot;);
+         if (not mssmspec.has(Par::mass1,&quot;vd&quot;)) utils_error().raise(LOCAL_INFO, &quot;MSSM subspectrum does not contain vd!&quot;);
+         double vu = mssmspec.get(Par::mass1,&quot;vu&quot;);
+         double vd = mssmspec.get(Par::mass1,&quot;vd&quot;);
+         SLHAea_add(slha,&quot;HMIX&quot;,3,sqrt(vu*vu + vd*vd),&quot;v = sqrt(vd^2 + vu^2) DRbar&quot;, true);
+         SLHAea_add_from_subspec(slha,LOCAL_INFO,mssmspec,Par::mass2,&quot;mA2&quot;,&quot;HMIX&quot;,4,&quot;m^2_A (tree)&quot;);
+         SLHAea_add_from_subspec(slha,LOCAL_INFO,mssmspec,Par::mass2,&quot;BMu&quot;,&quot;HMIX&quot;,101,&quot;Bmu DRbar&quot;);
+         SLHAea_add(slha,&quot;HMIX&quot;,102,vd,&quot;vd DRbar&quot;, true);
+         SLHAea_add(slha,&quot;HMIX&quot;,103,vu,&quot;vu DRbar&quot;, true);
+         // GAUGE block
+         SLHAea_delete_block(slha, &quot;GAUGE&quot;);
+         SLHAea_add_block   (slha, &quot;GAUGE&quot;, mssmspec.GetScale());
+         // Scale gY is in SU(5)/GUT normalisation internally; convert it to SM normalisation for SLHA output by multiplying by sqrt(3/5).
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::dimensionless,&quot;g1&quot;,&quot;GAUGE&quot;,1,&quot;g'  = g1 = gY DRbar&quot;, true, sqrt(3./5.));
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::dimensionless,&quot;g2&quot;,&quot;GAUGE&quot;,2,&quot;g   = g2      DRbar&quot;);
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::dimensionless,&quot;g3&quot;,&quot;GAUGE&quot;,3,&quot;g_s = g3      DRbar&quot;);
+
+         const int pdg_codes[33] = {24,25,35,37,36,1000021,1000024,1000037,1000022,1000023,1000025,1000035,1000006,2000006,1000005,2000005,1000015,2000015,1000012,1000014,1000016,1000001,1000003,
+                                    2000001,2000003,1000011,1000013,2000011,2000013,1000002,1000004,2000002,2000004,};
+
+         // Here we add the SLHA1-specific stuff, for backwards compatibility with backwards backends.
+         if (slha_version == 1)
+         {
+           const str slha1_sfermions[21] = {&quot;~t_1&quot;, &quot;~t_2&quot;, &quot;~b_1&quot;, &quot;~b_2&quot;, &quot;~tau_1&quot;, &quot;~tau_2&quot;,
+                                            &quot;~nu_e_L&quot;, &quot;~nu_mu_L&quot;, &quot;~nu_tau_L&quot;,
+                                             &quot;~d_L&quot;, &quot;~s_L&quot;, &quot;~d_R&quot;, &quot;~s_R&quot;, &quot;~e_L&quot;, &quot;~mu_L&quot;,
+                                             &quot;~e_R&quot;, &quot;~mu_R&quot;, &quot;~u_L&quot;, &quot;~c_L&quot;, &quot;~u_R&quot;, &quot;~c_R&quot;};
+           str slha2_sfermions[21];
+
+           // STOPMIX, SBOTMIX and STAUMIX blocks
+           slhahelp::attempt_to_add_SLHA1_mixing(&quot;STOPMIX&quot;, slha, &quot;~u&quot;, mssmspec, 1.0, slha2_sfermions[0], slha2_sfermions[1], true);
+           slhahelp::attempt_to_add_SLHA1_mixing(&quot;SBOTMIX&quot;, slha, &quot;~d&quot;, mssmspec, 1.0, slha2_sfermions[2], slha2_sfermions[3], true);
+           slhahelp::attempt_to_add_SLHA1_mixing(&quot;STAUMIX&quot;, slha, &quot;~e-&quot;, mssmspec, 1.0, slha2_sfermions[4], slha2_sfermions[5], true);
+
+           // MASS block.  Do everything except sfermions the same way as SLHA2.
+           for(int i=0;i&lt;12;i++)
+           {
+             str comment(Models::ParticleDB().long_name(pdg_codes[i], 0));
+             SLHAea_add_from_subspec(slha, LOCAL_INFO, mssmspec, Par::Pole_Mass, std::pair&lt;int, int&gt;(pdg_codes[i],0), &quot;MASS&quot;, comment);
+           }
+           for(int i=0;i&lt;21;i++)
+           {
+             if (i &gt; 5)
+             {
+               double max_mixing; // Don't actually care about this; we're going to SLHA1 whether it is a good approximation or not.
+               slha2_sfermions[i] = slhahelp::mass_es_from_gauge_es(slha1_sfermions[i], max_mixing, mssmspec);
+             }
+             SLHAea_add(slha, &quot;MASS&quot;, pdg_codes[i+12], mssmspec.get(Par::Pole_Mass, slha2_sfermions[i]), slha1_sfermions[i], true);
+           }
+         }
+         else if (slha_version == 2)
+         {
+           // MASS block
+           for(int i=0;i&lt;33;i++)
+           {
+             str comment(Models::ParticleDB().long_name(pdg_codes[i], 0));
+             SLHAea_add_from_subspec(slha, LOCAL_INFO, mssmspec, Par::Pole_Mass, std::pair&lt;int, int&gt;(pdg_codes[i],0), &quot;MASS&quot;, comment);
+           }
+
+           // USQMIX, DSQMIX, SELMIX
+           sspair S[3] = {sspair(&quot;USQMIX&quot;,&quot;~u&quot;), sspair(&quot;DSQMIX&quot;,&quot;~d&quot;), sspair(&quot;SELMIX&quot;,&quot;~e-&quot;)};
+           for (int k=0;k&lt;3;k++)
+           {
+             SLHAea_delete_block(slha, S[k].first);
+             SLHAea_add_block   (slha, S[k].first, mssmspec.GetScale());
+             for(int i=1;i&lt;7;i++) for(int j=1;j&lt;7;j++)
+             {
+               comment.str(&quot;&quot;); comment &lt;&lt; S[k].second &lt;&lt; &quot;-type sfermion mixing (&quot; &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; j &lt;&lt; &quot;)&quot;;
+               SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec, Par::Pole_Mixing, S[k].second, i, j, S[k].first, i, j, comment.str());
+             }
+           }
+
+           // SNUMIX block
+           sspair V(&quot;SNUMIX&quot;,&quot;~nu&quot;);
+           SLHAea_delete_block(slha, V.first);
+           SLHAea_add_block   (slha, V.first, mssmspec.GetScale());
+           for(int i=1;i&lt;4;i++) for(int j=1;j&lt;4;j++)
+           {
+             comment.str(&quot;&quot;); comment &lt;&lt; V.second &lt;&lt; &quot; mixing matrix (&quot; &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; j &lt;&lt; &quot;)&quot;;
+             SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec, Par::Pole_Mixing, V.second, i, j, V.first, i, j, comment.str());
+           }
+
+         }
+         else
+         {
+           utils_error().raise(LOCAL_INFO, &quot;Unrecognised version of SLHA standard; only SLHA1 and SLHA2 are permitted.&quot;);
+         }
+
+         // MSOFT block (SLHA1 and SLHA2) plus MSL2, MSE2, MSQ2, MSU2 and MSD2 blocks (SLHA2 only)
+         if(not SLHAea_block_exists(slha,&quot;MSOFT&quot;))
+         {
+           SLHAea_add_block(slha, &quot;MSOFT&quot;, mssmspec.GetScale());
+         }
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::mass1,&quot;M1&quot;,&quot;MSOFT&quot;,1,&quot;bino mass parameter M1&quot;);
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::mass1,&quot;M2&quot;,&quot;MSOFT&quot;,2,&quot;wino mass parameter M2&quot;);
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::mass1,&quot;M3&quot;,&quot;MSOFT&quot;,3,&quot;gluino mass parameter M3&quot;);
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::mass2,&quot;mHd2&quot;,&quot;MSOFT&quot;,21,&quot;d-type Higgs mass parameter mHd2&quot;);
+         SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec,Par::mass2,&quot;mHu2&quot;,&quot;MSOFT&quot;,22,&quot;u-type Higgs mass parameter mHu2&quot;);
+         sspair M[5] = {sspair(&quot;MSL2&quot;,&quot;ml2&quot;), sspair(&quot;MSE2&quot;,&quot;me2&quot;), sspair(&quot;MSQ2&quot;,&quot;mq2&quot;), sspair(&quot;MSU2&quot;,&quot;mu2&quot;), sspair(&quot;MSD2&quot;,&quot;md2&quot;)};
+         for (int k=0;k&lt;5;k++)
+         {
+           SLHAea_delete_block(slha, M[k].first);
+           if (slha_version == 2) SLHAea_add_block(slha, M[k].first, mssmspec.GetScale());
+           for(int i=1;i&lt;4;i++) for(int j=1;j&lt;4;j++)
+           {
+             comment.str(&quot;&quot;); comment &lt;&lt; M[k].second &lt;&lt; &quot;(&quot; &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; j &lt;&lt; &quot;)&quot;;
+             if (slha_version == 2) SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec, Par::mass2, M[k].second, i, j, M[k].first, i, j, comment.str());
+             if (i== j)
+             {
+               double entry = mssmspec.get(Par::mass2, M[k].second, i, j);
+               SLHAea_add(slha,&quot;MSOFT&quot;,30+3*k+i+(k&gt;1?4:0),sgn(entry)*sqrt(std::abs(entry)),&quot;sqrt(&quot;+comment.str()+&quot;)&quot;, true);
+             }
+           }
+         }
+
+         // Yukawa and trilinear blocks.  YU, YD and YE, plus [YU, YD and YE; SLHA1 only], or [TU, TD and TE; SLHA2 only].
+         sspair A[3] = {sspair(&quot;AU&quot;,&quot;Au&quot;), sspair(&quot;AD&quot;,&quot;Ad&quot;), sspair(&quot;AE&quot;,&quot;Ae&quot;)};
+         sspair Y[3] = {sspair(&quot;YU&quot;,&quot;Yu&quot;), sspair(&quot;YD&quot;,&quot;Yd&quot;), sspair(&quot;YE&quot;,&quot;Ye&quot;)};
+         sspair T[3] = {sspair(&quot;TU&quot;,&quot;TYu&quot;), sspair(&quot;TD&quot;,&quot;TYd&quot;), sspair(&quot;TE&quot;,&quot;TYe&quot;)};
+         for (int k=0;k&lt;3;k++)
+         {
+           // Erase these blocks if they already exist; we need them in the right format
+           SLHAea_delete_block(slha, Y[k].first);
+           SLHAea_delete_block(slha, A[k].first);
+           SLHAea_delete_block(slha, T[k].first);
+           // Now add them back
+           SLHAea_add_block(slha, Y[k].first, mssmspec.GetScale());
+           if (slha_version == 1) SLHAea_add_block(slha, A[k].first, mssmspec.GetScale());
+           if (slha_version == 2) SLHAea_add_block(slha, T[k].first, mssmspec.GetScale());
+           for(int i=1;i&lt;4;i++)
+           {
+             // SLHA2 says to output only diagonal of Yukawa matrices, since we should be in a basis in which they are diagonal.
+             // SLHA1 says to give only the 3,3 element, but we'll give the whole diagonal anyway, codes will ignore them if not
+             // needed.
+             comment.str(&quot;&quot;); comment &lt;&lt; Y[k].second &lt;&lt; &quot;(&quot; &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; i &lt;&lt; &quot;)&quot;;
+             SLHAea_add_from_subspec(slha,LOCAL_INFO,mssmspec,Par::dimensionless,Y[k].second, i, i, Y[k].first, i, i, comment.str());
+
+             if (slha_version == 1)
+             {
+               comment.str(&quot;&quot;); comment &lt;&lt; A[k].second &lt;&lt; &quot;(&quot; &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; i &lt;&lt; &quot;)&quot;;
+               double invTii = 1.0/mssmspec.get(Par::dimensionless,Y[k].second,i,i);
+               SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec, Par::mass1, T[k].second, i, i, A[k].first, i, i, comment.str(), true, invTii); // last argument is a rescaling factor
+             }
+             else if (slha_version == 2)
+             {
+                for(int j=1;j&lt;4;j++)
+                {
+                   comment.str(&quot;&quot;); comment &lt;&lt; T[k].second &lt;&lt; &quot;(&quot; &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; j &lt;&lt; &quot;)&quot;;
+                   SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec, Par::mass1, T[k].second, i, j, T[k].first, i, j, comment.str());
+                }
+             }
+             else
+             {
+                std::ostringstream msg;
+                msg &lt;&lt; &quot;Tried to ouput SLHA data, but SLHA version requested was invalid (should be 1 or 2, but received &quot;&lt;&lt;slha_version&lt;&lt;&quot;)&quot;;
+                utils_error().raise(LOCAL_INFO,msg.str());
+             }
+           }
+         }
+
+         // ALPHA block
+         // if this exists already, delete it entirely
+         auto it = slha.find(&quot;ALPHA&quot;);
+         if(it!=slha.end()) slha.erase(it); // TODO: format of this call is confusing, perhaps write a wrapper for it.
+         // ...and now add it back
+         SLHAea_add_block(slha, &quot;ALPHA&quot;, mssmspec.GetScale());
+         slha[&quot;ALPHA&quot;][&quot;&quot;] &lt;&lt; asin(mssmspec.get(Par::Pole_Mixing, &quot;h0&quot;, 2, 2)) &lt;&lt; &quot;# sin^-1(SCALARMIX(2,2))&quot;;
+
+         // UMIX and VMIX blocks, plus some FlexibleSUSY-only extensions: PSEUDOSCALARMIX, SCALARMIX and CHARGEMIX.
+         sspair U[5] = {sspair(&quot;UMIX&quot;,&quot;~chi-&quot;), sspair(&quot;VMIX&quot;,&quot;~chi+&quot;), sspair(&quot;PSEUDOSCALARMIX&quot;,&quot;A0&quot;), sspair(&quot;SCALARMIX&quot;,&quot;h0&quot;), sspair(&quot;CHARGEMIX&quot;,&quot;H+&quot;)};
+         for (int k=0;k&lt;5;k++)
+         {
+           SLHAea_delete_block(slha, U[k].first);
+           SLHAea_add_block(slha, U[k].first, mssmspec.GetScale());
+           for(int i=1;i&lt;3;i++) for(int j=1;j&lt;3;j++)
+           {
+             comment.str(&quot;&quot;); comment &lt;&lt; U[k].second &lt;&lt; &quot; mixing matrix (&quot; &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; j &lt;&lt; &quot;)&quot;;
+             SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec, Par::Pole_Mixing, U[k].second, i, j, U[k].first, i, j, comment.str());
+           }
+         }
+
+         // NMIX block
+         sspair N(&quot;NMIX&quot;,&quot;~chi0&quot;);
+         SLHAea_delete_block(slha, N.first);
+         SLHAea_add_block(slha, N.first, mssmspec.GetScale());
+         for(int i=1;i&lt;5;i++) for(int j=1;j&lt;5;j++)
+         {
+           comment.str(&quot;&quot;); comment &lt;&lt; N.second &lt;&lt; &quot; mixing matrix (&quot; &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; j &lt;&lt; &quot;)&quot;;
+           SLHAea_add_from_subspec(slha, LOCAL_INFO,mssmspec, Par::Pole_Mixing, N.second, i, j, N.first, i, j, comment.str());
+         }
+       }
+
+   }  // namespace slhahelp
+
+
+  // Definitions of methods for struct mass_es_pseudonyms
+
+  /// Refill strings in struct
+  void mass_es_pseudonyms::refill(const SubSpectrum&amp; mssm, double tol, bool pt_error, bool debug)
+  {
+    filled = false;
+    fill(mssm, tol, pt_error, debug);
+  }
+
+  /// Fill strings in struct
+  void mass_es_pseudonyms::fill(const SubSpectrum&amp; mssm, double tol, bool pt_error, bool debug)
+  {
+    if(filled == true) return;  // Don't refill unnecessarily
+
+    fill_mass_es_psn_gauge (isdl, isdlbar, &quot;~d_L&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge (isul, isulbar, &quot;~u_L&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge (issl, isslbar, &quot;~s_L&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge (iscl, isclbar, &quot;~c_L&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_family(isb1, isb1bar, &quot;~b_1&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_family(ist1, ist1bar, &quot;~t_1&quot;, mssm, tol, pt_error, debug);
+
+    fill_mass_es_psn_gauge (isell,  isellbar,  &quot;~e_L&quot;,   mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge (ismul,  ismulbar,  &quot;~mu_L&quot;,  mssm, tol, pt_error, debug);
+    fill_mass_es_psn_family(istau1, istau1bar, &quot;~tau_1&quot;, mssm, tol, pt_error, debug);
+
+    fill_mass_es_psn_gauge(isnel,   isnelbar,   &quot;~nu_e_L&quot;,   mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge(isnmul,  isnmulbar,  &quot;~nu_mu_L&quot;,  mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge(isntaul, isntaulbar, &quot;~nu_tau_L&quot;, mssm, tol, pt_error, debug);
+
+    fill_mass_es_psn_gauge (isdr, isdrbar, &quot;~d_R&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge (isur, isurbar, &quot;~u_R&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge (issr, issrbar, &quot;~s_R&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge (iscr, iscrbar, &quot;~c_R&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_family(isb2, isb2bar, &quot;~b_2&quot;, mssm, tol, pt_error, debug);
+    fill_mass_es_psn_family(ist2, ist2bar, &quot;~t_2&quot;, mssm, tol, pt_error, debug);
+
+    fill_mass_es_psn_gauge (iselr, iselrbar,   &quot;~e_R&quot;,   mssm, tol, pt_error, debug);
+    fill_mass_es_psn_gauge (ismur, ismurbar,   &quot;~mu_R&quot;,  mssm, tol, pt_error, debug);
+    fill_mass_es_psn_family(istau2, istau2bar, &quot;~tau_2&quot;, mssm, tol, pt_error, debug);
+
+    filled = true;
+
+    if (debug) debug_print(mssm);
+
+  }
+
+  /// Helper function for getting mass eigenstates from gauge eigenstates
+  void mass_es_pseudonyms::fill_mass_es_psn_gauge(str&amp; is, str&amp; isbar, str gauge_es, const SubSpectrum&amp; mssm,
+                                                  double tol, bool pt_error_on_mixing_failure, bool debug)
+  {
+    double max_mix = 0;
+    str mass_es = slhahelp::mass_es_from_gauge_es(gauge_es, max_mix, mssm);
+
+    if((max_mix*max_mix) &gt;= 1-tol)
+    {
+       is = mass_es;
+       isbar = Models::ParticleDB().get_antiparticle(mass_es);
+       gauge_family_eigenstates[is] = gauge_es;
+       gauge_family_eigenstates[isbar] = gauge_es.substr(0,gauge_es.length()-2)+&quot;bar&quot;+gauge_es.substr(gauge_es.length()-2);
+       mass_eigenstates[gauge_family_eigenstates[isbar]] = is;
+       mass_eigenstates[gauge_family_eigenstates[isbar]] = isbar;
+    }
+    else
+    {
+       std::stringstream ss;
+       ss &lt;&lt; &quot;MSSM mass(-squared) eigenstate &quot; &lt;&lt; mass_es &lt;&lt; &quot; is only &quot; &lt;&lt; max_mix*max_mix*100 &lt;&lt; &quot;% gauge eigenstate &quot; &lt;&lt; gauge_es &lt;&lt; &quot;.&quot; &lt;&lt; endl
+          &lt;&lt; &quot;The requested tolerance is &quot; &lt;&lt; tol*100 &lt;&lt; &quot; =&gt; too much sfermion mixing to assume that this is a pure gauge eigenstate.&quot;;
+       if (pt_error_on_mixing_failure)
+       {
+         invalid_point().raise(ss.str());
+       }
+       else
+       {
+         utils_error().raise(LOCAL_INFO, ss.str());
+       }
+    }
+
+    if (debug) debug_print_gauge(mssm, gauge_es, mass_es, max_mix);
+  }
+
+  /// Helper function for getting family states from gauge eigenstates
+  void mass_es_pseudonyms::fill_mass_es_psn_family(str&amp; is, str&amp; isbar, str family_state, const SubSpectrum&amp; mssm,
+                                                   double tol, bool pt_error_on_mixing_failure, bool debug)
+  {
+    /// First identify the mass eigenstate that best matches the requested family state.
+    /// Then get the decomposition of that mass eigenstate into the two gauge states from the same family as the family state.
+    std::vector&lt;double&gt; right_fam_gauge_comp;
+    str mass_es = slhahelp::mass_es_closest_to_family(family_state, right_fam_gauge_comp, mssm);
+
+    /// Simplest possible test.
+    double mix_mag_sq = 0.0;
+    for(auto i = right_fam_gauge_comp.begin(); i != right_fam_gauge_comp.end(); i++)
+    {
+       double mix = *i;
+       mix_mag_sq += mix*mix;
+    }
+
+    if(mix_mag_sq &gt; 1-tol)
+    {
+      is = mass_es;
+      isbar = Models::ParticleDB().get_antiparticle(mass_es);
+      gauge_family_eigenstates[is] = family_state;
+      gauge_family_eigenstates[isbar] = family_state.substr(0,family_state.length()-2)+&quot;bar&quot;+family_state.substr(family_state.length()-2);
+      mass_eigenstates[gauge_family_eigenstates[isbar]] = is;
+      mass_eigenstates[gauge_family_eigenstates[isbar]] = isbar;
+    }
+    else
+    {
+       std::stringstream ss;
+       ss &lt;&lt; &quot;MSSM mass(-squared) eigenstate &quot; &lt;&lt; mass_es &lt;&lt; &quot; is only &quot; &lt;&lt; mix_mag_sq*100 &lt;&lt; &quot;% the same family as &quot;
+          &lt;&lt; &quot;family state &quot; &lt;&lt; family_state &lt;&lt; &quot;.&quot; &lt;&lt; endl &lt;&lt; &quot;The requested tolerance is &quot; &lt;&lt; tol*100
+          &lt;&lt; &quot;% =&gt; too much inter-family sfermion mixing to assume that this is a pure family state.&quot;;
+       if (pt_error_on_mixing_failure)
+       {
+         invalid_point().raise(ss.str());
+       }
+       else
+       {
+         utils_error().raise(LOCAL_INFO, ss.str());
+       }
+    }
+
+    if (debug) debug_print_family(mssm, family_state, mass_es, mix_mag_sq, tol);
+  }
+
+  /// General debug printer for pseudonyms
+  void mass_es_pseudonyms::debug_print(const SubSpectrum&amp; mssm)
+  {
+    std::cout.precision(8);
+    std::cout &lt;&lt; &quot;Dmix :&quot; &lt;&lt; std::endl;;
+    for(int i = 1; i &lt;=6; i++)
+    {
+      for(int j = 1; j &lt;=6; j++)
+      {
+        std::cout &lt;&lt; &quot;     &quot; &lt;&lt; i &lt;&lt; j &lt;&lt; &quot; = &quot;
+                  &lt;&lt; std::scientific &lt;&lt; std::setw(10)
+                  &lt;&lt;  mssm.get(Par::Pole_Mixing,&quot;~d&quot;, i, j);
+      }
+      std::cout &lt;&lt; std::endl;
+    }
+
+    std::cout &lt;&lt; &quot;Umix :&quot; &lt;&lt; std::endl;;
+    for(int i = 1; i &lt;=6; i++)
+    {
+      for(int j = 1; j &lt;=6; j++)
+      {
+        std::cout &lt;&lt; &quot;     &quot; &lt;&lt; i &lt;&lt; j &lt;&lt; &quot; = &quot;
+                  &lt;&lt; mssm.get(Par::Pole_Mixing,&quot;~u&quot;, i, j);
+      }
+      std::cout &lt;&lt; std::endl;
+    }
+
+    std::cout &lt;&lt; &quot;Emix :&quot; &lt;&lt; std::endl;;
+    for(int i = 1; i &lt;=6; i++)
+    {
+      for(int j = 1; j &lt;=6; j++)
+      {
+        std::cout &lt;&lt; &quot;     &quot; &lt;&lt; i &lt;&lt; j &lt;&lt; &quot; = &quot;
+                  &lt;&lt; mssm.get(Par::Pole_Mixing,&quot;~e-&quot;, i, j);
+      }
+      std::cout &lt;&lt; std::endl;
+    }
+
+    std::cout &lt;&lt; &quot;NUmix :&quot; &lt;&lt; std::endl;;
+    for(int i = 1; i &lt;=3; i++)
+    {
+      for(int j = 1; j &lt;=3; j++)
+      {
+       std::cout &lt;&lt; &quot;     &quot; &lt;&lt; i &lt;&lt; j &lt;&lt; &quot; = &quot;
+                 &lt;&lt; mssm.get(Par::Pole_Mixing,&quot;~nu&quot;, i, j);
+      }
+      std::cout &lt;&lt; std::endl;
+    }
+
+    std::cout &lt;&lt; &quot;isdl = &quot;  &lt;&lt; isdl &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isdlbar = &quot;  &lt;&lt; isdlbar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isdr = &quot;  &lt;&lt; isdr &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isdrbar = &quot;  &lt;&lt; isdrbar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;isul = &quot;  &lt;&lt; isul &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isulbar = &quot;  &lt;&lt; isulbar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isur = &quot;  &lt;&lt; isur &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isurbar = &quot;  &lt;&lt; isurbar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;issl = &quot;  &lt;&lt; issl &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isslbar = &quot;  &lt;&lt; isslbar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;issr = &quot;  &lt;&lt; issr &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;issrbar = &quot;  &lt;&lt; issrbar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;iscl = &quot;  &lt;&lt; iscl &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isclbar = &quot;  &lt;&lt; isclbar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;iscr = &quot;  &lt;&lt; iscr &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;iscrbar = &quot;  &lt;&lt; iscrbar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;isb1 = &quot;  &lt;&lt; isb1 &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isb1bar = &quot;  &lt;&lt; isb1bar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isb2 = &quot;  &lt;&lt; isb2 &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isb2bar = &quot;  &lt;&lt; isb2bar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;ist1 = &quot;  &lt;&lt; ist1 &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;ist1bar = &quot;  &lt;&lt; ist1bar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;ist2 = &quot;  &lt;&lt; ist2 &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;ist2bar = &quot;  &lt;&lt; ist2bar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;isell = &quot;  &lt;&lt; isell &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isellbar = &quot;  &lt;&lt; isellbar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;iselr = &quot;  &lt;&lt; iselr &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;iselrbar = &quot;  &lt;&lt; iselrbar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;isnel = &quot;  &lt;&lt; isnel &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isnelbar = &quot;  &lt;&lt; isnelbar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;ismul = &quot;  &lt;&lt; ismul &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;ismulbar = &quot;  &lt;&lt; ismulbar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;ismur = &quot;  &lt;&lt; ismur &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;ismurbar = &quot;  &lt;&lt; ismurbar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;isnmull = &quot;  &lt;&lt; isnmul &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isnmullbar = &quot;  &lt;&lt; isnmulbar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;istau1 = &quot;  &lt;&lt; istau1 &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;istau1bar = &quot;  &lt;&lt; istau1bar &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;istau2 = &quot;  &lt;&lt; istau2 &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;istau2bar = &quot;  &lt;&lt; istau2bar &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;isntaul = &quot;  &lt;&lt; isntaul &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;isntaulbar = &quot;  &lt;&lt; isntaulbar &lt;&lt; std::endl;
+
+  }
+
+  /// Gauge state debug printer for pseudonyms
+  void mass_es_pseudonyms::debug_print_gauge(const SubSpectrum&amp; mssm, str&amp; gauge_es, str&amp; mass_es, double&amp; max_mix)
+  {
+    std::cout &lt;&lt; &quot;******** Extra tests ********* &quot; &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;gauge_es = &quot; &lt;&lt; gauge_es &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;mass_es = &quot; &lt;&lt; mass_es &lt;&lt; std::endl;
+
+    double max_mix_r = 0.0;
+    str g_es = slhahelp::gauge_es_from_mass_es(mass_es, max_mix_r, mssm);
+    std::cout &lt;&lt; &quot;g_es = &quot; &lt;&lt; g_es &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;max_mix = &quot;  &lt;&lt; max_mix&lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;max_mix_r = &quot;  &lt;&lt; max_mix_r &lt;&lt; std::endl;
+    if(g_es != gauge_es) std::cout &lt;&lt; &quot;g_s error! &quot; &lt;&lt; std::endl;
+    if(max_mix_r != max_mix) std::cout &lt;&lt; &quot;g_s max_mix_r error! &quot; &lt;&lt; std::endl;
+
+    str ges = slhahelp::gauge_es_from_mass_es(mass_es, mssm, 1e-3, LOCAL_INFO, false);
+    std::cout &lt;&lt; &quot;ges = &quot;  &lt;&lt; ges &lt;&lt; std::endl;
+    if(ges != gauge_es) std::cout &lt;&lt; &quot;ges error! &quot; &lt;&lt; std::endl;
+    str mes = slhahelp::mass_es_from_gauge_es(gauge_es, mssm, 1e-3, LOCAL_INFO, false);
+    std::cout &lt;&lt; &quot;mes = &quot;  &lt;&lt; ges &lt;&lt; std::endl;
+    if(mes != mass_es) std::cout &lt;&lt; &quot;mes error! &quot; &lt;&lt; std::endl;
+  }
+
+  /// Family state debug printer for pseudonyms
+  void mass_es_pseudonyms::debug_print_family(const SubSpectrum&amp; mssm, str&amp; family_state, str&amp; mass_es, double&amp; mix_mag_sq, double&amp; tol)
+  {
+    std::cout &lt;&lt; &quot;******** Extra tests ********* &quot; &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;family_state = &quot;  &lt;&lt; family_state &lt;&lt;std::endl;
+    std::cout &lt;&lt; &quot;mass_es obtained from family_state = &quot;  &lt;&lt; mass_es
+              &lt;&lt; std::endl;
+    double sum_sq_mix;
+    str fs = slhahelp::family_state_closest_to_mass_es(mass_es, sum_sq_mix,
+                                                       mssm);
+    std::cout &lt;&lt; &quot;fs obtained from mass_es = &quot; &lt;&lt; fs &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;sum_sq_mix = &quot; &lt;&lt; sum_sq_mix &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;mix_mag_sq = &quot; &lt;&lt; mix_mag_sq &lt;&lt; std::endl;
+    if(fs != family_state) std::cout &lt;&lt; &quot;fs error! = &quot; &lt;&lt; std::endl;
+    str f_s = slhahelp::family_state_closest_to_mass_es(mass_es, mssm, 1e-3, LOCAL_INFO, false);
+    std::cout &lt;&lt; &quot;f_s obtained from mass_es = &quot; &lt;&lt; f_s &lt;&lt; std::endl;
+    if(f_s != family_state) std::cout &lt;&lt; &quot;f_s error! = &quot; &lt;&lt; std::endl;
+
+    str m_es = slhahelp::mass_es_closest_to_family(family_state, mssm, tol, LOCAL_INFO, false);
+    std::cout &lt;&lt; &quot;m_es = &quot;  &lt;&lt; m_es &lt;&lt; std::endl;
+    if(m_es != mass_es) std::cout &lt;&lt; &quot;m_es error! = &quot; &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; &quot;******** Special family_state_mix_matrix tests ********&quot;
+              &lt;&lt; std::endl;
+    str mass_es1, mass_es2, type;
+    str types[] = {&quot;~u&quot;,&quot;~d&quot;, &quot;~e-&quot;};
+    std::set&lt;str&gt; set_type = {types, types+3};
+    std::set&lt;str&gt;::iterator it;
+    for (it = set_type.begin(); it != set_type.end(); ++it)
+    {
+      type = *it;
+      for(int gen = 1;  gen &lt;=3; gen++)
+      {
+        std::cout &lt;&lt; &quot;entering type = &quot; &lt;&lt; type &lt;&lt; &quot; and gen &quot;
+                 &lt;&lt; gen &lt;&lt; std::endl;
+        std::vector&lt;double&gt; f_mix_matrix = slhahelp::family_state_mix_matrix(type,gen, mass_es1, mass_es2, mssm);
+        std::cout &lt;&lt; &quot;mass_es1 = &quot; &lt;&lt; mass_es1 &lt;&lt; std::endl;
+        std::cout &lt;&lt; &quot;mass_es2 = &quot; &lt;&lt; mass_es2 &lt;&lt; std::endl;
+        for(int i = 0;  i&lt;=3; i++)
+        {
+          std::cout &lt;&lt; &quot;f_mix_matrix[&quot; &lt;&lt; i &lt;&lt; &quot;] = &quot;
+                    &lt;&lt; f_mix_matrix[i] &lt;&lt; std::endl;
+        }
+        double row1sq = f_mix_matrix[0] * f_mix_matrix[0];
+        row1sq += f_mix_matrix[1] * f_mix_matrix[1];
+        double row2sq = f_mix_matrix[2] * f_mix_matrix[2];
+        row2sq += f_mix_matrix[3] * f_mix_matrix[3];
+        std::cout &lt;&lt; &quot;row1sq = &quot; &lt;&lt;  row1sq &lt;&lt; &quot;  row2sq = &quot;
+                  &lt;&lt;  row2sq &lt;&lt; std::endl;
+      }
+    }
+  }
+
+
+} //namespace gambit
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:09 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

@@ -1,0 +1,1307 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file Utils/util_macros.hpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file Utils/util_macros.hpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file Utils/util_macros.hpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file Utils/util_macros.hpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/","url":"https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/","name":"file Utils\/util_macros.hpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/util__macros_8hpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file Utils\/util_macros.hpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-fail>define FAIL</a></li><li><a href=#define-append-token>define APPEND_TOKEN</a></li><li><a href=#define-dummy>define DUMMY</a></li><li><a href=#define-dummyarg>define DUMMYARG</a></li><li><a href=#define-first-arg>define FIRST_ARG</a></li><li><a href=#define-remfirst>define REMFIRST</a></li><li><a href=#define-remfirst-i>define REMFIRST_I</a></li><li><a href=#define-apply>define APPLY</a></li><li><a href=#define-apply-i>define APPLY_I</a></li><li><a href=#define-strip-parens>define STRIP_PARENS</a></li><li><a href=#define-strip-parens-i>define STRIP_PARENS_I</a></li><li><a href=#define-eval-par>define EVAL_PAR</a></li><li><a href=#define-eval-par-i>define EVAL_PAR_I</a></li><li><a href=#define-test-arity>define TEST_ARITY</a></li><li><a href=#define-test-arity-i>define TEST_ARITY_I</a></li><li><a href=#define-maybe-strip-parens>define MAYBE_STRIP_PARENS</a></li><li><a href=#define-maybe-strip-parens-i>define MAYBE_STRIP_PARENS_I</a></li><li><a href=#define-maybe-strip-parens-1>define MAYBE_STRIP_PARENS_1</a></li><li><a href=#define-maybe-strip-parens-2>define MAYBE_STRIP_PARENS_2</a></li><li><a href=#define-maybe-strip-parens-2-i>define MAYBE_STRIP_PARENS_2_I</a></li><li><a href=#define-has-parens>define HAS_PARENS</a></li><li><a href=#define-has-parens-i>define HAS_PARENS_I</a></li><li><a href=#define-eval-hasp>define EVAL_HASP</a></li><li><a href=#define-eval-hasp-i>define EVAL_HASP_I</a></li><li><a href=#define-check-parens>define CHECK_PARENS</a></li><li><a href=#define-check-parens-i>define CHECK_PARENS_I</a></li><li><a href=#define-check-parens-1>define CHECK_PARENS_1</a></li><li><a href=#define-check-parens-2>define CHECK_PARENS_2</a></li><li><a href=#define-arg128>define _ARG128</a></li><li><a href=#define-has-comma>define HAS_COMMA</a></li><li><a href=#define-isempty>define ISEMPTY</a></li><li><a href=#define-isempty-i>define ISEMPTY_I</a></li><li><a href=#define-isempty-ii>define ISEMPTY_II</a></li><li><a href=#define-129ones>define _129ONES</a></li><li><a href=#define-insert-nonempty>define INSERT_NONEMPTY</a></li><li><a href=#define-insert-nonempty-i0>define INSERT_NONEMPTY_I0</a></li><li><a href=#define-insert-nonempty-i1>define INSERT_NONEMPTY_I1</a></li><li><a href=#define-pair-element0>define PAIR_ELEMENT0</a></li><li><a href=#define-pair-element0-i>define PAIR_ELEMENT0_I</a></li><li><a href=#define-pair-element1>define PAIR_ELEMENT1</a></li><li><a href=#define-pair-element1-i>define PAIR_ELEMENT1_I</a></li><li><a href=#define-void-void>define void_void</a></li><li><a href=#define-int-int>define int_int</a></li><li><a href=#define-float-float>define float_float</a></li><li><a href=#define-double-double>define double_double</a></li><li><a href=#define-bool-bool>define bool_bool</a></li><li><a href=#define-char-char>define char_char</a></li><li><a href=#define-string-string>define string_string</a></li><li><a href=#define-modelparameters-modelparameters>define ModelParameters_ModelParameters</a></li><li><a href=#define-is-type>define IS_TYPE</a></li><li><a href=#define-is-equal>define IS_EQUAL</a></li><li><a href=#define-if-equal>define IF_EQUAL</a></li><li><a href=#define-if-not-equal>define IF_NOT_EQUAL</a></li><li><a href=#define-if-else-equal>define IF_ELSE_EQUAL</a></li><li><a href=#define-empty-token-tester>define EMPTY_TOKEN_TESTER</a></li><li><a href=#define-is-empty>define IS_EMPTY</a></li><li><a href=#define-if-empty>define IF_EMPTY</a></li><li><a href=#define-if-not-empty>define IF_NOT_EMPTY</a></li><li><a href=#define-if-else-empty>define IF_ELSE_EMPTY</a></li><li><a href=#define-va-nargs-impl>define VA_NARGS_IMPL</a></li><li><a href=#define-va-nargs>define VA_NARGS</a></li><li><a href=#define-vararg-impl2>define VARARG_IMPL2</a></li><li><a href=#define-vararg-impl>define VARARG_IMPL</a></li><li><a href=#define-vararg>define VARARG</a></li><li><a href=#define-va-nargs-nested-impl>define VA_NARGS_NESTED_IMPL</a></li><li><a href=#define-va-nargs-nested>define VA_NARGS_NESTED</a></li><li><a href=#define-vararg-nested-impl2>define VARARG_NESTED_IMPL2</a></li><li><a href=#define-vararg-nested-impl>define VARARG_NESTED_IMPL</a></li><li><a href=#define-vararg-nested>define VARARG_NESTED</a></li><li><a href=#define-va-nargs-ab-impl>define VA_NARGS_AB_IMPL</a></li><li><a href=#define-va-nargs-ab>define VA_NARGS_AB</a></li><li><a href=#define-vararg-ab-impl2>define VARARG_AB_IMPL2</a></li><li><a href=#define-vararg-ab-impl>define VARARG_AB_IMPL</a></li><li><a href=#define-vararg-ab>define VARARG_AB</a></li><li><a href=#define-vararg-switch-on-gt-one-tester-1>define VARARG_SWITCH_ON_GT_ONE_TESTER_1</a></li><li><a href=#define-va-nargs-switch-on-gt-one-impl>define VA_NARGS_SWITCH_ON_GT_ONE_IMPL</a></li><li><a href=#define-va-nargs-switch-on-gt-one>define VA_NARGS_SWITCH_ON_GT_ONE</a></li><li><a href=#define-vararg-switch-on-gt-one-impl2>define VARARG_SWITCH_ON_GT_ONE_IMPL2</a></li><li><a href=#define-vararg-switch-on-gt-one-impl>define VARARG_SWITCH_ON_GT_ONE_IMPL</a></li><li><a href=#define-vararg-switch-on-gt-one>define VARARG_SWITCH_ON_GT_ONE</a></li><li><a href=#define-vararg-switch-on-gt-one-a-tester-1>define VARARG_SWITCH_ON_GT_ONE_A_TESTER_1</a></li><li><a href=#define-va-nargs-switch-on-gt-one-a-impl>define VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL</a></li><li><a href=#define-va-nargs-switch-on-gt-one-a>define VA_NARGS_SWITCH_ON_GT_ONE_A</a></li><li><a href=#define-vararg-switch-on-gt-one-a-impl2>define VARARG_SWITCH_ON_GT_ONE_A_IMPL2</a></li><li><a href=#define-vararg-switch-on-gt-one-a-impl>define VARARG_SWITCH_ON_GT_ONE_A_IMPL</a></li><li><a href=#define-vararg-switch-on-gt-one-a>define VARARG_SWITCH_ON_GT_ONE_A</a></li><li><a href=#define-vararg-switch-on-gt-one-abc-tester-1>define VARARG_SWITCH_ON_GT_ONE_ABC_TESTER_1</a></li><li><a href=#define-va-nargs-switch-on-gt-one-abc-impl>define VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL</a></li><li><a href=#define-va-nargs-switch-on-gt-one-abc>define VA_NARGS_SWITCH_ON_GT_ONE_ABC</a></li><li><a href=#define-vararg-switch-on-gt-one-abc-impl2>define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2</a></li><li><a href=#define-vararg-switch-on-gt-one-abc-impl>define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL</a></li><li><a href=#define-vararg-switch-on-gt-one-abc>define VARARG_SWITCH_ON_GT_ONE_ABC</a></li><li><a href=#define-vararg-switch-on-gt-two-abc-tester-2>define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_2</a></li><li><a href=#define-vararg-switch-on-gt-two-abc-tester-1>define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_1</a></li><li><a href=#define-va-nargs-switch-on-gt-two-abc-impl>define VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL</a></li><li><a href=#define-va-nargs-switch-on-gt-two-abc>define VA_NARGS_SWITCH_ON_GT_TWO_ABC</a></li><li><a href=#define-vararg-switch-on-gt-two-abc-impl2>define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2</a></li><li><a href=#define-vararg-switch-on-gt-two-abc-impl>define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL</a></li><li><a href=#define-vararg-switch-on-gt-two-abc>define VARARG_SWITCH_ON_GT_TWO_ABC</a></li><li><a href=#define-check-n>define CHECK_N</a></li><li><a href=#define-check>define CHECK</a></li><li><a href=#define-probe>define PROBE</a></li><li><a href=#define-defined-probe>define DEFINED_PROBE</a></li><li><a href=#define-defined-probe-proxy>define DEFINED_PROBE_PROXY</a></li><li><a href=#define-defined-probe-primitive>define DEFINED_PROBE_PRIMITIVE</a></li><li><a href=#define-defined-probe-combine>define DEFINED_PROBE_COMBINE_</a></li><li><a href=#define-defined>define DEFINED</a></li><li><a href=#define-if-defined>define IF_DEFINED</a></li><li><a href=#define-if-not-defined>define IF_NOT_DEFINED</a></li><li><a href=#define-if-else-defined>define IF_ELSE_DEFINED</a></li><li><a href=#define-token-defined>define TOKEN_DEFINED</a></li><li><a href=#define-if-token-defined>define IF_TOKEN_DEFINED</a></li><li><a href=#define-if-token-undefined>define IF_TOKEN_UNDEFINED</a></li><li><a href=#define-if-else-token-defined>define IF_ELSE_TOKEN_DEFINED</a></li><li><a href=#define-defined-module>define DEFINED_MODULE</a></li><li><a href=#define-defined-capability>define DEFINED_CAPABILITY</a></li><li><a href=#define-defined-function>define DEFINED_FUNCTION</a></li><li><a href=#define-defined-conditional-dependency>define DEFINED_CONDITIONAL_DEPENDENCY</a></li><li><a href=#define-pop-last>define POP_LAST</a></li><li><a href=#define-pop-last-1>define POP_LAST_1</a></li><li><a href=#define-pop-last-2>define POP_LAST_2</a></li><li><a href=#define-pop-last-3>define POP_LAST_3</a></li><li><a href=#define-pop-last-4>define POP_LAST_4</a></li><li><a href=#define-pop-last-5>define POP_LAST_5</a></li><li><a href=#define-pop-last-6>define POP_LAST_6</a></li><li><a href=#define-pop-last-7>define POP_LAST_7</a></li><li><a href=#define-pop-last-8>define POP_LAST_8</a></li><li><a href=#define-pop-last-9>define POP_LAST_9</a></li><li><a href=#define-pop-last-10>define POP_LAST_10</a></li><li><a href=#define-etc-etc>define etc_etc</a></li><li><a href=#define-last-arg-variadic>define LAST_ARG_VARIADIC</a></li><li><a href=#define-is-ellipsis>define IS_ELLIPSIS</a></li><li><a href=#define-strip-variadic-arg>define STRIP_VARIADIC_ARG</a></li><li><a href=#define-convert-variadic-arg>define CONVERT_VARIADIC_ARG</a></li><li><a href=#define-if-elseif-9>define IF_ELSEIF_9</a></li><li><a href=#define-if-elseif-7>define IF_ELSEIF_7</a></li><li><a href=#define-if-elseif-5>define IF_ELSEIF_5</a></li><li><a href=#define-if-elseif>define IF_ELSEIF</a></li><li><a href=#define-braced-init-list>define BRACED_INIT_LIST</a></li><li><a href=#define-make-static-vector>define MAKE_STATIC_VECTOR</a></li><li><a href=#define-make-static-set>define MAKE_STATIC_SET</a></li><li><a href=#define-call-with-silenced-stderr>define CALL_WITH_SILENCED_STDERR</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-fail>define FAIL</a></li><li><a href=#define-append-token>define APPEND_TOKEN</a></li><li><a href=#define-dummy>define DUMMY</a></li><li><a href=#define-dummyarg>define DUMMYARG</a></li><li><a href=#define-first-arg>define FIRST_ARG</a></li><li><a href=#define-remfirst>define REMFIRST</a></li><li><a href=#define-remfirst-i>define REMFIRST_I</a></li><li><a href=#define-apply>define APPLY</a></li><li><a href=#define-apply-i>define APPLY_I</a></li><li><a href=#define-strip-parens>define STRIP_PARENS</a></li><li><a href=#define-strip-parens-i>define STRIP_PARENS_I</a></li><li><a href=#define-eval-par>define EVAL_PAR</a></li><li><a href=#define-eval-par-i>define EVAL_PAR_I</a></li><li><a href=#define-test-arity>define TEST_ARITY</a></li><li><a href=#define-test-arity-i>define TEST_ARITY_I</a></li><li><a href=#define-maybe-strip-parens>define MAYBE_STRIP_PARENS</a></li><li><a href=#define-maybe-strip-parens-i>define MAYBE_STRIP_PARENS_I</a></li><li><a href=#define-maybe-strip-parens-1>define MAYBE_STRIP_PARENS_1</a></li><li><a href=#define-maybe-strip-parens-2>define MAYBE_STRIP_PARENS_2</a></li><li><a href=#define-maybe-strip-parens-2-i>define MAYBE_STRIP_PARENS_2_I</a></li><li><a href=#define-has-parens>define HAS_PARENS</a></li><li><a href=#define-has-parens-i>define HAS_PARENS_I</a></li><li><a href=#define-eval-hasp>define EVAL_HASP</a></li><li><a href=#define-eval-hasp-i>define EVAL_HASP_I</a></li><li><a href=#define-check-parens>define CHECK_PARENS</a></li><li><a href=#define-check-parens-i>define CHECK_PARENS_I</a></li><li><a href=#define-check-parens-1>define CHECK_PARENS_1</a></li><li><a href=#define-check-parens-2>define CHECK_PARENS_2</a></li><li><a href=#define-arg128>define _ARG128</a></li><li><a href=#define-has-comma>define HAS_COMMA</a></li><li><a href=#define-isempty>define ISEMPTY</a></li><li><a href=#define-isempty-i>define ISEMPTY_I</a></li><li><a href=#define-isempty-ii>define ISEMPTY_II</a></li><li><a href=#define-129ones>define _129ONES</a></li><li><a href=#define-insert-nonempty>define INSERT_NONEMPTY</a></li><li><a href=#define-insert-nonempty-i0>define INSERT_NONEMPTY_I0</a></li><li><a href=#define-insert-nonempty-i1>define INSERT_NONEMPTY_I1</a></li><li><a href=#define-pair-element0>define PAIR_ELEMENT0</a></li><li><a href=#define-pair-element0-i>define PAIR_ELEMENT0_I</a></li><li><a href=#define-pair-element1>define PAIR_ELEMENT1</a></li><li><a href=#define-pair-element1-i>define PAIR_ELEMENT1_I</a></li><li><a href=#define-void-void>define void_void</a></li><li><a href=#define-int-int>define int_int</a></li><li><a href=#define-float-float>define float_float</a></li><li><a href=#define-double-double>define double_double</a></li><li><a href=#define-bool-bool>define bool_bool</a></li><li><a href=#define-char-char>define char_char</a></li><li><a href=#define-string-string>define string_string</a></li><li><a href=#define-modelparameters-modelparameters>define ModelParameters_ModelParameters</a></li><li><a href=#define-is-type>define IS_TYPE</a></li><li><a href=#define-is-equal>define IS_EQUAL</a></li><li><a href=#define-if-equal>define IF_EQUAL</a></li><li><a href=#define-if-not-equal>define IF_NOT_EQUAL</a></li><li><a href=#define-if-else-equal>define IF_ELSE_EQUAL</a></li><li><a href=#define-empty-token-tester>define EMPTY_TOKEN_TESTER</a></li><li><a href=#define-is-empty>define IS_EMPTY</a></li><li><a href=#define-if-empty>define IF_EMPTY</a></li><li><a href=#define-if-not-empty>define IF_NOT_EMPTY</a></li><li><a href=#define-if-else-empty>define IF_ELSE_EMPTY</a></li><li><a href=#define-va-nargs-impl>define VA_NARGS_IMPL</a></li><li><a href=#define-va-nargs>define VA_NARGS</a></li><li><a href=#define-vararg-impl2>define VARARG_IMPL2</a></li><li><a href=#define-vararg-impl>define VARARG_IMPL</a></li><li><a href=#define-vararg>define VARARG</a></li><li><a href=#define-va-nargs-nested-impl>define VA_NARGS_NESTED_IMPL</a></li><li><a href=#define-va-nargs-nested>define VA_NARGS_NESTED</a></li><li><a href=#define-vararg-nested-impl2>define VARARG_NESTED_IMPL2</a></li><li><a href=#define-vararg-nested-impl>define VARARG_NESTED_IMPL</a></li><li><a href=#define-vararg-nested>define VARARG_NESTED</a></li><li><a href=#define-va-nargs-ab-impl>define VA_NARGS_AB_IMPL</a></li><li><a href=#define-va-nargs-ab>define VA_NARGS_AB</a></li><li><a href=#define-vararg-ab-impl2>define VARARG_AB_IMPL2</a></li><li><a href=#define-vararg-ab-impl>define VARARG_AB_IMPL</a></li><li><a href=#define-vararg-ab>define VARARG_AB</a></li><li><a href=#define-vararg-switch-on-gt-one-tester-1>define VARARG_SWITCH_ON_GT_ONE_TESTER_1</a></li><li><a href=#define-va-nargs-switch-on-gt-one-impl>define VA_NARGS_SWITCH_ON_GT_ONE_IMPL</a></li><li><a href=#define-va-nargs-switch-on-gt-one>define VA_NARGS_SWITCH_ON_GT_ONE</a></li><li><a href=#define-vararg-switch-on-gt-one-impl2>define VARARG_SWITCH_ON_GT_ONE_IMPL2</a></li><li><a href=#define-vararg-switch-on-gt-one-impl>define VARARG_SWITCH_ON_GT_ONE_IMPL</a></li><li><a href=#define-vararg-switch-on-gt-one>define VARARG_SWITCH_ON_GT_ONE</a></li><li><a href=#define-vararg-switch-on-gt-one-a-tester-1>define VARARG_SWITCH_ON_GT_ONE_A_TESTER_1</a></li><li><a href=#define-va-nargs-switch-on-gt-one-a-impl>define VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL</a></li><li><a href=#define-va-nargs-switch-on-gt-one-a>define VA_NARGS_SWITCH_ON_GT_ONE_A</a></li><li><a href=#define-vararg-switch-on-gt-one-a-impl2>define VARARG_SWITCH_ON_GT_ONE_A_IMPL2</a></li><li><a href=#define-vararg-switch-on-gt-one-a-impl>define VARARG_SWITCH_ON_GT_ONE_A_IMPL</a></li><li><a href=#define-vararg-switch-on-gt-one-a>define VARARG_SWITCH_ON_GT_ONE_A</a></li><li><a href=#define-vararg-switch-on-gt-one-abc-tester-1>define VARARG_SWITCH_ON_GT_ONE_ABC_TESTER_1</a></li><li><a href=#define-va-nargs-switch-on-gt-one-abc-impl>define VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL</a></li><li><a href=#define-va-nargs-switch-on-gt-one-abc>define VA_NARGS_SWITCH_ON_GT_ONE_ABC</a></li><li><a href=#define-vararg-switch-on-gt-one-abc-impl2>define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2</a></li><li><a href=#define-vararg-switch-on-gt-one-abc-impl>define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL</a></li><li><a href=#define-vararg-switch-on-gt-one-abc>define VARARG_SWITCH_ON_GT_ONE_ABC</a></li><li><a href=#define-vararg-switch-on-gt-two-abc-tester-2>define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_2</a></li><li><a href=#define-vararg-switch-on-gt-two-abc-tester-1>define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_1</a></li><li><a href=#define-va-nargs-switch-on-gt-two-abc-impl>define VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL</a></li><li><a href=#define-va-nargs-switch-on-gt-two-abc>define VA_NARGS_SWITCH_ON_GT_TWO_ABC</a></li><li><a href=#define-vararg-switch-on-gt-two-abc-impl2>define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2</a></li><li><a href=#define-vararg-switch-on-gt-two-abc-impl>define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL</a></li><li><a href=#define-vararg-switch-on-gt-two-abc>define VARARG_SWITCH_ON_GT_TWO_ABC</a></li><li><a href=#define-check-n>define CHECK_N</a></li><li><a href=#define-check>define CHECK</a></li><li><a href=#define-probe>define PROBE</a></li><li><a href=#define-defined-probe>define DEFINED_PROBE</a></li><li><a href=#define-defined-probe-proxy>define DEFINED_PROBE_PROXY</a></li><li><a href=#define-defined-probe-primitive>define DEFINED_PROBE_PRIMITIVE</a></li><li><a href=#define-defined-probe-combine>define DEFINED_PROBE_COMBINE_</a></li><li><a href=#define-defined>define DEFINED</a></li><li><a href=#define-if-defined>define IF_DEFINED</a></li><li><a href=#define-if-not-defined>define IF_NOT_DEFINED</a></li><li><a href=#define-if-else-defined>define IF_ELSE_DEFINED</a></li><li><a href=#define-token-defined>define TOKEN_DEFINED</a></li><li><a href=#define-if-token-defined>define IF_TOKEN_DEFINED</a></li><li><a href=#define-if-token-undefined>define IF_TOKEN_UNDEFINED</a></li><li><a href=#define-if-else-token-defined>define IF_ELSE_TOKEN_DEFINED</a></li><li><a href=#define-defined-module>define DEFINED_MODULE</a></li><li><a href=#define-defined-capability>define DEFINED_CAPABILITY</a></li><li><a href=#define-defined-function>define DEFINED_FUNCTION</a></li><li><a href=#define-defined-conditional-dependency>define DEFINED_CONDITIONAL_DEPENDENCY</a></li><li><a href=#define-pop-last>define POP_LAST</a></li><li><a href=#define-pop-last-1>define POP_LAST_1</a></li><li><a href=#define-pop-last-2>define POP_LAST_2</a></li><li><a href=#define-pop-last-3>define POP_LAST_3</a></li><li><a href=#define-pop-last-4>define POP_LAST_4</a></li><li><a href=#define-pop-last-5>define POP_LAST_5</a></li><li><a href=#define-pop-last-6>define POP_LAST_6</a></li><li><a href=#define-pop-last-7>define POP_LAST_7</a></li><li><a href=#define-pop-last-8>define POP_LAST_8</a></li><li><a href=#define-pop-last-9>define POP_LAST_9</a></li><li><a href=#define-pop-last-10>define POP_LAST_10</a></li><li><a href=#define-etc-etc>define etc_etc</a></li><li><a href=#define-last-arg-variadic>define LAST_ARG_VARIADIC</a></li><li><a href=#define-is-ellipsis>define IS_ELLIPSIS</a></li><li><a href=#define-strip-variadic-arg>define STRIP_VARIADIC_ARG</a></li><li><a href=#define-convert-variadic-arg>define CONVERT_VARIADIC_ARG</a></li><li><a href=#define-if-elseif-9>define IF_ELSEIF_9</a></li><li><a href=#define-if-elseif-7>define IF_ELSEIF_7</a></li><li><a href=#define-if-elseif-5>define IF_ELSEIF_5</a></li><li><a href=#define-if-elseif>define IF_ELSEIF</a></li><li><a href=#define-braced-init-list>define BRACED_INIT_LIST</a></li><li><a href=#define-make-static-vector>define MAKE_STATIC_VECTOR</a></li><li><a href=#define-make-static-set>define MAKE_STATIC_SET</a></li><li><a href=#define-call-with-silenced-stderr>define CALL_WITH_SILENCED_STDERR</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file Utils/util_macros.hpp</li></ol></nav><p class=lead></p><h1 id=file-utils-util-macros-hpp>file Utils/util_macros.hpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-fail>FAIL</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-append-token>APPEND_TOKEN</a></strong>(s, data, elem)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-dummy>DUMMY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-dummyarg>DUMMYARG</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-first-arg>FIRST_ARG</a></strong>(A1, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-remfirst>REMFIRST</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-remfirst-i>REMFIRST_I</a></strong>(A1, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-apply>APPLY</a></strong>(macro, args)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-apply-i>APPLY_I</a></strong>(macro, args)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-strip-parens>STRIP_PARENS</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-strip-parens-i>STRIP_PARENS_I</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-eval-par>EVAL_PAR</a></strong>(test, x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-eval-par-i>EVAL_PAR_I</a></strong>(test, x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-test-arity>TEST_ARITY</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-test-arity-i>TEST_ARITY_I</a></strong>(a, b, c, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens>MAYBE_STRIP_PARENS</a></strong>(cond, x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens-i>MAYBE_STRIP_PARENS_I</a></strong>(cond, x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens-1>MAYBE_STRIP_PARENS_1</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens-2>MAYBE_STRIP_PARENS_2</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens-2-i>MAYBE_STRIP_PARENS_2_I</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-has-parens>HAS_PARENS</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-has-parens-i>HAS_PARENS_I</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-eval-hasp>EVAL_HASP</a></strong>(test, x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-eval-hasp-i>EVAL_HASP_I</a></strong>(test, x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-check-parens>CHECK_PARENS</a></strong>(cond, x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-check-parens-i>CHECK_PARENS_I</a></strong>(cond, x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-check-parens-1>CHECK_PARENS_1</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-check-parens-2>CHECK_PARENS_2</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-arg128>_ARG128</a></strong>(_0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69, _70, _71, _72, _73, _74, _75, _76, _77, _78, _79, _80, _81, _82, _83, _84, _85, _86, _87, _88, _89, _90, _91, _92, _93, _94, _95, _96, _97, _98, _99, _100, _101, _102, _103, _104, _105, _106, _107, _108, _109, _110, _111, _112, _113, _114, _115, _116, _117, _118, _119, _120, _121, _122, _123, _124, _125, _126, _127, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-has-comma>HAS_COMMA</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-isempty>ISEMPTY</a></strong>(ARG)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-isempty-i>ISEMPTY_I</a></strong>(A)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-isempty-ii>ISEMPTY_II</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-129ones>_129ONES</a></strong>()</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-insert-nonempty>INSERT_NONEMPTY</a></strong>(ARG)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-insert-nonempty-i0>INSERT_NONEMPTY_I0</a></strong>(ARG)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-insert-nonempty-i1>INSERT_NONEMPTY_I1</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pair-element0>PAIR_ELEMENT0</a></strong>(TPLE)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pair-element0-i>PAIR_ELEMENT0_I</a></strong>(A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pair-element1>PAIR_ELEMENT1</a></strong>(TPLE)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pair-element1-i>PAIR_ELEMENT1_I</a></strong>(A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-void-void>void_void</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-int-int>int_int</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-float-float>float_float</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-double-double>double_double</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-bool-bool>bool_bool</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-char-char>char_char</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-string-string>string_string</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-modelparameters-modelparameters>ModelParameters_ModelParameters</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-is-type>IS_TYPE</a></strong>(COMPTYPE, TYPE)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-is-equal>IS_EQUAL</a></strong>(A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-equal>IF_EQUAL</a></strong>(A, B, C)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-not-equal>IF_NOT_EQUAL</a></strong>(A, B, C)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-else-equal>IF_ELSE_EQUAL</a></strong>(A, B, C, D)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-empty-token-tester>EMPTY_TOKEN_TESTER</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-is-empty>IS_EMPTY</a></strong>(A)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-empty>IF_EMPTY</a></strong>(A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-not-empty>IF_NOT_EMPTY</a></strong>(A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-else-empty>IF_ELSE_EMPTY</a></strong>(A, B, C)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-impl>VA_NARGS_IMPL</a></strong>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs>VA_NARGS</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-impl2>VARARG_IMPL2</a></strong>(base, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-impl>VARARG_IMPL</a></strong>(base, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg>VARARG</a></strong>(base, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-nested-impl>VA_NARGS_NESTED_IMPL</a></strong>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-nested>VA_NARGS_NESTED</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-nested-impl2>VARARG_NESTED_IMPL2</a></strong>(base, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-nested-impl>VARARG_NESTED_IMPL</a></strong>(base, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-nested>VARARG_NESTED</a></strong>(base, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-ab-impl>VA_NARGS_AB_IMPL</a></strong>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-ab>VA_NARGS_AB</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-ab-impl2>VARARG_AB_IMPL2</a></strong>(base, A, B, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-ab-impl>VARARG_AB_IMPL</a></strong>(base, A, B, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-ab>VARARG_AB</a></strong>(base, A, B, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-tester-1>VARARG_SWITCH_ON_GT_ONE_TESTER_1</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-impl>VA_NARGS_SWITCH_ON_GT_ONE_IMPL</a></strong>(_1, _2, _3, N, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one>VA_NARGS_SWITCH_ON_GT_ONE</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-impl2>VARARG_SWITCH_ON_GT_ONE_IMPL2</a></strong>(base, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-impl>VARARG_SWITCH_ON_GT_ONE_IMPL</a></strong>(base, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one>VARARG_SWITCH_ON_GT_ONE</a></strong>(base, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-a-tester-1>VARARG_SWITCH_ON_GT_ONE_A_TESTER_1</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-a-impl>VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL</a></strong>(_1, _2, _3, N, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-a>VA_NARGS_SWITCH_ON_GT_ONE_A</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-a-impl2>VARARG_SWITCH_ON_GT_ONE_A_IMPL2</a></strong>(base, A, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-a-impl>VARARG_SWITCH_ON_GT_ONE_A_IMPL</a></strong>(base, A, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-a>VARARG_SWITCH_ON_GT_ONE_A</a></strong>(base, A, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-abc-tester-1>VARARG_SWITCH_ON_GT_ONE_ABC_TESTER_1</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-abc-impl>VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL</a></strong>(_1, _2, _3, N, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-abc>VA_NARGS_SWITCH_ON_GT_ONE_ABC</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-abc-impl2>VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2</a></strong>(base, A, B, C, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-abc-impl>VARARG_SWITCH_ON_GT_ONE_ABC_IMPL</a></strong>(base, A, B, C, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-abc>VARARG_SWITCH_ON_GT_ONE_ABC</a></strong>(base, A, B, C, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc-tester-2>VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_2</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc-tester-1>VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_1</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-two-abc-impl>VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL</a></strong>(_1, _2, _3, _4, N, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-two-abc>VA_NARGS_SWITCH_ON_GT_TWO_ABC</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc-impl2>VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2</a></strong>(base, A, B, C, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc-impl>VARARG_SWITCH_ON_GT_TWO_ABC_IMPL</a></strong>(base, A, B, C, count, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc>VARARG_SWITCH_ON_GT_TWO_ABC</a></strong>(base, A, B, C, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-check-n>CHECK_N</a></strong>(x, n, &mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-check>CHECK</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-probe>PROBE</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined-probe>DEFINED_PROBE</a></strong>(NAME)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined-probe-proxy>DEFINED_PROBE_PROXY</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined-probe-primitive>DEFINED_PROBE_PRIMITIVE</a></strong>(x)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined-probe-combine>DEFINED_PROBE_COMBINE_</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined>DEFINED</a></strong>(NAME)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-defined>IF_DEFINED</a></strong>(NAME, ACTION)<br>Do ACTION if NAME is defined.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-not-defined>IF_NOT_DEFINED</a></strong>(NAME, ACTION)<br>Do ACTION if NAME is undefined.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-else-defined>IF_ELSE_DEFINED</a></strong>(NAME, IF, ELSE)<br>Do IF if NAME is defined, otherwise do ELSE.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-token-defined>TOKEN_DEFINED</a></strong>(A)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-token-defined>IF_TOKEN_DEFINED</a></strong>(A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-token-undefined>IF_TOKEN_UNDEFINED</a></strong>(A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-else-token-defined>IF_ELSE_TOKEN_DEFINED</a></strong>(A, B, C)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined-module>DEFINED_MODULE</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined-capability>DEFINED_CAPABILITY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined-function>DEFINED_FUNCTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-defined-conditional-dependency>DEFINED_CONDITIONAL_DEPENDENCY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last>POP_LAST</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-1>POP_LAST_1</a></strong>(x1)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-2>POP_LAST_2</a></strong>(x1, x2)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-3>POP_LAST_3</a></strong>(x1, x2, x3)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-4>POP_LAST_4</a></strong>(x1, x2, x3, x4)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-5>POP_LAST_5</a></strong>(x1, x2, x3, x4, x5)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-6>POP_LAST_6</a></strong>(x1, x2, x3, x4, x5, x6)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-7>POP_LAST_7</a></strong>(x1, x2, x3, x4, x5, x6, x7)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-8>POP_LAST_8</a></strong>(x1, x2, x3, x4, x5, x6, x7, x8)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-9>POP_LAST_9</a></strong>(x1, x2, x3, x4, x5, x6, x7, x8, x9)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-pop-last-10>POP_LAST_10</a></strong>(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-etc-etc>etc_etc</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-last-arg-variadic>LAST_ARG_VARIADIC</a></strong>(T)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-is-ellipsis>IS_ELLIPSIS</a></strong>(ELEM)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-strip-variadic-arg>STRIP_VARIADIC_ARG</a></strong>(T)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-convert-variadic-arg>CONVERT_VARIADIC_ARG</a></strong>(T)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-elseif-9>IF_ELSEIF_9</a></strong>(VAR1, _1, VAR2, _2, VAR3, _3, VAR4, _4, _5)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-elseif-7>IF_ELSEIF_7</a></strong>(VAR1, _1, VAR2, _2, VAR3, _3, _4)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-elseif-5>IF_ELSEIF_5</a></strong>(VAR1, _1, VAR2, _2, _3)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-if-elseif>IF_ELSEIF</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-braced-init-list>BRACED_INIT_LIST</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-make-static-vector>MAKE_STATIC_VECTOR</a></strong>(TYPE, NAME, TUPLE)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-make-static-set>MAKE_STATIC_SET</a></strong>(TYPE, NAME, TUPLE)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/util__macros_8hpp/#define-call-with-silenced-stderr>CALL_WITH_SILENCED_STDERR</a></strong>(FUNCTION_CALL)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</p><p><strong>Date</strong>:</p><ul><li>2013 Apr, Oct</li><li>2014 Mar</li></ul><p>General small utility macros.</p><hr><p>Authors:</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-fail>define FAIL <a href=#define-fail class=anchor aria-hidden=true>#</a></h3><pre><code>#define FAIL(
+    x
+)
+static_assert(false,&quot;GAMBIT precompiler error: &quot; x);
+</code></pre><h3 id=define-append-token>define APPEND_TOKEN <a href=#define-append-token class=anchor aria-hidden=true>#</a></h3><pre><code>#define APPEND_TOKEN(
+    s,
+    data,
+    elem
+)
+CAT(elem,data)
+</code></pre><h3 id=define-dummy>define DUMMY <a href=#define-dummy class=anchor aria-hidden=true>#</a></h3><pre><code>#define DUMMY 
+</code></pre><h3 id=define-dummyarg>define DUMMYARG <a href=#define-dummyarg class=anchor aria-hidden=true>#</a></h3><pre><code>#define DUMMYARG(
+    ...
+)
+
+</code></pre><h3 id=define-first-arg>define FIRST_ARG <a href=#define-first-arg class=anchor aria-hidden=true>#</a></h3><pre><code>#define FIRST_ARG(
+    A1,
+    ...
+)
+A1
+</code></pre><h3 id=define-remfirst>define REMFIRST <a href=#define-remfirst class=anchor aria-hidden=true>#</a></h3><pre><code>#define REMFIRST(
+    ...
+)
+REMFIRST_I(__VA_ARGS__)
+</code></pre><h3 id=define-remfirst-i>define REMFIRST_I <a href=#define-remfirst-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define REMFIRST_I(
+    A1,
+    ...
+)
+(__VA_ARGS__)
+</code></pre><h3 id=define-apply>define APPLY <a href=#define-apply class=anchor aria-hidden=true>#</a></h3><pre><code>#define APPLY(
+    macro,
+    args
+)
+APPLY_I(macro, args)
+</code></pre><h3 id=define-apply-i>define APPLY_I <a href=#define-apply-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define APPLY_I(
+    macro,
+    args
+)
+macro args
+</code></pre><h3 id=define-strip-parens>define STRIP_PARENS <a href=#define-strip-parens class=anchor aria-hidden=true>#</a></h3><pre><code>#define STRIP_PARENS(
+    x
+)
+EVAL_PAR((STRIP_PARENS_I x), x)
+</code></pre><h3 id=define-strip-parens-i>define STRIP_PARENS_I <a href=#define-strip-parens-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define STRIP_PARENS_I(
+    ...
+)
+1,1
+</code></pre><h3 id=define-eval-par>define EVAL_PAR <a href=#define-eval-par class=anchor aria-hidden=true>#</a></h3><pre><code>#define EVAL_PAR(
+    test,
+    x
+)
+EVAL_PAR_I(test, x)
+</code></pre><h3 id=define-eval-par-i>define EVAL_PAR_I <a href=#define-eval-par-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define EVAL_PAR_I(
+    test,
+    x
+)
+MAYBE_STRIP_PARENS(TEST_ARITY test, x)
+</code></pre><h3 id=define-test-arity>define TEST_ARITY <a href=#define-test-arity class=anchor aria-hidden=true>#</a></h3><pre><code>#define TEST_ARITY(
+    ...
+)
+APPLY(TEST_ARITY_I, (__VA_ARGS__, 2, 1, 0))
+</code></pre><h3 id=define-test-arity-i>define TEST_ARITY_I <a href=#define-test-arity-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define TEST_ARITY_I(
+    a,
+    b,
+    c,
+    ...
+)
+c
+</code></pre><h3 id=define-maybe-strip-parens>define MAYBE_STRIP_PARENS <a href=#define-maybe-strip-parens class=anchor aria-hidden=true>#</a></h3><pre><code>#define MAYBE_STRIP_PARENS(
+    cond,
+    x
+)
+MAYBE_STRIP_PARENS_I(cond, x)
+</code></pre><h3 id=define-maybe-strip-parens-i>define MAYBE_STRIP_PARENS_I <a href=#define-maybe-strip-parens-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define MAYBE_STRIP_PARENS_I(
+    cond,
+    x
+)
+CAT(MAYBE_STRIP_PARENS_, cond)(x)
+</code></pre><h3 id=define-maybe-strip-parens-1>define MAYBE_STRIP_PARENS_1 <a href=#define-maybe-strip-parens-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define MAYBE_STRIP_PARENS_1(
+    x
+)
+x
+</code></pre><h3 id=define-maybe-strip-parens-2>define MAYBE_STRIP_PARENS_2 <a href=#define-maybe-strip-parens-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define MAYBE_STRIP_PARENS_2(
+    x
+)
+APPLY(MAYBE_STRIP_PARENS_2_I, x)
+</code></pre><h3 id=define-maybe-strip-parens-2-i>define MAYBE_STRIP_PARENS_2_I <a href=#define-maybe-strip-parens-2-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define MAYBE_STRIP_PARENS_2_I(
+    ...
+)
+__VA_ARGS__
+</code></pre><h3 id=define-has-parens>define HAS_PARENS <a href=#define-has-parens class=anchor aria-hidden=true>#</a></h3><pre><code>#define HAS_PARENS(
+    x
+)
+EVAL_HASP((HAS_PARENS_I x), x)
+</code></pre><h3 id=define-has-parens-i>define HAS_PARENS_I <a href=#define-has-parens-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define HAS_PARENS_I(
+    ...
+)
+1,1
+</code></pre><h3 id=define-eval-hasp>define EVAL_HASP <a href=#define-eval-hasp class=anchor aria-hidden=true>#</a></h3><pre><code>#define EVAL_HASP(
+    test,
+    x
+)
+EVAL_HASP_I(test, x)
+</code></pre><h3 id=define-eval-hasp-i>define EVAL_HASP_I <a href=#define-eval-hasp-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define EVAL_HASP_I(
+    test,
+    x
+)
+CHECK_PARENS(TEST_ARITY test, x)
+</code></pre><h3 id=define-check-parens>define CHECK_PARENS <a href=#define-check-parens class=anchor aria-hidden=true>#</a></h3><pre><code>#define CHECK_PARENS(
+    cond,
+    x
+)
+CHECK_PARENS_I(cond, x)
+</code></pre><h3 id=define-check-parens-i>define CHECK_PARENS_I <a href=#define-check-parens-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define CHECK_PARENS_I(
+    cond,
+    x
+)
+CAT(CHECK_PARENS_, cond)(x)
+</code></pre><h3 id=define-check-parens-1>define CHECK_PARENS_1 <a href=#define-check-parens-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CHECK_PARENS_1(
+    x
+)
+0
+</code></pre><h3 id=define-check-parens-2>define CHECK_PARENS_2 <a href=#define-check-parens-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define CHECK_PARENS_2(
+    x
+)
+1
+</code></pre><h3 id=define-arg128>define _ARG128 <a href=#define-arg128 class=anchor aria-hidden=true>#</a></h3><pre><code>#define _ARG128(
+    _0,
+    _1,
+    _2,
+    _3,
+    _4,
+    _5,
+    _6,
+    _7,
+    _8,
+    _9,
+    _10,
+    _11,
+    _12,
+    _13,
+    _14,
+    _15,
+    _16,
+    _17,
+    _18,
+    _19,
+    _20,
+    _21,
+    _22,
+    _23,
+    _24,
+    _25,
+    _26,
+    _27,
+    _28,
+    _29,
+    _30,
+    _31,
+    _32,
+    _33,
+    _34,
+    _35,
+    _36,
+    _37,
+    _38,
+    _39,
+    _40,
+    _41,
+    _42,
+    _43,
+    _44,
+    _45,
+    _46,
+    _47,
+    _48,
+    _49,
+    _50,
+    _51,
+    _52,
+    _53,
+    _54,
+    _55,
+    _56,
+    _57,
+    _58,
+    _59,
+    _60,
+    _61,
+    _62,
+    _63,
+    _64,
+    _65,
+    _66,
+    _67,
+    _68,
+    _69,
+    _70,
+    _71,
+    _72,
+    _73,
+    _74,
+    _75,
+    _76,
+    _77,
+    _78,
+    _79,
+    _80,
+    _81,
+    _82,
+    _83,
+    _84,
+    _85,
+    _86,
+    _87,
+    _88,
+    _89,
+    _90,
+    _91,
+    _92,
+    _93,
+    _94,
+    _95,
+    _96,
+    _97,
+    _98,
+    _99,
+    _100,
+    _101,
+    _102,
+    _103,
+    _104,
+    _105,
+    _106,
+    _107,
+    _108,
+    _109,
+    _110,
+    _111,
+    _112,
+    _113,
+    _114,
+    _115,
+    _116,
+    _117,
+    _118,
+    _119,
+    _120,
+    _121,
+    _122,
+    _123,
+    _124,
+    _125,
+    _126,
+    _127,
+    ...
+)
+_127
+</code></pre><h3 id=define-has-comma>define HAS_COMMA <a href=#define-has-comma class=anchor aria-hidden=true>#</a></h3><pre><code>#define HAS_COMMA(
+    ...
+)
+_ARG128(__VA_ARGS__, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                       \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+</code></pre><h3 id=define-isempty>define ISEMPTY <a href=#define-isempty class=anchor aria-hidden=true>#</a></h3><pre><code>#define ISEMPTY(
+    ARG
+)
+ISEMPTY_I(_129ONES STRIP_PARENS(ARG) ())
+</code></pre><h3 id=define-isempty-i>define ISEMPTY_I <a href=#define-isempty-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define ISEMPTY_I(
+    A
+)
+    ISEMPTY_II(A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+</code></pre><h3 id=define-isempty-ii>define ISEMPTY_II <a href=#define-isempty-ii class=anchor aria-hidden=true>#</a></h3><pre><code>#define ISEMPTY_II(
+    ...
+)
+_ARG128(__VA_ARGS__)
+</code></pre><h3 id=define-129ones>define _129ONES <a href=#define-129ones class=anchor aria-hidden=true>#</a></h3><pre><code>#define _129ONES(
+    
+)
+    1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, \
+    1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,\
+    1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,\
+    1,1,1,1,1,1,1,1,1,1,1,1
+</code></pre><h3 id=define-insert-nonempty>define INSERT_NONEMPTY <a href=#define-insert-nonempty class=anchor aria-hidden=true>#</a></h3><pre><code>#define INSERT_NONEMPTY(
+    ARG
+)
+CAT(INSERT_NONEMPTY_I,ISEMPTY(ARG))(ARG)
+</code></pre><h3 id=define-insert-nonempty-i0>define INSERT_NONEMPTY_I0 <a href=#define-insert-nonempty-i0 class=anchor aria-hidden=true>#</a></h3><pre><code>#define INSERT_NONEMPTY_I0(
+    ARG
+)
+,STRIP_PARENS(ARG)
+</code></pre><h3 id=define-insert-nonempty-i1>define INSERT_NONEMPTY_I1 <a href=#define-insert-nonempty-i1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define INSERT_NONEMPTY_I1(
+    ...
+)
+DUMMYARG(__VA_ARGS__)
+</code></pre><h3 id=define-pair-element0>define PAIR_ELEMENT0 <a href=#define-pair-element0 class=anchor aria-hidden=true>#</a></h3><pre><code>#define PAIR_ELEMENT0(
+    TPLE
+)
+PAIR_ELEMENT0_I TPLE
+</code></pre><h3 id=define-pair-element0-i>define PAIR_ELEMENT0_I <a href=#define-pair-element0-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define PAIR_ELEMENT0_I(
+    A,
+    B
+)
+A
+</code></pre><h3 id=define-pair-element1>define PAIR_ELEMENT1 <a href=#define-pair-element1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define PAIR_ELEMENT1(
+    TPLE
+)
+PAIR_ELEMENT1_I TPLE
+</code></pre><h3 id=define-pair-element1-i>define PAIR_ELEMENT1_I <a href=#define-pair-element1-i class=anchor aria-hidden=true>#</a></h3><pre><code>#define PAIR_ELEMENT1_I(
+    A,
+    B
+)
+B
+</code></pre><h3 id=define-void-void>define void_void <a href=#define-void-void class=anchor aria-hidden=true>#</a></h3><pre><code>#define void_void 1)(1
+</code></pre><h3 id=define-int-int>define int_int <a href=#define-int-int class=anchor aria-hidden=true>#</a></h3><pre><code>#define int_int 1)(1
+</code></pre><h3 id=define-float-float>define float_float <a href=#define-float-float class=anchor aria-hidden=true>#</a></h3><pre><code>#define float_float 1)(1
+</code></pre><h3 id=define-double-double>define double_double <a href=#define-double-double class=anchor aria-hidden=true>#</a></h3><pre><code>#define double_double 1)(1
+</code></pre><h3 id=define-bool-bool>define bool_bool <a href=#define-bool-bool class=anchor aria-hidden=true>#</a></h3><pre><code>#define bool_bool 1)(1
+</code></pre><h3 id=define-char-char>define char_char <a href=#define-char-char class=anchor aria-hidden=true>#</a></h3><pre><code>#define char_char 1)(1
+</code></pre><h3 id=define-string-string>define string_string <a href=#define-string-string class=anchor aria-hidden=true>#</a></h3><pre><code>#define string_string 1)(1
+</code></pre><h3 id=define-modelparameters-modelparameters>define ModelParameters_ModelParameters <a href=#define-modelparameters-modelparameters class=anchor aria-hidden=true>#</a></h3><pre><code>#define ModelParameters_ModelParameters 1)(1
+</code></pre><h3 id=define-is-type>define IS_TYPE <a href=#define-is-type class=anchor aria-hidden=true>#</a></h3><pre><code>#define IS_TYPE(
+    COMPTYPE,
+    TYPE
+)
+BOOST_PP_EQUAL(BOOST_PP_SEQ_SIZE((CAT_3(COMPTYPE,_,TYPE))),2)
+</code></pre><h3 id=define-is-equal>define IS_EQUAL <a href=#define-is-equal class=anchor aria-hidden=true>#</a></h3><pre><code>#define IS_EQUAL(
+    A,
+    B
+)
+IS_TYPE(A,B)
+</code></pre><h3 id=define-if-equal>define IF_EQUAL <a href=#define-if-equal class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_EQUAL(
+    A,
+    B,
+    C
+)
+BOOST_PP_IIF(IS_EQUAL(A,B),C,)
+</code></pre><h3 id=define-if-not-equal>define IF_NOT_EQUAL <a href=#define-if-not-equal class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_NOT_EQUAL(
+    A,
+    B,
+    C
+)
+BOOST_PP_IIF(IS_EQUAL(A,B), ,C)
+</code></pre><h3 id=define-if-else-equal>define IF_ELSE_EQUAL <a href=#define-if-else-equal class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_ELSE_EQUAL(
+    A,
+    B,
+    C,
+    D
+)
+BOOST_PP_IIF(IS_EQUAL(A,B),C,D)
+</code></pre><h3 id=define-empty-token-tester>define EMPTY_TOKEN_TESTER <a href=#define-empty-token-tester class=anchor aria-hidden=true>#</a></h3><pre><code>#define EMPTY_TOKEN_TESTER 1)(1
+</code></pre><h3 id=define-is-empty>define IS_EMPTY <a href=#define-is-empty class=anchor aria-hidden=true>#</a></h3><pre><code>#define IS_EMPTY(
+    A
+)
+IS_EQUAL(CAT(A,EMPTY),TOKEN_TESTER)
+</code></pre><h3 id=define-if-empty>define IF_EMPTY <a href=#define-if-empty class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_EMPTY(
+    A,
+    B
+)
+BOOST_PP_IIF(IS_EMPTY(A),B,)
+</code></pre><h3 id=define-if-not-empty>define IF_NOT_EMPTY <a href=#define-if-not-empty class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_NOT_EMPTY(
+    A,
+    B
+)
+BOOST_PP_IIF(IS_EMPTY(A), ,B)
+</code></pre><h3 id=define-if-else-empty>define IF_ELSE_EMPTY <a href=#define-if-else-empty class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_ELSE_EMPTY(
+    A,
+    B,
+    C
+)
+BOOST_PP_IIF(IS_EMPTY(A),B,C)
+</code></pre><h3 id=define-va-nargs-impl>define VA_NARGS_IMPL <a href=#define-va-nargs-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_IMPL(
+    _1,
+    _2,
+    _3,
+    _4,
+    _5,
+    _6,
+    _7,
+    _8,
+    _9,
+    _10,
+    _11,
+    N,
+    ...
+)
+N
+</code></pre><h3 id=define-va-nargs>define VA_NARGS <a href=#define-va-nargs class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS(
+    ...
+)
+VA_NARGS_IMPL(X,__VA_ARGS__, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+</code></pre><h3 id=define-vararg-impl2>define VARARG_IMPL2 <a href=#define-vararg-impl2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_IMPL2(
+    base,
+    count,
+    ...
+)
+CAT_3(base,_,count)(__VA_ARGS__)
+</code></pre><h3 id=define-vararg-impl>define VARARG_IMPL <a href=#define-vararg-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_IMPL(
+    base,
+    count,
+    ...
+)
+VARARG_IMPL2(base, count, __VA_ARGS__)
+</code></pre><h3 id=define-vararg>define VARARG <a href=#define-vararg class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG(
+    base,
+    ...
+)
+VARARG_IMPL(base, VA_NARGS(__VA_ARGS__), __VA_ARGS__)
+</code></pre><h3 id=define-va-nargs-nested-impl>define VA_NARGS_NESTED_IMPL <a href=#define-va-nargs-nested-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_NESTED_IMPL(
+    _1,
+    _2,
+    _3,
+    _4,
+    _5,
+    _6,
+    _7,
+    _8,
+    _9,
+    _10,
+    _11,
+    N,
+    ...
+)
+N
+</code></pre><h3 id=define-va-nargs-nested>define VA_NARGS_NESTED <a href=#define-va-nargs-nested class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_NESTED(
+    ...
+)
+VA_NARGS_NESTED_IMPL(X,__VA_ARGS__, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+</code></pre><h3 id=define-vararg-nested-impl2>define VARARG_NESTED_IMPL2 <a href=#define-vararg-nested-impl2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_NESTED_IMPL2(
+    base,
+    count,
+    ...
+)
+CAT_3(base,_,count)(__VA_ARGS__)
+</code></pre><h3 id=define-vararg-nested-impl>define VARARG_NESTED_IMPL <a href=#define-vararg-nested-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_NESTED_IMPL(
+    base,
+    count,
+    ...
+)
+VARARG_NESTED_IMPL2(base, count, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-nested>define VARARG_NESTED <a href=#define-vararg-nested class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_NESTED(
+    base,
+    ...
+)
+VARARG_NESTED_IMPL(base, VA_NARGS_NESTED(__VA_ARGS__), __VA_ARGS__)
+</code></pre><h3 id=define-va-nargs-ab-impl>define VA_NARGS_AB_IMPL <a href=#define-va-nargs-ab-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_AB_IMPL(
+    _1,
+    _2,
+    _3,
+    _4,
+    _5,
+    _6,
+    _7,
+    _8,
+    _9,
+    _10,
+    _11,
+    N,
+    ...
+)
+N
+</code></pre><h3 id=define-va-nargs-ab>define VA_NARGS_AB <a href=#define-va-nargs-ab class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_AB(
+    ...
+)
+VA_NARGS_AB_IMPL(X,__VA_ARGS__, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+</code></pre><h3 id=define-vararg-ab-impl2>define VARARG_AB_IMPL2 <a href=#define-vararg-ab-impl2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_AB_IMPL2(
+    base,
+    A,
+    B,
+    count,
+    ...
+)
+CAT_3(base,_,count)(A, B, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-ab-impl>define VARARG_AB_IMPL <a href=#define-vararg-ab-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_AB_IMPL(
+    base,
+    A,
+    B,
+    count,
+    ...
+)
+VARARG_AB_IMPL2(base, A, B, count, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-ab>define VARARG_AB <a href=#define-vararg-ab class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_AB(
+    base,
+    A,
+    B,
+    ...
+)
+VARARG_AB_IMPL(base, A, B, VA_NARGS_AB(__VA_ARGS__), __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-tester-1>define VARARG_SWITCH_ON_GT_ONE_TESTER_1 <a href=#define-vararg-switch-on-gt-one-tester-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_TESTER_1 1)(1
+</code></pre><h3 id=define-va-nargs-switch-on-gt-one-impl>define VA_NARGS_SWITCH_ON_GT_ONE_IMPL <a href=#define-va-nargs-switch-on-gt-one-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_SWITCH_ON_GT_ONE_IMPL(
+    _1,
+    _2,
+    _3,
+    N,
+    ...
+)
+IF_ELSE_EQUAL(VARARG_SWITCH_ON_GT_ONE_TESTER,N,N,MORE)
+</code></pre><h3 id=define-va-nargs-switch-on-gt-one>define VA_NARGS_SWITCH_ON_GT_ONE <a href=#define-va-nargs-switch-on-gt-one class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_SWITCH_ON_GT_ONE(
+    ...
+)
+VA_NARGS_SWITCH_ON_GT_ONE_IMPL(X,__VA_ARGS__, 2, 1, 0)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-impl2>define VARARG_SWITCH_ON_GT_ONE_IMPL2 <a href=#define-vararg-switch-on-gt-one-impl2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_IMPL2(
+    base,
+    count,
+    ...
+)
+CAT_3(base,_,count)(__VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-impl>define VARARG_SWITCH_ON_GT_ONE_IMPL <a href=#define-vararg-switch-on-gt-one-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_IMPL(
+    base,
+    count,
+    ...
+)
+VARARG_SWITCH_ON_GT_ONE_IMPL2(base, count, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one>define VARARG_SWITCH_ON_GT_ONE <a href=#define-vararg-switch-on-gt-one class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE(
+    base,
+    ...
+)
+VARARG_SWITCH_ON_GT_ONE_IMPL(base, VA_NARGS_SWITCH_ON_GT_ONE(__VA_ARGS__), __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-a-tester-1>define VARARG_SWITCH_ON_GT_ONE_A_TESTER_1 <a href=#define-vararg-switch-on-gt-one-a-tester-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_A_TESTER_1 1)(1
+</code></pre><h3 id=define-va-nargs-switch-on-gt-one-a-impl>define VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL <a href=#define-va-nargs-switch-on-gt-one-a-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL(
+    _1,
+    _2,
+    _3,
+    N,
+    ...
+)
+IF_ELSE_EQUAL(VARARG_SWITCH_ON_GT_ONE_A_TESTER,N,N,MORE)
+</code></pre><h3 id=define-va-nargs-switch-on-gt-one-a>define VA_NARGS_SWITCH_ON_GT_ONE_A <a href=#define-va-nargs-switch-on-gt-one-a class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_SWITCH_ON_GT_ONE_A(
+    ...
+)
+VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL(X,__VA_ARGS__, 2, 1, 0)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-a-impl2>define VARARG_SWITCH_ON_GT_ONE_A_IMPL2 <a href=#define-vararg-switch-on-gt-one-a-impl2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_A_IMPL2(
+    base,
+    A,
+    count,
+    ...
+)
+CAT_3(base,_,count)(A, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-a-impl>define VARARG_SWITCH_ON_GT_ONE_A_IMPL <a href=#define-vararg-switch-on-gt-one-a-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_A_IMPL(
+    base,
+    A,
+    count,
+    ...
+)
+VARARG_SWITCH_ON_GT_ONE_A_IMPL2(base, A, count, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-a>define VARARG_SWITCH_ON_GT_ONE_A <a href=#define-vararg-switch-on-gt-one-a class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_A(
+    base,
+    A,
+    ...
+)
+VARARG_SWITCH_ON_GT_ONE_A_IMPL(base, A, VA_NARGS_SWITCH_ON_GT_ONE_A(__VA_ARGS__), __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-abc-tester-1>define VARARG_SWITCH_ON_GT_ONE_ABC_TESTER_1 <a href=#define-vararg-switch-on-gt-one-abc-tester-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_ABC_TESTER_1 1)(1
+</code></pre><h3 id=define-va-nargs-switch-on-gt-one-abc-impl>define VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL <a href=#define-va-nargs-switch-on-gt-one-abc-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL(
+    _1,
+    _2,
+    _3,
+    N,
+    ...
+)
+IF_ELSE_EQUAL(VARARG_SWITCH_ON_GT_ONE_ABC_TESTER,N,N,MORE)
+</code></pre><h3 id=define-va-nargs-switch-on-gt-one-abc>define VA_NARGS_SWITCH_ON_GT_ONE_ABC <a href=#define-va-nargs-switch-on-gt-one-abc class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_SWITCH_ON_GT_ONE_ABC(
+    ...
+)
+VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL(X,__VA_ARGS__, 2, 1, 0)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-abc-impl2>define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2 <a href=#define-vararg-switch-on-gt-one-abc-impl2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2(
+    base,
+    A,
+    B,
+    C,
+    count,
+    ...
+)
+CAT_3(base,_,count)(A, B, C, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-abc-impl>define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL <a href=#define-vararg-switch-on-gt-one-abc-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL(
+    base,
+    A,
+    B,
+    C,
+    count,
+    ...
+)
+VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2(base, A, B, C, count, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-one-abc>define VARARG_SWITCH_ON_GT_ONE_ABC <a href=#define-vararg-switch-on-gt-one-abc class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_ONE_ABC(
+    base,
+    A,
+    B,
+    C,
+    ...
+)
+VARARG_SWITCH_ON_GT_ONE_ABC_IMPL(base, A, B, C, VA_NARGS_SWITCH_ON_GT_ONE_ABC(__VA_ARGS__), __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-two-abc-tester-2>define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_2 <a href=#define-vararg-switch-on-gt-two-abc-tester-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_2 1)(1
+</code></pre><h3 id=define-vararg-switch-on-gt-two-abc-tester-1>define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_1 <a href=#define-vararg-switch-on-gt-two-abc-tester-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_1 1)(1
+</code></pre><h3 id=define-va-nargs-switch-on-gt-two-abc-impl>define VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL <a href=#define-va-nargs-switch-on-gt-two-abc-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL(
+    _1,
+    _2,
+    _3,
+    _4,
+    N,
+    ...
+)
+                                                                                 IF_ELSE_EQUAL(VARARG_SWITCH_ON_GT_TWO_ABC_TESTER,\
+                                                                                 BOOST_PP_TUPLE_ELEM(0,(STRIP_PARENS(N))),N,MORE)
+</code></pre><h3 id=define-va-nargs-switch-on-gt-two-abc>define VA_NARGS_SWITCH_ON_GT_TWO_ABC <a href=#define-va-nargs-switch-on-gt-two-abc class=anchor aria-hidden=true>#</a></h3><pre><code>#define VA_NARGS_SWITCH_ON_GT_TWO_ABC(
+    ...
+)
+VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL(X,__VA_ARGS__, 3, 2, 1, 0)
+</code></pre><h3 id=define-vararg-switch-on-gt-two-abc-impl2>define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2 <a href=#define-vararg-switch-on-gt-two-abc-impl2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2(
+    base,
+    A,
+    B,
+    C,
+    count,
+    ...
+)
+CAT_3(base,_,count)(A, B, C, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-two-abc-impl>define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL <a href=#define-vararg-switch-on-gt-two-abc-impl class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL(
+    base,
+    A,
+    B,
+    C,
+    count,
+    ...
+)
+VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2(base, A, B, C, count, __VA_ARGS__)
+</code></pre><h3 id=define-vararg-switch-on-gt-two-abc>define VARARG_SWITCH_ON_GT_TWO_ABC <a href=#define-vararg-switch-on-gt-two-abc class=anchor aria-hidden=true>#</a></h3><pre><code>#define VARARG_SWITCH_ON_GT_TWO_ABC(
+    base,
+    A,
+    B,
+    C,
+    ...
+)
+VARARG_SWITCH_ON_GT_TWO_ABC_IMPL(base, A, B, C, VA_NARGS_SWITCH_ON_GT_TWO_ABC(__VA_ARGS__), __VA_ARGS__)
+</code></pre><h3 id=define-check-n>define CHECK_N <a href=#define-check-n class=anchor aria-hidden=true>#</a></h3><pre><code>#define CHECK_N(
+    x,
+    n,
+    ...
+)
+n
+</code></pre><h3 id=define-check>define CHECK <a href=#define-check class=anchor aria-hidden=true>#</a></h3><pre><code>#define CHECK(
+    ...
+)
+CHECK_N(__VA_ARGS__, 0, 0)
+</code></pre><h3 id=define-probe>define PROBE <a href=#define-probe class=anchor aria-hidden=true>#</a></h3><pre><code>#define PROBE(
+    x
+)
+x, 1
+</code></pre><h3 id=define-defined-probe>define DEFINED_PROBE <a href=#define-defined-probe class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED_PROBE(
+    NAME
+)
+DEFINED_PROBE_PROXY( DEFINED_##NAME )
+</code></pre><h3 id=define-defined-probe-proxy>define DEFINED_PROBE_PROXY <a href=#define-defined-probe-proxy class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED_PROBE_PROXY(
+    ...
+)
+DEFINED_PROBE_PRIMITIVE(__VA_ARGS__)
+</code></pre><h3 id=define-defined-probe-primitive>define DEFINED_PROBE_PRIMITIVE <a href=#define-defined-probe-primitive class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED_PROBE_PRIMITIVE(
+    x
+)
+DEFINED_PROBE_COMBINE_ x
+</code></pre><h3 id=define-defined-probe-combine>define DEFINED_PROBE_COMBINE_ <a href=#define-defined-probe-combine class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED_PROBE_COMBINE_(
+    ...
+)
+PROBE(X)
+</code></pre><h3 id=define-defined>define DEFINED <a href=#define-defined class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED(
+    NAME
+)
+CHECK(DEFINED_PROBE(NAME))
+</code></pre><p>Returns 1 or 0 depending on whether a corresponding DEFINED_<name> () macro has been</p><pre><code class=language-cpp>#defined 
+</code></pre><p>or not.</p><h3 id=define-if-defined>define IF_DEFINED <a href=#define-if-defined class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_DEFINED(
+    NAME,
+    ACTION
+)
+BOOST_PP_IF(DEFINED(NAME), ACTION, )
+</code></pre><p>Do ACTION if NAME is defined.</p><h3 id=define-if-not-defined>define IF_NOT_DEFINED <a href=#define-if-not-defined class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_NOT_DEFINED(
+    NAME,
+    ACTION
+)
+BOOST_PP_IF(DEFINED(NAME), , ACTION)
+</code></pre><p>Do ACTION if NAME is undefined.</p><h3 id=define-if-else-defined>define IF_ELSE_DEFINED <a href=#define-if-else-defined class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_ELSE_DEFINED(
+    NAME,
+    IF,
+    ELSE
+)
+BOOST_PP_IF(DEFINED(NAME), IF, ELSE)
+</code></pre><p>Do IF if NAME is defined, otherwise do ELSE.</p><h3 id=define-token-defined>define TOKEN_DEFINED <a href=#define-token-defined class=anchor aria-hidden=true>#</a></h3><pre><code>#define TOKEN_DEFINED(
+    A
+)
+BOOST_PP_NOT(DEFINED(A))
+</code></pre><h3 id=define-if-token-defined>define IF_TOKEN_DEFINED <a href=#define-if-token-defined class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_TOKEN_DEFINED(
+    A,
+    B
+)
+BOOST_PP_IIF(DEFINED(A),BOOST_PP_EMPTY(),B)
+</code></pre><h3 id=define-if-token-undefined>define IF_TOKEN_UNDEFINED <a href=#define-if-token-undefined class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_TOKEN_UNDEFINED(
+    A,
+    B
+)
+BOOST_PP_IIF(DEFINED(A),B,BOOST_PP_EMPTY())
+</code></pre><h3 id=define-if-else-token-defined>define IF_ELSE_TOKEN_DEFINED <a href=#define-if-else-token-defined class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_ELSE_TOKEN_DEFINED(
+    A,
+    B,
+    C
+)
+BOOST_PP_IIF(DEFINED(A),C,B)
+</code></pre><h3 id=define-defined-module>define DEFINED_MODULE <a href=#define-defined-module class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED_MODULE ()
+</code></pre><h3 id=define-defined-capability>define DEFINED_CAPABILITY <a href=#define-defined-capability class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED_CAPABILITY ()
+</code></pre><h3 id=define-defined-function>define DEFINED_FUNCTION <a href=#define-defined-function class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED_FUNCTION ()
+</code></pre><h3 id=define-defined-conditional-dependency>define DEFINED_CONDITIONAL_DEPENDENCY <a href=#define-defined-conditional-dependency class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINED_CONDITIONAL_DEPENDENCY ()
+</code></pre><h3 id=define-pop-last>define POP_LAST <a href=#define-pop-last class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST(
+    ...
+)
+CAT(POP_LAST_, BOOST_PP_VARIADIC_SIZE __VA_ARGS__) __VA_ARGS__
+</code></pre><p>Pop the last argument off a Boost preprocessor sequence</p><h3 id=define-pop-last-1>define POP_LAST_1 <a href=#define-pop-last-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_1(
+    x1
+)
+
+</code></pre><h3 id=define-pop-last-2>define POP_LAST_2 <a href=#define-pop-last-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_2(
+    x1,
+    x2
+)
+x1
+</code></pre><h3 id=define-pop-last-3>define POP_LAST_3 <a href=#define-pop-last-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_3(
+    x1,
+    x2,
+    x3
+)
+x1, x2
+</code></pre><h3 id=define-pop-last-4>define POP_LAST_4 <a href=#define-pop-last-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_4(
+    x1,
+    x2,
+    x3,
+    x4
+)
+x1, x2, x3
+</code></pre><h3 id=define-pop-last-5>define POP_LAST_5 <a href=#define-pop-last-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_5(
+    x1,
+    x2,
+    x3,
+    x4,
+    x5
+)
+x1, x2, x3, x4
+</code></pre><h3 id=define-pop-last-6>define POP_LAST_6 <a href=#define-pop-last-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_6(
+    x1,
+    x2,
+    x3,
+    x4,
+    x5,
+    x6
+)
+x1, x2, x3, x4, x5
+</code></pre><h3 id=define-pop-last-7>define POP_LAST_7 <a href=#define-pop-last-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_7(
+    x1,
+    x2,
+    x3,
+    x4,
+    x5,
+    x6,
+    x7
+)
+x1, x2, x3, x4, x5, x6
+</code></pre><h3 id=define-pop-last-8>define POP_LAST_8 <a href=#define-pop-last-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_8(
+    x1,
+    x2,
+    x3,
+    x4,
+    x5,
+    x6,
+    x7,
+    x8
+)
+x1, x2, x3, x4, x5, x6, x7
+</code></pre><h3 id=define-pop-last-9>define POP_LAST_9 <a href=#define-pop-last-9 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_9(
+    x1,
+    x2,
+    x3,
+    x4,
+    x5,
+    x6,
+    x7,
+    x8,
+    x9
+)
+x1, x2, x3, x4, x5, x6, x7, x8
+</code></pre><h3 id=define-pop-last-10>define POP_LAST_10 <a href=#define-pop-last-10 class=anchor aria-hidden=true>#</a></h3><pre><code>#define POP_LAST_10(
+    x1,
+    x2,
+    x3,
+    x4,
+    x5,
+    x6,
+    x7,
+    x8,
+    x9,
+    x10
+)
+x1, x2, x3, x4, x5, x6, x7, x8, x9
+</code></pre><h3 id=define-etc-etc>define etc_etc <a href=#define-etc-etc class=anchor aria-hidden=true>#</a></h3><pre><code>#define etc_etc 1)(1
+</code></pre><p>Macros for dealing with variadic function arguments in backend functions</p><h3 id=define-last-arg-variadic>define LAST_ARG_VARIADIC <a href=#define-last-arg-variadic class=anchor aria-hidden=true>#</a></h3><pre><code>#define LAST_ARG_VARIADIC(
+    T
+)
+IS_ELLIPSIS(BOOST_PP_TUPLE_ELEM(BOOST_PP_SUB(BOOST_PP_VARIADIC_SIZE T,1),T))
+</code></pre><h3 id=define-is-ellipsis>define IS_ELLIPSIS <a href=#define-is-ellipsis class=anchor aria-hidden=true>#</a></h3><pre><code>#define IS_ELLIPSIS(
+    ELEM
+)
+IS_EQUAL(etc,ELEM)
+</code></pre><h3 id=define-strip-variadic-arg>define STRIP_VARIADIC_ARG <a href=#define-strip-variadic-arg class=anchor aria-hidden=true>#</a></h3><pre><code>#define STRIP_VARIADIC_ARG(
+    T
+)
+BOOST_PP_IIF(LAST_ARG_VARIADIC(T), (POP_LAST(T)),      T)
+</code></pre><h3 id=define-convert-variadic-arg>define CONVERT_VARIADIC_ARG <a href=#define-convert-variadic-arg class=anchor aria-hidden=true>#</a></h3><pre><code>#define CONVERT_VARIADIC_ARG(
+    T
+)
+BOOST_PP_IIF(LAST_ARG_VARIADIC(T), (POP_LAST(T), ...), T)
+</code></pre><h3 id=define-if-elseif-9>define IF_ELSEIF_9 <a href=#define-if-elseif-9 class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_ELSEIF_9(
+    VAR1,
+    _1,
+    VAR2,
+    _2,
+    VAR3,
+    _3,
+    VAR4,
+    _4,
+    _5
+)
+         BOOST_PP_IF(VAR1, _1,                                  \
+         BOOST_PP_IF(VAR2, _2,                                  \
+         BOOST_PP_IF(VAR3, _3,                                  \
+         BOOST_PP_IF(VAR4, _4, _5))))
+</code></pre><h3 id=define-if-elseif-7>define IF_ELSEIF_7 <a href=#define-if-elseif-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_ELSEIF_7(
+    VAR1,
+    _1,
+    VAR2,
+    _2,
+    VAR3,
+    _3,
+    _4
+)
+         BOOST_PP_IF(VAR1, _1,                                  \
+         BOOST_PP_IF(VAR2, _2,                                  \
+         BOOST_PP_IF(VAR3, _3, _4)))
+</code></pre><h3 id=define-if-elseif-5>define IF_ELSEIF_5 <a href=#define-if-elseif-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_ELSEIF_5(
+    VAR1,
+    _1,
+    VAR2,
+    _2,
+    _3
+)
+         BOOST_PP_IF(VAR1, _1,                                  \
+         BOOST_PP_IF(VAR2, _2, _3))
+</code></pre><h3 id=define-if-elseif>define IF_ELSEIF <a href=#define-if-elseif class=anchor aria-hidden=true>#</a></h3><pre><code>#define IF_ELSEIF(
+    ...
+)
+VARARG_NESTED(IF_ELSEIF, __VA_ARGS__)
+</code></pre><h3 id=define-braced-init-list>define BRACED_INIT_LIST <a href=#define-braced-init-list class=anchor aria-hidden=true>#</a></h3><pre><code>#define BRACED_INIT_LIST(
+    ...
+)
+{ __VA_ARGS__ }
+</code></pre><p>Macro for defining a static const vector easily. With C++11 could use initialiser lists, but this is not available in all the compilers we want to support. Use this as a replacement. e.g. static const std::vector<int> myvector = {1,2,3,4}; // Not possible in all compilers we support. becomes MAKE_STATIC_VECTOR(int,myvector,(1,2,3,4))</p><h3 id=define-make-static-vector>define MAKE_STATIC_VECTOR <a href=#define-make-static-vector class=anchor aria-hidden=true>#</a></h3><pre><code>#define MAKE_STATIC_VECTOR(
+    TYPE,
+    NAME,
+    TUPLE
+)
+   static const TYPE NAME##_array[] = BRACED_INIT_LIST TUPLE; \
+   static const std::vector&lt;TYPE&gt; NAME(NAME##_array, Utils::endA( NAME##_array ));
+</code></pre><h3 id=define-make-static-set>define MAKE_STATIC_SET <a href=#define-make-static-set class=anchor aria-hidden=true>#</a></h3><pre><code>#define MAKE_STATIC_SET(
+    TYPE,
+    NAME,
+    TUPLE
+)
+   static const TYPE NAME##_array[] = BRACED_INIT_LIST(TUPLE); \
+   static const std::set&lt;TYPE&gt; NAME(NAME##_array, Utils::endA( NAME##_array ));
+</code></pre><h3 id=define-call-with-silenced-stderr>define CALL_WITH_SILENCED_STDERR <a href=#define-call-with-silenced-stderr class=anchor aria-hidden=true>#</a></h3><pre><code>#define CALL_WITH_SILENCED_STDERR(
+    FUNCTION_CALL
+)
+  int fd;                                           \
+  fpos_t pos;                                       \
+  fflush(stderr);                                   \
+  fgetpos(stderr, &amp;pos);                            \
+  fd = dup(fileno(stderr));                         \
+  freopen(&quot;/dev/null&quot;, &quot;w&quot;, stderr);                \
+                                                    \
+  (FUNCTION_CALL);                                  \
+                                                    \
+  fflush(stderr);                                   \
+  dup2(fd, fileno(stderr));                         \
+  close(fd);                                        \
+  clearerr(stderr);                                 \
+  fsetpos(stderr, &amp;pos);
+</code></pre><p>Macro to redirect stderr to /dev/null for a single function call, for use with particularly noisy external libraries</p><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  General small utility macros.
+///
+///  *********************************************
+///
+///  Authors:
+///  &lt;!-- add name and date if you modify --&gt;
+///
+///  \author Pat Scott
+///          (patscott@physics.mcgill.ca)
+///  \date 2013 Apr, Oct
+///  \date 2014 Mar
+///
+///  *********************************************
+
+#ifndef __util_macros_hpp__
+#define __util_macros_hpp__
+
+#include &lt;unistd.h&gt;
+
+#include &quot;gambit/Utils/boost_fallbacks.hpp&quot;
+#include &quot;gambit/Utils/cats.hpp&quot;
+#include &quot;gambit/Utils/stringify.hpp&quot;  // stringification macro
+#include &quot;gambit/Utils/local_info.hpp&quot; // Local information macro.
+#include &quot;gambit/Utils/export_symbols.hpp&quot; // macro for controlling symbol visibility
+
+#include &lt;boost/preprocessor/seq/size.hpp&gt;
+#include &lt;boost/preprocessor/tuple/elem.hpp&gt;
+#include &lt;boost/preprocessor/control/if.hpp&gt;
+#include &lt;boost/preprocessor/comparison/equal.hpp&gt;
+#include &lt;boost/preprocessor/arithmetic/sub.hpp&gt;
+#include &lt;boost/preprocessor/punctuation/comma.hpp&gt;
+#include &lt;boost/preprocessor/punctuation/paren.hpp&gt;
+
+/// \name Compile-time error macro.
+#define FAIL(x) static_assert(false,&quot;GAMBIT precompiler error: &quot; x);
+
+/// \name Token appendment macro for use with BOOST_PP_SEQ_TRANSFORM
+#define APPEND_TOKEN(s,data,elem) CAT(elem,data)
+
+/// \name Dummy macros
+/// Dummy macros that expand to nothing.
+/// @{
+#define DUMMY
+#define DUMMYARG(...)
+/// @}
+
+/// \name Macro returning only the first argument passed
+#define FIRST_ARG(A1,...) A1
+
+/// \name Macro returning all but the first argument passed
+/// @{
+#define REMFIRST(...) REMFIRST_I(__VA_ARGS__)
+#define REMFIRST_I(A1,...) (__VA_ARGS__)
+/// @}
+
+/// \name Macro chain for stripping parantheses off an argument
+/// Usage: STRIP_PARENS(x). Example: STRIP_PARENS((y,z)) expands to y,z
+/// @{
+#define APPLY(macro, args) APPLY_I(macro, args)
+#define APPLY_I(macro, args) macro args
+#define STRIP_PARENS(x) EVAL_PAR((STRIP_PARENS_I x), x)
+#define STRIP_PARENS_I(...) 1,1
+#define EVAL_PAR(test, x) EVAL_PAR_I(test, x)
+#define EVAL_PAR_I(test, x) MAYBE_STRIP_PARENS(TEST_ARITY test, x)
+#define TEST_ARITY(...) APPLY(TEST_ARITY_I, (__VA_ARGS__, 2, 1, 0))
+#define TEST_ARITY_I(a,b,c,...) c
+#define MAYBE_STRIP_PARENS(cond, x) MAYBE_STRIP_PARENS_I(cond, x)
+#define MAYBE_STRIP_PARENS_I(cond, x) CAT(MAYBE_STRIP_PARENS_, cond)(x)
+#define MAYBE_STRIP_PARENS_1(x) x
+#define MAYBE_STRIP_PARENS_2(x) APPLY(MAYBE_STRIP_PARENS_2_I, x)
+#define MAYBE_STRIP_PARENS_2_I(...) __VA_ARGS__
+/// @}
+
+/// \name Macro chain checking if the argument has parantheses
+/// Usage: HAS_PARENS(x). Example: HAS_PARENS((y,z)) expands to 1
+/// @{
+#define HAS_PARENS(x) EVAL_HASP((HAS_PARENS_I x), x)
+#define HAS_PARENS_I(...) 1,1
+#define EVAL_HASP(test, x) EVAL_HASP_I(test, x)
+#define EVAL_HASP_I(test, x) CHECK_PARENS(TEST_ARITY test, x)
+#define CHECK_PARENS(cond, x) CHECK_PARENS_I(cond, x)
+#define CHECK_PARENS_I(cond, x) CAT(CHECK_PARENS_, cond)(x)
+#define CHECK_PARENS_1(x) 0
+#define CHECK_PARENS_2(x) 1
+/// @}
+
+/// \name Macro chain checking if the argument(s) passed has commas. Accepts up to 128 arguments.
+/// Example: HAS_COMMA(1,2,3) expands to 1; HAS_COMMA(1) expands to 0
+/// @{
+#define _ARG128(_0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15,                                           \
+_16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31,                                                 \
+_32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47,                                                 \
+_48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63,                                                 \
+_64, _65, _66, _67, _68, _69, _70, _71, _72, _73, _74, _75, _76, _77, _78, _79,                                                 \
+_80, _81, _82, _83, _84, _85, _86, _87, _88, _89, _90, _91, _92, _93, _94, _95,                                                 \
+_96, _97, _98, _99, _100, _101, _102, _103, _104, _105, _106, _107, _108, _109,                                                 \
+_110, _111, _112, _113, _114, _115, _116, _117, _118, _119, _120, _121, _122, _123, _124, _125, _126, _127, ...) _127
+
+#define HAS_COMMA(...) _ARG128(__VA_ARGS__, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                       \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,                                                                     \
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+/// @}
+
+/// \name Macro chain checking if the argument passed is empty
+/// Example: ISEMPTY() expands to 1; ISEMPTY(1,2,3) expands to 0
+/// @{
+#define ISEMPTY(ARG) ISEMPTY_I(_129ONES STRIP_PARENS(ARG) ())
+#define ISEMPTY_I(A) ISEMPTY_II(A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+#define ISEMPTY_II(...) _ARG128(__VA_ARGS__)
+#define _129ONES() 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, \
+    1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,\
+    1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,\
+    1,1,1,1,1,1,1,1,1,1,1,1
+/// @}
+
+/// \name Macro that expands to the argument list with a comma in front
+/// if the (bracket enclosed) argument list is not empty.
+/// If the agrument list is empty, expands to nothing.
+/// @{
+#define INSERT_NONEMPTY(ARG) CAT(INSERT_NONEMPTY_I,ISEMPTY(ARG))(ARG)
+#define INSERT_NONEMPTY_I0(ARG) ,STRIP_PARENS(ARG)
+#define INSERT_NONEMPTY_I1(...) DUMMYARG(__VA_ARGS__)
+/// @}
+
+/// \name Boost 2-tuple access macros
+/// Used to avoid possible reentrancy issues with multiple use of BOOST_PP_TUPLE_ELEM.
+/// @{
+#define PAIR_ELEMENT0(TPLE) PAIR_ELEMENT0_I TPLE
+#define PAIR_ELEMENT0_I(A,B) A
+#define PAIR_ELEMENT1(TPLE) PAIR_ELEMENT1_I TPLE
+#define PAIR_ELEMENT1_I(A,B) B
+/// @}
+
+/// \name Type comparison macros
+/// Macros to evaluate whether two intrinsic types are identical or not.
+/// Example use: define a macro that evaluates to 1 if token X = void, 0
+/// otherwise.
+/// \code
+/// #define X_IS_VOID(X) IS_TYPE(X, void)
+/// \endcode
+/// @{
+#define void_void                       1)(1
+#define int_int                         1)(1
+#define float_float                     1)(1
+#define double_double                   1)(1
+#define bool_bool                       1)(1
+#define char_char                       1)(1
+#define string_string                   1)(1
+#define ModelParameters_ModelParameters 1)(1
+#define IS_TYPE(COMPTYPE,TYPE) BOOST_PP_EQUAL(BOOST_PP_SEQ_SIZE((CAT_3(COMPTYPE,_,TYPE))),2)
+/// @}
+
+/// \name String comparison macros.
+/// Macros for evaluating whether tokens are equal or not for certain special values, and
+/// for then switching on the result.
+/// Define your special values, such as &quot;myToken&quot; locally as
+/// \code
+/// #define myToken_myToken 1)(1
+/// Just like the IS_TYPE macro, so redirects to that.
+/// \endcode
+/// @{
+#define IS_EQUAL(A,B)          IS_TYPE(A,B)
+#define IF_EQUAL(A,B,C)        BOOST_PP_IIF(IS_EQUAL(A,B),C,)
+#define IF_NOT_EQUAL(A,B,C)    BOOST_PP_IIF(IS_EQUAL(A,B), ,C)
+#define IF_ELSE_EQUAL(A,B,C,D) BOOST_PP_IIF(IS_EQUAL(A,B),C,D)
+/// @}
+
+/// \name Empty token test macros.
+/// Macros for evaluating whether certain tokens are empty or not, and
+/// for then switching on the result.
+/// @{
+#define EMPTY_TOKEN_TESTER 1)(1
+#define IS_EMPTY(A)          IS_EQUAL(CAT(A,EMPTY),TOKEN_TESTER)
+#define IF_EMPTY(A,B)        BOOST_PP_IIF(IS_EMPTY(A),B,)
+#define IF_NOT_EMPTY(A,B)    BOOST_PP_IIF(IS_EMPTY(A), ,B)
+#define IF_ELSE_EMPTY(A,B,C) BOOST_PP_IIF(IS_EMPTY(A),B,C)
+/// @}
+
+/// \name General variadic macro expanders
+/// Generic variadic macro expanders for 1 to 10 arguments.
+/// Example use: redirect EXAMPLE according to whether it is called
+/// with 2, 3 or 4 arguments.
+/// \code
+/// #define EXAMPLE_4(_1, _2, _3, _4) DOSTUFF(_1,  _2,  _3,  _4)
+/// #define EXAMPLE_3(_1, _2, _3)     DOSTUFF(_1,  _2,  _3, foo)
+/// #define EXAMPLE_2(_1, _2)         DOSTUFF(_1,  _2, foo, bar)
+/// #define EXAMPLE(...)              VARARG(EXAMPLE, __VA_ARGS__)
+/// \endcode
+/// @{
+#define VA_NARGS_IMPL(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...) N
+#define VA_NARGS(...) VA_NARGS_IMPL(X,__VA_ARGS__, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+#define VARARG_IMPL2(base, count, ...) CAT_3(base,_,count)(__VA_ARGS__)
+#define VARARG_IMPL(base, count, ...) VARARG_IMPL2(base, count, __VA_ARGS__)
+#define VARARG(base, ...) VARARG_IMPL(base, VA_NARGS(__VA_ARGS__), __VA_ARGS__)
+/// @}
+
+/// \name Duplicate of variadic macro expanders, to allow nesting.
+/// @{
+#define VA_NARGS_NESTED_IMPL(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...) N
+#define VA_NARGS_NESTED(...) VA_NARGS_NESTED_IMPL(X,__VA_ARGS__, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+#define VARARG_NESTED_IMPL2(base, count, ...) CAT_3(base,_,count)(__VA_ARGS__)
+#define VARARG_NESTED_IMPL(base, count, ...) VARARG_NESTED_IMPL2(base, count, __VA_ARGS__)
+#define VARARG_NESTED(base, ...) VARARG_NESTED_IMPL(base, VA_NARGS_NESTED(__VA_ARGS__), __VA_ARGS__)
+/// @}
+
+/// \name Variadic macro expanders taking 3 leading arguments
+/// @{
+#define VA_NARGS_AB_IMPL(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...) N
+#define VA_NARGS_AB(...) VA_NARGS_AB_IMPL(X,__VA_ARGS__, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+#define VARARG_AB_IMPL2(base, A, B, count, ...) CAT_3(base,_,count)(A, B, __VA_ARGS__)
+#define VARARG_AB_IMPL(base, A, B, count, ...) VARARG_AB_IMPL2(base, A, B, count, __VA_ARGS__)
+#define VARARG_AB(base, A, B, ...) VARARG_AB_IMPL(base, A, B, VA_NARGS_AB(__VA_ARGS__), __VA_ARGS__)
+/// @}
+
+/// \name Variadic macro expanders for distinguishing between 1 and &gt;1 variadic argument
+/// @{
+#define VARARG_SWITCH_ON_GT_ONE_TESTER_1 1)(1
+#define VA_NARGS_SWITCH_ON_GT_ONE_IMPL(_1, _2, _3, N, ...) IF_ELSE_EQUAL(VARARG_SWITCH_ON_GT_ONE_TESTER,N,N,MORE)
+#define VA_NARGS_SWITCH_ON_GT_ONE(...) VA_NARGS_SWITCH_ON_GT_ONE_IMPL(X,__VA_ARGS__, 2, 1, 0)
+#define VARARG_SWITCH_ON_GT_ONE_IMPL2(base, count, ...) CAT_3(base,_,count)(__VA_ARGS__)
+#define VARARG_SWITCH_ON_GT_ONE_IMPL(base, count, ...) VARARG_SWITCH_ON_GT_ONE_IMPL2(base, count, __VA_ARGS__)
+#define VARARG_SWITCH_ON_GT_ONE(base, ...) VARARG_SWITCH_ON_GT_ONE_IMPL(base, VA_NARGS_SWITCH_ON_GT_ONE(__VA_ARGS__), __VA_ARGS__)
+/// @}
+
+/// \name Variadic macro expanders for distinguishing between 1 and &gt;1 variadic argument, taking 1 leading argument
+/// @{
+#define VARARG_SWITCH_ON_GT_ONE_A_TESTER_1 1)(1
+#define VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL(_1, _2, _3, N, ...) IF_ELSE_EQUAL(VARARG_SWITCH_ON_GT_ONE_A_TESTER,N,N,MORE)
+#define VA_NARGS_SWITCH_ON_GT_ONE_A(...) VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL(X,__VA_ARGS__, 2, 1, 0)
+#define VARARG_SWITCH_ON_GT_ONE_A_IMPL2(base, A, count, ...) CAT_3(base,_,count)(A, __VA_ARGS__)
+#define VARARG_SWITCH_ON_GT_ONE_A_IMPL(base, A, count, ...) VARARG_SWITCH_ON_GT_ONE_A_IMPL2(base, A, count, __VA_ARGS__)
+#define VARARG_SWITCH_ON_GT_ONE_A(base, A, ...) VARARG_SWITCH_ON_GT_ONE_A_IMPL(base, A, VA_NARGS_SWITCH_ON_GT_ONE_A(__VA_ARGS__), __VA_ARGS__)
+/// @}
+
+/// \name Variadic macro expanders for distinguishing between 1 and &gt;1 variadic argument, taking 3 leading arguments
+/// @{
+#define VARARG_SWITCH_ON_GT_ONE_ABC_TESTER_1 1)(1
+#define VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL(_1, _2, _3, N, ...) IF_ELSE_EQUAL(VARARG_SWITCH_ON_GT_ONE_ABC_TESTER,N,N,MORE)
+#define VA_NARGS_SWITCH_ON_GT_ONE_ABC(...) VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL(X,__VA_ARGS__, 2, 1, 0)
+#define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2(base, A, B, C, count, ...) CAT_3(base,_,count)(A, B, C, __VA_ARGS__)
+#define VARARG_SWITCH_ON_GT_ONE_ABC_IMPL(base, A, B, C, count, ...) VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2(base, A, B, C, count, __VA_ARGS__)
+#define VARARG_SWITCH_ON_GT_ONE_ABC(base, A, B, C, ...) VARARG_SWITCH_ON_GT_ONE_ABC_IMPL(base, A, B, C, VA_NARGS_SWITCH_ON_GT_ONE_ABC(__VA_ARGS__), __VA_ARGS__)
+/// @}
+
+/// \name Variadic macro expanders for distinguishing between 1, 2 and &gt;2 variadic arguments, taking 3 leading arguments
+/// @{
+#define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_2 1)(1
+#define VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_1 1)(1
+#define VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL(_1, _2, _3, _4, N, ...) IF_ELSE_EQUAL(VARARG_SWITCH_ON_GT_TWO_ABC_TESTER,\
+                                                                                 BOOST_PP_TUPLE_ELEM(0,(STRIP_PARENS(N))),N,MORE)
+#define VA_NARGS_SWITCH_ON_GT_TWO_ABC(...) VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL(X,__VA_ARGS__, 3, 2, 1, 0)
+#define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2(base, A, B, C, count, ...) CAT_3(base,_,count)(A, B, C, __VA_ARGS__)
+#define VARARG_SWITCH_ON_GT_TWO_ABC_IMPL(base, A, B, C, count, ...) VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2(base, A, B, C, count, __VA_ARGS__)
+#define VARARG_SWITCH_ON_GT_TWO_ABC(base, A, B, C, ...) VARARG_SWITCH_ON_GT_TWO_ABC_IMPL(base, A, B, C, VA_NARGS_SWITCH_ON_GT_TWO_ABC(__VA_ARGS__), __VA_ARGS__)
+/// @}
+
+/// \name Bottom-level definition-checking macros
+/// Generic macros that can be used from within other macros
+/// to test whether or not some other macro is defined.
+/// To count as &quot;defined&quot; for the purposes of these macros, there
+/// must exist a macro definition of the following form:
+/// \code
+/// #define DEFINED_FOO ()
+/// \endcode
+/// If this definition exists, DEFINED(FOO) will return 1.  It is up to
+/// you to actually create a matching macro FOO when you create DEFINED_FOO,
+/// and then do something with the information that DEFINED provides about
+/// the existence of DEFINED_FOO (and presumably also FOO).
+///
+/// Typically these macros would be used to switch behaviour on a flag
+/// passed to a macro.  See \link START_FUNCTION() START_FUNCTION \endlink
+/// in module_macros_common.hpp for a detailed worked example.
+/// @{
+#define CHECK_N(x, n, ...) n
+#define CHECK(...) CHECK_N(__VA_ARGS__, 0, 0)
+#define PROBE(x) x, 1
+#define DEFINED_PROBE(NAME)            DEFINED_PROBE_PROXY( DEFINED_##NAME )      // concatenate DEFINED_ prefix with function name
+#define DEFINED_PROBE_PROXY(...)       DEFINED_PROBE_PRIMITIVE(__VA_ARGS__)       // expand arguments
+#define DEFINED_PROBE_PRIMITIVE(x)     DEFINED_PROBE_COMBINE_ x                   // collapse again
+#define DEFINED_PROBE_COMBINE_(...)    PROBE(X)
+/// Returns 1 or 0 depending on whether a corresponding DEFINED_&lt;NAME&gt; () macro has been
+/// \code #defined \endcode or not.
+#define DEFINED(NAME)                  CHECK(DEFINED_PROBE(NAME))
+/// @}
+
+/// \name High-level definition-checking macros.
+/// These are just nice wrappers around \link DEFINED() DEFINED\endlink for specific logical cases.
+/// @{
+
+/// Do ACTION if NAME is defined.
+#define IF_DEFINED(NAME,ACTION)        BOOST_PP_IF(DEFINED(NAME), ACTION, )
+/// Do ACTION if NAME is undefined.
+#define IF_NOT_DEFINED(NAME,ACTION)    BOOST_PP_IF(DEFINED(NAME), , ACTION)
+/// Do IF if NAME is defined, otherwise do ELSE.
+#define IF_ELSE_DEFINED(NAME,IF,ELSE)  BOOST_PP_IF(DEFINED(NAME), IF, ELSE)
+/// @}
+
+/// \name Sneaky redefinition of \link DEFINED() DEFINED\endlink to allow testing whether specific tokens are defined.
+/// @{
+#define TOKEN_DEFINED(A) BOOST_PP_NOT(DEFINED(A))
+#define IF_TOKEN_DEFINED(A,B) BOOST_PP_IIF(DEFINED(A),BOOST_PP_EMPTY(),B)
+#define IF_TOKEN_UNDEFINED(A,B) BOOST_PP_IIF(DEFINED(A),B,BOOST_PP_EMPTY())
+#define IF_ELSE_TOKEN_DEFINED(A,B,C) BOOST_PP_IIF(DEFINED(A),C,B)
+#define DEFINED_MODULE                 ()
+#define DEFINED_CAPABILITY             ()
+#define DEFINED_FUNCTION               ()
+#define DEFINED_CONDITIONAL_DEPENDENCY ()
+/// @}
+
+/// Pop the last argument off a Boost preprocessor sequence
+/// @{
+#define POP_LAST(...) CAT(POP_LAST_, BOOST_PP_VARIADIC_SIZE __VA_ARGS__) __VA_ARGS__
+#define POP_LAST_1(x1)
+#define POP_LAST_2(x1, x2) x1
+#define POP_LAST_3(x1, x2, x3) x1, x2
+#define POP_LAST_4(x1, x2, x3, x4) x1, x2, x3
+#define POP_LAST_5(x1, x2, x3, x4, x5) x1, x2, x3, x4
+#define POP_LAST_6(x1, x2, x3, x4, x5, x6) x1, x2, x3, x4, x5
+#define POP_LAST_7(x1, x2, x3, x4, x5, x6, x7) x1, x2, x3, x4, x5, x6
+#define POP_LAST_8(x1, x2, x3, x4, x5, x6, x7, x8) x1, x2, x3, x4, x5, x6, x7
+#define POP_LAST_9(x1, x2, x3, x4, x5, x6, x7, x8, x9) x1, x2, x3, x4, x5, x6, x7, x8
+#define POP_LAST_10(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10) x1, x2, x3, x4, x5, x6, x7, x8, x9
+/// @}
+
+/// Macros for dealing with variadic function arguments in backend functions
+/// @{
+#define etc_etc 1)(1
+#define LAST_ARG_VARIADIC(T) IS_ELLIPSIS(BOOST_PP_TUPLE_ELEM(BOOST_PP_SUB(BOOST_PP_VARIADIC_SIZE T,1),T))
+#define IS_ELLIPSIS(ELEM) IS_EQUAL(etc,ELEM)
+#define STRIP_VARIADIC_ARG(T)   BOOST_PP_IIF(LAST_ARG_VARIADIC(T), (POP_LAST(T)),      T)
+#define CONVERT_VARIADIC_ARG(T) BOOST_PP_IIF(LAST_ARG_VARIADIC(T), (POP_LAST(T), ...), T)
+/// @}
+
+/// \name Preprocessor switch-case statements
+/// @{
+#define IF_ELSEIF_9(VAR1, _1, VAR2, _2, VAR3, _3, VAR4, _4, _5) \
+         BOOST_PP_IF(VAR1, _1,                                  \
+         BOOST_PP_IF(VAR2, _2,                                  \
+         BOOST_PP_IF(VAR3, _3,                                  \
+         BOOST_PP_IF(VAR4, _4, _5))))
+#define IF_ELSEIF_7(VAR1, _1, VAR2, _2, VAR3, _3, _4)           \
+         BOOST_PP_IF(VAR1, _1,                                  \
+         BOOST_PP_IF(VAR2, _2,                                  \
+         BOOST_PP_IF(VAR3, _3, _4)))
+#define IF_ELSEIF_5(VAR1, _1, VAR2, _2, _3)                     \
+         BOOST_PP_IF(VAR1, _1,                                  \
+         BOOST_PP_IF(VAR2, _2, _3))
+#define IF_ELSEIF(...) VARARG_NESTED(IF_ELSEIF, __VA_ARGS__)
+/// @}
+
+/// Macro for defining a static const vector easily. With C++11 could use initialiser lists, but
+/// this is not available in all the compilers we want to support. Use this as a replacement.
+/// e.g.
+/// static const std::vector&lt;int&gt; myvector = {1,2,3,4}; // Not possible in all compilers we support.
+/// becomes
+/// MAKE_STATIC_VECTOR(int,myvector,(1,2,3,4))
+#define BRACED_INIT_LIST(...) { __VA_ARGS__ }
+#define MAKE_STATIC_VECTOR(TYPE,NAME,TUPLE) \
+   static const TYPE NAME##_array[] = BRACED_INIT_LIST TUPLE; \
+   static const std::vector&lt;TYPE&gt; NAME(NAME##_array, Utils::endA( NAME##_array ));
+#define MAKE_STATIC_SET(TYPE,NAME,TUPLE) \
+   static const TYPE NAME##_array[] = BRACED_INIT_LIST(TUPLE); \
+   static const std::set&lt;TYPE&gt; NAME(NAME##_array, Utils::endA( NAME##_array ));
+
+/// Macro to redirect stderr to /dev/null for a single function call,
+/// for use with particularly noisy external libraries
+#define CALL_WITH_SILENCED_STDERR(FUNCTION_CALL)    \
+  int fd;                                           \
+  fpos_t pos;                                       \
+  fflush(stderr);                                   \
+  fgetpos(stderr, &amp;pos);                            \
+  fd = dup(fileno(stderr));                         \
+  freopen(&quot;/dev/null&quot;, &quot;w&quot;, stderr);                \
+                                                    \
+  (FUNCTION_CALL);                                  \
+                                                    \
+  fflush(stderr);                                   \
+  dup2(fd, fileno(stderr));                         \
+  close(fd);                                        \
+  clearerr(stderr);                                 \
+  fsetpos(stderr, &amp;pos);
+
+
+#endif //defined __util_macros_hpp__
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

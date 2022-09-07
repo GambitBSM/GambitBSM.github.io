@@ -1,0 +1,839 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/mpiwrapper.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/mpiwrapper.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/mpiwrapper.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file src/mpiwrapper.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/","url":"https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/","name":"file src\/mpiwrapper.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/mpiwrapper_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file src\/mpiwrapper.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/mpiwrapper.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-mpiwrapper-cpp>file src/mpiwrapper.cpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Ben Farmer (<a href=mailto:b.farmer@imperial.ac.uk>b.farmer@imperial.ac.uk</a>)</p><p><strong>Date</strong>: 2015 - 2019</p><p>Definitions for <a href=/documentation/code/namespaces/namespacegambit/>Gambit</a> MPI C++ bindings.</p><p>NOTE! I just learned something unfortunate, which is that all Isend&rsquo;s are supposed to be matched by MPI_Wait calls at some point, to ensure the operation is complete. We are not doing this. Things seem to work anyway, but it may explain some of the hangs on MPI_Finalize. I will fix the worst offenders of this asap, but the rest may take longer.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  Definitions for Gambit MPI C++ bindings.
+///
+///  NOTE! I just learned something unfortunate,
+///  which is that all Isend's are supposed to be
+///  matched by MPI_Wait calls at some point, to
+///  ensure the operation is complete.
+///  We are not doing this. Things seem to work
+///  anyway, but it may explain some of the hangs
+///  on MPI_Finalize.
+///  I will fix the worst offenders of this asap,
+///  but the rest may take longer.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (b.farmer@imperial.ac.uk)
+///  \date 2015 - 2019
+///
+///  *********************************************
+
+#ifdef WITH_MPI // Contents of this file ignored if MPI not enabled
+
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+#include &lt;time.h&gt; // For nanosleep (posix only)
+#include &lt;sys/types.h&gt;
+#include &lt;chrono&gt;
+
+#include &quot;gambit/Utils/mpiwrapper.hpp&quot;
+#include &quot;gambit/Utils/new_mpi_datatypes.hpp&quot;
+
+//#define MPI_DEBUG_OUTPUT // Turn on debugging messages
+
+
+namespace Gambit
+{
+
+   namespace GMPI
+   {
+
+      /// @{ Main &quot;Communicator&quot; class
+
+      long int Comm::pid = getpid();
+
+      /// @{ Constructors
+      /// Default (attaches to MPI_COMM_WORLD):
+      Comm::Comm() : boundcomm(MPI_COMM_WORLD), myname(&quot;COMM_WORLD&quot;)
+      {
+         if(not Is_initialized())
+         {
+            utils_error().raise(LOCAL_INFO, &quot;Error creating Comm object (wrapper for MPI communicator)! MPI has not been initialised!&quot;);
+         }
+      }
+
+      /// Copy existing communicator
+      Comm::Comm(const MPI_Comm&amp; comm, const std::string&amp; name) : boundcomm(comm), myname(name)
+      {
+         if(not Is_initialized())
+         {
+            utils_error().raise(LOCAL_INFO, &quot;Error creating Comm object (wrapper for MPI communicator)! MPI has not been initialised!&quot;);
+         }
+      }
+
+      /// Create a new communicator group from WORLD for the specified processes
+      Comm::Comm(std::vector&lt;int&gt; processes, const std::string&amp; name)
+         : boundcomm(), myname(name)
+      {
+         // Create group
+         MPI_Group group_world, new_group;
+         MPI_Comm_group(MPI_COMM_WORLD, &amp;group_world);
+         MPI_Group_incl(group_world, processes.size(), &amp;processes[0], &amp;new_group);
+
+         // Create new communicator
+         int errflag = MPI_Comm_create(MPI_COMM_WORLD, new_group, &amp;boundcomm);
+
+         //std::cerr&lt;&lt;&quot;boundcomm=&quot;&lt;&lt;boundcomm&lt;&lt;&quot;, MPI_COMM_NULL=&quot;&lt;&lt;MPI_COMM_NULL&lt;&lt;std::endl;
+
+         // Check for error
+         if(errflag!=0)
+         {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error performing MPI_Comm_create while attempting to create a new communicator group! Received error flag: &quot;&lt;&lt;errflag;
+           utils_error().raise(LOCAL_INFO, errmsg.str());
+         }
+      }
+
+      /// Duplicate input communicator into boundcomm
+      /// (creates new context)
+      /// NOTE! MPI_Comm_dup is a COLLECTIVE call, so all processes
+      /// must call it! Beware deadlocks. May sometimes be better to duplicate
+      /// first and then wrap in a communicator.
+      void Comm::dup(const MPI_Comm&amp; comm, const std::string&amp; name)
+      {
+         int errflag = MPI_Comm_dup(comm, &amp;boundcomm);
+         if(errflag!=0) {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error performing MPI_Comm_dup! Received error flag: &quot;&lt;&lt;errflag;
+           utils_error().raise(LOCAL_INFO, errmsg.str());
+         }
+         // Change bound name
+         myname = name;
+      }
+
+      /// Destructor
+      ///́ Warn if any undelivered messages exist
+      Comm::~Comm() { check_for_undelivered_messages(); }
+      /// @}
+
+      /// Check for undelivered messages (unless finalize has already been called)
+      void Comm::check_for_undelivered_messages()
+      {
+        if(not Is_finalized() and boundcomm!=MPI_COMM_NULL)
+        {
+          std::ostringstream errmsg;
+          // Warn if any unreceived messages exist
+          MPI_Status status;
+          bool message_waiting = Iprobe(MPI_ANY_SOURCE, MPI_ANY_TAG, &amp;status);
+          if(message_waiting)
+          {
+            int source = status.MPI_SOURCE;
+            int tag = status.MPI_TAG;
+            LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; Get_rank() &lt;&lt; &quot;: WARNING! Unreceived MPI message detected (source=&quot;&lt;&lt;source&lt;&lt;&quot;, tag=&quot;&lt;&lt;tag&lt;&lt;&quot;, communicator group=&quot;&lt;&lt;Get_name()&lt;&lt;&quot;). This may cause problems when MPI_Finalize is run.&quot; &lt;&lt; EOM;
+          }
+        }
+      }
+
+      /// Get total number of MPI tasks in this communicator group
+      int Comm::Get_size() const
+      {
+        int size;
+        MPI_Comm_size(boundcomm,&amp;size);
+        return size;
+      }
+
+      /// Get &quot;rank&quot; (ID number) of current task in this communicator group
+      int Comm::Get_rank() const
+      {
+        int rank;
+        MPI_Comm_rank(boundcomm,&amp;rank);
+        return rank;
+      }
+
+      /// Get name of communicator group (for error messages)
+      std::string Comm::Get_name() const
+      {
+        return myname;
+      }
+
+      /// Null buffer for use in master_wait_for_tag
+      int null_send_buffer = 0;
+      MPI_Request req_null = MPI_REQUEST_NULL;
+
+      /// Tells master to wait until all other processes pass this function, with the specified MPI tag
+      /// Could be modified to take a function pointer to loop over,
+      void Comm::masterWaitForAll(int tag)
+      {
+         std::size_t mpiSize = Get_size();
+         std::size_t myRank  = Get_rank();
+         if(mpiSize&gt;1)
+         {
+            if(myRank==0)
+            {
+               for(std::size_t sender=1; sender&lt;mpiSize; sender++)
+               {
+                  // Do a blocking wait for each worker, until all messages received
+                  int recv_buffer = 0; // To receive the null message
+                  //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Waiting for tag &quot;&lt;&lt;tag&lt;&lt;&quot; from process &quot;&lt;&lt;sender&lt;&lt;std::endl;
+                  Recv(&amp;recv_buffer, 1, sender, tag);
+                  //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Received tag &quot;&lt;&lt;tag&lt;&lt;&quot; from process &quot;&lt;&lt;sender&lt;&lt;std::endl;
+               }
+            }
+            else
+            {
+               // Other processes simply signal that they have passed this point.
+               //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Sending tag &quot;&lt;&lt;tag&lt;&lt;&quot; to process &quot;&lt;&lt;0&lt;&lt;std::endl;
+               Isend(&amp;null_send_buffer, 1, 0 /*master*/, tag, &amp;req_null);
+            }
+         }
+         //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Passed masterWaitForAll with tag &quot;&lt;&lt;tag&lt;&lt;std::endl;
+      }
+
+      /// Tells all processes to wait until master passes this point before proceeding, with the specified MPI tag
+      void Comm::allWaitForMaster(int tag)
+      {
+         std::size_t mpiSize = Get_size();
+         std::size_t myRank  = Get_rank();
+         if(mpiSize&gt;1)
+         {
+            if(myRank==0)
+            {
+               // Send to everyone that we have passed the checkpoint
+               for(std::size_t dest=1; dest&lt;mpiSize; dest++)
+               {
+                  //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Sending tag &quot;&lt;&lt;tag&lt;&lt;&quot; to process &quot;&lt;&lt;dest&lt;&lt;std::endl;
+                  Isend(&amp;null_send_buffer, 1, dest, tag, &amp;req_null);
+               }
+            }
+            else
+            {
+               // Keep this simple for now, and just block until message received.
+               // Like above, could modify so that work could be done while waiting.
+               int recv_buffer = 0; // To receive the null message
+               //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Waiting for tag &quot;&lt;&lt;tag&lt;&lt;&quot; from process &quot;&lt;&lt;0&lt;&lt;std::endl;
+               Recv(&amp;recv_buffer, 1, 0 /*source*/, tag);
+               //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Received tag &quot;&lt;&lt;tag&lt;&lt;&quot; from process &quot;&lt;&lt;0&lt;&lt;std::endl;
+            }
+         }
+         //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Passed allWaitForMaster with tag &quot;&lt;&lt;tag&lt;&lt;std::endl;
+      }
+
+      /// Tells all processes to wait until master passes this point before proceeding, with the specified MPI tag
+      /// Calls &quot;func&quot; periodically while waiting (can be used to e.g. check for error messages from other processes)
+      void Comm::allWaitForMasterWithFunc(int tag, void (*func)())
+      {
+         std::size_t mpiSize = Get_size();
+         std::size_t myRank  = Get_rank();
+         if(mpiSize&gt;1)
+         {
+            if(myRank==0)
+            {
+               // Send to everyone that we have passed the checkpoint
+               for(std::size_t dest=1; dest&lt;mpiSize; dest++)
+               {
+                  //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Sending tag &quot;&lt;&lt;tag&lt;&lt;&quot; to process &quot;&lt;&lt;dest&lt;&lt;std::endl;
+                  Isend(&amp;null_send_buffer, 1, dest, tag, &amp;req_null);
+               }
+            }
+            else
+            {
+               bool message_received = false;
+               struct timespec sleeptime;
+               sleeptime.tv_sec = 0;
+               sleeptime.tv_nsec = 100*1e6; // 100 millisecond wait time between loops should be reasonable
+               MPI_Status status;
+
+               // Now, loop and wait for all other processes to send their own entering signals
+               while(not message_received)
+               {
+                  if( Iprobe(0 /*source*/, tag, &amp;status) )
+                  {
+                    int recv_buffer = 0; // To receive the null message
+                    Recv(&amp;recv_buffer, 1, 0 /*source*/, tag);
+                    message_received = true;
+                  }
+
+                  if(not message_received)
+                  {
+                    // sleep (is a busy sleep, but at least will avoid slamming MPI with constant Iprobes)
+                    (*func)(); // Call the user-supplied function
+                    nanosleep(&amp;sleeptime,NULL);
+                  }
+               }
+            }
+         }
+         //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Passed allWaitForMaster with tag &quot;&lt;&lt;tag&lt;&lt;std::endl;
+      }
+
+      int BARRIER_ENTERED = 1; // Storage for barrier entry send message. Don't change this! (can't make it const due to signature of MPI functions)
+      int BARRIER_LEFT = 0;  // Storage for barrier exit send message.  &quot;          &quot;           &quot;
+
+      bool Comm::BarrierWithTimeout(const std::chrono::duration&lt;double&gt; timeout, const int tag)
+      {
+         std::size_t mpiSize = Get_size();
+         std::size_t myRank  = Get_rank();
+         bool timedout = false;
+         double total_timeout = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(timeout).count();
+
+         std::vector&lt;bool&gt; entered(mpiSize); // should init to &quot;false&quot;
+         entered[myRank] = true; // we know that we have entered the barrier
+         LOGGER&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Entered BarrierWithTimeout (with tag &quot;&lt;&lt;tag&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+         if(mpiSize&gt;1)
+         {
+            int recv_buffer = 0; // To receive the null messages
+            MPI_Status status;
+
+            // First, tell all other processes that we have entered the barrier.
+            IsendToAll(&amp;BARRIER_ENTERED, 1, tag, &amp;req_null);
+
+            // Setup timeout interval and sleep time
+            unsigned int Nchecks = 100; // Check for messages 100 times evenly spaced over the timeout interval
+            std::chrono::time_point&lt;std::chrono::system_clock&gt; truestart = std::chrono::system_clock::now();
+            std::chrono::time_point&lt;std::chrono::system_clock&gt; start = std::chrono::system_clock::now();
+
+            struct timespec sleeptime;
+            sleeptime.tv_sec = 0;
+            sleeptime.tv_nsec = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(timeout).count() / Nchecks;
+
+            // Now, loop and wait for all other processes to send their own entering signals
+            while( not timedout and std::find(entered.begin(), entered.end(), false) != entered.end() ) // Pass when 'false' cannot be found
+            {
+               // Check whether other processes have entered the barrier
+               for(std::size_t source=0;source&lt;mpiSize;source++)
+               {
+                  //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: has process &quot;&lt;&lt;source&lt;&lt;&quot; entered BarrierWithTimeout? &quot;&lt;&lt;entered[source]&lt;&lt;std::endl;
+                  if( Iprobe(source, tag, &amp;status) )
+                  {
+                     start = std::chrono::system_clock::now();
+                     // Clear out any other barrier entry messages that this process may have sent in previous loops
+                     // (for example if it has already timed out waiting for us in this barrier for several attempts)
+                     int max_loops = 10000; // Just hardcoded; if more messages than this are waiting then something crazy has happened.
+                     Recv_all(&amp;recv_buffer, 1, source, tag, max_loops);
+                     // The last message will indicate whether the sender process is waiting in their barrier, or has left it already
+                     if(recv_buffer==BARRIER_ENTERED)
+                     {
+                       // Ok the source is (probably) waiting at this barrier (modulo message delays)
+                       entered[source] = true;
+                       LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt;&quot;: Process &quot;&lt;&lt;source&lt;&lt;&quot; has entered BarrierWithTimeout (with tag &quot;&lt;&lt;tag&lt;&lt;&quot;). Resetting timeout.&quot;&lt;&lt;EOM;
+                     }
+                     else if(recv_buffer==BARRIER_LEFT)
+                     {
+                       if(not entered[source])
+                       {
+                         LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt;&quot;: Last message from process &quot;&lt;&lt;source&lt;&lt;&quot; indicates that it has LEFT BarrierWithTimeout (with tag &quot;&lt;&lt;tag&lt;&lt;&quot;). We did not see it enter this barrier. We will continue waiting in the hope that it will re-enter the barrier soon.&quot;&lt;&lt;EOM;
+                       }
+                       else
+                       {
+                          LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt;&quot;: Process &quot;&lt;&lt;source&lt;&lt;&quot; has LEFT BarrierWithTimeout (with tag &quot;&lt;&lt;tag&lt;&lt;&quot;). We will therefore abandon the barrier as well.&quot;&lt;&lt;EOM;                                 timedout = true;
+                       }
+                     }
+                     else
+                     {
+                       std::ostringstream errmsg;
+                       errmsg &lt;&lt; &quot;Error in BarrierWithTimeout! Unrecognised barrier entry/exit message received from process &quot;&lt;&lt;source&lt;&lt;&quot; (value was &quot;&lt;&lt;recv_buffer&lt;&lt;&quot;).&quot;;
+                       utils_error().raise(LOCAL_INFO, errmsg.str());
+                     }
+                  }
+               }
+
+               // While waiting, could do work here.
+
+               LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt;&quot;: sleeping... (total timeout = &quot;&lt;&lt;total_timeout&lt;&lt;&quot;ms; sleeptime = &quot;&lt;&lt;sleeptime.tv_nsec*1e-6&lt;&lt;&quot;ms)&quot;&lt;&lt; EOM;
+               // sleep (is a busy sleep, but at least will avoid slamming MPI with constant Iprobes)
+               nanosleep(&amp;sleeptime,NULL);
+
+               // Check if timeout interval has been exceeded
+               std::chrono::time_point&lt;std::chrono::system_clock&gt; current = std::chrono::system_clock::now();
+               std::chrono::duration&lt;double&gt; time_waited = current - start;
+               std::chrono::duration&lt;double&gt; true_time_waited = current - truestart;
+               double time_waited_d = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(time_waited).count();
+               double true_time_waited_d = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(true_time_waited).count();
+
+               double fraction = time_waited_d/total_timeout;
+               LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt;&quot;: time_waited = &quot;&lt;&lt;time_waited_d&lt;&lt;&quot;ms (&quot;&lt;&lt;fraction*100&lt;&lt;&quot;%% of time allowed). True time waited is &quot;&lt;&lt;true_time_waited_d&lt;&lt;&quot;ms.&quot;&lt;&lt; EOM;
+
+               if(not timedout)
+               {
+                 if(time_waited &gt;= timeout) timedout = true;
+               }
+               else
+               {
+                 LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt;&quot;:'timedout' flag has been manually set, so we will abandon the barrier.&quot;&lt;&lt; EOM;
+               }
+            }
+         }
+
+         // if we timed out, spit out some errors
+         if(timedout)
+         {
+            LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt; &quot;: timed out in BarrierWithTimeout (tag=&quot;&lt;&lt;tag&lt;&lt;&quot;) waiting for the following process(es): &quot;;
+            for(std::size_t source=0;source&lt;mpiSize;source++)
+            {
+               if(not entered[source]) LOGGER &lt;&lt; source &lt;&lt; &quot;, &quot;;
+            }
+            LOGGER &lt;&lt; EOM;
+            // Tell all other processes that we are leaving the barrier.
+            IsendToAll(&amp;BARRIER_LEFT, 1, tag, &amp;req_null);
+         }
+         else
+         {
+            // Do a barrier to sync the processes
+            //LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt; &quot;: Entering final sync Barrier in BarrierWithTimeout (tag=&quot;&lt;&lt;tag&lt;&lt;&quot;)!&quot; &lt;&lt; EOM;
+            //Barrier(); // For some reason this did not work as expected... some processed stopped by it and others were not? One process even exited, without the others! Wtf.
+            LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt; &quot;: Synchronisation succeeded in BarrierWithTimeout (tag=&quot;&lt;&lt;tag&lt;&lt;&quot;)!&quot; &lt;&lt; EOM;
+         }
+
+         if(mpiSize&gt;1)
+         {
+            int recv_buffer = 0; // To receive the null messages
+            // Clean out any remaining Barrier entry messages before we try to sync again next loop
+            int max_loops = 10000; // Just hardcoded; if more messages than this are waiting then something crazy has happened.
+            Recv_all(&amp;recv_buffer, 1, MPI_ANY_SOURCE, tag, max_loops);
+         }
+         return timedout;
+      }
+
+      /// This is a fancy barrier that waits a certain amount of time after the FIRST process
+      /// enters before unlocking (so that other action can be taken). This means that all the
+      /// processes that enter the barrier *do* get synchronised, even if the barrier unlocks.
+      /// This helps the synchronisation to be achieved next time.
+      /// NOTE! Don't use this! It is still experimental. It works, but can leave some messages
+      /// lying around which can screw up MPI_Finalize. Stick to plain BarrierWithTimeout for now.
+      bool Comm::BarrierWithCommonTimeout(std::chrono::duration&lt;double&gt; timeout,
+                                          const int tag_entered,
+                                          const int tag_timeleft)
+      {
+         std::size_t mpiSize = Get_size();
+         std::size_t myRank  = Get_rank();
+         bool timedout = false;
+
+         std::vector&lt;bool&gt; entered(mpiSize,false); // should init to &quot;false&quot;
+         entered[myRank] = true; // we know that we have entered the barrier
+         LOGGER &lt;&lt; &quot;Entered BarrierWithCommonTimeout; timeout=&quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(timeout).count()&lt;&lt;&quot; ms; tag_entered=&quot;&lt;&lt;tag_entered&lt;&lt;&quot;; tag_timeleft=&quot;&lt;&lt;tag_timeleft&lt;&lt;EOM;
+         if(mpiSize&gt;1)
+         {
+            int null_recv_buffer = 0; // To receive the null messages
+            MPI_Status status;
+
+            // First, tell all other processes that we have entered the barrier
+            IsendToAll(&amp;null_send_buffer, 1, tag_entered, &amp;req_null);
+
+            // Setup timeout interval and sleep time
+            unsigned int Nchecks = 10; // Check for messages 10 times evenly spaced over the timeout interval
+            std::chrono::time_point&lt;std::chrono::system_clock&gt; start = std::chrono::system_clock::now();
+
+            struct timespec sleeptime;
+            sleeptime.tv_sec = 0;
+            sleeptime.tv_nsec = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(timeout).count() / Nchecks;
+
+            // Vector to keep track of processes from which we have received &quot;time remaining&quot; counts.
+            std::vector&lt;bool&gt;  received_timeleft(mpiSize,false);
+            received_timeleft[myRank] = true; // Don't need to message ourselves
+
+            // Vector to keep track of processes to which we have sent *our* &quot;time remaining&quot; counts.
+            std::vector&lt;bool&gt;  sent_timeleft(mpiSize,false);
+            sent_timeleft[myRank] = true; // Don't need to message ourselves
+
+            // Counter for extra loops used to clean up timing messages
+            unsigned int overtime_loop = 0;
+            unsigned int max_overtime_loops = 10; // Should really only need 1 on average
+            bool overtime_exceeded = true; // No overtime used by default, only turned on if extra message cleanup needed
+
+            // Now, loop and wait for all other processes to send their own entering signals
+            while( (not (timedout and overtime_exceeded)) // Exit if both timeout and overtime loops are elapsed.
+               and std::find(entered.begin(), entered.end(), false) != entered.end() ) // Pass when 'false' cannot be found
+            {
+               // Check which other processes have entered the barrier
+               for(std::size_t source=0;source&lt;mpiSize;source++)
+               {
+                  //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: has process &quot;&lt;&lt;source&lt;&lt;&quot; entered BarrierWithTimeout? &quot;&lt;&lt;entered[source]&lt;&lt;std::endl;
+                  if(not entered[source] and Iprobe(source, tag_entered, &amp;status) )
+                  {
+                     // Ok the source has now reached this barrier.
+                     entered[source] = true;
+                     Recv(&amp;null_recv_buffer, 1, source, tag_entered);
+                     LOGGER &lt;&lt; myRank &lt;&lt;&quot;: &quot;&lt;&lt;&quot;Process &quot;&lt;&lt;source&lt;&lt;&quot; entered BarrierWithCommonTimeout.&quot;&lt;&lt; EOM;
+
+                     // Clear out any other barrier entry messages that this process may have sent in previous loops
+                     // (for example if it has already timed out waiting for us in this barrier for several attempts)
+                     int max_loops = 10000; // Just hardcoded; if more messages than this are waiting then something crazy has happened.
+                     Recv_all(&amp;null_recv_buffer, 1, source, tag_entered, max_loops);
+                  }
+               }
+
+               // Send our &quot;timeleft&quot; data to all processes waiting in this loop (that we know about), if we haven't already done so
+               // Some processes might be in the loop but we haven't gotten the message yet; they will have to wait until at least
+               // the next loop iteration before getting our timing data.
+               for(std::size_t source=0;source&lt;mpiSize;source++)
+               {
+                  if(entered[source] and not sent_timeleft[source])
+                  {
+                     unsigned long buf_timeleft;
+                     std::chrono::time_point&lt;std::chrono::system_clock&gt; current = std::chrono::system_clock::now();
+                     std::chrono::duration&lt;double&gt; our_timeleft = timeout - (current - start);
+                     buf_timeleft = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(our_timeleft).count();
+                     Isend(&amp;buf_timeleft, 1, source, tag_timeleft, &amp;req_null);
+                     sent_timeleft[source] = true;
+                     LOGGER &lt;&lt; myRank &lt;&lt;&quot;: &quot;&lt;&lt; &quot;Sent our_timeleft (&quot;&lt;&lt;buf_timeleft&lt;&lt;&quot; ms) to process &quot;&lt;&lt;source&lt;&lt; EOM;
+                  }
+               }
+
+               // From processes that we know are waiting in this loop, check for messages from them with their time_left data
+               for(std::size_t source=0;source&lt;mpiSize;source++)
+               {
+                  if(entered[source] and not received_timeleft[source] and Iprobe(source, tag_timeleft, &amp;status)) // wait to receive regardless of whether they have sent the message yet.
+                  {
+                     // Ok the source is trying to tell us how much time they have left in their Barrier, record this.
+                     received_timeleft[source] = true;
+                     unsigned long buf_timeleft;
+                     LOGGER &lt;&lt; myRank &lt;&lt;&quot;: &quot;&lt;&lt; &quot;Attempting to receive their_timeleft from process &quot;&lt;&lt;source&lt;&lt;EOM;
+                     int max_loops = 10000; // This is pretty extreme, if this many old timing messages have piled up then something has gone terribly wrong.
+                     Recv_all(&amp;buf_timeleft, 1, source, tag_timeleft, max_loops); // Recv all timing messages that may have piled up
+                     LOGGER &lt;&lt; myRank &lt;&lt;&quot;: &quot;&lt;&lt; &quot;Received their_timeleft (&quot;&lt;&lt;buf_timeleft&lt;&lt;&quot; ms) from process &quot;&lt;&lt;source&lt;&lt;EOM;
+                     //Update our own timeleft to reflect this
+                     //i.e. subtract difference between our timeleft and theirs from total timeout time.
+                     std::chrono::milliseconds their_timeleft(buf_timeleft);
+                     std::chrono::time_point&lt;std::chrono::system_clock&gt; current = std::chrono::system_clock::now();
+                     std::chrono::duration&lt;double&gt; our_timeleft = timeout - (current - start);
+                     std::chrono::duration&lt;double&gt; diff = our_timeleft - their_timeleft;
+                     if(diff&gt;std::chrono::milliseconds(10)) // We have more time left than them, need to correct. But ignore discrepances of less than 100 ms.
+                     {
+                        timeout = timeout - diff;
+                        // Debug
+                        LOGGER &lt;&lt; myRank &lt;&lt;&quot;: &quot;&lt;&lt; &quot;Adjusting timeout; process &quot;&lt;&lt;source&lt;&lt;&quot; reports that it has &quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(their_timeleft).count()&lt;&lt;&quot; ms until timeout, but we have &quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(our_timeleft).count()&lt;&lt;&quot; ms left. Our remaining time is longer than theirs, so we will subtract &quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(diff).count()&lt;&lt;&quot; ms to improve synchronisation.&quot; &lt;&lt; EOM;
+                     } else {
+                        LOGGER &lt;&lt; myRank &lt;&lt;&quot;: &quot;&lt;&lt; &quot;Difference between their_timeleft and our_timeleft is less than 10ms; will not bother to adjust.&quot; &lt;&lt; EOM;
+                     }
+                  }
+               }
+
+               // While waiting, could do work here.
+               LOGGER &lt;&lt; myRank &lt;&lt;&quot;: &quot;&lt;&lt; &quot;sleeping... (total timeout = &quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::seconds&gt;(timeout).count()&lt;&lt;&quot;; sleeptime = &quot;&lt;&lt;sleeptime.tv_nsec*1e-9&lt;&lt;&quot;)&quot;&lt;&lt; std::endl &lt;&lt; std::flush &lt;&lt; EOM; // Seem to need to flush before the nanosleep for some reason, or else the message vanishes (if output to std::cerr).
+               // sleep (is a busy sleep, but at least will avoid slamming MPI with constant Iprobes)
+               nanosleep(&amp;sleeptime,NULL);
+
+               // Check if timeout interval has been exceeded
+               std::chrono::time_point&lt;std::chrono::system_clock&gt; current = std::chrono::system_clock::now();
+               std::chrono::duration&lt;double&gt; time_waited = current - start;
+               //std::cerr &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt;&quot;: time_waited = &quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::seconds&gt;(time_waited).count() &lt;&lt; std::endl;
+
+               if(time_waited &gt;= timeout) timedout = true;
+
+               if(timedout)
+               {
+                  // Check if we have received all the timing messages that we were supposed to.
+                  // (i.e. make sure that we received timing messages from everyone who was supposed to have entered the barrier)
+                  // If we have not, then we enter overtime loops to try and collect them.
+                  overtime_exceeded = true; // If no problems, will not perform overtime loop
+                  for(std::size_t source=0;source&lt;mpiSize;source++)
+                  {
+                     if(entered[source] and not received_timeleft[source])
+                     {
+                        // Doh, missing a message (they may not have realised we are in the loop yet, and so have been delayed in sending us their timing data. We will do some extra loops to try and collect it)
+                        if(overtime_loop &lt; max_overtime_loops)
+                        {
+                          // We are allowed to keep looping, and have a reason to do so. Activate overtime loops.
+                          overtime_exceeded = false;
+                          LOGGER &lt;&lt; &quot;BarrierWithCommonTimeout has timed out, but we have not received 'their_timeleft' from process &quot;&lt;&lt;source&lt;&lt;&quot; despite it having been detected as having entered the barrier. We will do an overtime loop to try to Recv this message. (overtime_loop=&quot;&lt;&lt;overtime_loop&lt;&lt;&quot; of max &quot;&lt;&lt;max_overtime_loops&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+                        } else {
+                          LOGGER &lt;&lt; &quot;BarrierWithCommonTimeout has timed out, but we have not received 'their_timeleft' from process &quot;&lt;&lt;source&lt;&lt;&quot; despite it having been detected as having entered the barrier. No more overtime loops are permitted, so that message will be abandoned!&quot;&lt;&lt;EOM;
+                        }
+                     }
+                  }
+                  ++overtime_loop;
+               }
+
+               LOGGER &lt;&lt; myRank &lt;&lt;&quot;: &quot;&lt;&lt; &quot;End of wait loop; time left to timeout: &quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(timeout - time_waited).count()&lt;&lt;&quot; ms&quot;&lt;&lt;EOM;
+            }
+
+
+            // Check that we didn't screw up the logic and leave some message unreceived somehow
+            for(std::size_t source=0;source&lt;mpiSize;source++)
+            {
+               if((not timedout) and not entered[source])
+               {
+                 // Supposedly the synchronisation succeeded, but process 'source' is not recorded as having entered the barrier!
+                 LOGGER &lt;&lt; &quot;Error! Exiting BarrierWithCommonTimeout, but inconsistency in final state detected. Synchronisation registered as successful, but process &quot;&lt;&lt;source&lt;&lt;&quot; was not detected as having entered the barrier!&quot;&lt;&lt;EOM;
+               }
+
+               if(entered[source])
+               {
+                 if(not sent_timeleft[source])
+                 {
+                    LOGGER &lt;&lt; &quot;WARNING! Exiting BarrierWithCommonTimeout, but inconsistency in final state detected. Process &quot;&lt;&lt;source&lt;&lt;&quot; was detected as having entered the barrier, however we (process &quot;&lt;&lt;myRank&lt;&lt;&quot;) did not send 'our_timeleft' to that process&quot;&lt;&lt;EOM;
+                 }
+
+                 // From processes that we know are waiting in this loop, check for messages from them with their time_left data
+                 if(not received_timeleft[source])
+                 {
+                    LOGGER &lt;&lt; &quot;WARNING! Exiting BarrierWithCommonTimeout, but inconsistency in final state detected. Process &quot;&lt;&lt;source&lt;&lt;&quot; was detected as having entered the barrier, however we (process &quot;&lt;&lt;myRank&lt;&lt;&quot;) did not received 'their_timeleft' from that process&quot;&lt;&lt;EOM;
+                 }
+               }
+            }
+
+         }
+
+         // if we timed out, spit out some errors
+         if(timedout)
+         {
+            LOGGER &lt;&lt; &quot;rank &quot; &lt;&lt; myRank &lt;&lt; &quot;: timed out in BarrierWithCommonTimeout (tag_entered=&quot;&lt;&lt;tag_entered&lt;&lt;&quot;) waiting for the following process(es): &quot;;
+            for(std::size_t source=0;source&lt;mpiSize;source++)
+            {
+               if(not entered[source]) LOGGER &lt;&lt; source &lt;&lt; &quot;, &quot;;
+            }
+            LOGGER &lt;&lt; std::endl;
+         }
+         LOGGER &lt;&lt; &quot;Leaving BarrierWithCommonTimeout (tag_entered=&quot;&lt;&lt;tag_entered&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+         return timedout;
+      }
+
+      /// This routine exists for MPI debugging purposes, to help make sure that
+      /// all MPI messages are received before MPI_Finalize is called.
+      /// It doesn't fix any problems, it just lets us notice if they exist.
+      void Comm::check_for_unreceived_messages(int timeout)
+      {
+        int mpiSize = Get_size();
+        int myRank  = Get_rank();
+
+        // Wait 'timeout' seconds before checking for messages, to make sure
+        // that other processes don't send more after we check.
+        struct timespec sleeptime;
+        sleeptime.tv_sec = timeout;
+        sleeptime.tv_nsec = 0;
+        logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Waiting &quot;&lt;&lt;timeout&lt;&lt;&quot; seconds for any pending MPI communication to be transmitted, then we will check for unreceived messages from all processes (in communicator group &quot;&lt;&lt;Get_name()&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+        nanosleep(&amp;sleeptime,NULL);
+
+        logger() &lt;&lt; LogTags::core &lt;&lt; LogTags::info &lt;&lt; &quot;Unreceived message report for communicator group &quot;&lt;&lt;Get_name()&lt;&lt;&quot;:&quot;&lt;&lt;std::endl;
+        bool unreceived_messages_detected(false);
+        for(int rank=0; rank&lt;mpiSize; rank++)
+        {
+           if(rank!=myRank)
+           {
+              MPI_Status status;
+              if(Iprobe(rank, MPI_ANY_TAG, &amp;status))
+              {
+                 unreceived_messages_detected = true;
+                 logger() &lt;&lt; &quot;  Unreceived messages detected from rank &quot;&lt;&lt;rank&lt;&lt;&quot; with tag &quot;&lt;&lt;status.MPI_TAG&lt;&lt;std::endl;
+              }
+           }
+        }
+        if(not unreceived_messages_detected)
+        {
+           logger() &lt;&lt; &quot;  No unreceived messages detected!&quot;;
+        }
+        logger()&lt;&lt;EOM;
+      }
+
+
+      /// Get the process ID of the master process (rank 0)
+      long int Comm::MasterPID()
+      {
+        if (not Is_initialized())
+        {
+          utils_error().raise(LOCAL_INFO, &quot;Error retrieving process ID for rank0; MPI has not been initialised!&quot;);
+        }
+        return pid;
+      }
+
+      /// Get the process ID of the master process (rank 0)
+      void Comm::set_MasterPID(long int p) { pid = p; }
+
+      /// @}
+
+      /// Check if MPI_Init has been called (it is an error to call it twice)
+      bool Is_initialized()
+      {
+        int flag;
+        MPI_Initialized(&amp;flag);
+        return (flag!=0);
+      }
+
+      /// Check if MPI_Finalize has been called (it is an error to do anything else after this)
+      bool Is_finalized()
+      {
+        int flag;
+        MPI_Finalized(&amp;flag);
+        return (flag!=0);
+      }
+
+      /// @{ Helpers for registration of compound datatypes
+      // DEPRECATED! No longer sending compound datatypes via MPI. Leaving this here in case we need to do it in the future.
+      //
+      // /// Get vector storing functions to be run when MPI initialises.
+      // std::vector&lt;MpiIniFunc&gt;&amp; get_mpi_ini_functions()
+      // {
+      //    static std::vector&lt;MpiIniFunc&gt; mpi_ini_functions;
+      //    return mpi_ini_functions;
+      // }
+
+      // /// Constructor for AddMpiInitFunc
+      // ///
+      // /// AddMpiInitFunc will add functions to the map when it is constructed. Works
+      // /// on the same idea as the &quot;ini_code&quot; struct, except it doesn't
+      // /// cause the functions to be run, just &quot;queues them up&quot; so to speak.
+      // AddMpiIniFunc::AddMpiIniFunc(const std::string&amp; local_info, const std::string&amp; name, void(*func)())
+      // {
+      //    get_mpi_ini_functions().push_back(MpiIniFunc(local_info,name,func));
+      // }
+
+      /// @}
+
+      /// Initialise MPI
+      void Init()
+      {
+        // Dummies; can't rely on being able to use these seriously as the MPI standard doesn't mandate it.
+        int argc = 0;
+        char** argv = NULL;
+
+        // Run any functions needed to queue up MPI datatype definition functions
+        // (still a little hacky, but works)
+        // DEPRECATED! No longer adding any new MPI datatypes, for now anyway
+        // Printers::queue_mpidefs();
+
+        // Do basic interrogation
+        #ifdef MPI_DEBUG_OUTPUT
+        std::cerr &lt;&lt; &quot;Hooking up to MPI...&quot; &lt;&lt; std::endl;
+        #endif
+        if(Is_initialized())
+        {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error initialising MPI! It is already initialised!&quot;;
+           utils_error().raise(LOCAL_INFO, errmsg.str());
+        }
+        else
+        {
+           int errflag;
+           errflag = MPI_Init(&amp;argc,&amp;argv);
+
+           // // Test case for thread-safe MPI. Probably not going to use this though.
+           // int provided; // output; level of thread support provided (may not meet the requested level)
+           // errflag = MPI_Init_thread(&amp;argc,&amp;argv,MPI_THREAD_FUNNELED,&amp;provided);
+           // if(provided&lt;MPI_THREAD_MULTIPLE)
+           // {
+           //    std::ostringstream errmsg;
+           //    errmsg &lt;&lt; &quot;Error initialising MPI with thread support level MPI_THREAD_FUNNELED. The implementation did not provide the requested level of thread support; the best it could do was &quot;;
+           //    switch(provided)
+           //    {
+           //       case MPI_THREAD_SINGLE:     errmsg&lt;&lt;&quot;MPI_THREAD_SINGLE&quot;; break;
+           //       case MPI_THREAD_FUNNELED:   errmsg&lt;&lt;&quot;MPI_THREAD_FUNNELED&quot;; break;
+           //       case MPI_THREAD_SERIALIZED: errmsg&lt;&lt;&quot;MPI_THREAD_SERIALIZED&quot;; break;
+           //       case MPI_THREAD_MULTIPLE:   errmsg&lt;&lt;&quot;MPI_THREAD_MULTIPLE&quot;; break;
+           //       default: errmsg&lt;&lt;&quot;[UNRECOGNISED CODE!!!]&quot;; break;
+           //    }
+           //    utils_error().raise(LOCAL_INFO, errmsg.str());
+           // }
+
+           if(errflag!=0) {
+              std::ostringstream errmsg;
+              errmsg &lt;&lt; &quot;Error initialising MPI! Received error flag: &quot;&lt;&lt;errflag;
+              utils_error().raise(LOCAL_INFO, errmsg.str());
+           }
+        }
+
+        // Create communicator and check out basic info
+        Comm COMM_WORLD;
+
+        // Get the local process ID
+        long int pid = getpid();
+        std::vector&lt;long int&gt; pid_vec;
+        pid_vec.push_back(pid);
+
+        #ifdef MPI_DEBUG_OUTPUT
+        std::cerr &lt;&lt; &quot;  Process pool size: &quot; &lt;&lt; COMM_WORLD.Get_size() &lt;&lt; std::endl;
+        std::cerr &lt;&lt; &quot;  I am process number &quot; &lt;&lt; COMM_WORLD.Get_rank() &lt;&lt; &quot;, with PID &quot; &lt;&lt; pid &lt;&lt; std::endl;
+        #endif
+
+        // Distribute and save the process ID of the master process
+        COMM_WORLD.Bcast(pid_vec, 1, 0);
+        COMM_WORLD.set_MasterPID(pid_vec.at(0));
+
+        #ifdef MPI_DEBUG_OUTPUT
+        std::cerr &lt;&lt; &quot;  Master process PID &quot; &lt;&lt; COMM_WORLD.MasterPID() &lt;&lt; std::endl;
+        #endif
+
+        // Run externally defined initialisation functions
+        // DEPRECATED! No longer adding new MPI datatypes, at least for now
+        // std::cerr &lt;&lt; &quot;  Running MPI initialisation functions...&quot; &lt;&lt; std::endl;
+        // for (std::vector&lt;MpiIniFunc&gt;::iterator it=get_mpi_ini_functions().begin();
+        //       it != get_mpi_ini_functions().end(); it++)
+        // {
+        //  #ifdef MPI_DEBUG_OUTPUT
+        //  std::cerr &lt;&lt; &quot;    - Running function '&quot;&lt;&lt;it-&gt;myname()&lt;&lt;&quot;'&quot; &lt;&lt; std::endl;
+        //  #endif
+        //   try
+        //   {
+        //      it-&gt;runme(); // Run function.
+        //   }
+        //   catch (const std::exception&amp; e)
+        //   {
+        //      std::cerr &lt;&lt; &quot;Gambit has failed to initialise MPI due to fatal exception: &quot; &lt;&lt; e.what() &lt;&lt; std::endl;
+        //      std::cerr &lt;&lt; &quot;raised from an mpi_ini_function (with label=&quot;&lt;&lt;it-&gt;myname()&lt;&lt;&quot;) declared at: &quot; &lt;&lt; it-&gt;mylocation() &lt;&lt; std::endl;
+        //      throw(e);
+        //   }
+        // }
+        #ifdef MPI_DEBUG_OUTPUT
+        std::cerr &lt;&lt; &quot;  MPI initialisation complete.&quot; &lt;&lt; std::endl;
+        #endif
+      }
+
+      // Finalize MPI, also check for pending messages as these could cause MPI_Finalize() to hang
+      void Finalize()
+      {
+        if(not Is_finalized() and Is_initialized())
+        {
+          {
+            Comm COMM_WORLD;
+            #ifdef MPI_DEBUG_OUTPUT
+            std::cerr &lt;&lt; &quot;rank &quot; &lt;&lt; COMM_WORLD.Get_rank() &lt;&lt; &quot;: Shutting down MPI...&quot; &lt;&lt; std::endl;
+            #endif
+          // Warn if any unreceived messages exist from WORLD (when it is destructed). Undelivered messages from other communicators are checked when their wrappers are destructed, so try to make sure this happens before finalize is called, otherwise the warnings will not occur.
+          }
+          MPI_Finalize();
+        }
+      }
+
+      // Prepare to finalise MPI by checking for pending messages, as these could cause MPI_Finalize() to hang,
+      // but call MPI_abort and exit if timeout is exceeded
+      bool PrepareForFinalizeWithTimeout(bool use_mpi_abort)
+      {
+        bool synced_ok(false);
+        if(not Is_finalized() and Is_initialized())
+        {
+          Comm COMM_WORLD;
+          std::chrono::seconds timeout(10); // TODO: Perhaps make longer
+          synced_ok = !COMM_WORLD.BarrierWithTimeout(timeout, 6666);  // TODO: decide on tag in a safer way
+          if (!synced_ok)
+          {
+            // Doh timed out
+            if(use_mpi_abort)
+            {
+              //#ifdef MPI_DEBUG_OUTPUT
+              std::cerr &lt;&lt; &quot;rank &quot; &lt;&lt; COMM_WORLD.Get_rank() &lt;&lt; &quot;: FinalizeWithTimeout failed to sync for clean MPI shutdown, calling MPI_Abort...&quot; &lt;&lt; std::endl;
+              //#endif
+              COMM_WORLD.Abort();
+            }
+          }
+        }
+        return synced_ok;
+      }
+
+   }
+}
+
+
+#endif
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

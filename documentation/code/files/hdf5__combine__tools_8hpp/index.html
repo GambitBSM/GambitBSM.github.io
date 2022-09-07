@@ -1,0 +1,499 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file hdf5printer/hdf5_combine_tools.hpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file hdf5printer/hdf5_combine_tools.hpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file hdf5printer/hdf5_combine_tools.hpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file hdf5printer/hdf5_combine_tools.hpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/","url":"https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/","name":"file hdf5printer\/hdf5_combine_tools.hpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5__combine__tools_8hpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file hdf5printer\/hdf5_combine_tools.hpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-dset-size-check>define DSET_SIZE_CHECK</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-dset-size-check>define DSET_SIZE_CHECK</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file hdf5printer/hdf5_combine_tools.hpp</li></ol></nav><p class=lead></p><h1 id=file-hdf5printer-hdf5-combine-tools-hpp>file hdf5printer/hdf5_combine_tools.hpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers/>Gambit::Printers</a></strong><br>Forward declaration.</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/>Gambit::Printers::HDF5</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1printers_1_1hdf5_1_1read__hdf5/>Gambit::Printers::HDF5::read_hdf5</a></strong></td></tr><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1printers_1_1hdf5_1_1copy__hdf5/>Gambit::Printers::HDF5::copy_hdf5</a></strong></td></tr><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1printers_1_1hdf5_1_1ra__copy__hdf5/>Gambit::Printers::HDF5::ra_copy_hdf5</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5_1_1hdf5__stuff/>Gambit::Printers::HDF5::hdf5_stuff</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/hdf5__combine__tools_8hpp/#define-dset-size-check>DSET_SIZE_CHECK</a></strong>(VEC)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Gregory Martinez (<a href=mailto:gregory.david.martinez@gmail.com>gregory.david.martinez@gmail.com</a>)</p><p><strong>Date</strong>: ???</p><p>Greg&rsquo;s code for combining HDF5 output of multiple MPI processes. Replaces the old Python script</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-dset-size-check>define DSET_SIZE_CHECK <a href=#define-dset-size-check class=anchor aria-hidden=true>#</a></h3><pre><code>#define DSET_SIZE_CHECK(
+    VEC
+)
+if(VEC.size()!=ndsets) \
+                    { \
+                       std::ostringstream errmsg; \
+                       errmsg &lt;&lt; STRINGIFY(VEC) &lt;&lt; &quot; vector has inconsistent size! (&quot;&lt;&lt;VEC.size()&lt;&lt;&quot;, should be &quot;&lt;&lt;ndsets&lt;&lt;&quot;). This is a bug, please report it.&quot;; \
+                       printer_error().raise(LOCAL_INFO, errmsg.str()); \
+                    }
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  Greg's code for combining HDF5 output of
+///  multiple MPI processes. Replaces the old
+///  Python script
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///  
+///  \author Gregory Martinez
+///          (gregory.david.martinez@gmail.com)
+///  \date ???
+///
+///
+///  *********************************************
+ 
+#ifndef __hdf5_combine_tools_hpp__
+#define __hdf5_combine_tools_hpp__
+
+#include &lt;vector&gt;
+#include &lt;sstream&gt;
+#include &lt;unordered_set&gt;
+#include &lt;unordered_map&gt; 
+#include &lt;hdf5.h&gt;
+
+#include &quot;gambit/Printers/printers/hdf5printer/hdf5tools.hpp&quot;
+#include &quot;gambit/Utils/standalone_error_handlers.hpp&quot;
+#include &quot;gambit/Utils/mpiwrapper.hpp&quot;
+#include &quot;gambit/Utils/local_info.hpp&quot;
+#include &quot;gambit/Utils/new_mpi_datatypes.hpp&quot;
+
+namespace Gambit
+{
+    namespace Printers
+    {
+        namespace HDF5 
+        {
+            template &lt;typename T&gt;
+            inline T type_ret(){return T();}
+
+            template &lt;class U, typename... T&gt;
+            void Enter_HDF5(hid_t dataset, T&amp;... params);
+
+            struct read_hdf5
+            {
+                template &lt;typename U, typename T&gt;
+                static void run(U, hid_t &amp;dataset, std::vector &lt;T&gt; &amp;vec)
+                {
+                    hid_t dataspace = H5Dget_space(dataset);
+                    hssize_t dim_t = H5Sget_simple_extent_npoints(dataspace);
+                    std::vector&lt;U&gt; data(dim_t);
+                    H5Dread( dataset, get_hdf5_data_type&lt;U&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;data[0]);
+                    vec = std::vector&lt;T&gt;(data.begin(), data.end());
+                    H5Sclose(dataspace);
+                }
+            };
+
+            struct copy_hdf5
+            {
+                template &lt;typename U&gt;
+                static void run(U, hid_t &amp;dataset_out, std::vector&lt;hid_t&gt; &amp;datasets, unsigned long long &amp;size_tot, std::vector&lt;unsigned long long&gt; &amp;sizes, hid_t &amp;old_dataset, size_t offset)
+                {
+                    std::vector&lt;U&gt; data(size_tot);
+                    unsigned long long j = 0;
+                    
+                    if (old_dataset &gt;= 0)
+                    {
+                        hid_t space = H5Dget_space(old_dataset);
+                        hsize_t dim_t = H5Sget_simple_extent_npoints(space);
+                        H5Sclose(space);
+                        data.resize(dim_t + size_tot);
+                        H5Dread(old_dataset, get_hdf5_data_type&lt;U&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;data[0]);
+                        j = dim_t;
+                        //std::cout &lt;&lt;&quot;Read &quot;&lt;&lt;dim_t&lt;&lt;&quot; points from old dataset (into position 0)!&quot;&lt;&lt;std::endl;
+                        //for(unsigned long long i=0; i&lt;dim_t; i++) // debug
+                        //{
+                        //   std::cout&lt;&lt;&quot;  &quot;&lt;&lt;data[i]&lt;&lt;std::endl;
+                        //}
+                    }
+                    else
+                    {
+                        //std::cout &lt;&lt; &quot;No old dataset found!&quot; &lt;&lt; std::endl;
+                    }
+                    
+                    for (int i = 0, end = datasets.size(); i &lt; end; i++)
+                    {
+                        hsize_t dim_t;
+                        if(datasets[i] &gt;= 0)
+                        {
+                           // Check that we allocated enough space for this dataset!
+                           hid_t space = H5Dget_space(datasets[i]);
+                           dim_t = H5Sget_simple_extent_npoints(space);
+                           H5Sclose(space);
+                           if(j+dim_t &gt; data.size())
+                           {
+                              if( (data.size() - j) &lt; sizes[i]) // was !=, but I think it is fine so long as there isn't too *little* space. TODO: might be an odds measuring bug though since I think these should indeed be == if everything has happened correctly.
+                              {
+                                 // This is how much space we expect to have left in the buffer
+                                 // at the end. If not, something bad has happened!
+                                 std::ostringstream errmsg;
+                                 errmsg &lt;&lt; &quot;Error copying parameter.  Dataset in input file &quot; &lt;&lt; i 
+                                     &lt;&lt; &quot; was larger than previously measured and doesn't fit in the allocated buffer! &quot; 
+                                     &lt;&lt; &quot;This is a bug in the combination tools, please report it.&quot; &lt;&lt;std::endl;
+                                 errmsg &lt;&lt; &quot;(j=&quot;&lt;&lt;j&lt;&lt;&quot;, dim_t=&quot;&lt;&lt;dim_t&lt;&lt;&quot;, data.size()=&quot;&lt;&lt;data.size()&lt;&lt;&quot;, sizes[&quot;&lt;&lt;i&lt;&lt;&quot;]=&quot;&lt;&lt;sizes[i]&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                                 printer_error().raise(LOCAL_INFO, errmsg.str()); 
+                              }
+                              // Just some junk buffer points at the end of the last data set.
+                              // Need to do a more careful dataset selection to chop these out so
+                              // that the data fits in our buffer (and in the space already allocated
+                              // in the output file)
+                              hid_t memspace_id, dspace_id; 
+                              std::pair&lt;hid_t,hid_t&gt; chunk_ids = HDF5::selectChunk(datasets[i], 0, sizes[i]);
+                              memspace_id = chunk_ids.first;
+                              dspace_id = chunk_ids.second;
+   
+                              H5Dread(datasets[i], get_hdf5_data_type&lt;U&gt;::type(), memspace_id, dspace_id, H5P_DEFAULT, (void *)&amp;data[j]);                           
+                              H5Sclose(memspace_id);
+                              H5Sclose(dspace_id);
+                              //std::cout &lt;&lt;&quot;Read &quot;&lt;&lt;sizes[i]&lt;&lt;&quot; points from dataset &quot;&lt;&lt;i&lt;&lt;&quot; into position &quot;&lt;&lt;j&lt;&lt;std::endl;
+                              //std::ostringstream errmsg;
+                              //errmsg &lt;&lt; &quot;Error copying parameter.  Dataset in input file &quot; &lt;&lt; i 
+                              //    &lt;&lt; &quot; was larger than previously measured and doesn't fit in the allocated buffer! &quot; 
+                              //    &lt;&lt; &quot;This is a bug in the combination tools, please report it.&quot; &lt;&lt;std::endl;
+                              //errmsg &lt;&lt; &quot;(j=&quot;&lt;&lt;j&lt;&lt;&quot;, dim_t=&quot;&lt;&lt;dim_t&lt;&lt;&quot;, data.size()=&quot;&lt;&lt;data.size()&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                              //printer_error().raise(LOCAL_INFO, errmsg.str()); 
+                           }
+                           else
+                           { 
+                              // Read the whole dataset in to buffer (faster than selecting, I should think)
+                              H5Dread(datasets[i], get_hdf5_data_type&lt;U&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;data[j]);                           
+                              //std::cout &lt;&lt;&quot;Read &quot;&lt;&lt;dim_t&lt;&lt;&quot; points from dataset &quot;&lt;&lt;i&lt;&lt;&quot; into position &quot;&lt;&lt;j&lt;&lt;std::endl;
+                              //for(unsigned long long k=j; k&lt;j+dim_t; k++) // debug
+                              //{
+                              //   std::cout&lt;&lt;&quot;  &quot;&lt;&lt;data[k]&lt;&lt;std::endl;
+                              //}
+                            }
+                        }
+                        else
+                        {
+                           // dataset didn't exist for this file, skip it.
+                           dim_t = 0;
+                        }
+                       
+                        // Check size consistency
+                        if (dim_t &gt;= sizes[i])
+                        {
+                            // Data had expected size, no problem
+                            // NOTE: Why can dim_t be larger than expected? Possible padding at end or something?
+                            j += sizes[i];
+                        }
+                        else if(dim_t==0)
+                        {
+                            // Data was missing, but also probably fine, just skip it
+                            j += sizes[i];
+                        }
+                        else
+                        {
+                            // Data has some other unexpected size, error!
+                            std::ostringstream errmsg;
+                            errmsg &lt;&lt; &quot;Error copying parameter &quot;&quot;.  Dataset in input file &quot; &lt;&lt; i &lt;&lt; &quot; did not have the expected size&quot; &lt;&lt;std::endl;
+                            errmsg &lt;&lt; &quot;(sizes[&quot;&lt;&lt;i&lt;&lt;&quot;] = &quot;&lt;&lt;sizes[i]&lt;&lt;&quot; was less than dim_t = &quot;&lt;&lt;dim_t&lt;&lt;&quot;)&quot;;
+                            printer_error().raise(LOCAL_INFO, errmsg.str());
+                        }
+                    }
+                    // Select dataspace for writing in the output file. Partial write now possible, so we
+                    // have to select the hyperslab that we want to write into
+                    hid_t memspace_id, dspace_id; 
+                    std::pair&lt;hid_t,hid_t&gt; chunk_ids = HDF5::selectChunk(dataset_out, offset, data.size());
+                    memspace_id = chunk_ids.first;
+                    dspace_id = chunk_ids.second;
+                    herr_t err = H5Dwrite( dataset_out, get_hdf5_data_type&lt;U&gt;::type(), memspace_id, dspace_id, H5P_DEFAULT, (void *)&amp;data[0]);
+                    if(err&lt;0)
+                    {
+                        std::ostringstream errmsg;
+                        errmsg &lt;&lt; &quot;Error copying parameter. HD5write failed.&quot; &lt;&lt;std::endl;  
+                        printer_error().raise(LOCAL_INFO, errmsg.str());
+                    }
+                    //std::cout&lt;&lt;&quot;Wrote &quot;&lt;&lt;data.size()&lt;&lt;&quot; points into output dataset at position &quot;&lt;&lt;offset&lt;&lt;std::endl;
+                    H5Sclose(memspace_id);
+                    H5Sclose(dspace_id);
+ 
+                    // Was:
+                    //H5Dwrite( dataset_out, get_hdf5_data_type&lt;U&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;data[0]);
+                }
+            };
+
+            struct ra_copy_hdf5
+            {
+                template &lt;typename U&gt;
+                static void run (U, hid_t &amp;dataset_out, hid_t &amp;dataset2_out, std::vector&lt;hid_t&gt; &amp;datasets, std::vector&lt;hid_t&gt; &amp;datasets2, const unsigned long long size, const std::unordered_map&lt;PPIDpair, unsigned long long, PPIDHash, PPIDEqual&gt;&amp; RA_write_hash, const std::vector&lt;std::vector &lt;unsigned long long&gt; &gt; &amp;pointid, const std::vector&lt;std::vector &lt;unsigned long long&gt; &gt; &amp;rank, const std::vector&lt;unsigned long long&gt; &amp;aux_sizes, hid_t &amp;/*old_dataset*/, hid_t &amp;/*old_dataset2*/)
+                {
+                    std::vector&lt;U&gt; output(size, 0);
+                    std::vector&lt;int&gt; valids(size, 0);
+
+                    // Should no longer need the old datasets, they should have already been copied during &quot;copy_hdf5&quot;
+                    // if (old_dataset &gt;= 0 &amp;&amp; old_dataset2 &gt;= 0)
+                    // {
+                    //     hid_t space  = HDF5::getSpace(old_dataset);
+                    //     hid_t space2 = HDF5::getSpace(old_dataset2);
+                    //     hsize_t old_size  = H5Sget_simple_extent_npoints(space);
+                    //     hsize_t old_size2 = H5Sget_simple_extent_npoints(space2);
+                    //     HDF5::closeSpace(space);
+                    //     HDF5::closeSpace(space2);
+                    //     if(old_size &gt; size or old_size2 &gt; size)
+                    //     {
+                    //        std::ostringstream errmsg;
+                    //        errmsg &lt;&lt; &quot;Error copying old dataset into buffer! The old dataset has a larger size than has been allocated for new data! (old_size=&quot;&lt;&lt;old_size&lt;&lt;&quot;, old_size2=&quot;&lt;&lt;old_size2&lt;&lt;&quot;, new_size=&quot;&lt;&lt;size&lt;&lt;&quot;)&quot;;
+                    //        printer_error().raise(LOCAL_INFO, errmsg.str());
+                    //     }
+                    //     H5Dread(old_dataset,  get_hdf5_data_type&lt;U&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;output[0]);
+                    //     H5Dread(old_dataset2, get_hdf5_data_type&lt;int&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;valids[0]);
+                    // }
+
+                    // Instead we just need to read in the recently-copied primary points and replace
+                    // entries as needed (TODO: would use much less memory if we just write individual replacements
+                    // straight to disk)
+                    if (dataset_out &gt;= 0 &amp;&amp; dataset2_out &gt;= 0)
+                    {
+                        hid_t space  = HDF5::getSpace(dataset_out);
+                        hid_t space2 = HDF5::getSpace(dataset2_out);
+                        hsize_t out_size  = HDF5::getSimpleExtentNpoints(space);
+                        hsize_t out_size2 = HDF5::getSimpleExtentNpoints(space2);
+                        HDF5::closeSpace(space);
+                        HDF5::closeSpace(space2);
+                        if(out_size &gt; size or out_size2 &gt; size)
+                        {
+                           std::ostringstream errmsg;
+                           errmsg &lt;&lt; &quot;Error copying dataset into buffer for RA replacements! The dataset has a larger size than has been allocated for new data! (out_size=&quot;&lt;&lt;out_size&lt;&lt;&quot;, out_size2=&quot;&lt;&lt;out_size2&lt;&lt;&quot;, expected_size=&quot;&lt;&lt;size&lt;&lt;&quot;)&quot;;
+                           printer_error().raise(LOCAL_INFO, errmsg.str());
+                        }
+                        H5Dread(dataset_out,  get_hdf5_data_type&lt;U&gt;::type(),   H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;output[0]);
+                        H5Dread(dataset2_out, get_hdf5_data_type&lt;int&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;valids[0]);
+                    }
+                    else
+                    {
+                        std::ostringstream errmsg;
+                        errmsg &lt;&lt; &quot;Error copying datasets into buffer for RA replacements! Could not open datasets (were they created properly during 'copy_hdf5' operation?).&quot;;
+                        printer_error().raise(LOCAL_INFO, errmsg.str());
+                    } 
+
+                    // Check that all the input given is consistent in length
+                    size_t ndsets = datasets.size();
+                    #define DSET_SIZE_CHECK(VEC) \
+                    if(VEC.size()!=ndsets) \
+                    { \
+                       std::ostringstream errmsg; \
+                       errmsg &lt;&lt; STRINGIFY(VEC) &lt;&lt; &quot; vector has inconsistent size! (&quot;&lt;&lt;VEC.size()&lt;&lt;&quot;, should be &quot;&lt;&lt;ndsets&lt;&lt;&quot;). This is a bug, please report it.&quot;; \
+                       printer_error().raise(LOCAL_INFO, errmsg.str()); \
+                    }
+                    DSET_SIZE_CHECK(datasets2)
+                    DSET_SIZE_CHECK(aux_sizes)
+                    DSET_SIZE_CHECK(pointid)
+                    DSET_SIZE_CHECK(rank)
+                    #undef DSET_SIZE_CHECK
+ 
+                    // Additional iterators to be iterated in sync with dataset iteration
+                    // We are actually only copying over one 'parameter' in this function,
+                    // but are looping over matching datasets from the temp files from
+                    // each rank. So each iteration goes to the next file, but remains
+                    // targeting the same parameter.
+                    auto st = aux_sizes.begin();
+                    auto pt = pointid.begin(); 
+                    auto ra = rank.begin();
+                    auto itv = datasets2.begin();
+                    for (auto it = datasets.begin(); it != datasets.end(); 
+                         ++it, ++itv, ++pt, ++ra, ++st)
+                    {
+                       if(*it &lt; 0)
+                       {
+                          // Dataset wasn't opened, probably some RA parameter just happened to not 
+                          // exist in a certain temporary file. Skip this dataset. Though check that
+                          // Dataset2 also wasn't opened.
+                          if(*itv &gt;= 0)
+                          {
+                              std::ostringstream errmsg;
+                              errmsg &lt;&lt; &quot;dataset2 iterator ('isvalid') points to an open dataset, while dataset iterator (main dataset) does not. This is inconsistent and indicates either a bug in this combine code, or in the code which generated the datasets, please report it.&quot;;
+                              printer_error().raise(LOCAL_INFO, errmsg.str());
+                          }
+                       }
+                       else
+                       {
+                          hid_t space = H5Dget_space(*it);
+                          hssize_t dim_t = H5Sget_simple_extent_npoints(space);
+                          std::vector&lt;U&gt; data(dim_t);
+                          std::vector&lt;bool&gt; valid;
+                          Enter_HDF5&lt;read_hdf5&gt; (*itv, valid);
+                          H5Dread(*it, get_hdf5_data_type&lt;U&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;data[0]);
+                          
+                          if((unsigned long long)dim_t &lt; *st)
+                          {
+                              std::ostringstream errmsg;
+                              errmsg &lt;&lt; &quot;Error copying aux parameter.  Input file smaller than required.&quot;;
+                              printer_error().raise(LOCAL_INFO, errmsg.str());
+                          }
+
+                          for (int i = 0, end = *st; i &lt; end; i++)
+                          {
+                              if (valid[i])
+                              {
+                                  // Look up target for write in hash map
+                                  std::unordered_map&lt;PPIDpair, unsigned long long, PPIDHash, PPIDEqual&gt;::const_iterator ihash = RA_write_hash.find(PPIDpair((*pt)[i],(*ra)[i]));
+                                  if(ihash != RA_write_hash.end())
+                                  {
+                                      // found hash key, copy data
+                                      unsigned long long temp = ihash-&gt;second;
+                                      if(temp &gt; size)
+                                      {
+                                          std::ostringstream errmsg;
+                                          errmsg &lt;&lt; &quot;Error copying random access parameter. The hash entry for &quot;
+                                          &lt;&lt; &quot;pt number &quot; &lt;&lt; (*pt)[i] &lt;&lt; &quot; of rank &quot; &lt;&lt; (*ra)[i]  
+                                          &lt;&lt; &quot; targets the point outside the size of the output dataset (&quot;&lt;&lt;temp&lt;&lt;&quot; &gt; &quot;&lt;&lt;size&lt;&lt;&quot;).&quot; 
+                                          &lt;&lt; &quot;This indicates&quot;
+                                          &lt;&lt; &quot; a bug in the hash generation, please report it.&quot;; 
+                                          printer_error().raise(LOCAL_INFO, errmsg.str());
+                                      }
+                                      output[temp] = data[i];
+                                      valids[temp] = 1;
+                                  }
+                                  else
+                                  {
+                                     std::ostringstream errmsg;
+                                     errmsg &lt;&lt; &quot;Error copying random access parameter. Could not find &quot;
+                                     &lt;&lt; &quot;pt number &quot; &lt;&lt; (*pt)[i] &lt;&lt; &quot; of rank &quot; &lt;&lt; (*ra)[i]  
+                                     &lt;&lt; &quot; in the output dataset (hash entry was not found).&quot;;
+                                     printer_error().raise(LOCAL_INFO, errmsg.str());
+                                  }
+                              }
+                          }
+                       } // end if
+                    }
+                    
+                    H5Dwrite( dataset_out, get_hdf5_data_type&lt;U&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;output[0]);
+                    H5Dwrite( dataset2_out, get_hdf5_data_type&lt;int&gt;::type(), H5S_ALL, H5S_ALL, H5P_DEFAULT, (void *)&amp;valids[0]);
+                }
+            };
+
+            template &lt;class U, typename... T&gt;
+            inline void Enter_HDF5(hid_t dataset, T&amp;... params)
+            {
+                if(dataset&lt;0)
+                {
+                   std::ostringstream errmsg;
+                   errmsg &lt;&lt; &quot;Invalid dataset supplied to Enter_HDF5 routine!&quot;;
+                   printer_error().raise(LOCAL_INFO, errmsg.str());
+                }
+
+                hid_t dtype = H5Dget_type(dataset);
+                if(dtype&lt;0)
+                {
+                   std::ostringstream errmsg;
+                   errmsg &lt;&lt; &quot;Failed to detect type for dataset provides as argument for Enter_HDF5 routine!&quot;;
+                   printer_error().raise(LOCAL_INFO, errmsg.str());
+                }
+
+                //H5T_class_t cl = H5Tget_class(dtype);
+                hid_t type = H5Tget_native_type(dtype, H5T_DIR_DESCEND);
+                if(type&lt;0)
+                {
+                   std::ostringstream errmsg;
+                   errmsg &lt;&lt; &quot;Failed to detect native type for dataset provides as argument for Enter_HDF5 routine!&quot;;
+                   printer_error().raise(LOCAL_INFO, errmsg.str());
+                }
+
+                if (H5Tequal(type, get_hdf5_data_type&lt;float&gt;::type()))
+                {
+                    U::run(float(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;double&gt;::type()))
+                {
+                    U::run(double(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;long double&gt;::type()))
+                {
+                    U::run(type_ret&lt;long double&gt;(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;char&gt;::type()))
+                {
+                    U::run(char(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;short&gt;::type()))
+                {
+                    U::run(short(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;int&gt;::type()))
+                {
+                    U::run(int(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;long&gt;::type()))
+                {
+                    U::run(long(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;long long&gt;::type()))
+                {
+                    U::run(type_ret&lt;long long&gt;(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;unsigned char&gt;::type()))
+                {
+                    U::run(type_ret&lt;unsigned char&gt;(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;unsigned short&gt;::type()))
+                {
+                    U::run(type_ret&lt;unsigned short&gt;(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;unsigned int&gt;::type()))
+                {
+                    U::run(type_ret&lt;unsigned int&gt;(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;unsigned long&gt;::type()))
+                {
+                    U::run(type_ret&lt;unsigned long&gt;(), dataset, params...);
+                }
+                else if (H5Tequal(type, get_hdf5_data_type&lt;unsigned long long&gt;::type()))
+                {
+                    U::run(type_ret&lt;unsigned long long&gt;(), dataset, params...);
+                }
+                else
+                {
+                    std::ostringstream errmsg;
+                    errmsg &lt;&lt; &quot;Could not deduce input hdf5 parameter type.&quot;;
+                    printer_error().raise(LOCAL_INFO, errmsg.str());
+                }
+                
+                H5Tclose(dtype);
+            }
+
+            class hdf5_stuff
+            {
+            private:
+                std::string group_name;
+                std::vector&lt;std::string&gt; param_names, aux_param_names;
+                std::unordered_set&lt;std::string&gt; param_set, aux_param_set; // for easier finding
+                std::vector&lt;unsigned long long&gt; cum_sizes;
+                std::vector&lt;unsigned long long&gt; sizes;
+                unsigned long long size_tot;
+                unsigned long long size_tot_l;
+                std::string root_file_name;
+                bool do_cleanup; // If true, delete old temporary files after successful combination
+                std::string get_fname(const size_t); // get name of ith temp file
+                bool skip_unreadable; // If true, ignores temp files that fail to open
+                std::vector&lt;hid_t&gt; files;
+                std::vector&lt;hid_t&gt; groups;
+                std::vector&lt;hid_t&gt; aux_groups;
+                std::vector&lt;std::string&gt; file_names; // Names of temp files to combine
+                bool custom_mode; // Running in mode which allows 'custom' filenames (for combining output from multiple runs)
+
+            public:
+                hdf5_stuff(const std::string &amp;base_file_name, const std::string &amp;output_file, const std::string &amp;group_name, const size_t num, const bool cleanup, const bool skip, const std::vector&lt;std::string&gt;&amp; input_files);
+                ~hdf5_stuff(); // close files on destruction                
+                void Enter_Aux_Parameters(const std::string &amp;output_file, bool resume = false);
+            };
+
+            inline void combine_hdf5_files(const std::string output_file, const std::string &amp;base_file_name, const std::string &amp;group, const size_t num, const bool resume, const bool cleanup, const bool skip, const std::vector&lt;std::string&gt; input_files = std::vector&lt;std::string&gt;())
+            {
+                hdf5_stuff stuff(base_file_name, output_file, group, num, cleanup, skip, input_files);
+                
+                stuff.Enter_Aux_Parameters(output_file, resume);
+            }
+  
+            // Helper function to compute target point hash for RA combination
+            std::unordered_map&lt;PPIDpair, unsigned long long, PPIDHash, PPIDEqual&gt; get_RA_write_hash(hid_t, std::unordered_set&lt;PPIDpair,PPIDHash,PPIDEqual&gt;&amp;);
+
+            /// Search for temporary files to be combined
+            std::pair&lt;std::vector&lt;std::string&gt;,std::vector&lt;size_t&gt;&gt; find_temporary_files(const std::string&amp; finalfile);
+            std::pair&lt;std::vector&lt;std::string&gt;,std::vector&lt;size_t&gt;&gt; find_temporary_files(const std::string&amp; finalfile, size_t&amp; max_i);
+  
+        }
+    }
+}
+
+#endif
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>

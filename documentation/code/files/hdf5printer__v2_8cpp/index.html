@@ -1,0 +1,2664 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.github.io/main.2b4f179ba5137bf560410d5863d012cb95c0a7504da18190247e40a43544a8252fba5dc321f967a611ca9a4d80dec44fabc75d108c7c0e4e8ed381ec007b7391.css integrity="sha512-K08Xm6UTe/VgQQ1YY9ASy5XAp1BNoYGQJH5ApDVEqCUvul3DIflnphHKmk2A3sRPq8ddEIx8Dk6O04HsAHtzkQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file hdf5printer_v2/hdf5printer_v2.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file hdf5printer_v2/hdf5printer_v2.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.github.io/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file hdf5printer_v2/hdf5printer_v2.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.github.io/gambit_logo.png"><meta name=twitter:image:alt content="file hdf5printer_v2/hdf5printer_v2.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.github.io/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.github.io/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.github.io/#/schema/image/1","url":"https://gambitbsm.github.io/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.github.io/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.github.io/#/schema/website/1","url":"https://gambitbsm.github.io/","name":"GAMBIT","description":"Documentation for the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/","url":"https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/","name":"file hdf5printer_v2\/hdf5printer_v2.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.github.io/#/schema/website/1"},"about":{"@id":"https://gambitbsm.github.io/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/","url":"https://gambitbsm.github.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/","url":"https://gambitbsm.github.io/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/","url":"https://gambitbsm.github.io/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.github.io/documentation/code/files/","url":"https://gambitbsm.github.io/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.github.io/documentation/code/files/hdf5printer__v2_8cpp/#/schema/image/2","url":"https://gambitbsm.github.io/gambit_logo.png","contentUrl":"https://gambitbsm.github.io/gambit_logo.png","caption":"file hdf5printer_v2\/hdf5printer_v2.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.github.io/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.github.io/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.github.io/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.github.io/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.github.io/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.github.io//images/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/examples/colliderbit_example>Examples</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-examples aria-expanded=false>
+Examples</button><div class=collapse id=section-examples><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/examples/colliderbit_example/>ColliderBit Example</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit/>AnotherBit</a></li><li><a class="docs-link rounded" href=/documentation/examples/anotherbit2/>AnotherBit2</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-define-get-buffer>define DEFINE_GET_BUFFER</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-define-get-buffer>define DEFINE_GET_BUFFER</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file hdf5printer_v2/hdf5printer_v2.cpp</li></ol></nav><p class=lead></p><h1 id=file-hdf5printer-v2-hdf5printer-v2-cpp>file hdf5printer_v2/hdf5printer_v2.cpp</h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers/>Gambit::Printers</a></strong><br>Forward declaration.</td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/hdf5printer__v2_8cpp/#define-define-get-buffer>DEFINE_GET_BUFFER</a></strong>(TYPE)<br>Specialisation declarations for &lsquo;get_buffer&rsquo; function for each buffer type.</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p>HDF5 printer version 2 function defintions</p><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-define-get-buffer>define DEFINE_GET_BUFFER <a href=#define-define-get-buffer class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEFINE_GET_BUFFER(
+    TYPE
+)
+    template&lt;&gt;\
+    HDF5Buffer&lt;TYPE&gt;&amp; HDF5MasterBuffer::get_buffer&lt;TYPE&gt;(const std::string&amp; label, const std::vector&lt;PPIDpair&gt;&amp; buffered_points)\
+    {\
+        HDF5Buffer&lt;TYPE&gt;&amp; out_buffer = CAT(hdf5_buffers_,TYPE).get_buffer(label,buffered_points);\
+        /*logger()&lt;&lt;&quot;Updating buffer map with buffer &quot;&lt;&lt;label&lt;&lt;&quot;, C++ type=&quot;&lt;&lt;typeid(TYPE).name()&lt;&lt;&quot;, type ID=&quot;&lt;&lt;out_buffer.get_type_id()&lt;&lt;EOM;*/\
+        update_buffer_map(label,out_buffer);\
+        return out_buffer;\
+    }
+</code></pre><p>Specialisation declarations for &lsquo;get_buffer&rsquo; function for each buffer type.</p><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  HDF5 printer version 2 function defintions
+//
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Ben Farmer
+///          (b.farmer@imperial.ac.uk)
+///  \date 2019 Jan
+///
+///  *********************************************
+//
+#include &lt;math.h&gt;
+#include &lt;limits&gt;
+#include &lt;iterator&gt;
+#include &quot;gambit/Printers/printers/hdf5printer/hdf5tools.hpp&quot;
+#include &quot;gambit/Printers/printers/hdf5printer_v2.hpp&quot;
+#include &quot;gambit/Utils/util_functions.hpp&quot;
+
+// Helper to check next item in iteration
+//template &lt;typename Iter&gt;
+//Iter next(Iter iter)
+//{
+//        return ++iter;
+//}
+
+namespace Gambit
+{
+  namespace Printers
+  {
+    /// @{ HDF5DataSetBase member functions
+
+    /// Constructor
+    HDF5DataSetBase::HDF5DataSetBase(const std::string&amp; name, const hid_t tid)
+      : _myname(name)
+      , is_open(false)
+      , exists_on_disk(false)
+      , dset_id(-1)
+      , hdftype_id(tid)
+      , type_id(HDF5::inttype_from_h5type(tid))
+    {}
+
+    /// Version where type is not provided; set to default of -1
+    HDF5DataSetBase::HDF5DataSetBase(const std::string&amp; name)
+      : _myname(name)
+      , is_open(false)
+      , exists_on_disk(false)
+      , dset_id(-1)
+      , hdftype_id(-1)
+      , type_id(-1)
+    {}
+
+
+    /// Destructor
+    HDF5DataSetBase::~HDF5DataSetBase()
+    {
+        if(is_open)
+        {
+            if(dset_id&lt;0)
+            {
+                std::stringstream errmsg;
+                errmsg&lt;&lt;&quot;Error closing dataset in destructor for HDF5DataSetBase! Dataset is marked 'open' but dset_id&lt;0! This is a bug, please report it.&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());     
+            } 
+            close_dataset();
+        }
+    }
+  
+    /// Retrieve name of the dataset we are supposed to access
+    std::string HDF5DataSetBase::myname() const { return _myname; }
+
+    /// Access variables that track whether the dataset exists on disk yet 
+    bool HDF5DataSetBase::get_exists_on_disk() const { return exists_on_disk; }
+    void HDF5DataSetBase::set_exists_on_disk() { exists_on_disk = true; }
+
+    /// Retrieve the dataset ID for the currently open dataset 
+    hid_t HDF5DataSetBase::get_dset_id() const
+    {
+        ensure_dataset_is_open();
+        return dset_id;
+    }
+
+    /// Retrieve the integer type ID for this dataset 
+    int HDF5DataSetBase::get_type_id() const { return type_id; }
+
+    /// Retrieve the HDF5 type ID for this dataset 
+    hid_t HDF5DataSetBase::get_hdftype_id() const { return hdftype_id; }
+
+    /// Check if our dataset exists on disk with the required name at the given location
+    bool HDF5DataSetBase::dataset_exists(const hid_t loc_id)
+    {
+        bool exists(false);
+        htri_t r = H5Lexists(loc_id, myname().c_str(), H5P_DEFAULT);
+        if(r&gt;0) exists=true;
+        else if(r==0) exists=false;
+        else
+        {
+            // Something else went wrong; error
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;HDF5 error encountered while checking if dataset named '&quot;&lt;&lt;myname()&lt;&lt;&quot;' exists!&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());     
+        }
+        if(exists) set_exists_on_disk();
+        return exists;
+    }
+
+    /// Ensure that the dataset exists with the specified length
+    void HDF5DataSetBase::ensure_dataset_exists(const hid_t loc_id, const std::size_t length)
+    {
+        if(not dataset_exists(loc_id))
+        {
+            // Dataset doesn't exist; create it
+            create_dataset(loc_id);
+        }
+
+        // Make sure length is correct (add fill values as needed);
+        open_dataset(loc_id);
+        if(get_dset_length()&lt;length)
+        {
+            extend_dset_to(length);
+        }
+        close_dataset();
+    }
+
+    /// Retrieve the current size of the dataset on disk
+    std::size_t HDF5DataSetBase::get_dset_length() const
+    {
+        ensure_dataset_is_open();
+        return dims[0];
+        //return virtual_dset_length;
+    }
+
+    /// Set the variable that tracks the (used) dataset size on disk
+    //void HDF5DataSetBase::set_dset_length(const std::size_t newsize)
+    //{
+    //    virtual_dset_length = newsize;
+    //}
+
+    /// Extend dataset to the specified size
+    void HDF5DataSetBase::extend_dset_to(const std::size_t newlength)
+    {
+        ensure_dataset_is_open();
+        std::size_t current_length = dims[0];
+        if(newlength&lt;current_length)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Failed to extend dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) from length &quot;&lt;&lt;current_length&lt;&lt;&quot; to length &quot;&lt;&lt;newlength&lt;&lt;&quot;! The new length is short than the existing length! This is a bug, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        dims[0] = newlength; 
+        herr_t status = H5Dset_extent(get_dset_id(), dims);
+        if(status&lt;0)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Failed to extend dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) from length &quot;&lt;&lt;current_length&lt;&lt;&quot; to length &quot;&lt;&lt;newlength&lt;&lt;&quot;!&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Record the new dataset length
+        //set_dset_length(newlength);
+    }
+
+    /// Extend dataset by the specified amount
+    void HDF5DataSetBase::extend_dset_by(const std::size_t extend_by)
+    {
+       ensure_dataset_is_open();
+       std::size_t current_length = get_dset_length();
+       std::size_t newlength = current_length + extend_by;
+       extend_dset_to(newlength);
+    }
+
+    /// Enforce that the dataset must be open for whatever follows (or else an error is thrown)
+    void HDF5DataSetBase::ensure_dataset_is_open() const
+    {
+        if(not is_open)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error! Dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) is not open! Code following this check is not permitted to run. This is a bug in HDF5Printer2, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());     
+        }
+    }
+
+    /// Open an existing dataset
+    void HDF5DataSetBase::open_dataset(hid_t location_id)
+    {
+        if(is_open)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error opening dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. The dataset is already open! This is a bug, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Open the dataset
+        dset_id = H5Dopen2(location_id, myname().c_str(), H5P_DEFAULT);
+        if(dset_id&lt;0)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error opening existing dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. H5Dopen2 failed.&quot; &lt;&lt; std::endl
+                   &lt;&lt; &quot;You may have a corrupt hdf5 file from a previous run. Try using -r, or deleting the old output.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Get dataspace of the dataset.
+        hid_t dspace_id = H5Dget_space(dset_id);
+        if(dspace_id&lt;0)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error opening existing dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. H5Dget_space failed.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Get the number of dimensions in the dataspace.
+        int rank = H5Sget_simple_extent_ndims(dspace_id);
+        if(rank&lt;0)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error opening existing dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. H5Sget_simple_extent_ndims failed.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+        if(rank!=DSETRANK)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error while accessing existing dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. Rank of dataset (&quot;&lt;&lt;rank&lt;&lt;&quot;) does not match the expected rank (&quot;&lt;&lt;DSETRANK&lt;&lt;&quot;).&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Get the dimension size of each dimension in the dataspace
+        // now that we know ndims matches DSETRANK.
+        hsize_t dims_out[DSETRANK];
+        int ndims = H5Sget_simple_extent_dims(dspace_id, dims_out, NULL);
+        if(ndims&lt;0)
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error while accessing existing dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. Failed to retrieve dataset extents (H5Sget_simple_extent_dims failed).&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Update parameters to match dataset contents
+        // Compute initial dataspace and chunk dimensions
+        dims[0] = dims_out[0]; // Set to match existing data
+        maxdims[0] = H5S_UNLIMITED; // No upper limit on number of records allowed in dataset
+        chunkdims[0] = HDF5_CHUNKLENGTH;
+        //slicedims[0] = 1; // Dimensions of a single record in the data space
+
+        // Release dataspace handle
+        H5Sclose(dspace_id);
+    
+        // Register that we have opened the dataset
+        is_open = true;
+    }
+
+    /// Close a dataset
+    void HDF5DataSetBase::close_dataset()
+    {
+        if(is_open)
+        {
+            if(dset_id&gt;=0)
+            {
+                herr_t status = H5Dclose(dset_id);
+                if(status&lt;0)
+                {
+                    std::ostringstream errmsg;
+                    errmsg &lt;&lt; &quot;Error closing dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. H5Dclose failed.&quot;;
+                    printer_error().raise(LOCAL_INFO, errmsg.str());
+                }
+            }
+            else
+            {
+                std::ostringstream errmsg;
+                errmsg &lt;&lt; &quot;Error closing dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. Dataset ID is negative. This would usually indicate that the dataset is not open, however the 'is_open' flag is 'true'. This is a bug, please report it.&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+        }
+        else
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error closing dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. The dataset is not open! This is a bug, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str()); 
+        }
+        is_open = false;
+    }
+
+    /// Obtain memory and dataspace identifiers for writing to a hyperslab in the dataset
+    std::pair&lt;hid_t,hid_t&gt; HDF5DataSetBase::select_hyperslab(std::size_t offset, std::size_t length) const
+    {
+        // Make sure that this chunk lies within the dataset extents
+        if(offset + length &gt; get_dset_length())
+        {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error selecting chunk from dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;) in HDF5 file. Tried to select a hyperslab which extends beyond the dataset extents:&quot; &lt;&lt; std::endl;
+           errmsg &lt;&lt; &quot;  offset = &quot; &lt;&lt; offset &lt;&lt; std::endl;
+           errmsg &lt;&lt; &quot;  offset+length = &quot; &lt;&lt; offset+length &lt;&lt; std::endl;
+           errmsg &lt;&lt; &quot;  dset_length = &quot;&lt;&lt; get_dset_length() &lt;&lt; std::endl;
+           printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Select a hyperslab.
+        hid_t dspace_id = H5Dget_space(get_dset_id());
+        if(dspace_id&lt;0) 
+        {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error selecting chunk from dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;) in HDF5 file. H5Dget_space failed.&quot; &lt;&lt; std::endl;
+           printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        hsize_t offsets[DSETRANK];
+        offsets[0] = offset;
+
+        hsize_t selection_dims[DSETRANK]; // Set same as output chunks, but may have a different length
+        selection_dims[0] = length; // Adjust chunk length to input specification
+
+        herr_t err_hs = H5Sselect_hyperslab(dspace_id, H5S_SELECT_SET, offsets, NULL, selection_dims, NULL);        
+
+        if(err_hs&lt;0) 
+        {
+           std::ostringstream errmsg;
+           errmsg &lt;&lt; &quot;Error selecting chunk from dataset (with name=\&quot;&quot;&lt;&lt;myname()&lt;&lt;&quot;\&quot;, offset=&quot;&lt;&lt;offset&lt;&lt;&quot;, length=&quot;&lt;&lt;selection_dims[0]&lt;&lt;&quot;) in HDF5 file. H5Sselect_hyperslab failed.&quot; &lt;&lt; std::endl;
+           printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Define memory space
+        //H5::DataSpace memspace( DSETRANK, this-&gt;get_chunkdims() );
+        hid_t memspace_id = H5Screate_simple(DSETRANK, selection_dims, NULL);         
+
+        #ifdef HDF5_DEBUG 
+        std::cout &lt;&lt; &quot;Debug variables:&quot; &lt;&lt; std::endl
+                  &lt;&lt; &quot;  dset_length       = &quot; &lt;&lt; get_dset_length() &lt;&lt; std::endl
+                  &lt;&lt; &quot;  offsets[0]        = &quot; &lt;&lt; offsets[0] &lt;&lt; std::endl
+                  &lt;&lt; &quot;  selection_dims[0] = &quot; &lt;&lt; selection_dims[0] &lt;&lt; std::endl;
+        #endif
+
+        return std::make_pair(memspace_id, dspace_id); // Be sure to close these identifiers after using them!
+    }
+
+    /// @}
+   
+    /// @{ HDF5DataSetBasic member functions
+ 
+    HDF5DataSetBasic::HDF5DataSetBasic(const std::string&amp; name)
+     : HDF5DataSetBase(name)
+    {}
+
+    void HDF5DataSetBasic::create_dataset(hid_t /*location_id*/)
+    {
+        std::ostringstream errmsg;
+        errmsg&lt;&lt;&quot;Tried to use create_dataset function in a HDF5DataSetBasic object! This is not allowed. This object is only able to perform basic operations on existing datasets, like resizings them. For full dataset access a HDF5DataSet&lt;T&gt; object is required, where the type T of the dataset must be known.&quot;;
+        printer_error().raise(LOCAL_INFO, errmsg.str());
+    }
+    
+    /// @}
+
+    /// @{ HDF5BufferBase member functions
+    
+    /// Constructor
+    HDF5BufferBase::HDF5BufferBase(const std::string&amp; name, const bool sync)
+      : _dset_name(name)
+      , synchronised(sync)
+    {}
+ 
+    /// Report name of dataset for which we are the buffer
+    std::string HDF5BufferBase::dset_name() const
+    {
+        return _dset_name;
+    }
+
+    /// Report whether this buffer is synchronised
+    bool HDF5BufferBase::is_synchronised() const
+    {
+        return synchronised;
+    }
+
+    /// Report all the points in this buffer
+    std::set&lt;PPIDpair&gt; HDF5BufferBase::get_points_set() const
+    { 
+        return buffer_set; 
+    }
+
+    /// @}
+
+
+    /// @{ Member functions of HDF5MasterBuffer
+
+    HDF5MasterBuffer::HDF5MasterBuffer(const std::string&amp; filename, const std::string&amp; groupname, const bool sync, const std::size_t buflen
+#ifdef WITH_MPI
+        , GMPI::Comm&amp; comm
+#endif
+        )
+        : synchronised(sync)
+        , buffer_length(sync ? buflen : MAX_BUFFER_SIZE) // Use buflen for the bufferlength if this is a sync buffer, otherwise use MAX_BUFFER_SIZE
+        , file(filename)
+        , group(groupname)
+        , file_id(-1)
+        , group_id(-1)
+        , location_id(-1)
+        , hdf5out(file,false)
+        , file_open(false)
+        , have_lock(false)
+#ifdef WITH_MPI
+        , hdf5_buffers_int(sync,comm)
+        , hdf5_buffers_uint(sync,comm)
+        , hdf5_buffers_long(sync,comm)
+        , hdf5_buffers_ulong(sync,comm)
+        //, hdf5_buffers_longlong(sync,comm)
+        //, hdf5_buffers_ulonglong(sync,comm)
+        , hdf5_buffers_float(sync,comm)
+        , hdf5_buffers_double(sync,comm)
+        , myComm(comm)
+#else
+        , hdf5_buffers_int(sync)
+        , hdf5_buffers_uint(sync)
+        , hdf5_buffers_long(sync)
+        , hdf5_buffers_ulong(sync)
+        //, hdf5_buffers_longlong(sync)
+        //, hdf5_buffers_ulonglong(sync)
+        , hdf5_buffers_float(sync)
+        , hdf5_buffers_double(sync)
+#endif
+    {
+        //std::cout&lt;&lt;&quot;Constructed MasterBuffer to attach to file/group:&quot;&lt;&lt;std::endl;
+        //std::cout&lt;&lt;&quot;file : &quot;&lt;&lt;file&lt;&lt;std::endl;
+        //std::cout&lt;&lt;&quot;group: &quot;&lt;&lt;group&lt;&lt;std::endl;
+    }
+
+    HDF5MasterBuffer::~HDF5MasterBuffer()
+    {
+        if(file_open) close_and_unlock_file();
+    }
+
+    bool HDF5MasterBuffer::is_synchronised()
+    {
+        return synchronised;
+    }
+
+    /// Report length of buffer for HDF5 output
+    std::size_t HDF5MasterBuffer::get_buffer_length()
+    {
+        return buffer_length;
+    }
+
+    /// Report what output file we are targeting
+    std::string HDF5MasterBuffer::get_file()  { return file; }
+
+    /// Report which group in the output file we are targeting
+    std::string HDF5MasterBuffer::get_group() { 
+        //std::cout&lt;&lt;&quot;Accessing variable 'group'&quot;&lt;&lt;std::endl;
+        //std::cout&lt;&lt;&quot;group = &quot;&lt;&lt;group&lt;&lt;std::endl;
+        return group; 
+    }
+
+    /// Report number of points currently in the buffer
+    std::size_t HDF5MasterBuffer::get_Npoints()
+    {
+        return buffered_points.size();
+    }
+
+    /// Empty all buffers to disk
+    /// (or as much of them as is currently possible in RA case)
+    void HDF5MasterBuffer::flush()
+    {
+        if(get_Npoints()&gt;0) // No point trying to flush an already empty buffer
+        {
+            // Obtain lock on the output file
+            lock_and_open_file();
+
+            // Determine next available output slot (i.e. current nominal dataset length)
+            std::size_t target_pos = get_next_free_position();
+
+            // Behaviour is different depending on whether this buffer manager
+            // manages synchronised or RA buffers
+            if(is_synchronised())
+            {
+                // DEBUG
+                #ifdef HDF5PRINTER2_DEBUG     
+                logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug;
+                logger()&lt;&lt;&quot;Preparing to flush &quot;&lt;&lt;buffered_points.size()&lt;&lt;&quot; points to target position &quot;&lt;&lt;target_pos&lt;&lt;std::endl;
+                std::size_t i=0;
+                for(auto it=buffered_points.begin(); it!=buffered_points.end(); ++it, ++i)
+                {
+                    logger()&lt;&lt;&quot;   buffered_point &quot;&lt;&lt;i&lt;&lt;&quot;: &quot;&lt;&lt;(*it)&lt;&lt;std::endl;
+                }
+                logger()&lt;&lt;EOM;
+                #endif
+                for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+                {
+                    // Extend the output datasets to the next free position (in case some have been left behind)
+                    it-&gt;second-&gt;ensure_dataset_exists(location_id, target_pos);
+
+                    // For synchronised writes we have to tell the buffers what order to write their output,
+                    // and where. 'target_pos' should usually be the end of their dataset, unless data for
+                    // a certain dataset was not written for some buffer dump.
+                    it-&gt;second-&gt;block_flush(location_id,buffered_points,target_pos);
+                }
+                buffered_points.clear();
+                buffered_points_set.clear();
+            } 
+            else
+            {     
+                //std::cout&lt;&lt;&quot;Preparing to flush &quot;&lt;&lt;buffered_points.size()&lt;&lt;&quot; random-access points to datasets with length &quot;&lt;&lt;target_pos&lt;&lt;std::endl;
+
+                // DEBUG inspect buffered points
+                //std::size_t i=0;
+                //for(auto it=buffered_points.begin(); it!=buffered_points.end(); ++it, ++i)
+                //{
+                //    std::cout&lt;&lt;&quot;buffered_points[&quot;&lt;&lt;i&lt;&lt;&quot;] = &quot;&lt;&lt;(*it)&lt;&lt;std::endl;
+                //}
+
+                // For RA writes we need to first locate the positions on disk of all
+                // the points to be written
+                // We will do this in (large) chunks.
+                bool done = false;
+                auto it = buffered_points.begin();
+                std::set&lt;PPIDpair&gt; done_points;
+                while(not done)
+                {
+                    std::vector&lt;PPIDpair&gt; sub_buffer;
+                    sub_buffer.clear();
+                    for(std::size_t j=0; (j&lt;1000000) &amp;&amp; (it!=buffered_points.end()); ++j, ++it)
+                    {
+                        sub_buffer.push_back(*it);
+                    }
+                    if(it==buffered_points.end()) done=true;
+                    //std::cout&lt;&lt;&quot;Getting dataset positions for &quot;&lt;&lt;sub_buffer.size()&lt;&lt;&quot; points&quot;&lt;&lt;std::endl;
+                    //std::cout&lt;&lt;&quot;(&quot;&lt;&lt;buffered_points.size()-sub_buffer.size()&lt;&lt;&quot; points remaining)&quot;&lt;&lt;std::endl;
+                     
+                    // Obtain locations on disk of all points in sub_buffer
+                    const std::map&lt;PPIDpair,std::size_t&gt; position_map(get_position_map(sub_buffer));
+
+                    // Record which points were found (the ones that were not found need to be left in the buffer)
+                    for(auto jt = position_map.begin(); jt!=position_map.end(); ++jt)
+                    {
+                        //std::cout&lt;&lt;&quot;position_map[&quot;&lt;&lt;jt-&gt;first&lt;&lt;&quot;] = &quot;&lt;&lt;jt-&gt;second&lt;&lt;std::endl;
+                        if(jt-&gt;second &gt; target_pos)
+                        {
+                            std::ostringstream errmsg;
+                            errmsg&lt;&lt;&quot;A target position for a RA write is beyond the current nominal dataset size! This doesn't make sense because we should not have retrieved such positions. This is a bug, please report it.&quot;;
+                            printer_error().raise(LOCAL_INFO, errmsg.str());     
+                        }
+                        done_points.insert(jt-&gt;first);
+                    }
+
+                    // Tell all buffers to write their points to disk according to the position map
+                    for(auto jt = all_buffers.begin(); jt!=all_buffers.end(); ++jt)
+                    {
+                        // Extend datasets to current nominal size and flush RA data
+                        jt-&gt;second-&gt;ensure_dataset_exists(location_id, target_pos);
+                        jt-&gt;second-&gt;random_flush(location_id, position_map);
+                    }
+                }
+
+
+                // Remove flushed points from the buffered points record
+                std::vector&lt;PPIDpair&gt; remaining_buffered_points;
+                for(auto it=buffered_points.begin(); it!=buffered_points.end(); ++it)
+                {
+                    if(done_points.count(*it)==0)
+                    {
+                        // This point couldn't be flushed (wasn't found on disk (yet))
+                        //DEBUG
+                        //std::cout&lt;&lt;&quot;Could not flush point &quot;&lt;&lt;(*it)&lt;&lt;&quot;, leaving it in the buffer.&quot;&lt;&lt;std::endl;
+                        remaining_buffered_points.push_back(*it);
+                    }
+                }
+                buffered_points = remaining_buffered_points;
+                buffered_points_set = set_diff(buffered_points_set, done_points);
+                /// While we are here, check that buffered_points and buffered_points_set are the same size
+                if(buffered_points.size() != buffered_points_set.size())
+                {
+                    std::stringstream msg;
+                    msg&lt;&lt;&quot;Inconsistency detected between buffered_points and buffered_points_set sizes after subtracting done_points (&quot;&lt;&lt;buffered_points.size()&lt;&lt;&quot; vs &quot;&lt;&lt;buffered_points_set.size()&lt;&lt;&quot;)! This is a bug, please report it.&quot;&lt;&lt;std::endl;
+                    printer_error().raise(LOCAL_INFO,msg.str());  
+                }
+                //std::cout&lt;&lt;buffered_points.size()&lt;&lt;&quot; points failed to flush from random-access buffer.&quot;&lt;&lt;std::endl;
+            }
+
+            // Release lock on output file
+            close_and_unlock_file();
+        }
+    }
+
+    /// Get names of all datasets in the group that we are pointed at
+    std::vector&lt;std::pair&lt;std::string,int&gt;&gt; HDF5MasterBuffer::get_all_dset_names_on_disk()
+    {
+         lock_and_open_file();
+
+         // Get all object names in the group 
+         std::vector&lt;std::string&gt; names = HDF5::lsGroup(group_id);
+         std::vector&lt;std::pair&lt;std::string,int&gt;&gt; dset_names_and_types;
+
+         // Determine which objects are datasets
+         for(auto it = names.begin(); it!=names.end(); ++it)
+         {
+             if(HDF5::isDataSet(group_id, *it) and not Utils::endsWith(*it,&quot;_isvalid&quot;))
+             {
+                 // Figure out the type
+                 hid_t h5type = HDF5::getH5DatasetType(group_id, *it);
+                 int type = HDF5::inttype_from_h5type(h5type);
+                 dset_names_and_types.push_back(std::make_pair(*it,type));
+             }
+         }
+
+         close_and_unlock_file();
+
+         return dset_names_and_types;
+    }
+
+    #ifdef WITH_MPI
+    /// Send buffer data to a specified process  
+    void HDF5MasterBuffer::MPI_flush_to_rank(const unsigned int r)
+    {
+        for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        {
+            it-&gt;second-&gt;MPI_flush_to_rank(r);
+        }
+        buffered_points.clear();
+        buffered_points_set.clear();
+    }
+
+    /// Give process r permission to begin sending its buffer data
+    // Don't do this for all processes at once, as MPI can run out of 
+    // Recv request IDs behind the scenes if thousands of processes are
+    // trying to send it lots of stuff at once. But it is good to let
+    // many processes start sending data before we need it, so that the
+    // Recv goes quickly (and is effectively already done in the background)
+    // when we get to it. 
+    void HDF5MasterBuffer::MPI_request_buffer_data(const unsigned int r)
+    {
+        logger()&lt;&lt; LogTags::printers &lt;&lt; LogTags::info &lt;&lt; &quot;Asking process &quot;&lt;&lt;r&lt;&lt;&quot; to begin sending buffer data&quot;&lt;&lt;EOM;
+        // Send a message to the process to trigger it to begin sending buffer data (if any exists)
+        int begin_sending = 1;
+        myComm.Send(&amp;begin_sending, 1, r, h5v2_BEGIN);
+    }
+
+    /// Receive buffer data from a specified process until a STOP message is received
+    void HDF5MasterBuffer::MPI_recv_all_buffers(const unsigned int r)
+    {
+        // MAKE SURE MPI_request_buffer_data(r) HAS BEEN CALLED BEFORE THIS FUNCTION!
+        // Otherwise a deadlock will occur because we will wait forever for buffer data
+        // that will never be sent.
+        
+        int more_buffers = 1;
+        int max_Npoints = 0; // Track largest buffer sent, for reporting general number of points recv'd
+        int Nbuffers = 0; // Number of buffers recv'd        
+        while(more_buffers)
+        {
+            // Check &quot;more buffers&quot; message  
+            myComm.Recv(&amp;more_buffers, 1, r, h5v2_BLOCK);
+            //recv_counter+=1;
+            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;More buffers to receive from process &quot;&lt;&lt;r&lt;&lt;&quot;? &quot;&lt;&lt;more_buffers&lt;&lt;EOM;
+            if(more_buffers)
+            {
+                Nbuffers+=1;
+                // Retrieve the name of the dataset for the buffer data
+                MPI_Status status;
+                myComm.Probe(r, h5v2_bufname, &amp;status);
+                int name_size;
+                int err = MPI_Get_count(&amp;status, MPI_CHAR, &amp;name_size);
+                if(err&lt;0)
+                { 
+                    std::ostringstream errmsg;
+                    errmsg&lt;&lt;&quot;MPI_Get_count failed while trying to get name of dataset to receive!&quot;;
+                    printer_error().raise(LOCAL_INFO, errmsg.str());       
+                }
+                std::string dset_name(name_size, 'x'); // Initialise string to correct size, but filled with x's
+                myComm.Recv(&amp;dset_name[0], name_size, MPI_CHAR, r, h5v2_bufname);
+
+                logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Preparing to receive buffer data from process &quot;&lt;&lt;r&lt;&lt;&quot; for buffer &quot;&lt;&lt;dset_name&lt;&lt;EOM;
+   
+                // Get datatype of buffer data, and call matching receive function for that type
+                int buftype;
+                myComm.Recv(&amp;buftype, 1, r, h5v2_bufdata_type);
+                int Npoints = 0;
+                switch(buftype) 
+                {
+                    case h5v2_type&lt;int      &gt;(): Npoints = MPI_recv_buffer&lt;int      &gt;(r, dset_name); break;      
+                    case h5v2_type&lt;uint     &gt;(): Npoints = MPI_recv_buffer&lt;uint     &gt;(r, dset_name); break;      
+                    case h5v2_type&lt;long     &gt;(): Npoints = MPI_recv_buffer&lt;long     &gt;(r, dset_name); break;      
+                    case h5v2_type&lt;ulong    &gt;(): Npoints = MPI_recv_buffer&lt;ulong    &gt;(r, dset_name); break;      
+                    //case h5v2_type&lt;longlong &gt;(): Npoints = MPI_recv_buffer&lt;longlong &gt;(r, dset_name); break;      
+                    //case h5v2_type&lt;ulonglong&gt;(): Npoints = MPI_recv_buffer&lt;ulonglong&gt;(r, dset_name); break;      
+                    case h5v2_type&lt;float    &gt;(): Npoints = MPI_recv_buffer&lt;float    &gt;(r, dset_name); break;      
+                    case h5v2_type&lt;double   &gt;(): Npoints = MPI_recv_buffer&lt;double   &gt;(r, dset_name); break;      
+                    default:
+                       std::ostringstream errmsg;
+                       errmsg&lt;&lt;&quot;Unrecognised datatype integer (value = &quot;&lt;&lt;buftype&lt;&lt;&quot;) received in buffer type message from rank &quot;&lt;&lt;r&lt;&lt;&quot; for dataset &quot;&lt;&lt;dset_name&lt;&lt;&quot;!&quot;;
+                       printer_error().raise(LOCAL_INFO, errmsg.str());       
+                }
+                if(Npoints&gt;max_Npoints) max_Npoints = Npoints;
+            }
+        }
+
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::info;
+        if(max_Npoints==0)
+        {
+           logger()&lt;&lt;&quot;No print buffer data recv'd from rank &quot;&lt;&lt;r&lt;&lt;&quot; process&quot;&lt;&lt;std::endl;
+        }
+        else
+        {
+           logger()&lt;&lt;&quot;Recv'd &quot;&lt;&lt;Nbuffers&lt;&lt;&quot; dataset buffers from rank &quot;&lt;&lt;r&lt;&lt;&quot;; the largest one contained &quot;&lt;&lt;max_Npoints&lt;&lt;&quot; points&quot;&lt;&lt;std::endl; 
+        }
+        // Debug
+        //for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        //{
+        //    std::cout&lt;&lt;&quot;New buffer length is &quot;&lt;&lt;it-&gt;second-&gt;N_items_in_buffer()&lt;&lt;&quot; (name=&quot;&lt;&lt;it-&gt;second-&gt;dset_name()&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+        //}
+
+        logger()&lt;&lt;&quot;Finished checking for buffer data messages from process &quot;&lt;&lt;r&lt;&lt;EOM;
+    }
+  
+    // Add a vector of buffer chunk data to the buffers managed by this object 
+    void HDF5MasterBuffer::add_to_buffers(const std::vector&lt;HDF5bufferchunk&gt;&amp; blocks, const std::vector&lt;std::pair&lt;std::string,int&gt;&gt;&amp; buf_types)
+    {
+        for(auto it=blocks.begin(); it!=blocks.end(); ++it)
+        {
+            const HDF5bufferchunk&amp; block(*it);
+            if(block.used_size&gt;HDF5bufferchunk::SIZE)
+            {
+                std::ostringstream errmsg;
+                errmsg&lt;&lt;&quot;Invalid block detected! used_size exceeds max SIZE (&quot;&lt;&lt;block.used_size&lt;&lt;&quot;&gt;&quot;&lt;&lt;HDF5bufferchunk::SIZE&lt;&lt;&quot;). This is a bug, please report it.&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+            if(block.used_nbuffers&gt;HDF5bufferchunk::NBUFFERS)
+            {
+                std::ostringstream errmsg;
+                errmsg&lt;&lt;&quot;Invalid block detected! used_nbuffers exceeds max NBUFFERS (&quot;&lt;&lt;block.used_nbuffers&lt;&lt;&quot;&gt;&quot;&lt;&lt;HDF5bufferchunk::NBUFFERS&lt;&lt;&quot;). This is a bug, please report it.&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+         
+            for(std::size_t j=0; j&lt;block.used_nbuffers; j++)
+            {
+                // Work out dataset name and whether we want the int or float values for this buffer
+                std::string name = buf_types.at(block.name_id[j]).first;
+                int type = buf_types.at(block.name_id[j]).second;
+                #ifdef HDF5PRINTER2_DEBUG     
+                logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug;
+                logger()&lt;&lt;&quot;Adding block[&quot;&lt;&lt;j&lt;&lt;&quot;] with type ID &quot;&lt;&lt;type&lt;&lt;&quot; and name ID &quot;&lt;&lt;block.name_id[j]&lt;&lt;&quot; to dataset named &quot;&lt;&lt;name&lt;&lt;EOM;
+                #endif 
+                switch(type) 
+                {
+                    case h5v2_type&lt;int      &gt;(): MPI_add_int_block_to_buffer&lt;int      &gt;(block, name, j); break;
+                    case h5v2_type&lt;uint     &gt;(): MPI_add_int_block_to_buffer&lt;uint     &gt;(block, name, j); break;       
+                    case h5v2_type&lt;long     &gt;(): MPI_add_int_block_to_buffer&lt;long     &gt;(block, name, j); break;       
+                    case h5v2_type&lt;ulong    &gt;(): MPI_add_int_block_to_buffer&lt;ulong    &gt;(block, name, j); break;       
+                    //case h5v2_type&lt;longlong &gt;(): MPI_add_int_block_to_buffer&lt;longlong &gt;(block, name, j); break;       
+                    //case h5v2_type&lt;ulonglong&gt;(): MPI_add_int_block_to_buffer&lt;ulonglong&gt;(block, name, j); break;       
+                    case h5v2_type&lt;float    &gt;(): MPI_add_float_block_to_buffer&lt;float  &gt;(block, name, j); break;       
+                    case h5v2_type&lt;double   &gt;(): MPI_add_float_block_to_buffer&lt;double &gt;(block, name, j); break;       
+                    default:
+                       std::ostringstream errmsg;
+                       errmsg&lt;&lt;&quot;Unrecognised datatype integer (value = &quot;&lt;&lt;type&lt;&lt;&quot;) received in a buffer block for dataset &quot;&lt;&lt;name&lt;&lt;&quot;!&quot;;
+                       printer_error().raise(LOCAL_INFO, errmsg.str());       
+                }
+            }
+        }
+    }
+
+    #endif 
+
+    /// Ensure HDF5 file is open (and locked for us to use)
+    void HDF5MasterBuffer::ensure_file_is_open() const 
+    {
+        if(not (file_open and have_lock))
+        {
+            std::ostringstream errmsg;
+            errmsg &lt;&lt; &quot;Error! Output HDF5 file '&quot;&lt;&lt;file&lt;&lt;&quot;' is not open and locked! Code following this check is not permitted to run. This is a bug in HDF5Printer2, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());     
+        }
+    }
+
+    /// Open (and lock) output HDF5 file and obtain HDF5 handles
+    void HDF5MasterBuffer::lock_and_open_file(const char access_type)
+    {
+        if(have_lock)
+        {
+            std::stringstream err;
+            err&lt;&lt;&quot;HDF5MasterBuffer attempted to obtain a lock on the output hdf5 file, but it already has the lock! This is a bug, please report it.&quot;&lt;&lt;std::endl;
+            printer_error().raise(LOCAL_INFO, err.str());
+        }
+
+        if(file_open)
+        {
+            std::stringstream err;
+            err&lt;&lt;&quot;HDF5Printer2 attempted to open the output hdf5 file, but it is already open! This is a bug, please report it.&quot;&lt;&lt;std::endl;
+            printer_error().raise(LOCAL_INFO, err.str());
+        }
+
+        // Obtain the lock
+        hdf5out.get_lock();
+
+        // Open the file and target groups
+        file_id  = HDF5::openFile(file,false,access_type);
+        group_id = HDF5::openGroup(file_id,group);
+
+        // Set the target dataset write location to the chosen group
+        location_id = group_id;
+
+        file_open=true;
+        have_lock=true;
+    }
+
+    /// Close (and unlock) output HDF5 file and release HDF5 handles
+    void HDF5MasterBuffer::close_and_unlock_file()
+    {
+        if(not have_lock)
+        {
+            std::stringstream err;
+            err&lt;&lt;&quot;HDF5Printer2 attempted to release a lock on the output hdf5 file, but it doesn't currently have the lock! This is a bug, please report it.&quot;&lt;&lt;std::endl;
+            printer_error().raise(LOCAL_INFO, err.str());
+        }
+
+        if(not file_open)
+        {
+            std::stringstream err;
+            err&lt;&lt;&quot;HDF5Printer2 attempted to close the output hdf5 file, but it is not currently open! This is a bug, please report it.&quot;&lt;&lt;std::endl;
+            printer_error().raise(LOCAL_INFO, err.str());
+        }
+
+        if(group_id&lt;0)
+        {
+            // This especially shouldn't happen because the 'file_open' flag should not be 'true' if the group has been closed.
+            std::stringstream err;
+            err&lt;&lt;&quot;HDF5Printer2 attempted to close the output hdf5 file, but group_id&lt;0 indicating that that output group is already closed (or was never opened)! This is a bug, please report it.&quot;&lt;&lt;std::endl;
+            printer_error().raise(LOCAL_INFO, err.str());
+        }
+
+        if(file_id&lt;0)
+        {
+            // This especially shouldn't happen because the 'file_open' flag should not be 'true' if the group has been closed.
+            std::stringstream err;
+            err&lt;&lt;&quot;HDF5Printer2 attempted to close the output hdf5 file, but file_id&lt;0 indicating that that output file is already closed (or was never opened)! This is a bug, please report it.&quot;&lt;&lt;std::endl;
+            printer_error().raise(LOCAL_INFO, err.str());
+        }
+
+        // Close groups and file
+        HDF5::closeGroup(group_id);
+        HDF5::closeFile(file_id);
+
+        // Release the lock
+        hdf5out.release_lock();
+
+        file_open=false;
+        have_lock=false;
+    }
+
+    /// Clear all data in buffers ***and on disk*** for this printer
+    void HDF5MasterBuffer::reset()
+    {
+        lock_and_open_file();
+        for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        {
+            it-&gt;second-&gt;reset(location_id);
+        }
+        close_and_unlock_file();
+        buffered_points.clear();
+        buffered_points_set.clear();
+    }
+
+    /// Add base class point for a buffer to master buffer map  
+    void HDF5MasterBuffer::update_buffer_map(const std::string&amp; label, HDF5BufferBase&amp; buff)
+    {
+        auto it=all_buffers.find(label);
+        if(it==all_buffers.end())
+        {
+            /// Not already in the map; add it
+            all_buffers.emplace(label,&amp;buff);
+        }
+        else if(&amp;buff!=it-&gt;second) // if candidate buffer not the same as the one already in the map
+        {
+            if(buff.get_type_id() != it-&gt;second-&gt;get_type_id())
+            {
+                // Make sure that we haven't accidentally duplicated a buffer due to type confusion!
+                std::stringstream err;
+                err&lt;&lt;&quot;Tried to add a buffer with label &quot;&lt;&lt;label&lt;&lt;&quot; to a MasterBuffer, but a non-identical buffer with the same name and different type already exists! This is a bug, please report it. Types were (existing:&quot;&lt;&lt;it-&gt;second-&gt;get_type_id()&lt;&lt;&quot;, new:&quot;&lt;&lt;buff.get_type_id()&lt;&lt;&quot;)&quot;;
+                printer_error().raise(LOCAL_INFO, err.str());
+            }
+            else
+            {
+                // Make sure that we haven't accidentally duplicated a buffer some other bizarre way
+                std::stringstream err;
+                err&lt;&lt;&quot;Tried to add a buffer with label &quot;&lt;&lt;label&lt;&lt;&quot; to a MasterBuffer, but a non-identical buffer with the same name and same type already exists (type=&quot;&lt;&lt;buff.get_type_id()&lt;&lt;&quot;)! This shouldn't be possible and is a bug, please report it.&quot;;
+                printer_error().raise(LOCAL_INFO, err.str());
+            }
+        }
+    }
+
+    /// Inform all buffers that data has been written to certain mpirank/pointID pair
+    /// They will make sure that they have an output slot for this pair, so that all the
+    /// buffers for this printer stay &quot;synchronised&quot;.
+    void HDF5MasterBuffer::update_all_buffers(const PPIDpair&amp; ppid)
+    {
+        for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        {
+            it-&gt;second-&gt;update(ppid);
+        }
+    }
+
+    /// Report number of buffers that we are managing
+    std::size_t HDF5MasterBuffer::get_Nbuffers()
+    {
+        return all_buffers.size();
+    }
+
+    /// Report upper limit estimate of size of all buffer data in MB
+    // Used to trigger dump to disk if buffer is using too much RAM
+    // All datasets treated as doubles for simplicity
+    double HDF5MasterBuffer::get_sizeMB()
+    {
+        double Nbytes = (8.+4.) * (double)get_Nbuffers() * (double)get_Npoints();
+        return pow(2,-20) * Nbytes; // bytes -&gt; MB (base 2) 
+    }
+
+
+    /// Determine the next free index in the output datasets
+    std::size_t HDF5MasterBuffer::get_next_free_position()
+    {
+        ensure_file_is_open(); 
+
+        HDF5DataSet&lt;int&gt;       mpiranks      (&quot;MPIrank&quot;); // Will need some constructor arguments
+        HDF5DataSet&lt;int&gt;       mpiranks_valid(&quot;MPIrank_isvalid&quot;); // Will need some constructor arguments
+        HDF5DataSet&lt;ulong&gt;     pointids      (&quot;pointID&quot;);
+        HDF5DataSet&lt;int&gt;       pointids_valid(&quot;pointID_isvalid&quot;);
+
+        // Open all datasets that we need
+        mpiranks      .open_dataset(location_id);
+        mpiranks_valid.open_dataset(location_id);
+        pointids      .open_dataset(location_id);
+        pointids_valid.open_dataset(location_id);
+
+        std::size_t r_size  = mpiranks      .get_dset_length();
+        std::size_t rv_size = mpiranks_valid.get_dset_length();
+        std::size_t p_size  = pointids      .get_dset_length();
+        std::size_t pv_size = pointids_valid.get_dset_length();
+
+        //std::cout&lt;&lt;&quot;mpiranks dataset length: &quot;&lt;&lt;r_size&lt;&lt;std::endl;
+
+        if( (r_size!=rv_size)
+         || (r_size!=p_size)
+         || (r_size!=pv_size) )
+        {
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;Inconsistency in dataset sizes detected! This is a bug, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+
+        // Close datasets
+        mpiranks      .close_dataset();
+        mpiranks_valid.close_dataset();
+        pointids      .close_dataset();
+        pointids_valid.close_dataset();
+
+        return r_size;
+    }
+
+    /// Obtain positions in output datasets for a buffer of points
+    std::map&lt;PPIDpair,std::size_t&gt; HDF5MasterBuffer::get_position_map(const std::vector&lt;PPIDpair&gt;&amp; buffer) const
+    {
+        ensure_file_is_open(); 
+
+        std::map&lt;PPIDpair,std::size_t&gt; position_map_out;
+
+        HDF5DataSet&lt;int&gt;       mpiranks      (&quot;MPIrank&quot;); // Will need some constructor arguments
+        HDF5DataSet&lt;int&gt;       mpiranks_valid(&quot;MPIrank_isvalid&quot;); // Will need some constructor arguments
+        HDF5DataSet&lt;ulong&gt;     pointids      (&quot;pointID&quot;);
+        HDF5DataSet&lt;int&gt;       pointids_valid(&quot;pointID_isvalid&quot;);
+
+        // Copy point buffer into a set for faster lookup
+        const std::set&lt;PPIDpair&gt; buffer_set(buffer.begin(), buffer.end()); 
+
+        // DEBUG check that copy was correct
+        //for(auto it=buffer_set.begin(); it!=buffer_set.end(); ++it) std::cout&lt;&lt;&quot; buffer_set item: &quot;&lt;&lt;(*it)&lt;&lt;std::endl; 
+
+        //std::cout&lt;&lt;&quot;Obtaining position map for random access write&quot;&lt;&lt;std::endl;
+
+        // Open all datasets that we need
+        mpiranks      .open_dataset(location_id);
+        mpiranks_valid.open_dataset(location_id);
+        pointids      .open_dataset(location_id);
+        pointids_valid.open_dataset(location_id);
+
+        std::size_t dset_length = mpiranks.get_dset_length();
+        std::size_t Nchunks   = dset_length / HDF5_CHUNKLENGTH;
+        std::size_t remainder = dset_length % HDF5_CHUNKLENGTH;
+        if(remainder!=0) Nchunks+=1; 
+        for(std::size_t i=0; i&lt;Nchunks; i++)  
+        {
+            std::size_t offset = i * HDF5_CHUNKLENGTH;
+            std::size_t length = HDF5_CHUNKLENGTH;
+            if(remainder!=0 and (i+1)==Nchunks) length = remainder;
+            //std::cout&lt;&lt;&quot;Reading chunk &quot;&lt;&lt;offset&lt;&lt;&quot; to &quot;&lt;&lt;offset+length&lt;&lt;&quot;(chunk &quot;&lt;&lt;i&lt;&lt;&quot; of &quot;&lt;&lt;Nchunks&lt;&lt;&quot;)&quot;&lt;&lt;std::endl; 
+
+            std::vector&lt;int&gt;       r_chunk  = mpiranks      .get_chunk(offset,length);
+            std::vector&lt;int&gt;       rv_chunk = mpiranks_valid.get_chunk(offset,length);
+            std::vector&lt;ulong&gt;     p_chunk  = pointids      .get_chunk(offset,length);  
+            std::vector&lt;int&gt;       pv_chunk = pointids_valid.get_chunk(offset,length);  
+ 
+            std::size_t position = offset;
+
+            auto rt =r_chunk .begin();
+            auto rvt=rv_chunk.begin();
+            auto pt =p_chunk .begin();
+            auto pvt=pv_chunk.begin();
+            for(; // Variables declared above due to different types
+                (rt !=r_chunk.end() ) 
+             &amp;&amp; (rvt!=rv_chunk.end())
+             &amp;&amp; (pt !=p_chunk.end() )
+             &amp;&amp; (pvt!=pv_chunk.end());
+                ++rt,++rvt,++pt,++pvt,++position)
+            {
+                //DEBUG Dump everything as we read it
+                //std::cout&lt;&lt;&quot;position: &quot;&lt;&lt;position&lt;&lt;&quot;, point: (&quot;&lt;&lt;(*rt)&lt;&lt;&quot;, &quot;&lt;&lt;(*pt)&lt;&lt;&quot;), valid: (&quot;&lt;&lt;(*rvt)&lt;&lt;&quot;, &quot;&lt;&lt;(*pvt)&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+
+                // Check if point is valid
+                if((*rvt) and (*pvt))
+                {
+                    // Check if this is one of the points we are looking for
+                    PPIDpair candidate(*pt,*rt);
+                    if(buffer_set.count(candidate)&gt;0)
+                    {
+                        //std::cout&lt;&lt;&quot;   Point &quot;&lt;&lt;candidate&lt;&lt;&quot; is a match at position &quot;&lt;&lt;position&lt;&lt;std::endl;
+                        position_map_out[candidate] = position;
+                    }
+                } 
+                else if(not ((*rvt) and (*pvt)))
+                {
+                    // Point is not valid. Skip it.
+                    continue;
+                }
+                else
+                {
+                    // Inconsistent validity flags.
+                    std::ostringstream errmsg;
+                    errmsg&lt;&lt;&quot;Inconsistent validity flags detected whilst determining dataset locations for RA buffer data! This is a bug, please report it.&quot;; 
+                    printer_error().raise(LOCAL_INFO, errmsg.str());
+                }
+            }
+        }
+
+        // Close all datasets
+        mpiranks      .close_dataset();
+        mpiranks_valid.close_dataset();
+        pointids      .close_dataset();
+        pointids_valid.close_dataset();
+
+        // DEBUG check result
+        //for(auto it=position_map_out.begin(); it!=position_map_out.end(); ++it)
+        //{
+        //    std::cout&lt;&lt;&quot;Point &quot;&lt;&lt;it-&gt;first&lt;&lt;&quot; found at index &quot;&lt;&lt;it-&gt;second&lt;&lt;std::endl;
+        //}
+
+        return position_map_out; 
+    }
+
+    // Read through the output dataset and find the highest pointIDs for each rank (up to maxrank)
+    // (assumes file is closed)
+    std::map&lt;ulong, ulong&gt; HDF5MasterBuffer::get_highest_PPIDs(const int mpisize)
+    {
+        lock_and_open_file('r');
+
+        std::map&lt;ulong, ulong&gt; highests;
+        for(int i=0; i&lt;mpisize; ++i)
+        {
+            highests[i] = 0;
+        }
+
+        HDF5DataSet&lt;int&gt;       mpiranks      (&quot;MPIrank&quot;);
+        HDF5DataSet&lt;int&gt;       mpiranks_valid(&quot;MPIrank_isvalid&quot;);
+        HDF5DataSet&lt;ulong&gt;     pointids      (&quot;pointID&quot;);
+        HDF5DataSet&lt;int&gt;       pointids_valid(&quot;pointID_isvalid&quot;);
+
+        // Open all datasets that we need
+        mpiranks      .open_dataset(location_id);
+        mpiranks_valid.open_dataset(location_id);
+        pointids      .open_dataset(location_id);
+        pointids_valid.open_dataset(location_id);
+
+        std::size_t dset_length = mpiranks.get_dset_length();
+        std::size_t Nchunks   = dset_length / HDF5_CHUNKLENGTH;
+        std::size_t remainder = dset_length % HDF5_CHUNKLENGTH;
+        if(remainder!=0) Nchunks+=1; 
+        for(std::size_t i=0; i&lt;Nchunks; i++)  
+        {
+            std::size_t offset = i * HDF5_CHUNKLENGTH;
+            std::size_t length = HDF5_CHUNKLENGTH;
+            if(remainder!=0 and (i+1)==Nchunks) length = remainder;
+             
+            std::vector&lt;int&gt;       r_chunk  = mpiranks      .get_chunk(offset,length);
+            std::vector&lt;int&gt;       rv_chunk = mpiranks_valid.get_chunk(offset,length);
+            std::vector&lt;ulong&gt;     p_chunk  = pointids      .get_chunk(offset,length);  
+            std::vector&lt;int&gt;       pv_chunk = pointids_valid.get_chunk(offset,length);  
+ 
+            std::size_t position = offset;
+
+            auto rt =r_chunk .begin();
+            auto rvt=rv_chunk.begin();
+            auto pt =p_chunk .begin();
+            auto pvt=pv_chunk.begin();
+            for(; // Variables declared above due to different types
+                (rt!=r_chunk.end()) 
+             &amp;&amp; (rvt!=rv_chunk.end())
+             &amp;&amp; (pt!=p_chunk.end())
+             &amp;&amp; (pvt!=pv_chunk.end());
+                ++rt,++rvt,++pt,++pvt,++position)
+            {
+                 // Check if point is valid
+                 if((*rvt) and (*pvt))
+                 {
+                      // Yep, valid, check if it has a higher pointID for this rank than previously seen
+                      if( ((*rt)&lt;mpisize) and ((*pt)&gt;highests.at(*rt)) )
+                      { 
+                          highests.at(*rt) = *pt; 
+                      }         
+                 } 
+                 else if(not ((*rvt) and (*pvt)))
+                 {
+                      // Point is not valid. Skip it.
+                      continue;
+                 }
+                 else
+                 {
+                      // Inconsistent validity flags.
+                      std::ostringstream errmsg;
+                      errmsg&lt;&lt;&quot;Inconsistent validity flags detected whilst finding highest pointIDs in existing output! This is a bug, please report it.&quot;; 
+                      printer_error().raise(LOCAL_INFO, errmsg.str());
+                 }
+            }
+        }
+
+        // Close datasets
+        mpiranks      .close_dataset();
+        mpiranks_valid.close_dataset();
+        pointids      .close_dataset();
+        pointids_valid.close_dataset();
+
+        close_and_unlock_file();
+
+        return highests;
+    }
+ 
+    /// Report whether all the buffers are empty
+    bool HDF5MasterBuffer::all_buffers_empty()
+    {
+        bool all_empty=true;
+        for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        {
+            if(it-&gt;second-&gt;N_items_in_buffer()!=0) all_empty=false;
+        } 
+        return all_empty;
+    }
+
+    /// Report status of non-empty buffers
+    std::string HDF5MasterBuffer::buffer_status()
+    {
+        std::stringstream ss;
+        for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        {
+            if(it-&gt;second-&gt;N_items_in_buffer()!=0)
+            {
+                ss &lt;&lt; &quot;   Buffer &quot;&lt;&lt;it-&gt;first&lt;&lt;&quot; contains &quot;&lt;&lt;it-&gt;second-&gt;N_items_in_buffer()&lt;&lt;&quot; unwritten items (synchronised=&quot;&lt;&lt;it-&gt;second-&gt;is_synchronised()&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                // VERBOSE DEBUG OUTPUT
+                ss &lt;&lt; &quot;   Unwritten points are:&quot; &lt;&lt; std::endl;
+                auto point_set = it-&gt;second-&gt;get_points_set();
+                for(auto jt = point_set.begin(); jt!=point_set.end(); ++jt)
+                {
+                   ss &lt;&lt; &quot;   rank=&quot;&lt;&lt;jt-&gt;rank&lt;&lt;&quot;, pointID=&quot;&lt;&lt;jt-&gt;pointID&lt;&lt;std::endl;
+                } 
+            }
+        } 
+        return ss.str();
+    }
+
+    /// Retrieve the location_id specifying where output should be created in the HDF5 file
+    hid_t HDF5MasterBuffer::get_location_id()
+    {
+        ensure_file_is_open();
+        return location_id;
+    }
+
+    /// Extend all datasets to the specified size;
+    void HDF5MasterBuffer::extend_all_datasets_to(const std::size_t length)
+    {
+        lock_and_open_file();
+        for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        {
+            it-&gt;second-&gt;ensure_dataset_exists(location_id, length);
+        } 
+        close_and_unlock_file();
+    }
+
+    /// Retrieve a map containing pointers to all buffers managed by this object
+    const std::map&lt;std::string,HDF5BufferBase*&gt;&amp; HDF5MasterBuffer::get_all_buffers() { return all_buffers; }
+ 
+    /// Retrieve set containing all points currently known to be in these buffers
+    const std::set&lt;PPIDpair&gt;&amp; HDF5MasterBuffer::get_all_points() { return buffered_points_set; } 
+
+    /// Make sure all buffers know about all points in all buffers
+    /// Should not generally be necessary if points are added in the
+    /// &quot;normal&quot; way. Only needed in special circumstances (e.g. when
+    /// receiving points from another process).
+    void HDF5MasterBuffer::resynchronise()
+    {
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::info&lt;&lt;&quot;Resynchronising print buffers:&quot; &lt;&lt; std::endl;
+ 
+        // Determine all known points in all buffers
+        std::set&lt;PPIDpair&gt; initial_buffer_points = buffered_points_set;
+        for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        {
+            logger()&lt;&lt;&quot;   Buffer contains &quot;&lt;&lt;it-&gt;second-&gt;N_items_in_buffer()&lt;&lt;&quot; items (name=&quot;&lt;&lt;it-&gt;second-&gt;dset_name()&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+            std::set&lt;PPIDpair&gt; this_buffer_points = it-&gt;second-&gt;get_points_set();
+            buffered_points_set.insert(this_buffer_points.begin(), this_buffer_points.end());
+        }
+
+        // Update all buffers with these points
+        for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+        {
+            for(auto jt=buffered_points_set.begin(); jt!=buffered_points_set.end(); ++jt)
+            {
+                it-&gt;second-&gt;update(*jt);
+            }
+        }
+
+        // Determine which points were not already in the buffers
+        std::set&lt;PPIDpair&gt; new_points;
+        std::set_difference(buffered_points_set.begin(), buffered_points_set.end(), 
+                            initial_buffer_points.begin(), initial_buffer_points.end(),
+                            std::inserter(new_points, new_points.end())); 
+
+        // Debug info:
+        logger() &lt;&lt; std::endl
+                 &lt;&lt; &quot;  Initial N points   : &quot;&lt;&lt;initial_buffer_points.size()&lt;&lt;std::endl
+                 &lt;&lt; &quot;  Final N points     : &quot;&lt;&lt;buffered_points_set.size()&lt;&lt;std::endl
+                 &lt;&lt; &quot;  Difference N points: &quot;&lt;&lt;new_points.size()&lt;&lt;std::endl;
+
+        // Update the buffer variables with the new points
+        for(auto jt=new_points.begin(); jt!=new_points.end(); ++jt)
+        {
+            // Update all buffers with these points
+            for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+            {
+                it-&gt;second-&gt;update(*jt);
+            }
+            // Update MasterBuffer variables
+            buffered_points.push_back(*jt);
+        }
+
+        logger() &lt;&lt; std::endl
+                 &lt;&lt; &quot;Print buffer now contains &quot;&lt;&lt;get_Npoints()&lt;&lt;&quot; items.&quot;
+                 &lt;&lt; EOM;
+    }
+
+    /// Remove points from buffer tracking
+    // (only intended to be used when points have been removed from buffers by e.g. MPI-related
+    // routines like flush_to_vector)
+    void HDF5MasterBuffer::untrack_points(const std::set&lt;PPIDpair&gt;&amp; removed_points) 
+    {
+        for(auto pt=removed_points.begin(); pt!=removed_points.end(); ++pt)
+        {
+            auto it = buffered_points_set.find(*pt);
+            if(it!=buffered_points_set.end())
+            {
+                buffered_points_set.erase(it);
+                auto jt = std::find(buffered_points.begin(),buffered_points.end(),*pt);
+                if(jt!=buffered_points.end())
+                {
+                    buffered_points.erase(jt);
+                }
+                else
+                {
+                    std::ostringstream errmsg;
+                    errmsg&lt;&lt;&quot;Error untracking point (rank=&quot;&lt;&lt;pt-&gt;rank&lt;&lt;&quot;, pointID=&quot;&lt;&lt;pt-&gt;pointID&lt;&lt;&quot;)! Point was found in tracked set, but not in ordering vector! This is a bug, please report it.&quot;;
+                    printer_error().raise(LOCAL_INFO, errmsg.str());
+                }
+            }
+            else
+            {
+                std::ostringstream errmsg;
+                errmsg&lt;&lt;&quot;Could not untrack point (rank=&quot;&lt;&lt;pt-&gt;rank&lt;&lt;&quot;, pointID=&quot;&lt;&lt;pt-&gt;pointID&lt;&lt;&quot;)! Point was not being tracked! This is a bug, please report it.&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+        }
+    }
+
+    /// Specialisation declarations for 'get_buffer' function for each buffer type
+    #define DEFINE_GET_BUFFER(TYPE)\
+    template&lt;&gt;\
+    HDF5Buffer&lt;TYPE&gt;&amp; HDF5MasterBuffer::get_buffer&lt;TYPE&gt;(const std::string&amp; label, const std::vector&lt;PPIDpair&gt;&amp; buffered_points)\
+    {\
+        HDF5Buffer&lt;TYPE&gt;&amp; out_buffer = CAT(hdf5_buffers_,TYPE).get_buffer(label,buffered_points);\
+        /*logger()&lt;&lt;&quot;Updating buffer map with buffer &quot;&lt;&lt;label&lt;&lt;&quot;, C++ type=&quot;&lt;&lt;typeid(TYPE).name()&lt;&lt;&quot;, type ID=&quot;&lt;&lt;out_buffer.get_type_id()&lt;&lt;EOM;*/\
+        update_buffer_map(label,out_buffer);\
+        return out_buffer;\
+    }
+    DEFINE_GET_BUFFER(int      )
+    DEFINE_GET_BUFFER(uint     )
+    DEFINE_GET_BUFFER(long     )
+    DEFINE_GET_BUFFER(ulong    )
+    //DEFINE_GET_BUFFER(longlong ) // Some type ambiguities here between C++ and HDF5, seems like ulong and ulonglong map to same HDF5 type. So ditch ulonglong for now.
+    //DEFINE_GET_BUFFER(ulonglong)
+    DEFINE_GET_BUFFER(float    )
+    DEFINE_GET_BUFFER(double   )
+    #undef DEFINE_GET_BUFFER
+
+    /// @}
+
+    /// @{ Member functions for HDF5Printer2
+ 
+    /// Convert pointer-to-base for primary printer into derived type  
+    HDF5Printer2* HDF5Printer2::link_primary_printer(BasePrinter* const primary)
+    {
+        HDF5Printer2* out(NULL);
+        if(this-&gt;is_auxilliary_printer())
+        {
+            if(primary==NULL)
+            {
+                std::ostringstream errmsg;
+                errmsg&lt;&lt;&quot;Auxilliary printer was not constructed with a pointer to the primary printer! This is a bug, please report it&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+            out = dynamic_cast&lt;HDF5Printer2*&gt;(primary);
+        }
+        return out; 
+    }
+
+    /// Constructor
+    HDF5Printer2::HDF5Printer2(const Options&amp; options, BasePrinter* const primary)
+      : BasePrinter(primary,options.getValueOrDef&lt;bool&gt;(false,&quot;auxilliary&quot;))
+      , primary_printer(link_primary_printer(primary))
+      , myRank(0)
+      , mpiSize(1)
+#ifdef WITH_MPI
+      , myComm() // initially attaches to MPI_COMM_WORLD
+#endif
+      , buffermaster(get_filename(options),get_groupname(options),get_sync(options),get_buffer_length(options)
+#ifdef WITH_MPI
+        , myComm
+#endif  
+        )
+    {
+#ifdef WITH_MPI
+        myRank  = myComm.Get_rank();
+        mpiSize = myComm.Get_size(); 
+        this-&gt;setRank(myRank); // Tell BasePrinter what rank this process is (for error messages)
+        define_mpiHDF5bufferchunk();
+#endif
+        // Set resume flag to match primary printer, and give primary printer a pointer to our buffer master object.
+        if(this-&gt;is_auxilliary_printer())
+        {
+            set_resume(get_HDF5_primary_printer()-&gt;get_resume());
+            get_HDF5_primary_printer()-&gt;add_aux_buffer(buffermaster);
+            #ifdef WITH_MPI
+            myComm = get_HDF5_primary_printer()-&gt;get_Comm();
+            #endif
+        }
+        else
+        {
+#ifdef WITH_MPI
+            // Create a new MPI context for use by this printer
+            myComm.dup(MPI_COMM_WORLD,&quot;HDF5Printer2Comm&quot;); // duplicates MPI_COMM_WORLD
+#endif
+            // This is the primary printer. Need to determine resume status
+            set_resume(options.getValue&lt;bool&gt;(&quot;resume&quot;));
+
+            // Overwrite output file if one already exists with the same name?
+            bool overwrite_file = options.getValueOrDef&lt;bool&gt;(false,&quot;delete_file_on_restart&quot;);
+
+            // Attempt repairs on existing HDF5 output if inconsistencies detected
+            bool attempt_repair = !options.getValueOrDef&lt;bool&gt;(false,&quot;disable_autorepair&quot;);
+
+            std::vector&lt;ulong&gt; highests(mpiSize);
+            
+            std::string file  = get_filename();
+            std::string group = get_groupname(); 
+
+            if(myRank==0)
+            {
+                // Warn about excessive buffer length times mpiSize
+                if(get_buffer_length() * mpiSize &gt; 1e7)
+                {
+                    std::ostringstream warn;
+                    warn&lt;&lt;&quot;Warning from HDF5Printer2! Your chosen printer buffer length (&quot;&lt;&lt;get_buffer_length()&lt;&lt;&quot;), multiplied by the number of processes in your job (&quot;&lt;&lt;mpiSize&lt;&lt;&quot;), is very large. During job shutdown the master process receives all remaining print buffer data via MPI, from ALL processes, for efficient writing to disk. This needs to be able to fit into the available RAM. If you are sure that you have enough RAM for this then there is no problem. But please do check, and if needed, reduce the buffer length for this job using the 'buffer_length' option for the printer.&quot;;
+                    printer_warning().raise(LOCAL_INFO, warn.str());
+                }
+ 
+                // Check whether a readable output file exists with the name that we want to use.
+                std::string msg_finalfile;
+                if(HDF5::checkFileReadable(file, msg_finalfile))
+                {
+                    if(not get_resume())
+                    {
+                        // Note: &quot;not resume&quot; means &quot;start or restart&quot;
+                        if(overwrite_file)
+                        {
+                            // Delete existing output file
+                            std::ostringstream command;
+                            command &lt;&lt; &quot;rm -f &quot;&lt;&lt;file;
+                            logger() &lt;&lt; LogTags::printers &lt;&lt; LogTags::info &lt;&lt; &quot;Running shell command: &quot; &lt;&lt; command.str() &lt;&lt; EOM;
+                            FILE* fp = popen(command.str().c_str(), &quot;r&quot;);
+                            if(fp==NULL)
+                            {
+                                // Error running popen
+                                std::ostringstream errmsg;
+                                errmsg &lt;&lt; &quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Error deleting existing output file (requested by 'delete_file_on_restart' printer option; target filename is &quot;&lt;&lt;file&lt;&lt;&quot;)! popen failed to run the command (command was '&quot;&lt;&lt;command.str()&lt;&lt;&quot;')&quot;;
+                                printer_error().raise(LOCAL_INFO, errmsg.str());
+                            }
+                            else if(pclose(fp)!=0)
+                            {
+                                // Command returned exit code!=0, or pclose failed
+                                std::ostringstream errmsg;
+                                errmsg &lt;&lt; &quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: Error deleting existing output file (requested by 'delete_file_on_restart' printer option; target filename is &quot;&lt;&lt;file&lt;&lt;&quot;)! Shell command failed to executed successfully, see stderr (command was '&quot;&lt;&lt;command.str()&lt;&lt;&quot;').&quot;;
+                                printer_error().raise(LOCAL_INFO, errmsg.str());
+                            }
+                        }
+                        else
+                        {
+                            // File exists, so check if 'group' is readable, and throw error if it exists
+                            // (we are not resuming, so need an empty group to write into)
+                            hid_t file_id = HDF5::openFile(file);
+                            std::string msg_group;
+                            std::cout &lt;&lt; &quot;Group readable: &quot; &lt;&lt; file &lt;&lt; &quot; , &quot; &lt;&lt; group &lt;&lt; &quot; : &quot; &lt;&lt; HDF5::checkGroupReadable(file_id, group, msg_group) &lt;&lt; std::endl;
+                            if(HDF5::checkGroupReadable(file_id, group, msg_group))
+                            {
+                                // Group already exists, error!
+                                std::ostringstream errmsg;
+                                errmsg &lt;&lt; &quot;Error preparing pre-existing output file '&quot;&lt;&lt;file&lt;&lt;&quot;' for writing via hdf5printer! The requested output group '&quot;&lt;&lt;group&lt;&lt;&quot; already exists in this file! Please take one of the following actions:&quot;&lt;&lt;std::endl;
+                                errmsg &lt;&lt; &quot;  1. Choose a new group via the 'group' option in the Printer section of your input YAML file;&quot;&lt;&lt;std::endl;
+                                errmsg &lt;&lt; &quot;  2. Delete the existing group from '&quot;&lt;&lt;file&lt;&lt;&quot;';&quot;&lt;&lt;std::endl;
+                                errmsg &lt;&lt; &quot;  3. Delete the existing output file, or set 'delete_file_on_restart: true' in your input YAML file to give GAMBIT permission to automatically delete it (applies when -r/--restart flag used);&quot;&lt;&lt;std::endl;
+                                errmsg &lt;&lt; std::endl;
+                                errmsg &lt;&lt; &quot;*** Note: This error most commonly occurs when you try to resume a scan that has already finished! ***&quot; &lt;&lt;std::endl;
+                                errmsg &lt;&lt; std::endl;
+                                printer_error().raise(LOCAL_INFO, errmsg.str());
+                            }
+                            HDF5::closeFile(file_id);
+                        }
+                    }
+                }
+                else
+                {
+                    // No readable output file exists, so there is nothing to resume from. Deactivate resuming.
+                    set_resume(false);  //Tell ScannerBit that it shouldn't resume and do not find highest point.
+                    logger() &lt;&lt; LogTags::info &lt;&lt; &quot;No previous output file found, treating run as completely new.&quot; &lt;&lt; EOM;
+                }
+
+                std::cout &lt;&lt;&quot;Rank &quot;&lt;&lt;myRank&lt;&lt;&quot; resume flag? &quot;&lt;&lt;get_resume()&lt;&lt;std::endl; 
+                if(get_resume())
+                {
+                    /// Check if combined output file exists
+                    std::cout &lt;&lt;&quot;Rank &quot;&lt;&lt;myRank&lt;&lt;&quot;: output file readable? &quot;&lt;&lt;HDF5::checkFileReadable(file)&lt;&lt;&quot;(filename: &quot;&lt;&lt;file&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                    if( HDF5::checkFileReadable(file) )
+                    {
+                        logger() &lt;&lt; LogTags::info &lt;&lt; &quot;Scanning existing output file, to prepare for adding new data&quot; &lt;&lt; EOM;
+                
+                        // Open HDF5 file
+                        hid_t file_id = HDF5::openFile(file);
+
+                        // Check that group is readable
+                        std::string msg2;
+                        if(not HDF5::checkGroupReadable(file_id, group, msg2))
+                        {
+                            // We are supposed to be resuming, but specified group was not readable in the output file, so we can't.
+                            std::ostringstream errmsg;
+                            errmsg &lt;&lt; &quot;Error! GAMBIT is in resume mode, however the chosen output system (HDF5Printer) was unable to open the specified group (&quot;&lt;&lt;group&lt;&lt;&quot;) within the existing output file (&quot;&lt;&lt;file&lt;&lt;&quot;). Resuming is therefore not possible; aborting run... (see below for IO error message)&quot;;
+                            errmsg &lt;&lt; std::endl &lt;&lt; &quot;(Strictly speaking we could allow the run to continue (if the scanner can find its necessary output files from the last run), however the printer output from that run is gone, so most likely the scan needs to start again).&quot;;
+                            errmsg &lt;&lt; std::endl &lt;&lt; &quot;IO error message: &quot; &lt;&lt; msg2;
+                            printer_error().raise(LOCAL_INFO, errmsg.str());
+                        }
+
+                        // Cleanup
+                        HDF5::closeFile(file_id);
+
+                        // Check output for signs of corruption, and fix them
+                        // For example if a previous hard shutdown occurred, but the file is not corrupted, 
+                        // we might nevertheless still be missing data in some datasets.
+                        // We need to look for this and at least make sure the datasets are all sized correctly.
+                        check_consistency(attempt_repair);
+
+                        // Output seems to be readable. 
+                        // Get previous highest pointID for our rank from the existing output file
+                        // Might take a while, so time it.
+                        std::chrono::time_point&lt;std::chrono::system_clock&gt; start(std::chrono::system_clock::now());
+                        //PPIDpair highest_PPID
+                        std::map&lt;ulong, ulong&gt; highest_PPIDs = get_highest_PPIDs_from_HDF5();
+                        std::chrono::time_point&lt;std::chrono::system_clock&gt; end(std::chrono::system_clock::now());
+                        std::chrono::duration&lt;double&gt; time_taken = end - start;
+                        
+                        for (size_t rank = 0; rank &lt; mpiSize; rank++ )
+                        {
+                            auto it = highest_PPIDs.find(rank);
+                            if (it != highest_PPIDs.end())
+                                highests[rank] = it-&gt;second;
+                            else
+                                highests[rank] = 0;
+                        }
+
+                        logger() &lt;&lt; LogTags::info &lt;&lt; &quot;Extracted highest pointID calculated on rank &quot;&lt;&lt;myRank&lt;&lt;&quot; process during previous scan (it was &quot;&lt;&lt; highests &lt;&lt;&quot;) from combined output. Operation took &quot;&lt;&lt;std::chrono::duration_cast&lt;std::chrono::seconds&gt;(time_taken).count()&lt;&lt;&quot; seconds.&quot; &lt;&lt; EOM;
+
+                    }
+                    else
+                    {
+                        logger() &lt;&lt; LogTags::info &lt;&lt; &quot;No previous output file found; therefore no previous MPIrank/pointID pairs to parse. Will assume that this is a new run (-r/--restart flag was not explicitly given).&quot; &lt;&lt; EOM;
+                    }
+
+                }
+            }
+           
+            if(myRank==0 and not get_resume())
+            {
+                // No previous output; need to create MPIrank and pointID datasets
+                // so that they can be used to measure nominal dataset lengths
+                // Need to make sure this is done before other processes try
+                // to print anything.
+                buffermaster.lock_and_open_file();
+
+                HDF5DataSet&lt;int&gt;       mpiranks      (&quot;MPIrank&quot;);
+                HDF5DataSet&lt;int&gt;       mpiranks_valid(&quot;MPIrank_isvalid&quot;);
+                HDF5DataSet&lt;ulong&gt;     pointids      (&quot;pointID&quot;);
+                HDF5DataSet&lt;int&gt;       pointids_valid(&quot;pointID_isvalid&quot;);
+
+                mpiranks      .create_dataset(buffermaster.get_location_id());
+                mpiranks_valid.create_dataset(buffermaster.get_location_id());
+                pointids      .create_dataset(buffermaster.get_location_id());
+                pointids_valid.create_dataset(buffermaster.get_location_id());
+
+                buffermaster.close_and_unlock_file();
+            }
+
+#ifdef WITH_MPI
+            // Resume might have been deactivated due to lack of existing previous output
+            // Need to broadcast this to all other processes.
+            std::vector&lt;int&gt; resume_int_buf(1);
+            resume_int_buf[0] = get_resume();
+            myComm.Barrier();
+            myComm.Bcast(resume_int_buf, 1, 0);
+            set_resume(resume_int_buf.at(0));
+
+            if(get_resume())
+            {
+                unsigned long highest;
+                myComm.Barrier();
+                myComm.Scatter(highests, highest, 0);
+                get_point_id() = highest;
+            }
+#else
+            if(get_resume())
+            {
+                get_point_id() = highests[0];
+            }
+#endif
+        }
+    }
+
+    /// Check all datasets in a group for length inconsistencies
+    /// and correct them if possible
+    void HDF5Printer2::check_consistency(bool attempt_repair)
+    {
+         hid_t fid = HDF5::openFile(get_filename(), false, 'r');
+         hid_t gid = HDF5::openGroup(fid, get_groupname(), true);
+        
+         // Get all object names in the group 
+         std::vector&lt;std::string&gt; names = HDF5::lsGroup(gid);
+         std::vector&lt;std::string&gt; dset_names;
+
+         // Check if all datasets have the same length
+         bool first=true;
+         bool problem=false;
+         std::size_t dset_length = 0;
+         std::size_t max_dset_length = 0;
+         std::size_t min_dset_length = 0;
+         for(auto it = names.begin(); it!=names.end(); ++it)
+         {
+             // Check if object is a dataset (could be another group)
+             if(HDF5::isDataSet(gid, *it))
+             {
+                 dset_names.push_back(*it);
+                 HDF5DataSetBasic dset(*it);
+                 dset.open_dataset(gid);
+                 std::size_t this_dset_length = dset.get_dset_length();
+                 if(first)
+                 {
+                     min_dset_length = this_dset_length; 
+                     first = false;
+                 }
+                 else if(dset_length!=this_dset_length)
+                 {
+                     problem = true;
+                 }
+                 if(this_dset_length&gt;max_dset_length) max_dset_length = this_dset_length;
+                 if(this_dset_length&lt;min_dset_length) min_dset_length = this_dset_length;
+                 dset_length = this_dset_length;
+                 dset.close_dataset();
+             }
+         }
+
+         if(problem)
+         {
+             // Length inconsistency detected. Need to try and fix it.
+             // First, need to know &quot;nominal&quot; length. This is the *shortest*
+             // of the mpiranks/pointids datasets. We will invalidate data
+             // in any datasets beyond this length.
+             // Then we need to know the longest actual length of any dataset.
+             // We will extend all datasets to this size, and set data as invalid
+             // beyond the nominal length. Shortening datasets doesn't work well
+             // in HDF5, so it is better to just leave a chunk of invalid data.
+
+             std::ostringstream warn;
+             warn &lt;&lt; &quot;An inconsistency has been detected in the existing HDF5 output! Not all datasets are the same length. This can happen if your previous run was not shut down safely. We will now check all datasets for corruption (this involves reading the whole HDF5 file so may take some time if it is a large file)&quot;&lt;&lt;std::endl;
+             warn &lt;&lt; &quot;Note: longest  dataset: &quot;&lt;&lt;max_dset_length&lt;&lt;std::endl;
+             warn &lt;&lt; &quot;      shortest dataset: &quot;&lt;&lt;min_dset_length&lt;&lt;std::endl;
+             std::cerr &lt;&lt; warn.str();
+             printer_warning().raise(LOCAL_INFO, warn.str());
+
+             bool unfixable_problem=false;
+             std::string unfixable_report;
+             std::size_t highest_common_readable_index = 0;
+
+             // We already measured the longest dataset length. So now we want to extend all datasets to this length
+             std::cerr&lt;&lt;std::endl;
+             for(auto it = dset_names.begin(); it!=dset_names.end(); ++it)
+             {
+                 std::cerr&lt;&lt;&quot;\rScanning dataset for problems: &quot;&lt;&lt;*it&lt;&lt;&quot;                                                                    &quot;;
+                 HDF5DataSetBasic dset(*it);
+                 dset.open_dataset(gid);
+                 std::size_t this_dset_length = dset.get_dset_length();
+
+                 // Check that the dataset is fully readable
+                 // Also finds highest readable index if dataset is partially readable
+                 std::pair&lt;bool,std::size_t&gt; readable_info = HDF5::checkDatasetReadable(gid, *it);
+                 if(not readable_info.first)
+                 {
+                     std::ostringstream msg;
+                     msg &lt;&lt; &quot;   Corrupted dataset detected! Highest readable index was &quot;&lt;&lt;readable_info.second&lt;&lt;&quot; (dataset name = &quot;&lt;&lt;*it&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                     unfixable_report += msg.str();
+                     if(not unfixable_problem)
+                     {
+                         highest_common_readable_index = readable_info.second;
+                         unfixable_problem = true;
+                     }
+                     else if(readable_info.second &lt; highest_common_readable_index)
+                     {
+                         highest_common_readable_index = readable_info.second;
+                     }
+                 }
+                 dset.close_dataset();
+
+                 // Also need to shorten this highest_common_readable_index in case some non-corrupt datasets happen to be shorter
+                 if(this_dset_length &lt; highest_common_readable_index) highest_common_readable_index = this_dset_length;
+
+             }
+             std::cerr&lt;&lt;&quot;\rScan of datasets complete!                                                                                      &quot;&lt;&lt;std::endl;
+
+             if(unfixable_problem)
+             {
+                 // Dataset corruption detected! Need to abort, but we can tell the user some facts about the problem.
+                 std::ostringstream err;
+                 err&lt;&lt;&quot;Corruption detected in existing datasets! You cannot resume writing to the existing HDF5 file. You may be able to recover from this by copying all readable data from these datasets into a new HDF5 file. We have checked the readability of all datasets and determined that the highest index readable in all datasets is:&quot;&lt;&lt;std::endl;
+                 err&lt;&lt;&quot;   &quot;&lt;&lt;highest_common_readable_index&lt;&lt;std::endl;
+                 err&lt;&lt;&quot; A full report on the readability of corrupted datasets is given below:&quot;&lt;&lt;std::endl;
+                 err&lt;&lt;unfixable_report;
+                 printer_error().raise(LOCAL_INFO, err.str());
+             }
+
+             if(attempt_repair)
+             {
+                 std::ostringstream warn;
+                 warn &lt;&lt; &quot;Attempting to automatically repair datasets. Lost data will not be recovered, but file will be restored to a condition such that further data can be added. A report on dataset modifications will be issued below. If you want to disable auto-repair (and get an error message instead) then please set disable_autorepair=true in the YAML options for this printer.&quot;&lt;&lt;std::endl; 
+                 std::cerr &lt;&lt; warn.str();
+                 printer_warning().raise(LOCAL_INFO, warn.str());
+  
+                 std::ostringstream repair_report;
+      
+                 // Reopen file in write mode
+                 HDF5::closeGroup(gid);
+                 HDF5::closeFile(fid);
+                 fid = HDF5::openFile(get_filename(), false, 'w');
+                 gid = HDF5::openGroup(fid, get_groupname(), true);
+ 
+                 HDF5DataSet&lt;int&gt;       mpiranks      (&quot;MPIrank&quot;);
+                 HDF5DataSet&lt;int&gt;       mpiranks_valid(&quot;MPIrank_isvalid&quot;);
+                 HDF5DataSet&lt;ulong&gt;     pointids      (&quot;pointID&quot;);
+                 HDF5DataSet&lt;int&gt;       pointids_valid(&quot;pointID_isvalid&quot;);
+
+                 mpiranks      .open_dataset(gid);     
+                 mpiranks_valid.open_dataset(gid);
+                 pointids      .open_dataset(gid);
+                 pointids_valid.open_dataset(gid);
+
+                 std::size_t nominal_dset_length = mpiranks.get_dset_length();
+                 if(mpiranks_valid.get_dset_length() &lt; nominal_dset_length) nominal_dset_length = mpiranks_valid.get_dset_length();
+                 if(pointids      .get_dset_length() &lt; nominal_dset_length) nominal_dset_length = pointids      .get_dset_length();
+                 if(pointids_valid.get_dset_length() &lt; nominal_dset_length) nominal_dset_length = pointids_valid.get_dset_length();
+                
+                 mpiranks      .close_dataset();     
+                 mpiranks_valid.close_dataset();
+                 pointids      .close_dataset();
+                 pointids_valid.close_dataset();
+
+                 repair_report &lt;&lt; &quot;   Nominal dataset length identified as: &quot;&lt;&lt;nominal_dset_length&lt;&lt;std::endl;
+                 repair_report &lt;&lt; &quot;   Maximum dataset length identified as: &quot;&lt;&lt;max_dset_length&lt;&lt;std::endl;
+
+                 // We already measured the longest dataset length. So now we want to extend all datasets to this length
+                 for(auto it = dset_names.begin(); it!=dset_names.end(); ++it)
+                 {
+                     HDF5DataSetBasic dset(*it);
+                     dset.open_dataset(gid);
+                     std::size_t this_dset_length = dset.get_dset_length();
+                     if(max_dset_length &gt; this_dset_length)
+                     {
+                         dset.extend_dset_to(max_dset_length);
+                         repair_report &lt;&lt; &quot;   Extended dataset from &quot;&lt;&lt;this_dset_length&lt;&lt;&quot; to &quot;&lt;&lt;max_dset_length&lt;&lt;&quot;   (name = &quot;&lt;&lt;*it&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                     }
+                     dset.close_dataset();
+                 }
+
+                 // Next we want to open all the 'isvalid' datasets, and set their entries as 'invalid' between nominal and max lengths.
+                 // Could be that the nominal length is the max length though; in which case no further action is required. That just
+                 // means some datasets were too short. They will automatically be set as invalid in the extended sections.
+                 if(max_dset_length &gt; nominal_dset_length)
+                 {
+                     for(auto it = dset_names.begin(); it!=dset_names.end(); ++it)
+                     {
+                         if(Utils::endsWith(*it,&quot;_isvalid&quot;))
+                         {
+                             HDF5DataSet&lt;int&gt; dset(*it);
+                             std::vector&lt;int&gt; zeros(max_dset_length-nominal_dset_length,0);
+                             dset.write_vector(gid, zeros, nominal_dset_length, true);
+                             repair_report &lt;&lt; &quot;   Set data as 'invalid' from &quot;&lt;&lt;nominal_dset_length&lt;&lt;&quot; to &quot;&lt;&lt;max_dset_length&lt;&lt;&quot;   (name = &quot;&lt;&lt;*it&lt;&lt;&quot;)&quot;&lt;&lt;std::endl; 
+                         }
+                     }
+                 }
+                 repair_report &lt;&lt; &quot;   Repairs complete.&quot;&lt;&lt;std::endl;
+                 std::cerr &lt;&lt; repair_report.str();
+                 printer_warning().raise(LOCAL_INFO, repair_report.str());
+             }
+             else
+             {
+                 std::ostringstream err;
+                 err &lt;&lt; &quot;Automatic dataset repair has been disabled, and a problem with your HDF5 file was detected, so this run must stop. Please manually repair your HDF5 file, or set disable_autorepair=false in the YAML options for this printer, and then try again.&quot;; 
+                 printer_error().raise(LOCAL_INFO, err.str());
+             }
+         }
+ 
+         HDF5::closeGroup(gid);
+         HDF5::closeFile(fid);
+    }
+
+
+    /// Destructor
+    HDF5Printer2::~HDF5Printer2()
+    {
+        // Nothing special required
+    }
+
+    /// Add buffer to the primary printers records
+    void HDF5Printer2::add_aux_buffer(HDF5MasterBuffer&amp; aux_buffermaster)
+    {
+        if(is_auxilliary_printer())
+        {
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;'add_aux_buffer' function called on auxilliary printer! Only the primary printer should be using this function! This is abug, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+        aux_buffers.push_back(&amp;aux_buffermaster);
+    }
+   
+    void HDF5Printer2::initialise(const std::vector&lt;int&gt;&amp;)
+    {
+        // This printer doesn't need to do anything here
+    }
+
+    // Clear all data in buffers and on disk for this printer
+    void HDF5Printer2::reset(bool /*force*/)
+    {
+        //TODO: force flag currently not used; do we need it?
+        buffermaster.reset();
+    }
+
+    // Flush data in buffers to disk
+    void HDF5Printer2::flush()
+    {
+        buffermaster.flush();
+    }
+
+    // Make sure printer output is fully on disk and safe
+    // No distinction between final and early termination procedure for this printer.
+    void HDF5Printer2::finalise(bool /*abnormal*/)
+    {
+        // DEBUG h5v2_BLOCK message counter
+        //recv_counter = 0;
+        //send_counter = 0;
+
+        // The primary printer will take care of finalising all output.
+        if(not is_auxilliary_printer())
+        {
+            // On HPC systems we are likely to be using hundreds or thousands of processes,
+            // over a networked filesystem. If each process tries to write to the
+            // output file all at once, it will create an enormous bottleneck and be very
+            // slow.
+            // We thus need to send ALL the buffer data to the master process via MPI,
+            // and have the master process write everything to disk. Fortunately all the
+            // processes can be synced here, so we can do some big collective
+            // operations to send everything.
+
+            #ifdef WITH_MPI
+            // Gather and print the sync buffer data
+            // Sort all buffers into sync/non-sync
+            std::vector&lt;HDF5MasterBuffer*&gt; sync_buffers;
+            std::vector&lt;HDF5MasterBuffer*&gt; RA_buffers;
+            sync_buffers.push_back(&amp;buffermaster);
+            for(auto it=aux_buffers.begin(); it!=aux_buffers.end(); ++it)
+            {
+                if((*it)-&gt;is_synchronised())
+                {
+                    sync_buffers.push_back(*it);
+                }
+                else
+                {
+                    RA_buffers.push_back(*it);
+                }
+            }
+            #ifdef HDF5PRINTER2_DEBUG 
+            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug;
+            logger()&lt;&lt;&quot;# sync printer streams: &quot;&lt;&lt;sync_buffers.size()&lt;&lt;std::endl;
+            logger()&lt;&lt;&quot;# RA printer streams  : &quot;&lt;&lt;RA_buffers.size()&lt;&lt;EOM;
+            #endif
+            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::info&lt;&lt;&quot;Gathering sync buffer data from all processes to rank 0 process...&quot;&lt;&lt;EOM;
+            gather_and_print(buffermaster,sync_buffers,true);
+            #endif
+
+            // Flush remaining buffer data
+            /// Need to finalise output of the sync buffers for
+            /// all printers before we do the RA buffers.
+            if(myRank==0)
+            {
+                buffermaster.flush(); // Flush the primary printer
+                for(auto it=aux_buffers.begin(); it!=aux_buffers.end(); ++it)
+                {
+                    if((*it)-&gt;is_synchronised())
+                    {
+                        (*it)-&gt;flush();
+                    } 
+                }
+            }
+
+            // Flush master process RA print buffers
+
+            std::ostringstream buffer_nonempty_report;
+            bool buffer_nonempty_warn(false);
+            std::size_t final_size;
+            if(myRank==0)
+            {
+                /// Need to know final nominal dataset size to ensure unsynchronised datasets match synchronised ones.
+                buffermaster.lock_and_open_file();
+                final_size = buffermaster.get_next_free_position();
+                buffermaster.close_and_unlock_file();
+                std::cout&lt;&lt;&quot;Final dataset size is &quot;&lt;&lt;final_size&lt;&lt;std::endl;
+                logger()&lt;&lt; LogTags::printers &lt;&lt; LogTags::info &lt;&lt; &quot;Final dataset size is &quot;&lt;&lt;final_size&lt;&lt;EOM;
+            }
+
+            #ifdef WITH_MPI
+            // Gather RA print buffer data from all other processes
+
+            // Create a dedicate unsynchronised 'aux' buffer handler to receive data from other processes (and also this one!)
+            HDF5MasterBuffer RAbuffer(get_filename(),get_groupname(),false,get_buffer_length(),myComm);
+ 
+            // Add it to RA_buffers in case there are none, to satisfy various collective operation requirements
+            RA_buffers.push_back(&amp;RAbuffer);
+ 
+            // Gather RA print buffer data from all other processes
+            logger()&lt;&lt; LogTags::printers &lt;&lt; LogTags::info &lt;&lt; &quot;Gathering random-access print buffer data from all process to rank 0 process...&quot;&lt;&lt;EOM;
+            if(myRank==0 and mpiSize&gt;1)
+            {
+                // Do the gather
+                gather_and_print(RAbuffer,RA_buffers,false); 
+            }
+            else if(myRank&gt;0)
+            {
+                // Do the gather
+                // Note: first argument is the target output buffermanger, but is unused except on rank 0
+                // So just stick any buffermanager object as the argument to satisfy the function signature requirements.
+                gather_and_print(buffermaster,RA_buffers,false); 
+            }
+
+            // Try to flush everything left to disk
+            add_aux_buffer(RAbuffer); // Make sure to include 'gathered' RA data, if there is any.
+            #endif
+            for(auto it=aux_buffers.begin(); it!=aux_buffers.end(); ++it)
+            {
+                if(not (*it)-&gt;is_synchronised())
+                {
+                    (*it)-&gt;flush();
+                    // Check if everything managed to flush!
+                    if(not (*it)-&gt;all_buffers_empty())
+                    {
+                        buffer_nonempty_report&lt;&lt;(*it)-&gt;buffer_status();
+                        buffer_nonempty_warn = true;
+                    }
+                    // Make sure final dataset size is correct for the unsynchronised buffers
+                    (*it)-&gt;extend_all_datasets_to(final_size);
+                } 
+            }
+
+            if(myRank==0 and buffer_nonempty_warn)
+            {
+                std::ostringstream errmsg;
+                errmsg&lt;&lt;&quot;\nWarning! Not all 'random access' buffers were successfully flushed to disk! This most often occurs when you resume scanning from a run that did not shut down cleanly (at some point in its history). Hard shutdowns can cause loss of samples, and cause subsequent attempts to write data to the missing points to fail, triggering this warning.&quot;&lt;&lt;std::endl;
+                errmsg&lt;&lt;&quot;A report on the data that could not be written to disk is given below. Please consider the impact of this on the integrity of your results:&quot;&lt;&lt;std::endl;
+                errmsg&lt;&lt;buffer_nonempty_report.str();
+                std::cout&lt;&lt;errmsg.str();
+                printer_warning().raise(LOCAL_INFO, errmsg.str());
+            }
+
+            logger()&lt;&lt; LogTags::printers &lt;&lt; LogTags::info &lt;&lt; &quot;HDF5Printer2 output finalisation complete.&quot;&lt;&lt;EOM;
+
+            // DEBUG
+            //logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;h5v2_BLOCK send count: &quot;&lt;&lt;send_counter&lt;&lt;std::endl
+            //                                           &lt;&lt;&quot;h5v2_BLOCK recv count: &quot;&lt;&lt;recv_counter&lt;&lt;EOM;
+        }    
+    }
+
+    /// Get pointer to primary printer of this class type
+    /// (get_primary_printer returns a pointer-to-base)
+    HDF5Printer2* HDF5Printer2::get_HDF5_primary_printer()
+    {
+        if(not is_auxilliary_printer())
+        {
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;Attempted to get a pointer of derived class type to primary printer, however this object IS the primary printer! This is a bug, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+        else if(primary_printer==NULL)
+        {
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;Attempted to get a pointer of derived class type to primary printer, but it was NULL! This means that this auxilliary printer has not been constructed correctly. This is a bug, please report it.&quot;; 
+            printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+        return primary_printer;
+    }
+  
+
+    /// Search the existing output and find the highest used pointIDs for each rank
+    std::map&lt;ulong, ulong&gt; HDF5Printer2::get_highest_PPIDs_from_HDF5()
+    {
+        return buffermaster.get_highest_PPIDs(mpiSize);
+    }
+
+    /// Report name (inc. path) of output file
+    std::string HDF5Printer2::get_filename()
+    {
+        return buffermaster.get_file();
+    }
+
+    /// Report group in output HDF5 file of output datasets
+    std::string HDF5Printer2::get_groupname()
+    {
+        return buffermaster.get_group();
+    }
+
+    /// Report length of buffer for HDF5 output
+    std::size_t HDF5Printer2::get_buffer_length()
+    {
+        return buffermaster.get_buffer_length();
+    }
+
+    /// Determine filename from options 
+    std::string HDF5Printer2::get_filename(const Options&amp; options)
+    {
+        std::string filename;
+        if(not this-&gt;is_auxilliary_printer())
+        {
+            // Name of file where results should ultimately end up
+            std::ostringstream ff;
+            if(options.hasKey(&quot;output_path&quot;))
+            {
+              ff &lt;&lt; options.getValue&lt;std::string&gt;(&quot;output_path&quot;) &lt;&lt; &quot;/&quot;;
+            }
+            else
+            {
+              ff &lt;&lt; options.getValue&lt;std::string&gt;(&quot;default_output_path&quot;) &lt;&lt; &quot;/&quot;;
+            }
+            if(options.hasKey(&quot;output_file&quot;))
+            {
+              ff &lt;&lt; options.getValue&lt;std::string&gt;(&quot;output_file&quot;);
+            }
+            else
+            {
+              printer_error().raise(LOCAL_INFO, &quot;No 'output_file' entry specified in the options section of the Printer category of the input YAML file. Please add a name there for the output hdf5 file of the scan.&quot;);
+            }
+            filename = ff.str();
+        }
+        else
+        {
+            // Get filename from primary printer object
+            filename = get_HDF5_primary_printer()-&gt;get_filename();
+        }
+        return filename;
+    }
+
+    /// Determine target group in output HDF5 file from options
+    std::string HDF5Printer2::get_groupname(const Options&amp; options)
+    {
+        std::string groupname;
+        if(not is_auxilliary_printer())
+        {
+            groupname = options.getValueOrDef&lt;std::string&gt;(&quot;/&quot;,&quot;group&quot;);
+        }
+        else
+        {
+            // Get groupname from primary printer
+            groupname = get_HDF5_primary_printer()-&gt;get_groupname();
+        }
+        return groupname;
+    }
+
+    /// Get length of buffer from options (or primary printer)
+    std::size_t HDF5Printer2::get_buffer_length(const Options&amp; options)
+    {
+        std::size_t buflen;
+        if(not is_auxilliary_printer())
+        {
+            buflen = options.getValueOrDef&lt;std::size_t&gt;(1000,&quot;buffer_length&quot;);
+            if(buflen &gt; MAX_BUFFER_SIZE)
+            {
+                std::ostringstream errmsg;
+                errmsg&lt;&lt;&quot;Requested buffer length is larger than maximum allowed (which is MAX_BUFFER_SIZE=&quot;&lt;&lt;MAX_BUFFER_SIZE&lt;&lt;&quot;). Please specify a shorter buffer_length for the HDF5 printer.&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+        }
+        else
+        {
+            // Get buffer length from primary printer
+            buflen = get_HDF5_primary_printer()-&gt;get_buffer_length();
+        }
+        return buflen;
+    }
+
+    bool HDF5Printer2::get_sync(const Options&amp; options)
+    {
+        return options.getValueOrDef&lt;bool&gt;(true,&quot;synchronised&quot;);
+    }
+
+    // Get options required to construct a reader object that can read
+    // the previous output of this printer.
+    Options HDF5Printer2::resume_reader_options()
+    {
+        Options options;
+        // Set options that we need later to construct a reader object for
+        // previous output, if required.
+        options.setValue(&quot;type&quot;, &quot;hdf5&quot;);
+        options.setValue(&quot;file&quot;, buffermaster.get_file());
+        options.setValue(&quot;group&quot;, buffermaster.get_group());
+        return options;
+    }
+
+#ifdef WITH_MPI
+    /// Get reference to Comm object
+    GMPI::Comm&amp; HDF5Printer2::get_Comm() {return myComm;}
+
+    // Determine ID codes to use for buffer transmission for all buffers across a collection of buffer managers
+    std::pair&lt;std::map&lt;std::string,int&gt;,std::vector&lt;std::pair&lt;std::string,int&gt;&gt;&gt; HDF5Printer2::get_buffer_idcodes(const std::vector&lt;HDF5MasterBuffer*&gt;&amp; masterbuffers)
+    {
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Determining ID codes for HDF5 buffers for MPI transmission...&quot;&lt;&lt;EOM;
+        int rank = myComm.Get_rank();
+        // Gather information on buffers to be gathered from
+        // all processes
+        std::stringstream buffernames;
+        std::string delim = &quot;`~`&quot;;
+
+        // We will pack all the buffer names into one big string, and separate them
+        // again on each process.
+        // NOTE! This would be a lot of data to transmit, but actually we only need
+        // to transmit buffer names that don't already exist in the output file!
+        std::set&lt;std::pair&lt;std::string,int&gt;&gt; bufdefs;
+        for(auto bt=masterbuffers.begin(); bt!=masterbuffers.end(); ++bt)
+        {
+            std::map&lt;std::string,HDF5BufferBase*&gt; all_buffers = (*bt)-&gt;get_all_buffers();
+            for(auto it=all_buffers.begin(); it!=all_buffers.end(); ++it)
+            {
+                if(not it-&gt;second-&gt;exists_on_disk())
+                {
+                    bufdefs.insert(std::make_pair(it-&gt;first,it-&gt;second-&gt;get_type_id()));
+                }
+            }
+        }
+ 
+        // Set made sure name/types were unique, now convert to a big string for transmission
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Converting buffer names and types to string for transmission...&quot;&lt;&lt;std::endl;
+        for(auto it=bufdefs.begin(); it!=bufdefs.end(); ++it)
+        {
+            buffernames&lt;&lt;it-&gt;first&lt;&lt;delim;
+            buffernames&lt;&lt;it-&gt;second&lt;&lt;delim;
+            logger()&lt;&lt;&quot;   type: &quot;&lt;&lt;it-&gt;second&lt;&lt;&quot;; name: &quot;&lt;&lt;it-&gt;first&lt;&lt;std::endl;
+        }
+        std::string namestr = buffernames.str();
+        #ifdef HDF5PRINTER2_DEBUG
+        logger()&lt;&lt;&quot;Full string to transmit:&quot;&lt;&lt;std::endl;
+        #endif
+        logger()&lt;&lt;namestr&lt;&lt;EOM;
+
+        // First gather lengths of strings to receive from all processes
+        std::vector&lt;int&gt; totallen;
+        totallen.push_back(namestr.length());
+        std::vector&lt;int&gt; alllens(myComm.Get_size());
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Gathering lengths of string messages...&quot;&lt;&lt;std::endl;
+        #ifdef HDF5PRINTER2_DEBUG
+        logger()&lt;&lt;&quot;Initial state: &quot;&lt;&lt;alllens;
+        #endif
+        logger()&lt;&lt;EOM;
+        myComm.Gather(totallen, alllens, 0);
+        #ifdef HDF5PRINTER2_DEBUG 
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Final state  : &quot;&lt;&lt;alllens&lt;&lt;EOM;
+        #endif 
+
+        std::size_t totalstrsize = 0;
+        for(auto it=alllens.begin(); it!=alllens.end(); ++it)
+        {
+            // Check validity
+            if(*it&lt;0)
+            {
+                std::ostringstream errmsg;
+                errmsg&lt;&lt;&quot;Received a negative value for the total length of new buffer names from a process! The value might have overflowed! In any case it makes no sense, something bad has happened.&quot;;
+                printer_error().raise(LOCAL_INFO, errmsg.str());       
+            }
+            totalstrsize += *it;
+        }
+
+        // Check for int overflow (max single message size)
+        std::size_t maxint = std::numeric_limits&lt;int&gt;::max(); 
+        if(totalstrsize &gt; maxint)
+        {
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;Complete buffer name message is larger than MPI limits for a single message! (Required size: &quot;&lt;&lt;totalstrsize&lt;&lt;&quot;, max size on this system (largest int): &quot;&lt;&lt;maxint&lt;&lt;&quot;)&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());        
+        }
+
+        // Now gather all the strings
+        std::vector&lt;char&gt; sendnames(namestr.begin(), namestr.end());
+        std::vector&lt;char&gt; recvnames(totalstrsize);
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Gathering all buffer name strings...&quot;&lt;&lt;std::endl;
+        #ifdef HDF5PRINTER2_DEBUG 
+        logger()&lt;&lt;&quot;sendnames:&quot;&lt;&lt;sendnames;
+        #endif
+        logger()&lt;&lt;EOM;
+        myComm.Gatherv(sendnames, recvnames, alllens, 0);
+        #ifdef HDF5PRINTER2_DEBUG 
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;recvnames:&quot;&lt;&lt;recvnames&lt;&lt;EOM;
+        #endif
+
+        // Process names and assign IDs
+        std::stringstream sendbufs;
+        std::vector&lt;std::pair&lt;std::string,int&gt;&gt; ordered_bufs; // Will only be filled on rank 0
+        if(rank==0)
+        {
+            // Split them back into their individual buffer names and types
+            std::string recvnames_str(recvnames.begin(), recvnames.end());
+            std::vector&lt;std::string&gt; all_buf_names_and_types = Utils::split(recvnames_str,delim);
+            if(!all_buf_names_and_types.empty()) 
+            {
+                all_buf_names_and_types.pop_back(); // Remove trailing empty element
+                // Make sure result is of even length (always need name + type)
+                if(all_buf_names_and_types.size() % 2 != 0)
+                {
+                    std::ostringstream errmsg;
+                    errmsg&lt;&lt;&quot;all_buf_names_and_types vector doesn't have an even number of elements! This is a bug, please report it.&quot;;
+                    printer_error().raise(LOCAL_INFO, errmsg.str());       
+                }
+            }
+
+            std::set&lt;std::pair&lt;std::string,int&gt;&gt; all_buf_pairs; // Remove duplicates via set
+            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Splitting received buffer name string...&quot;&lt;&lt;std::endl;
+            #ifdef HDF5PRINTER2_DEBUG
+            logger()&lt;&lt;&quot;Input: &quot;&lt;&lt;recvnames_str&lt;&lt;std::endl;
+            logger()&lt;&lt;&quot;All size: &quot;&lt;&lt;all_buf_names_and_types.size()&lt;&lt;std::endl;
+            logger()&lt;&lt;&quot;All: &quot;&lt;&lt;all_buf_names_and_types&lt;&lt;std::endl;
+            #endif
+            for(auto it=all_buf_names_and_types.begin(); it!=all_buf_names_and_types.end(); ++it)
+            {
+                if(*it!=&quot;&quot;)
+                {
+                    std::string name(*it);
+                    ++it;
+                    if(it!=all_buf_names_and_types.end())
+                    {
+                       int type(std::stoi(*it));
+                       all_buf_pairs.insert(std::make_pair(name,type));
+                       logger()&lt;&lt;&quot;   Inserted: type:&quot;&lt;&lt;type&lt;&lt;&quot;; name:&quot;&lt;&lt;name&lt;&lt;std::endl;
+                    }
+                    else
+                    {
+                       std::ostringstream errmsg;
+                       errmsg&lt;&lt;&quot;Iterated past end of all_buf_names_and_types! This is a bug, please report it.&quot;;
+                       printer_error().raise(LOCAL_INFO, errmsg.str());       
+                    }
+                }
+            }
+            logger()&lt;&lt;EOM;
+
+            // Add the buffers that are already on disk
+            // (do this via any of the buffer managers; they should all be managing buffers in the same
+            //  HDF5 group or else none of this will work anyway)
+            std::vector&lt;std::pair&lt;std::string,int&gt;&gt; existing_bufs = masterbuffers.at(0)-&gt;get_all_dset_names_on_disk();
+            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Adding buffer names already on disk:&quot;&lt;&lt;std::endl;
+            for(auto it=existing_bufs.begin(); it!=existing_bufs.end(); ++it)
+            {
+                all_buf_pairs.insert(*it);
+                logger()&lt;&lt;&quot;   Added: type:&quot;&lt;&lt;it-&gt;second&lt;&lt;&quot;; name:&quot;&lt;&lt;it-&gt;first&lt;&lt;std::endl;
+            }
+            logger()&lt;&lt;EOM;
+
+            // Figure out ID codes for all the buffers based on their order
+            // in the unique set. Should end up the same on all processes.
+            ordered_bufs = std::vector&lt;std::pair&lt;std::string,int&gt;&gt;(all_buf_pairs.begin(),all_buf_pairs.end()); 
+
+            // Prepare buffers for sending. Don't need the types this time.
+            for(auto it=ordered_bufs.begin(); it!=ordered_bufs.end(); ++it)
+            {
+                sendbufs&lt;&lt;it-&gt;first&lt;&lt;delim;
+            }
+        }
+        namestr = sendbufs.str(); // might as well re-use these variables
+        sendnames = std::vector&lt;char&gt;(namestr.begin(), namestr.end());
+        std::vector&lt;int&gt; size(1);
+        size[0] = sendnames.size();
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Broadcasting size of composited buffer name string&quot;&lt;&lt;std::endl;
+        #ifdef HDF5PRINTER2_DEBUG
+        logger()&lt;&lt;&quot;   namestr:&quot;&lt;&lt;namestr&lt;&lt;std::endl;
+        logger()&lt;&lt;&quot;   namestr.size():&quot;&lt;&lt;size.at(0);
+        #endif
+        logger()&lt;&lt;EOM; 
+        // Broadcast the required recv buffer size
+        myComm.Bcast(size, 1, 0);
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Received size for composited buffer name string:&quot;&lt;&lt;size&lt;&lt;EOM;
+       
+        if(rank!=0) sendnames = std::vector&lt;char&gt;(size.at(0));
+
+        // Broadcast the buffer names in the order defining their ID codes
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Broadcasting composited buffer name string&quot;&lt;&lt;std::endl;
+        #ifdef HDF5PRINTER2_DEBUG
+        logger()&lt;&lt;&quot;   sendnames:&quot;&lt;&lt;sendnames;
+        #endif
+        logger()&lt;&lt;EOM;
+        myComm.Bcast(sendnames, size.at(0), 0);
+        #ifdef HDF5PRINTER2_DEBUG
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Received:&quot;&lt;&lt;sendnames&lt;&lt;EOM;
+        #endif
+        // Split them back into their individual buffer names
+        std::string allnames_str(sendnames.begin(), sendnames.end());
+        std::vector&lt;std::string&gt; buf_order = Utils::split(allnames_str,delim);
+ 
+        // Compute map of ID codes
+        std::map&lt;std::string,int&gt; idcodes;
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Computing buffer ID codes:&quot;&lt;&lt;std::endl;
+        if(buf_order.size()&gt;0)
+        { 
+           for(std::size_t i=0; i&lt;buf_order.size()-1; i++)
+           {
+              idcodes[buf_order.at(i)] = i;
+              logger()&lt;&lt;&quot;   &quot;&lt;&lt;i&lt;&lt;&quot;: &quot;&lt;&lt;buf_order.at(i)&lt;&lt;std::endl;
+           }
+           logger()&lt;&lt;EOM;
+        }
+        return std::make_pair(idcodes,ordered_bufs); // Note: ordered_bufs only filled on rank 0!
+    }
+
+    // Gather buffer data from all processes via MPI and print it on rank 0
+    void HDF5Printer2::gather_and_print(HDF5MasterBuffer&amp; out_printbuffer, const std::vector&lt;HDF5MasterBuffer*&gt;&amp; masterbuffers, bool sync)
+    {
+        // First need to gatherv information on buffer sizes to be sent
+        std::vector&lt;unsigned long&gt; pointsbuffers(2);
+        std::vector&lt;unsigned long&gt; pointsbuffersperprocess(mpiSize*2); // number of points and buffers to be recv'd for each process
+        std::vector&lt;unsigned long&gt; pointsperprocess(mpiSize);
+        std::vector&lt;unsigned long&gt; buffersperprocess(mpiSize);
+
+        // Count points and buffers across all buffer manager objects
+        auto it=masterbuffers.begin();
+        if(it==masterbuffers.end())
+        {
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;No buffers supplied for gathering!&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());       
+        }
+        pointsbuffers[0] = (*it)-&gt;get_Npoints();
+        pointsbuffers[1] = (*it)-&gt;get_Nbuffers();
+        ++it;
+        for(;it!=masterbuffers.end(); ++it)
+        {
+           // In sync case points are shared across all buffer manager objects
+           // In aux case, points may or may not be shared. For the size
+           // computations we'll just have to assume they are not shared.
+           if(not sync) pointsbuffers[0] += (*it)-&gt;get_Npoints(); 
+           pointsbuffers[1] += (*it)-&gt;get_Nbuffers();          
+        }
+
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::info;
+        logger()&lt;&lt;&quot;Gathering data on number of points and buffers to be transmitted&quot;&lt;&lt;std::endl;
+        logger()&lt;&lt;&quot;Number of points to send from this process: &quot;&lt;&lt;pointsbuffers.at(0)&lt;&lt;std::endl;
+        logger()&lt;&lt;&quot;Number of buffers to send from this process: &quot;&lt;&lt;pointsbuffers.at(1)&lt;&lt;std::endl;
+        logger()&lt;&lt;EOM;
+
+        // Need to do AllGather because all processes need to be able to do the size
+        // computation to figure out if the main Gatherv operation needs to be split
+        // into pieces.
+        myComm.AllGather(pointsbuffers, pointsbuffersperprocess);
+        for(std::size_t i=0; i&lt;mpiSize; i++)
+        {
+           std::size_t j = 2*i;
+           std::size_t k = 2*i+1;
+           pointsperprocess[i]  = pointsbuffersperprocess.at(j);
+           buffersperprocess[i] = pointsbuffersperprocess.at(k);
+        }
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::info;
+        logger()&lt;&lt;&quot;Gathered data:&quot;&lt;&lt;std::endl;
+        logger()&lt;&lt;&quot;Number of points to recv from each process: &quot;&lt;&lt;pointsperprocess&lt;&lt;std::endl;
+        logger()&lt;&lt;&quot;Number of buffers to recv from each process: &quot;&lt;&lt;buffersperprocess&lt;&lt;std::endl;
+        logger()&lt;&lt;EOM; 
+
+        // Now we know how many points we need to recv per process, can figure out
+        // how many we can recv at once.
+        // Need to compute approximate MB of storage required by each process
+        std::vector&lt;std::vector&lt;int&gt;&gt; groups;
+        groups.push_back(std::vector&lt;int&gt;());
+        double running_tot_MB = 0;
+        for(std::size_t i=0; i&lt;mpiSize; i++)
+        {
+           double N_MB = pow(2,-20) * (8.+4.) * (double)buffersperprocess.at(i) * (double)pointsperprocess.at(i);
+           running_tot_MB += N_MB;
+           if((running_tot_MB &gt; RAMlimit) and (groups.back().size()&gt;1))
+           {
+              // Make a new group each time we go over the RAM limit, so long as the previous group wasn't empty (aside from rank 0 process)
+              groups.push_back(std::vector&lt;int&gt;());
+              groups.back().push_back(0); // Always need process 0 in there    
+           }
+           groups.back().push_back(i);
+        }
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug;
+        logger()&lt;&lt;&quot;Number of &lt;500MB Gathers to perform: &quot;&lt;&lt;groups.size()&lt;&lt;std::endl;
+        logger()&lt;&lt;&quot;Assigned communicator groups are:&quot;&lt;&lt;std::endl;
+        for(auto it=groups.begin(); it!=groups.end(); ++it)
+        {
+           logger()&lt;&lt;&quot;  &quot;&lt;&lt;(*it)&lt;&lt;std::endl;
+        }
+        logger()&lt;&lt;EOM;
+
+        // Get ID codes for the buffers (requires collective operations)
+        std::pair&lt;std::map&lt;std::string,int&gt;,std::vector&lt;std::pair&lt;std::string,int&gt;&gt;&gt; ids_and_types = get_buffer_idcodes(masterbuffers); 
+        std::map&lt;std::string,int&gt; buf_ids = ids_and_types.first;
+        std::vector&lt;std::pair&lt;std::string,int&gt;&gt; buf_types = ids_and_types.second;
+
+        for(std::size_t i=0; i&lt;groups.size(); i++)
+        {
+            // Create new communicator group for the Gather
+            std::stringstream ss;
+            ss&lt;&lt;&quot;Gather group &quot;&lt;&lt;i;
+            GMPI::Comm subComm(groups.at(i),ss.str());
+
+            // Gather the buffer data from this group of processes to rank 0
+
+            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::info;
+            logger()&lt;&lt;&quot;Gathering buffer data for processes &quot;&lt;&lt;groups.at(i)&lt;&lt;EOM;
+            
+            // Are we in this group? Communicator is null if not.
+            if(*(subComm.get_boundcomm())!=MPI_COMM_NULL)
+            {
+               //std::cerr&lt;&lt;&quot;rank &quot;&lt;&lt;myRank&lt;&lt;&quot; calling gather_all...&quot;&lt;&lt;std::endl;
+               std::vector&lt;HDF5bufferchunk&gt; data = gather_all(subComm, masterbuffers, buf_ids);
+               // Add the data to the output buffermanager on rank 0
+               if(myRank==0) 
+               {
+                   out_printbuffer.add_to_buffers(data,buf_types);
+                   out_printbuffer.resynchronise();
+                   out_printbuffer.flush();
+               }
+            }
+        }
+    }
+
+    // Gather (via MPI) all HDF5 buffer chunk data from a set of managed buffers
+    std::vector&lt;HDF5bufferchunk&gt; HDF5Printer2::gather_all(GMPI::Comm&amp; comm, const std::vector&lt;HDF5MasterBuffer*&gt;&amp; masterbuffers, const std::map&lt;std::string,int&gt;&amp; buf_ids)
+    {
+        if(*(comm.get_boundcomm())==MPI_COMM_NULL)
+        {
+            std::ostringstream errmsg;
+            errmsg&lt;&lt;&quot;Attempted to call gather_all with an invalid communicator! This is a bug, please report it.&quot;;
+            printer_error().raise(LOCAL_INFO, errmsg.str());        
+        }
+
+        // Build blocks to be transmitted
+        std::vector&lt;HDF5bufferchunk&gt; bufchunks;
+        std::vector&lt;PPIDpair&gt; sub_order;
+        std::size_t i=0; // point counter
+        HDF5bufferchunk newchunk;
+
+        // First need to determine all points known to all buffers
+        // For sync buffers should be the same for all buffer managers,
+        // but may not be for aux buffers.
+        std::set&lt;PPIDpair&gt; buffered_points;
+        for(auto bt=masterbuffers.begin(); bt!=masterbuffers.end(); ++bt)
+        {
+            const std::set&lt;PPIDpair&gt;&amp; all_points = (*bt)-&gt;get_all_points();
+            for(auto ct=all_points.begin(); ct!=all_points.end(); ++ct)
+            {
+                buffered_points.insert(*ct);
+            }
+        }
+
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Building buffer chunks for MPI transmission&quot;&lt;&lt;EOM;
+        for(auto it=buffered_points.begin(); it!=buffered_points.end(); ++it)
+        {
+            sub_order.push_back(*it);
+            newchunk.pointIDs[i] = it-&gt;pointID;
+            newchunk.ranks[i] = it-&gt;rank;
+            i++;
+            // Collected enough points to fill a chunk yet? If so, create a chunk.
+            if(sub_order.size()==HDF5bufferchunk::SIZE or std::next(it)==buffered_points.end())
+            {
+                #ifdef HDF5PRINTER2_DEBUG
+                logger()&lt;&lt;&quot;Obtained points for new chunk &quot;&lt;&lt;std::endl;
+                if(sub_order.size()==HDF5bufferchunk::SIZE)
+                {
+                    logger()&lt;&lt;&quot;(chunk full):&quot;&lt;&lt;std::endl;
+                }
+                else
+                {
+                    logger()&lt;&lt;&quot;(chunk not full, but no more points to add):&quot;&lt;&lt;std::endl;
+                }
+                for(auto ct=sub_order.begin(); ct!=sub_order.end(); ++ct)
+                {
+                    logger()&lt;&lt;&quot;   (rank=&quot;&lt;&lt;ct-&gt;rank&lt;&lt;&quot;, pointID=&quot;&lt;&lt;ct-&gt;pointID&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+                }
+                #endif
+                
+                // Go through all the buffers and add their values for these points
+                std::size_t j=0; // buffer selection index
+                for(auto bt=masterbuffers.begin(); bt!=masterbuffers.end(); ++bt)
+                {
+                    // Check that at least some of the selected points are stored in this set of buffers
+                    const std::set&lt;PPIDpair&gt;&amp; points_in_these_bufs = (*bt)-&gt;get_all_points();
+                    std::set&lt;PPIDpair&gt; intersec;
+                    std::set_intersection(sub_order.begin(),sub_order.end(),points_in_these_bufs.begin(),points_in_these_bufs.end(),
+                                          std::inserter(intersec,intersec.begin()));
+                    if(intersec.size()&gt;0)
+                    {
+                        std::map&lt;std::string,HDF5BufferBase*&gt; all_buffers = (*bt)-&gt;get_all_buffers();
+                        for(auto jt=all_buffers.begin(); jt!=all_buffers.end(); ++jt)
+                        {
+                            bool last_buffer = (std::next(jt)==all_buffers.end() and std::next(bt)==masterbuffers.end());
+                            #ifdef HDF5PRINTER2_DEBUG
+                            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug;
+                            #endif 
+                            if(HDF5::is_float_type(jt-&gt;second-&gt;get_type_id()))
+                            {
+                                std::pair&lt;std::vector&lt;double&gt;,std::vector&lt;int&gt;&gt; buffer;
+                                buffer = jt-&gt;second-&gt;flush_to_vector_dbl(sub_order);
+                                std::vector&lt;double&gt; values = buffer.first;
+                                std::vector&lt;int&gt; valid = buffer.second;
+                                // Check that at least some of this data is valid before wasting a chunk slot on it
+                                auto kt = std::find(valid.begin(), valid.end(), 1); 
+                                if(kt!=valid.end())
+                                {
+                                    #ifdef HDF5PRINTER2_DEBUG
+                                    logger()&lt;&lt;&quot;Adding float values for buffer &quot;&lt;&lt;jt-&gt;first&lt;&lt;std::endl;
+                                    #endif
+                                    newchunk.name_id[j] = buf_ids.at(jt-&gt;first);
+                                    for(std::size_t i2=0; i2&lt;sub_order.size(); i2++)
+                                    {
+                                        #ifdef HDF5PRINTER2_DEBUG
+                                        logger()&lt;&lt;&quot;    value=&quot;&lt;&lt;values.at(i2)&lt;&lt;&quot;, valid=&quot;&lt;&lt;valid.at(i2)&lt;&lt;std::endl;
+                                        #endif
+                                        newchunk.values[j][i2] = values.at(i2);
+                                        newchunk.valid[j][i2] = valid.at(i2);
+                                    }
+                                    j++; // Move to next buffer slot
+                                }
+                            }
+                            else // int version
+                            {
+                                std::pair&lt;std::vector&lt;long&gt;,std::vector&lt;int&gt;&gt; buffer;
+                                buffer = jt-&gt;second-&gt;flush_to_vector_int(sub_order);
+                                std::vector&lt;long&gt; values = buffer.first;
+                                std::vector&lt;int&gt; valid = buffer.second;
+                                // Check that at least some of this data is valid before wasting a chunk slot on it
+                                auto kt = std::find(valid.begin(), valid.end(), 1); 
+                                if(kt!=valid.end())
+                                {
+                                    #ifdef HDF5PRINTER2_DEBUG
+                                    logger()&lt;&lt;&quot;Adding int values for buffer &quot;&lt;&lt;jt-&gt;first&lt;&lt;std::endl;
+                                    #endif
+                                    newchunk.name_id[j] = buf_ids.at(jt-&gt;first);
+                                    for(std::size_t i2=0; i2&lt;sub_order.size(); i2++)
+                                    {
+                                        #ifdef HDF5PRINTER2_DEBUG
+                                        logger()&lt;&lt;&quot;    value=&quot;&lt;&lt;values.at(i2)&lt;&lt;&quot;, valid=&quot;&lt;&lt;valid.at(i2)&lt;&lt;std::endl;
+                                        #endif
+                                        newchunk.values_int[j][i2] = values.at(i2);
+                                        newchunk.valid[j][i2] = valid.at(i2);
+                                    }
+                                    j++; // Move to next buffer slot
+                                }
+                            }
+                            if(j==HDF5bufferchunk::NBUFFERS or last_buffer)
+                            {
+                                // Chunk full, begin another.
+                                if(i&gt;HDF5bufferchunk::SIZE)
+                                {
+                                    std::ostringstream errmsg;
+                                    errmsg&lt;&lt;&quot;Point counter exceeded allowed chunk size somehow (i&gt;SIZE;&quot;&lt;&lt;i&lt;&lt;&quot;&gt;&quot;&lt;&lt;HDF5bufferchunk::SIZE&lt;&lt;&quot;). This is a bug, please report it.&quot;;
+                                    printer_error().raise(LOCAL_INFO, errmsg.str());
+                                }
+                                if(j&gt;HDF5bufferchunk::NBUFFERS)
+                                {
+                                    std::ostringstream errmsg;
+                                    errmsg&lt;&lt;&quot;Buffer counter exceeded allowed chunk size somehow (j&gt;NBUFFERS;&quot;&lt;&lt;j&lt;&lt;&quot;&gt;&quot;&lt;&lt;HDF5bufferchunk::NBUFFERS&lt;&lt;&quot;). This is a bug, please report it.&quot;;
+                                    printer_error().raise(LOCAL_INFO, errmsg.str());
+                                }
+                                newchunk.used_size = i;
+                                newchunk.used_nbuffers = j;                    
+                                bufchunks.push_back(newchunk);
+                                #ifdef HDF5PRINTER2_DEBUG
+                                if(last_buffer)
+                                { 
+                                    logger()&lt;&lt;&quot;Chunk finished (no more buffer data for these points) (used_size=&quot;&lt;&lt;i&lt;&lt;&quot;, used_nbuffers=&quot;&lt;&lt;j&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+                                }
+                                else
+                                {
+                                    logger()&lt;&lt;&quot;Chunk finished (no space for more buffers) (used_size=&quot;&lt;&lt;i&lt;&lt;&quot;, used_nbuffers=&quot;&lt;&lt;j&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+                                    logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug;
+                                    logger()&lt;&lt;&quot;Beginning new chunk with same points as last&quot;&lt;&lt;std::endl;
+                                }
+                                #endif
+                                // Reset chunk (can leave the data, will be ignored so long as these counters are reset)
+                                newchunk.used_size = 0;
+                                newchunk.used_nbuffers = 0;
+                                j=0;
+                            }
+                        }
+                        // Inform master buffer that we have removed some points from it
+                        (*bt)-&gt;untrack_points(intersec);
+                    }   
+                    else if(j!=0)
+                    {
+                        // else skip these buffers; the current point isn't in them (must have come from one of the other sets of buffers).
+                        // But if this was the last buffer manager then need to close off the chunk.
+                        if(i&gt;HDF5bufferchunk::SIZE)
+                        {
+                            std::ostringstream errmsg;
+                            errmsg&lt;&lt;&quot;Point counter exceeded allowed chunk size somehow (i&gt;SIZE;&quot;&lt;&lt;i&lt;&lt;&quot;&gt;&quot;&lt;&lt;HDF5bufferchunk::SIZE&lt;&lt;&quot;). This is a bug, please report it.&quot;;
+                            printer_error().raise(LOCAL_INFO, errmsg.str());
+                        }
+                        if(j&gt;HDF5bufferchunk::NBUFFERS)
+                        {
+                            std::ostringstream errmsg;
+                            errmsg&lt;&lt;&quot;Buffer counter exceeded allowed chunk size somehow (j&gt;NBUFFERS;&quot;&lt;&lt;j&lt;&lt;&quot;&gt;&quot;&lt;&lt;HDF5bufferchunk::NBUFFERS&lt;&lt;&quot;). This is a bug, please report it.&quot;;
+                            printer_error().raise(LOCAL_INFO, errmsg.str());
+                        }
+                        newchunk.used_size = i;
+                        newchunk.used_nbuffers = j;
+                        bufchunks.push_back(newchunk); 
+                        #ifdef HDF5PRINTER2_DEBUG 
+                        logger()&lt;&lt;&quot;Chunk finished (no more buffer data for these points; skipped last masterbuffer) (used_size=&quot;&lt;&lt;i&lt;&lt;&quot;, used_nbuffers=&quot;&lt;&lt;j&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+                        #endif
+                        // Reset chunk (can leave the data, will be ignored so long as these counters are reset)
+                        newchunk.used_size = 0;
+                        newchunk.used_nbuffers = 0;
+                    }
+                    else
+                    {
+                        // Skipped last buffer, but was left with an empty chunk. No big deal, just note it in the logs
+                        #ifdef HDF5PRINTER2_DEBUG
+                        logger()&lt;&lt;&quot;Chunk finished (no more buffer data for these points; skipped last masterbuffer; chunk remains empty, discarding it.&quot;&lt;&lt;EOM;
+                        #endif
+                        newchunk.used_size = 0;
+                        newchunk.used_nbuffers = 0;
+                    }
+                }
+                i=0;
+                sub_order.clear();
+            }
+        }
+
+        // Transmit information about number of blocks to transmit
+        std::vector&lt;int&gt; nblocks;
+        std::vector&lt;int&gt; all_nblocks(comm.Get_size());
+        nblocks.push_back(bufchunks.size());
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::info;
+        logger()&lt;&lt;&quot;Gathering buffer block size data (number of buffer blocks to transmit from this process: &quot;&lt;&lt;nblocks.at(0)&lt;&lt;&quot;)&quot;&lt;&lt;EOM;
+        comm.Gather(nblocks, all_nblocks, 0);
+
+        // Transmit blocks
+        std::size_t total_nblocks = 0;
+        if(comm.Get_rank()==0)
+        {
+            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug; 
+            logger()&lt;&lt;&quot;Number of blocks to recv from each process: &quot;&lt;&lt;all_nblocks&lt;&lt;std::endl;
+            for(auto it=all_nblocks.begin(); it!=all_nblocks.end(); ++it)
+            {
+                total_nblocks += *it;
+            }
+            logger()&lt;&lt;&quot;Total: &quot;&lt;&lt;total_nblocks&lt;&lt;std::endl;
+            logger()&lt;&lt;EOM;
+        }
+        std::vector&lt;HDF5bufferchunk&gt; all_bufblocks(total_nblocks);
+        logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::info;
+        logger()&lt;&lt;&quot;Performing Gatherv of buffer data blocks...&quot;&lt;&lt;EOM;
+        comm.Gatherv(bufchunks, all_bufblocks, all_nblocks, 0); // (sendbuf, recvbuf, recvcounts, root)
+
+        #ifdef HDF5PRINTER2_DEBUG 
+        if(comm.Get_rank()==0)
+        {
+            // Check that received data makes sense.
+            logger()&lt;&lt;LogTags::printers&lt;&lt;LogTags::debug&lt;&lt;&quot;Checking received data...&quot;&lt;&lt;std::endl;
+            int i = 0;
+            int globi = 0;
+            int rrank = 0;
+            for(auto it=all_bufblocks.begin(); it!=all_bufblocks.end(); ++it)
+            {
+                if(i==all_nblocks.at(rrank)) { rrank++; i=0; }
+                logger()&lt;&lt;&quot; block &quot;&lt;&lt;globi&lt;&lt;&quot; (&quot;&lt;&lt;i&lt;&lt;&quot;), received from rank &quot;&lt;&lt;rrank&lt;&lt;&quot;, used_size=&quot;&lt;&lt;it-&gt;used_size&lt;&lt;std::endl;
+                for(int j=0; j&lt;it-&gt;used_size; j++)
+                {
+                   logger()&lt;&lt;&quot;    ranks[&quot;&lt;&lt;j&lt;&lt;&quot;]=&quot;&lt;&lt;it-&gt;ranks[j]&lt;&lt;&quot;, pointIDs[&quot;&lt;&lt;j&lt;&lt;&quot;]=&quot;&lt;&lt;it-&gt;pointIDs[j]&lt;&lt;std::endl;
+                }
+                i++; globi++;
+            }
+        }
+        #endif
+
+        return all_bufblocks;
+    }
+#endif         
+
+    /// @}
+   
+  }
+}
+</code></pre><hr><p>Updated on 2022-09-07 at 23:22:09 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.1da7e648bd316d7b1f1bff21fe81545e73f3c2385908a8c3be87f79a560042318b4b13031e53871d84590710da0df312590e0c60b11a6a1b83dede2f81c30b66.js integrity="sha512-HafmSL0xbXsfG/8h/oFUXnPzwjhZCKjDvof3mlYAQjGLSxMDHlOHHYRZBxDaDfMSWQ4MYLEaahuD3t4vgcMLZg==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.5b48bc253dc75aeea5fb366ecf700f4925e2b6eb1a1466f2124b722d68148d67bc0a9365d2b8ad9c585161b46372d23b08509a16f1fd518542b894756d4752d0.js integrity="sha512-W0i8JT3HWu6l+zZuz3APSSXitusaFGbyEktyLWgUjWe8CpNl0ritnFhRYbRjctI7CFCaFvH9UYVCuJR1bUdS0A==" crossorigin=anonymous defer></script>
+<script src=/main.min.162c56a0426544de0d010e66c56e321579655c400c9aae06a6823e7682de379adadf2165bd416fea191e4e7e410fbf1fd2c35a759aa43ff2e3787067669bf81b.js integrity="sha512-FixWoEJlRN4NAQ5mxW4yFXllXEAMmq4GpoI+doLeN5ra3yFlvUFv6hkeTn5BD78f0sNadZqkP/LjeHBnZpv4Gw==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.github.io/index.min.63a0081429e489b4ecb50b828bb7ecd36da2b9b28c689d8b8d36575b11ffc8699d97b6bc903906d342a78bc930b78bf73f15f634e4bc6333b6588f9a4b595228.js integrity="sha512-Y6AIFCnkibTstQuCi7fs022iubKMaJ2LjTZXWxH/yGmdl7a8kDkG00Kni8kwt4v3PxX2NOS8YzO2WI+aS1lSKA==" crossorigin=anonymous defer></script></body></html>
