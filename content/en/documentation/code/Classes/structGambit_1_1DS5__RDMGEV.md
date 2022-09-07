@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS5_RDMGEV'
+title: "struct Gambit::DS5_RDMGEV"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS5_RDMGEV
+# struct Gambit::DS5_RDMGEV
 
 
 
@@ -76,4 +76,4 @@ Farray< Finteger, 1, 1000 > kcoann;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_RDPADD'
+title: "struct Gambit::DS_RDPADD"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_RDPADD
+# struct Gambit::DS_RDPADD
 
 
 
@@ -84,4 +84,4 @@ Finteger spltest;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

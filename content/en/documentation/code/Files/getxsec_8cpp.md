@@ -1,11 +1,11 @@
 ---
-title: 'file src/getxsec.cpp'
+title: "file src/getxsec.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/getxsec.cpp
+# file src/getxsec.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1688,4 +1688,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

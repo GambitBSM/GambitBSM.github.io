@@ -1,11 +1,11 @@
 ---
-title: 'file models/Models/src/models/SuperRenormHP.cpp'
+title: "file models/Models/src/models/SuperRenormHP.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/Models/src/models/SuperRenormHP.cpp
+# file models/Models/src/models/SuperRenormHP.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -105,4 +105,4 @@ void MODEL_NAMESPACE::SuperRenormHP_to_DecayingDM_mixture (const ModelParameters
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

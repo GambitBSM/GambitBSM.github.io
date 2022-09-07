@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_36invfb'
-description: '[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data. '
+title: "class Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_36invfb"
+description: "[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data. "
 
 ---
 
-# Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_36invfb
+# class Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_36invfb
 
 
 
@@ -200,4 +200,4 @@ string analysisRunName;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

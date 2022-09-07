@@ -1,11 +1,11 @@
 ---
-title: 'file modules/funcutils.py'
+title: "file modules/funcutils.py"
 
 description: "[No description available]"
 
 ---
 
-# modules/funcutils.py
+# file modules/funcutils.py
 
 [No description available]
 
@@ -585,4 +585,4 @@ def getFunctionNameDict(func_el):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::SpecBit'
+title: "namespace Gambit::SpecBit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecBit
+# namespace Gambit::SpecBit
 
 [No description available]
 
@@ -2463,4 +2463,4 @@ This function adds all entries of the spectrum object (as SLHAea) that need to b
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

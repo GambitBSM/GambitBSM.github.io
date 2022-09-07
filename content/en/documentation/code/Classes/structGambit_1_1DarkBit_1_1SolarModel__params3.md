@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::SolarModel_params3'
+title: "struct Gambit::DarkBit::SolarModel_params3"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::SolarModel_params3
+# struct Gambit::DarkBit::SolarModel_params3
 
 
 
@@ -52,4 +52,4 @@ AxionInterpolator * eff_exp;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

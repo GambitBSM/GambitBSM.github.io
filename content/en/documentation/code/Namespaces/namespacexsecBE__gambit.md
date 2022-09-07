@@ -1,11 +1,11 @@
 ---
-title: 'namespace xsecBE_gambit'
+title: "namespace xsecBE_gambit"
 
 description: "[No description available]"
 
 ---
 
-# xsecBE_gambit
+# namespace xsecBE_gambit
 
 [No description available]
 
@@ -76,4 +76,4 @@ data_dir;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

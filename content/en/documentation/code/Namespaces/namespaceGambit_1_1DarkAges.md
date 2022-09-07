@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::DarkAges'
+title: "namespace Gambit::DarkAges"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkAges
+# namespace Gambit::DarkAges
 
 [No description available]
 
@@ -74,4 +74,4 @@ inline bool operator!=(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

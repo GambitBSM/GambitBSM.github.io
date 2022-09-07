@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::ScalarSingletDM'
+title: "class Gambit::DarkBit::ScalarSingletDM"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::ScalarSingletDM
+# class Gambit::DarkBit::ScalarSingletDM
 
 
 
@@ -122,4 +122,4 @@ Annihilation into hh.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

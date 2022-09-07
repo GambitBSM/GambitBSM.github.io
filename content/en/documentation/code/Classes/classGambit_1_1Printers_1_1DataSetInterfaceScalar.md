@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Printers::DataSetInterfaceScalar'
+title: "class Gambit::Printers::DataSetInterfaceScalar"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::DataSetInterfaceScalar
+# class Gambit::Printers::DataSetInterfaceScalar
 
 
 
@@ -184,4 +184,4 @@ Extract a single entry from a linked dataset.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

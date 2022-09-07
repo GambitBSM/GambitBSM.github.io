@@ -1,11 +1,11 @@
 ---
-title: 'file src/ObjectivesBit.cpp'
+title: "file src/ObjectivesBit.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/ObjectivesBit.cpp
+# file src/ObjectivesBit.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -347,4 +347,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

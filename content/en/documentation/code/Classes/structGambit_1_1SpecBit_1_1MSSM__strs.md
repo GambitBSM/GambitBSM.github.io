@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpecBit::MSSM_strs'
+title: "struct Gambit::SpecBit::MSSM_strs"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecBit::MSSM_strs
+# struct Gambit::SpecBit::MSSM_strs
 
 
 
@@ -645,4 +645,4 @@ static const str chiminus =   "~chi-";
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

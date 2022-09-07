@@ -1,11 +1,11 @@
 ---
-title: 'file ScannerBit/objective_plugin.hpp'
+title: "file ScannerBit/objective_plugin.hpp"
 
 description: "[No description available]"
 
 ---
 
-# ScannerBit/objective_plugin.hpp
+# file ScannerBit/objective_plugin.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -154,4 +154,4 @@ inline void print_parameters(std::unordered_map<std::string, double> &key_map)  
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

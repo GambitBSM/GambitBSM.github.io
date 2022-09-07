@@ -1,11 +1,11 @@
 ---
-title: 'class mt2w_bisect::mt2w'
+title: "class mt2w_bisect::mt2w"
 
 description: "[No description available]"
 
 ---
 
-# mt2w_bisect::mt2w
+# class mt2w_bisect::mt2w
 
 
 
@@ -99,4 +99,4 @@ void mt2w_bisect()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

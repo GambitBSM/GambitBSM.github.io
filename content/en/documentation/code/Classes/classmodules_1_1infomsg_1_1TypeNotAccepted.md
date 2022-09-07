@@ -1,11 +1,11 @@
 ---
-title: 'class modules::infomsg::TypeNotAccepted'
+title: "class modules::infomsg::TypeNotAccepted"
 
 description: "[No description available]"
 
 ---
 
-# modules::infomsg::TypeNotAccepted
+# class modules::infomsg::TypeNotAccepted
 
 
 
@@ -85,4 +85,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

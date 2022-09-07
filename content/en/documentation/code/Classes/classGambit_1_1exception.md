@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::exception'
-description: 'GAMBIT exception base class. '
+title: "class Gambit::exception"
+description: "GAMBIT exception base class. "
 
 ---
 
-# Gambit::exception
+# class Gambit::exception
 
 
 
@@ -302,4 +302,4 @@ The set of tags to be passed to the logger.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

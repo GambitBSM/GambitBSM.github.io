@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Printers::DSetData'
+title: "struct Gambit::Printers::DSetData"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::DSetData
+# struct Gambit::Printers::DSetData
 
 
 
@@ -78,4 +78,4 @@ std::string errmsg;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

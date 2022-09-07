@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::FlavBit::Boxes'
+title: "namespace Gambit::FlavBit::Boxes"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::FlavBit::Boxes
+# namespace Gambit::FlavBit::Boxes
 
 [No description available]
 
@@ -167,4 +167,4 @@ complex< double > VsumuLL(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

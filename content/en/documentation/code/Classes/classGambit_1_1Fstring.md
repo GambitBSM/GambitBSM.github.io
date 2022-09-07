@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Fstring'
+title: "class Gambit::Fstring"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Fstring
+# class Gambit::Fstring
 
 
 
@@ -192,4 +192,4 @@ inline bool operator==(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

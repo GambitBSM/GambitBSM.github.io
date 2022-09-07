@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::MapTag'
-description: 'Tags. '
+title: "struct Gambit::MapTag"
+description: "Tags. "
 
 ---
 
-# Gambit::MapTag
+# struct Gambit::MapTag
 
 
 
@@ -32,4 +32,4 @@ Traits structs for function pointer maps [Get](/documentation/code/classes/struc
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

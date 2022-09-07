@@ -1,11 +1,11 @@
 ---
-title: 'file Core/likelihood_container.hpp'
+title: "file Core/likelihood_container.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Core/likelihood_container.hpp
+# file Core/likelihood_container.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -202,4 +202,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

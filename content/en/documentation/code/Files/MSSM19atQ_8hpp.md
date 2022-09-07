@@ -1,11 +1,11 @@
 ---
-title: 'file models/MSSM19atQ.hpp'
+title: "file models/MSSM19atQ.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/MSSM19atQ.hpp
+# file models/MSSM19atQ.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -117,4 +117,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

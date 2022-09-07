@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Factory_Base'
-description: 'Pure Base class of a plugin Factory function. '
+title: "class Gambit::Scanner::Factory_Base"
+description: "Pure Base class of a plugin Factory function. "
 
 ---
 
-# Gambit::Scanner::Factory_Base
+# class Gambit::Scanner::Factory_Base
 
 
 
@@ -45,4 +45,4 @@ inline virtual ~Factory_Base()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar'
+title: "class Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar
+# class Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar
 
 
 
@@ -113,4 +113,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

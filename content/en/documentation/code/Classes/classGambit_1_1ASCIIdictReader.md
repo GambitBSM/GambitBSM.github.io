@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ASCIIdictReader'
+title: "class Gambit::ASCIIdictReader"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ASCIIdictReader
+# class Gambit::ASCIIdictReader
 
 
 
@@ -88,4 +88,4 @@ inline int nrow() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

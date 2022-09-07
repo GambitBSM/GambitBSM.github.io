@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_CMS_13TeV_MONOJET_36invfb'
-description: '[CMS]() Run 2 monojet analysis (no W/Z region) with 36/fb of data. '
+title: "class Gambit::ColliderBit::Analysis_CMS_13TeV_MONOJET_36invfb"
+description: "[CMS]() Run 2 monojet analysis (no W/Z region) with 36/fb of data. "
 
 ---
 
-# Gambit::ColliderBit::Analysis_CMS_13TeV_MONOJET_36invfb
+# class Gambit::ColliderBit::Analysis_CMS_13TeV_MONOJET_36invfb
 
 
 
@@ -189,4 +189,4 @@ Cutflow _cutflow;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

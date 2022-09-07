@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Scanner::find_variadic_type_convert< ret(args...)>'
+title: "struct Gambit::Scanner::find_variadic_type_convert< ret(args...)>"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::find_variadic_type_convert< ret(args...)>
+# struct Gambit::Scanner::find_variadic_type_convert< ret(args...)>
 
 
 
@@ -59,4 +59,4 @@ static const bool value = false;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

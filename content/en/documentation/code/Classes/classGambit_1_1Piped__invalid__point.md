@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Piped_invalid_point'
-description: '[Gambit](/documentation/code/namespaces/namespacegambit/) piped invalid point exception class. '
+title: "class Gambit::Piped_invalid_point"
+description: "[Gambit](/documentation/code/namespaces/namespacegambit/) piped invalid point exception class. "
 
 ---
 
-# Gambit::Piped_invalid_point
+# class Gambit::Piped_invalid_point
 
 
 
@@ -57,4 +57,4 @@ Check whether a piped invalid point exception was requested, and throw if necess
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/salami_0_1_0.hpp'
+title: "file frontends/salami_0_1_0.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/salami_0_1_0.hpp
+# file frontends/salami_0_1_0.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -143,4 +143,4 @@ BE_FUNCTION(get_xsection, PyDict, (iipair&, double&, double&), "get_xsection", "
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

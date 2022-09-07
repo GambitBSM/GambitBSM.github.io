@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::MultiNest::LogLikeWrapper'
-description: 'Class to connect multinest log-likelihood function and ScannerBit likelihood function. '
+title: "class Gambit::MultiNest::LogLikeWrapper"
+description: "Class to connect multinest log-likelihood function and ScannerBit likelihood function. "
 
 ---
 
-# Gambit::MultiNest::LogLikeWrapper
+# class Gambit::MultiNest::LogLikeWrapper
 
 
 
@@ -85,4 +85,4 @@ nSamples = total number of samples in posterior distribution nlive = total numbe
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

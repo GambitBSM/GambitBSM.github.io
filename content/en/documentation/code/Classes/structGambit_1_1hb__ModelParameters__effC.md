@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::hb_ModelParameters_effC'
+title: "struct Gambit::hb_ModelParameters_effC"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::hb_ModelParameters_effC
+# struct Gambit::hb_ModelParameters_effC
 
 
 
@@ -204,4 +204,4 @@ double[3][3] BR_hjhihi;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

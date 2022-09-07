@@ -1,11 +1,11 @@
 ---
-title: 'namespace m1'
+title: "namespace m1"
 
 description: "[No description available]"
 
 ---
 
-# m1
+# namespace m1
 
 [No description available]
 
@@ -70,4 +70,4 @@ character *8 str;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

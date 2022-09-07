@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Options'
+title: "class Gambit::Options"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Options
+# class Gambit::Options
 
 
 
@@ -211,4 +211,4 @@ inline YAML::const_iterator end() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

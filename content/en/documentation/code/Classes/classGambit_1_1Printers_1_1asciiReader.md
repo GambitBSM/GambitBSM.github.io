@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::asciiReader'
-description: 'Derived EntryGetterInterface class for accessing [asciiPrinter](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/) output points. '
+title: "class Gambit::Printers::asciiReader"
+description: "Derived EntryGetterInterface class for accessing [asciiPrinter](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/) output points. "
 
 ---
 
-# Gambit::Printers::asciiReader
+# class Gambit::Printers::asciiReader
 
 
 
@@ -186,4 +186,4 @@ Retrieval functions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

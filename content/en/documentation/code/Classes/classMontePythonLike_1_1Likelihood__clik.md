@@ -1,11 +1,11 @@
 ---
-title: 'class MontePythonLike::Likelihood_clik'
+title: "class MontePythonLike::Likelihood_clik"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike::Likelihood_clik
+# class MontePythonLike::Likelihood_clik
 
 
 
@@ -268,4 +268,4 @@ use_nuisance;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

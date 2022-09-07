@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Function_Deleter'
-description: 'Functor that deletes a [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) functor. '
+title: "class Gambit::Scanner::Function_Deleter"
+description: "Functor that deletes a [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) functor. "
 
 ---
 
-# Gambit::Scanner::Function_Deleter
+# class Gambit::Scanner::Function_Deleter
 
 
 
@@ -20,4 +20,4 @@ class Gambit::Scanner::Function_Deleter;
 Functor that deletes a [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) functor. 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

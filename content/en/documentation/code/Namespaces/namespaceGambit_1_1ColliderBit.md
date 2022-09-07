@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::ColliderBit'
+title: "namespace Gambit::ColliderBit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit
+# namespace Gambit::ColliderBit
 
 [No description available]
 
@@ -4467,4 +4467,4 @@ A global map from analysis name to [DMEFT_analysis_info](/documentation/code/cla
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

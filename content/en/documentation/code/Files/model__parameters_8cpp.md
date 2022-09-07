@@ -1,11 +1,11 @@
 ---
-title: 'file src/model_parameters.cpp'
+title: "file src/model_parameters.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/model_parameters.cpp
+# file src/model_parameters.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -267,4 +267,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

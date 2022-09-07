@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Utils::ci_less::nocase_compare'
+title: "struct Gambit::Utils::ci_less::nocase_compare"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Utils::ci_less::nocase_compare
+# struct Gambit::Utils::ci_less::nocase_compare
 
 
 
@@ -33,4 +33,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

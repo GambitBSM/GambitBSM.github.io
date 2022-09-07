@@ -1,11 +1,11 @@
 ---
-title: 'file models/WC.cpp'
+title: "file models/WC.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/WC.cpp
+# file models/WC.cpp
 
 [No description available]
 
@@ -144,4 +144,4 @@ void MODEL_NAMESPACE::WC_to_WC_LR (const ModelParameters& myP, ModelParameters &
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::NeutrinoBit::NeutrinoInterpolator'
+title: "class Gambit::NeutrinoBit::NeutrinoInterpolator"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::NeutrinoBit::NeutrinoInterpolator
+# class Gambit::NeutrinoBit::NeutrinoInterpolator
 
 
 
@@ -68,4 +68,4 @@ inline double eval(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

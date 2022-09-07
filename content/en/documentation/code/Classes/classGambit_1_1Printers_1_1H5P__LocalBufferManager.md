@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::H5P_LocalBufferManager'
-description: 'Keeps track of vertex buffers local to a print function. '
+title: "class Gambit::Printers::H5P_LocalBufferManager"
+description: "Keeps track of vertex buffers local to a print function. "
 
 ---
 
-# Gambit::Printers::H5P_LocalBufferManager
+# class Gambit::Printers::H5P_LocalBufferManager
 
 
 
@@ -76,4 +76,4 @@ Signal whether initialisation has occured.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

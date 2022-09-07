@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::NeutrinoBit'
+title: "namespace Gambit::NeutrinoBit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::NeutrinoBit
+# namespace Gambit::NeutrinoBit
 
 [No description available]
 
@@ -1263,4 +1263,4 @@ void coupling_slide(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

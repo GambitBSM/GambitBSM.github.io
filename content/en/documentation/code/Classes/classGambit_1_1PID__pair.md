@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::PID_pair'
+title: "class Gambit::PID_pair"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::PID_pair
+# class Gambit::PID_pair
 
 
 
@@ -232,4 +232,4 @@ Get the PID pair as a string: "<pid1>_<pid2>".
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

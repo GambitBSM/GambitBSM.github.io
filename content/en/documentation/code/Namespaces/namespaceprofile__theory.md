@@ -1,11 +1,11 @@
 ---
-title: 'namespace profile_theory'
+title: "namespace profile_theory"
 
 description: "[No description available]"
 
 ---
 
-# profile_theory
+# namespace profile_theory
 
 [No description available] [More...](#detailed-description)
 
@@ -92,4 +92,4 @@ ARGS =  map(float, sys.argv[2:]);
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

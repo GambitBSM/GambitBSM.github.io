@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_confnote_36invfb::ptJetComparison'
+title: "struct Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_confnote_36invfb::ptJetComparison"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_confnote_36invfb::ptJetComparison
+# struct Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_confnote_36invfb::ptJetComparison
 
 
 
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

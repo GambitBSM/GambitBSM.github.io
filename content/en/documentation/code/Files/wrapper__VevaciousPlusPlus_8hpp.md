@@ -1,11 +1,11 @@
 ---
-title: 'file vevacious_1_0/wrapper_VevaciousPlusPlus.hpp'
+title: "file vevacious_1_0/wrapper_VevaciousPlusPlus.hpp"
 
 description: "[No description available]"
 
 ---
 
-# vevacious_1_0/wrapper_VevaciousPlusPlus.hpp
+# file vevacious_1_0/wrapper_VevaciousPlusPlus.hpp
 
 [No description available]
 
@@ -29,4 +29,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

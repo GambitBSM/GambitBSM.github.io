@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::AnalysisContainer'
-description: 'A class for managing collections of [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) instances. '
+title: "class Gambit::ColliderBit::AnalysisContainer"
+description: "A class for managing collections of [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) instances. "
 
 ---
 
-# Gambit::ColliderBit::AnalysisContainer
+# class Gambit::ColliderBit::AnalysisContainer
 
 
 
@@ -340,4 +340,4 @@ Scale results for all analyses across all colliders.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

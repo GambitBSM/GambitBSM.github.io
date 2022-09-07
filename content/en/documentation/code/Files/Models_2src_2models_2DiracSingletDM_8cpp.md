@@ -1,11 +1,11 @@
 ---
-title: 'file models/Models/src/models/DiracSingletDM.cpp'
+title: "file models/Models/src/models/DiracSingletDM.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/Models/src/models/DiracSingletDM.cpp
+# file models/Models/src/models/DiracSingletDM.cpp
 
 [No description available]
 
@@ -98,4 +98,4 @@ using namespace Gambit::Utils;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit::Models'
-description: 'Forward declaration of [Models::ModelFunctorClaw]() class for use in constructors. '
+title: "namespace Gambit::Models"
+description: "Forward declaration of [Models::ModelFunctorClaw]() class for use in constructors. "
 
 ---
 
-# Gambit::Models
+# namespace Gambit::Models
 
 Forward declaration of [Models::ModelFunctorClaw]() class for use in constructors. 
 
@@ -128,4 +128,4 @@ Declare redirected constructor.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

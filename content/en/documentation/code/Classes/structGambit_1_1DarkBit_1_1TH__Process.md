@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::TH_Process'
+title: "struct Gambit::DarkBit::TH_Process"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::TH_Process
+# struct Gambit::DarkBit::TH_Process
 
 
 
@@ -149,4 +149,4 @@ Additional decay rate or sigmav (in addition to above channels)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

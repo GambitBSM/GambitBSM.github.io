@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit::GMPI'
-description: 'Forward declare MPI class. '
+title: "namespace Gambit::GMPI"
+description: "Forward declare MPI class. "
 
 ---
 
-# Gambit::GMPI
+# namespace Gambit::GMPI
 
 Forward declare MPI class. 
 
@@ -15,4 +15,4 @@ Forward declare MPI class.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

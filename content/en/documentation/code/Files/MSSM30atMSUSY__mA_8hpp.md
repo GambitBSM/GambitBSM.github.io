@@ -1,11 +1,11 @@
 ---
-title: 'file models/MSSM30atMSUSY_mA.hpp'
+title: "file models/MSSM30atMSUSY_mA.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/MSSM30atMSUSY_mA.hpp
+# file models/MSSM30atMSUSY_mA.hpp
 
 [No description available]
 
@@ -126,4 +126,4 @@ Ben Farmer ([ben.farmer@gmail.com](mailto:ben.farmer@gmail.com))
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

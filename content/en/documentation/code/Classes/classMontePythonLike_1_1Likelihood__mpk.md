@@ -1,11 +1,11 @@
 ---
-title: 'class MontePythonLike::Likelihood_mpk'
+title: "class MontePythonLike::Likelihood_mpk"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike::Likelihood_mpk
+# class MontePythonLike::Likelihood_mpk
 
 
 
@@ -774,4 +774,4 @@ fiducial_SDSSDR7;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

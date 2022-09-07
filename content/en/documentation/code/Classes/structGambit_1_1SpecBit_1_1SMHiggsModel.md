@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpecBit::SMHiggsModel'
+title: "struct Gambit::SpecBit::SMHiggsModel"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecBit::SMHiggsModel
+# struct Gambit::SpecBit::SMHiggsModel
 
 
 
@@ -87,4 +87,4 @@ double HiggsVEV;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

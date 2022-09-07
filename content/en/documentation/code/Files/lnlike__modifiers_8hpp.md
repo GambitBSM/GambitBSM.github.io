@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/lnlike_modifiers.hpp'
+title: "file Utils/lnlike_modifiers.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/lnlike_modifiers.hpp
+# file Utils/lnlike_modifiers.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -86,4 +86,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

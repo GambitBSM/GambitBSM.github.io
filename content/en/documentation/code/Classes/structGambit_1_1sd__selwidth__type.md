@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::sd_selwidth_type'
+title: "struct Gambit::sd_selwidth_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::sd_selwidth_type
+# struct Gambit::sd_selwidth_type
 
 
 
@@ -36,4 +36,4 @@ Fdouble selrtot2;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

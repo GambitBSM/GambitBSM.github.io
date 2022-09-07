@@ -1,11 +1,11 @@
 ---
-title: 'file libthird_1_1/examples/libthird/1.1/libthird_1_1/__init__.py'
+title: "file libthird_1_1/examples/libthird/1.1/libthird_1_1/__init__.py"
 
 description: "[No description available]"
 
 ---
 
-# libthird_1_1/examples/libthird/1.1/libthird_1_1/__init__.py
+# file libthird_1_1/examples/libthird/1.1/libthird_1_1/__init__.py
 
 [No description available]
 
@@ -27,4 +27,4 @@ from .main import *
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

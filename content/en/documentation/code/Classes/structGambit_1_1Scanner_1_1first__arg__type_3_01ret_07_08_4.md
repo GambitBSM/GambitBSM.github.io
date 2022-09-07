@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Scanner::first_arg_type< ret()>'
+title: "struct Gambit::Scanner::first_arg_type< ret()>"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::first_arg_type< ret()>
+# struct Gambit::Scanner::first_arg_type< ret()>
 
 
 
@@ -35,4 +35,4 @@ typedef void Gambit::Scanner::first_arg_type< ret()>::type;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

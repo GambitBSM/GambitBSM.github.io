@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/gamLike_1_0_1.hpp'
+title: "file frontends/gamLike_1_0_1.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/gamLike_1_0_1.hpp
+# file frontends/gamLike_1_0_1.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -144,4 +144,4 @@ BE_FUNCTION(los_integral_cpp, void, (std::vector<double>, std::vector<double>, d
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

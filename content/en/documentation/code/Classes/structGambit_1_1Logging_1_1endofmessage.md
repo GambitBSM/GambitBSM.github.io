@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Logging::endofmessage'
-description: 'Special (empty) struct for signalling end of message to [LogMaster]() stream. '
+title: "struct Gambit::Logging::endofmessage"
+description: "Special (empty) struct for signalling end of message to [LogMaster]() stream. "
 
 ---
 
-# Gambit::Logging::endofmessage
+# struct Gambit::Logging::endofmessage
 
 
 
@@ -15,4 +15,4 @@ Special (empty) struct for signalling end of message to [LogMaster]() stream.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

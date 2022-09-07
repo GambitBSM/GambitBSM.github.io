@@ -1,11 +1,11 @@
 ---
-title: 'file models/RightHandedNeutrinos.hpp'
+title: "file models/RightHandedNeutrinos.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/RightHandedNeutrinos.hpp
+# file models/RightHandedNeutrinos.hpp
 
 [No description available]
 
@@ -66,4 +66,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::__is_container__< std::array< T, N > >'
+title: "struct Gambit::__is_container__< std::array< T, N > >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::__is_container__< std::array< T, N > >
+# struct Gambit::__is_container__< std::array< T, N > >
 
 
 
@@ -51,4 +51,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

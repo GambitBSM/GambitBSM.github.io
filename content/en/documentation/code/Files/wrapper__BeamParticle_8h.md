@@ -1,11 +1,11 @@
 ---
-title: 'file Pythia_8_212/wrapper_BeamParticle.h'
+title: "file Pythia_8_212/wrapper_BeamParticle.h"
 
 description: "[No description available]"
 
 ---
 
-# Pythia_8_212/wrapper_BeamParticle.h
+# file Pythia_8_212/wrapper_BeamParticle.h
 
 [No description available]
 
@@ -29,4 +29,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

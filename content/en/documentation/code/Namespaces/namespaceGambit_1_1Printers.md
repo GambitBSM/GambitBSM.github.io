@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit::Printers'
-description: 'Forward declaration. '
+title: "namespace Gambit::Printers"
+description: "Forward declaration. "
 
 ---
 
-# Gambit::Printers
+# namespace Gambit::Printers
 
 Forward declaration.  [More...](#detailed-description)
 
@@ -1297,4 +1297,4 @@ Define 'nullpoint' const.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

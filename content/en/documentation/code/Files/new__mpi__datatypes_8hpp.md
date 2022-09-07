@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/new_mpi_datatypes.hpp'
+title: "file Utils/new_mpi_datatypes.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/new_mpi_datatypes.hpp
+# file Utils/new_mpi_datatypes.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -259,4 +259,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

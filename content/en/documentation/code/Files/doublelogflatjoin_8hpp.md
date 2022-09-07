@@ -1,11 +1,11 @@
 ---
-title: 'file priors/doublelogflatjoin.hpp'
+title: "file priors/doublelogflatjoin.hpp"
 
 description: "[No description available]"
 
 ---
 
-# priors/doublelogflatjoin.hpp
+# file priors/doublelogflatjoin.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -131,4 +131,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

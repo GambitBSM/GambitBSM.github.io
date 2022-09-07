@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpectrumContents::SM'
+title: "struct Gambit::SpectrumContents::SM"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpectrumContents::SM
+# struct Gambit::SpectrumContents::SM
 
 
 
@@ -52,4 +52,4 @@ Only have to define the constructor.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

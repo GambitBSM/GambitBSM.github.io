@@ -1,11 +1,11 @@
 ---
-title: 'file models/nuclear_params.hpp'
+title: "file models/nuclear_params.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/nuclear_params.hpp
+# file models/nuclear_params.hpp
 
 [No description available]
 
@@ -219,4 +219,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

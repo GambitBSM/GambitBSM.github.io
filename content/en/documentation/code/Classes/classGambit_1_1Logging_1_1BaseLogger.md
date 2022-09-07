@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Logging::BaseLogger'
-description: 'Logger virtual base class. '
+title: "class Gambit::Logging::BaseLogger"
+description: "Logger virtual base class. "
 
 ---
 
-# Gambit::Logging::BaseLogger
+# class Gambit::Logging::BaseLogger
 
 
 
@@ -62,4 +62,4 @@ Flush stream buffer;.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

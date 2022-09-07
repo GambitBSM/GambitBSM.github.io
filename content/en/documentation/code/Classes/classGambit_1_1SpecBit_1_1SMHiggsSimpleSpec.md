@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SpecBit::SMHiggsSimpleSpec'
-description: '[SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) wrapper class for the SM Higgs sector. '
+title: "class Gambit::SpecBit::SMHiggsSimpleSpec"
+description: "[SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) wrapper class for the SM Higgs sector. "
 
 ---
 
-# Gambit::SpecBit::SMHiggsSimpleSpec
+# class Gambit::SpecBit::SMHiggsSimpleSpec
 
 
 
@@ -190,4 +190,4 @@ Map fillers Used to initialise maps in the RunparDer and PhysDer classes (specia
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

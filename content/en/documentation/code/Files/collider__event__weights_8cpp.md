@@ -1,11 +1,11 @@
 ---
-title: 'file src/collider_event_weights.cpp'
+title: "file src/collider_event_weights.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/collider_event_weights.cpp
+# file src/collider_event_weights.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -214,4 +214,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

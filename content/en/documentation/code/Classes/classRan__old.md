@@ -1,11 +1,11 @@
 ---
-title: 'class Ran_old'
+title: "class Ran_old"
 
 description: "[No description available]"
 
 ---
 
-# Ran_old
+# class Ran_old
 
 
 
@@ -88,4 +88,4 @@ inline unsigned int int32()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

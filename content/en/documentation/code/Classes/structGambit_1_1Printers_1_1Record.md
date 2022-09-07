@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Printers::Record'
-description: 'Structure to hold data for a single model point. '
+title: "struct Gambit::Printers::Record"
+description: "Structure to hold data for a single model point. "
 
 ---
 
-# Gambit::Printers::Record
+# struct Gambit::Printers::Record
 
 
 
@@ -63,4 +63,4 @@ Flag to indicate if record is available to send for output.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

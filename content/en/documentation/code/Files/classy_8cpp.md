@@ -1,11 +1,11 @@
 ---
-title: 'file backend_types/classy.cpp'
+title: "file backend_types/classy.cpp"
 
 description: "[No description available]"
 
 ---
 
-# backend_types/classy.cpp
+# file backend_types/classy.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -250,4 +250,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

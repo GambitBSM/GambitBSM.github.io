@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_Minimum'
-description: 'Basic analysis code for copying. '
+title: "class Gambit::ColliderBit::Analysis_Minimum"
+description: "Basic analysis code for copying. "
 
 ---
 
-# Gambit::ColliderBit::Analysis_Minimum
+# class Gambit::ColliderBit::Analysis_Minimum
 
 
 
@@ -133,4 +133,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

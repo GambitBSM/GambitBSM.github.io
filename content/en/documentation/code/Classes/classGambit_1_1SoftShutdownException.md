@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SoftShutdownException'
-description: 'Special exception used during controlled early shutdown. '
+title: "class Gambit::SoftShutdownException"
+description: "Special exception used during controlled early shutdown. "
 
 ---
 
-# Gambit::SoftShutdownException
+# class Gambit::SoftShutdownException
 
 
 
@@ -43,4 +43,4 @@ virtual const char * what() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

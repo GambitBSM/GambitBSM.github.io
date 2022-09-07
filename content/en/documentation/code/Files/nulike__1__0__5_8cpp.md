@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/nulike_1_0_5.cpp'
+title: "file frontends/nulike_1_0_5.cpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/nulike_1_0_5.cpp
+# file frontends/nulike_1_0_5.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -198,4 +198,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

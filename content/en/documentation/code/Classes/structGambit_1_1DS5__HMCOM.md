@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS5_HMCOM'
+title: "struct Gambit::DS5_HMCOM"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS5_HMCOM
+# struct Gambit::DS5_HMCOM
 
 
 
@@ -68,4 +68,4 @@ Finteger hclumpy;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

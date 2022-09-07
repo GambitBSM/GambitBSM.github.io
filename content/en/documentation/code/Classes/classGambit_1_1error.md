@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::error'
-description: 'GAMBIT error class. '
+title: "class Gambit::error"
+description: "GAMBIT error class. "
 
 ---
 
-# Gambit::error
+# class Gambit::error
 
 
 
@@ -180,4 +180,4 @@ Constructor with log tags as a set.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

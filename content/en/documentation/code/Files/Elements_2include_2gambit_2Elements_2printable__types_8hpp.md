@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/Elements/include/gambit/Elements/printable_types.hpp'
+title: "file Elements/Elements/include/gambit/Elements/printable_types.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/Elements/include/gambit/Elements/printable_types.hpp
+# file Elements/Elements/include/gambit/Elements/printable_types.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -116,4 +116,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

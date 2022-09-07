@@ -1,11 +1,11 @@
 ---
-title: 'file models/MajoranaSingletDM_Z2.hpp'
+title: "file models/MajoranaSingletDM_Z2.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/MajoranaSingletDM_Z2.hpp
+# file models/MajoranaSingletDM_Z2.hpp
 
 [No description available]
 
@@ -148,4 +148,4 @@ Sanjay Bloor
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

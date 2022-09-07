@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit'
-description: 'TODO: see if we can use this one: '
+title: "namespace Gambit"
+description: "TODO: see if we can use this one: "
 
 ---
 
-# Gambit
+# namespace Gambit
 
 TODO: see if we can use this one:  [More...](#detailed-description)
 
@@ -3846,4 +3846,4 @@ const int gambit_version_int =  10000*gambit_version_major + 100*gambit_version_
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

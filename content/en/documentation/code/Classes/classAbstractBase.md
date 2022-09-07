@@ -1,11 +1,11 @@
 ---
-title: 'class AbstractBase'
+title: "class AbstractBase"
 
 description: "[No description available]"
 
 ---
 
-# AbstractBase
+# class AbstractBase
 
 
 
@@ -36,4 +36,4 @@ inline virtual ~AbstractBase()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

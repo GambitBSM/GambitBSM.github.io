@@ -1,11 +1,11 @@
 ---
-title: 'file Backends/mathematica_variable.hpp'
+title: "file Backends/mathematica_variable.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Backends/mathematica_variable.hpp
+# file Backends/mathematica_variable.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -385,4 +385,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

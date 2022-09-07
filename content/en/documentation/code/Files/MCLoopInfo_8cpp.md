@@ -1,11 +1,11 @@
 ---
-title: 'file src/MCLoopInfo.cpp'
+title: "file src/MCLoopInfo.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/MCLoopInfo.cpp
+# file src/MCLoopInfo.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -203,4 +203,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

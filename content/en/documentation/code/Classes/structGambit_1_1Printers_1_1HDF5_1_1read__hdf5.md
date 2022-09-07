@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Printers::HDF5::read_hdf5'
+title: "struct Gambit::Printers::HDF5::read_hdf5"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::HDF5::read_hdf5
+# struct Gambit::Printers::HDF5::read_hdf5
 
 
 
@@ -34,4 +34,4 @@ static inline void run(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/Elements/include/gambit/Elements/ini_functions.hpp'
+title: "file Elements/Elements/include/gambit/Elements/ini_functions.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/Elements/include/gambit/Elements/ini_functions.hpp
+# file Elements/Elements/include/gambit/Elements/ini_functions.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -211,4 +211,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

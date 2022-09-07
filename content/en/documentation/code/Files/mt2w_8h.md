@@ -1,11 +1,11 @@
 ---
-title: 'file ColliderBit/mt2w.h'
+title: "file ColliderBit/mt2w.h"
 
 description: "[No description available]"
 
 ---
 
-# ColliderBit/mt2w.h
+# file ColliderBit/mt2w.h
 
 [No description available]
 
@@ -65,4 +65,4 @@ double mt2wWrapperHepUtils(HEPUtils::P4& lep, HEPUtils::P4& jet_o, HEPUtils::P4&
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

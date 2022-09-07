@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/safety_bucket.hpp'
+title: "file Elements/safety_bucket.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/safety_bucket.hpp
+# file Elements/safety_bucket.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -431,4 +431,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

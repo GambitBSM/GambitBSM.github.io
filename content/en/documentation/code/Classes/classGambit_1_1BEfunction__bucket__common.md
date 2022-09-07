@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::BEfunction_bucket_common'
-description: 'An interface class for backend functions. '
+title: "class Gambit::BEfunction_bucket_common"
+description: "An interface class for backend functions. "
 
 ---
 
-# Gambit::BEfunction_bucket_common
+# class Gambit::BEfunction_bucket_common
 
 
 
@@ -117,4 +117,4 @@ backend_functor< PTR_TYPE, TYPE, ARGS... > * _functor_ptr;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

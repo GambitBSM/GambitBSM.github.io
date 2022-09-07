@@ -1,11 +1,11 @@
 ---
-title: 'file src/functors_with_signals.cpp'
+title: "file src/functors_with_signals.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/functors_with_signals.cpp
+# file src/functors_with_signals.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -158,4 +158,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

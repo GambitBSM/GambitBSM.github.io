@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Models::DMEFTModel'
-description: 'Simple DMEFT model object. '
+title: "struct Gambit::Models::DMEFTModel"
+description: "Simple DMEFT model object. "
 
 ---
 
-# Gambit::Models::DMEFTModel
+# struct Gambit::Models::DMEFTModel
 
 
 
@@ -246,4 +246,4 @@ double mtrun;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

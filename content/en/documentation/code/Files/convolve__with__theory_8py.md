@@ -1,11 +1,11 @@
 ---
-title: 'file data/convolve_with_theory.py'
+title: "file data/convolve_with_theory.py"
 
 description: "[No description available]"
 
 ---
 
-# data/convolve_with_theory.py
+# file data/convolve_with_theory.py
 
 [No description available]
 
@@ -95,4 +95,4 @@ if __name__ == "__main__":
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Ran'
+title: "class Ran"
 
 description: "[No description available]"
 
 ---
 
-# Ran
+# class Ran
 
 
 
@@ -58,4 +58,4 @@ inline double Doub()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file src/decay_table.cpp'
+title: "file src/decay_table.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/decay_table.cpp
+# file src/decay_table.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -578,4 +578,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

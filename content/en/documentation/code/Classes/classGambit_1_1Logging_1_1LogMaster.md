@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Logging::LogMaster'
+title: "class Gambit::Logging::LogMaster"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Logging::LogMaster
+# class Gambit::Logging::LogMaster
 
 
 
@@ -474,4 +474,4 @@ Setters for behaviour options Must be used before "initialise" in order to have 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

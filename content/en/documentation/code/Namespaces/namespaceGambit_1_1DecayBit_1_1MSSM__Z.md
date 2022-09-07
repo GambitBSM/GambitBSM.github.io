@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::DecayBit::MSSM_Z'
+title: "namespace Gambit::DecayBit::MSSM_Z"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DecayBit::MSSM_Z
+# namespace Gambit::DecayBit::MSSM_Z
 
 [No description available]
 
@@ -56,4 +56,4 @@ sw2Weinberg angle, \(\sin^2\theta_W\)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

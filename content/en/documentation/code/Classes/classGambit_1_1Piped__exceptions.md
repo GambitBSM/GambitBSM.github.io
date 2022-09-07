@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Piped_exceptions'
-description: '[Gambit](/documentation/code/namespaces/namespacegambit/) piped error class. '
+title: "class Gambit::Piped_exceptions"
+description: "[Gambit](/documentation/code/namespaces/namespacegambit/) piped error class. "
 
 ---
 
-# Gambit::Piped_exceptions
+# class Gambit::Piped_exceptions
 
 
 
@@ -105,4 +105,4 @@ Check whether any exceptions with a specific message were requested, without han
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file src/ColliderBit_LEP.cpp'
+title: "file src/ColliderBit_LEP.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/ColliderBit_LEP.cpp
+# file src/ColliderBit_LEP.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -2704,4 +2704,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

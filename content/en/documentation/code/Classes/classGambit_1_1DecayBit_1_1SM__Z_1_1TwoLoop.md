@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DecayBit::SM_Z::TwoLoop'
+title: "class Gambit::DecayBit::SM_Z::TwoLoop"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DecayBit::SM_Z::TwoLoop
+# class Gambit::DecayBit::SM_Z::TwoLoop
 
 
 
@@ -602,4 +602,4 @@ double delta_alpha_OS;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

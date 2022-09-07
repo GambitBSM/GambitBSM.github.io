@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::special_exception'
-description: 'GAMBIT special exception class. Not logged, meant for always catching. '
+title: "class Gambit::special_exception"
+description: "GAMBIT special exception class. Not logged, meant for always catching. "
 
 ---
 
-# Gambit::special_exception
+# class Gambit::special_exception
 
 
 
@@ -118,4 +118,4 @@ The message passed when this exception is raised.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

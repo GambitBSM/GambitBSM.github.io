@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::flhaparam'
+title: "struct Gambit::flhaparam"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::flhaparam
+# struct Gambit::flhaparam
 
 
 
@@ -316,4 +316,4 @@ double Q;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

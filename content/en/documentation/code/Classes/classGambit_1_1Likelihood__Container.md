@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Likelihood_Container'
-description: 'Class for collecting pointers to all the likelihood components, then running and combining them. '
+title: "class Gambit::Likelihood_Container"
+description: "Class for collecting pointers to all the likelihood components, then running and combining them. "
 
 ---
 
-# Gambit::Likelihood_Container
+# class Gambit::Likelihood_Container
 
 
 
@@ -72,4 +72,4 @@ Use this to modify the total likelihood function before passing it to the scanne
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

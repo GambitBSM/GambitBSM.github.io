@@ -1,11 +1,11 @@
 ---
-title: 'class Cholesky'
+title: "class Cholesky"
 
 description: "[No description available]"
 
 ---
 
-# Cholesky
+# class Cholesky
 
 
 
@@ -315,4 +315,4 @@ int num;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

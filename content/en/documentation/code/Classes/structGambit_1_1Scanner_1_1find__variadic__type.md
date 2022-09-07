@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Scanner::find_variadic_type'
+title: "struct Gambit::Scanner::find_variadic_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::find_variadic_type
+# struct Gambit::Scanner::find_variadic_type
 
 
 
@@ -58,4 +58,4 @@ static const bool value = __find_variadic_type__<find_variadic_type_exact<T...>:
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

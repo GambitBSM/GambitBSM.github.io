@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::BE_bucket_base'
-description: 'A base class for [BEvariable_bucket]() and [BEfunction_bucket](). '
+title: "class Gambit::BE_bucket_base"
+description: "A base class for [BEvariable_bucket]() and [BEfunction_bucket](). "
 
 ---
 
-# Gambit::BE_bucket_base
+# class Gambit::BE_bucket_base
 
 
 
@@ -83,4 +83,4 @@ Get version information.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

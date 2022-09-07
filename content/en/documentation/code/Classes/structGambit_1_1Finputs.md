@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Finputs'
+title: "struct Gambit::Finputs"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Finputs
+# struct Gambit::Finputs
 
 
 
@@ -44,4 +44,4 @@ safe_ptr< Options > options;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

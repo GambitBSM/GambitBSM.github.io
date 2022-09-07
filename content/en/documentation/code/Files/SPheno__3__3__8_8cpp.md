@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/SPheno_3_3_8.cpp'
+title: "file frontends/SPheno_3_3_8.cpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/SPheno_3_3_8.cpp
+# file frontends/SPheno_3_3_8.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1386,4 +1386,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

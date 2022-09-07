@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DarkBit::nudata'
-description: 'Neutrino telescope data container. '
+title: "struct Gambit::DarkBit::nudata"
+description: "Neutrino telescope data container. "
 
 ---
 
-# Gambit::DarkBit::nudata
+# struct Gambit::DarkBit::nudata
 
 
 
@@ -70,4 +70,4 @@ double pvalue;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

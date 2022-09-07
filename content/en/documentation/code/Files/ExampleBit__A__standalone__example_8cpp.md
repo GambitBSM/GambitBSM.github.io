@@ -1,11 +1,11 @@
 ---
-title: 'file examples/ExampleBit_A_standalone_example.cpp'
+title: "file examples/ExampleBit_A_standalone_example.cpp"
 
 description: "[No description available]"
 
 ---
 
-# examples/ExampleBit_A_standalone_example.cpp
+# file examples/ExampleBit_A_standalone_example.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -253,4 +253,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

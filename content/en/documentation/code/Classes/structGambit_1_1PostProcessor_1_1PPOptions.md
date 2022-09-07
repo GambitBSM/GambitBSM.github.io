@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::PostProcessor::PPOptions'
+title: "struct Gambit::PostProcessor::PPOptions"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::PostProcessor::PPOptions
+# struct Gambit::PostProcessor::PPOptions
 
 
 
@@ -176,4 +176,4 @@ bool verbose;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

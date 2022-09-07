@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::HDF5DataSetBase'
-description: 'Base class for interfacing to a HDF5 dataset. '
+title: "class Gambit::Printers::HDF5DataSetBase"
+description: "Base class for interfacing to a HDF5 dataset. "
 
 ---
 
-# Gambit::Printers::HDF5DataSetBase
+# class Gambit::Printers::HDF5DataSetBase
 
 
 
@@ -286,4 +286,4 @@ Integer identifier for the template type of this dataset (determined by derived 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Mesons_masses'
+title: "struct Gambit::Mesons_masses"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Mesons_masses
+# struct Gambit::Mesons_masses
 
 
 
@@ -204,4 +204,4 @@ static constexpr double Jpsi = 3.0969;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

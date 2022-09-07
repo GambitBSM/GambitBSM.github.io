@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Priors::Gaussian'
-description: 'Multi-dimensional [Gaussian]() prior. '
+title: "class Gambit::Priors::Gaussian"
+description: "Multi-dimensional [Gaussian]() prior. "
 
 ---
 
-# Gambit::Priors::Gaussian
+# class Gambit::Priors::Gaussian
 
 
 
@@ -114,4 +114,4 @@ Log of PDF density.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

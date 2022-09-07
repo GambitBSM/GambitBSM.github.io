@@ -1,11 +1,11 @@
 ---
-title: 'file scripts/find_all_gambit_bits.py'
+title: "file scripts/find_all_gambit_bits.py"
 
 description: "[No description available]"
 
 ---
 
-# scripts/find_all_gambit_bits.py
+# file scripts/find_all_gambit_bits.py
 
 [No description available]
 
@@ -72,4 +72,4 @@ if __name__ == "__main__":
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

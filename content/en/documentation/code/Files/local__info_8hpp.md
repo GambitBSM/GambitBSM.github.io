@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/local_info.hpp'
+title: "file Utils/local_info.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/local_info.hpp
+# file Utils/local_info.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -99,4 +99,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

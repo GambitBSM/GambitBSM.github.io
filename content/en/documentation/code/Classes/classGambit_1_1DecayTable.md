@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::DecayTable'
-description: 'GAMBIT native decay table class. '
+title: "class Gambit::DecayTable"
+description: "GAMBIT native decay table class. "
 
 ---
 
-# Gambit::DecayTable
+# class Gambit::DecayTable
 
 
 
@@ -313,4 +313,4 @@ The actual underlying map. Just iterate over this directly if you need to iterat
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

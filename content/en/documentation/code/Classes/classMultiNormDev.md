@@ -1,11 +1,11 @@
 ---
-title: 'class MultiNormDev'
+title: "class MultiNormDev"
 
 description: "[No description available]"
 
 ---
 
-# MultiNormDev
+# class MultiNormDev
 
 
 
@@ -343,4 +343,4 @@ inline void EllipseDev(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

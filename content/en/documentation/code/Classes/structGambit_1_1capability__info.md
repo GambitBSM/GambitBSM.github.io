@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::capability_info'
-description: 'Helper struct to carry around capability information. '
+title: "struct Gambit::capability_info"
+description: "Helper struct to carry around capability information. "
 
 ---
 
-# Gambit::capability_info
+# struct Gambit::capability_info
 
 
 
@@ -67,4 +67,4 @@ Flag to check if description is missing.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

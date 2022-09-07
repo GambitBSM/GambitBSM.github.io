@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::CAST_SolarModel_Interpolator'
+title: "class Gambit::DarkBit::CAST_SolarModel_Interpolator"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::CAST_SolarModel_Interpolator
+# class Gambit::DarkBit::CAST_SolarModel_Interpolator
 
 
 
@@ -90,4 +90,4 @@ std::vector< double > evaluate_gaee_contrib(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::DarkBit::DarkBit_utils'
+title: "namespace Gambit::DarkBit::DarkBit_utils"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::DarkBit_utils
+# namespace Gambit::DarkBit::DarkBit_utils
 
 [No description available]
 
@@ -107,4 +107,4 @@ template double gamma3bdy_limits< 1 >(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

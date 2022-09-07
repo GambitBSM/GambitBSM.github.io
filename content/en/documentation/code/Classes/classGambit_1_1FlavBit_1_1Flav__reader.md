@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::FlavBit::Flav_reader'
-description: 'Reader class for FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database. '
+title: "class Gambit::FlavBit::Flav_reader"
+description: "Reader class for FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database. "
 
 ---
 
-# Gambit::FlavBit::Flav_reader
+# class Gambit::FlavBit::Flav_reader
 
 
 
@@ -158,4 +158,4 @@ int number_measurements;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

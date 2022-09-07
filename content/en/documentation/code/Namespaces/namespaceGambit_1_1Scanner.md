@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Scanner'
+title: "namespace Gambit::Scanner"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner
+# namespace Gambit::Scanner
 
 [No description available]
 
@@ -696,4 +696,4 @@ int ScannerBit_handlers = register_ScannerBit_handlers();
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file Backends/python_function.hpp'
+title: "file Backends/python_function.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Backends/python_function.hpp
+# file Backends/python_function.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -176,4 +176,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

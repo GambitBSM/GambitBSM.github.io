@@ -1,11 +1,11 @@
 ---
-title: 'file src/NeutrinoBit.cpp'
+title: "file src/NeutrinoBit.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/NeutrinoBit.cpp
+# file src/NeutrinoBit.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1014,4 +1014,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

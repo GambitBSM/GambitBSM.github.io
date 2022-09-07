@@ -1,11 +1,11 @@
 ---
-title: 'class my_simplex'
+title: "class my_simplex"
 
 description: "[No description available]"
 
 ---
 
-# my_simplex
+# class my_simplex
 
 
 
@@ -365,4 +365,4 @@ int inmax;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Multimode_inputs'
-description: 'Class containing the inputs used for inputs to MultiModeCode. '
+title: "class Gambit::Multimode_inputs"
+description: "Class containing the inputs used for inputs to MultiModeCode. "
 
 ---
 
-# Gambit::Multimode_inputs
+# class Gambit::Multimode_inputs
 
 
 
@@ -189,4 +189,4 @@ int get_runningofrunning;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

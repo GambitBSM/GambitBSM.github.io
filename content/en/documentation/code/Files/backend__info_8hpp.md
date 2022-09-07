@@ -1,11 +1,11 @@
 ---
-title: 'file Backends/backend_info.hpp'
+title: "file Backends/backend_info.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Backends/backend_info.hpp
+# file Backends/backend_info.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -302,4 +302,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

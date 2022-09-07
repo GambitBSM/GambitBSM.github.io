@@ -1,11 +1,11 @@
 ---
-title: 'file DecayBit/decay_utils.hpp'
+title: "file DecayBit/decay_utils.hpp"
 
 description: "[No description available]"
 
 ---
 
-# DecayBit/decay_utils.hpp
+# file DecayBit/decay_utils.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -77,4 +77,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

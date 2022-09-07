@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Scanner::Errors'
+title: "namespace Gambit::Scanner::Errors"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Errors
+# namespace Gambit::Scanner::Errors
 
 [No description available]
 
@@ -47,4 +47,4 @@ inline bool & _bool_()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

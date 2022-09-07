@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit::ColliderBit::CMS'
-description: 'CMS-specific efficiency and smearing functions for super fast detector simulation. '
+title: "namespace Gambit::ColliderBit::CMS"
+description: "CMS-specific efficiency and smearing functions for super fast detector simulation. "
 
 ---
 
-# Gambit::ColliderBit::CMS
+# namespace Gambit::ColliderBit::CMS
 
 CMS-specific efficiency and smearing functions for super fast detector simulation. 
 
@@ -332,4 +332,4 @@ inline void applyCSVv2MediumBtagEffAndMisId(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

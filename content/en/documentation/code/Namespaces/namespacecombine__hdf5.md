@@ -1,11 +1,11 @@
 ---
-title: 'namespace combine_hdf5'
+title: "namespace combine_hdf5"
 
 description: "[No description available]"
 
 ---
 
-# combine_hdf5
+# namespace combine_hdf5
 
 [No description available] [More...](#detailed-description)
 
@@ -683,4 +683,4 @@ outdset =  fout[group][itemname];
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

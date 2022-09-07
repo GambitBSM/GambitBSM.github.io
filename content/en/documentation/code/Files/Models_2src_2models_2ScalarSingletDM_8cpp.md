@@ -1,11 +1,11 @@
 ---
-title: 'file models/Models/src/models/ScalarSingletDM.cpp'
+title: "file models/Models/src/models/ScalarSingletDM.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/Models/src/models/ScalarSingletDM.cpp
+# file models/Models/src/models/ScalarSingletDM.cpp
 
 [No description available]
 
@@ -158,4 +158,4 @@ void MODEL_NAMESPACE::ScalarSingletDM_Z3_to_ScalarSingletDM_Z3_running (const Mo
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

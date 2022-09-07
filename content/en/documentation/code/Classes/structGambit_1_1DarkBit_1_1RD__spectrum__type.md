@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::RD_spectrum_type'
+title: "struct Gambit::DarkBit::RD_spectrum_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::RD_spectrum_type
+# struct Gambit::DarkBit::RD_spectrum_type
 
 
 
@@ -87,4 +87,4 @@ bool isSelfConj;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

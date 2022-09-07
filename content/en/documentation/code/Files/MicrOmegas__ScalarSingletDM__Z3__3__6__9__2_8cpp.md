@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/MicrOmegas_ScalarSingletDM_Z3_3_6_9_2.cpp'
+title: "file frontends/MicrOmegas_ScalarSingletDM_Z3_3_6_9_2.cpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/MicrOmegas_ScalarSingletDM_Z3_3_6_9_2.cpp
+# file frontends/MicrOmegas_ScalarSingletDM_Z3_3_6_9_2.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -261,4 +261,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

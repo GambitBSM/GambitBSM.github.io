@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb'
+title: "class Gambit::ColliderBit::Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb
+# class Gambit::ColliderBit::Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb
 
 
 
@@ -318,4 +318,4 @@ double num2LSR2 =0;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

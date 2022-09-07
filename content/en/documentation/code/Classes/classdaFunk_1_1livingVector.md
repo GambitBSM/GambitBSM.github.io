@@ -1,11 +1,11 @@
 ---
-title: 'class daFunk::livingVector'
+title: "class daFunk::livingVector"
 
 description: "[No description available]"
 
 ---
 
-# daFunk::livingVector
+# class daFunk::livingVector
 
 
 
@@ -38,4 +38,4 @@ static inline bool & is_dead()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

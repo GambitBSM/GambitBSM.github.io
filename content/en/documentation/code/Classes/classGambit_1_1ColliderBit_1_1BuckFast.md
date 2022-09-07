@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::BuckFast'
-description: 'A base class for [BuckFast]() simple smearing simulations within ColliderBit. '
+title: "class Gambit::ColliderBit::BuckFast"
+description: "A base class for [BuckFast]() simple smearing simulations within ColliderBit. "
 
 ---
 
-# Gambit::ColliderBit::BuckFast
+# class Gambit::ColliderBit::BuckFast
 
 
 
@@ -140,4 +140,4 @@ void(*)(std::vector< HEPUtils::Jet * > &) smearJets;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

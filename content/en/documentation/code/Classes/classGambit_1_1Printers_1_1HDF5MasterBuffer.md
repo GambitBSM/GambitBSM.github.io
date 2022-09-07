@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Printers::HDF5MasterBuffer'
+title: "class Gambit::Printers::HDF5MasterBuffer"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::HDF5MasterBuffer
+# class Gambit::Printers::HDF5MasterBuffer
 
 
 
@@ -310,4 +310,4 @@ Attempt to flush again every 1000 points beyond buffer limits
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

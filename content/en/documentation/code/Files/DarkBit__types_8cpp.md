@@ -1,11 +1,11 @@
 ---
-title: 'file src/DarkBit_types.cpp'
+title: "file src/DarkBit_types.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/DarkBit_types.cpp
+# file src/DarkBit_types.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -382,4 +382,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

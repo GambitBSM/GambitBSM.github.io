@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::ColliderBit::AnalysisLogLikes'
-description: 'Container for loglike information for an analysis. '
+title: "struct Gambit::ColliderBit::AnalysisLogLikes"
+description: "Container for loglike information for an analysis. "
 
 ---
 
-# Gambit::ColliderBit::AnalysisLogLikes
+# struct Gambit::ColliderBit::AnalysisLogLikes
 
 
 
@@ -77,4 +77,4 @@ double combination_loglike;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

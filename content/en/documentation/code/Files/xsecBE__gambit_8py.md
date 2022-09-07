@@ -1,11 +1,11 @@
 ---
-title: 'file 1.0.2/xsecBE_gambit.py'
+title: "file 1.0.2/xsecBE_gambit.py"
 
 description: "[No description available]"
 
 ---
 
-# 1.0.2/xsecBE_gambit.py
+# file 1.0.2/xsecBE_gambit.py
 
 [No description available]
 
@@ -112,4 +112,4 @@ def get_xsection(proc):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

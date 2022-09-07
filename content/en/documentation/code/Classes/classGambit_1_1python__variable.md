@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::python_variable'
-description: 'Holds the info about a python backend variable, and defines conversion functions. '
+title: "class Gambit::python_variable"
+description: "Holds the info about a python backend variable, and defines conversion functions. "
 
 ---
 
-# Gambit::python_variable
+# class Gambit::python_variable
 
 
 
@@ -63,4 +63,4 @@ Cast operator from [python_variable](/documentation/code/classes/classgambit_1_1
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

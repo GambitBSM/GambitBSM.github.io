@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DRes::Rule'
+title: "struct Gambit::DRes::Rule"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DRes::Rule
+# struct Gambit::DRes::Rule
 
 
 
@@ -76,4 +76,4 @@ std::string module;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

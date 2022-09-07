@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit::ColliderBit::ATLAS'
-description: 'ATLAS-specific efficiency and smearing functions for super fast detector simulation. '
+title: "namespace Gambit::ColliderBit::ATLAS"
+description: "ATLAS-specific efficiency and smearing functions for super fast detector simulation. "
 
 ---
 
-# Gambit::ColliderBit::ATLAS
+# namespace Gambit::ColliderBit::ATLAS
 
 ATLAS-specific efficiency and smearing functions for super fast detector simulation. 
 
@@ -315,4 +315,4 @@ Electron 2019 Isolation efficiency functions from [https://arxiv.org/pdf/1902.04
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

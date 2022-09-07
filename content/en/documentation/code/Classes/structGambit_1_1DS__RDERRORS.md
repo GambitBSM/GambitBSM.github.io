@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_RDERRORS'
+title: "struct Gambit::DS_RDERRORS"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_RDERRORS
+# struct Gambit::DS_RDERRORS
 
 
 
@@ -44,4 +44,4 @@ Finteger rdinit;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

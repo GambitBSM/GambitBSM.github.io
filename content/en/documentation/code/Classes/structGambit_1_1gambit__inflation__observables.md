@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::gambit_inflation_observables'
+title: "struct Gambit::gambit_inflation_observables"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::gambit_inflation_observables
+# struct Gambit::gambit_inflation_observables
 
 
 
@@ -204,4 +204,4 @@ int err = 0;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

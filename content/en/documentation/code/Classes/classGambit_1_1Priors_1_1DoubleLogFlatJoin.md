@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Priors::DoubleLogFlatJoin'
+title: "class Gambit::Priors::DoubleLogFlatJoin"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Priors::DoubleLogFlatJoin
+# class Gambit::Priors::DoubleLogFlatJoin
 
 
 
@@ -119,4 +119,4 @@ Probability density function.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

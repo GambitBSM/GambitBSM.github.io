@@ -1,11 +1,11 @@
 ---
-title: 'file postprocessor_1.0.0/postprocessor_1.0.0/postprocessor.hpp'
+title: "file postprocessor_1.0.0/postprocessor_1.0.0/postprocessor.hpp"
 
 description: "[No description available]"
 
 ---
 
-# postprocessor_1.0.0/postprocessor_1.0.0/postprocessor.hpp
+# file postprocessor_1.0.0/postprocessor_1.0.0/postprocessor.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -239,4 +239,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file SimpleSpectra/SuperRenormHPSimpleSpec.hpp'
+title: "file SimpleSpectra/SuperRenormHPSimpleSpec.hpp"
 
 description: "[No description available]"
 
 ---
 
-# SimpleSpectra/SuperRenormHPSimpleSpec.hpp
+# file SimpleSpectra/SuperRenormHPSimpleSpec.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -178,4 +178,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

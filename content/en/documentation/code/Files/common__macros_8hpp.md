@@ -1,11 +1,11 @@
 ---
-title: 'file Backends/common_macros.hpp'
+title: "file Backends/common_macros.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Backends/common_macros.hpp
+# file Backends/common_macros.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -364,4 +364,4 @@ namespace Gambit                                                            \
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

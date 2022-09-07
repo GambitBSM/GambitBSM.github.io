@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::module_functor'
-description: 'Actual module functor type for all but TYPE=void. '
+title: "class Gambit::module_functor"
+description: "Actual module functor type for all but TYPE=void. "
 
 ---
 
-# Gambit::module_functor
+# class Gambit::module_functor
 
 
 
@@ -465,4 +465,4 @@ Flag to select whether or not the results of this functor should be sent to the 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

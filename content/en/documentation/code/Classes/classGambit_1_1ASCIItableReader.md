@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ASCIItableReader'
+title: "class Gambit::ASCIItableReader"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ASCIItableReader
+# class Gambit::ASCIItableReader
 
 
 
@@ -127,4 +127,4 @@ inline int getnrow()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

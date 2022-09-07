@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Backends::vevacious_1_0::VevaciousPlusPlus'
+title: "namespace Gambit::Backends::vevacious_1_0::VevaciousPlusPlus"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends::vevacious_1_0::VevaciousPlusPlus
+# namespace Gambit::Backends::vevacious_1_0::VevaciousPlusPlus
 
 [No description available]
 
@@ -31,4 +31,4 @@ typedef ::vevacious_1_0::VevaciousPlusPlus::VevaciousPlusPlus Gambit::Backends::
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

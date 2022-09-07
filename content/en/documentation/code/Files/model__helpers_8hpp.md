@@ -1,11 +1,11 @@
 ---
-title: 'file Models/model_helpers.hpp'
+title: "file Models/model_helpers.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Models/model_helpers.hpp
+# file Models/model_helpers.hpp
 
 [No description available]
 
@@ -71,4 +71,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

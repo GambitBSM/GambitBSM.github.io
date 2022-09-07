@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::DecayBit'
+title: "namespace Gambit::DecayBit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DecayBit
+# namespace Gambit::DecayBit
 
 [No description available]
 
@@ -1430,4 +1430,4 @@ void lnL_W_decays_chi2(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file modules/infomsg.py'
+title: "file modules/infomsg.py"
 
 description: "[No description available]"
 
 ---
 
-# modules/infomsg.py
+# file modules/infomsg.py
 
 [No description available]
 
@@ -254,4 +254,4 @@ def clearInfoMessages():
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/module_macros_incore_defs.hpp'
+title: "file Elements/module_macros_incore_defs.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/module_macros_incore_defs.hpp
+# file Elements/module_macros_incore_defs.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1899,4 +1899,4 @@ Redirection of NEEDS_CLASSES_FROM when invoked from within the Core.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

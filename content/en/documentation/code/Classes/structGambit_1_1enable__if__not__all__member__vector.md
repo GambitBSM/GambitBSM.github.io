@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::enable_if_not_all_member_vector'
+title: "struct Gambit::enable_if_not_all_member_vector"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::enable_if_not_all_member_vector
+# struct Gambit::enable_if_not_all_member_vector
 
 
 
@@ -36,4 +36,4 @@ typedef std::enable_if<!is_all_member_vector<args...>::value, ret> Gambit::enabl
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

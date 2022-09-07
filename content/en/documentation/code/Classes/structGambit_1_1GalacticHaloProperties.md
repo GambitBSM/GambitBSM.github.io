@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::GalacticHaloProperties'
+title: "struct Gambit::GalacticHaloProperties"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::GalacticHaloProperties
+# struct Gambit::GalacticHaloProperties
 
 
 
@@ -36,4 +36,4 @@ double r_sun;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file models/HaloModels_gNFW.hpp'
+title: "file models/HaloModels_gNFW.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/HaloModels_gNFW.hpp
+# file models/HaloModels_gNFW.hpp
 
 [No description available]
 
@@ -110,4 +110,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

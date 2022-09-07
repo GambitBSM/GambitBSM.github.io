@@ -1,11 +1,11 @@
 ---
-title: 'file priors/fixed_same_as.hpp'
+title: "file priors/fixed_same_as.hpp"
 
 description: "[No description available]"
 
 ---
 
-# priors/fixed_same_as.hpp
+# file priors/fixed_same_as.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -250,4 +250,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

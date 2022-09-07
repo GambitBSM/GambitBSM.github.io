@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_PMASSES'
+title: "struct Gambit::DS_PMASSES"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_PMASSES
+# struct Gambit::DS_PMASSES
 
 
 
@@ -28,4 +28,4 @@ Farray< Fdouble, 0, 255 > mass;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

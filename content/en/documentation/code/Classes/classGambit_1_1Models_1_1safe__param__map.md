@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Models::safe_param_map'
+title: "class Gambit::Models::safe_param_map"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Models::safe_param_map
+# class Gambit::Models::safe_param_map
 
 
 
@@ -39,4 +39,4 @@ inline T operator[](
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb::ClusteringHistory'
+title: "struct Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb::ClusteringHistory"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb::ClusteringHistory
+# struct Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb::ClusteringHistory
 
 
 
@@ -83,4 +83,4 @@ std::vector< Step > steps;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class ExponDev'
+title: "class ExponDev"
 
 description: "[No description available]"
 
 ---
 
-# ExponDev
+# class ExponDev
 
 
 
@@ -81,4 +81,4 @@ inline double Dev()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

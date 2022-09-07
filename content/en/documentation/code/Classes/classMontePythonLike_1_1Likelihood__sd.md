@@ -1,11 +1,11 @@
 ---
-title: 'class MontePythonLike::Likelihood_sd'
+title: "class MontePythonLike::Likelihood_sd"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike::Likelihood_sd
+# class MontePythonLike::Likelihood_sd
 
 
 
@@ -326,4 +326,4 @@ co_integrated_logInu;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

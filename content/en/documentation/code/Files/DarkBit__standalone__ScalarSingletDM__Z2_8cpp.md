@@ -1,11 +1,11 @@
 ---
-title: 'file examples/DarkBit_standalone_ScalarSingletDM_Z2.cpp'
+title: "file examples/DarkBit_standalone_ScalarSingletDM_Z2.cpp"
 
 description: "[No description available]"
 
 ---
 
-# examples/DarkBit_standalone_ScalarSingletDM_Z2.cpp
+# file examples/DarkBit_standalone_ScalarSingletDM_Z2.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -597,4 +597,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

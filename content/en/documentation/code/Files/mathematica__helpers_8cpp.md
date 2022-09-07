@@ -1,11 +1,11 @@
 ---
-title: 'file src/mathematica_helpers.cpp'
+title: "file src/mathematica_helpers.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/mathematica_helpers.cpp
+# file src/mathematica_helpers.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -133,4 +133,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

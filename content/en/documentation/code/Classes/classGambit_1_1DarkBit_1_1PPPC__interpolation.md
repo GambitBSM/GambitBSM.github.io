@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::PPPC_interpolation'
+title: "class Gambit::DarkBit::PPPC_interpolation"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::PPPC_interpolation
+# class Gambit::DarkBit::PPPC_interpolation
 
 
 
@@ -80,4 +80,4 @@ double operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file scripts/create_gambit_skeleton_from_heplike.py'
+title: "file scripts/create_gambit_skeleton_from_heplike.py"
 
 description: "[No description available]"
 
 ---
 
-# scripts/create_gambit_skeleton_from_heplike.py
+# file scripts/create_gambit_skeleton_from_heplike.py
 
 [No description available]
 
@@ -155,4 +155,4 @@ if __name__ == '__main__':
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file SpecBit/external_examples.hpp'
+title: "file SpecBit/external_examples.hpp"
 
 description: "[No description available]"
 
 ---
 
-# SpecBit/external_examples.hpp
+# file SpecBit/external_examples.hpp
 
 [No description available]
 
@@ -429,4 +429,4 @@ void SM_checks(Gambit::SubSpectrum& SM) {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

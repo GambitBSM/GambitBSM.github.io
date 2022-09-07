@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SubSpectrum'
-description: 'Virtual base class for interacting with spectrum generator output. '
+title: "class Gambit::SubSpectrum"
+description: "Virtual base class for interacting with spectrum generator output. "
 
 ---
 
-# Gambit::SubSpectrum
+# class Gambit::SubSpectrum
 
 
 
@@ -726,4 +726,4 @@ Map of override maps.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::SQLiteBase'
-description: 'SQLite base class for both reader and writer. '
+title: "class Gambit::Printers::SQLiteBase"
+description: "SQLite base class for both reader and writer. "
 
 ---
 
-# Gambit::Printers::SQLiteBase
+# class Gambit::Printers::SQLiteBase
 
 
 
@@ -157,4 +157,4 @@ int submit_sql(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

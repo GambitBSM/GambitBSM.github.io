@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Backends'
+title: "namespace Gambit::Backends"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends
+# namespace Gambit::Backends
 
 [No description available]
 
@@ -339,4 +339,4 @@ Helper function that indicates if a type is numerical or not.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

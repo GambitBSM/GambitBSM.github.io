@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::GreAT::greatScanData'
-description: 'Structure for passing likelihood and printer data through GreAT to the objective function. '
+title: "struct Gambit::GreAT::greatScanData"
+description: "Structure for passing likelihood and printer data through GreAT to the objective function. "
 
 ---
 
-# Gambit::GreAT::greatScanData
+# struct Gambit::GreAT::greatScanData
 
 
 
@@ -46,4 +46,4 @@ double min_logLike;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

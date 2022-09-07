@@ -1,11 +1,11 @@
 ---
-title: 'file SpectrumContents/Models/src/SpectrumContents/MSSM.cpp'
+title: "file SpectrumContents/Models/src/SpectrumContents/MSSM.cpp"
 
 description: "[No description available]"
 
 ---
 
-# SpectrumContents/Models/src/SpectrumContents/MSSM.cpp
+# file SpectrumContents/Models/src/SpectrumContents/MSSM.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -169,4 +169,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

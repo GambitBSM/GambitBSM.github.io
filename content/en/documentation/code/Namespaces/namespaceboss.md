@@ -1,11 +1,11 @@
 ---
-title: 'namespace boss'
+title: "namespace boss"
 
 description: "[No description available]"
 
 ---
 
-# boss
+# namespace boss
 
 [No description available]
 
@@ -31,4 +31,4 @@ def main()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

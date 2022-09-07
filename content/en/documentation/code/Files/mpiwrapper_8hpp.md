@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/mpiwrapper.hpp'
+title: "file Utils/mpiwrapper.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/mpiwrapper.hpp
+# file Utils/mpiwrapper.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -787,4 +787,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

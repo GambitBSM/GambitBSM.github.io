@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::is_vector'
+title: "struct Gambit::is_vector"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::is_vector
+# struct Gambit::is_vector
 
 
 
@@ -50,4 +50,4 @@ static const bool value = __is_vector__<typename remove_all<T>::type>::value;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

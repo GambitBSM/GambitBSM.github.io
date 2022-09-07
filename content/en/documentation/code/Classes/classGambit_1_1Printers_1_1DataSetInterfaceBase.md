@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::DataSetInterfaceBase'
-description: 'Wrapper object to manage a single dataset. '
+title: "class Gambit::Printers::DataSetInterfaceBase"
+description: "Wrapper object to manage a single dataset. "
 
 ---
 
-# Gambit::Printers::DataSetInterfaceBase
+# class Gambit::Printers::DataSetInterfaceBase
 
 
 
@@ -259,4 +259,4 @@ unsigned long virtualwriteposition;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

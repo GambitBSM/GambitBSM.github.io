@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS5_WIDTHS'
+title: "struct Gambit::DS5_WIDTHS"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS5_WIDTHS
+# struct Gambit::DS5_WIDTHS
 
 
 
@@ -28,4 +28,4 @@ Farray< Fdouble, 0, 50 > width;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace get_entry_from_heplike'
+title: "namespace get_entry_from_heplike"
 
 description: "[No description available]"
 
 ---
 
-# get_entry_from_heplike
+# namespace get_entry_from_heplike
 
 [No description available]
 
@@ -47,4 +47,4 @@ string request =  r'{}'.format(load(f, Loader=Loader)[str(sys.argv[2])]);
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Printers::asciiPrinter'
+title: "class Gambit::Printers::asciiPrinter"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::asciiPrinter
+# class Gambit::Printers::asciiPrinter
 
 
 
@@ -286,4 +286,4 @@ int get_bufferlength()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

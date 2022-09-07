@@ -1,11 +1,11 @@
 ---
-title: 'file src/smearEvent.cpp'
+title: "file src/smearEvent.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/smearEvent.cpp
+# file src/smearEvent.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -164,4 +164,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

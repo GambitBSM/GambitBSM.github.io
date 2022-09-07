@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_MIXING'
+title: "struct Gambit::DS_MIXING"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_MIXING
+# struct Gambit::DS_MIXING
 
 
 
@@ -28,4 +28,4 @@ Farray< Fdouble_complex, 1, 3, 1, 3 > ckm;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

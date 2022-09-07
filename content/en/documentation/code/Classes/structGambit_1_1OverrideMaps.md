@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::OverrideMaps'
-description: 'Definition of struct to hold various override values for a given ParamTag. '
+title: "struct Gambit::OverrideMaps"
+description: "Definition of struct to hold various override values for a given ParamTag. "
 
 ---
 
-# Gambit::OverrideMaps
+# struct Gambit::OverrideMaps
 
 
 
@@ -46,4 +46,4 @@ std::map< str, std::map< int, std::map< int, double > > > m2;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Diver_1_0_0'
+title: "namespace Gambit::Diver_1_0_0"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Diver_1_0_0
+# namespace Gambit::Diver_1_0_0
 
 [No description available]
 
@@ -45,4 +45,4 @@ Function to be minimised by Diver.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

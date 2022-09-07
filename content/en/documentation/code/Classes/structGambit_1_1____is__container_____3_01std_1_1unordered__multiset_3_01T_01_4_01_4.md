@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::__is_container__< std::unordered_multiset< T > >'
+title: "struct Gambit::__is_container__< std::unordered_multiset< T > >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::__is_container__< std::unordered_multiset< T > >
+# struct Gambit::__is_container__< std::unordered_multiset< T > >
 
 
 
@@ -50,4 +50,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file Pythia_8_212/abstract_ResonanceDecays.h'
+title: "file Pythia_8_212/abstract_ResonanceDecays.h"
 
 description: "[No description available]"
 
 ---
 
-# Pythia_8_212/abstract_ResonanceDecays.h
+# file Pythia_8_212/abstract_ResonanceDecays.h
 
 [No description available]
 
@@ -124,4 +124,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file backend_types/AlterBBN.hpp'
+title: "file backend_types/AlterBBN.hpp"
 
 description: "[No description available]"
 
 ---
 
-# backend_types/AlterBBN.hpp
+# file backend_types/AlterBBN.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -317,4 +317,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

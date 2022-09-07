@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::HDF5DataSetBasic'
-description: 'Constructable class for doing basic operations on a HDF5 dataset. '
+title: "class Gambit::Printers::HDF5DataSetBasic"
+description: "Constructable class for doing basic operations on a HDF5 dataset. "
 
 ---
 
-# Gambit::Printers::HDF5DataSetBasic
+# class Gambit::Printers::HDF5DataSetBasic
 
 
 
@@ -90,4 +90,4 @@ Create a new dataset at the specified location (implemented in derived class sin
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

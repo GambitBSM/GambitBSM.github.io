@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::CallFcn< HostSpec, MapTag::Get >'
-description: 'Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling getter functions. '
+title: "class Gambit::CallFcn< HostSpec, MapTag::Get >"
+description: "Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling 'getter' functions. "
 
 ---
 
-# Gambit::CallFcn< HostSpec, MapTag::Get >
+# class Gambit::CallFcn< HostSpec, MapTag::Get >
 
 
 
@@ -48,4 +48,4 @@ inline double operator()()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

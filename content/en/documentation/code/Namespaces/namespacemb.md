@@ -1,11 +1,11 @@
 ---
-title: 'namespace mb'
+title: "namespace mb"
 
 description: "[No description available]"
 
 ---
 
-# mb
+# namespace mb
 
 [No description available]
 
@@ -31,4 +31,4 @@ character *6 function text()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

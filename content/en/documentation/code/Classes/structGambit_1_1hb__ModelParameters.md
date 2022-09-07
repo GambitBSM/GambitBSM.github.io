@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::hb_ModelParameters'
+title: "struct Gambit::hb_ModelParameters"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::hb_ModelParameters
+# struct Gambit::hb_ModelParameters
 
 
 
@@ -404,4 +404,4 @@ double[1] BR_Hptaunu;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

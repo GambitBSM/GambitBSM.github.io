@@ -1,11 +1,11 @@
 ---
-title: 'file Backends/mathematica_helpers.hpp'
+title: "file Backends/mathematica_helpers.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Backends/mathematica_helpers.hpp
+# file Backends/mathematica_helpers.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -173,4 +173,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

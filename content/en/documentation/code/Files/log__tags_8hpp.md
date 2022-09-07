@@ -1,11 +1,11 @@
 ---
-title: 'file Logs/log_tags.hpp'
+title: "file Logs/log_tags.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Logs/log_tags.hpp
+# file Logs/log_tags.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -121,4 +121,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Logging::Message'
-description: 'structure for storing log messages and metadata '
+title: "struct Gambit::Logging::Message"
+description: "structure for storing log messages and metadata "
 
 ---
 
-# Gambit::Logging::Message
+# struct Gambit::Logging::Message
 
 
 
@@ -65,4 +65,4 @@ Utils::time_point received_at;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::mass_es_pseudonyms'
-description: 'Structure to hold mass eigenstate pseudonyms for gauge eigenstates. '
+title: "struct Gambit::mass_es_pseudonyms"
+description: "Structure to hold mass eigenstate pseudonyms for gauge eigenstates. "
 
 ---
 
-# Gambit::mass_es_pseudonyms
+# struct Gambit::mass_es_pseudonyms
 
 
 
@@ -485,4 +485,4 @@ Struct has already been filled or not.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Utils::specialised_threadsafe_rng'
-description: 'Derived thread-safe random number generator class, templated on the RNG engine type. '
+title: "class Gambit::Utils::specialised_threadsafe_rng"
+description: "Derived thread-safe random number generator class, templated on the RNG engine type. "
 
 ---
 
-# Gambit::Utils::specialised_threadsafe_rng
+# class Gambit::Utils::specialised_threadsafe_rng
 
 
 
@@ -83,4 +83,4 @@ Generate a random integer using the chosen engine Selected uniformly from range 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

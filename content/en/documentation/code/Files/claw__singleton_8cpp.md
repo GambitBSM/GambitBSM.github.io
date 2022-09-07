@@ -1,11 +1,11 @@
 ---
-title: 'file src/claw_singleton.cpp'
+title: "file src/claw_singleton.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/claw_singleton.cpp
+# file src/claw_singleton.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -80,4 +80,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

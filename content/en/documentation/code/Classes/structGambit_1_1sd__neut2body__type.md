@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::sd_neut2body_type'
+title: "struct Gambit::sd_neut2body_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::sd_neut2body_type
+# struct Gambit::sd_neut2body_type
 
 
 
@@ -188,4 +188,4 @@ Farray< Fdouble, 1, 4, 1, 4 > brneuthaneut;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

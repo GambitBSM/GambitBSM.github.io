@@ -1,11 +1,11 @@
 ---
-title: 'file src/mssm_slhahelp.cpp'
+title: "file src/mssm_slhahelp.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/mssm_slhahelp.cpp
+# file src/mssm_slhahelp.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1349,4 +1349,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class RandomBasis'
+title: "class RandomBasis"
 
 description: "[No description available]"
 
 ---
 
-# RandomBasis
+# class RandomBasis
 
 
 
@@ -301,4 +301,4 @@ double ** endVec;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file limits/OPALDegenerateCharginoLimits.cpp'
+title: "file limits/OPALDegenerateCharginoLimits.cpp"
 
 description: "[No description available]"
 
 ---
 
-# limits/OPALDegenerateCharginoLimits.cpp
+# file limits/OPALDegenerateCharginoLimits.cpp
 
 [No description available]
 
@@ -128,4 +128,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

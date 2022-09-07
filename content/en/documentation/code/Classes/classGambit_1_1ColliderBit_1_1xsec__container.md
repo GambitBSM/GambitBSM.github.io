@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::xsec_container'
-description: 'A base class for holding cross-section info within ColliderBit. '
+title: "class Gambit::ColliderBit::xsec_container"
+description: "A base class for holding cross-section info within ColliderBit. "
 
 ---
 
-# Gambit::ColliderBit::xsec_container
+# class Gambit::ColliderBit::xsec_container
 
 
 
@@ -263,4 +263,4 @@ int _trust_level;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

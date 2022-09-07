@@ -1,11 +1,11 @@
 ---
-title: 'file Core/yaml_parser.hpp'
+title: "file Core/yaml_parser.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Core/yaml_parser.hpp
+# file Core/yaml_parser.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -200,4 +200,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

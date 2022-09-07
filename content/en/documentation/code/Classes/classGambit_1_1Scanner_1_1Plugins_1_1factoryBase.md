@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Scanner::Plugins::factoryBase'
+title: "class Gambit::Scanner::Plugins::factoryBase"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Plugins::factoryBase
+# class Gambit::Scanner::Plugins::factoryBase
 
 
 
@@ -53,4 +53,4 @@ inline virtual ~factoryBase()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

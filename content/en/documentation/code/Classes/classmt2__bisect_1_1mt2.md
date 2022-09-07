@@ -1,11 +1,11 @@
 ---
-title: 'class mt2_bisect::mt2'
+title: "class mt2_bisect::mt2"
 
 description: "[No description available]"
 
 ---
 
-# mt2_bisect::mt2
+# class mt2_bisect::mt2
 
 
 
@@ -97,4 +97,4 @@ int nevt;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

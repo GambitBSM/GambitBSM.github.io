@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::CosmoBit::@645'
+title: "namespace Gambit::CosmoBit::@645"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::CosmoBit::@645
+# namespace Gambit::CosmoBit::@645
 
 [No description available]
 
@@ -32,4 +32,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

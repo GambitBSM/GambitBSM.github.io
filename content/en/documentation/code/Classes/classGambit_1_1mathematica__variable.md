@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::mathematica_variable'
+title: "class Gambit::mathematica_variable"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::mathematica_variable
+# class Gambit::mathematica_variable
 
 
 
@@ -57,4 +57,4 @@ inline operator TYPE const()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

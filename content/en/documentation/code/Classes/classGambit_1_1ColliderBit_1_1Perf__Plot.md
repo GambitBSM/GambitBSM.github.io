@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::Perf_Plot'
+title: "class Gambit::ColliderBit::Perf_Plot"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Perf_Plot
+# class Gambit::ColliderBit::Perf_Plot
 
 
 
@@ -60,4 +60,4 @@ inline void createFile(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

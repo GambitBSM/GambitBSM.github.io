@@ -1,11 +1,11 @@
 ---
-title: 'namespace SpecBit::Functown'
+title: "namespace SpecBit::Functown"
 
 description: "[No description available]"
 
 ---
 
-# SpecBit::Functown
+# namespace SpecBit::Functown
 
 [No description available]
 
@@ -16,4 +16,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

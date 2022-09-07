@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::PrinterManager'
-description: 'Manager class for creating printer objects '
+title: "class Gambit::Printers::PrinterManager"
+description: "Manager class for creating printer objects "
 
 ---
 
-# Gambit::Printers::PrinterManager
+# class Gambit::Printers::PrinterManager
 
 
 
@@ -221,4 +221,4 @@ Pointer to main printer object.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file src/mt2_bisect.cpp'
+title: "file src/mt2_bisect.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/mt2_bisect.cpp
+# file src/mt2_bisect.cpp
 
 [No description available]
 
@@ -677,4 +677,4 @@ inline int mt2::signchange_p( long double t1, long double t2, long double t3, lo
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkAges::Energy_injection_efficiency_table'
+title: "struct Gambit::DarkAges::Energy_injection_efficiency_table"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkAges::Energy_injection_efficiency_table
+# struct Gambit::DarkAges::Energy_injection_efficiency_table
 
 
 
@@ -84,4 +84,4 @@ std::vector< double > f_eff;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

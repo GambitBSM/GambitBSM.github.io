@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Logging::StdLogger'
-description: 'Logger for 'standard' messages. '
+title: "class Gambit::Logging::StdLogger"
+description: "Logger for 'standard' messages. "
 
 ---
 
-# Gambit::Logging::StdLogger
+# class Gambit::Logging::StdLogger
 
 
 
@@ -122,4 +122,4 @@ void writetags(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

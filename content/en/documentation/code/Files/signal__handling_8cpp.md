@@ -1,11 +1,11 @@
 ---
-title: 'file src/signal_handling.cpp'
+title: "file src/signal_handling.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/signal_handling.cpp
+# file src/signal_handling.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -761,4 +761,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

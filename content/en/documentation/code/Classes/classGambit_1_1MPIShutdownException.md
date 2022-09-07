@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::MPIShutdownException'
-description: 'Special exception raised when emergency shutdown triggered via MPI. '
+title: "class Gambit::MPIShutdownException"
+description: "Special exception raised when emergency shutdown triggered via MPI. "
 
 ---
 
-# Gambit::MPIShutdownException
+# class Gambit::MPIShutdownException
 
 
 
@@ -43,4 +43,4 @@ virtual const char * what() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

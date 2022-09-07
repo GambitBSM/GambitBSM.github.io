@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::fh_FlavourObs_container'
+title: "struct Gambit::fh_FlavourObs_container"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::fh_FlavourObs_container
+# struct Gambit::fh_FlavourObs_container
 
 
 
@@ -68,4 +68,4 @@ fh_real Bsmumu_SM;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

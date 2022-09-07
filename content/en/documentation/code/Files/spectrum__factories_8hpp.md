@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/spectrum_factories.hpp'
+title: "file Elements/spectrum_factories.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/spectrum_factories.hpp
+# file Elements/spectrum_factories.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -125,4 +125,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Printers::BuffTags'
-description: 'Struct for a collection of MPI tags belonging to a single buffer. '
+title: "struct Gambit::Printers::BuffTags"
+description: "Struct for a collection of MPI tags belonging to a single buffer. "
 
 ---
 
-# Gambit::Printers::BuffTags
+# struct Gambit::Printers::BuffTags
 
 
 
@@ -103,4 +103,4 @@ static const std::size_t NTAGS =5;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file ScannerBit/plugin_factory.hpp'
+title: "file ScannerBit/plugin_factory.hpp"
 
 description: "[No description available]"
 
 ---
 
-# ScannerBit/plugin_factory.hpp
+# file ScannerBit/plugin_factory.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -280,4 +280,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

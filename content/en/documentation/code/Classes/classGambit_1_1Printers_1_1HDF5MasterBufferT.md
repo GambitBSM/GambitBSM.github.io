@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::HDF5MasterBufferT'
-description: 'Class to manage a set of buffers for a single output type. '
+title: "class Gambit::Printers::HDF5MasterBufferT"
+description: "Class to manage a set of buffers for a single output type. "
 
 ---
 
-# Gambit::Printers::HDF5MasterBufferT
+# class Gambit::Printers::HDF5MasterBufferT
 
 
 
@@ -53,4 +53,4 @@ Retrieve buffer of our type for a given label.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

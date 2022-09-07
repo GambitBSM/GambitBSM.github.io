@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::MC_convergence_checker'
-description: 'Helper class for testing for convergence of analyses. '
+title: "class Gambit::ColliderBit::MC_convergence_checker"
+description: "Helper class for testing for convergence of analyses. "
 
 ---
 
-# Gambit::ColliderBit::MC_convergence_checker
+# class Gambit::ColliderBit::MC_convergence_checker
 
 
 
@@ -96,4 +96,4 @@ Check if convergence has been achieved across threads, and across all instances 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

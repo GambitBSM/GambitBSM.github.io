@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::ColliderBit::MCLoopInfo'
-description: 'Container for event loop status data and settings. '
+title: "struct Gambit::ColliderBit::MCLoopInfo"
+description: "Container for event loop status data and settings. "
 
 ---
 
-# Gambit::ColliderBit::MCLoopInfo
+# struct Gambit::ColliderBit::MCLoopInfo
 
 
 
@@ -297,4 +297,4 @@ std::map< str, std::map< str, std::vector< str > > > detector_analyses;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

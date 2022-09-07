@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::hd_golddec_type'
+title: "struct Gambit::hd_golddec_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::hd_golddec_type
+# struct Gambit::hd_golddec_type
 
 
 
@@ -52,4 +52,4 @@ Farray< Fdouble, 1, 2 > whcgd;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Backends::HepLike_1_2'
+title: "namespace Gambit::Backends::HepLike_1_2"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends::HepLike_1_2
+# namespace Gambit::Backends::HepLike_1_2
 
 [No description available]
 
@@ -95,4 +95,4 @@ typedef ::HepLike_1_2::HL_nDimLikelihood Gambit::Backends::HepLike_1_2::HL_nDimL
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::numout'
+title: "struct Gambit::numout"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::numout
+# struct Gambit::numout
 
 
 
@@ -68,4 +68,4 @@ CalcHEP_interface * interface;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

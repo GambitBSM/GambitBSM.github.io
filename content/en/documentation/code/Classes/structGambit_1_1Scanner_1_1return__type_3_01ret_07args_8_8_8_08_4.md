@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Scanner::return_type< ret(args...)>'
+title: "struct Gambit::Scanner::return_type< ret(args...)>"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::return_type< ret(args...)>
+# struct Gambit::Scanner::return_type< ret(args...)>
 
 
 
@@ -36,4 +36,4 @@ typedef ret Gambit::Scanner::return_type< ret(args...)>::type;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::CosmoBit::SM_time_evo'
+title: "class Gambit::CosmoBit::SM_time_evo"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::CosmoBit::SM_time_evo
+# class Gambit::CosmoBit::SM_time_evo
 
 
 
@@ -159,4 +159,4 @@ void update_grid(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

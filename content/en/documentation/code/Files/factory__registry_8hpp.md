@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/factory_registry.hpp'
+title: "file Utils/factory_registry.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/factory_registry.hpp
+# file Utils/factory_registry.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -255,4 +255,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

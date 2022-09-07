@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Utils::translator'
+title: "class Gambit::Utils::translator"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Utils::translator
+# class Gambit::Utils::translator
 
 
 
@@ -88,4 +88,4 @@ Constructor for translator.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

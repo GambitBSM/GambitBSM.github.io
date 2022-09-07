@@ -1,11 +1,11 @@
 ---
-title: 'namespace modules::infomsg'
+title: "namespace modules::infomsg"
 
 description: "[No description available]"
 
 ---
 
-# modules::infomsg
+# namespace modules::infomsg
 
 [No description available]
 
@@ -73,4 +73,4 @@ active_msg_types =  set();
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

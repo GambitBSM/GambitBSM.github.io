@@ -1,10 +1,10 @@
 ---
-title: 'struct Chunk'
-description: 'Struct to describe start and end indices for a chunk of data. '
+title: "struct Chunk"
+description: "Struct to describe start and end indices for a chunk of data. "
 
 ---
 
-# Chunk
+# struct Chunk
 
 
 
@@ -165,4 +165,4 @@ std::size_t eff_length;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

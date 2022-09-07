@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::safe_variable_ptr'
+title: "class Gambit::safe_variable_ptr"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::safe_variable_ptr
+# class Gambit::safe_variable_ptr
 
 
 
@@ -146,4 +146,4 @@ The actual underlying pointer.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

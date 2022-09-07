@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Utils::FileLock'
+title: "class Gambit::Utils::FileLock"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Utils::FileLock
+# class Gambit::Utils::FileLock
 
 
 
@@ -102,4 +102,4 @@ Getter for lockfile name.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

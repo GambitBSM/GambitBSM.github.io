@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DD_coupling_container'
+title: "struct Gambit::DD_coupling_container"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DD_coupling_container
+# struct Gambit::DD_coupling_container
 
 
 
@@ -44,4 +44,4 @@ NREO_DM_nucleon_couplings DD_nonrel_WCs;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

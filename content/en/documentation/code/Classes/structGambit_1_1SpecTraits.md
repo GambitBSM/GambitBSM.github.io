@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpecTraits'
+title: "struct Gambit::SpecTraits"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecTraits
+# struct Gambit::SpecTraits
 
 
 
@@ -28,4 +28,4 @@ Declare empty base traits class which communicates Model and Input typedefs from
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

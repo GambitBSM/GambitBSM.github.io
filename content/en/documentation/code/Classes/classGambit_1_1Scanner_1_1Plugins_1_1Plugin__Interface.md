@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Scanner::Plugins::Plugin_Interface'
+title: "class Gambit::Scanner::Plugins::Plugin_Interface"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Plugins::Plugin_Interface
+# class Gambit::Scanner::Plugins::Plugin_Interface
 
 
 
@@ -76,4 +76,4 @@ inline auto operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

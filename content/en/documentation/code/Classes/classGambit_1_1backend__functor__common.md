@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::backend_functor_common'
-description: 'Backend functor class for functions with result type TYPE and argumentlist ARGS. '
+title: "class Gambit::backend_functor_common"
+description: "Backend functor class for functions with result type TYPE and argumentlist ARGS. "
 
 ---
 
-# Gambit::backend_functor_common
+# class Gambit::backend_functor_common
 
 
 
@@ -307,4 +307,4 @@ Flag indicating if this backend functor is actually in use in a given scan.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

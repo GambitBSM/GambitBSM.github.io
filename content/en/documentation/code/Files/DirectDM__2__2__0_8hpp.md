@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/DirectDM_2_2_0.hpp'
+title: "file frontends/DirectDM_2_2_0.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/DirectDM_2_2_0.hpp
+# file frontends/DirectDM_2_2_0.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -135,4 +135,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file src/core_singleton.cpp'
+title: "file src/core_singleton.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/core_singleton.cpp
+# file src/core_singleton.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -75,4 +75,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

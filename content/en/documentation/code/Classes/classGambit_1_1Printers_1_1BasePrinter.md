@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::BasePrinter'
-description: 'BASE PRINTER CLASS. '
+title: "class Gambit::Printers::BasePrinter"
+description: "BASE PRINTER CLASS. "
 
 ---
 
-# Gambit::Printers::BasePrinter
+# class Gambit::Printers::BasePrinter
 
 
 
@@ -219,4 +219,4 @@ Default _print function. Throws an error if no matching virtual function for the
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

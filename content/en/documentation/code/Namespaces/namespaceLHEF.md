@@ -1,10 +1,10 @@
 ---
-title: 'namespace LHEF'
-description: 'Forward declaration to cut down on includes. '
+title: "namespace LHEF"
+description: "Forward declaration to cut down on includes. "
 
 ---
 
-# LHEF
+# namespace LHEF
 
 Forward declaration to cut down on includes.  [More...](#detailed-description)
 
@@ -46,4 +46,4 @@ Hat tip: Leif Lonnblad for writing the [LHEF](/documentation/code/namespaces/nam
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

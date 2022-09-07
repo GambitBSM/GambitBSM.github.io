@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Backends::Pythia_8_212::Pythia8'
+title: "namespace Gambit::Backends::Pythia_8_212::Pythia8"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends::Pythia_8_212::Pythia8
+# namespace Gambit::Backends::Pythia_8_212::Pythia8
 
 [No description available]
 
@@ -279,4 +279,4 @@ typedef ::Pythia_8_212::Pythia8::Hist Gambit::Backends::Pythia_8_212::Pythia8::H
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

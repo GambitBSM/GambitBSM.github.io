@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::DarkBit'
+title: "namespace Gambit::DarkBit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit
+# namespace Gambit::DarkBit
 
 [No description available]
 
@@ -3416,4 +3416,4 @@ static std::vector< std::string > channels {"e", "mu", "tau",
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

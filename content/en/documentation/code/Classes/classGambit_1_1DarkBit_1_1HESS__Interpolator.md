@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::HESS_Interpolator'
+title: "class Gambit::DarkBit::HESS_Interpolator"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::HESS_Interpolator
+# class Gambit::DarkBit::HESS_Interpolator
 
 
 
@@ -84,4 +84,4 @@ ASCIItableReader interp_lnL;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

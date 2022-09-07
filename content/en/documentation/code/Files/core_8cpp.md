@@ -1,11 +1,11 @@
 ---
-title: 'file src/core.cpp'
+title: "file src/core.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/core.cpp
+# file src/core.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -801,4 +801,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

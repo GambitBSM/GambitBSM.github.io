@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::HDF5Printer2'
-description: 'The main printer class for output to HDF5 format. '
+title: "class Gambit::Printers::HDF5Printer2"
+description: "The main printer class for output to HDF5 format. "
 
 ---
 
-# Gambit::Printers::HDF5Printer2
+# class Gambit::Printers::HDF5Printer2
 
 
 
@@ -237,4 +237,4 @@ Print functions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

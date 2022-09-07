@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::BEvariable_bucket'
-description: 'An interface class for backend variables. '
+title: "class Gambit::BEvariable_bucket"
+description: "An interface class for backend variables. "
 
 ---
 
-# Gambit::BEvariable_bucket
+# class Gambit::BEvariable_bucket
 
 
 
@@ -150,4 +150,4 @@ safe_variable_ptr< TYPE > _svptr;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

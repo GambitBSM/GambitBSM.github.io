@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::DRes::DependencyResolver'
-description: 'Main dependency resolver. '
+title: "class Gambit::DRes::DependencyResolver"
+description: "Main dependency resolver. "
 
 ---
 
-# Gambit::DRes::DependencyResolver
+# class Gambit::DRes::DependencyResolver
 
 
 
@@ -212,4 +212,4 @@ Helper function that returns a new graph with all inactive vertices removed.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

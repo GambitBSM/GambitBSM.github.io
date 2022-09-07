@@ -1,11 +1,11 @@
 ---
-title: 'file SpectrumContents/Models/src/SpectrumContents/ScalarSingletDM.cpp'
+title: "file SpectrumContents/Models/src/SpectrumContents/ScalarSingletDM.cpp"
 
 description: "[No description available]"
 
 ---
 
-# SpectrumContents/Models/src/SpectrumContents/ScalarSingletDM.cpp
+# file SpectrumContents/Models/src/SpectrumContents/ScalarSingletDM.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -143,4 +143,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

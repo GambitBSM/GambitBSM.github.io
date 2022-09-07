@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Printers::PPIDpair'
+title: "struct Gambit::Printers::PPIDpair"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::PPIDpair
+# struct Gambit::Printers::PPIDpair
 
 
 
@@ -102,4 +102,4 @@ Stream operator overloads.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

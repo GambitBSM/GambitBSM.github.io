@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::DecayChain::ChainContainer'
+title: "struct Gambit::DarkBit::DecayChain::ChainContainer"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::DecayChain::ChainContainer
+# struct Gambit::DarkBit::DecayChain::ChainContainer
 
 
 
@@ -53,4 +53,4 @@ shared_ptr< const ChainParticle > chain;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

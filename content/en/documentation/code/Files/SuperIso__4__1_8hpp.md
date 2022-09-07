@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/SuperIso_4_1.hpp'
+title: "file frontends/SuperIso_4_1.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/SuperIso_4_1.hpp
+# file frontends/SuperIso_4_1.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -301,4 +301,4 @@ BE_CONV_FUNCTION(modified_delta0, double, (const parameters*), "modified_delta0"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::primary_model_functor'
+title: "class Gambit::primary_model_functor"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::primary_model_functor
+# class Gambit::primary_model_functor
 
 
 
@@ -375,4 +375,4 @@ Destructor.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

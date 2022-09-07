@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::warning'
-description: 'GAMBIT warning class. '
+title: "class Gambit::warning"
+description: "GAMBIT warning class. "
 
 ---
 
-# Gambit::warning
+# class Gambit::warning
 
 
 
@@ -180,4 +180,4 @@ Constructor with log tags as a set.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

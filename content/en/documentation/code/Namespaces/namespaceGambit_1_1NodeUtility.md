@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::NodeUtility'
+title: "namespace Gambit::NodeUtility"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::NodeUtility
+# namespace Gambit::NodeUtility
 
 [No description available]
 
@@ -168,4 +168,4 @@ Read string and expand environment variables of the type ${MYVAR}. Expansion of 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

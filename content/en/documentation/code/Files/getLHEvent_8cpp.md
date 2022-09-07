@@ -1,11 +1,11 @@
 ---
-title: 'file src/getLHEvent.cpp'
+title: "file src/getLHEvent.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/getLHEvent.cpp
+# file src/getLHEvent.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -127,4 +127,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

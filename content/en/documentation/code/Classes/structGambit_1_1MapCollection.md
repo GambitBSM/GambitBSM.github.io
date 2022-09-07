@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::MapCollection'
-description: 'Struct to hold collections of function pointer maps to be filled by derived classes. '
+title: "struct Gambit::MapCollection"
+description: "Struct to hold collections of function pointer maps to be filled by derived classes. "
 
 ---
 
-# Gambit::MapCollection
+# struct Gambit::MapCollection
 
 
 
@@ -126,4 +126,4 @@ MapTypes::fmap2_extraI map2_extraI;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

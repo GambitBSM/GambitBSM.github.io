@@ -1,11 +1,11 @@
 ---
-title: 'namespace MontePythonLike'
+title: "namespace MontePythonLike"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike
+# namespace MontePythonLike
 
 [No description available] [More...](#detailed-description)
 
@@ -97,4 +97,4 @@ basestring =  str;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

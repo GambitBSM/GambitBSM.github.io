@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::HardShutdownException'
-description: 'Special exception used during emergency early shutdown. '
+title: "class Gambit::HardShutdownException"
+description: "Special exception used during emergency early shutdown. "
 
 ---
 
-# Gambit::HardShutdownException
+# class Gambit::HardShutdownException
 
 
 
@@ -43,4 +43,4 @@ virtual const char * what() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

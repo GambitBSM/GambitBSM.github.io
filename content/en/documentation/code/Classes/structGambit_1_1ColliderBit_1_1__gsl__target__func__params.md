@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::ColliderBit::_gsl_target_func_params'
-description: 'A struct to contain parameters for the GSL optimiser target function. '
+title: "struct Gambit::ColliderBit::_gsl_target_func_params"
+description: "A struct to contain parameters for the GSL optimiser target function. "
 
 ---
 
-# Gambit::ColliderBit::_gsl_target_func_params
+# struct Gambit::ColliderBit::_gsl_target_func_params
 
 
 
@@ -67,4 +67,4 @@ bool combine_nocovar_SRs;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

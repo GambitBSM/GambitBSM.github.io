@@ -1,11 +1,11 @@
 ---
-title: 'file src/stream_overloads.cpp'
+title: "file src/stream_overloads.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/stream_overloads.cpp
+# file src/stream_overloads.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -89,4 +89,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Models::DiracSingletDM_Z2SimpleSpec'
+title: "class Gambit::Models::DiracSingletDM_Z2SimpleSpec"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Models::DiracSingletDM_Z2SimpleSpec
+# class Gambit::Models::DiracSingletDM_Z2SimpleSpec
 
 
 
@@ -460,4 +460,4 @@ inline void set_Ye(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

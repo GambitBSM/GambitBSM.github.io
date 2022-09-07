@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_CMS_8TeV_MONOJET_20invfb'
+title: "class Gambit::ColliderBit::Analysis_CMS_8TeV_MONOJET_20invfb"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_CMS_8TeV_MONOJET_20invfb
+# class Gambit::ColliderBit::Analysis_CMS_8TeV_MONOJET_20invfb
 
 
 
@@ -145,4 +145,4 @@ static constexpr const char * detector = "CMS";
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

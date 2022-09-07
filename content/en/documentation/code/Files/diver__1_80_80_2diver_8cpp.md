@@ -1,11 +1,11 @@
 ---
-title: 'file diver_1.0.0/diver_1.0.0/diver.cpp'
+title: "file diver_1.0.0/diver_1.0.0/diver.cpp"
 
 description: "[No description available]"
 
 ---
 
-# diver_1.0.0/diver_1.0.0/diver.cpp
+# file diver_1.0.0/diver_1.0.0/diver.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -277,4 +277,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

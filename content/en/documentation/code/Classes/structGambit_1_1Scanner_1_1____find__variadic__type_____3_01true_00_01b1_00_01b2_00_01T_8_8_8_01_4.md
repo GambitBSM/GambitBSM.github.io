@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Scanner::__find_variadic_type__< true, b1, b2, T... >'
+title: "struct Gambit::Scanner::__find_variadic_type__< true, b1, b2, T... >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::__find_variadic_type__< true, b1, b2, T... >
+# struct Gambit::Scanner::__find_variadic_type__< true, b1, b2, T... >
 
 
 
@@ -60,4 +60,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

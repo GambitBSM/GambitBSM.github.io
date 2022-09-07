@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::SpecBit::SpectrumEntriesForVevacious'
+title: "class Gambit::SpecBit::SpectrumEntriesForVevacious"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecBit::SpectrumEntriesForVevacious
+# class Gambit::SpecBit::SpectrumEntriesForVevacious
 
 
 
@@ -117,4 +117,4 @@ inline map_str_SpectrumEntry get_spec_entry_map()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

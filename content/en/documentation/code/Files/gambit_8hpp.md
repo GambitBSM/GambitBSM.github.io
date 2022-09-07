@@ -1,11 +1,11 @@
 ---
-title: 'file Core/gambit.hpp'
+title: "file Core/gambit.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Core/gambit.hpp
+# file Core/gambit.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -75,4 +75,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

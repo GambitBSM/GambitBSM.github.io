@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Models::partmap'
+title: "class Gambit::Models::partmap"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Models::partmap
+# class Gambit::Models::partmap
 
 
 
@@ -831,4 +831,4 @@ For debugging: use to check the contents of the particle database.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

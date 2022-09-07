@@ -1,11 +1,11 @@
 ---
-title: 'file src/DirectDetection.cpp'
+title: "file src/DirectDetection.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/DirectDetection.cpp
+# file src/DirectDetection.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -634,4 +634,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

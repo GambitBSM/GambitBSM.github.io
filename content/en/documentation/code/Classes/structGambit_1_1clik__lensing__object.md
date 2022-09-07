@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::clik_lensing_object'
+title: "struct Gambit::clik_lensing_object"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::clik_lensing_object
+# struct Gambit::clik_lensing_object
 
 
 
@@ -84,4 +84,4 @@ double * cl_fid;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

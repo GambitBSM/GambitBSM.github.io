@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb'
+title: "class Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb
+# class Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb
 
 
 
@@ -102,4 +102,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

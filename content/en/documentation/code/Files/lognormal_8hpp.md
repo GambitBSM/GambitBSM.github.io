@@ -1,11 +1,11 @@
 ---
-title: 'file priors/lognormal.hpp'
+title: "file priors/lognormal.hpp"
 
 description: "[No description available]"
 
 ---
 
-# priors/lognormal.hpp
+# file priors/lognormal.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -195,4 +195,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

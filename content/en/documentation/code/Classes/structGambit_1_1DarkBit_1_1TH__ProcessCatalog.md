@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DarkBit::TH_ProcessCatalog'
-description: 'A container holding all annihilation and decay initial states relevant for DarkBit. '
+title: "struct Gambit::DarkBit::TH_ProcessCatalog"
+description: "A container holding all annihilation and decay initial states relevant for DarkBit. "
 
 ---
 
-# Gambit::DarkBit::TH_ProcessCatalog
+# struct Gambit::DarkBit::TH_ProcessCatalog
 
 
 
@@ -102,4 +102,4 @@ Map from particles involved in the processes of this catalog, to their propertie
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

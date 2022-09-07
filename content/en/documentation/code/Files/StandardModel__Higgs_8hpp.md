@@ -1,11 +1,11 @@
 ---
-title: 'file models/StandardModel_Higgs.hpp'
+title: "file models/StandardModel_Higgs.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/StandardModel_Higgs.hpp
+# file models/StandardModel_Higgs.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -108,4 +108,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

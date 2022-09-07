@@ -1,11 +1,11 @@
 ---
-title: 'file shared_includes/MicrOmegas_SingletDM_3_6_9_2.hpp'
+title: "file shared_includes/MicrOmegas_SingletDM_3_6_9_2.hpp"
 
 description: "[No description available]"
 
 ---
 
-# shared_includes/MicrOmegas_SingletDM_3_6_9_2.hpp
+# file shared_includes/MicrOmegas_SingletDM_3_6_9_2.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -93,4 +93,4 @@ BE_INI_DEPENDENCY(decay_rates, DecayTable)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

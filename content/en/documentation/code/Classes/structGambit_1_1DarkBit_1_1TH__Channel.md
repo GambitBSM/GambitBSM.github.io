@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::TH_Channel'
+title: "struct Gambit::DarkBit::TH_Channel"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::TH_Channel
+# struct Gambit::DarkBit::TH_Channel
 
 
 
@@ -123,4 +123,4 @@ Energy dependence of final state particles. Includes v_rel ("v") as last argumen
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

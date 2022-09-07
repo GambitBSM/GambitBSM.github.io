@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::sd_stoploop_type'
+title: "struct Gambit::sd_stoploop_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::sd_stoploop_type
+# struct Gambit::sd_stoploop_type
 
 
 
@@ -44,4 +44,4 @@ Fdouble brgammagluino;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

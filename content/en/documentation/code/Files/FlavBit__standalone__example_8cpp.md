@@ -1,11 +1,11 @@
 ---
-title: 'file examples/FlavBit_standalone_example.cpp'
+title: "file examples/FlavBit_standalone_example.cpp"
 
 description: "[No description available]"
 
 ---
 
-# examples/FlavBit_standalone_example.cpp
+# file examples/FlavBit_standalone_example.cpp
 
 [No description available]
 
@@ -466,4 +466,4 @@ int main(int argc, char** argv)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

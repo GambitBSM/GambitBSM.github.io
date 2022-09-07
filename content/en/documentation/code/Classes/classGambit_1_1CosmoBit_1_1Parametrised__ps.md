@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::CosmoBit::Parametrised_ps'
+title: "class Gambit::CosmoBit::Parametrised_ps"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::CosmoBit::Parametrised_ps
+# class Gambit::CosmoBit::Parametrised_ps
 
 
 
@@ -133,4 +133,4 @@ return members as str to double map for printing
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

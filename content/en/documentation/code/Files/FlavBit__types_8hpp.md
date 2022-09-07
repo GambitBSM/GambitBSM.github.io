@@ -1,11 +1,11 @@
 ---
-title: 'file FlavBit/FlavBit_types.hpp'
+title: "file FlavBit/FlavBit_types.hpp"
 
 description: "[No description available]"
 
 ---
 
-# FlavBit/FlavBit_types.hpp
+# file FlavBit/FlavBit_types.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -163,4 +163,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

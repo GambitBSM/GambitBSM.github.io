@@ -1,11 +1,11 @@
 ---
-title: 'file examples/ScannerBit_standalone.cpp'
+title: "file examples/ScannerBit_standalone.cpp"
 
 description: "[No description available]"
 
 ---
 
-# examples/ScannerBit_standalone.cpp
+# file examples/ScannerBit_standalone.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -532,4 +532,4 @@ int main(int argc, char **argv)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::module_functor< void >'
-description: 'Actual module functor type for TYPE=void. '
+title: "class Gambit::module_functor< void >"
+description: "Actual module functor type for TYPE=void. "
 
 ---
 
-# Gambit::module_functor< void >
+# class Gambit::module_functor< void >
 
 
 
@@ -376,4 +376,4 @@ Internal storage of function pointer.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

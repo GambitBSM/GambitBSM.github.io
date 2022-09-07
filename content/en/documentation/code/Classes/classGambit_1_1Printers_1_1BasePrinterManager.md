@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::BasePrinterManager'
-description: 'Manager class for creating printer objects '
+title: "class Gambit::Printers::BasePrinterManager"
+description: "Manager class for creating printer objects "
 
 ---
 
-# Gambit::Printers::BasePrinterManager
+# class Gambit::Printers::BasePrinterManager
 
 
 
@@ -189,4 +189,4 @@ Instruct printers that scan has finished and to perform cleanup.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

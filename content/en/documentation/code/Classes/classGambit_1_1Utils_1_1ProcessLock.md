@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Utils::ProcessLock'
-description: 'Class to manage a process lock, using a file. '
+title: "class Gambit::Utils::ProcessLock"
+description: "Class to manage a process lock, using a file. "
 
 ---
 
-# Gambit::Utils::ProcessLock
+# class Gambit::Utils::ProcessLock
 
 
 
@@ -49,4 +49,4 @@ Constructor.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

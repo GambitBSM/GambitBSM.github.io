@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_HMFRAMEVELCOM'
+title: "struct Gambit::DS_HMFRAMEVELCOM"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_HMFRAMEVELCOM
+# struct Gambit::DS_HMFRAMEVELCOM
 
 
 
@@ -76,4 +76,4 @@ Fdouble v_obs;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Models::ScalarSingletDM_Z3SimpleSpec'
+title: "class Gambit::Models::ScalarSingletDM_Z3SimpleSpec"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Models::ScalarSingletDM_Z3SimpleSpec
+# class Gambit::Models::ScalarSingletDM_Z3SimpleSpec
 
 
 
@@ -478,4 +478,4 @@ inline void set_Ye(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

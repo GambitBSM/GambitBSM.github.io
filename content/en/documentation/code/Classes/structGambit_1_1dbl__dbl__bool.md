@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::dbl_dbl_bool'
+title: "struct Gambit::dbl_dbl_bool"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::dbl_dbl_bool
+# struct Gambit::dbl_dbl_bool
 
 
 
@@ -95,4 +95,4 @@ bool flag;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file Core/yaml_description_database.hpp'
+title: "file Core/yaml_description_database.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Core/yaml_description_database.hpp
+# file Core/yaml_description_database.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -209,4 +209,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

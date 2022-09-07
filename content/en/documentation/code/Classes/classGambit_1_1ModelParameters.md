@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ModelParameters'
+title: "class Gambit::ModelParameters"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ModelParameters
+# class Gambit::ModelParameters
 
 
 
@@ -301,4 +301,4 @@ Dump parameter names and values to stream (again for debugging only I think)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

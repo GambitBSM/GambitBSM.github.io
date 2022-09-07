@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::MajoranaSingletDM'
+title: "class Gambit::DarkBit::MajoranaSingletDM"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::MajoranaSingletDM
+# class Gambit::DarkBit::MajoranaSingletDM
 
 
 
@@ -126,4 +126,4 @@ Annihilation into hh.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

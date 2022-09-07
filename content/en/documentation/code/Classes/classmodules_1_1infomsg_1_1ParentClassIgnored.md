@@ -1,11 +1,11 @@
 ---
-title: 'class modules::infomsg::ParentClassIgnored'
+title: "class modules::infomsg::ParentClassIgnored"
 
 description: "[No description available]"
 
 ---
 
-# modules::infomsg::ParentClassIgnored
+# class modules::infomsg::ParentClassIgnored
 
 
 
@@ -86,4 +86,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

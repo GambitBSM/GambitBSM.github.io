@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::enable_if_all_member'
+title: "struct Gambit::enable_if_all_member"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::enable_if_all_member
+# struct Gambit::enable_if_all_member
 
 
 
@@ -37,4 +37,4 @@ typedef std::enable_if<is_all_member<T, args...>::value, ret> Gambit::enable_if_
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

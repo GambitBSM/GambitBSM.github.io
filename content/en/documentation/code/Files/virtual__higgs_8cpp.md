@@ -1,11 +1,11 @@
 ---
-title: 'file src/virtual_higgs.cpp'
+title: "file src/virtual_higgs.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/virtual_higgs.cpp
+# file src/virtual_higgs.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -182,4 +182,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

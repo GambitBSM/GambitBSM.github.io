@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::backend_functor< void(*)(ARGS...), void, ARGS... >'
-description: 'Template specialisation for non-variadic, void backend functions. '
+title: "class Gambit::backend_functor< void(*)(ARGS...), void, ARGS... >"
+description: "Template specialisation for non-variadic, void backend functions. "
 
 ---
 
-# Gambit::backend_functor< void(*)(ARGS...), void, ARGS... >
+# class Gambit::backend_functor< void(*)(ARGS...), void, ARGS... >
 
 
 
@@ -229,4 +229,4 @@ Operation (execute function and return value)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

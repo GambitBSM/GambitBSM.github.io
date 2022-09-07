@@ -1,11 +1,11 @@
 ---
-title: 'namespace modules::gb'
+title: "namespace modules::gb"
 
 description: "[No description available]"
 
 ---
 
-# modules::gb
+# namespace modules::gb
 
 [No description available]
 
@@ -622,4 +622,4 @@ dictionary default_implicit_types =  {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

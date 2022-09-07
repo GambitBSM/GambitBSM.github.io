@@ -1,11 +1,11 @@
 ---
-title: 'file models/SUSY_extras.hpp'
+title: "file models/SUSY_extras.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/SUSY_extras.hpp
+# file models/SUSY_extras.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -512,4 +512,4 @@ Read single SLHA file and replace some entries for use with model ColliderBit_SL
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

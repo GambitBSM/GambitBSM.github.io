@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::dep_bucket'
-description: 'An interface class for module dependencies. '
+title: "class Gambit::dep_bucket"
+description: "An interface class for module dependencies. "
 
 ---
 
-# Gambit::dep_bucket
+# class Gambit::dep_bucket
 
 
 
@@ -164,4 +164,4 @@ module_functor_common * _dependent_functor_ptr;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

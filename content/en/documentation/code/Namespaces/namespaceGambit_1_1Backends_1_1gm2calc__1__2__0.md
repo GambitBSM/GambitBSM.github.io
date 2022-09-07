@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Backends::gm2calc_1_2_0'
+title: "namespace Gambit::Backends::gm2calc_1_2_0"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends::gm2calc_1_2_0
+# namespace Gambit::Backends::gm2calc_1_2_0
 
 [No description available]
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

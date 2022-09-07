@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DRes::QueueEntry'
-description: 'Information in parameter queue. '
+title: "struct Gambit::DRes::QueueEntry"
+description: "Information in parameter queue. "
 
 ---
 
-# Gambit::DRes::QueueEntry
+# struct Gambit::DRes::QueueEntry
 
 
 
@@ -82,4 +82,4 @@ bool printme;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

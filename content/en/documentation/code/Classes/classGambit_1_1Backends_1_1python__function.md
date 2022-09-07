@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Backends::python_function'
-description: 'Holds the info about a python backend function, and defines conversion functions. '
+title: "class Gambit::Backends::python_function"
+description: "Holds the info about a python backend function, and defines conversion functions. "
 
 ---
 
-# Gambit::Backends::python_function
+# class Gambit::Backends::python_function
 
 
 
@@ -55,4 +55,4 @@ Operation (execute function and return value)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

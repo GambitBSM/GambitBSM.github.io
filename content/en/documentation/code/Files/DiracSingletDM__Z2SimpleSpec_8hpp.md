@@ -1,11 +1,11 @@
 ---
-title: 'file SimpleSpectra/DiracSingletDM_Z2SimpleSpec.hpp'
+title: "file SimpleSpectra/DiracSingletDM_Z2SimpleSpec.hpp"
 
 description: "[No description available]"
 
 ---
 
-# SimpleSpectra/DiracSingletDM_Z2SimpleSpec.hpp
+# file SimpleSpectra/DiracSingletDM_Z2SimpleSpec.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -257,4 +257,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

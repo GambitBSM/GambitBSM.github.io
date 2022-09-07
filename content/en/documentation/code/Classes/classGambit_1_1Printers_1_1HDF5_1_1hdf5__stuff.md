@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Printers::HDF5::hdf5_stuff'
+title: "class Gambit::Printers::HDF5::hdf5_stuff"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::HDF5::hdf5_stuff
+# class Gambit::Printers::HDF5::hdf5_stuff
 
 
 
@@ -58,4 +58,4 @@ Now copy the RA datasets
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

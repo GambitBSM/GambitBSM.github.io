@@ -1,11 +1,11 @@
 ---
-title: 'file modules/classutils.py'
+title: "file modules/classutils.py"
 
 description: "[No description available]"
 
 ---
 
-# modules/classutils.py
+# file modules/classutils.py
 
 [No description available]
 
@@ -2134,4 +2134,4 @@ def isAcceptedMemberVariable(mem_el):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file ColliderBit/lester_mt2_bisect.h'
+title: "file ColliderBit/lester_mt2_bisect.h"
 
 description: "[No description available]"
 
 ---
 
-# ColliderBit/lester_mt2_bisect.h
+# file ColliderBit/lester_mt2_bisect.h
 
 [No description available]
 
@@ -722,4 +722,4 @@ std::pair <double,double>  ben_findsols(double MT2, double px, double py, double
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

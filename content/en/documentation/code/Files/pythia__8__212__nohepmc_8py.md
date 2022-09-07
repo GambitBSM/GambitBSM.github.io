@@ -1,11 +1,11 @@
 ---
-title: 'file configs/pythia_8_212_nohepmc.py'
+title: "file configs/pythia_8_212_nohepmc.py"
 
 description: "[No description available]"
 
 ---
 
-# configs/pythia_8_212_nohepmc.py
+# file configs/pythia_8_212_nohepmc.py
 
 [No description available]
 
@@ -162,4 +162,4 @@ pragmas_end = []
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

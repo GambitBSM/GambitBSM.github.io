@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::BaseDetector'
-description: 'An abstract base class for detector simulators within ColliderBit. '
+title: "class Gambit::ColliderBit::BaseDetector"
+description: "An abstract base class for detector simulators within ColliderBit. "
 
 ---
 
-# Gambit::ColliderBit::BaseDetector
+# class Gambit::ColliderBit::BaseDetector
 
 
 
@@ -90,4 +90,4 @@ Perform the actual simulation on the next collider event.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

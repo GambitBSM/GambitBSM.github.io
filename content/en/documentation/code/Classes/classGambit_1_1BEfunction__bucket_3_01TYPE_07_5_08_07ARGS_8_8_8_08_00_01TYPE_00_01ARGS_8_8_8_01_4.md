@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::BEfunction_bucket< TYPE(*)(ARGS...), TYPE, ARGS... >'
-description: 'Partial specialisation for non-variadic backend functions. '
+title: "class Gambit::BEfunction_bucket< TYPE(*)(ARGS...), TYPE, ARGS... >"
+description: "Partial specialisation for non-variadic backend functions. "
 
 ---
 
-# Gambit::BEfunction_bucket< TYPE(*)(ARGS...), TYPE, ARGS... >
+# class Gambit::BEfunction_bucket< TYPE(*)(ARGS...), TYPE, ARGS... >
 
 
 
@@ -106,4 +106,4 @@ Call backend function.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

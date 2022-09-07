@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb'
-description: '[ATLAS]() ZH(->photon+gravitino) (79.8 fb^-1) '
+title: "class Gambit::ColliderBit::Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb"
+description: "[ATLAS]() ZH(->photon+gravitino) (79.8 fb^-1) "
 
 ---
 
-# Gambit::ColliderBit::Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb
+# class Gambit::ColliderBit::Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb
 
 
 
@@ -140,4 +140,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

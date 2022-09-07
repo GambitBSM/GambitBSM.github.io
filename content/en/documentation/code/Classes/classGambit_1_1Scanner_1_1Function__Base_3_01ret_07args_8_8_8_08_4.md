@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Function_Base< ret(args...)>'
-description: 'Base function for the object that is upputed by "set_purpose". '
+title: "class Gambit::Scanner::Function_Base< ret(args...)>"
+description: "Base function for the object that is upputed by set_purpose. "
 
 ---
 
-# Gambit::Scanner::Function_Base< ret(args...)>
+# class Gambit::Scanner::Function_Base< ret(args...)>
 
 
 
@@ -299,4 +299,4 @@ friend class scan_ptr< ret(args...)>(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

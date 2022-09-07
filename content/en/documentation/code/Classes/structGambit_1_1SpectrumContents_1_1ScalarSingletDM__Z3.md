@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpectrumContents::ScalarSingletDM_Z3'
+title: "struct Gambit::SpectrumContents::ScalarSingletDM_Z3"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpectrumContents::ScalarSingletDM_Z3
+# struct Gambit::SpectrumContents::ScalarSingletDM_Z3
 
 
 
@@ -51,4 +51,4 @@ ScalarSingletDM_Z3()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

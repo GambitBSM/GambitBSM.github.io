@@ -1,11 +1,11 @@
 ---
-title: 'class daFunk::FunkBound'
+title: "class daFunk::FunkBound"
 
 description: "[No description available]"
 
 ---
 
-# daFunk::FunkBound
+# class daFunk::FunkBound
 
 
 
@@ -90,4 +90,4 @@ friend shared_ptr< FunkBound > FunkBase::bind(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

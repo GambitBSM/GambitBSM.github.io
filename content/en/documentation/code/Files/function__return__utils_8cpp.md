@@ -1,11 +1,11 @@
 ---
-title: 'file common_source_files/function_return_utils.cpp'
+title: "file common_source_files/function_return_utils.cpp"
 
 description: "[No description available]"
 
 ---
 
-# common_source_files/function_return_utils.cpp
+# file common_source_files/function_return_utils.cpp
 
 [No description available]
 
@@ -116,4 +116,4 @@ U& reference_returner(const V* ptr)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

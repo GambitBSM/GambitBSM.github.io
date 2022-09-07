@@ -1,11 +1,11 @@
 ---
-title: 'class my_Nelder_Mead'
+title: "class my_Nelder_Mead"
 
 description: "[No description available]"
 
 ---
 
-# my_Nelder_Mead
+# class my_Nelder_Mead
 
 
 
@@ -103,4 +103,4 @@ double[DMAX *(DMAX+1)] xfinal;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

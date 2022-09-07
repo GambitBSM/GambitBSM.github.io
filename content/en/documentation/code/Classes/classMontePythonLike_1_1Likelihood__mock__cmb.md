@@ -1,11 +1,11 @@
 ---
-title: 'class MontePythonLike::Likelihood_mock_cmb'
+title: "class MontePythonLike::Likelihood_mock_cmb"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike::Likelihood_mock_cmb
+# class MontePythonLike::Likelihood_mock_cmb
 
 
 
@@ -403,4 +403,4 @@ fid_values_exist;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

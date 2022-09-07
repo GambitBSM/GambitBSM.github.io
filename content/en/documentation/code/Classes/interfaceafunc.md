@@ -1,11 +1,11 @@
 ---
-title: 'interface afunc'
+title: "interface afunc"
 
 description: "[No description available]"
 
 ---
 
-# afunc
+# interface afunc
 
 
 
@@ -30,4 +30,4 @@ double precision function func(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

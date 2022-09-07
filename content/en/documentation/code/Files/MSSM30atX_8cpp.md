@@ -1,11 +1,11 @@
 ---
-title: 'file models/MSSM30atX.cpp'
+title: "file models/MSSM30atX.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/MSSM30atX.cpp
+# file models/MSSM30atX.cpp
 
 [No description available]
 
@@ -462,4 +462,4 @@ void MODEL_NAMESPACE::MSSM30atMSUSY_to_MSSM30atQ (const ModelParameters &myP, Mo
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

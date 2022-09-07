@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/CaptnGeneral_2_1.hpp'
+title: "file frontends/CaptnGeneral_2_1.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/CaptnGeneral_2_1.hpp
+# file frontends/CaptnGeneral_2_1.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -129,4 +129,4 @@ BE_INI_DEPENDENCY(RD_fraction,double)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

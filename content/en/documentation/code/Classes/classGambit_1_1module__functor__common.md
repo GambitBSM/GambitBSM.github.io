@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::module_functor_common'
-description: 'Functor derived class for module functions. '
+title: "class Gambit::module_functor_common"
+description: "Functor derived class for module functions. "
 
 ---
 
-# Gambit::module_functor_common
+# class Gambit::module_functor_common
 
 
 
@@ -1450,4 +1450,4 @@ friend void FunctorHelp::leaving_multithreaded_region(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::particle2'
+title: "struct Gambit::particle2"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::particle2
+# struct Gambit::particle2
 
 
 
@@ -76,4 +76,4 @@ Farray< Freal8, 1, 200 > bi2;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

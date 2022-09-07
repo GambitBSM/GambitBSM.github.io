@@ -1,11 +1,11 @@
 ---
-title: 'file models/MSSM25atX.cpp'
+title: "file models/MSSM25atX.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/MSSM25atX.cpp
+# file models/MSSM25atX.cpp
 
 [No description available]
 
@@ -203,4 +203,4 @@ DEFINE_IAPFUNC(MSSM30atMSUSY_mA)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

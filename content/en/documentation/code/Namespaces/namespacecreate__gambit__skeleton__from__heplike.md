@@ -1,11 +1,11 @@
 ---
-title: 'namespace create_gambit_skeleton_from_heplike'
+title: "namespace create_gambit_skeleton_from_heplike"
 
 description: "[No description available]"
 
 ---
 
-# create_gambit_skeleton_from_heplike
+# namespace create_gambit_skeleton_from_heplike
 
 [No description available]
 
@@ -54,4 +54,4 @@ def create_rollcall_entry(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

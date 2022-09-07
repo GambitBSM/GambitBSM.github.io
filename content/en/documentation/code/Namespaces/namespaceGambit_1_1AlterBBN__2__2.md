@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::AlterBBN_2_2'
+title: "namespace Gambit::AlterBBN_2_2"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::AlterBBN_2_2
+# namespace Gambit::AlterBBN_2_2
 
 [No description available]
 
@@ -23,4 +23,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

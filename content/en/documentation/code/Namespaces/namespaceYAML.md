@@ -1,10 +1,10 @@
 ---
-title: 'namespace YAML'
-description: '[YAML]() overloads for mass cut and mass cut ratio constituents. '
+title: "namespace YAML"
+description: "[YAML]() overloads for mass cut and mass cut ratio constituents. "
 
 ---
 
-# YAML
+# namespace YAML
 
 [YAML]() overloads for mass cut and mass cut ratio constituents. 
 
@@ -47,4 +47,4 @@ typedef std::pair<std::pair<std::string,std::string>, std::pair<double, double> 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

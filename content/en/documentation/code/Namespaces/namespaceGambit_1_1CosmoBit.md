@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::CosmoBit'
+title: "namespace Gambit::CosmoBit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::CosmoBit
+# namespace Gambit::CosmoBit
 
 [No description available]
 
@@ -987,4 +987,4 @@ Lensing likelihood (PR2 - 2015)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

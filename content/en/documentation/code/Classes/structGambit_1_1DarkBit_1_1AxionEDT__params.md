@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::AxionEDT_params'
+title: "struct Gambit::DarkBit::AxionEDT_params"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::AxionEDT_params
+# struct Gambit::DarkBit::AxionEDT_params
 
 
 
@@ -60,4 +60,4 @@ double Tosc;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

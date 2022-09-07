@@ -1,11 +1,11 @@
 ---
-title: 'file Backends/Backends/include/gambit/Backends/ini_functions.hpp'
+title: "file Backends/Backends/include/gambit/Backends/ini_functions.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Backends/Backends/include/gambit/Backends/ini_functions.hpp
+# file Backends/Backends/include/gambit/Backends/ini_functions.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -222,4 +222,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

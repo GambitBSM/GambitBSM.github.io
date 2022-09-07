@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Printers::VBIDpair'
+title: "struct Gambit::Printers::VBIDpair"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::VBIDpair
+# struct Gambit::Printers::VBIDpair
 
 
 
@@ -74,4 +74,4 @@ int index;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

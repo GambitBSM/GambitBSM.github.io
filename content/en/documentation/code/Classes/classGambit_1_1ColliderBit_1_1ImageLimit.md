@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::ImageLimit'
+title: "class Gambit::ColliderBit::ImageLimit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::ImageLimit
+# class Gambit::ColliderBit::ImageLimit
 
 
 
@@ -45,4 +45,4 @@ double get_limit(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

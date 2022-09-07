@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_MSSMMIXING'
+title: "struct Gambit::DS_MSSMMIXING"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_MSSMMIXING
+# struct Gambit::DS_MSSMMIXING
 
 
 
@@ -132,4 +132,4 @@ Fdouble mix_stau;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file src/standalone_error_handlers.cpp'
+title: "file src/standalone_error_handlers.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/standalone_error_handlers.cpp
+# file src/standalone_error_handlers.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -175,4 +175,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

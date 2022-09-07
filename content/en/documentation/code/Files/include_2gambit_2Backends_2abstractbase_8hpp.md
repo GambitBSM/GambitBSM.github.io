@@ -1,11 +1,11 @@
 ---
-title: 'file Backends/include/gambit/Backends/abstractbase.hpp'
+title: "file Backends/include/gambit/Backends/abstractbase.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Backends/include/gambit/Backends/abstractbase.hpp
+# file Backends/include/gambit/Backends/abstractbase.hpp
 
 [No description available]
 
@@ -40,4 +40,4 @@ class AbstractBase
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

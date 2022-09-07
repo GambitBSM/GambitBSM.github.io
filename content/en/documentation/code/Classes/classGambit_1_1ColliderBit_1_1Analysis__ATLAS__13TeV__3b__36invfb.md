@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_36invfb'
+title: "class Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_36invfb"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_36invfb
+# class Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_36invfb
 
 
 
@@ -203,4 +203,4 @@ std::map< string, EventCounter > _counters = {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DarkBit::nuyield_info'
-description: 'Neutrino telescope yield info container. '
+title: "struct Gambit::DarkBit::nuyield_info"
+description: "Neutrino telescope yield info container. "
 
 ---
 
-# Gambit::DarkBit::nuyield_info
+# struct Gambit::DarkBit::nuyield_info
 
 
 
@@ -38,4 +38,4 @@ nuyield_function_pointer pointer;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

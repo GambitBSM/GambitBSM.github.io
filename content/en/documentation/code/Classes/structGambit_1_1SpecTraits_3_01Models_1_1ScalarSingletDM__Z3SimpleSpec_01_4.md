@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::SpecTraits< Models::ScalarSingletDM_Z3SimpleSpec >'
-description: 'Specialisation of traits class needed to inform base spectrum class of the Model and Input types. '
+title: "struct Gambit::SpecTraits< Models::ScalarSingletDM_Z3SimpleSpec >"
+description: "Specialisation of traits class needed to inform base spectrum class of the Model and Input types. "
 
 ---
 
-# Gambit::SpecTraits< Models::ScalarSingletDM_Z3SimpleSpec >
+# struct Gambit::SpecTraits< Models::ScalarSingletDM_Z3SimpleSpec >
 
 
 
@@ -57,4 +57,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

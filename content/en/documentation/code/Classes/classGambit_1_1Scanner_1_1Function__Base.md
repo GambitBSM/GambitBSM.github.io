@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Function_Base'
-description: 'Generic function base used by the scanner. Can be Likelihood, observables, etc. '
+title: "class Gambit::Scanner::Function_Base"
+description: "Generic function base used by the scanner. Can be Likelihood, observables, etc. "
 
 ---
 
-# Gambit::Scanner::Function_Base
+# class Gambit::Scanner::Function_Base
 
 
 
@@ -20,4 +20,4 @@ class Gambit::Scanner::Function_Base;
 Generic function base used by the scanner. Can be Likelihood, observables, etc. 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

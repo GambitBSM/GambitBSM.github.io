@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_gg'
+title: "struct Gambit::DS_gg"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_gg
+# struct Gambit::DS_gg
 
 
 
@@ -28,4 +28,4 @@ Farray< Fdouble_complex, 1, 27, 1, 2 > gg;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

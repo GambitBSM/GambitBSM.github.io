@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::Wstruct'
+title: "struct Gambit::DarkBit::Wstruct"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::Wstruct
+# struct Gambit::DarkBit::Wstruct
 
 
 
@@ -36,4 +36,4 @@ double valB;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

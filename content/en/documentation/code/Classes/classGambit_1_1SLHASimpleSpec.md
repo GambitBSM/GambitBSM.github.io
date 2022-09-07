@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::SLHASimpleSpec'
+title: "class Gambit::SLHASimpleSpec"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SLHASimpleSpec
+# class Gambit::SLHASimpleSpec
 
 
 
@@ -323,4 +323,4 @@ Input dummyinput;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

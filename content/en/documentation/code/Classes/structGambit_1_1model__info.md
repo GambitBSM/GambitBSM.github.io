@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::model_info'
-description: 'Helper struct to carry around model information. '
+title: "struct Gambit::model_info"
+description: "Helper struct to carry around model information. "
 
 ---
 
-# Gambit::model_info
+# struct Gambit::model_info
 
 
 
@@ -94,4 +94,4 @@ Flag to check if description is missing.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

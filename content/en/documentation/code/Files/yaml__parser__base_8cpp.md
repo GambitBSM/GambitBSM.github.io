@@ -1,11 +1,11 @@
 ---
-title: 'file src/yaml_parser_base.cpp'
+title: "file src/yaml_parser_base.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/yaml_parser_base.cpp
+# file src/yaml_parser_base.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -403,4 +403,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SpectrumParameter'
-description: 'Simple class to contain information defining how some parameter in a [SubSpectrum]() object can be accessed. '
+title: "class Gambit::SpectrumParameter"
+description: "Simple class to contain information defining how some parameter in a [SubSpectrum]() object can be accessed. "
 
 ---
 
-# Gambit::SpectrumParameter
+# class Gambit::SpectrumParameter
 
 
 
@@ -76,4 +76,4 @@ inline int blockindex() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

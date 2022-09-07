@@ -1,11 +1,11 @@
 ---
-title: 'namespace libthird_1_1::main'
+title: "namespace libthird_1_1::main"
 
 description: "[No description available]"
 
 ---
 
-# libthird_1_1::main
+# namespace libthird_1_1::main
 
 [No description available]
 
@@ -104,4 +104,4 @@ string prefix =  "libthird 1.1: ";
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

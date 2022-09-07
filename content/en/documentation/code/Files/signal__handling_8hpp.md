@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/signal_handling.hpp'
+title: "file Utils/signal_handling.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/signal_handling.hpp
+# file Utils/signal_handling.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -312,4 +312,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

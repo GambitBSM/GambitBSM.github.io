@@ -1,11 +1,11 @@
 ---
-title: 'file modules/CBGB/modules/gb.py'
+title: "file modules/CBGB/modules/gb.py"
 
 description: "[No description available]"
 
 ---
 
-# modules/CBGB/modules/gb.py
+# file modules/CBGB/modules/gb.py
 
 [No description available]
 
@@ -112,4 +112,4 @@ default_implicit_types = {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/FeynHiggs_2_11_2.hpp'
+title: "file frontends/FeynHiggs_2_11_2.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/FeynHiggs_2_11_2.hpp
+# file frontends/FeynHiggs_2_11_2.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -320,4 +320,4 @@ BE_INI_DEPENDENCY(unimproved_MSSM_spectrum, Spectrum)   // Need MSSM spectrum in
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file common_headers/scripts/BOSS/common_headers/abstractbase.hpp'
+title: "file common_headers/scripts/BOSS/common_headers/abstractbase.hpp"
 
 description: "[No description available]"
 
 ---
 
-# common_headers/scripts/BOSS/common_headers/abstractbase.hpp
+# file common_headers/scripts/BOSS/common_headers/abstractbase.hpp
 
 [No description available]
 
@@ -40,4 +40,4 @@ __END_GAMBIT_NAMESPACE__
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

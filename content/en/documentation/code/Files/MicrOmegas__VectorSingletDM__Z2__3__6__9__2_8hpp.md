@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/MicrOmegas_VectorSingletDM_Z2_3_6_9_2.hpp'
+title: "file frontends/MicrOmegas_VectorSingletDM_Z2_3_6_9_2.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/MicrOmegas_VectorSingletDM_Z2_3_6_9_2.hpp
+# file frontends/MicrOmegas_VectorSingletDM_Z2_3_6_9_2.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -128,4 +128,4 @@ BE_INI_DEPENDENCY(VectorSingletDM_Z2_spectrum, Spectrum)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

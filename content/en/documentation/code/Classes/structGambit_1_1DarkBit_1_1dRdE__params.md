@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::dRdE_params'
+title: "struct Gambit::DarkBit::dRdE_params"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::dRdE_params
+# struct Gambit::DarkBit::dRdE_params
 
 
 
@@ -36,4 +36,4 @@ double sigma;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

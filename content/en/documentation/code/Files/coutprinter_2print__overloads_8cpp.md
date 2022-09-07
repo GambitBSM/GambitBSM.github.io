@@ -1,11 +1,11 @@
 ---
-title: 'file coutprinter/coutprinter/print_overloads.cpp'
+title: "file coutprinter/coutprinter/print_overloads.cpp"
 
 description: "[No description available]"
 
 ---
 
-# coutprinter/coutprinter/print_overloads.cpp
+# file coutprinter/coutprinter/print_overloads.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -139,4 +139,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

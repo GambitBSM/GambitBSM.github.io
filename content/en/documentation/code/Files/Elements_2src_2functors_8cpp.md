@@ -1,11 +1,11 @@
 ---
-title: 'file src/Elements/src/functors.cpp'
+title: "file src/Elements/src/functors.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/Elements/src/functors.cpp
+# file src/Elements/src/functors.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1924,4 +1924,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

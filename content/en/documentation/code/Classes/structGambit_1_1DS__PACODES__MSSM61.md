@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_PACODES_MSSM61'
+title: "struct Gambit::DS_PACODES_MSSM61"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_PACODES_MSSM61
+# struct Gambit::DS_PACODES_MSSM61
 
 
 
@@ -172,4 +172,4 @@ Farray< Finteger, 1, 6 > ksqd;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::sd_gluiloop_type'
+title: "struct Gambit::sd_gluiloop_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::sd_gluiloop_type
+# struct Gambit::sd_gluiloop_type
 
 
 
@@ -28,4 +28,4 @@ Farray< Fdouble, 1, 4 > brglnjgluon;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit::FunctorHelp'
-description: 'Definitions of friend functions from above. '
+title: "namespace Gambit::FunctorHelp"
+description: "Definitions of friend functions from above. "
 
 ---
 
-# Gambit::FunctorHelp
+# namespace Gambit::FunctorHelp
 
 Definitions of friend functions from above.  [More...](#detailed-description)
 
@@ -48,4 +48,4 @@ void leaving_multithreaded_region(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

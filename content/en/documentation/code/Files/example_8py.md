@@ -1,11 +1,11 @@
 ---
-title: 'file configs/example.py'
+title: "file configs/example.py"
 
 description: "[No description available]"
 
 ---
 
-# configs/example.py
+# file configs/example.py
 
 [No description available]
 
@@ -66,4 +66,4 @@ cb_capability_suffix = ''
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

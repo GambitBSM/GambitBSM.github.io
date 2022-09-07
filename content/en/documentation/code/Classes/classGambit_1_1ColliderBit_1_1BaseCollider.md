@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::BaseCollider'
-description: 'An abstract base class for collider simulators within ColliderBit. '
+title: "class Gambit::ColliderBit::BaseCollider"
+description: "An abstract base class for collider simulators within ColliderBit. "
 
 ---
 
-# Gambit::ColliderBit::BaseCollider
+# class Gambit::ColliderBit::BaseCollider
 
 
 
@@ -225,4 +225,4 @@ The jet radius used for the anti-kt jet clustering.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

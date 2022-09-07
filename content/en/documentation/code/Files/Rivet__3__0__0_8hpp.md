@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/Rivet_3_0_0.hpp'
+title: "file frontends/Rivet_3_0_0.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/Rivet_3_0_0.hpp
+# file frontends/Rivet_3_0_0.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -105,4 +105,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

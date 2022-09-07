@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DummyModel'
+title: "class Gambit::DummyModel"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DummyModel
+# class Gambit::DummyModel
 
 
 
@@ -25,4 +25,4 @@ Dummy classes to satisfy template parameters for [Spec](/documentation/code/clas
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

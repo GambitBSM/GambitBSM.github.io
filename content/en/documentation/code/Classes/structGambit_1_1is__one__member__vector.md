@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::is_one_member_vector'
+title: "struct Gambit::is_one_member_vector"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::is_one_member_vector
+# struct Gambit::is_one_member_vector
 
 
 
@@ -35,4 +35,4 @@ static const bool value = is_one_member_vector_internal<void (args...)>::value;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

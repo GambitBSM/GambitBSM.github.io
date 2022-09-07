@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::DecayChain::DecayTableEntry'
+title: "class Gambit::DarkBit::DecayChain::DecayTableEntry"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::DecayChain::DecayTableEntry
+# class Gambit::DarkBit::DecayChain::DecayTableEntry
 
 
 
@@ -221,4 +221,4 @@ friend class DecayTable(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

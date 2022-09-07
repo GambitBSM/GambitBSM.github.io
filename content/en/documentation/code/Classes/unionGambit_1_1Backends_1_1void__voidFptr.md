@@ -1,11 +1,11 @@
 ---
-title: 'union Gambit::Backends::void_voidFptr'
+title: "union Gambit::Backends::void_voidFptr"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends::void_voidFptr
+# union Gambit::Backends::void_voidFptr
 
 
 
@@ -48,4 +48,4 @@ voidFptr fptr;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

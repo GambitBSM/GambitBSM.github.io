@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Scanner::Plugins::Plugin_Main_Interface_Base< ret(args...)>'
+title: "class Gambit::Scanner::Plugins::Plugin_Main_Interface_Base< ret(args...)>"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Plugins::Plugin_Main_Interface_Base< ret(args...)>
+# class Gambit::Scanner::Plugins::Plugin_Main_Interface_Base< ret(args...)>
 
 
 
@@ -59,4 +59,4 @@ inline ret operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

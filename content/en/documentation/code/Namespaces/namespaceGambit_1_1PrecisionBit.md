@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::PrecisionBit'
+title: "namespace Gambit::PrecisionBit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::PrecisionBit
+# namespace Gambit::PrecisionBit
 
 [No description available]
 
@@ -646,4 +646,4 @@ Option profile_systematics<bool>: Use likelihood version that has been profiled 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::AxionInterpolator2D'
+title: "class Gambit::DarkBit::AxionInterpolator2D"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::AxionInterpolator2D
+# class Gambit::DarkBit::AxionInterpolator2D
 
 
 
@@ -99,4 +99,4 @@ bool is_inside_box(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file src/likelihood_container.cpp'
+title: "file src/likelihood_container.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/likelihood_container.cpp
+# file src/likelihood_container.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -445,4 +445,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

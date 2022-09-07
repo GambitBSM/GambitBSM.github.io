@@ -1,11 +1,11 @@
 ---
-title: 'file src/logmaster.cpp'
+title: "file src/logmaster.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/logmaster.cpp
+# file src/logmaster.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -753,4 +753,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

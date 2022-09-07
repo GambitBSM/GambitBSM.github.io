@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Logging::SortedMessage'
-description: 'structure for storing log messages and metadata after tags are sorted '
+title: "struct Gambit::Logging::SortedMessage"
+description: "structure for storing log messages and metadata after tags are sorted "
 
 ---
 
-# Gambit::Logging::SortedMessage
+# struct Gambit::Logging::SortedMessage
 
 
 
@@ -88,4 +88,4 @@ std::set< LogTag > echo_tags;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

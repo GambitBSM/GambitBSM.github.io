@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb'
+title: "class Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb
+# class Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb
 
 
 
@@ -224,4 +224,4 @@ Cutflow _cutflow;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

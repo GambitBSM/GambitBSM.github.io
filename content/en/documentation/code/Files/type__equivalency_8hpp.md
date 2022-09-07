@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/type_equivalency.hpp'
+title: "file Elements/type_equivalency.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/type_equivalency.hpp
+# file Elements/type_equivalency.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -115,4 +115,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

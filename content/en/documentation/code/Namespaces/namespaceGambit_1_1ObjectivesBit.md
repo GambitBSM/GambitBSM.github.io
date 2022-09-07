@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::ObjectivesBit'
+title: "namespace Gambit::ObjectivesBit"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ObjectivesBit
+# namespace Gambit::ObjectivesBit
 
 [No description available]
 
@@ -240,4 +240,4 @@ Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/ab
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

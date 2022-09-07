@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpecBit::SpectrumEntry'
+title: "struct Gambit::SpecBit::SpectrumEntry"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecBit::SpectrumEntry
+# struct Gambit::SpecBit::SpectrumEntry
 
 
 
@@ -44,4 +44,4 @@ int dimension;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

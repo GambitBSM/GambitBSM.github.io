@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::is_pair'
+title: "struct Gambit::is_pair"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::is_pair
+# struct Gambit::is_pair
 
 
 
@@ -58,4 +58,4 @@ static const bool value = __is_pair__<typename remove_all<T>::type>::value;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

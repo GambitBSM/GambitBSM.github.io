@@ -1,11 +1,11 @@
 ---
-title: 'file src/terminator.cpp'
+title: "file src/terminator.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/terminator.cpp
+# file src/terminator.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -76,4 +76,4 @@ void Gambit::terminator()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

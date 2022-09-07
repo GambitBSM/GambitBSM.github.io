@@ -1,11 +1,11 @@
 ---
-title: 'file SimpleSpectra/MSSMSimpleSpec.hpp'
+title: "file SimpleSpectra/MSSMSimpleSpec.hpp"
 
 description: "[No description available]"
 
 ---
 
-# SimpleSpectra/MSSMSimpleSpec.hpp
+# file SimpleSpectra/MSSMSimpleSpec.hpp
 
 [No description available]
 
@@ -188,4 +188,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Priors::RangePrior1D'
-description: 'Template class for 1d priors which need only a "range" option in their constructor. '
+title: "class Gambit::Priors::RangePrior1D"
+description: "Template class for 1d priors which need only a range option in their constructor. "
 
 ---
 
-# Gambit::Priors::RangePrior1D
+# class Gambit::Priors::RangePrior1D
 
 
 
@@ -110,4 +110,4 @@ Log of PDF density.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

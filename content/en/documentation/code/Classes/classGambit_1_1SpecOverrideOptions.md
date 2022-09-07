@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SpecOverrideOptions'
-description: 'Mini helper class to specify behaviour of getters w.r.t. overrides in a type-safe way. '
+title: "class Gambit::SpecOverrideOptions"
+description: "Mini helper class to specify behaviour of getters w.r.t. overrides in a type-safe way. "
 
 ---
 
-# Gambit::SpecOverrideOptions
+# class Gambit::SpecOverrideOptions
 
 
 
@@ -40,4 +40,4 @@ inline SpecOverrideOptions(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

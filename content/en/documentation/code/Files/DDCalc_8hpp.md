@@ -1,11 +1,11 @@
 ---
-title: 'file backend_types/DDCalc.hpp'
+title: "file backend_types/DDCalc.hpp"
 
 description: "[No description available]"
 
 ---
 
-# backend_types/DDCalc.hpp
+# file backend_types/DDCalc.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -141,4 +141,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file configs/vevacious_1_0.py'
+title: "file configs/vevacious_1_0.py"
 
 description: "[No description available]"
 
 ---
 
-# configs/vevacious_1_0.py
+# file configs/vevacious_1_0.py
 
 [No description available]
 
@@ -129,4 +129,4 @@ pragmas_end = [
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

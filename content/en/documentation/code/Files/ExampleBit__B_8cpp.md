@@ -1,11 +1,11 @@
 ---
-title: 'file src/ExampleBit_B.cpp'
+title: "file src/ExampleBit_B.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/ExampleBit_B.cpp
+# file src/ExampleBit_B.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -265,4 +265,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

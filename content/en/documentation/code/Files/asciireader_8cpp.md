@@ -1,11 +1,11 @@
 ---
-title: 'file asciiprinter/asciireader.cpp'
+title: "file asciiprinter/asciireader.cpp"
 
 description: "[No description available]"
 
 ---
 
-# asciiprinter/asciireader.cpp
+# file asciiprinter/asciireader.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -356,4 +356,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

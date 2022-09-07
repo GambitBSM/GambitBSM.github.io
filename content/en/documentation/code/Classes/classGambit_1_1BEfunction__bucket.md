@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::BEfunction_bucket'
-description: 'The actual usable form of the interface class to backend functions. '
+title: "class Gambit::BEfunction_bucket"
+description: "The actual usable form of the interface class to backend functions. "
 
 ---
 
-# Gambit::BEfunction_bucket
+# class Gambit::BEfunction_bucket
 
 
 
@@ -22,4 +22,4 @@ class Gambit::BEfunction_bucket;
 The actual usable form of the interface class to backend functions. 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

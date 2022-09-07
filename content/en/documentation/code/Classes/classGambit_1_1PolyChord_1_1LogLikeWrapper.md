@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::PolyChord::LogLikeWrapper'
-description: 'Class to connect PolyChord log-likelihood function and ScannerBit likelihood function. '
+title: "class Gambit::PolyChord::LogLikeWrapper"
+description: "Class to connect PolyChord log-likelihood function and ScannerBit likelihood function. "
 
 ---
 
-# Gambit::PolyChord::LogLikeWrapper
+# class Gambit::PolyChord::LogLikeWrapper
 
 
 
@@ -118,4 +118,4 @@ Disable printing for speeds greater and equal than Speeds start at 0 A value of 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

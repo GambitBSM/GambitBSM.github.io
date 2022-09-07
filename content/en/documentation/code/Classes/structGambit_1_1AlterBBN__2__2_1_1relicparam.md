@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::AlterBBN_2_2::relicparam'
+title: "struct Gambit::AlterBBN_2_2::relicparam"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::AlterBBN_2_2::relicparam
+# struct Gambit::AlterBBN_2_2::relicparam
 
 
 
@@ -612,4 +612,4 @@ int constraints;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

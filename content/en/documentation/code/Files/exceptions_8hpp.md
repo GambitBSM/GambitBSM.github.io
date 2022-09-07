@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/exceptions.hpp'
+title: "file Utils/exceptions.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/exceptions.hpp
+# file Utils/exceptions.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -442,4 +442,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

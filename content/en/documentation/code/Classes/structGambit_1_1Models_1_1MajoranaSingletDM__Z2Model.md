@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Models::MajoranaSingletDM_Z2Model'
+title: "struct Gambit::Models::MajoranaSingletDM_Z2Model"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Models::MajoranaSingletDM_Z2Model
+# struct Gambit::Models::MajoranaSingletDM_Z2Model
 
 
 
@@ -152,4 +152,4 @@ double[3] Yu;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

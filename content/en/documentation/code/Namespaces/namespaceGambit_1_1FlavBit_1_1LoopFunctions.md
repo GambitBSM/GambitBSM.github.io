@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::FlavBit::LoopFunctions'
+title: "namespace Gambit::FlavBit::LoopFunctions"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::FlavBit::LoopFunctions
+# namespace Gambit::FlavBit::LoopFunctions
 
 [No description available]
 
@@ -168,4 +168,4 @@ double E(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

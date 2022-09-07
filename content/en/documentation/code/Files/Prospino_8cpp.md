@@ -1,11 +1,11 @@
 ---
-title: 'file backend_types/Prospino.cpp'
+title: "file backend_types/Prospino.cpp"
 
 description: "[No description available]"
 
 ---
 
-# backend_types/Prospino.cpp
+# file backend_types/Prospino.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -82,4 +82,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

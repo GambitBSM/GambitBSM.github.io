@@ -1,11 +1,11 @@
 ---
-title: 'file src/getHepMCEvent.cpp'
+title: "file src/getHepMCEvent.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/getHepMCEvent.cpp
+# file src/getHepMCEvent.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -254,4 +254,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

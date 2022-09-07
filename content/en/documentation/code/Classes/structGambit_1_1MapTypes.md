@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::MapTypes'
-description: 'Fully unspecialised [MapTypes]() declaration. '
+title: "struct Gambit::MapTypes"
+description: "Fully unspecialised [MapTypes]() declaration. "
 
 ---
 
-# Gambit::MapTypes
+# struct Gambit::MapTypes
 
 
 
@@ -21,4 +21,4 @@ struct Gambit::MapTypes;
 Fully unspecialised [MapTypes]() declaration. 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

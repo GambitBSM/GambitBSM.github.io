@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::ColliderBit::SignalRegionData'
-description: 'A simple container for the result of one signal region from one analysis. '
+title: "struct Gambit::ColliderBit::SignalRegionData"
+description: "A simple container for the result of one signal region from one analysis. "
 
 ---
 
-# Gambit::ColliderBit::SignalRegionData
+# struct Gambit::ColliderBit::SignalRegionData
 
 
 
@@ -231,4 +231,4 @@ The absolute error of n_bkg.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

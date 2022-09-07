@@ -1,11 +1,11 @@
 ---
-title: 'namespace find_all_gambit_bits'
+title: "namespace find_all_gambit_bits"
 
 description: "[No description available]"
 
 ---
 
-# find_all_gambit_bits
+# namespace find_all_gambit_bits
 
 [No description available]
 
@@ -120,4 +120,4 @@ args =  parser.parse_args();
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

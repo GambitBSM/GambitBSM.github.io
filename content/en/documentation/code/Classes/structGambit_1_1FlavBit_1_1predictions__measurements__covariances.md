@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::FlavBit::predictions_measurements_covariances'
+title: "struct Gambit::FlavBit::predictions_measurements_covariances"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::FlavBit::predictions_measurements_covariances
+# struct Gambit::FlavBit::predictions_measurements_covariances
 
 
 
@@ -88,4 +88,4 @@ int dim;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

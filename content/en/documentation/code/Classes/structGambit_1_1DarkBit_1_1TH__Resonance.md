@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DarkBit::TH_Resonance'
-description: 'A single resonance of a given width at a given energy (both in GeV) '
+title: "struct Gambit::DarkBit::TH_Resonance"
+description: "A single resonance of a given width at a given energy (both in GeV) "
 
 ---
 
-# Gambit::DarkBit::TH_Resonance
+# struct Gambit::DarkBit::TH_Resonance
 
 
 
@@ -64,4 +64,4 @@ double width;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

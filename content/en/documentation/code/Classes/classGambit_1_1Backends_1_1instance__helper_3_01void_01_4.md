@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Backends::instance_helper< void >'
+title: "class Gambit::Backends::instance_helper< void >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends::instance_helper< void >
+# class Gambit::Backends::instance_helper< void >
 
 
 
@@ -28,4 +28,4 @@ int member;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

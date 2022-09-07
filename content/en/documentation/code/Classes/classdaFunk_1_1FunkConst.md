@@ -1,11 +1,11 @@
 ---
-title: 'class daFunk::FunkConst'
+title: "class daFunk::FunkConst"
 
 description: "[No description available]"
 
 ---
 
-# daFunk::FunkConst
+# class daFunk::FunkConst
 
 
 
@@ -103,4 +103,4 @@ inline virtual double value(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

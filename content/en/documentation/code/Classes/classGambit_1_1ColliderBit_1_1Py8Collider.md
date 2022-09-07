@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::Py8Collider'
-description: 'A specializable, recyclable class interfacing ColliderBit and Pythia. '
+title: "class Gambit::ColliderBit::Py8Collider"
+description: "A specializable, recyclable class interfacing ColliderBit and Pythia. "
 
 ---
 
-# Gambit::ColliderBit::Py8Collider
+# class Gambit::ColliderBit::Py8Collider
 
 
 
@@ -383,4 +383,4 @@ std::vector< std::string > _pythiaSettings;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

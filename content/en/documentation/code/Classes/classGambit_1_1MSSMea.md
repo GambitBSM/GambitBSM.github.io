@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::MSSMea'
+title: "class Gambit::MSSMea"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::MSSMea
+# class Gambit::MSSMea
 
 
 
@@ -589,4 +589,4 @@ double get_UP_pole_slha(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

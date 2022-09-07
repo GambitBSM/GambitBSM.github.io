@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::libFarrayTest_CB_type'
+title: "struct Gambit::libFarrayTest_CB_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::libFarrayTest_CB_type
+# struct Gambit::libFarrayTest_CB_type
 
 
 
@@ -52,4 +52,4 @@ Farray< Finteger, 1, 3, 0, 1, -1, 0 > d;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

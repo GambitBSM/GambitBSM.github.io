@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::MSSMSimpleSpec'
-description: 'MSSM specialisation of SLHAea object wrapper version of [SubSpectrum]() class. '
+title: "class Gambit::MSSMSimpleSpec"
+description: "MSSM specialisation of SLHAea object wrapper version of [SubSpectrum]() class. "
 
 ---
 
-# Gambit::MSSMSimpleSpec
+# class Gambit::MSSMSimpleSpec
 
 
 
@@ -270,4 +270,4 @@ Map fillers Used to initialise maps in [Spec](/documentation/code/classes/classg
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Backends::instance_helper'
+title: "class Gambit::Backends::instance_helper"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends::instance_helper
+# class Gambit::Backends::instance_helper
 
 
 
@@ -41,4 +41,4 @@ T member;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::HDF5DataSet'
-description: 'Class for interfacing to a HDF5 dataset of fixed type. '
+title: "class Gambit::Printers::HDF5DataSet"
+description: "Class for interfacing to a HDF5 dataset of fixed type. "
 
 ---
 
-# Gambit::Printers::HDF5DataSet
+# class Gambit::Printers::HDF5DataSet
 
 
 
@@ -179,4 +179,4 @@ Create a (chunked) dataset.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class MontePythonLike::Likelihood'
+title: "class MontePythonLike::Likelihood"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike::Likelihood
+# class MontePythonLike::Likelihood
 
 
 
@@ -611,4 +611,4 @@ dictionary;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

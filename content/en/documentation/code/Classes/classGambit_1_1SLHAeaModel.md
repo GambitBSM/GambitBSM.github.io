@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SLHAeaModel'
-description: 'Skeleton "model" class which interacts with an SLHAea object. '
+title: "class Gambit::SLHAeaModel"
+description: "Skeleton model class which interacts with an SLHAea object. "
 
 ---
 
-# Gambit::SLHAeaModel
+# class Gambit::SLHAeaModel
 
 
 
@@ -152,4 +152,4 @@ PDG translation map (e.g. from SLHA1 to SLHA2 for MSSMskeleton)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

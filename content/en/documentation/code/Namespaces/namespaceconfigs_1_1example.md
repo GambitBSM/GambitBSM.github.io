@@ -1,11 +1,11 @@
 ---
-title: 'namespace configs::example'
+title: "namespace configs::example"
 
 description: "[No description available]"
 
 ---
 
-# configs::example
+# namespace configs::example
 
 [No description available]
 
@@ -111,4 +111,4 @@ string cb_capability_suffix =  '';
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::is_same_type_internal'
+title: "struct Gambit::is_same_type_internal"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::is_same_type_internal
+# struct Gambit::is_same_type_internal
 
 
 
@@ -21,4 +21,4 @@ struct Gambit::is_same_type_internal;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

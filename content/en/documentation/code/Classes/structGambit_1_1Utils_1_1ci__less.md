@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Utils::ci_less'
+title: "struct Gambit::Utils::ci_less"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Utils::ci_less
+# struct Gambit::Utils::ci_less
 
 
 
@@ -39,4 +39,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

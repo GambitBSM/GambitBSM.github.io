@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::ColliderBit::Cutflows'
-description: 'A container for several [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access. '
+title: "struct Gambit::ColliderBit::Cutflows"
+description: "A container for several [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access. "
 
 ---
 
-# Gambit::ColliderBit::Cutflows
+# struct Gambit::ColliderBit::Cutflows
 
 
 
@@ -280,4 +280,4 @@ vector< Cutflow > cfs;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

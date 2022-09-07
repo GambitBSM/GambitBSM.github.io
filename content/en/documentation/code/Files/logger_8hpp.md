@@ -1,11 +1,11 @@
 ---
-title: 'file Logs/logger.hpp'
+title: "file Logs/logger.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Logs/logger.hpp
+# file Logs/logger.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -167,4 +167,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

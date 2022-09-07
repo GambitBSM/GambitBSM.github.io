@@ -1,11 +1,11 @@
 ---
-title: 'namespace configs::vevacious_1_0'
+title: "namespace configs::vevacious_1_0"
 
 description: "[No description available]"
 
 ---
 
-# configs::vevacious_1_0
+# namespace configs::vevacious_1_0
 
 [No description available]
 
@@ -247,4 +247,4 @@ list pragmas_end =  [
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

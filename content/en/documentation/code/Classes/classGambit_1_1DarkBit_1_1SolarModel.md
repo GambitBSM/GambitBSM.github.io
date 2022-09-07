@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::SolarModel'
+title: "class Gambit::DarkBit::SolarModel"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::SolarModel
+# class Gambit::DarkBit::SolarModel
 
 
 
@@ -129,4 +129,4 @@ double r_hi;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

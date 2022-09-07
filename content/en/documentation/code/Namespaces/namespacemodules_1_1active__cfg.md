@@ -1,11 +1,11 @@
 ---
-title: 'namespace modules::active_cfg'
+title: "namespace modules::active_cfg"
 
 description: "[No description available]"
 
 ---
 
-# modules::active_cfg
+# namespace modules::active_cfg
 
 [No description available]
 
@@ -31,4 +31,4 @@ string module_name =  'example_1_234';
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

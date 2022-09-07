@@ -1,11 +1,11 @@
 ---
-title: 'file src/slhaea_spec_helpers.cpp'
+title: "file src/slhaea_spec_helpers.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/slhaea_spec_helpers.cpp
+# file src/slhaea_spec_helpers.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -234,4 +234,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

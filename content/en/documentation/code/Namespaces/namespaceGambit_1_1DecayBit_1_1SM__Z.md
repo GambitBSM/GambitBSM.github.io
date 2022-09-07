@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::DecayBit::SM_Z'
+title: "namespace Gambit::DecayBit::SM_Z"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DecayBit::SM_Z
+# namespace Gambit::DecayBit::SM_Z
 
 [No description available]
 
@@ -154,4 +154,4 @@ The final entry isn't in the table and instead comes from the text below eq. 16.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

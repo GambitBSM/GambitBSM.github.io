@@ -1,11 +1,11 @@
 ---
-title: 'namespace FlavBit::Functown'
+title: "namespace FlavBit::Functown"
 
 description: "[No description available]"
 
 ---
 
-# FlavBit::Functown
+# namespace FlavBit::Functown
 
 [No description available] [More...](#detailed-description)
 
@@ -47,4 +47,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

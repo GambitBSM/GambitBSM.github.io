@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Priors::MultiPriors'
-description: 'A parameter that is fixed to a different parameter. '
+title: "class Gambit::Priors::MultiPriors"
+description: "A parameter that is fixed to a different parameter. "
 
 ---
 
-# Gambit::Priors::MultiPriors
+# class Gambit::Priors::MultiPriors
 
 
 
@@ -110,4 +110,4 @@ Transform from parameter back to unit hypercube.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

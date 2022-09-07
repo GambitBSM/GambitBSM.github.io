@@ -1,11 +1,11 @@
 ---
-title: 'file printers/noneprinter.hpp'
+title: "file printers/noneprinter.hpp"
 
 description: "[No description available]"
 
 ---
 
-# printers/noneprinter.hpp
+# file printers/noneprinter.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -228,4 +228,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

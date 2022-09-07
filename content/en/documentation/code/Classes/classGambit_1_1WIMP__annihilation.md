@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::WIMP_annihilation'
+title: "class Gambit::WIMP_annihilation"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::WIMP_annihilation
+# class Gambit::WIMP_annihilation
 
 
 
@@ -83,4 +83,4 @@ void setB(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

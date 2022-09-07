@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>'
-description: 'Objective functor made up a single plugin. '
+title: "class Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>"
+description: "Objective functor made up a single plugin. "
 
 ---
 
-# Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>
+# class Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>
 
 
 
@@ -123,4 +123,4 @@ inline ret main(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::IniParser::IniFile'
-description: 'Main inifile class. '
+title: "class Gambit::IniParser::IniFile"
+description: "Main inifile class. "
 
 ---
 
-# Gambit::IniParser::IniFile
+# class Gambit::IniParser::IniFile
 
 
 
@@ -94,4 +94,4 @@ Read in the [YAML](/documentation/code/namespaces/namespaceyaml/) file.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

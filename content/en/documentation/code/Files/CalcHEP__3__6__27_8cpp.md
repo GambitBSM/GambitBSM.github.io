@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/CalcHEP_3_6_27.cpp'
+title: "file frontends/CalcHEP_3_6_27.cpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/CalcHEP_3_6_27.cpp
+# file frontends/CalcHEP_3_6_27.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -730,4 +730,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

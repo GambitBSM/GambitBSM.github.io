@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SMSimpleSpec'
-description: 'SM specialisation of SLHAea object wrapper version of [SubSpectrum]() class. '
+title: "class Gambit::SMSimpleSpec"
+description: "SM specialisation of SLHAea object wrapper version of [SubSpectrum]() class. "
 
 ---
 
-# Gambit::SMSimpleSpec
+# class Gambit::SMSimpleSpec
 
 
 
@@ -253,4 +253,4 @@ Fill Pole_mass map (from Model object)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

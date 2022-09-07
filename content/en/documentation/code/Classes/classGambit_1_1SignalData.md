@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SignalData'
-description: 'Variables for use in signal handlers. '
+title: "class Gambit::SignalData"
+description: "Variables for use in signal handlers. "
 
 ---
 
-# Gambit::SignalData
+# class Gambit::SignalData
 
 
 
@@ -259,4 +259,4 @@ bool cleanup_function_set;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

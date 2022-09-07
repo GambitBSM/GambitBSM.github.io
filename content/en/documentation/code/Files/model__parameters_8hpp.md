@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/model_parameters.hpp'
+title: "file Utils/model_parameters.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/model_parameters.hpp
+# file Utils/model_parameters.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -221,4 +221,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

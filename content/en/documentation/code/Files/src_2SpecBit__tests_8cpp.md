@@ -1,11 +1,11 @@
 ---
-title: 'file src/src/SpecBit_tests.cpp'
+title: "file src/src/SpecBit_tests.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/src/SpecBit_tests.cpp
+# file src/src/SpecBit_tests.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1081,4 +1081,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_36invfb'
+title: "class Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_36invfb"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_36invfb
+# class Gambit::ColliderBit::Analysis_CMS_13TeV_2SSLEP_Stop_36invfb
 
 
 
@@ -199,4 +199,4 @@ Cutflow _cutflow;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

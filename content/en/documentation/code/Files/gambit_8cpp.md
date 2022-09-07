@@ -1,11 +1,11 @@
 ---
-title: 'file src/gambit.cpp'
+title: "file src/gambit.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/gambit.cpp
+# file src/gambit.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -449,4 +449,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::always_false'
-description: 'Helper for the static_assert below. '
+title: "struct Gambit::always_false"
+description: "Helper for the static_assert below. "
 
 ---
 
-# Gambit::always_false
+# struct Gambit::always_false
 
 
 
@@ -40,4 +40,4 @@ Helper for the static_assert below.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

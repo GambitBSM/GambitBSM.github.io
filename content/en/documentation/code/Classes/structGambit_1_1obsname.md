@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::obsname'
+title: "struct Gambit::obsname"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::obsname
+# struct Gambit::obsname
 
 
 
@@ -68,4 +68,4 @@ char[100] name;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

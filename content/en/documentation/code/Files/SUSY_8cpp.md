@@ -1,11 +1,11 @@
 ---
-title: 'file models/SUSY.cpp'
+title: "file models/SUSY.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/SUSY.cpp
+# file models/SUSY.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -94,4 +94,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

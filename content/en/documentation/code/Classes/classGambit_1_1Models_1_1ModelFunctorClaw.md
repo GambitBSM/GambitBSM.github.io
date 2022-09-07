@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Models::ModelFunctorClaw'
+title: "class Gambit::Models::ModelFunctorClaw"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Models::ModelFunctorClaw
+# class Gambit::Models::ModelFunctorClaw
 
 
 
@@ -280,4 +280,4 @@ Destructor.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

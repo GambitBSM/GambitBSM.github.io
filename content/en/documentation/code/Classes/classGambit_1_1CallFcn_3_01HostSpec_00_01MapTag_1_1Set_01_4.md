@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::CallFcn< HostSpec, MapTag::Set >'
-description: 'Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling setter functions. '
+title: "class Gambit::CallFcn< HostSpec, MapTag::Set >"
+description: "Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling 'setter' functions. "
 
 ---
 
-# Gambit::CallFcn< HostSpec, MapTag::Set >
+# class Gambit::CallFcn< HostSpec, MapTag::Set >
 
 
 
@@ -50,4 +50,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

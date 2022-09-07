@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::SQLitePrinter'
-description: 'The main printer class for output to SQLite database. '
+title: "class Gambit::Printers::SQLitePrinter"
+description: "The main printer class for output to SQLite database. "
 
 ---
 
-# Gambit::Printers::SQLitePrinter
+# class Gambit::Printers::SQLitePrinter
 
 
 
@@ -226,4 +226,4 @@ Helper print functions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

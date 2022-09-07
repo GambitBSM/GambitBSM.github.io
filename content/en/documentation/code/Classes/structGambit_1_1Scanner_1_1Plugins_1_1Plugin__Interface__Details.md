@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Scanner::Plugins::Plugin_Interface_Details'
-description: 'Plugin info to be given to the interface class. '
+title: "struct Gambit::Scanner::Plugins::Plugin_Interface_Details"
+description: "Plugin info to be given to the interface class. "
 
 ---
 
-# Gambit::Scanner::Plugins::Plugin_Interface_Details
+# struct Gambit::Scanner::Plugins::Plugin_Interface_Details
 
 
 
@@ -82,4 +82,4 @@ YAML::Node node;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

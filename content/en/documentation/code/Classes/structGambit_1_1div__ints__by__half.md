@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::div_ints_by_half'
+title: "struct Gambit::div_ints_by_half"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::div_ints_by_half
+# struct Gambit::div_ints_by_half
 
 
 
@@ -36,4 +36,4 @@ static const int value = (low + hi) >> 1;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

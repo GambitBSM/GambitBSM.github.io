@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpectrumContents::MDM'
+title: "struct Gambit::SpectrumContents::MDM"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpectrumContents::MDM
+# struct Gambit::SpectrumContents::MDM
 
 
 
@@ -51,4 +51,4 @@ MDM()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

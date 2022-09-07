@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Backends::backend_info'
-description: 'Structure providing some basic info on backend libraries. '
+title: "struct Gambit::Backends::backend_info"
+description: "Structure providing some basic info on backend libraries. "
 
 ---
 
-# Gambit::Backends::backend_info
+# struct Gambit::Backends::backend_info
 
 
 
@@ -347,4 +347,4 @@ C/C++/Fortran backends that have been successfully loaded (Key: name+version)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

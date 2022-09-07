@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::MicrOmegas::MOcommonSTR'
+title: "struct Gambit::MicrOmegas::MOcommonSTR"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::MicrOmegas::MOcommonSTR
+# struct Gambit::MicrOmegas::MOcommonSTR
 
 
 
@@ -28,4 +28,4 @@ double[36] par;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

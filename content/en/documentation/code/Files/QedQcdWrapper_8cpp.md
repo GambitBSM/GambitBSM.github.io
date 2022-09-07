@@ -1,11 +1,11 @@
 ---
-title: 'file src/QedQcdWrapper.cpp'
+title: "file src/QedQcdWrapper.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/QedQcdWrapper.cpp
+# file src/QedQcdWrapper.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -404,4 +404,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

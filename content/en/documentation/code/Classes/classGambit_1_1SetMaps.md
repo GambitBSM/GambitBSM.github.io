@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SetMaps'
-description: '[FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder/) friend class for implementing named parameter idiom. '
+title: "class Gambit::SetMaps"
+description: "[FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder/) friend class for implementing named parameter idiom. "
 
 ---
 
-# Gambit::SetMaps
+# class Gambit::SetMaps
 
 
 
@@ -264,4 +264,4 @@ friend class FptrFinder< HostSpec, MTag >(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::table_formatter'
+title: "class Gambit::table_formatter"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::table_formatter
+# class Gambit::table_formatter
 
 
 
@@ -472,4 +472,4 @@ static const unsigned char WRAP = 0x80;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

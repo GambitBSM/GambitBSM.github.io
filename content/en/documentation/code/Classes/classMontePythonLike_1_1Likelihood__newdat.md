@@ -1,11 +1,11 @@
 ---
-title: 'class MontePythonLike::Likelihood_newdat'
+title: "class MontePythonLike::Likelihood_newdat"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike::Likelihood_newdat
+# class MontePythonLike::Likelihood_newdat
 
 
 
@@ -416,4 +416,4 @@ lkl;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

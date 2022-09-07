@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Backends::AlterBBN_2_2'
+title: "namespace Gambit::Backends::AlterBBN_2_2"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Backends::AlterBBN_2_2
+# namespace Gambit::Backends::AlterBBN_2_2
 
 [No description available]
 
@@ -39,4 +39,4 @@ typedef Gambit::AlterBBN_2_2::errorparam Gambit::Backends::AlterBBN_2_2::errorpa
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct YAML::convert< Gambit::IniParser::Types::Observable >'
+title: "struct YAML::convert< Gambit::IniParser::Types::Observable >"
 
 description: "[No description available]"
 
 ---
 
-# YAML::convert< Gambit::IniParser::Types::Observable >
+# struct YAML::convert< Gambit::IniParser::Types::Observable >
 
 
 
@@ -31,4 +31,4 @@ static bool decode(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

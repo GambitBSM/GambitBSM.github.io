@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::is_same_type_internal< void(T, args...), T >'
+title: "struct Gambit::is_same_type_internal< void(T, args...), T >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::is_same_type_internal< void(T, args...), T >
+# struct Gambit::is_same_type_internal< void(T, args...), T >
 
 
 
@@ -36,4 +36,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Utils::interp2d_collection'
+title: "class Gambit::Utils::interp2d_collection"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Utils::interp2d_collection
+# class Gambit::Utils::interp2d_collection
 
 
 
@@ -201,4 +201,4 @@ size_t n_interpolators;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

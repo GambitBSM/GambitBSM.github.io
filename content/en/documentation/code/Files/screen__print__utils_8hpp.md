@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/screen_print_utils.hpp'
+title: "file Utils/screen_print_utils.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/screen_print_utils.hpp
+# file Utils/screen_print_utils.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -183,4 +183,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

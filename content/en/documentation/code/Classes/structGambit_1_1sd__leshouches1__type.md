@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::sd_leshouches1_type'
+title: "struct Gambit::sd_leshouches1_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::sd_leshouches1_type
+# struct Gambit::sd_leshouches1_type
 
 
 
@@ -76,4 +76,4 @@ Fstring< 20 > hmixcom;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/DarkAges_1_2_0.hpp'
+title: "file frontends/DarkAges_1_2_0.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/DarkAges_1_2_0.hpp
+# file frontends/DarkAges_1_2_0.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -149,4 +149,4 @@ BE_ALLOW_MODELS(AnnihilatingDM_general, DecayingDM_general)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file examples/DarkBit_standalone_MSSM.cpp'
+title: "file examples/DarkBit_standalone_MSSM.cpp"
 
 description: "[No description available]"
 
 ---
 
-# examples/DarkBit_standalone_MSSM.cpp
+# file examples/DarkBit_standalone_MSSM.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1868,4 +1868,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

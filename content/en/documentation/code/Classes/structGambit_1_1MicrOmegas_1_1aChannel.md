@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::MicrOmegas::aChannel'
+title: "struct Gambit::MicrOmegas::aChannel"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::MicrOmegas::aChannel
+# struct Gambit::MicrOmegas::aChannel
 
 
 
@@ -36,4 +36,4 @@ char *[5] prtcl;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

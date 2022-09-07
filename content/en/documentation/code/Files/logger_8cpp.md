@@ -1,11 +1,11 @@
 ---
-title: 'file src/logger.cpp'
+title: "file src/logger.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/logger.cpp
+# file src/logger.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -166,4 +166,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

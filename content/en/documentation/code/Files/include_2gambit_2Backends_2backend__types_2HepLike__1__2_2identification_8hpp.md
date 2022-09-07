@@ -1,11 +1,11 @@
 ---
-title: 'file HepLike_1_2/include/gambit/Backends/backend_types/HepLike_1_2/identification.hpp'
+title: "file HepLike_1_2/include/gambit/Backends/backend_types/HepLike_1_2/identification.hpp"
 
 description: "[No description available]"
 
 ---
 
-# HepLike_1_2/include/gambit/Backends/backend_types/HepLike_1_2/identification.hpp
+# file HepLike_1_2/include/gambit/Backends/backend_types/HepLike_1_2/identification.hpp
 
 [No description available]
 
@@ -87,4 +87,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

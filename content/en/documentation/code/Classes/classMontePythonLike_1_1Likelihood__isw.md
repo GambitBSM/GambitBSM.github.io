@@ -1,11 +1,11 @@
 ---
-title: 'class MontePythonLike::Likelihood_isw'
+title: "class MontePythonLike::Likelihood_isw"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike::Likelihood_isw
+# class MontePythonLike::Likelihood_isw
 
 
 
@@ -348,4 +348,4 @@ norm;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

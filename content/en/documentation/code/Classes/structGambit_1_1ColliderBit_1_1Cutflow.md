@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::ColliderBit::Cutflow'
-description: 'A tracker of numbers & fractions of events passing sequential cuts. '
+title: "struct Gambit::ColliderBit::Cutflow"
+description: "A tracker of numbers & fractions of events passing sequential cuts. "
 
 ---
 
-# Gambit::ColliderBit::Cutflow
+# struct Gambit::ColliderBit::Cutflow
 
 
 
@@ -268,4 +268,4 @@ size_t icurr;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file modules/CBGB/modules/active_cfg.py'
+title: "file modules/CBGB/modules/active_cfg.py"
 
 description: "[No description available]"
 
 ---
 
-# modules/CBGB/modules/active_cfg.py
+# file modules/CBGB/modules/active_cfg.py
 
 [No description available]
 
@@ -30,4 +30,4 @@ module_name = 'example_config_module'
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

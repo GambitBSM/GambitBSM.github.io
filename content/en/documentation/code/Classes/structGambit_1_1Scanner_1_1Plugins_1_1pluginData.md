@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Scanner::Plugins::pluginData'
-description: 'Structure that holds all the data provided by plugins about themselves. '
+title: "struct Gambit::Scanner::Plugins::pluginData"
+description: "Structure that holds all the data provided by plugins about themselves. "
 
 ---
 
-# Gambit::Scanner::Plugins::pluginData
+# struct Gambit::Scanner::Plugins::pluginData
 
 
 
@@ -161,4 +161,4 @@ bool loaded;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

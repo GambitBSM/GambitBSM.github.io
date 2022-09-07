@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/safebool.hpp'
+title: "file Utils/safebool.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/safebool.hpp
+# file Utils/safebool.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -108,4 +108,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

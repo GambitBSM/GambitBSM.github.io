@@ -1,11 +1,11 @@
 ---
-title: 'namespace libsecond_1_2'
+title: "namespace libsecond_1_2"
 
 description: "[No description available]"
 
 ---
 
-# libsecond_1_2
+# namespace libsecond_1_2
 
 [No description available]
 
@@ -114,4 +114,4 @@ string prefix =  "libsecond 1.2: ";
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/stringify.hpp'
+title: "file Utils/stringify.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/stringify.hpp
+# file Utils/stringify.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -136,4 +136,4 @@ Stringification macros that can stringify arguments with commas.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

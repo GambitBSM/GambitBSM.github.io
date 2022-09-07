@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Models::ScalarSingletDM_Z3Model'
+title: "struct Gambit::Models::ScalarSingletDM_Z3Model"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Models::ScalarSingletDM_Z3Model
+# struct Gambit::Models::ScalarSingletDM_Z3Model
 
 
 
@@ -148,4 +148,4 @@ double[3] Yu;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

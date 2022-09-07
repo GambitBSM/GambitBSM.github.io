@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::ALEPHStauLimitAt208GeV'
-description: 'A class to contain the limit data from ALEPH_PLB526_2002_206, figure 3c. '
+title: "class Gambit::ColliderBit::ALEPHStauLimitAt208GeV"
+description: "A class to contain the limit data from ALEPH_PLB526_2002_206, figure 3c. "
 
 ---
 
-# Gambit::ColliderBit::ALEPHStauLimitAt208GeV
+# class Gambit::ColliderBit::ALEPHStauLimitAt208GeV
 
 
 
@@ -95,4 +95,4 @@ ALEPHStauLimitAt208GeV()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

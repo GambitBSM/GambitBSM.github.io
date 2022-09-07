@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Printers::PPIDEqual'
+title: "struct Gambit::Printers::PPIDEqual"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::PPIDEqual
+# struct Gambit::Printers::PPIDEqual
 
 
 
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

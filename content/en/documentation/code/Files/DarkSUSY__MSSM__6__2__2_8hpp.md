@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/DarkSUSY_MSSM_6_2_2.hpp'
+title: "file frontends/DarkSUSY_MSSM_6_2_2.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/DarkSUSY_MSSM_6_2_2.hpp
+# file frontends/DarkSUSY_MSSM_6_2_2.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -245,4 +245,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(decay_rates, DecayTable, MSSM63atQ, CMSSM)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

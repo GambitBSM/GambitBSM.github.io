@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit::Par'
-description: 'List of parameter types used to classify spectrum contents. '
+title: "namespace Gambit::Par"
+description: "List of parameter types used to classify spectrum contents. "
 
 ---
 
-# Gambit::Par
+# namespace Gambit::Par
 
 List of parameter types used to classify spectrum contents. 
 
@@ -80,4 +80,4 @@ static const std::map< Tags, std::string > toString = fill_map();
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

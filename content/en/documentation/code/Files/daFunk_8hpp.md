@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/daFunk.hpp'
+title: "file Elements/daFunk.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/daFunk.hpp
+# file Elements/daFunk.hpp
 
 [No description available]
 
@@ -1895,4 +1895,4 @@ namespace daFunk
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

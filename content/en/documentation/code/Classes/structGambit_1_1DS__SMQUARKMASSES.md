@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_SMQUARKMASSES'
+title: "struct Gambit::DS_SMQUARKMASSES"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_SMQUARKMASSES
+# struct Gambit::DS_SMQUARKMASSES
 
 
 
@@ -76,4 +76,4 @@ Fstring< 5 > roption;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

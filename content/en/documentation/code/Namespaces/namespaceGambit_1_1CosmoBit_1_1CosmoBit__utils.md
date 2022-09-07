@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::CosmoBit::CosmoBit_utils'
+title: "namespace Gambit::CosmoBit::CosmoBit_utils"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::CosmoBit::CosmoBit_utils
+# namespace Gambit::CosmoBit::CosmoBit_utils
 
 [No description available]
 
@@ -34,4 +34,4 @@ double entropy_density_SM(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

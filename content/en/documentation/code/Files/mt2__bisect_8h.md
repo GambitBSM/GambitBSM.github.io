@@ -1,11 +1,11 @@
 ---
-title: 'file ColliderBit/mt2_bisect.h'
+title: "file ColliderBit/mt2_bisect.h"
 
 description: "[No description available]"
 
 ---
 
-# ColliderBit/mt2_bisect.h
+# file ColliderBit/mt2_bisect.h
 
 [No description available]
 
@@ -142,4 +142,4 @@ class mt2
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

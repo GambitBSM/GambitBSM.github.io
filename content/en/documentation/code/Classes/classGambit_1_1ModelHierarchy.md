@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ModelHierarchy'
-description: 'Model hierarchy tree class. '
+title: "class Gambit::ModelHierarchy"
+description: "Model hierarchy tree class. "
 
 ---
 
-# Gambit::ModelHierarchy
+# class Gambit::ModelHierarchy
 
 
 
@@ -39,4 +39,4 @@ Constructor.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

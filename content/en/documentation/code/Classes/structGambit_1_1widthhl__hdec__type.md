@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::widthhl_hdec_type'
+title: "struct Gambit::widthhl_hdec_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::widthhl_hdec_type
+# struct Gambit::widthhl_hdec_type
 
 
 
@@ -140,4 +140,4 @@ Fdouble hlwdth;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

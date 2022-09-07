@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::SetHooks'
-description: 'A templated class specific for the UserHooks. '
+title: "class Gambit::ColliderBit::SetHooks"
+description: "A templated class specific for the UserHooks. "
 
 ---
 
-# Gambit::ColliderBit::SetHooks
+# class Gambit::ColliderBit::SetHooks
 
 
 
@@ -57,4 +57,4 @@ inline bool SetupHook(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

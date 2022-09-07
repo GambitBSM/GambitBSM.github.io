@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::safety_bucket_base'
-description: 'Base class for the interface classes '[dep_bucket](/documentation/code/classes/classgambit_1_1dep__bucket/)', '[BEvariable_bucket](/documentation/code/classes/classgambit_1_1bevariable__bucket/)' and '[BEfunction_bucket](/documentation/code/classes/classgambit_1_1befunction__bucket/)'. '
+title: "class Gambit::safety_bucket_base"
+description: "Base class for the interface classes '[dep_bucket](/documentation/code/classes/classgambit_1_1dep__bucket/)', '[BEvariable_bucket](/documentation/code/classes/classgambit_1_1bevariable__bucket/)' and '[BEfunction_bucket](/documentation/code/classes/classgambit_1_1befunction__bucket/)'. "
 
 ---
 
-# Gambit::safety_bucket_base
+# class Gambit::safety_bucket_base
 
 
 
@@ -111,4 +111,4 @@ const str whoami;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

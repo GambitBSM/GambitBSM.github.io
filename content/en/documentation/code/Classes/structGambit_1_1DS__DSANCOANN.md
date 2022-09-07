@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_DSANCOANN'
+title: "struct Gambit::DS_DSANCOANN"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_DSANCOANN
+# struct Gambit::DS_DSANCOANN
 
 
 
@@ -52,4 +52,4 @@ Finteger nco;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

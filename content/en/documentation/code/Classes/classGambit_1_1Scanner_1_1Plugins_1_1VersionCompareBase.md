@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Plugins::VersionCompareBase'
-description: 'Base class for comparing scanner plugins. '
+title: "class Gambit::Scanner::Plugins::VersionCompareBase"
+description: "Base class for comparing scanner plugins. "
 
 ---
 
-# Gambit::Scanner::Plugins::VersionCompareBase
+# class Gambit::Scanner::Plugins::VersionCompareBase
 
 
 
@@ -71,4 +71,4 @@ inline virtual ~VersionCompareBase()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

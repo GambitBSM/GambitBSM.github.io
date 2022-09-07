@@ -1,11 +1,11 @@
 ---
-title: 'namespace configs::gm2calc_1_2_0'
+title: "namespace configs::gm2calc_1_2_0"
 
 description: "[No description available]"
 
 ---
 
-# configs::gm2calc_1_2_0
+# namespace configs::gm2calc_1_2_0
 
 [No description available]
 
@@ -258,4 +258,4 @@ list pragmas_end =  [
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

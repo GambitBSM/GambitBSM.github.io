@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::SMInputs'
-description: 'Container class for Standard Model input information (defined as in SLHA2) '
+title: "struct Gambit::SMInputs"
+description: "Container class for Standard Model input information (defined as in SLHA2) "
 
 ---
 
-# Gambit::SMInputs
+# struct Gambit::SMInputs
 
 
 
@@ -224,4 +224,4 @@ double mW = mw_central_observed;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

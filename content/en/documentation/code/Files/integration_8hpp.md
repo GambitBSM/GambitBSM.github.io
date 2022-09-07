@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/integration.hpp'
+title: "file Utils/integration.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/integration.hpp
+# file Utils/integration.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -93,4 +93,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

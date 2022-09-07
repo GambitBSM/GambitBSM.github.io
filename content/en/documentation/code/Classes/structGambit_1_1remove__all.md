@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::remove_all'
+title: "struct Gambit::remove_all"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::remove_all
+# struct Gambit::remove_all
 
 
 
@@ -35,4 +35,4 @@ typedef std::remove_cv<typenamestd::remove_volatile<typenamestd::remove_const<ty
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

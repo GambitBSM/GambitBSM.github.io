@@ -1,11 +1,11 @@
 ---
-title: 'file minuit2_6.23.01/minuit2.cpp'
+title: "file minuit2_6.23.01/minuit2.cpp"
 
 description: "[No description available]"
 
 ---
 
-# minuit2_6.23.01/minuit2.cpp
+# file minuit2_6.23.01/minuit2.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -395,4 +395,4 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

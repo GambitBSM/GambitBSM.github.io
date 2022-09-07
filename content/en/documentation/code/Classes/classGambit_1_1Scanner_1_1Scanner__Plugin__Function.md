@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Scanner::Scanner_Plugin_Function'
+title: "class Gambit::Scanner::Scanner_Plugin_Function"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Scanner_Plugin_Function
+# class Gambit::Scanner::Scanner_Plugin_Function
 
 
 
@@ -20,4 +20,4 @@ class Gambit::Scanner::Scanner_Plugin_Function;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

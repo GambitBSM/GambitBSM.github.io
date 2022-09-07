@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::CallFcn'
-description: 'Helper class for calling function pointers found by [FptrFinder](). '
+title: "class Gambit::CallFcn"
+description: "Helper class for calling function pointers found by [FptrFinder](). "
 
 ---
 
-# Gambit::CallFcn
+# class Gambit::CallFcn
 
 
 
@@ -21,4 +21,4 @@ class Gambit::CallFcn;
 Helper class for calling function pointers found by [FptrFinder](). 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

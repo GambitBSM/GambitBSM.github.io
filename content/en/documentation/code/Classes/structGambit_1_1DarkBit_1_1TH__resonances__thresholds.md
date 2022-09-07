@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DarkBit::TH_resonances_thresholds'
-description: 'Location of resonances and thresholds in energy (GeV) '
+title: "struct Gambit::DarkBit::TH_resonances_thresholds"
+description: "Location of resonances and thresholds in energy (GeV) "
 
 ---
 
-# Gambit::DarkBit::TH_resonances_thresholds
+# struct Gambit::DarkBit::TH_resonances_thresholds
 
 
 
@@ -84,4 +84,4 @@ std::vector< double > threshold_energy;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

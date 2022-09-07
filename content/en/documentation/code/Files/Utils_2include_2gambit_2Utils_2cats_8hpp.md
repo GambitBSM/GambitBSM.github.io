@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/Utils/include/gambit/Utils/cats.hpp'
+title: "file Utils/Utils/include/gambit/Utils/cats.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/Utils/include/gambit/Utils/cats.hpp
+# file Utils/Utils/include/gambit/Utils/cats.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -190,4 +190,4 @@ CAT(A,CAT_6(B,C,D,X,Y,Z))
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

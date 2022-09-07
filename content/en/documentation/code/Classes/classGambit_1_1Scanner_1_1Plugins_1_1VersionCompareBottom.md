@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Scanner::Plugins::VersionCompareBottom'
+title: "class Gambit::Scanner::Plugins::VersionCompareBottom"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Plugins::VersionCompareBottom
+# class Gambit::Scanner::Plugins::VersionCompareBottom
 
 
 
@@ -57,4 +57,4 @@ virtual bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

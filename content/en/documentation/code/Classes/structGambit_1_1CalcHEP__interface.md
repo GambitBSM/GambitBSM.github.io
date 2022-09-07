@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::CalcHEP_interface'
+title: "struct Gambit::CalcHEP_interface"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::CalcHEP_interface
+# struct Gambit::CalcHEP_interface
 
 
 
@@ -188,4 +188,4 @@ colorBasis * cb;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::FlavBit::FormFactors'
+title: "namespace Gambit::FlavBit::FormFactors"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::FlavBit::FormFactors
+# namespace Gambit::FlavBit::FormFactors
 
 [No description available]
 
@@ -487,4 +487,4 @@ complex< double > CSRR(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

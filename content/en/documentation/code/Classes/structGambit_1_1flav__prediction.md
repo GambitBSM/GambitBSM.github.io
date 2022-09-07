@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::flav_prediction'
-description: 'Flavour observables structure holding central values and covariances. '
+title: "struct Gambit::flav_prediction"
+description: "Flavour observables structure holding central values and covariances. "
 
 ---
 
-# Gambit::flav_prediction
+# struct Gambit::flav_prediction
 
 
 
@@ -38,4 +38,4 @@ flav_covariance_map covariance;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

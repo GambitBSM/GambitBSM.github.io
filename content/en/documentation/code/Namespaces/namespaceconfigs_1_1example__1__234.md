@@ -1,11 +1,11 @@
 ---
-title: 'namespace configs::example_1_234'
+title: "namespace configs::example_1_234"
 
 description: "[No description available]"
 
 ---
 
-# configs::example_1_234
+# namespace configs::example_1_234
 
 [No description available]
 
@@ -229,4 +229,4 @@ list pragmas_end =  [];
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

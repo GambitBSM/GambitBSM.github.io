@@ -1,11 +1,11 @@
 ---
-title: 'file ScannerBit/plugin_macros.hpp'
+title: "file ScannerBit/plugin_macros.hpp"
 
 description: "[No description available]"
 
 ---
 
-# ScannerBit/plugin_macros.hpp
+# file ScannerBit/plugin_macros.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1137,4 +1137,4 @@ __GAMBIT_PLUGIN_NAMESPACE__(__VA_ARGS__)                                        
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

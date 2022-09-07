@@ -1,11 +1,11 @@
 ---
-title: 'file SpecBit/SpecBit_MSSM_rollcall.hpp'
+title: "file SpecBit/SpecBit_MSSM_rollcall.hpp"
 
 description: "[No description available]"
 
 ---
 
-# SpecBit/SpecBit_MSSM_rollcall.hpp
+# file SpecBit/SpecBit_MSSM_rollcall.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -876,4 +876,4 @@ Get MSSM spectrum from CMSSM boundary conditions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::DRes'
+title: "namespace Gambit::DRes"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DRes
+# namespace Gambit::DRes
 
 [No description available]
 
@@ -270,4 +270,4 @@ Global flag for regex use.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

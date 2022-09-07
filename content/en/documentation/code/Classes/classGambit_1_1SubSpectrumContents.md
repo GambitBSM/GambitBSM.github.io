@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SubSpectrumContents'
-description: 'Base class for defining the required contents of a [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object. '
+title: "class Gambit::SubSpectrumContents"
+description: "Base class for defining the required contents of a [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object. "
 
 ---
 
-# Gambit::SubSpectrumContents
+# class Gambit::SubSpectrumContents
 
 
 
@@ -123,4 +123,4 @@ Set the name of this Contents object (i.e. the name of the model to which this s
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

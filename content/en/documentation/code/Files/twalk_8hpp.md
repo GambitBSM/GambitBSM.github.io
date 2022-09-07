@@ -1,11 +1,11 @@
 ---
-title: 'file twalk/twalk.hpp'
+title: "file twalk/twalk.hpp"
 
 description: "[No description available]"
 
 ---
 
-# twalk/twalk.hpp
+# file twalk/twalk.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -408,4 +408,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

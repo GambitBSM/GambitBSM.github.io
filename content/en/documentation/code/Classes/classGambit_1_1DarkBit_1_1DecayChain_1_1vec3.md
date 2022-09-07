@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::DecayChain::vec3'
+title: "class Gambit::DarkBit::DecayChain::vec3"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::DecayChain::vec3
+# class Gambit::DarkBit::DecayChain::vec3
 
 
 
@@ -119,4 +119,4 @@ double[3] vals;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

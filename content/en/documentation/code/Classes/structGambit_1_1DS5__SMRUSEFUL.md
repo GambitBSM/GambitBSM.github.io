@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS5_SMRUSEFUL'
+title: "struct Gambit::DS5_SMRUSEFUL"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS5_SMRUSEFUL
+# struct Gambit::DS5_SMRUSEFUL
 
 
 
@@ -92,4 +92,4 @@ Fdouble cwmz;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::BaseLimitContainer'
-description: 'Base class for experimental limit curve interpolation. '
+title: "class Gambit::ColliderBit::BaseLimitContainer"
+description: "Base class for experimental limit curve interpolation. "
 
 ---
 
-# Gambit::ColliderBit::BaseLimitContainer
+# class Gambit::ColliderBit::BaseLimitContainer
 
 
 
@@ -205,4 +205,4 @@ P2 _externalPoint;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

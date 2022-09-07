@@ -1,11 +1,11 @@
 ---
-title: 'file coutprinter/coutprinter.cpp'
+title: "file coutprinter/coutprinter.cpp"
 
 description: "[No description available]"
 
 ---
 
-# coutprinter/coutprinter.cpp
+# file coutprinter/coutprinter.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -128,4 +128,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::MapTypes< DerivedSpec, MapTag::Get >'
+title: "struct Gambit::MapTypes< DerivedSpec, MapTag::Get >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::MapTypes< DerivedSpec, MapTag::Get >
+# struct Gambit::MapTypes< DerivedSpec, MapTag::Get >
 
 
 
@@ -305,4 +305,4 @@ typedef std::map<str, FInfo2I> Gambit::MapTypes< DerivedSpec, MapTag::Get >::fma
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

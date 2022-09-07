@@ -1,11 +1,11 @@
 ---
-title: 'class NormalDev'
+title: "class NormalDev"
 
 description: "[No description available]"
 
 ---
 
-# NormalDev
+# class NormalDev
 
 
 
@@ -83,4 +83,4 @@ inline double Dev()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

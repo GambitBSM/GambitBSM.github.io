@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::CosmoBit::Primordial_ps'
+title: "class Gambit::CosmoBit::Primordial_ps"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::CosmoBit::Primordial_ps
+# class Gambit::CosmoBit::Primordial_ps
 
 
 
@@ -156,4 +156,4 @@ inline int get_vec_size()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

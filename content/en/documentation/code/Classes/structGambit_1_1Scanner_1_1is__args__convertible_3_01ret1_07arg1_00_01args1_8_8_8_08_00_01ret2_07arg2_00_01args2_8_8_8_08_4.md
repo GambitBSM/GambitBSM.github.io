@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Scanner::is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)>'
+title: "struct Gambit::Scanner::is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)>"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)>
+# struct Gambit::Scanner::is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)>
 
 
 
@@ -40,4 +40,4 @@ static const bool value = __is_args_convertible__<std::is_convertible<arg1, arg2
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

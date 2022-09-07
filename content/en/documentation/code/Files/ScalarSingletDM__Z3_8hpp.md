@@ -1,11 +1,11 @@
 ---
-title: 'file models/ScalarSingletDM_Z3.hpp'
+title: "file models/ScalarSingletDM_Z3.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/ScalarSingletDM_Z3.hpp
+# file models/ScalarSingletDM_Z3.hpp
 
 [No description available]
 
@@ -101,4 +101,4 @@ Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk))
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

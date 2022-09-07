@@ -1,11 +1,11 @@
 ---
-title: 'file src/container_factory.cpp'
+title: "file src/container_factory.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/container_factory.cpp
+# file src/container_factory.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -139,4 +139,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

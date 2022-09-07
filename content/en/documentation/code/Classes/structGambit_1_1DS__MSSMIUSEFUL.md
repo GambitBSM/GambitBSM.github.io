@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_MSSMIUSEFUL'
+title: "struct Gambit::DS_MSSMIUSEFUL"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_MSSMIUSEFUL
+# struct Gambit::DS_MSSMIUSEFUL
 
 
 
@@ -36,4 +36,4 @@ Finteger kln;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::checkfavvio_type'
+title: "struct Gambit::checkfavvio_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::checkfavvio_type
+# struct Gambit::checkfavvio_type
 
 
 
@@ -36,4 +36,4 @@ Farray< Finteger, 1, 2 > imodfav;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

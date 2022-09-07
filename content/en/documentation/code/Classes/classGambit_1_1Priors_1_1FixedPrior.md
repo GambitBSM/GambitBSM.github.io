@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Priors::FixedPrior'
-description: 'A fixed parameter. '
+title: "class Gambit::Priors::FixedPrior"
+description: "A fixed parameter. "
 
 ---
 
-# Gambit::Priors::FixedPrior
+# class Gambit::Priors::FixedPrior
 
 
 
@@ -121,4 +121,4 @@ Transform from parameter back to unit hypercube.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

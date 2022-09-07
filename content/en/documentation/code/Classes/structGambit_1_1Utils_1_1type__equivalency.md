@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Utils::type_equivalency'
-description: 'Structure providing type equivalency classes to the dep resolver. '
+title: "struct Gambit::Utils::type_equivalency"
+description: "Structure providing type equivalency classes to the dep resolver. "
 
 ---
 
-# Gambit::Utils::type_equivalency
+# struct Gambit::Utils::type_equivalency
 
 
 
@@ -130,4 +130,4 @@ std::set< std::set< str > > equivalency_classes;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file models/HaloModels_Einasto.hpp'
+title: "file models/HaloModels_Einasto.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/HaloModels_Einasto.hpp
+# file models/HaloModels_Einasto.hpp
 
 [No description available]
 
@@ -110,4 +110,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

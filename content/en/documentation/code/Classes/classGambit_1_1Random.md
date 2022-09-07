@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Random'
+title: "class Gambit::Random"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Random
+# class Gambit::Random
 
 
 
@@ -55,4 +55,4 @@ Return a threadsafe wrapper for the chosen RNG engine (to be passed to e.g. std 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

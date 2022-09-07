@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::_err'
+title: "struct Gambit::_err"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::_err
+# struct Gambit::_err
 
 
 
@@ -52,4 +52,4 @@ struct _err * next;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

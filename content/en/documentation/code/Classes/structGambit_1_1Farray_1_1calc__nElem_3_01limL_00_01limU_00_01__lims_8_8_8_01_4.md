@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Farray::calc_nElem< limL, limU, _lims... >'
+title: "struct Gambit::Farray::calc_nElem< limL, limU, _lims... >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Farray::calc_nElem< limL, limU, _lims... >
+# struct Gambit::Farray::calc_nElem< limL, limU, _lims... >
 
 
 
@@ -39,4 +39,4 @@ struct Gambit::Farray::calc_nElem< limL, limU, _lims... >;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

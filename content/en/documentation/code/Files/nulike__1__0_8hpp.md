@@ -1,11 +1,11 @@
 ---
-title: 'file shared_includes/nulike_1_0.hpp'
+title: "file shared_includes/nulike_1_0.hpp"
 
 description: "[No description available]"
 
 ---
 
-# shared_includes/nulike_1_0.hpp
+# file shared_includes/nulike_1_0.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -82,4 +82,4 @@ BE_FUNCTION(nulike_lnpin,  double, (const int&, const double&, const double&, co
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

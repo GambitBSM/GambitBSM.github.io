@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::HDF5BufferBase'
-description: 'Base class for buffers. '
+title: "class Gambit::Printers::HDF5BufferBase"
+description: "Base class for buffers. "
 
 ---
 
-# Gambit::Printers::HDF5BufferBase
+# class Gambit::Printers::HDF5BufferBase
 
 
 
@@ -237,4 +237,4 @@ Buffer specifying whether the data in the primary buffer is "valid".
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

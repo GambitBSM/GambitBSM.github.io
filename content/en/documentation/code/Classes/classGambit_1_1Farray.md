@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Farray'
+title: "class Gambit::Farray"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Farray
+# class Gambit::Farray
 
 
 
@@ -157,4 +157,4 @@ T[nElem::val] array;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

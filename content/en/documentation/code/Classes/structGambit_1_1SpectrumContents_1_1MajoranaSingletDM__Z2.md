@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpectrumContents::MajoranaSingletDM_Z2'
+title: "struct Gambit::SpectrumContents::MajoranaSingletDM_Z2"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpectrumContents::MajoranaSingletDM_Z2
+# struct Gambit::SpectrumContents::MajoranaSingletDM_Z2
 
 
 
@@ -51,4 +51,4 @@ MajoranaSingletDM_Z2()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

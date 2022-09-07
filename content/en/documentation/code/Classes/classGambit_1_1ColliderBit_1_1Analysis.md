@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis'
-description: 'A class for collider analyses within ColliderBit. '
+title: "class Gambit::ColliderBit::Analysis"
+description: "A class for collider analyses within ColliderBit. "
 
 ---
 
-# Gambit::ColliderBit::Analysis
+# class Gambit::ColliderBit::Analysis
 
 
 
@@ -269,4 +269,4 @@ Reset the analysis-specific variables.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

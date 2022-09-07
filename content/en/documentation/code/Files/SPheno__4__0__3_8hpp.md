@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/SPheno_4_0_3.hpp'
+title: "file frontends/SPheno_4_0_3.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/SPheno_4_0_3.hpp
+# file frontends/SPheno_4_0_3.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -690,4 +690,4 @@ BE_CONV_FUNCTION(ErrorHandling, void, (const int&), "SPheno_internal")
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

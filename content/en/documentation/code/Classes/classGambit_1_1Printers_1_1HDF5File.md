@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Printers::HDF5File'
+title: "class Gambit::Printers::HDF5File"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::HDF5File
+# class Gambit::Printers::HDF5File
 
 
 
@@ -62,4 +62,4 @@ const hid_t location_id;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

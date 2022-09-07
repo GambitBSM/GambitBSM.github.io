@@ -1,11 +1,11 @@
 ---
-title: 'struct procRec'
+title: "struct procRec"
 
 description: "[No description available]"
 
 ---
 
-# procRec
+# struct procRec
 
 
 
@@ -44,4 +44,4 @@ numout * cc;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

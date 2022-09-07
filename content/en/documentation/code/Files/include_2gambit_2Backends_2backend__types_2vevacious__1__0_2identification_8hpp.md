@@ -1,11 +1,11 @@
 ---
-title: 'file vevacious_1_0/include/gambit/Backends/backend_types/vevacious_1_0/identification.hpp'
+title: "file vevacious_1_0/include/gambit/Backends/backend_types/vevacious_1_0/identification.hpp"
 
 description: "[No description available]"
 
 ---
 
-# vevacious_1_0/include/gambit/Backends/backend_types/vevacious_1_0/identification.hpp
+# file vevacious_1_0/include/gambit/Backends/backend_types/vevacious_1_0/identification.hpp
 
 [No description available]
 
@@ -87,4 +87,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

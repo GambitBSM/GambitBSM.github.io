@@ -1,11 +1,11 @@
 ---
-title: 'file test_functions/examples.cpp'
+title: "file test_functions/examples.cpp"
 
 description: "[No description available]"
 
 ---
 
-# test_functions/examples.cpp
+# file test_functions/examples.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -289,4 +289,4 @@ objective_plugin(flat_prior, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

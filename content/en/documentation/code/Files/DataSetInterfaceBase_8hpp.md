@@ -1,11 +1,11 @@
 ---
-title: 'file hdf5printer/DataSetInterfaceBase.hpp'
+title: "file hdf5printer/DataSetInterfaceBase.hpp"
 
 description: "[No description available]"
 
 ---
 
-# hdf5printer/DataSetInterfaceBase.hpp
+# file hdf5printer/DataSetInterfaceBase.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -467,4 +467,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

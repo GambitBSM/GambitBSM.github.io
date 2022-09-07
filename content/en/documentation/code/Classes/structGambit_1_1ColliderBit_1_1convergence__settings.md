@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::ColliderBit::convergence_settings'
-description: 'Type for holding Monte Carlo convergence settings. '
+title: "struct Gambit::ColliderBit::convergence_settings"
+description: "Type for holding Monte Carlo convergence settings. "
 
 ---
 
-# Gambit::ColliderBit::convergence_settings
+# struct Gambit::ColliderBit::convergence_settings
 
 
 
@@ -54,4 +54,4 @@ bool all_SR_must_converge;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

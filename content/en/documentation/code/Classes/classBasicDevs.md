@@ -1,11 +1,11 @@
 ---
-title: 'class BasicDevs'
+title: "class BasicDevs"
 
 description: "[No description available]"
 
 ---
 
-# BasicDevs
+# class BasicDevs
 
 
 
@@ -97,4 +97,4 @@ inline double ExpDev()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

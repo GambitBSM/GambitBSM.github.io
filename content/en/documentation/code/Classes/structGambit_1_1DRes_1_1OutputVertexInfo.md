@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DRes::OutputVertexInfo'
-description: 'Minimal info about outputVertices. '
+title: "struct Gambit::DRes::OutputVertexInfo"
+description: "Minimal info about outputVertices. "
 
 ---
 
-# Gambit::DRes::OutputVertexInfo
+# struct Gambit::DRes::OutputVertexInfo
 
 
 
@@ -38,4 +38,4 @@ const IniParser::ObservableType * iniEntry;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

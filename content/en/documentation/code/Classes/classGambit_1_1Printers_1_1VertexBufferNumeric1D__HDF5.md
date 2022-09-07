@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::VertexBufferNumeric1D_HDF5'
-description: 'VertexBuffer for simple numerical types - derived version that handles output to hdf5. '
+title: "class Gambit::Printers::VertexBufferNumeric1D_HDF5"
+description: "VertexBuffer for simple numerical types - derived version that handles output to hdf5. "
 
 ---
 
-# Gambit::Printers::VertexBufferNumeric1D_HDF5
+# class Gambit::Printers::VertexBufferNumeric1D_HDF5
 
 
 
@@ -327,4 +327,4 @@ virtual ulong get_dataset_length()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

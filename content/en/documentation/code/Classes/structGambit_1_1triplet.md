@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::triplet'
+title: "struct Gambit::triplet"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::triplet
+# struct Gambit::triplet
 
 
 
@@ -113,4 +113,4 @@ TYPE lower;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

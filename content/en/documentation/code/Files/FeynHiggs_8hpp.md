@@ -1,11 +1,11 @@
 ---
-title: 'file backend_types/FeynHiggs.hpp'
+title: "file backend_types/FeynHiggs.hpp"
 
 description: "[No description available]"
 
 ---
 
-# backend_types/FeynHiggs.hpp
+# file backend_types/FeynHiggs.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -792,4 +792,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

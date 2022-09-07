@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Printers::coutPrinter'
+title: "class Gambit::Printers::coutPrinter"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::coutPrinter
+# class Gambit::Printers::coutPrinter
 
 
 
@@ -209,4 +209,4 @@ Helper print functions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

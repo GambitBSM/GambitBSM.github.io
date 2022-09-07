@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Stats'
+title: "namespace Gambit::Stats"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Stats
+# namespace Gambit::Stats
 
 [No description available]
 
@@ -127,4 +127,4 @@ Minimum finite result returnable from log(double x);.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

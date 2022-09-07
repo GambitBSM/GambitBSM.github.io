@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Utils::threadsafe_rng'
+title: "class Gambit::Utils::threadsafe_rng"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Utils::threadsafe_rng
+# class Gambit::Utils::threadsafe_rng
 
 
 
@@ -91,4 +91,4 @@ static inline constexpr result_type max()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

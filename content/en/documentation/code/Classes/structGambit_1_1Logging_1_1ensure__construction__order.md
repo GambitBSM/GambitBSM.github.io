@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Logging::ensure_construction_order'
+title: "struct Gambit::Logging::ensure_construction_order"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Logging::ensure_construction_order
+# struct Gambit::Logging::ensure_construction_order
 
 
 
@@ -28,4 +28,4 @@ inline ensure_construction_order()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

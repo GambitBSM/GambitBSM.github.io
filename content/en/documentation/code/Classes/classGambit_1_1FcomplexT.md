@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::FcomplexT'
+title: "class Gambit::FcomplexT"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::FcomplexT
+# class Gambit::FcomplexT
 
 
 
@@ -191,4 +191,4 @@ T im;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

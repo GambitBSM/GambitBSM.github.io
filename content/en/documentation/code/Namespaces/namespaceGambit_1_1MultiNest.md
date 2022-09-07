@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::MultiNest'
+title: "namespace Gambit::MultiNest"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::MultiNest
+# namespace Gambit::MultiNest
 
 [No description available]
 
@@ -97,4 +97,4 @@ Global pointer to loglikelihood wrapper object, for use in the MultiNest callbac
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

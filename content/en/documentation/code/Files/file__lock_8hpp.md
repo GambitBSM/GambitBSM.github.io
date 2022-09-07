@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/file_lock.hpp'
+title: "file Utils/file_lock.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/file_lock.hpp
+# file Utils/file_lock.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -158,4 +158,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

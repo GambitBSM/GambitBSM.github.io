@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::WDInterpolator'
+title: "class Gambit::DarkBit::WDInterpolator"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::WDInterpolator
+# class Gambit::DarkBit::WDInterpolator
 
 
 
@@ -44,4 +44,4 @@ inline double evaluate(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

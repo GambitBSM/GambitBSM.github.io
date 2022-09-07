@@ -1,11 +1,11 @@
 ---
-title: 'file Backends/include/gambit/Backends/wrapperbase.hpp'
+title: "file Backends/include/gambit/Backends/wrapperbase.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Backends/include/gambit/Backends/wrapperbase.hpp
+# file Backends/include/gambit/Backends/wrapperbase.hpp
 
 [No description available]
 
@@ -51,4 +51,4 @@ class WrapperBase
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

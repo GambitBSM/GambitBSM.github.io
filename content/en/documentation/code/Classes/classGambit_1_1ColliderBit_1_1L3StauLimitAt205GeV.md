@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::L3StauLimitAt205GeV'
-description: 'A class to contain the limit data from L3_PLB580_2004_37, figure 2c. '
+title: "class Gambit::ColliderBit::L3StauLimitAt205GeV"
+description: "A class to contain the limit data from L3_PLB580_2004_37, figure 2c. "
 
 ---
 
-# Gambit::ColliderBit::L3StauLimitAt205GeV
+# class Gambit::ColliderBit::L3StauLimitAt205GeV
 
 
 
@@ -95,4 +95,4 @@ L3StauLimitAt205GeV()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

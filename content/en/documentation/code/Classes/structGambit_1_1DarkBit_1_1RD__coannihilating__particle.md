@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::RD_coannihilating_particle'
+title: "struct Gambit::DarkBit::RD_coannihilating_particle"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::RD_coannihilating_particle
+# struct Gambit::DarkBit::RD_coannihilating_particle
 
 
 
@@ -71,4 +71,4 @@ double mass;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

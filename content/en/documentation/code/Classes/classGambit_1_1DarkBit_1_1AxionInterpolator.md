@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::AxionInterpolator'
+title: "class Gambit::DarkBit::AxionInterpolator"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::AxionInterpolator
+# class Gambit::DarkBit::AxionInterpolator
 
 
 
@@ -115,4 +115,4 @@ double upper()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

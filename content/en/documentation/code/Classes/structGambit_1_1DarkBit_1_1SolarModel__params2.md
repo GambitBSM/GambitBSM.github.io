@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkBit::SolarModel_params2'
+title: "struct Gambit::DarkBit::SolarModel_params2"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::SolarModel_params2
+# struct Gambit::DarkBit::SolarModel_params2
 
 
 
@@ -44,4 +44,4 @@ SolarModel * sol;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

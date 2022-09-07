@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::FlavBit::Penguins'
+title: "namespace Gambit::FlavBit::Penguins"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::FlavBit::Penguins
+# namespace Gambit::FlavBit::Penguins
 
 [No description available]
 
@@ -363,4 +363,4 @@ complex< double > ShsumRR(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::functor'
-description: 'Function wrapper (functor) base class. '
+title: "class Gambit::functor"
+description: "Function wrapper (functor) base class. "
 
 ---
 
-# Gambit::functor
+# class Gambit::functor
 
 
 
@@ -1265,4 +1265,4 @@ Map from model group names to group contents.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file Utils/interp_collection.hpp'
+title: "file Utils/interp_collection.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Utils/interp_collection.hpp
+# file Utils/interp_collection.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -182,4 +182,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

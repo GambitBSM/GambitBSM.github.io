@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::IniParser'
+title: "namespace Gambit::IniParser"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::IniParser
+# namespace Gambit::IniParser
 
 [No description available]
 
@@ -100,4 +100,4 @@ void recursiveImport(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

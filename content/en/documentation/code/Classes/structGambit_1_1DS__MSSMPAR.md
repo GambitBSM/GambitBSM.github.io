@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_MSSMPAR'
+title: "struct Gambit::DS_MSSMPAR"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_MSSMPAR
+# struct Gambit::DS_MSSMPAR
 
 
 
@@ -132,4 +132,4 @@ Farray< Fdouble, 1, 3 > asofte;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

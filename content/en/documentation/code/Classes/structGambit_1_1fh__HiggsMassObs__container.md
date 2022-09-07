@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::fh_HiggsMassObs_container'
+title: "struct Gambit::fh_HiggsMassObs_container"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::fh_HiggsMassObs_container
+# struct Gambit::fh_HiggsMassObs_container
 
 
 
@@ -84,4 +84,4 @@ fh_complex[3][3] deltaZH;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

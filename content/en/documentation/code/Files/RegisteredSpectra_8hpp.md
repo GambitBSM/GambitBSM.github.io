@@ -1,11 +1,11 @@
 ---
-title: 'file SpectrumContents/RegisteredSpectra.hpp'
+title: "file SpectrumContents/RegisteredSpectra.hpp"
 
 description: "[No description available]"
 
 ---
 
-# SpectrumContents/RegisteredSpectra.hpp
+# file SpectrumContents/RegisteredSpectra.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -125,4 +125,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

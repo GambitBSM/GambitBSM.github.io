@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DRes::edgeWriter'
+title: "class Gambit::DRes::edgeWriter"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DRes::edgeWriter
+# class Gambit::DRes::edgeWriter
 
 
 
@@ -41,4 +41,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

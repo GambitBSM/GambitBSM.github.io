@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::invalid_point_exception'
-description: '[Gambit](/documentation/code/namespaces/namespacegambit/) invalid point exception class. '
+title: "class Gambit::invalid_point_exception"
+description: "[Gambit](/documentation/code/namespaces/namespacegambit/) invalid point exception class. "
 
 ---
 
-# Gambit::invalid_point_exception
+# class Gambit::invalid_point_exception
 
 
 
@@ -114,4 +114,4 @@ Raise the invalid point exception, i.e. throw it with a message and a code.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

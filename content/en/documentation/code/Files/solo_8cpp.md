@@ -1,11 +1,11 @@
 ---
-title: 'file examples/solo.cpp'
+title: "file examples/solo.cpp"
 
 description: "[No description available]"
 
 ---
 
-# examples/solo.cpp
+# file examples/solo.cpp
 
 [No description available]
 
@@ -338,4 +338,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

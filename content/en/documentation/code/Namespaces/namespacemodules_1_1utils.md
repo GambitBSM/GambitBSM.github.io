@@ -1,11 +1,11 @@
 ---
-title: 'namespace modules::utils'
+title: "namespace modules::utils"
 
 description: "[No description available]"
 
 ---
 
-# modules::utils
+# namespace modules::utils
 
 [No description available]
 
@@ -958,4 +958,4 @@ cfg =  importlib.import_module("configs." + modules.active_cfg.module_name);
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

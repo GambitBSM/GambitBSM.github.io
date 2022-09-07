@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Printers::BaseBasePrinter'
+title: "class Gambit::Printers::BaseBasePrinter"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::BaseBasePrinter
+# class Gambit::Printers::BaseBasePrinter
 
 
 
@@ -283,4 +283,4 @@ Counter for printer cooldown. If non-zero printer can be disabled for a fixed nu
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

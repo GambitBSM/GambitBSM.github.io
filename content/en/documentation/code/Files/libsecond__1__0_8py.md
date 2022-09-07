@@ -1,11 +1,11 @@
 ---
-title: 'file 1.0/libsecond_1_0.py'
+title: "file 1.0/libsecond_1_0.py"
 
 description: "[No description available]"
 
 ---
 
-# 1.0/libsecond_1_0.py
+# file 1.0/libsecond_1_0.py
 
 [No description available]
 
@@ -81,4 +81,4 @@ def returnResult():
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

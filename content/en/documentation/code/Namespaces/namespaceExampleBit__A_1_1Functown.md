@@ -1,11 +1,11 @@
 ---
-title: 'namespace ExampleBit_A::Functown'
+title: "namespace ExampleBit_A::Functown"
 
 description: "[No description available]"
 
 ---
 
-# ExampleBit_A::Functown
+# namespace ExampleBit_A::Functown
 
 [No description available]
 
@@ -16,4 +16,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

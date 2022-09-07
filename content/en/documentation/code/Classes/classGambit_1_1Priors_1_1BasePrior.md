@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Priors::BasePrior'
-description: 'Abstract base class for priors. '
+title: "class Gambit::Priors::BasePrior"
+description: "Abstract base class for priors. "
 
 ---
 
-# Gambit::Priors::BasePrior
+# class Gambit::Priors::BasePrior
 
 
 
@@ -175,4 +175,4 @@ std::vector< std::string > param_names;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

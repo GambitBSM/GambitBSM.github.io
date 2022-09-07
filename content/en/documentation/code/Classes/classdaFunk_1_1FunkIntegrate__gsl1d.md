@@ -1,11 +1,11 @@
 ---
-title: 'class daFunk::FunkIntegrate_gsl1d'
+title: "class daFunk::FunkIntegrate_gsl1d"
 
 description: "[No description available]"
 
 ---
 
-# daFunk::FunkIntegrate_gsl1d
+# class daFunk::FunkIntegrate_gsl1d
 
 
 
@@ -271,4 +271,4 @@ inline virtual double value(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

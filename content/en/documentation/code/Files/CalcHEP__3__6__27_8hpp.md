@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/CalcHEP_3_6_27.hpp'
+title: "file frontends/CalcHEP_3_6_27.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/CalcHEP_3_6_27.hpp
+# file frontends/CalcHEP_3_6_27.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -140,4 +140,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(DMEFT_spectrum, Spectrum, DMEFT)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/LibFirst_1_0.hpp'
+title: "file frontends/LibFirst_1_0.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/LibFirst_1_0.hpp
+# file frontends/LibFirst_1_0.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -218,4 +218,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

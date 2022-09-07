@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Priors::logprior'
+title: "struct Gambit::Priors::logprior"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Priors::logprior
+# struct Gambit::Priors::logprior
 
 
 
@@ -50,4 +50,4 @@ static inline double prior(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

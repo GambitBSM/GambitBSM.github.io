@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::SpecBit::ScalarSingletDM_Z2Spec'
+title: "class Gambit::SpecBit::ScalarSingletDM_Z2Spec"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecBit::ScalarSingletDM_Z2Spec
+# class Gambit::SpecBit::ScalarSingletDM_Z2Spec
 
 
 
@@ -385,4 +385,4 @@ DummyInput dummyinput;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

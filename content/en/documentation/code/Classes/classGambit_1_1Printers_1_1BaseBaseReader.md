@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Printers::BaseBaseReader'
+title: "class Gambit::Printers::BaseBaseReader"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::BaseBaseReader
+# class Gambit::Printers::BaseBaseReader
 
 
 
@@ -281,4 +281,4 @@ Default _retrieve function. Throws an error if no virtual function matching the 
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

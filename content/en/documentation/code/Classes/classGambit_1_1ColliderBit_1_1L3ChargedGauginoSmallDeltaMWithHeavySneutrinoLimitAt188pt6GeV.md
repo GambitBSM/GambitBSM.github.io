@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::L3ChargedGauginoSmallDeltaMWithHeavySneutrinoLimitAt188pt6GeV'
-description: 'A class to contain the limit data from L3PLB_482_2000_31, figure 5a. '
+title: "class Gambit::ColliderBit::L3ChargedGauginoSmallDeltaMWithHeavySneutrinoLimitAt188pt6GeV"
+description: "A class to contain the limit data from L3PLB_482_2000_31, figure 5a. "
 
 ---
 
-# Gambit::ColliderBit::L3ChargedGauginoSmallDeltaMWithHeavySneutrinoLimitAt188pt6GeV
+# class Gambit::ColliderBit::L3ChargedGauginoSmallDeltaMWithHeavySneutrinoLimitAt188pt6GeV
 
 
 
@@ -95,4 +95,4 @@ L3ChargedGauginoSmallDeltaMWithHeavySneutrinoLimitAt188pt6GeV()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

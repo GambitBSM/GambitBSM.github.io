@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Diver_1_0_0::diverScanData'
-description: 'Structure for passing likelihood and printer data through Diver to the objective function. '
+title: "struct Gambit::Diver_1_0_0::diverScanData"
+description: "Structure for passing likelihood and printer data through Diver to the objective function. "
 
 ---
 
-# Gambit::Diver_1_0_0::diverScanData
+# struct Gambit::Diver_1_0_0::diverScanData
 
 
 
@@ -38,4 +38,4 @@ Scanner::printer_interface * printer;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

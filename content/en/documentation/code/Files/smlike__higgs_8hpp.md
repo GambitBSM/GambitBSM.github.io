@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/smlike_higgs.hpp'
+title: "file Elements/smlike_higgs.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/smlike_higgs.hpp
+# file Elements/smlike_higgs.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -85,4 +85,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

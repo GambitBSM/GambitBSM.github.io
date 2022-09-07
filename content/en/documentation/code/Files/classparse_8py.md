@@ -1,11 +1,11 @@
 ---
-title: 'file modules/classparse.py'
+title: "file modules/classparse.py"
 
 description: "[No description available]"
 
 ---
 
-# modules/classparse.py
+# file modules/classparse.py
 
 [No description available]
 
@@ -941,4 +941,4 @@ def addWrapperTypedefs(class_name, namespaces):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

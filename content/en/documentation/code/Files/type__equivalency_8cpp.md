@@ -1,11 +1,11 @@
 ---
-title: 'file src/type_equivalency.cpp'
+title: "file src/type_equivalency.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/type_equivalency.cpp
+# file src/type_equivalency.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -165,4 +165,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

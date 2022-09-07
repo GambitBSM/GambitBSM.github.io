@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Models::PARENT'
+title: "namespace Gambit::Models::PARENT"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Models::PARENT
+# namespace Gambit::Models::PARENT
 
 [No description available]
 
@@ -31,4 +31,4 @@ const std::vector< std::string > lineage;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

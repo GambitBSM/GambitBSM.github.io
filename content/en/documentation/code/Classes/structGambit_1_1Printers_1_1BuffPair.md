@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Printers::BuffPair'
+title: "struct Gambit::Printers::BuffPair"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::BuffPair
+# struct Gambit::Printers::BuffPair
 
 
 
@@ -80,4 +80,4 @@ DataSetInterfaceScalar< int, CHUNKLENGTH > isvalid;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

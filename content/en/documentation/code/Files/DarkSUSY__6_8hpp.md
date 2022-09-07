@@ -1,11 +1,11 @@
 ---
-title: 'file shared_includes/DarkSUSY_6.hpp'
+title: "file shared_includes/DarkSUSY_6.hpp"
 
 description: "[No description available]"
 
 ---
 
-# shared_includes/DarkSUSY_6.hpp
+# file shared_includes/DarkSUSY_6.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -220,4 +220,4 @@ BE_CONV_FUNCTION(dsgenericwimp_nusetup, void, (const double(&)[29], const double
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

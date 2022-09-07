@@ -1,11 +1,11 @@
 ---
-title: 'class MontePythonLike::Likelihood_sn'
+title: "class MontePythonLike::Likelihood_sn"
 
 description: "[No description available]"
 
 ---
 
-# MontePythonLike::Likelihood_sn
+# class MontePythonLike::Likelihood_sn
 
 
 
@@ -309,4 +309,4 @@ Read the file jla_lcparams.txt containing the SN data
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

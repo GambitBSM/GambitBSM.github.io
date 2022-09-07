@@ -1,11 +1,11 @@
 ---
-title: 'class WrapperBase'
+title: "class WrapperBase"
 
 description: "[No description available]"
 
 ---
 
-# WrapperBase
+# class WrapperBase
 
 
 
@@ -115,4 +115,4 @@ bool delete_BEptr;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

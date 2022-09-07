@@ -1,11 +1,11 @@
 ---
-title: 'class daFunk::ThrowError'
+title: "class daFunk::ThrowError"
 
 description: "[No description available]"
 
 ---
 
-# daFunk::ThrowError
+# class daFunk::ThrowError
 
 
 
@@ -91,4 +91,4 @@ inline virtual double value(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

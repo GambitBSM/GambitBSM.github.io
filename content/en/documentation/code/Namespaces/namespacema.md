@@ -1,11 +1,11 @@
 ---
-title: 'namespace ma'
+title: "namespace ma"
 
 description: "[No description available]"
 
 ---
 
-# ma
+# namespace ma
 
 [No description available]
 
@@ -31,4 +31,4 @@ character *4 function text()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

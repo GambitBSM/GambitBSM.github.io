@@ -1,11 +1,11 @@
 ---
-title: 'struct my_func'
+title: "struct my_func"
 
 description: "[No description available]"
 
 ---
 
-# my_func
+# struct my_func
 
 
 
@@ -101,4 +101,4 @@ double sign;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

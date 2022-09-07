@@ -1,11 +1,11 @@
 ---
-title: 'namespace configs::pythia_8_212_nohepmc'
+title: "namespace configs::pythia_8_212_nohepmc"
 
 description: "[No description available]"
 
 ---
 
-# configs::pythia_8_212_nohepmc
+# namespace configs::pythia_8_212_nohepmc
 
 [No description available]
 
@@ -232,4 +232,4 @@ list pragmas_end =  [];
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

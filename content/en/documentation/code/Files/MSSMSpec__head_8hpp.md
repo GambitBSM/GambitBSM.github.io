@@ -1,11 +1,11 @@
 ---
-title: 'file SpecBit/MSSMSpec_head.hpp'
+title: "file SpecBit/MSSMSpec_head.hpp"
 
 description: "[No description available]"
 
 ---
 
-# SpecBit/MSSMSpec_head.hpp
+# file SpecBit/MSSMSpec_head.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -335,4 +335,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

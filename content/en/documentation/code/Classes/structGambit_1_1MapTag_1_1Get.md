@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::MapTag::Get'
+title: "struct Gambit::MapTag::Get"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::MapTag::Get
+# struct Gambit::MapTag::Get
 
 
 
@@ -13,4 +13,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

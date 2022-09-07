@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::ColliderBit::DMEFT_analysis_info'
+title: "class Gambit::ColliderBit::DMEFT_analysis_info"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::DMEFT_analysis_info
+# class Gambit::ColliderBit::DMEFT_analysis_info
 
 
 
@@ -170,4 +170,4 @@ std::map< str, std::unique_ptr< Utils::interp2d_collection > > interp2d;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

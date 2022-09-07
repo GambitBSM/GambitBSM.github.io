@@ -1,11 +1,11 @@
 ---
-title: 'file models/MSSM63atMSUSY.hpp'
+title: "file models/MSSM63atMSUSY.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/MSSM63atMSUSY.hpp
+# file models/MSSM63atMSUSY.hpp
 
 [No description available]
 
@@ -364,4 +364,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

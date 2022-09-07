@@ -1,11 +1,11 @@
 ---
-title: 'file Core/error_handlers.hpp'
+title: "file Core/error_handlers.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Core/error_handlers.hpp
+# file Core/error_handlers.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -87,4 +87,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

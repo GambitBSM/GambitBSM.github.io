@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::FcnInfo2'
+title: "struct Gambit::FcnInfo2"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::FcnInfo2
+# struct Gambit::FcnInfo2
 
 
 
@@ -78,4 +78,4 @@ std::set< int > iset2;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

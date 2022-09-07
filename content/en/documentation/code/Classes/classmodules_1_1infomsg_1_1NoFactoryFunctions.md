@@ -1,11 +1,11 @@
 ---
-title: 'class modules::infomsg::NoFactoryFunctions'
+title: "class modules::infomsg::NoFactoryFunctions"
 
 description: "[No description available]"
 
 ---
 
-# modules::infomsg::NoFactoryFunctions
+# class modules::infomsg::NoFactoryFunctions
 
 
 
@@ -85,4 +85,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

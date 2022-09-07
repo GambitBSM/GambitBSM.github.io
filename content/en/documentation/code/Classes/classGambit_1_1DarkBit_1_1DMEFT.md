@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::DMEFT'
+title: "class Gambit::DarkBit::DMEFT"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::DMEFT
+# class Gambit::DarkBit::DMEFT
 
 
 
@@ -53,4 +53,4 @@ Returns sigma*v for a given channel.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

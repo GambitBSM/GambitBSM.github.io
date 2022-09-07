@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::ColliderBit::EventConversion'
+title: "namespace Gambit::ColliderBit::EventConversion"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::EventConversion
+# namespace Gambit::ColliderBit::EventConversion
 
 [No description available]
 
@@ -285,4 +285,4 @@ inline void get_unified_child_ids(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

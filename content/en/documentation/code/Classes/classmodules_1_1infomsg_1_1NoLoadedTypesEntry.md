@@ -1,11 +1,11 @@
 ---
-title: 'class modules::infomsg::NoLoadedTypesEntry'
+title: "class modules::infomsg::NoLoadedTypesEntry"
 
 description: "[No description available]"
 
 ---
 
-# modules::infomsg::NoLoadedTypesEntry
+# class modules::infomsg::NoLoadedTypesEntry
 
 
 
@@ -85,4 +85,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

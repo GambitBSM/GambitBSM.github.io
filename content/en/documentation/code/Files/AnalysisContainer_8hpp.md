@@ -1,11 +1,11 @@
 ---
-title: 'file analyses/AnalysisContainer.hpp'
+title: "file analyses/AnalysisContainer.hpp"
 
 description: "[No description available]"
 
 ---
 
-# analyses/AnalysisContainer.hpp
+# file analyses/AnalysisContainer.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -221,4 +221,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

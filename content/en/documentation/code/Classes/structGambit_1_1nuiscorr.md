@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::nuiscorr'
+title: "struct Gambit::nuiscorr"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::nuiscorr
+# struct Gambit::nuiscorr
 
 
 
@@ -44,4 +44,4 @@ double value;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

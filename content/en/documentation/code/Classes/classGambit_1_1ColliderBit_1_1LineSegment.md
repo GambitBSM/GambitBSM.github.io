@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::LineSegment'
-description: 'A simple container for a line segment on an xy plane. '
+title: "class Gambit::ColliderBit::LineSegment"
+description: "A simple container for a line segment on an xy plane. "
 
 ---
 
-# Gambit::ColliderBit::LineSegment
+# class Gambit::ColliderBit::LineSegment
 
 
 
@@ -200,4 +200,4 @@ Determine if this intersects with other and where.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

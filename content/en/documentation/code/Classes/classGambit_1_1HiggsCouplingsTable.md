@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::HiggsCouplingsTable'
-description: 'GAMBIT native higgs coupling table class. '
+title: "class Gambit::HiggsCouplingsTable"
+description: "GAMBIT native higgs coupling table class. "
 
 ---
 
-# Gambit::HiggsCouplingsTable
+# class Gambit::HiggsCouplingsTable
 
 
 
@@ -391,4 +391,4 @@ Particles that higgses can decay invisibly to.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

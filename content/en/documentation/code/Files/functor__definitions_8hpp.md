@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/functor_definitions.hpp'
+title: "file Elements/functor_definitions.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/functor_definitions.hpp
+# file Elements/functor_definitions.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -405,4 +405,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

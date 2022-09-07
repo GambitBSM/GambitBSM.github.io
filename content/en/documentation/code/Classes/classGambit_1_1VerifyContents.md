@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::VerifyContents'
+title: "class Gambit::VerifyContents"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::VerifyContents
+# class Gambit::VerifyContents
 
 
 
@@ -43,4 +43,4 @@ inline VerifyContents(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

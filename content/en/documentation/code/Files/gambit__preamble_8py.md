@@ -1,11 +1,11 @@
 ---
-title: 'file scripts/gambit_preamble.py'
+title: "file scripts/gambit_preamble.py"
 
 description: "[No description available]"
 
 ---
 
-# scripts/gambit_preamble.py
+# file scripts/gambit_preamble.py
 
 [No description available]
 
@@ -80,4 +80,4 @@ def signed_sqrt(x):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

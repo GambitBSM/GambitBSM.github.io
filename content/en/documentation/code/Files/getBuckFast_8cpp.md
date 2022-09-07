@@ -1,11 +1,11 @@
 ---
-title: 'file src/getBuckFast.cpp'
+title: "file src/getBuckFast.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/getBuckFast.cpp
+# file src/getBuckFast.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -158,4 +158,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

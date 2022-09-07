@@ -1,11 +1,11 @@
 ---
-title: 'file src/DarkBit/src/SuperRenormHP.cpp'
+title: "file src/DarkBit/src/SuperRenormHP.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/DarkBit/src/SuperRenormHP.cpp
+# file src/DarkBit/src/SuperRenormHP.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -835,4 +835,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

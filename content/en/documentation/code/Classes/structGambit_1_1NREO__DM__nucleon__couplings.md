@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::NREO_DM_nucleon_couplings'
-description: 'Container for effective non-relativistic DM-nucleon Wilson coefficients. '
+title: "struct Gambit::NREO_DM_nucleon_couplings"
+description: "Container for effective non-relativistic DM-nucleon Wilson coefficients. "
 
 ---
 
-# Gambit::NREO_DM_nucleon_couplings
+# struct Gambit::NREO_DM_nucleon_couplings
 
 
 
@@ -96,4 +96,4 @@ std::map< int, double > c1;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

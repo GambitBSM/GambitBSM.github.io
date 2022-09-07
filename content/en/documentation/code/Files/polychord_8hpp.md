@@ -1,11 +1,11 @@
 ---
-title: 'file polychord/polychord.hpp'
+title: "file polychord/polychord.hpp"
 
 description: "[No description available]"
 
 ---
 
-# polychord/polychord.hpp
+# file polychord/polychord.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -218,4 +218,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

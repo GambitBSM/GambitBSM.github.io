@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Likelihood_Container_Factory'
+title: "class Gambit::Likelihood_Container_Factory"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Likelihood_Container_Factory
+# class Gambit::Likelihood_Container_Factory
 
 
 
@@ -65,4 +65,4 @@ virtual void * operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

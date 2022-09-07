@@ -1,11 +1,11 @@
 ---
-title: 'class daFunk::FunkPlain'
+title: "class daFunk::FunkPlain"
 
 description: "[No description available]"
 
 ---
 
-# daFunk::FunkPlain
+# class daFunk::FunkPlain
 
 
 
@@ -231,4 +231,4 @@ static inline double plain4(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct YAML::convert< sdd >'
+title: "struct YAML::convert< sdd >"
 
 description: "[No description available]"
 
 ---
 
-# YAML::convert< sdd >
+# struct YAML::convert< sdd >
 
 
 
@@ -41,4 +41,4 @@ static inline bool decode(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

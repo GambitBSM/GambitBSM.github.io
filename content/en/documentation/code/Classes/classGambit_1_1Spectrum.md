@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Spectrum'
-description: '"Standard Model" (low-energy) plus high-energy model container class '
+title: "class Gambit::Spectrum"
+description: "Standard Model (low-energy) plus high-energy model container class "
 
 ---
 
-# Gambit::Spectrum
+# class Gambit::Spectrum
 
 
 
@@ -653,4 +653,4 @@ Swap resources of two [Spectrum](/documentation/code/classes/classgambit_1_1spec
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

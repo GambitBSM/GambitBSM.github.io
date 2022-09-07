@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::OPALDegenerateCharginoLimitAt208GeV'
-description: 'A class to contain the limit data from OPAL, hep-ex/0210043, figure 5a (in colour) '
+title: "class Gambit::ColliderBit::OPALDegenerateCharginoLimitAt208GeV"
+description: "A class to contain the limit data from OPAL, hep-ex/0210043, figure 5a (in colour) "
 
 ---
 
-# Gambit::ColliderBit::OPALDegenerateCharginoLimitAt208GeV
+# class Gambit::ColliderBit::OPALDegenerateCharginoLimitAt208GeV
 
 
 
@@ -109,4 +109,4 @@ Plots only go down to 45 GeV
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

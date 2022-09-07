@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::sd_gluiwidth_type'
+title: "struct Gambit::sd_gluiwidth_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::sd_gluiwidth_type
+# struct Gambit::sd_gluiwidth_type
 
 
 
@@ -28,4 +28,4 @@ Fdouble gluitot;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

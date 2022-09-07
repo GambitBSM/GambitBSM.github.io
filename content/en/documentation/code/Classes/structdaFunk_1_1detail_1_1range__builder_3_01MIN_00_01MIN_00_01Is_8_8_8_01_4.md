@@ -1,11 +1,11 @@
 ---
-title: 'struct daFunk::detail::range_builder< MIN, MIN, Is... >'
+title: "struct daFunk::detail::range_builder< MIN, MIN, Is... >"
 
 description: "[No description available]"
 
 ---
 
-# daFunk::detail::range_builder< MIN, MIN, Is... >
+# struct daFunk::detail::range_builder< MIN, MIN, Is... >
 
 
 
@@ -36,4 +36,4 @@ typedef index_list<Is...> daFunk::detail::range_builder< MIN, MIN, Is... >::type
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::wisusy_hdec_type'
+title: "struct Gambit::wisusy_hdec_type"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::wisusy_hdec_type
+# struct Gambit::wisusy_hdec_type
 
 
 
@@ -252,4 +252,4 @@ Fdouble hlbrsqt;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

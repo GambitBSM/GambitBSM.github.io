@@ -1,11 +1,11 @@
 ---
-title: 'file src/wimp_types.cpp'
+title: "file src/wimp_types.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/wimp_types.cpp
+# file src/wimp_types.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -111,4 +111,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

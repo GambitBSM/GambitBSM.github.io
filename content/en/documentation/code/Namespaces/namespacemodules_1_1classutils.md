@@ -1,11 +1,11 @@
 ---
-title: 'namespace modules::classutils'
+title: "namespace modules::classutils"
 
 description: "[No description available]"
 
 ---
 
-# modules::classutils
+# namespace modules::classutils
 
 [No description available]
 
@@ -318,4 +318,4 @@ def isAcceptedMemberVariable(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

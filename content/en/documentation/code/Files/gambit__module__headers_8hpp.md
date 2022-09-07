@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/gambit_module_headers.hpp'
+title: "file Elements/gambit_module_headers.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/gambit_module_headers.hpp
+# file Elements/gambit_module_headers.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -86,4 +86,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

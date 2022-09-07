@@ -1,11 +1,11 @@
 ---
-title: 'file simple/raster.cpp'
+title: "file simple/raster.cpp"
 
 description: "[No description available]"
 
 ---
 
-# simple/raster.cpp
+# file simple/raster.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -156,4 +156,4 @@ scanner_plugin(raster, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::FptrFinder'
-description: 'Forward declaration of [FptrFinder](). '
+title: "class Gambit::FptrFinder"
+description: "Forward declaration of [FptrFinder](). "
 
 ---
 
-# Gambit::FptrFinder
+# class Gambit::FptrFinder
 
 
 
@@ -299,4 +299,4 @@ friend class CallFcn< HostSpec, MTag >(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

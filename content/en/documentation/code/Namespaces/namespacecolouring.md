@@ -1,11 +1,11 @@
 ---
-title: 'namespace colouring'
+title: "namespace colouring"
 
 description: "[No description available]"
 
 ---
 
-# colouring
+# namespace colouring
 
 [No description available]
 
@@ -138,4 +138,4 @@ n_threads =  cpu_count();
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

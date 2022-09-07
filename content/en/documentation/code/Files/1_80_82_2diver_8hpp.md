@@ -1,11 +1,11 @@
 ---
-title: 'file 1.0.2/1.0.2/diver.hpp'
+title: "file 1.0.2/1.0.2/diver.hpp"
 
 description: "[No description available]"
 
 ---
 
-# 1.0.2/1.0.2/diver.hpp
+# file 1.0.2/1.0.2/diver.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -156,4 +156,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

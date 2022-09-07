@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Scanner::Scan_Manager'
+title: "class Gambit::Scanner::Scan_Manager"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Scan_Manager
+# class Gambit::Scanner::Scan_Manager
 
 
 
@@ -48,4 +48,4 @@ int Run()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

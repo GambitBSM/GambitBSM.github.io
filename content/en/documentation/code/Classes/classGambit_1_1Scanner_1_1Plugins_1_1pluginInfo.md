@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Plugins::pluginInfo'
-description: 'Container for all the plugin info from the inifile and Scannerbit. '
+title: "class Gambit::Scanner::Plugins::pluginInfo"
+description: "Container for all the plugin info from the inifile and Scannerbit. "
 
 ---
 
-# Gambit::Scanner::Plugins::pluginInfo
+# class Gambit::Scanner::Plugins::pluginInfo
 
 
 
@@ -217,4 +217,4 @@ Get plugin data for single plugin.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

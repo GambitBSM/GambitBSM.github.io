@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DS_RDPARS'
+title: "struct Gambit::DS_RDPARS"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DS_RDPARS
+# struct Gambit::DS_RDPARS
 
 
 
@@ -132,4 +132,4 @@ Fdouble pmax;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

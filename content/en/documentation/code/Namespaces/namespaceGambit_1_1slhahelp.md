@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::slhahelp'
+title: "namespace Gambit::slhahelp"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::slhahelp
+# namespace Gambit::slhahelp
 
 [No description available]
 
@@ -859,4 +859,4 @@ const std::map< str, std::vector< str > > type_to_vec_of_gauge_es = init_type_to
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file models/VectorSingletDM_Z2.hpp'
+title: "file models/VectorSingletDM_Z2.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/VectorSingletDM_Z2.hpp
+# file models/VectorSingletDM_Z2.hpp
 
 [No description available]
 
@@ -81,4 +81,4 @@ Ankit Beniwal 2016 August, 2017 June
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::SMea'
+title: "class Gambit::SMea"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SMea
+# class Gambit::SMea
 
 
 
@@ -284,4 +284,4 @@ double get_alphaS() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

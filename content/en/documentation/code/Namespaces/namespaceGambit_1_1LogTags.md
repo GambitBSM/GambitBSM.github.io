@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::LogTags'
+title: "namespace Gambit::LogTags"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::LogTags
+# namespace Gambit::LogTags
 
 [No description available]
 
@@ -50,4 +50,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

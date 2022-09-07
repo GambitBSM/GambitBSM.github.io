@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Scanner::Plugins::Plugin_Details'
-description: 'container info for a specific plugin '
+title: "struct Gambit::Scanner::Plugins::Plugin_Details"
+description: "container info for a specific plugin "
 
 ---
 
-# Gambit::Scanner::Plugins::Plugin_Details
+# struct Gambit::Scanner::Plugins::Plugin_Details
 
 
 
@@ -282,4 +282,4 @@ flag list
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

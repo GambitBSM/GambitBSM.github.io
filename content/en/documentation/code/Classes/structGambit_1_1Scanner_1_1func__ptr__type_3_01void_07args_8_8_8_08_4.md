@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Scanner::func_ptr_type< void(args...)>'
+title: "struct Gambit::Scanner::func_ptr_type< void(args...)>"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::func_ptr_type< void(args...)>
+# struct Gambit::Scanner::func_ptr_type< void(args...)>
 
 
 
@@ -35,4 +35,4 @@ typedef void(* Gambit::Scanner::func_ptr_type< void(args...)>::type) (args...);
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

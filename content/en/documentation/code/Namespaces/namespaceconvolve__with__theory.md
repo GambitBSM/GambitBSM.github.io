@@ -1,11 +1,11 @@
 ---
-title: 'namespace convolve_with_theory'
+title: "namespace convolve_with_theory"
 
 description: "[No description available]"
 
 ---
 
-# convolve_with_theory
+# namespace convolve_with_theory
 
 [No description available] [More...](#detailed-description)
 
@@ -92,4 +92,4 @@ ARGS =  map(float, sys.argv[2:]);
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

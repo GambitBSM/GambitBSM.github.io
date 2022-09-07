@@ -1,11 +1,11 @@
 ---
-title: 'file models/MSSM7atQ.hpp'
+title: "file models/MSSM7atQ.hpp"
 
 description: "[No description available]"
 
 ---
 
-# models/MSSM7atQ.hpp
+# file models/MSSM7atQ.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -116,4 +116,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

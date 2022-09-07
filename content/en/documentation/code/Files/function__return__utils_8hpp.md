@@ -1,11 +1,11 @@
 ---
-title: 'file common_headers/function_return_utils.hpp'
+title: "file common_headers/function_return_utils.hpp"
 
 description: "[No description available]"
 
 ---
 
-# common_headers/function_return_utils.hpp
+# file common_headers/function_return_utils.hpp
 
 [No description available]
 
@@ -79,4 +79,4 @@ U& reference_returner(const V* ptr);
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

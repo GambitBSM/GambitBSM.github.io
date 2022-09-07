@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::IniParser::Parser'
-description: 'Inifile parser base class. '
+title: "class Gambit::IniParser::Parser"
+description: "Inifile parser base class. "
 
 ---
 
-# Gambit::IniParser::Parser
+# class Gambit::IniParser::Parser
 
 
 
@@ -216,4 +216,4 @@ Do the basic parsing of the [YAML](/documentation/code/namespaces/namespaceyaml/
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

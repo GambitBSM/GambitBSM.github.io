@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::scan_ptr< ret(args...)>'
-description: 'Container class that hold the output of the "get_purpose" function. '
+title: "class Gambit::Scanner::scan_ptr< ret(args...)>"
+description: "Container class that hold the output of the get_purpose function. "
 
 ---
 
-# Gambit::Scanner::scan_ptr< ret(args...)>
+# class Gambit::Scanner::scan_ptr< ret(args...)>
 
 
 
@@ -111,4 +111,4 @@ inline ret operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

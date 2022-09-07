@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DarkBit::TH_ParticleProperty'
-description: 'A container for the mass and spin of a particle. '
+title: "struct Gambit::DarkBit::TH_ParticleProperty"
+description: "A container for the mass and spin of a particle. "
 
 ---
 
-# Gambit::DarkBit::TH_ParticleProperty
+# struct Gambit::DarkBit::TH_ParticleProperty
 
 
 
@@ -59,4 +59,4 @@ Twice the spin of the particle.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

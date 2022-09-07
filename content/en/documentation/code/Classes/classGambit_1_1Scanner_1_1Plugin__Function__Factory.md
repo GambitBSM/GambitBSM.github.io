@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Plugin_Function_Factory'
-description: 'Factory class to make objectives using objective plugins. '
+title: "class Gambit::Scanner::Plugin_Function_Factory"
+description: "Factory class to make objectives using objective plugins. "
 
 ---
 
-# Gambit::Scanner::Plugin_Function_Factory
+# class Gambit::Scanner::Plugin_Function_Factory
 
 
 
@@ -65,4 +65,4 @@ inline ~Plugin_Function_Factory()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

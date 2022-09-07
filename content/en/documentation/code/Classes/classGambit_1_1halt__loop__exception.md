@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::halt_loop_exception'
-description: '[Gambit](/documentation/code/namespaces/namespacegambit/) halt loop exception class. '
+title: "class Gambit::halt_loop_exception"
+description: "[Gambit](/documentation/code/namespaces/namespacegambit/) halt loop exception class. "
 
 ---
 
-# Gambit::halt_loop_exception
+# class Gambit::halt_loop_exception
 
 
 
@@ -63,4 +63,4 @@ Constructor
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

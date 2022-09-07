@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::WIMP_EFT_DM'
+title: "class Gambit::DarkBit::WIMP_EFT_DM"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::WIMP_EFT_DM
+# class Gambit::DarkBit::WIMP_EFT_DM
 
 
 
@@ -51,4 +51,4 @@ Parameterises <sigma v> as A + Bv^2, i.e. s + p wave annihilation with no resona
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

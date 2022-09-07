@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::MicrOmegas'
+title: "namespace Gambit::MicrOmegas"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::MicrOmegas
+# namespace Gambit::MicrOmegas
 
 [No description available]
 
@@ -23,4 +23,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

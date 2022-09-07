@@ -1,11 +1,11 @@
 ---
-title: 'file polychord_1.18.2/polychord_1.18.2/polychord.cpp'
+title: "file polychord_1.18.2/polychord_1.18.2/polychord.cpp"
 
 description: "[No description available]"
 
 ---
 
-# polychord_1.18.2/polychord_1.18.2/polychord.cpp
+# file polychord_1.18.2/polychord_1.18.2/polychord.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -550,4 +550,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

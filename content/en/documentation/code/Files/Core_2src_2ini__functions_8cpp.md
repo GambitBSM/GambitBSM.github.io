@@ -1,11 +1,11 @@
 ---
-title: 'file src/Core/src/ini_functions.cpp'
+title: "file src/Core/src/ini_functions.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/Core/src/ini_functions.cpp
+# file src/Core/src/ini_functions.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -150,4 +150,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

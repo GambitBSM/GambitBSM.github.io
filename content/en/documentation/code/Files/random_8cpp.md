@@ -1,11 +1,11 @@
 ---
-title: 'file simple/random.cpp'
+title: "file simple/random.cpp"
 
 description: "[No description available]"
 
 ---
 
-# simple/random.cpp
+# file simple/random.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -128,4 +128,4 @@ scanner_plugin(random, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace salami_gambit'
+title: "namespace salami_gambit"
 
 description: "[No description available]"
 
 ---
 
-# salami_gambit
+# namespace salami_gambit
 
 [No description available]
 
@@ -86,4 +86,4 @@ SLHA =  None;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'namespace libthird_1_0::sub_module'
+title: "namespace libthird_1_0::sub_module"
 
 description: "[No description available]"
 
 ---
 
-# libthird_1_0::sub_module
+# namespace libthird_1_0::sub_module
 
 [No description available]
 
@@ -48,4 +48,4 @@ int someOtherInt =  3;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

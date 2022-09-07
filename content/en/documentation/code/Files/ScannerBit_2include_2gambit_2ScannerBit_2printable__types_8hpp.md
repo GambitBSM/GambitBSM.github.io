@@ -1,11 +1,11 @@
 ---
-title: 'file ScannerBit/ScannerBit/include/gambit/ScannerBit/printable_types.hpp'
+title: "file ScannerBit/ScannerBit/include/gambit/ScannerBit/printable_types.hpp"
 
 description: "[No description available]"
 
 ---
 
-# ScannerBit/ScannerBit/include/gambit/ScannerBit/printable_types.hpp
+# file ScannerBit/ScannerBit/include/gambit/ScannerBit/printable_types.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -208,4 +208,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

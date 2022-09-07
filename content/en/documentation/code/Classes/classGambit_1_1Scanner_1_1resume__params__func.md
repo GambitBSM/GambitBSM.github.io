@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::resume_params_func'
-description: 'class to interface with the plugin manager resume functions. '
+title: "class Gambit::Scanner::resume_params_func"
+description: "class to interface with the plugin manager resume functions. "
 
 ---
 
-# Gambit::Scanner::resume_params_func
+# class Gambit::Scanner::resume_params_func
 
 
 
@@ -103,4 +103,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

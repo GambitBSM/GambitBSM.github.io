@@ -1,11 +1,11 @@
 ---
-title: 'class daFunk::FunkFuncM'
+title: "class daFunk::FunkFuncM"
 
 description: "[No description available]"
 
 ---
 
-# daFunk::FunkFuncM
+# class daFunk::FunkFuncM
 
 
 
@@ -128,4 +128,4 @@ inline double ppp(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

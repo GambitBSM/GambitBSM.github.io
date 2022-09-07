@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::PostProcessor'
+title: "namespace Gambit::PostProcessor"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::PostProcessor
+# namespace Gambit::PostProcessor
 
 [No description available]
 
@@ -150,4 +150,4 @@ const Chunk stopchunk = Chunk(0,0);
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

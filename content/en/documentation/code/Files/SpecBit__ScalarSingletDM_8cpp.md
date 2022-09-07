@@ -1,11 +1,11 @@
 ---
-title: 'file src/SpecBit_ScalarSingletDM.cpp'
+title: "file src/SpecBit_ScalarSingletDM.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/SpecBit_ScalarSingletDM.cpp
+# file src/SpecBit_ScalarSingletDM.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -720,4 +720,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

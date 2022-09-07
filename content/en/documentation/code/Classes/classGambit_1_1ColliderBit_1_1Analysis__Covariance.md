@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_Covariance'
-description: 'Dummy analysis code with a hard-coded return including a SR covariance matrix. '
+title: "class Gambit::ColliderBit::Analysis_Covariance"
+description: "Dummy analysis code with a hard-coded return including a SR covariance matrix. "
 
 ---
 
-# Gambit::ColliderBit::Analysis_Covariance
+# class Gambit::ColliderBit::Analysis_Covariance
 
 
 
@@ -133,4 +133,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

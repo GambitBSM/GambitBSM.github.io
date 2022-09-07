@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::MC_xsec_container'
-description: 'A class for holding a total cross-section calculated via MC across multiple threads. '
+title: "class Gambit::ColliderBit::MC_xsec_container"
+description: "A class for holding a total cross-section calculated via MC across multiple threads. "
 
 ---
 
-# Gambit::ColliderBit::MC_xsec_container
+# class Gambit::ColliderBit::MC_xsec_container
 
 
 
@@ -207,4 +207,4 @@ Get content as a <string,double> map (for easy printing).
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

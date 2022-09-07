@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/LibSecond_1_2.hpp'
+title: "file frontends/LibSecond_1_2.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/LibSecond_1_2.hpp
+# file frontends/LibSecond_1_2.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -177,4 +177,4 @@ BE_CONV_FUNCTION(awesomenessNotByAnders, double, (int), "awesomeness")
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

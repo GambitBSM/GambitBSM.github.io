@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/DarkSUSY_generic_wimp_6_1_1.hpp'
+title: "file frontends/DarkSUSY_generic_wimp_6_1_1.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/DarkSUSY_generic_wimp_6_1_1.hpp
+# file frontends/DarkSUSY_generic_wimp_6_1_1.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -133,4 +133,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

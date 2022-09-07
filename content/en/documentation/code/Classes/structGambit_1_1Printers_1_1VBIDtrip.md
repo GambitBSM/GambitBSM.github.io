@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Printers::VBIDtrip'
+title: "struct Gambit::Printers::VBIDtrip"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::VBIDtrip
+# struct Gambit::Printers::VBIDtrip
 
 
 
@@ -82,4 +82,4 @@ int first_tag;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

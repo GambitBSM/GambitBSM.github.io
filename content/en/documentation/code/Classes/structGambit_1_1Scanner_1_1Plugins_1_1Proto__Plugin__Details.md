@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::Scanner::Plugins::Proto_Plugin_Details'
-description: 'Plugin info from inifile. '
+title: "struct Gambit::Scanner::Plugins::Proto_Plugin_Details"
+description: "Plugin info from inifile. "
 
 ---
 
-# Gambit::Scanner::Plugins::Proto_Plugin_Details
+# struct Gambit::Scanner::Plugins::Proto_Plugin_Details
 
 
 
@@ -61,4 +61,4 @@ std::string path;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

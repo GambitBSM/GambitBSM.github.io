@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::DarkBit::VectorSingletDM'
+title: "class Gambit::DarkBit::VectorSingletDM"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkBit::VectorSingletDM
+# class Gambit::DarkBit::VectorSingletDM
 
 
 
@@ -121,4 +121,4 @@ Annihilation into hh.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

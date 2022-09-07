@@ -1,10 +1,10 @@
 ---
-title: 'namespace Gambit::Logging'
-description: 'Forward declare minimial logging components needed to use logger. '
+title: "namespace Gambit::Logging"
+description: "Forward declare minimial logging components needed to use logger. "
 
 ---
 
-# Gambit::Logging
+# namespace Gambit::Logging
 
 Forward declare minimial logging components needed to use logger. 
 
@@ -272,4 +272,4 @@ const bool verbose = false;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DefaultTraits'
-description: 'Default values for traits. Specialisations of [SpecTraits]() should inherit from this, and then override the traits that they want to customise. '
+title: "struct Gambit::DefaultTraits"
+description: "Default values for traits. Specialisations of [SpecTraits]() should inherit from this, and then override the traits that they want to customise. "
 
 ---
 
-# Gambit::DefaultTraits
+# struct Gambit::DefaultTraits
 
 
 
@@ -40,4 +40,4 @@ typedef DummyInput Gambit::DefaultTraits::Input;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/DarkSUSY_MSSM_6_1_1.cpp'
+title: "file frontends/DarkSUSY_MSSM_6_1_1.cpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/DarkSUSY_MSSM_6_1_1.cpp
+# file frontends/DarkSUSY_MSSM_6_1_1.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -1371,4 +1371,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

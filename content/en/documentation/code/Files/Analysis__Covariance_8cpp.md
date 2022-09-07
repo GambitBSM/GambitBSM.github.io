@@ -1,11 +1,11 @@
 ---
-title: 'file analyses/Analysis_Covariance.cpp'
+title: "file analyses/Analysis_Covariance.cpp"
 
 description: "[No description available]"
 
 ---
 
-# analyses/Analysis_Covariance.cpp
+# file analyses/Analysis_Covariance.cpp
 
 [No description available]
 
@@ -162,4 +162,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

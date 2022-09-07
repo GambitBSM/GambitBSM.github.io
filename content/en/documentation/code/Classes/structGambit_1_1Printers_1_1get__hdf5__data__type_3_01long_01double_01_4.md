@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Printers::get_hdf5_data_type< long double >'
+title: "struct Gambit::Printers::get_hdf5_data_type< long double >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Printers::get_hdf5_data_type< long double >
+# struct Gambit::Printers::get_hdf5_data_type< long double >
 
 
 
@@ -28,4 +28,4 @@ static inline hid_t type()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

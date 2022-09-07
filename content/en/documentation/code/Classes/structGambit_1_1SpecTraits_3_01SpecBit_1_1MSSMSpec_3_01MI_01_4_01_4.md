@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpecTraits< SpecBit::MSSMSpec< MI > >'
+title: "struct Gambit::SpecTraits< SpecBit::MSSMSpec< MI > >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecTraits< SpecBit::MSSMSpec< MI > >
+# struct Gambit::SpecTraits< SpecBit::MSSMSpec< MI > >
 
 
 
@@ -72,4 +72,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

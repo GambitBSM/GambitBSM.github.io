@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::MT2'
-description: 'A useful [MT2]() class for this module. '
+title: "class Gambit::ColliderBit::MT2"
+description: "A useful [MT2]() class for this module. "
 
 ---
 
-# Gambit::ColliderBit::MT2
+# class Gambit::ColliderBit::MT2
 
 
 
@@ -58,4 +58,4 @@ double aMT2_BM;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

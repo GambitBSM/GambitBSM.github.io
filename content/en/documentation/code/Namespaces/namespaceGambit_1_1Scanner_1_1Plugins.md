@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::Scanner::Plugins'
+title: "namespace Gambit::Scanner::Plugins"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Plugins
+# namespace Gambit::Scanner::Plugins
 
 [No description available]
 
@@ -119,4 +119,4 @@ Access Functor for plugin info. This will manage all the plugins including store
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

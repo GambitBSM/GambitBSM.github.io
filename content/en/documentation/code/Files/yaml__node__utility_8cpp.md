@@ -1,11 +1,11 @@
 ---
-title: 'file src/yaml_node_utility.cpp'
+title: "file src/yaml_node_utility.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/yaml_node_utility.cpp
+# file src/yaml_node_utility.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -126,4 +126,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

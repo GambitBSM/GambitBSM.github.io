@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::DarkBit::SimpleHist'
-description: 'Histogram class for cascade decays. '
+title: "struct Gambit::DarkBit::SimpleHist"
+description: "Histogram class for cascade decays. "
 
 ---
 
-# Gambit::DarkBit::SimpleHist
+# struct Gambit::DarkBit::SimpleHist
 
 
 
@@ -249,4 +249,4 @@ int nBins;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

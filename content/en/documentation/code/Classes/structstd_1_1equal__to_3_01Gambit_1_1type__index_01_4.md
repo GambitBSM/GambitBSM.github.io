@@ -1,11 +1,11 @@
 ---
-title: 'struct std::equal_to< Gambit::type_index >'
+title: "struct std::equal_to< Gambit::type_index >"
 
 description: "[No description available]"
 
 ---
 
-# std::equal_to< Gambit::type_index >
+# struct std::equal_to< Gambit::type_index >
 
 
 
@@ -31,4 +31,4 @@ inline size_t operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

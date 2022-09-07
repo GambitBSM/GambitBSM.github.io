@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::VertexBufferBase'
-description: 'VertexBuffer abstract interface base class. '
+title: "class Gambit::Printers::VertexBufferBase"
+description: "VertexBuffer abstract interface base class. "
 
 ---
 
-# Gambit::Printers::VertexBufferBase
+# class Gambit::Printers::VertexBufferBase
 
 
 
@@ -375,4 +375,4 @@ bool sync_buffer_empty = true;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

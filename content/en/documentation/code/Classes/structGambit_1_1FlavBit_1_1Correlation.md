@@ -1,10 +1,10 @@
 ---
-title: 'struct Gambit::FlavBit::Correlation'
-description: 'Simple structure for holding a correlation value and name of the correlated observable. '
+title: "struct Gambit::FlavBit::Correlation"
+description: "Simple structure for holding a correlation value and name of the correlated observable. "
 
 ---
 
-# Gambit::FlavBit::Correlation
+# struct Gambit::FlavBit::Correlation
 
 
 
@@ -38,4 +38,4 @@ std::string corr_name;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

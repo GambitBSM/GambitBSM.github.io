@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb'
-description: '[ATLAS]() Run 2 search for same-sign leptons and jets, with 139/fb of data. '
+title: "class Gambit::ColliderBit::Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb"
+description: "[ATLAS]() Run 2 search for same-sign leptons and jets, with 139/fb of data. "
 
 ---
 
-# Gambit::ColliderBit::Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb
+# class Gambit::ColliderBit::Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb
 
 
 
@@ -167,4 +167,4 @@ std::map< string, EventCounter > _counters = {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

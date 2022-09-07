@@ -1,11 +1,11 @@
 ---
-title: 'namespace generate_raster_scan_settings'
+title: "namespace generate_raster_scan_settings"
 
 description: "[No description available]"
 
 ---
 
-# generate_raster_scan_settings
+# namespace generate_raster_scan_settings
 
 [No description available]
 
@@ -208,4 +208,4 @@ Scanner:
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

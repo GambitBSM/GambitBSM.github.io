@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Mesons_decay_constants'
+title: "struct Gambit::Mesons_decay_constants"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Mesons_decay_constants
+# struct Gambit::Mesons_decay_constants
 
 
 
@@ -156,4 +156,4 @@ static constexpr double Jpsi = 0.418;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

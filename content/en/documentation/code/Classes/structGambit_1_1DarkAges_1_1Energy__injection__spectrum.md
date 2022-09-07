@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::DarkAges::Energy_injection_spectrum'
+title: "struct Gambit::DarkAges::Energy_injection_spectrum"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::DarkAges::Energy_injection_spectrum
+# struct Gambit::DarkAges::Energy_injection_spectrum
 
 
 
@@ -52,4 +52,4 @@ std::vector< double > spec_ph;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

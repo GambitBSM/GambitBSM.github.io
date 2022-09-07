@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb::ClusteringHistory::Step'
+title: "struct Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb::ClusteringHistory::Step"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb::ClusteringHistory::Step
+# struct Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb::ClusteringHistory::Step
 
 
 
@@ -52,4 +52,4 @@ Status status;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

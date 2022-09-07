@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::DarkBit::SimYieldTable'
-description: 'Channel container Object containing tabularized yields for particle decay and two-body final states. '
+title: "class Gambit::DarkBit::SimYieldTable"
+description: "Channel container Object containing tabularized yields for particle decay and two-body final states. "
 
 ---
 
-# Gambit::DarkBit::SimYieldTable
+# class Gambit::DarkBit::SimYieldTable
 
 
 
@@ -200,4 +200,4 @@ daFunk::Funk operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

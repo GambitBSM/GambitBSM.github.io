@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::like_ptr'
-description: 'likelihood container for scanner plugins. '
+title: "class Gambit::Scanner::like_ptr"
+description: "likelihood container for scanner plugins. "
 
 ---
 
-# Gambit::Scanner::like_ptr
+# class Gambit::Scanner::like_ptr
 
 
 
@@ -111,4 +111,4 @@ inline double operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

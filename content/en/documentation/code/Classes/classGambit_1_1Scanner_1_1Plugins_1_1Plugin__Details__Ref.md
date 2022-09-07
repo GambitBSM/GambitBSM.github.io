@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Scanner::Plugins::Plugin_Details_Ref'
+title: "class Gambit::Scanner::Plugins::Plugin_Details_Ref"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::Plugins::Plugin_Details_Ref
+# class Gambit::Scanner::Plugins::Plugin_Details_Ref
 
 
 
@@ -84,4 +84,4 @@ inline operator const Plugin_Details &() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

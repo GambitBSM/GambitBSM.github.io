@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/Acropolis_1_2_1.hpp'
+title: "file frontends/Acropolis_1_2_1.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/Acropolis_1_2_1.hpp
+# file frontends/Acropolis_1_2_1.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -136,4 +136,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

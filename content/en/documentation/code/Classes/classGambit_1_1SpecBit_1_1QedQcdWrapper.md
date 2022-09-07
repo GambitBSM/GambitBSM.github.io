@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::SpecBit::QedQcdWrapper'
+title: "class Gambit::SpecBit::QedQcdWrapper"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpecBit::QedQcdWrapper
+# class Gambit::SpecBit::QedQcdWrapper
 
 
 
@@ -380,4 +380,4 @@ double hardlow;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

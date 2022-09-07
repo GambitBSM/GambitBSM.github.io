@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::invalid_loop_iteration_exception'
-description: '[Gambit](/documentation/code/namespaces/namespacegambit/) invalid loop iteration exception class. '
+title: "class Gambit::invalid_loop_iteration_exception"
+description: "[Gambit](/documentation/code/namespaces/namespacegambit/) invalid loop iteration exception class. "
 
 ---
 
-# Gambit::invalid_loop_iteration_exception
+# class Gambit::invalid_loop_iteration_exception
 
 
 
@@ -63,4 +63,4 @@ Constructor
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

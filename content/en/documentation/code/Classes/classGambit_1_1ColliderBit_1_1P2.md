@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::P2'
-description: 'A simple container for a point on an xy plane. '
+title: "class Gambit::ColliderBit::P2"
+description: "A simple container for a point on an xy plane. "
 
 ---
 
-# Gambit::ColliderBit::P2
+# class Gambit::ColliderBit::P2
 
 
 
@@ -182,4 +182,4 @@ inline P2 & operator/=(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

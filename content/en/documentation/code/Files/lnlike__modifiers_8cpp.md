@@ -1,11 +1,11 @@
 ---
-title: 'file src/lnlike_modifiers.cpp'
+title: "file src/lnlike_modifiers.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/lnlike_modifiers.cpp
+# file src/lnlike_modifiers.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -186,4 +186,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

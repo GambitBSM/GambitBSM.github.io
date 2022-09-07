@@ -1,11 +1,11 @@
 ---
-title: 'namespace Gambit::GreAT'
+title: "namespace Gambit::GreAT"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::GreAT
+# namespace Gambit::GreAT
 
 [No description available]
 
@@ -55,4 +55,4 @@ greatScanData data;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

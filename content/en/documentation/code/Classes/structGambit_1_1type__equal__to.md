@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::type_equal_to'
+title: "struct Gambit::type_equal_to"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::type_equal_to
+# struct Gambit::type_equal_to
 
 
 
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

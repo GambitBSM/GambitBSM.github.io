@@ -1,11 +1,11 @@
 ---
-title: 'file models/mSUGRA.cpp'
+title: "file models/mSUGRA.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/mSUGRA.cpp
+# file models/mSUGRA.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -87,4 +87,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

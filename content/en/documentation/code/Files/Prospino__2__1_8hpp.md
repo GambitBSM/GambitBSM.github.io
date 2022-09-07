@@ -1,11 +1,11 @@
 ---
-title: 'file frontends/Prospino_2_1.hpp'
+title: "file frontends/Prospino_2_1.hpp"
 
 description: "[No description available]"
 
 ---
 
-# frontends/Prospino_2_1.hpp
+# file frontends/Prospino_2_1.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -140,4 +140,4 @@ BE_CONV_FUNCTION(prospino_read_slha1_input, void, (const SLHAstruct&), "prospino
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

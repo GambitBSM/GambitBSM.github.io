@@ -1,11 +1,11 @@
 ---
-title: 'file src/plugin_details.cpp'
+title: "file src/plugin_details.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/plugin_details.cpp
+# file src/plugin_details.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -539,4 +539,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

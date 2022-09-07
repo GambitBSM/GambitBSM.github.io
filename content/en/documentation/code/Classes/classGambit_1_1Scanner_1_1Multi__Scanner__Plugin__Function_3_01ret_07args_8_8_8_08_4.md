@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>'
-description: 'Objective functor made up of multiple plugins. '
+title: "class Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>"
+description: "Objective functor made up of multiple plugins. "
 
 ---
 
-# Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>
+# class Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>
 
 
 
@@ -94,4 +94,4 @@ inline ret main(
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

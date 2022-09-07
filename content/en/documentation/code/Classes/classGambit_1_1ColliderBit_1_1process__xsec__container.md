@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::process_xsec_container'
-description: 'A class for holding the cross-section of a single Pythia process (identified by the Pythia process code) '
+title: "class Gambit::ColliderBit::process_xsec_container"
+description: "A class for holding the cross-section of a single Pythia process (identified by the Pythia process code) "
 
 ---
 
-# Gambit::ColliderBit::process_xsec_container
+# class Gambit::ColliderBit::process_xsec_container
 
 
 
@@ -203,4 +203,4 @@ Add a PID pair to the list of PID pairs related to this cross-section.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class modules::exceptions::ReturnError'
+title: "class modules::exceptions::ReturnError"
 
 description: "[No description available]"
 
 ---
 
-# modules::exceptions::ReturnError
+# class modules::exceptions::ReturnError
 
 
 
@@ -64,4 +64,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::Priors::None'
+title: "class Gambit::Priors::None"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Priors::None
+# class Gambit::Priors::None
 
 
 
@@ -87,4 +87,4 @@ Transform from parameter back to unit hypercube.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

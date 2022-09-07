@@ -1,11 +1,11 @@
 ---
-title: 'file header_templates/standard_header_template.hpp'
+title: "file header_templates/standard_header_template.hpp"
 
 description: "[No description available]"
 
 ---
 
-# header_templates/standard_header_template.hpp
+# file header_templates/standard_header_template.hpp
 
 [No description available]
 
@@ -30,4 +30,4 @@ __END_GAMBIT_NAMESPACE__
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:51 +0000
+Updated on 2022-09-07 at 23:22:12 +0000

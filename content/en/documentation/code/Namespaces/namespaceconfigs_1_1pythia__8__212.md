@@ -1,11 +1,11 @@
 ---
-title: 'namespace configs::pythia_8_212'
+title: "namespace configs::pythia_8_212"
 
 description: "[No description available]"
 
 ---
 
-# configs::pythia_8_212
+# namespace configs::pythia_8_212
 
 [No description available]
 
@@ -235,4 +235,4 @@ list pragmas_end =  [];
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

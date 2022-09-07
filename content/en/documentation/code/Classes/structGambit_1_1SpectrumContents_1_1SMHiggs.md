@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::SpectrumContents::SMHiggs'
+title: "struct Gambit::SpectrumContents::SMHiggs"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::SpectrumContents::SMHiggs
+# struct Gambit::SpectrumContents::SMHiggs
 
 
 
@@ -52,4 +52,4 @@ Only have to define the constructor.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

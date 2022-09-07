@@ -1,11 +1,11 @@
 ---
-title: 'file DecayBit/SM_Z.hpp'
+title: "file DecayBit/SM_Z.hpp"
 
 description: "[No description available]"
 
 ---
 
-# DecayBit/SM_Z.hpp
+# file DecayBit/SM_Z.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -331,4 +331,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

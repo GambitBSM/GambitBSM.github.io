@@ -1,11 +1,11 @@
 ---
-title: 'file Elements/slhaea_spec_helpers.hpp'
+title: "file Elements/slhaea_spec_helpers.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Elements/slhaea_spec_helpers.hpp
+# file Elements/slhaea_spec_helpers.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -118,4 +118,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

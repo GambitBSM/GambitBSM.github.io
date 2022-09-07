@@ -1,11 +1,11 @@
 ---
-title: 'file models/CosmoModels.cpp'
+title: "file models/CosmoModels.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/CosmoModels.cpp
+# file models/CosmoModels.cpp
 
 [No description available]
 
@@ -673,4 +673,4 @@ INFLATION_MODEL_TO_POWER_LAW(Inflation_InstReh_1Starobinsky)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

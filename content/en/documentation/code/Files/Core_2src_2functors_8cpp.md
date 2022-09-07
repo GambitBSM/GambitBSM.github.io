@@ -1,11 +1,11 @@
 ---
-title: 'file src/Core/src/functors.cpp'
+title: "file src/Core/src/functors.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/Core/src/functors.cpp
+# file src/Core/src/functors.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -58,4 +58,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:49 +0000
+Updated on 2022-09-07 at 23:22:10 +0000

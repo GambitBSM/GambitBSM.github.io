@@ -1,11 +1,11 @@
 ---
-title: 'file SimpleSpectra/SLHASimpleSpec.cpp'
+title: "file SimpleSpectra/SLHASimpleSpec.cpp"
 
 description: "[No description available]"
 
 ---
 
-# SimpleSpectra/SLHASimpleSpec.cpp
+# file SimpleSpectra/SLHASimpleSpec.cpp
 
 [No description available]
 
@@ -218,4 +218,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

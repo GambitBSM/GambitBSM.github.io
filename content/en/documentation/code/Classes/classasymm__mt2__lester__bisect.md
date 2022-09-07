@@ -1,11 +1,11 @@
 ---
-title: 'class asymm_mt2_lester_bisect'
+title: "class asymm_mt2_lester_bisect"
 
 description: "[No description available]"
 
 ---
 
-# asymm_mt2_lester_bisect
+# class asymm_mt2_lester_bisect
 
 
 
@@ -87,4 +87,4 @@ static const int MT2_ERROR =-1;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:43 +0000
+Updated on 2022-09-07 at 23:22:05 +0000

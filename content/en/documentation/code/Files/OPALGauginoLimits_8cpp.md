@@ -1,11 +1,11 @@
 ---
-title: 'file limits/OPALGauginoLimits.cpp'
+title: "file limits/OPALGauginoLimits.cpp"
 
 description: "[No description available]"
 
 ---
 
-# limits/OPALGauginoLimits.cpp
+# file limits/OPALGauginoLimits.cpp
 
 [No description available]
 
@@ -2098,4 +2098,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

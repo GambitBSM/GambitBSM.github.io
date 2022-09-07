@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::Scanner::_find_variadic_type_not_exact_< T1, T2, T... >'
+title: "struct Gambit::Scanner::_find_variadic_type_not_exact_< T1, T2, T... >"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::Scanner::_find_variadic_type_not_exact_< T1, T2, T... >
+# struct Gambit::Scanner::_find_variadic_type_not_exact_< T1, T2, T... >
 
 
 
@@ -60,4 +60,4 @@ static const bool value = __find_variadic_type_not_exact__ <typename remove_all_
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

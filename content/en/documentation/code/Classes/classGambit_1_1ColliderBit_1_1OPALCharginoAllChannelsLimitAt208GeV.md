@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::OPALCharginoAllChannelsLimitAt208GeV'
-description: 'A class to contain the limit data from OPAL_EPJC35_2004_1, figure 8b. '
+title: "class Gambit::ColliderBit::OPALCharginoAllChannelsLimitAt208GeV"
+description: "A class to contain the limit data from OPAL_EPJC35_2004_1, figure 8b. "
 
 ---
 
-# Gambit::ColliderBit::OPALCharginoAllChannelsLimitAt208GeV
+# class Gambit::ColliderBit::OPALCharginoAllChannelsLimitAt208GeV
 
 
 
@@ -98,4 +98,4 @@ OPALCharginoAllChannelsLimitAt208GeV()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

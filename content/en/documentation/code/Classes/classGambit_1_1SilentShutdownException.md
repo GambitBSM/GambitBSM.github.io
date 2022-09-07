@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::SilentShutdownException'
-description: 'Special exception used during clean exit from diagnostics. '
+title: "class Gambit::SilentShutdownException"
+description: "Special exception used during clean exit from diagnostics. "
 
 ---
 
-# Gambit::SilentShutdownException
+# class Gambit::SilentShutdownException
 
 
 
@@ -51,4 +51,4 @@ virtual const char * what() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::ColliderBit::AnalysisData'
+title: "struct Gambit::ColliderBit::AnalysisData"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::ColliderBit::AnalysisData
+# struct Gambit::ColliderBit::AnalysisData
 
 
 
@@ -257,4 +257,4 @@ Optional covariance matrix between SRs (0x0 null matrix = no correlation info)
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

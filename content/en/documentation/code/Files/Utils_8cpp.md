@@ -1,11 +1,11 @@
 ---
-title: 'file src/Utils.cpp'
+title: "file src/Utils.cpp"
 
 description: "[No description available]"
 
 ---
 
-# src/Utils.cpp
+# file src/Utils.cpp
 
 [No description available]
 
@@ -146,4 +146,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:50 +0000
+Updated on 2022-09-07 at 23:22:11 +0000

@@ -1,11 +1,11 @@
 ---
-title: 'file models/MSSM15atQ_mA.cpp'
+title: "file models/MSSM15atQ_mA.cpp"
 
 description: "[No description available]"
 
 ---
 
-# models/MSSM15atQ_mA.cpp
+# file models/MSSM15atQ_mA.cpp
 
 [No description available] [More...](#detailed-description)
 
@@ -103,4 +103,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:48 +0000
+Updated on 2022-09-07 at 23:22:09 +0000

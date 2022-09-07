@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::Printers::HDF5Buffer'
-description: 'Class to manage buffer for a single output label. '
+title: "class Gambit::Printers::HDF5Buffer"
+description: "Class to manage buffer for a single output label. "
 
 ---
 
-# Gambit::Printers::HDF5Buffer
+# class Gambit::Printers::HDF5Buffer
 
 
 
@@ -243,4 +243,4 @@ Retrieve the integer type ID for the buffered dataset.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:46 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

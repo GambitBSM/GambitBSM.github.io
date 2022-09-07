@@ -1,10 +1,10 @@
 ---
-title: 'class Gambit::ColliderBit::OPALCharginoHadronicLimitAt208GeV'
-description: 'A class to contain the limit data from OPAL_EPJC35_2004_1, figure 5b. '
+title: "class Gambit::ColliderBit::OPALCharginoHadronicLimitAt208GeV"
+description: "A class to contain the limit data from OPAL_EPJC35_2004_1, figure 5b. "
 
 ---
 
-# Gambit::ColliderBit::OPALCharginoHadronicLimitAt208GeV
+# class Gambit::ColliderBit::OPALCharginoHadronicLimitAt208GeV
 
 
 
@@ -101,4 +101,4 @@ OPALCharginoHadronicLimitAt208GeV()
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:06 +0000

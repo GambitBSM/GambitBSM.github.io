@@ -1,11 +1,11 @@
 ---
-title: 'struct Gambit::IniParser::Types::Observable'
+title: "struct Gambit::IniParser::Types::Observable"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::IniParser::Types::Observable
+# struct Gambit::IniParser::Types::Observable
 
 
 
@@ -148,4 +148,4 @@ std::vector< std::string > functionChain;
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:45 +0000
+Updated on 2022-09-07 at 23:22:07 +0000

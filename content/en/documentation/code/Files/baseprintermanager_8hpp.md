@@ -1,11 +1,11 @@
 ---
-title: 'file Printers/baseprintermanager.hpp'
+title: "file Printers/baseprintermanager.hpp"
 
 description: "[No description available]"
 
 ---
 
-# Printers/baseprintermanager.hpp
+# file Printers/baseprintermanager.hpp
 
 [No description available] [More...](#detailed-description)
 
@@ -143,4 +143,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:47 +0000
+Updated on 2022-09-07 at 23:22:08 +0000

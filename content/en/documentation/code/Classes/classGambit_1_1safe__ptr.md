@@ -1,11 +1,11 @@
 ---
-title: 'class Gambit::safe_ptr'
+title: "class Gambit::safe_ptr"
 
 description: "[No description available]"
 
 ---
 
-# Gambit::safe_ptr
+# class Gambit::safe_ptr
 
 
 
@@ -129,4 +129,4 @@ The actual underlying pointer, interpreted as a pointer to constant value.
 
 -------------------------------
 
-Updated on 2022-09-07 at 14:07:44 +0000
+Updated on 2022-09-07 at 23:22:05 +0000
