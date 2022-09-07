@@ -28,6 +28,10 @@ modules or `Bits`, along with various Core components and utilities. GAMBIT's `B
 | `SpecBit` | Interfaces to one of a number of possible external spectrum generators in order to determine pole masses and running parameters, and provides them to the rest of GAMBIT in a standardised spectrum container format. |
 | `DecayBit` | Calculates decay rates of all relevant particles in the BSM theory under investigation, and contains decay data for all Standard Model particles. |
 | `ScannerBit` | The sampling module for Gambit. Implements various scanners which are programmed as plugins. |
+| `CosmoBit` | Computes cosmological observables and likelihoods. Can be used for studying models of inflation and variations in the properties of elementary particles, among other topics. |
+| `NeutrinoBit` | Calculates observables and likelihoods for neutrino physics. |
+| `ObjectivesBit` | - |
+| `PrecisionBit` | - |
 
 {{< alert icon="ⓘ" context="info">}}
 **Info**: A detailed discussion of the motivation, philosophy, and design of GAMBIT can be found in [the original paper ⧉](https://arxiv.org/abs/1705.07908)

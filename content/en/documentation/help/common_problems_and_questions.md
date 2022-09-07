@@ -11,7 +11,7 @@ menu:
 weight: 10
 ---
 
-### Installation
+### Docker
 
 ##### I cannot start or run Docker on Linux
 
@@ -38,6 +38,8 @@ sudo systemctl status docker     # Check status of daemon
 **Info**: More information can be found on the [Docker Linux post-install page ⧉](https://docs.docker.com/engine/install/linux-postinstall/).
 
 {{< /alert >}}
+
+### Installing dependencies
 
 ##### I don't know how to check if a package is already installed
 
@@ -129,9 +131,72 @@ alias $SHORT_COMMAND=$LONG_COMMAND
 
 This allows long commands (possible including full paths) to be invoked using a short, user-defined command. This effect only lasts until the end of the terminal session; to make it permanent it will also need to be added to the `.bashrc` file.
 
+### Building GAMBIT
+
+##### CMake is finding Python backends in a different place to the interpreter
+
+You may encounter the message:
+
+```
+NOTE: You are using different Python versions for the interpreter and the libraries!
+```
+
+The best way to make sure that CMake finds the right versions of Python is to specify the following flags:
+
+- `-DPYTHON_EXECUTABLE`: This should point to a Python interpreter. If you are using a virtual environment then this should point towards the interpreter present in the virtual environment (this makes sure that the Python libraries installed in the virtual environment are detected).
+- `-DPYTHON_INCLUDE_DIR`: This should point to the `include` directory for the system's Python, not the `include` directory in the virtual environment!
+- `-DPYTHON_LIBRARY`: This should point to the system's Python library file, which should be of the form `libpython.so` or `libpython3.so`.
+
+If this still is not working, or if CMake cannot determine the version number of the libraries that it finds, it may be that you need to install the Python Development Package. This can be found on major package managers with the name `python-dev` or `python-devel` or some numbered variation.
+
+##### CMake cannot find the LAPACK libraries
+
+If CMake cannot find LAPACK then you should specify the `-DLAPACK_LIBRARIES` flag. This should point to the shared library file `liblapack.so`. Unfortunately, when built from source, LAPACK by default includes the static library file `liblapack.a` rather than the shared library file `liblapack.so`. This static library file will result in a CMake error.
+
+To fix this, try to find a LAPACK distribution which includes the shared library file. For example, for RHEL/Fedora systems a version of LAPACK can be obtained via `dnf` which contains the shared library file.
+
+##### Changing CMake flags does not change the output
+
+On every run, CMake caches flags and values in the `build` directory. If you do not delete the `build` directory each time you run CMake then the cached values will be used and the new flags will be ignored.
+
+It may also be the case that you have spelled a flag incorrectly, or forgotten to add the `-D` prefix. If you have used a flag that CMake does not recognise then you will receive the message:
+
+```
+CMake Warning:
+  Manually-specified variables were not used by the project:
+  $INCORRECT_FLAGS
+```
+
+If you are frequently re-running CMake while trying to debug the output, it may be useful to use a `bash` script. For example:
+
+```
+#!/bin/bash
+
+rm -r build          # Delete previous run   
+mkdir build          # Make build directory
+cd build
+cmake $YOUR_FLAGS    # Run cmake
+```
+
 ##### GAMBIT builds extremely slowly
 
-<!--- ROSSTODO: Instructions on ditching parts of gambit -->
+If the final `make gambit` command takes a long time (or fails), then you may want to consider using the `-Ditch` flag with the first `cmake` command. This flag allows you to specify `Bits` and components of GAMBIT to "ditch" from the build process, allowing GAMBIT to build faster.
+
+For example, if you wish to ditch all `Bits` apart from [`ColliderBit`](example.com), add the flag:
+
+```
+-Ditch="CosmoBit;FlavBit;NeutrinoBit;DarkBit;DecayBit;FlavBit;ObjectivesBit;PrecisionBit;ScannerBit;SpecBit"
+```
+
+##### Python header files are not found
+
+During the `make gambit` command you may encounter the message:
+
+```
+fatal error: Python.h: No such file or directory
+```
+
+If these header files cannot be found, it may be because you have not installed the Python Development Package. This package provides extra header files and libraries for Python development. You can find it on major package managers with the name `python-dev` or `python-devel` or some numbered variation.
 
 ### Running GAMBIT
 

@@ -23,7 +23,7 @@ weight: 30
 
 ### Installing compulsory dependencies
 
-GAMBIT has a number of compulsory dependencies, which must be installed for GAMBIT to be built and run. Some basic information is provided for each dependency.
+GAMBIT has a number of compulsory dependencies, which must be installed for GAMBIT to be built and run. Some basic information is provided for each dependency. When given the option, **it is almost always better to install from source than from a package manager**. Installing from source means that the package will be present on your system in the same structure and configuration as the developers intended, which cannot always be guaranteed when using package managers. This will save you many headaches when you attempt to configure CMake to build GAMBIT!
 
 {{< alert icon="⚠" context="danger">}}
 
@@ -85,7 +85,13 @@ One of:
 
 ##### Python + modules
 
-Python ≥ 2.7, and Python modules `future`, `datetime`, `pyyaml`, `re`, `os`, `sys`, `getopt`, `shutil`, and `itertools`
+Python ≥ 2.7, and Python modules `numpy`, `future`, `datetime`, `pyyaml`, `re`, `os`, `sys`, `getopt`, `shutil`, and `itertools`
+
+{{< alert icon="ⓘ" context="info">}}
+
+**Info**: In addition to a standard Python installation, you will also need the optional Python Developer Package which includes extra libraries and header files.
+
+{{< /alert >}}
 
 <details>
   <summary>More info</summary>
@@ -96,6 +102,7 @@ Python ≥ 2.7, and Python modules `future`, `datetime`, `pyyaml`, `re`, `os`, `
   | --- | --- | --- | --- | --- |
   | `python3` | Yes | [Yes ⧉](http://www.aixtools.net/index.php/python3) | [Yes ⧉](https://www.python.org/downloads/source/) | - |
   | `python2` | No | [Yes ⧉](http://www.aixtools.net/index.php/python2) | [Yes ⧉](https://www.python.org/downloads/source/) | - |
+  | `python-dev` or `python-devel` or numbered variation | Yes | No | No | - |
 
   It is good practice to install Python modules within a virtual environment rather than system-wide; see [I can't or don't want to install dependencies system-wide](/documentation/help/common_problems_and_questions#i-can-t-or-don-t-want-to-install-dependencies-system-wide). 
 
@@ -160,7 +167,7 @@ Python ≥ 2.7, and Python modules `future`, `datetime`, `pyyaml`, `re`, `os`, `
 
   | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
   | --- | --- | --- | --- | --- |
-  | `lapack` | Yes | [Yes ⧉](https://netlib.org/lapack/archives/) | [Yes ⧉](https://netlib.org/clapack/CLAPACK-3.1.1/INSTALL/lawn81.pdf) | - |
+  | `lapack` | Yes | [Yes ⧉](https://netlib.org/lapack/archives/) | [Yes ⧉](https://netlib.org/lapack/) | - |
 </details>
 
 ##### pkg-config
@@ -242,51 +249,106 @@ cd build
 cmake ..
 ```
 
+The `cmake` command will automatically try to find the packages it needs to build GAMBIT. However, it will probably need some help via optional flags. Commonly used flags are listed below; you can add these to the `cmake` command using the syntax `FLAG=VALUE`.
+
+If CMake cannot find a package then try adding a relevant flag. For example, Boost will usually require the addition of the `-DBoost_INCLUDE_DIR` flag pointing to the `include` subdirectory of the Boost installation directory.
+
+A full list of flags and their values can be found at `/build/CMakeCache.txt` after every run, and examples of `cmake` commands can be found on the [Configuration Examples](/documentation/help/configuration_examples) page.
+
 {{< alert icon="ⓘ" context="info">}}
 
 **Info**: 
 
 - If you need to re-run Cmake, make sure to remove the `build` directory via `rm -r build` and start over. Otherwise Cmake will use the cached settings from the previous run.
 - Every time you run CMake, a detailed log file is generated at `/build/CMakeFiles/CMakeOutput.log`. This is useful for debugging.
+- All `LIBRARY` or `LIBRARIES` flags should point to either the `lib` subdirectory of a package's installation directory, or a shared library file. Shared library files have the extension `.so` and are usually of the form `libPACKAGE_NAME.so`.
 
 {{< /alert >}}
-
-The `cmake` command will automatically try to find the packages it needs to build GAMBIT. However, it will probably need some help via optional flags. Commonly used flags are listed below; You can add these to the `cmake` command using the syntax `FLAG=VALUE`.
-  
-  | Flag | Value | Description |
-  | --- | --- | --- |
-  | `-DCMAKE_BUILD_TYPE` | `Release`, `Debug` or `None` | Sets the build type |
-  | `-Ditch` | Semi-colon separated list of `Bits` and other components | Ditches parts of GAMBIT that you don't intend to use |
-  | `-DBoost_INCLUDE_DIR` | Path | Shows CMake where to find the Boost `include` directory |
-  | `-DEIGEN3_INCLUDE_DIR` | Path | Shows CMake where to find the Eigen `include` directory |
-  | `-DPYTHON_EXECUTABLE` | Path | Shows CMake where to find the Python executable. If working from a virtual environment, this will default to the executable in the environment's directory |
-  | `-DPYTHON_INCLUDE_DIR` | Path | Shows CMake where to find the Python `include` directory |
-  | `-DPYTHON_LIBRARY` | Path | Shows CMake where to find the Python library folder |
-  | `-DGSL_INCLUDE_DIR` | Path | Shows CMake where to find the GSL `include` directory |
-  | `-DGSL_LIBRARY` | Path | Shows CMake where to find the GSL library folder |
-  | `-DBUILD_FS_MODELS` | Semi-colon separated list of models | Defines which FlexibleSUSY models to build (model names must correspond to directories in `/contrib/MassSpectra/flexiblesusy/models`) |
-  | `-DCMAKE_C_COMPILER` | Path | Sets the C compiler |
-  | `-DCMAKE_C_flags` | C compiler flags | Adds additional C compiler flags |
-  | `-DCMAKE_CXX_COMPILER` | Path | Sets the C++ compiler |
-  | `-DCMAKE_CXX_FLAGS` | C++ compiler flags | Adds additional C++ compiler flags |
-  | `-DCMAKE_Fortran_COMPILER` | Path | Sets the Fortran compiler |
-  | `-DCMAKE_Fortran_FLAGS` | Fortran compiler flags | Adds additional Fortran compiler flags |
-  | `-DWITH_HEPMC` | `On` or `Off` | Switches HepMC on or off |
-  | `-DWITH_RESTFRAMES` | `On` or `Off` | Switches RestFrames on or off |
-  | `-DWITH_ROOT` | `On` or `Off` | Switches ROOT on or off |
-  | `-DPYTHIA_OPT` | `On` or `Off` | Switches Intel's multi-file interprocedural optimisation on or off (for use with Pythia) |
-  | `-DCMAKE_VERBOSE_MAKEFILE` | `On` or `Off` | Switches verbose build output on or off, useful for debugging |
-  | `-DWITH_MPI` | `On` or `Off` | Switches MPI on or off |
-  | `-DSUPPRESS_LIBRARY_WARNINGS` | `On` or `Off` | Enables or disables suppression of some common compiler warnings that are due to external library headers |
-  | `-DHAVE_GRAPHVIZ` | `On` or `Off` | Enables or disables the creation of Graphviz files |
-
-A full list of flags and their values can be found at `/build/CMakeCache.txt` after every run.
-
-Examples of `cmake` commands can be found on the [Configuration Examples](/documentation/help/configuration_examples) page.
 
 {{< alert icon="⚠" context="danger">}}
 
-**Common Problem**: [GAMBIT builds extremely slowly](/documentation/help/common_problems_and_questions#gambit-builds-extremely-slowly)
+**Common Problems**: 
+
+- [CMake is finding Python backends in a different place to the interpreter](/documentation/help/common_problems_and_questions#cmake-is-finding-python-backends-in-a-different-place-to-the-interpreter)
+- [CMake cannot find the LAPACK libraries](/documentation/help/common_problems_and_questions#cmake-cannot-find-the-lapack-libraries)
+- [Changing CMake flags does not change the output](/documentation/help/common_problems_and_questions#changing-cmake-flags-does-not-change-the-output)
+
+{{< /alert >}}
+  
+  | Flag | Value | Description |
+  | --- | --- | --- |
+  | `-DBoost_INCLUDE_DIR` | Path | Shows CMake where to find the Boost `include` directory. |
+  | `-DEIGEN3_INCLUDE_DIR` | Path | Shows CMake where to find the Eigen `include` directory. Since Eigen is header-only, point this towards the folder containing the downloaded headers. |
+  | `-DGSL_CONFIG_EXECUTABLE` | Path | Shows CMake where to find the GSL config executable, usually located within the GSL install directory at `bin/gsl-config`. |
+  | `-DGSL_INCLUDE_DIRS` | Path | Shows CMake where to find the GSL `include` directory. |
+  | `-DGSL_LIBRARY` | Path | Shows CMake where to find the GSL `lib` directory. |
+  | `-DPYTHON_EXECUTABLE` | Path | Shows CMake where to find the Python executable. If working from a virtual environment, this will default to the executable in the environment's `bin` directory. |
+  | `-DPYTHON_INCLUDE_DIR` | Path | Shows CMake where to find the system's Python `include` directory, for example `/usr/include/python3.10`. |
+  | `-DPYTHON_LIBRARY` | Path | Shows CMake where to find the system's Python library file. For example, `/usr/lib64/libpython3.10.so.1.0`. |
+  | `-DLAPACK_LIBRARIES` | Path | Shows CMake where to find the LAPACK library file. For example, `/usr/lib64/liblapack.so.3`. |
+  | `-DBLAS_LIBRARIES` | Path | Shows CMake where to find the Blas library file. For example, `/usr/lib64/libblas.so.3`. |
+  | `-DPKG_CONFIG_EXECUTABLE` | Path | Shows CMake where to find the pkg-config config executable, usually located within the pkg-config install directory at `bin/pkg-config`. |
+  | `DPKG_CONFIG_PATH` | Path | Shows CMake where to find the pkg-config installation directory. |
+  | `-Ditch` | Semi-colon separated list of `Bits` and other components, surrounded by quotation marks | Ditches parts of GAMBIT that you don't intend to use. |
+  | `-DCMAKE_BUILD_TYPE` | `Release`, `Debug` or `None` | Sets the build type |
+  | `-DBUILD_FS_MODELS` | Semi-colon separated list of models, surrounded by quotation marks | Defines which FlexibleSUSY models to build (model names must correspond to directories in `/contrib/MassSpectra/flexiblesusy/models`). |
+  | `-DCMAKE_C_COMPILER` | Path | Sets the C compiler. |
+  | `-DCMAKE_C_flags` | C compiler flags | Adds additional C compiler flags. |
+  | `-DCMAKE_CXX_COMPILER` | Path | Sets the C++ compiler. |
+  | `-DCMAKE_CXX_FLAGS` | C++ compiler flags | Adds additional C++ compiler flags. |
+  | `-DCMAKE_Fortran_COMPILER` | Path | Sets the Fortran compiler. |
+  | `-DCMAKE_Fortran_FLAGS` | Fortran compiler flags | Adds additional Fortran compiler flags. |
+  | `-DWITH_HEPMC` | `On` or `Off` | Switches HepMC on or off. |
+  | `-DWITH_RESTFRAMES` | `On` or `Off` | Switches RestFrames on or off. |
+  | `-DWITH_ROOT` | `On` or `Off` | Switches ROOT on or off. |
+  | `-DPYTHIA_OPT` | `On` or `Off` | Switches Intel's multi-file interprocedural optimisation on or off (for use with Pythia). |
+  | `-DCMAKE_VERBOSE_MAKEFILE` | `On` or `Off` | Switches verbose build output on or off, useful for debugging. |
+  | `-DWITH_MPI` | `On` or `Off` | Switches MPI on or off. |
+  | `-DWITH_YODA` | `On` or `Off` | Switches Yoda on or off. |
+  | `-DSUPPRESS_LIBRARY_WARNINGS` | `On` or `Off` | Enables or disables suppression of some common compiler warnings that are due to external library headers. |
+  | `-DHAVE_GRAPHVIZ` | `On` or `Off` | Enables or disables the creation of Graphviz files. |
+
+Next, build GAMBIT's scanners, specifying the number of cores to use:
+
+```
+make -j$NUMBER_OF_CORES scanners
+```
+
+Then re-run CMake:
+
+```
+cmake ..
+```
+
+{{< alert icon="ⓘ" context="info">}}
+
+**Info**: CMake caches the flags (and their values) for each run. Because you have already run CMake, you do not need to specify any flags this time around.
 
 {{< /alert >}}
 
+Then finally build GAMBIT:
+
+```
+make -j$NUMBER_OF_CORES gambit
+```
+
+{{< alert icon="⚠" context="danger">}}
+
+**Common Problems**: 
+
+- [GAMBIT builds extremely slowly](/documentation/help/common_problems_and_questions#gambit-builds-extremely-slowly)
+- [Python header files are not found](/documentation/help/common_problems_and_questions#python-header-files-are-not-found)
+
+{{< /alert >}}
+
+### Using GAMBIT
+
+Now that GAMBIT has been built, there should be a `gambit` executable in the directory above the `build` subdirectory. You can view the installed scanners using `./gambit scanners` and the installed backends using `./gambit backends`. You can also control the installation of backends using the following:
+
+```
+make -j$NUMBER_OF_CORES backends         # Install all backends
+make -j$NUMBER_OF_CORES $BACKEND_NAME    # Install specific backend
+make clean-$BACKEND_NAME                 # Clean specific backend
+```
+
+For basic guidance on how to use GAMBIT, please see the [Examples](/documentation/examples/) section.
