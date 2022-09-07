@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherited by [Gambit::Printers::BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/)
@@ -285,4 +283,4 @@ Counter for printer cooldown. If non-zero printer can be disabled for a fixed nu
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

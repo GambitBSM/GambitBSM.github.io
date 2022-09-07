@@ -8,8 +8,6 @@ description: 'Derived thread-safe random number generator class, templated on th
 
 
 
-
-
 Derived thread-safe random number generator class, templated on the RNG engine type.  [More...](#detailed-description)
 
 
@@ -85,4 +83,4 @@ Generate a random integer using the chosen engine Selected uniformly from range 
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

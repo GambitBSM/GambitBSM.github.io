@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # 0.1.0/salami_gambit.py
 
-
-
 [No description available]
 
 ## Namespaces
@@ -152,4 +150,4 @@ def get_xsection(proc, energy, xsec_lo_fb):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

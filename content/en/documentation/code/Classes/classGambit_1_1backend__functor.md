@@ -8,8 +8,6 @@ description: 'Actual backend functor type. '
 
 
 
-
-
 Actual backend functor type.  [More...](#detailed-description)
 
 ## Detailed Description
@@ -24,4 +22,4 @@ class Gambit::backend_functor;
 Actual backend functor type. 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

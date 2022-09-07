@@ -8,8 +8,6 @@ description: 'A single resonance of a given width at a given energy (both in GeV
 
 
 
-
-
 A single resonance of a given width at a given energy (both in GeV) 
 
 
@@ -66,4 +64,4 @@ double width;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

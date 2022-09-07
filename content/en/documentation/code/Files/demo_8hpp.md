@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # models/demo.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -470,4 +468,4 @@ DEPENDENCY(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # examples/ExampleBit_A_standalone_example.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Namespaces
@@ -255,4 +253,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

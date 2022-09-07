@@ -8,8 +8,6 @@ description: 'GAMBIT native higgs coupling table class. '
 
 
 
-
-
 GAMBIT native higgs coupling table class. 
 
 
@@ -393,4 +391,4 @@ Particles that higgses can decay invisibly to.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

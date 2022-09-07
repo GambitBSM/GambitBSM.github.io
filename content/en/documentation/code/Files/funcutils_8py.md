@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # modules/funcutils.py
 
-
-
 [No description available]
 
 ## Namespaces
@@ -587,4 +585,4 @@ def getFunctionNameDict(func_el):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/AlterBBN_2_2.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -149,4 +147,4 @@ BE_CONV_FUNCTION(call_nucl, int, (map_str_dbl&,double*), "call_nucl")
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

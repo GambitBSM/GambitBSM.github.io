@@ -8,8 +8,6 @@ description: 'SM specialisation of SLHAea object wrapper version of [SubSpectrum
 
 
 
-
-
 SM specialisation of SLHAea object wrapper version of [SubSpectrum]() class. 
 
 
@@ -255,4 +253,4 @@ Fill Pole_mass map (from Model object)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

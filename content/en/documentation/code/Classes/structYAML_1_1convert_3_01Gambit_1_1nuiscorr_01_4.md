@@ -8,8 +8,6 @@ description: '[YAML](/documentation/code/namespaces/namespaceyaml/) conversion s
 
 
 
-
-
 [YAML](/documentation/code/namespaces/namespaceyaml/) conversion structure for SuperIso SM nuisance data. 
 
 ## Public Functions
@@ -42,4 +40,4 @@ static inline bool decode(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:43 +0000

@@ -8,8 +8,6 @@ description: 'Objective functor made up of multiple plugins. '
 
 
 
-
-
 Objective functor made up of multiple plugins.  [More...](#detailed-description)
 
 
@@ -96,4 +94,4 @@ inline ret main(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

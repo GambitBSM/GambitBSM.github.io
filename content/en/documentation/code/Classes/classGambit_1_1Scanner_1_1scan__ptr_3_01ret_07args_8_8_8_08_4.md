@@ -8,8 +8,6 @@ description: 'Container class that hold the output of the "get_purpose" function
 
 
 
-
-
 Container class that hold the output of the "get_purpose" function.  [More...](#detailed-description)
 
 
@@ -113,4 +111,4 @@ inline ret operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

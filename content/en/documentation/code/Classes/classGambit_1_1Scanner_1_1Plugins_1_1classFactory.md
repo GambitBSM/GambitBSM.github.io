@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available] [More...](#detailed-description)
 
 Inherits from [Gambit::Scanner::Plugins::factoryBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/)
@@ -59,4 +57,4 @@ inline ~classFactory()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

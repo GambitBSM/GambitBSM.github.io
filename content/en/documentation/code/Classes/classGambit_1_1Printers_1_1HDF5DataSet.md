@@ -8,8 +8,6 @@ description: 'Class for interfacing to a HDF5 dataset of fixed type. '
 
 
 
-
-
 Class for interfacing to a HDF5 dataset of fixed type.  [More...](#detailed-description)
 
 
@@ -181,4 +179,4 @@ Create a (chunked) dataset.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

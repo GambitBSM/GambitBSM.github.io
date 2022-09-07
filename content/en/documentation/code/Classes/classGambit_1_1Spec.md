@@ -8,8 +8,6 @@ description: 'Need to forward declare [Spec]() class. '
 
 
 
-
-
 Need to forward declare [Spec]() class.  [More...](#detailed-description)
 
 Inherits from [Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/)
@@ -531,4 +529,4 @@ friend class FptrFinder(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

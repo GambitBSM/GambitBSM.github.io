@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # modules/filehandling.py
 
-
-
 [No description available]
 
 ## Namespaces
@@ -914,4 +912,4 @@ def resetSourceCode(reset_info_file_name):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

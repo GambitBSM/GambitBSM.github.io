@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 ## Public Functions
@@ -53,4 +51,4 @@ Parameterises <sigma v> as A + Bv^2, i.e. s + p wave annihilation with no resona
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

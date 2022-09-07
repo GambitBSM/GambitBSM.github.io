@@ -8,8 +8,6 @@ description: 'MSSM specialisation of SLHAea object wrapper version of [SubSpectr
 
 
 
-
-
 MSSM specialisation of SLHAea object wrapper version of [SubSpectrum]() class. 
 
 
@@ -272,4 +270,4 @@ Map fillers Used to initialise maps in [Spec](/documentation/code/classes/classg
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

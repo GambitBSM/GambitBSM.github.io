@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::CosmoBit::CosmoBit_utils
 
-
-
 [No description available]
 
 ## Functions
@@ -36,4 +34,4 @@ double entropy_density_SM(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

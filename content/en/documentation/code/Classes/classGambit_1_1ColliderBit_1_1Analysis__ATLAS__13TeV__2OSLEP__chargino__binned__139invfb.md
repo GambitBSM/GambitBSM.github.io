@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherits from [Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__139invfb/), [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)
@@ -115,4 +113,4 @@ Gather together the info for likelihood calculation.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

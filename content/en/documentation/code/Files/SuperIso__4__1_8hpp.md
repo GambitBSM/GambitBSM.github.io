@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/SuperIso_4_1.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -303,4 +301,4 @@ BE_CONV_FUNCTION(modified_delta0, double, (const parameters*), "modified_delta0"
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

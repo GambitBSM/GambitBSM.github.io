@@ -8,8 +8,6 @@ description: 'An exception for when Pythia fails to initialize. '
 
 
 
-
-
 An exception for when Pythia fails to initialize. 
 
 
@@ -19,4 +17,4 @@ Inherits from std::exception
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

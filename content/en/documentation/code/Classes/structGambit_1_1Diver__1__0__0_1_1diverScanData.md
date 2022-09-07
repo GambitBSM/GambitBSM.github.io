@@ -8,8 +8,6 @@ description: 'Structure for passing likelihood and printer data through Diver to
 
 
 
-
-
 Structure for passing likelihood and printer data through Diver to the objective function. 
 
 
@@ -40,4 +38,4 @@ Scanner::printer_interface * printer;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

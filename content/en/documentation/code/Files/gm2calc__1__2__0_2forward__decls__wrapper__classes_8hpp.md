@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # gm2calc_1_2_0/gm2calc_1_2_0/forward_decls_wrapper_classes.hpp
 
-
-
 [No description available]
 
 ## Functions
@@ -103,4 +101,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

@@ -8,8 +8,6 @@ description: 'Class to manage a set of buffers for a single output type. '
 
 
 
-
-
 Class to manage a set of buffers for a single output type.  [More...](#detailed-description)
 
 
@@ -55,4 +53,4 @@ Retrieve buffer of our type for a given label.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

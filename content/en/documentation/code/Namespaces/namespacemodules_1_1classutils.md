@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # modules::classutils
 
-
-
 [No description available]
 
 ## Functions
@@ -320,4 +318,4 @@ def isAcceptedMemberVariable(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

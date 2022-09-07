@@ -8,8 +8,6 @@ description: 'Class to connect PolyChord log-likelihood function and ScannerBit 
 
 
 
-
-
 Class to connect PolyChord log-likelihood function and ScannerBit likelihood function. 
 
 
@@ -120,4 +118,4 @@ Disable printing for speeds greater and equal than Speeds start at 0 A value of 
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

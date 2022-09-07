@@ -6,8 +6,6 @@ description: 'TODO: see if we can use this one: '
 
 # Gambit
 
-
-
 TODO: see if we can use this one:  [More...](#detailed-description)
 
 ## Namespaces
@@ -3848,4 +3846,4 @@ const int gambit_version_int =  10000*gambit_version_major + 100*gambit_version_
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

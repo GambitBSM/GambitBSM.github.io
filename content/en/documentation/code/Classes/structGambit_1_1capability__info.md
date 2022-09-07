@@ -8,8 +8,6 @@ description: 'Helper struct to carry around capability information. '
 
 
 
-
-
 Helper struct to carry around capability information. 
 
 
@@ -69,4 +67,4 @@ Flag to check if description is missing.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

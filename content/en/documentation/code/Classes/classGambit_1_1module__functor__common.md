@@ -8,8 +8,6 @@ description: 'Functor derived class for module functions. '
 
 
 
-
-
 Functor derived class for module functions. 
 
 
@@ -1452,4 +1450,4 @@ friend void FunctorHelp::leaving_multithreaded_region(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

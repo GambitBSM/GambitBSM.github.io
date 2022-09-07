@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::DecayBit::MSSM_Z
 
-
-
 [No description available]
 
 ## Functions
@@ -58,4 +56,4 @@ sw2Weinberg angle, \(\sin^2\theta_W\)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

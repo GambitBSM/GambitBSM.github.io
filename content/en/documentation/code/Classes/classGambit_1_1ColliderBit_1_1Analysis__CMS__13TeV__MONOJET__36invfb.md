@@ -8,8 +8,6 @@ description: '[CMS]() Run 2 monojet analysis (no W/Z region) with 36/fb of data.
 
 
 
-
-
 [CMS]() Run 2 monojet analysis (no W/Z region) with 36/fb of data.  [More...](#detailed-description)
 
 Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)
@@ -191,4 +189,4 @@ Cutflow _cutflow;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

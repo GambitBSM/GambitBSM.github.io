@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherits from [Gambit::Printers::BaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basereader/), [Gambit::Printers::SQLiteBase](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/), [Gambit::Printers::BaseBaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)
@@ -208,4 +206,4 @@ Retrieve functions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

@@ -8,8 +8,6 @@ description: 'A container for the mass and spin of a particle. '
 
 
 
-
-
 A container for the mass and spin of a particle. 
 
 
@@ -61,4 +59,4 @@ Twice the spin of the particle.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

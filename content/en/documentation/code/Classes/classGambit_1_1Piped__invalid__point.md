@@ -8,8 +8,6 @@ description: '[Gambit](/documentation/code/namespaces/namespacegambit/) piped in
 
 
 
-
-
 [Gambit](/documentation/code/namespaces/namespacegambit/) piped invalid point exception class. 
 
 
@@ -59,4 +57,4 @@ Check whether a piped invalid point exception was requested, and throw if necess
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

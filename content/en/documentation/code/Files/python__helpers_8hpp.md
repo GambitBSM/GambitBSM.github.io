@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Backends/python_helpers.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Types
@@ -205,4 +203,4 @@ Types used for Python backends.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

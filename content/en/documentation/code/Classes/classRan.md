@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherited by [BasicDevs](/documentation/code/classes/classbasicdevs/), [BasicDevs](/documentation/code/classes/classbasicdevs/), [ExponDev](/documentation/code/classes/classexpondev/), [ExponDev](/documentation/code/classes/classexpondev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [NormalDev](/documentation/code/classes/classnormaldev/), [NormalDev](/documentation/code/classes/classnormaldev/)
@@ -60,4 +58,4 @@ inline double Doub()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:43 +0000

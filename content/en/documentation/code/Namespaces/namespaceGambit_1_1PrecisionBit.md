@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::PrecisionBit
 
-
-
 [No description available]
 
 ## Functions
@@ -648,4 +646,4 @@ Option profile_systematics<bool>: Use likelihood version that has been profiled 
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

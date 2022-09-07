@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # models/VectorSingletDM_Z2.hpp
 
-
-
 [No description available]
 
 ## Defines
@@ -83,4 +81,4 @@ Ankit Beniwal 2016 August, 2017 June
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

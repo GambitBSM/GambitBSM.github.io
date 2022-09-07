@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # harvesting_tools
 
-
-
 [No description available]
 
 ## Functions
@@ -361,4 +359,4 @@ string equiv_config =  "./config/resolution_type_equivalency_classes.yaml";
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

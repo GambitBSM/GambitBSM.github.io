@@ -8,8 +8,6 @@ description: 'Template class for 1d priors which need only a "range" option in t
 
 
 
-
-
 Template class for 1d priors which need only a "range" option in their constructor.  [More...](#detailed-description)
 
 
@@ -112,4 +110,4 @@ Log of PDF density.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # common_headers/scripts/BOSS/common_headers/wrapperbase.hpp
 
-
-
 [No description available]
 
 ## Classes
@@ -53,4 +51,4 @@ __END_GAMBIT_NAMESPACE__
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

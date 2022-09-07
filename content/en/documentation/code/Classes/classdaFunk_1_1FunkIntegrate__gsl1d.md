@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherits from [daFunk::FunkBase](/documentation/code/classes/classdafunk_1_1funkbase/), gsl_function
@@ -273,4 +271,4 @@ inline virtual double value(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

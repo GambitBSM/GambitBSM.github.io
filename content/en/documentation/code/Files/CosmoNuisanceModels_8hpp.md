@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # models/CosmoNuisanceModels.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -1705,4 +1703,4 @@ child of cosmo_nuisance_ska1_IM_band model containing only parameter for ska1_IM
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

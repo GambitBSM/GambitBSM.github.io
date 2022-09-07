@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/SUSYHD_1_0_2.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -125,4 +123,4 @@ BE_INI_DEPENDENCY(unimproved_MSSM_spectrum, Spectrum)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

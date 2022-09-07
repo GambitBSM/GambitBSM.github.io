@@ -8,8 +8,6 @@ description: 'Structure providing some basic info on backend libraries. '
 
 
 
-
-
 Structure providing some basic info on backend libraries. 
 
 
@@ -349,4 +347,4 @@ C/C++/Fortran backends that have been successfully loaded (Key: name+version)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

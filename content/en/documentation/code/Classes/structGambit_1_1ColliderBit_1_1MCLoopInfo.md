@@ -8,8 +8,6 @@ description: 'Container for event loop status data and settings. '
 
 
 
-
-
 Container for event loop status data and settings. 
 
 
@@ -299,4 +297,4 @@ std::map< str, std::map< str, std::vector< str > > > detector_analyses;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

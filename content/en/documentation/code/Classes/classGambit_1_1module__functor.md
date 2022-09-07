@@ -8,8 +8,6 @@ description: 'Actual module functor type for all but TYPE=void. '
 
 
 
-
-
 Actual module functor type for all but TYPE=void.  [More...](#detailed-description)
 
 
@@ -467,4 +465,4 @@ Flag to select whether or not the results of this functor should be sent to the 
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

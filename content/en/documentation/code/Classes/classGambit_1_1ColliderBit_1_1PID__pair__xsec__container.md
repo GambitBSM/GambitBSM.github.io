@@ -8,8 +8,6 @@ description: 'A class for holding the production cross-section for final state i
 
 
 
-
-
 A class for holding the production cross-section for final state identified by the pair of PID codes. 
 
 
@@ -199,4 +197,4 @@ Add a process code to the list of processes related to this cross-section.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

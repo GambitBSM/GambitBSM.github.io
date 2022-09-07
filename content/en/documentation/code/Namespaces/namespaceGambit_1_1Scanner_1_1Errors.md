@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Scanner::Errors
 
-
-
 [No description available]
 
 ## Functions
@@ -49,4 +47,4 @@ inline bool & _bool_()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

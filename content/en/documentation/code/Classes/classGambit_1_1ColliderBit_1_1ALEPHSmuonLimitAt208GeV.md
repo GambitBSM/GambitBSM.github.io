@@ -8,8 +8,6 @@ description: 'A class to contain the limit data from ALEPH_PLB526_2002_206, figu
 
 
 
-
-
 A class to contain the limit data from ALEPH_PLB526_2002_206, figure 3b. 
 
 
@@ -97,4 +95,4 @@ ALEPHSmuonLimitAt208GeV()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

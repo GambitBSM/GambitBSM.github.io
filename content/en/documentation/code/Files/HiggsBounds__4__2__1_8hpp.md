@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/HiggsBounds_4_2_1.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -201,4 +199,4 @@ BE_FUNCTION(HiggsBounds_charged_input, void, (double*, double*, double*, double*
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

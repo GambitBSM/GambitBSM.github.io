@@ -8,8 +8,6 @@ description: 'A class for collider analyses within ColliderBit. '
 
 
 
-
-
 A class for collider analyses within ColliderBit. 
 
 
@@ -271,4 +269,4 @@ Reset the analysis-specific variables.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

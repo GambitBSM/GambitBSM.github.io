@@ -8,8 +8,6 @@ description: 'Mini helper class to specify behaviour of getters w.r.t. overrides
 
 
 
-
-
 Mini helper class to specify behaviour of getters w.r.t. overrides in a type-safe way. 
 
 
@@ -42,4 +40,4 @@ inline SpecOverrideOptions(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

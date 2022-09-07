@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Elements/standalone_module.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -110,4 +108,4 @@ void Suspicious() {Suspicious_point_exception().raise(".");}
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:54 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

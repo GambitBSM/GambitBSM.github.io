@@ -8,8 +8,6 @@ description: 'VertexBuffer for simple numerical types - derived version that han
 
 
 
-
-
 VertexBuffer for simple numerical types - derived version that handles output to hdf5.  [More...](#detailed-description)
 
 
@@ -329,4 +327,4 @@ virtual ulong get_dataset_length()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

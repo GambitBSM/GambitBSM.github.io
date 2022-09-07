@@ -8,8 +8,6 @@ description: 'A simple container for a line segment on an xy plane. '
 
 
 
-
-
 A simple container for a line segment on an xy plane.  [More...](#detailed-description)
 
 
@@ -202,4 +200,4 @@ Determine if this intersects with other and where.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

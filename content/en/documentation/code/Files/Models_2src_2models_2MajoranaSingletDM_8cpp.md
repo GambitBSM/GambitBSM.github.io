@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # models/Models/src/models/MajoranaSingletDM.cpp
 
-
-
 [No description available]
 
 ## Defines
@@ -100,4 +98,4 @@ using namespace Gambit::Utils;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

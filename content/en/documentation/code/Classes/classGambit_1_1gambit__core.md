@@ -8,8 +8,6 @@ description: 'Master driver class for a GAMBIT scan. '
 
 
 
-
-
 Master driver class for a GAMBIT scan. 
 
 
@@ -394,4 +392,4 @@ Vector of all [model_info]() objects.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

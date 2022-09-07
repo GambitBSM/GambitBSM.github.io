@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # src/mt2w.cc
 
-
-
 [No description available]
 
 ## Functions
@@ -164,4 +162,4 @@ double mt2wWrapperHepUtils(HEPUtils::P4& lep, HEPUtils::P4& jet_o, HEPUtils::P4&
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

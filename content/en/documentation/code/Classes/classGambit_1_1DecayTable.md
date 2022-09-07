@@ -8,8 +8,6 @@ description: 'GAMBIT native decay table class. '
 
 
 
-
-
 GAMBIT native decay table class. 
 
 
@@ -315,4 +313,4 @@ The actual underlying map. Just iterate over this directly if you need to iterat
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

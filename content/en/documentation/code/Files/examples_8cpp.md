@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # test_functions/examples.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -291,4 +289,4 @@ objective_plugin(flat_prior, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:52 +0000
+Updated on 2022-09-07 at 14:07:47 +0000

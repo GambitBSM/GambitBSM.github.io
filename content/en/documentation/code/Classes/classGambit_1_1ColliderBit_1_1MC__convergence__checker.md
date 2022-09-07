@@ -8,8 +8,6 @@ description: 'Helper class for testing for convergence of analyses. '
 
 
 
-
-
 Helper class for testing for convergence of analyses. 
 
 
@@ -98,4 +96,4 @@ Check if convergence has been achieved across threads, and across all instances 
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

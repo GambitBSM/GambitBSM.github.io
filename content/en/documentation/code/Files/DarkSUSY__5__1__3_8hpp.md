@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/DarkSUSY_5_1_3.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -449,4 +447,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(decay_rates, DecayTable, MSSM63atQ, CMSSM)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

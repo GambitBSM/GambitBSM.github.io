@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # src/standalone_error_handlers.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Namespaces
@@ -177,4 +175,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:52 +0000
+Updated on 2022-09-07 at 14:07:47 +0000

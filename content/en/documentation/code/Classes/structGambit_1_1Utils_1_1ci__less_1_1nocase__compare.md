@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherits from std::binary_function< unsigned char, unsigned char, bool >
@@ -35,4 +33,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

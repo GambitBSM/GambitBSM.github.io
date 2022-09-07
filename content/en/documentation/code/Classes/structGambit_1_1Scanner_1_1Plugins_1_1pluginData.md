@@ -8,8 +8,6 @@ description: 'Structure that holds all the data provided by plugins about themse
 
 
 
-
-
 Structure that holds all the data provided by plugins about themselves. 
 
 
@@ -163,4 +161,4 @@ bool loaded;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

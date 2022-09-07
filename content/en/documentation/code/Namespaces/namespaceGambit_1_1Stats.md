@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Stats
 
-
-
 [No description available]
 
 ## Functions
@@ -129,4 +127,4 @@ Minimum finite result returnable from log(double x);.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

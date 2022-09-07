@@ -8,8 +8,6 @@ description: 'Base function for the object that is upputed by "set_purpose". '
 
 
 
-
-
 Base function for the object that is upputed by "set_purpose".  [More...](#detailed-description)
 
 
@@ -301,4 +299,4 @@ friend class scan_ptr< ret(args...)>(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

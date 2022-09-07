@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/DDCalc_1_1_0.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -375,4 +373,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

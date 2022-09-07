@@ -8,8 +8,6 @@ description: 'Container class to store plugin values for resume function. '
 
 
 
-
-
 Container class to store plugin values for resume function.  [More...](#detailed-description)
 
 
@@ -74,4 +72,4 @@ inline ~__plugin_resume__()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

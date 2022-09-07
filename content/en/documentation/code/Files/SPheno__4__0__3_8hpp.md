@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/SPheno_4_0_3.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -692,4 +690,4 @@ BE_CONV_FUNCTION(ErrorHandling, void, (const int&), "SPheno_internal")
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

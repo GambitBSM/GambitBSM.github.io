@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/plc_3_0.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -353,4 +351,4 @@ BE_CONV_FUNCTION(plc_loglike_lensing_marged_2018,double,(double*),"plc_loglike_l
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

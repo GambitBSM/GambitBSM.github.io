@@ -8,8 +8,6 @@ description: 'Struct to describe start and end indices for a chunk of data. '
 
 
 
-
-
 Struct to describe start and end indices for a chunk of data.  [More...](#detailed-description)
 
 
@@ -167,4 +165,4 @@ std::size_t eff_length;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:43 +0000

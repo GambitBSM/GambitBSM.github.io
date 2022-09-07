@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Priors
 
-
-
 [No description available]
 
 ## Classes
@@ -83,4 +81,4 @@ reg_elem< create_prior_function > prior_creators;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

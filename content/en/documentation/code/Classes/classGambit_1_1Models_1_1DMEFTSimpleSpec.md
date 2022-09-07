@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherits from [Gambit::Spec< DMEFTSimpleSpec >](/documentation/code/classes/classgambit_1_1spec/), [Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/)
@@ -726,4 +724,4 @@ Construct the [SubSpectrumContents](/documentation/code/classes/classgambit_1_1s
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

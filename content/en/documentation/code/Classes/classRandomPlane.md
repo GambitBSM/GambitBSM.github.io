@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherits from [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [BasicDevs](/documentation/code/classes/classbasicdevs/), [Cholesky](/documentation/code/classes/classcholesky/), [Ran](/documentation/code/classes/classran/)
@@ -408,4 +406,4 @@ inline ~RandomPlane()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:43 +0000

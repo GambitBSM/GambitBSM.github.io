@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # SpecBit/external_examples.hpp
 
-
-
 [No description available]
 
 ## Functions
@@ -431,4 +429,4 @@ void SM_checks(Gambit::SubSpectrum& SM) {
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:52 +0000
+Updated on 2022-09-07 at 14:07:47 +0000

@@ -8,8 +8,6 @@ description: 'Partial specialisation for non-variadic backend functions. '
 
 
 
-
-
 Partial specialisation for non-variadic backend functions.  [More...](#detailed-description)
 
 
@@ -108,4 +106,4 @@ Call backend function.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

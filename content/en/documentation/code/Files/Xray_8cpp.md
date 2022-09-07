@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # src/Xray.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -1275,4 +1273,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:54 +0000
+Updated on 2022-09-07 at 14:07:49 +0000

@@ -8,8 +8,6 @@ description: 'Base class for comparing scanner plugins. '
 
 
 
-
-
 Base class for comparing scanner plugins. 
 
 
@@ -73,4 +71,4 @@ inline virtual ~VersionCompareBase()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

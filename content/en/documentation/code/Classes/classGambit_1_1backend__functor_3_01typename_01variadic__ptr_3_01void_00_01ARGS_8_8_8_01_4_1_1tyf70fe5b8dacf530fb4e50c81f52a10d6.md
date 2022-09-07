@@ -8,8 +8,6 @@ description: 'Template specialisation for variadic void backend functions. '
 
 
 
-
-
 Template specialisation for variadic void backend functions.  [More...](#detailed-description)
 
 
@@ -229,4 +227,4 @@ Operation (execute function)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

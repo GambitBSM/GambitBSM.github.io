@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::NeutrinoBit
 
-
-
 [No description available]
 
 ## Classes
@@ -1265,4 +1263,4 @@ void coupling_slide(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

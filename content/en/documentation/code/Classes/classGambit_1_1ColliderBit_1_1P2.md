@@ -8,8 +8,6 @@ description: 'A simple container for a point on an xy plane. '
 
 
 
-
-
 A simple container for a point on an xy plane.  [More...](#detailed-description)
 
 
@@ -184,4 +182,4 @@ inline P2 & operator/=(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

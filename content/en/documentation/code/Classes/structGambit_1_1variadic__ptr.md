@@ -8,8 +8,6 @@ description: 'Type redefinition to get around icc compiler bugs. '
 
 
 
-
-
 Type redefinition to get around icc compiler bugs.  [More...](#detailed-description)
 
 
@@ -41,4 +39,4 @@ typedef TYPE(* Gambit::variadic_ptr< TYPE, ARGS >::type) (ARGS...,...);
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

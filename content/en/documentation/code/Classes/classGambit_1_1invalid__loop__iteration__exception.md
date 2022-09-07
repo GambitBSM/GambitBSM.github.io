@@ -8,8 +8,6 @@ description: '[Gambit](/documentation/code/namespaces/namespacegambit/) invalid 
 
 
 
-
-
 [Gambit](/documentation/code/namespaces/namespacegambit/) invalid loop iteration exception class. 
 
 
@@ -65,4 +63,4 @@ Constructor
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

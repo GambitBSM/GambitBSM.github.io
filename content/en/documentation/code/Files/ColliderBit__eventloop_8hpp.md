@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # ColliderBit/ColliderBit_eventloop.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -101,4 +99,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:55 +0000
+Updated on 2022-09-07 at 14:07:49 +0000

@@ -8,8 +8,6 @@ description: 'Fully unspecialised [MapTypes]() declaration. '
 
 
 
-
-
 Fully unspecialised [MapTypes]() declaration.  [More...](#detailed-description)
 
 ## Detailed Description
@@ -23,4 +21,4 @@ struct Gambit::MapTypes;
 Fully unspecialised [MapTypes]() declaration. 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

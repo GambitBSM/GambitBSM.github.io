@@ -8,8 +8,6 @@ description: 'Virtual container base class to store plugin values for resume fun
 
 
 
-
-
 Virtual container base class to store plugin values for resume function. 
 
 
@@ -47,4 +45,4 @@ inline virtual ~__plugin_resume_base__()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

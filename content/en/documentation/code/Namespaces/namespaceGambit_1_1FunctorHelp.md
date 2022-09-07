@@ -6,8 +6,6 @@ description: 'Definitions of friend functions from above. '
 
 # Gambit::FunctorHelp
 
-
-
 Definitions of friend functions from above.  [More...](#detailed-description)
 
 ## Functions
@@ -50,4 +48,4 @@ void leaving_multithreaded_region(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::ObjectivesBit
 
-
-
 [No description available]
 
 ## Types
@@ -242,4 +240,4 @@ Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/ab
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

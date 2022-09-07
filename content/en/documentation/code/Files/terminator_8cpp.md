@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # src/terminator.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -78,4 +76,4 @@ void Gambit::terminator()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:54 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

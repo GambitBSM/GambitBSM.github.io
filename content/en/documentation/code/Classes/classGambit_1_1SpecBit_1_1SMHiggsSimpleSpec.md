@@ -8,8 +8,6 @@ description: '[SubSpectrum](/documentation/code/classes/classgambit_1_1subspectr
 
 
 
-
-
 [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) wrapper class for the SM Higgs sector. 
 
 
@@ -192,4 +190,4 @@ Map fillers Used to initialise maps in the RunparDer and PhysDer classes (specia
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

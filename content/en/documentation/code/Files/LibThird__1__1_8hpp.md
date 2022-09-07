@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/LibThird_1_1.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -179,4 +177,4 @@ BE_CONV_FUNCTION(awesomenessNotByAnders, double, (int), "awesomeness")
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

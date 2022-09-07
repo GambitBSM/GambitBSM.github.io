@@ -8,8 +8,6 @@ description: 'Multi-dimensional Log-Normal prior. '
 
 
 
-
-
 Multi-dimensional Log-Normal prior.  [More...](#detailed-description)
 
 
@@ -118,4 +116,4 @@ Log of PDF density.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

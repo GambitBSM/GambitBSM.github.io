@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # simple/simple/random_tools.hpp
 
-
-
 [No description available]
 
 ## Classes
@@ -1525,4 +1523,4 @@ class MultiNormDev : public RandomBasis, public Cholesky
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:52 +0000
+Updated on 2022-09-07 at 14:07:47 +0000

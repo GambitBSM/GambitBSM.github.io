@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Printers::HDF5
 
-
-
 [No description available]
 
 ## Classes
@@ -640,4 +638,4 @@ void * old_client_data;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

@@ -8,8 +8,6 @@ description: 'A class to contain the limit data from OPAL, hep-ex/0210043, figur
 
 
 
-
-
 A class to contain the limit data from OPAL, hep-ex/0210043, figure 5a (in colour) 
 
 
@@ -111,4 +109,4 @@ Plots only go down to 45 GeV
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

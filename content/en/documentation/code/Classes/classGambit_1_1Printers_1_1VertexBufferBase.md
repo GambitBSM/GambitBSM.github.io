@@ -8,8 +8,6 @@ description: 'VertexBuffer abstract interface base class. '
 
 
 
-
-
 VertexBuffer abstract interface base class. 
 
 
@@ -377,4 +375,4 @@ bool sync_buffer_empty = true;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

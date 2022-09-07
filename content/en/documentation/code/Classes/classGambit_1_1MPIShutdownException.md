@@ -8,8 +8,6 @@ description: 'Special exception raised when emergency shutdown triggered via MPI
 
 
 
-
-
 Special exception raised when emergency shutdown triggered via MPI. 
 
 
@@ -45,4 +43,4 @@ virtual const char * what() const
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

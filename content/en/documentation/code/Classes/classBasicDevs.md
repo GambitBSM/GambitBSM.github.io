@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherits from [Ran](/documentation/code/classes/classran/), [Ran](/documentation/code/classes/classran/)
@@ -99,4 +97,4 @@ inline double ExpDev()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:43 +0000

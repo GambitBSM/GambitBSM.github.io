@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # models/CosmoModels.cpp
 
-
-
 [No description available]
 
 ## Defines
@@ -675,4 +673,4 @@ INFLATION_MODEL_TO_POWER_LAW(Inflation_InstReh_1Starobinsky)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

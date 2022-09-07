@@ -8,8 +8,6 @@ description: 'BASE READER CLASS. '
 
 
 
-
-
 BASE READER CLASS. 
 
 
@@ -134,4 +132,4 @@ Default _retrieve function. Throws an error if no virtual function matching the 
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

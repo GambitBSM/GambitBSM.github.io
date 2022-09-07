@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/SPheno_4_0_3.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -1430,4 +1428,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

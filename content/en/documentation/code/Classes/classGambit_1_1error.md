@@ -8,8 +8,6 @@ description: 'GAMBIT error class. '
 
 
 
-
-
 GAMBIT error class. 
 
 
@@ -182,4 +180,4 @@ Constructor with log tags as a set.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

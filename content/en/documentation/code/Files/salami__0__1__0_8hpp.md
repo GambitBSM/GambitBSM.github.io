@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/salami_0_1_0.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -145,4 +143,4 @@ BE_FUNCTION(get_xsection, PyDict, (iipair&, double&, double&), "get_xsection", "
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

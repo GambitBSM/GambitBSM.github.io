@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # src/DarkBit/src/Axions.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Namespaces
@@ -2425,4 +2423,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:54 +0000
+Updated on 2022-09-07 at 14:07:49 +0000

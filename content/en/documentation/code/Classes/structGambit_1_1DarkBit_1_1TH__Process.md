@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available] [More...](#detailed-description)
 
 
@@ -151,4 +149,4 @@ Additional decay rate or sigmav (in addition to above channels)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

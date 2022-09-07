@@ -8,8 +8,6 @@ description: 'Base class for buffers. '
 
 
 
-
-
 Base class for buffers. 
 
 
@@ -239,4 +237,4 @@ Buffer specifying whether the data in the primary buffer is "valid".
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

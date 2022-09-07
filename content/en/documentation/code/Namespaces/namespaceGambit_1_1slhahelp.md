@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::slhahelp
 
-
-
 [No description available]
 
 ## Types
@@ -861,4 +859,4 @@ const std::map< str, std::vector< str > > type_to_vec_of_gauge_es = init_type_to
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

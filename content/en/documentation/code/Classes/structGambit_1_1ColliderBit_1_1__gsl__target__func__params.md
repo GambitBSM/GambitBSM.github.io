@@ -8,8 +8,6 @@ description: 'A struct to contain parameters for the GSL optimiser target functi
 
 
 
-
-
 A struct to contain parameters for the GSL optimiser target function. 
 
 ## Public Attributes
@@ -69,4 +67,4 @@ bool combine_nocovar_SRs;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

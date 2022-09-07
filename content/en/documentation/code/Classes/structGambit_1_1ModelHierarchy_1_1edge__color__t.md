@@ -8,8 +8,6 @@ description: 'Property tag for adding color property to edges. '
 
 
 
-
-
 Property tag for adding color property to edges. 
 
 ## Public Types
@@ -29,4 +27,4 @@ typedef boost::edge_property_tag Gambit::ModelHierarchy::edge_color_t::kind;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

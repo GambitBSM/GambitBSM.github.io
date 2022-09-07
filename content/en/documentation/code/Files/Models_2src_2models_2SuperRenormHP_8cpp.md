@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # models/Models/src/models/SuperRenormHP.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -107,4 +105,4 @@ void MODEL_NAMESPACE::SuperRenormHP_to_DecayingDM_mixture (const ModelParameters
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

@@ -8,8 +8,6 @@ description: 'Derived EntryGetterInterface class for accessing [asciiPrinter](/d
 
 
 
-
-
 Derived EntryGetterInterface class for accessing [asciiPrinter](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/) output points. 
 
 
@@ -188,4 +186,4 @@ Retrieval functions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

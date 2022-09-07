@@ -8,8 +8,6 @@ description: 'A base class for [BEvariable_bucket]() and [BEfunction_bucket](). 
 
 
 
-
-
 A base class for [BEvariable_bucket]() and [BEfunction_bucket](). 
 
 
@@ -85,4 +83,4 @@ Get version information.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

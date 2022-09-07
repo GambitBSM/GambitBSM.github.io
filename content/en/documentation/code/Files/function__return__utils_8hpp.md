@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # common_headers/function_return_utils.hpp
 
-
-
 [No description available]
 
 ## Functions
@@ -81,4 +79,4 @@ U& reference_returner(const V* ptr);
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

@@ -8,8 +8,6 @@ description: 'Constructable class for doing basic operations on a HDF5 dataset. 
 
 
 
-
-
 Constructable class for doing basic operations on a HDF5 dataset. 
 
 
@@ -92,4 +90,4 @@ Create a new dataset at the specified location (implemented in derived class sin
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

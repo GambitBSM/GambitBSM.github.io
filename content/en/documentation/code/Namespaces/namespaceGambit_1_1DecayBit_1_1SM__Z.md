@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::DecayBit::SM_Z
 
-
-
 [No description available]
 
 ## Classes
@@ -156,4 +154,4 @@ The final entry isn't in the table and instead comes from the text below eq. 16.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

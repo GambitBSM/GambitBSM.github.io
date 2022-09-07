@@ -6,8 +6,6 @@ description: 'Forward declaration to cut down on includes. '
 
 # LHEF
 
-
-
 Forward declaration to cut down on includes.  [More...](#detailed-description)
 
 ## Detailed Description
@@ -48,4 +46,4 @@ Hat tip: Leif Lonnblad for writing the [LHEF](/documentation/code/namespaces/nam
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

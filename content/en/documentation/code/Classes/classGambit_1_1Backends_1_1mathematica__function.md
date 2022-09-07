@@ -8,8 +8,6 @@ description: 'Holds the info about a Mathematica backend function, and defines c
 
 
 
-
-
 Holds the info about a Mathematica backend function, and defines conversion functions.  [More...](#detailed-description)
 
 
@@ -57,4 +55,4 @@ Operation (execute function and return value)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

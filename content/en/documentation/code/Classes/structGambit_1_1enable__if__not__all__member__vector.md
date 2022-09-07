@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Public Types
@@ -38,4 +36,4 @@ typedef std::enable_if<!is_all_member_vector<args...>::value, ret> Gambit::enabl
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

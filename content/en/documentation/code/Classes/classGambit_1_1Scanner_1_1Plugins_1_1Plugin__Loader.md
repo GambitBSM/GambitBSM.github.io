@@ -8,8 +8,6 @@ description: 'container class for the actual plugins detected by ScannerBit '
 
 
 
-
-
 container class for the actual plugins detected by ScannerBit 
 
 
@@ -172,4 +170,4 @@ Plugin_Details & find(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

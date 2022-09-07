@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # ObjectivesBit/ObjectivesBit_rollcall.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -597,4 +595,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

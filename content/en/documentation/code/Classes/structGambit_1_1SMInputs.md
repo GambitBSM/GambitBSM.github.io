@@ -8,8 +8,6 @@ description: 'Container class for Standard Model input information (defined as i
 
 
 
-
-
 Container class for Standard Model input information (defined as in SLHA2) 
 
 
@@ -226,4 +224,4 @@ double mW = mw_central_observed;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

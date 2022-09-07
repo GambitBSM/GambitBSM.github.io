@@ -8,8 +8,6 @@ description: 'Specialisation of traits class needed to inform base spectrum clas
 
 
 
-
-
 Specialisation of traits class needed to inform base spectrum class of the Model and Input types. 
 
 
@@ -63,4 +61,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

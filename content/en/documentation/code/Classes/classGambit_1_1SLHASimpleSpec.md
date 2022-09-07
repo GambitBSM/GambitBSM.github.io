@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available] [More...](#detailed-description)
 
 Inherits from [Gambit::Spec< Derived >](/documentation/code/classes/classgambit_1_1spec/), [Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/)
@@ -325,4 +323,4 @@ Input dummyinput;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

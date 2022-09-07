@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Backends/include/gambit/Backends/abstractbase.hpp
 
-
-
 [No description available]
 
 ## Classes
@@ -42,4 +40,4 @@ class AbstractBase
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

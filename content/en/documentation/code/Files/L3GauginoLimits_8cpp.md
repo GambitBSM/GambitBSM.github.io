@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # limits/L3GauginoLimits.cpp
 
-
-
 [No description available]
 
 ## Namespaces
@@ -689,4 +687,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:55 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

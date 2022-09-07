@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Utils
 
-
-
 [No description available]
 
 ## Classes
@@ -684,4 +682,4 @@ const char *[] whitespaces = {" ", "\t", "\n", "\f", "\r"};
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

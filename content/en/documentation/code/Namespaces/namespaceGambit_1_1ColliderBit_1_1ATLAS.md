@@ -6,8 +6,6 @@ description: 'ATLAS-specific efficiency and smearing functions for super fast de
 
 # Gambit::ColliderBit::ATLAS
 
-
-
 ATLAS-specific efficiency and smearing functions for super fast detector simulation. 
 
 ## Functions
@@ -317,4 +315,4 @@ Electron 2019 Isolation efficiency functions from [https://arxiv.org/pdf/1902.04
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

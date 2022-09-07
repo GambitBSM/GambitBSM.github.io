@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Backends
 
-
-
 [No description available]
 
 ## Namespaces
@@ -341,4 +339,4 @@ Helper function that indicates if a type is numerical or not.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

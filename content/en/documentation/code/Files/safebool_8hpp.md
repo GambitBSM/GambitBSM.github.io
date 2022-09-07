@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Utils/safebool.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Namespaces
@@ -110,4 +108,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

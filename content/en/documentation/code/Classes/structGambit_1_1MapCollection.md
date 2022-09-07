@@ -8,8 +8,6 @@ description: 'Struct to hold collections of function pointer maps to be filled b
 
 
 
-
-
 Struct to hold collections of function pointer maps to be filled by derived classes.  [More...](#detailed-description)
 
 
@@ -128,4 +126,4 @@ MapTypes::fmap2_extraI map2_extraI;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

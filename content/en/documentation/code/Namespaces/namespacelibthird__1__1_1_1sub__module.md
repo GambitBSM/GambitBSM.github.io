@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # libthird_1_1::sub_module
 
-
-
 [No description available]
 
 ## Functions
@@ -50,4 +48,4 @@ int someOtherInt =  5;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

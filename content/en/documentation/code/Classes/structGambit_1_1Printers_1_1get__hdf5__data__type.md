@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -26,4 +24,4 @@ Base template is left undefined in order to raise a compile error if specialisat
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

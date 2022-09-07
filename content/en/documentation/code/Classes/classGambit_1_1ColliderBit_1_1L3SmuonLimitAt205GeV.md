@@ -8,8 +8,6 @@ description: 'A class to contain the limit data from L3_PLB580_2004_37, figure 2
 
 
 
-
-
 A class to contain the limit data from L3_PLB580_2004_37, figure 2b. 
 
 
@@ -97,4 +95,4 @@ L3SmuonLimitAt205GeV()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

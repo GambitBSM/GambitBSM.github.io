@@ -8,8 +8,6 @@ description: 'Inifile parser base class. '
 
 
 
-
-
 Inifile parser base class. 
 
 
@@ -218,4 +216,4 @@ Do the basic parsing of the [YAML](/documentation/code/namespaces/namespaceyaml/
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

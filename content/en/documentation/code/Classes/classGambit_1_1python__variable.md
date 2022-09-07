@@ -8,8 +8,6 @@ description: 'Holds the info about a python backend variable, and defines conver
 
 
 
-
-
 Holds the info about a python backend variable, and defines conversion functions.  [More...](#detailed-description)
 
 
@@ -65,4 +63,4 @@ Cast operator from [python_variable](/documentation/code/classes/classgambit_1_1
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # modules/classutils.py
 
-
-
 [No description available]
 
 ## Namespaces
@@ -2136,4 +2134,4 @@ def isAcceptedMemberVariable(mem_el):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

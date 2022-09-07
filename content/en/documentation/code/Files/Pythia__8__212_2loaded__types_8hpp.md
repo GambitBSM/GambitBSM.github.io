@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Pythia_8_212/Pythia_8_212/loaded_types.hpp
 
-
-
 [No description available]
 
 ## Defines
@@ -118,4 +116,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

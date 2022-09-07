@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # 1.0.2/xsecBE_gambit.py
 
-
-
 [No description available]
 
 ## Namespaces
@@ -114,4 +112,4 @@ def get_xsection(proc):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

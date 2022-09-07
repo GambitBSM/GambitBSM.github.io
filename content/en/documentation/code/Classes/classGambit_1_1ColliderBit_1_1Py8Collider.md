@@ -8,8 +8,6 @@ description: 'A specializable, recyclable class interfacing ColliderBit and Pyth
 
 
 
-
-
 A specializable, recyclable class interfacing ColliderBit and Pythia.  [More...](#detailed-description)
 
 
@@ -385,4 +383,4 @@ std::vector< std::string > _pythiaSettings;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

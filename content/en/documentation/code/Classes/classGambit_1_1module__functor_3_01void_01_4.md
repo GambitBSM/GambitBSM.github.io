@@ -8,8 +8,6 @@ description: 'Actual module functor type for TYPE=void. '
 
 
 
-
-
 Actual module functor type for TYPE=void. 
 
 
@@ -378,4 +376,4 @@ Internal storage of function pointer.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

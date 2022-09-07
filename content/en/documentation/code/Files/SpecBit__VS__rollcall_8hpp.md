@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # SpecBit/SpecBit_VS_rollcall.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -847,4 +845,4 @@ Function to create an object of type SpectrumEntriesForVevacious, holding all sp
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:52 +0000
+Updated on 2022-09-07 at 14:07:47 +0000

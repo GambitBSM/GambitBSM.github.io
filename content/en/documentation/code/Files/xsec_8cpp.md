@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # src/xsec.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Namespaces
@@ -526,4 +524,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

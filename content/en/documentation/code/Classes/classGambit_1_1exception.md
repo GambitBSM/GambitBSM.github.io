@@ -8,8 +8,6 @@ description: 'GAMBIT exception base class. '
 
 
 
-
-
 GAMBIT exception base class. 
 
 
@@ -304,4 +302,4 @@ The set of tags to be passed to the logger.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

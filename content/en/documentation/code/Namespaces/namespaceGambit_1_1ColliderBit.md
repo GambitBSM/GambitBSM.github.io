@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::ColliderBit
 
-
-
 [No description available]
 
 ## Namespaces
@@ -4469,4 +4467,4 @@ A global map from analysis name to [DMEFT_analysis_info](/documentation/code/cla
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

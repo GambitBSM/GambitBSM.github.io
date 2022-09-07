@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Backends::AlterBBN_2_2
 
-
-
 [No description available]
 
 ## Types
@@ -41,4 +39,4 @@ typedef Gambit::AlterBBN_2_2::errorparam Gambit::Backends::AlterBBN_2_2::errorpa
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

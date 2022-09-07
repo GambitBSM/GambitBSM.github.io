@@ -8,8 +8,6 @@ description: 'Base class for interfacing to a HDF5 dataset. '
 
 
 
-
-
 Base class for interfacing to a HDF5 dataset. 
 
 
@@ -288,4 +286,4 @@ Integer identifier for the template type of this dataset (determined by derived 
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

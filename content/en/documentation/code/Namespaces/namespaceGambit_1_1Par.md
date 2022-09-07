@@ -6,8 +6,6 @@ description: 'List of parameter types used to classify spectrum contents. '
 
 # Gambit::Par
 
-
-
 List of parameter types used to classify spectrum contents. 
 
 ## Types
@@ -82,4 +80,4 @@ static const std::map< Tags, std::string > toString = fill_map();
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

@@ -8,8 +8,6 @@ description: 'A container for several [Cutflow](/documentation/code/classes/stru
 
 
 
-
-
 A container for several [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access. 
 
 
@@ -282,4 +280,4 @@ vector< Cutflow > cfs;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

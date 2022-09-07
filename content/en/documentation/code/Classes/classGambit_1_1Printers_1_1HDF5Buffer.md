@@ -8,8 +8,6 @@ description: 'Class to manage buffer for a single output label. '
 
 
 
-
-
 Class to manage buffer for a single output label.  [More...](#detailed-description)
 
 
@@ -245,4 +243,4 @@ Retrieve the integer type ID for the buffered dataset.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

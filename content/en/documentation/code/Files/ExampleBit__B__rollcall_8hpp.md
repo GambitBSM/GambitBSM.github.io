@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # ExampleBit_B/ExampleBit_B_rollcall.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -576,4 +574,4 @@ QUICK_FUNCTION(ExampleBit_B, Example_lnL_B, NEW_CAPABILITY, example_lnL, double,
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # shared_includes/MicrOmegas_SingletDM_3_6_9_2.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -95,4 +93,4 @@ BE_INI_DEPENDENCY(decay_rates, DecayTable)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

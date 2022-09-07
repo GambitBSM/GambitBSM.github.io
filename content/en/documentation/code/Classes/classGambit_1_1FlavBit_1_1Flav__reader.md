@@ -8,8 +8,6 @@ description: 'Reader class for FlavBit [YAML](/documentation/code/namespaces/nam
 
 
 
-
-
 Reader class for FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) database. 
 
 
@@ -160,4 +158,4 @@ int number_measurements;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

@@ -8,8 +8,6 @@ description: '"Standard Model" (low-energy) plus high-energy model container cla
 
 
 
-
-
 "Standard Model" (low-energy) plus high-energy model container class 
 
 
@@ -655,4 +653,4 @@ Swap resources of two [Spectrum](/documentation/code/classes/classgambit_1_1spec
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

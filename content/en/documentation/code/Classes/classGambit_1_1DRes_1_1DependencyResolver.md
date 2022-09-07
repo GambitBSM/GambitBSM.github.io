@@ -8,8 +8,6 @@ description: 'Main dependency resolver. '
 
 
 
-
-
 Main dependency resolver. 
 
 
@@ -214,4 +212,4 @@ Helper function that returns a new graph with all inactive vertices removed.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

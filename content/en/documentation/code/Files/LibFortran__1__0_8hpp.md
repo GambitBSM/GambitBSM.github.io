@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/LibFortran_1_0.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Namespaces
@@ -193,4 +191,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

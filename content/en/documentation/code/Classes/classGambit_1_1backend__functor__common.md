@@ -8,8 +8,6 @@ description: 'Backend functor class for functions with result type TYPE and argu
 
 
 
-
-
 Backend functor class for functions with result type TYPE and argumentlist ARGS.  [More...](#detailed-description)
 
 
@@ -309,4 +307,4 @@ Flag indicating if this backend functor is actually in use in a given scan.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

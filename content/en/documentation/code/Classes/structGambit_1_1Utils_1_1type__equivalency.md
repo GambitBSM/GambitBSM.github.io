@@ -8,8 +8,6 @@ description: 'Structure providing type equivalency classes to the dep resolver. 
 
 
 
-
-
 Structure providing type equivalency classes to the dep resolver. 
 
 
@@ -132,4 +130,4 @@ std::set< std::set< str > > equivalency_classes;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

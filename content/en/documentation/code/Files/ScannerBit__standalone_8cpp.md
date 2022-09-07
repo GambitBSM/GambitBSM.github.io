@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # examples/ScannerBit_standalone.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -534,4 +532,4 @@ int main(int argc, char **argv)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:52 +0000
+Updated on 2022-09-07 at 14:07:47 +0000

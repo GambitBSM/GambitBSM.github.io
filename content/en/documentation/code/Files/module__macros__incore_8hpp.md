@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Elements/module_macros_incore.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -649,4 +647,4 @@ Indicate that the current [FUNCTION] requires classes that must be loaded from _
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

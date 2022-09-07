@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # HepMC_example/mainEWinos_bino_winos_higgsinos.cc
 
-
-
 [No description available]
 
 ## Namespaces
@@ -100,4 +98,4 @@ int main() {
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:54 +0000
+Updated on 2022-09-07 at 14:07:49 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # ScannerBit/scanner_plugin.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -166,4 +164,4 @@ inline unsigned int &get_dimension() {return get_input_value<unsigned int>(0);} 
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:52 +0000
+Updated on 2022-09-07 at 14:07:47 +0000

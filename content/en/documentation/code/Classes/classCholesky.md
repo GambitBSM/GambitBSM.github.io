@@ -9,8 +9,6 @@ description: "[No description available]"
 
 
 
-
-
 [No description available]
 
 Inherited by [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [MultiNormDev](/documentation/code/classes/classmultinormdev/), [MultiNormDev](/documentation/code/classes/classmultinormdev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/)
@@ -317,4 +315,4 @@ int num;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:43 +0000

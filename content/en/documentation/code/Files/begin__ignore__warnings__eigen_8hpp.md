@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Utils/begin_ignore_warnings_eigen.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -100,4 +98,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

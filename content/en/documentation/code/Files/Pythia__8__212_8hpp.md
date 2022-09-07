@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/Pythia_8_212.hpp
 
-
-
 [No description available]
 
 ## Namespaces
@@ -191,4 +189,4 @@ BE_INI_FUNCTION{} END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

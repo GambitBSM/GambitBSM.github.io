@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Backends/include/gambit/Backends/wrapperbase.hpp
 
-
-
 [No description available]
 
 ## Classes
@@ -53,4 +51,4 @@ class WrapperBase
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

@@ -6,8 +6,6 @@ description: 'CMS-specific efficiency and smearing functions for super fast dete
 
 # Gambit::ColliderBit::CMS
 
-
-
 CMS-specific efficiency and smearing functions for super fast detector simulation. 
 
 ## Functions
@@ -334,4 +332,4 @@ inline void applyCSVv2MediumBtagEffAndMisId(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

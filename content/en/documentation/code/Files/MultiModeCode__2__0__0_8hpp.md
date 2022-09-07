@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/MultiModeCode_2_0_0.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -199,4 +197,4 @@ BE_VARIABLE(SilenceOutput, Flogical, ("__multimodecode_gambit_MOD_silenceoutput"
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

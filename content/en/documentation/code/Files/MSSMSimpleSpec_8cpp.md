@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # SimpleSpectra/MSSMSimpleSpec.cpp
 
-
-
 [No description available]
 
 ## Namespaces
@@ -608,4 +606,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

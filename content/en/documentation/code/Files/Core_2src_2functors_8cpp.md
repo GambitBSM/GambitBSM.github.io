@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # src/Core/src/functors.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Detailed Description
@@ -60,4 +58,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:54 +0000
+Updated on 2022-09-07 at 14:07:49 +0000

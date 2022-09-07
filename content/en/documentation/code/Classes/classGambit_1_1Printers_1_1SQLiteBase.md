@@ -8,8 +8,6 @@ description: 'SQLite base class for both reader and writer. '
 
 
 
-
-
 SQLite base class for both reader and writer. 
 
 
@@ -159,4 +157,4 @@ int submit_sql(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

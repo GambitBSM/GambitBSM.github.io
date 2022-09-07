@@ -8,8 +8,6 @@ description: 'Skeleton "model" class which interacts with an SLHAea object. '
 
 
 
-
-
 Skeleton "model" class which interacts with an SLHAea object. 
 
 
@@ -154,4 +152,4 @@ PDG translation map (e.g. from SLHA1 to SLHA2 for MSSMskeleton)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

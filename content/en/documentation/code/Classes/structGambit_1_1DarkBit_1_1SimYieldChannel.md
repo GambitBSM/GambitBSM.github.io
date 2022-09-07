@@ -8,8 +8,6 @@ description: 'Annihilation/decay channel. '
 
 
 
-
-
 Annihilation/decay channel. 
 
 
@@ -112,4 +110,4 @@ double Ecm_max;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

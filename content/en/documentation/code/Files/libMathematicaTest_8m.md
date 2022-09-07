@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # examples/libMathematicaTest.m
 
-
-
 [No description available]
 
 ## Attributes
@@ -169,4 +167,4 @@ SquareList[list_]:=Table[list[[i]]^2,{i,Length[list]}]
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

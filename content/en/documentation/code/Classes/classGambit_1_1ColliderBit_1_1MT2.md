@@ -8,8 +8,6 @@ description: 'A useful [MT2]() class for this module. '
 
 
 
-
-
 A useful [MT2]() class for this module. 
 
 ## Public Functions
@@ -60,4 +58,4 @@ double aMT2_BM;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

@@ -8,8 +8,6 @@ description: 'Base class for defining the required contents of a [SubSpectrum](/
 
 
 
-
-
 Base class for defining the required contents of a [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object. 
 
 
@@ -125,4 +123,4 @@ Set the name of this Contents object (i.e. the name of the model to which this s
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

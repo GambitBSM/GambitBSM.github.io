@@ -8,8 +8,6 @@ description: '[DecayTable](/documentation/code/classes/classgambit_1_1decaytable
 
 
 
-
-
 [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) entry class. Holds the info on all decays of a given particle. 
 
 
@@ -443,4 +441,4 @@ The actual underlying map of channels to their BFs. Just iterate over this direc
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

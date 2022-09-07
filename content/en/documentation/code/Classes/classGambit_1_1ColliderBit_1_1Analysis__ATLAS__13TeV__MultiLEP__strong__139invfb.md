@@ -8,8 +8,6 @@ description: '[ATLAS]() Run 2 search for same-sign leptons and jets, with 139/fb
 
 
 
-
-
 [ATLAS]() Run 2 search for same-sign leptons and jets, with 139/fb of data.  [More...](#detailed-description)
 
 Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)
@@ -169,4 +167,4 @@ std::map< string, EventCounter > _counters = {
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

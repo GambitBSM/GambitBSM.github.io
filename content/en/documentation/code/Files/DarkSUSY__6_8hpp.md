@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # shared_includes/DarkSUSY_6.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -222,4 +220,4 @@ BE_CONV_FUNCTION(dsgenericwimp_nusetup, void, (const double(&)[29], const double
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

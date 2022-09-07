@@ -8,8 +8,6 @@ description: 'A class for holding the cross-section of a single Pythia process (
 
 
 
-
-
 A class for holding the cross-section of a single Pythia process (identified by the Pythia process code) 
 
 
@@ -205,4 +203,4 @@ Add a PID pair to the list of PID pairs related to this cross-section.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

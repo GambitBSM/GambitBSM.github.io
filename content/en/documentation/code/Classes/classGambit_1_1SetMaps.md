@@ -8,8 +8,6 @@ description: '[FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder
 
 
 
-
-
 [FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder/) friend class for implementing named parameter idiom.  [More...](#detailed-description)
 
 
@@ -266,4 +264,4 @@ friend class FptrFinder< HostSpec, MTag >(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

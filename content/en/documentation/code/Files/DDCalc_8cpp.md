@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # backend_types/DDCalc.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Namespaces
@@ -176,4 +174,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

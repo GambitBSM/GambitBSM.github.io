@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # models/MSSM30atX.cpp
 
-
-
 [No description available]
 
 ## Namespaces
@@ -464,4 +462,4 @@ void MODEL_NAMESPACE::MSSM30atMSUSY_to_MSSM30atQ (const ModelParameters &myP, Mo
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

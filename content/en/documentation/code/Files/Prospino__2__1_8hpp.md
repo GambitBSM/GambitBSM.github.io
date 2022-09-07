@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/Prospino_2_1.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -142,4 +140,4 @@ BE_CONV_FUNCTION(prospino_read_slha1_input, void, (const SLHAstruct&), "prospino
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

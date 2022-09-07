@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/DDCalc_2_2_0.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -340,4 +338,4 @@ BE_CONV_FUNCTION(DDCalc_CalcRates_simple,  void, (const int&), "DD_CalcRates")
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

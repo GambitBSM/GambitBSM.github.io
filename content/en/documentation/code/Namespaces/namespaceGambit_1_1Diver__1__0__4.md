@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Diver_1_0_4
 
-
-
 [No description available]
 
 ## Classes
@@ -47,4 +45,4 @@ Function to be minimised by Diver.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

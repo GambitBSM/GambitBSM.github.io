@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # examples/libfirst.cpp
 
-
-
 [No description available]
 
 ## Functions
@@ -297,4 +295,4 @@ double arrayarg_3D(double arg[10][10][10])
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

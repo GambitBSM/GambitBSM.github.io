@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # gm2calc_1_3_0/include/gambit/Backends/backend_types/gm2calc_1_3_0/identification.hpp
 
-
-
 [No description available]
 
 ## Defines
@@ -89,4 +87,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

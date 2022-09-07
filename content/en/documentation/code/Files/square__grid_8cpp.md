@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # simple/square_grid.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -130,4 +128,4 @@ scanner_plugin(square_grid, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:52 +0000
+Updated on 2022-09-07 at 14:07:47 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # ColliderBit/lhef2heputils.hpp
 
-
-
 [No description available]
 
 ## Namespaces
@@ -86,4 +84,4 @@ void get_HEPUtils_event(const LHEF::Reader&, HEPUtils::Event&, double);
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:55 +0000
+Updated on 2022-09-07 at 14:07:49 +0000

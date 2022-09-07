@@ -8,8 +8,6 @@ description: 'A class for holding a total cross-section calculated via MC across
 
 
 
-
-
 A class for holding a total cross-section calculated via MC across multiple threads. 
 
 
@@ -209,4 +207,4 @@ Get content as a <string,double> map (for easy printing).
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

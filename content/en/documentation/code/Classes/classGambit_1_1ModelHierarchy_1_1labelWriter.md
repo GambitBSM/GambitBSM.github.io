@@ -8,8 +8,6 @@ description: 'Helper class for drawing the model hierarchy graph (labels) '
 
 
 
-
-
 Helper class for drawing the model hierarchy graph (labels) 
 
 ## Public Functions
@@ -46,4 +44,4 @@ void operator()(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

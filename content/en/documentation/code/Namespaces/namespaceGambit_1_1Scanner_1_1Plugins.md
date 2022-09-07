@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::Scanner::Plugins
 
-
-
 [No description available]
 
 ## Classes
@@ -121,4 +119,4 @@ Access Functor for plugin info. This will manage all the plugins including store
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

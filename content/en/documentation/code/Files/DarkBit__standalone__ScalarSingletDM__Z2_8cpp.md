@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # examples/DarkBit_standalone_ScalarSingletDM_Z2.cpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Namespaces
@@ -599,4 +597,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:54 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # analyses/Analysis_ATLAS_8TeV_1LEPStop_20invfb.cpp
 
-
-
 [No description available]
 
 ## Namespaces
@@ -835,4 +833,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:55 +0000
+Updated on 2022-09-07 at 14:07:49 +0000

@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::ColliderBit::EventConversion
 
-
-
 [No description available]
 
 ## Functions
@@ -287,4 +285,4 @@ inline void get_unified_child_ids(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

@@ -8,8 +8,6 @@ description: 'An abstract base class for collider simulators within ColliderBit.
 
 
 
-
-
 An abstract base class for collider simulators within ColliderBit. 
 
 
@@ -227,4 +225,4 @@ The jet radius used for the anti-kt jet clustering.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

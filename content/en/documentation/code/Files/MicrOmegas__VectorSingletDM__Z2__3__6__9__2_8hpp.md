@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # frontends/MicrOmegas_VectorSingletDM_Z2_3_6_9_2.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -130,4 +128,4 @@ BE_INI_DEPENDENCY(VectorSingletDM_Z2_spectrum, Spectrum)
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

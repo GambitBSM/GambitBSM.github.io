@@ -8,8 +8,6 @@ description: 'Variables for use in signal handlers. '
 
 
 
-
-
 Variables for use in signal handlers. 
 
 
@@ -261,4 +259,4 @@ bool cleanup_function_set;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:49 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

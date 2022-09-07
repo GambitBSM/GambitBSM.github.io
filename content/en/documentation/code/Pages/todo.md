@@ -12,8 +12,6 @@ description: "[No description available]"
 
 
 
-
-
 Member [BACKEND_REQ](/documentation/code/files/susy__extras_8hpp/#function-backend-req)  (prospino_run,(libprospino), map_str_dbl,(const PID_pair &, const Options &)) BACKEND_REQ(prospino_read_slha1_input
 
 * Extend to also allow models ColliderBit_SLHA_file_model, ColliderBit_SLHA_scan_model  
@@ -238,4 +236,4 @@ Member [Gambit::SpecBit::get_MSSM_spectrum_from_SLHAstruct](/documentation/code/
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:57 +0000
+Updated on 2022-09-07 at 14:07:51 +0000

@@ -8,8 +8,6 @@ description: 'Default values for traits. Specialisations of [SpecTraits]() shoul
 
 
 
-
-
 Default values for traits. Specialisations of [SpecTraits]() should inherit from this, and then override the traits that they want to customise. 
 
 
@@ -42,4 +40,4 @@ typedef DummyInput Gambit::DefaultTraits::Input;
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

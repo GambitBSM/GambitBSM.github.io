@@ -8,8 +8,6 @@ description: 'Specialisation of [CallFcn](/documentation/code/classes/classgambi
 
 
 
-
-
 Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling 'getter' functions.  [More...](#detailed-description)
 
 
@@ -50,4 +48,4 @@ inline double operator()()
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

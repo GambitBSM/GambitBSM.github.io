@@ -8,8 +8,6 @@ description: '[Gambit](/documentation/code/namespaces/namespacegambit/) invalid 
 
 
 
-
-
 [Gambit](/documentation/code/namespaces/namespacegambit/) invalid point exception class. 
 
 
@@ -116,4 +114,4 @@ Raise the invalid point exception, i.e. throw it with a message and a code.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:48 +0000
+Updated on 2022-09-07 at 14:07:44 +0000

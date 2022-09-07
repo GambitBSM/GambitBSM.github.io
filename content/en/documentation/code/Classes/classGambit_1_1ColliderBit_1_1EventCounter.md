@@ -8,8 +8,6 @@ description: 'A simple class for counting events of type HEPUtils::Event. '
 
 
 
-
-
 A simple class for counting events of type HEPUtils::Event. 
 
 
@@ -193,4 +191,4 @@ inline EventCounter & combine(
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000

@@ -8,8 +8,6 @@ description: 'The main printer class for output to SQLite database. '
 
 
 
-
-
 The main printer class for output to SQLite database. 
 
 
@@ -228,4 +226,4 @@ Helper print functions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

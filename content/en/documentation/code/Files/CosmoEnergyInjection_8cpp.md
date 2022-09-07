@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # models/CosmoEnergyInjection.cpp
 
-
-
 [No description available]
 
 ## Defines
@@ -342,4 +340,4 @@ void MODEL_NAMESPACE::DecayingDM_electron_to_DecayingDM_mixture (const ModelPara
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:53 +0000
+Updated on 2022-09-07 at 14:07:48 +0000

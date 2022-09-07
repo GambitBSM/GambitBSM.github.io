@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Gambit::PolyChord
 
-
-
 [No description available]
 
 ## Classes
@@ -97,4 +95,4 @@ Global pointer to loglikelihood wrapper object, for use in the PolyChord callbac
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

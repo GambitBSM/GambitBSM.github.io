@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # convolve_with_theory
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Functions
@@ -94,4 +92,4 @@ ARGS =  map(float, sys.argv[2:]);
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

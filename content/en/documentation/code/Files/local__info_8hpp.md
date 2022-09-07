@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # Utils/local_info.hpp
 
-
-
 [No description available] [More...](#detailed-description)
 
 ## Defines
@@ -101,4 +99,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

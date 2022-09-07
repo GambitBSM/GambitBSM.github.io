@@ -8,8 +8,6 @@ description: 'Keeps track of vertex buffers local to a print function. '
 
 
 
-
-
 Keeps track of vertex buffers local to a print function.  [More...](#detailed-description)
 
 
@@ -78,4 +76,4 @@ Signal whether initialisation has occured.
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:51 +0000
+Updated on 2022-09-07 at 14:07:46 +0000

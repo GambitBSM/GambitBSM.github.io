@@ -7,8 +7,6 @@ description: "[No description available]"
 
 # libthird_1_2/1.2/libthird_1_2/sub_module.py
 
-
-
 [No description available]
 
 ## Namespaces
@@ -42,4 +40,4 @@ def someOtherFunction(x):
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:56 +0000
+Updated on 2022-09-07 at 14:07:50 +0000

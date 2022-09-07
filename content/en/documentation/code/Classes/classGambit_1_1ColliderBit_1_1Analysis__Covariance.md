@@ -8,8 +8,6 @@ description: 'Dummy analysis code with a hard-coded return including a SR covari
 
 
 
-
-
 Dummy analysis code with a hard-coded return including a SR covariance matrix. 
 
 Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)
@@ -135,4 +133,4 @@ static constexpr const char * detector = "ATLAS";
 
 -------------------------------
 
-Updated on 2022-09-07 at 13:49:50 +0000
+Updated on 2022-09-07 at 14:07:45 +0000
