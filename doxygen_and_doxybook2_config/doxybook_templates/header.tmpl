@@ -16,6 +16,6 @@ description: "[No description available]"
 
 {% if exists("title") -%}
 # {{title}}
-{# {% else if exists("kind") and kind != "page" -%} #}
-{# # {{name}} {{title(kind)}} Reference #}
+{% else if exists("kind") and kind != "page" -%}
+# {{name}} {{title(kind)}} Reference
 {% endif %}
