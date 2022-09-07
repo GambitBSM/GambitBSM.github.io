@@ -1,6 +1,6 @@
 ---
 title: 'class Gambit::CallFcn< HostSpec, MapTag::Get >'
-description: 'Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling 'getter' functions. '
+description: 'Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/) for calling getter functions. '
 
 ---
 
