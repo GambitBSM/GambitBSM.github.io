@@ -11,6 +11,8 @@ menu:
 weight: 5
 ---
 
+# Introduction
+
 ### Introduction to GAMBIT
 
 Evidence for new physics Beyond the Standard Model (BSM) could appear in any observable in particle, astroparticle or nuclear physics. This means that if a BSM model is to be proven or disproven it is necessary to analyse the data from many different experimental sources simultaneously. Global fits attempt to tackle this problem, combining theoretical observable predictions with targeted searches of experimental data.

@@ -11,6 +11,8 @@ menu:
 weight: 20
 ---
 
+# Compiler Matrix
+
 Below is a list of compilers compatible with GAMBIT and different backends and scanners. 
 
 {{< alert icon="ⓘ" context="info" >}}

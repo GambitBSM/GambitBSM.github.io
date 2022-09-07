@@ -11,6 +11,8 @@ menu:
 weight: 40
 ---
 
+# Configuration Examples
+
 <p>
 {{< alert icon="ⓘ" context="info">}}
 **Info**: Instructions for configuring and compiling GAMBIT can be found in the original paper describing the code <a href="http://arxiv.org/abs/1705.07908">arXiv:1705.07908 ⧉</a>.

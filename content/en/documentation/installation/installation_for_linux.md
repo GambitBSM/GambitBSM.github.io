@@ -11,6 +11,8 @@ menu:
 weight: 30
 ---
 
+# Installation for Linux
+
 {{< alert icon="ⓘ" context="info">}}
 
 **Info**: 

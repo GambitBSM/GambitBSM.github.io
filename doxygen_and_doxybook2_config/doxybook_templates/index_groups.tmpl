@@ -14,6 +14,12 @@ menu:
 weight: 10
 ---
 
+{% if exists("title") -%}
+# {{title}}
+{% else if exists("name") -%}
+# {{name}}
+{% endif -%}
+
 {% include "custom_index.tmpl" %}
 
 {% include "footer" %}

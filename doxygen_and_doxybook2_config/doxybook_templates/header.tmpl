@@ -1,13 +1,13 @@
 ---
 {% if exists("title") -%}
-title: '{{lower(title(kind))}} {{title}}'
+title: "{{lower(title(kind))}} {{replace(title, "\"", "")}}"
 {% else if exists("name") -%}
-title: "{{name}}"
+title: "{{replace(name, "\"", "")}}"
 {% endif -%}
 {% if exists("brief") -%}
-description: '{{brief}}'
+description: "{{replace(brief, "\"", "")}}"
 {% else if exists("summary") -%}
-description: '{{summary}}'
+description: "{{replace(summary, "\"", "")}}"
 {% else %}
 description: "[No description available]"
 {% endif -%}
@@ -15,7 +15,7 @@ description: "[No description available]"
 ---
 
 {% if exists("title") -%}
-# {{title}}
+# {{lower(title(kind))}} {{title}}
 {% else if exists("kind") and kind != "page" -%}
 # {{name}} {{title(kind)}} Reference
 {% endif %}

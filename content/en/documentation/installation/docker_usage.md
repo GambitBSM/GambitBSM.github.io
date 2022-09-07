@@ -11,6 +11,8 @@ menu:
 weight: 20
 ---
 
+# Docker Usage
+
 A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally. This is useful for trying out GAMBIT and following the [examples on this site](/documentation/examples/colliderbit_example/) without the need to build GAMBIT from source.
 
 {{< alert icon="ⓘ" context="info">}}

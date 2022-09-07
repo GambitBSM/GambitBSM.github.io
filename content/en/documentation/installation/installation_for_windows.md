@@ -11,6 +11,8 @@ menu:
 weight: 40
 ---
 
+# Installation for Windows
+
 Windows is not directly supported by GAMBIT. However, Linux distributions can be installed on Windows machines using WSL or by dual-booting. GAMBIT can then be built within these Linux environments
 
 ### Running Linux on a Windows machine

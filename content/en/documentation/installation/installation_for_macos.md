@@ -11,6 +11,8 @@ menu:
 weight: 50 
 ---
 
+# Installation for macOS
+
 {{< alert icon="ⓘ" context="info">}}
 **Info**: This guide has been reproduced from [Aaron Vincent's personal page ⧉](https://www.queensu.ca/academia/vincent/getting-gambit-run-osx-mojave)
 {{< /alert >}}
