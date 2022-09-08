@@ -22,5 +22,3 @@ To test that GAMBIT is working correctly, you can try running a minimal example:
 **Info**: If you have built GAMBIT while ditching modules, or have only installed the compulsory dependencies, it is highly likely that you will encounter `GAMBIT has exited with fatal exception: GAMBIT error` messages when running these examples. As long as
 
 {{< /alert >}}
-
-test
