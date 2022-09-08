@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Node | **[encode](/documentation/code/classes/structyaml_1_1convert_3_01ssdd_01_4/)**(const ssdd & rhs) |
-| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01ssdd_01_4/)**(const Node & node, ssdd & rhs) |
+| Node | **[encode](/documentation/code/classes/structyaml_1_1convert_3_01ssdd_01_4/#function-yamlconvert-ssdd-encode)**(const ssdd & rhs) |
+| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01ssdd_01_4/#function-yamlconvert-ssdd-decode)**(const Node & node, ssdd & rhs) |
 
 ## Public Functions Documentation
 
@@ -41,4 +41,4 @@ static inline bool decode(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

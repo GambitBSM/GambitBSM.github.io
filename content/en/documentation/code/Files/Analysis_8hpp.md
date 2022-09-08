@@ -26,7 +26,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEFINE_ANALYSIS_FACTORY](/documentation/code/files/analysis_8hpp/)**(ANAME) <br>For analysis factory function definition.  |
+|  | **[DEFINE_ANALYSIS_FACTORY](/documentation/code/files/analysis_8hpp/#define-analysis-hpp-define-analysis-factory)**(ANAME) <br>For analysis factory function definition.  |
 
 ## Detailed Description
 
@@ -224,4 +224,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

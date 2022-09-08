@@ -13,24 +13,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[BE_FUNCTION](/documentation/code/files/higgssignals__1__4_8hpp/)**(HiggsBounds_neutral_input_part_HS , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) , "higgsbounds_neutral_input_part_" , "HiggsBounds_neutral_input_part_HS" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[BE_FUNCTION](/documentation/code/files/higgssignals__1__4_8hpp/#function-higgssignals-1-4-hpp-be-function)**(HiggsBounds_neutral_input_part_HS , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) , "higgsbounds_neutral_input_part_" , "HiggsBounds_neutral_input_part_HS" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[void](/documentation/code/files/higgssignals__1__4_8hpp/)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double double double double double double double double | **[higgsbounds_charged_input_](/documentation/code/files/higgssignals__1__4_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[void](/documentation/code/files/higgssignals__1__4_8hpp/#variable-higgssignals-1-4-hpp-void)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double double double double | **[higgsbounds_charged_input_](/documentation/code/files/higgssignals__1__4_8hpp/#variable-higgssignals-1-4-hpp-higgsbounds-charged-input)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/higgssignals__1__4_8hpp/)**  |
-|  | **[BACKENDLANG](/documentation/code/files/higgssignals__1__4_8hpp/)**  |
-|  | **[VERSION](/documentation/code/files/higgssignals__1__4_8hpp/)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/higgssignals__1__4_8hpp/)**  |
-|  | **[REFERENCE](/documentation/code/files/higgssignals__1__4_8hpp/)**  |
+|  | **[BACKENDNAME](/documentation/code/files/higgssignals__1__4_8hpp/#define-higgssignals-1-4-hpp-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/higgssignals__1__4_8hpp/#define-higgssignals-1-4-hpp-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/higgssignals__1__4_8hpp/#define-higgssignals-1-4-hpp-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/higgssignals__1__4_8hpp/#define-higgssignals-1-4-hpp-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/higgssignals__1__4_8hpp/#define-higgssignals-1-4-hpp-reference)**  |
 
 ## Detailed Description
 
@@ -199,4 +199,4 @@ BE_FUNCTION(HiggsBounds_charged_input_HS, void, (double*, double*, double*, doub
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

@@ -17,8 +17,8 @@ Mini helper class to specify behaviour of getters w.r.t. overrides in a type-saf
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[value](/documentation/code/classes/classgambit_1_1specoverrideoptions/)**() const |
-| | **[SpecOverrideOptions](/documentation/code/classes/classgambit_1_1specoverrideoptions/)**(int i) |
+| int | **[value](/documentation/code/classes/classgambit_1_1specoverrideoptions/#function-gambitspecoverrideoptions-value)**() const |
+| | **[SpecOverrideOptions](/documentation/code/classes/classgambit_1_1specoverrideoptions/#function-gambitspecoverrideoptions-specoverrideoptions)**(int i) |
 
 ## Public Functions Documentation
 
@@ -40,4 +40,4 @@ inline SpecOverrideOptions(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

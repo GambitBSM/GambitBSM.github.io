@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07_08_00_01ret2_07_08_4/)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07_08_00_01ret2_07_08_4/#variable-gambitscanneris-args-convertible-ret1-ret2-value)**  |
 
 ## Detailed Description
 
@@ -36,4 +36,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

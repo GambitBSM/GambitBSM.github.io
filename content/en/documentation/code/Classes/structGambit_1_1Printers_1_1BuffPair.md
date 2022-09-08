@@ -15,16 +15,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BuffPair](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/)**([DataSetInterfaceScalar](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacescalar/)< T, CHUNKLENGTH > & d, [DataSetInterfaceScalar](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacescalar/)< int, CHUNKLENGTH > & v) |
-| | **[BuffPair](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/)**(hid_t location_id, const std::string & name) |
-| | **[BuffPair](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/)**() |
+| | **[BuffPair](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/#function-gambitprintersbuffpair-buffpair)**([DataSetInterfaceScalar](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacescalar/)< T, CHUNKLENGTH > & d, [DataSetInterfaceScalar](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacescalar/)< int, CHUNKLENGTH > & v) |
+| | **[BuffPair](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/#function-gambitprintersbuffpair-buffpair)**(hid_t location_id, const std::string & name) |
+| | **[BuffPair](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/#function-gambitprintersbuffpair-buffpair)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [DataSetInterfaceScalar](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacescalar/)< T, CHUNKLENGTH > | **[data](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/)**  |
-| [DataSetInterfaceScalar](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacescalar/)< int, CHUNKLENGTH > | **[isvalid](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/)**  |
+| [DataSetInterfaceScalar](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacescalar/)< T, CHUNKLENGTH > | **[data](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/#variable-gambitprintersbuffpair-data)**  |
+| [DataSetInterfaceScalar](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacescalar/)< int, CHUNKLENGTH > | **[isvalid](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/#variable-gambitprintersbuffpair-isvalid)**  |
 
 ## Detailed Description
 
@@ -80,4 +80,4 @@ DataSetInterfaceScalar< int, CHUNKLENGTH > isvalid;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[mco](/documentation/code/classes/structgambit_1_1ds5__rdmgev/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[mdof](/documentation/code/classes/structgambit_1_1ds5__rdmgev/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[rgev](/documentation/code/classes/structgambit_1_1ds5__rdmgev/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[rwid](/documentation/code/classes/structgambit_1_1ds5__rdmgev/)**  |
-| Finteger | **[nco](/documentation/code/classes/structgambit_1_1ds5__rdmgev/)**  |
-| Finteger | **[nres](/documentation/code/classes/structgambit_1_1ds5__rdmgev/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 1000 > | **[kcoann](/documentation/code/classes/structgambit_1_1ds5__rdmgev/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[mco](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-gambitds5-rdmgev-mco)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[mdof](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-gambitds5-rdmgev-mdof)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[rgev](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-gambitds5-rdmgev-rgev)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 1000 > | **[rwid](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-gambitds5-rdmgev-rwid)**  |
+| Finteger | **[nco](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-gambitds5-rdmgev-nco)**  |
+| Finteger | **[nres](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-gambitds5-rdmgev-nres)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 1000 > | **[kcoann](/documentation/code/classes/structgambit_1_1ds5__rdmgev/#variable-gambitds5-rdmgev-kcoann)**  |
 
 ## Public Attributes Documentation
 
@@ -76,4 +76,4 @@ Farray< Finteger, 1, 1000 > kcoann;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

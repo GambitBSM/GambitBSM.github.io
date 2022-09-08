@@ -23,7 +23,7 @@ Inherits from std::binary_function< std::string, std::string, bool >
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/)**(const std::string & s1, const std::string & s2) const |
+| bool | **[operator()](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/#function-gambitutilsci-less-operator)**(const std::string & s1, const std::string & s2) const |
 
 ## Public Functions Documentation
 
@@ -39,4 +39,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

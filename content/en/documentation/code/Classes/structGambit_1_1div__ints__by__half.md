@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const int | **[value](/documentation/code/classes/structgambit_1_1div__ints__by__half/)**  |
+| const int | **[value](/documentation/code/classes/structgambit_1_1div__ints__by__half/#variable-gambitdiv-ints-by-half-value)**  |
 
 ## Detailed Description
 
@@ -36,4 +36,4 @@ static const int value = (low + hi) >> 1;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

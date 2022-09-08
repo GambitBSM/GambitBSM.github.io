@@ -19,8 +19,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[addtomap_EL](/documentation/code/files/smsimplespec_8cpp/)**(r, PRODUCT) <br>Macro to help assign the same function pointers to multiple string keys.  |
-|  | **[addtomap](/documentation/code/files/smsimplespec_8cpp/)**(__KEYS, FPTR)  |
+|  | **[addtomap_EL](/documentation/code/files/smsimplespec_8cpp/#define-smsimplespec-cpp-addtomap-el)**(r, PRODUCT) <br>Macro to help assign the same function pointers to multiple string keys.  |
+|  | **[addtomap](/documentation/code/files/smsimplespec_8cpp/#define-smsimplespec-cpp-addtomap)**(__KEYS, FPTR)  |
 
 
 
@@ -346,4 +346,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

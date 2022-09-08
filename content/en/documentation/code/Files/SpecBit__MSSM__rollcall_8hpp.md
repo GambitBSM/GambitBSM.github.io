@@ -13,54 +13,54 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_REQ](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**(SPheno_MSSMspectrum , (libSPheno) , int , (Spectrum &, const Finputs &) ) |
-| | **[DEPENDENCY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**(unimproved_MSSM_spectrum , Spectrum ) |
-| | **[ALLOW_MODELS](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**(MSSM63atMGUT , MSSM63atMGUT_mA , MSSM63atQ , MSSM63atQ_mA ) |
-| | **[START_FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**(map_str_dbl ) |
-| int int Farray< fh_real, 1, 2, 1, 5, 1, 3 > Farray< fh_complex, 1, 2, 1, 2, 1, 5, 1, 3 > Farray< fh_real, 1, 6, 1, 5 > Farray< fh_complex, 1, 36, 1, 5 > Farray< fh_real, 1, 2 > Farray< fh_complex, 1, 4 > Farray< fh_complex, 1, 4 > Farray< fh_real, 1, 4 > Farray< fh_complex, 1, 16 > fh_complex fh_real Farray< fh_real, 1, 4 > fh_real & | **[BACKEND_OPTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**((FeynHiggs) , (libfeynhiggs) ) |
-| int int Farray< fh_real, 1, 2, 1, 5, 1, 3 > Farray< fh_complex, 1, 2, 1, 2, 1, 5, 1, 3 > Farray< fh_real, 1, 6, 1, 5 > Farray< fh_complex, 1, 36, 1, 5 > Farray< fh_real, 1, 2 > Farray< fh_complex, 1, 4 > Farray< fh_complex, 1, 4 > Farray< fh_real, 1, 4 > Farray< fh_complex, 1, 16 > fh_complex fh_real Farray< fh_real, 1, 4 > fh_real int Farray< fh_real, 1, 4 > fh_complex Farray< fh_complex, 1, 3, 1, 3 > Farray< fh_complex, 1, 3, 1, 3 > & | **[BACKEND_REQ](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**(FHUncertainties , (libfeynhiggs) , void , (int &, Farray< fh_real, 1, 4 > &, fh_complex &, Farray< fh_complex, 1, 3, 1, 3 > &, Farray< fh_complex, 1, 3, 1, 3 > &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**(SUSYHD_MHiggs , () , MReal , (const MList< MReal > &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**(FHSelectUZ , (libfeynhiggs) , void , (int &, int &, int &, int &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/specbit__mssm__rollcall_8hpp/#function-specbit-mssm-rollcall-hpp-backend-req)**(SPheno_MSSMspectrum , (libSPheno) , int , (Spectrum &, const Finputs &) ) |
+| | **[DEPENDENCY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#function-specbit-mssm-rollcall-hpp-dependency)**(unimproved_MSSM_spectrum , Spectrum ) |
+| | **[ALLOW_MODELS](/documentation/code/files/specbit__mssm__rollcall_8hpp/#function-specbit-mssm-rollcall-hpp-allow-models)**(MSSM63atMGUT , MSSM63atMGUT_mA , MSSM63atQ , MSSM63atQ_mA ) |
+| | **[START_FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#function-specbit-mssm-rollcall-hpp-start-function)**(map_str_dbl ) |
+| int int Farray< fh_real, 1, 2, 1, 5, 1, 3 > Farray< fh_complex, 1, 2, 1, 2, 1, 5, 1, 3 > Farray< fh_real, 1, 6, 1, 5 > Farray< fh_complex, 1, 36, 1, 5 > Farray< fh_real, 1, 2 > Farray< fh_complex, 1, 4 > Farray< fh_complex, 1, 4 > Farray< fh_real, 1, 4 > Farray< fh_complex, 1, 16 > fh_complex fh_real Farray< fh_real, 1, 4 > fh_real & | **[BACKEND_OPTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#function-specbit-mssm-rollcall-hpp-backend-option)**((FeynHiggs) , (libfeynhiggs) ) |
+| int int Farray< fh_real, 1, 2, 1, 5, 1, 3 > Farray< fh_complex, 1, 2, 1, 2, 1, 5, 1, 3 > Farray< fh_real, 1, 6, 1, 5 > Farray< fh_complex, 1, 36, 1, 5 > Farray< fh_real, 1, 2 > Farray< fh_complex, 1, 4 > Farray< fh_complex, 1, 4 > Farray< fh_real, 1, 4 > Farray< fh_complex, 1, 16 > fh_complex fh_real Farray< fh_real, 1, 4 > fh_real int Farray< fh_real, 1, 4 > fh_complex Farray< fh_complex, 1, 3, 1, 3 > Farray< fh_complex, 1, 3, 1, 3 > & | **[BACKEND_REQ](/documentation/code/files/specbit__mssm__rollcall_8hpp/#function-specbit-mssm-rollcall-hpp-backend-req)**(FHUncertainties , (libfeynhiggs) , void , (int &, Farray< fh_real, 1, 4 > &, fh_complex &, Farray< fh_complex, 1, 3, 1, 3 > &, Farray< fh_complex, 1, 3, 1, 3 > &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/specbit__mssm__rollcall_8hpp/#function-specbit-mssm-rollcall-hpp-backend-req)**(SUSYHD_MHiggs , () , MReal , (const MList< MReal > &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/specbit__mssm__rollcall_8hpp/#function-specbit-mssm-rollcall-hpp-backend-req)**(FHSelectUZ , (libfeynhiggs) , void , (int &, int &, int &, int &) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[libfeynhiggs](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**  |
-| | **[void](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**  |
-| | **[MReal](/documentation/code/files/specbit__mssm__rollcall_8hpp/)**  |
+| | **[libfeynhiggs](/documentation/code/files/specbit__mssm__rollcall_8hpp/#variable-specbit-mssm-rollcall-hpp-libfeynhiggs)**  |
+| | **[void](/documentation/code/files/specbit__mssm__rollcall_8hpp/#variable-specbit-mssm-rollcall-hpp-void)**  |
+| | **[MReal](/documentation/code/files/specbit__mssm__rollcall_8hpp/#variable-specbit-mssm-rollcall-hpp-mreal)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>Functions to supply particle spectra in various forms.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-capability)** <br>Functions to supply particle spectra in various forms.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__mssm__rollcall_8hpp/#define-specbit-mssm-rollcall-hpp-function)** <br>SPheno spectrum function.  |
 
 ## Detailed Description
 
@@ -79,7 +79,7 @@ description: "[No description available]"
   * 2016 Jue, 2017 Jan
 
 
-Rollcall declarations for module functions contained in [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/)
+Rollcall declarations for module functions contained in [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/#file-src-specbit-mssm-cpp)
 
 
 
@@ -95,7 +95,7 @@ SPECIAL NOTE: Since FlexibleSUSY cannot yet be backended via BOSS, we need some 
 
 #if(FS_MODEL_MSSMatMGUT_IS_BUILT) <compile this stuff> #endif
 
-This stuff should be removed when FlexibleSUSY becomes a "real" backend. The preprocessor variables are created automatically in cmake/contrib.cmake as part of the FlexibleSUSY configuration process. Note that these [if](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/) checks are in both this header AND these source files which define the corresponding module functions. 
+This stuff should be removed when FlexibleSUSY becomes a "real" backend. The preprocessor variables are created automatically in cmake/contrib.cmake as part of the FlexibleSUSY configuration process. Note that these [if](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#function-darksusy-mssm-6-2-5-cpp-if) checks are in both this header AND these source files which define the corresponding module functions. 
 
 
 ## Functions Documentation
@@ -876,4 +876,4 @@ Get MSSM spectrum from CMSSM boundary conditions.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

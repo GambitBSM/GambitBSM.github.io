@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/)**() |
-| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/)**(const int num) |
-| bool | **[EnterMat](/documentation/code/classes/classgambit_1_1cholesky/)**(std::vector< std::vector< double > > & a) |
-| void | **[ElMult](/documentation/code/classes/classgambit_1_1cholesky/)**(std::vector< double > & y) const |
-| std::vector< double > | **[invElMult](/documentation/code/classes/classgambit_1_1cholesky/)**(const std::vector< double > & y) const<br>x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/classes/classgambit_1_1cholesky/) matrix  |
-| double | **[Square](/documentation/code/classes/classgambit_1_1cholesky/)**(const std::vector< double > & y, const std::vector< double > & y0) |
-| double | **[DetSqrt](/documentation/code/classes/classgambit_1_1cholesky/)**() |
+| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/#function-gambitcholesky-cholesky)**() |
+| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/#function-gambitcholesky-cholesky)**(const int num) |
+| bool | **[EnterMat](/documentation/code/classes/classgambit_1_1cholesky/#function-gambitcholesky-entermat)**(std::vector< std::vector< double > > & a) |
+| void | **[ElMult](/documentation/code/classes/classgambit_1_1cholesky/#function-gambitcholesky-elmult)**(std::vector< double > & y) const |
+| std::vector< double > | **[invElMult](/documentation/code/classes/classgambit_1_1cholesky/#function-gambitcholesky-invelmult)**(const std::vector< double > & y) const<br>x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/classes/classgambit_1_1cholesky/) matrix  |
+| double | **[Square](/documentation/code/classes/classgambit_1_1cholesky/#function-gambitcholesky-square)**(const std::vector< double > & y, const std::vector< double > & y0) |
+| double | **[DetSqrt](/documentation/code/classes/classgambit_1_1cholesky/#function-gambitcholesky-detsqrt)**() |
 
 ## Public Functions Documentation
 
@@ -91,4 +91,4 @@ inline double DetSqrt()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[SQR](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/)**(double x) |
-| double | **[limits](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/)**(double x) |
-| double | **[inv](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/)**(double x) |
-| double | **[prior](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/)**(double x) |
+| double | **[SQR](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/#function-gambitpriorsarccosprior-sqr)**(double x) |
+| double | **[limits](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/#function-gambitpriorsarccosprior-limits)**(double x) |
+| double | **[inv](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/#function-gambitpriorsarccosprior-inv)**(double x) |
+| double | **[prior](/documentation/code/classes/structgambit_1_1priors_1_1arccosprior/#function-gambitpriorsarccosprior-prior)**(double x) |
 
 ## Public Functions Documentation
 
@@ -60,4 +60,4 @@ static inline double prior(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

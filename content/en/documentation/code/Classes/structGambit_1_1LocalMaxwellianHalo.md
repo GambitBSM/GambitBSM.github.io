@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[rho0](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/)**  |
-| double | **[v0](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/)**  |
-| double | **[vesc](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/)**  |
-| double | **[vrot](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/)**  |
+| double | **[rho0](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/#variable-gambitlocalmaxwellianhalo-rho0)**  |
+| double | **[v0](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/#variable-gambitlocalmaxwellianhalo-v0)**  |
+| double | **[vesc](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/#variable-gambitlocalmaxwellianhalo-vesc)**  |
+| double | **[vrot](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/#variable-gambitlocalmaxwellianhalo-vrot)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ double vrot;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

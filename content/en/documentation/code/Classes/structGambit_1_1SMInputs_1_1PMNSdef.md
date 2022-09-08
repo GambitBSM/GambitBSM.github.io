@@ -15,12 +15,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[theta12](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/)**  |
-| double | **[theta23](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/)**  |
-| double | **[theta13](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/)**  |
-| double | **[delta13](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/)**  |
-| double | **[alpha1](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/)**  |
-| double | **[alpha2](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/)**  |
+| double | **[theta12](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/#variable-gambitsminputspmnsdef-theta12)**  |
+| double | **[theta23](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/#variable-gambitsminputspmnsdef-theta23)**  |
+| double | **[theta13](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/#variable-gambitsminputspmnsdef-theta13)**  |
+| double | **[delta13](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/#variable-gambitsminputspmnsdef-delta13)**  |
+| double | **[alpha1](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/#variable-gambitsminputspmnsdef-alpha1)**  |
+| double | **[alpha2](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/#variable-gambitsminputspmnsdef-alpha2)**  |
 
 ## Public Attributes Documentation
 
@@ -68,4 +68,4 @@ double alpha2;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

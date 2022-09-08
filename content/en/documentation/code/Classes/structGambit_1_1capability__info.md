@@ -17,11 +17,11 @@ Helper struct to carry around capability information.
 
 |                | Name           |
 | -------------- | -------------- |
-| [str](/documentation/code/namespaces/namespacegambit/) | **[name](/documentation/code/classes/structgambit_1_1capability__info/)** <br>Capability name.  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/), std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/), [str](/documentation/code/namespaces/namespacegambit/) > > > | **[modset](/documentation/code/classes/structgambit_1_1capability__info/)** <br>Set of modules and module functions in which capability is used, along with corresponding result types.  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/), std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/), [str](/documentation/code/namespaces/namespacegambit/) > > > | **[beset](/documentation/code/classes/structgambit_1_1capability__info/)** <br>Set of backends and backend functions in which capability is used, along with corresponding type signatures.  |
-| [str](/documentation/code/namespaces/namespacegambit/) | **[description](/documentation/code/classes/structgambit_1_1capability__info/)** <br>Full description of capability.  |
-| bool | **[has_description](/documentation/code/classes/structgambit_1_1capability__info/)** <br>Flag to check if description is missing.  |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[name](/documentation/code/classes/structgambit_1_1capability__info/#variable-gambitcapability-info-name)** <br>Capability name.  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > > > | **[modset](/documentation/code/classes/structgambit_1_1capability__info/#variable-gambitcapability-info-modset)** <br>Set of modules and module functions in which capability is used, along with corresponding result types.  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > > > | **[beset](/documentation/code/classes/structgambit_1_1capability__info/#variable-gambitcapability-info-beset)** <br>Set of backends and backend functions in which capability is used, along with corresponding type signatures.  |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[description](/documentation/code/classes/structgambit_1_1capability__info/#variable-gambitcapability-info-description)** <br>Full description of capability.  |
+| bool | **[has_description](/documentation/code/classes/structgambit_1_1capability__info/#variable-gambitcapability-info-has-description)** <br>Flag to check if description is missing.  |
 
 ## Public Attributes Documentation
 
@@ -67,4 +67,4 @@ Flag to check if description is missing.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

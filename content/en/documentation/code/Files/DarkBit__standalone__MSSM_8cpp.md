@@ -19,8 +19,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__standalone__mssm_8cpp/)**(DarkBit , SLHA_pseudonyms , NEW_CAPABILITY , createSLHA1Names , [mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/) , () , (MSSM_spectrum, [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/)) ) |
-| int | **[main](/documentation/code/files/darkbit__standalone__mssm_8cpp/)**(int argc, char * argv[]) |
+| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__standalone__mssm_8cpp/#function-darkbit-standalone-mssm-cpp-quick-function)**(DarkBit , SLHA_pseudonyms , NEW_CAPABILITY , createSLHA1Names , [mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/) , () , (MSSM_spectrum, [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/)) ) |
+| int | **[main](/documentation/code/files/darkbit__standalone__mssm_8cpp/#function-darkbit-standalone-mssm-cpp-main)**(int argc, char * argv[]) |
 
 ## Detailed Description
 
@@ -1868,4 +1868,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

@@ -19,9 +19,9 @@ Inherits from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/)**(T & data) |
-| virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/)**(std::ofstream & out) |
-| | **[~__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/)**() |
+| | **[__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-gambitscannerplugins-plugin-resume-plugin-resume)**(T & data) |
+| virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-gambitscannerplugins-plugin-resume-print)**(std::ofstream & out) |
+| | **[~__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-gambitscannerplugins-plugin-resume-plugin-resume)**() |
 
 ## Additional inherited members
 
@@ -29,7 +29,7 @@ Inherits from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)**() |
+| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-gambitscannerplugins-plugin-resume-base-plugin-resume-base)**() |
 
 
 ## Detailed Description
@@ -60,7 +60,7 @@ inline virtual void print(
 ```
 
 
-**Reimplements**: [Gambit::Scanner::Plugins::__plugin_resume_base__::print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)
+**Reimplements**: [Gambit::Scanner::Plugins::__plugin_resume_base__::print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-gambitscannerplugins-plugin-resume-base-print)
 
 
 ### function ~__plugin_resume__
@@ -72,4 +72,4 @@ inline ~__plugin_resume__()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

@@ -20,12 +20,12 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & model_options, const [Options](/documentation/code/classes/classgambit_1_1options/) & prior_options)<br>Special "build-a-prior" classi.  |
-| | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/)**(const std::vector< std::string > & params, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
-| virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/)**() const override |
-| virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/)**(const std::vector< double > & , std::unordered_map< std::string, double > & ) const override<br>Transform from unit hypercube to parameter.  |
-| virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
-| | **[~CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/)**() |
+| | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-gambitpriorscompositeprior-compositeprior)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & model_options, const [Options](/documentation/code/classes/classgambit_1_1options/) & prior_options)<br>Special "build-a-prior" classi.  |
+| | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-gambitpriorscompositeprior-compositeprior)**(const std::vector< std::string > & params, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
+| virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-gambitpriorscompositeprior-getshownparameters)**() const override |
+| virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-gambitpriorscompositeprior-transform)**(const std::vector< double > & , std::unordered_map< std::string, double > & ) const override<br>Transform from unit hypercube to parameter.  |
+| virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-gambitpriorscompositeprior-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
+| | **[~CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-gambitpriorscompositeprior-compositeprior)**() |
 
 ## Additional inherited members
 
@@ -33,22 +33,22 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**() =default |
-| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**() |
-| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**(const int param_size) |
-| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**(const std::vector< std::string > & param_names, const int param_size =0) |
-| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**(const std::string & param_name, const int param_size =0) |
-| virtual double | **[operator()](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**(const std::vector< double > & ) const<br>Log of PDF density.  |
-| unsigned int | **[size](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**() const |
-| void | **[setSize](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**(const unsigned int size) |
-| unsigned int & | **[sizeRef](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**() |
-| std::vector< std::string > | **[getParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**() const |
+| virtual | **[~BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**() =default |
+| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**() |
+| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**(const int param_size) |
+| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**(const std::vector< std::string > & param_names, const int param_size =0) |
+| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**(const std::string & param_name, const int param_size =0) |
+| virtual double | **[operator()](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-operator)**(const std::vector< double > & ) const<br>Log of PDF density.  |
+| unsigned int | **[size](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-size)**() const |
+| void | **[setSize](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-setsize)**(const unsigned int size) |
+| unsigned int & | **[sizeRef](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-sizeref)**() |
+| std::vector< std::string > | **[getParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-getparameters)**() const |
 
 **Protected Attributes inherited from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< std::string > | **[param_names](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**  |
+| std::vector< std::string > | **[param_names](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#variable-gambitpriorsbaseprior-param-names)**  |
 
 
 ## Detailed Description
@@ -90,7 +90,7 @@ inline virtual std::vector< std::string > getShownParameters() const override
 ```
 
 
-**Reimplements**: [Gambit::Priors::BasePrior::getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)
+**Reimplements**: [Gambit::Priors::BasePrior::getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-getshownparameters)
 
 
 ### function transform
@@ -104,7 +104,7 @@ inline virtual void transform(
 
 Transform from unit hypercube to parameter. 
 
-**Reimplements**: [Gambit::Priors::BasePrior::transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)
+**Reimplements**: [Gambit::Priors::BasePrior::transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-transform)
 
 
 ### function inverse_transform
@@ -117,7 +117,7 @@ inline virtual std::vector< double > inverse_transform(
 
 Transform from parameter back to unit hypercube. 
 
-**Reimplements**: [Gambit::Priors::BasePrior::inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)
+**Reimplements**: [Gambit::Priors::BasePrior::inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-inverse-transform)
 
 
 ### function ~CompositePrior
@@ -129,4 +129,4 @@ inline ~CompositePrior()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

@@ -13,22 +13,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_VARIABLE_6](/documentation/code/files/common__macros_8hpp/)**(_1, _2, _3, _4, _5, _6)  |
-|  | **[BE_VARIABLE_5](/documentation/code/files/common__macros_8hpp/)**(_1, _2, _3, _4, _5)  |
-|  | **[BE_VARIABLE_4](/documentation/code/files/common__macros_8hpp/)**(_1, _2, _3, _4)  |
-|  | **[BE_VARIABLE](/documentation/code/files/common__macros_8hpp/)**(...)  |
-|  | **[BE_CONV_FUNCTION_6](/documentation/code/files/common__macros_8hpp/)**(_1, _2, _3, _4, _5, _6)  |
-|  | **[BE_CONV_FUNCTION_5](/documentation/code/files/common__macros_8hpp/)**(_1, _2, _3, _4, _5)  |
-|  | **[BE_CONV_FUNCTION_4](/documentation/code/files/common__macros_8hpp/)**(_1, _2, _3, _4)  |
-|  | **[BE_CONV_FUNCTION](/documentation/code/files/common__macros_8hpp/)**(...)  |
-|  | **[IF_USING_PYBIND11](/documentation/code/files/common__macros_8hpp/)**(ARG) <br>Evaluates to ARG if and only if we have pybind11 and USING_PYTHON is true.  |
-|  | **[DO_CLASSLOADING](/documentation/code/files/common__macros_8hpp/)** <br>Turn classloading off by default (this is redefined by BOSSed backends).  |
-|  | **[BE_ALLOW_MODELS](/documentation/code/files/common__macros_8hpp/)**(...) <br>Macro for assigning allowed models to an entire backend.  |
-|  | **[BE_ALLOW_MODEL_INTERMEDIATE](/documentation/code/files/common__macros_8hpp/)**(r, data, MODEL) <br>Intermediate macro for expanding BE_ALLOW_MODELS.  |
-|  | **[BE_INI_FUNCTION](/documentation/code/files/common__macros_8hpp/)** <br>Boilerplate code for point-level backend initialisation function definitions.  |
-|  | **[BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/)** <br>Boilerplate code for convenience function definitions.  |
-|  | **[END_BE_INI_FUNCTION](/documentation/code/files/common__macros_8hpp/)** <br>Closer for initialisation function definitional boilerplate.  |
-|  | **[END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/)** <br>Closer for convenience function definitional boilerplate.  |
+|  | **[BE_VARIABLE_6](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-variable-6)**(_1, _2, _3, _4, _5, _6)  |
+|  | **[BE_VARIABLE_5](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-variable-5)**(_1, _2, _3, _4, _5)  |
+|  | **[BE_VARIABLE_4](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-variable-4)**(_1, _2, _3, _4)  |
+|  | **[BE_VARIABLE](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-variable)**(...)  |
+|  | **[BE_CONV_FUNCTION_6](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-conv-function-6)**(_1, _2, _3, _4, _5, _6)  |
+|  | **[BE_CONV_FUNCTION_5](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-conv-function-5)**(_1, _2, _3, _4, _5)  |
+|  | **[BE_CONV_FUNCTION_4](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-conv-function-4)**(_1, _2, _3, _4)  |
+|  | **[BE_CONV_FUNCTION](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-conv-function)**(...)  |
+|  | **[IF_USING_PYBIND11](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-if-using-pybind11)**(ARG) <br>Evaluates to ARG if and only if we have pybind11 and USING_PYTHON is true.  |
+|  | **[DO_CLASSLOADING](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-do-classloading)** <br>Turn classloading off by default (this is redefined by BOSSed backends).  |
+|  | **[BE_ALLOW_MODELS](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-allow-models)**(...) <br>Macro for assigning allowed models to an entire backend.  |
+|  | **[BE_ALLOW_MODEL_INTERMEDIATE](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-allow-model-intermediate)**(r, data, MODEL) <br>Intermediate macro for expanding BE_ALLOW_MODELS.  |
+|  | **[BE_INI_FUNCTION](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-ini-function)** <br>Boilerplate code for point-level backend initialisation function definitions.  |
+|  | **[BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-be-namespace)** <br>Boilerplate code for convenience function definitions.  |
+|  | **[END_BE_INI_FUNCTION](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-end-be-ini-function)** <br>Closer for initialisation function definitional boilerplate.  |
+|  | **[END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-end-be-namespace)** <br>Closer for convenience function definitional boilerplate.  |
 
 ## Detailed Description
 
@@ -364,4 +364,4 @@ namespace Gambit                                                            \
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

@@ -17,8 +17,8 @@ Minimal info about outputVertices.
 
 |                | Name           |
 | -------------- | -------------- |
-| VertexID | **[vertex](/documentation/code/classes/structgambit_1_1dres_1_1outputvertexinfo/)**  |
-| const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) * | **[iniEntry](/documentation/code/classes/structgambit_1_1dres_1_1outputvertexinfo/)**  |
+| VertexID | **[vertex](/documentation/code/classes/structgambit_1_1dres_1_1outputvertexinfo/#variable-gambitdresoutputvertexinfo-vertex)**  |
+| const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) * | **[iniEntry](/documentation/code/classes/structgambit_1_1dres_1_1outputvertexinfo/#variable-gambitdresoutputvertexinfo-inientry)**  |
 
 ## Public Attributes Documentation
 
@@ -38,4 +38,4 @@ const IniParser::ObservableType * iniEntry;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

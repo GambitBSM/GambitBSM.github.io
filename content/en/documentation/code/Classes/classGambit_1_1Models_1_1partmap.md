@@ -15,70 +15,70 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::pair< str, int > | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const |
-| std::pair< str, int > | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str name, int index) const |
-| std::pair< int, int > | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const |
-| std::pair< int, int > | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdgcode, int context) const |
-| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const |
-| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str name, int index) const |
-| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const |
-| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdgcode, int context) const |
-| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const<br>Check if a particle has a spin (x2) entry, using the long name.  |
-| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const<br>Check if a particle has a spin (x2) entry, using the PDG code and context integer.  |
-| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdg_code, int context) const |
-| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const<br>Check if a particle has a spin (x2) entry, using the short name and index.  |
-| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str name, int index) const |
-| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const |
-| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdg_code, int context) const |
-| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const |
-| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const |
-| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str name, int index) const |
-| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const<br>Check if a particle has a charge (x3) entry, using the long name.  |
-| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const<br>Check if a particle has a charge (x3) entry, using the PDG code and context integer.  |
-| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdg_code, int context) const |
-| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const<br>Check if a particle has a charge (x3) entry, using the short name and index.  |
-| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str name, int index) const |
-| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const |
-| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdg_code, int context) const |
-| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const |
-| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const |
-| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str name, int index) const |
-| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const<br>Check if a particle has a color entry, using the long name.  |
-| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const<br>Check if a particle has a color entry, using the PDG code and context integer.  |
-| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdg_code, int context) const |
-| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const<br>Check if a particle has a color entry, using the short name and index.  |
-| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str name, int index) const |
-| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const |
-| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdg_code, int context) const |
-| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const |
-| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const |
-| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str name, int index) const |
-| | **[partmap](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**()<br>Constructor.  |
-| void | **[add](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name, std::pair< int, int > pdgpr, int spinx2, int chargex3, int color)<br>Add a new particle to the database.  |
-| void | **[add_SM](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name, std::pair< int, int > pdgpr, int spinx2, int chargex3, int color)<br>Add a new Standard Model particle to the database.  |
-| void | **[add_generic](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name, std::pair< int, int > pdgpr, int spinx2, int chargex3, int color)<br>Add a new generic particle class to the database.  |
-| void | **[add_with_short_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name, std::pair< int, int > pdgpr, std::pair< str, int > shortpr, int spinx2, int chargex3, int color)<br>Add a new particle to the database with a short name and an index.  |
-| void | **[add_SM_with_short_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name, std::pair< int, int > pdgpr, std::pair< str, int > shortpr, int spinx2, int chargex3, int color)<br>Add a new Standard Model particle to the database with a short name and an index.  |
-| std::pair< int, int > | **[pdg_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const<br>Retrieve the PDG code and context integer, from the long name.  |
-| std::pair< int, int > | **[pdg_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str short_name, int i) const<br>Retrieve the PDG code and context integer, from the short name and index.  |
-| std::pair< int, int > | **[pdg_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const<br>Retrieve the PDG code and context integer, from the short name and index pair.  |
-| str | **[long_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str short_name, int i) const<br>Retrieve the long name, from the short name and index.  |
-| str | **[long_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const<br>Retrieve the long name, from the PDG code and context integer.  |
-| str | **[long_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdg_code, int context) const<br>Retrieve the long name, from the PDG code and context integer.  |
-| std::pair< str, int > | **[short_name_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const<br>Retrieve the short name and index, from the long name.  |
-| std::pair< str, int > | **[short_name_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const<br>Retrieve the short name and index, from the PDG code and context integer.  |
-| std::pair< str, int > | **[short_name_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(int pdg_code, int context) const<br>Retrieve the short name and index, from the PDG code and context integer.  |
-| const std::vector< std::pair< int, int > > & | **[get_SM_particles](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**() const<br>Get a vector PDG codes and context integers of Standard Model particles in the database.  |
-| const std::vector< std::pair< int, int > > & | **[get_generic_particles](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**() const<br>Get a vector PDG codes and context integers of generic particle classes in the database.  |
-| bool | **[has_particle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const<br>Check if a particle is in the database, using the long name.  |
-| bool | **[has_particle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str short_name, int i) const<br>Check if a particle is in the database, using the short name and index.  |
-| bool | **[has_particle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< str, int > shortpr) const |
-| bool | **[has_particle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const<br>Check if a particle is in the database, using the PDG code and context integer.  |
-| str | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str lname) const<br>Get the matching anti-particle long name for a particle in the database, using the long name.  |
-| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const<br>Check if a particle has a matching anti-particle in the database, using the long name.  |
-| bool | **[has_short_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(str long_name) const<br>Check if a particle has a short name, using the long name.  |
-| bool | **[has_short_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**(std::pair< int, int > pdgpr) const<br>Check if a particle has a short name, using the PDG code and context integer.  |
-| void | **[check_contents](/documentation/code/classes/classgambit_1_1models_1_1partmap/)**() const<br>For debugging: use to check the contents of the particle database.  |
+| std::pair< str, int > | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-antiparticle)**(std::pair< str, int > shortpr) const |
+| std::pair< str, int > | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-antiparticle)**(str name, int index) const |
+| std::pair< int, int > | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-antiparticle)**(std::pair< int, int > pdgpr) const |
+| std::pair< int, int > | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-antiparticle)**(int pdgcode, int context) const |
+| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-antiparticle)**(std::pair< str, int > shortpr) const |
+| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-antiparticle)**(str name, int index) const |
+| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-antiparticle)**(std::pair< int, int > pdgpr) const |
+| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-antiparticle)**(int pdgcode, int context) const |
+| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-spinx2)**(str long_name) const<br>Check if a particle has a spin (x2) entry, using the long name.  |
+| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-spinx2)**(std::pair< int, int > pdgpr) const<br>Check if a particle has a spin (x2) entry, using the PDG code and context integer.  |
+| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-spinx2)**(int pdg_code, int context) const |
+| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-spinx2)**(std::pair< str, int > shortpr) const<br>Check if a particle has a spin (x2) entry, using the short name and index.  |
+| bool | **[has_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-spinx2)**(str name, int index) const |
+| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-spinx2)**(std::pair< int, int > pdgpr) const |
+| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-spinx2)**(int pdg_code, int context) const |
+| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-spinx2)**(str long_name) const |
+| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-spinx2)**(std::pair< str, int > shortpr) const |
+| int | **[get_spinx2](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-spinx2)**(str name, int index) const |
+| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-chargex3)**(str long_name) const<br>Check if a particle has a charge (x3) entry, using the long name.  |
+| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-chargex3)**(std::pair< int, int > pdgpr) const<br>Check if a particle has a charge (x3) entry, using the PDG code and context integer.  |
+| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-chargex3)**(int pdg_code, int context) const |
+| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-chargex3)**(std::pair< str, int > shortpr) const<br>Check if a particle has a charge (x3) entry, using the short name and index.  |
+| bool | **[has_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-chargex3)**(str name, int index) const |
+| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-chargex3)**(std::pair< int, int > pdgpr) const |
+| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-chargex3)**(int pdg_code, int context) const |
+| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-chargex3)**(str long_name) const |
+| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-chargex3)**(std::pair< str, int > shortpr) const |
+| int | **[get_chargex3](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-chargex3)**(str name, int index) const |
+| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-color)**(str long_name) const<br>Check if a particle has a color entry, using the long name.  |
+| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-color)**(std::pair< int, int > pdgpr) const<br>Check if a particle has a color entry, using the PDG code and context integer.  |
+| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-color)**(int pdg_code, int context) const |
+| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-color)**(std::pair< str, int > shortpr) const<br>Check if a particle has a color entry, using the short name and index.  |
+| bool | **[has_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-color)**(str name, int index) const |
+| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-color)**(std::pair< int, int > pdgpr) const |
+| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-color)**(int pdg_code, int context) const |
+| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-color)**(str long_name) const |
+| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-color)**(std::pair< str, int > shortpr) const |
+| int | **[get_color](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-color)**(str name, int index) const |
+| | **[partmap](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-partmap)**()<br>Constructor.  |
+| void | **[add](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-add)**(str long_name, std::pair< int, int > pdgpr, int spinx2, int chargex3, int color)<br>Add a new particle to the database.  |
+| void | **[add_SM](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-add-sm)**(str long_name, std::pair< int, int > pdgpr, int spinx2, int chargex3, int color)<br>Add a new Standard Model particle to the database.  |
+| void | **[add_generic](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-add-generic)**(str long_name, std::pair< int, int > pdgpr, int spinx2, int chargex3, int color)<br>Add a new generic particle class to the database.  |
+| void | **[add_with_short_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-add-with-short-pair)**(str long_name, std::pair< int, int > pdgpr, std::pair< str, int > shortpr, int spinx2, int chargex3, int color)<br>Add a new particle to the database with a short name and an index.  |
+| void | **[add_SM_with_short_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-add-sm-with-short-pair)**(str long_name, std::pair< int, int > pdgpr, std::pair< str, int > shortpr, int spinx2, int chargex3, int color)<br>Add a new Standard Model particle to the database with a short name and an index.  |
+| std::pair< int, int > | **[pdg_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-pdg-pair)**(str long_name) const<br>Retrieve the PDG code and context integer, from the long name.  |
+| std::pair< int, int > | **[pdg_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-pdg-pair)**(str short_name, int i) const<br>Retrieve the PDG code and context integer, from the short name and index.  |
+| std::pair< int, int > | **[pdg_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-pdg-pair)**(std::pair< str, int > shortpr) const<br>Retrieve the PDG code and context integer, from the short name and index pair.  |
+| str | **[long_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-long-name)**(str short_name, int i) const<br>Retrieve the long name, from the short name and index.  |
+| str | **[long_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-long-name)**(std::pair< int, int > pdgpr) const<br>Retrieve the long name, from the PDG code and context integer.  |
+| str | **[long_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-long-name)**(int pdg_code, int context) const<br>Retrieve the long name, from the PDG code and context integer.  |
+| std::pair< str, int > | **[short_name_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-short-name-pair)**(str long_name) const<br>Retrieve the short name and index, from the long name.  |
+| std::pair< str, int > | **[short_name_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-short-name-pair)**(std::pair< int, int > pdgpr) const<br>Retrieve the short name and index, from the PDG code and context integer.  |
+| std::pair< str, int > | **[short_name_pair](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-short-name-pair)**(int pdg_code, int context) const<br>Retrieve the short name and index, from the PDG code and context integer.  |
+| const std::vector< std::pair< int, int > > & | **[get_SM_particles](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-sm-particles)**() const<br>Get a vector PDG codes and context integers of Standard Model particles in the database.  |
+| const std::vector< std::pair< int, int > > & | **[get_generic_particles](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-generic-particles)**() const<br>Get a vector PDG codes and context integers of generic particle classes in the database.  |
+| bool | **[has_particle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-particle)**(str long_name) const<br>Check if a particle is in the database, using the long name.  |
+| bool | **[has_particle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-particle)**(str short_name, int i) const<br>Check if a particle is in the database, using the short name and index.  |
+| bool | **[has_particle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-particle)**(std::pair< str, int > shortpr) const |
+| bool | **[has_particle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-particle)**(std::pair< int, int > pdgpr) const<br>Check if a particle is in the database, using the PDG code and context integer.  |
+| str | **[get_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-get-antiparticle)**(str lname) const<br>Get the matching anti-particle long name for a particle in the database, using the long name.  |
+| bool | **[has_antiparticle](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-antiparticle)**(str long_name) const<br>Check if a particle has a matching anti-particle in the database, using the long name.  |
+| bool | **[has_short_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-short-name)**(str long_name) const<br>Check if a particle has a short name, using the long name.  |
+| bool | **[has_short_name](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-has-short-name)**(std::pair< int, int > pdgpr) const<br>Check if a particle has a short name, using the PDG code and context integer.  |
+| void | **[check_contents](/documentation/code/classes/classgambit_1_1models_1_1partmap/#function-gambitmodelspartmap-check-contents)**() const<br>For debugging: use to check the contents of the particle database.  |
 
 ## Public Functions Documentation
 
@@ -831,4 +831,4 @@ For debugging: use to check the contents of the particle database.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

@@ -17,37 +17,37 @@ description: "[FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef HostSpec::D | **[D](/documentation/code/classes/classgambit_1_1setmaps/)** <br>Type of derived spectrum wrapper is known to HostSpec as D.  |
+| typedef HostSpec::D | **[D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d)** <br>Type of derived spectrum wrapper is known to HostSpec as D.  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SetMaps](/documentation/code/classes/classgambit_1_1setmaps/)**(const std::string & label, HostSpec *const fakethis) |
-| | **[SetMaps](/documentation/code/classes/classgambit_1_1setmaps/)**(const std::string & label, const HostSpec *const fakethis)<br>Version to deal with const host object.  |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map0](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap0 & map0)<br>derived class maps  |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map1](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap1 & map1) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map2](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap2 & map2) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map0W](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap0W & map0W) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map1W](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap1W & map1W) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map2W](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap2W & map2W) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map0M](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap0_extraM & map0M) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map1M](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap1_extraM & map1M) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map2M](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap2_extraM & map2M) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map0I](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap0_extraI & map0I) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map1I](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap1_extraI & map1I) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map2I](/documentation/code/classes/classgambit_1_1setmaps/)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/), MTag >::fmap2_extraI & map2I) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[omap0](/documentation/code/classes/classgambit_1_1setmaps/)**(const std::map< std::string, double > & om0)<br>base class override maps  |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[omap1](/documentation/code/classes/classgambit_1_1setmaps/)**(const std::map< std::string, std::map< int, double > > & om1) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[omap2](/documentation/code/classes/classgambit_1_1setmaps/)**(const std::map< std::string, std::map< int, std::map< int, double > > > & om2) |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[no_overrides](/documentation/code/classes/classgambit_1_1setmaps/)**(const bool flag)<br>Flag to disable searching of override maps (for retrieving original, unoverriden values)  |
-| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[override_only](/documentation/code/classes/classgambit_1_1setmaps/)**(const bool flag)<br>Flag to permit searching only override maps.  |
+| | **[SetMaps](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-setmaps)**(const std::string & label, HostSpec *const fakethis) |
+| | **[SetMaps](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-setmaps)**(const std::string & label, const HostSpec *const fakethis)<br>Version to deal with const host object.  |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map0](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map0)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap0 & map0)<br>derived class maps  |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map1](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map1)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap1 & map1) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map2](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map2)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap2 & map2) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map0W](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map0w)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap0W & map0W) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map1W](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map1w)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap1W & map1W) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map2W](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map2w)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap2W & map2W) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map0M](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map0m)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap0_extraM & map0M) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map1M](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map1m)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap1_extraM & map1M) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map2M](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map2m)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap2_extraM & map2M) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map0I](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map0i)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap0_extraI & map0I) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map1I](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map1i)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap1_extraI & map1I) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[map2I](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-map2i)**(const typename [MapTypes](/documentation/code/classes/structgambit_1_1maptypes/)< [D](/documentation/code/classes/classgambit_1_1setmaps/#typedef-gambitsetmaps-d), MTag >::fmap2_extraI & map2I) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[omap0](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-omap0)**(const std::map< std::string, double > & om0)<br>base class override maps  |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[omap1](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-omap1)**(const std::map< std::string, std::map< int, double > > & om1) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[omap2](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-omap2)**(const std::map< std::string, std::map< int, std::map< int, double > > > & om2) |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[no_overrides](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-no-overrides)**(const bool flag)<br>Flag to disable searching of override maps (for retrieving original, unoverriden values)  |
+| [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/) & | **[override_only](/documentation/code/classes/classgambit_1_1setmaps/#function-gambitsetmaps-override-only)**(const bool flag)<br>Flag to permit searching only override maps.  |
 
 ## Friends
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[FptrFinder< HostSpec, MTag >](/documentation/code/classes/classgambit_1_1setmaps/)**  |
+| class | **[FptrFinder< HostSpec, MTag >](/documentation/code/classes/classgambit_1_1setmaps/#friend-gambitsetmaps-fptrfinder-hostspec-mtag)**  |
 
 ## Detailed Description
 
@@ -264,4 +264,4 @@ friend class FptrFinder< HostSpec, MTag >(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

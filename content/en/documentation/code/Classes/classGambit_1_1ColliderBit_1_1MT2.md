@@ -14,15 +14,15 @@ A useful [MT2]() class for this module.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/)**() |
-| | **[MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/)**() |
+| | **[MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/#function-gambitcolliderbitmt2-mt2)**() |
+| | **[MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/#function-gambitcolliderbitmt2-mt2)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[MT2tauB](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/)**  |
-| double | **[aMT2_BM](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/)**  |
+| double | **[MT2tauB](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/#variable-gambitcolliderbitmt2-mt2taub)**  |
+| double | **[aMT2_BM](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/#variable-gambitcolliderbitmt2-amt2-bm)**  |
 
 ## Public Functions Documentation
 
@@ -58,4 +58,4 @@ double aMT2_BM;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

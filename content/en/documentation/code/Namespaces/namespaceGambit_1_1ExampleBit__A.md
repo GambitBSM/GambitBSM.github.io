@@ -13,33 +13,33 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[some_other_function](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(int & input)<br>Some other example function.  |
-| double | **[logf](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double x, double mu, double sig)<br>Un-normalised gaussian log-likelihood.  |
-| void | **[nevents_pred](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result) |
-| void | **[nevents_like](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result) |
-| void | **[particle_identity](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**([str](/documentation/code/namespaces/namespacegambit/) & result) |
-| void | **[nevents_pred_rounded](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(int & result) |
-| void | **[test_sigma](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result) |
-| void | **[function_pointer_retriever](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double(*&)(int &) result) |
-| void | **[example_damu](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result)<br>Example of interacting with models.  |
-| void | **[lnL_gaussian](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result) |
-| void | **[eventLoopManager](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**()<br>Run a fake 'event loop'.  |
-| void | **[exampleEventGen](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(float & result)<br>Produces a random floating-point 'event count' between 0 and 5.  |
-| void | **[exampleCut](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(int & result)<br>Rounds an event count to the nearest integer.  |
-| void | **[eventAccumulator](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(int & result)<br>Adds an integral event count to a total number of accumulated events.  |
-| void | **[do_Farray_stuff](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result) |
-| void | **[local_xsection](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result) |
-| void | **[large_print](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(std::map< std::string, double > & result) |
-| void | **[marg_poisson_test](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result)<br>Test inline marginalisation of a Poisson likelihood over a log-normally or Gaussianly-distributed nuisance parameter.  |
-| void | **[bossed_pythia_test_function](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(bool & result)<br>Example of using a BOSSed version of Pythia.  |
-| void | **[Backend_array_test](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result)<br>Tester for C/C++ backend array interfaces.  |
-| void | **[flat_likelihood](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**(double & result)<br>Flat test likelihood for checking prior distributions.  |
+| double | **[some_other_function](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-some-other-function)**(int & input)<br>Some other example function.  |
+| double | **[logf](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-logf)**(double x, double mu, double sig)<br>Un-normalised gaussian log-likelihood.  |
+| void | **[nevents_pred](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-nevents-pred)**(double & result) |
+| void | **[nevents_like](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-nevents-like)**(double & result) |
+| void | **[particle_identity](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-particle-identity)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & result) |
+| void | **[nevents_pred_rounded](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-nevents-pred-rounded)**(int & result) |
+| void | **[test_sigma](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-test-sigma)**(double & result) |
+| void | **[function_pointer_retriever](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-function-pointer-retriever)**(double(*&)(int &) result) |
+| void | **[example_damu](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-example-damu)**(double & result)<br>Example of interacting with models.  |
+| void | **[lnL_gaussian](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-lnl-gaussian)**(double & result) |
+| void | **[eventLoopManager](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-eventloopmanager)**()<br>Run a fake 'event loop'.  |
+| void | **[exampleEventGen](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-exampleeventgen)**(float & result)<br>Produces a random floating-point 'event count' between 0 and 5.  |
+| void | **[exampleCut](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-examplecut)**(int & result)<br>Rounds an event count to the nearest integer.  |
+| void | **[eventAccumulator](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-eventaccumulator)**(int & result)<br>Adds an integral event count to a total number of accumulated events.  |
+| void | **[do_Farray_stuff](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-do-farray-stuff)**(double & result) |
+| void | **[local_xsection](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-local-xsection)**(double & result) |
+| void | **[large_print](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-large-print)**(std::map< std::string, double > & result) |
+| void | **[marg_poisson_test](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-marg-poisson-test)**(double & result)<br>Test inline marginalisation of a Poisson likelihood over a log-normally or Gaussianly-distributed nuisance parameter.  |
+| void | **[bossed_pythia_test_function](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-bossed-pythia-test-function)**(bool & result)<br>Example of using a BOSSed version of Pythia.  |
+| void | **[Backend_array_test](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-backend-array-test)**(double & result)<br>Tester for C/C++ backend array interfaces.  |
+| void | **[flat_likelihood](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-gambitexamplebit-a-flat-likelihood)**(double & result)<br>Flat test likelihood for checking prior distributions.  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double(*)(int &, const double &) | **[callback_pointer](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)** <br>Pointer to some function.  |
+| double(*)(int &, const double &) | **[callback_pointer](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#variable-gambitexamplebit-a-callback-pointer)** <br>Pointer to some function.  |
 
 
 ## Functions Documentation
@@ -266,4 +266,4 @@ Pointer to some function.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

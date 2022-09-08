@@ -21,7 +21,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/files/examplebit__a__standalone__example_8cpp/)**() |
+| int | **[main](/documentation/code/files/examplebit__a__standalone__example_8cpp/#function-examplebit-a-standalone-example-cpp-main)**() |
 
 ## Detailed Description
 
@@ -253,4 +253,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

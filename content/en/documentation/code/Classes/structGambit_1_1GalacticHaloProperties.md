@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| daFunk::Funk | **[DensityProfile](/documentation/code/classes/structgambit_1_1galactichaloproperties/)**  |
-| double | **[r_sun](/documentation/code/classes/structgambit_1_1galactichaloproperties/)**  |
+| daFunk::Funk | **[DensityProfile](/documentation/code/classes/structgambit_1_1galactichaloproperties/#variable-gambitgalactichaloproperties-densityprofile)**  |
+| double | **[r_sun](/documentation/code/classes/structgambit_1_1galactichaloproperties/#variable-gambitgalactichaloproperties-r-sun)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ double r_sun;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

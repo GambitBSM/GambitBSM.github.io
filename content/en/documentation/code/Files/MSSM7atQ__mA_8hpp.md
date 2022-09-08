@@ -19,8 +19,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/mssm7atq__ma_8hpp/)**  |
-|  | **[PARENT](/documentation/code/files/mssm7atq__ma_8hpp/)**  |
+|  | **[MODEL](/documentation/code/files/mssm7atq__ma_8hpp/#define-mssm7atq-ma-hpp-model)**  |
+|  | **[PARENT](/documentation/code/files/mssm7atq__ma_8hpp/#define-mssm7atq-ma-hpp-parent)**  |
 
 ## Detailed Description
 
@@ -116,4 +116,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

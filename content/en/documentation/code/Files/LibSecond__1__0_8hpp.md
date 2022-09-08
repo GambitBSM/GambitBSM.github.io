@@ -13,11 +13,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/libsecond__1__0_8hpp/)**  |
-|  | **[BACKENDLANG](/documentation/code/files/libsecond__1__0_8hpp/)**  |
-|  | **[VERSION](/documentation/code/files/libsecond__1__0_8hpp/)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/libsecond__1__0_8hpp/)**  |
-|  | **[REFERENCE](/documentation/code/files/libsecond__1__0_8hpp/)**  |
+|  | **[BACKENDNAME](/documentation/code/files/libsecond__1__0_8hpp/#define-libsecond-1-0-hpp-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/libsecond__1__0_8hpp/#define-libsecond-1-0-hpp-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/libsecond__1__0_8hpp/#define-libsecond-1-0-hpp-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/libsecond__1__0_8hpp/#define-libsecond-1-0-hpp-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/libsecond__1__0_8hpp/#define-libsecond-1-0-hpp-reference)**  |
 
 ## Detailed Description
 
@@ -26,7 +26,7 @@ description: "[No description available]"
 
 **Date**: 2017 Dec
 
-Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/)' to set up a frontend for a Python library.
+Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/#file-backends-backend-macros-hpp)' to set up a frontend for a Python library.
 
 
 
@@ -203,4 +203,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

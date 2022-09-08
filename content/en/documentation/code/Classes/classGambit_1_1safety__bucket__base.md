@@ -19,24 +19,24 @@ Inherited by [Gambit::BE_bucket_base](/documentation/code/classes/classgambit_1_
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[safety_bucket_base](/documentation/code/classes/classgambit_1_1safety__bucket__base/)**([str](/documentation/code/namespaces/namespacegambit/) myinfo)<br>Master constructor.  |
-| bool | **[active](/documentation/code/classes/classgambit_1_1safety__bucket__base/)**() |
-| [str](/documentation/code/namespaces/namespacegambit/) | **[name](/documentation/code/classes/classgambit_1_1safety__bucket__base/)**()<br>Get capability name.  |
-| [str](/documentation/code/namespaces/namespacegambit/) | **[origin](/documentation/code/classes/classgambit_1_1safety__bucket__base/)**()<br>Get name of origin (module/backend).  |
+| | **[safety_bucket_base](/documentation/code/classes/classgambit_1_1safety__bucket__base/#function-gambitsafety-bucket-base-safety-bucket-base)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) myinfo)<br>Master constructor.  |
+| bool | **[active](/documentation/code/classes/classgambit_1_1safety__bucket__base/#function-gambitsafety-bucket-base-active)**() |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[name](/documentation/code/classes/classgambit_1_1safety__bucket__base/#function-gambitsafety-bucket-base-name)**()<br>Get capability name.  |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[origin](/documentation/code/classes/classgambit_1_1safety__bucket__base/#function-gambitsafety-bucket-base-origin)**()<br>Get name of origin (module/backend).  |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[dieGracefully](/documentation/code/classes/classgambit_1_1safety__bucket__base/)**() const<br>Failure message invoked when the user tries to access the object before it is initialized.  |
+| void | **[dieGracefully](/documentation/code/classes/classgambit_1_1safety__bucket__base/#function-gambitsafety-bucket-base-diegracefully)**() const<br>Failure message invoked when the user tries to access the object before it is initialized.  |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [functor](/documentation/code/classes/classgambit_1_1functor/) * | **[_functor_base_ptr](/documentation/code/classes/classgambit_1_1safety__bucket__base/)**  |
-| bool | **[_initialized](/documentation/code/classes/classgambit_1_1safety__bucket__base/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[whoami](/documentation/code/classes/classgambit_1_1safety__bucket__base/)**  |
+| [functor](/documentation/code/classes/classgambit_1_1functor/) * | **[_functor_base_ptr](/documentation/code/classes/classgambit_1_1safety__bucket__base/#variable-gambitsafety-bucket-base-functor-base-ptr)**  |
+| bool | **[_initialized](/documentation/code/classes/classgambit_1_1safety__bucket__base/#variable-gambitsafety-bucket-base-initialized)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[whoami](/documentation/code/classes/classgambit_1_1safety__bucket__base/#variable-gambitsafety-bucket-base-whoami)**  |
 
 ## Public Functions Documentation
 
@@ -111,4 +111,4 @@ const str whoami;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

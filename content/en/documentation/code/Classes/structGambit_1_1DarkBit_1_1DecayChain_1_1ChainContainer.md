@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ChainContainer](/documentation/code/classes/structgambit_1_1darkbit_1_1decaychain_1_1chaincontainer/)**() |
-| | **[ChainContainer](/documentation/code/classes/structgambit_1_1darkbit_1_1decaychain_1_1chaincontainer/)**(shared_ptr< [ChainParticle](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1chainparticle/) > ch) |
+| | **[ChainContainer](/documentation/code/classes/structgambit_1_1darkbit_1_1decaychain_1_1chaincontainer/#function-gambitdarkbitdecaychainchaincontainer-chaincontainer)**() |
+| | **[ChainContainer](/documentation/code/classes/structgambit_1_1darkbit_1_1decaychain_1_1chaincontainer/#function-gambitdarkbitdecaychainchaincontainer-chaincontainer)**(shared_ptr< [ChainParticle](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1chainparticle/) > ch) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| shared_ptr< const [ChainParticle](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1chainparticle/) > | **[chain](/documentation/code/classes/structgambit_1_1darkbit_1_1decaychain_1_1chaincontainer/)**  |
+| shared_ptr< const [ChainParticle](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1chainparticle/) > | **[chain](/documentation/code/classes/structgambit_1_1darkbit_1_1decaychain_1_1chaincontainer/#variable-gambitdarkbitdecaychainchaincontainer-chain)**  |
 
 ## Public Functions Documentation
 
@@ -53,4 +53,4 @@ shared_ptr< const ChainParticle > chain;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

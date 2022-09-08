@@ -26,8 +26,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[getSMmass](/documentation/code/files/wimp__eft_8cpp/)**(Name, spinX2)  |
-|  | **[addParticle](/documentation/code/files/wimp__eft_8cpp/)**(Name, Mass, spinX2)  |
+|  | **[getSMmass](/documentation/code/files/wimp__eft_8cpp/#define-wimp-eft-cpp-getsmmass)**(Name, spinX2)  |
+|  | **[addParticle](/documentation/code/files/wimp__eft_8cpp/#define-wimp-eft-cpp-addparticle)**(Name, Mass, spinX2)  |
 
 ## Detailed Description
 
@@ -572,4 +572,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

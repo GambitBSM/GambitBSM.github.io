@@ -12,27 +12,27 @@ ATLAS-specific efficiency and smearing functions for super fast detector simulat
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[applyElectronEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyMuonEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
-| void | **[applyMuonEffR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
-| void | **[applyTauEfficiencyR1](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & taus) |
-| void | **[applyTauEfficiencyR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & taus) |
-| void | **[applyPhotonEfficiencyR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & photons) |
-| void | **[smearElectronEnergy](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< HEPUtils::Particle * > & electrons)<br>Randomly smear the supplied electrons' momenta by parameterised resolutions.  |
-| void | **[smearMuonMomentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< HEPUtils::Particle * > & muons)<br>Randomly smear the supplied muons' momenta by parameterised resolutions.  |
-| void | **[smearJets](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< HEPUtils::Jet * > & jets)<br>Randomly smear the supplied jets' momenta by parameterised resolutions.  |
-| void | **[smearMET](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(HEPUtils::P4 & pmiss, double set)<br>Randomly smear the MET vector by parameterised resolutions.  |
-| void | **[smearTaus](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< HEPUtils::Particle * > & taus)<br>Randomly smear the supplied taus' momenta by parameterised resolutions.  |
-| void | **[applyLooseIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyLooseIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyMediumIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyMediumIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyMediumIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyMediumIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyTightIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyTightIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
-| void | **[applyElectronIDEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/) operating_point) |
-| void | **[applyElectronIsolationEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/) operating_point) |
+| void | **[applyElectronEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applyelectroneff)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyMuonEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applymuoneff)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
+| void | **[applyMuonEffR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applymuoneffr2)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
+| void | **[applyTauEfficiencyR1](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applytauefficiencyr1)**(std::vector< const HEPUtils::Particle * > & taus) |
+| void | **[applyTauEfficiencyR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applytauefficiencyr2)**(std::vector< const HEPUtils::Particle * > & taus) |
+| void | **[applyPhotonEfficiencyR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applyphotonefficiencyr2)**(std::vector< const HEPUtils::Particle * > & photons) |
+| void | **[smearElectronEnergy](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-smearelectronenergy)**(std::vector< HEPUtils::Particle * > & electrons)<br>Randomly smear the supplied electrons' momenta by parameterised resolutions.  |
+| void | **[smearMuonMomentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-smearmuonmomentum)**(std::vector< HEPUtils::Particle * > & muons)<br>Randomly smear the supplied muons' momenta by parameterised resolutions.  |
+| void | **[smearJets](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-smearjets)**(std::vector< HEPUtils::Jet * > & jets)<br>Randomly smear the supplied jets' momenta by parameterised resolutions.  |
+| void | **[smearMET](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-smearmet)**(HEPUtils::P4 & pmiss, double set)<br>Randomly smear the MET vector by parameterised resolutions.  |
+| void | **[smearTaus](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-smeartaus)**(std::vector< HEPUtils::Particle * > & taus)<br>Randomly smear the supplied taus' momenta by parameterised resolutions.  |
+| void | **[applyLooseIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applylooseidelectronselectionr2)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyLooseIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applylooseidelectronselectionr2)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
+| void | **[applyMediumIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applymediumidelectronselectionr2)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyMediumIDElectronSelectionR2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applymediumidelectronselectionr2)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
+| void | **[applyMediumIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applymediumidelectronselection)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyMediumIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applymediumidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
+| void | **[applyTightIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applytightidelectronselection)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyTightIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applytightidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
+| void | **[applyElectronIDEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applyelectronidefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) operating_point) |
+| void | **[applyElectronIsolationEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-gambitcolliderbitatlas-applyelectronisolationefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) operating_point) |
 
 
 ## Functions Documentation
@@ -315,4 +315,4 @@ Electron 2019 Isolation efficiency functions from [https://arxiv.org/pdf/1902.04
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[WIMP_EFT_DM](/documentation/code/classes/classgambit_1_1darkbit_1_1wimp__eft__dm/)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) *const catalog)<br>Initialize object (branching ratios etc)  |
-| double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1wimp__eft__dm/)**(std::string channel, double mass, double A, double B, double v)<br>Returns <sigma v> in cm3/s for given channel, velocity and model parameters.  |
+| | **[WIMP_EFT_DM](/documentation/code/classes/classgambit_1_1darkbit_1_1wimp__eft__dm/#function-gambitdarkbitwimp-eft-dm-wimp-eft-dm)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) *const catalog)<br>Initialize object (branching ratios etc)  |
+| double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1wimp__eft__dm/#function-gambitdarkbitwimp-eft-dm-sv)**(std::string channel, double mass, double A, double B, double v)<br>Returns <sigma v> in cm3/s for given channel, velocity and model parameters.  |
 
 ## Public Functions Documentation
 
@@ -51,4 +51,4 @@ Parameterises <sigma v> as A + Bv^2, i.e. s + p wave annihilation with no resona
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

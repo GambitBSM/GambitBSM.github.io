@@ -13,107 +13,107 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_REQ_FROM_GROUP](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)**(lnlike_marg_poisson , lnlike_marg_poisson_lognormal_error , () , double , (const int &, const double &, const double &, const double &) ) |
+| | **[BACKEND_REQ_FROM_GROUP](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#function-colliderbit-mc-rollcall-hpp-backend-req-from-group)**(lnlike_marg_poisson , lnlike_marg_poisson_lognormal_error , () , double , (const int &, const double &, const double &, const double &) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[lnlike_marg_poisson_gaussian_error](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)**  |
-| | **[double](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)**  |
+| | **[lnlike_marg_poisson_gaussian_error](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#variable-colliderbit-mc-rollcall-hpp-lnlike-marg-poisson-gaussian-error)**  |
+| | **[double](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#variable-colliderbit-mc-rollcall-hpp-double)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[MODULE](/documentation/code/files/colliderbit__mc__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[MODULE](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-colliderbit-mc-rollcall-hpp-module)**  |
 
 ## Detailed Description
 
@@ -4693,4 +4693,4 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:22 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

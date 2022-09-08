@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[IN_SPECBIT](/documentation/code/files/examples_2specbit__tests_8cpp/)**  |
-|  | **[QUERYMODELS](/documentation/code/files/examples_2specbit__tests_8cpp/)**(MODEL) <br>Quick macro to simplify the check of Pipe::Models.  |
+|  | **[IN_SPECBIT](/documentation/code/files/examples_2specbit__tests_8cpp/#define-examples-specbit-tests-cpp-in-specbit)**  |
+|  | **[QUERYMODELS](/documentation/code/files/examples_2specbit__tests_8cpp/#define-examples-specbit-tests-cpp-querymodels)**(MODEL) <br>Quick macro to simplify the check of Pipe::Models.  |
 
 ## Detailed Description
 
@@ -300,4 +300,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

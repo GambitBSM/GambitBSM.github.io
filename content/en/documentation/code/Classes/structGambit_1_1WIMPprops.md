@@ -15,11 +15,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[mass](/documentation/code/classes/structgambit_1_1wimpprops/)**  |
-| unsigned int | **[spinx2](/documentation/code/classes/structgambit_1_1wimpprops/)**  |
-| bool | **[sc](/documentation/code/classes/structgambit_1_1wimpprops/)**  |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1wimpprops/)**  |
-| std::string | **[conjugate](/documentation/code/classes/structgambit_1_1wimpprops/)**  |
+| double | **[mass](/documentation/code/classes/structgambit_1_1wimpprops/#variable-gambitwimpprops-mass)**  |
+| unsigned int | **[spinx2](/documentation/code/classes/structgambit_1_1wimpprops/#variable-gambitwimpprops-spinx2)**  |
+| bool | **[sc](/documentation/code/classes/structgambit_1_1wimpprops/#variable-gambitwimpprops-sc)**  |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1wimpprops/#variable-gambitwimpprops-name)**  |
+| std::string | **[conjugate](/documentation/code/classes/structgambit_1_1wimpprops/#variable-gambitwimpprops-conjugate)**  |
 
 ## Public Attributes Documentation
 
@@ -60,4 +60,4 @@ std::string conjugate;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

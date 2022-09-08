@@ -15,36 +15,36 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[DecayTableEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(string pID, double m, bool stable) |
-| | **[DecayTableEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**() |
-| bool | **[randomDecay](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) *& decay) const |
-| void | **[update](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**() |
-| bool | **[isEnabled](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) const |
-| bool | **[isDisabled](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) const |
-| bool | **[isRegistered](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) const |
-| void | **[addChannel](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) |
-| void | **[addDisabled](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) |
-| void | **[setInvisibleWidth](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(double width) |
-| bool | **[enableDecay](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) |
-| bool | **[disableDecay](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) |
-| double | **[getEnabledBranching](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**() const |
-| void | **[forceTotalWidth](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**(bool enabled, double width) |
-| double | **[getTotalWidth](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**() const |
-| bool | **[hasEnabledDecays](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**() const |
+| | **[DecayTableEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-decaytableentry)**(string pID, double m, bool stable) |
+| | **[DecayTableEntry](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-decaytableentry)**() |
+| bool | **[randomDecay](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-randomdecay)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) *& decay) const |
+| void | **[update](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-update)**() |
+| bool | **[isEnabled](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-isenabled)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) const |
+| bool | **[isDisabled](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-isdisabled)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) const |
+| bool | **[isRegistered](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-isregistered)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) const |
+| void | **[addChannel](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-addchannel)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) |
+| void | **[addDisabled](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-adddisabled)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) |
+| void | **[setInvisibleWidth](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-setinvisiblewidth)**(double width) |
+| bool | **[enableDecay](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-enabledecay)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) |
+| bool | **[disableDecay](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-disabledecay)**(const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) * in) |
+| double | **[getEnabledBranching](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-getenabledbranching)**() const |
+| void | **[forceTotalWidth](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-forcetotalwidth)**(bool enabled, double width) |
+| double | **[getTotalWidth](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-gettotalwidth)**() const |
+| bool | **[hasEnabledDecays](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#function-gambitdarkbitdecaychaindecaytableentry-hasenableddecays)**() const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const double | **[m](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**  |
-| bool | **[stable](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**  |
-| unordered_map< const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) *, bool > | **[endpointFlags](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**  |
+| const double | **[m](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#variable-gambitdarkbitdecaychaindecaytableentry-m)**  |
+| bool | **[stable](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#variable-gambitdarkbitdecaychaindecaytableentry-stable)**  |
+| unordered_map< const [TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/) *, bool > | **[endpointFlags](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#variable-gambitdarkbitdecaychaindecaytableentry-endpointflags)**  |
 
 ## Friends
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[DecayTable](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/)**  |
+| class | **[DecayTable](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1decaytableentry/#friend-gambitdarkbitdecaychaindecaytableentry-decaytable)**  |
 
 ## Public Functions Documentation
 
@@ -221,4 +221,4 @@ friend class DecayTable(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

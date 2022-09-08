@@ -17,9 +17,9 @@ Class to connect multinest log-likelihood function and ScannerBit likelihood fun
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/)**([scanPtr](/documentation/code/namespaces/namespacegambit_1_1multinest/) loglike, printer_interface & printer)<br>Constructor.  |
-| double | **[LogLike](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/)**(double * Cube, int ndim, int )<br>Main interface function from MultiNest to ScannerBit-supplied loglikelihood function.  |
-| void | **[dumper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * , double , double , double )<br>Main interface to MultiNest dumper routine.  |
+| | **[LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-gambitmultinestloglikewrapper-loglikewrapper)**([scanPtr](/documentation/code/namespaces/namespacegambit_1_1multinest/#typedef-gambitmultinest-scanptr) loglike, printer_interface & printer)<br>Constructor.  |
+| double | **[LogLike](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-gambitmultinestloglikewrapper-loglike)**(double * Cube, int ndim, int )<br>Main interface function from MultiNest to ScannerBit-supplied loglikelihood function.  |
+| void | **[dumper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-gambitmultinestloglikewrapper-dumper)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * , double , double , double )<br>Main interface to MultiNest dumper routine.  |
 
 ## Public Functions Documentation
 
@@ -85,4 +85,4 @@ nSamples = total number of samples in posterior distribution nlive = total numbe
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

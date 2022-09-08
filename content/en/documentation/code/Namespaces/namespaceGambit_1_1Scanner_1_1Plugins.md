@@ -38,17 +38,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**(const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plug1, const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plug2) |
-| bool | **[Plugin_Version_Supersedes](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**(const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plug1, const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plug2)<br>compares the user defined plugin version to the actual plugin version.  |
-| const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[error_map_return](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**() |
-| std::string | **[print_plugins](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**(std::map< std::string, std::map< std::string, std::vector< [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) > > >::const_iterator plugins) |
-| bool | **[is_new_plugin](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**(std::map< [str](/documentation/code/namespaces/namespacegambit/), std::map< [str](/documentation/code/namespaces/namespacegambit/), std::vector< [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) > > > & pmap, [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & cand)<br>Check a plugin map and return a flag indicating if a candidate plugin is already in the map or not.  |
+| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/#function-gambitscannerplugins-operator)**(const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plug1, const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plug2) |
+| bool | **[Plugin_Version_Supersedes](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/#function-gambitscannerplugins-plugin-version-supersedes)**(const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plug1, const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plug2)<br>compares the user defined plugin version to the actual plugin version.  |
+| const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[error_map_return](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/#function-gambitscannerplugins-error-map-return)**() |
+| std::string | **[print_plugins](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/#function-gambitscannerplugins-print-plugins)**(std::map< std::string, std::map< std::string, std::vector< [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) > > >::const_iterator plugins) |
+| bool | **[is_new_plugin](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/#function-gambitscannerplugins-is-new-plugin)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), std::vector< [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) > > > & pmap, [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & cand)<br>Check a plugin map and return a flag indicating if a candidate plugin is already in the map or not.  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| EXPORT_SYMBOLS [pluginInfo](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/) | **[plugin_info](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/)**  |
+| EXPORT_SYMBOLS [pluginInfo](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/) | **[plugin_info](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/#variable-gambitscannerplugins-plugin-info)**  |
 
 
 ## Functions Documentation
@@ -119,4 +119,4 @@ Access Functor for plugin info. This will manage all the plugins including store
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

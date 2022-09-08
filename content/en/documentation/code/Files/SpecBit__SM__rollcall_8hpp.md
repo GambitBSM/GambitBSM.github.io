@@ -13,14 +13,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/)** <br>Produce an SMInputs object (SLHA2 conventions)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/)** <br>Produce an SMInputs object (SLHA2 conventions)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/)** <br>Produce an SMInputs object (SLHA2 conventions)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/)** <br>Produce an SMInputs object (SLHA2 conventions)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-function)**  |
 
 ## Detailed Description
 
@@ -29,7 +29,7 @@ description: "[No description available]"
 
 **Date**: 2014 Sep - Dec, 2015 Jan - Mar
 
-Rollcall declarations for module functions contained in [SpecBit_SM.cpp](/documentation/code/files/specbit__sm_8cpp/)
+Rollcall declarations for module functions contained in [SpecBit_SM.cpp](/documentation/code/files/specbit__sm_8cpp/#file-src-specbit-sm-cpp)
 
 
 
@@ -181,4 +181,4 @@ Produce an SMInputs object (SLHA2 conventions)
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

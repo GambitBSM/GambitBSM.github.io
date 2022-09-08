@@ -13,11 +13,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/)**(uniform , version(1, 0, 0) ) |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/)**(gaussian , version(1, 0, 0) ) |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/)**(normal_example , version(1, 0, 0) ) |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/)**(EggBox , version(1, 0, 0) ) |
-| | **[objective_plugin](/documentation/code/files/examples_8cpp/)**(flat_prior , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-examples-cpp-objective-plugin)**(uniform , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-examples-cpp-objective-plugin)**(gaussian , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-examples-cpp-objective-plugin)**(normal_example , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-examples-cpp-objective-plugin)**(EggBox , version(1, 0, 0) ) |
+| | **[objective_plugin](/documentation/code/files/examples_8cpp/#function-examples-cpp-objective-plugin)**(flat_prior , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -289,4 +289,4 @@ objective_plugin(flat_prior, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

@@ -15,21 +15,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**() |
-| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**(double v0, double v1, double v2) |
-| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**(double v0) |
-| double | **[length](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**() const |
-| void | **[normalize](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**() |
-| void | **[normalize](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**(const double len) |
-| double & | **[operator[]](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**(int i) |
-| double | **[operator[]](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**(int i) const |
-| [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) | **[operator-](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**() const |
+| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-vec3)**() |
+| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-vec3)**(double v0, double v1, double v2) |
+| | **[vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-vec3)**(double v0) |
+| double | **[length](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-length)**() const |
+| void | **[normalize](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-normalize)**() |
+| void | **[normalize](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-normalize)**(const double len) |
+| double & | **[operator[]](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-operator)**(int i) |
+| double | **[operator[]](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-operator)**(int i) const |
+| [vec3](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/) | **[operator-](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#function-gambitdarkbitdecaychainvec3-operator)**() const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double[3] | **[vals](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/)**  |
+| double[3] | **[vals](/documentation/code/classes/classgambit_1_1darkbit_1_1decaychain_1_1vec3/#variable-gambitdarkbitdecaychainvec3-vals)**  |
 
 ## Public Functions Documentation
 
@@ -119,4 +119,4 @@ double[3] vals;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

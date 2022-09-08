@@ -17,10 +17,10 @@ Keeps track of vertex buffers local to a print function.  [More...](#detailed-de
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[init](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/)**([HDF5Printer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer/) * p, bool synchronised)<br>Initialise the buffer (attach it to a printer and set its behaviour)  |
-| BuffType & | **[get_buffer](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/)**(const int vID, const unsigned int i, const std::string & label)<br>Retrieve a buffer for an IDcode/auxilliary-index pair.  |
-| | **[H5P_LocalBufferManager](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/)**()<br>Constructor.  |
-| bool | **[ready](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/)**()<br>Signal whether initialisation has occured.  |
+| void | **[init](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-gambitprintersh5p-localbuffermanager-init)**([HDF5Printer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer/) * p, bool synchronised)<br>Initialise the buffer (attach it to a printer and set its behaviour)  |
+| BuffType & | **[get_buffer](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-gambitprintersh5p-localbuffermanager-get-buffer)**(const int vID, const unsigned int i, const std::string & label)<br>Retrieve a buffer for an IDcode/auxilliary-index pair.  |
+| | **[H5P_LocalBufferManager](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-gambitprintersh5p-localbuffermanager-h5p-localbuffermanager)**()<br>Constructor.  |
+| bool | **[ready](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-gambitprintersh5p-localbuffermanager-ready)**()<br>Signal whether initialisation has occured.  |
 
 ## Detailed Description
 
@@ -76,4 +76,4 @@ Signal whether initialisation has occured.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

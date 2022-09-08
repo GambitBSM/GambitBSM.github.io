@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| size_t | **[operator()](/documentation/code/classes/structgambit_1_1printers_1_1ppidhash/)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & key) const |
+| size_t | **[operator()](/documentation/code/classes/structgambit_1_1printers_1_1ppidhash/#function-gambitprintersppidhash-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & key) const |
 
 ## Public Functions Documentation
 
@@ -30,4 +30,4 @@ inline size_t operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

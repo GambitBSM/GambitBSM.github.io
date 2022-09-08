@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef ret | **[type](/documentation/code/classes/structgambit_1_1scanner_1_1return__type_3_01ret_07args_8_8_8_08_4/)**  |
+| typedef ret | **[type](/documentation/code/classes/structgambit_1_1scanner_1_1return__type_3_01ret_07args_8_8_8_08_4/#typedef-gambitscannerreturn-type-retargs-type)**  |
 
 ## Detailed Description
 
@@ -36,4 +36,4 @@ typedef ret Gambit::Scanner::return_type< ret(args...)>::type;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

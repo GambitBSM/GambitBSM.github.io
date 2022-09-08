@@ -20,16 +20,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ECHO](/documentation/code/files/specbit__examples_8cpp/)**(COMMAND)  |
-|  | **[PDB](/documentation/code/files/specbit__examples_8cpp/)**  |
-|  | **[GET_MIX_MATRIX_EL](/documentation/code/files/specbit__examples_8cpp/)**(r, PRODUCT)  |
-|  | **[GET_MIX_MATRIX](/documentation/code/files/specbit__examples_8cpp/)**(NAME, BLOCK, __IND1, __IND2)  |
-|  | **[GET_MATRIX_EL](/documentation/code/files/specbit__examples_8cpp/)**(r, PRODUCT)  |
-|  | **[GET_MATRIX](/documentation/code/files/specbit__examples_8cpp/)**(NAME, BLOCK, __IND1, __IND2)  |
-|  | **[GET_M1_MATRIX_EL](/documentation/code/files/specbit__examples_8cpp/)**(r, PRODUCT)  |
-|  | **[GET_M1_MATRIX](/documentation/code/files/specbit__examples_8cpp/)**(NAME, BLOCK, __IND1, __IND2)  |
-|  | **[GET_M2_MATRIX_EL](/documentation/code/files/specbit__examples_8cpp/)**(r, PRODUCT)  |
-|  | **[GET_M2_MATRIX](/documentation/code/files/specbit__examples_8cpp/)**(NAME, BLOCK, __IND1, __IND2)  |
+|  | **[ECHO](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-echo)**(COMMAND)  |
+|  | **[PDB](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-pdb)**  |
+|  | **[GET_MIX_MATRIX_EL](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-get-mix-matrix-el)**(r, PRODUCT)  |
+|  | **[GET_MIX_MATRIX](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-get-mix-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
+|  | **[GET_MATRIX_EL](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-get-matrix-el)**(r, PRODUCT)  |
+|  | **[GET_MATRIX](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-get-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
+|  | **[GET_M1_MATRIX_EL](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-get-m1-matrix-el)**(r, PRODUCT)  |
+|  | **[GET_M1_MATRIX](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-get-m1-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
+|  | **[GET_M2_MATRIX_EL](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-get-m2-matrix-el)**(r, PRODUCT)  |
+|  | **[GET_M2_MATRIX](/documentation/code/files/specbit__examples_8cpp/#define-specbit-examples-cpp-get-m2-matrix)**(NAME, BLOCK, __IND1, __IND2)  |
 
 ## Detailed Description
 
@@ -900,4 +900,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/toy__mcmc_8cpp/)**(toy_mcmc , version(1, 0, 0) ) |
+| | **[scanner_plugin](/documentation/code/files/toy__mcmc_8cpp/#function-toy-mcmc-cpp-scanner-plugin)**(toy_mcmc , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -249,4 +249,4 @@ scanner_plugin(toy_mcmc, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

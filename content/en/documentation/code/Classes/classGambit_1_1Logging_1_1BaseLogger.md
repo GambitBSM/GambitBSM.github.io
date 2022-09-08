@@ -19,9 +19,9 @@ Inherited by [Gambit::Logging::StdLogger](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BaseLogger](/documentation/code/classes/classgambit_1_1logging_1_1baselogger/)**()<br>Virtual destructor so we can delete the loggers by pointer to base.  |
-| virtual void | **[write](/documentation/code/classes/classgambit_1_1logging_1_1baselogger/)**(const [SortedMessage](/documentation/code/classes/structgambit_1_1logging_1_1sortedmessage/) & ) =0<br>Write message.  |
-| virtual void | **[flush](/documentation/code/classes/classgambit_1_1logging_1_1baselogger/)**() =0<br>Flush stream buffer;.  |
+| virtual | **[~BaseLogger](/documentation/code/classes/classgambit_1_1logging_1_1baselogger/#function-gambitloggingbaselogger-baselogger)**()<br>Virtual destructor so we can delete the loggers by pointer to base.  |
+| virtual void | **[write](/documentation/code/classes/classgambit_1_1logging_1_1baselogger/#function-gambitloggingbaselogger-write)**(const [SortedMessage](/documentation/code/classes/structgambit_1_1logging_1_1sortedmessage/) & ) =0<br>Write message.  |
+| virtual void | **[flush](/documentation/code/classes/classgambit_1_1logging_1_1baselogger/#function-gambitloggingbaselogger-flush)**() =0<br>Flush stream buffer;.  |
 
 ## Public Functions Documentation
 
@@ -46,7 +46,7 @@ virtual void write(
 
 Write message. 
 
-**Reimplemented by**: [Gambit::Logging::StdLogger::write](/documentation/code/classes/classgambit_1_1logging_1_1stdlogger/)
+**Reimplemented by**: [Gambit::Logging::StdLogger::write](/documentation/code/classes/classgambit_1_1logging_1_1stdlogger/#function-gambitloggingstdlogger-write)
 
 
 ### function flush
@@ -57,9 +57,9 @@ virtual void flush() =0
 
 Flush stream buffer;. 
 
-**Reimplemented by**: [Gambit::Logging::StdLogger::flush](/documentation/code/classes/classgambit_1_1logging_1_1stdlogger/)
+**Reimplemented by**: [Gambit::Logging::StdLogger::flush](/documentation/code/classes/classgambit_1_1logging_1_1stdlogger/#function-gambitloggingstdlogger-flush)
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

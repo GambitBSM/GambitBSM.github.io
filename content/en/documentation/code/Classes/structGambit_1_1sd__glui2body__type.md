@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[brgst1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/)**  |
-| Fdouble | **[brgst2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/)**  |
-| Fdouble | **[brgsb1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/)**  |
-| Fdouble | **[brgsb2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/)**  |
-| Fdouble | **[brgsupl](/documentation/code/classes/structgambit_1_1sd__glui2body__type/)**  |
-| Fdouble | **[brgsupr](/documentation/code/classes/structgambit_1_1sd__glui2body__type/)**  |
-| Fdouble | **[brgsdownl](/documentation/code/classes/structgambit_1_1sd__glui2body__type/)**  |
-| Fdouble | **[brgsdownr](/documentation/code/classes/structgambit_1_1sd__glui2body__type/)**  |
+| Fdouble | **[brgst1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-gambitsd-glui2body-type-brgst1)**  |
+| Fdouble | **[brgst2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-gambitsd-glui2body-type-brgst2)**  |
+| Fdouble | **[brgsb1](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-gambitsd-glui2body-type-brgsb1)**  |
+| Fdouble | **[brgsb2](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-gambitsd-glui2body-type-brgsb2)**  |
+| Fdouble | **[brgsupl](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-gambitsd-glui2body-type-brgsupl)**  |
+| Fdouble | **[brgsupr](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-gambitsd-glui2body-type-brgsupr)**  |
+| Fdouble | **[brgsdownl](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-gambitsd-glui2body-type-brgsdownl)**  |
+| Fdouble | **[brgsdownr](/documentation/code/classes/structgambit_1_1sd__glui2body__type/#variable-gambitsd-glui2body-type-brgsdownr)**  |
 
 ## Public Attributes Documentation
 
@@ -84,4 +84,4 @@ Fdouble brgsdownr;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

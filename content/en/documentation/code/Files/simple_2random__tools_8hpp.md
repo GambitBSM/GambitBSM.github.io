@@ -30,20 +30,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN, const int yN) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN, const int yN, const int zN) |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN, T in) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN, const int yN, T in) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN, const int yN, const int zN, T in) |
-| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN, T * in) |
-| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN, const int yN, T ** in) |
-| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/)**(const int xN, const int yN, const int zN, T *** in) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/)**(T * temp) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/)**(T ** temp, int xN) |
-| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/)**(T *** temp, int xN, int yN) |
-| template <class T \> <br>const T | **[SQ](/documentation/code/files/simple_2random__tools_8hpp/)**(const T a) |
-| template <class T \> <br>const T | **[SQR](/documentation/code/files/simple_2random__tools_8hpp/)**(const T a) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN, const int yN) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN, const int yN, const int zN) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN, T in) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN, const int yN, T in) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN, const int yN, const int zN, T in) |
+| template <typename T \> <br>T * | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN, T * in) |
+| template <typename T \> <br>T ** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN, const int yN, T ** in) |
+| template <typename T \> <br>T *** | **[matrix](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-matrix)**(const int xN, const int yN, const int zN, T *** in) |
+| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-del)**(T * temp) |
+| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-del)**(T ** temp, int xN) |
+| template <typename T \> <br>void | **[del](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-del)**(T *** temp, int xN, int yN) |
+| template <class T \> <br>const T | **[SQ](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-sq)**(const T a) |
+| template <class T \> <br>const T | **[SQR](/documentation/code/files/simple_2random__tools_8hpp/#function-simple-random-tools-hpp-sqr)**(const T a) |
 
 
 ## Functions Documentation
@@ -1523,4 +1523,4 @@ class MultiNormDev : public RandomBasis, public Cholesky
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

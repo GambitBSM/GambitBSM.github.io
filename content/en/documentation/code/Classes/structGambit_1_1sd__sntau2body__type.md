@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsntauneut](/documentation/code/classes/structgambit_1_1sd__sntau2body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsntauchar](/documentation/code/classes/structgambit_1_1sd__sntau2body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsntau1wstau](/documentation/code/classes/structgambit_1_1sd__sntau2body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsntau1hcstau](/documentation/code/classes/structgambit_1_1sd__sntau2body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsntauneut](/documentation/code/classes/structgambit_1_1sd__sntau2body__type/#variable-gambitsd-sntau2body-type-brsntauneut)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsntauchar](/documentation/code/classes/structgambit_1_1sd__sntau2body__type/#variable-gambitsd-sntau2body-type-brsntauchar)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsntau1wstau](/documentation/code/classes/structgambit_1_1sd__sntau2body__type/#variable-gambitsd-sntau2body-type-brsntau1wstau)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsntau1hcstau](/documentation/code/classes/structgambit_1_1sd__sntau2body__type/#variable-gambitsd-sntau2body-type-brsntau1hcstau)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ Farray< Fdouble, 1, 2 > brsntau1hcstau;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

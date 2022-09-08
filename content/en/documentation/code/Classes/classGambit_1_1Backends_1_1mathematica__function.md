@@ -17,8 +17,8 @@ Holds the info about a Mathematica backend function, and defines conversion func
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mathematica_function](/documentation/code/classes/classgambit_1_1backends_1_1mathematica__function/)**(const [str](/documentation/code/namespaces/namespacegambit/) & be, const [str](/documentation/code/namespaces/namespacegambit/) & ver, const [str](/documentation/code/namespaces/namespacegambit/) & symbol)<br>Constructor.  |
-| TYPE | **[operator()](/documentation/code/classes/classgambit_1_1backends_1_1mathematica__function/)**(ARGS &&... args)<br>Operation (execute function and return value)  |
+| | **[mathematica_function](/documentation/code/classes/classgambit_1_1backends_1_1mathematica__function/#function-gambitbackendsmathematica-function-mathematica-function)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & be, const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & ver, const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & symbol)<br>Constructor.  |
+| TYPE | **[operator()](/documentation/code/classes/classgambit_1_1backends_1_1mathematica__function/#function-gambitbackendsmathematica-function-operator)**(ARGS &&... args)<br>Operation (execute function and return value)  |
 
 ## Detailed Description
 
@@ -55,4 +55,4 @@ Operation (execute function and return value)
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

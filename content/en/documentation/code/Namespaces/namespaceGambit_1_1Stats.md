@@ -13,18 +13,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[gaussian_loglikelihood](/documentation/code/namespaces/namespacegambit_1_1stats/)**(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)<br>Use a detection to compute a simple chi-square-like log likelihood, for the case when obs is Gaussian distributed.  |
-| double | **[lognormal_loglikelihood](/documentation/code/namespaces/namespacegambit_1_1stats/)**(double theory, double obs, double theoryerr, double obserr, bool profile_systematics) |
-| double | **[lognormal_loglikelihood_relerror](/documentation/code/namespaces/namespacegambit_1_1stats/)**(double theory, double obs, double reltheoryerr, double relobserr, bool profile_systematics) |
-| double | **[gaussian_upper_limit](/documentation/code/namespaces/namespacegambit_1_1stats/)**(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)<br>Use a detection to compute a gaussian log-likelihood for an upper limit.  |
-| double | **[gaussian_lower_limit](/documentation/code/namespaces/namespacegambit_1_1stats/)**(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)<br>Use a detection to compute a gaussian log-likelihood for a lower limit.  |
-| void | **[test_likelihoods](/documentation/code/namespaces/namespacegambit_1_1stats/)**()<br>A simple tester routine for the likelihood functions.  |
+| double | **[gaussian_loglikelihood](/documentation/code/namespaces/namespacegambit_1_1stats/#function-gambitstats-gaussian-loglikelihood)**(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)<br>Use a detection to compute a simple chi-square-like log likelihood, for the case when obs is Gaussian distributed.  |
+| double | **[lognormal_loglikelihood](/documentation/code/namespaces/namespacegambit_1_1stats/#function-gambitstats-lognormal-loglikelihood)**(double theory, double obs, double theoryerr, double obserr, bool profile_systematics) |
+| double | **[lognormal_loglikelihood_relerror](/documentation/code/namespaces/namespacegambit_1_1stats/#function-gambitstats-lognormal-loglikelihood-relerror)**(double theory, double obs, double reltheoryerr, double relobserr, bool profile_systematics) |
+| double | **[gaussian_upper_limit](/documentation/code/namespaces/namespacegambit_1_1stats/#function-gambitstats-gaussian-upper-limit)**(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)<br>Use a detection to compute a gaussian log-likelihood for an upper limit.  |
+| double | **[gaussian_lower_limit](/documentation/code/namespaces/namespacegambit_1_1stats/#function-gambitstats-gaussian-lower-limit)**(double theory, double obs, double theoryerr, double obserr, bool profile_systematics)<br>Use a detection to compute a gaussian log-likelihood for a lower limit.  |
+| void | **[test_likelihoods](/documentation/code/namespaces/namespacegambit_1_1stats/#function-gambitstats-test-likelihoods)**()<br>A simple tester routine for the likelihood functions.  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const double | **[logmin](/documentation/code/namespaces/namespacegambit_1_1stats/)** <br>Minimum finite result returnable from log(double x);.  |
+| const double | **[logmin](/documentation/code/namespaces/namespacegambit_1_1stats/#variable-gambitstats-logmin)** <br>Minimum finite result returnable from log(double x);.  |
 
 
 ## Functions Documentation
@@ -127,4 +127,4 @@ Minimum finite result returnable from log(double x);.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

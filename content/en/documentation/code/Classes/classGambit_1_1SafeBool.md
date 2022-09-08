@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SafeBool](/documentation/code/classes/classgambit_1_1safebool/)**(bool ok) |
-| | **[operator bool](/documentation/code/classes/classgambit_1_1safebool/)**() const |
+| | **[SafeBool](/documentation/code/classes/classgambit_1_1safebool/#function-gambitsafebool-safebool)**(bool ok) |
+| | **[operator bool](/documentation/code/classes/classgambit_1_1safebool/#function-gambitsafebool-operator-bool)**() const |
 
 ## Public Functions Documentation
 
@@ -38,4 +38,4 @@ inline explicit operator bool() const
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

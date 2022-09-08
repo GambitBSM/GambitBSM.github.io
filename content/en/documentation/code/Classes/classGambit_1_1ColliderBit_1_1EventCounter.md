@@ -17,24 +17,24 @@ A simple class for counting events of type HEPUtils::Event.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**() |
-| | **[EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(const std::string name) |
-| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(const std::string name) |
-| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**() |
-| void | **[set_name](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(const std::string name) |
-| std::string | **[name](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**() const |
-| void | **[set_sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(int sum) |
-| int | **[sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**() const |
-| void | **[set_weight_sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(double weight_sum) |
-| double | **[weight_sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**() const |
-| void | **[set_weight_sum_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(double weight_sum_err) |
-| double | **[weight_sum_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**() const |
-| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(double w =1.0, double werr =0.0) |
-| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(const HEPUtils::Event & event) |
-| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(const HEPUtils::Event * event_ptr) |
-| [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[operator+=](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(const HEPUtils::Event & event) |
-| [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[operator+=](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(const [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & rhs) |
-| [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)**(const [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & other) |
+| | **[EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-eventcounter)**() |
+| | **[EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-eventcounter)**(const std::string name) |
+| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-init)**(const std::string name) |
+| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-reset)**() |
+| void | **[set_name](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-set-name)**(const std::string name) |
+| std::string | **[name](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-name)**() const |
+| void | **[set_sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-set-sum)**(int sum) |
+| int | **[sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-sum)**() const |
+| void | **[set_weight_sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-set-weight-sum)**(double weight_sum) |
+| double | **[weight_sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-weight-sum)**() const |
+| void | **[set_weight_sum_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-set-weight-sum-err)**(double weight_sum_err) |
+| double | **[weight_sum_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-weight-sum-err)**() const |
+| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-add-event)**(double w =1.0, double werr =0.0) |
+| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-add-event)**(const HEPUtils::Event & event) |
+| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-add-event)**(const HEPUtils::Event * event_ptr) |
+| [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[operator+=](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-operator)**(const HEPUtils::Event & event) |
+| [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[operator+=](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-operator)**(const [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & rhs) |
+| [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-gambitcolliderbiteventcounter-combine)**(const [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & other) |
 
 ## Public Functions Documentation
 
@@ -191,4 +191,4 @@ inline EventCounter & combine(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

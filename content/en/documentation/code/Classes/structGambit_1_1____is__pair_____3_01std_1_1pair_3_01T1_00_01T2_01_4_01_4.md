@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef T1 | **[first_type](/documentation/code/classes/structgambit_1_1____is__pair_____3_01std_1_1pair_3_01t1_00_01t2_01_4_01_4/)**  |
-| typedef T2 | **[second_type](/documentation/code/classes/structgambit_1_1____is__pair_____3_01std_1_1pair_3_01t1_00_01t2_01_4_01_4/)**  |
+| typedef T1 | **[first_type](/documentation/code/classes/structgambit_1_1____is__pair_____3_01std_1_1pair_3_01t1_00_01t2_01_4_01_4/#typedef-gambit-is-pair-stdpair-t1-t2-first-type)**  |
+| typedef T2 | **[second_type](/documentation/code/classes/structgambit_1_1____is__pair_____3_01std_1_1pair_3_01t1_00_01t2_01_4_01_4/#typedef-gambit-is-pair-stdpair-t1-t2-second-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__pair_____3_01std_1_1pair_3_01t1_00_01t2_01_4_01_4/)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__pair_____3_01std_1_1pair_3_01t1_00_01t2_01_4_01_4/#variable-gambit-is-pair-stdpair-t1-t2-value)**  |
 
 ## Detailed Description
 
@@ -59,4 +59,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

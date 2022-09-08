@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ScalarSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) *const catalog, double gammaH, double vev, double alpha_strong, double vSigma_s)<br>Initialize SingletDM object (branching ratios etc)  |
-| | **[~ScalarSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**() |
-| double | **[Dh2](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**(double s)<br>Helper function (Breit-Wigner)  |
-| double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**(std::string channel, double lambda, double mass, double v)<br>Returns <sigma v> in cm3/s for given channel, velocity and model parameters.  |
-| double | **[sv_WW](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**(double lambda, double mass, double v) |
-| double | **[sv_ZZ](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**(double lambda, double mass, double v) |
-| double | **[sv_ff](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**(double lambda, double mass, double v, double mf, bool is_quark) |
-| double | **[sv_hh](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/)**(double lambda, double mass, double v)<br>Annihilation into hh.  |
+| | **[ScalarSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/#function-gambitdarkbitscalarsingletdm-scalarsingletdm)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) *const catalog, double gammaH, double vev, double alpha_strong, double vSigma_s)<br>Initialize SingletDM object (branching ratios etc)  |
+| | **[~ScalarSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/#function-gambitdarkbitscalarsingletdm-scalarsingletdm)**() |
+| double | **[Dh2](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/#function-gambitdarkbitscalarsingletdm-dh2)**(double s)<br>Helper function (Breit-Wigner)  |
+| double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/#function-gambitdarkbitscalarsingletdm-sv)**(std::string channel, double lambda, double mass, double v)<br>Returns <sigma v> in cm3/s for given channel, velocity and model parameters.  |
+| double | **[sv_WW](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/#function-gambitdarkbitscalarsingletdm-sv-ww)**(double lambda, double mass, double v) |
+| double | **[sv_ZZ](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/#function-gambitdarkbitscalarsingletdm-sv-zz)**(double lambda, double mass, double v) |
+| double | **[sv_ff](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/#function-gambitdarkbitscalarsingletdm-sv-ff)**(double lambda, double mass, double v, double mf, bool is_quark) |
+| double | **[sv_hh](/documentation/code/classes/classgambit_1_1darkbit_1_1scalarsingletdm/#function-gambitdarkbitscalarsingletdm-sv-hh)**(double lambda, double mass, double v)<br>Annihilation into hh.  |
 
 ## Public Functions Documentation
 
@@ -122,4 +122,4 @@ Annihilation into hh.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

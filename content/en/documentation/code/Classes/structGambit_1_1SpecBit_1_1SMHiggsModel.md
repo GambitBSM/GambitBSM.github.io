@@ -18,17 +18,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[get_HiggsPoleMass](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/)**() const |
-| double | **[get_HiggsVEV](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/)**() const |
-| double | **[get_HiggsPoleMass_1srd_high](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/)**() const |
-| double | **[get_HiggsPoleMass_1srd_low](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/)**() const |
+| double | **[get_HiggsPoleMass](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/#function-gambitspecbitsmhiggsmodel-get-higgspolemass)**() const |
+| double | **[get_HiggsVEV](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/#function-gambitspecbitsmhiggsmodel-get-higgsvev)**() const |
+| double | **[get_HiggsPoleMass_1srd_high](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/#function-gambitspecbitsmhiggsmodel-get-higgspolemass-1srd-high)**() const |
+| double | **[get_HiggsPoleMass_1srd_low](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/#function-gambitspecbitsmhiggsmodel-get-higgspolemass-1srd-low)**() const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[HiggsPoleMass](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/)**  |
-| double | **[HiggsVEV](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/)**  |
+| double | **[HiggsPoleMass](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/#variable-gambitspecbitsmhiggsmodel-higgspolemass)**  |
+| double | **[HiggsVEV](/documentation/code/classes/structgambit_1_1specbit_1_1smhiggsmodel/#variable-gambitspecbitsmhiggsmodel-higgsvev)**  |
 
 ## Detailed Description
 
@@ -87,4 +87,4 @@ double HiggsVEV;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

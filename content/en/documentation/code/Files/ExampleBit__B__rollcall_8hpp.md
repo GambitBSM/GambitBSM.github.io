@@ -13,45 +13,45 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[START_FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**(double ) |
-| | **[START_FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**(int ) |
-| double | **[DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/)**(function_pointer , fptr ) |
-| double int | **[BACKEND_REQ](/documentation/code/files/examplebit__b__rollcall_8hpp/)**(refex , (common_be) , double , (double &) ) |
-| double int double double | **[BACKEND_REQ](/documentation/code/files/examplebit__b__rollcall_8hpp/)**(varex , (common_be) , double , (int, etc) ) |
-| double int double double etc | **[BACKEND_REQ](/documentation/code/files/examplebit__b__rollcall_8hpp/)**(runMe , () , void , (double(*)(int &), int &) ) |
-| double int double double etc | **[ACTIVATE_BACKEND_REQ_FOR_MODELS](/documentation/code/files/examplebit__b__rollcall_8hpp/)**((CMSSM, demo_B, nonexistent_model) , (model_dependent_reqs) ) |
-| double int double double etc lib123 | **[BACKEND_OPTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**((LibFirst, 1.1) , (not_libfirst10) ) |
+| | **[START_FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#function-examplebit-b-rollcall-hpp-start-function)**(double ) |
+| | **[START_FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#function-examplebit-b-rollcall-hpp-start-function)**(int ) |
+| double | **[DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/#function-examplebit-b-rollcall-hpp-dependency)**(function_pointer , fptr ) |
+| double int | **[BACKEND_REQ](/documentation/code/files/examplebit__b__rollcall_8hpp/#function-examplebit-b-rollcall-hpp-backend-req)**(refex , (common_be) , double , (double &) ) |
+| double int double double | **[BACKEND_REQ](/documentation/code/files/examplebit__b__rollcall_8hpp/#function-examplebit-b-rollcall-hpp-backend-req)**(varex , (common_be) , double , (int, etc) ) |
+| double int double double etc | **[BACKEND_REQ](/documentation/code/files/examplebit__b__rollcall_8hpp/#function-examplebit-b-rollcall-hpp-backend-req)**(runMe , () , void , (double(*)(int &), int &) ) |
+| double int double double etc | **[ACTIVATE_BACKEND_REQ_FOR_MODELS](/documentation/code/files/examplebit__b__rollcall_8hpp/#function-examplebit-b-rollcall-hpp-activate-backend-req-for-models)**((CMSSM, demo_B, nonexistent_model) , (model_dependent_reqs) ) |
+| double int double double etc lib123 | **[BACKEND_OPTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#function-examplebit-b-rollcall-hpp-backend-option)**((LibFirst, 1.1) , (not_libfirst10) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[lib123](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-| double | **[double](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-| double int | **[common_be](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-| double int | **[void](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-| double int double double | **[int](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-| double int double double etc | **[not_libfirst10](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
+| double | **[lib123](/documentation/code/files/examplebit__b__rollcall_8hpp/#variable-examplebit-b-rollcall-hpp-lib123)**  |
+| double | **[double](/documentation/code/files/examplebit__b__rollcall_8hpp/#variable-examplebit-b-rollcall-hpp-double)**  |
+| double int | **[common_be](/documentation/code/files/examplebit__b__rollcall_8hpp/#variable-examplebit-b-rollcall-hpp-common-be)**  |
+| double int | **[void](/documentation/code/files/examplebit__b__rollcall_8hpp/#variable-examplebit-b-rollcall-hpp-void)**  |
+| double int double double | **[int](/documentation/code/files/examplebit__b__rollcall_8hpp/#variable-examplebit-b-rollcall-hpp-int)**  |
+| double int double double etc | **[not_libfirst10](/documentation/code/files/examplebit__b__rollcall_8hpp/#variable-examplebit-b-rollcall-hpp-not-libfirst10)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/)**  |
+|  | **[MODULE](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-module)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-function)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-function)**  |
+|  | **[CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-conditional-dependency)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-function)**  |
 
 ## Detailed Description
 
@@ -77,7 +77,7 @@ Compile-time registration of available observables and likelihoods, as well as t
 
 Add to this if you want to add an observable or likelihood to this module.
 
-Don't put typedefs or other type definitions in this file; see [Elements/include/gambit/Elements/types_rollcall.hpp](/documentation/code/files/types__rollcall_8hpp/) for further instructions on how to add new types.
+Don't put typedefs or other type definitions in this file; see [Elements/include/gambit/Elements/types_rollcall.hpp](/documentation/code/files/types__rollcall_8hpp/#file-elements-types-rollcall-hpp) for further instructions on how to add new types.
 
 
 
@@ -574,4 +574,4 @@ QUICK_FUNCTION(ExampleBit_B, Example_lnL_B, NEW_CAPABILITY, example_lnL, double,
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

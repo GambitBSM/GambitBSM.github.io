@@ -17,8 +17,8 @@ Structure for passing likelihood and printer data through Diver to the objective
 
 |                | Name           |
 | -------------- | -------------- |
-| [Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[likelihood_function](/documentation/code/classes/structgambit_1_1diver__1__0__0_1_1diverscandata/)**  |
-| [Scanner::printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/) * | **[printer](/documentation/code/classes/structgambit_1_1diver__1__0__0_1_1diverscandata/)**  |
+| [Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[likelihood_function](/documentation/code/classes/structgambit_1_1diver__1__0__0_1_1diverscandata/#variable-gambitdiver-1-0-0diverscandata-likelihood-function)**  |
+| [Scanner::printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-gambitscanner-printer-interface) * | **[printer](/documentation/code/classes/structgambit_1_1diver__1__0__0_1_1diverscandata/#variable-gambitdiver-1-0-0diverscandata-printer)**  |
 
 ## Public Attributes Documentation
 
@@ -38,4 +38,4 @@ Scanner::printer_interface * printer;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

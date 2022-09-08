@@ -15,11 +15,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 7, 12 > | **[ftp](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 7, 12 > | **[ftn](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/)**  |
-| Fdouble | **[delu](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/)**  |
-| Fdouble | **[deld](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/)**  |
-| Fdouble | **[dels](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 7, 12 > | **[ftp](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-gambitds-ddcomlegacy-ftp)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 7, 12 > | **[ftn](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-gambitds-ddcomlegacy-ftn)**  |
+| Fdouble | **[delu](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-gambitds-ddcomlegacy-delu)**  |
+| Fdouble | **[deld](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-gambitds-ddcomlegacy-deld)**  |
+| Fdouble | **[dels](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/#variable-gambitds-ddcomlegacy-dels)**  |
 
 ## Public Attributes Documentation
 
@@ -60,4 +60,4 @@ Fdouble dels;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

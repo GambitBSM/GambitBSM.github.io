@@ -19,38 +19,38 @@ Inherited by [Gambit::ColliderBit::MC_xsec_container](/documentation/code/classe
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**()<br>Constructor.  |
-| virtual | **[~xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**() |
-| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**()<br>Reset this instance for reuse.  |
-| double | **[operator()](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**() const<br>Return the full cross-section (in fb).  |
-| double | **[xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**() const |
-| double | **[xsec_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**() const<br>Return the cross-section error (in fb).  |
-| double | **[xsec_relerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**() const<br>Return the cross-section relative error.  |
-| void | **[set_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**(double xs, double xserr)<br>Set the cross-section and its error (in fb).  |
-| void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**(double other_xsec, double other_xsecerr)<br>Average cross-sections and combine errors.  |
-| void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**(const [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) & other) |
-| void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**(double other_xsec, double other_xsecerr)<br>Sum cross-sections and add errors in quadrature.  |
-| void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**(const [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) & other) |
-| std::map< std::string, double > | **[get_content_as_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**() const<br>Get content as map <string,double> map (for easy printing).  |
-| void | **[set_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**(std::string info_string_in)<br>Set the info string.  |
-| std::string | **[info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**() const<br>Get the info string.  |
-| void | **[set_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**(int trust_level_in)<br>Set the trust level.  |
-| int | **[trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**() const<br>Get the trust level.  |
+| | **[xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec-container)**()<br>Constructor.  |
+| virtual | **[~xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec-container)**() |
+| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-reset)**()<br>Reset this instance for reuse.  |
+| double | **[operator()](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-operator)**() const<br>Return the full cross-section (in fb).  |
+| double | **[xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec)**() const |
+| double | **[xsec_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec-err)**() const<br>Return the cross-section error (in fb).  |
+| double | **[xsec_relerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec-relerr)**() const<br>Return the cross-section relative error.  |
+| void | **[set_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-set-xsec)**(double xs, double xserr)<br>Set the cross-section and its error (in fb).  |
+| void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-average-xsec)**(double other_xsec, double other_xsecerr)<br>Average cross-sections and combine errors.  |
+| void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-average-xsec)**(const [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) & other) |
+| void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-sum-xsecs)**(double other_xsec, double other_xsecerr)<br>Sum cross-sections and add errors in quadrature.  |
+| void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-sum-xsecs)**(const [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) & other) |
+| std::map< std::string, double > | **[get_content_as_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-get-content-as-map)**() const<br>Get content as map <string,double> map (for easy printing).  |
+| void | **[set_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-set-info-string)**(std::string info_string_in)<br>Set the info string.  |
+| std::string | **[info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-info-string)**() const<br>Get the info string.  |
+| void | **[set_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-set-trust-level)**(int trust_level_in)<br>Set the trust level.  |
+| int | **[trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-trust-level)**() const<br>Get the trust level.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const std::string | **[unit](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)** <br>String Let's make it clear that we work with fb as unit.  |
+| const std::string | **[unit](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-unit)** <br>String Let's make it clear that we work with fb as unit.  |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**  |
-| double | **[_xsecerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**  |
-| std::string | **[_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**  |
-| int | **[_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**  |
+| double | **[_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-xsec)**  |
+| double | **[_xsecerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-xsecerr)**  |
+| std::string | **[_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-info-string)**  |
+| int | **[_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-trust-level)**  |
 
 ## Public Functions Documentation
 
@@ -263,4 +263,4 @@ int _trust_level;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

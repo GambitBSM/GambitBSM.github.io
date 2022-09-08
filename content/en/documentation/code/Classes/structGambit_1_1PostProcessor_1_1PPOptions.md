@@ -18,24 +18,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::set< std::string > | **[all_params](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::set< std::string > | **[data_labels](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::set< std::string > | **[data_labels_copy](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::vector< std::string > | **[add_to_logl](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::vector< std::string > | **[subtract_from_logl](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::map< std::string, std::string > | **[renaming_scheme](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::map< std::string, double > | **[cut_less_than](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::map< std::string, double > | **[cut_greater_than](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| bool | **[discard_points_outside_cuts](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::size_t | **[update_interval](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| bool | **[discard_old_logl](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::string | **[logl_purpose_name](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::string | **[reweighted_loglike_name](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::string | **[root](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| unsigned int | **[numtasks](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| unsigned int | **[rank](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| std::size_t | **[chunksize](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
-| bool | **[verbose](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/)**  |
+| std::set< std::string > | **[all_params](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-all-params)**  |
+| std::set< std::string > | **[data_labels](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-data-labels)**  |
+| std::set< std::string > | **[data_labels_copy](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-data-labels-copy)**  |
+| std::vector< std::string > | **[add_to_logl](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-add-to-logl)**  |
+| std::vector< std::string > | **[subtract_from_logl](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-subtract-from-logl)**  |
+| std::map< std::string, std::string > | **[renaming_scheme](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-renaming-scheme)**  |
+| std::map< std::string, double > | **[cut_less_than](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-cut-less-than)**  |
+| std::map< std::string, double > | **[cut_greater_than](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-cut-greater-than)**  |
+| bool | **[discard_points_outside_cuts](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-discard-points-outside-cuts)**  |
+| std::size_t | **[update_interval](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-update-interval)**  |
+| bool | **[discard_old_logl](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-discard-old-logl)**  |
+| std::string | **[logl_purpose_name](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-logl-purpose-name)**  |
+| std::string | **[reweighted_loglike_name](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-reweighted-loglike-name)**  |
+| std::string | **[root](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-root)**  |
+| unsigned int | **[numtasks](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-numtasks)**  |
+| unsigned int | **[rank](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-rank)**  |
+| std::size_t | **[chunksize](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-chunksize)**  |
+| bool | **[verbose](/documentation/code/classes/structgambit_1_1postprocessor_1_1ppoptions/#variable-gambitpostprocessorppoptions-verbose)**  |
 
 ## Detailed Description
 
@@ -176,4 +176,4 @@ bool verbose;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

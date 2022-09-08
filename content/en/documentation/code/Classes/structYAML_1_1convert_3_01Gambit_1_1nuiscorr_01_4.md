@@ -14,8 +14,8 @@ description: "[YAML](/documentation/code/namespaces/namespaceyaml/) conversion s
 
 |                | Name           |
 | -------------- | -------------- |
-| Node | **[encode](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/)**(const [Gambit::nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) & rhs) |
-| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/)**(const Node & node, [Gambit::nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) & rhs) |
+| Node | **[encode](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/#function-yamlconvert-gambitnuiscorr-encode)**(const [Gambit::nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) & rhs) |
+| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/#function-yamlconvert-gambitnuiscorr-decode)**(const Node & node, [Gambit::nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) & rhs) |
 
 ## Public Functions Documentation
 
@@ -40,4 +40,4 @@ static inline bool decode(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

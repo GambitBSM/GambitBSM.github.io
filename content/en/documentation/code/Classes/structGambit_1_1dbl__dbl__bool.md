@@ -15,18 +15,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/)**()<br>Default constructor.  |
-| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/)**(double firstval, double secondval, bool flagval)<br>Three-value constructor.  |
-| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/)**(const [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & in)<br>Copy constructor.  |
-| [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & | **[operator=](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/)**(const [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & in)<br>Copy assignment operator.  |
+| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-gambitdbl-dbl-bool-dbl-dbl-bool)**()<br>Default constructor.  |
+| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-gambitdbl-dbl-bool-dbl-dbl-bool)**(double firstval, double secondval, bool flagval)<br>Three-value constructor.  |
+| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-gambitdbl-dbl-bool-dbl-dbl-bool)**(const [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & in)<br>Copy constructor.  |
+| [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & | **[operator=](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-gambitdbl-dbl-bool-operator)**(const [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & in)<br>Copy assignment operator.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[first](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/)**  |
-| double | **[second](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/)**  |
-| bool | **[flag](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/)**  |
+| double | **[first](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-gambitdbl-dbl-bool-first)**  |
+| double | **[second](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-gambitdbl-dbl-bool-second)**  |
+| bool | **[flag](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-gambitdbl-dbl-bool-flag)**  |
 
 ## Public Functions Documentation
 
@@ -95,4 +95,4 @@ bool flag;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

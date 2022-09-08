@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[src/PrecisionBit.cpp](/documentation/code/files/precisionbit_8cpp/)**  |
+| **[src/PrecisionBit.cpp](/documentation/code/files/precisionbit_8cpp/#file-src-precisionbit-cpp)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

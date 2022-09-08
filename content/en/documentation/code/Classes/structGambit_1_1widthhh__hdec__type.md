@@ -15,22 +15,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[hhbrb](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrl](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrm](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrs](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrc](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrt](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrg](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrga](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrzga](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrw](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrz](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrh](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbra](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbraz](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhbrhw](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
-| Fdouble | **[hhwdth](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/)**  |
+| Fdouble | **[hhbrb](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrb)**  |
+| Fdouble | **[hhbrl](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrl)**  |
+| Fdouble | **[hhbrm](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrm)**  |
+| Fdouble | **[hhbrs](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrs)**  |
+| Fdouble | **[hhbrc](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrc)**  |
+| Fdouble | **[hhbrt](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrt)**  |
+| Fdouble | **[hhbrg](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrg)**  |
+| Fdouble | **[hhbrga](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrga)**  |
+| Fdouble | **[hhbrzga](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrzga)**  |
+| Fdouble | **[hhbrw](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrw)**  |
+| Fdouble | **[hhbrz](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrz)**  |
+| Fdouble | **[hhbrh](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrh)**  |
+| Fdouble | **[hhbra](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbra)**  |
+| Fdouble | **[hhbraz](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbraz)**  |
+| Fdouble | **[hhbrhw](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrhw)**  |
+| Fdouble | **[hhwdth](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhwdth)**  |
 
 ## Public Attributes Documentation
 
@@ -148,4 +148,4 @@ Fdouble hhwdth;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

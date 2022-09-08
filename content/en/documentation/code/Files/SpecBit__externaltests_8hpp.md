@@ -20,10 +20,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[OUTPUT](/documentation/code/files/specbit__externaltests_8hpp/)**  |
-|  | **[TAGerr](/documentation/code/files/specbit__externaltests_8hpp/)**  |
-|  | **[TAGfatal](/documentation/code/files/specbit__externaltests_8hpp/)**  |
-|  | **[TAGeom](/documentation/code/files/specbit__externaltests_8hpp/)**  |
+|  | **[OUTPUT](/documentation/code/files/specbit__externaltests_8hpp/#define-specbit-externaltests-hpp-output)**  |
+|  | **[TAGerr](/documentation/code/files/specbit__externaltests_8hpp/#define-specbit-externaltests-hpp-tagerr)**  |
+|  | **[TAGfatal](/documentation/code/files/specbit__externaltests_8hpp/#define-specbit-externaltests-hpp-tagfatal)**  |
+|  | **[TAGeom](/documentation/code/files/specbit__externaltests_8hpp/#define-specbit-externaltests-hpp-tageom)**  |
 
 ## Detailed Description
 
@@ -1421,4 +1421,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

@@ -13,28 +13,28 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/)**(scan_level ) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/)**(couplings. coeff_structure ==1) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/)**(LocalHaloParameters_ptr->rho0 *fraction !  =rho0_eff) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/)**(LocalHaloParameters_ptr->vrot !  =vrot) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/)**(LocalHaloParameters_ptr->v0 !  =v0) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/)**(LocalHaloParameters_ptr->vesc !  =vesc) |
-| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/)**(halo_changed ) |
+| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-ddcalc-2-2-0-cpp-if)**(scan_level ) |
+| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-ddcalc-2-2-0-cpp-if)**(couplings. coeff_structure ==1) |
+| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-ddcalc-2-2-0-cpp-if)**(LocalHaloParameters_ptr->rho0 *fraction !  =rho0_eff) |
+| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-ddcalc-2-2-0-cpp-if)**(LocalHaloParameters_ptr->vrot !  =vrot) |
+| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-ddcalc-2-2-0-cpp-if)**(LocalHaloParameters_ptr->v0 !  =v0) |
+| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-ddcalc-2-2-0-cpp-if)**(LocalHaloParameters_ptr->vesc !  =vesc) |
+| | **[if](/documentation/code/files/ddcalc__2__2__0_8cpp/#function-ddcalc-2-2-0-cpp-if)**(halo_changed ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| int | **[WIMP](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| int | **[Halo](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/) | **[BE_INI_FUNCTION](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| safe_ptr< LocalMaxwellianHalo > | **[LocalHaloParameters_ptr](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| double | **[fraction](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| bool | **[scan_level](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| DD_coupling_container | **[couplings](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| | **[else](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
-| bool | **[halo_changed](/documentation/code/files/ddcalc__2__2__0_8cpp/)**  |
+| | **[BE_NAMESPACE](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-be-namespace)**  |
+| int | **[WIMP](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-wimp)**  |
+| int | **[Halo](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-halo)**  |
+| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-be-ini-function)**  |
+| safe_ptr< LocalMaxwellianHalo > | **[LocalHaloParameters_ptr](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-localhaloparameters-ptr)**  |
+| double | **[fraction](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-fraction)**  |
+| bool | **[scan_level](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-scan-level)**  |
+| DD_coupling_container | **[couplings](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-couplings)**  |
+| | **[else](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-else)**  |
+| bool | **[halo_changed](/documentation/code/files/ddcalc__2__2__0_8cpp/#variable-ddcalc-2-2-0-cpp-halo-changed)**  |
 
 ## Detailed Description
 
@@ -481,4 +481,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:24 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

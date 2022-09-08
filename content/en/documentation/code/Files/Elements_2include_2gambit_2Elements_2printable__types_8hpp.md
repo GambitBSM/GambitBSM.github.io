@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PRINTABLE_TYPES](/documentation/code/files/elements_2include_2gambit_2elements_2printable__types_8hpp/)**  |
-|  | **[RETRIEVABLE_TYPES](/documentation/code/files/elements_2include_2gambit_2elements_2printable__types_8hpp/)**  |
+|  | **[PRINTABLE_TYPES](/documentation/code/files/elements_2include_2gambit_2elements_2printable__types_8hpp/#define-elements-include-gambit-elements-printable-types-hpp-printable-types)**  |
+|  | **[RETRIEVABLE_TYPES](/documentation/code/files/elements_2include_2gambit_2elements_2printable__types_8hpp/#define-elements-include-gambit-elements-printable-types-hpp-retrievable-types)**  |
 
 ## Detailed Description
 
@@ -116,4 +116,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

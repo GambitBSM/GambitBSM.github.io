@@ -15,30 +15,30 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutup](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutdow](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutch](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutst](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutbot](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneuttop](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutel](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutmu](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneuttau](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutnue](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutnumu](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutnutau](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchubd](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchcbs](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchtbb](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchelne](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchmunmu](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchtauntau](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brglup](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brgldo](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brglch](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brglst](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brgltop](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brglbot](/documentation/code/classes/structgambit_1_1sd__neut3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutup](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutup)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutdow](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutdow)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutch](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutch)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutst](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutst)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutbot](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutbot)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneuttop](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneuttop)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutel](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutel)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutmu](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutmu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneuttau](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneuttau)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutnue](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutnue)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutnumu](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutnumu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[brneutnutau](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brneutnutau)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchubd](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brchubd)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchcbs](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brchcbs)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchtbb](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brchtbb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchelne](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brchelne)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchmunmu](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brchmunmu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 2 > | **[brchtauntau](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brchtauntau)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brglup](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brglup)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brgldo](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brgldo)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brglch](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brglch)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brglst](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brglst)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brgltop](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brgltop)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brglbot](/documentation/code/classes/structgambit_1_1sd__neut3body__type/#variable-gambitsd-neut3body-type-brglbot)**  |
 
 ## Public Attributes Documentation
 
@@ -212,4 +212,4 @@ Farray< Fdouble, 1, 4 > brglbot;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

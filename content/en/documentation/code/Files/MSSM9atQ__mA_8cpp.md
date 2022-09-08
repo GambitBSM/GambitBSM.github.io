@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/mssm9atq__ma_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/mssm9atq__ma_8cpp/#define-mssm9atq-ma-cpp-model)**  |
 
 ## Detailed Description
 
@@ -120,4 +120,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

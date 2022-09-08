@@ -19,34 +19,34 @@ Inherited by [MultiNormDev](/documentation/code/classes/classmultinormdev/), [Mu
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[RandomBasis](/documentation/code/classes/classrandombasis/)**(int nin, unsigned long long iin) |
-| void | **[ChangeDim](/documentation/code/classes/classrandombasis/)**(const int nin) |
-| void | **[RandRot](/documentation/code/classes/classrandombasis/)**() |
-| double | **[RanMult](/documentation/code/classes/classrandombasis/)**(double ** cin) |
-| void | **[RanMult](/documentation/code/classes/classrandombasis/)**(const double in, double * out) |
-| void | **[RanMult](/documentation/code/classes/classrandombasis/)**(double * in, const double w, double * out) |
-| double | **[Mag](/documentation/code/classes/classrandombasis/)**(double * a, double * a0) |
-| void | **[Adjust](/documentation/code/classes/classrandombasis/)**(double * a, const double lim, const int iin) |
-| virtual void | **[operator++](/documentation/code/classes/classrandombasis/)**(int ) |
-| virtual | **[~RandomBasis](/documentation/code/classes/classrandombasis/)**() |
-| | **[RandomBasis](/documentation/code/classes/classrandombasis/)**(int nin, unsigned long long iin) |
-| void | **[ChangeDim](/documentation/code/classes/classrandombasis/)**(const int nin) |
-| void | **[RandRot](/documentation/code/classes/classrandombasis/)**() |
-| double | **[RanMult](/documentation/code/classes/classrandombasis/)**(double ** cin) |
-| void | **[RanMult](/documentation/code/classes/classrandombasis/)**(const double in, double * out) |
-| void | **[RanMult](/documentation/code/classes/classrandombasis/)**(double * in, const double w, double * out) |
-| double | **[Mag](/documentation/code/classes/classrandombasis/)**(double * a, double * a0) |
-| void | **[Adjust](/documentation/code/classes/classrandombasis/)**(double * a, const double lim, const int iin) |
-| virtual void | **[operator++](/documentation/code/classes/classrandombasis/)**(int ) |
-| virtual | **[~RandomBasis](/documentation/code/classes/classrandombasis/)**() |
+| | **[RandomBasis](/documentation/code/classes/classrandombasis/#function-randombasis-randombasis)**(int nin, unsigned long long iin) |
+| void | **[ChangeDim](/documentation/code/classes/classrandombasis/#function-randombasis-changedim)**(const int nin) |
+| void | **[RandRot](/documentation/code/classes/classrandombasis/#function-randombasis-randrot)**() |
+| double | **[RanMult](/documentation/code/classes/classrandombasis/#function-randombasis-ranmult)**(double ** cin) |
+| void | **[RanMult](/documentation/code/classes/classrandombasis/#function-randombasis-ranmult)**(const double in, double * out) |
+| void | **[RanMult](/documentation/code/classes/classrandombasis/#function-randombasis-ranmult)**(double * in, const double w, double * out) |
+| double | **[Mag](/documentation/code/classes/classrandombasis/#function-randombasis-mag)**(double * a, double * a0) |
+| void | **[Adjust](/documentation/code/classes/classrandombasis/#function-randombasis-adjust)**(double * a, const double lim, const int iin) |
+| virtual void | **[operator++](/documentation/code/classes/classrandombasis/#function-randombasis-operator)**(int ) |
+| virtual | **[~RandomBasis](/documentation/code/classes/classrandombasis/#function-randombasis-randombasis)**() |
+| | **[RandomBasis](/documentation/code/classes/classrandombasis/#function-randombasis-randombasis)**(int nin, unsigned long long iin) |
+| void | **[ChangeDim](/documentation/code/classes/classrandombasis/#function-randombasis-changedim)**(const int nin) |
+| void | **[RandRot](/documentation/code/classes/classrandombasis/#function-randombasis-randrot)**() |
+| double | **[RanMult](/documentation/code/classes/classrandombasis/#function-randombasis-ranmult)**(double ** cin) |
+| void | **[RanMult](/documentation/code/classes/classrandombasis/#function-randombasis-ranmult)**(const double in, double * out) |
+| void | **[RanMult](/documentation/code/classes/classrandombasis/#function-randombasis-ranmult)**(double * in, const double w, double * out) |
+| double | **[Mag](/documentation/code/classes/classrandombasis/#function-randombasis-mag)**(double * a, double * a0) |
+| void | **[Adjust](/documentation/code/classes/classrandombasis/#function-randombasis-adjust)**(double * a, const double lim, const int iin) |
+| virtual void | **[operator++](/documentation/code/classes/classrandombasis/#function-randombasis-operator)**(int ) |
+| virtual | **[~RandomBasis](/documentation/code/classes/classrandombasis/#function-randombasis-randombasis)**() |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[num](/documentation/code/classes/classrandombasis/)**  |
-| double ** | **[currentVec](/documentation/code/classes/classrandombasis/)**  |
-| double ** | **[endVec](/documentation/code/classes/classrandombasis/)**  |
+| int | **[num](/documentation/code/classes/classrandombasis/#variable-randombasis-num)**  |
+| double ** | **[currentVec](/documentation/code/classes/classrandombasis/#variable-randombasis-currentvec)**  |
+| double ** | **[endVec](/documentation/code/classes/classrandombasis/#variable-randombasis-endvec)**  |
 
 ## Additional inherited members
 
@@ -54,32 +54,32 @@ Inherited by [MultiNormDev](/documentation/code/classes/classmultinormdev/), [Mu
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs-basicdevs)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-basicdevs-dev)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-basicdevs-expdev)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs-basicdevs)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-basicdevs-dev)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-basicdevs-expdev)**() |
 
 **Public Functions inherited from [BasicDevs](/documentation/code/classes/classbasicdevs/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs-basicdevs)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-basicdevs-dev)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-basicdevs-expdev)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs-basicdevs)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-basicdevs-dev)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-basicdevs-expdev)**() |
 
 **Public Functions inherited from [Ran](/documentation/code/classes/classran/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/)**() |
-| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/)**() |
+| | **[Ran](/documentation/code/classes/classran/#function-ran-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-ran-doub)**() |
+| | **[Ran](/documentation/code/classes/classran/#function-ran-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-ran-doub)**() |
 
 
 ## Public Functions Documentation
@@ -170,7 +170,7 @@ inline virtual void operator++(
 ```
 
 
-**Reimplemented by**: [TransformRandomBasis::operator++](/documentation/code/classes/classtransformrandombasis/), [TransformRandomBasis::operator++](/documentation/code/classes/classtransformrandombasis/)
+**Reimplemented by**: [TransformRandomBasis::operator++](/documentation/code/classes/classtransformrandombasis/#function-transformrandombasis-operator), [TransformRandomBasis::operator++](/documentation/code/classes/classtransformrandombasis/#function-transformrandombasis-operator)
 
 
 ### function ~RandomBasis
@@ -266,7 +266,7 @@ inline virtual void operator++(
 ```
 
 
-**Reimplemented by**: [TransformRandomBasis::operator++](/documentation/code/classes/classtransformrandombasis/), [TransformRandomBasis::operator++](/documentation/code/classes/classtransformrandombasis/)
+**Reimplemented by**: [TransformRandomBasis::operator++](/documentation/code/classes/classtransformrandombasis/#function-transformrandombasis-operator), [TransformRandomBasis::operator++](/documentation/code/classes/classtransformrandombasis/#function-transformrandombasis-operator)
 
 
 ### function ~RandomBasis
@@ -301,4 +301,4 @@ double ** endVec;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

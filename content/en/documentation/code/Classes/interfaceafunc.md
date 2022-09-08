@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double precision function | **[func](/documentation/code/classes/interfaceafunc/)**(y y) |
+| double precision function | **[func](/documentation/code/classes/interfaceafunc/#function-afunc-func)**(y y) |
 
 ## Public Functions Documentation
 
@@ -30,4 +30,4 @@ double precision function func(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

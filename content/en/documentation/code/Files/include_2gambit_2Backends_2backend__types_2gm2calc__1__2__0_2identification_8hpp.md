@@ -13,12 +13,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/)**  |
-|  | **[BACKENDLANG](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/)**  |
-|  | **[VERSION](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/)**  |
-|  | **[REFERENCE](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/)**  |
-|  | **[DO_CLASSLOADING](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/)**  |
+|  | **[BACKENDNAME](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/#define-include-gambit-backends-backend-types-gm2calc-1-2-0-identification-hpp-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/#define-include-gambit-backends-backend-types-gm2calc-1-2-0-identification-hpp-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/#define-include-gambit-backends-backend-types-gm2calc-1-2-0-identification-hpp-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/#define-include-gambit-backends-backend-types-gm2calc-1-2-0-identification-hpp-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/#define-include-gambit-backends-backend-types-gm2calc-1-2-0-identification-hpp-reference)**  |
+|  | **[DO_CLASSLOADING](/documentation/code/files/include_2gambit_2backends_2backend__types_2gm2calc__1__2__0_2identification_8hpp/#define-include-gambit-backends-backend-types-gm2calc-1-2-0-identification-hpp-do-classloading)**  |
 
 
 
@@ -87,4 +87,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:00 +0000

@@ -20,13 +20,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/getpy8collider_8hpp/)**  |
-|  | **[GET_SPECTRUM_AND_DECAYS_FOR_PYTHIA_SUSY](/documentation/code/files/getpy8collider_8hpp/)**(NAME, SPECTRUM)  |
-|  | **[GET_SPECTRUM_AND_DECAYS_FOR_PYTHIA_NONSUSY](/documentation/code/files/getpy8collider_8hpp/)**(NAME, SPECTRUM)  |
-|  | **[HEPMC_TYPE](/documentation/code/files/getpy8collider_8hpp/)**(PYTHIA_NS) <br>Work out last template arg of Py8Collider depending on whether we are using HepMC.  |
-|  | **[GET_SPECIFIC_PYTHIA](/documentation/code/files/getpy8collider_8hpp/)**(NAME, PYTHIA_NS, MODEL_EXTENSION) <br>Retrieve a specific Pythia hard-scattering Monte Carlo simulation.  |
-|  | **[GET_SPECIFIC_PYTHIA_SLHA](/documentation/code/files/getpy8collider_8hpp/)**(NAME, PYTHIA_NS, MODEL_EXTENSION)  |
-|  | **[GET_PYTHIA_AS_BASE_COLLIDER](/documentation/code/files/getpy8collider_8hpp/)**(NAME) <br>Get a specific Pythia hard-scattering sim as a generator-independent pointer-to-BaseCollider.  |
+|  | **[DEBUG_PREFIX](/documentation/code/files/getpy8collider_8hpp/#define-getpy8collider-hpp-debug-prefix)**  |
+|  | **[GET_SPECTRUM_AND_DECAYS_FOR_PYTHIA_SUSY](/documentation/code/files/getpy8collider_8hpp/#define-getpy8collider-hpp-get-spectrum-and-decays-for-pythia-susy)**(NAME, SPECTRUM)  |
+|  | **[GET_SPECTRUM_AND_DECAYS_FOR_PYTHIA_NONSUSY](/documentation/code/files/getpy8collider_8hpp/#define-getpy8collider-hpp-get-spectrum-and-decays-for-pythia-nonsusy)**(NAME, SPECTRUM)  |
+|  | **[HEPMC_TYPE](/documentation/code/files/getpy8collider_8hpp/#define-getpy8collider-hpp-hepmc-type)**(PYTHIA_NS) <br>Work out last template arg of Py8Collider depending on whether we are using HepMC.  |
+|  | **[GET_SPECIFIC_PYTHIA](/documentation/code/files/getpy8collider_8hpp/#define-getpy8collider-hpp-get-specific-pythia)**(NAME, PYTHIA_NS, MODEL_EXTENSION) <br>Retrieve a specific Pythia hard-scattering Monte Carlo simulation.  |
+|  | **[GET_SPECIFIC_PYTHIA_SLHA](/documentation/code/files/getpy8collider_8hpp/#define-getpy8collider-hpp-get-specific-pythia-slha)**(NAME, PYTHIA_NS, MODEL_EXTENSION)  |
+|  | **[GET_PYTHIA_AS_BASE_COLLIDER](/documentation/code/files/getpy8collider_8hpp/#define-getpy8collider-hpp-get-pythia-as-base-collider)**(NAME) <br>Get a specific Pythia hard-scattering sim as a generator-independent pointer-to-BaseCollider.  |
 
 ## Detailed Description
 
@@ -583,4 +583,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:22 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

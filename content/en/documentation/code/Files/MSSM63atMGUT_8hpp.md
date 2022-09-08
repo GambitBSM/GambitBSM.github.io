@@ -19,41 +19,41 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[DEFINEPARS](/documentation/code/files/mssm63atmgut_8hpp/)**(TanBeta , SignMu , mHu2 , mHd2 , M1 , M2 , M3 )<br>Can translate this model into MSSM63atQ (where Q will then be set to MGUT)  |
-| START_MODEL mq2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmgut_8hpp/)**(ml2_11 , ml2_12 , ml2_13 , ml2_22 , ml2_23 , ml2_33 ) |
-| START_MODEL mq2_33 md2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmgut_8hpp/)**(mu2_11 , mu2_12 , mu2_13 , mu2_22 , mu2_23 , mu2_33 ) |
-| START_MODEL mq2_33 md2_33 me2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmgut_8hpp/)**(Ae_11 , Ae_12 , Ae_13 , Ae_21 , Ae_22 , Ae_23 , Ae_31 , Ae_32 , Ae_33 ) |
+| START_MODEL | **[DEFINEPARS](/documentation/code/files/mssm63atmgut_8hpp/#function-mssm63atmgut-hpp-definepars)**(TanBeta , SignMu , mHu2 , mHd2 , M1 , M2 , M3 )<br>Can translate this model into MSSM63atQ (where Q will then be set to MGUT)  |
+| START_MODEL mq2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmgut_8hpp/#function-mssm63atmgut-hpp-definepars)**(ml2_11 , ml2_12 , ml2_13 , ml2_22 , ml2_23 , ml2_33 ) |
+| START_MODEL mq2_33 md2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmgut_8hpp/#function-mssm63atmgut-hpp-definepars)**(mu2_11 , mu2_12 , mu2_13 , mu2_22 , mu2_23 , mu2_33 ) |
+| START_MODEL mq2_33 md2_33 me2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmgut_8hpp/#function-mssm63atmgut-hpp-definepars)**(Ae_11 , Ae_12 , Ae_13 , Ae_21 , Ae_22 , Ae_23 , Ae_31 , Ae_32 , Ae_33 ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[mq2_12](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL | **[mq2_13](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL | **[mq2_22](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL | **[mq2_23](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 | **[md2_12](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 | **[md2_13](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 | **[md2_22](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 | **[md2_23](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 | **[me2_12](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 | **[me2_13](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 | **[me2_22](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 | **[me2_23](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_12](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_13](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_21](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_22](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_23](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_31](/documentation/code/files/mssm63atmgut_8hpp/)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_32](/documentation/code/files/mssm63atmgut_8hpp/)**  |
+| START_MODEL | **[mq2_12](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-mq2-12)**  |
+| START_MODEL | **[mq2_13](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-mq2-13)**  |
+| START_MODEL | **[mq2_22](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-mq2-22)**  |
+| START_MODEL | **[mq2_23](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-mq2-23)**  |
+| START_MODEL mq2_33 | **[md2_12](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-md2-12)**  |
+| START_MODEL mq2_33 | **[md2_13](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-md2-13)**  |
+| START_MODEL mq2_33 | **[md2_22](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-md2-22)**  |
+| START_MODEL mq2_33 | **[md2_23](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-md2-23)**  |
+| START_MODEL mq2_33 md2_33 | **[me2_12](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-me2-12)**  |
+| START_MODEL mq2_33 md2_33 | **[me2_13](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-me2-13)**  |
+| START_MODEL mq2_33 md2_33 | **[me2_22](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-me2-22)**  |
+| START_MODEL mq2_33 md2_33 | **[me2_23](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-me2-23)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_12](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-ad-12)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_13](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-ad-13)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_21](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-ad-21)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_22](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-ad-22)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_23](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-ad-23)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_31](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-ad-31)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_32](/documentation/code/files/mssm63atmgut_8hpp/#variable-mssm63atmgut-hpp-ad-32)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/mssm63atmgut_8hpp/)** <br>FlexibleSUSY compatible general (63 parameters plus sign) GUT scale MSSM parameterisation.  |
-|  | **[PARENT](/documentation/code/files/mssm63atmgut_8hpp/)**  |
+|  | **[MODEL](/documentation/code/files/mssm63atmgut_8hpp/#define-mssm63atmgut-hpp-model)** <br>FlexibleSUSY compatible general (63 parameters plus sign) GUT scale MSSM parameterisation.  |
+|  | **[PARENT](/documentation/code/files/mssm63atmgut_8hpp/#define-mssm63atmgut-hpp-parent)**  |
 
 
 ## Functions Documentation
@@ -372,4 +372,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

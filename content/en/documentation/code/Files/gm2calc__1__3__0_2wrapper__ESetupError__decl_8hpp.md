@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| namespace | **[CAT_3](/documentation/code/files/gm2calc__1__3__0_2wrapper__esetuperror__decl_8hpp/)**(BACKENDNAME , _ , SAFE_VERSION ) |
+| namespace | **[CAT_3](/documentation/code/files/gm2calc__1__3__0_2wrapper__esetuperror__decl_8hpp/#function-gm2calc-1-3-0-wrapper-esetuperror-decl-hpp-cat-3)**(BACKENDNAME , _ , SAFE_VERSION ) |
 
 
 ## Functions Documentation
@@ -99,4 +99,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:00 +0000

@@ -14,8 +14,8 @@ Helper class for drawing the model hierarchy graph (labels)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[labelWriter](/documentation/code/classes/classgambit_1_1modelhierarchy_1_1labelwriter/)**(const ModelGraphType * modelGraph)<br>Constructor.  |
-| void | **[operator()](/documentation/code/classes/classgambit_1_1modelhierarchy_1_1labelwriter/)**(std::ostream & out, const ModelVertexID & v) const |
+| | **[labelWriter](/documentation/code/classes/classgambit_1_1modelhierarchy_1_1labelwriter/#function-gambitmodelhierarchylabelwriter-labelwriter)**(const ModelGraphType * modelGraph)<br>Constructor.  |
+| void | **[operator()](/documentation/code/classes/classgambit_1_1modelhierarchy_1_1labelwriter/#function-gambitmodelhierarchylabelwriter-operator)**(std::ostream & out, const ModelVertexID & v) const |
 
 ## Public Functions Documentation
 
@@ -44,4 +44,4 @@ void operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

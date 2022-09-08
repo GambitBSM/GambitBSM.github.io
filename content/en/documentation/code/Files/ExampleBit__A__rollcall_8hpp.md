@@ -13,50 +13,50 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[START_FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**(double ) |
-| | **[START_FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**(int ) |
-| double | **[DEPENDENCY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**(eventAccumulation , int ) |
+| | **[START_FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#function-examplebit-a-rollcall-hpp-start-function)**(double ) |
+| | **[START_FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#function-examplebit-a-rollcall-hpp-start-function)**(int ) |
+| double | **[DEPENDENCY](/documentation/code/files/examplebit__a__rollcall_8hpp/#function-examplebit-a-rollcall-hpp-dependency)**(eventAccumulation , int ) |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/)**  |
+|  | **[MODULE](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-module)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-conditional-dependency)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-examplebit-a-rollcall-hpp-function)**  |
 
 ## Detailed Description
 
@@ -75,7 +75,7 @@ Compile-time registration of available observables and likelihoods, as well as t
 
 Add to this if you want to add an observable or likelihood to this module.
 
-Don't put typedefs or other type definitions in this file; see [Elements/include/gambit/Elements/types_rollcall.hpp](/documentation/code/files/types__rollcall_8hpp/) for further instructions on how to add new types.
+Don't put typedefs or other type definitions in this file; see [Elements/include/gambit/Elements/types_rollcall.hpp](/documentation/code/files/types__rollcall_8hpp/#file-elements-types-rollcall-hpp) for further instructions on how to add new types.
 
 
 
@@ -639,4 +639,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

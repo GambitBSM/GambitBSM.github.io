@@ -20,126 +20,126 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[gauss_like](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double x, double x0, double xerr) |
-| void | **[ordering](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(bool & ord) |
-| void | **[M_nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(Eigen::Matrix3cd & m_nu) |
-| void | **[md21](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & m21) |
-| void | **[md31](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & m31) |
-| void | **[md32](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & m32) |
-| void | **[min_mass](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & minmass) |
-| void | **[UPMNS](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(Eigen::Matrix3cd & U_nu) |
-| double | **[l_M](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double M, const double m_Z, const double m_H) |
-| void | **[CI_Theta](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(Eigen::Matrix3cd & Theta) |
-| void | **[Vnu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(Eigen::Matrix3cd & V) |
-| void | **[Unitarity_UPMNS](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(bool & unitarity) |
-| void | **[Unitarity_SeesawI](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(bool & unitarity) |
-| void | **[theta12](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[theta23](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[theta13](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[deltaCP](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[theta12_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[theta12_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[theta23_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[theta23_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[theta13_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[theta13_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[deltaCP_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[deltaCP_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[md21_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[md21_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[md3l_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[md3l_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[md21_md3l_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[sum_mnu_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| double | **[lambda](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double a, double b, double c) |
-| double | **[Gamma_RHN2Pplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double GF, double mN, double ml, double mP, double fP, double VCKM, double Usq) |
-| void | **[Gamma_RHN2piplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2Kplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2Dplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2Dsl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2Bplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2Bcl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| double | **[Gamma_RHN2P0nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double GF, double mN, double mP, double fP, double Usq) |
-| void | **[Gamma_RHN2pi0nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2etanu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2etaprimenu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2etacnu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| double | **[Gamma_RHN2Vplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double GF, double mN, double ml, double mV, double fV, double VCKM, double Usq) |
-| void | **[Gamma_RHN2rhoplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2Dstarplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2Dstarsl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| double | **[Gamma_RHN2V0nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double GF, double mN, double mV, double fV, double kappaV, double Usq) |
-| void | **[Gamma_RHN2rho0nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2omeganu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2phinu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2Jpsinu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN23nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| double | **[S](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double xa, double xb) |
-| double | **[g](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double xa, double xb) |
-| void | **[Gamma_RHN2llnu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| double | **[L](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double x) |
-| void | **[Gamma_RHN2null](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2nuuubar](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2nuddbar](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_RHN2ludbar](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[Gamma_BBN](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & result) |
-| void | **[lnL_bbn](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result_bbn) |
-| void | **[RHN_R_pi](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & R_pi) |
-| void | **[RHN_R_K](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & R_K) |
-| void | **[RHN_R_tau](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & R_tau) |
-| void | **[RHN_R_W](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(std::vector< double > & R_W) |
-| void | **[lnL_R_K](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_R_pi](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_R_tau](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_R_W](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[RHN_Thalf_0nubb_Xe](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[RHN_Thalf_0nubb_Ge](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_0nubb_KamLAND_Zen](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_0nubb_GERDA](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_0nubb](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[RHN_mbb_0nubb_Xe](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[RHN_mbb_0nubb_Ge](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_mbb_0nubb_KamLAND_Zen](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_mbb_0nubb_GERDA](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_mbb_0nubb](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[fill_ckm_exp](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(Matrix3cd & Theta, double GF, [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double >(&) Vus_exp[8], [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & Vud_exp, double(&) f[8]) |
-| void | **[calc_Vus](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result_Vus) |
-| void | **[lnL_ckm_Vusmin](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result_ckm) |
-| void | **[lnL_ckm_Vus](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result_ckm) |
-| void | **[lnL_pienu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_ps191_e](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_ps191_mu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_charm_e](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_charm_mu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_delphi_short_lived](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_delphi_long_lived](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_atlas_e](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_atlas_mu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_e949](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_nutev](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_charm_tau](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_lhc_e](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[lnL_lhc_mu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & result) |
-| void | **[Ue1](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ue1_sq) |
-| void | **[Ue1_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ue1_p) |
-| void | **[Um1](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Um1_sq) |
-| void | **[Um1_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Um1_p) |
-| void | **[Ut1](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ut1_sq) |
-| void | **[Ut1_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ut1_p) |
-| void | **[Ue2](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ue2_sq) |
-| void | **[Ue2_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ue2_p) |
-| void | **[Um2](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Um2_sq) |
-| void | **[Um2_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Um2_p) |
-| void | **[Ut2](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ut2_sq) |
-| void | **[Ut2_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ut2_p) |
-| void | **[Ue3](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ue3_sq) |
-| void | **[Ue3_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ue3_p) |
-| void | **[Um3](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Um3_sq) |
-| void | **[Um3_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Um3_p) |
-| void | **[Ut3](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ut3_sq) |
-| void | **[Ut3_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & Ut3_p) |
-| void | **[perturbativity_likelihood](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & lnL) |
-| void | **[coupling_slide](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/)**(double & lnL) |
+| double | **[gauss_like](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gauss-like)**(double x, double x0, double xerr) |
+| void | **[ordering](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ordering)**(bool & ord) |
+| void | **[M_nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-m-nu)**(Eigen::Matrix3cd & m_nu) |
+| void | **[md21](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-md21)**(double & m21) |
+| void | **[md31](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-md31)**(double & m31) |
+| void | **[md32](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-md32)**(double & m32) |
+| void | **[min_mass](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-min-mass)**(double & minmass) |
+| void | **[UPMNS](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-upmns)**(Eigen::Matrix3cd & U_nu) |
+| double | **[l_M](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-l-m)**(double M, const double m_Z, const double m_H) |
+| void | **[CI_Theta](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ci-theta)**(Eigen::Matrix3cd & Theta) |
+| void | **[Vnu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-vnu)**(Eigen::Matrix3cd & V) |
+| void | **[Unitarity_UPMNS](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-unitarity-upmns)**(bool & unitarity) |
+| void | **[Unitarity_SeesawI](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-unitarity-seesawi)**(bool & unitarity) |
+| void | **[theta12](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta12)**(double & result) |
+| void | **[theta23](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta23)**(double & result) |
+| void | **[theta13](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta13)**(double & result) |
+| void | **[deltaCP](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-deltacp)**(double & result) |
+| void | **[theta12_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta12-nufit-v3-2-lnl)**(double & result) |
+| void | **[theta12_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta12-nufit-v4-1-lnl)**(double & result) |
+| void | **[theta23_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta23-nufit-v3-2-lnl)**(double & result) |
+| void | **[theta23_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta23-nufit-v4-1-lnl)**(double & result) |
+| void | **[theta13_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta13-nufit-v3-2-lnl)**(double & result) |
+| void | **[theta13_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-theta13-nufit-v4-1-lnl)**(double & result) |
+| void | **[deltaCP_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-deltacp-nufit-v3-2-lnl)**(double & result) |
+| void | **[deltaCP_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-deltacp-nufit-v4-1-lnl)**(double & result) |
+| void | **[md21_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-md21-nufit-v3-2-lnl)**(double & result) |
+| void | **[md21_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-md21-nufit-v4-1-lnl)**(double & result) |
+| void | **[md3l_NuFit_v3_2_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-md3l-nufit-v3-2-lnl)**(double & result) |
+| void | **[md3l_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-md3l-nufit-v4-1-lnl)**(double & result) |
+| void | **[md21_md3l_NuFit_v4_1_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-md21-md3l-nufit-v4-1-lnl)**(double & result) |
+| void | **[sum_mnu_lnL](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-sum-mnu-lnl)**(double & result) |
+| double | **[lambda](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lambda)**(double a, double b, double c) |
+| double | **[Gamma_RHN2Pplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2pplusl)**(double GF, double mN, double ml, double mP, double fP, double VCKM, double Usq) |
+| void | **[Gamma_RHN2piplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2piplusl)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2Kplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2kplusl)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2Dplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2dplusl)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2Dsl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2dsl)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2Bplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2bplusl)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2Bcl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2bcl)**(std::vector< double > & result) |
+| double | **[Gamma_RHN2P0nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2p0nu)**(double GF, double mN, double mP, double fP, double Usq) |
+| void | **[Gamma_RHN2pi0nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2pi0nu)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2etanu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2etanu)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2etaprimenu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2etaprimenu)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2etacnu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2etacnu)**(std::vector< double > & result) |
+| double | **[Gamma_RHN2Vplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2vplusl)**(double GF, double mN, double ml, double mV, double fV, double VCKM, double Usq) |
+| void | **[Gamma_RHN2rhoplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2rhoplusl)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2Dstarplusl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2dstarplusl)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2Dstarsl](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2dstarsl)**(std::vector< double > & result) |
+| double | **[Gamma_RHN2V0nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2v0nu)**(double GF, double mN, double mV, double fV, double kappaV, double Usq) |
+| void | **[Gamma_RHN2rho0nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2rho0nu)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2omeganu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2omeganu)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2phinu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2phinu)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2Jpsinu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2jpsinu)**(std::vector< double > & result) |
+| void | **[Gamma_RHN23nu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn23nu)**(std::vector< double > & result) |
+| double | **[S](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-s)**(double xa, double xb) |
+| double | **[g](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-g)**(double xa, double xb) |
+| void | **[Gamma_RHN2llnu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2llnu)**(std::vector< double > & result) |
+| double | **[L](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-l)**(double x) |
+| void | **[Gamma_RHN2null](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2null)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2nuuubar](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2nuuubar)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2nuddbar](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2nuddbar)**(std::vector< double > & result) |
+| void | **[Gamma_RHN2ludbar](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-rhn2ludbar)**(std::vector< double > & result) |
+| void | **[Gamma_BBN](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-gamma-bbn)**(std::vector< double > & result) |
+| void | **[lnL_bbn](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-bbn)**(double & result_bbn) |
+| void | **[RHN_R_pi](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-rhn-r-pi)**(double & R_pi) |
+| void | **[RHN_R_K](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-rhn-r-k)**(double & R_K) |
+| void | **[RHN_R_tau](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-rhn-r-tau)**(double & R_tau) |
+| void | **[RHN_R_W](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-rhn-r-w)**(std::vector< double > & R_W) |
+| void | **[lnL_R_K](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-r-k)**(double & result) |
+| void | **[lnL_R_pi](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-r-pi)**(double & result) |
+| void | **[lnL_R_tau](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-r-tau)**(double & result) |
+| void | **[lnL_R_W](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-r-w)**(double & result) |
+| void | **[RHN_Thalf_0nubb_Xe](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-rhn-thalf-0nubb-xe)**(double & result) |
+| void | **[RHN_Thalf_0nubb_Ge](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-rhn-thalf-0nubb-ge)**(double & result) |
+| void | **[lnL_0nubb_KamLAND_Zen](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-0nubb-kamland-zen)**(double & result) |
+| void | **[lnL_0nubb_GERDA](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-0nubb-gerda)**(double & result) |
+| void | **[lnL_0nubb](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-0nubb)**(double & result) |
+| void | **[RHN_mbb_0nubb_Xe](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-rhn-mbb-0nubb-xe)**(double & result) |
+| void | **[RHN_mbb_0nubb_Ge](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-rhn-mbb-0nubb-ge)**(double & result) |
+| void | **[lnL_mbb_0nubb_KamLAND_Zen](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-mbb-0nubb-kamland-zen)**(double & result) |
+| void | **[lnL_mbb_0nubb_GERDA](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-mbb-0nubb-gerda)**(double & result) |
+| void | **[lnL_mbb_0nubb](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-mbb-0nubb)**(double & result) |
+| void | **[fill_ckm_exp](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-fill-ckm-exp)**(Matrix3cd & Theta, double GF, [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double >(&) Vus_exp[8], [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & Vud_exp, double(&) f[8]) |
+| void | **[calc_Vus](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-calc-vus)**(double & result_Vus) |
+| void | **[lnL_ckm_Vusmin](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-ckm-vusmin)**(double & result_ckm) |
+| void | **[lnL_ckm_Vus](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-ckm-vus)**(double & result_ckm) |
+| void | **[lnL_pienu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-pienu)**(double & result) |
+| void | **[lnL_ps191_e](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-ps191-e)**(double & result) |
+| void | **[lnL_ps191_mu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-ps191-mu)**(double & result) |
+| void | **[lnL_charm_e](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-charm-e)**(double & result) |
+| void | **[lnL_charm_mu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-charm-mu)**(double & result) |
+| void | **[lnL_delphi_short_lived](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-delphi-short-lived)**(double & result) |
+| void | **[lnL_delphi_long_lived](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-delphi-long-lived)**(double & result) |
+| void | **[lnL_atlas_e](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-atlas-e)**(double & result) |
+| void | **[lnL_atlas_mu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-atlas-mu)**(double & result) |
+| void | **[lnL_e949](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-e949)**(double & result) |
+| void | **[lnL_nutev](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-nutev)**(double & result) |
+| void | **[lnL_charm_tau](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-charm-tau)**(double & result) |
+| void | **[lnL_lhc_e](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-lhc-e)**(double & result) |
+| void | **[lnL_lhc_mu](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-lnl-lhc-mu)**(double & result) |
+| void | **[Ue1](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ue1)**(double & Ue1_sq) |
+| void | **[Ue1_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ue1-phase)**(double & Ue1_p) |
+| void | **[Um1](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-um1)**(double & Um1_sq) |
+| void | **[Um1_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-um1-phase)**(double & Um1_p) |
+| void | **[Ut1](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ut1)**(double & Ut1_sq) |
+| void | **[Ut1_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ut1-phase)**(double & Ut1_p) |
+| void | **[Ue2](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ue2)**(double & Ue2_sq) |
+| void | **[Ue2_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ue2-phase)**(double & Ue2_p) |
+| void | **[Um2](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-um2)**(double & Um2_sq) |
+| void | **[Um2_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-um2-phase)**(double & Um2_p) |
+| void | **[Ut2](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ut2)**(double & Ut2_sq) |
+| void | **[Ut2_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ut2-phase)**(double & Ut2_p) |
+| void | **[Ue3](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ue3)**(double & Ue3_sq) |
+| void | **[Ue3_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ue3-phase)**(double & Ue3_p) |
+| void | **[Um3](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-um3)**(double & Um3_sq) |
+| void | **[Um3_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-um3-phase)**(double & Um3_p) |
+| void | **[Ut3](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ut3)**(double & Ut3_sq) |
+| void | **[Ut3_phase](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-ut3-phase)**(double & Ut3_p) |
+| void | **[perturbativity_likelihood](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-perturbativity-likelihood)**(double & lnL) |
+| void | **[coupling_slide](/documentation/code/namespaces/namespacegambit_1_1neutrinobit/#function-gambitneutrinobit-coupling-slide)**(double & lnL) |
 
 
 ## Functions Documentation
@@ -1263,4 +1263,4 @@ void coupling_slide(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

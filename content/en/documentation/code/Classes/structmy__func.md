@@ -15,19 +15,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[my_func](/documentation/code/classes/structmy__func/)**(double ppb1[4], double ppl[4], double ppMET[4], double sigmatt, double sigmaWW, double ssign) |
-| double | **[operator()](/documentation/code/classes/structmy__func/)**(double points[], int ) |
+| | **[my_func](/documentation/code/classes/structmy__func/#function-my-func-my-func)**(double ppb1[4], double ppl[4], double ppMET[4], double sigmatt, double sigmaWW, double ssign) |
+| double | **[operator()](/documentation/code/classes/structmy__func/#function-my-func-operator)**(double points[], int ) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double[4] | **[pb1](/documentation/code/classes/structmy__func/)**  |
-| double[4] | **[pl](/documentation/code/classes/structmy__func/)**  |
-| double[4] | **[pMET](/documentation/code/classes/structmy__func/)**  |
-| double | **[sigmat](/documentation/code/classes/structmy__func/)**  |
-| double | **[sigmaW](/documentation/code/classes/structmy__func/)**  |
-| double | **[sign](/documentation/code/classes/structmy__func/)**  |
+| double[4] | **[pb1](/documentation/code/classes/structmy__func/#variable-my-func-pb1)**  |
+| double[4] | **[pl](/documentation/code/classes/structmy__func/#variable-my-func-pl)**  |
+| double[4] | **[pMET](/documentation/code/classes/structmy__func/#variable-my-func-pmet)**  |
+| double | **[sigmat](/documentation/code/classes/structmy__func/#variable-my-func-sigmat)**  |
+| double | **[sigmaW](/documentation/code/classes/structmy__func/#variable-my-func-sigmaw)**  |
+| double | **[sign](/documentation/code/classes/structmy__func/#variable-my-func-sign)**  |
 
 ## Public Functions Documentation
 
@@ -101,4 +101,4 @@ double sign;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

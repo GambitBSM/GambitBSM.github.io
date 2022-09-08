@@ -31,7 +31,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PDB](/documentation/code/files/spec__head_8hpp/)**  |
+|  | **[PDB](/documentation/code/files/spec__head_8hpp/#define-spec-head-hpp-pdb)**  |
 
 ## Detailed Description
 
@@ -349,4 +349,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

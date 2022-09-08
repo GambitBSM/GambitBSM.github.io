@@ -17,20 +17,20 @@ Representation of a single entry in the FlavBit [YAML](/documentation/code/names
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[is_limit](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| bool | **[exp_one_sided](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| double | **[exp_value](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| double | **[exp_stat_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| double | **[exp_sys_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| double | **[exp_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| double | **[exp_90_CL](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| double | **[exp_95_CL](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| double | **[th_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| std::string | **[exp_source](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| std::string | **[th_error_source](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| std::string | **[th_error_type](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
-| std::vector< [Correlation](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/) > | **[corr](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/)**  |
+| bool | **[is_limit](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-is-limit)**  |
+| bool | **[exp_one_sided](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-exp-one-sided)**  |
+| double | **[exp_value](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-exp-value)**  |
+| double | **[exp_stat_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-exp-stat-error)**  |
+| double | **[exp_sys_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-exp-sys-error)**  |
+| double | **[exp_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-exp-error)**  |
+| double | **[exp_90_CL](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-exp-90-cl)**  |
+| double | **[exp_95_CL](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-exp-95-cl)**  |
+| double | **[th_error](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-th-error)**  |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-name)**  |
+| std::string | **[exp_source](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-exp-source)**  |
+| std::string | **[th_error_source](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-th-error-source)**  |
+| std::string | **[th_error_type](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-th-error-type)**  |
+| std::vector< [Correlation](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/) > | **[corr](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/#variable-gambitflavbitmeasurement-corr)**  |
 
 ## Public Attributes Documentation
 
@@ -134,4 +134,4 @@ std::vector< Correlation > corr;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef char | **[PyDict](/documentation/code/files/python__helpers_8hpp/)** <br>Types used for Python backends.  |
+| typedef char | **[PyDict](/documentation/code/files/python__helpers_8hpp/#typedef-python-helpers-hpp-pydict)** <br>Types used for Python backends.  |
 
 ## Detailed Description
 
@@ -203,4 +203,4 @@ Types used for Python backends.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

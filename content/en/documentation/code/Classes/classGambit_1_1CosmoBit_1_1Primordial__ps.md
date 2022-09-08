@@ -18,19 +18,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Primordial_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**() |
-| | **[~Primordial_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**() |
-| void | **[set_N_pivot](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**(double npiv)<br>Fill k from an array of doubles.  |
-| void | **[fill_k](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**(double * k_array, int len) |
-| void | **[fill_P_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**(double * P_s_array, int len) |
-| void | **[fill_P_s_iso](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**(double * P_s_iso_array, int len) |
-| void | **[fill_P_t](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**(double * P_t_array, int len) |
-| double | **[get_N_pivot](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**() |
-| std::vector< double > & | **[get_k](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**() |
-| std::vector< double > & | **[get_P_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**() |
-| std::vector< double > & | **[get_P_t](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**() |
-| std::vector< double > & | **[get_P_s_iso](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**() |
-| int | **[get_vec_size](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/)**() |
+| | **[Primordial_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-primordial-ps)**() |
+| | **[~Primordial_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-primordial-ps)**() |
+| void | **[set_N_pivot](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-set-n-pivot)**(double npiv)<br>Fill k from an array of doubles.  |
+| void | **[fill_k](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-fill-k)**(double * k_array, int len) |
+| void | **[fill_P_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-fill-p-s)**(double * P_s_array, int len) |
+| void | **[fill_P_s_iso](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-fill-p-s-iso)**(double * P_s_iso_array, int len) |
+| void | **[fill_P_t](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-fill-p-t)**(double * P_t_array, int len) |
+| double | **[get_N_pivot](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-get-n-pivot)**() |
+| std::vector< double > & | **[get_k](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-get-k)**() |
+| std::vector< double > & | **[get_P_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-get-p-s)**() |
+| std::vector< double > & | **[get_P_t](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-get-p-t)**() |
+| std::vector< double > & | **[get_P_s_iso](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-get-p-s-iso)**() |
+| int | **[get_vec_size](/documentation/code/classes/classgambit_1_1cosmobit_1_1primordial__ps/#function-gambitcosmobitprimordial-ps-get-vec-size)**() |
 
 ## Detailed Description
 
@@ -156,4 +156,4 @@ inline int get_vec_size()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

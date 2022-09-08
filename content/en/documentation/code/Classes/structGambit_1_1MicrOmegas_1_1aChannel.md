@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[weight](/documentation/code/classes/structgambit_1_1micromegas_1_1achannel/)**  |
-| char *[5] | **[prtcl](/documentation/code/classes/structgambit_1_1micromegas_1_1achannel/)**  |
+| double | **[weight](/documentation/code/classes/structgambit_1_1micromegas_1_1achannel/#variable-gambitmicromegasachannel-weight)**  |
+| char *[5] | **[prtcl](/documentation/code/classes/structgambit_1_1micromegas_1_1achannel/#variable-gambitmicromegasachannel-prtcl)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ char *[5] prtcl;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

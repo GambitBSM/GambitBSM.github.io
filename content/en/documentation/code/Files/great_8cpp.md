@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/great_8cpp/)**(great , version(1, 0, 0) ) |
+| | **[scanner_plugin](/documentation/code/files/great_8cpp/#function-great-cpp-scanner-plugin)**(great , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -302,4 +302,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[ScannerBit](/documentation/code/files/dir_391ea3cfbc71002148701ceb06bf5672/)**  |
+| **[ScannerBit](/documentation/code/files/dir_391ea3cfbc71002148701ceb06bf5672/#dir-gambit-scannerbit)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

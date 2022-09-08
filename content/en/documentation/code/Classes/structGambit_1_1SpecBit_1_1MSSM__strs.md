@@ -18,80 +18,80 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[MSSM_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**() |
+| | **[MSSM_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#function-gambitspecbitmssm-strs-mssm-strs)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mass_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>"Metadata" vectors  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mass_pred](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mass_strs_1](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>pole mass strings with 1 index  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mass_strs_1_6](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>pole mass strings with 1 index and six entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mass_strs_1_4](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>pole mass strings with 1 index and four entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mass_strs_1_3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>pole mass strings with 1 index and three entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mass_strs_1_2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>pole mass strings with 1 index and two entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mixing_strs_2_6x6](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>Pole_Mixing tagged entries.  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mixing_strs_2_4x4](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>2 index, 4x4 entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mixing_strs_2_3x3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>2 index, 3x3 entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[pole_mixing_strs_2_2x2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>2 index, 2x2 entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[mass2_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>mass2 tagged entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[mass2_strs_2_3x3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[mass1_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>mass1 tagged entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[mass1_strs_2_3x3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[dimensionless_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimensionless tagged entries  |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[dimensionless_strs_2_3x3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[BMu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>Const strings for use in MSSMspec class.  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[mHd2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[mHu2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[mq2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimension 2, 2 indices  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[ml2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[md2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[mu2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[me2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[M1](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimension 1, no index  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[M2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[M3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Mu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[vu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[vd](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[TYd](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimension 1, 2 indices  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[TYe](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[TYu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[ad](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[ae](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[au](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[g1](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimension 0, no index  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[g2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[g3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[tanbeta](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimension 0, no index, special map  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[sinW2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[mA2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimension 1, no index, special map  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Yd](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimension 0, 2 indices  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Yu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Ye](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[gluino](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[A0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Hplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Hminus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Goldstone0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Goldstoneplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Goldstoneminus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Wplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Wminus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[Z0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[su](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)** <br>dimension 1, 1 index , special for setters  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[sd](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[se](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[snu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[chiplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[chi0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[h0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[subar](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[sdbar](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[seplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[snubar](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[chiminus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/)**  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mass_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mass-strs)** <br>"Metadata" vectors  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mass_pred](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mass-pred)**  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mass_strs_1](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mass-strs-1)** <br>pole mass strings with 1 index  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mass_strs_1_6](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mass-strs-1-6)** <br>pole mass strings with 1 index and six entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mass_strs_1_4](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mass-strs-1-4)** <br>pole mass strings with 1 index and four entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mass_strs_1_3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mass-strs-1-3)** <br>pole mass strings with 1 index and three entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mass_strs_1_2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mass-strs-1-2)** <br>pole mass strings with 1 index and two entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mixing_strs_2_6x6](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mixing-strs-2-6x6)** <br>Pole_Mixing tagged entries.  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mixing_strs_2_4x4](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mixing-strs-2-4x4)** <br>2 index, 4x4 entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mixing_strs_2_3x3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mixing-strs-2-3x3)** <br>2 index, 3x3 entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[pole_mixing_strs_2_2x2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-pole-mixing-strs-2-2x2)** <br>2 index, 2x2 entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[mass2_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mass2-strs)** <br>mass2 tagged entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[mass2_strs_2_3x3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mass2-strs-2-3x3)**  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[mass1_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mass1-strs)** <br>mass1 tagged entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[mass1_strs_2_3x3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mass1-strs-2-3x3)**  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[dimensionless_strs](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-dimensionless-strs)** <br>dimensionless tagged entries  |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[dimensionless_strs_2_3x3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-dimensionless-strs-2-3x3)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[BMu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-bmu)** <br>Const strings for use in MSSMspec class.  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[mHd2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mhd2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[mHu2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mhu2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[mq2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mq2)** <br>dimension 2, 2 indices  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[ml2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-ml2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[md2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-md2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[mu2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mu2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[me2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-me2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[M1](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-m1)** <br>dimension 1, no index  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[M2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-m2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[M3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-m3)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Mu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-mu)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[vu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-vu)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[vd](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-vd)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[TYd](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-tyd)** <br>dimension 1, 2 indices  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[TYe](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-tye)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[TYu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-tyu)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[ad](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-ad)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[ae](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-ae)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[au](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-au)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[g1](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-g1)** <br>dimension 0, no index  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[g2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-g2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[g3](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-g3)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[tanbeta](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-tanbeta)** <br>dimension 0, no index, special map  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[sinW2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-sinw2)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[mA2](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-ma2)** <br>dimension 1, no index, special map  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Yd](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-yd)** <br>dimension 0, 2 indices  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Yu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-yu)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Ye](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-ye)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[gluino](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-gluino)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[A0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-a0)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Hplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-hplus)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Hminus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-hminus)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Goldstone0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-goldstone0)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Goldstoneplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-goldstoneplus)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Goldstoneminus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-goldstoneminus)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Wplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-wplus)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Wminus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-wminus)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[Z0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-z0)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[su](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-su)** <br>dimension 1, 1 index , special for setters  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[sd](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-sd)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[se](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-se)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[snu](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-snu)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[chiplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-chiplus)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[chi0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-chi0)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[h0](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-h0)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[subar](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-subar)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[sdbar](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-sdbar)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[seplus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-seplus)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[snubar](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-snubar)**  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[chiminus](/documentation/code/classes/structgambit_1_1specbit_1_1mssm__strs/#variable-gambitspecbitmssm-strs-chiminus)**  |
 
 ## Detailed Description
 
@@ -645,4 +645,4 @@ static const str chiminus =   "~chi-";
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

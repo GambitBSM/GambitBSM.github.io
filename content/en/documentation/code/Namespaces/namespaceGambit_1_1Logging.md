@@ -24,39 +24,39 @@ Forward declare minimial logging components needed to use logger.
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::ostream &(*)(std::ostream &) | **[manip1](/documentation/code/namespaces/namespacegambit_1_1logging/)**  |
-| typedef std::basic_ios< std::ostream::char_type, std::ostream::traits_type > | **[ios_type](/documentation/code/namespaces/namespacegambit_1_1logging/)**  |
-| typedef ios_type &(*)(ios_type &) | **[manip2](/documentation/code/namespaces/namespacegambit_1_1logging/)**  |
-| typedef std::ios_base &(*)(std::ios_base &) | **[manip3](/documentation/code/namespaces/namespacegambit_1_1logging/)**  |
+| typedef std::ostream &(*)(std::ostream &) | **[manip1](/documentation/code/namespaces/namespacegambit_1_1logging/#typedef-gambitlogging-manip1)**  |
+| typedef std::basic_ios< std::ostream::char_type, std::ostream::traits_type > | **[ios_type](/documentation/code/namespaces/namespacegambit_1_1logging/#typedef-gambitlogging-ios-type)**  |
+| typedef ios_type &(*)(ios_type &) | **[manip2](/documentation/code/namespaces/namespacegambit_1_1logging/#typedef-gambitlogging-manip2)**  |
+| typedef std::ios_base &(*)(std::ios_base &) | **[manip3](/documentation/code/namespaces/namespacegambit_1_1logging/#typedef-gambitlogging-manip3)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const std::string & in)<br>Stream functions for use with [LogMaster]().  |
-| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const LogTag & tag)<br>Handle LogTag input.  |
-| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const [endofmessage](/documentation/code/classes/structgambit_1_1logging_1_1endofmessage/) & eom)<br>Handle end of message character.  |
-| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const manip1)<br>Handle various stream manipulators.  |
-| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const manip2) |
-| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const manip3) |
-| template <typename TYPE \> <br>[LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const TYPE & input) |
-| template <typename TYPE \> <br>[LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, TYPE & input) |
-| int | **[str2tag](/documentation/code/namespaces/namespacegambit_1_1logging/)**(const std::string & tagname) |
-| std::map< int, std::string > & | **[tag2str](/documentation/code/namespaces/namespacegambit_1_1logging/)**() |
-| std::set< int > & | **[components](/documentation/code/namespaces/namespacegambit_1_1logging/)**() |
-| const Utils::time_point | **[start_time](/documentation/code/namespaces/namespacegambit_1_1logging/)**(Utils::get_clock_now() ) |
-| const std::set< LogTag > & | **[msgtypes](/documentation/code/namespaces/namespacegambit_1_1logging/)**() |
-| const std::set< LogTag > & | **[flags](/documentation/code/namespaces/namespacegambit_1_1logging/)**() |
-| const std::set< LogTag > & | **[echoes](/documentation/code/namespaces/namespacegambit_1_1logging/)**() |
-| int | **[getfreetag](/documentation/code/namespaces/namespacegambit_1_1logging/)**() |
-| void | **[checktags](/documentation/code/namespaces/namespacegambit_1_1logging/)**()<br>Function to inspect tags and their associated strings. For testing purposes only.  |
-| std::map< int, std::string > | **[create_tag_names](/documentation/code/namespaces/namespacegambit_1_1logging/)**() |
+| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-operator)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const std::string & in)<br>Stream functions for use with [LogMaster]().  |
+| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-operator)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const LogTag & tag)<br>Handle LogTag input.  |
+| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-operator)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const [endofmessage](/documentation/code/classes/structgambit_1_1logging_1_1endofmessage/) & eom)<br>Handle end of message character.  |
+| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-operator)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const manip1)<br>Handle various stream manipulators.  |
+| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-operator)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const manip2) |
+| EXPORT_SYMBOLS [LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-operator)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const manip3) |
+| template <typename TYPE \> <br>[LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-operator)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, const TYPE & input) |
+| template <typename TYPE \> <br>[LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-operator)**([LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & logobj, TYPE & input) |
+| int | **[str2tag](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-str2tag)**(const std::string & tagname) |
+| std::map< int, std::string > & | **[tag2str](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-tag2str)**() |
+| std::set< int > & | **[components](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-components)**() |
+| const Utils::time_point | **[start_time](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-start-time)**(Utils::get_clock_now() ) |
+| const std::set< LogTag > & | **[msgtypes](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-msgtypes)**() |
+| const std::set< LogTag > & | **[flags](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-flags)**() |
+| const std::set< LogTag > & | **[echoes](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-echoes)**() |
+| int | **[getfreetag](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-getfreetag)**() |
+| void | **[checktags](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-checktags)**()<br>Function to inspect tags and their associated strings. For testing purposes only.  |
+| std::map< int, std::string > | **[create_tag_names](/documentation/code/namespaces/namespacegambit_1_1logging/#function-gambitlogging-create-tag-names)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[verbose](/documentation/code/namespaces/namespacegambit_1_1logging/)**  |
+| const bool | **[verbose](/documentation/code/namespaces/namespacegambit_1_1logging/#variable-gambitlogging-verbose)**  |
 
 ## Types Documentation
 
@@ -272,4 +272,4 @@ const bool verbose = false;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

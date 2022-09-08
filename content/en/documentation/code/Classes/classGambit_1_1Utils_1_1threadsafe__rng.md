@@ -20,16 +20,16 @@ Inherited by [Gambit::Utils::specialised_threadsafe_rng< Engine >](/documentatio
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::uint64_t | **[result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/)** <br>Return type (will convert underlying RNG type to this)  |
+| typedef std::uint64_t | **[result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-gambitutilsthreadsafe-rng-result-type)** <br>Return type (will convert underlying RNG type to this)  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/)**() =0<br>Pure virtual destructor to force overriding in derived class.  |
-| virtual [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/) | **[operator()](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/)**() =0<br>Operator used for getting random deviates.  |
-| constexpr [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/) | **[min](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/)**()<br>Operators for compliance with RandomNumberEngine interface -> random distribution sampling.  |
-| constexpr [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/) | **[max](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/)**() |
+| virtual | **[~threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-gambitutilsthreadsafe-rng-threadsafe-rng)**() =0<br>Pure virtual destructor to force overriding in derived class.  |
+| virtual [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-gambitutilsthreadsafe-rng-result-type) | **[operator()](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-gambitutilsthreadsafe-rng-operator)**() =0<br>Operator used for getting random deviates.  |
+| constexpr [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-gambitutilsthreadsafe-rng-result-type) | **[min](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-gambitutilsthreadsafe-rng-min)**()<br>Operators for compliance with RandomNumberEngine interface -> random distribution sampling.  |
+| constexpr [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-gambitutilsthreadsafe-rng-result-type) | **[max](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-gambitutilsthreadsafe-rng-max)**() |
 
 ## Detailed Description
 
@@ -71,7 +71,7 @@ virtual result_type operator()() =0
 
 Operator used for getting random deviates. 
 
-**Reimplemented by**: [Gambit::Utils::specialised_threadsafe_rng::operator()](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/)
+**Reimplemented by**: [Gambit::Utils::specialised_threadsafe_rng::operator()](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/#function-gambitutilsspecialised-threadsafe-rng-operator)
 
 
 ### function min
@@ -91,4 +91,4 @@ static inline constexpr result_type max()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

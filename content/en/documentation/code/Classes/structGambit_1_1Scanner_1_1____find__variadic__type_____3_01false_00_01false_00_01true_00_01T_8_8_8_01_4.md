@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [find_variadic_type_convert](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)< T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01false_00_01true_00_01t_8_8_8_01_4/)**  |
-| typedef [find_variadic_type_convert](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)< T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01false_00_01true_00_01t_8_8_8_01_4/)**  |
+| typedef [find_variadic_type_convert](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)< T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01false_00_01true_00_01t_8_8_8_01_4/#typedef-gambitscanner-find-variadic-type-false-false-true-t-ret-type)**  |
+| typedef [find_variadic_type_convert](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)< T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01false_00_01true_00_01t_8_8_8_01_4/#typedef-gambitscanner-find-variadic-type-false-false-true-t-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01false_00_01true_00_01t_8_8_8_01_4/)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type_____3_01false_00_01false_00_01true_00_01t_8_8_8_01_4/#variable-gambitscanner-find-variadic-type-false-false-true-t-value)**  |
 
 ## Detailed Description
 
@@ -58,4 +58,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

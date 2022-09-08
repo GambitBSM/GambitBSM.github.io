@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[sbottot](/documentation/code/classes/structgambit_1_1sd__sbotwidth__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[sbottot](/documentation/code/classes/structgambit_1_1sd__sbotwidth__type/#variable-gambitsd-sbotwidth-type-sbottot)**  |
 
 ## Public Attributes Documentation
 
@@ -28,4 +28,4 @@ Farray< Fdouble, 1, 2 > sbottot;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

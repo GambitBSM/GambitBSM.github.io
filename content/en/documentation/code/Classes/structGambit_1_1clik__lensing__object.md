@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void * | **[plens_payload](/documentation/code/classes/structgambit_1_1clik__lensing__object/)**  |
-| int[7] | **[lmax](/documentation/code/classes/structgambit_1_1clik__lensing__object/)**  |
-| int | **[type](/documentation/code/classes/structgambit_1_1clik__lensing__object/)**  |
-| int | **[renorm](/documentation/code/classes/structgambit_1_1clik__lensing__object/)**  |
-| int | **[ren1](/documentation/code/classes/structgambit_1_1clik__lensing__object/)**  |
-| double | **[check](/documentation/code/classes/structgambit_1_1clik__lensing__object/)**  |
-| int | **[has_check](/documentation/code/classes/structgambit_1_1clik__lensing__object/)**  |
-| double * | **[cl_fid](/documentation/code/classes/structgambit_1_1clik__lensing__object/)**  |
+| void * | **[plens_payload](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-gambitclik-lensing-object-plens-payload)**  |
+| int[7] | **[lmax](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-gambitclik-lensing-object-lmax)**  |
+| int | **[type](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-gambitclik-lensing-object-type)**  |
+| int | **[renorm](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-gambitclik-lensing-object-renorm)**  |
+| int | **[ren1](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-gambitclik-lensing-object-ren1)**  |
+| double | **[check](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-gambitclik-lensing-object-check)**  |
+| int | **[has_check](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-gambitclik-lensing-object-has-check)**  |
+| double * | **[cl_fid](/documentation/code/classes/structgambit_1_1clik__lensing__object/#variable-gambitclik-lensing-object-cl-fid)**  |
 
 ## Public Attributes Documentation
 
@@ -84,4 +84,4 @@ double * cl_fid;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

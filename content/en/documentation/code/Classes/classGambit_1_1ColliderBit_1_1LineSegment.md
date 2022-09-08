@@ -17,22 +17,22 @@ A simple container for a line segment on an xy plane.  [More...](#detailed-descr
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**(double x1, double y1, double x2, double y2, double extendFrac =-1.)<br>Coordinate initializer / recycler.  |
-| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =-1.)<br>Point initializer / recycler.  |
-| | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**()<br>Default constructor.  |
-| | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**(double x1, double y1, double x2, double y2, double extendFrac =-1.)<br>Coordinate constructor.  |
-| | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =0.)<br>Point constructor.  |
-| | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**(const [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy constructor.  |
-| [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & | **[operator=](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**(const [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy assignment operator.  |
-| const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp1](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**() const |
-| const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp2](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**() const |
-| double | **[slope](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**() const<br>Get the slope of the line segment.  |
-| double | **[m](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**() const<br>Alias for slope.  |
-| double | **[intercept](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**() const<br>Get the y-intercept of the full line which contains this segment.  |
-| double | **[b](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**() const<br>Alias for intercept.  |
-| double | **[abs](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**() const<br>Get the length of the vector from the origin to this point.  |
-| double | **[r](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**() const<br>Alias for abs.  |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[intersectsAt](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/)**(const [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & other) const<br>Determine if this intersects with other and where.  |
+| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-init)**(double x1, double y1, double x2, double y2, double extendFrac =-1.)<br>Coordinate initializer / recycler.  |
+| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-init)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =-1.)<br>Point initializer / recycler.  |
+| | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-linesegment)**()<br>Default constructor.  |
+| | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-linesegment)**(double x1, double y1, double x2, double y2, double extendFrac =-1.)<br>Coordinate constructor.  |
+| | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-linesegment)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p1, const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & p2, double extendFrac =0.)<br>Point constructor.  |
+| | **[LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-linesegment)**(const [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy constructor.  |
+| [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & | **[operator=](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-operator)**(const [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & other)<br>Copy assignment operator.  |
+| const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp1](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-getp1)**() const |
+| const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[getp2](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-getp2)**() const |
+| double | **[slope](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-slope)**() const<br>Get the slope of the line segment.  |
+| double | **[m](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-m)**() const<br>Alias for slope.  |
+| double | **[intercept](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-intercept)**() const<br>Get the y-intercept of the full line which contains this segment.  |
+| double | **[b](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-b)**() const<br>Alias for intercept.  |
+| double | **[abs](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-abs)**() const<br>Get the length of the vector from the origin to this point.  |
+| double | **[r](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-r)**() const<br>Alias for abs.  |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[intersectsAt](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/#function-gambitcolliderbitlinesegment-intersectsat)**(const [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) & other) const<br>Determine if this intersects with other and where.  |
 
 ## Detailed Description
 
@@ -200,4 +200,4 @@ Determine if this intersects with other and where.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

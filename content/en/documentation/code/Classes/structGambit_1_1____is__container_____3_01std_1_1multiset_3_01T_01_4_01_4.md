@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef T | **[type](/documentation/code/classes/structgambit_1_1____is__container_____3_01std_1_1multiset_3_01t_01_4_01_4/)**  |
+| typedef T | **[type](/documentation/code/classes/structgambit_1_1____is__container_____3_01std_1_1multiset_3_01t_01_4_01_4/#typedef-gambit-is-container-stdmultiset-t-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__container_____3_01std_1_1multiset_3_01t_01_4_01_4/)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__container_____3_01std_1_1multiset_3_01t_01_4_01_4/#variable-gambit-is-container-stdmultiset-t-value)**  |
 
 ## Detailed Description
 
@@ -50,4 +50,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

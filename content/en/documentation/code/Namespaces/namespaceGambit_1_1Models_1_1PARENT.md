@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const std::vector< std::string > | **[lineage](/documentation/code/namespaces/namespacegambit_1_1models_1_1parent/)**  |
+| const std::vector< std::string > | **[lineage](/documentation/code/namespaces/namespacegambit_1_1models_1_1parent/#variable-gambitmodelsparent-lineage)**  |
 
 
 
@@ -31,4 +31,4 @@ const std::vector< std::string > lineage;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

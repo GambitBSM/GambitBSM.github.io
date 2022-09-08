@@ -17,8 +17,8 @@ Specialisation of [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[CallFcn](/documentation/code/classes/classgambit_1_1callfcn_3_01hostspec_00_01maptag_1_1set_01_4/)**([FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder/)< HostSpec, [MapTag::Set](/documentation/code/classes/structgambit_1_1maptag_1_1set/) > * host) |
-| void | **[operator()](/documentation/code/classes/classgambit_1_1callfcn_3_01hostspec_00_01maptag_1_1set_01_4/)**(const double set_value) |
+| | **[CallFcn](/documentation/code/classes/classgambit_1_1callfcn_3_01hostspec_00_01maptag_1_1set_01_4/#function-gambitcallfcn-hostspec-maptagset-callfcn)**([FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder/)< HostSpec, [MapTag::Set](/documentation/code/classes/structgambit_1_1maptag_1_1set/) > * host) |
+| void | **[operator()](/documentation/code/classes/classgambit_1_1callfcn_3_01hostspec_00_01maptag_1_1set_01_4/#function-gambitcallfcn-hostspec-maptagset-operator)**(const double set_value) |
 
 ## Detailed Description
 
@@ -50,4 +50,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

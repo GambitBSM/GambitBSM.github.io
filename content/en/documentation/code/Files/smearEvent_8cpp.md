@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SMEAR_EVENT](/documentation/code/files/smearevent_8cpp/)**(NAME, EXPERIMENT) <br>Smear an event using a simulation of EXPERIMENT.  |
+|  | **[SMEAR_EVENT](/documentation/code/files/smearevent_8cpp/#define-smearevent-cpp-smear-event)**(NAME, EXPERIMENT) <br>Smear an event using a simulation of EXPERIMENT.  |
 
 ## Detailed Description
 
@@ -164,4 +164,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:22 +0000
+Updated on 2022-09-08 at 01:49:00 +0000

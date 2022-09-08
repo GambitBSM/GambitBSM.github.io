@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[SpecBit](/documentation/code/files/dir_6865c7f35052b24e2a97335b465981e3/)**  |
+| **[SpecBit](/documentation/code/files/dir_6865c7f35052b24e2a97335b465981e3/#dir-gambit-specbit)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

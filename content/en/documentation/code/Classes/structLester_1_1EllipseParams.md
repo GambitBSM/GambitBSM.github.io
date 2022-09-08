@@ -15,24 +15,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/)**(const double c_xx2, const double c_yy2, const double c_xy2, const double c_x2, const double c_y2, const double c2) |
-| | **[EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/)**() |
-| void | **[setDet](/documentation/code/classes/structlester_1_1ellipseparams/)**() |
-| | **[EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/)**(const double x0, const double y0) |
-| double | **[lesterFactor](/documentation/code/classes/structlester_1_1ellipseparams/)**(const [EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/) & e2) const |
-| bool | **[operator==](/documentation/code/classes/structlester_1_1ellipseparams/)**(const [EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/) & other) const |
+| | **[EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/#function-lesterellipseparams-ellipseparams)**(const double c_xx2, const double c_yy2, const double c_xy2, const double c_x2, const double c_y2, const double c2) |
+| | **[EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/#function-lesterellipseparams-ellipseparams)**() |
+| void | **[setDet](/documentation/code/classes/structlester_1_1ellipseparams/#function-lesterellipseparams-setdet)**() |
+| | **[EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/#function-lesterellipseparams-ellipseparams)**(const double x0, const double y0) |
+| double | **[lesterFactor](/documentation/code/classes/structlester_1_1ellipseparams/#function-lesterellipseparams-lesterfactor)**(const [EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/) & e2) const |
+| bool | **[operator==](/documentation/code/classes/structlester_1_1ellipseparams/#function-lesterellipseparams-operator)**(const [EllipseParams](/documentation/code/classes/structlester_1_1ellipseparams/) & other) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[c_xx](/documentation/code/classes/structlester_1_1ellipseparams/)**  |
-| double | **[c_yy](/documentation/code/classes/structlester_1_1ellipseparams/)**  |
-| double | **[c_xy](/documentation/code/classes/structlester_1_1ellipseparams/)**  |
-| double | **[c_x](/documentation/code/classes/structlester_1_1ellipseparams/)**  |
-| double | **[c_y](/documentation/code/classes/structlester_1_1ellipseparams/)**  |
-| double | **[c](/documentation/code/classes/structlester_1_1ellipseparams/)**  |
-| double | **[det](/documentation/code/classes/structlester_1_1ellipseparams/)**  |
+| double | **[c_xx](/documentation/code/classes/structlester_1_1ellipseparams/#variable-lesterellipseparams-c-xx)**  |
+| double | **[c_yy](/documentation/code/classes/structlester_1_1ellipseparams/#variable-lesterellipseparams-c-yy)**  |
+| double | **[c_xy](/documentation/code/classes/structlester_1_1ellipseparams/#variable-lesterellipseparams-c-xy)**  |
+| double | **[c_x](/documentation/code/classes/structlester_1_1ellipseparams/#variable-lesterellipseparams-c-x)**  |
+| double | **[c_y](/documentation/code/classes/structlester_1_1ellipseparams/#variable-lesterellipseparams-c-y)**  |
+| double | **[c](/documentation/code/classes/structlester_1_1ellipseparams/#variable-lesterellipseparams-c)**  |
+| double | **[det](/documentation/code/classes/structlester_1_1ellipseparams/#variable-lesterellipseparams-det)**  |
 
 ## Public Functions Documentation
 
@@ -145,4 +145,4 @@ double det;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

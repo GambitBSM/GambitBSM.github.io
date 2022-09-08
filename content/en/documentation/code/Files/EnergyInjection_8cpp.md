@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[addParticle](/documentation/code/files/energyinjection_8cpp/)**(Name, Mass, spinX2)  |
-|  | **[addParticle](/documentation/code/files/energyinjection_8cpp/)**(Name, Mass, spinX2)  |
+|  | **[addParticle](/documentation/code/files/energyinjection_8cpp/#define-energyinjection-cpp-addparticle)**(Name, Mass, spinX2)  |
+|  | **[addParticle](/documentation/code/files/energyinjection_8cpp/#define-energyinjection-cpp-addparticle)**(Name, Mass, spinX2)  |
 
 ## Detailed Description
 
@@ -366,4 +366,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

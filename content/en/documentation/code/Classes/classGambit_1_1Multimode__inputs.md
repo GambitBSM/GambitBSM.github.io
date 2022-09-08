@@ -17,31 +17,31 @@ Class containing the inputs used for inputs to MultiModeCode.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Multimode_inputs](/documentation/code/classes/classgambit_1_1multimode__inputs/)**() |
+| | **[Multimode_inputs](/documentation/code/classes/classgambit_1_1multimode__inputs/#function-gambitmultimode-inputs-multimode-inputs)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[silence_output](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| double | **[k_min](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| double | **[k_max](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[numsteps](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| double | **[k_pivot](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| double | **[N_pivot](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| double | **[dlnk](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[num_inflaton](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[potential_choice](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[vparam_rows](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| std::vector< double > | **[vparams](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| std::vector< double > | **[phi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| std::vector< double > | **[dphi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[slowroll_infl_end](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[instreheat](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[use_deltaN_SR](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[evaluate_modes](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[use_horiz_cross_approx](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
-| int | **[get_runningofrunning](/documentation/code/classes/classgambit_1_1multimode__inputs/)**  |
+| int | **[silence_output](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-silence-output)**  |
+| double | **[k_min](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-k-min)**  |
+| double | **[k_max](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-k-max)**  |
+| int | **[numsteps](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-numsteps)**  |
+| double | **[k_pivot](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-k-pivot)**  |
+| double | **[N_pivot](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-n-pivot)**  |
+| double | **[dlnk](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-dlnk)**  |
+| int | **[num_inflaton](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-num-inflaton)**  |
+| int | **[potential_choice](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-potential-choice)**  |
+| int | **[vparam_rows](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-vparam-rows)**  |
+| std::vector< double > | **[vparams](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-vparams)**  |
+| std::vector< double > | **[phi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-phi-init0)**  |
+| std::vector< double > | **[dphi_init0](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-dphi-init0)**  |
+| int | **[slowroll_infl_end](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-slowroll-infl-end)**  |
+| int | **[instreheat](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-instreheat)**  |
+| int | **[use_deltaN_SR](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-use-deltan-sr)**  |
+| int | **[evaluate_modes](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-evaluate-modes)**  |
+| int | **[use_horiz_cross_approx](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-use-horiz-cross-approx)**  |
+| int | **[get_runningofrunning](/documentation/code/classes/classgambit_1_1multimode__inputs/#variable-gambitmultimode-inputs-get-runningofrunning)**  |
 
 ## Public Functions Documentation
 
@@ -189,4 +189,4 @@ int get_runningofrunning;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

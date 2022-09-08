@@ -15,12 +15,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| fh_real | **[Bsg_MSSM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/)**  |
-| fh_real | **[Bsg_SM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/)**  |
-| fh_real | **[deltaMs_MSSM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/)**  |
-| fh_real | **[deltaMs_SM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/)**  |
-| fh_real | **[Bsmumu_MSSM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/)**  |
-| fh_real | **[Bsmumu_SM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/)**  |
+| fh_real | **[Bsg_MSSM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/#variable-gambitfh-flavourobs-container-bsg-mssm)**  |
+| fh_real | **[Bsg_SM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/#variable-gambitfh-flavourobs-container-bsg-sm)**  |
+| fh_real | **[deltaMs_MSSM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/#variable-gambitfh-flavourobs-container-deltams-mssm)**  |
+| fh_real | **[deltaMs_SM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/#variable-gambitfh-flavourobs-container-deltams-sm)**  |
+| fh_real | **[Bsmumu_MSSM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/#variable-gambitfh-flavourobs-container-bsmumu-mssm)**  |
+| fh_real | **[Bsmumu_SM](/documentation/code/classes/structgambit_1_1fh__flavourobs__container/#variable-gambitfh-flavourobs-container-bsmumu-sm)**  |
 
 ## Public Attributes Documentation
 
@@ -68,4 +68,4 @@ fh_real Bsmumu_SM;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

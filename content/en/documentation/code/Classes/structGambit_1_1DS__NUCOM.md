@@ -15,12 +15,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 29, 1, 3 > | **[ans0br](/documentation/code/classes/structgambit_1_1ds__nucom/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 15 > | **[anscbr](/documentation/code/classes/structgambit_1_1ds__nucom/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3 > | **[ans0m](/documentation/code/classes/structgambit_1_1ds__nucom/)**  |
-| Fdouble | **[anscm](/documentation/code/classes/structgambit_1_1ds__nucom/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 29, 1, 6 > | **[anch_2body](/documentation/code/classes/structgambit_1_1ds__nucom/)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 29, 1, 2 > | **[yieldchannels_line](/documentation/code/classes/structgambit_1_1ds__nucom/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 29, 1, 3 > | **[ans0br](/documentation/code/classes/structgambit_1_1ds__nucom/#variable-gambitds-nucom-ans0br)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 15 > | **[anscbr](/documentation/code/classes/structgambit_1_1ds__nucom/#variable-gambitds-nucom-anscbr)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3 > | **[ans0m](/documentation/code/classes/structgambit_1_1ds__nucom/#variable-gambitds-nucom-ans0m)**  |
+| Fdouble | **[anscm](/documentation/code/classes/structgambit_1_1ds__nucom/#variable-gambitds-nucom-anscm)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 29, 1, 6 > | **[anch_2body](/documentation/code/classes/structgambit_1_1ds__nucom/#variable-gambitds-nucom-anch-2body)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 29, 1, 2 > | **[yieldchannels_line](/documentation/code/classes/structgambit_1_1ds__nucom/#variable-gambitds-nucom-yieldchannels-line)**  |
 
 ## Public Attributes Documentation
 
@@ -68,4 +68,4 @@ Farray< Finteger, 1, 29, 1, 2 > yieldchannels_line;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

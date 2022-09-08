@@ -20,32 +20,32 @@ Inherits from [Gambit::SLHAeaModel](/documentation/code/classes/classgambit_1_1s
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SMea](/documentation/code/classes/classgambit_1_1smea/)**()<br>Constructors.  |
-| | **[SMea](/documentation/code/classes/classgambit_1_1smea/)**(const SLHAea::Coll & input)<br>Constructor via SLHAea object.  |
-| double | **[get_MZ_pole](/documentation/code/classes/classgambit_1_1smea/)**() const<br>Getters for SM information.  |
-| double | **[get_Mtop_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_MbMb](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_McMc](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_Mtau_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_Mmuon_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_Melectron_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_Mnu1_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_Mnu2_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_Mnu3_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_MPhoton_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_MGluon_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_MPhoton](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_MGluon](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_MW_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_sinthW2_pole](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_MW_unc](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_md](/documentation/code/classes/classgambit_1_1smea/)**() const<br>Running masses.  |
-| double | **[get_mu](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_ms](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_mD](/documentation/code/classes/classgambit_1_1smea/)**(int i) const |
-| double | **[get_mU](/documentation/code/classes/classgambit_1_1smea/)**(int i) const |
-| double | **[get_alpha](/documentation/code/classes/classgambit_1_1smea/)**() const |
-| double | **[get_alphaS](/documentation/code/classes/classgambit_1_1smea/)**() const |
+| | **[SMea](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-smea)**()<br>Constructors.  |
+| | **[SMea](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-smea)**(const SLHAea::Coll & input)<br>Constructor via SLHAea object.  |
+| double | **[get_MZ_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mz-pole)**() const<br>Getters for SM information.  |
+| double | **[get_Mtop_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mtop-pole)**() const |
+| double | **[get_MbMb](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mbmb)**() const |
+| double | **[get_McMc](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mcmc)**() const |
+| double | **[get_Mtau_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mtau-pole)**() const |
+| double | **[get_Mmuon_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mmuon-pole)**() const |
+| double | **[get_Melectron_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-melectron-pole)**() const |
+| double | **[get_Mnu1_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mnu1-pole)**() const |
+| double | **[get_Mnu2_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mnu2-pole)**() const |
+| double | **[get_Mnu3_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mnu3-pole)**() const |
+| double | **[get_MPhoton_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mphoton-pole)**() const |
+| double | **[get_MGluon_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mgluon-pole)**() const |
+| double | **[get_MPhoton](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mphoton)**() const |
+| double | **[get_MGluon](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mgluon)**() const |
+| double | **[get_MW_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mw-pole)**() const |
+| double | **[get_sinthW2_pole](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-sinthw2-pole)**() const |
+| double | **[get_MW_unc](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mw-unc)**() const |
+| double | **[get_md](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-md)**() const<br>Running masses.  |
+| double | **[get_mu](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mu)**() const |
+| double | **[get_ms](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-ms)**() const |
+| double | **[get_mD](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-md)**(int i) const |
+| double | **[get_mU](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-mu)**(int i) const |
+| double | **[get_alpha](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-alpha)**() const |
+| double | **[get_alphaS](/documentation/code/classes/classgambit_1_1smea/#function-gambitsmea-get-alphas)**() const |
 
 ## Additional inherited members
 
@@ -53,22 +53,22 @@ Inherits from [Gambit::SLHAeaModel](/documentation/code/classes/classgambit_1_1s
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/)**()<br>Constructors.  |
-| | **[SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/)**(const SLHAea::Coll & input)<br>Constructor via SLHAea object.  |
-| int | **[slha_version](/documentation/code/classes/classgambit_1_1slhaeamodel/)**() const<br>Get the SLHA version of the internal SLHAea object.  |
-| const SLHAea::Coll & | **[get_slhaea](/documentation/code/classes/classgambit_1_1slhaeamodel/)**() const<br>Get the internal SLHAea object.  |
-| const std::map< int, int > & | **[PDG_translator](/documentation/code/classes/classgambit_1_1slhaeamodel/)**() const<br>PDG code translation map, for special cases where an SLHA file has been read in and the PDG codes changed.  |
-| double | **[getdata](/documentation/code/classes/classgambit_1_1slhaeamodel/)**(const std::string & block, int index) const<br>Helper functions to do error checking for SLHAea object contents.  |
-| double | **[getdata](/documentation/code/classes/classgambit_1_1slhaeamodel/)**(const std::string & block, int i, int j) const<br>Two indices.  |
-| bool | **[checkdata](/documentation/code/classes/classgambit_1_1slhaeamodel/)**(const std::string & block, int index) const |
+| | **[SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-gambitslhaeamodel-slhaeamodel)**()<br>Constructors.  |
+| | **[SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-gambitslhaeamodel-slhaeamodel)**(const SLHAea::Coll & input)<br>Constructor via SLHAea object.  |
+| int | **[slha_version](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-gambitslhaeamodel-slha-version)**() const<br>Get the SLHA version of the internal SLHAea object.  |
+| const SLHAea::Coll & | **[get_slhaea](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-gambitslhaeamodel-get-slhaea)**() const<br>Get the internal SLHAea object.  |
+| const std::map< int, int > & | **[PDG_translator](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-gambitslhaeamodel-pdg-translator)**() const<br>PDG code translation map, for special cases where an SLHA file has been read in and the PDG codes changed.  |
+| double | **[getdata](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-gambitslhaeamodel-getdata)**(const std::string & block, int index) const<br>Helper functions to do error checking for SLHAea object contents.  |
+| double | **[getdata](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-gambitslhaeamodel-getdata)**(const std::string & block, int i, int j) const<br>Two indices.  |
+| bool | **[checkdata](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-gambitslhaeamodel-checkdata)**(const std::string & block, int index) const |
 
 **Protected Attributes inherited from [Gambit::SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| SLHAea::Coll | **[data](/documentation/code/classes/classgambit_1_1slhaeamodel/)** <br>SLHAea object.  |
-| int | **[wrapped_slha_version](/documentation/code/classes/classgambit_1_1slhaeamodel/)** <br>SLHA version of SLHAea object.  |
-| std::map< int, int > | **[PDG_translation_map](/documentation/code/classes/classgambit_1_1slhaeamodel/)** <br>PDG translation map (e.g. from SLHA1 to SLHA2 for MSSMskeleton)  |
+| SLHAea::Coll | **[data](/documentation/code/classes/classgambit_1_1slhaeamodel/#variable-gambitslhaeamodel-data)** <br>SLHAea object.  |
+| int | **[wrapped_slha_version](/documentation/code/classes/classgambit_1_1slhaeamodel/#variable-gambitslhaeamodel-wrapped-slha-version)** <br>SLHA version of SLHAea object.  |
+| std::map< int, int > | **[PDG_translation_map](/documentation/code/classes/classgambit_1_1slhaeamodel/#variable-gambitslhaeamodel-pdg-translation-map)** <br>PDG translation map (e.g. from SLHA1 to SLHA2 for MSSMskeleton)  |
 
 
 ## Detailed Description
@@ -284,4 +284,4 @@ double get_alphaS() const
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

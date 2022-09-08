@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[ibcom_x](/documentation/code/classes/structgambit_1_1ds__ibintvars/)**  |
-| Fdouble | **[ibcom_z](/documentation/code/classes/structgambit_1_1ds__ibintvars/)**  |
-| Fdouble | **[ibcom_mx](/documentation/code/classes/structgambit_1_1ds__ibintvars/)**  |
-| Fdouble | **[ibcom_mp1](/documentation/code/classes/structgambit_1_1ds__ibintvars/)**  |
-| Fdouble | **[ibcom_mp2](/documentation/code/classes/structgambit_1_1ds__ibintvars/)**  |
-| Finteger | **[intch](/documentation/code/classes/structgambit_1_1ds__ibintvars/)**  |
-| Finteger | **[intyield](/documentation/code/classes/structgambit_1_1ds__ibintvars/)**  |
+| Fdouble | **[ibcom_x](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-gambitds-ibintvars-ibcom-x)**  |
+| Fdouble | **[ibcom_z](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-gambitds-ibintvars-ibcom-z)**  |
+| Fdouble | **[ibcom_mx](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-gambitds-ibintvars-ibcom-mx)**  |
+| Fdouble | **[ibcom_mp1](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-gambitds-ibintvars-ibcom-mp1)**  |
+| Fdouble | **[ibcom_mp2](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-gambitds-ibintvars-ibcom-mp2)**  |
+| Finteger | **[intch](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-gambitds-ibintvars-intch)**  |
+| Finteger | **[intyield](/documentation/code/classes/structgambit_1_1ds__ibintvars/#variable-gambitds-ibintvars-intyield)**  |
 
 ## Public Attributes Documentation
 
@@ -76,4 +76,4 @@ Finteger intyield;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

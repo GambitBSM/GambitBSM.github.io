@@ -19,49 +19,49 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [procRec](/documentation/code/classes/structprocrec/) | **[procRec](/documentation/code/files/main_8c/)**  |
+| typedef struct [procRec](/documentation/code/classes/structprocrec/) | **[procRec](/documentation/code/files/main_8c/#typedef-main-c-procrec)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[prepareWorkPlace](/documentation/code/files/main_8c/)**(void ) |
-| char * | **[pdg2name](/documentation/code/files/main_8c/)**(int pdg) |
-| char * | **[pdg2mass](/documentation/code/files/main_8c/)**(int pdg) |
-| char * | **[pdg2width](/documentation/code/files/main_8c/)**(int pdg) |
-| int | **[checkWorkPlace](/documentation/code/files/main_8c/)**(void ) |
-| int | **[checkMtime](/documentation/code/files/main_8c/)**(char * fname) |
-| void * | **[newSymbol](/documentation/code/files/main_8c/)**(void * handle, char * name) |
-| void | **[dClose](/documentation/code/files/main_8c/)**(void * handle) |
-| REAL * | **[varAddress](/documentation/code/files/main_8c/)**(char * name) |
-| int | **[passParameters](/documentation/code/files/main_8c/)**(numout * cc) |
-| void | **[delAllLib](/documentation/code/files/main_8c/)**(void ) |
-| void | **[cleanDecayTable](/documentation/code/files/main_8c/)**(void ) |
-| int | **[pTabPos](/documentation/code/files/main_8c/)**(char * name) |
-| double | **[pMass](/documentation/code/files/main_8c/)**(char * name) |
-| double | **[pWidth](/documentation/code/files/main_8c/)**(char * name, txtList * LL) |
-| double | **[aWidth](/documentation/code/files/main_8c/)**(char * name) |
-| int | **[pListEq](/documentation/code/files/main_8c/)**(char * txt1, char * txt2) |
-| numout * | **[loadLib](/documentation/code/files/main_8c/)**(void * handle, char * lib) |
-| void * | **[dLoad](/documentation/code/files/main_8c/)**(char * libName) |
-| numout * | **[getMEcode](/documentation/code/files/main_8c/)**(int twidth, int Gauge, char * Process, char * excludeVirtual, char * excludeOut, char * lib) |
-| int | **[findVal](/documentation/code/files/main_8c/)**(char * name, double * val) |
-| double | **[findValW](/documentation/code/files/main_8c/)**(char * name) |
-| int | **[procInfo2](/documentation/code/files/main_8c/)**(numout * cc, int nsub, char ** name, REAL * mass) |
+| int | **[prepareWorkPlace](/documentation/code/files/main_8c/#function-main-c-prepareworkplace)**(void ) |
+| char * | **[pdg2name](/documentation/code/files/main_8c/#function-main-c-pdg2name)**(int pdg) |
+| char * | **[pdg2mass](/documentation/code/files/main_8c/#function-main-c-pdg2mass)**(int pdg) |
+| char * | **[pdg2width](/documentation/code/files/main_8c/#function-main-c-pdg2width)**(int pdg) |
+| int | **[checkWorkPlace](/documentation/code/files/main_8c/#function-main-c-checkworkplace)**(void ) |
+| int | **[checkMtime](/documentation/code/files/main_8c/#function-main-c-checkmtime)**(char * fname) |
+| void * | **[newSymbol](/documentation/code/files/main_8c/#function-main-c-newsymbol)**(void * handle, char * name) |
+| void | **[dClose](/documentation/code/files/main_8c/#function-main-c-dclose)**(void * handle) |
+| REAL * | **[varAddress](/documentation/code/files/main_8c/#function-main-c-varaddress)**(char * name) |
+| int | **[passParameters](/documentation/code/files/main_8c/#function-main-c-passparameters)**(numout * cc) |
+| void | **[delAllLib](/documentation/code/files/main_8c/#function-main-c-delalllib)**(void ) |
+| void | **[cleanDecayTable](/documentation/code/files/main_8c/#function-main-c-cleandecaytable)**(void ) |
+| int | **[pTabPos](/documentation/code/files/main_8c/#function-main-c-ptabpos)**(char * name) |
+| double | **[pMass](/documentation/code/files/main_8c/#function-main-c-pmass)**(char * name) |
+| double | **[pWidth](/documentation/code/files/main_8c/#function-main-c-pwidth)**(char * name, txtList * LL) |
+| double | **[aWidth](/documentation/code/files/main_8c/#function-main-c-awidth)**(char * name) |
+| int | **[pListEq](/documentation/code/files/main_8c/#function-main-c-plisteq)**(char * txt1, char * txt2) |
+| numout * | **[loadLib](/documentation/code/files/main_8c/#function-main-c-loadlib)**(void * handle, char * lib) |
+| void * | **[dLoad](/documentation/code/files/main_8c/#function-main-c-dload)**(char * libName) |
+| numout * | **[getMEcode](/documentation/code/files/main_8c/#function-main-c-getmecode)**(int twidth, int Gauge, char * Process, char * excludeVirtual, char * excludeOut, char * lib) |
+| int | **[findVal](/documentation/code/files/main_8c/#function-main-c-findval)**(char * name, double * val) |
+| double | **[findValW](/documentation/code/files/main_8c/#function-main-c-findvalw)**(char * name) |
+| int | **[procInfo2](/documentation/code/files/main_8c/#function-main-c-procinfo2)**(numout * cc, int nsub, char ** name, REAL * mass) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| char * | **[libDir](/documentation/code/files/main_8c/)**  |
-| char * | **[modelDir](/documentation/code/files/main_8c/)**  |
-| char * | **[compDir](/documentation/code/files/main_8c/)**  |
-| char * | **[calchepDir](/documentation/code/files/main_8c/)**  |
-| int | **[modelNum](/documentation/code/files/main_8c/)**  |
-| int | **[ForceUG](/documentation/code/files/main_8c/)**  |
-| [procRec](/documentation/code/classes/structprocrec/) * | **[allProc](/documentation/code/files/main_8c/)**  |
-| decayTableStr * | **[decayTable](/documentation/code/files/main_8c/)**  |
-| int | **[nPrtcls_old](/documentation/code/files/main_8c/)**  |
+| char * | **[libDir](/documentation/code/files/main_8c/#variable-main-c-libdir)**  |
+| char * | **[modelDir](/documentation/code/files/main_8c/#variable-main-c-modeldir)**  |
+| char * | **[compDir](/documentation/code/files/main_8c/#variable-main-c-compdir)**  |
+| char * | **[calchepDir](/documentation/code/files/main_8c/#variable-main-c-calchepdir)**  |
+| int | **[modelNum](/documentation/code/files/main_8c/#variable-main-c-modelnum)**  |
+| int | **[ForceUG](/documentation/code/files/main_8c/#variable-main-c-forceug)**  |
+| [procRec](/documentation/code/classes/structprocrec/) * | **[allProc](/documentation/code/files/main_8c/#variable-main-c-allproc)**  |
+| decayTableStr * | **[decayTable](/documentation/code/files/main_8c/#variable-main-c-decaytable)**  |
+| int | **[nPrtcls_old](/documentation/code/files/main_8c/#variable-main-c-nprtcls-old)**  |
 
 ## Types Documentation
 
@@ -951,4 +951,4 @@ int procInfo2(numout*cc,int nsub,char**name,REAL*mass)
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

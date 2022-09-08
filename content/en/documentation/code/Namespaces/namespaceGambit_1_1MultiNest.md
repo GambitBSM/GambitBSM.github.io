@@ -19,20 +19,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/namespaces/namespacegambit_1_1multinest/)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
+| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/namespaces/namespacegambit_1_1multinest/#typedef-gambitmultinest-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[callback_loglike](/documentation/code/namespaces/namespacegambit_1_1multinest/)**(double * Cube, int ndim, int npars, void * )<br>Plain-vanilla C-functions to pass to Multinest for the callbacks.  |
-| void | **[callback_dumper](/documentation/code/namespaces/namespacegambit_1_1multinest/)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * paramConstr, double maxLogLike, double logZ, double logZerr, void * ) |
+| double | **[callback_loglike](/documentation/code/namespaces/namespacegambit_1_1multinest/#function-gambitmultinest-callback-loglike)**(double * Cube, int ndim, int npars, void * )<br>Plain-vanilla C-functions to pass to Multinest for the callbacks.  |
+| void | **[callback_dumper](/documentation/code/namespaces/namespacegambit_1_1multinest/#function-gambitmultinest-callback-dumper)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * paramConstr, double maxLogLike, double logZ, double logZerr, void * ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/) * | **[global_loglike_object](/documentation/code/namespaces/namespacegambit_1_1multinest/)** <br>Global pointer to loglikelihood wrapper object, for use in the MultiNest callback functions.  |
+| [LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/) * | **[global_loglike_object](/documentation/code/namespaces/namespacegambit_1_1multinest/#variable-gambitmultinest-global-loglike-object)** <br>Global pointer to loglikelihood wrapper object, for use in the MultiNest callback functions.  |
 
 ## Types Documentation
 
@@ -97,4 +97,4 @@ Global pointer to loglikelihood wrapper object, for use in the MultiNest callbac
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

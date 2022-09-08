@@ -30,7 +30,7 @@ description: "[No description available]"
   * 2014, 2015 Jan - Jul
 
 
-Some member function definitions from classes in [spec_head.hpp](/documentation/code/files/spec__head_8hpp/).
+Some member function definitions from classes in [spec_head.hpp](/documentation/code/files/spec__head_8hpp/#file-elements-spec-head-hpp).
 
 
 
@@ -380,4 +380,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

@@ -13,14 +13,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/susy_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/susy_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/susy_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/susy_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/susy_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/susy_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/susy_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/susy_8hpp/)**  |
+|  | **[MODULE](/documentation/code/files/susy_8hpp/#define-susy-hpp-module)**  |
+|  | **[CAPABILITY](/documentation/code/files/susy_8hpp/#define-susy-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-susy-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/susy_8hpp/#define-susy-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-susy-hpp-function)**  |
+|  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-susy-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/susy_8hpp/#define-susy-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-susy-hpp-function)**  |
 
 ## Detailed Description
 
@@ -217,4 +217,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:22 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

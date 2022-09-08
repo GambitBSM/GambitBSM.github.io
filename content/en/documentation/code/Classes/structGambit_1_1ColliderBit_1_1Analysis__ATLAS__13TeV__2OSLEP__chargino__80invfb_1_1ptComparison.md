@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb_1_1ptcomparison/)**(const HEPUtils::Particle * i, const HEPUtils::Particle * j) |
+| bool | **[operator()](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb_1_1ptcomparison/#function-gambitcolliderbitanalysis-atlas-13tev-2oslep-chargino-80invfbptcomparison-operator)**(const HEPUtils::Particle * i, const HEPUtils::Particle * j) |
 
 ## Public Functions Documentation
 
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

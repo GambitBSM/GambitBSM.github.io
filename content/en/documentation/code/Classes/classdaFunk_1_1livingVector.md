@@ -17,8 +17,8 @@ Inherits from std::vector< size_t >
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[~livingVector](/documentation/code/classes/classdafunk_1_1livingvector/)**() |
-| bool & | **[is_dead](/documentation/code/classes/classdafunk_1_1livingvector/)**() |
+| | **[~livingVector](/documentation/code/classes/classdafunk_1_1livingvector/#function-dafunklivingvector-livingvector)**() |
+| bool & | **[is_dead](/documentation/code/classes/classdafunk_1_1livingvector/#function-dafunklivingvector-is-dead)**() |
 
 ## Public Functions Documentation
 
@@ -38,4 +38,4 @@ static inline bool & is_dead()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

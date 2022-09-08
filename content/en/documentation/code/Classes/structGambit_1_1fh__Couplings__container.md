@@ -15,12 +15,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [fh_complex](/documentation/code/classes/classgambit_1_1fcomplext/)[ncouplings] | **[couplings](/documentation/code/classes/structgambit_1_1fh__couplings__container/)**  |
-| [fh_complex](/documentation/code/classes/classgambit_1_1fcomplext/)[ncouplingsms] | **[couplings_sm](/documentation/code/classes/structgambit_1_1fh__couplings__container/)**  |
-| fh_real[ngammas] | **[gammas](/documentation/code/classes/structgambit_1_1fh__couplings__container/)**  |
-| fh_real[ngammasms] | **[gammas_sm](/documentation/code/classes/structgambit_1_1fh__couplings__container/)**  |
-| [str](/documentation/code/namespaces/namespacegambit/) | **[calculator](/documentation/code/classes/structgambit_1_1fh__couplings__container/)**  |
-| [str](/documentation/code/namespaces/namespacegambit/) | **[calculator_version](/documentation/code/classes/structgambit_1_1fh__couplings__container/)**  |
+| [fh_complex](/documentation/code/classes/classgambit_1_1fcomplext/)[ncouplings] | **[couplings](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-gambitfh-couplings-container-couplings)**  |
+| [fh_complex](/documentation/code/classes/classgambit_1_1fcomplext/)[ncouplingsms] | **[couplings_sm](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-gambitfh-couplings-container-couplings-sm)**  |
+| fh_real[ngammas] | **[gammas](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-gambitfh-couplings-container-gammas)**  |
+| fh_real[ngammasms] | **[gammas_sm](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-gambitfh-couplings-container-gammas-sm)**  |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[calculator](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-gambitfh-couplings-container-calculator)**  |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[calculator_version](/documentation/code/classes/structgambit_1_1fh__couplings__container/#variable-gambitfh-couplings-container-calculator-version)**  |
 
 ## Public Attributes Documentation
 
@@ -68,4 +68,4 @@ str calculator_version;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

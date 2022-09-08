@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[RETRIEVE_INT](/documentation/code/files/sqliteprinter_2retrieve__overloads_8cpp/)**(TYPE) <br>Retrieve functions.  |
-|  | **[RETRIEVE_REAL](/documentation/code/files/sqliteprinter_2retrieve__overloads_8cpp/)**(TYPE)  |
+|  | **[RETRIEVE_INT](/documentation/code/files/sqliteprinter_2retrieve__overloads_8cpp/#define-sqliteprinter-retrieve-overloads-cpp-retrieve-int)**(TYPE) <br>Retrieve functions.  |
+|  | **[RETRIEVE_REAL](/documentation/code/files/sqliteprinter_2retrieve__overloads_8cpp/#define-sqliteprinter-retrieve-overloads-cpp-retrieve-real)**(TYPE)  |
 
 ## Detailed Description
 
@@ -247,4 +247,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

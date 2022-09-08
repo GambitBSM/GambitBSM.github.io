@@ -19,8 +19,8 @@ Inherits from std::exception
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SoftShutdownException](/documentation/code/classes/classgambit_1_1softshutdownexception/)**(const std::string & message)<br>[SoftShutdownException](/documentation/code/classes/classgambit_1_1softshutdownexception/) member functions.  |
-| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1softshutdownexception/)**() const |
+| | **[SoftShutdownException](/documentation/code/classes/classgambit_1_1softshutdownexception/#function-gambitsoftshutdownexception-softshutdownexception)**(const std::string & message)<br>[SoftShutdownException](/documentation/code/classes/classgambit_1_1softshutdownexception/) member functions.  |
+| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1softshutdownexception/#function-gambitsoftshutdownexception-what)**() const |
 
 ## Public Functions Documentation
 
@@ -43,4 +43,4 @@ virtual const char * what() const
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

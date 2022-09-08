@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1is__same__type__internal_3_01void_07t_00_01args_8_8_8_08_00_01t_01_4/)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1is__same__type__internal_3_01void_07t_00_01args_8_8_8_08_00_01t_01_4/#variable-gambitis-same-type-internal-voidt-args-t-value)**  |
 
 ## Detailed Description
 
@@ -36,4 +36,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

@@ -27,10 +27,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[VPRINT](/documentation/code/files/basebaseprinter_8hpp/)**(r, data, elem)  |
-|  | **[ADD_VIRTUAL_PRINTS](/documentation/code/files/basebaseprinter_8hpp/)**(TYPES)  |
-|  | **[VRETRIEVE](/documentation/code/files/basebaseprinter_8hpp/)**(r, data, elem)  |
-|  | **[ADD_VIRTUAL_RETRIEVALS](/documentation/code/files/basebaseprinter_8hpp/)**(TYPES)  |
+|  | **[VPRINT](/documentation/code/files/basebaseprinter_8hpp/#define-basebaseprinter-hpp-vprint)**(r, data, elem)  |
+|  | **[ADD_VIRTUAL_PRINTS](/documentation/code/files/basebaseprinter_8hpp/#define-basebaseprinter-hpp-add-virtual-prints)**(TYPES)  |
+|  | **[VRETRIEVE](/documentation/code/files/basebaseprinter_8hpp/#define-basebaseprinter-hpp-vretrieve)**(r, data, elem)  |
+|  | **[ADD_VIRTUAL_RETRIEVALS](/documentation/code/files/basebaseprinter_8hpp/#define-basebaseprinter-hpp-add-virtual-retrievals)**(TYPES)  |
 
 ## Detailed Description
 
@@ -555,4 +555,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

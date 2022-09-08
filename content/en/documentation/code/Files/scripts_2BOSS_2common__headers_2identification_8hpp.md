@@ -13,12 +13,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/)**  |
-|  | **[BACKENDLANG](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/)**  |
-|  | **[VERSION](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/)**  |
-|  | **[REFERENCE](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/)**  |
-|  | **[DO_CLASSLOADING](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/)**  |
+|  | **[BACKENDNAME](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-scripts-boss-common-headers-identification-hpp-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-scripts-boss-common-headers-identification-hpp-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-scripts-boss-common-headers-identification-hpp-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-scripts-boss-common-headers-identification-hpp-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-scripts-boss-common-headers-identification-hpp-reference)**  |
+|  | **[DO_CLASSLOADING](/documentation/code/files/scripts_2boss_2common__headers_2identification_8hpp/#define-scripts-boss-common-headers-identification-hpp-do-classloading)**  |
 
 
 
@@ -87,4 +87,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:24 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

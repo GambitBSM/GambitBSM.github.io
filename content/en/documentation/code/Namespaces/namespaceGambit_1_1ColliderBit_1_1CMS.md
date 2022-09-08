@@ -12,29 +12,29 @@ CMS-specific efficiency and smearing functions for super fast detector simulatio
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[applyElectronTrackingEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Particle * > & electrons)<br>Randomly filter the supplied particle list by parameterised electron tracking efficiency.  |
-| void | **[applyElectronEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Particle * > & electrons) |
-| void | **[applyMuonTrackEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Particle * > & muons) |
-| void | **[applyMuonEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
-| void | **[applyTauEfficiency](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Particle * > & taus)<br>Randomly filter the supplied particle list by parameterised tau efficiency.  |
-| void | **[smearElectronEnergy](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Particle * > & electrons)<br>Randomly smear the supplied electrons' momenta by parameterised resolutions.  |
-| void | **[smearMuonMomentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Particle * > & muons)<br>Randomly smear the supplied muons' momenta by parameterised resolutions.  |
-| void | **[smearJets](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Jet * > & jets)<br>Randomly smear the supplied jets' momenta by parameterised resolutions.  |
-| void | **[smearTaus](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Particle * > & taus)<br>Randomly smear the supplied hadronic taus' momenta by parameterised resolutions.  |
-| void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(double mis_id_prob, std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply user-specified b-tag misidentification rate (flat)  |
-| void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(double mis_id_prob, std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2LooseBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 loose WP.  |
-| void | **[applyCSVv2LooseBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
-| void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 medium WP.  |
-| void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyElectronTrackingEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applyelectrontrackingeff)**(std::vector< const HEPUtils::Particle * > & electrons)<br>Randomly filter the supplied particle list by parameterised electron tracking efficiency.  |
+| void | **[applyElectronEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applyelectroneff)**(std::vector< const HEPUtils::Particle * > & electrons) |
+| void | **[applyMuonTrackEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applymuontrackeff)**(std::vector< const HEPUtils::Particle * > & muons) |
+| void | **[applyMuonEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applymuoneff)**(std::vector< const HEPUtils::Particle * > & muons)<br>Randomly filter the supplied particle list by parameterised muon efficiency.  |
+| void | **[applyTauEfficiency](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applytauefficiency)**(std::vector< const HEPUtils::Particle * > & taus)<br>Randomly filter the supplied particle list by parameterised tau efficiency.  |
+| void | **[smearElectronEnergy](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-smearelectronenergy)**(std::vector< HEPUtils::Particle * > & electrons)<br>Randomly smear the supplied electrons' momenta by parameterised resolutions.  |
+| void | **[smearMuonMomentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-smearmuonmomentum)**(std::vector< HEPUtils::Particle * > & muons)<br>Randomly smear the supplied muons' momenta by parameterised resolutions.  |
+| void | **[smearJets](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-smearjets)**(std::vector< HEPUtils::Jet * > & jets)<br>Randomly smear the supplied jets' momenta by parameterised resolutions.  |
+| void | **[smearTaus](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-smeartaus)**(std::vector< HEPUtils::Particle * > & taus)<br>Randomly smear the supplied hadronic taus' momenta by parameterised resolutions.  |
+| void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2mediumbtageff)**(std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2mediumbtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2loosebtageff)**(std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2loosebtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applybtagmisid)**(double mis_id_prob, std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply user-specified b-tag misidentification rate (flat)  |
+| void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applybtagmisid)**(double mis_id_prob, std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2loosebtagmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2loosebtagmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2LooseBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2loosebtageffandmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 loose WP.  |
+| void | **[applyCSVv2LooseBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2loosebtageffandmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2mediumbtagmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2mediumbtagmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2mediumbtageffandmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 medium WP.  |
+| void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-gambitcolliderbitcms-applycsvv2mediumbtageffandmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
 
 
 ## Functions Documentation
@@ -332,4 +332,4 @@ inline void applyCSVv2MediumBtagEffAndMisId(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

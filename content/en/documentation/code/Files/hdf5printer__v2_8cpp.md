@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEFINE_GET_BUFFER](/documentation/code/files/hdf5printer__v2_8cpp/)**(TYPE) <br>Specialisation declarations for 'get_buffer' function for each buffer type.  |
+|  | **[DEFINE_GET_BUFFER](/documentation/code/files/hdf5printer__v2_8cpp/#define-hdf5printer-v2-cpp-define-get-buffer)**(TYPE) <br>Specialisation declarations for 'get_buffer' function for each buffer type.  |
 
 ## Detailed Description
 
@@ -2694,4 +2694,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

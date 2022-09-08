@@ -17,8 +17,8 @@ Class to manage a set of buffers for a single output type.  [More...](#detailed-
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[HDF5MasterBufferT](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffert/)**(bool sync)<br>Constructor.  |
-| [HDF5Buffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5buffer/)< T > & | **[get_buffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffert/)**(const std::string & label, const std::vector< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) > & buffered_points)<br>Retrieve buffer of our type for a given label.  |
+| | **[HDF5MasterBufferT](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffert/#function-gambitprintershdf5masterbuffert-hdf5masterbuffert)**(bool sync)<br>Constructor.  |
+| [HDF5Buffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5buffer/)< T > & | **[get_buffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffert/#function-gambitprintershdf5masterbuffert-get-buffer)**(const std::string & label, const std::vector< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) > & buffered_points)<br>Retrieve buffer of our type for a given label.  |
 
 ## Detailed Description
 
@@ -53,4 +53,4 @@ Retrieve buffer of our type for a given label.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

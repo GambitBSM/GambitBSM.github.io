@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< double > | **[E_el](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
-| std::vector< double > | **[E_ph](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
-| std::vector< double > | **[spec_el](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
-| std::vector< double > | **[spec_ph](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
+| std::vector< double > | **[E_el](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/#variable-gambitdarkagesenergy-injection-spectrum-e-el)**  |
+| std::vector< double > | **[E_ph](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/#variable-gambitdarkagesenergy-injection-spectrum-e-ph)**  |
+| std::vector< double > | **[spec_el](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/#variable-gambitdarkagesenergy-injection-spectrum-spec-el)**  |
+| std::vector< double > | **[spec_ph](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/#variable-gambitdarkagesenergy-injection-spectrum-spec-ph)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ std::vector< double > spec_ph;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

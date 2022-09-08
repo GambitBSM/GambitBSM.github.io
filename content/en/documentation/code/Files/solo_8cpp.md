@@ -21,14 +21,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/files/solo_8cpp/)**(int argc, char * argv[])<br>ColliderBit Solo main program.  |
+| int | **[main](/documentation/code/files/solo_8cpp/#function-solo-cpp-main)**(int argc, char * argv[])<br>ColliderBit Solo main program.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NULIKE_VERSION](/documentation/code/files/solo_8cpp/)**  |
-|  | **[NULIKE_SAFE_VERSION](/documentation/code/files/solo_8cpp/)**  |
+|  | **[NULIKE_VERSION](/documentation/code/files/solo_8cpp/#define-solo-cpp-nulike-version)**  |
+|  | **[NULIKE_SAFE_VERSION](/documentation/code/files/solo_8cpp/#define-solo-cpp-nulike-safe-version)**  |
 
 
 ## Functions Documentation
@@ -338,4 +338,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

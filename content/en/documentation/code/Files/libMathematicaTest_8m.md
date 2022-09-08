@@ -13,17 +13,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| (*) ::Package(*) ::Section(*) Dummy(*) author(*) t dat)[var_] | **[CalculateSquare](/documentation/code/files/libmathematicatest_8m/)**  |
-| CalculateSum[var1_, var2_] | **[__pad0__](/documentation/code/files/libmathematicatest_8m/)**  |
-| | **[Var2](/documentation/code/files/libmathematicatest_8m/)**  |
-| PrintVar[] | **[__pad1__](/documentation/code/files/libmathematicatest_8m/)**  |
-| PrintVarorVar2[check_] | **[__pad2__](/documentation/code/files/libmathematicatest_8m/)**  |
-| PrintVarorVar2[check_] | **[Var](/documentation/code/files/libmathematicatest_8m/)**  |
-| VarEqualVar2[] | **[__pad3__](/documentation/code/files/libmathematicatest_8m/)**  |
-| VarEqualVar2[]<>[var] | **[ToString](/documentation/code/files/libmathematicatest_8m/)**  |
-| VoidTest[] | **[__pad4__](/documentation/code/files/libmathematicatest_8m/)**  |
-| ExtractElement[list_, i_] | **[__pad5__](/documentation/code/files/libmathematicatest_8m/)**  |
-| ExtractElement[list_, i_][var_] | **[func](/documentation/code/files/libmathematicatest_8m/)**  |
+| (*) ::Package(*) ::Section(*) Dummy(*) author(*) t dat)[var_] | **[CalculateSquare](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-calculatesquare)**  |
+| CalculateSum[var1_, var2_] | **[__pad0__](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-pad0)**  |
+| | **[Var2](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-var2)**  |
+| PrintVar[] | **[__pad1__](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-pad1)**  |
+| PrintVarorVar2[check_] | **[__pad2__](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-pad2)**  |
+| PrintVarorVar2[check_] | **[Var](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-var)**  |
+| VarEqualVar2[] | **[__pad3__](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-pad3)**  |
+| VarEqualVar2[]<>[var] | **[ToString](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-tostring)**  |
+| VoidTest[] | **[__pad4__](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-pad4)**  |
+| ExtractElement[list_, i_] | **[__pad5__](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-pad5)**  |
+| ExtractElement[list_, i_][var_] | **[func](/documentation/code/files/libmathematicatest_8m/#variable-libmathematicatest-m-func)**  |
 
 
 
@@ -167,4 +167,4 @@ SquareList[list_]:=Table[list[[i]]^2,{i,Length[list]}]
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:00 +0000

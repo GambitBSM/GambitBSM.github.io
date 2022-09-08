@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_FUNCTION_I_MATH](/documentation/code/files/mathematica__macros_8hpp/)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend function macro for mathematica.  |
-|  | **[BE_VARIABLE_I_MATH](/documentation/code/files/mathematica__macros_8hpp/)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend variable macro for Mathematica.  |
+|  | **[BE_FUNCTION_I_MATH](/documentation/code/files/mathematica__macros_8hpp/#define-mathematica-macros-hpp-be-function-i-math)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend function macro for mathematica.  |
+|  | **[BE_VARIABLE_I_MATH](/documentation/code/files/mathematica__macros_8hpp/#define-mathematica-macros-hpp-be-variable-i-math)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend variable macro for Mathematica.  |
 
 ## Detailed Description
 
@@ -193,4 +193,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

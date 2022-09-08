@@ -20,27 +20,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**(DarkBit , TH_ProcessCatalog , OLD_CAPABILITY , TH_ProcessCatalog_WIMP , TH_ProcessCatalog , () , (mwimp, double) ) |
-| std::string void | **[dump_array_to_file](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**(const std::string & filename, const boost::multi_array< double, 2 > & a, const std::vector< double > & x, const std::vector< double > & y) |
-| void | **[dumpSpectrum](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**(std::vector< std::string > filenames, double mWIMP, double sv, std::vector< double > brList, double mPhi =-1) |
-| int | **[main](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**(int argc, char * argv[]) |
+| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__standalone__wimp_8cpp/#function-darkbit-standalone-wimp-cpp-quick-function)**(DarkBit , TH_ProcessCatalog , OLD_CAPABILITY , TH_ProcessCatalog_WIMP , TH_ProcessCatalog , () , (mwimp, double) ) |
+| std::string void | **[dump_array_to_file](/documentation/code/files/darkbit__standalone__wimp_8cpp/#function-darkbit-standalone-wimp-cpp-dump-array-to-file)**(const std::string & filename, const boost::multi_array< double, 2 > & a, const std::vector< double > & x, const std::vector< double > & y) |
+| void | **[dumpSpectrum](/documentation/code/files/darkbit__standalone__wimp_8cpp/#function-darkbit-standalone-wimp-cpp-dumpspectrum)**(std::vector< std::string > filenames, double mWIMP, double sv, std::vector< double > brList, double mPhi =-1) |
+| int | **[main](/documentation/code/files/darkbit__standalone__wimp_8cpp/#function-darkbit-standalone-wimp-cpp-main)**(int argc, char * argv[]) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[WIMP_properties](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**  |
-| | **[OLD_CAPABILITY](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**  |
-| | **[WIMP_properties_WIMP](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**  |
-| | **[WIMPprops](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**  |
-| | **[DarkMatter_ID](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**  |
-| | **[DarkMatterConj_ID](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**  |
+| | **[WIMP_properties](/documentation/code/files/darkbit__standalone__wimp_8cpp/#variable-darkbit-standalone-wimp-cpp-wimp-properties)**  |
+| | **[OLD_CAPABILITY](/documentation/code/files/darkbit__standalone__wimp_8cpp/#variable-darkbit-standalone-wimp-cpp-old-capability)**  |
+| | **[WIMP_properties_WIMP](/documentation/code/files/darkbit__standalone__wimp_8cpp/#variable-darkbit-standalone-wimp-cpp-wimp-properties-wimp)**  |
+| | **[WIMPprops](/documentation/code/files/darkbit__standalone__wimp_8cpp/#variable-darkbit-standalone-wimp-cpp-wimpprops)**  |
+| | **[DarkMatter_ID](/documentation/code/files/darkbit__standalone__wimp_8cpp/#variable-darkbit-standalone-wimp-cpp-darkmatter-id)**  |
+| | **[DarkMatterConj_ID](/documentation/code/files/darkbit__standalone__wimp_8cpp/#variable-darkbit-standalone-wimp-cpp-darkmatterconj-id)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[addParticle](/documentation/code/files/darkbit__standalone__wimp_8cpp/)**(Name, Mass, spinX2)  |
+|  | **[addParticle](/documentation/code/files/darkbit__standalone__wimp_8cpp/#define-darkbit-standalone-wimp-cpp-addparticle)**(Name, Mass, spinX2)  |
 
 ## Detailed Description
 
@@ -1224,4 +1224,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

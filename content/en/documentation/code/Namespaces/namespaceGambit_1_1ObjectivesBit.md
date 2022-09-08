@@ -13,31 +13,31 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Models::safe_param_map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/)< [Gambit::safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > | **[map](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**  |
+| typedef [Gambit::Models::safe_param_map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/)< [Gambit::safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > | **[map](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#typedef-gambitobjectivesbit-map)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< double > | **[get_arguments](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**([map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/) param) |
-| void | **[gaussian](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike) |
-| double | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double x, double y) |
-| double | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(std::vector< double > x) |
-| void | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Rosenbrock_function](https://en.wikipedia.org/wiki/Rosenbrock_function).  |
-| void | **[himmelblau](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Himmelblau%27s_function](https://en.wikipedia.org/wiki/Himmelblau%27s_function).  |
-| void | **[mccormick](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike) |
-| void | **[ackley](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Ackley_function](https://en.wikipedia.org/wiki/Ackley_function).  |
-| void | **[eggbox](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>Test problem 2 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
-| void | **[rastrigin](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Rastrigin_function](https://en.wikipedia.org/wiki/Rastrigin_function).  |
-| void | **[beale](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike) |
-| double | **[logaddexp](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double x, double y) |
-| void | **[shells](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>Test problem 1 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
-| void | **[styblinski_tang](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike) |
-| void | **[easom](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike) |
-| void | **[tf1](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>Analytic function 1 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf2](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>Analytic function 2 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf3](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>Analytic function 3 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
-| void | **[tf4](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**(double & loglike)<br>Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| std::vector< double > | **[get_arguments](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-get-arguments)**([map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/) param) |
+| void | **[gaussian](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-gaussian)**(double & loglike) |
+| double | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-rosenbrock)**(double x, double y) |
+| double | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-rosenbrock)**(std::vector< double > x) |
+| void | **[rosenbrock](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-rosenbrock)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Rosenbrock_function](https://en.wikipedia.org/wiki/Rosenbrock_function).  |
+| void | **[himmelblau](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-himmelblau)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Himmelblau%27s_function](https://en.wikipedia.org/wiki/Himmelblau%27s_function).  |
+| void | **[mccormick](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-mccormick)**(double & loglike) |
+| void | **[ackley](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-ackley)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Ackley_function](https://en.wikipedia.org/wiki/Ackley_function).  |
+| void | **[eggbox](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-eggbox)**(double & loglike)<br>Test problem 2 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
+| void | **[rastrigin](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-rastrigin)**(double & loglike)<br>See [https://en.wikipedia.org/wiki/Rastrigin_function](https://en.wikipedia.org/wiki/Rastrigin_function).  |
+| void | **[beale](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-beale)**(double & loglike) |
+| double | **[logaddexp](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-logaddexp)**(double x, double y) |
+| void | **[shells](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-shells)**(double & loglike)<br>Test problem 1 from [https://arxiv.org/abs/1306.2144](https://arxiv.org/abs/1306.2144).  |
+| void | **[styblinski_tang](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-styblinski-tang)**(double & loglike) |
+| void | **[easom](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-easom)**(double & loglike) |
+| void | **[tf1](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-tf1)**(double & loglike)<br>Analytic function 1 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf2](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-tf2)**(double & loglike)<br>Analytic function 2 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf3](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-tf3)**(double & loglike)<br>Analytic function 3 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
+| void | **[tf4](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/#function-gambitobjectivesbit-tf4)**(double & loglike)<br>Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/abs/2101.04525).  |
 
 ## Types Documentation
 
@@ -240,4 +240,4 @@ Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/ab
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

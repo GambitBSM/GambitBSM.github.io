@@ -19,7 +19,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/files/mainewinos__bino__winos__higgsinos_8cc/)**() |
+| int | **[main](/documentation/code/files/mainewinos__bino__winos__higgsinos_8cc/#function-mainewinos-bino-winos-higgsinos-cc-main)**() |
 
 
 ## Functions Documentation
@@ -98,4 +98,4 @@ int main() {
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

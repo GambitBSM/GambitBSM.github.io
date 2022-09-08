@@ -17,18 +17,18 @@ Struct to hold collections of function pointer maps to be filled by derived clas
 
 |                | Name           |
 | -------------- | -------------- |
-| MapTypes::fmap0 | **[map0](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap1 | **[map1](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap2 | **[map2](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap0W | **[map0W](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap1W | **[map1W](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap2W | **[map2W](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap0_extraM | **[map0_extraM](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap1_extraM | **[map1_extraM](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap2_extraM | **[map2_extraM](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap0_extraI | **[map0_extraI](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap1_extraI | **[map1_extraI](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
-| MapTypes::fmap2_extraI | **[map2_extraI](/documentation/code/classes/structgambit_1_1mapcollection/)**  |
+| MapTypes::fmap0 | **[map0](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map0)**  |
+| MapTypes::fmap1 | **[map1](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map1)**  |
+| MapTypes::fmap2 | **[map2](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map2)**  |
+| MapTypes::fmap0W | **[map0W](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map0w)**  |
+| MapTypes::fmap1W | **[map1W](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map1w)**  |
+| MapTypes::fmap2W | **[map2W](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map2w)**  |
+| MapTypes::fmap0_extraM | **[map0_extraM](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map0-extram)**  |
+| MapTypes::fmap1_extraM | **[map1_extraM](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map1-extram)**  |
+| MapTypes::fmap2_extraM | **[map2_extraM](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map2-extram)**  |
+| MapTypes::fmap0_extraI | **[map0_extraI](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map0-extrai)**  |
+| MapTypes::fmap1_extraI | **[map1_extraI](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map1-extrai)**  |
+| MapTypes::fmap2_extraI | **[map2_extraI](/documentation/code/classes/structgambit_1_1mapcollection/#variable-gambitmapcollection-map2-extrai)**  |
 
 ## Detailed Description
 
@@ -126,4 +126,4 @@ MapTypes::fmap2_extraI map2_extraI;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

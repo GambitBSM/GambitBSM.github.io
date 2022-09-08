@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef ::vevacious_1_0::VevaciousPlusPlus::VevaciousPlusPlus | **[VevaciousPlusPlus](/documentation/code/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/)**  |
+| typedef ::vevacious_1_0::VevaciousPlusPlus::VevaciousPlusPlus | **[VevaciousPlusPlus](/documentation/code/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/#typedef-gambitbackendsvevacious-1-0vevaciousplusplus-vevaciousplusplus)**  |
 
 ## Types Documentation
 
@@ -31,4 +31,4 @@ typedef ::vevacious_1_0::VevaciousPlusPlus::VevaciousPlusPlus Gambit::Backends::
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

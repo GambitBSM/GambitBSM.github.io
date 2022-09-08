@@ -19,13 +19,13 @@ Inherits from [Gambit::DefaultTraits](/documentation/code/classes/structgambit_1
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [SpectrumContents::MajoranaSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1majoranasingletdm__z2/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1majoranasingletdm__z2simplespec_01_4/)**  |
+| typedef [SpectrumContents::MajoranaSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1majoranasingletdm__z2/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1majoranasingletdm__z2simplespec_01_4/#typedef-gambitspectraits-modelsmajoranasingletdm-z2simplespec-contents)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1majoranasingletdm__z2simplespec_01_4/)**() |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1majoranasingletdm__z2simplespec_01_4/#function-gambitspectraits-modelsmajoranasingletdm-z2simplespec-name)**() |
 
 ## Additional inherited members
 
@@ -33,8 +33,8 @@ Inherits from [Gambit::DefaultTraits](/documentation/code/classes/structgambit_1
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [DummyModel](/documentation/code/classes/classgambit_1_1dummymodel/) | **[Model](/documentation/code/classes/structgambit_1_1defaulttraits/)**  |
-| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1defaulttraits/)**  |
+| typedef [DummyModel](/documentation/code/classes/classgambit_1_1dummymodel/) | **[Model](/documentation/code/classes/structgambit_1_1defaulttraits/#typedef-gambitdefaulttraits-model)**  |
+| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1defaulttraits/#typedef-gambitdefaulttraits-input)**  |
 
 
 ## Public Types Documentation
@@ -57,4 +57,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

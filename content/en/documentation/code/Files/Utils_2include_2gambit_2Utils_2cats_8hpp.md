@@ -13,14 +13,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAT](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/)**(X, Y)  |
-|  | **[CAT2](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/)**(X, Y)  |
-|  | **[CAT_2](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/)**  |
-|  | **[CAT_3](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/)**(X, Y, Z)  |
-|  | **[CAT_4](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/)**(A, X, Y, Z)  |
-|  | **[CAT_5](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/)**(A, B, X, Y, Z)  |
-|  | **[CAT_6](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/)**(A, B, C, X, Y, Z)  |
-|  | **[CAT_7](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/)**(A, B, C, D, X, Y, Z)  |
+|  | **[CAT](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#define-utils-include-gambit-utils-cats-hpp-cat)**(X, Y)  |
+|  | **[CAT2](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#define-utils-include-gambit-utils-cats-hpp-cat2)**(X, Y)  |
+|  | **[CAT_2](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#define-utils-include-gambit-utils-cats-hpp-cat-2)**  |
+|  | **[CAT_3](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#define-utils-include-gambit-utils-cats-hpp-cat-3)**(X, Y, Z)  |
+|  | **[CAT_4](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#define-utils-include-gambit-utils-cats-hpp-cat-4)**(A, X, Y, Z)  |
+|  | **[CAT_5](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#define-utils-include-gambit-utils-cats-hpp-cat-5)**(A, B, X, Y, Z)  |
+|  | **[CAT_6](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#define-utils-include-gambit-utils-cats-hpp-cat-6)**(A, B, C, X, Y, Z)  |
+|  | **[CAT_7](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#define-utils-include-gambit-utils-cats-hpp-cat-7)**(A, B, C, D, X, Y, Z)  |
 
 ## Detailed Description
 
@@ -190,4 +190,4 @@ CAT(A,CAT_6(B,C,D,X,Y,Z))
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

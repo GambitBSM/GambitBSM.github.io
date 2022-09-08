@@ -19,9 +19,9 @@ Inherits from [Gambit::ColliderBit::BaseLimitContainer](/documentation/code/clas
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[convertPt](/documentation/code/classes/classgambit_1_1colliderbit_1_1l3charginoleptoniclimitat188pt6gev/)**(double x, double y) const<br>Convert a point from pixel units to axis units.  |
-| virtual bool | **[isWithinExclusionRegion](/documentation/code/classes/classgambit_1_1colliderbit_1_1l3charginoleptoniclimitat188pt6gev/)**(double x, double y, double mZ) const<br>Check to see if the point is within the exclusion region.  |
-| | **[L3CharginoLeptonicLimitAt188pt6GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1l3charginoleptoniclimitat188pt6gev/)**() |
+| virtual [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[convertPt](/documentation/code/classes/classgambit_1_1colliderbit_1_1l3charginoleptoniclimitat188pt6gev/#function-gambitcolliderbitl3charginoleptoniclimitat188pt6gev-convertpt)**(double x, double y) const<br>Convert a point from pixel units to axis units.  |
+| virtual bool | **[isWithinExclusionRegion](/documentation/code/classes/classgambit_1_1colliderbit_1_1l3charginoleptoniclimitat188pt6gev/#function-gambitcolliderbitl3charginoleptoniclimitat188pt6gev-iswithinexclusionregion)**(double x, double y, double mZ) const<br>Check to see if the point is within the exclusion region.  |
+| | **[L3CharginoLeptonicLimitAt188pt6GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1l3charginoleptoniclimitat188pt6gev/#function-gambitcolliderbitl3charginoleptoniclimitat188pt6gev-l3charginoleptoniclimitat188pt6gev)**() |
 
 ## Additional inherited members
 
@@ -29,30 +29,30 @@ Inherits from [Gambit::ColliderBit::BaseLimitContainer](/documentation/code/clas
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::vector< [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) > | **[Corners](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**  |
-| typedef std::vector< [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) > | **[Contours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**  |
-| typedef Contours * | **[ContoursPointer](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**  |
-| typedef std::map< unsigned, Contours * > | **[LimitContours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**  |
-| typedef std::pair< unsigned, Contours * > | **[LimitContourEntry](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**  |
+| typedef std::vector< [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) > | **[Corners](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#typedef-gambitcolliderbitbaselimitcontainer-corners)**  |
+| typedef std::vector< [LineSegment](/documentation/code/classes/classgambit_1_1colliderbit_1_1linesegment/) > | **[Contours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#typedef-gambitcolliderbitbaselimitcontainer-contours)**  |
+| typedef Contours * | **[ContoursPointer](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#typedef-gambitcolliderbitbaselimitcontainer-contourspointer)**  |
+| typedef std::map< unsigned, Contours * > | **[LimitContours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#typedef-gambitcolliderbitbaselimitcontainer-limitcontours)**  |
+| typedef std::pair< unsigned, Contours * > | **[LimitContourEntry](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#typedef-gambitcolliderbitbaselimitcontainer-limitcontourentry)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::BaseLimitContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BaseLimitContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**() |
-| virtual | **[~BaseLimitContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**() |
-| virtual double | **[specialLimit](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**(double , double ) const<br>Return the limit value outside of the exclusion region.  |
-| double | **[limitAverage](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**(double x, double y, double mZ) const<br>Two-pi averaging interpolator to find limits between limit curves.  |
-| void | **[dumpPlotData](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**(double xlow, double xhigh, double ylow, double yhigh, double mZ, std::string filename, int ngrid =100) const<br>Dump limit average data into a file for average debugging.  |
-| void | **[dumpLightPlotData](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**(std::string filename, int nperLine =20) const<br>Dump input limit contour data into a file for limit debugging.  |
+| | **[BaseLimitContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#function-gambitcolliderbitbaselimitcontainer-baselimitcontainer)**() |
+| virtual | **[~BaseLimitContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#function-gambitcolliderbitbaselimitcontainer-baselimitcontainer)**() |
+| virtual double | **[specialLimit](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#function-gambitcolliderbitbaselimitcontainer-speciallimit)**(double , double ) const<br>Return the limit value outside of the exclusion region.  |
+| double | **[limitAverage](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#function-gambitcolliderbitbaselimitcontainer-limitaverage)**(double x, double y, double mZ) const<br>Two-pi averaging interpolator to find limits between limit curves.  |
+| void | **[dumpPlotData](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#function-gambitcolliderbitbaselimitcontainer-dumpplotdata)**(double xlow, double xhigh, double ylow, double yhigh, double mZ, std::string filename, int ngrid =100) const<br>Dump limit average data into a file for average debugging.  |
+| void | **[dumpLightPlotData](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#function-gambitcolliderbitbaselimitcontainer-dumplightplotdata)**(std::string filename, int nperLine =20) const<br>Dump input limit contour data into a file for limit debugging.  |
 
 **Protected Attributes inherited from [Gambit::ColliderBit::BaseLimitContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< double > | **[_limitValuesSorted](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**  |
-| LimitContours | **[_limitContours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**  |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[_externalPoint](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)**  |
+| std::vector< double > | **[_limitValuesSorted](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-gambitcolliderbitbaselimitcontainer-limitvaluessorted)**  |
+| LimitContours | **[_limitContours](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-gambitcolliderbitbaselimitcontainer-limitcontours)**  |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) | **[_externalPoint](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#variable-gambitcolliderbitbaselimitcontainer-externalpoint)**  |
 
 
 ## Public Functions Documentation
@@ -68,7 +68,7 @@ virtual P2 convertPt(
 
 Convert a point from pixel units to axis units. 
 
-**Reimplements**: [Gambit::ColliderBit::BaseLimitContainer::convertPt](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)
+**Reimplements**: [Gambit::ColliderBit::BaseLimitContainer::convertPt](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#function-gambitcolliderbitbaselimitcontainer-convertpt)
 
 
 ### function isWithinExclusionRegion
@@ -83,7 +83,7 @@ virtual bool isWithinExclusionRegion(
 
 Check to see if the point is within the exclusion region. 
 
-**Reimplements**: [Gambit::ColliderBit::BaseLimitContainer::isWithinExclusionRegion](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/)
+**Reimplements**: [Gambit::ColliderBit::BaseLimitContainer::isWithinExclusionRegion](/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/#function-gambitcolliderbitbaselimitcontainer-iswithinexclusionregion)
 
 
 ### function L3CharginoLeptonicLimitAt188pt6GeV
@@ -95,4 +95,4 @@ L3CharginoLeptonicLimitAt188pt6GeV()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

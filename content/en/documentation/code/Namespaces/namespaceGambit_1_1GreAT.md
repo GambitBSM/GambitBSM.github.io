@@ -19,13 +19,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[LogLikelihoodFunction](/documentation/code/namespaces/namespacegambit_1_1great/)**(TGreatPoint & point)<br>Function to be minimised by GreAT.  |
+| double | **[LogLikelihoodFunction](/documentation/code/namespaces/namespacegambit_1_1great/#function-gambitgreat-loglikelihoodfunction)**(TGreatPoint & point)<br>Function to be minimised by GreAT.  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [greatScanData](/documentation/code/classes/structgambit_1_1great_1_1greatscandata/) | **[data](/documentation/code/namespaces/namespacegambit_1_1great/)**  |
+| [greatScanData](/documentation/code/classes/structgambit_1_1great_1_1greatscandata/) | **[data](/documentation/code/namespaces/namespacegambit_1_1great/#variable-gambitgreat-data)**  |
 
 
 ## Functions Documentation
@@ -55,4 +55,4 @@ greatScanData data;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

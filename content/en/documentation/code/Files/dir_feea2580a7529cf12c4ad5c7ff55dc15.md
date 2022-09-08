@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[ExampleBit_A](/documentation/code/files/dir_50ccf42866c2ae392b68d37ab0eec977/)**  |
+| **[ExampleBit_A](/documentation/code/files/dir_50ccf42866c2ae392b68d37ab0eec977/#dir-gambit-examplebit-a)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

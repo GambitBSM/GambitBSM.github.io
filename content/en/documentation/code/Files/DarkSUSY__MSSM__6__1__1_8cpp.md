@@ -13,25 +13,25 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**(scan_level ) |
-| | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**(runOptions-> hasKey"debug_SLHA_filenames") |
-| else | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**(ModelInUse("CMSSM") and runOptions->getValueOrDef< bool >(false, "use_DS_isasugra") )<br>Option use_DS_isasugra<bool>: Use DS internal isasugra for parameter running (false)  |
-| else | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**(ModelInUse("MSSM63atQ")||ModelInUse("CMSSM") ) |
-| | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**((ModelInUse("MSSM63atQ")||ModelInUse("CMSSM")) &&! mssm_result) |
+| | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#function-darksusy-mssm-6-1-1-cpp-if)**(scan_level ) |
+| | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#function-darksusy-mssm-6-1-1-cpp-if)**(runOptions-> hasKey"debug_SLHA_filenames") |
+| else | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#function-darksusy-mssm-6-1-1-cpp-if)**(ModelInUse("CMSSM") and runOptions->getValueOrDef< bool >(false, "use_DS_isasugra") )<br>Option use_DS_isasugra<bool>: Use DS internal isasugra for parameter running (false)  |
+| else | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#function-darksusy-mssm-6-1-1-cpp-if)**(ModelInUse("MSSM63atQ")||ModelInUse("CMSSM") ) |
+| | **[if](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#function-darksusy-mssm-6-1-1-cpp-if)**((ModelInUse("MSSM63atQ")||ModelInUse("CMSSM")) &&! mssm_result) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
-| std::vector< double > | **[DSparticle_mass](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
-| std::vector< double > | **[GAMBITparticle_mass](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
-| std::vector< double > | **[DSanbr](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
-| double | **[anmwimp](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
-| std::vector< int > | **[DSanpdg1](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
-| std::vector< int > | **[DSanpdg2](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
-| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/) | **[BE_INI_FUNCTION](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
-| bool | **[mssm_result](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/)**  |
+| | **[BE_NAMESPACE](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-be-namespace)**  |
+| std::vector< double > | **[DSparticle_mass](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-dsparticle-mass)**  |
+| std::vector< double > | **[GAMBITparticle_mass](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-gambitparticle-mass)**  |
+| std::vector< double > | **[DSanbr](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-dsanbr)**  |
+| double | **[anmwimp](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-anmwimp)**  |
+| std::vector< int > | **[DSanpdg1](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-dsanpdg1)**  |
+| std::vector< int > | **[DSanpdg2](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-dsanpdg2)**  |
+| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-be-ini-function)**  |
+| bool | **[mssm_result](/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#variable-darksusy-mssm-6-1-1-cpp-mssm-result)**  |
 
 ## Detailed Description
 
@@ -50,7 +50,7 @@ description: "[No description available]"
   * 2020 September
 
 
-Frontend for DarkSUSY 6.1.1 backend (adapted from [DarkSUSY_5_1_3.cpp](/documentation/code/files/darksusy__5__1__3_8cpp/))
+Frontend for DarkSUSY 6.1.1 backend (adapted from [DarkSUSY_5_1_3.cpp](/documentation/code/files/darksusy__5__1__3_8cpp/#file-frontends-darksusy-5-1-3-cpp))
 
 
 
@@ -1371,4 +1371,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:24 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

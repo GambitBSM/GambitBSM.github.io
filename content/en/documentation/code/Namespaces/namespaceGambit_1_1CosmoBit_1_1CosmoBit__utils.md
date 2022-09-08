@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[entropy_density_SM](/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1cosmobit__utils/)**(double T, bool T_in_eV =false) |
+| double | **[entropy_density_SM](/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1cosmobit__utils/#function-gambitcosmobitcosmobit-utils-entropy-density-sm)**(double T, bool T_in_eV =false) |
 
 
 ## Functions Documentation
@@ -34,4 +34,4 @@ double entropy_density_SM(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

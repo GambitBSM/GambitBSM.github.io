@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [SpectrumContents::MDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1mdm/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/)**  |
-| typedef MI::Model | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/)**  |
-| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/)**  |
+| typedef [SpectrumContents::MDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1mdm/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/#typedef-gambitspectraits-specbitmdmspec-mi-contents)**  |
+| typedef MI::Model | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/#typedef-gambitspectraits-specbitmdmspec-mi-model)**  |
+| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/#typedef-gambitspectraits-specbitmdmspec-mi-input)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/)**() |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/#function-gambitspectraits-specbitmdmspec-mi-name)**() |
 
 ## Detailed Description
 
@@ -72,4 +72,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

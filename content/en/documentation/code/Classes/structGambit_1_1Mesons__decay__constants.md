@@ -15,23 +15,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| constexpr double | **[pi_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[pi0](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[K_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[D_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[D_s](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[B_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[B_c](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[eta](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[eta_prime](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[eta_c](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[rho_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[rho0](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[phi](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[Dstar_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[Dstar_s](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[omega](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
-| constexpr double | **[Jpsi](/documentation/code/classes/structgambit_1_1mesons__decay__constants/)**  |
+| constexpr double | **[pi_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-pi-plus)**  |
+| constexpr double | **[pi0](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-pi0)**  |
+| constexpr double | **[K_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-k-plus)**  |
+| constexpr double | **[D_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-d-plus)**  |
+| constexpr double | **[D_s](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-d-s)**  |
+| constexpr double | **[B_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-b-plus)**  |
+| constexpr double | **[B_c](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-b-c)**  |
+| constexpr double | **[eta](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-eta)**  |
+| constexpr double | **[eta_prime](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-eta-prime)**  |
+| constexpr double | **[eta_c](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-eta-c)**  |
+| constexpr double | **[rho_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-rho-plus)**  |
+| constexpr double | **[rho0](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-rho0)**  |
+| constexpr double | **[phi](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-phi)**  |
+| constexpr double | **[Dstar_plus](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-dstar-plus)**  |
+| constexpr double | **[Dstar_s](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-dstar-s)**  |
+| constexpr double | **[omega](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-omega)**  |
+| constexpr double | **[Jpsi](/documentation/code/classes/structgambit_1_1mesons__decay__constants/#variable-gambitmesons-decay-constants-jpsi)**  |
 
 ## Public Attributes Documentation
 
@@ -156,4 +156,4 @@ static constexpr double Jpsi = 0.418;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

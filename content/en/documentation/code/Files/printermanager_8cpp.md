@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DBUG](/documentation/code/files/printermanager_8cpp/)**(x)  |
+|  | **[DBUG](/documentation/code/files/printermanager_8cpp/#define-printermanager-cpp-dbug)**(x)  |
 
 ## Detailed Description
 
@@ -367,4 +367,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

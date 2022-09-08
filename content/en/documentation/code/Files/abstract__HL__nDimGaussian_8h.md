@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| namespace | **[CAT_3](/documentation/code/files/abstract__hl__ndimgaussian_8h/)**(BACKENDNAME , _ , SAFE_VERSION ) |
+| namespace | **[CAT_3](/documentation/code/files/abstract__hl__ndimgaussian_8h/#function-abstract-hl-ndimgaussian-h-cat-3)**(BACKENDNAME , _ , SAFE_VERSION ) |
 
 
 ## Functions Documentation
@@ -134,4 +134,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:00 +0000

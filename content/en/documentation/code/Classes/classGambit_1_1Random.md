@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[create_rng_engine](/documentation/code/classes/classgambit_1_1random/)**([str](/documentation/code/namespaces/namespacegambit/) engine, int seed =-1)<br>Choose the engine to use for random number generation, based on the contents of the ini file.  |
-| double | **[draw](/documentation/code/classes/classgambit_1_1random/)**()<br>Draw a single uniform random deviate from the interval (0,1) using the chosen RNG engine.  |
-| [Utils::threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/) & | **[rng](/documentation/code/classes/classgambit_1_1random/)**() |
+| void | **[create_rng_engine](/documentation/code/classes/classgambit_1_1random/#function-gambitrandom-create-rng-engine)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) engine, int seed =-1)<br>Choose the engine to use for random number generation, based on the contents of the ini file.  |
+| double | **[draw](/documentation/code/classes/classgambit_1_1random/#function-gambitrandom-draw)**()<br>Draw a single uniform random deviate from the interval (0,1) using the chosen RNG engine.  |
+| [Utils::threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/) & | **[rng](/documentation/code/classes/classgambit_1_1random/#function-gambitrandom-rng)**() |
 
 ## Public Functions Documentation
 
@@ -55,4 +55,4 @@ Return a threadsafe wrapper for the chosen RNG engine (to be passed to e.g. std 
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

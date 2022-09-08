@@ -13,31 +13,31 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[BE_FUNCTION](/documentation/code/files/libfirst__1__1_8hpp/)**(someFunction , void , () , "_Z12someFunctionv" , "someFunction" , (NUHM1, WC) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double _Z11arrayarg_2DPA10_d | **[BE_FUNCTION](/documentation/code/files/libfirst__1__1_8hpp/)**(arrayarg_3D , double , (double(*)[10][10]) , "_Z11arrayarg_3DPA10_A10_d" , "example_be_array_3D" ) |
-| | **[if](/documentation/code/files/libfirst__1__1_8hpp/)**(scan_level ) |
-| | **[logger](/documentation/code/files/libfirst__1__1_8hpp/)**() |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[BE_FUNCTION](/documentation/code/files/libfirst__1__1_8hpp/#function-libfirst-1-1-hpp-be-function)**(someFunction , void , () , "_Z12someFunctionv" , "someFunction" , (NUHM1, WC) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double _Z11arrayarg_2DPA10_d | **[BE_FUNCTION](/documentation/code/files/libfirst__1__1_8hpp/#function-libfirst-1-1-hpp-be-function)**(arrayarg_3D , double , (double(*)[10][10]) , "_Z11arrayarg_3DPA10_A10_d" , "example_be_array_3D" ) |
+| | **[if](/documentation/code/files/libfirst__1__1_8hpp/#function-libfirst-1-1-hpp-if)**(scan_level ) |
+| | **[logger](/documentation/code/files/libfirst__1__1_8hpp/#function-libfirst-1-1-hpp-logger)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[double](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double _Z11arrayarg_2DPA10_d | **[int](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double _Z11arrayarg_2DPA10_d | **[awesomeness](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double _Z11arrayarg_2DPA10_d | **[NUHM1](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double _Z11arrayarg_2DPA10_d ScalarSingletDM_Z3 | **[BE_INI_FUNCTION](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-| | **[scan_level](/documentation/code/files/libfirst__1__1_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[double](/documentation/code/files/libfirst__1__1_8hpp/#variable-libfirst-1-1-hpp-double)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double _Z11arrayarg_2DPA10_d | **[int](/documentation/code/files/libfirst__1__1_8hpp/#variable-libfirst-1-1-hpp-int)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double _Z11arrayarg_2DPA10_d | **[awesomeness](/documentation/code/files/libfirst__1__1_8hpp/#variable-libfirst-1-1-hpp-awesomeness)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double _Z11arrayarg_2DPA10_d | **[NUHM1](/documentation/code/files/libfirst__1__1_8hpp/#variable-libfirst-1-1-hpp-nuhm1)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double _Z11arrayarg_2DPA10_d ScalarSingletDM_Z3 | **[BE_INI_FUNCTION](/documentation/code/files/libfirst__1__1_8hpp/#variable-libfirst-1-1-hpp-be-ini-function)**  |
+| | **[scan_level](/documentation/code/files/libfirst__1__1_8hpp/#variable-libfirst-1-1-hpp-scan-level)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-|  | **[BACKENDLANG](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-|  | **[VERSION](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/libfirst__1__1_8hpp/)**  |
-|  | **[REFERENCE](/documentation/code/files/libfirst__1__1_8hpp/)**  |
+|  | **[BACKENDNAME](/documentation/code/files/libfirst__1__1_8hpp/#define-libfirst-1-1-hpp-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/libfirst__1__1_8hpp/#define-libfirst-1-1-hpp-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/libfirst__1__1_8hpp/#define-libfirst-1-1-hpp-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/libfirst__1__1_8hpp/#define-libfirst-1-1-hpp-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/libfirst__1__1_8hpp/#define-libfirst-1-1-hpp-reference)**  |
 
 ## Detailed Description
 
@@ -55,7 +55,7 @@ description: "[No description available]"
   * 2014 May
 
 
-Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/)' to set up a frontend for a specific library.
+Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/#file-backends-backend-macros-hpp)' to set up a frontend for a specific library.
 
 
 
@@ -318,4 +318,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

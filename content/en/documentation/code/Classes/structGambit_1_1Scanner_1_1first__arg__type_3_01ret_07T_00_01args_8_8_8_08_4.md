@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef T | **[type](/documentation/code/classes/structgambit_1_1scanner_1_1first__arg__type_3_01ret_07t_00_01args_8_8_8_08_4/)**  |
+| typedef T | **[type](/documentation/code/classes/structgambit_1_1scanner_1_1first__arg__type_3_01ret_07t_00_01args_8_8_8_08_4/#typedef-gambitscannerfirst-arg-type-rett-args-type)**  |
 
 ## Detailed Description
 
@@ -37,4 +37,4 @@ typedef T Gambit::Scanner::first_arg_type< ret(T, args...)>::type;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

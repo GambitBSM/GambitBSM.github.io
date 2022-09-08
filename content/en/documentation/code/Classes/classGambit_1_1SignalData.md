@@ -17,37 +17,37 @@ Variables for use in signal handlers.
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef void(*)() | **[void_func](/documentation/code/classes/classgambit_1_1signaldata/)** <br>Set cleanup function to run during emergency shutdown.  |
+| typedef void(*)() | **[void_func](/documentation/code/classes/classgambit_1_1signaldata/#typedef-gambitsignaldata-void-func)** <br>Set cleanup function to run during emergency shutdown.  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SignalData](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>[SignalData](/documentation/code/classes/classgambit_1_1signaldata/) member functions.  |
-| std::string | **[myrank](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Retrieve MPI rank as a string (for log messages etc.)  |
-| void | **[setjump](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Set jump point;.  |
-| void | **[set_cleanup](/documentation/code/classes/classgambit_1_1signaldata/)**([void_func](/documentation/code/classes/classgambit_1_1signaldata/) f)<br>Set cleanup function.  |
-| void | **[call_cleanup](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Call cleanup function.  |
-| void | **[set_shutdown_begun](/documentation/code/classes/classgambit_1_1signaldata/)**(const sig_atomic_t emergnc =0)<br>Register that shutdown has begun.  |
-| bool | **[shutdown_begun](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Check if (any kind of) shutdown is in progress.  |
-| EXPORT_SYMBOLS bool | **[check_if_shutdown_begun](/documentation/code/classes/classgambit_1_1signaldata/)**() |
-| void | **[add_signal](/documentation/code/classes/classgambit_1_1signaldata/)**(int sig)<br>Check if emergency shutdown is in progress.  |
-| std::string | **[display_received_signals](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Print to string a list of the signals received so far by this process.  |
-| void | **[entering_multithreaded_region](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Only check for emergency shutdown signals (i.e. do not attempt synchronisation)  |
-| void | **[leaving_multithreaded_region](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Exit threadsafe signal handling mode.  |
-| bool | **[inside_multithreaded_region](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Report 'true' if inside a multithreaded region (according to our own flag)  |
-| void | **[update_looptime](/documentation/code/classes/classgambit_1_1signaldata/)**(double newtime)<br>Extra functions needed in MPI mode.  |
-| void | **[attempt_soft_shutdown](/documentation/code/classes/classgambit_1_1signaldata/)**()<br>Perform soft shutdown if processes can be synchronised.  |
+| | **[SignalData](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-signaldata)**()<br>[SignalData](/documentation/code/classes/classgambit_1_1signaldata/) member functions.  |
+| std::string | **[myrank](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-myrank)**()<br>Retrieve MPI rank as a string (for log messages etc.)  |
+| void | **[setjump](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-setjump)**()<br>Set jump point;.  |
+| void | **[set_cleanup](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-set-cleanup)**([void_func](/documentation/code/classes/classgambit_1_1signaldata/#typedef-gambitsignaldata-void-func) f)<br>Set cleanup function.  |
+| void | **[call_cleanup](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-call-cleanup)**()<br>Call cleanup function.  |
+| void | **[set_shutdown_begun](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-set-shutdown-begun)**(const sig_atomic_t emergnc =0)<br>Register that shutdown has begun.  |
+| bool | **[shutdown_begun](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-shutdown-begun)**()<br>Check if (any kind of) shutdown is in progress.  |
+| EXPORT_SYMBOLS bool | **[check_if_shutdown_begun](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-check-if-shutdown-begun)**() |
+| void | **[add_signal](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-add-signal)**(int sig)<br>Check if emergency shutdown is in progress.  |
+| std::string | **[display_received_signals](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-display-received-signals)**()<br>Print to string a list of the signals received so far by this process.  |
+| void | **[entering_multithreaded_region](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-entering-multithreaded-region)**()<br>Only check for emergency shutdown signals (i.e. do not attempt synchronisation)  |
+| void | **[leaving_multithreaded_region](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-leaving-multithreaded-region)**()<br>Exit threadsafe signal handling mode.  |
+| bool | **[inside_multithreaded_region](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-inside-multithreaded-region)**()<br>Report 'true' if inside a multithreaded region (according to our own flag)  |
+| void | **[update_looptime](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-update-looptime)**(double newtime)<br>Extra functions needed in MPI mode.  |
+| void | **[attempt_soft_shutdown](/documentation/code/classes/classgambit_1_1signaldata/#function-gambitsignaldata-attempt-soft-shutdown)**()<br>Perform soft shutdown if processes can be synchronised.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| jmp_buf | **[env](/documentation/code/classes/classgambit_1_1signaldata/)** <br>Saved information on calling environment for longjmp.  |
-| bool | **[jumppoint_set](/documentation/code/classes/classgambit_1_1signaldata/)**  |
-| int | **[havejumped](/documentation/code/classes/classgambit_1_1signaldata/)**  |
-| [void_func](/documentation/code/classes/classgambit_1_1signaldata/) | **[cleanup](/documentation/code/classes/classgambit_1_1signaldata/)**  |
-| bool | **[cleanup_function_set](/documentation/code/classes/classgambit_1_1signaldata/)**  |
+| jmp_buf | **[env](/documentation/code/classes/classgambit_1_1signaldata/#variable-gambitsignaldata-env)** <br>Saved information on calling environment for longjmp.  |
+| bool | **[jumppoint_set](/documentation/code/classes/classgambit_1_1signaldata/#variable-gambitsignaldata-jumppoint-set)**  |
+| int | **[havejumped](/documentation/code/classes/classgambit_1_1signaldata/#variable-gambitsignaldata-havejumped)**  |
+| [void_func](/documentation/code/classes/classgambit_1_1signaldata/#typedef-gambitsignaldata-void-func) | **[cleanup](/documentation/code/classes/classgambit_1_1signaldata/#variable-gambitsignaldata-cleanup)**  |
+| bool | **[cleanup_function_set](/documentation/code/classes/classgambit_1_1signaldata/#variable-gambitsignaldata-cleanup-function-set)**  |
 
 ## Public Types Documentation
 
@@ -259,4 +259,4 @@ bool cleanup_function_set;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

@@ -13,38 +13,38 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-capability)** <br>Tunnelling likelihood (including contributions set by panic_vacua)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__vs__rollcall_8hpp/#define-specbit-vs-rollcall-hpp-function)**  |
 
 ## Detailed Description
 
@@ -67,7 +67,7 @@ description: "[No description available]"
   * 2020 Sep
 
 
-Rollcall declarations for module functions contained in [SpecBit_VS.cpp](/documentation/code/files/specbit__vs_8cpp/)
+Rollcall declarations for module functions contained in [SpecBit_VS.cpp](/documentation/code/files/specbit__vs_8cpp/#file-src-specbit-vs-cpp)
 
 
 
@@ -845,4 +845,4 @@ Function to create an object of type SpectrumEntriesForVevacious, holding all sp
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

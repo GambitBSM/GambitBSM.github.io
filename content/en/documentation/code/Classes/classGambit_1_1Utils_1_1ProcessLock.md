@@ -19,7 +19,7 @@ Inherits from [Gambit::Utils::FileLock](/documentation/code/classes/classgambit_
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ProcessLock](/documentation/code/classes/classgambit_1_1utils_1_1processlock/)**(const std::string & fname, const bool harderrs =false)<br>Constructor.  |
+| | **[ProcessLock](/documentation/code/classes/classgambit_1_1utils_1_1processlock/#function-gambitutilsprocesslock-processlock)**(const std::string & fname, const bool harderrs =false)<br>Constructor.  |
 
 ## Additional inherited members
 
@@ -27,11 +27,11 @@ Inherits from [Gambit::Utils::FileLock](/documentation/code/classes/classgambit_
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/)**(const std::string & fname, const bool harderrs =false)<br>Constructor.  |
-| | **[~FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/)**() |
-| void | **[get_lock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/)**()<br>Obtain lock (or wait if lock cannot be obtained, and then obtain lock)  |
-| void | **[release_lock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/)**()<br>Release a lock (error if no lock held)  |
-| const std::string & | **[get_filename](/documentation/code/classes/classgambit_1_1utils_1_1filelock/)**() const<br>Getter for lockfile name.  |
+| | **[FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-gambitutilsfilelock-filelock)**(const std::string & fname, const bool harderrs =false)<br>Constructor.  |
+| | **[~FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-gambitutilsfilelock-filelock)**() |
+| void | **[get_lock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-gambitutilsfilelock-get-lock)**()<br>Obtain lock (or wait if lock cannot be obtained, and then obtain lock)  |
+| void | **[release_lock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-gambitutilsfilelock-release-lock)**()<br>Release a lock (error if no lock held)  |
+| const std::string & | **[get_filename](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-gambitutilsfilelock-get-filename)**() const<br>Getter for lockfile name.  |
 
 
 ## Public Functions Documentation
@@ -49,4 +49,4 @@ Constructor.
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

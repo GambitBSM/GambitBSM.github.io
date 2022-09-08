@@ -13,9 +13,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[check_node_keys](/documentation/code/files/minuit2_8cpp/)**(YAML::Node node, std::vector< std::string > keys)<br>Check that a yaml node does not contain unexpected keys.  |
-| double | **[get_node_value](/documentation/code/files/minuit2_8cpp/)**(YAML::Node node, std::string key, double default_)<br>Get a particular key from a node.  |
-| | **[scanner_plugin](/documentation/code/files/minuit2_8cpp/)**(minuit2 , version(6, 23, 01) ) |
+| void | **[check_node_keys](/documentation/code/files/minuit2_8cpp/#function-minuit2-cpp-check-node-keys)**(YAML::Node node, std::vector< std::string > keys)<br>Check that a yaml node does not contain unexpected keys.  |
+| double | **[get_node_value](/documentation/code/files/minuit2_8cpp/#function-minuit2-cpp-get-node-value)**(YAML::Node node, std::string key, double default_)<br>Get a particular key from a node.  |
+| | **[scanner_plugin](/documentation/code/files/minuit2_8cpp/#function-minuit2-cpp-scanner-plugin)**(minuit2 , version(6, 23, 01) ) |
 
 ## Detailed Description
 
@@ -395,4 +395,4 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

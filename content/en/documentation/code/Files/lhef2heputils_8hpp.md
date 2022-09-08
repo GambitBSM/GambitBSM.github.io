@@ -19,7 +19,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[get_HEPUtils_event](/documentation/code/files/lhef2heputils_8hpp/)**(const LHEF::Reader & , HEPUtils::Event & , double )<br>Extract an LHE event as a HEPUtils::Event.  |
+| void | **[get_HEPUtils_event](/documentation/code/files/lhef2heputils_8hpp/#function-lhef2heputils-hpp-get-heputils-event)**(const LHEF::Reader & , HEPUtils::Event & , double )<br>Extract an LHE event as a HEPUtils::Event.  |
 
 
 ## Functions Documentation
@@ -84,4 +84,4 @@ void get_HEPUtils_event(const LHEF::Reader&, HEPUtils::Event&, double);
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:22 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

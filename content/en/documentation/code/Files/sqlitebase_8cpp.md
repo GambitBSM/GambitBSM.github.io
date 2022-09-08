@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SQL_DEBUG](/documentation/code/files/sqlitebase_8cpp/)**  |
+|  | **[SQL_DEBUG](/documentation/code/files/sqlitebase_8cpp/#define-sqlitebase-cpp-sql-debug)**  |
 
 ## Detailed Description
 
@@ -443,4 +443,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

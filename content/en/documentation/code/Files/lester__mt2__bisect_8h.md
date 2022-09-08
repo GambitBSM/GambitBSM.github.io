@@ -26,15 +26,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[myversion](/documentation/code/files/lester__mt2__bisect_8h/)**() |
-| double | **[MT](/documentation/code/files/lester__mt2__bisect_8h/)**(double px1, double px2, double py1, double py2, double m1, double m2) |
-| std::pair< double, double > | **[ben_findsols](/documentation/code/files/lester__mt2__bisect_8h/)**(double MT2, double px, double py, double visM, double Ma, double pxb, double pyb, double metx, double mety, double visMb, double Mb) |
+| void | **[myversion](/documentation/code/files/lester__mt2__bisect_8h/#function-lester-mt2-bisect-h-myversion)**() |
+| double | **[MT](/documentation/code/files/lester__mt2__bisect_8h/#function-lester-mt2-bisect-h-mt)**(double px1, double px2, double py1, double py2, double m1, double m2) |
+| std::pair< double, double > | **[ben_findsols](/documentation/code/files/lester__mt2__bisect_8h/#function-lester-mt2-bisect-h-ben-findsols)**(double MT2, double px, double py, double visM, double Ma, double pxb, double pyb, double metx, double mety, double visMb, double Mb) |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ASYMM_MT2_BISECT_H](/documentation/code/files/lester__mt2__bisect_8h/)**  |
+|  | **[ASYMM_MT2_BISECT_H](/documentation/code/files/lester__mt2__bisect_8h/#define-lester-mt2-bisect-h-asymm-mt2-bisect-h)**  |
 
 
 ## Functions Documentation
@@ -722,4 +722,4 @@ std::pair <double,double>  ben_findsols(double MT2, double px, double py, double
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:22 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NNUC](/documentation/code/files/alterbbn__2__2_8cpp/)**  |
+|  | **[NNUC](/documentation/code/files/alterbbn__2__2_8cpp/#define-alterbbn-2-2-cpp-nnuc)**  |
 
 ## Detailed Description
 
@@ -212,4 +212,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:24 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

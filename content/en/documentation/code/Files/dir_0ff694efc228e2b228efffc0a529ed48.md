@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[PrecisionBit](/documentation/code/files/dir_834f998753c9cc6bda1a2160e745c40d/)**  |
+| **[PrecisionBit](/documentation/code/files/dir_834f998753c9cc6bda1a2160e745c40d/#dir-gambit-precisionbit)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

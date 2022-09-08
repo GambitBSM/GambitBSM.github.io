@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[GSL_SPLINE_TYPE](/documentation/code/files/cosmobit__types_8cpp/)**  |
+|  | **[GSL_SPLINE_TYPE](/documentation/code/files/cosmobit__types_8cpp/#define-cosmobit-types-cpp-gsl-spline-type)**  |
 
 ## Detailed Description
 
@@ -318,4 +318,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:21 +0000
+Updated on 2022-09-08 at 01:48:59 +0000

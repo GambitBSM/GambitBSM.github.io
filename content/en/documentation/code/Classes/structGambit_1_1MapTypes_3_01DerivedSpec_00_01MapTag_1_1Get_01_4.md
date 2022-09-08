@@ -18,40 +18,40 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [SpecTraits](/documentation/code/classes/structgambit_1_1spectraits/)< DerivedSpec >::Model | **[Model](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [SpecTraits](/documentation/code/classes/structgambit_1_1spectraits/)< DerivedSpec >::Input | **[Input](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(Model::*)(void) const | **[FSptr](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(Model::*)(int) const | **[FSptr1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(Model::*)(int, int) const | **[FSptr2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(DerivedSpec::*)(void) const | **[FSptrW](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(DerivedSpec::*)(int) const | **[FSptr1W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(DerivedSpec::*)(int, int) const | **[FSptr2W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(*)(const Model &) | **[plainfptrM](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(*)(const Model &, int) | **[plainfptrM1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(*)(const Model &, int, int) | **[plainfptrM2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(*)(const Input &) | **[plainfptrI](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(*)(const Input &, int) | **[plainfptrI1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef double(*)(const Input &, int, int) | **[plainfptrI2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [FcnInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/)< FSptr1 > | **[FInfo1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)< FSptr2 > | **[FInfo2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [FcnInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/)< FSptr1W > | **[FInfo1W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)< FSptr2W > | **[FInfo2W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [FcnInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/)< plainfptrM1 > | **[FInfo1M](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)< plainfptrM2 > | **[FInfo2M](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [FcnInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/)< plainfptrI1 > | **[FInfo1I](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef [FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)< plainfptrI2 > | **[FInfo2I](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), FSptr > | **[fmap0](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), [FInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/) > | **[fmap1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), [FInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/) > | **[fmap2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), FSptrW > | **[fmap0W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), [FInfo1W](/documentation/code/classes/structgambit_1_1fcninfo1/) > | **[fmap1W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), [FInfo2W](/documentation/code/classes/structgambit_1_1fcninfo2/) > | **[fmap2W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), plainfptrM > | **[fmap0_extraM](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), [FInfo1M](/documentation/code/classes/structgambit_1_1fcninfo1/) > | **[fmap1_extraM](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), [FInfo2M](/documentation/code/classes/structgambit_1_1fcninfo2/) > | **[fmap2_extraM](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), plainfptrI > | **[fmap0_extraI](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), [FInfo1I](/documentation/code/classes/structgambit_1_1fcninfo1/) > | **[fmap1_extraI](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
-| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/), [FInfo2I](/documentation/code/classes/structgambit_1_1fcninfo2/) > | **[fmap2_extraI](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/)**  |
+| typedef [SpecTraits](/documentation/code/classes/structgambit_1_1spectraits/)< DerivedSpec >::Model | **[Model](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-model)**  |
+| typedef [SpecTraits](/documentation/code/classes/structgambit_1_1spectraits/)< DerivedSpec >::Input | **[Input](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-input)**  |
+| typedef double(Model::*)(void) const | **[FSptr](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fsptr)**  |
+| typedef double(Model::*)(int) const | **[FSptr1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fsptr1)**  |
+| typedef double(Model::*)(int, int) const | **[FSptr2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fsptr2)**  |
+| typedef double(DerivedSpec::*)(void) const | **[FSptrW](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fsptrw)**  |
+| typedef double(DerivedSpec::*)(int) const | **[FSptr1W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fsptr1w)**  |
+| typedef double(DerivedSpec::*)(int, int) const | **[FSptr2W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fsptr2w)**  |
+| typedef double(*)(const Model &) | **[plainfptrM](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-plainfptrm)**  |
+| typedef double(*)(const Model &, int) | **[plainfptrM1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-plainfptrm1)**  |
+| typedef double(*)(const Model &, int, int) | **[plainfptrM2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-plainfptrm2)**  |
+| typedef double(*)(const Input &) | **[plainfptrI](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-plainfptri)**  |
+| typedef double(*)(const Input &, int) | **[plainfptrI1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-plainfptri1)**  |
+| typedef double(*)(const Input &, int, int) | **[plainfptrI2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-plainfptri2)**  |
+| typedef [FcnInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/)< FSptr1 > | **[FInfo1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-finfo1)**  |
+| typedef [FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)< FSptr2 > | **[FInfo2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-finfo2)**  |
+| typedef [FcnInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/)< FSptr1W > | **[FInfo1W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-finfo1w)**  |
+| typedef [FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)< FSptr2W > | **[FInfo2W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-finfo2w)**  |
+| typedef [FcnInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/)< plainfptrM1 > | **[FInfo1M](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-finfo1m)**  |
+| typedef [FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)< plainfptrM2 > | **[FInfo2M](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-finfo2m)**  |
+| typedef [FcnInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/)< plainfptrI1 > | **[FInfo1I](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-finfo1i)**  |
+| typedef [FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)< plainfptrI2 > | **[FInfo2I](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-finfo2i)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), FSptr > | **[fmap0](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap0)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [FInfo1](/documentation/code/classes/structgambit_1_1fcninfo1/) > | **[fmap1](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap1)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [FInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/) > | **[fmap2](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap2)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), FSptrW > | **[fmap0W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap0w)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [FInfo1W](/documentation/code/classes/structgambit_1_1fcninfo1/) > | **[fmap1W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap1w)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [FInfo2W](/documentation/code/classes/structgambit_1_1fcninfo2/) > | **[fmap2W](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap2w)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), plainfptrM > | **[fmap0_extraM](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap0-extram)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [FInfo1M](/documentation/code/classes/structgambit_1_1fcninfo1/) > | **[fmap1_extraM](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap1-extram)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [FInfo2M](/documentation/code/classes/structgambit_1_1fcninfo2/) > | **[fmap2_extraM](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap2-extram)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), plainfptrI > | **[fmap0_extraI](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap0-extrai)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [FInfo1I](/documentation/code/classes/structgambit_1_1fcninfo1/) > | **[fmap1_extraI](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap1-extrai)**  |
+| typedef std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [FInfo2I](/documentation/code/classes/structgambit_1_1fcninfo2/) > | **[fmap2_extraI](/documentation/code/classes/structgambit_1_1maptypes_3_01derivedspec_00_01maptag_1_1get_01_4/#typedef-gambitmaptypes-derivedspec-maptagget-fmap2-extrai)**  |
 
 ## Detailed Description
 
@@ -305,4 +305,4 @@ typedef std::map<str, FInfo2I> Gambit::MapTypes< DerivedSpec, MapTag::Get >::fma
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

@@ -17,9 +17,9 @@ Definition of struct to hold various override values for a given ParamTag.
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/), double > | **[m0](/documentation/code/classes/structgambit_1_1overridemaps/)**  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/), std::map< int, double > > | **[m1](/documentation/code/classes/structgambit_1_1overridemaps/)**  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/), std::map< int, std::map< int, double > > > | **[m2](/documentation/code/classes/structgambit_1_1overridemaps/)**  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), double > | **[m0](/documentation/code/classes/structgambit_1_1overridemaps/#variable-gambitoverridemaps-m0)**  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), std::map< int, double > > | **[m1](/documentation/code/classes/structgambit_1_1overridemaps/#variable-gambitoverridemaps-m1)**  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), std::map< int, std::map< int, double > > > | **[m2](/documentation/code/classes/structgambit_1_1overridemaps/#variable-gambitoverridemaps-m2)**  |
 
 ## Public Attributes Documentation
 
@@ -46,4 +46,4 @@ std::map< str, std::map< int, std::map< int, double > > > m2;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

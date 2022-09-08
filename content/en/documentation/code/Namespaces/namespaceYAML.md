@@ -21,8 +21,8 @@ description: "[YAML]() overloads for mass cut and mass cut ratio constituents. "
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::pair< std::string, std::pair< double, double > > | **[sdd](/documentation/code/namespaces/namespaceyaml/)**  |
-| typedef std::pair< std::pair< std::string, std::string >, std::pair< double, double > > | **[ssdd](/documentation/code/namespaces/namespaceyaml/)**  |
+| typedef std::pair< std::string, std::pair< double, double > > | **[sdd](/documentation/code/namespaces/namespaceyaml/#typedef-yaml-sdd)**  |
+| typedef std::pair< std::pair< std::string, std::string >, std::pair< double, double > > | **[ssdd](/documentation/code/namespaces/namespaceyaml/#typedef-yaml-ssdd)**  |
 
 ## Types Documentation
 
@@ -47,4 +47,4 @@ typedef std::pair<std::pair<std::string,std::string>, std::pair<double, double> 
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

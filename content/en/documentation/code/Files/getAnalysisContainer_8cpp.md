@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/getanalysiscontainer_8cpp/)**  |
-|  | **[GET_ANALYSIS_CONTAINER](/documentation/code/files/getanalysiscontainer_8cpp/)**(NAME, EXPERIMENT) <br>Retrieve a container for analyses with EXPERIMENT.  |
+|  | **[DEBUG_PREFIX](/documentation/code/files/getanalysiscontainer_8cpp/#define-getanalysiscontainer-cpp-debug-prefix)**  |
+|  | **[GET_ANALYSIS_CONTAINER](/documentation/code/files/getanalysiscontainer_8cpp/#define-getanalysiscontainer-cpp-get-analysis-container)**(NAME, EXPERIMENT) <br>Retrieve a container for analyses with EXPERIMENT.  |
 
 ## Detailed Description
 
@@ -216,4 +216,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:22 +0000
+Updated on 2022-09-08 at 01:49:00 +0000

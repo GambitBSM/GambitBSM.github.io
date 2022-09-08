@@ -21,4 +21,4 @@ class Gambit::CallFcn;
 Helper class for calling function pointers found by [FptrFinder](). 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

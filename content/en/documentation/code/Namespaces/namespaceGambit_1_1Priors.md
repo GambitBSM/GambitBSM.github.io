@@ -37,14 +37,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< std::string > | **[expand_dots](/documentation/code/namespaces/namespacegambit_1_1priors/)**(const std::vector< std::string > & param_names_in) |
+| std::vector< std::string > | **[expand_dots](/documentation/code/namespaces/namespacegambit_1_1priors/#function-gambitpriors-expand-dots)**(const std::vector< std::string > & param_names_in) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[gambit_registry](/documentation/code/namespaces/namespacegambit_1_1priors/)**  |
-| [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< create_prior_function > | **[prior_creators](/documentation/code/namespaces/namespacegambit_1_1priors/)**  |
+| | **[gambit_registry](/documentation/code/namespaces/namespacegambit_1_1priors/#variable-gambitpriors-gambit-registry)**  |
+| [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< create_prior_function > | **[prior_creators](/documentation/code/namespaces/namespacegambit_1_1priors/#variable-gambitpriors-prior-creators)**  |
 
 
 ## Functions Documentation
@@ -81,4 +81,4 @@ reg_elem< create_prior_function > prior_creators;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

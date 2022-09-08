@@ -17,9 +17,9 @@ description: "[Gambit](/documentation/code/namespaces/namespacegambit/) piped in
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Piped_invalid_point](/documentation/code/classes/classgambit_1_1piped__invalid__point/)**()<br>Constructor.  |
-| void | **[request](/documentation/code/classes/classgambit_1_1piped__invalid__point/)**(std::string message)<br>Request an exception.  |
-| void | **[check](/documentation/code/classes/classgambit_1_1piped__invalid__point/)**()<br>Check whether an exception was requested, and throw it if necessary.  |
+| | **[Piped_invalid_point](/documentation/code/classes/classgambit_1_1piped__invalid__point/#function-gambitpiped-invalid-point-piped-invalid-point)**()<br>Constructor.  |
+| void | **[request](/documentation/code/classes/classgambit_1_1piped__invalid__point/#function-gambitpiped-invalid-point-request)**(std::string message)<br>Request an exception.  |
+| void | **[check](/documentation/code/classes/classgambit_1_1piped__invalid__point/#function-gambitpiped-invalid-point-check)**()<br>Check whether an exception was requested, and throw it if necessary.  |
 
 ## Public Functions Documentation
 
@@ -57,4 +57,4 @@ Check whether a piped invalid point exception was requested, and throw if necess
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:16 +0000
+Updated on 2022-09-08 at 01:48:54 +0000

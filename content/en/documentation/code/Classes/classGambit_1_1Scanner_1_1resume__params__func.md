@@ -17,15 +17,15 @@ class to interface with the plugin manager resume functions.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[resume_params_func](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**(const std::string & name_in) |
-| std::string | **[get_name](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**() const |
-| void | **[set_resume_mode](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**(const bool & mode) |
-| bool | **[resume_mode](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**() const |
-| std::string | **[get_temp_file_name](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**(const std::string & temp_file) |
-| void | **[dump](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**() |
-| int | **[Rank](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**() const |
-| int | **[NumTasks](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**() const |
-| template <typename... T\> <br>void | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/)**(T &... params) |
+| | **[resume_params_func](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-resume-params-func)**(const std::string & name_in) |
+| std::string | **[get_name](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-get-name)**() const |
+| void | **[set_resume_mode](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-set-resume-mode)**(const bool & mode) |
+| bool | **[resume_mode](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-resume-mode)**() const |
+| std::string | **[get_temp_file_name](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-get-temp-file-name)**(const std::string & temp_file) |
+| void | **[dump](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-dump)**() |
+| int | **[Rank](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-rank)**() const |
+| int | **[NumTasks](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-numtasks)**() const |
+| template <typename... T\> <br>void | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1resume__params__func/#function-gambitscannerresume-params-func-operator)**(T &... params) |
 
 ## Public Functions Documentation
 
@@ -103,4 +103,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

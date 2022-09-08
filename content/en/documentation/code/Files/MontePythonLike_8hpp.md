@@ -24,7 +24,7 @@ description: "[No description available]"
   * 2020 Apr
 
 
-Declarations of container classes for the [MontePythonLike](/documentation/code/namespaces/namespacemontepythonlike/) backend.
+Declarations of container classes for the MontePythonLike backend.
 
 
 
@@ -108,4 +108,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:00 +0000

@@ -17,10 +17,10 @@ Inherited by [BasicDevs](/documentation/code/classes/classbasicdevs/), [BasicDev
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/)**() |
-| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/)**() |
+| | **[Ran](/documentation/code/classes/classran/#function-ran-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-ran-doub)**() |
+| | **[Ran](/documentation/code/classes/classran/#function-ran-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-ran-doub)**() |
 
 ## Public Functions Documentation
 
@@ -58,4 +58,4 @@ inline double Doub()
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

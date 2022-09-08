@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/models_2src_2models_2diracsingletdm_8cpp/)**  |
-|  | **[PARENT](/documentation/code/files/models_2src_2models_2diracsingletdm_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/models_2src_2models_2diracsingletdm_8cpp/#define-models-src-models-diracsingletdm-cpp-model)**  |
+|  | **[PARENT](/documentation/code/files/models_2src_2models_2diracsingletdm_8cpp/#define-models-src-models-diracsingletdm-cpp-parent)**  |
 
 
 
@@ -98,4 +98,4 @@ using namespace Gambit::Utils;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

@@ -41,54 +41,54 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef shared_ptr< [FunkBase](/documentation/code/classes/classdafunk_1_1funkbase/) > | **[Funk](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef shared_ptr< [FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/) > | **[BoundFunk](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef std::vector< std::string > | **[ArgsType](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef std::map< std::string, std::vector< std::pair< Funk, Funk > > > | **[Singularities](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef double(*)(double &) | **[PlainPtr1](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef double(*)(double &, double &) | **[PlainPtr2](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef double(*)(double &, double &, double &) | **[PlainPtr3](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef double(*)(double &, double &, double &, double &) | **[PlainPtr4](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef std::pair< double(*)(double, void *), void * > | **[PlainPtrs1](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef std::pair< double(*)(double, double, void *), void * > | **[PlainPtrs2](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef std::pair< double(*)(double, double, double, void *), void * > | **[PlainPtrs3](/documentation/code/namespaces/namespacedafunk/)**  |
-| typedef std::pair< double(*)(double, double, double, double, void *), void * > | **[PlainPtrs4](/documentation/code/namespaces/namespacedafunk/)**  |
+| typedef shared_ptr< [FunkBase](/documentation/code/classes/classdafunk_1_1funkbase/) > | **[Funk](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-funk)**  |
+| typedef shared_ptr< [FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/) > | **[BoundFunk](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-boundfunk)**  |
+| typedef std::vector< std::string > | **[ArgsType](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-argstype)**  |
+| typedef std::map< std::string, std::vector< std::pair< Funk, Funk > > > | **[Singularities](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-singularities)**  |
+| typedef double(*)(double &) | **[PlainPtr1](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-plainptr1)**  |
+| typedef double(*)(double &, double &) | **[PlainPtr2](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-plainptr2)**  |
+| typedef double(*)(double &, double &, double &) | **[PlainPtr3](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-plainptr3)**  |
+| typedef double(*)(double &, double &, double &, double &) | **[PlainPtr4](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-plainptr4)**  |
+| typedef std::pair< double(*)(double, void *), void * > | **[PlainPtrs1](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-plainptrs1)**  |
+| typedef std::pair< double(*)(double, double, void *), void * > | **[PlainPtrs2](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-plainptrs2)**  |
+| typedef std::pair< double(*)(double, double, double, void *), void * > | **[PlainPtrs3](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-plainptrs3)**  |
+| typedef std::pair< double(*)(double, double, double, double, void *), void * > | **[PlainPtrs4](/documentation/code/namespaces/namespacedafunk/#typedef-dafunk-plainptrs4)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename T \> <br>std::vector< T > | **[vec](/documentation/code/namespaces/namespacedafunk/)**(std::vector< T > vector) |
-| template <typename T ,typename... Args\> <br>std::vector< T > | **[vec](/documentation/code/namespaces/namespacedafunk/)**(std::vector< T > vector, T value, Args... args) |
-| template <typename T ,typename... Args\> <br>std::vector< T > | **[vec](/documentation/code/namespaces/namespacedafunk/)**(T value, Args... args) |
-| template <typename T \> <br>std::vector< T > | **[vec](/documentation/code/namespaces/namespacedafunk/)**() |
-| std::vector< double > | **[linspace](/documentation/code/namespaces/namespacedafunk/)**(double x0, double x1, unsigned int n) |
-| std::vector< double > | **[logspace](/documentation/code/namespaces/namespacedafunk/)**(double x0, double x1, unsigned int n) |
-| bool | **[args_match](/documentation/code/namespaces/namespacedafunk/)**(ArgsType args1, ArgsType args2) |
-| std::string | **[args_string](/documentation/code/namespaces/namespacedafunk/)**(ArgsType args) |
-| ArgsType | **[joinArgs](/documentation/code/namespaces/namespacedafunk/)**(ArgsType args1, ArgsType args2) |
-| ArgsType | **[eraseArg](/documentation/code/namespaces/namespacedafunk/)**(ArgsType args, std::string arg) |
-| Singularities | **[joinSingl](/documentation/code/namespaces/namespacedafunk/)**(Singularities s1, Singularities s2) |
-| template <typename... Args\> <br>Funk | **[one](/documentation/code/namespaces/namespacedafunk/)**(Args... argss) |
-| template <typename... Args\> <br>Funk | **[zero](/documentation/code/namespaces/namespacedafunk/)**(Args... argss) |
-| template <typename... Args\> <br>Funk | **[cnst](/documentation/code/namespaces/namespacedafunk/)**(double x, Args... argss) |
-| template <typename... funcargs,typename... Args\> <br>Funk | **[func](/documentation/code/namespaces/namespacedafunk/)**(double(*)(funcargs...) f, Args... args) |
-| template <typename... funcargs,typename... Args\> <br>Funk | **[func_fromThreadsafe](/documentation/code/namespaces/namespacedafunk/)**(double(*)(funcargs...) f, Args... args) |
-| template <typename O ,typename... funcargs,typename... Args\> <br>Funk | **[funcM](/documentation/code/namespaces/namespacedafunk/)**(O * obj, double(O::*)(funcargs...) f, Args... args) |
-| template <typename O ,typename... funcargs,typename... Args\> <br>Funk | **[funcM](/documentation/code/namespaces/namespacedafunk/)**(shared_ptr< O > obj, double(O::*)(funcargs...) f, Args... args) |
-| template <typename O ,typename... funcargs,typename... Args\> <br>Funk | **[funcM_fromThreadsafe](/documentation/code/namespaces/namespacedafunk/)**(O * obj, double(O::*)(funcargs...) f, Args... args) |
-| template <typename O ,typename... funcargs,typename... Args\> <br>Funk | **[funcM_fromThreadsafe](/documentation/code/namespaces/namespacedafunk/)**(shared_ptr< O > obj, double(O::*)(funcargs...) f, Args... args) |
-| Funk | **[delta](/documentation/code/namespaces/namespacedafunk/)**(std::string arg, double pos, double width) |
-| Funk | **[var](/documentation/code/namespaces/namespacedafunk/)**(std::string arg) |
-| Funk | **[operator-](/documentation/code/namespaces/namespacedafunk/)**(Funk f) |
-| template <typename T \> <br>shared_ptr< [FunkInterp](/documentation/code/classes/classdafunk_1_1funkinterp/) > | **[interp](/documentation/code/namespaces/namespacedafunk/)**(T f, std::vector< double > x, std::vector< double > y) |
-| Funk | **[ifelse](/documentation/code/namespaces/namespacedafunk/)**(Funk f, Funk g, Funk h) |
-| Funk | **[ifelse](/documentation/code/namespaces/namespacedafunk/)**(Funk f, double g, Funk h) |
-| Funk | **[ifelse](/documentation/code/namespaces/namespacedafunk/)**(Funk f, double g, double h) |
-| Funk | **[ifelse](/documentation/code/namespaces/namespacedafunk/)**(Funk f, Funk g, double h) |
-| Funk | **[throwError](/documentation/code/namespaces/namespacedafunk/)**(std::string msg) |
-| template <typename T1 ,typename T2 \> <br>shared_ptr< [FunkIntegrate_gsl1d](/documentation/code/classes/classdafunk_1_1funkintegrate__gsl1d/) > | **[getIntegrate_gsl1d](/documentation/code/namespaces/namespacedafunk/)**(Funk fptr, std::string arg, T1 x1, T2 x2) |
-| std::vector< double > | **[augmentSingl](/documentation/code/namespaces/namespacedafunk/)**(const std::vector< double > & xgrid, Funk f, int N =100, double sigma =3) |
+| template <typename T \> <br>std::vector< T > | **[vec](/documentation/code/namespaces/namespacedafunk/#function-dafunk-vec)**(std::vector< T > vector) |
+| template <typename T ,typename... Args\> <br>std::vector< T > | **[vec](/documentation/code/namespaces/namespacedafunk/#function-dafunk-vec)**(std::vector< T > vector, T value, Args... args) |
+| template <typename T ,typename... Args\> <br>std::vector< T > | **[vec](/documentation/code/namespaces/namespacedafunk/#function-dafunk-vec)**(T value, Args... args) |
+| template <typename T \> <br>std::vector< T > | **[vec](/documentation/code/namespaces/namespacedafunk/#function-dafunk-vec)**() |
+| std::vector< double > | **[linspace](/documentation/code/namespaces/namespacedafunk/#function-dafunk-linspace)**(double x0, double x1, unsigned int n) |
+| std::vector< double > | **[logspace](/documentation/code/namespaces/namespacedafunk/#function-dafunk-logspace)**(double x0, double x1, unsigned int n) |
+| bool | **[args_match](/documentation/code/namespaces/namespacedafunk/#function-dafunk-args-match)**(ArgsType args1, ArgsType args2) |
+| std::string | **[args_string](/documentation/code/namespaces/namespacedafunk/#function-dafunk-args-string)**(ArgsType args) |
+| ArgsType | **[joinArgs](/documentation/code/namespaces/namespacedafunk/#function-dafunk-joinargs)**(ArgsType args1, ArgsType args2) |
+| ArgsType | **[eraseArg](/documentation/code/namespaces/namespacedafunk/#function-dafunk-erasearg)**(ArgsType args, std::string arg) |
+| Singularities | **[joinSingl](/documentation/code/namespaces/namespacedafunk/#function-dafunk-joinsingl)**(Singularities s1, Singularities s2) |
+| template <typename... Args\> <br>Funk | **[one](/documentation/code/namespaces/namespacedafunk/#function-dafunk-one)**(Args... argss) |
+| template <typename... Args\> <br>Funk | **[zero](/documentation/code/namespaces/namespacedafunk/#function-dafunk-zero)**(Args... argss) |
+| template <typename... Args\> <br>Funk | **[cnst](/documentation/code/namespaces/namespacedafunk/#function-dafunk-cnst)**(double x, Args... argss) |
+| template <typename... funcargs,typename... Args\> <br>Funk | **[func](/documentation/code/namespaces/namespacedafunk/#function-dafunk-func)**(double(*)(funcargs...) f, Args... args) |
+| template <typename... funcargs,typename... Args\> <br>Funk | **[func_fromThreadsafe](/documentation/code/namespaces/namespacedafunk/#function-dafunk-func-fromthreadsafe)**(double(*)(funcargs...) f, Args... args) |
+| template <typename O ,typename... funcargs,typename... Args\> <br>Funk | **[funcM](/documentation/code/namespaces/namespacedafunk/#function-dafunk-funcm)**(O * obj, double(O::*)(funcargs...) f, Args... args) |
+| template <typename O ,typename... funcargs,typename... Args\> <br>Funk | **[funcM](/documentation/code/namespaces/namespacedafunk/#function-dafunk-funcm)**(shared_ptr< O > obj, double(O::*)(funcargs...) f, Args... args) |
+| template <typename O ,typename... funcargs,typename... Args\> <br>Funk | **[funcM_fromThreadsafe](/documentation/code/namespaces/namespacedafunk/#function-dafunk-funcm-fromthreadsafe)**(O * obj, double(O::*)(funcargs...) f, Args... args) |
+| template <typename O ,typename... funcargs,typename... Args\> <br>Funk | **[funcM_fromThreadsafe](/documentation/code/namespaces/namespacedafunk/#function-dafunk-funcm-fromthreadsafe)**(shared_ptr< O > obj, double(O::*)(funcargs...) f, Args... args) |
+| Funk | **[delta](/documentation/code/namespaces/namespacedafunk/#function-dafunk-delta)**(std::string arg, double pos, double width) |
+| Funk | **[var](/documentation/code/namespaces/namespacedafunk/#function-dafunk-var)**(std::string arg) |
+| Funk | **[operator-](/documentation/code/namespaces/namespacedafunk/#function-dafunk-operator)**(Funk f) |
+| template <typename T \> <br>shared_ptr< [FunkInterp](/documentation/code/classes/classdafunk_1_1funkinterp/) > | **[interp](/documentation/code/namespaces/namespacedafunk/#function-dafunk-interp)**(T f, std::vector< double > x, std::vector< double > y) |
+| Funk | **[ifelse](/documentation/code/namespaces/namespacedafunk/#function-dafunk-ifelse)**(Funk f, Funk g, Funk h) |
+| Funk | **[ifelse](/documentation/code/namespaces/namespacedafunk/#function-dafunk-ifelse)**(Funk f, double g, Funk h) |
+| Funk | **[ifelse](/documentation/code/namespaces/namespacedafunk/#function-dafunk-ifelse)**(Funk f, double g, double h) |
+| Funk | **[ifelse](/documentation/code/namespaces/namespacedafunk/#function-dafunk-ifelse)**(Funk f, Funk g, double h) |
+| Funk | **[throwError](/documentation/code/namespaces/namespacedafunk/#function-dafunk-throwerror)**(std::string msg) |
+| template <typename T1 ,typename T2 \> <br>shared_ptr< [FunkIntegrate_gsl1d](/documentation/code/classes/classdafunk_1_1funkintegrate__gsl1d/) > | **[getIntegrate_gsl1d](/documentation/code/namespaces/namespacedafunk/#function-dafunk-getintegrate-gsl1d)**(Funk fptr, std::string arg, T1 x1, T2 x2) |
+| std::vector< double > | **[augmentSingl](/documentation/code/namespaces/namespacedafunk/#function-dafunk-augmentsingl)**(const std::vector< double > & xgrid, Funk f, int N =100, double sigma =3) |
 
 ## Types Documentation
 
@@ -530,4 +530,4 @@ inline std::vector< double > augmentSingl(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

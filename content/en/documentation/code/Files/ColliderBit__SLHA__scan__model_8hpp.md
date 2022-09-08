@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/colliderbit__slha__scan__model_8hpp/)**  |
+|  | **[MODEL](/documentation/code/files/colliderbit__slha__scan__model_8hpp/#define-colliderbit-slha-scan-model-hpp-model)**  |
 
 ## Detailed Description
 
@@ -86,4 +86,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

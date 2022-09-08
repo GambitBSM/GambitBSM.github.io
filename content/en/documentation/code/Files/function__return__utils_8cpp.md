@@ -13,9 +13,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename U ,typename V \> <br>U * | **[pointer_returner](/documentation/code/files/function__return__utils_8cpp/)**(V * ptr) |
-| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/files/function__return__utils_8cpp/)**(V * ptr) |
-| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/files/function__return__utils_8cpp/)**(const V * ptr) |
+| template <typename U ,typename V \> <br>U * | **[pointer_returner](/documentation/code/files/function__return__utils_8cpp/#function-function-return-utils-cpp-pointer-returner)**(V * ptr) |
+| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/files/function__return__utils_8cpp/#function-function-return-utils-cpp-reference-returner)**(V * ptr) |
+| template <typename U ,typename V \> <br>U & | **[reference_returner](/documentation/code/files/function__return__utils_8cpp/#function-function-return-utils-cpp-reference-returner)**(const V * ptr) |
 
 
 ## Functions Documentation
@@ -116,4 +116,4 @@ U& reference_returner(const V* ptr)
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:24 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

@@ -13,25 +13,25 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[BE_FUNCTION](/documentation/code/files/multimodecode__2__0__0_8hpp/)**(multimodecode_primordial_ps , gambit_inflation_observables , (int &, int &, int &, int &, double *, double *, double *, double &, double &, double &, int &, double &, double &, int &, int &, int &, int &, int &) , ("__multimodecode_gambit_MOD_multimodecode_gambit_driver","multimodecode_gambit_mp_multimodecode_gambit_driver_") , "multimodecode_primordial_ps" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[BE_FUNCTION](/documentation/code/files/multimodecode__2__0__0_8hpp/#function-multimodecode-2-0-0-hpp-be-function)**(multimodecode_primordial_ps , gambit_inflation_observables , (int &, int &, int &, int &, double *, double *, double *, double &, double &, double &, int &, double &, double &, int &, int &, int &, int &, int &) , ("__multimodecode_gambit_MOD_multimodecode_gambit_driver","multimodecode_gambit_mp_multimodecode_gambit_driver_") , "multimodecode_primordial_ps" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[gambit_inflation_observables](/documentation/code/files/multimodecode__2__0__0_8hpp/)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) int int int int double double double double double double int int int int int | **[__multimodecode_gambit_MOD_multimodecode_parametrised_ps](/documentation/code/files/multimodecode__2__0__0_8hpp/)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) int int int int double double double double double double int int int int int | **[multimodecode_gambit_mp_multimodecode_parametrised_ps_](/documentation/code/files/multimodecode__2__0__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[gambit_inflation_observables](/documentation/code/files/multimodecode__2__0__0_8hpp/#variable-multimodecode-2-0-0-hpp-gambit-inflation-observables)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) int int int int double double double double double double int int int int int | **[__multimodecode_gambit_MOD_multimodecode_parametrised_ps](/documentation/code/files/multimodecode__2__0__0_8hpp/#variable-multimodecode-2-0-0-hpp-multimodecode-gambit-mod-multimodecode-parametrised-ps)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) int int int int double double double double double double int int int int int | **[multimodecode_gambit_mp_multimodecode_parametrised_ps_](/documentation/code/files/multimodecode__2__0__0_8hpp/#variable-multimodecode-2-0-0-hpp-multimodecode-gambit-mp-multimodecode-parametrised-ps)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/multimodecode__2__0__0_8hpp/)**  |
-|  | **[BACKENDLANG](/documentation/code/files/multimodecode__2__0__0_8hpp/)**  |
-|  | **[VERSION](/documentation/code/files/multimodecode__2__0__0_8hpp/)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/multimodecode__2__0__0_8hpp/)**  |
-|  | **[REFERENCE](/documentation/code/files/multimodecode__2__0__0_8hpp/)**  |
+|  | **[BACKENDNAME](/documentation/code/files/multimodecode__2__0__0_8hpp/#define-multimodecode-2-0-0-hpp-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/multimodecode__2__0__0_8hpp/#define-multimodecode-2-0-0-hpp-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/multimodecode__2__0__0_8hpp/#define-multimodecode-2-0-0-hpp-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/multimodecode__2__0__0_8hpp/#define-multimodecode-2-0-0-hpp-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/multimodecode__2__0__0_8hpp/#define-multimodecode-2-0-0-hpp-reference)**  |
 
 ## Detailed Description
 
@@ -197,4 +197,4 @@ BE_VARIABLE(SilenceOutput, Flogical, ("__multimodecode_gambit_MOD_silenceoutput"
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:23 +0000
+Updated on 2022-09-08 at 01:49:01 +0000

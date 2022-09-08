@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/getxsec_8cpp/)**  |
+|  | **[DEBUG_PREFIX](/documentation/code/files/getxsec_8cpp/#define-getxsec-cpp-debug-prefix)**  |
 
 ## Detailed Description
 
@@ -1688,4 +1688,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:22 +0000
+Updated on 2022-09-08 at 01:49:00 +0000

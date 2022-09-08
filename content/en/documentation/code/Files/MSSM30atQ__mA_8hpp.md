@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/mssm30atq__ma_8hpp/)** <br>FlexibleSUSY compatible general (63 parameters plus sign) MSSM parameterisation.  |
-|  | **[PARENT](/documentation/code/files/mssm30atq__ma_8hpp/)**  |
+|  | **[MODEL](/documentation/code/files/mssm30atq__ma_8hpp/#define-mssm30atq-ma-hpp-model)** <br>FlexibleSUSY compatible general (63 parameters plus sign) MSSM parameterisation.  |
+|  | **[PARENT](/documentation/code/files/mssm30atq__ma_8hpp/#define-mssm30atq-ma-hpp-parent)**  |
 
 
 
@@ -120,4 +120,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

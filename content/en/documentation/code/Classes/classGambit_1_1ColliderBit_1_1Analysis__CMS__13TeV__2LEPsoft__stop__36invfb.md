@@ -17,8 +17,8 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb](/docume
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_2LEPsoft_stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb/)**() |
-| virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb/)**()<br>Gather together the info for likelihood calculation.  |
+| | **[Analysis_CMS_13TeV_2LEPsoft_stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb/#function-gambitcolliderbitanalysis-cms-13tev-2lepsoft-stop-36invfb-analysis-cms-13tev-2lepsoft-stop-36invfb)**() |
+| virtual void | **[collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb/#function-gambitcolliderbitanalysis-cms-13tev-2lepsoft-stop-36invfb-collect-results)**()<br>Gather together the info for likelihood calculation.  |
 
 ## Additional inherited members
 
@@ -32,66 +32,66 @@ Inherits from [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb](/docume
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Analysis_CMS_13TeV_2LEPsoft_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**() |
-| virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**(const HEPUtils::Event * event) |
-| virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
+| | **[Analysis_CMS_13TeV_2LEPsoft_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#function-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-analysis-cms-13tev-2lepsoft-36invfb)**() |
+| virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#function-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-run)**(const HEPUtils::Event * event) |
+| virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#function-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Combine the variables of another copy of this analysis (typically on another thread) into this one.  |
 
 **Protected Functions inherited from [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void | **[analysis_specific_reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**()<br>Reset the analysis-specific variables.  |
+| virtual void | **[analysis_specific_reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#function-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-analysis-specific-reset)**()<br>Reset the analysis-specific variables.  |
 
 **Public Attributes inherited from [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| constexpr const char * | **[detector](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| struct [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb::ptComparison](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb_1_1ptcomparison/) | **[comparePt](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
+| constexpr const char * | **[detector](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-detector)**  |
+| struct [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb::ptComparison](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb_1_1ptcomparison/) | **[comparePt](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-comparept)**  |
 
 **Protected Attributes inherited from [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| vector< double > | **[cutFlowVector](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| vector< string > | **[cutFlowVector_str](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| size_t | **[NCUTS](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| vector< double > | **[cutFlowVectorCMS_150_130](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| vector< double > | **[cutFlowVectorCMS_150_143](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| vector< double > | **[cutFlowVectorCMS_350_330](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
-| vector< double > | **[cutFlowVectorCMS_350_340](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-counters)**  |
+| vector< double > | **[cutFlowVector](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-cutflowvector)**  |
+| vector< string > | **[cutFlowVector_str](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-cutflowvector-str)**  |
+| size_t | **[NCUTS](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-ncuts)**  |
+| vector< double > | **[cutFlowVectorCMS_150_130](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-cutflowvectorcms-150-130)**  |
+| vector< double > | **[cutFlowVectorCMS_150_143](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-cutflowvectorcms-150-143)**  |
+| vector< double > | **[cutFlowVectorCMS_350_330](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-cutflowvectorcms-350-330)**  |
+| vector< double > | **[cutFlowVectorCMS_350_340](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#variable-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-cutflowvectorcms-350-340)**  |
 
 **Public Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(const HEPUtils::Event & e)<br>Analyze the event (accessed by reference).  |
-| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(const HEPUtils::Event * e)<br>Analyze the event (accessed by pointer).  |
-| void | **[add](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**([Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Add the results of another analysis to this one. Argument is not const, because the other needs to be able to gather its results if necessary.  |
-| virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other) =0<br>Add the analysis-specific variables of another analysis to this one.  |
-| | **[Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**()<br>Construction.  |
-| virtual | **[~Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**()<br>Destruction.  |
-| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**()<br>Public method to reset this instance for reuse, avoiding the need for "new" or "delete".  |
-| double | **[luminosity](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**() const<br>Return the integrated luminosity.  |
-| void | **[set_luminosity](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(double lumi)<br>Set the integrated luminosity.  |
-| void | **[set_analysis_name](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**([str](/documentation/code/namespaces/namespacegambit/) aname)<br>Set the analysis name.  |
-| [str](/documentation/code/namespaces/namespacegambit/) | **[analysis_name](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**()<br>Get the analysis name.  |
-| const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & | **[get_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**()<br>Get the collection of [SignalRegionData]() for likelihood computation.  |
-| const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & | **[get_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**([str](/documentation/code/namespaces/namespacegambit/) & warning)<br>An overload of [get_results()](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) with some additional consistency checks.  |
-| [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) * | **[get_results_ptr](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**()<br>Get a (non-const!) pointer to _results.  |
-| [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) * | **[get_results_ptr](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**([str](/documentation/code/namespaces/namespacegambit/) & warning)<br>An overload of [get_results_ptr()](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) with some additional consistency checks.  |
-| void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(double xsec_per_event)<br>Scale by xsec per event.  |
+| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-analyze)**(const HEPUtils::Event & e)<br>Analyze the event (accessed by reference).  |
+| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-analyze)**(const HEPUtils::Event * e)<br>Analyze the event (accessed by pointer).  |
+| void | **[add](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-add)**([Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other)<br>Add the results of another analysis to this one. Argument is not const, because the other needs to be able to gather its results if necessary.  |
+| virtual void | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-combine)**(const [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * other) =0<br>Add the analysis-specific variables of another analysis to this one.  |
+| | **[Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-analysis)**()<br>Construction.  |
+| virtual | **[~Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-analysis)**()<br>Destruction.  |
+| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-reset)**()<br>Public method to reset this instance for reuse, avoiding the need for "new" or "delete".  |
+| double | **[luminosity](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-luminosity)**() const<br>Return the integrated luminosity.  |
+| void | **[set_luminosity](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-set-luminosity)**(double lumi)<br>Set the integrated luminosity.  |
+| void | **[set_analysis_name](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-set-analysis-name)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) aname)<br>Set the analysis name.  |
+| [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[analysis_name](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-analysis-name)**()<br>Get the analysis name.  |
+| const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & | **[get_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-get-results)**()<br>Get the collection of [SignalRegionData]() for likelihood computation.  |
+| const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & | **[get_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-get-results)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & warning)<br>An overload of [get_results()](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-get-results) with some additional consistency checks.  |
+| [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) * | **[get_results_ptr](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-get-results-ptr)**()<br>Get a (non-const!) pointer to _results.  |
+| [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) * | **[get_results_ptr](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-get-results-ptr)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & warning)<br>An overload of [get_results_ptr()](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-get-results-ptr) with some additional consistency checks.  |
+| void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-scale)**(double xsec_per_event)<br>Scale by xsec per event.  |
 
 **Protected Functions inherited from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(const HEPUtils::Event * ) =0 |
-| void | **[add_result](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & sr)<br>Add the given result to the internal results list.  |
-| void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(const Eigen::MatrixXd & srcov)<br>Set the covariance matrix, expressing SR correlations.  |
-| void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**(const std::vector< std::vector< double > > & srcov)<br>A convenience function for setting the SR covariance from a nested vector/initialiser list.  |
-| virtual void | **[analysis_specific_reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)**() =0<br>Reset the analysis-specific variables.  |
+| virtual void | **[run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-run)**(const HEPUtils::Event * ) =0 |
+| void | **[add_result](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-add-result)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & sr)<br>Add the given result to the internal results list.  |
+| void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-set-covariance)**(const Eigen::MatrixXd & srcov)<br>Set the covariance matrix, expressing SR correlations.  |
+| void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-set-covariance)**(const std::vector< std::vector< double > > & srcov)<br>A convenience function for setting the SR covariance from a nested vector/initialiser list.  |
+| virtual void | **[analysis_specific_reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-gambitcolliderbitanalysis-analysis-specific-reset)**() =0<br>Reset the analysis-specific variables.  |
 
 
 ## Public Functions Documentation
@@ -111,9 +111,9 @@ inline virtual void collect_results()
 
 Gather together the info for likelihood calculation. 
 
-**Reimplements**: [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb::collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)
+**Reimplements**: [Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb::collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/#function-gambitcolliderbitanalysis-cms-13tev-2lepsoft-36invfb-collect-results)
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef int | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/)**  |
-| typedef void | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/)**  |
+| typedef int | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#typedef-gambitscannerfind-variadic-type-exact-voidargs-ret-type)**  |
+| typedef void | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#typedef-gambitscannerfind-variadic-type-exact-voidargs-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_4/#variable-gambitscannerfind-variadic-type-exact-voidargs-value)**  |
 
 ## Detailed Description
 
@@ -58,4 +58,4 @@ static const bool value = false;
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:18 +0000
+Updated on 2022-09-08 at 01:48:56 +0000

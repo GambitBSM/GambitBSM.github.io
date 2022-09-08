@@ -27,12 +27,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[THE_REST](/documentation/code/files/flavbit_8cpp/)**(bins)  |
-|  | **[SI_SINGLE_PREDICTION_FUNCTION](/documentation/code/files/flavbit_8cpp/)**(name)  |
-|  | **[SI_SINGLE_PREDICTION_FUNCTION_BINS](/documentation/code/files/flavbit_8cpp/)**(name, bins)  |
-|  | **[SI_MULTI_PREDICTION_FUNCTION](/documentation/code/files/flavbit_8cpp/)**(name)  |
-|  | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/files/flavbit_8cpp/)**(name, bins, exp)  |
-|  | **[HEPLIKE_GAUSSIAN_1D_LIKELIHOOD](/documentation/code/files/flavbit_8cpp/)**(name, file) <br>HEPLike single-observable likelihood.  |
+|  | **[THE_REST](/documentation/code/files/flavbit_8cpp/#define-flavbit-cpp-the-rest)**(bins)  |
+|  | **[SI_SINGLE_PREDICTION_FUNCTION](/documentation/code/files/flavbit_8cpp/#define-flavbit-cpp-si-single-prediction-function)**(name)  |
+|  | **[SI_SINGLE_PREDICTION_FUNCTION_BINS](/documentation/code/files/flavbit_8cpp/#define-flavbit-cpp-si-single-prediction-function-bins)**(name, bins)  |
+|  | **[SI_MULTI_PREDICTION_FUNCTION](/documentation/code/files/flavbit_8cpp/#define-flavbit-cpp-si-multi-prediction-function)**(name)  |
+|  | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/files/flavbit_8cpp/#define-flavbit-cpp-si-multi-prediction-function-bins)**(name, bins, exp)  |
+|  | **[HEPLIKE_GAUSSIAN_1D_LIKELIHOOD](/documentation/code/files/flavbit_8cpp/#define-flavbit-cpp-heplike-gaussian-1d-likelihood)**(name, file) <br>HEPLike single-observable likelihood.  |
 
 ## Detailed Description
 
@@ -3302,4 +3302,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000

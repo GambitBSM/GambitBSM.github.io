@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BibTeX](/documentation/code/classes/classgambit_1_1bibtex/)**([str](/documentation/code/namespaces/namespacegambit/) bibtex_file) |
-| const [str](/documentation/code/namespaces/namespacegambit/) | **[filename](/documentation/code/classes/classgambit_1_1bibtex/)**() const |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[getBibTeXEntries](/documentation/code/classes/classgambit_1_1bibtex/)**() const |
-| const std::map< [str](/documentation/code/namespaces/namespacegambit/), std::map< [str](/documentation/code/namespaces/namespacegambit/), [str](/documentation/code/namespaces/namespacegambit/) > > | **[getBibTeXData](/documentation/code/classes/classgambit_1_1bibtex/)**() const |
-| void | **[dropBibTeXFile](/documentation/code/classes/classgambit_1_1bibtex/)**([str](/documentation/code/namespaces/namespacegambit/) output_filename) const |
-| void | **[dropBibTeXFile](/documentation/code/classes/classgambit_1_1bibtex/)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/) > & citation_keys, [str](/documentation/code/namespaces/namespacegambit/) output_filename) const |
-| void | **[dropTeXFile](/documentation/code/classes/classgambit_1_1bibtex/)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/) > & citation_keys, [str](/documentation/code/namespaces/namespacegambit/) tex_filename, [str](/documentation/code/namespaces/namespacegambit/) bibtex_filename) const |
-| void | **[addCitationKey](/documentation/code/classes/classgambit_1_1bibtex/)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/) > & citationKeys, [str](/documentation/code/namespaces/namespacegambit/) bibkey) |
+| | **[BibTeX](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-bibtex)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) bibtex_file) |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[filename](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-filename)**() const |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[getBibTeXEntries](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-getbibtexentries)**() const |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > > | **[getBibTeXData](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-getbibtexdata)**() const |
+| void | **[dropBibTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-dropbibtexfile)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) output_filename) const |
+| void | **[dropBibTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-dropbibtexfile)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > & citation_keys, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) output_filename) const |
+| void | **[dropTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-droptexfile)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > & citation_keys, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) tex_filename, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) bibtex_filename) const |
+| void | **[addCitationKey](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-addcitationkey)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > & citationKeys, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) bibkey) |
 
 ## Public Functions Documentation
 
@@ -98,4 +98,4 @@ static void addCitationKey(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:15 +0000
+Updated on 2022-09-08 at 01:48:53 +0000

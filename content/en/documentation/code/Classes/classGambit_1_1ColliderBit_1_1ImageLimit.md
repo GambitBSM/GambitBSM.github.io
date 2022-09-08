@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ImageLimit](/documentation/code/classes/classgambit_1_1colliderbit_1_1imagelimit/)**(std::string name, double x_min, double x_max, double y_min, double y_max) |
-| double | **[get_limit](/documentation/code/classes/classgambit_1_1colliderbit_1_1imagelimit/)**(double x, double y) |
+| | **[ImageLimit](/documentation/code/classes/classgambit_1_1colliderbit_1_1imagelimit/#function-gambitcolliderbitimagelimit-imagelimit)**(std::string name, double x_min, double x_max, double y_min, double y_max) |
+| double | **[get_limit](/documentation/code/classes/classgambit_1_1colliderbit_1_1imagelimit/#function-gambitcolliderbitimagelimit-get-limit)**(double x, double y) |
 
 ## Public Functions Documentation
 
@@ -45,4 +45,4 @@ double get_limit(
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:17 +0000
+Updated on 2022-09-08 at 01:48:55 +0000

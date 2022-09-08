@@ -13,9 +13,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/specbit__majoranasingletdm__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/specbit__majoranasingletdm__rollcall_8hpp/)**  |
-|  | **[FUNCTION](/documentation/code/files/specbit__majoranasingletdm__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__majoranasingletdm__rollcall_8hpp/#define-specbit-majoranasingletdm-rollcall-hpp-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/specbit__majoranasingletdm__rollcall_8hpp/#define-specbit-majoranasingletdm-rollcall-hpp-function)**  |
+|  | **[FUNCTION](/documentation/code/files/specbit__majoranasingletdm__rollcall_8hpp/#define-specbit-majoranasingletdm-rollcall-hpp-function)**  |
 
 ## Detailed Description
 
@@ -28,7 +28,7 @@ description: "[No description available]"
   * 2017 Jun
 
 
-Rollcall declarations for module functions contained in [SpecBit_MajoranaSingletDM.cpp](/documentation/code/files/specbit__majoranasingletdm_8cpp/)
+Rollcall declarations for module functions contained in [SpecBit_MajoranaSingletDM.cpp](/documentation/code/files/specbit__majoranasingletdm_8cpp/#file-src-specbit-majoranasingletdm-cpp)
 
 
 
@@ -121,4 +121,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:19 +0000
+Updated on 2022-09-08 at 01:48:57 +0000

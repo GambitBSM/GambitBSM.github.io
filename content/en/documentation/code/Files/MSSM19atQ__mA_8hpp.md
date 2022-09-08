@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/mssm19atq__ma_8hpp/)**  |
-|  | **[PARENT](/documentation/code/files/mssm19atq__ma_8hpp/)**  |
+|  | **[MODEL](/documentation/code/files/mssm19atq__ma_8hpp/#define-mssm19atq-ma-hpp-model)**  |
+|  | **[PARENT](/documentation/code/files/mssm19atq__ma_8hpp/#define-mssm19atq-ma-hpp-parent)**  |
 
 ## Detailed Description
 
@@ -115,4 +115,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:05:20 +0000
+Updated on 2022-09-08 at 01:48:58 +0000
