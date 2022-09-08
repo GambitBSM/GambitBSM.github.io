@@ -574,4 +574,4 @@ QUICK_FUNCTION(ExampleBit_B, Example_lnL_B, NEW_CAPABILITY, example_lnL, double,
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:48:58 +0000
+Updated on 2022-09-08 at 02:00:51 +0000

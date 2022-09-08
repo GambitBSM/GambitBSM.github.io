@@ -37,4 +37,4 @@ typedef std::enable_if<is_all_member<T, args...>::value, ret> Gambit::enable_if_
 
 -------------------------------
 
-Updated on 2022-09-08 at 01:48:53 +0000
+Updated on 2022-09-08 at 02:00:46 +0000
