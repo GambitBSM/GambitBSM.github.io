@@ -305,4 +305,4 @@ typedef std::map<str, FInfo2I> Gambit::MapTypes< DerivedSpec, MapTag::Get >::fma
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:22:59 +0000
+Updated on 2022-09-08 at 02:27:26 +0000
