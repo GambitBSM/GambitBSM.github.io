@@ -58,8 +58,8 @@ Inherits from [Gambit::Scanner::Function_Base< ret(args...)>](/documentation/cod
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Function_Deleter< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#friend-function-deleter-retargs)**  |
-| class | **[scan_ptr< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#friend-scan-ptr-retargs)**  |
+| class | **[Function_Deleter< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#friend-function-deleter-ret-args)**  |
+| class | **[scan_ptr< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#friend-scan-ptr-ret-args)**  |
 
 
 ## Detailed Description
@@ -94,4 +94,4 @@ inline ret main(
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:17:34 +0000
+Updated on 2022-09-08 at 03:41:59 +0000

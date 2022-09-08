@@ -21,4 +21,4 @@ struct Gambit::MapTypes;
 Fully unspecialised [MapTypes]() declaration. 
 -------------------------------
 
-Updated on 2022-09-08 at 03:17:31 +0000
+Updated on 2022-09-08 at 03:41:57 +0000

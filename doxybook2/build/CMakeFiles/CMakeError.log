@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/runner/work/GambitBSM.github.io/GambitBSM.github.io/doxybook2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3bd89/fast && /usr/bin/make  -f CMakeFiles/cmTC_3bd89.dir/build.make CMakeFiles/cmTC_3bd89.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1261e/fast && /usr/bin/make  -f CMakeFiles/cmTC_1261e.dir/build.make CMakeFiles/cmTC_1261e.dir/build
 make[1]: Entering directory '/home/runner/work/GambitBSM.github.io/GambitBSM.github.io/doxybook2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3bd89.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3bd89.dir/src.c.o -c /home/runner/work/GambitBSM.github.io/GambitBSM.github.io/doxybook2/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_3bd89
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bd89.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_3bd89.dir/src.c.o -o cmTC_3bd89 
-/usr/bin/ld: CMakeFiles/cmTC_3bd89.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_1261e.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1261e.dir/src.c.o -c /home/runner/work/GambitBSM.github.io/GambitBSM.github.io/doxybook2/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1261e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1261e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_1261e.dir/src.c.o -o cmTC_1261e 
+/usr/bin/ld: CMakeFiles/cmTC_1261e.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_3bd89.dir/build.make:99: cmTC_3bd89] Error 1
+make[1]: *** [CMakeFiles/cmTC_1261e.dir/build.make:99: cmTC_1261e] Error 1
 make[1]: Leaving directory '/home/runner/work/GambitBSM.github.io/GambitBSM.github.io/doxybook2/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_3bd89/fast] Error 2
+make: *** [Makefile:127: cmTC_1261e/fast] Error 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/runner/work/GambitBSM.github.io/GambitBSM.github.io/doxybook2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_5c82b/fast && /usr/bin/make  -f CMakeFiles/cmTC_5c82b.dir/build.make CMakeFiles/cmTC_5c82b.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8b70d/fast && /usr/bin/make  -f CMakeFiles/cmTC_8b70d.dir/build.make CMakeFiles/cmTC_8b70d.dir/build
 make[1]: Entering directory '/home/runner/work/GambitBSM.github.io/GambitBSM.github.io/doxybook2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5c82b.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_5c82b.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.24/Modules/CheckFunctionExists.c
-Linking C executable cmTC_5c82b
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c82b.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_5c82b.dir/CheckFunctionExists.c.o -o cmTC_5c82b  -lpthreads 
+Building C object CMakeFiles/cmTC_8b70d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_8b70d.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.24/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8b70d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b70d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_8b70d.dir/CheckFunctionExists.c.o -o cmTC_8b70d  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_5c82b.dir/build.make:99: cmTC_5c82b] Error 1
+make[1]: *** [CMakeFiles/cmTC_8b70d.dir/build.make:99: cmTC_8b70d] Error 1
 make[1]: Leaving directory '/home/runner/work/GambitBSM.github.io/GambitBSM.github.io/doxybook2/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_5c82b/fast] Error 2
+make: *** [Makefile:127: cmTC_8b70d/fast] Error 2
 
 
 
