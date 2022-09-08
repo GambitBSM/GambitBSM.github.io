@@ -25,7 +25,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| shared_ptr< [FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/) > | **[FunkBase::bind](/documentation/code/classes/classdafunk_1_1funkbound/#friend-funkbasebind)**(Args... argss)  |
+| shared_ptr< [FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/) > | **[FunkBase::bind](/documentation/code/classes/classdafunk_1_1funkbound/#friend-funkbase-bind)**(Args... argss)  |
 
 ## Public Functions Documentation
 
@@ -90,4 +90,4 @@ friend shared_ptr< FunkBound > FunkBase::bind(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:27:28 +0000
+Updated on 2022-09-08 at 03:08:04 +0000

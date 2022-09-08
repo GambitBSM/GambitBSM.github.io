@@ -24,7 +24,7 @@ description: "[No description available]"
 | unsigned long | **[getNode< unsigned long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-unsigned-long)**(const YAML::Node node)<br>See int specialization.  |
 | long long | **[getNode< long long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-long-long)**(const YAML::Node node)<br>See int specialization.  |
 | unsigned long long | **[getNode< unsigned long long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-unsigned-long-long)**(const YAML::Node node)<br>See int specialization.  |
-| std::string | **[getNode< std::string >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-stdstring)**(const YAML::Node node) |
+| std::string | **[getNode< std::string >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-std-string)**(const YAML::Node node) |
 
 
 ## Functions Documentation
@@ -168,4 +168,4 @@ Read string and expand environment variables of the type ${MYVAR}. Expansion of 
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:27:27 +0000
+Updated on 2022-09-08 at 03:08:03 +0000

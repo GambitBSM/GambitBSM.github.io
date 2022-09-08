@@ -210,7 +210,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__vec4__decl_8h/#file-pythia-8-212-wrapper-vec4-decl-h>Pythia_8_212/wrapper_Vec4_decl.h<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__vec4__def_8h/#file-pythia-8-212-wrapper-vec4-def-h>Pythia_8_212/wrapper_Vec4_def.h<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno_8hpp/#file-backend-types-spheno-hpp>backend_types/SPheno.hpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy-hit_8hpp/#file-backend-types-susyhit-hpp>backend_types/SUSY-HIT.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy-hit_8hpp/#file-backend-types-susy-hit-hpp>backend_types/SUSY-HIT.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superiso_8hpp/#file-backend-types-superiso-hpp>backend_types/SuperIso.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/classy_8hpp/#file-backend-types-classy-hpp>backend_types/classy.hpp<a></b><br>
 <details><summary><b>dir <a href=/documentation/code/files/dir_3882af314fbae13225da1aacf68a32d3/#dir-gm2calc-1-2-0>gm2calc_1_2_0<a></b></summary>
@@ -380,7 +380,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/rivet__3__0__0_8hpp/#file-frontends-rivet-3-0-0-hpp>frontends/Rivet_3_0_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno__3__3__8_8hpp/#file-frontends-spheno-3-3-8-hpp>frontends/SPheno_3_3_8.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno__4__0__3_8hpp/#file-frontends-spheno-4-0-3-hpp>frontends/SPheno_4_0_3.hpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy-hit__1__5_8hpp/#file-frontends-susyhit-1-5-hpp>frontends/SUSY-HIT_1_5.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy-hit__1__5_8hpp/#file-frontends-susy-hit-1-5-hpp>frontends/SUSY-HIT_1_5.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susyhd__1__0__2_8hpp/#file-frontends-susyhd-1-0-2-hpp>frontends/SUSYHD_1_0_2.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superiso__4__1_8hpp/#file-frontends-superiso-4-1-hpp>frontends/SuperIso_4_1.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/classy__2__6__3_8hpp/#file-frontends-classy-2-6-3-hpp>frontends/classy_2_6_3.hpp<a></b><br>
@@ -492,7 +492,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/prospino__2__1_8cpp/#file-frontends-prospino-2-1-cpp>frontends/Prospino_2_1.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno__3__3__8_8cpp/#file-frontends-spheno-3-3-8-cpp>frontends/SPheno_3_3_8.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno__4__0__3_8cpp/#file-frontends-spheno-4-0-3-cpp>frontends/SPheno_4_0_3.cpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy-hit__1__5_8cpp/#file-frontends-susyhit-1-5-cpp>frontends/SUSY-HIT_1_5.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy-hit__1__5_8cpp/#file-frontends-susy-hit-1-5-cpp>frontends/SUSY-HIT_1_5.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susyhd__1__0__2_8cpp/#file-frontends-susyhd-1-0-2-cpp>frontends/SUSYHD_1_0_2.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superiso__4__1_8cpp/#file-frontends-superiso-4-1-cpp>frontends/SuperIso_4_1.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/classy__2__6__3_8cpp/#file-frontends-classy-2-6-3-cpp>frontends/classy_2_6_3.cpp<a></b><br>
@@ -1392,4 +1392,4 @@ weight: 30
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:27:32 +0000
+Updated on 2022-09-08 at 03:08:08 +0000

@@ -151,8 +151,8 @@ Inherited by [Gambit::module_functor< ModelParameters >](/documentation/code/cla
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[FunctorHelp::entering_multithreaded_region](/documentation/code/classes/classgambit_1_1module__functor__common/#friend-functorhelpentering-multithreaded-region)**([module_functor_common](/documentation/code/classes/classgambit_1_1module__functor__common/) & ) <br>Connectors to external helper functions (to decouple signal handling from this class)  |
-| void | **[FunctorHelp::leaving_multithreaded_region](/documentation/code/classes/classgambit_1_1module__functor__common/#friend-functorhelpleaving-multithreaded-region)**([module_functor_common](/documentation/code/classes/classgambit_1_1module__functor__common/) & )  |
+| void | **[FunctorHelp::entering_multithreaded_region](/documentation/code/classes/classgambit_1_1module__functor__common/#friend-functorhelp-entering-multithreaded-region)**([module_functor_common](/documentation/code/classes/classgambit_1_1module__functor__common/) & ) <br>Connectors to external helper functions (to decouple signal handling from this class)  |
+| void | **[FunctorHelp::leaving_multithreaded_region](/documentation/code/classes/classgambit_1_1module__functor__common/#friend-functorhelp-leaving-multithreaded-region)**([module_functor_common](/documentation/code/classes/classgambit_1_1module__functor__common/) & )  |
 
 ## Additional inherited members
 
@@ -1450,4 +1450,4 @@ friend void FunctorHelp::leaving_multithreaded_region(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:27:26 +0000
+Updated on 2022-09-08 at 03:08:02 +0000

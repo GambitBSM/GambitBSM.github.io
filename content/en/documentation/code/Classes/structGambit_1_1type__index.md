@@ -32,7 +32,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | struct | **[type_equal_to](/documentation/code/classes/structgambit_1_1type__index/#friend-type-equal-to)**  |
-| struct | **[std::equal_to< Gambit::type_index >](/documentation/code/classes/structgambit_1_1type__index/#friend-stdequal-to-gambittype-index)**  |
+| struct | **[std::equal_to< Gambit::type_index >](/documentation/code/classes/structgambit_1_1type__index/#friend-std-equal-to-gambit-type-index)**  |
 
 ## Public Functions Documentation
 
@@ -151,4 +151,4 @@ friend struct std::equal_to< Gambit::type_index >(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:27:26 +0000
+Updated on 2022-09-08 at 03:08:02 +0000
