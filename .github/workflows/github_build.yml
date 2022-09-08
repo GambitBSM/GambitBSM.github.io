@@ -36,6 +36,10 @@ jobs:
         with:
           working-directory: ./gambit_source
           doxyfile-path: ../doxygen_and_doxybook2_config/Doxyfile
+      - name: Clear old documentation
+        run: cd content/en/documentation
+          && rm -r code
+          && mkdir code
       - name: Convert xml to md using doxybook2
         run: ./doxybook2/build/src/DoxybookCli/doxybook2 --input ./xml --output ./content/en/documentation/code --config ./doxygen_and_doxybook2_config/config.json --templates ./doxygen_and_doxybook2_config/doxybook_templates
         # Need to insert index file so that menus work in site
