@@ -79,7 +79,7 @@ description: "[No description available]"
   * 2016 Jue, 2017 Jan
 
 
-Rollcall declarations for module functions contained in [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/#file-specbit-mssmcpp)
+Rollcall declarations for module functions contained in [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/#file-specbit-mssm-cpp)
 
 
 
@@ -876,4 +876,4 @@ Get MSSM spectrum from CMSSM boundary conditions.
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:08 +0000
+Updated on 2022-09-08 at 00:43:03 +0000

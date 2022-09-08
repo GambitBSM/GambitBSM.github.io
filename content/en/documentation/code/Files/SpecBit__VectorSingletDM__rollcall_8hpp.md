@@ -24,7 +24,7 @@ description: "[No description available]"
 
 **Date**: 2016 Aug, 2017 Jun
 
-Rollcall declarations for module functions contained in [SpecBit_VectorSingletDM.cpp](/documentation/code/files/specbit__vectorsingletdm_8cpp/#file-specbit-vectorsingletdmcpp)
+Rollcall declarations for module functions contained in [SpecBit_VectorSingletDM.cpp](/documentation/code/files/specbit__vectorsingletdm_8cpp/#file-specbit-vectorsingletdm-cpp)
 
 
 
@@ -114,4 +114,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:08 +0000
+Updated on 2022-09-08 at 00:43:03 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[0.1.0](/documentation/code/files/dir_934a6c6179554e0c6deb682bbeceabac/#dir-010)**  |
+| **[0.1.0](/documentation/code/files/dir_934a6c6179554e0c6deb682bbeceabac/#dir-0-1-0)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:11 +0000
+Updated on 2022-09-08 at 00:43:06 +0000

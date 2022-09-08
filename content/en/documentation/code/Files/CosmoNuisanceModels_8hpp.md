@@ -1703,4 +1703,4 @@ child of cosmo_nuisance_ska1_IM_band model containing only parameter for ska1_IM
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:09 +0000
+Updated on 2022-09-08 at 00:43:04 +0000

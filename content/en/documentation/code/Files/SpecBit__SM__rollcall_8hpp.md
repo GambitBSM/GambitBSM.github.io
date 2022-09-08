@@ -29,7 +29,7 @@ description: "[No description available]"
 
 **Date**: 2014 Sep - Dec, 2015 Jan - Mar
 
-Rollcall declarations for module functions contained in [SpecBit_SM.cpp](/documentation/code/files/specbit__sm_8cpp/#file-specbit-smcpp)
+Rollcall declarations for module functions contained in [SpecBit_SM.cpp](/documentation/code/files/specbit__sm_8cpp/#file-specbit-sm-cpp)
 
 
 
@@ -181,4 +181,4 @@ Produce an SMInputs object (SLHA2 conventions)
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:08 +0000
+Updated on 2022-09-08 at 00:43:03 +0000

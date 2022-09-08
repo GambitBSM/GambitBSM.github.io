@@ -26,7 +26,7 @@ description: "[No description available]"
 
 **Date**: 2017 Dec
 
-Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/#file-backend-macroshpp)' to set up a frontend for a Python library.
+Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/#file-backend-macros-hpp)' to set up a frontend for a Python library.
 
 
 
@@ -179,4 +179,4 @@ BE_CONV_FUNCTION(awesomenessNotByAnders, double, (int), "awesomeness")
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:12 +0000
+Updated on 2022-09-08 at 00:43:07 +0000

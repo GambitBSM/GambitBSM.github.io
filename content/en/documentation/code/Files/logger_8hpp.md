@@ -37,7 +37,7 @@ description: "[No description available]"
   * 2014 Mar
 
 
-Logging access header for GAMBIT. Declares the minimal amount needed for standard use of the logger. For more advanced use, include '[logmaster.hpp](/documentation/code/files/logmaster_8hpp/#file-logmasterhpp)' as well (provides the full declaration of the LogMaster class).
+Logging access header for GAMBIT. Declares the minimal amount needed for standard use of the logger. For more advanced use, include '[logmaster.hpp](/documentation/code/files/logmaster_8hpp/#file-logmaster-hpp)' as well (provides the full declaration of the LogMaster class).
 
 
 
@@ -167,4 +167,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:09 +0000
+Updated on 2022-09-08 at 00:43:04 +0000

@@ -240,4 +240,4 @@ Analytic function 4 from [https://arxiv.org/abs/2101.04525](https://arxiv.org/ab
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:07 +0000
+Updated on 2022-09-08 at 00:43:01 +0000

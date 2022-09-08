@@ -50,7 +50,7 @@ CosmoBit routines relating to the CMB.
 
 Routines include extracting CMB spectra and computing effects of energy injections.
 
-Does _not_ contain the Planck likelihoods; these live in [CosmoBit/src/Planck.cpp](/documentation/code/files/planck_8cpp/#file-planckcpp).
+Does _not_ contain the Planck likelihoods; these live in [CosmoBit/src/Planck.cpp](/documentation/code/files/planck_8cpp/#file-planck-cpp).
 
 
 
@@ -540,4 +540,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:10 +0000
+Updated on 2022-09-08 at 00:43:05 +0000

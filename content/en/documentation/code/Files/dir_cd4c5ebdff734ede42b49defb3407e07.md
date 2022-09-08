@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[src/ExampleBit_B.cpp](/documentation/code/files/examplebit__b_8cpp/#file-examplebit-bcpp)**  |
+| **[src/ExampleBit_B.cpp](/documentation/code/files/examplebit__b_8cpp/#file-examplebit-b-cpp)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:09 +0000
+Updated on 2022-09-08 at 00:43:04 +0000

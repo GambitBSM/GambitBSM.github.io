@@ -13,10 +13,10 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[Logs/log_tags.hpp](/documentation/code/files/log__tags_8hpp/#file-log-tagshpp)**  |
-| **[Logs/logger.hpp](/documentation/code/files/logger_8hpp/#file-loggerhpp)**  |
-| **[Logs/logging.hpp](/documentation/code/files/logging_8hpp/#file-logginghpp)**  |
-| **[Logs/logmaster.hpp](/documentation/code/files/logmaster_8hpp/#file-logmasterhpp)**  |
+| **[Logs/log_tags.hpp](/documentation/code/files/log__tags_8hpp/#file-log-tags-hpp)**  |
+| **[Logs/logger.hpp](/documentation/code/files/logger_8hpp/#file-logger-hpp)**  |
+| **[Logs/logging.hpp](/documentation/code/files/logging_8hpp/#file-logging-hpp)**  |
+| **[Logs/logmaster.hpp](/documentation/code/files/logmaster_8hpp/#file-logmaster-hpp)**  |
 
 
 
@@ -25,4 +25,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:09 +0000
+Updated on 2022-09-08 at 00:43:04 +0000

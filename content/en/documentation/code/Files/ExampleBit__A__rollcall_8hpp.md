@@ -75,7 +75,7 @@ Compile-time registration of available observables and likelihoods, as well as t
 
 Add to this if you want to add an observable or likelihood to this module.
 
-Don't put typedefs or other type definitions in this file; see [Elements/include/gambit/Elements/types_rollcall.hpp](/documentation/code/files/types__rollcall_8hpp/#file-types-rollcallhpp) for further instructions on how to add new types.
+Don't put typedefs or other type definitions in this file; see [Elements/include/gambit/Elements/types_rollcall.hpp](/documentation/code/files/types__rollcall_8hpp/#file-types-rollcall-hpp) for further instructions on how to add new types.
 
 
 
@@ -639,4 +639,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:09 +0000
+Updated on 2022-09-08 at 00:43:04 +0000

@@ -25,7 +25,7 @@ description: "[No description available]"
 
 **Date**: 2018 Mar
 
-Rollcall declarations for module functions contained in [SpecBit_MDM.cpp](/documentation/code/files/specbit__mdm_8cpp/#file-specbit-mdmcpp)
+Rollcall declarations for module functions contained in [SpecBit_MDM.cpp](/documentation/code/files/specbit__mdm_8cpp/#file-specbit-mdm-cpp)
 
 
 
@@ -132,4 +132,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:08 +0000
+Updated on 2022-09-08 at 00:43:03 +0000

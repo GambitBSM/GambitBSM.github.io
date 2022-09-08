@@ -28,7 +28,7 @@ description: "[No description available]"
   * 2017 Jun
 
 
-Rollcall declarations for module functions contained in [SpecBit_MajoranaSingletDM.cpp](/documentation/code/files/specbit__majoranasingletdm_8cpp/#file-specbit-majoranasingletdmcpp)
+Rollcall declarations for module functions contained in [SpecBit_MajoranaSingletDM.cpp](/documentation/code/files/specbit__majoranasingletdm_8cpp/#file-specbit-majoranasingletdm-cpp)
 
 
 
@@ -121,4 +121,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:08 +0000
+Updated on 2022-09-08 at 00:43:03 +0000

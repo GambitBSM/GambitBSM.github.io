@@ -50,7 +50,7 @@ description: "[No description available]"
   * 2020 September
 
 
-Frontend for DarkSUSY 6.1.1 backend (adapted from [DarkSUSY_5_1_3.cpp](/documentation/code/files/darksusy__5__1__3_8cpp/#file-darksusy-5-1-3cpp))
+Frontend for DarkSUSY 6.1.1 backend (adapted from [DarkSUSY_5_1_3.cpp](/documentation/code/files/darksusy__5__1__3_8cpp/#file-darksusy-5-1-3-cpp))
 
 
 
@@ -1371,4 +1371,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:12 +0000
+Updated on 2022-09-08 at 00:43:07 +0000

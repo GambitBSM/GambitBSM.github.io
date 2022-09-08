@@ -50,7 +50,7 @@ description: "[No description available]"
   * 2020 September
 
 
-Frontend for DarkSUSY_MSSM_6.2.5 backend (adapted from [DarkSUSY_MSSM_6_2_2.cpp](/documentation/code/files/darksusy__mssm__6__2__2_8cpp/#file-darksusy-mssm-6-2-2cpp))
+Frontend for DarkSUSY_MSSM_6.2.5 backend (adapted from [DarkSUSY_MSSM_6_2_2.cpp](/documentation/code/files/darksusy__mssm__6__2__2_8cpp/#file-darksusy-mssm-6-2-2-cpp))
 
 
 
@@ -1374,4 +1374,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:12 +0000
+Updated on 2022-09-08 at 00:43:07 +0000

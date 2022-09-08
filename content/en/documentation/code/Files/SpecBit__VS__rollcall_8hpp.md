@@ -67,7 +67,7 @@ description: "[No description available]"
   * 2020 Sep
 
 
-Rollcall declarations for module functions contained in [SpecBit_VS.cpp](/documentation/code/files/specbit__vs_8cpp/#file-specbit-vscpp)
+Rollcall declarations for module functions contained in [SpecBit_VS.cpp](/documentation/code/files/specbit__vs_8cpp/#file-specbit-vs-cpp)
 
 
 
@@ -845,4 +845,4 @@ Function to create an object of type SpectrumEntriesForVevacious, holding all sp
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:08 +0000
+Updated on 2022-09-08 at 00:43:03 +0000

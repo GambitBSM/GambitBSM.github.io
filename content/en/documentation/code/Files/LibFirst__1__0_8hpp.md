@@ -35,7 +35,7 @@ description: "[No description available]"
   * 2014 May
 
 
-Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/#file-backend-macroshpp)' to set up a frontend for a specific library.
+Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/#file-backend-macros-hpp)' to set up a frontend for a specific library.
 
 
 
@@ -218,4 +218,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:12 +0000
+Updated on 2022-09-08 at 00:43:07 +0000

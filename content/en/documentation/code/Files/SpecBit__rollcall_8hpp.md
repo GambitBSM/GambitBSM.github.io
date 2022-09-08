@@ -82,7 +82,7 @@ START_CAPABILITY QUICK_FUNCTION(
 
 Module function declarations for [SpecBit_SM.cpp](). 
 
-Module function declarations for [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/#file-specbit-mssmcpp) Module function declarations for [SpecBit_ScalarSingletDM.cpp](/documentation/code/files/specbit__scalarsingletdm_8cpp/#file-specbit-scalarsingletdmcpp) Module function declarations for SpecBit_VectorSingletDM_Z2.cpp Module function declarations for SpecBit_MajoranaSingletDM_Z2.cpp Module function declarations for SpecBit_DiracSingletDM_Z2.cpp Module function declarations for [SpecBit_MDM.cpp](/documentation/code/files/specbit__mdm_8cpp/#file-specbit-mdmcpp) Module function declarations for SpecBit_tests.cpp (new tests) Module function declarations for [SpecBit_DMEFT.cpp](/documentation/code/files/specbit__dmeft_8cpp/#file-specbit-dmeftcpp) For SpecBit testing only Functions to change the capability associated with a Spectrum object to "SM_spectrum" 
+Module function declarations for [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/#file-specbit-mssm-cpp) Module function declarations for [SpecBit_ScalarSingletDM.cpp](/documentation/code/files/specbit__scalarsingletdm_8cpp/#file-specbit-scalarsingletdm-cpp) Module function declarations for SpecBit_VectorSingletDM_Z2.cpp Module function declarations for SpecBit_MajoranaSingletDM_Z2.cpp Module function declarations for SpecBit_DiracSingletDM_Z2.cpp Module function declarations for [SpecBit_MDM.cpp](/documentation/code/files/specbit__mdm_8cpp/#file-specbit-mdm-cpp) Module function declarations for SpecBit_tests.cpp (new tests) Module function declarations for [SpecBit_DMEFT.cpp](/documentation/code/files/specbit__dmeft_8cpp/#file-specbit-dmeft-cpp) For SpecBit testing only Functions to change the capability associated with a Spectrum object to "SM_spectrum" 
 
 
 
@@ -264,4 +264,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:08 +0000
+Updated on 2022-09-08 at 00:43:03 +0000

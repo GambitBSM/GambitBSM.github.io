@@ -3131,7 +3131,7 @@ void capture_rate_Sun_vnqn(
 ```
 
 
-Capture rate for v^n and q^n-dependent cross sections. Isoscalar (same proton/neutron coupling) SD only couples to Hydrogen. See [DirectDetection.cpp](/documentation/code/files/directdetection_8cpp/#file-directdetectioncpp) to see how to define the cross sections sigma_SD_p, sigma_SI_pi 
+Capture rate for v^n and q^n-dependent cross sections. Isoscalar (same proton/neutron coupling) SD only couples to Hydrogen. See [DirectDetection.cpp](/documentation/code/files/directdetection_8cpp/#file-directdetection-cpp) to see how to define the cross sections sigma_SD_p, sigma_SI_pi 
 
 
 ### function capture_rate_Sun_NREO
@@ -3416,4 +3416,4 @@ static std::vector< std::string > channels {"e", "mu", "tau",
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:06 +0000
+Updated on 2022-09-08 at 00:43:01 +0000

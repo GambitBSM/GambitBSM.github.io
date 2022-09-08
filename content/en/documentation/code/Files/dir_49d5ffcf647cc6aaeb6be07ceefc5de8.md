@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[classy/create_SDSSDR7_fid.py](/documentation/code/files/create__sdssdr7__fid_8py/#file-create-sdssdr7-fidpy)**  |
+| **[classy/create_SDSSDR7_fid.py](/documentation/code/files/create__sdssdr7__fid_8py/#file-create-sdssdr7-fid-py)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-07 at 23:22:12 +0000
+Updated on 2022-09-08 at 00:43:07 +0000
