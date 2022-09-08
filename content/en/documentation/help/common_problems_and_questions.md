@@ -184,7 +184,7 @@ cmake $YOUR_FLAGS    # Run cmake
 
 If the final `make gambit` command takes a long time (or fails), then you may want to consider using the `-Ditch` flag with the first `cmake` command. This flag allows you to specify `Bits` and components of GAMBIT to "ditch" from the build process, allowing GAMBIT to build faster.
 
-For example, if you wish to ditch all `Bits` apart from [`ColliderBit`](example.com), add the flag:
+For example, if you wish to ditch all `Bits` apart from `ColliderBit`, add the flag:
 
 ```
 -Ditch="CosmoBit;FlavBit;NeutrinoBit;DarkBit;DecayBit;FlavBit;ObjectivesBit;PrecisionBit;ScannerBit;SpecBit"

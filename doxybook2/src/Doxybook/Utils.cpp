@@ -68,6 +68,8 @@ std::string Doxybook2::Utils::safeAnchorId(std::string str) {
     str = replaceAll(str, "-", " ");
     str = replaceAll(str, "/", " ");
     str = replaceAll(str, ".", " ");
+    str = replaceAll(str, ")", " ");
+    str = replaceAll(str, "(", " ");
     str.erase(remove_if(str.begin(), str.end(),
     [](char c) { return (c!=' ') && (!isalnum(c)); } ),
     str.end());
