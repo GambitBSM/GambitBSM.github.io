@@ -18,27 +18,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| primodel_vec | **[getPrimaryModelFunctorsToActivate](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-getprimarymodelfunctorstoactivate)**(std::set< str > selectedmodels, const primodel_vec & primaryModelFunctors) |
-| [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * | **[getPrimaryModelFunctor](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-getprimarymodelfunctor)**(const std::string modelname, const primodel_vec & primaryModelFunctors) const<br>Searches primary model functor list for specified model.  |
-| void | **[checkPrimaryModelFunctorUsage](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-checkprimarymodelfunctorusage)**(const activemodel_map & activeModelFunctors) const |
-| void | **[declare_model](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-declare-model)**(const str & model, const str & parent)<br>Add a new model to the model database.  |
-| void | **[add_friend](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-add-friend)**(const str & model, const str & newfriend)<br>Add a friend, and all its friends and ancestors, to a model's list of friends.  |
-| bool | **[model_exists](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-model-exists)**(const str & model) const<br>Indicate whether a model is recognised by GAMBIT or not.  |
-| str | **[list_models](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-list-models)**() const<br>List all the models recognised by GAMBIT.  |
-| void | **[verify_model](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-verify-model)**(const str & model) const<br>Verify that a string matches a model recognised by GAMBIT, crash otherwise.  |
-| const std::set< str > & | **[get_allmodels](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-get-allmodels)**() const<br>Return set of all models recognised by GAMBIT.  |
-| std::set< str > | **[get_activemodels](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-get-activemodels)**() const<br>Return the set of active models;.  |
-| std::vector< str > | **[get_lineage](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-get-lineage)**(const str & model) const<br>Retrieve the lineage for a given model.  |
-| std::set< str > | **[get_friends](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-get-friends)**(const str & model) const<br>Retrieve the friends for a given model.  |
-| std::set< str > | **[get_best_friends](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-get-best-friends)**(const str & model) const<br>Retrieve the best friends for a given model.  |
-| std::vector< str > | **[get_descendants](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-get-descendants)**(const str & model) const<br>Retrieve the descendants for a given model.  |
-| str | **[get_parent](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-get-parent)**(const str & model) const<br>Retrieve the parent model for a given model.  |
-| bool | **[descended_from](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-descended-from)**(const str & model1, const str & model2) const<br>Check if model 1 is descended from model 2.  |
-| bool | **[ancestor_of](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-ancestor-of)**(const str & model1, const str & model2) const<br>Check if model 1 is an ancestor of model 2.  |
-| bool | **[downstream_of](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-downstream-of)**(const str & model1, const str & model2) const<br>Check if model 1 exists somewhere downstream of (and can be therefore be interpreted as a) model 2.  |
-| bool | **[upstream_of](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-upstream-of)**(const str & model1, const str & model2) const<br>Check if model 1 exists somewhere upstream of model 2, allowing model 2 to be interpreted as model 1.  |
-| | **[ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-modelfunctorclaw)**()<br>Constructor.  |
-| | **[~ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-gambitmodelsmodelfunctorclaw-modelfunctorclaw)**()<br>Destructor.  |
+| primodel_vec | **[getPrimaryModelFunctorsToActivate](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-getprimarymodelfunctorstoactivate)**(std::set< str > selectedmodels, const primodel_vec & primaryModelFunctors) |
+| [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * | **[getPrimaryModelFunctor](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-getprimarymodelfunctor)**(const std::string modelname, const primodel_vec & primaryModelFunctors) const<br>Searches primary model functor list for specified model.  |
+| void | **[checkPrimaryModelFunctorUsage](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-checkprimarymodelfunctorusage)**(const activemodel_map & activeModelFunctors) const |
+| void | **[declare_model](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-declare-model)**(const str & model, const str & parent)<br>Add a new model to the model database.  |
+| void | **[add_friend](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-add-friend)**(const str & model, const str & newfriend)<br>Add a friend, and all its friends and ancestors, to a model's list of friends.  |
+| bool | **[model_exists](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-model-exists)**(const str & model) const<br>Indicate whether a model is recognised by GAMBIT or not.  |
+| str | **[list_models](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-list-models)**() const<br>List all the models recognised by GAMBIT.  |
+| void | **[verify_model](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-verify-model)**(const str & model) const<br>Verify that a string matches a model recognised by GAMBIT, crash otherwise.  |
+| const std::set< str > & | **[get_allmodels](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-get-allmodels)**() const<br>Return set of all models recognised by GAMBIT.  |
+| std::set< str > | **[get_activemodels](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-get-activemodels)**() const<br>Return the set of active models;.  |
+| std::vector< str > | **[get_lineage](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-get-lineage)**(const str & model) const<br>Retrieve the lineage for a given model.  |
+| std::set< str > | **[get_friends](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-get-friends)**(const str & model) const<br>Retrieve the friends for a given model.  |
+| std::set< str > | **[get_best_friends](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-get-best-friends)**(const str & model) const<br>Retrieve the best friends for a given model.  |
+| std::vector< str > | **[get_descendants](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-get-descendants)**(const str & model) const<br>Retrieve the descendants for a given model.  |
+| str | **[get_parent](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-get-parent)**(const str & model) const<br>Retrieve the parent model for a given model.  |
+| bool | **[descended_from](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-descended-from)**(const str & model1, const str & model2) const<br>Check if model 1 is descended from model 2.  |
+| bool | **[ancestor_of](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-ancestor-of)**(const str & model1, const str & model2) const<br>Check if model 1 is an ancestor of model 2.  |
+| bool | **[downstream_of](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-downstream-of)**(const str & model1, const str & model2) const<br>Check if model 1 exists somewhere downstream of (and can be therefore be interpreted as a) model 2.  |
+| bool | **[upstream_of](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-upstream-of)**(const str & model1, const str & model2) const<br>Check if model 1 exists somewhere upstream of model 2, allowing model 2 to be interpreted as model 1.  |
+| | **[ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-modelfunctorclaw)**()<br>Constructor.  |
+| | **[~ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/#function-modelfunctorclaw)**()<br>Destructor.  |
 
 ## Detailed Description
 
@@ -280,4 +280,4 @@ Destructor.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

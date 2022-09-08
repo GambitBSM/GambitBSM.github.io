@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DO_CLASSLOADING](/documentation/code/files/include_2gambit_2backends_2backend__undefs_8hpp/#define-include-gambit-backends-backend-undefs-hpp-do-classloading)**  |
+|  | **[DO_CLASSLOADING](/documentation/code/files/include_2gambit_2backends_2backend__undefs_8hpp/#define-do-classloading)**  |
 
 ## Detailed Description
 
@@ -92,4 +92,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

@@ -13,12 +13,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[str_flav_to_mass](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gambitdarkbitdarkbit-utils-str-flav-to-mass)**(const std::string & flav) |
-| std::string | **[str_mass_to_flav](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gambitdarkbitdarkbit-utils-str-mass-to-flav)**(const std::string & mass) |
-| void | **[ImportDecays](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gambitdarkbitdarkbit-utils-importdecays)**(std::string pID, [TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & catalog, std::set< std::string > & importedDecays, const [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) * tbl, double minBranching, std::vector< std::string > excludeDecays =std::vector< std::string >()) |
-| template <int i\> <br>double | **[gamma3bdy_limits](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gambitdarkbitdarkbit-utils-gamma3bdy-limits)**(double Eg, double M_DM, double m1, double m2)<br>Calculate kinematical limits for three-body final states.  |
-| template double | **[gamma3bdy_limits< 0 >](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gambitdarkbitdarkbit-utils-gamma3bdy-limits-0)**(double , double , double , double ) |
-| template double | **[gamma3bdy_limits< 1 >](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gambitdarkbitdarkbit-utils-gamma3bdy-limits-1)**(double , double , double , double ) |
+| std::string | **[str_flav_to_mass](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-str-flav-to-mass)**(const std::string & flav) |
+| std::string | **[str_mass_to_flav](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-str-mass-to-flav)**(const std::string & mass) |
+| void | **[ImportDecays](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-importdecays)**(std::string pID, [TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & catalog, std::set< std::string > & importedDecays, const [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) * tbl, double minBranching, std::vector< std::string > excludeDecays =std::vector< std::string >()) |
+| template <int i\> <br>double | **[gamma3bdy_limits](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits)**(double Eg, double M_DM, double m1, double m2)<br>Calculate kinematical limits for three-body final states.  |
+| template double | **[gamma3bdy_limits< 0 >](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits-0)**(double , double , double , double ) |
+| template double | **[gamma3bdy_limits< 1 >](/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1darkbit__utils/#function-gamma3bdy-limits-1)**(double , double , double , double ) |
 
 
 ## Functions Documentation
@@ -107,4 +107,4 @@ template double gamma3bdy_limits< 1 >(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

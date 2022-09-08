@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____is__args__convertible____/#variable-gambitscanner-is-args-convertible-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____is__args__convertible____/#variable-value)**  |
 
 ## Detailed Description
 
@@ -37,4 +37,4 @@ static const bool value = is_args_convertible<T1, T2>::value;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

@@ -25,11 +25,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[RELATIVE_PRECISION](/documentation/code/files/mt2__bisect_8h/#define-mt2-bisect-h-relative-precision)**  |
-|  | **[ABSOLUTE_PRECISION](/documentation/code/files/mt2__bisect_8h/#define-mt2-bisect-h-absolute-precision)**  |
-|  | **[MIN_MASS](/documentation/code/files/mt2__bisect_8h/#define-mt2-bisect-h-min-mass)**  |
-|  | **[ZERO_MASS](/documentation/code/files/mt2__bisect_8h/#define-mt2-bisect-h-zero-mass)**  |
-|  | **[SCANSTEP](/documentation/code/files/mt2__bisect_8h/#define-mt2-bisect-h-scanstep)**  |
+|  | **[RELATIVE_PRECISION](/documentation/code/files/mt2__bisect_8h/#define-relative-precision)**  |
+|  | **[ABSOLUTE_PRECISION](/documentation/code/files/mt2__bisect_8h/#define-absolute-precision)**  |
+|  | **[MIN_MASS](/documentation/code/files/mt2__bisect_8h/#define-min-mass)**  |
+|  | **[ZERO_MASS](/documentation/code/files/mt2__bisect_8h/#define-zero-mass)**  |
+|  | **[SCANSTEP](/documentation/code/files/mt2__bisect_8h/#define-scanstep)**  |
 
 
 
@@ -142,4 +142,4 @@ class mt2
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:53 +0000
+Updated on 2022-09-08 at 02:23:04 +0000

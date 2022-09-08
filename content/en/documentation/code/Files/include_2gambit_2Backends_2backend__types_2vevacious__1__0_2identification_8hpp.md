@@ -13,12 +13,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-include-gambit-backends-backend-types-vevacious-1-0-identification-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-include-gambit-backends-backend-types-vevacious-1-0-identification-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-include-gambit-backends-backend-types-vevacious-1-0-identification-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-include-gambit-backends-backend-types-vevacious-1-0-identification-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-include-gambit-backends-backend-types-vevacious-1-0-identification-hpp-reference)**  |
-|  | **[DO_CLASSLOADING](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-include-gambit-backends-backend-types-vevacious-1-0-identification-hpp-do-classloading)**  |
+|  | **[BACKENDNAME](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-reference)**  |
+|  | **[DO_CLASSLOADING](/documentation/code/files/include_2gambit_2backends_2backend__types_2vevacious__1__0_2identification_8hpp/#define-do-classloading)**  |
 
 
 
@@ -87,4 +87,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

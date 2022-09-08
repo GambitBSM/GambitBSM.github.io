@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[ddpole](/documentation/code/classes/structgambit_1_1ds__ddmssmcom/#variable-gambitds-ddmssmcom-ddpole)**  |
-| Finteger | **[dddn](/documentation/code/classes/structgambit_1_1ds__ddmssmcom/#variable-gambitds-ddmssmcom-dddn)**  |
+| Finteger | **[ddpole](/documentation/code/classes/structgambit_1_1ds__ddmssmcom/#variable-ddpole)**  |
+| Finteger | **[dddn](/documentation/code/classes/structgambit_1_1ds__ddmssmcom/#variable-dddn)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ Finteger dddn;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

@@ -15,43 +15,43 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Settings](/documentation/code/classes/structsettings/#function-settings-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[nDims](/documentation/code/classes/structsettings/#variable-settings-ndims)**  |
-| int | **[nDerived](/documentation/code/classes/structsettings/#variable-settings-nderived)**  |
-| int | **[nlive](/documentation/code/classes/structsettings/#variable-settings-nlive)**  |
-| int | **[num_repeats](/documentation/code/classes/structsettings/#variable-settings-num-repeats)**  |
-| int | **[nprior](/documentation/code/classes/structsettings/#variable-settings-nprior)**  |
-| int | **[nfail](/documentation/code/classes/structsettings/#variable-settings-nfail)**  |
-| bool | **[do_clustering](/documentation/code/classes/structsettings/#variable-settings-do-clustering)**  |
-| int | **[feedback](/documentation/code/classes/structsettings/#variable-settings-feedback)**  |
-| double | **[precision_criterion](/documentation/code/classes/structsettings/#variable-settings-precision-criterion)**  |
-| double | **[logzero](/documentation/code/classes/structsettings/#variable-settings-logzero)**  |
-| int | **[max_ndead](/documentation/code/classes/structsettings/#variable-settings-max-ndead)**  |
-| double | **[boost_posterior](/documentation/code/classes/structsettings/#variable-settings-boost-posterior)**  |
-| bool | **[posteriors](/documentation/code/classes/structsettings/#variable-settings-posteriors)**  |
-| bool | **[equals](/documentation/code/classes/structsettings/#variable-settings-equals)**  |
-| bool | **[cluster_posteriors](/documentation/code/classes/structsettings/#variable-settings-cluster-posteriors)**  |
-| bool | **[write_resume](/documentation/code/classes/structsettings/#variable-settings-write-resume)**  |
-| bool | **[write_paramnames](/documentation/code/classes/structsettings/#variable-settings-write-paramnames)**  |
-| bool | **[read_resume](/documentation/code/classes/structsettings/#variable-settings-read-resume)**  |
-| bool | **[write_stats](/documentation/code/classes/structsettings/#variable-settings-write-stats)**  |
-| bool | **[write_live](/documentation/code/classes/structsettings/#variable-settings-write-live)**  |
-| bool | **[write_dead](/documentation/code/classes/structsettings/#variable-settings-write-dead)**  |
-| bool | **[write_prior](/documentation/code/classes/structsettings/#variable-settings-write-prior)**  |
-| bool | **[maximise](/documentation/code/classes/structsettings/#variable-settings-maximise)**  |
-| double | **[compression_factor](/documentation/code/classes/structsettings/#variable-settings-compression-factor)**  |
-| std::string | **[base_dir](/documentation/code/classes/structsettings/#variable-settings-base-dir)**  |
-| std::string | **[file_root](/documentation/code/classes/structsettings/#variable-settings-file-root)**  |
-| std::vector< double > | **[grade_frac](/documentation/code/classes/structsettings/#variable-settings-grade-frac)**  |
-| std::vector< int > | **[grade_dims](/documentation/code/classes/structsettings/#variable-settings-grade-dims)**  |
-| std::vector< double > | **[loglikes](/documentation/code/classes/structsettings/#variable-settings-loglikes)**  |
-| std::vector< int > | **[nlives](/documentation/code/classes/structsettings/#variable-settings-nlives)**  |
-| int | **[seed](/documentation/code/classes/structsettings/#variable-settings-seed)**  |
+| int | **[nDims](/documentation/code/classes/structsettings/#variable-ndims)**  |
+| int | **[nDerived](/documentation/code/classes/structsettings/#variable-nderived)**  |
+| int | **[nlive](/documentation/code/classes/structsettings/#variable-nlive)**  |
+| int | **[num_repeats](/documentation/code/classes/structsettings/#variable-num-repeats)**  |
+| int | **[nprior](/documentation/code/classes/structsettings/#variable-nprior)**  |
+| int | **[nfail](/documentation/code/classes/structsettings/#variable-nfail)**  |
+| bool | **[do_clustering](/documentation/code/classes/structsettings/#variable-do-clustering)**  |
+| int | **[feedback](/documentation/code/classes/structsettings/#variable-feedback)**  |
+| double | **[precision_criterion](/documentation/code/classes/structsettings/#variable-precision-criterion)**  |
+| double | **[logzero](/documentation/code/classes/structsettings/#variable-logzero)**  |
+| int | **[max_ndead](/documentation/code/classes/structsettings/#variable-max-ndead)**  |
+| double | **[boost_posterior](/documentation/code/classes/structsettings/#variable-boost-posterior)**  |
+| bool | **[posteriors](/documentation/code/classes/structsettings/#variable-posteriors)**  |
+| bool | **[equals](/documentation/code/classes/structsettings/#variable-equals)**  |
+| bool | **[cluster_posteriors](/documentation/code/classes/structsettings/#variable-cluster-posteriors)**  |
+| bool | **[write_resume](/documentation/code/classes/structsettings/#variable-write-resume)**  |
+| bool | **[write_paramnames](/documentation/code/classes/structsettings/#variable-write-paramnames)**  |
+| bool | **[read_resume](/documentation/code/classes/structsettings/#variable-read-resume)**  |
+| bool | **[write_stats](/documentation/code/classes/structsettings/#variable-write-stats)**  |
+| bool | **[write_live](/documentation/code/classes/structsettings/#variable-write-live)**  |
+| bool | **[write_dead](/documentation/code/classes/structsettings/#variable-write-dead)**  |
+| bool | **[write_prior](/documentation/code/classes/structsettings/#variable-write-prior)**  |
+| bool | **[maximise](/documentation/code/classes/structsettings/#variable-maximise)**  |
+| double | **[compression_factor](/documentation/code/classes/structsettings/#variable-compression-factor)**  |
+| std::string | **[base_dir](/documentation/code/classes/structsettings/#variable-base-dir)**  |
+| std::string | **[file_root](/documentation/code/classes/structsettings/#variable-file-root)**  |
+| std::vector< double > | **[grade_frac](/documentation/code/classes/structsettings/#variable-grade-frac)**  |
+| std::vector< int > | **[grade_dims](/documentation/code/classes/structsettings/#variable-grade-dims)**  |
+| std::vector< double > | **[loglikes](/documentation/code/classes/structsettings/#variable-loglikes)**  |
+| std::vector< int > | **[nlives](/documentation/code/classes/structsettings/#variable-nlives)**  |
+| int | **[seed](/documentation/code/classes/structsettings/#variable-seed)**  |
 
 ## Public Functions Documentation
 
@@ -286,4 +286,4 @@ int seed;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

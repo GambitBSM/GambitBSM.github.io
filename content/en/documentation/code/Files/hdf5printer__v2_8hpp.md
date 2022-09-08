@@ -33,7 +33,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DECLARE_PRINT](/documentation/code/files/hdf5printer__v2_8hpp/#define-hdf5printer-v2-hpp-declare-print)**(r, data, i, elem)  |
+|  | **[DECLARE_PRINT](/documentation/code/files/hdf5printer__v2_8hpp/#define-declare-print)**(r, data, i, elem)  |
 
 ## Detailed Description
 
@@ -1704,4 +1704,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

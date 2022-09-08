@@ -20,10 +20,10 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[DoubleLogFlatJoin](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-gambitpriorsdoublelogflatjoin-doublelogflatjoin)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options)<br>Constructor defined in [doublelogflatjoin.cpp]().  |
-| virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-gambitpriorsdoublelogflatjoin-transform)**(const std::vector< double > & unitpars, std::unordered_map< std::string, double > & output) const override<br>Transformation from unit interval to the double log + flat join (inverse prior transform)  |
-| virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-gambitpriorsdoublelogflatjoin-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
-| virtual double | **[operator()](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-gambitpriorsdoublelogflatjoin-operator)**(const std::vector< double > & vec) const override<br>Probability density function.  |
+| | **[DoubleLogFlatJoin](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-doublelogflatjoin)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options)<br>Constructor defined in [doublelogflatjoin.cpp]().  |
+| virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-transform)**(const std::vector< double > & unitpars, std::unordered_map< std::string, double > & output) const override<br>Transformation from unit interval to the double log + flat join (inverse prior transform)  |
+| virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
+| virtual double | **[operator()](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-operator)**(const std::vector< double > & vec) const override<br>Probability density function.  |
 
 ## Additional inherited members
 
@@ -31,22 +31,22 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**() =default |
-| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**() |
-| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**(const int param_size) |
-| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**(const std::vector< std::string > & param_names, const int param_size =0) |
-| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-baseprior)**(const std::string & param_name, const int param_size =0) |
-| virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-getshownparameters)**() const |
-| unsigned int | **[size](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-size)**() const |
-| void | **[setSize](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-setsize)**(const unsigned int size) |
-| unsigned int & | **[sizeRef](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-sizeref)**() |
-| std::vector< std::string > | **[getParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-getparameters)**() const |
+| virtual | **[~BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-baseprior)**() =default |
+| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-baseprior)**() |
+| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-baseprior)**(const int param_size) |
+| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-baseprior)**(const std::vector< std::string > & param_names, const int param_size =0) |
+| | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-baseprior)**(const std::string & param_name, const int param_size =0) |
+| virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-getshownparameters)**() const |
+| unsigned int | **[size](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-size)**() const |
+| void | **[setSize](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-setsize)**(const unsigned int size) |
+| unsigned int & | **[sizeRef](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-sizeref)**() |
+| std::vector< std::string > | **[getParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-getparameters)**() const |
 
 **Protected Attributes inherited from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< std::string > | **[param_names](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#variable-gambitpriorsbaseprior-param-names)**  |
+| std::vector< std::string > | **[param_names](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#variable-param-names)**  |
 
 
 ## Detailed Description
@@ -85,7 +85,7 @@ virtual void transform(
 
 Transformation from unit interval to the double log + flat join (inverse prior transform) 
 
-**Reimplements**: [Gambit::Priors::BasePrior::transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-transform)
+**Reimplements**: [Gambit::Priors::BasePrior::transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-transform)
 
 
 Transformation from unit interval to the double log + flat join. 
@@ -101,7 +101,7 @@ virtual std::vector< double > inverse_transform(
 
 Transform from parameter back to unit hypercube. 
 
-**Reimplements**: [Gambit::Priors::BasePrior::inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-inverse-transform)
+**Reimplements**: [Gambit::Priors::BasePrior::inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-inverse-transform)
 
 
 ### function operator()
@@ -114,9 +114,9 @@ virtual double operator()(
 
 Probability density function. 
 
-**Reimplements**: [Gambit::Priors::BasePrior::operator()](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-gambitpriorsbaseprior-operator)
+**Reimplements**: [Gambit::Priors::BasePrior::operator()](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-operator)
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

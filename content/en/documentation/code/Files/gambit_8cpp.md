@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[do_cleanup](/documentation/code/files/gambit_8cpp/#function-gambit-cpp-do-cleanup)**()<br>Cleanup function.  |
-| int | **[main](/documentation/code/files/gambit_8cpp/#function-gambit-cpp-main)**(int argc, char * argv[])<br>Main GAMBIT program.  |
+| void | **[do_cleanup](/documentation/code/files/gambit_8cpp/#function-do-cleanup)**()<br>Cleanup function.  |
+| int | **[main](/documentation/code/files/gambit_8cpp/#function-main)**(int argc, char * argv[])<br>Main GAMBIT program.  |
 
 ## Detailed Description
 
@@ -449,4 +449,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:53 +0000
+Updated on 2022-09-08 at 02:23:04 +0000

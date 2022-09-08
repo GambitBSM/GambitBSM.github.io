@@ -19,8 +19,8 @@ Inherits from std::exception
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[MPIShutdownException](/documentation/code/classes/classgambit_1_1mpishutdownexception/#function-gambitmpishutdownexception-mpishutdownexception)**(const std::string & message)<br>[MPIShutdownException](/documentation/code/classes/classgambit_1_1mpishutdownexception/) member functions.  |
-| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1mpishutdownexception/#function-gambitmpishutdownexception-what)**() const |
+| | **[MPIShutdownException](/documentation/code/classes/classgambit_1_1mpishutdownexception/#function-mpishutdownexception)**(const std::string & message)<br>[MPIShutdownException](/documentation/code/classes/classgambit_1_1mpishutdownexception/) member functions.  |
+| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1mpishutdownexception/#function-what)**() const |
 
 ## Public Functions Documentation
 
@@ -43,4 +43,4 @@ virtual const char * what() const
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

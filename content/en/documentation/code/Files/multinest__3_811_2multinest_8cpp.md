@@ -20,13 +20,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/files/multinest__3_811_2multinest_8cpp/#typedef-multinest-3-11-multinest-cpp-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
+| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/files/multinest__3_811_2multinest_8cpp/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/multinest__3_811_2multinest_8cpp/#function-multinest-3-11-multinest-cpp-scanner-plugin)**(multinest , version(3, 11) ) |
+| | **[scanner_plugin](/documentation/code/files/multinest__3_811_2multinest_8cpp/#function-scanner-plugin)**(multinest , version(3, 11) ) |
 
 ## Detailed Description
 
@@ -465,4 +465,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

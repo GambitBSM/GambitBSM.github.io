@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/files/run__tests_8cpp/#function-run-tests-cpp-main)**(int argc, char * argv[])<br>Main GAMBIT program.  |
+| int | **[main](/documentation/code/files/run__tests_8cpp/#function-main)**(int argc, char * argv[])<br>Main GAMBIT program.  |
 
 
 ## Functions Documentation
@@ -99,4 +99,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

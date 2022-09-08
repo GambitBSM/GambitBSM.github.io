@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[AP_DBUG](/documentation/code/files/asciiprinter_8cpp/#define-asciiprinter-cpp-ap-dbug)**(x)  |
+|  | **[AP_DBUG](/documentation/code/files/asciiprinter_8cpp/#define-ap-dbug)**(x)  |
 
 ## Detailed Description
 
@@ -575,4 +575,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

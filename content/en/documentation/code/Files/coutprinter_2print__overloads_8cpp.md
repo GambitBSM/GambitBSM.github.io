@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PRINT](/documentation/code/files/coutprinter_2print__overloads_8cpp/#define-coutprinter-print-overloads-cpp-print)**(TYPE) <br>Templatable print functions.  |
+|  | **[PRINT](/documentation/code/files/coutprinter_2print__overloads_8cpp/#define-print)**(TYPE) <br>Templatable print functions.  |
 
 ## Detailed Description
 
@@ -139,4 +139,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

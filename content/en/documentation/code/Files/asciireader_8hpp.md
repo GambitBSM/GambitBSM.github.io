@@ -26,7 +26,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DECLARE_RETRIEVE](/documentation/code/files/asciireader_8hpp/#define-asciireader-hpp-declare-retrieve)**(r, data, i, elem)  |
+|  | **[DECLARE_RETRIEVE](/documentation/code/files/asciireader_8hpp/#define-declare-retrieve)**(r, data, i, elem)  |
 
 ## Detailed Description
 
@@ -164,4 +164,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

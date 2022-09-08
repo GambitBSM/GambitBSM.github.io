@@ -13,30 +13,30 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-superiso-4-1-hpp-be-conv-function)**(A_BXsmumu_zero , double , (const parameters *) , "A_BXsmumu_zero" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) const parameters WC | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-superiso-4-1-hpp-be-conv-function)**(A_BXstautau_highq2 , double , (const parameters *) , "A_BXstautau_highq2" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) const parameters WC const parameters WC | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-superiso-4-1-hpp-be-conv-function)**(modified_AI_BKstarmumu_zero , double , (const parameters *) , "modified_AI_BKstarmumu_zero" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-be-conv-function)**(A_BXsmumu_zero , double , (const parameters *) , "A_BXsmumu_zero" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-be-conv-function)**(A_BXstautau_highq2 , double , (const parameters *) , "A_BXstautau_highq2" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters WC | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-be-conv-function)**(modified_AI_BKstarmumu_zero , double , (const parameters *) , "modified_AI_BKstarmumu_zero" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[double](/documentation/code/files/superiso__4__1_8hpp/#variable-superiso-4-1-hpp-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) const parameters | **[BRBXstautau_highq2](/documentation/code/files/superiso__4__1_8hpp/#variable-superiso-4-1-hpp-brbxstautau-highq2)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) const parameters | **[MSSM63atQ](/documentation/code/files/superiso__4__1_8hpp/#variable-superiso-4-1-hpp-mssm63atq)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) const parameters | **[MSSM63atMGUT](/documentation/code/files/superiso__4__1_8hpp/#variable-superiso-4-1-hpp-mssm63atmgut)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) const parameters WC const parameters | **[modified_AI_BKstarmumu](/documentation/code/files/superiso__4__1_8hpp/#variable-superiso-4-1-hpp-modified-ai-bkstarmumu)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) const parameters WC const parameters WC const parameters | **[modified_delta0](/documentation/code/files/superiso__4__1_8hpp/#variable-superiso-4-1-hpp-modified-delta0)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/files/superiso__4__1_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[BRBXstautau_highq2](/documentation/code/files/superiso__4__1_8hpp/#variable-brbxstautau-highq2)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[MSSM63atQ](/documentation/code/files/superiso__4__1_8hpp/#variable-mssm63atq)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[MSSM63atMGUT](/documentation/code/files/superiso__4__1_8hpp/#variable-mssm63atmgut)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters | **[modified_AI_BKstarmumu](/documentation/code/files/superiso__4__1_8hpp/#variable-modified-ai-bkstarmumu)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters WC const parameters | **[modified_delta0](/documentation/code/files/superiso__4__1_8hpp/#variable-modified-delta0)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/superiso__4__1_8hpp/#define-superiso-4-1-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/superiso__4__1_8hpp/#define-superiso-4-1-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/superiso__4__1_8hpp/#define-superiso-4-1-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/superiso__4__1_8hpp/#define-superiso-4-1-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/superiso__4__1_8hpp/#define-superiso-4-1-hpp-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/superiso__4__1_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/superiso__4__1_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/superiso__4__1_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/superiso__4__1_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/superiso__4__1_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -301,4 +301,4 @@ BE_CONV_FUNCTION(modified_delta0, double, (const parameters*), "modified_delta0"
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

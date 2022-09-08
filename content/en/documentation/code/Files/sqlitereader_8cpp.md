@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SQL_DEBUG](/documentation/code/files/sqlitereader_8cpp/#define-sqlitereader-cpp-sql-debug)**  |
-|  | **[GET_SQL_TYPE_CASES](/documentation/code/files/sqlitereader_8cpp/#define-sqlitereader-cpp-get-sql-type-cases)**(r, data, elem)  |
+|  | **[SQL_DEBUG](/documentation/code/files/sqlitereader_8cpp/#define-sql-debug)**  |
+|  | **[GET_SQL_TYPE_CASES](/documentation/code/files/sqlitereader_8cpp/#define-get-sql-type-cases)**(r, data, elem)  |
 
 ## Detailed Description
 
@@ -423,4 +423,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

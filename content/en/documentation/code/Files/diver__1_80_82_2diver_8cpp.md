@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/diver__1_80_82_2diver_8cpp/#function-diver-1-0-2-diver-cpp-scanner-plugin)**(diver , version(1, 0, 2) ) |
+| | **[scanner_plugin](/documentation/code/files/diver__1_80_82_2diver_8cpp/#function-scanner-plugin)**(diver , version(1, 0, 2) ) |
 
 ## Detailed Description
 
@@ -277,4 +277,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

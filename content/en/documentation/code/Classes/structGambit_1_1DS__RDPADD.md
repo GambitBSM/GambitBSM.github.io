@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[pdivr](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-gambitds-rdpadd-pdivr)**  |
-| Fdouble | **[dpres](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-gambitds-rdpadd-dpres)**  |
-| Finteger | **[nlow](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-gambitds-rdpadd-nlow)**  |
-| Finteger | **[nhigh](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-gambitds-rdpadd-nhigh)**  |
-| Finteger | **[npres](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-gambitds-rdpadd-npres)**  |
-| Finteger | **[nthup](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-gambitds-rdpadd-nthup)**  |
-| Finteger | **[cthtest](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-gambitds-rdpadd-cthtest)**  |
-| Finteger | **[spltest](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-gambitds-rdpadd-spltest)**  |
+| Fdouble | **[pdivr](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-pdivr)**  |
+| Fdouble | **[dpres](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-dpres)**  |
+| Finteger | **[nlow](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nlow)**  |
+| Finteger | **[nhigh](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nhigh)**  |
+| Finteger | **[npres](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-npres)**  |
+| Finteger | **[nthup](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nthup)**  |
+| Finteger | **[cthtest](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-cthtest)**  |
+| Finteger | **[spltest](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-spltest)**  |
 
 ## Public Attributes Documentation
 
@@ -84,4 +84,4 @@ Finteger spltest;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

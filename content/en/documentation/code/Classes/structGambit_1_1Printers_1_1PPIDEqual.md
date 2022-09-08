@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structgambit_1_1printers_1_1ppidequal/#function-gambitprintersppidequal-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & lhs, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & rhs) const |
+| bool | **[operator()](/documentation/code/classes/structgambit_1_1printers_1_1ppidequal/#function-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & lhs, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & rhs) const |
 
 ## Public Functions Documentation
 
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

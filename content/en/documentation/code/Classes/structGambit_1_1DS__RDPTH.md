@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 0, 1001 > | **[pth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-gambitds-rdpth-pth)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 0, 1001 > | **[incth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-gambitds-rdpth-incth)**  |
-| Finteger | **[nth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-gambitds-rdpth-nth)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 0, 1001 > | **[pth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-pth)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 0, 1001 > | **[incth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-incth)**  |
+| Finteger | **[nth](/documentation/code/classes/structgambit_1_1ds__rdpth/#variable-nth)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ Finteger nth;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

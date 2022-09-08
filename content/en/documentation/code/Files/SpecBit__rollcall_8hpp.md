@@ -13,26 +13,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-module-macros-incore-hpp-start-capability) | **[QUICK_FUNCTION](/documentation/code/files/specbit__rollcall_8hpp/#function-specbit-rollcall-hpp-quick-function)**([MODULE](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-examplebit-b-rollcall-hpp-module) , SM_spectrum , OLD_CAPABILITY , convert_MSSM_to_SM , Spectrum , (MSSM63atQ, MSSM63atMGUT) , (MSSM_spectrum, Spectrum) )<br>Module function declarations for [SpecBit_SM.cpp]().  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[QUICK_FUNCTION](/documentation/code/files/specbit__rollcall_8hpp/#function-quick-function)**([MODULE](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-module) , SM_spectrum , OLD_CAPABILITY , convert_MSSM_to_SM , Spectrum , (MSSM63atQ, MSSM63atMGUT) , (MSSM_spectrum, Spectrum) )<br>Module function declarations for [SpecBit_SM.cpp]().  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-module-macros-incore-hpp-start-capability) | **[SM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-specbit-rollcall-hpp-sm-spectrum)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-module-macros-incore-hpp-start-capability) | **[OLD_CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/#variable-specbit-rollcall-hpp-old-capability)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-module-macros-incore-hpp-start-capability) | **[convert_NMSSM_to_SM](/documentation/code/files/specbit__rollcall_8hpp/#variable-specbit-rollcall-hpp-convert-nmssm-to-sm)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-module-macros-incore-hpp-start-capability) | **[Spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-specbit-rollcall-hpp-spectrum)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-module-macros-incore-hpp-start-capability) | **[NMSSM_does_not_exist_yet](/documentation/code/files/specbit__rollcall_8hpp/#variable-specbit-rollcall-hpp-nmssm-does-not-exist-yet)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-module-macros-incore-hpp-start-capability) | **[NMSSM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-specbit-rollcall-hpp-nmssm-spectrum)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[SM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-sm-spectrum)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[OLD_CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/#variable-old-capability)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[convert_NMSSM_to_SM](/documentation/code/files/specbit__rollcall_8hpp/#variable-convert-nmssm-to-sm)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[Spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-spectrum)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[NMSSM_does_not_exist_yet](/documentation/code/files/specbit__rollcall_8hpp/#variable-nmssm-does-not-exist-yet)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[NMSSM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-nmssm-spectrum)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/specbit__rollcall_8hpp/#define-specbit-rollcall-hpp-module)**  |
-|  | **[REFERENCE](/documentation/code/files/specbit__rollcall_8hpp/#define-specbit-rollcall-hpp-reference)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/#define-specbit-rollcall-hpp-capability)**  |
+|  | **[MODULE](/documentation/code/files/specbit__rollcall_8hpp/#define-module)**  |
+|  | **[REFERENCE](/documentation/code/files/specbit__rollcall_8hpp/#define-reference)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/#define-capability)**  |
 
 ## Detailed Description
 
@@ -264,4 +264,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

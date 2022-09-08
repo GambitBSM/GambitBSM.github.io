@@ -20,18 +20,18 @@ Inherits from [Gambit::Farray< char, 1, len >](/documentation/code/classes/class
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-fstring)**() |
-| | **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-fstring)**(const std::string & in) |
-| | **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-fstring)**(const char * in) |
-| | **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-fstring)**(char in) |
-| template <int ilen\> <br>| **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-fstring)**(const [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< ilen > & in) |
-| [Fstring](/documentation/code/classes/classgambit_1_1fstring/) & | **[operator=](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-operator)**(const std::string & in) |
-| [Fstring](/documentation/code/classes/classgambit_1_1fstring/) & | **[operator=](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-operator)**(const char * in) |
-| [Fstring](/documentation/code/classes/classgambit_1_1fstring/) & | **[operator=](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-operator)**(char in) |
-| template <int ilen\> <br>[Fstring](/documentation/code/classes/classgambit_1_1fstring/) & | **[operator=](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-operator)**(const [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< ilen > & in) |
-| std::string | **[str](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-str)**() const<br>Get std::string copy of the [Fstring](/documentation/code/classes/classgambit_1_1fstring/), including all trailing spaces.  |
-| std::string | **[trimmed_str](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-trimmed-str)**() const<br>Get std::string copy of the [Fstring](/documentation/code/classes/classgambit_1_1fstring/) without trailing spaces.  |
-| bool | **[operator==](/documentation/code/classes/classgambit_1_1fstring/#function-gambitfstring-operator)**(std::string str) |
+| | **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-fstring)**() |
+| | **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-fstring)**(const std::string & in) |
+| | **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-fstring)**(const char * in) |
+| | **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-fstring)**(char in) |
+| template <int ilen\> <br>| **[Fstring](/documentation/code/classes/classgambit_1_1fstring/#function-fstring)**(const [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< ilen > & in) |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/) & | **[operator=](/documentation/code/classes/classgambit_1_1fstring/#function-operator)**(const std::string & in) |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/) & | **[operator=](/documentation/code/classes/classgambit_1_1fstring/#function-operator)**(const char * in) |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/) & | **[operator=](/documentation/code/classes/classgambit_1_1fstring/#function-operator)**(char in) |
+| template <int ilen\> <br>[Fstring](/documentation/code/classes/classgambit_1_1fstring/) & | **[operator=](/documentation/code/classes/classgambit_1_1fstring/#function-operator)**(const [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< ilen > & in) |
+| std::string | **[str](/documentation/code/classes/classgambit_1_1fstring/#function-str)**() const<br>Get std::string copy of the [Fstring](/documentation/code/classes/classgambit_1_1fstring/), including all trailing spaces.  |
+| std::string | **[trimmed_str](/documentation/code/classes/classgambit_1_1fstring/#function-trimmed-str)**() const<br>Get std::string copy of the [Fstring](/documentation/code/classes/classgambit_1_1fstring/) without trailing spaces.  |
+| bool | **[operator==](/documentation/code/classes/classgambit_1_1fstring/#function-operator)**(std::string str) |
 
 ## Additional inherited members
 
@@ -47,29 +47,29 @@ Inherits from [Gambit::Farray< char, 1, len >](/documentation/code/classes/class
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [calc_nElem](/documentation/code/classes/structgambit_1_1farray_1_1calc__nelem/)< lims... > | **[nElem](/documentation/code/classes/classgambit_1_1farray/#typedef-gambitfarray-nelem)**  |
+| typedef [calc_nElem](/documentation/code/classes/structgambit_1_1farray_1_1calc__nelem/)< lims... > | **[nElem](/documentation/code/classes/classgambit_1_1farray/#typedef-nelem)**  |
 
 **Protected Types inherited from [Gambit::Farray< char, 1, len >](/documentation/code/classes/classgambit_1_1farray/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [mult_types](/documentation/code/classes/structgambit_1_1mult__types/)< short, const short, short &, const short &, unsigned short, const unsigned short, unsigned short &, const unsigned short &, int, const int, int &, const int &, unsigned, const unsigned, unsigned &, const unsigned &, long, const long, long &, const long &, unsigned long, const unsigned long, unsigned long &, const unsigned long &, long long, const long long, long long &, const long long &, unsigned long long, const unsigned long long, unsigned long long &, const unsigned long long & > | **[allowed_types](/documentation/code/classes/classgambit_1_1farray/#typedef-gambitfarray-allowed-types)**  |
+| typedef [mult_types](/documentation/code/classes/structgambit_1_1mult__types/)< short, const short, short &, const short &, unsigned short, const unsigned short, unsigned short &, const unsigned short &, int, const int, int &, const int &, unsigned, const unsigned, unsigned &, const unsigned &, long, const long, long &, const long &, unsigned long, const unsigned long, unsigned long &, const unsigned long &, long long, const long long, long long &, const long long &, unsigned long long, const unsigned long long, unsigned long long &, const unsigned long long & > | **[allowed_types](/documentation/code/classes/classgambit_1_1farray/#typedef-allowed-types)**  |
 
 **Public Functions inherited from [Gambit::Farray< char, 1, len >](/documentation/code/classes/classgambit_1_1farray/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-farray)**() |
-| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-farray)**([Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & in) |
-| template <typename ... Args\> <br>[enable_if_all_member](/documentation/code/classes/structgambit_1_1enable__if__all__member/)< [allowed_types](/documentation/code/classes/structgambit_1_1mult__types/), T &, Args... >::type::type | **[operator()](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-operator)**(Args ... a) |
-| template <typename ... Args\> <br>[enable_if_all_member](/documentation/code/classes/structgambit_1_1enable__if__all__member/)< [allowed_types](/documentation/code/classes/structgambit_1_1mult__types/), constT &, Args... >::type::type | **[operator()](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-operator)**(Args ... a) const |
-| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-farray)**(const T val) |
+| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**() |
+| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**([Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & in) |
+| template <typename ... Args\> <br>[enable_if_all_member](/documentation/code/classes/structgambit_1_1enable__if__all__member/)< [allowed_types](/documentation/code/classes/structgambit_1_1mult__types/), T &, Args... >::type::type | **[operator()](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(Args ... a) |
+| template <typename ... Args\> <br>[enable_if_all_member](/documentation/code/classes/structgambit_1_1enable__if__all__member/)< [allowed_types](/documentation/code/classes/structgambit_1_1mult__types/), constT &, Args... >::type::type | **[operator()](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(Args ... a) const |
+| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**(const T val) |
 
 **Public Attributes inherited from [Gambit::Farray< char, 1, len >](/documentation/code/classes/classgambit_1_1farray/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| T[nElem::val] | **[array](/documentation/code/classes/classgambit_1_1farray/#variable-gambitfarray-array)**  |
+| T[nElem::val] | **[array](/documentation/code/classes/classgambit_1_1farray/#variable-array)**  |
 
 
 ## Detailed Description
@@ -192,4 +192,4 @@ inline bool operator==(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

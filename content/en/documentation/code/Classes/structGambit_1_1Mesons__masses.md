@@ -15,29 +15,29 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| constexpr double | **[pi0](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-pi0)**  |
-| constexpr double | **[pi_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-pi-plus)**  |
-| constexpr double | **[pi_minus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-pi-minus)**  |
-| constexpr double | **[eta](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-eta)**  |
-| constexpr double | **[rho0](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-rho0)**  |
-| constexpr double | **[rho_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-rho-plus)**  |
-| constexpr double | **[rho_minus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-rho-minus)**  |
-| constexpr double | **[omega](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-omega)**  |
-| constexpr double | **[kaon_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-kaon-plus)**  |
-| constexpr double | **[kaon_minus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-kaon-minus)**  |
-| constexpr double | **[kaon0](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-kaon0)**  |
-| constexpr double | **[rho1450](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-rho1450)**  |
-| constexpr double | **[D_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-d-plus)**  |
-| constexpr double | **[D_s](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-d-s)**  |
-| constexpr double | **[B_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-b-plus)**  |
-| constexpr double | **[B_s](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-b-s)**  |
-| constexpr double | **[B_c](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-b-c)**  |
-| constexpr double | **[eta_prime](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-eta-prime)**  |
-| constexpr double | **[eta_c](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-eta-c)**  |
-| constexpr double | **[Dstar_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-dstar-plus)**  |
-| constexpr double | **[Dstar_s](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-dstar-s)**  |
-| constexpr double | **[phi](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-phi)**  |
-| constexpr double | **[Jpsi](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-gambitmesons-masses-jpsi)**  |
+| constexpr double | **[pi0](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-pi0)**  |
+| constexpr double | **[pi_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-pi-plus)**  |
+| constexpr double | **[pi_minus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-pi-minus)**  |
+| constexpr double | **[eta](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-eta)**  |
+| constexpr double | **[rho0](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-rho0)**  |
+| constexpr double | **[rho_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-rho-plus)**  |
+| constexpr double | **[rho_minus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-rho-minus)**  |
+| constexpr double | **[omega](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-omega)**  |
+| constexpr double | **[kaon_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-kaon-plus)**  |
+| constexpr double | **[kaon_minus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-kaon-minus)**  |
+| constexpr double | **[kaon0](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-kaon0)**  |
+| constexpr double | **[rho1450](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-rho1450)**  |
+| constexpr double | **[D_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-d-plus)**  |
+| constexpr double | **[D_s](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-d-s)**  |
+| constexpr double | **[B_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-b-plus)**  |
+| constexpr double | **[B_s](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-b-s)**  |
+| constexpr double | **[B_c](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-b-c)**  |
+| constexpr double | **[eta_prime](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-eta-prime)**  |
+| constexpr double | **[eta_c](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-eta-c)**  |
+| constexpr double | **[Dstar_plus](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-dstar-plus)**  |
+| constexpr double | **[Dstar_s](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-dstar-s)**  |
+| constexpr double | **[phi](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-phi)**  |
+| constexpr double | **[Jpsi](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-jpsi)**  |
 
 ## Public Attributes Documentation
 
@@ -204,4 +204,4 @@ static constexpr double Jpsi = 3.0969;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

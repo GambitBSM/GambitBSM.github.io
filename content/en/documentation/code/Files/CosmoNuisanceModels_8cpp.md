@@ -13,13 +13,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-cosmonuisancemodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-cosmonuisancemodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-cosmonuisancemodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-cosmonuisancemodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-cosmonuisancemodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-cosmonuisancemodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-cosmonuisancemodels-cpp-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmonuisancemodels_8cpp/#define-model)**  |
 
 
 
@@ -427,4 +427,4 @@ void MODEL_NAMESPACE::cosmo_nuisance_BK14priors_to_cosmo_nuisance_BK14 (const Mo
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

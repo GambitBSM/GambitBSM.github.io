@@ -15,22 +15,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[hhbrb](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrb)**  |
-| Fdouble | **[hhbrl](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrl)**  |
-| Fdouble | **[hhbrm](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrm)**  |
-| Fdouble | **[hhbrs](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrs)**  |
-| Fdouble | **[hhbrc](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrc)**  |
-| Fdouble | **[hhbrt](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrt)**  |
-| Fdouble | **[hhbrg](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrg)**  |
-| Fdouble | **[hhbrga](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrga)**  |
-| Fdouble | **[hhbrzga](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrzga)**  |
-| Fdouble | **[hhbrw](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrw)**  |
-| Fdouble | **[hhbrz](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrz)**  |
-| Fdouble | **[hhbrh](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrh)**  |
-| Fdouble | **[hhbra](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbra)**  |
-| Fdouble | **[hhbraz](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbraz)**  |
-| Fdouble | **[hhbrhw](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhbrhw)**  |
-| Fdouble | **[hhwdth](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-gambitwidthhh-hdec-type-hhwdth)**  |
+| Fdouble | **[hhbrb](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrb)**  |
+| Fdouble | **[hhbrl](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrl)**  |
+| Fdouble | **[hhbrm](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrm)**  |
+| Fdouble | **[hhbrs](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrs)**  |
+| Fdouble | **[hhbrc](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrc)**  |
+| Fdouble | **[hhbrt](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrt)**  |
+| Fdouble | **[hhbrg](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrg)**  |
+| Fdouble | **[hhbrga](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrga)**  |
+| Fdouble | **[hhbrzga](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrzga)**  |
+| Fdouble | **[hhbrw](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrw)**  |
+| Fdouble | **[hhbrz](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrz)**  |
+| Fdouble | **[hhbrh](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrh)**  |
+| Fdouble | **[hhbra](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbra)**  |
+| Fdouble | **[hhbraz](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbraz)**  |
+| Fdouble | **[hhbrhw](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhbrhw)**  |
+| Fdouble | **[hhwdth](/documentation/code/classes/structgambit_1_1widthhh__hdec__type/#variable-hhwdth)**  |
 
 ## Public Attributes Documentation
 
@@ -148,4 +148,4 @@ Fdouble hhwdth;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

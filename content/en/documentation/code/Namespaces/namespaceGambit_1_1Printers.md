@@ -80,124 +80,124 @@ Forward declaration.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::map< [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/), [VertexBufferBase](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/) * > | **[BaseBufferMap](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-basebuffermap)** <br>Helpful typedefs.  |
-| typedef unsigned short int | **[ushort](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-ushort)**  |
-| enum| **[Tags](/documentation/code/namespaces/namespacegambit_1_1printers/#enum-gambitprinters-tags)** { TAG_REQ =0, INIT_PASS, PPFILES_PASS, FINAL_PASS, PPID_SEND, N_BUFFERS_SENT, RA_BUFFERS_SENT, FINAL_SYNC} |
-| typedef unsigned int | **[uint](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-uint)**  |
-| typedef unsigned long int | **[ulong](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-ulong)**  |
-| typedef long long int | **[longlong](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-longlong)**  |
-| typedef unsigned long long int | **[ulonglong](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-ulonglong)**  |
-| typedef [BaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basereader/) *(const Options &) | **[create_reader_function](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-create-reader-function)**  |
-| typedef std::map< int, std::vector< double > > | **[LineBuf](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-linebuf)**  |
-| typedef std::map< std::pair< int, int >, [Record](/documentation/code/classes/structgambit_1_1printers_1_1record/) > | **[Buffer](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-buffer)**  |
-| typedef int(void *, int, char **, char **) | **[sql_callback_fptr](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-sql-callback-fptr)**  |
-| typedef long long int | **[llint](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-llint)**  |
-| typedef std::string | **[str](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-gambitprinters-str)**  |
+| typedef std::map< [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/), [VertexBufferBase](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/) * > | **[BaseBufferMap](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-basebuffermap)** <br>Helpful typedefs.  |
+| typedef unsigned short int | **[ushort](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-ushort)**  |
+| enum| **[Tags](/documentation/code/namespaces/namespacegambit_1_1printers/#enum-tags)** { TAG_REQ =0, INIT_PASS, PPFILES_PASS, FINAL_PASS, PPID_SEND, N_BUFFERS_SENT, RA_BUFFERS_SENT, FINAL_SYNC} |
+| typedef unsigned int | **[uint](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-uint)**  |
+| typedef unsigned long int | **[ulong](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-ulong)**  |
+| typedef long long int | **[longlong](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-longlong)**  |
+| typedef unsigned long long int | **[ulonglong](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-ulonglong)**  |
+| typedef [BaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basereader/) *(const Options &) | **[create_reader_function](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-create-reader-function)**  |
+| typedef std::map< int, std::vector< double > > | **[LineBuf](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-linebuf)**  |
+| typedef std::map< std::pair< int, int >, [Record](/documentation/code/classes/structgambit_1_1printers_1_1record/) > | **[Buffer](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-buffer)**  |
+| typedef int(void *, int, char **, char **) | **[sql_callback_fptr](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-sql-callback-fptr)**  |
+| typedef long long int | **[llint](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-llint)**  |
+| typedef std::string | **[str](/documentation/code/namespaces/namespacegambit_1_1printers/#typedef-str)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| template <class T ,class U \> <br>void | **[error_if_key_exists](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-error-if-key-exists)**(const std::map< T, U > & m, const T & key, const std::string & tag)<br>Helper function to check if a VertexBuffer key already exists in a map.  |
-| void | **[printAllH5Types](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-printallh5types)**(void )<br>DEBUG: print to stdout all HDF5 type IDs.  |
-| std::string | **[SQLiteReader::get_sql_col< std::string >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-sqlitereaderget-sql-col-stdstring)**(const std::string & col_name) |
-| template <class T \> <br>std::size_t | **[getTypeID](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-gettypeid)**(void ) |
-| bool | **[parse_label_for_ModelParameters](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-parse-label-for-modelparameters)**(const std::string & fulllabel, const std::string & modelname, std::string & out, std::string & rest, bool case_sensitive =true) |
-| bool | **[parse_label_for_spectrum_entry](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-parse-label-for-spectrum-entry)**(const std::string & fulllabel, const std::string & req_capability, const std::string & req_module, const std::string & req_function, std::string & outname, std::string & outtag, std::string & labelroot, bool case_sensitive =true)<br>Helper function for parsing [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) label strings.  |
-| void | **[printAllTypeIDs](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-printalltypeids)**(void )<br>For debugging; print to stdout all the typeIDs for all types.  |
-| EXPORT_SYMBOLS bool & | **[auto_increment](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-auto-increment)**()<br>Global flag to indicate if auto-incrementing of the PointID by the likelihood container is allowed.  |
-| EXPORT_SYMBOLS unsigned long long int & | **[get_point_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-point-id)**()<br>Returns unigue pointid;.  |
-| EXPORT_SYMBOLS int | **[get_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-param-id)**(const std::string & name, bool & is_new)<br>Consolidated 'get id' function, for both main and aux.  |
-| EXPORT_SYMBOLS int | **[get_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-param-id)**(const std::string & name) |
-| EXPORT_SYMBOLS std::vector< std::string > | **[get_all_params](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-all-params)**()<br>Get names of all parameters known to printer system (vector index corresponds to ID number)  |
-| EXPORT_SYMBOLS int | **[get_main_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-main-param-id)**(const std::string & name)<br>Returns unique positive parameter id; just a thin wrapper for get_param_id.  |
-| EXPORT_SYMBOLS int | **[get_main_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-main-param-id)**(const std::string & name, bool & is_new)<br>Extra argument returns true if new ID was assigned.  |
-| EXPORT_SYMBOLS int | **[get_aux_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-aux-param-id)**(const std::string & name)<br>Returns unique negative parameter id; just a thin wrapper for get_param_id.  |
-| EXPORT_SYMBOLS int | **[get_aux_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-aux-param-id)**(const std::string & name, bool & is_new)<br>Extra argument returns true if new ID was assigned.  |
-| template <typename P ,typename T \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & , T const & , const std::string & , const int , const unsigned int , const unsigned long )<br>Common print overload template.  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, std::vector< double > const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Vector-of-doubles print overload.  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, const [map_const_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-gambit-map-const-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>String-to-double map print overload.  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, const [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-gambit-map-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID) |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, const [map_const_str_map_const_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-gambit-map-const-str-map-const-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>String-to-map print overload (where map is string-to-double)  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, const [map_str_map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-gambit-map-str-map-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID) |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, [map_intpair_dbl](/documentation/code/namespaces/namespacegambit/#typedef-gambit-map-intpair-dbl) const & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Integer pair-to-double map print overload.  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) print overload.  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Triplet print overload.  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, [DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>DM-nucleon coupling print overload.  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, [flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Generic flavour prediction print overload.  |
-| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-common-print)**(P & printer, [BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>BBN observables print overload.  |
-| template <class T \> <br>constexpr int | **[h5v2_type](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type)**() |
-| constexpr int | **[h5v2_type< int >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type-int)**() |
-| constexpr int | **[h5v2_type< unsigned int >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type-unsigned-int)**() |
-| constexpr int | **[h5v2_type< long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type-long)**() |
-| constexpr int | **[h5v2_type< unsigned long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type-unsigned-long)**() |
-| constexpr int | **[h5v2_type< long long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type-long-long)**() |
-| constexpr int | **[h5v2_type< unsigned long long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type-unsigned-long-long)**() |
-| constexpr int | **[h5v2_type< float >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type-float)**() |
-| constexpr int | **[h5v2_type< double >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-type-double)**() |
-| const int | **[h5v2_bufname](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-bufname)**(10 )<br>MPI tags for HDF5 printer v2.  |
-| const int | **[h5v2_bufdata_points](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-bufdata-points)**(11 ) |
-| const int | **[h5v2_bufdata_ranks](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-bufdata-ranks)**(12 ) |
-| const int | **[h5v2_bufdata_valid](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-bufdata-valid)**(13 ) |
-| const int | **[h5v2_bufdata_type](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-bufdata-type)**(14 ) |
-| const int | **[h5v2_bufdata_values](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-bufdata-values)**(15 ) |
-| const int | **[h5v2_BLOCK](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-block)**(30 ) |
-| const int | **[h5v2_BEGIN](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-h5v2-begin)**(31 ) |
-| template <class T \> <br>std::set< T > | **[set_diff](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-set-diff)**(const std::set< T > & set1, const std::set< T > & set2) |
-| std::size_t | **[pairfunc](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-pairfunc)**(const std::size_t i, const std::size_t j) |
-| int | **[col_name_callback](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-col-name-callback)**(void * colmap_in, int , char ** data, char ** ) |
-| template <typename T \> <br>std::string | **[cpp2sql](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-cpp2sql)**() |
-| std::string | **[cpp2sql< long long int >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-cpp2sql-long-long-int)**() |
-| std::string | **[cpp2sql< double >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-cpp2sql-double)**() |
-| std::string | **[cpp2sql< std::string >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-cpp2sql-stdstring)**() |
-| std::map< unsigned int, std::string > | **[define_typecodes](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-define-typecodes)**() |
-| std::map< std::string, std::string, [Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/) > | **[fill_SQLtype_to_basic](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-fill-sqltype-to-basic)**() |
-| bool | **[SQLite_equaltypes](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-sqlite-equaltypes)**(const std::string & type1, const std::string & type2) |
-| template <typename Iter \> <br>Iter | **[next_el](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-next-el)**(Iter iter) |
-| template <typename Iter ,typename Cont \> <br>std::string | **[comma_unless_last](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-comma-unless-last)**(Iter it, const Cont & c) |
-| std::string | **[SQLiteReader::get_sql_col< std::string >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-sqlitereaderget-sql-col-stdstring)**(const std::string & col_name) |
-| std::unordered_map< std::string, long long int > & | **[get_param_id_map](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-get-param-id-map)**() |
-| void | **[open_output_file](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-open-output-file)**(std::ofstream & output, std::string filename, std::ios_base::openmode mode)<br>Open file stream with error checking.  |
-| uint | **[safe_col_lookup](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-safe-col-lookup)**(const std::string & key, const std::map< std::string, uint > & colmap, std::string fname)<br>Helper function for map lookup.  |
-| void | **[check_for_error_messages](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-check-for-error-messages)**() |
-| hid_t | **[openfile_read](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-openfile-read)**(std::string file) |
-| std::vector< std::string > | **[lsGroup_process](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-lsgroup-process)**(hid_t location_id) |
-| std::string | **[cpp2sql< long long int >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-cpp2sql-long-long-int)**() |
-| std::string | **[cpp2sql< double >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-cpp2sql-double)**() |
-| std::string | **[cpp2sql< std::string >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-cpp2sql-stdstring)**() |
-| const std::map< unsigned int, std::string > | **[typecode2sql](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-typecode2sql)**(define_typecodes() ) |
-| const std::map< std::string, std::string, [Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/) > | **[SQLtype_to_basic](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-sqltype-to-basic)**(fill_SQLtype_to_basic() ) |
-| bool | **[operator<](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & l, const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & r) |
-| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & l, const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & r) |
-| bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & l, const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & r) |
-| bool | **[operator<](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & l, const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & r) |
-| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & l, const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & r) |
-| bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & l, const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & r) |
-| EXPORT_SYMBOLS bool | **[operator<](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & l, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & r) |
-| EXPORT_SYMBOLS bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & l, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & r) |
-| EXPORT_SYMBOLS bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & l, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & r) |
-| void | **[define_mpiHDF5bufferchunk](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-define-mpihdf5bufferchunk)**() |
-| EXPORT_SYMBOLS [error](/documentation/code/classes/classgambit_1_1error/) & | **[printer_error](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-printer-error)**()<br>Printer errors.  |
-| EXPORT_SYMBOLS [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[printer_warning](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-printer-warning)**()<br>Printer warnings.  |
-| std::ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gambitprinters-operator)**(std::ostream & stream, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & ppid)<br>Stream operator overloads.  |
+| template <class T ,class U \> <br>void | **[error_if_key_exists](/documentation/code/namespaces/namespacegambit_1_1printers/#function-error-if-key-exists)**(const std::map< T, U > & m, const T & key, const std::string & tag)<br>Helper function to check if a VertexBuffer key already exists in a map.  |
+| void | **[printAllH5Types](/documentation/code/namespaces/namespacegambit_1_1printers/#function-printallh5types)**(void )<br>DEBUG: print to stdout all HDF5 type IDs.  |
+| std::string | **[SQLiteReader::get_sql_col< std::string >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-sqlitereaderget-sql-col-stdstring)**(const std::string & col_name) |
+| template <class T \> <br>std::size_t | **[getTypeID](/documentation/code/namespaces/namespacegambit_1_1printers/#function-gettypeid)**(void ) |
+| bool | **[parse_label_for_ModelParameters](/documentation/code/namespaces/namespacegambit_1_1printers/#function-parse-label-for-modelparameters)**(const std::string & fulllabel, const std::string & modelname, std::string & out, std::string & rest, bool case_sensitive =true) |
+| bool | **[parse_label_for_spectrum_entry](/documentation/code/namespaces/namespacegambit_1_1printers/#function-parse-label-for-spectrum-entry)**(const std::string & fulllabel, const std::string & req_capability, const std::string & req_module, const std::string & req_function, std::string & outname, std::string & outtag, std::string & labelroot, bool case_sensitive =true)<br>Helper function for parsing [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) label strings.  |
+| void | **[printAllTypeIDs](/documentation/code/namespaces/namespacegambit_1_1printers/#function-printalltypeids)**(void )<br>For debugging; print to stdout all the typeIDs for all types.  |
+| EXPORT_SYMBOLS bool & | **[auto_increment](/documentation/code/namespaces/namespacegambit_1_1printers/#function-auto-increment)**()<br>Global flag to indicate if auto-incrementing of the PointID by the likelihood container is allowed.  |
+| EXPORT_SYMBOLS unsigned long long int & | **[get_point_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-point-id)**()<br>Returns unigue pointid;.  |
+| EXPORT_SYMBOLS int | **[get_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-param-id)**(const std::string & name, bool & is_new)<br>Consolidated 'get id' function, for both main and aux.  |
+| EXPORT_SYMBOLS int | **[get_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-param-id)**(const std::string & name) |
+| EXPORT_SYMBOLS std::vector< std::string > | **[get_all_params](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-all-params)**()<br>Get names of all parameters known to printer system (vector index corresponds to ID number)  |
+| EXPORT_SYMBOLS int | **[get_main_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-main-param-id)**(const std::string & name)<br>Returns unique positive parameter id; just a thin wrapper for get_param_id.  |
+| EXPORT_SYMBOLS int | **[get_main_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-main-param-id)**(const std::string & name, bool & is_new)<br>Extra argument returns true if new ID was assigned.  |
+| EXPORT_SYMBOLS int | **[get_aux_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-aux-param-id)**(const std::string & name)<br>Returns unique negative parameter id; just a thin wrapper for get_param_id.  |
+| EXPORT_SYMBOLS int | **[get_aux_param_id](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-aux-param-id)**(const std::string & name, bool & is_new)<br>Extra argument returns true if new ID was assigned.  |
+| template <typename P ,typename T \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & , T const & , const std::string & , const int , const unsigned int , const unsigned long )<br>Common print overload template.  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, std::vector< double > const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Vector-of-doubles print overload.  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, const [map_const_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-const-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>String-to-double map print overload.  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, const [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID) |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, const [map_const_str_map_const_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-const-str-map-const-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>String-to-map print overload (where map is string-to-double)  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, const [map_str_map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-map-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID) |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [map_intpair_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-intpair-dbl) const & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Integer pair-to-double map print overload.  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) print overload.  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Triplet print overload.  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>DM-nucleon coupling print overload.  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Generic flavour prediction print overload.  |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>BBN observables print overload.  |
+| template <class T \> <br>constexpr int | **[h5v2_type](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type)**() |
+| constexpr int | **[h5v2_type< int >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-int)**() |
+| constexpr int | **[h5v2_type< unsigned int >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-unsigned-int)**() |
+| constexpr int | **[h5v2_type< long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-long)**() |
+| constexpr int | **[h5v2_type< unsigned long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-unsigned-long)**() |
+| constexpr int | **[h5v2_type< long long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-long-long)**() |
+| constexpr int | **[h5v2_type< unsigned long long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-unsigned-long-long)**() |
+| constexpr int | **[h5v2_type< float >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-float)**() |
+| constexpr int | **[h5v2_type< double >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-double)**() |
+| const int | **[h5v2_bufname](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufname)**(10 )<br>MPI tags for HDF5 printer v2.  |
+| const int | **[h5v2_bufdata_points](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-points)**(11 ) |
+| const int | **[h5v2_bufdata_ranks](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-ranks)**(12 ) |
+| const int | **[h5v2_bufdata_valid](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-valid)**(13 ) |
+| const int | **[h5v2_bufdata_type](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-type)**(14 ) |
+| const int | **[h5v2_bufdata_values](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-values)**(15 ) |
+| const int | **[h5v2_BLOCK](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-block)**(30 ) |
+| const int | **[h5v2_BEGIN](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-begin)**(31 ) |
+| template <class T \> <br>std::set< T > | **[set_diff](/documentation/code/namespaces/namespacegambit_1_1printers/#function-set-diff)**(const std::set< T > & set1, const std::set< T > & set2) |
+| std::size_t | **[pairfunc](/documentation/code/namespaces/namespacegambit_1_1printers/#function-pairfunc)**(const std::size_t i, const std::size_t j) |
+| int | **[col_name_callback](/documentation/code/namespaces/namespacegambit_1_1printers/#function-col-name-callback)**(void * colmap_in, int , char ** data, char ** ) |
+| template <typename T \> <br>std::string | **[cpp2sql](/documentation/code/namespaces/namespacegambit_1_1printers/#function-cpp2sql)**() |
+| std::string | **[cpp2sql< long long int >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-cpp2sql-long-long-int)**() |
+| std::string | **[cpp2sql< double >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-cpp2sql-double)**() |
+| std::string | **[cpp2sql< std::string >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-cpp2sql-stdstring)**() |
+| std::map< unsigned int, std::string > | **[define_typecodes](/documentation/code/namespaces/namespacegambit_1_1printers/#function-define-typecodes)**() |
+| std::map< std::string, std::string, [Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/) > | **[fill_SQLtype_to_basic](/documentation/code/namespaces/namespacegambit_1_1printers/#function-fill-sqltype-to-basic)**() |
+| bool | **[SQLite_equaltypes](/documentation/code/namespaces/namespacegambit_1_1printers/#function-sqlite-equaltypes)**(const std::string & type1, const std::string & type2) |
+| template <typename Iter \> <br>Iter | **[next_el](/documentation/code/namespaces/namespacegambit_1_1printers/#function-next-el)**(Iter iter) |
+| template <typename Iter ,typename Cont \> <br>std::string | **[comma_unless_last](/documentation/code/namespaces/namespacegambit_1_1printers/#function-comma-unless-last)**(Iter it, const Cont & c) |
+| std::string | **[SQLiteReader::get_sql_col< std::string >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-sqlitereaderget-sql-col-stdstring)**(const std::string & col_name) |
+| std::unordered_map< std::string, long long int > & | **[get_param_id_map](/documentation/code/namespaces/namespacegambit_1_1printers/#function-get-param-id-map)**() |
+| void | **[open_output_file](/documentation/code/namespaces/namespacegambit_1_1printers/#function-open-output-file)**(std::ofstream & output, std::string filename, std::ios_base::openmode mode)<br>Open file stream with error checking.  |
+| uint | **[safe_col_lookup](/documentation/code/namespaces/namespacegambit_1_1printers/#function-safe-col-lookup)**(const std::string & key, const std::map< std::string, uint > & colmap, std::string fname)<br>Helper function for map lookup.  |
+| void | **[check_for_error_messages](/documentation/code/namespaces/namespacegambit_1_1printers/#function-check-for-error-messages)**() |
+| hid_t | **[openfile_read](/documentation/code/namespaces/namespacegambit_1_1printers/#function-openfile-read)**(std::string file) |
+| std::vector< std::string > | **[lsGroup_process](/documentation/code/namespaces/namespacegambit_1_1printers/#function-lsgroup-process)**(hid_t location_id) |
+| std::string | **[cpp2sql< long long int >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-cpp2sql-long-long-int)**() |
+| std::string | **[cpp2sql< double >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-cpp2sql-double)**() |
+| std::string | **[cpp2sql< std::string >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-cpp2sql-stdstring)**() |
+| const std::map< unsigned int, std::string > | **[typecode2sql](/documentation/code/namespaces/namespacegambit_1_1printers/#function-typecode2sql)**(define_typecodes() ) |
+| const std::map< std::string, std::string, [Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/) > | **[SQLtype_to_basic](/documentation/code/namespaces/namespacegambit_1_1printers/#function-sqltype-to-basic)**(fill_SQLtype_to_basic() ) |
+| bool | **[operator<](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & l, const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & r) |
+| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & l, const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & r) |
+| bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & l, const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) & r) |
+| bool | **[operator<](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & l, const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & r) |
+| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & l, const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & r) |
+| bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & l, const [VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/) & r) |
+| EXPORT_SYMBOLS bool | **[operator<](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & l, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & r) |
+| EXPORT_SYMBOLS bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & l, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & r) |
+| EXPORT_SYMBOLS bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & l, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & r) |
+| void | **[define_mpiHDF5bufferchunk](/documentation/code/namespaces/namespacegambit_1_1printers/#function-define-mpihdf5bufferchunk)**() |
+| EXPORT_SYMBOLS [error](/documentation/code/classes/classgambit_1_1error/) & | **[printer_error](/documentation/code/namespaces/namespacegambit_1_1printers/#function-printer-error)**()<br>Printer errors.  |
+| EXPORT_SYMBOLS [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[printer_warning](/documentation/code/namespaces/namespacegambit_1_1printers/#function-printer-warning)**()<br>Printer warnings.  |
+| std::ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1printers/#function-operator)**(std::ostream & stream, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & ppid)<br>Stream operator overloads.  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[gambit_registry](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-gambit-registry)**  |
-| [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< create_printer_function > | **[printer_creators](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-printer-creators)**  |
-| [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< create_reader_function > | **[reader_creators](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-reader-creators)**  |
-| const std::size_t | **[BUFFERLENGTH](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-bufferlength)**  |
-| const unsigned long | **[MAX_PPIDPAIRS](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-max-ppidpairs)**  |
-| const std::size_t | **[HDF5_CHUNKLENGTH](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-hdf5-chunklength)**  |
-| const std::size_t | **[DSETRANK](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-dsetrank)** <br>Dimension of output dataset. We are only using 1D datasets for simplicity.  |
-| const std::size_t | **[MAX_BUFFER_SIZE](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-max-buffer-size)** <br>Largest allowed size of buffers. Size can be dynamically set from 1 to this number.  |
-| const std::size_t | **[CHUNKLENGTH](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-chunklength)**  |
-| const std::map< unsigned int, std::string > | **[typecode2sql](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-typecode2sql)**  |
-| const std::map< std::string, std::string, [Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/) > | **[SQLtype_to_basic](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-sqltype-to-basic)**  |
-| const int | **[FIRST_EMPTY_TAG](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-first-empty-tag)**  |
-| EXPORT_SYMBOLS const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) | **[nullpoint](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambitprinters-nullpoint)** <br>Define 'nullpoint' const.  |
+| | **[gambit_registry](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-gambit-registry)**  |
+| [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< create_printer_function > | **[printer_creators](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-printer-creators)**  |
+| [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< create_reader_function > | **[reader_creators](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-reader-creators)**  |
+| const std::size_t | **[BUFFERLENGTH](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-bufferlength)**  |
+| const unsigned long | **[MAX_PPIDPAIRS](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-max-ppidpairs)**  |
+| const std::size_t | **[HDF5_CHUNKLENGTH](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-hdf5-chunklength)**  |
+| const std::size_t | **[DSETRANK](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-dsetrank)** <br>Dimension of output dataset. We are only using 1D datasets for simplicity.  |
+| const std::size_t | **[MAX_BUFFER_SIZE](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-max-buffer-size)** <br>Largest allowed size of buffers. Size can be dynamically set from 1 to this number.  |
+| const std::size_t | **[CHUNKLENGTH](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-chunklength)**  |
+| const std::map< unsigned int, std::string > | **[typecode2sql](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-typecode2sql)**  |
+| const std::map< std::string, std::string, [Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/) > | **[SQLtype_to_basic](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-sqltype-to-basic)**  |
+| const int | **[FIRST_EMPTY_TAG](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-first-empty-tag)**  |
+| EXPORT_SYMBOLS const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) | **[nullpoint](/documentation/code/namespaces/namespacegambit_1_1printers/#variable-nullpoint)** <br>Define 'nullpoint' const.  |
 
 ## Detailed Description
 
@@ -1297,4 +1297,4 @@ Define 'nullpoint' const.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

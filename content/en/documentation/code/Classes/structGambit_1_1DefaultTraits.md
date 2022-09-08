@@ -19,8 +19,8 @@ Inherited by [Gambit::SpecTraits< Models::DMEFTSimpleSpec >](/documentation/code
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [DummyModel](/documentation/code/classes/classgambit_1_1dummymodel/) | **[Model](/documentation/code/classes/structgambit_1_1defaulttraits/#typedef-gambitdefaulttraits-model)**  |
-| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1defaulttraits/#typedef-gambitdefaulttraits-input)**  |
+| typedef [DummyModel](/documentation/code/classes/classgambit_1_1dummymodel/) | **[Model](/documentation/code/classes/structgambit_1_1defaulttraits/#typedef-model)**  |
+| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1defaulttraits/#typedef-input)**  |
 
 ## Public Types Documentation
 
@@ -40,4 +40,4 @@ typedef DummyInput Gambit::DefaultTraits::Input;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

@@ -26,7 +26,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DECLARE_PRINT](/documentation/code/files/noneprinter_8hpp/#define-noneprinter-hpp-declare-print)**(r, data, i, elem)  |
+|  | **[DECLARE_PRINT](/documentation/code/files/noneprinter_8hpp/#define-declare-print)**(r, data, i, elem)  |
 
 ## Detailed Description
 
@@ -228,4 +228,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

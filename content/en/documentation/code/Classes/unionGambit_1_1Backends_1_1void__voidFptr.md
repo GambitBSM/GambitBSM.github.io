@@ -18,8 +18,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void * | **[ptr](/documentation/code/classes/uniongambit_1_1backends_1_1void__voidfptr/#variable-gambitbackendsvoid-voidfptr-ptr)**  |
-| voidFptr | **[fptr](/documentation/code/classes/uniongambit_1_1backends_1_1void__voidfptr/#variable-gambitbackendsvoid-voidfptr-fptr)**  |
+| void * | **[ptr](/documentation/code/classes/uniongambit_1_1backends_1_1void__voidfptr/#variable-ptr)**  |
+| voidFptr | **[fptr](/documentation/code/classes/uniongambit_1_1backends_1_1void__voidfptr/#variable-fptr)**  |
 
 ## Detailed Description
 
@@ -48,4 +48,4 @@ voidFptr fptr;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

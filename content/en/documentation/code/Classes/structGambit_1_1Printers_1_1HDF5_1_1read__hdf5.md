@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename U ,typename T \> <br>void | **[run](/documentation/code/classes/structgambit_1_1printers_1_1hdf5_1_1read__hdf5/#function-gambitprintershdf5read-hdf5-run)**(U , hid_t & dataset, std::vector< T > & vec) |
+| template <typename U ,typename T \> <br>void | **[run](/documentation/code/classes/structgambit_1_1printers_1_1hdf5_1_1read__hdf5/#function-run)**(U , hid_t & dataset, std::vector< T > & vec) |
 
 ## Public Functions Documentation
 
@@ -34,4 +34,4 @@ static inline void run(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

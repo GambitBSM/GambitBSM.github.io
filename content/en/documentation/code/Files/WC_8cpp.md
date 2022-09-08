@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/wc_8cpp/#define-wc-cpp-model)**  |
+|  | **[MODEL](/documentation/code/files/wc_8cpp/#define-model)**  |
 
 
 
@@ -144,4 +144,4 @@ void MODEL_NAMESPACE::WC_to_WC_LR (const ModelParameters& myP, ModelParameters &
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[gamma_chi_0](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1mssm__z/#function-gambitdecaybitmssm-z-gamma-chi-0)**(int i, int j, std::array< double, 4 > m, std::array< std::array< double, 4 >, 4 > Z, double g2 =0.652, double MZ =91., double sw2 =0.22) |
+| double | **[gamma_chi_0](/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1mssm__z/#function-gamma-chi-0)**(int i, int j, std::array< double, 4 > m, std::array< std::array< double, 4 >, 4 > Z, double g2 =0.652, double MZ =91., double sw2 =0.22) |
 
 
 ## Functions Documentation
@@ -56,4 +56,4 @@ sw2Weinberg angle, \(\sin^2\theta_W\)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

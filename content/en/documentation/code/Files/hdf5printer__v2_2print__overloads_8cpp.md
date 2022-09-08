@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PRINT](/documentation/code/files/hdf5printer__v2_2print__overloads_8cpp/#define-hdf5printer-v2-print-overloads-cpp-print)**(TYPE) <br>Simple print functions.  |
-|  | **[PRINTAS](/documentation/code/files/hdf5printer__v2_2print__overloads_8cpp/#define-hdf5printer-v2-print-overloads-cpp-printas)**(INTYPE, OUTTYPE)  |
+|  | **[PRINT](/documentation/code/files/hdf5printer__v2_2print__overloads_8cpp/#define-print)**(TYPE) <br>Simple print functions.  |
+|  | **[PRINTAS](/documentation/code/files/hdf5printer__v2_2print__overloads_8cpp/#define-printas)**(INTYPE, OUTTYPE)  |
 
 ## Detailed Description
 
@@ -171,4 +171,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

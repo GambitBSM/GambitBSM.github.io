@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| character *6 function | **[text](/documentation/code/namespaces/namespacemb/#function-mb-text)**() |
+| character *6 function | **[text](/documentation/code/namespaces/namespacemb/#function-text)**() |
 
 
 ## Functions Documentation
@@ -31,4 +31,4 @@ character *6 function text()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

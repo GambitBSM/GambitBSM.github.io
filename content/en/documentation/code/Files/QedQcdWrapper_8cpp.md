@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[addtomap_EL](/documentation/code/files/qedqcdwrapper_8cpp/#define-qedqcdwrapper-cpp-addtomap-el)**(r, PRODUCT) <br>TODO: wrap using BOSS at some point, i.e. get this from FlexibleSUSY or SoftSUSY.  |
-|  | **[addtomap](/documentation/code/files/qedqcdwrapper_8cpp/#define-qedqcdwrapper-cpp-addtomap)**(__KEYS, FPTR)  |
+|  | **[addtomap_EL](/documentation/code/files/qedqcdwrapper_8cpp/#define-addtomap-el)**(r, PRODUCT) <br>TODO: wrap using BOSS at some point, i.e. get this from FlexibleSUSY or SoftSUSY.  |
+|  | **[addtomap](/documentation/code/files/qedqcdwrapper_8cpp/#define-addtomap)**(__KEYS, FPTR)  |
 
 ## Detailed Description
 
@@ -404,4 +404,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

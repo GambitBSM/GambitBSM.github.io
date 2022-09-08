@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-gambitdarkbitdmeft-dmeft)**()<br>Initialize [DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/) object (branching ratios etc)  |
-| | **[~DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-gambitdarkbitdmeft-dmeft)**() |
-| double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-gambitdarkbitdmeft-sv)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) channel, [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & tbl, double(*)([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) &, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > &, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > &, double &, const [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) &) sigmav, double v_rel) |
+| | **[DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-dmeft)**()<br>Initialize [DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/) object (branching ratios etc)  |
+| | **[~DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-dmeft)**() |
+| double | **[sv](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/#function-sv)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) channel, [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & tbl, double(*)([str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > &, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > &, double &, const [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) &) sigmav, double v_rel) |
 
 ## Public Functions Documentation
 
@@ -53,4 +53,4 @@ Returns sigma*v for a given channel.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

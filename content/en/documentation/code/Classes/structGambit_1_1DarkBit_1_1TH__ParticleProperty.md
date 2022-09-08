@@ -17,14 +17,14 @@ A container for the mass and spin of a particle.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[TH_ParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#function-gambitdarkbitth-particleproperty-th-particleproperty)**(double mass, unsigned int spin2)<br>Constructor.  |
+| | **[TH_ParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#function-th-particleproperty)**(double mass, unsigned int spin2)<br>Constructor.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[mass](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#variable-gambitdarkbitth-particleproperty-mass)** <br>Particle mass (GeV)  |
-| unsigned int | **[spin2](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#variable-gambitdarkbitth-particleproperty-spin2)** <br>Twice the spin of the particle.  |
+| double | **[mass](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#variable-mass)** <br>Particle mass (GeV)  |
+| unsigned int | **[spin2](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/#variable-spin2)** <br>Twice the spin of the particle.  |
 
 ## Public Functions Documentation
 
@@ -59,4 +59,4 @@ Twice the spin of the particle.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

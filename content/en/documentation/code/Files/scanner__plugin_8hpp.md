@@ -13,9 +13,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[scanner_plugin](/documentation/code/files/scanner__plugin_8hpp/#define-scanner-plugin-hpp-scanner-plugin)**(...)  |
-|  | **[__SCANNER_SETUP__](/documentation/code/files/scanner__plugin_8hpp/#define-scanner-plugin-hpp-scanner-setup)**  |
-|  | **[SCANNER_PLUGIN](/documentation/code/files/scanner__plugin_8hpp/#define-scanner-plugin-hpp-scanner-plugin)**(plug_name, ...)  |
+|  | **[scanner_plugin](/documentation/code/files/scanner__plugin_8hpp/#define-scanner-plugin)**(...)  |
+|  | **[__SCANNER_SETUP__](/documentation/code/files/scanner__plugin_8hpp/#define-scanner-setup)**  |
+|  | **[SCANNER_PLUGIN](/documentation/code/files/scanner__plugin_8hpp/#define-scanner-plugin)**(plug_name, ...)  |
 
 ## Detailed Description
 
@@ -164,4 +164,4 @@ inline unsigned int &get_dimension() {return get_input_value<unsigned int>(0);} 
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

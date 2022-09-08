@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/righthandedneutrinos__diff_8cpp/#define-righthandedneutrinos-diff-cpp-model)**  |
+|  | **[MODEL](/documentation/code/files/righthandedneutrinos__diff_8cpp/#define-model)**  |
 
 ## Detailed Description
 
@@ -94,4 +94,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

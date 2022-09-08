@@ -13,24 +13,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[BE_FUNCTION](/documentation/code/files/susy-hit__1__5_8hpp/#function-susyhit-1-5-hpp-be-function)**(sdecay , void , () , "sdecay_" , "sdecay" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/files/susy-hit__1__5_8hpp/#function-be-function)**(sdecay , void , () , "sdecay_" , "sdecay" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[double](/documentation/code/files/susy-hit__1__5_8hpp/#variable-susyhit-1-5-hpp-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[s_hit_unlikely_](/documentation/code/files/susy-hit__1__5_8hpp/#variable-susyhit-1-5-hpp-s-hit-unlikely)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/files/susy-hit__1__5_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[s_hit_unlikely_](/documentation/code/files/susy-hit__1__5_8hpp/#variable-s-hit-unlikely)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/susy-hit__1__5_8hpp/#define-susyhit-1-5-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/susy-hit__1__5_8hpp/#define-susyhit-1-5-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/susy-hit__1__5_8hpp/#define-susyhit-1-5-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/susy-hit__1__5_8hpp/#define-susyhit-1-5-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/susy-hit__1__5_8hpp/#define-susyhit-1-5-hpp-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/susy-hit__1__5_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/susy-hit__1__5_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/susy-hit__1__5_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/susy-hit__1__5_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/susy-hit__1__5_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -233,4 +233,4 @@ BE_INI_DEPENDENCY(Z_decay_rates, DecayTable::Entry)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

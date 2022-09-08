@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| namespace | **[CAT_3](/documentation/code/files/gm2calc__1__2__0_2wrapper__mssmnofv__onshell__mass__eigenstates__decl_8hpp/#function-gm2calc-1-2-0-wrapper-mssmnofv-onshell-mass-eigenstates-decl-hpp-cat-3)**(BACKENDNAME , _ , SAFE_VERSION ) |
+| namespace | **[CAT_3](/documentation/code/files/gm2calc__1__2__0_2wrapper__mssmnofv__onshell__mass__eigenstates__decl_8hpp/#function-cat-3)**(BACKENDNAME , _ , SAFE_VERSION ) |
 
 
 ## Functions Documentation
@@ -444,4 +444,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

@@ -15,16 +15,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[VevaciousResultContainer](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-vevaciousresultcontainer)**() |
-| void | **[clear_results](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-clear-results)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) panic_vaccum, int pathFinder_number) |
-| void | **[set_results](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-set-results)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) panic_vaccum, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) name, double val)<br>add entries to vevacious result map  |
-| void | **[add_straightPathGoodEnough](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-add-straightpathgoodenough)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) panic_vacuum) |
-| [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-gambit-map-str-dbl) | **[get_nearest_results](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-get-nearest-results)**() |
-| [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-gambit-map-str-dbl) | **[get_global_results](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-get-global-results)**() |
-| double | **[get_width](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-get-width)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) panic_vacuum) |
-| double | **[get_lifetime](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-get-lifetime)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) panic_vaccum) |
-| double | **[get_thermalProbability](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-get-thermalprobability)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) panic_vaccum) |
-| double | **[get_thermalWidth](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-gambitspecbitvevaciousresultcontainer-get-thermalwidth)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) panic_vacuum) |
+| | **[VevaciousResultContainer](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-vevaciousresultcontainer)**() |
+| void | **[clear_results](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-clear-results)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) panic_vaccum, int pathFinder_number) |
+| void | **[set_results](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-set-results)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) panic_vaccum, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, double val)<br>add entries to vevacious result map  |
+| void | **[add_straightPathGoodEnough](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-add-straightpathgoodenough)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) panic_vacuum) |
+| [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) | **[get_nearest_results](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-get-nearest-results)**() |
+| [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) | **[get_global_results](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-get-global-results)**() |
+| double | **[get_width](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-get-width)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) panic_vacuum) |
+| double | **[get_lifetime](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-get-lifetime)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) panic_vaccum) |
+| double | **[get_thermalProbability](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-get-thermalprobability)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) panic_vaccum) |
+| double | **[get_thermalWidth](/documentation/code/classes/classgambit_1_1specbit_1_1vevaciousresultcontainer/#function-get-thermalwidth)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) panic_vacuum) |
 
 ## Public Functions Documentation
 
@@ -124,4 +124,4 @@ inline double get_thermalWidth(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

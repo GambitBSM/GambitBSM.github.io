@@ -15,26 +15,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#function-gambitiniparsertypesobservable-observable)**()<br>Default constructor, to ensure the default values are not gibberish.  |
+| | **[Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#function-observable)**()<br>Default constructor, to ensure the default values are not gibberish.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[purpose](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-purpose)**  |
-| std::string | **[capability](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-capability)**  |
-| std::string | **[type](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-type)**  |
-| std::string | **[function](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-function)**  |
-| std::string | **[module](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-module)**  |
-| std::string | **[backend](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-backend)**  |
-| std::string | **[version](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-version)**  |
-| bool | **[printme](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-printme)**  |
-| bool | **[weakrule](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-weakrule)**  |
-| [Options](/documentation/code/classes/classgambit_1_1options/) | **[options](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-options)**  |
-| YAML::Node | **[subcaps](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-subcaps)**  |
-| std::vector< [Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[dependencies](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-dependencies)**  |
-| std::vector< [Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[backends](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-backends)**  |
-| std::vector< std::string > | **[functionChain](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-gambitiniparsertypesobservable-functionchain)**  |
+| std::string | **[purpose](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-purpose)**  |
+| std::string | **[capability](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-capability)**  |
+| std::string | **[type](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-type)**  |
+| std::string | **[function](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-function)**  |
+| std::string | **[module](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-module)**  |
+| std::string | **[backend](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-backend)**  |
+| std::string | **[version](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-version)**  |
+| bool | **[printme](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-printme)**  |
+| bool | **[weakrule](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-weakrule)**  |
+| [Options](/documentation/code/classes/classgambit_1_1options/) | **[options](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-options)**  |
+| YAML::Node | **[subcaps](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-subcaps)**  |
+| std::vector< [Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[dependencies](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-dependencies)**  |
+| std::vector< [Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[backends](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-backends)**  |
+| std::vector< std::string > | **[functionChain](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/#variable-functionchain)**  |
 
 ## Public Functions Documentation
 
@@ -148,4 +148,4 @@ std::vector< std::string > functionChain;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

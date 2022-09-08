@@ -17,7 +17,7 @@ Inherits from std::unordered_map< std::string, T * >
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[print](/documentation/code/classes/classgambit_1_1reg__elem/#function-gambitreg-elem-print)**() |
+| std::string | **[print](/documentation/code/classes/classgambit_1_1reg__elem/#function-print)**() |
 
 ## Detailed Description
 
@@ -37,4 +37,4 @@ inline std::string print()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

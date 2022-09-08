@@ -19,15 +19,15 @@ Inherits from [Gambit::Scanner::scan_ptr< double(std::unordered_map< std::string
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-like-ptr)**() |
-| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-like-ptr)**(const [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & in) |
-| [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & | **[operator=](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-operator)**(const [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & ) =default |
-| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-like-ptr)**(void * in) |
-| std::unordered_map< std::string, double > | **[transform](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-transform)**(const std::vector< double > & vec) |
-| std::vector< std::string > | **[get_names](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-get-names)**() const |
-| std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-inverse-transform)**(const std::unordered_map< std::string, double > & physical) |
-| double | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-operator)**(const std::vector< double > & vec) |
-| double | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-gambitscannerlike-ptr-operator)**(std::unordered_map< std::string, double > & map, const std::vector< double > & vec =std::vector< double >()) |
+| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**() |
+| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**(const [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & in) |
+| [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & | **[operator=](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-operator)**(const [like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) & ) =default |
+| | **[like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-like-ptr)**(void * in) |
+| std::unordered_map< std::string, double > | **[transform](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-transform)**(const std::vector< double > & vec) |
+| std::vector< std::string > | **[get_names](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-get-names)**() const |
+| std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical) |
+| double | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-operator)**(const std::vector< double > & vec) |
+| double | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/#function-operator)**(std::unordered_map< std::string, double > & map, const std::vector< double > & vec =std::vector< double >()) |
 
 ## Public Functions Documentation
 
@@ -111,4 +111,4 @@ inline double operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

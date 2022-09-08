@@ -17,21 +17,21 @@ A simple container for a point on an xy plane.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-p2)**()<br>Default constructor.  |
-| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-p2)**(double x, double y)<br>Coordinate constructor.  |
-| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-p2)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other)<br>Copy constructor.  |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-operator)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other)<br>Copy assignment operator.  |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[setx](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-setx)**(double x) |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[sety](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-sety)**(double y) |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[setxy](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-setxy)**(double x, double y) |
-| double | **[getx](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-getx)**() const |
-| double | **[gety](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-gety)**() const |
-| double | **[abs](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-abs)**() const<br>Get the length of the vector from the origin to this point.  |
-| double | **[r](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-r)**() const<br>Alias for abs.  |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator+=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-operator)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other) |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator-=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-operator)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other) |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator*=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-operator)**(double a) |
-| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator/=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gambitcolliderbitp2-operator)**(double a) |
+| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p2)**()<br>Default constructor.  |
+| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p2)**(double x, double y)<br>Coordinate constructor.  |
+| | **[P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-p2)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other)<br>Copy constructor.  |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-operator)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other)<br>Copy assignment operator.  |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[setx](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-setx)**(double x) |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[sety](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-sety)**(double y) |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[setxy](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-setxy)**(double x, double y) |
+| double | **[getx](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-getx)**() const |
+| double | **[gety](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-gety)**() const |
+| double | **[abs](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-abs)**() const<br>Get the length of the vector from the origin to this point.  |
+| double | **[r](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-r)**() const<br>Alias for abs.  |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator+=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-operator)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other) |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator-=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-operator)**(const [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & other) |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator*=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-operator)**(double a) |
+| [P2](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/) & | **[operator/=](/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/#function-operator)**(double a) |
 
 ## Detailed Description
 
@@ -182,4 +182,4 @@ inline P2 & operator/=(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

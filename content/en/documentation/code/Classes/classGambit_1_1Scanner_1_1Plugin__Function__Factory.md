@@ -19,9 +19,9 @@ Inherits from [Gambit::Scanner::Factory_Base](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-gambitscannerplugin-function-factory-plugin-function-factory)**(const std::vector< std::string > & keys, std::map< std::string, std::vector< std::pair< std::string, std::string > > > & names) |
-| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-gambitscannerplugin-function-factory-operator)**(const std::string & purpose) const |
-| | **[~Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-gambitscannerplugin-function-factory-plugin-function-factory)**() |
+| | **[Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-plugin-function-factory)**(const std::vector< std::string > & keys, std::map< std::string, std::vector< std::pair< std::string, std::string > > > & names) |
+| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-operator)**(const std::string & purpose) const |
+| | **[~Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-plugin-function-factory)**() |
 
 ## Additional inherited members
 
@@ -29,7 +29,7 @@ Inherits from [Gambit::Scanner::Factory_Base](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-gambitscannerfactory-base-factory-base)**() |
+| virtual | **[~Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-factory-base)**() |
 
 
 ## Public Functions Documentation
@@ -53,7 +53,7 @@ inline virtual void * operator()(
 ```
 
 
-**Reimplements**: [Gambit::Scanner::Factory_Base::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-gambitscannerfactory-base-operator)
+**Reimplements**: [Gambit::Scanner::Factory_Base::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-operator)
 
 
 ### function ~Plugin_Function_Factory
@@ -65,4 +65,4 @@ inline ~Plugin_Function_Factory()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

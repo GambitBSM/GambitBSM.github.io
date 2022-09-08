@@ -21,14 +21,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/files/3bithit_8cpp/#function-3bithit-cpp-main)**() |
+| int | **[main](/documentation/code/files/3bithit_8cpp/#function-main)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const std::string | **[filename_in](/documentation/code/files/3bithit_8cpp/#variable-3bithit-cpp-filename-in)**  |
-| const std::string[2] | **[filename_out](/documentation/code/files/3bithit_8cpp/#variable-3bithit-cpp-filename-out)**  |
+| const std::string | **[filename_in](/documentation/code/files/3bithit_8cpp/#variable-filename-in)**  |
+| const std::string[2] | **[filename_out](/documentation/code/files/3bithit_8cpp/#variable-filename-out)**  |
 
 ## Detailed Description
 
@@ -720,4 +720,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:52 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

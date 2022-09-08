@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[_USE_MATH_DEFINES](/documentation/code/files/neutrinobit_8cpp/#define-neutrinobit-cpp-use-math-defines)**  |
+|  | **[_USE_MATH_DEFINES](/documentation/code/files/neutrinobit_8cpp/#define-use-math-defines)**  |
 
 ## Detailed Description
 
@@ -1014,4 +1014,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

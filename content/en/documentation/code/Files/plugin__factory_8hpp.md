@@ -28,8 +28,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[LOAD_FUNC_TEMPLATE](/documentation/code/files/plugin__factory_8hpp/#define-plugin-factory-hpp-load-func-template)**(name, ...)  |
-|  | **[LOAD_MULTI_FUNC_TEMPLATE](/documentation/code/files/plugin__factory_8hpp/#define-plugin-factory-hpp-load-multi-func-template)**(name, ...)  |
+|  | **[LOAD_FUNC_TEMPLATE](/documentation/code/files/plugin__factory_8hpp/#define-load-func-template)**(name, ...)  |
+|  | **[LOAD_MULTI_FUNC_TEMPLATE](/documentation/code/files/plugin__factory_8hpp/#define-load-multi-func-template)**(name, ...)  |
 
 ## Detailed Description
 
@@ -280,4 +280,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

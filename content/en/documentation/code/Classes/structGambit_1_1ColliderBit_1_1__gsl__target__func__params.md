@@ -14,12 +14,12 @@ A struct to contain parameters for the GSL optimiser target function.
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[lambda](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-gambitcolliderbit-gsl-target-func-params-lambda)**  |
-| AnalysisDataPointers | **[adata_ptrs_original](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-gambitcolliderbit-gsl-target-func-params-adata-ptrs-original)**  |
-| std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[skip_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-gambitcolliderbit-gsl-target-func-params-skip-analyses)**  |
-| bool | **[use_covar](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-gambitcolliderbit-gsl-target-func-params-use-covar)**  |
-| bool | **[use_marg](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-gambitcolliderbit-gsl-target-func-params-use-marg)**  |
-| bool | **[combine_nocovar_SRs](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-gambitcolliderbit-gsl-target-func-params-combine-nocovar-srs)**  |
+| double | **[lambda](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-lambda)**  |
+| AnalysisDataPointers | **[adata_ptrs_original](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-adata-ptrs-original)**  |
+| std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[skip_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-skip-analyses)**  |
+| bool | **[use_covar](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-covar)**  |
+| bool | **[use_marg](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-marg)**  |
+| bool | **[combine_nocovar_SRs](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-combine-nocovar-srs)**  |
 
 ## Public Attributes Documentation
 
@@ -67,4 +67,4 @@ bool combine_nocovar_SRs;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

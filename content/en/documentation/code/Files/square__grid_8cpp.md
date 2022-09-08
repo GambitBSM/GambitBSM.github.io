@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/square__grid_8cpp/#function-square-grid-cpp-scanner-plugin)**(square_grid , version(1, 0, 0) ) |
+| | **[scanner_plugin](/documentation/code/files/square__grid_8cpp/#function-scanner-plugin)**(square_grid , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -128,4 +128,4 @@ scanner_plugin(square_grid, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

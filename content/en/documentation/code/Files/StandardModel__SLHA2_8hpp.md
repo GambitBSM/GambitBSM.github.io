@@ -13,21 +13,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[DEFINEPARS](/documentation/code/files/standardmodel__slha2_8hpp/#function-standardmodel-slha2-hpp-definepars)**(alphainv , GF , alphaS ) |
-| START_MODEL mTau | **[DEFINEPARS](/documentation/code/files/standardmodel__slha2_8hpp/#function-standardmodel-slha2-hpp-definepars)**(mNu1 , mNu2 , mNu3 ) |
-| START_MODEL mTau mU | **[DEFINEPARS](/documentation/code/files/standardmodel__slha2_8hpp/#function-standardmodel-slha2-hpp-definepars)**(mS , mCmC ) |
+| START_MODEL | **[DEFINEPARS](/documentation/code/files/standardmodel__slha2_8hpp/#function-definepars)**(alphainv , GF , alphaS ) |
+| START_MODEL mTau | **[DEFINEPARS](/documentation/code/files/standardmodel__slha2_8hpp/#function-definepars)**(mNu1 , mNu2 , mNu3 ) |
+| START_MODEL mTau mU | **[DEFINEPARS](/documentation/code/files/standardmodel__slha2_8hpp/#function-definepars)**(mS , mCmC ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[mMu](/documentation/code/files/standardmodel__slha2_8hpp/#variable-standardmodel-slha2-hpp-mmu)**  |
+| START_MODEL | **[mMu](/documentation/code/files/standardmodel__slha2_8hpp/#variable-mmu)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/standardmodel__slha2_8hpp/#define-standardmodel-slha2-hpp-model)**  |
+|  | **[MODEL](/documentation/code/files/standardmodel__slha2_8hpp/#define-model)**  |
 
 ## Detailed Description
 
@@ -205,4 +205,4 @@ START_MODEL mMu;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

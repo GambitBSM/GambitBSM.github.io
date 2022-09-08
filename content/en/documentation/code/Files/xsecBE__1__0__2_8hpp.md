@@ -13,11 +13,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-xsecbe-1-0-2-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-xsecbe-1-0-2-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-xsecbe-1-0-2-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-xsecbe-1-0-2-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-xsecbe-1-0-2-hpp-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/xsecbe__1__0__2_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -157,4 +157,4 @@ BE_FUNCTION(get_xsection, PyDict, (iipair&), "get_xsection", "xsecBE_get_xsectio
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

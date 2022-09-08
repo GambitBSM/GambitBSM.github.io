@@ -17,12 +17,12 @@ Simple class to contain information defining how some parameter in a [SubSpectru
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-gambitspectrumparameter-spectrumparameter)**(const [Par::Tags](/documentation/code/namespaces/namespacegambit_1_1par/#enum-gambitpar-tags) tag, const std::string label, const std::vector< int > shape, const std::string blockname, const int blockindex) |
-| [Par::Tags](/documentation/code/namespaces/namespacegambit_1_1par/#enum-gambitpar-tags) | **[tag](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-gambitspectrumparameter-tag)**() const |
-| std::string | **[name](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-gambitspectrumparameter-name)**() const |
-| std::vector< int > | **[shape](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-gambitspectrumparameter-shape)**() const |
-| std::string | **[blockname](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-gambitspectrumparameter-blockname)**() const |
-| int | **[blockindex](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-gambitspectrumparameter-blockindex)**() const |
+| | **[SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-spectrumparameter)**(const [Par::Tags](/documentation/code/namespaces/namespacegambit_1_1par/#enum-tags) tag, const std::string label, const std::vector< int > shape, const std::string blockname, const int blockindex) |
+| [Par::Tags](/documentation/code/namespaces/namespacegambit_1_1par/#enum-tags) | **[tag](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-tag)**() const |
+| std::string | **[name](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-name)**() const |
+| std::vector< int > | **[shape](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-shape)**() const |
+| std::string | **[blockname](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-blockname)**() const |
+| int | **[blockindex](/documentation/code/classes/classgambit_1_1spectrumparameter/#function-blockindex)**() const |
 
 ## Public Functions Documentation
 
@@ -76,4 +76,4 @@ inline int blockindex() const
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

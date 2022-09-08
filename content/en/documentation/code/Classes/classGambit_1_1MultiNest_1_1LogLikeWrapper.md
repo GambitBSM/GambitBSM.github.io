@@ -17,9 +17,9 @@ Class to connect multinest log-likelihood function and ScannerBit likelihood fun
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-gambitmultinestloglikewrapper-loglikewrapper)**([scanPtr](/documentation/code/namespaces/namespacegambit_1_1multinest/#typedef-gambitmultinest-scanptr) loglike, printer_interface & printer)<br>Constructor.  |
-| double | **[LogLike](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-gambitmultinestloglikewrapper-loglike)**(double * Cube, int ndim, int )<br>Main interface function from MultiNest to ScannerBit-supplied loglikelihood function.  |
-| void | **[dumper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-gambitmultinestloglikewrapper-dumper)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * , double , double , double )<br>Main interface to MultiNest dumper routine.  |
+| | **[LogLikeWrapper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-loglikewrapper)**([scanPtr](/documentation/code/namespaces/namespacegambit_1_1multinest/#typedef-scanptr) loglike, printer_interface & printer)<br>Constructor.  |
+| double | **[LogLike](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-loglike)**(double * Cube, int ndim, int )<br>Main interface function from MultiNest to ScannerBit-supplied loglikelihood function.  |
+| void | **[dumper](/documentation/code/classes/classgambit_1_1multinest_1_1loglikewrapper/#function-dumper)**(int nSamples, int nlive, int nPar, double * physLive, double * posterior, double * , double , double , double )<br>Main interface to MultiNest dumper routine.  |
 
 ## Public Functions Documentation
 
@@ -85,4 +85,4 @@ nSamples = total number of samples in posterior distribution nlive = total numbe
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

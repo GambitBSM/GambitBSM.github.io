@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/raster_8cpp/#function-raster-cpp-scanner-plugin)**(raster , version(1, 0, 0) ) |
+| | **[scanner_plugin](/documentation/code/files/raster_8cpp/#function-scanner-plugin)**(raster , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -156,4 +156,4 @@ scanner_plugin(raster, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

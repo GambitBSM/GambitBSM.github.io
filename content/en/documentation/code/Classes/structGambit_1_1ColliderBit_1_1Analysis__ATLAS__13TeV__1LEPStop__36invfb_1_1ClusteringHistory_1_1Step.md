@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[pt](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/#variable-gambitcolliderbitanalysis-atlas-13tev-1lepstop-36invfbclusteringhistorystep-pt)**  |
-| double | **[r](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/#variable-gambitcolliderbitanalysis-atlas-13tev-1lepstop-36invfbclusteringhistorystep-r)**  |
-| size_t | **[constit](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/#variable-gambitcolliderbitanalysis-atlas-13tev-1lepstop-36invfbclusteringhistorystep-constit)**  |
-| Status | **[status](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/#variable-gambitcolliderbitanalysis-atlas-13tev-1lepstop-36invfbclusteringhistorystep-status)**  |
+| double | **[pt](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/#variable-pt)**  |
+| double | **[r](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/#variable-r)**  |
+| size_t | **[constit](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/#variable-constit)**  |
+| Status | **[status](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/#variable-status)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ Status status;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

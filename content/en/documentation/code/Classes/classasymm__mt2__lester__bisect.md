@@ -15,15 +15,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[get_mT2](/documentation/code/classes/classasymm__mt2__lester__bisect/#function-asymm-mt2-lester-bisect-get-mt2)**(const double mVis1, const double pxVis1, const double pyVis1, const double mVis2, const double pxVis2, const double pyVis2, const double pxMiss, const double pyMiss, const double mInvis1, const double mInvis2, const double desiredPrecisionOnMT2 =0, const bool useDeciSectionsInitially =true) |
-| void | **[disableCopyrightMessage](/documentation/code/classes/classasymm__mt2__lester__bisect/#function-asymm-mt2-lester-bisect-disablecopyrightmessage)**(const bool printIfFirst =false) |
-| double | **[get_mT2_Sq](/documentation/code/classes/classasymm__mt2__lester__bisect/#function-asymm-mt2-lester-bisect-get-mt2-sq)**(const double mVis1, const double pxVis1, const double pyVis1, const double mVis2, const double pxVis2, const double pyVis2, const double pxMiss, const double pyMiss, const double mInvis1, const double mInvis2, const double desiredPrecisionOnMT2 =0, const bool useDeciSectionsInitially =true) |
+| double | **[get_mT2](/documentation/code/classes/classasymm__mt2__lester__bisect/#function-get-mt2)**(const double mVis1, const double pxVis1, const double pyVis1, const double mVis2, const double pxVis2, const double pyVis2, const double pxMiss, const double pyMiss, const double mInvis1, const double mInvis2, const double desiredPrecisionOnMT2 =0, const bool useDeciSectionsInitially =true) |
+| void | **[disableCopyrightMessage](/documentation/code/classes/classasymm__mt2__lester__bisect/#function-disablecopyrightmessage)**(const bool printIfFirst =false) |
+| double | **[get_mT2_Sq](/documentation/code/classes/classasymm__mt2__lester__bisect/#function-get-mt2-sq)**(const double mVis1, const double pxVis1, const double pyVis1, const double mVis2, const double pxVis2, const double pyVis2, const double pxMiss, const double pyMiss, const double mInvis1, const double mInvis2, const double desiredPrecisionOnMT2 =0, const bool useDeciSectionsInitially =true) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const int | **[MT2_ERROR](/documentation/code/classes/classasymm__mt2__lester__bisect/#variable-asymm-mt2-lester-bisect-mt2-error)**  |
+| const int | **[MT2_ERROR](/documentation/code/classes/classasymm__mt2__lester__bisect/#variable-mt2-error)**  |
 
 ## Public Functions Documentation
 
@@ -87,4 +87,4 @@ static const int MT2_ERROR =-1;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

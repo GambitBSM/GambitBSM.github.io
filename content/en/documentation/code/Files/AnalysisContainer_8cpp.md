@@ -20,12 +20,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MAP_ANALYSES_WITH_ROOT_RESTFRAMES](/documentation/code/files/analysiscontainer_8cpp/#define-analysiscontainer-cpp-map-analyses-with-root-restframes)**(F)  |
-|  | **[MAP_ANALYSES_WITH_ROOT](/documentation/code/files/analysiscontainer_8cpp/#define-analysiscontainer-cpp-map-analyses-with-root)**(F)  |
-|  | **[MAP_ANALYSES](/documentation/code/files/analysiscontainer_8cpp/#define-analysiscontainer-cpp-map-analyses)**(F)  |
-|  | **[DECLARE_ANALYSIS_FACTORY](/documentation/code/files/analysiscontainer_8cpp/#define-analysiscontainer-cpp-declare-analysis-factory)**(ANAME) <br>For analysis factory function declaration.  |
-|  | **[IF_X_RTN_CREATE_ANA_X](/documentation/code/files/analysiscontainer_8cpp/#define-analysiscontainer-cpp-if-x-rtn-create-ana-x)**(A) <br>Forward declarations using [DECLARE_ANALYSIS_FACTORY(ANAME)](/documentation/code/files/analysiscontainer_8cpp/#define-analysiscontainer-cpp-declare-analysis-factory) |
-|  | **[IF_X_RTN_DETECTOR](/documentation/code/files/analysiscontainer_8cpp/#define-analysiscontainer-cpp-if-x-rtn-detector)**(A) <br>For the string-based analysis checker and detector retriever getDetector.  |
+|  | **[MAP_ANALYSES_WITH_ROOT_RESTFRAMES](/documentation/code/files/analysiscontainer_8cpp/#define-map-analyses-with-root-restframes)**(F)  |
+|  | **[MAP_ANALYSES_WITH_ROOT](/documentation/code/files/analysiscontainer_8cpp/#define-map-analyses-with-root)**(F)  |
+|  | **[MAP_ANALYSES](/documentation/code/files/analysiscontainer_8cpp/#define-map-analyses)**(F)  |
+|  | **[DECLARE_ANALYSIS_FACTORY](/documentation/code/files/analysiscontainer_8cpp/#define-declare-analysis-factory)**(ANAME) <br>For analysis factory function declaration.  |
+|  | **[IF_X_RTN_CREATE_ANA_X](/documentation/code/files/analysiscontainer_8cpp/#define-if-x-rtn-create-ana-x)**(A) <br>Forward declarations using [DECLARE_ANALYSIS_FACTORY(ANAME)](/documentation/code/files/analysiscontainer_8cpp/#define-declare-analysis-factory) |
+|  | **[IF_X_RTN_DETECTOR](/documentation/code/files/analysiscontainer_8cpp/#define-if-x-rtn-detector)**(A) <br>For the string-based analysis checker and detector retriever getDetector.  |
 
 ## Detailed Description
 
@@ -114,9 +114,9 @@ For analysis factory function declaration.
 if (name == #A) return create_Analysis_ ## A();
 ```
 
-Forward declarations using [DECLARE_ANALYSIS_FACTORY(ANAME)](/documentation/code/files/analysiscontainer_8cpp/#define-analysiscontainer-cpp-declare-analysis-factory)
+Forward declarations using [DECLARE_ANALYSIS_FACTORY(ANAME)](/documentation/code/files/analysiscontainer_8cpp/#define-declare-analysis-factory)
 
-For the string-based factory function [mkAnalysis()](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gambitcolliderbit-mkanalysis)
+For the string-based factory function [mkAnalysis()](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-mkanalysis)
 
 
 ### define IF_X_RTN_DETECTOR
@@ -603,4 +603,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:53 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

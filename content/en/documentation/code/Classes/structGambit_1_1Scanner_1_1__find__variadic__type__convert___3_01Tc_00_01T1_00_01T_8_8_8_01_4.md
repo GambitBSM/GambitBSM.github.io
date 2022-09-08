@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [__find_variadic_type_convert__](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__convert____/)< [is_args_convertible](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible/)< Tc, T1 >::value, T1, T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert___3_01tc_00_01t1_00_01t_8_8_8_01_4/#typedef-gambitscanner-find-variadic-type-convert-tc-t1-t-ret-type)**  |
-| typedef [__find_variadic_type_convert__](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__convert____/)< [is_args_convertible](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible/)< Tc, T1 >::value, T1, T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert___3_01tc_00_01t1_00_01t_8_8_8_01_4/#typedef-gambitscanner-find-variadic-type-convert-tc-t1-t-func-type)**  |
+| typedef [__find_variadic_type_convert__](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__convert____/)< [is_args_convertible](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible/)< Tc, T1 >::value, T1, T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert___3_01tc_00_01t1_00_01t_8_8_8_01_4/#typedef-ret-type)**  |
+| typedef [__find_variadic_type_convert__](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__convert____/)< [is_args_convertible](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible/)< Tc, T1 >::value, T1, T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert___3_01tc_00_01t1_00_01t_8_8_8_01_4/#typedef-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert___3_01tc_00_01t1_00_01t_8_8_8_01_4/#variable-gambitscanner-find-variadic-type-convert-tc-t1-t-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert___3_01tc_00_01t1_00_01t_8_8_8_01_4/#variable-value)**  |
 
 ## Detailed Description
 
@@ -60,4 +60,4 @@ static const bool value = __find_variadic_type_convert__<is_args_convertible<Tc,
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

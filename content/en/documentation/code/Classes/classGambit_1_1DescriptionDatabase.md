@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... args\> <br>bool | **[hasKey](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-haskey)**(const args &... keys) const |
-| template <typename TYPE ,typename... args\> <br>TYPE | **[getValue](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-getvalue)**(const args &... keys) const |
-| | **[DescriptionDatabase](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-descriptiondatabase)**()<br>Default constructor.  |
-| | **[DescriptionDatabase](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-descriptiondatabase)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & filename)<br>Construct from file.  |
-| | **[DescriptionDatabase](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-descriptiondatabase)**(const YAML::Node & descriptions)<br>Copy constructor.  |
-| | **[DescriptionDatabase](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-descriptiondatabase)**(YAML::Node && descriptions)<br>Move constructor.  |
-| template <typename... args\> <br>void | **[loadFile](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-loadfile)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & filename)<br>Load descriptions from file.  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), int > | **[check_for_duplicates](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-check-for-duplicates)**()<br>Check 'descriptions' for duplicate keys.  |
-| std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[get_all_values](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-gambitdescriptiondatabase-get-all-values)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) key)<br>Return vector of descriptions matching key (for retrieving values with non-unique keys)  |
+| template <typename... args\> <br>bool | **[hasKey](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-haskey)**(const args &... keys) const |
+| template <typename TYPE ,typename... args\> <br>TYPE | **[getValue](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-getvalue)**(const args &... keys) const |
+| | **[DescriptionDatabase](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**()<br>Default constructor.  |
+| | **[DescriptionDatabase](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & filename)<br>Construct from file.  |
+| | **[DescriptionDatabase](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(const YAML::Node & descriptions)<br>Copy constructor.  |
+| | **[DescriptionDatabase](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-descriptiondatabase)**(YAML::Node && descriptions)<br>Move constructor.  |
+| template <typename... args\> <br>void | **[loadFile](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-loadfile)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & filename)<br>Load descriptions from file.  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), int > | **[check_for_duplicates](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-check-for-duplicates)**()<br>Check 'descriptions' for duplicate keys.  |
+| std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[get_all_values](/documentation/code/classes/classgambit_1_1descriptiondatabase/#function-get-all-values)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) key)<br>Return vector of descriptions matching key (for retrieving values with non-unique keys)  |
 
 ## Detailed Description
 
@@ -137,4 +137,4 @@ Return vector of descriptions matching key (for retrieving values with non-uniqu
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

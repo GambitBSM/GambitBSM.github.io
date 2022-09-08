@@ -17,9 +17,9 @@ Inherits from [Gambit::Scanner::Plugins::factoryBase](/documentation/code/classe
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[funcFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/#function-gambitscannerpluginsfuncfactory-funcfactory)**(T * in) |
-| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/#function-gambitscannerpluginsfuncfactory-operator)**() |
-| | **[~funcFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/#function-gambitscannerpluginsfuncfactory-funcfactory)**() |
+| | **[funcFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/#function-funcfactory)**(T * in) |
+| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/#function-operator)**() |
+| | **[~funcFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/#function-funcfactory)**() |
 
 ## Additional inherited members
 
@@ -27,7 +27,7 @@ Inherits from [Gambit::Scanner::Plugins::factoryBase](/documentation/code/classe
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~factoryBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-gambitscannerpluginsfactorybase-factorybase)**() |
+| virtual | **[~factoryBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-factorybase)**() |
 
 
 ## Detailed Description
@@ -55,7 +55,7 @@ inline virtual void * operator()()
 ```
 
 
-**Reimplements**: [Gambit::Scanner::Plugins::factoryBase::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-gambitscannerpluginsfactorybase-operator)
+**Reimplements**: [Gambit::Scanner::Plugins::factoryBase::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-operator)
 
 
 ### function ~funcFactory
@@ -67,4 +67,4 @@ inline ~funcFactory()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

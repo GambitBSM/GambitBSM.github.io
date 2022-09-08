@@ -13,10 +13,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/salami__0__1__0_8hpp/#define-salami-0-1-0-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/salami__0__1__0_8hpp/#define-salami-0-1-0-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/salami__0__1__0_8hpp/#define-salami-0-1-0-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/salami__0__1__0_8hpp/#define-salami-0-1-0-hpp-safe-version)**  |
+|  | **[BACKENDNAME](/documentation/code/files/salami__0__1__0_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/salami__0__1__0_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/salami__0__1__0_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/salami__0__1__0_8hpp/#define-safe-version)**  |
 
 ## Detailed Description
 
@@ -143,4 +143,4 @@ BE_FUNCTION(get_xsection, PyDict, (iipair&, double&, double&), "get_xsection", "
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

@@ -15,21 +15,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[can_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-wrapperbase-can-delete-beptr)**() |
-| void | **[set_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-wrapperbase-set-delete-beptr)**(bool del_wrp_in) |
-| | **[WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase-wrapperbase)**([AbstractBase](/documentation/code/classes/classabstractbase/) * BEptr_in) |
-| virtual | **[~WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase-wrapperbase)**() |
-| bool | **[can_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-wrapperbase-can-delete-beptr)**() |
-| void | **[set_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-wrapperbase-set-delete-beptr)**(bool del_wrp_in) |
-| | **[WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase-wrapperbase)**([AbstractBase](/documentation/code/classes/classabstractbase/) * BEptr_in) |
-| virtual | **[~WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase-wrapperbase)**() |
+| bool | **[can_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-can-delete-beptr)**() |
+| void | **[set_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
+| | **[WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/classes/classabstractbase/) * BEptr_in) |
+| virtual | **[~WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase)**() |
+| bool | **[can_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-can-delete-beptr)**() |
+| void | **[set_delete_BEptr](/documentation/code/classes/classwrapperbase/#function-set-delete-beptr)**(bool del_wrp_in) |
+| | **[WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase)**([AbstractBase](/documentation/code/classes/classabstractbase/) * BEptr_in) |
+| virtual | **[~WrapperBase](/documentation/code/classes/classwrapperbase/#function-wrapperbase)**() |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [AbstractBase](/documentation/code/classes/classabstractbase/) * | **[BEptr](/documentation/code/classes/classwrapperbase/#variable-wrapperbase-beptr)**  |
-| bool | **[delete_BEptr](/documentation/code/classes/classwrapperbase/#variable-wrapperbase-delete-beptr)**  |
+| [AbstractBase](/documentation/code/classes/classabstractbase/) * | **[BEptr](/documentation/code/classes/classwrapperbase/#variable-beptr)**  |
+| bool | **[delete_BEptr](/documentation/code/classes/classwrapperbase/#variable-delete-beptr)**  |
 
 ## Public Functions Documentation
 
@@ -115,4 +115,4 @@ bool delete_BEptr;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

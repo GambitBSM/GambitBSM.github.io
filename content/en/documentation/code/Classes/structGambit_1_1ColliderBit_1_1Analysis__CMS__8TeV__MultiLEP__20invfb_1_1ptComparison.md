@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb_1_1ptcomparison/#function-gambitcolliderbitanalysis-cms-8tev-multilep-20invfbptcomparison-operator)**(const HEPUtils::Particle * i, const HEPUtils::Particle * j) |
+| bool | **[operator()](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__20invfb_1_1ptcomparison/#function-operator)**(const HEPUtils::Particle * i, const HEPUtils::Particle * j) |
 
 ## Public Functions Documentation
 
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

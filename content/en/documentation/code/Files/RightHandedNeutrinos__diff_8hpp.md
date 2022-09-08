@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/righthandedneutrinos__diff_8hpp/#define-righthandedneutrinos-diff-hpp-model)**  |
-|  | **[PARENT](/documentation/code/files/righthandedneutrinos__diff_8hpp/#define-righthandedneutrinos-diff-hpp-parent)**  |
+|  | **[MODEL](/documentation/code/files/righthandedneutrinos__diff_8hpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/righthandedneutrinos__diff_8hpp/#define-parent)**  |
 
 
 
@@ -76,4 +76,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

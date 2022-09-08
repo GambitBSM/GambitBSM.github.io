@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/standardmodel__higgs_8cpp/#define-standardmodel-higgs-cpp-model)**  |
-|  | **[PARENT](/documentation/code/files/standardmodel__higgs_8cpp/#define-standardmodel-higgs-cpp-parent)**  |
+|  | **[MODEL](/documentation/code/files/standardmodel__higgs_8cpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/standardmodel__higgs_8cpp/#define-parent)**  |
 
 
 
@@ -107,4 +107,4 @@ void MODEL_NAMESPACE::StandardModel_Higgs_to_StandardModel_Higgs_running (const 
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[LOAD_PRIOR](/documentation/code/files/priors_8hpp/#define-priors-hpp-load-prior)**(tag, ...)  |
+|  | **[LOAD_PRIOR](/documentation/code/files/priors_8hpp/#define-load-prior)**(tag, ...)  |
 
 ## Detailed Description
 
@@ -121,4 +121,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

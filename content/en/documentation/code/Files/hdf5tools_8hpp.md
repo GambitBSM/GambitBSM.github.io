@@ -40,8 +40,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[H5_OUTPUT_TYPES](/documentation/code/files/hdf5tools_8hpp/#define-hdf5tools-hpp-h5-output-types)**  |
-|  | **[SPECIALISE_HDF5_DATA_TYPE_IF_NEEDED](/documentation/code/files/hdf5tools_8hpp/#define-hdf5tools-hpp-specialise-hdf5-data-type-if-needed)**(TYPEDEFD_TYPE, RETURN_HDF5_TYPE) <br>Provide template specialisation of get_hdf5_data_type only if the requested type hasn't been used to define one already.  |
+|  | **[H5_OUTPUT_TYPES](/documentation/code/files/hdf5tools_8hpp/#define-h5-output-types)**  |
+|  | **[SPECIALISE_HDF5_DATA_TYPE_IF_NEEDED](/documentation/code/files/hdf5tools_8hpp/#define-specialise-hdf5-data-type-if-needed)**(TYPEDEFD_TYPE, RETURN_HDF5_TYPE) <br>Provide template specialisation of get_hdf5_data_type only if the requested type hasn't been used to define one already.  |
 
 ## Detailed Description
 
@@ -428,4 +428,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

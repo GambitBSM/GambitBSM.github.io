@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1is__one__member__vector__internal_3_01void_07std_1_1vector_3_01t_01_4_00_01args_8_8_8_08_4/#variable-gambitis-one-member-vector-internal-voidstdvector-t-args-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1is__one__member__vector__internal_3_01void_07std_1_1vector_3_01t_01_4_00_01args_8_8_8_08_4/#variable-value)**  |
 
 ## Detailed Description
 
@@ -36,4 +36,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

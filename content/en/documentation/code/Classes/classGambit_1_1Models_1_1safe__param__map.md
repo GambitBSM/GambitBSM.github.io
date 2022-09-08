@@ -17,7 +17,7 @@ Inherits from std::map< std::string, T >
 
 |                | Name           |
 | -------------- | -------------- |
-| T | **[operator[]](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/#function-gambitmodelssafe-param-map-operator)**(std::string key) const |
+| T | **[operator[]](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/#function-operator)**(std::string key) const |
 
 ## Detailed Description
 
@@ -39,4 +39,4 @@ inline T operator[](
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

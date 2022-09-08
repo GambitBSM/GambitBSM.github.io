@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/#variable-gambitspecbitspectrumentry-name)**  |
-| vec_pair_int_dbl | **[parameters](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/#variable-gambitspecbitspectrumentry-parameters)**  |
-| int | **[dimension](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/#variable-gambitspecbitspectrumentry-dimension)**  |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/#variable-name)**  |
+| vec_pair_int_dbl | **[parameters](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/#variable-parameters)**  |
+| int | **[dimension](/documentation/code/classes/structgambit_1_1specbit_1_1spectrumentry/#variable-dimension)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ int dimension;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

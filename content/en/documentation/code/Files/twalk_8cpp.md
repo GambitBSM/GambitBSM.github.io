@@ -26,7 +26,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/twalk_8cpp/#function-twalk-cpp-scanner-plugin)**(twalk , version(1, 0, 1) ) |
+| | **[scanner_plugin](/documentation/code/files/twalk_8cpp/#function-scanner-plugin)**(twalk , version(1, 0, 1) ) |
 
 ## Detailed Description
 
@@ -523,4 +523,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

@@ -19,8 +19,8 @@ Inherited by [Gambit::Scanner::Plugins::__plugin_resume__< T >](/documentation/c
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-gambitscannerplugins-plugin-resume-base-print)**(std::ofstream & ) =0 |
-| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-gambitscannerplugins-plugin-resume-base-plugin-resume-base)**() |
+| virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-print)**(std::ofstream & ) =0 |
+| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-plugin-resume-base)**() |
 
 ## Public Functions Documentation
 
@@ -33,7 +33,7 @@ virtual void print(
 ```
 
 
-**Reimplemented by**: [Gambit::Scanner::Plugins::__plugin_resume__::print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-gambitscannerplugins-plugin-resume-print)
+**Reimplemented by**: [Gambit::Scanner::Plugins::__plugin_resume__::print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-print)
 
 
 ### function ~__plugin_resume_base__
@@ -45,4 +45,4 @@ inline virtual ~__plugin_resume_base__()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

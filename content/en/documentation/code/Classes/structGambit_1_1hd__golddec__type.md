@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[whlgd](/documentation/code/classes/structgambit_1_1hd__golddec__type/#variable-gambithd-golddec-type-whlgd)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[whhgd](/documentation/code/classes/structgambit_1_1hd__golddec__type/#variable-gambithd-golddec-type-whhgd)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[whagd](/documentation/code/classes/structgambit_1_1hd__golddec__type/#variable-gambithd-golddec-type-whagd)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[whcgd](/documentation/code/classes/structgambit_1_1hd__golddec__type/#variable-gambithd-golddec-type-whcgd)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[whlgd](/documentation/code/classes/structgambit_1_1hd__golddec__type/#variable-whlgd)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[whhgd](/documentation/code/classes/structgambit_1_1hd__golddec__type/#variable-whhgd)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[whagd](/documentation/code/classes/structgambit_1_1hd__golddec__type/#variable-whagd)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[whcgd](/documentation/code/classes/structgambit_1_1hd__golddec__type/#variable-whcgd)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ Farray< Fdouble, 1, 2 > whcgd;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

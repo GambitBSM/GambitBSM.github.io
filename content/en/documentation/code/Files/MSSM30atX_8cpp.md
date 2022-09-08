@@ -19,18 +19,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEFINE_IAPFUNC](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-define-iapfunc)**(PARENT)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-mssm30atx-cpp-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[DEFINE_IAPFUNC](/documentation/code/files/mssm30atx_8cpp/#define-define-iapfunc)**(PARENT)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm30atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
 
 
 
@@ -462,4 +462,4 @@ void MODEL_NAMESPACE::MSSM30atMSUSY_to_MSSM30atQ (const ModelParameters &myP, Mo
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

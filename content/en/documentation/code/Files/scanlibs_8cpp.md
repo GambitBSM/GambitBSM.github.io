@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/files/scanlibs_8cpp/#function-scanlibs-cpp-main)**(int argc, char * argv[]) |
+| int | **[main](/documentation/code/files/scanlibs_8cpp/#function-main)**(int argc, char * argv[]) |
 
 ## Detailed Description
 
@@ -177,4 +177,4 @@ int main(int argc, char *argv[])
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

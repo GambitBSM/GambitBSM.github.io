@@ -13,9 +13,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/diracsingletdm__z2_8hpp/#define-diracsingletdm-z2-hpp-model)**  |
-|  | **[MODEL](/documentation/code/files/diracsingletdm__z2_8hpp/#define-diracsingletdm-z2-hpp-model)**  |
-|  | **[PARENT](/documentation/code/files/diracsingletdm__z2_8hpp/#define-diracsingletdm-z2-hpp-parent)**  |
+|  | **[MODEL](/documentation/code/files/diracsingletdm__z2_8hpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/diracsingletdm__z2_8hpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/diracsingletdm__z2_8hpp/#define-parent)**  |
 
 
 
@@ -148,4 +148,4 @@ Sanjay Bloor
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

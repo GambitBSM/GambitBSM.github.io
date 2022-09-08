@@ -18,31 +18,31 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[HDF5MasterBuffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-hdf5masterbuffer)**(const std::string & filename, const std::string & groupname, const bool sync, const std::size_t buffer_length)<br>Constructor.  |
-| | **[~HDF5MasterBuffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-hdf5masterbuffer)**()<br>Destructor.  |
-| void | **[flush](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-flush)**()<br>Empty all buffers to disk.  |
-| void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-reset)**()<br>Clear all data in buffers _**and on disk**_ for this printer.  |
-| void | **[resynchronise](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-resynchronise)**()<br>Make sure all buffers know about all points in all buffers.  |
-| bool | **[all_buffers_empty](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-all-buffers-empty)**()<br>Report whether all the buffers are empty.  |
-| bool | **[is_synchronised](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-is-synchronised)**()<br>Report what sort of buffers we are managing.  |
-| std::string | **[buffer_status](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-buffer-status)**()<br>Report status of non-empty buffers (as a string message)  |
-| std::string | **[get_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-file)**()<br>Report what output file we are targeting.  |
-| std::string | **[get_group](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-group)**()<br>Report which group in the output file we are targeting.  |
-| std::size_t | **[get_buffer_length](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-buffer-length)**()<br>Report length of buffer for HDF5 output.  |
-| std::size_t | **[get_Npoints](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-npoints)**()<br>Report number of points currently in the buffer.  |
-| void | **[extend_all_datasets_to](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-extend-all-datasets-to)**(const std::size_t length)<br>Extend all datasets to the specified size;.  |
-| std::map< ulong, ulong > | **[get_highest_PPIDs](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-highest-ppids)**(const int mpisize)<br>Search the existing output and find the highest used pointIDs for each rank.  |
-| void | **[lock_and_open_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-lock-and-open-file)**(const char access_type ='w')<br>Open (and lock) output HDF5 file and obtain HDF5 handles.  |
-| void | **[close_and_unlock_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-close-and-unlock-file)**()<br>Close (and unlock) output HDF5 file and release HDF5 handles.  |
-| hid_t | **[get_location_id](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-location-id)**()<br>Retrieve the location_id specifying where output should be created in the HDF5 file.  |
-| std::size_t | **[get_next_free_position](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-next-free-position)**()<br>Get next available position in the synchronised output datasets.  |
-| std::size_t | **[get_Nbuffers](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-nbuffers)**()<br>Report number of buffers that we are managing.  |
-| double | **[get_sizeMB](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-sizemb)**()<br>Report upper limit estimate of size of all buffer data in MB.  |
-| std::vector< std::pair< std::string, int > > | **[get_all_dset_names_on_disk](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-all-dset-names-on-disk)**()<br>Get names and types of all datasets in the group that we are pointed at.  |
-| const std::map< std::string, [HDF5BufferBase](/documentation/code/classes/classgambit_1_1printers_1_1hdf5bufferbase/) * > & | **[get_all_buffers](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-all-buffers)**()<br>Retrieve a map containing pointers to all buffers managed by this object.  |
-| const std::set< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) > & | **[get_all_points](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-get-all-points)**()<br>Retrieve set containing all points currently known to be in these buffers.  |
-| void | **[untrack_points](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-untrack-points)**(const std::set< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) > & removed_points)<br>Remove points from buffer tracking.  |
-| template <class T \> <br>void | **[schedule_print](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-gambitprintershdf5masterbuffer-schedule-print)**(T const & value, const std::string & label, const unsigned int mpirank, const unsigned long pointID)<br>Queue up data to be written to disk when buffers are full.  |
+| | **[HDF5MasterBuffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-hdf5masterbuffer)**(const std::string & filename, const std::string & groupname, const bool sync, const std::size_t buffer_length)<br>Constructor.  |
+| | **[~HDF5MasterBuffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-hdf5masterbuffer)**()<br>Destructor.  |
+| void | **[flush](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-flush)**()<br>Empty all buffers to disk.  |
+| void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-reset)**()<br>Clear all data in buffers _**and on disk**_ for this printer.  |
+| void | **[resynchronise](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-resynchronise)**()<br>Make sure all buffers know about all points in all buffers.  |
+| bool | **[all_buffers_empty](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-all-buffers-empty)**()<br>Report whether all the buffers are empty.  |
+| bool | **[is_synchronised](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-is-synchronised)**()<br>Report what sort of buffers we are managing.  |
+| std::string | **[buffer_status](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-buffer-status)**()<br>Report status of non-empty buffers (as a string message)  |
+| std::string | **[get_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-file)**()<br>Report what output file we are targeting.  |
+| std::string | **[get_group](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-group)**()<br>Report which group in the output file we are targeting.  |
+| std::size_t | **[get_buffer_length](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-buffer-length)**()<br>Report length of buffer for HDF5 output.  |
+| std::size_t | **[get_Npoints](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-npoints)**()<br>Report number of points currently in the buffer.  |
+| void | **[extend_all_datasets_to](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-extend-all-datasets-to)**(const std::size_t length)<br>Extend all datasets to the specified size;.  |
+| std::map< ulong, ulong > | **[get_highest_PPIDs](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-highest-ppids)**(const int mpisize)<br>Search the existing output and find the highest used pointIDs for each rank.  |
+| void | **[lock_and_open_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-lock-and-open-file)**(const char access_type ='w')<br>Open (and lock) output HDF5 file and obtain HDF5 handles.  |
+| void | **[close_and_unlock_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-close-and-unlock-file)**()<br>Close (and unlock) output HDF5 file and release HDF5 handles.  |
+| hid_t | **[get_location_id](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-location-id)**()<br>Retrieve the location_id specifying where output should be created in the HDF5 file.  |
+| std::size_t | **[get_next_free_position](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-next-free-position)**()<br>Get next available position in the synchronised output datasets.  |
+| std::size_t | **[get_Nbuffers](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-nbuffers)**()<br>Report number of buffers that we are managing.  |
+| double | **[get_sizeMB](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-sizemb)**()<br>Report upper limit estimate of size of all buffer data in MB.  |
+| std::vector< std::pair< std::string, int > > | **[get_all_dset_names_on_disk](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-all-dset-names-on-disk)**()<br>Get names and types of all datasets in the group that we are pointed at.  |
+| const std::map< std::string, [HDF5BufferBase](/documentation/code/classes/classgambit_1_1printers_1_1hdf5bufferbase/) * > & | **[get_all_buffers](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-all-buffers)**()<br>Retrieve a map containing pointers to all buffers managed by this object.  |
+| const std::set< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) > & | **[get_all_points](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-all-points)**()<br>Retrieve set containing all points currently known to be in these buffers.  |
+| void | **[untrack_points](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-untrack-points)**(const std::set< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) > & removed_points)<br>Remove points from buffer tracking.  |
+| template <class T \> <br>void | **[schedule_print](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-schedule-print)**(T const & value, const std::string & label, const unsigned int mpirank, const unsigned long pointID)<br>Queue up data to be written to disk when buffers are full.  |
 
 ## Detailed Description
 
@@ -310,4 +310,4 @@ Attempt to flush again every 1000 points beyond buffer limits
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

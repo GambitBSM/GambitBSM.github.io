@@ -13,11 +13,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/captngeneral__2__1_8hpp/#define-captngeneral-2-1-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/captngeneral__2__1_8hpp/#define-captngeneral-2-1-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/captngeneral__2__1_8hpp/#define-captngeneral-2-1-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/captngeneral__2__1_8hpp/#define-captngeneral-2-1-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/captngeneral__2__1_8hpp/#define-captngeneral-2-1-hpp-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/captngeneral__2__1_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/captngeneral__2__1_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/captngeneral__2__1_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/captngeneral__2__1_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/captngeneral__2__1_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -129,4 +129,4 @@ BE_INI_DEPENDENCY(RD_fraction,double)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[brgamma](/documentation/code/classes/structgambit_1_1sd__stoploop__type/#variable-gambitsd-stoploop-type-brgamma)**  |
-| Fdouble | **[brgammaup](/documentation/code/classes/structgambit_1_1sd__stoploop__type/#variable-gambitsd-stoploop-type-brgammaup)**  |
-| Fdouble | **[brgammagluino](/documentation/code/classes/structgambit_1_1sd__stoploop__type/#variable-gambitsd-stoploop-type-brgammagluino)**  |
+| Fdouble | **[brgamma](/documentation/code/classes/structgambit_1_1sd__stoploop__type/#variable-brgamma)**  |
+| Fdouble | **[brgammaup](/documentation/code/classes/structgambit_1_1sd__stoploop__type/#variable-brgammaup)**  |
+| Fdouble | **[brgammagluino](/documentation/code/classes/structgambit_1_1sd__stoploop__type/#variable-brgammagluino)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ Fdouble brgammagluino;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

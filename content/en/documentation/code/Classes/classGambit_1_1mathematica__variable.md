@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mathematica_variable](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-gambitmathematica-variable-mathematica-variable)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & be, const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & ver, const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & symbol) |
-| [mathematica_variable](/documentation/code/classes/classgambit_1_1mathematica__variable/) & | **[operator=](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-gambitmathematica-variable-operator)**(const TYPE & val) |
-| | **[operator TYPE const](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-gambitmathematica-variable-operator-type-const)**() |
+| | **[mathematica_variable](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-mathematica-variable)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & be, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & ver, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & symbol) |
+| [mathematica_variable](/documentation/code/classes/classgambit_1_1mathematica__variable/) & | **[operator=](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-operator)**(const TYPE & val) |
+| | **[operator TYPE const](/documentation/code/classes/classgambit_1_1mathematica__variable/#function-operator-type-const)**() |
 
 ## Detailed Description
 
@@ -57,4 +57,4 @@ inline operator TYPE const()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

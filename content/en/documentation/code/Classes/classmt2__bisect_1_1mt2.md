@@ -15,19 +15,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisectmt2-mt2)**() |
-| void | **[mt2_bisect](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisectmt2-mt2-bisect)**() |
-| void | **[mt2_massless](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisectmt2-mt2-massless)**() |
-| void | **[set_momenta](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisectmt2-set-momenta)**(double * pa0, double * pb0, double * pmiss0) |
-| void | **[set_mn](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisectmt2-set-mn)**(double mn) |
-| double | **[get_mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisectmt2-get-mt2)**() |
-| void | **[print](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisectmt2-print)**() |
+| | **[mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2)**() |
+| void | **[mt2_bisect](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-bisect)**() |
+| void | **[mt2_massless](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-mt2-massless)**() |
+| void | **[set_momenta](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-set-momenta)**(double * pa0, double * pb0, double * pmiss0) |
+| void | **[set_mn](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-set-mn)**(double mn) |
+| double | **[get_mt2](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-get-mt2)**() |
+| void | **[print](/documentation/code/classes/classmt2__bisect_1_1mt2/#function-print)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[nevt](/documentation/code/classes/classmt2__bisect_1_1mt2/#variable-mt2-bisectmt2-nevt)**  |
+| int | **[nevt](/documentation/code/classes/classmt2__bisect_1_1mt2/#variable-nevt)**  |
 
 ## Public Functions Documentation
 
@@ -97,4 +97,4 @@ int nevt;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

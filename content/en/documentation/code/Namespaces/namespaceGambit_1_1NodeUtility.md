@@ -13,18 +13,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <class TYPE \> <br>TYPE | **[safeIntegerTypeCast](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-safeintegertypecast)**(const std::string & s) |
-| void | **[autoExpandEnvironmentVariables](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-autoexpandenvironmentvariables)**(std::string & text)<br>Expand environment variables in the given string.  |
-| void | **[removeCharsFromString](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-removecharsfromstring)**(std::string & text, const char * charsToRemove)<br>Remove characters in the given string.  |
-| std::string | **[expandEnvironmentVariables](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-expandenvironmentvariables)**(const std::string & input) |
-| template <class TYPE \> <br>TYPE | **[getNode](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-getnode)**(const YAML::Node node) |
-| int | **[getNode< int >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-getnode-int)**(const YAML::Node node) |
-| unsigned int | **[getNode< unsigned int >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-getnode-unsigned-int)**(const YAML::Node node)<br>See int specialization.  |
-| long | **[getNode< long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-getnode-long)**(const YAML::Node node)<br>See int specialization.  |
-| unsigned long | **[getNode< unsigned long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-getnode-unsigned-long)**(const YAML::Node node)<br>See int specialization.  |
-| long long | **[getNode< long long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-getnode-long-long)**(const YAML::Node node)<br>See int specialization.  |
-| unsigned long long | **[getNode< unsigned long long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-getnode-unsigned-long-long)**(const YAML::Node node)<br>See int specialization.  |
-| std::string | **[getNode< std::string >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-gambitnodeutility-getnode-stdstring)**(const YAML::Node node) |
+| template <class TYPE \> <br>TYPE | **[safeIntegerTypeCast](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-safeintegertypecast)**(const std::string & s) |
+| void | **[autoExpandEnvironmentVariables](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-autoexpandenvironmentvariables)**(std::string & text)<br>Expand environment variables in the given string.  |
+| void | **[removeCharsFromString](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-removecharsfromstring)**(std::string & text, const char * charsToRemove)<br>Remove characters in the given string.  |
+| std::string | **[expandEnvironmentVariables](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-expandenvironmentvariables)**(const std::string & input) |
+| template <class TYPE \> <br>TYPE | **[getNode](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode)**(const YAML::Node node) |
+| int | **[getNode< int >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-int)**(const YAML::Node node) |
+| unsigned int | **[getNode< unsigned int >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-unsigned-int)**(const YAML::Node node)<br>See int specialization.  |
+| long | **[getNode< long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-long)**(const YAML::Node node)<br>See int specialization.  |
+| unsigned long | **[getNode< unsigned long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-unsigned-long)**(const YAML::Node node)<br>See int specialization.  |
+| long long | **[getNode< long long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-long-long)**(const YAML::Node node)<br>See int specialization.  |
+| unsigned long long | **[getNode< unsigned long long >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-unsigned-long-long)**(const YAML::Node node)<br>See int specialization.  |
+| std::string | **[getNode< std::string >](/documentation/code/namespaces/namespacegambit_1_1nodeutility/#function-getnode-stdstring)**(const YAML::Node node) |
 
 
 ## Functions Documentation
@@ -168,4 +168,4 @@ Read string and expand environment variables of the type ${MYVAR}. Expansion of 
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

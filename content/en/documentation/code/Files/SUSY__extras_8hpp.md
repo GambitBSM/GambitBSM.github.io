@@ -13,35 +13,35 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_REQ](/documentation/code/files/susy__extras_8hpp/#function-susy-extras-hpp-backend-req)**(prospino_run , (libprospino) , map_str_dbl , (const PID_pair &, const Options &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/susy__extras_8hpp/#function-backend-req)**(prospino_run , (libprospino) , map_str_dbl , (const PID_pair &, const Options &) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[libprospino](/documentation/code/files/susy__extras_8hpp/#variable-susy-extras-hpp-libprospino)**  |
-| | **[void](/documentation/code/files/susy__extras_8hpp/#variable-susy-extras-hpp-void)**  |
+| | **[libprospino](/documentation/code/files/susy__extras_8hpp/#variable-libprospino)**  |
+| | **[void](/documentation/code/files/susy__extras_8hpp/#variable-void)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-capability)** <br>A map between PID pairs and cross-sections.  |
-|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
-|  | **[MODULE](/documentation/code/files/susy__extras_8hpp/#define-susy-extras-hpp-module)**  |
+|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[CAPABILITY](/documentation/code/files/susy__extras_8hpp/#define-capability)** <br>A map between PID pairs and cross-sections.  |
+|  | **[FUNCTION](/documentation/code/files/susy__extras_8hpp/#define-function)** <br>Get the PIDPairCrossSectionsMap using the Prospino backend.  |
+|  | **[MODULE](/documentation/code/files/susy__extras_8hpp/#define-module)**  |
 
 ## Detailed Description
 
@@ -512,4 +512,4 @@ Read single SLHA file and replace some entries for use with model ColliderBit_SL
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:53 +0000
+Updated on 2022-09-08 at 02:23:04 +0000

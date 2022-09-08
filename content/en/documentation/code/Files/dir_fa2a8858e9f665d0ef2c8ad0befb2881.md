@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[DarkBit](/documentation/code/files/dir_942f8d798c3658965d2baafb0a0fad20/#dir-gambit-darkbit)**  |
+| **[DarkBit](/documentation/code/files/dir_942f8d798c3658965d2baafb0a0fad20/#dir-darkbit)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:52 +0000
+Updated on 2022-09-08 at 02:23:04 +0000

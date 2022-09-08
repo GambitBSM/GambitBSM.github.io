@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PRINT](/documentation/code/files/sqliteprinter_2print__overloads_8cpp/#define-sqliteprinter-print-overloads-cpp-print)**(TYPE, SQLTYPE) <br>Templatable print functions.  |
+|  | **[PRINT](/documentation/code/files/sqliteprinter_2print__overloads_8cpp/#define-print)**(TYPE, SQLTYPE) <br>Templatable print functions.  |
 
 ## Detailed Description
 
@@ -130,4 +130,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

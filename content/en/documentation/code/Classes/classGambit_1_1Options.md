@@ -18,21 +18,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... args\> <br>bool | **[hasKey](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-haskey)**(const args &... keys) const |
-| template <typename TYPE ,typename... args\> <br>TYPE | **[getValue](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-getvalue)**(const args &... keys) const |
-| template <typename TYPE ,typename... args\> <br>TYPE | **[getValueOrDef](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-getvalueordef)**(TYPE def, const args &... keys) const |
-| template <typename KEYTYPE ,typename VALTYPE \> <br>void | **[setValue](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-setvalue)**(const KEYTYPE & key, const VALTYPE & val) |
-| | **[Options](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-options)**()<br>Default constructor.  |
-| | **[Options](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-options)**(const YAML::Node & options)<br>Copy constructor.  |
-| | **[Options](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-options)**(YAML::Node && options)<br>Move constructor.  |
-| template <typename TYPE \> <br>std::vector< TYPE > | **[getVector](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-getvector)**(std::string key) const<br>Get a `std::vector` of a particular type.  |
-| template <typename... args\> <br>const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[getNames](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-getnames)**(const args &... keys) const |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[getNames](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-getnames)**() const |
-| template <typename... args\> <br>const [Options](/documentation/code/classes/classgambit_1_1options/) | **[getOptions](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-getoptions)**(const args &... keys) const<br>Recursive options retrieval.  |
-| template <typename... args\> <br>YAML::Node | **[getNode](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-getnode)**(const args &... keys) const<br>Retrieve raw [YAML](/documentation/code/namespaces/namespaceyaml/) node.  |
-| template <typename... args\> <br>YAML::Node | **[loadFromFile](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-loadfromfile)**(const args &... keys) const<br>Get [YAML](/documentation/code/namespaces/namespaceyaml/) node from file.  |
-| YAML::const_iterator | **[begin](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-begin)**() const<br>Return begin and end of options.  |
-| YAML::const_iterator | **[end](/documentation/code/classes/classgambit_1_1options/#function-gambitoptions-end)**() const |
+| template <typename... args\> <br>bool | **[hasKey](/documentation/code/classes/classgambit_1_1options/#function-haskey)**(const args &... keys) const |
+| template <typename TYPE ,typename... args\> <br>TYPE | **[getValue](/documentation/code/classes/classgambit_1_1options/#function-getvalue)**(const args &... keys) const |
+| template <typename TYPE ,typename... args\> <br>TYPE | **[getValueOrDef](/documentation/code/classes/classgambit_1_1options/#function-getvalueordef)**(TYPE def, const args &... keys) const |
+| template <typename KEYTYPE ,typename VALTYPE \> <br>void | **[setValue](/documentation/code/classes/classgambit_1_1options/#function-setvalue)**(const KEYTYPE & key, const VALTYPE & val) |
+| | **[Options](/documentation/code/classes/classgambit_1_1options/#function-options)**()<br>Default constructor.  |
+| | **[Options](/documentation/code/classes/classgambit_1_1options/#function-options)**(const YAML::Node & options)<br>Copy constructor.  |
+| | **[Options](/documentation/code/classes/classgambit_1_1options/#function-options)**(YAML::Node && options)<br>Move constructor.  |
+| template <typename TYPE \> <br>std::vector< TYPE > | **[getVector](/documentation/code/classes/classgambit_1_1options/#function-getvector)**(std::string key) const<br>Get a `std::vector` of a particular type.  |
+| template <typename... args\> <br>const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[getNames](/documentation/code/classes/classgambit_1_1options/#function-getnames)**(const args &... keys) const |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[getNames](/documentation/code/classes/classgambit_1_1options/#function-getnames)**() const |
+| template <typename... args\> <br>const [Options](/documentation/code/classes/classgambit_1_1options/) | **[getOptions](/documentation/code/classes/classgambit_1_1options/#function-getoptions)**(const args &... keys) const<br>Recursive options retrieval.  |
+| template <typename... args\> <br>YAML::Node | **[getNode](/documentation/code/classes/classgambit_1_1options/#function-getnode)**(const args &... keys) const<br>Retrieve raw [YAML](/documentation/code/namespaces/namespaceyaml/) node.  |
+| template <typename... args\> <br>YAML::Node | **[loadFromFile](/documentation/code/classes/classgambit_1_1options/#function-loadfromfile)**(const args &... keys) const<br>Get [YAML](/documentation/code/namespaces/namespaceyaml/) node from file.  |
+| YAML::const_iterator | **[begin](/documentation/code/classes/classgambit_1_1options/#function-begin)**() const<br>Return begin and end of options.  |
+| YAML::const_iterator | **[end](/documentation/code/classes/classgambit_1_1options/#function-end)**() const |
 
 ## Detailed Description
 
@@ -211,4 +211,4 @@ inline YAML::const_iterator end() const
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

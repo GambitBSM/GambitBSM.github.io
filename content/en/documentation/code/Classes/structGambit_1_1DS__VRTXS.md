@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< [Fdouble_complex](/documentation/code/classes/classgambit_1_1fcomplext/), 1, 50, 1, 50, 1, 50 > | **[gl](/documentation/code/classes/structgambit_1_1ds__vrtxs/#variable-gambitds-vrtxs-gl)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< [Fdouble_complex](/documentation/code/classes/classgambit_1_1fcomplext/), 1, 50, 1, 50, 1, 50 > | **[gr](/documentation/code/classes/structgambit_1_1ds__vrtxs/#variable-gambitds-vrtxs-gr)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< [Fdouble_complex](/documentation/code/classes/classgambit_1_1fcomplext/), 1, 50, 1, 50, 1, 50 > | **[gl](/documentation/code/classes/structgambit_1_1ds__vrtxs/#variable-gl)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< [Fdouble_complex](/documentation/code/classes/classgambit_1_1fcomplext/), 1, 50, 1, 50, 1, 50 > | **[gr](/documentation/code/classes/structgambit_1_1ds__vrtxs/#variable-gr)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ Farray< Fdouble_complex, 1, 50, 1, 50, 1, 50 > gr;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

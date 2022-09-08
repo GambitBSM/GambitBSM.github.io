@@ -13,10 +13,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[STRINGIFY](/documentation/code/files/stringify_8hpp/#define-stringify-hpp-stringify)**(X)  |
-|  | **[STRINGIFY2](/documentation/code/files/stringify_8hpp/#define-stringify-hpp-stringify2)**(X)  |
-|  | **[SAFE_STRINGIFY](/documentation/code/files/stringify_8hpp/#define-stringify-hpp-safe-stringify)**(...) <br>Stringification macros that can stringify arguments with commas.  |
-|  | **[SAFE_STRINGIFY2](/documentation/code/files/stringify_8hpp/#define-stringify-hpp-safe-stringify2)**(...)  |
+|  | **[STRINGIFY](/documentation/code/files/stringify_8hpp/#define-stringify)**(X)  |
+|  | **[STRINGIFY2](/documentation/code/files/stringify_8hpp/#define-stringify2)**(X)  |
+|  | **[SAFE_STRINGIFY](/documentation/code/files/stringify_8hpp/#define-safe-stringify)**(...) <br>Stringification macros that can stringify arguments with commas.  |
+|  | **[SAFE_STRINGIFY2](/documentation/code/files/stringify_8hpp/#define-safe-stringify2)**(...)  |
 
 ## Detailed Description
 
@@ -136,4 +136,4 @@ Stringification macros that can stringify arguments with commas.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

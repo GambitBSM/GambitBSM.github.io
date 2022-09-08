@@ -17,15 +17,15 @@ Specialisation of traits class needed to inform base spectrum class of the Model
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [SpectrumContents::MSSM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1mssm/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/#typedef-gambitspectraits-mssmsimplespec-contents)**  |
-| typedef [MSSMea](/documentation/code/classes/classgambit_1_1mssmea/) | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/#typedef-gambitspectraits-mssmsimplespec-model)**  |
-| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/#typedef-gambitspectraits-mssmsimplespec-input)**  |
+| typedef [SpectrumContents::MSSM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1mssm/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/#typedef-contents)**  |
+| typedef [MSSMea](/documentation/code/classes/classgambit_1_1mssmea/) | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/#typedef-model)**  |
+| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/#typedef-input)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/#function-gambitspectraits-mssmsimplespec-name)**() |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/#function-name)**() |
 
 ## Public Types Documentation
 
@@ -61,4 +61,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

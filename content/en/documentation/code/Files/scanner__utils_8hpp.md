@@ -54,15 +54,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[scan_err](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-err)**  |
-|  | **[scan_warn](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-warn)**  |
-|  | **[scan_end](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-end)**  |
-|  | **[scan_flush](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-flush)**  |
-|  | **[SCAN_ERR](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-err)**  |
-|  | **[SCAN_WARN](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-warn)**  |
-|  | **[SCAN_END_INTERNAL](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-end-internal)**  |
-|  | **[SCAN_END](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-end)**  |
-|  | **[SCAN_FLUSH](/documentation/code/files/scanner__utils_8hpp/#define-scanner-utils-hpp-scan-flush)**  |
+|  | **[scan_err](/documentation/code/files/scanner__utils_8hpp/#define-scan-err)**  |
+|  | **[scan_warn](/documentation/code/files/scanner__utils_8hpp/#define-scan-warn)**  |
+|  | **[scan_end](/documentation/code/files/scanner__utils_8hpp/#define-scan-end)**  |
+|  | **[scan_flush](/documentation/code/files/scanner__utils_8hpp/#define-scan-flush)**  |
+|  | **[SCAN_ERR](/documentation/code/files/scanner__utils_8hpp/#define-scan-err)**  |
+|  | **[SCAN_WARN](/documentation/code/files/scanner__utils_8hpp/#define-scan-warn)**  |
+|  | **[SCAN_END_INTERNAL](/documentation/code/files/scanner__utils_8hpp/#define-scan-end-internal)**  |
+|  | **[SCAN_END](/documentation/code/files/scanner__utils_8hpp/#define-scan-end)**  |
+|  | **[SCAN_FLUSH](/documentation/code/files/scanner__utils_8hpp/#define-scan-flush)**  |
 
 ## Detailed Description
 
@@ -915,4 +915,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

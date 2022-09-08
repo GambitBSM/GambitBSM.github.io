@@ -15,12 +15,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| char[20] | **[type](/documentation/code/classes/structgambit_1_1obsname/#variable-gambitobsname-type)**  |
-| char[20] | **[decay](/documentation/code/classes/structgambit_1_1obsname/#variable-gambitobsname-decay)**  |
-| double | **[low](/documentation/code/classes/structgambit_1_1obsname/#variable-gambitobsname-low)**  |
-| double | **[high](/documentation/code/classes/structgambit_1_1obsname/#variable-gambitobsname-high)**  |
-| char[50] | **[other](/documentation/code/classes/structgambit_1_1obsname/#variable-gambitobsname-other)**  |
-| char[100] | **[name](/documentation/code/classes/structgambit_1_1obsname/#variable-gambitobsname-name)**  |
+| char[20] | **[type](/documentation/code/classes/structgambit_1_1obsname/#variable-type)**  |
+| char[20] | **[decay](/documentation/code/classes/structgambit_1_1obsname/#variable-decay)**  |
+| double | **[low](/documentation/code/classes/structgambit_1_1obsname/#variable-low)**  |
+| double | **[high](/documentation/code/classes/structgambit_1_1obsname/#variable-high)**  |
+| char[50] | **[other](/documentation/code/classes/structgambit_1_1obsname/#variable-other)**  |
+| char[100] | **[name](/documentation/code/classes/structgambit_1_1obsname/#variable-name)**  |
 
 ## Public Attributes Documentation
 
@@ -68,4 +68,4 @@ char[100] name;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

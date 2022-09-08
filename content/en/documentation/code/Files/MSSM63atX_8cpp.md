@@ -19,9 +19,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PARENT](/documentation/code/files/mssm63atx_8cpp/#define-mssm63atx-cpp-parent)** <br>Translation function definitions.  |
-|  | **[MODEL](/documentation/code/files/mssm63atx_8cpp/#define-mssm63atx-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/mssm63atx_8cpp/#define-mssm63atx-cpp-model)**  |
+|  | **[PARENT](/documentation/code/files/mssm63atx_8cpp/#define-parent)** <br>Translation function definitions.  |
+|  | **[MODEL](/documentation/code/files/mssm63atx_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/mssm63atx_8cpp/#define-model)**  |
 
 
 
@@ -144,4 +144,4 @@ void MODEL_NAMESPACE::MSSM63atMSUSY_to_MSSM63atQ (const ModelParameters &myP, Mo
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

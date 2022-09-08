@@ -25,7 +25,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[LOAD_SCANNER_FUNCTION](/documentation/code/files/container__factory_8hpp/#define-container-factory-hpp-load-scanner-function)**(tag, ...)  |
+|  | **[LOAD_SCANNER_FUNCTION](/documentation/code/files/container__factory_8hpp/#define-load-scanner-function)**(tag, ...)  |
 
 ## Detailed Description
 
@@ -157,4 +157,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:52 +0000
+Updated on 2022-09-08 at 02:23:04 +0000

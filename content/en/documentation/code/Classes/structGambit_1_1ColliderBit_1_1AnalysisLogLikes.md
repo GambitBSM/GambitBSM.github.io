@@ -17,17 +17,17 @@ Container for loglike information for an analysis.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#function-gambitcolliderbitanalysisloglikes-analysisloglikes)**() |
+| | **[AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#function-analysisloglikes)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< std::string, int > | **[sr_indices](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-gambitcolliderbitanalysisloglikes-sr-indices)**  |
-| std::map< std::string, double > | **[sr_loglikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-gambitcolliderbitanalysisloglikes-sr-loglikes)**  |
-| std::string | **[combination_sr_label](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-gambitcolliderbitanalysisloglikes-combination-sr-label)**  |
-| int | **[combination_sr_index](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-gambitcolliderbitanalysisloglikes-combination-sr-index)**  |
-| double | **[combination_loglike](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-gambitcolliderbitanalysisloglikes-combination-loglike)**  |
+| std::map< std::string, int > | **[sr_indices](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-sr-indices)**  |
+| std::map< std::string, double > | **[sr_loglikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-sr-loglikes)**  |
+| std::string | **[combination_sr_label](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-sr-label)**  |
+| int | **[combination_sr_index](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-sr-index)**  |
+| double | **[combination_loglike](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-loglike)**  |
 
 ## Public Functions Documentation
 
@@ -77,4 +77,4 @@ double combination_loglike;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

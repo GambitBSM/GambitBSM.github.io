@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[valA](/documentation/code/classes/structgambit_1_1darkbit_1_1wstruct/#variable-gambitdarkbitwstruct-vala)**  |
-| double | **[valB](/documentation/code/classes/structgambit_1_1darkbit_1_1wstruct/#variable-gambitdarkbitwstruct-valb)**  |
+| double | **[valA](/documentation/code/classes/structgambit_1_1darkbit_1_1wstruct/#variable-vala)**  |
+| double | **[valB](/documentation/code/classes/structgambit_1_1darkbit_1_1wstruct/#variable-valb)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ double valB;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

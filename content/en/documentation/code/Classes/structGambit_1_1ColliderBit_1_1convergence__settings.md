@@ -17,10 +17,10 @@ Type for holding Monte Carlo convergence settings.
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[target_stat](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-gambitcolliderbitconvergence-settings-target-stat)**  |
-| bool | **[stop_at_sys](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-gambitcolliderbitconvergence-settings-stop-at-sys)**  |
-| bool | **[all_analyses_must_converge](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-gambitcolliderbitconvergence-settings-all-analyses-must-converge)**  |
-| bool | **[all_SR_must_converge](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-gambitcolliderbitconvergence-settings-all-sr-must-converge)**  |
+| double | **[target_stat](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-target-stat)**  |
+| bool | **[stop_at_sys](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-stop-at-sys)**  |
+| bool | **[all_analyses_must_converge](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-all-analyses-must-converge)**  |
+| bool | **[all_SR_must_converge](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-all-sr-must-converge)**  |
 
 ## Public Attributes Documentation
 
@@ -54,4 +54,4 @@ bool all_SR_must_converge;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

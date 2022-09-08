@@ -18,17 +18,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Parametrised_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-parametrised-ps)**() |
-| | **[~Parametrised_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-parametrised-ps)**() |
-| void | **[set_N_pivot](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-set-n-pivot)**(double npiv) |
-| void | **[set_n_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-set-n-s)**(double ns) |
-| void | **[set_ln10A_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-set-ln10a-s)**(double ln10As) |
-| void | **[set_r](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-set-r)**(double rr) |
-| double | **[get_N_pivot](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-get-n-pivot)**() |
-| double | **[get_n_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-get-n-s)**() |
-| double | **[get_ln10A_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-get-ln10a-s)**() |
-| double | **[get_r](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-get-r)**() |
-| [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-gambit-map-str-dbl) | **[get_parametrised_ps_map](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-gambitcosmobitparametrised-ps-get-parametrised-ps-map)**()<br>return members as str to double map for printing  |
+| | **[Parametrised_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-parametrised-ps)**() |
+| | **[~Parametrised_ps](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-parametrised-ps)**() |
+| void | **[set_N_pivot](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-n-pivot)**(double npiv) |
+| void | **[set_n_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-n-s)**(double ns) |
+| void | **[set_ln10A_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-ln10a-s)**(double ln10As) |
+| void | **[set_r](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-set-r)**(double rr) |
+| double | **[get_N_pivot](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-n-pivot)**() |
+| double | **[get_n_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-n-s)**() |
+| double | **[get_ln10A_s](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-ln10a-s)**() |
+| double | **[get_r](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-r)**() |
+| [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) | **[get_parametrised_ps_map](/documentation/code/classes/classgambit_1_1cosmobit_1_1parametrised__ps/#function-get-parametrised-ps-map)**()<br>return members as str to double map for printing  |
 
 ## Detailed Description
 
@@ -133,4 +133,4 @@ return members as str to double map for printing
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

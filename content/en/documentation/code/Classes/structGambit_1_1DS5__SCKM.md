@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[ckms12](/documentation/code/classes/structgambit_1_1ds5__sckm/#variable-gambitds5-sckm-ckms12)**  |
-| Fdouble | **[ckms23](/documentation/code/classes/structgambit_1_1ds5__sckm/#variable-gambitds5-sckm-ckms23)**  |
-| Fdouble | **[ckms13](/documentation/code/classes/structgambit_1_1ds5__sckm/#variable-gambitds5-sckm-ckms13)**  |
-| Fdouble | **[ckmdelta](/documentation/code/classes/structgambit_1_1ds5__sckm/#variable-gambitds5-sckm-ckmdelta)**  |
+| Fdouble | **[ckms12](/documentation/code/classes/structgambit_1_1ds5__sckm/#variable-ckms12)**  |
+| Fdouble | **[ckms23](/documentation/code/classes/structgambit_1_1ds5__sckm/#variable-ckms23)**  |
+| Fdouble | **[ckms13](/documentation/code/classes/structgambit_1_1ds5__sckm/#variable-ckms13)**  |
+| Fdouble | **[ckmdelta](/documentation/code/classes/structgambit_1_1ds5__sckm/#variable-ckmdelta)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ Fdouble ckmdelta;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

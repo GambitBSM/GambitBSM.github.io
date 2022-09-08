@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[sntautot2](/documentation/code/classes/structgambit_1_1sd__sntauwidth__type/#variable-gambitsd-sntauwidth-type-sntautot2)**  |
+| Fdouble | **[sntautot2](/documentation/code/classes/structgambit_1_1sd__sntauwidth__type/#variable-sntautot2)**  |
 
 ## Public Attributes Documentation
 
@@ -28,4 +28,4 @@ Fdouble sntautot2;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

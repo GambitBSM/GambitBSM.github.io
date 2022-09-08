@@ -15,41 +15,41 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-modelparameters)**()<br>Default constructor.  |
-| | **[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-modelparameters)**(const std::vector< std::string > & paramlist)<br>Constructor using vector of strings.  |
-| | **[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-modelparameters)**(const char ** paramlist)<br>Constructor using array of char arrays.  |
-| double | **[getValue](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-getvalue)**(std::string const & inkey) const<br>Get value of named parameter.  |
-| bool | **[has](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-has)**(const std::string & inkey) const<br>Check if a parameter exists in this object.  |
-| const std::map< std::string, double > & | **[getValues](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-getvalues)**() const<br>Get values of all parameters.  |
-| std::map< std::string, double >::const_iterator | **[begin](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-begin)**() const<br>Get a const iterator to the first parameter map entry.  |
-| std::map< std::string, double >::const_iterator | **[end](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-end)**() const<br>Get a const iterator to the last parameter map entry.  |
-| int | **[getNumberOfPars](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-getnumberofpars)**() const<br>Get number of parameters stored in this object.  |
-| const double & | **[operator[]](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-operator)**(std::string const & inkey) const<br>Get parameter value using bracket operator.  |
-| const double & | **[at](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-at)**(std::string const & inkey) const<br>Get parameter value using 'at' syntax.  |
-| void | **[setValue](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-setvalue)**(std::string const & inkey, double const & value)<br>Set single parameter value.  |
-| void | **[setValues](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-setvalues)**(std::map< std::string, double > const & params_map, bool missing_is_error =true)<br>Set many parameter values using a map.  |
-| void | **[setValues](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-setvalues)**([ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) const & donor, bool missing_is_error =true)<br>Set many parameter values using another [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) object.  |
-| std::vector< std::string > | **[getKeys](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-getkeys)**() const<br>Get parameter keys (names), probably for external iteration.  |
-| void | **[print](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-print)**() const<br>Dump parameter names and values to stdout (should be for debugging only)  |
-| void | **[_definePar](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-definepar)**(const std::string & newkey)<br>Define a parameter with name, value (i.e. add to internal map). Value is initialised to zero.  |
-| void | **[_definePars](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-definepars)**(const std::vector< std::string > & v)<br>Define many new parameters at once via a vector of names.  |
-| void | **[_definePars](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-definepars)**(const char ** array)<br>Define many new parameters at once via an array of char arrays.  |
-| std::string | **[getModelName](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-getmodelname)**() const<br>Getters/setters for model and output names.  |
-| std::string | **[getOutputName](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-getoutputname)**() const |
-| void | **[setModelName](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-setmodelname)**(const std::string & in) |
-| void | **[setOutputName](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-setoutputname)**(const std::string & in) |
+| | **[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/#function-modelparameters)**()<br>Default constructor.  |
+| | **[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/#function-modelparameters)**(const std::vector< std::string > & paramlist)<br>Constructor using vector of strings.  |
+| | **[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/#function-modelparameters)**(const char ** paramlist)<br>Constructor using array of char arrays.  |
+| double | **[getValue](/documentation/code/classes/classgambit_1_1modelparameters/#function-getvalue)**(std::string const & inkey) const<br>Get value of named parameter.  |
+| bool | **[has](/documentation/code/classes/classgambit_1_1modelparameters/#function-has)**(const std::string & inkey) const<br>Check if a parameter exists in this object.  |
+| const std::map< std::string, double > & | **[getValues](/documentation/code/classes/classgambit_1_1modelparameters/#function-getvalues)**() const<br>Get values of all parameters.  |
+| std::map< std::string, double >::const_iterator | **[begin](/documentation/code/classes/classgambit_1_1modelparameters/#function-begin)**() const<br>Get a const iterator to the first parameter map entry.  |
+| std::map< std::string, double >::const_iterator | **[end](/documentation/code/classes/classgambit_1_1modelparameters/#function-end)**() const<br>Get a const iterator to the last parameter map entry.  |
+| int | **[getNumberOfPars](/documentation/code/classes/classgambit_1_1modelparameters/#function-getnumberofpars)**() const<br>Get number of parameters stored in this object.  |
+| const double & | **[operator[]](/documentation/code/classes/classgambit_1_1modelparameters/#function-operator)**(std::string const & inkey) const<br>Get parameter value using bracket operator.  |
+| const double & | **[at](/documentation/code/classes/classgambit_1_1modelparameters/#function-at)**(std::string const & inkey) const<br>Get parameter value using 'at' syntax.  |
+| void | **[setValue](/documentation/code/classes/classgambit_1_1modelparameters/#function-setvalue)**(std::string const & inkey, double const & value)<br>Set single parameter value.  |
+| void | **[setValues](/documentation/code/classes/classgambit_1_1modelparameters/#function-setvalues)**(std::map< std::string, double > const & params_map, bool missing_is_error =true)<br>Set many parameter values using a map.  |
+| void | **[setValues](/documentation/code/classes/classgambit_1_1modelparameters/#function-setvalues)**([ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) const & donor, bool missing_is_error =true)<br>Set many parameter values using another [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) object.  |
+| std::vector< std::string > | **[getKeys](/documentation/code/classes/classgambit_1_1modelparameters/#function-getkeys)**() const<br>Get parameter keys (names), probably for external iteration.  |
+| void | **[print](/documentation/code/classes/classgambit_1_1modelparameters/#function-print)**() const<br>Dump parameter names and values to stdout (should be for debugging only)  |
+| void | **[_definePar](/documentation/code/classes/classgambit_1_1modelparameters/#function-definepar)**(const std::string & newkey)<br>Define a parameter with name, value (i.e. add to internal map). Value is initialised to zero.  |
+| void | **[_definePars](/documentation/code/classes/classgambit_1_1modelparameters/#function-definepars)**(const std::vector< std::string > & v)<br>Define many new parameters at once via a vector of names.  |
+| void | **[_definePars](/documentation/code/classes/classgambit_1_1modelparameters/#function-definepars)**(const char ** array)<br>Define many new parameters at once via an array of char arrays.  |
+| std::string | **[getModelName](/documentation/code/classes/classgambit_1_1modelparameters/#function-getmodelname)**() const<br>Getters/setters for model and output names.  |
+| std::string | **[getOutputName](/documentation/code/classes/classgambit_1_1modelparameters/#function-getoutputname)**() const |
+| void | **[setModelName](/documentation/code/classes/classgambit_1_1modelparameters/#function-setmodelname)**(const std::string & in) |
+| void | **[setOutputName](/documentation/code/classes/classgambit_1_1modelparameters/#function-setoutputname)**(const std::string & in) |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[assert_contains](/documentation/code/classes/classgambit_1_1modelparameters/#function-gambitmodelparameters-assert-contains)**(std::string inkey) const<br>Checks if this model container holds a parameter match the supplied name.  |
+| void | **[assert_contains](/documentation/code/classes/classgambit_1_1modelparameters/#function-assert-contains)**(std::string inkey) const<br>Checks if this model container holds a parameter match the supplied name.  |
 
 ## Friends
 
 |                | Name           |
 | -------------- | -------------- |
-| std::ostream & | **[operator<<](/documentation/code/classes/classgambit_1_1modelparameters/#friend-gambitmodelparameters-operator)**(std::ostream & strm, const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & me) <br>Dump parameter names and values to stream (again for debugging only I think)  |
+| std::ostream & | **[operator<<](/documentation/code/classes/classgambit_1_1modelparameters/#friend-operator)**(std::ostream & strm, const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & me) <br>Dump parameter names and values to stream (again for debugging only I think)  |
 
 ## Public Functions Documentation
 
@@ -301,4 +301,4 @@ Dump parameter names and values to stream (again for debugging only I think)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

@@ -17,34 +17,34 @@ Simple DMEFT model object.
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[DMEFT_Lambda](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-lambda)**  |
-| double | **[DMEFT_C51](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c51)**  |
-| double | **[DMEFT_C52](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c52)**  |
-| double | **[DMEFT_C61](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c61)**  |
-| double | **[DMEFT_C62](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c62)**  |
-| double | **[DMEFT_C63](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c63)**  |
-| double | **[DMEFT_C64](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c64)**  |
-| double | **[DMEFT_C71](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c71)**  |
-| double | **[DMEFT_C72](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c72)**  |
-| double | **[DMEFT_C73](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c73)**  |
-| double | **[DMEFT_C74](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c74)**  |
-| double | **[DMEFT_C75](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c75)**  |
-| double | **[DMEFT_C76](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c76)**  |
-| double | **[DMEFT_C77](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c77)**  |
-| double | **[DMEFT_C78](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c78)**  |
-| double | **[DMEFT_C79](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c79)**  |
-| double | **[DMEFT_C710](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-c710)**  |
-| double | **[vev](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-vev)**  |
-| double | **[g1](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-g1)**  |
-| double | **[g2](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-g2)**  |
-| double | **[g3](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-g3)**  |
-| double | **[sinW2](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-sinw2)**  |
-| double[3][3] | **[Yd](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-yd)**  |
-| double[3][3] | **[Yu](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-yu)**  |
-| double[3][3] | **[Ye](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-ye)**  |
-| double | **[DMEFT_chi_Pole_Mass](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-chi-pole-mass)**  |
-| double | **[DMEFT_h0_1_Pole_Mass](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-dmeft-h0-1-pole-mass)**  |
-| double | **[mtrun](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-gambitmodelsdmeftmodel-mtrun)**  |
+| double | **[DMEFT_Lambda](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-lambda)**  |
+| double | **[DMEFT_C51](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c51)**  |
+| double | **[DMEFT_C52](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c52)**  |
+| double | **[DMEFT_C61](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c61)**  |
+| double | **[DMEFT_C62](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c62)**  |
+| double | **[DMEFT_C63](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c63)**  |
+| double | **[DMEFT_C64](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c64)**  |
+| double | **[DMEFT_C71](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c71)**  |
+| double | **[DMEFT_C72](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c72)**  |
+| double | **[DMEFT_C73](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c73)**  |
+| double | **[DMEFT_C74](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c74)**  |
+| double | **[DMEFT_C75](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c75)**  |
+| double | **[DMEFT_C76](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c76)**  |
+| double | **[DMEFT_C77](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c77)**  |
+| double | **[DMEFT_C78](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c78)**  |
+| double | **[DMEFT_C79](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c79)**  |
+| double | **[DMEFT_C710](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-c710)**  |
+| double | **[vev](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-vev)**  |
+| double | **[g1](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-g1)**  |
+| double | **[g2](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-g2)**  |
+| double | **[g3](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-g3)**  |
+| double | **[sinW2](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-sinw2)**  |
+| double[3][3] | **[Yd](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-yd)**  |
+| double[3][3] | **[Yu](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-yu)**  |
+| double[3][3] | **[Ye](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-ye)**  |
+| double | **[DMEFT_chi_Pole_Mass](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-chi-pole-mass)**  |
+| double | **[DMEFT_h0_1_Pole_Mass](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-dmeft-h0-1-pole-mass)**  |
+| double | **[mtrun](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/#variable-mtrun)**  |
 
 ## Public Attributes Documentation
 
@@ -246,4 +246,4 @@ double mtrun;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

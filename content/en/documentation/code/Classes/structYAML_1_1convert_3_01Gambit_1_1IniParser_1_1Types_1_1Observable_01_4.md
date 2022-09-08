@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/#function-yamlconvert-gambitiniparsertypesobservable-decode)**(const Node & , [Gambit::IniParser::Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & ) |
+| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/#function-decode)**(const Node & , [Gambit::IniParser::Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & ) |
 
 ## Public Functions Documentation
 
@@ -31,4 +31,4 @@ static bool decode(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

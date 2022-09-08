@@ -28,7 +28,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PDB](/documentation/code/files/spec__fptrfinder_8hpp/#define-spec-fptrfinder-hpp-pdb)**  |
+|  | **[PDB](/documentation/code/files/spec__fptrfinder_8hpp/#define-pdb)**  |
 
 ## Detailed Description
 
@@ -1105,4 +1105,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:52 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

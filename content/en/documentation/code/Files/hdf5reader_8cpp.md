@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[externGETTYPEID](/documentation/code/files/hdf5reader_8cpp/#define-hdf5reader-cpp-externgettypeid)**(r, data, i, elem)  |
-|  | **[GET_TYPE_CASES](/documentation/code/files/hdf5reader_8cpp/#define-hdf5reader-cpp-get-type-cases)**(r, data, elem)  |
+|  | **[externGETTYPEID](/documentation/code/files/hdf5reader_8cpp/#define-externgettypeid)**(r, data, i, elem)  |
+|  | **[GET_TYPE_CASES](/documentation/code/files/hdf5reader_8cpp/#define-get-type-cases)**(r, data, elem)  |
 
 ## Detailed Description
 
@@ -353,4 +353,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

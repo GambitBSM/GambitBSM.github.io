@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) | **[sminputs](/documentation/code/classes/structgambit_1_1finputs/#variable-gambitfinputs-sminputs)**  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > | **[param](/documentation/code/classes/structgambit_1_1finputs/#variable-gambitfinputs-param)**  |
-| [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > | **[options](/documentation/code/classes/structgambit_1_1finputs/#variable-gambitfinputs-options)**  |
+| [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) | **[sminputs](/documentation/code/classes/structgambit_1_1finputs/#variable-sminputs)**  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > | **[param](/documentation/code/classes/structgambit_1_1finputs/#variable-param)**  |
+| [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > | **[options](/documentation/code/classes/structgambit_1_1finputs/#variable-options)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ safe_ptr< Options > options;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

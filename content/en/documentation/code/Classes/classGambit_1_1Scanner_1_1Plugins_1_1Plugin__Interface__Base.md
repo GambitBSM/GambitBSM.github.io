@@ -17,15 +17,15 @@ Inherited by [Gambit::Scanner::Plugins::Plugin_Interface< T >](/documentation/co
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-gambitscannerpluginsplugin-interface-base-plugin-interface-base)**() |
-| YAML::Node | **[operator[]](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-gambitscannerpluginsplugin-interface-base-operator)**(const std::string & key) |
-| | **[~Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-gambitscannerpluginsplugin-interface-base-plugin-interface-base)**() |
+| | **[Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-plugin-interface-base)**() |
+| YAML::Node | **[operator[]](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-operator)**(const std::string & key) |
+| | **[~Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-plugin-interface-base)**() |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... plug_args\> <br>const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[initPlugin](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-gambitscannerpluginsplugin-interface-base-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
+| template <typename... plug_args\> <br>const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[initPlugin](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
 
 ## Public Functions Documentation
 
@@ -68,4 +68,4 @@ inline const std::map< type_index, void * > & initPlugin(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

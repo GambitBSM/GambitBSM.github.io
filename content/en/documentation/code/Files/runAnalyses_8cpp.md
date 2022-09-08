@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/runanalyses_8cpp/#define-runanalyses-cpp-debug-prefix)**  |
-|  | **[RUN_ANALYSES](/documentation/code/files/runanalyses_8cpp/#define-runanalyses-cpp-run-analyses)**(NAME, EXPERIMENT, SMEARED_EVENT_DEP) <br>Run all analyses for EXPERIMENT.  |
+|  | **[DEBUG_PREFIX](/documentation/code/files/runanalyses_8cpp/#define-debug-prefix)**  |
+|  | **[RUN_ANALYSES](/documentation/code/files/runanalyses_8cpp/#define-run-analyses)**(NAME, EXPERIMENT, SMEARED_EVENT_DEP) <br>Run all analyses for EXPERIMENT.  |
 
 ## Detailed Description
 
@@ -254,4 +254,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

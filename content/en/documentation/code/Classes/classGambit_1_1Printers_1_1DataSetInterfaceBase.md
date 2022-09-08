@@ -17,39 +17,39 @@ Wrapper object to manage a single dataset.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-datasetinterfacebase)**()<br>Constructors.  |
-| | **[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-datasetinterfacebase)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK], const bool resume, const char access) |
-| virtual | **[~DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-datasetinterfacebase)**()<br>Do cleanup (close dataset)  |
-| hid_t | **[createDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-createdataset)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK])<br>Create a (chunked) dataset.  |
-| hid_t | **[openDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-opendataset)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK])<br>Open an existing dataset.  |
-| void | **[closeDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-closedataset)**()<br>Close an open dataset.  |
-| void | **[extend_dset](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-extend-dset)**(const unsigned long i)<br>Extend dataset to nearest multiple of CHUNKLENGTH above supplied length.  |
-| std::string | **[get_myname](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-get-myname)**() const |
-| std::size_t | **[get_dsetrank](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-get-dsetrank)**() const |
-| std::size_t | **[get_chunklength](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-get-chunklength)**() const |
-| const hsize_t * | **[get_maxdsetdims](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-get-maxdsetdims)**() const |
-| const hsize_t * | **[get_chunkdims](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-get-chunkdims)**() const |
-| const hsize_t * | **[get_slicedims](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-get-slicedims)**() const |
-| unsigned long | **[get_nextemptyslab](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-get-nextemptyslab)**() const |
-| unsigned long | **[dset_length](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-dset-length)**() const |
-| char | **[access_mode](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-access-mode)**() const |
-| void | **[reset_nextemptyslab](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-reset-nextemptyslab)**() |
-| hsize_t * | **[dsetdims](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-dsetdims)**() |
+| | **[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-datasetinterfacebase)**()<br>Constructors.  |
+| | **[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-datasetinterfacebase)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK], const bool resume, const char access) |
+| virtual | **[~DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-datasetinterfacebase)**()<br>Do cleanup (close dataset)  |
+| hid_t | **[createDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-createdataset)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK])<br>Create a (chunked) dataset.  |
+| hid_t | **[openDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-opendataset)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK])<br>Open an existing dataset.  |
+| void | **[closeDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-closedataset)**()<br>Close an open dataset.  |
+| void | **[extend_dset](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-extend-dset)**(const unsigned long i)<br>Extend dataset to nearest multiple of CHUNKLENGTH above supplied length.  |
+| std::string | **[get_myname](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-get-myname)**() const |
+| std::size_t | **[get_dsetrank](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-get-dsetrank)**() const |
+| std::size_t | **[get_chunklength](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-get-chunklength)**() const |
+| const hsize_t * | **[get_maxdsetdims](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-get-maxdsetdims)**() const |
+| const hsize_t * | **[get_chunkdims](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-get-chunkdims)**() const |
+| const hsize_t * | **[get_slicedims](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-get-slicedims)**() const |
+| unsigned long | **[get_nextemptyslab](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-get-nextemptyslab)**() const |
+| unsigned long | **[dset_length](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-dset-length)**() const |
+| char | **[access_mode](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-access-mode)**() const |
+| void | **[reset_nextemptyslab](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-reset-nextemptyslab)**() |
+| hsize_t * | **[dsetdims](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-dsetdims)**() |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| hid_t | **[get_dset_id](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-gambitprintersdatasetinterfacebase-get-dset-id)**() const |
+| hid_t | **[get_dset_id](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-get-dset-id)**() const |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const hid_t | **[hdftype_id](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#variable-gambitprintersdatasetinterfacebase-hdftype-id)** <br>[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/) class member definitions.  |
-| hid_t | **[dset_id](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#variable-gambitprintersdatasetinterfacebase-dset-id)**  |
-| unsigned long | **[dsetnextemptyslab](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#variable-gambitprintersdatasetinterfacebase-dsetnextemptyslab)**  |
-| unsigned long | **[virtualwriteposition](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#variable-gambitprintersdatasetinterfacebase-virtualwriteposition)**  |
+| const hid_t | **[hdftype_id](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#variable-hdftype-id)** <br>[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/) class member definitions.  |
+| hid_t | **[dset_id](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#variable-dset-id)**  |
+| unsigned long | **[dsetnextemptyslab](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#variable-dsetnextemptyslab)**  |
+| unsigned long | **[virtualwriteposition](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#variable-virtualwriteposition)**  |
 
 ## Detailed Description
 
@@ -259,4 +259,4 @@ unsigned long virtualwriteposition;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

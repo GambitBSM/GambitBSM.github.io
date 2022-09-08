@@ -13,19 +13,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-parent)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-parent)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-parent)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-model)**  |
-|  | **[INFLATION_MODEL_TO_POWER_LAW](/documentation/code/files/cosmomodels_8cpp/#define-cosmomodels-cpp-inflation-model-to-power-law)**(MODEL)  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-parent)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-parent)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-parent)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
+|  | **[INFLATION_MODEL_TO_POWER_LAW](/documentation/code/files/cosmomodels_8cpp/#define-inflation-model-to-power-law)**(MODEL)  |
 
 
 
@@ -673,4 +673,4 @@ INFLATION_MODEL_TO_POWER_LAW(Inflation_InstReh_1Starobinsky)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

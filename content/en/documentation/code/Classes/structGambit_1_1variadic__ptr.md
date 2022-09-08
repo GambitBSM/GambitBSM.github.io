@@ -17,7 +17,7 @@ Type redefinition to get around icc compiler bugs.  [More...](#detailed-descript
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef TYPE(*)(ARGS...,...) | **[type](/documentation/code/classes/structgambit_1_1variadic__ptr/#typedef-gambitvariadic-ptr-type)**  |
+| typedef TYPE(*)(ARGS...,...) | **[type](/documentation/code/classes/structgambit_1_1variadic__ptr/#typedef-type)**  |
 
 ## Detailed Description
 
@@ -39,4 +39,4 @@ typedef TYPE(* Gambit::variadic_ptr< TYPE, ARGS >::type) (ARGS...,...);
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

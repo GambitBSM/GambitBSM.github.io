@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [__is_vector__](/documentation/code/classes/structgambit_1_1____is__vector____/)< typenameremove_all< T >::type >::type | **[type](/documentation/code/classes/structgambit_1_1is__vector/#typedef-gambitis-vector-type)**  |
+| typedef [__is_vector__](/documentation/code/classes/structgambit_1_1____is__vector____/)< typenameremove_all< T >::type >::type | **[type](/documentation/code/classes/structgambit_1_1is__vector/#typedef-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1is__vector/#variable-gambitis-vector-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1is__vector/#variable-value)**  |
 
 ## Detailed Description
 
@@ -50,4 +50,4 @@ static const bool value = __is_vector__<typename remove_all<T>::type>::value;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

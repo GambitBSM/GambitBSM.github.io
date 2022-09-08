@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1is__all__member__internal_3_01type_00_01void_07_08_4/#variable-gambitis-all-member-internal-type-void-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1is__all__member__internal_3_01type_00_01void_07_08_4/#variable-value)**  |
 
 ## Detailed Description
 
@@ -35,4 +35,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

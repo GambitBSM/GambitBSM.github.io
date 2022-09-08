@@ -19,46 +19,46 @@ Inherited by [Gambit::Printers::VertexBufferNumeric1D< T, CHUNKLENGTH >](/docume
 
 |                | Name           |
 | -------------- | -------------- |
-| char | **[access_mode](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-access-mode)**() const<br>Buffer status getters.  |
-| bool | **[sync_buffer_is_full](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-sync-buffer-is-full)**() const |
-| bool | **[sync_buffer_is_empty](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-sync-buffer-is-empty)**() const |
-| bool | **[is_synchronised](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-is-synchronised)**() const |
-| bool | **[is_silenced](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-is-silenced)**() const |
-| bool | **[resume_mode](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-resume-mode)**() const |
-| bool | **[MPI_mode](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-mpi-mode)**() const |
-| unsigned int | **[get_head_position](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-get-head-position)**() const |
-| | **[VertexBufferBase](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-vertexbufferbase)**() |
-| | **[VertexBufferBase](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-vertexbufferbase)**(const std::string & l, const int vID, const uint i, const bool sync, const bool sil, const bool r, const bool mode, const char a) |
-| virtual | **[~VertexBufferBase](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-vertexbufferbase)**() |
-| int | **[get_vertexID](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-get-vertexid)**() const |
-| uint | **[get_index](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-get-index)**() const |
-| std::string | **[get_label](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-get-label)**() const |
-| void | **[MPImode_only](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-mpimode-only)**(std::string local_info) |
-| virtual unsigned long | **[dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-dset-head-pos)**() =0 |
-| virtual void | **[sync_report](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-sync-report)**() =0 |
-| virtual void | **[flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-flush)**() =0 |
-| virtual void | **[RA_flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-ra-flush)**(const std::map< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/), ulong > & PPID_to_dsetindex) =0 |
-| virtual void | **[finalise](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-finalise)**() =0 |
-| virtual std::size_t | **[postponed_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-postponed-ra-queue-length)**() =0 |
-| virtual uint | **[get_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-get-ra-queue-length)**() =0 |
-| virtual void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-reset)**(bool force =false) =0 |
-| virtual void | **[skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-skip-append)**() =0 |
-| virtual void | **[N_skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-n-skip-append)**(ulong N) =0 |
-| virtual ulong | **[get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-get-dataset-length)**() =0 |
-| bool | **[donepoint](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-donepoint)**() |
-| void | **[set_donepoint](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-set-donepoint)**(bool flag) |
-| void | **[move_head_to_next_slot](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-move-head-to-next-slot)**() |
-| void | **[fast_forward](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-fast-forward)**(long target_pos) |
-| void | **[reset_head](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-reset-head)**() |
-| void | **[error_if_done](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-error-if-done)**() |
-| virtual void | **[synchronise_output_to_position](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-gambitprintersvertexbufferbase-synchronise-output-to-position)**(const unsigned long i) =0 |
+| char | **[access_mode](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-access-mode)**() const<br>Buffer status getters.  |
+| bool | **[sync_buffer_is_full](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-sync-buffer-is-full)**() const |
+| bool | **[sync_buffer_is_empty](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-sync-buffer-is-empty)**() const |
+| bool | **[is_synchronised](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-is-synchronised)**() const |
+| bool | **[is_silenced](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-is-silenced)**() const |
+| bool | **[resume_mode](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-resume-mode)**() const |
+| bool | **[MPI_mode](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-mpi-mode)**() const |
+| unsigned int | **[get_head_position](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-get-head-position)**() const |
+| | **[VertexBufferBase](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-vertexbufferbase)**() |
+| | **[VertexBufferBase](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-vertexbufferbase)**(const std::string & l, const int vID, const uint i, const bool sync, const bool sil, const bool r, const bool mode, const char a) |
+| virtual | **[~VertexBufferBase](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-vertexbufferbase)**() |
+| int | **[get_vertexID](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-get-vertexid)**() const |
+| uint | **[get_index](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-get-index)**() const |
+| std::string | **[get_label](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-get-label)**() const |
+| void | **[MPImode_only](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-mpimode-only)**(std::string local_info) |
+| virtual unsigned long | **[dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-dset-head-pos)**() =0 |
+| virtual void | **[sync_report](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-sync-report)**() =0 |
+| virtual void | **[flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-flush)**() =0 |
+| virtual void | **[RA_flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-ra-flush)**(const std::map< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/), ulong > & PPID_to_dsetindex) =0 |
+| virtual void | **[finalise](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-finalise)**() =0 |
+| virtual std::size_t | **[postponed_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-postponed-ra-queue-length)**() =0 |
+| virtual uint | **[get_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-get-ra-queue-length)**() =0 |
+| virtual void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-reset)**(bool force =false) =0 |
+| virtual void | **[skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-skip-append)**() =0 |
+| virtual void | **[N_skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-n-skip-append)**(ulong N) =0 |
+| virtual ulong | **[get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-get-dataset-length)**() =0 |
+| bool | **[donepoint](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-donepoint)**() |
+| void | **[set_donepoint](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-set-donepoint)**(bool flag) |
+| void | **[move_head_to_next_slot](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-move-head-to-next-slot)**() |
+| void | **[fast_forward](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-fast-forward)**(long target_pos) |
+| void | **[reset_head](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-reset-head)**() |
+| void | **[error_if_done](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-error-if-done)**() |
+| virtual void | **[synchronise_output_to_position](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#function-synchronise-output-to-position)**(const unsigned long i) =0 |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[sync_buffer_full](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#variable-gambitprintersvertexbufferbase-sync-buffer-full)** <br>flag to indicate if the sync buffer is full (and ready for sending/dumping)  |
-| bool | **[sync_buffer_empty](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#variable-gambitprintersvertexbufferbase-sync-buffer-empty)**  |
+| bool | **[sync_buffer_full](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#variable-sync-buffer-full)** <br>flag to indicate if the sync buffer is full (and ready for sending/dumping)  |
+| bool | **[sync_buffer_empty](/documentation/code/classes/classgambit_1_1printers_1_1vertexbufferbase/#variable-sync-buffer-empty)**  |
 
 ## Public Functions Documentation
 
@@ -189,7 +189,7 @@ virtual unsigned long dset_head_pos() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-gambitprintersvertexbuffernumeric1d-hdf5-dset-head-pos), [Gambit::Printers::VertexBufferNumeric1D::dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-dset-head-pos), [Gambit::Printers::VertexBufferNumeric1D::dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-dset-head-pos)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-dset-head-pos), [Gambit::Printers::VertexBufferNumeric1D::dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-dset-head-pos), [Gambit::Printers::VertexBufferNumeric1D::dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-dset-head-pos)
 
 
 ### function sync_report
@@ -199,7 +199,7 @@ virtual void sync_report() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::sync_report](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-gambitprintersvertexbuffernumeric1d-hdf5-sync-report)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::sync_report](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-sync-report)
 
 
 ### function flush
@@ -209,7 +209,7 @@ virtual void flush() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-flush), [Gambit::Printers::VertexBufferNumeric1D::flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-flush)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-flush), [Gambit::Printers::VertexBufferNumeric1D::flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-flush)
 
 
 ### function RA_flush
@@ -221,7 +221,7 @@ virtual void RA_flush(
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::RA_flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-ra-flush), [Gambit::Printers::VertexBufferNumeric1D::RA_flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-ra-flush)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::RA_flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-ra-flush), [Gambit::Printers::VertexBufferNumeric1D::RA_flush](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-ra-flush)
 
 
 ### function finalise
@@ -231,7 +231,7 @@ virtual void finalise() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::finalise](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-gambitprintersvertexbuffernumeric1d-hdf5-finalise)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::finalise](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-finalise)
 
 
 ### function postponed_RA_queue_length
@@ -241,7 +241,7 @@ virtual std::size_t postponed_RA_queue_length() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::postponed_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-gambitprintersvertexbuffernumeric1d-hdf5-postponed-ra-queue-length)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::postponed_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-postponed-ra-queue-length)
 
 
 ### function get_RA_queue_length
@@ -251,7 +251,7 @@ virtual uint get_RA_queue_length() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::get_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-get-ra-queue-length), [Gambit::Printers::VertexBufferNumeric1D::get_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-get-ra-queue-length)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::get_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-get-ra-queue-length), [Gambit::Printers::VertexBufferNumeric1D::get_RA_queue_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-get-ra-queue-length)
 
 
 ### function reset
@@ -263,7 +263,7 @@ virtual void reset(
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::reset](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-gambitprintersvertexbuffernumeric1d-hdf5-reset)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::reset](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-reset)
 
 
 ### function skip_append
@@ -273,7 +273,7 @@ virtual void skip_append() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-skip-append), [Gambit::Printers::VertexBufferNumeric1D::skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-skip-append)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-skip-append), [Gambit::Printers::VertexBufferNumeric1D::skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-skip-append)
 
 
 ### function N_skip_append
@@ -285,7 +285,7 @@ virtual void N_skip_append(
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::N_skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-n-skip-append), [Gambit::Printers::VertexBufferNumeric1D::N_skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-gambitprintersvertexbuffernumeric1d-n-skip-append)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D::N_skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-n-skip-append), [Gambit::Printers::VertexBufferNumeric1D::N_skip_append](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d/#function-n-skip-append)
 
 
 Skip several/many positions NOTE! This is meant for initialising new buffers to the correct position. If buffer overflows it may get cleared without data being written, so don't use this in other contexts. 
@@ -298,7 +298,7 @@ virtual ulong get_dataset_length() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-gambitprintersvertexbuffernumeric1d-hdf5-get-dataset-length)
+**Reimplemented by**: [Gambit::Printers::VertexBufferNumeric1D_HDF5::get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-get-dataset-length)
 
 
 ### function donepoint
@@ -375,4 +375,4 @@ bool sync_buffer_empty = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

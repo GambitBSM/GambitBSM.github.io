@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [SpectrumContents::MSSM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1mssm/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/#typedef-gambitspectraits-specbitmssmspec-mi-contents)**  |
-| typedef MI::Model | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/#typedef-gambitspectraits-specbitmssmspec-mi-model)**  |
-| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/#typedef-gambitspectraits-specbitmssmspec-mi-input)**  |
+| typedef [SpectrumContents::MSSM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1mssm/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/#typedef-contents)**  |
+| typedef MI::Model | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/#typedef-model)**  |
+| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/#typedef-input)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/#function-gambitspectraits-specbitmssmspec-mi-name)**() |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mssmspec_3_01mi_01_4_01_4/#function-name)**() |
 
 ## Detailed Description
 
@@ -72,4 +72,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

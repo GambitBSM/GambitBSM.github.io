@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[USE_COMMON_PRINT_OVERLOAD](/documentation/code/files/common__print__overloads_8hpp/#define-common-print-overloads-hpp-use-common-print-overload)**(PRINTER, TYPE) <br>Macro to call to activate a specific common print overload.  |
+|  | **[USE_COMMON_PRINT_OVERLOAD](/documentation/code/files/common__print__overloads_8hpp/#define-use-common-print-overload)**(PRINTER, TYPE) <br>Macro to call to activate a specific common print overload.  |
 
 ## Detailed Description
 
@@ -248,4 +248,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

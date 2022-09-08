@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[ObjectivesBit](/documentation/code/files/dir_7dfe9eaad9a1d90fb409b25558cd7c79/#dir-gambit-objectivesbit)**  |
+| **[ObjectivesBit](/documentation/code/files/dir_7dfe9eaad9a1d90fb409b25558cd7c79/#dir-objectivesbit)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

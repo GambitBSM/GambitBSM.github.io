@@ -13,36 +13,36 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[plc_init](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-init)**(const str & name, const str & location, const int & version, const bool & lensing) |
-| double | **[plc_loglike](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike)**(double * cl_and_pars, const str & name, const bool & lensing) |
-| double | **[plc_loglike_highl_TTTEEE_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-highl-ttteee-2015)**(double * x) |
-| double | **[plc_loglike_highl_TT_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-highl-tt-2015)**(double * x) |
-| double | **[plc_loglike_highl_TTTEEE_lite_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-highl-ttteee-lite-2015)**(double * x) |
-| double | **[plc_loglike_highl_TT_lite_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-highl-tt-lite-2015)**(double * x) |
-| double | **[plc_loglike_lowl_TEB_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-lowl-teb-2015)**(double * x) |
-| double | **[plc_loglike_lowl_TT_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-lowl-tt-2015)**(double * x) |
-| double | **[plc_loglike_lensing_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-lensing-2015)**(double * x) |
-| double | **[plc_loglike_highl_TTTEEE_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-highl-ttteee-2018)**(double * x) |
-| double | **[plc_loglike_highl_TT_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-highl-tt-2018)**(double * x) |
-| double | **[plc_loglike_highl_TTTEEE_lite_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-highl-ttteee-lite-2018)**(double * x) |
-| double | **[plc_loglike_highl_TT_lite_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-highl-tt-lite-2018)**(double * x) |
-| double | **[plc_loglike_lowl_TT_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-lowl-tt-2018)**(double * x) |
-| double | **[plc_loglike_lowl_EE_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-lowl-ee-2018)**(double * x) |
-| double | **[plc_loglike_lensing_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-lensing-2018)**(double * x) |
-| double | **[plc_loglike_lensing_marged_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-loglike-lensing-marged-2018)**(double * x) |
-| void | **[plc_required_Cl](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-plc-required-cl)**(int & lmax, bool & needs_tCl, bool & needs_pCl) |
-| | **[if](/documentation/code/files/plc__3__0_8cpp/#function-plc-3-0-cpp-if)**(scan_level ) |
+| void | **[plc_init](/documentation/code/files/plc__3__0_8cpp/#function-plc-init)**(const str & name, const str & location, const int & version, const bool & lensing) |
+| double | **[plc_loglike](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike)**(double * cl_and_pars, const str & name, const bool & lensing) |
+| double | **[plc_loglike_highl_TTTEEE_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-highl-ttteee-2015)**(double * x) |
+| double | **[plc_loglike_highl_TT_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-highl-tt-2015)**(double * x) |
+| double | **[plc_loglike_highl_TTTEEE_lite_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-highl-ttteee-lite-2015)**(double * x) |
+| double | **[plc_loglike_highl_TT_lite_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-highl-tt-lite-2015)**(double * x) |
+| double | **[plc_loglike_lowl_TEB_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-lowl-teb-2015)**(double * x) |
+| double | **[plc_loglike_lowl_TT_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-lowl-tt-2015)**(double * x) |
+| double | **[plc_loglike_lensing_2015](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-lensing-2015)**(double * x) |
+| double | **[plc_loglike_highl_TTTEEE_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-highl-ttteee-2018)**(double * x) |
+| double | **[plc_loglike_highl_TT_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-highl-tt-2018)**(double * x) |
+| double | **[plc_loglike_highl_TTTEEE_lite_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-highl-ttteee-lite-2018)**(double * x) |
+| double | **[plc_loglike_highl_TT_lite_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-highl-tt-lite-2018)**(double * x) |
+| double | **[plc_loglike_lowl_TT_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-lowl-tt-2018)**(double * x) |
+| double | **[plc_loglike_lowl_EE_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-lowl-ee-2018)**(double * x) |
+| double | **[plc_loglike_lensing_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-lensing-2018)**(double * x) |
+| double | **[plc_loglike_lensing_marged_2018](/documentation/code/files/plc__3__0_8cpp/#function-plc-loglike-lensing-marged-2018)**(double * x) |
+| void | **[plc_required_Cl](/documentation/code/files/plc__3__0_8cpp/#function-plc-required-cl)**(int & lmax, bool & needs_tCl, bool & needs_pCl) |
+| | **[if](/documentation/code/files/plc__3__0_8cpp/#function-if)**(scan_level ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/files/plc__3__0_8cpp/#variable-plc-3-0-cpp-be-namespace)**  |
-| std::string | **[plc3_location](/documentation/code/files/plc__3__0_8cpp/#variable-plc-3-0-cpp-plc3-location)**  |
-| std::map< std::string, std::shared_ptr< clik_object > > | **[clik_map](/documentation/code/files/plc__3__0_8cpp/#variable-plc-3-0-cpp-clik-map)**  |
-| std::map< std::string, std::shared_ptr< clik_lensing_object > > | **[clik_lensing_map](/documentation/code/files/plc__3__0_8cpp/#variable-plc-3-0-cpp-clik-lensing-map)**  |
-| std::array< int, 7 > | **[lmax_array](/documentation/code/files/plc__3__0_8cpp/#variable-plc-3-0-cpp-lmax-array)**  |
-| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-common-macros-hpp-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/plc__3__0_8cpp/#variable-plc-3-0-cpp-be-ini-function)**  |
+| | **[BE_NAMESPACE](/documentation/code/files/plc__3__0_8cpp/#variable-be-namespace)**  |
+| std::string | **[plc3_location](/documentation/code/files/plc__3__0_8cpp/#variable-plc3-location)**  |
+| std::map< std::string, std::shared_ptr< clik_object > > | **[clik_map](/documentation/code/files/plc__3__0_8cpp/#variable-clik-map)**  |
+| std::map< std::string, std::shared_ptr< clik_lensing_object > > | **[clik_lensing_map](/documentation/code/files/plc__3__0_8cpp/#variable-clik-lensing-map)**  |
+| std::array< int, 7 > | **[lmax_array](/documentation/code/files/plc__3__0_8cpp/#variable-lmax-array)**  |
+| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/plc__3__0_8cpp/#variable-be-ini-function)**  |
 
 ## Detailed Description
 
@@ -505,4 +505,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:06 +0000

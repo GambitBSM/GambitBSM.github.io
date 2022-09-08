@@ -20,8 +20,8 @@ Inherits from [Gambit::Scanner::Plugins::Plugin_Interface_Base](/documentation/c
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... plug_args\> <br>| **[Plugin_Interface](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/#function-gambitscannerpluginsplugin-interface-plugin-interface)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
-| template <typename... args\> <br>auto | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/#function-gambitscannerpluginsplugin-interface-operator)**(args &... params) |
+| template <typename... plug_args\> <br>| **[Plugin_Interface](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/#function-plugin-interface)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
+| template <typename... args\> <br>auto | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/#function-operator)**(args &... params) |
 
 ## Additional inherited members
 
@@ -29,15 +29,15 @@ Inherits from [Gambit::Scanner::Plugins::Plugin_Interface_Base](/documentation/c
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-gambitscannerpluginsplugin-interface-base-plugin-interface-base)**() |
-| YAML::Node | **[operator[]](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-gambitscannerpluginsplugin-interface-base-operator)**(const std::string & key) |
-| | **[~Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-gambitscannerpluginsplugin-interface-base-plugin-interface-base)**() |
+| | **[Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-plugin-interface-base)**() |
+| YAML::Node | **[operator[]](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-operator)**(const std::string & key) |
+| | **[~Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-plugin-interface-base)**() |
 
 **Protected Functions inherited from [Gambit::Scanner::Plugins::Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... plug_args\> <br>const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[initPlugin](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-gambitscannerpluginsplugin-interface-base-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
+| template <typename... plug_args\> <br>const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[initPlugin](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
 
 
 ## Detailed Description
@@ -76,4 +76,4 @@ inline auto operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

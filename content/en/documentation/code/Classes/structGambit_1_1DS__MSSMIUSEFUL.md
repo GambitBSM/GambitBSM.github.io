@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[lsp](/documentation/code/classes/structgambit_1_1ds__mssmiuseful/#variable-gambitds-mssmiuseful-lsp)**  |
-| Finteger | **[kln](/documentation/code/classes/structgambit_1_1ds__mssmiuseful/#variable-gambitds-mssmiuseful-kln)**  |
+| Finteger | **[lsp](/documentation/code/classes/structgambit_1_1ds__mssmiuseful/#variable-lsp)**  |
+| Finteger | **[kln](/documentation/code/classes/structgambit_1_1ds__mssmiuseful/#variable-kln)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ Finteger kln;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

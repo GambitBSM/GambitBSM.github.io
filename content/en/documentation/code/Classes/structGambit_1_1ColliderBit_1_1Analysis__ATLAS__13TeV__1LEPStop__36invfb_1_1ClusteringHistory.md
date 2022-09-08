@@ -23,20 +23,20 @@ Inherits from FJNS::PseudoJet::UserInfoBase
 
 |                | Name           |
 | -------------- | -------------- |
-| enum| **[Status](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#enum-gambitcolliderbitanalysis-atlas-13tev-1lepstop-36invfbclusteringhistory-status)** { GOOD, JET_TOO_SMALL, JET_TOO_LARGE, TOO_MANY_ITERATIONS, NONE} |
+| enum| **[Status](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#enum-status)** { GOOD, JET_TOO_SMALL, JET_TOO_LARGE, TOO_MANY_ITERATIONS, NONE} |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [ClusteringHistory](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) * | **[AddStep](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#function-gambitcolliderbitanalysis-atlas-13tev-1lepstop-36invfbclusteringhistory-addstep)**([ClusteringHistory](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) & history, const [Step](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/) & step) |
+| [ClusteringHistory](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) * | **[AddStep](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#function-addstep)**([ClusteringHistory](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/) & history, const [Step](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/) & step) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| size_t | **[id](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#variable-gambitcolliderbitanalysis-atlas-13tev-1lepstop-36invfbclusteringhistory-id)**  |
-| std::vector< [Step](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/) > | **[steps](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#variable-gambitcolliderbitanalysis-atlas-13tev-1lepstop-36invfbclusteringhistory-steps)**  |
+| size_t | **[id](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#variable-id)**  |
+| std::vector< [Step](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/) > | **[steps](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/#variable-steps)**  |
 
 ## Public Types Documentation
 
@@ -83,4 +83,4 @@ std::vector< Step > steps;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

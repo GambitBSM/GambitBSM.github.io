@@ -17,39 +17,39 @@ Inherited by [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [Adva
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-cholesky-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-cholesky-entermat)**(double ** a) |
-| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-cholesky-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-cholesky-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-cholesky-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/classes/classcholesky/#function-cholesky-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-cholesky-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-cholesky-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/classes/classcholesky/#function-cholesky-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-cholesky-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky-cholesky)**() |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-cholesky-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-cholesky-entermat)**(double ** a) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-cholesky-entermat)**(const std::vector< std::vector< double > > & a) |
-| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-cholesky-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-cholesky-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-cholesky-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/classes/classcholesky/#function-cholesky-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-cholesky-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-cholesky-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/classes/classcholesky/#function-cholesky-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-cholesky-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky-cholesky)**() |
+| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(const int nin) |
+| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a) |
+| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y) |
+| void | **[Solve](/documentation/code/classes/classcholesky/#function-solve)**(double * b, double * x) |
+| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/classes/classcholesky/#function-inverse)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-detsqrt)**() |
+| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**() |
+| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(const int nin) |
+| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(const std::vector< std::vector< double > > & a) |
+| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y) |
+| void | **[Solve](/documentation/code/classes/classcholesky/#function-solve)**(double * b, double * x) |
+| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/classes/classcholesky/#function-inverse)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-detsqrt)**() |
+| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**() |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[num](/documentation/code/classes/classcholesky/#variable-cholesky-num)**  |
+| int | **[num](/documentation/code/classes/classcholesky/#variable-num)**  |
 
 ## Public Functions Documentation
 
@@ -315,4 +315,4 @@ int num;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::size_t | **[operator()](/documentation/code/classes/structgambit_1_1type__hasher/#function-gambittype-hasher-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & code) const |
+| std::size_t | **[operator()](/documentation/code/classes/structgambit_1_1type__hasher/#function-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & code) const |
 
 ## Public Functions Documentation
 
@@ -30,4 +30,4 @@ inline std::size_t operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

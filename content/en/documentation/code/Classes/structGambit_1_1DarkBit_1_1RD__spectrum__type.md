@@ -15,18 +15,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[RD_spectrum_type](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#function-gambitdarkbitrd-spectrum-type-rd-spectrum-type)**() |
-| | **[RD_spectrum_type](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#function-gambitdarkbitrd-spectrum-type-rd-spectrum-type)**(const std::vector< [RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/) > & coannPart, const std::vector< [TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/) > & resonances, const std::vector< double > & thresholds) |
+| | **[RD_spectrum_type](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#function-rd-spectrum-type)**() |
+| | **[RD_spectrum_type](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#function-rd-spectrum-type)**(const std::vector< [RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/) > & coannPart, const std::vector< [TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/) > & resonances, const std::vector< double > & thresholds) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< [RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/) > | **[coannihilatingParticles](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-gambitdarkbitrd-spectrum-type-coannihilatingparticles)**  |
-| std::vector< [TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/) > | **[resonances](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-gambitdarkbitrd-spectrum-type-resonances)**  |
-| std::vector< double > | **[threshold_energy](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-gambitdarkbitrd-spectrum-type-threshold-energy)**  |
-| std::string | **[particle_index_type](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-gambitdarkbitrd-spectrum-type-particle-index-type)**  |
-| bool | **[isSelfConj](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-gambitdarkbitrd-spectrum-type-isselfconj)**  |
+| std::vector< [RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/) > | **[coannihilatingParticles](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-coannihilatingparticles)**  |
+| std::vector< [TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/) > | **[resonances](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-resonances)**  |
+| std::vector< double > | **[threshold_energy](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-threshold-energy)**  |
+| std::string | **[particle_index_type](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-particle-index-type)**  |
+| bool | **[isSelfConj](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-isselfconj)**  |
 
 ## Public Functions Documentation
 
@@ -87,4 +87,4 @@ bool isSelfConj;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

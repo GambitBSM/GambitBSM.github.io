@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structchunkequal/#function-chunkequal-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & lhs, const [Chunk](/documentation/code/classes/structchunk/) & rhs) const |
-| bool | **[operator()](/documentation/code/classes/structchunkequal/#function-chunkequal-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & lhs, const [Chunk](/documentation/code/classes/structchunk/) & rhs) const |
+| bool | **[operator()](/documentation/code/classes/structchunkequal/#function-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & lhs, const [Chunk](/documentation/code/classes/structchunk/) & rhs) const |
+| bool | **[operator()](/documentation/code/classes/structchunkequal/#function-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & lhs, const [Chunk](/documentation/code/classes/structchunk/) & rhs) const |
 
 ## Public Functions Documentation
 
@@ -42,4 +42,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

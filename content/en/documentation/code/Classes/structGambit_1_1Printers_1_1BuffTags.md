@@ -17,20 +17,20 @@ Struct for a collection of MPI tags belonging to a single buffer.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BuffTags](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#function-gambitprintersbufftags-bufftags)**() |
-| | **[BuffTags](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#function-gambitprintersbufftags-bufftags)**(const int first_tag) |
+| | **[BuffTags](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#function-bufftags)**() |
+| | **[BuffTags](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#function-bufftags)**(const int first_tag) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[SYNC_data](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-gambitprintersbufftags-sync-data)**  |
-| int | **[SYNC_valid](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-gambitprintersbufftags-sync-valid)**  |
-| int | **[RA_queue](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-gambitprintersbufftags-ra-queue)**  |
-| int | **[RA_loc](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-gambitprintersbufftags-ra-loc)**  |
-| int | **[RA_length](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-gambitprintersbufftags-ra-length)**  |
-| bool | **[valid](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-gambitprintersbufftags-valid)**  |
-| const std::size_t | **[NTAGS](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-gambitprintersbufftags-ntags)**  |
+| int | **[SYNC_data](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-sync-data)**  |
+| int | **[SYNC_valid](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-sync-valid)**  |
+| int | **[RA_queue](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-ra-queue)**  |
+| int | **[RA_loc](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-ra-loc)**  |
+| int | **[RA_length](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-ra-length)**  |
+| bool | **[valid](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-valid)**  |
+| const std::size_t | **[NTAGS](/documentation/code/classes/structgambit_1_1printers_1_1bufftags/#variable-ntags)**  |
 
 ## Public Functions Documentation
 
@@ -103,4 +103,4 @@ static const std::size_t NTAGS =5;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

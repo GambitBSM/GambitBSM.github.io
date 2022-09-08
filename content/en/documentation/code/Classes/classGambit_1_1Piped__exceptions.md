@@ -17,18 +17,18 @@ description: "[Gambit](/documentation/code/namespaces/namespacegambit/) piped er
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::pair< std::string, std::string > | **[description](/documentation/code/classes/classgambit_1_1piped__exceptions/#typedef-gambitpiped-exceptions-description)**  |
+| typedef std::pair< std::string, std::string > | **[description](/documentation/code/classes/classgambit_1_1piped__exceptions/#typedef-description)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Piped_exceptions](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-gambitpiped-exceptions-piped-exceptions)**(size_t maxExceptions)<br>Constructor.  |
-| void | **[request](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-gambitpiped-exceptions-request)**(std::string origin, std::string message)<br>Request an exception.  |
-| void | **[request](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-gambitpiped-exceptions-request)**(description desc)<br>Request a piped exception.  |
-| void | **[check](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-gambitpiped-exceptions-check)**([exception](/documentation/code/classes/classgambit_1_1exception/) & excep)<br>Check whether any exceptions were requested, and raise them.  |
-| bool | **[inquire](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-gambitpiped-exceptions-inquire)**()<br>Check whether any exceptions were requested without handling them.  |
-| bool | **[inquire](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-gambitpiped-exceptions-inquire)**(std::string message)<br>Check whether any exceptions with a specific message were requested, without handling them.  |
+| | **[Piped_exceptions](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-piped-exceptions)**(size_t maxExceptions)<br>Constructor.  |
+| void | **[request](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-request)**(std::string origin, std::string message)<br>Request an exception.  |
+| void | **[request](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-request)**(description desc)<br>Request a piped exception.  |
+| void | **[check](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-check)**([exception](/documentation/code/classes/classgambit_1_1exception/) & excep)<br>Check whether any exceptions were requested, and raise them.  |
+| bool | **[inquire](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-inquire)**()<br>Check whether any exceptions were requested without handling them.  |
+| bool | **[inquire](/documentation/code/classes/classgambit_1_1piped__exceptions/#function-inquire)**(std::string message)<br>Check whether any exceptions with a specific message were requested, without handling them.  |
 
 ## Public Types Documentation
 
@@ -105,4 +105,4 @@ Check whether any exceptions with a specific message were requested, without han
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

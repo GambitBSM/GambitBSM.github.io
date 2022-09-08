@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/lhc__likelihoods_8cpp/#define-lhc-likelihoods-cpp-debug-prefix)**  |
+|  | **[DEBUG_PREFIX](/documentation/code/files/lhc__likelihoods_8cpp/#define-debug-prefix)**  |
 
 ## Detailed Description
 
@@ -1158,4 +1158,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

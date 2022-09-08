@@ -22,60 +22,60 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| hid_t | **[openFile](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-openfile)**(const std::string & fname, bool overwrite, bool & oldfile, const char access_type ='r')<br>File and group manipulation.  |
-| hid_t | **[openFile](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-openfile)**(const std::string & fname, bool overwrite =false, const char access_type ='r')<br>Create or open hdf5 file (ignoring feedback regarding whether file already existed)  |
-| hid_t | **[closeFile](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-closefile)**(hid_t file)<br>Close hdf5 file.  |
-| bool | **[checkFileReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-checkfilereadable)**(const std::string & fname, std::string & msg)<br>Check if hdf5 file exists and can be opened in read/write mode.  |
-| bool | **[checkFileReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-checkfilereadable)**(const std::string & fname)<br>Thin wrapper for the above to discard failure message.  |
-| bool | **[checkGroupReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-checkgroupreadable)**(hid_t location, const std::string & groupname, std::string & msg)<br>Check if a group exists and can be accessed.  |
-| bool | **[checkGroupReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-checkgroupreadable)**(hid_t location, const std::string & groupname)<br>Thin wrapper for the above to discard failure message.  |
-| std::pair< bool, std::size_t > | **[checkDatasetReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-checkdatasetreadable)**(hid_t location, const std::string & dsetname) |
-| hid_t | **[createFile](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-createfile)**(const std::string & fname)<br>Create hdf5 file (always overwrite existing files)  |
-| hid_t | **[createGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-creategroup)**(hid_t location, const std::string & name)<br>Create a group inside the specified location.  |
-| void | **[errorsOff](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-errorsoff)**()<br>Silence error report (e.g. while probing for file existence)  |
-| void | **[errorsOn](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-errorson)**()<br>Restore error report.  |
-| hid_t | **[openGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-opengroup)**(hid_t file_id, const std::string & name, bool nocreate =false) |
-| hid_t | **[closeGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-closegroup)**(hid_t group)<br>Close group.  |
-| std::vector< std::string > | **[lsGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-lsgroup)**(hid_t group_id)<br>List object names in a group.  |
-| hid_t | **[getH5DatasetType](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-geth5datasettype)**(hid_t group_id, const std::string & dset_name)<br>Get type of an object in a group.  |
-| hid_t | **[closeType](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-closetype)**(hid_t type_id)<br>Release datatype identifier.  |
-| hid_t | **[openDataset](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-opendataset)**(hid_t dset_id, const std::string & name, bool error_off =false)<br>Dataset and dataspace manipulation.  |
-| hid_t | **[closeDataset](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-closedataset)**(hid_t dset_id)<br>Close dataset.  |
-| hid_t | **[getSpace](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-getspace)**(hid_t dset_id)<br>Get dataspace.  |
-| hid_t | **[closeSpace](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-closespace)**(hid_t space_id)<br>Close dataspace.  |
-| hssize_t | **[getSimpleExtentNpoints](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-getsimpleextentnpoints)**(hid_t dset_id)<br>Get simple dataspace extent.  |
-| std::string | **[getName](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-getname)**(hid_t dset_id)<br>Get name of dataset.  |
-| std::pair< hid_t, hid_t > | **[selectChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-selectchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length)<br>Select a simple hyperslab in a 1D dataset.  |
-| bool | **[isDataSet](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-isdataset)**(hid_t group_id, const std::string & name)<br>Check if an object in a group is a dataset.  |
-| template <class T \> <br>std::vector< T > | **[getChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-getchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length) |
-| std::vector< bool > | **[getChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-getchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length) |
-| int | **[inttype_from_h5type](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-inttype-from-h5type)**(hid_t h5type) |
-| bool | **[is_float_type](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-is-float-type)**(int inttype) |
-| template <typename T \> <br>T | **[type_ret](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-type-ret)**() |
-| template <class U ,typename... T\> <br>void | **[Enter_HDF5](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-enter-hdf5)**(hid_t dataset, T &... params) |
-| void | **[combine_hdf5_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-combine-hdf5-files)**(const std::string output_file, const std::string & base_file_name, const std::string & group, const size_t num, const bool resume, const bool cleanup, const bool skip, const std::vector< std::string > input_files =std::vector< std::string >()) |
-| std::unordered_map< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/), unsigned long long, [PPIDHash](/documentation/code/classes/structgambit_1_1printers_1_1ppidhash/), [PPIDEqual](/documentation/code/classes/structgambit_1_1printers_1_1ppidequal/) > | **[get_RA_write_hash](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-get-ra-write-hash)**(hid_t group_id, std::unordered_set< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/), [PPIDHash](/documentation/code/classes/structgambit_1_1printers_1_1ppidhash/), [PPIDEqual](/documentation/code/classes/structgambit_1_1printers_1_1ppidequal/) > & left_to_match) |
-| std::pair< std::vector< std::string >, std::vector< size_t > > | **[find_temporary_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-find-temporary-files)**(const std::string & finalfile)<br>Search for temporary files to be combined.  |
-| std::pair< std::vector< std::string >, std::vector< size_t > > | **[find_temporary_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-find-temporary-files)**(const std::string & finalfile, size_t & max_i)<br>Search for temporary files to be combined.  |
-| hsize_t | **[getGroupNum](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-getgroupnum)**(hid_t group_id) |
-| hid_t | **[getType](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-gettype)**(hid_t dataset) |
-| std::vector< std::string > | **[get_dset_names](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-get-dset-names)**(hid_t group_id) |
-| herr_t | **[op_func](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-op-func)**(hid_t loc_id, const char * name_in, const H5L_info_t * , void * operator_data) |
-| herr_t | **[op_func_aux](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-op-func-aux)**(hid_t loc_id, const char * name_in, const H5L_info_t * , void * operator_data) |
-| void | **[setup_hdf5_points](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-setup-hdf5-points)**(hid_t new_group, hid_t type, hid_t type2, unsigned long long size_tot, const std::string & name) |
-| std::vector< std::string > | **[getGroups](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-getgroups)**(std::string groups) |
-| hid_t | **[create_GAMBIT_fapl](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-create-gambit-fapl)**()<br>GAMBIT default file access property list.  |
-| const hid_t | **[H5P_GAMBIT](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-h5p-gambit)**(create_GAMBIT_fapl() )<br>Const global for the GAMBIT fapl.  |
-| std::vector< bool > | **[getChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-getchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length) |
-| template <class T \> <br>std::pair< bool, std::size_t > | **[_checkDatasetReadable_helper](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-checkdatasetreadable-helper)**(hid_t dset_id, const std::string dset_name) |
-| herr_t | **[group_ls](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gambitprintershdf5-group-ls)**(hid_t g_id, const char * name, const H5L_info_t * , void * op_data) |
+| hid_t | **[openFile](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-openfile)**(const std::string & fname, bool overwrite, bool & oldfile, const char access_type ='r')<br>File and group manipulation.  |
+| hid_t | **[openFile](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-openfile)**(const std::string & fname, bool overwrite =false, const char access_type ='r')<br>Create or open hdf5 file (ignoring feedback regarding whether file already existed)  |
+| hid_t | **[closeFile](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-closefile)**(hid_t file)<br>Close hdf5 file.  |
+| bool | **[checkFileReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-checkfilereadable)**(const std::string & fname, std::string & msg)<br>Check if hdf5 file exists and can be opened in read/write mode.  |
+| bool | **[checkFileReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-checkfilereadable)**(const std::string & fname)<br>Thin wrapper for the above to discard failure message.  |
+| bool | **[checkGroupReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-checkgroupreadable)**(hid_t location, const std::string & groupname, std::string & msg)<br>Check if a group exists and can be accessed.  |
+| bool | **[checkGroupReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-checkgroupreadable)**(hid_t location, const std::string & groupname)<br>Thin wrapper for the above to discard failure message.  |
+| std::pair< bool, std::size_t > | **[checkDatasetReadable](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-checkdatasetreadable)**(hid_t location, const std::string & dsetname) |
+| hid_t | **[createFile](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-createfile)**(const std::string & fname)<br>Create hdf5 file (always overwrite existing files)  |
+| hid_t | **[createGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-creategroup)**(hid_t location, const std::string & name)<br>Create a group inside the specified location.  |
+| void | **[errorsOff](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-errorsoff)**()<br>Silence error report (e.g. while probing for file existence)  |
+| void | **[errorsOn](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-errorson)**()<br>Restore error report.  |
+| hid_t | **[openGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-opengroup)**(hid_t file_id, const std::string & name, bool nocreate =false) |
+| hid_t | **[closeGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-closegroup)**(hid_t group)<br>Close group.  |
+| std::vector< std::string > | **[lsGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-lsgroup)**(hid_t group_id)<br>List object names in a group.  |
+| hid_t | **[getH5DatasetType](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-geth5datasettype)**(hid_t group_id, const std::string & dset_name)<br>Get type of an object in a group.  |
+| hid_t | **[closeType](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-closetype)**(hid_t type_id)<br>Release datatype identifier.  |
+| hid_t | **[openDataset](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-opendataset)**(hid_t dset_id, const std::string & name, bool error_off =false)<br>Dataset and dataspace manipulation.  |
+| hid_t | **[closeDataset](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-closedataset)**(hid_t dset_id)<br>Close dataset.  |
+| hid_t | **[getSpace](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getspace)**(hid_t dset_id)<br>Get dataspace.  |
+| hid_t | **[closeSpace](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-closespace)**(hid_t space_id)<br>Close dataspace.  |
+| hssize_t | **[getSimpleExtentNpoints](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getsimpleextentnpoints)**(hid_t dset_id)<br>Get simple dataspace extent.  |
+| std::string | **[getName](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getname)**(hid_t dset_id)<br>Get name of dataset.  |
+| std::pair< hid_t, hid_t > | **[selectChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-selectchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length)<br>Select a simple hyperslab in a 1D dataset.  |
+| bool | **[isDataSet](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-isdataset)**(hid_t group_id, const std::string & name)<br>Check if an object in a group is a dataset.  |
+| template <class T \> <br>std::vector< T > | **[getChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length) |
+| std::vector< bool > | **[getChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length) |
+| int | **[inttype_from_h5type](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-inttype-from-h5type)**(hid_t h5type) |
+| bool | **[is_float_type](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-is-float-type)**(int inttype) |
+| template <typename T \> <br>T | **[type_ret](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-type-ret)**() |
+| template <class U ,typename... T\> <br>void | **[Enter_HDF5](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-enter-hdf5)**(hid_t dataset, T &... params) |
+| void | **[combine_hdf5_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-combine-hdf5-files)**(const std::string output_file, const std::string & base_file_name, const std::string & group, const size_t num, const bool resume, const bool cleanup, const bool skip, const std::vector< std::string > input_files =std::vector< std::string >()) |
+| std::unordered_map< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/), unsigned long long, [PPIDHash](/documentation/code/classes/structgambit_1_1printers_1_1ppidhash/), [PPIDEqual](/documentation/code/classes/structgambit_1_1printers_1_1ppidequal/) > | **[get_RA_write_hash](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-get-ra-write-hash)**(hid_t group_id, std::unordered_set< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/), [PPIDHash](/documentation/code/classes/structgambit_1_1printers_1_1ppidhash/), [PPIDEqual](/documentation/code/classes/structgambit_1_1printers_1_1ppidequal/) > & left_to_match) |
+| std::pair< std::vector< std::string >, std::vector< size_t > > | **[find_temporary_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-find-temporary-files)**(const std::string & finalfile)<br>Search for temporary files to be combined.  |
+| std::pair< std::vector< std::string >, std::vector< size_t > > | **[find_temporary_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-find-temporary-files)**(const std::string & finalfile, size_t & max_i)<br>Search for temporary files to be combined.  |
+| hsize_t | **[getGroupNum](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getgroupnum)**(hid_t group_id) |
+| hid_t | **[getType](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gettype)**(hid_t dataset) |
+| std::vector< std::string > | **[get_dset_names](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-get-dset-names)**(hid_t group_id) |
+| herr_t | **[op_func](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-op-func)**(hid_t loc_id, const char * name_in, const H5L_info_t * , void * operator_data) |
+| herr_t | **[op_func_aux](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-op-func-aux)**(hid_t loc_id, const char * name_in, const H5L_info_t * , void * operator_data) |
+| void | **[setup_hdf5_points](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-setup-hdf5-points)**(hid_t new_group, hid_t type, hid_t type2, unsigned long long size_tot, const std::string & name) |
+| std::vector< std::string > | **[getGroups](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getgroups)**(std::string groups) |
+| hid_t | **[create_GAMBIT_fapl](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-create-gambit-fapl)**()<br>GAMBIT default file access property list.  |
+| const hid_t | **[H5P_GAMBIT](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-h5p-gambit)**(create_GAMBIT_fapl() )<br>Const global for the GAMBIT fapl.  |
+| std::vector< bool > | **[getChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length) |
+| template <class T \> <br>std::pair< bool, std::size_t > | **[_checkDatasetReadable_helper](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-checkdatasetreadable-helper)**(hid_t dset_id, const std::string dset_name) |
+| herr_t | **[group_ls](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-group-ls)**(hid_t g_id, const char * name, const H5L_info_t * , void * op_data) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| H5E_auto2_t | **[old_func](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#variable-gambitprintershdf5-old-func)** <br>Close hdf5 type ID.  |
-| void * | **[old_client_data](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#variable-gambitprintershdf5-old-client-data)**  |
+| H5E_auto2_t | **[old_func](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#variable-old-func)** <br>Close hdf5 type ID.  |
+| void * | **[old_client_data](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#variable-old-client-data)**  |
 
 
 ## Functions Documentation
@@ -638,4 +638,4 @@ void * old_client_data;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

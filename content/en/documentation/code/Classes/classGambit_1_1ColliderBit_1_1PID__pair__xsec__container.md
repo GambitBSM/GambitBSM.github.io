@@ -19,19 +19,19 @@ Inherits from [Gambit::ColliderBit::xsec_container](/documentation/code/classes/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-pid-pair-xsec-container)**()<br>Constructor.  |
-| virtual | **[~PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-pid-pair-xsec-container)**() |
-| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-reset)**()<br>Reset this instance for reuse.  |
-| void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-average-xsec)**(double other_xsec, double other_xsecerr)<br>Average cross-sections and combine errors.  |
-| void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-average-xsec)**(const [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) & other) |
-| void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-sum-xsecs)**(double other_xsec, double other_xsecerr)<br>Sum cross-sections and add errors in quadrature.  |
-| void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-sum-xsecs)**(const [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) & other) |
-| const [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) & | **[pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-pid-pair)**() const<br>Return the PID pair.  |
-| void | **[set_pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-set-pid-pair)**(const [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) & pid_pair_in)<br>Set the PID pair.  |
-| const std::vector< [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) > & | **[pid_pairs_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-pid-pairs-sharing-xsec)**() const |
-| void | **[register_pid_pair_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-register-pid-pair-sharing-xsec)**([PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) pid_pair_in)<br>Add a PID pair to the list of PID pairs sharing this cross-section.  |
-| const std::vector< int > & | **[related_processes](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-related-processes)**() const<br>Return the list of process codes related to this cross-section.  |
-| void | **[register_related_process](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-gambitcolliderbitpid-pair-xsec-container-register-related-process)**(int process_code_in)<br>Add a process code to the list of processes related to this cross-section.  |
+| | **[PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-pid-pair-xsec-container)**()<br>Constructor.  |
+| virtual | **[~PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-pid-pair-xsec-container)**() |
+| void | **[reset](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-reset)**()<br>Reset this instance for reuse.  |
+| void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-average-xsec)**(double other_xsec, double other_xsecerr)<br>Average cross-sections and combine errors.  |
+| void | **[average_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-average-xsec)**(const [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) & other) |
+| void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-sum-xsecs)**(double other_xsec, double other_xsecerr)<br>Sum cross-sections and add errors in quadrature.  |
+| void | **[sum_xsecs](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-sum-xsecs)**(const [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) & other) |
+| const [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) & | **[pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-pid-pair)**() const<br>Return the PID pair.  |
+| void | **[set_pid_pair](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-set-pid-pair)**(const [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) & pid_pair_in)<br>Set the PID pair.  |
+| const std::vector< [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) > & | **[pid_pairs_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-pid-pairs-sharing-xsec)**() const |
+| void | **[register_pid_pair_sharing_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-register-pid-pair-sharing-xsec)**([PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/) pid_pair_in)<br>Add a PID pair to the list of PID pairs sharing this cross-section.  |
+| const std::vector< int > & | **[related_processes](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-related-processes)**() const<br>Return the list of process codes related to this cross-section.  |
+| void | **[register_related_process](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/#function-register-related-process)**(int process_code_in)<br>Add a process code to the list of processes related to this cross-section.  |
 
 ## Additional inherited members
 
@@ -39,33 +39,33 @@ Inherits from [Gambit::ColliderBit::xsec_container](/documentation/code/classes/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec-container)**()<br>Constructor.  |
-| virtual | **[~xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec-container)**() |
-| double | **[operator()](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-operator)**() const<br>Return the full cross-section (in fb).  |
-| double | **[xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec)**() const |
-| double | **[xsec_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec-err)**() const<br>Return the cross-section error (in fb).  |
-| double | **[xsec_relerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-xsec-relerr)**() const<br>Return the cross-section relative error.  |
-| void | **[set_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-set-xsec)**(double xs, double xserr)<br>Set the cross-section and its error (in fb).  |
-| std::map< std::string, double > | **[get_content_as_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-get-content-as-map)**() const<br>Get content as map <string,double> map (for easy printing).  |
-| void | **[set_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-set-info-string)**(std::string info_string_in)<br>Set the info string.  |
-| std::string | **[info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-info-string)**() const<br>Get the info string.  |
-| void | **[set_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-set-trust-level)**(int trust_level_in)<br>Set the trust level.  |
-| int | **[trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-gambitcolliderbitxsec-container-trust-level)**() const<br>Get the trust level.  |
+| | **[xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-xsec-container)**()<br>Constructor.  |
+| virtual | **[~xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-xsec-container)**() |
+| double | **[operator()](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-operator)**() const<br>Return the full cross-section (in fb).  |
+| double | **[xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-xsec)**() const |
+| double | **[xsec_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-xsec-err)**() const<br>Return the cross-section error (in fb).  |
+| double | **[xsec_relerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-xsec-relerr)**() const<br>Return the cross-section relative error.  |
+| void | **[set_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-set-xsec)**(double xs, double xserr)<br>Set the cross-section and its error (in fb).  |
+| std::map< std::string, double > | **[get_content_as_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-get-content-as-map)**() const<br>Get content as map <string,double> map (for easy printing).  |
+| void | **[set_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-set-info-string)**(std::string info_string_in)<br>Set the info string.  |
+| std::string | **[info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-info-string)**() const<br>Get the info string.  |
+| void | **[set_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-set-trust-level)**(int trust_level_in)<br>Set the trust level.  |
+| int | **[trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#function-trust-level)**() const<br>Get the trust level.  |
 
 **Public Attributes inherited from [Gambit::ColliderBit::xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| const std::string | **[unit](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-unit)** <br>String Let's make it clear that we work with fb as unit.  |
+| const std::string | **[unit](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-unit)** <br>String Let's make it clear that we work with fb as unit.  |
 
 **Protected Attributes inherited from [Gambit::ColliderBit::xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-xsec)**  |
-| double | **[_xsecerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-xsecerr)**  |
-| std::string | **[_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-info-string)**  |
-| int | **[_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-gambitcolliderbitxsec-container-trust-level)**  |
+| double | **[_xsec](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-xsec)**  |
+| double | **[_xsecerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-xsecerr)**  |
+| std::string | **[_info_string](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-info-string)**  |
+| int | **[_trust_level](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/#variable-trust-level)**  |
 
 
 ## Public Functions Documentation
@@ -197,4 +197,4 @@ Add a process code to the list of processes related to this cross-section.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

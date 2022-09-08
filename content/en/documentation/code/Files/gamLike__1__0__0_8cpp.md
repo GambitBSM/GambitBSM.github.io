@@ -13,13 +13,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/gamlike__1__0__0_8cpp/#function-gamlike-1-0-0-cpp-if)**(scan_level ) |
+| | **[if](/documentation/code/files/gamlike__1__0__0_8cpp/#function-if)**(scan_level ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/gamlike__1__0__0_8cpp/#variable-gamlike-1-0-0-cpp-be-ini-function)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/files/gamlike__1__0__0_8cpp/#variable-be-ini-function)**  |
 
 ## Detailed Description
 
@@ -122,4 +122,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:06 +0000

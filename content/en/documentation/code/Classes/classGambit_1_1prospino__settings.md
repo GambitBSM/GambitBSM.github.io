@@ -15,23 +15,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[prospino_settings](/documentation/code/classes/classgambit_1_1prospino__settings/#function-gambitprospino-settings-prospino-settings)**(Finteger inlo_input, Finteger isq_ng_in_input, Finteger icoll_in_input, Fdouble energy_in_input, Finteger i_error_in_input, [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 2 > final_state_in_input, Finteger ipart1_in_input, Finteger ipart2_in_input, Finteger isquark1_in_input, Finteger isquark2_in_input) |
-| | **[prospino_settings](/documentation/code/classes/classgambit_1_1prospino__settings/#function-gambitprospino-settings-prospino-settings)**(const [prospino_settings](/documentation/code/classes/classgambit_1_1prospino__settings/) & ps_in) |
+| | **[prospino_settings](/documentation/code/classes/classgambit_1_1prospino__settings/#function-prospino-settings)**(Finteger inlo_input, Finteger isq_ng_in_input, Finteger icoll_in_input, Fdouble energy_in_input, Finteger i_error_in_input, [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 2 > final_state_in_input, Finteger ipart1_in_input, Finteger ipart2_in_input, Finteger isquark1_in_input, Finteger isquark2_in_input) |
+| | **[prospino_settings](/documentation/code/classes/classgambit_1_1prospino__settings/#function-prospino-settings)**(const [prospino_settings](/documentation/code/classes/classgambit_1_1prospino__settings/) & ps_in) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[inlo](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-inlo)**  |
-| Finteger | **[isq_ng_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-isq-ng-in)**  |
-| Finteger | **[icoll_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-icoll-in)**  |
-| Fdouble | **[energy_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-energy-in)**  |
-| Finteger | **[i_error_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-i-error-in)**  |
-| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 2 > | **[final_state_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-final-state-in)**  |
-| Finteger | **[ipart1_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-ipart1-in)**  |
-| Finteger | **[ipart2_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-ipart2-in)**  |
-| Finteger | **[isquark1_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-isquark1-in)**  |
-| Finteger | **[isquark2_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-gambitprospino-settings-isquark2-in)**  |
+| Finteger | **[inlo](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-inlo)**  |
+| Finteger | **[isq_ng_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-isq-ng-in)**  |
+| Finteger | **[icoll_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-icoll-in)**  |
+| Fdouble | **[energy_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-energy-in)**  |
+| Finteger | **[i_error_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-i-error-in)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 2 > | **[final_state_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-final-state-in)**  |
+| Finteger | **[ipart1_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-ipart1-in)**  |
+| Finteger | **[ipart2_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-ipart2-in)**  |
+| Finteger | **[isquark1_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-isquark1-in)**  |
+| Finteger | **[isquark2_in](/documentation/code/classes/classgambit_1_1prospino__settings/#variable-isquark2-in)**  |
 
 ## Public Functions Documentation
 
@@ -136,4 +136,4 @@ Finteger isquark2_in;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

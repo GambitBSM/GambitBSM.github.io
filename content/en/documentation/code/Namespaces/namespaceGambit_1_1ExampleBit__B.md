@@ -13,15 +13,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[q_example](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-q-example)**(int & result) |
-| void | **[particle_identity](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-particle-identity)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) & result) |
-| void | **[event_count](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-event-count)**(int & result) |
-| void | **[example_lnL](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-example-lnl)**(double & result) |
-| void | **[exampleVec](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-examplevec)**(std::vector< double > & result) |
-| void | **[ptrArrTester](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-ptrarrtester)**(int & result) |
-| void | **[sigma_example](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-sigma-example)**(double & result) |
-| void | **[sigma_example_req_pars](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-sigma-example-req-pars)**(double & result) |
-| void | **[predicted_events](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-gambitexamplebit-b-predicted-events)**(int & result) |
+| void | **[q_example](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-q-example)**(int & result) |
+| void | **[particle_identity](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-particle-identity)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) & result) |
+| void | **[event_count](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-event-count)**(int & result) |
+| void | **[example_lnL](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-example-lnl)**(double & result) |
+| void | **[exampleVec](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-examplevec)**(std::vector< double > & result) |
+| void | **[ptrArrTester](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-ptrarrtester)**(int & result) |
+| void | **[sigma_example](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-sigma-example)**(double & result) |
+| void | **[sigma_example_req_pars](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-sigma-example-req-pars)**(double & result) |
+| void | **[predicted_events](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-predicted-events)**(int & result) |
 
 
 ## Functions Documentation
@@ -113,4 +113,4 @@ void predicted_events(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

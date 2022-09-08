@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsellneute](/documentation/code/classes/structgambit_1_1sd__sel2body__type/#variable-gambitsd-sel2body-type-brsellneute)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsellcharnue](/documentation/code/classes/structgambit_1_1sd__sel2body__type/#variable-gambitsd-sel2body-type-brsellcharnue)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brselrneute](/documentation/code/classes/structgambit_1_1sd__sel2body__type/#variable-gambitsd-sel2body-type-brselrneute)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brselrcharnue](/documentation/code/classes/structgambit_1_1sd__sel2body__type/#variable-gambitsd-sel2body-type-brselrcharnue)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsellneute](/documentation/code/classes/structgambit_1_1sd__sel2body__type/#variable-brsellneute)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsellcharnue](/documentation/code/classes/structgambit_1_1sd__sel2body__type/#variable-brsellcharnue)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brselrneute](/documentation/code/classes/structgambit_1_1sd__sel2body__type/#variable-brselrneute)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brselrcharnue](/documentation/code/classes/structgambit_1_1sd__sel2body__type/#variable-brselrcharnue)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ Farray< Fdouble, 1, 2 > brselrcharnue;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

@@ -17,15 +17,15 @@ Structure to hold data for a single model point.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Record](/documentation/code/classes/structgambit_1_1printers_1_1record/#function-gambitprintersrecord-record)**() |
-| void | **[reset](/documentation/code/classes/structgambit_1_1printers_1_1record/#function-gambitprintersrecord-reset)**() |
+| | **[Record](/documentation/code/classes/structgambit_1_1printers_1_1record/#function-record)**() |
+| void | **[reset](/documentation/code/classes/structgambit_1_1printers_1_1record/#function-reset)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| LineBuf | **[data](/documentation/code/classes/structgambit_1_1printers_1_1record/#variable-gambitprintersrecord-data)** <br>The data; each functor outputs a vector of doubles. We index these by vertexID.  |
-| bool | **[readyToPrint](/documentation/code/classes/structgambit_1_1printers_1_1record/#variable-gambitprintersrecord-readytoprint)** <br>Flag to indicate if record is available to send for output.  |
+| LineBuf | **[data](/documentation/code/classes/structgambit_1_1printers_1_1record/#variable-data)** <br>The data; each functor outputs a vector of doubles. We index these by vertexID.  |
+| bool | **[readyToPrint](/documentation/code/classes/structgambit_1_1printers_1_1record/#variable-readytoprint)** <br>Flag to indicate if record is available to send for output.  |
 
 ## Public Functions Documentation
 
@@ -63,4 +63,4 @@ Flag to indicate if record is available to send for output.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

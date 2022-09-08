@@ -13,11 +13,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/darkages__1__2__0_8hpp/#define-darkages-1-2-0-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/darkages__1__2__0_8hpp/#define-darkages-1-2-0-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/darkages__1__2__0_8hpp/#define-darkages-1-2-0-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/darkages__1__2__0_8hpp/#define-darkages-1-2-0-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/darkages__1__2__0_8hpp/#define-darkages-1-2-0-hpp-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/darkages__1__2__0_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/darkages__1__2__0_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/darkages__1__2__0_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/darkages__1__2__0_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/darkages__1__2__0_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -149,4 +149,4 @@ BE_ALLOW_MODELS(AnnihilatingDM_general, DecayingDM_general)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

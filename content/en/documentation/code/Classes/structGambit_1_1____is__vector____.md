@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef T | **[type](/documentation/code/classes/structgambit_1_1____is__vector____/#typedef-gambit-is-vector-type)**  |
+| typedef T | **[type](/documentation/code/classes/structgambit_1_1____is__vector____/#typedef-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__vector____/#variable-gambit-is-vector-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__vector____/#variable-value)**  |
 
 ## Detailed Description
 
@@ -50,4 +50,4 @@ static const bool value = false;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

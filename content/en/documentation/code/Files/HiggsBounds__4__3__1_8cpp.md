@@ -13,13 +13,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/higgsbounds__4__3__1_8cpp/#function-higgsbounds-4-3-1-cpp-if)**(scan_level ) |
+| | **[if](/documentation/code/files/higgsbounds__4__3__1_8cpp/#function-if)**(scan_level ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/higgsbounds__4__3__1_8cpp/#variable-higgsbounds-4-3-1-cpp-be-ini-function)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/files/higgsbounds__4__3__1_8cpp/#variable-be-ini-function)**  |
 
 
 ## Functions Documentation
@@ -108,4 +108,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:06 +0000

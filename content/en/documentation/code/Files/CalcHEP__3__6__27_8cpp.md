@@ -13,16 +13,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/calchep__3__6__27_8cpp/#function-calchep-3-6-27-cpp-if)**(scan_level ) |
-| | **[if](/documentation/code/files/calchep__3__6__27_8cpp/#function-calchep-3-6-27-cpp-if)**(ModelInUse("ScalarSingletDM_Z2") ) |
-| | **[if](/documentation/code/files/calchep__3__6__27_8cpp/#function-calchep-3-6-27-cpp-if)**(ModelInUse("DMEFT") ) |
+| | **[if](/documentation/code/files/calchep__3__6__27_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/files/calchep__3__6__27_8cpp/#function-if)**(ModelInUse("ScalarSingletDM_Z2") ) |
+| | **[if](/documentation/code/files/calchep__3__6__27_8cpp/#function-if)**(ModelInUse("DMEFT") ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/calchep__3__6__27_8cpp/#variable-calchep-3-6-27-cpp-be-ini-function)**  |
-| | **[scan_level](/documentation/code/files/calchep__3__6__27_8cpp/#variable-calchep-3-6-27-cpp-scan-level)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/files/calchep__3__6__27_8cpp/#variable-be-ini-function)**  |
+| | **[scan_level](/documentation/code/files/calchep__3__6__27_8cpp/#variable-scan-level)**  |
 
 ## Detailed Description
 
@@ -730,4 +730,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:06 +0000

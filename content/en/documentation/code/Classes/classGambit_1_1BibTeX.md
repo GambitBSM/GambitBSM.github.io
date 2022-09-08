@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BibTeX](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-bibtex)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) bibtex_file) |
-| const [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) | **[filename](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-filename)**() const |
-| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > | **[getBibTeXEntries](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-getbibtexentries)**() const |
-| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > > | **[getBibTeXData](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-getbibtexdata)**() const |
-| void | **[dropBibTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-dropbibtexfile)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) output_filename) const |
-| void | **[dropBibTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-dropbibtexfile)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > & citation_keys, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) output_filename) const |
-| void | **[dropTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-droptexfile)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > & citation_keys, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) tex_filename, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) bibtex_filename) const |
-| void | **[addCitationKey](/documentation/code/classes/classgambit_1_1bibtex/#function-gambitbibtex-addcitationkey)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) > & citationKeys, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) bibkey) |
+| | **[BibTeX](/documentation/code/classes/classgambit_1_1bibtex/#function-bibtex)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) bibtex_file) |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[filename](/documentation/code/classes/classgambit_1_1bibtex/#function-filename)**() const |
+| const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[getBibTeXEntries](/documentation/code/classes/classgambit_1_1bibtex/#function-getbibtexentries)**() const |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > | **[getBibTeXData](/documentation/code/classes/classgambit_1_1bibtex/#function-getbibtexdata)**() const |
+| void | **[dropBibTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-dropbibtexfile)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) output_filename) const |
+| void | **[dropBibTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-dropbibtexfile)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & citation_keys, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) output_filename) const |
+| void | **[dropTeXFile](/documentation/code/classes/classgambit_1_1bibtex/#function-droptexfile)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & citation_keys, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) tex_filename, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) bibtex_filename) const |
+| void | **[addCitationKey](/documentation/code/classes/classgambit_1_1bibtex/#function-addcitationkey)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & citationKeys, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) bibkey) |
 
 ## Public Functions Documentation
 
@@ -98,4 +98,4 @@ static void addCitationKey(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

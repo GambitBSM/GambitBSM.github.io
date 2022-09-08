@@ -17,7 +17,7 @@ Helper for the static_assert below.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| enum| **[@2](/documentation/code/classes/structgambit_1_1always__false/#enum-gambitalways-false-2)** { value = false} |
+| enum| **[@2](/documentation/code/classes/structgambit_1_1always__false/#enum-2)** { value = false} |
 
 ## Detailed Description
 
@@ -40,4 +40,4 @@ Helper for the static_assert below.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

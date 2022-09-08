@@ -13,14 +13,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-specbit-sm-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-capability)** <br>Produce an SMInputs object (SLHA2 conventions)  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sm__rollcall_8hpp/#define-function)**  |
 
 ## Detailed Description
 
@@ -181,4 +181,4 @@ Produce an SMInputs object (SLHA2 conventions)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

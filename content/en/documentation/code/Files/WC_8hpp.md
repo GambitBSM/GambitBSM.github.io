@@ -13,39 +13,39 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[DEFINEPARS](/documentation/code/files/wc_8hpp/#function-wc-hpp-definepars)**(Re_DeltaC7_tau , Im_DeltaC7_tau , Re_DeltaC9_tau , Im_DeltaC9_tau , Re_DeltaC10_tau , Im_DeltaC10_tau , Re_DeltaCQ1_tau , Im_DeltaCQ1_tau , Re_DeltaCQ2_tau , Im_DeltaCQ2_tau , Re_DeltaC7_mu , Im_DeltaC7_mu , Re_DeltaC9_mu , Im_DeltaC9_mu , Re_DeltaC10_mu , Im_DeltaC10_mu , Re_DeltaCQ1_mu , Im_DeltaCQ1_mu , Re_DeltaCQ2_mu , Im_DeltaCQ2_mu , Re_DeltaC7_e , Im_DeltaC7_e , Re_DeltaC9_e , Im_DeltaC9_e , Re_DeltaC10_e , Im_DeltaC10_e , Re_DeltaCQ1_e , Im_DeltaCQ1_e , Re_DeltaCQ2_e , Im_DeltaCQ2_e ) |
+| START_MODEL | **[DEFINEPARS](/documentation/code/files/wc_8hpp/#function-definepars)**(Re_DeltaC7_tau , Im_DeltaC7_tau , Re_DeltaC9_tau , Im_DeltaC9_tau , Re_DeltaC10_tau , Im_DeltaC10_tau , Re_DeltaCQ1_tau , Im_DeltaCQ1_tau , Re_DeltaCQ2_tau , Im_DeltaCQ2_tau , Re_DeltaC7_mu , Im_DeltaC7_mu , Re_DeltaC9_mu , Im_DeltaC9_mu , Re_DeltaC10_mu , Im_DeltaC10_mu , Re_DeltaCQ1_mu , Im_DeltaCQ1_mu , Re_DeltaCQ2_mu , Im_DeltaCQ2_mu , Re_DeltaC7_e , Im_DeltaC7_e , Re_DeltaC9_e , Im_DeltaC9_e , Re_DeltaC10_e , Im_DeltaC10_e , Re_DeltaCQ1_e , Im_DeltaCQ1_e , Re_DeltaCQ2_e , Im_DeltaCQ2_e ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[Im_DeltaC7](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltac7)**  |
-| START_MODEL | **[Re_DeltaC9](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltac9)**  |
-| START_MODEL | **[Im_DeltaC9](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltac9)**  |
-| START_MODEL | **[Re_DeltaC10](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltac10)**  |
-| START_MODEL | **[Im_DeltaC10](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltac10)**  |
-| START_MODEL | **[Re_DeltaCQ1](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltacq1)**  |
-| START_MODEL | **[Im_DeltaCQ1](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltacq1)**  |
-| START_MODEL | **[Re_DeltaCQ2](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltacq2)**  |
-| START_MODEL | **[Im_DeltaCQ2](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltacq2)**  |
-| START_MODEL | **[Re_DeltaC7_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltac7-prime)**  |
-| START_MODEL | **[Im_DeltaC7_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltac7-prime)**  |
-| START_MODEL | **[Re_DeltaC9_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltac9-prime)**  |
-| START_MODEL | **[Im_DeltaC9_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltac9-prime)**  |
-| START_MODEL | **[Re_DeltaC10_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltac10-prime)**  |
-| START_MODEL | **[Im_DeltaC10_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltac10-prime)**  |
-| START_MODEL | **[Re_DeltaCQ1_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltacq1-prime)**  |
-| START_MODEL | **[Im_DeltaCQ1_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-im-deltacq1-prime)**  |
-| START_MODEL | **[Re_DeltaCQ2_Prime](/documentation/code/files/wc_8hpp/#variable-wc-hpp-re-deltacq2-prime)**  |
+| START_MODEL | **[Im_DeltaC7](/documentation/code/files/wc_8hpp/#variable-im-deltac7)**  |
+| START_MODEL | **[Re_DeltaC9](/documentation/code/files/wc_8hpp/#variable-re-deltac9)**  |
+| START_MODEL | **[Im_DeltaC9](/documentation/code/files/wc_8hpp/#variable-im-deltac9)**  |
+| START_MODEL | **[Re_DeltaC10](/documentation/code/files/wc_8hpp/#variable-re-deltac10)**  |
+| START_MODEL | **[Im_DeltaC10](/documentation/code/files/wc_8hpp/#variable-im-deltac10)**  |
+| START_MODEL | **[Re_DeltaCQ1](/documentation/code/files/wc_8hpp/#variable-re-deltacq1)**  |
+| START_MODEL | **[Im_DeltaCQ1](/documentation/code/files/wc_8hpp/#variable-im-deltacq1)**  |
+| START_MODEL | **[Re_DeltaCQ2](/documentation/code/files/wc_8hpp/#variable-re-deltacq2)**  |
+| START_MODEL | **[Im_DeltaCQ2](/documentation/code/files/wc_8hpp/#variable-im-deltacq2)**  |
+| START_MODEL | **[Re_DeltaC7_Prime](/documentation/code/files/wc_8hpp/#variable-re-deltac7-prime)**  |
+| START_MODEL | **[Im_DeltaC7_Prime](/documentation/code/files/wc_8hpp/#variable-im-deltac7-prime)**  |
+| START_MODEL | **[Re_DeltaC9_Prime](/documentation/code/files/wc_8hpp/#variable-re-deltac9-prime)**  |
+| START_MODEL | **[Im_DeltaC9_Prime](/documentation/code/files/wc_8hpp/#variable-im-deltac9-prime)**  |
+| START_MODEL | **[Re_DeltaC10_Prime](/documentation/code/files/wc_8hpp/#variable-re-deltac10-prime)**  |
+| START_MODEL | **[Im_DeltaC10_Prime](/documentation/code/files/wc_8hpp/#variable-im-deltac10-prime)**  |
+| START_MODEL | **[Re_DeltaCQ1_Prime](/documentation/code/files/wc_8hpp/#variable-re-deltacq1-prime)**  |
+| START_MODEL | **[Im_DeltaCQ1_Prime](/documentation/code/files/wc_8hpp/#variable-im-deltacq1-prime)**  |
+| START_MODEL | **[Re_DeltaCQ2_Prime](/documentation/code/files/wc_8hpp/#variable-re-deltacq2-prime)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/wc_8hpp/#define-wc-hpp-model)**  |
-|  | **[MODEL](/documentation/code/files/wc_8hpp/#define-wc-hpp-model)**  |
-|  | **[MODEL](/documentation/code/files/wc_8hpp/#define-wc-hpp-model)**  |
-|  | **[PARENT](/documentation/code/files/wc_8hpp/#define-wc-hpp-parent)**  |
+|  | **[MODEL](/documentation/code/files/wc_8hpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/wc_8hpp/#define-model)**  |
+|  | **[MODEL](/documentation/code/files/wc_8hpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/wc_8hpp/#define-parent)**  |
 
 
 ## Functions Documentation
@@ -309,4 +309,4 @@ START_MODEL Re_DeltaCQ2_Prime;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

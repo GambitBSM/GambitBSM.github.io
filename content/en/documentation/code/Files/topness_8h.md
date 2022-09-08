@@ -21,20 +21,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[my_lp](/documentation/code/files/topness_8h/#function-topness-h-my-lp)**(double u[4], double v[4]) |
-| void | **[my_add](/documentation/code/files/topness_8h/#function-topness-h-my-add)**(double a[4], double b[4], double c[4]) |
-| double | **[my_dot](/documentation/code/files/topness_8h/#function-topness-h-my-dot)**(double p1[], double p2[], int d) |
-| double | **[my_dot](/documentation/code/files/topness_8h/#function-topness-h-my-dot)**(double p1[], double p2[], double a[], int d) |
-| double | **[my_enorm](/documentation/code/files/topness_8h/#function-topness-h-my-enorm)**(double p[], int d) |
-| double | **[topnesscompute](/documentation/code/files/topness_8h/#function-topness-h-topnesscompute)**(double pb1[4], double pl[4], double MET[4], double sigmat, double sigmaW) |
+| double | **[my_lp](/documentation/code/files/topness_8h/#function-my-lp)**(double u[4], double v[4]) |
+| void | **[my_add](/documentation/code/files/topness_8h/#function-my-add)**(double a[4], double b[4], double c[4]) |
+| double | **[my_dot](/documentation/code/files/topness_8h/#function-my-dot)**(double p1[], double p2[], int d) |
+| double | **[my_dot](/documentation/code/files/topness_8h/#function-my-dot)**(double p1[], double p2[], double a[], int d) |
+| double | **[my_enorm](/documentation/code/files/topness_8h/#function-my-enorm)**(double p[], int d) |
+| double | **[topnesscompute](/documentation/code/files/topness_8h/#function-topnesscompute)**(double pb1[4], double pl[4], double MET[4], double sigmat, double sigmaW) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const double | **[mt](/documentation/code/files/topness_8h/#variable-topness-h-mt)**  |
-| const double | **[mW](/documentation/code/files/topness_8h/#variable-topness-h-mw)**  |
-| const int | **[DMAX](/documentation/code/files/topness_8h/#variable-topness-h-dmax)**  |
+| const double | **[mt](/documentation/code/files/topness_8h/#variable-mt)**  |
+| const double | **[mW](/documentation/code/files/topness_8h/#variable-mw)**  |
+| const int | **[DMAX](/documentation/code/files/topness_8h/#variable-dmax)**  |
 
 
 ## Functions Documentation
@@ -986,4 +986,4 @@ double topnesscompute(double pb1[4], double pl[4], double MET[4], double sigmat,
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:53 +0000
+Updated on 2022-09-08 at 02:23:04 +0000

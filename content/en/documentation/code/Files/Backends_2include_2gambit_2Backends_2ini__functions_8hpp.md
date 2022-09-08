@@ -26,7 +26,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NS_SEP](/documentation/code/files/backends_2include_2gambit_2backends_2ini__functions_8hpp/#define-backends-include-gambit-backends-ini-functions-hpp-ns-sep)** <br>Define the separator to use instead of "::" when macros get gnarly.  |
+|  | **[NS_SEP](/documentation/code/files/backends_2include_2gambit_2backends_2ini__functions_8hpp/#define-ns-sep)** <br>Define the separator to use instead of "::" when macros get gnarly.  |
 
 ## Detailed Description
 
@@ -222,4 +222,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:06 +0000

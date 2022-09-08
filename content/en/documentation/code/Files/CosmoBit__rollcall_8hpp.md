@@ -13,183 +13,183 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(get_energy_injection_efficiency_table , () , DarkAges::Energy_injection_efficiency_table , () )<br>initialise settings for MultiModeCode  |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(multimodecode_parametrised_ps , () , gambit_inflation_observables , (int &, int &, int &, int &, double *, double *, double *, double &, double &, double &, int &, int &, int &, int &, int &) )<br>get unlensed CMB TT spectrum  |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(class_get_lensed_cl , () , std::vector< double > , (str) )<br>get unlensed CMB Temperature-E mode cross-correlation spectrum  |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(plc_loglike_lowl_TEB_2015 , () , double , (double *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(plc_loglike_lowl_EE_2018 , () , double , (double *) ) |
-| double * | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(plc_loglike_lowl_EE_2018 , (plc_tag) , double , (double *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(plc_loglike_highl_TT_lite_2015 , () , double , (double *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(plc_loglike_highl_TTTEEE_lite_2015 , () , double , (double *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(plc_loglike_highl_TT_lite_2018 , () , double , (double *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(plc_loglike_highl_TTTEEE_lite_2018 , () , double , (double *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(plc_loglike_lensing_2018 , () , double , (double *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(class_get_H0 , () , double , () )<br>Get Hubble rate at z in km/s/Mpc.  |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(class_get_tz , () , double , (double) )<br>Get t(z=0) in s.  |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(class_get_Omega0_r , () , double , () )<br>energy density in photons today  |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(class_get_Omega0_ncdm_tot , () , double , () )<br>baryon-to-photon ratio today  |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(class_get_tau_reio , () , double , () ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(class_get_Neff , () , double , () ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(call_nucl_err , (alterbbn_tag) , int , (map_str_dbl &, double *, double *) ) |
-| map_str_dbl double * | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(get_NNUC , (alterbbn_tag) , size_t , () ) |
-| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-cosmobit-rollcall-hpp-backend-req)**(set_input_params , () , void , (bool, int, int, double) ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(get_energy_injection_efficiency_table , () , DarkAges::Energy_injection_efficiency_table , () )<br>initialise settings for MultiModeCode  |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(multimodecode_parametrised_ps , () , gambit_inflation_observables , (int &, int &, int &, int &, double *, double *, double *, double &, double &, double &, int &, int &, int &, int &, int &) )<br>get unlensed CMB TT spectrum  |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(class_get_lensed_cl , () , std::vector< double > , (str) )<br>get unlensed CMB Temperature-E mode cross-correlation spectrum  |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(plc_loglike_lowl_TEB_2015 , () , double , (double *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(plc_loglike_lowl_EE_2018 , () , double , (double *) ) |
+| double * | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(plc_loglike_lowl_EE_2018 , (plc_tag) , double , (double *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(plc_loglike_highl_TT_lite_2015 , () , double , (double *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(plc_loglike_highl_TTTEEE_lite_2015 , () , double , (double *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(plc_loglike_highl_TT_lite_2018 , () , double , (double *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(plc_loglike_highl_TTTEEE_lite_2018 , () , double , (double *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(plc_loglike_lensing_2018 , () , double , (double *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(class_get_H0 , () , double , () )<br>Get Hubble rate at z in km/s/Mpc.  |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(class_get_tz , () , double , (double) )<br>Get t(z=0) in s.  |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(class_get_Omega0_r , () , double , () )<br>energy density in photons today  |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(class_get_Omega0_ncdm_tot , () , double , () )<br>baryon-to-photon ratio today  |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(class_get_tau_reio , () , double , () ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(class_get_Neff , () , double , () ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(call_nucl_err , (alterbbn_tag) , int , (map_str_dbl &, double *, double *) ) |
+| map_str_dbl double * | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(get_NNUC , (alterbbn_tag) , size_t , () ) |
+| | **[BACKEND_REQ](/documentation/code/files/cosmobit__rollcall_8hpp/#function-backend-req)**(set_input_params , () , void , (bool, int, int, double) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[gambit_inflation_observables](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-cosmobit-rollcall-hpp-gambit-inflation-observables)**  |
-| | **[double](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-cosmobit-rollcall-hpp-double)**  |
-| | **[plc_tag](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-cosmobit-rollcall-hpp-plc-tag)**  |
-| | **[alterbbn_tag](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-cosmobit-rollcall-hpp-alterbbn-tag)**  |
-| | **[int](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-cosmobit-rollcall-hpp-int)**  |
-| map_str_dbl double | **[map_str_int](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-cosmobit-rollcall-hpp-map-str-int)**  |
-| | **[void](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-cosmobit-rollcall-hpp-void)**  |
+| | **[gambit_inflation_observables](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-gambit-inflation-observables)**  |
+| | **[double](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-double)**  |
+| | **[plc_tag](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-plc-tag)**  |
+| | **[alterbbn_tag](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-alterbbn-tag)**  |
+| | **[int](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-int)**  |
+| map_str_dbl double | **[map_str_int](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-map-str-int)**  |
+| | **[void](/documentation/code/files/cosmobit__rollcall_8hpp/#variable-void)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-module)**  |
-|  | **[REFERENCE](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-reference)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
-|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-cosmobit-rollcall-hpp-function)**  |
+|  | **[MODULE](/documentation/code/files/cosmobit__rollcall_8hpp/#define-module)**  |
+|  | **[REFERENCE](/documentation/code/files/cosmobit__rollcall_8hpp/#define-reference)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 
 ## Detailed Description
 
@@ -6008,4 +6008,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:52 +0000
+Updated on 2022-09-08 at 02:23:04 +0000

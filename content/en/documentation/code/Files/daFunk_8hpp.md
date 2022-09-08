@@ -44,10 +44,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEF_FUNKTRAIT](/documentation/code/files/dafunk_8hpp/#define-dafunk-hpp-def-funktrait)**(C)  |
-|  | **[MATH_OPERATION](/documentation/code/files/dafunk_8hpp/#define-dafunk-hpp-math-operation)**(OPERATION)  |
-|  | **[MATH_OPERATION](/documentation/code/files/dafunk_8hpp/#define-dafunk-hpp-math-operation)**(OPERATION, SYMBOL)  |
-|  | **[MATH_OPERATION](/documentation/code/files/dafunk_8hpp/#define-dafunk-hpp-math-operation)**(OPERATION)  |
+|  | **[DEF_FUNKTRAIT](/documentation/code/files/dafunk_8hpp/#define-def-funktrait)**(C)  |
+|  | **[MATH_OPERATION](/documentation/code/files/dafunk_8hpp/#define-math-operation)**(OPERATION)  |
+|  | **[MATH_OPERATION](/documentation/code/files/dafunk_8hpp/#define-math-operation)**(OPERATION, SYMBOL)  |
+|  | **[MATH_OPERATION](/documentation/code/files/dafunk_8hpp/#define-math-operation)**(OPERATION)  |
 
 
 
@@ -1895,4 +1895,4 @@ namespace daFunk
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:52 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

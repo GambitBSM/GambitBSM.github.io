@@ -13,24 +13,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[BE_VARIABLE](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#function-darksusy-mssm-6-2-5-hpp-be-variable)**(anbranch , DS_NUCOM , "anbranch_" , "nu_common_block" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_VARIABLE](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#function-be-variable)**(anbranch , DS_NUCOM , "anbranch_" , "nu_common_block" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[DS_DDMSSMCOM](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#variable-darksusy-mssm-6-2-5-hpp-ds-ddmssmcom)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[ddmssmcom_](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#variable-darksusy-mssm-6-2-5-hpp-ddmssmcom)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[DS_DDMSSMCOM](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#variable-ds-ddmssmcom)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[ddmssmcom_](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#variable-ddmssmcom)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-darksusy-mssm-6-2-5-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-darksusy-mssm-6-2-5-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-darksusy-mssm-6-2-5-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-darksusy-mssm-6-2-5-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-darksusy-mssm-6-2-5-hpp-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/darksusy__mssm__6__2__5_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -244,4 +244,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(decay_rates, DecayTable, MSSM63atQ, CMSSM)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

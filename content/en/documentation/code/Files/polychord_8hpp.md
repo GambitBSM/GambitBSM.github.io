@@ -27,7 +27,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[run_polychord](/documentation/code/files/polychord_8hpp/#function-polychord-hpp-run-polychord)**(double(*)(double *, int, double *, int) loglikelihood, void(*)(int, int, int, double *, double *, double *, double, double) dumper, [Settings](/documentation/code/classes/structsettings/) ) |
+| void | **[run_polychord](/documentation/code/files/polychord_8hpp/#function-run-polychord)**(double(*)(double *, int, double *, int) loglikelihood, void(*)(int, int, int, double *, double *, double *, double, double) dumper, [Settings](/documentation/code/classes/structsettings/) ) |
 
 ## Detailed Description
 
@@ -218,4 +218,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

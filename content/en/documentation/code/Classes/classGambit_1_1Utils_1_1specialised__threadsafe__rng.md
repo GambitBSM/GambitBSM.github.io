@@ -19,9 +19,9 @@ Inherits from [Gambit::Utils::threadsafe_rng](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[specialised_threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/#function-gambitutilsspecialised-threadsafe-rng-specialised-threadsafe-rng)**(int & seed)<br>Create RNG engines, one for each thread.  |
-| virtual | **[~specialised_threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/#function-gambitutilsspecialised-threadsafe-rng-specialised-threadsafe-rng)**()<br>Destroy RNG engines.  |
-| virtual [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-gambitutilsthreadsafe-rng-result-type) | **[operator()](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/#function-gambitutilsspecialised-threadsafe-rng-operator)**() |
+| | **[specialised_threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/#function-specialised-threadsafe-rng)**(int & seed)<br>Create RNG engines, one for each thread.  |
+| virtual | **[~specialised_threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/#function-specialised-threadsafe-rng)**()<br>Destroy RNG engines.  |
+| virtual [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-result-type) | **[operator()](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/#function-operator)**() |
 
 ## Additional inherited members
 
@@ -29,15 +29,15 @@ Inherits from [Gambit::Utils::threadsafe_rng](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::uint64_t | **[result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-gambitutilsthreadsafe-rng-result-type)** <br>Return type (will convert underlying RNG type to this)  |
+| typedef std::uint64_t | **[result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-result-type)** <br>Return type (will convert underlying RNG type to this)  |
 
 **Public Functions inherited from [Gambit::Utils::threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-gambitutilsthreadsafe-rng-threadsafe-rng)**() =0<br>Pure virtual destructor to force overriding in derived class.  |
-| constexpr [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-gambitutilsthreadsafe-rng-result-type) | **[min](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-gambitutilsthreadsafe-rng-min)**()<br>Operators for compliance with RandomNumberEngine interface -> random distribution sampling.  |
-| constexpr [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-gambitutilsthreadsafe-rng-result-type) | **[max](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-gambitutilsthreadsafe-rng-max)**() |
+| virtual | **[~threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-threadsafe-rng)**() =0<br>Pure virtual destructor to force overriding in derived class.  |
+| constexpr [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-result-type) | **[min](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-min)**()<br>Operators for compliance with RandomNumberEngine interface -> random distribution sampling.  |
+| constexpr [result_type](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#typedef-result-type) | **[max](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-max)**() |
 
 
 ## Detailed Description
@@ -75,12 +75,12 @@ inline virtual result_type operator()()
 ```
 
 
-**Reimplements**: [Gambit::Utils::threadsafe_rng::operator()](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-gambitutilsthreadsafe-rng-operator)
+**Reimplements**: [Gambit::Utils::threadsafe_rng::operator()](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/#function-operator)
 
 
-Generate a random integer using the chosen engine Selected uniformly from range (min,max). To be used as an entropy source for stdlib distributions. If you want (0,1) random doubles then please use [Random::draw()](/documentation/code/classes/classgambit_1_1random/#function-gambitrandom-draw), NOT this function! 
+Generate a random integer using the chosen engine Selected uniformly from range (min,max). To be used as an entropy source for stdlib distributions. If you want (0,1) random doubles then please use [Random::draw()](/documentation/code/classes/classgambit_1_1random/#function-draw), NOT this function! 
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

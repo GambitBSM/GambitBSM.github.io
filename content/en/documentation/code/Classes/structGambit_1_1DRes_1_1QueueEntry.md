@@ -17,17 +17,17 @@ Information in parameter queue.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-gambitdresqueueentry-queueentry)**() |
-| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-gambitdresqueueentry-queueentry)**([sspair](/documentation/code/namespaces/namespacegambit/#typedef-gambit-sspair) a, DRes::VertexID b, int c, bool d) |
+| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**() |
+| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**([sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) a, DRes::VertexID b, int c, bool d) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [sspair](/documentation/code/namespaces/namespacegambit/#typedef-gambit-sspair) | **[first](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-gambitdresqueueentry-first)**  |
-| DRes::VertexID | **[second](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-gambitdresqueueentry-second)**  |
-| int | **[third](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-gambitdresqueueentry-third)**  |
-| bool | **[printme](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-gambitdresqueueentry-printme)**  |
+| [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) | **[first](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-first)**  |
+| DRes::VertexID | **[second](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-second)**  |
+| int | **[third](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-third)**  |
+| bool | **[printme](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-printme)**  |
 
 ## Public Functions Documentation
 
@@ -82,4 +82,4 @@ bool printme;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

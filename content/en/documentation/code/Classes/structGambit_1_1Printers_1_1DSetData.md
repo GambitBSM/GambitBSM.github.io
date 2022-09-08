@@ -15,17 +15,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[DSetData](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#function-gambitprintersdsetdata-dsetdata)**(int r) |
+| | **[DSetData](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#function-dsetdata)**(int r) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[rank](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-gambitprintersdsetdata-rank)**  |
-| std::vector< std::string > | **[names](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-gambitprintersdsetdata-names)**  |
-| std::vector< unsigned long > | **[lengths](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-gambitprintersdsetdata-lengths)**  |
-| std::string | **[local_info](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-gambitprintersdsetdata-local-info)** <br>Need to analyse this in a more "streaming" way, otherwise too big and slow.  |
-| std::string | **[errmsg](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-gambitprintersdsetdata-errmsg)**  |
+| int | **[rank](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-rank)**  |
+| std::vector< std::string > | **[names](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-names)**  |
+| std::vector< unsigned long > | **[lengths](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-lengths)**  |
+| std::string | **[local_info](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-local-info)** <br>Need to analyse this in a more "streaming" way, otherwise too big and slow.  |
+| std::string | **[errmsg](/documentation/code/classes/structgambit_1_1printers_1_1dsetdata/#variable-errmsg)**  |
 
 ## Public Functions Documentation
 
@@ -78,4 +78,4 @@ std::string errmsg;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

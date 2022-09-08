@@ -13,53 +13,53 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ALLOW_MODELS](/documentation/code/files/objectivesbit__rollcall_8hpp/#function-objectivesbit-rollcall-hpp-allow-models)**(trivial_1d , trivial_2d , trivial_3d , trivial_4d , trivial_5d , trivial_7d , trivial_10d ) |
+| | **[ALLOW_MODELS](/documentation/code/files/objectivesbit__rollcall_8hpp/#function-allow-models)**(trivial_1d , trivial_2d , trivial_3d , trivial_4d , trivial_5d , trivial_7d , trivial_10d ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[trivial_2d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-objectivesbit-rollcall-hpp-trivial-2d)**  |
-| | **[trivial_3d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-objectivesbit-rollcall-hpp-trivial-3d)**  |
-| | **[trivial_4d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-objectivesbit-rollcall-hpp-trivial-4d)**  |
-| | **[trivial_5d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-objectivesbit-rollcall-hpp-trivial-5d)**  |
-| | **[trivial_7d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-objectivesbit-rollcall-hpp-trivial-7d)**  |
+| | **[trivial_2d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-trivial-2d)**  |
+| | **[trivial_3d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-trivial-3d)**  |
+| | **[trivial_4d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-trivial-4d)**  |
+| | **[trivial_5d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-trivial-5d)**  |
+| | **[trivial_7d](/documentation/code/files/objectivesbit__rollcall_8hpp/#variable-trivial-7d)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-module)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-objectivesbit-rollcall-hpp-function)**  |
+|  | **[MODULE](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-module)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/objectivesbit__rollcall_8hpp/#define-function)**  |
 
 ## Detailed Description
 
@@ -595,4 +595,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

@@ -18,9 +18,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[H5P_LocalReadBufferManager](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localreadbuffermanager/#function-gambitprintersh5p-localreadbuffermanager-h5p-localreadbuffermanager)**()<br>Constructor.  |
-| | **[~H5P_LocalReadBufferManager](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localreadbuffermanager/#function-gambitprintersh5p-localreadbuffermanager-h5p-localreadbuffermanager)**()<br>Destructor. Close all datasets.  |
-| [BuffPair](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/)< T > & | **[get_buffer](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localreadbuffermanager/#function-gambitprintersh5p-localreadbuffermanager-get-buffer)**(const int vID, const unsigned int i, const std::string & label, hid_t location_id)<br>Buffer retrieve function.  |
+| | **[H5P_LocalReadBufferManager](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localreadbuffermanager/#function-h5p-localreadbuffermanager)**()<br>Constructor.  |
+| | **[~H5P_LocalReadBufferManager](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localreadbuffermanager/#function-h5p-localreadbuffermanager)**()<br>Destructor. Close all datasets.  |
+| [BuffPair](/documentation/code/classes/structgambit_1_1printers_1_1buffpair/)< T > & | **[get_buffer](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localreadbuffermanager/#function-get-buffer)**(const int vID, const unsigned int i, const std::string & label, hid_t location_id)<br>Buffer retrieve function.  |
 
 ## Detailed Description
 
@@ -68,4 +68,4 @@ Retrieve a buffer for an IDcode/auxilliary-index pair location_id used to access
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

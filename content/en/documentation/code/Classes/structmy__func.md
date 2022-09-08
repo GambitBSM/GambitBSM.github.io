@@ -15,19 +15,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[my_func](/documentation/code/classes/structmy__func/#function-my-func-my-func)**(double ppb1[4], double ppl[4], double ppMET[4], double sigmatt, double sigmaWW, double ssign) |
-| double | **[operator()](/documentation/code/classes/structmy__func/#function-my-func-operator)**(double points[], int ) |
+| | **[my_func](/documentation/code/classes/structmy__func/#function-my-func)**(double ppb1[4], double ppl[4], double ppMET[4], double sigmatt, double sigmaWW, double ssign) |
+| double | **[operator()](/documentation/code/classes/structmy__func/#function-operator)**(double points[], int ) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double[4] | **[pb1](/documentation/code/classes/structmy__func/#variable-my-func-pb1)**  |
-| double[4] | **[pl](/documentation/code/classes/structmy__func/#variable-my-func-pl)**  |
-| double[4] | **[pMET](/documentation/code/classes/structmy__func/#variable-my-func-pmet)**  |
-| double | **[sigmat](/documentation/code/classes/structmy__func/#variable-my-func-sigmat)**  |
-| double | **[sigmaW](/documentation/code/classes/structmy__func/#variable-my-func-sigmaw)**  |
-| double | **[sign](/documentation/code/classes/structmy__func/#variable-my-func-sign)**  |
+| double[4] | **[pb1](/documentation/code/classes/structmy__func/#variable-pb1)**  |
+| double[4] | **[pl](/documentation/code/classes/structmy__func/#variable-pl)**  |
+| double[4] | **[pMET](/documentation/code/classes/structmy__func/#variable-pmet)**  |
+| double | **[sigmat](/documentation/code/classes/structmy__func/#variable-sigmat)**  |
+| double | **[sigmaW](/documentation/code/classes/structmy__func/#variable-sigmaw)**  |
+| double | **[sign](/documentation/code/classes/structmy__func/#variable-sign)**  |
 
 ## Public Functions Documentation
 
@@ -101,4 +101,4 @@ double sign;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::size_t | **[operator()](/documentation/code/classes/structchunkhash/#function-chunkhash-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & key) const |
-| std::size_t | **[operator()](/documentation/code/classes/structchunkhash/#function-chunkhash-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & key) const |
+| std::size_t | **[operator()](/documentation/code/classes/structchunkhash/#function-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & key) const |
+| std::size_t | **[operator()](/documentation/code/classes/structchunkhash/#function-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & key) const |
 
 ## Public Functions Documentation
 
@@ -40,4 +40,4 @@ inline std::size_t operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

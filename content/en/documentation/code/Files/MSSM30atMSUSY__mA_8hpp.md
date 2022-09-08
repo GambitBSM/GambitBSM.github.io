@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/mssm30atmsusy__ma_8hpp/#define-mssm30atmsusy-ma-hpp-model)** <br>FlexibleSUSY compatible general (78 parameters plus sign) MSSM parameterisation.  |
-|  | **[PARENT](/documentation/code/files/mssm30atmsusy__ma_8hpp/#define-mssm30atmsusy-ma-hpp-parent)**  |
+|  | **[MODEL](/documentation/code/files/mssm30atmsusy__ma_8hpp/#define-model)** <br>FlexibleSUSY compatible general (78 parameters plus sign) MSSM parameterisation.  |
+|  | **[PARENT](/documentation/code/files/mssm30atmsusy__ma_8hpp/#define-parent)**  |
 
 
 
@@ -126,4 +126,4 @@ Ben Farmer ([ben.farmer@gmail.com](mailto:ben.farmer@gmail.com))
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

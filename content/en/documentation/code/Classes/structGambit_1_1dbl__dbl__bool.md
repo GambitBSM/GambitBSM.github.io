@@ -15,18 +15,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-gambitdbl-dbl-bool-dbl-dbl-bool)**()<br>Default constructor.  |
-| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-gambitdbl-dbl-bool-dbl-dbl-bool)**(double firstval, double secondval, bool flagval)<br>Three-value constructor.  |
-| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-gambitdbl-dbl-bool-dbl-dbl-bool)**(const [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & in)<br>Copy constructor.  |
-| [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & | **[operator=](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-gambitdbl-dbl-bool-operator)**(const [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & in)<br>Copy assignment operator.  |
+| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-dbl-dbl-bool)**()<br>Default constructor.  |
+| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-dbl-dbl-bool)**(double firstval, double secondval, bool flagval)<br>Three-value constructor.  |
+| | **[dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-dbl-dbl-bool)**(const [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & in)<br>Copy constructor.  |
+| [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & | **[operator=](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#function-operator)**(const [dbl_dbl_bool](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/) & in)<br>Copy assignment operator.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[first](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-gambitdbl-dbl-bool-first)**  |
-| double | **[second](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-gambitdbl-dbl-bool-second)**  |
-| bool | **[flag](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-gambitdbl-dbl-bool-flag)**  |
+| double | **[first](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-first)**  |
+| double | **[second](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-second)**  |
+| bool | **[flag](/documentation/code/classes/structgambit_1_1dbl__dbl__bool/#variable-flag)**  |
 
 ## Public Functions Documentation
 
@@ -95,4 +95,4 @@ bool flag;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

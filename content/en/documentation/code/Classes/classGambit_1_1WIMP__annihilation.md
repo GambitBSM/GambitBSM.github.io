@@ -18,11 +18,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[WIMP_annihilation](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-gambitwimp-annihilation-wimp-annihilation)**()<br>Set up generic parameterisation of WIMP self-annihilation cross-section (A + Bv^2)  |
-| double | **[A](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-gambitwimp-annihilation-a)**(const std::string & channel) const |
-| double | **[B](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-gambitwimp-annihilation-b)**(const std::string & channel) const |
-| void | **[setA](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-gambitwimp-annihilation-seta)**(const std::string & channel, double val) |
-| void | **[setB](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-gambitwimp-annihilation-setb)**(const std::string & channel, double val) |
+| | **[WIMP_annihilation](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-wimp-annihilation)**()<br>Set up generic parameterisation of WIMP self-annihilation cross-section (A + Bv^2)  |
+| double | **[A](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-a)**(const std::string & channel) const |
+| double | **[B](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-b)**(const std::string & channel) const |
+| void | **[setA](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-seta)**(const std::string & channel, double val) |
+| void | **[setB](/documentation/code/classes/classgambit_1_1wimp__annihilation/#function-setb)**(const std::string & channel, double val) |
 
 ## Detailed Description
 
@@ -83,4 +83,4 @@ void setB(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

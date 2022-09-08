@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| hid_t | **[type](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01unsigned_01long_01long_01_4/#function-gambitprintersget-hdf5-data-type-unsigned-long-long-type)**() |
+| hid_t | **[type](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01unsigned_01long_01long_01_4/#function-type)**() |
 
 ## Public Functions Documentation
 
@@ -28,4 +28,4 @@ static inline hid_t type()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

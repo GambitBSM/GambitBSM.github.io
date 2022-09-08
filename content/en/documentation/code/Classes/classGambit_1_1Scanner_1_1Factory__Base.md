@@ -19,8 +19,8 @@ Inherited by [Gambit::Likelihood_Container_Factory](/documentation/code/classes/
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-gambitscannerfactory-base-operator)**(const std::string & purpose) const =0 |
-| virtual | **[~Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-gambitscannerfactory-base-factory-base)**() |
+| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-operator)**(const std::string & purpose) const =0 |
+| virtual | **[~Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/#function-factory-base)**() |
 
 ## Public Functions Documentation
 
@@ -33,7 +33,7 @@ virtual void * operator()(
 ```
 
 
-**Reimplemented by**: [Gambit::Scanner::Plugin_Function_Factory::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-gambitscannerplugin-function-factory-operator), [Gambit::Likelihood_Container_Factory::operator()](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-gambitlikelihood-container-factory-operator)
+**Reimplemented by**: [Gambit::Scanner::Plugin_Function_Factory::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-operator), [Gambit::Likelihood_Container_Factory::operator()](/documentation/code/classes/classgambit_1_1likelihood__container__factory/#function-operator)
 
 
 ### function ~Factory_Base
@@ -45,4 +45,4 @@ inline virtual ~Factory_Base()
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

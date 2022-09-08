@@ -13,22 +13,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-capability)** <br>TEST FUNCTIONS.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-capability)** <br>TEST FUNCTIONS.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-capability)** <br>TEST FUNCTIONS.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-capability)** <br>TEST FUNCTIONS.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-capability)** <br>TEST FUNCTIONS.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-capability)** <br>TEST FUNCTIONS.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-capability)** <br>TEST FUNCTIONS.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-capability)** <br>TEST FUNCTIONS.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-specbit-sandbox-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-capability)** <br>TEST FUNCTIONS.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-capability)** <br>TEST FUNCTIONS.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-capability)** <br>TEST FUNCTIONS.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-capability)** <br>TEST FUNCTIONS.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-capability)** <br>TEST FUNCTIONS.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-capability)** <br>TEST FUNCTIONS.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-capability)** <br>TEST FUNCTIONS.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-capability)** <br>TEST FUNCTIONS.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__sandbox__rollcall_8hpp/#define-function)**  |
 
 ## Detailed Description
 
@@ -280,4 +280,4 @@ TEST FUNCTIONS.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

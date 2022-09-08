@@ -15,15 +15,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[s2thw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-s2thw)**  |
-| Fdouble | **[sinthw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-sinthw)**  |
-| Fdouble | **[costhw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-costhw)**  |
-| Fdouble | **[delrho](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-delrho)**  |
-| Fdouble | **[alph3mz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-alph3mz)**  |
-| Fdouble | **[gfermi](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-gfermi)**  |
-| Fdouble | **[s2wmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-s2wmz)**  |
-| Fdouble | **[swmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-swmz)**  |
-| Fdouble | **[cwmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gambitds5-smruseful-cwmz)**  |
+| Fdouble | **[s2thw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-s2thw)**  |
+| Fdouble | **[sinthw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-sinthw)**  |
+| Fdouble | **[costhw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-costhw)**  |
+| Fdouble | **[delrho](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-delrho)**  |
+| Fdouble | **[alph3mz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-alph3mz)**  |
+| Fdouble | **[gfermi](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gfermi)**  |
+| Fdouble | **[s2wmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-s2wmz)**  |
+| Fdouble | **[swmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-swmz)**  |
+| Fdouble | **[cwmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-cwmz)**  |
 
 ## Public Attributes Documentation
 
@@ -92,4 +92,4 @@ Fdouble cwmz;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

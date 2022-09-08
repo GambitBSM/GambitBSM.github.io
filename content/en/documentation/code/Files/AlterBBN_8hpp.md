@@ -30,8 +30,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[NNUCREAC](/documentation/code/files/alterbbn_8hpp/#define-alterbbn-hpp-nnucreac)**  |
-|  | **[NTABMAX](/documentation/code/files/alterbbn_8hpp/#define-alterbbn-hpp-ntabmax)**  |
+|  | **[NNUCREAC](/documentation/code/files/alterbbn_8hpp/#define-nnucreac)**  |
+|  | **[NTABMAX](/documentation/code/files/alterbbn_8hpp/#define-ntabmax)**  |
 
 ## Detailed Description
 
@@ -317,4 +317,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

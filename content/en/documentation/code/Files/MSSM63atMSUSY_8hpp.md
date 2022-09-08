@@ -19,41 +19,41 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[DEFINEPARS](/documentation/code/files/mssm63atmsusy_8hpp/#function-mssm63atmsusy-hpp-definepars)**(TanBeta , SignMu , mHu2 , mHd2 , M1 , M2 , M3 )<br>Can translate this model into MSSM63atQ (where Q will then be set to MSUSY)  |
-| START_MODEL mq2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmsusy_8hpp/#function-mssm63atmsusy-hpp-definepars)**(ml2_11 , ml2_12 , ml2_13 , ml2_22 , ml2_23 , ml2_33 ) |
-| START_MODEL mq2_33 md2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmsusy_8hpp/#function-mssm63atmsusy-hpp-definepars)**(mu2_11 , mu2_12 , mu2_13 , mu2_22 , mu2_23 , mu2_33 ) |
-| START_MODEL mq2_33 md2_33 me2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmsusy_8hpp/#function-mssm63atmsusy-hpp-definepars)**(Ae_11 , Ae_12 , Ae_13 , Ae_21 , Ae_22 , Ae_23 , Ae_31 , Ae_32 , Ae_33 ) |
+| START_MODEL | **[DEFINEPARS](/documentation/code/files/mssm63atmsusy_8hpp/#function-definepars)**(TanBeta , SignMu , mHu2 , mHd2 , M1 , M2 , M3 )<br>Can translate this model into MSSM63atQ (where Q will then be set to MSUSY)  |
+| START_MODEL mq2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmsusy_8hpp/#function-definepars)**(ml2_11 , ml2_12 , ml2_13 , ml2_22 , ml2_23 , ml2_33 ) |
+| START_MODEL mq2_33 md2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmsusy_8hpp/#function-definepars)**(mu2_11 , mu2_12 , mu2_13 , mu2_22 , mu2_23 , mu2_33 ) |
+| START_MODEL mq2_33 md2_33 me2_33 | **[DEFINEPARS](/documentation/code/files/mssm63atmsusy_8hpp/#function-definepars)**(Ae_11 , Ae_12 , Ae_13 , Ae_21 , Ae_22 , Ae_23 , Ae_31 , Ae_32 , Ae_33 ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[mq2_12](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-mq2-12)**  |
-| START_MODEL | **[mq2_13](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-mq2-13)**  |
-| START_MODEL | **[mq2_22](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-mq2-22)**  |
-| START_MODEL | **[mq2_23](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-mq2-23)**  |
-| START_MODEL mq2_33 | **[md2_12](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-md2-12)**  |
-| START_MODEL mq2_33 | **[md2_13](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-md2-13)**  |
-| START_MODEL mq2_33 | **[md2_22](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-md2-22)**  |
-| START_MODEL mq2_33 | **[md2_23](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-md2-23)**  |
-| START_MODEL mq2_33 md2_33 | **[me2_12](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-me2-12)**  |
-| START_MODEL mq2_33 md2_33 | **[me2_13](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-me2-13)**  |
-| START_MODEL mq2_33 md2_33 | **[me2_22](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-me2-22)**  |
-| START_MODEL mq2_33 md2_33 | **[me2_23](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-me2-23)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_12](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-ad-12)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_13](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-ad-13)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_21](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-ad-21)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_22](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-ad-22)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_23](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-ad-23)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_31](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-ad-31)**  |
-| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_32](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mssm63atmsusy-hpp-ad-32)**  |
+| START_MODEL | **[mq2_12](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mq2-12)**  |
+| START_MODEL | **[mq2_13](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mq2-13)**  |
+| START_MODEL | **[mq2_22](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mq2-22)**  |
+| START_MODEL | **[mq2_23](/documentation/code/files/mssm63atmsusy_8hpp/#variable-mq2-23)**  |
+| START_MODEL mq2_33 | **[md2_12](/documentation/code/files/mssm63atmsusy_8hpp/#variable-md2-12)**  |
+| START_MODEL mq2_33 | **[md2_13](/documentation/code/files/mssm63atmsusy_8hpp/#variable-md2-13)**  |
+| START_MODEL mq2_33 | **[md2_22](/documentation/code/files/mssm63atmsusy_8hpp/#variable-md2-22)**  |
+| START_MODEL mq2_33 | **[md2_23](/documentation/code/files/mssm63atmsusy_8hpp/#variable-md2-23)**  |
+| START_MODEL mq2_33 md2_33 | **[me2_12](/documentation/code/files/mssm63atmsusy_8hpp/#variable-me2-12)**  |
+| START_MODEL mq2_33 md2_33 | **[me2_13](/documentation/code/files/mssm63atmsusy_8hpp/#variable-me2-13)**  |
+| START_MODEL mq2_33 md2_33 | **[me2_22](/documentation/code/files/mssm63atmsusy_8hpp/#variable-me2-22)**  |
+| START_MODEL mq2_33 md2_33 | **[me2_23](/documentation/code/files/mssm63atmsusy_8hpp/#variable-me2-23)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_12](/documentation/code/files/mssm63atmsusy_8hpp/#variable-ad-12)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_13](/documentation/code/files/mssm63atmsusy_8hpp/#variable-ad-13)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_21](/documentation/code/files/mssm63atmsusy_8hpp/#variable-ad-21)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_22](/documentation/code/files/mssm63atmsusy_8hpp/#variable-ad-22)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_23](/documentation/code/files/mssm63atmsusy_8hpp/#variable-ad-23)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_31](/documentation/code/files/mssm63atmsusy_8hpp/#variable-ad-31)**  |
+| START_MODEL mq2_33 md2_33 me2_33 | **[Ad_32](/documentation/code/files/mssm63atmsusy_8hpp/#variable-ad-32)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/mssm63atmsusy_8hpp/#define-mssm63atmsusy-hpp-model)**  |
-|  | **[PARENT](/documentation/code/files/mssm63atmsusy_8hpp/#define-mssm63atmsusy-hpp-parent)**  |
+|  | **[MODEL](/documentation/code/files/mssm63atmsusy_8hpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/mssm63atmsusy_8hpp/#define-parent)**  |
 
 
 ## Functions Documentation
@@ -364,4 +364,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

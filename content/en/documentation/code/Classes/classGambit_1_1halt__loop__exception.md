@@ -19,7 +19,7 @@ Inherits from [Gambit::special_exception](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[halt_loop_exception](/documentation/code/classes/classgambit_1_1halt__loop__exception/#function-gambithalt-loop-exception-halt-loop-exception)**()<br>Constructor.  |
+| | **[halt_loop_exception](/documentation/code/classes/classgambit_1_1halt__loop__exception/#function-halt-loop-exception)**()<br>Constructor.  |
 
 ## Additional inherited members
 
@@ -27,23 +27,23 @@ Inherits from [Gambit::special_exception](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[special_exception](/documentation/code/classes/classgambit_1_1special__exception/#function-gambitspecial-exception-special-exception)**(const char * what)<br>Constructor.  |
-| virtual | **[~special_exception](/documentation/code/classes/classgambit_1_1special__exception/#function-gambitspecial-exception-special-exception)**()<br>Destructor.  |
-| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1special__exception/#function-gambitspecial-exception-what)**() const<br>Retrieve the identity of the exception.  |
-| std::string | **[message](/documentation/code/classes/classgambit_1_1special__exception/#function-gambitspecial-exception-message)**()<br>Retrieve the message that this exception was raised with.  |
-| virtual void | **[raise](/documentation/code/classes/classgambit_1_1special__exception/#function-gambitspecial-exception-raise)**(const std::string & msg)<br>Raise the exception, i.e. throw it.  |
+| | **[special_exception](/documentation/code/classes/classgambit_1_1special__exception/#function-special-exception)**(const char * what)<br>Constructor.  |
+| virtual | **[~special_exception](/documentation/code/classes/classgambit_1_1special__exception/#function-special-exception)**()<br>Destructor.  |
+| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1special__exception/#function-what)**() const<br>Retrieve the identity of the exception.  |
+| std::string | **[message](/documentation/code/classes/classgambit_1_1special__exception/#function-message)**()<br>Retrieve the message that this exception was raised with.  |
+| virtual void | **[raise](/documentation/code/classes/classgambit_1_1special__exception/#function-raise)**(const std::string & msg)<br>Raise the exception, i.e. throw it.  |
 
 **Public Attributes inherited from [Gambit::special_exception](/documentation/code/classes/classgambit_1_1special__exception/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[invalidcode](/documentation/code/classes/classgambit_1_1special__exception/#variable-gambitspecial-exception-invalidcode)** <br>Integer code used for exceptions.  |
+| int | **[invalidcode](/documentation/code/classes/classgambit_1_1special__exception/#variable-invalidcode)** <br>Integer code used for exceptions.  |
 
 **Protected Attributes inherited from [Gambit::special_exception](/documentation/code/classes/classgambit_1_1special__exception/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[myMessage](/documentation/code/classes/classgambit_1_1special__exception/#variable-gambitspecial-exception-mymessage)** <br>The message passed when this exception is raised.  |
+| std::string | **[myMessage](/documentation/code/classes/classgambit_1_1special__exception/#variable-mymessage)** <br>The message passed when this exception is raised.  |
 
 
 ## Public Functions Documentation
@@ -63,4 +63,4 @@ Constructor
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

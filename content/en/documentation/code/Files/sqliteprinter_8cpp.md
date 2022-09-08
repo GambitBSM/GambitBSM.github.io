@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SQL_DEBUG](/documentation/code/files/sqliteprinter_8cpp/#define-sqliteprinter-cpp-sql-debug)**  |
+|  | **[SQL_DEBUG](/documentation/code/files/sqliteprinter_8cpp/#define-sql-debug)**  |
 
 ## Detailed Description
 
@@ -637,4 +637,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

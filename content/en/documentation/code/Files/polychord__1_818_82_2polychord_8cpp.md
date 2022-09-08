@@ -20,13 +20,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/files/polychord__1_818_82_2polychord_8cpp/#typedef-polychord-1-18-2-polychord-cpp-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
+| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/files/polychord__1_818_82_2polychord_8cpp/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[scanner_plugin](/documentation/code/files/polychord__1_818_82_2polychord_8cpp/#function-polychord-1-18-2-polychord-cpp-scanner-plugin)**(polychord , version(1, 18, 2) ) |
+| | **[scanner_plugin](/documentation/code/files/polychord__1_818_82_2polychord_8cpp/#function-scanner-plugin)**(polychord , version(1, 18, 2) ) |
 
 ## Detailed Description
 
@@ -550,4 +550,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

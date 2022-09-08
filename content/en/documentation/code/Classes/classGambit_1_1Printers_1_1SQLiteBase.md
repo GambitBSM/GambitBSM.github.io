@@ -19,25 +19,25 @@ Inherited by [Gambit::Printers::SQLitePrinter](/documentation/code/classes/class
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SQLiteBase](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-sqlitebase)**() |
-| | **[~SQLiteBase](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-sqlitebase)**() |
+| | **[SQLiteBase](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-sqlitebase)**() |
+| | **[~SQLiteBase](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-sqlitebase)**() |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[get_database_file](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-get-database-file)**() |
-| std::string | **[get_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-get-table-name)**() |
-| void | **[set_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-set-table-name)**(const std::string & table_name) |
-| void | **[require_output_ready](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-require-output-ready)**() |
-| void | **[open_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-open-db)**(const std::string & path, char access ='r') |
-| void | **[close_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-close-db)**() |
-| sqlite3 * | **[get_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-get-db)**() |
-| void | **[cout_row](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-cout-row)**(sqlite3_stmt * tmp_stmt) |
-| void | **[check_table_exists](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-check-table-exists)**() |
-| void | **[set_table_exists](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-set-table-exists)**() |
-| std::map< std::string, std::string, [Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/) > | **[get_column_info](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-get-column-info)**() |
-| int | **[submit_sql](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-gambitprinterssqlitebase-submit-sql)**(const std::string & local_info, const std::string & sqlstr, bool allow_fail =false, sql_callback_fptr callback =NULL, void * data =NULL, char ** zErrMsg =NULL) |
+| std::string | **[get_database_file](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-database-file)**() |
+| std::string | **[get_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-table-name)**() |
+| void | **[set_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-set-table-name)**(const std::string & table_name) |
+| void | **[require_output_ready](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-require-output-ready)**() |
+| void | **[open_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-open-db)**(const std::string & path, char access ='r') |
+| void | **[close_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-close-db)**() |
+| sqlite3 * | **[get_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-db)**() |
+| void | **[cout_row](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-cout-row)**(sqlite3_stmt * tmp_stmt) |
+| void | **[check_table_exists](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-check-table-exists)**() |
+| void | **[set_table_exists](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-set-table-exists)**() |
+| std::map< std::string, std::string, [Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/) > | **[get_column_info](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-column-info)**() |
+| int | **[submit_sql](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-submit-sql)**(const std::string & local_info, const std::string & sqlstr, bool allow_fail =false, sql_callback_fptr callback =NULL, void * data =NULL, char ** zErrMsg =NULL) |
 
 ## Public Functions Documentation
 
@@ -157,4 +157,4 @@ int submit_sql(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

@@ -13,13 +13,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[Suspicious](/documentation/code/files/standalone__module_8hpp/#function-standalone-module-hpp-suspicious)**()<br>This function fixes an issue for linking to suspicious points. It is not intented to be called anywhere.  |
+| void | **[Suspicious](/documentation/code/files/standalone__module_8hpp/#function-suspicious)**()<br>This function fixes an issue for linking to suspicious points. It is not intented to be called anywhere.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[STANDALONE](/documentation/code/files/standalone__module_8hpp/#define-standalone-module-hpp-standalone)**  |
+|  | **[STANDALONE](/documentation/code/files/standalone__module_8hpp/#define-standalone)**  |
 
 ## Detailed Description
 
@@ -108,4 +108,4 @@ void Suspicious() {Suspicious_point_exception().raise(".");}
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:52 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

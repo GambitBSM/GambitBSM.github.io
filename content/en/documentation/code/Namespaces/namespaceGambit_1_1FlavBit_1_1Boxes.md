@@ -13,15 +13,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| complex< double > | **[Vw4lLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vw4lll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw8lLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vw8lll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw4lpLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vw4lpll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw8lpLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vw8lpll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw4dLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vw4dll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[Vw4uLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vw4ull)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VsumlLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vsumlll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VsumdLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vsumdll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VsumuLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-gambitflavbitboxes-vsumull)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw4lLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4lll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw8lLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw8lll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw4lpLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4lpll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw8lpLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw8lpll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw4dLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4dll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[Vw4uLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vw4ull)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[VsumlLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumlll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[VsumdLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumdll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
+| complex< double > | **[VsumuLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1boxes/#function-vsumull)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
 
 
 ## Functions Documentation
@@ -167,4 +167,4 @@ complex< double > VsumuLL(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

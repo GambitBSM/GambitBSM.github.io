@@ -26,7 +26,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SQLITE_CPP_TYPES](/documentation/code/files/sqlitebase_8hpp/#define-sqlitebase-hpp-sqlite-cpp-types)**  |
+|  | **[SQLITE_CPP_TYPES](/documentation/code/files/sqlitebase_8hpp/#define-sqlite-cpp-types)**  |
 
 ## Detailed Description
 
@@ -222,4 +222,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

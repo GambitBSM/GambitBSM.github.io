@@ -15,20 +15,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[alph3mz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-alph3mz)**  |
-| Fdouble | **[gfermi](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-gfermi)**  |
-| Fdouble | **[alphem](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-alphem)**  |
-| Fdouble | **[s2thw](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-s2thw)**  |
-| Fdouble | **[sinthw](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-sinthw)**  |
-| Fdouble | **[costhw](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-costhw)**  |
-| Fdouble | **[s2wmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-s2wmz)**  |
-| Fdouble | **[swmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-swmz)**  |
-| Fdouble | **[cwmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-cwmz)**  |
-| Fdouble | **[g2weak](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-g2weak)**  |
-| Fdouble | **[g2wmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-g2wmz)**  |
-| Fdouble | **[g3stro](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-g3stro)**  |
-| Fdouble | **[gyweak](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-gyweak)**  |
-| Fdouble | **[gywmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gambitds-smcoupling-gywmz)**  |
+| Fdouble | **[alph3mz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-alph3mz)**  |
+| Fdouble | **[gfermi](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gfermi)**  |
+| Fdouble | **[alphem](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-alphem)**  |
+| Fdouble | **[s2thw](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-s2thw)**  |
+| Fdouble | **[sinthw](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-sinthw)**  |
+| Fdouble | **[costhw](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-costhw)**  |
+| Fdouble | **[s2wmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-s2wmz)**  |
+| Fdouble | **[swmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-swmz)**  |
+| Fdouble | **[cwmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-cwmz)**  |
+| Fdouble | **[g2weak](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-g2weak)**  |
+| Fdouble | **[g2wmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-g2wmz)**  |
+| Fdouble | **[g3stro](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-g3stro)**  |
+| Fdouble | **[gyweak](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gyweak)**  |
+| Fdouble | **[gywmz](/documentation/code/classes/structgambit_1_1ds__smcoupling/#variable-gywmz)**  |
 
 ## Public Attributes Documentation
 
@@ -132,4 +132,4 @@ Fdouble gywmz;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

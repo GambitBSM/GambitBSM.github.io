@@ -13,14 +13,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-specbit-tests-rollcall-hpp-capability)** <br>Functions to test Spectrum objects.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-specbit-tests-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-specbit-tests-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-specbit-tests-rollcall-hpp-capability)** <br>Functions to test Spectrum objects.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-specbit-tests-rollcall-hpp-function)**  |
-|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-specbit-tests-rollcall-hpp-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-specbit-tests-rollcall-hpp-capability)** <br>Functions to test Spectrum objects.  |
-|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-specbit-tests-rollcall-hpp-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-capability)** <br>Functions to test Spectrum objects.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-capability)** <br>Functions to test Spectrum objects.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-capability)** <br>Functions to test Spectrum objects.  |
+|  | **[FUNCTION](/documentation/code/files/specbit__tests__rollcall_8hpp/#define-function)**  |
 
 ## Detailed Description
 
@@ -189,4 +189,4 @@ Functions to test Spectrum objects.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

@@ -13,14 +13,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[REGISTER_DEFAULT](/documentation/code/files/type__macros_8hpp/#define-type-macros-hpp-register-default)**(BE, VER, DEFAULT) <br>Helper macro to register the default version of a classloading backend to use.  |
-|  | **[TYPEDEFAULT](/documentation/code/files/type__macros_8hpp/#define-type-macros-hpp-typedefault)**(r, data, elem) <br>Helper macro for setting default backend version for BOSSed types.  |
-|  | **[SET_DEFAULT_VERSION_FOR_LOADING_TYPES](/documentation/code/files/type__macros_8hpp/#define-type-macros-hpp-set-default-version-for-loading-types)**(BE, VER, DEFAULT) <br>Set default backend version for BOSSed types.  |
-|  | **[START_NAMESPACE](/documentation/code/files/type__macros_8hpp/#define-type-macros-hpp-start-namespace)**(r, data, i, elem) <br>Open a namespace.  |
-|  | **[END_NAMESPACE](/documentation/code/files/type__macros_8hpp/#define-type-macros-hpp-end-namespace)**(z, n, data) <br>Close a namespace.  |
-|  | **[TRAILING_NSQUALIFIER](/documentation/code/files/type__macros_8hpp/#define-type-macros-hpp-trailing-nsqualifier)**(r, data, i, elem) <br>An entry with a trailing namespace qualifier.  |
-|  | **[PRE_TYPEDEFAULT](/documentation/code/files/type__macros_8hpp/#define-type-macros-hpp-pre-typedefault)**(r, data, elem)  |
-|  | **[ALREADY_LOADED](/documentation/code/files/type__macros_8hpp/#define-type-macros-hpp-already-loaded)**(BE)  |
+|  | **[REGISTER_DEFAULT](/documentation/code/files/type__macros_8hpp/#define-register-default)**(BE, VER, DEFAULT) <br>Helper macro to register the default version of a classloading backend to use.  |
+|  | **[TYPEDEFAULT](/documentation/code/files/type__macros_8hpp/#define-typedefault)**(r, data, elem) <br>Helper macro for setting default backend version for BOSSed types.  |
+|  | **[SET_DEFAULT_VERSION_FOR_LOADING_TYPES](/documentation/code/files/type__macros_8hpp/#define-set-default-version-for-loading-types)**(BE, VER, DEFAULT) <br>Set default backend version for BOSSed types.  |
+|  | **[START_NAMESPACE](/documentation/code/files/type__macros_8hpp/#define-start-namespace)**(r, data, i, elem) <br>Open a namespace.  |
+|  | **[END_NAMESPACE](/documentation/code/files/type__macros_8hpp/#define-end-namespace)**(z, n, data) <br>Close a namespace.  |
+|  | **[TRAILING_NSQUALIFIER](/documentation/code/files/type__macros_8hpp/#define-trailing-nsqualifier)**(r, data, i, elem) <br>An entry with a trailing namespace qualifier.  |
+|  | **[PRE_TYPEDEFAULT](/documentation/code/files/type__macros_8hpp/#define-pre-typedefault)**(r, data, elem)  |
+|  | **[ALREADY_LOADED](/documentation/code/files/type__macros_8hpp/#define-already-loaded)**(BE)  |
 
 ## Detailed Description
 
@@ -323,4 +323,4 @@ BOOST_PP_SEQ_FOR_EACH(PRE_TYPEDEFAULT, (CAT_3(BE,_,VER))(CAT_3(BE,_,DEFAULT))(BE
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

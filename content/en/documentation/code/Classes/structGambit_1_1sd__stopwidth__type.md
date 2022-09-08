@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[stoptot4](/documentation/code/classes/structgambit_1_1sd__stopwidth__type/#variable-gambitsd-stopwidth-type-stoptot4)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[stoptot](/documentation/code/classes/structgambit_1_1sd__stopwidth__type/#variable-gambitsd-stopwidth-type-stoptot)**  |
+| Fdouble | **[stoptot4](/documentation/code/classes/structgambit_1_1sd__stopwidth__type/#variable-stoptot4)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[stoptot](/documentation/code/classes/structgambit_1_1sd__stopwidth__type/#variable-stoptot)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ Farray< Fdouble, 1, 2 > stoptot;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

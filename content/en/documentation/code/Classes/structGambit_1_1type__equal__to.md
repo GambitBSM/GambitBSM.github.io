@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structgambit_1_1type__equal__to/#function-gambittype-equal-to-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & lhs, const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & rhs) const |
+| bool | **[operator()](/documentation/code/classes/structgambit_1_1type__equal__to/#function-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & lhs, const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & rhs) const |
 
 ## Public Functions Documentation
 
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

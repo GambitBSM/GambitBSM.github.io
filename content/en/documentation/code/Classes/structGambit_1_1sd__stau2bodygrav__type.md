@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[brstautaugrav](/documentation/code/classes/structgambit_1_1sd__stau2bodygrav__type/#variable-gambitsd-stau2bodygrav-type-brstautaugrav)**  |
+| Fdouble | **[brstautaugrav](/documentation/code/classes/structgambit_1_1sd__stau2bodygrav__type/#variable-brstautaugrav)**  |
 
 ## Public Attributes Documentation
 
@@ -28,4 +28,4 @@ Fdouble brstautaugrav;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

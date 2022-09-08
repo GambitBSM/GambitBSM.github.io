@@ -13,22 +13,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-standardmodel-mnudiff-hpp-definepars)**(alphainv , GF , alphaS ) |
-| START_MODEL mTau | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-standardmodel-mnudiff-hpp-definepars)**(mNu_light , dmNu21 , dmNu3l ) |
-| START_MODEL mTau mU | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-standardmodel-mnudiff-hpp-definepars)**(mS , mCmC ) |
+| START_MODEL | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-definepars)**(alphainv , GF , alphaS ) |
+| START_MODEL mTau | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-definepars)**(mNu_light , dmNu21 , dmNu3l ) |
+| START_MODEL mTau mU | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-definepars)**(mS , mCmC ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[mMu](/documentation/code/files/standardmodel__mnudiff_8hpp/#variable-standardmodel-mnudiff-hpp-mmu)**  |
+| START_MODEL | **[mMu](/documentation/code/files/standardmodel__mnudiff_8hpp/#variable-mmu)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/standardmodel__mnudiff_8hpp/#define-standardmodel-mnudiff-hpp-model)**  |
-|  | **[PARENT](/documentation/code/files/standardmodel__mnudiff_8hpp/#define-standardmodel-mnudiff-hpp-parent)**  |
+|  | **[MODEL](/documentation/code/files/standardmodel__mnudiff_8hpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/standardmodel__mnudiff_8hpp/#define-parent)**  |
 
 ## Detailed Description
 
@@ -169,4 +169,4 @@ START_MODEL mMu;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

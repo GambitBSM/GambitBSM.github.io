@@ -15,19 +15,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[triplet](/documentation/code/classes/structgambit_1_1triplet/#function-gambittriplet-triplet)**()<br>Default constructor.  |
-| | **[triplet](/documentation/code/classes/structgambit_1_1triplet/#function-gambittriplet-triplet)**(TYPE centralval)<br>One-value constructor.  |
-| | **[triplet](/documentation/code/classes/structgambit_1_1triplet/#function-gambittriplet-triplet)**(TYPE centralval, TYPE upperval, TYPE lowerval)<br>Three-value constructor.  |
-| | **[triplet](/documentation/code/classes/structgambit_1_1triplet/#function-gambittriplet-triplet)**(const [triplet](/documentation/code/classes/structgambit_1_1triplet/)< TYPE > & in)<br>Copy constructor.  |
-| [triplet](/documentation/code/classes/structgambit_1_1triplet/)< TYPE > & | **[operator=](/documentation/code/classes/structgambit_1_1triplet/#function-gambittriplet-operator)**(const [triplet](/documentation/code/classes/structgambit_1_1triplet/)< TYPE > & in)<br>Copy assignment operator.  |
+| | **[triplet](/documentation/code/classes/structgambit_1_1triplet/#function-triplet)**()<br>Default constructor.  |
+| | **[triplet](/documentation/code/classes/structgambit_1_1triplet/#function-triplet)**(TYPE centralval)<br>One-value constructor.  |
+| | **[triplet](/documentation/code/classes/structgambit_1_1triplet/#function-triplet)**(TYPE centralval, TYPE upperval, TYPE lowerval)<br>Three-value constructor.  |
+| | **[triplet](/documentation/code/classes/structgambit_1_1triplet/#function-triplet)**(const [triplet](/documentation/code/classes/structgambit_1_1triplet/)< TYPE > & in)<br>Copy constructor.  |
+| [triplet](/documentation/code/classes/structgambit_1_1triplet/)< TYPE > & | **[operator=](/documentation/code/classes/structgambit_1_1triplet/#function-operator)**(const [triplet](/documentation/code/classes/structgambit_1_1triplet/)< TYPE > & in)<br>Copy assignment operator.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| TYPE | **[central](/documentation/code/classes/structgambit_1_1triplet/#variable-gambittriplet-central)**  |
-| TYPE | **[upper](/documentation/code/classes/structgambit_1_1triplet/#variable-gambittriplet-upper)**  |
-| TYPE | **[lower](/documentation/code/classes/structgambit_1_1triplet/#variable-gambittriplet-lower)**  |
+| TYPE | **[central](/documentation/code/classes/structgambit_1_1triplet/#variable-central)**  |
+| TYPE | **[upper](/documentation/code/classes/structgambit_1_1triplet/#variable-upper)**  |
+| TYPE | **[lower](/documentation/code/classes/structgambit_1_1triplet/#variable-lower)**  |
 
 ## Detailed Description
 
@@ -113,4 +113,4 @@ TYPE lower;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

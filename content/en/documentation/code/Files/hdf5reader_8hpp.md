@@ -29,8 +29,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DECLARE_RETRIEVE](/documentation/code/files/hdf5reader_8hpp/#define-hdf5reader-hpp-declare-retrieve)**(r, data, i, elem)  |
-|  | **[DEFINE_BUFFMAN_GETTER](/documentation/code/files/hdf5reader_8hpp/#define-hdf5reader-hpp-define-buffman-getter)**(TYPE) <br>Define the buffermanager getter specialisations.  |
+|  | **[DECLARE_RETRIEVE](/documentation/code/files/hdf5reader_8hpp/#define-declare-retrieve)**(r, data, i, elem)  |
+|  | **[DEFINE_BUFFMAN_GETTER](/documentation/code/files/hdf5reader_8hpp/#define-define-buffman-getter)**(TYPE) <br>Define the buffermanager getter specialisations.  |
 
 ## Detailed Description
 
@@ -377,4 +377,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

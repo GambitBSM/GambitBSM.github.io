@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[cent](/documentation/code/classes/structgambit_1_1indnuis/#variable-gambitindnuis-cent)**  |
-| double | **[dev](/documentation/code/classes/structgambit_1_1indnuis/#variable-gambitindnuis-dev)**  |
-| int | **[type](/documentation/code/classes/structgambit_1_1indnuis/#variable-gambitindnuis-type)**  |
-| char * | **[name](/documentation/code/classes/structgambit_1_1indnuis/#variable-gambitindnuis-name)**  |
+| double | **[cent](/documentation/code/classes/structgambit_1_1indnuis/#variable-cent)**  |
+| double | **[dev](/documentation/code/classes/structgambit_1_1indnuis/#variable-dev)**  |
+| int | **[type](/documentation/code/classes/structgambit_1_1indnuis/#variable-type)**  |
+| char * | **[name](/documentation/code/classes/structgambit_1_1indnuis/#variable-name)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ char * name;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

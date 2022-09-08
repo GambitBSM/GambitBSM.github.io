@@ -20,7 +20,7 @@ Inherits from [Gambit::Farray< char, 1, len, lims... >](/documentation/code/clas
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename ... Args\> <br>[enable_if_all_member](/documentation/code/classes/structgambit_1_1enable__if__all__member/)< typenameFarray< char, 1, len, lims... >::allowed_types, [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< len > *, Args... >::type::type | **[operator()](/documentation/code/classes/classgambit_1_1fstringarray/#function-gambitfstringarray-operator)**(Args ... a) |
+| template <typename ... Args\> <br>[enable_if_all_member](/documentation/code/classes/structgambit_1_1enable__if__all__member/)< typenameFarray< char, 1, len, lims... >::allowed_types, [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< len > *, Args... >::type::type | **[operator()](/documentation/code/classes/classgambit_1_1fstringarray/#function-operator)**(Args ... a) |
 
 ## Additional inherited members
 
@@ -36,29 +36,29 @@ Inherits from [Gambit::Farray< char, 1, len, lims... >](/documentation/code/clas
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [calc_nElem](/documentation/code/classes/structgambit_1_1farray_1_1calc__nelem/)< lims... > | **[nElem](/documentation/code/classes/classgambit_1_1farray/#typedef-gambitfarray-nelem)**  |
+| typedef [calc_nElem](/documentation/code/classes/structgambit_1_1farray_1_1calc__nelem/)< lims... > | **[nElem](/documentation/code/classes/classgambit_1_1farray/#typedef-nelem)**  |
 
 **Protected Types inherited from [Gambit::Farray< char, 1, len, lims... >](/documentation/code/classes/classgambit_1_1farray/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [mult_types](/documentation/code/classes/structgambit_1_1mult__types/)< short, const short, short &, const short &, unsigned short, const unsigned short, unsigned short &, const unsigned short &, int, const int, int &, const int &, unsigned, const unsigned, unsigned &, const unsigned &, long, const long, long &, const long &, unsigned long, const unsigned long, unsigned long &, const unsigned long &, long long, const long long, long long &, const long long &, unsigned long long, const unsigned long long, unsigned long long &, const unsigned long long & > | **[allowed_types](/documentation/code/classes/classgambit_1_1farray/#typedef-gambitfarray-allowed-types)**  |
+| typedef [mult_types](/documentation/code/classes/structgambit_1_1mult__types/)< short, const short, short &, const short &, unsigned short, const unsigned short, unsigned short &, const unsigned short &, int, const int, int &, const int &, unsigned, const unsigned, unsigned &, const unsigned &, long, const long, long &, const long &, unsigned long, const unsigned long, unsigned long &, const unsigned long &, long long, const long long, long long &, const long long &, unsigned long long, const unsigned long long, unsigned long long &, const unsigned long long & > | **[allowed_types](/documentation/code/classes/classgambit_1_1farray/#typedef-allowed-types)**  |
 
 **Public Functions inherited from [Gambit::Farray< char, 1, len, lims... >](/documentation/code/classes/classgambit_1_1farray/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-farray)**() |
-| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-farray)**([Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & in) |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & | **[operator=](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-operator)**(const [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & orig) |
-| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-farray)**(const T val) |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & | **[operator=](/documentation/code/classes/classgambit_1_1farray/#function-gambitfarray-operator)**(const T val) |
+| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**() |
+| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**([Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & in) |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & | **[operator=](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(const [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & orig) |
+| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**(const T val) |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & | **[operator=](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(const T val) |
 
 **Public Attributes inherited from [Gambit::Farray< char, 1, len, lims... >](/documentation/code/classes/classgambit_1_1farray/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| T[nElem::val] | **[array](/documentation/code/classes/classgambit_1_1farray/#variable-gambitfarray-array)**  |
+| T[nElem::val] | **[array](/documentation/code/classes/classgambit_1_1farray/#variable-array)**  |
 
 
 ## Detailed Description
@@ -86,4 +86,4 @@ inline enable_if_all_member< typenameFarray< char, 1, len, lims... >::allowed_ty
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

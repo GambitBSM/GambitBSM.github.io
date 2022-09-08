@@ -20,9 +20,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DDCALC_RESULT](/documentation/code/files/directdetection_8cpp/#define-directdetection-cpp-ddcalc-result)**(EXPERIMENT, TYPE, NAME) <br>Defines a prototypical DDCalc result extractor.  |
-|  | **[DDCALC_BIN](/documentation/code/files/directdetection_8cpp/#define-directdetection-cpp-ddcalc-bin)**(EXPERIMENT, TYPE, NAME)  |
-|  | **[DD_EX](/documentation/code/files/directdetection_8cpp/#define-directdetection-cpp-dd-ex)**(EXPERIMENT)  |
+|  | **[DDCALC_RESULT](/documentation/code/files/directdetection_8cpp/#define-ddcalc-result)**(EXPERIMENT, TYPE, NAME) <br>Defines a prototypical DDCalc result extractor.  |
+|  | **[DDCALC_BIN](/documentation/code/files/directdetection_8cpp/#define-ddcalc-bin)**(EXPERIMENT, TYPE, NAME)  |
+|  | **[DD_EX](/documentation/code/files/directdetection_8cpp/#define-dd-ex)**(EXPERIMENT)  |
 
 ## Detailed Description
 
@@ -634,4 +634,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:52 +0000
+Updated on 2022-09-08 at 02:23:04 +0000

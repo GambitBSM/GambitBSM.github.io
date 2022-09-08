@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< std::unordered_set< std::string > > | **[parse_sames](/documentation/code/files/grid_8cpp/#function-grid-cpp-parse-sames)**(const std::vector< std::string > & params) |
-| | **[scanner_plugin](/documentation/code/files/grid_8cpp/#function-grid-cpp-scanner-plugin)**(grid , version(1, 0, 0) ) |
+| std::vector< std::unordered_set< std::string > > | **[parse_sames](/documentation/code/files/grid_8cpp/#function-parse-sames)**(const std::vector< std::string > & params) |
+| | **[scanner_plugin](/documentation/code/files/grid_8cpp/#function-scanner-plugin)**(grid , version(1, 0, 0) ) |
 
 ## Detailed Description
 
@@ -230,4 +230,4 @@ scanner_plugin(grid, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

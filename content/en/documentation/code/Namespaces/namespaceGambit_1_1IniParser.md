@@ -26,17 +26,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) | **[ObservableType](/documentation/code/namespaces/namespacegambit_1_1iniparser/#typedef-gambitiniparser-observabletype)**  |
-| typedef std::vector< [ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[ObservablesType](/documentation/code/namespaces/namespacegambit_1_1iniparser/#typedef-gambitiniparser-observablestype)**  |
+| typedef [Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) | **[ObservableType](/documentation/code/namespaces/namespacegambit_1_1iniparser/#typedef-observabletype)**  |
+| typedef std::vector< [ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[ObservablesType](/documentation/code/namespaces/namespacegambit_1_1iniparser/#typedef-observablestype)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [error](/documentation/code/classes/classgambit_1_1error/) & | **[inifile_error](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-gambitiniparser-inifile-error)**()<br>[IniFile]() errors.  |
-| [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[inifile_warning](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-gambitiniparser-inifile-warning)**()<br>[IniFile]() warnings.  |
-| int | **[importRound](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-gambitiniparser-importround)**(YAML::Node node, const std::string & filename)<br>Recursive import.  |
-| void | **[recursiveImport](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-gambitiniparser-recursiveimport)**(const YAML::Node & node, const std::string & filename) |
+| [error](/documentation/code/classes/classgambit_1_1error/) & | **[inifile_error](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-inifile-error)**()<br>[IniFile]() errors.  |
+| [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[inifile_warning](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-inifile-warning)**()<br>[IniFile]() warnings.  |
+| int | **[importRound](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-importround)**(YAML::Node node, const std::string & filename)<br>Recursive import.  |
+| void | **[recursiveImport](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-recursiveimport)**(const YAML::Node & node, const std::string & filename) |
 
 ## Types Documentation
 
@@ -100,4 +100,4 @@ void recursiveImport(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

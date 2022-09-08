@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[mu2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-gambitds-smquarkmasses-mu2gev)**  |
-| Fdouble | **[md2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-gambitds-smquarkmasses-md2gev)**  |
-| Fdouble | **[ms2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-gambitds-smquarkmasses-ms2gev)**  |
-| Fdouble | **[mcmc](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-gambitds-smquarkmasses-mcmc)**  |
-| Fdouble | **[mbmb](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-gambitds-smquarkmasses-mbmb)**  |
-| Fdouble | **[mtmt](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-gambitds-smquarkmasses-mtmt)**  |
-| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-gambitds-smquarkmasses-roption)**  |
+| Fdouble | **[mu2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mu2gev)**  |
+| Fdouble | **[md2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-md2gev)**  |
+| Fdouble | **[ms2gev](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-ms2gev)**  |
+| Fdouble | **[mcmc](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mcmc)**  |
+| Fdouble | **[mbmb](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mbmb)**  |
+| Fdouble | **[mtmt](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-mtmt)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/#variable-roption)**  |
 
 ## Public Attributes Documentation
 
@@ -76,4 +76,4 @@ Fstring< 5 > roption;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

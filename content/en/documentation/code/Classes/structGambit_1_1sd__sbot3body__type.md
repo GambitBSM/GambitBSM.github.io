@@ -15,23 +15,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbstau](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbstau)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbsntau](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbsntau)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbsel](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbsel)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbtstsb](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbtstsb)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbtbstb](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbtbstb)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbtaustnu](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbtaustnu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbelstnu](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbelstnu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbupstdow](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbupstdow)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsbsnel](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsbsnel)**  |
-| Fdouble | **[brsb2sb1bb](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsb2sb1bb)**  |
-| Fdouble | **[brsb2sb1starbb](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsb2sb1starbb)**  |
-| Fdouble | **[brsb2sb1tt](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsb2sb1tt)**  |
-| Fdouble | **[brsb2sb1uu](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsb2sb1uu)**  |
-| Fdouble | **[brsb2sb1dd](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsb2sb1dd)**  |
-| Fdouble | **[brsb2sb1ee](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsb2sb1ee)**  |
-| Fdouble | **[brsb2sb1nunu](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsb2sb1nunu)**  |
-| Fdouble | **[brsb2sb1tautau](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-gambitsd-sbot3body-type-brsb2sb1tautau)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbstau](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbstau)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbsntau](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbsntau)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbsel](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbsel)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbtstsb](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbtstsb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbtbstb](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbtbstb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbtaustnu](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbtaustnu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbelstnu](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbelstnu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[brsbupstdow](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbupstdow)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsbsnel](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsbsnel)**  |
+| Fdouble | **[brsb2sb1bb](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsb2sb1bb)**  |
+| Fdouble | **[brsb2sb1starbb](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsb2sb1starbb)**  |
+| Fdouble | **[brsb2sb1tt](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsb2sb1tt)**  |
+| Fdouble | **[brsb2sb1uu](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsb2sb1uu)**  |
+| Fdouble | **[brsb2sb1dd](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsb2sb1dd)**  |
+| Fdouble | **[brsb2sb1ee](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsb2sb1ee)**  |
+| Fdouble | **[brsb2sb1nunu](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsb2sb1nunu)**  |
+| Fdouble | **[brsb2sb1tautau](/documentation/code/classes/structgambit_1_1sd__sbot3body__type/#variable-brsb2sb1tautau)**  |
 
 ## Public Attributes Documentation
 
@@ -156,4 +156,4 @@ Fdouble brsb2sb1tautau;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

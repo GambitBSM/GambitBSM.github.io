@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[supltot2](/documentation/code/classes/structgambit_1_1sd__supwidth__type/#variable-gambitsd-supwidth-type-supltot2)**  |
-| Fdouble | **[suprtot2](/documentation/code/classes/structgambit_1_1sd__supwidth__type/#variable-gambitsd-supwidth-type-suprtot2)**  |
+| Fdouble | **[supltot2](/documentation/code/classes/structgambit_1_1sd__supwidth__type/#variable-supltot2)**  |
+| Fdouble | **[suprtot2](/documentation/code/classes/structgambit_1_1sd__supwidth__type/#variable-suprtot2)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ Fdouble suprtot2;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

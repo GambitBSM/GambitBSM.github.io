@@ -17,15 +17,15 @@ structure for storing log messages and metadata
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Message](/documentation/code/classes/structgambit_1_1logging_1_1message/#function-gambitloggingmessage-message)**(const std::string & msgIN, const std::set< int > & tagsIN)<br>Constructor.  |
+| | **[Message](/documentation/code/classes/structgambit_1_1logging_1_1message/#function-message)**(const std::string & msgIN, const std::set< int > & tagsIN)<br>Constructor.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[message](/documentation/code/classes/structgambit_1_1logging_1_1message/#variable-gambitloggingmessage-message)**  |
-| std::set< int > | **[tags](/documentation/code/classes/structgambit_1_1logging_1_1message/#variable-gambitloggingmessage-tags)**  |
-| Utils::time_point | **[received_at](/documentation/code/classes/structgambit_1_1logging_1_1message/#variable-gambitloggingmessage-received-at)**  |
+| std::string | **[message](/documentation/code/classes/structgambit_1_1logging_1_1message/#variable-message)**  |
+| std::set< int > | **[tags](/documentation/code/classes/structgambit_1_1logging_1_1message/#variable-tags)**  |
+| Utils::time_point | **[received_at](/documentation/code/classes/structgambit_1_1logging_1_1message/#variable-received-at)**  |
 
 ## Public Functions Documentation
 
@@ -65,4 +65,4 @@ Utils::time_point received_at;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

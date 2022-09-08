@@ -13,10 +13,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[Default_gm2calc](/documentation/code/files/default__bossed__versions_8hpp/#define-default-bossed-versions-hpp-default-gm2calc)**  |
-|  | **[Default_Pythia](/documentation/code/files/default__bossed__versions_8hpp/#define-default-bossed-versions-hpp-default-pythia)**  |
-|  | **[Default_HepLike](/documentation/code/files/default__bossed__versions_8hpp/#define-default-bossed-versions-hpp-default-heplike)**  |
-|  | **[Default_vevacious](/documentation/code/files/default__bossed__versions_8hpp/#define-default-bossed-versions-hpp-default-vevacious)**  |
+|  | **[Default_gm2calc](/documentation/code/files/default__bossed__versions_8hpp/#define-default-gm2calc)**  |
+|  | **[Default_Pythia](/documentation/code/files/default__bossed__versions_8hpp/#define-default-pythia)**  |
+|  | **[Default_HepLike](/documentation/code/files/default__bossed__versions_8hpp/#define-default-heplike)**  |
+|  | **[Default_vevacious](/documentation/code/files/default__bossed__versions_8hpp/#define-default-vevacious)**  |
 
 ## Detailed Description
 
@@ -108,4 +108,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

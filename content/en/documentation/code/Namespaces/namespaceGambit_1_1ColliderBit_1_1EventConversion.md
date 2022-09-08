@@ -13,29 +13,29 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename ParticleP \> <br>int | **[get_unified_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-pid)**(ParticleP p) |
-| template <typename ParticleP \> <br>bool | **[get_unified_isFinal](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-isfinal)**(ParticleP p) |
-| template <typename ParticleP \> <br>double | **[get_unified_eta](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-eta)**(ParticleP p) |
-| template <typename ParticleP \> <br>HEPUtils::P4 | **[get_unified_momentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-momentum)**(ParticleP p) |
-| template <typename ParticleP \> <br>FJNS::PseudoJet | **[get_unified_pseudojet](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-pseudojet)**(ParticleP p) |
-| template <typename ParticleP ,typename EventT \> <br>bool | **[get_unified_fromHadron](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-fromhadron)**(ParticleP & , const EventT & pevt, int i) |
-| template <typename ParticleP \> <br>int | **[get_unified_mother1](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-mother1)**(ParticleP & p) |
-| template <typename ParticleP \> <br>int | **[get_unified_mother2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-mother2)**(ParticleP & p) |
-| template <typename ParticleP ,typename EventT \> <br>int | **[get_unified_mother1_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-mother1-pid)**(ParticleP & p, EventT & pevt) |
-| template <typename ParticleP ,typename EventT \> <br>int | **[get_unified_mother2_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-mother2-pid)**(ParticleP & p, EventT & pevt) |
-| template <typename ParticleP ,typename EventT \> <br>void | **[get_unified_child_ids](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-child-ids)**(ParticleP & p, EventT & pevt, std::vector< int > & unified_child_id_results) |
-| bool | **[HEPMC3_isParton](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-hepmc3-isparton)**(int pid) |
-| int | **[get_unified_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-pid)**(const HepMC3::GenParticlePtr & gp) |
-| bool | **[get_unified_isFinal](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-isfinal)**(const HepMC3::GenParticlePtr & gp) |
-| HEPUtils::P4 | **[get_unified_momentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-momentum)**(const HepMC3::GenParticlePtr & gp) |
-| FJNS::PseudoJet | **[get_unified_pseudojet](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-pseudojet)**(const HepMC3::GenParticlePtr & gp) |
-| double | **[get_unified_eta](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-eta)**(const HepMC3::GenParticlePtr & gp) |
-| bool | **[get_unified_fromHadron](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-fromhadron)**(const HepMC3::GenParticlePtr & gp, const std::vector< HepMC3::GenParticlePtr > & pevt, int i) |
-| int | **[get_unified_mother1](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-mother1)**(const HepMC3::GenParticlePtr & ) |
-| int | **[get_unified_mother2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-mother2)**(const HepMC3::GenParticlePtr & ) |
-| int | **[get_unified_mother1_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-mother1-pid)**(const HepMC3::GenParticlePtr & , const std::vector< HepMC3::GenParticlePtr > & )<br>Shouldn't ever need to call a HepMC3 version of this, but for safety here's one that just returns 0.  |
-| int | **[get_unified_mother2_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-mother2-pid)**(const HepMC3::GenParticlePtr & , const std::vector< HepMC3::GenParticlePtr > & )<br>Shouldn't ever need to call a HepMC3 version of this, but for safety here's one that just returns 0.  |
-| void | **[get_unified_child_ids](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-gambitcolliderbiteventconversion-get-unified-child-ids)**(const HepMC3::GenParticlePtr & gp, const std::vector< HepMC3::GenParticlePtr > & , std::vector< int > & unified_child_id_results) |
+| template <typename ParticleP \> <br>int | **[get_unified_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-pid)**(ParticleP p) |
+| template <typename ParticleP \> <br>bool | **[get_unified_isFinal](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-isfinal)**(ParticleP p) |
+| template <typename ParticleP \> <br>double | **[get_unified_eta](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-eta)**(ParticleP p) |
+| template <typename ParticleP \> <br>HEPUtils::P4 | **[get_unified_momentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-momentum)**(ParticleP p) |
+| template <typename ParticleP \> <br>FJNS::PseudoJet | **[get_unified_pseudojet](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-pseudojet)**(ParticleP p) |
+| template <typename ParticleP ,typename EventT \> <br>bool | **[get_unified_fromHadron](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-fromhadron)**(ParticleP & , const EventT & pevt, int i) |
+| template <typename ParticleP \> <br>int | **[get_unified_mother1](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-mother1)**(ParticleP & p) |
+| template <typename ParticleP \> <br>int | **[get_unified_mother2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-mother2)**(ParticleP & p) |
+| template <typename ParticleP ,typename EventT \> <br>int | **[get_unified_mother1_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-mother1-pid)**(ParticleP & p, EventT & pevt) |
+| template <typename ParticleP ,typename EventT \> <br>int | **[get_unified_mother2_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-mother2-pid)**(ParticleP & p, EventT & pevt) |
+| template <typename ParticleP ,typename EventT \> <br>void | **[get_unified_child_ids](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-child-ids)**(ParticleP & p, EventT & pevt, std::vector< int > & unified_child_id_results) |
+| bool | **[HEPMC3_isParton](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-hepmc3-isparton)**(int pid) |
+| int | **[get_unified_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-pid)**(const HepMC3::GenParticlePtr & gp) |
+| bool | **[get_unified_isFinal](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-isfinal)**(const HepMC3::GenParticlePtr & gp) |
+| HEPUtils::P4 | **[get_unified_momentum](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-momentum)**(const HepMC3::GenParticlePtr & gp) |
+| FJNS::PseudoJet | **[get_unified_pseudojet](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-pseudojet)**(const HepMC3::GenParticlePtr & gp) |
+| double | **[get_unified_eta](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-eta)**(const HepMC3::GenParticlePtr & gp) |
+| bool | **[get_unified_fromHadron](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-fromhadron)**(const HepMC3::GenParticlePtr & gp, const std::vector< HepMC3::GenParticlePtr > & pevt, int i) |
+| int | **[get_unified_mother1](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-mother1)**(const HepMC3::GenParticlePtr & ) |
+| int | **[get_unified_mother2](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-mother2)**(const HepMC3::GenParticlePtr & ) |
+| int | **[get_unified_mother1_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-mother1-pid)**(const HepMC3::GenParticlePtr & , const std::vector< HepMC3::GenParticlePtr > & )<br>Shouldn't ever need to call a HepMC3 version of this, but for safety here's one that just returns 0.  |
+| int | **[get_unified_mother2_pid](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-mother2-pid)**(const HepMC3::GenParticlePtr & , const std::vector< HepMC3::GenParticlePtr > & )<br>Shouldn't ever need to call a HepMC3 version of this, but for safety here's one that just returns 0.  |
+| void | **[get_unified_child_ids](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/#function-get-unified-child-ids)**(const HepMC3::GenParticlePtr & gp, const std::vector< HepMC3::GenParticlePtr > & , std::vector< int > & unified_child_id_results) |
 
 
 ## Functions Documentation
@@ -285,4 +285,4 @@ inline void get_unified_child_ids(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

@@ -13,12 +13,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/nuclear__params_8cpp/#define-nuclear-params-cpp-model)**  |
-|  | **[PARENT](/documentation/code/files/nuclear__params_8cpp/#define-nuclear-params-cpp-parent)**  |
-|  | **[MODEL](/documentation/code/files/nuclear__params_8cpp/#define-nuclear-params-cpp-model)**  |
-|  | **[PARENT](/documentation/code/files/nuclear__params_8cpp/#define-nuclear-params-cpp-parent)**  |
-|  | **[MODEL](/documentation/code/files/nuclear__params_8cpp/#define-nuclear-params-cpp-model)**  |
-|  | **[PARENT](/documentation/code/files/nuclear__params_8cpp/#define-nuclear-params-cpp-parent)**  |
+|  | **[MODEL](/documentation/code/files/nuclear__params_8cpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/nuclear__params_8cpp/#define-parent)**  |
+|  | **[MODEL](/documentation/code/files/nuclear__params_8cpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/nuclear__params_8cpp/#define-parent)**  |
+|  | **[MODEL](/documentation/code/files/nuclear__params_8cpp/#define-model)**  |
+|  | **[PARENT](/documentation/code/files/nuclear__params_8cpp/#define-parent)**  |
 
 
 
@@ -216,4 +216,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

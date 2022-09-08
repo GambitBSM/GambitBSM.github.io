@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::enable_if<![is_one_member](/documentation/code/classes/structgambit_1_1is__one__member/)< T, args... >::value, ret > | **[type](/documentation/code/classes/structgambit_1_1enable__if__not__one__member/#typedef-gambitenable-if-not-one-member-type)**  |
+| typedef std::enable_if<![is_one_member](/documentation/code/classes/structgambit_1_1is__one__member/)< T, args... >::value, ret > | **[type](/documentation/code/classes/structgambit_1_1enable__if__not__one__member/#typedef-type)**  |
 
 ## Detailed Description
 
@@ -37,4 +37,4 @@ typedef std::enable_if<!is_one_member<T, args...>::value, ret> Gambit::enable_if
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

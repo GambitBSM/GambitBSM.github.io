@@ -13,35 +13,35 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-micromegas-mssm-3-6-9-2-hpp-be-function)**(oneChannel , double , (double, double, char *, char *, char *, char *) , "oneChannel" , "get_oneChannel" , (MSSM63atQ) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-micromegas-mssm-3-6-9-2-hpp-be-function)**(vSigma , double , (double, double, int) , "vSigma" , "vSigma" , (MSSM63atQ) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double MSSM63atQ | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-micromegas-mssm-3-6-9-2-hpp-be-function)**(suspectSUGRA , int , (double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) , "suspectSUGRA" , "suspectSUGRA" , (MSSM63atQ) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-micromegas-mssm-3-6-9-2-hpp-be-function)**(sortOddParticles , int , (char *) , "sortOddParticles" , "mass_spectrum" , (MSSM63atQ) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-micromegas-mssm-3-6-9-2-hpp-be-function)**(nucleonAmplitudes , int , (double(*)(double, double, double, double), double *, double *, double *, double *) , "nucleonAmplitudes" , "nucleonAmplitudes" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(oneChannel , double , (double, double, char *, char *, char *, char *) , "oneChannel" , "get_oneChannel" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(vSigma , double , (double, double, int) , "vSigma" , "vSigma" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(suspectSUGRA , int , (double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) , "suspectSUGRA" , "suspectSUGRA" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(sortOddParticles , int , (char *) , "sortOddParticles" , "mass_spectrum" , (MSSM63atQ) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ | **[BE_FUNCTION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#function-be-function)**(nucleonAmplitudes , int , (double(*)(double, double, double, double), double *, double *, double *, double *) , "nucleonAmplitudes" , "nucleonAmplitudes" , (MSSM63atQ) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[int](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-int)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char | **[double](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char | **[assignVal](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-assignval)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double | **[darkOmega](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-darkomega)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double | **[oh2](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-oh2)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double MSSM63atQ char | **[lesHinput](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-leshinput)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[void](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-void)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[cleanDecayTable](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-cleandecaytable)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ | **[FeScLoop](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-micromegas-mssm-3-6-9-2-hpp-fescloop)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[int](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-int)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char | **[double](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char | **[assignVal](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-assignval)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[darkOmega](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-darkomega)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double | **[oh2](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-oh2)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char | **[lesHinput](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-leshinput)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[void](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-void)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ | **[cleanDecayTable](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-cleandecaytable)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) char MSSM63atQ double MSSM63atQ char MSSM63atQ MSSM63atQ | **[FeScLoop](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#variable-fescloop)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-micromegas-mssm-3-6-9-2-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-micromegas-mssm-3-6-9-2-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-micromegas-mssm-3-6-9-2-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-micromegas-mssm-3-6-9-2-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-micromegas-mssm-3-6-9-2-hpp-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/micromegas__mssm__3__6__9__2_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -314,4 +314,4 @@ BE_INI_DEPENDENCY(decay_rates, DecayTable)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

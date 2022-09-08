@@ -19,11 +19,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SCANNER_SIMPLE_TYPES_NOBOOL](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scannerbit-include-gambit-scannerbit-printable-types-hpp-scanner-simple-types-nobool)**  |
-|  | **[SCANNER_SIMPLE_TYPES](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scannerbit-include-gambit-scannerbit-printable-types-hpp-scanner-simple-types)**  |
-|  | **[SCANNER_VECTOR_TYPES](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scannerbit-include-gambit-scannerbit-printable-types-hpp-scanner-vector-types)**  |
-|  | **[SCANNER_PRINTABLE_TYPES](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scannerbit-include-gambit-scannerbit-printable-types-hpp-scanner-printable-types)**  |
-|  | **[SCANNER_RETRIEVABLE_TYPES](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scannerbit-include-gambit-scannerbit-printable-types-hpp-scanner-retrievable-types)**  |
+|  | **[SCANNER_SIMPLE_TYPES_NOBOOL](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scanner-simple-types-nobool)**  |
+|  | **[SCANNER_SIMPLE_TYPES](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scanner-simple-types)**  |
+|  | **[SCANNER_VECTOR_TYPES](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scanner-vector-types)**  |
+|  | **[SCANNER_PRINTABLE_TYPES](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scanner-printable-types)**  |
+|  | **[SCANNER_RETRIEVABLE_TYPES](/documentation/code/files/scannerbit_2include_2gambit_2scannerbit_2printable__types_8hpp/#define-scanner-retrievable-types)**  |
 
 ## Detailed Description
 
@@ -208,4 +208,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:50 +0000
+Updated on 2022-09-08 at 02:23:02 +0000

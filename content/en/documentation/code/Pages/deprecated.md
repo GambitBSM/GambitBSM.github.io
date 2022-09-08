@@ -12,10 +12,10 @@ description: "[No description available]"
 
 
 
-Member [Gambit::ColliderBit::Cutflow::filltail](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-gambitcolliderbitcutflow-filltail)  (const vector< bool > &cutresults, double weight=1.)
+Member [Gambit::ColliderBit::Cutflow::filltail](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-filltail)  (const vector< bool > &cutresults, double weight=1.)
 
-* Now prefer to use vector [fillnext()](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-gambitcolliderbitcutflow-fillnext)
+* Now prefer to use vector [fillnext()](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-fillnext)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:55 +0000
+Updated on 2022-09-08 at 02:23:06 +0000

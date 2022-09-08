@@ -13,39 +13,39 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[BE_FUNCTION](/documentation/code/files/darksusy__5__1__3_8hpp/#function-darksusy-5-1-3-hpp-be-function)**(dsrdtab , void , (double(*)(double &), double &, int &) , "dsrdtab_" , "dsrdtab" ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-darksusy-5-1-3-hpp-be-variable)**(rdmgev , DS5_RDMGEV , "rdmgev_" , "rdmgev" ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-darksusy-5-1-3-hpp-be-variable)**(rddof , DS_RDDOF , "rddof_" , "rddof" ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth rderrors | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-darksusy-5-1-3-hpp-be-variable)**(rdpars , DS_RDPARS , "rdpars_" , "rdpars" ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-darksusy-5-1-3-hpp-be-variable)**(rdlun , DS_RDLUN , "rdlun_" , "rdlun" ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch rdpadd | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-darksusy-5-1-3-hpp-be-variable)**(rdtime , DS_RDTIME , "rdtime_" , "rdtime" ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch rdpadd const double(&const | **[double](/documentation/code/files/darksusy__5__1__3_8hpp/#function-darksusy-5-1-3-hpp-double)**(& ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-function)**(dsrdtab , void , (double(*)(double &), double &, int &) , "dsrdtab_" , "dsrdtab" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdmgev , DS5_RDMGEV , "rdmgev_" , "rdmgev" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rddof , DS_RDDOF , "rddof_" , "rddof" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdpars , DS_RDPARS , "rdpars_" , "rdpars" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdlun , DS_RDLUN , "rdlun_" , "rdlun" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch rdpadd | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdtime , DS_RDTIME , "rdtime_" , "rdtime" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch rdpadd const double(&const | **[double](/documentation/code/files/darksusy__5__1__3_8hpp/#function-double)**(& ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) | **[void](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-void)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double | **[double](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int | **[dsrdeqn_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-dsrdeqn)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn | **[DS_RDPTH](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-ds-rdpth)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn | **[rdpth_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-rdpth)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth | **[DS_RDERRORS](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-ds-rderrors)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth | **[rderrors_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-rderrors)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth rderrors | **[DS_RDSWITCH](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-ds-rdswitch)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth rderrors | **[rdswitch_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-rdswitch)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch | **[DS_RDPADD](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-ds-rdpadd)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-frontend-macros-hpp-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch | **[rdpadd_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-darksusy-5-1-3-hpp-rdpadd)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[void](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-void)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double | **[double](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-double)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int | **[dsrdeqn_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-dsrdeqn)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn | **[DS_RDPTH](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-ds-rdpth)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn | **[rdpth_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-rdpth)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth | **[DS_RDERRORS](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-ds-rderrors)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth | **[rderrors_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-rderrors)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors | **[DS_RDSWITCH](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-ds-rdswitch)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors | **[rdswitch_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-rdswitch)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch | **[DS_RDPADD](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-ds-rdpadd)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch | **[rdpadd_](/documentation/code/files/darksusy__5__1__3_8hpp/#variable-rdpadd)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/darksusy__5__1__3_8hpp/#define-darksusy-5-1-3-hpp-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/darksusy__5__1__3_8hpp/#define-darksusy-5-1-3-hpp-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/darksusy__5__1__3_8hpp/#define-darksusy-5-1-3-hpp-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/darksusy__5__1__3_8hpp/#define-darksusy-5-1-3-hpp-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/darksusy__5__1__3_8hpp/#define-darksusy-5-1-3-hpp-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/darksusy__5__1__3_8hpp/#define-backendname)**  |
+|  | **[BACKENDLANG](/documentation/code/files/darksusy__5__1__3_8hpp/#define-backendlang)**  |
+|  | **[VERSION](/documentation/code/files/darksusy__5__1__3_8hpp/#define-version)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/darksusy__5__1__3_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/darksusy__5__1__3_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -447,4 +447,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(decay_rates, DecayTable, MSSM63atQ, CMSSM)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:54 +0000
+Updated on 2022-09-08 at 02:23:05 +0000

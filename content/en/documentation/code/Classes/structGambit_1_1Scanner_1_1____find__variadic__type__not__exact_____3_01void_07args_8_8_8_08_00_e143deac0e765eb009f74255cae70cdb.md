@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef ret | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_e143deac0e765eb009f74255cae70cdb/#typedef-gambitscanner-find-variadic-type-not-exact-voidargs-retargs-t1-t-ret-type)**  |
-| typedef T1 | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_e143deac0e765eb009f74255cae70cdb/#typedef-gambitscanner-find-variadic-type-not-exact-voidargs-retargs-t1-t-func-type)**  |
+| typedef ret | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_e143deac0e765eb009f74255cae70cdb/#typedef-ret-type)**  |
+| typedef T1 | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_e143deac0e765eb009f74255cae70cdb/#typedef-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_e143deac0e765eb009f74255cae70cdb/#variable-gambitscanner-find-variadic-type-not-exact-voidargs-retargs-t1-t-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type__not__exact_____3_01void_07args_8_8_8_08_00_e143deac0e765eb009f74255cae70cdb/#variable-value)**  |
 
 ## Detailed Description
 
@@ -61,4 +61,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

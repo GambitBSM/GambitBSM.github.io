@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef ret | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args_8_8_8_08_00_01t_8_8_8_01_4/#typedef-gambitscannerfind-variadic-type-exact-voidargs-retargs-t-ret-type)**  |
-| typedef ret(args...) | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args_8_8_8_08_00_01t_8_8_8_01_4/#typedef-gambitscannerfind-variadic-type-exact-voidargs-retargs-t-func-type)**  |
+| typedef ret | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args_8_8_8_08_00_01t_8_8_8_01_4/#typedef-ret-type)**  |
+| typedef ret(args...) | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args_8_8_8_08_00_01t_8_8_8_01_4/#typedef-func-type)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args_8_8_8_08_00_01t_8_8_8_01_4/#variable-gambitscannerfind-variadic-type-exact-voidargs-retargs-t-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__exact_3_01void_07args_8_8_8_08_00_01ret_07args_8_8_8_08_00_01t_8_8_8_01_4/#variable-value)**  |
 
 ## Detailed Description
 
@@ -60,4 +60,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

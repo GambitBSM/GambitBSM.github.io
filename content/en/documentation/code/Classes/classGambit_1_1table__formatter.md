@@ -15,57 +15,57 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... T\> <br>| **[table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-table-formatter)**(const T &... params) |
-| template <typename... T\> <br>void | **[new_titles](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-new-titles)**(const T &... in) |
-| template <typename... T\> <br>void | **[default_widths](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-default-widths)**(const T &... in) |
-| template <typename... T\> <br>void | **[min_widths](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-min-widths)**(const T &... in) |
-| void | **[padding](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-padding)**(int p) |
-| void | **[wrap_around](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-wrap-around)**(bool b) |
-| void | **[top_line](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-top-line)**(bool b) |
-| void | **[bottom_line](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-bottom-line)**(bool b) |
-| void | **[capitalize_title](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-capitalize-title)**(int i) |
-| void | **[capitalize_title](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-capitalize-title)**() |
-| int | **[rows](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-rows)**() const |
-| int | **[cols](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-cols)**() const |
-| int | **[row_pos](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-row-pos)**() const |
-| int | **[col_pos](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-col-pos)**() const |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[new_row](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-new-row)**(int n =1) |
-| template <typename T \> <br>[table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[operator<<](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-operator)**(const T & in) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[reset_pt_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-reset-pt-flag)**(const unsigned char flag, int i, int j) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[reset_row_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-reset-row-flag)**(const unsigned char flag, int i) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[reset_col_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-reset-col-flag)**(const unsigned char flag, int i) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[set_pt_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-set-pt-flag)**(const unsigned char flag, int i, int j) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[set_row_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-set-row-flag)**(const unsigned char flag, int i) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[set_col_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-set-col-flag)**(const unsigned char flag, int i) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[reset](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-reset)**(int i =-1, int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[red](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-red)**(int i =-1, int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[green](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-green)**(int i =-1, int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[yellow](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-yellow)**(int i =-1, int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[bold](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-bold)**(int i =-1, int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[underline](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-underline)**(int i =-1, int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[right_justify](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-right-justify)**(int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[center_justify](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-center-justify)**(int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[left_justify](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-left-justify)**(int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[no_newline](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-no-newline)**(int j =-1) |
-| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[newline](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-newline)**(int j =-1) |
-| std::vector< std::string > & | **[operator[]](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-operator)**(int i) |
-| std::string | **[str](/documentation/code/classes/classgambit_1_1table__formatter/#function-gambittable-formatter-str)**() |
+| template <typename... T\> <br>| **[table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/#function-table-formatter)**(const T &... params) |
+| template <typename... T\> <br>void | **[new_titles](/documentation/code/classes/classgambit_1_1table__formatter/#function-new-titles)**(const T &... in) |
+| template <typename... T\> <br>void | **[default_widths](/documentation/code/classes/classgambit_1_1table__formatter/#function-default-widths)**(const T &... in) |
+| template <typename... T\> <br>void | **[min_widths](/documentation/code/classes/classgambit_1_1table__formatter/#function-min-widths)**(const T &... in) |
+| void | **[padding](/documentation/code/classes/classgambit_1_1table__formatter/#function-padding)**(int p) |
+| void | **[wrap_around](/documentation/code/classes/classgambit_1_1table__formatter/#function-wrap-around)**(bool b) |
+| void | **[top_line](/documentation/code/classes/classgambit_1_1table__formatter/#function-top-line)**(bool b) |
+| void | **[bottom_line](/documentation/code/classes/classgambit_1_1table__formatter/#function-bottom-line)**(bool b) |
+| void | **[capitalize_title](/documentation/code/classes/classgambit_1_1table__formatter/#function-capitalize-title)**(int i) |
+| void | **[capitalize_title](/documentation/code/classes/classgambit_1_1table__formatter/#function-capitalize-title)**() |
+| int | **[rows](/documentation/code/classes/classgambit_1_1table__formatter/#function-rows)**() const |
+| int | **[cols](/documentation/code/classes/classgambit_1_1table__formatter/#function-cols)**() const |
+| int | **[row_pos](/documentation/code/classes/classgambit_1_1table__formatter/#function-row-pos)**() const |
+| int | **[col_pos](/documentation/code/classes/classgambit_1_1table__formatter/#function-col-pos)**() const |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[new_row](/documentation/code/classes/classgambit_1_1table__formatter/#function-new-row)**(int n =1) |
+| template <typename T \> <br>[table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[operator<<](/documentation/code/classes/classgambit_1_1table__formatter/#function-operator)**(const T & in) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[reset_pt_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-reset-pt-flag)**(const unsigned char flag, int i, int j) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[reset_row_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-reset-row-flag)**(const unsigned char flag, int i) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[reset_col_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-reset-col-flag)**(const unsigned char flag, int i) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[set_pt_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-set-pt-flag)**(const unsigned char flag, int i, int j) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[set_row_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-set-row-flag)**(const unsigned char flag, int i) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[set_col_flag](/documentation/code/classes/classgambit_1_1table__formatter/#function-set-col-flag)**(const unsigned char flag, int i) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[reset](/documentation/code/classes/classgambit_1_1table__formatter/#function-reset)**(int i =-1, int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[red](/documentation/code/classes/classgambit_1_1table__formatter/#function-red)**(int i =-1, int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[green](/documentation/code/classes/classgambit_1_1table__formatter/#function-green)**(int i =-1, int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[yellow](/documentation/code/classes/classgambit_1_1table__formatter/#function-yellow)**(int i =-1, int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[bold](/documentation/code/classes/classgambit_1_1table__formatter/#function-bold)**(int i =-1, int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[underline](/documentation/code/classes/classgambit_1_1table__formatter/#function-underline)**(int i =-1, int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[right_justify](/documentation/code/classes/classgambit_1_1table__formatter/#function-right-justify)**(int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[center_justify](/documentation/code/classes/classgambit_1_1table__formatter/#function-center-justify)**(int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[left_justify](/documentation/code/classes/classgambit_1_1table__formatter/#function-left-justify)**(int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[no_newline](/documentation/code/classes/classgambit_1_1table__formatter/#function-no-newline)**(int j =-1) |
+| [table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/) & | **[newline](/documentation/code/classes/classgambit_1_1table__formatter/#function-newline)**(int j =-1) |
+| std::vector< std::string > & | **[operator[]](/documentation/code/classes/classgambit_1_1table__formatter/#function-operator)**(int i) |
+| std::string | **[str](/documentation/code/classes/classgambit_1_1table__formatter/#function-str)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const unsigned char | **[RESET](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-reset)**  |
-| const unsigned char | **[RED](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-red)**  |
-| const unsigned char | **[GREEN](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-green)**  |
-| const unsigned char | **[YELLOW](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-yellow)**  |
-| const unsigned char | **[COLOR](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-color)**  |
-| const unsigned char | **[BOLD](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-bold)**  |
-| const unsigned char | **[JUST_RIGHT](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-just-right)**  |
-| const unsigned char | **[JUST_CENTER](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-just-center)**  |
-| const unsigned char | **[JUST](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-just)**  |
-| const unsigned char | **[UNDERLINE](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-underline)**  |
-| const unsigned char | **[WRAP](/documentation/code/classes/classgambit_1_1table__formatter/#variable-gambittable-formatter-wrap)**  |
+| const unsigned char | **[RESET](/documentation/code/classes/classgambit_1_1table__formatter/#variable-reset)**  |
+| const unsigned char | **[RED](/documentation/code/classes/classgambit_1_1table__formatter/#variable-red)**  |
+| const unsigned char | **[GREEN](/documentation/code/classes/classgambit_1_1table__formatter/#variable-green)**  |
+| const unsigned char | **[YELLOW](/documentation/code/classes/classgambit_1_1table__formatter/#variable-yellow)**  |
+| const unsigned char | **[COLOR](/documentation/code/classes/classgambit_1_1table__formatter/#variable-color)**  |
+| const unsigned char | **[BOLD](/documentation/code/classes/classgambit_1_1table__formatter/#variable-bold)**  |
+| const unsigned char | **[JUST_RIGHT](/documentation/code/classes/classgambit_1_1table__formatter/#variable-just-right)**  |
+| const unsigned char | **[JUST_CENTER](/documentation/code/classes/classgambit_1_1table__formatter/#variable-just-center)**  |
+| const unsigned char | **[JUST](/documentation/code/classes/classgambit_1_1table__formatter/#variable-just)**  |
+| const unsigned char | **[UNDERLINE](/documentation/code/classes/classgambit_1_1table__formatter/#variable-underline)**  |
+| const unsigned char | **[WRAP](/documentation/code/classes/classgambit_1_1table__formatter/#variable-wrap)**  |
 
 ## Public Functions Documentation
 
@@ -472,4 +472,4 @@ static const unsigned char WRAP = 0x80;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

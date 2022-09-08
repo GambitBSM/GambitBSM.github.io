@@ -17,15 +17,15 @@ Plugin info from inifile.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Proto_Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/#function-gambitscannerpluginsproto-plugin-details-proto-plugin-details)**() |
+| | **[Proto_Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/#function-proto-plugin-details)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[plugin](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/#variable-gambitscannerpluginsproto-plugin-details-plugin)**  |
-| std::string | **[version](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/#variable-gambitscannerpluginsproto-plugin-details-version)**  |
-| std::string | **[path](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/#variable-gambitscannerpluginsproto-plugin-details-path)**  |
+| std::string | **[plugin](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/#variable-plugin)**  |
+| std::string | **[version](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/#variable-version)**  |
+| std::string | **[path](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/#variable-path)**  |
 
 ## Public Functions Documentation
 
@@ -61,4 +61,4 @@ std::string path;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

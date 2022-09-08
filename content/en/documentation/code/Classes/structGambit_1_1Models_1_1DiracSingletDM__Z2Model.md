@@ -18,21 +18,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[HiggsPoleMass](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-higgspolemass)**  |
-| double | **[HiggsVEV](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-higgsvev)**  |
-| double | **[DiracPoleMass](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-diracpolemass)**  |
-| double | **[DiracLambda](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-diraclambda)**  |
-| double | **[DiracXi](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-diracxi)**  |
-| double | **[HiggsPoleMass_1srd_low](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-higgspolemass-1srd-low)**  |
-| double | **[HiggsPoleMass_1srd_high](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-higgspolemass-1srd-high)**  |
-| double | **[LambdaH](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-lambdah)**  |
-| double | **[g1](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-g1)**  |
-| double | **[g2](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-g2)**  |
-| double | **[g3](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-g3)**  |
-| double | **[sinW2](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-sinw2)**  |
-| double[3] | **[Yd](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-yd)**  |
-| double[3] | **[Ye](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-ye)**  |
-| double[3] | **[Yu](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-gambitmodelsdiracsingletdm-z2model-yu)**  |
+| double | **[HiggsPoleMass](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-higgspolemass)**  |
+| double | **[HiggsVEV](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-higgsvev)**  |
+| double | **[DiracPoleMass](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-diracpolemass)**  |
+| double | **[DiracLambda](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-diraclambda)**  |
+| double | **[DiracXi](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-diracxi)**  |
+| double | **[HiggsPoleMass_1srd_low](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-higgspolemass-1srd-low)**  |
+| double | **[HiggsPoleMass_1srd_high](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-higgspolemass-1srd-high)**  |
+| double | **[LambdaH](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-lambdah)**  |
+| double | **[g1](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-g1)**  |
+| double | **[g2](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-g2)**  |
+| double | **[g3](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-g3)**  |
+| double | **[sinW2](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-sinw2)**  |
+| double[3] | **[Yd](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-yd)**  |
+| double[3] | **[Ye](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-ye)**  |
+| double[3] | **[Yu](/documentation/code/classes/structgambit_1_1models_1_1diracsingletdm__z2model/#variable-yu)**  |
 
 ## Detailed Description
 
@@ -152,4 +152,4 @@ double[3] Yu;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

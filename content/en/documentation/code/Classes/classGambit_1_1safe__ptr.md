@@ -20,24 +20,24 @@ Inherited by [Gambit::omp_safe_ptr< TYPE >](/documentation/code/classes/classgam
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/#function-gambitsafe-ptr-safe-ptr)**(TYPE * in_ptr =NULL)<br>Construct-o-safe_ptr.  |
-| virtual void | **[set](/documentation/code/classes/classgambit_1_1safe__ptr/#function-gambitsafe-ptr-set)**(TYPE * in_ptr)<br>Set pointer.  |
-| virtual const TYPE & | **[operator*](/documentation/code/classes/classgambit_1_1safe__ptr/#function-gambitsafe-ptr-operator)**() const<br>Dereference pointer.  |
-| virtual const TYPE & | **[operator[]](/documentation/code/classes/classgambit_1_1safe__ptr/#function-gambitsafe-ptr-operator)**(int index) const<br>Dereference pointer as if it is an array.  |
-| virtual const TYPE * | **[operator->](/documentation/code/classes/classgambit_1_1safe__ptr/#function-gambitsafe-ptr-operator)**() const<br>Access is allowed to const member functions only.  |
-| virtual bool | **[isNull](/documentation/code/classes/classgambit_1_1safe__ptr/#function-gambitsafe-ptr-isnull)**() const |
+| | **[safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/#function-safe-ptr)**(TYPE * in_ptr =NULL)<br>Construct-o-safe_ptr.  |
+| virtual void | **[set](/documentation/code/classes/classgambit_1_1safe__ptr/#function-set)**(TYPE * in_ptr)<br>Set pointer.  |
+| virtual const TYPE & | **[operator*](/documentation/code/classes/classgambit_1_1safe__ptr/#function-operator)**() const<br>Dereference pointer.  |
+| virtual const TYPE & | **[operator[]](/documentation/code/classes/classgambit_1_1safe__ptr/#function-operator)**(int index) const<br>Dereference pointer as if it is an array.  |
+| virtual const TYPE * | **[operator->](/documentation/code/classes/classgambit_1_1safe__ptr/#function-operator)**() const<br>Access is allowed to const member functions only.  |
+| virtual bool | **[isNull](/documentation/code/classes/classgambit_1_1safe__ptr/#function-isnull)**() const |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[dieGracefully](/documentation/code/classes/classgambit_1_1safe__ptr/#function-gambitsafe-ptr-diegracefully)**()<br>Failure message invoked when the user tries to dereference a null [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/).  |
+| void | **[dieGracefully](/documentation/code/classes/classgambit_1_1safe__ptr/#function-diegracefully)**()<br>Failure message invoked when the user tries to dereference a null [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/).  |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const TYPE * | **[ptr](/documentation/code/classes/classgambit_1_1safe__ptr/#variable-gambitsafe-ptr-ptr)** <br>The actual underlying pointer, interpreted as a pointer to constant value.  |
+| const TYPE * | **[ptr](/documentation/code/classes/classgambit_1_1safe__ptr/#variable-ptr)** <br>The actual underlying pointer, interpreted as a pointer to constant value.  |
 
 ## Detailed Description
 
@@ -79,7 +79,7 @@ inline virtual const TYPE & operator*() const
 
 Dereference pointer. 
 
-**Reimplemented by**: [Gambit::omp_safe_ptr::operator*](/documentation/code/classes/classgambit_1_1omp__safe__ptr/#function-gambitomp-safe-ptr-operator)
+**Reimplemented by**: [Gambit::omp_safe_ptr::operator*](/documentation/code/classes/classgambit_1_1omp__safe__ptr/#function-operator)
 
 
 ### function operator[]
@@ -129,4 +129,4 @@ The actual underlying pointer, interpreted as a pointer to constant value.
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

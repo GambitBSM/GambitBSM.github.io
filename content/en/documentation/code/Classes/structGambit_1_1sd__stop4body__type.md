@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[brgamma4bod](/documentation/code/classes/structgambit_1_1sd__stop4body__type/#variable-gambitsd-stop4body-type-brgamma4bod)**  |
-| Fdouble | **[brgammaup4bod](/documentation/code/classes/structgambit_1_1sd__stop4body__type/#variable-gambitsd-stop4body-type-brgammaup4bod)**  |
-| Fdouble | **[brgammagluino4bod](/documentation/code/classes/structgambit_1_1sd__stop4body__type/#variable-gambitsd-stop4body-type-brgammagluino4bod)**  |
-| Fdouble | **[br4bodoffshelltau](/documentation/code/classes/structgambit_1_1sd__stop4body__type/#variable-gambitsd-stop4body-type-br4bodoffshelltau)**  |
+| Fdouble | **[brgamma4bod](/documentation/code/classes/structgambit_1_1sd__stop4body__type/#variable-brgamma4bod)**  |
+| Fdouble | **[brgammaup4bod](/documentation/code/classes/structgambit_1_1sd__stop4body__type/#variable-brgammaup4bod)**  |
+| Fdouble | **[brgammagluino4bod](/documentation/code/classes/structgambit_1_1sd__stop4body__type/#variable-brgammagluino4bod)**  |
+| Fdouble | **[br4bodoffshelltau](/documentation/code/classes/structgambit_1_1sd__stop4body__type/#variable-br4bodoffshelltau)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ Fdouble br4bodoffshelltau;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

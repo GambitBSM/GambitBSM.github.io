@@ -18,32 +18,32 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-analysisdata)**()<br>Default constructor.  |
-| | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-analysisdata)**(const std::string & name)<br>Constructor with analysis name.  |
-| | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-analysisdata)**(const std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > & srds, const Eigen::MatrixXd & cov =Eigen::MatrixXd())<br>Constructor from a list of [SignalRegionData]() and an optional correlation (or covariance?) matrix.  |
-| void | **[clear](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-clear)**() |
-| size_t | **[size](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-size)**() const<br>Number of analyses.  |
-| bool | **[empty](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-empty)**() const<br>Is this container empty of signal regions?  |
-| bool | **[hasCorrs](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-hascorrs)**() const<br>Is there non-null correlation data?  |
-| void | **[add](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-add)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & srd)<br>Add a [SignalRegionData]().  |
-| bool | **[check](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-check)**() const<br>Check that the SRData list and the covariance matrix are consistent.  |
-| void | **[pythonize_me](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-pythonize-me)**() const |
-| [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-operator)**(size_t i)<br>Access the i'th signal region's data.  |
-| const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-operator)**(size_t i) const<br>Access the i'th signal region's data (const)  |
-| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::iterator | **[begin](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-begin)**()<br>Iterators (sugar for direct access to this->srdata)  |
-| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::const_iterator | **[begin](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-begin)**() const |
-| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::iterator | **[end](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-end)**() |
-| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::const_iterator | **[end](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-gambitcolliderbitanalysisdata-end)**() const |
+| | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**()<br>Default constructor.  |
+| | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::string & name)<br>Constructor with analysis name.  |
+| | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > & srds, const Eigen::MatrixXd & cov =Eigen::MatrixXd())<br>Constructor from a list of [SignalRegionData]() and an optional correlation (or covariance?) matrix.  |
+| void | **[clear](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-clear)**() |
+| size_t | **[size](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-size)**() const<br>Number of analyses.  |
+| bool | **[empty](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-empty)**() const<br>Is this container empty of signal regions?  |
+| bool | **[hasCorrs](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-hascorrs)**() const<br>Is there non-null correlation data?  |
+| void | **[add](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-add)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & srd)<br>Add a [SignalRegionData]().  |
+| bool | **[check](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-check)**() const<br>Check that the SRData list and the covariance matrix are consistent.  |
+| void | **[pythonize_me](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-pythonize-me)**() const |
+| [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-operator)**(size_t i)<br>Access the i'th signal region's data.  |
+| const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-operator)**(size_t i) const<br>Access the i'th signal region's data (const)  |
+| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::iterator | **[begin](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-begin)**()<br>Iterators (sugar for direct access to this->srdata)  |
+| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::const_iterator | **[begin](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-begin)**() const |
+| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::iterator | **[end](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-end)**() |
+| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) >::const_iterator | **[end](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-end)**() const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[event_gen_BYPASS](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-gambitcolliderbitanalysisdata-event-gen-bypass)**  |
-| std::string | **[analysis_name](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-gambitcolliderbitanalysisdata-analysis-name)** <br>[Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) name.  |
-| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > | **[srdata](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-gambitcolliderbitanalysisdata-srdata)** <br>List of signal regions' data summaries.  |
-| std::map< std::string, int > | **[srdata_identifiers](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-gambitcolliderbitanalysisdata-srdata-identifiers)** <br>Map of names and indices of all entries in srdata, for easy lookup.  |
-| Eigen::MatrixXd | **[srcov](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-gambitcolliderbitanalysisdata-srcov)** <br>Optional covariance matrix between SRs (0x0 null matrix = no correlation info)  |
+| bool | **[event_gen_BYPASS](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-event-gen-bypass)**  |
+| std::string | **[analysis_name](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-analysis-name)** <br>[Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) name.  |
+| std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > | **[srdata](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata)** <br>List of signal regions' data summaries.  |
+| std::map< std::string, int > | **[srdata_identifiers](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata-identifiers)** <br>Map of names and indices of all entries in srdata, for easy lookup.  |
+| Eigen::MatrixXd | **[srcov](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srcov)** <br>Optional covariance matrix between SRs (0x0 null matrix = no correlation info)  |
 
 ## Detailed Description
 
@@ -257,4 +257,4 @@ Optional covariance matrix between SRs (0x0 null matrix = no correlation info)
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

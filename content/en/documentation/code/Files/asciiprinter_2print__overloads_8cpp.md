@@ -20,10 +20,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ASIMPLEPRINT](/documentation/code/files/asciiprinter_2print__overloads_8cpp/#define-asciiprinter-print-overloads-cpp-asimpleprint)**(r, data, elem) <br>Macros to add all the simple print functions that just use the above templates.  |
-|  | **[ASIMPLEPRINT_VEC](/documentation/code/files/asciiprinter_2print__overloads_8cpp/#define-asciiprinter-print-overloads-cpp-asimpleprint-vec)**(r, data, elem)  |
-|  | **[ADD_ASCII_SIMPLE_PRINTS](/documentation/code/files/asciiprinter_2print__overloads_8cpp/#define-asciiprinter-print-overloads-cpp-add-ascii-simple-prints)**(TYPES)  |
-|  | **[ADD_ASCII_VECTOR_PRINTS](/documentation/code/files/asciiprinter_2print__overloads_8cpp/#define-asciiprinter-print-overloads-cpp-add-ascii-vector-prints)**(TYPES)  |
+|  | **[ASIMPLEPRINT](/documentation/code/files/asciiprinter_2print__overloads_8cpp/#define-asimpleprint)**(r, data, elem) <br>Macros to add all the simple print functions that just use the above templates.  |
+|  | **[ASIMPLEPRINT_VEC](/documentation/code/files/asciiprinter_2print__overloads_8cpp/#define-asimpleprint-vec)**(r, data, elem)  |
+|  | **[ADD_ASCII_SIMPLE_PRINTS](/documentation/code/files/asciiprinter_2print__overloads_8cpp/#define-add-ascii-simple-prints)**(TYPES)  |
+|  | **[ADD_ASCII_VECTOR_PRINTS](/documentation/code/files/asciiprinter_2print__overloads_8cpp/#define-add-ascii-vector-prints)**(TYPES)  |
 
 ## Detailed Description
 
@@ -252,4 +252,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:51 +0000
+Updated on 2022-09-08 at 02:23:03 +0000

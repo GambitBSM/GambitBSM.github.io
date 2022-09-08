@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[VerifyContents](/documentation/code/classes/classgambit_1_1verifycontents/#function-gambitverifycontents-verifycontents)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & spec) |
+| | **[VerifyContents](/documentation/code/classes/classgambit_1_1verifycontents/#function-verifycontents)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & spec) |
 
 ## Detailed Description
 
@@ -43,4 +43,4 @@ inline VerifyContents(
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

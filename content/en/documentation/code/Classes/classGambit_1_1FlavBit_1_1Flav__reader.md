@@ -17,23 +17,23 @@ Reader class for FlavBit [YAML](/documentation/code/namespaces/namespaceyaml/) d
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Flav_reader](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-flav-reader)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) loc)<br>Constructor that takes the location of the database as an argument.  |
-| void | **[read_yaml](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-read-yaml)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) name)<br>Read the entire database into memory.  |
-| void | **[read_yaml_measurement](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-read-yaml-measurement)**([str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) name, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) measurement_name)<br>Read a single measurement from the database into memory.  |
-| void | **[initialise_matrices](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-initialise-matrices)**()<br>Compute the covariance matrix and populate the measurement and theory error vectors.  |
-| void | **[print_matrix](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-print-matrix)**(boost::numeric::ublas::matrix< double > & M, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) name, bool is_true_matrix =true)<br>Print a boost ublas matrix.  |
-| void | **[print_matrix](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-print-matrix)**(boost::numeric::ublas::matrix< std::pair< double, bool > > & M, [str](/documentation/code/namespaces/namespacegambit/#typedef-gambit-str) name, bool is_true_matrix =true)<br>Print a boost ublas matrix with a pair type.  |
-| void | **[debug_mode](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-debug-mode)**(bool k)<br>Set debug mode for reader.  |
-| boost::numeric::ublas::matrix< double > | **[get_exp_cov](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-get-exp-cov)**()<br>Return the covariance matrix.  |
-| boost::numeric::ublas::matrix< double > | **[get_exp_value](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-get-exp-value)**()<br>Return the experimental central values.  |
-| boost::numeric::ublas::matrix< std::pair< double, bool > > | **[get_th_err](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-get-th-err)**()<br>Return the (uncorrelated) theory errors.  |
-| double | **[get_error_from_confidence_levels](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-gambitflavbitflav-reader-get-error-from-confidence-levels)**(double exp_value, double CL_90, double CL_95, bool one_sided)<br>Calculates the experimental statistical error from confidence levels.  |
+| | **[Flav_reader](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-flav-reader)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) loc)<br>Constructor that takes the location of the database as an argument.  |
+| void | **[read_yaml](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-read-yaml)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name)<br>Read the entire database into memory.  |
+| void | **[read_yaml_measurement](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-read-yaml-measurement)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) measurement_name)<br>Read a single measurement from the database into memory.  |
+| void | **[initialise_matrices](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-initialise-matrices)**()<br>Compute the covariance matrix and populate the measurement and theory error vectors.  |
+| void | **[print_matrix](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-print-matrix)**(boost::numeric::ublas::matrix< double > & M, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, bool is_true_matrix =true)<br>Print a boost ublas matrix.  |
+| void | **[print_matrix](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-print-matrix)**(boost::numeric::ublas::matrix< std::pair< double, bool > > & M, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, bool is_true_matrix =true)<br>Print a boost ublas matrix with a pair type.  |
+| void | **[debug_mode](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-debug-mode)**(bool k)<br>Set debug mode for reader.  |
+| boost::numeric::ublas::matrix< double > | **[get_exp_cov](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-get-exp-cov)**()<br>Return the covariance matrix.  |
+| boost::numeric::ublas::matrix< double > | **[get_exp_value](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-get-exp-value)**()<br>Return the experimental central values.  |
+| boost::numeric::ublas::matrix< std::pair< double, bool > > | **[get_th_err](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-get-th-err)**()<br>Return the (uncorrelated) theory errors.  |
+| double | **[get_error_from_confidence_levels](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#function-get-error-from-confidence-levels)**(double exp_value, double CL_90, double CL_95, bool one_sided)<br>Calculates the experimental statistical error from confidence levels.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[number_measurements](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#variable-gambitflavbitflav-reader-number-measurements)**  |
+| int | **[number_measurements](/documentation/code/classes/classgambit_1_1flavbit_1_1flav__reader/#variable-number-measurements)**  |
 
 ## Public Functions Documentation
 
@@ -158,4 +158,4 @@ int number_measurements;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:48 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

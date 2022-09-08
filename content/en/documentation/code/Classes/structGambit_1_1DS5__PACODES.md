@@ -15,25 +15,25 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kse](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kse)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksmu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksmu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kstau](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kstau)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksd](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksd)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksc](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksc)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kss](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kss)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kst](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kst)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksb](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksb)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 4 > | **[kn](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kn)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kcha](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kcha)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3 > | **[knu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-knu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3 > | **[kl](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kl)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3 > | **[kqu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kqu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3 > | **[kqd](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-kqd)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 6 > | **[ksnu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksnu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 6 > | **[ksl](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksl)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 6 > | **[ksqu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksqu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 6 > | **[ksqd](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-gambitds5-pacodes-ksqd)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kse](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kse)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksmu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksmu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kstau](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kstau)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksd](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksd)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksc](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksc)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kss](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kss)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kst](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kst)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[ksb](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksb)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 4 > | **[kn](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kn)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 2 > | **[kcha](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kcha)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3 > | **[knu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-knu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3 > | **[kl](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kl)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3 > | **[kqu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kqu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3 > | **[kqd](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-kqd)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 6 > | **[ksnu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksnu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 6 > | **[ksl](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksl)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 6 > | **[ksqu](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksqu)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 6 > | **[ksqd](/documentation/code/classes/structgambit_1_1ds5__pacodes/#variable-ksqd)**  |
 
 ## Public Attributes Documentation
 
@@ -172,4 +172,4 @@ Farray< Finteger, 1, 6 > ksqd;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:46 +0000
+Updated on 2022-09-08 at 02:22:59 +0000

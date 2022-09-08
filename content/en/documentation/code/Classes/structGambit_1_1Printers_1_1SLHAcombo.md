@@ -15,17 +15,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-gambitprintersslhacombo-slhacombo)**(const std::string & t, const std::string & b, int i) |
-| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-gambitprintersslhacombo-slhacombo)**(const std::string & t, const std::string & b, int i, int j) |
-| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-gambitprintersslhacombo-slhacombo)**() |
+| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-slhacombo)**(const std::string & t, const std::string & b, int i) |
+| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-slhacombo)**(const std::string & t, const std::string & b, int i, int j) |
+| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-slhacombo)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[tag](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-gambitprintersslhacombo-tag)**  |
-| std::string | **[block](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-gambitprintersslhacombo-block)**  |
-| std::vector< int > | **[indices](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-gambitprintersslhacombo-indices)**  |
+| std::string | **[tag](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-tag)**  |
+| std::string | **[block](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-block)**  |
+| std::vector< int > | **[indices](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-indices)**  |
 
 ## Public Functions Documentation
 
@@ -84,4 +84,4 @@ std::vector< int > indices;
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:49 +0000
+Updated on 2022-09-08 at 02:23:01 +0000

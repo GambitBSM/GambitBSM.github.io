@@ -19,9 +19,9 @@ Inherits from std::exception
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SilentShutdownException](/documentation/code/classes/classgambit_1_1silentshutdownexception/#function-gambitsilentshutdownexception-silentshutdownexception)**()<br>[SilentShutdownException](/documentation/code/classes/classgambit_1_1silentshutdownexception/) member functions.  |
-| | **[SilentShutdownException](/documentation/code/classes/classgambit_1_1silentshutdownexception/#function-gambitsilentshutdownexception-silentshutdownexception)**(const std::string & message) |
-| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1silentshutdownexception/#function-gambitsilentshutdownexception-what)**() const |
+| | **[SilentShutdownException](/documentation/code/classes/classgambit_1_1silentshutdownexception/#function-silentshutdownexception)**()<br>[SilentShutdownException](/documentation/code/classes/classgambit_1_1silentshutdownexception/) member functions.  |
+| | **[SilentShutdownException](/documentation/code/classes/classgambit_1_1silentshutdownexception/#function-silentshutdownexception)**(const std::string & message) |
+| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1silentshutdownexception/#function-what)**() const |
 
 ## Public Functions Documentation
 
@@ -51,4 +51,4 @@ virtual const char * what() const
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000

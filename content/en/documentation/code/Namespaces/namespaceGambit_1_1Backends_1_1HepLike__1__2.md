@@ -13,15 +13,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef ::HepLike_1_2::HL_Data | **[HL_Data](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-data)**  |
-| typedef ::HepLike_1_2::HL_Gaussian | **[HL_Gaussian](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-gaussian)**  |
-| typedef ::HepLike_1_2::HL_BifurGaussian | **[HL_BifurGaussian](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-bifurgaussian)**  |
-| typedef ::HepLike_1_2::HL_ExpPoints | **[HL_ExpPoints](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-exppoints)**  |
-| typedef ::HepLike_1_2::HL_Limit | **[HL_Limit](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-limit)**  |
-| typedef ::HepLike_1_2::HL_ProfLikelihood | **[HL_ProfLikelihood](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-proflikelihood)**  |
-| typedef ::HepLike_1_2::HL_nDimBifurGaussian | **[HL_nDimBifurGaussian](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-ndimbifurgaussian)**  |
-| typedef ::HepLike_1_2::HL_nDimGaussian | **[HL_nDimGaussian](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-ndimgaussian)**  |
-| typedef ::HepLike_1_2::HL_nDimLikelihood | **[HL_nDimLikelihood](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-gambitbackendsheplike-1-2-hl-ndimlikelihood)**  |
+| typedef ::HepLike_1_2::HL_Data | **[HL_Data](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-data)**  |
+| typedef ::HepLike_1_2::HL_Gaussian | **[HL_Gaussian](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-gaussian)**  |
+| typedef ::HepLike_1_2::HL_BifurGaussian | **[HL_BifurGaussian](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-bifurgaussian)**  |
+| typedef ::HepLike_1_2::HL_ExpPoints | **[HL_ExpPoints](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-exppoints)**  |
+| typedef ::HepLike_1_2::HL_Limit | **[HL_Limit](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-limit)**  |
+| typedef ::HepLike_1_2::HL_ProfLikelihood | **[HL_ProfLikelihood](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-proflikelihood)**  |
+| typedef ::HepLike_1_2::HL_nDimBifurGaussian | **[HL_nDimBifurGaussian](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-ndimbifurgaussian)**  |
+| typedef ::HepLike_1_2::HL_nDimGaussian | **[HL_nDimGaussian](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-ndimgaussian)**  |
+| typedef ::HepLike_1_2::HL_nDimLikelihood | **[HL_nDimLikelihood](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/#typedef-hl-ndimlikelihood)**  |
 
 ## Types Documentation
 
@@ -95,4 +95,4 @@ typedef ::HepLike_1_2::HL_nDimLikelihood Gambit::Backends::HepLike_1_2::HL_nDimL
 
 -------------------------------
 
-Updated on 2022-09-08 at 02:00:47 +0000
+Updated on 2022-09-08 at 02:23:00 +0000
