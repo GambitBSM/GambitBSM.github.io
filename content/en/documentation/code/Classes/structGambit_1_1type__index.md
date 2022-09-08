@@ -15,24 +15,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[type_index](/documentation/code/classes/structgambit_1_1type__index/#function-type-index)**(const std::type_info & __rhs) |
-| | **[type_index](/documentation/code/classes/structgambit_1_1type__index/#function-type-index)**() |
-| const std::type_info & | **[operator=](/documentation/code/classes/structgambit_1_1type__index/#function-operator)**(const std::type_info & __rhs) |
-| bool | **[operator==](/documentation/code/classes/structgambit_1_1type__index/#function-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
-| bool | **[operator!=](/documentation/code/classes/structgambit_1_1type__index/#function-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
-| bool | **[operator<](/documentation/code/classes/structgambit_1_1type__index/#function-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
-| bool | **[operator<=](/documentation/code/classes/structgambit_1_1type__index/#function-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
-| bool | **[operator>](/documentation/code/classes/structgambit_1_1type__index/#function-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
-| bool | **[operator>=](/documentation/code/classes/structgambit_1_1type__index/#function-operator)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
-| size_t | **[hash_code](/documentation/code/classes/structgambit_1_1type__index/#function-hash-code)**() const |
-| const char * | **[name](/documentation/code/classes/structgambit_1_1type__index/#function-name)**() const |
+| | **[type_index](/documentation/code/classes/structgambit_1_1type__index/)**(const std::type_info & __rhs) |
+| | **[type_index](/documentation/code/classes/structgambit_1_1type__index/)**() |
+| const std::type_info & | **[operator=](/documentation/code/classes/structgambit_1_1type__index/)**(const std::type_info & __rhs) |
+| bool | **[operator==](/documentation/code/classes/structgambit_1_1type__index/)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
+| bool | **[operator!=](/documentation/code/classes/structgambit_1_1type__index/)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
+| bool | **[operator<](/documentation/code/classes/structgambit_1_1type__index/)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
+| bool | **[operator<=](/documentation/code/classes/structgambit_1_1type__index/)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
+| bool | **[operator>](/documentation/code/classes/structgambit_1_1type__index/)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
+| bool | **[operator>=](/documentation/code/classes/structgambit_1_1type__index/)**(const [Gambit::type_index](/documentation/code/classes/structgambit_1_1type__index/) & __rhs) const |
+| size_t | **[hash_code](/documentation/code/classes/structgambit_1_1type__index/)**() const |
+| const char * | **[name](/documentation/code/classes/structgambit_1_1type__index/)**() const |
 
 ## Friends
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[type_equal_to](/documentation/code/classes/structgambit_1_1type__index/#friend-type-equal-to)**  |
-| struct | **[std::equal_to< Gambit::type_index >](/documentation/code/classes/structgambit_1_1type__index/#friend-stdequal-to-gambittype-index)**  |
+| struct | **[type_equal_to](/documentation/code/classes/structgambit_1_1type__index/)**  |
+| struct | **[std::equal_to< Gambit::type_index >](/documentation/code/classes/structgambit_1_1type__index/)**  |
 
 ## Public Functions Documentation
 
@@ -151,4 +151,4 @@ friend struct std::equal_to< Gambit::type_index >(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

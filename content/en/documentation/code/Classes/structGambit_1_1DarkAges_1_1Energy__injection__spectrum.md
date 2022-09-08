@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< double > | **[E_el](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/#variable-e-el)**  |
-| std::vector< double > | **[E_ph](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/#variable-e-ph)**  |
-| std::vector< double > | **[spec_el](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/#variable-spec-el)**  |
-| std::vector< double > | **[spec_ph](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/#variable-spec-ph)**  |
+| std::vector< double > | **[E_el](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
+| std::vector< double > | **[E_ph](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
+| std::vector< double > | **[spec_el](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
+| std::vector< double > | **[spec_ph](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ std::vector< double > spec_ph;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

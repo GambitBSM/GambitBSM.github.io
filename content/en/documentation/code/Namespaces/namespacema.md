@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| character *4 function | **[text](/documentation/code/namespaces/namespacema/#function-text)**() |
+| character *4 function | **[text](/documentation/code/namespaces/namespacema/)**() |
 
 
 ## Functions Documentation
@@ -31,4 +31,4 @@ character *4 function text()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

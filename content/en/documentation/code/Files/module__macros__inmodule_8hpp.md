@@ -13,31 +13,31 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[START_MODULE](/documentation/code/files/module__macros__inmodule_8hpp/#define-start-module)**  |
-|  | **[START_CAPABILITY](/documentation/code/files/module__macros__inmodule_8hpp/#define-start-capability)**  |
-|  | **[LONG_START_CAPABILITY](/documentation/code/files/module__macros__inmodule_8hpp/#define-long-start-capability)**(MODULE, C)  |
-|  | **[DECLARE_FUNCTION](/documentation/code/files/module__macros__inmodule_8hpp/#define-declare-function)**(TYPE, CAN_MANAGE)  |
-|  | **[LONG_DECLARE_FUNCTION](/documentation/code/files/module__macros__inmodule_8hpp/#define-long-declare-function)**(MODULE, C, FUNCTION, TYPE, CAN_MANAGE)  |
-|  | **[DEPENDENCY](/documentation/code/files/module__macros__inmodule_8hpp/#define-dependency)**(DEP, TYPE)  |
-|  | **[LONG_DEPENDENCY](/documentation/code/files/module__macros__inmodule_8hpp/#define-long-dependency)**(MODULE, FUNCTION, DEP, TYPE)  |
-|  | **[NEEDS_MANAGER](/documentation/code/files/module__macros__inmodule_8hpp/#define-needs-manager)**(...)  |
-|  | **[ALLOW_MODELS](/documentation/code/files/module__macros__inmodule_8hpp/#define-allow-models)**(...)  |
-|  | **[ALLOWED_MODEL](/documentation/code/files/module__macros__inmodule_8hpp/#define-allowed-model)**(MODULE, FUNCTION, MODEL)  |
-|  | **[ALLOWED_MODEL_DEPENDENCE](/documentation/code/files/module__macros__inmodule_8hpp/#define-allowed-model-dependence)**(MODULE, FUNCTION, MODEL)  |
-|  | **[ALLOW_MODEL_COMBINATION](/documentation/code/files/module__macros__inmodule_8hpp/#define-allow-model-combination)**(...)  |
-|  | **[MODEL_GROUP](/documentation/code/files/module__macros__inmodule_8hpp/#define-model-group)**(GROUPNAME, GROUP)  |
-|  | **[BE_GROUP](/documentation/code/files/module__macros__inmodule_8hpp/#define-be-group)**(GROUP)  |
-|  | **[DECLARE_BACKEND_REQ](/documentation/code/files/module__macros__inmodule_8hpp/#define-declare-backend-req)**(GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
-|  | **[LONG_DECLARE_BACKEND_REQ](/documentation/code/files/module__macros__inmodule_8hpp/#define-long-declare-backend-req)**(MODULE, C, FUNCTION, GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
-|  | **[ACTIVATE_BACKEND_REQ_FOR_MODELS](/documentation/code/files/module__macros__inmodule_8hpp/#define-activate-backend-req-for-models)**(MODELS, TAGS)  |
-|  | **[START_CONDITIONAL_DEPENDENCY](/documentation/code/files/module__macros__inmodule_8hpp/#define-start-conditional-dependency)**(TYPE)  |
-|  | **[ACTIVATE_DEP_BE](/documentation/code/files/module__macros__inmodule_8hpp/#define-activate-dep-be)**(BACKEND_REQ, BACKEND, VERSTRING)  |
-|  | **[ACTIVATE_FOR_MODELS](/documentation/code/files/module__macros__inmodule_8hpp/#define-activate-for-models)**(...)  |
-|  | **[MODEL_CONDITIONAL_DEPENDENCY](/documentation/code/files/module__macros__inmodule_8hpp/#define-model-conditional-dependency)**(DEP, TYPE, ...)  |
-|  | **[BACKEND_OPTION](/documentation/code/files/module__macros__inmodule_8hpp/#define-backend-option)**(BACKEND_AND_VERSIONS, TAGS)  |
-|  | **[LONG_BACKEND_OPTION](/documentation/code/files/module__macros__inmodule_8hpp/#define-long-backend-option)**(MODULE, CAPABILITY, FUNCTION, BACKEND_AND_VERSIONS, TAGS)  |
-|  | **[FORCE_SAME_BACKEND](/documentation/code/files/module__macros__inmodule_8hpp/#define-force-same-backend)**(...)  |
-|  | **[CLASSLOAD_NEEDED](/documentation/code/files/module__macros__inmodule_8hpp/#define-classload-needed)**(...)  |
+|  | **[START_MODULE](/documentation/code/files/module__macros__inmodule_8hpp/)**  |
+|  | **[START_CAPABILITY](/documentation/code/files/module__macros__inmodule_8hpp/)**  |
+|  | **[LONG_START_CAPABILITY](/documentation/code/files/module__macros__inmodule_8hpp/)**(MODULE, C)  |
+|  | **[DECLARE_FUNCTION](/documentation/code/files/module__macros__inmodule_8hpp/)**(TYPE, CAN_MANAGE)  |
+|  | **[LONG_DECLARE_FUNCTION](/documentation/code/files/module__macros__inmodule_8hpp/)**(MODULE, C, FUNCTION, TYPE, CAN_MANAGE)  |
+|  | **[DEPENDENCY](/documentation/code/files/module__macros__inmodule_8hpp/)**(DEP, TYPE)  |
+|  | **[LONG_DEPENDENCY](/documentation/code/files/module__macros__inmodule_8hpp/)**(MODULE, FUNCTION, DEP, TYPE)  |
+|  | **[NEEDS_MANAGER](/documentation/code/files/module__macros__inmodule_8hpp/)**(...)  |
+|  | **[ALLOW_MODELS](/documentation/code/files/module__macros__inmodule_8hpp/)**(...)  |
+|  | **[ALLOWED_MODEL](/documentation/code/files/module__macros__inmodule_8hpp/)**(MODULE, FUNCTION, MODEL)  |
+|  | **[ALLOWED_MODEL_DEPENDENCE](/documentation/code/files/module__macros__inmodule_8hpp/)**(MODULE, FUNCTION, MODEL)  |
+|  | **[ALLOW_MODEL_COMBINATION](/documentation/code/files/module__macros__inmodule_8hpp/)**(...)  |
+|  | **[MODEL_GROUP](/documentation/code/files/module__macros__inmodule_8hpp/)**(GROUPNAME, GROUP)  |
+|  | **[BE_GROUP](/documentation/code/files/module__macros__inmodule_8hpp/)**(GROUP)  |
+|  | **[DECLARE_BACKEND_REQ](/documentation/code/files/module__macros__inmodule_8hpp/)**(GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
+|  | **[LONG_DECLARE_BACKEND_REQ](/documentation/code/files/module__macros__inmodule_8hpp/)**(MODULE, C, FUNCTION, GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
+|  | **[ACTIVATE_BACKEND_REQ_FOR_MODELS](/documentation/code/files/module__macros__inmodule_8hpp/)**(MODELS, TAGS)  |
+|  | **[START_CONDITIONAL_DEPENDENCY](/documentation/code/files/module__macros__inmodule_8hpp/)**(TYPE)  |
+|  | **[ACTIVATE_DEP_BE](/documentation/code/files/module__macros__inmodule_8hpp/)**(BACKEND_REQ, BACKEND, VERSTRING)  |
+|  | **[ACTIVATE_FOR_MODELS](/documentation/code/files/module__macros__inmodule_8hpp/)**(...)  |
+|  | **[MODEL_CONDITIONAL_DEPENDENCY](/documentation/code/files/module__macros__inmodule_8hpp/)**(DEP, TYPE, ...)  |
+|  | **[BACKEND_OPTION](/documentation/code/files/module__macros__inmodule_8hpp/)**(BACKEND_AND_VERSIONS, TAGS)  |
+|  | **[LONG_BACKEND_OPTION](/documentation/code/files/module__macros__inmodule_8hpp/)**(MODULE, CAPABILITY, FUNCTION, BACKEND_AND_VERSIONS, TAGS)  |
+|  | **[FORCE_SAME_BACKEND](/documentation/code/files/module__macros__inmodule_8hpp/)**(...)  |
+|  | **[CLASSLOAD_NEEDED](/documentation/code/files/module__macros__inmodule_8hpp/)**(...)  |
 
 ## Detailed Description
 
@@ -439,4 +439,4 @@ DUMMYARG(__VA_ARGS__)
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

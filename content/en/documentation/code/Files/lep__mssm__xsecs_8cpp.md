@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[pow2](/documentation/code/files/lep__mssm__xsecs_8cpp/#define-pow2)**(a)  |
+|  | **[pow2](/documentation/code/files/lep__mssm__xsecs_8cpp/)**(a)  |
 
 ## Detailed Description
 
@@ -889,4 +889,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

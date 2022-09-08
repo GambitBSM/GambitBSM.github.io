@@ -13,24 +13,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| complex< double > | **[VpL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vpl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U) |
-| double | **[EL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-el)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[ER](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-er)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[VL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[VR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vr)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[DL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-dl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[DR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-dr)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[UL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-ul)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[UR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-ur)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[VuL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vul)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[Fw](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-fw)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[Zww](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-zww)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[HL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-hl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[HR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-hr)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[HdL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-hdl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[HdR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-hdr)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[HuL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-hul)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| double | **[HuR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-hur)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| complex< double > | **[VpL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U) |
+| double | **[EL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[ER](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| complex< double > | **[VL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| complex< double > | **[VR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| complex< double > | **[DL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| complex< double > | **[DR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| complex< double > | **[UL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| complex< double > | **[UR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| complex< double > | **[VuL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[Fw](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[Zww](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[HL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[HR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[HdL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[HdR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[HuL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| double | **[HuR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
 
 
 ## Functions Documentation
@@ -236,4 +236,4 @@ double HuR(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Rule](/documentation/code/classes/structgambit_1_1dres_1_1rule/#function-rule)**(std::string function, std::string module) |
-| | **[Rule](/documentation/code/classes/structgambit_1_1dres_1_1rule/#function-rule)**([IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) t) |
+| | **[Rule](/documentation/code/classes/structgambit_1_1dres_1_1rule/)**(std::string function, std::string module) |
+| | **[Rule](/documentation/code/classes/structgambit_1_1dres_1_1rule/)**([IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) t) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[function](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-function)**  |
-| std::string | **[module](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-module)**  |
+| std::string | **[function](/documentation/code/classes/structgambit_1_1dres_1_1rule/)**  |
+| std::string | **[module](/documentation/code/classes/structgambit_1_1dres_1_1rule/)**  |
 
 ## Detailed Description
 
@@ -76,4 +76,4 @@ std::string module;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

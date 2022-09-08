@@ -17,16 +17,16 @@ Inherits from [modules.infomsg.InfoMessage](/documentation/code/classes/classmod
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/#function-init)**(self self, tag tag, reason reason ='') |
+| def | **[__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/)**(self self, tag tag, reason reason ='') |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[msg](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/#variable-msg)**  |
-| | **[tags_done](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/#variable-tags-done)**  |
-| | **[tag](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/#variable-tag)**  |
-| | **[msg](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/#variable-msg)**  |
+| string | **[msg](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/)**  |
+| | **[tags_done](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/)**  |
+| | **[tag](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/)**  |
+| | **[msg](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/)**  |
 
 ## Additional inherited members
 
@@ -34,7 +34,7 @@ Inherits from [modules.infomsg.InfoMessage](/documentation/code/classes/classmod
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[printMessage](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/#function-printmessage)**(self self) |
+| def | **[printMessage](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/)**(self self) |
 
 
 ## Public Functions Documentation
@@ -50,7 +50,7 @@ def __init__(
 ```
 
 
-**Reimplements**: [modules::infomsg::InfoMessage::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/#function-init)
+**Reimplements**: [modules::infomsg::InfoMessage::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/)
 
 
 ## Public Attributes Documentation
@@ -85,4 +85,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

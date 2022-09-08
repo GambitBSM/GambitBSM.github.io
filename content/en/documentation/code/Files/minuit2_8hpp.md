@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ROOT_Math_VecTypes](/documentation/code/files/minuit2_8hpp/#define-root-math-vectypes)**  |
-|  | **[MATHCORE_STANDALONE](/documentation/code/files/minuit2_8hpp/#define-mathcore-standalone)**  |
+|  | **[ROOT_Math_VecTypes](/documentation/code/files/minuit2_8hpp/)**  |
+|  | **[MATHCORE_STANDALONE](/documentation/code/files/minuit2_8hpp/)**  |
 
 ## Detailed Description
 
@@ -90,4 +90,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

@@ -15,35 +15,35 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hlbrsc](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hlbrsc)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[hlbrsn](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hlbrsn)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hhbrsc](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrsc)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[hhbrsn](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrsn)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[habrsc](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-habrsc)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[habrsn](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-habrsn)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[hcbrsu](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hcbrsu)**  |
-| Fdouble | **[hlbrcht](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hlbrcht)**  |
-| Fdouble | **[hhbrcht](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrcht)**  |
-| Fdouble | **[habrcht](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-habrcht)**  |
-| Fdouble | **[hlbrnet](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hlbrnet)**  |
-| Fdouble | **[hhbrnet](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrnet)**  |
-| Fdouble | **[habrnet](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-habrnet)**  |
-| Fdouble | **[hcbrcnt](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hcbrcnt)**  |
-| Fdouble | **[hlbrsl](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hlbrsl)**  |
-| Fdouble | **[hhbrsl](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrsl)**  |
-| Fdouble | **[hcbrsl](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hcbrsl)**  |
-| Fdouble | **[habrsl](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-habrsl)**  |
-| Fdouble | **[habrst](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-habrst)**  |
-| Fdouble | **[habrsb](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-habrsb)**  |
-| Fdouble | **[hhbrsq](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrsq)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hhbrst](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrst)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hhbrsb](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrsb)**  |
-| Fdouble | **[hhbrsqt](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hhbrsqt)**  |
-| Fdouble | **[hcbrsq](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hcbrsq)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hcbrstb](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hcbrstb)**  |
-| Fdouble | **[hcbrsqt](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hcbrsqt)**  |
-| Fdouble | **[hlbrsq](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hlbrsq)**  |
-| Fdouble | **[hlbrsqt](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/#variable-hlbrsqt)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hlbrsc](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[hlbrsn](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hhbrsc](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[hhbrsn](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[habrsc](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4, 1, 4 > | **[habrsn](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[hcbrsu](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hlbrcht](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hhbrcht](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[habrcht](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hlbrnet](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hhbrnet](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[habrnet](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hcbrcnt](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hlbrsl](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hhbrsl](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hcbrsl](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[habrsl](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[habrst](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[habrsb](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hhbrsq](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hhbrst](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hhbrsb](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hhbrsqt](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hcbrsq](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 2 > | **[hcbrstb](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hcbrsqt](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hlbrsq](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
+| Fdouble | **[hlbrsqt](/documentation/code/classes/structgambit_1_1wisusy__hdec__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -252,4 +252,4 @@ Fdouble hlbrsqt;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~AbstractBase](/documentation/code/classes/classabstractbase/#function-abstractbase)**() |
-| virtual | **[~AbstractBase](/documentation/code/classes/classabstractbase/#function-abstractbase)**() |
+| virtual | **[~AbstractBase](/documentation/code/classes/classabstractbase/)**() |
+| virtual | **[~AbstractBase](/documentation/code/classes/classabstractbase/)**() |
 
 ## Public Functions Documentation
 
@@ -36,4 +36,4 @@ inline virtual ~AbstractBase()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

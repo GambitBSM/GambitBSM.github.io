@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[module_name](/documentation/code/namespaces/namespacemodules_1_1active__cfg/#variable-module-name)**  |
+| string | **[module_name](/documentation/code/namespaces/namespacemodules_1_1active__cfg/)**  |
 
 
 
@@ -31,4 +31,4 @@ string module_name =  'example_1_234';
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

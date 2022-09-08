@@ -14,8 +14,8 @@ Helper class for drawing the model hierarchy graph (edges)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[colorWriter](/documentation/code/classes/classgambit_1_1modelhierarchy_1_1colorwriter/#function-colorwriter)**(const ModelGraphType * g)<br>Constructor.  |
-| template <class VertexOrEdge \> <br>void | **[operator()](/documentation/code/classes/classgambit_1_1modelhierarchy_1_1colorwriter/#function-operator)**(std::ostream & out, const VertexOrEdge & e) const |
+| | **[colorWriter](/documentation/code/classes/classgambit_1_1modelhierarchy_1_1colorwriter/)**(const ModelGraphType * g)<br>Constructor.  |
+| template <class VertexOrEdge \> <br>void | **[operator()](/documentation/code/classes/classgambit_1_1modelhierarchy_1_1colorwriter/)**(std::ostream & out, const VertexOrEdge & e) const |
 
 ## Public Functions Documentation
 
@@ -42,4 +42,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[~Perf_Plot](/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/#function-perf-plot)**() |
-| | **[Perf_Plot](/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/#function-perf-plot)**(string outFileName, vector< const char * > * varNames) |
-| void | **[fill](/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/#function-fill)**(vector< double > * varValues) |
-| void | **[createFile](/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/#function-createfile)**(double luminosity =0., double xsec_per_event =0.) |
+| | **[~Perf_Plot](/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/)**() |
+| | **[Perf_Plot](/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/)**(string outFileName, vector< const char * > * varNames) |
+| void | **[fill](/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/)**(vector< double > * varValues) |
+| void | **[createFile](/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/)**(double luminosity =0., double xsec_per_event =0.) |
 
 ## Public Functions Documentation
 
@@ -60,4 +60,4 @@ inline void createFile(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

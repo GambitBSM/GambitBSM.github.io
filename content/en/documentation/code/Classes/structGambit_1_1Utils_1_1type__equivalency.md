@@ -17,19 +17,19 @@ Structure providing type equivalency classes to the dep resolver.
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/#function-add)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) t1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t2) |
-| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/#function-add)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) t1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t2, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t3) |
-| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/#function-add)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) t1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t2, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t3, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t4) |
-| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/#function-add)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) t1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t2, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t3, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t4, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t5) |
-| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/#function-add)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) t1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t2, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t3, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t4, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t5, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) t6) |
-| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/#function-add)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > v) |
-| | **[type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/#function-type-equivalency)**()<br>Constructor.  |
+| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/)**([str](/documentation/code/namespaces/namespacegambit/) t1, [str](/documentation/code/namespaces/namespacegambit/) t2) |
+| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/)**([str](/documentation/code/namespaces/namespacegambit/) t1, [str](/documentation/code/namespaces/namespacegambit/) t2, [str](/documentation/code/namespaces/namespacegambit/) t3) |
+| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/)**([str](/documentation/code/namespaces/namespacegambit/) t1, [str](/documentation/code/namespaces/namespacegambit/) t2, [str](/documentation/code/namespaces/namespacegambit/) t3, [str](/documentation/code/namespaces/namespacegambit/) t4) |
+| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/)**([str](/documentation/code/namespaces/namespacegambit/) t1, [str](/documentation/code/namespaces/namespacegambit/) t2, [str](/documentation/code/namespaces/namespacegambit/) t3, [str](/documentation/code/namespaces/namespacegambit/) t4, [str](/documentation/code/namespaces/namespacegambit/) t5) |
+| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/)**([str](/documentation/code/namespaces/namespacegambit/) t1, [str](/documentation/code/namespaces/namespacegambit/) t2, [str](/documentation/code/namespaces/namespacegambit/) t3, [str](/documentation/code/namespaces/namespacegambit/) t4, [str](/documentation/code/namespaces/namespacegambit/) t5, [str](/documentation/code/namespaces/namespacegambit/) t6) |
+| void | **[add](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/) > v) |
+| | **[type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/)**()<br>Constructor.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::set< std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > | **[equivalency_classes](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/#variable-equivalency-classes)**  |
+| std::set< std::set< [str](/documentation/code/namespaces/namespacegambit/) > > | **[equivalency_classes](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/)**  |
 
 ## Public Functions Documentation
 
@@ -130,4 +130,4 @@ std::set< std::set< str > > equivalency_classes;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

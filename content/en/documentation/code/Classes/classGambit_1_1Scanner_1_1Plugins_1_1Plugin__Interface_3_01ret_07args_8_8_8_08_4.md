@@ -19,8 +19,8 @@ Inherited by [Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>](/document
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... plug_args\> <br>| **[Plugin_Interface](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/#function-plugin-interface)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
-| ret | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/#function-operator)**(const args &... params) |
+| template <typename... plug_args\> <br>| **[Plugin_Interface](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
+| ret | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface_3_01ret_07args_8_8_8_08_4/)**(const args &... params) |
 
 ## Additional inherited members
 
@@ -28,22 +28,22 @@ Inherited by [Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>](/document
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-plugin-interface-base)**() |
-| YAML::Node | **[operator[]](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-operator)**(const std::string & key) |
-| | **[~Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-plugin-interface-base)**() |
+| | **[Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/)**() |
+| YAML::Node | **[operator[]](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/)**(const std::string & key) |
+| | **[~Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/)**() |
 
 **Protected Functions inherited from [Gambit::Scanner::Plugins::Plugin_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename... plug_args\> <br>const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[initPlugin](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/#function-initplugin)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
+| template <typename... plug_args\> <br>const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & | **[initPlugin](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface__base/)**(const std::string & type, const std::string & name, const plug_args &... inputs) |
 
 **Public Functions inherited from [Gambit::Scanner::Plugins::Plugin_Main_Interface_Base< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Main_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/#function-plugin-main-interface-base)**() |
-| int | **[enterMain](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/#function-entermain)**(const std::string & name, const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & index_map) |
+| | **[Plugin_Main_Interface_Base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/)**() |
+| int | **[enterMain](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/)**(const std::string & name, const std::map< [type_index](/documentation/code/classes/structgambit_1_1type__index/), void * > & index_map) |
 
 
 ## Detailed Description
@@ -79,4 +79,4 @@ inline ret operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

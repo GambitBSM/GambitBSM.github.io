@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[vobs](/documentation/code/classes/structgambit_1_1ds__hmnoclue/#variable-vobs)**  |
+| Fdouble | **[vobs](/documentation/code/classes/structgambit_1_1ds__hmnoclue/)**  |
 
 ## Public Attributes Documentation
 
@@ -28,4 +28,4 @@ Fdouble vobs;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

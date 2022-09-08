@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| enum| **[@4](/documentation/code/classes/structgambit_1_1farray_1_1calc__nelem_3_01liml_00_01limu_01_4/#enum-4)** { val =(limU-limL+1)} |
+| enum| **[@4](/documentation/code/classes/structgambit_1_1farray_1_1calc__nelem_3_01liml_00_01limu_01_4/)** { val =(limU-limL+1)} |
 
 ## Detailed Description
 
@@ -38,4 +38,4 @@ struct Gambit::Farray::calc_nElem< limL, limU >;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

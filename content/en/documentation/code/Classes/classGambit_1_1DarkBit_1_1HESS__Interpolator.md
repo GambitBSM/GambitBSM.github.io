@@ -15,17 +15,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-hess-interpolator)**(std::string file) |
-| | **[~HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-hess-interpolator)**() |
-| | **[HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-hess-interpolator)**(const [HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/) & ) =delete |
-| [HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/) | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-operator)**(const [HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/) & ) =delete |
-| double | **[lnL](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/#function-lnl)**(double epsilon, double gamma) |
+| | **[HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/)**(std::string file) |
+| | **[~HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/)**() |
+| | **[HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/)**(const [HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/) & ) =delete |
+| [HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/) | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/)**(const [HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/) & ) =delete |
+| double | **[lnL](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/)**(double epsilon, double gamma) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/) | **[interp_lnL](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/#variable-interp-lnl)**  |
+| [ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/) | **[interp_lnL](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/)**  |
 
 ## Public Functions Documentation
 
@@ -84,4 +84,4 @@ ASCIItableReader interp_lnL;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

@@ -15,27 +15,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brntaunut](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brntaunut)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnelnue](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnelnue)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnmunumu](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnmunumu)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnupdb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnupdb)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnchsb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brnchsb)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brntopbb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brntopbb)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brglupdb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brglupdb)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brglchsb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brglchsb)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brgltopbb](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brgltopbb)**  |
-| Fdouble | **[brchee](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchee)**  |
-| Fdouble | **[brchmumu](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchmumu)**  |
-| Fdouble | **[brchtautau](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchtautau)**  |
-| Fdouble | **[brchnene](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchnene)**  |
-| Fdouble | **[brchnmunmu](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchnmunmu)**  |
-| Fdouble | **[brchntauntau](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchntauntau)**  |
-| Fdouble | **[brchupup](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchupup)**  |
-| Fdouble | **[brchdodo](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchdodo)**  |
-| Fdouble | **[brchchch](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchchch)**  |
-| Fdouble | **[brchstst](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchstst)**  |
-| Fdouble | **[brchtoptop](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchtoptop)**  |
-| Fdouble | **[brchbotbot](/documentation/code/classes/structgambit_1_1sd__char3body__type/#variable-brchbotbot)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brntaunut](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnelnue](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnmunumu](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnupdb](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brnchsb](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2, 1, 4 > | **[brntopbb](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brglupdb](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brglchsb](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brgltopbb](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchee](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchmumu](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchtautau](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchnene](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchnmunmu](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchntauntau](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchupup](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchdodo](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchchch](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchstst](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchtoptop](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
+| Fdouble | **[brchbotbot](/documentation/code/classes/structgambit_1_1sd__char3body__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -188,4 +188,4 @@ Fdouble brchbotbot;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

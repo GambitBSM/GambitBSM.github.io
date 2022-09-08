@@ -13,85 +13,85 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[sigint_handler](/documentation/code/namespaces/namespacecombine__hdf5/#function-sigint-handler)**(signum signum, frame frame) |
-| def | **[usage](/documentation/code/namespaces/namespacecombine__hdf5/#function-usage)**() |
+| def | **[sigint_handler](/documentation/code/namespaces/namespacecombine__hdf5/)**(signum signum, frame frame) |
+| def | **[usage](/documentation/code/namespaces/namespacecombine__hdf5/)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[chunksize](/documentation/code/namespaces/namespacecombine__hdf5/#variable-chunksize)**  |
-| int | **[bufferlength](/documentation/code/namespaces/namespacecombine__hdf5/#variable-bufferlength)**  |
-| int | **[max_ppidpairs](/documentation/code/namespaces/namespacecombine__hdf5/#variable-max-ppidpairs)**  |
-| bool | **[runchecks](/documentation/code/namespaces/namespacecombine__hdf5/#variable-runchecks)**  |
-| bool | **[delete_tmp](/documentation/code/namespaces/namespacecombine__hdf5/#variable-delete-tmp)**  |
-| | **[outfname](/documentation/code/namespaces/namespacecombine__hdf5/#variable-outfname)**  |
-| | **[group](/documentation/code/namespaces/namespacecombine__hdf5/#variable-group)**  |
-| | **[tmp_files](/documentation/code/namespaces/namespacecombine__hdf5/#variable-tmp-files)**  |
-| | **[N](/documentation/code/namespaces/namespacecombine__hdf5/#variable-n)**  |
-| string | **[RA_group](/documentation/code/namespaces/namespacecombine__hdf5/#variable-ra-group)**  |
-| dictionary | **[files](/documentation/code/namespaces/namespacecombine__hdf5/#variable-files)**  |
-| list | **[sync_dsets](/documentation/code/namespaces/namespacecombine__hdf5/#variable-sync-dsets)**  |
-| list | **[RA_dsets](/documentation/code/namespaces/namespacecombine__hdf5/#variable-ra-dsets)**  |
-| | **[RA_dsets_exclude](/documentation/code/namespaces/namespacecombine__hdf5/#variable-ra-dsets-exclude)**  |
-| list | **[sync_lengths](/documentation/code/namespaces/namespacecombine__hdf5/#variable-sync-lengths)**  |
-| list | **[RA_lengths](/documentation/code/namespaces/namespacecombine__hdf5/#variable-ra-lengths)**  |
-| | **[fnames](/documentation/code/namespaces/namespacecombine__hdf5/#variable-fnames)**  |
-| | **[f](/documentation/code/namespaces/namespacecombine__hdf5/#variable-f)**  |
-| list | **[datasets](/documentation/code/namespaces/namespacecombine__hdf5/#variable-datasets)**  |
-| dictionary | **[tmp_dset_metadata](/documentation/code/namespaces/namespacecombine__hdf5/#variable-tmp-dset-metadata)**  |
-| dictionary | **[tmp_RA_dset_metadata](/documentation/code/namespaces/namespacecombine__hdf5/#variable-tmp-ra-dset-metadata)**  |
-| | **[total_sync_length](/documentation/code/namespaces/namespacecombine__hdf5/#variable-total-sync-length)**  |
-| | **[fout](/documentation/code/namespaces/namespacecombine__hdf5/#variable-fout)**  |
-| | **[gout](/documentation/code/namespaces/namespacecombine__hdf5/#variable-gout)**  |
-| dictionary | **[existing_dsets](/documentation/code/namespaces/namespacecombine__hdf5/#variable-existing-dsets)**  |
-| dictionary | **[dsetlengths](/documentation/code/namespaces/namespacecombine__hdf5/#variable-dsetlengths)**  |
-| | **[init_output_length](/documentation/code/namespaces/namespacecombine__hdf5/#variable-init-output-length)**  |
-| dictionary | **[target_dsets](/documentation/code/namespaces/namespacecombine__hdf5/#variable-target-dsets)**  |
-| | **[all_sync_dsets](/documentation/code/namespaces/namespacecombine__hdf5/#variable-all-sync-dsets)**  |
-| | **[all_RA_dsets](/documentation/code/namespaces/namespacecombine__hdf5/#variable-all-ra-dsets)**  |
-| | **[chunks](/documentation/code/namespaces/namespacecombine__hdf5/#variable-chunks)**  |
-| | **[dtype](/documentation/code/namespaces/namespacecombine__hdf5/#variable-dtype)**  |
-| | **[dt](/documentation/code/namespaces/namespacecombine__hdf5/#variable-dt)**  |
-| | **[maxshape](/documentation/code/namespaces/namespacecombine__hdf5/#variable-maxshape)**  |
-| | **[nextempty](/documentation/code/namespaces/namespacecombine__hdf5/#variable-nextempty)**  |
-| dictionary | **[fin](/documentation/code/namespaces/namespacecombine__hdf5/#variable-fin)**  |
-| | **[dset_length](/documentation/code/namespaces/namespacecombine__hdf5/#variable-dset-length)**  |
-| dictionary | **[item](/documentation/code/namespaces/namespacecombine__hdf5/#variable-item)**  |
-| | **[nchunks](/documentation/code/namespaces/namespacecombine__hdf5/#variable-nchunks)**  |
-| int | **[imin](/documentation/code/namespaces/namespacecombine__hdf5/#variable-imin)**  |
-| | **[imax](/documentation/code/namespaces/namespacecombine__hdf5/#variable-imax)**  |
-| dictionary | **[pointIDs_in](/documentation/code/namespaces/namespacecombine__hdf5/#variable-pointids-in)**  |
-| dictionary | **[mpiranks_in](/documentation/code/namespaces/namespacecombine__hdf5/#variable-mpiranks-in)**  |
-| | **[pointIDs_isvalid_in](/documentation/code/namespaces/namespacecombine__hdf5/#variable-pointids-isvalid-in)**  |
-| | **[mpiranks_isvalid_in](/documentation/code/namespaces/namespacecombine__hdf5/#variable-mpiranks-isvalid-in)**  |
-| tuple | **[mask_in](/documentation/code/namespaces/namespacecombine__hdf5/#variable-mask-in)**  |
-| | **[IDs_in](/documentation/code/namespaces/namespacecombine__hdf5/#variable-ids-in)**  |
-| | **[pointIDs_out](/documentation/code/namespaces/namespacecombine__hdf5/#variable-pointids-out)**  |
-| | **[mpiranks_out](/documentation/code/namespaces/namespacecombine__hdf5/#variable-mpiranks-out)**  |
-| | **[pointIDs_isvalid_out](/documentation/code/namespaces/namespacecombine__hdf5/#variable-pointids-isvalid-out)**  |
-| | **[mpiranks_isvalid_out](/documentation/code/namespaces/namespacecombine__hdf5/#variable-mpiranks-isvalid-out)**  |
-| tuple | **[mask_out](/documentation/code/namespaces/namespacecombine__hdf5/#variable-mask-out)**  |
-| | **[IDs_out](/documentation/code/namespaces/namespacecombine__hdf5/#variable-ids-out)**  |
-| | **[ids](/documentation/code/namespaces/namespacecombine__hdf5/#variable-ids)**  |
-| | **[pid](/documentation/code/namespaces/namespacecombine__hdf5/#variable-pid)**  |
-| | **[rank](/documentation/code/namespaces/namespacecombine__hdf5/#variable-rank)**  |
-| | **[Nmatches](/documentation/code/namespaces/namespacecombine__hdf5/#variable-nmatches)**  |
-| | **[Match](/documentation/code/namespaces/namespacecombine__hdf5/#variable-match)**  |
-| | **[target_mask_small](/documentation/code/namespaces/namespacecombine__hdf5/#variable-target-mask-small)**  |
-| | **[target_length](/documentation/code/namespaces/namespacecombine__hdf5/#variable-target-length)**  |
-| | **[alltargetindices](/documentation/code/namespaces/namespacecombine__hdf5/#variable-alltargetindices)**  |
-| | **[maskindices](/documentation/code/namespaces/namespacecombine__hdf5/#variable-maskindices)**  |
-| | **[target_mask](/documentation/code/namespaces/namespacecombine__hdf5/#variable-target-mask)**  |
-| | **[indexid](/documentation/code/namespaces/namespacecombine__hdf5/#variable-indexid)**  |
-| | **[index](/documentation/code/namespaces/namespacecombine__hdf5/#variable-index)**  |
-| | **[ntargets](/documentation/code/namespaces/namespacecombine__hdf5/#variable-ntargets)**  |
-| | **[nsources](/documentation/code/namespaces/namespacecombine__hdf5/#variable-nsources)**  |
-| | **[xsort](/documentation/code/namespaces/namespacecombine__hdf5/#variable-xsort)** <br>Just some test code which I decided to keep around since it is helpful for understand how the rearrangment of the input data to match the output selection works.  |
-| | **[yindex](/documentation/code/namespaces/namespacecombine__hdf5/#variable-yindex)**  |
-| | **[fancyindices](/documentation/code/namespaces/namespacecombine__hdf5/#variable-fancyindices)**  |
-| dictionary | **[indset](/documentation/code/namespaces/namespacecombine__hdf5/#variable-indset)**  |
-| | **[outdset](/documentation/code/namespaces/namespacecombine__hdf5/#variable-outdset)**  |
+| int | **[chunksize](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| int | **[bufferlength](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| int | **[max_ppidpairs](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| bool | **[runchecks](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| bool | **[delete_tmp](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[outfname](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[group](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[tmp_files](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[N](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| string | **[RA_group](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[files](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| list | **[sync_dsets](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| list | **[RA_dsets](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[RA_dsets_exclude](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| list | **[sync_lengths](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| list | **[RA_lengths](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[fnames](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[f](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| list | **[datasets](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[tmp_dset_metadata](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[tmp_RA_dset_metadata](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[total_sync_length](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[fout](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[gout](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[existing_dsets](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[dsetlengths](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[init_output_length](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[target_dsets](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[all_sync_dsets](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[all_RA_dsets](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[chunks](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[dtype](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[dt](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[maxshape](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[nextempty](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[fin](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[dset_length](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[item](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[nchunks](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| int | **[imin](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[imax](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[pointIDs_in](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[mpiranks_in](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[pointIDs_isvalid_in](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[mpiranks_isvalid_in](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| tuple | **[mask_in](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[IDs_in](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[pointIDs_out](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[mpiranks_out](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[pointIDs_isvalid_out](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[mpiranks_isvalid_out](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| tuple | **[mask_out](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[IDs_out](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[ids](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[pid](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[rank](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[Nmatches](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[Match](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[target_mask_small](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[target_length](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[alltargetindices](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[maskindices](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[target_mask](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[indexid](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[index](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[ntargets](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[nsources](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[xsort](/documentation/code/namespaces/namespacecombine__hdf5/)** <br>Just some test code which I decided to keep around since it is helpful for understand how the rearrangment of the input data to match the output selection works.  |
+| | **[yindex](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[fancyindices](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| dictionary | **[indset](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
+| | **[outdset](/documentation/code/namespaces/namespacecombine__hdf5/)**  |
 
 ## Detailed Description
 
@@ -683,4 +683,4 @@ outdset =  fout[group][itemname];
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

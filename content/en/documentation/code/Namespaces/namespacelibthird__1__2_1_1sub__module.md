@@ -13,13 +13,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[someOtherFunction](/documentation/code/namespaces/namespacelibthird__1__2_1_1sub__module/#function-someotherfunction)**(x x) |
+| def | **[someOtherFunction](/documentation/code/namespaces/namespacelibthird__1__2_1_1sub__module/)**(x x) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[someOtherInt](/documentation/code/namespaces/namespacelibthird__1__2_1_1sub__module/#variable-someotherint)**  |
+| int | **[someOtherInt](/documentation/code/namespaces/namespacelibthird__1__2_1_1sub__module/)**  |
 
 
 ## Functions Documentation
@@ -48,4 +48,4 @@ int someOtherInt =  5;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

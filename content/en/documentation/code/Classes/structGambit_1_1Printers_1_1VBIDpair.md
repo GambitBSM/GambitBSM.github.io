@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/#function-vbidpair)**() =default |
-| | **[VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/#function-vbidpair)**(const int v, const int i) |
+| | **[VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/)**() =default |
+| | **[VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/)**(const int v, const int i) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[vertexID](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/#variable-vertexid)**  |
-| int | **[index](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/#variable-index)**  |
+| int | **[vertexID](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/)**  |
+| int | **[index](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/)**  |
 
 ## Detailed Description
 
@@ -74,4 +74,4 @@ int index;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ASCII_TYPES](/documentation/code/files/asciitypes_8hpp/#define-ascii-types)**  |
-|  | **[ASCII_BACKEND_TYPES](/documentation/code/files/asciitypes_8hpp/#define-ascii-backend-types)**  |
+|  | **[ASCII_TYPES](/documentation/code/files/asciitypes_8hpp/)**  |
+|  | **[ASCII_BACKEND_TYPES](/documentation/code/files/asciitypes_8hpp/)**  |
 
 ## Detailed Description
 
@@ -100,4 +100,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

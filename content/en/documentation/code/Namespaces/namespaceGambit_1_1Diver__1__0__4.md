@@ -19,7 +19,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[objective](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__4/#function-objective)**(double params[], const int param_dim, int & fcall, bool & quit, const bool validvector, void *& context)<br>Function to be minimised by Diver.  |
+| double | **[objective](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__4/)**(double params[], const int param_dim, int & fcall, bool & quit, const bool validvector, void *& context)<br>Function to be minimised by Diver.  |
 
 
 ## Functions Documentation
@@ -45,4 +45,4 @@ Function to be minimised by Diver.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ensure_construction_order](/documentation/code/classes/structgambit_1_1logging_1_1ensure__construction__order/#function-ensure-construction-order)**() |
+| | **[ensure_construction_order](/documentation/code/classes/structgambit_1_1logging_1_1ensure__construction__order/)**() |
 
 ## Public Functions Documentation
 
@@ -28,4 +28,4 @@ inline ensure_construction_order()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[COLLIDERBIT_DEBUG](/documentation/code/files/collider__event__weights_8cpp/#define-colliderbit-debug)**  |
-|  | **[DEBUG_PREFIX](/documentation/code/files/collider__event__weights_8cpp/#define-debug-prefix)**  |
+|  | **[COLLIDERBIT_DEBUG](/documentation/code/files/collider__event__weights_8cpp/)**  |
+|  | **[DEBUG_PREFIX](/documentation/code/files/collider__event__weights_8cpp/)**  |
 
 ## Detailed Description
 
@@ -214,4 +214,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

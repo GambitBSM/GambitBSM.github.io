@@ -19,7 +19,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[__MDM_contents_hpp__](/documentation/code/files/mdm_8cpp/#define-mdm-contents-hpp)**  |
+|  | **[__MDM_contents_hpp__](/documentation/code/files/mdm_8cpp/)**  |
 
 ## Detailed Description
 
@@ -124,4 +124,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

@@ -15,16 +15,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[flagshsin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-flagshsin)**  |
-| Fdouble | **[amsin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-amsin)**  |
-| Fdouble | **[amcin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-amcin)**  |
-| Fdouble | **[ammuonin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-ammuonin)**  |
-| Fdouble | **[alphin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-alphin)**  |
-| Fdouble | **[gamwin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-gamwin)**  |
-| Fdouble | **[gamzin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-gamzin)**  |
-| Fdouble | **[vusin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-vusin)**  |
-| Fdouble | **[vcbin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-vcbin)**  |
-| Fdouble | **[rvubin](/documentation/code/classes/structgambit_1_1susyhitin__type/#variable-rvubin)**  |
+| Fdouble | **[flagshsin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[amsin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[amcin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[ammuonin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[alphin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[gamwin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[gamzin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[vusin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[vcbin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
+| Fdouble | **[rvubin](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -100,4 +100,4 @@ Fdouble rvubin;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

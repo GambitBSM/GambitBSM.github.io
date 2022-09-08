@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BE_FUNCTION_I_PY](/documentation/code/files/python__macros_8hpp/#define-be-function-i-py)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend function macro for Python backends.  |
-|  | **[BE_VARIABLE_I_PY](/documentation/code/files/python__macros_8hpp/#define-be-variable-i-py)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend variable macro for Python.  |
+|  | **[BE_FUNCTION_I_PY](/documentation/code/files/python__macros_8hpp/)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend function macro for Python backends.  |
+|  | **[BE_VARIABLE_I_PY](/documentation/code/files/python__macros_8hpp/)**(NAME, TYPE, SYMBOLNAME, CAPABILITY, MODELS) <br>Backend variable macro for Python.  |
 
 ## Detailed Description
 
@@ -179,4 +179,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

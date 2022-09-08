@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[0.1.0/salami_gambit.py](/documentation/code/files/salami__gambit_8py/#file-salami-gambit-py)**  |
+| **[0.1.0/salami_gambit.py](/documentation/code/files/salami__gambit_8py/)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

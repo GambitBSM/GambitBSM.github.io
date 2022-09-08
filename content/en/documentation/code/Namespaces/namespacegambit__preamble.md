@@ -13,10 +13,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[bulk_min](/documentation/code/namespaces/namespacegambit__preamble/#function-bulk-min)**(x x, limit limit) |
-| def | **[safe_ratio](/documentation/code/namespaces/namespacegambit__preamble/#function-safe-ratio)**(x x, y y) |
-| def | **[closest_to](/documentation/code/namespaces/namespacegambit__preamble/#function-closest-to)**(val val, x x, y y) |
-| def | **[signed_sqrt](/documentation/code/namespaces/namespacegambit__preamble/#function-signed-sqrt)**(x x) |
+| def | **[bulk_min](/documentation/code/namespaces/namespacegambit__preamble/)**(x x, limit limit) |
+| def | **[safe_ratio](/documentation/code/namespaces/namespacegambit__preamble/)**(x x, y y) |
+| def | **[closest_to](/documentation/code/namespaces/namespacegambit__preamble/)**(val val, x x, y y) |
+| def | **[signed_sqrt](/documentation/code/namespaces/namespacegambit__preamble/)**(x x) |
 
 
 ## Functions Documentation
@@ -67,4 +67,4 @@ def signed_sqrt(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

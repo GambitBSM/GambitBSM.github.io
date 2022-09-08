@@ -13,19 +13,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-parent)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-parent)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/#define-parent)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/#define-model)**  |
-|  | **[INFLATION_MODEL_TO_POWER_LAW](/documentation/code/files/cosmomodels_8cpp/#define-inflation-model-to-power-law)**(MODEL)  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[PARENT](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/cosmomodels_8cpp/)**  |
+|  | **[INFLATION_MODEL_TO_POWER_LAW](/documentation/code/files/cosmomodels_8cpp/)**(MODEL)  |
 
 
 
@@ -673,4 +673,4 @@ INFLATION_MODEL_TO_POWER_LAW(Inflation_InstReh_1Starobinsky)
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

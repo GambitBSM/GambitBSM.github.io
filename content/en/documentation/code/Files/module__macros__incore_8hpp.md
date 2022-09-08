@@ -13,31 +13,31 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[START_MODULE](/documentation/code/files/module__macros__incore_8hpp/#define-start-module)** <br>Registers the current [MODULE].  |
-|  | **[START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability)**  |
-|  | **[LONG_START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-long-start-capability)**(MODULE, CAPABILITY) <br>Long (all argument) version of [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability).  |
-|  | **[DECLARE_FUNCTION](/documentation/code/files/module__macros__incore_8hpp/#define-declare-function)**(TYPE, FLAG)  |
-|  | **[LONG_DECLARE_FUNCTION](/documentation/code/files/module__macros__incore_8hpp/#define-long-declare-function)**(MODULE, CAPABILITY, FUNCTION, TYPE, FLAG) <br>Long (all argument) version of [DECLARE_FUNCTION](/documentation/code/files/module__macros__incore_8hpp/#define-declare-function).  |
-|  | **[NEEDS_MANAGER](/documentation/code/files/module__macros__incore_8hpp/#define-needs-manager)**(...)  |
-|  | **[DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/#define-dependency)**(DEP, TYPE)  |
-|  | **[LONG_DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/#define-long-dependency)**(MODULE, FUNCTION, DEP, TYPE) <br>Long (all argument) version of [DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/#define-dependency).  |
-|  | **[ALLOW_MODELS](/documentation/code/files/module__macros__incore_8hpp/#define-allow-models)**(...)  |
-|  | **[ALLOWED_MODEL](/documentation/code/files/module__macros__incore_8hpp/#define-allowed-model)**(MODULE, FUNCTION, MODEL)  |
-|  | **[ALLOWED_MODEL_DEPENDENCE](/documentation/code/files/module__macros__incore_8hpp/#define-allowed-model-dependence)**(MODULE, FUNCTION, MODEL)  |
-|  | **[ALLOW_MODEL_COMBINATION](/documentation/code/files/module__macros__incore_8hpp/#define-allow-model-combination)**(...)  |
-|  | **[MODEL_GROUP](/documentation/code/files/module__macros__incore_8hpp/#define-model-group)**(GROUPNAME, GROUP) <br>Define a model GROUP of name GROUPNAME for use with ALLOW_MODEL_COMBINATION.  |
-|  | **[DECLARE_BACKEND_REQ](/documentation/code/files/module__macros__incore_8hpp/#define-declare-backend-req)**(GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
-|  | **[LONG_DECLARE_BACKEND_REQ](/documentation/code/files/module__macros__incore_8hpp/#define-long-declare-backend-req)**(MODULE, CAPABILITY, FUNCTION, GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
-|  | **[BE_GROUP](/documentation/code/files/module__macros__incore_8hpp/#define-be-group)**(GROUP) <br>Declare a backend group, from which one backend requirement must be activated.  |
-|  | **[ACTIVATE_BACKEND_REQ_FOR_MODELS](/documentation/code/files/module__macros__incore_8hpp/#define-activate-backend-req-for-models)**(MODELS, TAGS)  |
-|  | **[BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/#define-backend-option)**(BACKEND_AND_VERSIONS, TAGS)  |
-|  | **[LONG_BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/#define-long-backend-option)**(MODULE, CAPABILITY, FUNCTION, BACKEND_AND_VERSIONS, TAGS)  |
-|  | **[FORCE_SAME_BACKEND](/documentation/code/files/module__macros__incore_8hpp/#define-force-same-backend)**(...)  |
-|  | **[START_CONDITIONAL_DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/#define-start-conditional-dependency)**(TYPE)  |
-|  | **[ACTIVATE_DEP_BE](/documentation/code/files/module__macros__incore_8hpp/#define-activate-dep-be)**(BACKEND_REQ, BACKEND, VERSTRING)  |
-|  | **[ACTIVATE_FOR_MODELS](/documentation/code/files/module__macros__incore_8hpp/#define-activate-for-models)**(...)  |
-|  | **[MODEL_CONDITIONAL_DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/#define-model-conditional-dependency)**(DEP, TYPE, ...) <br>Quick, one-line declaration of model-conditional dependencies.  |
-|  | **[CLASSLOAD_NEEDED](/documentation/code/files/module__macros__incore_8hpp/#define-classload-needed)**(BACKEND, VERSION)  |
+|  | **[START_MODULE](/documentation/code/files/module__macros__incore_8hpp/)** <br>Registers the current [MODULE].  |
+|  | **[START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/)**  |
+|  | **[LONG_START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/)**(MODULE, CAPABILITY) <br>Long (all argument) version of [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/).  |
+|  | **[DECLARE_FUNCTION](/documentation/code/files/module__macros__incore_8hpp/)**(TYPE, FLAG)  |
+|  | **[LONG_DECLARE_FUNCTION](/documentation/code/files/module__macros__incore_8hpp/)**(MODULE, CAPABILITY, FUNCTION, TYPE, FLAG) <br>Long (all argument) version of [DECLARE_FUNCTION](/documentation/code/files/module__macros__incore_8hpp/).  |
+|  | **[NEEDS_MANAGER](/documentation/code/files/module__macros__incore_8hpp/)**(...)  |
+|  | **[DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/)**(DEP, TYPE)  |
+|  | **[LONG_DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/)**(MODULE, FUNCTION, DEP, TYPE) <br>Long (all argument) version of [DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/).  |
+|  | **[ALLOW_MODELS](/documentation/code/files/module__macros__incore_8hpp/)**(...)  |
+|  | **[ALLOWED_MODEL](/documentation/code/files/module__macros__incore_8hpp/)**(MODULE, FUNCTION, MODEL)  |
+|  | **[ALLOWED_MODEL_DEPENDENCE](/documentation/code/files/module__macros__incore_8hpp/)**(MODULE, FUNCTION, MODEL)  |
+|  | **[ALLOW_MODEL_COMBINATION](/documentation/code/files/module__macros__incore_8hpp/)**(...)  |
+|  | **[MODEL_GROUP](/documentation/code/files/module__macros__incore_8hpp/)**(GROUPNAME, GROUP) <br>Define a model GROUP of name GROUPNAME for use with ALLOW_MODEL_COMBINATION.  |
+|  | **[DECLARE_BACKEND_REQ](/documentation/code/files/module__macros__incore_8hpp/)**(GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
+|  | **[LONG_DECLARE_BACKEND_REQ](/documentation/code/files/module__macros__incore_8hpp/)**(MODULE, CAPABILITY, FUNCTION, GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
+|  | **[BE_GROUP](/documentation/code/files/module__macros__incore_8hpp/)**(GROUP) <br>Declare a backend group, from which one backend requirement must be activated.  |
+|  | **[ACTIVATE_BACKEND_REQ_FOR_MODELS](/documentation/code/files/module__macros__incore_8hpp/)**(MODELS, TAGS)  |
+|  | **[BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/)**(BACKEND_AND_VERSIONS, TAGS)  |
+|  | **[LONG_BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/)**(MODULE, CAPABILITY, FUNCTION, BACKEND_AND_VERSIONS, TAGS)  |
+|  | **[FORCE_SAME_BACKEND](/documentation/code/files/module__macros__incore_8hpp/)**(...)  |
+|  | **[START_CONDITIONAL_DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/)**(TYPE)  |
+|  | **[ACTIVATE_DEP_BE](/documentation/code/files/module__macros__incore_8hpp/)**(BACKEND_REQ, BACKEND, VERSTRING)  |
+|  | **[ACTIVATE_FOR_MODELS](/documentation/code/files/module__macros__incore_8hpp/)**(...)  |
+|  | **[MODEL_CONDITIONAL_DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/)**(DEP, TYPE, ...) <br>Quick, one-line declaration of model-conditional dependencies.  |
+|  | **[CLASSLOAD_NEEDED](/documentation/code/files/module__macros__incore_8hpp/)**(BACKEND, VERSION)  |
 
 ## Detailed Description
 
@@ -108,7 +108,7 @@ Registers the current [CAPABILITY] of the current [MODULE].
 CORE_START_CAPABILITY(MODULE, CAPABILITY, NOT_MODEL)
 ```
 
-Long (all argument) version of [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability). 
+Long (all argument) version of [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/). 
 
 ### define DECLARE_FUNCTION
 
@@ -137,7 +137,7 @@ Registers the current [FUNCTION] of the current [MODULE] as a provider of the cu
 CORE_DECLARE_FUNCTION(MODULE, CAPABILITY, FUNCTION, TYPE, FLAG, NOT_MODEL)
 ```
 
-Long (all argument) version of [DECLARE_FUNCTION](/documentation/code/files/module__macros__incore_8hpp/#define-declare-function). 
+Long (all argument) version of [DECLARE_FUNCTION](/documentation/code/files/module__macros__incore_8hpp/). 
 
 ### define NEEDS_MANAGER
 
@@ -178,7 +178,7 @@ Indicate that the current [FUNCTION] depends on the presence of another module f
 CORE_DEPENDENCY(DEP, TYPE, MODULE, FUNCTION, NOT_MODEL)
 ```
 
-Long (all argument) version of [DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/#define-dependency). 
+Long (all argument) version of [DEPENDENCY](/documentation/code/files/module__macros__incore_8hpp/). 
 
 ### define ALLOW_MODELS
 
@@ -230,7 +230,7 @@ CORE_ALLOW_MODEL_COMBINATION(MODULE,FUNCTION,NOT_MODEL,(__VA_ARGS__))
 ```
 
 
-Indicate that the current [FUNCTION] may only be used with the specific model combination given, with other combinations passed in the same way, or with individual models speficied via [ALLOW_MODEL(S)](/documentation/code/files/module__macros__common_8hpp/#define-allow-model). If both this and [ALLOW_MODEL(s)](/documentation/code/files/module__macros__common_8hpp/#define-allow-model) are absent, all models are allowed but no model parameters will be accessible from within the module funtion. 
+Indicate that the current [FUNCTION] may only be used with the specific model combination given, with other combinations passed in the same way, or with individual models speficied via [ALLOW_MODEL(S)](/documentation/code/files/module__macros__common_8hpp/). If both this and [ALLOW_MODEL(s)](/documentation/code/files/module__macros__common_8hpp/) are absent, all models are allowed but no model parameters will be accessible from within the module funtion. 
 
 
 ### define MODEL_GROUP
@@ -317,7 +317,7 @@ LONG_BACKEND_OPTION(MODULE, CAPABILITY, FUNCTION, BACKEND_AND_VERSIONS,TAGS)
 ```
 
 
-Define a rule that uses TAGS to determine a set of backend requirements of the current [FUNCTION] that are permitted to be fulfilled by the indicated BACKEND_AND_VERSIONS. If no versions are given, all versions of the stated backend are considered allowed. Declaring this rule makes all backend requirements that match the rule resolvable _only_ by the backend-version pairs passed into [BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/#define-backend-option). Additional options provided by subsequent calls to [BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/#define-backend-option) are added to the options provided by each previous declaration. In the case of multiple contradictory calls to [BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/#define-backend-option), the rule defined by the latest call takes precedence. Note that all rules have _immediate_ effect, so only apply to BACKEND_REQs of the current FUNCTION that have already been declared! 
+Define a rule that uses TAGS to determine a set of backend requirements of the current [FUNCTION] that are permitted to be fulfilled by the indicated BACKEND_AND_VERSIONS. If no versions are given, all versions of the stated backend are considered allowed. Declaring this rule makes all backend requirements that match the rule resolvable _only_ by the backend-version pairs passed into [BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/). Additional options provided by subsequent calls to [BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/) are added to the options provided by each previous declaration. In the case of multiple contradictory calls to [BACKEND_OPTION](/documentation/code/files/module__macros__incore_8hpp/), the rule defined by the latest call takes precedence. Note that all rules have _immediate_ effect, so only apply to BACKEND_REQs of the current FUNCTION that have already been declared! 
 
 
 ### define LONG_BACKEND_OPTION
@@ -358,7 +358,7 @@ CORE_START_CONDITIONAL_DEPENDENCY(MODULE, CAPABILITY, \
 ```
 
 
-Indicate that the current [FUNCTION] may depend on the presence of another module function that can supply capability [CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-conditional-dependency), with return type _TYPE_. 
+Indicate that the current [FUNCTION] may depend on the presence of another module function that can supply capability [CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/), with return type _TYPE_. 
 
 
 ### define ACTIVATE_DEP_BE
@@ -373,7 +373,7 @@ CORE_ACTIVATE_DEP_BE(BACKEND_REQ, BACKEND, VERSTRING, NOT_MODEL)
 ```
 
 
-Indicate that the current [CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-conditional-dependency) should be activated if the backend requirement _BACKEND_REQ_ of the current [FUNCTION] is filled by a backend function from _BACKEND_. The versions of _BACKEND_ that this applies to are passed in _VERSTRING_. 
+Indicate that the current [CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/) should be activated if the backend requirement _BACKEND_REQ_ of the current [FUNCTION] is filled by a backend function from _BACKEND_. The versions of _BACKEND_ that this applies to are passed in _VERSTRING_. 
 
 
 ### define ACTIVATE_FOR_MODELS
@@ -386,7 +386,7 @@ ACTIVATE_DEP_MODEL(MODULE, CAPABILITY, FUNCTION, CONDITIONAL_DEPENDENCY, NOT_MOD
 ```
 
 
-Indicate that the current [CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-conditional-dependency) should be activated if the model being scanned matches one of the models passed as an argument. 
+Indicate that the current [CONDITIONAL_DEPENDENCY](/documentation/code/files/examplebit__b__rollcall_8hpp/) should be activated if the model being scanned matches one of the models passed as an argument. 
 
 
 ### define MODEL_CONDITIONAL_DEPENDENCY
@@ -647,4 +647,4 @@ Indicate that the current [FUNCTION] requires classes that must be loaded from _
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

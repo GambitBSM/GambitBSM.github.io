@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[gambit](/documentation/code/files/dir_cd4e8aedee3c589b3fc0821ab525082b/#dir-gambit)**  |
+| **[gambit](/documentation/code/files/dir_cd4e8aedee3c589b3fc0821ab525082b/)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

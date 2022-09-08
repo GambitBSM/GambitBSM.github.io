@@ -19,20 +19,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/namespaces/namespacegambit_1_1polychord/#typedef-scanptr)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
+| typedef [Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/) | **[scanPtr](/documentation/code/namespaces/namespacegambit_1_1polychord/)** <br>Typedef for the ScannerBit pointer to the external loglikelihood function.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[callback_loglike](/documentation/code/namespaces/namespacegambit_1_1polychord/#function-callback-loglike)**(double * Cube, int ndim, double * phi, int nderived)<br>C-functions to pass to PolyChord for the callbacks.  |
-| void | **[callback_dumper](/documentation/code/namespaces/namespacegambit_1_1polychord/#function-callback-dumper)**(int ndead, int nlive, int npars, double * live, double * dead, double * logweights, double logZ, double logZerr) |
+| double | **[callback_loglike](/documentation/code/namespaces/namespacegambit_1_1polychord/)**(double * Cube, int ndim, double * phi, int nderived)<br>C-functions to pass to PolyChord for the callbacks.  |
+| void | **[callback_dumper](/documentation/code/namespaces/namespacegambit_1_1polychord/)**(int ndead, int nlive, int npars, double * live, double * dead, double * logweights, double logZ, double logZerr) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LogLikeWrapper](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/) * | **[global_loglike_object](/documentation/code/namespaces/namespacegambit_1_1polychord/#variable-global-loglike-object)** <br>Global pointer to loglikelihood wrapper object, for use in the PolyChord callback functions.  |
+| [LogLikeWrapper](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/) * | **[global_loglike_object](/documentation/code/namespaces/namespacegambit_1_1polychord/)** <br>Global pointer to loglikelihood wrapper object, for use in the PolyChord callback functions.  |
 
 ## Types Documentation
 
@@ -95,4 +95,4 @@ Global pointer to loglikelihood wrapper object, for use in the PolyChord callbac
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

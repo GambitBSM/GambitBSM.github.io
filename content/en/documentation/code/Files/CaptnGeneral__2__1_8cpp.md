@@ -13,20 +13,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[captn_init](/documentation/code/files/captngeneral__2__1_8cpp/#function-captn-init)**(solarmodel [0], rho0 , vsun , v0 , vesc ) |
-| | **[captn_init_oper](/documentation/code/files/captngeneral__2__1_8cpp/#function-captn-init-oper)**() |
-| | **[for](/documentation/code/files/captngeneral__2__1_8cpp/#function-for)**() |
+| | **[captn_init](/documentation/code/files/captngeneral__2__1_8cpp/)**(solarmodel [0], rho0 , vsun , v0 , vesc ) |
+| | **[captn_init_oper](/documentation/code/files/captngeneral__2__1_8cpp/)**() |
+| | **[for](/documentation/code/files/captngeneral__2__1_8cpp/)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/captngeneral__2__1_8cpp/#variable-be-ini-function)**  |
-| double | **[v0](/documentation/code/files/captngeneral__2__1_8cpp/#variable-v0)**  |
-| double | **[vsun](/documentation/code/files/captngeneral__2__1_8cpp/#variable-vsun)**  |
-| double | **[vesc](/documentation/code/files/captngeneral__2__1_8cpp/#variable-vesc)**  |
-| const int | **[clen](/documentation/code/files/captngeneral__2__1_8cpp/#variable-clen)**  |
-| char[clen] | **[solarmodel](/documentation/code/files/captngeneral__2__1_8cpp/#variable-solarmodel)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/files/captngeneral__2__1_8cpp/)**  |
+| double | **[v0](/documentation/code/files/captngeneral__2__1_8cpp/)**  |
+| double | **[vsun](/documentation/code/files/captngeneral__2__1_8cpp/)**  |
+| double | **[vesc](/documentation/code/files/captngeneral__2__1_8cpp/)**  |
+| const int | **[clen](/documentation/code/files/captngeneral__2__1_8cpp/)**  |
+| char[clen] | **[solarmodel](/documentation/code/files/captngeneral__2__1_8cpp/)**  |
 
 ## Detailed Description
 
@@ -177,4 +177,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:24 +0000

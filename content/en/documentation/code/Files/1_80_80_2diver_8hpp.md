@@ -26,7 +26,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[cdiver](/documentation/code/files/1_80_80_2diver_8hpp/#function-cdiver)**(double(*)(double[], const int, int &, bool &, const bool, void *&) , int , const double [], const double [], const char [], int , int , const int [], bool , const int , const int , int , int , const double [], double , double , bool , bool , int , bool , bool , double , int , bool , bool , double(*)(const double[], const int, void *&) , double , double , int , bool , bool , int , int , double , void *& , int ) |
+| void | **[cdiver](/documentation/code/files/1_80_80_2diver_8hpp/)**(double(*)(double[], const int, int &, bool &, const bool, void *&) , int , const double [], const double [], const char [], int , int , const int [], bool , const int , const int , int , int , const double [], double , double , bool , bool , int , bool , bool , double , int , bool , bool , double(*)(const double[], const int, void *&) , double , double , int , bool , bool , int , int , double , void *& , int ) |
 
 ## Detailed Description
 
@@ -156,4 +156,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

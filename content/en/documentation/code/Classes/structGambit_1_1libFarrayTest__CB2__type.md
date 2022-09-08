@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 5 > | **[chara](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/#variable-chara)**  |
-| [FstringArray](/documentation/code/classes/classgambit_1_1fstringarray/)< 5, 1, 3 > | **[charb](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/#variable-charb)**  |
-| [FstringArray](/documentation/code/classes/classgambit_1_1fstringarray/)< 6, 1, 2, -1, 0 > | **[charc](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/#variable-charc)**  |
-| Finteger | **[e](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/#variable-e)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 5 > | **[chara](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/)**  |
+| [FstringArray](/documentation/code/classes/classgambit_1_1fstringarray/)< 5, 1, 3 > | **[charb](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/)**  |
+| [FstringArray](/documentation/code/classes/classgambit_1_1fstringarray/)< 6, 1, 2, -1, 0 > | **[charc](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/)**  |
+| Finteger | **[e](/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ Finteger e;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

@@ -17,24 +17,24 @@ Main dependency resolver.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-dependencyresolver)**(const [gambit_core](/documentation/code/classes/classgambit_1_1gambit__core/) & core, const [Models::ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/) & claw, const [IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/) & iniFile, const [Utils::type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/) & equiv_classes, [Printers::BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) & printer)<br>Constructor, provide module and backend functor lists.  |
-| void | **[doResolution](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-doresolution)**()<br>The dependency resolution.  |
-| void | **[printFunctorList](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printfunctorlist)**()<br>Pretty print module functor information.  |
-| void | **[printFunctorEvalOrder](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printfunctorevalorder)**(bool toterminal =false)<br>Pretty print function evaluation order.  |
-| void | **[printRequiredBackends](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printrequiredbackends)**()<br>Print the list of required backends.  |
-| void | **[getCitationKeys](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getcitationkeys)**()<br>Collect the citation keys for backends, modules, etc.  |
-| void | **[printCitationKeys](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printcitationkeys)**() |
-| std::vector< VertexID > | **[getObsLikeOrder](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getobslikeorder)**()<br>Retrieve the order in which target vertices are to be evaluated.  |
-| void | **[calcObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-calcobslike)**(VertexID vertex)<br>Calculate a single target vertex.  |
-| void | **[printObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printobslike)**(VertexID vertex, const int pointID)<br>Print a single target vertex.  |
-| bool | **[printTiming](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printtiming)**()<br>Getter for print_timing flag (used by LikelihoodContainer)  |
-| [functor](/documentation/code/classes/classgambit_1_1functor/) * | **[get_functor](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-get-functor)**(VertexID id)<br>Get the functor corresponding to a single VertexID.  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[checkTypeMatch](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-checktypematch)**(VertexID vertex, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & purpose, const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & types)<br>Ensure that the type of a given vertex is equivalent to at least one of a provided list, and return the matching list entry.  |
-| template <typename TYPE \> <br>TYPE | **[getObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getobslike)**(VertexID vertex)<br>Return the result of a functor.  |
-| const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) * | **[getIniEntry](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getinientry)**(VertexID v) |
-| void | **[invalidatePointAt](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-invalidatepointat)**(VertexID vertex, bool isnan) |
-| void | **[resetAll](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-resetall)**() |
-| [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) | **[cullInactiveFunctors](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-cullinactivefunctors)**([MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & )<br>Helper function that returns a new graph with all inactive vertices removed.  |
+| | **[DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(const [gambit_core](/documentation/code/classes/classgambit_1_1gambit__core/) & core, const [Models::ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/) & claw, const [IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/) & iniFile, const [Utils::type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/) & equiv_classes, [Printers::BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) & printer)<br>Constructor, provide module and backend functor lists.  |
+| void | **[doResolution](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**()<br>The dependency resolution.  |
+| void | **[printFunctorList](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**()<br>Pretty print module functor information.  |
+| void | **[printFunctorEvalOrder](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(bool toterminal =false)<br>Pretty print function evaluation order.  |
+| void | **[printRequiredBackends](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**()<br>Print the list of required backends.  |
+| void | **[getCitationKeys](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**()<br>Collect the citation keys for backends, modules, etc.  |
+| void | **[printCitationKeys](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**() |
+| std::vector< VertexID > | **[getObsLikeOrder](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**()<br>Retrieve the order in which target vertices are to be evaluated.  |
+| void | **[calcObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(VertexID vertex)<br>Calculate a single target vertex.  |
+| void | **[printObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(VertexID vertex, const int pointID)<br>Print a single target vertex.  |
+| bool | **[printTiming](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**()<br>Getter for print_timing flag (used by LikelihoodContainer)  |
+| [functor](/documentation/code/classes/classgambit_1_1functor/) * | **[get_functor](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(VertexID id)<br>Get the functor corresponding to a single VertexID.  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[checkTypeMatch](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(VertexID vertex, const [str](/documentation/code/namespaces/namespacegambit/) & purpose, const std::vector< [str](/documentation/code/namespaces/namespacegambit/) > & types)<br>Ensure that the type of a given vertex is equivalent to at least one of a provided list, and return the matching list entry.  |
+| template <typename TYPE \> <br>TYPE | **[getObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(VertexID vertex)<br>Return the result of a functor.  |
+| const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) * | **[getIniEntry](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(VertexID v) |
+| void | **[invalidatePointAt](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**(VertexID vertex, bool isnan) |
+| void | **[resetAll](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**() |
+| [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/) | **[cullInactiveFunctors](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)**([MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/) & )<br>Helper function that returns a new graph with all inactive vertices removed.  |
 
 ## Public Functions Documentation
 
@@ -212,4 +212,4 @@ Helper function that returns a new graph with all inactive vertices removed.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

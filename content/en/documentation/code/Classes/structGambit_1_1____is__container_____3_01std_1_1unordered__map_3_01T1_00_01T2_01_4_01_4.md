@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::pair< T1, T2 > | **[type](/documentation/code/classes/structgambit_1_1____is__container_____3_01std_1_1unordered__map_3_01t1_00_01t2_01_4_01_4/#typedef-type)**  |
+| typedef std::pair< T1, T2 > | **[type](/documentation/code/classes/structgambit_1_1____is__container_____3_01std_1_1unordered__map_3_01t1_00_01t2_01_4_01_4/)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__container_____3_01std_1_1unordered__map_3_01t1_00_01t2_01_4_01_4/#variable-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__container_____3_01std_1_1unordered__map_3_01t1_00_01t2_01_4_01_4/)**  |
 
 ## Detailed Description
 
@@ -51,4 +51,4 @@ static const bool value = true;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

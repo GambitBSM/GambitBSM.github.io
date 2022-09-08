@@ -15,15 +15,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[HDF5File](/documentation/code/classes/classgambit_1_1printers_1_1hdf5file/#function-hdf5file)**(const std::string & file, const std::string & group) |
-| | **[~HDF5File](/documentation/code/classes/classgambit_1_1printers_1_1hdf5file/#function-hdf5file)**() |
+| | **[HDF5File](/documentation/code/classes/classgambit_1_1printers_1_1hdf5file/)**(const std::string & file, const std::string & group) |
+| | **[~HDF5File](/documentation/code/classes/classgambit_1_1printers_1_1hdf5file/)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const hid_t | **[file_id](/documentation/code/classes/classgambit_1_1printers_1_1hdf5file/#variable-file-id)**  |
-| const hid_t | **[location_id](/documentation/code/classes/classgambit_1_1printers_1_1hdf5file/#variable-location-id)**  |
+| const hid_t | **[file_id](/documentation/code/classes/classgambit_1_1printers_1_1hdf5file/)**  |
+| const hid_t | **[location_id](/documentation/code/classes/classgambit_1_1printers_1_1hdf5file/)**  |
 
 ## Public Functions Documentation
 
@@ -62,4 +62,4 @@ const hid_t location_id;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

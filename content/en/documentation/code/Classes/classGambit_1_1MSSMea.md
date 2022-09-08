@@ -20,60 +20,60 @@ Inherits from [Gambit::SLHAeaModel](/documentation/code/classes/classgambit_1_1s
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[MSSMea](/documentation/code/classes/classgambit_1_1mssmea/#function-mssmea)**()<br>Constructors.  |
-| | **[MSSMea](/documentation/code/classes/classgambit_1_1mssmea/#function-mssmea)**(const [SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & input)<br>Constructor via SLHAea object.  |
-| double | **[get_Mu](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mu)**() const<br>Getters for MSSM information.  |
-| double | **[get_v](/documentation/code/classes/classgambit_1_1mssmea/#function-get-v)**() const |
-| double | **[get_mA2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-ma2)**() const |
-| double | **[get_BMu](/documentation/code/classes/classgambit_1_1mssmea/#function-get-bmu)**() const |
-| double | **[get_vd](/documentation/code/classes/classgambit_1_1mssmea/#function-get-vd)**() const |
-| double | **[get_vu](/documentation/code/classes/classgambit_1_1mssmea/#function-get-vu)**() const |
-| double | **[get_tanbeta](/documentation/code/classes/classgambit_1_1mssmea/#function-get-tanbeta)**() const |
-| double | **[get_tanbeta_mZ](/documentation/code/classes/classgambit_1_1mssmea/#function-get-tanbeta-mz)**() const |
-| double | **[get_MassB](/documentation/code/classes/classgambit_1_1mssmea/#function-get-massb)**() const |
-| double | **[get_MassWB](/documentation/code/classes/classgambit_1_1mssmea/#function-get-masswb)**() const |
-| double | **[get_MassG](/documentation/code/classes/classgambit_1_1mssmea/#function-get-massg)**() const |
-| double | **[get_mHd2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mhd2)**() const |
-| double | **[get_mHu2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mhu2)**() const |
-| double | **[get_mq2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mq2)**(int i, int j) const |
-| double | **[get_ml2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-ml2)**(int i, int j) const |
-| double | **[get_md2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-md2)**(int i, int j) const |
-| double | **[get_mu2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mu2)**(int i, int j) const |
-| double | **[get_me2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-me2)**(int i, int j) const |
-| double | **[get_TYd](/documentation/code/classes/classgambit_1_1mssmea/#function-get-tyd)**(int i, int j) const |
-| double | **[get_TYu](/documentation/code/classes/classgambit_1_1mssmea/#function-get-tyu)**(int i, int j) const |
-| double | **[get_TYe](/documentation/code/classes/classgambit_1_1mssmea/#function-get-tye)**(int i, int j) const |
-| double | **[get_ad](/documentation/code/classes/classgambit_1_1mssmea/#function-get-ad)**(int i, int j) const |
-| double | **[get_au](/documentation/code/classes/classgambit_1_1mssmea/#function-get-au)**(int i, int j) const |
-| double | **[get_ae](/documentation/code/classes/classgambit_1_1mssmea/#function-get-ae)**(int i, int j) const |
-| double | **[get_Yd](/documentation/code/classes/classgambit_1_1mssmea/#function-get-yd)**(int i, int j) const |
-| double | **[get_Yu](/documentation/code/classes/classgambit_1_1mssmea/#function-get-yu)**(int i, int j) const |
-| double | **[get_Ye](/documentation/code/classes/classgambit_1_1mssmea/#function-get-ye)**(int i, int j) const |
-| double | **[get_g1](/documentation/code/classes/classgambit_1_1mssmea/#function-get-g1)**() const |
-| double | **[get_g2](/documentation/code/classes/classgambit_1_1mssmea/#function-get-g2)**() const |
-| double | **[get_g3](/documentation/code/classes/classgambit_1_1mssmea/#function-get-g3)**() const |
-| double | **[get_sinthW2_DRbar](/documentation/code/classes/classgambit_1_1mssmea/#function-get-sinthw2-drbar)**() const |
-| double | **[get_MGlu_pole](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mglu-pole)**() const |
-| double | **[get_Mhh_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mhh-pole-slha)**(int i) const |
-| double | **[get_MAh_pole](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mah-pole)**() const |
-| double | **[get_MHpm_pole](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mhpm-pole)**() const |
-| double | **[get_MW_pole](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mw-pole)**() const |
-| double | **[get_MCha_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mcha-pole-slha)**(int i) const |
-| double | **[get_MSd_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-msd-pole-slha)**(int i) const |
-| double | **[get_MSu_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-msu-pole-slha)**(int i) const |
-| double | **[get_MSe_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mse-pole-slha)**(int i) const |
-| double | **[get_MSv_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-msv-pole-slha)**(int i) const |
-| double | **[get_MChi_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-mchi-pole-slha)**(int i) const |
-| double | **[get_ZD_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-zd-pole-slha)**(int i, int j) const |
-| double | **[get_ZU_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-zu-pole-slha)**(int i, int j) const |
-| double | **[get_ZV_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-zv-pole-slha)**(int i, int j) const |
-| double | **[get_ZE_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-ze-pole-slha)**(int i, int j) const |
-| double | **[get_ZH_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-zh-pole-slha)**(int i, int j) const |
-| double | **[get_ZA_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-za-pole-slha)**(int i, int j) const |
-| double | **[get_ZP_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-zp-pole-slha)**(int i, int j) const |
-| double | **[get_ZN_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-zn-pole-slha)**(int i, int j) const |
-| double | **[get_UM_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-um-pole-slha)**(int i, int j) const |
-| double | **[get_UP_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/#function-get-up-pole-slha)**(int i, int j) const |
+| | **[MSSMea](/documentation/code/classes/classgambit_1_1mssmea/)**()<br>Constructors.  |
+| | **[MSSMea](/documentation/code/classes/classgambit_1_1mssmea/)**(const [SLHAstruct](/documentation/code/namespaces/namespacegambit/) & input)<br>Constructor via SLHAea object.  |
+| double | **[get_Mu](/documentation/code/classes/classgambit_1_1mssmea/)**() const<br>Getters for MSSM information.  |
+| double | **[get_v](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_mA2](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_BMu](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_vd](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_vu](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_tanbeta](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_tanbeta_mZ](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_MassB](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_MassWB](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_MassG](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_mHd2](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_mHu2](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_mq2](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ml2](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_md2](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_mu2](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_me2](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_TYd](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_TYu](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_TYe](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ad](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_au](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ae](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_Yd](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_Yu](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_Ye](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_g1](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_g2](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_g3](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_sinthW2_DRbar](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_MGlu_pole](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_Mhh_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i) const |
+| double | **[get_MAh_pole](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_MHpm_pole](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_MW_pole](/documentation/code/classes/classgambit_1_1mssmea/)**() const |
+| double | **[get_MCha_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i) const |
+| double | **[get_MSd_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i) const |
+| double | **[get_MSu_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i) const |
+| double | **[get_MSe_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i) const |
+| double | **[get_MSv_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i) const |
+| double | **[get_MChi_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i) const |
+| double | **[get_ZD_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ZU_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ZV_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ZE_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ZH_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ZA_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ZP_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_ZN_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_UM_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
+| double | **[get_UP_pole_slha](/documentation/code/classes/classgambit_1_1mssmea/)**(int i, int j) const |
 
 ## Additional inherited members
 
@@ -81,22 +81,22 @@ Inherits from [Gambit::SLHAeaModel](/documentation/code/classes/classgambit_1_1s
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-slhaeamodel)**()<br>Constructors.  |
-| | **[SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-slhaeamodel)**(const SLHAea::Coll & input)<br>Constructor via SLHAea object.  |
-| int | **[slha_version](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-slha-version)**() const<br>Get the SLHA version of the internal SLHAea object.  |
-| const SLHAea::Coll & | **[get_slhaea](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-get-slhaea)**() const<br>Get the internal SLHAea object.  |
-| const std::map< int, int > & | **[PDG_translator](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-pdg-translator)**() const<br>PDG code translation map, for special cases where an SLHA file has been read in and the PDG codes changed.  |
-| double | **[getdata](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-getdata)**(const std::string & block, int index) const<br>Helper functions to do error checking for SLHAea object contents.  |
-| double | **[getdata](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-getdata)**(const std::string & block, int i, int j) const<br>Two indices.  |
-| bool | **[checkdata](/documentation/code/classes/classgambit_1_1slhaeamodel/#function-checkdata)**(const std::string & block, int index) const |
+| | **[SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/)**()<br>Constructors.  |
+| | **[SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/)**(const SLHAea::Coll & input)<br>Constructor via SLHAea object.  |
+| int | **[slha_version](/documentation/code/classes/classgambit_1_1slhaeamodel/)**() const<br>Get the SLHA version of the internal SLHAea object.  |
+| const SLHAea::Coll & | **[get_slhaea](/documentation/code/classes/classgambit_1_1slhaeamodel/)**() const<br>Get the internal SLHAea object.  |
+| const std::map< int, int > & | **[PDG_translator](/documentation/code/classes/classgambit_1_1slhaeamodel/)**() const<br>PDG code translation map, for special cases where an SLHA file has been read in and the PDG codes changed.  |
+| double | **[getdata](/documentation/code/classes/classgambit_1_1slhaeamodel/)**(const std::string & block, int index) const<br>Helper functions to do error checking for SLHAea object contents.  |
+| double | **[getdata](/documentation/code/classes/classgambit_1_1slhaeamodel/)**(const std::string & block, int i, int j) const<br>Two indices.  |
+| bool | **[checkdata](/documentation/code/classes/classgambit_1_1slhaeamodel/)**(const std::string & block, int index) const |
 
 **Protected Attributes inherited from [Gambit::SLHAeaModel](/documentation/code/classes/classgambit_1_1slhaeamodel/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| SLHAea::Coll | **[data](/documentation/code/classes/classgambit_1_1slhaeamodel/#variable-data)** <br>SLHAea object.  |
-| int | **[wrapped_slha_version](/documentation/code/classes/classgambit_1_1slhaeamodel/#variable-wrapped-slha-version)** <br>SLHA version of SLHAea object.  |
-| std::map< int, int > | **[PDG_translation_map](/documentation/code/classes/classgambit_1_1slhaeamodel/#variable-pdg-translation-map)** <br>PDG translation map (e.g. from SLHA1 to SLHA2 for MSSMskeleton)  |
+| SLHAea::Coll | **[data](/documentation/code/classes/classgambit_1_1slhaeamodel/)** <br>SLHAea object.  |
+| int | **[wrapped_slha_version](/documentation/code/classes/classgambit_1_1slhaeamodel/)** <br>SLHA version of SLHAea object.  |
+| std::map< int, int > | **[PDG_translation_map](/documentation/code/classes/classgambit_1_1slhaeamodel/)** <br>PDG translation map (e.g. from SLHA1 to SLHA2 for MSSMskeleton)  |
 
 
 ## Detailed Description
@@ -589,4 +589,4 @@ double get_UP_pole_slha(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

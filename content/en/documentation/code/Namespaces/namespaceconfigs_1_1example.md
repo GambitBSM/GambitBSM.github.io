@@ -13,17 +13,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| list | **[input_files](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-input-files)**  |
-| list | **[load_functions](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-load-functions)**  |
-| list | **[load_common_blocks](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-load-common-blocks)**  |
-| string | **[name_mangling](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-name-mangling)**  |
-| string | **[format](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-format)**  |
-| int | **[tabs_to_n_spaces](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-tabs-to-n-spaces)**  |
-| string | **[f_capability_prefix](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-f-capability-prefix)**  |
-| string | **[f_capability_suffix](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-f-capability-suffix)**  |
-| bool | **[module_name_in_capability](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-module-name-in-capability)**  |
-| string | **[cb_capability_prefix](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-cb-capability-prefix)**  |
-| string | **[cb_capability_suffix](/documentation/code/namespaces/namespaceconfigs_1_1example/#variable-cb-capability-suffix)**  |
+| list | **[input_files](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| list | **[load_functions](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| list | **[load_common_blocks](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| string | **[name_mangling](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| string | **[format](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| int | **[tabs_to_n_spaces](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| string | **[f_capability_prefix](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| string | **[f_capability_suffix](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| bool | **[module_name_in_capability](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| string | **[cb_capability_prefix](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
+| string | **[cb_capability_suffix](/documentation/code/namespaces/namespaceconfigs_1_1example/)**  |
 
 
 
@@ -111,4 +111,4 @@ string cb_capability_suffix =  '';
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

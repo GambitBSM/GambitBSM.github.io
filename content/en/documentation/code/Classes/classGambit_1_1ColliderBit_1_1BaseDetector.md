@@ -19,12 +19,12 @@ Inherited by [Gambit::ColliderBit::BuckFast](/documentation/code/classes/classga
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-init)**(const std::vector< std::string > & ) |
-| virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-init)**()<br>General init for any collider of this type - no settings version.  |
-| | **[BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-basedetector)**()<br>Constructor.  |
-| virtual | **[~BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-basedetector)**()<br>Destructor.  |
-| virtual void | **[clear](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-clear)**()<br>Reset this instance for reuse, avoiding the need for "new" or "delete".  |
-| virtual void | **[processEvent](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/#function-processevent)**(HEPUtils::Event & ) const =0<br>Perform the actual simulation on the next collider event.  |
+| virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)**(const std::vector< std::string > & ) |
+| virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)**()<br>General init for any collider of this type - no settings version.  |
+| | **[BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)**()<br>Constructor.  |
+| virtual | **[~BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)**()<br>Destructor.  |
+| virtual void | **[clear](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)**()<br>Reset this instance for reuse, avoiding the need for "new" or "delete".  |
+| virtual void | **[processEvent](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)**(HEPUtils::Event & ) const =0<br>Perform the actual simulation on the next collider event.  |
 
 ## Public Functions Documentation
 
@@ -37,7 +37,7 @@ inline virtual void init(
 ```
 
 
-**Reimplemented by**: [Gambit::ColliderBit::BuckFast::init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-init)
+**Reimplemented by**: [Gambit::ColliderBit::BuckFast::init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/)
 
 
 ### function init
@@ -48,7 +48,7 @@ inline virtual void init()
 
 General init for any collider of this type - no settings version. 
 
-**Reimplemented by**: [Gambit::ColliderBit::BuckFast::init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-init)
+**Reimplemented by**: [Gambit::ColliderBit::BuckFast::init](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/)
 
 
 ### function BaseDetector
@@ -85,9 +85,9 @@ virtual void processEvent(
 
 Perform the actual simulation on the next collider event. 
 
-**Reimplemented by**: [Gambit::ColliderBit::BuckFast::processEvent](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/#function-processevent)
+**Reimplemented by**: [Gambit::ColliderBit::BuckFast::processEvent](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/)
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

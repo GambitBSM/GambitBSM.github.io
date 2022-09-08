@@ -19,9 +19,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ALL_RNGS](/documentation/code/files/threadsafe__rng_8cpp/#define-all-rngs)**  |
-|  | **[MAKE_SPECIALISED_RNG](/documentation/code/files/threadsafe__rng_8cpp/#define-make-specialised-rng)**(r, data, elem)  |
-|  | **[ENABLE_ALL_RNGS](/documentation/code/files/threadsafe__rng_8cpp/#define-enable-all-rngs)**  |
+|  | **[ALL_RNGS](/documentation/code/files/threadsafe__rng_8cpp/)**  |
+|  | **[MAKE_SPECIALISED_RNG](/documentation/code/files/threadsafe__rng_8cpp/)**(r, data, elem)  |
+|  | **[ENABLE_ALL_RNGS](/documentation/code/files/threadsafe__rng_8cpp/)**  |
 
 ## Detailed Description
 
@@ -171,4 +171,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

@@ -13,247 +13,247 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-req)**(Init_param , (libsuperiso) , void , (parameters *) ) |
-| parameters * | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-req)**(mcmc_from_pole , (libsuperiso) , double , (double, int, parameters *) ) |
-| parameters const parameters * | **[BACKEND_OPTION](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-option)**((SuperIso, 4.1) , (libsuperiso) ) |
-| parameters const parameters nuisance * | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-req)**(set_nuisance_value_from_param , (libsuperiso) , void , (nuisance *, const parameters *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-req)**(get_predictions_nuisance , (libsuperiso) , void , (char **, int *, double **, const parameters *, const nuisance *) ) |
-| obsname double double const nuisance char const parameters * | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-req)**(convert_correlation , (libsuperiso) , void , (nuiscorr *, int, double **, char **, int) ) |
-| obsname double double const nuisance char const parameters double char int const parameters const nuisance double char int double const parameters const nuisance * | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-req)**(observables , (libsuperiso) , void , (int, obsname *, int, double *, double *, const nuisance *, char **, const parameters *) ) |
-| obsname double double const nuisance char const parameters double char int const parameters const nuisance double char int double const parameters const nuisance nuiscorr double char int | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-req)**(get_th_covariance_nuisance , (libsuperiso) , void , (double ***, char **, int *, const parameters *, const nuisance *, double **) ) |
-| | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/#function-backend-req)**(FHFlavour , (libfeynhiggs) , void , (int &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/)**(Init_param , (libsuperiso) , void , (parameters *) ) |
+| parameters * | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/)**(mcmc_from_pole , (libsuperiso) , double , (double, int, parameters *) ) |
+| parameters const parameters * | **[BACKEND_OPTION](/documentation/code/files/flavbit__rollcall_8hpp/)**((SuperIso, 4.1) , (libsuperiso) ) |
+| parameters const parameters nuisance * | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/)**(set_nuisance_value_from_param , (libsuperiso) , void , (nuisance *, const parameters *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/)**(get_predictions_nuisance , (libsuperiso) , void , (char **, int *, double **, const parameters *, const nuisance *) ) |
+| obsname double double const nuisance char const parameters * | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/)**(convert_correlation , (libsuperiso) , void , (nuiscorr *, int, double **, char **, int) ) |
+| obsname double double const nuisance char const parameters double char int const parameters const nuisance double char int double const parameters const nuisance * | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/)**(observables , (libsuperiso) , void , (int, obsname *, int, double *, double *, const nuisance *, char **, const parameters *) ) |
+| obsname double double const nuisance char const parameters double char int const parameters const nuisance double char int double const parameters const nuisance nuiscorr double char int | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/)**(get_th_covariance_nuisance , (libsuperiso) , void , (double ***, char **, int *, const parameters *, const nuisance *, double **) ) |
+| | **[BACKEND_REQ](/documentation/code/files/flavbit__rollcall_8hpp/)**(FHFlavour , (libfeynhiggs) , void , (int &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[libsuperiso](/documentation/code/files/flavbit__rollcall_8hpp/#variable-libsuperiso)**  |
-| | **[void](/documentation/code/files/flavbit__rollcall_8hpp/#variable-void)**  |
-| parameters | **[double](/documentation/code/files/flavbit__rollcall_8hpp/#variable-double)**  |
-| | **[int](/documentation/code/files/flavbit__rollcall_8hpp/#variable-int)**  |
+| | **[libsuperiso](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+| | **[void](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+| parameters | **[double](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+| | **[int](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/flavbit__rollcall_8hpp/#define-module)**  |
-|  | **[REFERENCE](/documentation/code/files/flavbit__rollcall_8hpp/#define-reference)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/#define-capability)** <br>HEPLike LogLikelihood B -> tau nu.  |
-|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/#define-function)**  |
+|  | **[MODULE](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/flavbit__rollcall_8hpp/)** <br>HEPLike LogLikelihood B -> tau nu.  |
+|  | **[FUNCTION](/documentation/code/files/flavbit__rollcall_8hpp/)**  |
 
 ## Detailed Description
 
@@ -6714,4 +6714,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

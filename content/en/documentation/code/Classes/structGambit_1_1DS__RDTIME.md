@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[rdt_max](/documentation/code/classes/structgambit_1_1ds__rdtime/#variable-rdt-max)**  |
-| Fdouble | **[rdt_start](/documentation/code/classes/structgambit_1_1ds__rdtime/#variable-rdt-start)**  |
-| Fdouble | **[rdt_end](/documentation/code/classes/structgambit_1_1ds__rdtime/#variable-rdt-end)**  |
+| Fdouble | **[rdt_max](/documentation/code/classes/structgambit_1_1ds__rdtime/)**  |
+| Fdouble | **[rdt_start](/documentation/code/classes/structgambit_1_1ds__rdtime/)**  |
+| Fdouble | **[rdt_end](/documentation/code/classes/structgambit_1_1ds__rdtime/)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ Fdouble rdt_end;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

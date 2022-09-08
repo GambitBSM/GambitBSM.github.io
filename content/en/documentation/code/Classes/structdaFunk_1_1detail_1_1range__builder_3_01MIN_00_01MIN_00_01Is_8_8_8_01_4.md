@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [index_list](/documentation/code/classes/structdafunk_1_1index__list/)< Is... > | **[type](/documentation/code/classes/structdafunk_1_1detail_1_1range__builder_3_01min_00_01min_00_01is_8_8_8_01_4/#typedef-type)**  |
+| typedef [index_list](/documentation/code/classes/structdafunk_1_1index__list/)< Is... > | **[type](/documentation/code/classes/structdafunk_1_1detail_1_1range__builder_3_01min_00_01min_00_01is_8_8_8_01_4/)**  |
 
 ## Detailed Description
 
@@ -36,4 +36,4 @@ typedef index_list<Is...> daFunk::detail::range_builder< MIN, MIN, Is... >::type
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

@@ -21,7 +21,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[READ](/documentation/code/files/yaml__parser_8cpp/#define-read)**(NAME)  |
+|  | **[READ](/documentation/code/files/yaml__parser_8cpp/)**(NAME)  |
 
 ## Detailed Description
 
@@ -207,4 +207,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

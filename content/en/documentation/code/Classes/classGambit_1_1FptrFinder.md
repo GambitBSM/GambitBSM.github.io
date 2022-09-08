@@ -17,36 +17,36 @@ Forward declaration of [FptrFinder]().  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[get_error_code](/documentation/code/classes/classgambit_1_1fptrfinder/#function-get-error-code)**()<br>Error reporting.  |
-| std::string | **[get_error_message](/documentation/code/classes/classgambit_1_1fptrfinder/#function-get-error-message)**() |
-| void | **[raise_error](/documentation/code/classes/classgambit_1_1fptrfinder/#function-raise-error)**(const std::string & origin) |
-| void | **[check_index_initd](/documentation/code/classes/classgambit_1_1fptrfinder/#function-check-index-initd)**(const std::string & origin, const int index, const std::string & label) |
-| bool | **[find_override_0index](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find-override-0index)**(const std::string & name)<br>Search 0-index override map.  |
-| bool | **[find_override_1index](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find-override-1index)**(const std::string & name, const int i)<br>Search 1-index override map.  |
-| bool | **[find_override_2index](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find-override-2index)**(const std::string & name, const int i, const int j)<br>Search 2-index override map.  |
-| bool | **[find_0index](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find-0index)**(const std::string & name)<br>Search 0-index wrapper maps.  |
-| bool | **[find_1index](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find-1index)**(const std::string & name, const int i)<br>Search 1-index wrapper maps.  |
-| bool | **[find_2index](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find-2index)**(const std::string & name, const int i, const int j)<br>Search 2-index wrapper maps.  |
-| | **[FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder/#function-fptrfinder)**(const [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/)< HostSpec, MTag > & params) |
-| template <class Map \> <br>bool | **[search_map](/documentation/code/classes/classgambit_1_1fptrfinder/#function-search-map)**(const std::string & name, const Map *const map, typename Map::const_iterator & it)<br>helper functions for searching individual maps  |
-| void | **[check](/documentation/code/classes/classgambit_1_1fptrfinder/#function-check)**(bool safe) |
-| template <class ITER \> <br>bool | **[check_indices_1](/documentation/code/classes/classgambit_1_1fptrfinder/#function-check-indices-1)**(const std::string & name, const ITER & it, const int i, const int whichit, const bool debug) |
-| template <class ITER \> <br>bool | **[check_indices_2](/documentation/code/classes/classgambit_1_1fptrfinder/#function-check-indices-2)**(const std::string & , const ITER & it, const int i, const int j, const int whichit) |
-| bool | **[find](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find)**(const std::string & name, bool  =true, [SafeBool](/documentation/code/classes/classgambit_1_1safebool/) check_antiparticle =[SafeBool](/documentation/code/classes/classgambit_1_1safebool/)(true))<br>Search function for 0-index maps.  |
-| bool | **[find](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find)**(const std::string & name, int i, bool  =true, [SafeBool](/documentation/code/classes/classgambit_1_1safebool/) check_antiparticle =[SafeBool](/documentation/code/classes/classgambit_1_1safebool/)(true))<br>Search function for 1-index maps.  |
-| bool | **[find](/documentation/code/classes/classgambit_1_1fptrfinder/#function-find)**(const std::string & name, int i, int j)<br>Search function for 2-index maps.  |
+| int | **[get_error_code](/documentation/code/classes/classgambit_1_1fptrfinder/)**()<br>Error reporting.  |
+| std::string | **[get_error_message](/documentation/code/classes/classgambit_1_1fptrfinder/)**() |
+| void | **[raise_error](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & origin) |
+| void | **[check_index_initd](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & origin, const int index, const std::string & label) |
+| bool | **[find_override_0index](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name)<br>Search 0-index override map.  |
+| bool | **[find_override_1index](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, const int i)<br>Search 1-index override map.  |
+| bool | **[find_override_2index](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, const int i, const int j)<br>Search 2-index override map.  |
+| bool | **[find_0index](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name)<br>Search 0-index wrapper maps.  |
+| bool | **[find_1index](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, const int i)<br>Search 1-index wrapper maps.  |
+| bool | **[find_2index](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, const int i, const int j)<br>Search 2-index wrapper maps.  |
+| | **[FptrFinder](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const [SetMaps](/documentation/code/classes/classgambit_1_1setmaps/)< HostSpec, MTag > & params) |
+| template <class Map \> <br>bool | **[search_map](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, const Map *const map, typename Map::const_iterator & it)<br>helper functions for searching individual maps  |
+| void | **[check](/documentation/code/classes/classgambit_1_1fptrfinder/)**(bool safe) |
+| template <class ITER \> <br>bool | **[check_indices_1](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, const ITER & it, const int i, const int whichit, const bool debug) |
+| template <class ITER \> <br>bool | **[check_indices_2](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & , const ITER & it, const int i, const int j, const int whichit) |
+| bool | **[find](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, bool  =true, [SafeBool](/documentation/code/classes/classgambit_1_1safebool/) check_antiparticle =[SafeBool](/documentation/code/classes/classgambit_1_1safebool/)(true))<br>Search function for 0-index maps.  |
+| bool | **[find](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, int i, bool  =true, [SafeBool](/documentation/code/classes/classgambit_1_1safebool/) check_antiparticle =[SafeBool](/documentation/code/classes/classgambit_1_1safebool/)(true))<br>Search function for 1-index maps.  |
+| bool | **[find](/documentation/code/classes/classgambit_1_1fptrfinder/)**(const std::string & name, int i, int j)<br>Search function for 2-index maps.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/)< HostSpec, MTag > | **[callfcn](/documentation/code/classes/classgambit_1_1fptrfinder/#variable-callfcn)**  |
+| [CallFcn](/documentation/code/classes/classgambit_1_1callfcn/)< HostSpec, MTag > | **[callfcn](/documentation/code/classes/classgambit_1_1fptrfinder/)**  |
 
 ## Friends
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[CallFcn< HostSpec, MTag >](/documentation/code/classes/classgambit_1_1fptrfinder/#friend-callfcn-hostspec-mtag)**  |
+| class | **[CallFcn< HostSpec, MTag >](/documentation/code/classes/classgambit_1_1fptrfinder/)**  |
 
 ## Detailed Description
 
@@ -299,4 +299,4 @@ friend class CallFcn< HostSpec, MTag >(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

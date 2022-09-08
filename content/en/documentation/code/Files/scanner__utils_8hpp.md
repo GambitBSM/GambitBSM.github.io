@@ -54,15 +54,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[scan_err](/documentation/code/files/scanner__utils_8hpp/#define-scan-err)**  |
-|  | **[scan_warn](/documentation/code/files/scanner__utils_8hpp/#define-scan-warn)**  |
-|  | **[scan_end](/documentation/code/files/scanner__utils_8hpp/#define-scan-end)**  |
-|  | **[scan_flush](/documentation/code/files/scanner__utils_8hpp/#define-scan-flush)**  |
-|  | **[SCAN_ERR](/documentation/code/files/scanner__utils_8hpp/#define-scan-err)**  |
-|  | **[SCAN_WARN](/documentation/code/files/scanner__utils_8hpp/#define-scan-warn)**  |
-|  | **[SCAN_END_INTERNAL](/documentation/code/files/scanner__utils_8hpp/#define-scan-end-internal)**  |
-|  | **[SCAN_END](/documentation/code/files/scanner__utils_8hpp/#define-scan-end)**  |
-|  | **[SCAN_FLUSH](/documentation/code/files/scanner__utils_8hpp/#define-scan-flush)**  |
+|  | **[scan_err](/documentation/code/files/scanner__utils_8hpp/)**  |
+|  | **[scan_warn](/documentation/code/files/scanner__utils_8hpp/)**  |
+|  | **[scan_end](/documentation/code/files/scanner__utils_8hpp/)**  |
+|  | **[scan_flush](/documentation/code/files/scanner__utils_8hpp/)**  |
+|  | **[SCAN_ERR](/documentation/code/files/scanner__utils_8hpp/)**  |
+|  | **[SCAN_WARN](/documentation/code/files/scanner__utils_8hpp/)**  |
+|  | **[SCAN_END_INTERNAL](/documentation/code/files/scanner__utils_8hpp/)**  |
+|  | **[SCAN_END](/documentation/code/files/scanner__utils_8hpp/)**  |
+|  | **[SCAN_FLUSH](/documentation/code/files/scanner__utils_8hpp/)**  |
 
 ## Detailed Description
 
@@ -915,4 +915,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

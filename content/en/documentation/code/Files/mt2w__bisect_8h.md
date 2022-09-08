@@ -25,11 +25,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[RELATIVE_PRECISION](/documentation/code/files/mt2w__bisect_8h/#define-relative-precision)**  |
-|  | **[ABSOLUTE_PRECISION](/documentation/code/files/mt2w__bisect_8h/#define-absolute-precision)**  |
-|  | **[MIN_MASS](/documentation/code/files/mt2w__bisect_8h/#define-min-mass)**  |
-|  | **[ZERO_MASS](/documentation/code/files/mt2w__bisect_8h/#define-zero-mass)**  |
-|  | **[SCANSTEP](/documentation/code/files/mt2w__bisect_8h/#define-scanstep)**  |
+|  | **[RELATIVE_PRECISION](/documentation/code/files/mt2w__bisect_8h/)**  |
+|  | **[ABSOLUTE_PRECISION](/documentation/code/files/mt2w__bisect_8h/)**  |
+|  | **[MIN_MASS](/documentation/code/files/mt2w__bisect_8h/)**  |
+|  | **[ZERO_MASS](/documentation/code/files/mt2w__bisect_8h/)**  |
+|  | **[SCANSTEP](/documentation/code/files/mt2w__bisect_8h/)**  |
 
 
 
@@ -167,4 +167,4 @@ class mt2w
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

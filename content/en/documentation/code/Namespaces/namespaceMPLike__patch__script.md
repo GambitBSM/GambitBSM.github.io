@@ -13,15 +13,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[replace](/documentation/code/namespaces/namespacemplike__patch__script/#function-replace)**(file file, pattern pattern, subst subst, append_to_beginning append_to_beginning ="") |
+| def | **[replace](/documentation/code/namespaces/namespacemplike__patch__script/)**(file file, pattern pattern, subst subst, append_to_beginning append_to_beginning ="") |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| list | **[output](/documentation/code/namespaces/namespacemplike__patch__script/#variable-output)**  |
-| | **[abspath](/documentation/code/namespaces/namespacemplike__patch__script/#variable-abspath)**  |
-| | **[append_to_beginning](/documentation/code/namespaces/namespacemplike__patch__script/#variable-append-to-beginning)**  |
+| list | **[output](/documentation/code/namespaces/namespacemplike__patch__script/)**  |
+| | **[abspath](/documentation/code/namespaces/namespacemplike__patch__script/)**  |
+| | **[append_to_beginning](/documentation/code/namespaces/namespacemplike__patch__script/)**  |
 
 ## Detailed Description
 
@@ -99,4 +99,4 @@ append_to_beginning;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

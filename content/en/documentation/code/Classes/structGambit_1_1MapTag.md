@@ -32,4 +32,4 @@ Traits structs for function pointer maps [Get](/documentation/code/classes/struc
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

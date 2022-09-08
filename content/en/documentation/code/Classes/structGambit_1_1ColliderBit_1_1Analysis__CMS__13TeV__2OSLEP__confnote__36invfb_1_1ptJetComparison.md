@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__confnote__36invfb_1_1ptjetcomparison/#function-operator)**(const HEPUtils::Jet * i, const HEPUtils::Jet * j) |
+| bool | **[operator()](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__confnote__36invfb_1_1ptjetcomparison/)**(const HEPUtils::Jet * i, const HEPUtils::Jet * j) |
 
 ## Public Functions Documentation
 
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

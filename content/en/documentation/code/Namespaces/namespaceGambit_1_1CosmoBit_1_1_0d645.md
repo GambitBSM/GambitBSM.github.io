@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| enum| **[interpolation_bound](/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d645/#enum-interpolation-bound)** { } |
+| enum| **[interpolation_bound](/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d645/)** { } |
 
 ## Types Documentation
 
@@ -32,4 +32,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

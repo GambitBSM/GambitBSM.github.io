@@ -19,13 +19,13 @@ Inherits from [Gambit::DefaultTraits](/documentation/code/classes/structgambit_1
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [SpectrumContents::DiracSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1diracsingletdm__z2/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1diracsingletdm__z2simplespec_01_4/#typedef-contents)**  |
+| typedef [SpectrumContents::DiracSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1diracsingletdm__z2/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1diracsingletdm__z2simplespec_01_4/)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1diracsingletdm__z2simplespec_01_4/#function-name)**() |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1diracsingletdm__z2simplespec_01_4/)**() |
 
 ## Additional inherited members
 
@@ -33,8 +33,8 @@ Inherits from [Gambit::DefaultTraits](/documentation/code/classes/structgambit_1
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [DummyModel](/documentation/code/classes/classgambit_1_1dummymodel/) | **[Model](/documentation/code/classes/structgambit_1_1defaulttraits/#typedef-model)**  |
-| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1defaulttraits/#typedef-input)**  |
+| typedef [DummyModel](/documentation/code/classes/classgambit_1_1dummymodel/) | **[Model](/documentation/code/classes/structgambit_1_1defaulttraits/)**  |
+| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1defaulttraits/)**  |
 
 
 ## Public Types Documentation
@@ -57,4 +57,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

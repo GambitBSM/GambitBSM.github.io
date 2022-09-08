@@ -19,12 +19,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/mssm63atx__ma_8cpp/#define-model)** <br>Actual translation function definitions.  |
-|  | **[PARENT](/documentation/code/files/mssm63atx__ma_8cpp/#define-parent)**  |
-|  | **[MODEL](/documentation/code/files/mssm63atx__ma_8cpp/#define-model)** <br>Actual translation function definitions.  |
-|  | **[PARENT](/documentation/code/files/mssm63atx__ma_8cpp/#define-parent)**  |
-|  | **[MODEL](/documentation/code/files/mssm63atx__ma_8cpp/#define-model)** <br>Actual translation function definitions.  |
-|  | **[PARENT](/documentation/code/files/mssm63atx__ma_8cpp/#define-parent)**  |
+|  | **[MODEL](/documentation/code/files/mssm63atx__ma_8cpp/)** <br>Actual translation function definitions.  |
+|  | **[PARENT](/documentation/code/files/mssm63atx__ma_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/mssm63atx__ma_8cpp/)** <br>Actual translation function definitions.  |
+|  | **[PARENT](/documentation/code/files/mssm63atx__ma_8cpp/)**  |
+|  | **[MODEL](/documentation/code/files/mssm63atx__ma_8cpp/)** <br>Actual translation function definitions.  |
+|  | **[PARENT](/documentation/code/files/mssm63atx__ma_8cpp/)**  |
 
 
 
@@ -193,4 +193,4 @@ void MODEL_NAMESPACE::MSSM63atMGUT_mA_to_MSSM63atMGUT (const ModelParameters &my
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

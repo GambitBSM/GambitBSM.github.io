@@ -19,12 +19,12 @@ Inherited by [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [Adva
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-expdev)**() |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-expdev)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
 
 ## Additional inherited members
 
@@ -32,19 +32,19 @@ Inherited by [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [Adva
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
-| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/)**() |
+| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/)**() |
 
 **Public Functions inherited from [Ran](/documentation/code/classes/classran/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
-| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/)**() |
+| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/)**() |
 
 
 ## Public Functions Documentation
@@ -97,4 +97,4 @@ inline double ExpDev()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

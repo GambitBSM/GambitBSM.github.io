@@ -21,23 +21,23 @@ Inherited by [Gambit::halt_loop_exception](/documentation/code/classes/classgamb
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[special_exception](/documentation/code/classes/classgambit_1_1special__exception/#function-special-exception)**(const char * what)<br>Constructor.  |
-| virtual | **[~special_exception](/documentation/code/classes/classgambit_1_1special__exception/#function-special-exception)**()<br>Destructor.  |
-| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1special__exception/#function-what)**() const<br>Retrieve the identity of the exception.  |
-| std::string | **[message](/documentation/code/classes/classgambit_1_1special__exception/#function-message)**()<br>Retrieve the message that this exception was raised with.  |
-| virtual void | **[raise](/documentation/code/classes/classgambit_1_1special__exception/#function-raise)**(const std::string & msg)<br>Raise the exception, i.e. throw it.  |
+| | **[special_exception](/documentation/code/classes/classgambit_1_1special__exception/)**(const char * what)<br>Constructor.  |
+| virtual | **[~special_exception](/documentation/code/classes/classgambit_1_1special__exception/)**()<br>Destructor.  |
+| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1special__exception/)**() const<br>Retrieve the identity of the exception.  |
+| std::string | **[message](/documentation/code/classes/classgambit_1_1special__exception/)**()<br>Retrieve the message that this exception was raised with.  |
+| virtual void | **[raise](/documentation/code/classes/classgambit_1_1special__exception/)**(const std::string & msg)<br>Raise the exception, i.e. throw it.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[invalidcode](/documentation/code/classes/classgambit_1_1special__exception/#variable-invalidcode)** <br>Integer code used for exceptions.  |
+| int | **[invalidcode](/documentation/code/classes/classgambit_1_1special__exception/)** <br>Integer code used for exceptions.  |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[myMessage](/documentation/code/classes/classgambit_1_1special__exception/#variable-mymessage)** <br>The message passed when this exception is raised.  |
+| std::string | **[myMessage](/documentation/code/classes/classgambit_1_1special__exception/)** <br>The message passed when this exception is raised.  |
 
 ## Public Functions Documentation
 
@@ -90,7 +90,7 @@ virtual void raise(
 
 Raise the exception, i.e. throw it. 
 
-**Reimplemented by**: [Gambit::invalid_point_exception::raise](/documentation/code/classes/classgambit_1_1invalid__point__exception/#function-raise)
+**Reimplemented by**: [Gambit::invalid_point_exception::raise](/documentation/code/classes/classgambit_1_1invalid__point__exception/)
 
 
 Raise the exception, i.e. throw it with a message. 
@@ -118,4 +118,4 @@ The message passed when this exception is raised.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

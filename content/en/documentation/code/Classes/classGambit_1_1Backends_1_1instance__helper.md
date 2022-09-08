@@ -18,7 +18,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| T | **[member](/documentation/code/classes/classgambit_1_1backends_1_1instance__helper/#variable-member)**  |
+| T | **[member](/documentation/code/classes/classgambit_1_1backends_1_1instance__helper/)**  |
 
 ## Detailed Description
 
@@ -41,4 +41,4 @@ T member;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

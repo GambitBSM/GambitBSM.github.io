@@ -19,18 +19,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEFINE_IAPFUNC](/documentation/code/files/mssm20atx_8cpp/#define-define-iapfunc)**(PARENT)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
-|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/#define-model)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[DEFINE_IAPFUNC](/documentation/code/files/mssm20atx_8cpp/)**(PARENT)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
+|  | **[MODEL](/documentation/code/files/mssm20atx_8cpp/)** <br>Interpret-as-friend (mA parameterisations to primary parameterisations)  |
 
 ## Detailed Description
 
@@ -391,4 +391,4 @@ void MODEL_NAMESPACE::MSSM20atMSUSY_to_MSSM20atQ (const ModelParameters &myP, Mo
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

@@ -20,9 +20,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[GETTYPEID](/documentation/code/files/baseprinter_8cpp/#define-gettypeid)**(r, data, i, elem)  |
-|  | **[PRINTTYPEID](/documentation/code/files/baseprinter_8cpp/#define-printtypeid)**(r, data, elem)  |
-|  | **[TYPE_CASES](/documentation/code/files/baseprinter_8cpp/#define-type-cases)**(r, data, elem)  |
+|  | **[GETTYPEID](/documentation/code/files/baseprinter_8cpp/)**(r, data, i, elem)  |
+|  | **[PRINTTYPEID](/documentation/code/files/baseprinter_8cpp/)**(r, data, elem)  |
+|  | **[TYPE_CASES](/documentation/code/files/baseprinter_8cpp/)**(r, data, elem)  |
 
 ## Detailed Description
 
@@ -277,4 +277,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

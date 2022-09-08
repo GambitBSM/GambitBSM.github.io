@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [_find_variadic_type_convert_](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert__/)< T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/#typedef-ret-type)**  |
-| typedef [_find_variadic_type_convert_](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert__/)< T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/#typedef-func-type)**  |
+| typedef [_find_variadic_type_convert_](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert__/)< T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)**  |
+| typedef [_find_variadic_type_convert_](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__convert__/)< T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/#variable-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__convert/)**  |
 
 ## Detailed Description
 
@@ -58,4 +58,4 @@ static const bool value = _find_variadic_type_convert_<T...>::value;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

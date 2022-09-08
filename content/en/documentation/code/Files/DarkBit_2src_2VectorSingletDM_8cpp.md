@@ -26,8 +26,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[getSMmass](/documentation/code/files/darkbit_2src_2vectorsingletdm_8cpp/#define-getsmmass)**(Name, spinX2)  |
-|  | **[addParticle](/documentation/code/files/darkbit_2src_2vectorsingletdm_8cpp/#define-addparticle)**(Name, Mass, spinX2)  |
+|  | **[getSMmass](/documentation/code/files/darkbit_2src_2vectorsingletdm_8cpp/)**(Name, spinX2)  |
+|  | **[addParticle](/documentation/code/files/darkbit_2src_2vectorsingletdm_8cpp/)**(Name, Mass, spinX2)  |
 
 ## Detailed Description
 
@@ -494,4 +494,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

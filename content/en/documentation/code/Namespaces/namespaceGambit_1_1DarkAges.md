@@ -20,10 +20,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1darkages/#function-operator)**(const [Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & lhs, const [Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & rhs) |
-| bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1darkages/#function-operator)**(const [Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & lhs, const [Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & rhs) |
-| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1darkages/#function-operator)**(const [Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & lhs, const [Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & rhs) |
-| bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1darkages/#function-operator)**(const [Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & lhs, const [Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & rhs) |
+| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1darkages/)**(const [Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & lhs, const [Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & rhs) |
+| bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1darkages/)**(const [Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & lhs, const [Energy_injection_spectrum](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__spectrum/) & rhs) |
+| bool | **[operator==](/documentation/code/namespaces/namespacegambit_1_1darkages/)**(const [Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & lhs, const [Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & rhs) |
+| bool | **[operator!=](/documentation/code/namespaces/namespacegambit_1_1darkages/)**(const [Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & lhs, const [Energy_injection_efficiency_table](/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/) & rhs) |
 
 
 ## Functions Documentation
@@ -74,4 +74,4 @@ inline bool operator!=(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

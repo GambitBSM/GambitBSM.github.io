@@ -13,23 +13,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[check_node](/documentation/code/namespaces/namespacecolouring/#function-check-node)**(node node, name name, keys keys) |
-| def | **[usage](/documentation/code/namespaces/namespacecolouring/#function-usage)**() |
-| def | **[main](/documentation/code/namespaces/namespacecolouring/#function-main)**(arguments arguments) |
-| def | **[prime](/documentation/code/namespaces/namespacecolouring/#function-prime)**(region_file region_file, pip_file pip_file) |
-| def | **[combine](/documentation/code/namespaces/namespacecolouring/#function-combine)**(region_file region_file, pip_file pip_file) |
+| def | **[check_node](/documentation/code/namespaces/namespacecolouring/)**(node node, name name, keys keys) |
+| def | **[usage](/documentation/code/namespaces/namespacecolouring/)**() |
+| def | **[main](/documentation/code/namespaces/namespacecolouring/)**(arguments arguments) |
+| def | **[prime](/documentation/code/namespaces/namespacecolouring/)**(region_file region_file, pip_file pip_file) |
+| def | **[combine](/documentation/code/namespaces/namespacecolouring/)**(region_file region_file, pip_file pip_file) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[verbose](/documentation/code/namespaces/namespacecolouring/#variable-verbose)**  |
-| float | **[default_contour](/documentation/code/namespaces/namespacecolouring/#variable-default-contour)**  |
-| string | **[default_contour_style](/documentation/code/namespaces/namespacecolouring/#variable-default-contour-style)**  |
-| int | **[default_contour_width](/documentation/code/namespaces/namespacecolouring/#variable-default-contour-width)**  |
-| string | **[default_colour](/documentation/code/namespaces/namespacecolouring/#variable-default-colour)**  |
-| int | **[default_n_contours](/documentation/code/namespaces/namespacecolouring/#variable-default-n-contours)**  |
-| | **[n_threads](/documentation/code/namespaces/namespacecolouring/#variable-n-threads)**  |
+| bool | **[verbose](/documentation/code/namespaces/namespacecolouring/)**  |
+| float | **[default_contour](/documentation/code/namespaces/namespacecolouring/)**  |
+| string | **[default_contour_style](/documentation/code/namespaces/namespacecolouring/)**  |
+| int | **[default_contour_width](/documentation/code/namespaces/namespacecolouring/)**  |
+| string | **[default_colour](/documentation/code/namespaces/namespacecolouring/)**  |
+| int | **[default_n_contours](/documentation/code/namespaces/namespacecolouring/)**  |
+| | **[n_threads](/documentation/code/namespaces/namespacecolouring/)**  |
 
 
 ## Functions Documentation
@@ -138,4 +138,4 @@ n_threads =  cpu_count();
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

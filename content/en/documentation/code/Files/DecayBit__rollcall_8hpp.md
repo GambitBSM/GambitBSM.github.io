@@ -13,202 +13,202 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_OPTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-backend-option)**((SUSY_HIT) , (sh_reqd) ) |
-| | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , W_minus_decay_rates , NEW_CAPABILITY , W_minus_decays , DecayTable::Entry , () , (W_plus_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , mu_minus_decay_rates , NEW_CAPABILITY , mu_minus_decays , DecayTable::Entry , () , (mu_plus_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , pi_minus_decay_rates , NEW_CAPABILITY , pi_minus_decays , DecayTable::Entry , () , (pi_plus_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , H_minus_decay_rates , NEW_CAPABILITY , H_minus_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (H_plus_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , stopbar_2_decay_rates , NEW_CAPABILITY , stopbar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (stop_2_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , sbottombar_2_decay_rates , NEW_CAPABILITY , sbottombar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sbottom_2_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , supbar_r_decay_rates , NEW_CAPABILITY , supbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sup_r_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , sdownbar_r_decay_rates , NEW_CAPABILITY , sdownbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sdown_r_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , scharmbar_r_decay_rates , NEW_CAPABILITY , scharmbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (scharm_r_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , sstrangebar_r_decay_rates , NEW_CAPABILITY , sstrangebar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sstrange_r_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , selectronbar_r_decay_rates , NEW_CAPABILITY , selectronbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (selectron_r_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , smuonbar_r_decay_rates , NEW_CAPABILITY , smuonbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (smuon_r_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , staubar_2_decay_rates , NEW_CAPABILITY , staubar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (stau_2_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , snubar_muonl_decay_rates , NEW_CAPABILITY , snubar_muonl_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (snu_muonl_decay_rates, DecayTable::Entry) ) |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , chargino_minus_1_decay_rates , NEW_CAPABILITY , chargino_minus_1_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (chargino_plus_1_decay_rates, DecayTable::Entry) ) |
+| | **[BACKEND_OPTION](/documentation/code/files/decaybit__rollcall_8hpp/)**((SUSY_HIT) , (sh_reqd) ) |
+| | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , W_minus_decay_rates , NEW_CAPABILITY , W_minus_decays , DecayTable::Entry , () , (W_plus_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , mu_minus_decay_rates , NEW_CAPABILITY , mu_minus_decays , DecayTable::Entry , () , (mu_plus_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , pi_minus_decay_rates , NEW_CAPABILITY , pi_minus_decays , DecayTable::Entry , () , (pi_plus_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , H_minus_decay_rates , NEW_CAPABILITY , H_minus_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (H_plus_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , stopbar_2_decay_rates , NEW_CAPABILITY , stopbar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (stop_2_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , sbottombar_2_decay_rates , NEW_CAPABILITY , sbottombar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sbottom_2_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , supbar_r_decay_rates , NEW_CAPABILITY , supbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sup_r_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , sdownbar_r_decay_rates , NEW_CAPABILITY , sdownbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sdown_r_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , scharmbar_r_decay_rates , NEW_CAPABILITY , scharmbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (scharm_r_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , sstrangebar_r_decay_rates , NEW_CAPABILITY , sstrangebar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (sstrange_r_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , selectronbar_r_decay_rates , NEW_CAPABILITY , selectronbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (selectron_r_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , smuonbar_r_decay_rates , NEW_CAPABILITY , smuonbar_r_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (smuon_r_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , staubar_2_decay_rates , NEW_CAPABILITY , staubar_2_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (stau_2_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , snubar_muonl_decay_rates , NEW_CAPABILITY , snubar_muonl_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (snu_muonl_decay_rates, DecayTable::Entry) ) |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**(DecayBit , chargino_minus_1_decay_rates , NEW_CAPABILITY , chargino_minus_1_decays , DecayTable::Entry , (MSSM63atQ, MSSM63atMGUT) , (chargino_plus_1_decay_rates, DecayTable::Entry) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[tbar_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-tbar-decay-rates)**  |
-| | **[NEW_CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#variable-new-capability)**  |
-| | **[tbar_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-tbar-decays)**  |
-| | **[t_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-t-decay-rates)**  |
-| DecayTable::Entry | **[tau_minus_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-tau-minus-decay-rates)**  |
-| DecayTable::Entry | **[tau_minus_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-tau-minus-decays)**  |
-| DecayTable::Entry | **[tau_plus_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-tau-plus-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry | **[rho_minus_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-rho-minus-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry | **[rho_minus_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-rho-minus-decays)**  |
-| DecayTable::Entry DecayTable::Entry | **[rho_plus_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-rho-plus-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[stopbar_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-stopbar-1-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[stopbar_1_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-stopbar-1-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[MSSM63atQ](/documentation/code/files/decaybit__rollcall_8hpp/#variable-mssm63atq)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[MSSM63atMGUT](/documentation/code/files/decaybit__rollcall_8hpp/#variable-mssm63atmgut)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[stop_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-stop-1-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sbottombar_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sbottombar-1-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sbottombar_1_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sbottombar-1-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sbottom_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sbottom-1-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[supbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-supbar-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[supbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-supbar-l-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sup_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sup-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sdownbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sdownbar-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sdownbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sdownbar-l-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sdown_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sdown-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[scharmbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-scharmbar-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[scharmbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-scharmbar-l-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[scharm_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-scharm-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sstrangebar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sstrangebar-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sstrangebar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sstrangebar-l-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sstrange_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-sstrange-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[selectronbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-selectronbar-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[selectronbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-selectronbar-l-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[selectron_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-selectron-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[smuonbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-smuonbar-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[smuonbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-smuonbar-l-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[smuon_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-smuon-l-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[staubar_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-staubar-1-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[staubar_1_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-staubar-1-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[stau_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-stau-1-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snubar_electronl_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-snubar-electronl-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snubar_electronl_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-snubar-electronl-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snu_electronl_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-snu-electronl-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snubar_taul_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-snubar-taul-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snubar_taul_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-snubar-taul-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snu_taul_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-snu-taul-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[chargino_minus_2_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-chargino-minus-2-decay-rates)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[chargino_minus_2_decays](/documentation/code/files/decaybit__rollcall_8hpp/#variable-chargino-minus-2-decays)**  |
-| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[chargino_plus_2_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/#variable-chargino-plus-2-decay-rates)**  |
+| | **[tbar_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| | **[NEW_CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| | **[tbar_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| | **[t_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry | **[tau_minus_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry | **[tau_minus_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry | **[tau_plus_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry | **[rho_minus_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry | **[rho_minus_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry | **[rho_plus_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[stopbar_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[stopbar_1_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[MSSM63atQ](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[MSSM63atMGUT](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[stop_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sbottombar_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sbottombar_1_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sbottom_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[supbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[supbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sup_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sdownbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sdownbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sdown_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[scharmbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[scharmbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[scharm_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sstrangebar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sstrangebar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[sstrange_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[selectronbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[selectronbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[selectron_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[smuonbar_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[smuonbar_l_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[smuon_l_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[staubar_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[staubar_1_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[stau_1_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snubar_electronl_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snubar_electronl_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snu_electronl_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snubar_taul_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snubar_taul_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[snu_taul_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[chargino_minus_2_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[chargino_minus_2_decays](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+| DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry DecayTable::Entry | **[chargino_plus_2_decay_rates](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/decaybit__rollcall_8hpp/#define-module)**  |
-|  | **[REFERENCE](/documentation/code/files/decaybit__rollcall_8hpp/#define-reference)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
+|  | **[MODULE](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/)**  |
 
 ## Detailed Description
 
@@ -2653,4 +2653,4 @@ QUICK_FUNCTION(DecayBit, chargino_minus_2_decay_rates, NEW_CAPABILITY, chargino_
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

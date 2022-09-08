@@ -15,17 +15,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/#function-funkbound)**(Funk f, size_t datalen, size_t bindID) |
-| | **[~FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/#function-funkbound)**() |
-| double | **[value](/documentation/code/classes/classdafunk_1_1funkbound/#function-value)**(std::vector< double > & map, size_t bindID) |
-| template <typename... Args\> <br>double | **[eval](/documentation/code/classes/classdafunk_1_1funkbound/#function-eval)**(Args... argss) |
-| template <typename... Args\> <br>std::vector< double > | **[vect](/documentation/code/classes/classdafunk_1_1funkbound/#function-vect)**(Args... argss) |
+| | **[FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/)**(Funk f, size_t datalen, size_t bindID) |
+| | **[~FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/)**() |
+| double | **[value](/documentation/code/classes/classdafunk_1_1funkbound/)**(std::vector< double > & map, size_t bindID) |
+| template <typename... Args\> <br>double | **[eval](/documentation/code/classes/classdafunk_1_1funkbound/)**(Args... argss) |
+| template <typename... Args\> <br>std::vector< double > | **[vect](/documentation/code/classes/classdafunk_1_1funkbound/)**(Args... argss) |
 
 ## Friends
 
 |                | Name           |
 | -------------- | -------------- |
-| shared_ptr< [FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/) > | **[FunkBase::bind](/documentation/code/classes/classdafunk_1_1funkbound/#friend-funkbasebind)**(Args... argss)  |
+| shared_ptr< [FunkBound](/documentation/code/classes/classdafunk_1_1funkbound/) > | **[FunkBase::bind](/documentation/code/classes/classdafunk_1_1funkbound/)**(Args... argss)  |
 
 ## Public Functions Documentation
 
@@ -90,4 +90,4 @@ friend shared_ptr< FunkBound > FunkBase::bind(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

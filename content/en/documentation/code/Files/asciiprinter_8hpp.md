@@ -27,7 +27,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DECLARE_PRINT](/documentation/code/files/asciiprinter_8hpp/#define-declare-print)**(r, data, i, elem)  |
+|  | **[DECLARE_PRINT](/documentation/code/files/asciiprinter_8hpp/)**(r, data, i, elem)  |
 
 ## Detailed Description
 
@@ -311,4 +311,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

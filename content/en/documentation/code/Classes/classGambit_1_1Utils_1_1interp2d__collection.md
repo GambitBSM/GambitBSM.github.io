@@ -18,29 +18,29 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-interp2d-collection)**(const std::string collection_name_in, const std::string file_name_in, const std::vector< std::string > colnames_in) |
-| | **[~interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-interp2d-collection)**() |
-| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-eval)**(double x, double y, size_t interp_index) const |
-| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-eval)**(double x, double y) const |
-| bool | **[is_inside_range](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-is-inside-range)**(double x, double y) const |
+| | **[interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**(const std::string collection_name_in, const std::string file_name_in, const std::vector< std::string > colnames_in) |
+| | **[~interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**() |
+| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**(double x, double y, size_t interp_index) const |
+| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**(double x, double y) const |
+| bool | **[is_inside_range](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**(double x, double y) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[collection_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-collection-name)**  |
-| std::string | **[file_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-file-name)**  |
-| std::string | **[x_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x-name)**  |
-| std::string | **[y_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-y-name)**  |
-| std::vector< std::string > | **[interpolator_names](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-interpolator-names)**  |
-| std::vector< gsl_spline2d * > | **[splines](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-splines)**  |
-| std::vector< gsl_interp_accel * > | **[x_accels](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x-accels)**  |
-| std::vector< gsl_interp_accel * > | **[y_accels](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-y-accels)**  |
-| double | **[x_min](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x-min)**  |
-| double | **[x_max](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x-max)**  |
-| double | **[y_min](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-y-min)**  |
-| double | **[y_max](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-y-max)**  |
-| size_t | **[n_interpolators](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-n-interpolators)**  |
+| std::string | **[collection_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| std::string | **[file_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| std::string | **[x_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| std::string | **[y_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| std::vector< std::string > | **[interpolator_names](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| std::vector< gsl_spline2d * > | **[splines](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| std::vector< gsl_interp_accel * > | **[x_accels](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| std::vector< gsl_interp_accel * > | **[y_accels](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| double | **[x_min](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| double | **[x_max](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| double | **[y_min](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| double | **[y_max](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| size_t | **[n_interpolators](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
 
 ## Detailed Description
 
@@ -201,4 +201,4 @@ size_t n_interpolators;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

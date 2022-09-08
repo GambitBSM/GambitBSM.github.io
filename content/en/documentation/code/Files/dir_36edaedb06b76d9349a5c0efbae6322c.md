@@ -13,9 +13,9 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[SimpleSpectra/MSSMSimpleSpec.cpp](/documentation/code/files/mssmsimplespec_8cpp/#file-mssmsimplespec-cpp)**  |
-| **[SimpleSpectra/SLHASimpleSpec.cpp](/documentation/code/files/slhasimplespec_8cpp/#file-slhasimplespec-cpp)**  |
-| **[SimpleSpectra/SMSimpleSpec.cpp](/documentation/code/files/smsimplespec_8cpp/#file-smsimplespec-cpp)**  |
+| **[SimpleSpectra/MSSMSimpleSpec.cpp](/documentation/code/files/mssmsimplespec_8cpp/)**  |
+| **[SimpleSpectra/SLHASimpleSpec.cpp](/documentation/code/files/slhasimplespec_8cpp/)**  |
+| **[SimpleSpectra/SMSimpleSpec.cpp](/documentation/code/files/smsimplespec_8cpp/)**  |
 
 
 
@@ -24,4 +24,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

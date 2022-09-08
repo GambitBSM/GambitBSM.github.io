@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[calculateMT2wHepUtils](/documentation/code/files/mt2w_8cc/#function-calculatemt2wheputils)**(vector< HEPUtils::P4 > & jets, vector< bool > & btag, HEPUtils::P4 & lep, float met, float metphi) |
-| double | **[mt2wWrapperHepUtils](/documentation/code/files/mt2w_8cc/#function-mt2wwrapperheputils)**(HEPUtils::P4 & lep, HEPUtils::P4 & jet_o, HEPUtils::P4 & jet_b, float met, float metphi) |
+| double | **[calculateMT2wHepUtils](/documentation/code/files/mt2w_8cc/)**(vector< HEPUtils::P4 > & jets, vector< bool > & btag, HEPUtils::P4 & lep, float met, float metphi) |
+| double | **[mt2wWrapperHepUtils](/documentation/code/files/mt2w_8cc/)**(HEPUtils::P4 & lep, HEPUtils::P4 & jet_o, HEPUtils::P4 & jet_b, float met, float metphi) |
 
 
 ## Functions Documentation
@@ -162,4 +162,4 @@ double mt2wWrapperHepUtils(HEPUtils::P4& lep, HEPUtils::P4& jet_o, HEPUtils::P4&
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

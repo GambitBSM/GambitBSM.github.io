@@ -31,13 +31,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[clearInfoMessages](/documentation/code/namespaces/namespacemodules_1_1infomsg/#function-clearinfomessages)**() |
+| def | **[clearInfoMessages](/documentation/code/namespaces/namespacemodules_1_1infomsg/)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[active_msg_types](/documentation/code/namespaces/namespacemodules_1_1infomsg/#variable-active-msg-types)**  |
+| | **[active_msg_types](/documentation/code/namespaces/namespacemodules_1_1infomsg/)**  |
 
 
 ## Functions Documentation
@@ -73,4 +73,4 @@ active_msg_types =  set();
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

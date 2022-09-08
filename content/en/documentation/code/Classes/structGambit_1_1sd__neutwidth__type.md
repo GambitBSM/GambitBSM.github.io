@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[neuttot](/documentation/code/classes/structgambit_1_1sd__neutwidth__type/#variable-neuttot)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[neuttot](/documentation/code/classes/structgambit_1_1sd__neutwidth__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -28,4 +28,4 @@ Farray< Fdouble, 1, 4 > neuttot;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

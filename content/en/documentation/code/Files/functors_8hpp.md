@@ -39,9 +39,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[FUNCTORS_FADE_RATE](/documentation/code/files/functors_8hpp/#define-functors-fade-rate)** <br>Decay rate of average runtime estimate [(number of functor evaluations)^-1].  |
-|  | **[FUNCTORS_BASE_INVALIDATION_RATE](/documentation/code/files/functors_8hpp/#define-functors-base-invalidation-rate)** <br>Minimum invaldiation rate (should be 0<...<<1)  |
-|  | **[FUNCTORS_RUNTIME_INIT](/documentation/code/files/functors_8hpp/#define-functors-runtime-init)** <br>Initial runtime estimate (s)  |
+|  | **[FUNCTORS_FADE_RATE](/documentation/code/files/functors_8hpp/)** <br>Decay rate of average runtime estimate [(number of functor evaluations)^-1].  |
+|  | **[FUNCTORS_BASE_INVALIDATION_RATE](/documentation/code/files/functors_8hpp/)** <br>Minimum invaldiation rate (should be 0<...<<1)  |
+|  | **[FUNCTORS_RUNTIME_INIT](/documentation/code/files/functors_8hpp/)** <br>Initial runtime estimate (s)  |
 
 ## Detailed Description
 
@@ -1155,4 +1155,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

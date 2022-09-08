@@ -17,8 +17,8 @@ Inherits from [Gambit::Scanner::Plugins::factoryBase](/documentation/code/classe
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1classfactory/#function-operator)**() |
-| | **[~classFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1classfactory/#function-classfactory)**() |
+| virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1classfactory/)**() |
+| | **[~classFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1classfactory/)**() |
 
 ## Additional inherited members
 
@@ -26,7 +26,7 @@ Inherits from [Gambit::Scanner::Plugins::factoryBase](/documentation/code/classe
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~factoryBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-factorybase)**() |
+| virtual | **[~factoryBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/)**() |
 
 
 ## Detailed Description
@@ -45,7 +45,7 @@ inline virtual void * operator()()
 ```
 
 
-**Reimplements**: [Gambit::Scanner::Plugins::factoryBase::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/#function-operator)
+**Reimplements**: [Gambit::Scanner::Plugins::factoryBase::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/)
 
 
 ### function ~classFactory
@@ -57,4 +57,4 @@ inline ~classFactory()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

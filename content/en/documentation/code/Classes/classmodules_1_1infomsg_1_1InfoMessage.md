@@ -19,8 +19,8 @@ Inherited by [modules.infomsg.ClassAlreadyDone](/documentation/code/classes/clas
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/#function-init)**(self self) |
-| def | **[printMessage](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/#function-printmessage)**(self self) |
+| def | **[__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/)**(self self) |
+| def | **[printMessage](/documentation/code/classes/classmodules_1_1infomsg_1_1infomessage/)**(self self) |
 
 ## Detailed Description
 
@@ -45,7 +45,7 @@ def __init__(
 ```
 
 
-**Reimplemented by**: [modules::infomsg::ParentClassIgnored::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1parentclassignored/#function-init), [modules::infomsg::ClassNotLoadable::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1classnotloadable/#function-init), [modules::infomsg::ClassAlreadyDone::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1classalreadydone/#function-init), [modules::infomsg::FunctionAlreadyDone::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1functionalreadydone/#function-init), [modules::infomsg::IgnoredFunction::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/#function-init), [modules::infomsg::IgnoredMemberFunction::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredmemberfunction/#function-init), [modules::infomsg::IgnoredMemberVariable::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredmembervariable/#function-init), [modules::infomsg::NoIncludeStatementGenerated::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1noincludestatementgenerated/#function-init), [modules::infomsg::TypeNotAccepted::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1typenotaccepted/#function-init), [modules::infomsg::NoFactoryFunctions::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1nofactoryfunctions/#function-init), [modules::infomsg::NoPointerCopyAndAssignmentFunctions::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1nopointercopyandassignmentfunctions/#function-init), [modules::infomsg::NoLoadedTypesEntry::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1noloadedtypesentry/#function-init)
+**Reimplemented by**: [modules::infomsg::ParentClassIgnored::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1parentclassignored/), [modules::infomsg::ClassNotLoadable::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1classnotloadable/), [modules::infomsg::ClassAlreadyDone::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1classalreadydone/), [modules::infomsg::FunctionAlreadyDone::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1functionalreadydone/), [modules::infomsg::IgnoredFunction::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredfunction/), [modules::infomsg::IgnoredMemberFunction::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredmemberfunction/), [modules::infomsg::IgnoredMemberVariable::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1ignoredmembervariable/), [modules::infomsg::NoIncludeStatementGenerated::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1noincludestatementgenerated/), [modules::infomsg::TypeNotAccepted::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1typenotaccepted/), [modules::infomsg::NoFactoryFunctions::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1nofactoryfunctions/), [modules::infomsg::NoPointerCopyAndAssignmentFunctions::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1nopointercopyandassignmentfunctions/), [modules::infomsg::NoLoadedTypesEntry::__init__](/documentation/code/classes/classmodules_1_1infomsg_1_1noloadedtypesentry/)
 
 
 ### function printMessage
@@ -68,4 +68,4 @@ tags done.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

@@ -20,24 +20,24 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/files/libfortran__1__0_8hpp/#function-be-function)**(runMe , void , (double(*)(int &), int &) , "runme_" , "runMe" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[BE_FUNCTION](/documentation/code/files/libfortran__1__0_8hpp/)**(runMe , void , (double(*)(int &), int &) , "runme_" , "runMe" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/files/libfortran__1__0_8hpp/#variable-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double int | **[average_](/documentation/code/files/libfortran__1__0_8hpp/#variable-average)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[double](/documentation/code/files/libfortran__1__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double int | **[average_](/documentation/code/files/libfortran__1__0_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/libfortran__1__0_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/libfortran__1__0_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/libfortran__1__0_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/libfortran__1__0_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/libfortran__1__0_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/libfortran__1__0_8hpp/)**  |
+|  | **[BACKENDLANG](/documentation/code/files/libfortran__1__0_8hpp/)**  |
+|  | **[VERSION](/documentation/code/files/libfortran__1__0_8hpp/)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/libfortran__1__0_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/libfortran__1__0_8hpp/)**  |
 
 ## Detailed Description
 
@@ -191,4 +191,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

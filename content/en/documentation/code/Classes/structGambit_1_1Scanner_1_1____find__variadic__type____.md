@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef int | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/#typedef-ret-type)**  |
-| typedef void | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/#typedef-func-type)**  |
+| typedef int | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/)**  |
+| typedef void | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/#variable-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1____find__variadic__type____/)**  |
 
 ## Detailed Description
 
@@ -61,4 +61,4 @@ static const bool value = false;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[examples/3bithit.cpp](/documentation/code/files/3bithit_8cpp/#file-3bithit-cpp)**  |
+| **[examples/3bithit.cpp](/documentation/code/files/3bithit_8cpp/)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

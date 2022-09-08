@@ -29,13 +29,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[get_available_likelihoods](/documentation/code/namespaces/namespacemontepythonlike/#function-get-available-likelihoods)**(backendDir backendDir) |
+| def | **[get_available_likelihoods](/documentation/code/namespaces/namespacemontepythonlike/)**(backendDir backendDir) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[basestring](/documentation/code/namespaces/namespacemontepythonlike/#variable-basestring)**  |
+| | **[basestring](/documentation/code/namespaces/namespacemontepythonlike/)**  |
 
 ## Detailed Description
 
@@ -97,4 +97,4 @@ basestring =  str;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef void(args...) | **[type](/documentation/code/classes/structgambit_1_1mult__types/#typedef-type)**  |
+| typedef void(args...) | **[type](/documentation/code/classes/structgambit_1_1mult__types/)**  |
 
 ## Detailed Description
 
@@ -35,4 +35,4 @@ typedef void Gambit::mult_types< args >::type(args...);
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

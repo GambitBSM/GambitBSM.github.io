@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef T | **[first_type](/documentation/code/classes/structgambit_1_1____is__pair____/#typedef-first-type)**  |
-| typedef T | **[second_type](/documentation/code/classes/structgambit_1_1____is__pair____/#typedef-second-type)**  |
+| typedef T | **[first_type](/documentation/code/classes/structgambit_1_1____is__pair____/)**  |
+| typedef T | **[second_type](/documentation/code/classes/structgambit_1_1____is__pair____/)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__pair____/#variable-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__pair____/)**  |
 
 ## Detailed Description
 
@@ -58,4 +58,4 @@ static const bool value = false;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

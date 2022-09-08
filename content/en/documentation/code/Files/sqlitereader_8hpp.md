@@ -26,8 +26,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[__sqlite_reader_hpp__](/documentation/code/files/sqlitereader_8hpp/#define-sqlite-reader-hpp)**  |
-|  | **[DECLARE_RETRIEVE](/documentation/code/files/sqlitereader_8hpp/#define-declare-retrieve)**(r, data, i, elem)  |
+|  | **[__sqlite_reader_hpp__](/documentation/code/files/sqlitereader_8hpp/)**  |
+|  | **[DECLARE_RETRIEVE](/documentation/code/files/sqlitereader_8hpp/)**(r, data, i, elem)  |
 
 ## Detailed Description
 
@@ -246,4 +246,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

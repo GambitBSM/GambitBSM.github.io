@@ -17,9 +17,9 @@ Inherits from [Gambit::Scanner::Plugins::VersionCompareBase](/documentation/code
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[VersionCompare](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/#function-versioncompare)**(const std::string & version) |
-| virtual bool | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/#function-operator)**(const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plugin) |
-| | **[~VersionCompare](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/#function-versioncompare)**() |
+| | **[VersionCompare](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/)**(const std::string & version) |
+| virtual bool | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/)**(const [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & plugin) |
+| | **[~VersionCompare](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/)**() |
 
 ## Additional inherited members
 
@@ -27,10 +27,10 @@ Inherits from [Gambit::Scanner::Plugins::VersionCompareBase](/documentation/code
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[VersionCompareBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-versioncomparebase)**() |
-| bool | **[isEmpty](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-isempty)**() const |
-| void | **[setEmpty](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-setempty)**(bool in) |
-| virtual | **[~VersionCompareBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-versioncomparebase)**() |
+| | **[VersionCompareBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)**() |
+| bool | **[isEmpty](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)**() const |
+| void | **[setEmpty](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)**(bool in) |
+| virtual | **[~VersionCompareBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)**() |
 
 
 ## Public Functions Documentation
@@ -53,7 +53,7 @@ virtual bool operator()(
 ```
 
 
-**Reimplements**: [Gambit::Scanner::Plugins::VersionCompareBase::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/#function-operator)
+**Reimplements**: [Gambit::Scanner::Plugins::VersionCompareBase::operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)
 
 
 ### function ~VersionCompare
@@ -65,4 +65,4 @@ virtual bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

@@ -18,45 +18,45 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-logmaster)**()<br>Default constructor.  |
-| | **[LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-logmaster)**(std::map< std::set< int >, [BaseLogger](/documentation/code/classes/classgambit_1_1logging_1_1baselogger/) * > & loggersIN)<br>Alternate constructor.  |
-| | **[~LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-logmaster)**() |
-| void | **[init_memory](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-init-memory)**()<br>Initialise dynamic memory required for thread safety.  |
-| void | **[initialise](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-initialise)**(std::vector< std::pair< std::set< std::string >, std::string > > & loggerinfo)<br>Function to construct loggers according to blueprint.  |
-| void | **[initialise](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-initialise)**(std::map< std::set< std::string >, std::string > & loggerinfo) |
-| void | **[initialise](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-initialise)**(std::map< std::string, std::string > & loggerinfo) |
-| void | **[disable](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-disable)**() |
-| bool | **[disabled](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-disabled)**() |
-| void | **[enable](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-enable)**() |
-| void | **[emit_backlog](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-emit-backlog)**(bool verbose)<br>Print the backlogs to the default log file.  |
-| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-input)**(const std::string & in)<br>Functions for stream input (actual stream operators which use these are defined in [logger.cpp]())  |
-| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-input)**(const LogTag & tag)<br>Handle LogTag input.  |
-| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-input)**(const [endofmessage](/documentation/code/classes/structgambit_1_1logging_1_1endofmessage/) & )<br>Handle end of message character.  |
-| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-input)**(const manip1)<br>Handle various stream manipulators.  |
-| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-input)**(const manip2) |
-| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-input)**(const manip3) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::string & message)<br>Main logging function (user-friendly overloaded version)  |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::string & message, LogTag tag1) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::string & message, LogTag tag1, LogTag tag2) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::string & message, LogTag tag1, LogTag tag2, LogTag tag3) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::string & message, LogTag tag1, LogTag tag2, LogTag tag3, LogTag tag4) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::string & message, LogTag tag1, LogTag tag2, LogTag tag3, LogTag tag4, LogTag tag5) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::ostringstream & message)<br>stringstream versions....  |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::ostringstream & message, LogTag tag1) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::ostringstream & message, LogTag tag1, LogTag tag2) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::ostringstream & message, LogTag tag1, LogTag tag2, LogTag tag3) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::ostringstream & message, LogTag tag1, LogTag tag2, LogTag tag3, LogTag tag4) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::ostringstream & message, LogTag tag1, LogTag tag2, LogTag tag3, LogTag tag4, LogTag tag5) |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::string & message, std::set< LogTag > & tags)<br>Internal version of main logging function.  |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::string & message, std::set< int > & tags)<br>Serious version of main logging function.  |
-| void | **[finalsend](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-finalsend)**(const [Message](/documentation/code/classes/structgambit_1_1logging_1_1message/) & mail)<br>Version of send function used by buffer dump; skips all the tag modification stuff.  |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::ostringstream & message, std::set< LogTag > & tags)<br>stringstream overloads...  |
-| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-send)**(const std::ostringstream & message, std::set< int > & tags) |
-| void | **[entering_module](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-entering-module)**(int i)<br>Set the internal variables tracking which module and/or backend is currently running.  |
-| void | **[leaving_module](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-leaving-module)**() |
-| void | **[entering_backend](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-entering-backend)**(int i) |
-| void | **[leaving_backend](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-leaving-backend)**() |
-| void | **[set_log_debug_messages](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/#function-set-log-debug-messages)**(bool flag)<br>Choose whether "Debug" tagged log messages will be ignored (i.e. not logged)  |
+| | **[LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**()<br>Default constructor.  |
+| | **[LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(std::map< std::set< int >, [BaseLogger](/documentation/code/classes/classgambit_1_1logging_1_1baselogger/) * > & loggersIN)<br>Alternate constructor.  |
+| | **[~LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**() |
+| void | **[init_memory](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**()<br>Initialise dynamic memory required for thread safety.  |
+| void | **[initialise](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(std::vector< std::pair< std::set< std::string >, std::string > > & loggerinfo)<br>Function to construct loggers according to blueprint.  |
+| void | **[initialise](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(std::map< std::set< std::string >, std::string > & loggerinfo) |
+| void | **[initialise](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(std::map< std::string, std::string > & loggerinfo) |
+| void | **[disable](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**() |
+| bool | **[disabled](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**() |
+| void | **[enable](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**() |
+| void | **[emit_backlog](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(bool verbose)<br>Print the backlogs to the default log file.  |
+| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & in)<br>Functions for stream input (actual stream operators which use these are defined in [logger.cpp]())  |
+| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const LogTag & tag)<br>Handle LogTag input.  |
+| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const [endofmessage](/documentation/code/classes/structgambit_1_1logging_1_1endofmessage/) & )<br>Handle end of message character.  |
+| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const manip1)<br>Handle various stream manipulators.  |
+| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const manip2) |
+| void | **[input](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const manip3) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & message)<br>Main logging function (user-friendly overloaded version)  |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & message, LogTag tag1) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & message, LogTag tag1, LogTag tag2) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & message, LogTag tag1, LogTag tag2, LogTag tag3) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & message, LogTag tag1, LogTag tag2, LogTag tag3, LogTag tag4) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & message, LogTag tag1, LogTag tag2, LogTag tag3, LogTag tag4, LogTag tag5) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::ostringstream & message)<br>stringstream versions....  |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::ostringstream & message, LogTag tag1) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::ostringstream & message, LogTag tag1, LogTag tag2) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::ostringstream & message, LogTag tag1, LogTag tag2, LogTag tag3) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::ostringstream & message, LogTag tag1, LogTag tag2, LogTag tag3, LogTag tag4) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::ostringstream & message, LogTag tag1, LogTag tag2, LogTag tag3, LogTag tag4, LogTag tag5) |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & message, std::set< LogTag > & tags)<br>Internal version of main logging function.  |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::string & message, std::set< int > & tags)<br>Serious version of main logging function.  |
+| void | **[finalsend](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const [Message](/documentation/code/classes/structgambit_1_1logging_1_1message/) & mail)<br>Version of send function used by buffer dump; skips all the tag modification stuff.  |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::ostringstream & message, std::set< LogTag > & tags)<br>stringstream overloads...  |
+| void | **[send](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(const std::ostringstream & message, std::set< int > & tags) |
+| void | **[entering_module](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(int i)<br>Set the internal variables tracking which module and/or backend is currently running.  |
+| void | **[leaving_module](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**() |
+| void | **[entering_backend](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(int i) |
+| void | **[leaving_backend](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**() |
+| void | **[set_log_debug_messages](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/)**(bool flag)<br>Choose whether "Debug" tagged log messages will be ignored (i.e. not logged)  |
 
 ## Detailed Description
 
@@ -474,4 +474,4 @@ Setters for behaviour options Must be used before "initialise" in order to have 
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

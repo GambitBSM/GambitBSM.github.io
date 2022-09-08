@@ -13,16 +13,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[import_slha_string](/documentation/code/namespaces/namespacexsecbe__gambit/#function-import-slha-string)**(slha_string slha_string) |
-| def | **[set_parameters](/documentation/code/namespaces/namespacexsecbe__gambit/#function-set-parameters)**(params params) |
-| def | **[get_xsection](/documentation/code/namespaces/namespacexsecbe__gambit/#function-get-xsection)**(proc proc) |
+| def | **[import_slha_string](/documentation/code/namespaces/namespacexsecbe__gambit/)**(slha_string slha_string) |
+| def | **[set_parameters](/documentation/code/namespaces/namespacexsecbe__gambit/)**(params params) |
+| def | **[get_xsection](/documentation/code/namespaces/namespacexsecbe__gambit/)**(proc proc) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[prefix](/documentation/code/namespaces/namespacexsecbe__gambit/#variable-prefix)**  |
-| | **[data_dir](/documentation/code/namespaces/namespacexsecbe__gambit/#variable-data-dir)**  |
+| string | **[prefix](/documentation/code/namespaces/namespacexsecbe__gambit/)**  |
+| | **[data_dir](/documentation/code/namespaces/namespacexsecbe__gambit/)**  |
 
 
 ## Functions Documentation
@@ -76,4 +76,4 @@ data_dir;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

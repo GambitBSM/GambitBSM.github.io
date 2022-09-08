@@ -13,21 +13,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/#function-if)**(scan_level ) |
-| | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/#function-if)**(runOptions-> hasKey"debug_SLHA_filenames") |
-| else | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/#function-if)**(ModelInUse("CMSSM") and runOptions->getValueOrDef< bool >(false, "use_DS_isasugra") )<br>Option use_DS_isasugra<bool>: Use DS internal isasugra for parameter running (false)  |
-| else | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/#function-if)**(ModelInUse("MSSM63atQ")||ModelInUse("CMSSM") ) |
-| | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/#function-if)**((ModelInUse("MSSM63atQ")||ModelInUse("CMSSM")) &&! mssm_result) |
+| | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/)**(scan_level ) |
+| | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/)**(runOptions-> hasKey"debug_SLHA_filenames") |
+| else | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/)**(ModelInUse("CMSSM") and runOptions->getValueOrDef< bool >(false, "use_DS_isasugra") )<br>Option use_DS_isasugra<bool>: Use DS internal isasugra for parameter running (false)  |
+| else | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/)**(ModelInUse("MSSM63atQ")||ModelInUse("CMSSM") ) |
+| | **[if](/documentation/code/files/darksusy__5__1__3_8cpp/)**((ModelInUse("MSSM63atQ")||ModelInUse("CMSSM")) &&! mssm_result) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_NAMESPACE](/documentation/code/files/darksusy__5__1__3_8cpp/#variable-be-namespace)**  |
-| std::vector< double > | **[DSparticle_mass](/documentation/code/files/darksusy__5__1__3_8cpp/#variable-dsparticle-mass)**  |
-| std::vector< double > | **[GAMBITparticle_mass](/documentation/code/files/darksusy__5__1__3_8cpp/#variable-gambitparticle-mass)**  |
-| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/#define-end-be-namespace) | **[BE_INI_FUNCTION](/documentation/code/files/darksusy__5__1__3_8cpp/#variable-be-ini-function)**  |
-| bool | **[mssm_result](/documentation/code/files/darksusy__5__1__3_8cpp/#variable-mssm-result)**  |
+| | **[BE_NAMESPACE](/documentation/code/files/darksusy__5__1__3_8cpp/)**  |
+| std::vector< double > | **[DSparticle_mass](/documentation/code/files/darksusy__5__1__3_8cpp/)**  |
+| std::vector< double > | **[GAMBITparticle_mass](/documentation/code/files/darksusy__5__1__3_8cpp/)**  |
+| [END_BE_NAMESPACE](/documentation/code/files/common__macros_8hpp/) | **[BE_INI_FUNCTION](/documentation/code/files/darksusy__5__1__3_8cpp/)**  |
+| bool | **[mssm_result](/documentation/code/files/darksusy__5__1__3_8cpp/)**  |
 
 ## Detailed Description
 
@@ -1136,4 +1136,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:24 +0000

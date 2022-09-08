@@ -27,8 +27,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PDB](/documentation/code/files/subspectrum_8hpp/#define-pdb)**  |
-|  | **[vfcn_error](/documentation/code/files/subspectrum_8hpp/#define-vfcn-error)**(local_info) <br>Helper macro for throwing errors in base class versions of virtual functions.  |
+|  | **[PDB](/documentation/code/files/subspectrum_8hpp/)**  |
+|  | **[vfcn_error](/documentation/code/files/subspectrum_8hpp/)**(local_info) <br>Helper macro for throwing errors in base class versions of virtual functions.  |
 
 ## Detailed Description
 
@@ -367,4 +367,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

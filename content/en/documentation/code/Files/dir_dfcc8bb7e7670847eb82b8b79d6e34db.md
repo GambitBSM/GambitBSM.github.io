@@ -13,7 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
-| **[src/ObjectivesBit.cpp](/documentation/code/files/objectivesbit_8cpp/#file-objectivesbit-cpp)**  |
+| **[src/ObjectivesBit.cpp](/documentation/code/files/objectivesbit_8cpp/)**  |
 
 
 
@@ -22,4 +22,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

@@ -15,17 +15,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/#function-vbidtrip)**() |
-| | **[VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/#function-vbidtrip)**(const int v, const int i, const int t) |
-| | **[VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/#function-vbidtrip)**(const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) p, const int t) |
+| | **[VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/)**() |
+| | **[VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/)**(const int v, const int i, const int t) |
+| | **[VBIDtrip](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/)**(const [VBIDpair](/documentation/code/classes/structgambit_1_1printers_1_1vbidpair/) p, const int t) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[vertexID](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/#variable-vertexid)**  |
-| int | **[index](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/#variable-index)**  |
-| int | **[first_tag](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/#variable-first-tag)**  |
+| int | **[vertexID](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/)**  |
+| int | **[index](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/)**  |
+| int | **[first_tag](/documentation/code/classes/structgambit_1_1printers_1_1vbidtrip/)**  |
 
 ## Public Functions Documentation
 
@@ -82,4 +82,4 @@ int first_tag;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

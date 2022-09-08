@@ -17,13 +17,13 @@ Inherits from [modules.exceptions.Error](/documentation/code/classes/classmodule
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[__init__](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/#function-init)**(self self, msg msg) |
+| def | **[__init__](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/)**(self self, msg msg) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[msg](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/#variable-msg)**  |
+| | **[msg](/documentation/code/classes/classmodules_1_1exceptions_1_1returnerror/)**  |
 
 ## Detailed Description
 
@@ -64,4 +64,4 @@ msg;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

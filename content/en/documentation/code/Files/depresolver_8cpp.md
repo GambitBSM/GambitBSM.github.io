@@ -27,9 +27,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[OBSLIKE_VERTEXID](/documentation/code/files/depresolver_8cpp/#define-obslike-vertexid)**  |
-|  | **[NORMAL_DEPENDENCY](/documentation/code/files/depresolver_8cpp/#define-normal-dependency)**  |
-|  | **[LOOP_MANAGER_DEPENDENCY](/documentation/code/files/depresolver_8cpp/#define-loop-manager-dependency)**  |
+|  | **[OBSLIKE_VERTEXID](/documentation/code/files/depresolver_8cpp/)**  |
+|  | **[NORMAL_DEPENDENCY](/documentation/code/files/depresolver_8cpp/)**  |
+|  | **[LOOP_MANAGER_DEPENDENCY](/documentation/code/files/depresolver_8cpp/)**  |
 
 ## Detailed Description
 
@@ -2572,4 +2572,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

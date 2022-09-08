@@ -19,7 +19,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[__mssmcontents_hpp__](/documentation/code/files/models_2src_2spectrumcontents_2mssm_8cpp/#define-mssmcontents-hpp)**  |
+|  | **[__mssmcontents_hpp__](/documentation/code/files/models_2src_2spectrumcontents_2mssm_8cpp/)**  |
 
 ## Detailed Description
 
@@ -169,4 +169,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

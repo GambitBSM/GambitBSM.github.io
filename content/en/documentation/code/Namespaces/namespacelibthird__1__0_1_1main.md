@@ -13,20 +13,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[initialize](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#function-initialize)**(a a) |
-| def | **[someFunction](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#function-somefunction)**() |
-| def | **[returnResult](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#function-returnresult)**() |
+| def | **[initialize](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**(a a) |
+| def | **[someFunction](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**() |
+| def | **[returnResult](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[array_length](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#variable-array-length)**  |
-| int | **[someInt](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#variable-someint)**  |
-| int | **[someDouble](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#variable-somedouble)**  |
-| list | **[someVector](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#variable-somevector)**  |
-| bool | **[isInitialized](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#variable-isinitialized)**  |
-| string | **[prefix](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/#variable-prefix)**  |
+| int | **[array_length](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**  |
+| int | **[someInt](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**  |
+| int | **[someDouble](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**  |
+| list | **[someVector](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**  |
+| bool | **[isInitialized](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**  |
+| string | **[prefix](/documentation/code/namespaces/namespacelibthird__1__0_1_1main/)**  |
 
 
 ## Functions Documentation
@@ -104,4 +104,4 @@ string prefix =  "libthird 1.0: ";
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

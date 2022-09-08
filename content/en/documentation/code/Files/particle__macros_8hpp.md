@@ -13,13 +13,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[add_particle](/documentation/code/files/particle__macros_8hpp/#define-add-particle)**(LONGNAME, INTPAIR, SPINX2, CHARGEX3, COLOR)  |
-|  | **[add_SM_particle](/documentation/code/files/particle__macros_8hpp/#define-add-sm-particle)**(LONGNAME, INTPAIR, SPINX2, CHARGEX3, COLOR)  |
-|  | **[add_generic_particle](/documentation/code/files/particle__macros_8hpp/#define-add-generic-particle)**(LONGNAME, INTPAIR, SPINX2, CHARGEX3, COLOR)  |
-|  | **[ADD_PARTICLE_I](/documentation/code/files/particle__macros_8hpp/#define-add-particle-i)**(r, DATA, I, ELEM)  |
-|  | **[ADD_SM_PARTICLE_I](/documentation/code/files/particle__macros_8hpp/#define-add-sm-particle-i)**(r, DATA, I, ELEM)  |
-|  | **[add_particle_set](/documentation/code/files/particle__macros_8hpp/#define-add-particle-set)**(SHORTNAME, __TUP, SPINX2, CHARGEX3, COLOR)  |
-|  | **[add_SM_particle_set](/documentation/code/files/particle__macros_8hpp/#define-add-sm-particle-set)**(SHORTNAME, __TUP, SPINX2, CHARGEX3, COLOR)  |
+|  | **[add_particle](/documentation/code/files/particle__macros_8hpp/)**(LONGNAME, INTPAIR, SPINX2, CHARGEX3, COLOR)  |
+|  | **[add_SM_particle](/documentation/code/files/particle__macros_8hpp/)**(LONGNAME, INTPAIR, SPINX2, CHARGEX3, COLOR)  |
+|  | **[add_generic_particle](/documentation/code/files/particle__macros_8hpp/)**(LONGNAME, INTPAIR, SPINX2, CHARGEX3, COLOR)  |
+|  | **[ADD_PARTICLE_I](/documentation/code/files/particle__macros_8hpp/)**(r, DATA, I, ELEM)  |
+|  | **[ADD_SM_PARTICLE_I](/documentation/code/files/particle__macros_8hpp/)**(r, DATA, I, ELEM)  |
+|  | **[add_particle_set](/documentation/code/files/particle__macros_8hpp/)**(SHORTNAME, __TUP, SPINX2, CHARGEX3, COLOR)  |
+|  | **[add_SM_particle_set](/documentation/code/files/particle__macros_8hpp/)**(SHORTNAME, __TUP, SPINX2, CHARGEX3, COLOR)  |
 
 ## Detailed Description
 
@@ -185,4 +185,4 @@ BOOST_PP_SEQ_FOR_EACH_I(ADD_SM_PARTICLE_I, (SHORTNAME, SPINX2, CHARGEX3, COLOR),
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

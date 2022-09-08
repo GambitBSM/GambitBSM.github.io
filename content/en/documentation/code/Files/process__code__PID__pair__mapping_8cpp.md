@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/process__code__pid__pair__mapping_8cpp/#define-debug-prefix)**  |
+|  | **[DEBUG_PREFIX](/documentation/code/files/process__code__pid__pair__mapping_8cpp/)**  |
 
 ## Detailed Description
 
@@ -161,4 +161,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

@@ -15,17 +15,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/#function-asciitablereader)**(std::string filename) |
-| | **[ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/#function-asciitablereader)**() |
-| | **[~ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/#function-asciitablereader)**() |
-| int | **[read](/documentation/code/classes/classgambit_1_1asciitablereader/#function-read)**(std::string filename) |
-| void | **[setcolnames](/documentation/code/classes/classgambit_1_1asciitablereader/#function-setcolnames)**(std::vector< std::string > names) |
-| template <typename... Args\> <br>void | **[setcolnames](/documentation/code/classes/classgambit_1_1asciitablereader/#function-setcolnames)**(std::string name, Args... args) |
-| template <typename... Args\> <br>void | **[setcolnames](/documentation/code/classes/classgambit_1_1asciitablereader/#function-setcolnames)**(std::vector< std::string > vec, std::string name, Args... args) |
-| const std::vector< double > & | **[operator[]](/documentation/code/classes/classgambit_1_1asciitablereader/#function-operator)**(int i) |
-| const std::vector< double > & | **[operator[]](/documentation/code/classes/classgambit_1_1asciitablereader/#function-operator)**(std::string name) |
-| int | **[getncol](/documentation/code/classes/classgambit_1_1asciitablereader/#function-getncol)**() |
-| int | **[getnrow](/documentation/code/classes/classgambit_1_1asciitablereader/#function-getnrow)**() |
+| | **[ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/)**(std::string filename) |
+| | **[ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/)**() |
+| | **[~ASCIItableReader](/documentation/code/classes/classgambit_1_1asciitablereader/)**() |
+| int | **[read](/documentation/code/classes/classgambit_1_1asciitablereader/)**(std::string filename) |
+| void | **[setcolnames](/documentation/code/classes/classgambit_1_1asciitablereader/)**(std::vector< std::string > names) |
+| template <typename... Args\> <br>void | **[setcolnames](/documentation/code/classes/classgambit_1_1asciitablereader/)**(std::string name, Args... args) |
+| template <typename... Args\> <br>void | **[setcolnames](/documentation/code/classes/classgambit_1_1asciitablereader/)**(std::vector< std::string > vec, std::string name, Args... args) |
+| const std::vector< double > & | **[operator[]](/documentation/code/classes/classgambit_1_1asciitablereader/)**(int i) |
+| const std::vector< double > & | **[operator[]](/documentation/code/classes/classgambit_1_1asciitablereader/)**(std::string name) |
+| int | **[getncol](/documentation/code/classes/classgambit_1_1asciitablereader/)**() |
+| int | **[getnrow](/documentation/code/classes/classgambit_1_1asciitablereader/)**() |
 
 ## Public Functions Documentation
 
@@ -127,4 +127,4 @@ inline int getnrow()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

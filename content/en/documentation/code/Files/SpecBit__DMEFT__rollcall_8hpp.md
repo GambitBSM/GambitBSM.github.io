@@ -13,9 +13,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CAPABILITY](/documentation/code/files/specbit__dmeft__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/specbit__dmeft__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/specbit__dmeft__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__dmeft__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/specbit__dmeft__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/specbit__dmeft__rollcall_8hpp/)**  |
 
 ## Detailed Description
 
@@ -24,7 +24,7 @@ description: "[No description available]"
 
 **Date**: 12:32PM on October 15, 2019
 
-Rollcall declarations for routines declared in [SpecBit_DMEFT.cpp](/documentation/code/files/specbit__dmeft_8cpp/#file-specbit-dmeft-cpp).
+Rollcall declarations for routines declared in [SpecBit_DMEFT.cpp](/documentation/code/files/specbit__dmeft_8cpp/).
 
 Authors (add name and date if you modify): 
 
@@ -108,4 +108,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

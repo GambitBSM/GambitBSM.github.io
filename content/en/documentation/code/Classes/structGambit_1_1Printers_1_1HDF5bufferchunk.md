@@ -15,16 +15,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const std::size_t | **[SIZE](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-size)**  |
-| const std::size_t | **[NBUFFERS](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-nbuffers)**  |
-| std::size_t | **[used_size](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-used-size)**  |
-| std::size_t | **[used_nbuffers](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-used-nbuffers)**  |
-| int[NBUFFERS] | **[name_id](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-name-id)**  |
-| unsigned long long[SIZE] | **[pointIDs](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-pointids)**  |
-| unsigned int[SIZE] | **[ranks](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-ranks)**  |
-| double[NBUFFERS][SIZE] | **[values](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-values)**  |
-| long long[NBUFFERS][SIZE] | **[values_int](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-values-int)**  |
-| int[NBUFFERS][SIZE] | **[valid](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/#variable-valid)**  |
+| const std::size_t | **[SIZE](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| const std::size_t | **[NBUFFERS](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| std::size_t | **[used_size](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| std::size_t | **[used_nbuffers](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| int[NBUFFERS] | **[name_id](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| unsigned long long[SIZE] | **[pointIDs](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| unsigned int[SIZE] | **[ranks](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| double[NBUFFERS][SIZE] | **[values](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| long long[NBUFFERS][SIZE] | **[values_int](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
+| int[NBUFFERS][SIZE] | **[valid](/documentation/code/classes/structgambit_1_1printers_1_1hdf5bufferchunk/)**  |
 
 ## Public Attributes Documentation
 
@@ -100,4 +100,4 @@ int[NBUFFERS][SIZE] valid;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

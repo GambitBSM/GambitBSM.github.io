@@ -14,12 +14,12 @@ A struct to contain parameters for the GSL optimiser target function.
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[lambda](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-lambda)**  |
-| AnalysisDataPointers | **[adata_ptrs_original](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-adata-ptrs-original)**  |
-| std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[skip_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-skip-analyses)**  |
-| bool | **[use_covar](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-covar)**  |
-| bool | **[use_marg](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-marg)**  |
-| bool | **[combine_nocovar_SRs](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-combine-nocovar-srs)**  |
+| double | **[lambda](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/)**  |
+| AnalysisDataPointers | **[adata_ptrs_original](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/)**  |
+| std::vector< [str](/documentation/code/namespaces/namespacegambit/) > | **[skip_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/)**  |
+| bool | **[use_covar](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/)**  |
+| bool | **[use_marg](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/)**  |
+| bool | **[combine_nocovar_SRs](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/)**  |
 
 ## Public Attributes Documentation
 
@@ -67,4 +67,4 @@ bool combine_nocovar_SRs;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

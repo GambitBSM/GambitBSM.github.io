@@ -13,38 +13,38 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/#function-be-conv-function)**(plc_loglike_highl_TTTEEE_2015 , double , (double *) , "plc_loglike_highl_TTTEEE_2015" , (cosmo_nuisance_Planck_TTTEEE) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/#function-be-conv-function)**(plc_loglike_highl_TTTEEE_lite_2015 , double , (double *) , "plc_loglike_highl_TTTEEE_lite_2015" , (cosmo_nuisance_Planck_lite) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/#function-be-conv-function)**(plc_loglike_lowl_TEB_2015 , double , (double *) , "plc_loglike_lowl_TEB_2015" , (cosmo_nuisance_Planck_TTTEEE, cosmo_nuisance_Planck_TT, cosmo_nuisance_Planck_lite) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/#function-be-conv-function)**(plc_loglike_lensing_2015 , double , (double *) , "plc_loglike_lensing_2015" , (cosmo_nuisance_Planck_TTTEEE, cosmo_nuisance_Planck_TT, cosmo_nuisance_Planck_lite) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/#function-be-conv-function)**(plc_loglike_highl_TT_2018 , double , (double *) , "plc_loglike_highl_TT_2018" , (cosmo_nuisance_Planck_TT) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double cosmo_nuisance_Planck_lite | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/#function-be-conv-function)**(plc_loglike_highl_TT_lite_2018 , double , (double *) , "plc_loglike_highl_TT_lite_2018" , (cosmo_nuisance_Planck_lite) ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/#function-be-conv-function)**(plc_loglike_lowl_EE_2018 , double , (double *) , "plc_loglike_lowl_EE_2018" , (cosmo_nuisance_Planck_TTTEEE, cosmo_nuisance_Planck_TT, cosmo_nuisance_Planck_lite) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/)**(plc_loglike_highl_TTTEEE_2015 , double , (double *) , "plc_loglike_highl_TTTEEE_2015" , (cosmo_nuisance_Planck_TTTEEE) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/)**(plc_loglike_highl_TTTEEE_lite_2015 , double , (double *) , "plc_loglike_highl_TTTEEE_lite_2015" , (cosmo_nuisance_Planck_lite) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/)**(plc_loglike_lowl_TEB_2015 , double , (double *) , "plc_loglike_lowl_TEB_2015" , (cosmo_nuisance_Planck_TTTEEE, cosmo_nuisance_Planck_TT, cosmo_nuisance_Planck_lite) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/)**(plc_loglike_lensing_2015 , double , (double *) , "plc_loglike_lensing_2015" , (cosmo_nuisance_Planck_TTTEEE, cosmo_nuisance_Planck_TT, cosmo_nuisance_Planck_lite) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/)**(plc_loglike_highl_TT_2018 , double , (double *) , "plc_loglike_highl_TT_2018" , (cosmo_nuisance_Planck_TT) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double cosmo_nuisance_Planck_lite | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/)**(plc_loglike_highl_TT_lite_2018 , double , (double *) , "plc_loglike_highl_TT_lite_2018" , (cosmo_nuisance_Planck_lite) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite | **[BE_CONV_FUNCTION](/documentation/code/files/plc__3__0_8hpp/)**(plc_loglike_lowl_EE_2018 , double , (double *) , "plc_loglike_lowl_EE_2018" , (cosmo_nuisance_Planck_TTTEEE, cosmo_nuisance_Planck_TT, cosmo_nuisance_Planck_lite) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[double](/documentation/code/files/plc__3__0_8hpp/#variable-double)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double | **[plc_loglike_highl_TT_2015](/documentation/code/files/plc__3__0_8hpp/#variable-plc-loglike-highl-tt-2015)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double | **[plc_loglike_highl_TT_lite_2015](/documentation/code/files/plc__3__0_8hpp/#variable-plc-loglike-highl-tt-lite-2015)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double | **[plc_loglike_lowl_TT_2015](/documentation/code/files/plc__3__0_8hpp/#variable-plc-loglike-lowl-tt-2015)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double | **[cosmo_nuisance_Planck_TTTEEE](/documentation/code/files/plc__3__0_8hpp/#variable-cosmo-nuisance-planck-ttteee)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double | **[cosmo_nuisance_Planck_TT](/documentation/code/files/plc__3__0_8hpp/#variable-cosmo-nuisance-planck-tt)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double | **[plc_loglike_highl_TTTEEE_2018](/documentation/code/files/plc__3__0_8hpp/#variable-plc-loglike-highl-ttteee-2018)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double | **[plc_loglike_highl_TTTEEE_lite_2018](/documentation/code/files/plc__3__0_8hpp/#variable-plc-loglike-highl-ttteee-lite-2018)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double cosmo_nuisance_Planck_lite double | **[plc_loglike_lowl_TT_2018](/documentation/code/files/plc__3__0_8hpp/#variable-plc-loglike-lowl-tt-2018)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double | **[plc_loglike_lensing_2018](/documentation/code/files/plc__3__0_8hpp/#variable-plc-loglike-lensing-2018)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) | **[double](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double | **[plc_loglike_highl_TT_2015](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double | **[plc_loglike_highl_TT_lite_2015](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double | **[plc_loglike_lowl_TT_2015](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double | **[cosmo_nuisance_Planck_TTTEEE](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double | **[cosmo_nuisance_Planck_TT](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double | **[plc_loglike_highl_TTTEEE_2018](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double | **[plc_loglike_highl_TTTEEE_lite_2018](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double cosmo_nuisance_Planck_lite double | **[plc_loglike_lowl_TT_2018](/documentation/code/files/plc__3__0_8hpp/)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/) double cosmo_nuisance_Planck_TT double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_TTTEEE double cosmo_nuisance_Planck_lite double cosmo_nuisance_Planck_lite double | **[plc_loglike_lensing_2018](/documentation/code/files/plc__3__0_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/plc__3__0_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/plc__3__0_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/plc__3__0_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/plc__3__0_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/plc__3__0_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/plc__3__0_8hpp/)**  |
+|  | **[BACKENDLANG](/documentation/code/files/plc__3__0_8hpp/)**  |
+|  | **[VERSION](/documentation/code/files/plc__3__0_8hpp/)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/plc__3__0_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/plc__3__0_8hpp/)**  |
 
 ## Detailed Description
 
@@ -351,4 +351,4 @@ BE_CONV_FUNCTION(plc_loglike_lensing_marged_2018,double,(double*),"plc_loglike_l
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

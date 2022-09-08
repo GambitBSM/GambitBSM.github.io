@@ -18,26 +18,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/#function-fcomplext)**()<br>Default constructor.  |
-| | **[~FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/#function-fcomplext)**()<br>Default destructor.  |
-| template <typename T2 \> <br>| **[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/#function-fcomplext)**(const [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)< T2 > & in)<br>Default copy constructor.  |
-| | **[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/#function-fcomplext)**(const std::complex< T > & in)<br>Constructor from a C++ complex type.  |
-| | **[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/#function-fcomplext)**(const T & in)<br>Constructor from a single instance of some type.  |
-| template <typename T2 \> <br>[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) & | **[operator=](/documentation/code/classes/classgambit_1_1fcomplext/#function-operator)**(const [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)< T2 > & in)<br>Assignment from another Fortran complex type.  |
-| [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) & | **[operator=](/documentation/code/classes/classgambit_1_1fcomplext/#function-operator)**(const std::complex< T > & in)<br>Assignment from a C++ complex type.  |
-| [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) & | **[operator=](/documentation/code/classes/classgambit_1_1fcomplext/#function-operator)**(const T & in)<br>Assignment from a single instance of some type.  |
-| template <typename T2 \> <br>| **[operator FcomplexT< T2 >](/documentation/code/classes/classgambit_1_1fcomplext/#function-operator-fcomplext-t2)**()<br>Type casting to another Fortran complex type.  |
-| | **[operator std::complex< T >](/documentation/code/classes/classgambit_1_1fcomplext/#function-operator-stdcomplex-t)**()<br>Type casting to a C++ complex type.  |
-| T | **[abs](/documentation/code/classes/classgambit_1_1fcomplext/#function-abs)**() const |
-| template <typename T2 \> <br>[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) | **[operator*](/documentation/code/classes/classgambit_1_1fcomplext/#function-operator)**(const [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)< T2 > & in) |
-| template <typename T2 \> <br>[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) | **[operator/](/documentation/code/classes/classgambit_1_1fcomplext/#function-operator)**(const [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)< T2 > & in) |
+| | **[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)**()<br>Default constructor.  |
+| | **[~FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)**()<br>Default destructor.  |
+| template <typename T2 \> <br>| **[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)**(const [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)< T2 > & in)<br>Default copy constructor.  |
+| | **[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)**(const std::complex< T > & in)<br>Constructor from a C++ complex type.  |
+| | **[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)**(const T & in)<br>Constructor from a single instance of some type.  |
+| template <typename T2 \> <br>[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) & | **[operator=](/documentation/code/classes/classgambit_1_1fcomplext/)**(const [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)< T2 > & in)<br>Assignment from another Fortran complex type.  |
+| [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) & | **[operator=](/documentation/code/classes/classgambit_1_1fcomplext/)**(const std::complex< T > & in)<br>Assignment from a C++ complex type.  |
+| [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) & | **[operator=](/documentation/code/classes/classgambit_1_1fcomplext/)**(const T & in)<br>Assignment from a single instance of some type.  |
+| template <typename T2 \> <br>| **[operator FcomplexT< T2 >](/documentation/code/classes/classgambit_1_1fcomplext/)**()<br>Type casting to another Fortran complex type.  |
+| | **[operator std::complex< T >](/documentation/code/classes/classgambit_1_1fcomplext/)**()<br>Type casting to a C++ complex type.  |
+| T | **[abs](/documentation/code/classes/classgambit_1_1fcomplext/)**() const |
+| template <typename T2 \> <br>[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) | **[operator*](/documentation/code/classes/classgambit_1_1fcomplext/)**(const [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)< T2 > & in) |
+| template <typename T2 \> <br>[FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/) | **[operator/](/documentation/code/classes/classgambit_1_1fcomplext/)**(const [FcomplexT](/documentation/code/classes/classgambit_1_1fcomplext/)< T2 > & in) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| T | **[re](/documentation/code/classes/classgambit_1_1fcomplext/#variable-re)**  |
-| T | **[im](/documentation/code/classes/classgambit_1_1fcomplext/#variable-im)**  |
+| T | **[re](/documentation/code/classes/classgambit_1_1fcomplext/)**  |
+| T | **[im](/documentation/code/classes/classgambit_1_1fcomplext/)**  |
 
 ## Detailed Description
 
@@ -191,4 +191,4 @@ T im;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

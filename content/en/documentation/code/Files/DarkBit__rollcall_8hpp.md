@@ -13,438 +13,438 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((DarkSUSY, 5.1.3) , (ds5) )<br>Make sure LocalHalo model is initialized in DarkSUSY6.  |
-| ds6 | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((DarkSUSY_generic_wimp, 6.1.1, 6.2.2, 6.2.5) , (ds6) ) |
-| const str & | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((DarkSUSY_MSSM, 6.1.1, 6.2.2, 6.2.5) , (ds6) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsrdcom , (ds6) , void , () ) |
-| int double(& | **[double](/documentation/code/files/darkbit__rollcall_8hpp/#function-double)**(& ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsrdthlim , (ds5) , void , () ) |
-| double double int & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsrdeqn , (ds5) , void , (double(*)(double &), double &, double &, double &, double &, int &) ) |
-| double double int double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(DS5particle_code , (ds5) , int , (const str &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsrdomega , (ds5) , double , (int &, int &, double &, int &, int &, int &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(oh2 , (gimmemicro) , double , (double *, int, double) ) |
-| gimmemicro | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((MicrOmegas_ScalarSingletDM_Z2) , (gimmemicro) ) |
-| gimmemicro gimmemicro | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((MicrOmegas_VectorSingletDM_Z2) , (gimmemicro) ) |
-| gimmemicro gimmemicro gimmemicro | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((MicrOmegas_DiracSingletDM_Z2) , (gimmemicro) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(momegas_print_channels , () , double , (double, double, double, int, FILE *) )<br>Contributions of semi-annihilation to the relic density.  |
-| char char char char * | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((MicrOmegas_ScalarSingletDM_Z3) , (gimmemicro) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dssigmav , (ds5) , double , (int &) ) |
-| int double double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsIBhhdxdy , (ds5) , double , (int &, double &, double &) ) |
-| int double double int double double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsIBwwdxdy , (ds5) , double , (int &, double &, double &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dssigmav0 , (ds6) , double , (int &, int &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsIBffdxdy , (ds6) , double , (int &, double &, double &) ) |
-| int double double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsIBwhdxdy , (ds6) , double , (int &, double &, double &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(CH_Sigma_V , () , double , (str &, std::vector< str > &, std::vector< str > &, double &, const DecayTable &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dshayield , (ds5) , double , (double &, double &, int &, int &, int &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dNdE , () , double , (double, double, int, int) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(dsanyield_sim , () , double , (double &, double &, int &, char *, int &, int &, int &) )<br>Function for retrieving list of final states for cascade decays.  |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(lnL , (gamLike) , double , (int, const std::vector< double > &, const std::vector< double > &) ) |
-| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-quick-function)**(DarkBit , mwimp , NEW_CAPABILITY , mwimp_generic , double , () , (WIMP_properties, WIMPprops) ) |
-| unsigned WIMPprops | **[QUICK_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-quick-function)**(DarkBit , wimp_sc , NEW_CAPABILITY , wimp_sc_generic , bool , () , (WIMP_properties, WIMPprops) ) |
-| unsigned WIMPprops double double double double double double int * | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((MicrOmegas_MSSM) , (gimmemicro) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(get_DD_couplings , (ds5) , std::vector< double > , () ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(get_DD_couplings , (ds6) , std::vector< double > , () ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(nucleonAmplitudes , (gimmemicro) , int , (double(*)(double, double, double, double), double *, double *, double *, double *) ) |
-| double | **[ALLOW_MODEL_DEPENDENCE](/documentation/code/files/darkbit__rollcall_8hpp/#function-allow-model-dependence)**(nuclear_params_fnq , MSSM63atQ , ScalarSingletDM_Z2 , ScalarSingletDM_Z2_running , ScalarSingletDM_Z3 , ScalarSingletDM_Z3_running , VectorSingletDM_Z2 , DMEFT ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(get_NR_WCs_flav , () , NREO_DM_nucleon_couplings , (map_str_dbl &, double &, int &, std::string &, map_str_dbl &) ) |
-| double | **[QUICK_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-quick-function)**(DarkBit , sigma_SI_n , NEW_CAPABILITY , sigma_SI_n_simple , double , () , (DD_couplings, DM_nucleon_couplings) , (mwimp, double) ) |
-| double double | **[QUICK_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-quick-function)**(DarkBit , sigma_SD_n , NEW_CAPABILITY , sigma_SD_n_simple , double , () , (DD_couplings, DM_nucleon_couplings) , (mwimp, double) )<br>Capture rate of regular dark matter in the Sun (no v-dependent or q-dependent cross-sections) (s^-1).  |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(cap_Sun_v0q0_isoscalar , (cg) , void , (const double &, const double &, const double &, double &, double &) ) |
-| const double & | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-option)**((CaptnGeneral) , (cg) )<br>Capture rate of dark matter with q^n or v^n cross section (s^-1), using backend Captn' General.  |
-| const double const double const double const int const int const int const double double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(cap_sun_saturation , (cg) , double , (const double &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(captn_NREO , (cg) , void , (const double &, const double &, const int &, double &) ) |
-| const double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(captn_populate_array , (cg) , void , (const double &, const int &, const int &) ) |
-| | **[ALLOW_MODELS](/documentation/code/files/darkbit__rollcall_8hpp/#function-allow-models)**(MSSM63atQ , ScalarSingletDM_Z2_running , ScalarSingletDM_Z3_running , MajoranaSingletDM_Z2 , DiracSingletDM_Z2 , VectorSingletDM_Z2 , NREO_scalarDM , NREO_MajoranaDM , NREO_DiracDM , DMEFT ) |
-| const double(&const const double double | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(nuyield , (ds) , double , (const double &, const int &, void *&) ) |
-| const double(&const const double double | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(get_DS_charged_h_decay_channels , (ds) , std::vector< std::vector< str > > , () ) |
-| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/#function-backend-req)**(nubounds , () , void , (const char &, const double &, const double &, nuyield_function_pointer, double &, double &, int &, double &, double &, const int &, const double &, const int &, const bool &, const double &, const double &, void *&, const bool &) ) |
+| | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((DarkSUSY, 5.1.3) , (ds5) )<br>Make sure LocalHalo model is initialized in DarkSUSY6.  |
+| ds6 | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((DarkSUSY_generic_wimp, 6.1.1, 6.2.2, 6.2.5) , (ds6) ) |
+| const str & | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((DarkSUSY_MSSM, 6.1.1, 6.2.2, 6.2.5) , (ds6) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsrdcom , (ds6) , void , () ) |
+| int double(& | **[double](/documentation/code/files/darkbit__rollcall_8hpp/)**(& ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsrdthlim , (ds5) , void , () ) |
+| double double int & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsrdeqn , (ds5) , void , (double(*)(double &), double &, double &, double &, double &, int &) ) |
+| double double int double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(DS5particle_code , (ds5) , int , (const str &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsrdomega , (ds5) , double , (int &, int &, double &, int &, int &, int &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(oh2 , (gimmemicro) , double , (double *, int, double) ) |
+| gimmemicro | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((MicrOmegas_ScalarSingletDM_Z2) , (gimmemicro) ) |
+| gimmemicro gimmemicro | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((MicrOmegas_VectorSingletDM_Z2) , (gimmemicro) ) |
+| gimmemicro gimmemicro gimmemicro | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((MicrOmegas_DiracSingletDM_Z2) , (gimmemicro) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(momegas_print_channels , () , double , (double, double, double, int, FILE *) )<br>Contributions of semi-annihilation to the relic density.  |
+| char char char char * | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((MicrOmegas_ScalarSingletDM_Z3) , (gimmemicro) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dssigmav , (ds5) , double , (int &) ) |
+| int double double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsIBhhdxdy , (ds5) , double , (int &, double &, double &) ) |
+| int double double int double double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsIBwwdxdy , (ds5) , double , (int &, double &, double &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dssigmav0 , (ds6) , double , (int &, int &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsIBffdxdy , (ds6) , double , (int &, double &, double &) ) |
+| int double double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsIBwhdxdy , (ds6) , double , (int &, double &, double &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(CH_Sigma_V , () , double , (str &, std::vector< str > &, std::vector< str > &, double &, const DecayTable &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dshayield , (ds5) , double , (double &, double &, int &, int &, int &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dNdE , () , double , (double, double, int, int) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(dsanyield_sim , () , double , (double &, double &, int &, char *, int &, int &, int &) )<br>Function for retrieving list of final states for cascade decays.  |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(lnL , (gamLike) , double , (int, const std::vector< double > &, const std::vector< double > &) ) |
+| | **[QUICK_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)**(DarkBit , mwimp , NEW_CAPABILITY , mwimp_generic , double , () , (WIMP_properties, WIMPprops) ) |
+| unsigned WIMPprops | **[QUICK_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)**(DarkBit , wimp_sc , NEW_CAPABILITY , wimp_sc_generic , bool , () , (WIMP_properties, WIMPprops) ) |
+| unsigned WIMPprops double double double double double double int * | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((MicrOmegas_MSSM) , (gimmemicro) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(get_DD_couplings , (ds5) , std::vector< double > , () ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(get_DD_couplings , (ds6) , std::vector< double > , () ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(nucleonAmplitudes , (gimmemicro) , int , (double(*)(double, double, double, double), double *, double *, double *, double *) ) |
+| double | **[ALLOW_MODEL_DEPENDENCE](/documentation/code/files/darkbit__rollcall_8hpp/)**(nuclear_params_fnq , MSSM63atQ , ScalarSingletDM_Z2 , ScalarSingletDM_Z2_running , ScalarSingletDM_Z3 , ScalarSingletDM_Z3_running , VectorSingletDM_Z2 , DMEFT ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(get_NR_WCs_flav , () , NREO_DM_nucleon_couplings , (map_str_dbl &, double &, int &, std::string &, map_str_dbl &) ) |
+| double | **[QUICK_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)**(DarkBit , sigma_SI_n , NEW_CAPABILITY , sigma_SI_n_simple , double , () , (DD_couplings, DM_nucleon_couplings) , (mwimp, double) ) |
+| double double | **[QUICK_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)**(DarkBit , sigma_SD_n , NEW_CAPABILITY , sigma_SD_n_simple , double , () , (DD_couplings, DM_nucleon_couplings) , (mwimp, double) )<br>Capture rate of regular dark matter in the Sun (no v-dependent or q-dependent cross-sections) (s^-1).  |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(cap_Sun_v0q0_isoscalar , (cg) , void , (const double &, const double &, const double &, double &, double &) ) |
+| const double & | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**((CaptnGeneral) , (cg) )<br>Capture rate of dark matter with q^n or v^n cross section (s^-1), using backend Captn' General.  |
+| const double const double const double const int const int const int const double double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(cap_sun_saturation , (cg) , double , (const double &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(captn_NREO , (cg) , void , (const double &, const double &, const int &, double &) ) |
+| const double & | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(captn_populate_array , (cg) , void , (const double &, const int &, const int &) ) |
+| | **[ALLOW_MODELS](/documentation/code/files/darkbit__rollcall_8hpp/)**(MSSM63atQ , ScalarSingletDM_Z2_running , ScalarSingletDM_Z3_running , MajoranaSingletDM_Z2 , DiracSingletDM_Z2 , VectorSingletDM_Z2 , NREO_scalarDM , NREO_MajoranaDM , NREO_DiracDM , DMEFT ) |
+| const double(&const const double double | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(nuyield , (ds) , double , (const double &, const int &, void *&) ) |
+| const double(&const const double double | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(get_DS_charged_h_decay_channels , (ds) , std::vector< std::vector< str > > , () ) |
+| | **[BACKEND_REQ](/documentation/code/files/darkbit__rollcall_8hpp/)**(nubounds , () , void , (const char &, const double &, const double &, nuyield_function_pointer, double &, double &, int &, double &, double &, const int &, const double &, const int &, const bool &, const double &, const double &, void *&, const bool &) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| ds6 | **[ds5](/documentation/code/files/darkbit__rollcall_8hpp/#variable-ds5)**  |
-| ds6 | **[int](/documentation/code/files/darkbit__rollcall_8hpp/#variable-int)**  |
-| ds6 const str | **[ScalarSingletDM_Z2_running](/documentation/code/files/darkbit__rollcall_8hpp/#variable-scalarsingletdm-z2-running)**  |
-| ds6 const str | **[ScalarSingletDM_Z3](/documentation/code/files/darkbit__rollcall_8hpp/#variable-scalarsingletdm-z3)**  |
-| ds6 const str | **[ScalarSingletDM_Z3_running](/documentation/code/files/darkbit__rollcall_8hpp/#variable-scalarsingletdm-z3-running)**  |
-| ds6 const str | **[DiracSingletDM_Z2](/documentation/code/files/darkbit__rollcall_8hpp/#variable-diracsingletdm-z2)**  |
-| ds6 const str | **[MajoranaSingletDM_Z2](/documentation/code/files/darkbit__rollcall_8hpp/#variable-majoranasingletdm-z2)**  |
-| ds6 const str | **[VectorSingletDM_Z2](/documentation/code/files/darkbit__rollcall_8hpp/#variable-vectorsingletdm-z2)**  |
-| | **[ds6](/documentation/code/files/darkbit__rollcall_8hpp/#variable-ds6)**  |
-| const str | **[double](/documentation/code/files/darkbit__rollcall_8hpp/#variable-double)**  |
-| | **[void](/documentation/code/files/darkbit__rollcall_8hpp/#variable-void)**  |
-| int double(double(&)(double &) double double int int int &((DarkSUSY_MSSM),(ds6)) BACKEND_OPTION((DarkSUSY_generic_wimp) | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#variable-backend-option)**  |
-| gimmemicro gimmemicro gimmemicro | **[MSSM63atMGUT](/documentation/code/files/darkbit__rollcall_8hpp/#variable-mssm63atmgut)**  |
-| gimmemicro gimmemicro gimmemicro | **[ScalarSingletDM_Z2](/documentation/code/files/darkbit__rollcall_8hpp/#variable-scalarsingletdm-z2)**  |
-| | **[gimmemicro](/documentation/code/files/darkbit__rollcall_8hpp/#variable-gimmemicro)**  |
-| | **[gamLike](/documentation/code/files/darkbit__rollcall_8hpp/#variable-gamlike)**  |
-| | **[spinwimpx2](/documentation/code/files/darkbit__rollcall_8hpp/#variable-spinwimpx2)**  |
-| | **[NEW_CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#variable-new-capability)**  |
-| | **[spinwimpx2_generic](/documentation/code/files/darkbit__rollcall_8hpp/#variable-spinwimpx2-generic)**  |
-| unsigned | **[WIMP_properties](/documentation/code/files/darkbit__rollcall_8hpp/#variable-wimp-properties)**  |
-| double | **[MSSM63atQ](/documentation/code/files/darkbit__rollcall_8hpp/#variable-mssm63atq)**  |
-| | **[sigma_SI_p](/documentation/code/files/darkbit__rollcall_8hpp/#variable-sigma-si-p)**  |
-| | **[sigma_SI_p_simple](/documentation/code/files/darkbit__rollcall_8hpp/#variable-sigma-si-p-simple)**  |
-| | **[DD_couplings](/documentation/code/files/darkbit__rollcall_8hpp/#variable-dd-couplings)**  |
-| | **[DM_nucleon_couplings](/documentation/code/files/darkbit__rollcall_8hpp/#variable-dm-nucleon-couplings)**  |
-| | **[mwimp](/documentation/code/files/darkbit__rollcall_8hpp/#variable-mwimp)**  |
-| double | **[sigma_SD_p](/documentation/code/files/darkbit__rollcall_8hpp/#variable-sigma-sd-p)**  |
-| double | **[sigma_SD_p_simple](/documentation/code/files/darkbit__rollcall_8hpp/#variable-sigma-sd-p-simple)**  |
-| | **[cg](/documentation/code/files/darkbit__rollcall_8hpp/#variable-cg)**  |
-| | **[ds](/documentation/code/files/darkbit__rollcall_8hpp/#variable-ds)**  |
-| const char const double const double | **[nuyield_function_pointer](/documentation/code/files/darkbit__rollcall_8hpp/#variable-nuyield-function-pointer)**  |
+| ds6 | **[ds5](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| ds6 | **[int](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| ds6 const str | **[ScalarSingletDM_Z2_running](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| ds6 const str | **[ScalarSingletDM_Z3](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| ds6 const str | **[ScalarSingletDM_Z3_running](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| ds6 const str | **[DiracSingletDM_Z2](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| ds6 const str | **[MajoranaSingletDM_Z2](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| ds6 const str | **[VectorSingletDM_Z2](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[ds6](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| const str | **[double](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[void](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| int double(double(&)(double &) double double int int int &((DarkSUSY_MSSM),(ds6)) BACKEND_OPTION((DarkSUSY_generic_wimp) | **[BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| gimmemicro gimmemicro gimmemicro | **[MSSM63atMGUT](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| gimmemicro gimmemicro gimmemicro | **[ScalarSingletDM_Z2](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[gimmemicro](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[gamLike](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[spinwimpx2](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[NEW_CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[spinwimpx2_generic](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| unsigned | **[WIMP_properties](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| double | **[MSSM63atQ](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[sigma_SI_p](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[sigma_SI_p_simple](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[DD_couplings](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[DM_nucleon_couplings](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[mwimp](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| double | **[sigma_SD_p](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| double | **[sigma_SD_p_simple](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[cg](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| | **[ds](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+| const char const double const double | **[nuyield_function_pointer](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/darkbit__rollcall_8hpp/#define-module)**  |
-|  | **[REFERENCE](/documentation/code/files/darkbit__rollcall_8hpp/#define-reference)**  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[DD_DECLARE_RESULT_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-dd-declare-result-function)**(EXPERIMENT, TYPE, NAME)  |
-|  | **[DD_DECLARE_BIN_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-dd-declare-bin-function)**(EXPERIMENT, TYPE, NAME)  |
-|  | **[DD_DECLARE_EXPERIMENT](/documentation/code/files/darkbit__rollcall_8hpp/#define-dd-declare-experiment)**(EXPERIMENT)  |
-|  | **[SET_BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-set-backend-option)**(EXPERIMENT, VERSIONS)  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
-|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/#define-capability)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
-|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/#define-function)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[MODULE](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/darkbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[DD_DECLARE_RESULT_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)**(EXPERIMENT, TYPE, NAME)  |
+|  | **[DD_DECLARE_BIN_FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)**(EXPERIMENT, TYPE, NAME)  |
+|  | **[DD_DECLARE_EXPERIMENT](/documentation/code/files/darkbit__rollcall_8hpp/)**(EXPERIMENT)  |
+|  | **[SET_BACKEND_OPTION](/documentation/code/files/darkbit__rollcall_8hpp/)**(EXPERIMENT, VERSIONS)  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
+|  | **[CAPABILITY](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>Make sure LocalHalo model is initialized in DarkSUSY5.  |
+|  | **[FUNCTION](/documentation/code/files/darkbit__rollcall_8hpp/)** <br>General Boltzmann solver from DarkSUSY, using arbitrary Weff.  |
 
 ## Detailed Description
 
@@ -12516,4 +12516,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

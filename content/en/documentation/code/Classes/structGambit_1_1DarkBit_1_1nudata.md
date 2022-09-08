@@ -17,12 +17,12 @@ Neutrino telescope data container.
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[nobs](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/#variable-nobs)**  |
-| double | **[signal](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/#variable-signal)**  |
-| double | **[bg](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/#variable-bg)**  |
-| double | **[loglike](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/#variable-loglike)**  |
-| double | **[bgloglike](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/#variable-bgloglike)**  |
-| double | **[pvalue](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/#variable-pvalue)**  |
+| int | **[nobs](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/)**  |
+| double | **[signal](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/)**  |
+| double | **[bg](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/)**  |
+| double | **[loglike](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/)**  |
+| double | **[bgloglike](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/)**  |
+| double | **[pvalue](/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/)**  |
 
 ## Public Attributes Documentation
 
@@ -70,4 +70,4 @@ double pvalue;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

@@ -15,15 +15,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[s2thw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-s2thw)**  |
-| Fdouble | **[sinthw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-sinthw)**  |
-| Fdouble | **[costhw](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-costhw)**  |
-| Fdouble | **[delrho](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-delrho)**  |
-| Fdouble | **[alph3mz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-alph3mz)**  |
-| Fdouble | **[gfermi](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-gfermi)**  |
-| Fdouble | **[s2wmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-s2wmz)**  |
-| Fdouble | **[swmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-swmz)**  |
-| Fdouble | **[cwmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/#variable-cwmz)**  |
+| Fdouble | **[s2thw](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
+| Fdouble | **[sinthw](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
+| Fdouble | **[costhw](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
+| Fdouble | **[delrho](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
+| Fdouble | **[alph3mz](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
+| Fdouble | **[gfermi](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
+| Fdouble | **[s2wmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
+| Fdouble | **[swmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
+| Fdouble | **[cwmz](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
 
 ## Public Attributes Documentation
 
@@ -92,4 +92,4 @@ Fdouble cwmz;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

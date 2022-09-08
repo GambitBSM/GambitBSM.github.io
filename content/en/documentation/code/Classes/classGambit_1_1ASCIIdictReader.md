@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ASCIIdictReader](/documentation/code/classes/classgambit_1_1asciidictreader/#function-asciidictreader)**(std::string filename) |
-| | **[ASCIIdictReader](/documentation/code/classes/classgambit_1_1asciidictreader/#function-asciidictreader)**() |
-| | **[~ASCIIdictReader](/documentation/code/classes/classgambit_1_1asciidictreader/#function-asciidictreader)**() |
-| int | **[read](/documentation/code/classes/classgambit_1_1asciidictreader/#function-read)**(std::string filename) |
-| const std::vector< std::string > & | **[get_keys](/documentation/code/classes/classgambit_1_1asciidictreader/#function-get-keys)**() const |
-| const std::map< std::string, std::vector< double > > & | **[get_dict](/documentation/code/classes/classgambit_1_1asciidictreader/#function-get-dict)**() const |
-| bool | **[duplicated_keys](/documentation/code/classes/classgambit_1_1asciidictreader/#function-duplicated-keys)**() const |
-| int | **[nrow](/documentation/code/classes/classgambit_1_1asciidictreader/#function-nrow)**() const |
+| | **[ASCIIdictReader](/documentation/code/classes/classgambit_1_1asciidictreader/)**(std::string filename) |
+| | **[ASCIIdictReader](/documentation/code/classes/classgambit_1_1asciidictreader/)**() |
+| | **[~ASCIIdictReader](/documentation/code/classes/classgambit_1_1asciidictreader/)**() |
+| int | **[read](/documentation/code/classes/classgambit_1_1asciidictreader/)**(std::string filename) |
+| const std::vector< std::string > & | **[get_keys](/documentation/code/classes/classgambit_1_1asciidictreader/)**() const |
+| const std::map< std::string, std::vector< double > > & | **[get_dict](/documentation/code/classes/classgambit_1_1asciidictreader/)**() const |
+| bool | **[duplicated_keys](/documentation/code/classes/classgambit_1_1asciidictreader/)**() const |
+| int | **[nrow](/documentation/code/classes/classgambit_1_1asciidictreader/)**() const |
 
 ## Public Functions Documentation
 
@@ -88,4 +88,4 @@ inline int nrow() const
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

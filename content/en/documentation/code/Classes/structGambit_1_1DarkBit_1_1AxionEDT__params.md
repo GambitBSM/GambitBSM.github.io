@@ -15,11 +15,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[ma0](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-ma0)**  |
-| double | **[beta](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-beta)**  |
-| double | **[Tchi](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-tchi)**  |
-| double | **[thetai](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-thetai)**  |
-| double | **[Tosc](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/#variable-tosc)**  |
+| double | **[ma0](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/)**  |
+| double | **[beta](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/)**  |
+| double | **[Tchi](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/)**  |
+| double | **[thetai](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/)**  |
+| double | **[Tosc](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/)**  |
 
 ## Public Attributes Documentation
 
@@ -60,4 +60,4 @@ double Tosc;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

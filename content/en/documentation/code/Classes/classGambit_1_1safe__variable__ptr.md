@@ -18,26 +18,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/) & | **[operator=](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-operator)**(const [safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/) & ) =delete<br>Remove the default copy constructor and assignment operator.  |
-| | **[safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-safe-variable-ptr)**(const [safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/) & ) =delete |
-| | **[safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-safe-variable-ptr)**(TYPE * in_ptr =NULL)<br>Constructor.  |
-| void | **[set](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-set)**(TYPE * in_ptr)<br>Set pointer.  |
-| TYPE * | **[get](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-get)**()<br>Get pointer.  |
-| TYPE & | **[operator*](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-operator)**()<br>Dereference pointer.  |
-| TYPE & | **[operator[]](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-operator)**(int index)<br>Dereference pointer as if it is an array.  |
-| TYPE * | **[operator->](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-operator)**()<br>Access member functions.  |
+| [safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/) & | **[operator=](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**(const [safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/) & ) =delete<br>Remove the default copy constructor and assignment operator.  |
+| | **[safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**(const [safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/) & ) =delete |
+| | **[safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**(TYPE * in_ptr =NULL)<br>Constructor.  |
+| void | **[set](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**(TYPE * in_ptr)<br>Set pointer.  |
+| TYPE * | **[get](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**()<br>Get pointer.  |
+| TYPE & | **[operator*](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**()<br>Dereference pointer.  |
+| TYPE & | **[operator[]](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**(int index)<br>Dereference pointer as if it is an array.  |
+| TYPE * | **[operator->](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**()<br>Access member functions.  |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[dieGracefully](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#function-diegracefully)**()<br>Failure message invoked when the user tries to dereference a null [safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/).  |
+| void | **[dieGracefully](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)**()<br>Failure message invoked when the user tries to dereference a null [safe_variable_ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/).  |
 
 ## Protected Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| TYPE * | **[ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/#variable-ptr)** <br>The actual underlying pointer.  |
+| TYPE * | **[ptr](/documentation/code/classes/classgambit_1_1safe__variable__ptr/)** <br>The actual underlying pointer.  |
 
 ## Detailed Description
 
@@ -146,4 +146,4 @@ The actual underlying pointer.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

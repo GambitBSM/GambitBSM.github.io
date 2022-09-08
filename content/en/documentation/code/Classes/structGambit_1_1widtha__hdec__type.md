@@ -15,17 +15,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[abrb](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrb)**  |
-| Fdouble | **[abrl](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrl)**  |
-| Fdouble | **[abrm](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrm)**  |
-| Fdouble | **[abrs](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrs)**  |
-| Fdouble | **[abrc](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrc)**  |
-| Fdouble | **[abrt](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrt)**  |
-| Fdouble | **[abrg](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrg)**  |
-| Fdouble | **[abrga](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrga)**  |
-| Fdouble | **[abrzga](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrzga)**  |
-| Fdouble | **[abrz](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-abrz)**  |
-| Fdouble | **[awdth](/documentation/code/classes/structgambit_1_1widtha__hdec__type/#variable-awdth)**  |
+| Fdouble | **[abrb](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrl](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrm](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrs](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrc](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrt](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrg](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrga](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrzga](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[abrz](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
+| Fdouble | **[awdth](/documentation/code/classes/structgambit_1_1widtha__hdec__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -108,4 +108,4 @@ Fdouble awdth;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[selltot2](/documentation/code/classes/structgambit_1_1sd__selwidth__type/#variable-selltot2)**  |
-| Fdouble | **[selrtot2](/documentation/code/classes/structgambit_1_1sd__selwidth__type/#variable-selrtot2)**  |
+| Fdouble | **[selltot2](/documentation/code/classes/structgambit_1_1sd__selwidth__type/)**  |
+| Fdouble | **[selrtot2](/documentation/code/classes/structgambit_1_1sd__selwidth__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ Fdouble selrtot2;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

@@ -17,7 +17,7 @@ Inherits from std::binary_function< unsigned char, unsigned char, bool >
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[operator()](/documentation/code/classes/structgambit_1_1utils_1_1ci__less_1_1nocase__compare/#function-operator)**(const unsigned char & c1, const unsigned char & c2) const |
+| bool | **[operator()](/documentation/code/classes/structgambit_1_1utils_1_1ci__less_1_1nocase__compare/)**(const unsigned char & c1, const unsigned char & c2) const |
 
 ## Public Functions Documentation
 
@@ -33,4 +33,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

@@ -13,11 +13,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/libfirst__1__0_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/libfirst__1__0_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/libfirst__1__0_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/libfirst__1__0_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/libfirst__1__0_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/libfirst__1__0_8hpp/)**  |
+|  | **[BACKENDLANG](/documentation/code/files/libfirst__1__0_8hpp/)**  |
+|  | **[VERSION](/documentation/code/files/libfirst__1__0_8hpp/)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/libfirst__1__0_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/libfirst__1__0_8hpp/)**  |
 
 ## Detailed Description
 
@@ -35,7 +35,7 @@ description: "[No description available]"
   * 2014 May
 
 
-Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/#file-backend-macros-hpp)' to set up a frontend for a specific library.
+Example of how to use the macros in '[backend_macros.hpp](/documentation/code/files/backend__macros_8hpp/)' to set up a frontend for a specific library.
 
 
 
@@ -218,4 +218,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

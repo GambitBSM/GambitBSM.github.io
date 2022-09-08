@@ -13,15 +13,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[q_example](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-q-example)**(int & result) |
-| void | **[particle_identity](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-particle-identity)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) & result) |
-| void | **[event_count](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-event-count)**(int & result) |
-| void | **[example_lnL](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-example-lnl)**(double & result) |
-| void | **[exampleVec](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-examplevec)**(std::vector< double > & result) |
-| void | **[ptrArrTester](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-ptrarrtester)**(int & result) |
-| void | **[sigma_example](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-sigma-example)**(double & result) |
-| void | **[sigma_example_req_pars](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-sigma-example-req-pars)**(double & result) |
-| void | **[predicted_events](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/#function-predicted-events)**(int & result) |
+| void | **[q_example](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**(int & result) |
+| void | **[particle_identity](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**([str](/documentation/code/namespaces/namespacegambit/) & result) |
+| void | **[event_count](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**(int & result) |
+| void | **[example_lnL](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**(double & result) |
+| void | **[exampleVec](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**(std::vector< double > & result) |
+| void | **[ptrArrTester](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**(int & result) |
+| void | **[sigma_example](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**(double & result) |
+| void | **[sigma_example_req_pars](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**(double & result) |
+| void | **[predicted_events](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**(int & result) |
 
 
 ## Functions Documentation
@@ -113,4 +113,4 @@ void predicted_events(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

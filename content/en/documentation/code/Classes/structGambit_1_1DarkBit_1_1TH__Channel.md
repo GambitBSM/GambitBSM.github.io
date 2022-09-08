@@ -18,19 +18,19 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-th-channel)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > finalStateIDs, daFunk::Funk genRate)<br>Constructor.  |
-| void | **[printChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-printchannel)**() const<br>Print information about this channel.  |
-| bool | **[channelContains](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-channelcontains)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) p) const<br>Indicate whether or not the final states of this channel contain a specific particle.  |
-| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) p0, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) p1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) p2 ="", [str](/documentation/code/namespaces/namespacegambit/#typedef-str) p3 ="") const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle name version.  |
-| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#function-ischannel)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > particles) const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle vector version.  |
+| | **[TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/) > finalStateIDs, daFunk::Funk genRate)<br>Constructor.  |
+| void | **[printChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)**() const<br>Print information about this channel.  |
+| bool | **[channelContains](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)**([str](/documentation/code/namespaces/namespacegambit/) p) const<br>Indicate whether or not the final states of this channel contain a specific particle.  |
+| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)**([str](/documentation/code/namespaces/namespacegambit/) p0, [str](/documentation/code/namespaces/namespacegambit/) p1, [str](/documentation/code/namespaces/namespacegambit/) p2 ="", [str](/documentation/code/namespaces/namespacegambit/) p3 ="") const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle name version.  |
+| bool | **[isChannel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)**(std::vector< [str](/documentation/code/namespaces/namespacegambit/) > particles) const<br>Indicate whether or not this channel is the one defined by some specific final states. Particle vector version.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::vector< std::string > | **[finalStateIDs](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#variable-finalstateids)** <br>Final state identifiers.  |
-| unsigned int | **[nFinalStates](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#variable-nfinalstates)** <br>Number of final state particles in this channel.  |
-| daFunk::Funk | **[genRate](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/#variable-genrate)** <br>Energy dependence of final state particles. Includes v_rel ("v") as last argument in case of annihilation.  |
+| std::vector< std::string > | **[finalStateIDs](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)** <br>Final state identifiers.  |
+| unsigned int | **[nFinalStates](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)** <br>Number of final state particles in this channel.  |
+| daFunk::Funk | **[genRate](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)** <br>Energy dependence of final state particles. Includes v_rel ("v") as last argument in case of annihilation.  |
 
 ## Detailed Description
 
@@ -123,4 +123,4 @@ Energy dependence of final state particles. Includes v_rel ("v") as last argumen
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

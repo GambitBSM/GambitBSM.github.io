@@ -13,14 +13,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[profile](/documentation/code/namespaces/namespaceprofile__theory/#function-profile)**(file_name file_name, frac_error frac_error =0.1, min_ min_ =0., max_ max_ =1., log_normal log_normal =True) |
+| def | **[profile](/documentation/code/namespaces/namespaceprofile__theory/)**(file_name file_name, frac_error frac_error =0.1, min_ min_ =0., max_ max_ =1., log_normal log_normal =True) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FILE_NAME](/documentation/code/namespaces/namespaceprofile__theory/#variable-file-name)**  |
-| | **[ARGS](/documentation/code/namespaces/namespaceprofile__theory/#variable-args)**  |
+| | **[FILE_NAME](/documentation/code/namespaces/namespaceprofile__theory/)**  |
+| | **[ARGS](/documentation/code/namespaces/namespaceprofile__theory/)**  |
 
 ## Detailed Description
 
@@ -92,4 +92,4 @@ ARGS =  map(float, sys.argv[2:]);
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

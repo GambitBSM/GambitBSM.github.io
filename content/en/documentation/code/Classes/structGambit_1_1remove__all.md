@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::remove_cv< typenamestd::remove_volatile< typenamestd::remove_const< typenamestd::remove_reference< T >::type >::type >::type >::type | **[type](/documentation/code/classes/structgambit_1_1remove__all/#typedef-type)**  |
+| typedef std::remove_cv< typenamestd::remove_volatile< typenamestd::remove_const< typenamestd::remove_reference< T >::type >::type >::type >::type | **[type](/documentation/code/classes/structgambit_1_1remove__all/)**  |
 
 ## Detailed Description
 
@@ -35,4 +35,4 @@ typedef std::remove_cv<typenamestd::remove_volatile<typenamestd::remove_const<ty
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

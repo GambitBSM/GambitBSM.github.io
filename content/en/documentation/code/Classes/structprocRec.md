@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct [procRec](/documentation/code/classes/structprocrec/) * | **[next](/documentation/code/classes/structprocrec/#variable-next)**  |
-| char * | **[libname](/documentation/code/classes/structprocrec/#variable-libname)**  |
-| numout * | **[cc](/documentation/code/classes/structprocrec/#variable-cc)**  |
+| struct [procRec](/documentation/code/classes/structprocrec/) * | **[next](/documentation/code/classes/structprocrec/)**  |
+| char * | **[libname](/documentation/code/classes/structprocrec/)**  |
+| numout * | **[cc](/documentation/code/classes/structprocrec/)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ numout * cc;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

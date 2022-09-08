@@ -13,18 +13,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| template <class Model \> <br>void | **[setpars](/documentation/code/files/external__examples_8hpp/#function-setpars)**(Model & mssm) |
-| void | **[spec_print](/documentation/code/files/external__examples_8hpp/#function-spec-print)**([Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & spec) |
-| template <class M \> <br>void | **[mssm_print](/documentation/code/files/external__examples_8hpp/#function-mssm-print)**([Gambit::SpecBit::MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< M > & mssm) |
-| void | **[spec_manipulate](/documentation/code/files/external__examples_8hpp/#function-spec-manipulate)**([Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & spec) |
-| template <class M \> <br>void | **[mssm_manipulate](/documentation/code/files/external__examples_8hpp/#function-mssm-manipulate)**([Gambit::SpecBit::MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< M > & mssm) |
-| void | **[SM_checks](/documentation/code/files/external__examples_8hpp/#function-sm-checks)**([Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & SM) |
+| template <class Model \> <br>void | **[setpars](/documentation/code/files/external__examples_8hpp/)**(Model & mssm) |
+| void | **[spec_print](/documentation/code/files/external__examples_8hpp/)**([Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & spec) |
+| template <class M \> <br>void | **[mssm_print](/documentation/code/files/external__examples_8hpp/)**([Gambit::SpecBit::MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< M > & mssm) |
+| void | **[spec_manipulate](/documentation/code/files/external__examples_8hpp/)**([Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & spec) |
+| template <class M \> <br>void | **[mssm_manipulate](/documentation/code/files/external__examples_8hpp/)**([Gambit::SpecBit::MSSMSpec](/documentation/code/classes/classgambit_1_1specbit_1_1mssmspec/)< M > & mssm) |
+| void | **[SM_checks](/documentation/code/files/external__examples_8hpp/)**([Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & SM) |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[PRINTOUT](/documentation/code/files/external__examples_8hpp/#define-printout)**  |
+|  | **[PRINTOUT](/documentation/code/files/external__examples_8hpp/)**  |
 
 
 ## Functions Documentation
@@ -429,4 +429,4 @@ void SM_checks(Gambit::SubSpectrum& SM) {
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

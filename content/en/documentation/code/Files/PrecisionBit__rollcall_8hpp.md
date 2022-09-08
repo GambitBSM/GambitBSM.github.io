@@ -13,112 +13,112 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/#function-backend-req)**(FHConstraints , (libfeynhiggs) , void , (int &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, int &) ) |
-| libfeynhiggs | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , muon_gm2 , NEW_CAPABILITY , FeynHiggs_precision_gm2 , triplet< double > , (MSSM30atQ, MSSM30atMGUT, NUHM2) , (Precision, fh_PrecisionObs_container) ) |
-| libfeynhiggs fh_PrecisionObs_container | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , prec_mw , NEW_CAPABILITY , FeynHiggs_precision_mw , triplet< double > , (MSSM30atQ, MSSM30atMGUT, NUHM2) , (Precision, fh_PrecisionObs_container) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , edm_e , NEW_CAPABILITY , FeynHiggs_precision_edm_e , double , (MSSM30atQ, MSSM30atMGUT, NUHM2) , (Precision, fh_PrecisionObs_container) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , edm_hg , NEW_CAPABILITY , FeynHiggs_precision_edm_hg , double , (MSSM30atQ, MSSM30atMGUT, NUHM2) , (Precision, fh_PrecisionObs_container) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , mw , OLD_CAPABILITY , mw_from_ScalarSingletDM_Z2_spectrum , triplet< double > , (ScalarSingletDM_Z2, ScalarSingletDM_Z2_running) , (ScalarSingletDM_Z2_spectrum, Spectrum) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , mw , OLD_CAPABILITY , mw_from_VectorSingletDM_Z2_spectrum , triplet< double > , (VectorSingletDM_Z2) , (VectorSingletDM_Z2_spectrum, Spectrum) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , mw , OLD_CAPABILITY , mw_from_MajoranaSingletDM_Z2_spectrum , triplet< double > , (MajoranaSingletDM_Z2) , (MajoranaSingletDM_Z2_spectrum, Spectrum) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , mh , NEW_CAPABILITY , mh_from_SM_spectrum , triplet< double > , () , (SM_spectrum, Spectrum) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , mh , OLD_CAPABILITY , mh_from_ScalarSingletDM_Z3_spectrum , triplet< double > , (ScalarSingletDM_Z3, ScalarSingletDM_Z3_running) , (ScalarSingletDM_Z3_spectrum, Spectrum) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , lnL_Z_mass , NEW_CAPABILITY , lnL_Z_mass , double , () , (SMINPUTS, SMInputs) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , lnL_mbmb , NEW_CAPABILITY , lnL_mbmb , double , () , (SMINPUTS, SMInputs) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs SMInputs | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , lnL_alpha_em , NEW_CAPABILITY , lnL_alpha_em , double , () , (SMINPUTS, SMInputs) ) |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs SMInputs SMInputs | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#function-quick-function)**(PrecisionBit , lnL_GF , NEW_CAPABILITY , lnL_GF , double , () , (SMINPUTS, SMInputs) ) |
-| | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/#function-backend-req)**(CalcObs_SUSYPOPE , (libSUSYPOPE) , void , (int &, Farray< Fdouble, 1, 35 > &, Farray< Fdouble, 1, 35 > &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/#function-backend-req)**(muon_gm2 , (libsuperiso) , double , (const parameters *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/#function-backend-req)**(calculate_amu_1loop , (libgm2calc) , double , (const gm2calc_default::gm2calc::MSSMNoFV_onshell &) ) |
-| const gm2calc_default::gm2calc::MSSMNoFV_onshell & | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/#function-backend-req)**(calculate_uncertainty_amu_2loop , (libgm2calc) , double , (const gm2calc_default::gm2calc::MSSMNoFV_onshell &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/)**(FHConstraints , (libfeynhiggs) , void , (int &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, fh_real &, int &) ) |
+| libfeynhiggs | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , muon_gm2 , NEW_CAPABILITY , FeynHiggs_precision_gm2 , triplet< double > , (MSSM30atQ, MSSM30atMGUT, NUHM2) , (Precision, fh_PrecisionObs_container) ) |
+| libfeynhiggs fh_PrecisionObs_container | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , prec_mw , NEW_CAPABILITY , FeynHiggs_precision_mw , triplet< double > , (MSSM30atQ, MSSM30atMGUT, NUHM2) , (Precision, fh_PrecisionObs_container) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , edm_e , NEW_CAPABILITY , FeynHiggs_precision_edm_e , double , (MSSM30atQ, MSSM30atMGUT, NUHM2) , (Precision, fh_PrecisionObs_container) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , edm_hg , NEW_CAPABILITY , FeynHiggs_precision_edm_hg , double , (MSSM30atQ, MSSM30atMGUT, NUHM2) , (Precision, fh_PrecisionObs_container) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , mw , OLD_CAPABILITY , mw_from_ScalarSingletDM_Z2_spectrum , triplet< double > , (ScalarSingletDM_Z2, ScalarSingletDM_Z2_running) , (ScalarSingletDM_Z2_spectrum, Spectrum) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , mw , OLD_CAPABILITY , mw_from_VectorSingletDM_Z2_spectrum , triplet< double > , (VectorSingletDM_Z2) , (VectorSingletDM_Z2_spectrum, Spectrum) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , mw , OLD_CAPABILITY , mw_from_MajoranaSingletDM_Z2_spectrum , triplet< double > , (MajoranaSingletDM_Z2) , (MajoranaSingletDM_Z2_spectrum, Spectrum) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , mh , NEW_CAPABILITY , mh_from_SM_spectrum , triplet< double > , () , (SM_spectrum, Spectrum) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , mh , OLD_CAPABILITY , mh_from_ScalarSingletDM_Z3_spectrum , triplet< double > , (ScalarSingletDM_Z3, ScalarSingletDM_Z3_running) , (ScalarSingletDM_Z3_spectrum, Spectrum) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , lnL_Z_mass , NEW_CAPABILITY , lnL_Z_mass , double , () , (SMINPUTS, SMInputs) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , lnL_mbmb , NEW_CAPABILITY , lnL_mbmb , double , () , (SMINPUTS, SMInputs) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs SMInputs | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , lnL_alpha_em , NEW_CAPABILITY , lnL_alpha_em , double , () , (SMINPUTS, SMInputs) ) |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs SMInputs SMInputs | **[QUICK_FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**(PrecisionBit , lnL_GF , NEW_CAPABILITY , lnL_GF , double , () , (SMINPUTS, SMInputs) ) |
+| | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/)**(CalcObs_SUSYPOPE , (libSUSYPOPE) , void , (int &, Farray< Fdouble, 1, 35 > &, Farray< Fdouble, 1, 35 > &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/)**(muon_gm2 , (libsuperiso) , double , (const parameters *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/)**(calculate_amu_1loop , (libgm2calc) , double , (const gm2calc_default::gm2calc::MSSMNoFV_onshell &) ) |
+| const gm2calc_default::gm2calc::MSSMNoFV_onshell & | **[BACKEND_REQ](/documentation/code/files/precisionbit__rollcall_8hpp/)**(calculate_uncertainty_amu_2loop , (libgm2calc) , double , (const gm2calc_default::gm2calc::MSSMNoFV_onshell &) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| libfeynhiggs | **[deltarho](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-deltarho)**  |
-| libfeynhiggs | **[NEW_CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-new-capability)**  |
-| libfeynhiggs | **[FeynHiggs_precision_deltarho](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-feynhiggs-precision-deltarho)**  |
-| libfeynhiggs | **[triplet< double >](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-triplet-double)**  |
-| libfeynhiggs | **[MSSM30atQ](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mssm30atq)**  |
-| libfeynhiggs | **[MSSM30atMGUT](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mssm30atmgut)**  |
-| libfeynhiggs | **[NUHM2](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-nuhm2)**  |
-| libfeynhiggs | **[Precision](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-precision)**  |
-| libfeynhiggs fh_PrecisionObs_container | **[prec_sinW2_eff](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-prec-sinw2-eff)**  |
-| libfeynhiggs fh_PrecisionObs_container | **[FeynHiggs_precision_sinW2](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-feynhiggs-precision-sinw2)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container | **[edm_n](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-edm-n)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container | **[FeynHiggs_precision_edm_n](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-feynhiggs-precision-edm-n)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container | **[double](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-double)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container | **[mw](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mw)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container | **[mw_from_SM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mw-from-sm-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container | **[SM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-sm-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[OLD_CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-old-capability)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[mw_from_ScalarSingletDM_Z3_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mw-from-scalarsingletdm-z3-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[ScalarSingletDM_Z3](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-scalarsingletdm-z3)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[ScalarSingletDM_Z3_running](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-scalarsingletdm-z3-running)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[ScalarSingletDM_Z3_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-scalarsingletdm-z3-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum | **[mw_from_DiracSingletDM_Z2_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mw-from-diracsingletdm-z2-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum | **[DiracSingletDM_Z2](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-diracsingletdm-z2)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum | **[DiracSingletDM_Z2_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-diracsingletdm-z2-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[mw_from_MSSM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mw-from-mssm-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[MSSM63atQ](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mssm63atq)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[MSSM63atMGUT](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mssm63atmgut)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[MSSM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mssm-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[mh](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mh)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[mh_from_ScalarSingletDM_Z2_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mh-from-scalarsingletdm-z2-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[ScalarSingletDM_Z2](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-scalarsingletdm-z2)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[ScalarSingletDM_Z2_running](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-scalarsingletdm-z2-running)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[ScalarSingletDM_Z2_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-scalarsingletdm-z2-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum | **[mh_from_MSSM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-mh-from-mssm-spectrum)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum | **[lnL_t_mass](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-lnl-t-mass)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum | **[SMINPUTS](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-sminputs)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs | **[lnL_mcmc](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-lnl-mcmc)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs SMInputs | **[lnL_alpha_s](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-lnl-alpha-s)**  |
-| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs SMInputs SMInputs | **[lnL_light_quark_masses](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-lnl-light-quark-masses)**  |
-| | **[libgm2calc](/documentation/code/files/precisionbit__rollcall_8hpp/#variable-libgm2calc)**  |
+| libfeynhiggs | **[deltarho](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs | **[NEW_CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs | **[FeynHiggs_precision_deltarho](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs | **[triplet< double >](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs | **[MSSM30atQ](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs | **[MSSM30atMGUT](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs | **[NUHM2](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs | **[Precision](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container | **[prec_sinW2_eff](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container | **[FeynHiggs_precision_sinW2](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container | **[edm_n](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container | **[FeynHiggs_precision_edm_n](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container | **[double](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container | **[mw](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container | **[mw_from_SM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container | **[SM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[OLD_CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[mw_from_ScalarSingletDM_Z3_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[ScalarSingletDM_Z3](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[ScalarSingletDM_Z3_running](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum | **[ScalarSingletDM_Z3_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum | **[mw_from_DiracSingletDM_Z2_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum | **[DiracSingletDM_Z2](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum | **[DiracSingletDM_Z2_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[mw_from_MSSM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[MSSM63atQ](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[MSSM63atMGUT](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum | **[MSSM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[mh](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[mh_from_ScalarSingletDM_Z2_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[ScalarSingletDM_Z2](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[ScalarSingletDM_Z2_running](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum | **[ScalarSingletDM_Z2_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum | **[mh_from_MSSM_spectrum](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum | **[lnL_t_mass](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum | **[SMINPUTS](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs | **[lnL_mcmc](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs SMInputs | **[lnL_alpha_s](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| libfeynhiggs fh_PrecisionObs_container fh_PrecisionObs_container fh_PrecisionObs_container Spectrum Spectrum Spectrum Spectrum Spectrum Spectrum SMInputs SMInputs SMInputs | **[lnL_light_quark_masses](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+| | **[libgm2calc](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/precisionbit__rollcall_8hpp/#define-module)**  |
-|  | **[REFERENCE](/documentation/code/files/precisionbit__rollcall_8hpp/#define-reference)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/#define-function)**  |
+|  | **[MODULE](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/precisionbit__rollcall_8hpp/)**  |
 
 ## Detailed Description
 
@@ -1267,4 +1267,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

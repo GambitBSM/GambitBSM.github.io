@@ -15,16 +15,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/#function-fcninfo2)**() |
-| | **[FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/#function-fcninfo2)**(Fptr p, std::set< int > s1, std::set< int > s2) |
+| | **[FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)**() |
+| | **[FcnInfo2](/documentation/code/classes/structgambit_1_1fcninfo2/)**(Fptr p, std::set< int > s1, std::set< int > s2) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| Fptr | **[fptr](/documentation/code/classes/structgambit_1_1fcninfo2/#variable-fptr)**  |
-| std::set< int > | **[iset1](/documentation/code/classes/structgambit_1_1fcninfo2/#variable-iset1)**  |
-| std::set< int > | **[iset2](/documentation/code/classes/structgambit_1_1fcninfo2/#variable-iset2)**  |
+| Fptr | **[fptr](/documentation/code/classes/structgambit_1_1fcninfo2/)**  |
+| std::set< int > | **[iset1](/documentation/code/classes/structgambit_1_1fcninfo2/)**  |
+| std::set< int > | **[iset2](/documentation/code/classes/structgambit_1_1fcninfo2/)**  |
 
 ## Detailed Description
 
@@ -78,4 +78,4 @@ std::set< int > iset2;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

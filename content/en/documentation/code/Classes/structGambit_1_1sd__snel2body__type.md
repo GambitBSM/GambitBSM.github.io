@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsnellneut](/documentation/code/classes/structgambit_1_1sd__snel2body__type/#variable-brsnellneut)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsnellchar](/documentation/code/classes/structgambit_1_1sd__snel2body__type/#variable-brsnellchar)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsnellneut](/documentation/code/classes/structgambit_1_1sd__snel2body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsnellchar](/documentation/code/classes/structgambit_1_1sd__snel2body__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -36,4 +36,4 @@ Farray< Fdouble, 1, 4 > brsnellchar;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

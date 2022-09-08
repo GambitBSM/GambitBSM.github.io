@@ -13,11 +13,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/gamlike__1__0__1_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/gamlike__1__0__1_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/gamlike__1__0__1_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/gamlike__1__0__1_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/gamlike__1__0__1_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/gamlike__1__0__1_8hpp/)**  |
+|  | **[BACKENDLANG](/documentation/code/files/gamlike__1__0__1_8hpp/)**  |
+|  | **[VERSION](/documentation/code/files/gamlike__1__0__1_8hpp/)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/gamlike__1__0__1_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/gamlike__1__0__1_8hpp/)**  |
 
 ## Detailed Description
 
@@ -144,4 +144,4 @@ BE_FUNCTION(los_integral_cpp, void, (std::vector<double>, std::vector<double>, d
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

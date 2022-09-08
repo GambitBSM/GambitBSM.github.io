@@ -18,13 +18,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[LL_name](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/#variable-ll-name)**  |
-| boost::numeric::ublas::matrix< double > | **[value_exp](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/#variable-value-exp)**  |
-| boost::numeric::ublas::matrix< double > | **[cov_exp](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/#variable-cov-exp)**  |
-| boost::numeric::ublas::matrix< double > | **[value_th](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/#variable-value-th)**  |
-| boost::numeric::ublas::matrix< double > | **[cov_th](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/#variable-cov-th)**  |
-| std::vector< double > | **[diff](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/#variable-diff)**  |
-| int | **[dim](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/#variable-dim)**  |
+| std::string | **[LL_name](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
+| boost::numeric::ublas::matrix< double > | **[value_exp](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
+| boost::numeric::ublas::matrix< double > | **[cov_exp](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
+| boost::numeric::ublas::matrix< double > | **[value_th](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
+| boost::numeric::ublas::matrix< double > | **[cov_th](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
+| std::vector< double > | **[diff](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
+| int | **[dim](/documentation/code/classes/structgambit_1_1flavbit_1_1predictions__measurements__covariances/)**  |
 
 ## Detailed Description
 
@@ -88,4 +88,4 @@ int dim;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

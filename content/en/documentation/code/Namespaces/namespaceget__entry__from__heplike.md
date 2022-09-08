@@ -13,9 +13,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[topdown](/documentation/code/namespaces/namespaceget__entry__from__heplike/#variable-topdown)**  |
-| | **[filename](/documentation/code/namespaces/namespaceget__entry__from__heplike/#variable-filename)**  |
-| string | **[request](/documentation/code/namespaces/namespaceget__entry__from__heplike/#variable-request)**  |
+| | **[topdown](/documentation/code/namespaces/namespaceget__entry__from__heplike/)**  |
+| | **[filename](/documentation/code/namespaces/namespaceget__entry__from__heplike/)**  |
+| string | **[request](/documentation/code/namespaces/namespaceget__entry__from__heplike/)**  |
 
 
 
@@ -47,4 +47,4 @@ string request =  r'{}'.format(load(f, Loader=Loader)[str(sys.argv[2])]);
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

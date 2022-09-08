@@ -13,21 +13,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[initialize](/documentation/code/namespaces/namespacelibsecond__1__1/#function-initialize)**(a a) |
-| def | **[someFunction](/documentation/code/namespaces/namespacelibsecond__1__1/#function-somefunction)**() |
-| def | **[hiddenFunction](/documentation/code/namespaces/namespacelibsecond__1__1/#function-hiddenfunction)**(x x) |
-| def | **[returnResult](/documentation/code/namespaces/namespacelibsecond__1__1/#function-returnresult)**() |
+| def | **[initialize](/documentation/code/namespaces/namespacelibsecond__1__1/)**(a a) |
+| def | **[someFunction](/documentation/code/namespaces/namespacelibsecond__1__1/)**() |
+| def | **[hiddenFunction](/documentation/code/namespaces/namespacelibsecond__1__1/)**(x x) |
+| def | **[returnResult](/documentation/code/namespaces/namespacelibsecond__1__1/)**() |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[array_length](/documentation/code/namespaces/namespacelibsecond__1__1/#variable-array-length)**  |
-| int | **[someInt](/documentation/code/namespaces/namespacelibsecond__1__1/#variable-someint)**  |
-| int | **[someDouble](/documentation/code/namespaces/namespacelibsecond__1__1/#variable-somedouble)**  |
-| list | **[someVector](/documentation/code/namespaces/namespacelibsecond__1__1/#variable-somevector)**  |
-| bool | **[isInitialized](/documentation/code/namespaces/namespacelibsecond__1__1/#variable-isinitialized)**  |
-| string | **[prefix](/documentation/code/namespaces/namespacelibsecond__1__1/#variable-prefix)**  |
+| int | **[array_length](/documentation/code/namespaces/namespacelibsecond__1__1/)**  |
+| int | **[someInt](/documentation/code/namespaces/namespacelibsecond__1__1/)**  |
+| int | **[someDouble](/documentation/code/namespaces/namespacelibsecond__1__1/)**  |
+| list | **[someVector](/documentation/code/namespaces/namespacelibsecond__1__1/)**  |
+| bool | **[isInitialized](/documentation/code/namespaces/namespacelibsecond__1__1/)**  |
+| string | **[prefix](/documentation/code/namespaces/namespacelibsecond__1__1/)**  |
 
 
 ## Functions Documentation
@@ -114,4 +114,4 @@ string prefix =  "libsecond 1.1: ";
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

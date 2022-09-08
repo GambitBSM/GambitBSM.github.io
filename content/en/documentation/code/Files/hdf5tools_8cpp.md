@@ -21,10 +21,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SIMPLE_CALL](/documentation/code/files/hdf5tools_8cpp/#define-simple-call)**(IDTYPE_OUT, FNAME, IDTYPE_IN, H5FUNCTION, VERB, OUTPUTNAME, INPUTNAME) <br>Macro to define simple wrappers with error checking for basic HDF5 tasks.  |
-|  | **[RUN_TYPE_DEPENDENT_CHECK](/documentation/code/files/hdf5tools_8cpp/#define-run-type-dependent-check)**(r, data, elem)  |
-|  | **[ELSEIF](/documentation/code/files/hdf5tools_8cpp/#define-elseif)**(r, data, elem)  |
-|  | **[PRINTTYPEID](/documentation/code/files/hdf5tools_8cpp/#define-printtypeid)**(r, data, elem)  |
+|  | **[SIMPLE_CALL](/documentation/code/files/hdf5tools_8cpp/)**(IDTYPE_OUT, FNAME, IDTYPE_IN, H5FUNCTION, VERB, OUTPUTNAME, INPUTNAME) <br>Macro to define simple wrappers with error checking for basic HDF5 tasks.  |
+|  | **[RUN_TYPE_DEPENDENT_CHECK](/documentation/code/files/hdf5tools_8cpp/)**(r, data, elem)  |
+|  | **[ELSEIF](/documentation/code/files/hdf5tools_8cpp/)**(r, data, elem)  |
+|  | **[PRINTTYPEID](/documentation/code/files/hdf5tools_8cpp/)**(r, data, elem)  |
 
 ## Detailed Description
 
@@ -980,4 +980,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

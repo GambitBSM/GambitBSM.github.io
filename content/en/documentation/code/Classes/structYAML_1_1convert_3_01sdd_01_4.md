@@ -15,8 +15,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Node | **[encode](/documentation/code/classes/structyaml_1_1convert_3_01sdd_01_4/#function-encode)**(const sdd & rhs) |
-| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01sdd_01_4/#function-decode)**(const Node & node, sdd & rhs) |
+| Node | **[encode](/documentation/code/classes/structyaml_1_1convert_3_01sdd_01_4/)**(const sdd & rhs) |
+| bool | **[decode](/documentation/code/classes/structyaml_1_1convert_3_01sdd_01_4/)**(const Node & node, sdd & rhs) |
 
 ## Public Functions Documentation
 
@@ -41,4 +41,4 @@ static inline bool decode(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

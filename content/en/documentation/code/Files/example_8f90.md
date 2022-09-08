@@ -21,8 +21,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| integer function | **[two](/documentation/code/files/example_8f90/#function-two)**() |
-| character *8 function | **[text](/documentation/code/files/example_8f90/#function-text)**() |
+| integer function | **[two](/documentation/code/files/example_8f90/)**() |
+| character *8 function | **[text](/documentation/code/files/example_8f90/)**() |
 
 
 ## Functions Documentation
@@ -88,4 +88,4 @@ end module mb
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:24 +0000

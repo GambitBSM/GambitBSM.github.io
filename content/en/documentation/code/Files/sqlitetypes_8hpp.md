@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[SQL_TYPES](/documentation/code/files/sqlitetypes_8hpp/#define-sql-types)**  |
-|  | **[SQL_BACKEND_TYPES](/documentation/code/files/sqlitetypes_8hpp/#define-sql-backend-types)**  |
+|  | **[SQL_TYPES](/documentation/code/files/sqlitetypes_8hpp/)**  |
+|  | **[SQL_BACKEND_TYPES](/documentation/code/files/sqlitetypes_8hpp/)**  |
 
 ## Detailed Description
 
@@ -119,4 +119,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

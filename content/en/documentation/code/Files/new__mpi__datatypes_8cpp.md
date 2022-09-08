@@ -23,7 +23,7 @@ description: "[No description available]"
 
 **Date**: 2015 May
 
-Function definitions for [new_mpi_datatypes.hpp](/documentation/code/files/new__mpi__datatypes_8hpp/#file-new-mpi-datatypes-hpp)
+Function definitions for [new_mpi_datatypes.hpp](/documentation/code/files/new__mpi__datatypes_8hpp/)
 
 NOTE: These have been moved out of Printers, and not all names reflect this yet.
 
@@ -254,4 +254,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

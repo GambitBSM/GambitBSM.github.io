@@ -13,17 +13,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[import_slha_string](/documentation/code/namespaces/namespacesalami__gambit/#function-import-slha-string)**(slha_string slha_string) |
-| def | **[set_parameters](/documentation/code/namespaces/namespacesalami__gambit/#function-set-parameters)**(params params) |
-| def | **[get_xsection](/documentation/code/namespaces/namespacesalami__gambit/#function-get-xsection)**(proc proc, energy energy, xsec_lo_fb xsec_lo_fb) |
+| def | **[import_slha_string](/documentation/code/namespaces/namespacesalami__gambit/)**(slha_string slha_string) |
+| def | **[set_parameters](/documentation/code/namespaces/namespacesalami__gambit/)**(params params) |
+| def | **[get_xsection](/documentation/code/namespaces/namespacesalami__gambit/)**(proc proc, energy energy, xsec_lo_fb xsec_lo_fb) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[prefix](/documentation/code/namespaces/namespacesalami__gambit/#variable-prefix)**  |
-| dictionary | **[KPREDS](/documentation/code/namespaces/namespacesalami__gambit/#variable-kpreds)**  |
-| | **[SLHA](/documentation/code/namespaces/namespacesalami__gambit/#variable-slha)**  |
+| string | **[prefix](/documentation/code/namespaces/namespacesalami__gambit/)**  |
+| dictionary | **[KPREDS](/documentation/code/namespaces/namespacesalami__gambit/)**  |
+| | **[SLHA](/documentation/code/namespaces/namespacesalami__gambit/)**  |
 
 
 ## Functions Documentation
@@ -86,4 +86,4 @@ SLHA =  None;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[hdf5_stuff](/documentation/code/classes/classgambit_1_1printers_1_1hdf5_1_1hdf5__stuff/#function-hdf5-stuff)**(const std::string & base_file_name, const std::string & output_file, const std::string & group_name, const size_t num, const bool cleanup, const bool skip, const std::vector< std::string > & input_files) |
-| | **[~hdf5_stuff](/documentation/code/classes/classgambit_1_1printers_1_1hdf5_1_1hdf5__stuff/#function-hdf5-stuff)**() |
-| void | **[Enter_Aux_Parameters](/documentation/code/classes/classgambit_1_1printers_1_1hdf5_1_1hdf5__stuff/#function-enter-aux-parameters)**(const std::string & output_file, bool resume =false) |
+| | **[hdf5_stuff](/documentation/code/classes/classgambit_1_1printers_1_1hdf5_1_1hdf5__stuff/)**(const std::string & base_file_name, const std::string & output_file, const std::string & group_name, const size_t num, const bool cleanup, const bool skip, const std::vector< std::string > & input_files) |
+| | **[~hdf5_stuff](/documentation/code/classes/classgambit_1_1printers_1_1hdf5_1_1hdf5__stuff/)**() |
+| void | **[Enter_Aux_Parameters](/documentation/code/classes/classgambit_1_1printers_1_1hdf5_1_1hdf5__stuff/)**(const std::string & output_file, bool resume =false) |
 
 ## Public Functions Documentation
 
@@ -58,4 +58,4 @@ Now copy the RA datasets
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

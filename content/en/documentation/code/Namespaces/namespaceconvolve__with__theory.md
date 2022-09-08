@@ -13,14 +13,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[convolve](/documentation/code/namespaces/namespaceconvolve__with__theory/#function-convolve)**(file_name file_name, frac_error frac_error =0.1, min_ min_ =0., max_ max_ =1., log_normal log_normal =True) |
+| def | **[convolve](/documentation/code/namespaces/namespaceconvolve__with__theory/)**(file_name file_name, frac_error frac_error =0.1, min_ min_ =0., max_ max_ =1., log_normal log_normal =True) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FILE_NAME](/documentation/code/namespaces/namespaceconvolve__with__theory/#variable-file-name)**  |
-| | **[ARGS](/documentation/code/namespaces/namespaceconvolve__with__theory/#variable-args)**  |
+| | **[FILE_NAME](/documentation/code/namespaces/namespaceconvolve__with__theory/)**  |
+| | **[ARGS](/documentation/code/namespaces/namespaceconvolve__with__theory/)**  |
 
 ## Detailed Description
 
@@ -92,4 +92,4 @@ ARGS =  map(float, sys.argv[2:]);
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

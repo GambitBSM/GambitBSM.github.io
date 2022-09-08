@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [__is_container__](/documentation/code/classes/structgambit_1_1____is__container____/)< typenameremove_all< T >::type >::type | **[type](/documentation/code/classes/structgambit_1_1is__container/#typedef-type)**  |
+| typedef [__is_container__](/documentation/code/classes/structgambit_1_1____is__container____/)< typenameremove_all< T >::type >::type | **[type](/documentation/code/classes/structgambit_1_1is__container/)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1is__container/#variable-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1is__container/)**  |
 
 ## Detailed Description
 
@@ -50,4 +50,4 @@ static const bool value = __is_container__<typename remove_all<T>::type>::value;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

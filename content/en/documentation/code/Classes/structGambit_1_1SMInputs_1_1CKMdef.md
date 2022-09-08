@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[lambda](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/#variable-lambda)**  |
-| double | **[A](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/#variable-a)**  |
-| double | **[rhobar](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/#variable-rhobar)**  |
-| double | **[etabar](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/#variable-etabar)**  |
+| double | **[lambda](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/)**  |
+| double | **[A](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/)**  |
+| double | **[rhobar](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/)**  |
+| double | **[etabar](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ double etabar;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

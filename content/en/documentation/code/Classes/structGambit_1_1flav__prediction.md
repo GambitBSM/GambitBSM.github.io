@@ -17,8 +17,8 @@ Flavour observables structure holding central values and covariances.
 
 |                | Name           |
 | -------------- | -------------- |
-| [flav_observable_map](/documentation/code/namespaces/namespacegambit/#typedef-flav-observable-map) | **[central_values](/documentation/code/classes/structgambit_1_1flav__prediction/#variable-central-values)**  |
-| flav_covariance_map | **[covariance](/documentation/code/classes/structgambit_1_1flav__prediction/#variable-covariance)**  |
+| [flav_observable_map](/documentation/code/namespaces/namespacegambit/) | **[central_values](/documentation/code/classes/structgambit_1_1flav__prediction/)**  |
+| flav_covariance_map | **[covariance](/documentation/code/classes/structgambit_1_1flav__prediction/)**  |
 
 ## Public Attributes Documentation
 
@@ -38,4 +38,4 @@ flav_covariance_map covariance;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[LOCAL_INFO](/documentation/code/files/local__info_8hpp/#define-local-info)**  |
+|  | **[LOCAL_INFO](/documentation/code/files/local__info_8hpp/)**  |
 
 ## Detailed Description
 
@@ -99,4 +99,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

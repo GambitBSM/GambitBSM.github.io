@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/#function-cholesky)**() |
-| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/#function-cholesky)**(const int num) |
-| bool | **[EnterMat](/documentation/code/classes/classgambit_1_1cholesky/#function-entermat)**(std::vector< std::vector< double > > & a) |
-| void | **[ElMult](/documentation/code/classes/classgambit_1_1cholesky/#function-elmult)**(std::vector< double > & y) const |
-| std::vector< double > | **[invElMult](/documentation/code/classes/classgambit_1_1cholesky/#function-invelmult)**(const std::vector< double > & y) const<br>x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/classes/classgambit_1_1cholesky/) matrix  |
-| double | **[Square](/documentation/code/classes/classgambit_1_1cholesky/#function-square)**(const std::vector< double > & y, const std::vector< double > & y0) |
-| double | **[DetSqrt](/documentation/code/classes/classgambit_1_1cholesky/#function-detsqrt)**() |
+| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/)**() |
+| | **[Cholesky](/documentation/code/classes/classgambit_1_1cholesky/)**(const int num) |
+| bool | **[EnterMat](/documentation/code/classes/classgambit_1_1cholesky/)**(std::vector< std::vector< double > > & a) |
+| void | **[ElMult](/documentation/code/classes/classgambit_1_1cholesky/)**(std::vector< double > & y) const |
+| std::vector< double > | **[invElMult](/documentation/code/classes/classgambit_1_1cholesky/)**(const std::vector< double > & y) const<br>x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/classes/classgambit_1_1cholesky/) matrix  |
+| double | **[Square](/documentation/code/classes/classgambit_1_1cholesky/)**(const std::vector< double > & y, const std::vector< double > & y0) |
+| double | **[DetSqrt](/documentation/code/classes/classgambit_1_1cholesky/)**() |
 
 ## Public Functions Documentation
 
@@ -91,4 +91,4 @@ inline double DetSqrt()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

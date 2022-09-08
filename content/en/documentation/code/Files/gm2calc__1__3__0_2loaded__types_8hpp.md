@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[gm2calc_1_3_0_all_data](/documentation/code/files/gm2calc__1__3__0_2loaded__types_8hpp/#define-gm2calc-1-3-0-all-data)**  |
+|  | **[gm2calc_1_3_0_all_data](/documentation/code/files/gm2calc__1__3__0_2loaded__types_8hpp/)**  |
 
 
 
@@ -86,4 +86,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

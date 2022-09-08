@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds5__smcuseful/#variable-roption)**  |
+| [Fstring](/documentation/code/classes/classgambit_1_1fstring/)< 5 > | **[roption](/documentation/code/classes/structgambit_1_1ds5__smcuseful/)**  |
 
 ## Public Attributes Documentation
 
@@ -28,4 +28,4 @@ Fstring< 5 > roption;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

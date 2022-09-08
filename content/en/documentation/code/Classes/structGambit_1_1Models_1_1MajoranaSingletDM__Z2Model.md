@@ -18,21 +18,21 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[HiggsPoleMass](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-higgspolemass)**  |
-| double | **[HiggsVEV](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-higgsvev)**  |
-| double | **[MajoranaPoleMass](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-majoranapolemass)**  |
-| double | **[MajoranaLambda](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-majoranalambda)**  |
-| double | **[MajoranaXi](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-majoranaxi)**  |
-| double | **[HiggsPoleMass_1srd_low](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-higgspolemass-1srd-low)**  |
-| double | **[HiggsPoleMass_1srd_high](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-higgspolemass-1srd-high)**  |
-| double | **[LambdaH](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-lambdah)**  |
-| double | **[g1](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-g1)**  |
-| double | **[g2](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-g2)**  |
-| double | **[g3](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-g3)**  |
-| double | **[sinW2](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-sinw2)**  |
-| double[3] | **[Yd](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-yd)**  |
-| double[3] | **[Ye](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-ye)**  |
-| double[3] | **[Yu](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/#variable-yu)**  |
+| double | **[HiggsPoleMass](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[HiggsVEV](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[MajoranaPoleMass](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[MajoranaLambda](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[MajoranaXi](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[HiggsPoleMass_1srd_low](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[HiggsPoleMass_1srd_high](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[LambdaH](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[g1](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[g2](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[g3](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double | **[sinW2](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double[3] | **[Yd](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double[3] | **[Ye](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
+| double[3] | **[Yu](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
 
 ## Detailed Description
 
@@ -152,4 +152,4 @@ double[3] Yu;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[erg](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-erg)**  |
-| double | **[rad](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-rad)**  |
-| [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) * | **[sol](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params1/#variable-sol)**  |
+| double | **[erg](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params1/)**  |
+| double | **[rad](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params1/)**  |
+| [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) * | **[sol](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params1/)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ SolarModel * sol;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

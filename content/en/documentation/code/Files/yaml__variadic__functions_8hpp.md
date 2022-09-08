@@ -24,7 +24,7 @@ description: "[No description available]"
 
 Variadic utilty functions which work with [YAML](/documentation/code/namespaces/namespaceyaml/) objects.
 
-Separated from [variadic_functions.hpp](/documentation/code/files/variadic__functions_8hpp/#file-variadic-functions-hpp) to avoid having the [YAML](/documentation/code/namespaces/namespaceyaml/) headers included everywhere.
+Separated from [variadic_functions.hpp](/documentation/code/files/variadic__functions_8hpp/) to avoid having the [YAML](/documentation/code/namespaces/namespaceyaml/) headers included everywhere.
 
 
 
@@ -105,4 +105,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

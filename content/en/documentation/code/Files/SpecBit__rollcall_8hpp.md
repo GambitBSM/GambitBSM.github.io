@@ -13,26 +13,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[QUICK_FUNCTION](/documentation/code/files/specbit__rollcall_8hpp/#function-quick-function)**([MODULE](/documentation/code/files/examplebit__b__rollcall_8hpp/#define-module) , SM_spectrum , OLD_CAPABILITY , convert_MSSM_to_SM , Spectrum , (MSSM63atQ, MSSM63atMGUT) , (MSSM_spectrum, Spectrum) )<br>Module function declarations for [SpecBit_SM.cpp]().  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/) | **[QUICK_FUNCTION](/documentation/code/files/specbit__rollcall_8hpp/)**([MODULE](/documentation/code/files/examplebit__b__rollcall_8hpp/) , SM_spectrum , OLD_CAPABILITY , convert_MSSM_to_SM , Spectrum , (MSSM63atQ, MSSM63atMGUT) , (MSSM_spectrum, Spectrum) )<br>Module function declarations for [SpecBit_SM.cpp]().  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[SM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-sm-spectrum)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[OLD_CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/#variable-old-capability)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[convert_NMSSM_to_SM](/documentation/code/files/specbit__rollcall_8hpp/#variable-convert-nmssm-to-sm)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[Spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-spectrum)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[NMSSM_does_not_exist_yet](/documentation/code/files/specbit__rollcall_8hpp/#variable-nmssm-does-not-exist-yet)**  |
-| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) | **[NMSSM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/#variable-nmssm-spectrum)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/) | **[SM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/) | **[OLD_CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/) | **[convert_NMSSM_to_SM](/documentation/code/files/specbit__rollcall_8hpp/)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/) | **[Spectrum](/documentation/code/files/specbit__rollcall_8hpp/)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/) | **[NMSSM_does_not_exist_yet](/documentation/code/files/specbit__rollcall_8hpp/)**  |
+| [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/) | **[NMSSM_spectrum](/documentation/code/files/specbit__rollcall_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/specbit__rollcall_8hpp/#define-module)**  |
-|  | **[REFERENCE](/documentation/code/files/specbit__rollcall_8hpp/#define-reference)**  |
-|  | **[CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/#define-capability)**  |
+|  | **[MODULE](/documentation/code/files/specbit__rollcall_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/specbit__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/specbit__rollcall_8hpp/)**  |
 
 ## Detailed Description
 
@@ -82,7 +82,7 @@ START_CAPABILITY QUICK_FUNCTION(
 
 Module function declarations for [SpecBit_SM.cpp](). 
 
-Module function declarations for [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/#file-specbit-mssm-cpp) Module function declarations for [SpecBit_ScalarSingletDM.cpp](/documentation/code/files/specbit__scalarsingletdm_8cpp/#file-specbit-scalarsingletdm-cpp) Module function declarations for SpecBit_VectorSingletDM_Z2.cpp Module function declarations for SpecBit_MajoranaSingletDM_Z2.cpp Module function declarations for SpecBit_DiracSingletDM_Z2.cpp Module function declarations for [SpecBit_MDM.cpp](/documentation/code/files/specbit__mdm_8cpp/#file-specbit-mdm-cpp) Module function declarations for SpecBit_tests.cpp (new tests) Module function declarations for [SpecBit_DMEFT.cpp](/documentation/code/files/specbit__dmeft_8cpp/#file-specbit-dmeft-cpp) For SpecBit testing only Functions to change the capability associated with a Spectrum object to "SM_spectrum" 
+Module function declarations for [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/) Module function declarations for [SpecBit_ScalarSingletDM.cpp](/documentation/code/files/specbit__scalarsingletdm_8cpp/) Module function declarations for SpecBit_VectorSingletDM_Z2.cpp Module function declarations for SpecBit_MajoranaSingletDM_Z2.cpp Module function declarations for SpecBit_DiracSingletDM_Z2.cpp Module function declarations for [SpecBit_MDM.cpp](/documentation/code/files/specbit__mdm_8cpp/) Module function declarations for SpecBit_tests.cpp (new tests) Module function declarations for [SpecBit_DMEFT.cpp](/documentation/code/files/specbit__dmeft_8cpp/) For SpecBit testing only Functions to change the capability associated with a Spectrum object to "SM_spectrum" 
 
 
 
@@ -264,4 +264,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

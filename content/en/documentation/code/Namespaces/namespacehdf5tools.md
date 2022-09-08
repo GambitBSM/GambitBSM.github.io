@@ -13,20 +13,20 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[get_dset_lengths](/documentation/code/namespaces/namespacehdf5tools/#function-get-dset-lengths)**(d d, group group, dsets dsets) |
-| def | **[check_lengths](/documentation/code/namespaces/namespacehdf5tools/#function-check-lengths)**(d d) |
-| def | **[copy_dset](/documentation/code/namespaces/namespacehdf5tools/#function-copy-dset)**(indset indset, outdset outdset, nextempty nextempty, basemsg basemsg ="") |
-| def | **[copy_dset_whole](/documentation/code/namespaces/namespacehdf5tools/#function-copy-dset-whole)**(indset indset, outdset outdset, nextempty nextempty, basemsg basemsg ="") |
-| def | **[cantor_pairing](/documentation/code/namespaces/namespacehdf5tools/#function-cantor-pairing)**(x x, y y) |
-| def | **[check_for_duplicates](/documentation/code/namespaces/namespacehdf5tools/#function-check-for-duplicates)**(fout fout, group group) |
+| def | **[get_dset_lengths](/documentation/code/namespaces/namespacehdf5tools/)**(d d, group group, dsets dsets) |
+| def | **[check_lengths](/documentation/code/namespaces/namespacehdf5tools/)**(d d) |
+| def | **[copy_dset](/documentation/code/namespaces/namespacehdf5tools/)**(indset indset, outdset outdset, nextempty nextempty, basemsg basemsg ="") |
+| def | **[copy_dset_whole](/documentation/code/namespaces/namespacehdf5tools/)**(indset indset, outdset outdset, nextempty nextempty, basemsg basemsg ="") |
+| def | **[cantor_pairing](/documentation/code/namespaces/namespacehdf5tools/)**(x x, y y) |
+| def | **[check_for_duplicates](/documentation/code/namespaces/namespacehdf5tools/)**(fout fout, group group) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[chunksize](/documentation/code/namespaces/namespacehdf5tools/#variable-chunksize)**  |
-| int | **[bufferlength](/documentation/code/namespaces/namespacehdf5tools/#variable-bufferlength)**  |
-| int | **[max_ppidpairs](/documentation/code/namespaces/namespacehdf5tools/#variable-max-ppidpairs)**  |
+| int | **[chunksize](/documentation/code/namespaces/namespacehdf5tools/)**  |
+| int | **[bufferlength](/documentation/code/namespaces/namespacehdf5tools/)**  |
+| int | **[max_ppidpairs](/documentation/code/namespaces/namespacehdf5tools/)**  |
 
 ## Detailed Description
 
@@ -132,4 +132,4 @@ int max_ppidpairs =  10*bufferlength;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

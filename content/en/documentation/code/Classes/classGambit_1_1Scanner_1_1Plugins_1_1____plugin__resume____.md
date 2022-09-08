@@ -19,9 +19,9 @@ Inherits from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-plugin-resume)**(T & data) |
-| virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-print)**(std::ofstream & out) |
-| | **[~__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/#function-plugin-resume)**() |
+| | **[__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/)**(T & data) |
+| virtual void | **[print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/)**(std::ofstream & out) |
+| | **[~__plugin_resume__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume____/)**() |
 
 ## Additional inherited members
 
@@ -29,7 +29,7 @@ Inherits from [Gambit::Scanner::Plugins::__plugin_resume_base__](/documentation/
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-plugin-resume-base)**() |
+| virtual | **[~__plugin_resume_base__](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)**() |
 
 
 ## Detailed Description
@@ -60,7 +60,7 @@ inline virtual void print(
 ```
 
 
-**Reimplements**: [Gambit::Scanner::Plugins::__plugin_resume_base__::print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/#function-print)
+**Reimplements**: [Gambit::Scanner::Plugins::__plugin_resume_base__::print](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1____plugin__resume__base____/)
 
 
 ### function ~__plugin_resume__
@@ -72,4 +72,4 @@ inline ~__plugin_resume__()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

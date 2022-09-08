@@ -15,17 +15,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-slhacombo)**(const std::string & t, const std::string & b, int i) |
-| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-slhacombo)**(const std::string & t, const std::string & b, int i, int j) |
-| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#function-slhacombo)**() |
+| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/)**(const std::string & t, const std::string & b, int i) |
+| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/)**(const std::string & t, const std::string & b, int i, int j) |
+| | **[SLHAcombo](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[tag](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-tag)**  |
-| std::string | **[block](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-block)**  |
-| std::vector< int > | **[indices](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/#variable-indices)**  |
+| std::string | **[tag](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/)**  |
+| std::string | **[block](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/)**  |
+| std::vector< int > | **[indices](/documentation/code/classes/structgambit_1_1printers_1_1slhacombo/)**  |
 
 ## Public Functions Documentation
 
@@ -84,4 +84,4 @@ std::vector< int > indices;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

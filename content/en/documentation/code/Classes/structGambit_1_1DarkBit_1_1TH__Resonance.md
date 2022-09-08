@@ -17,15 +17,15 @@ A single resonance of a given width at a given energy (both in GeV)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/#function-th-resonance)**() |
-| | **[TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/#function-th-resonance)**(double energy, double width) |
+| | **[TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/)**() |
+| | **[TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/)**(double energy, double width) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[energy](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/#variable-energy)**  |
-| double | **[width](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/#variable-width)**  |
+| double | **[energy](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/)**  |
+| double | **[width](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/)**  |
 
 ## Public Functions Documentation
 
@@ -64,4 +64,4 @@ double width;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

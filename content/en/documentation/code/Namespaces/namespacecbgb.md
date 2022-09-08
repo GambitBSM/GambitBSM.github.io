@@ -13,40 +13,40 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[input_cfg_path](/documentation/code/namespaces/namespacecbgb/#variable-input-cfg-path)**  |
-| | **[input_cfg_dir](/documentation/code/namespaces/namespacecbgb/#variable-input-cfg-dir)**  |
-| | **[input_cfg_filename](/documentation/code/namespaces/namespacecbgb/#variable-input-cfg-filename)**  |
-| | **[input_cfg_modulename](/documentation/code/namespaces/namespacecbgb/#variable-input-cfg-modulename)**  |
-| | **[ext](/documentation/code/namespaces/namespacecbgb/#variable-ext)**  |
-| | **[module_name](/documentation/code/namespaces/namespacecbgb/#variable-module-name)**  |
-| | **[cfg](/documentation/code/namespaces/namespacecbgb/#variable-cfg)**  |
-| string | **[f_listing](/documentation/code/namespaces/namespacecbgb/#variable-f-listing)**  |
-| list | **[f_duplicates](/documentation/code/namespaces/namespacecbgb/#variable-f-duplicates)**  |
-| string | **[cb_listing](/documentation/code/namespaces/namespacecbgb/#variable-cb-listing)**  |
-| list | **[cb_duplicates](/documentation/code/namespaces/namespacecbgb/#variable-cb-duplicates)**  |
-| string | **[src_content](/documentation/code/namespaces/namespacecbgb/#variable-src-content)**  |
-| string | **[src_lines](/documentation/code/namespaces/namespacecbgb/#variable-src-lines)**  |
-| | **[code_parts_dict](/documentation/code/namespaces/namespacecbgb/#variable-code-parts-dict)**  |
-| string | **[be_types_file_content](/documentation/code/namespaces/namespacecbgb/#variable-be-types-file-content)**  |
-| string | **[frontend_file_content](/documentation/code/namespaces/namespacecbgb/#variable-frontend-file-content)**  |
-| | **[functions_left](/documentation/code/namespaces/namespacecbgb/#variable-functions-left)**  |
-| | **[code_lines](/documentation/code/namespaces/namespacecbgb/#variable-code-lines)**  |
-| | **[code_category](/documentation/code/namespaces/namespacecbgb/#variable-code-category)**  |
-| | **[f_name](/documentation/code/namespaces/namespacecbgb/#variable-f-name)**  |
-| | **[f_name_short](/documentation/code/namespaces/namespacecbgb/#variable-f-name-short)**  |
-| list | **[other_f_list](/documentation/code/namespaces/namespacecbgb/#variable-other-f-list)**  |
-| bool | **[found_other_f](/documentation/code/namespaces/namespacecbgb/#variable-found-other-f)**  |
-| | **[other_f_name_short](/documentation/code/namespaces/namespacecbgb/#variable-other-f-name-short)**  |
-| bool | **[is_requested](/documentation/code/namespaces/namespacecbgb/#variable-is-requested)**  |
-| | **[use_f_name](/documentation/code/namespaces/namespacecbgb/#variable-use-f-name)**  |
-| | **[return_type_info](/documentation/code/namespaces/namespacecbgb/#variable-return-type-info)**  |
-| | **[parameter_defs](/documentation/code/namespaces/namespacecbgb/#variable-parameter-defs)**  |
-| | **[arg_names](/documentation/code/namespaces/namespacecbgb/#variable-arg-names)**  |
-| | **[arg_info_dict](/documentation/code/namespaces/namespacecbgb/#variable-arg-info-dict)**  |
-| | **[f_dict](/documentation/code/namespaces/namespacecbgb/#variable-f-dict)**  |
-| | **[common_blocks_left](/documentation/code/namespaces/namespacecbgb/#variable-common-blocks-left)**  |
-| | **[cb_dicts](/documentation/code/namespaces/namespacecbgb/#variable-cb-dicts)**  |
-| | **[var_info_dict](/documentation/code/namespaces/namespacecbgb/#variable-var-info-dict)**  |
+| | **[input_cfg_path](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[input_cfg_dir](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[input_cfg_filename](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[input_cfg_modulename](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[ext](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[module_name](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[cfg](/documentation/code/namespaces/namespacecbgb/)**  |
+| string | **[f_listing](/documentation/code/namespaces/namespacecbgb/)**  |
+| list | **[f_duplicates](/documentation/code/namespaces/namespacecbgb/)**  |
+| string | **[cb_listing](/documentation/code/namespaces/namespacecbgb/)**  |
+| list | **[cb_duplicates](/documentation/code/namespaces/namespacecbgb/)**  |
+| string | **[src_content](/documentation/code/namespaces/namespacecbgb/)**  |
+| string | **[src_lines](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[code_parts_dict](/documentation/code/namespaces/namespacecbgb/)**  |
+| string | **[be_types_file_content](/documentation/code/namespaces/namespacecbgb/)**  |
+| string | **[frontend_file_content](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[functions_left](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[code_lines](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[code_category](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[f_name](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[f_name_short](/documentation/code/namespaces/namespacecbgb/)**  |
+| list | **[other_f_list](/documentation/code/namespaces/namespacecbgb/)**  |
+| bool | **[found_other_f](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[other_f_name_short](/documentation/code/namespaces/namespacecbgb/)**  |
+| bool | **[is_requested](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[use_f_name](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[return_type_info](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[parameter_defs](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[arg_names](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[arg_info_dict](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[f_dict](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[common_blocks_left](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[cb_dicts](/documentation/code/namespaces/namespacecbgb/)**  |
+| | **[var_info_dict](/documentation/code/namespaces/namespacecbgb/)**  |
 
 
 
@@ -295,4 +295,4 @@ var_info_dict =  utils.getVariablesDict(code_lines, cb_dict['member_names']);
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

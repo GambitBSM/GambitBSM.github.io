@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[pdivr](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-pdivr)**  |
-| Fdouble | **[dpres](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-dpres)**  |
-| Finteger | **[nlow](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nlow)**  |
-| Finteger | **[nhigh](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nhigh)**  |
-| Finteger | **[npres](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-npres)**  |
-| Finteger | **[nthup](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-nthup)**  |
-| Finteger | **[cthtest](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-cthtest)**  |
-| Finteger | **[spltest](/documentation/code/classes/structgambit_1_1ds__rdpadd/#variable-spltest)**  |
+| Fdouble | **[pdivr](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
+| Fdouble | **[dpres](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
+| Finteger | **[nlow](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
+| Finteger | **[nhigh](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
+| Finteger | **[npres](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
+| Finteger | **[nthup](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
+| Finteger | **[cthtest](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
+| Finteger | **[spltest](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
 
 ## Public Attributes Documentation
 
@@ -84,4 +84,4 @@ Finteger spltest;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

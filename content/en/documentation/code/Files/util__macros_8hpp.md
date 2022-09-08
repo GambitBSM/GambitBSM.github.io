@@ -13,148 +13,148 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[FAIL](/documentation/code/files/util__macros_8hpp/#define-fail)**(x)  |
-|  | **[APPEND_TOKEN](/documentation/code/files/util__macros_8hpp/#define-append-token)**(s, data, elem)  |
-|  | **[DUMMY](/documentation/code/files/util__macros_8hpp/#define-dummy)**  |
-|  | **[DUMMYARG](/documentation/code/files/util__macros_8hpp/#define-dummyarg)**(...)  |
-|  | **[FIRST_ARG](/documentation/code/files/util__macros_8hpp/#define-first-arg)**(A1, ...)  |
-|  | **[REMFIRST](/documentation/code/files/util__macros_8hpp/#define-remfirst)**(...)  |
-|  | **[REMFIRST_I](/documentation/code/files/util__macros_8hpp/#define-remfirst-i)**(A1, ...)  |
-|  | **[APPLY](/documentation/code/files/util__macros_8hpp/#define-apply)**(macro, args)  |
-|  | **[APPLY_I](/documentation/code/files/util__macros_8hpp/#define-apply-i)**(macro, args)  |
-|  | **[STRIP_PARENS](/documentation/code/files/util__macros_8hpp/#define-strip-parens)**(x)  |
-|  | **[STRIP_PARENS_I](/documentation/code/files/util__macros_8hpp/#define-strip-parens-i)**(...)  |
-|  | **[EVAL_PAR](/documentation/code/files/util__macros_8hpp/#define-eval-par)**(test, x)  |
-|  | **[EVAL_PAR_I](/documentation/code/files/util__macros_8hpp/#define-eval-par-i)**(test, x)  |
-|  | **[TEST_ARITY](/documentation/code/files/util__macros_8hpp/#define-test-arity)**(...)  |
-|  | **[TEST_ARITY_I](/documentation/code/files/util__macros_8hpp/#define-test-arity-i)**(a, b, c, ...)  |
-|  | **[MAYBE_STRIP_PARENS](/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens)**(cond, x)  |
-|  | **[MAYBE_STRIP_PARENS_I](/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens-i)**(cond, x)  |
-|  | **[MAYBE_STRIP_PARENS_1](/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens-1)**(x)  |
-|  | **[MAYBE_STRIP_PARENS_2](/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens-2)**(x)  |
-|  | **[MAYBE_STRIP_PARENS_2_I](/documentation/code/files/util__macros_8hpp/#define-maybe-strip-parens-2-i)**(...)  |
-|  | **[HAS_PARENS](/documentation/code/files/util__macros_8hpp/#define-has-parens)**(x)  |
-|  | **[HAS_PARENS_I](/documentation/code/files/util__macros_8hpp/#define-has-parens-i)**(...)  |
-|  | **[EVAL_HASP](/documentation/code/files/util__macros_8hpp/#define-eval-hasp)**(test, x)  |
-|  | **[EVAL_HASP_I](/documentation/code/files/util__macros_8hpp/#define-eval-hasp-i)**(test, x)  |
-|  | **[CHECK_PARENS](/documentation/code/files/util__macros_8hpp/#define-check-parens)**(cond, x)  |
-|  | **[CHECK_PARENS_I](/documentation/code/files/util__macros_8hpp/#define-check-parens-i)**(cond, x)  |
-|  | **[CHECK_PARENS_1](/documentation/code/files/util__macros_8hpp/#define-check-parens-1)**(x)  |
-|  | **[CHECK_PARENS_2](/documentation/code/files/util__macros_8hpp/#define-check-parens-2)**(x)  |
-|  | **[_ARG128](/documentation/code/files/util__macros_8hpp/#define-arg128)**(_0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69, _70, _71, _72, _73, _74, _75, _76, _77, _78, _79, _80, _81, _82, _83, _84, _85, _86, _87, _88, _89, _90, _91, _92, _93, _94, _95, _96, _97, _98, _99, _100, _101, _102, _103, _104, _105, _106, _107, _108, _109, _110, _111, _112, _113, _114, _115, _116, _117, _118, _119, _120, _121, _122, _123, _124, _125, _126, _127, ...)  |
-|  | **[HAS_COMMA](/documentation/code/files/util__macros_8hpp/#define-has-comma)**(...)  |
-|  | **[ISEMPTY](/documentation/code/files/util__macros_8hpp/#define-isempty)**(ARG)  |
-|  | **[ISEMPTY_I](/documentation/code/files/util__macros_8hpp/#define-isempty-i)**(A)  |
-|  | **[ISEMPTY_II](/documentation/code/files/util__macros_8hpp/#define-isempty-ii)**(...)  |
-|  | **[_129ONES](/documentation/code/files/util__macros_8hpp/#define-129ones)**()  |
-|  | **[INSERT_NONEMPTY](/documentation/code/files/util__macros_8hpp/#define-insert-nonempty)**(ARG)  |
-|  | **[INSERT_NONEMPTY_I0](/documentation/code/files/util__macros_8hpp/#define-insert-nonempty-i0)**(ARG)  |
-|  | **[INSERT_NONEMPTY_I1](/documentation/code/files/util__macros_8hpp/#define-insert-nonempty-i1)**(...)  |
-|  | **[PAIR_ELEMENT0](/documentation/code/files/util__macros_8hpp/#define-pair-element0)**(TPLE)  |
-|  | **[PAIR_ELEMENT0_I](/documentation/code/files/util__macros_8hpp/#define-pair-element0-i)**(A, B)  |
-|  | **[PAIR_ELEMENT1](/documentation/code/files/util__macros_8hpp/#define-pair-element1)**(TPLE)  |
-|  | **[PAIR_ELEMENT1_I](/documentation/code/files/util__macros_8hpp/#define-pair-element1-i)**(A, B)  |
-|  | **[void_void](/documentation/code/files/util__macros_8hpp/#define-void-void)**  |
-|  | **[int_int](/documentation/code/files/util__macros_8hpp/#define-int-int)**  |
-|  | **[float_float](/documentation/code/files/util__macros_8hpp/#define-float-float)**  |
-|  | **[double_double](/documentation/code/files/util__macros_8hpp/#define-double-double)**  |
-|  | **[bool_bool](/documentation/code/files/util__macros_8hpp/#define-bool-bool)**  |
-|  | **[char_char](/documentation/code/files/util__macros_8hpp/#define-char-char)**  |
-|  | **[string_string](/documentation/code/files/util__macros_8hpp/#define-string-string)**  |
-|  | **[ModelParameters_ModelParameters](/documentation/code/files/util__macros_8hpp/#define-modelparameters-modelparameters)**  |
-|  | **[IS_TYPE](/documentation/code/files/util__macros_8hpp/#define-is-type)**(COMPTYPE, TYPE)  |
-|  | **[IS_EQUAL](/documentation/code/files/util__macros_8hpp/#define-is-equal)**(A, B)  |
-|  | **[IF_EQUAL](/documentation/code/files/util__macros_8hpp/#define-if-equal)**(A, B, C)  |
-|  | **[IF_NOT_EQUAL](/documentation/code/files/util__macros_8hpp/#define-if-not-equal)**(A, B, C)  |
-|  | **[IF_ELSE_EQUAL](/documentation/code/files/util__macros_8hpp/#define-if-else-equal)**(A, B, C, D)  |
-|  | **[EMPTY_TOKEN_TESTER](/documentation/code/files/util__macros_8hpp/#define-empty-token-tester)**  |
-|  | **[IS_EMPTY](/documentation/code/files/util__macros_8hpp/#define-is-empty)**(A)  |
-|  | **[IF_EMPTY](/documentation/code/files/util__macros_8hpp/#define-if-empty)**(A, B)  |
-|  | **[IF_NOT_EMPTY](/documentation/code/files/util__macros_8hpp/#define-if-not-empty)**(A, B)  |
-|  | **[IF_ELSE_EMPTY](/documentation/code/files/util__macros_8hpp/#define-if-else-empty)**(A, B, C)  |
-|  | **[VA_NARGS_IMPL](/documentation/code/files/util__macros_8hpp/#define-va-nargs-impl)**(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...)  |
-|  | **[VA_NARGS](/documentation/code/files/util__macros_8hpp/#define-va-nargs)**(...)  |
-|  | **[VARARG_IMPL2](/documentation/code/files/util__macros_8hpp/#define-vararg-impl2)**(base, count, ...)  |
-|  | **[VARARG_IMPL](/documentation/code/files/util__macros_8hpp/#define-vararg-impl)**(base, count, ...)  |
-|  | **[VARARG](/documentation/code/files/util__macros_8hpp/#define-vararg)**(base, ...)  |
-|  | **[VA_NARGS_NESTED_IMPL](/documentation/code/files/util__macros_8hpp/#define-va-nargs-nested-impl)**(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...)  |
-|  | **[VA_NARGS_NESTED](/documentation/code/files/util__macros_8hpp/#define-va-nargs-nested)**(...)  |
-|  | **[VARARG_NESTED_IMPL2](/documentation/code/files/util__macros_8hpp/#define-vararg-nested-impl2)**(base, count, ...)  |
-|  | **[VARARG_NESTED_IMPL](/documentation/code/files/util__macros_8hpp/#define-vararg-nested-impl)**(base, count, ...)  |
-|  | **[VARARG_NESTED](/documentation/code/files/util__macros_8hpp/#define-vararg-nested)**(base, ...)  |
-|  | **[VA_NARGS_AB_IMPL](/documentation/code/files/util__macros_8hpp/#define-va-nargs-ab-impl)**(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...)  |
-|  | **[VA_NARGS_AB](/documentation/code/files/util__macros_8hpp/#define-va-nargs-ab)**(...)  |
-|  | **[VARARG_AB_IMPL2](/documentation/code/files/util__macros_8hpp/#define-vararg-ab-impl2)**(base, A, B, count, ...)  |
-|  | **[VARARG_AB_IMPL](/documentation/code/files/util__macros_8hpp/#define-vararg-ab-impl)**(base, A, B, count, ...)  |
-|  | **[VARARG_AB](/documentation/code/files/util__macros_8hpp/#define-vararg-ab)**(base, A, B, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_TESTER_1](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-tester-1)**  |
-|  | **[VA_NARGS_SWITCH_ON_GT_ONE_IMPL](/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-impl)**(_1, _2, _3, N, ...)  |
-|  | **[VA_NARGS_SWITCH_ON_GT_ONE](/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one)**(...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_IMPL2](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-impl2)**(base, count, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_IMPL](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-impl)**(base, count, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one)**(base, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_A_TESTER_1](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-a-tester-1)**  |
-|  | **[VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL](/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-a-impl)**(_1, _2, _3, N, ...)  |
-|  | **[VA_NARGS_SWITCH_ON_GT_ONE_A](/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-a)**(...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_A_IMPL2](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-a-impl2)**(base, A, count, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_A_IMPL](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-a-impl)**(base, A, count, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_A](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-a)**(base, A, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_ABC_TESTER_1](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-abc-tester-1)**  |
-|  | **[VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL](/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-abc-impl)**(_1, _2, _3, N, ...)  |
-|  | **[VA_NARGS_SWITCH_ON_GT_ONE_ABC](/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-one-abc)**(...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-abc-impl2)**(base, A, B, C, count, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_ABC_IMPL](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-abc-impl)**(base, A, B, C, count, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_ONE_ABC](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-one-abc)**(base, A, B, C, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_2](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc-tester-2)**  |
-|  | **[VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_1](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc-tester-1)**  |
-|  | **[VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL](/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-two-abc-impl)**(_1, _2, _3, _4, N, ...)  |
-|  | **[VA_NARGS_SWITCH_ON_GT_TWO_ABC](/documentation/code/files/util__macros_8hpp/#define-va-nargs-switch-on-gt-two-abc)**(...)  |
-|  | **[VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc-impl2)**(base, A, B, C, count, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_TWO_ABC_IMPL](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc-impl)**(base, A, B, C, count, ...)  |
-|  | **[VARARG_SWITCH_ON_GT_TWO_ABC](/documentation/code/files/util__macros_8hpp/#define-vararg-switch-on-gt-two-abc)**(base, A, B, C, ...)  |
-|  | **[CHECK_N](/documentation/code/files/util__macros_8hpp/#define-check-n)**(x, n, ...)  |
-|  | **[CHECK](/documentation/code/files/util__macros_8hpp/#define-check)**(...)  |
-|  | **[PROBE](/documentation/code/files/util__macros_8hpp/#define-probe)**(x)  |
-|  | **[DEFINED_PROBE](/documentation/code/files/util__macros_8hpp/#define-defined-probe)**(NAME)  |
-|  | **[DEFINED_PROBE_PROXY](/documentation/code/files/util__macros_8hpp/#define-defined-probe-proxy)**(...)  |
-|  | **[DEFINED_PROBE_PRIMITIVE](/documentation/code/files/util__macros_8hpp/#define-defined-probe-primitive)**(x)  |
-|  | **[DEFINED_PROBE_COMBINE_](/documentation/code/files/util__macros_8hpp/#define-defined-probe-combine)**(...)  |
-|  | **[DEFINED](/documentation/code/files/util__macros_8hpp/#define-defined)**(NAME)  |
-|  | **[IF_DEFINED](/documentation/code/files/util__macros_8hpp/#define-if-defined)**(NAME, ACTION) <br>Do ACTION if NAME is defined.  |
-|  | **[IF_NOT_DEFINED](/documentation/code/files/util__macros_8hpp/#define-if-not-defined)**(NAME, ACTION) <br>Do ACTION if NAME is undefined.  |
-|  | **[IF_ELSE_DEFINED](/documentation/code/files/util__macros_8hpp/#define-if-else-defined)**(NAME, IF, ELSE) <br>Do IF if NAME is defined, otherwise do ELSE.  |
-|  | **[TOKEN_DEFINED](/documentation/code/files/util__macros_8hpp/#define-token-defined)**(A)  |
-|  | **[IF_TOKEN_DEFINED](/documentation/code/files/util__macros_8hpp/#define-if-token-defined)**(A, B)  |
-|  | **[IF_TOKEN_UNDEFINED](/documentation/code/files/util__macros_8hpp/#define-if-token-undefined)**(A, B)  |
-|  | **[IF_ELSE_TOKEN_DEFINED](/documentation/code/files/util__macros_8hpp/#define-if-else-token-defined)**(A, B, C)  |
-|  | **[DEFINED_MODULE](/documentation/code/files/util__macros_8hpp/#define-defined-module)**  |
-|  | **[DEFINED_CAPABILITY](/documentation/code/files/util__macros_8hpp/#define-defined-capability)**  |
-|  | **[DEFINED_FUNCTION](/documentation/code/files/util__macros_8hpp/#define-defined-function)**  |
-|  | **[DEFINED_CONDITIONAL_DEPENDENCY](/documentation/code/files/util__macros_8hpp/#define-defined-conditional-dependency)**  |
-|  | **[POP_LAST](/documentation/code/files/util__macros_8hpp/#define-pop-last)**(...)  |
-|  | **[POP_LAST_1](/documentation/code/files/util__macros_8hpp/#define-pop-last-1)**(x1)  |
-|  | **[POP_LAST_2](/documentation/code/files/util__macros_8hpp/#define-pop-last-2)**(x1, x2)  |
-|  | **[POP_LAST_3](/documentation/code/files/util__macros_8hpp/#define-pop-last-3)**(x1, x2, x3)  |
-|  | **[POP_LAST_4](/documentation/code/files/util__macros_8hpp/#define-pop-last-4)**(x1, x2, x3, x4)  |
-|  | **[POP_LAST_5](/documentation/code/files/util__macros_8hpp/#define-pop-last-5)**(x1, x2, x3, x4, x5)  |
-|  | **[POP_LAST_6](/documentation/code/files/util__macros_8hpp/#define-pop-last-6)**(x1, x2, x3, x4, x5, x6)  |
-|  | **[POP_LAST_7](/documentation/code/files/util__macros_8hpp/#define-pop-last-7)**(x1, x2, x3, x4, x5, x6, x7)  |
-|  | **[POP_LAST_8](/documentation/code/files/util__macros_8hpp/#define-pop-last-8)**(x1, x2, x3, x4, x5, x6, x7, x8)  |
-|  | **[POP_LAST_9](/documentation/code/files/util__macros_8hpp/#define-pop-last-9)**(x1, x2, x3, x4, x5, x6, x7, x8, x9)  |
-|  | **[POP_LAST_10](/documentation/code/files/util__macros_8hpp/#define-pop-last-10)**(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10)  |
-|  | **[etc_etc](/documentation/code/files/util__macros_8hpp/#define-etc-etc)**  |
-|  | **[LAST_ARG_VARIADIC](/documentation/code/files/util__macros_8hpp/#define-last-arg-variadic)**(T)  |
-|  | **[IS_ELLIPSIS](/documentation/code/files/util__macros_8hpp/#define-is-ellipsis)**(ELEM)  |
-|  | **[STRIP_VARIADIC_ARG](/documentation/code/files/util__macros_8hpp/#define-strip-variadic-arg)**(T)  |
-|  | **[CONVERT_VARIADIC_ARG](/documentation/code/files/util__macros_8hpp/#define-convert-variadic-arg)**(T)  |
-|  | **[IF_ELSEIF_9](/documentation/code/files/util__macros_8hpp/#define-if-elseif-9)**(VAR1, _1, VAR2, _2, VAR3, _3, VAR4, _4, _5)  |
-|  | **[IF_ELSEIF_7](/documentation/code/files/util__macros_8hpp/#define-if-elseif-7)**(VAR1, _1, VAR2, _2, VAR3, _3, _4)  |
-|  | **[IF_ELSEIF_5](/documentation/code/files/util__macros_8hpp/#define-if-elseif-5)**(VAR1, _1, VAR2, _2, _3)  |
-|  | **[IF_ELSEIF](/documentation/code/files/util__macros_8hpp/#define-if-elseif)**(...)  |
-|  | **[BRACED_INIT_LIST](/documentation/code/files/util__macros_8hpp/#define-braced-init-list)**(...)  |
-|  | **[MAKE_STATIC_VECTOR](/documentation/code/files/util__macros_8hpp/#define-make-static-vector)**(TYPE, NAME, TUPLE)  |
-|  | **[MAKE_STATIC_SET](/documentation/code/files/util__macros_8hpp/#define-make-static-set)**(TYPE, NAME, TUPLE)  |
-|  | **[CALL_WITH_SILENCED_STDERR](/documentation/code/files/util__macros_8hpp/#define-call-with-silenced-stderr)**(FUNCTION_CALL)  |
+|  | **[FAIL](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[APPEND_TOKEN](/documentation/code/files/util__macros_8hpp/)**(s, data, elem)  |
+|  | **[DUMMY](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[DUMMYARG](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[FIRST_ARG](/documentation/code/files/util__macros_8hpp/)**(A1, ...)  |
+|  | **[REMFIRST](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[REMFIRST_I](/documentation/code/files/util__macros_8hpp/)**(A1, ...)  |
+|  | **[APPLY](/documentation/code/files/util__macros_8hpp/)**(macro, args)  |
+|  | **[APPLY_I](/documentation/code/files/util__macros_8hpp/)**(macro, args)  |
+|  | **[STRIP_PARENS](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[STRIP_PARENS_I](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[EVAL_PAR](/documentation/code/files/util__macros_8hpp/)**(test, x)  |
+|  | **[EVAL_PAR_I](/documentation/code/files/util__macros_8hpp/)**(test, x)  |
+|  | **[TEST_ARITY](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[TEST_ARITY_I](/documentation/code/files/util__macros_8hpp/)**(a, b, c, ...)  |
+|  | **[MAYBE_STRIP_PARENS](/documentation/code/files/util__macros_8hpp/)**(cond, x)  |
+|  | **[MAYBE_STRIP_PARENS_I](/documentation/code/files/util__macros_8hpp/)**(cond, x)  |
+|  | **[MAYBE_STRIP_PARENS_1](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[MAYBE_STRIP_PARENS_2](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[MAYBE_STRIP_PARENS_2_I](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[HAS_PARENS](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[HAS_PARENS_I](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[EVAL_HASP](/documentation/code/files/util__macros_8hpp/)**(test, x)  |
+|  | **[EVAL_HASP_I](/documentation/code/files/util__macros_8hpp/)**(test, x)  |
+|  | **[CHECK_PARENS](/documentation/code/files/util__macros_8hpp/)**(cond, x)  |
+|  | **[CHECK_PARENS_I](/documentation/code/files/util__macros_8hpp/)**(cond, x)  |
+|  | **[CHECK_PARENS_1](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[CHECK_PARENS_2](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[_ARG128](/documentation/code/files/util__macros_8hpp/)**(_0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69, _70, _71, _72, _73, _74, _75, _76, _77, _78, _79, _80, _81, _82, _83, _84, _85, _86, _87, _88, _89, _90, _91, _92, _93, _94, _95, _96, _97, _98, _99, _100, _101, _102, _103, _104, _105, _106, _107, _108, _109, _110, _111, _112, _113, _114, _115, _116, _117, _118, _119, _120, _121, _122, _123, _124, _125, _126, _127, ...)  |
+|  | **[HAS_COMMA](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[ISEMPTY](/documentation/code/files/util__macros_8hpp/)**(ARG)  |
+|  | **[ISEMPTY_I](/documentation/code/files/util__macros_8hpp/)**(A)  |
+|  | **[ISEMPTY_II](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[_129ONES](/documentation/code/files/util__macros_8hpp/)**()  |
+|  | **[INSERT_NONEMPTY](/documentation/code/files/util__macros_8hpp/)**(ARG)  |
+|  | **[INSERT_NONEMPTY_I0](/documentation/code/files/util__macros_8hpp/)**(ARG)  |
+|  | **[INSERT_NONEMPTY_I1](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[PAIR_ELEMENT0](/documentation/code/files/util__macros_8hpp/)**(TPLE)  |
+|  | **[PAIR_ELEMENT0_I](/documentation/code/files/util__macros_8hpp/)**(A, B)  |
+|  | **[PAIR_ELEMENT1](/documentation/code/files/util__macros_8hpp/)**(TPLE)  |
+|  | **[PAIR_ELEMENT1_I](/documentation/code/files/util__macros_8hpp/)**(A, B)  |
+|  | **[void_void](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[int_int](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[float_float](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[double_double](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[bool_bool](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[char_char](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[string_string](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[ModelParameters_ModelParameters](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[IS_TYPE](/documentation/code/files/util__macros_8hpp/)**(COMPTYPE, TYPE)  |
+|  | **[IS_EQUAL](/documentation/code/files/util__macros_8hpp/)**(A, B)  |
+|  | **[IF_EQUAL](/documentation/code/files/util__macros_8hpp/)**(A, B, C)  |
+|  | **[IF_NOT_EQUAL](/documentation/code/files/util__macros_8hpp/)**(A, B, C)  |
+|  | **[IF_ELSE_EQUAL](/documentation/code/files/util__macros_8hpp/)**(A, B, C, D)  |
+|  | **[EMPTY_TOKEN_TESTER](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[IS_EMPTY](/documentation/code/files/util__macros_8hpp/)**(A)  |
+|  | **[IF_EMPTY](/documentation/code/files/util__macros_8hpp/)**(A, B)  |
+|  | **[IF_NOT_EMPTY](/documentation/code/files/util__macros_8hpp/)**(A, B)  |
+|  | **[IF_ELSE_EMPTY](/documentation/code/files/util__macros_8hpp/)**(A, B, C)  |
+|  | **[VA_NARGS_IMPL](/documentation/code/files/util__macros_8hpp/)**(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...)  |
+|  | **[VA_NARGS](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[VARARG_IMPL2](/documentation/code/files/util__macros_8hpp/)**(base, count, ...)  |
+|  | **[VARARG_IMPL](/documentation/code/files/util__macros_8hpp/)**(base, count, ...)  |
+|  | **[VARARG](/documentation/code/files/util__macros_8hpp/)**(base, ...)  |
+|  | **[VA_NARGS_NESTED_IMPL](/documentation/code/files/util__macros_8hpp/)**(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...)  |
+|  | **[VA_NARGS_NESTED](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[VARARG_NESTED_IMPL2](/documentation/code/files/util__macros_8hpp/)**(base, count, ...)  |
+|  | **[VARARG_NESTED_IMPL](/documentation/code/files/util__macros_8hpp/)**(base, count, ...)  |
+|  | **[VARARG_NESTED](/documentation/code/files/util__macros_8hpp/)**(base, ...)  |
+|  | **[VA_NARGS_AB_IMPL](/documentation/code/files/util__macros_8hpp/)**(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...)  |
+|  | **[VA_NARGS_AB](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[VARARG_AB_IMPL2](/documentation/code/files/util__macros_8hpp/)**(base, A, B, count, ...)  |
+|  | **[VARARG_AB_IMPL](/documentation/code/files/util__macros_8hpp/)**(base, A, B, count, ...)  |
+|  | **[VARARG_AB](/documentation/code/files/util__macros_8hpp/)**(base, A, B, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_TESTER_1](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[VA_NARGS_SWITCH_ON_GT_ONE_IMPL](/documentation/code/files/util__macros_8hpp/)**(_1, _2, _3, N, ...)  |
+|  | **[VA_NARGS_SWITCH_ON_GT_ONE](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_IMPL2](/documentation/code/files/util__macros_8hpp/)**(base, count, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_IMPL](/documentation/code/files/util__macros_8hpp/)**(base, count, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE](/documentation/code/files/util__macros_8hpp/)**(base, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_A_TESTER_1](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[VA_NARGS_SWITCH_ON_GT_ONE_A_IMPL](/documentation/code/files/util__macros_8hpp/)**(_1, _2, _3, N, ...)  |
+|  | **[VA_NARGS_SWITCH_ON_GT_ONE_A](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_A_IMPL2](/documentation/code/files/util__macros_8hpp/)**(base, A, count, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_A_IMPL](/documentation/code/files/util__macros_8hpp/)**(base, A, count, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_A](/documentation/code/files/util__macros_8hpp/)**(base, A, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_ABC_TESTER_1](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[VA_NARGS_SWITCH_ON_GT_ONE_ABC_IMPL](/documentation/code/files/util__macros_8hpp/)**(_1, _2, _3, N, ...)  |
+|  | **[VA_NARGS_SWITCH_ON_GT_ONE_ABC](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_ABC_IMPL2](/documentation/code/files/util__macros_8hpp/)**(base, A, B, C, count, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_ABC_IMPL](/documentation/code/files/util__macros_8hpp/)**(base, A, B, C, count, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_ONE_ABC](/documentation/code/files/util__macros_8hpp/)**(base, A, B, C, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_2](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[VARARG_SWITCH_ON_GT_TWO_ABC_TESTER_1](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[VA_NARGS_SWITCH_ON_GT_TWO_ABC_IMPL](/documentation/code/files/util__macros_8hpp/)**(_1, _2, _3, _4, N, ...)  |
+|  | **[VA_NARGS_SWITCH_ON_GT_TWO_ABC](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[VARARG_SWITCH_ON_GT_TWO_ABC_IMPL2](/documentation/code/files/util__macros_8hpp/)**(base, A, B, C, count, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_TWO_ABC_IMPL](/documentation/code/files/util__macros_8hpp/)**(base, A, B, C, count, ...)  |
+|  | **[VARARG_SWITCH_ON_GT_TWO_ABC](/documentation/code/files/util__macros_8hpp/)**(base, A, B, C, ...)  |
+|  | **[CHECK_N](/documentation/code/files/util__macros_8hpp/)**(x, n, ...)  |
+|  | **[CHECK](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[PROBE](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[DEFINED_PROBE](/documentation/code/files/util__macros_8hpp/)**(NAME)  |
+|  | **[DEFINED_PROBE_PROXY](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[DEFINED_PROBE_PRIMITIVE](/documentation/code/files/util__macros_8hpp/)**(x)  |
+|  | **[DEFINED_PROBE_COMBINE_](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[DEFINED](/documentation/code/files/util__macros_8hpp/)**(NAME)  |
+|  | **[IF_DEFINED](/documentation/code/files/util__macros_8hpp/)**(NAME, ACTION) <br>Do ACTION if NAME is defined.  |
+|  | **[IF_NOT_DEFINED](/documentation/code/files/util__macros_8hpp/)**(NAME, ACTION) <br>Do ACTION if NAME is undefined.  |
+|  | **[IF_ELSE_DEFINED](/documentation/code/files/util__macros_8hpp/)**(NAME, IF, ELSE) <br>Do IF if NAME is defined, otherwise do ELSE.  |
+|  | **[TOKEN_DEFINED](/documentation/code/files/util__macros_8hpp/)**(A)  |
+|  | **[IF_TOKEN_DEFINED](/documentation/code/files/util__macros_8hpp/)**(A, B)  |
+|  | **[IF_TOKEN_UNDEFINED](/documentation/code/files/util__macros_8hpp/)**(A, B)  |
+|  | **[IF_ELSE_TOKEN_DEFINED](/documentation/code/files/util__macros_8hpp/)**(A, B, C)  |
+|  | **[DEFINED_MODULE](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[DEFINED_CAPABILITY](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[DEFINED_FUNCTION](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[DEFINED_CONDITIONAL_DEPENDENCY](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[POP_LAST](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[POP_LAST_1](/documentation/code/files/util__macros_8hpp/)**(x1)  |
+|  | **[POP_LAST_2](/documentation/code/files/util__macros_8hpp/)**(x1, x2)  |
+|  | **[POP_LAST_3](/documentation/code/files/util__macros_8hpp/)**(x1, x2, x3)  |
+|  | **[POP_LAST_4](/documentation/code/files/util__macros_8hpp/)**(x1, x2, x3, x4)  |
+|  | **[POP_LAST_5](/documentation/code/files/util__macros_8hpp/)**(x1, x2, x3, x4, x5)  |
+|  | **[POP_LAST_6](/documentation/code/files/util__macros_8hpp/)**(x1, x2, x3, x4, x5, x6)  |
+|  | **[POP_LAST_7](/documentation/code/files/util__macros_8hpp/)**(x1, x2, x3, x4, x5, x6, x7)  |
+|  | **[POP_LAST_8](/documentation/code/files/util__macros_8hpp/)**(x1, x2, x3, x4, x5, x6, x7, x8)  |
+|  | **[POP_LAST_9](/documentation/code/files/util__macros_8hpp/)**(x1, x2, x3, x4, x5, x6, x7, x8, x9)  |
+|  | **[POP_LAST_10](/documentation/code/files/util__macros_8hpp/)**(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10)  |
+|  | **[etc_etc](/documentation/code/files/util__macros_8hpp/)**  |
+|  | **[LAST_ARG_VARIADIC](/documentation/code/files/util__macros_8hpp/)**(T)  |
+|  | **[IS_ELLIPSIS](/documentation/code/files/util__macros_8hpp/)**(ELEM)  |
+|  | **[STRIP_VARIADIC_ARG](/documentation/code/files/util__macros_8hpp/)**(T)  |
+|  | **[CONVERT_VARIADIC_ARG](/documentation/code/files/util__macros_8hpp/)**(T)  |
+|  | **[IF_ELSEIF_9](/documentation/code/files/util__macros_8hpp/)**(VAR1, _1, VAR2, _2, VAR3, _3, VAR4, _4, _5)  |
+|  | **[IF_ELSEIF_7](/documentation/code/files/util__macros_8hpp/)**(VAR1, _1, VAR2, _2, VAR3, _3, _4)  |
+|  | **[IF_ELSEIF_5](/documentation/code/files/util__macros_8hpp/)**(VAR1, _1, VAR2, _2, _3)  |
+|  | **[IF_ELSEIF](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[BRACED_INIT_LIST](/documentation/code/files/util__macros_8hpp/)**(...)  |
+|  | **[MAKE_STATIC_VECTOR](/documentation/code/files/util__macros_8hpp/)**(TYPE, NAME, TUPLE)  |
+|  | **[MAKE_STATIC_SET](/documentation/code/files/util__macros_8hpp/)**(TYPE, NAME, TUPLE)  |
+|  | **[CALL_WITH_SILENCED_STDERR](/documentation/code/files/util__macros_8hpp/)**(FUNCTION_CALL)  |
 
 ## Detailed Description
 
@@ -2357,4 +2357,4 @@ _110, _111, _112, _113, _114, _115, _116, _117, _118, _119, _120, _121, _122, _1
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

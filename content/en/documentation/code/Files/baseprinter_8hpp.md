@@ -27,9 +27,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[LOAD_PRINTER](/documentation/code/files/baseprinter_8hpp/#define-load-printer)**(tag, ...)  |
-|  | **[LOAD_READER](/documentation/code/files/baseprinter_8hpp/#define-load-reader)**(tag, ...)  |
-|  | **[DECLARE_GETTYPEID](/documentation/code/files/baseprinter_8hpp/#define-declare-gettypeid)**(r, data, i, elem) <br>Declare specialisations of type ID getters.  |
+|  | **[LOAD_PRINTER](/documentation/code/files/baseprinter_8hpp/)**(tag, ...)  |
+|  | **[LOAD_READER](/documentation/code/files/baseprinter_8hpp/)**(tag, ...)  |
+|  | **[DECLARE_GETTYPEID](/documentation/code/files/baseprinter_8hpp/)**(r, data, i, elem) <br>Declare specialisations of type ID getters.  |
 
 ## Detailed Description
 
@@ -354,4 +354,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

@@ -19,8 +19,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[GET_RANK](/documentation/code/files/core_8cpp/#define-get-rank)**  |
-|  | **[GET_SIZE](/documentation/code/files/core_8cpp/#define-get-size)**  |
+|  | **[GET_RANK](/documentation/code/files/core_8cpp/)**  |
+|  | **[GET_SIZE](/documentation/code/files/core_8cpp/)**  |
 
 ## Detailed Description
 
@@ -801,4 +801,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

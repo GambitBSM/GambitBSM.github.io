@@ -30,7 +30,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DSET_SIZE_CHECK](/documentation/code/files/hdf5__combine__tools_8hpp/#define-dset-size-check)**(VEC)  |
+|  | **[DSET_SIZE_CHECK](/documentation/code/files/hdf5__combine__tools_8hpp/)**(VEC)  |
 
 ## Detailed Description
 
@@ -552,4 +552,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

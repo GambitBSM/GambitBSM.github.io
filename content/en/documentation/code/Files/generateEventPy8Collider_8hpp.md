@@ -20,8 +20,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DEBUG_PREFIX](/documentation/code/files/generateeventpy8collider_8hpp/#define-debug-prefix)**  |
-|  | **[GET_PYTHIA_EVENT](/documentation/code/files/generateeventpy8collider_8hpp/#define-get-pythia-event)**(NAME) <br>Generate a hard scattering event with a specific Pythia,.  |
+|  | **[DEBUG_PREFIX](/documentation/code/files/generateeventpy8collider_8hpp/)**  |
+|  | **[GET_PYTHIA_EVENT](/documentation/code/files/generateeventpy8collider_8hpp/)**(NAME) <br>Generate a hard scattering event with a specific Pythia,.  |
 
 ## Detailed Description
 
@@ -313,4 +313,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

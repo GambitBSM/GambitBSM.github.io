@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1is__one__member__vector/#variable-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1is__one__member__vector/)**  |
 
 ## Detailed Description
 
@@ -35,4 +35,4 @@ static const bool value = is_one_member_vector_internal<void (args...)>::value;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

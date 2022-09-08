@@ -38,19 +38,19 @@ Forward declaration of [Models::ModelFunctorClaw]() class for use in constructor
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef std::string | **[str](/documentation/code/namespaces/namespacegambit_1_1models/#typedef-str)**  |
-| typedef std::vector< [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * > | **[primodel_vec](/documentation/code/namespaces/namespacegambit_1_1models/#typedef-primodel-vec)**  |
-| typedef std::map< str, [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * > | **[activemodel_map](/documentation/code/namespaces/namespacegambit_1_1models/#typedef-activemodel-map)**  |
-| typedef std::map< std::string, [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * >::const_iterator | **[activemodel_it](/documentation/code/namespaces/namespacegambit_1_1models/#typedef-activemodel-it)**  |
+| typedef std::string | **[str](/documentation/code/namespaces/namespacegambit_1_1models/)**  |
+| typedef std::vector< [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * > | **[primodel_vec](/documentation/code/namespaces/namespacegambit_1_1models/)**  |
+| typedef std::map< str, [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * > | **[activemodel_map](/documentation/code/namespaces/namespacegambit_1_1models/)**  |
+| typedef std::map< std::string, [primary_model_functor](/documentation/code/classes/classgambit_1_1primary__model__functor/) * >::const_iterator | **[activemodel_it](/documentation/code/namespaces/namespacegambit_1_1models/)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/) & | **[ModelDB](/documentation/code/namespaces/namespacegambit_1_1models/#function-modeldb)**()<br>Claw accessor function.  |
-| void | **[set_many_to_one](/documentation/code/namespaces/namespacegambit_1_1models/#function-set-many-to-one)**([ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, const std::vector< std::string > & v, const double value) |
-| [partmap](/documentation/code/classes/classgambit_1_1models_1_1partmap/) & | **[ParticleDB](/documentation/code/namespaces/namespacegambit_1_1models/#function-particledb)**()<br>Database accessor function.  |
-| void | **[define_particles](/documentation/code/namespaces/namespacegambit_1_1models/#function-define-particles)**([partmap](/documentation/code/classes/classgambit_1_1models_1_1partmap/) * )<br>Declare redirected constructor.  |
+| [ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/) & | **[ModelDB](/documentation/code/namespaces/namespacegambit_1_1models/)**()<br>Claw accessor function.  |
+| void | **[set_many_to_one](/documentation/code/namespaces/namespacegambit_1_1models/)**([ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, const std::vector< std::string > & v, const double value) |
+| [partmap](/documentation/code/classes/classgambit_1_1models_1_1partmap/) & | **[ParticleDB](/documentation/code/namespaces/namespacegambit_1_1models/)**()<br>Database accessor function.  |
+| void | **[define_particles](/documentation/code/namespaces/namespacegambit_1_1models/)**([partmap](/documentation/code/classes/classgambit_1_1models_1_1partmap/) * )<br>Declare redirected constructor.  |
 
 ## Types Documentation
 
@@ -128,4 +128,4 @@ Declare redirected constructor.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

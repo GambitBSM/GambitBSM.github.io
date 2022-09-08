@@ -15,12 +15,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsuplnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplnup)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsuplcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplcdow)**  |
-| Fdouble | **[brsuplglui](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuplglui)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsuprnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprnup)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsuprcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprcdow)**  |
-| Fdouble | **[brsuprglui](/documentation/code/classes/structgambit_1_1sd__sup2body__type/#variable-brsuprglui)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsuplnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsuplcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/)**  |
+| Fdouble | **[brsuplglui](/documentation/code/classes/structgambit_1_1sd__sup2body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsuprnup](/documentation/code/classes/structgambit_1_1sd__sup2body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsuprcdow](/documentation/code/classes/structgambit_1_1sd__sup2body__type/)**  |
+| Fdouble | **[brsuprglui](/documentation/code/classes/structgambit_1_1sd__sup2body__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -68,4 +68,4 @@ Fdouble brsuprglui;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

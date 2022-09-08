@@ -24,34 +24,34 @@ Container class for Standard Model input information (defined as in SLHA2)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SMInputs](/documentation/code/classes/structgambit_1_1sminputs/#function-sminputs)**() |
-| | **[SMInputs](/documentation/code/classes/structgambit_1_1sminputs/#function-sminputs)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & data) |
-| [SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) | **[getSLHAea](/documentation/code/classes/structgambit_1_1sminputs/#function-getslhaea)**() const |
-| void | **[add_to_SLHAea](/documentation/code/classes/structgambit_1_1sminputs/#function-add-to-slhaea)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & slha) const |
+| | **[SMInputs](/documentation/code/classes/structgambit_1_1sminputs/)**() |
+| | **[SMInputs](/documentation/code/classes/structgambit_1_1sminputs/)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/) & data) |
+| [SLHAstruct](/documentation/code/namespaces/namespacegambit/) | **[getSLHAea](/documentation/code/classes/structgambit_1_1sminputs/)**() const |
+| void | **[add_to_SLHAea](/documentation/code/classes/structgambit_1_1sminputs/)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/) & slha) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[alphainv](/documentation/code/classes/structgambit_1_1sminputs/#variable-alphainv)**  |
-| double | **[GF](/documentation/code/classes/structgambit_1_1sminputs/#variable-gf)**  |
-| double | **[alphaS](/documentation/code/classes/structgambit_1_1sminputs/#variable-alphas)**  |
-| double | **[mZ](/documentation/code/classes/structgambit_1_1sminputs/#variable-mz)**  |
-| double | **[mBmB](/documentation/code/classes/structgambit_1_1sminputs/#variable-mbmb)**  |
-| double | **[mT](/documentation/code/classes/structgambit_1_1sminputs/#variable-mt)**  |
-| double | **[mTau](/documentation/code/classes/structgambit_1_1sminputs/#variable-mtau)**  |
-| double | **[mNu3](/documentation/code/classes/structgambit_1_1sminputs/#variable-mnu3)**  |
-| double | **[mE](/documentation/code/classes/structgambit_1_1sminputs/#variable-me)**  |
-| double | **[mNu1](/documentation/code/classes/structgambit_1_1sminputs/#variable-mnu1)**  |
-| double | **[mMu](/documentation/code/classes/structgambit_1_1sminputs/#variable-mmu)**  |
-| double | **[mNu2](/documentation/code/classes/structgambit_1_1sminputs/#variable-mnu2)**  |
-| double | **[mD](/documentation/code/classes/structgambit_1_1sminputs/#variable-md)**  |
-| double | **[mU](/documentation/code/classes/structgambit_1_1sminputs/#variable-mu)**  |
-| double | **[mS](/documentation/code/classes/structgambit_1_1sminputs/#variable-ms)**  |
-| double | **[mCmC](/documentation/code/classes/structgambit_1_1sminputs/#variable-mcmc)**  |
-| [CKMdef](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/) | **[CKM](/documentation/code/classes/structgambit_1_1sminputs/#variable-ckm)**  |
-| [PMNSdef](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/) | **[PMNS](/documentation/code/classes/structgambit_1_1sminputs/#variable-pmns)**  |
-| double | **[mW](/documentation/code/classes/structgambit_1_1sminputs/#variable-mw)**  |
+| double | **[alphainv](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[GF](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[alphaS](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mZ](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mBmB](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mT](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mTau](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mNu3](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mE](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mNu1](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mMu](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mNu2](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mD](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mU](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mS](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mCmC](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| [CKMdef](/documentation/code/classes/structgambit_1_1sminputs_1_1ckmdef/) | **[CKM](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| [PMNSdef](/documentation/code/classes/structgambit_1_1sminputs_1_1pmnsdef/) | **[PMNS](/documentation/code/classes/structgambit_1_1sminputs/)**  |
+| double | **[mW](/documentation/code/classes/structgambit_1_1sminputs/)**  |
 
 ## Public Functions Documentation
 
@@ -224,4 +224,4 @@ double mW = mw_central_observed;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

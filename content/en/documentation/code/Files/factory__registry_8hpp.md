@@ -25,9 +25,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[REGISTER](/documentation/code/files/factory__registry_8hpp/#define-register)**(reg_map, tag, ...)  |
-|  | **[REGISTER_ELEM](/documentation/code/files/factory__registry_8hpp/#define-register-elem)**(reg_map, tag, ...)  |
-|  | **[gambit_registry](/documentation/code/files/factory__registry_8hpp/#define-gambit-registry)**  |
+|  | **[REGISTER](/documentation/code/files/factory__registry_8hpp/)**(reg_map, tag, ...)  |
+|  | **[REGISTER_ELEM](/documentation/code/files/factory__registry_8hpp/)**(reg_map, tag, ...)  |
+|  | **[gambit_registry](/documentation/code/files/factory__registry_8hpp/)**  |
 
 ## Detailed Description
 
@@ -255,4 +255,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

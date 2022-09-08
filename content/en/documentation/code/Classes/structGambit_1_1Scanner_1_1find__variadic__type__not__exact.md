@@ -15,14 +15,14 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [_find_variadic_type_not_exact_](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__not__exact__/)< T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/#typedef-ret-type)**  |
-| typedef [_find_variadic_type_not_exact_](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__not__exact__/)< T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/#typedef-func-type)**  |
+| typedef [_find_variadic_type_not_exact_](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__not__exact__/)< T... >::ret_type | **[ret_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)**  |
+| typedef [_find_variadic_type_not_exact_](/documentation/code/classes/structgambit_1_1scanner_1_1__find__variadic__type__not__exact__/)< T... >::func_type | **[func_type](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/#variable-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1scanner_1_1find__variadic__type__not__exact/)**  |
 
 ## Detailed Description
 
@@ -58,4 +58,4 @@ static const bool value = _find_variadic_type_not_exact_ <T...>::value;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

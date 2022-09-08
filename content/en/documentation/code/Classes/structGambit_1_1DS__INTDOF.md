@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 0, 50 > | **[kdof](/documentation/code/classes/structgambit_1_1ds__intdof/#variable-kdof)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 0, 50 > | **[kdof](/documentation/code/classes/structgambit_1_1ds__intdof/)**  |
 
 ## Public Attributes Documentation
 
@@ -28,4 +28,4 @@ Farray< Finteger, 0, 50 > kdof;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

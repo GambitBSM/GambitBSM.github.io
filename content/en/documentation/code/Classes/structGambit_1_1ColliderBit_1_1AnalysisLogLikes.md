@@ -17,17 +17,17 @@ Container for loglike information for an analysis.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#function-analysisloglikes)**() |
+| | **[AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)**() |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::map< std::string, int > | **[sr_indices](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-sr-indices)**  |
-| std::map< std::string, double > | **[sr_loglikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-sr-loglikes)**  |
-| std::string | **[combination_sr_label](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-sr-label)**  |
-| int | **[combination_sr_index](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-sr-index)**  |
-| double | **[combination_loglike](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/#variable-combination-loglike)**  |
+| std::map< std::string, int > | **[sr_indices](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)**  |
+| std::map< std::string, double > | **[sr_loglikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)**  |
+| std::string | **[combination_sr_label](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)**  |
+| int | **[combination_sr_index](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)**  |
+| double | **[combination_loglike](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)**  |
 
 ## Public Functions Documentation
 
@@ -77,4 +77,4 @@ double combination_loglike;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

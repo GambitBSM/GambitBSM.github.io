@@ -13,23 +13,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[do_cleanup](/documentation/code/files/scannerbit__standalone_8cpp/#function-do-cleanup)**() |
-| void | **[sighandler](/documentation/code/files/scannerbit__standalone_8cpp/#function-sighandler)**(int ) |
-| void | **[scanner_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/#function-scanner-diagnostic)**() |
-| void | **[test_function_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/#function-test-function-diagnostic)**() |
-| void | **[prior_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/#function-prior-diagnostic)**() |
-| void | **[ff_prior_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/#function-ff-prior-diagnostic)**(const std::string & command) |
-| void | **[ff_scanner_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/#function-ff-scanner-diagnostic)**(const std::string & command) |
-| void | **[ff_test_function_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/#function-ff-test-function-diagnostic)**(const std::string & command) |
-| void | **[bail](/documentation/code/files/scannerbit__standalone_8cpp/#function-bail)**() |
-| bool | **[arg_parser](/documentation/code/files/scannerbit__standalone_8cpp/#function-arg-parser)**(std::string & filename, std::vector< std::string > & vec, int argc, char ** argv) |
-| int | **[main](/documentation/code/files/scannerbit__standalone_8cpp/#function-main)**(int argc, char ** argv) |
+| void | **[do_cleanup](/documentation/code/files/scannerbit__standalone_8cpp/)**() |
+| void | **[sighandler](/documentation/code/files/scannerbit__standalone_8cpp/)**(int ) |
+| void | **[scanner_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/)**() |
+| void | **[test_function_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/)**() |
+| void | **[prior_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/)**() |
+| void | **[ff_prior_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/)**(const std::string & command) |
+| void | **[ff_scanner_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/)**(const std::string & command) |
+| void | **[ff_test_function_diagnostic](/documentation/code/files/scannerbit__standalone_8cpp/)**(const std::string & command) |
+| void | **[bail](/documentation/code/files/scannerbit__standalone_8cpp/)**() |
+| bool | **[arg_parser](/documentation/code/files/scannerbit__standalone_8cpp/)**(std::string & filename, std::vector< std::string > & vec, int argc, char ** argv) |
+| int | **[main](/documentation/code/files/scannerbit__standalone_8cpp/)**(int argc, char ** argv) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [Printers::PrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1printermanager/) * | **[printerInterface](/documentation/code/files/scannerbit__standalone_8cpp/#variable-printerinterface)**  |
+| [Printers::PrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1printermanager/) * | **[printerInterface](/documentation/code/files/scannerbit__standalone_8cpp/)**  |
 
 ## Detailed Description
 
@@ -532,4 +532,4 @@ int main(int argc, char **argv)
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

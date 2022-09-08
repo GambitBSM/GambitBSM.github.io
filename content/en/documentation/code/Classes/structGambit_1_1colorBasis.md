@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[pow](/documentation/code/classes/structgambit_1_1colorbasis/#variable-pow)**  |
-| int | **[nC](/documentation/code/classes/structgambit_1_1colorbasis/#variable-nc)**  |
-| int * | **[chains](/documentation/code/classes/structgambit_1_1colorbasis/#variable-chains)**  |
+| int | **[pow](/documentation/code/classes/structgambit_1_1colorbasis/)**  |
+| int | **[nC](/documentation/code/classes/structgambit_1_1colorbasis/)**  |
+| int * | **[chains](/documentation/code/classes/structgambit_1_1colorbasis/)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ int * chains;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

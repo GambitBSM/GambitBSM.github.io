@@ -13,36 +13,36 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#function-backend-req)**(HiggsBounds_neutral_input_part , (libhiggsbounds) , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) ) |
-| double double double double double double double double * | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#function-backend-req)**(HiggsBounds_set_mass_uncertainties , (libhiggsbounds) , void , (double *, double *) ) |
-| double double double double double double double double int int double int & | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#function-backend-req)**(HB_calc_stats , (libhiggsbounds) , void , (double &, double &, double &, int &) ) |
-| | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#function-backend-req)**(HiggsBounds_neutral_input_part_HS , (libhiggssignals) , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) ) |
-| double double double double double double double double * | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#function-backend-req)**(run_HiggsSignals , (libhiggssignals) , void , (int &, double &, double &, double &, int &, double &) ) |
-| double double double double double double double double double * | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#function-backend-req)**(setup_rate_uncertainties , (libhiggssignals) , void , (double *, double *) ) |
-| | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#function-backend-req)**(FHHiggsProd , (libfeynhiggs) , void , (int &, fh_real &, Farray< fh_real, 1, 52 > &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**(HiggsBounds_neutral_input_part , (libhiggsbounds) , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) ) |
+| double double double double double double double double * | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**(HiggsBounds_set_mass_uncertainties , (libhiggsbounds) , void , (double *, double *) ) |
+| double double double double double double double double int int double int & | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**(HB_calc_stats , (libhiggsbounds) , void , (double &, double &, double &, int &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**(HiggsBounds_neutral_input_part_HS , (libhiggssignals) , void , (double *, double *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *) ) |
+| double double double double double double double double * | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**(run_HiggsSignals , (libhiggssignals) , void , (int &, double &, double &, double &, int &, double &) ) |
+| double double double double double double double double double * | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**(setup_rate_uncertainties , (libhiggssignals) , void , (double *, double *) ) |
+| | **[BACKEND_REQ](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**(FHHiggsProd , (libfeynhiggs) , void , (int &, fh_real &, Farray< fh_real, 1, 52 > &) ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[void](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#variable-void)**  |
-| | **[libhiggsbounds](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#variable-libhiggsbounds)**  |
-| | **[libhiggssignals](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#variable-libhiggssignals)**  |
+| | **[void](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+| | **[libhiggsbounds](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+| | **[libhiggssignals](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-module)**  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-function)**  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/#define-function)**  |
+|  | **[MODULE](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__higgs__rollcall_8hpp/)**  |
 
 ## Detailed Description
 
@@ -389,4 +389,4 @@ libhiggssignals;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

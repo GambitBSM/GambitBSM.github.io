@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 0, 50 > | **[width](/documentation/code/classes/structgambit_1_1ds5__widths/#variable-width)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 0, 50 > | **[width](/documentation/code/classes/structgambit_1_1ds5__widths/)**  |
 
 ## Public Attributes Documentation
 
@@ -28,4 +28,4 @@ Farray< Fdouble, 0, 50 > width;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

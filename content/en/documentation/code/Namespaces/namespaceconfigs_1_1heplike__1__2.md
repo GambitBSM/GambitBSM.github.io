@@ -13,31 +13,31 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| string | **[castxml_cc_id](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-castxml-cc-id)**  |
-| string | **[castxml_cc](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-castxml-cc)**  |
-| string | **[castxml_cc_opt](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-castxml-cc-opt)**  |
-| string | **[gambit_backend_name](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-gambit-backend-name)**  |
-| string | **[gambit_backend_version](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-gambit-backend-version)**  |
-| string | **[gambit_backend_reference](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-gambit-backend-reference)**  |
-| string | **[gambit_base_namespace](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-gambit-base-namespace)**  |
-| string | **[install_path](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-install-path)**  |
-| list | **[input_files](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-input-files)**  |
-| list | **[include_paths](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-include-paths)**  |
-| list | **[base_paths](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-base-paths)**  |
-| string | **[header_files_to](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-header-files-to)**  |
-| string | **[src_files_to](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-src-files-to)**  |
-| list | **[load_classes](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-load-classes)**  |
-| list | **[load_functions](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-load-functions)**  |
-| list | **[ditch](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-ditch)**  |
-| bool | **[auto_detect_stdlib_paths](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-auto-detect-stdlib-paths)**  |
-| bool | **[load_parent_classes](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-load-parent-classes)**  |
-| bool | **[wrap_inherited_members](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-wrap-inherited-members)**  |
-| string | **[header_extension](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-header-extension)**  |
-| string | **[source_extension](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-source-extension)**  |
-| int | **[indent](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-indent)**  |
-| dictionary | **[known_classes](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-known-classes)**  |
-| list | **[pragmas_begin](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-pragmas-begin)**  |
-| list | **[pragmas_end](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/#variable-pragmas-end)**  |
+| string | **[castxml_cc_id](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[castxml_cc](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[castxml_cc_opt](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[gambit_backend_name](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[gambit_backend_version](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[gambit_backend_reference](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[gambit_base_namespace](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[install_path](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| list | **[input_files](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| list | **[include_paths](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| list | **[base_paths](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[header_files_to](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[src_files_to](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| list | **[load_classes](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| list | **[load_functions](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| list | **[ditch](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| bool | **[auto_detect_stdlib_paths](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| bool | **[load_parent_classes](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| bool | **[wrap_inherited_members](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[header_extension](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| string | **[source_extension](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| int | **[indent](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| dictionary | **[known_classes](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| list | **[pragmas_begin](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
+| list | **[pragmas_end](/documentation/code/namespaces/namespaceconfigs_1_1heplike__1__2/)**  |
 
 
 
@@ -271,4 +271,4 @@ list pragmas_end =  [
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

@@ -20,7 +20,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[main](/documentation/code/files/darkbit__standalone__scalarsingletdm__z2_8cpp/#function-main)**() |
+| int | **[main](/documentation/code/files/darkbit__standalone__scalarsingletdm__z2_8cpp/)**() |
 
 ## Detailed Description
 
@@ -597,4 +597,4 @@ int main()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

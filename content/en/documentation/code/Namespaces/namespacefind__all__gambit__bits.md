@@ -13,18 +13,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| def | **[get_bits_from_directory_list](/documentation/code/namespaces/namespacefind__all__gambit__bits/#function-get-bits-from-directory-list)**(gambit_directory gambit_directory) |
-| def | **[write_list_to_yaml](/documentation/code/namespaces/namespacefind__all__gambit__bits/#function-write-list-to-yaml)**(list_of_bits list_of_bits, output_file output_file, yaml_key yaml_key ="gambit_bits") |
+| def | **[get_bits_from_directory_list](/documentation/code/namespaces/namespacefind__all__gambit__bits/)**(gambit_directory gambit_directory) |
+| def | **[write_list_to_yaml](/documentation/code/namespaces/namespacefind__all__gambit__bits/)**(list_of_bits list_of_bits, output_file output_file, yaml_key yaml_key ="gambit_bits") |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[parser](/documentation/code/namespaces/namespacefind__all__gambit__bits/#variable-parser)**  |
-| | **[required](/documentation/code/namespaces/namespacefind__all__gambit__bits/#variable-required)**  |
-| | **[True](/documentation/code/namespaces/namespacefind__all__gambit__bits/#variable-true)**  |
-| | **[help](/documentation/code/namespaces/namespacefind__all__gambit__bits/#variable-help)**  |
-| | **[args](/documentation/code/namespaces/namespacefind__all__gambit__bits/#variable-args)**  |
+| | **[parser](/documentation/code/namespaces/namespacefind__all__gambit__bits/)**  |
+| | **[required](/documentation/code/namespaces/namespacefind__all__gambit__bits/)**  |
+| | **[True](/documentation/code/namespaces/namespacefind__all__gambit__bits/)**  |
+| | **[help](/documentation/code/namespaces/namespacefind__all__gambit__bits/)**  |
+| | **[args](/documentation/code/namespaces/namespacefind__all__gambit__bits/)**  |
 
 
 ## Functions Documentation
@@ -120,4 +120,4 @@ args =  parser.parse_args();
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

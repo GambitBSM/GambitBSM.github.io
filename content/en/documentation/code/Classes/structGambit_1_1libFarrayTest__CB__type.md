@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble,-2, 0 > | **[a](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/#variable-a)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3 > | **[b](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/#variable-b)**  |
-| Finteger | **[c](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/#variable-c)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3, 0, 1, -1, 0 > | **[d](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/#variable-d)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble,-2, 0 > | **[a](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 3 > | **[b](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/)**  |
+| Finteger | **[c](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Finteger, 1, 3, 0, 1, -1, 0 > | **[d](/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -52,4 +52,4 @@ Farray< Finteger, 1, 3, 0, 1, -1, 0 > d;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

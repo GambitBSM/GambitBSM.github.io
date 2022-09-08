@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[veX](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/#variable-vex)**  |
-| Fdouble | **[veY](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/#variable-vey)**  |
-| Fdouble | **[veZ](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/#variable-vez)**  |
-| Fdouble | **[vspX](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/#variable-vspx)**  |
-| Fdouble | **[vspY](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/#variable-vspy)**  |
-| Fdouble | **[vspZ](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/#variable-vspz)**  |
-| Fdouble | **[v_obs](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/#variable-v-obs)**  |
+| Fdouble | **[veX](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/)**  |
+| Fdouble | **[veY](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/)**  |
+| Fdouble | **[veZ](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/)**  |
+| Fdouble | **[vspX](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/)**  |
+| Fdouble | **[vspY](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/)**  |
+| Fdouble | **[vspZ](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/)**  |
+| Fdouble | **[v_obs](/documentation/code/classes/structgambit_1_1ds__hmframevelcom/)**  |
 
 ## Public Attributes Documentation
 
@@ -76,4 +76,4 @@ Fdouble v_obs;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

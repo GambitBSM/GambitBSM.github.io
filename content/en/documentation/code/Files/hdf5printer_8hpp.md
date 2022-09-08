@@ -27,9 +27,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[DECLARE_PRINT](/documentation/code/files/hdf5printer_8hpp/#define-declare-print)**(r, data, i, elem)  |
-|  | **[BT](/documentation/code/files/hdf5printer_8hpp/#define-bt)**(TYPE) <br>Buffer manager objects.  |
-|  | **[DEFINE_BUFFMAN_GETTER](/documentation/code/files/hdf5printer_8hpp/#define-define-buffman-getter)**(TYPE) <br>Macro to help define the buffer manager getter functions.  |
+|  | **[DECLARE_PRINT](/documentation/code/files/hdf5printer_8hpp/)**(r, data, i, elem)  |
+|  | **[BT](/documentation/code/files/hdf5printer_8hpp/)**(TYPE) <br>Buffer manager objects.  |
+|  | **[DEFINE_BUFFMAN_GETTER](/documentation/code/files/hdf5printer_8hpp/)**(TYPE) <br>Macro to help define the buffer manager getter functions.  |
 
 ## Detailed Description
 
@@ -689,4 +689,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

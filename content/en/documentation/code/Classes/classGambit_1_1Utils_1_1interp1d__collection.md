@@ -18,25 +18,25 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#function-interp1d-collection)**(const std::string collection_name_in, const std::string file_name_in, const std::vector< std::string > colnames_in) |
-| | **[~interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#function-interp1d-collection)**() |
-| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#function-eval)**(double x, size_t interp_index) const |
-| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#function-eval)**(double x) const |
-| bool | **[is_inside_range](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#function-is-inside-range)**(double x) const |
+| | **[interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**(const std::string collection_name_in, const std::string file_name_in, const std::vector< std::string > colnames_in) |
+| | **[~interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**() |
+| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**(double x, size_t interp_index) const |
+| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**(double x) const |
+| bool | **[is_inside_range](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**(double x) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[collection_name](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-collection-name)**  |
-| std::string | **[file_name](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-file-name)**  |
-| std::string | **[x_name](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-x-name)**  |
-| std::vector< std::string > | **[interpolator_names](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-interpolator-names)**  |
-| std::vector< gsl_spline * > | **[splines](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-splines)**  |
-| std::vector< gsl_interp_accel * > | **[x_accels](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-x-accels)**  |
-| double | **[x_min](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-x-min)**  |
-| double | **[x_max](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-x-max)**  |
-| size_t | **[n_interpolators](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/#variable-n-interpolators)**  |
+| std::string | **[collection_name](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| std::string | **[file_name](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| std::string | **[x_name](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| std::vector< std::string > | **[interpolator_names](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| std::vector< gsl_spline * > | **[splines](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| std::vector< gsl_interp_accel * > | **[x_accels](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| double | **[x_min](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| double | **[x_max](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| size_t | **[n_interpolators](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
 
 ## Detailed Description
 
@@ -165,4 +165,4 @@ size_t n_interpolators;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

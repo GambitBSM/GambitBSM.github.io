@@ -17,17 +17,17 @@ Information in parameter queue.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**() |
-| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**([sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) a, DRes::VertexID b, int c, bool d) |
+| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)**() |
+| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)**([sspair](/documentation/code/namespaces/namespacegambit/) a, DRes::VertexID b, int c, bool d) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) | **[first](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-first)**  |
-| DRes::VertexID | **[second](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-second)**  |
-| int | **[third](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-third)**  |
-| bool | **[printme](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-printme)**  |
+| [sspair](/documentation/code/namespaces/namespacegambit/) | **[first](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)**  |
+| DRes::VertexID | **[second](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)**  |
+| int | **[third](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)**  |
+| bool | **[printme](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)**  |
 
 ## Public Functions Documentation
 
@@ -82,4 +82,4 @@ bool printme;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

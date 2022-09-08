@@ -13,23 +13,23 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ALGORITHM1](/documentation/code/files/model__files__and__boxes_8hpp/#define-algorithm1)**  |
-|  | **[ALGORITHM1l](/documentation/code/files/model__files__and__boxes_8hpp/#define-algorithm1l)**  |
-|  | **[MAKE_INTERFACE](/documentation/code/files/model__files__and__boxes_8hpp/#define-make-interface)**  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
-|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/#define-modelname)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[ALGORITHM1](/documentation/code/files/model__files__and__boxes_8hpp/)**  |
+|  | **[ALGORITHM1l](/documentation/code/files/model__files__and__boxes_8hpp/)**  |
+|  | **[MAKE_INTERFACE](/documentation/code/files/model__files__and__boxes_8hpp/)**  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
+|  | **[MODELNAME](/documentation/code/files/model__files__and__boxes_8hpp/)** <br>{@ Versions of MSSM spectrum generators that take  |
 
 ## Detailed Description
 
@@ -453,4 +453,4 @@ All the includes and Model_interface definitions Have now moved the MAKE_INTERFA
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

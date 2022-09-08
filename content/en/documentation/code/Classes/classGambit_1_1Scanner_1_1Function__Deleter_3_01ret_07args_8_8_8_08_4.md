@@ -15,10 +15,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Function_Deleter](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/#function-function-deleter)**(void * in) |
-| | **[Function_Deleter](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/#function-function-deleter)**(const [Function_Deleter](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter/)< ret(args...)> & in) |
-| void | **[operator=](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/#function-operator)**(const [Function_Deleter](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter/)< ret(args...)> & in) |
-| void | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/#function-operator)**([Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/)< ret(args...)> * in) |
+| | **[Function_Deleter](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/)**(void * in) |
+| | **[Function_Deleter](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/)**(const [Function_Deleter](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter/)< ret(args...)> & in) |
+| void | **[operator=](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/)**(const [Function_Deleter](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter/)< ret(args...)> & in) |
+| void | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1function__deleter_3_01ret_07args_8_8_8_08_4/)**([Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/)< ret(args...)> * in) |
 
 ## Detailed Description
 
@@ -68,4 +68,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

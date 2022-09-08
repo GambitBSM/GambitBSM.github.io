@@ -13,95 +13,95 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[IS_MODEL](/documentation/code/files/module__macros__common_8hpp/#define-is-model)**  |
-|  | **[NOT_MODEL](/documentation/code/files/module__macros__common_8hpp/#define-not-model)**  |
-|  | **[NEW_CAPABILITY](/documentation/code/files/module__macros__common_8hpp/#define-new-capability)**  |
-|  | **[OLD_CAPABILITY](/documentation/code/files/module__macros__common_8hpp/#define-old-capability)**  |
-|  | **[QF_ALLOW_MODELS_MORE](/documentation/code/files/module__macros__common_8hpp/#define-qf-allow-models-more)**(A, B, ...)  |
-|  | **[QF_ALLOW_MODELS_1](/documentation/code/files/module__macros__common_8hpp/#define-qf-allow-models-1)**(A, _1)  |
-|  | **[QF_ALLOW_MODELS](/documentation/code/files/module__macros__common_8hpp/#define-qf-allow-models)**(A, ...)  |
-|  | **[EXPAND_DEPS_10](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-10)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10)  |
-|  | **[EXPAND_DEPS_9](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-9)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9)  |
-|  | **[EXPAND_DEPS_8](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-8)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8)  |
-|  | **[EXPAND_DEPS_7](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-7)**(A, B, _1, _2, _3, _4, _5, _6, _7)  |
-|  | **[EXPAND_DEPS_6](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-6)**(A, B, _1, _2, _3, _4, _5, _6)  |
-|  | **[EXPAND_DEPS_5](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-5)**(A, B, _1, _2, _3, _4, _5)  |
-|  | **[EXPAND_DEPS_4](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-4)**(A, B, _1, _2, _3, _4)  |
-|  | **[EXPAND_DEPS_3](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-3)**(A, B, _1, _2, _3)  |
-|  | **[EXPAND_DEPS_2](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-2)**(A, B, _1, _2)  |
-|  | **[EXPAND_DEPS_1](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-1)**(A, B, _1)  |
-|  | **[EXPAND_DEPS_AB](/documentation/code/files/module__macros__common_8hpp/#define-expand-deps-ab)**(A, B, ...)  |
-|  | **[QUICK_FUNCTION](/documentation/code/files/module__macros__common_8hpp/#define-quick-function)**(MODULE, CAPABILITY, NEW_CAPABILITY_FLAG, FUNCTION, ...) <br>}@  |
-|  | **[QFBODY_MORE](/documentation/code/files/module__macros__common_8hpp/#define-qfbody-more)**(A, B, C, _1, _2, ...)  |
-|  | **[QFBODY_2](/documentation/code/files/module__macros__common_8hpp/#define-qfbody-2)**(A, B, C, _1, _2)  |
-|  | **[QFBODY_1](/documentation/code/files/module__macros__common_8hpp/#define-qfbody-1)**(A, B, C, _1)  |
-|  | **[QFBODY_ABC](/documentation/code/files/module__macros__common_8hpp/#define-qfbody-abc)**(A, B, C, ...)  |
-|  | **[START_FUNCTION_INIT_FUNCTION](/documentation/code/files/module__macros__common_8hpp/#define-start-function-init-function)**(TYPE)  |
-|  | **[START_FUNCTION_CAN_MANAGE_LOOPS](/documentation/code/files/module__macros__common_8hpp/#define-start-function-can-manage-loops)**(TYPE)  |
-|  | **[START_FUNCTION_CANNOT_MANAGE_LOOPS](/documentation/code/files/module__macros__common_8hpp/#define-start-function-cannot-manage-loops)**(TYPE)  |
-|  | **[START_FUNCTION_](/documentation/code/files/module__macros__common_8hpp/#define-start-function)**(TYPE)  |
-|  | **[DEFINED_START_FUNCTION_CAN_MANAGE_LOOPS](/documentation/code/files/module__macros__common_8hpp/#define-defined-start-function-can-manage-loops)**  |
-|  | **[DEFINED_START_FUNCTION_CANNOT_MANAGE_LOOPS](/documentation/code/files/module__macros__common_8hpp/#define-defined-start-function-cannot-manage-loops)**  |
-|  | **[DEFINED_START_FUNCTION_INIT_FUNCTION](/documentation/code/files/module__macros__common_8hpp/#define-defined-start-function-init-function)**  |
-|  | **[START_FUNCTION_2](/documentation/code/files/module__macros__common_8hpp/#define-start-function-2)**(_1, _2)  |
-|  | **[START_FUNCTION_1](/documentation/code/files/module__macros__common_8hpp/#define-start-function-1)**(_1)  |
-|  | **[START_FUNCTION](/documentation/code/files/module__macros__common_8hpp/#define-start-function)**(...)  |
-|  | **[BACKEND_REQ_FROM_GROUP_5](/documentation/code/files/module__macros__common_8hpp/#define-backend-req-from-group-5)**(_1, _2, _3, _4, _5)  |
-|  | **[BACKEND_REQ_FROM_GROUP_4](/documentation/code/files/module__macros__common_8hpp/#define-backend-req-from-group-4)**(_1, _2, _3, _4)  |
-|  | **[BACKEND_REQ_FROM_GROUP](/documentation/code/files/module__macros__common_8hpp/#define-backend-req-from-group)**(...)  |
-|  | **[BACKEND_REQ_4](/documentation/code/files/module__macros__common_8hpp/#define-backend-req-4)**(_1, _2, _3, _4)  |
-|  | **[BACKEND_REQ_3](/documentation/code/files/module__macros__common_8hpp/#define-backend-req-3)**(_1, _2, _3)  |
-|  | **[BACKEND_REQ](/documentation/code/files/module__macros__common_8hpp/#define-backend-req)**(...)  |
-|  | **[LONG_BACKEND_REQ_7](/documentation/code/files/module__macros__common_8hpp/#define-long-backend-req-7)**(_1, _2, _3, _4, _5, _6, _7)  |
-|  | **[LONG_BACKEND_REQ_6](/documentation/code/files/module__macros__common_8hpp/#define-long-backend-req-6)**(_1, _2, _3, _4, _5, _6)  |
-|  | **[LONG_BACKEND_REQ](/documentation/code/files/module__macros__common_8hpp/#define-long-backend-req)**(...)  |
-|  | **[CLASSLOAD_NEEDED_0](/documentation/code/files/module__macros__common_8hpp/#define-classload-needed-0)**(_1) <br>[NEEDS_CLASSES_FROM()]() called with no versions; use default.  |
-|  | **[CLASSLOAD_NEEDED_1](/documentation/code/files/module__macros__common_8hpp/#define-classload-needed-1)**(_1, ...) <br>[CLASSLOAD_NEEDED()]() called with one or more versions; require specified backend versions.  |
-|  | **[NEEDS_CLASSES_FROM](/documentation/code/files/module__macros__common_8hpp/#define-needs-classes-from)**(...)  |
-|  | **[ALLOW_MODEL](/documentation/code/files/module__macros__common_8hpp/#define-allow-model)** <br>Simple alias for ALLOW_MODEL/S.  |
-|  | **[ACTIVATE_FOR_MODEL](/documentation/code/files/module__macros__common_8hpp/#define-activate-for-model)** <br>Simple alias for ACTIVATE_FOR_MODEL/S.  |
-|  | **[BACKEND_GROUP](/documentation/code/files/module__macros__common_8hpp/#define-backend-group)** <br>Simple alias for BACKEND_GROUP/S.  |
-|  | **[MODEL_GROUP_AUX](/documentation/code/files/module__macros__common_8hpp/#define-model-group-aux)**(r, data, i, elem)  |
-|  | **[MODEL_COMBO_AUX](/documentation/code/files/module__macros__common_8hpp/#define-model-combo-aux)**(z, i, data)  |
-|  | **[ALLOW_JOINT_MODEL](/documentation/code/files/module__macros__common_8hpp/#define-allow-joint-model)**(...)  |
-|  | **[ALLOW_MODELS_10](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-10)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10)  |
-|  | **[ALLOW_MODELS_9](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-9)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9)  |
-|  | **[ALLOW_MODELS_8](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-8)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8)  |
-|  | **[ALLOW_MODELS_7](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-7)**(A, B, _1, _2, _3, _4, _5, _6, _7)  |
-|  | **[ALLOW_MODELS_6](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-6)**(A, B, _1, _2, _3, _4, _5, _6)  |
-|  | **[ALLOW_MODELS_5](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-5)**(A, B, _1, _2, _3, _4, _5)  |
-|  | **[ALLOW_MODELS_4](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-4)**(A, B, _1, _2, _3, _4)  |
-|  | **[ALLOW_MODELS_3](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-3)**(A, B, _1, _2, _3)  |
-|  | **[ALLOW_MODELS_2](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-2)**(A, B, _1, _2)  |
-|  | **[ALLOW_MODELS_1](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-1)**(A, B, _1)  |
-|  | **[ALLOW_MODELS_AB](/documentation/code/files/module__macros__common_8hpp/#define-allow-models-ab)**(A, B, ...)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_10](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-10)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_9](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-9)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_8](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-8)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_7](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-7)**(A, B, _1, _2, _3, _4, _5, _6, _7)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_6](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-6)**(A, B, _1, _2, _3, _4, _5, _6)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_5](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-5)**(A, B, _1, _2, _3, _4, _5)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_4](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-4)**(A, B, _1, _2, _3, _4)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_3](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-3)**(A, B, _1, _2, _3)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_2](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-2)**(A, B, _1, _2)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_1](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-1)**(A, B, _1)  |
-|  | **[ALLOW_MODEL_DEPENDENCE_AB](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence-ab)**(A, B, ...)  |
-|  | **[ALLOW_MODEL_DEPENDENCE](/documentation/code/files/module__macros__common_8hpp/#define-allow-model-dependence)**(...)  |
-|  | **[BACKEND_GROUPS_10](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-10)**(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10)  |
-|  | **[BACKEND_GROUPS_9](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-9)**(_1, _2, _3, _4, _5, _6, _7, _8, _9)  |
-|  | **[BACKEND_GROUPS_8](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-8)**(_1, _2, _3, _4, _5, _6, _7, _8)  |
-|  | **[BACKEND_GROUPS_7](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-7)**(_1, _2, _3, _4, _5, _6, _7)  |
-|  | **[BACKEND_GROUPS_6](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-6)**(_1, _2, _3, _4, _5, _6)  |
-|  | **[BACKEND_GROUPS_5](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-5)**(_1, _2, _3, _4, _5)  |
-|  | **[BACKEND_GROUPS_4](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-4)**(_1, _2, _3, _4)  |
-|  | **[BACKEND_GROUPS_3](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-3)**(_1, _2, _3)  |
-|  | **[BACKEND_GROUPS_2](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-2)**(_1, _2)  |
-|  | **[BACKEND_GROUPS_1](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups-1)**(_1)  |
-|  | **[BACKEND_GROUPS](/documentation/code/files/module__macros__common_8hpp/#define-backend-groups)**(...)  |
-|  | **[ACTIVATE_DEP_BE_0](/documentation/code/files/module__macros__common_8hpp/#define-activate-dep-be-0)**(_1, _2) <br>[ACTIVATE_FOR_BACKEND()]() called with no versions; allow any backend version.  |
-|  | **[ACTIVATE_DEP_BE_1](/documentation/code/files/module__macros__common_8hpp/#define-activate-dep-be-1)**(_1, _2, ...) <br>[ACTIVATE_FOR_BACKEND()]() called with two arguments; allow specified backend versions.  |
-|  | **[ACTIVATE_FOR_BACKEND](/documentation/code/files/module__macros__common_8hpp/#define-activate-for-backend)**(...)  |
-|  | **[UNUSED_OK](/documentation/code/files/module__macros__common_8hpp/#define-unused-ok)** <br>Define a macro to suppress unused variable and typedef warnings in GCC (and do nothing for other compilers)  |
+|  | **[IS_MODEL](/documentation/code/files/module__macros__common_8hpp/)**  |
+|  | **[NOT_MODEL](/documentation/code/files/module__macros__common_8hpp/)**  |
+|  | **[NEW_CAPABILITY](/documentation/code/files/module__macros__common_8hpp/)**  |
+|  | **[OLD_CAPABILITY](/documentation/code/files/module__macros__common_8hpp/)**  |
+|  | **[QF_ALLOW_MODELS_MORE](/documentation/code/files/module__macros__common_8hpp/)**(A, B, ...)  |
+|  | **[QF_ALLOW_MODELS_1](/documentation/code/files/module__macros__common_8hpp/)**(A, _1)  |
+|  | **[QF_ALLOW_MODELS](/documentation/code/files/module__macros__common_8hpp/)**(A, ...)  |
+|  | **[EXPAND_DEPS_10](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10)  |
+|  | **[EXPAND_DEPS_9](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9)  |
+|  | **[EXPAND_DEPS_8](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8)  |
+|  | **[EXPAND_DEPS_7](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7)  |
+|  | **[EXPAND_DEPS_6](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6)  |
+|  | **[EXPAND_DEPS_5](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5)  |
+|  | **[EXPAND_DEPS_4](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4)  |
+|  | **[EXPAND_DEPS_3](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3)  |
+|  | **[EXPAND_DEPS_2](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2)  |
+|  | **[EXPAND_DEPS_1](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1)  |
+|  | **[EXPAND_DEPS_AB](/documentation/code/files/module__macros__common_8hpp/)**(A, B, ...)  |
+|  | **[QUICK_FUNCTION](/documentation/code/files/module__macros__common_8hpp/)**(MODULE, CAPABILITY, NEW_CAPABILITY_FLAG, FUNCTION, ...) <br>}@  |
+|  | **[QFBODY_MORE](/documentation/code/files/module__macros__common_8hpp/)**(A, B, C, _1, _2, ...)  |
+|  | **[QFBODY_2](/documentation/code/files/module__macros__common_8hpp/)**(A, B, C, _1, _2)  |
+|  | **[QFBODY_1](/documentation/code/files/module__macros__common_8hpp/)**(A, B, C, _1)  |
+|  | **[QFBODY_ABC](/documentation/code/files/module__macros__common_8hpp/)**(A, B, C, ...)  |
+|  | **[START_FUNCTION_INIT_FUNCTION](/documentation/code/files/module__macros__common_8hpp/)**(TYPE)  |
+|  | **[START_FUNCTION_CAN_MANAGE_LOOPS](/documentation/code/files/module__macros__common_8hpp/)**(TYPE)  |
+|  | **[START_FUNCTION_CANNOT_MANAGE_LOOPS](/documentation/code/files/module__macros__common_8hpp/)**(TYPE)  |
+|  | **[START_FUNCTION_](/documentation/code/files/module__macros__common_8hpp/)**(TYPE)  |
+|  | **[DEFINED_START_FUNCTION_CAN_MANAGE_LOOPS](/documentation/code/files/module__macros__common_8hpp/)**  |
+|  | **[DEFINED_START_FUNCTION_CANNOT_MANAGE_LOOPS](/documentation/code/files/module__macros__common_8hpp/)**  |
+|  | **[DEFINED_START_FUNCTION_INIT_FUNCTION](/documentation/code/files/module__macros__common_8hpp/)**  |
+|  | **[START_FUNCTION_2](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2)  |
+|  | **[START_FUNCTION_1](/documentation/code/files/module__macros__common_8hpp/)**(_1)  |
+|  | **[START_FUNCTION](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[BACKEND_REQ_FROM_GROUP_5](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5)  |
+|  | **[BACKEND_REQ_FROM_GROUP_4](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4)  |
+|  | **[BACKEND_REQ_FROM_GROUP](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[BACKEND_REQ_4](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4)  |
+|  | **[BACKEND_REQ_3](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3)  |
+|  | **[BACKEND_REQ](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[LONG_BACKEND_REQ_7](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5, _6, _7)  |
+|  | **[LONG_BACKEND_REQ_6](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5, _6)  |
+|  | **[LONG_BACKEND_REQ](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[CLASSLOAD_NEEDED_0](/documentation/code/files/module__macros__common_8hpp/)**(_1) <br>[NEEDS_CLASSES_FROM()]() called with no versions; use default.  |
+|  | **[CLASSLOAD_NEEDED_1](/documentation/code/files/module__macros__common_8hpp/)**(_1, ...) <br>[CLASSLOAD_NEEDED()]() called with one or more versions; require specified backend versions.  |
+|  | **[NEEDS_CLASSES_FROM](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[ALLOW_MODEL](/documentation/code/files/module__macros__common_8hpp/)** <br>Simple alias for ALLOW_MODEL/S.  |
+|  | **[ACTIVATE_FOR_MODEL](/documentation/code/files/module__macros__common_8hpp/)** <br>Simple alias for ACTIVATE_FOR_MODEL/S.  |
+|  | **[BACKEND_GROUP](/documentation/code/files/module__macros__common_8hpp/)** <br>Simple alias for BACKEND_GROUP/S.  |
+|  | **[MODEL_GROUP_AUX](/documentation/code/files/module__macros__common_8hpp/)**(r, data, i, elem)  |
+|  | **[MODEL_COMBO_AUX](/documentation/code/files/module__macros__common_8hpp/)**(z, i, data)  |
+|  | **[ALLOW_JOINT_MODEL](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[ALLOW_MODELS_10](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10)  |
+|  | **[ALLOW_MODELS_9](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9)  |
+|  | **[ALLOW_MODELS_8](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8)  |
+|  | **[ALLOW_MODELS_7](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7)  |
+|  | **[ALLOW_MODELS_6](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6)  |
+|  | **[ALLOW_MODELS_5](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5)  |
+|  | **[ALLOW_MODELS_4](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4)  |
+|  | **[ALLOW_MODELS_3](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3)  |
+|  | **[ALLOW_MODELS_2](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2)  |
+|  | **[ALLOW_MODELS_1](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1)  |
+|  | **[ALLOW_MODELS_AB](/documentation/code/files/module__macros__common_8hpp/)**(A, B, ...)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_10](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_9](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8, _9)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_8](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7, _8)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_7](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6, _7)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_6](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5, _6)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_5](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4, _5)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_4](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3, _4)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_3](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2, _3)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_2](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1, _2)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_1](/documentation/code/files/module__macros__common_8hpp/)**(A, B, _1)  |
+|  | **[ALLOW_MODEL_DEPENDENCE_AB](/documentation/code/files/module__macros__common_8hpp/)**(A, B, ...)  |
+|  | **[ALLOW_MODEL_DEPENDENCE](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[BACKEND_GROUPS_10](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10)  |
+|  | **[BACKEND_GROUPS_9](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5, _6, _7, _8, _9)  |
+|  | **[BACKEND_GROUPS_8](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5, _6, _7, _8)  |
+|  | **[BACKEND_GROUPS_7](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5, _6, _7)  |
+|  | **[BACKEND_GROUPS_6](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5, _6)  |
+|  | **[BACKEND_GROUPS_5](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4, _5)  |
+|  | **[BACKEND_GROUPS_4](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3, _4)  |
+|  | **[BACKEND_GROUPS_3](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, _3)  |
+|  | **[BACKEND_GROUPS_2](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2)  |
+|  | **[BACKEND_GROUPS_1](/documentation/code/files/module__macros__common_8hpp/)**(_1)  |
+|  | **[BACKEND_GROUPS](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[ACTIVATE_DEP_BE_0](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2) <br>[ACTIVATE_FOR_BACKEND()]() called with no versions; allow any backend version.  |
+|  | **[ACTIVATE_DEP_BE_1](/documentation/code/files/module__macros__common_8hpp/)**(_1, _2, ...) <br>[ACTIVATE_FOR_BACKEND()]() called with two arguments; allow specified backend versions.  |
+|  | **[ACTIVATE_FOR_BACKEND](/documentation/code/files/module__macros__common_8hpp/)**(...)  |
+|  | **[UNUSED_OK](/documentation/code/files/module__macros__common_8hpp/)** <br>Define a macro to suppress unused variable and typedef warnings in GCC (and do nothing for other compilers)  |
 
 ## Detailed Description
 
@@ -736,7 +736,7 @@ CAT(CLASSLOAD_NEEDED_, BOOST_PP_GREATER(BOOST_PP_VARIADIC_SIZE(__VA_ARGS__), 1))
 ```
 
 
-Redirects the [NEEDS_CLASSES_FROM(BACKEND, [VERSIONS])](/documentation/code/files/module__macros__common_8hpp/#define-needs-classes-from) macro to the [CLASSLOAD_NEEDED(BACKEND, VERSTRING)](/documentation/code/files/module__macros__incore_8hpp/#define-classload-needed) macro according to whether it has been called with version numbers or not (making the version number 'default' if it is omitted). 
+Redirects the [NEEDS_CLASSES_FROM(BACKEND, [VERSIONS])](/documentation/code/files/module__macros__common_8hpp/) macro to the [CLASSLOAD_NEEDED(BACKEND, VERSTRING)](/documentation/code/files/module__macros__incore_8hpp/) macro according to whether it has been called with version numbers or not (making the version number 'default' if it is omitted). 
 
 
 ### define ALLOW_MODEL
@@ -1421,7 +1421,7 @@ CAT(ACTIVATE_DEP_BE_, BOOST_PP_GREATER   \
 ```
 
 
-Redirects the [ACTIVATE_FOR_BACKEND(BACKEND_REQ, BACKEND, [VERSIONS])](/documentation/code/files/module__macros__common_8hpp/#define-activate-for-backend) macro to the [ACTIVATE_DEP_BE(BACKEND_REQ, BACKEND, VERSTRING)](/documentation/code/files/module__macros__incore_8hpp/#define-activate-dep-be) macro according to whether it has been called with version numbers or not (making the version number 'any' if it is omitted). 
+Redirects the [ACTIVATE_FOR_BACKEND(BACKEND_REQ, BACKEND, [VERSIONS])](/documentation/code/files/module__macros__common_8hpp/) macro to the [ACTIVATE_DEP_BE(BACKEND_REQ, BACKEND, VERSTRING)](/documentation/code/files/module__macros__incore_8hpp/) macro according to whether it has been called with version numbers or not (making the version number 'any' if it is omitted). 
 
 
 ### define UNUSED_OK
@@ -1786,4 +1786,4 @@ ALLOW_MODEL_COMBINATION(BOOST_PP_ENUM(BOOST_PP_VARIADIC_SIZE(__VA_ARGS__),MODEL_
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

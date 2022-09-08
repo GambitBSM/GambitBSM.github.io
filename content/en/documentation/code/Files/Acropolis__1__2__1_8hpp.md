@@ -13,11 +13,11 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[BACKENDNAME](/documentation/code/files/acropolis__1__2__1_8hpp/#define-backendname)**  |
-|  | **[BACKENDLANG](/documentation/code/files/acropolis__1__2__1_8hpp/#define-backendlang)**  |
-|  | **[VERSION](/documentation/code/files/acropolis__1__2__1_8hpp/#define-version)**  |
-|  | **[SAFE_VERSION](/documentation/code/files/acropolis__1__2__1_8hpp/#define-safe-version)**  |
-|  | **[REFERENCE](/documentation/code/files/acropolis__1__2__1_8hpp/#define-reference)**  |
+|  | **[BACKENDNAME](/documentation/code/files/acropolis__1__2__1_8hpp/)**  |
+|  | **[BACKENDLANG](/documentation/code/files/acropolis__1__2__1_8hpp/)**  |
+|  | **[VERSION](/documentation/code/files/acropolis__1__2__1_8hpp/)**  |
+|  | **[SAFE_VERSION](/documentation/code/files/acropolis__1__2__1_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/acropolis__1__2__1_8hpp/)**  |
 
 ## Detailed Description
 
@@ -136,4 +136,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

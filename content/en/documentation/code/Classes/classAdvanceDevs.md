@@ -19,20 +19,20 @@ Inherited by [RandomPlane](/documentation/code/classes/classrandomplane/), [Rand
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/#function-advancedevs)**(int nin, double din, unsigned long long iin) |
-| | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/#function-advancedevs)**(double ** vvar, const int nin, double din, unsigned long long iin) |
-| void | **[MultiDev](/documentation/code/classes/classadvancedevs/#function-multidev)**(double * pin, double * p0) |
-| void | **[MultiDev](/documentation/code/classes/classadvancedevs/#function-multidev)**(double ** cvar, double * pin, double * p0) |
-| void | **[EllipseDev](/documentation/code/classes/classadvancedevs/#function-ellipsedev)**(double * pin, double * p0, double fin) |
-| void | **[EllipseDev](/documentation/code/classes/classadvancedevs/#function-ellipsedev)**(double ** cvar, double * pin, double * p0, double fin) |
-| | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/#function-advancedevs)**(int nin, double din, unsigned long long iin) |
-| | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/#function-advancedevs)**(double ** vvar, const int nin, double din, unsigned long long iin) |
-| double | **[MultiDevDist](/documentation/code/classes/classadvancedevs/#function-multidevdist)**() |
-| double | **[MultiDevPDF](/documentation/code/classes/classadvancedevs/#function-multidevpdf)**(double r, int dim) |
-| void | **[MultiDev](/documentation/code/classes/classadvancedevs/#function-multidev)**(double * pin, double * p0) |
-| void | **[MultiDev](/documentation/code/classes/classadvancedevs/#function-multidev)**(double ** cvar, double * pin, double * p0) |
-| void | **[EllipseDev](/documentation/code/classes/classadvancedevs/#function-ellipsedev)**(double * pin, double * p0, double fin) |
-| void | **[EllipseDev](/documentation/code/classes/classadvancedevs/#function-ellipsedev)**(double ** cvar, double * pin, double * p0, double fin) |
+| | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/)**(int nin, double din, unsigned long long iin) |
+| | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/)**(double ** vvar, const int nin, double din, unsigned long long iin) |
+| void | **[MultiDev](/documentation/code/classes/classadvancedevs/)**(double * pin, double * p0) |
+| void | **[MultiDev](/documentation/code/classes/classadvancedevs/)**(double ** cvar, double * pin, double * p0) |
+| void | **[EllipseDev](/documentation/code/classes/classadvancedevs/)**(double * pin, double * p0, double fin) |
+| void | **[EllipseDev](/documentation/code/classes/classadvancedevs/)**(double ** cvar, double * pin, double * p0, double fin) |
+| | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/)**(int nin, double din, unsigned long long iin) |
+| | **[AdvanceDevs](/documentation/code/classes/classadvancedevs/)**(double ** vvar, const int nin, double din, unsigned long long iin) |
+| double | **[MultiDevDist](/documentation/code/classes/classadvancedevs/)**() |
+| double | **[MultiDevPDF](/documentation/code/classes/classadvancedevs/)**(double r, int dim) |
+| void | **[MultiDev](/documentation/code/classes/classadvancedevs/)**(double * pin, double * p0) |
+| void | **[MultiDev](/documentation/code/classes/classadvancedevs/)**(double ** cvar, double * pin, double * p0) |
+| void | **[EllipseDev](/documentation/code/classes/classadvancedevs/)**(double * pin, double * p0, double fin) |
+| void | **[EllipseDev](/documentation/code/classes/classadvancedevs/)**(double ** cvar, double * pin, double * p0, double fin) |
 
 ## Additional inherited members
 
@@ -40,108 +40,108 @@ Inherited by [RandomPlane](/documentation/code/classes/classrandomplane/), [Rand
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-expdev)**() |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-expdev)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
 
 **Public Functions inherited from [Cholesky](/documentation/code/classes/classcholesky/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a) |
-| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/classes/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/classes/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**() |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(const std::vector< std::vector< double > > & a) |
-| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/classes/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/classes/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**() |
+| | **[Cholesky](/documentation/code/classes/classcholesky/)**(const int nin) |
+| | **[Cholesky](/documentation/code/classes/classcholesky/)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/classes/classcholesky/)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/)**(double ** a) |
+| void | **[EnterMat](/documentation/code/classes/classcholesky/)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/)**(double * y) |
+| void | **[Solve](/documentation/code/classes/classcholesky/)**(double * b, double * x) |
+| double | **[Square](/documentation/code/classes/classcholesky/)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/classes/classcholesky/)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/classes/classcholesky/)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/classes/classcholesky/)**() |
+| | **[~Cholesky](/documentation/code/classes/classcholesky/)**() |
+| | **[Cholesky](/documentation/code/classes/classcholesky/)**(const int nin) |
+| | **[Cholesky](/documentation/code/classes/classcholesky/)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/classes/classcholesky/)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/)**(double ** a) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/)**(const std::vector< std::vector< double > > & a) |
+| void | **[EnterMat](/documentation/code/classes/classcholesky/)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/)**(double * y) |
+| void | **[Solve](/documentation/code/classes/classcholesky/)**(double * b, double * x) |
+| double | **[Square](/documentation/code/classes/classcholesky/)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/classes/classcholesky/)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/classes/classcholesky/)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/classes/classcholesky/)**() |
+| | **[~Cholesky](/documentation/code/classes/classcholesky/)**() |
 
 **Protected Attributes inherited from [Cholesky](/documentation/code/classes/classcholesky/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[num](/documentation/code/classes/classcholesky/#variable-num)**  |
+| int | **[num](/documentation/code/classes/classcholesky/)**  |
 
 **Public Functions inherited from [BasicDevs](/documentation/code/classes/classbasicdevs/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-expdev)**() |
-| | **[BasicDevs](/documentation/code/classes/classbasicdevs/#function-basicdevs)**(unsigned long long i) |
-| double | **[Dev](/documentation/code/classes/classbasicdevs/#function-dev)**() |
-| double | **[ExpDev](/documentation/code/classes/classbasicdevs/#function-expdev)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
+| | **[BasicDevs](/documentation/code/classes/classbasicdevs/)**(unsigned long long i) |
+| double | **[Dev](/documentation/code/classes/classbasicdevs/)**() |
+| double | **[ExpDev](/documentation/code/classes/classbasicdevs/)**() |
 
 **Public Functions inherited from [Cholesky](/documentation/code/classes/classcholesky/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a) |
-| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/classes/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/classes/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**() |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(const std::vector< std::vector< double > > & a) |
-| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/classes/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/classes/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**() |
+| | **[Cholesky](/documentation/code/classes/classcholesky/)**(const int nin) |
+| | **[Cholesky](/documentation/code/classes/classcholesky/)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/classes/classcholesky/)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/)**(double ** a) |
+| void | **[EnterMat](/documentation/code/classes/classcholesky/)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/)**(double * y) |
+| void | **[Solve](/documentation/code/classes/classcholesky/)**(double * b, double * x) |
+| double | **[Square](/documentation/code/classes/classcholesky/)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/classes/classcholesky/)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/classes/classcholesky/)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/classes/classcholesky/)**() |
+| | **[~Cholesky](/documentation/code/classes/classcholesky/)**() |
+| | **[Cholesky](/documentation/code/classes/classcholesky/)**(const int nin) |
+| | **[Cholesky](/documentation/code/classes/classcholesky/)**(double ** a, const int nin) |
+| bool | **[EnterMatM](/documentation/code/classes/classcholesky/)**(double ** a, const int min) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/)**(double ** a) |
+| bool | **[EnterMat](/documentation/code/classes/classcholesky/)**(const std::vector< std::vector< double > > & a) |
+| void | **[EnterMat](/documentation/code/classes/classcholesky/)**(double ** a, int nin) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/)**(double * y, double * b) |
+| void | **[ElMult](/documentation/code/classes/classcholesky/)**(double * y) |
+| void | **[Solve](/documentation/code/classes/classcholesky/)**(double * b, double * x) |
+| double | **[Square](/documentation/code/classes/classcholesky/)**(double * y, double * y0) |
+| double | **[Square](/documentation/code/classes/classcholesky/)**(double * y, double * y0, int * map) |
+| void | **[Inverse](/documentation/code/classes/classcholesky/)**(double ** ainv) |
+| double | **[DetSqrt](/documentation/code/classes/classcholesky/)**() |
+| | **[~Cholesky](/documentation/code/classes/classcholesky/)**() |
 
 **Protected Attributes inherited from [Cholesky](/documentation/code/classes/classcholesky/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| int | **[num](/documentation/code/classes/classcholesky/#variable-num)**  |
+| int | **[num](/documentation/code/classes/classcholesky/)**  |
 
 **Public Functions inherited from [Ran](/documentation/code/classes/classran/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
-| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
-| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/)**() |
+| | **[Ran](/documentation/code/classes/classran/)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/)**() |
 
 
 ## Public Functions Documentation
@@ -299,4 +299,4 @@ inline void EllipseDev(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

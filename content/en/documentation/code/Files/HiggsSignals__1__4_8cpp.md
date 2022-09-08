@@ -13,13 +13,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[if](/documentation/code/files/higgssignals__1__4_8cpp/#function-if)**(scan_level ) |
+| | **[if](/documentation/code/files/higgssignals__1__4_8cpp/)**(scan_level ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BE_INI_FUNCTION](/documentation/code/files/higgssignals__1__4_8cpp/#variable-be-ini-function)**  |
+| | **[BE_INI_FUNCTION](/documentation/code/files/higgssignals__1__4_8cpp/)**  |
 
 
 ## Functions Documentation
@@ -117,4 +117,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:07 +0000
+Updated on 2022-09-08 at 01:05:24 +0000

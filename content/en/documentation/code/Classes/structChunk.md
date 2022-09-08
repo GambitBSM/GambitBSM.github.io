@@ -17,24 +17,24 @@ Struct to describe start and end indices for a chunk of data.  [More...](#detail
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Chunk](/documentation/code/classes/structchunk/#function-chunk)**(std::size_t s, std::size_t e) |
-| | **[Chunk](/documentation/code/classes/structchunk/#function-chunk)**() |
-| bool | **[iContain](/documentation/code/classes/structchunk/#function-icontain)**(std::size_t index) const |
-| std::size_t | **[length](/documentation/code/classes/structchunk/#function-length)**() const |
-| | **[Chunk](/documentation/code/classes/structchunk/#function-chunk)**(std::size_t s, std::size_t e, std::size_t el) |
-| | **[Chunk](/documentation/code/classes/structchunk/#function-chunk)**(std::size_t s, std::size_t e) |
-| | **[Chunk](/documentation/code/classes/structchunk/#function-chunk)**() |
-| bool | **[iContain](/documentation/code/classes/structchunk/#function-icontain)**(std::size_t index) const |
-| std::size_t | **[length](/documentation/code/classes/structchunk/#function-length)**() const |
-| bool | **[operator==](/documentation/code/classes/structchunk/#function-operator)**(const [Chunk](/documentation/code/classes/structchunk/) & other) const |
+| | **[Chunk](/documentation/code/classes/structchunk/)**(std::size_t s, std::size_t e) |
+| | **[Chunk](/documentation/code/classes/structchunk/)**() |
+| bool | **[iContain](/documentation/code/classes/structchunk/)**(std::size_t index) const |
+| std::size_t | **[length](/documentation/code/classes/structchunk/)**() const |
+| | **[Chunk](/documentation/code/classes/structchunk/)**(std::size_t s, std::size_t e, std::size_t el) |
+| | **[Chunk](/documentation/code/classes/structchunk/)**(std::size_t s, std::size_t e) |
+| | **[Chunk](/documentation/code/classes/structchunk/)**() |
+| bool | **[iContain](/documentation/code/classes/structchunk/)**(std::size_t index) const |
+| std::size_t | **[length](/documentation/code/classes/structchunk/)**() const |
+| bool | **[operator==](/documentation/code/classes/structchunk/)**(const [Chunk](/documentation/code/classes/structchunk/) & other) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::size_t | **[start](/documentation/code/classes/structchunk/#variable-start)**  |
-| std::size_t | **[end](/documentation/code/classes/structchunk/#variable-end)**  |
-| std::size_t | **[eff_length](/documentation/code/classes/structchunk/#variable-eff-length)**  |
+| std::size_t | **[start](/documentation/code/classes/structchunk/)**  |
+| std::size_t | **[end](/documentation/code/classes/structchunk/)**  |
+| std::size_t | **[eff_length](/documentation/code/classes/structchunk/)**  |
 
 ## Detailed Description
 
@@ -165,4 +165,4 @@ std::size_t eff_length;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

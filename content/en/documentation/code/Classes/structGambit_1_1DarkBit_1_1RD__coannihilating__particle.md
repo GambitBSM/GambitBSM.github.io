@@ -15,16 +15,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#function-rd-coannihilating-particle)**() |
-| | **[RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#function-rd-coannihilating-particle)**(const unsigned int & index, const unsigned int & dof, const double & mass) |
+| | **[RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/)**() |
+| | **[RD_coannihilating_particle](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/)**(const unsigned int & index, const unsigned int & dof, const double & mass) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| unsigned int | **[index](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-index)**  |
-| unsigned int | **[degreesOfFreedom](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-degreesoffreedom)**  |
-| double | **[mass](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/#variable-mass)**  |
+| unsigned int | **[index](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/)**  |
+| unsigned int | **[degreesOfFreedom](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/)**  |
+| double | **[mass](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__coannihilating__particle/)**  |
 
 ## Public Functions Documentation
 
@@ -71,4 +71,4 @@ double mass;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

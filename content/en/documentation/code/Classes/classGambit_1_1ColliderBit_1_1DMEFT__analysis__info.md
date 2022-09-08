@@ -15,26 +15,26 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[add_bkgcov](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-bkgcov)**(const std::vector< std::vector< double > > & bkgcov_in) |
-| void | **[add_interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-interp1d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > colnames) |
-| void | **[add_interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-add-interp2d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > colnames) |
-| const [Utils::interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/) & | **[get_interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-get-interp1d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
-| const [Utils::interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/) & | **[get_interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#function-get-interp2d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
+| void | **[add_bkgcov](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**(const std::vector< std::vector< double > > & bkgcov_in) |
+| void | **[add_interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**([str](/documentation/code/namespaces/namespacegambit/) name, [str](/documentation/code/namespaces/namespacegambit/) filename, std::vector< [str](/documentation/code/namespaces/namespacegambit/) > colnames) |
+| void | **[add_interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**([str](/documentation/code/namespaces/namespacegambit/) name, [str](/documentation/code/namespaces/namespacegambit/) filename, std::vector< [str](/documentation/code/namespaces/namespacegambit/) > colnames) |
+| const [Utils::interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/) & | **[get_interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**([str](/documentation/code/namespaces/namespacegambit/) name) const |
+| const [Utils::interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/) & | **[get_interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**([str](/documentation/code/namespaces/namespacegambit/) name) const |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[name](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-name)**  |
-| double | **[lumi_invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-lumi-invfb)**  |
-| size_t | **[n_signal_regions](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-n-signal-regions)**  |
-| std::vector< int > | **[obsnum](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-obsnum)**  |
-| std::vector< double > | **[bkgnum](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgnum)**  |
-| std::vector< double > | **[bkgerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgerr)**  |
-| Eigen::MatrixXd | **[bkgcov](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-bkgcov)**  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< double > > | **[extra_info](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-extra-info)**  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::unique_ptr< [Utils::interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/) > > | **[interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-interp1d)**  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::unique_ptr< [Utils::interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/) > > | **[interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/#variable-interp2d)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[name](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| double | **[lumi_invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| size_t | **[n_signal_regions](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| std::vector< int > | **[obsnum](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| std::vector< double > | **[bkgnum](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| std::vector< double > | **[bkgerr](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| Eigen::MatrixXd | **[bkgcov](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/), std::vector< double > > | **[extra_info](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/), std::unique_ptr< [Utils::interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/) > > | **[interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/), std::unique_ptr< [Utils::interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/) > > | **[interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1dmeft__analysis__info/)**  |
 
 ## Detailed Description
 
@@ -170,4 +170,4 @@ std::map< str, std::unique_ptr< Utils::interp2d_collection > > interp2d;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

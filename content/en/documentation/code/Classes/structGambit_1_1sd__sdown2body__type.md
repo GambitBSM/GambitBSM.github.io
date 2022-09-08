@@ -15,12 +15,12 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsdowlndow](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlndow)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsdowlchup](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlchup)**  |
-| Fdouble | **[brsdowlglui](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowlglui)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsdowrndow](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrndow)**  |
-| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsdowrchup](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrchup)**  |
-| Fdouble | **[brsdowrglui](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/#variable-brsdowrglui)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsdowlndow](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsdowlchup](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/)**  |
+| Fdouble | **[brsdowlglui](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 4 > | **[brsdowrndow](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/)**  |
+| [Farray](/documentation/code/classes/classgambit_1_1farray/)< Fdouble, 1, 2 > | **[brsdowrchup](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/)**  |
+| Fdouble | **[brsdowrglui](/documentation/code/classes/structgambit_1_1sd__sdown2body__type/)**  |
 
 ## Public Attributes Documentation
 
@@ -68,4 +68,4 @@ Fdouble brsdowrglui;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

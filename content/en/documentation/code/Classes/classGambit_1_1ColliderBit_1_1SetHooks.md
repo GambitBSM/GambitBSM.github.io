@@ -17,9 +17,9 @@ A templated class specific for the UserHooks.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SetHooks](/documentation/code/classes/classgambit_1_1colliderbit_1_1sethooks/#function-sethooks)**() |
-| | **[~SetHooks](/documentation/code/classes/classgambit_1_1colliderbit_1_1sethooks/#function-sethooks)**() |
-| bool | **[SetupHook](/documentation/code/classes/classgambit_1_1colliderbit_1_1sethooks/#function-setuphook)**(PythiaT * ) |
+| | **[SetHooks](/documentation/code/classes/classgambit_1_1colliderbit_1_1sethooks/)**() |
+| | **[~SetHooks](/documentation/code/classes/classgambit_1_1colliderbit_1_1sethooks/)**() |
+| bool | **[SetupHook](/documentation/code/classes/classgambit_1_1colliderbit_1_1sethooks/)**(PythiaT * ) |
 
 ## Detailed Description
 
@@ -57,4 +57,4 @@ inline bool SetupHook(
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

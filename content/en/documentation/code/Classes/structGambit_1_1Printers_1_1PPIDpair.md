@@ -18,22 +18,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/#function-ppidpair)**() |
-| | **[PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/#function-ppidpair)**(const unsigned long long int p, const int r) |
+| | **[PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/)**() |
+| | **[PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/)**(const unsigned long long int p, const int r) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| unsigned long long int | **[pointID](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/#variable-pointid)**  |
-| unsigned int | **[rank](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/#variable-rank)**  |
-| unsigned int | **[valid](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/#variable-valid)**  |
+| unsigned long long int | **[pointID](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/)**  |
+| unsigned int | **[rank](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/)**  |
+| unsigned int | **[valid](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/)**  |
 
 ## Friends
 
 |                | Name           |
 | -------------- | -------------- |
-| std::ostream & | **[operator<<](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/#friend-operator)**(std::ostream & stream, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & ppid) <br>Stream operator overloads.  |
+| std::ostream & | **[operator<<](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/)**(std::ostream & stream, const [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) & ppid) <br>Stream operator overloads.  |
 
 ## Detailed Description
 
@@ -102,4 +102,4 @@ Stream operator overloads.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

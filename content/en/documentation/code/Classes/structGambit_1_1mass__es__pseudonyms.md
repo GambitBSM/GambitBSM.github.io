@@ -17,62 +17,62 @@ Structure to hold mass eigenstate pseudonyms for gauge eigenstates.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#function-mass-es-pseudonyms)**()<br>Constructor.  |
-| void | **[fill](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#function-fill)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm, double tol, bool pt_error, bool debug)<br>Fill strings and maps in struct.  |
-| void | **[refill](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#function-refill)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm, double tol, bool pt_error, bool debug)<br>Refill strings and maps in struct.  |
-| void | **[debug_print](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#function-debug-print)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm)<br>Debug printer for pseudonyms.  |
-| void | **[debug_print_gauge](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#function-debug-print-gauge)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & gauge_es, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & mass_es, double & max_mix)<br>Gauge state debug printer for pseudonyms.  |
-| void | **[debug_print_family](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#function-debug-print-family)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & family_state, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & mass_es, double & mix_mag_sq, double & tol)<br>Family state debug printer for pseudonyms.  |
+| | **[mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**()<br>Constructor.  |
+| void | **[fill](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm, double tol, bool pt_error, bool debug)<br>Fill strings and maps in struct.  |
+| void | **[refill](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm, double tol, bool pt_error, bool debug)<br>Refill strings and maps in struct.  |
+| void | **[debug_print](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm)<br>Debug printer for pseudonyms.  |
+| void | **[debug_print_gauge](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm, [str](/documentation/code/namespaces/namespacegambit/) & gauge_es, [str](/documentation/code/namespaces/namespacegambit/) & mass_es, double & max_mix)<br>Gauge state debug printer for pseudonyms.  |
+| void | **[debug_print_family](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & mssm, [str](/documentation/code/namespaces/namespacegambit/) & family_state, [str](/documentation/code/namespaces/namespacegambit/) & mass_es, double & mix_mag_sq, double & tol)<br>Family state debug printer for pseudonyms.  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isdl](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isdl)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isul](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isul)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[issl](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-issl)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[iscl](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-iscl)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isb1](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isb1)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[ist1](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-ist1)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isell](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isell)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isnel](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isnel)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[ismul](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-ismul)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isnmul](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isnmul)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[istau1](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-istau1)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isntaul](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isntaul)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isdr](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isdr)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isur](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isur)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[issr](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-issr)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[iscr](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-iscr)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isb2](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isb2)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[ist2](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-ist2)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[iselr](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-iselr)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[ismur](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-ismur)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[istau2](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-istau2)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isdlbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isdlbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isulbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isulbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isslbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isslbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isclbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isclbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isb1bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isb1bar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[ist1bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-ist1bar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isellbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isellbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isnelbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isnelbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[ismulbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-ismulbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isnmulbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isnmulbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[istau1bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-istau1bar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isntaulbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isntaulbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isdrbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isdrbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isurbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isurbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[issrbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-issrbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[iscrbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-iscrbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[isb2bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-isb2bar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[ist2bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-ist2bar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[iselrbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-iselrbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[ismurbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-ismurbar)**  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[istau2bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-istau2bar)**  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[gauge_family_eigenstates](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-gauge-family-eigenstates)** <br>Maps relating the pseudonym strings in both directions.  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[mass_eigenstates](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-mass-eigenstates)**  |
-| bool | **[filled](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/#variable-filled)** <br>Struct has already been filled or not.  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isdl](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isul](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[issl](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[iscl](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isb1](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[ist1](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isell](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isnel](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[ismul](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isnmul](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[istau1](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isntaul](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isdr](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isur](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[issr](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[iscr](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isb2](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[ist2](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[iselr](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[ismur](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[istau2](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isdlbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isulbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isslbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isclbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isb1bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[ist1bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isellbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isnelbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[ismulbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isnmulbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[istau1bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isntaulbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isdrbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isurbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[issrbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[iscrbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[isb2bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[ist2bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[iselrbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[ismurbar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| [str](/documentation/code/namespaces/namespacegambit/) | **[istau2bar](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/), [str](/documentation/code/namespaces/namespacegambit/) > | **[gauge_family_eigenstates](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)** <br>Maps relating the pseudonym strings in both directions.  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/), [str](/documentation/code/namespaces/namespacegambit/) > | **[mass_eigenstates](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)**  |
+| bool | **[filled](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/)** <br>Struct has already been filled or not.  |
 
 ## Public Functions Documentation
 
@@ -485,4 +485,4 @@ Struct has already been filled or not.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000

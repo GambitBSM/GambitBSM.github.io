@@ -13,27 +13,27 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[initialize](/documentation/code/files/libfirst_8cpp/#function-initialize)**(int a) |
-| void | **[someFunction](/documentation/code/files/libfirst_8cpp/#function-somefunction)**() |
-| double | **[byRefExample](/documentation/code/files/libfirst_8cpp/#function-byrefexample)**(double & input) |
-| void | **[byRefExample2](/documentation/code/files/libfirst_8cpp/#function-byrefexample2)**(double & input, double input2) |
-| double | **[returnResult](/documentation/code/files/libfirst_8cpp/#function-returnresult)**() |
-| double | **[nastyExample](/documentation/code/files/libfirst_8cpp/#function-nastyexample)**(int count, ... ) |
-| double | **[arrayarg_1D](/documentation/code/files/libfirst_8cpp/#function-arrayarg-1d)**(double arg[10]) |
-| double | **[arrayarg_2D](/documentation/code/files/libfirst_8cpp/#function-arrayarg-2d)**(double arg[10][10]) |
-| double | **[arrayarg_3D](/documentation/code/files/libfirst_8cpp/#function-arrayarg-3d)**(double arg[10][10][10]) |
+| void | **[initialize](/documentation/code/files/libfirst_8cpp/)**(int a) |
+| void | **[someFunction](/documentation/code/files/libfirst_8cpp/)**() |
+| double | **[byRefExample](/documentation/code/files/libfirst_8cpp/)**(double & input) |
+| void | **[byRefExample2](/documentation/code/files/libfirst_8cpp/)**(double & input, double input2) |
+| double | **[returnResult](/documentation/code/files/libfirst_8cpp/)**() |
+| double | **[nastyExample](/documentation/code/files/libfirst_8cpp/)**(int count, ... ) |
+| double | **[arrayarg_1D](/documentation/code/files/libfirst_8cpp/)**(double arg[10]) |
+| double | **[arrayarg_2D](/documentation/code/files/libfirst_8cpp/)**(double arg[10][10]) |
+| double | **[arrayarg_3D](/documentation/code/files/libfirst_8cpp/)**(double arg[10][10][10]) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const int | **[array_length](/documentation/code/files/libfirst_8cpp/#variable-array-length)**  |
-| int | **[someInt](/documentation/code/files/libfirst_8cpp/#variable-someint)**  |
-| double | **[someDouble](/documentation/code/files/libfirst_8cpp/#variable-somedouble)**  |
-| double[array_length] | **[someArray](/documentation/code/files/libfirst_8cpp/#variable-somearray)**  |
-| std::vector< double > | **[someVector](/documentation/code/files/libfirst_8cpp/#variable-somevector)**  |
-| bool | **[isInitialized](/documentation/code/files/libfirst_8cpp/#variable-isinitialized)**  |
-| std::string | **[prefix](/documentation/code/files/libfirst_8cpp/#variable-prefix)**  |
+| const int | **[array_length](/documentation/code/files/libfirst_8cpp/)**  |
+| int | **[someInt](/documentation/code/files/libfirst_8cpp/)**  |
+| double | **[someDouble](/documentation/code/files/libfirst_8cpp/)**  |
+| double[array_length] | **[someArray](/documentation/code/files/libfirst_8cpp/)**  |
+| std::vector< double > | **[someVector](/documentation/code/files/libfirst_8cpp/)**  |
+| bool | **[isInitialized](/documentation/code/files/libfirst_8cpp/)**  |
+| std::string | **[prefix](/documentation/code/files/libfirst_8cpp/)**  |
 
 
 ## Functions Documentation
@@ -295,4 +295,4 @@ double arrayarg_3D(double arg[10][10][10])
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

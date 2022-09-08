@@ -44,7 +44,7 @@ To add a new type that will be used to communicate with a backend Z, declare it 
 
 ## MIXED-USE TYPES
 
-If the type will be used by multiple modules, multiple models or multiple backends, or any mixture thereof, make some header Elements/include/gambit/Elements/__your_header_name__.hpp that declares the type, and include that header by hand from [Elements/include/gambit/Elements/shared_types.hpp](/documentation/code/files/shared__types_8hpp/#file-shared-types-hpp).
+If the type will be used by multiple modules, multiple models or multiple backends, or any mixture thereof, make some header Elements/include/gambit/Elements/__your_header_name__.hpp that declares the type, and include that header by hand from [Elements/include/gambit/Elements/shared_types.hpp](/documentation/code/files/shared__types_8hpp/).
 
 
 ## PRINTING
@@ -179,4 +179,4 @@ Pat Scott
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

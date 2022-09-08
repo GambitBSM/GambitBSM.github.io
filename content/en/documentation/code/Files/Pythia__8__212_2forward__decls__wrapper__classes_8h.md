@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| namespace | **[CAT_3](/documentation/code/files/pythia__8__212_2forward__decls__wrapper__classes_8h/#function-cat-3)**(BACKENDNAME , _ , SAFE_VERSION ) |
+| namespace | **[CAT_3](/documentation/code/files/pythia__8__212_2forward__decls__wrapper__classes_8h/)**(BACKENDNAME , _ , SAFE_VERSION ) |
 
 
 ## Functions Documentation
@@ -185,4 +185,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:06 +0000
+Updated on 2022-09-08 at 01:05:23 +0000

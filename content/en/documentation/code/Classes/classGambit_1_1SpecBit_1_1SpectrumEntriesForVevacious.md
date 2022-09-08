@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SpectrumEntriesForVevacious](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-spectrumentriesforvevacious)**() |
-| void | **[set_scale](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-scale)**(double inScale) |
-| void | **[set_inputPath](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-inputpath)**(std::string inPath) |
-| void | **[set_inputFilename](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-set-inputfilename)**(std::string inFile) |
-| double | **[get_scale](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-scale)**() |
-| std::string | **[get_inputFilename](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-inputfilename)**() |
-| std::string | **[get_inputPath](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-inputpath)**() |
-| void | **[add_entry](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-add-entry)**(std::string name, vec_pair_int_dbl vec, int dimension) |
-| [map_str_SpectrumEntry](/documentation/code/namespaces/namespacegambit_1_1specbit/#typedef-map-str-spectrumentry) | **[get_spec_entry_map](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/#function-get-spec-entry-map)**() |
+| | **[SpectrumEntriesForVevacious](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**() |
+| void | **[set_scale](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**(double inScale) |
+| void | **[set_inputPath](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**(std::string inPath) |
+| void | **[set_inputFilename](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**(std::string inFile) |
+| double | **[get_scale](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**() |
+| std::string | **[get_inputFilename](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**() |
+| std::string | **[get_inputPath](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**() |
+| void | **[add_entry](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**(std::string name, vec_pair_int_dbl vec, int dimension) |
+| [map_str_SpectrumEntry](/documentation/code/namespaces/namespacegambit_1_1specbit/) | **[get_spec_entry_map](/documentation/code/classes/classgambit_1_1specbit_1_1spectrumentriesforvevacious/)**() |
 
 ## Detailed Description
 
@@ -117,4 +117,4 @@ inline map_str_SpectrumEntry get_spec_entry_map()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

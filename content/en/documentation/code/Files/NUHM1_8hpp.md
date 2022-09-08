@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/nuhm1_8hpp/#define-model)**  |
-|  | **[PARENT](/documentation/code/files/nuhm1_8hpp/#define-parent)**  |
+|  | **[MODEL](/documentation/code/files/nuhm1_8hpp/)**  |
+|  | **[PARENT](/documentation/code/files/nuhm1_8hpp/)**  |
 
 ## Detailed Description
 
@@ -95,4 +95,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

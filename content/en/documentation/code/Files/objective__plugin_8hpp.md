@@ -13,9 +13,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[objective_plugin](/documentation/code/files/objective__plugin_8hpp/#define-objective-plugin)**(...)  |
-|  | **[__OBJECTIVE_SETUP__](/documentation/code/files/objective__plugin_8hpp/#define-objective-setup)**  |
-|  | **[OBJECTIVE_PLUGIN](/documentation/code/files/objective__plugin_8hpp/#define-objective-plugin)**(plug_name, ...)  |
+|  | **[objective_plugin](/documentation/code/files/objective__plugin_8hpp/)**(...)  |
+|  | **[__OBJECTIVE_SETUP__](/documentation/code/files/objective__plugin_8hpp/)**  |
+|  | **[OBJECTIVE_PLUGIN](/documentation/code/files/objective__plugin_8hpp/)**(plug_name, ...)  |
 
 ## Detailed Description
 
@@ -154,4 +154,4 @@ inline void print_parameters(std::unordered_map<std::string, double> &key_map)  
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:03 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

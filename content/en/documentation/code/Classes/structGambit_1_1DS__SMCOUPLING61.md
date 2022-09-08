@@ -15,15 +15,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Fdouble | **[alph3mz](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-alph3mz)**  |
-| Fdouble | **[gfermi](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-gfermi)**  |
-| Fdouble | **[alphem](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-alphem)**  |
-| Fdouble | **[s2thw](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-s2thw)**  |
-| Fdouble | **[sinthw](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-sinthw)**  |
-| Fdouble | **[costhw](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-costhw)**  |
-| Fdouble | **[s2wmz](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-s2wmz)**  |
-| Fdouble | **[swmz](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-swmz)**  |
-| Fdouble | **[cwmz](/documentation/code/classes/structgambit_1_1ds__smcoupling61/#variable-cwmz)**  |
+| Fdouble | **[alph3mz](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
+| Fdouble | **[gfermi](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
+| Fdouble | **[alphem](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
+| Fdouble | **[s2thw](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
+| Fdouble | **[sinthw](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
+| Fdouble | **[costhw](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
+| Fdouble | **[s2wmz](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
+| Fdouble | **[swmz](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
+| Fdouble | **[cwmz](/documentation/code/classes/structgambit_1_1ds__smcoupling61/)**  |
 
 ## Public Attributes Documentation
 
@@ -92,4 +92,4 @@ Fdouble cwmz;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

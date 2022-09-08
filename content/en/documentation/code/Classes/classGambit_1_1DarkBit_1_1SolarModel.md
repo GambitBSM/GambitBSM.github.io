@@ -15,22 +15,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**() |
-| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**(std::string file) |
-| | **[~SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**() |
-| [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-operator)**([SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) && model) |
-| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-solarmodel)**(const [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & ) =delete |
-| [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-operator)**(const [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & ) =delete |
-| double | **[kappa_squared](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-kappa-squared)**(double r) |
-| double | **[temperature_in_keV](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-temperature-in-kev)**(double r) |
-| double | **[omega_pl_squared](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#function-omega-pl-squared)**(double r) |
+| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**() |
+| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**(std::string file) |
+| | **[~SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**() |
+| [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**([SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) && model) |
+| | **[SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**(const [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & ) =delete |
+| [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) | **[operator=](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**(const [SolarModel](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/) & ) =delete |
+| double | **[kappa_squared](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**(double r) |
+| double | **[temperature_in_keV](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**(double r) |
+| double | **[omega_pl_squared](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**(double r) |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[r_lo](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#variable-r-lo)**  |
-| double | **[r_hi](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/#variable-r-hi)**  |
+| double | **[r_lo](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**  |
+| double | **[r_hi](/documentation/code/classes/classgambit_1_1darkbit_1_1solarmodel/)**  |
 
 ## Public Functions Documentation
 
@@ -129,4 +129,4 @@ double r_hi;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

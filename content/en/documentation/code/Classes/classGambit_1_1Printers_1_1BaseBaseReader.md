@@ -20,27 +20,27 @@ Inherited by [Gambit::Printers::BaseReader](/documentation/code/classes/classgam
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BaseBaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-basebasereader)**() |
-| virtual void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-reset)**() =0 |
-| virtual ulong | **[get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-get-dataset-length)**() =0 |
-| virtual [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) | **[get_current_point](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-get-current-point)**() =0 |
-| virtual ulong | **[get_current_index](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-get-current-index)**() =0 |
-| virtual [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) | **[get_next_point](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-get-next-point)**() =0 |
-| virtual bool | **[eoi](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-eoi)**() =0 |
-| template <typename T \> <br>bool | **[retrieve](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-retrieve)**(T & out, const std::string & label, const uint rank, const ulong pointID) |
-| template <typename T \> <br>bool | **[retrieve](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-retrieve)**(T & out, const std::string & label)<br>Overload for 'retrieve' that uses the current point as the input for rank/pointID.  |
-| bool | **[retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-retrieve-and-print)**(const std::string & label, [BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer, const uint rank, const ulong pointID)<br>Retrieve and directly print data to new output.  |
-| virtual bool | **[retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-retrieve-and-print)**(const std::string & in_label, const std::string & out_label, [BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer, const uint rank, const ulong pointID) =0 |
-| bool | **[retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-retrieve-and-print)**(const std::string & label, [BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer)<br>Overload for 'retrieve_and_print' that uses the current point as the input for rank/pointID.  |
-| bool | **[retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-retrieve-and-print)**(const std::string & in_label, const std::string & out_label, [BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer)<br>As above, but allows for different input/output labels.  |
-| virtual std::size_t | **[get_type](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-get-type)**(const std::string & label) =0 |
-| virtual std::set< std::string > | **[get_all_labels](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-get-all-labels)**() =0 |
+| virtual | **[~BaseBaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**() |
+| virtual void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**() =0 |
+| virtual ulong | **[get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**() =0 |
+| virtual [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) | **[get_current_point](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**() =0 |
+| virtual ulong | **[get_current_index](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**() =0 |
+| virtual [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/) | **[get_next_point](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**() =0 |
+| virtual bool | **[eoi](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**() =0 |
+| template <typename T \> <br>bool | **[retrieve](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**(T & out, const std::string & label, const uint rank, const ulong pointID) |
+| template <typename T \> <br>bool | **[retrieve](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**(T & out, const std::string & label)<br>Overload for 'retrieve' that uses the current point as the input for rank/pointID.  |
+| bool | **[retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**(const std::string & label, [BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer, const uint rank, const ulong pointID)<br>Retrieve and directly print data to new output.  |
+| virtual bool | **[retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**(const std::string & in_label, const std::string & out_label, [BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer, const uint rank, const ulong pointID) =0 |
+| bool | **[retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**(const std::string & label, [BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer)<br>Overload for 'retrieve_and_print' that uses the current point as the input for rank/pointID.  |
+| bool | **[retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**(const std::string & in_label, const std::string & out_label, [BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) & printer)<br>As above, but allows for different input/output labels.  |
+| virtual std::size_t | **[get_type](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**(const std::string & label) =0 |
+| virtual std::set< std::string > | **[get_all_labels](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**() =0 |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| template <typename T \> <br>bool | **[_retrieve](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/#function-retrieve)**(T & , const std::string & label, const uint, const ulong) |
+| template <typename T \> <br>bool | **[_retrieve](/documentation/code/classes/classgambit_1_1printers_1_1basebasereader/)**(T & , const std::string & label, const uint, const ulong) |
 
 ## Detailed Description
 
@@ -85,7 +85,7 @@ virtual void reset() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::asciiReader::reset](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/#function-reset), [Gambit::Printers::HDF5Reader::reset](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/#function-reset), [Gambit::Printers::SQLiteReader::reset](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/#function-reset)
+**Reimplemented by**: [Gambit::Printers::asciiReader::reset](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/), [Gambit::Printers::HDF5Reader::reset](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/), [Gambit::Printers::SQLiteReader::reset](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/)
 
 
 ### function get_dataset_length
@@ -95,7 +95,7 @@ virtual ulong get_dataset_length() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::asciiReader::get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/#function-get-dataset-length), [Gambit::Printers::HDF5Reader::get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/#function-get-dataset-length), [Gambit::Printers::SQLiteReader::get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/#function-get-dataset-length)
+**Reimplemented by**: [Gambit::Printers::asciiReader::get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/), [Gambit::Printers::HDF5Reader::get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/), [Gambit::Printers::SQLiteReader::get_dataset_length](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/)
 
 
 ### function get_current_point
@@ -105,7 +105,7 @@ virtual PPIDpair get_current_point() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::asciiReader::get_current_point](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/#function-get-current-point), [Gambit::Printers::HDF5Reader::get_current_point](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/#function-get-current-point), [Gambit::Printers::SQLiteReader::get_current_point](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/#function-get-current-point)
+**Reimplemented by**: [Gambit::Printers::asciiReader::get_current_point](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/), [Gambit::Printers::HDF5Reader::get_current_point](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/), [Gambit::Printers::SQLiteReader::get_current_point](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/)
 
 
 ### function get_current_index
@@ -115,7 +115,7 @@ virtual ulong get_current_index() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::asciiReader::get_current_index](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/#function-get-current-index), [Gambit::Printers::HDF5Reader::get_current_index](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/#function-get-current-index), [Gambit::Printers::SQLiteReader::get_current_index](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/#function-get-current-index)
+**Reimplemented by**: [Gambit::Printers::asciiReader::get_current_index](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/), [Gambit::Printers::HDF5Reader::get_current_index](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/), [Gambit::Printers::SQLiteReader::get_current_index](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/)
 
 
 ### function get_next_point
@@ -125,7 +125,7 @@ virtual PPIDpair get_next_point() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::asciiReader::get_next_point](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/#function-get-next-point), [Gambit::Printers::HDF5Reader::get_next_point](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/#function-get-next-point), [Gambit::Printers::SQLiteReader::get_next_point](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/#function-get-next-point)
+**Reimplemented by**: [Gambit::Printers::asciiReader::get_next_point](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/), [Gambit::Printers::HDF5Reader::get_next_point](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/), [Gambit::Printers::SQLiteReader::get_next_point](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/)
 
 
 ### function eoi
@@ -135,7 +135,7 @@ virtual bool eoi() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::asciiReader::eoi](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/#function-eoi), [Gambit::Printers::HDF5Reader::eoi](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/#function-eoi), [Gambit::Printers::SQLiteReader::eoi](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/#function-eoi)
+**Reimplemented by**: [Gambit::Printers::asciiReader::eoi](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/), [Gambit::Printers::HDF5Reader::eoi](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/), [Gambit::Printers::SQLiteReader::eoi](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/)
 
 
 ### function retrieve
@@ -201,7 +201,7 @@ virtual bool retrieve_and_print(
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::BaseReader::retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basereader/#function-retrieve-and-print)
+**Reimplemented by**: [Gambit::Printers::BaseReader::retrieve_and_print](/documentation/code/classes/classgambit_1_1printers_1_1basereader/)
 
 
 Retrieve and directly print data to new output, renaming the output to something new Implemented in [BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) where complete type info is available. 
@@ -242,7 +242,7 @@ virtual std::size_t get_type(
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::asciiReader::get_type](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/#function-get-type), [Gambit::Printers::HDF5Reader::get_type](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/#function-get-type), [Gambit::Printers::SQLiteReader::get_type](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/#function-get-type)
+**Reimplemented by**: [Gambit::Printers::asciiReader::get_type](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/), [Gambit::Printers::HDF5Reader::get_type](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/), [Gambit::Printers::SQLiteReader::get_type](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/)
 
 
 Get type information for a data entry, i.e. defines the C++ type which this should be retrieved as, not what it is necessarily literally stored as in the output. It isn't human readable, it is just for matching retrieved data to a print type, mainly for the 'retrieve_and_print' function. Needs to be implemented in each complete derived Reader class 
@@ -255,7 +255,7 @@ virtual std::set< std::string > get_all_labels() =0
 ```
 
 
-**Reimplemented by**: [Gambit::Printers::asciiReader::get_all_labels](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/#function-get-all-labels), [Gambit::Printers::HDF5Reader::get_all_labels](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/#function-get-all-labels), [Gambit::Printers::SQLiteReader::get_all_labels](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/#function-get-all-labels)
+**Reimplemented by**: [Gambit::Printers::asciiReader::get_all_labels](/documentation/code/classes/classgambit_1_1printers_1_1asciireader/), [Gambit::Printers::HDF5Reader::get_all_labels](/documentation/code/classes/classgambit_1_1printers_1_1hdf5reader/), [Gambit::Printers::SQLiteReader::get_all_labels](/documentation/code/classes/classgambit_1_1printers_1_1sqlitereader/)
 
 
 Get list of output labels that can be retrieved by this printer. Needs to be implemented in each complete derived Reader class 
@@ -281,4 +281,4 @@ Default _retrieve function. Throws an error if no virtual function matching the 
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

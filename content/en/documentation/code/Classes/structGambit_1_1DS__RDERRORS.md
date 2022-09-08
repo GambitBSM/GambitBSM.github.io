@@ -15,9 +15,9 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| Finteger | **[rderr](/documentation/code/classes/structgambit_1_1ds__rderrors/#variable-rderr)**  |
-| Finteger | **[rdwar](/documentation/code/classes/structgambit_1_1ds__rderrors/#variable-rdwar)**  |
-| Finteger | **[rdinit](/documentation/code/classes/structgambit_1_1ds__rderrors/#variable-rdinit)**  |
+| Finteger | **[rderr](/documentation/code/classes/structgambit_1_1ds__rderrors/)**  |
+| Finteger | **[rdwar](/documentation/code/classes/structgambit_1_1ds__rderrors/)**  |
+| Finteger | **[rdinit](/documentation/code/classes/structgambit_1_1ds__rderrors/)**  |
 
 ## Public Attributes Documentation
 
@@ -44,4 +44,4 @@ Finteger rdinit;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

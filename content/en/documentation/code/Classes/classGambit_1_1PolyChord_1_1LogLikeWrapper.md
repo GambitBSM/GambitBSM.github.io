@@ -17,17 +17,17 @@ Class to connect PolyChord log-likelihood function and ScannerBit likelihood fun
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[LogLikeWrapper](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/#function-loglikewrapper)**([scanPtr](/documentation/code/namespaces/namespacegambit_1_1polychord/#typedef-scanptr) loglike, printer_interface & printer)<br>Constructor.  |
-| double | **[LogLike](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/#function-loglike)**(double * Cube, int ndim, double * phi, int nderived)<br>Main interface function from PolyChord to ScannerBit-supplied loglikelihood function.  |
-| void | **[dumper](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/#function-dumper)**(int ndead, int nlive, int npars, double * live, double * dead, double * logweights, double , double )<br>Main interface to PolyChord dumper routine  |
+| | **[LogLikeWrapper](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/)**([scanPtr](/documentation/code/namespaces/namespacegambit_1_1polychord/) loglike, printer_interface & printer)<br>Constructor.  |
+| double | **[LogLike](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/)**(double * Cube, int ndim, double * phi, int nderived)<br>Main interface function from PolyChord to ScannerBit-supplied loglikelihood function.  |
+| void | **[dumper](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/)**(int ndead, int nlive, int npars, double * live, double * dead, double * logweights, double , double )<br>Main interface to PolyChord dumper routine  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| std::unordered_map< std::string, int > | **[index_map](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/#variable-index-map)**  |
-| [Settings](/documentation/code/classes/structsettings/) | **[boundSettings](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/#variable-boundsettings)** <br>copy of the settings in use.  |
-| int | **[printer_speed_threshold](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/#variable-printer-speed-threshold)**  |
+| std::unordered_map< std::string, int > | **[index_map](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/)**  |
+| [Settings](/documentation/code/classes/structsettings/) | **[boundSettings](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/)** <br>copy of the settings in use.  |
+| int | **[printer_speed_threshold](/documentation/code/classes/classgambit_1_1polychord_1_1loglikewrapper/)**  |
 
 ## Public Functions Documentation
 
@@ -118,4 +118,4 @@ Disable printing for speeds greater and equal than Speeds start at 0 A value of 
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:18 +0000

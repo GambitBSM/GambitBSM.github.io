@@ -19,14 +19,14 @@ Inherits from [Gambit::exception](/documentation/code/classes/classgambit_1_1exc
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[error](/documentation/code/classes/classgambit_1_1error/#function-error)**(const char * message, const char * inikey)<br>GAMBIT error class constructors.  |
-| | **[error](/documentation/code/classes/classgambit_1_1error/#function-error)**(const char * message, const char * inikey, LogTag t1)<br>Constructor with 1 log tag.  |
-| | **[error](/documentation/code/classes/classgambit_1_1error/#function-error)**(const char * message, const char * inikey, LogTag t1, LogTag t2)<br>Constructor with 2 log tags.  |
-| | **[error](/documentation/code/classes/classgambit_1_1error/#function-error)**(const char * message, const char * inikey, LogTag t1, LogTag t2, LogTag t3)<br>Constructor with 3 log tags.  |
-| | **[error](/documentation/code/classes/classgambit_1_1error/#function-error)**(const char * message, const char * inikey, LogTag t1, LogTag t2, LogTag t3, LogTag t4)<br>Constructor with 4 log tags.  |
-| | **[error](/documentation/code/classes/classgambit_1_1error/#function-error)**(const char * message, const char * inikey, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5)<br>Constructor with 5 log tags.  |
-| | **[error](/documentation/code/classes/classgambit_1_1error/#function-error)**(const char * message, const char * inikey, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5, LogTag t6)<br>Constructor with 6 log tags.  |
-| | **[error](/documentation/code/classes/classgambit_1_1error/#function-error)**(const char * message, const char * inikey, std::set< LogTag > tags)<br>Constructor with log tags as a set.  |
+| | **[error](/documentation/code/classes/classgambit_1_1error/)**(const char * message, const char * inikey)<br>GAMBIT error class constructors.  |
+| | **[error](/documentation/code/classes/classgambit_1_1error/)**(const char * message, const char * inikey, LogTag t1)<br>Constructor with 1 log tag.  |
+| | **[error](/documentation/code/classes/classgambit_1_1error/)**(const char * message, const char * inikey, LogTag t1, LogTag t2)<br>Constructor with 2 log tags.  |
+| | **[error](/documentation/code/classes/classgambit_1_1error/)**(const char * message, const char * inikey, LogTag t1, LogTag t2, LogTag t3)<br>Constructor with 3 log tags.  |
+| | **[error](/documentation/code/classes/classgambit_1_1error/)**(const char * message, const char * inikey, LogTag t1, LogTag t2, LogTag t3, LogTag t4)<br>Constructor with 4 log tags.  |
+| | **[error](/documentation/code/classes/classgambit_1_1error/)**(const char * message, const char * inikey, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5)<br>Constructor with 5 log tags.  |
+| | **[error](/documentation/code/classes/classgambit_1_1error/)**(const char * message, const char * inikey, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5, LogTag t6)<br>Constructor with 6 log tags.  |
+| | **[error](/documentation/code/classes/classgambit_1_1error/)**(const char * message, const char * inikey, std::set< LogTag > tags)<br>Constructor with log tags as a set.  |
 
 ## Additional inherited members
 
@@ -34,29 +34,29 @@ Inherits from [Gambit::exception](/documentation/code/classes/classgambit_1_1exc
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal)<br>Constructor without log tags.  |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1)<br>Constructor with 1 log tag.  |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2)<br>Constructor with 2 log tags.  |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3)<br>Constructor with 3 log tags.  |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4)<br>Constructor with 4 log tags.  |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5)<br>Constructor with 5 log tags.  |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5, LogTag t6)<br>Constructor with 6 log tags.  |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5, LogTag t6, LogTag t7)<br>Constructor with 7 log tags.  |
-| | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, std::set< LogTag > tags)<br>Constructor with log tags as a set.  |
-| void | **[forced_throw](/documentation/code/classes/classgambit_1_1exception/#function-forced-throw)**(const std::string & origin, const std::string & specific_message)<br>Log the exception and throw it regardless of whether is is fatal or not.  |
-| void | **[silent_forced_throw](/documentation/code/classes/classgambit_1_1exception/#function-silent-forced-throw)**()<br>As per forced_throw but without logging.  |
-| virtual | **[~exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**()<br>Destructor.  |
-| void | **[set_fatal](/documentation/code/classes/classgambit_1_1exception/#function-set-fatal)**(bool fatal)<br>Setter for the fatal flag.  |
-| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1exception/#function-what)**() const<br>Retrieve the identity of the exception.  |
-| void | **[raise](/documentation/code/classes/classgambit_1_1exception/#function-raise)**(const std::string & origin, const std::string & specific_message) |
-| const std::map< const char *, [exception](/documentation/code/classes/classgambit_1_1exception/) * > & | **[all_exceptions](/documentation/code/classes/classgambit_1_1exception/#function-all-exceptions)**()<br>Get a read-only map of pointers to all instances of this class.  |
-| void | **[set_parameters](/documentation/code/classes/classgambit_1_1exception/#function-set-parameters)**(std::string params)<br>Set the parameter point string to append if a fatal exception is thrown.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal)<br>Constructor without log tags.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1)<br>Constructor with 1 log tag.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2)<br>Constructor with 2 log tags.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3)<br>Constructor with 3 log tags.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4)<br>Constructor with 4 log tags.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5)<br>Constructor with 5 log tags.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5, LogTag t6)<br>Constructor with 6 log tags.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5, LogTag t6, LogTag t7)<br>Constructor with 7 log tags.  |
+| | **[exception](/documentation/code/classes/classgambit_1_1exception/)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, std::set< LogTag > tags)<br>Constructor with log tags as a set.  |
+| void | **[forced_throw](/documentation/code/classes/classgambit_1_1exception/)**(const std::string & origin, const std::string & specific_message)<br>Log the exception and throw it regardless of whether is is fatal or not.  |
+| void | **[silent_forced_throw](/documentation/code/classes/classgambit_1_1exception/)**()<br>As per forced_throw but without logging.  |
+| virtual | **[~exception](/documentation/code/classes/classgambit_1_1exception/)**()<br>Destructor.  |
+| void | **[set_fatal](/documentation/code/classes/classgambit_1_1exception/)**(bool fatal)<br>Setter for the fatal flag.  |
+| virtual const char * | **[what](/documentation/code/classes/classgambit_1_1exception/)**() const<br>Retrieve the identity of the exception.  |
+| void | **[raise](/documentation/code/classes/classgambit_1_1exception/)**(const std::string & origin, const std::string & specific_message) |
+| const std::map< const char *, [exception](/documentation/code/classes/classgambit_1_1exception/) * > & | **[all_exceptions](/documentation/code/classes/classgambit_1_1exception/)**()<br>Get a read-only map of pointers to all instances of this class.  |
+| void | **[set_parameters](/documentation/code/classes/classgambit_1_1exception/)**(std::string params)<br>Set the parameter point string to append if a fatal exception is thrown.  |
 
 **Protected Attributes inherited from [Gambit::exception](/documentation/code/classes/classgambit_1_1exception/)**
 
 |                | Name           |
 | -------------- | -------------- |
-| std::set< LogTag > | **[myLogTags](/documentation/code/classes/classgambit_1_1exception/#variable-mylogtags)** <br>The set of tags to be passed to the logger.  |
+| std::set< LogTag > | **[myLogTags](/documentation/code/classes/classgambit_1_1exception/)** <br>The set of tags to be passed to the logger.  |
 
 
 ## Public Functions Documentation
@@ -180,4 +180,4 @@ Constructor with log tags as a set.
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

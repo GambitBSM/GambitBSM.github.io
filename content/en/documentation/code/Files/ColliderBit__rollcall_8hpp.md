@@ -13,8 +13,8 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE](/documentation/code/files/colliderbit__rollcall_8hpp/#define-module)**  |
-|  | **[REFERENCE](/documentation/code/files/colliderbit__rollcall_8hpp/#define-reference)**  |
+|  | **[MODULE](/documentation/code/files/colliderbit__rollcall_8hpp/)**  |
+|  | **[REFERENCE](/documentation/code/files/colliderbit__rollcall_8hpp/)**  |
 
 ## Detailed Description
 
@@ -121,4 +121,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:05 +0000
+Updated on 2022-09-08 at 01:05:22 +0000

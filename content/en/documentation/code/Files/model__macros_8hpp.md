@@ -13,54 +13,54 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CORE_DEFINEPARS](/documentation/code/files/model__macros_8hpp/#define-core-definepars)**(...)  |
-|  | **[DO_LINK](/documentation/code/files/model__macros_8hpp/#define-do-link)**(r, data, elem)  |
-|  | **[INTERPRET_AS_PARENT_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-interpret-as-parent-dependency)**(DEP, TYPE)  |
-|  | **[CORE_INTERPRET_AS_PARENT_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-core-interpret-as-parent-function)**(FUNC)  |
-|  | **[MAKE_PRIMARY_MODEL_FUNCTOR_MAIN](/documentation/code/files/model__macros_8hpp/#define-make-primary-model-functor-main)**(FUNCTION, CAPABILITY, ORIGIN) <br>Main version of MAKE_FUNCTOR modified to build primary_parameters functors.  |
-|  | **[MAKE_PRIMARY_MODEL_FUNCTOR_SUPP](/documentation/code/files/model__macros_8hpp/#define-make-primary-model-functor-supp)**(FUNCTION) <br>Supplementary version of MAKE_FUNCTOR modded for primary_parameters functors.  |
-|  | **[START_MODEL](/documentation/code/files/model__macros_8hpp/#define-start-model)**  |
-|  | **[DEFINEPARS](/documentation/code/files/model__macros_8hpp/#define-definepars)**(...)  |
-|  | **[MAP_TO_CAPABILITY](/documentation/code/files/model__macros_8hpp/#define-map-to-capability)**(PARAMETER, CAPABILITY)  |
-|  | **[INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-interpret-as-x-function)**(MODEL_X, FUNC)  |
-|  | **[INTERPRET_AS_PARENT_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-interpret-as-parent-function)**(FUNC)  |
-|  | **[INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-interpret-as-x-dependency)**(MODEL_X, DEP, TYPE)  |
-|  | **[START_CAPABILITY](/documentation/code/files/model__macros_8hpp/#define-start-capability)**  |
-|  | **[LONG_START_CAPABILITY](/documentation/code/files/model__macros_8hpp/#define-long-start-capability)**(MODULE, C)  |
-|  | **[DECLARE_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-declare-function)**(TYPE, CAN_MANAGE)  |
-|  | **[LONG_DECLARE_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-long-declare-function)**(MODULE, C, FUNCTION, TYPE, CAN_MANAGE)  |
-|  | **[DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-dependency)**(DEP, TYPE)  |
-|  | **[LONG_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-long-dependency)**(MODULE, FUNCTION, DEP, TYPE)  |
-|  | **[NEEDS_MANAGER](/documentation/code/files/model__macros_8hpp/#define-needs-manager)**(...)  |
-|  | **[ALLOWED_MODEL](/documentation/code/files/model__macros_8hpp/#define-allowed-model)**(MODULE, FUNCTION, MODEL)  |
-|  | **[ALLOWED_MODEL_DEPENDENCE](/documentation/code/files/model__macros_8hpp/#define-allowed-model-dependence)**(MODULE, FUNCTION, MODEL)  |
-|  | **[ALLOW_MODEL_COMBINATION](/documentation/code/files/model__macros_8hpp/#define-allow-model-combination)**(...)  |
-|  | **[MODEL_GROUP](/documentation/code/files/model__macros_8hpp/#define-model-group)**(GROUPNAME, GROUP)  |
-|  | **[BE_GROUP](/documentation/code/files/model__macros_8hpp/#define-be-group)**(GROUP)  |
-|  | **[DECLARE_BACKEND_REQ](/documentation/code/files/model__macros_8hpp/#define-declare-backend-req)**(GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
-|  | **[LONG_DECLARE_BACKEND_REQ](/documentation/code/files/model__macros_8hpp/#define-long-declare-backend-req)**(MODULE, C, FUNCTION, GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
-|  | **[ACTIVATE_BACKEND_REQ_FOR_MODELS](/documentation/code/files/model__macros_8hpp/#define-activate-backend-req-for-models)**(MODELS, TAGS)  |
-|  | **[START_CONDITIONAL_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-start-conditional-dependency)**(TYPE)  |
-|  | **[ACTIVATE_DEP_BE](/documentation/code/files/model__macros_8hpp/#define-activate-dep-be)**(BACKEND_REQ, BACKEND, VERSTRING)  |
-|  | **[ACTIVATE_FOR_MODELS](/documentation/code/files/model__macros_8hpp/#define-activate-for-models)**(...)  |
-|  | **[MODEL_CONDITIONAL_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-model-conditional-dependency)**(DEP, TYPE, ...)  |
-|  | **[BACKEND_OPTION](/documentation/code/files/model__macros_8hpp/#define-backend-option)**(BACKEND_AND_VERSIONS, TAGS)  |
-|  | **[LONG_BACKEND_OPTION](/documentation/code/files/model__macros_8hpp/#define-long-backend-option)**(MODULE, CAPABILITY, FUNCTION, BACKEND_AND_VERSIONS, TAGS)  |
-|  | **[FORCE_SAME_BACKEND](/documentation/code/files/model__macros_8hpp/#define-force-same-backend)**(...)  |
-|  | **[CLASSLOAD_NEEDED](/documentation/code/files/model__macros_8hpp/#define-classload-needed)**(...)  |
-|  | **[ALLOW_MODELS](/documentation/code/files/model__macros_8hpp/#define-allow-models)**(...)  |
-|  | **[MAKE_PRIMARY_MODEL_FUNCTOR](/documentation/code/files/model__macros_8hpp/#define-make-primary-model-functor)**(FUNCTION, CAPABILITY, ORIGIN)  |
-|  | **[MODULE_START_MODEL](/documentation/code/files/model__macros_8hpp/#define-module-start-model)** <br>"In module" version of the START_MODEL macro  |
-|  | **[MODULE_INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-module-interpret-as-x-function)**(MODEL_X, FUNC) <br>"In module" version of the INTERPRET_AS_X_FUNCTION macro  |
-|  | **[MODULE_INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-module-interpret-as-x-dependency)**(MODEL_X, DEP, TYPE) <br>"In module" version of the INTERPRET_AS_X_DEPENDENCY macro  |
-|  | **[CORE_START_MODEL](/documentation/code/files/model__macros_8hpp/#define-core-start-model)**  |
-|  | **[CORE_MAP_TO_CAPABILITY](/documentation/code/files/model__macros_8hpp/#define-core-map-to-capability)**(PARAMETER, CAPABILITY)  |
-|  | **[DEFINEPAR](/documentation/code/files/model__macros_8hpp/#define-definepar)**(PARAMETER)  |
-|  | **[CORE_INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-core-interpret-as-x-function)**(MODEL_X, FUNC) <br>Real declaration macro for INTERPRET_AS_X functions.  |
-|  | **[INTERPRET_AS_X_FUNCTION_FULL](/documentation/code/files/model__macros_8hpp/#define-interpret-as-x-function-full)**(MODEL_X, FUNC, ADD_FRIEND) <br>Generic declaration macro for INTERPRET_AS_ functions.  |
-|  | **[CORE_INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-core-interpret-as-x-dependency)**(MODEL_X, DEP, TYPE) <br>Add a dependency to an interpret-as-X function.  |
-|  | **[MODEL_NAMESPACE](/documentation/code/files/model__macros_8hpp/#define-model-namespace)** <br>Macro to get to model namespace easily.  |
-|  | **[USE_MODEL_PIPE](/documentation/code/files/model__macros_8hpp/#define-use-model-pipe)**(MODEL_X)  |
+|  | **[CORE_DEFINEPARS](/documentation/code/files/model__macros_8hpp/)**(...)  |
+|  | **[DO_LINK](/documentation/code/files/model__macros_8hpp/)**(r, data, elem)  |
+|  | **[INTERPRET_AS_PARENT_DEPENDENCY](/documentation/code/files/model__macros_8hpp/)**(DEP, TYPE)  |
+|  | **[CORE_INTERPRET_AS_PARENT_FUNCTION](/documentation/code/files/model__macros_8hpp/)**(FUNC)  |
+|  | **[MAKE_PRIMARY_MODEL_FUNCTOR_MAIN](/documentation/code/files/model__macros_8hpp/)**(FUNCTION, CAPABILITY, ORIGIN) <br>Main version of MAKE_FUNCTOR modified to build primary_parameters functors.  |
+|  | **[MAKE_PRIMARY_MODEL_FUNCTOR_SUPP](/documentation/code/files/model__macros_8hpp/)**(FUNCTION) <br>Supplementary version of MAKE_FUNCTOR modded for primary_parameters functors.  |
+|  | **[START_MODEL](/documentation/code/files/model__macros_8hpp/)**  |
+|  | **[DEFINEPARS](/documentation/code/files/model__macros_8hpp/)**(...)  |
+|  | **[MAP_TO_CAPABILITY](/documentation/code/files/model__macros_8hpp/)**(PARAMETER, CAPABILITY)  |
+|  | **[INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/)**(MODEL_X, FUNC)  |
+|  | **[INTERPRET_AS_PARENT_FUNCTION](/documentation/code/files/model__macros_8hpp/)**(FUNC)  |
+|  | **[INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/)**(MODEL_X, DEP, TYPE)  |
+|  | **[START_CAPABILITY](/documentation/code/files/model__macros_8hpp/)**  |
+|  | **[LONG_START_CAPABILITY](/documentation/code/files/model__macros_8hpp/)**(MODULE, C)  |
+|  | **[DECLARE_FUNCTION](/documentation/code/files/model__macros_8hpp/)**(TYPE, CAN_MANAGE)  |
+|  | **[LONG_DECLARE_FUNCTION](/documentation/code/files/model__macros_8hpp/)**(MODULE, C, FUNCTION, TYPE, CAN_MANAGE)  |
+|  | **[DEPENDENCY](/documentation/code/files/model__macros_8hpp/)**(DEP, TYPE)  |
+|  | **[LONG_DEPENDENCY](/documentation/code/files/model__macros_8hpp/)**(MODULE, FUNCTION, DEP, TYPE)  |
+|  | **[NEEDS_MANAGER](/documentation/code/files/model__macros_8hpp/)**(...)  |
+|  | **[ALLOWED_MODEL](/documentation/code/files/model__macros_8hpp/)**(MODULE, FUNCTION, MODEL)  |
+|  | **[ALLOWED_MODEL_DEPENDENCE](/documentation/code/files/model__macros_8hpp/)**(MODULE, FUNCTION, MODEL)  |
+|  | **[ALLOW_MODEL_COMBINATION](/documentation/code/files/model__macros_8hpp/)**(...)  |
+|  | **[MODEL_GROUP](/documentation/code/files/model__macros_8hpp/)**(GROUPNAME, GROUP)  |
+|  | **[BE_GROUP](/documentation/code/files/model__macros_8hpp/)**(GROUP)  |
+|  | **[DECLARE_BACKEND_REQ](/documentation/code/files/model__macros_8hpp/)**(GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
+|  | **[LONG_DECLARE_BACKEND_REQ](/documentation/code/files/model__macros_8hpp/)**(MODULE, C, FUNCTION, GROUP, REQUIREMENT, TAGS, TYPE, ARGS, IS_VARIABLE)  |
+|  | **[ACTIVATE_BACKEND_REQ_FOR_MODELS](/documentation/code/files/model__macros_8hpp/)**(MODELS, TAGS)  |
+|  | **[START_CONDITIONAL_DEPENDENCY](/documentation/code/files/model__macros_8hpp/)**(TYPE)  |
+|  | **[ACTIVATE_DEP_BE](/documentation/code/files/model__macros_8hpp/)**(BACKEND_REQ, BACKEND, VERSTRING)  |
+|  | **[ACTIVATE_FOR_MODELS](/documentation/code/files/model__macros_8hpp/)**(...)  |
+|  | **[MODEL_CONDITIONAL_DEPENDENCY](/documentation/code/files/model__macros_8hpp/)**(DEP, TYPE, ...)  |
+|  | **[BACKEND_OPTION](/documentation/code/files/model__macros_8hpp/)**(BACKEND_AND_VERSIONS, TAGS)  |
+|  | **[LONG_BACKEND_OPTION](/documentation/code/files/model__macros_8hpp/)**(MODULE, CAPABILITY, FUNCTION, BACKEND_AND_VERSIONS, TAGS)  |
+|  | **[FORCE_SAME_BACKEND](/documentation/code/files/model__macros_8hpp/)**(...)  |
+|  | **[CLASSLOAD_NEEDED](/documentation/code/files/model__macros_8hpp/)**(...)  |
+|  | **[ALLOW_MODELS](/documentation/code/files/model__macros_8hpp/)**(...)  |
+|  | **[MAKE_PRIMARY_MODEL_FUNCTOR](/documentation/code/files/model__macros_8hpp/)**(FUNCTION, CAPABILITY, ORIGIN)  |
+|  | **[MODULE_START_MODEL](/documentation/code/files/model__macros_8hpp/)** <br>"In module" version of the START_MODEL macro  |
+|  | **[MODULE_INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/)**(MODEL_X, FUNC) <br>"In module" version of the INTERPRET_AS_X_FUNCTION macro  |
+|  | **[MODULE_INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/)**(MODEL_X, DEP, TYPE) <br>"In module" version of the INTERPRET_AS_X_DEPENDENCY macro  |
+|  | **[CORE_START_MODEL](/documentation/code/files/model__macros_8hpp/)**  |
+|  | **[CORE_MAP_TO_CAPABILITY](/documentation/code/files/model__macros_8hpp/)**(PARAMETER, CAPABILITY)  |
+|  | **[DEFINEPAR](/documentation/code/files/model__macros_8hpp/)**(PARAMETER)  |
+|  | **[CORE_INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/)**(MODEL_X, FUNC) <br>Real declaration macro for INTERPRET_AS_X functions.  |
+|  | **[INTERPRET_AS_X_FUNCTION_FULL](/documentation/code/files/model__macros_8hpp/)**(MODEL_X, FUNC, ADD_FRIEND) <br>Generic declaration macro for INTERPRET_AS_ functions.  |
+|  | **[CORE_INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/)**(MODEL_X, DEP, TYPE) <br>Add a dependency to an interpret-as-X function.  |
+|  | **[MODEL_NAMESPACE](/documentation/code/files/model__macros_8hpp/)** <br>Macro to get to model namespace easily.  |
+|  | **[USE_MODEL_PIPE](/documentation/code/files/model__macros_8hpp/)**(MODEL_X)  |
 
 ## Detailed Description
 
@@ -554,7 +554,7 @@ MAKE_PRIMARY_MODEL_FUNCTOR_MAIN(FUNCTION,CAPABILITY,ORIGIN) \
 
 "In module" version of the START_MODEL macro 
 
-"Rollcall" macros. These are lifted straight from [module_macros_incore.hpp](/documentation/code/files/module__macros__incore_8hpp/#file-module-macros-incore-hpp) but are modified here and there to suit the role of models. 
+"Rollcall" macros. These are lifted straight from [module_macros_incore.hpp](/documentation/code/files/module__macros__incore_8hpp/) but are modified here and there to suit the role of models. 
 
 
 ### define MODULE_INTERPRET_AS_X_FUNCTION
@@ -655,7 +655,7 @@ Tells the core that the current parameter corresponds to the specified CAPABILIT
 ```
 
 
-Macro to define parameter. Does not create a corresponding CAPABILITY; use MAP_TO_CAPABILITY to do this after calling [DEFINEPAR(S)](/documentation/code/files/model__macros_8hpp/#define-definepar). 
+Macro to define parameter. Does not create a corresponding CAPABILITY; use MAP_TO_CAPABILITY to do this after calling [DEFINEPAR(S)](/documentation/code/files/model__macros_8hpp/). 
 
 
 ### define CORE_INTERPRET_AS_X_FUNCTION
@@ -1183,4 +1183,4 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

@@ -13,18 +13,18 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODULE_START_MODULE](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-start-module)**  |
-|  | **[MODULE_START_CAPABILITY](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-start-capability)**(MODULE)  |
-|  | **[MODULE_DECLARE_FUNCTION](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-declare-function)**(MODULE, FUNCTION, TYPE, CAN_MANAGE, IS_MODEL)  |
-|  | **[MODULE_NEEDS_MANAGER_REDIRECT_2](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-needs-manager-redirect-2)**(_1, _2)  |
-|  | **[MODULE_NEEDS_MANAGER_REDIRECT_1](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-needs-manager-redirect-1)**(_1)  |
-|  | **[MODULE_NEEDS_MANAGER_REDIRECT](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-needs-manager-redirect)**(...)  |
-|  | **[MODULE_NEEDS_MANAGER_2](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-needs-manager-2)**(LOOPMAN, TYPE) <br>Redirection of [NEEDS_MANAGER(LOOPMAN, TYPE)](/documentation/code/files/module__macros__incore_8hpp/#define-needs-manager) when invoked from within a module.  |
-|  | **[MODULE_NEEDS_MANAGER_1](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-needs-manager-1)**(LOOPMAN) <br>Redirection of [NEEDS_MANAGER(LOOPMAN)](/documentation/code/files/module__macros__incore_8hpp/#define-needs-manager) when invoked from within a module.  |
-|  | **[MODULE_DEPENDENCY](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-dependency)**(DEP, TYPE, MODULE, FUNCTION, IS_MODEL_DEP) <br>Redirection of [DEPENDENCY(DEP, TYPE)](/documentation/code/files/module__macros__incore_8hpp/#define-dependency) when invoked from within a module.  |
-|  | **[MODULE_ALLOWED_MODEL](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-allowed-model)**(MODULE, FUNCTION, MODEL, IS_MODEL) <br>Redirection of ALLOW_MODEL when invoked from within a module.  |
-|  | **[MODULE_BE_GROUP](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-be-group)**(GROUP, IS_MODEL) <br>Redirection of [BACKEND_GROUP(GROUP)](/documentation/code/files/module__macros__common_8hpp/#define-backend-group) when invoked from within a module.  |
-|  | **[MODULE_BACKEND_REQ](/documentation/code/files/module__macros__inmodule__defs_8hpp/#define-module-backend-req)**(MODULE, FUNCTION, GROUP, REQ, TAGS, TYPE, ARGS, IS_VARIABLE, IS_MODEL)  |
+|  | **[MODULE_START_MODULE](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**  |
+|  | **[MODULE_START_CAPABILITY](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(MODULE)  |
+|  | **[MODULE_DECLARE_FUNCTION](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(MODULE, FUNCTION, TYPE, CAN_MANAGE, IS_MODEL)  |
+|  | **[MODULE_NEEDS_MANAGER_REDIRECT_2](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(_1, _2)  |
+|  | **[MODULE_NEEDS_MANAGER_REDIRECT_1](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(_1)  |
+|  | **[MODULE_NEEDS_MANAGER_REDIRECT](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(...)  |
+|  | **[MODULE_NEEDS_MANAGER_2](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(LOOPMAN, TYPE) <br>Redirection of [NEEDS_MANAGER(LOOPMAN, TYPE)](/documentation/code/files/module__macros__incore_8hpp/) when invoked from within a module.  |
+|  | **[MODULE_NEEDS_MANAGER_1](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(LOOPMAN) <br>Redirection of [NEEDS_MANAGER(LOOPMAN)](/documentation/code/files/module__macros__incore_8hpp/) when invoked from within a module.  |
+|  | **[MODULE_DEPENDENCY](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(DEP, TYPE, MODULE, FUNCTION, IS_MODEL_DEP) <br>Redirection of [DEPENDENCY(DEP, TYPE)](/documentation/code/files/module__macros__incore_8hpp/) when invoked from within a module.  |
+|  | **[MODULE_ALLOWED_MODEL](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(MODULE, FUNCTION, MODEL, IS_MODEL) <br>Redirection of ALLOW_MODEL when invoked from within a module.  |
+|  | **[MODULE_BE_GROUP](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(GROUP, IS_MODEL) <br>Redirection of [BACKEND_GROUP(GROUP)](/documentation/code/files/module__macros__common_8hpp/) when invoked from within a module.  |
+|  | **[MODULE_BACKEND_REQ](/documentation/code/files/module__macros__inmodule__defs_8hpp/)**(MODULE, FUNCTION, GROUP, REQ, TAGS, TYPE, ARGS, IS_VARIABLE, IS_MODEL)  |
 
 ## Detailed Description
 
@@ -86,7 +86,7 @@ Authors (add name and date if you modify):
 ```
 
 
-Redirection of [START_MODULE](/documentation/code/files/module__macros__incore_8hpp/#define-start-module) when invoked from within a module. 
+Redirection of [START_MODULE](/documentation/code/files/module__macros__incore_8hpp/) when invoked from within a module. 
 
 
 ### define MODULE_START_CAPABILITY
@@ -100,7 +100,7 @@ Redirection of [START_MODULE](/documentation/code/files/module__macros__incore_8
 ```
 
 
-Redirection of [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/#define-start-capability) when invoked from within a module. bjf> Does this actually do anything? Isn't MODULE always defined because it is the macro argument here? 
+Redirection of [START_CAPABILITY](/documentation/code/files/module__macros__incore_8hpp/) when invoked from within a module. bjf> Does this actually do anything? Isn't MODULE always defined because it is the macro argument here? 
 
 
 ### define MODULE_DECLARE_FUNCTION
@@ -165,7 +165,7 @@ MODULE_NEEDS_MANAGER_1(LOOPMAN)                                              \
   MODULE_DEPENDENCY(LOOPMAN, TYPE, MODULE, FUNCTION, NOT_MODEL)
 ```
 
-Redirection of [NEEDS_MANAGER(LOOPMAN, TYPE)](/documentation/code/files/module__macros__incore_8hpp/#define-needs-manager) when invoked from within a module. 
+Redirection of [NEEDS_MANAGER(LOOPMAN, TYPE)](/documentation/code/files/module__macros__incore_8hpp/) when invoked from within a module. 
 
 ### define MODULE_NEEDS_MANAGER_1
 
@@ -204,7 +204,7 @@ Redirection of [NEEDS_MANAGER(LOOPMAN, TYPE)](/documentation/code/files/module__
                                                                                \
 ```
 
-Redirection of [NEEDS_MANAGER(LOOPMAN)](/documentation/code/files/module__macros__incore_8hpp/#define-needs-manager) when invoked from within a module. 
+Redirection of [NEEDS_MANAGER(LOOPMAN)](/documentation/code/files/module__macros__incore_8hpp/) when invoked from within a module. 
 
 ### define MODULE_DEPENDENCY
 
@@ -246,7 +246,7 @@ Redirection of [NEEDS_MANAGER(LOOPMAN)](/documentation/code/files/module__macros
   }                                                                            \
 ```
 
-Redirection of [DEPENDENCY(DEP, TYPE)](/documentation/code/files/module__macros__incore_8hpp/#define-dependency) when invoked from within a module. 
+Redirection of [DEPENDENCY(DEP, TYPE)](/documentation/code/files/module__macros__incore_8hpp/) when invoked from within a module. 
 
 ### define MODULE_ALLOWED_MODEL
 
@@ -319,7 +319,7 @@ Redirection of ALLOW_MODEL when invoked from within a module.
   }                                                                            \
 ```
 
-Redirection of [BACKEND_GROUP(GROUP)](/documentation/code/files/module__macros__common_8hpp/#define-backend-group) when invoked from within a module. 
+Redirection of [BACKEND_GROUP(GROUP)](/documentation/code/files/module__macros__common_8hpp/) when invoked from within a module. 
 
 ### define MODULE_BACKEND_REQ
 
@@ -694,4 +694,4 @@ Redirection of BACKEND_REQ(GROUP, REQUIREMENT, (TAGS), TYPE, [(ARGS)]) for decla
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:21 +0000

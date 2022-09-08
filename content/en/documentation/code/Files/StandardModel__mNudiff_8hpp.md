@@ -13,22 +13,22 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-definepars)**(alphainv , GF , alphaS ) |
-| START_MODEL mTau | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-definepars)**(mNu_light , dmNu21 , dmNu3l ) |
-| START_MODEL mTau mU | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/#function-definepars)**(mS , mCmC ) |
+| START_MODEL | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/)**(alphainv , GF , alphaS ) |
+| START_MODEL mTau | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/)**(mNu_light , dmNu21 , dmNu3l ) |
+| START_MODEL mTau mU | **[DEFINEPARS](/documentation/code/files/standardmodel__mnudiff_8hpp/)**(mS , mCmC ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| START_MODEL | **[mMu](/documentation/code/files/standardmodel__mnudiff_8hpp/#variable-mmu)**  |
+| START_MODEL | **[mMu](/documentation/code/files/standardmodel__mnudiff_8hpp/)**  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MODEL](/documentation/code/files/standardmodel__mnudiff_8hpp/#define-model)**  |
-|  | **[PARENT](/documentation/code/files/standardmodel__mnudiff_8hpp/#define-parent)**  |
+|  | **[MODEL](/documentation/code/files/standardmodel__mnudiff_8hpp/)**  |
+|  | **[PARENT](/documentation/code/files/standardmodel__mnudiff_8hpp/)**  |
 
 ## Detailed Description
 
@@ -169,4 +169,4 @@ START_MODEL mMu;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:04 +0000
+Updated on 2022-09-08 at 01:05:20 +0000

@@ -17,10 +17,10 @@ Type for holding Monte Carlo convergence settings.
 
 |                | Name           |
 | -------------- | -------------- |
-| double | **[target_stat](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-target-stat)**  |
-| bool | **[stop_at_sys](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-stop-at-sys)**  |
-| bool | **[all_analyses_must_converge](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-all-analyses-must-converge)**  |
-| bool | **[all_SR_must_converge](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/#variable-all-sr-must-converge)**  |
+| double | **[target_stat](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/)**  |
+| bool | **[stop_at_sys](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/)**  |
+| bool | **[all_analyses_must_converge](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/)**  |
+| bool | **[all_SR_must_converge](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/)**  |
 
 ## Public Attributes Documentation
 
@@ -54,4 +54,4 @@ bool all_SR_must_converge;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

@@ -15,13 +15,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef T | **[type](/documentation/code/classes/structgambit_1_1____is__container____/#typedef-type)**  |
+| typedef T | **[type](/documentation/code/classes/structgambit_1_1____is__container____/)**  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__container____/#variable-value)**  |
+| const bool | **[value](/documentation/code/classes/structgambit_1_1____is__container____/)**  |
 
 ## Detailed Description
 
@@ -50,4 +50,4 @@ static const bool value = false;
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:42:59 +0000
+Updated on 2022-09-08 at 01:05:15 +0000

@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| enum| **[LogTag_declaration](/documentation/code/namespaces/namespacegambit_1_1logtags/#enum-logtag-declaration)** { debug =0, info, warn, err, fatal, nonfatal, repeat_to_cout, repeat_to_cerr, def, core, logs, models, dependency_resolver, scanner, inifile, printers, utils, backends} |
+| enum| **[LogTag_declaration](/documentation/code/namespaces/namespacegambit_1_1logtags/)** { debug =0, info, warn, err, fatal, nonfatal, repeat_to_cout, repeat_to_cerr, def, core, logs, models, dependency_resolver, scanner, inifile, printers, utils, backends} |
 
 ## Types Documentation
 
@@ -50,4 +50,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:01 +0000
+Updated on 2022-09-08 at 01:05:17 +0000

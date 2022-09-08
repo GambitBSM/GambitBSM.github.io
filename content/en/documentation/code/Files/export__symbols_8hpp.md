@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[EXPORT_SYMBOLS](/documentation/code/files/export__symbols_8hpp/#define-export-symbols)**  |
+|  | **[EXPORT_SYMBOLS](/documentation/code/files/export__symbols_8hpp/)**  |
 
 ## Detailed Description
 
@@ -90,4 +90,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:02 +0000
+Updated on 2022-09-08 at 01:05:19 +0000

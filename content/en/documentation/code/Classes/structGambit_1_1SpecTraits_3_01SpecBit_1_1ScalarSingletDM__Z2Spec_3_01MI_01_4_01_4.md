@@ -18,15 +18,15 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [SpectrumContents::ScalarSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1scalarsingletdm__z2/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z2spec_3_01mi_01_4_01_4/#typedef-contents)**  |
-| typedef MI::Model | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z2spec_3_01mi_01_4_01_4/#typedef-model)**  |
-| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z2spec_3_01mi_01_4_01_4/#typedef-input)**  |
+| typedef [SpectrumContents::ScalarSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1scalarsingletdm__z2/) | **[Contents](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z2spec_3_01mi_01_4_01_4/)**  |
+| typedef MI::Model | **[Model](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z2spec_3_01mi_01_4_01_4/)**  |
+| typedef [DummyInput](/documentation/code/classes/classgambit_1_1dummyinput/) | **[Input](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z2spec_3_01mi_01_4_01_4/)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z2spec_3_01mi_01_4_01_4/#function-name)**() |
+| std::string | **[name](/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1scalarsingletdm__z2spec_3_01mi_01_4_01_4/)**() |
 
 ## Detailed Description
 
@@ -72,4 +72,4 @@ static inline std::string name()
 
 -------------------------------
 
-Updated on 2022-09-08 at 00:43:00 +0000
+Updated on 2022-09-08 at 01:05:16 +0000
