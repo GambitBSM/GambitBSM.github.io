@@ -63,8 +63,9 @@ extern std::string Doxybook2::Utils::toLower(std::string str) {
 }
 
 std::string Doxybook2::Utils::safeAnchorId(std::string str) {
-    str = replaceAll(toLower(std::move(str)), "::", "");
+    str = replaceAll(toLower(std::move(str)), "::", " ");
     str = replaceAll(str, "_", " ");
+    str = replaceAll(str, "-", " ");
     str = replaceAll(str, "/", " ");
     str = replaceAll(str, ".", " ");
     str.erase(remove_if(str.begin(), str.end(),
