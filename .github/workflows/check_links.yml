@@ -2,6 +2,12 @@ name: Check links
 
 on:
   workflow_dispatch:
+    inputs:
+      ignore_arxiv:
+        description: 'Ignore arxiv links'
+        type: boolean
+        required: true
+        default: true
   workflow_run:
     workflows: ["pages-build-deployment"]
     types:
@@ -13,5 +19,10 @@ jobs:
     steps:
       - name: Install muffet
         run: brew install muffet
-      - name: Run muffet to test for dead links
+      - name: Run muffet (ignoring arxiv links)
+        if: ${{ inputs.ignore_arxiv }}
         run: muffet --buffer-size=10000 --max-connections=10000 --max-connections-per-host=10000 --max-redirections=10000 --max-response-body-size=10000000000 --color=always https://gambitbsm.github.io/
+      - name: Run muffet (including arxiv links)
+        if: ${{ !inputs.ignore_arxiv }}
+        run: muffet --exclude=https://arxiv.org/* --buffer-size=10000 --max-connections=10000 --max-connections-per-host=10000 --max-redirections=10000 --max-response-body-size=10000000000 --color=always https://gambitbsm.github.io/
+    
