@@ -19,7 +19,7 @@ weight: 30
 
 - If you intend to build the entirety of GAMBIT without optimisation, at least 10GB of RAM is required. Building with optimisation (for performance-critical applications) may require more than 20GB of RAM. If your system does not meet these requirements then consider [only partially building GAMBIT](/documentation/help/common_problems_and_questions#gambit-builds-extremely-slowly), or using the [Docker image](/documentation/installation/docker_usage).
 - This guide assumes some knowledge of `bash` and the Linux command line. See the [Linux command line tutorial ⧉](https://www.linux.com/training-tutorials/how-use-linux-command-line-basics-cli/) for a basic introduction.
-- If you encounter issues while following this guide then please refer to the "Common Problem" boxes or the [Common Problems and Questions](/documentation/help/common_problems_and_questions/) page.
+- If you encounter issues while following this guide then please refer to the "Common Problems" boxes or the [Common Problems and Questions](/documentation/help/common_problems_and_questions/) page.
 
 {{< /alert >}}
 
@@ -353,4 +353,4 @@ make -j$NUMBER_OF_CORES $BACKEND_NAME    # Install specific backend
 make clean-$BACKEND_NAME                 # Clean specific backend
 ```
 
-For basic guidance on how to use GAMBIT, please see the [Examples](/documentation/examples/) section.
+For basic guidance on how to use GAMBIT, please see the [tutorials section](/documentation/tutorials/).

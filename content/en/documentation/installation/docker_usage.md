@@ -13,7 +13,7 @@ weight: 20
 
 # Docker Usage
 
-A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally. This is useful for trying out GAMBIT and following the [examples on this site](/documentation/examples/colliderbit_example/) without the need to build GAMBIT from source.
+A pre-built version of GAMBIT is available as a Docker image which can be downloaded and run locally. This is useful for trying out GAMBIT and following the [tutorials on this site](/documentation/tutorials/the_gambit_interface/) without the need to build GAMBIT from source.
 
 {{< alert icon="ⓘ" context="info">}}
 
@@ -53,4 +53,4 @@ This will give you a `bash` shell with GAMBIT pre-built and ready to run. To qui
 
 ### Using the Docker image
 
-You will need to re-run the Docker container each time you wish to use GAMBIT. For basic guidance on how to use GAMBIT, please see the [Examples](/documentation/examples/) section.
+You will need to re-run the Docker container each time you wish to use GAMBIT. For basic guidance on how to use GAMBIT, please see the [tutorials section](/documentation/tutorials/).

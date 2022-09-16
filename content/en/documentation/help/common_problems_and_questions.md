@@ -202,6 +202,22 @@ If these header files cannot be found, it may be because you have not installed 
 
 ### Running GAMBIT
 
+##### When I try to run a scan, I get a `GAMBIT error` which says `Inifile entry _____ does not specify a valid _____!`
+
+First of all, check that everything is spelled correctly. If everything is spelled correctly, then the YAML entry may be referencing a backend or dependency which has not been installed. For example, trying to set `printer: hdf5` without installing the `hdf5` backend will result in the following error:
+
+```
+ FATAL ERROR
+
+GAMBIT has exited with fatal exception: GAMBIT error
+ERROR: A problem has occurred in the printer utilities.
+Inifile entry 'printer:"hdf5"' does not specify a valid printer!
+```
+
+In this case, HDF5 would have to be installed and GAMBIT rebuilt for the YAML file to work as-is. Alternatively, you could specify a different printer.
+
+
+
 ### Miscellaneous Questions
 
 | Question | Answer |
