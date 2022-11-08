@@ -9,10 +9,10 @@ Completed:
 - Built new, clean website using Hugo and Doks, and migrated old content over
 - Set up documentation generation using Doxygen, which is converted to markdown using Doxybook2
 - Automated the process of updating the website using GitHub actions, including options to rebuild the Doxygen documentation and check for dead links
-- Optimised 
+- Optimised website to handle the large number of pages
 - Wrote a number of onboarding tutorials including an installation guide, an introduction to the GAMBIT interface, and a common problems page
 
-ToDO:
+ToDo:
 - Add technical tutorials including introductions to the specific `Bits`
 - Update the `make docs` command - this is used to generate local documentation similar to the automatic documentation on the site. However, it uses an outdated `Doxyfile` which could be updated to match the one in `/doxygen_and_doxybook2_config`
 - Improve the way Doxybook2 is handled. Some parts of Doxybook2 had to be rewritten to fix issues with auto-generated links, and this source code is compiled and built when the automatic documentation is generated. This means documentation generation is slow - it would be better to store the modified Doxybook2 in a different repository
