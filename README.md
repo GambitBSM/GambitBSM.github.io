@@ -1,7 +1,7 @@
 GAMBIT's Website
 ----------------
 
-For tutorials, documentation, and information.
+For tutorials, documentation, and information, visit https://gambitbsm.github.io/.
 
 ## Project progress
 
