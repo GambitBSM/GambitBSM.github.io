@@ -216,7 +216,11 @@ Inifile entry 'printer:"hdf5"' does not specify a valid printer!
 
 In this case, HDF5 would have to be installed and GAMBIT rebuilt for the YAML file to work as-is. Alternatively, you could specify a different printer.
 
+##### Running `pippi` gives me the error `undefined symbol: rb_safe_level error`
 
+This error results from having the wrong version of Ruby installed. `rb_safe_level` was removed in `ruby 3.0`, so using any versions after this will result in this error - it is recommended that you use `ruby 2.7.6`.
+
+The easiest way to install and use different versions of Ruby is via the [Ruby Version Manager ⧉](https://rvm.io/).
 
 ### Miscellaneous Questions
 
