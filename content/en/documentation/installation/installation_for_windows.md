@@ -21,8 +21,6 @@ Windows is not directly supported by GAMBIT. However, Linux distributions can be
 
 WSL is a tool supplied by Microsoft that allows Linux distributions to be installed on Windows. Follow the [installation instructions ⧉](https://docs.microsoft.com/en-us/windows/wsl/install) to install it on your system.
 
-<!--- ROSSTODO: List of supported linux distros? -->
-
 {{< alert icon="ⓘ" context="info">}}
 
 **Info**: WSL 2 is a requirement for installing the Docker engine on Windows. If you have installed WSL and wish to easily install a limited version of GAMBIT rather than building it from source, consult the [Docker Usage](/documentation/installation/docker_usage/) page to download the Docker image.
