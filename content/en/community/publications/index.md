@@ -20,15 +20,22 @@ weight: 10
 ### Physics Analyses
 
 <ul>
-  <li>Cosmological constraints on decaying axion-like particles: a global analysis, <a href="https://arxiv.org/abs/2205.13549">arXiv:2205.13549</a>.<br>
-  <li>Thermal WIMPs and the Scale of New Physics: Global Fits of Dirac Dark Matter Effective Field Theories, Eur.Phys.J.C 81 (2021) 11, 992, <a href="https://arxiv.org/abs/2106.02056">arXiv:2106.02056</a>.<br>
-Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.4836397"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4836397.svg" alt="DOI"></a></li>
-  <li>Strengthening the bound on the mass of the lightest neutrino with terrestrial and cosmological experiments, Phys.Rev.D 103 (2021) 12, 123508, <a href="https://arxiv.org/abs/2009.03287">arXiv:2009.03287</a>.<br>
-Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.4005381"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4005381.svg" alt="DOI"></a></li>
+  <li>Collider constraints on electroweakinos in the presence of a light gravitino, Eur. Phys. J. C 83 (2023) 6, 493, <a href="https://arxiv.org/abs/2303.09082">arXiv:2303.09082</a>.<br>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7704832"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7704832.svg" alt="DOI"></a></li>
+  <li>Global fits of simplified models for dark matter with GAMBIT II. Vector dark matter with an s-channel vector mediator, <a href="https://arxiv.org/abs/2303.08351">arXiv:2303.08351</a>.<br>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7710586"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7710586.svg" alt="DOI"></a></li>
+  <li>Global fits of simplified models for dark matter with GAMBIT: I. Scalar and fermionic models with s-channel vector mediators, Eur. Phys. J. C 83 (2023) 3, 249, <a href="https://arxiv.org/abs/2209.13266">arXiv:2209.13266</a>.<br>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.6615830"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.6615830.svg" alt="DOI"></a></li>
+  <li>Cosmological constraints on decaying axion-like particles: a global analysis, JCAP 12 (2022) 027, <a href="https://arxiv.org/abs/2205.13549">arXiv:2205.13549</a>.<br>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.6573347"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.6573347.svg" alt="DOI"></a></li>
+  <li>Thermal WIMPs and the Scale of New Physics: Global Fits of Dirac Dark Matter Effective Field Theories, Eur. Phys. J. C 81 (2021) 11, 992, <a href="https://arxiv.org/abs/2106.02056">arXiv:2106.02056</a>.<br>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.4836397"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4836397.svg" alt="DOI"></a></li>
+  <li>Strengthening the bound on the mass of the lightest neutrino with terrestrial and cosmological experiments, Phys. Rev. D 103 (2021) 12, 123508, <a href="https://arxiv.org/abs/2009.03287">arXiv:2009.03287</a>.<br>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.4005381"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4005381.svg" alt="DOI"></a></li>
   <li>Global fits of axion-like particles to XENON1T and astrophysical data, JHEP 05 (2021) 159, <a href="https://arxiv.org/abs/2007.05517">arXiv:2007.05517</a>.<br>
-Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.4384061"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4384061.svg" alt="DOI"></a></li>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.4384061"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4384061.svg" alt="DOI"></a></li>
   <li>A model-independent analysis of b→sμ+μ− transitions with GAMBIT's FlavBit, Eur. Phys. J. C 81 (2021), <a href="https://arxiv.org/abs/2006.03489">arXiv:2006.03489</a>.<br>
-Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.5749787"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5749787.svg" alt="DOI"></a></li>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.5749787"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5749787.svg" alt="DOI"></a></li>
   <li>A frequentist analysis of three right-handed neutrinos with GAMBIT, Eur. Phys. J. C 80 (2020) 6, 569, <a href="https://arxiv.org/abs/1908.02302">arxiv:1908.02302</a>.<br>
 Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.3334971"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3334971.svg" alt="DOI"></a></li>
   <li>Axion global fits with Peccei-Quinn symmetry breaking before inflation using GAMBIT, JHEP 03 (2019) 191, <a href="https://arxiv.org/abs/1810.07192">arXiv:1810.07192</a>.<br>
