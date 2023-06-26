@@ -13,6 +13,10 @@
     <includedby refid="DarkBit_2src_2Axions_8cpp" local="yes">Axions.cpp</includedby>
     <includedby refid="CMB_8cpp" local="yes">CMB.cpp</includedby>
     <includedby refid="DarkBit_2src_2DMEFT_8cpp" local="yes">DMEFT.cpp</includedby>
+    <includedby refid="DarkBit_2src_2DMsimpVectorMedDiracDM_8cpp" local="yes">DMsimpVectorMedDiracDM.cpp</includedby>
+    <includedby refid="DarkBit_2src_2DMsimpVectorMedMajoranaDM_8cpp" local="yes">DMsimpVectorMedMajoranaDM.cpp</includedby>
+    <includedby refid="DarkBit_2src_2DMsimpVectorMedScalarDM_8cpp" local="yes">DMsimpVectorMedScalarDM.cpp</includedby>
+    <includedby refid="DarkBit_2src_2DMsimpVectorMedVectorDM_8cpp" local="yes">DMsimpVectorMedVectorDM.cpp</includedby>
     <includedby refid="DecayBit_8cpp" local="yes">DecayBit.cpp</includedby>
     <includedby refid="DarkBit_2src_2DiracSingletDM_8cpp" local="yes">DiracSingletDM.cpp</includedby>
     <includedby refid="IndirectDetectionYields_8cpp" local="yes">IndirectDetectionYields.cpp</includedby>
@@ -215,10 +219,10 @@
         <label>CMB.cpp</label>
         <link refid="CMB_8cpp"/>
       </node>
-      <node id="9">
+      <node id="13">
         <label>PPPC.hpp</label>
         <link refid="PPPC_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -229,35 +233,51 @@
         <label>DMEFT.cpp</label>
         <link refid="DarkBit_2src_2DMEFT_8cpp"/>
       </node>
+      <node id="5">
+        <label>DMsimpVectorMedDiracDM.cpp</label>
+        <link refid="DarkBit_2src_2DMsimpVectorMedDiracDM_8cpp"/>
+      </node>
       <node id="6">
+        <label>DMsimpVectorMedMajoranaDM.cpp</label>
+        <link refid="DarkBit_2src_2DMsimpVectorMedMajoranaDM_8cpp"/>
+      </node>
+      <node id="7">
+        <label>DMsimpVectorMedScalarDM.cpp</label>
+        <link refid="DarkBit_2src_2DMsimpVectorMedScalarDM_8cpp"/>
+      </node>
+      <node id="8">
+        <label>DMsimpVectorMedVectorDM.cpp</label>
+        <link refid="DarkBit_2src_2DMsimpVectorMedVectorDM_8cpp"/>
+      </node>
+      <node id="10">
         <label>DiracSingletDM.cpp</label>
         <link refid="DarkBit_2src_2DiracSingletDM_8cpp"/>
       </node>
-      <node id="7">
+      <node id="11">
         <label>IndirectDetectionYields.cpp</label>
         <link refid="IndirectDetectionYields_8cpp"/>
       </node>
-      <node id="8">
+      <node id="12">
         <label>MajoranaSingletDM.cpp</label>
         <link refid="DarkBit_2src_2MajoranaSingletDM_8cpp"/>
       </node>
-      <node id="10">
+      <node id="14">
         <label>PPPC.cpp</label>
         <link refid="PPPC_8cpp"/>
       </node>
-      <node id="11">
+      <node id="15">
         <label>ScalarSingletDM.cpp</label>
         <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
       </node>
-      <node id="12">
+      <node id="16">
         <label>VectorSingletDM.cpp</label>
         <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
       </node>
-      <node id="5">
+      <node id="9">
         <label>DecayBit.cpp</label>
         <link refid="DecayBit_8cpp"/>
       </node>
-      <node id="15">
+      <node id="19">
         <label>virtual_higgs.cpp</label>
         <link refid="virtual__higgs_8cpp"/>
       </node>
@@ -280,22 +300,30 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
-      <node id="13">
+      <node id="17">
         <label>ascii_table_reader.cpp</label>
         <link refid="ascii__table__reader_8cpp"/>
       </node>
-      <node id="14">
+      <node id="18">
         <label>interp_collection.cpp</label>
         <link refid="interp__collection_8cpp"/>
       </node>

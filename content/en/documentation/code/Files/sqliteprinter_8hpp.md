@@ -141,6 +141,10 @@ namespace Gambit
           BOOST_PP_SEQ_FOR_EACH_I(DECLARE_PRINT, , SQL_BACKEND_TYPES)
         #endif
         #undef DECLARE_PRINT
+
+        // Print metadata info to file
+        void _print_metadata(map_str_str);
+
         ///@}
 
          /// Helper print functions
@@ -173,6 +177,12 @@ namespace Gambit
         // Set to record whether table columns have been created
         std::map<std::string,std::string,Utils::ci_less> column_record;
 
+        // Last metadata ID
+        std::size_t lastMetadataID;
+
+        // Last point ID
+        PPIDpair lastPointID;
+
         /// @{ Buffer variable
 
         std::size_t max_buffer_length;
@@ -194,9 +204,10 @@ namespace Gambit
 
         // Create results table
         void make_table(const std::string&);
+        void make_metadata_table(const std::string&);
 
         // Check that a table column exists, and create it if needed
-        void ensure_column_exists(const std::string&, const std::string&);
+        void ensure_column_exists(const std::string&, const std::string&, const std::string&);
 
         // Create an SQL table insert operation for the current transaction_data_buffer
         // Modifies 'sql' stringstream in-place
@@ -226,4 +237,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

@@ -272,11 +272,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool undoDecay() =0;
     
-                virtual ::std::basic_string<char> name() const =0;
+                virtual ::std::string name() const =0;
     
-                virtual ::std::basic_string<char> nameWithStatus(int) const =0;
+                virtual ::std::string nameWithStatus(int) const =0;
     
-                virtual ::std::basic_string<char> nameWithStatus__BOSS() const =0;
+                virtual ::std::string nameWithStatus__BOSS() const =0;
     
                 virtual int spinType() const =0;
     
@@ -410,4 +410,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

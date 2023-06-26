@@ -13,6 +13,7 @@ description: "[No description available]"
 
 | Name           |
 | -------------- |
+| **[src/AntiprotonLikelihoods.cpp](/documentation/code/files/antiprotonlikelihoods_8cpp/#file-src-antiprotonlikelihoods-cpp)**  |
 | **[src/DarkBit/src/Axions.cpp](/documentation/code/files/darkbit_2src_2axions_8cpp/#file-src-darkbit-src-axions-cpp)**  |
 | **[src/Cascades.cpp](/documentation/code/files/cascades_8cpp/#file-src-cascades-cpp)**  |
 | **[src/DarkBit.cpp](/documentation/code/files/darkbit_8cpp/#file-src-darkbit-cpp)**  |
@@ -22,6 +23,10 @@ description: "[No description available]"
 | **[src/DarkBit/src/DiracSingletDM.cpp](/documentation/code/files/darkbit_2src_2diracsingletdm_8cpp/#file-src-darkbit-src-diracsingletdm-cpp)**  |
 | **[src/DirectDetection.cpp](/documentation/code/files/directdetection_8cpp/#file-src-directdetection-cpp)**  |
 | **[src/DarkBit/src/DMEFT.cpp](/documentation/code/files/darkbit_2src_2dmeft_8cpp/#file-src-darkbit-src-dmeft-cpp)**  |
+| **[src/DarkBit/src/DMsimpVectorMedDiracDM.cpp](/documentation/code/files/darkbit_2src_2dmsimpvectormeddiracdm_8cpp/#file-src-darkbit-src-dmsimpvectormeddiracdm-cpp)**  |
+| **[src/DarkBit/src/DMsimpVectorMedMajoranaDM.cpp](/documentation/code/files/darkbit_2src_2dmsimpvectormedmajoranadm_8cpp/#file-src-darkbit-src-dmsimpvectormedmajoranadm-cpp)**  |
+| **[src/DarkBit/src/DMsimpVectorMedScalarDM.cpp](/documentation/code/files/darkbit_2src_2dmsimpvectormedscalardm_8cpp/#file-src-darkbit-src-dmsimpvectormedscalardm-cpp)**  |
+| **[src/DarkBit/src/DMsimpVectorMedVectorDM.cpp](/documentation/code/files/darkbit_2src_2dmsimpvectormedvectordm_8cpp/#file-src-darkbit-src-dmsimpvectormedvectordm-cpp)**  |
 | **[src/EnergyInjection.cpp](/documentation/code/files/energyinjection_8cpp/#file-src-energyinjection-cpp)**  |
 | **[src/IndirectDetectionYields.cpp](/documentation/code/files/indirectdetectionyields_8cpp/#file-src-indirectdetectionyields-cpp)**  |
 | **[src/DarkBit/src/MajoranaSingletDM.cpp](/documentation/code/files/darkbit_2src_2majoranasingletdm_8cpp/#file-src-darkbit-src-majoranasingletdm-cpp)**  |
@@ -45,4 +50,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:47 +0000
+Updated on 2023-06-26 at 21:36:55 +0000

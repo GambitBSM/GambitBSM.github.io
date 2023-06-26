@@ -80,9 +80,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void addChannel(Pythia8::LHdecayChannel channelIn);
         
-                void addChannel(double bratIn, int nDaIn, ::std::vector<int> idDaIn, ::std::basic_string<char> cIn);
+                void addChannel(double bratIn, int nDaIn, std::vector<int> idDaIn, std::string cIn);
         
-                void addChannel(double bratIn, int nDaIn, ::std::vector<int> idDaIn);
+                void addChannel(double bratIn, int nDaIn, std::vector<int> idDaIn);
         
                 int size();
         
@@ -128,4 +128,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

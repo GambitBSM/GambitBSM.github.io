@@ -6,6 +6,10 @@
     <includes refid="spec__head_8hpp" local="yes">gambit/Elements/spec_head.hpp</includes>
     <includes refid="spec__fptrfinder_8hpp" local="yes">gambit/Elements/spec_fptrfinder.hpp</includes>
     <includedby refid="DMEFTSimpleSpec_8hpp" local="yes">DMEFTSimpleSpec.hpp</includedby>
+    <includedby refid="DMsimpVectorMedDiracDMSimpleSpec_8hpp" local="yes">DMsimpVectorMedDiracDMSimpleSpec.hpp</includedby>
+    <includedby refid="DMsimpVectorMedMajoranaDMSimpleSpec_8hpp" local="yes">DMsimpVectorMedMajoranaDMSimpleSpec.hpp</includedby>
+    <includedby refid="DMsimpVectorMedScalarDMSimpleSpec_8hpp" local="yes">DMsimpVectorMedScalarDMSimpleSpec.hpp</includedby>
+    <includedby refid="DMsimpVectorMedVectorDMSimpleSpec_8hpp" local="yes">DMsimpVectorMedVectorDMSimpleSpec.hpp</includedby>
     <includedby refid="DiracSingletDM__Z2SimpleSpec_8hpp" local="yes">DiracSingletDM_Z2SimpleSpec.hpp</includedby>
     <includedby refid="MDMSpec__head_8hpp" local="yes">MDMSpec_head.hpp</includedby>
     <includedby refid="MSSMSimpleSpec_8hpp" local="yes">MSSMSimpleSpec.hpp</includedby>
@@ -20,22 +24,22 @@
     <includedby refid="ScalarSingletDM__Z3Spec__head_8hpp" local="yes">ScalarSingletDM_Z3Spec_head.hpp</includedby>
     <includedby refid="VectorSingletDM__Z2SimpleSpec_8hpp" local="yes">VectorSingletDM_Z2SimpleSpec.hpp</includedby>
     <incdepgraph>
-      <node id="57">
+      <node id="58">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
         <link refid="slhaea__spec__helpers_8hpp"/>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
-        </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
         <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -45,17 +49,17 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
       </node>
-      <node id="64">
+      <node id="65">
         <label>gambit/Elements/spec_fptrfinder.hpp</label>
         <link refid="spec__fptrfinder_8hpp"/>
-        <childnode refid="61" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="63" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -63,10 +67,10 @@
         <link refid="spec__head_8hpp"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
       </node>
-      <node id="61">
+      <node id="62">
         <label>gambit/Elements/spectrum_helpers.hpp</label>
         <link refid="spectrum__helpers_8hpp"/>
         <childnode refid="20" relation="include">
@@ -97,26 +101,26 @@
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="57" relation="include">
+        <childnode refid="58" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="63" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
       <node id="34">
         <label>gambit/Logs/log_tags.hpp</label>
         <link refid="log__tags_8hpp"/>
       </node>
-      <node id="62">
+      <node id="63">
         <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
         <link refid="subspectrum__contents_8hpp"/>
-        <childnode refid="61" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
       </node>
-      <node id="63">
+      <node id="64">
         <label>gambit/Models/partmap.hpp</label>
         <link refid="partmap_8hpp"/>
         <childnode refid="5" relation="include">
@@ -178,16 +182,16 @@
         <label>gambit/Utils/safebool.hpp</label>
         <link refid="safebool_8hpp"/>
       </node>
-      <node id="58">
+      <node id="59">
         <label>gambit/Utils/slhaea_helpers.hpp</label>
         <link refid="slhaea__helpers_8hpp"/>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
         <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -213,13 +217,13 @@
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="53" relation="include">
-        </childnode>
         <childnode refid="54" relation="include">
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -267,37 +271,37 @@
         </childnode>
         <childnode refid="41" relation="include">
         </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="42">
+      <node id="43">
         <label>gambit/Utils/variadic_functions.hpp</label>
         <link refid="variadic__functions_8hpp"/>
-        <childnode refid="43" relation="include">
-        </childnode>
         <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="48" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="50" relation="include">
         </childnode>
@@ -305,17 +309,19 @@
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
       </node>
-      <node id="59">
+      <node id="60">
         <label>SLHAea/slhaea.h</label>
       </node>
-      <node id="52">
+      <node id="53">
         <label>array</label>
       </node>
-      <node id="55">
+      <node id="56">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="54">
+      <node id="55">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
       <node id="21">
@@ -351,13 +357,13 @@
       <node id="24">
         <label>boost/preprocessor/tuple/elem.hpp</label>
       </node>
-      <node id="60">
+      <node id="61">
         <label>boost/serialization/strong_typedef.hpp</label>
       </node>
       <node id="14">
         <label>boost/version.hpp</label>
       </node>
-      <node id="46">
+      <node id="47">
         <label>cassert</label>
       </node>
       <node id="7">
@@ -375,31 +381,34 @@
       <node id="40">
         <label>cstring</label>
       </node>
-      <node id="51">
+      <node id="52">
         <label>deque</label>
       </node>
       <node id="31">
         <label>exception</label>
       </node>
-      <node id="50">
+      <node id="51">
         <label>forward_list</label>
       </node>
-      <node id="44">
+      <node id="45">
         <label>fstream</label>
       </node>
-      <node id="53">
+      <node id="54">
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="43">
+      <node id="44">
         <label>iostream</label>
       </node>
-      <node id="49">
+      <node id="50">
         <label>list</label>
       </node>
       <node id="5">
         <label>map</label>
       </node>
-      <node id="56">
+      <node id="42">
+        <label>memory</label>
+      </node>
+      <node id="57">
         <label>mkpath/mkpath.h</label>
       </node>
       <node id="39">
@@ -414,16 +423,16 @@
       <node id="20">
         <label>string</label>
       </node>
-      <node id="45">
+      <node id="46">
         <label>type_traits</label>
       </node>
       <node id="12">
         <label>unistd.h</label>
       </node>
-      <node id="47">
+      <node id="48">
         <label>unordered_map</label>
       </node>
-      <node id="48">
+      <node id="49">
         <label>unordered_set</label>
       </node>
       <node id="33">
@@ -434,23 +443,23 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="13">
+      <node id="21">
         <label>SPheno_3_3_8.cpp</label>
         <link refid="SPheno__3__3__8_8cpp"/>
       </node>
-      <node id="14">
+      <node id="22">
         <label>SPheno_4_0_3.cpp</label>
         <link refid="SPheno__4__0__3_8cpp"/>
       </node>
-      <node id="10">
+      <node id="18">
         <label>DarkBit_standalone_MSSM.cpp</label>
         <link refid="DarkBit__standalone__MSSM_8cpp"/>
       </node>
-      <node id="11">
+      <node id="19">
         <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
         <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
       </node>
-      <node id="36">
+      <node id="44">
         <label>DarkBit_standalone_WIMP.cpp</label>
         <link refid="DarkBit__standalone__WIMP_8cpp"/>
       </node>
@@ -463,46 +472,62 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
         <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="43">
         <label>spectrum_factories.hpp</label>
         <link refid="spectrum__factories_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="42">
         <label>spectrum.cpp</label>
         <link refid="spectrum_8cpp"/>
       </node>
@@ -513,146 +538,148 @@
         </childnode>
       </node>
       <node id="4">
-        <label>DiracSingletDM_Z2SimpleSpec.hpp</label>
-        <link refid="DiracSingletDM__Z2SimpleSpec_8hpp"/>
+        <label>DMsimpVectorMedDiracDMSimpleSpec.hpp</label>
+        <link refid="DMsimpVectorMedDiracDMSimpleSpec_8hpp"/>
         <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>MSSMSimpleSpec.hpp</label>
-        <link refid="MSSMSimpleSpec_8hpp"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
-        <label>MajoranaSingletDM_Z2SimpleSpec.hpp</label>
-        <link refid="MajoranaSingletDM__Z2SimpleSpec_8hpp"/>
-        <childnode refid="23" relation="include">
-        </childnode>
-      </node>
-      <node id="30">
-        <label>SLHASimpleSpec.hpp</label>
-        <link refid="SLHASimpleSpec_8hpp"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-      </node>
-      <node id="37">
-        <label>SMHiggsSimpleSpec.hpp</label>
-        <link refid="SMHiggsSimpleSpec_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-      </node>
-      <node id="32">
-        <label>SMSimpleSpec.hpp</label>
-        <link refid="SMSimpleSpec_8hpp"/>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-      </node>
-      <node id="38">
-        <label>ScalarSingletDMSimpleSpec.hpp</label>
-        <link refid="ScalarSingletDMSimpleSpec_8hpp"/>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-      </node>
-      <node id="43">
-        <label>VectorSingletDM_Z2SimpleSpec.hpp</label>
-        <link refid="VectorSingletDM__Z2SimpleSpec_8hpp"/>
-        <childnode refid="29" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>MSSMSimpleSpec.cpp</label>
-        <link refid="MSSMSimpleSpec_8cpp"/>
-      </node>
-      <node id="31">
-        <label>SLHASimpleSpec.cpp</label>
-        <link refid="SLHASimpleSpec_8cpp"/>
-      </node>
-      <node id="33">
-        <label>SMSimpleSpec.cpp</label>
-        <link refid="SMSimpleSpec_8cpp"/>
-      </node>
-      <node id="19">
-        <label>SpecBit_tests.cpp</label>
-        <link refid="examples_2SpecBit__tests_8cpp"/>
-      </node>
-      <node id="7">
-        <label>MDMSpec.hpp</label>
-        <link refid="MDMSpec_8hpp"/>
-        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="6">
-        <label>MDMSpec_head.hpp</label>
-        <link refid="MDMSpec__head_8hpp"/>
+        <label>DMsimpVectorMedMajoranaDMSimpleSpec.hpp</label>
+        <link refid="DMsimpVectorMedMajoranaDMSimpleSpec_8hpp"/>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="17">
-        <label>MSSMSpec.hpp</label>
-        <link refid="MSSMSpec_8hpp"/>
-        <childnode refid="15" relation="include">
+      <node id="8">
+        <label>DMsimpVectorMedScalarDMSimpleSpec.hpp</label>
+        <link refid="DMsimpVectorMedScalarDMSimpleSpec_8hpp"/>
+        <childnode refid="9" relation="include">
         </childnode>
+      </node>
+      <node id="10">
+        <label>DMsimpVectorMedVectorDMSimpleSpec.hpp</label>
+        <link refid="DMsimpVectorMedVectorDMSimpleSpec_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>DiracSingletDM_Z2SimpleSpec.hpp</label>
+        <link refid="DiracSingletDM__Z2SimpleSpec_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>MSSMSimpleSpec.hpp</label>
+        <link refid="MSSMSimpleSpec_8hpp"/>
         <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-      </node>
-      <node id="16">
-        <label>MSSMSpec_head.hpp</label>
-        <link refid="MSSMSpec__head_8hpp"/>
-        <childnode refid="17" relation="include">
-        </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-      </node>
-      <node id="24">
-        <label>QedQcdWrapper.hpp</label>
-        <link refid="QedQcdWrapper_8hpp"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>MajoranaSingletDM_Z2SimpleSpec.hpp</label>
+        <link refid="MajoranaSingletDM__Z2SimpleSpec_8hpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>SLHASimpleSpec.hpp</label>
+        <link refid="SLHASimpleSpec_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>SMHiggsSimpleSpec.hpp</label>
+        <link refid="SMHiggsSimpleSpec_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>SMSimpleSpec.hpp</label>
+        <link refid="SMSimpleSpec_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>ScalarSingletDMSimpleSpec.hpp</label>
+        <link refid="ScalarSingletDMSimpleSpec_8hpp"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>VectorSingletDM_Z2SimpleSpec.hpp</label>
+        <link refid="VectorSingletDM__Z2SimpleSpec_8hpp"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>MSSMSimpleSpec.cpp</label>
+        <link refid="MSSMSimpleSpec_8cpp"/>
+      </node>
+      <node id="39">
+        <label>SLHASimpleSpec.cpp</label>
+        <link refid="SLHASimpleSpec_8cpp"/>
+      </node>
+      <node id="41">
+        <label>SMSimpleSpec.cpp</label>
+        <link refid="SMSimpleSpec_8cpp"/>
+      </node>
+      <node id="27">
+        <label>SpecBit_tests.cpp</label>
+        <link refid="examples_2SpecBit__tests_8cpp"/>
+      </node>
+      <node id="15">
+        <label>MDMSpec.hpp</label>
+        <link refid="MDMSpec_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>MDMSpec_head.hpp</label>
+        <link refid="MDMSpec__head_8hpp"/>
         <childnode refid="15" relation="include">
         </childnode>
+      </node>
+      <node id="25">
+        <label>MSSMSpec.hpp</label>
+        <link refid="MSSMSpec_8hpp"/>
         <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
@@ -661,50 +688,88 @@
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
+      </node>
+      <node id="24">
+        <label>MSSMSpec_head.hpp</label>
+        <link refid="MSSMSpec__head_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
         <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="40">
+      <node id="32">
+        <label>QedQcdWrapper.hpp</label>
+        <link refid="QedQcdWrapper_8hpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
         <label>ScalarSingletDM_Z2Spec.hpp</label>
         <link refid="ScalarSingletDM__Z2Spec_8hpp"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
       </node>
-      <node id="39">
+      <node id="47">
         <label>ScalarSingletDM_Z2Spec_head.hpp</label>
         <link refid="ScalarSingletDM__Z2Spec__head_8hpp"/>
-        <childnode refid="40" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
       </node>
-      <node id="42">
+      <node id="50">
         <label>ScalarSingletDM_Z3Spec.hpp</label>
         <link refid="ScalarSingletDM__Z3Spec_8hpp"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>ScalarSingletDM_Z3Spec_head.hpp</label>
+        <link refid="ScalarSingletDM__Z3Spec__head_8hpp"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>SpecBit_externaltests.hpp</label>
+        <link refid="SpecBit__externaltests_8hpp"/>
         <childnode refid="27" relation="include">
         </childnode>
       </node>
-      <node id="41">
-        <label>ScalarSingletDM_Z3Spec_head.hpp</label>
-        <link refid="ScalarSingletDM__Z3Spec__head_8hpp"/>
-        <childnode refid="42" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>SpecBit_externaltests.hpp</label>
-        <link refid="SpecBit__externaltests_8hpp"/>
-        <childnode refid="19" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
+      <node id="28">
         <label>external_examples.hpp</label>
         <link refid="external__examples_8hpp_source"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="29">
         <label>MSSMspec.cpp</label>
         <link refid="MSSMspec_8cpp"/>
       </node>
-      <node id="25">
+      <node id="33">
         <label>QedQcdWrapper.cpp</label>
         <link refid="QedQcdWrapper_8cpp"/>
       </node>
@@ -713,34 +778,50 @@
         <link refid="SpecBit__DMEFT_8cpp"/>
       </node>
       <node id="5">
+        <label>SpecBit_DMsimpVectorMedDiracDM.cpp</label>
+        <link refid="SpecBit__DMsimpVectorMedDiracDM_8cpp"/>
+      </node>
+      <node id="7">
+        <label>SpecBit_DMsimpVectorMedMajoranaDM.cpp</label>
+        <link refid="SpecBit__DMsimpVectorMedMajoranaDM_8cpp"/>
+      </node>
+      <node id="9">
+        <label>SpecBit_DMsimpVectorMedScalarDM.cpp</label>
+        <link refid="SpecBit__DMsimpVectorMedScalarDM_8cpp"/>
+      </node>
+      <node id="11">
+        <label>SpecBit_DMsimpVectorMedVectorDM.cpp</label>
+        <link refid="SpecBit__DMsimpVectorMedVectorDM_8cpp"/>
+      </node>
+      <node id="13">
         <label>SpecBit_DiracSingletDM.cpp</label>
         <link refid="SpecBit__DiracSingletDM_8cpp"/>
       </node>
-      <node id="8">
+      <node id="16">
         <label>SpecBit_MDM.cpp</label>
         <link refid="SpecBit__MDM_8cpp"/>
       </node>
-      <node id="15">
+      <node id="23">
         <label>SpecBit_MSSM.cpp</label>
         <link refid="SpecBit__MSSM_8cpp"/>
       </node>
-      <node id="23">
+      <node id="31">
         <label>SpecBit_MajoranaSingletDM.cpp</label>
         <link refid="SpecBit__MajoranaSingletDM_8cpp"/>
       </node>
-      <node id="26">
+      <node id="34">
         <label>SpecBit_SM.cpp</label>
         <link refid="SpecBit__SM_8cpp"/>
       </node>
-      <node id="27">
+      <node id="35">
         <label>SpecBit_ScalarSingletDM.cpp</label>
         <link refid="SpecBit__ScalarSingletDM_8cpp"/>
       </node>
-      <node id="28">
+      <node id="36">
         <label>SpecBit_VS.cpp</label>
         <link refid="SpecBit__VS_8cpp"/>
       </node>
-      <node id="29">
+      <node id="37">
         <label>SpecBit_VectorSingletDM.cpp</label>
         <link refid="SpecBit__VectorSingletDM_8cpp"/>
       </node>

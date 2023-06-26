@@ -23,6 +23,7 @@ Inherits from [Gambit::Scanner::Function_Base< double(std::unordered_map< std::s
 | void | **[setParameters](/documentation/code/classes/classgambit_1_1likelihood__container/#function-setparameters)**(const std::unordered_map< std::string, double > & parameterMap)<br>Do the prior transformation and populate the parameter map.  |
 | double | **[main](/documentation/code/classes/classgambit_1_1likelihood__container/#function-main)**(std::unordered_map< std::string, double > & in)<br>Evaluate total likelihood function.  |
 | double | **[purposeModifier](/documentation/code/classes/classgambit_1_1likelihood__container/#function-purposemodifier)**(double lnlike)<br>Use this to modify the total likelihood function before passing it to the scanner.  |
+| void | **[set_scanID](/documentation/code/classes/classgambit_1_1likelihood__container/#function-set-scanid)**()<br>Set the scanID.  |
 
 ## Public Functions Documentation
 
@@ -70,6 +71,17 @@ double purposeModifier(
 
 Use this to modify the total likelihood function before passing it to the scanner. 
 
+### function set_scanID
+
+```
+void set_scanID()
+```
+
+Set the scanID. 
+
+Work out what the scanID should be and set it. 
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:50 +0000

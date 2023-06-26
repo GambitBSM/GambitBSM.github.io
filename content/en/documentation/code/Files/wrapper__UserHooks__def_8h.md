@@ -229,12 +229,12 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->canEnhanceEmission();
         }
         
-        inline double UserHooks::enhanceFactor(::std::basic_string<char> arg_1)
+        inline double UserHooks::enhanceFactor(std::string arg_1)
         {
             return get_BEptr()->enhanceFactor(arg_1);
         }
         
-        inline double UserHooks::vetoProbability(::std::basic_string<char> arg_1)
+        inline double UserHooks::vetoProbability(std::string arg_1)
         {
             return get_BEptr()->vetoProbability(arg_1);
         }
@@ -340,4 +340,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

@@ -20,6 +20,7 @@ Inherits from [Gambit::Printers::HDF5DataSetBase](/documentation/code/classes/cl
 |                | Name           |
 | -------------- | -------------- |
 | | **[HDF5DataSet](/documentation/code/classes/classgambit_1_1printers_1_1hdf5dataset/#function-hdf5dataset)**(const std::string & name)<br>Constructor.  |
+| std::size_t | **[write_single](/documentation/code/classes/classgambit_1_1printers_1_1hdf5dataset/#function-write-single)**(const hid_t loc_id, const T & data, const std::size_t target_pos, const bool force =false)<br>Write a single piece of data to disk at the target position.  |
 | std::size_t | **[write_vector](/documentation/code/classes/classgambit_1_1printers_1_1hdf5dataset/#function-write-vector)**(const hid_t loc_id, const std::vector< T > & data, const std::size_t target_pos, const bool force =false)<br>Write a vector of data to disk at the target position.  |
 | void | **[write_buffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5dataset/#function-write-buffer)**(const T(&) buffer[MAX_BUFFER_SIZE], const std::size_t length, const std::size_t target_pos, const bool force =false) |
 | void | **[write_random](/documentation/code/classes/classgambit_1_1printers_1_1hdf5dataset/#function-write-random)**(const hid_t loc_id, const std::map< std::size_t, T > & data)<br>Write data to disk at specified positions.  |
@@ -86,6 +87,19 @@ inline HDF5DataSet(
 ```
 
 Constructor. 
+
+### function write_single
+
+```
+inline std::size_t write_single(
+    const hid_t loc_id,
+    const T & data,
+    const std::size_t target_pos,
+    const bool force =false
+)
+```
+
+Write a single piece of data to disk at the target position. 
 
 ### function write_vector
 
@@ -179,4 +193,4 @@ Create a (chunked) dataset.
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

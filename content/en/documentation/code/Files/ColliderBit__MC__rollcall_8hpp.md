@@ -14,6 +14,8 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | | **[BACKEND_REQ_FROM_GROUP](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#function-backend-req-from-group)**(lnlike_marg_poisson , lnlike_marg_poisson_lognormal_error , () , double , (const int &, const double &, const double &, const double &) ) |
+| const int const double const double const double & | **[BACKEND_REQ](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#function-backend-req)**(FullLikes_Evaluate , (ATLAS_FullLikes) , double , (std::map< str, double > &, const str &) ) |
+| const int const double const double const double const str const str & | **[BACKEND_REQ](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#function-backend-req)**(FullLikes_FileExists , (ATLAS_FullLikes) , bool , (const str &) ) |
 
 ## Attributes
 
@@ -21,6 +23,9 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[lnlike_marg_poisson_gaussian_error](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#variable-lnlike-marg-poisson-gaussian-error)**  |
 | | **[double](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#variable-double)**  |
+| const int const double const double const double | **[ATLAS_FullLikes](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#variable-atlas-fulllikes)**  |
+| const int const double const double const double | **[int](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#variable-int)**  |
+| const int const double const double const double const str const str | **[lnlike_marg_poisson_lognormal_error](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#variable-lnlike-marg-poisson-lognormal-error)**  |
 
 ## Defines
 
@@ -69,6 +74,18 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
@@ -99,18 +116,12 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[MODULE](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-module)**  |
@@ -126,6 +137,7 @@ description: "[No description available]"
   * Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
   * Andy Buckley ([andy.buckley@cern.ch](mailto:andy.buckley@cern.ch)) 
   * Anders Kvellestad ([a.kvellestad@imperial.ac.uk](mailto:a.kvellestad@imperial.ac.uk)) 
+  * Tomasz Procter ([t.procter.1@research.gla.ac.uk](mailto:t.procter.1@research.gla.ac.uk)) 
 
 
 **Date**: 
@@ -136,6 +148,7 @@ description: "[No description available]"
   * 2019 Jan, Feb
   * 2017 Jun
   * 2019 Sep
+  * 2021 November
 
 
 Rollcall header for ColliderBit module.
@@ -166,6 +179,30 @@ BACKEND_REQ_FROM_GROUP(
 ```
 
 
+### function BACKEND_REQ
+
+```
+const int const double const double const double & BACKEND_REQ(
+    FullLikes_Evaluate ,
+    (ATLAS_FullLikes) ,
+    double ,
+    (std::map< str, double > &, const str &) 
+)
+```
+
+
+### function BACKEND_REQ
+
+```
+const int const double const double const double const str const str & BACKEND_REQ(
+    FullLikes_FileExists ,
+    (ATLAS_FullLikes) ,
+    bool ,
+    (const str &) 
+)
+```
+
+
 
 ## Attributes Documentation
 
@@ -183,6 +220,27 @@ double;
 ```
 
 
+### variable ATLAS_FullLikes
+
+```
+const int const double const double const double ATLAS_FullLikes;
+```
+
+
+### variable int
+
+```
+const int const double const double const double int;
+```
+
+
+### variable lnlike_marg_poisson_lognormal_error
+
+```
+const int const double const double const double const str const str lnlike_marg_poisson_lognormal_error;
+```
+
+
 
 ## Macros Documentation
 
@@ -194,25 +252,11 @@ double;
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -240,17 +284,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -261,23 +295,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define FUNCTION
@@ -288,23 +312,13 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -315,25 +329,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -361,17 +361,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -382,23 +372,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -409,25 +389,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -455,17 +421,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -476,23 +432,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define FUNCTION
@@ -503,23 +449,13 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define FUNCTION
@@ -530,23 +466,13 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define FUNCTION
@@ -557,23 +483,13 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define FUNCTION
@@ -584,23 +500,13 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -611,25 +517,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -657,17 +549,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -678,23 +560,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -705,25 +577,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -751,17 +609,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -772,23 +620,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -799,25 +637,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -845,17 +669,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -866,23 +680,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -893,25 +697,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -939,17 +729,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -960,23 +740,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -987,25 +757,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1033,17 +789,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1054,23 +800,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1081,25 +817,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1127,17 +849,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1148,23 +860,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1175,25 +877,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1221,17 +909,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1242,23 +920,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1269,25 +937,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1315,17 +969,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1336,23 +980,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1363,25 +997,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1409,17 +1029,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1430,23 +1040,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1457,25 +1057,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1503,17 +1089,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1524,23 +1100,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1551,25 +1117,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1597,17 +1149,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1618,23 +1160,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1645,25 +1177,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1691,17 +1209,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1712,23 +1220,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1739,25 +1237,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1785,17 +1269,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1806,23 +1280,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1833,25 +1297,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1879,17 +1329,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1900,23 +1340,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -1927,25 +1357,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -1973,17 +1389,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -1994,23 +1400,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define FUNCTION
@@ -2021,23 +1417,13 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define FUNCTION
@@ -2048,11 +1434,22 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
-Only activate these functions if HepMC is activated.
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
-Weight events according to process cross-section.
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
 
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
@@ -2060,11 +1457,7 @@ A function that reads the total cross-section from the input file, but builds up
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2075,25 +1468,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2121,17 +1500,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2142,23 +1511,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2169,25 +1528,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2215,17 +1560,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2236,23 +1571,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2263,25 +1588,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2309,17 +1620,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2330,23 +1631,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2357,25 +1648,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2403,17 +1680,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2424,23 +1691,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2451,25 +1708,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2497,17 +1740,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2518,11 +1751,22 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
-Only activate these functions if HepMC is activated.
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
-Weight events according to process cross-section.
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
 
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
@@ -2530,11 +1774,7 @@ A function that reads the total cross-section from the input file, but builds up
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2545,25 +1785,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2591,17 +1817,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2612,23 +1828,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2639,25 +1845,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2685,17 +1877,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2706,23 +1888,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2733,25 +1905,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2779,17 +1937,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2800,23 +1948,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2827,25 +1965,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2873,17 +1997,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2894,23 +2008,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -2921,25 +2025,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -2967,17 +2057,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2988,23 +2068,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3015,25 +2085,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3061,17 +2117,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3082,23 +2128,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3109,25 +2145,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3155,17 +2177,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3176,23 +2188,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3203,25 +2205,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3249,17 +2237,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3270,23 +2248,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3297,25 +2265,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3343,17 +2297,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3364,23 +2308,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3391,25 +2325,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3437,17 +2357,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3458,23 +2368,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3485,25 +2385,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3531,17 +2417,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3552,23 +2428,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3579,25 +2445,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3625,17 +2477,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3646,23 +2488,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3673,25 +2505,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3719,17 +2537,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3740,23 +2548,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3767,25 +2565,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3813,17 +2597,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -3834,50 +2608,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION operateLHCLoop
-```
-
-Example function for interfacing alternative cross-section calculators. 
-
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
-Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
-
-A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
-
-A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
-
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define CAPABILITY
@@ -3888,25 +2625,11 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Get a list of all the PID pairs related to active process codes. 
 
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
 Calculate the log likelihood for each SR in each analysis using the analysis numbers.
 
 Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
 
 Collect all the analysis numbers in one place.
 
@@ -3934,151 +2657,7 @@ A consistency check that ensures that if each event is weighted by a process-lev
 
 Lists of analyses to run
 
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY RunMC
-```
-
-Get a list of all the PID pairs related to active process codes. 
-
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
-Calculate the log likelihood for each SR in each analysis using the analysis numbers.
-
-Extract the signal predictions and uncertainties for all analyses.
-
-Collect all the analysis numbers in one place.
-
-A map between PID pairs and cross-sections.
-
-Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
-
-Total cross-section
-
-Output info on TotalCrossSection as a str-double map, for easy printing
-
-Process codes and PID pairs
-
-Get list of Pythia process codes for all active processes
-
-Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
-
-Process-level cross-sections
-
-A map between Pythia process codes and cross-sections
-
-Output PID pair cross-sections as a str-dbl map, for easy printing
-
-A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
-
-Lists of analyses to run
-
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY RunMC
-```
-
-Get a list of all the PID pairs related to active process codes. 
-
-Collider sim event capability.
-
-Collider sim capability.
-
-Output some info about the event loop.
-
-Calculate the total LHC log likelihood.
-
-Extract the indices for the SRs used in the analysis loglikes (alphabetical SR ordering)
-
-Extract the labels for the SRs used in the analysis loglikes.
-
-Extract the combined log likelihood for each analysis to a simple map_str_dbl.
-
-Extract the log likelihood for each SR to a simple map_str_dbl.
-
-Calculate the log likelihood for each SR in each analysis using the analysis numbers.
-
-Extract the signal predictions and uncertainties for all analyses.
-
-Collect all the analysis numbers in one place.
-
-A map between PID pairs and cross-sections.
-
-Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
-
-Total cross-section
-
-Output info on TotalCrossSection as a str-double map, for easy printing
-
-Process codes and PID pairs
-
-Get list of Pythia process codes for all active processes
-
-Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
-
-Process-level cross-sections
-
-A map between Pythia process codes and cross-sections
-
-Output PID pair cross-sections as a str-dbl map, for easy printing
-
-A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
-
-Lists of analyses to run
-
-Run all analyses and fill vector of analysis results.
-
-Dummy observable that creates a dependency on TestModel1D, which is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to test ColliderBit on a single point with Pythia's SLHA interface, but not use the ColliderBit standalone interface.
-
-Detector sim capabilities.
-
-Run detector simulators and produce the standard event format.
-
-Provide functions that can be used for event weighting, e.g. for process-level cross-section scaling. {@
-
-Event weight functions that depend on model-specific Py8Collider versions should be declared in the corresponding model header in ColliderBit/models. 
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -4089,23 +2668,13 @@ Event weight functions that depend on model-specific Py8Collider versions should
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
-
-Only activate these functions if HepMC is activated.
-
-Weight events according to process cross-section.
-
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
 A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
-
-This function is intended as a fallback option that simply assigns a unit weight to all events
-
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define FUNCTION
@@ -4116,11 +2685,151 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 Example function for interfacing alternative cross-section calculators. 
 
-A nested function that reads in HepMC event files and converts them to HEPUtils::Event format.
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
-Only activate these functions if HepMC is activated.
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
 
-Weight events according to process cross-section.
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
 
 Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
 
@@ -4128,11 +2837,58 @@ A function that reads the total cross-section from the input file, but builds up
 
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
-This function is intended as a fallback option that simply assigns a unit weight to all events
 
-A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format 
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
 ### define MODULE
@@ -4177,6 +2933,10 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 ///  \author Anders Kvellestad
 ///          (a.kvellestad@imperial.ac.uk)
 ///  \date 2019 Sep
+///
+/// \author Tomasz Procter
+///          (t.procter.1@research.gla.ac.uk)
+/// \date 2021 November
 ///
 ///  *********************************************
 
@@ -4446,6 +3206,17 @@ A nested function that reads in Les Houches Event files and converts them to HEP
     DEPENDENCY(DMEFT_spectrum, Spectrum)
     ALLOW_MODELS(DMEFT)
     #undef FUNCTION
+
+    #define FUNCTION DMsimp_results
+    START_FUNCTION(AnalysisDataPointers)
+    MODEL_CONDITIONAL_DEPENDENCY(DMsimpVectorMedScalarDM_spectrum, Spectrum, DMsimpVectorMedScalarDM)
+    MODEL_CONDITIONAL_DEPENDENCY(DMsimpVectorMedMajoranaDM_spectrum, Spectrum, DMsimpVectorMedMajoranaDM)
+    MODEL_CONDITIONAL_DEPENDENCY(DMsimpVectorMedDiracDM_spectrum, Spectrum, DMsimpVectorMedDiracDM)
+    MODEL_CONDITIONAL_DEPENDENCY(DMsimpVectorMedVectorDM_spectrum, Spectrum, DMsimpVectorMedVectorDM)
+    MODEL_CONDITIONAL_DEPENDENCY(Unitarity_Bound_DMsimpVectorMedMajoranaDM, double, DMsimpVectorMedMajoranaDM)
+    MODEL_CONDITIONAL_DEPENDENCY(Unitarity_Bound_DMsimpVectorMedDiracDM, double, DMsimpVectorMedDiracDM)
+    ALLOW_MODELS(DMsimpVectorMedScalarDM, DMsimpVectorMedMajoranaDM, DMsimpVectorMedDiracDM, DMsimpVectorMedVectorDM)
+    #undef FUNCTION
   #undef CAPABILITY
 
   #define CAPABILITY AllAnalysisNumbersUnmodified
@@ -4465,6 +3236,18 @@ A nested function that reads in Les Houches Event files and converts them to HEP
     #undef FUNCTION
   #undef CAPABILITY
 
+  /// Di-jet likelihoods
+  #define CAPABILITY Dijet_LogLike
+    #define FUNCTION DiJet_LogLike_DMsimp
+    START_FUNCTION(double)
+    MODEL_CONDITIONAL_DEPENDENCY(DMsimpVectorMedScalarDM_spectrum, Spectrum, DMsimpVectorMedScalarDM)
+    MODEL_CONDITIONAL_DEPENDENCY(DMsimpVectorMedMajoranaDM_spectrum, Spectrum, DMsimpVectorMedMajoranaDM)
+    MODEL_CONDITIONAL_DEPENDENCY(DMsimpVectorMedDiracDM_spectrum, Spectrum, DMsimpVectorMedDiracDM)
+    MODEL_CONDITIONAL_DEPENDENCY(DMsimpVectorMedVectorDM_spectrum, Spectrum, DMsimpVectorMedVectorDM)
+    DEPENDENCY(Y1_decay_rates,DecayTable::Entry)
+    ALLOW_MODELS(DMsimpVectorMedScalarDM, DMsimpVectorMedMajoranaDM, DMsimpVectorMedDiracDM, DMsimpVectorMedVectorDM)
+    #undef FUNCTION
+  #undef CAPABILITY
 
   /// Extract the signal predictions and uncertainties for all analyses
   #define CAPABILITY LHC_signals
@@ -4478,6 +3261,19 @@ A nested function that reads in Les Houches Event files and converts them to HEP
   /// Calculate the log likelihood for each SR in each analysis using the analysis numbers
   #define CAPABILITY LHC_LogLikes
   START_CAPABILITY
+  
+    #define FUNCTION calc_LHC_LogLikes_full
+    START_FUNCTION(map_str_AnalysisLogLikes)
+    DEPENDENCY(AllAnalysisNumbers, AnalysisDataPointers)
+    DEPENDENCY(RunMC, MCLoopInfo)
+    BACKEND_REQ_FROM_GROUP(lnlike_marg_poisson, lnlike_marg_poisson_lognormal_error, (), double, (const int&, const double&, const double&, const double&) )
+    BACKEND_REQ_FROM_GROUP(lnlike_marg_poisson, lnlike_marg_poisson_gaussian_error, (), double, (const int&, const double&, const double&, const double&) )
+    BACKEND_GROUP(lnlike_marg_poisson)
+    BACKEND_REQ(FullLikes_Evaluate, (ATLAS_FullLikes), double, (std::map<str,double>&,const str&))
+    BACKEND_REQ(FullLikes_ReadIn, (ATLAS_FullLikes), int, (const str&,const str&))
+    BACKEND_REQ(FullLikes_FileExists, (ATLAS_FullLikes), bool, (const str&))
+    #undef FUNCTION
+  
     #define FUNCTION calc_LHC_LogLikes
     START_FUNCTION(map_str_AnalysisLogLikes)
     DEPENDENCY(AllAnalysisNumbers, AnalysisDataPointers)
@@ -4487,7 +3283,7 @@ A nested function that reads in Les Houches Event files and converts them to HEP
     BACKEND_GROUP(lnlike_marg_poisson)
     #undef FUNCTION
   #undef CAPABILITY
-
+  
   /// Extract the log likelihood for each SR to a simple map_str_dbl
   #define CAPABILITY LHC_LogLike_per_SR
   START_CAPABILITY
@@ -4505,6 +3301,7 @@ A nested function that reads in Les Houches Event files and converts them to HEP
     DEPENDENCY(LHC_LogLikes, map_str_AnalysisLogLikes)
     #undef FUNCTION
   #undef CAPABILITY
+
 
   /// Extract the labels for the SRs used in the analysis loglikes
   #define CAPABILITY LHC_LogLike_SR_labels
@@ -4529,7 +3326,7 @@ A nested function that reads in Les Houches Event files and converts them to HEP
   START_CAPABILITY
     #define FUNCTION calc_combined_LHC_LogLike
     START_FUNCTION(double)
-    DEPENDENCY(LHC_LogLike_per_analysis, map_str_dbl)
+    DEPENDENCY(LHC_LogLikes, map_str_AnalysisLogLikes)
     DEPENDENCY(RunMC, MCLoopInfo)
     #undef FUNCTION
   #undef CAPABILITY
@@ -4672,14 +3469,27 @@ A nested function that reads in Les Houches Event files and converts them to HEP
     #ifndef EXCLUDE_HEPMC
 
       /// A nested function that reads in Les Houches Event files and converts them to HEPUtils::Event format
-      #define FUNCTION getLHEvent
+      #define FUNCTION getLHEvent_HEPUtils
+      START_FUNCTION(HEPUtils::Event)
+      NEEDS_MANAGER(RunMC, MCLoopInfo)
+      #undef FUNCTION
+
+      /// A nested function that reads in HepMC event files
+      #define FUNCTION getHepMCEvent
+      START_FUNCTION(HepMC3::GenEvent)
+      NEEDS_MANAGER(RunMC, MCLoopInfo)
+      #undef FUNCTION
+
+      /// A nested function that reads in HepMC event files and converts them to HEPUtils::Event format
+      #define FUNCTION getHepMCEvent_HEPUtils
       START_FUNCTION(HEPUtils::Event)
       NEEDS_MANAGER(RunMC, MCLoopInfo)
       #undef FUNCTION
 
       /// A nested function that reads in HepMC event files and converts them to HEPUtils::Event format
-      #define FUNCTION getHepMCEvent
+      #define FUNCTION convertHepMCEvent_HEPUtils
       START_FUNCTION(HEPUtils::Event)
+      DEPENDENCY(HardScatteringEvent, HepMC3::GenEvent)
       NEEDS_MANAGER(RunMC, MCLoopInfo)
       #undef FUNCTION
 
@@ -4693,4 +3503,4 @@ A nested function that reads in Les Houches Event files and converts them to HEP
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

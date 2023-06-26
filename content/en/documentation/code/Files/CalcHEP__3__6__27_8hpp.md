@@ -108,10 +108,14 @@ LOAD_LIBRARY
 
 BE_ALLOW_MODELS(ScalarSingletDM_Z2)
 BE_ALLOW_MODELS(DMEFT)
+BE_ALLOW_MODELS(DMsimpVectorMedScalarDM)
+BE_ALLOW_MODELS(DMsimpVectorMedMajoranaDM)
+BE_ALLOW_MODELS(DMsimpVectorMedDiracDM)
+BE_ALLOW_MODELS(DMsimpVectorMedVectorDM)
 
 BE_FUNCTION(setModel, int, (char*, int), "setModel", "setModel")
 BE_FUNCTION(calcMainFunc, int, (), "calcMainFunc", "calcMainFunc")
-BE_FUNCTION(getMEcode, numout*, (int ,int, char*, char*, char*, char*), "getMEcode", "getMEcode")
+BE_FUNCTION(getMEcode, numout*, (int ,int, char*, char*, char*, char*), "getMEcode" , "getMEcode")
 BE_FUNCTION(passParameters, int, (numout*), "passParameters", "passParameters")
 BE_FUNCTION(assignVal, int, (char*, double), "assignVal", "assignVal")
 BE_FUNCTION(pMass, double, (char*), "pMass", "pMass")
@@ -133,6 +137,10 @@ BE_CONV_FUNCTION(Assign_Value, void, (char*, double), "Assign_Value")
 BE_INI_CONDITIONAL_DEPENDENCY(ScalarSingletDM_Z2_spectrum, Spectrum, ScalarSingletDM_Z2)
 
 BE_INI_CONDITIONAL_DEPENDENCY(DMEFT_spectrum, Spectrum, DMEFT)
+BE_INI_CONDITIONAL_DEPENDENCY(DMsimpVectorMedDiracDM_spectrum, Spectrum, DMsimpVectorMedDiracDM)
+BE_INI_CONDITIONAL_DEPENDENCY(DMsimpVectorMedMajoranaDM_spectrum, Spectrum, DMsimpVectorMedMajoranaDM)
+BE_INI_CONDITIONAL_DEPENDENCY(DMsimpVectorMedScalarDM_spectrum, Spectrum, DMsimpVectorMedScalarDM)
+BE_INI_CONDITIONAL_DEPENDENCY(DMsimpVectorMedVectorDM_spectrum, Spectrum, DMsimpVectorMedVectorDM)
 // Undefine macros to avoid conflict with other backends
 #include "gambit/Backends/backend_undefs.hpp"
 ```
@@ -140,4 +148,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(DMEFT_spectrum, Spectrum, DMEFT)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

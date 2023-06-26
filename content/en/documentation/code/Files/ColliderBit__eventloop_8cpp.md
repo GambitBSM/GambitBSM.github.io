@@ -170,8 +170,11 @@ namespace Gambit
           result.event_count[collider]                                    = 0;
           // Check that the nEvents options given make sense.
           if (min_nEvents.at(collider) > max_nEvents.at(collider))
-           ColliderBit_error().raise(LOCAL_INFO,"Option min_nEvents is greater than corresponding max_nEvents for collider "
-                                                +collider+". Please correct your YAML file.");
+          {
+            ColliderBit_error().set_fatal(true); // This one must regarded fatal since there is something wrong in the user input
+            ColliderBit_error().raise(LOCAL_INFO,"Option min_nEvents is greater than corresponding max_nEvents for collider "
+                                                 +collider+". Please correct your YAML file.");
+          }
           // Check that the analyses all correspond to actual ColliderBit analyses, and sort them into separate maps for each detector.
           for (str& analysis : result.analyses.at(collider))
           {
@@ -467,4 +470,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

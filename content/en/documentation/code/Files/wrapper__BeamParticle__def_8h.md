@@ -216,7 +216,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->append__BOSS(iPos, idIn, x);
         }
         
-        inline void BeamParticle::list(::std::basic_ostream<char>& os) const
+        inline void BeamParticle::list(std::ostream& os) const
         {
             get_BEptr()->list(os);
         }
@@ -251,7 +251,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->remnantFlavours__BOSS(*event.get_BEptr());
         }
         
-        inline bool BeamParticle::remnantColours(Pythia8::Event& event, ::std::vector<int>& colFrom, ::std::vector<int>& colTo)
+        inline bool BeamParticle::remnantColours(Pythia8::Event& event, std::vector<int>& colFrom, std::vector<int>& colTo)
         {
             return get_BEptr()->remnantColours__BOSS(*event.get_BEptr(), colFrom, colTo);
         }
@@ -321,7 +321,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->setInitialCol__BOSS(*event.get_BEptr());
         }
         
-        inline void BeamParticle::updateCol(::std::vector<std::pair<int, int>> colourChanges)
+        inline void BeamParticle::updateCol(std::vector<std::pair<int, int>> colourChanges)
         {
             get_BEptr()->updateCol(colourChanges);
         }
@@ -400,4 +400,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

@@ -19,7 +19,7 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
@@ -39,6 +39,8 @@
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>ColliderBit_rollcall.hpp</label>
@@ -53,25 +55,27 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>generateEventPy8Collider.hpp</label>
         <link refid="generateEventPy8Collider_8hpp"/>
-        <childnode refid="11" relation="include">
-        </childnode>
         <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>getPy8Collider.hpp</label>
         <link refid="getPy8Collider_8hpp"/>
-        <childnode refid="11" relation="include">
-        </childnode>
         <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -94,59 +98,63 @@
         <label>ColliderBit_eventloop.cpp</label>
         <link refid="ColliderBit__eventloop_8cpp"/>
       </node>
-      <node id="23">
+      <node id="9">
+        <label>ColliderBit_measurements.cpp</label>
+        <link refid="ColliderBit__measurements_8cpp"/>
+      </node>
+      <node id="24">
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
-      <node id="9">
+      <node id="10">
         <label>collider_event_weights.cpp</label>
         <link refid="collider__event__weights_8cpp"/>
       </node>
-      <node id="13">
+      <node id="14">
         <label>getActiveProcessCodes.cpp</label>
         <link refid="getActiveProcessCodes_8cpp"/>
       </node>
-      <node id="14">
+      <node id="15">
         <label>getAnalysisContainer.cpp</label>
         <link refid="getAnalysisContainer_8cpp"/>
       </node>
-      <node id="15">
+      <node id="16">
         <label>getBuckFast.cpp</label>
         <link refid="getBuckFast_8cpp"/>
       </node>
-      <node id="16">
+      <node id="17">
         <label>getHepMCEvent.cpp</label>
         <link refid="getHepMCEvent_8cpp"/>
       </node>
-      <node id="17">
+      <node id="18">
         <label>getLHEvent.cpp</label>
         <link refid="getLHEvent_8cpp"/>
       </node>
-      <node id="19">
+      <node id="20">
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="24">
+      <node id="25">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>
-      <node id="11">
+      <node id="12">
         <label>SUSY.cpp</label>
         <link refid="SUSY_8cpp"/>
       </node>
-      <node id="12">
+      <node id="13">
         <label>SUSY_extras.cpp</label>
         <link refid="SUSY__extras_8cpp"/>
       </node>
-      <node id="20">
+      <node id="21">
         <label>process_code_PID_pair_mapping.cpp</label>
         <link refid="process__code__PID__pair__mapping_8cpp"/>
       </node>
-      <node id="21">
+      <node id="22">
         <label>runAnalyses.cpp</label>
         <link refid="runAnalyses_8cpp"/>
       </node>
-      <node id="22">
+      <node id="23">
         <label>smearEvent.cpp</label>
         <link refid="smearEvent_8cpp"/>
       </node>
@@ -552,15 +560,15 @@
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" kindref="member">MODEL_CONDITIONAL_DEPENDENCY</ref>(SM_spectrum,<sp/>Spectrum,<sp/>StandardModel_Higgs,<sp/>StandardModel_Higgs_running)</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" kindref="member">MODEL_CONDITIONAL_DEPENDENCY</ref>(ScalarSingletDM_Z2_spectrum,<sp/>Spectrum,<sp/>ScalarSingletDM_Z2,<sp/>ScalarSingletDM_Z2_running)</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" kindref="member">MODEL_CONDITIONAL_DEPENDENCY</ref>(ScalarSingletDM_Z3_spectrum,<sp/>Spectrum,<sp/>ScalarSingletDM_Z3,<sp/>ScalarSingletDM_Z3_running)</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(StandardModel_Higgs_running,<sp/>ScalarSingletDM_Z3_running,<sp/>ScalarSingletDM_Z2_running)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DarkBit__rollcall_8hpp_1a914ec6f557b5dc34284eb74649e7da07" kindref="member">ALLOW_MODELS</ref>(StandardModel_Higgs_running,<sp/>ScalarSingletDM_Z3_running,<sp/>ScalarSingletDM_Z2_running)</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(Higgs_Couplings,<sp/>HiggsCouplingsTable)</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MSSM-like<sp/>Higgs<sp/>model<sp/>parameters,<sp/>for<sp/>BSM<sp/>models<sp/>with<sp/>MSSM-like<sp/>sectors<sp/>(MSSM,<sp/>NMSSM,<sp/>...)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FUNCTION<sp/>MSSMLikeHiggs_ModelParameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>START_FUNCTION(hb_ModelParameters)</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" kindref="member">MODEL_CONDITIONAL_DEPENDENCY</ref>(MSSM_spectrum,<sp/>Spectrum,<sp/>MSSM63atQ,<sp/>MSSM63atMGUT)</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLOW_MODELS(MSSM63atMGUT,<sp/>MSSM63atQ)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a500a90d486ecabb9887b0fc4b35d3e1a" kindref="member">MODEL_CONDITIONAL_DEPENDENCY</ref>(MSSM_spectrum,<sp/>Spectrum,<sp/>MSSM63atQ,<sp/>MSSM63atMGUT,<sp/>MSSM63atQ_mG,<sp/>MSSM63atMGUT_mG)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="DarkBit__rollcall_8hpp_1a914ec6f557b5dc34284eb74649e7da07" kindref="member">ALLOW_MODELS</ref>(MSSM63atQ,<sp/>MSSM63atMGUT,<sp/>MSSM63atQ_mG,<sp/>MSSM63atMGUT_mG)</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="module__macros__incore_8hpp_1a6b4d1ca0beaad9490ec178d15c775fef" kindref="member">DEPENDENCY</ref>(Higgs_Couplings,<sp/>HiggsCouplingsTable)</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>FUNCTION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>

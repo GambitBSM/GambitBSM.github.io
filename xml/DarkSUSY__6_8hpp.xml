@@ -5,9 +5,11 @@
     <includedby refid="DarkSUSY__MSSM__6__1__1_8hpp" local="yes">DarkSUSY_MSSM_6_1_1.hpp</includedby>
     <includedby refid="DarkSUSY__MSSM__6__2__2_8hpp" local="yes">DarkSUSY_MSSM_6_2_2.hpp</includedby>
     <includedby refid="DarkSUSY__MSSM__6__2__5_8hpp" local="yes">DarkSUSY_MSSM_6_2_5.hpp</includedby>
+    <includedby refid="DarkSUSY__MSSM__6__4__0_8hpp" local="yes">DarkSUSY_MSSM_6_4_0.hpp</includedby>
     <includedby refid="DarkSUSY__generic__wimp__6__1__1_8hpp" local="yes">DarkSUSY_generic_wimp_6_1_1.hpp</includedby>
     <includedby refid="DarkSUSY__generic__wimp__6__2__2_8hpp" local="yes">DarkSUSY_generic_wimp_6_2_2.hpp</includedby>
     <includedby refid="DarkSUSY__generic__wimp__6__2__5_8hpp" local="yes">DarkSUSY_generic_wimp_6_2_5.hpp</includedby>
+    <includedby refid="DarkSUSY__generic__wimp__6__4__0_8hpp" local="yes">DarkSUSY_generic_wimp_6_4_0.hpp</includedby>
     <invincdepgraph>
       <node id="2">
         <label>DarkSUSY_MSSM_6_1_1.hpp</label>
@@ -28,21 +30,33 @@
         </childnode>
       </node>
       <node id="8">
-        <label>DarkSUSY_generic_wimp_6_1_1.hpp</label>
-        <link refid="DarkSUSY__generic__wimp__6__1__1_8hpp"/>
+        <label>DarkSUSY_MSSM_6_4_0.hpp</label>
+        <link refid="DarkSUSY__MSSM__6__4__0_8hpp"/>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="10">
-        <label>DarkSUSY_generic_wimp_6_2_2.hpp</label>
-        <link refid="DarkSUSY__generic__wimp__6__2__2_8hpp"/>
+        <label>DarkSUSY_generic_wimp_6_1_1.hpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__1__1_8hpp"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="12">
+        <label>DarkSUSY_generic_wimp_6_2_2.hpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__2__2_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
         <label>DarkSUSY_generic_wimp_6_2_5.hpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__5_8hpp"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>DarkSUSY_generic_wimp_6_4_0.hpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__4__0_8hpp"/>
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -60,6 +74,10 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>DarkSUSY_MSSM_6_1_1.cpp</label>
@@ -74,22 +92,30 @@
         <link refid="DarkSUSY__MSSM__6__2__5_8cpp"/>
       </node>
       <node id="9">
+        <label>DarkSUSY_MSSM_6_4_0.cpp</label>
+        <link refid="DarkSUSY__MSSM__6__4__0_8cpp"/>
+      </node>
+      <node id="11">
         <label>DarkSUSY_generic_wimp_6_1_1.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__1__1_8cpp"/>
       </node>
-      <node id="11">
+      <node id="13">
         <label>DarkSUSY_generic_wimp_6_2_2.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__2_8cpp"/>
       </node>
-      <node id="13">
+      <node id="15">
         <label>DarkSUSY_generic_wimp_6_2_5.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__5_8cpp"/>
       </node>
+      <node id="17">
+        <label>DarkSUSY_generic_wimp_6_4_0.cpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__4__0_8cpp"/>
+      </node>
     </invincdepgraph>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="DarkSUSY__6_8hpp_1a3f735c407433ddaa1b7f6635eb8c2df1" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="DarkSUSY__6_8hpp_1ac9c84fa68bbad002983e35ce3663c686" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>double double double int int int dsrdens rdtime void</definition>
+        <definition>void</definition>
         <argsstring></argsstring>
         <name>void</name>
         <briefdescription>
@@ -100,9 +126,9 @@
         </inbodydescription>
         <location file="Backends/include/gambit/Backends/frontends/shared_includes/DarkSUSY_6.hpp" line="39" column="2" bodyfile="Backends/include/gambit/Backends/frontends/shared_includes/DarkSUSY_6.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="DarkSUSY__6_8hpp_1a262558c11efd277913348f451206da83" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="DarkSUSY__6_8hpp_1a3adcffbeb25d990def71033256168b45" prot="public" static="no" mutable="no">
         <type>double</type>
-        <definition>double double double int int int dsrdens rdtime const double(&amp;const const double double</definition>
+        <definition>double double</definition>
         <argsstring></argsstring>
         <name>double</name>
         <briefdescription>
@@ -207,47 +233,6 @@
         </inbodydescription>
         <location file="Backends/include/gambit/Backends/frontends/shared_includes/DarkSUSY_6.hpp" line="57" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="DarkSUSY__6_8hpp_1a1f97d8eea3bffc0e6cd868af3ed4ae8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double double double int int int dsrdens rdtime</type>
-        <definition>double double double int int int dsrdens rdtime BE_VARIABLE</definition>
-        <argsstring>(rdpars, DS_RDPARS, &quot;rdpars_&quot;, &quot;rdpars&quot;) BE_CONV_FUNCTION(dsgenericwimp_nusetup</argsstring>
-        <name>BE_VARIABLE</name>
-        <param>
-          <type>rdpars</type>
-        </param>
-        <param>
-          <type>DS_RDPARS</type>
-        </param>
-        <param>
-          <type>&quot;rdpars_&quot;</type>
-        </param>
-        <param>
-          <type>&quot;rdpars&quot;</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Backends/include/gambit/Backends/frontends/shared_includes/DarkSUSY_6.hpp" line="59" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="DarkSUSY__6_8hpp_1adbccce5e2e14dfef67262dda7fab928b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double double double int int int dsrdens rdtime const double(&amp;const</type>
-        <definition>double double double int int int dsrdens rdtime const double(&amp;const double</definition>
-        <argsstring>(&amp;)[29][3], const double(&amp;)[15]</argsstring>
-        <name>double</name>
-        <param>
-          <type>&amp;</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Backends/include/gambit/Backends/frontends/shared_includes/DarkSUSY_6.hpp" line="65" column="13"/>
-      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -331,13 +316,12 @@
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Common<sp/>blocks<sp/>in<sp/>the<sp/>DarkSUSY<sp/>core<sp/>library</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal">BE_VARIABLE(ddcomlegacy,<sp/>DS_DDCOMLEGACY,<sp/>&quot;ddcomlegacy_&quot;,<sp/>&quot;ddcomlegacy&quot;)<sp/></highlight><highlight class="comment">//DD</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal">BE_VARIABLE(rdtime,<sp/>DS_RDTIME,<sp/><sp/><sp/><sp/><sp/>&quot;rdtime_&quot;,<sp/><sp/><sp/><sp/>&quot;rdtime&quot;)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RD<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal">BE_VARIABLE(rdpars,<sp/>DS_RDPARS,<sp/><sp/><sp/><sp/><sp/>&quot;rdpars_&quot;,<sp/><sp/><sp/><sp/>&quot;rdpars&quot;)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>Parameters</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Convenience<sp/>functions<sp/>(registration)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal">BE_CONV_FUNCTION(DS_neutral_h_decay_channels,<sp/>std::vector&lt;std::vector&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;&gt;,<sp/>(),<sp/>&quot;get_DS_neutral_h_decay_channels&quot;)</highlight></codeline>
-<codeline lineno="63"><highlight class="normal">BE_CONV_FUNCTION(DS_charged_h_decay_channels,<sp/>std::vector&lt;std::vector&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;&gt;,<sp/>(),<sp/>&quot;get_DS_charged_h_decay_channels&quot;)</highlight></codeline>
-<codeline lineno="64"><highlight class="normal">BE_CONV_FUNCTION(neutrino_yield,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>(const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;,<sp/>const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;),<sp/>&quot;nuyield&quot;)</highlight></codeline>
-<codeline lineno="65"><highlight class="normal">BE_CONV_FUNCTION(dsgenericwimp_nusetup,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">,<sp/>(const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(&amp;)[29],<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(&amp;)[29][3],<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(&amp;)[15],<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(&amp;)[3],<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;),<sp/>&quot;DS_nuyield_setup&quot;)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Convenience<sp/>functions<sp/>(registration)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">BE_CONV_FUNCTION(DS_neutral_h_decay_channels,<sp/>std::vector&lt;std::vector&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;&gt;,<sp/>(),<sp/>&quot;get_DS_neutral_h_decay_channels&quot;)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">BE_CONV_FUNCTION(DS_charged_h_decay_channels,<sp/>std::vector&lt;std::vector&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;&gt;,<sp/>(),<sp/>&quot;get_DS_charged_h_decay_channels&quot;)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">BE_CONV_FUNCTION(neutrino_yield,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>(const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;,<sp/>const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;),<sp/>&quot;nuyield&quot;)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">BE_CONV_FUNCTION(dsgenericwimp_nusetup,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">,<sp/>(const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(&amp;)[29],<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(&amp;)[29][3],<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(&amp;)[15],<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(&amp;)[3],<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;),<sp/>&quot;DS_nuyield_setup&quot;)</highlight></codeline>
     </programlisting>
     <location file="Backends/include/gambit/Backends/frontends/shared_includes/DarkSUSY_6.hpp"/>
   </compounddef>

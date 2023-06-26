@@ -155,6 +155,9 @@ namespace Gambit
       // We don't supply a LE subspectrum here; an SMSimpleSpec will therefore be automatically created from 'sminputs'
       result = Spectrum(singletspec,sminputs,&myPipe::Param,mass_cut,mass_ratio_cut);
 
+      result.get_HE().set_override(Par::Pole_Mass_1srd_high,0.0, "h0_1", true);
+      result.get_HE().set_override(Par::Pole_Mass_1srd_low,0.0,"h0_1", true);
+
     }
 
     /// Get a (simple) Spectrum object wrapper for the ScalarSingletDM_Z3 model
@@ -216,6 +219,9 @@ namespace Gambit
 
       // We don't supply a LE subspectrum here; an SMSimpleSpec will therefore be automatically created from 'sminputs'
       result = Spectrum(singletspec,sminputs,&myPipe::Param,mass_cut,mass_ratio_cut);
+
+      result.get_HE().set_override(Par::Pole_Mass_1srd_high,0.0, "h0_1", true);
+      result.get_HE().set_override(Par::Pole_Mass_1srd_low,0.0,"h0_1", true);
 
     }
 
@@ -720,4 +726,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

@@ -22,19 +22,19 @@ Member [Gambit::ColliderBit::Analysis::add](/documentation/code/classes/classgam
 
 Member [Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_139invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__139invfb/#function-run)  (const Event *event)
 
-* Use weighting instead 
-And tight ID for high purity... used where? 
-And tight ID for high purity... used where? 
-Apply a random 9% loss / 0.91 reweight for jet quality criteria? 
+* Compute from hard objects instead? 
 Drop b-tag if pT < 50 GeV or |eta| > 2.5? 
-Compute from hard objects instead?  
+Apply a random 9% loss / 0.91 reweight for jet quality criteria? 
+And tight ID for high purity... used where? 
+And tight ID for high purity... used where? 
+Use weighting instead  
 
 Member [Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_13invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#function-run)  (const Event *event)
 
 * Drop b-tag if pT < 50 GeV or |eta| > 2.5? 
-Unless b-tagged (and pT > 50 && abseta < 2.5) 
 Actually only within 0.2&ndash;0.4... 
-Actually only within 0.2&ndash;0.4...  
+Actually only within 0.2&ndash;0.4... 
+Unless b-tagged (and pT > 50 && abseta < 2.5)  
 
 Member [Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_36invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__36invfb/#function-run)  (const Event *event)
 
@@ -130,16 +130,13 @@ Member [Gambit::ColliderBit::BuckFast::processEvent](/documentation/code/classes
 * Run-dependence? 
 Run-dependence?  
 
-Member [Gambit::ColliderBit::calc_loglikes_for_analysis](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-loglikes-for-analysis)  (const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) &, bool, bool, bool, bool)
+Member [Gambit::ColliderBit::calc_LHC_LogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes)  (map_str_AnalysisLogLikes &result)
 
-* Only compute this once per run 
-Support NSL, i.e. skewness correction 
-Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref<>s for the latter? 
-Compute the background-only covariance decomposition and likelihood only once 
-Only compute this once per run 
-Or compute all the exp DLLs first, then only the best-expected SR's obs DLL? 
-Use newer (?) one-step Eigen constructors for (const) single-element arrays 
-Only compute this once per run  
+* Needs more sophistication once we add analyses that don't use event generation.  
+
+Member [Gambit::ColliderBit::calc_LHC_LogLikes_full](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes-full)  (map_str_AnalysisLogLikes &result)
+
+* Needs more sophistication once we add analyses that don't use event generation.  
 
 Member [Gambit::ColliderBit::CMS::smearJets](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-smearjets)  (std::vector< HEPUtils::Jet * > &jets)
 
@@ -153,29 +150,41 @@ Is this the best way to smear? Should we preserve the mean jet energy, or pT, or
 
 Member [Gambit::ColliderBit::convertParticleEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertparticleevent)  (const EventT &pevt, HEPUtils::Event &result, double antiktR, double jet_pt_min)
 
-* Hard-coded radius!!! 
-Hard-coded radius!!! 
+* Move out-of-acceptance MET contribution to [BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/)
+Overlap between jets and prompt containers: need some isolation in MET calculation 
 Temporarily using quark-based tagging instead &ndash; fix 
 Temporarily using quark-based tagging instead &ndash; fix 
 What's wrong with having a W daughter? Doesn't that just mark a final tau? 
+Choose jet algorithm via detector _settings? Run several algs? 
+Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
+Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
+Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
+Hard-coded radius!!! 
+Hard-coded radius!!! 
 Hard-coded radius!!! 
 Replace with HEPUtils::any(bhadrons, [&](const auto& pb){ pj.delta_R(pb) < 0.4 }) 
-Use ghost tagging? 
-Choose jet algorithm via detector _settings? Run several algs? 
-Overlap between jets and prompt containers: need some isolation in MET calculation 
-Move out-of-acceptance MET contribution to [BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/)
+Use ghost tagging?  
 
 Member [Gambit::ColliderBit::convertPartonEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertpartonevent)  (const EventT &pevt, HEPUtils::Event &result, double antiktR, double jet_pt_min)
 
-* Only include hadronic tau fraction? 
-choose jet algorithm via _settings? 
-Lepton dressing 
+* We should leave this for the detector sim / analysis to deal with 
 _Some_ photons should be included in jets!!! Ignore for now since no FSR 
-We should leave this for the detector sim / analysis to deal with  
+Lepton dressing 
+Only include hadronic tau fraction? 
+choose jet algorithm via _settings?  
 
 Member [Gambit::ColliderBit::Cutflows::normalize](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/#function-normalize)  (double norm, size_t icut=0)
 
 * Provide a version that takes a vector of norms?  
+
+Member [Gambit::ColliderBit::fill_analysis_loglikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes)  (const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) &, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) &, bool, bool, bool, bool, bool(*FullLikes_FileExists)(const str &), int(*FullLikes_ReadIn)(const str &, const str &), double(*FullLikes_Evaluate)(std::map< str, double > &, const str &), const std::string)
+
+* Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref<>s for the latter? 
+Compute the background-only covariance decomposition and likelihood only once 
+Only compute this once per run 
+Only compute this once per run 
+Use newer (?) one-step Eigen constructors for (const) single-element arrays 
+Only compute this once per run  
 
 Member [Gambit::ColliderBit::filter_reject](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filter-reject)  (const JetPtrs &jets, std::function< bool(const Jet *)> rejfn, bool do_delete=true)
 
@@ -228,12 +237,8 @@ Member [Gambit::ColliderBit::random_bool](/documentation/code/namespaces/namespa
 
 Member [Gambit::ColliderBit::SignalRegionData::check](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/#function-check)  () const
 
-* Add SR consistency checks  
-
-Member [Gambit::SpecBit::get_MSSM_spectrum_from_SLHAstruct](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-mssm-spectrum-from-slhastruct)  ([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) &result)
-
-* FIXME this needs to be fixed &ndash; is it needed any more? Where is this GAMBIT block supposed to be written? 
+* Add SR consistency checks 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:50 +0000
+Updated on 2023-06-26 at 21:36:58 +0000

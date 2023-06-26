@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/wrapper_HL_Gaussian_decl.h"
+title: "file HepLike_2_0/wrapper_HL_Gaussian_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/wrapper_HL_Gaussian_decl.h
+# file HepLike_2_0/wrapper_HL_Gaussian_decl.h
 
 [No description available]
 
@@ -34,15 +34,14 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_HL_Gaussian_decl_HepLike_1_2_h__
-#define __wrapper_HL_Gaussian_decl_HepLike_1_2_h__
+#ifndef __wrapper_HL_Gaussian_decl_HepLike_2_0_h__
+#define __wrapper_HL_Gaussian_decl_HepLike_2_0_h__
 
 #include <cstddef>
 #include <string>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_HL_Gaussian.h"
-#include "wrapper_HL_Data_decl.h"
 
 #include "identification.hpp"
 
@@ -50,13 +49,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 {
    
    
-   class HL_Gaussian : public HL_Data
+   class HL_Gaussian : public WrapperBase
    {
          // Member variables: 
       public:
          // -- Static factory pointers: 
          static Abstract_HL_Gaussian* (*__factory0)();
-         static Abstract_HL_Gaussian* (*__factory1)(::std::basic_string<char>);
+         static Abstract_HL_Gaussian* (*__factory1)(std::string);
    
          // -- Other member variables: 
    
@@ -80,7 +79,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          // Wrappers for original constructors: 
       public:
          HL_Gaussian();
-         HL_Gaussian(::std::basic_string<char> s);
+         HL_Gaussian(std::string s);
    
          // Special pointer-based constructor: 
          HL_Gaussian(Abstract_HL_Gaussian* in);
@@ -104,10 +103,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_HL_Gaussian_decl_HepLike_1_2_h__ */
+#endif /* __wrapper_HL_Gaussian_decl_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

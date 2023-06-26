@@ -74,7 +74,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
       
             void flag_no_convergence_me2(double arg_1, unsigned int arg_2);
       
-            void flag_tachyon(const ::std::basic_string<char, std::char_traits<char>, std::allocator<char> >& arg_1);
+            void flag_tachyon(const std::string& arg_1);
       
             void unflag_no_convergence_Mu_MassB_MassWB();
       
@@ -86,15 +86,15 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
       
             bool have_warning() const;
       
-            ::std::basic_string<char, std::char_traits<char>, std::allocator<char> > get_warnings() const;
+            ::std::string get_warnings() const;
       
-            ::std::basic_string<char, std::char_traits<char>, std::allocator<char> > get_problems() const;
+            ::std::string get_problems() const;
       
-            void print(::std::basic_ostream<char, std::char_traits<char> >& arg_1) const;
+            void print(std::ostream& arg_1) const;
       
-            void print_problems(::std::basic_ostream<char, std::char_traits<char> >& arg_1) const;
+            void print_problems(std::ostream& arg_1) const;
       
-            void print_warnings(::std::basic_ostream<char, std::char_traits<char> >& arg_1) const;
+            void print_warnings(std::ostream& arg_1) const;
       
       
             // Wrappers for original constructors: 
@@ -130,4 +130,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

@@ -41,6 +41,7 @@ Forward declaration.  [More...](#detailed-description)
 | struct | **[Gambit::Printers::get_hdf5_data_type< long double >](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01long_01double_01_4/)**  |
 | struct | **[Gambit::Printers::get_hdf5_data_type< long long >](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01long_01long_01_4/)**  |
 | struct | **[Gambit::Printers::get_hdf5_data_type< short >](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01short_01_4/)**  |
+| struct | **[Gambit::Printers::get_hdf5_data_type< std::string >](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01std_1_1string_01_4/)**  |
 | struct | **[Gambit::Printers::get_hdf5_data_type< unsigned char >](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01unsigned_01char_01_4/)**  |
 | struct | **[Gambit::Printers::get_hdf5_data_type< unsigned int >](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01unsigned_01int_01_4/)**  |
 | struct | **[Gambit::Printers::get_hdf5_data_type< unsigned long >](/documentation/code/classes/structgambit_1_1printers_1_1get__hdf5__data__type_3_01unsigned_01long_01_4/)**  |
@@ -120,6 +121,7 @@ Forward declaration.  [More...](#detailed-description)
 | template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, const [map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID) |
 | template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, const [map_const_str_map_const_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-const-str-map-const-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>String-to-map print overload (where map is string-to-double)  |
 | template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, const [map_str_map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-map-str-dbl) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID) |
+| template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, const [map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>String-to-string map print overload.  |
 | template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [map_intpair_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-intpair-dbl) const & map, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Integer pair-to-double map print overload.  |
 | template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>[ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) print overload.  |
 | template <typename P \> <br>void | **[_common_print](/documentation/code/namespaces/namespacegambit_1_1printers/#function-common-print)**(P & printer, [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > const & value, const std::string & label, const int vID, const unsigned int mpirank, const unsigned long pointID)<br>Triplet print overload.  |
@@ -609,6 +611,22 @@ void _common_print(
 )
 ```
 
+
+### function _common_print
+
+```
+template <typename P >
+void _common_print(
+    P & printer,
+    const map_str_str & map,
+    const std::string & label,
+    const int vID,
+    const unsigned int mpirank,
+    const unsigned long pointID
+)
+```
+
+String-to-string map print overload. 
 
 ### function _common_print
 
@@ -1297,4 +1315,4 @@ Define 'nullpoint' const.
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

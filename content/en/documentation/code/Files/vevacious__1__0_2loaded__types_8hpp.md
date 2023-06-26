@@ -23,7 +23,7 @@ description: "[No description available]"
 ### define vevacious_1_0_all_data
 
 ```
-#define vevacious_1_0_all_data   (( /*class*/(VevaciousPlusPlus)(VevaciousPlusPlus),    /*constructors*/(("Factory_VevaciousPlusPlus_0__BOSS_1",(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&))) )) \
+#define vevacious_1_0_all_data   (( /*class*/(VevaciousPlusPlus)(VevaciousPlusPlus),    /*constructors*/(("Factory_VevaciousPlusPlus_0__BOSS_1",(const std::string&))) )) \
 ```
 
 
@@ -38,7 +38,7 @@ description: "[No description available]"
 
 // Indicate which types are provided by this backend, and what the symbols of their factories are.
 #define vevacious_1_0_all_data \
-  (( /*class*/(VevaciousPlusPlus)(VevaciousPlusPlus),    /*constructors*/(("Factory_VevaciousPlusPlus_0__BOSS_1",(const std::basic_string<char, std::char_traits<char>, std::allocator<char>>&))) )) \
+  (( /*class*/(VevaciousPlusPlus)(VevaciousPlusPlus),    /*constructors*/(("Factory_VevaciousPlusPlus_0__BOSS_1",(const std::string&))) )) \
 
 // If the default version has been loaded, set it as default.
 #if ALREADY_LOADED(CAT_3(BACKENDNAME,_,CAT(Default_,BACKENDNAME)))
@@ -54,4 +54,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

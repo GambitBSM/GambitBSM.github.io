@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="simplexs__1__0_8hpp" kind="file" language="C++">
+    <compoundname>simplexs_1_0.hpp</compoundname>
+    <includes refid="include_2gambit_2Backends_2backend__undefs_8hpp" local="yes">gambit/Backends/backend_undefs.hpp</includes>
+    <includedby refid="simple__xs__1__0_8cpp" local="yes">simple_xs_1_0.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gambit/Backends/backend_undefs.hpp</label>
+        <link refid="include_2gambit_2Backends_2backend__undefs_8hpp"/>
+      </node>
+      <node id="1">
+        <label>simplexs_1_0.hpp</label>
+        <link refid="simplexs__1__0_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>simplexs_1_0.hpp</label>
+        <link refid="simplexs__1__0_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simple_xs_1_0.cpp</label>
+        <link refid="simple__xs__1__0_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="simplexs__1__0_8hpp_1a7f7848301604c58c8962207acd75ff6e" prot="public" static="no">
+        <name>BACKENDNAME</name>
+        <initializer>simple_xs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp" line="18" column="9" bodyfile="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="simplexs__1__0_8hpp_1a339bf682af9659de270251e5d18011be" prot="public" static="no">
+        <name>BACKENDLANG</name>
+        <initializer>Python</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp" line="19" column="9" bodyfile="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="simplexs__1__0_8hpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" prot="public" static="no">
+        <name>VERSION</name>
+        <initializer>1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp" line="20" column="9" bodyfile="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="simplexs__1__0_8hpp_1a8d5a383ba38225163529bfcb55b74444" prot="public" static="no">
+        <name>SAFE_VERSION</name>
+        <initializer>1_0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp" line="21" column="9" bodyfile="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Frontend header for the simplexs backend</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Christopher Chang (<ulink url="mailto:christopher.chang@uqconnect.edu.au">christopher.chang@uqconnect.edu.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2020 Feb</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Frontend<sp/>header<sp/>for<sp/>the<sp/>simplexs<sp/>backend</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Christopher<sp/>Chang</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(christopher.chang@uqconnect.edu.au)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2020<sp/>Feb</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKENDNAME<sp/>simple_xs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKENDLANG<sp/>Python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VERSION<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAFE_VERSION<sp/>1_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="backend__macros_8hpp_1ac7b7c11119ba13dc612df0e3e744b165" kindref="member">LOAD_LIBRARY</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_PYBIND11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>BE_FUNCTION(init,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">,<sp/>(<ref refid="python__helpers_8hpp_1a75d3d28c847302d727ee671263dae2f9" kindref="member">PyDict</ref>&amp;),<sp/></highlight><highlight class="stringliteral">&quot;init&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;simplexs_init&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>BE_FUNCTION(get_xsection,<sp/><ref refid="python__helpers_8hpp_1a75d3d28c847302d727ee671263dae2f9" kindref="member">PyDict</ref>,<sp/>(<ref refid="python__helpers_8hpp_1a75d3d28c847302d727ee671263dae2f9" kindref="member">PyDict</ref>&amp;,<sp/><ref refid="python__helpers_8hpp_1a75d3d28c847302d727ee671263dae2f9" kindref="member">PyDict</ref>&amp;),<sp/>&quot;get_xsection&quot;,<sp/>&quot;simplexs_get_xsection&quot;)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="include_2gambit_2Backends_2backend__undefs_8hpp" kindref="compound">gambit/Backends/backend_undefs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Backends/include/gambit/Backends/frontends/simplexs_1_0.hpp"/>
+  </compounddef>
+</doxygen>

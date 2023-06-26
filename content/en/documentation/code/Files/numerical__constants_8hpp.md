@@ -29,6 +29,7 @@ description: "[No description available]"
 
   * Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
   * Christoph Weniger ([c.weniger@uva.nl](mailto:c.weniger@uva.nl)) 
+  * Jeriek Van den Abeele ([jeriekvda@fys.uio.no](mailto:jeriekvda@fys.uio.no)) 
   * Janina Renk ([janina.renk@fysik.su.se](mailto:janina.renk@fysik.su.se)) 
   * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
 
@@ -38,6 +39,7 @@ description: "[No description available]"
   * 2015 Mar
   * 2015 Apr 
   * 2016 Mar
+  * 2018 Sep
   * 2019 Mar
   * 2020 Jan 
 
@@ -76,6 +78,10 @@ Authors (add name and date if you modify):
 ///  \date   2015 Apr
 ///  \date   2016 Mar
 ///
+///  \author Jeriek Van den Abeele
+///          (jeriekvda@fys.uio.no)
+///  \date 2018 Sep
+///
 ///  \author Janina Renk
 ///          (janina.renk@fysik.su.se)
 ///  \date   2019 Mar
@@ -105,7 +111,7 @@ namespace Gambit
   const double gev2pb = gev2cm2*1e36;                           // pb per GeV^-2
   const double gev2tocm3s1 = 1.16733e-17;                       // cm^3 s^-1 per GeV^-2
   const double s2cm = 2.99792458e10;                            // cm per s
-  const double m_planck = 1.220910e19;                          // Planck mass (GeV)
+  const double m_planck = 1.220910e19;                          // Planck mass (GeV) 
   const double m_planck_red = m_planck/sqrt(8.0*pi);            // reduced Planck mass (GeV)
   const double atomic_mass_unit = 0.931494028;                  // atomic mass unit (GeV/c^2)
   const double m_proton_amu = 1.00727646688;                    // proton mass (amu)
@@ -229,6 +235,14 @@ namespace Gambit
   const double mw_err_observed = 0.015;
   /// @}
 
+  /// M_Z (Breit-Wigner mass parameter ~ pole) = 91.1876 +/- 0.0021  GeV (1 sigma), Gaussian.
+  /// Reference https://pdg.lbl.gov/2022/listings/rpp2022-list-z-boson.pdf = R.L. Workmanet al. (Particle Data Group), Prog. Theor. Exp. Phys. 2022, 083C01 (2022)
+  /// @{
+  const double mz_central_observed = 91.1876;
+  const double mz_err_observed = 0.0021;
+  /// @}
+
+
 }
 
 #endif //#defined __numerical_constants_hpp__
@@ -237,4 +251,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

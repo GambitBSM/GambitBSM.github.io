@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="88" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="88" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="178" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1afba2272dd818481ccad82488e48ada4b" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -30,35 +30,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="89" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="89" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="179" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="179" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1af65de8e98cf417acfe40189526627595" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1ac9e0e74eb7429d40469ed44e95a6b4f8" prot="public" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string Gambit::Utils::interp2d_collection::x_name</definition>
+        <definition>std::string Gambit::Utils::interp2d_collection::x1_name</definition>
         <argsstring></argsstring>
-        <name>x_name</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::x_name</qualifiedname>
+        <name>x1_name</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x1_name</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="90" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="90" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="180" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="180" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a3a20a120156389a26160893845c38a53" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a3da5a5435c5c7e82024d01566ca150fe" prot="public" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string Gambit::Utils::interp2d_collection::y_name</definition>
+        <definition>std::string Gambit::Utils::interp2d_collection::x2_name</definition>
         <argsstring></argsstring>
-        <name>y_name</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::y_name</qualifiedname>
+        <name>x2_name</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x2_name</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="91" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="91" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="181" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1aae1635efcdff175a7953de22a9ca8fe5" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -72,105 +72,133 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="92" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="92" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="182" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="182" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a53f192b821bd3ac7d94881980f055a90" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; gsl_spline2d * &gt;</type>
-        <definition>std::vector&lt;gsl_spline2d*&gt; Gambit::Utils::interp2d_collection::splines</definition>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a8c7628bfcc4e20bbd3f5dc334338aa58" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::Utils::interp2d_collection::x1_vec</definition>
         <argsstring></argsstring>
-        <name>splines</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::splines</qualifiedname>
+        <name>x1_vec</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x1_vec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="94" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="94" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="184" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="184" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a3f4cb937e414100ff43370b44174c802" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; gsl_interp_accel * &gt;</type>
-        <definition>std::vector&lt;gsl_interp_accel*&gt; Gambit::Utils::interp2d_collection::x_accels</definition>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1aef86560f501d1da8559eb1435bc91b11" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::Utils::interp2d_collection::x2_vec</definition>
         <argsstring></argsstring>
-        <name>x_accels</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::x_accels</qualifiedname>
+        <name>x2_vec</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x2_vec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="95" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="95" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="185" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="185" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a2160d42290086d5b17eef9d6da825286" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; gsl_interp_accel * &gt;</type>
-        <definition>std::vector&lt;gsl_interp_accel*&gt; Gambit::Utils::interp2d_collection::y_accels</definition>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1ae38d53913c13239a6638a18a0984b8bf" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::Utils::interp2d_collection::x1_vec_unsorted</definition>
         <argsstring></argsstring>
-        <name>y_accels</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::y_accels</qualifiedname>
+        <name>x1_vec_unsorted</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x1_vec_unsorted</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="96" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="96" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="186" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="186" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a9f12e08c80a88f7fcf0adfe6b35ec626" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a7bfdc05372af84eb11fda79c4595ff52" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::Utils::interp2d_collection::x2_vec_unsorted</definition>
+        <argsstring></argsstring>
+        <name>x2_vec_unsorted</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x2_vec_unsorted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="187" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a8f1fb2f5fbea77ec58ffd6ad9aa4f34f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; Gambit::Utils::interp2d_collection::interp_data</definition>
+        <argsstring></argsstring>
+        <name>interp_data</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::interp_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="189" column="21" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a86953ef1aedcf21e084da2299b72f3b0" prot="public" static="no" mutable="no">
         <type>double</type>
-        <definition>double Gambit::Utils::interp2d_collection::x_min</definition>
+        <definition>double Gambit::Utils::interp2d_collection::x1_min</definition>
         <argsstring></argsstring>
-        <name>x_min</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::x_min</qualifiedname>
+        <name>x1_min</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x1_min</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="98" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="98" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="191" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="191" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a7e12bc9c4b44d2747b77edb22bb71147" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a5cc1876f36e50bbaf7962354ed42e0d2" prot="public" static="no" mutable="no">
         <type>double</type>
-        <definition>double Gambit::Utils::interp2d_collection::x_max</definition>
+        <definition>double Gambit::Utils::interp2d_collection::x1_max</definition>
         <argsstring></argsstring>
-        <name>x_max</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::x_max</qualifiedname>
+        <name>x1_max</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x1_max</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="99" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="99" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="192" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="192" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1add26632597195fc2df40444ee771ee94" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a5d5edc147c27fca295fabeec8b8b6bda" prot="public" static="no" mutable="no">
         <type>double</type>
-        <definition>double Gambit::Utils::interp2d_collection::y_min</definition>
+        <definition>double Gambit::Utils::interp2d_collection::x2_min</definition>
         <argsstring></argsstring>
-        <name>y_min</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::y_min</qualifiedname>
+        <name>x2_min</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x2_min</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="100" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="100" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="193" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="193" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1add242f99c3f7c5eac8ad4ba6c68c9c63" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1a068c8dbdb7f84a1e0fd1d4241307ed01" prot="public" static="no" mutable="no">
         <type>double</type>
-        <definition>double Gambit::Utils::interp2d_collection::y_max</definition>
+        <definition>double Gambit::Utils::interp2d_collection::x2_max</definition>
         <argsstring></argsstring>
-        <name>y_max</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::y_max</qualifiedname>
+        <name>x2_max</name>
+        <qualifiedname>Gambit::Utils::interp2d_collection::x2_max</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="101" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="101" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="194" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="194" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Utils_1_1interp2d__collection_1ae636678852231162997c8e5b73835284" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -184,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="103" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="103" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="196" column="16" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="196" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -212,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="109" column="9" bodyfile="Utils/src/interp_collection.cpp" bodystart="147" bodyend="224"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="201" column="9" bodyfile="Utils/src/interp_collection.cpp" bodystart="407" bodyend="474"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Utils_1_1interp2d__collection_1af5eefebbb00dd3440236a4e83e7ef128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -226,21 +254,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="112" column="9" bodyfile="Utils/src/interp_collection.cpp" bodystart="227" bodyend="235"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="204" column="9" bodyfile="Utils/src/interp_collection.cpp" bodystart="477" bodyend="477"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Utils_1_1interp2d__collection_1a32390e60ea4f34b8e6681af598e4779d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1interp2d__collection_1af73bae07d723c3dcd51c0d7b3feff145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
         <definition>double Gambit::Utils::interp2d_collection::eval</definition>
-        <argsstring>(double, double, size_t) const</argsstring>
+        <argsstring>(double, double, size_t)</argsstring>
         <name>eval</name>
         <qualifiedname>Gambit::Utils::interp2d_collection::eval</qualifiedname>
         <param>
           <type>double</type>
-          <defname>x</defname>
+          <defname>x1</defname>
         </param>
         <param>
           <type>double</type>
-          <defname>y</defname>
+          <defname>x2</defname>
         </param>
         <param>
           <type>size_t</type>
@@ -252,43 +280,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="115" column="16" bodyfile="Utils/src/interp_collection.cpp" bodystart="238" bodyend="241"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="207" column="16" bodyfile="Utils/src/interp_collection.cpp" bodystart="480" bodyend="581"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Utils_1_1interp2d__collection_1ad542f1d6ab62aa66ec4447b3fe56f021" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double Gambit::Utils::interp2d_collection::eval</definition>
-        <argsstring>(double, double) const</argsstring>
-        <name>eval</name>
-        <qualifiedname>Gambit::Utils::interp2d_collection::eval</qualifiedname>
-        <param>
-          <type>double</type>
-          <defname>x</defname>
-        </param>
-        <param>
-          <type>double</type>
-          <defname>y</defname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="118" column="16" bodyfile="Utils/src/interp_collection.cpp" bodystart="244" bodyend="251"/>
-      </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Utils_1_1interp2d__collection_1aeafeaeeb929a99821748687441a237ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1interp2d__collection_1a1364ff98839c876fb66b63bd3ef9eaf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool Gambit::Utils::interp2d_collection::is_inside_range</definition>
-        <argsstring>(double, double) const</argsstring>
+        <argsstring>(double, double)</argsstring>
         <name>is_inside_range</name>
         <qualifiedname>Gambit::Utils::interp2d_collection::is_inside_range</qualifiedname>
         <param>
           <type>double</type>
-          <defname>x</defname>
+          <defname>x1</defname>
         </param>
         <param>
           <type>double</type>
-          <defname>y</defname>
+          <defname>x2</defname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -296,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="121" column="14" bodyfile="Utils/src/interp_collection.cpp" bodystart="254" bodyend="257"/>
+        <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="210" column="14" bodyfile="Utils/src/interp_collection.cpp" bodystart="584" bodyend="587"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -305,7 +311,7 @@
 <para>A class for holding a collection of 2D interpolators, created from reading a tabulated ascii file.<itemizedlist>
 <listitem><para>The first two columns are taken to be the x and y grid points.</para>
 </listitem><listitem><para>For each remaining column a 2D interpolation function f(x,y) is created</para>
-</listitem><listitem><para>Note that GLS assumes the points are ordered according to increasing x (first) and y (second) values, i.e. an ordering like (x0,y0), (x1,y0), (x2,y0), ... (x0,y1), (x1,y1), (x2,y1), ... </para>
+</listitem><listitem><para>This is a simple linear interpolator that does not use GSL </para>
 </listitem></itemizedlist>
 </para>
     </detaileddescription>
@@ -316,33 +322,34 @@
         <childnode refid="2" relation="usage">
           <edgelabel>collection_name</edgelabel>
           <edgelabel>file_name</edgelabel>
-          <edgelabel>x_name</edgelabel>
-          <edgelabel>y_name</edgelabel>
+          <edgelabel>x1_name</edgelabel>
+          <edgelabel>x2_name</edgelabel>
         </childnode>
       </node>
       <node id="2">
         <label>string</label>
       </node>
     </collaborationgraph>
-    <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="82" column="5" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="83" bodyend="123"/>
+    <location file="Utils/include/gambit/Utils/interp_collection.hpp" line="173" column="5" bodyfile="Utils/include/gambit/Utils/interp_collection.hpp" bodystart="174" bodyend="212"/>
     <listofallmembers>
       <member refid="classGambit_1_1Utils_1_1interp2d__collection_1aa7a7590e7fd98ad45a91dcdbf3b2f8f4" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>collection_name</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a32390e60ea4f34b8e6681af598e4779d" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>eval</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1ad542f1d6ab62aa66ec4447b3fe56f021" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>eval</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1af73bae07d723c3dcd51c0d7b3feff145" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>eval</name></member>
       <member refid="classGambit_1_1Utils_1_1interp2d__collection_1afba2272dd818481ccad82488e48ada4b" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>file_name</name></member>
       <member refid="classGambit_1_1Utils_1_1interp2d__collection_1ae961b378f5f369a1ca271b0d68f8c7b1" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>interp2d_collection</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a8f1fb2f5fbea77ec58ffd6ad9aa4f34f" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>interp_data</name></member>
       <member refid="classGambit_1_1Utils_1_1interp2d__collection_1aae1635efcdff175a7953de22a9ca8fe5" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>interpolator_names</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1aeafeaeeb929a99821748687441a237ef" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>is_inside_range</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a1364ff98839c876fb66b63bd3ef9eaf1" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>is_inside_range</name></member>
       <member refid="classGambit_1_1Utils_1_1interp2d__collection_1ae636678852231162997c8e5b73835284" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>n_interpolators</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a53f192b821bd3ac7d94881980f055a90" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>splines</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a3f4cb937e414100ff43370b44174c802" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x_accels</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a7e12bc9c4b44d2747b77edb22bb71147" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x_max</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a9f12e08c80a88f7fcf0adfe6b35ec626" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x_min</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1af65de8e98cf417acfe40189526627595" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x_name</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a2160d42290086d5b17eef9d6da825286" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>y_accels</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1add242f99c3f7c5eac8ad4ba6c68c9c63" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>y_max</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1add26632597195fc2df40444ee771ee94" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>y_min</name></member>
-      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a3a20a120156389a26160893845c38a53" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>y_name</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a5cc1876f36e50bbaf7962354ed42e0d2" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x1_max</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a86953ef1aedcf21e084da2299b72f3b0" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x1_min</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1ac9e0e74eb7429d40469ed44e95a6b4f8" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x1_name</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a8c7628bfcc4e20bbd3f5dc334338aa58" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x1_vec</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1ae38d53913c13239a6638a18a0984b8bf" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x1_vec_unsorted</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a068c8dbdb7f84a1e0fd1d4241307ed01" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x2_max</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a5d5edc147c27fca295fabeec8b8b6bda" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x2_min</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a3da5a5435c5c7e82024d01566ca150fe" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x2_name</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1aef86560f501d1da8559eb1435bc91b11" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x2_vec</name></member>
+      <member refid="classGambit_1_1Utils_1_1interp2d__collection_1a7bfdc05372af84eb11fda79c4595ff52" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>x2_vec_unsorted</name></member>
       <member refid="classGambit_1_1Utils_1_1interp2d__collection_1af5eefebbb00dd3440236a4e83e7ef128" prot="public" virt="non-virtual"><scope>Gambit::Utils::interp2d_collection</scope><name>~interp2d_collection</name></member>
     </listofallmembers>
   </compounddef>

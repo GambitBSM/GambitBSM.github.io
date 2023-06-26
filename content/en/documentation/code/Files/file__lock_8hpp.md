@@ -103,6 +103,7 @@ namespace Gambit
       class FileLock
       {
         private:
+
           /// Name for the managed lock file
           const std::string my_lock_fname;
 
@@ -115,9 +116,15 @@ namespace Gambit
           /// Bool to indicate that hard errors should be thrown rather than gambit errors (e.g. for use in loggers)
           bool hard_errors;
 
+          /// Bool to indicate if the file has the ability to be exhaustible
+          bool exhaustible;
+
+          /// Bool to indicate whether the lock has been exhausted or not
+          bool exhausted_lock;
+
         public:
           /// Constructor
-          FileLock(const std::string& fname, const bool harderrs=false);
+          FileLock(const std::string& fname, const bool is_exhaustible=false, const bool harderrs=false);
 
           /// Destructor
           /// Closing the file descriptor will automatically release any lock we might have
@@ -131,6 +138,9 @@ namespace Gambit
 
           /// Getter for lockfile name
           const std::string& get_filename() const;
+
+          /// Check if lock is exhausted
+          bool exhausted();
       };
 
 
@@ -146,7 +156,10 @@ namespace Gambit
 
         public:
           /// Constructor
-          ProcessLock(const std::string& fname, const bool harderrs=false);
+          ProcessLock(const std::string& fname, const bool is_exhaustible=true, const bool harderrs=false);
+
+          /// Clean up existing process locks
+          static void clean_locks();
       };
 
    }
@@ -158,4 +171,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

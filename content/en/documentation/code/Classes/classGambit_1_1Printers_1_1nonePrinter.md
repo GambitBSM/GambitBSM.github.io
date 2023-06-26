@@ -22,7 +22,9 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | virtual void | **[finalise](/documentation/code/classes/classgambit_1_1printers_1_1noneprinter/#function-finalise)**(bool abnormal)<br>Signal printer that scan is finished, and final output needs to be performed.  |
 | virtual void | **[flush](/documentation/code/classes/classgambit_1_1printers_1_1noneprinter/#function-flush)**() |
 | virtual [Options](/documentation/code/classes/classgambit_1_1options/) | **[resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1noneprinter/#function-resume-reader-options)**() |
+| virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1noneprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) ) |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1noneprinter/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong)<br>Print functions.  |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1noneprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
 | | **[nonePrinter](/documentation/code/classes/classgambit_1_1printers_1_1noneprinter/#function-noneprinter)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & options, [BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) *const primary) |
 
 ## Additional inherited members
@@ -60,6 +62,7 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | void | **[enable](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-enable)**() |
 | template <typename T \> <br>void | **[print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const int vertexID, const uint rank, const ulong pointID) |
 | template <typename T \> <br>void | **[print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID) |
+| void | **[print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) datasets) |
 
 **Protected Attributes inherited from [Gambit::Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/)**
 
@@ -138,6 +141,18 @@ inline virtual Options resume_reader_options()
 **Reimplements**: [Gambit::Printers::BasePrinter::resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-resume-reader-options)
 
 
+### function _print_metadata
+
+```
+inline virtual void _print_metadata(
+    map_str_str 
+)
+```
+
+
+**Reimplements**: [Gambit::Printers::BaseBasePrinter::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)
+
+
 ### function _print
 
 ```
@@ -148,6 +163,20 @@ inline void _print(
     const int vertexID,
     const uint,
     const ulong
+)
+```
+
+Print functions. 
+
+### function _print
+
+```
+template <typename T >
+inline void _print(
+    T const & in,
+    const std::string & label,
+    const uint rank,
+    const ulong pointID
 )
 ```
 
@@ -165,4 +194,4 @@ inline nonePrinter(
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

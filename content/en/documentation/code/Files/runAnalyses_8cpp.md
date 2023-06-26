@@ -45,7 +45,8 @@ description: "[No description available]"
   * 2019 Jan, Feb
   * 2017 March 
   * 2018 Jan 
-  * 2018 May
+  * 2018 May 
+  * 2021 Oct
 
 
 Accumulator functions for ColliderBit analyses.
@@ -128,6 +129,7 @@ Run all analyses for EXPERIMENT.
 ///  \date   2017 March
 ///  \date   2018 Jan
 ///  \date   2018 May
+///  \date   2021 Oct
 ///
 ///  *********************************************
 
@@ -185,26 +187,17 @@ namespace Gambit
         return;
       }
 
-      // #ifdef COLLIDERBIT_DEBUG
-      // if (iteration == END_SUBPROCESS)
-      // {
-      //   for (auto& analysis_pointer_pair : Container.get_current_analyses_map())
-      //   {
-      //     for (auto& sr : analysis_pointer_pair.second->get_results().srdata)
-      //     {
-      //       cout << DEBUG_PREFIX << "run"+detname+"Analyses: signal region " << sr.sr_label << ", n_signal = " << sr.n_signal << endl;
-      //     }
-      //   }
-      // }
-      // #endif
-
       if (iteration == COLLIDER_FINALIZE)
       {
+        #ifdef COLLIDERBIT_DEBUG
+          cout << DEBUG_PREFIX << "run"+detname+"Analyses: Container.get_current_collider() = " << Container.get_current_collider() << endl;
+        #endif
+
         // The final iteration for this collider: collect results
         for (auto& analysis_pointer_pair : Container.get_current_analyses_map())
         {
           #ifdef COLLIDERBIT_DEBUG
-            cout << DEBUG_PREFIX << "run"+detname+"Analyses: Collecting result from " << analysis_pointer_pair.first << endl;
+            cout << DEBUG_PREFIX << "run"+detname+"Analyses: Collecting result from " << analysis_pointer_pair.first << ", " << analysis_pointer_pair.second << endl;
           #endif
 
           str warning;
@@ -221,7 +214,11 @@ namespace Gambit
       {
         // Final iteration. Just return.
         #ifdef COLLIDERBIT_DEBUG
-          cout << DEBUG_PREFIX << "run"+detname+"Analyses: 'result' contains " << result.size() << " results." << endl;
+          cout << DEBUG_PREFIX << "run"+detname+"Analyses: 'result' contains " << result.size() << " results:" << endl;
+          for (const AnalysisData* a: result)
+          {
+            cout << DEBUG_PREFIX << "run"+detname+"Analyses: - " << a->analysis_name << endl;            
+          }
         #endif
         return;
       }
@@ -254,4 +251,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

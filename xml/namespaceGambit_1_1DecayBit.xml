@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="81" column="12" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="81" bodyend="81"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="88" column="12" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="88" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a84efaf405c3a5e51ac411ccd0d33179a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::complex&lt; double &gt;</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="84" column="18" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="84" bodyend="88"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="91" column="18" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="91" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1afdeb0424b6f26c145dce2fb24947c8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="92" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="92" bodyend="111"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="99" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="99" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a5ec858ee92831e182ad7c453dc7cbd09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="114" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="114" bodyend="142"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="121" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="121" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a6599d85345afe17c9a7453ee86676aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -154,7 +154,34 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="145" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="145" bodyend="258"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="152" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="152" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a9fa44e0d5be48e4d006a55cda91c81e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::combine_decay_table_entries</definition>
+        <argsstring>(DecayTable::Entry &amp;entry1, DecayTable::Entry &amp;entry2, DecayTable::Entry &amp;result)</argsstring>
+        <name>combine_decay_table_entries</name>
+        <qualifiedname>Gambit::DecayBit::combine_decay_table_entries</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>entry1</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>entry2</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Function combining two Decaytable entries with different decay channels of the same particle into a single entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="268" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="268" bodyend="310"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -176,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="270" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="270" bodyend="281"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="323" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="323" bodyend="334"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a61f323a09134323bb3a8101fe9e92761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -191,11 +218,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>SM decays: Z Reference: 2017 PDG </para>
+<para>SM decays: Z Reference: 2019 PDG </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="285" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="285" bodyend="313"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="338" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="338" bodyend="374"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aef925caa3054e8c3f03964caa71849f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -214,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="317" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="317" bodyend="325"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="378" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="378" bodyend="386"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aee5a791dbc32145b1911714099bf1e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -233,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="329" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="329" bodyend="337"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="390" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="390" bodyend="398"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ad93a6a154878624624c3d5c3f416c3af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -252,7 +279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="341" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="341" bodyend="356"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="402" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="402" bodyend="417"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1acffcb31263e66a812ce155068e5fbce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -271,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="360" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="360" bodyend="371"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="421" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="421" bodyend="432"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1af5e311b952396bd917311bf6c6e083b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -290,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="375" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="375" bodyend="384"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="436" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="436" bodyend="445"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ac20043aaf2aac1d7e7b086ca5b837af8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -309,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="388" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="388" bodyend="395"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="449" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="449" bodyend="456"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ac8bbc0fd3f14acd08440b17b0a48f5dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -328,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="399" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="399" bodyend="406"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="460" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="460" bodyend="467"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a7f5ca6cf70f62986d0b56019047758cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -347,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="410" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="410" bodyend="417"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="471" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="471" bodyend="478"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a44b3414a43cd49deb46b98ee180b5fb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -366,7 +393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="421" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="421" bodyend="428"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="482" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="482" bodyend="489"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1abdb2e85ab59e23e2d9e79c96dc8d1fb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -385,7 +412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="432" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="432" bodyend="439"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="493" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="493" bodyend="500"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a9a1b33a64fb654a723241ddad7b4f8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -404,7 +431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="443" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="443" bodyend="443"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="504" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="504" bodyend="504"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1afb4f5f4f531366c7cb58491880a7f883" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -422,7 +449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="444" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="444" bodyend="444"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="505" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="505" bodyend="505"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a213696bc48de9375e1dee0c96bd93ef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -440,7 +467,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="445" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="445" bodyend="445"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="506" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="506" bodyend="506"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1afe1d073d3d1160f5a4891c65b514328e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -458,7 +485,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="446" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="446" bodyend="446"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="507" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="507" bodyend="507"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a34edf556712d18e77db2b38954969c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -476,7 +503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="447" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="447" bodyend="447"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="508" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="508" bodyend="508"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a4521c722ec3598b6f23596f05ade8281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -494,7 +521,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="448" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="448" bodyend="448"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="509" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="509" bodyend="509"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -516,7 +543,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="460" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="460" bodyend="475"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="521" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="521" bodyend="536"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a868707b3be364612ddf7fbdb4893e75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -535,7 +562,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="477" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="477" bodyend="484"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="538" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="538" bodyend="545"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a6f9dac27fc79b4742e63aeb3d782c7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -554,7 +581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="486" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="486" bodyend="491"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="547" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="547" bodyend="552"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a58452095356f6d947bf8a15cf17cc307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -573,7 +600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="494" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="494" bodyend="501"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="555" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="555" bodyend="562"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a421740dbf56592d5b03fbcac4a9ac5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -592,7 +619,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="503" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="503" bodyend="510"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="564" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="564" bodyend="571"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aa41f5d4c8d893d506d614393df4ea343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -611,7 +638,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="512" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="512" bodyend="517"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="573" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="573" bodyend="578"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -632,7 +659,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2811" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2811" bodyend="2811"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3660" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3660" bodyend="3660"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1af0c9494138c705e6ac8ad3f0b5dd02b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -650,7 +677,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2812" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2812" bodyend="2812"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3661" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3661" bodyend="3661"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a43f4d088180c9813d800854bb06c4e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -668,7 +695,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2813" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2813" bodyend="2813"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3662" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3662" bodyend="3662"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a06b1114aa1fd831d5ff535a511c95985" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -686,7 +713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2814" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2814" bodyend="2814"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3663" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3663" bodyend="3663"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a2d80d16fd9a1f4c93c36472ea8f9a23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -704,7 +731,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2815" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2815" bodyend="2815"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3664" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3664" bodyend="3664"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1af34901c87f42c86284db5390cb108d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -722,7 +749,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2816" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2816" bodyend="2816"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3665" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3665" bodyend="3665"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a36148e2e55119db8e291e7b86cf5c51e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -740,7 +767,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2817" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2817" bodyend="2817"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3666" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3666" bodyend="3666"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ae857d2b9fd56b7bc5f27a6623502aaa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -758,7 +785,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2818" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2818" bodyend="2818"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3667" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3667" bodyend="3667"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1af5cb0c53da333b1183db4d9a53219ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -776,7 +803,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2819" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2819" bodyend="2819"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3668" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3668" bodyend="3668"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a512a0430546ab416f039688af0eb153b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -794,7 +821,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2820" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2820" bodyend="2820"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3669" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3669" bodyend="3669"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a7212504210638e200fe5c94026538757" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -812,7 +839,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2821" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2821" bodyend="2821"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3670" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3670" bodyend="3670"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a6fbd942a22c540d7b2c4f63d0524f263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -830,7 +857,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2822" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2822" bodyend="2822"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3671" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3671" bodyend="3671"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a81ad9dbb8676a34b32086b5cdcfe7c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -848,7 +875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2823" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2823" bodyend="2823"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3672" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3672" bodyend="3672"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aa85d2966199099a40c3ee88fd823cc64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -866,7 +893,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2824" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2824" bodyend="2824"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3673" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3673" bodyend="3673"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aef5bbad00504bd3bd0c37d4f37434b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -884,7 +911,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2825" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2825" bodyend="2825"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3674" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3674" bodyend="3674"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a84daf914f877eedb9554509daadbeef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -902,7 +929,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2826" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2826" bodyend="2826"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3675" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3675" bodyend="3675"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a43657ea5a67c8d45dba90d93da63478f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -920,7 +947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2827" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2827" bodyend="2827"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3676" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3676" bodyend="3676"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a36a43cb365fabf21b34841751ac8ec55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -938,7 +965,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2828" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2828" bodyend="2828"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3677" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3677" bodyend="3677"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a35bd6d591d976ab18e33cc37639fe284" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -956,7 +983,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2829" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2829" bodyend="2829"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3678" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3678" bodyend="3678"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a5d8dc5638ca3bc64a4313cca2e7ae40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -974,7 +1001,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2830" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2830" bodyend="2830"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3679" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3679" bodyend="3679"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a2b8b795bd8ea9a9d4b1ec6166b986127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -992,7 +1019,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2831" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2831" bodyend="2831"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3680" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3680" bodyend="3680"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1acf7eb2559eeab2f79d36ac20a9ea1e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1010,7 +1037,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2832" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2832" bodyend="2832"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3681" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3681" bodyend="3681"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a9f5c20963c5627af6d8c5df19ba5699c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1028,7 +1055,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2833" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2833" bodyend="2833"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3682" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3682" bodyend="3682"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a4546b23d73fdf3375d5b6dfdca90ce06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1046,7 +1073,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2834" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2834" bodyend="2834"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3683" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3683" bodyend="3683"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -1087,7 +1114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="522" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="522" bodyend="525"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="583" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="583" bodyend="586"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a84984b90f2826c497e444b4a8396f675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1106,7 +1133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="532" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="532" bodyend="544"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="593" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="593" bodyend="605"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ab32cfae818189124ec3e8f695b95c5bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1125,7 +1152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="547" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="547" bodyend="552"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="608" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="608" bodyend="613"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a5375317255f3b00201f9fa8ceb72093d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1144,7 +1171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="555" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="555" bodyend="560"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="616" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="616" bodyend="621"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aa6858d1425e255d321ada2d8ae547ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1163,7 +1190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="563" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="563" bodyend="568"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="624" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="624" bodyend="629"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a62668ed083866eb557516ebf0ca7d894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1182,7 +1209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="571" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="571" bodyend="659"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="632" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="632" bodyend="720"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a5220d2fad3dc1602b055d8a499d18c3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1201,7 +1228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="662" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="662" bodyend="728"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="723" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="723" bodyend="789"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ab812be2d4d3952dde9d1afad7522afe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1220,7 +1247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="731" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="731" bodyend="799"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="792" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="792" bodyend="860"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a501e638fc38e167eb9f94c872ffa6c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1239,7 +1266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="802" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="802" bodyend="850"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="863" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="863" bodyend="911"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ad46b880b0c6bbbe37a2bbfaf527e64fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1258,7 +1285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="853" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="853" bodyend="891"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="914" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="914" bodyend="952"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a436e026b73599e13111bdc210f79c38e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1277,7 +1304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="894" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="894" bodyend="973"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="955" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="955" bodyend="1034"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a71653c78ef43a128bdf61ea3b07ad6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1296,7 +1323,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="976" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="976" bodyend="1051"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1037" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1037" bodyend="1112"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a1fd626107054bf7c1bc9ac6d51f8ca01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1315,7 +1342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1054" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1054" bodyend="1124"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1115" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1115" bodyend="1185"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a9a116dbd683b32fade8c3fd9600be340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1334,7 +1361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1127" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1127" bodyend="1172"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1188" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1188" bodyend="1233"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1afaf32e4e9d332bdafcb6f6815cc5b790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1353,7 +1380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1175" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1175" bodyend="1237"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1236" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1236" bodyend="1298"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a3a4e5847f5a3fe206ebe21d18e379960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1372,7 +1399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1240" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1240" bodyend="1257"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1301" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1301" bodyend="1318"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a2dda401c8e738d4a0acf5f16fe9e43c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1391,7 +1418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1260" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1260" bodyend="1274"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1321" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1321" bodyend="1335"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a7dfb3e67230af58bebd6dbc4f4a75227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1410,7 +1437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1277" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1277" bodyend="1291"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1338" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1338" bodyend="1352"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aac9e1152041271e453a3343511839726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1429,7 +1456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1294" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1294" bodyend="1308"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1355" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1355" bodyend="1369"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a85f6f626ed34d66112d2ad972c54c098" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1448,7 +1475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1311" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1311" bodyend="1325"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1372" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1372" bodyend="1386"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a34d9c26847439557664e70d0d94a3b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1467,7 +1494,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1328" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1328" bodyend="1342"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1389" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1389" bodyend="1403"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1adac2c8dd2387af770a0f5c15c8db3089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1486,7 +1513,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1345" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1345" bodyend="1359"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1406" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1406" bodyend="1420"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a038af6dc8ad45feb915b38fbc2181aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1505,7 +1532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1362" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1362" bodyend="1376"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1423" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1423" bodyend="1437"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1acde36be917718aa6918e45c0747531c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1524,7 +1551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1379" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1379" bodyend="1392"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1440" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1440" bodyend="1453"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a1c441eca5b12578c2bbf64b5eb25a541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1543,7 +1570,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1395" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1395" bodyend="1408"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1456" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1456" bodyend="1469"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1abaec2f9b89e52b37c77e8d275c851dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1562,7 +1589,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1411" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1411" bodyend="1424"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1472" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1472" bodyend="1485"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ab246240ea5149c65fef7db9387b4bde9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1581,7 +1608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1427" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1427" bodyend="1440"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1488" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1488" bodyend="1501"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a446a96b731ac60546f10741469c48acd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1600,7 +1627,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1443" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1443" bodyend="1457"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1504" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1504" bodyend="1518"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a81a85fe4b324b9da7aa91301dba22758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1619,7 +1646,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1460" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1460" bodyend="1480"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1521" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1521" bodyend="1541"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aa73bfccc76e1c9123fc7300e9b8a6baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1638,7 +1665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1483" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1483" bodyend="1507"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1544" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1544" bodyend="1568"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a52ab25430dc0d668b065742ae11a91fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1657,7 +1684,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1510" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1510" bodyend="1523"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1571" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1571" bodyend="1584"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a5f34ec6aee439919a92fcb968c20824e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1676,7 +1703,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1526" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1526" bodyend="1539"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1587" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1587" bodyend="1600"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ae9d95ceb57b3582472293e8acc3cb842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1695,7 +1722,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1543" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1543" bodyend="1564"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1604" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1604" bodyend="1625"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a9cfd6b45302bed000d7c514f609b33db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1708,13 +1735,89 @@
           <declname>result</declname>
         </param>
         <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: chargino_plus_1 without decays to gravitinos (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings) Aggregator function providing chargino_plus_1_decay_rates for MSSM models without gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1629" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1629" bodyend="1636"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1af9299104af29a6f390d08cd504aaa201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::chargino_plus_2_decays</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>chargino_plus_2_decays</name>
+        <qualifiedname>Gambit::DecayBit::chargino_plus_2_decays</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: chargino_plus_2 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing chargino_plus_2_decay_rates for MSSM models without gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1640" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1640" bodyend="1647"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1aa5157470e07222c4b4f9b692faa0e423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::chargino_plus_1_decays_all</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>chargino_plus_1_decays_all</name>
+        <qualifiedname>Gambit::DecayBit::chargino_plus_1_decays_all</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: chargino_plus_1 incl. decays to gravitinos (Uses SUSY-HIT results and DecayBit calculations for small mass splittings and decays to gravitinos) Aggregator function providing chargino_plus_1_decay_rates for MSSM models with gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1651" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1651" bodyend="1666"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a216d505d44740e4027502524a5fe8be0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::chargino_plus_2_decays_all</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>chargino_plus_2_decays_all</name>
+        <qualifiedname>Gambit::DecayBit::chargino_plus_2_decays_all</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: chargino_plus_2 incl. decays to gravitinos (Uses SUSY-HIT results and DecayBit calculations for decays to gravitinos) Aggregator function providing chargino_plus_2_decay_rates for MSSM models with gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1670" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1670" bodyend="1684"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a1e5cecee6ff57d9d964fbd620e98b843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::chargino_plus_1_decays_SH_or_smallsplit</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>chargino_plus_1_decays_SH_or_smallsplit</name>
+        <qualifiedname>Gambit::DecayBit::chargino_plus_1_decays_SH_or_smallsplit</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
 <para>MSSM decays: chargino_plus_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1567" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1567" bodyend="1581"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1687" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1687" bodyend="1701"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a0a76ea694ac960af1b8c2c299f312a58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1733,14 +1836,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1584" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1584" bodyend="1655"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1704" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1704" bodyend="1771"/>
       </memberdef>
-      <memberdef kind="function" id="DecayBit_8cpp_1af9299104af29a6f390d08cd504aaa201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="DecayBit_8cpp_1a11fe298bd5917bbb9db49b9359a7b44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void Gambit::DecayBit::chargino_plus_2_decays</definition>
+        <definition>void Gambit::DecayBit::chargino_plus_2_decays_SH</definition>
         <argsstring>(DecayTable::Entry &amp;result)</argsstring>
-        <name>chargino_plus_2_decays</name>
-        <qualifiedname>Gambit::DecayBit::chargino_plus_2_decays</qualifiedname>
+        <name>chargino_plus_2_decays_SH</name>
+        <qualifiedname>Gambit::DecayBit::chargino_plus_2_decays_SH</qualifiedname>
         <param>
           <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
           <declname>result</declname>
@@ -1752,7 +1855,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1658" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1658" bodyend="1745"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1774" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1774" bodyend="1857"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a3a668f30232926c05c2a4ac8d5196bc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1765,13 +1868,13 @@
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>SUSY-HIT MSSM decays: neutralino_1. </para>
         </briefdescription>
         <detaileddescription>
+<para>MSSM decays: neutralino_1 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing neutralino_1_decay_rates for MSSM models without gravitinos </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1748" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1748" bodyend="1849"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1861" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1861" bodyend="1868"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ac59a7bdbd6b31253e01562b48cae573f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1784,13 +1887,13 @@
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>SUSY-HIT MSSM decays: neutralino_2. </para>
         </briefdescription>
         <detaileddescription>
+<para>MSSM decays: neutralino_2 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing neutralino_2_decay_rates for MSSM models without gravitinos </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1852" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1852" bodyend="1970"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1872" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1872" bodyend="1879"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a33d272568a9304ec56431c1317fdcaf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1803,13 +1906,13 @@
           <declname>result</declname>
         </param>
         <briefdescription>
-<para>SUSY-HIT MSSM decays: neutralino_3. </para>
         </briefdescription>
         <detaileddescription>
+<para>MSSM decays: neutralino_3 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing neutralino_3_decay_rates for MSSM models without gravitinos </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="1973" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1973" bodyend="2108"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="1883" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1883" bodyend="1890"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a5febe29ebf9f8349ea166c7252dc0c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1822,13 +1925,165 @@
           <declname>result</declname>
         </param>
         <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: neutralino_4 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing neutralino_4_decay_rates for MSSM models without gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1894" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1894" bodyend="1901"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1adcd1a92f4e4f3425ef81ac166d9ff07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_1_decays_all</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_1_decays_all</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_1_decays_all</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: neutralino_1 incl. decays to gravitinos (Uses SUSY-HIT results and dedicated DecayBit calculation for decays to gravitinos) Aggregator function providing neutralino_1_decay_rates for MSSM models with gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1905" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1905" bodyend="1919"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a40244f20676d85bb9f7e4a7aa634ca19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_2_decays_all</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_2_decays_all</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_2_decays_all</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: neutralino_2 incl. decays to gravitinos (Uses SUSY-HIT results and dedicated DecayBit calculation for decays to gravitinos) Aggregator function providing neutralino_2_decay_rates for MSSM models with gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1923" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1923" bodyend="1937"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a8f437c88741b202ba3cb2876d119e8a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_3_decays_all</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_3_decays_all</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_3_decays_all</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: neutralino_3 incl. decays to gravitinos (Uses SUSY-HIT results and dedicated DecayBit calculation for decays to gravitinos) Aggregator function providing neutralino_3_decay_rates for MSSM models with gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1941" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1941" bodyend="1955"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a0209d8d65f132ea0b6368a0658efb324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_4_decays_all</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_4_decays_all</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_4_decays_all</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: neutralino_4 incl. decays to gravitinos (Uses SUSY-HIT results and dedicated DecayBit calculation for decays to gravitinos) Aggregator function providing neutralino_4_decay_rates for MSSM models with gravitinos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1959" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1959" bodyend="1973"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1aa76b25a39c8036ef1e22b73dcc6d1fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_1_decays_SH</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_1_decays_SH</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_1_decays_SH</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>SUSY-HIT MSSM decays: neutralino_1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="1976" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="1976" bodyend="2067"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1ac97fc50f5a05a7df9b0aa2d5d23d50b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_2_decays_SH</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_2_decays_SH</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_2_decays_SH</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>SUSY-HIT MSSM decays: neutralino_2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="2070" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2070" bodyend="2188"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a9268a99355a27ed03c16824f8e425bab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_3_decays_SH</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_3_decays_SH</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_3_decays_SH</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>SUSY-HIT MSSM decays: neutralino_3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="2191" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2191" bodyend="2316"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a932f06a80948409330d8789ab7c356b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_4_decays_SH</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_4_decays_SH</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_4_decays_SH</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
 <para>SUSY-HIT MSSM decays: neutralino_4. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2111" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2111" bodyend="2263"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="2319" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2319" bodyend="2461"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1acd4913fb26f347f9145afda87bb8b021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1847,7 +2102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2268" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2268" bodyend="2585"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="2466" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2466" bodyend="2780"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aca25373ffb657301513762f102cf9d3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1866,7 +2121,176 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2590" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2590" bodyend="2807"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="2785" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2785" bodyend="3000"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a5845b14aeb6468bd9c8ae912642f3c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref></type>
+        <definition>DecayTable::Entry Gambit::DecayBit::neutralino_decays_gravitino</definition>
+        <argsstring>(int n_Neu, const Spectrum &amp;spec, const DecayTable::Entry &amp;Z_decays)</argsstring>
+        <name>neutralino_decays_gravitino</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_decays_gravitino</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n_Neu</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>Z_decays</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: neutralino decays to gravitinos. Using results from hep-ph/0404231v2 and 0908.3399. Includes 3-body decays via the Z boson to gravitinos and SM fermion pairs, for all of the latter. Using results from <ulink url="http://www-library.desy.de/preparch/desy/thesis/desy-thesis-09-016.pdf">http://www-library.desy.de/preparch/desy/thesis/desy-thesis-09-016.pdf</ulink>. Complete analytic formulas, not just the light-gravitino limit. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Neutralino three-body decays to gravitinos and fermion pairs, for all of the latter. Using results from <ulink url="http://www-library.desy.de/preparch/desy/thesis/desy-thesis-09-016.pdf">http://www-library.desy.de/preparch/desy/thesis/desy-thesis-09-016.pdf</ulink>. Complete analytic formulas, not just the light-gravitino limit.</para>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3008" column="23" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3008" bodyend="3384"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a26276160b8623e3731d440aff4551834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_1_decays_gravitino</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_1_decays_gravitino</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_1_decays_gravitino</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>MSSM decays: neutralino_1 decays to gravitinos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3387" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3387" bodyend="3396"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a02167a0f7a1941efedb167e09d349271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_2_decays_gravitino</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_2_decays_gravitino</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_2_decays_gravitino</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>MSSM decays: neutralino_2 decays to gravitinos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3399" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3399" bodyend="3408"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a05cde26ebb2239c0b801b84f3e9d9f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_3_decays_gravitino</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_3_decays_gravitino</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_3_decays_gravitino</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>MSSM decays: neutralino_3 decays to gravitinos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3411" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3411" bodyend="3420"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a32962061d69c8a84b2cba2a949b965b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::neutralino_4_decays_gravitino</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>neutralino_4_decays_gravitino</name>
+        <qualifiedname>Gambit::DecayBit::neutralino_4_decays_gravitino</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>MSSM decays: neutralino_4 decays to gravitinos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3423" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3423" bodyend="3432"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a289291850411371c0b1464ff1833dcb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref></type>
+        <definition>DecayTable::Entry Gambit::DecayBit::chargino_decays_gravitino</definition>
+        <argsstring>(int n_Cha, const Spectrum &amp;spec, const DecayTable::Entry &amp;W_decays)</argsstring>
+        <name>chargino_decays_gravitino</name>
+        <qualifiedname>Gambit::DecayBit::chargino_decays_gravitino</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n_Cha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>W_decays</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MSSM decays: chargino decays to gravitinos. Using results from hep-ph/9605398. The decay width formulas are valid in the light-gravitino limit. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3437" column="23" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3437" bodyend="3631"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a73c7a4d74457d84674d55cfd888d83ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::chargino_plus_1_decays_gravitino</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>chargino_plus_1_decays_gravitino</name>
+        <qualifiedname>Gambit::DecayBit::chargino_plus_1_decays_gravitino</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>MSSM decays: chargino_1 decay to gravitinos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3634" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3634" bodyend="3643"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1ace2870fcf2b28cc6af074b1009443214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::chargino_plus_2_decays_gravitino</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>chargino_plus_2_decays_gravitino</name>
+        <qualifiedname>Gambit::DecayBit::chargino_plus_2_decays_gravitino</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>MSSM decays: chargino_2 decay to gravitinos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3646" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3646" bodyend="3655"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1abb671f18b724cfada43b5af4b11e94a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1885,7 +2309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2841" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2841" bodyend="2888"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3690" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3690" bodyend="3737"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aeb2b3c265729f4895e2abd17a0c7cdf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1904,7 +2328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2893" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2893" bodyend="2930"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3742" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3742" bodyend="3779"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a88f96d4531c831a00acf076aabfd11b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1923,7 +2347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2935" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2935" bodyend="2973"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3784" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3784" bodyend="3822"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a213090194d9c6460747e0a789e125be0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1942,7 +2366,79 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="2978" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="2978" bodyend="3016"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="3827" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3827" bodyend="3865"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1af24e0ab0a9e763ec44a8ae56de8e8d58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::CH_DMsimpVectorMedDiracDM_Y1_decays</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>CH_DMsimpVectorMedDiracDM_Y1_decays</name>
+        <qualifiedname>Gambit::DecayBit::CH_DMsimpVectorMedDiracDM_Y1_decays</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3868" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3868" bodyend="3901"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1a351e768386bd6b72dd74215bbbfec6c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::CH_DMsimpVectorMedMajoranaDM_Y1_decays</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>CH_DMsimpVectorMedMajoranaDM_Y1_decays</name>
+        <qualifiedname>Gambit::DecayBit::CH_DMsimpVectorMedMajoranaDM_Y1_decays</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3904" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3904" bodyend="3938"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1acaa8f36b5c27ca4e38030d61d553c52c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::CH_DMsimpVectorMedScalarDM_Y1_decays</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>CH_DMsimpVectorMedScalarDM_Y1_decays</name>
+        <qualifiedname>Gambit::DecayBit::CH_DMsimpVectorMedScalarDM_Y1_decays</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3941" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3941" bodyend="3974"/>
+      </memberdef>
+      <memberdef kind="function" id="DecayBit_8cpp_1ae0a8621d457a2d6b629c5505f272a90e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::DecayBit::CH_DMsimpVectorMedVectorDM_Y1_decays</definition>
+        <argsstring>(DecayTable::Entry &amp;result)</argsstring>
+        <name>CH_DMsimpVectorMedVectorDM_Y1_decays</name>
+        <qualifiedname>Gambit::DecayBit::CH_DMsimpVectorMedVectorDM_Y1_decays</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1DecayTable_1_1Entry" kindref="compound">DecayTable::Entry</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DecayBit/src/DecayBit.cpp" line="3977" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3977" bodyend="4011"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ace37478244bc40944c6730a11d21fa4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1965,7 +2461,7 @@
 <para>Check all particles for negative decay width</para>
 <para>Spit out the full decay table as an SLHA file.</para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3022" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3022" bodyend="3206"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4016" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4016" bodyend="4205"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a02485b434a292fb00a5909e1a8ddc724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1984,7 +2480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3210" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3210" bodyend="3227"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4209" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4209" bodyend="4226"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1afb13fcc6a9cc15c307ac1ecebe516376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2004,7 +2500,7 @@
         <inbodydescription>
 <para>Otherwise just print the specific, named channels</para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3230" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3230" bodyend="3310"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4229" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4229" bodyend="4309"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a346d7267b1edc7b10fae9c5fb34432ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2023,7 +2519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3314" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3314" bodyend="3323"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4313" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4313" bodyend="4322"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a40933b8672581af0bae9c8c72a72f1a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2042,7 +2538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3330" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3330" bodyend="3361"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4329" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4329" bodyend="4360"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a4d6921b8e66d190b4f75169c717e9ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>daFunk::Funk</type>
@@ -2060,7 +2556,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3366" column="18" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3366" bodyend="3372"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4365" column="18" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4365" bodyend="4371"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a4aaed67e4b2ac0d31adef9cabace2670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2097,7 +2593,7 @@
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3375" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3375" bodyend="3471"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4374" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4374" bodyend="4470"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ac9922bb693d3f345bc0b0d5b5bb2a1dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2125,7 +2621,7 @@
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3473" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3473" bodyend="3481"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4472" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4472" bodyend="4480"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a2c377c781b089a64168ff1b7107ff4ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2153,7 +2649,7 @@
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3483" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3483" bodyend="3491"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4482" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4482" bodyend="4490"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1aac90c93900fa0d37bc54f3cfcada364f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2181,7 +2677,7 @@
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3493" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3493" bodyend="3501"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4492" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4492" bodyend="4500"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1acbecaf1260437a6e5a0a75b0d142a8d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2209,7 +2705,7 @@
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3503" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3503" bodyend="3511"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4502" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4502" bodyend="4510"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a5e9c2f470381c2e9ed6eedbba41abdee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2227,16 +2723,10 @@
         </detaileddescription>
         <inbodydescription>
 <para>Log-likelihood for Higgs invisible branching ratio</para>
-<para>We use log-likelihoods extracted from e.g., <ulink url="http://cms-results.web.cern.ch/cms-results/public-results/
-preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png">CMS-PAS-HIG-17-023</ulink></para>
-<para>There are scripts <programlisting><codeline><highlight class="normal">python<sp/>./DecayBit/data/convolve_with_theory.py<sp/>&lt;file&gt;<sp/>&lt;frac_error&gt;<sp/>&lt;min&gt;<sp/>&lt;max&gt;</highlight></codeline>
-</programlisting> for convolving a data file with a fractional theory error, and <programlisting><codeline><highlight class="normal">python<sp/>./DecayBit/data/profile_theory.py<sp/>&lt;file&gt;<sp/>&lt;frac_error&gt;<sp/>&lt;min&gt;<sp/>&lt;max&gt;</highlight></codeline>
-</programlisting> for profiling a fractional theory error.</para>
-<para>There are a few data files, e.g., <programlisting><codeline><highlight class="normal">./DecayBit/data/arXiv_1306.2941_Figure_8.dat</highlight></codeline>
-<codeline><highlight class="normal">./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b.dat</highlight></codeline>
-<codeline><highlight class="normal">./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b_10_convolved.dat</highlight></codeline>
-<codeline><highlight class="normal">./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b_10_profiled.dat</highlight></codeline>
-</programlisting> The first one is the default. The third and fourth ones include a 10% theory uncertainty in the branching fraction by convolving it and profiling it, respectively. The data file is specified in the <ref refid="namespaceYAML" kindref="compound">YAML</ref> by the <computeroutput>BR_h_inv_chi2_data_file</computeroutput> option. The path is relative to the GAMBIT directory, <computeroutput>GAMBIT_DIR</computeroutput>.</para>
+<para>We assume that the log likelihood as a function of the invisible branching fraction BF can be written in the form: - 2 log L = a * (BF - b)^2</para>
+<para>We can explicitly test this assumption for CMS, where the chi2 is given in figure 12 of arXiv:2201.11585. Indeed, the assumed functional form gives a perfect fit for a_CMS = 339 and b_CMS = 0.089.</para>
+<para>For ATLAS we extract the fit parameters from the two values stated in arXiv:2202.07953: BR &lt; 0.145 at 95% CL and BR &lt; 0.127 at 90% CL. These values correspond to a_ATLAS = 303 and b_ATLAS = 0.032.</para>
+<para>The combined log likelihood gives BR &lt; 0.14 at 95% CL. The best-fit value is BR = 0.06, which is preferred over BR = 0 with a significance of 1.2 sigma.</para>
 <para><simplesect kind="warning"><para>This typically assumes that the Higgs is otherwise SM-like, i.e., no changes to production cross sections or any other decays.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
@@ -2250,7 +2740,7 @@ preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png">CMS-PAS-HIG-
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3513" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3513" bodyend="3565"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4512" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4512" bodyend="4550"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a3b20dade556716e0fd67ad7c111475e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2281,7 +2771,7 @@ preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png">CMS-PAS-HIG-
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3567" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3567" bodyend="3596"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4552" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4552" bodyend="4581"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1ab9eabc0fbcd032fb377e6057c750e0a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2312,7 +2802,7 @@ preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png">CMS-PAS-HIG-
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3598" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3598" bodyend="3658"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4583" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4583" bodyend="4643"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a0fe18a69a6ff394d90cb283e6d580c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2343,7 +2833,7 @@ preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png">CMS-PAS-HIG-
 </parameterlist>
 </para>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3660" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3660" bodyend="3702"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4645" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4645" bodyend="4687"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a38c742fddf9d93ba03b1e280c7382877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2361,7 +2851,7 @@ preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png">CMS-PAS-HIG-
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3705" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3705" bodyend="3725"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4690" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4690" bodyend="4710"/>
       </memberdef>
       <memberdef kind="function" id="DecayBit_8cpp_1a8ca19e4870a6a3746f52b0c445bb9f26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2379,7 +2869,7 @@ preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png">CMS-PAS-HIG-
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="DecayBit/src/DecayBit.cpp" line="3728" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="3728" bodyend="3747"/>
+        <location file="DecayBit/src/DecayBit.cpp" line="4713" column="10" bodyfile="DecayBit/src/DecayBit.cpp" bodystart="4713" bodyend="4732"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

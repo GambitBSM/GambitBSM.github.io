@@ -31,16 +31,17 @@ description: "[No description available]"
 ///
 ///  \author Anders Kvellestad
 ///  \date 2020 Aug
+///  \date 2021 Sep
 ///
 ///  \author Victor Ananyev
 ///  \date 2020 Sep
 ///  *********************************************
 
-// Based on https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2020-040/
+// Based on confnote https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2020-040/
+// Updated to paper version: 
+//   https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-02/
+//   https://arxiv.org/abs/2103.11684
 
-// Adding SR5L
-// A general signal region with at least five light leptons is also defined, SR5L, with no further selection
-// applied.
 
 #include <vector>
 #include <cmath>
@@ -339,7 +340,7 @@ namespace Gambit
 
         for (const HEPUtils::Particle* tau : event->taus())
         {
-          if (tau->pT()>20. && (tau->abseta()>1.52 ? tau->abseta()<2.47 : tau->abseta()<1.37)) baselineTaus.push_back(tau);
+          if (tau->pT()>20. && (tau->abseta()<1.37 || (tau->abseta()>1.51 && tau->abseta()<2.47))) baselineTaus.push_back(tau);
           #ifdef  CHECK_CUTFLOW
             if (!generator_filter && tau->pT() > 15 && tau->abseta()<2.8) {
                 ++gen_filter_cnt;
@@ -637,14 +638,14 @@ namespace Gambit
 
       // This function can be overridden by the derived SR-specific classes
       virtual void collect_results() {
-        add_result(SignalRegionData(_counters.at("SR0-ZZ-loose"), 157., {159., 42.}));
-        add_result(SignalRegionData(_counters.at("SR0-ZZ-tight"), 17., {17.4, 3.3}));
-        add_result(SignalRegionData(_counters.at("SR0-ZZ-loose-bveto"), 5., {7.2, 2.0}));
+        add_result(SignalRegionData(_counters.at("SR0-ZZ-loose"), 157., {161., 42.}));
+        add_result(SignalRegionData(_counters.at("SR0-ZZ-tight"), 17., {18.4, 3.3}));
+        add_result(SignalRegionData(_counters.at("SR0-ZZ-loose-bveto"), 5., {7.3, 2.15}));
         add_result(SignalRegionData(_counters.at("SR0-ZZ-tight-bveto"), 1., {1.1, 0.4}));
-        add_result(SignalRegionData(_counters.at("SR0-loose-bveto"), 11., {11.4, 2.4}));
-        add_result(SignalRegionData(_counters.at("SR0-tight-bveto"), 1., {3.5, 2.0}));
+        add_result(SignalRegionData(_counters.at("SR0-loose-bveto"), 11., {11.5, 2.55}));
+        add_result(SignalRegionData(_counters.at("SR0-tight-bveto"), 1., {3.5, 2.1}));
         add_result(SignalRegionData(_counters.at("SR0-breq"), 3., {1.16, 0.26}));
-        add_result(SignalRegionData(_counters.at("SR5L"), 21., {12.6, 2.6}));
+        add_result(SignalRegionData(_counters.at("SR5L"), 21., {12.4, 2.3}));
 
 
         #ifdef CHECK_CUTFLOW
@@ -755,4 +756,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

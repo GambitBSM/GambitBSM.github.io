@@ -56,7 +56,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         {
             public:
     
-                virtual std::basic_string<char>& name_ref__BOSS() =0;
+                virtual std::string& name_ref__BOSS() =0;
     
                 virtual double& valNow_ref__BOSS() =0;
     
@@ -128,4 +128,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

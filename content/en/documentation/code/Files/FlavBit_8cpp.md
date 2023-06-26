@@ -216,7 +216,7 @@ Authors (add name and date if you modify):
       if (first)                                                                  \
       {                                                                           \
         if (flav_debug) std::cout << "Debug: Reading HepLike data file: " <<      \
-         inputfile << endl;                                                       \
+         inputfile << std::endl;                                                       \
         gaussian.Read();                                                          \
         first = false;                                                            \
       }                                                                           \
@@ -352,7 +352,6 @@ namespace Gambit
   namespace FlavBit
   {
 
-    using namespace std;
     namespace ublas = boost::numeric::ublas;
 
     const bool flav_debug =
@@ -379,21 +378,21 @@ namespace Gambit
     const nuiscorr (&corrnuis)[ncorrnuis] = nuiscorr_help(arr, YAML::LoadFile(GAMBIT_DIR "/FlavBit/data/SM_nuisance_correlations.yaml")["correlation_matrix"].as<std::vector<nuiscorr>>());
 
     /// Print function for FlavBit predictions
-    void print(flav_prediction prediction , vector<std::string > names)
+    void print(flav_prediction prediction , std::vector<std::string > names)
     {
       for(unsigned i=0; i<names.size(); i++)
       {
-        cout<<names[i]<<": "<<prediction.central_values[names[i]]<<endl;
+        std::cout<<names[i]<<": "<<prediction.central_values[names[i]]<< std::endl;
       }
-      cout<<"Covariance:"<<endl;
+      std::cout<<"Covariance:"<< std::endl;
       for( unsigned i=0; i<names.size(); i++)
       {
-        stringstream row;
+        std::stringstream row;
         for( unsigned j=0; j<names.size(); j++)
         {
           row<<(prediction.covariance)[names[i]]  [names[j]]<<" ";
         }
-        cout<<row.str()<<endl;
+        std::cout<<row.str()<< std::endl;
       }
     }
 
@@ -403,8 +402,8 @@ namespace Gambit
       // Only works for ll = ee and ll = mumu
       if (generation < 1 or generation > 2)
        FlavBit_error().raise(LOCAL_INFO, "Kstarll_Theory2Experiment_translation called with generation not 1 or 2");
-      const vector<std::string> all_names[2] = {{"AT_Im"} , {"S4", "S7", "S9"}};
-      const vector<std::string>& names = all_names[generation-1];
+      const std::vector<std::string> all_names[2] = {{"AT_Im"} , {"S4", "S7", "S9"}};
+      const std::vector<std::string>& names = all_names[generation-1];
       for (unsigned i=0; i < names.size(); i++)
       {
         auto search = prediction.find(names[i]);
@@ -422,8 +421,8 @@ namespace Gambit
       if (generation < 1 or generation > 2)
        FlavBit_error().raise(LOCAL_INFO, "Kstarll_Theory2Experiment_translation called with generation not 1 or 2");
 
-      const vector<std::string> names[2] = {{"AT_Im"} , {"S4", "S7", "S9"}};
-      vector<std::string> names_exist;
+      const std::vector<std::string> names[2] = {{"AT_Im"} , {"S4", "S7", "S9"}};
+      std::vector<std::string> names_exist;
 
       for (unsigned i=0; i < names[generation-1].size(); i++)
       {
@@ -433,7 +432,7 @@ namespace Gambit
       //changing the rows:
       for (unsigned i=0; i <  names_exist.size(); i++)
       {
-        string name1=names_exist[i];
+        std::string name1=names_exist[i];
         std::map<const std::string, double> row=prediction[name1];
         for (std::map<const std::string, double>::iterator it=row.begin(); it !=row.end(); it++)
         {
@@ -443,10 +442,10 @@ namespace Gambit
       // changing the columns:
       for (flav_covariance_map::iterator it=prediction.begin(); it !=prediction.end(); it++)
       {
-        string name_columns=it->first;
+        std::string name_columns=it->first;
         for (unsigned i=0; i <  names_exist.size(); i++)
         {
-          string name1=names_exist[i];
+          std::string name1=names_exist[i];
           prediction[name_columns][name1]=(-1)*prediction[name_columns][name1];
         }
       }
@@ -465,7 +464,6 @@ namespace Gambit
     void SuperIso_fill(parameters &result)
     {
       using namespace Pipes::SuperIso_fill;
-      using namespace std;
 
       SLHAstruct spectrum;
       // Obtain SLHAea object from spectrum
@@ -685,19 +683,19 @@ namespace Gambit
         if (!spectrum["ALPHA"].empty()) if (spectrum["ALPHA"].back().is_data_line()) result.alpha=SLHAea::to<double>(spectrum["ALPHA"].back().at(0));
 
         if (!spectrum["STOPMIX"].empty()) for (ie=1;ie<=2;ie++) for (je=1;je<=2;je++)
-         if (spectrum["STOPMIX"][max(ie,je)].is_data_line()) result.stop_mix[ie][je]=SLHAea::to<double>(spectrum["STOPMIX"].at(ie,je)[2]);
+         if (spectrum["STOPMIX"][std::max(ie,je)].is_data_line()) result.stop_mix[ie][je]=SLHAea::to<double>(spectrum["STOPMIX"].at(ie,je)[2]);
         if (!spectrum["SBOTMIX"].empty()) for (ie=1;ie<=2;ie++) for (je=1;je<=2;je++)
-         if (spectrum["SBOTMIX"][max(ie,je)].is_data_line()) result.sbot_mix[ie][je]=SLHAea::to<double>(spectrum["SBOTMIX"].at(ie,je)[2]);
+         if (spectrum["SBOTMIX"][std::max(ie,je)].is_data_line()) result.sbot_mix[ie][je]=SLHAea::to<double>(spectrum["SBOTMIX"].at(ie,je)[2]);
         if (!spectrum["STAUMIX"].empty()) for (ie=1;ie<=2;ie++) for (je=1;je<=2;je++)
-         if (spectrum["STAUMIX"][max(ie,je)].is_data_line()) result.stau_mix[ie][je]=SLHAea::to<double>(spectrum["STAUMIX"].at(ie,je)[2]);
+         if (spectrum["STAUMIX"][std::max(ie,je)].is_data_line()) result.stau_mix[ie][je]=SLHAea::to<double>(spectrum["STAUMIX"].at(ie,je)[2]);
         if (!spectrum["NMIX"].empty()) for (ie=1;ie<=4;ie++) for (je=1;je<=4;je++)
-         if (spectrum["NMIX"][max(ie,je)].is_data_line()) result.neut_mix[ie][je]=SLHAea::to<double>(spectrum["NMIX"].at(ie,je)[2]);
+         if (spectrum["NMIX"][std::max(ie,je)].is_data_line()) result.neut_mix[ie][je]=SLHAea::to<double>(spectrum["NMIX"].at(ie,je)[2]);
         if (!spectrum["NMNMIX"].empty()) for (ie=1;ie<=5;ie++) for (je=1;je<=5;je++)
-         if (spectrum["NMNMIX"][max(ie,je)].is_data_line()) result.neut_mix[ie][je]=SLHAea::to<double>(spectrum["NMNMIX"].at(ie,je)[2]);
+         if (spectrum["NMNMIX"][std::max(ie,je)].is_data_line()) result.neut_mix[ie][je]=SLHAea::to<double>(spectrum["NMNMIX"].at(ie,je)[2]);
         if (!spectrum["UMIX"].empty()) for (ie=1;ie<=2;ie++) for (je=1;je<=2;je++)
-         if (spectrum["UMIX"][max(ie,je)].is_data_line()) result.charg_Umix[ie][je]=SLHAea::to<double>(spectrum["UMIX"].at(ie,je)[2]);
+         if (spectrum["UMIX"][std::max(ie,je)].is_data_line()) result.charg_Umix[ie][je]=SLHAea::to<double>(spectrum["UMIX"].at(ie,je)[2]);
         if (!spectrum["VMIX"].empty()) for (ie=1;ie<=2;ie++) for (je=1;je<=2;je++)
-         if (spectrum["VMIX"][max(ie,je)].is_data_line()) result.charg_Vmix[ie][je]=SLHAea::to<double>(spectrum["VMIX"].at(ie,je)[2]);
+         if (spectrum["VMIX"][std::max(ie,je)].is_data_line()) result.charg_Vmix[ie][je]=SLHAea::to<double>(spectrum["VMIX"].at(ie,je)[2]);
 
         if (!spectrum["GAUGE"].empty())
         {
@@ -719,10 +717,10 @@ namespace Gambit
         }
 
         if (!spectrum["NMHMIX"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["NMHMIX"][max(ie,je)].is_data_line()) result.H0_mix[ie][je]=SLHAea::to<double>(spectrum["NMHMIX"].at(ie,je)[2]);
+         if (spectrum["NMHMIX"][std::max(ie,je)].is_data_line()) result.H0_mix[ie][je]=SLHAea::to<double>(spectrum["NMHMIX"].at(ie,je)[2]);
 
         if (!spectrum["NMAMIX"].empty()) for (ie=1;ie<=2;ie++) for (je=1;je<=2;je++)
-         if (spectrum["NMAMIX"][max(ie,je)].is_data_line()) result.A0_mix[ie][je]=SLHAea::to<double>(spectrum["NMAMIX"].at(ie,je)[2]);
+         if (spectrum["NMAMIX"][std::max(ie,je)].is_data_line()) result.A0_mix[ie][je]=SLHAea::to<double>(spectrum["NMAMIX"].at(ie,je)[2]);
 
         if (!spectrum["MSOFT"].empty())
         {
@@ -785,39 +783,39 @@ namespace Gambit
         }
 
         if (!spectrum["USQMIX"].empty()) for (ie=1;ie<=6;ie++) for (je=1;je<=6;je++)
-         if (spectrum["USQMIX"][max(ie,je)].is_data_line()) result.sU_mix[ie][je]=SLHAea::to<double>(spectrum["USQMIX"].at(ie,je)[2]);
+         if (spectrum["USQMIX"][std::max(ie,je)].is_data_line()) result.sU_mix[ie][je]=SLHAea::to<double>(spectrum["USQMIX"].at(ie,je)[2]);
         if (!spectrum["DSQMIX"].empty()) for (ie=1;ie<=6;ie++) for (je=1;je<=6;je++)
-         if (spectrum["DSQMIX"][max(ie,je)].is_data_line()) result.sD_mix[ie][je]=SLHAea::to<double>(spectrum["DSQMIX"].at(ie,je)[2]);
+         if (spectrum["DSQMIX"][std::max(ie,je)].is_data_line()) result.sD_mix[ie][je]=SLHAea::to<double>(spectrum["DSQMIX"].at(ie,je)[2]);
         if (!spectrum["SELMIX"].empty()) for (ie=1;ie<=6;ie++) for (je=1;je<=6;je++)
-         if (spectrum["SELMIX"][max(ie,je)].is_data_line()) result.sE_mix[ie][je]=SLHAea::to<double>(spectrum["SELMIX"].at(ie,je)[2]);
+         if (spectrum["SELMIX"][std::max(ie,je)].is_data_line()) result.sE_mix[ie][je]=SLHAea::to<double>(spectrum["SELMIX"].at(ie,je)[2]);
         if (!spectrum["SNUMIX"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["SNUMIX"][max(ie,je)].is_data_line()) result.sNU_mix[ie][je]=SLHAea::to<double>(spectrum["SNUMIX"].at(ie,je)[2]);
+         if (spectrum["SNUMIX"][std::max(ie,je)].is_data_line()) result.sNU_mix[ie][je]=SLHAea::to<double>(spectrum["SNUMIX"].at(ie,je)[2]);
 
         if (!spectrum["MSQ2"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["MSQ2"][max(ie,je)].is_data_line()) result.sCKM_msq2[ie][je]=SLHAea::to<double>(spectrum["MSQ2"].at(ie,je)[2]);
+         if (spectrum["MSQ2"][std::max(ie,je)].is_data_line()) result.sCKM_msq2[ie][je]=SLHAea::to<double>(spectrum["MSQ2"].at(ie,je)[2]);
         if (!spectrum["MSL2"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["MSL2"][max(ie,je)].is_data_line()) result.sCKM_msl2[ie][je]=SLHAea::to<double>(spectrum["MSL2"].at(ie,je)[2]);
+         if (spectrum["MSL2"][std::max(ie,je)].is_data_line()) result.sCKM_msl2[ie][je]=SLHAea::to<double>(spectrum["MSL2"].at(ie,je)[2]);
         if (!spectrum["MSD2"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["MSD2"][max(ie,je)].is_data_line()) result.sCKM_msd2[ie][je]=SLHAea::to<double>(spectrum["MSD2"].at(ie,je)[2]);
+         if (spectrum["MSD2"][std::max(ie,je)].is_data_line()) result.sCKM_msd2[ie][je]=SLHAea::to<double>(spectrum["MSD2"].at(ie,je)[2]);
         if (!spectrum["MSU2"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["MSU2"][max(ie,je)].is_data_line()) result.sCKM_msu2[ie][je]=SLHAea::to<double>(spectrum["MSU2"].at(ie,je)[2]);
+         if (spectrum["MSU2"][std::max(ie,je)].is_data_line()) result.sCKM_msu2[ie][je]=SLHAea::to<double>(spectrum["MSU2"].at(ie,je)[2]);
         if (!spectrum["MSE2"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["MSE2"][max(ie,je)].is_data_line()) result.sCKM_mse2[ie][je]=SLHAea::to<double>(spectrum["MSE2"].at(ie,je)[2]);
+         if (spectrum["MSE2"][std::max(ie,je)].is_data_line()) result.sCKM_mse2[ie][je]=SLHAea::to<double>(spectrum["MSE2"].at(ie,je)[2]);
 
         if (!spectrum["IMVCKM"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["IMVCKM"][max(ie,je)].is_data_line()) result.IMCKM[ie][je]=SLHAea::to<double>(spectrum["IMVCKM"].at(ie,je)[2]);
+         if (spectrum["IMVCKM"][std::max(ie,je)].is_data_line()) result.IMCKM[ie][je]=SLHAea::to<double>(spectrum["IMVCKM"].at(ie,je)[2]);
         if (!spectrum["IMVCKM"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["IMVCKM"][max(ie,je)].is_data_line()) result.IMCKM[ie][je]=SLHAea::to<double>(spectrum["IMVCKM"].at(ie,je)[2]);
+         if (spectrum["IMVCKM"][std::max(ie,je)].is_data_line()) result.IMCKM[ie][je]=SLHAea::to<double>(spectrum["IMVCKM"].at(ie,je)[2]);
 
         if (!spectrum["UPMNS"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["UPMNS"][max(ie,je)].is_data_line()) result.PMNS_U[ie][je]=SLHAea::to<double>(spectrum["UPMNS"].at(ie,je)[2]);
+         if (spectrum["UPMNS"][std::max(ie,je)].is_data_line()) result.PMNS_U[ie][je]=SLHAea::to<double>(spectrum["UPMNS"].at(ie,je)[2]);
 
         if (!spectrum["TU"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["TU"][max(ie,je)].is_data_line()) result.TU[ie][je]=SLHAea::to<double>(spectrum["TU"].at(ie,je)[2]);
+         if (spectrum["TU"][std::max(ie,je)].is_data_line()) result.TU[ie][je]=SLHAea::to<double>(spectrum["TU"].at(ie,je)[2]);
         if (!spectrum["TD"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["TD"][max(ie,je)].is_data_line()) result.TD[ie][je]=SLHAea::to<double>(spectrum["TD"].at(ie,je)[2]);
+         if (spectrum["TD"][std::max(ie,je)].is_data_line()) result.TD[ie][je]=SLHAea::to<double>(spectrum["TD"].at(ie,je)[2]);
         if (!spectrum["TE"].empty()) for (ie=1;ie<=3;ie++) for (je=1;je<=3;je++)
-         if (spectrum["TE"][max(ie,je)].is_data_line()) result.TE[ie][je]=SLHAea::to<double>(spectrum["TE"].at(ie,je)[2]);
+         if (spectrum["TE"][std::max(ie,je)].is_data_line()) result.TE[ie][je]=SLHAea::to<double>(spectrum["TE"].at(ie,je)[2]);
       }
 
       else if (ModelInUse("WC")  || ModelInUse("WC_LR") || ModelInUse("WC_LUV") )
@@ -992,14 +990,14 @@ namespace Gambit
         result.deltaCQ[6]=std::complex<double>(result.Re_DeltaCQ2_tau, result.Im_DeltaCQ2_tau);
       }
 
-      if (flav_debug) cout<<"Finished SuperIso_fill"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_fill"<< std::endl;
     }
 
     /// Fill SuperIso nuisance structure
     void SuperIso_nuisance_fill(nuisance &nuislist)
     {
       using namespace Pipes::SuperIso_nuisance_fill;
-      if (flav_debug) cout<<"Starting SuperIso_nuisance_fill"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_nuisance_fill"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
 
@@ -1009,7 +1007,7 @@ namespace Gambit
       /* Here the nuisance parameters which should not be used for the correlation calculation have to be given a zero standard deviation.
          E.g. nuislist.mass_b.dev=0.; */
 
-      if (flav_debug) cout<<"Finished SuperIso_nuisance_fill"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_nuisance_fill"<< std::endl;
     }
 
     /// Reorder a FlavBit observables list to match ordering expected by HEPLike
@@ -1068,8 +1066,8 @@ namespace Gambit
     {
       if (flav_debug)
       {
-        cout << "Starting SuperIso_prediction" << std::endl;
-        cout << "Changing convention. Before:"<<endl;
+        std::cout << "Starting SuperIso_prediction" << std::endl;
+        std::cout << "Changing convention. Before:"<< std::endl;
         print(result,{"S3", "S4", "S5", "S8", "S9", "AT_Im"});
       }
 
@@ -1196,7 +1194,7 @@ namespace Gambit
               obsnames[iObservable], obsnames[jObservable], result.covariance[FB_obslist[iObservable]][FB_obslist[jObservable]]);
            }
         }
-        cout << "Changing convention. After:"<<endl;
+        std::cout << "Changing convention. After:"<< std::endl;
         print(result,{"S3", "S4", "S5", "S8", "S9", "AT_Im"});
         std::cout << "Finished SuperIso_prediction" << std::endl;
       }
@@ -1293,6 +1291,46 @@ namespace Gambit
     //SI_SINGLE_PREDICTION_FUNCTION_BINS(RKstar_LHCb,_0p045_1p1)
     //SI_SINGLE_PREDICTION_FUNCTION_BINS(RKstar_LHCb,_1p1_6)
 
+    // TODO: Temporary restore of RK and RKstar convenience functions until their new interface is fixed
+    /// SuperIso prediction for RK* in low q^2
+    void SuperIso_RKstar_0045_11(double &result)
+    {
+      using namespace Pipes::SuperIso_RKstar_0045_11;
+      if (flav_debug) std::cout<<"Starting SuperIso_RKstar_0045_11"<< std::endl;
+
+      parameters const& param = *Dep::SuperIso_modelinfo;
+      result = BEreq::SuperIso_RKstar_computation(&param,0.045,1.1);
+
+      if (flav_debug) printf("RK*_lowq2=%.3e\n",result);
+      if (flav_debug) std::cout<<"Finished SuperIso_RKstar_0045_11"<< std::endl;
+    }
+
+    /// RK* in intermediate q^2
+    void SuperIso_RKstar_11_60(double &result)
+    {
+      using namespace Pipes::SuperIso_RKstar_11_60;
+      if (flav_debug) std::cout<<"Starting SuperIso_RKstar_11_60"<< std::endl;
+
+      parameters const& param = *Dep::SuperIso_modelinfo;
+      result = BEreq::SuperIso_RKstar_computation(&param,1.1,6.0);
+
+      if (flav_debug) printf("RK*_intermq2=%.3e\n",result);
+      if (flav_debug) std::cout<<"Finished SuperIso_RKstar_11_60"<< std::endl;
+    }
+
+    /// RK between 1 and 6 GeV^2
+    void SuperIso_RK(double &result)
+    {
+      using namespace Pipes::SuperIso_RK;
+      if (flav_debug) std::cout<<"Starting SuperIso_RK"<< std::endl;
+
+      parameters const& param = *Dep::SuperIso_modelinfo;
+      result = BEreq::SuperIso_RK_computation(&param,1.0,6.0);
+
+      if (flav_debug) printf("RK=%.3e\n",result);
+      if (flav_debug) std::cout<<"Finished SuperIso_RK"<< std::endl;
+    }
+
     // The sub-capabilities that may be received from likelihood functions in order to feed them valid observables are listed
     // below. In principle though, these functions will accept as sub-capabilities *any* recognised SuperIso observable names.
     // The recognised observable names can be found in the check_nameobs function in src/chi2.c in SuperIso.
@@ -1331,13 +1369,13 @@ namespace Gambit
     void SuperIso_prediction_Btaunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Btaunu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_Btaunu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_Btaunu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result = BEreq::Btaunu(&param);
 
       if (flav_debug) printf("BR(B->tau nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_Btaunu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_Btaunu"<< std::endl;
     }
 
 
@@ -1345,13 +1383,13 @@ namespace Gambit
     void SuperIso_prediction_Dstaunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Dstaunu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_Dstaunu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_Dstaunu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result = BEreq::Dstaunu(&param);
 
       if (flav_debug) printf("BR(Ds->tau nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_Dstaunu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_Dstaunu"<< std::endl;
     }
 
 
@@ -1359,13 +1397,13 @@ namespace Gambit
     void SuperIso_prediction_Dsmunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Dsmunu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_Dsmunu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_Dsmunu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result = BEreq::Dsmunu(&param);
 
       if (flav_debug) printf("BR(Ds->mu nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_Dsmunu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_Dsmunu"<< std::endl;
     }
 
 
@@ -1373,13 +1411,13 @@ namespace Gambit
     void SuperIso_prediction_Dmunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Dmunu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_Dmunu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_Dmunu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result = BEreq::Dmunu(&param);
 
       if (flav_debug) printf("BR(D->mu nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_Dmunu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_Dmunu"<< std::endl;
     }
 
 
@@ -1387,7 +1425,7 @@ namespace Gambit
     void SuperIso_prediction_BDtaunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BDtaunu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_BDtaunu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_BDtaunu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       if (param.model < 0) FlavBit_error().raise(LOCAL_INFO, "Unsupported model.");
@@ -1401,7 +1439,7 @@ namespace Gambit
       result=BEreq::BRBDlnu(byVal(gen_tau_D), byVal( charge_tau_D), byVal(q2_min_tau_D), byVal(q2_max_tau_D), byVal(obs_tau_D), &param);
 
       if (flav_debug) printf("BR(B-> D tau nu )=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_BDtaunu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_BDtaunu"<< std::endl;
     }
 
 
@@ -1409,7 +1447,7 @@ namespace Gambit
     void SuperIso_prediction_BDmunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BDmunu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_BDmunu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_BDmunu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       if (param.model < 0) FlavBit_error().raise(LOCAL_INFO, "Unsupported model.");
@@ -1423,7 +1461,7 @@ namespace Gambit
       result= BEreq::BRBDlnu(byVal(gen_mu_D), byVal( charge_mu_D), byVal(q2_min_mu_D), byVal(q2_max_mu_D), byVal(obs_mu_D), &param);
 
       if (flav_debug) printf("BR(B->D mu nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_BDmunu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_BDmunu"<< std::endl;
     }
 
 
@@ -1431,7 +1469,7 @@ namespace Gambit
     void SuperIso_prediction_BDstartaunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BDstartaunu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_BDstartaunu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_BDstartaunu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       if (param.model < 0) FlavBit_error().raise(LOCAL_INFO, "Unsupported model.");
@@ -1445,7 +1483,7 @@ namespace Gambit
       result= BEreq::BRBDstarlnu(byVal(gen_tau_Dstar), byVal( charge_tau_Dstar), byVal(q2_min_tau_Dstar), byVal(q2_max_tau_Dstar), byVal(obs_tau_Dstar), &param);
 
       if (flav_debug) printf("BR(B->Dstar tau nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_BDstartaunu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_BDstartaunu"<< std::endl;
     }
 
 
@@ -1453,7 +1491,7 @@ namespace Gambit
     void SuperIso_prediction_BDstarmunu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BDstarmunu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_BDstarmunu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_BDstarmunu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       if (param.model < 0) FlavBit_error().raise(LOCAL_INFO, "Unsupported model.");
@@ -1467,7 +1505,7 @@ namespace Gambit
       result=BEreq::BRBDstarlnu(byVal(gen_mu_Dstar), byVal( charge_mu_Dstar), byVal(q2_min_mu_Dstar), byVal(q2_max_mu_Dstar), byVal(obs_mu_Dstar), &param);
 
       if (flav_debug) printf("BR(B->Dstar mu nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_BDstarmunu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_BDstarmunu"<< std::endl;
     }
 
 
@@ -1475,13 +1513,13 @@ namespace Gambit
     void SuperIso_prediction_RD(double &result)
     {
       using namespace Pipes::SuperIso_prediction_RD;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_RD"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_RD"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result = BEreq::BDtaunu_BDenu(&param);
 
       if (flav_debug) printf("BR(B->D tau nu)/BR(B->D e nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_RD"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_RD"<< std::endl;
     }
 
 
@@ -1489,13 +1527,13 @@ namespace Gambit
     void SuperIso_prediction_RDstar(double &result)
     {
       using namespace Pipes::SuperIso_prediction_RDstar;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_RDstar"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_RDstar"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result = BEreq::BDstartaunu_BDstarenu(&param);
 
       if (flav_debug) printf("BR(B->D* tau nu)/BR(B->D* e nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_RD*"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_RD*"<< std::endl;
     }
 
 
@@ -1503,13 +1541,13 @@ namespace Gambit
     void SuperIso_prediction_Rmu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Rmu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_Rmu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_Rmu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result = BEreq::Kmunu_pimunu(&param);
 
       if (flav_debug) printf("R_mu=BR(K->mu nu)/BR(pi->mu nu)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_Rmu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_Rmu"<< std::endl;
     }
 
 
@@ -1517,13 +1555,13 @@ namespace Gambit
     void SuperIso_prediction_Rmu23(double &result)
     {
       using namespace Pipes::SuperIso_prediction_Rmu23;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_Rmu23"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_Rmu23"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result = BEreq::Rmu23(&param);
 
       if (flav_debug) printf("Rmu23=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_Rmu23"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_Rmu23"<< std::endl;
     }
 
 
@@ -1531,13 +1569,13 @@ namespace Gambit
     void SuperIso_prediction_delta0(double &result)
     {
       using namespace Pipes::SuperIso_prediction_delta0;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_delta0"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_delta0"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result=BEreq::modified_delta0(&param);
 
       if (flav_debug) printf("Delta0(B->K* gamma)=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_delta0"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_delta0"<< std::endl;
     }
 
 
@@ -1545,13 +1583,13 @@ namespace Gambit
     void SuperIso_prediction_A_BXsmumu_zero(double &result)
     {
       using namespace Pipes::SuperIso_prediction_A_BXsmumu_zero;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_A_BXsmumu_zero"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_A_BXsmumu_zero"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result=BEreq::A_BXsmumu_zero(&param);
 
       if (flav_debug) printf("AFB(B->Xs mu mu)_zero=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_A_BXsmumu_zero"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_A_BXsmumu_zero"<< std::endl;
     }
 
 
@@ -1559,13 +1597,13 @@ namespace Gambit
     void SuperIso_prediction_BRBXstautau_highq2(double &result)
     {
       using namespace Pipes::SuperIso_prediction_BRBXstautau_highq2;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_BRBXstautau_highq2"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_BRBXstautau_highq2"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result=BEreq::BRBXstautau_highq2(&param);
 
       if (flav_debug) printf("BR(B->Xs tau tau)_highq2=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_BRBXstautau_highq2"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_BRBXstautau_highq2"<< std::endl;
     }
 
 
@@ -1573,13 +1611,13 @@ namespace Gambit
     void SuperIso_prediction_A_BXstautau_highq2(double &result)
     {
       using namespace Pipes::SuperIso_prediction_A_BXstautau_highq2;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_A_BXstautau_highq2"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_A_BXstautau_highq2"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result=BEreq::A_BXstautau_highq2(&param);
 
       if (flav_debug) printf("AFB(B->Xs tau tau)_highq2=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_A_BXstautau_highq2"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_A_BXstautau_highq2"<< std::endl;
     }
 
     // RK* for RHN, using same approximations as RK, low q^2
@@ -1591,7 +1629,7 @@ namespace Gambit
       std::vector<double> mN = {*Param["M_1"],*Param["M_2"],*Param["M_3"]};
       double mt = *Param["mT"];
 
-      if (flav_debug) cout << "Starting RHN_RKstar_0045_11" << endl;
+      if (flav_debug) std::cout << "Starting RHN_RKstar_0045_11" << std::endl;
 
       const double mW = sminputs.mW;
       const double sinW2 = sqrt(1.0 - pow(sminputs.mW/sminputs.mZ,2));
@@ -1613,8 +1651,8 @@ namespace Gambit
       result =  std::norm(C10_SM + C10_mu) + std::norm(C9_SM + C9_mu);
       result /= std::norm(C10_SM + C10_e) + std::norm(C9_SM + C9_e);
 
-      if (flav_debug) cout << "RK = " << result << endl;
-      if (flav_debug) cout << "Finished RHN_RKstar_0045_11" << endl;
+      if (flav_debug) std::cout << "RK = " << result << std::endl;
+      if (flav_debug) std::cout << "Finished RHN_RKstar_0045_11" << std::endl;
 
     }
 
@@ -1627,7 +1665,7 @@ namespace Gambit
       std::vector<double> mN = {*Param["M_1"],*Param["M_2"],*Param["M_3"]};
       double mt = *Param["mT"];
 
-      if (flav_debug) cout << "Starting RHN_RKstar_11_60" << endl;
+      if (flav_debug) std::cout << "Starting RHN_RKstar_11_60" << std::endl;
 
       const double mW = sminputs.mW;
       const double sinW2 = sqrt(1.0 - pow(sminputs.mW/sminputs.mZ,2));
@@ -1649,8 +1687,8 @@ namespace Gambit
       result =  std::norm(C10_SM + C10_mu) + std::norm(C9_SM + C9_mu);
       result /= std::norm(C10_SM + C10_e) + std::norm(C9_SM + C9_e);
 
-      if (flav_debug) cout << "RK = " << result << endl;
-      if (flav_debug) cout << "Finished RHN_RKstar_11_60" << endl;
+      if (flav_debug) std::cout << "RK = " << result << std::endl;
+      if (flav_debug) std::cout << "Finished RHN_RKstar_11_60" << std::endl;
 
     }
 
@@ -1663,7 +1701,7 @@ namespace Gambit
       std::vector<double> mN = {*Param["M_1"],*Param["M_2"],*Param["M_3"]};
       double mt = *Param["mT"];
 
-      if (flav_debug) cout << "Starting RHN_RK" << endl;
+      if (flav_debug) std::cout << "Starting RHN_RK" << std::endl;
 
       const double mW = sminputs.mW;
       const double sinW2 = sqrt(1.0 - pow(sminputs.mW/sminputs.mZ,2));
@@ -1685,21 +1723,21 @@ namespace Gambit
       result =  std::norm(C10_SM + C10_mu) + std::norm(C9_SM + C9_mu);
       result /= std::norm(C10_SM + C10_e) + std::norm(C9_SM + C9_e);
 
-      if (flav_debug) cout << "RK = " << result << endl;
-      if (flav_debug) cout << "Finished RHN_RK" << endl;
+      if (flav_debug) std::cout << "RK = " << result << std::endl;
+      if (flav_debug) std::cout << "Finished RHN_RK" << std::endl;
     }
 
     /// Isospin asymmetry of B-> K* mu mu
     void SuperIso_prediction_AI_BKstarmumu(double &result)
     {
       using namespace Pipes::SuperIso_prediction_AI_BKstarmumu;
-      if (flav_debug) cout<<"Starting SuperIso_prediction_AI_BKstarmumu"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_AI_BKstarmumu"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result=BEreq::modified_AI_BKstarmumu(&param);
 
       if (flav_debug) printf("A_I(B->K* mu mu)_lowq2=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_AI_BKstarmumu"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_AI_BKstarmumu"<< std::endl;
     }
 
 
@@ -1708,13 +1746,13 @@ namespace Gambit
     {
       using namespace Pipes::SuperIso_prediction_AI_BKstarmumu_zero;
 
-      if (flav_debug) cout<<"Starting SuperIso_prediction_AI_BKstarmumu_zero"<<endl;
+      if (flav_debug) std::cout<<"Starting SuperIso_prediction_AI_BKstarmumu_zero"<< std::endl;
 
       parameters const& param = *Dep::SuperIso_modelinfo;
       result=BEreq::modified_AI_BKstarmumu_zero(&param);
 
       if (flav_debug) printf("A_I(B->K* mu mu)_zero=%.3e\n",result);
-      if (flav_debug) cout<<"Finished SuperIso_prediction_AI_BKstarmumu_zero"<<endl;
+      if (flav_debug) std::cout<<"Finished SuperIso_prediction_AI_BKstarmumu_zero"<< std::endl;
     }
 
 
@@ -1723,7 +1761,7 @@ namespace Gambit
     {
       using namespace Pipes::FeynHiggs_FlavourObs;
 
-      if (flav_debug) cout<<"Starting FeynHiggs_FlavourObs"<<endl;
+      if (flav_debug) std::cout<<"Starting FeynHiggs_FlavourObs"<< std::endl;
 
       fh_real bsgMSSM;     // B -> Xs gamma in MSSM
       fh_real bsgSM;       // B -> Xs gamma in SM
@@ -1746,7 +1784,7 @@ namespace Gambit
       FlavourObs.Bsmumu_SM = bsmumuSM;
 
       result = FlavourObs;
-      if (flav_debug) cout<<"Finished FeynHiggs_FlavourObs"<<endl;
+      if (flav_debug) std::cout<<"Finished FeynHiggs_FlavourObs"<< std::endl;
     }
 
 
@@ -1773,13 +1811,13 @@ namespace Gambit
       static bool th_err_absolute, first = true;
       static double exp_meas, exp_DeltaMs_err, th_err;
 
-      if (flav_debug) cout << "Starting Delta_Ms_likelihood"<<endl;
+      if (flav_debug) std::cout << "Starting Delta_Ms_likelihood"<< std::endl;
 
       if (first)
       {
         Flav_reader fread(GAMBIT_DIR  "/FlavBit/data");
         fread.debug_mode(flav_debug);
-        if (flav_debug) cout<<"Initialised Flav reader in Delta_Ms_likelihood"<<endl;
+        if (flav_debug) std::cout<<"Initialised Flav reader in Delta_Ms_likelihood"<< std::endl;
         fread.read_yaml_measurement("flav_data.yaml", "DeltaMs");
         fread.initialise_matrices(); // here we have a single measurement ;) so let's be sneaky:
         exp_meas = fread.get_exp_value()(0,0);
@@ -1789,12 +1827,12 @@ namespace Gambit
         first = false;
       }
 
-      if (flav_debug) cout << "Experiment: " << exp_meas << " " << exp_DeltaMs_err << " " << th_err << endl;
+      if (flav_debug) std::cout << "Experiment: " << exp_meas << " " << exp_DeltaMs_err << " " << th_err << std::endl;
 
       // Now we do the stuff that actually depends on the parameters
       double theory_prediction = *Dep::prediction_DeltaMs;
       double theory_DeltaMs_err = th_err * (th_err_absolute ? 1.0 : std::abs(theory_prediction));
-      if (flav_debug) cout<<"Theory prediction: "<<theory_prediction<<" +/- "<<theory_DeltaMs_err<<endl;
+      if (flav_debug) std::cout<<"Theory prediction: "<<theory_prediction<<" +/- "<<theory_DeltaMs_err<< std::endl;
 
       /// Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
       bool profile = runOptions->getValueOrDef<bool>(false, "profile_systematics");
@@ -1811,7 +1849,7 @@ namespace Gambit
       static bool th_err_absolute[n_experiments], first = true;
       static double th_err[n_experiments];
 
-      if (flav_debug) cout<<"Starting SL_measurements"<<endl;
+      if (flav_debug) std::cout<<"Starting SL_measurements"<< std::endl;
 
       // Read and calculate things based on the observed data only the first time through, as none of it depends on the model parameters.
       if (first)
@@ -1821,7 +1859,7 @@ namespace Gambit
         // Read in experimental measuremens
         Flav_reader fread(GAMBIT_DIR  "/FlavBit/data");
         fread.debug_mode(flav_debug);
-        if (flav_debug) cout<<"Initialised Flav reader in SL_measurements"<<endl;
+        if (flav_debug) std::cout<<"Initialised Flav reader in SL_measurements"<< std::endl;
 
         // B-> tau nu
         fread.read_yaml_measurement("flav_data.yaml", "BR_Btaunu");
@@ -1894,7 +1932,7 @@ namespace Gambit
         pmc.diff.push_back(pmc.value_exp(i,0)-pmc.value_th(i,0));
       }
 
-      if (flav_debug) cout<<"Finished SL_measurements"<<endl;
+      if (flav_debug) std::cout<<"Finished SL_measurements"<< std::endl;
 
     }
 
@@ -1904,7 +1942,7 @@ namespace Gambit
     {
       using namespace Pipes::SL_likelihood;
 
-      if (flav_debug) cout<<"Starting SL_likelihood"<<endl;
+      if (flav_debug) std::cout<<"Starting SL_likelihood"<< std::endl;
 
       predictions_measurements_covariances pmc = *Dep::SL_M;
 
@@ -1914,7 +1952,7 @@ namespace Gambit
       cov+=pmc.cov_th;
 
       //calculating a diff
-      vector<double> diff;
+      std::vector<double> diff;
       diff=pmc.diff;
 
       boost::numeric::ublas::matrix<double> cov_inv(pmc.dim, pmc.dim);
@@ -1931,9 +1969,9 @@ namespace Gambit
 
       result=-0.5*Chi2;
 
-      if (flav_debug) cout<<"Finished SL_likelihood"<<endl;
+      if (flav_debug) std::cout<<"Finished SL_likelihood"<< std::endl;
 
-      if (flav_debug_LL) cout<<"Likelihood result SL_likelihood  : "<< result<<endl;
+      if (flav_debug_LL) std::cout<<"Likelihood result SL_likelihood  : "<< result<< std::endl;
 
     }
 
@@ -1953,12 +1991,12 @@ namespace Gambit
       SMInputs sminputs = *Dep::SMINPUTS;
 
       Eigen::Matrix3cd m_nu = *Dep::m_nu;
-      vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
-      vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
+      std::vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
+      std::vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
 
       Eigen::Matrix3cd Theta = *Dep::SeesawI_Theta;
       Eigen::Matrix3cd Vnu = *Dep::SeesawI_Vnu;
-      Eigen::Matrix<complex<double>,3,6> U;
+      Eigen::Matrix<std::complex<double>,3,6> U;
 
       for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
@@ -1971,10 +2009,10 @@ namespace Gambit
 
       // Form factors
       int e = 0, mu = 1;
-      complex<double> k2l = FormFactors::K2L(mu, e, sminputs, U, ml, mnu);
-      complex<double> k2r = FormFactors::K2R(mu, e, sminputs, U, ml, mnu);
+      std::complex<double> k2l = FormFactors::K2L(mu, e, sminputs, U, ml, mnu);
+      std::complex<double> k2r = FormFactors::K2R(mu, e, sminputs, U, ml, mnu);
 
-      result *= (norm(k2l) + norm(k2r));
+      result *= (std::norm(k2l) + std::norm(k2r));
 
       result /= Dep::mu_minus_decay_rates->width_in_GeV;
 
@@ -1987,12 +2025,12 @@ namespace Gambit
       SMInputs sminputs = *Dep::SMINPUTS;
 
       Eigen::Matrix3cd m_nu = *Dep::m_nu;
-      vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
-      vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
+      std::vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
+      std::vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
 
       Eigen::Matrix3cd Theta = *Dep::SeesawI_Theta;
       Eigen::Matrix3cd Vnu = *Dep::SeesawI_Vnu;
-      Eigen::Matrix<complex<double>,3,6> U;
+      Eigen::Matrix<std::complex<double>,3,6> U;
 
       for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
@@ -2005,10 +2043,10 @@ namespace Gambit
 
       // Form factors
       int e = 0, tau = 2;
-      complex<double> k2l = FormFactors::K2L(tau, e, sminputs, U, ml, mnu);
-      complex<double> k2r = FormFactors::K2R(tau, e, sminputs, U, ml, mnu);
+      std::complex<double> k2l = FormFactors::K2L(tau, e, sminputs, U, ml, mnu);
+      std::complex<double> k2r = FormFactors::K2R(tau, e, sminputs, U, ml, mnu);
 
-      result *= (norm(k2l) + norm(k2r));
+      result *= (std::norm(k2l) + std::norm(k2r));
 
       result /= Dep::tau_minus_decay_rates->width_in_GeV;
 
@@ -2021,12 +2059,12 @@ namespace Gambit
       SMInputs sminputs = *Dep::SMINPUTS;
 
       Eigen::Matrix3cd m_nu = *Dep::m_nu;
-      vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
-      vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
+      std::vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
+      std::vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
 
       Eigen::Matrix3cd Theta = *Dep::SeesawI_Theta;
       Eigen::Matrix3cd Vnu = *Dep::SeesawI_Vnu;
-      Eigen::Matrix<complex<double>,3,6> U;
+      Eigen::Matrix<std::complex<double>,3,6> U;
 
       for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
@@ -2039,10 +2077,10 @@ namespace Gambit
 
       // Form factors
       int mu = 1, tau = 2;
-      complex<double> k2l = FormFactors::K2L(tau, mu, sminputs, U, ml, mnu);
-      complex<double> k2r = FormFactors::K2R(tau, mu, sminputs, U, ml, mnu);
+      std::complex<double> k2l = FormFactors::K2L(tau, mu, sminputs, U, ml, mnu);
+      std::complex<double> k2r = FormFactors::K2R(tau, mu, sminputs, U, ml, mnu);
 
-      result *= (norm(k2l) + norm(k2r));
+      result *= (std::norm(k2l) + std::norm(k2r));
 
       result /= Dep::tau_minus_decay_rates->width_in_GeV;
     }
@@ -2050,10 +2088,10 @@ namespace Gambit
     // General contribution to l_\alpha^- -> l_\beta^- l_\gamma^- l_\delta^+ from RHNs
     double RHN_l2lll(int alpha, int beta, int gamma, int delta, SMInputs sminputs, Eigen::Matrix3cd Vnu, Eigen::Matrix3cd Theta, Eigen::Matrix3cd m_nu, double M1, double M2, double M3, double mH)
     {
-      vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
-      vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), M1, M2, M3};
+      std::vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
+      std::vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), M1, M2, M3};
 
-      Eigen::Matrix<complex<double>,3,6> U;
+      Eigen::Matrix<std::complex<double>,3,6> U;
 
       for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
@@ -2063,35 +2101,35 @@ namespace Gambit
         }
 
       // Form factors
-      complex<double> k2l = FormFactors::K2L(alpha, beta, sminputs, U, ml, mnu);
-      complex<double> k2r = FormFactors::K2R(alpha, beta, sminputs, U, ml, mnu);
-      complex<double> k1r = FormFactors::K1R(alpha, beta, sminputs, U, mnu);
-      complex<double> asll = FormFactors::ASLL(alpha, beta, gamma, delta, sminputs, U, ml, mnu, mH);
-      complex<double> aslr = FormFactors::ASLR(alpha, beta, gamma, delta, sminputs, U, ml, mnu, mH);
-      complex<double> asrl = FormFactors::ASRL(alpha, beta, gamma, delta, sminputs, U, ml, mnu, mH);
-      complex<double> asrr = FormFactors::ASRR(alpha, beta, gamma, delta, sminputs, U, ml, mnu, mH);
-      complex<double> avll = FormFactors::AVLL(alpha, beta, gamma, delta, sminputs, U, ml, mnu);
-      complex<double> avlr = FormFactors::AVLR(alpha, beta, gamma, delta, sminputs, U, ml, mnu);
-      complex<double> avrl = FormFactors::AVLL(alpha, beta, gamma, delta, sminputs, U, ml, mnu);
-      complex<double> avrr = FormFactors::AVRR(alpha, beta, gamma, delta, sminputs, U, ml, mnu);
+      std::complex<double> k2l = FormFactors::K2L(alpha, beta, sminputs, U, ml, mnu);
+      std::complex<double> k2r = FormFactors::K2R(alpha, beta, sminputs, U, ml, mnu);
+      std::complex<double> k1r = FormFactors::K1R(alpha, beta, sminputs, U, mnu);
+      std::complex<double> asll = FormFactors::ASLL(alpha, beta, gamma, delta, sminputs, U, ml, mnu, mH);
+      std::complex<double> aslr = FormFactors::ASLR(alpha, beta, gamma, delta, sminputs, U, ml, mnu, mH);
+      std::complex<double> asrl = FormFactors::ASRL(alpha, beta, gamma, delta, sminputs, U, ml, mnu, mH);
+      std::complex<double> asrr = FormFactors::ASRR(alpha, beta, gamma, delta, sminputs, U, ml, mnu, mH);
+      std::complex<double> avll = FormFactors::AVLL(alpha, beta, gamma, delta, sminputs, U, ml, mnu);
+      std::complex<double> avlr = FormFactors::AVLR(alpha, beta, gamma, delta, sminputs, U, ml, mnu);
+      std::complex<double> avrl = FormFactors::AVLL(alpha, beta, gamma, delta, sminputs, U, ml, mnu);
+      std::complex<double> avrr = FormFactors::AVRR(alpha, beta, gamma, delta, sminputs, U, ml, mnu);
 
-      complex<double> avhatll = avll;
-      complex<double> avhatlr = avlr;
-      complex<double> avhatrl = avrl + 4. * pi / sminputs.alphainv * k1r;
-      complex<double> avhatrr = avrr + 4. * pi / sminputs.alphainv * k1r;
+      std::complex<double> avhatll = avll;
+      std::complex<double> avhatlr = avlr;
+      std::complex<double> avhatrl = avrl + 4. * pi / sminputs.alphainv * k1r;
+      std::complex<double> avhatrr = avrr + 4. * pi / sminputs.alphainv * k1r;
 
       double l2lll = 0;
       if(beta == gamma and gamma == delta) // l(alpha)- -> l(beta)- l(beta)- l(beta)+
       {
-        l2lll = real(16. * pow(pi,2) / pow(sminputs.alphainv,2) * (norm(k2l) + norm(k2r)) * (16./3.*log(ml[alpha]/ml[beta]) - 22./3.) + 1./24. * (norm(asll) + norm(asrr) + 2.*norm(aslr) + 2.*norm(asrl)) + 1./3. * (2.*norm(avhatll) + 2.*norm(avhatrr) + norm(avhatlr) + norm(avhatrl)) + 4.*pi/(3.*sminputs.alphainv)*(k2l*conj(asrl - 2.*avhatrl - 4.*avhatrr) + conj(k2l)*(asrl - 2.*avhatrl - 4.*avhatrr) + k2r*conj(aslr - 2.*avhatlr - 4.*avhatll) + conj(k2r)*(aslr - 2.*avhatlr - 4.*avhatll)) - 1./6. * (aslr*conj(avhatlr) + asrl*conj(avhatrl) + conj(aslr)*avhatlr + conj(asrl)*avhatrl));
+        l2lll = real(16. * pow(pi,2) / pow(sminputs.alphainv,2) * (std::norm(k2l) + std::norm(k2r)) * (16./3.*log(ml[alpha]/ml[beta]) - 22./3.) + 1./24. * (std::norm(asll) + std::norm(asrr) + 2.*std::norm(aslr) + 2.*std::norm(asrl)) + 1./3. * (2.*std::norm(avhatll) + 2.*std::norm(avhatrr) + std::norm(avhatlr) + std::norm(avhatrl)) + 4.*pi/(3.*sminputs.alphainv)*(k2l*conj(asrl - 2.*avhatrl - 4.*avhatrr) + conj(k2l)*(asrl - 2.*avhatrl - 4.*avhatrr) + k2r*conj(aslr - 2.*avhatlr - 4.*avhatll) + conj(k2r)*(aslr - 2.*avhatlr - 4.*avhatll)) - 1./6. * (aslr*conj(avhatlr) + asrl*conj(avhatrl) + conj(aslr)*avhatlr + conj(asrl)*avhatrl));
       }
       else if(gamma == delta) // l(alpha)- -> l(beta)- l(gamma)- l(gamma)+
       {
-        l2lll = real(16. *pow(pi,2) / pow(sminputs.alphainv,2) * (norm(k2l) + norm(k2r)) * (16./3.*log(ml[alpha]/ml[gamma]) - 8.) + 1./12. *(norm(asll) + norm(asrr) + norm(aslr) + norm(asrl)) + 1./3. * (norm(avhatll) + norm(avhatrr) + norm(avhatlr) + norm(avhatrl)) + 8.*pi/(3.*sminputs.alphainv) * (k2l*conj(avhatrl + avhatrr) + k2r*conj(avhatlr + avhatll) + conj(k2l)*(avhatrl + avhatrr) + conj(k2r)*(avhatlr + avhatll)));
+        l2lll = real(16. *pow(pi,2) / pow(sminputs.alphainv,2) * (std::norm(k2l) + std::norm(k2r)) * (16./3.*log(ml[alpha]/ml[gamma]) - 8.) + 1./12. *(std::norm(asll) + std::norm(asrr) + std::norm(aslr) + std::norm(asrl)) + 1./3. * (std::norm(avhatll) + std::norm(avhatrr) + std::norm(avhatlr) + std::norm(avhatrl)) + 8.*pi/(3.*sminputs.alphainv) * (k2l*conj(avhatrl + avhatrr) + k2r*conj(avhatlr + avhatll) + conj(k2l)*(avhatrl + avhatrr) + conj(k2r)*(avhatlr + avhatll)));
       }
       else if(beta == gamma) // l(alpha)- -> l(beta)- l(beta)- l(delta)+
       {
-        l2lll = real(1./24. * (norm(asll) + norm(asrr) + 2.*norm(aslr) + 2.*norm(asrl)) + 1./3.*(2.*norm(avhatll) + 2.*norm(avhatrr) + norm(avhatlr) + norm(avhatrl)) - 1./6.*(aslr*conj(avhatlr) + asrl*conj(avhatrl) + conj(aslr)*avhatlr + conj(asrl)*avhatrl));
+        l2lll = real(1./24. * (std::norm(asll) + std::norm(asrr) + 2.*norm(aslr) + 2.*norm(asrl)) + 1./3.*(2.*norm(avhatll) + 2.*norm(avhatrr) + std::norm(avhatlr) + std::norm(avhatrl)) - 1./6.*(aslr*conj(avhatlr) + asrl*conj(avhatrl) + conj(aslr)*avhatlr + conj(asrl)*avhatrl));
       }
       return l2lll;
 
@@ -2227,59 +2265,59 @@ namespace Gambit
     }
 
     // Form factors for to mu - e conversion
-    void RHN_mue_FF(const SMInputs sminputs, std::vector<double> &mnu, Eigen::Matrix<complex<double>,3,6> &U, const double mH, complex<double> &g0SL, complex<double> &g0SR, complex<double> &g0VL, complex<double> &g0VR, complex<double> &g1SL, complex<double> &g1SR, complex<double> &g1VL, complex<double> &g1VR)
+    void RHN_mue_FF(const SMInputs sminputs, std::vector<double> &mnu, Eigen::Matrix<std::complex<double>,3,6> &U, const double mH, std::complex<double> &g0SL, std::complex<double> &g0SR, std::complex<double> &g0VL, std::complex<double> &g0VR, std::complex<double> &g1SL, std::complex<double> &g1SR, std::complex<double> &g1VL, std::complex<double> &g1VR)
     {
-      vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
+      std::vector<double> ml = {sminputs.mE, sminputs.mMu, sminputs.mTau};
 
       int e = 0, mu = 1;
-      complex<double> k1r = FormFactors::K1R(mu, e, sminputs, U, mnu);
-      complex<double> k2l = FormFactors::K2L(mu, e, sminputs, U, ml, mnu);
-      complex<double> k2r = FormFactors::K2R(mu, e, sminputs, U, ml, mnu);
+      std::complex<double> k1r = FormFactors::K1R(mu, e, sminputs, U, mnu);
+      std::complex<double> k2l = FormFactors::K2L(mu, e, sminputs, U, ml, mnu);
+      std::complex<double> k2r = FormFactors::K2R(mu, e, sminputs, U, ml, mnu);
 
       int u = 0, d =0, s = 1;
-      complex<double> CVLLu = FormFactors::CVLL(mu, e, u, u, sminputs, U, ml, mnu);
-      complex<double> CVLLd = FormFactors::BVLL(mu, e, d, d, sminputs, U, ml, mnu);
-      complex<double> CVLLs = FormFactors::BVLL(mu, e, s, s, sminputs, U, ml, mnu);
-      complex<double> CVLRu = FormFactors::CVLR(mu, e, u, u, sminputs, U, ml, mnu);
-      complex<double> CVLRd = FormFactors::BVLR(mu, e, d, d, sminputs, U, ml, mnu);
-      complex<double> CVLRs = FormFactors::BVLR(mu, e, s, s, sminputs, U, ml, mnu);
-      complex<double> CVRLu = FormFactors::CVRL(mu, e, u, u, sminputs, U, ml, mnu);
-      complex<double> CVRLd = FormFactors::BVRL(mu, e, d, d, sminputs, U, ml, mnu);
-      complex<double> CVRLs = FormFactors::BVRL(mu, e, s, s, sminputs, U, ml, mnu);
-      complex<double> CVRRu = FormFactors::CVRR(mu, e, u, u, sminputs, U, ml, mnu);
-      complex<double> CVRRd = FormFactors::BVRR(mu, e, d, d, sminputs, U, ml, mnu);
-      complex<double> CVRRs = FormFactors::BVRR(mu, e, s, s, sminputs, U, ml, mnu);
+      std::complex<double> CVLLu = FormFactors::CVLL(mu, e, u, u, sminputs, U, ml, mnu);
+      std::complex<double> CVLLd = FormFactors::BVLL(mu, e, d, d, sminputs, U, ml, mnu);
+      std::complex<double> CVLLs = FormFactors::BVLL(mu, e, s, s, sminputs, U, ml, mnu);
+      std::complex<double> CVLRu = FormFactors::CVLR(mu, e, u, u, sminputs, U, ml, mnu);
+      std::complex<double> CVLRd = FormFactors::BVLR(mu, e, d, d, sminputs, U, ml, mnu);
+      std::complex<double> CVLRs = FormFactors::BVLR(mu, e, s, s, sminputs, U, ml, mnu);
+      std::complex<double> CVRLu = FormFactors::CVRL(mu, e, u, u, sminputs, U, ml, mnu);
+      std::complex<double> CVRLd = FormFactors::BVRL(mu, e, d, d, sminputs, U, ml, mnu);
+      std::complex<double> CVRLs = FormFactors::BVRL(mu, e, s, s, sminputs, U, ml, mnu);
+      std::complex<double> CVRRu = FormFactors::CVRR(mu, e, u, u, sminputs, U, ml, mnu);
+      std::complex<double> CVRRd = FormFactors::BVRR(mu, e, d, d, sminputs, U, ml, mnu);
+      std::complex<double> CVRRs = FormFactors::BVRR(mu, e, s, s, sminputs, U, ml, mnu);
 
-      complex<double> CSLLu = FormFactors::CSLL(mu, e, u, u, sminputs, U, ml, mnu, mH);
-      complex<double> CSLLd = FormFactors::BSLL(mu, e, d, d, sminputs, U, ml, mnu, mH);
-      complex<double> CSLLs = FormFactors::BSLL(mu, e, s, s, sminputs, U, ml, mnu, mH);
-      complex<double> CSLRu = FormFactors::CSLL(mu, e, u, u, sminputs, U, ml, mnu, mH);
-      complex<double> CSLRd = FormFactors::BSLL(mu, e, d, d, sminputs, U, ml, mnu, mH);
-      complex<double> CSLRs = FormFactors::BSLL(mu, e, s, s, sminputs, U, ml, mnu, mH);
-      complex<double> CSRLu = FormFactors::CSLL(mu, e, u, u, sminputs, U, ml ,mnu, mH);
-      complex<double> CSRLd = FormFactors::BSLL(mu, e, d, d, sminputs, U, ml ,mnu, mH);
-      complex<double> CSRLs = FormFactors::BSLL(mu, e, s, s, sminputs, U, ml ,mnu, mH);
-      complex<double> CSRRu = FormFactors::CSLL(mu, e, u, u, sminputs, U, ml ,mnu, mH);
-      complex<double> CSRRd = FormFactors::BSLL(mu, e, d, d, sminputs, U, ml, mnu, mH);
-      complex<double> CSRRs = FormFactors::BSLL(mu, e, s, s, sminputs, U, ml ,mnu, mH);
+      std::complex<double> CSLLu = FormFactors::CSLL(mu, e, u, u, sminputs, U, ml, mnu, mH);
+      std::complex<double> CSLLd = FormFactors::BSLL(mu, e, d, d, sminputs, U, ml, mnu, mH);
+      std::complex<double> CSLLs = FormFactors::BSLL(mu, e, s, s, sminputs, U, ml, mnu, mH);
+      std::complex<double> CSLRu = FormFactors::CSLL(mu, e, u, u, sminputs, U, ml, mnu, mH);
+      std::complex<double> CSLRd = FormFactors::BSLL(mu, e, d, d, sminputs, U, ml, mnu, mH);
+      std::complex<double> CSLRs = FormFactors::BSLL(mu, e, s, s, sminputs, U, ml, mnu, mH);
+      std::complex<double> CSRLu = FormFactors::CSLL(mu, e, u, u, sminputs, U, ml ,mnu, mH);
+      std::complex<double> CSRLd = FormFactors::BSLL(mu, e, d, d, sminputs, U, ml ,mnu, mH);
+      std::complex<double> CSRLs = FormFactors::BSLL(mu, e, s, s, sminputs, U, ml ,mnu, mH);
+      std::complex<double> CSRRu = FormFactors::CSLL(mu, e, u, u, sminputs, U, ml ,mnu, mH);
+      std::complex<double> CSRRd = FormFactors::BSLL(mu, e, d, d, sminputs, U, ml, mnu, mH);
+      std::complex<double> CSRRs = FormFactors::BSLL(mu, e, s, s, sminputs, U, ml ,mnu, mH);
 
       double Qu = 2./3.;
-      complex<double> gVLu = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qu * (0. - k2r) - 0.5*(CVLLu + CVLRu));
-      complex<double> gSLu = -1./(sqrt(2)*sminputs.GF)*(CSLLu + CSLRu);
-      complex<double> gVRu = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qu * (k1r - k2l) - 0.5*(CVRRu + CVRLu));
-      complex<double> gSRu = -1./(sqrt(2)*sminputs.GF)*(CSRRu + CSRLu);
+      std::complex<double> gVLu = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qu * (0. - k2r) - 0.5*(CVLLu + CVLRu));
+      std::complex<double> gSLu = -1./(sqrt(2)*sminputs.GF)*(CSLLu + CSLRu);
+      std::complex<double> gVRu = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qu * (k1r - k2l) - 0.5*(CVRRu + CVRLu));
+      std::complex<double> gSRu = -1./(sqrt(2)*sminputs.GF)*(CSRRu + CSRLu);
 
       double Qd = -1./3.;
-      complex<double> gVLd = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qd * (0. - k2r) - 0.5*(CVLLd + CVLRd));
-      complex<double> gSLd = -1./(sqrt(2)*sminputs.GF)*(CSLLd + CSLRd);
-      complex<double> gVRd = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qd * (k1r - k2l) - 0.5*(CVRRd + CVRLd));
-      complex<double> gSRd = -1./(sqrt(2)*sminputs.GF)*(CSRRd + CSRLd);
+      std::complex<double> gVLd = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qd * (0. - k2r) - 0.5*(CVLLd + CVLRd));
+      std::complex<double> gSLd = -1./(sqrt(2)*sminputs.GF)*(CSLLd + CSLRd);
+      std::complex<double> gVRd = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qd * (k1r - k2l) - 0.5*(CVRRd + CVRLd));
+      std::complex<double> gSRd = -1./(sqrt(2)*sminputs.GF)*(CSRRd + CSRLd);
 
       double Qs = -1./3.;
-      complex<double> gVLs = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qs * (0. - k2r) - 0.5*(CVLLs + CVLRs));
-      complex<double> gSLs = -1./(sqrt(2)*sminputs.GF)*(CSLLs + CSLRs);
-      complex<double> gVRs = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qs * (k1r - k2l) - 0.5*(CVRRs + CVRLs));
-      complex<double> gSRs = -1./(sqrt(2)*sminputs.GF)*(CSRRs + CSRLs);
+      std::complex<double> gVLs = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qs * (0. - k2r) - 0.5*(CVLLs + CVLRs));
+      std::complex<double> gSLs = -1./(sqrt(2)*sminputs.GF)*(CSLLs + CSLRs);
+      std::complex<double> gVRs = sqrt(2)/sminputs.GF * (4.*pi / sminputs.alphainv * Qs * (k1r - k2l) - 0.5*(CVRRs + CVRLs));
+      std::complex<double> gSRs = -1./(sqrt(2)*sminputs.GF)*(CSRRs + CSRLs);
 
       double GVup = 2, GVdn = 2, GVdp = 1, GVun = 1, GVsp = 0, GVsn = 0;
       double GSup = 5.1, GSdn = 5.1, GSdp = 4.3, GSun = 4.3, GSsp = 2.5, GSsn = 2.5;
@@ -2304,8 +2342,8 @@ namespace Gambit
       Eigen::Matrix3cd Vnu = *Dep::SeesawI_Vnu;
       Eigen::Matrix3cd Theta = *Dep::SeesawI_Theta;
 
-      vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
-      Eigen::Matrix<complex<double>,3,6> U;
+      std::vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
+      Eigen::Matrix<std::complex<double>,3,6> U;
 
       for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
@@ -2314,7 +2352,7 @@ namespace Gambit
           U(i,j+3) = Theta(i,j);
         }
 
-      complex<double> g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR;
+      std::complex<double> g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR;
       RHN_mue_FF(sminputs, mnu, U, *Param["mH"], g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR);
 
       // Parameters for Ti, from Table 1 in 1209.2679 for Ti
@@ -2323,7 +2361,7 @@ namespace Gambit
       double hbar = 6.582119514e-25; // GeV * s
       double GammaCapt = 2.59e6 * hbar;
 
-      result = (pow(sminputs.GF,2)*pow(sminputs.mMu,5)*pow(Zeff,4)*pow(Fp,2)) / (8.*pow(pi,4)*pow(sminputs.alphainv,3)*Z*GammaCapt) * (norm((Z+N)*(g0VL + g0SL) + (Z-N)*(g1VL + g1SL)) + norm((Z+N)*(g0VR + g0SR) + (Z-N)*(g1VR + g1SR)));
+      result = (pow(sminputs.GF,2)*pow(sminputs.mMu,5)*pow(Zeff,4)*pow(Fp,2)) / (8.*pow(pi,4)*pow(sminputs.alphainv,3)*Z*GammaCapt) * (std::norm((Z+N)*(g0VL + g0SL) + (Z-N)*(g1VL + g1SL)) + std::norm((Z+N)*(g0VR + g0SR) + (Z-N)*(g1VR + g1SR)));
 
     }
 
@@ -2336,8 +2374,8 @@ namespace Gambit
       Eigen::Matrix3cd Vnu = *Dep::SeesawI_Vnu;
       Eigen::Matrix3cd Theta = *Dep::SeesawI_Theta;
 
-      vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
-      Eigen::Matrix<complex<double>,3,6> U;
+      std::vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
+      Eigen::Matrix<std::complex<double>,3,6> U;
 
       for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
@@ -2346,7 +2384,7 @@ namespace Gambit
           U(i,j+3) = Theta(i,j);
         }
 
-      complex<double> g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR;
+      std::complex<double> g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR;
       RHN_mue_FF(sminputs, mnu, U, *Param["mH"], g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR);
 
 
@@ -2356,7 +2394,7 @@ namespace Gambit
       double hbar = 6.582119514e-25; // GeV * s
       double GammaCapt = 13.07e6 * hbar;
 
-      result = (pow(sminputs.GF,2)*pow(sminputs.mMu,5)*pow(Zeff,4)*pow(Fp,2)) / (8.*pow(pi,4)*pow(sminputs.alphainv,3)*Z*GammaCapt) * (norm((Z+N)*(g0VL + g0SL) + (Z-N)*(g1VL + g1SL)) + norm((Z+N)*(g0VR + g0SR) + (Z-N)*(g1VR + g1SR)));
+      result = (pow(sminputs.GF,2)*pow(sminputs.mMu,5)*pow(Zeff,4)*pow(Fp,2)) / (8.*pow(pi,4)*pow(sminputs.alphainv,3)*Z*GammaCapt) * (std::norm((Z+N)*(g0VL + g0SL) + (Z-N)*(g1VL + g1SL)) + std::norm((Z+N)*(g0VR + g0SR) + (Z-N)*(g1VR + g1SR)));
 
     }
 
@@ -2370,8 +2408,8 @@ namespace Gambit
       Eigen::Matrix3cd Vnu = *Dep::SeesawI_Vnu;
       Eigen::Matrix3cd Theta = *Dep::SeesawI_Theta;
 
-      vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
-      Eigen::Matrix<complex<double>,3,6> U;
+      std::vector<double> mnu = {real(m_nu(0,0)), real(m_nu(1,1)), real(m_nu(2,2)), *Param["M_1"], *Param["M_2"], *Param["M_3"]};
+      Eigen::Matrix<std::complex<double>,3,6> U;
 
       for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
@@ -2380,7 +2418,7 @@ namespace Gambit
           U(i,j+3) = Theta(i,j);
         }
 
-      complex<double> g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR;
+      std::complex<double> g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR;
       RHN_mue_FF(sminputs, mnu, U, *Param["mH"], g0SL, g0SR, g0VL, g0VR, g1SL, g1SR, g1VL, g1VR);
 
       // Parameters for Pb, from Table 1 in 1209.2679 for Pb
@@ -2389,7 +2427,7 @@ namespace Gambit
       double hbar = 6.582119514e-25; // GeV * s
       double GammaCapt = 13.45e6 * hbar;
 
-      result = (pow(sminputs.GF,2)*pow(sminputs.mMu,5)*pow(Zeff,4)*pow(Fp,2)) / (8.*pow(pi,4)*pow(sminputs.alphainv,3)*Z*GammaCapt) * (norm((Z+N)*(g0VL + g0SL) + (Z-N)*(g1VL + g1SL)) + norm((Z+N)*(g0VR + g0SR) + (Z-N)*(g1VR + g1SR)));
+      result = (pow(sminputs.GF,2)*pow(sminputs.mMu,5)*pow(Zeff,4)*pow(Fp,2)) / (8.*pow(pi,4)*pow(sminputs.alphainv,3)*Z*GammaCapt) * (std::norm((Z+N)*(g0VL + g0SL) + (Z-N)*(g1VL + g1SL)) + std::norm((Z+N)*(g0VR + g0SR) + (Z-N)*(g1VR + g1SR)));
     }
 
 
@@ -2429,11 +2467,11 @@ namespace Gambit
       }
 
      theory[0] = *Dep::muegamma;
-     if(flav_debug) cout << "mu- -> e- gamma = " << theory[0] << endl;
+     if(flav_debug) std::cout << "mu- -> e- gamma = " << theory[0] << std::endl;
      theory[1] = *Dep::tauegamma;
-     if(flav_debug) cout << "tau- -> e- gamma = " << theory[1] << endl;
+     if(flav_debug) std::cout << "tau- -> e- gamma = " << theory[1] << std::endl;
      theory[2] = *Dep::taumugamma;
-     if(flav_debug) cout << "tau- -> mu- gamma = " << theory[2] << endl;
+     if(flav_debug) std::cout << "tau- -> mu- gamma = " << theory[2] << std::endl;
 
      result = 0;
      for (int i = 0; i < 3; ++i)
@@ -2486,19 +2524,19 @@ namespace Gambit
       }
 
      theory[0] = *Dep::mueee;
-     if(flav_debug) cout << "mu-  -> e-  e-  e+  = " << theory[0] << endl;
+     if(flav_debug) std::cout << "mu-  -> e-  e-  e+  = " << theory[0] << std::endl;
      theory[1] = *Dep::taueee;
-     if(flav_debug) cout << "tau- -> e-  e-  e+  = " << theory[1] << endl;
+     if(flav_debug) std::cout << "tau- -> e-  e-  e+  = " << theory[1] << std::endl;
      theory[2] = *Dep::taumumumu;
-     if(flav_debug) cout << "tau- -> mu- mu- mu+ = " << theory[2] << endl;
+     if(flav_debug) std::cout << "tau- -> mu- mu- mu+ = " << theory[2] << std::endl;
      theory[3] = *Dep::taumuee;
-     if(flav_debug) cout << "tau- -> mu- e-  e-  = " << theory[3] << endl;
+     if(flav_debug) std::cout << "tau- -> mu- e-  e-  = " << theory[3] << std::endl;
      theory[4] = *Dep::taueemu;
-     if(flav_debug) cout << "tau- -> e-  e-  mu+ = " << theory[4] << endl;
+     if(flav_debug) std::cout << "tau- -> e-  e-  mu+ = " << theory[4] << std::endl;
      theory[5] = *Dep::tauemumu;
-     if(flav_debug) cout << "tau- -> e-  mu- mu+ = " << theory[5] << endl;
+     if(flav_debug) std::cout << "tau- -> e-  mu- mu+ = " << theory[5] << std::endl;
      theory[6] = *Dep::taumumue;
-     if(flav_debug) cout << "tau- -> mu- mu- e+  = " << theory[6] << endl;
+     if(flav_debug) std::cout << "tau- -> mu- mu- e+  = " << theory[6] << std::endl;
 
      result = 0;
      for (int i = 0; i < 7; ++i)
@@ -2544,11 +2582,11 @@ namespace Gambit
       }
 
       theory[0] = *Dep::mueTi;
-      if(flav_debug) cout << "mu - e (Ti) = " << theory[0] << endl;
+      if(flav_debug) std::cout << "mu - e (Ti) = " << theory[0] << std::endl;
       theory[1] = *Dep::mueAu;
-      if(flav_debug) cout << "mu - e (Au) = " << theory[1] << endl;
+      if(flav_debug) std::cout << "mu - e (Au) = " << theory[1] << std::endl;
       theory[2] = *Dep::muePb;
-      if(flav_debug) cout << "mu - e (Pb) = " << theory[2] << endl;
+      if(flav_debug) std::cout << "mu - e (Pb) = " << theory[2] << std::endl;
 
       result = 0;
       for (int i = 0; i < n_measurements; ++i)
@@ -2568,7 +2606,7 @@ namespace Gambit
       static bool first = true;
       if (first)
       {
-        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << endl;
+        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << std::endl;
         nDimGaussian.Read();
         first = false;
       }
@@ -2598,7 +2636,7 @@ namespace Gambit
       if (first)                                                                  \
       {                                                                           \
         if (flav_debug) std::cout << "Debug: Reading HepLike data file: " <<      \
-         inputfile << endl;                                                       \
+         inputfile << std::endl;                                                       \
         gaussian.Read();                                                          \
         first = false;                                                            \
       }                                                                           \
@@ -2632,7 +2670,7 @@ namespace Gambit
 
       if (first)
       {
-        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << endl;
+        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << std::endl;
         nDimLikelihood.Read();
         update_obs_list(obs_list, nDimLikelihood.GetObservables());
         first = false;
@@ -2660,7 +2698,7 @@ namespace Gambit
       static bool first = true;
       if (first)
       {
-        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << endl;
+        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << std::endl;
         nDimLikelihood.Read();
         update_obs_list(obs_list, nDimLikelihood.GetObservables());
         first = false;
@@ -2688,7 +2726,7 @@ namespace Gambit
       static bool first = true;
       if (first)
       {
-        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << endl;
+        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << std::endl;
         nDimLikelihood.Read();
         update_obs_list(obs_list, nDimLikelihood.GetObservables());
         first = false;
@@ -2726,7 +2764,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < nDimGaussian.size(); ++i)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << std::endl;
           nDimGaussian[i].Read();
         }
         update_obs_list(obs_list, nDimGaussian[0].GetObservables());
@@ -2773,7 +2811,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < nDimBifurGaussian.size(); i++)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << std::endl;
           nDimBifurGaussian[i].Read();
         }
         update_obs_list(obs_list, nDimBifurGaussian[0].GetObservables());
@@ -2823,7 +2861,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < nDimBifurGaussian.size(); i++)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << std::endl;
           nDimBifurGaussian[i].Read();
         }
         update_obs_list(obs_list, nDimBifurGaussian[0].GetObservables());
@@ -2871,7 +2909,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < nDimBifurGaussian.size(); i++)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << std::endl;
           nDimBifurGaussian[i].Read();
         }
         update_obs_list(obs_list, nDimBifurGaussian[0].GetObservables());
@@ -2926,7 +2964,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < nDimBifurGaussian.size(); i++)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << std::endl;
           nDimBifurGaussian[i].Read();
         }
         update_obs_list(obs_list, nDimBifurGaussian[0].GetObservables());
@@ -2982,7 +3020,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < nDimGaussian.size(); i++)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << std::endl;
           nDimGaussian[i].Read();
         }
         update_obs_list(obs_list, nDimGaussian[0].GetObservables());
@@ -3023,7 +3061,7 @@ namespace Gambit
       static bool first = true;
       if (first)
       {
-        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << endl;
+        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << std::endl;
         nDimGaussian.Read();
         first = false;
       }
@@ -3072,7 +3110,7 @@ namespace Gambit
         {
           for (unsigned int i = 0; i < nDimGaussian.size(); i++)
             {
-              if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << endl;
+              if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << i << std::endl;
               nDimGaussian[i].Read();
             }
           update_obs_list(obs_list, nDimGaussian[0].GetObservables());
@@ -3118,7 +3156,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < BifurGaussian.size(); i++)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << std::endl;
           BifurGaussian[i].Read();
         }
         first = false;
@@ -3164,7 +3202,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < Gaussian.size(); i++)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << std::endl;
           Gaussian[i].Read();
         }
         first = false;
@@ -3207,7 +3245,7 @@ namespace Gambit
       {
         for (unsigned int i = 0; i < BifurGaussian.size(); i++)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << endl;
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << std::endl;
           BifurGaussian[i].Read();
         }
         first = false;
@@ -3230,9 +3268,9 @@ namespace Gambit
     }
 
 
-    void HEPLike_RK_LogLikelihood(double &result)
+    void HEPLike_RK_LogLikelihood_LHCb(double &result)
     {
-      using namespace Pipes::HEPLike_RK_LogLikelihood;
+     using namespace Pipes::HEPLike_RK_LogLikelihood_LHCb;
 
       static const std::string inputfile = path_to_latest_heplike_data() + "/data/LHCb/RD/Rk/CERN-EP-2019-043.yaml";
       static HepLike_default::HL_ProfLikelihood ProfLikelihood(inputfile);
@@ -3240,19 +3278,18 @@ namespace Gambit
       static bool first = true;
       if (first)
       {
-        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << endl;
+        if (flav_debug) std::cout << "Debug: Reading HepLike data file: " << inputfile << std::endl;
         ProfLikelihood.Read();
 
         first = false;
       }
 
-      flav_prediction prediction = *Dep::prediction_RK_LHCb_1p1_6;
+      const double theory = *Dep::RK;
+      const double theory_variance = 0.001;
 
-      const double theory = prediction.central_values.begin()->second;
-      const double theory_variance = prediction.covariance.begin()->second.begin()->second;
-      result = ProfLikelihood.GetLogLikelihood(1. + theory, theory_variance);
+      result = ProfLikelihood.GetLogLikelihood(theory, theory_variance);
 
-      if (flav_debug) std::cout << "HEPLike_RK_LogLikelihood result: " << result << std::endl;
+      if (flav_debug) std::cout << "HEPLike_RK_LogLikelihood_LHC_LHCb result: " << result << std::endl;
     }
 
 
@@ -3262,33 +3299,30 @@ namespace Gambit
       using namespace Pipes::HEPLike_RKstar_LogLikelihood_LHCb;
 
       static const std::string inputfile = path_to_latest_heplike_data() + "/data/LHCb/RD/RKstar/CERN-EP-2017-100_q2_";
-      static std::vector<HepLike_default::HL_ProfLikelihood> ProfLikelihood = {
-        HepLike_default::HL_ProfLikelihood(inputfile + "0.045_1.1.yaml"),
-        HepLike_default::HL_ProfLikelihood(inputfile + "1.1_6.yaml")
-      };
+      static std::vector<HepLike_default::HL_ProfLikelihood> ProfLikelihood;
+
+      std::vector<double> prediction = {*Dep::RKstar_0045_11, *Dep::RKstar_11_60};
+      std::vector<str> bins = {"0.045_1.1", "1.1_6"};
 
       static bool first = true;
       if (first)
       {
-        for (unsigned int i = 0; i < ProfLikelihood.size(); i++)
+        for(str bin : bins)
         {
-          if (flav_debug) std::cout << "Debug: Reading HepLike data file " << i << endl;
-          ProfLikelihood[i].Read();
+          ProfLikelihood.push_back(HepLike_default::HL_ProfLikelihood(inputfile + bin + ".yaml"));
+          if (flav_debug) std::cout << "Debug: Reading HepLike data file " <<  inputfile + bin + ".yaml"  << std::endl;
+          ProfLikelihood[ProfLikelihood.size()-1].Read();
+
         }
         first = false;
       }
 
-      std::vector<flav_prediction> prediction = {
-        *Dep::prediction_RKstar_LHCb_0p045_1p1,
-        *Dep::prediction_RKstar_LHCb_1p1_6
-      };
-
       result = 0;
       for (unsigned int i = 0; i < ProfLikelihood.size(); i++)
       {
-        const double theory = prediction[i].central_values.begin()->second;
-        const double theory_variance = prediction[i].covariance.begin()->second.begin()->second;
-        result += ProfLikelihood[i].GetLogLikelihood(1. + theory, theory_variance);
+        const double theory = prediction[i];
+        const double theory_variance = 0.0;
+        result += ProfLikelihood[i].GetLogLikelihood(theory, theory_variance);
       }
 
       if (flav_debug) std::cout << "HEPLike_RKstar_LogLikelihood_LHCb result: " << result << std::endl;
@@ -3302,4 +3336,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:47 +0000
+Updated on 2023-06-26 at 21:36:55 +0000

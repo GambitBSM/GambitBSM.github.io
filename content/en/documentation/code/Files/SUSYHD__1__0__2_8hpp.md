@@ -104,7 +104,7 @@ Authors (add name and sate if you modify):
 
 LOAD_LIBRARY
 
-BE_ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+BE_ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT, MSSM63atMGUT_mG, MSSM63atQ_mG)
 
 BE_FUNCTION(MHiggs, MReal, (const MList<MReal>&), "MHiggs", "SUSYHD_MHiggs")
 BE_FUNCTION(DeltaMHiggs, MReal, (const MList<MReal>&), "\\[CapitalDelta]MHiggs", "SUSYHD_DeltaMHiggs")
@@ -123,4 +123,4 @@ BE_INI_DEPENDENCY(unimproved_MSSM_spectrum, Spectrum)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

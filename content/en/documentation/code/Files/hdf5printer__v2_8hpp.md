@@ -38,9 +38,17 @@ description: "[No description available]"
 ## Detailed Description
 
 
-**Author**: Ben Farmer ([b.farmer@imperial.ac.uk](mailto:b.farmer@imperial.ac.uk)) 
+**Author**: 
 
-**Date**: 2019 Jan
+  * Ben Farmer ([b.farmer@imperial.ac.uk](mailto:b.farmer@imperial.ac.uk)) 
+  * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
+
+
+**Date**: 
+
+  * 2019 Jan
+  * 2020 June
+
 
 HDF5 printer version 2
 
@@ -106,6 +114,10 @@ void _print(elem const&, const std::string&, const int, const uint, const ulong)
 ///  \author Ben Farmer
 ///          (b.farmer@imperial.ac.uk)
 ///  \date 2019 Jan
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 June
 ///
 ///  *********************************************
 
@@ -295,6 +307,22 @@ namespace Gambit
          HDF5DataSet(const std::string& name)
            : HDF5DataSetBase(name,get_hdf5_data_type<T>::type())
          {}
+
+         /// Write a single piece of data to disk at the target position
+         std::size_t write_single(const hid_t loc_id, const T& data, const std::size_t target_pos, const bool force=false)
+         {
+             open_dataset(loc_id);
+             T buffer[MAX_BUFFER_SIZE];
+
+             buffer[0] = data;
+
+             write_buffer(buffer,1,target_pos,force);
+
+             std::size_t new_dset_size = get_dset_length();
+             close_dataset();
+
+             return new_dset_size;
+         }
 
          /// Write a vector of data to disk at the target position
          std::size_t write_vector(const hid_t loc_id, const std::vector<T>& data, const std::size_t target_pos, const bool force=false)
@@ -1262,7 +1290,7 @@ namespace Gambit
       public:
 
         /// Constructor
-        HDF5MasterBuffer(const std::string& filename, const std::string& groupname, const bool sync, const std::size_t buffer_length
+        HDF5MasterBuffer(const std::string& filename, const std::string& groupname, const std::string& metadata_groupname, const bool sync, const std::size_t buffer_length
 #ifdef WITH_MPI
           , GMPI::Comm& comm
 #endif
@@ -1330,6 +1358,9 @@ namespace Gambit
 
         /// Empty all buffers to disk
         void flush();
+
+        /// Print metadata directly to disk
+        void print_metadata(std::map<std::string,std::string>, bool);
 
         #ifdef WITH_MPI
         /// Gather all buffer data on a certain rank process
@@ -1407,6 +1438,9 @@ namespace Gambit
         /// Report which group in the output file we are targeting
         std::string get_group();
 
+        /// Report the name of the metadata group on this file
+        std::string get_metadata_group();
+
         /// Report length of buffer for HDF5 output
         std::size_t get_buffer_length();
 
@@ -1428,8 +1462,14 @@ namespace Gambit
         /// Retrieve the location_id specifying where output should be created in the HDF5 file
         hid_t get_location_id();
 
+        /// Retrieve the metadata_id where the metadata should be created in the HDF5 file
+        hid_t get_metadata_id();
+
         /// Get next available position in the synchronised output datasets
         std::size_t get_next_free_position();
+
+        /// Get the next position for metadata entries
+        std::size_t get_next_metadata_position();
 
         /// Report number of buffers that we are managing
         std::size_t get_Nbuffers();
@@ -1490,10 +1530,12 @@ namespace Gambit
         /// Output file variales
         std::string file;  // Output HDF5 file
         std::string group; // HDF5 group location to store datasets
+        std::string metadata_group; // HDF5 group location to store metadata
 
         // Handles for HDF5 files and groups containing the datasets
         hid_t file_id;
         hid_t group_id;
+        hid_t metadata_id;
 
         // Handle to a location in a HDF5 to which the datasets will be written
         // i.e. a file or a group.
@@ -1556,6 +1598,9 @@ namespace Gambit
         /// Report group in output HDF5 file of output datasets
         std::string get_groupname();
 
+        /// Report metadata group in HDF5 file
+        std::string get_metadata_groupname();
+
         /// Report length of buffer for HDF5 output
         std::size_t get_buffer_length();
 
@@ -1584,6 +1629,10 @@ namespace Gambit
           BOOST_PP_SEQ_FOR_EACH_I(DECLARE_PRINT, , HDF5_BACKEND_TYPES)
         #endif
         #undef DECLARE_PRINT
+
+        // Print metadata info to file
+        void _print_metadata(map_str_str);
+
         ///@}
 
         /// Add buffer to the primary printers records
@@ -1608,6 +1657,9 @@ namespace Gambit
 
         std::size_t myRank;
         std::size_t mpiSize;
+
+        /// Last PPID pair printed
+        PPIDpair lastPointID;
 
 #ifdef WITH_MPI
         /// Gambit MPI communicator context for use within the hdf5 printer system
@@ -1640,6 +1692,9 @@ namespace Gambit
         /// Determine target group in output HDF5 file from options
         std::string get_groupname(const Options& options);
 
+        /// Get the name of the metadata group
+        std::string get_metadata_groupname(const Options& options);
+
         /// Get length of buffer from options (or primary printer)
         std::size_t get_buffer_length(const Options& options);
 
@@ -1663,6 +1718,9 @@ namespace Gambit
         {
             // Forward the print information on to the master buffer manager object
             buffermaster.schedule_print<T>(value,label,mpirank,pointID);
+
+            // Update the last printed point ID
+            lastPointID = PPIDpair(pointID, mpirank);
         }
 
         template<typename T>
@@ -1704,4 +1762,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

@@ -36,12 +36,15 @@ Inherited by [Gambit::Printers::BasePrinter](/documentation/code/classes/classga
 | void | **[enable](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-enable)**() |
 | template <typename T \> <br>void | **[print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const int vertexID, const uint rank, const ulong pointID) |
 | template <typename T \> <br>void | **[print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID) |
+| void | **[print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) datasets) |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong) |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Same for overloaded function.  |
+| virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) ) |
 
 ## Protected Attributes
 
@@ -244,6 +247,15 @@ inline void print(
 ```
 
 
+### function print_metadata
+
+```
+inline void print_metadata(
+    map_str_str datasets
+)
+```
+
+
 ## Protected Functions Documentation
 
 ### function _print
@@ -261,6 +273,32 @@ inline void _print(
 
 
 Default _print function. Throws an error if no matching virtual function for the type of the attempted print is found. 
+
+
+### function _print
+
+```
+template <typename T >
+inline void _print(
+    T const & in,
+    const std::string & label,
+    const uint rank,
+    const ulong pointID
+)
+```
+
+Same for overloaded function. 
+
+### function _print_metadata
+
+```
+inline virtual void _print_metadata(
+    map_str_str 
+)
+```
+
+
+**Reimplemented by**: [Gambit::Printers::asciiPrinter::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-print-metadata), [Gambit::Printers::coutPrinter::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1coutprinter/#function-print-metadata), [Gambit::Printers::HDF5Printer::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer/#function-print-metadata), [Gambit::Printers::HDF5Printer2::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-print-metadata), [Gambit::Printers::nonePrinter::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1noneprinter/#function-print-metadata), [Gambit::Printers::SQLitePrinter::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-print-metadata)
 
 
 ## Protected Attributes Documentation
@@ -283,4 +321,4 @@ Counter for printer cooldown. If non-zero printer can be disabled for a fixed nu
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

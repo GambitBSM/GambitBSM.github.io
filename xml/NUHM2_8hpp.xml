@@ -2,33 +2,19 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="NUHM2_8hpp" kind="file" language="C++">
     <compoundname>NUHM2.hpp</compoundname>
-    <includes refid="MSSM30atMGUT_8hpp" local="yes">gambit/Models/models/MSSM30atMGUT.hpp</includes>
+    <includes refid="MSSMatMGUT_8hpp" local="yes">gambit/Models/models/MSSMatMGUT.hpp</includes>
     <includedby refid="NUHM1_8hpp" local="yes">NUHM1.hpp</includedby>
     <includedby refid="NUHM2_8cpp" local="yes">NUHM2.cpp</includedby>
     <incdepgraph>
       <node id="2">
-        <label>gambit/Models/models/MSSM30atMGUT.hpp</label>
-        <link refid="MSSM30atMGUT_8hpp_source"/>
+        <label>gambit/Models/models/MSSMatMGUT.hpp</label>
+        <link refid="MSSMatMGUT_8hpp_source"/>
         <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>gambit/Models/models/MSSM30atQ.hpp</label>
-        <link refid="MSSM30atQ_8hpp_source"/>
-        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="3">
-        <label>gambit/Models/models/MSSM63atMGUT.hpp</label>
-        <link refid="MSSM63atMGUT_8hpp_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>gambit/Models/models/MSSM63atQ.hpp</label>
-        <link refid="MSSM63atQ_8hpp_source"/>
+        <label>gambit/Models/models/MSSMatQ.hpp</label>
+        <link refid="MSSMatQ_8hpp_source"/>
       </node>
       <node id="1">
         <label>NUHM2.hpp</label>
@@ -116,8 +102,7 @@
 <para><hruler/>
 </para>
 <para>Authors (add name and date if you modify):</para>
-<para><simplesect kind="author"><para>Pat Scott <linebreak/>
- (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
 </simplesect>
 <simplesect kind="date"><para>2015 Sep</para>
 </simplesect>
@@ -129,13 +114,13 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
 <codeline lineno="4"><highlight class="comment">///</highlight></codeline>
-<codeline lineno="5"><highlight class="comment">///<sp/><sp/>NUHM2<sp/>model<sp/>declaration.<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>NUHM2<sp/>model<sp/>declaration.</highlight></codeline>
 <codeline lineno="6"><highlight class="comment">///</highlight></codeline>
 <codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
 <codeline lineno="8"><highlight class="comment">///</highlight></codeline>
 <codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
-<codeline lineno="10"><highlight class="comment">///<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott<sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
 <codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
 <codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Sep</highlight></codeline>
 <codeline lineno="14"><highlight class="comment">///</highlight></codeline>
@@ -145,7 +130,7 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__NUHM2_hpp__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Must<sp/>include<sp/>models<sp/>which<sp/>are<sp/>targets<sp/>of<sp/>translation<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Models/models/MSSM30atMGUT.hpp&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Models/models/MSSMatMGUT.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>NUHM2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM63atMGUT</highlight><highlight class="normal"></highlight></codeline>

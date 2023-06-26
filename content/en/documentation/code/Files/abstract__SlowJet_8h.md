@@ -93,7 +93,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual double dNext() const =0;
     
-                virtual void list(bool, ::std::basic_ostream<char>&) const =0;
+                virtual void list(bool, std::ostream&) const =0;
     
                 virtual void list__BOSS(bool) const =0;
     
@@ -165,4 +165,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

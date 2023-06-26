@@ -2,25 +2,25 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes" kind="struct" language="C++" prot="public">
     <compoundname>Gambit::ColliderBit::AnalysisLogLikes</compoundname>
-    <includes refid="ColliderBit__types_8hpp" local="no">ColliderBit_types.hpp</includes>
+    <includes refid="AnalysisLogLikes_8hpp" local="no">AnalysisLogLikes.hpp</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a112c6f1013a6c699879804bdf8cb0f73" prot="public" static="no" mutable="no">
-        <type>std::map&lt; std::string, int &gt;</type>
-        <definition>std::map&lt;std::string,int&gt; Gambit::ColliderBit::AnalysisLogLikes::sr_indices</definition>
+      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a1aca426a87b055d17b3eb0e3534580a2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Gambit::ColliderBit::AnalysisLogLikes::sr_labels</definition>
         <argsstring></argsstring>
-        <name>sr_indices</name>
-        <qualifiedname>Gambit::ColliderBit::AnalysisLogLikes::sr_indices</qualifiedname>
+        <name>sr_labels</name>
+        <qualifiedname>Gambit::ColliderBit::AnalysisLogLikes::sr_labels</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" line="75" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" bodystart="75" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="39" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1acd14e37088e60a410f343f6ad54709d7" prot="public" static="no" mutable="no">
-        <type>std::map&lt; std::string, double &gt;</type>
-        <definition>std::map&lt;std::string,double&gt; Gambit::ColliderBit::AnalysisLogLikes::sr_loglikes</definition>
+      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1ab1e084a254007bc57b5b023f4da3b659" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::ColliderBit::AnalysisLogLikes::sr_loglikes</definition>
         <argsstring></argsstring>
         <name>sr_loglikes</name>
         <qualifiedname>Gambit::ColliderBit::AnalysisLogLikes::sr_loglikes</qualifiedname>
@@ -30,7 +30,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" line="76" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" bodystart="76" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="42" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a029146ef13b24c48b872cfa34b3d7a6a" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; double &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;double&gt; &gt; Gambit::ColliderBit::AnalysisLogLikes::alt_sr_loglikes</definition>
+        <argsstring></argsstring>
+        <name>alt_sr_loglikes</name>
+        <qualifiedname>Gambit::ColliderBit::AnalysisLogLikes::alt_sr_loglikes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="45" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a5a7d2614659485e7653c07bf766eaef8" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -44,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" line="78" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" bodystart="78" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="47" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1aed33730d5431f0f66f793489f5361b53" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -58,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" line="79" column="11" bodyfile="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" bodystart="79" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="48" column="11" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a7ece185c06e414e895080d1a82f26b6b" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -72,7 +86,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" line="80" column="14" bodyfile="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" bodystart="80" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="49" column="14" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1aab50a7095248831fc977587c627672a9" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; Gambit::ColliderBit::AnalysisLogLikes::alt_combination_loglikes</definition>
+        <argsstring></argsstring>
+        <name>alt_combination_loglikes</name>
+        <qualifiedname>Gambit::ColliderBit::AnalysisLogLikes::alt_combination_loglikes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="50" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="50" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -88,7 +116,74 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" line="82" column="7" bodyfile="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" bodystart="82" bodyend="86"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="52" column="7" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1ace04557e95bfadef33f93172eac37162" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::AnalysisLogLikes::initialize</definition>
+        <argsstring>(const AnalysisData &amp;adata_in, const std::vector&lt; std::string &gt; &amp;alt_loglike_keys={})</argsstring>
+        <name>initialize</name>
+        <qualifiedname>Gambit::ColliderBit::AnalysisLogLikes::initialize</qualifiedname>
+        <param>
+          <type>const <ref refid="structGambit_1_1ColliderBit_1_1AnalysisData" kindref="compound">AnalysisData</ref> &amp;</type>
+          <declname>adata_in</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>alt_loglike_keys</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="60" column="12" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="60" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a097e6a30ada502eec9481ab07922a776" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::AnalysisLogLikes::set_no_signal_result_combination</definition>
+        <argsstring>(std::string combination_sr_label_in, int combination_sr_index_in)</argsstring>
+        <name>set_no_signal_result_combination</name>
+        <qualifiedname>Gambit::ColliderBit::AnalysisLogLikes::set_no_signal_result_combination</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>combination_sr_label_in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>combination_sr_index_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="81" column="12" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="81" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a209f69fc059089caeeae910382ca1b67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::AnalysisLogLikes::set_no_signal_result_all_SRs</definition>
+        <argsstring>(std::string combination_sr_label_in, int combination_sr_index_in)</argsstring>
+        <name>set_no_signal_result_all_SRs</name>
+        <qualifiedname>Gambit::ColliderBit::AnalysisLogLikes::set_no_signal_result_all_SRs</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>combination_sr_label_in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>combination_sr_index_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="93" column="12" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="93" bodyend="105"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,14 +203,19 @@
         <label>string</label>
       </node>
     </collaborationgraph>
-    <location file="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" line="73" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp" bodystart="74" bodyend="87"/>
+    <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" line="36" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisLogLikes.hpp" bodystart="37" bodyend="107"/>
     <listofallmembers>
+      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1aab50a7095248831fc977587c627672a9" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>alt_combination_loglikes</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a029146ef13b24c48b872cfa34b3d7a6a" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>alt_sr_loglikes</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a6e90c3a9c54f56e6973f3eaed37db72e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>AnalysisLogLikes</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a7ece185c06e414e895080d1a82f26b6b" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>combination_loglike</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1aed33730d5431f0f66f793489f5361b53" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>combination_sr_index</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a5a7d2614659485e7653c07bf766eaef8" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>combination_sr_label</name></member>
-      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a112c6f1013a6c699879804bdf8cb0f73" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>sr_indices</name></member>
-      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1acd14e37088e60a410f343f6ad54709d7" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>sr_loglikes</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1ace04557e95bfadef33f93172eac37162" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>initialize</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a209f69fc059089caeeae910382ca1b67" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>set_no_signal_result_all_SRs</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a097e6a30ada502eec9481ab07922a776" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>set_no_signal_result_combination</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1a1aca426a87b055d17b3eb0e3534580a2" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>sr_labels</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes_1ab1e084a254007bc57b5b023f4da3b659" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisLogLikes</scope><name>sr_loglikes</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

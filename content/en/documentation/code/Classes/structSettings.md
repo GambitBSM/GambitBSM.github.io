@@ -16,6 +16,8 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | | **[Settings](/documentation/code/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
+| | **[Settings](/documentation/code/classes/structsettings/#function-settings)**(int _nDims =0, int _nDerived =0) |
 
 ## Public Attributes
 
@@ -52,8 +54,29 @@ description: "[No description available]"
 | std::vector< double > | **[loglikes](/documentation/code/classes/structsettings/#variable-loglikes)**  |
 | std::vector< int > | **[nlives](/documentation/code/classes/structsettings/#variable-nlives)**  |
 | int | **[seed](/documentation/code/classes/structsettings/#variable-seed)**  |
+| bool | **[synchronous](/documentation/code/classes/structsettings/#variable-synchronous)**  |
 
 ## Public Functions Documentation
+
+### function Settings
+
+```
+Settings(
+    int _nDims =0,
+    int _nDerived =0
+)
+```
+
+
+### function Settings
+
+```
+Settings(
+    int _nDims =0,
+    int _nDerived =0
+)
+```
+
 
 ### function Settings
 
@@ -284,6 +307,13 @@ int seed;
 ```
 
 
+### variable synchronous
+
+```
+bool synchronous;
+```
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:42 +0000
+Updated on 2023-06-26 at 21:36:50 +0000

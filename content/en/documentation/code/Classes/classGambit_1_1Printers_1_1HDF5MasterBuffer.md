@@ -18,9 +18,10 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[HDF5MasterBuffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-hdf5masterbuffer)**(const std::string & filename, const std::string & groupname, const bool sync, const std::size_t buffer_length)<br>Constructor.  |
+| | **[HDF5MasterBuffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-hdf5masterbuffer)**(const std::string & filename, const std::string & groupname, const std::string & metadata_groupname, const bool sync, const std::size_t buffer_length)<br>Constructor.  |
 | | **[~HDF5MasterBuffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-hdf5masterbuffer)**()<br>Destructor.  |
 | void | **[flush](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-flush)**()<br>Empty all buffers to disk.  |
+| void | **[print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-print-metadata)**(std::map< std::string, std::string > , bool )<br>Print metadata directly to disk.  |
 | void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-reset)**()<br>Clear all data in buffers _**and on disk**_ for this printer.  |
 | void | **[resynchronise](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-resynchronise)**()<br>Make sure all buffers know about all points in all buffers.  |
 | bool | **[all_buffers_empty](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-all-buffers-empty)**()<br>Report whether all the buffers are empty.  |
@@ -28,6 +29,7 @@ description: "[No description available]"
 | std::string | **[buffer_status](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-buffer-status)**()<br>Report status of non-empty buffers (as a string message)  |
 | std::string | **[get_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-file)**()<br>Report what output file we are targeting.  |
 | std::string | **[get_group](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-group)**()<br>Report which group in the output file we are targeting.  |
+| std::string | **[get_metadata_group](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-metadata-group)**()<br>Report the name of the metadata group on this file.  |
 | std::size_t | **[get_buffer_length](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-buffer-length)**()<br>Report length of buffer for HDF5 output.  |
 | std::size_t | **[get_Npoints](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-npoints)**()<br>Report number of points currently in the buffer.  |
 | void | **[extend_all_datasets_to](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-extend-all-datasets-to)**(const std::size_t length)<br>Extend all datasets to the specified size;.  |
@@ -35,7 +37,9 @@ description: "[No description available]"
 | void | **[lock_and_open_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-lock-and-open-file)**(const char access_type ='w')<br>Open (and lock) output HDF5 file and obtain HDF5 handles.  |
 | void | **[close_and_unlock_file](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-close-and-unlock-file)**()<br>Close (and unlock) output HDF5 file and release HDF5 handles.  |
 | hid_t | **[get_location_id](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-location-id)**()<br>Retrieve the location_id specifying where output should be created in the HDF5 file.  |
+| hid_t | **[get_metadata_id](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-metadata-id)**()<br>Retrieve the metadata_id where the metadata should be created in the HDF5 file.  |
 | std::size_t | **[get_next_free_position](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-next-free-position)**()<br>Get next available position in the synchronised output datasets.  |
+| std::size_t | **[get_next_metadata_position](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-next-metadata-position)**()<br>Get the next position for metadata entries.  |
 | std::size_t | **[get_Nbuffers](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-nbuffers)**()<br>Report number of buffers that we are managing.  |
 | double | **[get_sizeMB](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-sizemb)**()<br>Report upper limit estimate of size of all buffer data in MB.  |
 | std::vector< std::pair< std::string, int > > | **[get_all_dset_names_on_disk](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/#function-get-all-dset-names-on-disk)**()<br>Get names and types of all datasets in the group that we are pointed at.  |
@@ -61,6 +65,7 @@ Class to manage all buffers for a given printer object Also handles the file loc
 HDF5MasterBuffer(
     const std::string & filename,
     const std::string & groupname,
+    const std::string & metadata_groupname,
     const bool sync,
     const std::size_t buffer_length
 )
@@ -91,6 +96,20 @@ Empty all buffers to disk (or as much of them as is currently possible in RA cas
 
 
 While we are here, check that buffered_points and buffered_points_set are the same size
+
+
+### function print_metadata
+
+```
+void print_metadata(
+    std::map< std::string, std::string > ,
+    bool 
+)
+```
+
+Print metadata directly to disk. 
+
+Print metadata directly to file. 
 
 
 ### function reset
@@ -155,6 +174,14 @@ std::string get_group()
 
 Report which group in the output file we are targeting. 
 
+### function get_metadata_group
+
+```
+std::string get_metadata_group()
+```
+
+Report the name of the metadata group on this file. 
+
 ### function get_buffer_length
 
 ```
@@ -217,6 +244,14 @@ hid_t get_location_id()
 
 Retrieve the location_id specifying where output should be created in the HDF5 file. 
 
+### function get_metadata_id
+
+```
+hid_t get_metadata_id()
+```
+
+Retrieve the metadata_id where the metadata should be created in the HDF5 file. 
+
 ### function get_next_free_position
 
 ```
@@ -226,6 +261,17 @@ std::size_t get_next_free_position()
 Get next available position in the synchronised output datasets. 
 
 Determine the next free index in the output datasets. 
+
+
+### function get_next_metadata_position
+
+```
+std::size_t get_next_metadata_position()
+```
+
+Get the next position for metadata entries. 
+
+Determine the next position for metadata entries. 
 
 
 ### function get_Nbuffers
@@ -310,4 +356,4 @@ Attempt to flush again every 1000 points beyond buffer limits
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

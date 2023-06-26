@@ -725,7 +725,7 @@ namespace Gambit
             else if(opts.at("homotopybackend") == "phc")
             {
                 // Getting path to PHC
-                std::string PathToPHC = Backends::backendInfo().path_dir("phc", "2.4.58");
+                std::string PathToPHC = Backends::backendInfo().path_dir("phc", "2.4.77");
                 // Creating symlink to PHC in run folder
                 std::string PHCSymlink = inputspath + "Homotopy/mpirank_"+ rankstring + "/";
 
@@ -1707,4 +1707,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

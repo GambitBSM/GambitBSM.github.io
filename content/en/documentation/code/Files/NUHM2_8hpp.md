@@ -19,9 +19,7 @@ description: "[No description available]"
 ## Detailed Description
 
 
-**Author**: Pat Scott 
-
- ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+**Author**: Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
 
 **Date**: 2015 Sep
 
@@ -63,13 +61,13 @@ Authors (add name and date if you modify):
 //   *********************************************
 ///  \file
 ///
-///  NUHM2 model declaration. 
+///  NUHM2 model declaration.
 ///
 ///  *********************************************
 ///
 ///  Authors (add name and date if you modify):
-///   
-///  \author Pat Scott  
+///
+///  \author Pat Scott
 ///          (p.scott@imperial.ac.uk)
 ///  \date 2015 Sep
 ///
@@ -79,7 +77,7 @@ Authors (add name and date if you modify):
 #define __NUHM2_hpp__
 
 // Must include models which are targets of translation functions
-#include "gambit/Models/models/MSSM30atMGUT.hpp" 
+#include "gambit/Models/models/MSSMatMGUT.hpp"
 
 #define MODEL NUHM2
 #define PARENT MSSM63atMGUT
@@ -97,4 +95,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

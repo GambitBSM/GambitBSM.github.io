@@ -28,7 +28,7 @@ description: "[No description available]"
 ### function ellipsesAreDisjoint
 
 ```
-bool ellipsesAreDisjoint(
+inline bool ellipsesAreDisjoint(
     const EllipseParams & e1,
     const EllipseParams & e2
 )
@@ -38,7 +38,7 @@ bool ellipsesAreDisjoint(
 ### function __private_ellipsesAreDisjoint
 
 ```
-bool __private_ellipsesAreDisjoint(
+inline bool __private_ellipsesAreDisjoint(
     const double coeffLamPow3,
     const double coeffLamPow2,
     const double coeffLamPow1,
@@ -53,4 +53,4 @@ bool __private_ellipsesAreDisjoint(
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:42 +0000
+Updated on 2023-06-26 at 21:36:50 +0000

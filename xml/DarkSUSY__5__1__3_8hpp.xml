@@ -309,16 +309,16 @@
         </inbodydescription>
         <location file="Backends/include/gambit/Backends/frontends/DarkSUSY_5_1_3.hpp" line="116" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="DarkSUSY__5__1__3_8hpp_1a73f103d4149a60700b77a163bff254d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="DarkSUSY__5__1__3_8hpp_1ad91f52d350d01690936617176d2a193c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="frontend__macros_8hpp_1ac7b7c11119ba13dc612df0e3e744b165" kindref="member">LOAD_LIBRARY</ref> double double double double double int dsrdeqn rdpth rderrors</type>
         <definition>LOAD_LIBRARY double double double double double int dsrdeqn rdpth rderrors BE_VARIABLE</definition>
-        <argsstring>(rdpars, DS_RDPARS, &quot;rdpars_&quot;, &quot;rdpars&quot;) BE_VARIABLE(rdswitch</argsstring>
+        <argsstring>(rdpars, DS_RDPARS_OLD, &quot;rdpars_&quot;, &quot;rdpars&quot;) BE_VARIABLE(rdswitch</argsstring>
         <name>BE_VARIABLE</name>
         <param>
           <type>rdpars</type>
         </param>
         <param>
-          <type>DS_RDPARS</type>
+          <type>DS_RDPARS_OLD</type>
         </param>
         <param>
           <type>&quot;rdpars_&quot;</type>
@@ -554,7 +554,7 @@
 <codeline lineno="115"><highlight class="normal">BE_VARIABLE(rdpth,<sp/>DS_RDPTH,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;rdpth_&quot;,<sp/><sp/><sp/><sp/><sp/>&quot;rdpth&quot;)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>thresholds</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="116"><highlight class="normal">BE_VARIABLE(rddof,<sp/>DS_RDDOF,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;rddof_&quot;,<sp/><sp/><sp/><sp/><sp/>&quot;rddof&quot;)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>dofs</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal">BE_VARIABLE(rderrors,<sp/>DS_RDERRORS,<sp/>&quot;rderrors_&quot;,<sp/>&quot;rderrors&quot;)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>errors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal">BE_VARIABLE(rdpars,<sp/>DS_RDPARS,<sp/><sp/><sp/><sp/><sp/>&quot;rdpars_&quot;,<sp/><sp/><sp/><sp/>&quot;rdpars&quot;)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>Parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">BE_VARIABLE(rdpars,<sp/>DS_RDPARS_OLD,<sp/><sp/><sp/><sp/><sp/>&quot;rdpars_&quot;,<sp/><sp/><sp/><sp/>&quot;rdpars&quot;)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>Parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal">BE_VARIABLE(rdswitch,<sp/>DS_RDSWITCH,<sp/>&quot;rdswitch_&quot;,<sp/><sp/>&quot;rdswitch&quot;)<sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>Switches</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal">BE_VARIABLE(rdlun,<sp/>DS_RDLUN,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;rdlun_&quot;,<sp/><sp/><sp/><sp/><sp/>&quot;rdlun&quot;)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>I/O</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal">BE_VARIABLE(rdpadd,<sp/>DS_RDPADD,<sp/><sp/><sp/><sp/><sp/>&quot;rdpadd_&quot;,<sp/><sp/><sp/><sp/>&quot;rdpadd&quot;)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gRD<sp/>I/O</highlight><highlight class="normal"></highlight></codeline>

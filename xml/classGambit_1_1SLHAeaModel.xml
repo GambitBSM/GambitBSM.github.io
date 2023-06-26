@@ -3,6 +3,10 @@
   <compounddef id="classGambit_1_1SLHAeaModel" kind="class" language="C++" prot="public">
     <compoundname>Gambit::SLHAeaModel</compoundname>
     <derivedcompoundref refid="classGambit_1_1MSSMea" prot="public" virt="non-virtual">Gambit::MSSMea</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Models_1_1DMsimpVectorMedDiracDMModel" prot="public" virt="non-virtual">Gambit::Models::DMsimpVectorMedDiracDMModel</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Models_1_1DMsimpVectorMedMajoranaDMModel" prot="public" virt="non-virtual">Gambit::Models::DMsimpVectorMedMajoranaDMModel</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Models_1_1DMsimpVectorMedScalarDMModel" prot="public" virt="non-virtual">Gambit::Models::DMsimpVectorMedScalarDMModel</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Models_1_1DMsimpVectorMedVectorDMModel" prot="public" virt="non-virtual">Gambit::Models::DMsimpVectorMedVectorDMModel</derivedcompoundref>
     <derivedcompoundref refid="classGambit_1_1SMea" prot="public" virt="non-virtual">Gambit::SMea</derivedcompoundref>
     <includes refid="SLHASimpleSpec_8hpp" local="no">SLHASimpleSpec.hpp</includes>
       <sectiondef kind="user-defined">
@@ -223,11 +227,35 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="3">
+        <label>Gambit::Models::DMsimpVectorMedDiracDMModel</label>
+        <link refid="classGambit_1_1Models_1_1DMsimpVectorMedDiracDMModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gambit::Models::DMsimpVectorMedMajoranaDMModel</label>
+        <link refid="classGambit_1_1Models_1_1DMsimpVectorMedMajoranaDMModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gambit::Models::DMsimpVectorMedScalarDMModel</label>
+        <link refid="classGambit_1_1Models_1_1DMsimpVectorMedScalarDMModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gambit::Models::DMsimpVectorMedVectorDMModel</label>
+        <link refid="classGambit_1_1Models_1_1DMsimpVectorMedVectorDMModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="1">
         <label>Gambit::SLHAeaModel</label>
         <link refid="classGambit_1_1SLHAeaModel"/>
       </node>
-      <node id="3">
+      <node id="7">
         <label>Gambit::SMea</label>
         <link refid="classGambit_1_1SMea"/>
         <childnode refid="1" relation="public-inheritance">

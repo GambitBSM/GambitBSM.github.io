@@ -20,11 +20,12 @@ Inherited by [Gambit::Utils::ProcessLock](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-filelock)**(const std::string & fname, const bool harderrs =false)<br>Constructor.  |
+| | **[FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-filelock)**(const std::string & fname, const bool is_exhaustible =false, const bool harderrs =false)<br>Constructor.  |
 | | **[~FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-filelock)**() |
 | void | **[get_lock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-get-lock)**()<br>Obtain lock (or wait if lock cannot be obtained, and then obtain lock)  |
 | void | **[release_lock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-release-lock)**()<br>Release a lock (error if no lock held)  |
 | const std::string & | **[get_filename](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-get-filename)**() const<br>Getter for lockfile name.  |
+| bool | **[exhausted](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-exhausted)**()<br>Check if lock is exhausted.  |
 
 ## Detailed Description
 
@@ -42,6 +43,7 @@ Class to manage a file lock Lock will be automatically released if this object i
 ```
 FileLock(
     const std::string & fname,
+    const bool is_exhaustible =false,
     const bool harderrs =false
 )
 ```
@@ -100,6 +102,17 @@ const std::string & get_filename() const
 
 Getter for lockfile name. 
 
+### function exhausted
+
+```
+bool exhausted()
+```
+
+Check if lock is exhausted. 
+
+Don't have the lock!
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

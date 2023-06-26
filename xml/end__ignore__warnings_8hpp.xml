@@ -7,19 +7,26 @@
     <includedby refid="Analysis__ATLAS__13TeV__0LEP__13invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_0LEP_13invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__0LEP__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_0LEP_36invfb.cpp</includedby>
     <includedby refid="DarkBit_2src_2Axions_8cpp" local="yes">Axions.cpp</includedby>
+    <includedby refid="ColliderBit__measurements_8cpp" local="yes">ColliderBit_measurements.cpp</includedby>
     <includedby refid="LHC__likelihoods_8cpp" local="yes">LHC_likelihoods.cpp</includedby>
     <includedby refid="NeutrinoBit_8cpp" local="yes">NeutrinoBit.cpp</includedby>
     <includedby refid="NeutrinoBit__rollcall_8hpp" local="yes">NeutrinoBit_rollcall.hpp</includedby>
+    <includedby refid="SignalRegionData_8hpp" local="yes">SignalRegionData.hpp</includedby>
     <includedby refid="getLHEvent_8cpp" local="yes">getLHEvent.cpp</includedby>
     <includedby refid="lhef2heputils_8cpp" local="yes">lhef2heputils.cpp</includedby>
     <includedby refid="gm2calc__1__2__0_2loaded__types_8hpp" local="yes">loaded_types.hpp</includedby>
     <includedby refid="gm2calc__1__3__0_2loaded__types_8hpp" local="yes">loaded_types.hpp</includedby>
+    <includedby refid="Rivet__3__1__5_2loaded__types_8hpp" local="yes">loaded_types.hpp</includedby>
     <invincdepgraph>
-      <node id="37">
+      <node id="41">
+        <label>loaded_types.hpp</label>
+        <link refid="Rivet__3__1__5_2loaded__types_8hpp_source"/>
+      </node>
+      <node id="39">
         <label>loaded_types.hpp</label>
         <link refid="gm2calc__1__2__0_2loaded__types_8hpp_source"/>
       </node>
-      <node id="38">
+      <node id="40">
         <label>loaded_types.hpp</label>
         <link refid="gm2calc__1__3__0_2loaded__types_8hpp_source"/>
       </node>
@@ -32,7 +39,7 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
@@ -48,9 +55,11 @@
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -66,9 +75,11 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
         </childnode>
       </node>
       <node id="9">
@@ -76,7 +87,7 @@
         <link refid="ColliderBit__types_8hpp"/>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -101,30 +112,36 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="31">
+      <node id="38">
+        <label>SignalRegionData.hpp</label>
+        <link refid="SignalRegionData_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
         <label>complete_process_PID_pair_multimaps.hpp</label>
         <link refid="complete__process__PID__pair__multimaps_8hpp"/>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>generateEventPy8Collider.hpp</label>
         <link refid="generateEventPy8Collider_8hpp"/>
-        <childnode refid="18" relation="include">
-        </childnode>
         <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>getPy8Collider.hpp</label>
         <link refid="getPy8Collider_8hpp"/>
-        <childnode refid="18" relation="include">
-        </childnode>
         <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -147,7 +164,11 @@
         <label>ColliderBit_eventloop.cpp</label>
         <link refid="ColliderBit__eventloop_8cpp"/>
       </node>
-      <node id="29">
+      <node id="16">
+        <label>ColliderBit_measurements.cpp</label>
+        <link refid="ColliderBit__measurements_8cpp"/>
+      </node>
+      <node id="30">
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
@@ -163,51 +184,51 @@
         <label>AnalysisContainer.cpp</label>
         <link refid="AnalysisContainer_8cpp"/>
       </node>
-      <node id="16">
+      <node id="17">
         <label>collider_event_weights.cpp</label>
         <link refid="collider__event__weights_8cpp"/>
       </node>
-      <node id="32">
+      <node id="33">
         <label>complete_process_PID_pair_multimaps.cpp</label>
         <link refid="complete__process__PID__pair__multimaps_8cpp"/>
       </node>
-      <node id="20">
+      <node id="21">
         <label>getActiveProcessCodes.cpp</label>
         <link refid="getActiveProcessCodes_8cpp"/>
       </node>
-      <node id="21">
+      <node id="22">
         <label>getAnalysisContainer.cpp</label>
         <link refid="getAnalysisContainer_8cpp"/>
       </node>
-      <node id="22">
+      <node id="23">
         <label>getBuckFast.cpp</label>
         <link refid="getBuckFast_8cpp"/>
       </node>
-      <node id="23">
+      <node id="24">
         <label>getHepMCEvent.cpp</label>
         <link refid="getHepMCEvent_8cpp"/>
       </node>
-      <node id="24">
+      <node id="25">
         <label>getLHEvent.cpp</label>
         <link refid="getLHEvent_8cpp"/>
       </node>
-      <node id="26">
+      <node id="27">
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="30">
+      <node id="31">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>
-      <node id="18">
+      <node id="19">
         <label>SUSY.cpp</label>
         <link refid="SUSY_8cpp"/>
       </node>
-      <node id="19">
+      <node id="20">
         <label>SUSY_extras.cpp</label>
         <link refid="SUSY__extras_8cpp"/>
       </node>
-      <node id="27">
+      <node id="28">
         <label>process_code_PID_pair_mapping.cpp</label>
         <link refid="process__code__PID__pair__mapping_8cpp"/>
       </node>
@@ -215,27 +236,27 @@
         <label>runAnalyses.cpp</label>
         <link refid="runAnalyses_8cpp"/>
       </node>
-      <node id="28">
+      <node id="29">
         <label>smearEvent.cpp</label>
         <link refid="smearEvent_8cpp"/>
       </node>
-      <node id="33">
+      <node id="34">
         <label>Axions.cpp</label>
         <link refid="DarkBit_2src_2Axions_8cpp"/>
       </node>
-      <node id="35">
+      <node id="36">
         <label>NeutrinoBit_rollcall.hpp</label>
         <link refid="NeutrinoBit__rollcall_8hpp"/>
-        <childnode refid="34" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="35">
         <label>NeutrinoBit.cpp</label>
         <link refid="NeutrinoBit_8cpp"/>
       </node>
-      <node id="36">
+      <node id="37">
         <label>RightHandedNeutrinos.cpp</label>
         <link refid="RightHandedNeutrinos_8cpp"/>
       </node>
@@ -244,19 +265,25 @@
         <link refid="end__ignore__warnings_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

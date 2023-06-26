@@ -23,6 +23,7 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | | **[~HDF5Printer2](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-hdf5printer2)**()<br>Destructor.  |
 | std::string | **[get_filename](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-get-filename)**()<br>Report name (inc. path) of output file.  |
 | std::string | **[get_groupname](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-get-groupname)**()<br>Report group in output HDF5 file of output datasets.  |
+| std::string | **[get_metadata_groupname](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-get-metadata-groupname)**()<br>Report metadata group in HDF5 file.  |
 | std::size_t | **[get_buffer_length](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-get-buffer-length)**()<br>Report length of buffer for HDF5 output.  |
 | void | **[add_aux_buffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-add-aux-buffer)**([HDF5MasterBuffer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/) & aux_buffermaster)<br>Add buffer to the primary printers records.  |
 | [HDF5Printer2](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/) * | **[get_HDF5_primary_printer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-get-hdf5-primary-printer)**() |
@@ -31,7 +32,9 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | virtual void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-reset)**(bool force =false)<br>Function to signal to the printer to write buffer contents to disk.  |
 | virtual void | **[finalise](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-finalise)**(bool abnormal =false)<br>Signal printer that scan is finished, and final output needs to be performed.  |
 | virtual [Options](/documentation/code/classes/classgambit_1_1options/) | **[resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-resume-reader-options)**() |
+| virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) datasets) |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong)<br>Print functions.  |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
 
 ## Additional inherited members
 
@@ -68,6 +71,7 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | void | **[enable](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-enable)**() |
 | template <typename T \> <br>void | **[print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const int vertexID, const uint rank, const ulong pointID) |
 | template <typename T \> <br>void | **[print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID) |
+| void | **[print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) datasets) |
 
 **Protected Attributes inherited from [Gambit::Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/)**
 
@@ -119,6 +123,17 @@ std::string get_groupname()
 ```
 
 Report group in output HDF5 file of output datasets. 
+
+### function get_metadata_groupname
+
+```
+std::string get_metadata_groupname()
+```
+
+Report metadata group in HDF5 file. 
+
+Report the name of the metadata group on this file. 
+
 
 ### function get_buffer_length
 
@@ -220,6 +235,18 @@ virtual Options resume_reader_options()
 **Reimplements**: [Gambit::Printers::BasePrinter::resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-resume-reader-options)
 
 
+### function _print_metadata
+
+```
+virtual void _print_metadata(
+    map_str_str datasets
+)
+```
+
+
+**Reimplements**: [Gambit::Printers::BaseBasePrinter::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)
+
+
 ### function _print
 
 ```
@@ -235,6 +262,20 @@ inline void _print(
 
 Print functions. 
 
+### function _print
+
+```
+template <typename T >
+inline void _print(
+    T const & in,
+    const std::string & label,
+    const uint rank,
+    const ulong pointID
+)
+```
+
+Print functions. 
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

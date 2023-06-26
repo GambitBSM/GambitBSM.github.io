@@ -3,6 +3,7 @@
   <compounddef id="begin__ignore__warnings__hepmc_8hpp" kind="file" language="C++">
     <compoundname>begin_ignore_warnings_hepmc.hpp</compoundname>
     <includes local="yes">gambit/cmake/cmake_variables.hpp</includes>
+    <includedby refid="ColliderBit__measurements_8cpp" local="yes">ColliderBit_measurements.cpp</includedby>
     <includedby refid="getLHEvent_8cpp" local="yes">getLHEvent.cpp</includedby>
     <includedby refid="lhef2heputils_8cpp" local="yes">lhef2heputils.cpp</includedby>
     <incdepgraph>
@@ -18,6 +19,10 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
+        <label>ColliderBit_measurements.cpp</label>
+        <link refid="ColliderBit__measurements_8cpp"/>
+      </node>
+      <node id="3">
         <label>getLHEvent.cpp</label>
         <link refid="getLHEvent_8cpp"/>
       </node>
@@ -25,6 +30,8 @@
         <label>begin_ignore_warnings_hepmc.hpp</label>
         <link refid="begin__ignore__warnings__hepmc_8hpp"/>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

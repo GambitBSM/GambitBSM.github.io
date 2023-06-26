@@ -45,7 +45,7 @@ description: "[No description available]"
 **Date**: 
 
   * 2015 Feb
-  * 2019 May
+  * 2019 May 2020 June
   * 2020 May
 
 
@@ -167,6 +167,7 @@ BOOST_PP_SEQ_FOR_EACH(VRETRIEVE, , TYPES)
 ///  \author Tomas Gonzalo
 ///          (tomas.gonzalo@monash.edu)
 ///  \date 2019 May
+///        2020 June
 ///
 ///  \author Patrick Stoecker
 ///          (stoecker@physik.rwth-aachen.de)
@@ -196,6 +197,7 @@ namespace Gambit
   // Forward declarations needed for some of the _print/_retrieve functions
   class ModelParameters;
   typedef std::map<std::string,double> map_str_dbl; // can't have commas in macro input
+  typedef std::map<std::string,std::string> map_str_str;
 
 
   namespace Printers
@@ -302,6 +304,12 @@ namespace Gambit
           if(!printer_cooldown) printer_enabled = true; // if cooldown has ended, re-enable printer
         }
 
+        // Print metadata information
+        void print_metadata(map_str_str datasets)
+        {
+          if(printer_enabled) _print_metadata(datasets);
+        }
+
       protected:
         /// Flag to check if print functions are enabled or disabled
         bool printer_enabled;
@@ -329,6 +337,26 @@ namespace Gambit
               << "\n  Available info for this print attempt..."
               << "\n   Label      : " << label
               << "\n   vertexID   : " << vertexID;
+          printer_error().raise(LOCAL_INFO,err.str());
+        }
+
+        /// Same for overloaded function
+        template<typename T>
+        void _print(T const& in, const std::string& label,
+                    const uint rank,
+                    const ulong pointID)
+        {
+           _print(in,label,rank,pointID);
+        }
+
+        // Default _print_metadata function. Should be overloaded by printers
+        virtual void _print_metadata(map_str_str )
+        {
+          std::ostringstream err;
+
+          err << "Attempted to print metadata to a printer type "
+              << "that does not accept metadata. Please change "
+              << "your printer or disable priting metadata.";
           printer_error().raise(LOCAL_INFO,err.str());
         }
 
@@ -555,4 +583,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

@@ -234,6 +234,10 @@ namespace Gambit
           BOOST_PP_SEQ_FOR_EACH_I(DECLARE_PRINT, , ASCII_BACKEND_TYPES)
         #endif
         #undef DECLARE_PRINT
+
+        // Print metadata info to file
+        void _print_metadata(map_str_str);
+
         ///@}
 
         /// Helper print functions
@@ -251,10 +255,15 @@ namespace Gambit
         /// Info file (describes contents of output file, i.e. contents of columns)
         std::string info_file;
 
+        /// Metadata file
+        std::string metadata_file;
+
         /// Main output file stream
         std::ofstream my_fstream;
         /// "Info file" output stream
         std::ofstream info_fstream;
+        /// "Metadata file" output stream
+        std::ofstream metadata_fstream;
 
         /// Number of lines to store in buffer before printing
         unsigned int bufferlength;
@@ -311,4 +320,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

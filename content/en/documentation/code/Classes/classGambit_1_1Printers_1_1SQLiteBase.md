@@ -28,7 +28,9 @@ Inherited by [Gambit::Printers::SQLitePrinter](/documentation/code/classes/class
 | -------------- | -------------- |
 | std::string | **[get_database_file](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-database-file)**() |
 | std::string | **[get_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-table-name)**() |
+| std::string | **[get_metadata_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-metadata-table-name)**() |
 | void | **[set_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-set-table-name)**(const std::string & table_name) |
+| void | **[set_metadata_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-set-metadata-table-name)**(const std::string & metadata_table_name) |
 | void | **[require_output_ready](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-require-output-ready)**() |
 | void | **[open_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-open-db)**(const std::string & path, char access ='r') |
 | void | **[close_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-close-db)**() |
@@ -71,11 +73,27 @@ std::string get_table_name()
 ```
 
 
+### function get_metadata_table_name
+
+```
+std::string get_metadata_table_name()
+```
+
+
 ### function set_table_name
 
 ```
 void set_table_name(
     const std::string & table_name
+)
+```
+
+
+### function set_metadata_table_name
+
+```
+void set_metadata_table_name(
+    const std::string & metadata_table_name
 )
 ```
 
@@ -157,4 +175,4 @@ int submit_sql(
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

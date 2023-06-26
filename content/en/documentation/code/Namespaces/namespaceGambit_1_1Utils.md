@@ -16,7 +16,11 @@ description: "[No description available]"
 | struct | **[Gambit::Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/)**  |
 | class | **[Gambit::Utils::FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/)**  |
 | class | **[Gambit::Utils::interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
+| class | **[Gambit::Utils::interp1d_gsl_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__gsl__collection/)**  |
 | class | **[Gambit::Utils::interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/)**  |
+| class | **[Gambit::Utils::interp2d_gsl_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__gsl__collection/)**  |
+| class | **[Gambit::Utils::interp4d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp4d__collection/)**  |
+| class | **[Gambit::Utils::interp5d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp5d__collection/)**  |
 | class | **[Gambit::Utils::ProcessLock](/documentation/code/classes/classgambit_1_1utils_1_1processlock/)** <br>Class to manage a process lock, using a file.  |
 | class | **[Gambit::Utils::specialised_threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/)** <br>Derived thread-safe random number generator class, templated on the RNG engine type.  |
 | class | **[Gambit::Utils::threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/)**  |
@@ -33,7 +37,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const std::string | **[hardmsg](/documentation/code/namespaces/namespacegambit_1_1utils/#function-hardmsg)**("Now calling abort (will produce a core file for analysis [if](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#function-if) this is enabled on your system; [if](/documentation/code/files/darksusy__mssm__6__2__5_8cpp/#function-if) so please include this with the bug report)" )<br>Members of [FileLock]() class.  |
+| const std::string | **[hardmsg](/documentation/code/namespaces/namespacegambit_1_1utils/#function-hardmsg)**("Now calling abort (will produce a core file for analysis [if](/documentation/code/files/darksusy__mssm__6__4__0_8cpp/#function-if) this is enabled on your system; [if](/documentation/code/files/darksusy__mssm__6__4__0_8cpp/#function-if) so please include this with the bug report)" )<br>Members of [FileLock]() class.  |
 | [type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/) & | **[typeEquivalencies](/documentation/code/namespaces/namespacegambit_1_1utils/#function-typeequivalencies)**()<br>Backend info accessor function.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[fix_type](/documentation/code/namespaces/namespacegambit_1_1utils/#function-fix-type)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) s)<br>Clean out whitespace and strip [Gambit](/documentation/code/namespaces/namespacegambit/) and default BOSSed class namespaces.  |
 | time_point | **[get_clock_now](/documentation/code/namespaces/namespacegambit_1_1utils/#function-get-clock-now)**()<br>Get clock time.  |
@@ -79,6 +83,8 @@ description: "[No description available]"
 | template <typename... T\> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**() |
 | template <typename T \> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**(T one) |
 | template <typename T1 ,typename... T\> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**(T1 first, T... args) |
+| void | **[InterpIter](/documentation/code/namespaces/namespacegambit_1_1utils/#function-interpiter)**(int Ntemp, double xi_1, double xi_2, std::vector< double > & fi, double test) |
+| double | **[linearinterp1D](/documentation/code/namespaces/namespacegambit_1_1utils/#function-linearinterp1d)**(double x1, double x2, double y1, double y2, double xtest) |
 | bool | **[sspairset_contains](/documentation/code/namespaces/namespacegambit_1_1utils/#function-sspairset-contains)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & el, const std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > & set)<br>Test if a set of str,str pairs contains any entry with first element matching a given string.  |
 | bool | **[sspairset_contains](/documentation/code/namespaces/namespacegambit_1_1utils/#function-sspairset-contains)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & el1, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & el2, const std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > & set)<br>Tests if a set of str,str pairs contains an entry matching two given strings.  |
 
@@ -636,6 +642,32 @@ void dummy_function(
 ```
 
 
+### function InterpIter
+
+```
+void InterpIter(
+    int Ntemp,
+    double xi_1,
+    double xi_2,
+    std::vector< double > & fi,
+    double test
+)
+```
+
+
+### function linearinterp1D
+
+```
+double linearinterp1D(
+    double x1,
+    double x2,
+    double y1,
+    double y2,
+    double xtest
+)
+```
+
+
 ### function sspairset_contains
 
 ```
@@ -682,4 +714,4 @@ const char *[] whitespaces = {" ", "\t", "\n", "\f", "\r"};
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

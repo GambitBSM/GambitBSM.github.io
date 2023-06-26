@@ -34,9 +34,18 @@ description: "[No description available]"
 ///
 ///  \author Yang Zhang
 ///  \date 2019 May
+///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2021 Sep
+///
 ///  *********************************************
 
-// Based on http://cdsweb.cern.ch/record/2668387/files/ATLAS-CONF-2019-008.pdf
+// Originally based on confnote: http://cdsweb.cern.ch/record/2668387/files/ATLAS-CONF-2019-008.pdf
+// Updated to paper version: 
+// - https://arxiv.org/abs/1908.08215
+// - https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-32/
+
 // Search for electroweak production of charginos and sleptons decaying in final states with two leptons and missing transverse momentum in √s = 13 TeV p p collisions using the ATLAS detector
 
 // Note:
@@ -228,7 +237,7 @@ namespace Gambit
         vector<const HEPUtils::Particle*> muons;
         for (const HEPUtils::Particle* muon : event->muons()) {
           if (muon->pT() > 10.
-              && fabs(muon->eta()) < 2.5)
+              && fabs(muon->eta()) < 2.7)
             muons.push_back(muon);
         }
 
@@ -238,7 +247,7 @@ namespace Gambit
         // Jets
         vector<const HEPUtils::Jet*> candJets;
         for (const HEPUtils::Jet* jet : event->jets()) {
-          if (jet->pT() > 20. && fabs(jet->eta()) < 2.5)
+          if (jet->pT() > 20. && fabs(jet->eta()) < 2.4)
             candJets.push_back(jet);
         }
 
@@ -430,7 +439,7 @@ namespace Gambit
         }
         #endif
 
-        add_result(SignalRegionData(_counters.at("SR-SF-0J-100"), 147., {145., 12.}));
+        add_result(SignalRegionData(_counters.at("SR-SF-0J-100"), 147., {144., 12.}));
         add_result(SignalRegionData(_counters.at("SR-SF-0J-160"), 37., {37.3, 3.}));
         add_result(SignalRegionData(_counters.at("SR-SF-0J-100-120"), 53., {56., 6.}));
         add_result(SignalRegionData(_counters.at("SR-SF-0J-120-160"), 57., {51., 5.}));
@@ -440,7 +449,7 @@ namespace Gambit
         add_result(SignalRegionData(_counters.at("SR-SF-1J-100-120"), 55., {48., 8.}));
         add_result(SignalRegionData(_counters.at("SR-SF-1J-120-160"), 36., {40., 4.}));
 
-        add_result(SignalRegionData(_counters.at("SR-DF-0J-100"), 95., {97., 15.}));
+        add_result(SignalRegionData(_counters.at("SR-DF-0J-100"), 95., {96., 15.}));
         add_result(SignalRegionData(_counters.at("SR-DF-0J-160"), 21., {18.8, 2.4}));
         add_result(SignalRegionData(_counters.at("SR-DF-0J-100-120"), 47., {45., 9.}));
         add_result(SignalRegionData(_counters.at("SR-DF-0J-120-160"), 27., {33., 5.}));
@@ -476,7 +485,7 @@ namespace Gambit
 
       virtual void collect_results() {
 
-        add_result(SignalRegionData(_counters.at("SR-SF-0J-100"), 147., {145., 12.}));
+        add_result(SignalRegionData(_counters.at("SR-SF-0J-100"), 147., {144., 12.}));
         add_result(SignalRegionData(_counters.at("SR-SF-0J-160"), 37., {37.3, 3.}));
         add_result(SignalRegionData(_counters.at("SR-SF-0J-100-120"), 53., {56., 6.}));
         add_result(SignalRegionData(_counters.at("SR-SF-0J-120-160"), 57., {51., 5.}));
@@ -486,7 +495,7 @@ namespace Gambit
         add_result(SignalRegionData(_counters.at("SR-SF-1J-100-120"), 55., {48., 8.}));
         add_result(SignalRegionData(_counters.at("SR-SF-1J-120-160"), 36., {40., 4.}));
 
-        add_result(SignalRegionData(_counters.at("SR-DF-0J-100"), 95., {97., 15.}));
+        add_result(SignalRegionData(_counters.at("SR-DF-0J-100"), 95., {96., 15.}));
         add_result(SignalRegionData(_counters.at("SR-DF-0J-160"), 21., {18.8, 2.4}));
         add_result(SignalRegionData(_counters.at("SR-DF-0J-100-120"), 47., {45., 9.}));
         add_result(SignalRegionData(_counters.at("SR-DF-0J-120-160"), 27., {33., 5.}));
@@ -567,4 +576,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

@@ -26,6 +26,7 @@ description: "[No description available]"
 | void | **[check_width](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-check-width)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & info, double & w, bool raise_invalid_pt_negative_width =false, bool raise_invalid_pt_large_width =false)<br>Check if a width is negative or suspiciously large and raise an error.  |
 | void | **[compute_SM_higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-compute-sm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result, double mh)<br>Populate SM Higgs decay channels for a higgs mass of m_h.  |
 | void | **[set_FH_neutral_h_decay](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-set-fh-neutral-h-decay)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result, int iH, const [fh_Couplings_container](/documentation/code/classes/structgambit_1_1fh__couplings__container/) & FH_input, const [mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/) & psn, bool invalidate, bool SM)<br>Set neutral h decays computed by FeynHiggs.  |
+| void | **[combine_decay_table_entries](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-combine-decay-table-entries)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & entry1, [DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & entry2, [DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Function combining two Decaytable entries with different decay channels of the same particle into a single entry.  |
 | void | **[W_plus_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-w-plus-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
 | void | **[Z_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-z-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
 | void | **[t_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-t-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
@@ -108,19 +109,43 @@ description: "[No description available]"
 | void | **[snu_electronl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-electronl-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: snu_electronl.  |
 | void | **[snu_muonl_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-muonl-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: snu_muonl.  |
 | void | **[snu_taul_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-snu-taul-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
-| void | **[chargino_plus_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: chargino_plus_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings)  |
+| void | **[chargino_plus_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[chargino_plus_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[chargino_plus_1_decays_all](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-all)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[chargino_plus_2_decays_all](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-2-decays-all)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[chargino_plus_1_decays_SH_or_smallsplit](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-sh-or-smallsplit)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: chargino_plus_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings)  |
 | void | **[chargino_plus_1_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-sh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: chargino_plus_1.  |
-| void | **[chargino_plus_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: chargino_plus_2.  |
-| void | **[neutralino_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_1.  |
-| void | **[neutralino_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_2.  |
-| void | **[neutralino_3_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-3-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_3.  |
-| void | **[neutralino_4_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-4-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_4.  |
+| void | **[chargino_plus_2_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-2-decays-sh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: chargino_plus_2.  |
+| void | **[neutralino_1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[neutralino_2_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-2-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[neutralino_3_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-3-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[neutralino_4_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-4-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[neutralino_1_decays_all](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-1-decays-all)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[neutralino_2_decays_all](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-2-decays-all)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[neutralino_3_decays_all](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-3-decays-all)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[neutralino_4_decays_all](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-4-decays-all)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[neutralino_1_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-1-decays-sh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_1.  |
+| void | **[neutralino_2_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-2-decays-sh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_2.  |
+| void | **[neutralino_3_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-3-decays-sh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_3.  |
+| void | **[neutralino_4_decays_SH](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-4-decays-sh)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>SUSY-HIT MSSM decays: neutralino_4.  |
 | void | **[chargino_plus_1_decays_smallsplit](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-smallsplit)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
 | void | **[stau_1_decays_smallsplit](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-stau-1-decays-smallsplit)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| [DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) | **[neutralino_decays_gravitino](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-decays-gravitino)**(int n_Neu, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, const [DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & Z_decays) |
+| void | **[neutralino_1_decays_gravitino](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-1-decays-gravitino)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: neutralino_1 decays to gravitinos.  |
+| void | **[neutralino_2_decays_gravitino](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-2-decays-gravitino)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: neutralino_2 decays to gravitinos.  |
+| void | **[neutralino_3_decays_gravitino](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-3-decays-gravitino)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: neutralino_3 decays to gravitinos.  |
+| void | **[neutralino_4_decays_gravitino](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-neutralino-4-decays-gravitino)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: neutralino_4 decays to gravitinos.  |
+| [DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) | **[chargino_decays_gravitino](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-decays-gravitino)**(int n_Cha, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, const [DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & W_decays) |
+| void | **[chargino_plus_1_decays_gravitino](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-1-decays-gravitino)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: chargino_1 decay to gravitinos.  |
+| void | **[chargino_plus_2_decays_gravitino](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-chargino-plus-2-decays-gravitino)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>MSSM decays: chargino_2 decay to gravitinos.  |
 | void | **[ScalarSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-scalarsingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to singlets for the ScalarSingletDM models.  |
 | void | **[VectorSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-vectorsingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to vectors for the VectorSingletDM models (see arXiv:1512.06458v4)  |
 | void | **[MajoranaSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-majoranasingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to Majorana fermions for the MajoranaSingletDM models (see arXiv:1512.06458v4)  |
 | void | **[DiracSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-diracsingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to Dirac fermions for the DiracSingletDM models (see arXiv:1512.06458v4)  |
+| void | **[CH_DMsimpVectorMedDiracDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormeddiracdm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[CH_DMsimpVectorMedMajoranaDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormedmajoranadm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[CH_DMsimpVectorMedScalarDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormedscalardm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[CH_DMsimpVectorMedVectorDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormedvectordm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
 | void | **[all_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-all-decays)**([DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & decays)<br>Collect all the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) entries into an actual [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/).  |
 | void | **[all_decays_from_SLHA](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-all-decays-from-slha)**([DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & decays) |
 | void | **[get_decaytable_as_map](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-decaytable-as-map)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & map)<br>Convert the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) to a format where we can print each individual channel's BF.  |
@@ -205,6 +230,18 @@ void set_FH_neutral_h_decay(
 
 Set neutral h decays computed by FeynHiggs. 
 
+### function combine_decay_table_entries
+
+```
+void combine_decay_table_entries(
+    DecayTable::Entry & entry1,
+    DecayTable::Entry & entry2,
+    DecayTable::Entry & result
+)
+```
+
+Function combining two Decaytable entries with different decay channels of the same particle into a single entry. 
+
 ### function W_plus_decays
 
 ```
@@ -226,7 +263,7 @@ void Z_decays(
 ```
 
 
-SM decays: Z Reference: 2017 PDG 
+SM decays: Z Reference: 2019 PDG 
 
 
 ### function t_decays
@@ -1043,6 +1080,54 @@ void chargino_plus_1_decays(
 )
 ```
 
+
+MSSM decays: chargino_plus_1 without decays to gravitinos (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings) Aggregator function providing chargino_plus_1_decay_rates for MSSM models without gravitinos 
+
+
+### function chargino_plus_2_decays
+
+```
+void chargino_plus_2_decays(
+    DecayTable::Entry & result
+)
+```
+
+
+MSSM decays: chargino_plus_2 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing chargino_plus_2_decay_rates for MSSM models without gravitinos 
+
+
+### function chargino_plus_1_decays_all
+
+```
+void chargino_plus_1_decays_all(
+    DecayTable::Entry & result
+)
+```
+
+
+MSSM decays: chargino_plus_1 incl. decays to gravitinos (Uses SUSY-HIT results and DecayBit calculations for small mass splittings and decays to gravitinos) Aggregator function providing chargino_plus_1_decay_rates for MSSM models with gravitinos 
+
+
+### function chargino_plus_2_decays_all
+
+```
+void chargino_plus_2_decays_all(
+    DecayTable::Entry & result
+)
+```
+
+
+MSSM decays: chargino_plus_2 incl. decays to gravitinos (Uses SUSY-HIT results and DecayBit calculations for decays to gravitinos) Aggregator function providing chargino_plus_2_decay_rates for MSSM models with gravitinos 
+
+
+### function chargino_plus_1_decays_SH_or_smallsplit
+
+```
+void chargino_plus_1_decays_SH_or_smallsplit(
+    DecayTable::Entry & result
+)
+```
+
 MSSM decays: chargino_plus_1 (Uses SUSY-HIT results or dedicated DecayBit calculation for small mass splittings) 
 
 ### function chargino_plus_1_decays_SH
@@ -1055,10 +1140,10 @@ void chargino_plus_1_decays_SH(
 
 SUSY-HIT MSSM decays: chargino_plus_1. 
 
-### function chargino_plus_2_decays
+### function chargino_plus_2_decays_SH
 
 ```
-void chargino_plus_2_decays(
+void chargino_plus_2_decays_SH(
     DecayTable::Entry & result
 )
 ```
@@ -1073,7 +1158,9 @@ void neutralino_1_decays(
 )
 ```
 
-SUSY-HIT MSSM decays: neutralino_1. 
+
+MSSM decays: neutralino_1 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing neutralino_1_decay_rates for MSSM models without gravitinos 
+
 
 ### function neutralino_2_decays
 
@@ -1083,7 +1170,9 @@ void neutralino_2_decays(
 )
 ```
 
-SUSY-HIT MSSM decays: neutralino_2. 
+
+MSSM decays: neutralino_2 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing neutralino_2_decay_rates for MSSM models without gravitinos 
+
 
 ### function neutralino_3_decays
 
@@ -1093,12 +1182,104 @@ void neutralino_3_decays(
 )
 ```
 
-SUSY-HIT MSSM decays: neutralino_3. 
+
+MSSM decays: neutralino_3 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing neutralino_3_decay_rates for MSSM models without gravitinos 
+
 
 ### function neutralino_4_decays
 
 ```
 void neutralino_4_decays(
+    DecayTable::Entry & result
+)
+```
+
+
+MSSM decays: neutralino_4 without decays to gravitinos (Uses SUSY-HIT results) Aggregator function providing neutralino_4_decay_rates for MSSM models without gravitinos 
+
+
+### function neutralino_1_decays_all
+
+```
+void neutralino_1_decays_all(
+    DecayTable::Entry & result
+)
+```
+
+
+MSSM decays: neutralino_1 incl. decays to gravitinos (Uses SUSY-HIT results and dedicated DecayBit calculation for decays to gravitinos) Aggregator function providing neutralino_1_decay_rates for MSSM models with gravitinos 
+
+
+### function neutralino_2_decays_all
+
+```
+void neutralino_2_decays_all(
+    DecayTable::Entry & result
+)
+```
+
+
+MSSM decays: neutralino_2 incl. decays to gravitinos (Uses SUSY-HIT results and dedicated DecayBit calculation for decays to gravitinos) Aggregator function providing neutralino_2_decay_rates for MSSM models with gravitinos 
+
+
+### function neutralino_3_decays_all
+
+```
+void neutralino_3_decays_all(
+    DecayTable::Entry & result
+)
+```
+
+
+MSSM decays: neutralino_3 incl. decays to gravitinos (Uses SUSY-HIT results and dedicated DecayBit calculation for decays to gravitinos) Aggregator function providing neutralino_3_decay_rates for MSSM models with gravitinos 
+
+
+### function neutralino_4_decays_all
+
+```
+void neutralino_4_decays_all(
+    DecayTable::Entry & result
+)
+```
+
+
+MSSM decays: neutralino_4 incl. decays to gravitinos (Uses SUSY-HIT results and dedicated DecayBit calculation for decays to gravitinos) Aggregator function providing neutralino_4_decay_rates for MSSM models with gravitinos 
+
+
+### function neutralino_1_decays_SH
+
+```
+void neutralino_1_decays_SH(
+    DecayTable::Entry & result
+)
+```
+
+SUSY-HIT MSSM decays: neutralino_1. 
+
+### function neutralino_2_decays_SH
+
+```
+void neutralino_2_decays_SH(
+    DecayTable::Entry & result
+)
+```
+
+SUSY-HIT MSSM decays: neutralino_2. 
+
+### function neutralino_3_decays_SH
+
+```
+void neutralino_3_decays_SH(
+    DecayTable::Entry & result
+)
+```
+
+SUSY-HIT MSSM decays: neutralino_3. 
+
+### function neutralino_4_decays_SH
+
+```
+void neutralino_4_decays_SH(
     DecayTable::Entry & result
 )
 ```
@@ -1128,6 +1309,97 @@ void stau_1_decays_smallsplit(
 
 MSSM decays: stau decays for small stau&ndash;neutralino mass splitting. Using results from T. Jittoh, J. Sato, T. Shimomura, M. Yamanaka, Phys. Rev. D73 (2006), hep-ph/0512197 
 
+
+### function neutralino_decays_gravitino
+
+```
+DecayTable::Entry neutralino_decays_gravitino(
+    int n_Neu,
+    const Spectrum & spec,
+    const DecayTable::Entry & Z_decays
+)
+```
+
+
+MSSM decays: neutralino decays to gravitinos. Using results from hep-ph/0404231v2 and 0908.3399. Includes 3-body decays via the Z boson to gravitinos and SM fermion pairs, for all of the latter. Using results from [http://www-library.desy.de/preparch/desy/thesis/desy-thesis-09-016.pdf](http://www-library.desy.de/preparch/desy/thesis/desy-thesis-09-016.pdf). Complete analytic formulas, not just the light-gravitino limit. 
+
+
+Neutralino three-body decays to gravitinos and fermion pairs, for all of the latter. Using results from [http://www-library.desy.de/preparch/desy/thesis/desy-thesis-09-016.pdf](http://www-library.desy.de/preparch/desy/thesis/desy-thesis-09-016.pdf). Complete analytic formulas, not just the light-gravitino limit.
+
+
+### function neutralino_1_decays_gravitino
+
+```
+void neutralino_1_decays_gravitino(
+    DecayTable::Entry & result
+)
+```
+
+MSSM decays: neutralino_1 decays to gravitinos. 
+
+### function neutralino_2_decays_gravitino
+
+```
+void neutralino_2_decays_gravitino(
+    DecayTable::Entry & result
+)
+```
+
+MSSM decays: neutralino_2 decays to gravitinos. 
+
+### function neutralino_3_decays_gravitino
+
+```
+void neutralino_3_decays_gravitino(
+    DecayTable::Entry & result
+)
+```
+
+MSSM decays: neutralino_3 decays to gravitinos. 
+
+### function neutralino_4_decays_gravitino
+
+```
+void neutralino_4_decays_gravitino(
+    DecayTable::Entry & result
+)
+```
+
+MSSM decays: neutralino_4 decays to gravitinos. 
+
+### function chargino_decays_gravitino
+
+```
+DecayTable::Entry chargino_decays_gravitino(
+    int n_Cha,
+    const Spectrum & spec,
+    const DecayTable::Entry & W_decays
+)
+```
+
+
+MSSM decays: chargino decays to gravitinos. Using results from hep-ph/9605398. The decay width formulas are valid in the light-gravitino limit. 
+
+
+### function chargino_plus_1_decays_gravitino
+
+```
+void chargino_plus_1_decays_gravitino(
+    DecayTable::Entry & result
+)
+```
+
+MSSM decays: chargino_1 decay to gravitinos. 
+
+### function chargino_plus_2_decays_gravitino
+
+```
+void chargino_plus_2_decays_gravitino(
+    DecayTable::Entry & result
+)
+```
+
+MSSM decays: chargino_2 decay to gravitinos. 
 
 ### function ScalarSingletDM_Higgs_decays
 
@@ -1168,6 +1440,42 @@ void DiracSingletDM_Higgs_decays(
 ```
 
 Add the decay of Higgs to Dirac fermions for the DiracSingletDM models (see arXiv:1512.06458v4) 
+
+### function CH_DMsimpVectorMedDiracDM_Y1_decays
+
+```
+void CH_DMsimpVectorMedDiracDM_Y1_decays(
+    DecayTable::Entry & result
+)
+```
+
+
+### function CH_DMsimpVectorMedMajoranaDM_Y1_decays
+
+```
+void CH_DMsimpVectorMedMajoranaDM_Y1_decays(
+    DecayTable::Entry & result
+)
+```
+
+
+### function CH_DMsimpVectorMedScalarDM_Y1_decays
+
+```
+void CH_DMsimpVectorMedScalarDM_Y1_decays(
+    DecayTable::Entry & result
+)
+```
+
+
+### function CH_DMsimpVectorMedVectorDM_Y1_decays
+
+```
+void CH_DMsimpVectorMedVectorDM_Y1_decays(
+    DecayTable::Entry & result
+)
+```
+
 
 ### function all_decays
 
@@ -1325,33 +1633,13 @@ void lnL_Higgs_invWidth_SMlike(
 
 Log-likelihood for Higgs invisible branching ratio
 
-We use log-likelihoods extracted from e.g., [CMS-PAS-HIG-17-023](http://cms-results.web.cern.ch/cms-results/public-results/
-preliminary-results/HIG-17-023/CMS-PAS-HIG-17-023_Figure_007-b.png)
+We assume that the log likelihood as a function of the invisible branching fraction BF can be written in the form: - 2 log L = a * (BF - b)^2
 
-There are scripts 
+We can explicitly test this assumption for CMS, where the chi2 is given in figure 12 of arXiv:2201.11585. Indeed, the assumed functional form gives a perfect fit for a_CMS = 339 and b_CMS = 0.089.
 
-```cpp
-python ./DecayBit/data/convolve_with_theory.py <file> <frac_error> <min> <max>
-```
+For ATLAS we extract the fit parameters from the two values stated in arXiv:2202.07953: BR < 0.145 at 95% CL and BR < 0.127 at 90% CL. These values correspond to a_ATLAS = 303 and b_ATLAS = 0.032.
 
- for convolving a data file with a fractional theory error, and 
-
-```cpp
-python ./DecayBit/data/profile_theory.py <file> <frac_error> <min> <max>
-```
-
- for profiling a fractional theory error.
-
-There are a few data files, e.g., 
-
-```cpp
-./DecayBit/data/arXiv_1306.2941_Figure_8.dat
-./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b.dat
-./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b_10_convolved.dat
-./DecayBit/data/CMS-PAS-HIG-17-023_Figure_7-b_10_profiled.dat
-```
-
- The first one is the default. The third and fourth ones include a 10% theory uncertainty in the branching fraction by convolving it and profiling it, respectively. The data file is specified in the [YAML](/documentation/code/namespaces/namespaceyaml/) by the `BR_h_inv_chi2_data_file` option. The path is relative to the GAMBIT directory, `GAMBIT_DIR`.
+The combined log likelihood gives BR < 0.14 at 95% CL. The best-fit value is BR = 0.06, which is preferred over BR = 0 with a significance of 1.2 sigma.
 
 This typically assumes that the Higgs is otherwise SM-like, i.e., no changes to production cross sections or any other decays.
 
@@ -1430,4 +1718,4 @@ void lnL_W_decays_chi2(
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

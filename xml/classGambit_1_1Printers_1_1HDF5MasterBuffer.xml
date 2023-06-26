@@ -4,10 +4,10 @@
     <compoundname>Gambit::Printers::HDF5MasterBuffer</compoundname>
     <includes refid="hdf5printer__v2_8hpp" local="no">hdf5printer_v2.hpp</includes>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ac9273be6b262efc6d83966d8748cc49a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1af948e879a61e9ff73d6ec02254aa6016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>Gambit::Printers::HDF5MasterBuffer::HDF5MasterBuffer</definition>
-        <argsstring>(const std::string &amp;filename, const std::string &amp;groupname, const bool sync, const std::size_t buffer_length)</argsstring>
+        <argsstring>(const std::string &amp;filename, const std::string &amp;groupname, const std::string &amp;metadata_groupname, const bool sync, const std::size_t buffer_length)</argsstring>
         <name>HDF5MasterBuffer</name>
         <qualifiedname>Gambit::Printers::HDF5MasterBuffer::HDF5MasterBuffer</qualifiedname>
         <param>
@@ -17,6 +17,10 @@
         <param>
           <type>const std::string &amp;</type>
           <declname>groupname</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>metadata_groupname</declname>
         </param>
         <param>
           <type>const bool</type>
@@ -34,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1184" column="9" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="388" bodyend="427"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1204" column="9" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="392" bodyend="433"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a69f259282f0fc8e9d1a766e963c75c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -49,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1191" column="9" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="429" bodyend="432"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1211" column="9" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="435" bodyend="438"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a20f1fa6201b4cdc568d000715da972bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -66,7 +70,29 @@
         <inbodydescription>
 <para>While we are here, check that buffered_points and buffered_points_set are the same size</para>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1251" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="463" bodyend="583"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1271" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="476" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a7465ea77546bc320e6bea7894adc58ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::HDF5MasterBuffer::print_metadata</definition>
+        <argsstring>(std::map&lt; std::string, std::string &gt;, bool)</argsstring>
+        <name>print_metadata</name>
+        <qualifiedname>Gambit::Printers::HDF5MasterBuffer::print_metadata</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, std::string &gt;</type>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+<para>Print metadata directly to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Print metadata directly to file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1274" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="599" bodyend="633"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a5977d3dd7f2ea69f140cc6026dcfd1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -81,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1309" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="850" bodyend="860"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1332" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="910" bodyend="921"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a81e145f5cd699201c73d4083ff93b702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -97,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1312" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1203" bodyend="1252"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1335" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1292" bodyend="1341"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a04bb3b4f87001e24ea8cd0f2832752e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -112,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1315" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1144" bodyend="1152"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1338" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1226" bodyend="1234"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a69a486c6cf94a78f803123ae288e9ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -127,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1318" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="434" bodyend="437"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1341" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="440" bodyend="443"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a55ec0303844a17283fdf78664e674506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -143,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1321" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1155" bodyend="1173"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1344" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1237" bodyend="1255"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1aefc99ad3c9cb2a2844c5c36643f60c93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -158,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1324" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="446" bodyend="446"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1347" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="452" bodyend="452"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a91160fec9122321f00925d0c4a3af08a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -173,7 +199,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1327" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="449" bodyend="453"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1350" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="455" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ade9601d95de54cc3c8e214626cf9f93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::HDF5MasterBuffer::get_metadata_group</definition>
+        <argsstring>()</argsstring>
+        <name>get_metadata_group</name>
+        <qualifiedname>Gambit::Printers::HDF5MasterBuffer::get_metadata_group</qualifiedname>
+        <briefdescription>
+<para>Report the name of the metadata group on this file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1353" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="463" bodyend="466"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a02cfeadecb7f5e1271012a3c985a1b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -188,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1330" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="440" bodyend="443"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1356" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="446" bodyend="449"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a6cd06d800009aefa459c56c99520a594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -203,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1333" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="456" bodyend="459"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1359" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="469" bodyend="472"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1aab30ffb5ca30a9d91a67ea4b703a5636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -222,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1336" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1183" bodyend="1191"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1362" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1272" bodyend="1280"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ac9803e8d8219bdb368dbda0d5b6dd6fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::map&lt; ulong, ulong &gt;</type>
@@ -241,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1339" column="18" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1059" bodyend="1141"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1365" column="18" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1141" bodyend="1223"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a376963b07e027debece6f3a0d8f6c4b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -261,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1342" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="775" bodyend="803"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1368" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="825" bodyend="854"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a00086eef7c5435f5aaf3fa9a377c0f60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -276,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1345" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="806" bodyend="847"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1371" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="857" bodyend="907"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a28899542db789bfea352216b6b14d99a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>hid_t</type>
@@ -291,7 +332,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1348" column="15" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1176" bodyend="1180"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1374" column="15" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1258" bodyend="1262"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a248b3b1e81d335ff1786736566d88d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5MasterBuffer::get_metadata_id</definition>
+        <argsstring>()</argsstring>
+        <name>get_metadata_id</name>
+        <qualifiedname>Gambit::Printers::HDF5MasterBuffer::get_metadata_id</qualifiedname>
+        <briefdescription>
+<para>Retrieve the metadata_id where the metadata should be created in the HDF5 file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1377" column="15" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1265" bodyend="1269"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a55427f291dce13887e0bbde76adf11e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -307,7 +363,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1351" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="918" bodyend="956"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1380" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="979" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a148b80d1d675afb75576f695dd817d08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t Gambit::Printers::HDF5MasterBuffer::get_next_metadata_position</definition>
+        <argsstring>()</argsstring>
+        <name>get_next_metadata_position</name>
+        <qualifiedname>Gambit::Printers::HDF5MasterBuffer::get_next_metadata_position</qualifiedname>
+        <briefdescription>
+<para>Get the next position for metadata entries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine the next position for metadata entries. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1383" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1020" bodyend="1038"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1aba93a233c766faf632683ce50308a60e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -322,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1354" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="902" bodyend="905"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1386" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="963" bodyend="966"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a7a6584c4564540e142b8693bb7488368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -337,7 +409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1357" column="16" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="910" bodyend="914"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1389" column="16" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="971" bodyend="975"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ad9039b3f421602baf95ef3be33c5378d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::pair&lt; std::string, int &gt; &gt;</type>
@@ -353,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1360" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="586" bodyend="609"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1392" column="21" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="636" bodyend="659"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1aea2247c86ee298192baf710c8bdbe1de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const std::map&lt; std::string, <ref refid="classGambit_1_1Printers_1_1HDF5BufferBase" kindref="compound">HDF5BufferBase</ref> * &gt; &amp;</type>
@@ -368,7 +440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1363" column="24" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1194" bodyend="1194"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1395" column="24" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1283" bodyend="1283"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a8a9c2d7dc3f1642842ec227fc58b4328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const std::set&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &gt; &amp;</type>
@@ -383,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1366" column="24" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1197" bodyend="1197"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1398" column="24" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1286" bodyend="1286"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1af20f6fe6c3298dbf895bfd1a8c881b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -402,7 +474,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1371" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1257" bodyend="1284"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1403" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1346" bodyend="1373"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1af375b0f214b00199706ff724e2bc6ea5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -422,13 +494,12 @@
 <para>Add base class pointer for a buffer to master buffer map. </para>
         </briefdescription>
         <detaileddescription>
-<para>Add base class point for a buffer to master buffer map <linebreak/>
- </para>
+<para>Add base class point for a buffer to master buffer map. </para>
         </detaileddescription>
         <inbodydescription>
 <para>Not already in the map; add it</para>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1399" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="863" bodyend="888"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1431" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="924" bodyend="949"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a857d2157e94eb513e530ab3d0c5fa7f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -447,7 +518,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1404" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="893" bodyend="899"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1436" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="954" bodyend="960"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1afc68f73f7535e611c99605093afe6547" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::map&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref>, std::size_t &gt;</type>
@@ -466,7 +537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1407" column="18" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="959" bodyend="1055"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1439" column="18" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="1041" bodyend="1137"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a2fedb140f1084215510f6cd1d35c7cf3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -481,7 +552,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1431" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="764" bodyend="772"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1465" column="14" bodyfile="Printers/src/printers/hdf5printer_v2/hdf5printer_v2.cpp" bodystart="814" bodyend="822"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -498,7 +569,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1376" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1376" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1408" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1408" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ad5c4c635410414f4ead62db73215ac9d" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &gt;</type>
@@ -513,7 +584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1382" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1382" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1414" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1414" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ac107244bad2a670b27b2a6a4692c6104" prot="private" static="no" mutable="no">
         <type>std::set&lt; <ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref> &gt;</type>
@@ -528,7 +599,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1386" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1386" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1418" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1418" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a9d789b7ca15c5b570261400b7a1912fb" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -543,7 +614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1389" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1389" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1421" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1421" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a397b705685c26dd9257304d31ebc7265" prot="private" static="no" mutable="no">
         <type>std::size_t</type>
@@ -558,7 +629,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1392" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1392" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1424" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1424" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a120c9818ae4ddbe00577cb3669b917e1" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -573,7 +644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1410" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1410" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1442" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1442" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a9d7b5382dd1157b54ee3a531bd26f87c" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -587,7 +658,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1411" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1411" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1443" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1aef3e05cf4417b33171d84b5399f5f0e9" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::Printers::HDF5MasterBuffer::metadata_group</definition>
+        <argsstring></argsstring>
+        <name>metadata_group</name>
+        <qualifiedname>Gambit::Printers::HDF5MasterBuffer::metadata_group</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1444" column="21" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1444" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1abebd48f3a119af1986fd3004813416b1" prot="private" static="no" mutable="no">
         <type>hid_t</type>
@@ -601,7 +686,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1414" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1414" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1447" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1447" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a0f55710091052181099b9c357c71f810" prot="private" static="no" mutable="no">
         <type>hid_t</type>
@@ -615,7 +700,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1415" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1415" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1448" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1afc2cc7eebdbdf4db0e28459083c1c5c1" prot="private" static="no" mutable="no">
+        <type>hid_t</type>
+        <definition>hid_t Gambit::Printers::HDF5MasterBuffer::metadata_id</definition>
+        <argsstring></argsstring>
+        <name>metadata_id</name>
+        <qualifiedname>Gambit::Printers::HDF5MasterBuffer::metadata_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1449" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1449" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a8ba3f8ab51f5b6d5e7131c6a3d61787c" prot="private" static="no" mutable="no">
         <type>hid_t</type>
@@ -629,7 +728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1419" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1419" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1453" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1453" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a1104196fad5671b254fdc7db3e51773f" prot="private" static="no" mutable="no">
         <type><ref refid="classGambit_1_1Utils_1_1FileLock" kindref="compound">Utils::FileLock</ref></type>
@@ -644,7 +743,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1422" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1422" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1456" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1456" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a0e23adce3e8c7da804d748cd53760535" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -658,7 +757,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1425" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1425" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1459" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1459" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a7ebe473f65db99a2f44b6b7694d810d7" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -672,7 +771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1428" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1428" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1462" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1462" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a33bcfb89f731a6b3e7feda39b4d147fc" prot="private" static="no" mutable="no">
         <type><ref refid="classGambit_1_1Printers_1_1HDF5MasterBufferT" kindref="compound">HDF5MasterBufferT</ref>&lt; int &gt;</type>
@@ -687,7 +786,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1436" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1436" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1470" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1470" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a88a2ab4a4aa412a23dbaec589532b68b" prot="private" static="no" mutable="no">
         <type><ref refid="classGambit_1_1Printers_1_1HDF5MasterBufferT" kindref="compound">HDF5MasterBufferT</ref>&lt; uint &gt;</type>
@@ -701,7 +800,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1437" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1437" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1471" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1471" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a2aef5bd1da7b0b6ecdb5e07b82a94bcd" prot="private" static="no" mutable="no">
         <type><ref refid="classGambit_1_1Printers_1_1HDF5MasterBufferT" kindref="compound">HDF5MasterBufferT</ref>&lt; long &gt;</type>
@@ -715,7 +814,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1438" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1438" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1472" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1472" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1adb2bf2f24070ce5485876709e92f0b3d" prot="private" static="no" mutable="no">
         <type><ref refid="classGambit_1_1Printers_1_1HDF5MasterBufferT" kindref="compound">HDF5MasterBufferT</ref>&lt; ulong &gt;</type>
@@ -729,7 +828,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1439" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1439" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1473" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1473" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1acf3ac7efe85f51157f8f3d6289c0bd94" prot="private" static="no" mutable="no">
         <type><ref refid="classGambit_1_1Printers_1_1HDF5MasterBufferT" kindref="compound">HDF5MasterBufferT</ref>&lt; float &gt;</type>
@@ -743,7 +842,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1442" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1442" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1476" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1476" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a4e4d7abf7a4eb284e2847ef7c91f243e" prot="private" static="no" mutable="no">
         <type><ref refid="classGambit_1_1Printers_1_1HDF5MasterBufferT" kindref="compound">HDF5MasterBufferT</ref>&lt; double &gt;</type>
@@ -757,7 +856,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1443" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1443" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1477" column="27" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1477" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -801,7 +900,7 @@
 <para>RA buffers may not have been able to fully flush, so check their length and report if it is getting big.</para>
 <para>Attempt to flush again every 1000 points beyond buffer limits</para>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1195" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1195" bodyend="1248"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1215" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1215" bodyend="1268"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -831,7 +930,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1396" column="20"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1428" column="20"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1add20aaf0ea239ebc41309e8fa8553bc6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -855,7 +954,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="523" column="22"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="543" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a0ed5bda9099a56211ceb690c3b215d66" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -878,7 +977,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="523" column="22"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="543" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a9cfefd3fd06b0bd53e5990ab6c78df4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -901,7 +1000,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="523" column="22"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="543" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a10a638be2a07981d33028452120cc366" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -924,7 +1023,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="523" column="22"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="543" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a78df937666ab676c13de7ae2e8e2e791" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -947,7 +1046,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="523" column="22"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="543" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5MasterBuffer_1aec203719834d36ba50851a68a3c6eb3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -970,7 +1069,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="523" column="22"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="543" column="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -978,7 +1077,7 @@
     <detaileddescription>
 <para>Class to manage all buffers for a given printer object Also handles the file locking/access to the output file </para>
     </detaileddescription>
-    <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1178" column="5" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1179" bodyend="1450"/>
+    <location file="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" line="1198" column="5" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer_v2.hpp" bodystart="1199" bodyend="1484"/>
     <listofallmembers>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ad5e8eb2d452f1af5dc937694f5e9259c" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>all_buffers</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a04bb3b4f87001e24ea8cd0f2832752e0" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>all_buffers_empty</name></member>
@@ -1008,8 +1107,11 @@
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a91160fec9122321f00925d0c4a3af08a" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_group</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ac9803e8d8219bdb368dbda0d5b6dd6fd" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_highest_PPIDs</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a28899542db789bfea352216b6b14d99a" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_location_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ade9601d95de54cc3c8e214626cf9f93b" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_metadata_group</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a248b3b1e81d335ff1786736566d88d8f" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_metadata_id</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1aba93a233c766faf632683ce50308a60e" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_Nbuffers</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a55427f291dce13887e0bbde76adf11e7" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_next_free_position</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a148b80d1d675afb75576f695dd817d08" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_next_metadata_position</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a6cd06d800009aefa459c56c99520a594" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_Npoints</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1afc68f73f7535e611c99605093afe6547" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_position_map</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a7a6584c4564540e142b8693bb7488368" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>get_sizeMB</name></member>
@@ -1022,11 +1124,14 @@
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a2aef5bd1da7b0b6ecdb5e07b82a94bcd" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>hdf5_buffers_long</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a88a2ab4a4aa412a23dbaec589532b68b" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>hdf5_buffers_uint</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1adb2bf2f24070ce5485876709e92f0b3d" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>hdf5_buffers_ulong</name></member>
-      <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1ac9273be6b262efc6d83966d8748cc49a" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>HDF5MasterBuffer</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1af948e879a61e9ff73d6ec02254aa6016" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>HDF5MasterBuffer</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a1104196fad5671b254fdc7db3e51773f" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>hdf5out</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a69a486c6cf94a78f803123ae288e9ce3" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>is_synchronised</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a8ba3f8ab51f5b6d5e7131c6a3d61787c" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>location_id</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a376963b07e027debece6f3a0d8f6c4b4" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>lock_and_open_file</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1aef3e05cf4417b33171d84b5399f5f0e9" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>metadata_group</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1afc2cc7eebdbdf4db0e28459083c1c5c1" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>metadata_id</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a7465ea77546bc320e6bea7894adc58ac" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>print_metadata</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a5977d3dd7f2ea69f140cc6026dcfd1eb" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>reset</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a81e145f5cd699201c73d4083ff93b702" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>resynchronise</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5MasterBuffer_1a99868ac0df78fc0a82f8222c6fb9a896" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5MasterBuffer</scope><name>schedule_print</name></member>

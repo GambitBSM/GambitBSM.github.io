@@ -18,6 +18,7 @@ description: "[No description available]"
 | Fdouble | **[cosmin](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-cosmin)**  |
 | Fdouble | **[waccd](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-waccd)**  |
 | Fdouble | **[dpminr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-dpminr)**  |
+| Fdouble | **[dpmaxr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-dpmaxr)**  |
 | Fdouble | **[dpthr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-dpthr)**  |
 | Fdouble | **[wdiffr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-wdiffr)**  |
 | Fdouble | **[wdifft](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-wdifft)**  |
@@ -29,6 +30,9 @@ description: "[No description available]"
 | Fdouble | **[umax](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-umax)**  |
 | Fdouble | **[cfr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-cfr)**  |
 | Fdouble | **[pmax](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-pmax)**  |
+| Fdouble | **[ptopr](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-ptopr)**  |
+| Fdouble | **[theps](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-theps)**  |
+| Fdouble | **[thepshi](/documentation/code/classes/structgambit_1_1ds__rdpars/#variable-thepshi)**  |
 
 ## Public Attributes Documentation
 
@@ -50,6 +54,13 @@ Fdouble waccd;
 
 ```
 Fdouble dpminr;
+```
+
+
+### variable dpmaxr
+
+```
+Fdouble dpmaxr;
 ```
 
 
@@ -130,6 +141,27 @@ Fdouble pmax;
 ```
 
 
+### variable ptopr
+
+```
+Fdouble ptopr;
+```
+
+
+### variable theps
+
+```
+Fdouble theps;
+```
+
+
+### variable thepshi
+
+```
+Fdouble thepshi;
+```
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:42 +0000
+Updated on 2023-06-26 at 21:36:50 +0000

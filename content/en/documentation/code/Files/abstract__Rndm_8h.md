@@ -72,11 +72,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual ::std::pair<double, double> gauss2() =0;
     
-                virtual int pick(const ::std::vector<double>&) =0;
+                virtual int pick(const std::vector<double>&) =0;
     
-                virtual bool dumpState(::std::basic_string<char>) =0;
+                virtual bool dumpState(std::string) =0;
     
-                virtual bool readState(::std::basic_string<char>) =0;
+                virtual bool readState(std::string) =0;
     
             public:
                 virtual void pointer_assign__BOSS(Abstract_Rndm*) =0;
@@ -136,4 +136,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

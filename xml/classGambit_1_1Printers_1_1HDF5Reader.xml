@@ -451,7 +451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="131" column="9" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="361" bodyend="375"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="131" column="9" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="389" bodyend="403"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5Reader_1a279ddd2dc6fb8f5229c5618bc57ad221" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ulong</type>
@@ -493,6 +493,29 @@
         </inbodydescription>
         <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="166" column="36"/>
       </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5Reader_1adf1a008c851bb8a6ae7b7a3c03a9c72f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Printers::HDF5Reader::parse_capability_label</definition>
+        <argsstring>(const std::string &amp;, std::string &amp;)</argsstring>
+        <name>parse_capability_label</name>
+        <qualifiedname>Gambit::Printers::HDF5Reader::parse_capability_label</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>capability_label</defname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <defname>dataset_label</defname>
+        </param>
+        <briefdescription>
+<para>Helper function to parse a capability name to a dataset name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="184" column="14" bodyfile="Printers/src/printers/hdf5printer/retrieve_overloads.cpp" bodystart="561" bodyend="580"/>
+      </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5Reader_1a680f834f7edb16e8bdcb17eb26913660" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
@@ -531,7 +554,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="185" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="185" bodyend="205"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="188" column="14" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="188" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1HDF5Reader_1ae79bdac84f75eec8364840d6bd1cc7a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -578,7 +601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="208" column="14" bodyfile="Printers/src/printers/hdf5printer/retrieve_overloads.cpp" bodystart="162" bodyend="210"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="215" column="14" bodyfile="Printers/src/printers/hdf5printer/retrieve_overloads.cpp" bodystart="162" bodyend="210"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -655,7 +678,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="112" column="5" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="113" bodyend="210"/>
+    <location file="Printers/include/gambit/Printers/printers/hdf5reader.hpp" line="112" column="5" bodyfile="Printers/include/gambit/Printers/printers/hdf5reader.hpp" bodystart="113" bodyend="217"/>
     <listofallmembers>
       <member refid="classGambit_1_1Printers_1_1HDF5Reader_1a080c5bf796d9bb764c3abe7037957570" prot="public" virt="non-virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>_retrieve</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5Reader_1a680f834f7edb16e8bdcb17eb26913660" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>_retrieve_template</name></member>
@@ -688,6 +711,7 @@
       <member refid="classGambit_1_1Printers_1_1HDF5Reader_1a31ad3f5c694bd2b2ce9acb6ad6bd6af3" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>mem_point</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5Reader_1a5ffcc18aa5b081027665d3d44a446619" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>mpiranks</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5Reader_1a22b74621a3e7b19d7f10a074b9b00974" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>mpiranks_isvalid</name></member>
+      <member refid="classGambit_1_1Printers_1_1HDF5Reader_1adf1a008c851bb8a6ae7b7a3c03a9c72f" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>parse_capability_label</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5Reader_1a047bea6f0ed2b6f370d007bfa3a54192" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>pointIDs</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5Reader_1ae5e2bdee00bf14e29844a7429f1bc87e" prot="private" virt="non-virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>pointIDs_isvalid</name></member>
       <member refid="classGambit_1_1Printers_1_1HDF5Reader_1adbf3d75debc16f8fc1e125e89c790ca1" prot="public" virt="virtual"><scope>Gambit::Printers::HDF5Reader</scope><name>reset</name></member>

@@ -5,7 +5,11 @@
     <innerclass refid="structGambit_1_1Utils_1_1ci__less" prot="public">Gambit::Utils::ci_less</innerclass>
     <innerclass refid="classGambit_1_1Utils_1_1FileLock" prot="public">Gambit::Utils::FileLock</innerclass>
     <innerclass refid="classGambit_1_1Utils_1_1interp1d__collection" prot="public">Gambit::Utils::interp1d_collection</innerclass>
+    <innerclass refid="classGambit_1_1Utils_1_1interp1d__gsl__collection" prot="public">Gambit::Utils::interp1d_gsl_collection</innerclass>
     <innerclass refid="classGambit_1_1Utils_1_1interp2d__collection" prot="public">Gambit::Utils::interp2d_collection</innerclass>
+    <innerclass refid="classGambit_1_1Utils_1_1interp2d__gsl__collection" prot="public">Gambit::Utils::interp2d_gsl_collection</innerclass>
+    <innerclass refid="classGambit_1_1Utils_1_1interp4d__collection" prot="public">Gambit::Utils::interp4d_collection</innerclass>
+    <innerclass refid="classGambit_1_1Utils_1_1interp5d__collection" prot="public">Gambit::Utils::interp5d_collection</innerclass>
     <innerclass refid="classGambit_1_1Utils_1_1ProcessLock" prot="public">Gambit::Utils::ProcessLock</innerclass>
     <innerclass refid="classGambit_1_1Utils_1_1specialised__threadsafe__rng" prot="public">Gambit::Utils::specialised_threadsafe_rng</innerclass>
     <innerclass refid="classGambit_1_1Utils_1_1threadsafe__rng" prot="public">Gambit::Utils::threadsafe_rng</innerclass>
@@ -19,7 +23,7 @@
         <name>hardmsg</name>
         <qualifiedname>Gambit::Utils::hardmsg</qualifiedname>
         <param>
-          <type>&quot;Now calling abort (will produce a core file for analysis <ref refid="DarkSUSY__MSSM__6__2__5_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref> this is enabled on your system; <ref refid="DarkSUSY__MSSM__6__2__5_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref> so please include this with the bug report)&quot;</type>
+          <type>&quot;Now calling abort (will produce a core file for analysis <ref refid="DarkSUSY__MSSM__6__4__0_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref> this is enabled on your system; <ref refid="DarkSUSY__MSSM__6__4__0_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref> so please include this with the bug report)&quot;</type>
         </param>
         <briefdescription>
 <para>Members of <ref refid="classGambit_1_1Utils_1_1FileLock" kindref="compound">FileLock</ref> class. </para>
@@ -28,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/file_lock.cpp" line="74" column="25" declfile="Utils/src/file_lock.cpp" declline="74" declcolumn="25"/>
+        <location file="Utils/src/file_lock.cpp" line="78" column="25" declfile="Utils/src/file_lock.cpp" declline="78" declcolumn="25"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -1110,6 +1114,74 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Utils/include/gambit/Utils/util_functions.hpp" line="251" column="23" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="251" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="interp__collection_8cpp_1a1bb585fd41764ea4f4aa66bab949dd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Utils::InterpIter</definition>
+        <argsstring>(int Ntemp, double xi_1, double xi_2, std::vector&lt; double &gt; &amp;fi, double test)</argsstring>
+        <name>InterpIter</name>
+        <qualifiedname>Gambit::Utils::InterpIter</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>Ntemp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xi_1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xi_2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>fi</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/interp_collection.cpp" line="1171" column="10" bodyfile="Utils/src/interp_collection.cpp" bodystart="1171" bodyend="1191" declfile="Utils/src/interp_collection.cpp" declline="690" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interp__collection_8cpp_1aedda42f2abec8d12400f5808f6d8188f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::Utils::linearinterp1D</definition>
+        <argsstring>(double x1, double x2, double y1, double y2, double xtest)</argsstring>
+        <name>linearinterp1D</name>
+        <qualifiedname>Gambit::Utils::linearinterp1D</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xtest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/interp_collection.cpp" line="1163" column="12" bodyfile="Utils/src/interp_collection.cpp" bodystart="1163" bodyend="1168"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8cpp_1a57798e61c9ebb61c62cb557bb45946ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>

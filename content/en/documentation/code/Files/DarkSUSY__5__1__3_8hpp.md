@@ -16,7 +16,7 @@ description: "[No description available]"
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_FUNCTION](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-function)**(dsrdtab , void , (double(*)(double &), double &, int &) , "dsrdtab_" , "dsrdtab" ) |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdmgev , DS5_RDMGEV , "rdmgev_" , "rdmgev" ) |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rddof , DS_RDDOF , "rddof_" , "rddof" ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdpars , DS_RDPARS , "rdpars_" , "rdpars" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdpars , DS_RDPARS_OLD , "rdpars_" , "rdpars" ) |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdlun , DS_RDLUN , "rdlun_" , "rdlun" ) |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch rdpadd | **[BE_VARIABLE](/documentation/code/files/darksusy__5__1__3_8hpp/#function-be-variable)**(rdtime , DS_RDTIME , "rdtime_" , "rdtime" ) |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) double double double double double int dsrdeqn rdpth rderrors rdswitch rdpadd const double(&const | **[double](/documentation/code/files/darksusy__5__1__3_8hpp/#function-double)**(& ) |
@@ -127,7 +127,7 @@ LOAD_LIBRARY double double double double double int dsrdeqn rdpth BE_VARIABLE(
 ```
 LOAD_LIBRARY double double double double double int dsrdeqn rdpth rderrors BE_VARIABLE(
     rdpars ,
-    DS_RDPARS ,
+    DS_RDPARS_OLD ,
     "rdpars_" ,
     "rdpars" 
 )
@@ -405,7 +405,7 @@ BE_VARIABLE(rdmgev, DS5_RDMGEV,     "rdmgev_",    "rdmgev")    // Contains infor
 BE_VARIABLE(rdpth, DS_RDPTH,       "rdpth_",     "rdpth")     // gRD thresholds
 BE_VARIABLE(rddof, DS_RDDOF,       "rddof_",     "rddof")     // gRD dofs
 BE_VARIABLE(rderrors, DS_RDERRORS, "rderrors_", "rderrors")   // gRD errors
-BE_VARIABLE(rdpars, DS_RDPARS,     "rdpars_",    "rdpars")    // gRD Parameters
+BE_VARIABLE(rdpars, DS_RDPARS_OLD,     "rdpars_",    "rdpars")    // gRD Parameters
 BE_VARIABLE(rdswitch, DS_RDSWITCH, "rdswitch_",  "rdswitch")  // gRD Switches
 BE_VARIABLE(rdlun, DS_RDLUN,       "rdlun_",     "rdlun")     // gRD I/O
 BE_VARIABLE(rdpadd, DS_RDPADD,     "rdpadd_",    "rdpadd")    // gRD I/O
@@ -447,4 +447,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(decay_rates, DecayTable, MSSM63atQ, CMSSM)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

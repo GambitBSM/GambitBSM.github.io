@@ -53,6 +53,7 @@ description: "[No description available]"
   * 2015 Jan, Feb
   * 2016 May, Dec 
   * 2018 Oct 
+  * 2019 Oct 
   * 2020 May
   * 2017 Nov 
 
@@ -108,6 +109,7 @@ Authors (add name and date if you modify):
 ///          (t.e.gonzalo@fys.uio.no)
 ///  \date 2016 May, Dec
 ///  \date 2018 Oct
+///  \date 2019 Oct
 ///  \date 2020 May
 ///
 /// \author Aaron Vincent
@@ -124,6 +126,7 @@ Authors (add name and date if you modify):
 #include <omp.h>
 #include <cstring>
 #include <complex>
+#include <memory>
 
 #include "gambit/Utils/standalone_error_handlers.hpp"
 #include "gambit/Utils/variadic_functions.hpp"
@@ -167,6 +170,10 @@ namespace Gambit
   typedef std::map<std::string,std::map<std::string,std::string> > map_str_map_str_str;
   /// Shorthand for an int-int pair to double map
   typedef std::map< std::pair < int, int >, double> map_intpair_dbl;
+
+  // Shorthand for vector of shared pointers
+  template <typename T>
+  using vector_shared_ptr = std::vector<std::shared_ptr<T>>;
 
   /// Shorthand for a pointer to a void function with no arguments
   typedef void (*fptr_void)();
@@ -755,4 +762,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

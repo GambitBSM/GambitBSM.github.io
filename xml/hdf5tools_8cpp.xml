@@ -288,14 +288,14 @@
         <param><defname>INPUTNAME</defname></param>
         <initializer>      IDTYPE_OUT FNAME(IDTYPE_IN id) \
       { \
-         <ref refid="DarkSUSY__MSSM__6__2__5_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref>(id &lt; 0) \
+         <ref refid="DarkSUSY__MSSM__6__4__0_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref>(id &lt; 0) \
          { \
             std::ostringstream errmsg; \
             errmsg &lt;&lt; &quot;Failed to &quot;&lt;&lt;VERB&lt;&lt;&quot; &quot;&lt;&lt;OUTPUTNAME&lt;&lt;&quot; for HDF5 dataset! The supplied id does not point to a successfully opened &quot;&lt;&lt;INPUTNAME&lt;&lt;&quot;!&quot;; \
             printer_error().raise(LOCAL_INFO, errmsg.str()); \
          } \
          IDTYPE_OUT out_id = H5FUNCTION(id); \
-         <ref refid="DarkSUSY__MSSM__6__2__5_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref>(out_id &lt; 0) \
+         <ref refid="DarkSUSY__MSSM__6__4__0_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref>(out_id &lt; 0) \
          { \
             std::ostringstream errmsg; \
             errmsg &lt;&lt; &quot;Failed to &quot;&lt;&lt;VERB&lt;&lt;&quot; &quot;&lt;&lt;OUTPUTNAME&lt;&lt;&quot; for HDF5 dataset! See HDF5 error output for more details.&quot;; \
@@ -317,7 +317,7 @@
         <param><defname>r</defname></param>
         <param><defname>data</defname></param>
         <param><defname>elem</defname></param>
-        <initializer>                  <ref refid="DarkSUSY__MSSM__6__2__5_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref>( H5Tequal(datatype_id, get_hdf5_data_type&lt;elem&gt;::type()) )\
+        <initializer>                  <ref refid="DarkSUSY__MSSM__6__4__0_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref>( H5Tequal(datatype_id, get_hdf5_data_type&lt;elem&gt;::type()) )\
                   {\
                       readable_info = _checkDatasetReadable_helper&lt;elem&gt;(dataset_id,dsetname);\
                   }\
@@ -335,7 +335,7 @@
         <param><defname>r</defname></param>
         <param><defname>data</defname></param>
         <param><defname>elem</defname></param>
-        <initializer>            else <ref refid="DarkSUSY__MSSM__6__2__5_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref>(H5Tequal(h5type,get_hdf5_data_type&lt;elem&gt;::type())) \
+        <initializer>            else <ref refid="DarkSUSY__MSSM__6__4__0_8cpp_1a4cc6f5317481c4b2f46fb215ba938f45" kindref="member">if</ref>(H5Tequal(h5type,get_hdf5_data_type&lt;elem&gt;::type())) \
             { \
                out = h5v2_type&lt;elem&gt;(); \
             }</initializer>

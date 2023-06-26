@@ -20,11 +20,12 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**()<br>Default constructor.  |
 | | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::string & name)<br>Constructor with analysis name.  |
-| | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > & srds, const Eigen::MatrixXd & cov =Eigen::MatrixXd())<br>Constructor from a list of [SignalRegionData]() and an optional correlation (or covariance?) matrix.  |
+| | **[AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-analysisdata)**(const std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > & srds, const Eigen::MatrixXd & cov =Eigen::MatrixXd(), const std::string path ="")<br>Constructor from a list of [SignalRegionData]() and an optional correlation (or covariance?) matrix.  |
 | void | **[clear](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-clear)**() |
 | size_t | **[size](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-size)**() const<br>Number of analyses.  |
 | bool | **[empty](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-empty)**() const<br>Is this container empty of signal regions?  |
 | bool | **[hasCorrs](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-hascorrs)**() const<br>Is there non-null correlation data?  |
+| bool | **[hasFullLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-hasfulllikes)**() const<br>Is there non-null correlation data?  |
 | void | **[add](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-add)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & srd)<br>Add a [SignalRegionData]().  |
 | bool | **[check](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-check)**() const<br>Check that the SRData list and the covariance matrix are consistent.  |
 | void | **[pythonize_me](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-pythonize-me)**() const |
@@ -44,6 +45,7 @@ description: "[No description available]"
 | std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > | **[srdata](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata)** <br>List of signal regions' data summaries.  |
 | std::map< std::string, int > | **[srdata_identifiers](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata-identifiers)** <br>Map of names and indices of all entries in srdata, for easy lookup.  |
 | Eigen::MatrixXd | **[srcov](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srcov)** <br>Optional covariance matrix between SRs (0x0 null matrix = no correlation info)  |
+| std::string | **[bkgjson_path](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-bkgjson-path)** <br>FullLikes bkg json file path realtive to the GAMBIT directory.  |
 
 ## Detailed Description
 
@@ -85,7 +87,8 @@ Constructor with analysis name.
 ```
 inline AnalysisData(
     const std::vector< SignalRegionData > & srds,
-    const Eigen::MatrixXd & cov =Eigen::MatrixXd()
+    const Eigen::MatrixXd & cov =Eigen::MatrixXd(),
+    const std::string path =""
 )
 ```
 
@@ -126,6 +129,14 @@ Is this container empty of signal regions?
 
 ```
 inline bool hasCorrs() const
+```
+
+Is there non-null correlation data? 
+
+### function hasFullLikes
+
+```
+inline bool hasFullLikes() const
 ```
 
 Is there non-null correlation data? 
@@ -255,6 +266,14 @@ Eigen::MatrixXd srcov;
 
 Optional covariance matrix between SRs (0x0 null matrix = no correlation info) 
 
+### variable bkgjson_path
+
+```
+std::string bkgjson_path;
+```
+
+FullLikes bkg json file path realtive to the GAMBIT directory. 
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

@@ -42,14 +42,14 @@ description: "[No description available]"
 ### function myversion
 
 ```
-void myversion()
+inline void myversion()
 ```
 
 
 ### function MT
 
 ```
-double MT(
+inline double MT(
     double px1,
     double px2,
     double py1,
@@ -63,7 +63,7 @@ double MT(
 ### function ben_findsols
 
 ```
-std::pair< double, double > ben_findsols(
+inline std::pair< double, double > ben_findsols(
     double MT2,
     double px,
     double py,
@@ -297,7 +297,7 @@ bool ellipsesAreDisjoint(const EllipseParams & e1, const EllipseParams & e2);
 // This is an implementation thing: users should not call it:
 bool __private_ellipsesAreDisjoint(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0);
 
-bool ellipsesAreDisjoint(const EllipseParams & e1, const EllipseParams & e2) {
+inline bool ellipsesAreDisjoint(const EllipseParams & e1, const EllipseParams & e2) {
   /* We want to construct the polynomial "Det(lamdba A + B)" where A and B are the 3x3 matrices associated with e1 and e2, and we want to get that
   polynomial in the form lambda^3 + a lambda^2 + b lambda + c.
 
@@ -323,7 +323,7 @@ bool ellipsesAreDisjoint(const EllipseParams & e1, const EllipseParams & e2) {
     return __private_ellipsesAreDisjoint(coeffLamPow0, coeffLamPow1, coeffLamPow2, coeffLamPow3); // reversed order
   }
 }
-bool __private_ellipsesAreDisjoint(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0) {
+inline bool __private_ellipsesAreDisjoint(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0) {
 
   // precondition of being called:
   //assert(fabs(coeffLamPow3)>=fabs(coeffLamPow0));
@@ -627,13 +627,13 @@ class asymm_mt2_lester_bisect {
   }
 };
 
-void myversion(){
+inline void myversion(){
 
   std::cout << "Version is : 2014_11_13" << std::endl;
 
 }
 
-double MT(double px1, double px2, double py1, double py2, double m1 , double m2){
+inline double MT(double px1, double px2, double py1, double py2, double m1 , double m2){
   double E1 = sqrt(px1*px1+py1*py1+m1*m1);
   double E2 = sqrt(px2*px2+py2*py2+m2*m2);
   double Msq = (E1+E2)*(E1+E2)-(px1+px2)*(px1+px2)-(py1+py2)*(py1+py2);
@@ -641,7 +641,7 @@ double MT(double px1, double px2, double py1, double py2, double m1 , double m2)
   return sqrt(Msq);
 }
 
-std::pair <double,double>  ben_findsols(double MT2, double px, double py, double visM, double Ma, double pxb, double pyb, double metx, double mety, double visMb, double Mb){
+inline std::pair <double,double>  ben_findsols(double MT2, double px, double py, double visM, double Ma, double pxb, double pyb, double metx, double mety, double visMb, double Mb){
 
   //Visible particle (px,py,visM)                                                                                                                  
   std::pair <double,double> sols;
@@ -722,4 +722,4 @@ std::pair <double,double>  ben_findsols(double MT2, double px, double py, double
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

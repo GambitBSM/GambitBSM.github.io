@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="88" column="36" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="88" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="98" column="36" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classGambit_1_1Utils_1_1ProcessLock_1a1816e16bf0add4d44a9cc9131f7f4ac0" prot="private" static="yes" mutable="no">
         <type>const std::string</type>
@@ -35,17 +35,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="91" column="36" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="91" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="101" column="36" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="101" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Utils_1_1ProcessLock_1a7751fcf9d1b1090eef095d5d7b1cb447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1ProcessLock_1a9ff6b49771f3ad7b15cdc27cfbfa4567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>Gambit::Utils::ProcessLock::ProcessLock</definition>
-        <argsstring>(const std::string &amp;fname, const bool harderrs=false)</argsstring>
+        <argsstring>(const std::string &amp;fname, const bool is_exhaustible=true, const bool harderrs=false)</argsstring>
         <name>ProcessLock</name>
         <qualifiedname>Gambit::Utils::ProcessLock::ProcessLock</qualifiedname>
         <param>
           <type>const std::string &amp;</type>
           <declname>fname</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>is_exhaustible</declname>
+          <defval>true</defval>
         </param>
         <param>
           <type>const bool</type>
@@ -59,7 +64,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="95" column="11" bodyfile="Utils/src/file_lock.cpp" bodystart="210" bodyend="212"/>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="105" column="11" bodyfile="Utils/src/file_lock.cpp" bodystart="281" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Utils_1_1ProcessLock_1acfdeb52036f423eae99040905d041fa1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Utils::ProcessLock::clean_locks</definition>
+        <argsstring>()</argsstring>
+        <name>clean_locks</name>
+        <qualifiedname>Gambit::Utils::ProcessLock::clean_locks</qualifiedname>
+        <briefdescription>
+<para>Clean up existing process locks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Deleting existing locks. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/file_lock.hpp" line="108" column="23" bodyfile="Utils/src/file_lock.cpp" bodystart="286" bodyend="289"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -91,14 +112,16 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Utils/include/gambit/Utils/file_lock.hpp" line="84" column="7" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="85" bodyend="96"/>
+    <location file="Utils/include/gambit/Utils/file_lock.hpp" line="94" column="7" bodyfile="Utils/include/gambit/Utils/file_lock.hpp" bodystart="95" bodyend="109"/>
     <listofallmembers>
-      <member refid="classGambit_1_1Utils_1_1FileLock_1a8bcce9a6c8168d1cf20ce1dfd751c48a" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>FileLock</name></member>
+      <member refid="classGambit_1_1Utils_1_1ProcessLock_1acfdeb52036f423eae99040905d041fa1" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>clean_locks</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1ad477dd4f642f82dad0ff025bc7614743" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>exhausted</name></member>
+      <member refid="classGambit_1_1Utils_1_1FileLock_1a576eee5f0872c3a6cf7a5cbd97f78852" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>FileLock</name></member>
       <member refid="classGambit_1_1Utils_1_1FileLock_1a8a6da1bd087bec267f997d71ba24cb0f" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>get_filename</name></member>
       <member refid="classGambit_1_1Utils_1_1FileLock_1a40dc7048003861d5e543f4bf6876f0dd" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>get_lock</name></member>
       <member refid="classGambit_1_1Utils_1_1ProcessLock_1a5e8187dd499f7ea7c7195a4135a9468b" prot="private" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>lock_prefix</name></member>
       <member refid="classGambit_1_1Utils_1_1ProcessLock_1a1816e16bf0add4d44a9cc9131f7f4ac0" prot="private" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>lock_suffix</name></member>
-      <member refid="classGambit_1_1Utils_1_1ProcessLock_1a7751fcf9d1b1090eef095d5d7b1cb447" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>ProcessLock</name></member>
+      <member refid="classGambit_1_1Utils_1_1ProcessLock_1a9ff6b49771f3ad7b15cdc27cfbfa4567" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>ProcessLock</name></member>
       <member refid="classGambit_1_1Utils_1_1FileLock_1a69e8e2574575749e13d78b30af04e2fc" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>release_lock</name></member>
       <member refid="classGambit_1_1Utils_1_1FileLock_1a4f030db82976cb88db9737456dfb4c42" prot="public" virt="non-virtual"><scope>Gambit::Utils::ProcessLock</scope><name>~FileLock</name></member>
     </listofallmembers>

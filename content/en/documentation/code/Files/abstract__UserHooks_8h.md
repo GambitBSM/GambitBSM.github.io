@@ -135,9 +135,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool canEnhanceEmission() =0;
     
-                virtual double enhanceFactor(::std::basic_string<char>) =0;
+                virtual double enhanceFactor(std::string) =0;
     
-                virtual double vetoProbability(::std::basic_string<char>) =0;
+                virtual double vetoProbability(std::string) =0;
     
                 virtual void setEnhancedEventWeight(double) =0;
     
@@ -212,4 +212,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

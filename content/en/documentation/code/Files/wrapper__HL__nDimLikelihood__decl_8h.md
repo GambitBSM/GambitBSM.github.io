@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/wrapper_HL_nDimLikelihood_decl.h"
+title: "file HepLike_2_0/wrapper_HL_nDimLikelihood_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/wrapper_HL_nDimLikelihood_decl.h
+# file HepLike_2_0/wrapper_HL_nDimLikelihood_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_HL_nDimLikelihood_decl_HepLike_1_2_h__
-#define __wrapper_HL_nDimLikelihood_decl_HepLike_1_2_h__
+#ifndef __wrapper_HL_nDimLikelihood_decl_HepLike_2_0_h__
+#define __wrapper_HL_nDimLikelihood_decl_HepLike_2_0_h__
 
 #include <cstddef>
 #include <string>
@@ -43,7 +43,6 @@ namespace CAT_3(
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_HL_nDimLikelihood.h"
-#include "wrapper_HL_Data_decl.h"
 #include <boost/numeric/ublas/matrix.hpp>
 
 #include "identification.hpp"
@@ -52,49 +51,68 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 {
    
    
-   class HL_nDimLikelihood : public HL_Data
+   class HL_nDimLikelihood : public WrapperBase
    {
          // Member variables: 
       public:
          // -- Static factory pointers: 
          static Abstract_HL_nDimLikelihood* (*__factory0)();
-         static Abstract_HL_nDimLikelihood* (*__factory1)(::std::basic_string<char>);
+         static Abstract_HL_nDimLikelihood* (*__factory1)(std::string);
    
          // -- Other member variables: 
       public:
          double& loglikelihood_penalty;
+         std::string& HL_RootFile;
+         std::string& HL_PATH;
+         std::vector<std::string>& Observables;
+         int& NoOfObservables;
+         int& size_restricted;
+         double& xmin;
+         double& xmax;
+         double& ymin;
+         double& ymax;
+         double& zmin;
+         double& zmax;
+         std::vector<double>& central_mes_val;
+         int& dim;
+         int& n_binsX;
+         int& n_binsY;
+         int& n_binsZ;
+         bool& profiled;
    
          // Member functions: 
       public:
          void Read();
    
-         double GetChi2(::std::vector<double> theory);
+         double GetChi2(std::vector<double> theory);
    
-         double GetChi2(::std::vector<double> theory, ::boost::numeric::ublas::matrix<double> theory_cov);
+         double GetChi2(std::vector<double> theory, boost::numeric::ublas::matrix<double> theory_cov);
    
-         double GetLikelihood(::std::vector<double> theory);
+         double GetLikelihood(std::vector<double> theory);
    
-         double GetLikelihood(::std::vector<double> theory, ::boost::numeric::ublas::matrix<double> theory_cov);
+         double GetLikelihood(std::vector<double> theory, boost::numeric::ublas::matrix<double> theory_cov);
    
-         double GetLogLikelihood(::std::vector<double> theory);
+         double GetLogLikelihood(std::vector<double> theory);
    
-         double GetLogLikelihood(::std::vector<double> theory, ::boost::numeric::ublas::matrix<double> theory_cov);
+         double GetLogLikelihood(std::vector<double> theory, boost::numeric::ublas::matrix<double> theory_cov);
+   
+         void Profile(std::string arg_1);
    
          void Profile();
    
-         double GetChi2_profile(double theory, ::std::basic_string<char> arg_1);
+         double GetChi2_profile(double theory, std::string arg_1);
    
-         double GetLikelihood_profile(double theory, ::std::basic_string<char> axis);
+         double GetLikelihood_profile(double theory, std::string axis);
    
-         double GetLogLikelihood_profile(double theory, ::std::basic_string<char> X);
+         double GetLogLikelihood_profile(double theory, std::string X);
    
-         ::std::vector<std::basic_string<char>> GetObservables();
+         ::std::vector<std::string> GetObservables();
    
    
          // Wrappers for original constructors: 
       public:
          HL_nDimLikelihood();
-         HL_nDimLikelihood(::std::basic_string<char> s);
+         HL_nDimLikelihood(std::string s);
    
          // Special pointer-based constructor: 
          HL_nDimLikelihood(Abstract_HL_nDimLikelihood* in);
@@ -118,10 +136,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_HL_nDimLikelihood_decl_HepLike_1_2_h__ */
+#endif /* __wrapper_HL_nDimLikelihood_decl_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

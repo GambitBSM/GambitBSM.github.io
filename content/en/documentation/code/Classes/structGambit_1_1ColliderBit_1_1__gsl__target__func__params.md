@@ -15,11 +15,12 @@ A struct to contain parameters for the GSL optimiser target function.
 |                | Name           |
 | -------------- | -------------- |
 | double | **[lambda](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-lambda)**  |
-| AnalysisDataPointers | **[adata_ptrs_original](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-adata-ptrs-original)**  |
+| [AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) | **[adata_ptrs_original](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-adata-ptrs-original)**  |
 | std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[skip_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-skip-analyses)**  |
 | bool | **[use_covar](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-covar)**  |
 | bool | **[use_marg](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-marg)**  |
 | bool | **[combine_nocovar_SRs](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-combine-nocovar-srs)**  |
+| bool | **[use_fulllikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-fulllikes)**  |
 
 ## Public Attributes Documentation
 
@@ -65,6 +66,13 @@ bool combine_nocovar_SRs;
 ```
 
 
+### variable use_fulllikes
+
+```
+bool use_fulllikes;
+```
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:51 +0000

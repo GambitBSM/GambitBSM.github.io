@@ -26,6 +26,10 @@ description: "[No description available]"
 | class | **[Gambit::DarkBit::CAST_SolarModel_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/)**  |
 | class | **[Gambit::DarkBit::DiracSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1diracsingletdm/)**  |
 | class | **[Gambit::DarkBit::DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/)**  |
+| class | **[Gambit::DarkBit::DMsimpVectorMedDiracDM](/documentation/code/classes/classgambit_1_1darkbit_1_1dmsimpvectormeddiracdm/)**  |
+| class | **[Gambit::DarkBit::DMsimpVectorMedMajoranaDM](/documentation/code/classes/classgambit_1_1darkbit_1_1dmsimpvectormedmajoranadm/)**  |
+| class | **[Gambit::DarkBit::DMsimpVectorMedScalarDM](/documentation/code/classes/classgambit_1_1darkbit_1_1dmsimpvectormedscalardm/)**  |
+| class | **[Gambit::DarkBit::DMsimpVectorMedVectorDM](/documentation/code/classes/classgambit_1_1darkbit_1_1dmsimpvectormedvectordm/)**  |
 | struct | **[Gambit::DarkBit::dRdE_params](/documentation/code/classes/structgambit_1_1darkbit_1_1drde__params/)**  |
 | class | **[Gambit::DarkBit::HESS_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1hess__interpolator/)**  |
 | class | **[Gambit::DarkBit::Interpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1interpolator2d/)**  |
@@ -109,6 +113,9 @@ description: "[No description available]"
 | void | **[DD_couplings_WIMP](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-couplings-wimp)**([DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result) |
 | [error](/documentation/code/classes/classgambit_1_1error/) & | **[DarkBit_error](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkbit-error)**() |
 | [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[DarkBit_warning](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkbit-warning)**() |
+| void | **[lnL_pbarAMS02](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-pbarams02)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
+| void | **[lnL_pbarAMS02_uncorr](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-pbarams02-uncorr)**(double & result) |
+| void | **[lnL_pbarAMS02_corr](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-pbarams02-corr)**(double & result) |
 | double | **[parabola](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-parabola)**(double x, const double params[])<br>H.E.S.S.-likelihood-related interpolation routines.  |
 | double | **[intersect_parabola_line](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-intersect-parabola-line)**(double a, double b, double sign, const double pparams[]) |
 | double | **[rho_integrand](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rho-integrand)**(double rho, void * params) |
@@ -209,6 +216,22 @@ description: "[No description available]"
 | void | **[DarkMatter_ID_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-dmeft)**(std::string & result) |
 | void | **[DarkMatterConj_ID_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-dmeft)**(std::string & result) |
 | void | **[DD_rel_WCs_flavscheme_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-dmeft)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
+| void | **[TH_ProcessCatalog_DMsimpVectorMedDiracDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-dmsimpvectormeddiracdm)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
+| void | **[DarkMatter_ID_DMsimpVectorMedDiracDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-dmsimpvectormeddiracdm)**(std::string & result) |
+| void | **[DarkMatterConj_ID_DMsimpVectorMedDiracDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-dmsimpvectormeddiracdm)**(std::string & result) |
+| void | **[DD_rel_WCs_flavscheme_DMsimpVectorMedDiracDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-dmsimpvectormeddiracdm)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
+| void | **[TH_ProcessCatalog_DMsimpVectorMedMajoranaDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-dmsimpvectormedmajoranadm)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
+| void | **[DarkMatter_ID_DMsimpVectorMedMajoranaDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-dmsimpvectormedmajoranadm)**(std::string & result) |
+| void | **[DarkMatterConj_ID_DMsimpVectorMedMajoranaDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-dmsimpvectormedmajoranadm)**(std::string & result) |
+| void | **[DD_rel_WCs_flavscheme_DMsimpVectorMedMajoranaDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-dmsimpvectormedmajoranadm)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
+| void | **[TH_ProcessCatalog_DMsimpVectorMedScalarDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-dmsimpvectormedscalardm)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
+| void | **[DarkMatter_ID_DMsimpVectorMedScalarDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-dmsimpvectormedscalardm)**(std::string & result) |
+| void | **[DarkMatterConj_ID_DMsimpVectorMedScalarDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-dmsimpvectormedscalardm)**(std::string & result) |
+| void | **[DD_rel_WCs_flavscheme_DMsimpVectorMedScalarDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-rel-wcs-flavscheme-dmsimpvectormedscalardm)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
+| void | **[TH_ProcessCatalog_DMsimpVectorMedVectorDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-dmsimpvectormedvectordm)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
+| void | **[DarkMatter_ID_DMsimpVectorMedVectorDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-dmsimpvectormedvectordm)**(std::string & result) |
+| void | **[DarkMatterConj_ID_DMsimpVectorMedVectorDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-dmsimpvectormedvectordm)**(std::string & result) |
+| void | **[DD_nonrel_WCs_DMsimpVectorMedVectorDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-nonrel-wcs-dmsimpvectormedvectordm)**([NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) & result) |
 | void | **[DarkMatter_ID_AnnihilatingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-annihilatingdm-mixture)**(std::string & result) |
 | void | **[DarkMatterConj_ID_AnnihilatingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-annihilatingdm-mixture)**(std::string & result) |
 | void | **[DarkMatter_ID_DecayingDM_mixture](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-decayingdm-mixture)**(std::string & result) |
@@ -272,12 +295,15 @@ description: "[No description available]"
 | void | **[RD_eff_annrate_DS_MSSM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-eff-annrate-ds-mssm)**(double(*&)(double &) result)<br>Get Weff directly from initialized DarkSUSY. Note that these functions do not (and should not) correct Weff for non-self-conjugate dark matter.  |
 | void | **[RD_eff_annrate_DS5_MSSM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-eff-annrate-ds5-mssm)**(double(*&)(double &) result) |
 | void | **[RD_eff_annrate_from_ProcessCatalog](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-eff-annrate-from-processcatalog)**(double(*&)(double &) result)<br>Infer Weff from process catalog.  |
+| void | **[RD_oh2_DS6pre4_ini_func](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds6pre4-ini-func)**(int & result)<br>Some helper function to prepare evaluation of RD_oh2_DS_general from DarkSUSY 6., up to version 6.2.5.  |
+| void | **[RD_oh2_DS6_ini_func](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds6-ini-func)**(int & result)<br>Some helper function to prepare evaluation of RD_oh2_DS_general from DarkSUSY 6., starting from version 6.4.0.  |
 | void | **[RD_oh2_DS_general](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds-general)**(double & result)<br>General routine for calculation of relic density, using DarkSUSY 6+ Boltzmann solver.  |
 | void | **[RD_oh2_DS5_general](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds5-general)**(double & result)<br>General routine for calculation of relic density, using DarkSUSY 5 Boltzmann solver.  |
 | void | **[RD_oh2_Xf_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-xf-micromegas)**([ddpair](/documentation/code/namespaces/namespacegambit/#typedef-ddpair) & result)<br>Relic density directly from a call of initialized MicrOmegas.  |
 | void | **[RD_oh2_DarkSUSY_DS5](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-darksusy-ds5)**(double & result)<br>Relic density directly from a call of initialized DarkSUSY 5.  |
 | void | **[RD_oh2_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-micromegas)**(double & result) |
 | void | **[Xf_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-xf-micromegas)**(double & result) |
+| void | **[RD_from_postprocessor](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-from-postprocessor)**(double & result) |
 | void | **[print_channel_contributions_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-print-channel-contributions-micromegas)**(double & result) |
 | void | **[get_semi_ann_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-get-semi-ann-micromegas)**(double & result) |
 | void | **[vSigma_freezeout_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-vsigma-freezeout-micromegas)**(double & result)<br>Return the thermally averaged cross-section at T_freezeout.  |
@@ -799,6 +825,33 @@ error & DarkBit_error()
 
 ```
 warning & DarkBit_warning()
+```
+
+
+### function lnL_pbarAMS02
+
+```
+void lnL_pbarAMS02(
+    map_str_dbl & result
+)
+```
+
+
+### function lnL_pbarAMS02_uncorr
+
+```
+void lnL_pbarAMS02_uncorr(
+    double & result
+)
+```
+
+
+### function lnL_pbarAMS02_corr
+
+```
+void lnL_pbarAMS02_corr(
+    double & result
+)
 ```
 
 
@@ -1896,6 +1949,159 @@ void DD_rel_WCs_flavscheme_DMEFT(
 Relativistic Wilson Coefficients for direct detection [DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/) basis is the same as that used in DirectDM 
 
 
+### function TH_ProcessCatalog_DMsimpVectorMedDiracDM
+
+```
+void TH_ProcessCatalog_DMsimpVectorMedDiracDM(
+    TH_ProcessCatalog & result
+)
+```
+
+
+### function DarkMatter_ID_DMsimpVectorMedDiracDM
+
+```
+void DarkMatter_ID_DMsimpVectorMedDiracDM(
+    std::string & result
+)
+```
+
+
+### function DarkMatterConj_ID_DMsimpVectorMedDiracDM
+
+```
+void DarkMatterConj_ID_DMsimpVectorMedDiracDM(
+    std::string & result
+)
+```
+
+
+### function DD_rel_WCs_flavscheme_DMsimpVectorMedDiracDM
+
+```
+void DD_rel_WCs_flavscheme_DMsimpVectorMedDiracDM(
+    map_str_dbl & result
+)
+```
+
+
+Relativistic Wilson Coefficients for direct detection [DMsimpVectorMedDiracDM](/documentation/code/classes/classgambit_1_1darkbit_1_1dmsimpvectormeddiracdm/) basis is the same as that used in DirectDM 
+
+
+### function TH_ProcessCatalog_DMsimpVectorMedMajoranaDM
+
+```
+void TH_ProcessCatalog_DMsimpVectorMedMajoranaDM(
+    TH_ProcessCatalog & result
+)
+```
+
+
+### function DarkMatter_ID_DMsimpVectorMedMajoranaDM
+
+```
+void DarkMatter_ID_DMsimpVectorMedMajoranaDM(
+    std::string & result
+)
+```
+
+
+### function DarkMatterConj_ID_DMsimpVectorMedMajoranaDM
+
+```
+void DarkMatterConj_ID_DMsimpVectorMedMajoranaDM(
+    std::string & result
+)
+```
+
+
+### function DD_rel_WCs_flavscheme_DMsimpVectorMedMajoranaDM
+
+```
+void DD_rel_WCs_flavscheme_DMsimpVectorMedMajoranaDM(
+    map_str_dbl & result
+)
+```
+
+
+Relativistic Wilson Coefficients for direct detection [DMsimpVectorMedMajoranaDM](/documentation/code/classes/classgambit_1_1darkbit_1_1dmsimpvectormedmajoranadm/) basis is the same as that used in DirectDM 
+
+
+### function TH_ProcessCatalog_DMsimpVectorMedScalarDM
+
+```
+void TH_ProcessCatalog_DMsimpVectorMedScalarDM(
+    TH_ProcessCatalog & result
+)
+```
+
+
+### function DarkMatter_ID_DMsimpVectorMedScalarDM
+
+```
+void DarkMatter_ID_DMsimpVectorMedScalarDM(
+    std::string & result
+)
+```
+
+
+### function DarkMatterConj_ID_DMsimpVectorMedScalarDM
+
+```
+void DarkMatterConj_ID_DMsimpVectorMedScalarDM(
+    std::string & result
+)
+```
+
+
+### function DD_rel_WCs_flavscheme_DMsimpVectorMedScalarDM
+
+```
+void DD_rel_WCs_flavscheme_DMsimpVectorMedScalarDM(
+    map_str_dbl & result
+)
+```
+
+
+Relativistic Wilson Coefficients for direct detection [DMsimpVectorMedScalarDM](/documentation/code/classes/classgambit_1_1darkbit_1_1dmsimpvectormedscalardm/) basis is the same as that used in DirectDM 
+
+
+### function TH_ProcessCatalog_DMsimpVectorMedVectorDM
+
+```
+void TH_ProcessCatalog_DMsimpVectorMedVectorDM(
+    TH_ProcessCatalog & result
+)
+```
+
+
+### function DarkMatter_ID_DMsimpVectorMedVectorDM
+
+```
+void DarkMatter_ID_DMsimpVectorMedVectorDM(
+    std::string & result
+)
+```
+
+
+### function DarkMatterConj_ID_DMsimpVectorMedVectorDM
+
+```
+void DarkMatterConj_ID_DMsimpVectorMedVectorDM(
+    std::string & result
+)
+```
+
+
+### function DD_nonrel_WCs_DMsimpVectorMedVectorDM
+
+```
+void DD_nonrel_WCs_DMsimpVectorMedVectorDM(
+    NREO_DM_nucleon_couplings & result
+)
+```
+
+
 ### function DarkMatter_ID_AnnihilatingDM_mixture
 
 ```
@@ -2619,6 +2825,36 @@ void RD_eff_annrate_from_ProcessCatalog(
 
 Infer Weff from process catalog. 
 
+### function RD_oh2_DS6pre4_ini_func
+
+```
+void RD_oh2_DS6pre4_ini_func(
+    int & result
+)
+```
+
+Some helper function to prepare evaluation of RD_oh2_DS_general from DarkSUSY 6., up to version 6.2.5. 
+
+Option timeout<double>: Maximum core time to allow for relic density calculation, in seconds (default: 600s)
+
+Option fast<int>: Numerical performance of Boltzmann solver in DS (default: 1) [NB: accurate is fast = 0 !]
+
+
+### function RD_oh2_DS6_ini_func
+
+```
+void RD_oh2_DS6_ini_func(
+    int & result
+)
+```
+
+Some helper function to prepare evaluation of RD_oh2_DS_general from DarkSUSY 6., starting from version 6.4.0. 
+
+Option timeout<double>: Maximum core time to allow for relic density calculation, in seconds (default: 600s)
+
+Option fast<int>: Numerical performance of Boltzmann solver in DS (default: 1) [NB: accurate is fast = 0 !]
+
+
 ### function RD_oh2_DS_general
 
 ```
@@ -2633,11 +2869,6 @@ Requires:
 
 * RD_thresholds_resonances from RD_spectrum_ordered
 * RD_eff_annrate (Weff) 
-
-
-Option fast<int>: Numerical performance of Boltzmann solver in DS (default: 1) [NB: accurate is fast = 0 !]
-
-Option timeout<double>: Maximum core time to allow for relic density calculation, in seconds (default: 600s)
 
 
 ### function RD_oh2_DS5_general
@@ -2701,6 +2932,15 @@ void RD_oh2_MicrOmegas(
 
 ```
 void Xf_MicrOmegas(
+    double & result
+)
+```
+
+
+### function RD_from_postprocessor
+
+```
+void RD_from_postprocessor(
     double & result
 )
 ```
@@ -3416,4 +3656,4 @@ static std::vector< std::string > channels {"e", "mu", "tau",
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

@@ -19,6 +19,8 @@ description: "[No description available]"
 | **[Utils/begin_ignore_warnings_hepmc.hpp](/documentation/code/files/begin__ignore__warnings__hepmc_8hpp/#file-utils-begin-ignore-warnings-hepmc-hpp)**  |
 | **[Utils/begin_ignore_warnings_mpi.hpp](/documentation/code/files/begin__ignore__warnings__mpi_8hpp/#file-utils-begin-ignore-warnings-mpi-hpp)**  |
 | **[Utils/begin_ignore_warnings_pybind11.hpp](/documentation/code/files/begin__ignore__warnings__pybind11_8hpp/#file-utils-begin-ignore-warnings-pybind11-hpp)**  |
+| **[Utils/begin_ignore_warnings_rivet_backend.hpp](/documentation/code/files/begin__ignore__warnings__rivet__backend_8hpp/#file-utils-begin-ignore-warnings-rivet-backend-hpp)**  |
+| **[Utils/begin_ignore_warnings_yoda.hpp](/documentation/code/files/begin__ignore__warnings__yoda_8hpp/#file-utils-begin-ignore-warnings-yoda-hpp)**  |
 | **[Utils/bibtex_functions.hpp](/documentation/code/files/bibtex__functions_8hpp/#file-utils-bibtex-functions-hpp)**  |
 | **[Utils/boost_fallbacks.hpp](/documentation/code/files/boost__fallbacks_8hpp/#file-utils-boost-fallbacks-hpp)**  |
 | **[Utils/Utils/include/gambit/Utils/cats.hpp](/documentation/code/files/utils_2include_2gambit_2utils_2cats_8hpp/#file-utils-utils-include-gambit-utils-cats-hpp)**  |
@@ -69,4 +71,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

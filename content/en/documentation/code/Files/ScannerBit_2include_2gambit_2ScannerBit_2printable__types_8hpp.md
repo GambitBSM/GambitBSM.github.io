@@ -101,10 +101,11 @@ Authors:
 ### define SCANNER_PRINTABLE_TYPES
 
 ```
-#define SCANNER_PRINTABLE_TYPES     SCANNER_SIMPLE_TYPES              \
-    SCANNER_VECTOR_TYPES              \
-    (map_str_dbl)                     \
-    (Gambit::ModelParameters)
+#define SCANNER_PRINTABLE_TYPES     SCANNER_SIMPLE_TYPES          \
+    SCANNER_VECTOR_TYPES          \
+    (map_str_dbl)                 \
+    (map_str_str)                 \
+    (Gambit::ModelParameters)     \
 ```
 
 
@@ -190,11 +191,12 @@ namespace Gambit
     (std::vector<float>)              \
     (std::vector<double>)
 
-  #define SCANNER_PRINTABLE_TYPES     \
-    SCANNER_SIMPLE_TYPES              \
-    SCANNER_VECTOR_TYPES              \
-    (map_str_dbl)                     \
-    (Gambit::ModelParameters)
+  #define SCANNER_PRINTABLE_TYPES \
+    SCANNER_SIMPLE_TYPES          \
+    SCANNER_VECTOR_TYPES          \
+    (map_str_dbl)                 \
+    (map_str_str)                 \
+    (Gambit::ModelParameters)     \
 
   #define SCANNER_RETRIEVABLE_TYPES   \
     SCANNER_SIMPLE_TYPES              \
@@ -208,4 +210,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

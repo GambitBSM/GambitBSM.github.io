@@ -75,7 +75,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             public:
                 void setPtr(Pythia8::Info* infoPtrIn);
         
-                void init(Pythia8::Settings& settings, Pythia8::Rndm* rndmPtr, Pythia8::Couplings* couplingsPtrIn, Pythia8::ParticleData* particleDataPtr, bool& useSHLAcouplings, ::std::basic_stringstream<char>& ParticleDataBuffer);
+                void init(Pythia8::Settings& settings, Pythia8::Rndm* rndmPtr, Pythia8::Couplings* couplingsPtrIn, Pythia8::ParticleData* particleDataPtr, bool& useSHLAcouplings, std::stringstream& ParticleDataBuffer);
         
                 bool initSLHA(Pythia8::Settings& settings, Pythia8::ParticleData* particleDataPtr);
         
@@ -115,4 +115,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

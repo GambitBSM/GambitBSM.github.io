@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/wrapper_HL_ProfLikelihood.h"
+title: "file HepLike_2_0/wrapper_HL_ProfLikelihood.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/wrapper_HL_ProfLikelihood.h
+# file HepLike_2_0/wrapper_HL_ProfLikelihood.h
 
 [No description available]
 
@@ -15,18 +15,18 @@ description: "[No description available]"
 ## Source code
 
 ```
-#ifndef __wrapper_HL_ProfLikelihood_HepLike_1_2_h__
-#define __wrapper_HL_ProfLikelihood_HepLike_1_2_h__
+#ifndef __wrapper_HL_ProfLikelihood_HepLike_2_0_h__
+#define __wrapper_HL_ProfLikelihood_HepLike_2_0_h__
 
 
 #include "wrapper_HL_ProfLikelihood_decl.h"
 #include "wrapper_HL_ProfLikelihood_def.h"
 
 
-#endif /* __wrapper_HL_ProfLikelihood_HepLike_1_2_h__ */
+#endif /* __wrapper_HL_ProfLikelihood_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

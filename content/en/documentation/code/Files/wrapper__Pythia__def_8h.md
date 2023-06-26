@@ -66,47 +66,47 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
-        inline bool Pythia::readString(::std::basic_string<char> arg_1, bool warn)
+        inline bool Pythia::readString(std::string arg_1, bool warn)
         {
             return get_BEptr()->readString(arg_1, warn);
         }
         
-        inline bool Pythia::readString(::std::basic_string<char> arg_1)
+        inline bool Pythia::readString(std::string arg_1)
         {
             return get_BEptr()->readString__BOSS(arg_1);
         }
         
-        inline bool Pythia::readFile(::std::basic_string<char> fileName, bool warn, int subrun)
+        inline bool Pythia::readFile(std::string fileName, bool warn, int subrun)
         {
             return get_BEptr()->readFile(fileName, warn, subrun);
         }
         
-        inline bool Pythia::readFile(::std::basic_string<char> fileName, bool warn)
+        inline bool Pythia::readFile(std::string fileName, bool warn)
         {
             return get_BEptr()->readFile__BOSS(fileName, warn);
         }
         
-        inline bool Pythia::readFile(::std::basic_string<char> fileName)
+        inline bool Pythia::readFile(std::string fileName)
         {
             return get_BEptr()->readFile__BOSS(fileName);
         }
         
-        inline bool Pythia::readFile(::std::basic_string<char> fileName, int subrun)
+        inline bool Pythia::readFile(std::string fileName, int subrun)
         {
             return get_BEptr()->readFile(fileName, subrun);
         }
         
-        inline bool Pythia::readFile(::std::basic_istream<char>& is, bool warn, int subrun)
+        inline bool Pythia::readFile(std::istream& is, bool warn, int subrun)
         {
             return get_BEptr()->readFile(is, warn, subrun);
         }
         
-        inline bool Pythia::readFile(::std::basic_istream<char>& is, bool warn)
+        inline bool Pythia::readFile(std::istream& is, bool warn)
         {
             return get_BEptr()->readFile__BOSS(is, warn);
         }
         
-        inline bool Pythia::readFile(::std::basic_istream<char>& is)
+        inline bool Pythia::readFile(std::istream& is)
         {
             return get_BEptr()->readFile__BOSS(is);
         }
@@ -116,7 +116,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->readFile__BOSS();
         }
         
-        inline bool Pythia::readFile(::std::basic_istream<char>& is, int subrun)
+        inline bool Pythia::readFile(std::istream& is, int subrun)
         {
             return get_BEptr()->readFile(is, subrun);
         }
@@ -131,7 +131,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->setResonancePtr__BOSS((*resonancePtrIn).get_BEptr());
         }
         
-        inline bool Pythia::init(::std::basic_ostream<char>& os)
+        inline bool Pythia::init(std::ostream& os)
         {
             return get_BEptr()->init(os);
         }
@@ -176,7 +176,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->forceRHadronDecays();
         }
         
-        inline void Pythia::LHAeventList(::std::basic_ostream<char>& os)
+        inline void Pythia::LHAeventList(std::ostream& os)
         {
             get_BEptr()->LHAeventList(os);
         }
@@ -196,29 +196,29 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->stat();
         }
         
-        inline bool Pythia::flag(::std::basic_string<char> key)
+        inline bool Pythia::flag(std::string key)
         {
             return get_BEptr()->flag(key);
         }
         
-        inline int Pythia::mode(::std::basic_string<char> key)
+        inline int Pythia::mode(std::string key)
         {
             return get_BEptr()->mode(key);
         }
         
-        inline double Pythia::parm(::std::basic_string<char> key)
+        inline double Pythia::parm(std::string key)
         {
             return get_BEptr()->parm(key);
         }
         
-        inline ::std::basic_string<char> Pythia::word(::std::basic_string<char> key)
+        inline ::std::string Pythia::word(std::string key)
         {
             return get_BEptr()->word(key);
         }
         
         
         // Wrappers for original constructors: 
-        inline Pythia::Pythia(::std::basic_string<char> xmlDir, bool printBanner) :
+        inline Pythia::Pythia(std::string xmlDir, bool printBanner) :
             WrapperBase(__factory0(xmlDir, printBanner)),
             process( get_BEptr()->process_ref__BOSS().get_init_wref()),
             event( get_BEptr()->event_ref__BOSS().get_init_wref()),
@@ -233,7 +233,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->set_delete_wrapper(false);
         }
         
-        inline Pythia::Pythia(::std::basic_string<char> xmlDir) :
+        inline Pythia::Pythia(std::string xmlDir) :
             WrapperBase(__factory1(xmlDir)),
             process( get_BEptr()->process_ref__BOSS().get_init_wref()),
             event( get_BEptr()->event_ref__BOSS().get_init_wref()),
@@ -353,4 +353,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

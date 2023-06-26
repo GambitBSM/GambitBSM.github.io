@@ -34,6 +34,7 @@ Inherited by [Gambit::IniParser::IniFile](/documentation/code/classes/classgambi
 | const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[getModelParameters](/documentation/code/classes/classgambit_1_1iniparser_1_1parser/#function-getmodelparameters)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) model) const |
 | const [Options](/documentation/code/classes/classgambit_1_1options/) | **[getOptions](/documentation/code/classes/classgambit_1_1iniparser_1_1parser/#function-getoptions)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) key) const<br>Getter for options.  |
 | virtual void | **[readFile](/documentation/code/classes/classgambit_1_1iniparser_1_1parser/#function-readfile)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename)<br>Read in the [YAML](/documentation/code/namespaces/namespaceyaml/) file.  |
+| YAML::Node | **[getYAMLNode](/documentation/code/classes/classgambit_1_1iniparser_1_1parser/#function-getyamlnode)**() const<br>Getter for the full [YAML](/documentation/code/namespaces/namespaceyaml/) node.  |
 
 ## Protected Functions
 
@@ -41,6 +42,7 @@ Inherited by [Gambit::IniParser::IniFile](/documentation/code/classes/classgambi
 | -------------- | -------------- |
 | YAML::Node | **[filename_to_node](/documentation/code/classes/classgambit_1_1iniparser_1_1parser/#function-filename-to-node)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename)<br>Read in the actual [YAML](/documentation/code/namespaces/namespaceyaml/) file.  |
 | void | **[basicParse](/documentation/code/classes/classgambit_1_1iniparser_1_1parser/#function-basicparse)**(YAML::Node root, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename)<br>Do the basic parsing of the [YAML](/documentation/code/namespaces/namespaceyaml/) file.  |
+| void | **[printNode](/documentation/code/classes/classgambit_1_1iniparser_1_1parser/#function-printnode)**(YAML::Node node, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename, bool replace_yaml_file)<br>Print a node to file.  |
 
 ## Public Functions Documentation
 
@@ -191,6 +193,17 @@ Read in the [YAML](/documentation/code/namespaces/namespaceyaml/) file.
 **Reimplemented by**: [Gambit::IniParser::IniFile::readFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-readfile)
 
 
+### function getYAMLNode
+
+```
+YAML::Node getYAMLNode() const
+```
+
+Getter for the full [YAML](/documentation/code/namespaces/namespaceyaml/) node. 
+
+Getter for the full [YAML](/documentation/code/namespaces/namespaceyaml/) Node. 
+
+
 ## Protected Functions Documentation
 
 ### function filename_to_node
@@ -214,6 +227,21 @@ void basicParse(
 
 Do the basic parsing of the [YAML](/documentation/code/namespaces/namespaceyaml/) file. 
 
+### function printNode
+
+```
+void printNode(
+    YAML::Node node,
+    str filename,
+    bool replace_yaml_file
+)
+```
+
+Print a node to file. 
+
+Print a yaml node to file. 
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

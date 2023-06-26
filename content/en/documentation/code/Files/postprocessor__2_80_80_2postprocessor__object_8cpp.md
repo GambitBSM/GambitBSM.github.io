@@ -678,7 +678,7 @@ namespace Gambit
             // Don't bother doing any processing for zero length chunks
             // Just check whether the calling code wants us to shut down early
             // NOTE: A trick here is that the Master process never runs the likelihood container
-            // in this Master/Slave setup. So we have to manually check for the signal,
+            // in this Master/Worker setup. So we have to manually check for the signal,
             // which is a little clumsy because I ideally wanted to leave this up to the
             // likelihood container. But doing this locks the postprocessor into using
             // the GAMBIT signal handling methods. TODO: is there another way?
@@ -1285,4 +1285,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

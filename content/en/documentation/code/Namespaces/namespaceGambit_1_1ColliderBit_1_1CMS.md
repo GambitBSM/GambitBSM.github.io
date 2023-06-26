@@ -25,6 +25,8 @@ CMS-specific efficiency and smearing functions for super fast detector simulatio
 | void | **[applyCSVv2MediumBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
 | void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtageff)**(std::vector< const HEPUtils::Jet * > & bjets) |
 | void | **[applyCSVv2LooseBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2TightBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2tightbtageff)**(std::vector< const HEPUtils::Jet * > & bjets) |
+| void | **[applyCSVv2TightBtagEff](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2tightbtageff)**(std::vector< HEPUtils::Jet * > & bjets) |
 | void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applybtagmisid)**(double mis_id_prob, std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply user-specified b-tag misidentification rate (flat)  |
 | void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applybtagmisid)**(double mis_id_prob, std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
 | void | **[applyCSVv2LooseBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2loosebtagmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets) |
@@ -35,6 +37,19 @@ CMS-specific efficiency and smearing functions for super fast detector simulatio
 | void | **[applyCSVv2MediumBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtagmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
 | void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtageffandmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets)<br>Apply both b-tag efficiency and misidentification rate for CSVv2 medium WP.  |
 | void | **[applyCSVv2MediumBtagEffAndMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-applycsvv2mediumbtageffandmisid)**(std::vector< HEPUtils::Jet * > & jets, std::vector< HEPUtils::Jet * > & bjets) |
+| const HEPUtils::BinnedFn2D< double > | **[eff2DEl_SUS_16_039](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-eff2del-sus-16-039)**({0., 0.8, 1.442, 1.556, 2., 2.5, DBL_MAX} , {0., 10., 15., 20., 25., 30., 40., 50., DBL_MAX} , { 0.0, 0.95, 0.507, 0.619, 0.682, 0.742, 0.798, 0.863, 0.0, 0.95, 0.429, 0.546, 0.619, 0.710, 0.734, 0.833, 0.0, 0.95, 0.256, 0.221, 0.315, 0.351, 0.373, 0.437, 0.0, 0.85, 0.249, 0.404, 0.423, 0.561, 0.642, 0.749, 0.0, 0.85, 0.195, 0.245, 0.380, 0.441, 0.533, 0.644, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } ) |
+| const HEPUtils::BinnedFn2D< double > | **[eff2DMu_SUS_16_039](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-eff2dmu-sus-16-039)**({0., 0.9, 1.2, 2.1, 2.4, DBL_MAX} , {0., 10., 15., 20., 25., 30., 40., 50., DBL_MAX} , { 0.0, 0.704, 0.797, 0.855, 0.880, 0.906, 0.927, 0.931, 0.0, 0.639, 0.776, 0.836, 0.875, 0.898, 0.940, 0.930, 0.0, 0.596, 0.715, 0.840, 0.862, 0.891, 0.906, 0.925, 0.0, 0.522, 0.720, 0.764, 0.803, 0.807, 0.885, 0.877, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } ) |
+| const HEPUtils::BinnedFn2D< double > | **[eff2DTau_SUS_16_039](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-eff2dtau-sus-16-039)**({0., 2.3} , {0., 25., 30., 35., 40., 45., 50., 60., 70., 80., DBL_MAX} , {0.38 *0.95, 0.48 *0.95, 0.5 *0.95, 0.49 *0.95, 0.51 *0.95, 0.49 *0.95, 0.47 *0.95, 0.45 *0.95, 0.48 *0.95, 0.5 *0.95} ) |
+| const HEPUtils::BinnedFn2D< double > | **[eff2DEl_SUS_19_008](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-eff2del-sus-19-008)**({0., 0.8, 1.442, 1.556, 2., 2.5, DBL_MAX} , {0., 10., 15., 20., 25., 30., 40., 50., DBL_MAX} , { 0.0, 0.95, 0.330, 0.412, 0.487, 0.561, 0.615, 0.701, 0.0, 0.95, 0.276, 0.367, 0.434, 0.520, 0.575, 0.660, 0.0, 0.95, 0.202, 0.170, 0.224, 0.261, 0.275, 0.341, 0.0, 0.85, 0.210, 0.288, 0.358, 0.434, 0.493, 0.586, 0.0, 0.85, 0.146, 0.200, 0.246, 0.314, 0.382, 0.456, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } ) |
+| const HEPUtils::BinnedFn2D< double > | **[eff2DMu_SUS_19_008](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-eff2dmu-sus-19-008)**({0., 0.9, 1.2, 2.1, 2.4, DBL_MAX} , {0., 10., 15., 20., 25., 30., 40., 50., DBL_MAX} , { 0.0, 0.527, 0.639, 0.723, 0.801, 0.858, 0.887, 0.926, 0.0, 0.482, 0.596, 0.695, 0.755, 0.831, 0.870, 0.917, 0.0, 0.498, 0.585, 0.683, 0.743, 0.807, 0.851, 0.896, 0.0, 0.441, 0.522, 0.604, 0.677, 0.744, 0.793, 0.834, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } ) |
+
+## Attributes
+
+|                | Name           |
+| -------------- | -------------- |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), HEPUtils::BinnedFn2D< double > > | **[eff2DEl](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#variable-eff2del)**  |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), HEPUtils::BinnedFn2D< double > > | **[eff2DMu](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#variable-eff2dmu)**  |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), HEPUtils::BinnedFn2D< double > > | **[eff2DTau](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#variable-eff2dtau)**  |
 
 
 ## Functions Documentation
@@ -211,6 +226,29 @@ inline void applyCSVv2LooseBtagEff(
 ```
 
 
+### function applyCSVv2TightBtagEff
+
+```
+inline void applyCSVv2TightBtagEff(
+    std::vector< const HEPUtils::Jet * > & bjets
+)
+```
+
+
+**Note**: Numbers digitized from [https://twiki.cern.ch/twiki/pub/CMSPublic/SUSMoriond2017ObjectsEfficiency/btag_eff_CSVv2_DeepCSV.pdf](https://twiki.cern.ch/twiki/pub/CMSPublic/SUSMoriond2017ObjectsEfficiency/btag_eff_CSVv2_DeepCSV.pdf)
+
+Apply efficiency function to CSVv2 tight WP b-tagged jets 
+
+
+### function applyCSVv2TightBtagEff
+
+```
+inline void applyCSVv2TightBtagEff(
+    std::vector< HEPUtils::Jet * > & bjets
+)
+```
+
+
 ### function applyBtagMisId
 
 ```
@@ -326,10 +364,103 @@ inline void applyCSVv2MediumBtagEffAndMisId(
 ```
 
 
+### function eff2DEl_SUS_16_039
+
+```
+static const HEPUtils::BinnedFn2D< double > eff2DEl_SUS_16_039(
+    {0., 0.8, 1.442, 1.556, 2., 2.5, DBL_MAX} ,
+    {0., 10., 15., 20., 25., 30., 40., 50., DBL_MAX} ,
+    { 0.0, 0.95, 0.507, 0.619, 0.682, 0.742, 0.798, 0.863, 0.0, 0.95, 0.429, 0.546, 0.619, 0.710, 0.734, 0.833, 0.0, 0.95, 0.256, 0.221, 0.315, 0.351, 0.373, 0.437, 0.0, 0.85, 0.249, 0.404, 0.423, 0.561, 0.642, 0.749, 0.0, 0.85, 0.195, 0.245, 0.380, 0.441, 0.533, 0.644, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } 
+)
+```
+
+
+Representative Muon and Electron efficiencies for the WPs of the identification techniques used in SUSY analyses From [https://twiki.cern.ch/twiki/bin/view/CMSPublic/SUSMoriond2017ObjectsEfficiency](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SUSMoriond2017ObjectsEfficiency) {@ 
+
+
+### function eff2DMu_SUS_16_039
+
+```
+static const HEPUtils::BinnedFn2D< double > eff2DMu_SUS_16_039(
+    {0., 0.9, 1.2, 2.1, 2.4, DBL_MAX} ,
+    {0., 10., 15., 20., 25., 30., 40., 50., DBL_MAX} ,
+    { 0.0, 0.704, 0.797, 0.855, 0.880, 0.906, 0.927, 0.931, 0.0, 0.639, 0.776, 0.836, 0.875, 0.898, 0.940, 0.930, 0.0, 0.596, 0.715, 0.840, 0.862, 0.891, 0.906, 0.925, 0.0, 0.522, 0.720, 0.764, 0.803, 0.807, 0.885, 0.877, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } 
+)
+```
+
+
+### function eff2DTau_SUS_16_039
+
+```
+static const HEPUtils::BinnedFn2D< double > eff2DTau_SUS_16_039(
+    {0., 2.3} ,
+    {0., 25., 30., 35., 40., 45., 50., 60., 70., 80., DBL_MAX} ,
+    {0.38 *0.95, 0.48 *0.95, 0.5 *0.95, 0.49 *0.95, 0.51 *0.95, 0.49 *0.95, 0.47 *0.95, 0.45 *0.95, 0.48 *0.95, 0.5 *0.95} 
+)
+```
+
+
+### function eff2DEl_SUS_19_008
+
+```
+static const HEPUtils::BinnedFn2D< double > eff2DEl_SUS_19_008(
+    {0., 0.8, 1.442, 1.556, 2., 2.5, DBL_MAX} ,
+    {0., 10., 15., 20., 25., 30., 40., 50., DBL_MAX} ,
+    { 0.0, 0.95, 0.330, 0.412, 0.487, 0.561, 0.615, 0.701, 0.0, 0.95, 0.276, 0.367, 0.434, 0.520, 0.575, 0.660, 0.0, 0.95, 0.202, 0.170, 0.224, 0.261, 0.275, 0.341, 0.0, 0.85, 0.210, 0.288, 0.358, 0.434, 0.493, 0.586, 0.0, 0.85, 0.146, 0.200, 0.246, 0.314, 0.382, 0.456, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } 
+)
+```
+
+
+### function eff2DMu_SUS_19_008
+
+```
+static const HEPUtils::BinnedFn2D< double > eff2DMu_SUS_19_008(
+    {0., 0.9, 1.2, 2.1, 2.4, DBL_MAX} ,
+    {0., 10., 15., 20., 25., 30., 40., 50., DBL_MAX} ,
+    { 0.0, 0.527, 0.639, 0.723, 0.801, 0.858, 0.887, 0.926, 0.0, 0.482, 0.596, 0.695, 0.755, 0.831, 0.870, 0.917, 0.0, 0.498, 0.585, 0.683, 0.743, 0.807, 0.851, 0.896, 0.0, 0.441, 0.522, 0.604, 0.677, 0.744, 0.793, 0.834, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } 
+)
+```
+
+
+
+## Attributes Documentation
+
+### variable eff2DEl
+
+```
+static const std::map< str, HEPUtils::BinnedFn2D< double > > eff2DEl =
+      {
+        {"SUS_16_039", eff2DEl_SUS_16_039},
+        {"SUS_19_008", eff2DEl_SUS_19_008}
+      };
+```
+
+
+### variable eff2DMu
+
+```
+static const std::map< str, HEPUtils::BinnedFn2D< double > > eff2DMu =
+      {
+        {"SUS_16_039", eff2DMu_SUS_16_039},
+        {"SUS_19_008", eff2DMu_SUS_19_008}
+
+      };
+```
+
+
+### variable eff2DTau
+
+```
+static const std::map< str, HEPUtils::BinnedFn2D< double > > eff2DTau =
+      {
+        {"SUS_16_039", eff2DTau_SUS_16_039}
+      };
+```
+
 
 
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

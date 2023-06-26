@@ -48,14 +48,14 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    {
       
       // Member functions: 
-      inline ::std::basic_string<char, std::char_traits<char>, std::allocator<char> > ESetupError::what() const
+      inline ::std::string ESetupError::what() const
       {
          return get_BEptr()->what();
       }
       
       
       // Wrappers for original constructors: 
-      inline ESetupError::ESetupError(const ::std::basic_string<char, std::char_traits<char>, std::allocator<char> >& message_) :
+      inline ESetupError::ESetupError(const std::string& message_) :
          Error(__factory0(message_))
       {
          get_BEptr()->set_wptr(this);
@@ -122,4 +122,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

@@ -30,7 +30,7 @@ description: "[No description available]"
 
 **Date**: 
 
-  * 2020 February
+  * 2020 February, 2023
   * 2020 September
 
 
@@ -106,7 +106,7 @@ Authors (add name and date if you modify):
 ///
 ///  \author Torsten Bringmann
 ///          (torsten.bringmann@fys.uio.no)
-///  \date 2020 February
+///  \date 2020 February, 2023
 ///
 ///  \author Pat Scott
 ///          (pat.scott@uq.edu.au)
@@ -126,6 +126,10 @@ LOAD_LIBRARY
 // Include common DarkSUSY frontend declarations shared across all model-specific versions of the backend
 #include "gambit/Backends/frontends/shared_includes/DarkSUSY_6.hpp"
 
+// Common blocks in the DarkSUSY core library that are not identical for all DS6 versions
+BE_VARIABLE(rdpars, DS_RDPARS_OLD,     "rdpars_",    "rdpars")    // gRD Parameters
+
+
 // Undefine macros to avoid conflict with other backends
 #include "gambit/Backends/backend_undefs.hpp"
 ```
@@ -133,4 +137,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

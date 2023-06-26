@@ -17,13 +17,22 @@ description: "[No description available]"
 |  | **[Default_Pythia](/documentation/code/files/default__bossed__versions_8hpp/#define-default-pythia)**  |
 |  | **[Default_HepLike](/documentation/code/files/default__bossed__versions_8hpp/#define-default-heplike)**  |
 |  | **[Default_vevacious](/documentation/code/files/default__bossed__versions_8hpp/#define-default-vevacious)**  |
+|  | **[Default_Rivet](/documentation/code/files/default__bossed__versions_8hpp/#define-default-rivet)**  |
 
 ## Detailed Description
 
 
-**Author**: Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
+**Author**: 
 
-**Date**: 2014 Nov
+  * Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
+  * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
+
+
+**Date**: 
+
+  * 2014 Nov
+  * 2019 Sep
+
 
 Choices about the default versions of backends to use for loading types (specific versions of types can always be used by employing the qualified type BACKENDNAME_SAFEVERSION::TYPE)
 
@@ -59,7 +68,7 @@ Authors (add name and date if you modify):
 ### define Default_HepLike
 
 ```
-#define Default_HepLike 1_2
+#define Default_HepLike 2_0
 ```
 
 
@@ -67,6 +76,13 @@ Authors (add name and date if you modify):
 
 ```
 #define Default_vevacious 1_0
+```
+
+
+### define Default_Rivet
+
+```
+#define Default_Rivet 3_1_5
 ```
 
 
@@ -91,6 +107,10 @@ Authors (add name and date if you modify):
 ///          (patscott@physics.mcgill.ca)
 ///  \date 2014 Nov
 ///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2019 Sep
+///
 ///  *********************************************
 
 #pragma once
@@ -99,8 +119,9 @@ Authors (add name and date if you modify):
 
 #define  Default_gm2calc 1_3_0
 #define  Default_Pythia 8_212
-#define  Default_HepLike 1_2
+#define  Default_HepLike 2_0
 #define  Default_vevacious 1_0
+#define  Default_Rivet 3_1_5
 
 // Defaults added by GUM (do not remove this comment).
 ```
@@ -108,4 +129,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

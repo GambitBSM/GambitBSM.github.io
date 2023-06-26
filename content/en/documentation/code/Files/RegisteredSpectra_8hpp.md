@@ -31,6 +31,10 @@ description: "[No description available]"
 | struct | **[Gambit::SpectrumContents::MajoranaSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1majoranasingletdm__z2/)**  |
 | struct | **[Gambit::SpectrumContents::DiracSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1diracsingletdm__z2/)**  |
 | struct | **[Gambit::SpectrumContents::DMEFT](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmeft/)**  |
+| struct | **[Gambit::SpectrumContents::DMsimpVectorMedDiracDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormeddiracdm/)**  |
+| struct | **[Gambit::SpectrumContents::DMsimpVectorMedMajoranaDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedmajoranadm/)**  |
+| struct | **[Gambit::SpectrumContents::DMsimpVectorMedScalarDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedscalardm/)**  |
+| struct | **[Gambit::SpectrumContents::DMsimpVectorMedVectorDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedvectordm/)**  |
 
 ## Detailed Description
 
@@ -103,19 +107,24 @@ namespace Gambit
   namespace SpectrumContents
   {
 
-    struct SM                   : SubSpectrumContents { SM(); };
-    struct SM_slha              : SubSpectrumContents { SM_slha(); }; // Missing some running masses that aren't part of SMINPUTS in slha
-    struct SMHiggs              : SubSpectrumContents { SMHiggs(); };
-    struct MSSM                 : SubSpectrumContents { MSSM(); };
-    struct MDM                  : SubSpectrumContents { MDM(); };
-    struct ScalarSingletDM_Z2   : SubSpectrumContents { ScalarSingletDM_Z2(); };
-    struct ScalarSingletDM_Z3   : SubSpectrumContents { ScalarSingletDM_Z3(); };
-    struct VectorSingletDM_Z2   : SubSpectrumContents { VectorSingletDM_Z2(); };
-    struct MajoranaSingletDM_Z2 : SubSpectrumContents { MajoranaSingletDM_Z2(); };
-    struct DiracSingletDM_Z2    : SubSpectrumContents { DiracSingletDM_Z2(); };
-    struct DMEFT                : SubSpectrumContents { DMEFT(); };
-// TODO: Temporarily disabled until project is ready
-/*  struct SuperRenormHP        : SubSpectrumContents { SuperRenormHP(); }; */
+    struct SM                       : SubSpectrumContents { SM(); };
+    struct SM_slha                  : SubSpectrumContents { SM_slha(); }; // Missing some running masses that aren't part of SMINPUTS in slha
+    struct SMHiggs                  : SubSpectrumContents { SMHiggs(); };
+    struct MSSM                     : SubSpectrumContents { MSSM(); };
+    struct MDM                      : SubSpectrumContents { MDM(); };
+    struct ScalarSingletDM_Z2       : SubSpectrumContents { ScalarSingletDM_Z2(); };
+    struct ScalarSingletDM_Z3       : SubSpectrumContents { ScalarSingletDM_Z3(); };
+    struct VectorSingletDM_Z2       : SubSpectrumContents { VectorSingletDM_Z2(); };
+    struct MajoranaSingletDM_Z2     : SubSpectrumContents { MajoranaSingletDM_Z2(); };
+    struct DiracSingletDM_Z2        : SubSpectrumContents { DiracSingletDM_Z2(); };
+    struct DMEFT                    : SubSpectrumContents { DMEFT(); };
+    struct DMsimpVectorMedDiracDM   : SubSpectrumContents { DMsimpVectorMedDiracDM(); };
+    struct DMsimpVectorMedMajoranaDM: SubSpectrumContents { DMsimpVectorMedMajoranaDM(); };
+    struct DMsimpVectorMedScalarDM  : SubSpectrumContents { DMsimpVectorMedScalarDM(); };
+    struct DMsimpVectorMedVectorDM: SubSpectrumContents { DMsimpVectorMedVectorDM(); };
+
+    // TODO: Temporarily disabled until project is ready
+    // struct SuperRenormHP        : SubSpectrumContents { SuperRenormHP(); };
 
   }
 }
@@ -125,4 +134,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

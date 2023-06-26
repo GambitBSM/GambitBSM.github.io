@@ -31,6 +31,7 @@ description: "[No description available]"
   * Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
   * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
   * Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)
+  * Chris Chang ([christopher.chang@uqconnect.edu.au](mailto:christopher.chang@uqconnect.edu.au)) 
 
 
 **Date**: 
@@ -42,6 +43,7 @@ description: "[No description available]"
   * 2014 May, June
   * 2019 May
   * 2021 Feb
+  * 2022 Aug
 
 
 Likelihood container declarations.
@@ -93,6 +95,10 @@ Authors (add name and date if you modify):
 ///  \author Anders Kvellestad
 ///          (anders.kvellestad@fys.uio.no
 ///  \date 2021 Feb
+///
+///  \author Chris Chang
+///          (christopher.chang@uqconnect.edu.au)
+///  \date 2022 Aug
 ///
 ///  *********************************************
 
@@ -168,6 +174,13 @@ namespace Gambit
 
       /// Invalid Code printing ID
       const int invalidcodeID;
+      
+      /// scan ID
+      const int scancodeID;
+      int scancode;
+      
+      /// Switch to print scanID to the output file
+      bool print_scanID;
 
       /// Run in likelihood debug mode?
       bool debug;
@@ -187,6 +200,9 @@ namespace Gambit
 
       /// Use this to modify the total likelihood function before passing it to the scanner
       double purposeModifier(double lnlike);
+      
+      /// Set the scanID.
+      void set_scanID();
   };
 
   // Register the Likelihood Container as an available target function for ScannerBit.  The first argument
@@ -202,4 +218,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:55 +0000
