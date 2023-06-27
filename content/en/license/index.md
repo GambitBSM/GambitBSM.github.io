@@ -12,7 +12,7 @@ The BSD license below applies to all source files in the GAMBIT distribution, ex
 BSD License
 -------
 
-Copyright (c) 2017-2022, The GAMBIT Collaboration All rights reserved.
+Copyright (c) 2017-2023, The GAMBIT Collaboration All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 

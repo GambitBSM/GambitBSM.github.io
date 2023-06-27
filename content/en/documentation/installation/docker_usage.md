@@ -18,7 +18,7 @@ A pre-built version of GAMBIT is available as a Docker image which can be downlo
 {{< alert icon="ⓘ" context="info">}}
 
 **Info**:
-- The current Docker image is based on GAMBIT v1.1.3, which is outdated and will not provide the latest features.
+- The current Docker image is based on GAMBIT v2.4.0.
 - The Docker engine requires administrator privileges in order to be activated. Therefore it may be less suited for use on shared clusters.
 
 {{< /alert >}}
